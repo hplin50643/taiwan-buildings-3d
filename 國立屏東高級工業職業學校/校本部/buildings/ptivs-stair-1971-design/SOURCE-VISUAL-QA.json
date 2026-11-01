@@ -1,0 +1,113 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_at_utc": "2026-11-01T14:06:30.843136+00:00",
+  "scope": "1971-08 historical exterior stair addition only, CCRH53623005/006; not existing classroom or current/as-built reconstruction",
+  "geometry_version": "build-v5",
+  "render_version": "render-v3",
+  "mesh_sha256": "b88f7faae370345f4c3aeef2e9cb5569e0dd8321523ed9f9911efac072969996",
+  "artifact_sha256": {
+    "build_model.py": "cbb21847b602e0d89a1f682e3d9bd83048047b84e4303754f3b056ea96512cb0",
+    "render_model.py": "57c6ad518aadeb349f943a9d69a9ae51b2f44a966c76e3436245a9900c1ad1e1",
+    "README.md": "a2cc96d340aea3c810e2f017d24939afe7f0738409cdf824286de38b05c42480"
+  },
+  "private_source_controls_sha256": "179c9fa46fc7323957c45b09234e1bcf2cf6a4679f3003e5d2407ba6dbc83b99",
+  "private_source_policy": "Originals, crops and detailed source review remain private; no source pixels embedded here.",
+  "png_sha256": {
+    "preview.png": "2150a4622198c58c6fdf9d3f37b806fc1683513a1c8609bc255ff45c2e495ddc",
+    "rear.png": "86da8804b9a87ccad9224e34c98e531e84640f6e99377a1a26f64dff225106de",
+    "north.png": "0b5556738121e918f34243bc57ff86434b1d309e7bb5b2dce777d674bde81c37",
+    "south.png": "0c487aa2820f92d24c22ca31660fdb011ffb3b2282d5f130139642e772fb97c3",
+    "east.png": "43f55a1b7c3df8d354e38095a11045b6950be9ab94ec9e7cb6eb22be9f7455d9",
+    "west.png": "7fe89cc4bbf58576a46cb140e5fb30df8f17e3c3c4a5672f53ecbbc513a8d16e",
+    "top.png": "f546ae8e8c55ed271b3e96f58d2eb8d42c9ce9d67406c1551d7f87dc4bff9aaa",
+    "stair-detail.png": "1a5df81c6fd543bbdd8df817f72069bfa44231cdd9a3d826e151d7ba573b8615",
+    "canopy-detail.png": "a513ccaa69a9ca44bff5912df4263c133303f8f22b298d5084c9c3a667649ad0",
+    "interface-detail.png": "f0a3ca39b3d3368994fb21a4d51bab160dc5a89fe3214c7e3ab4a665f1a8240e"
+  },
+  "per_image_review": [
+    {
+      "image": "preview.png",
+      "result": "PASS",
+      "observation": "Full external-stair unit and authored base, three longitudinal/two transverse scallops and open flight sides visible."
+    },
+    {
+      "image": "rear.png",
+      "result": "PASS",
+      "observation": "Reverse overview shows upper connector and return flight, no invented classroom block."
+    },
+    {
+      "image": "north.png",
+      "result": "PASS",
+      "observation": "Complete upper-flight side elevation; uniform final steps meet both landings and railing is continuous."
+    },
+    {
+      "image": "south.png",
+      "result": "PASS",
+      "observation": "Complete lower-flight side elevation; horizontal treads remain visible, no waist breaking through tread tops."
+    },
+    {
+      "image": "east.png",
+      "result": "PASS",
+      "observation": "Complete outer-landing end view; broad connector differs from narrower canopy, central tiled spine visible."
+    },
+    {
+      "image": "west.png",
+      "result": "PASS",
+      "observation": "Complete existing-interface end view, boundary remains open rather than a fabricated facade."
+    },
+    {
+      "image": "top.png",
+      "result": "PASS",
+      "observation": "Complete canopy and base plan; width390 versus connector660 distinction retained."
+    },
+    {
+      "image": "stair-detail.png",
+      "result": "PASS",
+      "observation": "Intentional close-up: lower nine treads, midlanding and upper return leg readable; no former40cm final riser."
+    },
+    {
+      "image": "canopy-detail.png",
+      "result": "PASS",
+      "observation": "Intentional close-up: slab, trim, upstand and circular scalloped fascia distinct; full canopy frame visible although surrounding stair is cropped."
+    },
+    {
+      "image": "interface-detail.png",
+      "result": "PASS",
+      "observation": "Intentional close-up: upper flight reaches connector, endpoint railing joins and open building-access boundary retained."
+    }
+  ],
+  "visual_method": "All ten final individual PNGs directly viewed after final render; render-v3 log confirmed Blender quit. Seven full views retain whole object margins; three details intentionally crop surroundings.",
+  "independent_mesh_check": {
+    "faces": 10330,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 265963.1479288827
+  },
+  "source_and_code_checks": [
+    "Overall560cm length with90+292.5+177.5 chain;390canopy versus660interface preserved",
+    "FL40,mid240,upper440,roof790,local802 datums distinct",
+    "Bothflights ten20cm risers incllandingtransitions;nine32.5cm treads;upper sequence420..260corrected",
+    "Waist tops sampled analytically at treadmidpoints, belowwalkingplanes approximately10cm",
+    "Central wall292.5long/30thick, source red tile appearance approximate",
+    "KG1 30x45 andKG2 20x45 total including12slab=>bottom745; added two interior crossbeams",
+    "Roofslab12+strip5+fasciaband40=>low733;40notarcrise, longitudinalR142/transverse nominalR140",
+    "Handrail endpoints coordinated toplatform+80 andmadecontinuous; endpoint detailgraphicalinterpretation disclosed"
+  ],
+  "limitations": [
+    "Only005/006dated60.8;001–004notmixed. Current existence/asbuilt unverified.",
+    "Transversehandwrittenradius140versus142has2cmreadinguncertainty;longitudinal157cmclearspans roundedto560total.",
+    "Localoffsets,railendconnections,interfaceedgespartlygraphical/simplified,notconstructionprecision.",
+    "10mmrailbarsthickenedto30mm;handsimplified60mm;hiddenoverlapsapprox1cm;physicalprintingnot tested.",
+    "Redtilejointtextureandfinishcolorsapproximate;footings/reinforcement/classroominterior omitted,baseis authored display support.",
+    "TopologyPASSdoesnotguaranteestructuralsafety,supportfreeprinting orcommercialrights."
+  ],
+  "blocking_findings": [],
+  "saved_camera_only_postfix": {
+    "reason": "Savedscene reset270 fails fullframing; finalsave320 only. All actual rendered views use autofit/detailcamera unchanged.",
+    "render_execution_code_sha256": "299c1515fbb4cb1a40171397b166246ce76280dd1ed9551c6666f9e2170b2c30",
+    "reproduction_code_sha256": "57c6ad518aadeb349f943a9d69a9ae51b2f44a966c76e3436245a9900c1ad1e1"
+  },
+  "saved_camera_scope": "Only final saved camera reset changed270to320; ten image-generating camera instructions unchanged. Actual savedscene reopened/framing check reported independently bybuilder.",
+  "orientation_note": "north/south/east/west filenames are model coordinate views, not asserted geographic bearings."
+}

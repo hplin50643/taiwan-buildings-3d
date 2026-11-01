@@ -1,0 +1,63 @@
+{
+  "status": "SOURCE_SCOPE_REVIEWED",
+  "adopted_registers": [
+    "CCRH53623005",
+    "CCRH53623006"
+  ],
+  "excluded_registers": [
+    "CCRH53623001",
+    "CCRH53623002",
+    "CCRH53623003",
+    "CCRH53623004"
+  ],
+  "controls_m": {
+    "plan_long": 5.6,
+    "plan_long_chain": [
+      0.9,
+      2.925,
+      1.775
+    ],
+    "stair_canopy_width": 3.9,
+    "stair_width_chain": [
+      1.8,
+      0.3,
+      1.8
+    ],
+    "existing_building_connector_extent": 6.6,
+    "connector_warning": "6.60=3.30+3.30 along existing classroom interface, NOT canopy width. Do not model5.60×6.60 solid roof.",
+    "GL": 0,
+    "FL": 0.4,
+    "mid_landing": 2.4,
+    "upper_landing": 4.4,
+    "nominal_roof": 7.9,
+    "height_chain": [
+      0.4,
+      2.0,
+      2.0,
+      3.5
+    ],
+    "local_raised_roof_edge": 8.02,
+    "stair_riser": 0.2,
+    "treads_horizontal": 0.325,
+    "each_flight_risers": 10,
+    "each_flight_horizontal_run": 2.925,
+    "railing_height": 0.8,
+    "longitudinal_arch_radius": 1.42,
+    "transverse_arch_radius": 1.4,
+    "transverse_arch_clear_width": 1.65,
+    "canopy_extent_warning": "3.90 is printed roof-plan/structural span; local5cm external mouldings must be added only at indicated edges. It is not necessarily final outside bbox.",
+    "canopy_section_profile": {
+      "slab": 0.12,
+      "moulding": 0.05,
+      "arched_soffit_band": 0.4
+    },
+    "transverse_radius_reading_uncertainty": "Nominal1.40m; handwritten final digit mildly ambiguous against1.42m (2cm reading uncertainty). LongitudinalR142 clear; do not claim both identical."
+  },
+  "interpretation_limits": [
+    "Historical1971 external stair only; not current school reconstruction.",
+    "Existing-building interface represented by truncated connections, no invented existing facade.",
+    "Roof beams45cm including slab; soffit decorative profile57cm is a different datum.",
+    "Railing thickness enlarged for scale; no physical print trial."
+  ],
+  "source_rights": "Original scans CC BY-NC; metadata CC BY; scans not redistributed in package."
+}
