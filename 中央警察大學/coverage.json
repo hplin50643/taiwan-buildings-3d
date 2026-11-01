@@ -1,6 +1,6 @@
 {
-  "current_model_packages": 1,
-  "main_campus_current_model_packages": 1,
+  "current_model_packages": 2,
+  "main_campus_current_model_packages": 2,
   "counts_updated_date": "2026-11-01",
   "institution_name": "中央警察大學",
   "historical_names": [
@@ -9,7 +9,7 @@
   "classification": "higher_education_military_police",
   "physical_print_verified": false,
   "whole_institution_complete": false,
-  "counting_scope": "模型套件數，不是獨立完整建築數。歷史名稱與現名合計一校；現況身分未知，校本部僅目錄歸組。",
+  "counting_scope": "模型套件數，不是獨立完整建築數。歷史名稱與現名合計一校；現況身分未知，校本部僅目錄歸組。 本次新增1976年11月鍋爐房外殼1套，與1976年7月女生宿舍合計2套，不混為同棟，也不表示實施或現況認證。",
   "models": [
     {
       "slug": "cpu-female-dorm-1976-design",
@@ -18,6 +18,15 @@
       "repo_path": "中央警察大學/校本部/buildings/cpu-female-dorm-1976-design",
       "scope": "中央警官學校1976年7月女生宿舍原設計之外觀研究，陳其寛／陳其寬建築師事務所CCCK253；不是竣工或2026現況，不混入1981後續增建。保留42.30m外長與4207／4210衛浴標註之區別、地下北側退縮及來源尺寸差異。比例1:200，中性配色、局部估讀與製造簡化，未實體試印。",
       "stl_sha256": "fdd5bd70824d9742ea6a78a1e226360af5f77c2a5ccd64545e4619e97b228178",
+      "physical_print_verified": false
+    },
+    {
+      "slug": "cpu-boiler-house-1976-design",
+      "name": "鍋爐房｜1976年11月原設計外殼",
+      "campus": "校本部",
+      "repo_path": "中央警察大學/校本部/buildings/cpu-boiler-house-1976-design",
+      "scope": "陳其寛／C. K. Chen & Associates 中央警官學校鍋爐房新建工程1976年11月A1、A2歷史原設計外殼。與女生宿舍不同；未確認實施或現存。1FL=0，GL低5／10cm差異不平均；屋頂側凸約2.20m為圖量推導，保留±12cm不確定性，不當作直接標註。排除未定年相似版本，不添鍋爐、煙囪、管線或基地；中性配色、平屋面／有背板門窗與細節簡化，1:75，未試印。",
+      "stl_sha256": "a6227cad77872f27de2aa212f807a19fefe10b02a549e1fdd1209e1a843625d1",
       "physical_print_verified": false
     }
   ]

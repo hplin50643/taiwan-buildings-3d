@@ -1,0 +1,40 @@
+{
+  "status": "PASS_WITH_DRAWING_DATUM_LIMITS",
+  "source": "MNM4MSM7MD.jpg A1 roofplan",
+  "pixel_controls_original": [
+    {
+      "name": "rear roof outer edge",
+      "y": 339,
+      "model_y_m": -0.12
+    },
+    {
+      "name": "front roof outer edge",
+      "y": 1091,
+      "model_y_m": 9.4
+    },
+    {
+      "name": "side notch horizontal edge",
+      "y": 920
+    }
+  ],
+  "linear_y_scale_m_per_pixel": 0.012659574468085105,
+  "inferred_notch_y_m": 7.235212765957447,
+  "selected_dimension_chain_notch_y_m": 7.2,
+  "residual_m": 0.03521276595744638,
+  "declared_axis_face_ambiguity_m": 0.12,
+  "certainty": "Manualpixelpick about1..3px; drawn sheet notsurvey. Selected720cmfromfrontaxis840minusdoorsegment120. Notch220cmreturn derived, notoriginalstandalone dimension.",
+  "main_roof_m": [
+    10.74,
+    9.52
+  ],
+  "side_width_m": 1.0,
+  "alternate_outer_edge_pick_y_px": 919,
+  "manual_notch_pick_band_px": [
+    919,
+    920
+  ],
+  "inferred_return_length_range_m": [
+    2.164787234042553,
+    2.177446808510638
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "review_utc": "2026-11-01T11:48:30Z",
+  "reviewer": "review_dorm_source_controls",
+  "render_version": "v1 final10views",
+  "mesh_sha256": "c4d3a828a6dc7e12f0a0fbbd66dd57d0183cccc151bcb2ee83d3763b551ef2a4",
+  "triangles": 4096,
+  "binding_sha256": {
+    "build_model.py": "70fefb81f1760e7967a87b107ce6f25597dccc68d246b6f6caf562e9853db56a",
+    "README.md": "e6b53edbaff3c3f7fcb7ba6e6844837a64fcb7fdc4d402211234975037cd44fe",
+    "render_model.py": "1ef42f67965cb9109f02b371e807a103d108b128af2b3c466be7ad43874885a7",
+    "SOURCE-CONTROLS-REVIEW.json": "cdc131588bc481e2836a4ab216881e1bbaaff311d7fdbb32e8d9d8ece9195723",
+    "ROOF-NOTCH-CALIBRATION.json": "780f21dfff250f131881a9c58aa33dd596c9fecde834ef54beddb68a9af66e4e",
+    "components.json": "e1bb4c6a8837bb9eae0dfd9425adcac2ae1b0f31eec81f21f4a8318d1a23ee1a"
+  },
+  "png_sha256": {
+    "east.png": "a7deafd6ba02b209b34a1532ff9de8d4a0b8c6e0510b75ac1029c5799184f5c2",
+    "louver-detail.png": "46990c4a03fab5d6f9d4a5da232b5fa6efdfdea440c3c0b5e26ec20bfbe249ef",
+    "north.png": "5ae3a2ba4e842798ea23b4455bb43d46143cc6529a05bc218178ebccf31644dc",
+    "preview.png": "14984a1554fa639be6cd398a41f800659261c4a2dffb1543f2d183c520a0f367",
+    "rear.png": "d1ecb812db757f0cd45ea32580f4a2e82e051460a7a42288fa5241f9c04ba564",
+    "roller-detail.png": "4ab1f4b843f3ebdd2c7f2ffb84b714b6224dcbafe96e176b738ab60e942d3383",
+    "roof-notch-detail.png": "2bb0e30ed728a08f91f04824c2d4a38ddb5ea43974ad6d024a6fde1c7ff9a232",
+    "south.png": "d229daaa4b53c8d87b44b13d34e56e1b3e9f0b466ecbe9f6adeba17d9db1c6dd",
+    "top.png": "35c82bdc3b66a087c54da7c590ce53361851197de8881618953e80aa68ab8b39",
+    "west.png": "6b57d34040987776e7c34833f6f5da26a082427a1aa0761dd05b8a622ad63301"
+  },
+  "source_sha256": {
+    "MNM4MSM7MD.jpg": "dece851016f0a52a202a0c9a8ea0b30783c6bc5a3f6e6887dfd393bee46b189c",
+    "MCM4MSM7MD.jpg": "6a92060a591d256066bc71bf27cb3858124cf6578c91d7af0edc43e70e301e8c"
+  },
+  "method": "Independently inspected actual1976A1/A2rasters, sourcepixelnotchcalibrationandrotatedheightchains; reviewedfinalcodeandREADME; individually viewedall10PNGsafterrender-v1Savedscene/Blenderquit. No undatedCCCK300sourceused. Format/rebuild/reopen tests arebuilderseparateevidence.",
+  "verified_controls": [
+    "1FL0buildingdatum,notGL. A1GL−10cm/A2GL−5cmdifferencepreserved,displaybaseauthored.",
+    "10.50x8.40columnaxes,24cmcolumns/walls; mainroof10.74x9.52plusside1.00xapproximately2.20.",
+    "A1notchpixelchecksupportsabout2.18mreturn,chosen2.20within12cmdatumlimit. Limitrestrictedtonotch,notblanketdimensiontolerance.",
+    "12cmslab,RFL3.50,10cmupstandtop3.60;flatdisplayroofexplicitlysimplifies1%drainage.",
+    "Threefront350cmbays,eachcentraldivisionretained; nofalseclaimofthreeorsixindependentmechanismcount. Doorhead3.00confirmed50cmsectionand22+38elevationchain.",
+    "Bothsides2W1each80wide100high,sill2.10head3.10;formerlymisread120rejected. Backedslopedlouversnotclearglass.",
+    "NorthD1only90x210atgraphicaly7.8; southnotmirrored.",
+    "Rear3vents20cmclearand30cminterpretedtimberouterframes,z2.85..3.05clear/2.80..3.10outer; rear28+12beamchaincorrectednot20+12.",
+    "Noinventedchimney,boilers,sitepipesoractualterrain; opaqueinteriorandframe/slatsimplificationdisclosed."
+  ],
+  "visual_checks": {
+    "whole_views": [
+      "preview.png",
+      "rear.png",
+      "top.png",
+      "north.png",
+      "south.png",
+      "west.png",
+      "east.png"
+    ],
+    "whole_result": "PASS: completebuildinganddisplaybaseframe; correctfrontthreerollerbays,rearthreevents,sidewindowcounts,one-sideddoor,Lroofreturn.",
+    "intentional_detail_crops": [
+      "roller-detail.png",
+      "louver-detail.png",
+      "roof-notch-detail.png"
+    ],
+    "detail_result": "PASS: centralrollerdivisions/horizontalslats,backedlouverreliefandLnotch/upstandreadable; noclippingmistakenforwholeviews.",
+    "orientation_note": "north/southPNGfilenamesaremodelcoordinates; READMEtableidentifiesactualsourcefront/rear/side labels."
+  },
+  "limitations": [
+    "Historicaldesignenvelopeonly,notas-built/current-survivalverification.",
+    "Unresolved5vs10cmGLexcludedfromsurveyreconstruction;presentationapron/baseisnotactualterrain.",
+    "Roofnotchandundimensionedopeningpositionsgraphicalestimates;timberframeclear/outerallocationinterpreted.",
+    "Roof1%falls,mortar/drips/drainageholes/downpipesnotfullymodeled;notfunctionaldrainagesimulation.",
+    "Rolleroperation/drums,guides,slatpitch,woodlouvercount/leafthickness/hardwareandcolorssimplified;closedbackingnotventilationperformance.",
+    "Noactualprintperformed;thinlouverreliefandcantileversrequiremanufacturingassessment.",
+    "Originalrastersprivate;rightsseparatelydocumented,nounrestrictedcommercial-rightsguarantee."
+  ],
+  "blocking_issues": [],
+  "release_scope": "SourceandvisualQAallowsfreezeofexactboundfilesafterbuilderformat/rebuild/scenereopenchecks; laterchangesinvalidateaffectedhashbindings."
+}

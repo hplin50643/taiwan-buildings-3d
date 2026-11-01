@@ -4,9 +4,9 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/cpu-female-dorm-1976-design/preview.png" alt="1976女生宿舍原設計實際模型渲染" width="220">](buildings/cpu-female-dorm-1976-design/README.md)<br>**[女生宿舍｜1976年7月原設計](buildings/cpu-female-dorm-1976-design/README.md)**<br>[STL](buildings/cpu-female-dorm-1976-design/model.stl) · [彩色3MF](buildings/cpu-female-dorm-1976-design/model.3mf) · [Blender](buildings/cpu-female-dorm-1976-design/scene.blend) |  |  |
+| [<img src="buildings/cpu-female-dorm-1976-design/preview.png" alt="1976女生宿舍原設計實際模型渲染" width="220">](buildings/cpu-female-dorm-1976-design/README.md)<br>**[女生宿舍｜1976年7月原設計](buildings/cpu-female-dorm-1976-design/README.md)**<br>[STL](buildings/cpu-female-dorm-1976-design/model.stl) · [彩色3MF](buildings/cpu-female-dorm-1976-design/model.3mf) · [Blender](buildings/cpu-female-dorm-1976-design/scene.blend) | [<img src="buildings/cpu-boiler-house-1976-design/preview.png" alt="鍋爐房1976原設計外殼：實際模型渲染" width="220">](buildings/cpu-boiler-house-1976-design/README.md)<br>**[鍋爐房｜1976年11月原設計外殼](buildings/cpu-boiler-house-1976-design/README.md)**<br>[STL](buildings/cpu-boiler-house-1976-design/model.stl) · [彩色3MF](buildings/cpu-boiler-house-1976-design/model.3mf) · [Blender](buildings/cpu-boiler-house-1976-design/scene.blend) |  |
 
-現行收錄 **1 套模型包**，不等於全校完成或完整建築棟數。
+現行收錄 **2 套模型包**，不等於全校完成或完整建築棟數。
 
 ## 收錄範圍
 
@@ -17,3 +17,7 @@
 保留設計者與國立臺灣博物館典藏來源；原圖權利與自行編寫程式／重建模型分開，不概括模型為非商業，也不宣稱原圖或建築設計可無限制商用。未附來源原圖或私人參考資料。
 
 [回學校圖鑑](../README.md)
+
+## 鍋爐房歷史設計研究
+
+陳其寛／C. K. Chen & Associates 中央警官學校鍋爐房新建工程1976年11月A1、A2歷史原設計外殼。與女生宿舍不同；未確認實施或現存。1FL=0，GL低5／10cm差異不平均；屋頂側凸約2.20m為圖量推導，保留±12cm不確定性，不當作直接標註。排除未定年相似版本，不添鍋爐、煙囪、管線或基地；中性配色、平屋面／有背板門窗與細節簡化，1:75，未試印。

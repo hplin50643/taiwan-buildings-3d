@@ -1,0 +1,138 @@
+{
+  "status": "SOURCE_CONTROLS_PASS_WITH_DOCUMENTED_DATUM_AND_GRAPHICAL_LIMITS_NOT_MODEL_QA",
+  "reviewer": "review_dorm_source_controls",
+  "source_scope": "Onlydated1976-11CCCK37523006A1andCCCK37523007A2; actualpixels inspected. UndatedCCCK300notreadorused.",
+  "source_sha256": {
+    "MNM4MSM7MD.jpg": "dece851016f0a52a202a0c9a8ea0b30783c6bc5a3f6e6887dfd393bee46b189c",
+    "MCM4MSM7MD.jpg": "6a92060a591d256066bc71bf27cb3858124cf6578c91d7af0edc43e70e301e8c"
+  },
+  "coordinates": "1FL=0; x0..10.50across3bays,y0..8.40rear-to-front; thesearebuilding-relativeaxiscoordinates,NOTgeographicorientationoractualGL.",
+  "grid_m": {
+    "x": [
+      0,
+      3.5,
+      7,
+      10.5
+    ],
+    "y": [
+      0,
+      4.2,
+      8.4
+    ],
+    "columns": ".24square",
+    "walls": ".24brick"
+  },
+  "roof": {
+    "main_rectangle_m": {
+      "x": [
+        -0.12,
+        10.62
+      ],
+      "y": [
+        -0.12,
+        9.4
+      ],
+      "size": [
+        10.74,
+        9.52
+      ]
+    },
+    "side_return_m": {
+      "x": [
+        10.62,
+        11.62
+      ],
+      "y": [
+        7.2,
+        9.4
+      ],
+      "classification": "100cmwidthwritten;220cmlengthderivednotexplicit;notch±12cmdatumlimit"
+    },
+    "independent_pixel_check": {
+      "source": "A1MNM4MSM7MD.jpg original3066x2413",
+      "approx_roof_outer_pixels": {
+        "top_y": 339,
+        "bottom_y": 1091,
+        "notch_y": 919,
+        "main_left_x": 1824,
+        "main_right_x": 2664
+      },
+      "y_calibration_m_per_pixel": 0.012659574468085105,
+      "return_length_from_pixels_m": 2.177446808510638,
+      "notch_coordinate_from_pixels_m": 7.222553191489362,
+      "result": "217.7cmderivedreturn;differencefrom220about2.3cm,within12cmdatumallowance. Thicklines/scanslightdistortionnotexactCAD.",
+      "A2": "Structuralroofplanindependentlyshows shortLreturnatfrontside,not300cmreturn."
+    },
+    "nominal_RFL_m": 3.5,
+    "slab_m": 0.12,
+    "slab_bottom_m": 3.38,
+    "upstand_above_RFL_m": 0.1,
+    "upstand_top_m": 3.6,
+    "upstand_width_m": 0.1,
+    "roof_finish": "A1roofnotes1%slopetowardoppositeendswithwaterproofcementfinish; keepnominalRFLandexplicitlysimplifydrainageslopeifnotmodeled. Do notinventchimney/equipment."
+  },
+  "side_W1": {
+    "count_each_side": 2,
+    "opening_width_height_m": [
+      0.8,
+      1.0
+    ],
+    "centers_y_candidate_m": [
+      3.68,
+      4.72
+    ],
+    "position_basis": "A1bothsideplansshowW1adjacentto24cmmidcolumnat4.20; suggestedspans3.28..4.08and4.32..5.12derivedfrom80widthandcolumnfaces.",
+    "head_sill_m": [
+      3.1,
+      2.1
+    ],
+    "height_basis": "A1section4:12cmslab+28cmbeamdownstand=40cmfromRFL;W1height100confirmedA1noteandA2schedule. Former120readingrejected.",
+    "material": "Woodlouvers,notclearundividedglazing; detailedtimber/slatpitchmaybeexplicitlysimplified."
+  },
+  "side_D1": {
+    "count": 1,
+    "side": "A2northsidewithroofreturn; oppositesidehasnodoor",
+    "size_m": [
+      0.9,
+      2.1
+    ],
+    "sill_m": 0,
+    "location": "Nearfrontcorner,within120cmdoorzonebeforefrontaxis. Centerabouty7.7mfromplan/elevationgraphics; exactopeningoffsetnotindividuallydimensioned.",
+    "limit": "Do notcallgraphicaloffsetexact."
+  },
+  "rear_vents": {
+    "count": 3,
+    "centers_x_graphical_m": [
+      1.75,
+      5.25,
+      8.75
+    ],
+    "nominal_clear_size_m": [
+      0.2,
+      0.2
+    ],
+    "critical_correction": "A1section3chainis28+12+10,NOT20+12+10. Rotatedactualpixelsread28;A2roofbeam24x40corroborates. Beamunderside3.10,NOT3.18.",
+    "timber_frame": "A1calls5x10timber;20cmverticaldimensionappearsbetweeninnerframefaces. Suggestedclearz2.85..3.05,outertimberframe2.80..3.10if5cmfacewidth; outerwidthapproximately30cmfor20cmclear. Exacttimberfaceallocationisinterpretation,reportifusingnominal20cmouterinstead.",
+    "rear_elevation_limit": "Noindependentfullrearelevationinthisdatedpair; openingcount/positionsfromplanplussection3."
+  },
+  "front_roller_openings": {
+    "structural_bays": 3,
+    "bay_axis_width_m": 3.5,
+    "clear_between_columns_m": 3.26,
+    "head_m": 3.0,
+    "height_basis": "A1section5RFL-toheader50cm=3.50−.50=3.00. Frontelevationchain22+38=60cmfrom3.60upstandtop:22includes10upstand+12slab. NOT12+38andnot3.10doorhead.",
+    "graphic_division": "Eachof3structuralopeningshascentralverticaljointandtwoindependentlookingrollerstripegroups. Preserve3bayswithtwo-subdivisionappearance; do notclaimdefinitive3or6independentmechanismcountfromthissheet.",
+    "mechanism": "Springrollerdoorcallout; concealeddrum/guideoperationnotfullymodeled; simplificationmustbenoted."
+  },
+  "datum_limits": {
+    "A1_GL": "approximately10cmbelow1FL",
+    "A2_GL": "5cmbelow1FL",
+    "policy": "Keep1FL0; do notaverageorclaimflatsurveygrade. Anybaseisanexplicitpresentationplinth; threshold/sitegradingnotresolved."
+  },
+  "scope_exclusions": [
+    "Nochimney,boilerequipment,pipesunlessshownandresolved,actualterrain/currentbuildingclaim.",
+    "NoCCCK300undateddrawingmerge.",
+    "Originalrasters/cropsprivate;derivedcontrolsandcitationsmaybepublic."
+  ],
+  "blocking_issues": []
+}
