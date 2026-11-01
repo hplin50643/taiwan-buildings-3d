@@ -2,7 +2,7 @@
   "institution": "國立高雄師範大學",
   "checked_on": "2026-10-13",
   "all_buildings_complete": false,
-  "delivered_model_count": 4,
+  "delivered_model_count": 5,
   "scope_warning": "這是官方2025簡圖及未標年詳細圖的逐項續接，並非每一未命名小屋或附屬校舍已完成實地普查。地圖項目數不等於建物數。",
   "campuses": [
     {
@@ -209,7 +209,7 @@
       "id": "H-12",
       "name": "游泳池及附屬設施",
       "kind": "運動設施",
-      "status": "未研究",
+      "status": "已有1985原設計外觀模型；現況仍待核",
       "aliases": [],
       "building_boundary": "不可只按圖例就假造室內泳館；先確認池體、棚頂及設備棟現況。",
       "evidence": "",
@@ -218,8 +218,9 @@
         "https://c.nknu.edu.tw/affair/Page.aspx?Kind=maintain&PN=117&SN=16"
       ],
       "source_dates": "2025校圖；不等於建物照片日期",
-      "next_step": "取得可辨識此棟的多角度公開實拍，核對最新平面、後側與屋頂，再製作。",
-      "model_path": null
+      "next_step": "既有1985設計外觀不代表照圖建成；如需現況版本，仍須取得多角度實拍、竣工及後續整建紀錄。",
+      "model_path": "和平校區/buildings/nknu-pool-stand-1985-design",
+      "historical_design_model_scope": "1985年4／5月陳其寛建築師事務所原設計圖外觀；不是竣工測繪或2026現況，未核實精確啟用年，不將1987當已證年份。僅泳池、看台及更衣室，不補旁側體育館；15cm寬差、3cm高差及5cm場地鏈差保留，細件與場界為簡化，未實體試印。"
     },
     {
       "campus": "和平校區",
@@ -1237,9 +1238,9 @@
       "model_path": null
     }
   ],
-  "current_model_status_updated_on": "2026-10-25",
-  "current_model_packages": 4,
-  "model_count_updated_date": "2026-10-31",
+  "current_model_status_updated_on": "2026-11-01",
+  "current_model_packages": 5,
+  "model_count_updated_date": "2026-11-01",
   "current_increment_packages": [
     {
       "slug": "nknu-historical-gate-main-assembly",
@@ -1251,8 +1252,19 @@
       "scope_and_limitations_reference": "和平校區/buildings/nknu-historical-gate-main-assembly/README.md",
       "physical_print_verified": false,
       "classification": "bounded_source_study_not_assigned_to_legacy_full_or_partial_categories"
+    },
+    {
+      "slug": "nknu-pool-stand-1985-design",
+      "name": "游泳池與看台更衣室｜1985原設計圖版",
+      "campus": "和平校區",
+      "path": "和平校區/buildings/nknu-pool-stand-1985-design",
+      "readme": "README.md",
+      "scope": "1985年4／5月陳其寛建築師事務所原設計圖外觀；不是竣工測繪或2026現況，未核實精確啟用年，不將1987當已證年份。僅泳池、看台及更衣室，不補旁側體育館；15cm寬差、3cm高差及5cm場地鏈差保留，細件與場界為簡化，未實體試印。",
+      "scope_and_limitations_reference": "和平校區/buildings/nknu-pool-stand-1985-design/README.md",
+      "physical_print_verified": false,
+      "classification": "historical_design_source_study_not_assigned_to_legacy_full_or_partial_categories"
     }
   ],
   "counting_scope": "現行模型套件總數；不是完整建築棟數或全校完成。新增項以各件README的來源、年代、截段與未知範圍為準，未實體試印。原full/partial分類不擅自擴充；新增項另列未分類。",
-  "current_increment_legacy_classification_unassigned": 1
+  "current_increment_legacy_classification_unassigned": 2
 }
