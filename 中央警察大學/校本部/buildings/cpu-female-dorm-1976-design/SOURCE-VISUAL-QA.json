@@ -1,0 +1,41 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "mesh_sha256": "cf5c17bef8b3ea55302b5f022cfd36813a88210a56cf6d765fb76613f5219abf",
+  "build_script_sha256": "fb5205de77d37dd6a8c34500d8f036941f0c61dc447381f15243ff97d850f1da",
+  "source_controls_sha256": "020220ef86b1da2035f8693ad23870a50bb33f3060d6cf01596b9f250601f0ce",
+  "readme_sha256": "fd6f234f41fc90ad5e248664946349b78317957acebeec8cc938eaeb277738ce",
+  "png_sha256": {
+    "east.png": "4130b70e557b82bfe162b69b9a717ee9659fc44f54a46d02e164895ac880ca0d",
+    "north-corridor-detail.png": "b3014e3ea88e05549453e9dbef41b9a813da88317af739e8b0d65f877b623a08",
+    "north.png": "695b3da13d57a2a82b97692aa6e95ce65636c8fef244f30cc4a3b2c71a53209b",
+    "preview.png": "196098b09b78eb1ef6fffb16cc25f5a57741d5b10407820549a265193c398f63",
+    "rear.png": "9e4c512bc14d888ad141333e3819e0df347658eda4d7726b79cf611c7c1a300c",
+    "south-window-detail.png": "3869baac84c3662c6ca70031f066d1e72c004a87a037e44f8cfb9679f71f9fc9",
+    "south.png": "3b890efd26b377f3b25bfa976cca0e4ec1c5e8787dc0e54e0657b77c99aac7e5",
+    "stair-detail.png": "a4653fcc492cfba655ceac92e3f5620ff1cf7d6c1ab837312a2ed092dd8a1c79",
+    "top.png": "335731f3c50fe5e4d9550c8297c929af645ddf2cfecd8ad6fe6cc6c1e4dfc174",
+    "west.png": "7779d11fa9ce92ecc881acf481e52b6fa7f4fcd59310a23b44414b7435da849a"
+  },
+  "review_method": "Actual sixoriginalsources independently readwithenlargedcontrols; finalv5 code/README checked; all10 finalPNG views visually inspected after allgeometrycorrections. Nooriginalraster includedinpublicQA.",
+  "checks": {
+    "framing": "PASS: sevenwholeviews fullyframebuildinganddisplaybase; threeintentionaldetailcrops showcorridor, southwindowassembly andstair.",
+    "four_facades": "PASS: south12windowbays, northopenaccesscorridorwithoutinventedfullheightoutercolumns, largelyblankendswithsmallgrounddoors; northstair/bathroomends correctlyreversedrelativeplanview.",
+    "south_windows": "PASS_FOR_DISCLOSED_INTERPRETATION: bathroomthreebaysW2highwindows, remainingW1; preservesexplicitplan/schedulepreferenceoverA3elevationdifference. W2sill2.05m explicitlyinferred.",
+    "south_projection": "PASS: continuous10cmfins,90cmsillcabinets,approxglassplaneatmainwall; only30cmoutsideprojectionbeyond23cmwall. Notfullheightopaqueboxes.",
+    "roof": "PASS: flatroofwithsouthserratedparapet/edge andcorrectedterminalbaycenters; nounsupportedpenthouse/tank.",
+    "basement": "PASS_FOR_DISCLOSED_INTERPRETATION: recessednorthface5.900m, eightcentralwindowgroups withshortenedfirst1.60m, uppercorridoredge6.500m. Inspectionnotchomission andwindowheight/lightwelldisplayplacements disclosed.",
+    "dimension_datums": "PASS: upper42.07mwallcenters+23cmwall andbasement42.10mwallcenters+20cmwall reconcilecommon42.30moutside. Sharedsouthouterface interpretation and1.5cmcenter shift disclosed;S2referenceskeptdistinct.",
+    "vertical_datums": "PASS: GL255,FF255.16 and3.50mstoreys,RF269.16,parapet270.06. Basement251.86 andA5structural/finish3cmoffsetsnotmisaddedtostoreyheight.",
+    "stairs": "PASS_AS_SIMPLIFIED_VISIBLE_FORM: terminaldoglegsteps visiblethroughcorridor; notfullstair/handrailconstructionreplica.",
+    "readme": "PASS: firstsection10actualimagesin3-columntable; sourceconflicts,approximatefacade/glass/enddoor/terrainlocations,printthickening,privatereferencesandrightsseparation disclosed."
+  },
+  "limitations": [
+    "HistoricalJuly1976designonly, notcompletiondate orpresent/asbuilt dorm; no1981laterprojectcombined.",
+    "Noexactsurvey/modelprecision claim fromdrawingdigits; calibratedcolors notavailable.",
+    "Roomssealed,windowsopaque-backed,interiors/services/fixturesomitted;screenmesh,hardwareandfineframes simplified.",
+    "Authoreddisplayterrainandbasementconnection arenotcampussurveyorstructuralfoundation.",
+    "Thinfeatures require slicer/process-specificassessment; nophysicalprintingorstructuralengineeringvalidation."
+  ],
+  "external_pending": [],
+  "scope_boundary": "ThisindependentPASScoverssource/visualconsistencywithstatedlimits. Mesh/format/rebuild/reopenrecordsremainseparatechecks; publicationauthorizationhandledbyparent."
+}

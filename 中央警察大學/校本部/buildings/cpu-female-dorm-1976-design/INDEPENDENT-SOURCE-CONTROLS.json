@@ -1,0 +1,179 @@
+{
+  "status": "INDEPENDENT_SOURCE_CONTROLS_REVIEWED_WITH_DOCUMENTED_DIMENSION_AND_FACADE_LIMITS",
+  "scope": "Actual six original raster drawings inspected; enlarged A1 bathroom/depth, A2 schedule, A4 window/basement section and A5 upright finish/structural datums. Source review only, not model/render PASS.",
+  "source_sha256": {
+    "MKMRMAMLMD.jpg": "985ae84705da91335b9fcc60eb4ae99cb6fc71af64596f7050617bfe4aa28a9b",
+    "M8MSMAMLMD.jpg": "62b58470f3d2ae746240c41355ed79f31740d69abe63516682baa0f7006be339",
+    "MLMSMAMLMD.jpg": "1cbc0fbb35e028c38e24a17f1e3ec9ee630cb2a95bd3d49d2d98a07d325048df",
+    "MXMSMAMLMD.jpg": "2702400b8144108d409908992f816ea83bd3ea605ae68006b3e510f026be8bd9",
+    "MNMSMAMLMD.jpg": "8ec174b7ae804f6a840d586c195e297205d7527348b1bc1a72cb7f03eb06b893",
+    "MPMSMAMLMD.jpg": "d00e8bf705f777ef5514d848f14c03d1779514f1570c4c12cf65b813c85bd117"
+  },
+  "identity": {
+    "project": "中央警官學校女生宿舍新建工程",
+    "series": "CCCK253/job6504",
+    "date": "1976-07 original design from65.7 titleblocks, not construction date",
+    "exclude": "Do not mix later1981 or subsequent dorm addition series."
+  },
+  "plan_controls_cm": {
+    "A1_length": 4207,
+    "A1_chain": "353.5+10*350+353.5=4207",
+    "S2_length_grid": 4200,
+    "A2_basement_length": 4210,
+    "length_rule": "Architecturalfinishedwallcenter andstructuralgrid endpointsdistinct; measuredwallthicknessreconciles upper andbasementoverallouterlength42.30m.",
+    "A1_room_depth": 450,
+    "A1_room_depth_datum": "Both endpoints markedW.C.; wall-center reference, NOT450cm net room clear depth.",
+    "A1_corridor_dimension": 200,
+    "S2_corridor_grid": 210,
+    "S2_total_grid": 660,
+    "depth_limit": "Do not label650 as verified whole outside depth. Architectural200 and structural210 reference-end discrepancy must be disclosed; slab/parapet/wall faces require distinct offsets.",
+    "recommended_depth_reference": "Finalarchitecturalreconciliation: main southWC0, outerface-.115; basement southWC-.015, northWC5.780; northouter5.900; uppercorridorouter6.500. PreserveS2 structural660separately; noforcedequivalence.",
+    "corridor_reconciliation": "Withsharedsouthouterface alignment, A2 579.5 andA4 retreat72 imply upperouter6.500m, matchingA1 450+200. S2660 isretained asdifferentstructuralreference;200notassertednetclearwidth.",
+    "basement_center_depth": 579.5,
+    "basement_depth_chain": "460+119.5=579.5cm, southW.C.→innerC.C.→northW.C.; theinitial622.5reading wasincorrect.",
+    "basement_retreat": "A4/A2 72cm fromoutercorridorverticaledge tobasementnorthwallcenter.",
+    "basement_relative_y_m": {
+      "upper_south_wall_center": 0,
+      "shared_south_outer_face": -0.115,
+      "basement_south_wall_center": -0.015,
+      "basement_internal_CC": 4.585,
+      "basement_north_wall_center": 5.78,
+      "basement_north_wall_external_face": 5.9,
+      "upper_corridor_outer_edge": 6.5,
+      "datum_note": "Acceptedcoherentinterpretation: align20cmbasementand23cmupper southwallouterfaces, ratherthancenters. A4showsnointentionaloutside step; A2depth579.5plus72returnsA1 450+200 exactly.1.5cmcenter shift isderived, not separatelydimensioned."
+    },
+    "basement_wall_thickness_cm": {
+      "north_A4": 24,
+      "south_A4": 20,
+      "east_west_A2": 20
+    },
+    "A2_basement_length_datum": "Actual enlargedA2bothendsW.C.; sidewall20cmRC.4210 iswallcenterspan.",
+    "A1_length_datum": "Actual enlargedA1 both terminal labelsW.C.; rightend separatelymarks23cmwall.4207 iswallcenter span, NOToverallouterlength.",
+    "shared_outer_length_cm": 4230,
+    "length_reconciliation": "A1 4207+23=4230; A2 4210+20=4230. Differentwallcenterlines explain3cm nominalspandifference withoutaveraging.",
+    "recommended_x_coordinates_m": {
+      "upper_end_wall_centers": [
+        -0.035,
+        42.035
+      ],
+      "shared_outer_faces": [
+        -0.15,
+        42.15
+      ],
+      "basement_end_wall_centers": [
+        -0.05,
+        42.05
+      ],
+      "interior_axes": "3.50,7.00,...38.50",
+      "first_last_bay_window_centers": [
+        1.7325,
+        40.2675
+      ],
+      "note": "Chosenparentbuildercoordinateorigin; previous0..42.07proposal wastranslatedequivalent, notdifferentgeometry."
+    }
+  },
+  "vertical_controls_m": {
+    "GL": 255.0,
+    "basement_floor": 251.86,
+    "first_FF": 255.16,
+    "first_structure_reference": 255.13,
+    "upper_FF": [
+      258.66,
+      262.16,
+      265.66
+    ],
+    "upper_structure_reference": [
+      258.63,
+      262.13,
+      265.63
+    ],
+    "RF_main_reference": 269.16,
+    "parapet_top": 270.06,
+    "relative_GL_RF": 14.16,
+    "relative_GL_parapet": 15.06,
+    "explanation": "A5 basement327cm to1F structural255.13 and330cm toFF255.16 resolve3cm offset. Top353cm is4Fstructural265.63 toRF269.16; fourth FF toRF remains350cm. Do not add3cm to each nominalstorey. A4 basement-toGL314cm likewise251.86→255.00.",
+    "A3_1730": "Basement-toRF17.30m, not aboveground building height.",
+    "roof_layers": "Roof finish/drainage micro-layers may simplify; no independently verified roof surface slope/engineering reconstruction."
+  },
+  "opening_schedule_cm": {
+    "W1": {
+      "width": 150,
+      "height": 200,
+      "vertical_parts": [
+        80,
+        120
+      ],
+      "correction": "Upper80 not85; matchesA4 90 sill+120+80 openingchain."
+    },
+    "W2": {
+      "width": 150,
+      "height": 85
+    },
+    "W3": {
+      "width": 320,
+      "height": 85
+    },
+    "W4": {
+      "width": 320,
+      "height": 65
+    },
+    "D1": {
+      "width": 90,
+      "door_leaf_height": 210,
+      "upper_transom_height": 80,
+      "correction": "Earlier220cm transcription corrected after enlargedsourcepixels:210cm leaf+80cm transom=290cm."
+    },
+    "notes": [
+      "A1 bathroom occupies three terminal bays; their south windows explicitlyW2, notW1.",
+      "North bathroom first andthird bays explicitlyW3; middle bayD1.",
+      "South other dormitory/stair bays useW1.",
+      "A3 south elevation gives visually similar tall rectangular bay outlines in bathroom zone. Do not silently replace explicitA1/A2 W2 withW1: apparent outline/glazing conflict or simplified elevation must be disclosed; exact W2 sill datum not independently established here."
+    ]
+  },
+  "facade_controls": {
+    "north": "Open access corridor,104cm parapet and cantilevered floor edge; NO full-height columns on outer corridor edge inA4. Columns belong to inner room-door-wall line. Short bay lines onA3 must not be extended into invented outer columns. North elevation reversesplanleft/right: stairviewerleft, bathroomviewerright.",
+    "south": "12 repetitive bays; bathroom three bays haveW2 according toplan/schedule, remainingnine W1.",
+    "east_west": "Mostly blank end walls, with smallground-level access doors; no invented upper-floor repeatedwindows.",
+    "basement": "A2plan/A3north elevation have central8basementwindowbays, zero-basedbay2 through9, not10. Firstbay2 is locally interrupted/shortened by projectinginspectionnotch. Remaining2baysateachend opaque. Displayterrain exposure is graphical.",
+    "stair": "Single terminalstair acrossbasement andfourfloors; no rooftop stairbox/tank supported."
+  },
+  "section_details_cm": {
+    "north_corridor_parapet_height": 104,
+    "southern_window_section_horizontal_chain": [
+      40,
+      30
+    ],
+    "correction": "A4 annotation reads40+30, not40+50.30 isouter portion beyond middlewallreference. Do not treat50cm as exactwindowprojection. Total70 includes inner/frame/wallreference offsets, not all outwardprojection.",
+    "W1_sill_above_FF": 90,
+    "W1_head_above_FF": 290,
+    "south_window_modeling": "A1 1:20 cabinet plan explicitly resolves projection:3.5+23+22+8=56.5cm overalldepth; mainwall23cm, cabinet projects22+8=30cm beyond exteriorwallface. A4 40+30 starts from an interior reference, NOT main exteriorwallface.",
+    "south_window_coordinates_with_wall_center_zero_outward_positive_cm": {
+      "main_wall_interior_face": -11.5,
+      "main_wall_exterior_face": 11.5,
+      "cabinet_outermost_face": 41.5,
+      "cabinet_inner_outer_face": 33.5,
+      "cabinet_room_side_front_approx": -15,
+      "glass_plane_approx": 0,
+      "glass_plane_certainty": "A4 glass graphically falls withinmainwall thickness nearcenter; exactoffset notnumerically dimensioned. Use0 only as disclosed graphical approximation."
+    },
+    "north_corridor_parapet_note": "104cm explicitly shown inA4 uppercorridor section; ground/stair return details may differ and should not be flattened into invented fullheightwalls.",
+    "south_full_height_side_fins": {
+      "assessment": "SUPPORTED_COMBINED_SOURCE_INTERPRETATION",
+      "basis": [
+        "A2roofplan retains repetitive serratedprojection at each southwindowbay",
+        "A3south elevation vertical bands continue acrossfloors toparapet",
+        "A4 label10cmRCthinwall and projectingsectionprofile"
+      ],
+      "geometry": "Two sidefins perwindowbay may extendfullheight; only the90cm window-sill cabinet/spandrel is filled outward atfloorlevels. Do not make a fullheight opaquebox enclosingtheglass.",
+      "thickness_cm": 10,
+      "distinction": "A1cabinet8cm sidewall is not necessarily identical to continuous10cmfacadefin."
+    }
+  },
+  "limitations": [
+    "No interiorpartitions/toiletfixtures required for exterior model; omissions must be stated.",
+    "Keep originalsourceimages/crops private; publishprovenancelinks andarchitect attribution separately.",
+    "No calibrated historicalcolor, currentstate, completedconstruction, physicallyprinted or structurallyvalid claim.",
+    "Any unresolved exactface datum should be called graphicalapproximation, not invented precision."
+  ],
+  "review_update": "Finaldatumsolution acceptedfordisclosedhistoricalinterpretation: commonoutside42.30m; common southwalloutside; northcorridorouter6.500 andbasementnorthcenter5.780. Previous6.70/6.515 alternatives superseded."
+}
