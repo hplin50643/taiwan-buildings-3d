@@ -1,12 +1,12 @@
 # 臺北醫學大學｜信義校區建築模型圖鑑
 
-目前收錄2套：信義校區教學大樓2021–2022修復後主體，以及君蔚樓完整有限細節外觀；均為來源引導的近似模型，未含廣場鐘樓。本校為教育部115學年度正式大學，代碼1028；前身臺北醫學院不另計學校。其他建物、雙和校區及全校逐棟清單仍未完成。
+目前收錄3套，其中既有2套為：信義校區教學大樓2021–2022修復後主體，以及君蔚樓完整有限細節外觀；均為來源引導的近似模型，未含廣場鐘樓。本校為教育部115學年度正式大學，代碼1028；前身臺北醫學院不另計學校。其他建物、雙和校區及全校逐棟清單仍未完成。
 
 ## 建築圖鑑
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![信義校區教學大樓NE格柵側模型](buildings/tmu-teaching-building-restored/previews/v3/front.png)](buildings/tmu-teaching-building-restored/README.md)<br>**[教學大樓｜修復後外觀](buildings/tmu-teaching-building-restored/README.md)**<br>中段格柵、紅磚端區、開通廊與側凸電梯<br>220 × 70 × 約38.65 mm | [![臺北醫學大學信義校區｜君蔚樓 Dream-Way Building：實際模型預覽](buildings/tmu-dream-way-building/previews/front.png)](buildings/tmu-dream-way-building/README.md)<br>**[臺北醫學大學信義校區｜君蔚樓 Dream-Way Building](buildings/tmu-dream-way-building/README.md)** |  |
+| [![信義校區教學大樓NE格柵側模型](buildings/tmu-teaching-building-restored/previews/v3/front.png)](buildings/tmu-teaching-building-restored/README.md)<br>**[教學大樓｜修復後外觀](buildings/tmu-teaching-building-restored/README.md)**<br>中段格柵、紅磚端區、開通廊與側凸電梯<br>220 × 70 × 約38.65 mm | [![臺北醫學大學信義校區｜君蔚樓 Dream-Way Building：實際模型預覽](buildings/tmu-dream-way-building/previews/front.png)](buildings/tmu-dream-way-building/README.md)<br>**[臺北醫學大學信義校區｜君蔚樓 Dream-Way Building](buildings/tmu-dream-way-building/README.md)** | [<img src="buildings/tmu-activity-center-undated-design/preview.png" alt="原臺北醫學院學生活動中心｜未定年原設計圖版：實際模型渲染" width="220">](buildings/tmu-activity-center-undated-design/README.md)<br>**[原臺北醫學院學生活動中心｜未定年原設計圖版](buildings/tmu-activity-center-undated-design/README.md)**<br>[STL](buildings/tmu-activity-center-undated-design/model.stl) · [彩色3MF](buildings/tmu-activity-center-undated-design/model.3mf) · [Blender](buildings/tmu-activity-center-undated-design/scene.blend) |
 
 [完整模型、正反並排預覽與下載](buildings/tmu-teaching-building-restored/README.md) · [來源摘要](../inventory/sources/tmu-teaching-building-restored-source-summary.md) · [QA摘要](../inventory/qa/tmu-teaching-building-restored-review.md)
 
@@ -17,3 +17,9 @@
 原數值檢查各1個flag與strict false完整保留；同一原run唯一事件的精確分類與獨立驗證範圍見QA，不能改稱原strict pass。未實體試印，開通廊、穿堂、遮陽與短橋有懸空／跨距，可能需要大量支撐，不是免支撐或列印成功保證。
 
 公開內容只含自行建立的幾何、程序材質、渲染、來源連結與檢查證據；不含原照片、圖面、PDF、正射或私人比較板，不宣稱原建築師、修復設計者或攝影師授權、認可。
+
+## 新增歷史原設計研究
+
+高而潘／高而潘建築師事務所CGEP234、工作號5716，採橫式含兩側外梯原設計版本；年代與是否建成未知，不以案號推年，不等同今日體育館。原臺北醫學院歸現臺北醫學大學同校；信義校區為歷史校園目錄歸組，不宣稱原案實際基地已精確定位。屋架高度跨圖差、外屋面協調厚度與外梯底高假設均保留；非2026現況。
+
+上述新增模型保留設計者與國立臺灣博物館典藏來源。來源圖像CC BY-NC標示（版本未明）與自行編寫程式／重建模型權利分開，不自動概括整包模型僅限非商業，也不宣稱已獲原圖或建築設計無限制商用權利。不附來源原圖、PDF或私人參考資料；皆未實體試印。

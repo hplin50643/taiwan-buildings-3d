@@ -1,0 +1,67 @@
+{
+  "status": "DIMENSION_CONTROLS_WITH_EXPLICIT_DRAWING_CONFLICT",
+  "units": "cm",
+  "source": "T1 CCCK19104006 and T2 CCCK19104007; original 1969 design drawings, not as-built",
+  "diameter": {
+    "T1": 366,
+    "T2": 360,
+    "basis": "clear tank inner-wall face to opposite inner-wall face, as visible from upper section dimension extension lines",
+    "not": "not rib centreline, not outside diameter",
+    "conflict": "6 cm difference retained; choose and disclose drawing priority, do not average"
+  },
+  "height_chain": {
+    "GL": 0,
+    "tank_bottom_slab_underside": 1100,
+    "tank_bottom_slab_top": 1120,
+    "upper_column_section_change": 1720,
+    "B1_underside": 1735,
+    "roof_flat_top": 1785,
+    "raised_rim_top": 1795
+  },
+  "height_evidence": [
+    "1100 reaches bottom slab underside from GL",
+    "20 cm slab thickness",
+    "600 starts at tank slab top and ends at upper column change",
+    "15 between upper column change and B1 underside",
+    "B1 35x50: 50 from beam underside to flat roof upper surface",
+    "raised edge 10 above flat roof surface"
+  ],
+  "limitations": [
+    "height total is 17.95 m to raised rim, excludes any independent protruding vent pipe if modeled",
+    "diameter discrepancy does not disappear by using different inner/outer conventions",
+    "no claim of constructed/current geometry"
+  ],
+  "image_hashes": {
+    "water-t2-top-check.png": "9c7b3fed1feb6447306c3f9286ad747a031f07f58cbe8c35c949e1d8199c36ab",
+    "water-top-dim-check.png": "5678b3c1715471240205fbc411abe985dee1c60c46afac96340055a708daab08",
+    "water-T1-rotated.png": "19330bfcd33da16b1f920a0e60f67166f734e2104db97c8a3f01ec88128e4c95",
+    "water-T2-rotated.png": "69f24c302a1ea425c1eed704e178263dc570cbf37b2c53aee1b517fec1b7ca28"
+  },
+  "radial_metres": {
+    "tank_inner": 1.83,
+    "tank_outer": 1.93,
+    "upper_ribs": [
+      1.83,
+      2.18
+    ],
+    "lower_ribs": [
+      1.68,
+      2.18
+    ],
+    "rib_tangent_width": 0.2,
+    "radial_spacing_degrees": 22.5,
+    "count": 16
+  },
+  "return_pipe": {
+    "source": "T1 1/A1",
+    "roof_datum_m": 17.85,
+    "above_below_m": 0.9,
+    "outer_inner_radial_offset_from_roof_edge_m": [
+      0.2,
+      -0.3
+    ],
+    "nominal_diameter_inches": 1,
+    "print_diameter_mm_at_1_100": 0.8,
+    "corner_rounding": "small rounded elbow approximation; not fabrication detail"
+  }
+}

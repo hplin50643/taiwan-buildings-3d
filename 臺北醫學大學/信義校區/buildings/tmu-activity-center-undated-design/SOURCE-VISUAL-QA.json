@@ -1,0 +1,68 @@
+{
+  "status": "passed_with_explicit_scope_limits",
+  "passed": true,
+  "reviewed_utc": "2026-11-01T06:39:23.844207+00:00",
+  "reviewer": "independent modeling reviewer",
+  "method": "Actually viewed all nine final-v4PNG again after Blender quit; lighting makes front/entry readable, no new sourcegeometry issue. Compared earlier actually-read original A1/A2/A3/A4/A7/A8/A11/A12 and detailedcontrols. No reliance on formatQA alone.",
+  "mesh_sha256": "b100b0c39b41e8eed9cb036f108f82ec42e7ff278c8ee9453c27e74ce3b5c370",
+  "build_script_sha256": "dd269c6158414164f0fcc6dc1977c02a220cd9f2d9ca07abf890f585f72b5a12",
+  "viewed_images": {
+    "preview.png": "76507c351432b3daf4575ee3acc4af958e5b4e218573bb9ee555294b8adef46c",
+    "rear.png": "56167a9c1975bc204a781fe805325f2ec5d4e8dd8e34d129f1748dac716f12cf",
+    "front.png": "0ab75f2d8282aac0be52f6941c4cde0808580ce01943e74b5b9f1bbec4675963",
+    "back.png": "dc1ce203ba43f43269ed71a607614938f8c395295b63880becc6c352d9f764c3",
+    "south.png": "dd4e0cbe5a2d243e3ca25c3461359dab745922efad42908215d4ba06982247e9",
+    "north.png": "0382ddac8114c5f842c2f63ebc50ef2758de87a47b3ea17c2013713f258cda74",
+    "top.png": "b04e30e216eb1bfd85e03685f5001e2e2b2343aface44c998f07bcbb45b0f1e3",
+    "stair-detail.png": "e9bae141e9d62f2831448d13da0c7deab778581890b3dcd7023de9d3db31e219",
+    "entry-detail.png": "4dac109fca15c5a9a9456f6fed2002614404e304a26c9828cc8085a4c26ac59f"
+  },
+  "source_sha256": {
+    "activity-plan.jpg": "752be541e7e37a7d057d89ca08d221051d8ca7c73aefd1509904c7eda54a8567",
+    "activity-elev.jpg": "20e62dcf369b379ba13edc8bb7a5b1ae73b2327cbb12b5f1376d5744b63cf7d4",
+    "activity-section.jpg": "734e9167e6e4c7a3ce39ece1304b6450d19fd1616dd37ba3d8d1a21ce7609371",
+    "gallery-plan.jpg": "6b68a71444451fffea28b5ca22f27c40053446edb0302f4307ee4aa47325c166",
+    "elevation-finish-1.jpg": "69a24746a62fe6ca029804cd1c13c95025ae9bab0f0cea2ed4f3293f5096acf8",
+    "elevation-finish-2.jpg": "d07a3181b3d7c457fe194053389f1e2c36c9b54048df50aa25ece3edb6f3bb2b",
+    "section-extra-1.jpg": "bf45ba7349178772fa565a193febc8d4b45c20ba573f74ef79ba76289aa6fdf8",
+    "section-extra-2.jpg": "356ca7c47c60cab0b4df8fb44a45f38534cbe4f4668787d767f5bf366b6e74e3",
+    "plan-revision.jpg": "588727ea8a48c88e687bd75555541658d71b16dca8fe37df463f73ef14f6a381",
+    "section-detail-c.jpg": "ec13110a91055cdcf490a68f4747219ce7a3e26db795015eac4214e3200a61d3",
+    "section-detail-d.jpg": "1acb512a622ec7b3f076817b0f3997dadf7e7d70564044f7fd57e7ed6aab903a",
+    "roof-plan.jpg": "63400713f2c87494ede08fd9d8f7e371096a2fdc750c51612fb92db8ce8c665a",
+    "roof-truss.jpg": "fd6d0e422ca56e1d14531bcbeae4b690264778b4d49783fdcb3d24fe83cfaa6d",
+    "entry-detail.jpg": "a34dc855c75569886cfd74578acb93ba466de6182693897b6c47c20070027f42"
+  },
+  "checks_passed": [
+    "43.2x24 main-axis envelope and two-pitchroof retained; frontappendages not added to mainlength",
+    "Two opposite-side stairs now ascend in opposed world-X directions, matching A2",
+    "Understairs open with thin steppedslabs; solidground wedges removed; no inventednewfreestandingmidcolumns",
+    "Upperwindowbands raised to selectedA3relativeposition; centralblankbays preserved",
+    "Four rearlowwindowbays now visible; serviceentryandstairs distinct",
+    "Frontdoors, raisedentrytreads, twoflowerwells, upperbalcony and broadgablefascia present",
+    "Folded eave/gutter profile visible; roof not mistaken as flat or A4height-only cap",
+    "Full-buildingviews retain roof/base; detailviews intentionallycrop to feature"
+  ],
+  "resolved_interim_issues": [
+    "stairs-solid-underfill",
+    "stairs-opposite-directions",
+    "upper-window-height",
+    "rear-fourth-low-bay"
+  ],
+  "remaining_limits": [
+    "Undated originaldesign interpretation only; construction/currentname/physicalrealization unverified",
+    "A12structuralroofchain selected over incompatibleA4nominalheight;13.85outerroof includes.175m authorcoordination allowance, not surveyed maximum",
+    "Externalstairs GL4.0 top and+.20 bottom are inferredcoordination;20cmwaist and40cmlandingbeam graphical estimates, not construction verification",
+    "A1planter320footprint selected despiteA7standalone405x530difference",
+    "WindowtypeW2 ambiguity, limitedpanes,opaqueglazing,backedexterior,neutralmaterials intentionallysimplified",
+    "Interior/basement/terrain/equipment/reinforcement/finehardware omitted; authored displaybase and localstairfoot not surveyedfoundations",
+    "Not a per-dimension survey accuracycertificate, structuralanalysis or successfulphysicalprint claim",
+    "SourceimageCCBY-NC metadata separate from generatedpackage rights; no sourceimages reproduced"
+  ],
+  "readme_checked": "README explicitly states originaldesign/implementationunknown, conflicts andestimatedcontrols; no asbuilt/current/printtest claim.",
+  "render_version": "final v4 lighting-only rerender, all nine actually viewed again",
+  "freeze_ready": true,
+  "renderer_hashes": {
+    "render_model.py": "2183d947c543d88867be5c19f14a45fba9584a5b12d6e0e4f083abc802b1ebc5"
+  }
+}

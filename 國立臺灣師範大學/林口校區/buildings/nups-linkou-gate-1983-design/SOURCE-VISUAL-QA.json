@@ -1,0 +1,44 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewer": "independent source/code/visual reviewer",
+  "mesh_sha256": "4b5c1935f035fe7a4542b947bdabd52d9ed9d9aa79262711bda16e55a4377cac",
+  "png_sha256": {
+    "front.png": "4dfbaac8662a0ff0ee7c58158fb30ef08169e8c3e027f50602202495dd128621",
+    "back.png": "b6a6fdab5776c10d85b43de724d1a9c0395b36d6b3f261881e05f190d9980388",
+    "east.png": "5ad89c97a9cb7a766fa45aa0ee869ba7422074da1862193c7f1ee98e84fadf2c",
+    "west.png": "31746cccfe6c6b276d707f67699684927d5842ce7e3aabd208686ad79327fe16",
+    "top.png": "ab1fa77082f8072d725df9095e21e6ce7b6f81910695dad09ed65f6bfaf06dba",
+    "preview.png": "ff691e6b2f4abfc705319539a63692eb3769056db7df0e5ba4aa3482250875f1",
+    "rear.png": "1fb700ab25c8242f6da547b6c6299e11f56d39e96b8c98788109fc2b734afd06",
+    "coffer-detail.png": "069ea3f951c0241b561c01ba64b8f3cc9b55dee1deb0aef1ccddb177c2345e2a",
+    "portal-detail.png": "73d5b078b4007483dab5a4e378c683246afbb12d008992bf0b14c8634a2d1f74"
+  },
+  "all_nine_pngs_actually_viewed": true,
+  "checks": {
+    "main_dimensions": "37.15x13.15m roof;A3/A5 GL9.95m with15cm raised floor;A2/A4 9.75m discrepancy retained",
+    "room_envelopes": "Corrected to8.25x4.50m grid incl75cm inner strip;no longer erroneous7.50m length",
+    "road_facing_facade": "45cm recessed3.63m flattened arch surround withD1/W3 backed panels visibly verified in final portal-detail;not an empty through room",
+    "roof_coffers": "Actual underside grid verified in coffer-detail;not just a plain slab",
+    "front_back_distinction": "Front circular glazing/globe abstraction/historic lettering versus rear rectangular windows/horizontal relief verified",
+    "side_views": "Outer high strip windows and column spacing visible",
+    "gate": "Nested-U main gate motif,paired pedestrian arch portals visible",
+    "identity": "2023-10-27 NTNU official Linkou photo corroborates distinctive overall gate type;historic source remains primary geometry",
+    "mesh": "Independent reload37728faces,one connected component,watertight,consistent winding,positive volume,zero zero-area faces"
+  },
+  "resolved_issues": [
+    "v3 missing road-facing facade repaired",
+    "v3 room length75cm omission repaired",
+    "Old portal v6c camera near-clipping not accepted;final v6d inspected"
+  ],
+  "limitations": [
+    "HistoricalMay–June1983 design interpretation;not2026/as-built survey",
+    "Central four-hands/plum crest detail omitted;globe is disclosed abstraction",
+    "NotoTC typeface interpretive because original specifiesfont separately",
+    "Opaque backed glazing and solid simplified interiors;notfull interior reconstruction",
+    "Localfence cutoffs and flatdisplay base are authored extent,not380mwholecampus",
+    "Wholemodelviewsfront/east comparativelydark;dedicated detail views resolve source verification",
+    "Detailviews deliberately crop fullmodel;portal foreground thin element is actual gate edge,not camera-inside-room black block",
+    "No physicalprinttest orunrestrictedcommercial-rightsclaim"
+  ],
+  "remaining_blocking_geometry_findings": []
+}

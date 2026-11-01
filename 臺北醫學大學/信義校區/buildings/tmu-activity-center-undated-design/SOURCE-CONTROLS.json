@@ -1,0 +1,209 @@
+{
+  "status": "GO_FOR_UNDATED_ORIGINAL_DESIGN_WITH_SELECTED_EXTERNAL_STAIR_VARIANT",
+  "reviewed_utc": "2026-11-01T06:22:17.220515+00:00",
+  "project": "私立台北醫學院學生活動中心新建工程設計圖",
+  "job": "5716",
+  "architect_office": "高而潘建築師事務所 / E. P. Kao Associates",
+  "date": null,
+  "actual_implementation": "unknown; not established as present gymnasium",
+  "selected_core": {
+    "A1": "activity-plan.jpg / CGEP23423002 horizontal sheet2/21",
+    "A2": "gallery-plan.jpg / CGEP23423004 horizontal sheet3/21",
+    "A3": "elevation-finish-2.jpg / CGEP23423008 horizontal sheet4/21",
+    "A4": "activity-section.jpg / CGEP23423009 horizontal sheet5/21",
+    "detail": "section-extra-2.jpg / CGEP23423011 A5 sheet6/21",
+    "A7": "section-detail-c.jpg / CGEP23423015 horizontal A7 sheet8/21",
+    "A8": "section-detail-d.jpg / CGEP23423017 horizontal A8 sheet9/21",
+    "A11": "roof-plan.jpg / CGEP23423022 RCgutter and roof-framingplan",
+    "A12": "roof-truss.jpg / CGEP23423023 horizontal detailedrooftruss"
+  },
+  "explicit_controls_m": {
+    "main_length_axis": 43.2,
+    "longitudinal_bays": 12,
+    "longitudinal_bay_pitch": 3.6,
+    "main_width_axis": 24,
+    "transverse_chain": [
+      5.175,
+      3.95,
+      5.75,
+      3.95,
+      5.175
+    ],
+    "floor_above_GL": 0.75,
+    "truss_bottom_above_floor": 8.8,
+    "truss_bottom_above_GL": 9.55,
+    "roof_rise_dimension": 3.3,
+    "total_height_dimension_chain": 12.85,
+    "indicated_roof_slope": 0.3,
+    "total_height_dimension_chain_note": "12.85 is an explicit nominal chain, NOT verified outer roofing maximum: A4 leader is below drawn ridge; A7 distinguishes bottom chord, purlins and outer roof.",
+    "A7_external_stair": {
+      "horizontal_chain": [
+        2.25,
+        1.2,
+        2.25,
+        1.2
+      ],
+      "treads_per_flight": 9,
+      "tread_depth": 0.25,
+      "total_risers": 20,
+      "riser_height": 0.19,
+      "total_rise": 3.8,
+      "right_extra_dimension": 0.3,
+      "correction": "Actual high-resolution vertical label reads 20 STEPS @19 =380, not 19x18=342.",
+      "datum_warning": "3.80m is relative rise only. Upper landing labelled2ND FL; lower datum not explicitlyGL/1ST FL in this independent detail. Do not align with adjacent unrelated section on same sheet."
+    },
+    "A7_eave": {
+      "bottom_chord_to_gutter_bottom": 1.1,
+      "inclined_fascia_length": 2.0,
+      "inclined_fascia_angle_deg": 60,
+      "note": "110 is below bottom-chord datum to gutter bottom, not complete height of upturned edge. 200 follows inclined outerfold. Top edge extends above sloping roof."
+    },
+    "A8_gallery": {
+      "first_floor_above_GL": 0.75,
+      "low_gallery_tread_above_first_floor": 2.5,
+      "low_to_rear_high_tread_approx": 0.75,
+      "derived_high_tread_above_GL_about": 4.0,
+      "note": "A8 rightsection250cm to lowtread plus approximately75cm steppedrise. External stair3.80m totalrise has unresolved~20cm base/threshold relation. Not3.80m automaticallyGL nor4.55m."
+    },
+    "A12_roof": {
+      "truss_span": 24.5,
+      "half_span": 12.25,
+      "five_halfspan_panels": 2.45,
+      "slope": 0.3,
+      "labelled_structural_rise": 3.825,
+      "separate_lower_vertical_segment": 0.3,
+      "FL880_reference": 8.8,
+      "derived_upper_chord_ridge_GL": 13.675,
+      "derivation": ".75+8.80+.30+3.825; A12 detailed dimension selected over conflicting A4nominal12.85. Outer roofing/purlins visibly above upperchord;13.675 is NOTmaximum externalroof.",
+      "roof_end_dimension_on_slope": 0.9,
+      "span_note": "24.50truss span differs24.00 architecturalaxis; do notstretchallplans to24.50."
+    }
+  },
+  "four_facade_evidence": "A1 upper-left and lower-middle exterior elevation marks both explicitly reference3/A3; one side elevation controls both long sides. A3 supplies1front and2rear. Fourth side is not inferred from visual symmetry alone.",
+  "variant_differences": [
+    {
+      "sources": [
+        "plan-revision.jpg23003",
+        "elevation-finish-1.jpg23007"
+      ],
+      "description": "Portrait sheets omit central exterior stairs; not selected and no evidence they are later revisions."
+    },
+    {
+      "source": "activity-elev.jpg23006",
+      "description": "Detailed window glazing with different central treatment; not blanket glazing source for selected23008 blank central bays."
+    },
+    {
+      "source": "section-extra-1.jpg23010",
+      "description": "Portrait section shares1285dimension chain and graphically shallower roof; can corroborate labels but do not indiscriminately merge alternate facade features."
+    }
+  ],
+  "graphically_scaled_or_qualified": {
+    "central_exterior_stair_extent_x_about": [
+      21.6,
+      28.8
+    ],
+    "external_stair_location": "Both long sides explicit A1/A2; profile now controlled by A7 horizontal and rise chains.",
+    "side_door_bays_x_about": [
+      [
+        14.4,
+        18.0
+      ],
+      [
+        32.4,
+        36.0
+      ]
+    ],
+    "front_end_projection": "A2 shows338cm extension beyond43.2m main-axis line; entryappendage not increase to mainroofspan",
+    "roof_graphic_warning": "A4 1285 leader below drawn ridge cannot be maximum external roof. A7 gives 955/880 to bottom chord, outer roof above chord; retain 3:10 nominal slope. A7 outer roof at wall appears roughly0.4–0.5m above bottom chord (graphical only); full maximum height requires coordinated roof/detail endpoint selection, not a blind12.85m cap.",
+    "external_stair_datum_selection": {
+      "possible_selected_landing_GL": 4.0,
+      "derived_lower_start_GL": 0.2,
+      "basis": "A8gallery highrear tread approximatelyGL4.00; subtractA7relative3.80. Inferredcoordination only, not explicitGLannotation. Do notinvent20cmthreshold; discloseunresolvedabsolute lowerdatum."
+    }
+  },
+  "not_dimensions": [
+    "4/21 is sheet4 of21, not a date",
+    "Job5716 is not independently verified calendar year",
+    "X marks within rectangular openings are drawing conventions, not evidence of literal exposed crossbracing"
+  ],
+  "remaining_limits": [
+    "Roof envelope maximum must distinguish structural nominal chain1285 from external roofing. A7 explicit gutter110/inclinedfascia200/60deg and layer drawing should be applied; any residual graphical roof-layer estimate disclosed.",
+    "Do not fill selected23008 central fourblank bays with23006 continuous upperglazing.",
+    "Exact asbuilt identity and school building name remain unverified; originaldesign scope only.",
+    "Basement interiors may be omitted, but actual exterior steps/entry portals must be retained.",
+    "Source image license and model package rights are separate.",
+    "External staircase lower absolute datum remains unresolved; preserve3.80relative rise but coordinate with A8gallery topapproximatelyGL4.00 and futurestairplan.",
+    "A12 chosen structural rise3.825+lower.30 conflicts A4nominalroofrise3.30; preserve source discrepancy and selected detailed-control derivation, no averaging."
+  ],
+  "source_sha256": {
+    "activity-plan.jpg": "752be541e7e37a7d057d89ca08d221051d8ca7c73aefd1509904c7eda54a8567",
+    "activity-elev.jpg": "20e62dcf369b379ba13edc8bb7a5b1ae73b2327cbb12b5f1376d5744b63cf7d4",
+    "activity-section.jpg": "734e9167e6e4c7a3ce39ece1304b6450d19fd1616dd37ba3d8d1a21ce7609371",
+    "gallery-plan.jpg": "6b68a71444451fffea28b5ca22f27c40053446edb0302f4307ee4aa47325c166",
+    "elevation-finish-1.jpg": "69a24746a62fe6ca029804cd1c13c95025ae9bab0f0cea2ed4f3293f5096acf8",
+    "elevation-finish-2.jpg": "d07a3181b3d7c457fe194053389f1e2c36c9b54048df50aa25ece3edb6f3bb2b",
+    "section-extra-1.jpg": "bf45ba7349178772fa565a193febc8d4b45c20ba573f74ef79ba76289aa6fdf8",
+    "section-extra-2.jpg": "356ca7c47c60cab0b4df8fb44a45f38534cbe4f4668787d767f5bf366b6e74e3",
+    "plan-revision.jpg": "588727ea8a48c88e687bd75555541658d71b16dca8fe37df463f73ef14f6a381",
+    "section-detail-c.jpg": "ec13110a91055cdcf490a68f4747219ce7a3e26db795015eac4214e3200a61d3",
+    "section-detail-d.jpg": "1acb512a622ec7b3f076817b0f3997dadf7e7d70564044f7fd57e7ed6aab903a",
+    "roof-plan.jpg": "63400713f2c87494ede08fd9d8f7e371096a2fdc750c51612fb92db8ce8c665a",
+    "roof-truss.jpg": "fd6d0e422ca56e1d14531bcbeae4b690264778b4d49783fdcb3d24fe83cfaa6d",
+    "entry-detail.jpg": "a34dc855c75569886cfd74578acb93ba466de6182693897b6c47c20070027f42"
+  },
+  "entry_coordinate_proposal": {
+    "coordinate_system": "mainaxes x0..43.2; y0..24; entranceatx43.2",
+    "A2_second_floor_front_projection_x": [
+      43.2,
+      46.58
+    ],
+    "A2_front_band_y": [
+      4.625,
+      19.375
+    ],
+    "A2_front_band_width": 14.75,
+    "explicit_y_chain": [
+      4.5,
+      5.75,
+      4.5
+    ],
+    "equal_side_remainders": 4.625,
+    "A1_ground_stair_outer_x_graphic": [
+      47.6,
+      47.7
+    ],
+    "A1_ground_platform_planter_outer_x_graphic": 47.0,
+    "A1_planter_y_ranges_derived": [
+      [
+        1.425,
+        4.625
+      ],
+      [
+        19.375,
+        22.575
+      ]
+    ],
+    "A1_planter_y_dimension_explicit": 3.2,
+    "A7_standalone_planter_dimensions": [
+      4.05,
+      5.3
+    ],
+    "version_discrepancy": "A7standaloneplanter530 dimension conflictsA1located320 footprint. Select A1locatedfootprint and disclose; do not silentlyinsertA7largerbox. A2projection338 is upperfrontappendage, not wholehall or firstfloorstair extent.",
+    "correction": "Frontband1475cm, not1435; 450+575+450=1475."
+  },
+  "model_estimates": {
+    "roof_outer_ridge_m": 13.85,
+    "upper_chord_to_outer_skin_interpretation_m": 0.175,
+    "upper_window_band_GL_m": [
+      5.1,
+      8.35
+    ],
+    "exterior_stair_top_GL_m_estimated": 4.0,
+    "exterior_stair_bottom_GL_m_coordination_only": 0.2,
+    "exterior_stair_slab_m_scaled": 0.2,
+    "exterior_midlanding_shortbeam_depth_m_scaled": 0.4,
+    "stair_orientation": "A1 paper upper y0 ascends toward decreasing X; paper lower y24 ascends toward increasing X",
+    "understairs": "open; no filled wedge; short side support at midlanding into wall",
+    "firstfoot": "small authored support only; no invented threshold claim"
+  }
+}
