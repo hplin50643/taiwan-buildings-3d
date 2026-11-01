@@ -1,0 +1,102 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "version": "v3",
+  "scope": "Independent actual-source-pixel,code/README consistency andall10render visualreview;1985 revisedhistoricalexterior,notcurrentcondition/survey/structuralapproval",
+  "mesh_sha256": "c6adb3027a3017bedbe4ae721c6251c916497e469106d40eeabbdd97c38af0b3",
+  "triangles": 80264,
+  "bound_files_sha256": {
+    "build_model.py": "7d9f008715a07ce3c8a14c31ba0d79fd94a8e76600ae471b30d54be1b91c5917",
+    "render_model.py": "73b4545f40dd1c3248cd4c6e9cac978b39d7b79c0d4527f6a9a906b98b0f559e",
+    "README.md": "2834c7e0f882ec2989a2e39a4a32c9f3bfa1da87cc782ca252819233b98d8d8f",
+    "SOURCE-CONTROLS-REVIEW.json": "dd0411a5d60cb5866068d7e0e76c38349eebb8fecc2175fcce9d17eece49918d",
+    "ROOF-CONTROLS-REVIEW.json": "d3561c86201dc146fe8477dc9eee73c350006a1bd2bb739113969991d28573f4",
+    "components.json": "0d03c7c2c8238c5bb3838a3d3ba29bfd810c2af3ae51236d5ecaaa9c555671ec"
+  },
+  "png_sha256": {
+    "corner-detail.png": "85525f43352f84883f891bc54e44f8ab19375bf9f34df0ebbd23e5317aef40bb",
+    "east.png": "dc84ca461d6cdeddfe22620c2c9cfc6d1ca88de54a29fe530063b4afdcafeda1",
+    "entrance-detail.png": "5cad1d7850ae24944917d2b272039ec71d7f6006f14edb743b48460369d0b75a",
+    "north.png": "0e1a21002fa88f903db8e9bc7ed05cac683669e573ece1cc9335780bf2b52f19",
+    "preview.png": "168bbc23175673e20af204245157c3def32653f246e36321fe3b7198aafd33b8",
+    "rear.png": "56452b601db4d7ca86addba0eb0fa598b552e00508878f98ee59feb98b19ee8b",
+    "rooflight-detail.png": "c1d6b1cf149cd8b1f6c35b55f42013e1766eeb9157597e595d7c1cb3f02d2bbf",
+    "south.png": "37ec27bea946be74bb446321cf398fa9a60f53e61bfcd37802172585498c5a81",
+    "top.png": "fd4eaa738f5b1d95f7c2f571a151c88ed83e48cca3fca557b0f7e384c0ad94ac",
+    "west.png": "ca177379a16a3e957c6db5146d8943fc5b678961e0799cfa461f08218017f16b"
+  },
+  "visual_review": {
+    "preview.png": {
+      "status": "PASS",
+      "observation": "Full front perspective contained; principal entrance,upper solidspandrels androof visible."
+    },
+    "rear.png": {
+      "status": "PASS",
+      "observation": "Full rear perspective contained; central solidback and3horizontalwindow levels eachflank nowvisible."
+    },
+    "north.png": {
+      "status": "PASS",
+      "observation": "Full F longfacade contained;24upper panes,central12lowwindows,2sideentries,glassblockstrips."
+    },
+    "south.png": {
+      "status": "PASS",
+      "observation": "Full A longfacade contained;explicitbayrhythm,not claimingidenticalinteriors."
+    },
+    "west.png": {
+      "status": "PASS",
+      "observation": "Full front contained;17upperpanes,centralDW1andcanopy,3+3lowwindows;horizontalframehead nowvisible."
+    },
+    "east.png": {
+      "status": "PASS",
+      "observation": "Full rear contained;central7upperpanes elevatedrelativeflanking5+5;rearW8second/thirdfloor corrected."
+    },
+    "top.png": {
+      "status": "PASS",
+      "observation": "Full roof contained;7x4lights,4cornerterraces,right10-11RCband,offcenterwatertankand2stairheads."
+    },
+    "entrance-detail.png": {
+      "status": "PASS",
+      "observation": "Intentional crop;DW1,canopy,steps,lowwindows andfrontframe read;not fullbuilding framing."
+    },
+    "rooflight-detail.png": {
+      "status": "PASS",
+      "observation": "Intentional crop;25/45/35stack represented bybase,louverrelief,domes;not exact transparentfabrication."
+    },
+    "corner-detail.png": {
+      "status": "PASS",
+      "observation": "Intentional crop;foldedfascia,glassblocks,upperfront/rear pane distinction andcorrectedrearW8visible."
+    }
+  },
+  "source_controls_checked": [
+    "A2-A6 facadeasymmetryandwindowtags againstA8/A9 elevations andA25 schedule",
+    "W3family210cm front/longvsW9family150cm rear;rearcentralstep",
+    "RearW8width930height80,2FL7.50..8.30 and3FL10.10..10.90;v2omissionfixed",
+    "W6/W7lowwindows35..115cm;longcentral6baystwoeach andshortflanks3each",
+    "Cornerstrips areglassblocks,notlouvers",
+    "DW1centralfront only;DW2fourentrieswith40cmsolidupperhead",
+    "Roofrightband water tankdimensions/offset,2.03x3.40stairheadplans anddocumenteduncertainheights",
+    "28rooflightarrangement andclosedbackedrepresentations"
+  ],
+  "resolved_v2_findings": [
+    "Rear missingthirdW8band added",
+    "Rear secondW8heightreducedto80cm",
+    "Rear horizontalheadaboveglass;front/rearframeheadsnowvisible"
+  ],
+  "documented_limits": [
+    "Mainroofabsoluteheight nominal±.15m: sourceinterpretation,notmeasurementtolerance.",
+    "Stairheadtop followsnominalmainroof ascoordinationinterpretation;A9 2.05..3.05range doesnotuniquelyassignexactlocalheight.",
+    "WatertankY andstairheadXY aregraphicestimates;not surveycoordinates.",
+    "Upperglassabsolutez,glassblocksegmentz,facadeoffsetsandframeprofilespartlygraphic/printsimplified.",
+    "Opaqueclosedprintenvelope,neutralcolor;nottransparentglass/interior/actualhistoricpaint.",
+    "16HVACprovisions,unlocatedlocalW10bathwindows,smallpipes/railsandfoundationsomittedasdisclosed.",
+    "3detailviewsintentionalcrops;7fullviewscontained.",
+    "No actualprint/slicer validation;geometricPASSisnotprinterguarantee."
+  ],
+  "source_rasters_included": false,
+  "permission_to_freeze": "No remaining source/visualblockingissue within documented scope; builder must ensure finalformat/rebuild/scene QA matchthismesh.",
+  "independent_mesh_checks": {
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "triangles": 80264
+  }
+}

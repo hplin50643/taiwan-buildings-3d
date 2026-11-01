@@ -7,7 +7,7 @@
   "coverage_statement": "校本部A-F與南投N代碼表全部已轉錄；這是官方地圖項目清單，不是最終去重棟數。未列名的林場/農場附屬建物仍未逐棟研究。",
   "source_dates": "官方代碼頁未標明版本，讀取日期不等於更新/攝影日期；規劃/未完工狀態待2026另證。",
   "current_limits": [
-    "現行6個模型包；原3個前段、小禮堂重建後主廳、雲平樓2024中央前側，以及1985修訂設計三柱短停車棚。歷史原設計不是現況或實施證明，均非完整校園或全館測繪。",
+    "現行7個模型包；原3個前段、小禮堂重建後主廳、雲平樓2024中央前側、1985修訂設計三柱短停車棚，以及體育館主館1985年3月修訂歷史設計。歷史原設計不是現況或實施證明，均非完整校園或全館測繪；體育館歷史原案與今日地圖D-5的精確對應及改建時序仍須核實。",
     "官方影音相簿部分已有目錄/標題及日期，圖片傳輸本次失敗；未實看項目仍屬未研究，不能稱無資料。",
     "相簿用語新/舊、使用單位與樓名需要校圖去重。",
     "附屬高中、附農為非大專校院，在本大學模型數中不納入；若要做需另立範圍。"
@@ -15,7 +15,7 @@
   "next_priorities": [
     "B-8小禮堂：主廳有界外觀研究模型已列入現行索引；附屬迴廊、廂房、角塔、連接與現況仍未完成，不把主廳模型當全群。",
     "南投N-12/N-13、N-14/N-15、N-18/N-19：官方前後棟與相簿可逐組研究，避免同門牌誤合棟。",
-    "A-11雲平樓：2024中央前側有界模型已列入現行索引；其餘完整樓體與新舊時序仍需續核。D-5體育館仍待來源。",
+    "A-11雲平樓：2024中央前側有界模型已列入現行索引；其餘完整樓體與新舊時序仍需續核。體育館主館1985年3月修訂歷史設計模型已收錄；今日地圖D-5的精確對應、後續改建與現況仍待核實，不將歷史模型當作D-5現況完成。",
     "B-18國農、C-1農環、C-3作物、A-9社管：已有官方相簿，多角度實看後可續批。",
     "其餘校本部代碼及中科/向上院、四林場與霧峰/溪心壩場域逐步補足。"
   ],
@@ -2781,7 +2781,7 @@
       "next_step": "先建立場域內逐棟清單與公開外觀實照，再建模；勿把場域清單冒充已完成建築清單。"
     }
   ],
-  "current_model_packages": 6,
+  "current_model_packages": 7,
   "model_count_updated_date": "2026-11-01",
   "current_increment_packages": [
     {
@@ -2816,9 +2816,20 @@
       "scope_and_limitations_reference": "校本部/buildings/nchu-bicycle-shelter-1985-design/README.md",
       "physical_print_verified": false,
       "classification": "historical_original_design_not_assigned_to_legacy_full_or_partial_categories"
+    },
+    {
+      "slug": "nchu-gym-main-hall-1985-design",
+      "name": "體育館主館｜1985年3月修訂設計圖版",
+      "campus": "校本部",
+      "path": "校本部/buildings/nchu-gym-main-hall-1985-design",
+      "readme": "README.md",
+      "scope": "1982年原圖及截至1985年3月修訂之體育館主館歷史外觀研究，非現況、竣工保證或2024年後翻修外觀。不含泳池、短停車棚、惠蓀堂、室內看台與設備、地下室內部或真實地形。屋頂標高±0.15m及梯屋頂高協調推定明示，中性配色、細部簡化；未實際列印或切片驗證。",
+      "scope_and_limitations_reference": "校本部/buildings/nchu-gym-main-hall-1985-design/README.md",
+      "physical_print_verified": false,
+      "classification": "historical_original_design_not_assigned_to_legacy_full_or_partial_categories"
     }
   ],
   "counting_scope": "現行模型套件總數；不是完整建築棟數或全校完成。新增項以各件README的來源、年代、截段與未知範圍為準，未實體試印。原full/partial分類不擅自擴充；新增項另列未分類。",
-  "current_increment_legacy_classification_unassigned": 3,
-  "classification_baseline_scope": "completed_full_buildings=0 and completed_partial_building_models=3 are prior-three baseline; three additional bounded/historical-design studies are unassigned rather than guessed into categories."
+  "current_increment_legacy_classification_unassigned": 4,
+  "classification_baseline_scope": "completed_full_buildings=0 and completed_partial_building_models=3 are prior-three baseline; four additional bounded/historical-design studies are unassigned rather than guessed into categories."
 }

@@ -1,0 +1,128 @@
+{
+  "status": "GO_HISTORICAL_ENVELOPE_WITH_BOUNDED_ROOF_DATUM_INTERPRETATION",
+  "scope": "Independent actual pixel review of roof outline, height and A45 necessity; no modeling authorization or modeling performed",
+  "source_files": {
+    "MKMDMAMXMD.jpg": "4348ce180f869e34bcd161e421a9943fc235147c833aa1317feab2c22a10549c",
+    "M8MEMAMXMD.jpg": "8140a30ab2658294e069f5ee5237e068cef9555307b2a7c288411c4933c904aa",
+    "MLMEMAMXMD.jpg": "eb9100085a8fade354f5322b682ebbfce7f8532b3e64fde1690279d193ebadf2",
+    "MPMDMAMXMD.jpg": "cf6973524959ce3a1e4faf1bba9075b935bcb16dd22cfa592e765aab4591901d",
+    "M7MDMAMXMD.jpg": "1f4e7d3b21507c80b981e5a1d64aad99aeaa60e28b487884d420729caa3c0771",
+    "MPMDMGMLMD.jpg": "ac2543f24ec3840619bb0d94ef6a9536495a1ac4d1cdeec55108380bf86be54f",
+    "MCMYMAMXMD.jpg": "f2e3583602feda6ecb9d1ae1697af8032140bc3609e954f5a65dff515df5aabd",
+    "MLMSMRMNMD.jpg": "c18a6e50356b34ef8a026ad47f3f621800b0e3d733e8ab1e4e0c59a3d157630c",
+    "MXMSMRMNMD.jpg": "112598f1e760a96ac40dd485061d19d90327afa49014536275138515321ab093",
+    "MNMSMRMNMD.jpg": "2277157a9a156d131d0e2f27b52f123d85f11cb35020f528153b30682e7e7d1c",
+    "MCMSMRMNMD.jpg": "b56a1f5ae191e6f8959a44ea783a832c178cf38da66dafaafed44ca84605c572",
+    "M8MSMRMNMD.jpg": "270998c4fad3e29d01a657c7f28d2f29a1477e8bfcacac876133b62ac287614d",
+    "MXM2MRMNMD.jpg": "c2da74ab81adfa463324ef9aea961474cb9e280b89e32b85e58da1a8e0ad03ee",
+    "MXMEMAMXMD.jpg": "0f3bce181d14d5fb4446bce70b34716cb30311e7fce15d9c4567c01fb237a498"
+  },
+  "confirmed": {
+    "GL_EL_m": 50.0,
+    "FF_EL_m": 51.4,
+    "second_EL_m": 56.0,
+    "third_seating_EL_m": 59.1,
+    "fourth_different_zones_EL_m": [
+      63.6,
+      62.7
+    ],
+    "RF_support_EL_m": 68.2,
+    "outer_fascia_top_EL_m": 72.0,
+    "height_above_GL_m": 22.0,
+    "height_sum_A8_cm": [
+      140,
+      460,
+      310,
+      910,
+      380
+    ],
+    "x_axes_m": 69.6,
+    "y_axes_chain_m": [
+      8,
+      10,
+      14.6,
+      10,
+      8
+    ],
+    "y_axes_m": 50.6,
+    "roof_outer_overhang_from_axes_m": 1.75,
+    "roof_outer_envelope_m": [
+      73.1,
+      54.1
+    ],
+    "A9_fascia": "380 cm tall folded edge, upper/lower 65 cm chamfers; not a rectangular solid roof slab",
+    "A45": "Actual sheet number A45, gymnasium title and 73.5.30 date match A7 73.6 revision reference; cross-catalog use warranted by direct drawing reference",
+    "roof_pitch_horizontal_to_vertical": 25.16,
+    "roof_form": "A10 short section and A45 show shallow symmetric two-slope roof within folded fascia, not flat plate",
+    "skylights": {
+      "count": 28,
+      "plan_dome_cm": [
+        83.5,
+        120
+      ],
+      "A23_total_height_cm": 105,
+      "height_chain_cm": [
+        25,
+        45,
+        35
+      ],
+      "note": "35 cm is curved dome height only; 45 cm louver body and 25 cm base are additional. Dome curved in both directions; not a rectangular 35 cm block."
+    }
+  },
+  "corrections": [
+    "2220 cm mistaken transcription; A8 and A10 both2200",
+    "Initial rough Y51m and research preliminary50m both withdrawn: A7CD1460/A4total5060",
+    "65+270+65=400cm outer fascia depth;380cm is RF-to-top after20cm bottom-slab datum offset."
+  ],
+  "pending": [
+    "No source HOLD remains for roof outline/slope/datum within the explicit±0.15m historical interpretation allowance. This is not a blanket GO for other unreviewed facade controls.",
+    "Model-stage check all rooftop protrusions and calculate actual model maximum after skylight placement; keep external fascia top22m distinct from whole-model top.",
+    "Preserve1984roof material revision and1985package version semantics; no current-condition claim."
+  ],
+  "review_time_utc": "2026-11-01T12:11:05Z",
+  "roof_datum_addendum": {
+    "actually_reviewed": [
+      "S26 roof framing plan",
+      "S27 T1 elevation and WP/purlin details",
+      "S28 T2 elevation and bearings",
+      "S29 longitudinal trusses",
+      "S25 fascia structure",
+      "S7 roof RC structure plan",
+      "A11 wall section upright"
+    ],
+    "cross_catalog_justification": "Same gymnasium title, matching69600x50600mm axes, CD14600mm, referenced roof framing; not a random similar building. S26-S29 dimensions are millimetres, architectural dimensions generally centimetres.",
+    "direct_controls": {
+      "A11_RF_label": "屋頂（鋼架底面）",
+      "RF_above_GL_m": 18.2,
+      "S27_S28_truss_depth_end_mm": 2000,
+      "S27_S28_truss_depth_center_mm": 3000,
+      "half_span_between_working_points_mm": 25160,
+      "axis_half_span_mm": 25300,
+      "purlin_depth_mm": 150,
+      "A45_sheet_thickness_mm": 0.61,
+      "roof_rise_m": 1.0,
+      "pitch_horizontal_vertical": 25.16
+    },
+    "fascia_datum_correction": "65+270+65=400cm, NOT380. S25 chain is outer bottom underside to top; A11 RF steel-bottom/floor-top reference is20cm above outer bottom underside. Hence top remains RF+380cm=GL+22.0m. Do not conflate the two baselines.",
+    "working_point_interpretation": "S27 WP lines lie near outer top/bottom chord faces, not mid-depth of entire150mm angle leg. S28 bearing shows25mm base plate and38mm bedding-related offset, but these are not licensed to be added wholesale above an already steel-bottom architectural RF. Exact architectural/structural reference reconciliation remains a few-centimetre interpretation.",
+    "bounded_model_recommendation": {
+      "nominal_roof_reference_plane_ridge_above_GL_m": 21.35,
+      "nominal_roof_reference_plane_eave_at_truss_end_WP_above_GL_m": 20.35,
+      "nominal_chain_m": [
+        18.2,
+        3.0,
+        0.15
+      ],
+      "modeling_uncertainty_allowance_m": 0.15,
+      "meaning": "Conservative disclosed historical reconstruction allowance, not a measured confidence interval or as-built tolerance. A11 roof lines near fascia top minus65cm independently support21.35m. A45 revised thin metal roof no longer supports blindly carrying all original RC/insulation layer thicknesses fromS27/A23. Actual rib crests/flashing may lie several cm above nominal roof plane; represent simplified relief with stated authored thickness or disclose omission.",
+      "not_permitted": [
+        "claim exact21.350m source dimension",
+        "treatRF18.2 as metal plate top",
+        "apply2m depth uniformly across roof",
+        "declare whole building top22m before placing1.05m skylights on sloped surfaces",
+        "copy old roof material buildup as though unrevised"
+      ]
+    },
+    "release_scope": "Roof geometry sufficiently constrained for a disclosed historical exterior-envelope model; no further source search required for this local roof question. Source-grounded model-stage checks of corners, drainage, water tanks and skylight positions still required."
+  }
+}

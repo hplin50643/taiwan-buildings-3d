@@ -1,0 +1,281 @@
+{
+  "status": "SOURCE_CONTROLS_REVIEWED_MODEL_VISUAL_QA_PENDING",
+  "scope": "1985 revised NCHU main gym historical closed exterior only; facade review not roof structural certification",
+  "sources": {
+    "A2": {
+      "private_file": "MNMDMAMXMD.jpg",
+      "sha256": "895fe7c31a45d133240ee2a69253c61ec4f3488b681942d9c4ff4794a53e65da"
+    },
+    "A3": {
+      "private_file": "MCMDMAMXMD.jpg",
+      "sha256": "cf9fdfd222584beb81dac6cebee1d3f40c2d479f61b2f4a35e32263a12753f70"
+    },
+    "A4": {
+      "private_file": "M7MDMAMXMD.jpg",
+      "sha256": "1f4e7d3b21507c80b981e5a1d64aad99aeaa60e28b487884d420729caa3c0771"
+    },
+    "A5": {
+      "private_file": "MHMDMAMXMD.jpg",
+      "sha256": "d74f54ecc6c134b0eb6e0a4bebd85155794acf6ff3b3a882a19445f284bd9e63"
+    },
+    "A6": {
+      "private_file": "MQMDMAMXMD.jpg",
+      "sha256": "8eee9aff2fc6789bb2d97904a1d25addcad98eaa49ebf9a8a09eb2b7726e6a20"
+    },
+    "A8": {
+      "private_file": "MKMDMAMXMD.jpg",
+      "sha256": "4348ce180f869e34bcd161e421a9943fc235147c833aa1317feab2c22a10549c"
+    },
+    "A9": {
+      "private_file": "M8MEMAMXMD.jpg",
+      "sha256": "8140a30ab2658294e069f5ee5237e068cef9555307b2a7c288411c4933c904aa"
+    },
+    "A12": {
+      "private_file": "MNMEMAMXMD.jpg",
+      "sha256": "b7400292a9700e3872a609a85b4b06cacce725a5f624de10ecce4433e70508bc"
+    },
+    "A25": {
+      "private_file": "MHMYMAMXMD.jpg",
+      "sha256": "ed0ebb670fa53ee23ea36b81a3904c648d9eddcfb7499244d702513200fcdc8d"
+    },
+    "A7": {
+      "private_file": "MPMDMAMXMD.jpg",
+      "sha256": "cf6973524959ce3a1e4faf1bba9075b935bcb16dd22cfa592e765aab4591901d"
+    }
+  },
+  "inspection": "Actual source pixels A2-A6 plans, A8/A9 elevations, A25 schedule and A12 section/detail inspected. Source crops remain private.",
+  "units": "metres unless cm explicitly indicated",
+  "coordinate_system": {
+    "x": "axis1=0; axis11=69.6; end bays8m, intermediate8 bays6.7m",
+    "y": "A0,B8,C18,D32.6,E42.6,F50.6",
+    "z": "GL0, 1FL1.40; source EL datum not present-day surveyed terrain"
+  },
+  "explicit_controls": {
+    "front_rear_asymmetry": "x1 front C-D DW1 entrance/canopy; x11 rear C-D solid wall, no mirrored front entrance",
+    "DW1": {
+      "width": 12.7,
+      "overall_height": 3.4,
+      "door_leaf_height": 2.4,
+      "upper_glazing_height": 1.0
+    },
+    "DW2": {
+      "width": 6,
+      "overall_height": 2.8,
+      "door_leaf_height": 2.4,
+      "solid_upper_panel": 0.4,
+      "locations": "A and F, bays2-3 and9-10; four side entries"
+    },
+    "window_schedule_width_height": {
+      "W1": [
+        9.3,
+        1.5
+      ],
+      "W2": [
+        13.9,
+        1.5
+      ],
+      "W3": [
+        1.3,
+        2.1
+      ],
+      "W3prime": [
+        1.3857,
+        2.1
+      ],
+      "W3doubleprime": [
+        1.4333,
+        2.1
+      ],
+      "W4": [
+        6,
+        1.5
+      ],
+      "W5": [
+        1.275,
+        0.8
+      ],
+      "W6": [
+        2.9,
+        0.8
+      ],
+      "W7": [
+        2.85,
+        0.8
+      ],
+      "W8": [
+        9.3,
+        0.8
+      ],
+      "W9": [
+        1.3,
+        1.5
+      ],
+      "W9prime": [
+        1.3857,
+        1.5
+      ],
+      "W10": [
+        0.9,
+        1.0
+      ]
+    },
+    "upper_windows": {
+      "A_F": "W3 doubleprime, 3 per670 bay between axes2..10,24 each long side",
+      "front": "5 W3 B-C,7 W3prime C-D,5 W3 D-E;17 total",
+      "rear": "5 W9 B-C,7 W9prime C-D,5 W9 D-E; rear glazing150cm NOT front210cm; W10 local bath variant not fully assigned"
+    },
+    "firstfloor_A_F": "DW2 end bays2-3/9-10; W4 central bays3-9. A side large gym upper void and office; F side classrooms/toilet; interior usage not mirror-symmetric.",
+    "basement_A_F": "W7 two per bay ONLY3-9 (6 bays =>12 each long facade). Do not add generic low windows to2-3 or9-10.",
+    "basement_short_ends": "Both x1/x11 B-C and D-E each THREE W6 (6 per short end); no C-D central low windows.",
+    "low_window_height": "A12: top 1FL minus25cm, height80cm =>GL+.35..1.15. Consistent A25 W6/W7height80.",
+    "mesh_screens": "F basement bays3-6 show W7 inner/FW1 outer screen. x1 B-C/D-E shows W6 inner/FW2 outer; x11 W6 not identically tagged. Screens not additional windows.",
+    "corner_narrow_strips": "A8 callout explicitly 砌玻璃磚 (glass blocks), NOT louver ventilation. Three major stacked strips plus small low window.",
+    "AC_provisions": "A3 note 預留55×120通氣口位置，每邊八處，共計十六處，詳3A/A12. A12 detail shows55high120wide,80cm full assembly band, coordinate with HVAC installation. Do not invent exterior window positions from count alone.",
+    "rear_middle_horizontal_windows": {
+      "location": "x11 B-C andD-E only; noC-Dopening",
+      "firstfloor_W1_z": [
+        2.5,
+        4.0
+      ],
+      "secondfloor_W8_z": [
+        7.5,
+        8.3
+      ],
+      "thirdfloor_W8_z": [
+        10.1,
+        10.9
+      ],
+      "basis": "A4/A5 explicitlyW8, schedule930x80cm. A9 section2:2FL+150+80+80=3FL;3FL+100+80+180=4FL12.7. GroundW1height150,1FL+110sill."
+    }
+  },
+  "graphically_interpreted_controls": {
+    "upper_front_long_glass": {
+      "z": [
+        14.9,
+        17.0
+      ],
+      "basis": "A8 facade graphically bounded plus explicit210cm schedule; not written absolute sill level"
+    },
+    "upper_rear_glass": {
+      "center_C_D_z": [
+        14.55,
+        16.05
+      ],
+      "side_B_C_D_E_z": [
+        13.65,
+        15.15
+      ],
+      "basis": "A9 central7 panes about90cm higher than flanking5+5; A25 explicit150cm height; absolute positions graphical"
+    },
+    "upper_recess": {
+      "z": [
+        12.7,
+        17.2
+      ],
+      "basis": "A8/A9 approximately bounded outer framed recess; lower spandrel solid, do not glaze full450cm"
+    },
+    "glass_block_strips": {
+      "width_range": [
+        1.2,
+        1.3
+      ],
+      "three_z_ranges": [
+        [
+          1.6,
+          5.1
+        ],
+        [
+          5.9,
+          8.3
+        ],
+        [
+          9.1,
+          12.1
+        ]
+      ],
+      "low_window_z": [
+        0.35,
+        1.15
+      ],
+      "basis": "A8 pixels scaled against GL/RF; approximate, not exact dimension. W5 low window127.5cm useful width comparison"
+    },
+    "low_window_horizontal_positions": "Window count/type explicit, exact centering within bays and corner short strips may be graphically placed; disclose.",
+    "facade_frame_relief": "Recess depth, heavy frame bevels, small glazing/bar profiles require graphic/print simplification, not original fabrication CAD.",
+    "rear_frame_head_z": [
+      10.9,
+      11.35
+    ]
+  },
+  "limits": [
+    "No current-condition claim: later facade changes excluded.",
+    "Opaque backed glazing/closed solid print envelope permitted, no interior modelling claim.",
+    "Do not label door-operation diagonal diagram strokes physical braces.",
+    "If 16 HVAC provisions omitted, say so rather than manufacture unsupported placement.",
+    "Source controls review is not final mesh/render acceptance."
+  ],
+  "private_evidence_crops": [
+    "/tmp/gym-a2top-tags.png",
+    "/tmp/gym-a2bottom-tags.png",
+    "/tmp/gym-a2front-tags.png",
+    "/tmp/gym-a2rear-tags.png",
+    "/tmp/gym-vent-note.png",
+    "/tmp/gym-a12vent-context.png",
+    "/tmp/gym-corner-strip.png",
+    "/tmp/gym-rear-calibration.png",
+    "/tmp/gym-door-native.png"
+  ],
+  "roof_right_band_supplement": {
+    "tank": {
+      "x_bounds": [
+        61.875,
+        69.075
+      ],
+      "basis_x": "A7 explicit27.5+720+52.5cm across800cm axes10-11",
+      "y_bounds_graphical": [
+        17.425,
+        19.575
+      ],
+      "y_tolerance_m": 0.1,
+      "basis_y": "C axis passes through hatch/near-north support line, not215cm tank center. North edge aboutC-.55..-.60, south aboutC+1.55..1.60m.",
+      "height_above_RF": {
+        "support_gap": 0.5,
+        "bottom": 0.15,
+        "inside": 1.5,
+        "top_slab": 0.15,
+        "hatch_extra": 0.06,
+        "max": 2.36
+      },
+      "height_basis": "A8 detail3-2 actual pixels"
+    },
+    "two_stair_heads": {
+      "plan_dimensions_both_m": [
+        2.03,
+        3.4
+      ],
+      "basis": "A7 enlarged戊/己details both340, notone360. Dimensionlines wall-reference; thin projecting edges not exactly resolved.",
+      "locations_graphical": "Upper head immediately south B; lower head immediately north E. Both near mid-right band; not exact survey coordinates.",
+      "openings": "D6/W10 on west wall; their relative order reversed betweentwoheads. W10=.90wide1.00high.",
+      "height_status": "UNRESOLVED_EXACT_LOCAL_DATUM",
+      "A9_height_range_m": [
+        2.05,
+        3.05
+      ],
+      "interpretation_limit": "A9 range appears in roof-band section but not uniquely annotated戊/己 stairhead. Linking head top to chosen pitched-roof slope is an authored coordination interpretation, not verified exact source height. Do not pick2.55 midpoint and claim source dimension. Alternative omit uppervolume and retainplanoutline with limitation.",
+      "chosen_xy_graphical": {
+        "both_x": [
+          65.4,
+          67.43
+        ],
+        "upper_y": [
+          8,
+          11.4
+        ],
+        "lower_y": [
+          39.2,
+          42.6
+        ],
+        "uncertainty_m": 0.15
+      }
+    }
+  }
+}
