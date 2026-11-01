@@ -1,0 +1,107 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_at_utc": "2026-11-01T17:11:57.752549+00:00",
+  "scope": "Undated historical small-building exterior only, CCRH11423036; no interior storage/security reconstruction or current operational/location assertion",
+  "geometry_version": "build-v3",
+  "render_version": "render-v2",
+  "mesh_sha256": "a804874b3baf745195a5f078e5fbeb369e561bd93286287950cc6a7fbe78948b",
+  "artifact_sha256": {
+    "build_model.py": "d21a55a514272e102f1608017424e12f851da76c4e0ced21d54d83329dd2b961",
+    "render_model.py": "c98d20a060bd6db99a5da62a59e1c5bc8a647062dbc09aa655147b341358afc3",
+    "README.md": "26148001d96163046325979eabb6c4b6dcd2cb10329f115b214ec16713340d0e"
+  },
+  "private_source_controls_sha256": "28e5720be48fe5f6ccddaee0fd2cf043a881ce73bdb7d43af3d775499824b8e4",
+  "private_source_policy": "Original/crops and detailed source review private; no source pixels included.",
+  "png_sha256": {
+    "preview.png": "6d6fd17cc5ecda8dd4e7b3a0524faeb4c0fd340fb2fce7a0c4d1b9c7cc68af7c",
+    "rear.png": "717037b8b990fe6060d19664c033322aec250810236fd8e9f5fb934b29325fb8",
+    "north.png": "bbfe7e99b82df10052bfb46a5ac74386ee38802df6bced641c55d6ddd1c3ff21",
+    "south.png": "e36473c7929b4b226dc489e30817d819918302f7d0a0b91272913e8e91941cde",
+    "east.png": "c8cf5287a3b27fc2fea04f97591bbe7d181a3eaa6aca7395755d96bdb54bcc3c",
+    "west.png": "58bc3c99d894ddb29191880f9557b94d53b4fe40a64869b7e9edcc9e5712cab9",
+    "top.png": "66470f9072b02749849f2c4601e86e7cac91a084f3eca6d1fbdbe584cf82fa19",
+    "entrance-detail.png": "446a48d852843c4625b29c20c3e0fdbfa973851bafc70e6131c0daedf2154d48",
+    "gable-detail.png": "dfdbe010fcc03ec2bf1305da8795697623f866876c1046ce5d765ccf9296b7ad",
+    "roof-detail.png": "91347a6093a688ac8077415f97028fe58095638e626d945cd772291ca5906261"
+  },
+  "per_image_review": [
+    {
+      "image": "preview.png",
+      "result": "PASS",
+      "observation": "Completeoverviewwithplainentry,doublepitchroof,separatecanopyandhighwindows."
+    },
+    {
+      "image": "rear.png",
+      "result": "PASS",
+      "observation": "Completereverseoverview;rearfacadehastwohighwindowsandnodoor."
+    },
+    {
+      "image": "north.png",
+      "result": "PASS",
+      "observation": "Completerearorthographicview:twotwo-panedhighwindowsandhorizontalfinishcourses."
+    },
+    {
+      "image": "south.png",
+      "result": "PASS",
+      "observation": "Completeentryorthographicview:twoupperwindows,separate270cmcanopyandplainclosedtwo-leafdoor,readabledespiteeaveshadow."
+    },
+    {
+      "image": "east.png",
+      "result": "PASS",
+      "observation": "Completegableview:onecentralhighwindowandtwonarrowuppervents;ridgecapdistinctfromroofskin."
+    },
+    {
+      "image": "west.png",
+      "result": "PASS",
+      "observation": "Completeoppositegableviewwithsamecorrectwindow/ventcountandseparateentrycanopyatoneside."
+    },
+    {
+      "image": "top.png",
+      "result": "PASS",
+      "observation": "Completeroofplanandbase;ridgeandtwo roofplanesreadable."
+    },
+    {
+      "image": "entrance-detail.png",
+      "result": "PASS",
+      "observation": "Intentionalentryclose-up:plainexteriorleafsurfaces,thresholdand12cmplatform;nooperational/lockingdetail."
+    },
+    {
+      "image": "gable-detail.png",
+      "result": "PASS",
+      "observation": "Intentionalgableclose-up:backedventreliefandcentralglazing,roofeaveoverhangandsimplifiedcapvisible."
+    },
+    {
+      "image": "roof-detail.png",
+      "result": "PASS",
+      "observation": "Intentionalroofclose-up:bothpitchedplanesandroundedcapsimplificationreadable,noexcessivecroppingofintendedroofsubject."
+    }
+  ],
+  "method": "All ten final individual PNGs directly viewed; seven whole-object views have complete margins, three detail views intentionally crop surrounding architecture. render-v2 log confirmed Blender quit.",
+  "independent_mesh_check": {
+    "faces": 2324,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 714865.6707799436
+  },
+  "source_code_checks": [
+    "450x400axes versus roof540x500, distinct45/50cmeaves",
+    "Roofsupport360 distinctfromroofskinridge451/cap467;threepointskinestimatedeaves352.6/351.8",
+    "Newnativeannotation4/10勾配蓋理想瓦confirmed;approx21.8degcompatiblewithdocumentedrasterprofile,notunjustifiedmaterialcompositionclaim",
+    "Doorcanopy270x100 at249top/233bottom independentfrompitchedroof",
+    "Platform12/interiorfloorapprox20;plain180x200door only",
+    "Front/reartwoW each;gableoneW plustwo narrowvents each",
+    "W105innerchain/approx115outer,45leaf/56outerheight,backedglazing;window/ventreliefpartlygraphical",
+    "Final1cmhiddenoverlapandflooradjustments documentedwithoutchangingroofmaximum"
+  ],
+  "limitations": [
+    "Historicalundateddesignonly;noasbuilt/currentexistenceorlocationassertion.",
+    "Roofridge/caparegraphicalreconstructionvalueswithadopted+/-7cmreading tolerance,notasbuiltsurveyaccuracy.",
+    "理想瓦composition/productunverified;roofskin6.5cm,roundedcapandfasciaareexternalsimplifications,notstructuralreplica.",
+    "Ventpositions/outerframes/floorlevel/finishcoursespartlygraphical;neutralcolorsapproximate.",
+    "Closedbackedexteriormodel,nointeriorstorage/locking/securitymechanisms.",
+    "No physicalprinttest,structuralsafety,supportfreeprintingorcommercialrights guarantee;authoredbase notterrain.",
+    "Directionalfilenamesaremodelviewsnotverifiedgeographicbearings."
+  ],
+  "blocking_findings": []
+}
