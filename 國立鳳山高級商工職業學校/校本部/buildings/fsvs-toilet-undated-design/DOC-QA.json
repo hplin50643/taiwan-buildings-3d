@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "scope": "Fresh publication documentation/link/hash checks only; historical geometry/render/source QA was not rerun or relabelled.",
+  "checked_at": "2026-11-01T06:01:09.523124+00:00",
+  "readme_sha256": "18c2e9ebae95c66debe9df182a5577ac12f540f8470e31ef7c602affcf8af89b",
+  "inline_images": [
+    "preview.png",
+    "rear.png",
+    "south.png",
+    "north.png",
+    "west.png",
+    "east.png",
+    "top.png"
+  ],
+  "relative_links": [
+    "preview.png",
+    "rear.png",
+    "south.png",
+    "north.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "model.stl",
+    "model.3mf",
+    "scene.blend",
+    "build_model.py",
+    "render_model.py",
+    "export_3mf.py",
+    "requirements.txt"
+  ],
+  "missing": [],
+  "source_model_rights_separated": true,
+  "historical_design_not_current": true,
+  "raw_media_or_html_included": false,
+  "geometry_render_scripts_unchanged_sha256": {
+    "verify_scene.py": "369c9191e53f523470b7dd32da6a9ef2d827d98ef3603c453b4c0365d5f9a5ec",
+    "render_model.py": "ea41ed67b8e8461cc2daef6e225e4e18e6373c199d7ed731ec202b72913648f4",
+    "south.png": "88b6c973b7fb3181df70f85d3661cd9ecfe7116a2854c2f393072e1114245091",
+    "export_3mf.py": "150c57ef9b178fe318aad0d6650c276383bf0460d8943b700b23d81f1a1a5234",
+    "west.png": "47500f5ff6334caea76cf7b131fa5c076c06c696eefc0f673e03f8e62ec63a95",
+    "validate_model.py": "0bbf35d08b9c344b2a02e3196689a8c50074e7807740e5c05e431e4e652808ff",
+    "scene.blend": "9780e7ca7121c8230c52e8e50ad9e69a646276ab89b12e93c114f88e9ffa476f",
+    "north.png": "6f7238efb3fbc9e8b14a5c8d4d3016ac324d3c4385122063371c5c1c7aadcfdb",
+    "top.png": "f029012e87f4b75518199b18e668c17de9ecaf7f7e3658a3fe793a4643ee25bd",
+    "build_model.py": "f4281bc5ef0ccd0b046037c51ba00ca2d5ae845bfc4163fe92eae823320e6e03",
+    "model.3mf": "61b83d9978f168e5e2996af62aaa7be4ed5fdc60fbaf077058f6e73f534026f5",
+    "model.stl": "93b650d20514645d7b3e3025ff2790384d714f1f98da17745e0bd565355d81a7",
+    "rear.png": "bab4d561c5124ab610064c00227daf62a76793627fdc2b5a828b26bd66debd5d",
+    "preview.png": "8b025493dd81145c7994a5991bda8df78cad7def59852b0416f7710c231d2fb6",
+    "mesh.npz": "37a2c34833b6d2fd5ed4fe5ceb67be65c41c3cd9bbd03c0ceb3c48ae034c1ab0",
+    "east.png": "b3df127b0a9619892a39f9963ca048e24b4a0bec4dc00d0df3fe45f16f89d7e9"
+  },
+  "prior_document_qa": {
+    "sha256": "34ec1f8a5eee202626afa3e9fe331c6d33e331e90e8f5da9deb0d8f16b93d4db",
+    "result": {
+      "status": "PASS",
+      "checks": {
+        "seven_render_links": true,
+        "all_preview_files_present": true,
+        "date_unknown_disclosed": true,
+        "not_asbuilt_disclosed": true,
+        "scale_disclosed": true,
+        "no_original_source_raster_packaged": true,
+        "no_source_license_as_blanket": true,
+        "unprinted_disclosed": true
+      }
+    },
+    "applicability": "Historical original README check; superseded for current documentation only."
+  }
+}

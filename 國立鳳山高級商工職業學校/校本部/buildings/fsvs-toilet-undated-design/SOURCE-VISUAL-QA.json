@@ -1,0 +1,36 @@
+{
+  "status": "passed_with_explicit_scope_limits",
+  "reviewed_utc": "2026-11-01T05:58:48.658830+00:00",
+  "review_evidence": "Independent visual review of all seven rendered views, including the east view, completed at the recorded review time; individual rendered views were also inspected through the documented correction iterations.",
+  "mesh_sha256": "37a2c34833b6d2fd5ed4fe5ceb67be65c41c3cd9bbd03c0ceb3c48ae034c1ab0",
+  "render_sha256": {
+    "south.png": "88b6c973b7fb3181df70f85d3661cd9ecfe7116a2854c2f393072e1114245091",
+    "west.png": "47500f5ff6334caea76cf7b131fa5c076c06c696eefc0f673e03f8e62ec63a95",
+    "north.png": "6f7238efb3fbc9e8b14a5c8d4d3016ac324d3c4385122063371c5c1c7aadcfdb",
+    "top.png": "f029012e87f4b75518199b18e668c17de9ecaf7f7e3658a3fe793a4643ee25bd",
+    "rear.png": "bab4d561c5124ab610064c00227daf62a76793627fdc2b5a828b26bd66debd5d",
+    "preview.png": "8b025493dd81145c7994a5991bda8df78cad7def59852b0416f7710c231d2fb6",
+    "east.png": "b3df127b0a9619892a39f9963ca048e24b4a0bec4dc00d0df3fe45f16f89d7e9"
+  },
+  "source_sha256": {
+    "CCRH12623009": "5a158804da588f09b61d5eabc1f836ee807695f1275d535e2d098bbc94fbe703"
+  },
+  "source_id": "CCRH12623009",
+  "confirmed": [
+    "Independent complete single-storey original-design exterior with open west vestibule",
+    "Six vent stacks: three on each long side",
+    "South eight W2 windows; north five-plus-five W1 windows",
+    "West reservoir topGL1.80 and washing channelGL1.20",
+    "North septic exposed cover extends1.20m beyond300cm axis depth",
+    "FloorGL+.45 and roofGL+3.51",
+    "East145.5cm refers to external step only; door1.15m and canopy1.74m are explicitly graphical estimates"
+  ],
+  "limits": [
+    "Undated original design, not proven asbuilt/current structure or exact surveyed reconstruction",
+    "Door/canopy placement, vent positions/heights, overhang and minor openings contain source-graphic estimation",
+    "Opaque backed windows/door, simplified details and neutral colours",
+    "Subsurface septic plumbing and internal toilet fixtures omitted; visible external cover retained",
+    "No physical print test; thin parts/overhangs require slicer assessment",
+    "Source image license does not automatically license entire derived package or authorize public publication"
+  ]
+}
