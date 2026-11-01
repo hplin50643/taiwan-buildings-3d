@@ -1,0 +1,41 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_GRAPHICAL_INTERPRETATION",
+  "source_crop_sha256": "8661086e48bb76759c41b9e416a06b7b67f219ba4224a2ca372d72ac4c55bbe7",
+  "reviewed_digitization_sha256": "137c17a57b2bb6fc32d06c81e5c32b12192676e87186218d7202dbacee59532a",
+  "reviewed_overlay_sha256": "bd6050a9db3f00913bb960aefe5dd9710ead5888971024d7bf5af23deb2aa1e9",
+  "calibration_evidence_sha256": "79c18a09eb6bd035b2d4ab114fe4f462fa8d6015154334ff6892009ccc0ce41e",
+  "checks": {
+    "basis": "PASS: matches independent26-control affine calibration exactly",
+    "numerical_transform": "PASS: recalculated local points match serialized points; maximum difference 0.0m",
+    "centerline": "PASS_WITH_GRAPHICAL_LIMITS: point12 x311 remains near wallstrip midpoint; points retain source-derived noncircular shape",
+    "overlay": "Refreshed root private overlay from current22 points; no source raster copied to public output"
+  },
+  "external_pending": [],
+  "limitations": [
+    "Grid fitRMS1.11px/max2.05px measures calibration controls, not total wall tracing accuracy.",
+    "Previous single-cell basis acceptance withdrawn; this report supersedes it only for revised grid numerical transform.",
+    "Not a final visual-render or model publication pass."
+  ],
+  "private_source_notice": "Overlay and source crops remain private.",
+  "release_evidence": {
+    "file": "SOURCE-CURVE-RELEASE-0905.json",
+    "sha256": "576d1f07942eee0ada60cce3b4dae2af913dcde7fe7769016bad65e8f5980443",
+    "scope": "researcher releases1930cm join and site placement for disclosed historical interpretation only"
+  },
+  "terminal_smoothing_independent_check": {
+    "method": "PCHIP slopes retained at all nodes except final endpoint; Hermite final derivative aligned56deg",
+    "dense_samples_last_interval": 10001,
+    "maximum_change_m": 0.015405179763586227,
+    "endpoint_heading_deg": 56,
+    "all_original_nodes_preserved": true,
+    "assessment": "PASS: approx1.54cm local deviation is small compared with manual graphical source interpretation; not exact original CAD tangency"
+  },
+  "retained_limits": [
+    "A1 site56deg alignment is interpretation;A3 65deg and65.75deg labels use reference baselines not proven identical.",
+    "Join center590,420 and19.30m extension are accepted graphical source reading, not survey controls.",
+    "Full model/PNG approval remains separate."
+  ],
+  "final_mesh_sha256": "d80efa75d320bc6a5b9aed20873a8829803b8adbb46800f48b539e04b08527cb",
+  "final_visual_review": "SOURCE-VISUAL-QA.json",
+  "final_status_metadata_refresh": "Curve status updated only; numerical grid/points unchanged, verified final mesh binding maintained."
+}

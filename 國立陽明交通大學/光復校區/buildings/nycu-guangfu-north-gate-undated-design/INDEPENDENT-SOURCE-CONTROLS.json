@@ -1,0 +1,106 @@
+{
+  "status": "INDEPENDENT_SOURCE_REVIEW_WITH_EXPLICIT_DIMENSION_CONFLICTS_NOT_RENDER_PASS",
+  "reviewed_utc": "2026-11-01T08:44:23.391236+00:00",
+  "sheets": [
+    "A1 MQMAMAMXMD",
+    "A2 MPMAMAMXMD",
+    "A3 MKMAMAMXMD"
+  ],
+  "actual_pixels_reviewed": true,
+  "tower": {
+    "height_above_EL240_cm": 1500,
+    "top_EL_m": 17.4,
+    "A1_recheck": "All three A1 tower elevation dimensions read1500 when enlarged, not1550. A3 confirms1500.",
+    "plan_long_axis_m": 3.2,
+    "plan_thickness_estimate_m": 0.55,
+    "thickness_limit": "A2 outer-outline ratio to320cm gives approximately55cm; no reliable printed thickness dimension found. A3 sectional thin outline is schematic and is not an independent numeric thickness control.",
+    "crest": "Original design elevation has no applied crest relief; do not mix later photograph detail silently."
+  },
+  "guardroom_roof": {
+    "floor_EL_m": 2.4,
+    "section3_clear_height_cm": 210,
+    "section3_slab_underside_EL_m": 4.5,
+    "section3_RF_structural_top_EL_m": 4.65,
+    "section3_slab_thickness_cm": 15,
+    "section3_side_parapet_above_underside_cm": 45,
+    "section3_side_parapet_top_EL_m": 4.95,
+    "section2_front_total_height_above_floor_cm": 280,
+    "section2_front_parapet_top_EL_m": 5.2,
+    "section2_RF_above_floor_cm": 225,
+    "section2_RF_EL_m": 4.65,
+    "section2_back_surface_EL_m": 4.75,
+    "section2_fill_note_cm": 25,
+    "section_mapping": "A2 section2 follows transverse north-south plan cut through office, with raised front wall and retained back slope. Section3 traverses west-to-oblique-east, showing the lower side edges. Different parapet heights need not mean a sloping structural slab.",
+    "resolved_misreads": [
+      "RF label is465, not415.",
+      "Side parapet inferred from45cm above underside is495, not485.",
+      "Section2 front top is520 from240+280."
+    ],
+    "remaining_conflict": "Explicit back surfaceEL475 conflicts with slab topEL465 plus stated25cm soil fill (which would reach490), a15cm difference. The drawing does not resolve this.",
+    "transparent_modeling_option": "Use direct slab450–465 and explicitly labeled surface475 for exterior geometry, disclose that this represents10cm cover and does not reconstruct the stated25cm construction-layer thickness. Keep25cm note and disagreement in README/source controls; never claim all dimensions agree.",
+    "other_priority": "A1 general elevation guardhouse height may differ from A2 detailed section; detailed A2 controls should be cited when used. No invented roof gradient is needed solely to reconcile the textual fill discrepancy."
+  },
+  "guard_plan": {
+    "rear_horizontal_chain_cm": [
+      226,
+      444,
+      90
+    ],
+    "rear_total_cm": 760,
+    "depth_cm": 390,
+    "west_horizontal_setback_cm": 280,
+    "front_east_reference_cm": 465,
+    "printed_oblique_angles_degrees": [
+      67,
+      23
+    ],
+    "printed_angle_confirmed": "A2 west clearly67 and complementary23; east clearly67. Not57.",
+    "conflict": "Rear760 minus front465 over390 depth yields approximately52.9deg; west280/390 yields approximately54.3deg, agreeing roughly with drawn slopes but not printed67.",
+    "transparent_modeling_option": "Control footprint from explicit linear chains and disclose that printed67/23degree notes disagree; do not silently assert a67degree footprint."
+  },
+  "door_window_schedule_cm": {
+    "P1": {
+      "width": 100,
+      "height": 210,
+      "confirmation": "A3 left height reads210; right120+90 chain confirms210, not240."
+    },
+    "P2": {
+      "width": 90,
+      "height": 210
+    },
+    "P3": {
+      "width": 80,
+      "height": 210
+    },
+    "W1": {
+      "width": 100,
+      "height": 120,
+      "sill_above_floor": 90
+    },
+    "W2": {
+      "width": 120,
+      "height": 50,
+      "sill_above_floor": 135
+    },
+    "W3": {
+      "width": 60,
+      "height": 50,
+      "sill_above_floor": 100
+    },
+    "W4": {
+      "diameter": 100,
+      "sill_above_floor": 100
+    }
+  },
+  "limits": [
+    "Undated original design; no current-condition or as-built claim",
+    "Tower thickness and graphical alignment require stated estimates",
+    "Source dimensional conflicts must remain visible in final documents",
+    "No final mesh, renders or manufacturing pass evaluated by this source review"
+  ],
+  "source_sha256": {
+    "MQMAMAMXMD.jpg": "15a816b3f36d3288825c84686b37857ecef548e2d965d951521aa61b69265a15",
+    "MPMAMAMXMD.jpg": "15eca048131310b173a7404f05687fe6d1c7f26b3d39667f6ef5e612161f69de",
+    "MKMAMAMXMD.jpg": "866c5a601dfbc2c29bacf3394a29bea9c42a1059996c33134312ca73d36e492c"
+  }
+}

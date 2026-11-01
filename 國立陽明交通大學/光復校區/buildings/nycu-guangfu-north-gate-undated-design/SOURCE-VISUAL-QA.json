@@ -1,0 +1,51 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "mesh_sha256": "d80efa75d320bc6a5b9aed20873a8829803b8adbb46800f48b539e04b08527cb",
+  "build_script_sha256": "f22c334e68ede932abf3cf9cc34881909066258ee0f7c7c86c4df23def20a297",
+  "readme_sha256_at_review": "0aeaa7c3bb702510451d60904e1a57b65088984ebce729093b6be30ac379e2f2",
+  "png_sha256": {
+    "east.png": "26e0ade790aec161749c827a68350689839199af2312b620bff9137a84775fa4",
+    "guard-detail.png": "4677180eca68d50336ad59bdb7e140b07a6754df955d4fb6b6ec975eedc9e306",
+    "name-wall-detail.png": "42b76cb41c03ab4999daf43e5351eee29191fd915e8a1dd6b8cfce8da3ad740d",
+    "north.png": "f820e404938d99d543c2147369ee0d43dcee3705a6bed5882e97848a09cf621e",
+    "preview.png": "63ccf863c0542d142147290bfbdefee2f0c3af9b30dd0e9add219897b78dc60d",
+    "rear.png": "e885842413874d3719dfc64e42bf113daf7d32c5530d4796fd794dc188170f78",
+    "south.png": "06848abffdac4e349f2a231ce74e4310e4e58e6cc6cbdc809e90e22f8c2ddfd7",
+    "top.png": "274f01bce1a040fc2101637d4e4684a16882b2b4b60f52a9eea34e8af5abd5da",
+    "tower-detail.png": "c856b27a3790bb1d74f0f12904dcc17719b0e3a5f2bd0fdf9a55235270c5f334",
+    "west.png": "e2f4232c3a3bfc415149a6c9406fbf16eb6b7ec64d8d5ab1ceaa52b135e2b912"
+  },
+  "review_method": "Independent reinspection of all10 finalv5 PNGs, with A1/A2/A3 original pixel reviews, updated multi-point calibration and numerical Hermite check. Seven whole views and three intentionally cropped details inspected. No private raster included.",
+  "component_checks": {
+    "framing": "PASS: seven full views entirely frame display base and tower; three details intentionally crop surroundings.",
+    "historical_name": "PASS: six non-mirrored characters read right-to-left as國立交通大學 on outer road-facing curve; name-wall detail clearly displays all six. Font substitution and approx1.00m height/0.12m thickening disclosed.",
+    "guard_openings": "PASS: P1 single-leaf horizontal rail atGL3.30 and W4 central vertical mullion now match A3 simplified framework; dimensions and datums reviewed against source.",
+    "guard_roof": "PASS_WITH_DOCUMENTED_SOURCE_CONFLICT: slab450–465, surface475, side495 and front520 per detailed controls; conflicting25cm soil note retained rather than hidden.",
+    "tower": "PASS_WITH_ESTIMATED_THICKNESS:15m aboveEL240 givesEL1740,3.20m long;0.55m thickness remains graphical estimate. No later crest inserted.",
+    "curve_digitization": "PASS_WITH_GRAPHICAL_LIMITS: revised independent26-control affine calibration applied; all source-traced nodes retained, point12 corrected; previous single-cell basis superseded.",
+    "site_orientation": "PASS_FOR_DISCLOSED_HISTORICAL_INTERPRETATION: researcher source release accepts1930cm extension and approximate junction. A1 placement and differing angular references are disclosed, not claimed survey controls.",
+    "readme": "PASS_FOR_REVIEWED_LIMITATIONS: first section has10 actual images in3-column table; roof/angle contradictions, historical-design status, terrain approximation, source rights and print limitations disclosed.",
+    "terminal_join": "PASS: final Hermite derivative56deg; independent10001-sample check found maximum1.540518cm deviation from previousPCHIP. Final top/oblique renders show continuous connection without visually disruptive kink."
+  },
+  "external_pending": [],
+  "limitations": [
+    "Historical original design only; date, as-built geometry and current condition not established.",
+    "Terrain is authored coarse interpolation, not a source survey; display cut boundary is not property boundary.",
+    "Opaque backed windows, closed interiors, simplified frames/joints, omitted interior doors/services.",
+    "Neutral approximate colors; no calibrated original finish claim.",
+    "25cm wall at1:200 is1.25mm; lettering and frames may need slicer-specific adjustments; no physical print or structural verification."
+  ],
+  "geometry_format_scene_tests": "Separate builder test records; this visual review does not replace format/rebuild/reopen validation.",
+  "source_release": {
+    "file": "SOURCE-CURVE-RELEASE-0905.json",
+    "sha256": "576d1f07942eee0ada60cce3b4dae2af913dcde7fe7769016bad65e8f5980443",
+    "scope": "Historical graphical interpretation accepted; no as-built/CAD exactness or manufacturing claim."
+  },
+  "final_visual_findings": [
+    "P1 remains single door with horizontal intermediate rail, and W4 has central vertical mullion.",
+    "Six historical-name glyphs fully legible in dedicated view, non-mirrored, read right-to-left.",
+    "Tower and all base boundaries fully visible in seven whole views; no accidental crop or disconnected floating part observed.",
+    "Detailed-window/lettering views intentionally crop surrounding site/tower; tower-detail includes full blade.",
+    "No further visual/source blocker within disclosed historical-design scope."
+  ]
+}

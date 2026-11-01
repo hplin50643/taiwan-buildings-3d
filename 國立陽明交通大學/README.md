@@ -1,6 +1,6 @@
 # 國立陽明交通大學｜校園建築外觀模型
 
-現行收錄 **11 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+現行收錄 **12 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
 
 ### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
 
@@ -13,7 +13,7 @@
 | [<img src="六家校區/buildings/nycu-hakka-round-building/appearance/previews/front.png" alt="客家文化學院圓樓" width="220">](六家校區/buildings/nycu-hakka-round-building/README.md)<br>**[客家文化學院圓樓](六家校區/buildings/nycu-hakka-round-building/)** | [<img src="光復校區/buildings/nycu-haoran-library-front/appearance/previews/front.png" alt="浩然圖書資訊中心・廣場立面段" width="220">](光復校區/buildings/nycu-haoran-library-front/README.md)<br>**[浩然圖書資訊中心・廣場立面段](光復校區/buildings/nycu-haoran-library-front/)** | [<img src="歸仁校區/buildings/nycu-chihyuan-coinnovation/previews/front.png" alt="致遠樓產學共創中心" width="220">](歸仁校區/buildings/nycu-chihyuan-coinnovation/README.md)<br>**[致遠樓產學共創中心](歸仁校區/buildings/nycu-chihyuan-coinnovation/)** |
 | [<img src="陽明校區/buildings/nycu-yangming-library-research/appearance/previews/front.png" alt="圖書資訊暨研究大樓" width="220">](陽明校區/buildings/nycu-yangming-library-research/README.md)<br>**[圖書資訊暨研究大樓](陽明校區/buildings/nycu-yangming-library-research/)** | [<img src="光復校區/buildings/nycu-graduate-dormitory-3/front.png" alt="研三舍雙翼外觀量體（遮蔽連接簡化）實際STL預覽" width="220">](光復校區/buildings/nycu-graduate-dormitory-3/README.md)<br>**[研三舍雙翼外觀量體（遮蔽連接簡化）](光復校區/buildings/nycu-graduate-dormitory-3/README.md)**<br>雙折翼外觀近似；已知三樓連接空間因遮蔽而省略，南側外牆保留素面，非完整測繪 | [<img src="光復校區/buildings/nycu-rolling-pavilion-2024/previews/front.png" alt="國立陽明交通大學｜光復校區｜蜷蜷亭（2024）：實際模型預覽" width="220">](光復校區/buildings/nycu-rolling-pavilion-2024/README.md)<br>**[國立陽明交通大學｜光復校區｜蜷蜷亭（2024）](光復校區/buildings/nycu-rolling-pavilion-2024/README.md)** |
 | [<img src="光復校區/buildings/nycu-south-gate-bus-shelter-2020/previews/front.png" alt="陽明交通大學光復校區｜南大門／工程六館旁候車亭（2020）：實際模型預覽" width="220">](光復校區/buildings/nycu-south-gate-bus-shelter-2020/README.md)<br>**[陽明交通大學光復校區｜南大門／工程六館旁候車亭（2020）](光復校區/buildings/nycu-south-gate-bus-shelter-2020/README.md)** | [<img src="光復校區/buildings/nycu-north-gate-bus-shelter-2007/previews/front.png" alt="陽明交大｜竹湖／北門候車亭（2007，竹棧）：實際模型預覽" width="220">](光復校區/buildings/nycu-north-gate-bus-shelter-2007/README.md)<br>**[陽明交大｜竹湖／北門候車亭（2007，竹棧）](光復校區/buildings/nycu-north-gate-bus-shelter-2007/README.md)** | [<img src="光復校區/buildings/nycu-huang-courtyard/previews/front.png" alt="陽明交通大學光復校區｜炎松之圓（2024）：實際模型預覽" width="220">](光復校區/buildings/nycu-huang-courtyard/README.md)<br>**[陽明交通大學光復校區｜炎松之圓（2024）](光復校區/buildings/nycu-huang-courtyard/README.md)** |
-| [<img src="新竹科學園區教育研究場域/buildings/nycu-tsmc-energy-education-center/previews/front.png" alt="台積電交大能源教育館（2017永久版蘭花屋）：實際模型預覽" width="220">](新竹科學園區教育研究場域/buildings/nycu-tsmc-energy-education-center/README.md)<br>**[台積電交大能源教育館（2017永久版蘭花屋）](新竹科學園區教育研究場域/buildings/nycu-tsmc-energy-education-center/README.md)** | [<img src="光復校區/buildings/nycu-zhenwu-pavilion-historical/previews/front.png" alt="陽明交大光復校區振吾亭｜歷史照片時期本體：實際模型預覽" width="220">](光復校區/buildings/nycu-zhenwu-pavilion-historical/README.md)<br>**[陽明交大光復校區振吾亭｜歷史照片時期本體](光復校區/buildings/nycu-zhenwu-pavilion-historical/README.md)** |  |
+| [<img src="新竹科學園區教育研究場域/buildings/nycu-tsmc-energy-education-center/previews/front.png" alt="台積電交大能源教育館（2017永久版蘭花屋）：實際模型預覽" width="220">](新竹科學園區教育研究場域/buildings/nycu-tsmc-energy-education-center/README.md)<br>**[台積電交大能源教育館（2017永久版蘭花屋）](新竹科學園區教育研究場域/buildings/nycu-tsmc-energy-education-center/README.md)** | [<img src="光復校區/buildings/nycu-zhenwu-pavilion-historical/previews/front.png" alt="陽明交大光復校區振吾亭｜歷史照片時期本體：實際模型預覽" width="220">](光復校區/buildings/nycu-zhenwu-pavilion-historical/README.md)<br>**[陽明交大光復校區振吾亭｜歷史照片時期本體](光復校區/buildings/nycu-zhenwu-pavilion-historical/README.md)** | [<img src="光復校區/buildings/nycu-guangfu-north-gate-undated-design/preview.png" alt="北大門與守衛室原設計：實際模型渲染" width="220">](光復校區/buildings/nycu-guangfu-north-gate-undated-design/README.md)<br>**[北大門與守衛室｜未定年原設計圖版](光復校區/buildings/nycu-guangfu-north-gate-undated-design/README.md)**<br>[STL](光復校區/buildings/nycu-guangfu-north-gate-undated-design/model.stl) · [彩色3MF](光復校區/buildings/nycu-guangfu-north-gate-undated-design/model.3mf) · [Blender](光復校區/buildings/nycu-guangfu-north-gate-undated-design/scene.blend) |
 
 [光復校區](光復校區/) · [六家校區](六家校區/) · [歸仁校區](歸仁校區/) · [陽明校區](陽明校區/) · [新竹科學園區教育研究場域](新竹科學園區教育研究場域/) · [覆蓋範圍](coverage.json) · [續接清單](research-handoff/)
 
@@ -28,3 +28,7 @@
 [浩然圖資廣場立面段外觀與來源界線](光復校區/buildings/nycu-haoran-library-front/appearance/README.md)
 
 [陽明圖資暨研究大樓有限配色外觀與來源界線](陽明校區/buildings/nycu-yangming-library-research/appearance/README.md)
+
+## 北大門原設計研究
+
+陳其寛建築師事務所之國立交通大學北大門與守衛室未定年原設計圖研究；保留原設計國立交通大學字樣，不以現校名替換歷史建築文字。不是竣工或今日現況，不與2007北門候車亭重複計件。尺寸估讀、中性色與細件製造簡化保留；未實體試印。

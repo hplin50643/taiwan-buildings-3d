@@ -1,7 +1,7 @@
 {
   "institution": "國立陽明交通大學",
   "all_buildings_complete": false,
-  "models": 11,
+  "models": 12,
   "whole_primary_massing_approximations": 3,
   "partial_segments": 1,
   "campuses_with_models": [
@@ -16,8 +16,8 @@
   "bounded_massing_approximations": 1,
   "complete_visible_pavilion_approximations": 4,
   "complete_visible_building_approximations": 1,
-  "current_model_packages": 11,
-  "model_count_updated_date": "2026-10-31",
+  "current_model_packages": 12,
+  "model_count_updated_date": "2026-11-01",
   "current_increment_packages": [
     {
       "slug": "nycu-zhenwu-pavilion-historical",
@@ -29,9 +29,20 @@
       "scope_and_limitations_reference": "光復校區/buildings/nycu-zhenwu-pavilion-historical/README.md",
       "physical_print_verified": false,
       "classification": "bounded_source_study_not_assigned_to_legacy_full_or_partial_categories"
+    },
+    {
+      "slug": "nycu-guangfu-north-gate-undated-design",
+      "name": "北大門與守衛室｜未定年原設計圖版",
+      "campus": "光復校區",
+      "path": "光復校區/buildings/nycu-guangfu-north-gate-undated-design",
+      "readme": "README.md",
+      "scope": "陳其寛建築師事務所之國立交通大學北大門與守衛室未定年原設計圖研究；保留原設計國立交通大學字樣，不以現校名替換歷史建築文字。不是竣工或今日現況，不與2007北門候車亭重複計件。尺寸估讀、中性色與細件製造簡化保留；未實體試印。",
+      "classification": "historical_original_design_not_assigned_to_legacy_full_or_partial_categories",
+      "physical_print_verified": false
     }
   ],
-  "counting_scope": "現行模型套件總數；不是完整建築棟數或全校完成。新增項以各件README的來源、年代、截段與未知範圍為準，未實體試印。原full/partial分類不擅自擴充；新增項另列未分類。",
-  "current_increment_legacy_classification_unassigned": 1,
-  "classification_baseline_scope": "Existing geometry-category counters retained as prior-package baseline. New bounded study shown separately; sum with unassigned increment reconciles total without claiming full-building classification."
+  "counting_scope": "現行模型套件總數；不是完整建築棟數或全校完成。新增項以各件README的來源、年代、截段與未知範圍為準，未實體試印。原full/partial分類不擅自擴充；新增項另列未分類。 本次新增北大門與守衛室原設計1套，現行全校12套、光復8套；不與2007年北門候車亭重複計件，未試印。",
+  "current_increment_legacy_classification_unassigned": 2,
+  "classification_baseline_scope": "Existing geometry-category counters retained as prior-package baseline. New bounded study shown separately; sum with unassigned increment reconciles total without claiming full-building classification.",
+  "guangfu_campus_current_model_packages": 8
 }

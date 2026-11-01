@@ -1,0 +1,37 @@
+{
+  "status": "SOURCE_CURVE_HOLD_RELEASED_FOR_DISCLOSED_HISTORICAL_INTERPRETATION",
+  "reviewed_utc": "2026-11-01T09:05:15Z",
+  "reviewer": "research_next_building",
+  "scope": "Existing A1/A3 curve dimension and calibration review only; not a publication authorization or final visual/manufacturing QA.",
+  "verified": [
+    "1930cm source dimension supersedes1920; build uses19.30m straight extension.",
+    "Join center590,420 is a supported graphical centerline approximation at source dimension extension contact near600,412 and1700grid, not an exact CAD junction.",
+    "Both axes recalibrated on26 line-derived controls; original one-cell basis superseded. Longitudinal grid intercept sequence agrees with independent source review.",
+    "Calibration residual1.1065px RMS and2.0472px max is fitting residual only; README does not claim global surveyed accuracy.",
+    "Last-three-point chord rotated20.46085deg to A1 direction56deg; this preserves calibrated lengths and is disclosed site alignment, not independent verification of A3 angle.",
+    "README records source65deg and65.75deg,1930cm correction, graphical positioning, no as-built claim."
+  ],
+  "caveats": [
+    "65.75deg is a grid/line reference angle; do not imply it shares the same datum as A1 site56deg. Differences in reference baseline can explain part of angle difference.",
+    "Terminal smoothing source review passed at v5; final visual QA remains separate.",
+    "A1/A3 overall visual width mismatch is not resolved by claiming either drawing surveyed: use detailed A3 shape with explicitly approximate A1 layout only.",
+    "This release does not approve guardhouse roof interpretations, complete model visuals, copyright/publication packaging, or printing. Those remain builder/independent reviewer duties."
+  ],
+  "reviewed_hashes": {
+    "GRID-CALIBRATION-QA.json": "79c18a09eb6bd035b2d4ab114fe4f462fa8d6015154334ff6892009ccc0ce41e",
+    "recalibrate_curve.py": "87ea54b1461e8437b60b981e0034a1098ab9f7e5c5debc2c2455ec42c65e22cf",
+    "output/CURVE-DIGITIZATION.json": "137c17a57b2bb6fc32d06c81e5c32b12192676e87186218d7202dbacee59532a",
+    "output/build_model.py": "f22c334e68ede932abf3cf9cc34881909066258ee0f7c7c86c4df23def20a297",
+    "output/README.md": "0aeaa7c3bb702510451d60904e1a57b65088984ebce729093b6be30ac379e2f2"
+  },
+  "updated_utc": "2026-11-01T09:08:25Z",
+  "v5_terminal_smoothing_review": {
+    "status": "ACCEPTED_AS_DISCLOSED_GRAPHICAL_INTERPRETATION",
+    "method": "Only final Hermite endpoint derivative replaced by unit56degree direction; all traced control points and calibrated grid unchanged. Other intervals use original PCHIP derivatives.",
+    "reported140sample_max_shift_m": 0.015278428251321748,
+    "independent10001sample_final_interval_max_shift_m": 0.015405179763586227,
+    "scope": "Sub3cm graphical curve smoothing accepted; does not certify exact original curvature or final rendered mesh.",
+    "mesh_sha256": "d80efa75d320bc6a5b9aed20873a8829803b8adbb46800f48b539e04b08527cb"
+  },
+  "final_document_update": "Curve status finalized; unchanged numerical controls and unchanged mesh hash verified."
+}

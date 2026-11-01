@@ -1,0 +1,512 @@
+{
+  "status": "INDEPENDENT_MULTIPOINT_GRID_CALIBRATION_ACCEPTED_PREVIOUS_BASIS_SUPERSEDED",
+  "source_crop": "next-school-research-20261101/nctu-A3-curve.png",
+  "source_pixels_size": [
+    1126,
+    1965
+  ],
+  "method": "Scipy grayscale highpass intensity integration across actual drawn grid lines; robust linear fit of each of nine steep lines; shallow intercepts independently measured at m=-.43. Fits are graphical calibration, not CAD metrology.",
+  "steep_gridline_fits": [
+    {
+      "grid_x_cm": 100,
+      "line_x_equals_m_y_plus_a": [
+        0.43123782679575956,
+        386.0926409805419
+      ],
+      "sample_y_range": [
+        435,
+        735
+      ],
+      "rms_line_px": 0.37102689779005593,
+      "intersection_with_y_grid1700_b672_25": [
+        570.2495956158408,
+        427.04267388518844
+      ]
+    },
+    {
+      "grid_x_cm": 200,
+      "line_x_equals_m_y_plus_a": [
+        0.4337089819733296,
+        300.13760784873614
+      ],
+      "sample_y_range": [
+        465,
+        765
+      ],
+      "rms_line_px": 0.7432618394354124,
+      "intersection_with_y_grid1700_b672_25": [
+        498.69450749999584,
+        457.8113617750018
+      ]
+    },
+    {
+      "grid_x_cm": 300,
+      "line_x_equals_m_y_plus_a": [
+        0.4305712797620763,
+        218.93827089154067
+      ],
+      "sample_y_range": [
+        495,
+        805
+      ],
+      "rms_line_px": 0.5890775736878013,
+      "intersection_with_y_grid1700_b672_25": [
+        428.9682146526848,
+        487.7936676993455
+      ]
+    },
+    {
+      "grid_x_cm": 400,
+      "line_x_equals_m_y_plus_a": [
+        0.4322038354090931,
+        132.4170403051879
+      ],
+      "sample_y_range": [
+        560,
+        1750
+      ],
+      "rms_line_px": 0.5463451814976744,
+      "intersection_with_y_grid1700_b672_25": [
+        356.678253682125,
+        518.8783509166863
+      ]
+    },
+    {
+      "grid_x_cm": 500,
+      "line_x_equals_m_y_plus_a": [
+        0.43297887404524094,
+        45.282279747437585
+      ],
+      "sample_y_range": [
+        590,
+        1800
+      ],
+      "rms_line_px": 0.6386012406509582,
+      "intersection_with_y_grid1700_b672_25": [
+        283.55904511102017,
+        550.3196106022613
+      ]
+    },
+    {
+      "grid_x_cm": 600,
+      "line_x_equals_m_y_plus_a": [
+        0.4334723205035966,
+        -38.511612164847776
+      ],
+      "sample_y_range": [
+        620,
+        1800
+      ],
+      "rms_line_px": 0.5600037878336672,
+      "intersection_with_y_grid1700_b672_25": [
+        213.15882211310685,
+        580.5917064913641
+      ]
+    },
+    {
+      "grid_x_cm": 700,
+      "line_x_equals_m_y_plus_a": [
+        0.43326465463542657,
+        -126.15913724926689
+      ],
+      "sample_y_range": [
+        800,
+        1800
+      ],
+      "rms_line_px": 0.7460338287435324,
+      "intersection_with_y_grid1700_b672_25": [
+        139.17432163799768,
+        612.405041695661
+      ]
+    },
+    {
+      "grid_x_cm": 800,
+      "line_x_equals_m_y_plus_a": [
+        0.4326217791833199,
+        -209.7416100752143
+      ],
+      "sample_y_range": [
+        840,
+        1800
+      ],
+      "rms_line_px": 0.8255891003531434,
+      "intersection_with_y_grid1700_b672_25": [
+        68.36973865053625,
+        642.8510123802694
+      ]
+    },
+    {
+      "grid_x_cm": 900,
+      "line_x_equals_m_y_plus_a": [
+        0.43367845989276654,
+        -293.72333709940705
+      ],
+      "sample_y_range": [
+        1030,
+        1800
+      ],
+      "rms_line_px": 0.4608604214597992,
+      "intersection_with_y_grid1700_b672_25": [
+        -1.8398870939449132,
+        673.0411514503962
+      ]
+    }
+  ],
+  "shallow_gridline_b_by_100cm": [
+    2137.5,
+    2052.25,
+    1965.75,
+    1880.5,
+    1793.75,
+    1708.5,
+    1623.0,
+    1535.5,
+    1450.25,
+    1363.75,
+    1276.5,
+    1190.0,
+    1103.0,
+    1015.75,
+    930.75,
+    843.5,
+    756.25,
+    672.25
+  ],
+  "control_intersections": [
+    {
+      "grid_cm": [
+        400,
+        0
+      ],
+      "pixel": [
+        890.7153791480872,
+        1754.4923869663226
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.606993372695296
+    },
+    {
+      "grid_cm": [
+        400,
+        100
+      ],
+      "pixel": [
+        859.6444595466722,
+        1682.602882394931
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.6461084915693364
+    },
+    {
+      "grid_cm": [
+        400,
+        200
+      ],
+      "pixel": [
+        828.1179546138583,
+        1609.6592795160411
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.8306422237978343
+    },
+    {
+      "grid_cm": [
+        400,
+        300
+      ],
+      "pixel": [
+        797.0470350124433,
+        1537.7697749446495
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.17774553102000498
+    },
+    {
+      "grid_cm": [
+        400,
+        400
+      ],
+      "pixel": [
+        765.4294130133494,
+        1464.6153524042597
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.3022619612095859
+    },
+    {
+      "grid_cm": [
+        400,
+        500
+      ],
+      "pixel": [
+        734.3584934119345,
+        1392.7258478328683
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.7046901107819842
+    },
+    {
+      "grid_cm": [
+        400,
+        600
+      ],
+      "pixel": [
+        703.1964567442398,
+        1320.625523599977
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.433667000487498
+    },
+    {
+      "grid_cm": [
+        400,
+        700
+      ],
+      "pixel": [
+        671.3054835463065,
+        1246.8386420750883
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.3668504475128202
+    },
+    {
+      "grid_cm": [
+        400,
+        800
+      ],
+      "pixel": [
+        640.2345639448914,
+        1174.9491375036966
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.30084735692692
+    },
+    {
+      "grid_cm": [
+        400,
+        900
+      ],
+      "pixel": [
+        608.7080590120776,
+        1102.0055346248068
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.1221616391331706
+    },
+    {
+      "grid_cm": [
+        400,
+        1000
+      ],
+      "pixel": [
+        576.908202880424,
+        1028.4294727614176
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.32090355572736146
+    },
+    {
+      "grid_cm": [
+        400,
+        1100
+      ],
+      "pixel": [
+        545.3816979476101,
+        955.4858698825277
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.24447933859648793
+    },
+    {
+      "grid_cm": [
+        400,
+        1200
+      ],
+      "pixel": [
+        513.6729588822365,
+        882.1206276806384
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.6499537117535449
+    },
+    {
+      "grid_cm": [
+        400,
+        1300
+      ],
+      "pixel": [
+        481.8731027505829,
+        808.5445658172493
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.495227211046463
+    },
+    {
+      "grid_cm": [
+        400,
+        1400
+      ],
+      "pixel": [
+        450.89330021544777,
+        736.8658809073575
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.3994630386601854
+    },
+    {
+      "grid_cm": [
+        400,
+        1500
+      ],
+      "pixel": [
+        419.09344408379434,
+        663.2898190439685
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.1887526955303391
+    },
+    {
+      "grid_cm": [
+        400,
+        1600
+      ],
+      "pixel": [
+        387.2935879521409,
+        589.7137571805795
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 2.047229304874269
+    },
+    {
+      "grid_cm": [
+        400,
+        1700
+      ],
+      "pixel": [
+        356.678253682125,
+        518.8783509166863
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.3493171237523894
+    },
+    {
+      "grid_cm": [
+        100,
+        1700
+      ],
+      "pixel": [
+        570.2495956158408,
+        427.04267388518844
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.535005875638957
+    },
+    {
+      "grid_cm": [
+        200,
+        1700
+      ],
+      "pixel": [
+        498.6945074999959,
+        457.8113617750018
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.2763378276167714
+    },
+    {
+      "grid_cm": [
+        300,
+        1700
+      ],
+      "pixel": [
+        428.9682146526849,
+        487.7936676993455
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.0807873784895587
+    },
+    {
+      "grid_cm": [
+        500,
+        1000
+      ],
+      "pixel": [
+        504.12192986851477,
+        1059.7275701565386
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 0.9949577632447201
+    },
+    {
+      "grid_cm": [
+        600,
+        800
+      ],
+      "pixel": [
+        497.41659971857496,
+        1236.360862121013
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.0479387875455703
+    },
+    {
+      "grid_cm": [
+        700,
+        600
+      ],
+      "pixel": [
+        486.4094648417273,
+        1413.8439301180572
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.8742037516643217
+    },
+    {
+      "grid_cm": [
+        800,
+        600
+      ],
+      "pixel": [
+        415.17046912239005,
+        1444.4766982773724
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.3493071691298522
+    },
+    {
+      "grid_cm": [
+        900,
+        600
+      ],
+      "pixel": [
+        345.6747712636325,
+        1474.359848356638
+      ],
+      "method": "intersection of independently intensity-fitted steep gridline with measured shallow gridline; rounded shallow slope-.43",
+      "affine_residual_px": 1.049162896327448
+    }
+  ],
+  "affine_origin_grid400_y0_pixel": [
+    891.2955592123861,
+    1755.9909925825127
+  ],
+  "pixel_basis_per_100cm_positive_right_up": [
+    71.55652800842057,
+    -31.074642063429685
+  ],
+  "pixel_basis_per_100cm_positive_upper_left": [
+    -31.468409951977804,
+    -72.76836778030828
+  ],
+  "affine_control_rms_px": 1.1065035765201419,
+  "affine_control_max_px": 2.047229304874269,
+  "conclusions": [
+    "Grid is continuous;1200/1300 text positions alone do not indicate a grid break.",
+    "Previous69,-28/-29,-68 basis underscaled pixel grid and overestimated physical curve dimensions. It must not retain PASS.",
+    "Approximately1–2pixel affine residual corresponds to roughly0.02–0.03m, but hand-traced wall centerline and grid stroke placement retain additional uncertainty.",
+    "Actual final site rotation and1930 extension still require separate source resolution; this calibration does not certify those."
+  ],
+  "caveat": "Intersections derive from fitted lines, with shared systematic slope assumptions; residual is not proof of global0.02m true model accuracy.",
+  "application": "Applied by recalibrate_curve.py; source-shape and final placement remain separately reviewed.",
+  "source_raster_included": false
+}
