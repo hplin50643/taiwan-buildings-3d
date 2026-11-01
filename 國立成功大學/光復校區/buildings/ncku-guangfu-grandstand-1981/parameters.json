@@ -1,0 +1,51 @@
+{
+  "building": "國立成功大學 光復操場司令台",
+  "state": "1981 original architectural-drawing exterior reconstruction; not as-built survey or 2026 current state",
+  "construction_context": "Official NCKU virtual campus explicitly states new east-side 1981 university games stand designed by M.H. Wu",
+  "length_m": 48,
+  "roof_front_m": 8.1,
+  "roof_back_m": 5.1,
+  "roof_pier_count": 6,
+  "roof_pier_spacing_m": 8,
+  "roof_patches": 24,
+  "status": "LOCAL_READY_FINAL_QA_PASSED",
+  "exclusions": [
+    "2021 ground-floor infill and door modifications",
+    "Exact shell construction geometry, internal reinforcement, hidden rooms",
+    "Nearby uncovered spectator terraces and torch platform are separate objects not included"
+  ],
+  "evidence_dir": "next-survey-candidates-20261031/ncku-grandstand",
+  "scale_denominator": 200,
+  "coordinate_system": "x positive south along stand; y positive east/rear; z up. Local aligned axes, not georeferenced",
+  "roof_edge_top_m": 10.88,
+  "roof_shell_outer_surface_m": 10.78,
+  "roof_shell_low_interpretation_m": 8.68,
+  "raised_hub_top_interpretation_m": 9.48,
+  "shell_geometry_policy": "Four bilinear HP quadrants per support, edge/ridge heights proportionally interpreted from A6/A9/S4-S6. A6 +948 and A9 section low point are distinct interpreted surfaces, not asserted surveyed coordinates. Thickness0.14m is print-oriented approximation, not original6cm thin shell.",
+  "grid_y_m": {
+    "D": -4.32,
+    "C": 0,
+    "B": 6.28,
+    "A": 9.28
+  },
+  "front_outer_edge_y_m": -6.09,
+  "low_roof_y_m": [
+    3.33,
+    7.53
+  ],
+  "seating": {
+    "first_riser_y_m": -4.72,
+    "tier_count": 10,
+    "tread_m": 0.72,
+    "riser_m": 0.36,
+    "front_walkway_m": 3.53,
+    "high_walkway_m": 7.13
+  },
+  "recessed_front_openings": "Original arched arcade has recessed plaster walls, sparse windows/doors and central visible stair; not a curtain wall",
+  "print_limits": [
+    "No physical trial print",
+    "HP canopy and external stairs require slicer support consideration; do not assume support-free printing",
+    "Opaque windows/door backing, simplified rail sections and sash arrangement",
+    "Authored plinth and east raised support are not surveyed site geometry"
+  ]
+}

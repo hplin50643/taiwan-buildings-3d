@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "scope": "Fresh publication documentation/link/hash checks only. Prior geometry/render/source QA was not rerun or relabelled by this documentation edit.",
+  "checked_at": "2026-11-01T05:14:15.610724+00:00",
+  "documents": [
+    {
+      "file": "README.md",
+      "sha256": "be798719e250098676e26a48e9b9639fe154eb3b81e075b76dd581759eab0d43",
+      "inline_images": [
+        "preview.png",
+        "rear.png",
+        "front.png",
+        "back.png",
+        "west.png",
+        "east.png",
+        "top.png"
+      ],
+      "relative_links": [
+        "preview.png",
+        "rear.png",
+        "front.png",
+        "back.png",
+        "west.png",
+        "east.png",
+        "top.png",
+        "model.stl",
+        "model.3mf",
+        "scene.blend",
+        "build_model.py",
+        "render_model.py",
+        "export_3mf.py"
+      ],
+      "missing": [],
+      "passed": true
+    }
+  ],
+  "source_model_rights_separate": true,
+  "source_media_excluded": true,
+  "geometry_render_and_scripts_unchanged_sha256": {
+    "back.png": "33708e5566ad05bb6cfdecf9797c91203d87db47471805fca96c9c137e4eaefc",
+    "verify_scene.py": "4ecd72abcf063caa100219e5cc1cd150d09639092716ad0af60e28f8908a7c06",
+    "render_model.py": "f8c671867864e95a950b2ecda93a389f408cc8ccafbd2a80b5f7e756bcc9f78c",
+    "export_3mf.py": "913fbe8de97e600473bcbc95c838d949a3a2ac03a95bfa1e87ac7938c1ac3b2e",
+    "west.png": "9228653cd49072c431a4872cf98cd222696e4cfa236b0ef8abec802b237e63b5",
+    "validate_model.py": "d6f4b40a70a3ee3342ae435a69ecead4a57783db790473eab62508f6b84c36e9",
+    "scene.blend": "cd9d163a41c8950ba9476b10bf7821718e7c6cf95d61e7951f642cbdadd2ab31",
+    "top.png": "0aa9d00b78a8641fc113e54663751dd495b73f81c4088e3e351637d8198a5344",
+    "build_model.py": "8eee419d2cbee72cca386480256d3d657441abd4600f2dfaef8a84fb5a5e78a8",
+    "model.3mf": "2ed0c4dd983d193970d029c30619e63d0e038b1a43f97f5c55c3928fc74a28aa",
+    "model.stl": "0bc46e477a5b0eeb84c11f2e80dd0541272db9ade2ec711e4bd293194f35a732",
+    "rear.png": "de83746038bbe500b0428e9ad217ddae5cb620e44e45004643e714bb2fd41741",
+    "preview.png": "6a2e74320d18e72036931353a624b9389538f40ed8ff98b06bb2dcb39c782998",
+    "front.png": "7b32c76aa461022253904d6af29416dbbb5a698a7656e7ba1a253e7d1d65a2d1",
+    "mesh.npz": "cd38820751e63a6a27ecde0570e62d10e5ce077c3b72453a5c88288e4a711f80",
+    "east.png": "ad8d8fe9d9a24b77ff2d26d6f28afd34717c3ba9925a00ae368cd4a6120cc4b3"
+  },
+  "prior_document_qa": {
+    "file": "DOC-QA.json",
+    "sha256": "1d23ce9e2942aa946c8d193c6073677ee95336c626256ab3b5423f8b021e5c46",
+    "historical_result": {
+      "status": "PASS",
+      "inline_images": [
+        "preview.png",
+        "rear.png",
+        "front.png",
+        "back.png",
+        "west.png",
+        "east.png",
+        "top.png"
+      ],
+      "missing": [],
+      "source_model_rights_separate": true,
+      "original_source_images_bundled": false,
+      "local_ready_publication_hold": true
+    },
+    "applicability": "Historical pre-publication document QA, including any HOLD/old rights wording, is not the current document status."
+  }
+}

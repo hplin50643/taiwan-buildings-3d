@@ -1,0 +1,48 @@
+{
+  "status": "resolved_by_corrected_renders",
+  "reviewed_utc": "2026-10-31T10:40:38.141354+00:00",
+  "phase": "interim_render_not_final",
+  "images": [
+    {
+      "file": "previews/front.png",
+      "sha256": "16e267da7b64d50fb5f6388eb83ede421184b0275e4c4ec5f40db7aeb7dceb4d"
+    },
+    {
+      "file": "previews/rear.png",
+      "sha256": "7ebc6d1dc0c42e18d116f27ab586b21bf4432b3409d84d09596e09f62ad851b1"
+    },
+    {
+      "file": "previews/front_elevation.png",
+      "sha256": "81322ccc3942b417f418b6f9a4a20cccd0029a20d020ef76d74b6cbb4d423dd8"
+    }
+  ],
+  "major_required_fixes": [
+    {
+      "issue": "West large arches incorrectly glazed as full-height uniform curtainwall",
+      "evidence": "Original A7 enlarged west elevation shows recessed rendered walls with separate upper windows and doors; central arch has visible staircase. All five wide arches are not full-width tall glass windows.",
+      "action": "Remove continuous glazing and dense mullions; form recessed wall and discrete windows/doors from A3/A7, maintain central stair entrance."
+    },
+    {
+      "issue": "West diagonal stairs have solid triangular undersides infilling their open space",
+      "evidence": "Original A7 and official panorama both show doors/open space beneath diagonal stair flights. Render white solid wedges obscure arches.",
+      "action": "Model stair slab of finite thickness with steps and brick parapets; remove below-slab triangular infill."
+    },
+    {
+      "issue": "Central east entrance shown as single dark unframed arched panel",
+      "evidence": "A7 depicts recessed entrance and separate double door, not uniform full-width unframed glazing.",
+      "action": "Express entry recess and door divisions, avoiding unsupported curtainwall."
+    }
+  ],
+  "acceptable_major_features": [
+    "Six four-quadrant curved canopies and front/rear slope orientation",
+    "Main overall length/depth proportions",
+    "Seating ascent toward east"
+  ],
+  "known_parent_in_progress": [
+    "Coplanar sidewall material triangles",
+    "Central historic plaque"
+  ],
+  "resolved_utc": "2026-10-31T10:44:48.236406+00:00",
+  "resolution_reference": "SOURCE-VISUAL-QA.json",
+  "historical_record_note": "Retained record of superseded interim render defects. All three listed required corrections were visually verified resolved in the final seven-render audit. Original interim hashes remain unchanged for traceability."
+}

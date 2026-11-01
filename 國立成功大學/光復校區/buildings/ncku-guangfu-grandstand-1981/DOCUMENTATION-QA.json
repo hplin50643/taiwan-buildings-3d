@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "scope": "Fresh publication documentation/link/hash checks only. Prior geometry/render/source QA was not rerun or relabelled by this documentation edit.",
+  "checked_at": "2026-11-01T05:14:15.039979+00:00",
+  "documents": [
+    {
+      "file": "README.en.md",
+      "sha256": "15d94bd7dbd49db6ac6f24f17fec0b58e03b6b16a8c3619e27f5975f537c7077",
+      "inline_images": [
+        "previews/front.png",
+        "previews/rear.png",
+        "previews/top.png"
+      ],
+      "relative_links": [
+        "previews/front.png",
+        "previews/rear.png",
+        "previews/top.png",
+        "model.3mf",
+        "model.stl",
+        "scene.blend",
+        "build_model.py",
+        "parameters.json",
+        "QA.json",
+        "SOURCE-PROOF.json",
+        "SOURCE-RIGHTS.md"
+      ],
+      "missing": [],
+      "passed": true
+    },
+    {
+      "file": "README.md",
+      "sha256": "4ea32c9e6e98d64bb06819d0fa039875de80ba99bc6cf17ff1687b7d2743240c",
+      "inline_images": [
+        "previews/front.png",
+        "previews/rear.png",
+        "previews/top.png"
+      ],
+      "relative_links": [
+        "previews/front.png",
+        "previews/rear.png",
+        "previews/top.png",
+        "model.3mf",
+        "model.stl",
+        "scene.blend",
+        "build_model.py",
+        "parameters.json",
+        "QA.json",
+        "SOURCE-PROOF.json",
+        "SOURCE-RIGHTS.md"
+      ],
+      "missing": [],
+      "passed": true
+    },
+    {
+      "file": "README.zh-TW.md",
+      "sha256": "4ea32c9e6e98d64bb06819d0fa039875de80ba99bc6cf17ff1687b7d2743240c",
+      "inline_images": [
+        "previews/front.png",
+        "previews/rear.png",
+        "previews/top.png"
+      ],
+      "relative_links": [
+        "previews/front.png",
+        "previews/rear.png",
+        "previews/top.png",
+        "model.3mf",
+        "model.stl",
+        "scene.blend",
+        "build_model.py",
+        "parameters.json",
+        "QA.json",
+        "SOURCE-PROOF.json",
+        "SOURCE-RIGHTS.md"
+      ],
+      "missing": [],
+      "passed": true
+    }
+  ],
+  "source_model_rights_separate": true,
+  "source_media_excluded": true,
+  "geometry_render_and_scripts_unchanged_sha256": {
+    "verify_scene.py": "fa219ef9e62f81e8a175346b3816cbf4c17cae5d58e76bb7c595b008413d7afc",
+    "render_model.py": "26a34e31d21910b0a3a5d0f09dc3095d9cf1bcd2b043bd1f8220ff214d16d26c",
+    "verify_rebuild.py": "28dcae8e4fc8aaa62f4b54c3f73977187c9e0ac991bc4b25696da9574dd3ec92",
+    "validate_model.py": "069a2d10c94c035c6acd89c1b288ec997706e0500aa98a177f947fe9f2847063",
+    "scene.blend": "e6bfe107be03fddbdd2bed5a770dbc843767e210937d427f9b461641c41423b8",
+    "build_model.py": "398d7a9447576dff7275f8bf8541d8b7380972700691db073b76aa1c71a07f5d",
+    "model.3mf": "abd9006c2421327cada7b39e3e777b79399577273937c033d52ca9d040053509",
+    "model.stl": "533b90ddb40c15c14effb3b9af025c4e990f20b8cbe0532242ecfc3771df087d",
+    "verify_render_bindings.py": "0df84418483f2dfb219756dc07ee38238d491462a4bd904cc0a75eb311835e3e",
+    "mesh-data.npz": "c36d6b95048049d89f25009d9916f8e8e4c287138aa53a05bea89233d61bb515",
+    "previews/north_end.png": "bd914911e6055691002e9997956cc09ce2cb6e31b7a737fcc439a50da8cb076c",
+    "previews/south_elevation.png": "1a2161c6d68ee1839c950ddd0d4bbebfb4c2fcd645567d4c7df3a1eeafe04fc5",
+    "previews/top.png": "60d884e8377a7b0537e1105eb4a65ab4fb09747966aac193132007c34d81494b",
+    "previews/canopy_detail.png": "2f228d73c828b3c6c86a282ea8da2481bc8c32beda9eebcca5b9afd85f23eb7d",
+    "previews/rear.png": "79f7ca9fbada2948d02e77e6787c4914dc3609cd1fe6520c98824118f1fd4565",
+    "previews/front_elevation.png": "0a2f28ae44b90768d2988be5de1df4fe7b9526cd8d22ab4fe7557bd17347442e",
+    "previews/front.png": "cd4f66bab82e87effec71f24b0b4fe9d034bbe4367fe7f1f2010debdb0c09e98"
+  },
+  "prior_document_qa": {
+    "file": "DOCUMENTATION-QA.json",
+    "sha256": "39b3a627a04d65eab89259d3825dc617f0a0fb749aed3babf6b8bf1fcd55604e",
+    "historical_result": {
+      "documents": [
+        {
+          "file": "README.md",
+          "checks": {
+            "three_inline_images": true,
+            "all_relative_targets_exist": true,
+            "noncurrent_scope": true,
+            "hp_approximation": true,
+            "rights_notice": true
+          },
+          "passed": true
+        },
+        {
+          "file": "README.zh-TW.md",
+          "checks": {
+            "three_inline_images": true,
+            "all_relative_targets_exist": true,
+            "noncurrent_scope": true,
+            "hp_approximation": true,
+            "rights_notice": true
+          },
+          "passed": true
+        },
+        {
+          "file": "README.en.md",
+          "checks": {
+            "three_inline_images": true,
+            "all_relative_targets_exist": true,
+            "noncurrent_scope": true,
+            "hp_approximation": true,
+            "rights_notice": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "readme_sha256": {
+        "README.md": "fee2cf21c56dc8e5616bb43598f7ea26c169f4f2442b1bad70dd7b44ad54a252",
+        "README.zh-TW.md": "fee2cf21c56dc8e5616bb43598f7ea26c169f4f2442b1bad70dd7b44ad54a252",
+        "README.en.md": "0979b301eec7e1d0a6f6c14de9b26b5c91ae20e852cf9b814002adde02c9394f"
+      },
+      "prominent_noncommercial_notice": true
+    },
+    "applicability": "Historical pre-publication document QA, including any HOLD/old rights wording, is not the current document status."
+  }
+}

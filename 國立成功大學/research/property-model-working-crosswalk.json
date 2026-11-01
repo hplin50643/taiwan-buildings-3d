@@ -518,11 +518,17 @@
       "retrieved_date": "2026-10-13",
       "evidence_status": "complete_official_document_text_extracted",
       "research_queue_status": "structure_or_facility_classification_required",
-      "model_status": "check_existing_ncku_manifest_before_assignment",
+      "model_status": "bounded_historical_design_exterior_model_available",
       "physical_building_deduplication": "pending_property_record_is_not_unique_building",
       "current_2026_status": "not_independently_verified",
-      "model_candidates": [],
-      "model_research_status": "待逐棟外觀研究，不視為證據阻礙已確認"
+      "model_candidates": [
+        {
+          "repo_directory": "國立成功大學/光復校區/buildings/ncku-guangfu-grandstand-1981",
+          "readme": "../光復校區/buildings/ncku-guangfu-grandstand-1981/README.md",
+          "scope": "1981原建築圖外觀近似，不是竣工測繪或2026現況；HP曲率與薄殼厚度為參數化／列印近似，不含地下構造、隱藏房間或鄰接看台。"
+        }
+      ],
+      "model_research_status": "1981原圖外觀模型，不是2026現況或精密竣工測繪"
     },
     {
       "inventory_id": "ncku-property-R1A-17-0",
@@ -4599,5 +4605,9 @@
       "model_candidates": [],
       "model_research_status": "待逐棟外觀研究，不視為證據阻礙已確認"
     }
-  ]
+  ],
+  "models_field_scope": "models保留2026-10-13歷史批次對照，不當現行完整模型清單；現行套件以model-index.json為準。",
+  "current_published_package_count": 48,
+  "current_model_index": "../model-index.json",
+  "current_mapping_updated": "2026-11-01"
 }

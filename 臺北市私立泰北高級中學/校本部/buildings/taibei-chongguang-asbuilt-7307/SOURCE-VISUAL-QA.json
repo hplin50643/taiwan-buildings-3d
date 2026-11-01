@@ -1,0 +1,96 @@
+{
+  "status": "passed_with_explicit_scope_limits",
+  "reviewed_at_utc": "2026-11-01T04:46:00.349244+00:00",
+  "mesh_sha256": "cd38820751e63a6a27ecde0570e62d10e5ce077c3b72453a5c88288e4a711f80",
+  "actually_viewed_images": {
+    "back.png": "33708e5566ad05bb6cfdecf9797c91203d87db47471805fca96c9c137e4eaefc",
+    "east.png": "ad8d8fe9d9a24b77ff2d26d6f28afd34717c3ba9925a00ae368cd4a6120cc4b3",
+    "front.png": "7b32c76aa461022253904d6af29416dbbb5a698a7656e7ba1a253e7d1d65a2d1",
+    "preview.png": "6a2e74320d18e72036931353a624b9389538f40ed8ff98b06bb2dcb39c782998",
+    "rear.png": "de83746038bbe500b0428e9ad217ddae5cb620e44e45004643e714bb2fd41741",
+    "top.png": "0aa9d00b78a8641fc113e54663751dd495b73f81c4088e3e351637d8198a5344",
+    "west.png": "9228653cd49072c431a4872cf98cd222696e4cfa236b0ef8abec802b237e63b5"
+  },
+  "remaining_issues": [],
+  "resolved_observed": [
+    "Lower-mass cuts now effective after indexed-target fix",
+    "1F open lobby",
+    "2F projecting balconies",
+    "4F terraces",
+    "Different fifth-floor/mezzanine south outlines",
+    "Tall east tower",
+    "Perforated triangular cantilever brackets",
+    "North first-floor balcony replaces mistaken bathroom block",
+    "B1 lightwell retained",
+    "West vertical and upper horizontal windows now separate",
+    "Northeast vertical louver band and low vent now present",
+    "All seven views now visibly framed",
+    "Roof stair/access and two grilles rendered as explicitly simplified symbols",
+    "Five small tower east-face windows visibly present",
+    "South tower rectangular window repositioned and separate arch relief visibly present",
+    "Final seven renders have no apparent frame clipping"
+  ],
+  "scope_limits": [
+    "As-built drawing state, not verified current condition",
+    "No guessed courtyard stair position",
+    "Neutral materials and opaque glazing",
+    "Fine rounded frame corners simplified",
+    "Not dimensional certification or physical print validation",
+    "No per-dimension accuracy certification; small windows/louvers/arch positions are graphical estimates from A13",
+    "Roof stair is shallow plan-symbol engraving, not a reconstructed measured stairwell depth; grille relief is representational",
+    "Source H=3m lightning rod omitted as fine detail",
+    "B1 north lightwell modeled locally; unlocated rear stair omitted rather than invented",
+    "First-floor north balconies partly cover the lightwell; not claimed wholly open-to-sky",
+    "Window mullion density, thin rail details and interiors simplified for 1:250 display model"
+  ],
+  "historical_issues_resolved": [
+    {
+      "mesh_sha256": "b3e2f15020abc57472454e03d6a67d36d81ed07841bf4b5ed92ef580e222de70",
+      "issues": [
+        {
+          "id": "west_T_window",
+          "source": "MQM4MSMCMA.jpg west elevation",
+          "issue": "Central vertical window incorrectly joins upper horizontal window; end around 5MF 20m with solid wall separating upper window. Parent acknowledged."
+        },
+        {
+          "id": "northeast_louver_band",
+          "source": "MQM4MSMCMA north/east elevations; first-third floor plans",
+          "issue": "Missing tall vertical louver/fin opening band on northeast sloped wall near x45..50 and low ventilation opening. Current east/back wall blank."
+        },
+        {
+          "id": "east_west_frame_crop",
+          "issue": "Both east.png and west.png crop roof/guardrail upper extent; require camera adjustment and rerender."
+        }
+      ]
+    },
+    {
+      "mesh_sha256": "71ccd9cbe3cc5682ff7359c503cb89acbdac217e13423f62dbbe51938597b997",
+      "issues": [
+        {
+          "id": "east_tower_five_small_windows",
+          "source": "A13 east elevation",
+          "issue": "Five narrow vertical windows on east face of southeast stair tower are still omitted; approximate centers identified from elevation, require explicit graphical-estimate labeling."
+        },
+        {
+          "id": "south_tower_arch_outline",
+          "source": "A13 south elevation",
+          "issue": "Shallow arched outline above upper rectangular window omitted; reproduce as relief outline, not invented arch opening."
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "source_images_actually_viewed": {
+    "MPMWMSMCMA": "2773a8ebc3f54a1149c154c7c8f369b1e99688087e1be681ebfe2740a7a89a34",
+    "MKMWMSMCMA": "3ac0a1f5b79730e11db140e6a4ec08ac9d6b1daf1b7a22441b10b528bd23d598",
+    "M8M4MSMCMA": "fb154312b868f278666a5babcf58898015ce7a6b65695ba57bb3041d2774780c",
+    "MLM4MSMCMA": "b115fe3a3ed0f5252cc5e466125b68e23f7c210360057590282b4eebbbfd9ee8",
+    "MXM4MSMCMA": "44a411d73c125fc20dd9538191484b6c067e1569ecf858b5d70b78a1ff3d41ad",
+    "MNM4MSMCMA": "4376c7ef457930a6ea29563887d0c559b542f42d1aa571f725096cf41a5f01aa",
+    "MCM4MSMCMA": "19a8f90632154a501988b1ff097ae0861c8389d32076246f004f9b821a1dc13c",
+    "MQM4MSMCMA": "f182151c17d196b26d9e222251694627795636462e489f3878a546a823322ccf",
+    "MPM4MSMCMA": "f61347f9077a15acd19511c7ed6b64a464ace2dc0996c2c56706b2dd3ede1a46",
+    "MKM4MSMCMA": "630422806ef7ccd19940d2ab3d87bbf89903d94d7896af859ecaa93ed91d5fef",
+    "M7M4MSMCMA": "c57ef8b2bd8c2c574f7386e83aa7e6f3bcde7692350b5892b556df6e19babacb"
+  }
+}

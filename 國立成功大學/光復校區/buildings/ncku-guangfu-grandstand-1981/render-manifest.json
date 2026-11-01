@@ -1,0 +1,122 @@
+{
+  "renderer": "Blender Cycles",
+  "samples": 32,
+  "seed": 0,
+  "rendered_mesh": "mesh-data.npz",
+  "reference_images_embedded": 0,
+  "views": [
+    {
+      "name": "front",
+      "camera": [
+        220,
+        -340,
+        170
+      ],
+      "target": [
+        0,
+        0,
+        25
+      ],
+      "ortho_scale": 310,
+      "elevation_degrees": 19.700007180533294,
+      "yaw_from_front_degrees": 32.9052429229879
+    },
+    {
+      "name": "front_elevation",
+      "camera": [
+        0,
+        -400,
+        30
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 285,
+      "elevation_degrees": 0.0,
+      "yaw_from_front_degrees": 0.0
+    },
+    {
+      "name": "rear",
+      "camera": [
+        -220,
+        340,
+        160
+      ],
+      "target": [
+        0,
+        0,
+        25
+      ],
+      "ortho_scale": 310,
+      "elevation_degrees": 18.43625887992214,
+      "yaw_from_front_degrees": 32.9052429229879
+    },
+    {
+      "name": "north_end",
+      "camera": [
+        -400,
+        -70,
+        100
+      ],
+      "target": [
+        0,
+        0,
+        25
+      ],
+      "ortho_scale": 200,
+      "elevation_degrees": 10.464221274149251,
+      "yaw_from_front_degrees": 80.07375449334829
+    },
+    {
+      "name": "south_elevation",
+      "camera": [
+        400,
+        0,
+        30
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 140,
+      "elevation_degrees": 0.0,
+      "yaw_from_front_degrees": 90.0
+    },
+    {
+      "name": "top",
+      "camera": [
+        0,
+        0,
+        400
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 290,
+      "elevation_degrees": 90.0,
+      "yaw_from_front_degrees": 0.0
+    },
+    {
+      "name": "canopy_detail",
+      "camera": [
+        100,
+        -200,
+        60
+      ],
+      "target": [
+        0,
+        0,
+        40
+      ],
+      "ortho_scale": 200,
+      "elevation_degrees": 5.111089695288715,
+      "yaw_from_front_degrees": 26.56505117707799
+    }
+  ],
+  "axes": "Local x along north-south stand length; negative y west/front, positive y east/rear; not georeferenced"
+}

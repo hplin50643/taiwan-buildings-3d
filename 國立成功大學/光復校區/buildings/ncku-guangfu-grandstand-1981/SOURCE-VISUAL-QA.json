@@ -1,0 +1,114 @@
+{
+  "status": "passed_with_explicit_scope_limits",
+  "reviewed_utc": "2026-10-31T10:44:48.236406+00:00",
+  "review_scope": "Independent source-to-render visual comparison of all seven listed corrected renders. Not a precision dimensional or structural certification.",
+  "reviewed_images": [
+    {
+      "file": "previews/canopy_detail.png",
+      "sha256": "2f228d73c828b3c6c86a282ea8da2481bc8c32beda9eebcca5b9afd85f23eb7d"
+    },
+    {
+      "file": "previews/front.png",
+      "sha256": "cd4f66bab82e87effec71f24b0b4fe9d034bbe4367fe7f1f2010debdb0c09e98"
+    },
+    {
+      "file": "previews/front_elevation.png",
+      "sha256": "0a2f28ae44b90768d2988be5de1df4fe7b9526cd8d22ab4fe7557bd17347442e"
+    },
+    {
+      "file": "previews/north_end.png",
+      "sha256": "bd914911e6055691002e9997956cc09ce2cb6e31b7a737fcc439a50da8cb076c"
+    },
+    {
+      "file": "previews/rear.png",
+      "sha256": "79f7ca9fbada2948d02e77e6787c4914dc3609cd1fe6520c98824118f1fd4565"
+    },
+    {
+      "file": "previews/south_elevation.png",
+      "sha256": "1a2161c6d68ee1839c950ddd0d4bbebfb4c2fcd645567d4c7df3a1eeafe04fc5"
+    },
+    {
+      "file": "previews/top.png",
+      "sha256": "60d884e8377a7b0537e1105eb4a65ab4fb09747966aac193132007c34d81494b"
+    }
+  ],
+  "mesh_data": {
+    "file": "mesh-data.npz",
+    "sha256": "c36d6b95048049d89f25009d9916f8e8e4c287138aa53a05bea89233d61bb515",
+    "vertices": [
+      25362,
+      3
+    ],
+    "faces": [
+      51182,
+      3
+    ],
+    "finite_vertices": true,
+    "valid_index_range": true
+  },
+  "source_evidence": [
+    {
+      "file": "drawing-06.jpg",
+      "sha256": "f581e2e9e71b8371593d4920fdf21fbc9a9bb64624ace83b05cbfd59b3f66ce4"
+    },
+    {
+      "file": "drawing-02.jpg",
+      "sha256": "ba367eb56a89d8cd3cc4e82efbac28443aec7f499df91fc3edb485caf3b5f9ab"
+    },
+    {
+      "file": "drawing-03.jpg",
+      "sha256": "c4b93e3241dc8c9844efac21ba37c4b89fbe99510cda4408c0ae2e79589963c7"
+    },
+    {
+      "file": "drawing-04.jpg",
+      "sha256": "897c5f2e741ebfc6f6a1423d88f1f5d988bb50203a4b03c15b886ad2860f1dc4"
+    },
+    {
+      "file": "drawing-05.jpg",
+      "sha256": "fc4b3fc0c88ed0b35105665a84ab08fc8de83b3cc5e363dbab4f7caafc4b5325"
+    },
+    {
+      "file": "drawing-08.jpg",
+      "sha256": "a7b5e41a35349bf28bcee21cbc18678df83041e4551f8cc6137fe0749d38f5bb"
+    },
+    {
+      "file": "S4-roof-structure.jpg",
+      "sha256": "48fb219282b6e724b6656d6136cfc0883df2d813dc24ac676bd08a12655fe655"
+    },
+    {
+      "file": "S5-HP-shell.jpg",
+      "sha256": "8b319adf6852787b9bfda21df7f232093cdffeea174fe1f3f87686b3ed6dc73f"
+    },
+    {
+      "file": "S6-roof-beams.jpg",
+      "sha256": "f6ae4de48853e5e07e91a34baaf7d34d385bbbe2d9ae0fa8617c203235b71f84"
+    },
+    {
+      "file": "pano.xml",
+      "sha256": "dd25305912ae05ee9838e1038f303a81cb9e2c4620b22db5ec7ce0133113c7c7"
+    }
+  ],
+  "resolved_interim_issues": [
+    "West five wide arches no longer fabricated full-height curtainwall: recessed rendered backing, discrete high windows and doors, visible central staircase now expressed.",
+    "Paired west stairs now have finite diagonal slab and open undersides instead of solid white triangular infill.",
+    "East central entrance now recessed with separate double-door division.",
+    "Previously visible coplanar side-wall material triangles absent in reviewed views."
+  ],
+  "supported_major_features": [
+    "Six consecutive four-quadrant curved canopies, long-axis bay rhythm, front/back depth asymmetry.",
+    "Seating ascends toward east, with front west arcade and paired diagonal access stairs.",
+    "Rear low sloped-roof wings flank the taller central entry mass.",
+    "North end and south elevation preserve the lower rear-roof slope, seating rise and asymmetrical canopy projection.",
+    "Top view shows all six continuous canopy units with exposed rear-wing roofs and central entrance, rather than an invented roof covering the entire depth.",
+    "Canopy detail is intentionally a cropped detail view, not a complete-building framing image."
+  ],
+  "explicit_limits": [
+    "1981 historical original-design reconstruction; drawings are not certified as-built. Official virtual-campus record supports the 1981 event context, not precision conformity of every modeled component.",
+    "HP surfaces, raised hubs and transition heights are interpreted approximations; A6 +948 and A9 low-point relationship remains a scoped interpretation, not an independently verified surface equation. Printable shell thickness differs from original 6 cm RC shell.",
+    "2021 panorama has later lower-level infill/door changes, intentionally not copied into this historical design model. Not 2026 current condition.",
+    "Window/sash, rails, finish colours and historic plaque are simplified; plaque lettering is not asserted readable.",
+    "Authored plinth/site support is not surveyed terrain; hidden rooms and reinforcement omitted.",
+    "No trial print, no support-free-printing guarantee; water-tightness is a separate geometry QA, not established by visual review."
+  ],
+  "remaining_major_visual_corrections_in_reviewed_views": []
+}

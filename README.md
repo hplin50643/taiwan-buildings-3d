@@ -1,8 +1,8 @@
 # 臺灣建築物 3D 模型
 
-依地點整理的臺灣建築外觀模型集，收錄 **687 組模型／列印包**：國立聯合大學 42 組（原38組加二坪山校名柱警衛亭、八甲站2單跨、站1弧形端段與南大門中央門牆共4組）、國家衛生研究院竹南院區 9 組、臺灣各地地標 60 組，另新增下列大專校院 568 組及高中模型 7 組及私立國際K12學校模型 1 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
+依地點整理的臺灣建築外觀模型集，收錄 **690 組模型／列印包**：國立聯合大學 42 組（原38組加二坪山校名柱警衛亭、八甲站2單跨、站1弧形端段與南大門中央門牆共4組）、國家衛生研究院竹南院區 9 組、臺灣各地地標 60 組，另新增下列大專校院 569 組及高中模型 9 組及私立國際K12學校模型 1 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
 
-全庫有 **113 所大專校院至少一套模型**，合計 **611 套校園相關模型**；另有 **76 套非大專校園模型**。下方新增目錄為112校／568套，另計國立聯合大學42套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標59套不列入高教校數。
+全庫有 **113 所大專校院至少一套模型**，合計 **612 套校園相關模型**；另有 **78 套非大專校園模型**。下方新增目錄為112校／569套，另計國立聯合大學42套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標59套不列入高教校數。
 
 每個地點資料夾保留模型、可編輯原始檔、Blender 場景、實際模型預覽、來源說明與既有驗證資料。點選下方圖片，進入該地點的三欄建築圖鑑；個別模型的詳細資訊可展開查看。
 
@@ -16,7 +16,7 @@
 
 | 校園模型 | 校園模型 | 校園模型 |
 | :---: | :---: | :---: |
-| [<img src="國立臺灣大學/校總區/buildings/ntu-sports-center/appearance/previews/front.png" alt="國立臺灣大學實際模型預覽" width="260">](國立臺灣大學/README.md)<br>**[國立臺灣大學｜52 組](國立臺灣大學/README.md)** | [<img src="國立成功大學/力行校區/buildings/magic-school-green-technologies/previews/front.png" alt="國立成功大學｜孫運璿綠建築研究大樓實際模型預覽（早期外觀近似）" width="260">](國立成功大學/README.md)<br>**[國立成功大學｜47 組](國立成功大學/README.md)** | [<img src="國立臺東大學/知本校區/buildings/zhiben-humanities-plaza-complex/previews/front.png" alt="國立臺東大學｜人文學院廣場側棟群暨演藝廳實際模型預覽（廣場側片段）" width="260">](國立臺東大學/README.md)<br>**[國立臺東大學｜11 組](國立臺東大學/README.md)** |
+| [<img src="國立臺灣大學/校總區/buildings/ntu-sports-center/appearance/previews/front.png" alt="國立臺灣大學實際模型預覽" width="260">](國立臺灣大學/README.md)<br>**[國立臺灣大學｜52 組](國立臺灣大學/README.md)** | [<img src="國立成功大學/力行校區/buildings/magic-school-green-technologies/previews/front.png" alt="國立成功大學｜孫運璿綠建築研究大樓實際模型預覽（早期外觀近似）" width="260">](國立成功大學/README.md)<br>**[國立成功大學｜48 組](國立成功大學/README.md)** | [<img src="國立臺東大學/知本校區/buildings/zhiben-humanities-plaza-complex/previews/front.png" alt="國立臺東大學｜人文學院廣場側棟群暨演藝廳實際模型預覽（廣場側片段）" width="260">](國立臺東大學/README.md)<br>**[國立臺東大學｜11 組](國立臺東大學/README.md)** |
 | [<img src="國立中央大學/鹿林天文台觀測基地/buildings/ncu-lulin-slt-main-building/previews/front.png" alt="國立中央大學實際模型預覽" width="260">](國立中央大學/README.md)<br>**[國立中央大學｜23 組](國立中央大學/README.md)** | [<img src="景文科技大學/校本部/buildings/just-design-l/previews/front.png" alt="景文科技大學實際模型預覽" width="260">](景文科技大學/README.md)<br>**[景文科技大學｜7 組](景文科技大學/README.md)** | [<img src="美和科技大學/校本部/buildings/meiho-renfa/previews/front.png" alt="美和科技大學實際模型預覽" width="260">](美和科技大學/README.md)<br>**[美和科技大學｜8 組](美和科技大學/README.md)** |
 | [<img src="萬能科技大學/校本部/buildings/vnu-fitness-ph/previews/front.png" alt="萬能科技大學實際模型預覽" width="260">](萬能科技大學/README.md)<br>**[萬能科技大學｜7 組](萬能科技大學/README.md)** | [<img src="中華醫事科技大學/校本部/buildings/hwai-nursing-j/appearance/previews/front.png" alt="中華醫事科技大學｜J 護理大樓實際模型預覽（限域配色）" width="260">](中華醫事科技大學/README.md)<br>**[中華醫事科技大學｜5 組](中華醫事科技大學/README.md)** | [<img src="國立中山大學/西子灣校區/buildings/nsysu-bridge-pavilion/previews/front.png" alt="國立中山大學實際模型預覽" width="260">](國立中山大學/README.md)<br>**[國立中山大學｜5 組](國立中山大學/README.md)** |
 | [<img src="國立中正大學/民雄校本部/buildings/ccu-administration-complex/previews/front.png" alt="國立中正大學實際模型預覽" width="260">](國立中正大學/README.md)<br>**[國立中正大學｜5 組](國立中正大學/README.md)** | [<img src="國立中興大學/校本部/buildings/nchu-administration-front/previews/front.png" alt="國立中興大學實際模型預覽" width="260">](國立中興大學/README.md)<br>**[國立中興大學｜5 組](國立中興大學/README.md)** | [<img src="國立嘉義大學/民雄校區/buildings/ncyu-minxiong-university-hall/previews/front.png" alt="國立嘉義大學實際模型預覽" width="260">](國立嘉義大學/README.md)<br>**[國立嘉義大學｜4 組](國立嘉義大學/README.md)** |
@@ -125,8 +125,16 @@
 
 ## 私立國際K12學校建築研究模型
 
-與前述5所高中7套分開分類，亦不計入高教機構或高教模型統計。
+與前述7所高中9套分開分類，亦不計入高教機構或高教模型統計。
 
 - [高雄美國學校｜1 套](高雄美國學校/README.md)：Thomas Farrell運動中心2016竣工供圖外觀，代表圖待指定。
 
 本件僅含自行重建幾何與模型渲染，不附來源原圖／原照片；公開可讀不等於任意再散布或商用授權。建築設計與攝影權利仍歸原權利人，不由同庫其他素材或通用授權推定本案建築設計／照片的使用權。 [本件來源與使用說明](高雄美國學校/校本部/buildings/kas-farrell-athletic-complex-2016/SOURCE-RIGHTS.md)。
+
+## 新增歷史圖面外觀研究模型
+
+設計者、典藏來源與原圖CC BY-NC標示保留，來源頁未明示版本；原圖像權利與自行編寫程式／重建模型分開說明，不因來源標示而一概將整包模型限制為非商業，也不宣稱已取得原建築設計或原圖的無限制商用權利。原照片、圖紙、PDF與私人參考資料不隨公開包配送；所有模型未實體試印。
+
+- [國立成功大學｜光復操場司令台｜1981原圖外觀](國立成功大學/光復校區/buildings/ncku-guangfu-grandstand-1981/README.md)：1981原建築圖外觀近似，不是竣工測繪或2026現況；HP曲率與薄殼厚度為參數化／列印近似，不含地下構造、隱藏房間或鄰接看台。
+- [臺北市私立泰北高級中學｜重光樓｜工號7307竣工圖版](臺北市私立泰北高級中學/校本部/buildings/taibei-chongguang-asbuilt-7307/README.md)：依圖框標示竣工圖的工號7307重建；校史1988年改建記載不是圖框日期，不從工號推算年分；地下層局部與示意地坪範圍以模型README為準，不是2026現況。 新校代表圖待使用者指定。
+- [國立南投高級中學｜南投中學綜合禮堂｜1964原設計圖版](國立南投高級中學/校本部/buildings/nantou-school-hall-design-1964/README.md)：陳其寛／中國建築師事務所工號5218、1964年4月原設計圖；尚未證實同形實際建成，不直接稱中正堂，不混1989中正大樓或1990活動中心，非現況測繪。 新校代表圖待使用者指定。

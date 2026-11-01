@@ -1,0 +1,2301 @@
+{
+  "palette": [
+    {
+      "id": "brick",
+      "name": "Brick tile exterior",
+      "hex": "#A5644F",
+      "evidence": "Original elevations specify terracotta tiles; official campus panorama corroborates illustrative hue"
+    },
+    {
+      "id": "concrete",
+      "name": "Concrete and washed-stone trim",
+      "hex": "#C5C1AC",
+      "evidence": "Original elevations annotate exposed concrete / white washed stone; approximate material hue"
+    },
+    {
+      "id": "metal",
+      "name": "Pale railing metal",
+      "hex": "#DDDCD3",
+      "evidence": "Original detail drawings; illustrative light finish"
+    },
+    {
+      "id": "glass",
+      "name": "Opaque window backing",
+      "hex": "#53615F",
+      "evidence": "Opaque backing for printable exterior, not interior reconstruction"
+    },
+    {
+      "id": "base",
+      "name": "Authored support and grade block",
+      "hex": "#B3B0A0",
+      "evidence": "Authored support with section-supported relative east-side raised grade"
+    }
+  ],
+  "features": [
+    {
+      "name": "Authored flat plinth",
+      "material": 4,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rectangular HP canopy column -20",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Four-quadrant HP canopy -20",
+      "material": 1,
+      "evidence": "24 bilinear HP patches, approximate curvature from original plans/sections and official 2021 panorama; not surveyed shell"
+    },
+    {
+      "name": "Raised central column-head -20",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rectangular HP canopy column -12",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Four-quadrant HP canopy -12",
+      "material": 1,
+      "evidence": "24 bilinear HP patches, approximate curvature from original plans/sections and official 2021 panorama; not surveyed shell"
+    },
+    {
+      "name": "Raised central column-head -12",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rectangular HP canopy column -4",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Four-quadrant HP canopy -4",
+      "material": 1,
+      "evidence": "24 bilinear HP patches, approximate curvature from original plans/sections and official 2021 panorama; not surveyed shell"
+    },
+    {
+      "name": "Raised central column-head -4",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rectangular HP canopy column 4",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Four-quadrant HP canopy 4",
+      "material": 1,
+      "evidence": "24 bilinear HP patches, approximate curvature from original plans/sections and official 2021 panorama; not surveyed shell"
+    },
+    {
+      "name": "Raised central column-head 4",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rectangular HP canopy column 12",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Four-quadrant HP canopy 12",
+      "material": 1,
+      "evidence": "24 bilinear HP patches, approximate curvature from original plans/sections and official 2021 panorama; not surveyed shell"
+    },
+    {
+      "name": "Raised central column-head 12",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rectangular HP canopy column 20",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Four-quadrant HP canopy 20",
+      "material": 1,
+      "evidence": "24 bilinear HP patches, approximate curvature from original plans/sections and official 2021 panorama; not surveyed shell"
+    },
+    {
+      "name": "Raised central column-head 20",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Canopy edge upstand",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Canopy edge upstand",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Canopy end edge",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Canopy end edge",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Ground-floor room outer envelope with arched recesses",
+      "material": 0,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original west arched stone trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed plaster wall behind west arcade",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original west arched stone trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed plaster wall behind west arcade",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original west arched stone trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed plaster wall behind west arcade",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original west arched stone trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed plaster wall behind west arcade",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original west arched stone trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed plaster wall behind west arcade",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original west arched stone trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original small end door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original west arched stone trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original small end door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed original door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Door central stile",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed original door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Door central stile",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed original door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Door central stile",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed original door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Door central stile",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed original door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Door central stile",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original high window",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High window transom",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High window transom",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original high window",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High window transom",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High window transom",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original high window",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High window transom",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High window transom",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original high window",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High window transom",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High window transom",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original narrow window",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original narrow window",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Visible central internal stair",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Authored raised east grade support",
+      "material": 4,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Second-level floor slab",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central rear entrance floor",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East lower wing -1",
+      "material": 0,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing arch trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing opaque glazing",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing arch trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing opaque glazing",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing arch trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing opaque glazing",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Low wing concrete tiled roof -1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East lower wing 1",
+      "material": 0,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing arch trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing opaque glazing",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing arch trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing opaque glazing",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing arch trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East wing opaque glazing",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East window frame",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Low wing concrete tiled roof 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Representative concrete tile seam",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central east entry hall exterior",
+      "material": 0,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central entry arch trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Recessed plaster entry arch backing",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original recessed double entry door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Entry door centre stile",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central entry arch trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rear secondary door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central entry arch trim",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rear secondary door",
+      "material": 3,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East entrance step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East entrance step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East entrance step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East entrance step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East entrance step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "East entrance step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 1 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 2 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 3 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 4 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 5 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 6 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 7 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 8 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 9 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 10 wing 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rear high walkway 0",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 1 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 2 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 3 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 4 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 5 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 6 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 7 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 8 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 9 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Tier 10 wing 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Rear high walkway 1",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Aisle half-step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central west projecting platform",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central raised dais",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central side passage step",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central rear high walkway",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Sloping exterior end wall",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Sloping exterior end wall",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Front low parapet",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Front low parapet",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West walkway rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central low platform rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Raised central dais rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Raised central dais rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Raised central dais rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Raised central dais rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Raised central dais rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Raised central dais rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Raised central dais rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Raised central dais rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Raised central dais rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail horizontal",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "High rear seating rail upright",
+      "material": 2,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West open-underneath stair slab",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West stair foot",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West stair brick cheek",
+      "material": 0,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West stair coping",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West open-underneath stair slab",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West stair foot",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West stair brick cheek",
+      "material": 0,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "West stair coping",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Low-wing sloping roof bearing volume",
+      "material": 0,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Low-wing sloping roof bearing volume",
+      "material": 0,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Central rear ceremonial screen",
+      "material": 0,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    },
+    {
+      "name": "Original blank central inscription panel",
+      "material": 1,
+      "evidence": "Original architectural drawing, proportional simplified exterior detail"
+    }
+  ]
+}
