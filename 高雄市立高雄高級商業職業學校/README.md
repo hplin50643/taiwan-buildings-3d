@@ -4,9 +4,9 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/ksvcs-main-campus-dormitory-undated-design/preview.png" alt="高雄高商本校單戶宿舍未定年原設計實際模型渲染" width="220">](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/README.md)<br>**[本校單戶宿舍｜未定年原設計](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/README.md)**<br>[STL](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/model.stl) · [彩色3MF](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/model.3mf) · [Blender](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/scene.blend) | [<img src="校本部/buildings/ksvcs-classroom-module-1957-design/preview.png" alt="1957竣工圖示教室／走廊局部截斷單元實際模型渲染" width="220">](校本部/buildings/ksvcs-classroom-module-1957-design/README.md)<br>**[教室／走廊單元｜1957竣工圖示／局部截斷](校本部/buildings/ksvcs-classroom-module-1957-design/README.md)**<br>[STL](校本部/buildings/ksvcs-classroom-module-1957-design/model.stl) · [彩色3MF](校本部/buildings/ksvcs-classroom-module-1957-design/model.3mf) · [Blender](校本部/buildings/ksvcs-classroom-module-1957-design/scene.blend) |  |
+| [<img src="校本部/buildings/ksvcs-main-campus-dormitory-undated-design/preview.png" alt="高雄高商本校單戶宿舍未定年原設計實際模型渲染" width="220">](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/README.md)<br>**[本校單戶宿舍｜未定年原設計](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/README.md)**<br>[STL](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/model.stl) · [彩色3MF](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/model.3mf) · [Blender](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/scene.blend) | [<img src="校本部/buildings/ksvcs-classroom-module-1957-design/preview.png" alt="1957竣工圖示教室／走廊局部截斷單元實際模型渲染" width="220">](校本部/buildings/ksvcs-classroom-module-1957-design/README.md)<br>**[教室／走廊單元｜1957竣工圖示／局部截斷](校本部/buildings/ksvcs-classroom-module-1957-design/README.md)**<br>[STL](校本部/buildings/ksvcs-classroom-module-1957-design/model.stl) · [彩色3MF](校本部/buildings/ksvcs-classroom-module-1957-design/model.3mf) · [Blender](校本部/buildings/ksvcs-classroom-module-1957-design/scene.blend) | [<img src="校本部/buildings/ksvcs-classroom-1963-four-storey-scheme/preview.png" alt="1963原四層方案：相關圖面有劃除記號、未確認實建，實際模型渲染" width="220">](校本部/buildings/ksvcs-classroom-1963-four-storey-scheme/README.md)<br>**[1963原四層方案｜相關圖面有劃除記號、未確認實建](校本部/buildings/ksvcs-classroom-1963-four-storey-scheme/README.md)**<br>[STL](校本部/buildings/ksvcs-classroom-1963-four-storey-scheme/model.stl) · [彩色3MF](校本部/buildings/ksvcs-classroom-1963-four-storey-scheme/model.3mf) · [Blender](校本部/buildings/ksvcs-classroom-1963-four-storey-scheme/scene.blend) |
 
-現行收錄 **2 套模型包**；不是全校建築數或全校完成。
+現行收錄 **3 套模型包**；不是全校建築數或全校完成。
 
 ## 收錄範圍
 
@@ -21,3 +21,7 @@
 ## 教室／走廊單元：1957竣工圖示／局部截斷
 
 陳仁和《省立高雄商業職業學校教室新建工程設計圖》CCRH11423001，含手寫竣工圖與1957-10-16判讀，保留模糊字跡限制。僅一間教室與前廊局部增建單元，不是獨立整棟，不增加獨立整棟建築計數。原有接口人工封面只是模型截斷製作面，不是歷史外牆，不補相鄰樓體。FL=GL+0.50m、主屋面支承GL+5.00m，屋頂±0.15m圖量／重建容差；中性材質、細框與隱藏構造簡化，非現況、未試印。
+
+## 1963原四層方案：相關圖面有劃除記號、未確認實建
+
+陳仁和教室新建工程原四層外觀方案，CCRH11423022–027六張A1–A6；部分日期為1963年11月，各張日期不同，A1／A2未確認獨立日期。第四層及相關圖面有劃除記號，未確認實建；不是三層修訂、核定終版、已證實實建整棟或現況測繪。叉記不建成構件，平屋頂不下移一層；不補鄰棟，不推定今日具名樓體。25×20m主軸、四層各3.40m與梯屋原方案控制保留，門窗約±0.10m圖量、構造及材質簡化，未試印。

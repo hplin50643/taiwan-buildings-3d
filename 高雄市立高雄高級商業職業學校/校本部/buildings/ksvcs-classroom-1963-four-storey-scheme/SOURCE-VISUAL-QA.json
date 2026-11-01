@@ -1,0 +1,63 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_CROSSED_FOUR_STOREY_HISTORICAL_SCHEME_LIMITS",
+  "reviewed_at_utc": "2026-11-01T18:25:43.358818+00:00",
+  "version": "build-v5/render-v2; renderlog confirmed Blender quit",
+  "mesh_sha256": "d62f113a20e51170800bb6588a62e5a1f190e5eda13f12a6ad915f539bc89539",
+  "artifact_sha256": {
+    "build_model.py": "40cd1774d2c6abff80602d2e15f7c4437155df0270ff4e3aa4edb0750e577948",
+    "render_model.py": "05cdd348d32d1bccc4faf119f0f1bde20f1609a36c0c83622bb8e26557a6be9b",
+    "README.md": "929ef4b2bb11eaeb93d83a5c279dbffbd03f51009e754327311adcb9a4b5903f",
+    "SOURCE-CONTROLS-SUMMARY.json": "1a7a313d94cfce000b22c3b22b9394a99a91d41250f8f1f33fc478c296163caf"
+  },
+  "private_source_review_sha256": "3555184e9053ab136fa70c88130aad1cfc9a34d801a2be379d10c967d2a127c7",
+  "png_sha256": {
+    "preview.png": "87fb58570da04a758d5f0dfcf16cf2c4e75e335d4ed101433b52647d6b3342f6",
+    "rear.png": "7eb83732a19446b50d382f166912ccb5641f8c2d449200b27477ffe5566c74aa",
+    "south.png": "f2817aab214a61eeee945b5043e48ba2a6e9f15337ac7e8dbbad2c3bbe7624ad",
+    "north.png": "368a0ad765b97525060c6d0f8368e88d4ec7357a9cf82b809a817dc84e3633d5",
+    "west.png": "10ecb920578f76ec76bfe575cc22dda5854d35f5beb9aab63e209fac893468d7",
+    "east.png": "7f797ecd86a9257b55fee406c2467c8e9a9d8d8643fd65c11bac7573a0ae4629",
+    "top.png": "4ca1bac0dfeef3e109827a738f3c0b305178261526ddffce6488bc9e1e84b83f",
+    "entrance-detail.png": "29b030c137e12db498f078b101ba072ff60f18ae8638d6f27d322edf4c7f823f",
+    "north-core-detail.png": "7d2472c6e6c94c0a8eb3672bc226e3309db513351fe06498704d31d71d63d569",
+    "roof-detail.png": "a04307339f36c7e7ba2a76043ed7f59c4a10bd59604376980ac27990889a4c90"
+  },
+  "image_observations": {
+    "preview": "Full framed four-storey scheme, asymmetric west/south second-floor projection and flat rooftop core visible; historical warning readable.",
+    "rear": "Full framed north/east view;1/2F glazing versus3/4F plain groups and near-core doors distinct.",
+    "south": "Full south elevation, four storeys and distinct second-floor rail relief; shadowed but grids readable.",
+    "north": "Full north elevation; corrected2F dense windows, upper plain groups and narrow doors, core five paired opening levels visible.",
+    "west": "Full five-bay west facade, second-floor projecting platform, upper window groups; no false diagonal structural cross.",
+    "east": "Full five-bay east facade distinct from projecting west platform.",
+    "top": "Full roof footprint, flat roof/parapet, elongated north core correctly located; no invented curved roof.",
+    "entrance-detail": "Intentional cropped detail: three exposed tread planes to fourth landing, broad entry, lower rail relief and upper panels readable.",
+    "north-core-detail": "Intentional cropped detail: paired core square/slit openings, near-core high doors and north2F glazing transition readable.",
+    "roof-detail": "Intentional cropped detail: flat main roof, south-facing rooftop door and long core cap; no apparent false crack or disconnected roof."
+  },
+  "independent_mesh_checks": {
+    "triangles": 73956,
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 2386254.492010155
+  },
+  "source_controls_reviewed": [
+    "25x20m axes, unequal second-floor and upper slab projections",
+    "GL.65+4x3.40=RF14.25; parapet15.25; rooftop16.85",
+    "Stairroof5.70x11.45 atx9.65..15.35,y10.05..21.50",
+    "North1/2F dense glazing vs3/4F plain groups plus narrow inner doors, not mirrored south",
+    "Source entrance3x35cm exposed treads,width5.70;4equal rises are coordinated inference",
+    "A1-A6 cross-marked4F scheme retained as source interpretation, not built/amended/approved claim"
+  ],
+  "limitations": [
+    "Seven full views fully framed;three details intentionally cropped.",
+    "All10 images visibly carry historical cross-mark warning; no source raster included.",
+    "Window placements/grid and decorative bands simplified within stated graphical allowance; A5/A6 lower timber-panel materials not fully integrated by type.",
+    "Solid closed exterior omits interiors, structural ribs/reinforcement and survey details.",
+    "Neutral rendering colors are not verified historical materials.",
+    "Do not count as confirmed built whole building; no official cancellation meaning inferred.",
+    "1:150 fine frames not physically print-tested; mesh closure is not manufacturing or engineering certification.",
+    "Format/rebuild/scene-reopen tests separately owned by builder."
+  ],
+  "freeze_recommendation": "READY_FROM_INDEPENDENT_SOURCE_VISUAL_REVIEW"
+}

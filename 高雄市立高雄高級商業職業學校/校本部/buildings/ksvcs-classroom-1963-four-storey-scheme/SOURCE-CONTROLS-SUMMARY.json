@@ -1,0 +1,70 @@
+{
+  "scope": "1963原四層圖示設計方案（第四層及相關圖面有後續劃除記號，未確認實建）。不是三層修訂、核定終版、現況或已證實實建整棟。",
+  "crossouts": {
+    "A1": "entire4Fplan",
+    "A2": "4Fceilingplan",
+    "A3": "4F band in four elevations",
+    "A4": "upper4F/stair/roof section",
+    "A5_A6": "top4F section band",
+    "meaning": "No separate revision legend proving official cancellation; preserve marks as archival caveat, not geometry. Full original-four-layer contour remains readable. Never move rooftop to3F without revised source."
+  },
+  "geometry_direct_m": {
+    "main_axes": [
+      25,
+      20
+    ],
+    "x_bays": [
+      10,
+      5,
+      10
+    ],
+    "y_bays": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "FL_GL": 0.65,
+    "floor_to_floor": 3.4,
+    "number_storeys": 4,
+    "RF_GL": 14.25,
+    "parapet_GL": 15.25,
+    "stair_rooftop_GL": 16.85,
+    "RF_to_stair_top": 2.6,
+    "RF_to_parapet": 1.0,
+    "second_slab_plan": [
+      28.05,
+      24.55
+    ],
+    "second_west_extension": 3.05,
+    "second_south_extension": 3.05,
+    "north_balcony_extension": 1.5,
+    "upper_third_fourth_roof_plan": [
+      25,
+      23
+    ],
+    "upper_south_extension": 1.5,
+    "stair_roof_plan": [
+      5.7,
+      11.45
+    ]
+  },
+  "roof_correction": {
+    "withdrawn": "Long curved roof/curved soffit beam inferred from diagonal lines",
+    "corrected": "Main roof top and principal fascia/beam bottoms are horizontal. Diagonal long strokes are cancellation crosses, passing through windows and entire storey, NOT built geometry. A5 local cantilever underside tapers only at edge. No full-span curved roof or curved beam warranted.",
+    "verification": "Actual enlargedA3front/side andA5/A6sections; three independent pictures distinguish straight roof thinlines from dark crossing strokes."
+  },
+  "exterior_controls": {
+    "facades": "A3 allfourorientations; front explicitlysouth, backnorth, leftwest, righteast. Do not mirror north/south openings.",
+    "window_groups": "East/west five400cm bays/floor. South1F broadgroups; uppersouth retains sidepanels/transoms. North1F/2F densewindowgroups,2Fsidepanels; north3F/4F plainpanelgroups plus narrowtallopeningsnearcore. Exactfineframe/materialdetails are graphically interpreted, not completewindowschedule integration.",
+    "stair_core": "A1/A2roof andA4stair section support5.7x11.45roofplan and+2.6height; roofisflat, notpyramid. A4upper418 is fromintermediate landing, not standalone roofheight.",
+    "balconies": "Keepopenfront/back balconyvolumes, masonryrail pattern andwestsecond-floorplatform asymmetry visible fromA1/A2/A3."
+  },
+  "bounded_estimates": [
+    "Window/frame placement and ornamental rail courses not all individually dimensioned: use facade raster controls with ±.10m declared reading allowance, do not call survey precision.",
+    "Main thinroof slab/finish and soffit retain A5/A6 external profile; concealed ribs/rebar omitted for closed exterior printing.",
+    "Originalmaterial colors not verified; neutral scheme is illustrative.",
+    "Do not reproduce crossed-out strokes as buildingmembers."
+  ]
+}
