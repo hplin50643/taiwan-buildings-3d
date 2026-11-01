@@ -4,9 +4,9 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/ksvcs-main-campus-dormitory-undated-design/preview.png" alt="高雄高商本校單戶宿舍未定年原設計實際模型渲染" width="220">](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/README.md)<br>**[本校單戶宿舍｜未定年原設計](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/README.md)**<br>[STL](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/model.stl) · [彩色3MF](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/model.3mf) · [Blender](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/scene.blend) |  |  |
+| [<img src="校本部/buildings/ksvcs-main-campus-dormitory-undated-design/preview.png" alt="高雄高商本校單戶宿舍未定年原設計實際模型渲染" width="220">](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/README.md)<br>**[本校單戶宿舍｜未定年原設計](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/README.md)**<br>[STL](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/model.stl) · [彩色3MF](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/model.3mf) · [Blender](校本部/buildings/ksvcs-main-campus-dormitory-undated-design/scene.blend) | [<img src="校本部/buildings/ksvcs-classroom-module-1957-design/preview.png" alt="1957竣工圖示教室／走廊局部截斷單元實際模型渲染" width="220">](校本部/buildings/ksvcs-classroom-module-1957-design/README.md)<br>**[教室／走廊單元｜1957竣工圖示／局部截斷](校本部/buildings/ksvcs-classroom-module-1957-design/README.md)**<br>[STL](校本部/buildings/ksvcs-classroom-module-1957-design/model.stl) · [彩色3MF](校本部/buildings/ksvcs-classroom-module-1957-design/model.3mf) · [Blender](校本部/buildings/ksvcs-classroom-module-1957-design/scene.blend) |  |
 
-現行收錄 **1 套模型包**；不是全校建築數或全校完成。
+現行收錄 **2 套模型包**；不是全校建築數或全校完成。
 
 ## 收錄範圍
 
@@ -17,3 +17,7 @@
 保留設計者與國立臺灣博物館典藏來源；原圖權利與本次模型／程式／渲染分開，不附原圖、裁圖或私人參考備份，不宣稱不受限制商用。
 
 [校本部圖鑑](校本部/README.md) · [回總目錄](../README.md)
+
+## 教室／走廊單元：1957竣工圖示／局部截斷
+
+陳仁和《省立高雄商業職業學校教室新建工程設計圖》CCRH11423001，含手寫竣工圖與1957-10-16判讀，保留模糊字跡限制。僅一間教室與前廊局部增建單元，不是獨立整棟，不增加獨立整棟建築計數。原有接口人工封面只是模型截斷製作面，不是歷史外牆，不補相鄰樓體。FL=GL+0.50m、主屋面支承GL+5.00m，屋頂±0.15m圖量／重建容差；中性材質、細框與隱藏構造簡化，非現況、未試印。

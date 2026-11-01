@@ -1,0 +1,108 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_PARTIAL_MODULE_AND_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_at_utc": "2026-11-01T17:23:32.558233+00:00",
+  "scope": "1957 drawing-based single classroom/corridor partial module, NOT independent whole building or current survey",
+  "geometry_version": "build-v8",
+  "render_version": "render-v2",
+  "mesh_sha256": "18aef376a1878b2140b35038033d9e0d0312ae87d0e7852c74f32b00105622c0",
+  "artifact_sha256": {
+    "build_model.py": "9fc8e1eb53d5651ebe8b6980a5a146d142b6cc73258fe73c037e864e3b9cad68",
+    "render_model.py": "95cdeec3448a4f2ef4c5b9c63ee0937002d6f962f50fae38d710aef1b5ef6487",
+    "README.md": "2683fc94db06a014054854f26e248e246cb65f99655374304bc830b052237eff"
+  },
+  "private_source_controls_sha256": "2f36531ab0af4f206973aaacf1bed1800d668c3fbe01f7b753464d6096a1a4aa",
+  "private_source_policy": "Detailed source review/scans/crops private; no original pixels embedded here.",
+  "png_sha256": {
+    "preview.png": "5b8a4c9085795d8c10300dd1fe99c46d8cb9bb4f85bf984ea5c87b09a8737dd1",
+    "rear.png": "a8ce30c387db83c68e2d546fb034e7ece31780a6c4ead818aeff8d3d39a581e7",
+    "north.png": "81c7782fec50f5816609015f9d30b5c947ebe7aa009293c1f71ffb09b36f89b4",
+    "south.png": "fa47643f6f4341fbb7b5201018b16a20ce296ca0cb0b364c859b7dc0a2dfd35d",
+    "east.png": "59e7a0aa4d6de9590972ce167c59e0c3ac07f6eedcc17c76d9687043aada59d3",
+    "west.png": "0d9fafd5a5b3882d8bda2ca8e90dbda63c15d4862a85c39c23a20566701b56b4",
+    "top.png": "281da9003c11ffee057b7e9baedb43ef218f7bba554f8631fbb3b3367cf81e9f",
+    "entrance-detail.png": "1b28101f0fa4c4efcdf0d500d6596916d8f74674cc15338821dd32bc3bf8b134",
+    "gable-detail.png": "defb0c1b11f1a5d7d90e569f21214f100df8fe673a0dfb963ae7a6cfb9c693bf",
+    "roof-detail.png": "3d75b4bf7f054326d1a0f2436faf89e2070dcbb8aeda06ab519fabb347bc6db5"
+  },
+  "per_image_review": [
+    {
+      "image": "preview.png",
+      "result": "PASS",
+      "observation": "Complete non-interface overview: open four-support corridor, separate lower roof and blank gable with two vents. Beam no longer penetrates slope."
+    },
+    {
+      "image": "rear.png",
+      "result": "PASS",
+      "observation": "Complete reverse overview: three rear window groups and clearly contrasting authored cut plane, not a fabricated historical facade."
+    },
+    {
+      "image": "north.png",
+      "result": "PASS",
+      "observation": "Complete rear elevation: three four-leaf window groups, fine panes and solid boarded lower aprons visible."
+    },
+    {
+      "image": "south.png",
+      "result": "PASS",
+      "observation": "Complete front elevation: door-window-door, upper door transoms, open corridor support rhythm; eave shadow does not obscure identification."
+    },
+    {
+      "image": "east.png",
+      "result": "PASS",
+      "observation": "Complete authored cut-plane view: plain contrasting fill only, main/corridor roofs and final half-column cut consistently. No ornamental end/fictitious openings."
+    },
+    {
+      "image": "west.png",
+      "result": "PASS",
+      "observation": "Complete non-interface end: main gable and separate lean-to, two narrow vents and otherwise blank wall."
+    },
+    {
+      "image": "top.png",
+      "result": "PASS",
+      "observation": "Complete roof plan: distinct main pitched roof/corridor strip and common right cutoff."
+    },
+    {
+      "image": "entrance-detail.png",
+      "result": "PASS",
+      "observation": "Intentional close-up: door transoms, central window, boarded apron and corridor visible; no false glazing-to-floor interpretation."
+    },
+    {
+      "image": "gable-detail.png",
+      "result": "PASS",
+      "observation": "Intentional gable close-up: two30x60 nominal vents at revised center5.45, capped mainroof and separate corridor junction readable."
+    },
+    {
+      "image": "roof-detail.png",
+      "result": "PASS",
+      "observation": "Intentional roof close-up: differing slopes/heights and plain cutoff visible, no long rectangular beam extrusion through lower roof."
+    }
+  ],
+  "method": "All ten final individual PNGs directly inspected (first two whilefinalv2running, remainingeight aftercompletion); render-v2 confirmed Blender quit. Seven whole-module views retainframe margins; three details intentionally crop surrounding parts.",
+  "independent_mesh_check": {
+    "faces": 6728,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 4117580.193012256
+  },
+  "source_code_checks": [
+    "Scope limited atsource-marked existinginterface x9.60,roof/ridge/lastcolumn cut together; authoredplainclosure separatelycolored",
+    "Mainaxes960x780,corridor270,three320bays/fourfrontsupports",
+    "FL50+450=>supportGL5.00,ridgeframe6.755; oldGL4.50/6.255 readings excluded",
+    "Main4.5:10versuscorridor3.5:10,separate lowerjunction4.645,main skin6.800at ridge",
+    "Corridortip3.478 differsraster3.348by.130 within adopted.15 tolerance; not claimedperfectpixelagreement",
+    "Supportbeam/posts clipped tocz(y)-.06,inside8cmroofskin by2cm; no protruding rectangular ridge",
+    "Door140,W135+10+135,frontdoor-W-door/rear3W;lowwoodenapronsnotglass",
+    "Two30x60gablevents movedtoGL5.15..5.75,explicitwritten-sizepriorityversusgraphicheightdifference",
+    "Surfacecolors,roofseams/hiddenframesandcap simplifiedasREADME states"
+  ],
+  "limitations": [
+    "Partial/additionmodule,notfullschoolordetachedcompletebuilding;noindependent-buildingcountincrease.",
+    "1957-10-16dateisqualifiedhandwrittenarchivalreading;notcurrent/asbuiltsurveyverification.",
+    "Generic side-to-noninterface-endmappingisanexplicitinference;neighborandinterfacehistoricalfinish excluded.",
+    "Roofprofile.15m toleranceisanadoptedinterpretationbound,notfieldaccuracy;main/corridorgraphic scalesdiffer.",
+    "Windowverticalplacementapprox.10m,ventcenterandcapgraphical;writtensizeprioritized overinconsistentpixels.",
+    "Opaqueclosedexterior/backedglazing;interiortrusses/layout/blackboard/foundationsandundimensionedroofseamsomitted.",
+    "No physicalprinttest,structuralsafety,supportfreeprintingorcommercialrights guarantee;authoredbase notterrain."
+  ],
+  "blocking_findings": []
+}

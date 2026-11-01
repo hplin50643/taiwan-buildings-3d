@@ -1,0 +1,124 @@
+{
+  "geometry_controls_m": {
+    "longitudinal_axes": 9.6,
+    "longitudinal_bays": [
+      3.2,
+      3.2,
+      3.2
+    ],
+    "main_transverse_axes": 7.8,
+    "main_half_span": 3.9,
+    "corridor_axes": 2.7,
+    "ridge_rise": 1.755,
+    "room_floor_GL": 0.5,
+    "corridor_floor_GL": 0.4,
+    "transverse_eave_projection": 0.635,
+    "main_roof_slope_rise_per10": 4.5,
+    "corridor_roof_slope_rise_per10": 3.5,
+    "main_floor_to_eave_support": 4.5,
+    "main_support_GL": 5.0,
+    "nominal_ridge_frame_control_GL": 6.755,
+    "corridor_outer_support_GL": 3.7
+  },
+  "height_errata": {
+    "withdrawn": [
+      "main eave/support GL4.50m",
+      "ridge GL6.255m",
+      "625.5cm reading",
+      "14.5cm apparent corridor-to-main discrepancy based on incorrectdatum"
+    ],
+    "corrected": "450cm chain visibly begins at roomFL, with separate50cm toGL. Overall dimension reads675.5cm;50+450+175.5=675.5. Main supportGL5.00m, nominalridgecontrolGL6.755m. Parent independently confirmed enlarged pixels.",
+    "roof_skin_caution": "These are dimensional frame/support controls, not a guarantee every outer roofskin/cap surface equals them."
+  },
+  "roof_profile_review": {
+    "source_pixels": [
+      2721,
+      1439
+    ],
+    "approx_anchors": {
+      "GL_y": 1202,
+      "room_FL_y": 1180,
+      "main_support_y": 978,
+      "nominal_ridge_plane_y": 900,
+      "ridge_cap_highest_y": 886,
+      "main_left_axis_x": 350,
+      "main_right_axis_x": 696,
+      "corridor_outer_axis_x": 222
+    },
+    "vertical_checks_px_per_m": {
+      "FL_to450_support": 44.888888888888886,
+      "GL_to675_5_ridge": 44.70762398223538
+    },
+    "horizontal_checks_px_per_m": {
+      "main780_axis": 44.35897435897436,
+      "corridor270_axis": 47.407407407407405
+    },
+    "finding": "Main vertical baselines agree within0.4%; corridor versus main horizontalgraphic scales differ about7%. Do not use one global isotropic scale. Writtendimensions prevail and eachspan must be located separately.",
+    "corridor_roof_skin_points_original_px": {
+      "outer_eave_tip": [
+        190,
+        1052
+      ],
+      "over_outer_post": [
+        222,
+        1041
+      ],
+      "main_wall_intersection": [
+        350,
+        997
+      ]
+    },
+    "corridor_roof_skin_approx_GL_m_using44_8px_per_m": {
+      "outer_eave_tip": 3.348,
+      "over_outer_post": 3.594,
+      "main_wall_intersection": 4.576
+    },
+    "use_of_points": "These are illustrative raster-profile picks, NOT replacements for written supportlevels. Fit local graphic shape to separatelydimensioned270span/supportchain, retaining observedoffsets and documented tolerance; do not average main/corridor datum to manufacture equality.",
+    "reconstruction_tolerance_m": 0.15,
+    "tolerance_meaning": "Adopted reading/modeling tolerance for graphicalroofskin/offsets, not field-surveyerror or whole-sheetaccuracyguarantee.",
+    "ridge_cap": "Small top ornament appears aroundy886 versusnominalridge900; indicativecapmax~GL7.05m with same±.15m tolerance. May simplify/omit ornament with disclosure rather than assert exact capheight.",
+    "source_of_unresolved_small_offsets": "Original drawing/smallraster differs byseveralpixels and memberthickness; not allskin offsets are explicitly dimensioned."
+  },
+  "corridor_datum_caution": {
+    "drawn_outer_support_GL_m": 3.7,
+    "side_chain": "corridorFL40cm plus330cm clear/supportheight",
+    "pitch": 0.35,
+    "span_m": 2.7,
+    "nominal_high_support_m_derived": 4.645,
+    "relationship_to_main": "4.645 is35.5cm below mainGL5.00 support, consistent with separate lower lean-to meeting mainwall; no14.5cm discrepancy remains afterFL correction.",
+    "method": "Keep support/reference lines distinct from roofskin thickness. Use separate side/section profile for skin/join offsets; no forced flush junction at5.00.",
+    "precision": "No hidden construction thickness inferred beyondvisibleprofile; documented raster estimates permitted within bounds below."
+  },
+  "interface_review": {
+    "right_plan": "Clearly labelled原有 at rightmost terminal wall/axis. This is the excluded existing interface.",
+    "front_back_match": "Front elevation has原有 on its image-left edge, rear elevation on image-right; these opposite viewing directions are consistent with the same physical plan-right interface, not evidence of two different existing ends.",
+    "left_plan": "No corresponding原有 label; plan shows drawn end wall/structural line. A/B labels refer to interior wall/blackboard functions and do not themselves classify existing/new construction.",
+    "only_side_elevation": "Generic側面圖 supplies the solid gable end, two small upper vents and corridor end profile. Mapping it to the non-interface plan-left end is a documented inference from plan plus opposite-facing elevations, not a separate explicitly labelled left-side elevation.",
+    "adopted_cut": "Use the marked right terminal structural-axis plane x=9.60m as an authored model truncation limit; do not claim this plane is an actual exterior facade. Exclude neighboring volume and existing-wall finish. If necessary for watertight printing, plain section closure must be labelled authored section fill, not a surveyed wall or ornamental facade.",
+    "roof_at_cut": "Cut main roof and corridor lean-to at same declared interface boundary. Do not add a fictitious gable, bargeboard, windows, roof return, gutter termination or decorative end treatment there."
+  },
+  "implemented_graphic_limits": {
+    "main_skin_ridge_m": 6.8,
+    "main_skin_offset_from_frame_m": 0.045,
+    "corridor_skin_outer_axis_m": 3.7,
+    "corridor_skin_mainwall_m": 4.645,
+    "corridor_skin_eave_m": 3.47775,
+    "corridor_eave_difference_vs_raster_m": 0.12975,
+    "raster_allowance_m": 0.15,
+    "gable_vents_dimensions_m": [
+      0.3,
+      0.6
+    ],
+    "gable_vent_center_GL_graphic_m": 5.45,
+    "window_outer_GL_m": [
+      0.55,
+      3.3
+    ],
+    "door_outer_GL_m": [
+      0.5,
+      3.3
+    ],
+    "apron_solid_wood_top_GL_m": 1.1,
+    "manufacturing_cut_x_m": 9.6
+  }
+}

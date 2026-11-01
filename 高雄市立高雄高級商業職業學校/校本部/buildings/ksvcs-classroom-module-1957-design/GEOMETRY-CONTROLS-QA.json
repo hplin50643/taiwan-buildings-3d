@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": {
+    "main_roof680": true,
+    "two_main_slopes": true,
+    "corridor_join4645": true,
+    "corridor_tip3478": true,
+    "all_building_at_or_before_cut": true,
+    "four_corridor_posts": true,
+    "two_doors": true,
+    "two_gable_vents": true,
+    "solid_window_aprons": true,
+    "neutral_cut_material_present": true,
+    "four_window_groups": true,
+    "room_FL050": true,
+    "corridor_FL040": true,
+    "cap705": true,
+    "cut_material_only_on_cut_plane": true
+  },
+  "mesh_sha256": "18aef376a1878b2140b35038033d9e0d0312ae87d0e7852c74f32b00105622c0",
+  "direct_frame_GL_m": [
+    5.0,
+    6.755
+  ],
+  "skin_control_distinct": true,
+  "roof_raster_allowance_m": 0.15,
+  "scope": "Partial classroom and corridor module; authored interface cutoff, not detached complete building"
+}
