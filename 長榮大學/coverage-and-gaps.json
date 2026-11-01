@@ -8,7 +8,7 @@
   "map_date_from_filename": "2024-09-11",
   "map_location_labels": 38,
   "research_entries_prior": 16,
-  "counts_warning": "38為校圖地點，16為前次研究項；均非唯一建物總數。未確定總棟數，不計建模覆蓋率。",
+  "counts_warning": "38為校圖地點，16為前次研究項；均非唯一建物總數。未確定總棟數，不計建模覆蓋率。 現行6套模型包不等於6棟獨立建築；公共衛生學院1995原案與現代校內建物別名對應及按圖實施情況未證。",
   "source_urls": [
     "https://dweb.cjcu.edu.tw/ShepherdFiles/B0500/Album/Original/20240911100413147.jpg",
     "https://dweb.cjcu.edu.tw/general/album/2660",
@@ -26,7 +26,7 @@
       "classification": "樓館候選，需按實體棟界審查",
       "count_as_unique_building": false,
       "source_status": "official_map_and_official_exterior_photo",
-      "model_status": "正式封包已父視覺核准與獨立幾何/Blender稽核全綠；遠端發布由publisher確認",
+      "model_status": "既有外觀模型包已列公開索引；以該包README的來源年代及簡化範圍為準，不代表現況或全館測繪完成。",
       "gaps": [
         "已讀官方斜向外觀實拍；需更多方向及尺度核實"
       ],
@@ -40,7 +40,7 @@
       "classification": "樓館候選，需按實體棟界審查",
       "count_as_unique_building": false,
       "source_status": "official_map_and_official_exterior_photo",
-      "model_status": "正式封包已父視覺核准與獨立幾何/Blender稽核全綠；遠端發布由publisher確認",
+      "model_status": "既有外觀模型包已列公開索引；以該包README的來源年代及簡化範圍為準，不代表現況或全館測繪完成。",
       "gaps": [
         "已讀官方斜向外觀實拍；需更多方向及尺度核實"
       ],
@@ -89,7 +89,7 @@
       "classification": "樓館候選，需按實體棟界審查",
       "count_as_unique_building": false,
       "source_status": "official_and_architect_multiple_completed_photos",
-      "model_status": "正式封包已父視覺核准與獨立幾何/Blender稽核全綠；遠端發布由publisher確認",
+      "model_status": "既有外觀模型包已列公開索引；以該包README的來源年代及簡化範圍為準，不代表現況或全館測繪完成。",
       "gaps": [
         "2022完工；服務附屬量體進深近似。未移植竹桁架室內結構。"
       ],
@@ -218,7 +218,7 @@
       "classification": "樓館候選，需按實體棟界審查",
       "count_as_unique_building": false,
       "source_status": "official_front_portico_and_updated_roof_photographs",
-      "model_status": "正式封包已父視覺核准與獨立幾何/Blender稽核全綠；遠端發布由publisher確認",
+      "model_status": "既有外觀模型包已列公開索引；以該包README的來源年代及簡化範圍為準，不代表現況或全館測繪完成。",
       "gaps": [
         "主要外觀近似量體已有候選；後側長向立面、精確進深及光導罩數量仍未測繪。"
       ],
@@ -566,7 +566,7 @@
       "classification": "獨立構造物，非38號表列慎行鐘",
       "source": "https://dweb.cjcu.edu.tw/general/article/7920",
       "photo_source": "https://dweb.cjcu.edu.tw/ShepherdFiles/B0500/Album/Original/20240408114143807.jpg",
-      "model_status": "batch-03父視覺核准之地標構造物；producer全綠，等待獨立稽核與發布",
+      "model_status": "既有校門十字塔地標模型包已列公開索引；不是慎行鐘或一般樓館，不代表精確測繪。",
       "gap": "150mm高近似模型，散孔與構件厚度粗化；不算一般樓館，不與36慎行鐘合併。"
     },
     {
@@ -599,16 +599,32 @@
     }
   ],
   "next_batch_priorities": [
+    "公共衛生學院大樓1995歷史原案已有設計模型；續核與現代校內建物別名、分期實施及改建關係，不據此取消第一／第二教學大樓等現況研究，也不重複計為已確認獨立棟。",
     "第一教學大樓：官照可辨主立面長翼、山牆與挑空門洞，需後側及完整翼部實拍。",
     "第二教學大樓：官方可辨圓弧演藝廳入口，需院落与高層翼多角度；不得只做入口卻稱全館。",
-    "綜合體育館：正面圓弧及運動屋頂需多角度後側核對。",
+    "綜合體育館：既有外觀模型已列公開索引；多角度後側、尺度與現況核實仍可補強，不代表全館測繪完成。",
     "學生活動中心：門廊與曲面翼照片可用，補後側和完整曲面。",
     "第一至第四宿舍：確認三四舍的獨立棟界及立面樓層。",
     "工場、溫室、污水/河川保育中心、警衛室等小型建物：先找實拍與現況，再建模。"
   ],
-  "model_count": 5,
+  "model_count": 6,
   "model_count_by_kind": {
     "building_exterior_models": 4,
-    "landmark_structure_models": 1
-  }
+    "landmark_structure_models": 1,
+    "historical_original_design_studies": 1
+  },
+  "current_model_packages": 6,
+  "model_count_updated_date": "2026-11-01",
+  "model_count_by_kind_scope": "既有4套樓館外觀與1套地標構造模型為分類基線；另列1套公共衛生學院1995歷史設計研究，不推定是第6棟現存建物，也不擅與現代別名合併。",
+  "current_increment_packages": [
+    {
+      "slug": "cjcu-public-health-1995-design",
+      "name": "公共衛生學院大樓｜1995年歷史設計圖版",
+      "campus": "歸仁校本部",
+      "path": "歸仁校本部/buildings/cjcu-public-health-1995-design",
+      "scope": "吳明修建築師事務所長榮公共衛生學院大樓新建工程，1995年含5月修訂之完整第一／第二期歷史設計。非現況、非竣工確認，未證實與現代同校建物別名對應，新增套件不代表新增一棟已知實體建築。鐘塔圖間矛盾、入口前皮未定及窗位估讀保留；中性配色、封閉背襯、細件加粗，未實體試印。",
+      "physical_print_verified": false,
+      "classification": "historical_original_design_study_modern_alias_unproven"
+    }
+  ]
 }

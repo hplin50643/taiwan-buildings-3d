@@ -1,0 +1,141 @@
+{
+  "status": "SOURCE_CONTROLS_REVIEWED_NOT_FINAL_MESH_QA",
+  "scope": "Historical two-phase1995exterior, authoritative sections prioritized with disclosed contradictions",
+  "controls": {
+    "axis_grid_m": [
+      108.8,
+      76.8
+    ],
+    "axis_warning": "Axis grid, not facade/outside bounding box. X1..18 at 6.4 m. RF sheet places detached roofhead detail plans beside true principal U-shaped roof; do not model them at sheet coordinates.",
+    "main_levels_m": {
+      "GL": 0,
+      "1F": 0.96,
+      "2F": 5.46,
+      "3F": 9.6,
+      "4F": 13.56,
+      "5F": 17.52,
+      "6F": 21.48,
+      "7F": 25.26,
+      "RF": 29.04,
+      "RF_terrace_finish": 29.1,
+      "RF_parapet": 30.34,
+      "roofhead_top": 35.65,
+      "lightning_rod_top": 37.65
+    },
+    "western_low_wing_m": {
+      "1F": 0.6,
+      "2F": 5.1,
+      "3F": 9.24,
+      "4F": 13.38,
+      "RF": 17.52,
+      "parapet": 18.82
+    },
+    "western_low_wing_warning": "These lower-wing floor datums do not replace stepped auditorium roof controls. Do not flatten entire west wing or force every 1F to +0.96.",
+    "main_RF_sloped_roofs": {
+      "count": 3,
+      "type": "Real opaque mono-pitch roofs above corridors, not generic glass skylights. RF annotation specifies asphalt waterproofing blanket.",
+      "source": "A2-10 plus A4-3 enlarged roof corridor section; A4-4 VRV shelter section corroborates external high/low geometry but equipment use/revision should not be generalized to all roofs.",
+      "north_strip_plan_m": [
+        26.4,
+        3.55
+      ],
+      "western_strip_width_m": 3.54,
+      "width_warning": "Keep printed 354 versus 355 cm by strip, do not average. Remaining strip positions/lengths to be transferred from A2-10 grid during modeling.",
+      "low_above_terrace_m": 1.55,
+      "high_above_terrace_m": 2.9,
+      "low_absolute_m": 30.65,
+      "high_absolute_m": 32.0,
+      "AW19_high_side_window_m": 1.7,
+      "AW20_low_side_window_m": 0.6,
+      "window_sill_above_terrace_m": 0.55,
+      "orientation": "Follow AW19 versus AW20 labels individually on plan, not assumed global symmetry."
+    },
+    "east_wing": {
+      "RF_m": 21.48,
+      "source": "A4-10 longitudinal/short sections corroborate A4-1/A3 east wing.",
+      "glass_roof_support_above_RF_m": 1.7,
+      "glass_roof_rise_m": 1.0,
+      "glass_roof_pitch_deg": 45,
+      "glass_roof_width_m": 2.0,
+      "inside_clear_width_m": 1.8,
+      "glass_roof_top_m": 24.18,
+      "warning": "Actual narrow stainless/glass gable enclosure along I-axis, unlike the large dashed lightning protection triangles."
+    },
+    "auditorium_roof": {
+      "sources": [
+        "A4-1",
+        "A8-13",
+        "A8-16"
+      ],
+      "stepped_roof_levels_m": [
+        25.62,
+        21.365,
+        19.665,
+        17.965
+      ],
+      "plan_drain_slope": "1:50 where marked A8-13",
+      "shape": "Stepped irregular polygon with curved west edge, not a four-box rectangular substitute. A8-13 supplies footprint at grid 1..5 and G..K environs; transfer actual outline with explicit digitization error if needed.",
+      "correction": "Earlier low-resolution guesses 25.02/21.815/17.765 were withdrawn; enlarged pixels and A8-13/A8-16 agree on final levels."
+    },
+    "clock_tower": {
+      "source": "A8-25 plan/elevation/section plus relative height in A3/A4",
+      "adopted_base_m": 21.48,
+      "machinery_floor_m": 22.2,
+      "upper_floor_m": 25.26,
+      "upper_floor_to_688_chain_start_m": 0.4,
+      "height_chain_m": [
+        4.18,
+        6.88
+      ],
+      "adopted_tip_m": 32.54,
+      "roof_gable_rise_m": 2.38,
+      "conflict": "A8-25 elevation basal label reads +2904 whereas same-sheet section says +2148. Preserve this source contradiction.",
+      "resolution": "Prioritize internally consistent section chain: 21.48+4.18=25.66=25.26+0.40, then +6.88=32.54. East RF independently21.48 in A4-10; A3/A4 clock tip lies below35.65 roofheads. Elevation-label alternative29.04+11.06=40.10 contradicts overall drawings. 32.54 is documented historical reconstruction interpretation, not an unqualified measured height.",
+      "mechanism": "Source excludes clock machinery cost; clock face may be represented as design motif, no actual installation assertion."
+    }
+  },
+  "limits": [
+    "Historical design/revision, not current or as-built appearance. Researcher independently established1995 date/May revision; do not infer date from9401 job number.",
+    "Large dashed triangular lightning protection zones are not roofs. Thin rods may be simplified/omitted at print scale with disclosure.",
+    "Roofhead top35.65 is not maximum including lightning rods37.65.",
+    "Public package must not contain original scans/crops. Exact source rights and attribution handled separately from authored-model rights.",
+    "Digitized curved auditorium footprint must be documented and checked against A8-13, not invented circular arc.",
+    "This source GO does not replace final independent geometry/render/format QA."
+  ],
+  "private_source_pixels": false,
+  "entrance_supplement": {
+    "source": "https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=0WM6MI0WMB",
+    "sheet": "A4-13",
+    "floor_m": 0.3,
+    "opening_width_m": 5.8,
+    "opening_top_m": 11.3,
+    "small_head_step_m": 0.36,
+    "face_from_axis1_m": 1.985,
+    "front_profile_station_m": 3.2,
+    "limits": "Smallhead11.66 is not entiredecorativeprofilemaximum. Wholelowfrontskin outline remainsuncoordinated; simplifiedcombinedrepresentationexplicit."
+  },
+  "east_glass_longitudinal_correction": {
+    "start_axis14prime_m": 86.4,
+    "outer_start_m": 86.27,
+    "axis17prime_m": 105.6,
+    "end_center_shoulder_m": 106.4,
+    "end_outer_shoulder_m": 106.53,
+    "tip_m": 107.53,
+    "tip_top_m": 24.18
+  },
+  "clock_plan_correction": {
+    "source": "A8-25",
+    "axis14_m": 83.2,
+    "left_chain_m": [
+      0.75,
+      3,
+      0.25
+    ],
+    "right_offset_m": 0.5,
+    "x_outer_m": [
+      79.2,
+      83.7
+    ],
+    "center_x_m": 81.45
+  }
+}
