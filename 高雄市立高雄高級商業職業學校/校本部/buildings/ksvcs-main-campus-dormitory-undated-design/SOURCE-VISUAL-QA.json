@@ -1,0 +1,109 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_at_utc": "2026-11-01T16:55:46.614674+00:00",
+  "scope": "Undated historical single main-campus KSVCS dormitory exterior, onlyCCRH11423034; not Fengshan branch or twin-dwelling sheet",
+  "geometry_version": "build-v6",
+  "render_version": "render-v2",
+  "mesh_sha256": "e6d3921923fd2c7a2c19499ad93bb0607f3850d984dd10ce94087cc635b94fb2",
+  "artifact_sha256": {
+    "build_model.py": "69c0c721f24fd08345e5a1a7c37c0dae59ba3625aef7ea46c27009f57cf941d2",
+    "render_model.py": "4786d28fe170bd2e326e194b56de0b86f510d4b98905e2269d8e79426392586b",
+    "README.md": "2742ce94705cebee8cd6b1c62d38da7d8ffc830c8520ecd56cf2b0dcbca0a3fb"
+  },
+  "private_source_controls_sha256": "1733ebee9bfa6a320e3524941a1cb2031a85af80a316cefff6fbb49588ce9f15",
+  "private_source_policy": "Original scan/crops and detailed source review private; no source pixels embedded here.",
+  "png_sha256": {
+    "preview.png": "6391178bbbdd73d5b85cfa9c6b513286b79a03ccd1cbb8f03448b9510ad51eae",
+    "rear.png": "3ccfac28fcb6f76870e84ca5e10a26779985040fc5ea83f7a971c6213f6b1b8d",
+    "north.png": "2aa935d7aa63012a63312d8085b197483c2de34dbfd552d2238d8625748e5785",
+    "south.png": "eebd215d08f25c35fe1dd0af28be283eeeb0b6932b3df1fa20740cb559121814",
+    "east.png": "dc4af0a38987eb25b3e2af9b1fa87a669dff9d36b0a7297cbe439f2e5aa71756",
+    "west.png": "99895aaa96c294a85b2e5b055edf041aa37b7c132fd4b0cf7460bb3617376631",
+    "top.png": "4ab5e4f0f2374af3e25d2d1c66d07f16c82f47206f8aa64b13a1b9de2526a009",
+    "entrance-detail.png": "633d09a412a001208ba9a56596c474de03fde2063be90a92fabfc3aae086dfe3",
+    "service-detail.png": "babe7c05a5d35b70f116be58672a6d6c825ca295c73b1d094f212fa6faf476a0",
+    "roof-detail.png": "c17b70a0341973ab6a75ad5ef349048ecc3af12b4e161ba509445700ce375679"
+  },
+  "per_image_review": [
+    {
+      "image": "preview.png",
+      "result": "PASS",
+      "observation": "Complete overview: asymmetric entrance and kitchen projection, open service strip, low side eave and red-brick band visible."
+    },
+    {
+      "image": "rear.png",
+      "result": "PASS",
+      "observation": "Complete reverse view: two rear windows and blank opposite long wall, no invented mirrored openings."
+    },
+    {
+      "image": "north.png",
+      "result": "PASS",
+      "observation": "Complete rear view: two three-column/six-row main windows with central thick rails."
+    },
+    {
+      "image": "south.png",
+      "result": "PASS",
+      "observation": "Complete entrance view: broad W, offset D with glazed transom and two-column W1, distinct front canopy. Shadowed but readable, not clipped."
+    },
+    {
+      "image": "east.png",
+      "result": "PASS",
+      "observation": "Complete service-side view: small windows separated from large W, single door and external vessels remain outside main wall."
+    },
+    {
+      "image": "west.png",
+      "result": "PASS",
+      "observation": "Complete blank-side view: uninterrupted wall, front projecting canopy/profile distinct."
+    },
+    {
+      "image": "top.png",
+      "result": "PASS",
+      "observation": "Complete plan view: roof perimeter, service eave projection and authored base visible."
+    },
+    {
+      "image": "entrance-detail.png",
+      "result": "PASS",
+      "observation": "Intentional entry close-up: asymmetrical door, three transom lights, large/small window differentiation and corrected entrance steps."
+    },
+    {
+      "image": "service-detail.png",
+      "result": "PASS",
+      "observation": "Intentional service close-up: two round vessels and trough remain open; window openings no longer overlap. Vessel dimensions graphical."
+    },
+    {
+      "image": "roof-detail.png",
+      "result": "PASS",
+      "observation": "Intentional roof close-up: main thick external envelope, front thin canopy and dropped side thin plate distinct; no claim to represent hidden ribbed interior."
+    }
+  ],
+  "method": "All ten final individual PNGs directly inspected. Seven whole-object views retain margins, three named details intentionally crop surroundings; render-v2 confirmed Blender quit. Source fullsheet and native enlarged plans/elevations/AA/BB previously directly reviewed.",
+  "independent_mesh_check": {
+    "faces": 3208,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 1591636.0770013202
+  },
+  "source_code_checks": [
+    "600x750axes distinctfromouterbbox; frontkitchen100projection andoutdoorservice100projection",
+    "Floor45/service40,roof360 and279+36chain",
+    "Main36externalprofile versusBBfront12+2+2cmcanopy andAA6cmdropped30cmsideplate",
+    "Left60cmoverhangerrorremoved;60isinternalcorridor. Roofleftapprox-.115,rear7.90,front-1.13 graphicallycontrolled",
+    "Foundationrearservicechain270+180+105+195+100=850, correctedbath3.90/WC2.475centrespreventoverlap",
+    "MainW220wide/sillFF+95,threecolumnsandtwo3-rowgroups;smallW1/W2two-columns/3rows",
+    "FrontD50+84internalchain/approx144outer,glazedtransom;sideDsinglewithouttransom",
+    "EntryGL10/25/40 plus45threshold",
+    "Exposedredbrickband explicitlysourceannotated清水紅磚;greybase抹水泥漿",
+    "Oppositelongwallblank,sidebasinsopen,notaddedroom"
+  ],
+  "limitations": [
+    "Undatedhistoricaldesign; no1957dateborrowed, noasbuilt/currentexistence assertion.",
+    "Roofouteredgesapprox+/-0.10m graphical; rearoverhangthicknessunsectioned,shownascontinuationofmainexternalprofile withREADMEdisclosure.",
+    "Windowcentres/smallwindowheights/frameoffsets/doorpanelsandoutdoorvessels partlygraphicaland simplified.",
+    "Closedopaqueenvelope/backedglazing; hiddenhollow/ribbedroof andinteriorpartitionsnotreconstructed.",
+    "Exactbricktexture/materialRGBnotknown; renderingapproximate,notphotographic.",
+    "Modelcoordinateviewnamesnotgeographicbearings;authoredbasenotterrain.",
+    "No physicalprinttrial,structuralsafety,supportfreeprintingorcommercialrights guarantee."
+  ],
+  "blocking_findings": []
+}
