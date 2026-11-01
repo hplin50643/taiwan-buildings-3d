@@ -1,0 +1,83 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_version": "v5",
+  "review_utc": "2026-11-01T10:06:30Z",
+  "independent_reviewer": "review_dorm_source_controls",
+  "mesh_sha256": "8aadd5ad603ad193a2dfd632ff3738e77719bbc998b3114fbef6a3efb2e9a836",
+  "triangles": 26942,
+  "binding_sha256": {
+    "build_model.py": "5e65984fcda1f76a9311ed88498a52bba6617f408961605f8d2432c5cb9ce79d",
+    "README.md": "57a8704c375f371ca09e28177131be65b1302839a3ebdae447fec18754d348e9",
+    "SOURCE-CONTROLS-REVIEW.json": "0df0a175bf4a27b518a43e4404cd20482899badea716401ddc286da7b6338cce",
+    "render_model.py": "5236f0d146290872daebe4b92f5383ab712fc0999a1298e6a00ac91a47665b1c",
+    "components.json": "8ac340a8f4c1e7ea81d85c7622c12ab1758b372ae8f76af5607df0218719b571"
+  },
+  "png_sha256": {
+    "connection-detail.png": "4362acb1b147b0250c90b2c6ba29a056ac2fb06f5e62b015fa52fec223bf3747",
+    "east.png": "25d623fae75cabf38ed753db8402556ef8ffe56667b8d1b1fba95feacd063dba",
+    "facade-detail.png": "58c90eeca5910061939bae2ec0a73f47c2369aadcf62d49ab1f7adada3ce3f8d",
+    "north.png": "9d1cacc13b413300b5fc3ea341b56a81a774a58cf2a097cf100bcb2362f4c550",
+    "preview.png": "08ecc2a7a4eeab056600753fded925cb6bc8edde5a6571f6225c72cc88e7c71a",
+    "rear.png": "c9bca6f6ae90cab6c2f54fcd4ed699eaff723de746daab99093aee21c5513276",
+    "roof-detail.png": "7dd08036958706a0d21ddd195e5bf0baddc2c219b06b536b02d1fc520f9148a3",
+    "south.png": "21f556bd4021e1523d2b25780c1edeeb706067a9492d916bb7e6da9e6528f782",
+    "top.png": "b853cca8b081f3adbdaa625e5744d450b1c43038628ccded1ac1dd7c6945d9ce",
+    "west.png": "54446db8e7c4b1b861bd628bf630fba1c41e2284ab913a31a6ecdb4c115f1109"
+  },
+  "source_sha256": {
+    "MXMAMFMHMD.jpg": "91d13ca0d40c9e72ff714f901a727495ba7c826ca947f207cee69a60ddf3f0ec",
+    "M7MAMFMHMD.jpg": "863d4039e8254ed2ce5c9becd25d7dda0f7bbf60b2994384ea66a70ce771be45",
+    "MHMAMFMHMD.jpg": "45c1173fbacf0fd5f9aa29917523a2c5bad94262f0ed5c85c6958950211b91f3",
+    "MQMAMFMHMD.jpg": "45fb4aa64e23c8843f281ab1c7ff4759ac60d0ae5892b3ec60fec5e59d9758ff",
+    "MPMAMFMHMD.jpg": "02ad64cad110f0444ed9d458318f0ff76675ddbc78d5bf875c407e50707fba8d",
+    "MKMAMFMHMD.jpg": "6d26698939d10a6a69f7951c6e08be2a53de1cf013a49b1a76202a3f8e4be2a3",
+    "M8M6MFMHMD.jpg": "d6d1337b7f6f6e7114dbe65f9a75e49eb72fc093799c1dcd22eb6c1b879c89f7",
+    "MLM6MFMHMD.jpg": "701321dd51960021ab6a12fcb2b6d414713bb0316efc43a9fe40de6b8613173f",
+    "MXM6MFMHMD.jpg": "c190027d65727b1aa3bdf57477430ce5c07e81ddb4a221147363ce9adcde9716",
+    "MNM6MFMHMD.jpg": "9c5fc9060a0e1a40a5a77f2b9d7cdf6e034e9bb967cda97e9658147f6d5f9688",
+    "MCM6MFMHMD.jpg": "7c6f9f71c057f099353c731f8c47a6c65a247ab0cfbc72bc61a7fabb2b853b71",
+    "MXMWMFMHMD.jpg": "7fca25605d446ef620c2bdd6c5fa652c505cf61b44b5bd6d15cf5d193a8f6905"
+  },
+  "method": "Independently inspected all12actual source rasters and enlarged key plan/section/elevation callouts. Reviewed final builder code and README; individually viewed all10final PNGs after render-v5.log Saved scene and Blender quit. This is source/visual QA, not an independent rerun of all format tests.",
+  "framing": {
+    "whole_views": [
+      "preview.png",
+      "rear.png",
+      "top.png",
+      "north.png",
+      "south.png",
+      "east.png",
+      "west.png"
+    ],
+    "whole_view_result": "PASS: complete building and authored displaybase within image.",
+    "intentional_detail_crops": [
+      "facade-detail.png",
+      "connection-detail.png",
+      "roof-detail.png"
+    ],
+    "detail_result": "PASS: crops deliberately show facade, stepped junction/entry ramp, and roofstair porch/stubs."
+  },
+  "verified_controls": [
+    "1990femaleoriginaldesignidentity; notcurrentnamedasbuiltbuilding.",
+    "68.4x24.3m AXIS grid distinguished from wallcenter chain14.83m and interpreted exterior offsets.",
+    "Connected staggered wings; female L basement location traced in code, not mirrored shared male section.",
+    "Four finished floor levels .65/4.15/7.65/11.15, RF14.65, parapet15.85, stairhead17.65m.",
+    "Straight exterior roof parapet; internal zigzag drainage not mistaken for serrated exterior.32roofstubs at specified rows/axes.",
+    "Outer endface W2 and recessed stepface W3 are on different planes. South lounge exterior retains threeW1.",
+    "Ground south staircase D5 is singleleaf with+20landing; W4 aligned2.75..3.30 with adjacent bathhighvents, distinct fromupperW1.",
+    "Roofstair north156cm is OPEN coveredporch, not sealedwall; D3+local210x55W2 at insetwall; porchfloorRF+.30.",
+    "DW1 recessedmainentrance, +65to+45vestibule slope,3steps, east665x150ramp; rampdatumdiscrepancy explicitly disclosed.",
+    "V4unintended45cmgroundgap FIXED: finalbody extends−.02m intoGLterrain, blackundercroft absent in finalfour elevations and facade detail."
+  ],
+  "documented_limits": [
+    "Some column sections,endface offsets, horizontal recess depths,exact facadecover profiles and vestibuledepth are graphical approximations, not survey-grade dimensions.",
+    "Basement sealed and hidden by authoredterrain; its plan cannot be visually certified from opaque renders alone.",
+    "Roof1:100 drainage slopes/channels and microthresholds simplified; original10cmparapet thickened inward18cm.",
+    "Window subdivision,doorlouvres,hardware,mosaicdecorativeframing and finishes simplified; opaquebackedglass, neutralcolors not establishedoriginalcolors.",
+    "Ramp665/14=47.5cm versus45cm landing discrepancy retained; footbelowGLpartlymasked,handrails omitted; notaccessibilityorconstructioncompliance.",
+    "Noactualprintperformed; thinframesmayrequireprintingadjustment despitewatertightmesh.",
+    "No assertionofconstruction,currentexistence,currentbuildingnameor unrestrictedcommercialrights."
+  ],
+  "blocking_issues": [],
+  "release_scope": "Sourceandvisualreviewallowsfinalfreeze ofexactboundv5files, subject to builder separate format/rebuild/scenereopen evidence. Earlier private interimv4HOLD superseded by this finalreview; do not include staleHOLD as current status."
+}

@@ -7,6 +7,7 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | 正面<br>![述耘堂正面紅板白帶限域配色](buildings/npust-shuyun-hall/appearance/previews/front.png) | [![玉崗紀念圖書館前中央有限配色：其餘中性](buildings/npust-yukang-library/appearance/previews/front.png)](buildings/npust-yukang-library/appearance/README.md)<br>**[玉崗紀念圖書館（前中央有限配色）](buildings/npust-yukang-library/appearance/README.md)** | [![第二餐廳：實際模型預覽](buildings/npust-second-refectory/previews/front.png)](buildings/npust-second-refectory/README.md)<br>**[第二餐廳](buildings/npust-second-refectory/README.md)** |
+| [<img src="buildings/npust-female-dorm-1990-design/preview.png" alt="女生宿舍1990原設計：實際模型渲染" width="220">](buildings/npust-female-dorm-1990-design/README.md)<br>**[女生宿舍｜1990年原設計圖版](buildings/npust-female-dorm-1990-design/README.md)**<br>[STL](buildings/npust-female-dorm-1990-design/model.stl) · [彩色3MF](buildings/npust-female-dorm-1990-design/model.3mf) · [Blender](buildings/npust-female-dorm-1990-design/scene.blend) |  |  |
 
 ## 第二餐廳
 
@@ -15,3 +16,7 @@
 [模型與來源](buildings/npust-second-refectory/README.md) · [驗證與限制](buildings/npust-second-refectory/QA.md)。既有兩套模型幾何與QA不變。
 
 [述耘堂正面紅板與白帶限域配色／五視角](buildings/npust-shuyun-hall/appearance/README.md)（94完整原面，其餘中性；非2026現況）。
+
+## 女生宿舍原設計研究
+
+1990-08-31（79.8.31）國立屏東農業專科學校女生宿舍原設計；A1-1內埔計畫40號，未證實等同今日具名宿舍或按圖建成。四層錯位雙翼與32個屋頂突出構件；地下層由展示地面包覆不可見。尺寸估讀、中性配色、薄件簡化保留；未實體試印。

@@ -1,0 +1,227 @@
+{
+  "status": "SOURCE_CONTROLS_REVIEWED_WITH_EXPLICIT_GRAPHICAL_FACE_LIMITS_NOT_MODEL_PASS",
+  "source_sha256": {
+    "MXMAMFMHMD.jpg": "91d13ca0d40c9e72ff714f901a727495ba7c826ca947f207cee69a60ddf3f0ec",
+    "M7MAMFMHMD.jpg": "863d4039e8254ed2ce5c9becd25d7dda0f7bbf60b2994384ea66a70ce771be45",
+    "MHMAMFMHMD.jpg": "45c1173fbacf0fd5f9aa29917523a2c5bad94262f0ed5c85c6958950211b91f3",
+    "MQMAMFMHMD.jpg": "45fb4aa64e23c8843f281ab1c7ff4759ac60d0ae5892b3ec60fec5e59d9758ff",
+    "MPMAMFMHMD.jpg": "02ad64cad110f0444ed9d458318f0ff76675ddbc78d5bf875c407e50707fba8d",
+    "MKMAMFMHMD.jpg": "6d26698939d10a6a69f7951c6e08be2a53de1cf013a49b1a76202a3f8e4be2a3",
+    "M8M6MFMHMD.jpg": "d6d1337b7f6f6e7114dbe65f9a75e49eb72fc093799c1dcd22eb6c1b879c89f7",
+    "MLM6MFMHMD.jpg": "701321dd51960021ab6a12fcb2b6d414713bb0316efc43a9fe40de6b8613173f",
+    "MXM6MFMHMD.jpg": "c190027d65727b1aa3bdf57477430ce5c07e81ddb4a221147363ce9adcde9716",
+    "MNM6MFMHMD.jpg": "9c5fc9060a0e1a40a5a77f2b9d7cdf6e034e9bb967cda97e9658147f6d5f9688",
+    "MCM6MFMHMD.jpg": "7c6f9f71c057f099353c731f8c47a6c65a247ab0cfbc72bc61a7fabb2b853b71",
+    "MXMWMFMHMD.jpg": "7fca25605d446ef620c2bdd6c5fa652c505cf61b44b5bd6d15cf5d193a8f6905"
+  },
+  "review_scope": "All12actualrasterdrawingsvisuallyinspected, enlargedA2standardwallcenterchain/endwindowcallouts,A2roofcolumns/drainagenotes,A4facadesection; sourceidentity1990-08-31femaleversion only.",
+  "grid_m": {
+    "x_axes": "1..20, x=(axis-1)*3.60",
+    "y_axes": {
+      "A": 0,
+      "B": 5.9,
+      "C": 9.2,
+      "D": 15.1,
+      "E": 18.4,
+      "F": 24.3
+    },
+    "warning": "68.40x24.30 iscolumnaxisextent, NOTfinishedoutsidebbox."
+  },
+  "wing_footprints_by_axes": {
+    "southwest": "1..12 andA..D",
+    "northeast": "9..20 andC..F",
+    "connection": "Overlappingcentralregion iscontinuousbuilding; nottwodisconnectedrectangles."
+  },
+  "wall_center_y_m": {
+    "southwing_outer": [
+      0.135,
+      14.965
+    ],
+    "southwing_inner_corridor": [
+      6.09,
+      9.01
+    ],
+    "northwing_outer": [
+      9.335,
+      24.165
+    ],
+    "northwing_inner_corridor": [
+      15.29,
+      18.21
+    ],
+    "evidence": "A2-3explicit595.5+292+595.5=1483cmwallcenterchain compared1510cmcolumnaxiswingdepth; exteriorwallcenters inset13.5cmateachside.",
+    "face_limit": "Mustseparatelyapplywallthickness,columns,claddingandwindowrecesses; wallcenter isnotsurface."
+  },
+  "exterior_projection": {
+    "column_graphical_estimate_cm": [
+      35,
+      55
+    ],
+    "column_estimate_axes": "approximately35alongx/55alongy fromsourcepixelratio to360cmbay; noexplicitcolumnsectiondimensionfoundhere",
+    "facade": "A4cutshowsrecessedglazing and12cmthinRCoutercover/floorbands, notflushuniformglasswall. Exacttotalhorizontalprojectionnotfullydimensioned inreviewed12sheets.",
+    "bbox_rule": "Ifusinggraphicalcolumnfaces aroundaxis, labelthemestimated, do notpromotesuchestimates tosourceexactoutsideextent."
+  },
+  "basement": {
+    "authoritative_plan": "femaleA2-1 MHMAMFMHMD",
+    "shape": "L-shaped union1..11×B..D plus1..6×A..B, withlocalinspectionnotches/shafts",
+    "nominal_BFL_relative_GL_m": -3.5,
+    "height_rule": "A4basement350dimensionbeginsGL, not1F;1F+0.65 yieldsnominal4.15mBFL-to-FF.",
+    "variant_warning": "SharedA4-2hasbasementonoppositewing; nevermirrorittoreplacefemaleA2-1."
+  },
+  "vertical_m": {
+    "FF": [
+      0.65,
+      4.15,
+      7.65,
+      11.15
+    ],
+    "RF": 14.65,
+    "parapet_top": 15.85,
+    "roof_stair_top": 17.65,
+    "notes": [
+      "A3groundannotation55+10=65;1455heightchainstarts10cmpavementlevel, notsameGLbaseline.",
+      "A4finish/structure3cmdetail87/90silldifference shouldnotchange350storeychain."
+    ]
+  },
+  "roof": {
+    "enclosures": "2explicitroofstairheads, southwestaxes2..3/A..C andnortheastaxes18..19/C..E",
+    "interior_column_stubs": {
+      "height_m": 1.0,
+      "southwing": "rowsB/C,axes4..11,8perrow",
+      "northwing": "rowsD/E,axes10..17,8perrow",
+      "visible_count": 32,
+      "perimeter": "Perimetercolumnsmergeinto1.20mparapet; do notaddspuriouswater tanks/chimneys."
+    },
+    "critical_roof_correction": "A2-4outer10cmRCparapetedge isstraightalonglongfacades. Zigzag/angledinnerlines belong30cmroofdrainagechannel绕柱/inneredge; NOT evidenceforserratedexternalroofbbox. ThisdiffersfrompriorCPUcase.",
+    "roof_slope": "1/100drainageslopeexplicit; maydisclosesimplifiedflatdisplaygeometry.",
+    "enclosure_dimensions_notes": {
+      "south_wallcenter_width_cm": 373,
+      "north_wallcenter_width_cm": 375,
+      "common_column_axes_width_cm": 360,
+      "RCwall_cm": 12,
+      "approx_outer_widths_m": [
+        3.85,
+        3.87
+      ],
+      "depth_reference_chain_cm": [
+        330,
+        577.5
+      ],
+      "depth_rule": "907.5cmreferencechain; detailedface/axisoffsetsremain, do nottreat9.20mA..Caxisdepthasautomaticouterbbox.",
+      "certainty": "373/375and12explicitlabelreads; outerwidthsderivedassumingcenteredwallthickness, notseparateoveralllabel."
+    }
+  },
+  "openings_cm": {
+    "W1": {
+      "width": 140,
+      "height": 175,
+      "sill": 90,
+      "parts": [
+        55,
+        120
+      ]
+    },
+    "W2": {
+      "width": 220,
+      "height": 55,
+      "sill": 210
+    },
+    "W3": {
+      "width": 220,
+      "height": 175,
+      "sill": 90,
+      "parts": [
+        55,
+        120
+      ]
+    },
+    "W4": {
+      "width": 320,
+      "height": 55,
+      "sill_interpretation": "A2locationcalloutsgovern; do notassumeallendopeningsW1."
+    }
+  },
+  "end_facade_resolution": {
+    "west_outer_face_x1": "W2 atB–C accessiblebatharea, notW3",
+    "west_recessed_face_x9": "W3 atD–E corridor",
+    "east_outer_face_x20": "W2 atD–E accessiblebatharea",
+    "east_recessed_face_x12": "W3 atB–C corridor",
+    "why_A3_consistent": "EachendviewprojectsTWOdifferentxplanes. WestviewnorthappearsleftsoW3left/W2right;eastviewsouthappearsleftsoagainW3left/W2right. Nofacademirroringconflict; donotputbothwindowsontheoutermostendwall."
+  },
+  "facade_distribution": [
+    "ExteriorroomrowsmostlyW1;terminalservicebaysuseW4, innerendcorridorfacesW3 andouteraccessiblebathW2.",
+    "Groundfloorentranceandserviceopeningsdifferfromstandardfloors; followA2-2,notuniformcopyofA2-3.",
+    "North/southA3projectionscombinefrontandrecessedwings; overlappingprojectiondoesnotmeanoneflatwall."
+  ],
+  "limitations": [
+    "Historicaldesignonly, notcurrentdormidentity/asbuiltverification.",
+    "Sourcewallcenterandaxischainsareexplicit; finish/columnfacesandtotaloutsidebboxneeddisclosedgraphicalinterpretation.",
+    "Sourceimages/cropsstayprivate;publishlinksandarchitect/museumattribution, separateauthoredartifactsfromsource rights.",
+    "Neutralmaterialcolors,closedinteriors/backedopenings/omitteddrainagemicrodetailsrequireREADME disclosure."
+  ],
+  "blocking_misreadings_to_avoid": [
+    "Treating68.4×24.3asoutsidebbox",
+    "Rectangularorwrongwingbasement",
+    "PlacingW3andW2ononeendplane",
+    "Makingexternalroofedgezigzagfrominnerdrainagegeometry"
+  ],
+  "ground_floor_controls": {
+    "lounge_117": "Southwingaxes9..12/A..B; SOUTH exteriorhasthreeW1likeupperrooms. W6/W7/D2belongNORTH internalcorridorface, notsouthfacade.",
+    "lounge_opening_callouts": "A2-2 W6=140x255, D2=160x265 locallycalledout; sharedA6scheduleincludesdifferentoverall/transomdimensionchains, followfemaleplancalloutsanddisclosemicroframe simplification.",
+    "north_entrance": "Northwingaxes10..11 atFside; portal/vestibule leadsfromnorthoutdoorstepsandaccessibleramp. GroundW1isreplacedbyentryonlyatthisbay, notallcentralbays.",
+    "ramp": "A2-2 marked1:14,665cmhorizontalreferenceeastofentrancebay;150cmwidth, step/landing+0,+45,+65shown. Ifomitted/simplified, disclose ratherthanclaimfullaccessibilityreconstruction.",
+    "south_ground_service_bays": "A3-2 groundexternaldoor+hightransom atterminalstair/servicebaysdiffersfromupperW1; useA2-2 groundcallouts, notuniformfloorcopy.",
+    "north_entrance_door": {
+      "type": "DW1",
+      "width_cm": 335,
+      "overall_height_cm": 265,
+      "certainty": "EXPLICIT A2-2 enlargedcallout DW1/A6-1/335x265",
+      "warning": "D2 160x265 isinternal loungeentry, notnorthmainportal."
+    }
+  },
+  "certainty_classification": {
+    "explicit": [
+      "360cmbaysandnamedaxisgrid",
+      "595.5/292/595.5wallcenterchain",
+      "femaleL-shapedbasementplan",
+      "FF65,350storeys,120parapet,300stairhead",
+      "W1/W2/W3/W4schedule andDW1mainentrance335x265",
+      "100cmroofcolumnstubnote",
+      "outer10cmRCstraightparapetandinner30cmdrainagechannel",
+      "373/375enclosurewallcenterwidthand12cmRC"
+    ],
+    "derived": [
+      "wallcenter13.5cminsetsfromaxis",
+      "RF14.65/parapet15.85/stairtop17.65",
+      "basementfloor-3.50fromGLdimension",
+      "enclosureouterwidth3.85/3.87ifcentered12cmwalls"
+    ],
+    "graphical": [
+      "approximately35x55cmcolumncrosssection",
+      "totalcolumn/finishbbox",
+      "somefacadehorizontalwindow/outercoverrecessdepth",
+      "exactgroundlandscape/displaygrade"
+    ],
+    "not_independently_fixed": [
+      "Allfinishedexteriorfacesfromaxisforentirebuilding",
+      "Detailedroofdrainagechannel/curbgeometry",
+      "Exactsurveyterrainorcurrentasbuiltcondition"
+    ]
+  },
+  "roofhead_north_vestibule_correction": {
+    "status": "VERIFIED_A2_4_PLAN_A4_1_SECTION_A3_1_ELEVATION",
+    "roof": "Full approximately907.5cm roof coverage retained.",
+    "open_vestibule": "North156cm is roofed OPEN vestibule, not full-height sealed north end wall. Retain corner supports and upperbeam.",
+    "partition": "Northern stair enclosure partition is inset156cm from north reference. D3 100x210 on left/west portion and W2 labelled210x55 on right/east portion face north; D3 swings north to west side, not an exterior west-wall door.",
+    "datum": "A4-1 vestibule slab surface drawn30cm above RF with additional5cm local interior/exterior threshold difference; if small threshold omitted disclose simplification.",
+    "certainty": "156cm and window/door sizes are written; exact wallface offsets and microthreshold treatment remain interpreted.",
+    "supersedes": "Earlier generic outer north W8/window and west-side D5 assumption; full roof silhouette itself unchanged."
+  },
+  "ground_entry_refinement": {
+    "DW1": "335x265 on recessed interior north-facing vestibule wall, NOT F exterior plane; approximately2.5m recession graphical.",
+    "landings": "Source+65 inside,+45 north landing,3steps towardGL.",
+    "ramp": "665x150cm eastward,1:14 stated. 665/14=47.5cm differs from45cm landing by2.5cm; document, do not silently force both. Displayterrain can mask belowGL rampfoot; not accessibility-compliance model.",
+    "ground_stair": "D5 singleleaf100x210 with+20 landing,+10step; W4 hightransom320x55 distinct from upperstoreyW1.",
+    "ground_stair_W4_elevation": "A3-2 actual pixels show ground stair W4 aligned head/sill with adjacent bathroom W4; model GL2.75..3.30, not2.30..2.85. D5 uses separate+20cm landing datum."
+  }
+}
