@@ -1,0 +1,45 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_utc": "2026-11-01T07:35:43.018365+00:00",
+  "reviewer": "Independent source and final render reviewer; did not modify geometry",
+  "mesh_sha256": "f5367e835a28bbe42af4fe49d250875c078bc68b409213495d6b9d7af8b8f953",
+  "png_sha256": {
+    "east.png": "989ca68b00c040f659bb8d176c1e230fe63eca48eacecde7211dfe48ef9e386f",
+    "north.png": "c2c2bd00237a3dd4b2f737cba8a2d29c49401adcd45e0bb6a9944303df3aa3ca",
+    "preview.png": "a858760e35468655b4ef9e84e4c146259b3175d436cdd40dfc0e2de6e04ebf13",
+    "rear.png": "05add01b6ceb2f78856da174637e48c77b0da6a1a80995b8aa74acd159d38898",
+    "service-detail.png": "578fbfac66a19e2942d0422b22fed2627047eb7c95481cf242590a73857fa6e3",
+    "south.png": "e26a0a8e6b81bdd6d60e256218eabb5c482f7feb4382e6591c7c68ac58ee5e1d",
+    "top.png": "6566daa13332dff2259047f1806278c2aee16bfa9f74220b672f6706d5517ea0",
+    "west.png": "3cd29e54ec48ee7f3ccc29c3a642cdbb1ccfa83f150e7e4aa6e9805f8ae47097",
+    "window-detail.png": "cb1672bceb84a314f13d156be3851d2b7a657f3da8111d6035e583ccd29a2ef4"
+  },
+  "actual_pixels_inspected": true,
+  "source_images_reviewed": [
+    "MYMRMPM4.jpg",
+    "fsvs-single-dorm-plan.png",
+    "fsvs-single-dorm-elev.png",
+    "fsvs-single-dorm-section.png"
+  ],
+  "verified": [
+    "Seven complete-model views have no clipped model or base; the two detail views are intentionally cropped",
+    "L-shaped thin flat roof and main/service-wing relationship match source interpretation; external inspection slab is not a third enclosed bay",
+    "Central open passage is represented without invented external door leaves",
+    "Two W1 windows per long main facade; upper two small-panel rows and lower single row are visible",
+    "W3 service windows no longer have an unsupported center upright",
+    "Two 60 cm single-leaf service doors are on recessed north return with canopy, no central double-door split",
+    "Exterior finish lines are shallow relief, not extra glazing",
+    "Two graphically estimated service pipes and inspection cover are present",
+    "README first section contains nine render images in three columns and preserves historical/source/manufacturing limitations"
+  ],
+  "documented_limits": [
+    "Undated original design only; actual construction and present condition remain unknown",
+    "Coordinate direction names are not surveyed geographic orientation",
+    "Window frames, service canopy north edge and pipe dimensions include disclosed graphical interpretation or display simplification",
+    "Neutral colors and opaque glazing backing do not claim calibrated historic appearance",
+    "Sealed rooms and omitted interior details are disclosed; no structural/BIM model claim",
+    "Physical printing was not tested; thin elements, overhangs and passage roof can require printer-specific supports"
+  ],
+  "code_and_doc_consistency": "Reviewed final geometry code and README against source controls before inspecting final v5 rendered pixels",
+  "source_control_review": "../INDEPENDENT-SOURCE-CONTROLS.json"
+}

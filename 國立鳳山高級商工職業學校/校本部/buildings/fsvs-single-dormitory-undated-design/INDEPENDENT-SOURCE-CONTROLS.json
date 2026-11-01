@@ -1,0 +1,74 @@
+{
+  "status": "INDEPENDENT_SOURCE_CONTROL_REVIEW_NOT_RENDER_PASS",
+  "reviewed_utc": "2026-11-01T07:30:58.041858+00:00",
+  "source": "https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MYMRMPM4",
+  "record": "CCRH12623005",
+  "scope": "Undated original design, not verified as-built or current condition. Reviewer inspected original sheet and enlarged plan, ceiling plan, all four elevations and section pixels.",
+  "coordinate_convention": "Local drawing coordinates only; west/east/north/south are convenience labels, not surveyed cardinal orientation. x0 at main west axis, x5.4 east axis; y0 lower main axis in plan, y6.6 upper axis.",
+  "plan_controls_m": {
+    "main_axes": [
+      5.4,
+      6.6
+    ],
+    "x_room_chain": [
+      2.7,
+      2.7
+    ],
+    "y_room_corridor_chain": [
+      2.7,
+      1.2,
+      2.7
+    ],
+    "service_room_x": [
+      5.4,
+      6.4,
+      7.4
+    ],
+    "service_room_y": [
+      0,
+      1.0
+    ],
+    "external_service_ground_extension_x": [
+      7.4,
+      8.4
+    ],
+    "external_service_ground_extension_y": [
+      0,
+      2.0
+    ],
+    "warning_840": "8.4 m includes external tank/inspection area, not the enclosed building or roof axis length. 7.4 m is main plus two service-room bays.",
+    "corridor": "x0 to5.4, y2.7 to3.9. Both end elevations show an opening without door leaf detail; plan lacks end door swings. Do not add solid entrance doors.",
+    "internal_room_doors": "Four D1, 70 cm widths shown, opening onto corridor. Hidden room contents may be omitted as stated."
+  },
+  "roof_controls": {
+    "main_eaves_m": 0.55,
+    "top_GL_m": 3.05,
+    "beam_underside_GL_m": 2.7,
+    "floor_GL_m": 0.2,
+    "slab_cm": "6 cm structural slab plus 2 cm finish; do not use entire 35 cm roof-to-beam chain as slab thickness.",
+    "roof_x_extent": "Main plus 2 m enclosed service wing to x7.4, then outer eave; do not extend structural wing to x8.4.",
+    "service_north_extent": "Ceiling/roof plan shows canopy above the north door approach, extending beyond service room north wall y1 toward approximately y2. Exact north overhang is graphical, not separately dimensioned; do not assume y2 plus another55cm.",
+    "section_depth_caveat": "31 cm beam note and h305/h270 reference chain should not be conflated with the 6+2 slab notes; retain explicit datums and declare simplified beam assembly."
+  },
+  "facade_controls": {
+    "main_W1": "Two windows per long north/south facade, each150cm wide at room bays. End facades have corridor opening and horizontal finish lines, not extra invented windows.",
+    "W1_height": "85 cm from finished floor to lower frame/sill assembly gives approximately GL1.05 m. Adjacent wall dimension100cm to inner opening lower edge and150cm above it reaches beam underside GL2.70. Therefore do not interpret85+150as total head height.",
+    "W1_division": "Two side-by-side leaves. Upper portion has two small rows, lower portion one large row, with10cm intermediate horizontal timber. Frame and sill boundaries may be simplified but disclosed.",
+    "W3": "Two south-facing service windows,45cm wide. Detailed section lower reference150cm above floor (approximately GL1.70), top near beam underside GL2.70. Upper louver30cm, intermediate member7cm, lower glass40cm plus frames; distinguish those component labels from whole assembly height.",
+    "service_doors": "Two north-facing service doors at approximately x5.9/x6.9 on y1 wall. Detail clearly labels D2 width60cm height180cm above floor, giving leaf top GL2.00. Both plan labels resembleD2; no reliable D3/200cm support found.",
+    "vent_pipes": "Two vertical pipes are visible in rear/east elevation at service corner. Small circles near x7.4 in plan support placement, but exact pipe diameter, height and spacing are graphical estimates. Source does not justify brand or detailed cap construction.",
+    "facade_joints": "Horizontal lines exist on all elevations; they may be represented as finish grooves, not additional glazing."
+  },
+  "limits": [
+    "No original design date or construction survival established",
+    "No current/historic calibrated color source",
+    "Service canopy north edge, pipe dimensions and fine frame endpoints are graphically estimated",
+    "No rendered model or printability pass issued by this source-only review"
+  ],
+  "source_sha256": {
+    "MYMRMPM4.jpg": "0a6ba72977e94697108675b5289862132fbe1412639fc0cb46cf6919d8390d8d",
+    "fsvs-single-dorm-plan.png": "112a7ca26abb283385b309ad78cf013d865d105a5a2954c5729d5b4e39ed986d",
+    "fsvs-single-dorm-elev.png": "feec1c92e7c74d843f3a595a0f3a4b217850c35ab83769a2194bb19ce6c80d56",
+    "fsvs-single-dorm-section.png": "65442f00969dff7f6c7524ac2d83fe19831f2b1e4c99e6c840e90fd7af4010c9"
+  }
+}

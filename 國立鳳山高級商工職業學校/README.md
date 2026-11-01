@@ -1,6 +1,6 @@
 # 國立鳳山高級商工職業學校建築研究模型
 
-現行收錄 **1 套模型包**；不等於完整建物棟數或全校完成。「校本部」是本資料庫入口分組，不另推定原圖精確基地位置或官方校區名。
+現行收錄 **2 套模型包**；不等於完整建物棟數或全校完成。「校本部」是本資料庫入口分組，不另推定原圖精確基地位置或官方校區名。
 
 陳仁和建築師事務所《省立高雄商業職業學校鳳山分校廁所新建工程設計圖》CCRH12623009；原圖未讀得設計日期，不以學校改制年推定。只是歷史原設計圖外觀，不是竣工復原、現況測繪或實施證明；不聲稱此小棟仍存，未試印。
 
@@ -10,6 +10,10 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/fsvs-toilet-undated-design/preview.png" alt="鳳山分校廁所新建工程｜未定年原設計圖版：實際模型渲染" width="220">](校本部/buildings/fsvs-toilet-undated-design/README.md)<br>**[鳳山分校廁所新建工程｜未定年原設計圖版](校本部/buildings/fsvs-toilet-undated-design/README.md)**<br>[STL](校本部/buildings/fsvs-toilet-undated-design/model.stl) · [彩色3MF](校本部/buildings/fsvs-toilet-undated-design/model.3mf) · [Blender](校本部/buildings/fsvs-toilet-undated-design/scene.blend) |  |  |
+| [<img src="校本部/buildings/fsvs-toilet-undated-design/preview.png" alt="鳳山分校廁所新建工程｜未定年原設計圖版：實際模型渲染" width="220">](校本部/buildings/fsvs-toilet-undated-design/README.md)<br>**[鳳山分校廁所新建工程｜未定年原設計圖版](校本部/buildings/fsvs-toilet-undated-design/README.md)**<br>[STL](校本部/buildings/fsvs-toilet-undated-design/model.stl) · [彩色3MF](校本部/buildings/fsvs-toilet-undated-design/model.3mf) · [Blender](校本部/buildings/fsvs-toilet-undated-design/scene.blend) | [<img src="校本部/buildings/fsvs-single-dormitory-undated-design/preview.png" alt="單身宿舍原設計：實際模型渲染" width="220">](校本部/buildings/fsvs-single-dormitory-undated-design/README.md)<br>**[單身宿舍｜未定年原設計圖版](校本部/buildings/fsvs-single-dormitory-undated-design/README.md)**<br>[STL](校本部/buildings/fsvs-single-dormitory-undated-design/model.stl) · [彩色3MF](校本部/buildings/fsvs-single-dormitory-undated-design/model.3mf) · [Blender](校本部/buildings/fsvs-single-dormitory-undated-design/scene.blend) |  |
 
 [校本部圖鑑](校本部/README.md) · [回總目錄](../README.md)
+
+## 單身宿舍原設計研究
+
+陳仁和之省立高雄商業職業學校鳳山分部新建單身宿舍工程設計，典藏CCRH12623005；設計年、是否按圖興建及現存狀況未知。與獨立廁所CCRH12623009不同，不是現況或竣工模型。圖面無可靠方位控制，圖檔方向僅為模型座標；中性配色、尺寸估讀與薄件製造限制保留，未試印。
