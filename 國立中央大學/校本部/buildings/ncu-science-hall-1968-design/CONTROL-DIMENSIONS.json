@@ -1,0 +1,167 @@
+{
+  "scope": "1968-08-08 original design only, main hall + attached lecture hall. No1981observatory.",
+  "status": "FINAL_SOURCE_CONTROL_WITH_DOCUMENTED_ESTIMATES",
+  "authors": [
+    "陳其寛",
+    "劉應昌",
+    "黃寶瑜"
+  ],
+  "scale": "1:300",
+  "axes_m": {
+    "length": 87,
+    "width": 16,
+    "regular_bays": 18,
+    "regular_bay": 4.5,
+    "center_bay": 6
+  },
+  "main_levels_m": [
+    0.8,
+    4.3,
+    7.8,
+    11.3,
+    12.3
+  ],
+  "end_100cm": "External apron/drain distance, not extra enclosed building length.",
+  "window_A9_cm": {
+    "height": 190,
+    "sill_A6": 100,
+    "typical_width": 99.25
+  },
+  "print_adaptation": "window crossmullions are enlarged to0.4mm at1:300; opaque closed solid-backed glass, no interiors.",
+  "roof_stair": {
+    "plan_label_m": [
+      6,
+      5.54
+    ],
+    "A7_height_chain_cm": [
+      210,
+      35,
+      25
+    ],
+    "top_GL_m": 14.0,
+    "glassbrick_band_GL_m": [
+      13.4,
+      13.75
+    ],
+    "pattern": "aggregated relief, not exact brick module"
+  },
+  "lecture_hall": {
+    "plan_axes_m": [
+      18,
+      20
+    ],
+    "A3_external_height_chain_cm": [
+      10,
+      910,
+      25,
+      110
+    ],
+    "top_GL_m": 10.55,
+    "fold_plan_cm": [
+      85,
+      115,
+      50
+    ],
+    "back_doors": "two,1.05x2.10m graphic reading",
+    "front_windows": {
+      "upper_three_banks_m": [
+        5.45,
+        1.6
+      ],
+      "lower_two_banks_width_m": 4.34,
+      "lower_height_m": 0.8,
+      "middle_height_m": 1.6,
+      "sill_GL_m_graphic_reading": [
+        1.9,
+        4.1,
+        6.95
+      ],
+      "note": "A12upper5.425/5.45 variants retained,model5.45. Middle4.34=4x1.085 explicit. Low4.34 width inferred fromA4alignment. Sills graphic readings.Upper/middle two rows,low single."
+    }
+  },
+  "bridge": {
+    "floor_GL_m": 3.1,
+    "edge_top_GL_m": 6.5,
+    "lowwall_pluscap_m": 1.0,
+    "external_chain_cm": [
+      10,
+      300,
+      310,
+      30
+    ],
+    "internal_313cm_discrepancy_retained": true,
+    "underside_GL_m_estimate": 2.75,
+    "underside_estimate_tolerance_m": 0.05,
+    "upper_infill": "neutral thinframe solidback; original material unknown"
+  },
+  "entry": {
+    "projection_m": 11,
+    "width_m": 6,
+    "rises_cm": [
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "tread_run_cm": [
+      45,
+      45,
+      45,
+      45
+    ],
+    "platform_GL_m": 0.8,
+    "slab_thickness_m": 0.1,
+    "filled_core_width_m": 4,
+    "open_cantilever_width_each_m": 1
+  },
+  "end_facade": {
+    "AW6_window_m": [
+      2.8,
+      2.0
+    ],
+    "AD3_door_m": [
+      2.77,
+      2.9
+    ],
+    "AD3_leaves_m": [
+      1.6,
+      2.15
+    ],
+    "transom_m": 0.75,
+    "end_steps": "five risers span.8m;1.50run drawing-scaled estimate"
+  },
+  "AD1_front_door_m": [
+    5.65,
+    2.9
+  ],
+  "source_date_scope": "1968-08-08 core; A10 same stamped date; A12/A13 datefields blank, not assumed same-day",
+  "central_stair_facade": {
+    "source": "A5 front and rear elevations independently read; no matching schedule asserted",
+    "bay_m": 6,
+    "fin_intervals_m": 1.2,
+    "front_fin_z_m": [
+      4.3,
+      11.3
+    ],
+    "front_window_bands_z_m": [
+      [
+        5.3,
+        7.2
+      ],
+      [
+        8.8,
+        10.7
+      ]
+    ],
+    "rear_fin_z_m": [
+      6.4,
+      11.3
+    ],
+    "rear_window_band_z_m": [
+      7.7,
+      8.9
+    ],
+    "qualification": "Elevation-derived widths/frames and rear height, not explicit dimensions; front regular floor/window alignment. No ground-floor sill through AD1."
+  }
+}

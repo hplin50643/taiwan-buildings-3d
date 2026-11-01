@@ -1,0 +1,112 @@
+{
+  "status": "INDEPENDENT_SOURCE_CONTROLS_NOT_RENDER_PASS",
+  "reviewed_utc": "2026-11-01T06:49:26.379566+00:00",
+  "roof_stair_room": {
+    "sources": "A4plan,A5elev,A7stairssection",
+    "plan_label_cm": [
+      600,
+      554
+    ],
+    "plan_warning": "Keep labelledcontrol, distinguishaxis/outerwallendpoints;23cmwall and100cmcentraldoor explicit, do not casually call600x554exactouteredge.",
+    "count": "one central roof stair room; no added1981dome or speculativeendroom",
+    "main_roof_GL_m": 11.3,
+    "A7_room_roof_underside_above_floor_cm": 245,
+    "A7_top_cover_cm": 25,
+    "derived_room_top_GL_m": 14.0,
+    "upper_glass_block_band_cm": [
+      210,
+      245
+    ],
+    "glass_note": "A7 labels玻璃磚;A4/A5show patternedhighband, notsolidplainwall; individualpattern maybesimplified."
+  },
+  "entry": {
+    "source": "A13MCMAMRMNMD plusA2",
+    "platform_width_cm": 600,
+    "tread_width_cm": 600,
+    "platform_and_stair_total_projection_cm": 1100,
+    "tread_run_cm": 180,
+    "four_tread_depth_cm": 45,
+    "five_riser_height_cm": 14,
+    "total_stair_rise_cm": 70,
+    "lower_pavement_above_GL_cm": 10,
+    "platform_above_GL_cm": 80,
+    "cross_section_width_chain_cm": [
+      100,
+      400,
+      100
+    ],
+    "width_chain_interpretation": "100/400/100 marks underside support/foundation lines, not narrower400tread;plan treadsdrawn continuousfull600.",
+    "under_platform": "Central400betweenwalls mayremainfilled per夯實填料;outer100eachside cantileveredslab withopenunderedge, notwhole600widegroundfill.",
+    "slab_thickness_cm": 10
+  },
+  "bridge": {
+    "source": "3/A8direct transverse section withGL",
+    "width_cm": 600,
+    "lower_pavement_above_GL_cm": 10,
+    "lower_pavement_to_bridge_floor_cm": 300,
+    "derived_bridge_floor_GL_m": 3.1,
+    "outer_story_chain_cm": 310,
+    "derived_upper_roof_reference_GL_m": 6.2,
+    "top_edge_extra_chain_cm": 30,
+    "derived_edge_top_GL_m": 6.5,
+    "internal_clear_height_label_cm": 313,
+    "dimension_discrepancy": "313internalclear versus310externalchain retained; do not add313asfinishedroofheight silently.",
+    "side_infill": "90cmsolidlowwall+10cmcap, upperthinlinedinfill/frame ofuncertainmaterial; notfullheightplainopaqueconcretewall.",
+    "A3_graphic_crosscheck_m": {
+      "outer_underside_about": 2.75,
+      "top_about": 6.58
+    },
+    "A8_long_section_limit": "297/313 andthreshold55/18 arelocaldifferentchains; direct3/A8GLcontrol preferred, do not elevateentirehall."
+  },
+  "source_sha256": {
+    "M7MSM6MXMD.jpg": "4f790634737ceffca89ad945bbba53a7a5bfd46687eafa7df9c35ae9be334904",
+    "MHMSM6MXMD.jpg": "e9e87c73beaec044c9527cc4a38ae718a1364e61baf99523c6494a3c89908a1c",
+    "MPMSM6MXMD.jpg": "ce4e5f1270b410d4d7efa49646c22c4b89c082ae23f509c4cde68c47df5d3886",
+    "MKMSM6MXMD.jpg": "246a238b96eeab8cda83fc9f1a708562126e3dd51ea01529202109eb0b080e72",
+    "MCMAMRMNMD.jpg": "5fcbf0daa7fdbd6e3b0e1f0f0d53f7712a75e43a1e71c78379859e42a070addd",
+    "MNMSM6MXMD.jpg": "e5fc4490587c4c36853a78ef5a2ebdafe0d7ac49adfba87624ae2034d21c8ffc",
+    "MCMSM6MXMD.jpg": "46c9bbf61301bfedaf0904083da74b5fce79c3a6e942ee445fbf32a4b79dafc3",
+    "MNMAMRMNMD.jpg": "852532c31459e11b2d2f9d938445ca2ee0eba1d9e7df86f4d9f1d2394e31ad25"
+  },
+  "scope_limits": [
+    "1968originaldesign notlatercurrentcondition",
+    "No structural/insideasbuiltclaim",
+    "No mesh/script modification byreviewer"
+  ],
+  "lecturehall_front_windows": {
+    "sources": "A4front elevation plus A12schedule MNMAMRMNMD",
+    "upper_row_count": 3,
+    "upper_type_widths_cm": [
+      542.5,
+      545
+    ],
+    "upper_height_cm": 160,
+    "upper_graphically_coordinated_GL_m": [
+      6.95,
+      8.55
+    ],
+    "middle_row_count": 2,
+    "middle_width_cm": 434,
+    "middle_width_chain_cm": [
+      108.5,
+      108.5,
+      108.5,
+      108.5
+    ],
+    "middle_height_cm": 160,
+    "middle_graphically_coordinated_GL_m": [
+      4.1,
+      5.7
+    ],
+    "lower_row_count": 2,
+    "lower_width_derived_by_alignment_cm": 434,
+    "lower_height_cm": 80,
+    "lower_graphically_coordinated_GL_m": [
+      1.9,
+      2.7
+    ],
+    "correction": "434 unequivocal magnified dimension, not420/430; 4*108.5=434.",
+    "mullions": "Upper/middletwo80cmrows withhorizontalmidframe;lowerone80cmrow no midframe.",
+    "limits": "GLsills inferredfromA4proportion; lowerwidthalignment inference; mayunify542.5/545asdisclosedprinting simplification."
+  }
+}

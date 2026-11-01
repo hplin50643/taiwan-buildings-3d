@@ -1,6 +1,6 @@
 # 國立中央大學｜校本部建築模型
 
-現行收錄 **23 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+現行收錄 **24 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
 
 ### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
 
@@ -19,7 +19,7 @@
 | [![模型預覽](buildings/ncu-hong-jing/appearance/front.png)](buildings/ncu-hong-jing/README.md)<br>[國立中央大學鴻經館](buildings/ncu-hong-jing/README.md) | [![模型預覽](buildings/ncu-mechanical/appearance/front.png)](buildings/ncu-mechanical/README.md)<br>[國立中央大學機械館（工程三館）](buildings/ncu-mechanical/README.md) | [![模型預覽](buildings/ncu-zhi-xi/previews/front.png)](buildings/ncu-zhi-xi/README.md)<br>[國立中央大學志希館](buildings/ncu-zhi-xi/README.md) |
 | [![模型預覽](buildings/ncu-space-remote-sensing/appearance/front.png)](buildings/ncu-space-remote-sensing/README.md)<br>[國立中央大學太空及遙測研究中心館](buildings/ncu-space-remote-sensing/README.md) | [![模型預覽](buildings/ncu-engineering5-b-extension/appearance/front.png)](buildings/ncu-engineering5-b-extension/README.md)<br>[國立中央大學工程五館B棟增建翼（2014–2015工程）](buildings/ncu-engineering5-b-extension/README.md) | [![模型預覽](buildings/ncu-liberal-arts-1/appearance/front.png)](buildings/ncu-liberal-arts-1/README.md)<br>[國立中央大學文學一館](buildings/ncu-liberal-arts-1/README.md) |
 | [![模型預覽](buildings/ncu-female-dorm14-front-study/appearance/front.png)](buildings/ncu-female-dorm14-front-study/README.md)<br>[國立中央大學女十四舍主入口量體研究（局部外觀）](buildings/ncu-female-dorm14-front-study/README.md) | [![模型預覽](buildings/ncu-jian-xiong-science4/appearance/front.png)](buildings/ncu-jian-xiong-science4/README.md)<br>[國立中央大學健雄館（科學四館）](buildings/ncu-jian-xiong-science4/README.md) | [![聽松台街側實際模型](buildings/ncu-ting-song-streetfront-canopy/previews/front.png)](buildings/ncu-ting-song-streetfront-canopy/README.md)<br>[聽松台街側入口與候車棚（限定研究）](buildings/ncu-ting-song-streetfront-canopy/README.md) |
-| [<img src="buildings/ncu-jude-stairside-facade-segment/previews/front.png" alt="國立中央大學 據德樓｜階梯側兩窗高框與館名牆立面截段：實際模型預覽" width="220">](buildings/ncu-jude-stairside-facade-segment/README.md)<br>**[國立中央大學 據德樓｜階梯側兩窗高框與館名牆立面截段](buildings/ncu-jude-stairside-facade-segment/README.md)** | [<img src="buildings/ncu-water-tower-1969-design/preview.png" alt="水塔｜1969年原設計圖版：實際模型渲染" width="220">](buildings/ncu-water-tower-1969-design/README.md)<br>**[水塔｜1969年原設計圖版](buildings/ncu-water-tower-1969-design/README.md)**<br>[STL](buildings/ncu-water-tower-1969-design/model.stl) · [彩色3MF](buildings/ncu-water-tower-1969-design/model.3mf) · [Blender](buildings/ncu-water-tower-1969-design/scene.blend) |  |
+| [<img src="buildings/ncu-jude-stairside-facade-segment/previews/front.png" alt="國立中央大學 據德樓｜階梯側兩窗高框與館名牆立面截段：實際模型預覽" width="220">](buildings/ncu-jude-stairside-facade-segment/README.md)<br>**[國立中央大學 據德樓｜階梯側兩窗高框與館名牆立面截段](buildings/ncu-jude-stairside-facade-segment/README.md)** | [<img src="buildings/ncu-water-tower-1969-design/preview.png" alt="水塔｜1969年原設計圖版：實際模型渲染" width="220">](buildings/ncu-water-tower-1969-design/README.md)<br>**[水塔｜1969年原設計圖版](buildings/ncu-water-tower-1969-design/README.md)**<br>[STL](buildings/ncu-water-tower-1969-design/model.stl) · [彩色3MF](buildings/ncu-water-tower-1969-design/model.3mf) · [Blender](buildings/ncu-water-tower-1969-design/scene.blend) | [<img src="buildings/ncu-science-hall-1968-design/preview.png" alt="科學館1968原設計：實際模型渲染" width="220">](buildings/ncu-science-hall-1968-design/README.md)<br>**[科學館（科學一館）｜1968年原設計圖版](buildings/ncu-science-hall-1968-design/README.md)**<br>[STL](buildings/ncu-science-hall-1968-design/model.stl) · [彩色3MF](buildings/ncu-science-hall-1968-design/model.3mf) · [Blender](buildings/ncu-science-hall-1968-design/scene.blend) |
 
 ## 驗證與證據界線
 
@@ -34,3 +34,7 @@
 陳其寛、劉應昌，T2另列黃寶瑜；CCCK19104006／007校核欄58.6.20（1969-06-20）原設計圖。槽內徑3.66／3.60m差異採T1不平均；槽內實心核、爬梯簡化及回彎管增粗為製造處理。精確現址與保存狀況未核，校本部僅作既有目錄分組，不宣稱已定位基地；非竣工或2026現況。
 
 上述新增模型保留設計者與國立臺灣博物館典藏來源。來源圖像CC BY-NC標示（版本未明）與自行編寫程式／重建模型權利分開，不自動概括整包模型僅限非商業，也不宣稱已獲原圖或建築設計無限制商用權利。不附來源原圖、PDF或私人參考資料；皆未實體試印。
+
+## 科學館原設計研究
+
+陳其寛、劉應昌、黃寶瑜原設計；核心圖組日期1968-08-08，配合同案詳圖，未定年詳圖不推定同日。三層主棟、屋頂樓梯塔、連橋與階梯教室外觀；不是竣工或2026現況，不含1981年後加天文台圓頂。圖間尺寸差、橋底及窗臺等估讀、實心外觀與細件製造限制均保留，未實體試印。
