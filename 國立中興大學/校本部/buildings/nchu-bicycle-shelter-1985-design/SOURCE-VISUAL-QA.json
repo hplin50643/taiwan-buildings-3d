@@ -1,0 +1,74 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "review_utc": "2026-11-01T10:31:30Z",
+  "reviewer": "review_dorm_source_controls",
+  "render_version": "v4 final10views; unchanged finalgeometry",
+  "mesh_sha256": "4cec69c13cdbef7764ab433096259c469c22a5b4b8bcd0da30413711cce170c2",
+  "triangles": 3468,
+  "binding_sha256": {
+    "build_model.py": "86f00573baeefd67faec32ab785d8417721624420d270fd91e614e33054a62fa",
+    "README.md": "6a645155bae2d32cbf69b27072c5397313e498f845daa26567ac4a00bbf90eee",
+    "render_model.py": "1c558b9b064ae17cfb974862b637c73bca69697bc9616f8db128a35e9afd6fb5",
+    "SOURCE-CONTROLS-REVIEW.json": "2243016dd1d6b4baa141f376466f194950611e3b3796c5e68865eef4e02d74cc",
+    "components.json": "0086976c371d1591c27297b7684316399eaf2412d472d735f6062b0d62ef2d4c"
+  },
+  "png_sha256": {
+    "east.png": "0b133c3d193e0cc6899c2e45dc96ae5ea4a50c1ea8a1deb6a83d30915bfe2944",
+    "north.png": "642b44648d782321c45d76c8516e8735e98712b380285dca337a6a64ff2e8efa",
+    "preview.png": "f67e6729a5655993c475ba1a1a1a7711308a2102a658cc59f233e3e4978df7d4",
+    "rack-detail.png": "821d35186f551f1d26b2936d4803cc8b9f33ce2facebed6e92282bc96b69e9db",
+    "rear.png": "6ee1432de1ac7b5c3299842db7d410629092403da03ae78eb59d9621c063ced9",
+    "roof-section-detail.png": "dfea09e3b83e4442ae6687e5105044db2f45a41448bf00e78a3df98152242ccb",
+    "south.png": "221aff1b17bd7314ce60df93f5a1e39f5d80a8abc6bf396cb1af1ec8a37cc567",
+    "top.png": "9849d47c18e281eeb23975b85e698e55506c2e62ab9f67f1b3a0f47031ce5a6c",
+    "underside-detail.png": "780dfac9ce657ef69169da94a16a2a3c0fc97feeda15f5a48f3e03c0b2734cb3",
+    "west.png": "e1d25a27b2e0c329e9eefd6e48eeca25be60ed70b5e6010aab1e2809442ecbce"
+  },
+  "source_sha256": {
+    "MNMDMGMLMD.jpg": "53be83b2fe864021e9f01cb4ad360b9ce2944f1e5821736e48b17309a2d9a3d4",
+    "MCMDMGMLMD.jpg": "c223d2699f5fb9a53a662505b76f3d19ae4bb5b34f818703dd360a5d4cfe4d42",
+    "MLMDMGMLMD.jpg": "2493c4308f3052f05fd3f61da91c92bcb9a2f466914730d2a4af73a9ec32d6ff"
+  },
+  "method": "Independently inspected threeactualsource rasters and enlarged A41section/beam/rackdetails; reviewed finalcode andREADME; individually viewed all10finalPNGafterrender-v4.logSavedscene/Blenderquit. Format/rebuild/reopen tests remain builder separate evidence.",
+  "verified": [
+    "Rightuncrossedthree-column18.48x5.00mshortshelter,notcrossedlongfive-columnscheme.1985-03revisionidentitypreserved.",
+    "Three35cmsquarecolumnsatx3.08/9.24/15.40;y0;open-sidedbelowroof.",
+    "GLheightchain5+205+30+20=260cm;10cmVslabseparatefromcentral25x40RG2,20x20edgeRG4,and40-to20transverseRG5.",
+    "Allouterroofbeamfaceskeptinside18.48x5.00outline;notaxispluswidthinflation.",
+    "RG1type-directedtaperexplicitlydisclosedagainstconstant-depthdrawnprofile;noassertionthatambiguityisresolved.",
+    "Fourrackruns4/10/10/4modules at56cmpitch,28cmcolumnclearances;triangularopenframes,fourlongitudinalmembersandcentraluprights.",
+    "Rack1inchsourcebars deliberatelythickenedto6cmfor0.6mmat1:100,centerlineheight/base datum retained;READMEexplicitlystatesgeometrychangeandpartialembedintopavement.",
+    "Noinventedbicycles,walls,abovegroundfoundationpedestals,canceledcolumnpipes,orsurveyterrain."
+  ],
+  "visual_checks": {
+    "whole_views": [
+      "preview.png",
+      "rear.png",
+      "top.png",
+      "north.png",
+      "south.png",
+      "east.png",
+      "west.png"
+    ],
+    "whole_result": "PASS: allsevenframecompletecanopyanddisplaybase. EndviewslargeenoughtoseeVprofileandtriangularrack; longviewsthreecolumnsandrackrunslegible.",
+    "details": [
+      "roof-section-detail.png",
+      "rack-detail.png",
+      "underside-detail.png"
+    ],
+    "detail_result": "PASS: intentionalpartialviews. RoofdetailshowsseparateupstandsandVpanels; obliquerackdetailshowstriangularframesratherthanmisleadingrectangularprojection; lowangleundersidedetailhasnoinadvertentnearclipblackblock.",
+    "lighting": "Neutralillustrativecolors; supplementarylightingcausessomebrightareasbutcriticalgeometryremainsreadable; notphotographicmaterialverification."
+  },
+  "limits": [
+    "Historicaldesigninterpretationonly; actualconstruction,currentexistenceandcolorsunverified.",
+    "RG1text/drawingprofileambiguityretained.",
+    "Slab/beamfinishfacesandveryfinedrip/mortar/mosaicdetailsidealized.",
+    "Pairedwheel-slotbars,anchors,boltsandweldssimplified;6cmrodsareNOThistoricalbardiameter.",
+    "Pavementflattened+5cm,replacingdrawncrown;hiddenfootings/aggregateomitted;displaybaseauthored.",
+    "Threepostrevisiondrainageoutletsnotdimensionallyresolved:hole/pipedetailsomittedandmodeldoesnotfunctionallydrain.",
+    "Noactualprintorsupporttest; watertightnessdoesnotguaranteeprintability,structuralsafetyorcompliance.",
+    "Originalrastersremainprivate;rights/attributionseparatefromderivedmodel;noassertionofunrestrictedcommercialrights."
+  ],
+  "blocking_issues": [],
+  "release_scope": "Source/visualreviewpermitsfreezeofexactboundfilesafterbuilderseparateformat/rebuild/reopenchecks. AnygeometryorPNGchangeinvalidatesaffectedbinding."
+}

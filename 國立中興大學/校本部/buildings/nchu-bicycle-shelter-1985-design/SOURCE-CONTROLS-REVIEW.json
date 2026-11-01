@@ -1,0 +1,117 @@
+{
+  "status": "SOURCE_REVIEW_PASS_WITH_EXPLICIT_RG1_PROFILE_INTERPRETATION_REQUIRED",
+  "scope": "Only right-hand uncrossed three-column1848x500cm canopy,1985-03revision. Threeactualsource rasters independently viewed, A41 enlarged structural and rack details inspected. NotmodelvisualPASS.",
+  "source_sha256": {
+    "MNMDMGMLMD.jpg": "53be83b2fe864021e9f01cb4ad360b9ce2944f1e5821736e48b17309a2d9a3d4",
+    "MCMDMGMLMD.jpg": "c223d2699f5fb9a53a662505b76f3d19ae4bb5b34f818703dd360a5d4cfe4d42",
+    "MLMDMGMLMD.jpg": "2493c4308f3052f05fd3f61da91c92bcb9a2f466914730d2a4af73a9ec32d6ff"
+  },
+  "coordinates": "Metres; x0..18.48 alonglength, y−2.50..+2.50 acrosswidth, GLz0. Allproposed coordinates below are interpreted idealized geometry, not originalCAD.",
+  "version_controls": [
+    "A40crossedlongfive-columnschemeexcluded.",
+    "A41crossedRG3andadditionalfoundationexcluded.",
+    "1985-03revisioncancelscolumnembeddeddownpipesandcallsdirectdrainagetogroundatthreelocations; donotinventcanceledrouting.",
+    "A38onlycontext/identity,notprecisemetricsiteplacement."
+  ],
+  "explicit_dimensions": {
+    "roof_outline_m": [
+      18.48,
+      5.0
+    ],
+    "x_chain_m": [
+      3.08,
+      6.16,
+      6.16,
+      3.08
+    ],
+    "column_centers_x_m": [
+      3.08,
+      9.24,
+      15.4
+    ],
+    "column_center_y_m": 0,
+    "column_square_m": 0.35,
+    "height_chain_m": [
+      0.05,
+      2.05,
+      0.3,
+      0.2
+    ],
+    "outer_roof_top_GL_m": 2.6,
+    "RS1_RS2_slab_m": 0.1,
+    "RG2_section_m": [
+      0.25,
+      0.4
+    ],
+    "RG4_section_m": [
+      0.2,
+      0.2
+    ],
+    "RG5_section_m": "width.25; depth.40atcenter tapering.20atouterend",
+    "RG1_label": "25x40~20cm; see source discrepancy below"
+  },
+  "roof_buildable_interpretation": {
+    "slab": "For |y|<=2.50: underside z=2.10+.30*abs(y)/2.50; topsurface underside+.10. Thisis thin10cm inwarddrainingVslab, NOTuniform20cmthickVroof.",
+    "central_longitudinal_RG2": "x3.08..15.40, y±.125, z2.10..2.50.",
+    "edge_longitudinal_RG4": "Both outside longitudinaledges, width.20placed inward ofy±2.50 to preserve500cmoutsidewidth, z2.40..2.60. Exactbeamface-vscenter interpretation remains finite drawingprecision.",
+    "transverse_RG5": "Atx0,3.08,9.24,15.40,18.48; width.25. Profile topz2.50+.10*abs(y)/2.50; bottomz2.10+.30*abs(y)/2.50, thickness40..20cm. Putendbeamsinward ofx0/18.48, notbeyond1848cmoutline.",
+    "RG1_cantilever": "Label25x40~20suggestsdepth40atcolumn/end20. Aplausiblemodelkeeps top2.50 and changes underside from2.10atcolumn to2.30atfreeend. BUT longitudinal drawnoutlineisessentiallyconstantdepthandhas40atend. Alinear taperis an EXPLICIT INTERPRETATION,notfullyresolveddrawnprofile; disclose. EndtransverseRG5canstillreach2.10locally.",
+    "slab_beam_reading_basis": "A41 architecturalcrosssection showssloping10cmslab withcentralupstandto2.50 andedgeupstandto2.60; structuralRS/RG5profilesconfirm. 5+205 givescenterlowestsoffit210; +30outersoffit240; +20outertop260.",
+    "finishes": "Thinwaterproofmortar,paint/mosaic/dripgroove geometriesnotindependentlydimensioned; simplify/disclose, notadditionalguessedstructuralthickness."
+  },
+  "rack_controls": {
+    "shape": "Open triangularsquaresteelbarframes, NOTsolidtriangularprism and no fabricatedparkedbicycles.",
+    "bar_section_m": 0.0254,
+    "width_between_basebar_centers_m": 0.876,
+    "apex_above_basebar_center_m": 0.438,
+    "base_center_y_m": [
+      -0.438,
+      0.438
+    ],
+    "apex_center_y_m": 0,
+    "basebar_above_floor_m": 0.0125,
+    "source_note": "A41large1:6detail43.8dimensionreferencesbarcenterlines; additional1.25cmfrombasecenter tofloor agreeswith1inchhalfwidth.",
+    "nominal_pavement_top_GL_m": 0.05,
+    "suggested_bar_center_z_m": {
+      "base": 0.0627,
+      "apex": 0.5007
+    },
+    "four_x_segments_m": [
+      [
+        0.56,
+        2.8
+      ],
+      [
+        3.36,
+        8.96
+      ],
+      [
+        9.52,
+        15.12
+      ],
+      [
+        15.68,
+        17.92
+      ]
+    ],
+    "module_m": 0.56,
+    "end_segment_modules": 4,
+    "inner_segment_modules": 10,
+    "column_center_to_rackend_m": 0.28,
+    "longitudinal_members": "Basebarsaty±.438 pluscenterbasebarandtopapexbar; triangularslopebarsandcentralvertical showninsection. Pairedwheel-slot subdivisions visible butnotallsmallspacingsdimensioned: preserveasgraphicalapproximationor disclose simplifiedframing.",
+    "anchors": "2mmthick1.5x10cmplates@60cmcalledout; omitfinehardwareexplicitlyifneeded.",
+    "print_limit": "1inchbars becomeextremelythinatreducedscale; donotsilentlythicken. Chooseanddocumentdisplayorprintvariant and verifyconnectivity."
+  },
+  "ground_foundation": {
+    "pavement": "A41shows10cmRCover10cmaggregateand5cmraisedpavement,slightcenterdrainagecrown. Flat+5cmisdisclosedsimplification.",
+    "F1": "150x250x35cmbelowground; mustnotbecomeabovegroundplinth.",
+    "terrain": "Authoreddisplaybaseisnotgeographicsurvey."
+  },
+  "open_questions_and_limits": [
+    "RG1tapercannotbeassertedasexact; textual40~20anddrawnconstantprofileconflictmustremainvisibleinREADME.",
+    "Roofoutsideoutlineheld18.48x5.00, whilebeamwidthfacealignmentisaninterpretedplacement.",
+    "Drainagerevisiondoesnotestablishcompletepostrevisionoutletgeometry; do notinventpipes.",
+    "Noverifiedasbuilt/currentexistence/materialcolor; historicaldesignonly.",
+    "Sourceimagesandcropsprivate; publicsourcecitations/derivedQAonly."
+  ]
+}
