@@ -1,3 +1,35 @@
+# 政治大學志希樓｜同項目彩色材質更新
+
+## 彩色模型預覽
+
+**原 1026 三角面與 STL 幾何不變，不增加套數。** 依 2021 年表列外觀照片，使用灰洗石子、淺灰框、深灰凹面與檐帶；真實建物本來以灰色系為主，不為顯示「彩色」任意塗成鮮豔顏色。未核屋頂大面與背面保持中性，不聲稱現況測繪。
+
+| 整體 | 反向 | 正面 |
+|---|---|---|
+| ![整體](preview.png) | ![反向](rear.png) | ![正面](front.png) |
+| ![後面](back.png) | ![西面](west.png) | ![東面](east.png) |
+| ![屋頂](top.png) | ![入口](entry-detail.png) | ![內庭](courtyard-detail.png) |
+| ![屋面](roof-detail.png) | | |
+
+## 可用檔案與限制
+
+- `appearance.3mf`：六種逐面基本材質、毫米單位；`scene.blend` 為彩色場景，`appearance-materials.json` 為近似色族。色票不是現場校色數值。
+- `model.stl`、`build_model.py` 保持原檔字節。原公開包未附 OBJ，不虛稱保留不存在的原 OBJ。STL 本身不含顏色，不能稱原 STL 已變彩色。
+- 六材質外觀 **不是已驗證四色切片檔**；未驗耗材映射、切片器匯入或實際列印。深色窗只是既有凹面示意，不新增門扇／玻璃／室內。
+- 2021 表列照片顯示灰鋁玻璃入口，未採未註年官照的較早紅門。照片拍攝年份未知，不將報告日期當拍攝日期。
+- 屋頂大面與背部無充分色證；不能由「文化瓦」一詞猜紅瓦。原簡化幾何、空白背面與比例限制全部繼續有效；材色更新不等於幾何精修。
+- 原單色 `previews/`、`validation.json` 及原輔助檔保留歷程；原 `render_preview.py` 為舊單色程序，請勿用它覆蓋新版彩色場景。
+
+## 可重現與查核
+
+`python build_model.py` 重建原幾何；`python colorize_model.py` 分材；`python export_appearance.py` 輸出彩色 3MF；`blender -b -P render_color.py` 重渲染。`python validate_color.py` 核原檔、三角座標、3MF 材質及隔離重建，`blender -b -P verify_color_scene.py` 重開查核。保留隔離目錄，不自動刪檔。
+
+## 色彩來源與權利
+
+採[政大官方公開報告](https://osa.nccu.edu.tw/CSRC/files/169362228269a7c8ada230d.pdf)第 37 頁正側外觀照片（表格日期 2021-10-01），僅使用建築外觀，不涉及內部安全配置；[圖書館校史頁](https://nccuwiki.lib.nccu.edu.tw/index.php/志希樓)供身份與材料文字交證。原頁／照片未確認 CC 授權，僅私人參考，不隨模型公開、不貼圖。原創材色遮罩與渲染不重新授權來源照片或建築設計，也不保證商用權利。
+
+## 原模型範圍與限制（仍有效）
+
 # 國立政治大學｜志希樓
 
 ## 模型預覽
