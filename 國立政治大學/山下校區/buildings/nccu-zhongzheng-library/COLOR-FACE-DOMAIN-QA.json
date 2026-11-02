@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": {
+    "-54_spandrel_uniform": true,
+    "54_spandrel_uniform": true,
+    "-52_window_backs_uniform": true,
+    "52_window_backs_uniform": true,
+    "front_corner_whole_plane_lightgray": true,
+    "diagonal_shoulder_whole_planes_gray": true
+  },
+  "face_counts": {
+    "-54": 30,
+    "54": 30,
+    "-52": 6,
+    "52": 6,
+    "front_corner": 310,
+    "front_shoulders": 137
+  },
+  "mesh_sha256": "91f8039a0fcaece53c1441e0d14143b455b4d67d8ac908e3e10832e59a386e94",
+  "purpose": "Existing planar groups use consistent material, preventing diagonal artificial paint boundaries; not a full surface color survey claim."
+}
