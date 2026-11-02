@@ -1,0 +1,42 @@
+{
+  "status": "PASS_SOURCE_TEN_VIEW_VISUAL_WITH_DISCLOSED_DESIGN_LIMITS",
+  "checked_utc": "2026-11-02T08:02:45.981348+00:00",
+  "mesh_sha256": "401c9d0ebf478dd992bcec5fe1946a8a2e2a904d8735f2846e1094b0f3af8939",
+  "build_code_sha256": "56bda3b87798f2bbf8fc63f797545fecb8353795212c028fb74fdd0612a6e616",
+  "render_code_sha256": "2b2a4c5b02ed328277fa20ac2714d963e1f3a6c2220301251763f5a848b11160",
+  "readme_sha256": "06011ab50e284af38e482d9a2cc4adfe8834f978c811bd56338633e7c6f42188",
+  "png_sha256": {
+    "preview.png": "9434c8fffe7700fbddd03e3c7d9b0aec895f5485b4065df6ae7a7b6f962f9904",
+    "rear.png": "fe8c17972420c4f23a26cb5acade9beebb01d287620edf2e610efed43f177a55",
+    "front.png": "9d481ee7393a985480e7d0ec67e44b59466487b4854ec4ca70353f29b0759546",
+    "back.png": "40b33bdcf8fd554bd9cf278c7b089c9e0ac2925deda44ca768a3467b73797e45",
+    "west.png": "58e680b173f18cb2d7d1bfcbd26ba117e7c0adfb39db5caccba1993593081e7e",
+    "east.png": "c0aca4a5dc7ca32c525a373f08f8a82b57c74f1947ae50747fdf4ce8e5a86d54",
+    "top.png": "c8c886a4dd2f72ed5a6244d411cf4149476c99b44911bd1f49774b62679a21e8",
+    "entry-detail.png": "6d12f30372b6a85a30a94d595e26e73ee897f9d8cc0cbe4a6b297dddbf5b7762",
+    "court-detail.png": "494c2aec88d0e878910b9c595a8fcb0d0b57b7575b98a55b41a99e116c8a976e",
+    "roof-detail.png": "5a8dd18ef5faded45f2312186ce9e0741b4ee7cb75eee0932ebf01710e42e080"
+  },
+  "private_independent_review_sha256": "aeb048010af1dcb3b440f7c26850cae10245999aec4ed26bcea9d2e4fa517d1d",
+  "source_go_sha256": "f165933102e72bb25ee15b49725fd5ddc336f224c4ab566dd2520513703c705b",
+  "checks": {
+    "north_classroom_separate_from_pool_court": true,
+    "roof_court710_to725_and_net1185": true,
+    "low_roof1110_low_screen1350_high_screen1620_distinct": true,
+    "east_and_west_window_sequences_not_mirrored": true,
+    "high_screen_actual_visible_openings_not_buried": true,
+    "east_service_W3_W4_DW5_present": true,
+    "north_entry_and_east_accessible_approach_disclosed_coordination": true,
+    "three_tanks_three_external_heatpump_groups_no_internal_equipment": true,
+    "excluded_site_ramp_not_filled_as_claimed_original_platform": true,
+    "seven_full_views_and_three_intentionally_cropped_details": true
+  },
+  "limitations": [
+    "2019design only, not2022asbuilt/current survey",
+    "MissingA4-06; highestoutline16.20±.15 graphical interpretation, finerpanels/windows bounded simplification",
+    "DW1externalspot unreadable; nominal+.95 and derivedrampsegments are modelingconventions not printedconstructiondimensions",
+    "Sitecarpark ramp/standalone116 excluded; displaybase not originalterrain",
+    "1:250 unprinted; coarsefence lattice and smallmembers need print-specific review",
+    "SourceofficialPDF noCC licence established; independentgeometry and attribution only; no originalscans in package"
+  ]
+}
