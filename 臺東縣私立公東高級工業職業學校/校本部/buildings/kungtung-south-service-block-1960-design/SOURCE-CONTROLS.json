@@ -1,0 +1,107 @@
+{
+  "units": "metres before scale",
+  "footprint": [
+    24.05,
+    10.5
+  ],
+  "floors": [
+    0,
+    3.45
+  ],
+  "roof_edge_derived": 6.77,
+  "roof_slope": 0.02,
+  "roof_vertical_reconstruction_uncertainty": 0.25,
+  "trough_outer_width": 1.8,
+  "trough_inner_width": 1.3,
+  "trough_bottom": 5.95,
+  "trough_lip": 7.0,
+  "trough_tolerance": 0.05,
+  "chimney_square": 0.84,
+  "chimney_top_graphical": 6.77,
+  "chimney_tolerance": 0.1,
+  "screen_source_thickness": 0.08,
+  "screen_print_thickness": 0.12,
+  "screen_clear_gap": 0.7,
+  "stair_risers": 20,
+  "stair_rise": 0.1725,
+  "treads_per_run": 9,
+  "tread": 0.28,
+  "scope": "Exterior only, declared surface coordination; do not infer hidden globally horizontal slab/precise clear room heights.",
+  "facades": {
+    "main_bays_x": [
+      [
+        6.1,
+        8.335
+      ],
+      [
+        8.655,
+        10.89
+      ],
+      [
+        11.21,
+        13.445
+      ],
+      [
+        13.765,
+        16.0
+      ]
+    ],
+    "north_ground_z": [
+      0.75,
+      1.45
+    ],
+    "south_ground_z_graphical": [
+      [
+        0,
+        2.1
+      ],
+      [
+        2.4,
+        3.1
+      ]
+    ],
+    "upper_z": [
+      4.1,
+      6.2
+    ],
+    "kitchen_local_chain_residual_m": 0.05,
+    "small_opening_graphical_tolerance_m": 0.15,
+    "east_ground": "2m covered exterior strip; no facade glazing across columns",
+    "west_east_upper_z": [
+      [
+        4.1,
+        5.5
+      ],
+      [
+        5.75,
+        6.45
+      ]
+    ],
+    "west_east_solid_transom": [
+      5.5,
+      5.75
+    ],
+    "main_upper_z_is_graphical_not_end_section": [
+      4.1,
+      6.2
+    ],
+    "west_ground_north_kitchen_east_recessed_high_z": [
+      2.4,
+      3.1
+    ]
+  },
+  "source_control_review_sha256": "7ec888dac4dfbe2a25c2347c92d4bd499e0569fb77cd09cdbb47515589292661",
+  "facade_correction_sha256": "99d51e2d0d37c3fb591f8d65aa3c49fb2987a4c16068175ec2f0c2c9e29c05aa",
+  "open_timber_guards": {
+    "height_graphical": 1.0,
+    "members_print_m": 0.12,
+    "spacing": "graphic simplification; not opaque walls"
+  },
+  "east_firecourt_local_floor": -0.04,
+  "guard_firecourt_appendix_sha256": "dc89428c746dc0ca159e1b514c824f53c08bd6a367ebcca888fcdd8bfedb95c4",
+  "east_firecourt_end_returns_m": 0.25,
+  "chimney_top_aperture_graphical_m": 0.45,
+  "chimney_aperture_tolerance_m": 0.1,
+  "chimney_recess_depth_print_only_m": 0.25,
+  "end_return_appendix_sha256": "d20f02af8aa9dae396add3f687e12763cc3e7e8ce7045b7971de6d472b136294"
+}

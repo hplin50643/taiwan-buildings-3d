@@ -1,0 +1,47 @@
+{
+  "status": "PASS_SOURCE_TEN_VIEW_VISUAL_WITH_DISCLOSED_HISTORICAL_LIMITS",
+  "checked_utc": "2026-11-02T09:59:15.505243+00:00",
+  "mesh_sha256": "26a4d6236ffd17ac1ec3460bf11ece611d617a5dade6e9f37357b06a58274215",
+  "build_code_sha256": "42c44c4187859fa4b2c4a853874741b04294434bfa88404409ad7934f7be7249",
+  "render_code_sha256": "28b52b52b2c1aac849a2ec63c3fa43d02596f30761858d5c2afbdc76c3813cc8",
+  "readme_sha256": "2f56429c1ef5f7d44ca4adbbe46c62183f34196075bf2604638d16ea137869ac",
+  "png_sha256": {
+    "preview.png": "e58b5b19c70e0a92a0ee30a811a69f2447e6404ec9d2569b8af006880b0cb27d",
+    "rear.png": "b0109967a3dec16cd4b39f97a97e785e0d3e4221652d30cce4079f113a6ca0c2",
+    "front.png": "9b0444c8babd6780c8771906838b106e0f0465bb4e6b5c98e0c440ffa3cc7e57",
+    "back.png": "ffe9126e88909f7a7fb2408f73bb7e025727c0712c6fc1705627dcf13097cb3a",
+    "west.png": "63b5ba33648d6208b26bc0ec03fe6e92ff71553493b5e8d9f8d1468916f14c58",
+    "east.png": "dee35593c3930d30789dace893683455d6c6a1f366a1bce58f4067953d6c1b0d",
+    "top.png": "757773c581622c5bba79c26fdc2950bb476a2122faec0ba411794ec41d604487",
+    "stair-detail.png": "0522e3e6b49c9c16a58ba5b01dc5e305a4ef70d35bbf70809815eea441b4efb1",
+    "trough-detail.png": "b2abc7813fe7aa5a7ccef3eef229e0a44bc7873749003384fe95cc35a91fd527",
+    "screen-detail.png": "be198490fec18743af02cc433f1300ce7a5d17c7f2a76d466429ad9c2ff93781"
+  },
+  "private_independent_review_sha256": "b217c5117f0f3a05548e112ecf437799eb2b3ea205022eaaa2be419dac07b76e",
+  "source_go_sha256": "50819b703887034fd62e8390a1cb1d65ec719cff8dd20569358ac7ade624cef3",
+  "checks": {
+    "single_south_service_building_not_chapel_or_TraktII": true,
+    "February_architecture_April_roof_topology_only": true,
+    "open_stair20risers9treads_per_run_and_full_north_landing": true,
+    "open_timber_guards_not_boardwalls": true,
+    "central_trough_has_bottom_not_through_void": true,
+    "roof_slope_toward_trough_with_disclosed_uncertainty": true,
+    "north_south_and_end_window_semantics_separate": true,
+    "ground_east_open_strip_recessed_windows_and_end_returnwalls": true,
+    "chimney_visible_top_recess_graphical": true,
+    "screen_standoff_and_thickening_disclosed": true,
+    "seven_full_views_three_intentional_details": true
+  },
+  "limitations": [
+    "1960historical exterior interpretation,not exactasbuilt/current survey",
+    "Derivedroofedge6.77,2percent towardtrough;wholeposition±.25m reconstruction convention",
+    "Troughbottom5.95/lip7.00±.05;not throughhole",
+    "Endupperwindow140+25+70not mainnorth/south continuous graphical210",
+    "Kitchenlocalchainresidual5cm; smallwindow/doorpositions±.10to.15m",
+    "Screens8cm thickened12cm; timberrails/frames simplified; opaque glazing",
+    "Chimney84cm square/nominaltop6.77±.10; opening45±10cm graphical,recess25cmprintonly",
+    "Display support notterrain;hiddenbasement/equipment not reconstructed;eastlocalFminus4cm retained",
+    "1:150 unprinted,no supportfree/manufacturing guarantee",
+    "OriginalimagesCCBYNCprivate;no commercial-rights guarantee"
+  ]
+}

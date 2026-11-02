@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": {
+    "mesh.npz": true,
+    "model.stl": true,
+    "components.json": true,
+    "palette.json": true
+  },
+  "input_sha256": {
+    "build_model.py": "42c44c4187859fa4b2c4a853874741b04294434bfa88404409ad7934f7be7249",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "artifact_sha256": {
+    "mesh.npz": "26a4d6236ffd17ac1ec3460bf11ece611d617a5dade6e9f37357b06a58274215",
+    "model.stl": "d80bce0451fb7c54263a5bc0450654e0dd57cd6d52ca34c6ffe3d458c7402984",
+    "components.json": "10e99ab9115810e117cf274c629cef04d0a6a6cf27b16c08f2d8fcca68f2c516",
+    "palette.json": "967c831a9fa22df191af345deee98440484fa34e2e26f03424b845657375fc44"
+  },
+  "mesh_sha256": "26a4d6236ffd17ac1ec3460bf11ece611d617a5dade6e9f37357b06a58274215",
+  "isolated_complete_two_input_rebuild": true,
+  "retained_rebuild_directory": "Privately retained isolated rebuild directory; absolute location omitted from public report",
+  "automatic_deletion": false
+}

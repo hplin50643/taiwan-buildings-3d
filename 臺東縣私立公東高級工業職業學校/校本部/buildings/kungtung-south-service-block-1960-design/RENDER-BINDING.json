@@ -1,0 +1,91 @@
+{
+  "status": "PASS_AUTOMATED_CHECKS_NOT_VISUAL_RELEASE",
+  "mesh_sha256": "26a4d6236ffd17ac1ec3460bf11ece611d617a5dade6e9f37357b06a58274215",
+  "render_code_sha256": "28b52b52b2c1aac849a2ec63c3fa43d02596f30761858d5c2afbdc76c3813cc8",
+  "scene_sha256": "7c18e8bbbb7aeb3d0f36b9b81e34dacfb1fec60385ac48e4c8f43b5d09d51aaf",
+  "build_input_sha256": {
+    "build_model.py": "42c44c4187859fa4b2c4a853874741b04294434bfa88404409ad7934f7be7249",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "images": {
+    "preview.png": "e58b5b19c70e0a92a0ee30a811a69f2447e6404ec9d2569b8af006880b0cb27d",
+    "rear.png": "b0109967a3dec16cd4b39f97a97e785e0d3e4221652d30cce4079f113a6ca0c2",
+    "front.png": "9b0444c8babd6780c8771906838b106e0f0465bb4e6b5c98e0c440ffa3cc7e57",
+    "back.png": "ffe9126e88909f7a7fb2408f73bb7e025727c0712c6fc1705627dcf13097cb3a",
+    "west.png": "63b5ba33648d6208b26bc0ec03fe6e92ff71553493b5e8d9f8d1468916f14c58",
+    "east.png": "dee35593c3930d30789dace893683455d6c6a1f366a1bce58f4067953d6c1b0d",
+    "top.png": "757773c581622c5bba79c26fdc2950bb476a2122faec0ba411794ec41d604487",
+    "stair-detail.png": "0522e3e6b49c9c16a58ba5b01dc5e305a4ef70d35bbf70809815eea441b4efb1",
+    "trough-detail.png": "b2abc7813fe7aa5a7ccef3eef229e0a44bc7873749003384fe95cc35a91fd527",
+    "screen-detail.png": "be198490fec18743af02cc433f1300ce7a5d17c7f2a76d466429ad9c2ff93781"
+  },
+  "image_sizes": {
+    "preview.png": [
+      1200,
+      900
+    ],
+    "rear.png": [
+      1200,
+      900
+    ],
+    "front.png": [
+      1200,
+      900
+    ],
+    "back.png": [
+      1200,
+      900
+    ],
+    "west.png": [
+      1200,
+      900
+    ],
+    "east.png": [
+      1200,
+      900
+    ],
+    "top.png": [
+      1200,
+      900
+    ],
+    "stair-detail.png": [
+      1200,
+      900
+    ],
+    "trough-detail.png": [
+      1200,
+      900
+    ],
+    "screen-detail.png": [
+      1200,
+      900
+    ]
+  },
+  "freshness_timestamp_checks": {
+    "preview.png": true,
+    "rear.png": true,
+    "front.png": true,
+    "back.png": true,
+    "west.png": true,
+    "east.png": true,
+    "top.png": true,
+    "stair-detail.png": true,
+    "trough-detail.png": true,
+    "screen-detail.png": true
+  },
+  "full_model_views": [
+    "preview",
+    "rear",
+    "front",
+    "back",
+    "west",
+    "east",
+    "top"
+  ],
+  "intentional_cropped_details": [
+    "stair-detail",
+    "trough-detail",
+    "screen-detail"
+  ],
+  "limitation": "Hashes bind inspected files; freshness uses filesystem timestamps, not signed per-render provenance. Human 10-view visual QA and separate source/privacy audit remain required."
+}
