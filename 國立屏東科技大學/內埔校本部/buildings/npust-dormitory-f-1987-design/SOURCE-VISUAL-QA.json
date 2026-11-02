@@ -1,0 +1,65 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_F_ONLY_HISTORICAL_EXTERIOR_LIMITS",
+  "reviewed_at_utc": "2026-11-01T19:02:53.448750+00:00",
+  "version": "build-v4/render-v4; Blenderquit confirmed",
+  "mesh_sha256": "d517e975c8474d125f44f6bef6211cd6e27d74a480b5a6bb327df78e543d891b",
+  "artifact_sha256": {
+    "build_model.py": "da606f871d7a9d3803de6fc79fa01f52561455b88bf4f5092c548973b125b4f7",
+    "render_model.py": "43e93b6ecef68485cb105d5488e220ae0acd2faa742755208836254e917ce533",
+    "README.md": "de2b3f93ee837c511afa355130bcfdfac0b928c3d163b7870d79963fffa5df89"
+  },
+  "private_source_review_sha256": "3e62b590a0cec57d2853fcb6c0ca1670efde7eb573d95b0f5a9341a667b856dd",
+  "png_sha256": {
+    "preview.png": "c6f0cdebcc69b114e6fd3131664770fb2bcc130ad7d1b4b16460f6d278fbbfbc",
+    "rear.png": "4b7dab9a27c2093222e99eff7b1d7dc0b59214eabc37d0c34bf12242ddc93798",
+    "north.png": "29f0b7ba2a4445be27fc7018745af453f216bc04d51bbd7595b65a3a6e192b8e",
+    "south.png": "d33d7d2df86b6d67e7f96d0520c2e71a3f27a619ecf65ad4aa7d082a4f22928a",
+    "east.png": "af348b0ddba8175e3a5047f40ef0259a799bbf7549b0b0ac9f226e15962bdcaf",
+    "west.png": "818d9133b892500e642815e6dab75f7c185fc5b2fb3774bc165c7601e064e74e",
+    "top.png": "a1dd4bc37c52b1bef8ccce04f4d03b75d23f959f4658adfa3e303544706b89cb",
+    "entrance-detail.png": "29967c0f1e98a9dd3d8d5cd59c56f942b34f496efc8d653c267736126b3ce2a5",
+    "stepped-roof-detail.png": "bfa7e97af3624c79589ed288d7725b9eff747698270db8cabc82e38b5bf8cfa8",
+    "bathing-facade-detail.png": "e9f3fd95c8dfa300a014b9879adbfeee56c5171645986f8f4cc6abb569cf7ea6"
+  },
+  "image_observations": {
+    "preview": "Full framing, connectedstaggeredwings andopposedsteppedroof visible; no wrong1m longitudinalcantilever.",
+    "rear": "Full framing, bathingband distinct fromregularroom facade; historicalcaption readable.",
+    "north": "Full longrear elevation, centralbathinghighstrip groups distinct; fourlevels preserved.",
+    "south": "Full longfront elevation, regularroombays andendentry distinct; under-eave shadow remainsreadable.",
+    "east": "Full endprojection, inwardopposedroofsteps/five-circlevent relief andnormal-versus-highwindow asymmetry visible.",
+    "west": "Full oppositeend, twonormalwindowcolumns ratherthanmirroredbathingstrip.",
+    "top": "Full roofplan, connectedoffsetwings, long/shortplanes andstepedges visible, shortlongitudinalends restored.",
+    "entrance-detail": "Intentionalcrop, visibleentrypanel/transom andderivedsmallstairs; no inventedcampuswalkway.",
+    "stepped-roof-detail": "Intentionalcrop, opposinglongslopes andcentralroofintersection/step visible withoutfalsecrack.",
+    "bathing-facade-detail": "Intentionalcrop, highstripwindowbays versusroomwindows andmosaicpanels distinct; not mirrorednormalfacade."
+  },
+  "independent_mesh_checks": {
+    "triangles": 23020,
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 2019644.1924914606
+  },
+  "controls": [
+    "F-only sources; E A4-7 andunassignedA4-8excluded",
+    "61.2x21.9 axes;13.9wingwidth;8moffset",
+    "1FL0, RF14, ridge17.05; FshownGL-.55",
+    "17mroofprofile10.5+6.5,step1.16;opposedslopes;transverse125/185cm",
+    "Longitudinalendprojection.175m withventcoordinatescorrected",
+    "Facaderasterwindow/frames±.10m;fascia.82m disclosedgraphicalcoordination",
+    "Distinctbathinghighwindowsandendnormalwindows;notblindmirroring"
+  ],
+  "limitations": [
+    "Historicalexternaldesignnotcurrentsurveyorconfirmedmodernhallname.",
+    "Sevenfullviewsframed;threedetailsintentionallycropped.",
+    "All10viewsreadablehistoricalscopewarning;nooriginalscanpublic.",
+    "Missing1Finteriorplan: nohiddenentryrecess/interiorinvention;basement/terrainexcluded.",
+    "Roofclosedexternalatticnotstructuralsolidroofclaim;gutterinternalconstructionunknown.",
+    "Finewindowframesandventreliefprintadapted;neutralcolorsnotverifiedmaterialmatch.",
+    "Canceledsouthwalkwaynotrecreated;entryrisersareboundedfacadecoordination.",
+    "Earlier3cmridge/65cmGLconflictswithdrawnasunprovenFcross-sourceclaims.",
+    "Noactualprinttest;closuredoesnotguaranteeunsupportedmanufacture.",
+    "Format/rebuild/scene-reopenQAseparatebuilderresponsibility."
+  ],
+  "freeze_recommendation": "READY_FROM_INDEPENDENT_SOURCE_VISUAL_REVIEW"
+}

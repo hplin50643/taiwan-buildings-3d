@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checks": {
+    "northern_roof_bound17": true,
+    "southern_roof_bound17": true,
+    "actual_mesh_peak1705": true,
+    "north_peak_y1265": true,
+    "south_peak_y925": true,
+    "true_step116_lower1589": true,
+    "south_67_room_windows": true,
+    "north_59_room_windows": true,
+    "north_8_bath_windows": true,
+    "end12_corridor4bath_windows": true,
+    "two_visible_entrances": true,
+    "source_GOfinal_correct": true
+  },
+  "mesh_sha256": "d517e975c8474d125f44f6bef6211cd6e27d74a480b5a6bb327df78e543d891b",
+  "direct_controls_m": {
+    "axes": [
+      61.2,
+      21.9
+    ],
+    "1FL": 0,
+    "RF": 14,
+    "ridge": 17.05,
+    "GL": -0.55,
+    "roof_runs": [
+      10.5,
+      6.5
+    ],
+    "step": 1.16
+  },
+  "estimated_details_allowance_m": 0.1,
+  "eave_band_nominal_adopted_m": 0.82,
+  "excluded_cross_building_sections": [
+    "A4-7 E",
+    "A4-8 unassigned"
+  ]
+}
