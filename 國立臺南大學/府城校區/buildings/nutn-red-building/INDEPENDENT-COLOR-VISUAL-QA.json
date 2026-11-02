@@ -1,0 +1,36 @@
+{
+  "status": "PASS_BOUNDED_INDEPENDENT_COLOR_VISUAL_AND_GEOMETRY",
+  "reviewer": "parent builder independent of color implementation child",
+  "actual_views": "Three official source photographs, original code, first preview and final ten-view contact sheet inspected.",
+  "checks": {
+    "original_3142_vertices_faces_exact": true,
+    "original_STL_bytes_unchanged": true,
+    "front_gray_bay_balustrades_do_not_cross_brick_piers": true,
+    "gray_main_roof_not_red": true,
+    "courtyard_large_planes_neutral_due_missing_color_boundaries": true,
+    "unknown_end_and_return_roof_neutral": true,
+    "opaque_recess_shadow_not_blue_glass": true,
+    "README_limitations_read_and_truthful": true
+  },
+  "sha256": {
+    "README.md": "35ad21188665c76d0c620c55014ca65d24052609be75ff13ca5b48edcd953f73",
+    "colorize_model.py": "1d0c151a445451f3d6e0741358cf37c6cc9b92fb4894ab842cbf932a71e84977",
+    "color-mesh.npz": "c595e05b341e27a9c2c36fd97174646effc2999764038986e2ad590f424e067c",
+    "model.stl": "15f50381efbbf8980a172a7fe4a0a78132118206175ce463b826e497ecdf0394",
+    "palette.json": "9dc968d45d25458b375b0f904e5af5ef74a0b4f183da4b51e0da64cf3ef71846",
+    "preview.png": "ac8d7ca536cb4d764d64c736d1662d5006a93b69180be7cc1a674081c38fcba5",
+    "rear.png": "70c44d63c233c571d1aa48d4e185b14244747598c06f0d9ec2e391bce0795c90",
+    "front.png": "b84fe74aaae474639e518cdd29eee7be11d0e697a6d1f678f8ccff8b2b64e51d",
+    "back.png": "ae96afbfd65c4e7a2834727eb83c29c3e23fdc6bedee6ac28d0d5659054ab2b3",
+    "west.png": "dfe5ca333c27e667ef3b2a8055b1928966235a654211f8fa87aad24da89797b9",
+    "east.png": "526e1128c4f41e0d2edc2b989e72e2003c8d101b92a7a8076f51a2ab1b7f096d",
+    "top.png": "509f39e101e3c8df79ec2d823af9e83b8b79ed341b40812db442f02231e39c75",
+    "entry-detail.png": "6b4ed50b408023af40df5f91c6440f51946095be765171bbcb67598ff8c80b96",
+    "corridor-detail.png": "a3f2ce220dcc75ff5d93c40f6a0511306f004f0647f9a9874a482e2b3b49fc05",
+    "roof-detail.png": "0b2b8c429d6fc6ad926f7ed4addd951c4da416307bb6736bfa7032a0177cd8ca"
+  },
+  "limits": [
+    "Not exact surveyed geometry or paint colors; no unseen surfaces inferred.",
+    "Five materials not verified four-filament slicing; unprinted."
+  ]
+}

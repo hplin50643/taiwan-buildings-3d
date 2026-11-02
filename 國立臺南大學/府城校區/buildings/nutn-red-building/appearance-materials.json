@@ -1,0 +1,38 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Approximate dark gray main tile roof",
+      "hex": "#555A59",
+      "faces": 62
+    },
+    {
+      "id": 1,
+      "name": "Approximate observed red-orange brick",
+      "hex": "#A9573B",
+      "faces": 515
+    },
+    {
+      "id": 2,
+      "name": "Approximate pale gray entrance and bay balustrade",
+      "hex": "#C7C8B8",
+      "faces": 1587
+    },
+    {
+      "id": 3,
+      "name": "Opaque corridor recess shadow illustration NOT glazing",
+      "hex": "#55534D",
+      "faces": 184
+    },
+    {
+      "id": 4,
+      "name": "UNVERIFIED ends rear roofs and authored base neutral",
+      "hex": "#B3B1A7",
+      "faces": 794
+    }
+  ],
+  "geometry_policy": "3142 original triangles unchanged.",
+  "corridor_semantics": "Recess backs illustrate open-corridor shadow, not glazing or black paint.",
+  "four_color_printing": "Five appearance labels are not a tested four-filament slicer project.",
+  "limits": "Courtyard broad planes/rear roofs/ends neutral; bay panels only where existing triangles support material separation; no new gray belt across brick piers."
+}

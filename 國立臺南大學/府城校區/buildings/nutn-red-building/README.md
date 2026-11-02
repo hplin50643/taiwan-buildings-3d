@@ -1,3 +1,44 @@
+# 國立臺南大學紅樓｜同項目彩色更新
+
+## 彩色模型預覽
+
+**原幾何不變：150 × 86 × 48 mm、3142 三角面，原 STL 與建模程式位元組保留；count_delta = 0。** 本次只為既有近似模型補材質，不是重新測繪或增加建築套數。官方舊風情照片未標拍攝日，來源頁更新日不等照片日期；不主張 2026 即時現況或原始漆色復原。
+
+| 整體 | 內院反向 | 正向 |
+|---|---|---|
+| ![整體](preview.png) | ![內院](rear.png) | ![正向](front.png) |
+| ![後部](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![屋頂](top.png) | ![入口](entry-detail.png) | ![廊帶](corridor-detail.png) |
+| ![屋面](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+- 主樓照片可見斜瓦皮及屋脊採深灰，**不是因「紅樓」之名染紅瓦**。後翼屋皮未全見，保持中性未核，不冒稱全屋頂均已核色。
+- 主正面既有牆腹與廊柱近似紅橘磚；兩突出入口框／帽／階、各 bay 內欄板及小孔周面近似淺灰米。**灰欄板不跨過連續紅磚柱腹**，不是整條水平牆一律塗灰。
+- 官方廊道照片明示半戶外開廊。原模型的廊洞是有背底的淺凹，深灰僅示意陰影與深度，**不是藍玻璃、黑漆或完整空間復原**。不新增未建的窗扇、玻璃、磚縫、球飾或標字。
+- **內院照片有顯著紅磚與灰框架交錯，但原大平面缺乏相應灰柱／梁的獨立三角邊界**。本次內院大牆面保中性、真凹底保深灰陰影，不以全紅冒充實景、不切幾何或畫任意跨面灰帶。內院中性色不是照片證明的真漆；完整材色框架尚未表現。正面原有可穩定對應的欄板／洞緣另行分色。
+- 未見外端、後端、後翼屋皮及展示底座保持中性色；中性不等於現地灰漆。HEX 為照片色族展示近似，非儀器色票或修復工程漆號。
+
+## 彩色檔與列印
+
+[appearance.3mf](appearance.3mf) 為毫米單位五個基本材質逐面指派；[appearance-materials.json](appearance-materials.json) 列材料與面數。[scene.blend](scene.blend) 為原三角網格的實際彩色場景。[model.stl](model.stl) 保持原檔，**STL 本身不含顏色**。原遠端包未有 OBJ，本次不宣稱已保存原 OBJ；原建模程式重新執行可另輸出 OBJ。
+
+五材質外觀 **不等於已驗證四色耗材切片檔**；切片器材質匯入、耗材對應、換色、支撐及實際列印皆未驗證，本件**未實際列印**。彩色渲染不提升原幾何尺寸或可列印性主張。
+
+## 可重現與 QA
+
+依原 requirements 安裝後：`python build_model.py`、`python colorize_model.py`、`python export_appearance.py`；`blender -b -P render_color.py` 產生十張新圖與場景；`python validate_color.py`、`blender -b -P verify_color_scene.py` 查原 STL、逐三角座標、3MF 材質、隔離重建及場景重開。隔離資料保留，不自動刪除。
+
+本次證據為 COLOR-ASSIGNMENT-QA、COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、FRAMING-QA、SOURCE-VISUAL-QA 及 DELIVERY-QA。舊 `previews/`、`validation.json`、薄壁／截面結果皆留存作原單色歷程，不能當本次材色或四色實印證明；舊 render_preview.py 會產生單色，請勿誤覆彩色場景。
+
+## 色彩來源與權利
+
+實看校方舊南大風情[正面039](https://www.nutn.edu.tw/gac780/picture/01/p039.htm)、[內院006](https://www.nutn.edu.tw/gac780/picture/01/p006.htm)、[廊道008](https://www.nutn.edu.tw/gac780/picture/01/p008.htm)。照片日期未註，個別攝影者未在所讀頁明列；008遠景另一棟未採為本樓證據。
+
+原照片、原頁及裁圖只私人研究，不隨模型公開、不作紋理貼圖；未見個別 CC 授權，不因官方公開可看便宣稱商用或再授權權利。模型授權不含第三方照片或建築設計權利，也不保證商業使用。詳 COLOR-SOURCE-REGISTER.json。
+
+## 原模型說明與限制（繼續有效）
+
 # 紅樓｜國立臺南大學
 
 ## 模型預覽

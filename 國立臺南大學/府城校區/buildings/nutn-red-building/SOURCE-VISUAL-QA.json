@@ -1,0 +1,38 @@
+{
+  "status": "PASS_BOUNDED_EXISTING_FACE_COLOR_UPDATE",
+  "reviewer": "local implementation and final render/source inspection",
+  "inspected": [
+    "Original code and 3142-face STL",
+    "Three official front/courtyard/corridor photos",
+    "Final ten rendered views including entry/corridor/roof details"
+  ],
+  "mesh_sha256": "c595e05b341e27a9c2c36fd97174646effc2999764038986e2ad590f424e067c",
+  "checks": {
+    "original_geometry_unchanged": true,
+    "front_brick_piers_continuous_no_gray_stripe": true,
+    "bay_panels_gray_without_crossing_piers": true,
+    "entry_frame_cap_steps_lightgray": true,
+    "corridor_backs_are_shadow_not_glass": true,
+    "main_roof_darkgray": true,
+    "unknown_end_and_return_roofs_neutral": true,
+    "courtyard_mixed_framework_unmapped_planes_neutral": true,
+    "no_source_texture_or_new_geometry": true,
+    "ten_view_visual_review": true
+  },
+  "limitations": [
+    "Original closed shallow recesses only illustrate open-corridor depth; no glass or actual open-room reconstruction.",
+    "Courtyard red/gray framing is not independently split by existing geometry; broad planes remain neutral, not falsely all-red.",
+    "Five appearance labels are not a tested four-filament slicer project.",
+    "Undated official photographs, not 2026 current survey."
+  ],
+  "source_GO_sha256": "7f2c0efc0a895e27360036ab2eac99c557c84a5a3071f3d63f66ec7f0afa2d00",
+  "independent_face_review_sha256": "11ee2dd218504a55d679c4c1e42e4dde22b89efcd7a33448eea7bacf585de061",
+  "final_artifact_hashes": {
+    "README.md": "35ad21188665c76d0c620c55014ca65d24052609be75ff13ca5b48edcd953f73",
+    "color-mesh.npz": "c595e05b341e27a9c2c36fd97174646effc2999764038986e2ad590f424e067c",
+    "colorize_model.py": "1d0c151a445451f3d6e0741358cf37c6cc9b92fb4894ab842cbf932a71e84977",
+    "appearance.3mf": "73ce09ba336e9694f7fb5dba239bbd1803553f11a69dc00f84611dae905c0692",
+    "scene.blend": "070115b43739d882c7f176a8596b763ba1764c047049183b8bc98619567b0dca"
+  },
+  "parent_final_review": "Pending parent review before freeze."
+}
