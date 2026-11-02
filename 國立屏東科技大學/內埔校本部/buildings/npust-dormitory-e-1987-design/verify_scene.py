@@ -2,12 +2,12 @@ from pathlib import Path
 import bpy,numpy as np,json,hashlib
 R=Path(__file__).resolve().parent
 bpy.ops.wm.open_mainfile(filepath=str(R/'scene.blend'))
-d=np.load(R/'mesh.npz');o=bpy.data.objects.get('NPUST E dormitory1986-1987 historical PARTIAL exterior')
+d=np.load(R/'mesh.npz');o=bpy.data.objects.get('NPUST E dormitory1986-1987 historical exterior entrance complet') # Blender ID byte limit truncates the descriptive suffix
 assert o is not None
 v=np.array([x.co[:] for x in o.data.vertices]);f=np.array([x.vertices[:] for x in o.data.polygons]);sha=hashlib.sha256((R/'mesh.npz').read_bytes()).hexdigest()
 checks={'mesh_vertices_match':bool(np.allclose(v,d['vertices'],atol=1e-5)),'mesh_faces_exact':bool(np.array_equal(f,d['faces'])),'mesh_sha_property_matches':o.get('source_mesh_sha256')==sha,'scale_property':o.get('scale')=='1:300','camera_exists':bpy.context.scene.camera is not None,'triangulated':all(len(p.vertices)==3 for p in o.data.polygons)}
 checks['historical_notice_exists']=bpy.data.objects.get('HISTORICAL_SCHEME_NOTICE_NOT_PRINT_GEOMETRY') is not None
-checks['central_stairs_omission_notice']='中央入口階梯細節缺圖' in bpy.data.objects['HISTORICAL_SCHEME_NOTICE_NOT_PRINT_GEOMETRY'].data.body
+checks['central_stairs_completion_notice']='中央入口依修訂詳圖補完' in bpy.data.objects['HISTORICAL_SCHEME_NOTICE_NOT_PRINT_GEOMETRY'].data.body
 checks['material_indices_match']=bool(np.array_equal(np.array([p.material_index for p in o.data.polygons]),d['materials']))
 from bpy_extras.object_utils import world_to_camera_view
 from mathutils import Vector

@@ -1,6 +1,6 @@
 # 來源登記｜E棟歷史外觀局部重建
 
-中央入口階梯細節缺圖，未重建；非完整外觀復原。原圖僅私人保存，以下為館藏連結與角色，不嵌入原圖。
+中央入口本次依直接引用的 prime 詳圖補完；原包缺漏記錄另存。原圖僅私人保存，以下為館藏連結與角色，不嵌入原圖。
 
 - [A1-1／CCCK15003001](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MNMWMIMPM2) — Campus identity only；圖像 CC BY-NC；SHA256 `3b187a866ed2f7ec762c7e7828695eb510b497d562a2fb07cdff6d78a8200b14`。
 - [A2-10／CCCK15023008](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MPMWMIMPM2) — E-specific architectural control；圖像 CC BY-NC；SHA256 `2d3305b4b17ecd57d35fe064dde115dee915efc3a32eb9a4edc9ca49605d5988`。
@@ -17,6 +17,9 @@
 - [圖紙／CCCK15023063](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MCMRMIMPM2) — E-specific revision or explicitly referenced shared detail；圖像 CC BY-NC；SHA256 `b2e6273f1997d97ea8b8d73dc916455fc056641065a6e6c965d515c98b38ca67`。
 - [圖紙／CCCK15023064](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=M7MRMIMPM2) — ONLY directly E-referenced shared1-1/1-2A2-22 eave/falsebeam construction; exclude F roof/body geometry；圖像 CC BY-NC；SHA256 `fbd72d02c603b65ed65d9b4b3ac8d8174ed579919a2d0bcd8b355ef6f3ee8bcc`。
 
-館藏：國立臺灣博物館「臺灣現代建築圖說」。E屋頂圖元資料列建築師陳其寛、董家範、石企孟、劉應昌、梁悅問；事務所列陳其寬、董家範、石企孟聯合建築師事務所（保留館藏用字差異）。
-
 F圖張僅採E明確索引的1-1/1-2共用簷部細節，不採F棟主體。日期與數值勘誤、缺漏及來源適用範圍見README；原圖作者／館藏權利以連結原紀錄為準，不把本模型稱作原作者核可作品。
+
+## 中央入口補完來源（2026-11-02更新）
+- [MHM2MIMPM2](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MHM2MIMPM2) — A2-1′ details1/2, D/E地下道及廣場變更75.5；原圖 CC BY-NC，私人保存；SHA256 `df4772139dd901a1a37926431f5558a7d7026406a9229f0ae59d9482599e0b22`。
+- [MQMRMIMPM2](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MQMRMIMPM2) — A4-1′共用地下道剖面75.5；原圖 CC BY-NC，私人保存；SHA256 `b7036d84925c84167cdd4c4e68f1790d96b428617e47e63858bada940206327c`。
+- [MPMRMIMPM2](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MPMRMIMPM2) — A4-2′共用剖面詳圖75.5；原圖 CC BY-NC，私人保存；SHA256 `1b1ba56ec61543529936dc7fe260bfd3089dcf7b1a5801c19253241376bca0c1`。

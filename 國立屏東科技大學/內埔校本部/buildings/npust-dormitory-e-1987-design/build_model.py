@@ -21,7 +21,7 @@ def beam(n,a,b,w=.035,mat=3):
  add(n,Manifold.hull_points(pts),mat)
 
 
-# E historical PARTIAL exterior: central outdoor entry stairs intentionally absent.
+# E historical exterior, same-package entrance completion from directly linked prime details.
 # x0axis24,x82.8axis1; normalizedyA0,B8,C13.9,topE21.9(roofcallsitD).
 bx('authored_display_base_not_terrain',-2.2,85.,-2.2,24.1,-1.50,-1.20,4)
 NW=box(-.135,21.735,7.865,22.035,-1.20,13.25)
@@ -41,11 +41,13 @@ for floor in range(4):
   c=1.8+i*3.6;front=7.865 if i<4 or i>=19 else -.135;back=22.035 if i<6 or i>=17 else 14.035
   opening('south_room','y',front,c,1.50,z+.95,z+2.65,-1)
   if floor==0 and i in [0,22]:opening('north_end_entry','y',back,c,3.15,z,z+2.65,1,'door')
-  elif floor==0 and i==11:opening('central_recessed_door_NO_OUTDOOR_STAIRS','y',11.90,c,2.60,z,z+2.65,1,'door')
+  elif floor==0 and i==11:opening('central_revised_recessed_door','y',11.90,c,2.60,z,z+2.65,1,'door')
   elif i in [5,17]:opening('north_bathing_high','y',back,c,3.10,z+2.20,z+2.70,1,'high')
   else:opening('north_room','y',back,c,1.50,z+.95,z+2.65,1)
  for n,x,y,sgn in [('west_outer_corridor',-.135,15.10,-1),('west_inner_corridor',14.265,6.80,-1),('east_inner_corridor',68.535,6.80,1),('east_outer_corridor',82.935,15.10,1)]:opening(n,'x',x,y,1.55,z+.95,z+2.65,sgn)
-add('closed_E_partial_exterior_no_basement_or_interior',body,0)
+# Only the uncancelled western three-bay basement has visible south clerestories.
+for c in [1.8,5.4,9.0]:opening('south_west_visible_basement_clerestory','y',7.865,c,3.20,-1.10,-.55,-1,'clerestory')
+add('closed_E_historical_exterior_no_hidden_basement_interior',body,0)
 # Readvisiblefacadepierwidthapprox.34; notstructuraldimension claim.
 for side in ['south','north']:
  for i in range(24):
@@ -67,6 +69,8 @@ for n,axis,face,c,w,z0,z1,sgn,style in W:
   if axis=='y':
    for a,b in [(c-1.61,c-w/2),(c+w/2,c+1.61)]:panel('_dark_mosaic_sidepatch',a,b,fl+.10,z1,-.035,.015,7)
   else:panel('_dark_mosaic_apron',c-w/2,c+w/2,fl+.10,z0,-.035,.015,7)
+ elif style=='clerestory':
+  for u in np.linspace(c-w/2,c+w/2,7)[1:-1]:panel('_clerestory_mullion',u-fw/2,u+fw/2,z0,z1,-.15,.025,3)
  elif style=='high':
   for u in np.arange(c-w/2+.50,c+w/2,.50):panel('_clerestory_mullion',u-fw/2,u+fw/2,z0,z1,-.15,.025,3)
   fl=round((z0-2.2)/3.5)*3.5;panel('_bath_mosaic_panel',c-w/2,c+w/2,fl+.10,z0,-.035,.015,7)
@@ -74,7 +78,7 @@ for n,axis,face,c,w,z0,z1,sgn,style in W:
   for u in [c-w/4,c,c+w/4]:panel('_entrance_division',u-fw/2,u+fw/2,z0,z1-.5,-.15,.025,3)
   panel('_entrance_transom',c-w/2,c+w/2,z1-.58,z1-.43,-.15,.025,3)
 # Outerendstairs visiblypresent; simplifiedequalrisers fromdrawingGL difference.
-# NO geometry beyondcentralporch: no centralstairs,landing orramp substitute.
+# Central prime entry added separately below after its profile helper.
 for c in [1.8,81.0]:
  for j in range(6):bx('outer_end_entry_steps_interpreted',c-1.62,c+1.62,22.00,22.035+(6-j)*.30,-1.20,-1.20+(j+1)*.20,1)
 # Thinroofskins and closedattics are separate from the exterior85cmdownstand and23cmfalsebeams.
@@ -83,6 +87,25 @@ def prism_yz(n,pts,x0,x1,mat=2,clip=None):
  m=CrossSection([pts]).extrude(x1-x0).transform(((0,0,1,x0),(1,0,0,0),(0,1,0,0)))
  if clip is not None:m=m^clip
  if not m.is_empty():add(n,m,mat)
+# E prime detail: north-facing C=13.90. E measured placement is 3.50m +/-0.10,
+# NOT a claim that the D printed350/545 dimension directly applies to E.
+# Reference-coordinate helper maps this independently calibrated local entry northwards.
+def entry_bx(n,a,b,c,d,e,f,mat=0):bx(n,a,b,21.9-d,21.9-c,e,f,mat)
+def entry_prism(n,pts,x0,x1,mat=0):prism_yz(n,[(21.9-y,z) for y,z in pts],x0,x1,mat)
+entry_bx('central_prime_upper_landing350_PLAN_MEASURED',39.775,43.025,4.50,10.02,-1.20,0,1)
+for xa,xb in [(35.95,39.825),(42.975,46.85)]:
+ entry_bx('central_prime_side_landing335',xa,xb,4.65,8.01,-1.20,0,1)
+ entry_bx('central_prime_front_lowwall45',xa,xb,4.65,5.00,-.02,.45,0)
+for xa,xb in [(35.90,36.10),(46.70,46.90)]:entry_bx('central_prime_side_lowwall45',xa,xb,4.65,8.01,-.02,.45,0)
+# Six treads and seven risers betweenupper0 andlowerfinishedcourt-1.05; localnetwidth3.10graphic.
+entry_bx('central_prime_lower_finish_strip_not_entire_court',39.85,42.95,2.55,2.70,-1.20,-1.05,1)
+for j in range(6):entry_bx('central_prime_six_treads_seven_risers',39.85,42.95,2.70+j*.30,4.51,-1.20,-1.05+(j+1)*.15,1)
+# Centralflightcontinuous sidewalls,25cmcore/35cmcap. Slopeheight45cm is graphic coordination,
+# not an independentlydimensioned every-step control. Caps extendoutwards preserving3.10netwidth.
+for xa,xb,ca,cb in [(39.60,39.85,39.50,39.85),(42.95,43.20,42.95,43.30)]:
+ entry_prism('central_prime_sloping_sidewall25',[(2.55,-1.2),(5.,-1.2),(5.,.45),(4.5,.45),(2.7,-.60),(2.55,-.60)],xa,xb,0)
+ entry_prism('central_prime_sloping_cap35_graphic',[(2.55,-.70),(2.7,-.70),(4.5,.35),(5.,.35),(5.,.45),(4.5,.45),(2.7,-.60),(2.55,-.60)],ca,cb,1)
+
 def slope_piece(n,x0,x1,y0,y1,z0,z1,wallclip):
  # .16m is declared graphic/print representation, notknownstructuralslabthickness.
  prism_yz(n+'_estimated16_skin',[(y0,z0-.16),(y1,z1-.16),(y1,z1),(y0,z0)],x0,x1)
@@ -140,6 +163,6 @@ from manifold3d import Mesh64
 normalized=Manifold(Mesh64(v.astype(np.float32).astype(np.float64),f.astype(np.uint64),face_id=np.arange(len(f),dtype=np.uint64),tolerance=0.00001)).simplify(0.00001).to_mesh64()
 materials=materials[np.asarray(normalized.face_id,dtype=int)]
 v=np.asarray(normalized.vert_properties)[:,:3];f=np.asarray(normalized.tri_verts)
-t=trimesh.Trimesh(v.astype(np.float32).astype(np.float64),f,process=False);t.merge_vertices(digits_vertex=8);keep=t.nondegenerate_faces();materials=materials[keep];t.update_faces(keep);t.remove_unreferenced_vertices();assert t.is_watertight and t.is_winding_consistent;assert len(t.split())==1,[(len(c.faces),c.bounds.tolist()) for c in t.split()]
+t=trimesh.Trimesh(v.astype(np.float32).astype(np.float64),f,process=False);t.merge_vertices(digits_vertex=5);keep=t.nondegenerate_faces();materials=materials[keep];t.update_faces(keep);t.remove_unreferenced_vertices();assert t.is_watertight and t.is_winding_consistent;assert len(t.split())==1,[(len(c.faces),c.bounds.tolist()) for c in t.split()]
 np.savez_compressed(R/'mesh.npz',vertices=t.vertices,faces=t.faces,materials=materials);t.export(R/'model.stl');(R/'palette.json').write_text(json.dumps(PALETTE));(R/'components.json').write_text(json.dumps(LOG,ensure_ascii=False,indent=2))
 q={'status':'PASS_GEOMETRY_ONLY','triangles':len(t.faces),'components':len(t.split()),'watertight':bool(t.is_watertight),'winding':bool(t.is_winding_consistent),'scale':'1:300','datum':'1FL0; E drawingGL-1.20, authoredsupportnotterrain','bounds_mm':t.bounds.tolist(),'mesh_sha256':hashlib.sha256((R/'mesh.npz').read_bytes()).hexdigest()};(R/'BUILD-QA.json').write_text(json.dumps(q,indent=2));print(json.dumps(q))

@@ -5,7 +5,7 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [![述耘堂正面紅板白帶限域配色](內埔校本部/buildings/npust-shuyun-hall/appearance/previews/front.png)](內埔校本部/buildings/npust-shuyun-hall/README.md)<br>**[述耘堂｜當代公開影像外形近似](內埔校本部/buildings/npust-shuyun-hall/README.md)**<br>正面 | [![玉崗紀念圖書館前中央有限配色：其餘中性](內埔校本部/buildings/npust-yukang-library/appearance/previews/front.png)](內埔校本部/buildings/npust-yukang-library/appearance/README.md)<br>**[玉崗紀念圖書館（前中央有限配色）](內埔校本部/buildings/npust-yukang-library/appearance/README.md)** | [![第二餐廳：實際模型預覽](內埔校本部/buildings/npust-second-refectory/previews/front.png)](內埔校本部/buildings/npust-second-refectory/README.md)<br>**[第二餐廳](內埔校本部/buildings/npust-second-refectory/README.md)** |
-| [<img src="內埔校本部/buildings/npust-female-dorm-1990-design/preview.png" alt="女生宿舍1990原設計：實際模型渲染" width="220">](內埔校本部/buildings/npust-female-dorm-1990-design/README.md)<br>**[女生宿舍｜1990年原設計圖版](內埔校本部/buildings/npust-female-dorm-1990-design/README.md)**<br>[STL](內埔校本部/buildings/npust-female-dorm-1990-design/model.stl) · [彩色3MF](內埔校本部/buildings/npust-female-dorm-1990-design/model.3mf) · [Blender](內埔校本部/buildings/npust-female-dorm-1990-design/scene.blend) | [<img src="內埔校本部/buildings/npust-dormitory-f-1987-design/preview.png" alt="F棟1987歷史外殼：實際模型渲染" width="220">](內埔校本部/buildings/npust-dormitory-f-1987-design/README.md)<br>**[F棟宿舍｜1987歷史設計外殼](內埔校本部/buildings/npust-dormitory-f-1987-design/README.md)**<br>[STL](內埔校本部/buildings/npust-dormitory-f-1987-design/model.stl) · [彩色3MF](內埔校本部/buildings/npust-dormitory-f-1987-design/model.3mf) · [Blender](內埔校本部/buildings/npust-dormitory-f-1987-design/scene.blend) | [<img src="內埔校本部/buildings/npust-dormitory-e-1987-design/preview.png" alt="E棟局部重建：中央入口階梯缺圖未建；非完整外觀復原" width="220">](內埔校本部/buildings/npust-dormitory-e-1987-design/README.md)<br>**[E棟宿舍｜1986–1987局部重建；中央入口階梯未重建](內埔校本部/buildings/npust-dormitory-e-1987-design/README.md)**<br>[STL](內埔校本部/buildings/npust-dormitory-e-1987-design/model.stl) · [彩色3MF](內埔校本部/buildings/npust-dormitory-e-1987-design/model.3mf) · [Blender](內埔校本部/buildings/npust-dormitory-e-1987-design/scene.blend) |
+| [<img src="內埔校本部/buildings/npust-female-dorm-1990-design/preview.png" alt="女生宿舍1990原設計：實際模型渲染" width="220">](內埔校本部/buildings/npust-female-dorm-1990-design/README.md)<br>**[女生宿舍｜1990年原設計圖版](內埔校本部/buildings/npust-female-dorm-1990-design/README.md)**<br>[STL](內埔校本部/buildings/npust-female-dorm-1990-design/model.stl) · [彩色3MF](內埔校本部/buildings/npust-female-dorm-1990-design/model.3mf) · [Blender](內埔校本部/buildings/npust-female-dorm-1990-design/scene.blend) | [<img src="內埔校本部/buildings/npust-dormitory-f-1987-design/preview.png" alt="F棟1987歷史外殼：實際模型渲染" width="220">](內埔校本部/buildings/npust-dormitory-f-1987-design/README.md)<br>**[F棟宿舍｜1987歷史設計外殼](內埔校本部/buildings/npust-dormitory-f-1987-design/README.md)**<br>[STL](內埔校本部/buildings/npust-dormitory-f-1987-design/model.stl) · [彩色3MF](內埔校本部/buildings/npust-dormitory-f-1987-design/model.3mf) · [Blender](內埔校本部/buildings/npust-dormitory-f-1987-design/scene.blend) | [<img src="內埔校本部/buildings/npust-dormitory-e-1987-design/preview.png" alt="E棟歷史外觀：中央入口補圖完成，非現況" width="220">](內埔校本部/buildings/npust-dormitory-e-1987-design/README.md)<br>**[E棟宿舍｜1986–1987歷史外觀；中央入口補完](內埔校本部/buildings/npust-dormitory-e-1987-design/README.md)**<br>[STL](內埔校本部/buildings/npust-dormitory-e-1987-design/model.stl) · [彩色3MF](內埔校本部/buildings/npust-dormitory-e-1987-design/model.3mf) · [Blender](內埔校本部/buildings/npust-dormitory-e-1987-design/scene.blend) |
 | [<img src="內埔校本部/buildings/npust-dormitory-d-1987-design/preview.png" alt="D棟1987歷史分期外觀：實際模型渲染" width="220">](內埔校本部/buildings/npust-dormitory-d-1987-design/README.md)<br>**[D棟宿舍｜1987歷史分期圖示外觀](內埔校本部/buildings/npust-dormitory-d-1987-design/README.md)**<br>[STL](內埔校本部/buildings/npust-dormitory-d-1987-design/model.stl) · [彩色3MF](內埔校本部/buildings/npust-dormitory-d-1987-design/model.3mf) · [Blender](內埔校本部/buildings/npust-dormitory-d-1987-design/scene.blend) |  |  |
 
 ## 模型圖鑑
@@ -14,7 +14,7 @@
 ## 模型圖鑑
 
 
-現行收錄 **7 套模型包**：述耘堂、玉崗紀念圖書館、第二餐廳、1990女宿、F棟歷史外觀、E棟局部重建及D棟分期外觀；不是已證實實建整棟數。各件為公開影像有界近似或歷史設計圖研究，非全校完成；未實體試印。審核紀錄見各模型QA，是否正式發布以統一發布清單為準。
+現行收錄 **7 套模型包**：述耘堂、玉崗紀念圖書館、第二餐廳、1990女宿、F棟歷史外觀、E棟入口補完版及D棟分期外觀；不是已證實實建整棟數。各件為公開影像有界近似或歷史設計圖研究，非全校完成；未實體試印。審核紀錄見各模型QA，是否正式發布以統一發布清單為準。
 
 ## [述耘堂｜當代公開影像近似](內埔校本部/buildings/npust-shuyun-hall/README.md)
 
@@ -35,9 +35,9 @@
 
 屏東農專1987年F棟專屬七圖研究，與1990女生宿舍不同，不確認今日館名或實建現況。四層相連錯位雙翼，屋脊17.05m、相向錯階1.16m；不採E棟17.08m、GL65cm等舊錯引，勘誤保留。缺一樓室內平面，不補隱藏室內、地形或地下外露。窗檐部分圖量估讀±.10m，細框加厚、中性配色，未實體試印。
 
-## E棟局部重建與入口缺階限制
+## E棟入口補圖更新與限制
 
-中央入口階梯細節缺圖，未重建；非完整外觀復原。屏東農專1986–1987 E棟圖示歷史外觀局部研究，不是現況測繪或核實竣工，不確認今日館名。中央門廊保留，不用平台、坡道或遮蔽物補造階梯；後續補圖應更新同一項目，不另計建築。屋脊17.08m、GL−1.20m；北端落階1.22m、中段1.395m為推導。共用F圖只引用索引屋簷細部，不跨用F主體；框格圖量±.10m、屋皮及槽底封端為協調建模值，隱蔽室內與地形不補造，未實體列印。
+E棟中央入口已依E專屬修訂詳圖補完；六踏面、七落階與連續側矮牆，以及南側三跨可見地下低窗按來源補入。平台與淨寬部分圖量±.10m，歷史外觀仍非現況測繪或竣工認證；共用廣場、地下道及隱蔽室內不建，未試印。同一模型補完，不增加套數或已證實實建棟數。
 
 ## D棟宿舍歷史分期研究
 

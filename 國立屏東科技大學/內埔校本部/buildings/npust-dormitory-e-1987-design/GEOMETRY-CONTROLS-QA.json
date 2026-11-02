@@ -1,5 +1,5 @@
 {
-  "status": "PASS_PARTIAL_EXTERIOR",
+  "status": "PASS_HISTORICAL_EXTERIOR_ENTRY_UPDATE",
   "checks": {
     "northwest_roof_bounds": true,
     "northeast_roof_bounds": true,
@@ -13,11 +13,14 @@
     "north8_high_windows": true,
     "end16_corridor_windows": true,
     "central_recessed_door_preserved": true,
-    "central_steps_or_substitute_absent": true,
+    "central_six_treads": true,
+    "central_lower_finish105": true,
+    "E_three_west_basement_windows": true,
+    "E_measured_landing_north": true,
     "source_final_GO_correct": true
   },
-  "mesh_sha256": "c6c5e926a0e3e10360db0898ca114960ba3184c90046a967573b53a5f6a114fe",
-  "notice": "中央入口階梯細節缺圖，未重建；非完整外觀復原",
+  "mesh_sha256": "25f2559a5fe196a683e7ec11410c7401c5e9ba21e3389284469d1ebb0d859b1e",
+  "notice": "中央入口依prime詳圖補完；局部位置圖量±0.10m，非現況",
   "direct_controls_m": {
     "axes": [
       82.8,

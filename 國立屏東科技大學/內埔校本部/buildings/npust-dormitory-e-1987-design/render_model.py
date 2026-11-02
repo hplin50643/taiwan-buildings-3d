@@ -4,8 +4,8 @@ from mathutils import Vector
 R=Path(__file__).resolve().parent
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 d=np.load(R/'mesh.npz');v=d['vertices'];f=d['faces'];mi=d['materials'];pal=json.loads((R/'palette.json').read_text())
-m=bpy.data.meshes.new('validated_printable_mesh');m.from_pydata(v.tolist(),[],f.tolist());m.update();o=bpy.data.objects.new('NPUST E dormitory1986-1987 historical PARTIAL exterior',m);bpy.context.collection.objects.link(o)
-o['source_mesh_sha256']=hashlib.sha256((R/'mesh.npz').read_bytes()).hexdigest();o['scale']='1:300';o['scope']='E historical partial exterior; CENTRAL OUTDOOR ENTRANCE STAIRS NOT MODELED; not complete reconstruction'
+m=bpy.data.meshes.new('validated_printable_mesh');m.from_pydata(v.tolist(),[],f.tolist());m.update();o=bpy.data.objects.new('NPUST E dormitory1986-1987 historical exterior entrance completed',m);bpy.context.collection.objects.link(o)
+o['source_mesh_sha256']=hashlib.sha256((R/'mesh.npz').read_bytes()).hexdigest();o['scale']='1:300';o['scope']='E historical exterior with source-linked entrance completion; not current survey'
 for name,col in pal:
  mat=bpy.data.materials.new(name);rgb=tuple(int(col[i:i+2],16)/255 for i in (1,3,5));mat.diffuse_color=(*rgb,1);mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(*rgb,1);bs.inputs['Roughness'].default_value=.72;m.materials.append(mat)
 for p,k in zip(m.polygons,mi):p.material_index=int(k)
@@ -20,8 +20,8 @@ views={'preview':(-260,350,240),'rear':(260,-350,240),'south':(0,-500,30),'north
 bpy.ops.object.text_add();caption=bpy.context.object;caption.name='HISTORICAL_SCHEME_NOTICE_NOT_PRINT_GEOMETRY';caption.parent=cam
 fontpath=Path('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')
 if fontpath.exists():
- caption.data.font=bpy.data.fonts.load(str(fontpath));caption.data.body='屏東農專 E棟宿舍 歷史外觀局部重建\n中央入口階梯細節缺圖，未重建\n非完整外觀復原｜非現況測繪'
-else:caption.data.body='NPUST E HISTORICAL PARTIAL EXTERIOR\nCENTRAL ENTRANCE STAIRS NOT MODELED\nNot complete reconstruction / not current survey'
+ caption.data.font=bpy.data.fonts.load(str(fontpath));caption.data.body='屏東農專 E棟宿舍 歷史外觀局部重建\n中央入口依修訂詳圖補完\n非現況測繪｜圖量細節／未試印'
+else:caption.data.body='NPUST E HISTORICAL PARTIAL EXTERIOR\nSOURCE-LINKED CENTRAL STAIRS COMPLETED\nNot current survey / not test printed'
 caption.data.align_x='LEFT';caption.data.space_line=.40
 cm=bpy.data.materials.new('caption emission');cm.use_nodes=True;cm.node_tree.nodes.clear();em=cm.node_tree.nodes.new('ShaderNodeEmission');em.inputs['Color'].default_value=(.95,.95,.95,1);out=cm.node_tree.nodes.new('ShaderNodeOutputMaterial');cm.node_tree.links.new(em.outputs[0],out.inputs['Surface']);caption.data.materials.append(cm)
 if hasattr(caption,'visible_shadow'):caption.visible_shadow=False
@@ -40,7 +40,7 @@ for name,loc in views.items():
  update_caption();framing[name]=bounds;scene.render.filepath=str(R/(name+'.png'));bpy.ops.render.render(write_still=True)
 (R/'FRAMING-QA.json').write_text(json.dumps({'status':'PASS','mesh_sha256':o['source_mesh_sha256'],'projected_vertex_bounds':framing},indent=2))
 # Two deliberately cropped detail views, not full-model framing claims.
-for name,loc,target,ortho in [('central-entry-missing-stairs',(35,170,65),(0,12,10),70),('stepped-roof-detail',(70,180,150),(0,5,52),180),('eave-beam-detail',(-110,-150,65),(-88,-15,43),85)]:
+for name,loc,target,ortho in [('central-entry-completed',(35,170,65),(0,12,10),70),('stepped-roof-detail',(70,180,150),(0,5,52),180),('eave-beam-detail',(-110,-150,65),(-88,-15,43),85)]:
  cam.location=loc;cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=ortho;update_caption();scene.render.filepath=str(R/(name+'.png'));bpy.ops.render.render(write_still=True)
 cam.location=views['preview'];cam.rotation_euler=(Vector((0,0,30))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=500
 update_caption()
