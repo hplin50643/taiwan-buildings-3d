@@ -1,0 +1,43 @@
+{
+  "status": "PASS_SOURCE_AND_TEN_VIEW_VISUAL_REVIEW_WITH_DISCLOSED_LIMITS",
+  "checked_utc": "2026-11-02T07:26:46.343418+00:00",
+  "mesh_sha256": "bb8e31776ecbba817b5ce6cb356be07c261a96c59608e1ca78ed2d0c3708cbe4",
+  "build_code_sha256": "ce98347b1cefed30fcbe8d90fcb0870994a92250f70d1fa701035d27e5b1990a",
+  "render_code_sha256": "baae99d24653c9dbef92f7671746c5d22e28b8b9d98f4a8f353d205d6b73d5b1",
+  "readme_sha256": "a82bf3666b623882cf57f67551a692a00a3d745cadab7abe01571ccd31373a24",
+  "png_sha256": {
+    "preview.png": "712aa846286f5a514416fa93cfbe64cf02933c945f530f84ad462f1ba4f1175d",
+    "rear.png": "1fd8c8c04ccb24b67eaa5ab2ef245b5d20c95784a99d07653af76ca9d842b0d7",
+    "front.png": "89359e0c56142af998b7a6f0f7e2ba02f2ee8b25733bb308e1c031e2313b1b5d",
+    "back.png": "28b3cdd829effaa2ff9eefa7b4eee8f9ea49c88bc6298050dc3a8900038a6cc8",
+    "west.png": "8c0585fa1dc92217082fa368cfc6ffe79d1b9af5e5104458ae92f7a440b21145",
+    "east.png": "4292441420c9553c367f36f3d3a5e861f6d3918c1fecbdad97cc7c9d1d4c6eb2",
+    "top.png": "d4c313dbeca7fc996f58ec20f5660de89240d76919335755226eb34f2e8ff0c2",
+    "entry-detail.png": "518dbb45b3ea8038454133945f2b1166faa9e34a66da26333c54546703a426b4",
+    "rear-detail.png": "527590527c72117f4e5f24bb0d459dda492ce50e68536d8f65795c312d2b1322",
+    "roof-detail.png": "68cb38225613ac51b80dd6ebda527e50d7de324c431ee1e487d840c367b20755"
+  },
+  "source_go_sha256": "fe43f64bcb6f25d0e35dfe8d46935a6b2722aa15103c538e473e3ed22f9b2569",
+  "checks": {
+    "revised226_whole_facade_not_old238": true,
+    "old_high_rear_Ding_flights_absent": true,
+    "rear_stage_wall_and_blank_upper_band": true,
+    "four_fullheight_U_RC_screens_not_lowguards": true,
+    "side_recessed_WD5_and_two_small_WD3": true,
+    "front_revised45cm_treads_and_recessed_door_grid": true,
+    "rear_Bing_ascends_inward_to_upper_WD2a": true,
+    "Bing_underside_open_not_solid_ramp": true,
+    "eight_skylights_ten_fans_source_centres": true,
+    "three_glazed_upper_faces_rear_blank": true,
+    "all_ten_views_inspected_no_accidental_crop_in_seven_full_views": true
+  },
+  "limitations": [
+    "Historical1981–1982 revised design, not current survey or confirmed completion-date assertion",
+    "W2 spatial sections govern10.67/11.97; generic sill datum differs65cm and remains disclosed",
+    "Roof highline14.53 is coordination convention; overall vertical source uncertainty±.24m",
+    "Bing flight absolute placement graphic±.20m and upperdoor centres±.25m; direct286+280cm chain retained",
+    "Exterior only; illustrative colors, no hidden equipment/interior reconstruction; unprinted1:250",
+    "Mesh/material/count/hash checks do not establish exact historical appearance"
+  ],
+  "private_independent_review_sha256": "855213e2cdf19a657061e3b5e6776b91c62d4d5f0031c1717f8740ba7e597af5"
+}
