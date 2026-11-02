@@ -5,12 +5,12 @@
     "台灣省立高雄高級商業職業學校"
   ],
   "classification": "secondary_education",
-  "current_model_packages": 3,
-  "main_campus_current_model_packages": 3,
+  "current_model_packages": 4,
+  "main_campus_current_model_packages": 4,
   "counts_updated_date": "2026-11-01",
   "physical_print_verified": false,
   "whole_institution_complete": false,
-  "counting_scope": "現行3模型包=未定年單戶宿舍+1957竣工圖示局部單元+1963原四層方案。新方案相關圖面有劃除記號、未確認實建，不增加已證實實建整棟數，不稱三層修訂、核定終版或現況，未試印。以下為歷次範圍說明，當批數字不代表目前總數：高中職模型套件，非高教；歷史本校與現名合計一校，鳳山分部後續獨立學校另計，本案與其宿舍不重複。單戶宿舍設計研究不等於實施證明或全校完成。 當批新增教室／走廊單元（1957竣工圖示／局部截斷）1模型包，與單戶宿舍合計2包；局部增建單元不是獨立整棟，不增加獨立整棟建築數。接口人工封閉面不是歷史外牆；屋頂±0.15m估讀、非現況、未試印。",
+  "counting_scope": "現行4模型包=未定年單戶宿舍+1957竣工圖示局部單元+1963原四層方案+未定年倉庫增建變更歷史外殼。新倉庫實建及精確校址未確認，不是鳳山分部036小庫房，不增加已證實實建整棟數；天花3cm差、1:100屋面找坡推導、格柵加厚與未試印限制保留。以下為歷次範圍說明，當批數字不代表目前總數：當批3模型包=未定年單戶宿舍+1957竣工圖示局部單元+1963原四層方案。新方案相關圖面有劃除記號、未確認實建，不增加已證實實建整棟數，不稱三層修訂、核定終版或現況，未試印。以下為歷次範圍說明，當批數字不代表目前總數：高中職模型套件，非高教；歷史本校與現名合計一校，鳳山分部後續獨立學校另計，本案與其宿舍不重複。單戶宿舍設計研究不等於實施證明或全校完成。 當批新增教室／走廊單元（1957竣工圖示／局部截斷）1模型包，與單戶宿舍合計2包；局部增建單元不是獨立整棟，不增加獨立整棟建築數。接口人工封閉面不是歷史外牆；屋頂±0.15m估讀、非現況、未試印。",
   "models": [
     {
       "slug": "ksvcs-main-campus-dormitory-undated-design",
@@ -47,11 +47,25 @@
       "construction_verified": false,
       "confirmed_built_whole_building_count_increment": 0,
       "is_three_storey_revision": false
+    },
+    {
+      "slug": "ksvcs-warehouse-alteration-undated-design",
+      "name": "倉庫增建變更｜未定年歷史外殼、實建未確認",
+      "campus": "校本部",
+      "repo_path": "高雄市立高雄高級商業職業學校/校本部/buildings/ksvcs-warehouse-alteration-undated-design",
+      "scope": "陳仁和《臺灣省立高雄商業職業學校倉庫增建變更工程設計圖》CCRH11423055，未定年，精確校址與是否按圖實建未確認。不是鳳山分部CCRH11423036小庫房，不補未畫鄰棟、內部儲藏或現行用途。9.00×7.50m主軸加1.80m前廊；名義屋頂3.40m、天花2.57m與推算2.54m差3cm保留；1:100找坡最高3.4375m為協調推導，不是原圖直標。後簷與前廊分開處理，9mm格柵加厚25mm、窗框圖量與中性色材質簡化，非現況、未試印，不計已證實實建整棟。",
+      "stl_sha256": "fb308c80ad888689f20755d1968db5140f1919f6d9263b1ebf839288e62ee958",
+      "physical_print_verified": false,
+      "model_category": "undated_historical_warehouse_alteration_exterior",
+      "construction_verified": false,
+      "exact_site_verified": false,
+      "confirmed_built_whole_building_count_increment": 0
     }
   ],
   "partial_classroom_module_packages": 1,
   "last_addition_independent_whole_building_count_increment": 0,
   "counts_are_model_packages_not_independent_whole_buildings": true,
   "historical_four_storey_scheme_packages": 1,
-  "last_addition_confirmed_built_whole_building_count_increment": 0
+  "last_addition_confirmed_built_whole_building_count_increment": 0,
+  "undated_warehouse_alteration_packages": 1
 }

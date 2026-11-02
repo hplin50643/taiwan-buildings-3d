@@ -1,0 +1,65 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_AND_DATUM_LIMITS",
+  "reviewed_at_utc": "2026-11-01T18:41:35.290318+00:00",
+  "version": "build-v1/render-v1 final; render log Blender quit confirmed",
+  "mesh_sha256": "9fb5e8c774fd6b273dc92bb3d88c57a51744a10ae5ca466e77b4840679e2bcad",
+  "artifact_sha256": {
+    "build_model.py": "0a1ca3fb145d53594807164bbb137285485972ef5743bd7731e72a68ef49d167",
+    "render_model.py": "1365fb6830a6de0668fc0ca4d85c591418ef012631f4d82a1941fbf9872404bd",
+    "README.md": "db55691e7233354dbdb759edef3f4a2b165c998cf3d733d1ae74dba4d71952a2"
+  },
+  "private_source_review_sha256": "e4bb787b98b7de9c03bc71c674fe57623eb49e909ff7f39e91753e66e0a71d20",
+  "png_sha256": {
+    "preview.png": "c7e41849ff7062218562158a994353dfdd1bb9da759e03a62bc63d3d66548dd7",
+    "rear.png": "c45332618e9f55d57e47a967cc50d53f1a8c9e646ece2876a726d3c7f95ca339",
+    "north.png": "7154acac3afcfa4856d0ca740aa47e2b6137861b83e590d8a18a0ae721d06d78",
+    "south.png": "90501d842971dbbc1f8bd60dd30d0487ce24dc18ca0c927ad8c125d5708164c2",
+    "east.png": "2d29267d26b53b1c00d16291d80c5736ece5b4f9a3d424ae66a49fd8ca2f957b",
+    "west.png": "0d515319c9b4330cdee6e3cc62fa6abd7db5d1c1bd5761b9b2f13f9f01eb45fa",
+    "top.png": "878b7248f82bdde3119ce5a846265f1b3c79456d91471c078afc17df08411c71",
+    "entrance-detail.png": "ceedc7e2880e22975596d426b159284b2052888b1ebe0ab893c2d37accc5f24f",
+    "left-window-detail.png": "d5adef91f9df5c4dea5f7d6e2c940c5ad157010ad6d3baba083aefd71b6a1231",
+    "rear-roof-detail.png": "9d5bf8c233d7c252ea7846caaa789b611899e19374dbd03f3d09d2044e7ed165"
+  },
+  "image_observations": {
+    "preview": "Full framing, two-front-door/one-window and left high-window asymmetry readable; no invented porch columns.",
+    "rear": "Full framing, blank right wall and rear two large windows plus high window; lowered rear eave visible.",
+    "north": "Full rear elevation, distinct high window and two broad glazed groups with localized brick below.",
+    "south": "Full front elevation, two closed doors and broad window; under-canopy shadow present but geometry readable.",
+    "east": "Full blank-side elevation; thin cantilever front canopy and local downward edge distinct from main deep roof and lower rear eave.",
+    "west": "Full left-side elevation, two high windows, free cantilever front and thinner rear eave.",
+    "top": "Full plan framing; slight roof divide present, no exaggerated pitch or invented rooftop additions.",
+    "entrance-detail": "Intentional crop; door panels, localized centre-door brick surround, front window and column-free porch clear.",
+    "left-window-detail": "Intentional crop; two high windows with four principal glazing columns/two rows and thickened external bar relief.",
+    "rear-roof-detail": "Intentional crop; lower thin rear eave, main roof step, broad windows and localized brick band clearly differentiated."
+  },
+  "independent_mesh_checks": {
+    "triangles": 11782,
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 2210657.21299964
+  },
+  "source_controls_confirmed": [
+    "CCRH11423055 only; not036 branch storehouse",
+    "9x7.5 axes plus1.8 porch; FF.50 andporch.42 nominal",
+    "340/36/304 exterior chain with257vs254 internal discrepancy retained",
+    "Roof1:100 opposite drainage withnominaldivide3.75, peak3.4375 explicitlyderived",
+    "Front16cm canopy/local32cm downturnededge without inventedoutsidecolumns",
+    "Rear45cm eave,10cm finishedthickness,nominal3.04..3.14",
+    "Non-mirroredfourfacades andlocalizedbrick",
+    "W1 fourcolumns/tworows;71cm outerheight and2cm datum reconciliation explicitly approximate"
+  ],
+  "limits": [
+    "Undated historical alteration design, not survey/currentcondition/confirmedconstruction.",
+    "Seven full views complete;three details intentionally cropped.",
+    "Render filename compass labels are model-view identifiers; exactgeographicorientation/site not established.",
+    "Caption readable in all10 views; sourcepixels not included.",
+    "Mainrib/hollowconstruction andinterior omitted; closedexternalmodel not structuralrepresentation.",
+    "Finishdatum ambiguity3cm retained; roofheightnot everypoint3.40.",
+    "W1 finebars thickened9mmto25mm; width/framereading andneutralmaterials documented.",
+    "No physicalprinttest; meshclosure not manufacturability orengineeringguarantee.",
+    "Format/rebuild/Blender-reopen tests separatebuilderresponsibility."
+  ],
+  "freeze_recommendation": "READY_FROM_INDEPENDENT_SOURCE_VISUAL_REVIEW"
+}

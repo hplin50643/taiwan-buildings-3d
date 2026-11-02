@@ -1,0 +1,71 @@
+{
+  "direct_controls_cm": {
+    "main_plan_axes": [
+      900,
+      750
+    ],
+    "front_porch_depth": 180,
+    "combined_axis_depth": 930,
+    "width_bays": [
+      300,
+      300,
+      300
+    ],
+    "main_depth_bays": [
+      375,
+      375
+    ],
+    "side_elevation_subchain": [
+      304,
+      36
+    ],
+    "main_structural_floor_above_GL": 48,
+    "main_floor_finish": 2,
+    "main_finished_FL_above_GL": 50,
+    "porch_structural_level_above_GL": 40,
+    "porch_finished_level_R42": 42,
+    "porch_to_main_step": 8,
+    "rear_eave_projection_label": 45,
+    "roof_surface_pitch": "1/100 with opposed drainage arrows, not a perfectly flat slab",
+    "roof_construction": "36cm total rib/hollow-block assembly, not a solid36cm slab; maintain shell outline while omitting hidden structure with disclosure",
+    "nominal_roof_height_above_GL": 340
+  },
+  "facades": {
+    "front": "two doors plus one wide window, three300cm bays; porch across front",
+    "rear": "two wide window groups plus highW1 group; do not mirror front",
+    "plan_left": "twoW1 high windows shown by plan; height/shape fromW1detail, not fictional blank wall",
+    "plan_right": "continuous blank wall in plan, consistent with provided side elevation",
+    "windows": "W1detail width180cm, visible two-row glazing; largeW detail andD door detail present. Fine grids may be simplified transparently, not copied as textures"
+  },
+  "uncertainties_and_required_disclosures": [
+    "No date determined; original altered-design version only, not present-day survey",
+    "Internal ceiling text reads257cm, whereas roof340-36-mainFL50=254cm. Retain3cm source discrepancy; use explicit overall exterior340 and floor50 controls; do not change roof or floor to force257. This is small internal datum ambiguity, not survey precision",
+    "Rear eave45 is explicit; other slab edges and wallthickness require local dimension/detail trace, not arbitrary global extrusion of axis dimensions",
+    "Roof1/100 slope is exterior finishing/drainage layer; do not treat every visible roofline as same plane;34x/36 framing and thin porch assembly remain distinguishable",
+    "No hidden internal structural/cabinet/storage reconstruction required; exterior-only historical shell",
+    "No exact capture/construction date or present physical existence claim",
+    "Roofplan has divide and opposing1/100drainage over930cmdepth. Approximate half-depth suggests4–5cm crown-to-edge difference only as scale-of-magnitude inference, NOT a written4.65cm dimension. Digitize divide against375+375+180axes, not assume perfectly centered.340cm is nominal roof control, not every roof-skin point or confirmed maximum. Exact tie of340to sloped finish unresolved by a few cm; preserve source shape and disclose nominal datum.",
+    "Floor chain48+2=50 andR42+8 are documented datum interpretations of partly overwritten notes, adopted at nominal values, not guaranteed surveyed precision; allow approximately3cm source datum ambiguity."
+  ],
+  "adopted_roof_and_window_coordination": {
+    "roof_divide_y_m": 3.75,
+    "roof_skin_formula": "3.4375-.01*abs(y-3.75)",
+    "derived_peak_not_direct_source_max_m": 3.4375,
+    "roof_nominal_mainwall_axes_m": 3.4,
+    "main_underside_m": 3.04,
+    "front_canopy_total_m": 0.16,
+    "front_edge_total_m": 0.32,
+    "rear_eave_finished_thickness_m": 0.1,
+    "rear_eave_GL_m": [
+      3.04,
+      3.14
+    ],
+    "W1_outer_nominal_m": [
+      2.33,
+      3.04
+    ],
+    "W1_interpretation": "4columns2rows; outer71approx notdirect;60notnecessarily clearglass;191datum minuslowerframe6 gives2.35/3.06, adopted2cm downshift within3cm ambiguity",
+    "source_bar_diameter_m": 0.009,
+    "model_bar_thickness_m": 0.025
+  }
+}

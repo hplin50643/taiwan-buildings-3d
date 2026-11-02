@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": {
+    "mainFL050": true,
+    "porchFL042": true,
+    "rear_eave304_314": true,
+    "rearprojection45_fromaxis": true,
+    "porch_lower_slope16": true,
+    "fascia32": true,
+    "two_roof_drainage_faces": true,
+    "derived_peak34375_not_direct_source_max": true,
+    "two_front_doors": true,
+    "three_large_windows": true,
+    "three_W1_high": true,
+    "no_right_wall_openings": true,
+    "no_external_porch_columns": true,
+    "W1_four_leaf_dividers": true
+  },
+  "mesh_sha256": "9fb5e8c774fd6b273dc92bb3d88c57a51744a10ae5ca466e77b4840679e2bcad",
+  "nominal_controls_m": {
+    "roof_at_main_wall_axes": 3.4,
+    "underside": 3.04,
+    "FF": 0.5,
+    "porchFF": 0.42
+  },
+  "retained_ceiling_discrepancy_m": 0.03,
+  "roof_absolute_finished_surface_datum": "adopted slope coordination; not source-written max"
+}
