@@ -1,0 +1,38 @@
+{
+  "status": "PASS_BOUNDED_ORIGINAL_FACE_COLOR",
+  "reviewed_images": [
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "entry-detail.png",
+    "corridor-detail.png",
+    "roof-detail.png"
+  ],
+  "source_images_personally_viewed": [
+    "3290.jpg",
+    "3296.jpg"
+  ],
+  "source_scope": "Undated photographs posted 2025-02-05; not proven current appearance",
+  "checks": {
+    "uniquely_matched_courtyard_entry_face_colored": true,
+    "three_existing_curved_balconies_gray": true,
+    "gray_panels_do_not_form_belt_across_brick_piers": true,
+    "round_feature_not_glazing": true,
+    "unverified_exterior_north_roof_neutral": true,
+    "no_false_diagonal_material_patches": true,
+    "geometry_unchanged": true
+  },
+  "limits": [
+    "Only verified courtyard-entry face colored; not complete true-color reconstruction of entire building.",
+    "Original building geometry remains highly simplified.",
+    "Four appearance labels not a tested four-filament slicer project; unprinted."
+  ],
+  "mesh_sha256": "118231d0007da9a464a27dbba8201b4b78ebad0797a5d3bcb6b06b8f0cdf7f53",
+  "README.md": "2602f0e347d09e90934adaf8fef76ad2e568a6645060e86ecd65dea3e22b3a0f",
+  "independent_review_sha256": "866b2a35fe3c67061fd787b5b419800b38316e40cb991d54a02d62e585deff86",
+  "parent_final_review": "Pending after builder personally viewed all ten final renders."
+}

@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "checks": {
+    "exactly_one_entry_camera_tuple_changed": true,
+    "mesh_input_unchanged": true,
+    "preview.png_unchanged": true,
+    "rear.png_unchanged": true,
+    "front.png_unchanged": true,
+    "back.png_unchanged": true,
+    "west.png_unchanged": true,
+    "east.png_unchanged": true,
+    "top.png_unchanged": true,
+    "corridor-detail.png_unchanged": true,
+    "roof-detail.png_unchanged": true,
+    "entry_regenerated_after_final_code": true
+  },
+  "old_render_sha256": "046aeb42807336cc134f7912061d0d8d23841170a4baa2f089ffef1f6610af13",
+  "new_render_sha256": "350235d3dbc6e6e468fd03754e8b362d28691be66b0e32493f8db162a8668432",
+  "mesh_sha256": "118231d0007da9a464a27dbba8201b4b78ebad0797a5d3bcb6b06b8f0cdf7f53",
+  "unchanged_images_sha256": {
+    "preview.png": "ddc877b1a3ce386f6c14c489bd11d89f3a96cce2bc4942ef2128f505cf4ffd30",
+    "rear.png": "d18cc3aaf86ef493d32dab0bba9a707aa77d41de4625305beda238651ed0ec60",
+    "front.png": "6e217a4049954f0e17bd9412c4489456a46a2767b91443f9de3c3fd5a12863c5",
+    "back.png": "718792b396fd02a4b1fe2efbe67b492ae9264378dc175bb1cdfbcc340a8bc70f",
+    "west.png": "3a824f181ed21d98e92e018c61ff632541c30f1a9f0cffb90312ffac14b87cfd",
+    "east.png": "d4a816cf5063d38df27e0d5ac1e455eb1bc88c13ca56050f5eb2a03750ceb6f4",
+    "top.png": "00a8970e9ca2a7fd836d118d0b5c9da08457906f3cb724f63f9419282087a6ad",
+    "corridor-detail.png": "02b5e04c491bbc8c94738c58fdd8248d9176338941fde0977899143d311d0ccd",
+    "roof-detail.png": "effd01d0aaab169122a4ce268a39e9e33ac0b7eab52716b205c226d4bd36de0a"
+  },
+  "regenerated_images_sha256": {
+    "entry-detail.png": "dcae91bc78df3af998d442342cd17b511e510fdc317d02640743d248db0418a9"
+  },
+  "code_diff": [
+    "--- prior_render_color.py",
+    "+++ render_color.py",
+    "@@ -55,7 +55,7 @@",
+    "  prior.write_text(json.dumps({'status':'PASS','mesh_sha256':o['source_mesh_sha256'],'projected_vertex_bounds':framing},indent=2))",
+    " ",
+    " # Two deliberately cropped detail views, not full-model framing claims.",
+    "-for name,loc,target,ortho in [('entry-detail',(10,-18,27),(-29,1,24),75),('corridor-detail',(10,-15,45),(-31,1,35),60),('roof-detail',(100,170,200),(0,20,55),180)]:",
+    "+for name,loc,target,ortho in [('entry-detail',(0,1,40),(-31,1,22),55),('corridor-detail',(10,-15,45),(-31,1,35),60),('roof-detail',(100,170,200),(0,20,55),180)]:",
+    "  if ONLY_VIEW and name!=ONLY_VIEW:continue",
+    "  cam.location=loc;cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=ortho;update_caption();scene.render.filepath=str(R/(name+'.png'));bpy.ops.render.render(write_still=True)",
+    " cam.location=views['preview'];cam.rotation_euler=(Vector((0,0,30))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=190"
+  ],
+  "provenance": "Prior code and nine original render files retained privately. Only entry camera position/aim/orthographic framing changed to prevent base occluding the caption. Nine image bytes/timestamps not touched; not claimed newly rendered by final code."
+}

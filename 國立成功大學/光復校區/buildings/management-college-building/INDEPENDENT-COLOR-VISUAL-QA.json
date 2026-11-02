@@ -1,0 +1,39 @@
+{
+  "status": "PASS_BOUNDED_COLOR_ONLY_INDEPENDENT_REVIEW",
+  "checks": {
+    "two_official_sources_and_final_ten_views_viewed": true,
+    "exact_original_vertices_faces_and_bytes": true,
+    "no_false_diagonal_color_patches": true,
+    "gray_bay_panels_do_not_cross_brick_piers": true,
+    "round_recess_not_glass": true,
+    "unknown_other_facades_and_roof_neutral": true,
+    "entry_caption_clear_after_camera_correction": true,
+    "only_entry_camera_tuple_changed_independently_verified": true,
+    "nine_other_render_bytes_unchanged_and_provenance_disclosed": true,
+    "final_README_rights_scope_unprinted_limits_reviewed": true
+  },
+  "limits": [
+    "Only uniquely mapped courtyard entrance face is color interpreted; not full current colors.",
+    "Original approximate geometry unchanged."
+  ],
+  "sha256": {
+    "README.md": "2602f0e347d09e90934adaf8fef76ad2e568a6645060e86ecd65dea3e22b3a0f",
+    "colorize_model.py": "7a37ec30f6bd1aad87511a03ef272f91b9217f1a786ff43e7e458796e299ca7f",
+    "render_color.py": "350235d3dbc6e6e468fd03754e8b362d28691be66b0e32493f8db162a8668432",
+    "color-mesh.npz": "118231d0007da9a464a27dbba8201b4b78ebad0797a5d3bcb6b06b8f0cdf7f53",
+    "palette.json": "9a408191955bb6030697a0066b4ede346c4988bc6945222dab102f3ed3455eeb",
+    "model.stl": "d51b147e4cc926c06637b684d2057a83952d32f732abd28a26e98059f8649ef6",
+    "build_model.py": "deaedaeef33b18b5f2b0da14a9add497b2f6c3d4ddb4b13fbceb8d850edc6149",
+    "RENDER-REVISION-QA.json": "c7efc856c7528003ddeb3be204cee79a971029507f5e81d5523e3f3e067b1eeb",
+    "preview.png": "ddc877b1a3ce386f6c14c489bd11d89f3a96cce2bc4942ef2128f505cf4ffd30",
+    "rear.png": "d18cc3aaf86ef493d32dab0bba9a707aa77d41de4625305beda238651ed0ec60",
+    "front.png": "6e217a4049954f0e17bd9412c4489456a46a2767b91443f9de3c3fd5a12863c5",
+    "back.png": "718792b396fd02a4b1fe2efbe67b492ae9264378dc175bb1cdfbcc340a8bc70f",
+    "west.png": "3a824f181ed21d98e92e018c61ff632541c30f1a9f0cffb90312ffac14b87cfd",
+    "east.png": "d4a816cf5063d38df27e0d5ac1e455eb1bc88c13ca56050f5eb2a03750ceb6f4",
+    "top.png": "00a8970e9ca2a7fd836d118d0b5c9da08457906f3cb724f63f9419282087a6ad",
+    "entry-detail.png": "dcae91bc78df3af998d442342cd17b511e510fdc317d02640743d248db0418a9",
+    "corridor-detail.png": "02b5e04c491bbc8c94738c58fdd8248d9176338941fde0977899143d311d0ccd",
+    "roof-detail.png": "effd01d0aaab169122a4ce268a39e9e33ac0b7eab52716b205c226d4bd36de0a"
+  }
+}

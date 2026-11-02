@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": {
+    "roof_neutral": true,
+    "north_outer_neutral": true,
+    "east_outer_neutral": true,
+    "west_plain_end_neutral": true,
+    "brick_pier_gaps_not_gray_belt": true
+  },
+  "face_counts": {
+    "roof_neutral": 18,
+    "north_outer_neutral": 398,
+    "east_outer_neutral": 254,
+    "west_plain_end_neutral": 2,
+    "brick_pier_gap_faces": 63
+  },
+  "mesh_sha256": "118231d0007da9a464a27dbba8201b4b78ebad0797a5d3bcb6b06b8f0cdf7f53",
+  "limits": "Original face domain checks only, not a complete measured facade reconstruction."
+}
