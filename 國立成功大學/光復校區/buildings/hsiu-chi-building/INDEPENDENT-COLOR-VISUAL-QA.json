@@ -1,0 +1,113 @@
+{
+  "status": "PASS_BOUNDED_SAME_ITEM_COLOR_UPGRADE_WITH_DOCUMENTED_LIMITS",
+  "reviewed_at_utc": "2026-11-02T13:31:54.682558+00:00",
+  "scope": "Independent photo/code/array and final v4 ten-image visual review of color-only upgrade. Not validation of original architectural geometric accuracy, complete material survey, current appearance or printing.",
+  "source_GO_sha256": "e9bc587b1907e4d6e7ac8afef4e68db45a1dccbbfdfd455c34aa5d28cb35572e",
+  "source_images_actually_viewed": {
+    "official-flld-front.jpg": "76cada40cba9fc2a7ccdc6830592c15976a5900a5f530087365c6cc9e96703d4",
+    "official-material-139.jpg": "7704bf9ab43f0d0a0b9f93e360efb49288f1f1b90fa66dd0d2b9359f6f85cefe",
+    "official-material-3587.jpg": "8765b6e6a3219dd3cc64e2feef436ab188bd4f1efcefbab77496e6cd5e80dd7a"
+  },
+  "original_STL_sha256": "af1c45a9f03d66cdcd5a5e7077ff996dbc81be95a551d277f4fa58954ab27833",
+  "mesh_sha256": "7729efa7082d8552499d0d85491fccd7a0a0cedadc177c6974ff1d513a48e875",
+  "color_mesh_sha256": "7729efa7082d8552499d0d85491fccd7a0a0cedadc177c6974ff1d513a48e875",
+  "build_code_sha256": "18c826ea5fe54908ee7c2b4905bd2f086fba111156534d02f5c4701bef6d4a63",
+  "colorize_code_sha256": "56cf1a9923c86596272b450f847ce6e313049e6af95a529ec193dfb23f5839f3",
+  "render_code_sha256": "15fe5d3bd04ac5e96b56d051de252bc49100c0035a9ca4600621b8b76583cbd4",
+  "readme_sha256": "05dcfc19e38403b80243f48828056a1580a8187e2b1f0a88203c5cf07d018077",
+  "readme_zh_TW_sha256": "05dcfc19e38403b80243f48828056a1580a8187e2b1f0a88203c5cf07d018077",
+  "png_sha256": {
+    "preview.png": "7a9a58f569447c948b4f1e95197edfcd3f6e66c2e8e079367b0e76be7192aff6",
+    "rear.png": "6472fef968a0e366bb5943a3f3671af12bb838ba6edd167b2a8b5cd7e9eb7c04",
+    "front.png": "0df74569c3c8d18c95b59ab0dc5b47c1c4796eec4bd717207b91cc56ecd3d14c",
+    "back.png": "afae8153add9f48f20d0ce9dc253cd5b349bb1d7d2fba616faf2e15fb282bff3",
+    "west.png": "5345dd7859eb2037eb4a21d8737c066b72e355d190f4e634e575e4e152b71e68",
+    "east.png": "ab1db029303fafcc6b49a504460cee1d780e398744a08f0307fa36e3617567d8",
+    "top.png": "67ed15c1f29b35e743ef85c36ac2e87f6be4e261e70dcb82dc55697380a8f9c1",
+    "entry-detail.png": "906c2174605065da9a8c42f1e69dda69c1362e927188756a95d0bd5d38ea44b7",
+    "facade-detail.png": "1323d7cc7c0711c7ae8469de15bba101df5178711229289badfc3214a33a4938",
+    "roof-detail.png": "a8cacea3b13de7636602fa8e783cbef19c582e0abb8488e0c3ea8d099d1005ad"
+  },
+  "geometry_checks": {
+    "STL_byte_identical_to_retained_original": true,
+    "vertices_exact_equal": true,
+    "faces_exact_equal": true,
+    "triangles": 2104,
+    "watertight": true,
+    "no_retriangulation_or_geometry_changes": true
+  },
+  "material_counts": {
+    "0": 479,
+    "1": 611,
+    "2": 54,
+    "3": 4,
+    "4": 144,
+    "5": 753,
+    "6": 59
+  },
+  "independent_region_checks": {
+    "unverified_far_right_block": {
+      "face_count": 343,
+      "material_ids": [
+        5
+      ]
+    },
+    "source_bounded_middle_right_front": {
+      "face_count": 71,
+      "material_ids": [
+        0
+      ]
+    },
+    "left_unmapped_mass": {
+      "face_count": 229,
+      "material_ids": [
+        5
+      ]
+    },
+    "entry_front_frame": {
+      "face_count": 16,
+      "material_ids": [
+        1
+      ]
+    }
+  },
+  "visual_checks": {
+    "actually_viewed_all_final_images": [
+      "preview",
+      "rear",
+      "front",
+      "back",
+      "west",
+      "east",
+      "top",
+      "entry-detail",
+      "facade-detail",
+      "roof-detail"
+    ],
+    "full_views": "Seven whole-model views retain full model/support; captions readable and outside model.",
+    "details": "Three intentionally cropped details reviewed for material boundaries, front frame, original curve bands and roof uncertainty.",
+    "resolved": [
+      "False diagonal neutral wedges on the right-front triangle mesh removed.",
+      "Artificial brick triangle in entry pillar removed; entire original entry frame gray with disclosed coarsening.",
+      "Entry top and entire stair group use coherent gray families.",
+      "Unmapped far-right high block reverted wholly to neutral, including twelve previously miscolored side-wall/recess faces.",
+      "No new unsupported large triangular paint patches seen in final v4 views."
+    ],
+    "scope_control": "Central entrance and middle-right long wing only adopt source-supported color families. Left broad arch, far-right high block, unknown rear/side and flat roofs remain neutral."
+  },
+  "limitations": [
+    "Photographic entrance is not geometrically identical to the old modeled convex facade; color review must not be represented as renewed approval of radius, dimensions or window counts.",
+    "Broad color families only; not calibrated color codes, exact material composition or dated/current restoration.",
+    "Original triangles do not follow all photograph finish boundaries. Entrance is intentionally all-gray rather than fabricated fine brick-pier boundaries.",
+    "Street multiarch photo cannot uniquely map to old model single left arch or far-right high end block.",
+    "Dark recesses are opaque shadow approximations, not proof of glazing.",
+    "Seven material IDs are actually used, but not a tested four-filament workflow; no physical print/slicer certification.",
+    "Third-party photos/crops stay private and are not textures; public numeric/code/render artifacts do not relicense source images."
+  ],
+  "history_preserved": [
+    "INDEPENDENT-COLOR-QA-WIP-1318.json",
+    "INDEPENDENT-FAR-RIGHT-BLOCK-SCOPE-CORRECTION-1323.json"
+  ],
+  "other_validation": "Format, isolated rebuilding and saved-scene reopen evidence are builder-owned and separate from this review.",
+  "public_source_register_sha256": "c088432c13ee971863be909098378110b998e7ed6fa85c247a8627cc1e29d8f2"
+}
