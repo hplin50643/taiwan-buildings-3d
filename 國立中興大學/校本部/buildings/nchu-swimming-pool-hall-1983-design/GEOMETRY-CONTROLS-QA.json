@@ -1,0 +1,49 @@
+{
+  "status": "PASS_BOUNDED_HISTORICAL_EXTERIOR",
+  "checks": {
+    "tower_max13_8": true,
+    "four_corner_towers": true,
+    "main_floor80": true,
+    "entry_floor120": true,
+    "entry_roof520": true,
+    "entry_fascia565": true,
+    "roof_monopitch_range": true,
+    "east_external_fascia1280": true,
+    "east_beam_low1180": true,
+    "west_beam_high1280": true,
+    "no_curtainwall": true,
+    "no_invented_roof_equipment": true,
+    "entry_six_graphic_steps": true,
+    "corner_towers_highest": true,
+    "west_service_13_windows": true,
+    "southwest_no_west_windows": true,
+    "northwest_two_west_windows": true,
+    "entry_door_faces_north": true,
+    "historical_final_GO_hash": true
+  },
+  "mesh_sha256": "bf9c715ed398a683c1cad5f0026c4ec28d1f34da05ddcec7706b38fca4cb539c",
+  "derived_controls_m": {
+    "GH_gap": 0.4,
+    "roof_low_top": 11.8
+  },
+  "direct_controls_m": {
+    "roof_high_top": 12.8,
+    "tower_top": 13.8,
+    "main_FL": 0.8,
+    "entry_FL": 1.2,
+    "entry_RF": 5.2
+  },
+  "graphic_details_allowance_m": 0.15,
+  "printing_adaptations": {
+    "rail_bar_width_m": 0.15,
+    "rail_spacing_m": 0.42,
+    "roof_skin_m": 0.2
+  },
+  "not_claimed": [
+    "current survey",
+    "interior pools/basement reconstruction",
+    "tested printability",
+    "measured eave thickness",
+    "precise roof material"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_1983_HISTORICAL_EXTERIOR_INTERPRETATION_LIMITS",
+  "reviewed_utc": "2026-11-02T00:54:34.340015+00:00",
+  "independent_review": "五張來源原像素及程式/README交叉審查；最終十張實際逐圖目視。不是沿用builder自證。",
+  "mesh_sha256": "bf9c715ed398a683c1cad5f0026c4ec28d1f34da05ddcec7706b38fca4cb539c",
+  "build_sha256": "fc585d07c843ad8f861f35a3f2d83b19959eee0c100b5e042bbc2db724590f9e",
+  "renderer_sha256": "b231bb54e3b87a375c9796350edf73da6b34f37dc4cab8fc6fa266f217c0c343",
+  "readme_sha256": "e89b5434deb85dcb8e879d6fa01a917e7342e98b39a901810170cbd14ff45f10",
+  "private_source_review_sha256": "d7f9961a3c8abcd2f3fb1ca45f01798ccfbe8d065e522dd4a462f37a8554d125",
+  "source_contract_sha256": "c6b9aff2c7de25a647c0e82cfece68c04c9666c5e76900965f6816ea582332da",
+  "png_sha256": {
+    "preview.png": "2c176ca3f144be556468419848fbc3ced51983d8785decca5b95ba5ae7b5f693",
+    "rear.png": "b63d68491d4863a72aa74e956fcae41a0905865bf141f0f5d2c324696faff8fa",
+    "north.png": "051bc9da87043fc75bf7c006bb675a147e29a13c21dacde1ce8df1361cc9aed1",
+    "south.png": "3e5b69a31bdd4564894a8f630a4cc2363339d42c8deef5f9cd32621ad942c054",
+    "east.png": "455079577d428053d7d5fe973b78e2c7be7ef9b64c2392fcdc1d6771bd280a79",
+    "west.png": "94f7704453ad51973d3fed3d2524879752bc087aed64a9b52ceb084c633ecdf2",
+    "top.png": "9b1498460e6cc9b659d527cee49dde61515c090f8de16ef27250ca43fc5ba8f2",
+    "roof-detail.png": "27c48b74468f71721b5e6c9c79ffff0a727b76102975904976edd6e268a8103a",
+    "entrance-detail.png": "c1e3e4f0b2e0aee2c57d14151a0761d1c22ad45c229639912a73f9b8fb4a3e3e",
+    "colonnade-detail.png": "0b8eeee7231bd25c797dd58a3547404327e081ba7ac93425f56791b1c6dd3399"
+  },
+  "render_provenance": "build-v8；九圖render-v4，roof-detail由相同網格單張v5替換，公開renderer支援only-view，預設仍產十圖。",
+  "independent_mesh_check": {
+    "faces": 24696,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "positive_volume_mm3": 473728.4309953395,
+    "bounds_mm": [
+      [
+        -170.0,
+        -82.5,
+        0.0
+      ],
+      [
+        170.0,
+        82.5,
+        47.5
+      ]
+    ]
+  },
+  "per_view": {
+    "preview.png": {
+      "status": "PASS",
+      "observation": "四角塔及三側開放結構可辨，無端柱穿屋面，完整支座入框。"
+    },
+    "rear.png": {
+      "status": "PASS",
+      "observation": "西側實牆／上方開口與局部入口可辨，四塔高於屋面。"
+    },
+    "north.png": {
+      "status": "PASS",
+      "observation": "入口在圖右，北西塔北面低門、北面其餘開放，非鏡像。"
+    },
+    "south.png": {
+      "status": "PASS",
+      "observation": "南西塔南面兩高窗及低門在圖左，對側空白塔，源朝向一致。"
+    },
+    "east.png": {
+      "status": "PASS",
+      "observation": "長面開放柱廊／欄杆，未造玻璃幕牆，全長含兩端入框。"
+    },
+    "west.png": {
+      "status": "PASS",
+      "observation": "北端圖左有兩塔窗，南端圖右空白；低窄窗13處，入口左第四窗可見。"
+    },
+    "top.png": {
+      "status": "PASS",
+      "observation": "單一屋面、四塔及偏北西側入口輪廓，未增加天窗或設備。"
+    },
+    "roof-detail.png": {
+      "status": "PASS",
+      "observation": "替換v4大片空白屋面構圖；v5近景呈東北角塔、低檐槽及側梁交接，局部裁切為刻意。"
+    },
+    "entrance-detail.png": {
+      "status": "PASS",
+      "observation": "兩組雙門在北向面，西面實牆、地上短階及入口檐可見；地下長梯不表示。"
+    },
+    "colonnade-detail.png": {
+      "status": "PASS",
+      "observation": "可見柱間留空及加粗欄杆，未填幕牆；局部近景非全館構圖。"
+    }
+  },
+  "source_corrections_resolved": [
+    "入口門由錯誤西向改北向，依A2分界位置。",
+    "低窄窗由12補至13，保留入口缺口窗。",
+    "來源x南/y西左手坐標輸出Y鏡映回右手，A4北入口右/A5西入口左互證。",
+    "審核員早先錯把A5左塔稱南西已撤回；最終北西西面有兩窗、南西西面空白，南西南面另有兩窗。",
+    "端柱頂隨斜梁底收束，不再穿屋面。"
+  ],
+  "limitations": [
+    "G/H縫40cm為節奏推導，不是直接標注；工作軸95m不稱精測。",
+    "低屋面頂11.8由120cm梁深及平行剖線推導，270cm外檐帶另建。",
+    "局部檐厚、挑出、窗框圖量約±.15m是局部外觀界限，非全案精度。",
+    "入口FL1.2與主FL.8分開，六級20cm為圖量示意非原標階高；地下長梯及池槽/機房/完整內部省略。",
+    "三側開放外殼內只簡化樓面；西房/入口實心。",
+    "欄杆縮尺加粗與疏化，未切片未試印，水密不保證印製成功。",
+    "來源歷史工程題名不證竣工或現況，原圖不入公開包；材質色調展示近似。"
+  ],
+  "unresolved_blockers": []
+}

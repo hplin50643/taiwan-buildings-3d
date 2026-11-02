@@ -7,7 +7,7 @@
   "coverage_statement": "校本部A-F與南投N代碼表全部已轉錄；這是官方地圖項目清單，不是最終去重棟數。未列名的林場/農場附屬建物仍未逐棟研究。",
   "source_dates": "官方代碼頁未標明版本，讀取日期不等於更新/攝影日期；規劃/未完工狀態待2026另證。",
   "current_limits": [
-    "現行7個模型包；原3個前段、小禮堂重建後主廳、雲平樓2024中央前側、1985修訂設計三柱短停車棚，以及體育館主館1985年3月修訂歷史設計。歷史原設計不是現況或實施證明，均非完整校園或全館測繪；體育館歷史原案與今日地圖D-5的精確對應及改建時序仍須核實。",
+    "現行8個模型包；新增游泳池館1983歷史設計外觀，非現況或竣工確認。 前批7個模型包；原3個前段、小禮堂重建後主廳、雲平樓2024中央前側、1985修訂設計三柱短停車棚，以及體育館主館1985年3月修訂歷史設計。歷史原設計不是現況或實施證明，均非完整校園或全館測繪；體育館歷史原案與今日地圖D-5的精確對應及改建時序仍須核實。",
     "官方影音相簿部分已有目錄/標題及日期，圖片傳輸本次失敗；未實看項目仍屬未研究，不能稱無資料。",
     "相簿用語新/舊、使用單位與樓名需要校圖去重。",
     "附屬高中、附農為非大專校院，在本大學模型數中不納入；若要做需另立範圍。"
@@ -2781,8 +2781,8 @@
       "next_step": "先建立場域內逐棟清單與公開外觀實照，再建模；勿把場域清單冒充已完成建築清單。"
     }
   ],
-  "current_model_packages": 7,
-  "model_count_updated_date": "2026-11-01",
+  "current_model_packages": 8,
+  "model_count_updated_date": "2026-11-02",
   "current_increment_packages": [
     {
       "slug": "nchu-small-hall-rebuilt-main-hall",
@@ -2827,9 +2827,20 @@
       "scope_and_limitations_reference": "校本部/buildings/nchu-gym-main-hall-1985-design/README.md",
       "physical_print_verified": false,
       "classification": "historical_original_design_not_assigned_to_legacy_full_or_partial_categories"
+    },
+    {
+      "slug": "nchu-swimming-pool-hall-1983-design",
+      "name": "游泳池館｜1983第一期未完成部分工程歷史圖示",
+      "campus": "校本部",
+      "path": "校本部/buildings/nchu-swimming-pool-hall-1983-design",
+      "readme": "README.md",
+      "scope": "1983年第一期未完成部分工程泳池館歷史設計外觀，非現況測繪或竣工確認，不等同已建成游泳館完成。G/H短縫40cm、低坡11.8m為明示推導；GL局部80/120cm分別解讀，不混用。地下室內部、內部設備和未知地形未重建；中性配色與細部簡化、未實際列印。",
+      "scope_and_limitations_reference": "校本部/buildings/nchu-swimming-pool-hall-1983-design/README.md",
+      "physical_print_verified": false,
+      "classification": "historical_original_design_not_assigned_to_legacy_full_or_partial_categories"
     }
   ],
   "counting_scope": "現行模型套件總數；不是完整建築棟數或全校完成。新增項以各件README的來源、年代、截段與未知範圍為準，未實體試印。原full/partial分類不擅自擴充；新增項另列未分類。",
-  "current_increment_legacy_classification_unassigned": 4,
-  "classification_baseline_scope": "completed_full_buildings=0 and completed_partial_building_models=3 are prior-three baseline; four additional bounded/historical-design studies are unassigned rather than guessed into categories."
+  "current_increment_legacy_classification_unassigned": 5,
+  "classification_baseline_scope": "completed_full_buildings=0 and completed_partial_building_models=3 are prior-three baseline; five additional bounded/historical-design studies are unassigned rather than guessed into categories."
 }
