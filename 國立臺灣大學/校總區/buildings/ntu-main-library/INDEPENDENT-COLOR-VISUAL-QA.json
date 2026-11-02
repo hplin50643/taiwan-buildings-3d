@@ -1,0 +1,118 @@
+{
+  "status": "PASS_SAME_ITEM_COLOR_UPGRADE_WITH_DOCUMENTED_LIMITS",
+  "reviewed_at_utc": "2026-11-02T12:20:20.173092+00:00",
+  "scope": "Independent source-photo appearance, face-material region, original-geometry preservation and final v5 ten-image visual review; not a new measured reconstruction or print/slicer certification.",
+  "original_STL_sha256": "80f25ad47c6aa3c2918840a275709a07aeba024e064db20aaad97a4bd9d4c909",
+  "mesh_sha256": "4271fa4da7bde5ade9ac7e2bfb946d20153ba4af9b40df5842dc6e97b7b280a0",
+  "color_mesh_sha256": "4271fa4da7bde5ade9ac7e2bfb946d20153ba4af9b40df5842dc6e97b7b280a0",
+  "build_code_sha256": "f04f98c1a11881449e15f5929b7efda9173c8dd56c6163507bcc97a0e97beceb",
+  "colorize_code_sha256": "c58db1dbfcc303d35e1fdc10242cc30557c7fb9484d22761c6df0c54914a857e",
+  "render_code_sha256": "2e50576c3f5f958d4e166ff86b7ec0538b3c1b3f0489a7bf05cfbcd99b0357cd",
+  "readme_sha256": "734e1743518aa82b0c277506b77c43d1d03441408e03286f9ae244e3b8e0d672",
+  "readme_zh_TW_sha256": "734e1743518aa82b0c277506b77c43d1d03441408e03286f9ae244e3b8e0d672",
+  "source_photo_sha256": "6a2ed23994290127fbc292af0857442e0a01f1cbcb4db9d569af66b9f3c58207",
+  "png_sha256": {
+    "preview.png": "8a187a0001977899050cddbc51f9359450f7fdb471677e8bdc58d40f32206b59",
+    "rear.png": "6cc5e3a4f86bc7a2fc4ba4bfe512b2e7a873570046f31418d5340c980ae79eb9",
+    "front.png": "9a27e53b98efe767d2af59c40f45a01efa505c348eab2d7dfbcaef25f00d7cf4",
+    "back.png": "0ee1cb95e8785b43700cb7441192f0bd6992aea51d9a99ddb97baf8405a775bf",
+    "west.png": "bfe6d6b0b3560f082a0b95e689f90170c45d04022802d56a78fa400ffbf11f85",
+    "east.png": "2ff1498f0f9c8b3730579a8a41a9278eef25586fc1ca5f9cee052aa727ef6cc5",
+    "top.png": "f460e82c0496a1c8baa18972a7c2ff521ed33122a2f92a88704001b23115f630",
+    "entry-detail.png": "8b43f61446f6be1e7b4bc889843224cfa8496350f12dbfcf04480b8ad29e38b5",
+    "tower-detail.png": "3b4911d031a026fd1a26b85d7aae6a353482f3a2c47b8ac11848b734a801c3ca",
+    "roof-detail.png": "79d428f77d6aef4165534ab4529abab30b3bbd226bab173a64b1ae5800e45261"
+  },
+  "geometry_checks": {
+    "original_STL_byte_identical": true,
+    "vertices_exactly_equal_to_processed_original_STL": true,
+    "faces_exactly_equal_to_processed_original_STL": true,
+    "triangles": 3264,
+    "watertight": true,
+    "no_subdivision_or_displacement": true
+  },
+  "material_face_counts": {
+    "0": 755,
+    "1": 1997,
+    "2": 319,
+    "3": 16,
+    "4": 18,
+    "5": 159
+  },
+  "independent_region_checks": {
+    "tower_platform_z49": {
+      "faces": 12,
+      "material_ids": [
+        1
+      ]
+    },
+    "tower_front_plane_below_belfry": {
+      "faces": 90,
+      "material_ids": [
+        0
+      ]
+    },
+    "cap_slopes": {
+      "faces": 16,
+      "material_ids": [
+        4
+      ]
+    },
+    "cap_seating": {
+      "faces": 8,
+      "material_ids": [
+        1
+      ]
+    },
+    "unknown_flat_rear_roof": {
+      "faces": 14,
+      "material_ids": [
+        5
+      ]
+    },
+    "unknown_back_wall": {
+      "faces": 2,
+      "material_ids": [
+        5
+      ]
+    }
+  },
+  "visual_inspection": {
+    "actually_viewed_final_v5_images": [
+      "preview",
+      "rear",
+      "front",
+      "back",
+      "west",
+      "east",
+      "top",
+      "entry-detail",
+      "tower-detail",
+      "roof-detail"
+    ],
+    "seven_full_views": "Complete model and support visible; labels readable and outside model.",
+    "three_detail_views": "Intentional close-up crops; entrance stone/glazing, tower cap/platform and neutral roof treatment inspected.",
+    "resolved_findings": [
+      "Higher rear gable no longer incorrectly masked pale stone.",
+      "Tower cap bluegreen slopes separated from gray seating.",
+      "Tower z49 horizontal platform uniformly gray; spurious front-wall triangular stone wedge removed.",
+      "Broad unverified rear roof and long/back faces remain uniform neutral, no centroid-created large triangular color patches."
+    ],
+    "source_supported_color_families": [
+      "reddish brick",
+      "pale gray stone front gable and trim",
+      "dark opaque glazing",
+      "dark sloped roof",
+      "muted bluegreen tower cap"
+    ]
+  },
+  "limitations": [
+    "Only the existing simplified model was colored; original proportions, geometry and unavailable rear facade details were not rebuilt.",
+    "Photographic color families are approximate, not calibrated measured colors or guaranteed current conditions.",
+    "Large rear roof, rear and long-side surfaces are explicitly unverified neutral.",
+    "Original coarse triangles limit small material boundaries; the brick-colored sloping tower shoulder is an existing distinct geometric surface, not a residual split of the z49 horizontal platform.",
+    "Six actually used materials do not constitute a tested four-filament project. STL remains uncolored; no physical print or slicer-import verification is claimed by this review.",
+    "Private reference photo is not a texture and must not enter the public package. Source rights are not reassigned."
+  ],
+  "other_validation": "Builder delivery/format/rebuild/reopen checks are separate evidence; this independent report does not substitute for them."
+}
