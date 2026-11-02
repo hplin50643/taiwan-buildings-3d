@@ -1,0 +1,91 @@
+{
+  "status": "PASS_AUTOMATED_CHECKS_NOT_VISUAL_RELEASE",
+  "mesh_sha256": "7763f1ce7e02b827f6433c8717904b39ecc0ed5b994de8f0aae04f3fa299dc72",
+  "render_code_sha256": "dd1417db06a761a1f956dec127cdc579a709ff7a3163e39d8830168061394fa6",
+  "scene_sha256": "f9d1aec57fc4974ccd168ff479a9f57b413a7dcf4a3e67d2dc7e8cf8352c694d",
+  "build_input_sha256": {
+    "build_model.py": "1fa178314a77160f07219fd0c298065d076b6c138eae99782f537f8b6fb1868a",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "images": {
+    "preview.png": "0c62df9bd6da0ddebdebf8eb76b98d93bdd8bbd949a33b44f49dc44c6baabfc8",
+    "rear.png": "b1abcaeadd1ebb2e1185cefe2323e1a64002340049b153c314b3ef503cec4ff3",
+    "front.png": "414a5f847fefbf446ee8d6077e70b2d3aad650193b42658e9614573ae806bfcc",
+    "back.png": "443ce7b25f7b271eb2620097bc451646b760ed4c2238f60cc0490f6f973d8c23",
+    "west.png": "a3dda446e4f330d056dfe4f9a8e51c2142f7711165748be18f26063014b3b554",
+    "east.png": "249aac6c269f1b047b1e375e00d5ace3f116e9b968219b58b82952a969619d1d",
+    "top.png": "1e1fceac481736dd65a9a63e97ce4e97090e7ae6601149bcc7f66c1202dc9284",
+    "stair-detail.png": "33bad9fddd54f6a951f95ffa47989cd71502e57c1a339abd64bb230bb0f75801",
+    "tower-detail.png": "8ffa0d063b92dd94205c41ab4aed3f8c5bf90565304ba4e14627062c2ef9c5ec",
+    "arcade-detail.png": "1d43ddd0fc5019e75c84143b63072d7929171a55210e1f28bb73f3290eba4964"
+  },
+  "image_sizes": {
+    "preview.png": [
+      1200,
+      900
+    ],
+    "rear.png": [
+      1200,
+      900
+    ],
+    "front.png": [
+      1200,
+      900
+    ],
+    "back.png": [
+      1200,
+      900
+    ],
+    "west.png": [
+      1200,
+      900
+    ],
+    "east.png": [
+      1200,
+      900
+    ],
+    "top.png": [
+      1200,
+      900
+    ],
+    "stair-detail.png": [
+      1200,
+      900
+    ],
+    "tower-detail.png": [
+      1200,
+      900
+    ],
+    "arcade-detail.png": [
+      1200,
+      900
+    ]
+  },
+  "freshness_timestamp_checks": {
+    "preview.png": true,
+    "rear.png": true,
+    "front.png": true,
+    "back.png": true,
+    "west.png": true,
+    "east.png": true,
+    "top.png": true,
+    "stair-detail.png": true,
+    "tower-detail.png": true,
+    "arcade-detail.png": true
+  },
+  "full_model_views": [
+    "preview",
+    "rear",
+    "front",
+    "back",
+    "west",
+    "east",
+    "top"
+  ],
+  "intentional_cropped_details": [
+    "stair-detail",
+    "tower-detail",
+    "arcade-detail"
+  ],
+  "limitation": "Hashes bind inspected files; freshness uses filesystem timestamps, not signed per-render provenance. Human 10-view visual QA and separate source/privacy audit remain required."
+}

@@ -1,0 +1,57 @@
+{
+  "status": "PASS_AUTOMATED_INVENTORY_AND_MESH_NOT_SOURCE_QA",
+  "checks": {
+    "scale_1_200": true,
+    "authored_support_065m": true,
+    "actual_component_extrema_match_print_bbox": true,
+    "base_z_zero_mm": true,
+    "cross2085_plus_support065_scaled": true,
+    "mesh_closed_single_component_positive_volume": true,
+    "STL_triangle_coordinates_match": true
+  },
+  "mesh_sha256": "7763f1ce7e02b827f6433c8717904b39ecc0ed5b994de8f0aae04f3fa299dc72",
+  "input_sha256": {
+    "build_model.py": "1fa178314a77160f07219fd0c298065d076b6c138eae99782f537f8b6fb1868a",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "scale": "1:200",
+  "mm_per_source_m": 5.0,
+  "authored_base_m": 0.65,
+  "source_finished_roof_low_m": 12.89,
+  "source_finished_roof_high_m": 14.11,
+  "tower_top_m": 17.85,
+  "cross_top_m": 20.85,
+  "tower_graphical_allowance_m": 0.35,
+  "expected_print_top_mm": 107.5,
+  "actual_bounds_mm": [
+    [
+      -84.17500305175781,
+      -30.475000381469727,
+      0.0
+    ],
+    [
+      84.17500305175781,
+      30.475000381469727,
+      107.5
+    ]
+  ],
+  "authored_component_expected_bounds_mm": [
+    [
+      -84.17500000000001,
+      -30.474999999999998,
+      0.0
+    ],
+    [
+      84.17500000000001,
+      30.474999999999998,
+      107.5
+    ]
+  ],
+  "limitation": "Automated geometry checks are not source or visual PASS. Human QA must inspect late1958 complete school-and-chapel exterior, open arcades and terraces, inclined tower profile and 112 true lattice apertures, 50 fins on each of three levels, actual external stair and source local grades. Inventory is not visual/source PASS. Display support is not measured terrain; early roof/tower version must not be mixed.",
+  "not_claimed": [
+    "final visual QA",
+    "current survey",
+    "physical print testing",
+    "publication readiness"
+  ]
+}
