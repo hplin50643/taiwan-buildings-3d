@@ -1,0 +1,110 @@
+{
+  "status": "PASS_BOUNDED_FRONT_COLOR_UPGRADE_WITH_DOCUMENTED_LIMITS",
+  "reviewed_at_utc": "2026-11-02T13:43:27.220430+00:00",
+  "scope": "Independent actual official photo, code, original geometry arrays and all ten final v1 rendered views. Color-only review, not renewed architectural survey accuracy or printing certification.",
+  "source_GO_sha256": "1b2fa91d1b54e21c120f3d26f41650d14d2cdcb318c09221c0d1690ce9477d17",
+  "actual_source_photo_sha256": "f7f1e49df50cf844cb2213b3d15167b031a8e048df9473ded372bba32ccbaa5c",
+  "original_STL_sha256": "e65d94ce49d6829333d26e0dcb9984fc473104e8e072333bee52482b45d5d932",
+  "mesh_sha256": "5d9d2f699409eea50eb9c766f7df2f7d945b39e5c945507af32140d4880fdd1c",
+  "color_mesh_sha256": "5d9d2f699409eea50eb9c766f7df2f7d945b39e5c945507af32140d4880fdd1c",
+  "build_code_sha256": "7122b2c3acb0d567490700b9be1cd1b75ac6af4db1a6e9a9f9be92426d4000fa",
+  "colorize_code_sha256": "0439cccd8e5b5fdf30838eba0af5482fd532545265f8d4791efebad7535af2d6",
+  "render_code_sha256": "25dfaf0e132c206f57e0e62bd9b20365b257c6071b7a1c6cff1f7ec95585d935",
+  "readme_sha256": "76d4f6cefdcbecacdbdc87a8cf02a2856eba3a5bb6c547f657fc20dc40f30f53",
+  "readme_zh_TW_sha256": "76d4f6cefdcbecacdbdc87a8cf02a2856eba3a5bb6c547f657fc20dc40f30f53",
+  "public_source_register_sha256": "83574dd25acb20da11c467906723856f32008f575e461200d07931ccb0bf9c9b",
+  "png_sha256": {
+    "preview.png": "58c7da850f69d86655f984122fe1ced9ab20d8362a2339f54a3cb92ecb49b966",
+    "rear.png": "2d8395e680ba9812643862000990dcb0de81faf2d7a36e6c7de103e11b423e88",
+    "front.png": "9fe8751dbb9ce4f88bc0a5fd4f5f9ca01fb9769c1d0c693f4d9c8f236906067b",
+    "back.png": "9910acb37599f2586db86cece5c16c429e1d964fe3199fb2f873c89a4435aeea",
+    "west.png": "215936556832829c2a4316c3a4902662845efbac3cb76beeb36aeb807f2f0001",
+    "east.png": "ad1af4d7d70ba9aec00abedee8609bbc9b5f8abba20daace54d32c74a3213e9b",
+    "top.png": "a0758c19abfbdc0aa5d8bbdfc3da4594dfeb61a651dcd411928d24a54b75f1ac",
+    "entry-detail.png": "29402ea5632cad88c664d79521879720603f4f7f7891d8221bc2b96eea584215",
+    "facade-detail.png": "ac4087219a13cfae063c4f6d6aee7d45efbdbcfd77c365aac8a8b4f221499a57",
+    "roof-detail.png": "920af9923b1264afa5a36099ce3fcf94ca01aa3889eac7115c88851baa3df8cb"
+  },
+  "geometry": {
+    "STL_byte_identical_to_original": true,
+    "vertices_exact_equal": true,
+    "faces_exact_equal": true,
+    "triangles": 4982,
+    "watertight": true,
+    "x_scale": ".88 reversed for classification only; original output vertex coordinates unchanged.",
+    "no_subdivision_or_new_geometry": true
+  },
+  "materials_used_face_counts": {
+    "0": 758,
+    "1": 152,
+    "2": 1651,
+    "3": 36,
+    "4": 2320,
+    "5": 65
+  },
+  "independent_region_checks": {
+    "unverified_low_entrance": {
+      "faces": 1501,
+      "materials": [
+        4
+      ]
+    },
+    "unverified_sidewalls": {
+      "faces": 27,
+      "materials": [
+        4
+      ]
+    },
+    "unverified_back": {
+      "faces": 20,
+      "materials": [
+        4
+      ]
+    },
+    "front_plane_y_-16": {
+      "faces": 228,
+      "materials": [
+        0
+      ]
+    },
+    "front_plane_y_-22.5": {
+      "faces": 65,
+      "materials": [
+        0
+      ]
+    },
+    "front_plane_y_-17.5": {
+      "faces": 30,
+      "materials": [
+        0
+      ]
+    }
+  },
+  "visual_checks": {
+    "all_actually_viewed_final_views": [
+      "preview",
+      "rear",
+      "front",
+      "back",
+      "west",
+      "east",
+      "top",
+      "entry-detail",
+      "facade-detail",
+      "roof-detail"
+    ],
+    "seven_full_views": "Model and support remain completely framed; readable captions separate from main model.",
+    "three_details": "Intentional local crops: neutral portico, bluegreen central backing and lighter existing mullions, neutral horizontal roof and blank name plaque inspected.",
+    "findings": "No necessary correction found. No spurious large planar diagonal paint patches, unsupported side/rear colors or added lettering.",
+    "high_horizontal_exception": "Two gray horizontal faces at z123 are the original name-plaque top; 44 higher roof/ledge faces in that audit region remain neutral, so not a roof-color claim."
+  },
+  "limitations": [
+    "Broad source-observed gray front, bluegreen daylight reflection family and lighter mullions only; not calibrated glass tint, finish composition or a specific-year/current survey.",
+    "Original dimensions, depth, window counts, coarse semicircular entrance and structural geometry remain unverified old approximations.",
+    "Foliage-hidden parts of the same existing front wall and central panel are explicitly generalized; this does not justify recoloring the unseen entrance.",
+    "Semicircular portico canopy, columns, steps and unknown rear/side/roof retain neutral placeholder color.",
+    "No source textures or gold lettering were added. Photo remains private; no implied CC or commercial relicensing.",
+    "Six materials are actually used, not a tested four-filament slicer project; no physical print or slicer compatibility claimed."
+  ],
+  "separate_checks": "Builder-owned format, isolated reproducibility and scene reopen evidence remain separate from this focused independent review."
+}

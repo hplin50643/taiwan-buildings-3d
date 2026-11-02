@@ -1,41 +1,42 @@
-# 輔仁大學・濟時樓（主塔外觀近似）
+# 輔仁濟時樓｜原模型有界補彩
 
-## 模型預覽
+## 彩色模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![STL斜前方](previews/front.png) | ![STL斜後方](previews/rear.png) |  |
+原 **4982 三角形及 STL／建模程式不變，count_delta = 0**。只以官方正面照片補灰牆、藍綠窗與淺灰梃；背側／屋頂／樹遮入口保持中性。仍為原主塔外觀近似，不是新測繪或某年完整現況。
 
-新莊校本部；官方校圖編號 47。這是公開照片導向的整棟外觀近似研究模型，並非精密測繪或BIM。
+| 整體 | 背斜 | 正面 |
+|---|---|---|
+| ![整體](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![左側](west.png) | ![右側](east.png) |
+| ![頂面](top.png) | ![入口](entry-detail.png) | ![窗帶](facade-detail.png) |
+| ![屋頂](roof-detail.png) | | |
 
+## 材色範圍
 
-## 外觀依據與範圍
-完整主塔樓外包絡、中央高窗帶、左右窗列及水平挑板、較高中央頂部、圓弧入口雨遮与柱廊。
+- 正面不透明牆與高端部為灰色族；中央既有窗凹底採藍綠反光色，梃與框為暖淺灰，側列小窗採暗灰。不是校準的玻璃透光色或修復漆號。
+- 原碼先把建築 X 軸乘 0.88；本次只按反轉後座標辨識材域，輸出頂點不改。已有格梃不是新添構件，牌板仍空白，不畫金字。
+- 照片下部樹遮；在同一已有正面牆/中窗帶內，材色作一致色族概化延伸，不宣稱逐點可見。**半圓門廊屋頂、柱、階及未知入口保持中性**，不因整棟灰牆而宣稱入口色已核。
+- 原窗格、尺度、進深、概括入口階等仍是舊模型近似。整片屋頂水平面、側牆及背面未知中性；中性不是現地灰色的證明。沒有新增照片紋理、門扇、文字或立面幾何。
+- 來源照片未明確拍攝日，日照與反光影響顏色；不主張 2026 即時或任何一年的精確全館。
 
-## 必讀的證據缺口
-目前來源正面充足、兩側與背面不足；側背窗未臆測，背面保持簡化實面，進深為估計。入口階梯受樹木遮蔽，模型採概括階梯，並非精確雙曲梯段。範圍是主塔楼外觀，不等同館藏使用樓層或室內。圖書館面積不得作單棟實測尺寸。
+## 彩色檔與重建
 
-每件獨立估計比例；含底座最長邊150 mm。模型預覽直接匯入交付的 model.stl；沒有用替代美化模型渲染。顏色僅為展示材質。
+[appearance.3mf](appearance.3mf) 是毫米六基本材質逐面分配；[scene.blend](scene.blend) 使用同一原網格實際材質。[model.stl](model.stl) 保留且本身不含顏色。原遠端包沒有 OBJ，不宣稱保存不存在的原 OBJ。
 
-## 檔案與重建
-- model.stl：原始交付列印網格
-- scene.blend：由相同STL匯入、可編輯網格與展示鏡頭
-- build_model.py、requirements.txt：可重建來源
-- render_preview.py：以Blender 4.3.2以上產生展示及Blend
-- validate_model.py、validation.json：原始法向、邊/頂點流形、單殼、正體積、重建SHA及Blend一致檢驗
-- check_contour_validity.py：0.2 mm間距原始STL截面封閉／多邊形有效性，不修補輪廓
-- thin_canonical_v2.py：0.8 mm參考寬度的形態篩檢，使用共邊一致插值
-- sources.json：逐來源與年代／用途
+```sh
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 2 -P render_color.py
+blender -b --python-exit-code 1 -P verify_color_scene.py
+```
 
-使用Python 3.12建立虛擬環境，安裝requirements.txt後依序執行build_model.py；再以blender -b -t 2 -P render_preview.py產生圖片與場景；執行validate_model.py、check_contour_validity.py及thin_canonical_v2.py。
+舊 `previews/`／`render_preview.py`／`validation.json` 與原 QA 檔保留作單色歷程，非本次彩色 QA；原 renderer 會重建單色，勿混用。新證據見 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、DELIVERY-QA 及獨立視覺審核。隔離重建保留不刪檔。
 
-## 列印注意
-底座平放。階梯、屋簷、柱廊、窗口凹槽及突出構件可能需要支撐；先用自己的切片器檢查懸空與橋接，按噴嘴／材料調整。0.8 mm篩檢不是全表面壁厚分析，也不是列印機路徑模擬。尚未做真正切片驗證或實體試印，不能保證可印。縮小會讓窗格、檐角及宗教符號變脆。
+## 列印與權利限制
 
-## 來源
-- [輔仁耶穌會使命特色發展室：濟時樓](https://jmomission.fju.edu.tw/aboutFju.jsp?labelID=28)：官方正面外觀照片，檔案1_28_799_1.jpg；未標攝年，實際已查看
-- [中研院宗教地景GIS：耶穌會會院聖堂](https://gisrl.ascdc.sinica.edu.tw/religiontw/?q=node%2F614)：2017-10-16正面照片，圖示濟時樓本體；實際已查看
-- [輔仁招生：濟時樓圖書總館](https://fjcuadm.fju.edu.tw/library_detail.php?id=2)：現有用途、館舍3500坪；樓地板面積不換算成任意外輪廓尺寸
-- [國家文化記憶庫：濟時樓](https://tcmb.culture.tw/zh-tw/detail?id=235824&indexCode=Culture_Place)：高挑門廳與對稱階梯之文字證據
+六材質外觀**不是已驗證四色耗材切片專案**；未實際列印、未驗證切片/換色/支撐。材色不改善原模型尺寸或可列印性保證。
 
-原始第三方照片僅用於私下核對，沒有包入發布資料；幾何自行撰寫，未擷取他人3D資產。
+[輔仁大學官方濟時樓介紹與正面照片](https://jmomission.fju.edu.tw/aboutFju.jsp?labelID=28)為來源（完整來源角色見 COLOR-SOURCE-REGISTER.json）；未確認個別 CC。原照片、原頁與裁圖只私人研究，不公開、不作紋理。模型授權不包含照片或建築設計權利，不保證商用。
+
+原幾何範圍為輔仁大學新莊校本部濟時樓主塔外觀近似；背面素牆、側窗缺漏和樹遮入口概括仍保留，不因補彩冒稱全館完整精測。

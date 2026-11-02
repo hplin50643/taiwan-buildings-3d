@@ -1,0 +1,80 @@
+{
+  "status": "GO_BOUNDED_FRONT_COLOR_ONLY_UNCHANGED_GEOMETRY",
+  "slug": "fju-fahy-memorial-building",
+  "identity": "輔仁大學新莊校本部濟時樓主塔，官方校圖47；不把樓內聖堂或圖書館用途另算",
+  "count_delta": 0,
+  "source_geometry": "unchanged original4982triangles; photo-derived main tower/estimated depth and simplified semicircular entry retained, not revalidated as survey",
+  "fresh_remote": "publisher13:17 reports98885214659b6029b9d0a8a4882c82b645e6c465; only priorcolorupdates, thiscandidate unchanged from immutable1b418 base. Full actualtree publication-ncku-lixian-color-20261102/final-remote-recursive-tree.json",
+  "monochrome_evidence": "color-audit-batch4-20261102/MONOCHROME-CANDIDATES.json plus ACTUAL-SCENE-MATERIAL-AUDIT.json;4982faces index0 Warmstone noalternative",
+  "sources": [
+    {
+      "url": "https://jmomission.fju.edu.tw/aboutFju.jsp?labelID=28",
+      "sha256": "57344bd78077984954a3cdbf63d6c08a0a1ec96fe0cd93fc7174bcfc2c874922",
+      "use": "officialidentificationandactualphotolink"
+    },
+    {
+      "url": "https://jmomission.fju.edu.tw/showImg/subLabelImg/1_28_799_1.jpg",
+      "sha256": "f7f1e49df50cf844cb2213b3d15167b031a8e048df9473ded372bba32ccbaa5c",
+      "use": "actualfrontphoto fullresolutionview; graybody, bluegreencentralglass, lightergraymullions, darker sidewindows; lowerbuildingtreeoccluded; capturedate unstated"
+    }
+  ],
+  "palette": [
+    {
+      "id": "front_gray_wall",
+      "hex": "#A2A59B",
+      "region": "observed front main opaque wall/head, horizontal ledges and plaque blank face",
+      "certainty": "gray stone/concrete appearance, exact composition not asserted"
+    },
+    {
+      "id": "central_bluegreen_glass",
+      "hex": "#4D8C9D",
+      "region": "existing central glazing recess backs corresponding to broad vertical blue-green panel",
+      "certainty": "daylight-reflection family only, not calibrated tint or transparency; foliage-hidden lower patches generalized within existing matching panel must be disclosed"
+    },
+    {
+      "id": "frame_gray",
+      "hex": "#B5B7A9",
+      "region": "existing central mullions and observed side-window frames",
+      "certainty": "light gray warm-neutral, not bright white or all dark bars"
+    },
+    {
+      "id": "side_dark_window",
+      "hex": "#4B5350",
+      "region": "existing side/front small window recesses and highslotrecesses",
+      "certainty": "dark reflected glass/shade appearance, no new openings"
+    },
+    {
+      "id": "unknown_neutral",
+      "hex": "#A9ADA6",
+      "region": "semicircular entrance canopy/columns/stairs and obscured lowerentry, roofhorizontalplanes, plain rear and sidefaces not proven by frontphoto",
+      "certainty": "unverified neutral; no inference of same finish from facade"
+    },
+    {
+      "id": "display_base",
+      "hex": "#B0AEA6",
+      "region": "display plinth",
+      "certainty": "presentation only"
+    }
+  ],
+  "critical_mapping": [
+    "Original geometry code scales every buildingpart/cut/detail x by.88 while base remains150; material classifier must account for it.",
+    "No gold lettering added: originalnameplaquehasnolettergeometry and sourcefont/logo not reused.",
+    "Do not classify all outward facesgray as observed: side/rear/roofunseen neutral.",
+    "No added or cut triangles to paint exact regions; coherentwholefaces, crossingunknownboundaryneutral if ambiguity.",
+    "Central glass color may be a broad family mapping not proof that hidden foliage-covered portions all have identical measuredreflectance."
+  ],
+  "version": "Originalundatedofficialphoto evidence; not2017datefromunavailableSinica nor2026current. No claim of unified-year paint survey.",
+  "rights": "OfficialFJU pagecopyright2014-2020; no confirmedCCforimage. Photo/HTML/crops remainprivate, no textures or images inpublicpackage. CiteofficialURL; projectlicense does notlicenseoriginalphoto.",
+  "access_results": [
+    {
+      "target": "Sinica2017externalpage node614",
+      "outcome": "HTTP401terminal, nofile; stopped noauthattempt"
+    },
+    {
+      "target": "Sinicaexact20171016_1627291508252793 externalphoto",
+      "outcome": "HTTP401terminal, nofile; notusedpixel evidence"
+    }
+  ],
+  "sealed_utc": "2026-11-02T13:20:50Z",
+  "source_GO_sha256": "1b2fa91d1b54e21c120f3d26f41650d14d2cdcb318c09221c0d1690ce9477d17"
+}
