@@ -1,0 +1,60 @@
+{
+  "status": "PASS_BOUNDED_COLOR_V3_EXISTING_GEOMETRY",
+  "review_scope": "獨立核材色/既有面域與文件；不是新幾何精度或列印保證",
+  "geometry": {
+    "triangles": 2524,
+    "original_triangle_coordinate_multiset_exact_equal": true,
+    "STL_OBJ_build_model_bytes_unchanged": true
+  },
+  "material_counts": [
+    520,
+    336,
+    280,
+    266,
+    34,
+    1088
+  ],
+  "mask_checks": {
+    "entire_wing_front_plane_neutral_faces": 200,
+    "warm_reveals_faces": 336,
+    "central_all_vertex_source_z_max": 109,
+    "wing_all_vertex_source_z_max": 106,
+    "export_z_scale": 0.76,
+    "above_109_all_neutral": true,
+    "unknown_hex": "#A7ABA5"
+  },
+  "visual_review": [
+    "preview.png",
+    "front.png",
+    "back.png",
+    "facade-detail.png"
+  ],
+  "visual_findings": [
+    "兩翼主平面一致中性，未見前版假斜塗裝楔；暖灰僅局部既有窗洞側面，非整翼暖色精確復原。",
+    "中央五排淡梃/深窗與源照色族相符；既有粗化格數未新增。",
+    "塔頂凹口可因遮蔽呈暗但材質仍中性；圓核/後屋不主張已證色。",
+    "照片灰米與官文磚紅差異保留，不能以本次低飽和近似消除差異。"
+  ],
+  "README_review": "實讀最終README：2013近似幾何與拍攝日期未註官照分開、whole-face界線、翼主牆中性非灰漆、未證範圍、原圖私有、HEX非校色及六材非已驗切片均明示。",
+  "bound_files": {
+    "README.md": "2f6f50decc61758d992cc29ae5cffed70c8e2da9153109019feab15ad361fc4b",
+    "README.zh-TW.md": "2f6f50decc61758d992cc29ae5cffed70c8e2da9153109019feab15ad361fc4b",
+    "colorize_model.py": "4dbfe386e98daa6f6cd3e86e87ca4ec38171001f01c0613d8cd15a17921d028a",
+    "color-mesh.npz": "a4d74a98b95647c6557c42c6c5e60c21b75f5dcc707733954e2512a40a3109e4",
+    "palette.json": "dce902a752121c4ca20fd0ca36110ad48f4011aa63d6968480216feff77d2d9e",
+    "model.stl": "0fa6acf0e73b9e82a5d754c464a55a8382046211707b552052ce9eb219569330",
+    "model.obj": "df6c56891ca91e8e5d7e641a5e1850ec41cf41926a8d51377bbb735b2cb29b30",
+    "build_model.py": "ba37e655b69ddd2e892359b91d6a794cfc5e92fdacb9c851c9cabc335f69eb21",
+    "preview.png": "9ab7b32706b581878acbf71ca125f0b904b230d374c76dd9b6327f24b2522455",
+    "front.png": "bf6916138877238ee05d591fb4c82aedcb28bba0ea903b0fe3a0a873efadebae",
+    "back.png": "d2b936d5d087498ba140e27d5b54696c841da308721e2f260687be0e68564678",
+    "facade-detail.png": "9b1590f3420c197a18857dd72f0c1d450348d51aa6210c8de975558dae753c5c"
+  },
+  "source_review": "NCU-ZHI-XI-COLOR-INDEPENDENT-FACE-REVIEW-1239.json",
+  "source_review_sha256": "1ac78984bbb4888c55e6221d89f3e22cd2890a0e568eefe0a9ebfc47c55b4e96",
+  "limitations": [
+    "未更改或執行模型輸出程式；以原STL與NPZ直接比對。",
+    "屋面/背部/圓核中性是未核標記，非實景材色。",
+    "不保證當前實景全館色材、來源照片再授權或實際四色列印。"
+  ]
+}

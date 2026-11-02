@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "wing_main_plane_all_neutral": true,
+    "central_observed_colors_below_original_z109": true,
+    "pale_mullions_below_original_z109": true,
+    "warm_small_reveals_below_original_z106": true,
+    "all_six_materials_used": true
+  },
+  "wing_main_plane_faces": 200,
+  "mesh_sha256": "a4d74a98b95647c6557c42c6c5e60c21b75f5dcc707733954e2512a40a3109e4",
+  "scope_note": "Whole front wing planes neutral to avoid false triangular paint boundary; source-supported warm color confined to existing small reveal faces. Not a measured surface reconstruction."
+}

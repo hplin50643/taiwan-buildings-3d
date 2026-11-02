@@ -1,0 +1,39 @@
+{
+  "status": "BOUNDED_PHOTO_FRONT_COLOR_NOT_ONE_YEAR_RECONSTRUCTION",
+  "source_go_sha256": "4cdccf7ef120e1338bc0692aec5f9d382b6a08d14810bb6d6f7f4ea9341b0a1c",
+  "independent_review_sha256": "1ac78984bbb4888c55e6221d89f3e22cd2890a0e568eefe0a9ebfc47c55b4e96",
+  "sources": [
+    {
+      "url": "https://military.ncu.edu.tw/download/114.07.21%E9%98%B2%E7%81%BD%E8%A8%88%E7%95%AB-%E5%85%AC%E5%91%8A%E7%94%A8.pdf",
+      "used": "僅上半志希館公開外觀照片；下半管二館不得混入",
+      "version": "文件2025-07-21，調查欄2025-02，照片拍攝日期未載，不能稱2025拍攝",
+      "license": "未見照片個別CC；私存、不嵌公開貼圖或發布來源PDF"
+    },
+    {
+      "url": "https://in.ncu.edu.tw/alumni/enews/no78/page2.pdf",
+      "used": "web公開文字描述外牆磚紅色，並述別名資訊館；非定量色卡",
+      "uncertainty": "文字磚紅色與現取得照片顯示低飽和灰米褐色有差，可能影像色偏/時期/文字泛稱，尚未釐清；禁止直接整館染鮮紅"
+    }
+  ],
+  "unknown_regions": [
+    "塔頂雙凹口與最高幾層不在本次官方照內",
+    "左右圓核心完整色材未直接覆蓋",
+    "後牆/低翼後部/水平屋頂未取得可用實照",
+    "模型底座是展示底座非現地土地"
+  ],
+  "mapping_control": {
+    "front_tower_observed_upper_bound_original_z_mm": 109,
+    "scale_z": 0.76,
+    "front_tower_observed_upper_bound_output_z_mm": 82.84,
+    "basis": "five fine-mullion rows at original z42/57/71/85/99 each10high; bounded mapping only not photograph measured height",
+    "cross_boundary_faces": "if any triangle crosses evidenced/unknown boundary keep whole triangle neutral; do not use centroid to partly imply evidence; no new triangle splits",
+    "always_unknown": [
+      "highest dualnotches",
+      "tower sidewalls",
+      "rounded end cores",
+      "rear and roofs"
+    ]
+  },
+  "rights": "全部原PDF、頁圖、crop留私人，僅公開文字來源摘要和原創顏色配置，不授予原照片商用權。",
+  "no_source_images_in_public": true
+}
