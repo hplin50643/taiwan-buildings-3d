@@ -1,0 +1,91 @@
+{
+  "status": "PASS_AUTOMATED_CHECKS_NOT_VISUAL_RELEASE",
+  "mesh_sha256": "9df38e1e95294a4396928966d89c30c0d90317c2b6cf17db4a957f3cb9f40ff2",
+  "render_code_sha256": "3d2bb3a330f3c1d46ca6f085bec6a5145bfa9b6204259442fa4d51a0243347f5",
+  "scene_sha256": "ea517248204716e70e8dd73ca685d525f0ee0b53680d89803696db82e7ec1854",
+  "build_input_sha256": {
+    "build_model.py": "7131592096e70255d3b3eb48247a19e386be6c84a37a08fc86faa73990326eb6",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "images": {
+    "preview.png": "6cfe981c2b111f250df224709e3a904e067c2b9439c53327bcdcc5daac094573",
+    "rear.png": "1b8daeb6f656aa4c1a83c3a621a843e0fb9b11e3c11d291e068c459a4a6cd64b",
+    "front.png": "c4e002e1c0b61d2de9d027cf9d176fb50e4df35b6302e21634a147cd6795c104",
+    "back.png": "6123a7f62bc274764c03c152020cb3456ebfbe92e2791df157b447abff619cb7",
+    "west.png": "b4d99f981093832ee6d482d20e524448a7d3741e1bc4139fa346be883fc2d601",
+    "east.png": "57c1c541d0371f77a2543a24d233d7a17168983acf1f9664528d5f4e4af8e208",
+    "top.png": "24559f89572e9c7d66cc3fecedcacddf60837ef8a991a508af9d3106468fcb97",
+    "circles-detail.png": "3a85c3da847af59daa38b0fdb2a951314da0162d686353eccccbdb64af3e8cdc",
+    "folds-detail.png": "a7182f442a5c74238f95e9cd5b2df68b92a96c5911446ccb799634f092764552",
+    "corridor-detail.png": "772a2d1de22a88e05aae2476ede18d273553cae3c436f095fc5a4c0a9015051f"
+  },
+  "image_sizes": {
+    "preview.png": [
+      1200,
+      900
+    ],
+    "rear.png": [
+      1200,
+      900
+    ],
+    "front.png": [
+      1200,
+      900
+    ],
+    "back.png": [
+      1200,
+      900
+    ],
+    "west.png": [
+      1200,
+      900
+    ],
+    "east.png": [
+      1200,
+      900
+    ],
+    "top.png": [
+      1200,
+      900
+    ],
+    "circles-detail.png": [
+      1200,
+      900
+    ],
+    "folds-detail.png": [
+      1200,
+      900
+    ],
+    "corridor-detail.png": [
+      1200,
+      900
+    ]
+  },
+  "freshness_timestamp_checks": {
+    "preview.png": true,
+    "rear.png": true,
+    "front.png": true,
+    "back.png": true,
+    "west.png": true,
+    "east.png": true,
+    "top.png": true,
+    "circles-detail.png": true,
+    "folds-detail.png": true,
+    "corridor-detail.png": true
+  },
+  "full_model_views": [
+    "preview",
+    "rear",
+    "front",
+    "back",
+    "west",
+    "east",
+    "top"
+  ],
+  "intentional_cropped_details": [
+    "circles-detail",
+    "folds-detail",
+    "corridor-detail"
+  ],
+  "limitation": "Hashes bind inspected files; freshness uses filesystem timestamps, not signed per-render provenance. Human 10-view visual QA and separate source/privacy audit remain required."
+}

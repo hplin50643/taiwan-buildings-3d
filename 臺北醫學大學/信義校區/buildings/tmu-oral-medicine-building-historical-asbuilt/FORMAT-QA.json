@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": {
+    "npz_watertight": true,
+    "npz_single_component": true,
+    "zero_area_free": true,
+    "STL_watertight": true,
+    "STL_single_component": true,
+    "STL_bounds_match": true,
+    "3MF_mm": true,
+    "3MF_vertices_match": true,
+    "3MF_faces_exact": true,
+    "3MF_material_indices_exact": true,
+    "3MF_object_identity": true,
+    "STL_face_count": true,
+    "positive_volume": true,
+    "finite_vertices": true,
+    "winding_consistent": true
+  },
+  "mesh_sha256": "9df38e1e95294a4396928966d89c30c0d90317c2b6cf17db4a957f3cb9f40ff2"
+}

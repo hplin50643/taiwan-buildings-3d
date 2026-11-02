@@ -1,0 +1,72 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_utc": "2026-11-02T06:12:00Z",
+  "method": "Independent local original-pixel review of seven source sheets, source/code comparison, actual individual viewing of all ten final rendered images and independent mesh topology test. Not exhaustive as-built survey or manufacturing certification.",
+  "mesh_sha256": "9df38e1e95294a4396928966d89c30c0d90317c2b6cf17db4a957f3cb9f40ff2",
+  "build_code_sha256": "7131592096e70255d3b3eb48247a19e386be6c84a37a08fc86faa73990326eb6",
+  "render_code_sha256": "3d2bb3a330f3c1d46ca6f085bec6a5145bfa9b6204259442fa4d51a0243347f5",
+  "readme_sha256": "c2091d3312bd549fa646787152bd6179a4c16078e21d286ace2ba637f8ffa2c6",
+  "private_source_review_sha256": "a750b0b8d85ec0cfc6fe9726f23b64daa71423f0365bf9e688488c357e147b83",
+  "png_sha256": {
+    "preview.png": "6cfe981c2b111f250df224709e3a904e067c2b9439c53327bcdcc5daac094573",
+    "rear.png": "1b8daeb6f656aa4c1a83c3a621a843e0fb9b11e3c11d291e068c459a4a6cd64b",
+    "front.png": "c4e002e1c0b61d2de9d027cf9d176fb50e4df35b6302e21634a147cd6795c104",
+    "back.png": "6123a7f62bc274764c03c152020cb3456ebfbe92e2791df157b447abff619cb7",
+    "east.png": "57c1c541d0371f77a2543a24d233d7a17168983acf1f9664528d5f4e4af8e208",
+    "west.png": "b4d99f981093832ee6d482d20e524448a7d3741e1bc4139fa346be883fc2d601",
+    "top.png": "24559f89572e9c7d66cc3fecedcacddf60837ef8a991a508af9d3106468fcb97",
+    "circles-detail.png": "3a85c3da847af59daa38b0fdb2a951314da0162d686353eccccbdb64af3e8cdc",
+    "folds-detail.png": "a7182f442a5c74238f95e9cd5b2df68b92a96c5911446ccb799634f092764552",
+    "corridor-detail.png": "772a2d1de22a88e05aae2476ede18d273553cae3c436f095fc5a4c0a9015051f"
+  },
+  "view_checks": {
+    "preview": "Full front oblique: four circle apertures, open corridor and2F-only balcony, mirrored roofhouse south windows.",
+    "rear": "Full rear oblique:18 folds, end small windows and north roofhouse doors; no allglass folded wall.",
+    "front": "Full front:95cm corridor parapets, recessed high windows and doors, no later curtain wall.",
+    "back": "Full rear:18 folds and three small end windows per upper floor plus additional1F outer windows.",
+    "east": "Full model-coordinate east end:four window bays,150cm fin projections and only2F balcony.",
+    "west": "Full model-coordinate west end:four window bays and opposite balcony projection; not independent compass survey.",
+    "top": "Full roof and base; previously observed coplanar triangular material artifacts eliminated, two stairhouses and18 fold projections preserved.",
+    "circles-detail": "Intentional close framing: two5.20m circle apertures, recessed platforms, solid low parapets and adapted pipe rails; not blue-glass disks.",
+    "folds-detail": "Intentional close framing: long opaque diagonal and short glazed return clearly separated.",
+    "corridor-detail": "Intentional close framing: open corridor, solid95cm parapets, recessed high windows and per-classroom end doors; no false front glazing."
+  },
+  "mesh_independent_check": {
+    "triangles": 30306,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 702283.6678743378,
+    "bounds_mm": [
+      [
+        -152.8000030517578,
+        -33.599998474121094,
+        0.0
+      ],
+      [
+        152.8000030517578,
+        33.20000076293945,
+        73.4000015258789
+      ]
+    ]
+  },
+  "source_controls": [
+    "72x10.40m axes with end wingwalls, folded rear and2F balcony not treated as a single exterior bbox.",
+    "Four floors3.60m, mainFL .35/3.95/7.55/11.15, RF14.75, parapet15.95 and twin stairhouse tops17.85.",
+    "Central open corridor x16..56 with95cm solid guards and rear classroom high windows; eight graphically located opposite-handed doors per floor, not four or a later curtain wall.",
+    "18 rear folds extend beyond central40m to approximatex13.5..58.5; long diagonal solid and short diagonal glazing.",
+    "Four5.20m circular apertures with retained recessed platform/parapet layers; RF-derived centre3.90/11.10 versus mainfloor5cm coordination difference disclosed.",
+    "Twin stairhouses have mirrored inward-end north doors and south windows, not same-handed front doors.",
+    "All full views contain complete model silhouette/base; three details intentionally local. Caption identifies historical drawing/completion distinction."
+  ],
+  "limitations": [
+    "1973 as-built-labelled drawings and separately attributed1975 completion are not a current-condition survey or proof every detail was built exactly as reconstructed. Later curtain wall/elevator and renovations excluded.",
+    "Hidden interior stairs/rooms/basement/context omitted; recessed circle shadow wall and platforms are exterior-scope approximations.",
+    "5cm local circle/floor discrepancy retained; graphic opening positions, frame subdivisions and terminal fold pieces not claimed precisely dimensioned.",
+    "Nominal flat roof does not reproduce every1:100 drainage finish point;2cm hidden overlap resolves material coincidence without changing visibleRF.",
+    "1:250, fine frames/rails thickened to about.40mm; unprinted and potentially fragile, digital topology is not fabrication success.",
+    "Original drawings/crops remain private; source attribution/image and metadata rights handled separately."
+  ],
+  "render_provenance": "All ten final images modified after2026-11-02T06:06:40Z and inspected after material-fix render completion. Earlier111e84d0 mesh/images rejected for roof material artifacts.",
+  "freeze_eligible": true
+}
