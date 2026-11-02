@@ -1,0 +1,103 @@
+{
+  "status": "PASS_BOUNDED_SAME_ITEM_COLOR_UPGRADE_WITH_DOCUMENTED_LIMITS",
+  "reviewed_at_utc": "2026-11-02T14:17:14.100380+00:00",
+  "scope": "Independent actual source-photo, code, array preservation and final v2 ten-image review; color-only, not revalidation of simplified old architectural geometry or print certification.",
+  "source_GO_sha256": "495d4bed45188611ab5dec9daafd152dc5567613db1bf57d26b854fdca74d6ef",
+  "actual_source_photos_viewed": {
+    "3373.jpg": "086d44c6bd5d6fb9faf86ca467b005501495b0ed3789cf9c386679c54d6ce76a",
+    "3358.jpg": "0f5d8f8aa48967e23a4becb9349fce7f3deaf8a0f2be1feb4d7f6dac189d1387"
+  },
+  "original_STL_sha256": "2531748ccbcdc18d006d7501e590834df96fa5fc4aa17a11094fa23d43dc1211",
+  "mesh_sha256": "4e8fd580f83e4f9e86569f92cbd1668e3a5c56177fc7063336a0691e79da9062",
+  "color_mesh_sha256": "4e8fd580f83e4f9e86569f92cbd1668e3a5c56177fc7063336a0691e79da9062",
+  "build_code_sha256": "53659ecdb29226ac3f63295f200ccc55bab3c334a02114695e5aa0d1f8f5ebec",
+  "colorize_code_sha256": "f42de6b47dece92bd45880385e2eac6ff45cb4a51d37159980a2e667c59fd6d2",
+  "render_code_sha256": "8d1aae5ced5ad568a338af00ed2987f48dc932bfe4ba8f92413db5f942c89de5",
+  "readme_sha256": "d8e771f52b91a005601c3080f9dee610d371d9d482721b13fc1314c63d34f805",
+  "readme_zh_TW_sha256": "d8e771f52b91a005601c3080f9dee610d371d9d482721b13fc1314c63d34f805",
+  "preserved_original_readme_sha256": "a07bd8d6c33bf1ebc3e791a4c4f9d63098c6ac85780004b76b9198c1fd18c772",
+  "public_source_register_sha256": "381fd7dfad863aaf5651d747da6a56e04428e11581a39ce13a1b53b47163f94a",
+  "png_sha256": {
+    "preview.png": "6d86cec4c084057eaf58cfe289931db71dc7ae495e06efea451143ebe27b4eda",
+    "rear.png": "16d814741e52ac7fd8566e2eab4ce53c3b3b4445ea4c173eaf9b0e6f8e9c4565",
+    "front.png": "eec2400788c1624619d9c0ba19237f3d3611279d22ec4a06d5078a2693da9a0f",
+    "back.png": "a0e1e8dd4d9d4df53147d4aa7dc3b75e39d02ca77f475758ecc219181ea1c966",
+    "west.png": "34e7565ce521267de799c75c151c191f3f7c42ce3841cb810457241268fab01a",
+    "east.png": "18c2716ff4847855ffc2b03e6d4f846494fb5cb88ff7bd7e5e9277e372d73d1b",
+    "top.png": "001672360a7f8d4808c84a8f3ee107b92766ef92f523c2e0a1ccb84c4b5b323f",
+    "entry-detail.png": "5b467259d96ac281a581e3e398fb37c328fdc9ceec24d4d1d149f3347a4c7b2a",
+    "facade-detail.png": "fb507491c74c4a595ce2cf220bfac428267e04e5b2f6066cc66312a4efd1c2d8",
+    "roof-detail.png": "af9b35dcc00e4c6639b3eacdaf4feb42d0f2e9b18e5061073a079c7fcb148fa7"
+  },
+  "geometry_checks": {
+    "STL_byte_identical": true,
+    "vertices_exact_equal": true,
+    "faces_exact_equal": true,
+    "triangles": 2284,
+    "watertight": true,
+    "no_new_faces_or_displacement": true
+  },
+  "used_material_face_counts": {
+    "0": 673,
+    "1": 80,
+    "2": 82,
+    "3": 1449
+  },
+  "independent_checks": {
+    "western_front_80_faces": "uniform darkgraybrown1",
+    "unseen_western_longface_160_faces": "neutral3",
+    "unseen_back_269_faces": "neutral3",
+    "z26_5_back_terrace_faces": [
+      843,
+      846,
+      850,
+      854,
+      856,
+      864
+    ],
+    "z34_5_back_terrace_faces": [
+      880,
+      882,
+      884,
+      886,
+      893,
+      894
+    ],
+    "terrace_faces_material": "all neutral3; avoids triangle-span-generated small gray corner patches",
+    "z26_5_front_gray_edge_faces": [
+      848,
+      852
+    ],
+    "front_edge_material": "both lightgray0, existing independently separated edge not a paint split"
+  },
+  "visual_review": {
+    "all_actual_final_v2_views": [
+      "preview",
+      "rear",
+      "front",
+      "back",
+      "west",
+      "east",
+      "top",
+      "entry-detail",
+      "facade-detail",
+      "roof-detail"
+    ],
+    "seven_full_views": "Complete model/base framing and readable captions.",
+    "three_details": "Intentional local views inspect original stair and colonnade, dark western front/light existing bands, and coherent neutral stepped rooftops.",
+    "remaining_required_corrections": [],
+    "resolved": "The two terrace regions no longer leave small triangular material artifacts from per-triangle y-span classification."
+  },
+  "limitations": [
+    "Main light gray columns/stair/bands follow3373; grayblue columns from successful-hall photograph3358 are not transferred to unrelated main columns.",
+    "Western original simplified four-level box/front openings only receive broad dark fascia and light-band family mapping, not proof of exact floor/window/grille geometry.",
+    "No unsupported yellow squares, school lettering, new windows, grille mesh or source texture.",
+    "Dark recesses represent opaque shade, not proof of all bays glass or fully open circulation.",
+    "Unknown western long wall, rear and broad roof surfaces neutral; neutral is not a verified paint color.",
+    "Photo upload date not capture date/current condition; color values not calibrated survey.",
+    "Four actually assigned appearance materials are NOT a validated four-filament slicing project; no physical print/slicer compatibility claimed.",
+    "Original photos remain private, source credit/noncommercial conditions retained, no implied commercial relicensing."
+  ],
+  "history": "INDEPENDENT-COLOR-QA-WIP-1412.json retained; finalv2 resolves its required surface-region correction.",
+  "other_QA": "Builder format, isolated rebuilding and scene-reopen/shader checks are separate evidence."
+}
