@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_UNDATED_SIX_UNIT_HISTORICAL_EXTERIOR_LIMITS",
+  "reviewed_utc": "2026-11-02T01:45:50.353093+00:00",
+  "review_method": "獨立原像素核A0/A1/A2/A3/A4，code與README比對；build-v3；render-v2八圖及v3僅east/west放大重渲二圖逐張目視，另process=False獨立網格拓樸檢驗。",
+  "mesh_sha256": "dc8f76eeea7a485935e9ecd16147434f28331edbc8c2f7e9f85e401a91bf2742",
+  "build_sha256": "c05ce7c04aea94eb412c7a75152bd8f48c8085e49719f1777b5555286af79d7e",
+  "renderer_sha256": "183d3d643b18c6ff0ed5fb9cc66e0249aee4eabb663312238502398eb0c027cc",
+  "readme_sha256": "72cc228de774c65686d52b52d5cdda95f7cbd98024d190404bd910e408506cfa",
+  "private_source_review_sha256": "0719dbddffe2e565131e38348204a30bd966db433dd681edf622a513d3bdf9a0",
+  "png_sha256": {
+    "preview.png": "c858119d925f868a3eeeb29369efd9f7a2152a621449858b11a41643264452c8",
+    "rear.png": "cf36bedfc8b4a2913043de33f906f88696f9dc6e1af512daacb47e7cd5d83905",
+    "front.png": "29657ca297f5f9a02b6187de89d68da321210c71538894b8574a80ff33d955ab",
+    "back.png": "4d8825d676ae2100a177d0af302e116095dd6e3c21fe5da1da31d5eaa26a9899",
+    "east.png": "e94edadd218457886d7757ee9cbd0e507c382af17fdf371ff7f736c8ca31e382",
+    "west.png": "9b8e41f6a07054ff7630d087929d8615919197042546ef004fd8c474b0facc91",
+    "top.png": "6e7739fed37a3f1c795389f245ed57c457819f188b18955b7bd92cc35e47ba1b",
+    "front-detail.png": "cad95d9b6b2d8a027af1c06e792aeaac519c2a5316d71e21c38191caf7157e0d",
+    "rear-detail.png": "9c28553c86357fcf11ee2ec1065f5d96c28307cab3c46cd40252a184dfafb6e2",
+    "roof-detail.png": "0a86e51106860f68da73dbd50e08e9ab4a5909a27569634b39d265d69d388d7c"
+  },
+  "independent_mesh_check": {
+    "triangles": 11804,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_components": 1,
+    "positive_volume_mm3": 212217.02349171936,
+    "bounds_mm": [
+      [
+        -114.5,
+        -20.625,
+        0.0
+      ],
+      [
+        114.5,
+        20.625,
+        38.375
+      ]
+    ]
+  },
+  "per_view": {
+    "preview.png": {
+      "status": "PASS",
+      "observation": "完整六戶兩層、前門窗分段棚及三組鏡像節奏，底座完整。"
+    },
+    "rear.png": {
+      "status": "PASS",
+      "observation": "三組一樓後凸和凹口外門、上層W1/W4對組；後凸未誤增二層。"
+    },
+    "front.png": {
+      "status": "PASS",
+      "observation": "十二首層W1、六D1、十二上層W1，首層與上層窗中心各自定位，並非強制對齊。"
+    },
+    "back.png": {
+      "status": "PASS",
+      "observation": "六W2六W3及六D5在三配對後凸與凹口；上層六W1十二W4，對稱組而非正面鏡像。"
+    },
+    "east.png": {
+      "status": "PASS",
+      "observation": "東端僅一上層W1prime；山牆與後凸深度可辨，無新增首層窗。"
+    },
+    "west.png": {
+      "status": "PASS",
+      "observation": "西端空白，未把東窗鏡射；全框未裁切。"
+    },
+    "top.png": {
+      "status": "PASS",
+      "observation": "全長屋面及三組後RC階梯形邊界可見，未作全長後棚。"
+    },
+    "front-detail.png": {
+      "status": "PASS",
+      "observation": "每戶兩短窗棚、一較深門棚；兩列三行窗格及門上亮可辨，刻意局部構圖。"
+    },
+    "rear-detail.png": {
+      "status": "PASS",
+      "observation": "後屋面深段／淺翼、W2與W3不同窗型、D5凹口及上亮可辨，無D3假外門。"
+    },
+    "roof-detail.png": {
+      "status": "PASS",
+      "observation": "派生雙坡、縱端挑檐、圖量瓦帽與示意瓦列、外觀U槽清楚，端窗朝向正確；刻意局部構圖。"
+    }
+  },
+  "resolved_source_issues": [
+    "A4直接4320全棟三鏡像對解除A1三戶範圍缺口，不盲複製三戶。",
+    "A0後凸朝北，與A1需旋轉對位；東端x43.2一窗、西空，不按紙面上下誤翻端窗。",
+    "後RC286從GL起；前棚依S4門8cm/S5窗7cm，未由286與276錯推統一10cm。",
+    "D1中心約3.20、右前W1約5.45依實際洞口；275是隔牆不是門中。",
+    "D5是後外門，D3內門不建；兩層窗位、後W2/W3/W4分別映射。"
+  ],
+  "retained_limits": [
+    "未載年歷史眷屬宿舍，非紅樓、非學生宿舍、非竣工或現況測繪；原圖與裁圖保持私有。",
+    "610牆軸、坡.45、722.5交點及590.65檐為鏈推導，非瓦帽最高實測；帽高另圖量。",
+    "縱端.50±.10、後RC短翼／側延、窗中心、門前階皆局部圖量；S3外挑45與局部47字鏈差保留。",
+    "瓦列34cm節距/2.5cm微浮雕、12cm屋皮、加粗框管、U槽均數位外觀簡化，非來源精測瓦模數或排水構造。",
+    "地下基礎、防空洞、未來排、隱蔽內部與真實地形不重建。",
+    "單連通水密不保證實物可印；1:200薄棚約.35/.40mm，未切片未試印，須自行驗證。",
+    "顏色為材料示意；來源圖像權利與模型產物分開，不主張商用權利已清理。"
+  ],
+  "unresolved_blockers": []
+}

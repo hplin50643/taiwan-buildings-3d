@@ -1,0 +1,44 @@
+{
+  "status": "PASS_BOUNDED_HISTORICAL_EXTERIOR",
+  "checks": {
+    "cap_max7_325": true,
+    "six_front_doors": true,
+    "six_rear_external_D5": true,
+    "front_first12_W1": true,
+    "front_second12_W1": true,
+    "rear_second6_W1": true,
+    "rear_second12_W4": true,
+    "six_kitchen_W2": true,
+    "six_bath_W3": true,
+    "east_one_end_window": true,
+    "west_no_window": true,
+    "three_rear_paired_roofs": true,
+    "S4_door8": true,
+    "S5_window7": true,
+    "rear_roof286": true,
+    "no_hidden_interior_D3": true,
+    "source_GO_hash": true
+  },
+  "mesh_sha256": "dc8f76eeea7a485935e9ecd16147434f28331edbc8c2f7e9f85e401a91bf2742",
+  "direct_controls_m": {
+    "axes": [
+      43.2,
+      5.0
+    ],
+    "rear_projection": 0.9,
+    "first_FL": 0.3,
+    "second_FL": 3.1,
+    "roof_wall_axis": 6.1,
+    "rear_RC_top": 2.86
+  },
+  "derived_roof_surface_ridge_m": 7.225,
+  "graphic_cap_top_m": 7.325,
+  "graphic_details_allowance_m": 0.1,
+  "not_claimed": [
+    "current survey",
+    "dated construction",
+    "hidden interior/structure",
+    "tested physical printability",
+    "precise tile pitch or colors"
+  ]
+}
