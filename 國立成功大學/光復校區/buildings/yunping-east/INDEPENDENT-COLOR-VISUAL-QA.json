@@ -1,0 +1,116 @@
+{
+  "status": "PASS_BOUNDED_SAME_ITEM_COLOR_UPGRADE_WITH_FRONT_PLANE_FALLBACK",
+  "reviewed_at_utc": "2026-11-02T14:04:33.185671+00:00",
+  "scope": "Independent actual source-photo, code, original geometry preservation and all final v3 ten-image visual review; not revalidation of old geometric accuracy or print readiness.",
+  "source_GO_sha256": "bfc7395516af8605735f63e338792767af3202e7fe7d681e17c46cfbd2805841",
+  "actual_source_images_viewed": {
+    "3684.jpg": "387ca878aa07bec728567cdd7d73de7478e3ac3a05a5d6c95adb914dd12cc9ca",
+    "3709.jpg": "59a658b33e585143a667908c2ce59ded3a6cfa19b2c1f68f61c3a790458834d6",
+    "3693.jpg": "8c7f9ae6425245bcf5700bf70adf91762b770e1f6feb15dd0da4c8b2e973eedd"
+  },
+  "original_STL_sha256": "2e53b2878c951d668f6ab134393c3393f3a4dbe65e358b12be149961fe09836f",
+  "mesh_sha256": "8050a3048c340f6cef5d20d03e18378de6674153b2a1dbd2df26edc939d44f7a",
+  "color_mesh_sha256": "8050a3048c340f6cef5d20d03e18378de6674153b2a1dbd2df26edc939d44f7a",
+  "build_code_sha256": "dd4c4acade09d802a61626d129c6b10410ae868aa5b40f22e9df5c8f26e41a77",
+  "colorize_code_sha256": "413c430f907d64a7dafe5d89bd14b0050db44187c4d2aa86713a846bdca95012",
+  "render_code_sha256": "a9139e1ef2a3141aacdce385d96f1ce984aa276289c50b4d945da82672db19c8",
+  "readme_sha256": "68e9f00264a9f77292e720356ffcfd9d772ad668d02b6ec510d751f776d3da59",
+  "readme_zh_TW_sha256": "68e9f00264a9f77292e720356ffcfd9d772ad668d02b6ec510d751f776d3da59",
+  "public_source_register_sha256": "4efe3e46da8150ddc4e1ea1534f462010dd4564e342149ac18270d26264d4643",
+  "png_sha256": {
+    "preview.png": "8b2875041cf1533c88a523aa3e71335a518a5071524c6f30b6ffbde0c111a253",
+    "rear.png": "29d52337f501bdcd60776a01cf079deef39ce449628e76632d3b0ef4ce04f7a6",
+    "front.png": "86d6b753ddccddddd0d514c56cc38c773099eb752b2f7a78edadc0b383492f56",
+    "back.png": "06544894305b2a2ee5a567654b2bb87b54a0a2849a2d462e83d131c648fd1435",
+    "west.png": "20e51b195e45b23424ac0a656aebc24140338aa7b2d7f7e3bc1858e80e34ab7f",
+    "east.png": "3cafa07ea23a3b9bf602b41a17eb12de3b3fa6523c4fcda550bf550b407eb6c2",
+    "top.png": "0bc0f6021f24c6a3e7fca33d96e7f66c757e95fac92202968a4adf679c2f0ab8",
+    "entry-detail.png": "eab981430d667481a07a922ccebb3c97e98fbef3d13f3d5950117c32e055d70d",
+    "facade-detail.png": "8f0c0350d7f8b06721cf5bdc048ab6f9e482ff542dc63d425a5be8894006be2b",
+    "roof-detail.png": "c1207c1138351afc3f98965faf9e6fddba755af871b90b2b4a0c0cf462be5715"
+  },
+  "geometry": {
+    "STL_byte_identical": true,
+    "vertices_exact_equal": true,
+    "faces_exact_equal": true,
+    "triangles": 6576,
+    "watertight": true,
+    "no_new_triangles_or_subdivision": true
+  },
+  "material_face_counts": {
+    "0": 695,
+    "1": 1827,
+    "2": 216,
+    "3": 235,
+    "4": 3526,
+    "5": 77
+  },
+  "independent_region_checks": {
+    "outer_front_plane": {
+      "faces": 704,
+      "material_ids": [
+        4
+      ]
+    },
+    "horizontal_roof": {
+      "faces": 13,
+      "material_ids": [
+        4
+      ]
+    },
+    "unseen_north": {
+      "faces": 2,
+      "material_ids": [
+        4
+      ]
+    },
+    "inner_end_discrete_glass": {
+      "faces": 42,
+      "material_ids": [
+        2
+      ]
+    },
+    "court_A_recess": {
+      "faces": 112,
+      "material_ids": [
+        3
+      ]
+    },
+    "court_B_recess": {
+      "faces": 96,
+      "material_ids": [
+        3
+      ]
+    }
+  },
+  "visual_checks": {
+    "actually_viewed_final_v3_images": [
+      "preview",
+      "rear",
+      "front",
+      "back",
+      "west",
+      "east",
+      "top",
+      "entry-detail",
+      "facade-detail",
+      "roof-detail"
+    ],
+    "full_views": "Seven whole-model views include model/support and readable captions without cropping.",
+    "details": "Three intentional detail crops inspected: gray relief frame, retained recess colors, neutral outer wall/roof and courtyard brick/slab/shadow areas.",
+    "resolved": "v1 incorrectly extended brick onto known gray lower wall; v2 attempted narrow neutral edge strips created false diagonal gray wedges. v3 uses whole704-face outer-wall neutral fallback, removing both misleading interpretations.",
+    "remaining_required_corrections": []
+  },
+  "source_scope_limits": [
+    "Photographs show upper exterior brick and lower grayRC, but original triangulation cannot reproduce the complete finish boundary without geometric edits. Entire outer-long-wall main plane is deliberately neutral; this is NOT evidence of actual all-gray finish.",
+    "Courtyard brick/gray families only where existing separate surfaces allow. Corridor recesses are opaque shadows, not a reconstruction of fully open circulation or glass.",
+    "Inner-end real continuous glazing is represented only by original discrete recess backs; wall between recesses not painted blue.",
+    "Existing C-shaped mass, dimensions, openings and portal remain old approximations; no new survey, geometry, texture, lettering or equipment.",
+    "Horizontal roof, unknown outer and north faces remain neutral. East and west buildings are not interchanged.",
+    "Photo upload2025-02-05 is not a proven capture date/current finish; sRGB values are approximate color families.",
+    "Original images stay private; retain 成大素材網／外國語文學系-蔡美慧 credit and noncommercial source terms without claiming project rights relicense photographs.",
+    "Six used materials not a validated four-filament slicer project; no physical printing certification."
+  ],
+  "history": "INDEPENDENT-COLOR-QA-WIP-1352.json retains necessary correction and withdrawal of the earlier narrow-strip proposal.",
+  "separate_validation": "Builder handles 3MF/STL formats, isolated rebuild, saved scene reopen and shader checks. This independent review does not replace those records."
+}

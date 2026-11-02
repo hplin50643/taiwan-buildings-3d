@@ -1,0 +1,47 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed brick family",
+      "hex": "#AA705E",
+      "faces": 695
+    },
+    {
+      "id": 1,
+      "name": "Existing gray frame and slab edges",
+      "hex": "#B0B0A5",
+      "faces": 1827
+    },
+    {
+      "id": 2,
+      "name": "Source-matched window glass recess",
+      "hex": "#405C68",
+      "faces": 216
+    },
+    {
+      "id": 3,
+      "name": "Open corridor and arch shadow",
+      "hex": "#555953",
+      "faces": 235
+    },
+    {
+      "id": 4,
+      "name": "UNVERIFIED neutral rear roof and ambiguous planes",
+      "hex": "#A7ABA5",
+      "faces": 3526
+    },
+    {
+      "id": 5,
+      "name": "Display support",
+      "hex": "#AAA79E",
+      "faces": 77
+    }
+  ],
+  "geometry_policy": "6576 original triangles unchanged, no new surfaces.",
+  "limits": [
+    "The entire outer long wall field remains neutral: existing triangles cross observed lower-gray/upper-brick boundaries. Only original projecting gray frames and discrete recesses receive color.",
+    "Discrete original window recesses cannot reproduce continuous real glazing strips.",
+    "Unverified outer and north walls and roof neutral.",
+    "Six materials not a verified four-filament project."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "yunping-east",
+  "identity": "A029 東棟",
+  "scope": "既有同 slug 材色升級；count 0；不得增刪幾何/切分原三角；非精確實景復原",
+  "monochrome_audit": {
+    "sha256": "4edec4a45a50d47f1e8bee8878822298b63d6077c428a1c07c3e8934ebbe9205"
+  },
+  "sources": [
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3684",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2025/02/05/20250205133106-750cd744-me.jpg",
+      "sha256": "387ca878aa07bec728567cdd7d73de7478e3ac3a05a5d6c95adb914dd12cc9ca",
+      "page_sha256": "01a29901351ad84618cc4be40bdb619f8d5b98c6ce47852005bc8afbc247b2ba",
+      "actually_viewed": true,
+      "author": "外國語文學系-蔡美慧",
+      "posted_date": "2025-02-05",
+      "capture_date": "未註明；不可把上傳日當拍攝日期"
+    },
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3709",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2025/02/05/20250205133321-8fe63f8a-me.jpg",
+      "sha256": "59a658b33e585143a667908c2ce59ded3a6cfa19b2c1f68f61c3a790458834d6",
+      "page_sha256": "7de076348026ad7a3a6b2bf60d3cb2b440d0aa156bc43bb01a336f85297d94ab",
+      "actually_viewed": true,
+      "author": "外國語文學系-蔡美慧",
+      "posted_date": "2025-02-05",
+      "capture_date": "未註明；不可把上傳日當拍攝日期"
+    },
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3693",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2025/02/05/20250205133155-f910709f-me.jpg",
+      "sha256": "8c7f9ae6425245bcf5700bf70adf91762b770e1f6feb15dd0da4c8b2e973eedd",
+      "page_sha256": "57a2baef75a7049dc2a8348fee44a5ed0d87ddc01014f580d3d5be2ba840159f",
+      "actually_viewed": true,
+      "author": "外國語文學系-蔡美慧",
+      "posted_date": "2025-02-05",
+      "capture_date": "未註明；不可把上傳日當拍攝日期"
+    }
+  ],
+  "rights": {
+    "source_credit": "成大素材網；外國語文學系-蔡美慧",
+    "terms": "頁面明示非成大人員非商業利用得下載，須標示成大素材網。原圖及頁面僅私人保存、不公開或貼圖，不將原素材另以專案開源 license 再授權；不保證商用權利。",
+    "public_content": "僅來源連結、必要歸屬與獨立概化材色解讀"
+  },
+  "palette_nominal_srgb": {
+    "brick": "#AA705E",
+    "concrete": "#B0B0A5",
+    "glass": "#405C68",
+    "open_corridor_shadow": "#555953",
+    "unknown_neutral": "#A7ABA5"
+  },
+  "limits": [
+    "色碼為照片色族示意，不是校色量測",
+    "無證屋面、遠側與被遮位置保中性",
+    "玻璃與透空走廊分開；不因暗色全當玻璃",
+    "不同棟不可交叉套材色",
+    "完整平面跨界三角不能只按重心染出斜色片；必要整面中性或一致粗化"
+  ],
+  "observations": [
+    "3684 外長面上磚紅，下方三層灰色格架；側高實牆磚紅",
+    "3709 內端中央玻璃帶、拱口暗洞與灰下柱，兩側磚牆",
+    "3693 內庭低層磚腰/灰樓板與透空廊；不得照縮圖填全玻璃"
+  ],
+  "issued_utc": "2026-11-02T13:40:00Z",
+  "original_triangles": 6576,
+  "count_delta": 0,
+  "independent_review": {
+    "sha256": "a60a08e0eef416897f78a7a89ff2c24ce77a81aeb101b3ce0957360dc1529b07"
+  },
+  "approved_mapping": [
+    "Exterior long facade y−52.5 upper brick family and lower3level grayRC frame directly visible3684.",
+    "Court-facing longitudinal bars can use observed brick with gray slab/balcony edges only where original faces separate.",
+    "Inner end x−34 glass strip represented by3columns of discrete recesses; only those recess backs, not the whole end wall, can take dark-bluegray.",
+    "Existing entry arch dark interior/shadow; no new glazing or lettering."
+  ],
+  "mandatory_public_limits": [
+    "Original geometry is very simplified; new color pass does not establish its detailed geometric accuracy.",
+    "No original surface subdivision or added continuous glazing geometry; absent glass strips cannot be painted over solid wall.",
+    "Gray-blue only within identifiable original recess faces, otherwise neutral shadow/unknown, not whole wall.",
+    "Horizontal roof tops, unobserved outer/north faces and display base neutral.",
+    "Source uploaded February2025 is not proven capture date; avoid exact2025/current paint claim.",
+    "Material-site credit and noncommercial source conditions retained; originals private, no textures."
+  ],
+  "required_QA": [
+    "原STL bytes及三角座標不變；scene/3MF與原幾何逐面比對",
+    "全部新材有實際指派面並驗render",
+    "10視圖檢查錯面/跨界斜色片/未知中性",
+    "README明記色族概化與原幾何近似，並保留既有檔"
+  ],
+  "source_GO_sha256": "bfc7395516af8605735f63e338792767af3202e7fe7d681e17c46cfbd2805841",
+  "implementation_scope_override": "Outer long wall whole plane neutral because original triangles cross observed color boundaries; original relief gray grid and recessed windows only retain their colors. Courtyard brick/gray and discrete inner-end glass are bounded interpretation.",
+  "model_QA_pending_at_source_issue": true,
+  "model_QA_current": "Completed separately; see COLOR-FORMAT-GEOMETRY-QA, SCENE-QA, DELIVERY-QA and INDEPENDENT-COLOR-VISUAL-QA."
+}
