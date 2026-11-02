@@ -1,0 +1,35 @@
+{
+  "status": "PASS_PARTIAL_EXTERIOR",
+  "checks": {
+    "northwest_roof_bounds": true,
+    "northeast_roof_bounds": true,
+    "middle_short_only_between_north_wings": true,
+    "actual_peak1708": true,
+    "north_peak_y1675": true,
+    "south_peak_y935": true,
+    "north_step122_lower1586": true,
+    "south92_room_windows": true,
+    "north81_room_windows": true,
+    "north8_high_windows": true,
+    "end16_corridor_windows": true,
+    "central_recessed_door_preserved": true,
+    "central_steps_or_substitute_absent": true,
+    "source_final_GO_correct": true
+  },
+  "mesh_sha256": "c6c5e926a0e3e10360db0898ca114960ba3184c90046a967573b53a5f6a114fe",
+  "notice": "中央入口階梯細節缺圖，未重建；非完整外觀復原",
+  "direct_controls_m": {
+    "axes": [
+      82.8,
+      21.9
+    ],
+    "1FL": 0,
+    "RF": 14,
+    "ridge": 17.08,
+    "GL": -1.2,
+    "north_step": 1.22
+  },
+  "derived_middle_step_m": 1.395,
+  "estimated_details_allowance_m": 0.1,
+  "gutter_bottom_and_endcaps_assumed_m": 0.12
+}
