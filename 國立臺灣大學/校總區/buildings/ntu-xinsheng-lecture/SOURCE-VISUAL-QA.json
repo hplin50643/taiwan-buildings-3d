@@ -1,0 +1,39 @@
+{
+  "status": "PASS_BOUNDED_ORIGINAL_FACE_COLOR",
+  "reviewed_images": [
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "entry-detail.png",
+    "corridor-detail.png",
+    "roof-detail.png"
+  ],
+  "source_images_personally_viewed": [
+    "official-5748.jpg",
+    "official-5753.jpg",
+    "aims-2018-front.png"
+  ],
+  "source_scope": "2010 directory/2018 venue photographs; individual capture dates unverified, not 2026 survey",
+  "checks": {
+    "front_brick_zones_tan_not_red": true,
+    "existing_frames_light": true,
+    "central_landings_gray": true,
+    "corridor_recess_shadow_not_blue_glass": true,
+    "rear_roof_sides_neutral_unverified": true,
+    "no_arbitrary_diagonal_color_patches": true,
+    "geometry_unchanged": true
+  },
+  "limits": [
+    "Real fine horizontal brick bands lack separable original mesh domains; retained light-frame fallback, not complete facade color reconstruction.",
+    "Seven labels not validated four-filament printing.",
+    "Source photographs remain private; no commercial-use rights guarantee."
+  ],
+  "mesh_sha256": "0e9a3f241a35c833964a81e0985bde12ffdf989aaa36bdd84ef34d75b63c5bc2",
+  "README.md": "fdff3f9d75f1969202052dbb78efb146a40d04bd522fc90cc7a0982d23151e4f",
+  "independent_review_sha256": "c4d0bf09b34819439b04b8918b87e3338bfba3b914a19924a7336924fbb41d72",
+  "parent_final_review": "Pending; this is builder visual review after all ten actual renders."
+}

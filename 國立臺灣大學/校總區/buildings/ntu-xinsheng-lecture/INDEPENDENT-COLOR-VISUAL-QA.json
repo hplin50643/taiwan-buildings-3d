@@ -1,0 +1,37 @@
+{
+  "status": "PASS_BOUNDED_INDEPENDENT_COLOR_VISUAL_AND_GEOMETRY",
+  "reviewer": "Parent builder independently reviewed child implementation",
+  "actual_views": "All3officialphotographs,originalcode,preview, v2 entry detail and final9otherimages inspected.",
+  "checks": {
+    "original_3518_vertices_faces_exact": true,
+    "STL_OBJ_code_bytes_unchanged": true,
+    "white_frame_planes_coherent_no_gray_diagonal_patch": true,
+    "warm_beige_brown_not_red_brick": true,
+    "gray_balconies_and_dark_open_corridors_not_glass": true,
+    "unknown_roof_sides_rear_neutral": true,
+    "README_horizontal_brick_band_omission_disclosed": true
+  },
+  "sha256": {
+    "README.md": "fdff3f9d75f1969202052dbb78efb146a40d04bd522fc90cc7a0982d23151e4f",
+    "README.zh-TW.md": "e036374bd72ff26196a882d7b3b82648d3bb2c6639afda821996821ae691ebec",
+    "colorize_model.py": "57e3cd9c4ac1c2286f85442fa501277dcd4f2f275f33de2ef6467de27d056286",
+    "color-mesh.npz": "0e9a3f241a35c833964a81e0985bde12ffdf989aaa36bdd84ef34d75b63c5bc2",
+    "model.stl": "80ff9dc2d73fa0f4ad340dc49eaa53a8e223a1a6559a98b8cd29c8536b935bf4",
+    "model.obj": "bd401164207fd8c1963d51cd29c4aa972186f27871d5319e1a333c0b973a5ded",
+    "palette.json": "9222c06ad25dca5aa2fc921300f51698f72cc8974c0baf3733f2c68d687a0086",
+    "preview.png": "a2faefd5952f9523923bc4797a62a22ca047e114a22623052e0a90d3817287eb",
+    "rear.png": "cf9ae743355c66883d47b69ba21a5479dcd191ac7ad2b0af24fd0c0eccd16514",
+    "front.png": "26534c3a9c14fb0ff5f2b608f3fc3d0c4ca4157a1aacfa74b6f829c7c4a51cc8",
+    "back.png": "69034b07319439ecc651daa691b760f57c00ff33ee7aa2cbbd3658909812351e",
+    "west.png": "40b3dd0ef65d12395e7f6f7509a5d5a5e7dbfe48cc40f6f12dd61d4af737c32a",
+    "east.png": "d581cfd6c4ffeee6cf02d2c174929970871d16771dfdb92c6c3db227168e49b0",
+    "top.png": "bec268060403d9adde9ea36b86ba1bb08d60420e535b518d0095289e9e24bb8a",
+    "entry-detail.png": "54f7f8be7ea4bedc70f9afa6eeee82adc79106a8ae36998a2c127131f4afab5a",
+    "corridor-detail.png": "3270a75b7ee584c7f3afaf3625ee5b33b743125d05138d28e4e2fdd4f1928adb",
+    "roof-detail.png": "716fadbe2c32ed06be580611d4ae0d8cb3b96a57b8a954dd705f17d441a5e792"
+  },
+  "limits": [
+    "Approximate color families only; original geometry remains unchanged.",
+    "Seven materials not verified four-filament slicing or actual print."
+  ]
+}

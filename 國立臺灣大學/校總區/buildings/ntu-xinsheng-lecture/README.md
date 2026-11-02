@@ -1,3 +1,43 @@
+# 臺大新生教學館｜同項目彩色更新
+
+## 彩色模型預覽
+
+**原幾何與原 STL／OBJ／建模程式位元組不變；3518 三角面，150 × 69 × 58.6 mm；count_delta = 0。** 本次為既有照片近似模型補材質，不是重新測繪或增加建築套數。參考校方 2010 照片目錄及 2018 會議場地照片，個別拍攝日未確證，不稱 2026 即時現況。
+
+| 整體 | 後向 | 正向 |
+|---|---|---|
+| ![整體](preview.png) | ![後向](rear.png) | ![正向](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂面](top.png) | ![入口](entry-detail.png) | ![廊帶](corridor-detail.png) |
+| ![屋面](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+- 兩片既有寬直牆近似低飽和暖棕米磚，不是紅磚。垂直框柱及寬水平結構帶近似灰白；既有中央突出平台、欄板與近門短階採灰色，細欄件近似銀灰。
+- **照片可見細水平磚帶，但原簡化網格沒有充分獨立的材色邊界**；本次保守使用完整既有白框面域，沒有精確重現所有磚／框條帶，不切新面、不以面中心染出斜三角色塊，不新增磚縫。
+- 開廊淺凹背底以深灰示意陰影，**不是藍玻璃、黑漆或完整開放空間幾何**；既有上部百葉近似淺灰，不新增玻璃幕牆、門扇、設備、植栽或文字。
+- 平頂大面、未證側後與模糊面域保中性色。中性不是實景灰漆證據，HEX 只是未校色照片的色族近似，不是工程漆號。
+
+## 彩色檔與列印
+
+[appearance.3mf](appearance.3mf) 以毫米及七個基本材質逐面指派；[appearance-materials.json](appearance-materials.json) 列名稱與面數。[scene.blend](scene.blend) 為實際彩色材質場景；[model.stl](model.stl) 與 [model.obj](model.obj) 均保原檔，STL 本身不含顏色。
+
+七材質外觀 **不等於已驗證四色耗材切片專案**。未測切片器的材質匯入、耗材對應、換色及支撐，本件**未實際列印**。補彩不提升原模型尺寸精度與可列印性主張。
+
+## 可重現與 QA
+
+依原 requirements 安裝後執行 `python build_model.py`、`python colorize_model.py`、`python export_appearance.py`；`blender -b -P render_color.py` 生成十圖及場景；`python validate_color.py` 與 `blender -b -P verify_color_scene.py` 核原檔、三角座標、3MF、隔離重建與場景重開。重建暫存保留，不自動刪除。
+
+本次 QA 為 COLOR-ASSIGNMENT-QA、COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、FRAMING-QA、SOURCE-VISUAL-QA 及 DELIVERY-QA。舊 previews、validation、layer-check、source-model-comparison 皆保留作原模型歷程，不作本次彩材或實印證明。舊 render_preview.py 是單色入口，不應拿來覆寫彩色場景。
+
+## 來源與權利
+
+校方[建築影像](https://homepage.ntu.edu.tw/~cpo/about_campus_archeitectureimage.html)中的 [5748 正斜照](https://homepage.ntu.edu.tw/~cpo/2010photo/N/N25/IMG_5748.JPG)、[5753 近照](https://homepage.ntu.edu.tw/~cpo/2010photo/N/N25/IMG_5753.JPG)，以及 [2018 AIMS 場地](https://aimsconference.org/conferences/2018/2018_Venue.html)照片。個別攝影者與拍攝日未確證，未見個別 CC 授權。
+
+原照、原頁與裁圖只私人研究，不隨模型公開、不作照片紋理；模型授權不包含第三方照片或建築設計權利，不保證商業使用。詳 COLOR-SOURCE-REGISTER.json。
+
+## 原模型說明與限制（仍有效）
+
 # 國立臺灣大學 新生教學館
 
 ## 模型預覽

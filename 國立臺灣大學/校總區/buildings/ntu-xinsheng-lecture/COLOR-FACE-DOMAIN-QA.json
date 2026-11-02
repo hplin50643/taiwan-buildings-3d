@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": {
+    "left_brick_front": true,
+    "right_brick_front": true,
+    "unverified_flat_roof": true,
+    "unverified_rear": true,
+    "whole_frame_front_planes_light": true,
+    "original_vertices_not_split": true
+  },
+  "face_counts": {
+    "left_brick_front": 2,
+    "right_brick_front": 2,
+    "unverified_flat_roof": 2,
+    "unverified_rear": 2
+  },
+  "mesh_sha256": "0e9a3f241a35c833964a81e0985bde12ffdf989aaa36bdd84ef34d75b63c5bc2",
+  "limitations": "Whole original planes checked for absence of arbitrary split color patches; not a claim every real facade material boundary exists in this coarse mesh."
+}
