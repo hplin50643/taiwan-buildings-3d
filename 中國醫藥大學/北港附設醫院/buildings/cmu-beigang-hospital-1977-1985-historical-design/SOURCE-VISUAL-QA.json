@@ -1,0 +1,74 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_utc": "2026-11-02T02:58:00Z",
+  "reviewer_role": "independent source-controls and actual-render reviewer; not builder",
+  "model_scope": "北港附院1977–1985逐圖修訂協調之單一連通主館歷史外觀；非現況/竣工實錄/內部設施重建",
+  "mesh_sha256": "565d280389f33c899abbfb494a9cf6b5868ebde981a0596bbb24c89c9052c057",
+  "build_code_sha256": "2ed6cfa7c3468993deed95e8ec2e5db0db7d7a665ddd2834b3a72a623d6c1186",
+  "render_code_sha256": "5992a4fe0dad438f9b2f42c706fa8bd61e35a2a2b3b613cd2e3603376cb55dbd",
+  "readme_sha256": "3946a5f8dbaa0d1433371f40869292186c15035924f446e81fa345f92dc7a2e1",
+  "geometry_helpers_sha256": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f",
+  "geometry_controls_sha256": "31dd4550ab5d2863fe5f1e39c23d1396453eab56e4ef034deb16dd851fe826cc",
+  "opening_controls_sha256": "701dfb21435249b2c031217c8d3b6b61f6db87cb637438cf8851254dcbaa7fbb",
+  "private_source_review_sha256": "9824e3dd721882c23d3f4abe02611f5297f6625a9ba93496b881df6b64ee9cf5",
+  "private_source_correction_sha256": "bbab39559bbad38936ac5452d6d34891e133e5af8a421ca430c11b52a23cda9b",
+  "png_sha256": {
+    "preview.png": "b8bf7b3f4db320915d350e1406d0c56f3e8e67266fce21052c023be8fe641c95",
+    "rear.png": "7acb1238da2d014239e3625e16cc04aed9b5579f4b23a657178585af34f277a5",
+    "front.png": "fe50859dfb991c244937dfe106743c52e45b69b9ad22732c50febbd9e5a4c9a3",
+    "back.png": "20fc0d55b3302742011f2efbc040f13e301571a3e3b510ab9adaaf4f734d2579",
+    "east.png": "8879e075a5e877d931446a8b0b80867b9148e98d007f93528a4ea6b1fa05a054",
+    "west.png": "71e9ba4c89c518c35b96a295f80743dd4f5c0b7484d50283b446f4cee8e01f22",
+    "top.png": "6add3bc6aeb4e456e099792c2c710299a42a6de3662d82be815d02f2055e9ae8",
+    "podium-detail.png": "b611f28b4aa82717f273b559215cf5137b4b4725b3116e4eb2910496a77546fe",
+    "rooflights-detail.png": "02a948b5f314ce841a760612dc1e3a8a79b562e00ffb77861244cc3c00693653",
+    "tower-detail.png": "351ffa3f7800891c2260c2312e010271658131b879fd34546294fa312753b122"
+  },
+  "actual_visual_checks": {
+    "preview.png": "完整總覽；分層裙房、主翼、屋塔、罩群與東開放穿堂可辨。",
+    "rear.png": "完整後視；北向錯位窗/陽台及東端開放地面可辨。",
+    "front.png": "完整南向；三/四bay不同陽台、4F凸出及東端兩跨開放保留。",
+    "back.png": "完整北向；前景低裙房分段、7F退縮與不同陽台數未鏡射。",
+    "east.png": "完整東向；2.8m圖量端梯短窗/實牆分節、改位主入口與雨庇。",
+    "west.png": "完整西向；底層門及外階與東端不同，上層分節窗。",
+    "top.png": "完整俯視；逐層錯位、屋面凹口、40罩4×10與屋塔空框可見。",
+    "podium-detail.png": "刻意局部；裙房窗帶、院凹口、講堂高差，無跨角飄窗。",
+    "rooflights-detail.png": "刻意局部；40方座拱罩4×10、百葉浮雕、非圓筒半球。",
+    "tower-detail.png": "刻意局部；180cm空頂女兒牆、雙人孔、雨庇與7F局部陽台；舊浮出藍窗板消失。"
+  },
+  "independent_mesh_check": {
+    "triangles": 53828,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 1340766.0010368368,
+    "bounds_mm": [
+      [
+        -160.0,
+        -110.0,
+        0.0
+      ],
+      [
+        160.0,
+        112.5,
+        81.4749984741211
+      ]
+    ]
+  },
+  "source_control_checks": [
+    "逐層平面而非119.05×77.375外bbox；4F凸出及7F房段/陽台獨立。",
+    "GL/平面spot60cm差與A68結構層次分開；RF24.78、屋皮25.08、主欄25.98、塔31.94。",
+    "1978屋面9.12/罩頂10.32優先，40罩而非72天花格。",
+    "A15晚版東端兩跨開放，保留平台/柱/分離端梯；化糞池非地上樓層。",
+    "東西入口不同位置/階腳，端梯短窗寬約2.8m而非.85m細縫；跨角圖量候選裁切/省略。"
+  ],
+  "limitations": [
+    "來源不同修訂時期；按逐頁日期協調，不主張全圖同日或實建一致。",
+    "一般輪廓/窗位圖量約±.30m；屋塔短邊527.5字形±.10m；非完整門窗表逐扇精測。",
+    "局部門窗框格、罩曲面、百葉、樓梯與欄牆按README明示簡化/圖量；低欄110只南西直接，其餘輪廓延續推定。",
+    "屋面排水坡不逐點重建厘米高程；底座非測量地形。",
+    "不含病人、設備、安全內部或現況推斷。原圖/裁圖私存，不嵌入公開QA。",
+    "數位單連通水密不等於試印成功；1:400細框/懸挑需另行製造評估。"
+  ],
+  "final_assessment": "Ten finalv6imagesactuallyinspected. Previouslyreportedfloatingpanel andexposedgroundmisinterpretation corrected. Noadditionalblockingissue foundwithinthisdocumented exteriorinterpretation scope. Format/rebuild/Blenderreopen are separatebuildertests, not claimed as independently rerun here."
+}

@@ -1,0 +1,92 @@
+{
+  "status": "PASS_AUTOMATED_CHECKS_NOT_VISUAL_RELEASE",
+  "mesh_sha256": "565d280389f33c899abbfb494a9cf6b5868ebde981a0596bbb24c89c9052c057",
+  "render_code_sha256": "5992a4fe0dad438f9b2f42c706fa8bd61e35a2a2b3b613cd2e3603376cb55dbd",
+  "scene_sha256": "00ab48a656a10c323c1c71f036b1bbcb60ab81e52847583c7b7fd3b9a8daf1fb",
+  "build_input_sha256": {
+    "build_model.py": "2ed6cfa7c3468993deed95e8ec2e5db0db7d7a665ddd2834b3a72a623d6c1186",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f",
+    "geometry_controls.json": "31dd4550ab5d2863fe5f1e39c23d1396453eab56e4ef034deb16dd851fe826cc"
+  },
+  "images": {
+    "preview.png": "b8bf7b3f4db320915d350e1406d0c56f3e8e67266fce21052c023be8fe641c95",
+    "rear.png": "7acb1238da2d014239e3625e16cc04aed9b5579f4b23a657178585af34f277a5",
+    "front.png": "fe50859dfb991c244937dfe106743c52e45b69b9ad22732c50febbd9e5a4c9a3",
+    "back.png": "20fc0d55b3302742011f2efbc040f13e301571a3e3b510ab9adaaf4f734d2579",
+    "west.png": "71e9ba4c89c518c35b96a295f80743dd4f5c0b7484d50283b446f4cee8e01f22",
+    "east.png": "8879e075a5e877d931446a8b0b80867b9148e98d007f93528a4ea6b1fa05a054",
+    "top.png": "6add3bc6aeb4e456e099792c2c710299a42a6de3662d82be815d02f2055e9ae8",
+    "podium-detail.png": "b611f28b4aa82717f273b559215cf5137b4b4725b3116e4eb2910496a77546fe",
+    "rooflights-detail.png": "02a948b5f314ce841a760612dc1e3a8a79b562e00ffb77861244cc3c00693653",
+    "tower-detail.png": "351ffa3f7800891c2260c2312e010271658131b879fd34546294fa312753b122"
+  },
+  "image_sizes": {
+    "preview.png": [
+      1200,
+      900
+    ],
+    "rear.png": [
+      1200,
+      900
+    ],
+    "front.png": [
+      1200,
+      900
+    ],
+    "back.png": [
+      1200,
+      900
+    ],
+    "west.png": [
+      1200,
+      900
+    ],
+    "east.png": [
+      1200,
+      900
+    ],
+    "top.png": [
+      1200,
+      900
+    ],
+    "podium-detail.png": [
+      1200,
+      900
+    ],
+    "rooflights-detail.png": [
+      1200,
+      900
+    ],
+    "tower-detail.png": [
+      1200,
+      900
+    ]
+  },
+  "freshness_timestamp_checks": {
+    "preview.png": true,
+    "rear.png": true,
+    "front.png": true,
+    "back.png": true,
+    "west.png": true,
+    "east.png": true,
+    "top.png": true,
+    "podium-detail.png": true,
+    "rooflights-detail.png": true,
+    "tower-detail.png": true
+  },
+  "full_model_views": [
+    "preview",
+    "rear",
+    "front",
+    "back",
+    "west",
+    "east",
+    "top"
+  ],
+  "intentional_cropped_details": [
+    "podium-detail",
+    "rooflights-detail",
+    "tower-detail"
+  ],
+  "limitation": "Hashes bind inspected files; freshness uses filesystem timestamps, not signed per-render provenance. Human 10-view visual QA and separate source/privacy audit remain required."
+}

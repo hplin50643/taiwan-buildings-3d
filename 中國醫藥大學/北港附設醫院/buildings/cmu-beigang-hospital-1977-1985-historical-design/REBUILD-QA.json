@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": {
+    "mesh.npz": true,
+    "model.stl": true,
+    "components.json": true,
+    "palette.json": true,
+    "opening-controls.json": true,
+    "opening-revisions.json": true
+  },
+  "input_sha256": {
+    "build_model.py": "2ed6cfa7c3468993deed95e8ec2e5db0db7d7a665ddd2834b3a72a623d6c1186",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f",
+    "geometry_controls.json": "31dd4550ab5d2863fe5f1e39c23d1396453eab56e4ef034deb16dd851fe826cc"
+  },
+  "artifact_sha256": {
+    "mesh.npz": "565d280389f33c899abbfb494a9cf6b5868ebde981a0596bbb24c89c9052c057",
+    "model.stl": "b40efec8988b65becce07321518fa38f2c032938d12d983188612156222f3302",
+    "components.json": "a549f329bac62b69f9dd50ed5b152a7e08b26d1f2ac200a89631c7a059225a4c",
+    "palette.json": "b0362777c1bd0ee5b3341300c472cc9bf895732cac349d6bbcba07e02d494c79",
+    "opening-controls.json": "701dfb21435249b2c031217c8d3b6b61f6db87cb637438cf8851254dcbaa7fbb",
+    "opening-revisions.json": "50c280c8a7ff07e716bf19ee40c76721220e6bb8f109e13d87b4bfb42f33ab6a"
+  },
+  "mesh_sha256": "565d280389f33c899abbfb494a9cf6b5868ebde981a0596bbb24c89c9052c057",
+  "isolated_complete_three_input_rebuild": true
+}
