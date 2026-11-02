@@ -1,11 +1,14 @@
 # 國立臺灣師範大學 公開外觀模型
 
-目前收錄5套，其中既有4套為：和平校區I原有3件不同建築的**局部外觀段**，以及和平校區II圖書館總館的**整棟地上有限外觀近似**。既有4套不是4棟完整精細模型，也不是全校完成。原3件含底座最長150mm；圖書館模型含底座230×151×148.5mm，各自獨立比例、自建網格。
+## 模型圖鑑
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [![行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-administration-central-entry-segment/README.md)<br>**[行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/)** | [![禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-auditorium-front-block-segment/README.md)<br>**[禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/)** | [![文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/README.md)<br>**[文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/)** |
-| [![圖書館總館北側模型](和平校區II/buildings/ntnu-main-library/previews/front.png)](和平校區II/buildings/ntnu-main-library/README.md)<br>**[圖書館總館｜整棟地上外觀有限細節近似](和平校區II/buildings/ntnu-main-library/README.md)**<br>跨年度參考；非實測／已核實現況 | [<img src="林口校區/buildings/nups-linkou-gate-1983-design/preview.png" alt="原僑大林口大門｜1983年5–6月原設計圖版：實際模型渲染" width="220">](林口校區/buildings/nups-linkou-gate-1983-design/README.md)<br>**[原僑大林口大門｜1983年5–6月原設計圖版](林口校區/buildings/nups-linkou-gate-1983-design/README.md)**<br>[STL](林口校區/buildings/nups-linkou-gate-1983-design/model.stl) · [彩色3MF](林口校區/buildings/nups-linkou-gate-1983-design/model.3mf) · [Blender](林口校區/buildings/nups-linkou-gate-1983-design/scene.blend) |  |
+| [![圖書館總館北側模型](和平校區II/buildings/ntnu-main-library/previews/front.png)](和平校區II/buildings/ntnu-main-library/README.md)<br>**[圖書館總館｜整棟地上外觀有限細節近似](和平校區II/buildings/ntnu-main-library/README.md)**<br>跨年度參考；非實測／已核實現況 | [<img src="林口校區/buildings/nups-linkou-gate-1983-design/preview.png" alt="原僑大林口大門｜1983年5–6月原設計圖版：實際模型渲染" width="220">](林口校區/buildings/nups-linkou-gate-1983-design/README.md)<br>**[原僑大林口大門｜1983年5–6月原設計圖版](林口校區/buildings/nups-linkou-gate-1983-design/README.md)**<br>[STL](林口校區/buildings/nups-linkou-gate-1983-design/model.stl) · [彩色3MF](林口校區/buildings/nups-linkou-gate-1983-design/model.3mf) · [Blender](林口校區/buildings/nups-linkou-gate-1983-design/scene.blend) | [<img src="林口校區/buildings/nups-archives-four-paired-buildings-1983-design/preview.png" alt="原僑大檔案室1983設計，四組一包、實建未確證" width="220">](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/README.md)<br>**[原僑大檔案室｜1983設計、四組一包](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/README.md)**<br>[STL](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/model.stl) · [彩色3MF](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/model.3mf) · [Blender](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/scene.blend) |
+
+目前收錄6套：僑大檔案室四組一包、僑大林口大門，以及既有4套：和平校區I原有3件不同建築的**局部外觀段**，以及和平校區II圖書館總館的**整棟地上有限外觀近似**。既有4套不是4棟完整精細模型，也不是全校完成。原3件含底座最長150mm；圖書館模型含底座230×151×148.5mm，各自獨立比例、自建網格。
+
 
 以上預覽皆由交付模型幾何及原創材質渲染。每件資料夾有 STL、可編輯 Blender 原生檔、參數腳本、來源、數位QA及SHA。
 
@@ -24,3 +27,7 @@
 上述新增模型保留設計者與國立臺灣博物館典藏來源。來源圖像CC BY-NC標示（版本未明）與自行編寫程式／重建模型權利分開，不自動概括整包模型僅限非商業，也不宣稱已獲原圖或建築設計無限制商用權利。不附來源原圖、PDF或私人參考資料；皆未實體試印。
 
 [林口校區圖鑑](林口校區/README.md) · [僑先部官方沿革](https://www.nups.ntnu.edu.tw/about)
+
+## 僑大檔案室1983歷史設計研究
+
+原題「國立僑生大學先修班檔案室」，CCCK258、1983設計圖示，四組同向雙拼建築共八單元為同一工程一模型包，不拆成四套或八套，不因圖中廚衛改稱宿舍。依僑大歷史校屬及林口籌建關聯歸師大林口目錄；現址、現名與是否實建未獨立確證，不宣稱現存林口宿舍或竣工復原。後欄採詳剖4.20m，A2側立面3.60m仍差60cm；中央後坡5.111±0.10m派生，140cm短簷不蓋滿露台。圓孔側牆10→23cm及細框欄增厚為列印調整；近門短階圖量，遠側道路、圍牆、長階與精確地形不建。1:350含底座251.7×38.6×22.57mm，未試印；原圖私人保存，不保證商用權利。
