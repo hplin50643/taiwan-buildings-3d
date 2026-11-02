@@ -1,12 +1,6 @@
 # 國立清華大學 校本部
 
-現行收錄 **34 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
-
-### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
-
-
-本輪核准的外觀近似模型套件；全校尚未完成。套件可能包含相連群組、局部或歷史外觀，件數不等於完整建築棟數。旺宏館填縫版已完成一套參考切片，詳見下方卡片；其餘模型未正式切片。全校模型均未實體試印，沒有真機製造放行。各件警示、來源年代、背面簡化及支撐需求請讀詳頁。只公開來源URL，不散布原照片或PDF。
-
+## 模型圖鑑
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -21,8 +15,21 @@
 | [![國立清華大學 梅亭／機亭：實際模型預覽](buildings/nthu-mei-pavilion/previews/front.png)](buildings/nthu-mei-pavilion/README.md)<br>**[國立清華大學 梅亭／機亭](buildings/nthu-mei-pavilion/README.md)** | [![國立清華大學北校門簡冊立柱｜三片牆體外觀近似：實際模型預覽](buildings/nthu-north-gate-bamboo-slip-pillar/previews/front.png)](buildings/nthu-north-gate-bamboo-slip-pillar/README.md)<br>**[國立清華大學北校門簡冊立柱｜三片牆體外觀近似](buildings/nthu-north-gate-bamboo-slip-pillar/README.md)** | [![國立清華大學｜奕亭：實際模型預覽](buildings/nthu-yi-pavilion/previews/front.png)](buildings/nthu-yi-pavilion/README.md)<br>**[國立清華大學｜奕亭](buildings/nthu-yi-pavilion/README.md)** |
 | [![國立清華大學月涵亭：實際模型預覽](buildings/nthu-yue-han-pavilion/previews/front.png)](buildings/nthu-yue-han-pavilion/README.md)<br>**[國立清華大學月涵亭](buildings/nthu-yue-han-pavilion/README.md)** | [![國立清華大學成功湖昱寧島涼亭：實際模型預覽](buildings/nthu-yuning-island-pavilion-2023/previews/front.png)](buildings/nthu-yuning-island-pavilion-2023/README.md)<br>**[國立清華大學成功湖昱寧島涼亭](buildings/nthu-yuning-island-pavilion-2023/README.md)** | [![捷英文物館相連整館外殼近似](buildings/nthu-jieying-museum/previews/homepage-three-quarter.png)](buildings/nthu-jieying-museum/README.md)<br>**[捷英文物館｜2024–2025相連整館外殼近似](buildings/nthu-jieying-museum/README.md)**<br>非竣工一致／最終裝修證明 |
 | [<img src="buildings/nthu-li-dorm-front-facade-segment/previews/front.png" alt="國立清華大學禮齋｜正門與兩側可見立面截段：實際模型預覽" width="220">](buildings/nthu-li-dorm-front-facade-segment/README.md)<br>**[國立清華大學禮齋｜正門與兩側可見立面截段](buildings/nthu-li-dorm-front-facade-segment/README.md)** | [<img src="buildings/nthu-renxu-pavilion/previews/front.png" alt="國立清華大學壬戌亭：實際模型預覽" width="220">](buildings/nthu-renxu-pavilion/README.md)<br>**[國立清華大學壬戌亭](buildings/nthu-renxu-pavilion/README.md)** | [<img src="buildings/nthu-shi-dorm-facade-segment/previews/front.png" alt="國立清華大學 實齋｜兩層長立面五跨截段：實際模型預覽" width="220">](buildings/nthu-shi-dorm-facade-segment/README.md)<br>**[國立清華大學 實齋｜兩層長立面五跨截段](buildings/nthu-shi-dorm-facade-segment/README.md)** |
-| [<img src="buildings/nthu-success-lake-octagonal-pavilion/previews/front.png" alt="國立清華大學成功湖八角亭：實際模型預覽" width="220">](buildings/nthu-success-lake-octagonal-pavilion/README.md)<br>**[國立清華大學成功湖八角亭](buildings/nthu-success-lake-octagonal-pavilion/README.md)** |  |  |
+| [<img src="buildings/nthu-success-lake-octagonal-pavilion/previews/front.png" alt="國立清華大學成功湖八角亭：實際模型預覽" width="220">](buildings/nthu-success-lake-octagonal-pavilion/README.md)<br>**[國立清華大學成功湖八角亭](buildings/nthu-success-lake-octagonal-pavilion/README.md)** | [<img src="buildings/nthu-female-dormitory-chpt260-1980-design/preview.png" alt="清華女生宿舍1980歷史設計、現名未定" width="220">](buildings/nthu-female-dormitory-chpt260-1980-design/README.md)<br>**[女生宿舍CHPT260｜1980歷史設計、現名未定](buildings/nthu-female-dormitory-chpt260-1980-design/README.md)**<br>[STL](buildings/nthu-female-dormitory-chpt260-1980-design/model.stl) · [彩色3MF](buildings/nthu-female-dormitory-chpt260-1980-design/model.3mf) · [Blender](buildings/nthu-female-dormitory-chpt260-1980-design/scene.blend) |  |
+
+現行收錄 **35 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
+本輪核准的外觀近似模型套件；全校尚未完成。套件可能包含相連群組、局部或歷史外觀，件數不等於完整建築棟數。旺宏館填縫版已完成一套參考切片，詳見下方卡片；其餘模型未正式切片。全校模型均未實體試印，沒有真機製造放行。各件警示、來源年代、背面簡化及支撐需求請讀詳頁。只公開來源URL，不散布原照片或PDF。
+
+
 
 [捷英文物館｜2024–2025相連整館外殼近似](buildings/nthu-jieying-museum/README.md)：捷英文物館：2024–2025實照所見相連整館外殼的有限細節比例近似，包含低位山牆／殘牆形體、曲廊、階梯露臺、端部外梯及穿越通道；旁側獨立歷史農舍不包含。不是實測、竣工一致、最終2026裝修或開館狀態證明。200×168×94mm為展示模型尺寸，非精確縮尺；已公布3層／18.05m只作量體參考，1536／1552m²面積差異未據以補造幾何。起伏屋面、厚化葉片、橢圓孔、長縫與低位玻璃為示意近似；深孔保留中性封底、隱蔽背側不鏡像玻璃，未建室內與未知設備。9材質3MF、STL、可編輯Blend及319隱藏建構分件、公開Python與9張建築檢視圖及1張統一角度代表圖；隱藏重疊構件不可與外殼同印，分件修改不自動更新最終外殼。470截面、16空間射線、自交正負控制、原生編輯與公開輸入重建通過；屋簷／穿越通道／外梯與0.85–0.88mm欄杆需支撐評估，22級樓梯及梯下填實為模型近似，未真正切片或試印、不保證免支撐。
 
 捷英文物館位於校本部南側，非南大校區；[校方112年報第82頁](https://info.site.nthu.edu.tw/var/file/91/1091/img/3805/112Report.pdf)明列「校本部南校區三合院旁」，僅用作校區身分核對，不採舊提案幾何。館方目前標示工程維護、暫未對外開放，參觀狀態以[館方資訊](https://museum.site.nthu.edu.tw/p/404-1153-149191.php?Lang=zh-tw)為準；本模型不推定最終開館裝修。
+
+## 女生宿舍1980歷史設計研究
+
+漢光建築師事務所CHPT260女生宿舍歷史設計，一棟連通兩層雙院落，非現況測繪或竣工驗證，現名未定，不冠稱慧齋、不將雙院計兩棟。A0標1980年4月，其他圖欄日期不假定相同。A4錯位與總深33.85m為據圖推導；W1採光式2.6與輪廓1.6差異明記，窗寬採圖量1.60±.10m。88cm採光罩為淺弧升25cm，非精確R44；水箱高度未知不造突出。隱蔽室內與鄰棟不補造，中性配色與薄件簡化，未實體試印。

@@ -1,0 +1,62 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_CHPT260_HISTORICAL_EXTERIOR_DIMENSION_ERRATA",
+  "reviewed_utc": "2026-11-01T19:50:34.570075+00:00",
+  "reviewer": "independent_source_visual_reviewer",
+  "version": "build-v4/render-v1",
+  "scope": "1980歷史圖示單棟雙院落二層宿舍外觀，非現況測繪或竣工驗證，不認定今日宿舍名。",
+  "artifact_sha256": {
+    "mesh.npz": "6f05512a5c359385b45e5f38cb16869d9e16dc1d66c5f3ead817e00a524c8017",
+    "build_model.py": "8a2627d77da6bd4a7304cd05188f15a5cb148fd0d5b405a91258be35b459a801",
+    "render_model.py": "ff22741db06d9001eb3d9a1903319bd5377cd604b278470a4fef5e3c1e4339eb",
+    "README.md": "d4a18e8280fde8478405cf88826f63ec89cd80d68d34473e5efbdc35eccf1037"
+  },
+  "private_source_review_sha256": "fbda3dfb552a5b26af86fc5252c0efca86540630fb4b6a6cfaf98bd64078074b",
+  "png_sha256": {
+    "preview.png": "8e7ce0816fffb511405547320771e627a51da8bb8d13aad85d17b2c7e397d511",
+    "rear.png": "a02fad33890953df5fb06f1cac7f7dbb179120faf0f88587a14643723b19bef2",
+    "north.png": "88b3acc513c533136340212951de8fb8e6e25100bd8b445b7cc1dcbe43fed4cd",
+    "south.png": "1eaaedb2068fd665b629975f539754ea7a8916ff2a4bd58e45fb43a36649ddff",
+    "east.png": "78a3f64d40d7f3e92e59788d93098fe8633eeaca35aa59ab4d5726f94f99c4aa",
+    "west.png": "ed59c02ed76d81f458a0c0e4fdf1cb58748e5bf37d04acc39ef3b61cfc98f12b",
+    "top.png": "cf77cb60e7660623e1b3e5b407a182154e576c8d27025b145d316535f03b33c4",
+    "courtyard-detail.png": "1e2aeae6fc1ee26e47cb6c870bb08a8c6b33a55c1f7a89e039c7a51954145ada",
+    "entrance-detail.png": "cc28c9378972b17dc56382bf542d87ad6fe42cd879f80e439185befc5b96bb5a",
+    "rooflight-detail.png": "322761bdc3142139e6711b334811eb8af8433e56a394d18dcf8cb58718e6b36b"
+  },
+  "visual_observations": {
+    "preview": "完整總覽；兩露天院落、階梯狀錯位主體、有頂交誼廳與小淺罩，底座未裁切。",
+    "rear": "完整背向斜視；背面兩組六窗與兩院內玻璃可讀，不是整盒或第三露天院。",
+    "north": "完整背立面，兩組六窗、二層及錯位屋簷符合來源主要組織。",
+    "south": "完整正立面，四窗＋入口區＋六窗，非背立面鏡射。",
+    "east": "完整右立面，兩處可見高樓梯窗、服務條窗、側門與退縮端窗。",
+    "west": "完整左立面，單主要高梯窗與服務條窗/側門，與右面投影不同。",
+    "top": "完整屋頂及底座；兩院淨空、外緣退階與一小採光罩，沒有猜造突出水箱；屋頂坡面屬圖示。",
+    "courtyard-detail": "刻意局部；兩層院窗、首層落地玻璃、角部短窗片可見，未漏成整個空白bay。",
+    "entrance-detail": "刻意局部；凹入主門、三階與上層窗清楚；無近裁切黑塊。",
+    "rooflight-detail": "刻意局部；88口徑的淺帽圖量表達，非整顆半球；有座框，未高過女兒牆。"
+  },
+  "independent_mesh_checks": {
+    "triangles": 23818,
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 912744.5368819466
+  },
+  "source_controls_checked": [
+    "九張本地原圖主要外形/平剖/立面與全部來源SHA核實",
+    "牆心54×32.85控制域，A2/A3錯位8.75，A8半深24.10及外簷50cm推導檐域33.85；不把A4錯誤3210當控制",
+    "小院12.85×7與大院約21.90×7，非A1面積式；交誼廳有頂",
+    "GL0/FL.5/3.5/RF6.5/女兒牆7.5，窗與側面不同類型",
+    "屋簷由牆心offset，未重加牆半厚；院首層落地玻璃及partialbay修正",
+    "README第一節三欄十實圖，繁中歷史/非現況/未知水箱限制字樣可讀"
+  ],
+  "mandatory_limitations": [
+    "A4錯位700/總3210與兩層平面鏈不符；本模型為有據推導，不聲稱圖紙完全無矛盾。",
+    "W1採光式2.6×1.4與平立面輪廓不符；名義1.60×1.40為圖量，未取得A10窗表，非施工窗規格。",
+    "弧罩88口徑/8座/座頂RF+.18與名義.25帽升是明載淺弧解讀；非精確R44，原圖半徑與實畫不完全相容。",
+    "女兒牆15cm/窗框10cm為列印表達，排水坡為三角分片示意，不保證逐點工程坡。",
+    "未知水箱高度、室內設備/相鄰建物/地形不猜補；不代表現況或竣工。",
+    "未實際列印；網格通過不等於物理試印或商用權利確認。"
+  ],
+  "release_recommendation": "可凍結本有界歷史外觀版本，無新增source或visual HOLD。"
+}
