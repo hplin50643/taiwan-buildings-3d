@@ -1,0 +1,38 @@
+{
+  "status": "PASS_BOUNDED_ORIGINAL_FACE_COLOR",
+  "reviewed_images": [
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "entry-detail.png",
+    "corridor-detail.png",
+    "roof-detail.png"
+  ],
+  "source_images_personally_viewed": [
+    "3650.jpg",
+    "3664.jpg"
+  ],
+  "source_scope": "Official material-site photographs; posted 2025-02-05, capture dates unspecified",
+  "checks": {
+    "high_principal_walls_brick_family": true,
+    "blue_gray_only_existing_recesses": true,
+    "low_front_wing_portal_neutral": true,
+    "north_outer_end_roof_neutral": true,
+    "no_arbitrary_diagonal_color_patches": true,
+    "no_new_continuous_glazing": true,
+    "geometry_unchanged": true
+  },
+  "limits": [
+    "Original geometry highly simplified; color does not establish accuracy of its facade or footprint.",
+    "Three appearance labels not a validated four-filament project; unprinted.",
+    "Low front wing/portal and unknown north/roof surfaces neutral, not evidence of actual gray paint."
+  ],
+  "mesh_sha256": "e326607e076ca6898cbe6f36fb5963fbca297ed3c074b136d8410a5f55aa5075",
+  "README.md": "6db9786ef841712696d368179cf88e49905e4a95cb48a355d7627532cb9eb988",
+  "independent_review_sha256": "ce60a3e947a1f5e8ac6055913f2785d4b283aff5189c884ee53dceb730989738",
+  "parent_final_review": "Pending; builder has personally inspected all ten final renders."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": {
+    "shaft_west_whole_plane": true,
+    "shaft_east_whole_plane": true,
+    "flat_roof_neutral": true,
+    "low_front_wing_neutral": true,
+    "north_neutral": true
+  },
+  "face_counts": {
+    "shaft_west_whole_plane": 274,
+    "shaft_east_whole_plane": 274,
+    "flat_roof_neutral": 10,
+    "low_front_wing_neutral": 986,
+    "north_neutral": 774
+  },
+  "mesh_sha256": "e326607e076ca6898cbe6f36fb5963fbca297ed3c074b136d8410a5f55aa5075",
+  "limits": "Original whole plane consistency and neutral exclusions, not a survey or exact material-boundary reconstruction."
+}

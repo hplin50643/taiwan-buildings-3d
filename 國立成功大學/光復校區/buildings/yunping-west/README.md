@@ -1,3 +1,44 @@
+# 成大雲平大樓西棟 A028｜原模型材色更新
+
+## 彩色模型預覽
+
+**同項目 count_delta = 0；原 3822 三角面、150 × 134 × 93.9 mm 與原 STL／建模程式不變。** 本件只更新既有高度簡化幾何的材色，不以新照片宣稱原體量、門窗或現況精度提升。東西棟原模型各自獨立縮放，不拼成共同尺度場景。**低前橫翼與大門框因照片無唯一對位，保中性未核，並非已完成全棟精確配色。**
+
+| 整體 | 後向 | 正向 |
+|---|---|---|
+| ![整體](preview.png) | ![後向](rear.png) | ![正向](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂面](top.png) | ![低前翼](entry-detail.png) | ![主體窗域](corridor-detail.png) |
+| ![屋面](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+- 官方 3650／3664 照片支持高主體磚紅／褐色族；僅將可對應既有主體垂直牆面概化分色。色碼未校色，不是材料檢驗、修復漆號或精確年代色復原。
+- 既有可辨凹窗背面近似暗灰藍。**原模型沒有照片中連續高玻璃條帶的拓撲，本次不新增連續玻璃、不把整面實牆塗藍冒充玻璃**；窗格、磚縫與設備均不新增，凹窗幾何仍高度概化。
+- **低前橫翼與大門框／portal 在兩照中無唯一完整對位，全部保持中性未核**。不挪用東棟色彩，不把未核大門洞宣稱玻璃或已證灰混凝土；凹洞深暗來自渲染陰影。
+- 未證北面、外端面、水平屋頂、低翼與底座保持中性色，不表示照片證明其真漆色。原頂部與陽台細節缺相應分面，沒有為貼色切三角或增加構造；完整同平面材色優先於斜三角假界線。
+- 原圖於 2025-02-05 上傳，但未註個別拍攝日；不把上傳日期當攝影日期，也不稱 2026 現況測繪。
+
+## 格式與列印
+
+[appearance.3mf](appearance.3mf) 為毫米單位三個基本材質逐面指派；[scene.blend](scene.blend) 實際保存三色材質。原 [model.stl](model.stl) 位元組不變，STL 不包含顏色。原包沒有 OBJ，本次不聲稱保存或交付原 OBJ。
+
+三個外觀材質標籤**不等於已驗證四色耗材切片專案**。切片器匯入、耗材對應、換色、支撐未測，本件**未實際列印**。原始幾何與列印限制不因渲染改善而取消。
+
+## 重建與 QA
+
+`python build_model.py` 重建原 STL；`python colorize_model.py`、`python export_appearance.py` 分色與輸出；`blender -b -P render_color.py` 生成十圖與場景。`python validate_color.py` 與 `blender -b -P verify_color_scene.py` 檢查原檔、三角座標、3MF、隔離重建、實際 shader 及場景重開。重建目錄保留，不自動刪除。
+
+本次彩色證據為 COLOR-ASSIGNMENT-QA、COLOR-FORMAT-GEOMETRY-QA、COLOR-FACE-DOMAIN-QA、SCENE-QA、FRAMING-QA、SOURCE-VISUAL-QA、DELIVERY-QA。舊 previews、validation、thin-feature-check、cross_sections 與 sources 保留作原模型歷程，不代替本次色材 QA 或實印驗證。舊 render_preview.py 是單色入口，勿覆寫彩色場景。
+
+## 來源與權利
+
+成大素材網，[照片3650](https://material.ncku.edu.tw/picture.php?/3650)、[照片3664](https://material.ncku.edu.tw/picture.php?/3664)，作者／提供者為**外國語文學系－蔡美慧**。頁面載非成大人員非商業利用可下載、須標示成大素材網；本案保留此來源條件與署名。
+
+原照及頁面只私人研究，不隨模型公開、不貼圖、不以專案開源授權重新授權原素材。公開只保來源連結及獨立概化材色；不保證商用，也不保證取得建築設計相關權利。詳 COLOR-SOURCE-REGISTER.json。
+
+## 原模型說明與限制（仍有效）
+
 # 國立成功大學｜雲平大樓西棟
 
 ## 模型預覽

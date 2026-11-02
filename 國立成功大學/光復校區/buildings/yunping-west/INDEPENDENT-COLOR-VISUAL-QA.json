@@ -1,0 +1,36 @@
+{
+  "status": "PASS_BOUNDED_COLOR_ONLY_INDEPENDENT_REVIEW",
+  "reviewer": "parent builder independent of child implementation",
+  "checks": {
+    "actual_two_official_photos_viewed": true,
+    "all_ten_render_views_viewed": true,
+    "original_vertices_faces_exact": true,
+    "original_STL_and_code_bytes_unchanged": true,
+    "no_false_diagonal_color_patches": true,
+    "unknown_low_front_wing_portal_roofs_north_neutral": true,
+    "no_continuous_glass_painted_over_solid_walls": true,
+    "README_scope_rights_and_unprinted_limits_reviewed": true
+  },
+  "limitations": [
+    "Coarse original geometry remains; photographs do not uniquely locate low front wing.",
+    "Discrete colored recesses are not a reconstruction of continuous real glazing."
+  ],
+  "sha256": {
+    "README.md": "6db9786ef841712696d368179cf88e49905e4a95cb48a355d7627532cb9eb988",
+    "colorize_model.py": "4a47b59c5a260d3fe241d342aa38e60314b1b946a8e2d582a37fb67c0f9f9086",
+    "color-mesh.npz": "e326607e076ca6898cbe6f36fb5963fbca297ed3c074b136d8410a5f55aa5075",
+    "palette.json": "088716fa140ddcee7a40fbb3b7a1d7744f0a4770f142806dea1ebd7cb7471c7c",
+    "model.stl": "aa45e3be5e40607dd0255c9fdc0a36647fbdfd3b5c4296548dde7511e5f4b02f",
+    "build_model.py": "7f7fbd5ab9454afa23a8c31af98ebf0b3045e9510dc4575c45b90a42e170d191",
+    "preview.png": "04e6f915ff78fefd578bde2c20c540e0da2d88aca6f35fd1dd387d1bbe90e5f3",
+    "rear.png": "ba0a7dc98d967723c0fb55fe493bc6ddfa327a75f7c272c9f0086ede85d07516",
+    "front.png": "a52a4d029036bfa37b9e38120a03852b0b1d4b0e88d195265c0ecb3eeb24ef1b",
+    "back.png": "8a09df5321507b036de2850aedf0bc1e9e41e38f1e62ef41957b97b06c781ae4",
+    "west.png": "136e86974d33c800aeb4a6990c35d5a06a4d52b1317c1a1705239b075f418fe6",
+    "east.png": "180c40c558c2d7875511d4ff38cc8cccc71833c316b4ca2a0bdd6069b935433d",
+    "top.png": "5bb736ca2657c79f88567f653c213d13c8e325ff0a02014cf3a616997b5f24a5",
+    "entry-detail.png": "9fa2821f93ea28593ab60d284fdef609b8c962927f8ec3faf5d53b0545762199",
+    "corridor-detail.png": "0d7d8ac0bc058a56dc61434119265199f7e7a9f57e8f2a46dbe35f0d3aad69e8",
+    "roof-detail.png": "8ad56b98de757fa7793df5927920a128bf990f7ae6f6084840bcaff75e3670e6"
+  }
+}
