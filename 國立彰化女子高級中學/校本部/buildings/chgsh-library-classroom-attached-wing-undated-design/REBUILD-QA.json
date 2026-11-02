@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": {
+    "mesh.npz": true,
+    "model.stl": true,
+    "components.json": true,
+    "palette.json": true
+  },
+  "input_sha256": {
+    "build_model.py": "5faee36e13ac027863b645dafceb3d07fbe107f8ef82b278511da83a56fb081f",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "artifact_sha256": {
+    "mesh.npz": "49cc8f766a5517dd1b7bf0abb9888002f15d73788ee6ce2afe6990b915cae114",
+    "model.stl": "71dc78fc830c4a9ed62473c28dd42ba927a26eaf26c3c05ba083b84d0b8e74d4",
+    "components.json": "b812e54f2790567f0051a36676f2ab56882ba03e1375657c503adaac2030ade4",
+    "palette.json": "48e95d52fc86033190bc34629f18632d1a15c11829d0baacb01bd433afbde891"
+  },
+  "mesh_sha256": "49cc8f766a5517dd1b7bf0abb9888002f15d73788ee6ce2afe6990b915cae114",
+  "isolated_complete_two_input_rebuild": true
+}

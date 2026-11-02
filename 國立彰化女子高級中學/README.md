@@ -4,9 +4,9 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/chgsh-family-residence-six-unit-undated-design/preview.png" alt="彰化女中未載年六戶眷屬宿舍歷史設計實際模型渲染，非現況" width="220">](校本部/buildings/chgsh-family-residence-six-unit-undated-design/README.md)<br>**[眷屬宿舍｜未載年六戶連棟設計](校本部/buildings/chgsh-family-residence-six-unit-undated-design/README.md)**<br>[STL](校本部/buildings/chgsh-family-residence-six-unit-undated-design/model.stl) · [彩色3MF](校本部/buildings/chgsh-family-residence-six-unit-undated-design/model.3mf) · [Blender](校本部/buildings/chgsh-family-residence-six-unit-undated-design/scene.blend) |  |  |
+| [<img src="校本部/buildings/chgsh-family-residence-six-unit-undated-design/preview.png" alt="彰化女中未載年六戶眷屬宿舍歷史設計實際模型渲染，非現況" width="220">](校本部/buildings/chgsh-family-residence-six-unit-undated-design/README.md)<br>**[眷屬宿舍｜未載年六戶連棟設計](校本部/buildings/chgsh-family-residence-six-unit-undated-design/README.md)**<br>[STL](校本部/buildings/chgsh-family-residence-six-unit-undated-design/model.stl) · [彩色3MF](校本部/buildings/chgsh-family-residence-six-unit-undated-design/model.3mf) · [Blender](校本部/buildings/chgsh-family-residence-six-unit-undated-design/scene.blend) | [<img src="校本部/buildings/chgsh-library-classroom-attached-wing-undated-design/preview.png" alt="彰女未載年圖書館教室附接翼，非獨棟與現況，實際模型渲染" width="220">](校本部/buildings/chgsh-library-classroom-attached-wing-undated-design/README.md)<br>**[圖書館及教室｜未載年附接翼、非獨棟](校本部/buildings/chgsh-library-classroom-attached-wing-undated-design/README.md)**<br>[STL](校本部/buildings/chgsh-library-classroom-attached-wing-undated-design/model.stl) · [彩色3MF](校本部/buildings/chgsh-library-classroom-attached-wing-undated-design/model.3mf) · [Blender](校本部/buildings/chgsh-library-classroom-attached-wing-undated-design/scene.blend) |  |
 
-現行收錄 **1 套模型包**；不是六套、全校建築數或全校完成。
+現行收錄 **2 套模型包**；不是六套、全校建築數或全校完成。
 
 ## 收錄範圍
 
@@ -17,3 +17,7 @@
 保留設計者與典藏來源；原圖權利與模型／程式／渲染分開，不附原圖、裁圖或私人參考備份，不保證商用權利。
 
 [校本部圖鑑](校本部/README.md) · [回總目錄](../README.md)
+
+## 圖書館教室附接翼歷史設計
+
+陳其寬建築師事務所彰化女中圖書館及教室未載年歷史設計，僅45m長新建兩層附接翼，不是獨立整棟、現況或竣工認證，不硬配紅樓或1989現圖書館。西端既有校舍接口以人工截斷面表示，不補西山牆、舊樓或舊梯；北側既有走廊修繕不在本包。屋皮脊12.1925m為尺寸鏈派生，瓦帽及簷邊圖量約±0.10m；15淺拱與165片遮陽依來源，拱鏈2cm差與局部框格近似均揭露。1:150遮陽薄片約0.333mm，未試印，不作商用權利保證。

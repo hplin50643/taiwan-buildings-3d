@@ -1,0 +1,70 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_utc": "2026-11-02T03:18:40Z",
+  "review_method": "Independent actual-source-pixel review, source-to-code comparison, actual inspection of all ten final PNGs, independent mesh topology check. Focused historical exterior controls, not an exhaustive manufacturing-detail or as-built certification.",
+  "mesh_sha256": "49cc8f766a5517dd1b7bf0abb9888002f15d73788ee6ce2afe6990b915cae114",
+  "build_code_sha256": "5faee36e13ac027863b645dafceb3d07fbe107f8ef82b278511da83a56fb081f",
+  "render_code_sha256": "d4db17341ea83f7aab693a8f5f8c5d44f9a50e3bcd3b5702581d5c14446b4def",
+  "readme_sha256": "ae82543b3235e0ea09106015abc8da6664804facd188aa072e78145fab789bd2",
+  "private_source_review_sha256": "1de2b86c23e3edb8803565386ae73f3fa49c0d2a4ab0de455480bbb36e6b8a07",
+  "png_sha256": {
+    "preview.png": "8ab60a198a65e1940bde2a2ad5a3e54226daea19d331bdfec7c84510137cbe93",
+    "rear.png": "898eec85a5c657bc57df3298ae3f6566019e842ca59db0e9bc9874a90a57f395",
+    "front.png": "7131b25122cf48ae7afe2d55e1a007fa2195f58d9cd0f7bc1d7b8a2bb4e32677",
+    "back.png": "4f4d1dacd097e864002b842446411c400f069ff8aef5c6b3e078c18e7d9838d8",
+    "east.png": "f4f5274d62faf86f59c8a902e134e1dc42178703af13c3dcfcf3ca4b76b1eac2",
+    "west.png": "c687ae0f3d6561e925b5baac1c8f3410d3c833549ad9ca6f60ee3d06897d99e3",
+    "top.png": "fffc4b3b160a642bf75ebc2bac913eeb35f019f9a5b147a6d74cacb42a4fb457",
+    "arcade-detail.png": "e53700bad52539702a7abd01d52b91e9de1246428cdbac831a32968e1b646857",
+    "fins-detail.png": "90f7ad019f255a8ea0a54f7dff5e534115151fa8a9c4a4e22608675cb3f8d960",
+    "interface-detail.png": "506ec51ac50c72afc4fe000d96321816437f474aebb568c86f53fe0a9b6cf7fc"
+  },
+  "view_checks": {
+    "preview": "Complete attached-wing front oblique: 15 shallow arches, open corridor, 165 fins and east gable; no full-view clipping.",
+    "rear": "Complete rear oblique: lower handed compound doors/windows, upper W3 opaque lower panel at west, open triangular west attachment cut.",
+    "front": "Complete south elevation: fifteen shallow R350 arcades and fifteen upper fin groups; not semicircular arches.",
+    "back": "Complete north elevation: ten lower compound door/window groups and five W1, upper fourteen W1 plus west W3.",
+    "east": "Complete blank east gable and lower side arcade portal; no invented upper windows.",
+    "west": "Complete labelled attachment cut, not an independent exterior facade; D1 at upper south interface, no invented old stairs or west gable triangle.",
+    "top": "Complete pitched roof silhouette, derived ridge, graphic tile courses and free eaves.",
+    "arcade-detail": "Intentional local framing: open ground corridor, opposite-handed DW1, narrow leaf vision panels and shallow arch curvature visible.",
+    "fins-detail": "Intentional local framing: eleven narrow vertical fins per upper window, retained separation and top/bottom anchors.",
+    "interface-detail": "Intentional local framing: west D1, differently colored rectangular cut face and unfilled triangular attachment opening; old building excluded."
+  },
+  "mesh_independent_check": {
+    "triangles": 41090,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "positive_volume_mm3": 1212372.7529530113,
+    "bounds_mm": [
+      [
+        -155.3333282470703,
+        -42.83333206176758,
+        0.0
+      ],
+      [
+        156.6666717529297,
+        41.16666793823242,
+        84.28333282470703
+      ]
+    ]
+  },
+  "source_controls_passed": [
+    "45x10.45 m new two-storey attached wing, fifteen 3 m bays; five lower classrooms and upper library.",
+    "GL .66, 2FL5.28, beam9.28, derived roof wall-axis9.58 and nominal slope-plane ridge12.1925; cap/eaves explicitly graphic.",
+    "R350 shallow arcade; 4.18 crown versus 4.16 alternative floor/radius chain preserved as 2 cm datum difference.",
+    "165 source 5x20 cm fins, nominal FL5.28..8.58; hidden 2 cm endpoint overlap declared.",
+    "W3 full outer frame and opaque lower half, DW1 vision panel and opposite handed leaves, D1 limited to interface.",
+    "Seven privately held source sheets correspond to this undated library/classroom project; no dormitory or 1989 identity substitution."
+  ],
+  "limitations": [
+    "Not an independent whole building: existing west building/stairs and north repair corridor excluded. West gray cut surface is authored scope boundary, not a historical material inference.",
+    "No current-condition, construction-completion or exact-year claim.",
+    "Graphic eaves, cap, tile courses, pier width, door position and frame subdivision remain bounded approximations; not all small window rows reproduced to individual dimensions.",
+    "1:150 fin thickness about .333 mm is fragile and unprinted. Watertightness is not a fabrication guarantee.",
+    "Interior rooms, furniture, hidden structure and existing interface stairs omitted. Original images and crops remain private."
+  ],
+  "render_provenance": "All ten images are final render-v2 for the bound mesh; no older preview images accepted.",
+  "freeze_eligible": true
+}

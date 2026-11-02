@@ -1,0 +1,34 @@
+{
+  "status": "PASS_BOUNDED_HISTORICAL_EXTERIOR",
+  "checks": {
+    "scale_1_150": true,
+    "fifteen_arcades_single_authored_component": true,
+    "south_fins_165_components": true,
+    "no_authored_west_gable": true,
+    "east_real_gable_one": true,
+    "western_interface_explicit_not_real_wall": true,
+    "authored_support_035m": true,
+    "base_z_zero_mm": true,
+    "estimated_cap122925_plus_support_scaled": true,
+    "mesh_closed_single_component_positive_volume": true,
+    "STL_triangle_coordinates_match": true
+  },
+  "mesh_sha256": "49cc8f766a5517dd1b7bf0abb9888002f15d73788ee6ce2afe6990b915cae114",
+  "input_sha256": {
+    "build_model.py": "5faee36e13ac027863b645dafceb3d07fbe107f8ef82b278511da83a56fb081f",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "scale": "1:150",
+  "mm_per_source_m": 6.666666666666667,
+  "authored_base_m": 0.35,
+  "source_ridge_m": 12.1925,
+  "estimated_cap_top_m": 12.2925,
+  "expected_print_top_mm": 84.28333333333333,
+  "limitation": "Component labels/counts do not independently establish facade/source accuracy. Ridge cap is an acknowledged graphic estimate; west interface closure is not a historical facade.",
+  "not_claimed": [
+    "final visual QA",
+    "current survey",
+    "physical print testing",
+    "publication readiness"
+  ]
+}
