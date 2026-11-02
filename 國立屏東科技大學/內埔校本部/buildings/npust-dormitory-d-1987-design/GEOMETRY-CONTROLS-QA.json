@@ -1,0 +1,36 @@
+{
+  "status": "PASS_BOUNDED_HISTORICAL_EXTERIOR",
+  "checks": {
+    "ridge_17_08": true,
+    "annex_south590": true,
+    "annex_detail140": true,
+    "central_six_treads": true,
+    "central_lower_finish105": true,
+    "central_two_sloping_walls": true,
+    "three_end_stairs": true,
+    "south_basement18": true,
+    "north_basement22": true,
+    "west_5vents": true,
+    "east_5vents": true,
+    "latest_corrected_GO": true
+  },
+  "mesh_sha256": "44d019c09052fe0855821911b439c60c3f815613b0a99871e9a7bdcb93e181c8",
+  "direct_controls_m": {
+    "floor_interval": 3.5,
+    "RF": 14,
+    "ridge": 17.08,
+    "GL": -1.2,
+    "central_finished_rise": 1.05,
+    "annex_parapet": 1.4
+  },
+  "source_conflicts_retained": {
+    "annex_elevation_parapet": 1.45
+  },
+  "graphic_detail_allowance_m": 0.1,
+  "not_claimed": [
+    "current survey",
+    "hidden basement interior",
+    "tested printability",
+    "precise colors"
+  ]
+}

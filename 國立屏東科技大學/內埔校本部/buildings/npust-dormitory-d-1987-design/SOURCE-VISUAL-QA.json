@@ -1,0 +1,99 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_D_1987_PHASED_HISTORICAL_EXTERIOR_LIMITS",
+  "reviewed_utc": "2026-11-02T01:15:58.120836+00:00",
+  "review_method": "獨立實看D平立剖、prime詳圖與增建原像素；逐項code比對；最終render-v2十圖逐張目視，非只採builder測試。",
+  "mesh_sha256": "44d019c09052fe0855821911b439c60c3f815613b0a99871e9a7bdcb93e181c8",
+  "build_sha256": "573301aab90db2aa77c046c3199aaa6effd923af74502ffbf45c463f7d503c68",
+  "renderer_sha256": "98add73a85f56786c1d2550bcc5d523ac97fdc192dd6fdc489db5c7c5ae18f85",
+  "readme_sha256": "45acdf941cc9375bbff01e0520e516ed3b8848de1c6f9a0bc6adaa6c14df2063",
+  "private_source_review_sha256": "3554b1387d2aa9da8275ab2fbe6868c6ff48c5f7b0e435e33d7584e9de5e07b7",
+  "png_sha256": {
+    "preview.png": "d0eb04059714ad5efe04183d833844a6088a60b37d52f17fe7ca146d25aba161",
+    "rear.png": "2db3a26cd9abadb777f50b87d71ad71a80199bae47ab6dddc4baac946837f4ec",
+    "north.png": "82857eb9fb16aa0bb53a176fe7370971fef91c93b070090e671567f0f7ac7d8f",
+    "south.png": "6e1627b86c12aa45a73f656302c60a25aafce788bafa23e1f4ee489c8dd5d98d",
+    "east.png": "587a4896e2a6d4b9b4bbc3a583199dc8a880e771ecf58fb10faf6ac013de5b90",
+    "west.png": "4b7fb82d10e8dfcea9867f8cd1bbab7a407be8282066574afe27f4aa67a2267a",
+    "top.png": "2adccaffac028945af35987fe3850103eacf3de4af52b6e928268be29d175c94",
+    "roof-detail.png": "35f19c86731ee35a1ac6e5452afc01e39a06165f964c38337a3cf94d3062462a",
+    "entrance-detail.png": "054c7c5da3cc09c0e702e0493ffd01a2751a620bce72729be25fc13f5143f5c6",
+    "annex-detail.png": "58503c78508dfff1cdafca880c6bf70a8b33e20a8963b9ab3b6a8c18c23c743d"
+  },
+  "independent_mesh_check": {
+    "triangles": 39770,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_components": 1,
+    "positive_volume_mm3": 840092.892018763,
+    "bounds_mm": [
+      [
+        -162.0,
+        -43.83333206176758,
+        0.0
+      ],
+      [
+        162.0,
+        43.83333206176758,
+        61.93333435058594
+      ]
+    ]
+  },
+  "per_view": {
+    "preview.png": {
+      "status": "PASS",
+      "observation": "中央北/兩端南錯位，同向錯脊、中央入口與南590增建同框；全支座未裁切。"
+    },
+    "rear.png": {
+      "status": "PASS",
+      "observation": "北面普通窗列、僅東端首層門、增建南端位置可辨，非E/F鏡製。"
+    },
+    "north.png": {
+      "status": "PASS",
+      "observation": "23跨模式與可見地下窗帶，北側東端門正確；外框完整。"
+    },
+    "south.png": {
+      "status": "PASS",
+      "observation": "兩端浴廁高窗、兩端首層門、中央退門和階、南地下窗帶，非北面鏡像。"
+    },
+    "east.png": {
+      "status": "PASS",
+      "observation": "兩列走道窗、最外一群五孔、兩錯脊及南側增建；無裸露地下整層。"
+    },
+    "west.png": {
+      "status": "PASS",
+      "observation": "兩列走道窗與單一前景五孔群，後景端牆未任加孔。"
+    },
+    "top.png": {
+      "status": "PASS",
+      "observation": "外輪廓、南590帶平台、中央局部階、逐bay開槽與屋面交接清楚。"
+    },
+    "roof-detail.png": {
+      "status": "PASS",
+      "observation": "U槽向上開放、接合區未被槽刀穿孔，兩坡與高差交接無虛構重複折面；刻意局部視圖。"
+    },
+    "entrance-detail.png": {
+      "status": "PASS",
+      "observation": "退門、六踏面/七落階、兩側坡牆和側平台清楚，左右地下窗避遮蔽，非整31m廣場。"
+    },
+    "annex-detail.png": {
+      "status": "PASS",
+      "observation": "最南590帶增建平台與140cm欄牆、旁邊既有南東端門階，沒有新造增建梯；地下基座只露GL以上。"
+    }
+  },
+  "resolved_issues": [
+    "跨圖軸字C-D誤指增建，依三圖實體線修正南590帶y0..5.9；不是任選版本。",
+    "可見GL以上地下採光窗補入，未以地下內部省略理由刪外觀。",
+    "中央階兩側坡牆補入，淨寬及帽帶明列協調。",
+    "端面五孔只有兩外端，未鏡成四組。"
+  ],
+  "retained_limits": [
+    "主體採D專屬圖，75.5/76.4/76.6分期與少數圖框E/內題D差異保留，不稱同日竣工圖。",
+    "增建欄頂詳140與立面145差5cm保留，不造5cm抬台消差。",
+    "中央七落15=105到完成廣場面，外GL120另datum；三端門階6×17.5與中央不同，兩處同類協調明示。",
+    "W3寬1.4、W2寬1.6、bath與地下低窗尺寸為圖量；主要室窗90/175/85高鏈直接來源，無毫米窗表精度。",
+    "槽底12、屋皮16、框15等數位表現/縮尺協調非全部原始施工厚度。",
+    "地下內部、儲藏室梯、31m共用地下道/廣場不重建；展示支座非測繪地形。",
+    "單連通水密不等於可印、施工安全或權利清理，未切片未試印，薄欄牆約.33mm已有README警示。"
+  ],
+  "unresolved_blockers": []
+}
