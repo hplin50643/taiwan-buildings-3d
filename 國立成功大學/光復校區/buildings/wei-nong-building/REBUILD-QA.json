@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": {
+    "mesh.npz": true,
+    "model.stl": true,
+    "components.json": true,
+    "palette.json": true
+  },
+  "input_sha256": {
+    "build_model.py": "2ee473ed5239857fca9c3633fc1da78a48ed20edf5c9d81fbe046822a357dc67",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "artifact_sha256": {
+    "mesh.npz": "64fe8327d5de9bfa35924c462e2b27cecae165dab23b43d6037ab7b3a615c9ee",
+    "model.stl": "ba89e7c5a1e2ecd7f4f2fa93c5c2a29beb8ad223ce9180044ea8b07d1829e907",
+    "components.json": "d586da3d32a9faf062f6e87d1bf917eb3c148774867a02b3c692376b249a7401",
+    "palette.json": "58f8bddaa7de6bfe5d96e9622cc1b442a5cc2930b4a5ab9f86dcb05a030e1c0f"
+  },
+  "mesh_sha256": "64fe8327d5de9bfa35924c462e2b27cecae165dab23b43d6037ab7b3a615c9ee",
+  "isolated_complete_two_input_rebuild": true,
+  "retained_rebuild_directory": "Retained privately outside public output; no automatic deletion",
+  "automatic_deletion": false
+}

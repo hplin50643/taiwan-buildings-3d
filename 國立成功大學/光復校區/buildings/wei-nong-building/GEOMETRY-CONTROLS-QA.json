@@ -1,0 +1,55 @@
+{
+  "status": "PASS_AUTOMATED_INVENTORY_AND_MESH_NOT_SOURCE_QA",
+  "checks": {
+    "scale_1_350": true,
+    "authored_support_065m": true,
+    "actual_component_extrema_match_print_bbox": true,
+    "base_z_zero_mm": true,
+    "highest1816_plus_support065_scaled": true,
+    "mesh_closed_single_component_positive_volume": true,
+    "STL_triangle_coordinates_match": true
+  },
+  "mesh_sha256": "64fe8327d5de9bfa35924c462e2b27cecae165dab23b43d6037ab7b3a615c9ee",
+  "input_sha256": {
+    "build_model.py": "2ee473ed5239857fca9c3633fc1da78a48ed20edf5c9d81fbe046822a357dc67",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "scale": "1:350",
+  "mm_per_source_m": 2.857142857142857,
+  "authored_base_m": 0.65,
+  "source_highest_m": 18.16,
+  "same_item_update": true,
+  "building_count_delta": 0,
+  "expected_print_top_mm": 53.74285714285714,
+  "actual_bounds_mm": [
+    [
+      -120.85713958740234,
+      -62.57143020629883,
+      0.0
+    ],
+    [
+      120.85713958740234,
+      62.57143020629883,
+      53.74285888671875
+    ]
+  ],
+  "authored_component_expected_bounds_mm": [
+    [
+      -120.85714285714285,
+      -62.57142857142857,
+      0.0
+    ],
+    [
+      120.85714285714285,
+      62.57142857142857,
+      53.7428571326392
+    ]
+  ],
+  "limitation": "Automated checks are not source/visual PASS. Human review must inspect all wings, stepped local datums including5cm differences, actual C/B1/B2/D window placement, courtyard corridors and railings, slopes and entrances. Same-item1981 historical exterior upgrade, not new building or current survey; do not infer source PASS from component names",
+  "not_claimed": [
+    "final visual QA",
+    "current survey",
+    "physical print testing",
+    "publication readiness"
+  ]
+}

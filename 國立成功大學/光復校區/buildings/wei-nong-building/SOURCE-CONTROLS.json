@@ -1,0 +1,115 @@
+{
+  "units": "metres before1:350printtransform",
+  "axis_domain": [
+    81.6,
+    40.8
+  ],
+  "axis_not_bbox": true,
+  "main_roof": [
+    13.96,
+    15.86
+  ],
+  "short_roof": [
+    10.77,
+    12.57
+  ],
+  "outer_tower": [
+    16.96,
+    18.16
+  ],
+  "outer_tower_plan_segmentation": "high6.10m/low3.45m;notwhole9.55m extrudedhighest",
+  "inner_stair_slope": {
+    "low": 13.4,
+    "high": 14.75,
+    "graphic_tolerance": 0.15,
+    "openframe": 15.86
+  },
+  "roof_tank_lid": {
+    "plan": [
+      3.75,
+      6.02
+    ],
+    "nominal_EL": 16.96,
+    "EL_status": "boundedcoordinationnotdirectlabel"
+  },
+  "local_floors": {
+    "rooms": [
+      1.0,
+      4.24,
+      7.48,
+      10.72
+    ],
+    "main_galleries": [
+      0.95,
+      4.19,
+      7.43,
+      10.67
+    ],
+    "court_upper_bridges": [
+      3.83,
+      7.07,
+      10.31
+    ],
+    "bridge_difference": 0.36,
+    "bridge_endsteps": "2x18derived;35cmrunsgraphical±.15notdirectdetail"
+  },
+  "windows": {
+    "C": [
+      3.04,
+      1.74,
+      0.9
+    ],
+    "B1": [
+      3.04,
+      0.54,
+      2.1
+    ],
+    "B2": [
+      3.04,
+      0.6,
+      3.84
+    ],
+    "D": [
+      1.5,
+      0.54,
+      2.1
+    ],
+    "F": [
+      0.7,
+      2.34,
+      0.3
+    ]
+  },
+  "B2_placement": "24main+16short;farunpairedshortbaysnotB2",
+  "B3": "249sill schedule42basementwindows;notmodeledhiddenbasement",
+  "F_placement": "22specifiedgroups;4levelsoutertwofaces,2–4Finneroneface",
+  "C_limit": "1F schedule45vs44 confidentlylocated;extraCunlocatednotinvented,notprovenhidden",
+  "entrance": {
+    "platforms": [
+      0.05,
+      0.41,
+      0.95
+    ],
+    "upper_platform_possible_plan_glyph_difference": 0.2,
+    "adopted": "clearsection95",
+    "stairs_width": 4.5,
+    "inner_screen_x": [
+      56.1,
+      62.9
+    ],
+    "screen_y": [
+      1.7,
+      7.9
+    ],
+    "circle_R": 1.0,
+    "circle_center_y": 5.5,
+    "circle_center_z": 1.95,
+    "graphic_tolerance": 0.15,
+    "left": "section2Blookingleft",
+    "right": "matchingplanopeningbounded",
+    "NW": "no unsupportedmirroredcircle"
+  },
+  "material": "A30historicalgreenhighpressurecementtile;colorsillustrative",
+  "print_simplifications": "140mmframes/rails=.4mmat1:350;tilecoursesabstracted;opaqueglazing;nohiddeninterior",
+  "no_actual_print_test": true
+}
