@@ -1,0 +1,31 @@
+{
+  "status": "PASS_BOUNDED_EXISTING_FACE_COLOR_UPDATE",
+  "reviewer": "local color implementation and visual QA",
+  "inspected": [
+    "All three official 2023 source photos",
+    "Original build_model.py and 5376-face original STL",
+    "Final preview plus front/back/east/west/top/rear",
+    "Final entry-detail and arcade-detail full-size, roof-detail montage"
+  ],
+  "mesh_sha256": "ad207853c97b4d9c4fba8b4467d6ba3cf52badaddc825610c0cb65ac70c247f9",
+  "checks": {
+    "original_geometry_not_changed": true,
+    "ordinary_pier_front_triangles_continuously_red": true,
+    "entrance_tall_columns_warm_white": true,
+    "balustrades_and_caps_gray": true,
+    "no_brown_fake_wood_windows": true,
+    "unknown_roof_sides_rear_neutral": true,
+    "no_source_photo_texture": true,
+    "no_added_arch_ring_or_subdivision": true,
+    "ten_views_readable_and_framed": true
+  },
+  "limits": [
+    "Exact front white arch-ring/red spandrel boundaries do not exist in the original mesh; these broad surfaces remain warm white.",
+    "The second entrance uses comparable-component color inference, not an independently verified second-entrance photograph.",
+    "Four basic appearance labels are not a validated four-filament slicer project.",
+    "Original geometry is a simplified photo-informed miniature, not a survey."
+  ],
+  "source_review_sha256": "5ae7a60160f6070f798e169c7b8972cb375db459b569b480a8cdca6e54cf10c1",
+  "independent_face_mapping_review_sha256": "59bcef9066b0ebac62a464e428a2f4bc80103185b033273db50c738b29f8c6e2",
+  "parent_final_review": "Required before freeze; not performed by this agent."
+}

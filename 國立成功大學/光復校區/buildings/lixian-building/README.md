@@ -1,3 +1,45 @@
+# 國立成功大學禮賢樓｜同項目彩色更新
+
+## 彩色模型預覽
+
+**原幾何不變：150 × 47 × 38.8 mm、5376 三角面，原 STL 位元組保留；count_delta = 0。** 這是既有粗化外觀模型補材色，不是重新測繪或提升建築幾何精度。依 2022 年 12 月修復完成、2023 年 1 月官方照片近似分色，不主張 1912 原漆或 2026 即時現況。
+
+| 整體 | 反向／未核後部 | 正向 |
+|---|---|---|
+| ![彩色整體](preview.png) | ![反向](rear.png) | ![正向](front.png) |
+| ![後部](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![屋頂](top.png) | ![入口](entry-detail.png) | ![拱廊](arcade-detail.png) |
+| ![屋面](roof-detail.png) |  |  |
+
+## 分色範圍與重要限制
+
+- 普通前柱腹近似紅橘磚；入口高柱、山牆填面與原有拱洞內表面暖白；欄板、入口水平帶、帽及階梯灰米；未核的兩端、後背、大片平屋頂及展示底座保持中性。
+- **原網格沒有獨立白色前拱圈環**，亦有跨多個真實材色區的平面三角形。本次不切分、不增面、不加裝飾；無法穩定對應的拱間紅磚三角填面／白圈邊界以暖白概化。紅柱不等於全部真實磚面的精確復原。
+- 原模型沒有照片中的退入木門扇與木窗框，**未將整個拱洞染棕冒充木窗**；洞內暖白及陰影由現有表面與渲染照明產生。未貼官方照片。
+- 官照主要顯示其中一入口，第二入口採同類構件分色解讀，不聲稱兩處均有獨立照片核對。側背與屋頂不是已核全方位配色。
+- HEX 為展示近似，非色度量測或現場色票；原始粗化幾何及背面資料不足限制仍有效。
+
+## 彩色檔案與列印
+
+- [appearance.3mf](appearance.3mf)：毫米單位、四個基本材質逐面指派；[appearance-materials.json](appearance-materials.json) 記錄材色與面數。
+- [scene.blend](scene.blend)：實際彩色 Blender 場景，與原 STL 同三角幾何。原 `build_model.py` 不變，`colorize_model.py` 只指派現有面材質。
+- [model.stl](model.stl) 保持原檔；**STL 本身沒有顏色**。彩色預覽不等於 STL 含彩色。
+- 四個外觀標籤 **不等於已驗證的四色耗材切片檔**；未驗切片器材質匯入、耗材映射、支撐／換色及實際列印。本件未實際列印。
+
+## 可重現與 QA
+
+依原 requirements 安裝環境後：`python build_model.py`、`python colorize_model.py`、`python export_appearance.py`；`blender -b -P render_color.py` 產生十圖及彩色場景；`python validate_color.py`、`blender -b -P verify_color_scene.py` 查格式、原幾何、隔離重建及場景重開。隔離資料保留，不自動刪除。
+
+本次證據為 `COLOR-ASSIGNMENT-QA.json`、`COLOR-FORMAT-GEOMETRY-QA.json`、`SCENE-QA.json`、`FRAMING-QA.json`、`DELIVERY-QA.json`。舊 `previews/`、`validation.json`、薄壁／截面檔仍保存，但不是本次色彩或四色列印驗證；舊 `render_preview.py` 會產生單色場景，請勿誤覆本次場景。
+
+## 色彩來源與權利
+
+採[成大新聞中心 2023-01-11 禮賢樓修復慶成報導](https://web.ncku.edu.tw/p/404-1000-248681.php?Lang=zh-tw)，文陳意安、圖蘇弘毅；三張正面／典禮／廊內照片交叉檢視。不是修復前側照，也不把廊內照當後立面證明。
+
+原照片、裁圖與私人審核原件不隨模型公開、不作紋理貼圖。未查得可據以再授權的 CC 許可；公開可看不等於商用授權。第三方照片與建築設計權利仍屬權利人，本次原創材質分配與渲染不重新授權該素材，也不保證商業使用權。詳 `COLOR-SOURCE-REGISTER.json`。
+
+## 原模型幾何說明與限制（繼續有效）
+
 # 國立成功大學｜禮賢樓
 
 ## 模型預覽

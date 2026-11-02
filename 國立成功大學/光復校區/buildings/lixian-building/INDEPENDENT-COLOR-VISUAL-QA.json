@@ -1,0 +1,29 @@
+{
+  "status": "PASS_INDEPENDENT_BOUNDED_COLOR_VISUAL_REVIEW",
+  "reviewer": "parent builder independent of implementation child",
+  "mesh_sha256": "ad207853c97b4d9c4fba8b4467d6ba3cf52badaddc825610c0cb65ac70c247f9",
+  "reviewed_images_sha256": {
+    "roof-detail.png": "ebb0e3c59fce748ef03ef910ad44e87733bdef34dffe97d9c01b0551413e29cf",
+    "entry-detail.png": "ee95653c0c0abb0af8c10cde4961dfd3aa86a489d07f1e8f2638013ac2a20471",
+    "back.png": "bd317403c9f9a952706337153af55b02850c33714ce54e65a300ebf0078d60f5",
+    "west.png": "5bdb935b1d13a37ae9aec5b97bf43670dd45741ff740460e3b63fc8200271f95",
+    "top.png": "6deef3a48cd2172050db033683cb8de18d159cd843934db5d0c94d232b453e66",
+    "arcade-detail.png": "80bd176a57beb5f1975ebd799fa65bd2f2e6ead3281463633be3b29099f52102",
+    "rear.png": "2ff4b164856f4b84a2b22063650502bdca0ea806411e11574ee92ec3695193e0",
+    "preview.png": "73cbffba472382ab95d8d975c5a6f602cc2ffa211b3e2583b2138f076e6a8def",
+    "front.png": "3398516ec0365fdaaf1d5900609a4dacbe7f904482d6ae5fd1c831f1784f3d17",
+    "east.png": "8878b38355882cb83e96970415068b414142914163bc95550ad10b8caa181420"
+  },
+  "observations": [
+    "Viewed original official restored exterior and corridor photos, preview and all nine other final views.",
+    "Ordinary front pier bellies red; entrance tall columns white; balustrades/caps gray.",
+    "Earlier triangular pier color glitches corrected using full face vertex domains.",
+    "Rear, sides and flat roof neutral; no fictitious brown doors."
+  ],
+  "limitations": [
+    "Original mesh lacks precise exterior arch-ring topology and spandrel boundaries. Warm-white broad faces do not reproduce all real red brick spandrels.",
+    "Four appearance materials are not a validated four-filament slicer project.",
+    "Original simplified geometry unchanged; not a survey."
+  ],
+  "source_focused_review_sha256": "59bcef9066b0ebac62a464e428a2f4bc80103185b033273db50c738b29f8c6e2"
+}
