@@ -1,0 +1,97 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "industrial-information-management-building",
+  "original_faces": 1394,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "sources": [
+    {
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2025/02/05/20250205122730-054fbe8c-me.jpg",
+      "sha256": "0a2cdd03ec934d7cf20d9064e44d035f2afca1c9733293a39fb9c5d1b9e2f3fd",
+      "actually_viewed": true,
+      "capture_date": "未獨立確認",
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3316"
+    },
+    {
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2025/02/05/20250205122741-bd360d62-me.jpg",
+      "sha256": "fff2bab32e7aa91c36a0ac8313ba8f7f8e658b5bd86277177e2edb472d5b4095",
+      "actually_viewed": true,
+      "capture_date": "未獨立確認",
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3318"
+    }
+  ],
+  "audit": {
+    "sha256": "800f31ad2ac45a792ccf1847cf00a2888f0ee464162648f85a1010e0c36c11bf"
+  },
+  "scope": "A039一棟，排除A040/A038",
+  "rights": "素材網非商業使用/署名成大素材網；官新聞與原照片權利屬校方/原作者，未見通用CC再授權。全部原照/頁面私人保存，不貼原照或公開原檔、不宣稱商用權利已清。",
+  "date_limit": "素材目錄2025/2023為上傳線索，不當拍攝日；啟端2022-11-09為啟用新聞日期，不稱2026現況。",
+  "limits": [
+    "舊幾何極簡不更動；分色不背書幾何精度",
+    "未證後面/屋面/鄰棟接口中性",
+    "不能以大三角重心產生跨界斜色片；整面中性或一致粗化",
+    "不增文字、窗框或切分三角"
+  ],
+  "observations": [
+    "3316/3318 同一入口長面磚紅，入口柱亦紅磚，厚外挑板側緣磚、底偏淺色",
+    "外階/小入口門楣灰白，上窗凹框灰/暗窗；不把整片入口上方染玻璃",
+    "端面/東外長面/後尚無本次清楚照片，保持中性"
+  ],
+  "palette_nominal_srgb": {
+    "brick": "#B57659",
+    "light_concrete": "#BFC0B4",
+    "window_shade": "#48534F",
+    "unknown": "#A7ABA5"
+  },
+  "issued_utc": "2026-11-02T14:18:00Z",
+  "independent_review": {
+    "sha256": "a79b270390fb1d2c3ce1d8b2ae76d8437ea77d7a07e70285fbb0ab7881442f2b"
+  },
+  "approved_mapping": [
+    {
+      "region": "Entrance long bar court-facing plane y13",
+      "family": "brick orange/red",
+      "limit": "Original broad field only; do not claim exact brick or frame geometry."
+    },
+    {
+      "region": "Two original tall portal posts x7/35,y6",
+      "family": "brick",
+      "limit": "Photographs clearly show brick columns, not all-gray portal."
+    },
+    {
+      "region": "Original projecting horizontal portal at z28..31 and exterior stair",
+      "family": "Stair light gray; portal soffit only light family, other slab surfaces neutral pending unique mapping",
+      "limit": "Source contains both high brick-edged overhang and lower gray small canopy. Original tall portal may denote high overhang; do not paint entire portal gray solely by object name. Exposed edge/top neutral, no extra lower canopy."
+    },
+    {
+      "region": "Upper three-row shallow recesses",
+      "family": "dark gray backing and light gray returns where face topology allows",
+      "limit": "No painted external frame beyond original facets; photo gray surrounds cannot manufacture new frame surfaces."
+    },
+    {
+      "region": "Large lower recesses",
+      "family": "generic dark shadow",
+      "limit": "Do not call whole tall recessed entry glass or restore nonexistent interior."
+    }
+  ],
+  "unknown_neutral_regions": [
+    "Short-end irregular window volume at y-48 and projecting bay",
+    "External side x68",
+    "Rear y43",
+    "All horizontal roof tops and base"
+  ],
+  "mandatory_public_limits": [
+    "A039 only; no A040/A038 source borrowed.",
+    "Two photographs depict same entrance long face, not complete four sides.",
+    "Original1394 geometry and source-code bytes unchanged; no face subdivision for colors.",
+    "Whole-plane coherent mapping; cross-boundary triangles remain neutral rather than diagonal paint.",
+    "Photographs private; preserve material-site noncommercial and credit conditions; unprinted."
+  ],
+  "required_QA": [
+    "STL bytes/triangle positions unchanged; assigned materials verified in scene and3MF",
+    "10 view visual review; no cross-boundary paint slivers",
+    "public partial observed-face scope and neutral unknowns; original files retained"
+  ],
+  "model_QA_pending_at_source_issue": true,
+  "model_QA_current": "Source approval is not model QA; see separate final QA files."
+}

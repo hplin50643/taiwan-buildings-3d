@@ -1,51 +1,41 @@
-# 國立成功大學｜工業與資訊管理系館大樓
+# 成大工業與資訊管理系館 A039｜有證入口面補彩
 
-## 模型預覽
+## 彩色模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
+**同項目 count_delta = 0；原1394三角形、STL及建模程式不變。** 僅入口長面依照片分色，未證短端、外側、背面及屋頂保持中性；不包含相鄰A040管院或A038會計棟，不稱全館精確現況復原。
 
-第十三批；光復校區。校方GIS A039，財產校碼R1A-17-0。尺寸約 150 × 116 × 59.9 mm，含底座最長邊150 mm，各件獨立比例。
+| 整體 | 後斜 | 正面 |
+|---|---|---|
+| ![整體](preview.png) | ![後斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西面](west.png) | ![東面](east.png) |
+| ![頂面](top.png) | ![入口](entry-detail.png) | ![長面](facade-detail.png) |
+| ![屋面](roof-detail.png) | | |
 
+## 材色範圍
 
-## 棟別範圍與近似
+- 兩張官照均是入口長面及斜角，支持磚紅／橘主牆與**兩支高磚柱**，不因此推定短端、外長側及後面每一窗的顏色。
+- 原上三列凹窗背底採深灰，既有凹邊採灰色族；沒有新增外擴窗框、玻璃條或細磚縫。下部高凹口以深陰影表示，不把整個入口凹面說成玻璃或室內復原。
+- 實照同時有高位磚邊懸挑及較低的灰小簷。原模型高portal無法唯一證明等於低灰簷，故**只有底面淺灰，邊緣與頂面中性**；不因程式命名portal就整塊染灰，也不新增低簷。原外階採灰色族，欄杆與金字未建不補。
+- 色碼是未校色照片近似，非材料檢驗或修復色號。素材2025-02-05上傳日不等攝影日期，亦非2026精確現況。
+- 原簡化L形、窗列／樓層／深度仍是舊模型近似；補彩不是幾何精度背書。跨界大三角不切新面，未知面中性不代表真實灰漆。
 
-只做GIS A039的L形長翼與東側回翼；北側已另製A040管理學院綜合大樓、西側A038會計系館與院中火車頭倉庫都排除。公共院落照片顯示入口大懸挑、粗柱、三排上層窗、室外階梯；側/端面照片補核較素磚牆、不規則小窗與外凸窗間。樓翼厚度與屋頂高度近似，後側缺乏清楚照片保持素面。照片中各教學單位的招牌不據以另分棟；只做外殼，不做室內、設備或安全配置。
+## 格式、重現與限制
 
-只做公開外觀，不含室內、設備、管線、安全配置、人物或周遭藝術品。窗凹口不是穿入室內的實測空間；細框、屋簷、百葉與樓板唇部按迷你比例加粗。正背預覽為便於觀察外形的相機方向，不代表地理南北。
+[appearance.3mf](appearance.3mf) 是毫米四基本材質逐面指派，[scene.blend](scene.blend) 保存同網格與實際材質。原 [model.stl](model.stl) bytes不變、STL不含顏色；原包無OBJ，不假稱有原OBJ。
 
-## 列印與支撐
+四材質外觀**不是已驗證四色耗材切片專案**；未實際列印，未測換色、支撐及耗材對應。原薄件與估算比例限制仍適用。
 
-入口懸挑下方、外階梯底面、凸窗下方與深窗槽需切片評估支撐。粗柱/懸挑均與主體及底座連通，不保證無支撐列印。
+```sh
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 2 -P render_color.py
+blender -b --python-exit-code 1 -P verify_color_scene.py
+```
 
-未實體試印，未切片驗證。截面閉合與0.8 mm薄篩都是輔助幾何檢查，不是全部壁厚、支撐或列印成功保證。
+格式／重建／實際shader重開／十圖與獨立視覺檢查見本次QA。隔離重建目錄保留，不刪檔。[原單色說明](ORIGINAL-MONOCHROME-README.md)、previews/、render_preview.py、舊validation為歷程，不能代替本次材色QA；舊renderer會覆寫新場景，勿混用。模型各件原比例獨立，不能當等比例校園拼接。
 
-## 公開來源
+## 來源與權利
 
-- [校方GIS建物身分與外框](https://nckumap.ncku.edu.tw/map.php)：光復校區A039公開外觀及外部輪廓；不使用室內/設備圖層，不轉載地圖原圖。
-- [校方財產清冊2026-01-30](https://prop-oga.ncku.edu.tw/var/file/59/1059/img/4743/218075103.pdf)：名稱、校區及R1A-17-0校碼交叉核對；不是以財產筆數當獨立建物數。
-- [已檢視像素的校方素材網外觀實拍 photo 3311](https://material.ncku.edu.tw/picture.php?/3311)：僅外觀；照片版權仍歸原權利人，原圖不放公開包。上傳日期不當作拍攝或現況驗證日期。
-- [已檢視像素的校方素材網外觀實拍 photo 3313](https://material.ncku.edu.tw/picture.php?/3313)：僅外觀；照片版權仍歸原權利人，原圖不放公開包。上傳日期不當作拍攝或現況驗證日期。
-- [已檢視像素的校方素材網外觀實拍 photo 3316](https://material.ncku.edu.tw/picture.php?/3316)：僅外觀；照片版權仍歸原權利人，原圖不放公開包。上傳日期不當作拍攝或現況驗證日期。
-- [已檢視像素的校方素材網外觀實拍 photo 3318](https://material.ncku.edu.tw/picture.php?/3318)：僅外觀；照片版權仍歸原權利人，原圖不放公開包。上傳日期不當作拍攝或現況驗證日期。
-- [已檢視像素的校方素材網外觀實拍 photo 3381](https://material.ncku.edu.tw/picture.php?/3381)：僅外觀；照片版權仍歸原權利人，原圖不放公開包。上傳日期不當作拍攝或現況驗證日期。
-- [已檢視像素的校方素材網外觀實拍 photo 3382](https://material.ncku.edu.tw/picture.php?/3382)：僅外觀；照片版權仍歸原權利人，原圖不放公開包。上傳日期不當作拍攝或現況驗證日期。
-- [已檢視像素的校方素材網外觀實拍 photo 3385](https://material.ncku.edu.tw/picture.php?/3385)：僅外觀；照片版權仍歸原權利人，原圖不放公開包。上傳日期不當作拍攝或現況驗證日期。
-- [已檢視像素的校方素材網外觀實拍 photo 3387](https://material.ncku.edu.tw/picture.php?/3387)：僅外觀；照片版權仍歸原權利人，原圖不放公開包。上傳日期不當作拍攝或現況驗證日期。
-
-## 檔案與重驗
-
-- [STL](model.stl)、[可編輯 Blender](scene.blend)、[結構化來源與照片直接網址](sources.json)
-- [正面原圖](previews/front.png)、[背面原圖](previews/rear.png)、[立面](previews/elevation.png)，均由實際 STL 產生
-- 安裝 `requirements.txt` 後執行 `python build_model.py` 重建 STL
-- `blender -b -t 2 -P render_preview.py` 重建 Blender 與預覽
-- `python validate_model.py` 檢查原始法線、封閉性、邊/頂點流形、單一連通表面、無額外內部空腔殼、正體積、乾淨重建雜湊與 Blender 幾何一致性；見 [validation.json](validation.json)
-- `python validate_sections.py` 使用固定共同邊方向插值，檢查每0.2 mm水平截面輪廓閉合；見 [cross_sections.json](cross_sections.json)
-- `python check_thin.py` 每1 mm取樣，先確認閉合/有效輪廓，再做0.8 mm形態開運算；見 [thin-feature-check.json](thin-feature-check.json)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 立面<br>![立面](previews/elevation.png) |  |  |
-
-任一原始驗證false、程式非零退出碼或資產雜湊不一致都不可封版。沒有窮盡自交檢測，也不以報告代替實體列印。原始參考照片和地圖不隨公開包散布。
+實看成大素材網 [3316](https://material.ncku.edu.tw/picture.php?/3316)、[3318](https://material.ncku.edu.tw/picture.php?/3318)。署名**成大素材網、外國語文學系－蔡美慧**，保留非商業利用與署名條件。原照／頁面僅私人參考，不隨模型公開、不作貼圖；專案授權不重新授權來源或保證第三方設計商用權利。公開只有來源連結與獨立概化材色。

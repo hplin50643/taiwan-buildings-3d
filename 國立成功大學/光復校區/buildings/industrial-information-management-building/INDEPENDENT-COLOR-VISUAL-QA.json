@@ -1,0 +1,126 @@
+{
+  "status": "PASS_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE_WITH_DOCUMENTED_LIMITS",
+  "personally_viewed": [
+    "3316.jpg",
+    "3318.jpg",
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "entry-detail.png",
+    "facade-detail.png",
+    "roof-detail.png"
+  ],
+  "original_stl_sha256": "544fcdd5c632d9058aa83e403a96faac386ca3aa6ab4db77e5b4e5fd8184cf3f",
+  "color_mesh_sha256": "1c70fac82207eebe8ed32e6ba16d819ff0f2f88bb9e173f4e752746b301c0669",
+  "colorize_code_sha256": "8551f2e2fab861b9fb2f7c73e11d72594811650381deb35ae773b0db46de4730",
+  "preview_sha256": "82123346fb994a204fa4940e92ff7e8de1bdb1f3642111bfa01a7f60d8c0c761",
+  "source_hashes": {
+    "3316.jpg": "0a2cdd03ec934d7cf20d9064e44d035f2afca1c9733293a39fb9c5d1b9e2f3fd",
+    "3318.jpg": "fff2bab32e7aa91c36a0ac8313ba8f7f8e658b5bd86277177e2edb472d5b4095",
+    "INDUSTRIAL_INFORMATION-INDEPENDENT-FACE-COLOR-REVIEW-1416.json": "a79b270390fb1d2c3ce1d8b2ae76d8437ea77d7a07e70285fbb0ab7881442f2b",
+    "INDUSTRIAL_INFORMATION-COLOR-SOURCE-GO-1418.json": "a3fd60f5ae621dab33e87f7480f51610a972b57ca5b555802caac4ef3ec6f2af"
+  },
+  "geometry": {
+    "triangles": 1394,
+    "vertices_exact": true,
+    "faces_exact": true,
+    "original_stl_bytes_exact": true
+  },
+  "groups": {
+    "entry_front": {
+      "faces": 168,
+      "material_counts": {
+        "0": 168
+      }
+    },
+    "unknown_rear": {
+      "faces": 2,
+      "material_counts": {
+        "3": 2
+      }
+    },
+    "unknown_short_end": {
+      "faces": 44,
+      "material_counts": {
+        "3": 44
+      }
+    },
+    "unknown_external_side": {
+      "faces": 184,
+      "material_counts": {
+        "3": 184
+      }
+    },
+    "broad_top": {
+      "faces": 9,
+      "material_counts": {
+        "3": 9
+      }
+    },
+    "portal": {
+      "faces": 20,
+      "material_counts": {
+        "1": 10,
+        "3": 10
+      }
+    }
+  },
+  "findings": [
+    "All ten final PNGs personally inspected; no artificial triangular paint patches, material plane inconsistencies or unreadable captions identified. Seven full views show complete model; three detail views are intentional crops.",
+    "Main entrance wall brick family; gray only original shallow upper recess returns.",
+    "Tall lower recess backing is generic shade, not asserted full-height glazing.",
+    "High portal is not uniquely matched to the lower photographed small canopy: underside pale only, edge/top neutral.",
+    "No source justification for short-end, external side, rear or broad roof color; these remain neutral."
+  ],
+  "limits": [
+    "No A040/A038 borrowing; no new geometry, labels or photo textures.",
+    "Original simplified geometry not revalidated as exact architecture.",
+    "Four appearance labels are not verified slicer filament assignments or a test print.",
+    "Source photos remain private; final README pair and preserved original monochrome README reviewed. Partial entrance-face color interpretation is not complete exterior material verification."
+  ],
+  "reviewed_utc": "2026-11-02T14:30:00Z",
+  "mesh_sha256": "1c70fac82207eebe8ed32e6ba16d819ff0f2f88bb9e173f4e752746b301c0669",
+  "build_code_sha256": "158ff5a92e1f8b9d1503a6c96a01e19061feb099b5a638f1446ba5b2595d908a",
+  "render_code_sha256": "259d7dda2169782f8d16e5bceca306b957e631a28b5b8c55a8ed0dcaed66b9c9",
+  "readme_sha256": "130727bdd8ad94abb726a59f2992e00d0fd675b8143c109ff8caa32fbe6314f6",
+  "png_sha256": {
+    "preview.png": "82123346fb994a204fa4940e92ff7e8de1bdb1f3642111bfa01a7f60d8c0c761",
+    "rear.png": "1d98059919bb3aa078b01c60aaf088eabb0e68c047817d93a70187391d968754",
+    "front.png": "ec6aedb52e8c12231da4448073e5d07a4d5779a205425e3205965dab9ee15450",
+    "back.png": "0f334280d738a545208bff11e92ba8beeee085c62fde3e0d2ee4c08f0c236c2c",
+    "west.png": "8afc4f5dc6aaf4f31addf3ceb6a207037fc94c6b89d510d9ff86f96ae77a4eb7",
+    "east.png": "97716b3fe5ece84e972df338c7baa891a92af252c39f933cd96a62105001a768",
+    "top.png": "697128f0d253dbe147fb9ffb62743627cf98058c682ecc4903291175ad42222e",
+    "entry-detail.png": "76bb2695da1697f116602fe9e64ca7a7e2d2bbc9b486ab892c12e6a04f8f9c50",
+    "facade-detail.png": "8dd72a74406adc524f052ad545bf18af8b913441191b510eed8e9f8377077100",
+    "roof-detail.png": "fd9244adbf5a1c8d21be66cefa0b7ce0c0695adfaacbf26c4afe2269aa7bd503"
+  },
+  "bound_files_sha256": {
+    "build_model.py": "158ff5a92e1f8b9d1503a6c96a01e19061feb099b5a638f1446ba5b2595d908a",
+    "colorize_model.py": "8551f2e2fab861b9fb2f7c73e11d72594811650381deb35ae773b0db46de4730",
+    "render_color.py": "259d7dda2169782f8d16e5bceca306b957e631a28b5b8c55a8ed0dcaed66b9c9",
+    "export_appearance.py": "a16b4871030a44d2bb5bf4e09ecf0aa650748a455c3c9802eebc53142c96a4ae",
+    "validate_color.py": "6361a7d24e28fb3f5d3292621eda8e6528bd54a55930a364d138d4bd74692db7",
+    "verify_color_scene.py": "399033654ae2ef4ed69f5d202baf41b15389c1fb1acb5ca9145c33d4b47be91c",
+    "README.md": "130727bdd8ad94abb726a59f2992e00d0fd675b8143c109ff8caa32fbe6314f6",
+    "README.zh-TW.md": "130727bdd8ad94abb726a59f2992e00d0fd675b8143c109ff8caa32fbe6314f6",
+    "ORIGINAL-MONOCHROME-README.md": "8259b4cd0ba7078096be88d98d0ccd7ac3660252e67e49c7bc2105c909ce4fd8",
+    "COLOR-SOURCE-REGISTER.json": "c693556dc2ffbbbd152b5f4ebd26530ba83edb6a74509309e44e9c01029b471f",
+    "palette.json": "b94db95037f7a3ddb37d0644a72b223f60e7cfeadd61c7dd7908adeed7fb91b5",
+    "appearance-materials.json": "77df9e2fea6c3d46a84f5d18550669356b455dc992a83df1cc0e5eca553caaaa",
+    "scene.blend": "9581dfd9bda7f32a1929d959cd190a9c191d2f0af08ef102b465904556c57d65",
+    "appearance.3mf": "971a49a30fc3ace117d627845e680e92261f846ebbae2138a56591965a9014ba"
+  },
+  "material_face_counts": {
+    "0": 248,
+    "1": 372,
+    "2": 56,
+    "3": 718
+  },
+  "review_scope": "Independent source-photo, classifier, exact STL/NPZ geometry, material-region and final ten-view inspection; separate builder format/rebuild/scene checks remain distinct evidence.",
+  "delivery_claim": "Not a physical print, slicer-filament validation, restoration color survey, current-condition certification or renewed geometric fidelity endorsement."
+}
