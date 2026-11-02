@@ -1,3 +1,53 @@
+# 國立成功大學｜啟端館：原幾何補彩色
+
+## 彩色模型預覽
+
+**同一項目材色更新（count_delta = 0），只為有證前後面補近似材色；未證頂橫框、屋面與接鄰側面保中性。並非全館精確實景色或2026現況。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西面](west.png) | ![東面](east.png) |
+| ![頂面](top.png) | ![入口](entry-detail.png) | ![背窗與柵](corridor-detail.png) |
+| ![頂框細景](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+保留原 1810 三角面與全部頂點座標、150 × 109 × 115 mm 獨立比例模型；不增窗格、文字、設備或新建築，未借旁邊紅磚系館色彩。本次不修正原粗化幾何。
+
+- 前面外周竪框銀灰、三根柱及既有遮陽板深灰；只把原離散窗凹底標藍灰反射，沒有新增連續玻璃幕牆，窗間實面不冒充玻璃。
+- 既有入口雨庇深藍。最高橫框完整照片未證，整件中性，不由竪框延伸猜色。
+- 後面窄窗牆暖灰；寬窗灰帶僅限原三角面能完整分出的區域，跨界整面保原中性色族，不新增切線；僅既有窗間灰帶，不是照片完整連續銀灰大框。原細柵淺灰白、深凹區為陰影而非全部玻璃；未重現照片精密格柵密度。
+- 接鄰側面、屋面、未證遮蔽區與底座中性；中性不是現場真漆。色票為照片光照下的展示近似，非實測色差標準。
+- 2022-11-09 是啟用新聞日期；2023/2025素材路徑或目錄為上傳線索，均不當確定拍攝日。不主張同一年完整實測外觀。
+
+## 格式、重建與驗證
+
+原 `model.stl`、`build_model.py` 位元組不變；原包沒有 OBJ，不虛稱交付。STL 不含材色。`appearance.3mf` 使用七個基本材質標籤及逐三角指派；`scene.blend` 有實際 shader，`color-mesh.npz` 記錄不變幾何及面材質。七個外觀材質不是已驗證四色／多耗材切片專案；未實際列印，未執行切片器驗證。
+
+```sh
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 3 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+沿原 requirements 安裝 NumPy、trimesh、manifold3d，另使用 Blender 4.3.2。隔離重建目錄保留，不自動刪除。新QA見 `COLOR-FORMAT-GEOMETRY-QA.json`、`SCENE-QA.json`、`DELIVERY-QA.json`、`SOURCE-VISUAL-QA.json`。舊 validation／截面／薄特徵／previews 和 render_preview.py 保留為單色歷程，不當本次彩色重建入口。三張細景刻意局部構圖，七張全景另有完整邊界檢查。
+
+## 公開來源與權利
+
+- [成大啟端館啟用新聞及正面照片](https://web.ncku.edu.tw/p/406-1000-246541,r3374.php?Lang=zh-tw)
+- [成大素材網窄窗立面](https://material.ncku.edu.tw/_data/i/upload/2023/02/23/20230223124720-c597293e-me.jpg)
+- [成大素材網轉角格柵](https://material.ncku.edu.tw/_data/i/upload/2023/02/23/20230223124934-804b899b-me.jpg)
+
+原照與網頁私人保存，原圖不隨模型公開。素材網非商業使用／署名成大素材網要求保留；校方新聞及照片屬校方／原作者，未見通用 CC 再授權。模型與程式公開不等於原照自由授權，不保證商用權利已清。來源紀錄見 COLOR-SOURCE-REGISTER.json。
+
+## 原始模型限制與歷程
+
+以下保留原說明，材色/場景入口以本文新段落優先；舊全單材預覽不是本次彩色成果。
+
 # 國立成功大學｜啟端館
 
 ## 模型預覽
