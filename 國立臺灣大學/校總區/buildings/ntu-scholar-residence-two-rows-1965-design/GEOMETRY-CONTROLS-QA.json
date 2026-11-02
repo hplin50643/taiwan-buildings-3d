@@ -1,0 +1,54 @@
+{
+  "status": "PASS_AUTOMATED_INVENTORY_AND_MESH_NOT_SOURCE_QA",
+  "checks": {
+    "scale_1_200": true,
+    "two_independent_supports_055m": true,
+    "actual_component_extrema_match_print_bbox": true,
+    "base_z_zero_mm": true,
+    "highest765_plus_support055_scaled": true,
+    "mesh_two_closed_components_each_positive_volume": true,
+    "STL_triangle_coordinates_match": true
+  },
+  "mesh_sha256": "5306d6f3b9ed9d91bc91d2d5df67f2518746dd740bd233bb23e0e9b48bafe55f",
+  "input_sha256": {
+    "build_model.py": "7a47da9e997f0b5e719c71abc3b9a4f44dcc75b753e28bb7910a08dc8421ccf1",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "scale": "1:200",
+  "mm_per_source_m": 5.0,
+  "authored_base_m": 0.55,
+  "source_highest_m": 7.65,
+  "two_rows_one_package": true,
+  "expected_print_top_mm": 41.00000000000001,
+  "actual_bounds_mm": [
+    [
+      -93.5,
+      -82.5,
+      0.0
+    ],
+    [
+      93.5,
+      82.5,
+      41.0
+    ]
+  ],
+  "authored_component_expected_bounds_mm": [
+    [
+      -93.50000000000001,
+      -82.5,
+      0.0
+    ],
+    [
+      93.50000000000001,
+      82.5,
+      41.00000000000001
+    ]
+  ],
+  "limitation": "Automated checks are not source/visual PASS. Human review checks paired units and distinct facades, source eaves and openings, independent display supports, yard footprint not historic wall height, source inconsistencies and unprinted limits.",
+  "not_claimed": [
+    "final visual QA",
+    "current survey",
+    "physical print testing",
+    "publication readiness"
+  ]
+}

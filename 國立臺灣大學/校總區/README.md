@@ -1,12 +1,6 @@
 # 國立臺灣大學 校總區
 
-本校 **52 套**，其中校總區 **46 套**；套件數不等於整棟建築數，非全校完成。
-
-[返回臺大總圖鑑](../README.md)
-
-本校區目前46件外觀近似，不代表全部建築完成。既有件獨立150mm；新增校門段154mm展示寬；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
-
-原[README.zh-TW.md](README.zh-TW.md)、batch-validation.json及remaining-queue.json保留為首批5件歷史紀錄；本README.md為46件現行版本的校區入口。
+## 模型圖鑑
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -25,7 +19,16 @@
 | [<img src="buildings/ntu-wancai-main/previews/front.png" alt="萬才館（主棟與前階梯段）" width="220">](buildings/ntu-wancai-main/README.md)<br>[萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/README.md) | [<img src="buildings/ntu-bory-hall/appearance/previews/front.png" alt="博理館" width="220">](buildings/ntu-bory-hall/README.md)<br>[博理館](buildings/ntu-bory-hall/README.md) | [<img src="buildings/ntu-chemical-engineering-entry/previews/front.png" alt="化學工程館正門入口段" width="220">](buildings/ntu-chemical-engineering-entry/README.md)<br>[化學工程館正門入口段](buildings/ntu-chemical-engineering-entry/README.md) |
 | [<img src="buildings/ntu-social-sciences-main/previews/front.png" alt="社會科學院主棟" width="220">](buildings/ntu-social-sciences-main/README.md)<br>[社會科學院主棟](buildings/ntu-social-sciences-main/README.md) | [<img src="buildings/ntu-historic-gate-front-segment/previews/front.png" alt="國立臺灣大學歷史校門：弧形前牆與內側雙行人門段：實際模型預覽" width="220">](buildings/ntu-historic-gate-front-segment/README.md)<br>**[國立臺灣大學歷史校門：弧形前牆與內側雙行人門段](buildings/ntu-historic-gate-front-segment/README.md)** | [<img src="buildings/ntu-fu-bell-pavilion/previews/front.png" alt="國立臺灣大學｜傅鐘鐘亭：實際模型預覽" width="220">](buildings/ntu-fu-bell-pavilion/README.md)<br>**[國立臺灣大學｜傅鐘鐘亭](buildings/ntu-fu-bell-pavilion/README.md)** |
 | [<img src="buildings/ntu-si-nian-memorial-hall/previews/front.png" alt="國立臺灣大學｜傅園斯年堂：實際模型預覽" width="220">](buildings/ntu-si-nian-memorial-hall/README.md)<br>**[國立臺灣大學｜傅園斯年堂](buildings/ntu-si-nian-memorial-hall/README.md)** | [<img src="buildings/ntu-odeum/previews/front.png" alt="國立臺灣大學雅頌坊｜全外觀近似模型：實際模型預覽" width="220">](buildings/ntu-odeum/README.md)<br>**[國立臺灣大學雅頌坊｜全外觀近似模型](buildings/ntu-odeum/README.md)** | [<img src="buildings/ntu-luming-main-historical/previews/front.png" alt="臺大鹿鳴堂主館 — 歷史外觀近似：實際模型預覽" width="220">](buildings/ntu-luming-main-historical/README.md)<br>**[臺大鹿鳴堂主館 — 歷史外觀近似](buildings/ntu-luming-main-historical/README.md)** |
-| [<img src="buildings/ntu-xiaofu-historic/previews/front.png" alt="臺大小福樓：1981–1986 年歷史外觀簡化模型：實際模型預覽" width="220">](buildings/ntu-xiaofu-historic/README.md)<br>**[臺大小福樓：1981–1986 年歷史外觀簡化模型](buildings/ntu-xiaofu-historic/README.md)** |  |  |
+| [<img src="buildings/ntu-xiaofu-historic/previews/front.png" alt="臺大小福樓：1981–1986 年歷史外觀簡化模型：實際模型預覽" width="220">](buildings/ntu-xiaofu-historic/README.md)<br>**[臺大小福樓：1981–1986 年歷史外觀簡化模型](buildings/ntu-xiaofu-historic/README.md)** | [<img src="buildings/ntu-scholar-residence-two-rows-1965-design/preview.png" alt="臺大1965本期兩列住宅歷史設計，展示排列非基地配置，非現況" width="220">](buildings/ntu-scholar-residence-two-rows-1965-design/README.md)<br>**[乙種／回國學人宿舍｜1965本期兩列歷史設計](buildings/ntu-scholar-residence-two-rows-1965-design/README.md)**<br>[STL](buildings/ntu-scholar-residence-two-rows-1965-design/model.stl) · [彩色3MF](buildings/ntu-scholar-residence-two-rows-1965-design/model.3mf) · [Blender](buildings/ntu-scholar-residence-two-rows-1965-design/scene.blend) |  |
+
+本校 **53 套**，其中校總區分類 **47 套**；套件數不等於整棟建築數，非全校完成。
+
+[返回臺大總圖鑑](../README.md)
+
+本目錄目前47件外觀近似，不代表全部建築完成。既有件獨立150mm；新增校門段154mm展示寬；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
+
+原[README.zh-TW.md](README.zh-TW.md)、batch-validation.json及remaining-queue.json保留為首批5件歷史紀錄；本README.md為47件現行版本的校區入口。
+
 
 [六材質外觀與來源界線](buildings/ntu-liberal-arts/appearance/README.md)
 
@@ -44,3 +47,7 @@
 鹿鳴堂主館歷史外觀近似：2001官方規劃足跡與多面歷史照片界定主量體；尺寸皆估計，背面及對側中性化，未確認後方附屬排除。不是完整館群或2026現況測繪，未試印。
 
 小福樓1981–1986歷史外觀近似：1981官方竣工平面與加梯前照片支持三層L型及斜切內角；尺寸皆估計，未知後立面開口未細化，不混入1987後改造。不是2026現況測繪，未試印。
+
+## 本期兩列住宅歷史設計
+
+NCMD130乙種／回國學人宿舍1963–1965歷史工程圖示，本期六戶連與四戶連為同工程一模型包。校總區目錄只作歷史工程分類，不證兩列現址；兩個獨立展示底座及其相對配置不是歷史基地棟距。2014官方僅母案空照存續判讀、未現勘，不能逐棟確認兩列現址，也不混王大閎1970長興街60/62宿舍。主深750cm與側裝飾分格826cm差異、窗表微差保留；屋頂7.05／皮6.70±.10m，通氣管圖量頂7.65m，後院只20cm高足跡示意、不是原牆高。1:200、187×165×41mm，兩水密正體積展示實體，未實際列印；原圖CC BY-NC私存，無商用權利保證。
