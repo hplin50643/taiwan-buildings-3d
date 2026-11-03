@@ -1,0 +1,124 @@
+{
+  "status": "PASS_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE_WITH_DOCUMENTED_LIMITS",
+  "reviewed_utc": "2026-11-02T14:57:00Z",
+  "personally_viewed": [
+    "1948.jpg",
+    "3827.jpg",
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "entry-detail.png",
+    "facade-detail.png",
+    "roof-detail.png"
+  ],
+  "original_STL_sha256": "fbfdb2588ad010d36724ea67d48560a51f941d440e6f84327f973e14e5cff03e",
+  "mesh_sha256": "8039eb08becc1e7337a66e05b49a0d145c75b23e9d274ebeebafa3715db20629",
+  "build_code_sha256": "0607948a8fd88cd8ba861f7d9adbeec9b052666159002ff17fe41a2cf381a9ec",
+  "render_code_sha256": "e683089c99f091234cbea9fed80e272c186cda9f15a0a6cd96d4e62df891c6e3",
+  "readme_sha256": "f238c53b830f07e064f3307c6ee5f07327b85b2538bd7448d0a657828733f304",
+  "bound_files_sha256": {
+    "build_model.py": "0607948a8fd88cd8ba861f7d9adbeec9b052666159002ff17fe41a2cf381a9ec",
+    "colorize_model.py": "7dd563d9ef9ebbf1284954126fbbb4c3e4dfaa3c48550361c4b414b2a89d1052",
+    "render_color.py": "e683089c99f091234cbea9fed80e272c186cda9f15a0a6cd96d4e62df891c6e3",
+    "export_appearance.py": "42e69fe43c82f4da1ea6d0bd01c1f98316ac92a5636280542c62807c6434ab32",
+    "validate_color.py": "69197822168b0d28a6e6022b37d96190c9fed8dc6003c353dbb385f5246658bf",
+    "verify_color_scene.py": "e712887517d28930f9904a6ce31ed36be59b8cec22583720237e9e627186c7b2",
+    "README.md": "f238c53b830f07e064f3307c6ee5f07327b85b2538bd7448d0a657828733f304",
+    "ORIGINAL-MONOCHROME-README.md": "0c88831a73e7e829d5128f179f8703ac84acb3ebf69905036c9108fb4964b068",
+    "COLOR-SOURCE-REGISTER.json": "6f431dc8fd825e38d0866f40340a85a30f416e6cd3ad0a067b84cbdc4eba714a",
+    "palette.json": "e1182210e79faae056a0366802e8850453eb9797104335380fd7f1a0d6c70819",
+    "appearance-materials.json": "a4d012d18890e5c3075ce335aa5ca38af4ef91259f0fa3d742fa09fe2879d4bf",
+    "scene.blend": "f1803f691d6474ab67987eee3e4ad71e706bd5c56f4c16b0b38a1cbd61fce3b6",
+    "appearance.3mf": "722aeb31f4418dbbf3a49adeb111bde1d2f632b2767649438e1c32099733018d"
+  },
+  "png_sha256": {
+    "preview.png": "1692eccaaa62205c500e4b0c32d611b61fc6e30e0aea69e7c99d19c0d002e164",
+    "rear.png": "a68b182c61d62e29ba282ad3770431fd5f9d5bcb8b243d291f714d894747bb48",
+    "front.png": "33a7c3d724c9081b76b35474a9e289459e9572b7e5c583ae80d32406dc578322",
+    "back.png": "9bec94461a16b77c37219eae0d2cb36534a2878fbdc53b13b8a04b3c3b6ece70",
+    "west.png": "7e0900a332c4a6024f112ceb172bac4d090e8aa94a11af03fba0c28dddc28935",
+    "east.png": "b89896795480e66891a77e697e91f6adfad8011b083acd24c876e864b462ee9c",
+    "top.png": "cbf1ab8d59da968f8ed521b97157f8be81304c9307bad5ff31d2b0f56ef9d211",
+    "entry-detail.png": "0a846e45d62e2fbe4f13f0e0298c63b629fc7588e26527dc48c9f65b2e580182",
+    "facade-detail.png": "5c9b01313f3660d187ee91ecefeea868981d1304a9378838607b0ee72c7cdbb5",
+    "roof-detail.png": "4f3fc0fa166a92fe65353686de7020cdb4e948e2002c3fdd844e13fb9ac7ab71"
+  },
+  "source_hashes": {
+    "1948.jpg": "abe07e6e3a38736becc9206e69ef8ab50acaea1bc73f80e69efe2bdef1209b38",
+    "3827.jpg": "43966abd403c6038e6cb6e20d3529368b14b0630424b9a78c5b842adaa118421",
+    "INFORMATION_BUILDING-INDEPENDENT-FACE-COLOR-REVIEW-1444.json": "46b3f25119decea7d5e6a3f73f86f069ec2d86b395252719fe1e22424b5d3c67"
+  },
+  "geometry": {
+    "triangles": 2452,
+    "vertices_exact": true,
+    "faces_exact": true,
+    "STL_bytes_exact": true,
+    "build_bytes_exact": true
+  },
+  "material_counts": {
+    "0": 100,
+    "1": 1556,
+    "2": 14,
+    "3": 242,
+    "4": 540
+  },
+  "independent_numeric_regions": {
+    "front_main": {
+      "face_count": 674,
+      "material_counts": {
+        "1": 674
+      }
+    },
+    "left_brick": {
+      "face_count": 44,
+      "material_counts": {
+        "0": 44
+      }
+    },
+    "right_unknown": {
+      "face_count": 44,
+      "material_counts": {
+        "4": 44
+      }
+    },
+    "rear_unknown": {
+      "face_count": 2,
+      "material_counts": {
+        "4": 2
+      }
+    },
+    "entry_approach": {
+      "face_count": 349,
+      "material_counts": {
+        "4": 349
+      }
+    },
+    "roof_horizontal": {
+      "face_count": 12,
+      "material_counts": {
+        "4": 12
+      }
+    }
+  },
+  "visual_findings": [
+    "All ten final images personally inspected; no artificial diagonal paint patches or inconsistent planes identified.",
+    "1948 photographed brick short end correctly maps x=-46, not the unobserved opposite side.",
+    "Front gray grid and dark top-frame front remain distinct; discrete recess backing is generic shade, not a new continuous curtain wall.",
+    "Original canopy/round landing/stair/entry post neutral, with no neighboring ramp or bridge color borrowed.",
+    "Opposite side, back, horizontal roof and top-frame unseen faces remain neutral.",
+    "Seven whole-model views complete; three detail views intentionally cropped; captions legible."
+  ],
+  "limitations": [
+    "Original 2452-face simplified architecture is preserved, not revalidated as exact geometry/current condition.",
+    "No new facets, mullions, signs or textures.",
+    "2018/2026 source upload dates not verified capture dates; dusk illumination not calibrated material color.",
+    "Five material labels are not a verified multi-filament slicer project or test print.",
+    "Original source images remain private, rights and attribution preserved; no commercial-rights guarantee."
+  ],
+  "documentation": "Latest README and retained monochrome history reviewed; source scope consistent with bounded applied colors.",
+  "review_scope": "Independent source/color/code/exact geometry/visual review; separate builder format, isolated rebuild and scene reopening evidence remain distinct."
+}
