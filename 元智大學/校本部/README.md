@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 五館西南主要面<br>[![西南面](buildings/yzu-building5-library-extension/previews/front.png)](buildings/yzu-building5-library-extension/README.md) | [![六館行政教學大樓：實際模型預覽](buildings/yzu-building6/previews/front.png)](buildings/yzu-building6/README.md)<br>**[六館行政教學大樓｜2016–2018歷史外觀近似版](buildings/yzu-building6/README.md)** |  |
+| 五館西南主要面<br>[![西南面](buildings/yzu-building5-library-extension/preview.png)](buildings/yzu-building5-library-extension/README.md)<br>[局部材色3MF](buildings/yzu-building5-library-extension/appearance.3mf) · [範圍與限制](buildings/yzu-building5-library-extension/README.md) | [![六館行政教學大樓：實際模型預覽](buildings/yzu-building6/previews/front.png)](buildings/yzu-building6/README.md)<br>**[六館行政教學大樓｜2016–2018歷史外觀近似版](buildings/yzu-building6/README.md)** |  |
 
 ## 五館既有範圍與警示
 

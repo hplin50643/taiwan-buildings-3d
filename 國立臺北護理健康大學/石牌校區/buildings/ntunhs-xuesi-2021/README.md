@@ -1,50 +1,32 @@
-# 學思樓｜2021完工外觀來源限定近似
+# 北護學思樓2021｜北四排外框前面局部灰
 
-## 模型預覽
+**既有四材展示非實景全色；其餘未知域尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅北四排外框完整18三角名義中深灰，其他18152面中性。保留原22柱/890跨層角損有限例外，非新列印合格背書。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 北長面，實際STL<br>![北面](previews/front.png) | 南長面，實際STL<br>![南面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![完整北四排外框](entry-detail.png)|![西框union](facade-detail.png)|
+|![東框union](roof-detail.png)|||
 
-國立臺北護理健康大學・石牌校區。本件以2021施工方完工照片、校方7–10F平面及NLSC航照建立完整主體外觀近似；不是測繪、同年現況或全校完成。既有城區校區1965文教大樓是另一件建物，本件不增加學校覆蓋數。
+## 材色範圍
+同 ntunhs-xuesi-2021 原項目，國立臺北護理健康大學石牌校區學思樓，same-item、count_delta=0。原18170三角/STL/build_model.py及30原件字節不變，immutable無OBJ。北向原模型+Y；預覽朝北，未依疑鏡像空拍重新定方位。
+完整y=33.65外框plane恰18三角，四原矩形union成單共享邊連通域：兩豎x=-67/28.5,w1.8,z34..64.4及兩橫x=-19.2,w97,z34..35.5/63.3..64.8。全3頂點有限矩形聯集等於wholeplane，不人工切色。下方白柱y33.6不在域，不混染。
+其餘18152面中性：框側後返、窗背/實板、南向不同柱橫帶、混灰白logo側牆、屋頂太陽能/設備、天井、地面柱/雨棚全不擴。
 
+## 四材展示轉換
+原scene四個neutral/depth/frame閱讀展示材不是原單色或已認證實景全色。新來源限定版本只18面；原scene/README公開另存 ORIGINAL-SOURCE-GAP-scene.blend／ORIGINAL-SOURCE-GAP-README.md，原render_preview.py/previews及所有原QA原bytes保留，舊深凹不解讀成黑玻璃。新色QA不追認原幾何/全模型列印品質。
 
-[STL](model.stl) · [可編輯Blender網格](scene.blend) · [參數來源](build_model.py) · [北立面](previews/elevation.png) · [南立面](previews/rear-elevation.png) · [西端](previews/west.png) · [東端](previews/east.png) · [俯視](previews/top.png)
+## 必留原幾何及列印限制
+原22根地面方柱對應890個跨層警告樣本，不是890根柱。最大角損約2.0436738%、保留97.9563262%；角損在0.41mm角鄰域，原局部法向射線最小2.5999984mm、角外殘差等全部保留原報告。這是具體位置有限例外，非全域最薄壁/零警告/工具路徑或實體試印合格。沒有修補幾何、沒有重簽原全部QA；支撐/縮放/切片仍需獨立評估。
+施工履歷49.9m屬整案且未分學思與爾雅，不作本棟精確標高。2022疑鏡像航照不定東西；模型原有界比例、低層平面未全得與不同期來源限制照留。原主體11F+B2，地下不重建；含底150×78×90.5mm是示意非精測。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 北立面<br>![北立面](previews/elevation.png) | 南立面<br>![南立面](previews/rear-elevation.png) | 西端<br>![西端](previews/west.png) |
-| 東端<br>![東端](previews/east.png) | 俯視<br>![俯視](previews/top.png) |  |
+## 來源與日期
+親看履歷PDF54下完工照、58上北向日照、59上日照；54上施工網及59下夜色排除，58下僅對位。2021承包商發表背景非逐張capture，2024archive是存檔時間非拍攝，不稱2026現況。原PDF/照片私存不公開不貼紋理、不建人，未確認CC/商用授權。
 
-## 幾何範圍
+## 格式與本次QA
+[原STL](model.stl) · [新逐面3MF](appearance.3mf) · [新Blender](scene.blend)
+物件 NTUNHS Xuesi 2021 partial color；STL無色，3MF/scene非四色耗材切片/試印認證。原build_model.py→colorize_model.py→export_appearance.py→validate_color.py，render_color.py/verify_color_scene.py。隔離Shapely2.1.2原build+color精確重建/原bytes/全三角multiset/材域共面/3MF/scene重開/十圖1200×900/hash只驗本輪未改幾何及材色交付，不替代原有限例外或全域列印測試。
 
-- 保留兩長向翼、偏東矩形露天天井、3F頂／4F地坪以下實體裙部、兩端向外開放凹槽、回縮地面與柱廊、西端較高會議廳頂、兩處屋頂設備房及簡化太陽能面。
-- 天井不是穿地洞。原STL垂直射線量得洞底z=27.2mm；井內淨寬31.5×16.4mm。設計剖解和實景支持洞底在3F頂，未取得標高工程剖面。
-- 北面有四排小窗的獨立寬外框、上方長窗帶及兩排辦公窗；西側跨兩層的大格柵另處理。南面保留寬跨教室玻璃、大柱網及東側垂直交通帶，不鏡射北面。
-- 端部格柵以帶凹紋的融合背板近似，背後凹槽仍連通下方空間；沒有封閉內腔殼。細金屬件、窗扇、室內小房間、機械設備未逐件重建。
-- 凹面與框的預覽材質只協助閱讀，同一份STL的三角面沒有加代理幾何；列印仍為單一實體。
-
-## 尺度與不確定性
-
-毫米，含底座 **150×78×90.5mm**，底座朝下。選用主體76×36m的有界工作比例（約1:556），不是實測；公開OSM與航照支持約74–80×35–40m外包範圍，牆基與高屋面投影不可混為同一多邊形。
-
-主屋面z=86.2mm，西會議頂z=89mm，設備頂90.5mm；扣底座後對應約46.2／47.8／48.6m的影像比例工作值。施工履歷49.9m是**整案表列總高，未分學思樓與爾雅樓**，不能稱本件已取得精確49.9m標高。11F+B2有校方及履歷支持，但不是以11個等高方盒相加。地下室不重建。
-
-校方2022新聞空拍有左右反轉疑點，不用它決定東西。位置以NLSC、完整平面與施工履歷多角度一致關係控制。不同年代來源不代表2026實測；1–6F未取得逐層完整平面，低層外形依完工照片及設計剖解近似。
-
-## 局部數位篩檢與列印警示
-
-- 原STL每0.2mm逐層輪廓及各原Polygon分別作0.8mm erosion/opening，零消失、零分裂。每構件損失另外保存，不以整層平均遮掩局部問題。
-- **22根地面方柱、890個跨層樣本**有超過1%的角損，不是890根柱。最差約2.0436738%，保留約97.9563262%；損失全部位於矩形四角0.41mm鄰域。逐樣本原STL X/Y法向寬皆至少約2.599998mm，向下連底座、向上連主體；詳[逐構件位置](feature-loss-locations.json)及[原面射線](architectural-ray-check.json)。這是經獨立原STL尺寸、根接及逐構件重現核可的具體角損例外，不稱零警告或全域最小壁厚合格。
-- 端部格柵實際凹槽與背板法向≥1.2mm；南北窗凹深約0.5mm，窄框與背牆融合。真空間、凹深與根接均有原STL射線檢查，不只依預覽顏色。
-- 柱廊、入口檐、端槽上方跨接及屋頂挑緣可能需要支撐。0.2mm數位截面不是Cura／Prusa工具路徑、全方向壁厚或實體試印保證。
-
-## 重建、來源與QA
-
-Python依[requirements.txt](requirements.txt)；Blender 4.3.2。先執行build_model.py，再以Blender執行render_preview.py，最後執行run_all_checks.py。驗證器不以repair修補不合法輸入。
-
-[來源](sources.json) · [原STL拓樸／重建／Blend／PNG](validation.json) · [逐層輪廓](layer-opening-check.json) · [各原Polygon](layer-component-check.json) · [canonical v3](thin-feature-check.json) · [各構件損失](feature-loss-locations.json) · [空間與根接射線](architectural-ray-check.json) · [總QA](qa-summary.json) · [渲染manifest](render-manifest.json) · [SHA256](SHA256SUMS)
-
-原始照片/PDF僅作來源核對，不在公開包重新散布。本件已完成獨立數位審核；遠端發布由專責流程處理。
-
-獨立補充：453層1441原Polygon均無侵蝕／opening消失或分裂。890個警告截面樣本對應22根方柱，損失位於各矩形四角0.41mm鄰域（鄰域外數值殘差最高1.9762×10⁻¹⁶mm²，低於1×10⁻¹²mm²比較容差）；實際原三角面法線射線最小量得2.5999984mm，各樣本X/Y寬與上下根連接重現通過。此局部量測不是全模型最小壁厚，保留原完整形態損失分數；不得任意縮小，支撐與拆除方式仍須切片評估，尚未實體試印。
+## English scope
+Partial source-gap variant,not monochrome discovery:18 complete north outer-frame front triangles medium gray;18152 neutral. Original18170 triangles/30files unchanged,no originalOBJ. Four old display materials and scene/renderer/QA preserved. 22columns/890cross-layer corner-loss samples,max2.0436738percent is a retained finite local exception,not global minimum-wall or printability certification.49.9m project total not building-specific;2022mirror-suspect aerial not orientation evidence.2021publication/2024archive not verified capture or2026. Sameitem/count0,no geometry repair or physical print.

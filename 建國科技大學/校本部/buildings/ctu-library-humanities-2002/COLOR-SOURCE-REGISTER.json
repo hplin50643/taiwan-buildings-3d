@@ -1,0 +1,53 @@
+{
+  "slug": "ctu-library-humanities-2002",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "CTU-LIBRARY-HUMANITIES-COLOR-SOURCE-GO-0850.json",
+    "sha256": "593b9f71b7fbd1bab2dd2ad9b00eef3f402819dbd33988c8abb7bb6fe543b8a1"
+  },
+  "review": {
+    "file": "INDEPENDENT-MAPPING-0849.json",
+    "sha256": "27391d34d051d805eb60f2349acb3db6401bceb4123de97c2bec7deaaf28c5d8"
+  },
+  "source_records": [
+    {
+      "file": "official-entry.jpg",
+      "sha256": "00e51aa26c11b01f3d52e7fb9c8b1894537377dbe38005fabb8b13840574416b",
+      "url": "https://www.ctu.edu.tw/var/file/0/1000/img/1387/523803785.jpg"
+    },
+    {
+      "file": "aerial-reverse.jpg",
+      "sha256": "243d3c7ff392a58e7bf4d502d8c1e43efeea922eb4c054e8276428fae7a40aff",
+      "url": "https://vivaxan.com.vn/wp-content/uploads/2025/04/truong-dai-hoc-cong-nghe-kien-quoc-04.jpg"
+    },
+    {
+      "file": "aerial-front.png",
+      "sha256": "2f239ef59a3a8616469b279dfeb1d2a2c7dd9d2213358d6f8e305a296df246f2",
+      "url": "https://qtedu.vn/wp-content/uploads/2023/12/screenshot_1702008470.png"
+    }
+  ],
+  "limits": [
+    "Remaining column shaft sides/rears, bases and capitals, no copying around cylinder.",
+    "Arch, entrance lintel and gable have dark trim/pale stone/lettering or emblem boundaries absent from original mesh; retain neutral.",
+    "Glazing contains frames/reflections; no blanket blue or black.",
+    "Whole exterior walls, terraces, tower roof, lanterns and central crown not additionally color-mapped here. Unknown rear surfaces remain neutral."
+  ],
+  "original_qa_history": {
+    "must_preserve_original_files_unchanged": true,
+    "not_an_all_geometry_pass": true,
+    "independent_review_md_sha256": "7fb52befbbebce80aca839d45ff726da3174c7d414f5c639eed747502f26f2bd",
+    "independent_review_json_sha256": "3c73090125dfa0a098d8f4fa6fe84da40bce1e19b56f3b5220f29ac408f9adc6",
+    "strict_false_results_preserved": [
+      "Original component/surface false values are retained, not converted to PASS by source review.",
+      "Four crown feet downward-control length only 1.4874984741mm, not required1.75; actual side connection is distinct evidence.",
+      "Original83 short first chords and independent215 short first chords remain. Twenty-four0.7424642782mm first chords followed by real0.0048272640mm air gap cannot be recast continuous roots.",
+      "328 cross-layer high-loss samples are section counts, not328 structures. Limited rooted exceptions do not establish global minimum thickness.",
+      "Flattened corner lantern tips/crown sphere/gable print approximations and no physical print limitations remain."
+    ]
+  },
+  "issuance_clarification": "Formal source-color-only approval. Original geometry and finite exceptions remain unchanged, not all globalQA pass. Preserve originalstrict component/surface false, crownfoot downward1.4874984741 failure and all accepted limited-root evidence/shortchord warnings. No new slicer/physicalprint endorsement.",
+  "rights": "Private references only; no source photographs or textures published."
+}

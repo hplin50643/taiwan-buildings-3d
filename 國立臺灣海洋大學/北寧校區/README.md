@@ -8,7 +8,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 同件正面<br>![正面](buildings/ntou-gymnasium/previews/front.png) |  |  |
+| 同件正面<br>![正面](buildings/ntou-gymnasium/preview.png)<br>[局部材色3MF](buildings/ntou-gymnasium/appearance.3mf) · [範圍與限制](buildings/ntou-gymnasium/README.md) · [校驗版本說明](buildings/ntou-gymnasium/CHECKSUM-SCOPE.md) · [原件交付範圍補充](buildings/ntou-gymnasium/ORIGINAL-FILE-DELIVERY-SCOPE.md) |  |  |
 
 2026-10-15來源補證修版，件數不增加；獨立覆核已完成，限定警示及原嚴格失敗保留，請讀[模型QA](buildings/ntou-gymnasium/QA.md)。
 

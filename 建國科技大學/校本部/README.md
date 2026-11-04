@@ -6,7 +6,7 @@
 
 | 模型 | 模型 | 模型 |
 |---|---|---|
-| [![圖書人文研發大樓（2002）：實際模型預覽](buildings/ctu-library-humanities-2002/previews/front.png)](buildings/ctu-library-humanities-2002/README.md)<br>**[圖書人文研發大樓（2002）](buildings/ctu-library-humanities-2002/README.md)** | [![綠崗亭：實際模型預覽](buildings/ctu-lugang-pavilion/previews/front.png)](buildings/ctu-lugang-pavilion/README.md)<br>**[綠崗亭](buildings/ctu-lugang-pavilion/README.md)** | |
+| [![圖書人文研發大樓（2002）：實際模型預覽](buildings/ctu-library-humanities-2002/preview.png)](buildings/ctu-library-humanities-2002/README.md)<br>**[圖書人文研發大樓（2002）](buildings/ctu-library-humanities-2002/README.md)**<br>[局部材色3MF](buildings/ctu-library-humanities-2002/appearance.3mf) · [範圍與限制](buildings/ctu-library-humanities-2002/README.md) | [![綠崗亭：實際模型預覽](buildings/ctu-lugang-pavilion/previews/front.png)](buildings/ctu-lugang-pavilion/README.md)<br>**[綠崗亭](buildings/ctu-lugang-pavilion/README.md)** | |
 
 ## 綠崗亭範圍
 

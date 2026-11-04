@@ -1,0 +1,65 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed three architect photographs, original code/preview and all ten final renders; parent separately reviews before freeze. Color format and unchanged-geometry identity, not original printability recertification.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole y=-56plane4 yields two complete2triangle components, selected highest x-46.5..64.5,z53..54.599998 only.2nominalgray12262neutral.",
+    "All2993coplanar components uniform; lowerfascia32.3..33.8 remainsneutral, no cropping or fill.",
+    "Duskfront plus daylightobliques support nominalgray family only, not pinklighting. Orangeaccents/mixedwalls,glassframes/reflections,railingproxies,foldedscreenyellow,roofupper/under/side/court neutral.",
+    "Seven wholeviews fit. Threecloseups show the entire higheststreet fascia and bothwhole ends without extending gray to its top/side/under.",
+    "Original12264triangles and20immutablefiles unchanged. No originalOBJ despite originalcode exporting one. Originalscene/render/README aliases retained byte-identical.",
+    "Original pairedwings/court/terraces are one group,countdelta0. Approximatebridge/depth,thickenedflattips,railingproxies and incompletecourtsources remain.",
+    "Original317sections and canonicalthin v2 max0.311%openingloss are not globalminimumwall/physicalprint certification.",
+    "Project2020 and2025mediapaths not verified imagecapture dates, no2026claim. No publicsourceimages.",
+    "Actual3MF/scene/fourscripts NYCU Chihyuan Co-Innovation partial color identity/RGB/BSDF verified."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "c6e7f4a01e833f60ffc8d0a7f6342f1dea38c10918ba3951322c61033817707d",
+    "README.zh-TW.md": "c6e7f4a01e833f60ffc8d0a7f6342f1dea38c10918ba3951322c61033817707d",
+    "colorize_model.py": "54af44f8a93d4cbc944b574e110e05f3833dc42e5ea8eb1e5e6bd8eaa68b8f93",
+    "render_color.py": "e0ac7d8c9db19a6b26cf4ac4868b54073938330e6ec72aa00b84866a13899080",
+    "color-mesh.npz": "3e87537ea5e0eb1ba05d7e8799fe7b9d5397e06e0e455aec112f30d3f8ee3832",
+    "palette.json": "daa0be5b4d35ba14ed8a14ce2219a2ff8bac6dd00b3fd9435adb351d46498444",
+    "appearance-materials.json": "b4a46d119664731dbda33355e126befedc24af65b571c2385c15d13086ee58dc",
+    "COLOR-SOURCE-REGISTER.json": "d6c831b951a78213bf89535d1841fce0cd7b9a2bdf7017dfac18fdd12e862fea",
+    "model.stl": "68f9820b1aefd7a1cd90439c341ad73d366cc02e3bffc51ebb2bbc15adae6ef2",
+    "build_model.py": "4225689c2034bfc5691366f2230ceee27936a0d3c86d4f338e340de8be2c715e",
+    "PREVIEW-TRANSITION.md": "1d63c261381e398ce0def82665c499795382464e5d284067f04925ed4820caa1",
+    "preview.png": "be90ecbbc0e3077cd65cb271a7d33ef5987c74f2fa0a429a43faf3a3af114d13",
+    "rear.png": "a2846ca4b63ed874dbd400131fac0e3256c0c1a2fd8ef8422c030c8b5c26c453",
+    "front.png": "28253c18b87034a9af643c5b3e30074bb888281e4caa1a67ecbfb4788cfb6da1",
+    "back.png": "134bf9060354f9949a65dc8df62bbb22a1dbac24478886a9ceb004bdca258f6e",
+    "west.png": "6f788b94a6d59b3f2992d0cde27d68c65dc843fbd728441e793f7dc3e54a2c31",
+    "east.png": "9b334f4be013773786bf4a0dcdf5b9e7c0ac17c8617589ea9a573949489891e6",
+    "top.png": "38821c6c510d83211aaa34dd643c21e29caf885de5ad26dfa2560514dda87e6b",
+    "entry-detail.png": "04c1277b15db3c2fe0e743f5e0991d69f618a7405f62a437ba32838f3208d63a",
+    "facade-detail.png": "8c61e9b7ef284adb8edf800691c6cac72931fb7272604659f8d0364ddf05a518",
+    "roof-detail.png": "4197e72fe6ccbc120d5bf3810cdd5c1ffeb2099e9ff182a7a8e1e2ce882901ba"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "8300f556e2f47db677fcf9146d097b73851345bb80a3cf7b6e168f2a950cbb3b",
+    "SCENE-QA.json": "633d496ceaad37126355aa47e9a856fe28bfbe155452ee972a152f5c49156bf5",
+    "DELIVERY-QA.json": "46622607a97288ce2bd6c189bfe38706c0f576184d47c63c4a0b911d9f6129f6"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "3c730ad0b96abea3ab450c56ac7d251451310cfa5e1cd2d49f38759fb6d23c41",
+    "ORIGINAL-RETENTION-QA.json": "3f81da4c905bc17882105375293141df4692bde70270b69f57a21db9ca363ff4",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0919.json": "a5d37d1f9550a3f6fffe5162b1821c48256baa4fa37cf574b9a6254367f5274c",
+    "INDEPENDENT-IDENTITY-0919.json": "9f7c2ca02d3fcf7ec91a0aa2f9e4f91a79b937f71d7af5abce420e2be56e6887",
+    "INDEPENDENT-PACKAGE-IDENTITY-0922.json": "e4c6ff7bb5d3d429503b2f43a24f502c617da6463078483356c26eb152d401e8"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T09:22:25Z",
+  "parent_review": "Parent personally viewed threearchitectphotos/code0917, preview0919, finalten0922. Originalhigheststreetcapadd9,-43,53,111,26,1.6 yieldswhole y-56fourtriangles in two complete2trianglecomponents; fullupper2 only equals NPZpalegray, lower2 neutral. Other12262unknownneutral includingroofupper/sidefascia/mixedwalls/yellowaccents/glass/railingproxy. No dusk pink sampling. Original12264triangles20files/noOBJ byteexact,2993coplanardomainsuniform. Sevenwholeviews plus fullupperfascia andbothenddetails show fulloriginaldomain with no extra color orgeometry. Actual NYCU Chihyuan Co-Innovation scene/3MF/fourscripts/paletteRGB identityPASS, project2020/media2025 notverifiedcapture/current2026. Partial,countdelta0,physicalprintunvalidated."
+}
