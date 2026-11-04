@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![實際STL](柳川校屬館舍/buildings/ntcu-lin-atelier-courtyard-section/previews/front.png)](柳川校屬館舍/buildings/ntcu-lin-atelier-courtyard-section/README.md)<br>**[林之助紀念館画室庭院側立面段](柳川校屬館舍/buildings/ntcu-lin-atelier-courtyard-section/README.md)** | [![實際STL](民生校區/buildings/ntcu-administration-central-section/previews/front.png)](民生校區/buildings/ntcu-administration-central-section/README.md)<br>**[行政樓中央入口段](民生校區/buildings/ntcu-administration-central-section/README.md)** | [![實際STL](民生校區/buildings/ntcu-zhongzheng-entrance-section/previews/front.png)](民生校區/buildings/ntcu-zhongzheng-entrance-section/README.md)<br>**[中正樓入口段](民生校區/buildings/ntcu-zhongzheng-entrance-section/README.md)** |
+| [![實際STL](柳川校屬館舍/buildings/ntcu-lin-atelier-courtyard-section/previews/front.png)](柳川校屬館舍/buildings/ntcu-lin-atelier-courtyard-section/README.md)<br>**[林之助紀念館画室庭院側立面段](柳川校屬館舍/buildings/ntcu-lin-atelier-courtyard-section/README.md)** | [![實際STL](民生校區/buildings/ntcu-administration-central-section/preview.png)](民生校區/buildings/ntcu-administration-central-section/README.md)<br>**[行政樓中央入口段](民生校區/buildings/ntcu-administration-central-section/README.md)**<br>[局部材色3MF](民生校區/buildings/ntcu-administration-central-section/appearance.3mf) · [範圍與限制](民生校區/buildings/ntcu-administration-central-section/README.md) | [![實際STL](民生校區/buildings/ntcu-zhongzheng-entrance-section/previews/front.png)](民生校區/buildings/ntcu-zhongzheng-entrance-section/README.md)<br>**[中正樓入口段](民生校區/buildings/ntcu-zhongzheng-entrance-section/README.md)** |
 
 [民生校區](民生校區/README.md) · [柳川校屬館舍](柳川校屬館舍/README.md) · [全校續作清單](INVENTORY.md)
 

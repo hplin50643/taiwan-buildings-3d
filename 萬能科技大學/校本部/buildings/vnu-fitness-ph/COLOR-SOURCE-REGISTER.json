@@ -1,0 +1,31 @@
+{
+  "slug": "vnu-fitness-ph",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "VNU-FITNESS-PH-COLOR-SOURCE-GO-0535.json",
+    "sha256": "c1369c577e1171694268f158e2cb99ab5e3ebf01e3504abd796136be1aedf734"
+  },
+  "review": {
+    "file": "INDEPENDENT-MAPPING-0535.json",
+    "sha256": "a422d02d7488089867c69577b69836d6aa99b7a414651723645355d2195ecb95"
+  },
+  "source_images": [
+    {
+      "file": "official-map36.png",
+      "sha256": "8edb050fd41604de227cf307f84b078447d8362f28fbe2f4ab681a096be4fbeb"
+    }
+  ],
+  "limits": [
+    "Left and right diagonal roof slopes and all rear slopes remain neutral, not copied by symmetry.",
+    "Central flat truncated top, roof underside and thin edge faces remain neutral.",
+    "Main wall carries dark Chinese/English lettering and windows/frames; no uniform wall coloring.",
+    "Door, glass backing, side openings, rear wall and ground remain neutral.",
+    "Preserve340 original faces and octagonal truncated-hip approximation; no changes to slope, geometry, roof partitions or openings.",
+    "Original190x143 image establishes nominal pale family only; no calibrated finish or2026 condition claim."
+  ],
+  "rights": "Private references only; no public images/textures or commercial-rights inference.",
+  "source_private_backup": "Sources separately privately retained."
+}

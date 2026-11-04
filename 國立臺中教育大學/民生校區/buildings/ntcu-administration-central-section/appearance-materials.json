@@ -1,0 +1,37 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "NTCU Administration Central Section gable coping stone gray",
+      "hex": "#B5B2A7",
+      "faces": 4
+    },
+    {
+      "id": 1,
+      "name": "NTCU Administration Central Section unverified walls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 7132
+    }
+  ],
+  "domains": {
+    "whole_sloped_gable_coping_component": 4,
+    "per_rectangle": [
+      4
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 1472
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "7136 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "4 complete original sloped gable coping front triangles stone gray.",
+    "Whole y-25 plane has10 triangles, BFS6 model support neutral plus4 complete coping approved.",
+    "Finite original two-arm profile all3vertices; no rectangular color clipping.",
+    "72-face connected arch trim and mixed jambs, lettering, windows and walls remain neutral.",
+    "Flat upper and rear cuts are not actual roofs; remain neutral.",
+    "Central entrance section only not entire U-shaped building;capture unknown.",
+    "Original model.obj verified present and preserved unchanged; not newly generated.",
+    "Two labels not verified filament slicing."
+  ]
+}

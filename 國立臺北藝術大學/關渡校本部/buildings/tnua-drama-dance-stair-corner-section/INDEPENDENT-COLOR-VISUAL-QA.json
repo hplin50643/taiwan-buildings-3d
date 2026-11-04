@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete-model views and three intentional tower-cap closeups.",
+    "Only complete front and right cap outer vertical edges light stone gray; top skin, underside, tower and glazing remain neutral.",
+    "Original outer corner section and cut wings retained, not whole teaching complex or sculpture."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 3196,
+  "material_face_counts": [
+    4,
+    3192
+  ],
+  "connected_coplanar_domains": 631,
+  "original_obj_present": false,
+  "original_files_retained": 22,
+  "file_sha256": {
+    "README.md": "1aba22371a94de16e35b6b9088b90c7e3deb2f2069dc2d5a440abef2a1d142dd",
+    "README.zh-TW.md": "1aba22371a94de16e35b6b9088b90c7e3deb2f2069dc2d5a440abef2a1d142dd",
+    "model.stl": "2553c19571f53b70a8fd1c82736caa54002bd5dcc9cc03e2584bc714c09918d5",
+    "build_model.py": "f10f4e11345821a8f516d6b391e0421d4ef42a64335068c5eae6c3b566d0f466",
+    "colorize_model.py": "8709f23d98413590d25f2e10297db55a4adae9d8c9266a82c01858daf12d0708",
+    "render_color.py": "6811d7a9b83c1717e927948f107c8ac4943f1eb74f415c95f71726f8306ee38f",
+    "verify_color_scene.py": "fafa5618527f427ee3409aaaf3ae9076b49514d95192161b2e4311fd2e661ee9",
+    "validate_color.py": "eaa84a9ac361299ce8b60b2a6dfd7ab7e1e93e8b4259123392423897e24bccbc",
+    "color-mesh.npz": "de5d9dc2a7ac2c02da0f5f8b8781dc178a75043d11277b44f0c3fea099ef40e8",
+    "palette.json": "5c308e4d890f677830e243ffbd3d7fc7dbb6dff3d38840f351c78d9cf5e7b4f6",
+    "appearance-materials.json": "4d745f0dbc30837eeda735977296a4f5a0a1dead12721b06351f1905bf6faffe",
+    "COLOR-SOURCE-REGISTER.json": "d7ec46c65e1a505c3b824dbc56f405f38e382162fbfd8d34aad1899e206d7206",
+    "appearance.3mf": "7ae034cd4923ea21e9e49ed537d108e27768f15e5651eb172c08f5b2e68ff234",
+    "scene.blend": "d1a697d1e0ba1d6fe47034d296de903f63606aa5c24ecb5ec67131dc361754a0",
+    "preview.png": "a2f38f5f639b805674356d23806327ff5bb5f74f83ebb8f920375b3517d33f3b",
+    "rear.png": "d01949f7aa6d7c5a048475532361cdd14ce27b214b9a2faf93fb658636d74601",
+    "front.png": "97f81e9226f2727721b556554dfd8069587b2a59c8ecbd8efce0c94d25369b4e",
+    "back.png": "aeee2ee2277e784ccf9c1e609114c75b99685373dfadd0aad4b9f8b3562b5f33",
+    "west.png": "f315963344d8014163aec1486c4649891eebc03d522c09c0e6991e60f1249498",
+    "east.png": "dade1e79498b00d178c2e5fe74d83ffa3418b11b3e175192005ed95d8d674bd5",
+    "top.png": "e1bed9666d949e481e36eab467a1150d3a87a9c227f7ca54d0f61ec94f15b903",
+    "entry-detail.png": "78a23d0f52f5fd783a509e15c48bbf09bf1622effd782b882f927d820c66270d",
+    "facade-detail.png": "0b63551e7d62a94cd1dabe3cd64378f314a6ce07d32d6a3d141d951836452601",
+    "roof-detail.png": "fe4688141232f416562cdfdf12d9aa901f34a3f692bd41560ea6b41944eb8237",
+    "export_appearance.py": "a041165559d1e492166431c2e782ce560fb225e6eb2b1b59f868cfef95d682c4"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "1128ac2994c40a9de5be8309def89730f8d4b605cad71988104e9590727845ee",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "7ee7674faeaaf06126d2ebfcfa03d3348e28230d21033dbb5ee9380ed11d2b21",
+    "SCENE-QA.json": "2d0aa5bd4c0a0cfeef2598eab53eaa76c3accf017c3cae6dac9f1a2fe88766a4",
+    "FRAMING-QA.json": "cd68d69d054fc19e86c72bfb47e9689683a0e5e9774126bccb3c362c373ce36b",
+    "DELIVERY-QA.json": "bee2c3663bae9b8e261cb0e658c3d59502bd950c486d71d6570522200eae2e1b"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "e23881ee36bce124b844fd13e32d18d6063c88249cd628764fbd85611ba832aa",
+    "ORIGINAL-RETENTION-QA.json": "bd1f60130afcb479c2a2159d9b9483a85fc8823efbbf827b6d80d7b492b46170",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "690c7b65f0174a8d48cebc987c581f08fcd8ca59c1e55fc9e64a1360cca5c80d",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "33721111cf6895bcca55183ea5b8e6d63d169f4dc91850173c31331616be0776",
+    "INDEPENDENT-DOMAIN-0604.json": "efa924b1ae8651f7f45d259962a9e300a08d4b29cc75335d6bb50b8bb718cd0a",
+    "INDEPENDENT-IDENTITY-0604.json": "68e34675a5b50ef8371ed20bfa0dc26c8a1b3861c6fe1f773654b00967c186d7",
+    "INDEPENDENT-PACKAGE-IDENTITY-0607.json": "33721111cf6895bcca55183ea5b8e6d63d169f4dc91850173c31331616be0776"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "131a55d670ef7e3954bcbb6c67ad0d72f89b76b71f0e8bb5e89450f25d68c49e"
+  },
+  "limitations": [
+    "Four complete tower cap front/right triangles;3192 neutral.",
+    "Infinite planes equal finite all3vertex rectangles; no discarded fragments.",
+    "Original3196 triangles and22 immutable files,noOBJ retained.",
+    "2016 article and filename do not establish capture;no2026 condition claim.",
+    "Outer stair/glazing corner section only, not whole building/courtyard/sculpture."
+  ],
+  "history": [
+    "Verifier scale property corrected before final reopen to actual original150mm-height."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T06:07:25Z",
+  "parent_review": "Parent personally viewed tour020/021 exterior, originalcode, preview and all10 finalmontage. Whole original towercap y-23.5 and x44.5 each equals original complete2tri rectangle z147.1..150;4 nominal lightstonegray faces. All3192remainingfaces neutral including fullheight graytower/base transitions, brickwalls/glazing, cap top/bottom and cut ends. Explicit TNUA Drama Dance Stair Corner Section identity independently matches actual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details intentionally show front/right cap versus neutral surfaces. Original3196triangles22immutablefiles/noOBJ unchanged, cornersegment not full building/courtyard/sculpture. Filename/publication2016 not exact capture or2026 state; partial only."
+}

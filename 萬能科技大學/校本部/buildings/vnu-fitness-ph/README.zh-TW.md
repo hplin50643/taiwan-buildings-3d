@@ -1,37 +1,28 @@
-# 萬能科技大學體適能中心（PH）
+# 萬能科技大學體適能中心（PH）｜正面主坡屋皮局部淺灰白
 
-## 模型預覽
+**局部補色未完成：只正面主坡完整梯形2原三角淺灰白；左右後坡、頂平面、底面、牆窗與其他材色未完成。** partial_color_incomplete=true、fully_colored_exterior=false。同項 vnu-fitness-ph／count_delta=0，萬能科技大學校本部，英文身份 VNU Fitness PH partial color。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見處簡化）<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![正坡位置](entry-detail.png) | ![完整梯形坡面](facade-detail.png) |
+| ![中性側後坡與頂平](roof-detail.png) | | |
 
-依公开官方外觀實拍的微縮研究，非測繪級BIM，亦非2026即時完整外觀保證。
+## 材色範圍
 
-## 證據及近似
-- 低矮多邊形館體與低坡截頂屋面
-- 中央門、左右分組窗
-- 屋頂低矮輪廓與寬出簷
+原正坡方程13(y+56)−43.68(z−26)=0，法向距離0.0001mm內全部三頂點枚舉恰2面。沿坡u=(y+56)/43.68在0..1、全x界±(42−32.76u)有限梯形與整無限plane一致，共邊兩三角完整覆四角(±42,−56,26)至(±9.24,−12.32,39)，不靠normal/面心/原IDs硬套。不切任意半坡、不丟端角。2面名義淺灰白，338中性，104共面連通域uniform，340原三角不變。
 
-官方現行校圖標體適能健身中心PH；舊校圖圓形只提供大輪廓，八角平面及屋面坡度為視覺近似，不是實測。後面不加猜測窗格。 官方實拍只有190×143像素，沒有放大新增細節；細窗、柱、深度及間距均為視覺近似，不能作精確復原。現行總務處校圖仍標此館，未取得照片拍攝年代。側後遮擋明示簡化。省略招牌文字、空調、植栽、細欄杆。
+190×143官照在正中黑字入口及成組窗上方可見淺色主坡，只支持此原完整前梯形色族。左右斜坡與所有後坡不按對稱複製；中央截平頂、屋底/薄邊/字牆/門窗反光框、側後開口及階地全部中性。中性不是實景灰，資料覆蓋界不是實際材料變色線。
 
-## 比例與重建
-- 含底板尺寸：150.00 × 132.00 × 39.00 mm，單件最長150mm，各件獨立比例。
-- 安裝 requirements.txt；執行 python build_model.py 重建STL，再用 blender -b -t 2 -P render_preview.py 產生可編輯完整網格scene.blend與實際STL圖。
-- 執行 validate_model.py、check_layers.py、check_thin_features.py 複核。
+## 原外觀限制與時期
 
-## 檢查及列印限制
-- 原STL法向/邊與頂點流形、正體積、單一連通外表面、無分離內腔殼、重建SHA與Blend/STL三角幾何一致：全部通過。
-- 0.2mm間距非共面微偏移截面195層，每個閉環及組合Polygon有效性assert全通過，未自動修補無效形狀。
-- 0.8mm XY開運算（1mm抽樣）0層超過1%面積損失，最大0.01%。窗框與框架為附牆裝飾，至少1.1mm；坡屋頂末端薄截面屬連續屋脊尖端，不是孤立承重柱。沒有用支撐宣稱修復薄特徵。
-- 窗頂、拱口、柱廊、雨庇可能需支撐；此篩查不是完整壁厚測量、正式切片或實體試印，支撐不能補救噴嘴解析度。請在切片器複查材料、橋接及支撐可移除性。
+原八角平面與低坡截頂是公開照/校圖視覺近似，不是實測，不改原坡度/屋面分割/開口來湊色。官方190×143照片不能支持精確紋理或色票；不放大虛造資訊，深度/側後窗與細部原簡化保持，不追認幾何復原精度。拍攝日未知，校圖標PH不證2026現況。單件最長150mm獨立比例非等比校園拼圖。原照私存，不公開貼圖或推定商用權利。
 
-## 公開來源
-- https://www.vnu.edu.tw/campus
-- https://www.vnu.edu.tw/images/campus/map36.png
-- https://www.vnu.edu.tw/school_tour.html
-- https://administration.vnu.edu.tw/oga/3130
-- https://resource.vnu.edu.tw/images/webmap/webmap.jpg
-- https://www.vnu.edu.tw/file_32651_萬能科大交通資訊.pdf
+## 檔案與 QA
 
-第三方照片及校圖不隨公開模型包重製。
+原STL/build與340三角字節/座標拓撲保留；immutable17件無OBJ，原builder可輸出OBJ但隔離產物只私存，不宣稱原repo有OBJ。原README.zh-TW存ORIGINAL-MONOCHROME-README.zh-TW.md，原單色圖/QA保留。appearance.3mf兩展示材及scene.blend真面材同原幾何，export/validate/render/verify與真3MF/scene明定 VNU Fitness PH partial color。精確依賴隔離原build+color、閉合正體積/3MF面材座標/Blender重開與10張1200×900檢核，重建保留不刪；未實際列印或驗多料切片，STL本身無色。
+
+## English limitations
+
+VNU Fitness PH partial color. Only original front hip trapezoid2triangles:plane13(y+56)-43.68(z-26)=0,completefinite taper from(+-42,-56,26)to(+-9.24,-12.32,39).Whole infiniteplane equals finite allvertex selection;338neutral,104coplanar domains uniform,original340triangles/STL/build unchanged,noimmutableOBJ,count_delta0. Adjacent/rear slopes not mirrored,topflat/underside/edges/letteredwall/windowbacks/groundneutral. Source190x143 photograph only nominal pale family,captureunknown,no2026survey;originaloctagonal approximation and slope unchanged,not geometryrecertification. No publicphoto/textures,not testprinted.

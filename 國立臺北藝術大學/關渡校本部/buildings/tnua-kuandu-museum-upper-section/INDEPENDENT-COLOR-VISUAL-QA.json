@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed architect photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Wholeplanesy=-40andx64.5 each2connected triangles completefront/rightcapedges z54.2..56,4silvergray/6024neutral.",
+    "All1547coplanar domains uniform,no clipping or partialtriangles.",
+    "Mergedlow-skirt/frame notpainted,glassblinds/reflections and upperroof/soffit/otherreturnsneutral.",
+    "Curvedwalls/brickbannerpanel/plaque/stairs/terrace/skylightneutral.",
+    "Sevenwholeviews fit;closeups show actual thinfront/rightedges separated fromneutralroof and frame.",
+    "Original6028triangles/STL/build unchanged,22immutablefiles,nooriginalOBJ,count_delta0.",
+    "Explicit3MF/scene/scripts TNUA Kuandu Museum Upper Section partial color;fourthfloor upperentryroofsegment only,notwholemuseum/downhill/neighbors. Captureunknown,URL2022/03notcapture,no2026survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "03fe0f023e5c4e7d553029e82e04144ae2407279ec7aee3bc5ccd75ccea13337",
+    "README.zh-TW.md": "03fe0f023e5c4e7d553029e82e04144ae2407279ec7aee3bc5ccd75ccea13337",
+    "colorize_model.py": "8a966187ea4a0cbbc0c29c66faa841f17e63ea2e131ec17c027c8de68f919b88",
+    "render_color.py": "1323c4c785f9e9c3ae182d7ac71abeceade9af254717f022b5680a92a9bd1c7b",
+    "color-mesh.npz": "a0ca704d8f6116c0a332e169e85155b5d04b7cf507aecb2ad8fe743f435b08e3",
+    "palette.json": "94af7c1dae0037551070f948f33c56ac39ecb47176f8badfd24b82959a8189ca",
+    "appearance-materials.json": "b2a1ea29d9a7e270fc1aa66f55ecd859787425273b6e98956284642aaf9bb7bf",
+    "COLOR-SOURCE-REGISTER.json": "b8625c06b4c307212c9aec16f1d665a8739c373538cbe2a72dfa601a58470bcb",
+    "model.stl": "0cb4d2834e6d59d34eb79a55f763518bcf2e19a9c447912f74a6cf1168fed25d",
+    "build_model.py": "08beae743e23d358bd2fab11a8dbed0d0b030b6eab4391644e6b7bf6d30d8fdf",
+    "preview.png": "48272e22e4dc6d85aa5a78c548534ddfe1a62a8b15d9673d0ec82b0e819c4aa8",
+    "rear.png": "4369f6eadb42d498caf4c93cd9698768efdf4d340eac1adb3352b6b7f6e6d8d5",
+    "front.png": "2c0453dba6c07ca062608dac7d9a7f605d597644fdd81a8f0127bc6044fc3bd1",
+    "back.png": "5668142e6b95409bebe562d2450ac72c0def5af561b7f0c149f9b22701f22e2c",
+    "west.png": "b8fd5ccf8c6d10306a74022a5b0a55ef48f04db403b4f2134f644aacdbe8163f",
+    "east.png": "6a565c9a3dfbe325c6734971bedf7d975b418a83f3fdb0866eea59648c4542f6",
+    "top.png": "93446a891b416145f7fef58e3c202415d6634d5f110d72064cbe8746a07dfc86",
+    "entry-detail.png": "3c29852053f8c3caa412cca1ed53cd27a4c8b622cfbe62edd5fe933551276b21",
+    "facade-detail.png": "2e010ee16a4c303b6027f6d4fd3b831cfbf08b1939004d6458e70f730481bd80",
+    "roof-detail.png": "cd1e7e68ab64afc51092860a5cd616d8001092a784073c6f2e31880a15daa745"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "910e334204acdaba0244733704d74e9e7c3fe32b6aebac0604bde8b2c3156704",
+    "SCENE-QA.json": "63c2b1a71e8795d74f19f8a0e4350ffb2e91872308ef41d14eef031f45f42891",
+    "DELIVERY-QA.json": "c713f4e2d9ff7e50be14fa1c8b5e53c26c042823f98dcf754b697ce8a8995b18"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "735a793a92791035f52ce2c79574e9921ab8b92e46a3366861dedde70c1c6059",
+    "ORIGINAL-RETENTION-QA.json": "867e20d3fab3d21b172f599cdf061c4871b0eda31cb2ada7d6a170c806321564",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0553.json": "93761bee41250e788bdfd102480c014d5894b1d6e7068ca337f5ac4b8de717ce",
+    "INDEPENDENT-IDENTITY-0553.json": "b8d4a1fb8a4dc913909ccc255c70509a0495a9257e6b4253df4f7f7adc169ef7",
+    "INDEPENDENT-PACKAGE-IDENTITY-0558.json": "df098dcc8376b78d682731a09534f4dc7bff9947ffc3e29f37a6a1d3ff44d041"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T05:58:50Z",
+  "parent_review": "Parent personally viewed architect-1 exterior, originalcode, preview and finaltenmontage. Entire original entrancecap y-40 and x64.5 planes independently equal complete2tri rectangles each, 4 silvergray faces. Exact promoted-original raw coordinate multiset equals observed NPZ4; initial mixed-float rounding falsefailure retained in domain note. Other6024faces neutral including glazed/louver proxies, frame base transition, bannerbrick walls, blackplaque lowcurve, other roofs/curves/rear. Fourthfloor entrance and roof segment not full museum; original lower cutoff and neighboring research block exclusion preserved. Actual explicit TNUA Kuandu Museum Upper Section identity independently matches 3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details intentional. Original6028triangles22files/noOBJ unchanged; no geometry or fullcolor endorsement."
+}

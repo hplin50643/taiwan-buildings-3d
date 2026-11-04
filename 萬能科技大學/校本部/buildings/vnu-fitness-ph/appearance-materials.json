@@ -1,0 +1,34 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "VNU PH observed front hip pale gray",
+      "hex": "#D2D5D1",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 338
+    }
+  ],
+  "domain_face_indices": {
+    "whole_front_hip_skin": [
+      107,
+      122
+    ]
+  },
+  "coplanar_components": 104,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "340 original triangles unchanged",
+  "limits": [
+    "Left and right diagonal roof slopes and all rear slopes remain neutral, not copied by symmetry.",
+    "Central flat truncated top, roof underside and thin edge faces remain neutral.",
+    "Main wall carries dark Chinese/English lettering and windows/frames; no uniform wall coloring.",
+    "Door, glass backing, side openings, rear wall and ground remain neutral.",
+    "Preserve340 original faces and octagonal truncated-hip approximation; no changes to slope, geometry, roof partitions or openings.",
+    "Original190x143 image establishes nominal pale family only; no calibrated finish or2026 condition claim."
+  ]
+}

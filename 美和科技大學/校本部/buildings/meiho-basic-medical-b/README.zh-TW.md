@@ -1,36 +1,28 @@
-# 美和科技大學基礎醫學大樓（B）
+# 美和科技大學基礎醫學大樓（B）｜長頂棚前沿局部淺灰白
 
-## 模型預覽
+**局部補色未完成：只右長頂棚完整前沿2原三角淺灰白；屋面、暗底、主牆與其他材色未完成。** partial_color_incomplete=true、fully_colored_exterior=false。同項 meiho-basic-medical-b／count_delta=0。原repo分類「美和科技大學／校本部」保持不改，原README所述北校區為位置描述，不另搬目錄。英文身份 Meiho Basic Medical B partial color。左右屋頂棚均同一B棟，不拆兩件。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![長棚近景](entry-detail.png) | ![完整前沿](facade-detail.png) |
+| ![兩棚同棟](roof-detail.png) | | |
 
-北校區。這是公开外觀照片推估的可列印建築微縮研究，非測繪級BIM。館名依總務處和招生中心核對；現行網頁不保證照片為2026年。
+## 材色範圍
 
-## 外觀依據
-- 階梯式逐層縮短的水平窗帶、兩側三點圓窗
-- 左側低坡屋頂與右側長屋頂運動棚
+全原y−10.5無限plane以全部三頂點0.0001mm枚舉，恰2面共享完整對角線，完整x−19.5..65.5,z85..87矩形。沒有用bbox或面心裁半面，whole finite與無限plane相同。2面名義淺灰白、3334中性；901共面連通域uniform，3336原三角不變。
 
-## 尺度與未知處
-- 含底板 150.00 × 92.00 × 87.00 mm；各棟獨立縮放至最長150 mm，不能當同一比例校園拼圖。
-- 無實測尺寸。整體深度、背面、隱蔽屋頂與被樹遮蔽位置為目測/簡化；背側不任意複製正面窗格。
-- 官方照片很小，門窗数量、柱距、曲率及細部不是精密還原。省略空調、海報、文字和細欄杆；細框為列印加厚。
-- 只重建本棟，不連同鄰棟、校園景物、中學或幼兒園。樓層表含屋頂層，與照片可見完整樓層不直接相等。
+官方panorama中右後方較低B棟有逐層收窄窗帶與三圓窗；前方高G興春樓不是本棟色證。B長棚薄前沿在開放/紅板圍護上方可辨淺色，僅此完整獨立矩形有據。D來源資料夾共用官方map只辨B身份，B圖被布條遮擋，不補遮住牆色。長棚上皮/暗底/端、左斜棚/玻璃背/柱屏、混材料主牆、框反光設備窗背、地面雨庇、側背與階基保持中性。中性非真灰，來源範圍非實材接縫，不宣稱全館色票或紋理。
 
-## 檔案與重建
-安裝 requirements.txt 所列Python依賴，執行 build_model.py 產生 model.stl/model.obj。Blender執行 render_preview.py 從實際STL匯入，產生可編輯 scene.blend 及正面/背面/立面預覽。再執行 validate_model.py、check_layers.py、check_thin_features.py。
+## 原外觀限制與時期
 
-## 驗證及列印限制
-- 原STL法向、流形邊/頂點、正體積、一個連通外表面、無分離內腔殼、原始重建SHA與blend/STL三角幾何：通過。
-- 0.2 mm高度間距共 435 層截面閉合檢查：True。數值採非共面微偏移，非真正切片器路徑。
-- 0.8 mm XY形態篩檢於1 mm間距抽樣，0 層超過1%形態開運算面積損失，最高 0.99%。小轉角也計入，不等於確定失敗或完整壁厚檢查。
-- 挑空、水平屋簷、雨庇及窗洞頂緣可能需要支撐；請依材料、方向和切片器先檢查。未完成實體試印、支撐可移除性測試或完整切片驗證。
+兩來源拍攝日未知，現行網頁不保證2026照片/現況。沿原公開照片推估單棟主要外觀，尺寸為目測微縮非測繪BIM；深度/背面/遮蔽處簡化，門窗數/細框/曲率非精密，列印加厚。不得拼鄰G/D棟、中學、幼兒園或整校；原各棟獨立150mm縮放不是同尺度校園圖。補材不追認幾何精度。照片私人，不公開貼圖或推定商用權利。
 
-來源見 sources.json。第三方照片只供內部研究，本交付不包含原照片。
+## 檔案與 QA
 
-## 薄篩數值修訂
+原STL/build與3336三角座標/拓撲/字節不變；immutable17件沒有OBJ，原builder雖會產生OBJ，隔離生成只私存，不虛稱原repo有OBJ。原README.zh-TW.md存ORIGINAL-MONOCHROME-README.zh-TW.md；單色預覽/QA保歷程。appearance.3mf兩材及scene.blend真面材同原幾何，export/validate/render/verify、3MF/scene明定 Meiho Basic Medical B partial color。精確依賴隔離重建、3MF座標面材、閉合正體積、Blender重開與10張1200×900檢核。重建保留不刪；未實體列印，未驗多料切片，STL本身無色。
 
-本包直接採canonical-edge-v2：固定共邊方向插值，節點度數2、閉環及Polygon有效斷言通過後，才進行1 mm間距0.8 mm XY開運算。舊算法可能因獨立端點取整漏環；舊工具/結果已替換，不是僅增附錄。STL、Blender、重建來源及原0.2 mm閉環驗證不變。
+## English limitations
 
-
+Meiho Basic Medical B partial color. Only entire y=-10.5 plane2triangles,complete connected rectangular frontfascia x-19.5..65.5,z85..87.3334neutral,901coplanar domains uniform,original3336triangles/STL/build unchanged,noimmutableOBJ,count_delta0. B is the lower background building right of tall foreground G in officialpanorama,identified by descending windows and circulartrios;never transfer G colors. Shared officialmap B banners provide identity,not occludedwall color. Roofskins/undersides/ends,leftgable/posts/screens,mixedwalls/windowbacks/groundcanopy/rearsidesneutral. Bothcapture datesunknown,no2026condition claim. SingleBbuilding with bothrooftops,not separatepackages;retain repo校本部 classification and original北校區 location wording. Approximate public-photo geometry,not surveyrecertification,no publicphotos/textures,not testprinted.

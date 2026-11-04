@@ -1,37 +1,29 @@
-# 萬能科技大學萬芳樓（V）
+# 萬能萬芳樓 V｜主屋帽前緣局部灰棕
 
-## 模型預覽
+**金字牆、側廊與柱窗等材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。只主高樓屋帽前外沿完整2面名義灰棕，非全棟完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見處簡化）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![主帽前緣](entry-detail.png)|![右側未核屋帽](facade-detail.png)|
+|![主屋帽與上皮](roof-detail.png)|||
 
-依公开官方外觀實拍的微縮研究，非測繪級BIM，亦非2026即時完整外觀保證。
+## 材色範圍
+同 vnu-wanfang-v 原項目，same-item、count_delta=0。萬能科技大學校本部萬芳樓單群；萬能會館與迎賓用途非另棟，不增套數。3742原三角與STL/build_model.py原bytes不變，17原件無OBJ，不造原件。
+- y−21整個無限plane只含2三角，完整矩形x−47..31、z132..134.2全納，未裁掉隱蔽部分，全部3頂點有限域核對，不normal或centroid漏選。
+- 其餘3740面中性。右開廊屋帽10個連通三角的照片遠右終點未證，全體不染；同plane另18片凹口並非屋帽。金字主牆、全高柱跨遮蔽基座、窗框反光、左翼、入口與地面均不擴染。
+- 主帽頂、底、左右回面及其他屋面未知中性。灰棕不是黑色陰影，HEX是名義族非精確材料。原近似幾何不修正或藉補色追認精度，不新增金字。中性色邊界不代表真實材縫。
 
-## 證據及近似
-- 高中間窗塔與兩側不同高度翼部
-- 右側連續深凹陽台帶、左側窄翼
-- 中央雙窗格與高出簷屋頂
+## 來源與日期
+親看官方190×143照片，洪志傑攝影標記保留於私有原照；只主帽前緣完整可辨。拍攝日未知，不稱2026現況或測繪。原照片私人不公開、不作紋理，未確認CC或再散布授權，不保證商用。
 
-照片標有洪志傑攝影，由學校公開校景提供。層數依可見窗帶近似；低層及兩側翼部深度不完整，未見後側簡化。萬能會館／迎賓樓是此樓內用途，沒有另算建築。 官方實拍只有190×143像素，沒有放大新增細節；細窗、柱、深度及間距均為視覺近似，不能作精確復原。現行總務處校圖仍標此館，未取得照片拍攝年代。側後遮擋明示簡化。省略招牌文字、空調、植栽、細欄杆。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150mm底座示意比例非測量比例。實際物件名 VNU Wanfang V partial color，真slug與館名獨立核對。STL無色；3MF、Blender逐面分材。兩材標籤非兩色或四色耗材切片驗證，未實際列印。
 
-## 比例與重建
-- 含底板尺寸：150.00 × 96.00 × 134.20 mm，單件最長150mm，各件獨立比例。
-- 安裝 requirements.txt；執行 python build_model.py 重建STL，再用 blender -b -t 2 -P render_preview.py 產生可編輯完整網格scene.blend與實際STL圖。
-- 執行 validate_model.py、check_layers.py、check_thin_features.py 複核。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes／全三角multiset、閉合正體積、3MF逐面材、scene重開、十圖1200×900與圖文hash。原README、previews及validation保留歷史不冒充新QA，沒有刪檔。
 
-## 檢查及列印限制
-- 原STL法向/邊與頂點流形、正體積、單一連通外表面、無分離內腔殼、重建SHA與Blend/STL三角幾何一致：全部通過。
-- 0.2mm間距非共面微偏移截面671層，每個閉環及組合Polygon有效性assert全通過，未自動修補無效形狀。
-- 0.8mm XY開運算（1mm抽樣）0層超過1%面積損失，最大0.59%。窗框與框架為附牆裝飾，至少1.1mm；坡屋頂末端薄截面屬連續屋脊尖端，不是孤立承重柱。沒有用支撐宣稱修復薄特徵。
-- 窗頂、拱口、柱廊、雨庇可能需支撐；此篩查不是完整壁厚測量、正式切片或實體試印，支撐不能補救噴嘴解析度。請在切片器複查材料、橋接及支撐可移除性。
-
-## 公開來源
-- https://www.vnu.edu.tw/campus
-- https://www.vnu.edu.tw/images/campus/map34.png
-- https://www.vnu.edu.tw/school_tour.html
-- https://administration.vnu.edu.tw/oga/3130
-- https://resource.vnu.edu.tw/images/webmap/webmap.jpg
-- https://www.vnu.edu.tw/file_32651_萬能科大交通資訊.pdf
-
-第三方照片及校圖不隨公開模型包重製。
+## English scope
+Partial only:2 complete main tower cap front faces muted gray-brown;3740 neutral. Whole y-21 infinite-plane selection equals finite rectangle x-47..31,z132..134.2. Right loggia cap10 connected triangles remain neutral because full photographic termination is not verified. Gold-lettered walls, full-height piers, glazing, roof top/underside/returns, rear and base remain neutral. Original3742 triangles and17 immutable files unchanged,noOBJ. Wanfang hotel/reception associations are one building, not added models. Original190x143 photo nominal family only, unknown capture, not2026 survey. No tested filament slicing.

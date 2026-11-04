@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official190x143 photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Originalfrontroofplane13(y+56)-43.68(z-26)=0 whole2connected triangles equals finite tapered trapezoid,338neutral.",
+    "All104coplanar domains uniform;full3vertex finiteplane/taper,no clipping or partialtriangles.",
+    "Nominal front pale skin only,adjacent and rear slopes not mirrored;centralflat/underside/edges/letteredwalls/windowsneutral.",
+    "Sevenwholeviews fit;details show original complete front trapezoid without expanding across neighboring roof boundaries.",
+    "Original340triangles/STL/build unchanged,17immutablefiles,nooriginalOBJ,count_delta0.",
+    "Explicit3MF/scene/scripts VNU Fitness PH partial color;captureunknown,no2026survey;originaloctagonalplan/slopevisualapproximation preserved."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "294b9096f811d45ed4e15dab4ada31081f9cbda3daead17744bca9bc37391d97",
+    "README.zh-TW.md": "294b9096f811d45ed4e15dab4ada31081f9cbda3daead17744bca9bc37391d97",
+    "colorize_model.py": "84054f90ef9a49e35e37f83586cb057dcef195d442b16a950774110a56c430ae",
+    "render_color.py": "5a62dac989270ef0ae4b1ab79f391e19da5b1c6e12156f5be266d388d636d1c9",
+    "color-mesh.npz": "a3b344ae47d593bf1e13fcd010a30c98764a807e545e01b841ee4e4227923849",
+    "palette.json": "2addc313e8ce410fe6498c06dbaf85126af27cedbc7ea91133deaba13348b14e",
+    "appearance-materials.json": "f9ae141ffbf0fe6221d5f4d9963c996e73b9ad0d87b74d4e5d495c16bbab4975",
+    "COLOR-SOURCE-REGISTER.json": "7f9a9f4cea96afd193b2562b758d093f4396676ad2776bde88a436d25e6df9ef",
+    "model.stl": "daefed1bcc038fb92041ed471265e845f715be141e0f940b5397c153d40fb053",
+    "build_model.py": "3814cfbdc639cecb17c9d036f3cbe5d9e3aca6e491a49b3dccf6b9ad20d1d892",
+    "preview.png": "4b286d6ba39932b6b60bbe81eb8fdb916ba2ed1f4c8c27d440096216a81c60ea",
+    "rear.png": "d02850d6fe65f4202f66f5b872e95fd050123d7ecbccb7cf55743f1b8072bf77",
+    "front.png": "54d7ffcce0862f1e85ca64f86229300ba5c039644524bf43d5106923a9bed29d",
+    "back.png": "4aae3b50f95e16e4f70946222ffd868889d29f3845e6d90c88bdb58834021e9f",
+    "west.png": "1bf0ff9370dfb26236b24d750e4f5a0512cebbbe4e56ab45cfdac79b80e111b2",
+    "east.png": "3948052d1fc36cd19ec56b0c001d36e45ccfbc71aa81b883accd1768c1f34705",
+    "top.png": "dd301ce811214349493b86e04dda8a929836890e97a3ddf9414cbd239b33a4b5",
+    "entry-detail.png": "f50646294bdff312b6bd948be48625e439aaca3c07084053cbfab32a2b1b2128",
+    "facade-detail.png": "e6071bb98b726a4d22daf542538d1882ff201c246fcfe9830e1e5badd5bae36c",
+    "roof-detail.png": "d3ae4fe40114bca9fa97506ded3dc3ddf2ac046636b794ac092b1ba7d7112929"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "6283d172ea3c92a101b242ddc7f32cb9b577b5139bb4e0956f525441bc9a2454",
+    "SCENE-QA.json": "26ae644d60268bb9ad99585adcc7089b7fa9ae91eda3e493a27940ad79803ac1",
+    "DELIVERY-QA.json": "49bd9c3e910873944da32ec1c01c447cd23e02610899f14cb8a1cfbe1e3ed6a2"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "80c9bad3ca0d7f189214e5ce9918758dc0a050679eda9a83284ca60dcda0659d",
+    "ORIGINAL-RETENTION-QA.json": "3c1576c7df08e65b653cf1905dbedca868c8952bd0326d0d09eeb21363631519",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0537.json": "1e697abacae516d93b14f95ae26beca4ac42eac87ca3e1f4063ea9e9f1c7f708",
+    "INDEPENDENT-IDENTITY-0537.json": "d8bd7d26e008031e7dc5e964ae0d92aa8e9b6a473996c44d76f0192ab9218bbd",
+    "INDEPENDENT-PACKAGE-IDENTITY-0540.json": "48dacc0be040926e503398f693bfdae6cb4b59509fe53f85c17b011762d20deb"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T05:40:24Z",
+  "parent_review": "Parent personally viewed official-map36 actual190px photo, originalcode, preview and finaltenmontage. Original front octagon tapered roof plane derived from frontedge to scaledtop: wholeplane equals finite allvertex taper2, only nominal palefrontmainroof. Other338faces neutral including left/right/rear slopes, topflat, underside, lettered entry and windowwalls. No symmetry copying or geometrypitch endorsement; original coarse octagon retained. Explicit VNU Fitness PH identity independently read actual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews framed,3details intentional. Original340triangles17files/noOBJ unchanged, unknowncapture and partial limits clear. Initial attempted map25 nonexistent was not used, map36 actualsource viewed."
+}

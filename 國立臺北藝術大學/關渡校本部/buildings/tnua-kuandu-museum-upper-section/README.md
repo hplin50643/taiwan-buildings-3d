@@ -1,68 +1,30 @@
-# 關渡美術館入口暨曲牆屋頂段
+# 關渡美術館入口暨曲牆屋頂段｜入口帽前右緣局部銀灰
 
-## 模型預覽
+**局部補色未完成：只入口帽前緣與右緣4原三角銀灰；玻璃、框底裙、曲牆與其他材色未完成。** partial_color_incomplete=true、fully_colored_exterior=false。同項 tnua-kuandu-museum-upper-section／count_delta=0，國立臺北藝術大學關渡校本部。英文身份 TNUA Kuandu Museum Upper Section partial color。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![交付STL正面](previews/front.png)<br>正面 | ![交付STL背面](previews/rear.png)<br>背面 |  |
+**僅四樓入口層可見玻璃盒、階梯與層疊曲牆屋頂片段，不是全館；不含下坡低層或相連／相鄰研究大樓。**
 
-國立臺北藝術大學｜關渡校本部｜150 mm 自建外觀近似模型
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![入口帽位置](entry-detail.png) | ![完整前右緣](facade-detail.png) |
+| ![中性曲牆屋頂](roof-detail.png) | | |
 
-> 局部：四樓入口層可見玻璃盒、階梯與層疊曲牆屋頂；不含下坡低樓層、不含相連／相鄰研究大樓，不代表完整美術館。
+## 材色範圍
 
+整原y−40與x64.5兩個無限plane分別所有三頂點0.0001mm枚舉，各2面共享完整對角線，皆原完整矩形。前緣x25.5..64.5，右緣y−40..−8，高z54.2..56，無bbox硬裁、normal篩面或亮度切三角。4面名義銀灰，其餘6024中性，原6028三角不變。全原共面連通域一致，實際域數記appearance-materials/BUILDER-DOMAIN-QA。
 
-[頂面](previews/top.png) · [正立面](previews/elevation.png)
+architect1完整可見入口頂帽前右薄邊，獨立於上皮與暗底，只兩完整域可對位。帽上、底、左後端均中性；帷幕前框原合併低裙與基座轉折，不從上半裁銀色。玻璃背含百葉/反光/內門不塗藍，左曲牆樹遮與磚嵌板布條、低弧牆黑館牌不整白/紅。階踏面、平台、天窗、後曲牆與其餘屋界全部中性。中性不是實景灰；資料範圍不是實材接縫。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂面<br>![頂面](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
+## 原始範圍與日期
 
-## 下載與單位
+保持原上段截取、150mm外觀近似，曲牆/帷幕框/天窗加厚與下部人工截斷不改，不因補色追認測繪或完整美術館。原建築師頁專案證據不代表該事務所設計所有歷史外觀。拍攝日未知，URL2022/03非拍攝日，不稱2026現況。原照片只私人研究，不公開貼圖/不推定商用權利。
 
-- [可列印網格 model.stl](model.stl)
-- [可編修 Blender scene.blend](scene.blend)：由這一件交付 STL 匯入的三角網格；單位設定為毫米。
-- [參數生成腳本](build_model.py) · [固定依賴版本](requirements.txt) · [來源](sources.json)
-- 外廓（含底座）：150 × 112 × 56 mm。最長150 mm，各件獨立縮放，不可當作校園統一比例。
-- 底座平面朝下；先以0.4 mm噴嘴／0.2 mm層高在自己的切片器檢視，這不是已生成的工具路徑。
+## 檔案與 QA
 
-## 外觀依據與簡化
+原STL/build與6028三角座標拓撲/字節保留；immutable22件無OBJ，原builder會輸出OBJ但隔離產物只私存，不冒稱原repo有OBJ。原README另存ORIGINAL-MONOCHROME-README.md，單色圖/QA歷史保留。appearance.3mf兩展示材與scene.blend真面材同原幾何；export/validate/render/verify及真3MF/scene精確身份 TNUA Kuandu Museum Upper Section partial color。精確依賴隔離build+color、閉合正體積/3MF座標面材/Blender重開/10張1200×900檢核；保留重建不刪，未試印或驗多料切片，STL本身無色。
 
-- 正面5個主要玻璃跨、側面5個主要玻璃跨，底層門片與上方兩列高玻璃保留高寬分組；實心淺凹模擬玻璃。
-- 保留三層曲牆退縮、金字塔天窗與相鄰平屋頂；曲線以照片重建，沒有精密曲率尺寸。
-- 背面與兩侧底部是截段用的簡化實心牆，不能當作背立面測繪。入口所在四樓以下的下坡樓層完全未建。
-- 臨時展覽布條、招牌文字、獨立藝術作品及屋頂水箱／細小管線未納入。天窗細骨架作可列印加粗。
+## English limitations
 
-## 列印注意
-
-玻璃框架、薄曲牆與階梯宜放慢速度；天窗邊條及挑檐需由切片器檢查支撐。曲牆厚約2.6mm，玻璃跨分隔保留約1.4mm。
-
-數位幾何檢查不等於實體試印或 Cura／PrusaSlicer 工具路徑驗證，不能保證所有機器可直接列印。請自行選擇材料、支撐、牆數與填充。模型是單一連通實體，並非拆件組裝。
-
-## 重建與驗證
-
-Python 3.12，先依 requirements.txt 安裝依賴，再執行 build_model.py；用 Blender 4.3.2 或相容版本執行 render_preview.py。最後執行 run_all_checks.py（先把凍結套件複製到可寫工作目錄）。它會在任一驗證失敗時非零退出；不修補 STL 或不合法截面。
-
-- [原始 STL／繞序／單殼／vertex-link／重建 SHA／Blend 一致](validation.json)
-- [0.2 mm 逐層閉合](layer-check.json)
-- [個別與合成 Polygon 逐層有效性](contour-validity-check.json)
-- [canonical fail-closed v3 薄特徵篩檢](thin-feature-check.json)
-- [綜合檢查](qa-summary.json) · [逐檔 SHA256](SHA256SUMS)
-
-截層從 z=0.071 mm 開始避免共面退化。0.8 mm 形態 opening 僅輔助判斷狹窄特徵，不是完整最小壁厚測量。
-
-## 來源與年代
-
-- [北藝大112年氣候友善校園計畫申請書，附件三校區配置圖（第24頁）](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)。官方校本部位置、科技藝術館與體泳館相鄰、關渡美術館及圖書館／研究大樓分列；插畫僅核名稱與相對位置。 插畫不是平面測繪；不是2026更新版。
-- [113學年度招生校園地圖](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)。web文字可讀的官方名稱索引；早期26筆研究列承接來源。 直接下載及雲端瀏覽器均遇502／issuer certificate錯誤，未繞過。未取得本次可檢視圖像，也未證實為最新校圖。
-- [仲觀／J.M. LIN：關渡美術館作品](https://www.jmlin.tw/portfolio/關渡美術館/)。入口玻璃盒實拍、5跨正面及5跨側面、底部門片／上方兩列玻璃、入口階梯、公開剖面與軸測。 仲觀項目包含室內整建，不能以此把全部原建築外形歸為仲觀新建。原外殼設計另見校方／市府資料。照片攝錄日未標示。
-- [Kuandu Museum and TNUA campus 20240324，Yu tptw自攝](https://commons.wikimedia.org/wiki/File:Kuandu_Museum_and_TNUA_campus_20240324.jpg)。從圖書館向美術館俯視：層疊曲牆、相鄰露台、金字塔玻璃天窗、玻璃入口與後方其他校舍界面。 後方高樓為相鄰校園建築，沒有納入此局部模型。照片未覆蓋本館全部下坡樓層或背立面。
-- [文化部藝術進駐網：關渡美術館](https://artres.moc.gov.tw/zh/database/twContent/1d31e4701c90447c99b1eff033002c5c)。另一低視角入口照片，覆核玻璃跨數、階梯弧形與相鄰牆面。 實拍年代未註，不以網站索引日期替代。
-- [關渡美術館官方空間與設備](https://kdmofa.tnua.edu.tw/mod/data/index.php?REQUEST_ID=5fc4b8a43203c8db81d467a177fa32847299f9c5ba49ef691f006299e858ad58)。官方明示入口服務台在四樓；因此入口段絕不能聲稱含全館五個地上樓層。 本模型截去未充分證實的下坡樓層。
-- [關渡美術館官網](https://kdmofa.tnua.edu.tw/)。2026營運與館名現行性。 營運頁不是建築竣工或外觀未變證明。
-- [臺北市文化局：臺北藝術大學（關渡美術館）](https://miniculturaltrips.gov.taipei/News_Content.aspx?n=0DA7E7A7A1EA5C19&s=01EF1E76BFA548E3&sms=337199328131CB54)。原建築李祖原設計、1996建築完工與2005內部裝修開幕。 歷史說明不提供精確外觀尺寸。
-
-原照片、原PDF與對照工作圖不隨公開包再散布；來源檔只列可回查URL與支持範圍。這是自行建立的外觀近似，未下載他人的3D模型。
-
-## 導覽
-
-[關渡校本部](../../README.md) · [國立臺北藝術大學](../../../README.md)
+TNUA Kuandu Museum Upper Section partial color. Upperfourth-floor entry/curvedroof segment only,notwholemuseum/downhillstoreys/neighboringresearchblocks. Wholeplanes y=-40 andx64.5 each2connected triangles completefront/rightcapedge z54.2..56;4silvergray/6024neutral,original6028triangles/STL/build unchanged,noimmutableOBJ,count_delta0. Mergedfrontframe/lowbase-skirt,blinds/reflections/windowbacks,roofupper/soffit/otherreturns,curvedwalls/brickbannerpanel/plaque/stairs/terraces/skylightneutral. Captureunknown,URL2022/03notcaptured,no2026survey,no historicalauthorship overclaim. Originalgeometricapproximation notrecertified,no publicphotos/textures,not testprinted.

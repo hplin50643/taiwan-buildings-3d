@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete-model views and three intentional main cap/right-neutral-cap closeups.",
+    "Only complete original high tower cap front muted gray brown; roof top, returns and right loggia cap neutral.",
+    "Gold-lettered walls and full-height piers not falsely colored; original approximate geometry retained."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 3742,
+  "material_face_counts": [
+    2,
+    3740
+  ],
+  "connected_coplanar_domains": 1034,
+  "original_obj_present": false,
+  "original_files_retained": 17,
+  "file_sha256": {
+    "README.md": "87c57b6a5355077e4c132e7b326b909809e7a145495c29462a243451fd3bac17",
+    "README.zh-TW.md": "87c57b6a5355077e4c132e7b326b909809e7a145495c29462a243451fd3bac17",
+    "model.stl": "2cb33cecad68ca099df60f8544b7f7386e3b045af8330d961c261d0f649a8bca",
+    "build_model.py": "b0fc5512d22a00ee39a10e7b38147c0d4262a0f221a7f5dcaa959a0ffd351e37",
+    "colorize_model.py": "dfd17b41a62bdb3723da104f8ff28fe08549f4468cdb7d6806c6738dab598cf9",
+    "render_color.py": "0f1e2375b2cb0a2f2d28fa06104b0b4d4c8bf354913271e2bdb8d1d2354fb488",
+    "verify_color_scene.py": "ecfcaf81ea2b069eb96c18d74da6c182eb2e3f9569d80487f288327d6783961c",
+    "validate_color.py": "4d2c87612e0c88763867e4911aff3ba1bd17fea52391fe058374d09668a1e181",
+    "color-mesh.npz": "ecf6dacdccbba51266c721d511649295c15b32c0619d9ea7368d84aab841e20b",
+    "palette.json": "dc28d443c286e1fcf9c89a5b62eab443edb81ff8e24f332baa4d237df76ddd97",
+    "appearance-materials.json": "1cd2cc8d1c0188afb95879c055845b116012ffb98ca3256d32bbe9b5b2a1496e",
+    "COLOR-SOURCE-REGISTER.json": "8d9dac8e0dc38a868173c8342bec34e22291a5788b06600c306fc06a1ce01821",
+    "appearance.3mf": "157af6ffc611b725ff0bd2099d34beb2258cee720aec2583c5d35151baf1ab55",
+    "scene.blend": "3d5f2f70b1e624a55d3d3c3ca4363e4d83538db16029db5e5e9cbcdef64635ca",
+    "preview.png": "b4598f599300027d0884698a2d54542c9fdd2c60536eb258e66b67cb1df28b34",
+    "rear.png": "5eb6ab7dab825b528c7e9e661fed4a2eb85d5666a0b916eafeaa2066d4625b3f",
+    "front.png": "34e89657a85a6d3da8c028ae29479b3e027407480590de76286badea66446730",
+    "back.png": "981d69a67337dd65b892c9c780264dd52e9482b85226e1be15e275776c4147ad",
+    "west.png": "04ae0753e67f0cb734b0db43b6aacd92ff98dd44b347aca22c670debc6df3e43",
+    "east.png": "a90070c9197a511955ea88ef34c1ad3caa27fa42d28e71f7dd17f4d9565453f9",
+    "top.png": "4f4740fc5f6132a2bc8af2d0bab0d4e8aff56a2529a0ff34b1a303b50b0c0cb3",
+    "entry-detail.png": "f8fa5bd8b82b14b54fcdc0296b485b399218a901cc3b9b2fc06b7c4951dd5ffb",
+    "facade-detail.png": "5082ccbe18f5ec6b4b9b209953bedbd89faa23c471d023a32871198ee900fee8",
+    "roof-detail.png": "a3297c3ab1085f5db71309d36954324349145eff5f62442a1b59b2a8685e0f7c",
+    "export_appearance.py": "b7cc3068b1795e7c86c18d128133a6fc9653768e6b2bce71c2bb902bc60ef024"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "16a8a01d02093d8f06949f6e5e15c358d31500473b0dc3480591b83651ab887d",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "b896189b7c8af50ceb4f1c27d22e7785dfd377655b8ededbb735028585623912",
+    "SCENE-QA.json": "2ed07252da822da673291425fd8d96c2290fbda5868b97d9145e99f6f36e8e3b",
+    "FRAMING-QA.json": "c55823a507655860569965875d4f0673fa79e3fa3db5dbf7286c19ec859da24d",
+    "DELIVERY-QA.json": "b507c22e2110660316a95e1ce8a1a3a697a22f5fb208812a18777e0ab6599d01"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "51c5d370d6e8534b7b5c83b7bf692e23be6b2284dc4a4157a254d622af9ade5b",
+    "ORIGINAL-RETENTION-QA.json": "ccf439bef7bb4840d282c2d75ee025a7b6e1e540e34094f8599c5b421f1e0ea9",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "1d195e21a6563b9f6e53030cd2e9954b65c8e43aa3ae65b34e593fb1c60e1da5",
+    "ORIGINAL-PACKAGE-READBACK.json": "96984cd980719e0317c09c0e8ebb661befb204ab6c9d3f1ff09a66159ea5b0c5",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "3dca9f0a9b4081b08141bafa38f69da7fc5e04b092b2a50c0a4425b16ae5f93c",
+    "INDEPENDENT-DOMAIN-0543.json": "1d938f60681f0c073b11c86690e2a3089a0a5382d5f7efd41c2e0738856b6dc2",
+    "INDEPENDENT-IDENTITY-0543.json": "6fdce648a9a648bb1eee4400c3d29ce4b483215078193c1a17cc86a75421fde1",
+    "INDEPENDENT-PACKAGE-IDENTITY-0547.json": "3dca9f0a9b4081b08141bafa38f69da7fc5e04b092b2a50c0a4425b16ae5f93c"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "a135394f7d234ad607b06e8e587e10eb20bdcc7bef8a460d3bb0cfbe9111b2a0"
+  },
+  "limitations": [
+    "Two complete main high tower cap front triangles;3740 neutral.",
+    "All infinite-plane faces equal finite rectangle;no discarded fragments or artificial clipping.",
+    "Original3742 triangles and17 immutable files retained;no originalOBJ.",
+    "Official190x143 photo unknown capture;nominal gray-brown only,not2026.",
+    "Associated hotel/reception names remain one building,count0."
+  ],
+  "history": [
+    "Verifier scale property corrected before final reopen to actual original150mm-base."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T05:47:35Z",
+  "parent_review": "Parent personally viewed official190x143 exterior, originalcode, preview and all10 finalmontage. Entire original main cap front y-21 plane equals complete2tri rectangle x-47..31 z132..134.2, nominal graybrown only. Right cap10 has insufficient complete endpoint evidence and remains neutral; all3740otherfaces neutral including goldletter wall, basecropped columns, glass, roof upper and side/rear. Explicit VNU Wanfang V identity independently matches actual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details show limited frontcap versus neutral surfaces. Original3742triangles17immutablefiles/noOBJ unchanged; guesthouse/hall use same building, count0, no currentyear or completecolor claim."
+}

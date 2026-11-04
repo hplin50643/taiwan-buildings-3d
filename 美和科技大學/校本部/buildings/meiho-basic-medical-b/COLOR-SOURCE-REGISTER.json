@@ -1,0 +1,36 @@
+{
+  "slug": "meiho-basic-medical-b",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "MEIHO-BASIC-MEDICAL-B-COLOR-SOURCE-GO-0503.json",
+    "sha256": "dcbabad73d0f7aa413f71c8a6dd7c67bcd34b9da4b691fe461e3089861e788e3"
+  },
+  "review": {
+    "file": "INDEPENDENT-MAPPING-0503.json",
+    "sha256": "288a355c9b2abedf983a153f894aa1da34e5d5bbf3f7db3d71355609c72ac20f"
+  },
+  "source_images": [
+    {
+      "file": "official-panorama.jpg",
+      "sha256": "6cd3591d59d5904f344caaa14ae62f234439eb0974fb77bc1667244478ae021e"
+    },
+    {
+      "file": "official-map.jpg",
+      "sha256": "7e8457f25eec1de97eaa1a32cf42f0103dfbe7a614d8ce65244143c62068f254"
+    }
+  ],
+  "limits": [
+    "Roof upper skin and dark underside are not approved by this fascia-only recommendation.",
+    "Left gabled shelter, its glass backing and all rooftop posts/screens remain neutral; left and right shelters are one building, not separate models.",
+    "Broad front wall contains circular openings and transitions to lower material/occluded base; no all-wall white or triangular material split.",
+    "Window backing contains frames/reflection and equipment; neutral.",
+    "Ground canopy, side/rear walls, hidden base, steps and all other faces remain neutral.",
+    "Preserve all3336 original triangles; no geometry modifications, new source retrieval, Git changes or OBJ generation.",
+    "Nominal limited material-family mapping, not complete coloring or 2026 condition confirmation."
+  ],
+  "rights": "Private references only; no public images/textures or commercial-rights inference.",
+  "source_private_backup": "Sources separately privately retained."
+}
