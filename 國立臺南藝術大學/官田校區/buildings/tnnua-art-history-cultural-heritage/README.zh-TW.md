@@ -1,34 +1,34 @@
-# 國立臺南藝術大學｜藝術史與文化資產學系館
+# 藝史文資館｜僅原磚浮紋前面紅與 fin／盒前面白
 
-## 模型預覽
+**局部補色未完成：僅78原磚浮紋前面156三角紅及10 fin／右盒前面22三角白；混材牆透空代理未完成。非全色或2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項 `tnnua-art-history-cultural-heritage`／`count_delta=0`，官田校區。20261103為處理日期而非拍攝日。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![原粗磚前面](entry-detail.png) | ![前 fin 與盒](facade-detail.png) |
+| ![中性背屋及欄代理](roof-detail.png) | | |
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 材色範圍
 
-## 辨識量體與證據
-系所官網正面實景與2019校長續任評鑑校務說明書第22頁（印刷頁18）圖29較斜角實景、校園導覽圖相互核對。保留左側高磚屏及兩個方形凹廊、中段退縮門廊/高直百葉、右側白色懸挑方盒及下方直向翼板。兩張照片皆以前側為主，深度由校圖和透視估計；缺乏可靠後立面及完整屋頂影像，後面留素牆且省略未知屋頂裝置。這是公開外觀近似模型，非完整測繪。樓層相對高度不代表現場量測。
+78原獨立粗磚 relief 矩形前面 y−32.7，各3.2×1.2mm兩三角，13排×6塊共156紅。10原中央fin前面 y−24.5，原union後最左僅寬0.3×20mm、最右兩條僅1.6×14mm，其餘七條1.6×20mm，皆完整外露矩形各兩三角，共20白；右盒前面 y−36.5，x17..69/z33..51整矩形兩三角白。全三頂點核原完整面和面積，不面心截色、不切面；2320面中性。共面連通域全部同材。
 
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
+原粗化磚塊排列不是照片精準砌磚/透孔；**不補孔、不宣原浮紋等於真透空屏**。整左全高主壁/背板/灰基座/白框混材原無界全部中性，不能整紅。磚頂側背、fin頂側、右盒頂底側均中性；照片開金屬欄與原實厚欄代理不同，整中性。所有低柱/窗背/牆/階/屋背未知中性。**中性不是實景灰證明；資料覆蓋界線不是實際材色接縫。**
 
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+原2498三角/STL/build字節、尺寸不變，不以補色追認原近似幾何或現況。
 
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
+## 來源、日期與權利
 
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
+唯一成功來源校方 `official-2019-assessment.pdf` 物理22頁、印18頁、圖29；直接抽出 `pdf-page22-image2.jpeg` 已親看。2019是報告年份非照片拍攝年，capture未知，不宣2026現況。其他嵌圖不取色，banner503未讀不重試。網址/hash見source register；原PDF/照片私存、不公開/不貼圖，未見CC不沿repo license推商用，HEX只名義色族非測色。
 
+## 檔案與 QA
 
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共336層均封閉；0.8mm XY薄特徵篩查有0層警示（最高局部面積损失0.003 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
+`appearance.3mf`三展示材，`scene.blend`真面材，`color-mesh.npz`原三角材索引。原STL無色及build保字節；Immutable原包無OBJ，不冒稱原OBJ存在或保留。
 
+原README保`ORIGINAL-MONOCHROME-README.md`/`.zh-TW.md`，舊previews/QA保單色歷程非新色審。依requirements執行colorize/export/validate腳本；Blender執行render_color.py/verify_color_scene.py。原build+color全隔離重建保留不刪，3MF/STL三角同一/封閉正體積/reopen/10張1200×900見QA，父另終審。
 
+**未實際列印。** 三展示材不是已驗四色切片工程，薄部支撐另核。
+
+## English limitations
+
+Partial only:156original coarse brick-relief front triangles muted red;20central-fin front triangles and2right-projecting-box front triangles offwhite;2320neutral. Original union clips leftmost fin to0.3×20mm and rightmost two to1.6×14mm; seven others1.6×20mm. Every actual exposed independent rectangle is complete, allvertices and area verified, uniform coplanar components, no geometry cut. Coarse relief not accurate photographed brick/perforation screen; mixed fullheight leftwall/graybase/whiteframes remain neutral, as do all component sides/top/back, solid railing proxies, windowbacks and roof. Single actual PDFfigure29 viewed;2019report not capture date, banner503 not accessed.2498originaltriangles/STL/build unchanged/count_delta0; color review does not authenticate geometry or current condition. Reference PDF/photo private, not textures, no inferred commercial permission; not test-printed.

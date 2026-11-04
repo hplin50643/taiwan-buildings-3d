@@ -1,35 +1,35 @@
-# 職務宿舍沿溪屋帶局部簡化模型
+# 職務宿舍沿溪單側局部｜五近似模組前坡瓦紅
 
-## 模型預覽
+**非五門牌或全宿舍，背坡及混牆窗背未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。五個原近似模組是一條可見局部屋帶，不認證五棟或門牌，不另增模型套數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![左近似模組](entry-detail.png)|![右前坡](facade-detail.png)|
+|![五有限前坡](roof-detail.png)|||
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 材色範圍
+同 `tnnua-faculty-housing-visible-row` 原項目，same-item、count_delta=0。**1650原三角面、STL與build_model.py字節不變**，不切面／新增瓦片；原公開包無OBJ，不假稱保留。
+- 原五近似模組前坡 z=(5/18)y+c；各自原有限xy界與截距43.5／44.08333333333／43.5／45.91666666667／44.5，依次4／2／10／2／2，共20原面瓦紅。
+- 每頂點須同時滿足原有限坡plane與xy界，涵Boolean裁切細面；不以法線門檻／中心點任選三角。
+- 其餘1630面中性：全部後坡、厚檐／山牆、屋面凸物／女兒牆、混磚白陽臺實板、玻璃／簾／框混窗背、全高混材主牆、平台與側後。
+- 全368共面連通域均一、0撤色。色／中性界是證據範圍，不是真實材接縫；不因補色追認原五模組形狀／身份或全宿舍幾何。
+- 不建對岸、不配A–H棟或門牌、不重建內部或住戶。
 
-## 辨識量體與證據
-只重建校方高視角照片33022-108073318與沿溪照片33022-224127282中可見的單側連續貼連屋帶。以五個相接模組近似照片中屋帶段落，並不表示五棟實際門牌或A–H棟；保留低斜屋面連續性、錯落陽臺/磚牆和沿溪長向，取消原草模的兩排疏離盒屋。對岸與超出照片邊界區段未建模；屋後無可靠照片故留素牆，屋頂分段和屋深皆估計。
+## 來源／日期與權利
+高視角與沿溪兩張已建外觀照片親看，僅用可證單側屋帶；拍攝日期未知，不稱2026現況精測。前坡紅不推定背坡紅。
+原照私存，不公開／貼圖；未確認CC／再散布授權，不保證商用。HEX是名義瓦紅色族，非校準色票或污斑復原。
+GO僅有界來源放行，不是發布核准，也不免除模型QA；繼承notformal字句是先期review。
 
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+150×78mm原展示底座，照片近似非精測比例。STL無色；3MF／Blender真逐面材。兩材標籤不是驗證兩色／四色耗材切片；**未實際列印**，無切片路徑。
 
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py`／`verify_color_scene.py`。
+原字節／三角multiset、閉合正體積、3MF面材、完整隔離原build＋color重建、scene重開、十圖1200×900與圖文hash核對，程序不取代來源人工核。
+原README、單色previews／render／validation留存歷程，不冒充新QA；沒有刪檔。
 
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
-
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
-
-
-
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共240層均封閉；0.8mm XY薄特徵篩查有6層警示（最高局部面積损失38.8867 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
-
-
+## English scope
+Partial color only:20 existing frontpitch triangles (4/2/10/2/2) nominalred. Five approximate modules represent one visible single-side row segment, NOT five certified houses, addresses or entirehousingcomplex. All1630 other triangles neutral. Original1650 triangles unchanged;no originalOBJ. Capture dates unknown. No oppositebank/interiors/occupants. Not testprinted or validatedfilament slicing.

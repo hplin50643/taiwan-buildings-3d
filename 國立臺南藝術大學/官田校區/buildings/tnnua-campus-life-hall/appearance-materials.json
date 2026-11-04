@@ -1,0 +1,267 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed near fork steel outward facets lightgray",
+      "hex": "#CCD0CC",
+      "faces": 46
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED shaft canopy rail proxies neutral",
+      "hex": "#B8BAB5",
+      "faces": 1906
+    }
+  ],
+  "domain_face_indices": {
+    "near_branch_to_x33.0": [
+      1622,
+      1623,
+      1624,
+      1625,
+      1626,
+      1627,
+      1628,
+      1629,
+      1636,
+      1645,
+      1646,
+      1647,
+      1648,
+      1649,
+      1650,
+      1651,
+      1652,
+      1653,
+      1654,
+      1655,
+      1656,
+      1657,
+      1670
+    ],
+    "near_branch_to_x51.0": [
+      1673,
+      1674,
+      1675,
+      1676,
+      1677,
+      1678,
+      1679,
+      1680,
+      1681,
+      1682,
+      1683,
+      1684,
+      1697,
+      1698,
+      1701,
+      1702,
+      1703,
+      1704,
+      1705,
+      1706,
+      1707,
+      1708,
+      1709
+    ]
+  },
+  "finite_facet_reconstruction": [
+    {
+      "start": [
+        42.0,
+        -20.0,
+        37.0
+      ],
+      "end": [
+        33.0,
+        -20.0,
+        48.416666666666664
+      ],
+      "u": [
+        -0.7853227598576662,
+        9.617430041572564e-17,
+        -0.6190865552162624
+      ],
+      "v": [
+        -1.2246467991473532e-16,
+        -1.0,
+        0.0
+      ],
+      "axis": [
+        -0.6190865552162625,
+        0.0,
+        0.7853227598576662
+      ],
+      "length": 14.537547171988049,
+      "facets": [
+        {
+          "k": 0,
+          "indices": [
+            1629,
+            1647,
+            1657
+          ]
+        },
+        {
+          "k": 1,
+          "indices": [
+            1624,
+            1645,
+            1646
+          ]
+        },
+        {
+          "k": 2,
+          "indices": [
+            1622,
+            1623,
+            1648,
+            1649
+          ]
+        },
+        {
+          "k": 3,
+          "indices": [
+            1625,
+            1650
+          ]
+        },
+        {
+          "k": 4,
+          "indices": [
+            1626,
+            1651
+          ]
+        },
+        {
+          "k": 5,
+          "indices": [
+            1627,
+            1652,
+            1653
+          ]
+        },
+        {
+          "k": 6,
+          "indices": [
+            1628,
+            1654,
+            1655
+          ]
+        },
+        {
+          "k": 7,
+          "indices": [
+            1636,
+            1656,
+            1670
+          ]
+        }
+      ]
+    },
+    {
+      "start": [
+        42.0,
+        -20.0,
+        37.0
+      ],
+      "end": [
+        51.0,
+        -20.0,
+        45.916666666666664
+      ],
+      "u": [
+        0.7038102996029517,
+        0.0,
+        -0.7103879659543814
+      ],
+      "v": [
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "axis": [
+        0.7103879659543814,
+        0.0,
+        0.7038102996029517
+      ],
+      "length": 12.669133531715751,
+      "facets": [
+        {
+          "k": 8,
+          "indices": [
+            1697,
+            1698,
+            1708
+          ]
+        },
+        {
+          "k": 9,
+          "indices": [
+            1682,
+            1683,
+            1706
+          ]
+        },
+        {
+          "k": 10,
+          "indices": [
+            1680,
+            1681,
+            1707
+          ]
+        },
+        {
+          "k": 11,
+          "indices": [
+            1678,
+            1701
+          ]
+        },
+        {
+          "k": 12,
+          "indices": [
+            1677,
+            1705
+          ]
+        },
+        {
+          "k": 13,
+          "indices": [
+            1675,
+            1676,
+            1702
+          ]
+        },
+        {
+          "k": 14,
+          "indices": [
+            1673,
+            1679,
+            1703,
+            1704
+          ]
+        },
+        {
+          "k": 15,
+          "indices": [
+            1674,
+            1684,
+            1709
+          ]
+        }
+      ]
+    }
+  ],
+  "coplanar_components": 505,
+  "coplanar_neutralized_faces": [],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1952 original triangles unchanged",
+  "limits": [
+    "Only two rightfront original16gon branches23+23whole outward front facet triangles.",
+    "No rawtriangle normal threshold or centroid cut; finiteplane+tangent+axis allvertices.",
+    "Shaft/junction, other supports, solid rail proxies, entire folded roof with omitted grid/shadows neutral.",
+    "All mixed walls glazing cone plaza ramps unknownneutral; source builtphotos not woodmodel, PDF2013 metadata not capture."
+  ]
+}

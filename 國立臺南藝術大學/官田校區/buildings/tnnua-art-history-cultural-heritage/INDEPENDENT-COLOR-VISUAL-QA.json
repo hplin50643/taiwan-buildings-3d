@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official assessment PDFfigure29 extracted photo and all ten final renders; unknown capture date, partial independent brick relief/fin/boxfront limits retained. Parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "78whole coarse brickfront rectangles156red,10actual union-exposed finfronts20white and rightboxfront2white.",
+    "All703coplanar connected domains uniform;156red/22white/2320neutral triangles.",
+    "Original fullheight left mixedwall/base/backing, all component sides/top/back, solid railing proxy and windowbacks neutral; not newly perforated or accurate brick pattern.",
+    "All ten captions identify partial original connected complex approximation, not2026 fullcolor and partial coloring; seven full views fit geometry, three closeups intentional.",
+    "Original2498triangles, STL/build bytes unchanged; immutable original has noOBJ; color review does not validate original approximate geometry or current condition."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "5f618d877c79e591c0d042d2c939452447b10b5ffb63451c767567eb96237ac1",
+    "README.zh-TW.md": "5f618d877c79e591c0d042d2c939452447b10b5ffb63451c767567eb96237ac1",
+    "colorize_model.py": "7afb1d6c13e7d798ef9c8dc904dbbe3c173c7bf2d2302d5a86613e5facc93e39",
+    "render_color.py": "6aa946e9e98dd55b35a938716f26ed6bbee2b6a1ad9bf562d413365fea5032b8",
+    "color-mesh.npz": "ed46f1c248a0fb4576c2af486e899604e0c381297c9bb8f5d1bcf75e539dc2dd",
+    "palette.json": "9a745c98c51cfb66b5ca191c5695bd5d1e33702d0ada4282d770a77f91d0ce15",
+    "appearance-materials.json": "d08c272fd10db1363d4e664f94ff94dc2b98aeb3202b61806db7584ea0cc4131",
+    "COLOR-SOURCE-REGISTER.json": "7fcfe3def569c168e1f76ad8bb2fc813b8205003cfe2b95772ec6b11076deb9a",
+    "model.stl": "5013da67e9ac5fdccd6a8b742bf63e59251cfa85dc9015956babe2e8c2d1d8a0",
+    "build_model.py": "9dd28e4666e4632d83501c421a87bc06dcb4f3416843bf1275c15e7b1f0a7a32",
+    "preview.png": "0a4e5291c544add59f0079f8aebf8ae5711d39485bafea2d22be6d9a1b3d74e6",
+    "rear.png": "2036ef89182c1b7dab0e88e80cc14e2f38238b9aac9f35ab58bba802bbddc67a",
+    "front.png": "8a6997b73e435bedadf48d72d68dc0f46e3cb9590bf142f248f051f4e4f1ee58",
+    "back.png": "7f792f1499c9bf57521970f2f6db037394412b22a945fd247a9d331668363a70",
+    "west.png": "e06bd99474d31f0124d5a89956e976eb7ed19eaef439a94e24d027e98c7f8224",
+    "east.png": "740397bea2e88abdf987fc80add151cb9edbaa586bbf6d312fb561d89cf36fc5",
+    "top.png": "6bd012701797b1461c1920e998f9ef93cd909bc373135342809edee043a6bafc",
+    "entry-detail.png": "79be76b39608c317f74c319ce92f7bb75913cf1b95250850b48f126e612a0082",
+    "facade-detail.png": "9743000c2c44edc085997443650b8666dba6ab2b4870af142226000a3ad69ea9",
+    "roof-detail.png": "3963699936dfaa7333bdca51ed8b9eb4d506968349900b0c5743ce1d3d2161a8"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "f1cbbf3e46f5d76e52a3073033c73165ba35e6f3bca4281ce2a31a7d29251ce8",
+    "SCENE-QA.json": "393c7832255001e6fee804d34a739d0dd48760933ed93d87634e5d21e21a0395",
+    "DELIVERY-QA.json": "d9028f556110d2f34a5de1662269e17567b8f195737e33d9b14b921202f7f0cf"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "522bbbe4bb4acc69b0966e800f015a2c2d87783f29ca14695fecc9ad8e87ac4e",
+    "ORIGINAL-RETENTION-QA.json": "3ccbe0f9b4a53dab8b951f51c4576f7ea05e7a07d5cbc22937a6b58ff587c138",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2"
+  },
+  "reviewer": "finish_science_hall",
+  "verified_at": "2026-11-03T00:31:18.750764+00:00",
+  "parent_manual_review": "Personally viewed the original embedded built photo figure29, original code, preview and final ten-view montage.78 separate coarse brickfront rectangles156red;10union-clipped fin fronts20white and rightboxfront2white. All other mixedwall/backing/base/roof and solid rail proxy neutral. No wedge coloring or fabricated perforations. Seven overall views frame geometry; three details intentionally inspect source-bounded faces. Nominal partial only;2019 report not capture date or currentcondition guarantee.",
+  "parent_root_qa_sha256": {
+    "INDEPENDENT-IDENTITY-0028.json": "23a6e2d40137842ec765bdcbb86ddf2a08cdea6c206dba01c0ef626cb8ae3994",
+    "INDEPENDENT-DOMAIN-0028.json": "3eaeb3df7f12ab673874af47881f1cb3e4b1403cc7e62ff1d0ef80bfd613c770"
+  }
+}

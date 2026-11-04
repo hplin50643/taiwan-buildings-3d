@@ -1,0 +1,69 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "manual_review": "Personally viewed threeofficialphotos, originalcode and finaltenviewmontage.422full externalgrid frontalplanefaces darkgray, underlyingbackplate remainsneutral. No falseglass/fullwhite glassblockpillars. Allmixedwalls theatre landscapedroof stairs rearneutral. 7overallviews fullyframed and3intentionaldetailcrops show towergrid/roof.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "original_face_count": 2664,
+  "material_faces": {
+    "darkgraygridfront": 422,
+    "neutral": 2242
+  },
+  "connected_coplanar_domains": 602,
+  "original_OBJ_exists": false,
+  "file_sha256": {
+    "README.md": "1884919214015427693ef17fa9db882516fbc17ddb1f3493feb7e8e4d4b95ff6",
+    "README.zh-TW.md": "1884919214015427693ef17fa9db882516fbc17ddb1f3493feb7e8e4d4b95ff6",
+    "model.stl": "034fc0380cc6b256c643108e06dfa1b65e0f06580b035f5d8a5cde27ad6b3c34",
+    "build_model.py": "91e9b2960e9d0f9e18d4e5d3728029bf81c2a3c5421c20a300b8adc40e9140ad",
+    "colorize_model.py": "5846d7b7077bcfb525b298aa8fada0fb67bacb223677fe0659db88793facc36f",
+    "render_color.py": "ea4b7bb6dda96a8f4d90e4dcd49238a5cda8ece69396e17a5a48e400bd8f4ed1",
+    "verify_color_scene.py": "683e6eb6886b0e1195ae7544f96cb6ee7472dbaa401af5f96ab374fc5357ec42",
+    "color-mesh.npz": "f70ec37f6cfd562b539653e42a1a7c0653f1994a3a4eec0217981249d9823c31",
+    "palette.json": "f4ee1542eaf69893958fbc512a3fe132dac4a16d8cde9dd9d4f5cce9181a0ddc",
+    "appearance-materials.json": "35023f9f754e7e78ba19c5081c99fbf947edeb064c67702dff544710b142db8a",
+    "COLOR-SOURCE-REGISTER.json": "494be2ebec8c5ba587f0bf2de9434a4f6e747df3a2dbc19f11c4aba5d604e6c1",
+    "appearance.3mf": "03a08d93202ea1d68cfc0d1a805b2a1c02cdc795b3bd7f88a23a6bc83955e4a7",
+    "scene.blend": "2d488b623d3a854e00bbc4506697fcef854401f8860b6886a5cdd3cdaa33f814",
+    "preview.png": "2f834c343dcd8d4cd49be323960fec24f77336b186ab217a7f2952494e08421e",
+    "rear.png": "cbee9a75aff6cf213fc0eefd170926ab7b07517086d18427dc9b14ae78ed39d0",
+    "front.png": "02e24b492b2c946cc530456bf1cc3e7bb922a12b3d42f11dae27631c809394e9",
+    "back.png": "061eae22b2c33de95aea97fbf38e40bb2a49d133042b69a170b8aef90e5e6d7b",
+    "west.png": "6d44902c4413950f4f4238e70fd5cc07d8f77a5e71c7b8c89a7d055541c514ec",
+    "east.png": "9ae84ca9b82a88a0835c9a5b34bf3034e71fb75929a817c9815a0eb1d99f57c6",
+    "top.png": "4b551a500f55d7061ec11af81011019e921e41f16aadd0d3de5fc8d0c5f8b3f2",
+    "entry-detail.png": "02550bc1ab458fa55f783ffcaf12c1ab382d2c9b52bfbd247bb053db6f19d5ee",
+    "facade-detail.png": "ec343f7e540ccab796e467b78ab9f8e0703becc7a853f5f35d9e0001867952ed",
+    "roof-detail.png": "43bf5820d14507e65c88b2161f374323403fc3906e98bf555d5f3fba4a4b4594"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "9651e8dbe4c114faf123e83fc8c76d20da4f875cb0d4c2a50538a6ce7cdf3027",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "36da07f6af87ed1505a8a8fccb5e6dbf81fb49510c9c91c32030c516d02bcffa",
+    "SCENE-QA.json": "feb4f0aaab74a1de1114dec94929f4e14004c92eec1198d41d4566d312d63902",
+    "FRAMING-QA.json": "b2c91d572539939c18f19ba89e8f5c3fb35e45e8f6cfc5c765c3be158c5109a5",
+    "DELIVERY-QA.json": "da89cf4852f93fe4a88b4939ba0ac812a575e9fd4fd7ae0011df3f3b468123fe"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "217f82c2548fb88eb505de4687914fa3215b51879b81269bbc85ef59a6be189b",
+    "ORIGINAL-RETENTION-QA.json": "ac2dd5e1ba1c27376ce6d1e78a88e73dc17c9e66bc0d7a89bf9d21f949e522b8",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "d4d134e557376891507243da002f102ad9eb3022e39079e3566bcb0e245beebc",
+    "ORIGINAL-PACKAGE-READBACK.json": "e15493cce72fa56e97550ca08c870451e7d74a08826294211fa38053ba4f9abf"
+  },
+  "montage": "private-review/final-v1-ten-view-montage.jpg",
+  "retained_history": [
+    "validate-v1/render-preview-v1 logs retain initial setup syntaxfailure/missing generatedmesh;v2 validatemesh/preview successful. No originalfiles modified."
+  ],
+  "limitations": [
+    "Captureunknown;2022modify notcapture",
+    "Not entirecolorrestoration or geometryreauthorization",
+    "No sourcephotos public",
+    "Not testprinted or validatedfilamentslicing"
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T00:02:11.139551+00:00",
+  "review_scope": "Parent personally viewed all three official photos, original code, preview and final ten-view montage. Independently selected whole original grid outward plane422faces and verified493mm2 area against original seven-vertical/twelve-horizontal rectangle union. All602 connected coplanar domains uniform;2664 original triangles identical. Backing and glass-block column proxies neutral. Initial setup missing-mesh validation/render logs retained; subsequent complete build/rebuild/reopen/delivery pass verified.",
+  "parent_root_qa_sha256": {
+    "INDEPENDENT-IDENTITY-2359.json": "43a2f733a780dce52bc34f926e77ab08221199eeebc46f6d832daa5b340529bb",
+    "INDEPENDENT-DOMAIN-2359.json": "ac6e11bf92018dcf2f1f67c29d7c18554c80f26131aa78f2595f20d9301ce14b"
+  }
+}

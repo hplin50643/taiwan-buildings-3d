@@ -1,37 +1,34 @@
-# 國立臺南藝術大學｜音樂系館A–D與第三、四宿舍相連樓群
+# 南藝音樂相連樓群｜僅突出室四前梃局部淺灰
 
-## 模型預覽
+**局部補色未完成：僅突出室四原前梃淺灰；玻璃、混磚灰樓體與其餘域未完成。非全色或2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項`tnnua-music-complex`／`count_delta=0`，官田校區A–D與相連宿舍保持同一原群，不拆多套。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![突出室四梃](entry-detail.png) | ![梃與未知玻璃](facade-detail.png) |
+| ![未知連廊屋群](roof-detail.png) | | |
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 材色範圍
 
-## 辨識量體與證據
-四條長樓、前後兩進合院、跨棟空橋、後段水平陽臺、末端樓梯塔與正面突出玻璃室。A–D教學棟及與其相連的第三、四學生宿舍以一組樓群呈現，不重複計數。棟別標記、窗數與比例是校圖和多角度外觀的近似，沒有製作室內宿舍配置。
+只原突出練習室四根前梃x36/42/48/54，y−66，寬1.2、高8(z15.5..23.5)的完整朝外矩形各2面、共8面淺灰；全原頂點／矩形面積／共面域核驗，不盲套index，不切三角。其餘6654面中性，1942共面連通域同材。原粗梃不是照片密細框精確復刻，不新增grid或玻璃分界。
 
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
+梃側／頂底／後、突出室皮／支柱／外階、窗背玻璃反光框混合全部中性；**中性不是實景灰色證明**。唯一照片不能把混紅磚／灰牆任分四平行量體及背院；四樓群／陽台／橋／屋皮皆中性，不能按重複碼複製實景材色。資料界線不是實景不同材縫。
 
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+原6662三角、尺寸、STL/build字節保持，不重建A–D或宿舍、不新增細框材界、不追認原照片估讀幾何為精測。
 
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
+## 來源年代及權利
 
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
+唯一成功官照`official-view1.jpg`已親看，能對應靠近外階的突出玻璃練習室與淺金屬窄框。其他來源曾逾時未讀，不拿失敗結果作色證。拍攝日未知，頁面2026查核／發布非capture，不宣2026完整現況。URL/hash見source register。原照私存不公開、不貼圖；未見CC不沿repo license推自由商用，HEX僅名義色族非實測。
 
+## 檔案與 QA
 
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共213層均封閉；0.8mm XY薄特徵篩查有1層警示（最高局部面積损失0.78 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
+`appearance.3mf`兩展示材、`scene.blend`真面材、`color-mesh.npz`原三角／材索引。原STL無色、原build字節保留。Immutable原包無OBJ，不冒稱原OBJ存在或保留。
 
-## 組群取捨
-A–D平行翼排布依校方校園導覽圖，連通廊橋為可列印的簡化近似。第三、四宿舍僅以相連樓群整體量體表達，未完整復刻宿舍個別外牆與棟別細節，不能計作兩件完整獨立宿舍模型。
+原README另存`ORIGINAL-MONOCHROME-README.md`或`.zh-TW.md`，舊previews／QA保單色歷程不當本輪色審。依requirements執行`colorize_model.py`、`export_appearance.py`、`validate_color.py`；Blender跑`render_color.py`及`verify_color_scene.py`。原build+color全隔離重建保留不刪，3MF/STL三角multiset／封閉正體積／scene重開／10張1200×900綁定見COLOR-*QA、SCENE-QA、DELIVERY-QA；父另人工終審。
 
+**未實際列印。** 兩展示材不是已驗四色切片工程，支撐、材料對應、薄部強度須另核。
 
+## English limitations
+
+Partial reference only: four complete original projecting rehearsal-room outward mullion rectangles8faces lightgray,6654neutral; all1942coplanar domains uniform. Frame sides/top/back, glassproxy, roomskin, four mixed brick-gray blocks, balconies, bridges, roof and rear courtyard unverified neutral. The sole successful official photograph has unknown capture date;2026page context is not capture/currentcondition. A–D plus connected dormitory remain one originalcomplex/count_delta0. Original6662triangles/STL/build preserved; no new frame grid or geometry validation. Source photo private, not physically test-printed.

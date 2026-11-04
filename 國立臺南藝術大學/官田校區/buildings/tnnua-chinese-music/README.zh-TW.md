@@ -1,34 +1,34 @@
-# 國立臺南藝術大學｜國樂系館
+# 南藝國樂｜僅九真前百葉局部炭灰
 
-## 模型預覽
+**局部補色未完成：僅九真前百葉18原面炭灰；木折板、院落碗、混材牆與其餘域未完成。非全色或2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項`tnnua-chinese-music`／`count_delta=0`，官田校區單一相連群，不另拆套。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![九百葉](entry-detail.png) | ![前面與中性葉厚](facade-detail.png) |
+| ![未證院碗與屋面](roof-detail.png) | | |
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 材色範圍
 
-## 辨識量體與證據
-雙翼院落、凸出的前端演奏量體、深遮陽百葉、長翼折板直肋、架空柱、低入口棚與露天半圓階梯。校方正面照、設計事務所側面與院落照、攝影師另一側長廊交叉比對；後側未見部分保守簡化。露天階梯只是外部量體，沒有室內設施。
+原y−63、x21.5..52.5，z24起每2.8一片高1.2的九個完整真百葉前矩形，各兩面共18炭灰。全三頂點／完整矩形面積37.2mm²／共面域核，不按面心截色，不盲套原index。3416三角中18炭灰＋3398中性，841共面連通域同材。
 
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
+葉的頂底／側端／背及凹底全中性，不把暗前皮擴成整黑玻璃或填縫。實景木折板可見，但原粗直立薄塊不對應廣折木面與暗邊，整列中性，不整端面塗木。原nested Boolean院落碗不保留照片階層／材域，完全中性，不能補色成假木圓盤、不修形。全主混灰混淺磚牆、屋板、階柱、露台、背面維持中性；**中性不是實景灰色證明**。來源覆蓋界線非實材接縫。
 
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+原3416面／尺寸／STL/build字節不改，不新增材界、薄欄或院碗階。原幾何為公開照片估讀近似，色審不追認實測或完整原貌。
 
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
+## 日期與權利
 
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
+三張source-view1/2/3已親看：官正面與另外兩張側面／院碗實景；均無認證拍攝日，不宣2026現況。不同翼面不借材；照片中的木板／院碗證據只用於辨識不可映射域，不硬滿色。URL/hash見`COLOR-SOURCE-REGISTER.json`。原照私存不公開、不貼圖，未見CC不沿repo license推自由商用；HEX名義族群非測色。
 
+## 檔案與 QA
 
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共265層均封閉；0.8mm XY薄特徵篩查有2層警示（最高局部面積损失4.4998 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
+`appearance.3mf`兩展示材、`scene.blend`真面材、`color-mesh.npz`原三角與材索引。原STL無色、原build字節保留。Immutable原包無OBJ，不冒稱原OBJ存在或保留。
 
+原README另存`ORIGINAL-MONOCHROME-README.md`或`.zh-TW.md`，舊previews與QA保留單色歷程不當新色審。依requirements跑`colorize_model.py`、`export_appearance.py`、`validate_color.py`；Blender跑`render_color.py`／`verify_color_scene.py`。原build+color全隔離重建保留不刪，3MF/STL座標multiset／封閉正體積／scene reopen／10張1200×900見COLOR-*QA、SCENE-QA、DELIVERY-QA，父另人工終審。
 
+**未實際列印。** 兩展示材非已驗四色切片工程，支撐／薄部／材料映射另驗。
+
+## English limitations
+
+Partial color only: nine original complete outward louver rectangles18faces charcoal;3398neutral and841uniform coplanar components. Louver top/bottom/ends/back and backing remain neutral, not black glazing. Original coarse wood-fin proxies cannot uniquely map folded wood broad faces; simplified Boolean courtyard bowl does not retain photographed steps/material domains. Both remain neutral without geometry repair. All mixed walls, roofs, stairs and unseen rear neutral.3416originaltriangles/STL/build unchanged, count_delta0; three photos capture unknown, not2026condition. Private photos/no texture, not physically test-printed, no original geometry accuracy endorsement.

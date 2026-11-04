@@ -1,0 +1,31 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed tower external metal grid front darkgray",
+      "hex": "#404543",
+      "faces": 422
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED gridback glassblockpillars towerwalls roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 2242
+    }
+  ],
+  "domains": {
+    "tower_external_grid_front": 422,
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 602
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "2664 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "Only fulloriginal gridfront plane;grid backing/side/underside neutral.",
+    "Glassblockpillar proxies not colored allglass/white.",
+    "Mixedtowerwalls theatre roof court stair neutral.",
+    "Capturedateunknown;EXIFmodify2022 notcapture.",
+    "Two labels not testedfourfilament."
+  ]
+}

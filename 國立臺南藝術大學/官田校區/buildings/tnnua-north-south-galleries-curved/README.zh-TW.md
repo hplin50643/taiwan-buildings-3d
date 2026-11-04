@@ -1,35 +1,33 @@
-# 南北畫廊（曲率修正版）
+# 南北畫廊單群｜內庭上緣局部白
 
-## 模型預覽
+**屋頂、外側及混材主牆未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。南北兩翼保留同一模型群／同一slug，不分成兩套。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![左內庭上緣](entry-detail.png)|![右內庭上緣](facade-detail.png)|
+|![雙翼曲線](roof-detail.png)|||
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 材色範圍
+同 `tnnua-north-south-galleries-curved` 原項目，same-item、count_delta=0。**3680 原三角面、STL與build_model.py字節不變**，不切面；原公開包無OBJ，不假稱保留。
+- 兩翼內庭上緣真垂直coping，左68＋右68＝136原面名義白。原128邊橢圓 rx48／ry65、中心(0,10)，z24.5–26.6；每個三角全部頂點須落同有限chord plane與tangent端界、y裁界−35..58，含原Boolean交接細面。
+- 不以法線門檻／中心點挑色，不新增分界。全918共面連通域均一、0撤色。
+- 其餘3544面中性：外曲面、全部水平屋頂／底面、混磚灰基座主牆、入口柱、低屏、窗洞背板；不將旁邊圖資館色材移入。
+- 色／中性界是證據範圍而非實際材接縫；原近似曲線、開口或屋形不因補色追認。
 
-## 辨識量體與證據
-以校方中軸空拍和校圖重建兩側環抱庭院的弧形翼，改用橢圓環帶近似主要曲率，保留中央開口、近端入口高塊及低弧牆。外廊開口數與深度簡化；橢圓曲率來自照片估計，非測繪，未建立內部展場。
+## 來源／日期與權利
+親看兩張地面官照與既有官方空拍，空拍可見兩翼內庭白色上緣。拍攝日期未知，不稱2026現況精測。來源GO只放行有界來源，不取代builder QA；前段review-only文字保留歷程。
+原照私存，不公開／貼圖；未確認CC／再散布授權，不保證商用。HEX為名義白色族非校準色票；無人物或字樣建模。
 
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+150×140mm原展示底座，照片近似非精測比例。STL無色；3MF／Blender真逐面材。兩材標籤不是驗證兩色／四色耗材切片；**未實際列印**，無切片路徑。
 
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py`／`verify_color_scene.py`。
+原字節／三角multiset、閉合正體積、3MF面材、完整隔離原build＋color重建、scene重開、十圖1200×900與圖文hash核對，程序不取代來源人工核。
+原README、單色previews／render／validation留存歷程，不冒充新QA；沒有刪檔。
 
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
-
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
-
-
-
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共171層均封閉；0.8mm XY薄特徵篩查有0層警示（最高局部面積损失0.0161 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
-
-
+## English scope
+Partial color only:136 existing inner-court upper coping vertical faces,68 per arm, nominaloffwhite. Both gallery arms remain ONE model/slug. All3544 other faces neutral. Original3680 triangles andgeometry unchanged;no originalOBJ. Finite128gon chord/allvertex selection, notnormal or centroid cut. Unknown photo capture dates, no current survey. Not testprinted or validatedfilament slicing.

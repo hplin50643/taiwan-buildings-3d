@@ -1,34 +1,36 @@
-# 國立臺南藝術大學｜生活機能館
+# 生活機能館｜僅右前兩斜鋼撐外前面局部淺灰
 
-## 模型預覽
+**局部補色未完成：僅右前兩斜鋼撐完整46原面淺灰；欄牆代理、折屋與其餘域未完成。非全色或2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項`tnnua-campus-life-hall`／`count_delta=0`，官田校區；工作目錄20261103只處理日期，非capture。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![右前叉撐](entry-detail.png) | ![撐面與中性接頭](facade-detail.png) |
+| ![未知後撐與折屋](roof-detail.png) | | |
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 材色範圍
 
-## 辨識量體與證據
-清水混凝土長方盒、二層外露露臺、偏斜坡道、圓錐狀轉角量體、折面遮陽屋頂與分枝柱。國土管理署建築獎公開圖冊有兩向實景與外觀模型照片，本件保留可見外部量體，不重建內部機能。坡道、欄牆和柱子加厚，後側未被實景證實的開口省略。
+只原(42,−20,37)分叉至(33,−20,48.4166667)與(51,−20,45.9166667)兩半徑1、16邊柱斜鋼撐。依原build的Ry(theta)後Rz(phi)重求u/v/axis，對全三頂點核有限facet chord面距cos(pi/16)、切向半寬sin(pi/16)、軸0..length與1e−4mm容差，選facet幾何外法向朝−Y的完整原域。兩支各23合46淺灰，1906面中性；505共面連通域同材。不以STL細三角normal閾漏sliver，不用面心／半空間截三角，不任意寬半徑圈其他物。
 
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
+柱身／鋼混凝土接頭照片有異材細節而原無界，整柱中性；其他支撐及後半facet未獨核中性。原實心欄牆／坡道護板代開放金屬欄，不得整塗金屬。折屋照片有鋼網／穿孔／陰影與異皮，原厚連續板不保留材界，全部中性，不能暗影作黑屋。主混凝土店體／玻璃快門／錐體／露台廣場階坡皆中性，**中性不是實景灰色證明**。正背材界只來源覆蓋非實材接縫。
 
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+原1952三角與STL/build字節／尺度不改，不做新屋網／細接頭／開欄／面切割；補色不追認原幾何近似為精測。
 
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
+## 來源、日期與權利
 
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
+MOI `moi-independent-award.pdf`物理22–23頁（印40–43）實景外觀照片已親看，尤其印42右近分叉鋼撐；木製模型、設計圖／色立面不取色。來源PDF2013metadata不是照片拍攝年，capture未知，不宣2026現況。NLMA challenge未繞，使用獨立正常取得MOI來源。URL/hash與頁數見source register。
 
+原PDF/照片私存不公開／不貼圖，未見CC不沿repo license推商用；HEX名義色族而非測色。公開只原創材色映射／渲染，不含參考圖。
 
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共260層均封閉；0.8mm XY薄特徵篩查有8層警示（最高局部面積损失26.645 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
+## 檔案與 QA
 
+`appearance.3mf`兩展示材、`scene.blend`真面材、`color-mesh.npz`原三角／材索引。原STL無色、原build字節保留。Immutable原包無OBJ，不冒稱原OBJ存在或保留。
 
+原README另存`ORIGINAL-MONOCHROME-README.md`或`.zh-TW.md`，舊previews／QA保單色歷程不冒新色審。依requirements跑`colorize_model.py`、`export_appearance.py`、`validate_color.py`；Blender執行`render_color.py`及`verify_color_scene.py`。原build+color全隔離重建保留不刪，3MF/STL三角multiset／封閉正體積／reopen／10張1200×900見COLOR-*QA、SCENE-QA、DELIVERY-QA；父另人工終審。
+
+**未實際列印。** 兩展示材非已驗四色切片工程，薄部支撐與材料映射另核。
+
+## English limitations
+
+Partial only: two original near/right fork branches23+23front-facing finite16gon facet triangles lightgray,1906neutral,505uniform coplanar components. Allvertices satisfy exact original cylinder chordplane/tangentextent/axisinterval, no centroid cut or rawtriangle-normal sliver exclusion. Shaft/junction, other supports, solid railing proxies and entire foldedroof remain neutral; simplified thickplate cannot map photographed open grid/shadows. Built photographs on MOIphysical22–23/printed40–43 used, not woodenmodel or drawings. PDF2013metadata not capture, no2026condition.1952originaltriangles/STL/build unchanged/count_delta0; source PDFprivate, no photo texture, not physically test-printed.
