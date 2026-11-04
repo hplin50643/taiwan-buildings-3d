@@ -1,0 +1,50 @@
+{
+  "method": "all-pair convex triangle intersection in source plane; includes hole and outer boundaries rather than area equality only",
+  "results": [
+    {
+      "id": "SOURCE_NORMALIZED_A_END",
+      "old_front_triangles": 14,
+      "new_front_triangles": 17,
+      "old_area_mm2": 3365.2572813032702,
+      "new_area_mm2": 3365.2565905392858,
+      "overlap_area_mm2": 3365.256590539352,
+      "symmetric_difference_area_mm2": 0.000690763851707743,
+      "old_minus_new_area_mm2": 0.0006907639181008562,
+      "new_minus_old_area_mm2": 0
+    },
+    {
+      "id": "SOURCE_NORMALIZED_F_GABLE",
+      "old_front_triangles": 17,
+      "new_front_triangles": 17,
+      "old_area_mm2": 3241.2236242406707,
+      "new_area_mm2": 3241.2236242406707,
+      "overlap_area_mm2": 3241.2236242406707,
+      "symmetric_difference_area_mm2": 0,
+      "old_minus_new_area_mm2": 0,
+      "new_minus_old_area_mm2": 0
+    },
+    {
+      "id": "SOURCE_NORMALIZED_ROOF_left",
+      "old_front_triangles": 16,
+      "new_front_triangles": 16,
+      "old_area_mm2": 8657.330657005048,
+      "new_area_mm2": 8657.330002232033,
+      "overlap_area_mm2": 8657.330002232033,
+      "symmetric_difference_area_mm2": 0.000654773015412502,
+      "old_minus_new_area_mm2": 0.000654773015412502,
+      "new_minus_old_area_mm2": 0
+    },
+    {
+      "id": "SOURCE_NORMALIZED_ROOF_right",
+      "old_front_triangles": 16,
+      "new_front_triangles": 16,
+      "old_area_mm2": 8652.100375412625,
+      "new_area_mm2": 8652.099977082487,
+      "overlap_area_mm2": 8652.099977082486,
+      "symmetric_difference_area_mm2": 0.00039833014307077974,
+      "old_minus_new_area_mm2": 0.00039833013943280093,
+      "new_minus_old_area_mm2": 1.8189894035458565e-12
+    }
+  ],
+  "not_yet_independent_review": true
+}

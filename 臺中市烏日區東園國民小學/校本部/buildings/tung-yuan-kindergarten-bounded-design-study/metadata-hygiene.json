@@ -1,0 +1,103 @@
+{
+  "method": "Embedded SDNA declared offsets; entire fixed buffers zeroed after relative value, every byte outside declared fields unchanged. PNG textual chunks removed, IDAT identical.",
+  "fields": [
+    {
+      "field": "FileSelectParams.dir",
+      "offset": 171816,
+      "size": 1090,
+      "value": "//",
+      "entire_tail_zero": true
+    },
+    {
+      "field": "Scene.r.pic",
+      "offset": 232148,
+      "size": 1024,
+      "value": "//court-oblique.png",
+      "entire_tail_zero": true
+    }
+  ],
+  "scene_sha256": "d2d769632602b5f88a9c473dbf5eb7d33bdce4bffa51b08b80aa6376ceaddf69",
+  "outside_declared_fields_exact": true,
+  "png": [
+    {
+      "path": "rear-oblique.png",
+      "removed_text_chunks": [
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "fd4f3c812da6fa6a8f0d41d26aa44c6f721211d62174088989c754c5267586b8"
+    },
+    {
+      "path": "review-top.png",
+      "removed_text_chunks": [],
+      "IDAT_exact": true,
+      "sha256": "74eceb504bacba345747a5e88da24030f7c86ec306e5c2c27ad150971a6683fc"
+    },
+    {
+      "path": "review-court-oblique.png",
+      "removed_text_chunks": [],
+      "IDAT_exact": true,
+      "sha256": "50522709a0cbf7c70372f5b22a14d7aa50b827306f17afd83470b23052bfbe74"
+    },
+    {
+      "path": "court-oblique.png",
+      "removed_text_chunks": [
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "5a6ff43077971a6b0a268b612fda94860537e4e2f7b5bd22b8969dab9903b128"
+    },
+    {
+      "path": "entry-end.png",
+      "removed_text_chunks": [
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "9acd32dab95a07a524d505d641335d26c027fbcd863cff79075f3600c5edf63f"
+    },
+    {
+      "path": "top.png",
+      "removed_text_chunks": [
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "d8ca4d25463608b1172638c2f1a54958066c01a30f25319a73bac2beb7c56d42"
+    },
+    {
+      "path": "review-rear-oblique.png",
+      "removed_text_chunks": [],
+      "IDAT_exact": true,
+      "sha256": "e5125593bac7f7e71158689e8f1db9ab52b4b94937ed22234f11986399f332cf"
+    },
+    {
+      "path": "review-entry-end.png",
+      "removed_text_chunks": [],
+      "IDAT_exact": true,
+      "sha256": "fa8327984f6dc533c3883a41039025c80256636a31748b54fd918b1b8c5f1f45"
+    }
+  ]
+}

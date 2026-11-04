@@ -1,0 +1,129 @@
+{
+  "status": "REMAINING_MICRO_TRIANGLES_NOT_PRINT_CERTIFIED",
+  "count": 5,
+  "criterion": "cross_squared < 1e-15 mm4, separate from nonzero topology",
+  "triangles": [
+    {
+      "file": "parts/SOURCE_NORMALIZED_F_GABLE.stl",
+      "triangle_index": 40,
+      "area_mm2": 3.811729010257392e-09,
+      "cross_squared_mm4": 5.811711219055119e-17,
+      "exact_zero": false,
+      "vertices": [
+        [
+          -0.0003576265007723123,
+          174.91683959960938,
+          76.19963836669922
+        ],
+        [
+          -5.501946361619048e-06,
+          174.91683959960938,
+          76.19998931884766
+        ],
+        [
+          0.0,
+          174.91685485839844,
+          76.19999694824219
+        ]
+      ]
+    },
+    {
+      "file": "parts/SOURCE_NORMALIZED_F_GABLE.stl",
+      "triangle_index": 52,
+      "area_mm2": 3.868948984398475e-09,
+      "cross_squared_mm4": 5.987506497551198e-17,
+      "exact_zero": false,
+      "vertices": [
+        [
+          37.49964141845703,
+          174.91683959960938,
+          38.70035934448242
+        ],
+        [
+          37.5,
+          174.91683959960938,
+          38.70000076293945
+        ],
+        [
+          37.5,
+          174.91685485839844,
+          38.70000076293945
+        ]
+      ]
+    },
+    {
+      "file": "parts/SOURCE_NORMALIZED_ROOF_left.stl",
+      "triangle_index": 52,
+      "area_mm2": 9.38598532229662e-10,
+      "cross_squared_mm4": 3.523868818814703e-18,
+      "exact_zero": false,
+      "vertices": [
+        [
+          -37.499908447265625,
+          174.91685485839844,
+          38.7000732421875
+        ],
+        [
+          -37.4999885559082,
+          174.91685485839844,
+          38.699989318847656
+        ],
+        [
+          -37.5,
+          174.91685485839844,
+          38.70000076293945
+        ]
+      ]
+    },
+    {
+      "file": "parts/SOURCE_NORMALIZED_ROOF_left.stl",
+      "triangle_index": 63,
+      "area_mm2": 3.1268427846953273e-09,
+      "cross_squared_mm4": 3.9108583200804915e-17,
+      "exact_zero": false,
+      "vertices": [
+        [
+          -15.45578670501709,
+          174.91685485839844,
+          60.74419403076172
+        ],
+        [
+          -15.456070899963379,
+          174.91685485839844,
+          60.7439079284668
+        ],
+        [
+          -15.45608139038086,
+          174.91685485839844,
+          60.743919372558594
+        ]
+      ]
+    },
+    {
+      "file": "parts/SOURCE_NORMALIZED_ROOF_right.stl",
+      "triangle_index": 77,
+      "area_mm2": 9.38598532229662e-10,
+      "cross_squared_mm4": 3.523868818814703e-18,
+      "exact_zero": false,
+      "vertices": [
+        [
+          37.5,
+          174.91685485839844,
+          38.70000076293945
+        ],
+        [
+          37.4999885559082,
+          174.91685485839844,
+          38.699989318847656
+        ],
+        [
+          37.499908447265625,
+          174.91685485839844,
+          38.7000732421875
+        ]
+      ]
+    }
+  ],
+  "two_coplanar_pairs_retriangulated_without_vertex_motion": true,
+  "remaining_five_not_blindly_deleted": true
+}

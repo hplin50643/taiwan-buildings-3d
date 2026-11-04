@@ -1,0 +1,133 @@
+{
+  "interfaces": [
+    {
+      "interface_id": "J01",
+      "a": "PROXY_1F_COURT_AB",
+      "b": "SOURCE_NORMALIZED_A_END",
+      "category": "SOURCE_GABLE_VS_PROXY_WALL_BACK"
+    },
+    {
+      "interface_id": "J02",
+      "a": "PROXY_1F_COURT_CD",
+      "b": "PROXY_BOUNDED_2F_PLATFORM",
+      "category": "PROXY_PLATFORM_VS_PROXY_WALL"
+    },
+    {
+      "interface_id": "J03",
+      "a": "PROXY_1F_REAR",
+      "b": "SOURCE_NORMALIZED_A_END",
+      "category": "SOURCE_GABLE_VS_PROXY_WALL_BACK"
+    },
+    {
+      "interface_id": "J04",
+      "a": "PROXY_1F_SERVICE_0_0",
+      "b": "PROXY_1F_SERVICE_7",
+      "category": "PROXY_PROXY_CORNER_BACK"
+    },
+    {
+      "interface_id": "J05",
+      "a": "PROXY_1F_SERVICE_3",
+      "b": "PROXY_1F_SERVICE_4_1",
+      "category": "PROXY_PROXY_CORNER_BACK"
+    },
+    {
+      "interface_id": "J06",
+      "a": "PROXY_1F_SERVICE_4_1",
+      "b": "PROXY_1F_SERVICE_5",
+      "category": "PROXY_PROXY_CORNER_BACK"
+    },
+    {
+      "interface_id": "J07",
+      "a": "PROXY_1F_SERVICE_4_1",
+      "b": "PROXY_BOUNDED_2F_PLATFORM",
+      "category": "PROXY_PLATFORM_VS_PROXY_WALL"
+    },
+    {
+      "interface_id": "J08",
+      "a": "PROXY_1F_SERVICE_5",
+      "b": "SOURCE_NORMALIZED_F_GABLE",
+      "category": "SOURCE_GABLE_VS_PROXY_WALL_BACK"
+    },
+    {
+      "interface_id": "J09",
+      "a": "PROXY_1F_SERVICE_5",
+      "b": "PROXY_BOUNDED_2F_PLATFORM",
+      "category": "PROXY_PLATFORM_VS_PROXY_WALL"
+    },
+    {
+      "interface_id": "J10",
+      "a": "PROXY_1F_SERVICE_7",
+      "b": "SOURCE_NORMALIZED_F_GABLE",
+      "category": "SOURCE_GABLE_VS_PROXY_WALL_BACK"
+    },
+    {
+      "interface_id": "J11",
+      "a": "PROXY_2F_COURT_AB",
+      "b": "SOURCE_NORMALIZED_A_END",
+      "category": "SOURCE_GABLE_VS_PROXY_WALL_BACK"
+    },
+    {
+      "interface_id": "J12",
+      "a": "PROXY_2F_REAR",
+      "b": "SOURCE_NORMALIZED_A_END",
+      "category": "SOURCE_GABLE_VS_PROXY_WALL_BACK"
+    },
+    {
+      "interface_id": "J13",
+      "a": "PROXY_2F_SERVICE_0_0",
+      "b": "PROXY_2F_SERVICE_7",
+      "category": "PROXY_PROXY_CORNER_BACK"
+    },
+    {
+      "interface_id": "J14",
+      "a": "PROXY_2F_SERVICE_3",
+      "b": "PROXY_2F_SERVICE_4_1",
+      "category": "PROXY_PROXY_CORNER_BACK"
+    },
+    {
+      "interface_id": "J15",
+      "a": "PROXY_2F_SERVICE_4_1",
+      "b": "PROXY_2F_SERVICE_5",
+      "category": "PROXY_PROXY_CORNER_BACK"
+    },
+    {
+      "interface_id": "J16",
+      "a": "PROXY_2F_SERVICE_5",
+      "b": "SOURCE_NORMALIZED_F_GABLE",
+      "category": "SOURCE_GABLE_VS_PROXY_WALL_BACK"
+    },
+    {
+      "interface_id": "J17",
+      "a": "PROXY_2F_SERVICE_7",
+      "b": "SOURCE_NORMALIZED_F_GABLE",
+      "category": "SOURCE_GABLE_VS_PROXY_WALL_BACK"
+    },
+    {
+      "interface_id": "J18",
+      "a": "SOURCE_NORMALIZED_F_GABLE",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "category": "SOURCE_SOURCE_ARTIFICIAL_BACK_INTERSECTION"
+    },
+    {
+      "interface_id": "J19",
+      "a": "SOURCE_NORMALIZED_F_GABLE",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "category": "SOURCE_SOURCE_ARTIFICIAL_BACK_INTERSECTION"
+    },
+    {
+      "interface_id": "J20",
+      "a": "SOURCE_NORMALIZED_A_END",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "category": "SOURCE_SOURCE_ARTIFICIAL_BACK_INTERSECTION"
+    },
+    {
+      "interface_id": "J21",
+      "a": "SOURCE_NORMALIZED_A_END",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "category": "SOURCE_SOURCE_ARTIFICIAL_BACK_INTERSECTION"
+    }
+  ],
+  "artificial_depth_ratio": 0.98,
+  "source_gables_own_proxy_wall_overlaps": true,
+  "platform_yields_to_proxy_walls": true
+}
