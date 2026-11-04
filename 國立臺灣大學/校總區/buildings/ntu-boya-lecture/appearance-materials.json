@@ -1,0 +1,53 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Photo-bounded brick return",
+      "hex": "#AE7F6C",
+      "faces": 8
+    },
+    {
+      "id": 1,
+      "name": "Concrete portico stair and circular aperture",
+      "hex": "#A8ADA6",
+      "faces": 295
+    },
+    {
+      "id": 2,
+      "name": "Observed lower wing light wall",
+      "hex": "#D0D3CB",
+      "faces": 181
+    },
+    {
+      "id": 3,
+      "name": "Existing discrete window shade",
+      "hex": "#475B56",
+      "faces": 72
+    },
+    {
+      "id": 4,
+      "name": "Coarse existing balcony and recess metal family",
+      "hex": "#9FAFA7",
+      "faces": 284
+    },
+    {
+      "id": 5,
+      "name": "Grass reference only original slope upper face",
+      "hex": "#758656",
+      "faces": 6
+    },
+    {
+      "id": 6,
+      "name": "UNVERIFIED or topology-crossing full plane neutral",
+      "hex": "#A7ABA5",
+      "faces": 246
+    }
+  ],
+  "geometry_policy": "1092 original triangles unchanged.",
+  "limits": [
+    "Main front full plane neutral because original triangles cross upper brick/lower frame boundary.",
+    "No added bridge/railings/sunshade blades.",
+    "Green only sloped top; unknown far side/back/flat roofs neutral.",
+    "Seven labels are not a tested multi-filament project."
+  ]
+}

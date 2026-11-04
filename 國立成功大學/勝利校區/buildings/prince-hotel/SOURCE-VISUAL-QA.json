@@ -1,0 +1,57 @@
+{
+  "status": "PASS_BOUNDED_SAME_GEOMETRY_COLOR_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall independent of implementer lixian_color",
+  "actually_viewed": [
+    "1689 daylight photo",
+    "1692 night photo",
+    "original code and preview",
+    "final preview and all nine other renders including enlarged entry detail"
+  ],
+  "checks": {
+    "original_vertices_exact": true,
+    "original_faces_exact": true,
+    "original_STL_and_build_bytes": true,
+    "all_horizontal_upper_roofs_neutral": true,
+    "night_only_long_main_front_neutral": true,
+    "five_materials_used": true,
+    "no_false_diagonal_paint_patches_observed": true,
+    "README_source_limits_and_scope_match": true
+  },
+  "material_face_counts": {
+    "0": 620,
+    "1": 425,
+    "2": 276,
+    "3": 256,
+    "4": 1225
+  },
+  "sha256": {
+    "colorize_model.py": "ffdb5cdffd638f28fb2362fe2c6e3bdbacb70ed364098ad02edd2294a117229c",
+    "render_color.py": "207880ea94a60e0613524af7dea37258178ced4532484d69f0a192d1e77dae3c",
+    "export_appearance.py": "ed6aaaeaef55a5da769d24b124b32c33203b07c878fbb93ec5150a93ee4007ac",
+    "validate_color.py": "4abbd48138b88c3f9c656da6e41eee4b2aa677803026a23160ad0122dd23e479",
+    "verify_color_scene.py": "a212ac9012f88ba6116f79a883f12c38ada474d944077bceef1cbac45e5cb38f",
+    "color-mesh.npz": "2660c95479f032faea5b6cf0006c30a463709124e72fc57e27d6826df52d37d1",
+    "palette.json": "3212fcf1247aac057b16af4ff1de8c756f898d4fee90ea6581ff800566a098d3",
+    "README.md": "1115422d7ab51623278e956318a974801a81342f355d1c796de3d09335f88446",
+    "COLOR-SOURCE-REGISTER.json": "69eb9c736e3bf7efc9aaa7c791d9a69edb1898ef7a655d2e992c78007215464b",
+    "scene.blend": "eecb689f24f6dd40cf348e41052b864381531f4b8a76581c9a7ddb3819555dcc",
+    "appearance.3mf": "3b961e37ee4bd6e66b2030d8fe36720fc5eae65f8180e9a6cb0b22cdd087be73",
+    "model.stl": "cf5263cd1a58f66ee38a8ecc5aacc955cb286320808485da817b9754c3de7b60",
+    "preview.png": "481ed09f37a63c1b44919377d13fae89fc6d213a60d24484151328c78fec706e",
+    "rear.png": "95448422cbb397146c7cbdbf8cc143f117950f6b1f69dad3bf35f98aa8f67afc",
+    "front.png": "00352b831e10b748a7f8e4878c770b3e6b71b25102fcfe2adaaf4337008d3199",
+    "back.png": "5ed63088a7a2939f84bb5da4f7b81c441652b5e4b09e1534965aeeb50731873e",
+    "west.png": "1f40ee96ad4f3f7a2734a4d7a52731070e934573071a5d6b19dcf9051ea436b0",
+    "east.png": "58de48c15d2384a8c939b33d9b95756f2539b35880f29da7bb511db0bf53e431",
+    "top.png": "732ee08698eb6e95f723d8248f761c8ce69fd80d38f0a1472df2d8d3ab3b53ff",
+    "entry-detail.png": "1766853529887cf10f1ba7a4c02daabcb99098362debc1e44437e017e625aece",
+    "corridor-detail.png": "ca2c6deb33b10d674de7ee080e756ba6fc1bd2df67bc702822a9f2ce31a5d979",
+    "roof-detail.png": "0b8d6ba9dbd1bfa4817c710036c03220c6d85fe6a8360f011adc57d0bf68c096"
+  },
+  "limits": [
+    "Tower/cylinder brick-family continuity is explicitly inferred from same component, not all-perimeter measured color.",
+    "Night photo supports geometry matching, not yellow paint. Long facade wall/slabs remain neutral and recesses generic shade.",
+    "Existing rectangular podium intersection neutral stripe is not newly modeled column. No external arch ring invented.",
+    "Approximate old geometry unchanged; no physical print or filament slicing test."
+  ]
+}

@@ -1,5 +1,12 @@
 # 國立成功大學・勝利校區
 
+## 模型圖鑑
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| **國立成功大學｜未來館前棟（舊總圖書館前棟）**<br>[![正面](buildings/future-venue-front/appearance/previews/front.png)](buildings/future-venue-front/README.md)<br>[正面](buildings/future-venue-front/appearance/previews/front.png) · [背面](buildings/future-venue-front/appearance/previews/rear.png)<br>[說明與來源](buildings/future-venue-front/README.md) · [前棟限域外觀](buildings/future-venue-front/appearance/README.md) · [STL](buildings/future-venue-front/model.stl) | **國立成功大學｜太子文旅（原成大會館）**<br>[![正面](buildings/prince-hotel/preview.png)](buildings/prince-hotel/README.md)<br>[正面](buildings/prince-hotel/preview.png) · [背面](buildings/prince-hotel/rear.png)<br>[說明與來源](buildings/prince-hotel/README.md) · [STL](buildings/prince-hotel/model.stl) · [彩色3MF](buildings/prince-hotel/appearance.3mf) | **國立成功大學｜游泳池暨球類場館**<br>[![正面](buildings/swimming-ball-sports-building/previews/front.png)](buildings/swimming-ball-sports-building/README.md)<br>[正面](buildings/swimming-ball-sports-building/previews/front.png) · [背面](buildings/swimming-ball-sports-building/previews/rear.png)<br>[說明與來源](buildings/swimming-ball-sports-building/README.md) · [STL](buildings/swimming-ball-sports-building/model.stl) |
+| [![國立成功大學｜紀念校門（窮理致知牌坊）：實際模型預覽](buildings/ncku-commemorative-gate-1956/previews/front.png)](buildings/ncku-commemorative-gate-1956/README.md)<br>**[國立成功大學｜紀念校門（窮理致知牌坊）](buildings/ncku-commemorative-gate-1956/README.md)** |  |  |
+
 本校 **47 套**；官方VR勝利分類目前 **4 套**，非全校完成。
 
 [返回學校總覽](../README.md)
@@ -10,7 +17,7 @@
 
 每格是一件不同模型。範圍、來源年代、近似與薄件警示以各件詳頁為準。
 
-| 建築模型 | 建築模型 | 建築模型 |
-| :---: | :---: | :---: |
-| **國立成功大學｜未來館前棟（舊總圖書館前棟）**<br>[![正面](buildings/future-venue-front/appearance/previews/front.png)](buildings/future-venue-front/README.md)<br>[正面](buildings/future-venue-front/appearance/previews/front.png) · [背面](buildings/future-venue-front/appearance/previews/rear.png)<br>[說明與來源](buildings/future-venue-front/README.md) · [前棟限域外觀](buildings/future-venue-front/appearance/README.md) · [STL](buildings/future-venue-front/model.stl) | **國立成功大學｜太子文旅（原成大會館）**<br>[![正面](buildings/prince-hotel/previews/front.png)](buildings/prince-hotel/README.md)<br>[正面](buildings/prince-hotel/previews/front.png) · [背面](buildings/prince-hotel/previews/rear.png)<br>[說明與來源](buildings/prince-hotel/README.md) · [STL](buildings/prince-hotel/model.stl) | **國立成功大學｜游泳池暨球類場館**<br>[![正面](buildings/swimming-ball-sports-building/previews/front.png)](buildings/swimming-ball-sports-building/README.md)<br>[正面](buildings/swimming-ball-sports-building/previews/front.png) · [背面](buildings/swimming-ball-sports-building/previews/rear.png)<br>[說明與來源](buildings/swimming-ball-sports-building/README.md) · [STL](buildings/swimming-ball-sports-building/model.stl) |
-| [![國立成功大學｜紀念校門（窮理致知牌坊）：實際模型預覽](buildings/ncku-commemorative-gate-1956/previews/front.png)](buildings/ncku-commemorative-gate-1956/README.md)<br>**[國立成功大學｜紀念校門（窮理致知牌坊）](buildings/ncku-commemorative-gate-1956/README.md)** |  |  |
+
+## 既有模型彩色更新（不新增套數）
+
+`prince-hotel` 保持原STL與建模程式位元組，按官方照片為原三角面分材，增加彩色外觀3MF、Blender及十視圖；未核背部／屋面保持中性。不是提高幾何精度或現況測繪，未驗四色耗材映射、切片或實體列印。舊單色previews與QA留存為歷史，不作本次彩材驗證；詳新版README。

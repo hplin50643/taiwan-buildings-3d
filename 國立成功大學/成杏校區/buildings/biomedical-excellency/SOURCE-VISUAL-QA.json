@@ -1,0 +1,127 @@
+{
+  "status": "PASS_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE_WITH_DOCUMENTED_LIMITS",
+  "reviewed_utc": "2026-11-02T15:13:00Z",
+  "personally_viewed": [
+    "2933.jpg",
+    "2934.jpg",
+    "2925.jpg",
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "entry-detail.png",
+    "corridor-detail.png",
+    "roof-detail.png"
+  ],
+  "original_STL_sha256": "ecc5c03372762acb06f7f70c9946a6285237001473274eee5839f1a1ae0bfcb1",
+  "mesh_sha256": "af597615f9dd3efa8b014d5f3c8d98f3fd9993d9ebb3d7580d5a8232ced54cd3",
+  "build_code_sha256": "744ca3c37d9cf6035b29533c7b22113cfac8f96737644b5f379f20cd0d6c5af8",
+  "render_code_sha256": "1f906eb19c6f2067acc8bb3bd98a23427dab51eace0fef11847d3bd48a4db359",
+  "readme_sha256": "a4bce9b426dca43a27dc221a2a1b23c07a345f246d99a72a3768fe6b40a3aa38",
+  "bound_files_sha256": {
+    "build_model.py": "744ca3c37d9cf6035b29533c7b22113cfac8f96737644b5f379f20cd0d6c5af8",
+    "colorize_model.py": "ca2b64a9e7c73cdd0f1c4f347a1ef087298e73abbc56a001ab20bffaea1d6861",
+    "render_color.py": "1f906eb19c6f2067acc8bb3bd98a23427dab51eace0fef11847d3bd48a4db359",
+    "export_appearance.py": "3c9daf241de2136c3cbe3fc79dcfca18da4f06d986c97eecb53ad7d4908b2502",
+    "validate_color.py": "9fa914601f0b2b2eb1f393b23bd2b7a5b287d422ece4b25025291489f651fc94",
+    "verify_color_scene.py": "ea619de8faae7d2d4a507e2e50ddde83eddede2edd5df5f8f56735aded751db8",
+    "README.md": "a4bce9b426dca43a27dc221a2a1b23c07a345f246d99a72a3768fe6b40a3aa38",
+    "COLOR-SOURCE-REGISTER.json": "39f035656a78467eebffd07f46f83196d1ee18f98c39767cf202585d1ab895f1",
+    "palette.json": "9cf82467a53bdcd401bae034b52763eb82109bd506cb396c7b4c36f5e0fe2814",
+    "appearance-materials.json": "26b084e607ec20043ae73f7827a9b108f8604ac3d2aa1b3cb7e880218adfd473",
+    "scene.blend": "cae37fc83f311fa72cfd42e751e0e5f0d33d1c35d3109e2cf753860102e31d12",
+    "appearance.3mf": "c1d1762e641fef3bfb4a3c0492a276ef7f5ec0cd78e8f84df4ad877a9dfd99c9"
+  },
+  "png_sha256": {
+    "preview.png": "f12253451e7406619b5a9dd185bee6f2ada3095cf167b6f5695b60ba183fa7b3",
+    "rear.png": "65c7c0580515747bf545fe1ead5f81d8a61a528907b6379790edfa5f397ca5d8",
+    "front.png": "aa64cd019172a6ee9c28450a076b1ca543ffcdb3e604ff8fb7e22c6181aec80c",
+    "back.png": "82dfc86379aed8e7336077df39c46b968f304e72660ce1eebfd08c019cdfef31",
+    "west.png": "ea13cfc874ffbbac6e998cec0d13635308ade4e1c0b8869bb4ba947a62e46573",
+    "east.png": "67f3f7a3e47d7edc036e9f32cdc307e571b69a90e57f354c482d8775bef95d2a",
+    "top.png": "263890353b5a87bbcc1edc2cfa7d612adbda07862f34da4a98d8a2ae5e1e9af5",
+    "entry-detail.png": "12018f6e040b4aca6f6d1fddd8d95f0db237e55be3c48cae12b918808cdca6d4",
+    "corridor-detail.png": "eb34bb8760a8501e1e6d54bfd83afe931417f8c12ff373ce4029d931f785c2e7",
+    "roof-detail.png": "8362eedf090ad1ed4b6a6052b380442ec9f0997ae47afedddb670ebc69d88bfe"
+  },
+  "source_hashes": {
+    "2933.jpg": "72cf4119a7ac6ba18d3e2e68bbf80fa042677361c7437062109881f6b0b809c8",
+    "2934.jpg": "3bac87444375f8ebcc5cc35b55444ad26fcb8b7ae108b5b6b7bc3d3f27ee82f6",
+    "2925.jpg": "bacb23e43c309510f29e972d74fd09afc7aa3db31b1179f9a042127664b787f9",
+    "BIOMEDICAL_EXCELLENCY-INDEPENDENT-FACE-COLOR-REVIEW-1459.json": "937009eb962b6bcd3a65d23ca6a04a72acaf8555a8e5183081bd5c32cdfdf547"
+  },
+  "geometry": {
+    "triangles": 3166,
+    "vertices_exact": true,
+    "faces_exact": true,
+    "STL_bytes_exact": true,
+    "build_bytes_exact": true
+  },
+  "material_counts": {
+    "0": 468,
+    "1": 1356,
+    "2": 154,
+    "3": 6,
+    "4": 1114,
+    "5": 68
+  },
+  "independent_numeric_regions": {
+    "rear": {
+      "face_count": 2,
+      "material_counts": {
+        "4": 2
+      }
+    },
+    "right_external": {
+      "face_count": 2,
+      "material_counts": {
+        "4": 2
+      }
+    },
+    "left_external": {
+      "face_count": 2,
+      "material_counts": {
+        "4": 2
+      }
+    },
+    "nine_recess_backing_panes": {
+      "face_count": 18,
+      "material_counts": {
+        "2": 18
+      }
+    },
+    "screenfront": {
+      "face_count": 2,
+      "material_counts": {
+        "0": 2
+      }
+    },
+    "upper_upward_faces": {
+      "face_count": 131,
+      "material_counts": {
+        "4": 131
+      }
+    }
+  },
+  "visual_findings": [
+    "All ten final images personally inspected: no artificial diagonal color patches or incoherent large planar assignments identified.",
+    "Warm front opaque masses and screen remain distinct from silver central existing frames; no silver spill onto front screen.",
+    "Tall left recess has shadowed opaque inner skin and nine separate gray-green original backing panes, not a continuous black glass void.",
+    "Original lower three entry recesses are generic shade; no new fittings or geometry.",
+    "Unknown outer sides, complete rear and upper horizontal surfaces remain neutral.",
+    "Seven full views complete, three details intentionally cropped; captions legible."
+  ],
+  "limitations": [
+    "Only same-item source-bounded color; original3166-face simplified architecture not newly certified exact or current.",
+    "No new facets, window subdivisions, signs, texture photographs or neighboring hospital structures.",
+    "Three overlapping front photographs do not establish a complete four-side material survey.",
+    "Upload dates are not verified capture dates; color is an uncalibrated family approximation.",
+    "Six appearance labels are not a verified multi-filament slicer project or physical print.",
+    "Photos retained privately; attribution/noncommercial requirements remain and commercial rights not guaranteed."
+  ],
+  "documentation": "README including clearly separated original history and final source register reviewed; current material limits accurately disclosed.",
+  "review_scope": "Independent source/code/geometry/material-region/ten-image review, separate from builder format, isolated rebuild and shader-reopen checks."
+}

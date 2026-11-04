@@ -1,3 +1,50 @@
+# 國立臺灣大學｜博雅教學館：原幾何補彩色
+
+## 彩色模型預覽
+
+**同一項目材色更新（count_delta = 0），原 1092 三角面不變。照片雖證主前牆上部為磚，原大三角跨上磚／下框界線，故主前平面整面保中性，避免假斜色；僅可分的前緣返面保磚色。不是全館精確實景色復原。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂面](top.png) | ![入口](entry-detail.png) | ![立面](facade-detail.png) |
+| ![後坡](roof-detail.png) |  |  |
+
+## 材色範圍與限制
+
+- 主前 y = −27 的完整原平面保中性，不能把中性色當現場真漆。左主返面僅前緣 y = −27..−22.5 的原完整域採近似磚色；陽台內後實牆未充分證色仍中性。
+- 既有大門廊、圓孔內壁、支柱及入口階為清水混凝土灰；不新增照片欄杆、磁磚紋或精密構造。原低翼已見外側與前面淺灰，離散窗凹底灰綠陰影。
+- 原粗化陽台唇／欄板採灰金屬色族，不以色線虛畫照片細欄杆。窗凹只分既有面，不新增遮陽片或連續玻璃幕牆。
+- 官照高視角可證草坡；綠色只限原後側楔形的向上斜面，垂直端壁／側壁不塗綠。不移植周遭草地、鄰棟或往普通館空橋。
+- 主／低翼平屋面、遠側與後面、底座及未證面中性；照片只供近似色族，不是校準色票或同年全館測繪。補彩不背書原模型尺寸與細部精度。
+- 不增刪幾何；遇大三角跨材界，整片中性或既有完整面統一處理，絕不切面湊精色。
+
+## 格式、重建與驗證
+
+原 `model.stl`、`model.obj`、`build_model.py` 位元組不變；原 STL／OBJ 不當本次彩色輸出。`appearance.3mf` 七基本材質逐面指派，`scene.blend` 有實際 shader，`color-mesh.npz` 保存原面座標。七材質外觀不是已驗證四色／多耗材切片專案；未實際列印，未執行切片器驗證。
+
+```sh
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 6 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+沿原 requirements 安裝 NumPy、trimesh、manifold3d，另使用 Blender 4.3.2。隔離重建目錄保留不刪除。新 QA 為 COLOR-FORMAT-GEOMETRY-QA.json、SCENE-QA.json、DELIVERY-QA.json、INDEPENDENT-COLOR-VISUAL-QA.json；原單色 previews、render_preview.py 和舊檢查檔保留為歷程，不當本次材色重建入口。七全景有完整邊界檢查；三細景刻意局部構圖。
+
+## 色源與權利
+
+來源為臺大博雅官方介紹外觀合照，以及 Harvard 對博雅入口的實景照片；合照室內部分未用於本次外觀材色。精確頁面／圖片公開網址與權利見 COLOR-SOURCE-REGISTER.json。
+
+原照／網頁與核圖私人保存，原圖不隨模型公開，不作貼圖。未見通用 CC 授權；保留各原作者、臺大及 Harvard 來源權利，不把專案開源授權套於照片、不保證商用權利已清。Harvard 頁面此次存取失敗，但已成功取得原直圖，只依實際取得圖片核色。
+
+## 原模型說明與歷程
+
+以下保留原說明；本次材色入口以上文優先，舊單色預覽保留為歷程。
+
 # 國立臺灣大學 博雅教學館
 
 ## 模型預覽

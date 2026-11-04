@@ -1,0 +1,82 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "ntu-boya-lecture",
+  "original_faces": 1092,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "sources": [
+    {
+      "image_url": "https://ntuinfo.ntu.edu.tw/img/a3_6_pic4.jpg",
+      "sha256": "861592527e64209ac8465aa7a8afea039583a8ecbc160af2875c5717e101ca44",
+      "actually_viewed": true,
+      "capture_date": "未確認",
+      "page_url": "https://ntuinfo.ntu.edu.tw/p1_3_6.html"
+    },
+    {
+      "image_url": "https://bpb-us-e1.wpmucdn.com/sites.harvard.edu/dist/8/289/files/2024/09/Boya-2.jpg",
+      "sha256": "1f7a869bf79f6b91d9df1c42cf58c208bb444be0d1dde0f22c217d12ce0a01eb",
+      "actually_viewed": true,
+      "capture_date": "未確認",
+      "page_url": "https://sites.harvard.edu/harvard-taipei-academy/campus/"
+    }
+  ],
+  "audit": {
+    "sha256": "42310f96198de775c94402d6393d7b74b86b99d7ce07da9648c5d2821308f750"
+  },
+  "scope": "N13博雅本館原模型，無往普通館空橋",
+  "rights": "官校與Harvard公開照片僅私人參考，未見CC再授權，不公開原圖/版面或作貼圖、不宣稱商用權利完整清理。原作者/校方權利保留。",
+  "access": "兩原圖/臺大頁下載成功；Harvard頁HTTP502，直圖成功不假稱頁面授權已查；無權限拒絕",
+  "observations": [
+    "主前方窗樓翼磚紅，門廊/圓孔罩/柱/階為清水灰，低翼淺灰白",
+    "玻璃/凹窗深灰綠、露台淺灰金屬，原粗實欄非真細欄",
+    "官方左上俯照草斜坡，僅可對原斜頂；側壁不能全綠，主屋皮未知中性",
+    "照片不支持新增字/窗格/金屬細遮陽，不修改原1092三角"
+  ],
+  "palette_nominal_srgb": {
+    "brick": "#AE7F6C",
+    "concrete": "#A8ADA6",
+    "light_wall": "#D0D3CB",
+    "window_shade": "#475B56",
+    "metal": "#9FAFA7",
+    "grass_reference": "#758656",
+    "unknown": "#A7ABA5"
+  },
+  "limits": [
+    "原目測幾何粗化不更動，不由補彩聲稱精確現況",
+    "未知背/屋面中性；窗/坡位置待獨審",
+    "跨界大三角整面neutral/一致粗化，不重心染斜片",
+    "照片未註拍攝日期，2024路徑不是拍攝日期證明"
+  ],
+  "issued_utc": "2026-11-02T15:11:00Z",
+  "independent_review": {
+    "sha256": "fddc3967f7453800bc9f5b686edad5771a496389c8c342c4041f11919035614c"
+  },
+  "approved_mapping": {
+    "main_front": "y=-27 main slab front above canopy: muted brick family; existing square window backs subdued gray-green/dark shade, existing returns gray where separable. No new sunshade blades.",
+    "left_main_return": "Photographed brick return next to balconies supports existing x=-17 plane where exposed, bounded same component interpretation; far x=61 or rear y=43 not established.",
+    "entrance_portico": "Existing canopy z24..26.5, front thick left pier, round hole inner skin, central support and exterior approach stairs concrete light/medium gray. No added texture/holes/railings.",
+    "lower_wing": "Existing photographed x=-55.5 lower-wing outer face warm light gray, window backs subdued gray-green; other unconfirmed rear walls and roof neutral.",
+    "balconies": "Existing coarse lips/parapets on left side gray metal/concrete family only; no painted fine railing or new fins.",
+    "grass_ramp": "Official elevated exterior quadrant supports grassy ramp roof; apply muted green only to sloping upper face of existing ramp_x(-36,49,z2.9,w49,d20,h13). Vertical wedge end/side walls remain neutral or source-bounded gray, never all rear building green.",
+    "unknown": "Main and lower flat roofs, far side/back, base and unconfirmed surfaces neutral. No connecting bridge or surrounding buildings."
+  },
+  "mandatory_public_limits": [
+    "Photographs not calibrated color standards; their dates do not certify current full-building state.",
+    "Whole existing coherent faces only. Large triangle crossing source boundary neutral; no centroid diagonal paint and no subdivision.",
+    "Original geometry remains an approximation; color update does not certify details or measurements.",
+    "Harvard page unavailable but supplied image downloaded successfully; no inferred CC permission. Raw photo private, no texture and no commercial rights assurance.",
+    "Color materials not tested filament slicing/physical print."
+  ],
+  "required_QA": [
+    "Original STL bytes and vertex/triangle equality",
+    "10 views inspect source mapping, neutral unknowns and diagonal paint",
+    "Green restricted to original slope top only; no green vertical wedge faces",
+    "Preserve original files and no public photos/textures"
+  ],
+  "model_QA_pending_at_source_issue": true,
+  "current_model_QA": "See final format, scene, delivery and independent visual reports.",
+  "implementation_scope_narrowing": "Main front entire plane neutral: original large triangles cross upper brick/lower frame color boundary. No new subdivision.",
+  "implementation_return_scope": "Only original complete front-edge return x=-17/y=-27..-22.5 gets brick; unverified balcony inner/back wall neutral.",
+  "topology_narrowing_review_sha256": "855e76d448997e9b9a9e63b62e4485d7bceecb732e960169fce0edd8c5d2eebf",
+  "material_domains": "8 front-edge return faces brick; all 149 main-front faces neutral; 6 true upward sloping ramp faces grass, no vertical green walls."
+}
