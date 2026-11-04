@@ -1,41 +1,37 @@
-# 國立臺東大學知本校區：第二學生宿舍主要棟群
+# 知本第二宿舍主群｜兩前低帽局部瓦色
 
-## 模型預覽
+**三列長屋坡、立面與其餘材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅前列兩低斜帽上皮局部土紅瓦族，不是全宿舍補色完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![左低帽](entry-detail.png)|![右低帽](facade-detail.png)|
+|![主群屋頂](roof-detail.png)|||
 
-三列斜頂住宿棟，餐飲中心另列待製作，不算宿舍已含餐廳。
+## 材色範圍
+同 zhiben-second-dormitory 原項目，same-item、count_delta=0。4426原三角面、STL與build_model.py字節不變。三列近似住宅主體同一群，不含另棟餐飲中心，不拆套；不是逐棟精測或全宿舍校區。原公開包無OBJ，不假稱保存不存在的原件。
+- 只前列兩低斜帽原上皮：原yz端點(−57,23)→(−37,36)、x−62..−44及28..46；各8Boolean原面，共16面名義低飽和土紅瓦族。
+- 全三頂點符合原有限斜plane、切向與完整x拉伸邊界。整個無限plane原面恰等於兩有限域聯集，沒有normal／中心點篩掉碎面。原主體Boolean遮擋後自然露至y−50、z27.55，不是人工裁線；窗切口凹缺不填補。
+- 其餘4410中性：全部三列長屋面／後坡、其他排低帽／橫屋坡、屋厚／檐／山牆／底、白灰紫混牆與欄板、樓梯、窗背框／內容、地面及未知背側。
+- 原屋形與群體配置只是照片近似，不因本次材色背書幾何。材色／中性分界表達證據限制，不是真實材料接縫；不造材界、瓦紋或細節。
 
-公開外觀詮釋模型，非測量或校方官方模型。含底座尺寸：150.00 × 120.00 × 43.50 mm；最長邊150 mm，各件獨立縮尺。-Y為展示正面，不代表地理北向。舊照片不能證明2026年每個細節未變。
+## 來源與日期
+親看三校方已建成外觀實照，包括近景、整體外觀與空拍。只取可辨前低帽瓦色族，不把空拍當其他複雜屋坡可唯一對位證據。拍攝日期未知，發表／修改日期非已驗拍攝時間，不保證2026現況。
+原照私人參考、不公開、不貼圖；未確認CC或再散布授權，不保證商用。HEX只是名義材色非校準色票。正式GO已發行，繼承的先期review-only文字不改其狀態，仍須builder QA。
 
-## 證據與近似
-保留階梯式斜頂、前凸端翼、低斜帽、深凹外廊與深色直立樓梯段。幾何將複雜屋頂合併成三列，棟間連結、背面與精確窗序尚未完整查明。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150×120mm展示底座，照片近似非測量比例。STL無色；3MF／Blender有真逐面材。兩材標籤不是驗證兩色／四色耗材切片，未實際列印，無切片路徑。
 
-來源詳見sources.json。已檢視所列照片像素並交叉核對標題和校區，不以圖片檔名單獨判定身份。原始照片未納入套件。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離原build＋color重建、原bytes／全三角multiset、閉合正體積、3MF逐面材、scene重開、十圖1200×900及圖文hash。原依賴隔離使用，不改原碼；程序不替代人工來源核對。
+原README／previews／validation／renderer保留歷程，不冒充新QA；沒有刪檔。
 
-## 重建與檔案
-model.stl為毫米制；scene.blend為可編輯單一網格，含原始程式文字。previews內正、背與立面圖直接從交付STL生成。
-
-```sh
-python -m pip install -r requirements.txt
-python build_model.py
-blender -b -t 2 -P render_preview.py
-python validate_model.py
-python section_check.py
-```
-
-程式可獨立離線重建，無須原照片、其他模型或網路。Blender 4.3.2；其餘依賴版本見requirements.txt。
-
-## 列印建議
-外廊橫板、斜帽與挑簷可能需局部支撐；約1.1 mm樓板边帶。
-
-建议0.12–0.16 mm層高。請自行於切片器檢查支撐、橋接、細節與首層；沒有實體試印或切片器驗證。
-
-## 驗證
-validation.json記錄原始二進位STL法線單位長及繞序一致、無退化面、封閉、邊與頂點流形、單一連通表面且無分離內腔殼、正體積、150 mm最大尺寸、乾淨目錄重建SHA256及Blender/STL幾何一致。
-
-本件4426三角面，體積332184.42 mm³。section_validation.json另檢查217個0.2 mm等距幾何截面；這不是切片器、刀路或支撐驗證，也不宣稱窮盡所有可能自交問題。
+## English scope
+Partial only:16 original front low-cap upper-skin triangles(8+8 Boolean fragments), muted terracotta tilefamily;4410 unverifiedneutral. Original4426triangles unchanged,no originalOBJ. Three approximate residentialbars formonegroup;diningcentre excluded. Entire infiniteplane equalsunion offinite allvertex domains. NaturalBoolean clipping andwindownotches retained. Allmainroofs,walls,windows andothercaps neutral. Captureunknown;not fullcurrent survey or validatedfilament slicing;not testprinted.
 
 
+## 版本 2 名稱勘誤
+
+3MF 與 Blender 物件顯示名稱統一更正為「Zhiben Second Dormitory partial color」，並同步匯出、渲染與驗證程式的名稱。場景重新開啟與保存後，除物件名稱及非渲染執行期記錄外，網格、材質、變換、相機、燈光與字幕語義完全相同；場景檔案雜湊因此更新。原 STL、材色陣列與十張預覽位元不變，未重新渲染。原有局部補色及未試印限制不變。

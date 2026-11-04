@@ -1,39 +1,37 @@
-# 國立體育大學｜圖書暨體育博物館前側段
+# 國體圖書博物館前側片段｜四前帶局部紅
 
-## 模型預覽
+**條紋石柱、窗牆與其餘材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅四道原橫帶正面局部紅色，不是全館補色完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面 actual STL<br>![正面](previews/front.png) | 背面 actual STL<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![低橫帶](entry-detail.png)|![四橫帶](facade-detail.png)|
+|![上緣](roof-detail.png)|||
 
-**範圍：局部段，圖書館與博物館合計一棟。此為自建可列印外觀近似，不是测繪成果。**
+## 材色範圍
+同 ntsu-library-front-section 原項目，same-item、count_delta=0。3476原三角面、STL與build_model.py字節不變。國立體育大學（NTSU）桃園校區，圖書館與博物館同棟一群的前側及短左返片段，不是全館，也不是臺灣體育運動大學。原公開包無OBJ，不假稱保存不存在的原件。
+- 四個完整前垂直矩形共8原面：y−18.5；三下帶原x±56，z28.9..31.1、46.9..49.1、64.9..67.1；頂帶原x±56.5，z82..84.2。只正面名義紅色，非夜照橙光。
+- 全三頂點有限矩形核；整個無限y−18.5plane全部8原面等於四有限域聯集，各2面共對角線。原左石柱Boolean合併自然截至x−53，不是任意材色分界，不填缺／重造細雙脊。
+- 其餘3468中性：條紋石柱原無分色界、窗背與厚豎遮陽代理混反光／框／暗洞、樓梯／平台／實欄代理（不能因真紅細扶手整塗紅）、橫帶頂／底／側返、其他牆與屋背／切斷端、字牌／植物／停車與地面。
+- 原片段近似幾何不因材色背書為實測或現況；材色／中性分界為證據範圍，不是真實材接縫。保留所有原面，不新增紅扶手／條紋／細窗框。
+
+## 來源與日期
+親看校方PDF實頁17兩張外觀照片。白天照片是四道紅帶色族依據；夜照只證構件對位，不採橙照明作材料。拍攝日未知，PDF／規劃表與2026工程時程不等於已驗現況或拍攝日期。
+原照私人參考、不公開、不貼圖；未確認CC或再散布授權，不保證商用。HEX為名義紅族非校準色票。正式GO已發行，繼承的先期review-only文字不改狀態，仍須builder QA。
+
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150×95mm展示底座，照片近似非測量比例。STL無色；3MF／Blender有真逐面材。兩材標籤不是驗證兩色／四色耗材切片，未實際列印，無切片路徑。
+
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離原build＋color重建、原bytes／全三角multiset、閉合正體積、3MF逐面材、scene重開、十圖1200×900及圖文hash。原依賴隔離使用，不改原碼；程序不替代人工來源核對。
+原README／previews／validation／renderer保留歷程，不冒充新QA；沒有刪檔。
+
+## English scope
+Partial only:8original triangles onfour complete front fascia rectangles,nominalred;3468unverifiedneutral. Original3476triangles unchanged,no originalOBJ. NTSU Taoyuan library/museum frontsection withshortleftreturn,notwholebuilding. Whole infiniteplane equalsfourfinite alldvertex rectangles;originalleft Booleanocclusion retained. Stripedpier,windows,stairproxies,sides androof neutral. Captureunknown;nightorange isillumination notmaterial. Not fullcurrent survey,testprinted or validatedfilament slicing.
 
 
-## 幾何與來源界線
-保留三列主要上層窗帶、外凸水平遮陽帶、直向格柵、左側轉角、低層入口／停車開口與前側階梯。只製作可見前侧及短左轉角，並非全館。
+## 版本 2 名稱勘誤
 
-圖書館於二至四樓，體育博物館於頂樓，同一棟不重複計數。前階梯方向、退距及階數按實拍近似；未知後部與屋頂设备留白。2026防水與戶外地坪階梯工程狀態未核，不能當成竣工現况。
-
-官方2023年9月校圖確認本校為桃園市龜山區文化一路250號的國立體育大學（NTSU），不是臺中的國立臺灣體育運動大學（NTUS）。來源照片攝影日期未載；PDF、頁面與上傳日期不能代替拍攝日期。2026工程文件是預定進度，不證明當日施工或完成狀態。後側未知的出入口與後勤附屬物均未補造。
-
-## 檔案與重建
-- [model.stl](model.stl)：毫米，底座朝下；最長含底座150 mm，各館独立近似比例。
-- [scene.blend](scene.blend)：由交付STL匯入，可編修的網格；不是外觀照片的合成效果。
-- [build_model.py](build_model.py)：參數化Python原始碼，自建形體，未下載第三方3D模型。
-- [requirements.txt](requirements.txt)：重建環境套件版本；Blender 4.3.2用於渲染。
-- [render_preview.py](render_preview.py)：由實際STL生成front、rear、elevation、top PNG與Blend。
-- [sources.json](sources.json)：URL、可支持特徵與來源年代限制。第三方原照片、PDF不在公開包。
-
-執行 Python build_model.py；再執行 blender -b -t 2 -P render_preview.py。
-
-## 列印限制
-水平遮陽帶、左側深凹槽、停車開口與階梯扶牆可能需支撐；直向格柵為加粗且與實體牆面連接。
-
-支撐是否需要及放置位置須由切片軟體與印表機設定判斷。此模型有實體內芯以避免封閉內腔，並不模擬室內觀眾席或可進入建築空間。細部與玻璃以加粗浮雕／實體凹槽表達。建議先看實際工具路徑，再試印小範圍。**數位QA不等於Cura／Prusa工具路徑或實體試印，不保證免支撐或保證列印成功。**
-
-## 可重跑QA
-- [validate_model.py](validate_model.py) → [validation.json](validation.json)：原始STL法向／繞序、每邊兩面、vertex link單環、水密、正體積、單一表面殼、來源重建SHA與Blend/STL幾何一致。
-- [check_contour_validity.py](check_contour_validity.py) → [contour-validity-check.json](contour-validity-check.json)：z=.071起，每0.2mm檢查閉合degree2及個別／組合Polygon valid，遇到invalid直接失敗，無repair fallback。
-- [check_thin_features.py](check_thin_features.py) → [thin-feature-check.json](thin-feature-check.json)：canonical fail-closed v3，每1mm、0.8mm opening參考寬度篩檢。這不是全面最小壁厚或切片分析。
-- [qa-summary.json](qa-summary.json)：逐程式退出碼与數位QA摘要。
-- [SHA256SUMS.txt](SHA256SUMS.txt)：此件交付逐檔校驗。
+3MF 與 Blender 物件顯示名稱統一更正為「NTSU Library Front Section partial color」，並同步匯出、渲染與驗證程式的名稱。場景重新開啟與保存後，除物件名稱及非渲染執行期記錄外，網格、材質、變換、相機、燈光與字幕語義完全相同；場景檔案雜湊因此更新。原 STL、材色陣列與十張預覽位元不變，未重新渲染。原有局部補色及未試印限制不變。

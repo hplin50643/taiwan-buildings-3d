@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed two official lake/slope photographs, original code/preview and all ten final renders; parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "One whole y=-25 original plane with203 connected triangles pale gray;3459 other triangles neutral.",
+    "All vertices on whole plane are enumerated before shared-edge closure;no x/z crop. Lower z15.4 is original low-wing Boolean boundary.",
+    "All881 coplanar components uniform.",
+    "Glazing/mullions/window backs/returns,inner V,mixed grass slopes/paths,low information wing and other roofs/sides/base remain neutral.",
+    "Whole seven views fit;details clearly show main-wall color boundary and uncolored glass/low wing.",
+    "Original3662 triangles and STL/build bytes unchanged;immutableOBJ absent,count_delta0.",
+    "Unknown capture dates,EXIF modification not capture;one main-library-plus-information-wing group,not whole lakeshore or2026survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "12ea074e7390b41b79c0f01225ec3e342e82065cae81bd4bf6be83bd8c7d89a4",
+    "README.zh-TW.md": "12ea074e7390b41b79c0f01225ec3e342e82065cae81bd4bf6be83bd8c7d89a4",
+    "colorize_model.py": "5ee70170e11516ccb8b6733a9813ca7ebfe7d1bc63a2428b1a36cc6a3a2274de",
+    "render_color.py": "74ed6127008aaa4510ead37ea06103eaaaf37f93ba27d183d630d8d3b572f436",
+    "color-mesh.npz": "5afa1749a7b7462a94de6d59026bca8a6cf4aa4e6573f54aaa412ba28a892410",
+    "palette.json": "d1cda62053f982bce3abcacf4ae83aea8914f9505905e5a8c7eb81626228b1d9",
+    "appearance-materials.json": "940ba9cbb8f1fd25723d62beb65a4e8dd99ee3dc34b707ccfebe95b5c795c7c1",
+    "COLOR-SOURCE-REGISTER.json": "95a2826cc0ea2362d6181fac8d5d31eebfebe856b65a19b887e65256d15ac105",
+    "model.stl": "2b79321536cdecd979ecae1d67a6b656992089400802ab55cc502cd19eec9aa3",
+    "build_model.py": "84444ea8c183497cbf41726d2ae43d54e2c25958d91468fc9b3a8fec32c58b13",
+    "preview.png": "5ae267e61adcecc6d5afdc6f855c68cc60fac067a151b3cf665eefcc4e4eb58e",
+    "rear.png": "7442de96728563a3dd31efe7816eb2b39eb6871d25b24d2d4a8d0a48e8aa0c50",
+    "front.png": "a234152bc60ae89c044dba5118c090718e7eded38a953680d53b725750fb4e94",
+    "back.png": "593ade4add2a12cbe2a2529a1c8322c93afe64ce5f6e1d68b427fc4b0cb2254b",
+    "west.png": "cde74fec8d7a53b0ab44456ee61c4df41797f5ea53dc127a8832b683c0d7cc5b",
+    "east.png": "6914b31558712958023ec50750845accdd8980276f1dff926c93fe7d091fb53a",
+    "top.png": "0fc5fc397539b00fa12f4e04b3b3482d3d5112684e2618ce42bde94268c36c6f",
+    "entry-detail.png": "1275f7eb7dea635687d4b74e8a0dd926cf19e9933a9fef7cbb9c54fefea820f9",
+    "facade-detail.png": "d1ea04c07caa6589f0b19b3dc908dd96688d8fae1edee57fdc1441884c472494",
+    "roof-detail.png": "e0e9daef8100935063f2bd82cc56916b7fcae54d3036a5848200d1ee9b39ee9a"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "802ed8532c4f9e876c8c0e212028484b2c3f2a6ded5e421d0dc4266acfe48423",
+    "SCENE-QA.json": "f4452a5057ababee7e60716930634bf0e73f5190fc216fb02d6132c2cf2da19f",
+    "DELIVERY-QA.json": "0feb3c8fe6aee05359c4b939f703ba0e16aaf0071be2943872be70e38a6ef411"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "2b10831dd8ee4b7d1cfa0d71bec811ba675c054f61be4eb56cff2e5d1a186fa2",
+    "ORIGINAL-RETENTION-QA.json": "914777794e058afd6eb0307a05ab92cd7b50cd3a54f86866f48290f5a8ce3654",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0319.json": "807ec495e437f50bf1a81aa16e7b1eca313660d3882f85f571e99605f5f7e496",
+    "INDEPENDENT-IDENTITY-0319.json": "f9c11e074d46a0eb84a665a65f69935309be79069780d2e983ae389cf2c8aa88"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T03:22:22Z",
+  "parent_review": "Parent personally viewed official lake and slope photos, original mainramp/lowwing Boolean code, preview and finalten montage. Only full y-25 lake-facing mainwall203 surviving original triangles nominal palegray. Entire plane singlecomponent no invented bbox/zcut; true lowwing Boolean loweredge15.4. No stonepattern/smoothframe exactness claim. Glass, innerV, grass/path roof and lowwing neutral. Seven whole views fit, three intentional details; one original group, no geometry change, capture unknown and partial only."
+}

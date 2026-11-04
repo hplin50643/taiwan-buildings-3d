@@ -1,0 +1,90 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:7wholemodel views framed and3intentionaldetails;four completefrontfascia bands nominalred fromdaylight.",
+    "Stripedpier,windows,stairparapet proxies,sides androof neutral;no nightorange or inventedredhandrails.",
+    "One NTSU librarymuseum frontsection withshortleftreturn,notwholebuilding;no newgeometry."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 3476,
+  "material_face_counts": [
+    8,
+    3468
+  ],
+  "connected_coplanar_domains": 919,
+  "original_obj_present": false,
+  "original_files_retained": 19,
+  "file_sha256": {
+    "README.md": "9abc8bdbf74e279632054586b99e9b5fd553f39908a239e3611f8c459bab7a15",
+    "README.zh-TW.md": "9abc8bdbf74e279632054586b99e9b5fd553f39908a239e3611f8c459bab7a15",
+    "model.stl": "44a922dda311523d5257d856225e138c4f91de150b0bc53a887d9e56d2812407",
+    "build_model.py": "1542f139784df2dffa072088c8f3b2dbb9230238a6bc4b2fb9ff6f1728c84553",
+    "colorize_model.py": "44a2644be1b2d1f8318debd9f2044f96865bd25fe91e0452e553216a66cc795a",
+    "render_color.py": "8fbdd01192af4316be2dc0626af1fcb9c96524c05b0543047f4d8d8bcef9fd65",
+    "verify_color_scene.py": "577a04cc6ae5ad2fb6f43c050b76b3febe4874063378e8ffc1f564d78b64dd82",
+    "validate_color.py": "79f04b5c3a36ff4eddea86eef341183063808a795246698b168d6954176dbd11",
+    "color-mesh.npz": "cf36a073f3a9bd9904e0cfdc98888668d7aa7510c3abd836f6ce6abf799db3d4",
+    "palette.json": "2414879b4b18425c2e35f12bdb5f0a21cf4bffce3be5bf08260150352fa79046",
+    "appearance-materials.json": "7ffa6f1c7658bd8cb6aca287d64230bc9c5fc37f7009c646a197677e4174288f",
+    "COLOR-SOURCE-REGISTER.json": "54422f3a21f78d2de359b982a60b87ae83ec309b927e86b45aac779d64ec025a",
+    "appearance.3mf": "6fb1b10be39736ecc80b9f14664879300b906ea303b7fc304c9aaa6ef366ddd1",
+    "scene.blend": "4d1030a07eaf5d69103e57b22e7744f995d5e3d3747208bb1513795d8c415c8a",
+    "preview.png": "11382c900eecc0c8c125b6ee158399007abff98009198f415d5139a319a0d80d",
+    "rear.png": "9d15dd961e9292e5b3bd27807c11bc299455a2cccc004b1070cb5648c405e3d5",
+    "front.png": "ac744cc41feb49489549887948c829d954f61464d76900c7a6561fc8d8ebe92f",
+    "back.png": "5855f0878b10a1f1bf1ca5d905b23c8307bbbff4c9e923d0a3145bd667516dbb",
+    "west.png": "3f102c68bf0399f6a30426592438106266f02dc1c333150a024799ae37f1a774",
+    "east.png": "e48e34aafa16746dc867b397f66bdedc89b8182b2b5e8a153f2b1bc2c20b18d8",
+    "top.png": "5ed06afb6a0ce2ccb809fd98292847146c78e2c9b3885d1fc1a4da6f94c4745e",
+    "entry-detail.png": "44c375816c92a2f3c30e48e4b9c5e866c4c86cb986a528941d4ae7310050a106",
+    "facade-detail.png": "022d8827ba516d9fbc03aa09cefb3f09c681cc9da40cfc3c6d277b7b116566dd",
+    "roof-detail.png": "6624913142fae7bc9f1eb4ba61c47cfa210d131814d8ab854c1cb71064e31c04"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "5eff2d417502d119bfea5abceddf837993bc472947f3288a63bacfb08900a116",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "4e64f84d4ddd2ae0baf8fe0e79af10fa3ba3f460a3c67f1951037a3c4e407ba0",
+    "SCENE-QA.json": "87c1f602e9d23cf7be5053326cdddc5ac68f85aa4a0d62a54fad553961fadcd4",
+    "FRAMING-QA.json": "b8b75d0c1ffcf065a88a7362f87f3732695048e3b114b52c21097e134595e339",
+    "DELIVERY-QA.json": "91460fbeeb27747cf4728a9642e9ab469c3f5a583c2498ae319dce68cf16cfa7"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "23c2dfd0ea12369bc2a76442804d03c838055e1fc8601000959cb7912b3dad15",
+    "ORIGINAL-RETENTION-QA.json": "f5ad3e13b655224f59f10db7658bc50d992cf6208fc42af16f361f86cadbf3ba",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "cf887e97b5d83127caa744513326995a4581801680423557f96ed1860d5a9ea6",
+    "INDEPENDENT-DOMAIN-0359.json": "73b9a2b7303e614d706fab780f7bff64dc1bd1439d87c2b9d567b599d60a263e",
+    "INDEPENDENT-IDENTITY-0359.json": "6451dcc4fb1b5ceec3800a1881b7464f67de529819550c48dc7b3e08d0e3ca3b",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "953312f36ba8323c86ab0022a49dbd8c294213b75375b3634faa028aa072145e"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "e3542df939548e54a1922c0c2c45af2d2efc9b37525f153ba46201435f51dcd0"
+  },
+  "limitations": [
+    "8complete frontfascia triangles:four2triangle rectangles;3468neutral.",
+    "Entire infiniteplane equalsfour finitecomponents;leftBooleanocclusion retained.",
+    "NTSU Taoyuan librarymuseum frontsection,notwholebuilding.",
+    "Captureunknown;nightlight notmaterialcolor.",
+    "No originalOBJ,no testprint."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:02:03Z",
+  "parent_review": "Parent personally viewed daylight and night source photos, original four fascia code, preview and final ten montage. Eight whole y-18.5 plane triangles equal four complete original fascia-front rectangles, nominalred from daylight not night orange. Left Boolean pier truncation retained. Striped stone columns, mixed glazing, solid parapet proxy stairs and unknown back neutral. Seven whole views fit and three intentional details. Original3476 triangles and bytes/noOBJ unchanged. NTSU Taoyuan library/museum same building front/shortreturn section only, not entire hall/current2026.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "NTSU Library Front Section partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "NTSU Library Front Section partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}

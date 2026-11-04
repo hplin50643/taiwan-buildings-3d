@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立體育大學/桃園校區/buildings/ntsu-teaching-central-section",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "NTSU Teaching Central Section partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "3ecaba640d28bf87e65e2f8744ed9f94a408ac0cb1aebf2a53fee5ea8d40da7e",
+  "new_3mf_sha256": "7ffafa9f3770c47293cc3c5ed0cd3d20c41eacd60f73b30c467dcceb3473f370",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "37836ef2cd9e039ec0f783f6ff1f3b3f90c8481212b5cfa7894f5798f5fc9483",
+    "validate_color.py": "2131c9a8e0f54a12aaf7d7aa9c5f3d847d8c97cf1814ba42b73aacf906e5ef3b",
+    "render_color.py": "b9aaa8739700f87175eef89434b4f126139a9d7c19cfefd2436f62b7c96cb382",
+    "verify_color_scene.py": "bc2e5ea8fe1ef7949b07009e04eb02bfe8e52467a0a42d5776fcf23df22a6acc",
+    "scene.blend": "3363e65c22d2dee89093e8b3cf2a3e6896c2da61571185779e134087fa7a8ba2",
+    "appearance.3mf": "7ffafa9f3770c47293cc3c5ed0cd3d20c41eacd60f73b30c467dcceb3473f370",
+    "README.md": "5ecaf6a7fe86e5008040e770b3f6161245a53ea1a6bd4a471ef28da149a28423",
+    "README.zh-TW.md": "5ecaf6a7fe86e5008040e770b3f6161245a53ea1a6bd4a471ef28da149a28423"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "NTSU Teaching Central Section partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "d33d615156a10cdffbef920ed73d7aaec0d891169db028f363ae43ee3c6de710",
+    "scene_reopened": true,
+    "scene_sha256": "3363e65c22d2dee89093e8b3cf2a3e6896c2da61571185779e134087fa7a8ba2"
+  }
+}

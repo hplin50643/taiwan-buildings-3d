@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official matching exterior and context composite, original code/preview and all ten final renders; parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole y=-24.2 plane6 triangles in3 rectangles plus whole y=-24.5 plane4 triangles in2 rectangles:10off-white/2982neutral.",
+    "Both tiny upper-beam outer ends included;no x/z clipping or ground-level lower-support extension.",
+    "All659 coplanar connected components uniform.",
+    "Missing roof skylights,glazing,mullions,frame side/top/underside,lower infill,mixed panel walls and unknown domains neutral.",
+    "Seven whole views fit;two closeups clearly show complete upper beam and jamb fronts.",
+    "Original2992 triangles and STL/build bytes unchanged;noimmutableOBJ,count_delta0.",
+    "Unknown capture dates;only principal connected teaching facade group,not entire college or2026survey. Context composite bottom teachers-college photograph excluded."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "03df46a2326fd9dda0b331547450ca3b92349d6af5fc3d31074b868cb80ac9d4",
+    "README.zh-TW.md": "03df46a2326fd9dda0b331547450ca3b92349d6af5fc3d31074b868cb80ac9d4",
+    "colorize_model.py": "821b0816198ae2d442b4aebc965a08590433a609f93bf873cc76bc8397f3afdf",
+    "render_color.py": "d4ce39b5aa2f5f397c42db4c0330b8958f3c84984ef1a60e002be5949697d69c",
+    "color-mesh.npz": "7d66f900856b9d2590dafae7ddd32f16086649119254d87a06ecfcbf0fde4df1",
+    "palette.json": "236e8bbccd70b0d17eb2af6adfcf23f6222e343c1d07470e376314b74d0d1c48",
+    "appearance-materials.json": "fa9e2e75f743fda79672cfa2f2d9674e6c8f14378001f7e8e5d0d1b43215c547",
+    "COLOR-SOURCE-REGISTER.json": "c44e1114c90aa9531d81f92cfdde83b9bd2058540e9c60f1ef6537a1f75099cc",
+    "model.stl": "a14fa14bae7f2462d442f7f226862135b32781f7f6f032724ff31bb256a8c7cf",
+    "build_model.py": "74bd5155900d6af2cfc136743b73837d7a1a92a595d0b11834607a5936c65587",
+    "preview.png": "e91f96d81961c597e6ea219739003b034159c32ead55fd48d7bf03c83429b8e3",
+    "rear.png": "90e10b03e67892cfd786d4f3a70fd0dbd420f8005fa81d0d49fb940a1eb0229d",
+    "front.png": "0d13897d3501afd50b23ed847490fbee0f5411f40f9155c94f38c191e691c715",
+    "back.png": "0d2191d3cadc4a93a275d1e9b297053a3be5545c7ceb1c1cd0131a38511aeffd",
+    "west.png": "d0b57f5f7850a0e8add91f88f82a490c7f8ca7c74256cc9027f94882d0090117",
+    "east.png": "74769f8ab4e5818e67fb4fb19b2ea251f5b98912aabe8d30152a5ea2d5c92549",
+    "top.png": "75d039543ea9de6b900380ebd5fcc20e45547c75896a98c5cdb2b61695a0b4a0",
+    "entry-detail.png": "8abab686aa922dbf4c07ecd2d152de8f6f28a9776b5b6af3b23d5522b4983458",
+    "facade-detail.png": "6e4143fab41e15f4ab02a97b59c141040023c0b26a56d55b19922db39ed7b5ab",
+    "roof-detail.png": "f29e915700f48328767aa9d9f9c8d6beb6617f7916426e624f516d61ca4e029a"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "2241cc22afe1bcc6327c3832e7ac38c5fdde8310efc82318c7f691a664ca9d56",
+    "SCENE-QA.json": "23d036ca2b85b18e582ee4a72a1b80ad05adc3121a667c1593741ad5f2d14a58",
+    "DELIVERY-QA.json": "2f28bd187518a3d72fbee86b695247756f27b2a11b19684d622ad395f06f11a2"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "d069aa5e8aa1359693f6b1e9521daa6e0964a1f11b2e1da13b68f395c6009c91",
+    "ORIGINAL-RETENTION-QA.json": "914777794e058afd6eb0307a05ab92cd7b50cd3a54f86866f48290f5a8ce3654",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0332.json": "aa74e754d2d1419182fedff84e4a3e6008321da7c848152ac9546e5ec2fb46a9",
+    "INDEPENDENT-IDENTITY-0332.json": "52358348cf2fc3605cc278f3b44ebad6d78d6e7b1e1171404130e79659f010a0"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T03:37:54Z",
+  "parent_review": "Parent personally viewed matching official front and context photos, original projecting frame code, preview and final ten montage. Only whole y-24.2 plane six triangles including two tiny outer ends, plus whole y-24.5 plane four triangles: five complete frame-front rectangles, ten offwhite faces. Roof missing skylights, original lower infill, mixed panel walls and glazing remain neutral. Seven whole views fit and three intentional details. Original2992 triangles and bytes unchanged, no immutable OBJ. Partial source-bounded interpretation, not current complete college."
+}

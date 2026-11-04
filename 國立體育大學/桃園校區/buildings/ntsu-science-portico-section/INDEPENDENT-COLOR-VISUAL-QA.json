@@ -1,0 +1,60 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed old official exterior and PDF exterior photographs,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Lower slab outer64chord facets2each=128palegray;4958neutral.",
+    "Each whole infinite chordplane equals finite tangent/z17.6..19.8 domain with all3vertices;1349coplanar components uniform.",
+    "Lettered upper parapet,columns with stickers/mixedfeet,slabtop/underside/inner/end faces and all mainwalls/glazing neutral.",
+    "Seven whole views fit;three details show continuous lower edge and neutral upper lettering field/underside.",
+    "Original5086triangles/STL/build unchanged;noimmutableOBJ,count_delta0.",
+    "Cropped concave-corner portico and wings only,not entire building.2021wall/2024AC context retained;unknowncapture,no2026survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "feede0735a96d016b4708b90cb6348560a3010135696ff40569ea564a53a39ec",
+    "README.zh-TW.md": "feede0735a96d016b4708b90cb6348560a3010135696ff40569ea564a53a39ec",
+    "colorize_model.py": "713ff45fa64d6d4962d908e373d8616b180d88cb96f1bc8c7ecbd7650de42ddb",
+    "render_color.py": "9fe335540081e8135ece5bea86836b11a88ee56e017cec1713c8f9ec2ffc4b9a",
+    "color-mesh.npz": "e71ad65eddb6c332d9499855534b040205ed75b0acfe80ec3bee07d0baa6b729",
+    "palette.json": "c6664d738219f2fba23bbf7353b33d2f951fd5ea238787bd8a87fbe2c78749a7",
+    "appearance-materials.json": "b486792a24075fa303c3bc277f3722aecf13f0fbbc80ad0b187c25cc50277d74",
+    "COLOR-SOURCE-REGISTER.json": "dabbce61afbd01f34548baa3dcb4bb2f41394aa5d5b008b7091e010ec2a2fab2",
+    "model.stl": "93cb3e2b361f55b50301286b8b4242ce8e538814a084d95871cd37780adfa224",
+    "build_model.py": "044a48fb89932af2b10e0ed6fe95c7ae2a7161159f5f6e691ddf3b76ea0164e9",
+    "preview.png": "01bae37c13b70092fb902adc663d122ebf787859f7a500fb3beb61d2c4633a87",
+    "rear.png": "ce37eca683a003bcf549b9fd729f724ce994da9a56ee4c9fe20a2cd6b8f702eb",
+    "front.png": "b64a3a1459a2c63b41013674943dc81af226b276e0c61fc9d251b072cbf09c00",
+    "back.png": "9eb39466793d8d8920166244ef7a4a06f5ed68b828b0296fc6b1fb1b96e0a9e2",
+    "west.png": "71c701399d5e768cc6e973fc6e57898c673c389862f49428cbcdce2275008eab",
+    "east.png": "7fec4daac2bff7aee22044fb1bdfd12bce8f77950a032976a19e964ed7a8dc3a",
+    "top.png": "3a3d417661164b2068f85565708b19190d8a01294965abcfe24ff30c8bf0d7a8",
+    "entry-detail.png": "bd31da936b9220a75691461b271b11108613fc84ea39db3224ece5c6955c2c07",
+    "facade-detail.png": "fdf59b052db84d081fb63cb9160f99465393aa12a8358857b211bd186bb7fd9d",
+    "roof-detail.png": "8d661c834adce2d27a4f82037d9fe6150230dfe8a1fd4d1c29e5e7f92c483216"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "702c9159313a19c3ff39fda852101ad197c886e08245c97567f22cfd66c8dee1",
+    "SCENE-QA.json": "3a3b5f29d98aaebedcbc1cc9749d940924db28e2e32e6604979e7e5ce9a9d03f",
+    "DELIVERY-QA.json": "f5499e379134640262330b4567e96b2592e7f0ffb8a15be8149c1e1a989a7774"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "77c3c82f5cc187a862c3e4281b369d17424ce95419f35174bb2ec63aff05544a",
+    "ORIGINAL-RETENTION-QA.json": "2fe2cb36ac4a08650fb29445e9a1a35b1b594c67f26a0903735513ed4441caa2",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0400.json": "cf70bf99900bad5beb5fa5901750515ba38c4dca9dee4ed2a4e1ddf2bde22442",
+    "INDEPENDENT-IDENTITY-0400.json": "eef55498b46a64d6f51cf85bc5f44a42c169ff0b99325d8e20b70ac3fd24bfc2"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:03:52Z",
+  "parent_review": "Parent personally viewed both official exterior photos, original arc_strip code, preview and final ten montage. Only original lower thin slab outer vertical edge64 complete chords128 triangles palegray; each whole infinite plane equals allvertex finite chord tangent and fullz17.6..19.8, no radius/normal shortcut or truncation. Lettered upper parapet, marked columns and bases, mixed mainwalls, top/bottom and unknown rear neutral. Sevenwhole views fit and three intentional details. Original5086 triangles and bytes/noOBJ unchanged. NTSU Taoyuan portico and cropped wings only, old photo version with2021 facade/2024AC limits not2026 full survey."
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立臺東大學/知本校區/buildings/zhiben-second-dormitory",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "Zhiben Second Dormitory partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "96350dc54d54600e7dde76b24128a35c124a9bc7199a692634b82ac8016a66a7",
+  "new_3mf_sha256": "29eb8a994000b20af484db51524dd14977f4a4994f92de92d7e2d95961ce65c1",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "3f42a94775b72748e709a0ce4f592a4926ea199dacde1db9514edb3562133e89",
+    "validate_color.py": "9df8f1a590b57a11e40e91c950458f16895239ac611080e902b6061da9ec1b5e",
+    "render_color.py": "9802d1d1e1ba2b81d4ced8024edab60754e729ddb5a3a2d8e22ff3eef8471fcf",
+    "verify_color_scene.py": "a8e3c8839e8b876cadef728bf89d3ce650649ca41bd204da63dd6dc6eaeb1489",
+    "scene.blend": "66a98f406cf3c1ac9d2f6d3fffc25b7051d4ef59c70df4f76a85f3c9946cbc4f",
+    "appearance.3mf": "29eb8a994000b20af484db51524dd14977f4a4994f92de92d7e2d95961ce65c1",
+    "README.md": "01b76f7c0219f8eda7dc1549b6c2a4bee4dd17901dc4fb8d9ad3d9653cc3fdaf",
+    "README.zh-TW.md": "01b76f7c0219f8eda7dc1549b6c2a4bee4dd17901dc4fb8d9ad3d9653cc3fdaf"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "Zhiben Second Dormitory partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "0409516e1d59198605101768018e49b0fbf6419d91cb528c4bfdb149769a2822",
+    "scene_reopened": true,
+    "scene_sha256": "66a98f406cf3c1ac9d2f6d3fffc25b7051d4ef59c70df4f76a85f3c9946cbc4f"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official exterior and poster exterior photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Elevated cap front86 plus left2 palegray;3008neutral.",
+    "Entire plane enumeration then shared-edge components and full finite original cap bounds;all dentil-Boolean fragments retained.",
+    "Separate lower lattice2/4/2 components and17stair triangles on same planes remain neutral. All715coplanar components uniform.",
+    "Lettered main fascia,solid lattice proxy,cap top/underside/otheredges,windows/rear roof and unknown domains neutral.",
+    "Seven whole views fit;details show cap leading/left fascia and neutral top/dentil faces.",
+    "Original3096triangles and STL/build bytes unchanged;noimmutableOBJ,count_delta0.",
+    "Former Chung-Cheng Hall and current Food Biotechnology Pilot Plant one original building in Taitung city campus;capture unknown,no2026survey. No interior/equipment evidence used."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "24418506ed905fea8ac4ea56ab8f55eef6c498f2e9b635a78136d9bc7beb671e",
+    "README.zh-TW.md": "24418506ed905fea8ac4ea56ab8f55eef6c498f2e9b635a78136d9bc7beb671e",
+    "colorize_model.py": "98067af586fa405738b6a224d66c7057732d405cc2608fd22b6e9f64974ed33e",
+    "render_color.py": "48d445a4055fba6f7cb50180e0780d976ccb91c6996127e3d943cbcc7978f07c",
+    "color-mesh.npz": "a3482c63c72cd05b64e15b2cb2786530e808f36c7f41b2d5eedd40a56daf5d04",
+    "palette.json": "e6cf45a75d93d933ad94cab1782344a350266a195287705c405c133033a7419f",
+    "appearance-materials.json": "295cf08dfdbe4b0645d146e1358ef9ef8928e6e678fd5e115f6113372f422ed0",
+    "COLOR-SOURCE-REGISTER.json": "279c5c75f111e28eab613f290d656b08f707726e6b54647de071783f3d41fda7",
+    "model.stl": "dd7530e7ab3e3dcacf5bc643059055688ea1c9b81e12f0126c85780feb93a149",
+    "build_model.py": "3e111b4d09fd7607a8f111edb42711a92007945ccf4dca4e10e6e11f9d02c1a7",
+    "preview.png": "6bb7b36532012ee0da4b30c1050ce9beeba99b68c7e958c5676421dc8feb1e40",
+    "rear.png": "e67a1ba2389d4169145d1e9e9eff95d23ea5dec96c445a5c2009a3af23795e0d",
+    "front.png": "3df73dfe0066eeef28ff966ab84d8828a33b0b257d31ea5b1c5b536d3d4f7bc1",
+    "back.png": "378b62dd54e13d77209c1e732b8459e91e2dcd340b4c2a195c3124f4c86a7dec",
+    "west.png": "bb99d8f015a4cc338f83b4a2b202c2b5320bd6dce57527fa4e0097df0ee2781f",
+    "east.png": "7f4ea2f23f5443cb4fa0837b84dd3701dac26f0cbd9c03eb709f9e8c84c55f83",
+    "top.png": "be609ec6dd54d9548630b29a8bcced1d868041bec597f0a02933f3cab682a2b9",
+    "entry-detail.png": "32560d43590a03dd8081ccc97eda6c3a05d362347542bd61124fe315e74ca0f4",
+    "facade-detail.png": "692d283768f136072de9983a5eb6eef88b745013dd3911236a266f1bbffff5ee",
+    "roof-detail.png": "39d6df8ad4a82cf79736264c70743e455afa6ce338a276e25d9cd346bbacc0b5"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "b71bffc2f4a71d76b91553c71460c4bf714216206d7795afc4d98ad0f5cbbab7",
+    "SCENE-QA.json": "0373f5fc46b07d0015c7c326df5cd66fe03034407db9cb6a4c3fae44a21d2a67",
+    "DELIVERY-QA.json": "55faf8c8197a8ac09d243bc264e72e4dae145587be1cd5bf5e52a3ea0191e6f3"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "e7672500930c11e0ba3c1c4c6dfad70f1f1cf5eb4dc77b8aa7fd351b89af857b",
+    "ORIGINAL-RETENTION-QA.json": "cf613ff3b525c15f381629548791232a7dbe2e2932e82eafe74100e95610e630",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0352.json": "54b0294516c3b4d3d270779d29a49f43d90380e6542388635bef6408cb755fce",
+    "INDEPENDENT-IDENTITY-0352.json": "344cecd1ac486f9eba1ed673cc011f2d0282deae3abe45181628404e2c954c63"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T03:56:20Z",
+  "parent_review": "Parent personally viewed official exterior and only exterior portion of introduction poster, original clerestory cap code, preview and finalten montage. Complete cap front86 and left2 nominal palegray, wholeplane connected domains independently enumerated before finite selection, dentil Boolean fragments retained; unrelated sameplane low lattice/stairs excluded. Lettered main cornice, solid proxy pink lattice and rear barrel roof neutral. Sevenwhole views fit and three intentional details. Original3096 triangles and bytes unchanged/no immutable OBJ. Taitung campus former Chungcheng Hall same building not Zhiben; partial not current full survey."
+}

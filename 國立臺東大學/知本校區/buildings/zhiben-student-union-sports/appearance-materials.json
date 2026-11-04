@@ -1,0 +1,35 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed low hall upper roof front fascia gray",
+      "hex": "#A5A7A2",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED plantedroof supports walls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 1692
+    }
+  ],
+  "domains": {
+    "one_complete_upper_front_fascia": 2,
+    "per_rectangle": [
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 412
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1694 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "One complete original roofedge vertical front47x1.2 rectangle;2triangles.",
+    "All3vertices finiteplane; entire infiniteplane equalsfinite rectangle.",
+    "Allroofskins,sides,undersides,plantedroof,Ysupports,windows andwalls neutral.",
+    "Singleexterior group,not allcampus sportsbuildings;nointeriors.",
+    "Captureunknown;twilight onlystructure notexactcolor.",
+    "Two labels not verifiedfilament slicing."
+  ]
+}

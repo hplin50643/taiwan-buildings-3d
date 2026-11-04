@@ -1,69 +1,28 @@
-# 國立臺東大學知本校區：理工學院主要教學棟
+# 知本理工主要教學群｜左前框正面局部灰白
 
-## 模型預覽
+**局部補色未完成：僅左前凸玻璃盒上梁與兩側框正面10原三角灰白；玻璃屋坡混材牆未完成／非全色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 zhiben-science-engineering／count_delta=0，原主要相連教學群不拆棟，不是全理工院落或2026現況測繪。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![左前凸框](entry-detail.png) | ![五完整前矩形](facade-detail.png) |
+| ![中性缺天窗屋坡](roof-detail.png) | | |
 
-官方照片中的五層主要外觀棟群；不是理工學院全部院落或全部翼棟。
+## 材色範圍
 
-這是公開照片外觀詮釋模型，非校方官方模型、非測繪成果，也不表示全校已完成。來源照片拍攝年代較早，不能保證與 2026 年現況完全一致。
+枚舉原y−24.2全部三頂點共面6三角與y−24.5全部4三角，先不設x/z裁切，再共邊連通核3+2個完整矩形。上梁包含中央長面與兩側各0.25mm小外端，原柱遮擋分割所致，不能漏掉外端；兩側真框前面z15..36.5，不擴地面實填支撐。完整10面灰白、其他2982中性。原2992三角與頂點完全不改，不增分面或新框。
 
-## 檔案
-- `model.stl`：毫米制單件實心外形，可供切片；最長邊 **150 mm（含底座）**，各模型比例獨立。
-- `scene.blend`：Blender 4.3.2 可編輯三角網格；場景只有一個列印網格及攝影機，原始程式亦嵌入文字資料塊。
-- `build_model.py`：可攜參數化 CSG 原始程式，不需要照片或網路。
-- `render_preview.py`：直接載入實際 STL 製作正面、背面與正立面 PNG。
-- `validate_model.py`、`validation.json`：原始 STL、乾淨重建及 Blender 一致性驗證。
-- `sources.json`：來源、照片像素觀察、範圍與近似說明。
+原三大屋坡缺照片白天窗/屋頂中斷，不整灰屋皮；玻璃凹背、梃、下方填實量體、框側頂底全部中性。主牆混白構造與黃綠板/暗窗，原無可靠界，全部中性。其他廊柱、簷棚、階、後面與底座中性。中性色不等於實景灰，資料覆蓋界不等於真正材料接縫。
 
-## 已實際檢視的來源
-- [校方理工學院外觀](https://enews.nttu.edu.tw/p/406-1045-36360,c4248-1.php)：[照片](https://enews.nttu.edu.tw/var/file/45/1045/img/669/567701862.jpg)。實際檢視 800×536 像素；可見多段錯落人字頂、五層白牆、左側凸出的玻璃框、右側開放凹陽台及低後翼。
-- [綠建築協會理工／師範學院照片](https://www.taiwangbc.org.tw/tw/modules/news/article.php?storyid=359)：[照片](https://www.taiwangbc.org.tw/tw/uploads/news/1000/2/3ddc8e51ea6bf02b.png)。實際檢視組圖；上圖有理工學院題字及另一個入口。此入口不是主照片同一立面，不硬套到未見背面。
+## 來源與版本
 
-- [校方知本校區配置圖](https://ndga.nttu.edu.tw/p/412-1008-9291.php?Lang=zh-tw)：實際檢視校圖像素，確認建物名稱及相對位置。
+親看校方正斜實景，左側凸玻璃盒灰白上梁/兩框可對原獨立前域。另綠建築合成圖上為另一理工入口，只作語義；下為師範學院，明確排除，不移色。拍攝日期未核，修改/發布日期不是capture，不宣2026現況。原列印厚化框/窄翼/窗洞近似保留，不以色審背書幾何精確。照片私人，不公開貼圖；未見CC不推商用，HEX僅名義色族。
 
-原始參考照片不包含在此套件；照片權利屬原提供者。本套件未取得校方背書或第三方照片再散布授權。
+## 檔案與 QA
 
-## 近似與缺口
-保留五層、錯落人字頂、左前凸窗與中央凹陽台。玻璃凸窗下方為列印可靠性而填實，未模擬原建築懸空柱間。後立面留白；建築深度、窗孔、階梯與低翼尺寸為近似。完整校圖分散翼棟不在此模型內；不以重複立面假充其他建物。
+原STL/build字節與2992原三角不變；immutable原包無OBJ，原builder只產STL，不聲稱保留原OBJ。原README保存ORIGINAL-MONOCHROME-README.md，舊單色previews/QA不替代新QA。appearance.3mf兩展示材與scene.blend真面材，color-mesh.npz同原幾何。精確requirements隔離build+color，核封閉正體積/完整三角、3MF材色/Blender重開、10張1200×900。重建保留不刪。未實際列印，非已驗多色切片。
 
-只製作公開外觀，不建置室內、設備或安全配置。底座是模型附加構件，非真實基地邊界。正面固定 -Y，並非地理正北。
+## English limitations
 
-## 列印建議及限制
-平底向下。左側凸窗下方已加實；屋簷、陽台橫板、入口遮棚與窗框仍可能需局部支撐。最細玻璃分格約 0.7 mm，屋簷加厚 0.75 mm。
-
-建議先以 PLA、0.12–0.16 mm 層高檢查預覽；這只是起始建議。底座 2.4 mm 厚。STL 是閉合實心邊界，實際填充率由切片器決定。未進行實體試印或切片驗證，也不保證免支撐、所有機種可直接成功列印。正式列印前應檢查懸挑、細柱、第一層及床面黏著。
-
-## 重建
-使用 Python 3.12，在此資料夾執行：
-
-```sh
-python -m pip install -r requirements.txt
-python build_model.py
-blender -b -t 2 -P render_preview.py
-python validate_model.py
-```
-
-驗證腳本在臨時空目錄重建 STL，逐 byte 比對 SHA-256，並讀取已儲存 Blender 真實頂點／三角面作幾何雜湊比對。不能只重建 STL 後沿用舊 Blender，修改模型後必須重新渲染、存場景及驗證。
-
-## 本次驗證
-- 尺寸：150.00 × 100.00 × 53.10 mm；三角面：2992；表面連通殼：1。
-- 原始 STL 法線與繞序一致、法線為單位向量、非退化面、封閉性、邊流形、頂點單一環、單一表面殼、正體積皆通過。
-- 無獨立內部空腔殼；乾淨重建 STL 雜湊一致；Blender 幾何雜湊一致。
-- 未宣稱完成全域自相交的獨立窮舉檢查；數位幾何驗證不等於試印。
-- STL SHA-256：`a14fa14bae7f2462d442f7f226862135b32781f7f6f032724ff31bb256a8c7cf`。
-
-
-## 第二版外觀 QA 修正
-第二版加入三處明顯前凸窄翼、深凹外廊及分層樓板／直柱，保留左側凸窗和三段斜屋頂。可見突出深度已實作成真實 STL 幾何；薄欄杆與細碎外牆構件仍簡化。
-
-外廊、窗框、樓層平台有實際凹凸深度，局部水平突出需在切片器檢查支撐；沒有試印。
-
-
-## 實際STL正背並排
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+Partial only: entire original upper-beam front plane y=-24.2,6 triangles in3 rectangles,plus two jamb fronts y=-24.5,4 triangles in2 rectangles. Both tiny beam ends beyond the jambs are included. Whole planes enumerated without x/z preclipping;all659 coplanar components uniform.10off-white triangles/2982neutral. Original2992 triangles and STL/build bytes unchanged,noimmutableOBJ,count_delta0. Missing roof skylights,glass/mullions,lower filled support mass,mixed walls and unknown rear remain neutral. Principal connected teaching facade group only,not entire college. Matching school exterior photograph is primary;alternate engineering entrance and unrelated teachers-college composite do not transfer color. Capture unknown,no2026survey or geometry-accuracy endorsement. No public source images/textures;not testprinted.

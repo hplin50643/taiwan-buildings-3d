@@ -1,0 +1,35 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed two full front metal roof slopes gray",
+      "hex": "#AAADA7",
+      "faces": 6
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED rear slopes eaves mixedwalls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 3038
+    }
+  ],
+  "domains": {
+    "two_complete_front_roof_slopes": 6,
+    "per_rectangle": [
+      2,
+      4
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 753
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3044 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "Two complete original front roof planes2+4Boolean triangles; gray metal,not redtiles.",
+    "All3vertices finite tangent andfull extrusion;independent infiniteplane selection equalsfinite.",
+    "Rear slopes eaves gables mixedwalls windows neutral.",
+    "Captureunknown;publication/modification notcapture.",
+    "Two labels not verifiedfilament slicing."
+  ]
+}

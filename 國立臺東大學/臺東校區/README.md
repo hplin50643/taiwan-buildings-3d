@@ -4,4 +4,4 @@
 
 | 建築／模型 | 建築／模型 | 建築／模型 |
 |---|---|---|
-| [食品生技實習工廠（原中正堂）](buildings/taitung-food-biotech-factory/README.md)<br>[![食品生技實習工廠（原中正堂）](buildings/taitung-food-biotech-factory/previews/front.png)](buildings/taitung-food-biotech-factory/README.md)<br>[資料夾](buildings/taitung-food-biotech-factory) |  |  |
+| [食品生技實習工廠（原中正堂）](buildings/taitung-food-biotech-factory/README.md)<br>[![食品生技實習工廠（原中正堂）](buildings/taitung-food-biotech-factory/preview.png)](buildings/taitung-food-biotech-factory/README.md)<br>[資料夾](buildings/taitung-food-biotech-factory)<br>[局部材色3MF](buildings/taitung-food-biotech-factory/appearance.3mf) · [範圍與限制](buildings/taitung-food-biotech-factory/README.md) |  |  |

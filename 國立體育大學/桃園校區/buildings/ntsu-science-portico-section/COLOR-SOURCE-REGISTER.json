@@ -1,0 +1,36 @@
+{
+  "slug": "ntsu-science-portico-section",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "NTSU-SCIENCE-PORTICO-SECTION-COLOR-SOURCE-GO-0357.json",
+    "sha256": "97e11f84fa204272fd6591b7e52ee5050a7f45560eaeddea2f9947a34de39f24"
+  },
+  "review": {
+    "file": "INDEPENDENT-MAPPING-0357.json",
+    "sha256": "082e4d71d252add534b910f854d8c4b5f2feedc602abce57522fd823c66c47d8"
+  },
+  "source_images": [
+    {
+      "file": "official-old-exterior.jpg",
+      "sha256": "d6d6e6c5ea391e48f5bf2125e6a7b23c226a6b226eab34cb803de75a38d33a7a"
+    },
+    {
+      "file": "page03-image3.jpeg",
+      "sha256": "0f8028de7ab01f1cbd0f7267f796a13cc81a0c7be979a554ce8b5c8eb7e14706"
+    }
+  ],
+  "limits": [
+    "All upper parapet faces including text field and openings: lettering has no independent material boundary in original mesh.",
+    "All cylindrical columns: stickers/notices and patterned feet mix within full-height original facets.",
+    "Slab top, dark underside, inner edge and end caps do not inherit front-edge color.",
+    "Main wing walls mix brick, pale upper bands and base/obscured regions without matching original boundaries; all remain neutral.",
+    "Glass, window proxies, stair/ground surfaces, plain side/rear section cuts and all unknown faces neutral.",
+    "Concave-corner science portico and cropped wing sections only, not entire complex or interior.",
+    "Retain original README older appearance and2021 wall/2024 AC context. These source dates and planning notes do not certify2026 current facade; exact photography dates unknown."
+  ],
+  "rights": "Private references only; no public images/textures or commercial-rights inference.",
+  "source_private_backup": "Sources separately privately retained."
+}

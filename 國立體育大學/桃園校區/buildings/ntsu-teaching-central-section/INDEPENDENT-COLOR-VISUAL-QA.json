@@ -1,0 +1,90 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten finalviews personally inspected:7wholemodel views framed and3intentionaldetails;only centralfin frontnominalgreen.",
+    "Horizontal sills,letteredcanopy,mixedbrickgray walls,windows andsidefin neutral;no inventedgreen strips orAC.",
+    "NTSU centralfacade sixvisiblebands withnarrow adjoiningwingstrips,notwholebuilding."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 1734,
+  "material_face_counts": [
+    2,
+    1732
+  ],
+  "connected_coplanar_domains": 489,
+  "original_obj_present": false,
+  "original_files_retained": 21,
+  "file_sha256": {
+    "README.md": "5ecaf6a7fe86e5008040e770b3f6161245a53ea1a6bd4a471ef28da149a28423",
+    "README.zh-TW.md": "5ecaf6a7fe86e5008040e770b3f6161245a53ea1a6bd4a471ef28da149a28423",
+    "model.stl": "1e0b7b5bc0b55fb9e89d1561b3ed813517ae4663095fb2e7b74c5a9e5784f173",
+    "build_model.py": "400100e08f92ca95298a3a554f9edad0b36613641161f47f2012fe607801f929",
+    "colorize_model.py": "6bf2618953f9bff44b06e4299ce7aed90f147a52cd22fe6523339e701328fce0",
+    "render_color.py": "b9aaa8739700f87175eef89434b4f126139a9d7c19cfefd2436f62b7c96cb382",
+    "verify_color_scene.py": "bc2e5ea8fe1ef7949b07009e04eb02bfe8e52467a0a42d5776fcf23df22a6acc",
+    "validate_color.py": "2131c9a8e0f54a12aaf7d7aa9c5f3d847d8c97cf1814ba42b73aacf906e5ef3b",
+    "color-mesh.npz": "65b9694d490bc83dbfeb74b3d0ed0d37bf34efe0d5a6b194cc58c6f622f47bc4",
+    "palette.json": "34e33a5b8f5c339947db855c14e564881872ac5017b1d953db4cfb621f84149f",
+    "appearance-materials.json": "a0bf9451c6ee46b8234620311386c73a86318955b07b754736b1449fe93687cc",
+    "COLOR-SOURCE-REGISTER.json": "d6691bb88e51d47abef70b63f12304837c7c8991e59fd1cf2065103808263a4c",
+    "appearance.3mf": "7ffafa9f3770c47293cc3c5ed0cd3d20c41eacd60f73b30c467dcceb3473f370",
+    "scene.blend": "3363e65c22d2dee89093e8b3cf2a3e6896c2da61571185779e134087fa7a8ba2",
+    "preview.png": "374a3c9ed68fd94d2a21bcb3c3a617fa8fef45aa7cd2eb145eb11c549644ba32",
+    "rear.png": "a1adfb0971a2d1e6cb721c20f24001f5d0b2fec1caca5d02577cefa936061300",
+    "front.png": "37a5a8a551fbc035934725abea52495637bd4bf7792ebe0ad5d19b6082e25484",
+    "back.png": "aaee0778adf861c134759cfa67681047aeceab33e0dd3102d26aba1a6ea8171a",
+    "west.png": "3526953cd49065bd8fbf8a6bdcc56f9a9a325753595ae234e839c076df8d8331",
+    "east.png": "7d07474224b852086332ba7f48843a909da142df7eaab89ad6669448d23646d2",
+    "top.png": "168300ddd3006a01559ce67dffae1a11f688aa758d00b9ce1a312a4cbda9c652",
+    "entry-detail.png": "9df2f0ce251b8e65d1ece3053238d668881415165ee3f354888a280cdd6e6061",
+    "facade-detail.png": "8cfa29284fe9a9efe9c50abc2c854f6b68693e7849dcec7f6d5d0fd03020b858",
+    "roof-detail.png": "ad0a53200f2cb66a59883ff3d6d06486e1840fa07dd8b7100ed529f4f71a14e9"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "ef830c16161a0ca64c216f1d2b6ee94c4b9792cf669e50bc6836baeb2a94d765",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "165b32b67fa5396fe193b1027f3bf2924ac61b16b17ef6773667dc3ea608470b",
+    "SCENE-QA.json": "40ec7cbecb286d4baa5858da110bbd0e05632f0b54a19a5c6ade99b2c82bc980",
+    "FRAMING-QA.json": "f208f6f257a28b1706f5752298ee3230b5fc4af611efd031a2f71f2e27f41960",
+    "DELIVERY-QA.json": "32fc3d2518c3bb4bec95f4bf0c864afb2afa107843ba374da93803feab07d047"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "c90fdfbc5620cf0314f7c35035d47c4abcb2743dc92019ff183463fdba2af7ea",
+    "ORIGINAL-RETENTION-QA.json": "398df6eb1aaab13a5996bd55de91a682739c4fb73815ad813c20add7d034313c",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "b04eeac43dd906e60e5084f6e6550f1cf37b535c529b9a16dc4912e0748d74a7",
+    "INDEPENDENT-DOMAIN-0406.json": "477d7ff5511738e4f48f3a6041048926796eabec5db53e5f974a2a64d5ef85bf",
+    "INDEPENDENT-IDENTITY-0406.json": "a2a19286d6787f4e5e930f4e29c73a4c0862bcd3d67afcb2db5d7a965362a5f1",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "ff3aede5476a4ef7342afff850edc79f0bf7c981f93ac045edfcb5dd9dcbff2f"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "cf3ed7b5c59390cb9b4145e73d3f0287f149d8042776c5269810cd8d5f2bbab9"
+  },
+  "limitations": [
+    "2complete centralfin fronttriangles;1732neutral.",
+    "Wholeplane equalsoriginalfinite domain;naturalBoolean canopy/cap limits retained.",
+    "NTSU Taoyuan centralteachingsection,notwholebuilding.",
+    "Captureunknown;2024AC history notnewgeometry or2026condition.",
+    "No originalOBJ,no testprint."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:09:36Z",
+  "parent_review": "Parent personally viewed two official exterior photos, original fin code, preview and final ten montage. Only entire y-14 plane two triangles green, true original canopy/cap Boolean limits28.6..116 not artificial color cut. Horizontal green extents do not match original fullwidth sills and stay neutral. Mixed brickgray walls, lettered canopy/glass unknown neutral. Sevenwhole views fit and three details. Original1734 triangles and bytes/noOBJ unchanged; sixcolumn central section not full wings,2024AC not recreated and no2026 claim.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "NTSU Teaching Central Section partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "NTSU Teaching Central Section partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}
