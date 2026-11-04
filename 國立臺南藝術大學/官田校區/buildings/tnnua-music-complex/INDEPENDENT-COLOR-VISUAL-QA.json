@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Parent personally viewed the one successful official source photograph, original code, preview and final ten-view montage. Independently selected four complete original front mullion rectangles (8faces), each9.6mm2; all1942 coplanar domains uniform and all6662 triangle coordinates unchanged. Unknown brick-gray blocks, glass proxies and roofs neutral. A–D plus connected dormitory retained as one original complex.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Four complete original outward projecting-room mullion rectangles8faces nominal lightgray.",
+    "All1942coplanar connected domains uniform;8lightgray and6654neutral triangles.",
+    "All glassproxy, frame sides, roomskin, repeated mixed brick-gray blocks, bridges, balconies and roofs neutral; source photo does not support full-group color.",
+    "All ten captions identify partial A–D plus dormitory group approximation, not2026 fullcolor and partial coloring; seven full views fit geometry, three closeups intentional.",
+    "Original6662triangles, STL/build bytes unchanged; immutable original has noOBJ; color review does not validate original approximate geometry or current condition."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "0e3072551e17100850443be33169ab43bf84fb7d6a20d2d74f9419314fae4f8c",
+    "README.zh-TW.md": "0e3072551e17100850443be33169ab43bf84fb7d6a20d2d74f9419314fae4f8c",
+    "colorize_model.py": "b397cb24b98b283d4a9af76420435bd80aa4705419864038957beba51a99ed7d",
+    "render_color.py": "31a1966f5773880c3dfbc49ba5efcafea2480154ded742f70d2de791d0eba675",
+    "color-mesh.npz": "5119a2d61fd0e46f31920ff58b221cc1e67570851f287b9f9a1f9e85a93631ed",
+    "palette.json": "fc7f945f9f2cad154289d3210de049082a0319c4fd2298a96ec9878d138e57f6",
+    "appearance-materials.json": "bce7a0ab5fcb06cd7147ae18343095dfe4bcaae8cdb6778383bb6a5ef0885ce0",
+    "COLOR-SOURCE-REGISTER.json": "a67a02a8f9eeb59e1821bbc5329a0eab2b2ac547db1c5782bc0e7e2ec8d4a079",
+    "model.stl": "6fce4a4f62cf190bf0d3cfd4285bf7b983ae074d8d3499ec156414c27cae85c4",
+    "build_model.py": "36990a9b7bdd5ce27d3448a980a5c800c999785498411107b11d69594def7fbe",
+    "preview.png": "4b89919b2c5de4a703434e42df6fddb6e1ab9e4d82e7884b75096d49fe037468",
+    "rear.png": "9edcffaaf958c42383d48712d79ebba5b0545c236ceb3f3c251cc857cc411bb8",
+    "front.png": "1d5df4989a6f1b7624ecfdbd895f4378d7dd70a7b2f05304520751668089d6ab",
+    "back.png": "237c2fc3c98ea2aca17324fafca638fab3c17675134a16ff76d01330e567a227",
+    "west.png": "e73052641e5fae376eacd48100fd26ae575a0675f53bb129716468da7a994c7c",
+    "east.png": "0223e5db8302ed3a5ff042a1b4e4b5f8648b242f0bf17386e801153053d8c13a",
+    "top.png": "409284f34a4396d756c59b82c56d9e0169cfa38e9f28c852c4b04921189f81b1",
+    "entry-detail.png": "e7050a9fbf5857edb83f14471b90e49465f0e2f1e5cb603b967a85da021e6d90",
+    "facade-detail.png": "64bd1bc378b9210447a8f7eabe24dfee8c50e3476f049a83f667e4e02e163405",
+    "roof-detail.png": "de5bbd99e949917ab7492d59fd4a89a9cacf3ba2a3d579a6120a755db8db0994"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-02T23:59:54.470264+00:00",
+  "parent_root_qa_sha256": {
+    "INDEPENDENT-IDENTITY-2356.json": "e3929fa66a911ce55b43e9b2991b2717c89d7d7298a62bfed22a7fee266cf765",
+    "INDEPENDENT-DOMAIN-2356.json": "318a914ce71127c2145e4fcf659aacf0519e68ef0461199c8c75a99cbc962a79"
+  }
+}

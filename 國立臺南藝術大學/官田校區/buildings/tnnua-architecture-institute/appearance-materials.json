@@ -1,0 +1,44 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed four skylight beam undersides nominal gray metal",
+      "hex": "#777D7E",
+      "faces": 8
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED roofs walls columns bridge proxies neutral",
+      "hex": "#B8BAB5",
+      "faces": 2342
+    }
+  ],
+  "domain_face_indices": {
+    "-15": [
+      1265,
+      1274
+    ],
+    "-5": [
+      1286,
+      1292
+    ],
+    "5": [
+      1307,
+      1314
+    ],
+    "15": [
+      1325,
+      1333
+    ]
+  },
+  "coplanar_components": 568,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "2350 original triangles unchanged",
+  "limits": [
+    "Only four whole original skylight beam bottom rectangles z46.5, xcenter+-0.75, y-22..16; all vertices tested, 57mm2 each.",
+    "Roof top and broad underside, beam sides/end/top, fullheight columns and bases neutral.",
+    "Photo orange open truss bridge does not map original solid parapet: neutral.",
+    "All walls window backs louvers stairs unknownneutral; photo dates unknown, no current-condition claim."
+  ]
+}

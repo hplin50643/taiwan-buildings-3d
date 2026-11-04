@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed the successful official and independent Flickr built exterior photos and all ten final renders; unknown dates and four-beam-underside-only limitations retained. Parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Four complete original beam underside rectangles57mm2 each,8faces nominal graymetal.",
+    "All568coplanar connected domains uniform;8gray and2342neutral triangles.",
+    "Roof top and broad underside, beam sides and ends, fullheight columns/bases and solid orange-bridge proxy remain neutral.",
+    "All ten captions identify partial original connected complex approximation, not2026 fullcolor and partial coloring; seven full views fit geometry, three closeups intentional.",
+    "Original2350triangles, STL/build bytes unchanged; immutable original has noOBJ; color review does not validate original approximate geometry or current condition."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "fe5864fa9ccd4d1933c3783cb83b0ea36c1f7a53ed3a34e832f6ef32c216d1ad",
+    "README.zh-TW.md": "fe5864fa9ccd4d1933c3783cb83b0ea36c1f7a53ed3a34e832f6ef32c216d1ad",
+    "colorize_model.py": "933ca08ca0955e799b0c094cf252fb8406c299ad6a268e5ea4e3eed5a4949e5b",
+    "render_color.py": "e27c2f1c74297905df78848eeb5e0f2b654c94de684a8e05f4d89eb46903e025",
+    "color-mesh.npz": "1139fdd7a29b03cc30da8a471076914981c0c53f0d4580fefaaba1d4e646acf1",
+    "palette.json": "3ee7d34b6eaf3ffefad7b43c1aed7e8020d38add40d7ed1646f08235ce3b9a1c",
+    "appearance-materials.json": "e57e8d9ed8906b35172953584a684a560c9d1acbfa0dd9600f2c7e0df3185bf3",
+    "COLOR-SOURCE-REGISTER.json": "6f8af6007c1a16b781b3f79fa6daa876851b1b67863e811be9b029ac2d35c14c",
+    "model.stl": "3f0c9a49c6e52921560417ba128f359260fa83346c351fcfe41fa7f8e16ceb88",
+    "build_model.py": "8f4401ee36ed07cafae67f31ec8b5b13aefe7417da4acc76de2618789b40a108",
+    "preview.png": "a58a5f2d5028a3f4fd61b8f67e6e38ab8f990dc648b48acb139967af82f07af5",
+    "rear.png": "83e7fb1e29c37dffa4d78bb6724621bd4426d5ff93e22ef955fa037aafb05076",
+    "front.png": "dcce53e3b4c951733d0cb963873169bac5a6d48df84a572eb3fb3fda2732ed62",
+    "back.png": "3d3a9146af9a07ed6350b8acfe0d598a872c05a0ebec08525a164cd048a94f0e",
+    "west.png": "e6fa29734c592ca747f7b8a183c3f302f8c9e80204c80087fa7cbc4695e1f5e7",
+    "east.png": "ab56dafc80136db3ade668757ac79973e34081130aa441ff61de1fd7f4df8a53",
+    "top.png": "c9b915c2afbe9bbee88176304fa3f97ac4d7ea953efeb323811cd8186df510e0",
+    "entry-detail.png": "8d8f288d1832c841266858263c450e98785aba57adfd662b03c10b20a0923dec",
+    "facade-detail.png": "617e863d67b00bac8a2274d6644fd8971a6505a3e3d9c90ccafa7221d5182bb7",
+    "roof-detail.png": "0eb767972270fbdc5b160f2754a23e85f352930baefc560a9c037b62e65f351d"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "97b99f8ca0d663855a8941c6a025fcd033bdaf1ed1dc1b03790f0b3dd199f7ec",
+    "SCENE-QA.json": "0ce1b5f3d0690d8269ee7047e444a18dbc9137a9df7299845503552a385f34a2",
+    "DELIVERY-QA.json": "8e69714dda6d54a9bb1b3a8c2284d89684aff2b714bba74bc571d7633827f7f7"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "ea6d215afec9e8bc7072a130a387ccafd8e03d7f962cc540c280fbadf15d971a",
+    "ORIGINAL-RETENTION-QA.json": "3ccbe0f9b4a53dab8b951f51c4576f7ea05e7a07d5cbc22937a6b58ff587c138",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2"
+  },
+  "reviewer": "finish_science_hall",
+  "verified_at": "2026-11-03T00:25:03.329515+00:00",
+  "parent_manual_review": "Personally viewed both successful source photographs, original code, preview and final ten-view montage. Four complete original beam underside rectangles at z46.5 have8 graymetal triangles, area57 each. Seven overall views frame original geometry and intentional low-angle details expose undersides. Roof slab, columns, solid bridge proxy and unknown surfaces neutral. Partial only, no geometry repair or physical printing verification.",
+  "parent_root_qa_sha256": {
+    "INDEPENDENT-IDENTITY-0017.json": "c566e0143acc4958de91bccb04a2f6ad084c7eb345d0671c0b0bf08e0c5709a5",
+    "INDEPENDENT-DOMAIN-0017.json": "c3189918c4beff2c0ae1de7319a36074ab641d40743f9c7b8dd244e91598b298"
+  }
+}

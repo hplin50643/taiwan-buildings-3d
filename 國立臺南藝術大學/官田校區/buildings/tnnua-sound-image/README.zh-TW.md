@@ -1,37 +1,34 @@
-# 國立臺南藝術大學｜音像大樓
+# 南藝音像｜塔外真網格前面局部深灰
 
-## 模型預覽
+**網背、玻璃磚柱、混材塔壁與屋面未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。只422真網格前面，非全色重建。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![塔](entry-detail.png)|![網格前](facade-detail.png)|
+|![中性屋部](roof-detail.png)|||
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 材色範圍
+同 `tnnua-sound-image` 原項目，same-item、count_delta=0。**2664原三角面、STL與build_model.py字節不變**，不切面／新增幾何。原公開包無OBJ，不假稱保留。
+- 塔外獨立金屬網格完整前面 y21.1、x−54.5..−31.5、z34..77，422原面名義深灰。包含所有既有豎橫網格的正面，不依陰影深淺任選三角。
+- 其餘2242面中性：網格側／內／頂底、整片背板代理、混材塔牆、劇場皮、低入口玻璃磚柱／灰基座混面、玻璃與細窗代理、景觀斜屋、庭院、階及後部。
+- 602共面連通域均一，0候選撤色。照片的外網／支架不是單片玻璃，不把背板全塗深色；原粗柱缺玻璃磚與基座界，不染整白或整藍。
+- 材色／中性界是證據範圍，非真實材接縫；補色不追認原近似造型、坡度或窗格精度。
 
-## 辨識量體與證據
-1:6傾斜屋頂底盤、露天空庭、八層研究塔、大型格柵立面與不同的後側開窗、劇場凸起量體、低矮入口與階梯輪廓。屋頂庭院位置參考校圖，數量及尺寸採可列印簡化，未製作室內。
+## 來源／日期與權利
+三張官方外觀照片已實看。拍攝日期未證；DateTime2022是修改資訊，不獨立證明拍攝日期，官頁2026檢視也不是現況精測。
+原照私人保存，不公開／貼圖；未確認CC／再散布授權，不保證商用。HEX為名義灰色族，非校準色票。
+最終GO是有界來源放行，不是發布核准，也不免除建模QA；繼承的notformal文句僅先期review。
 
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+150×136mm原展示底座，照片近似非精測比例。STL無色；3MF與Blender真面材。兩材標籤非驗證兩色／四色耗材切片；**未實際列印**，無切片路徑。
 
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py`／`verify_color_scene.py`。
+原字節／三角multiset、閉合正體積、3MF逐面材、完整隔離原build＋color重建、scene重開、十圖1200×900與圖文hash核對；程序不取代人工來源核。
+原README、單色previews／render／validation保留歷程，不冒充新QA，無刪檔。
 
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
-
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
-
-
-## 群體比例修正
-依校方全景33026-242031340影像交叉比對，塔頂與劇場頂標高調為82mm與60mm，從共同底座面看立面高度約1.39倍。入口頂約27mm，主坡面約6–25mm。這是消除初版塔相對過高的外觀校對，不是場地高程測量；真實坡地及透視仍有近似。
-
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共410層均封閉；0.8mm XY薄特徵篩查有3層警示（最高局部面積损失80.3895 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
-
-
+## English scope
+Partial color only:422 existing outward fronts of the tower's independent metal grid darkgray. All2242 other triangles neutral, including gridback/edges, glass-block column proxies, mixed tower walls and roof. Original2664 triangles unchanged; no original OBJ in immutable package. Capture dates unknown;2022modification and2026page inspection are not capture evidence. No geometry corrections, full-color claim, test print or verified filament slicing.

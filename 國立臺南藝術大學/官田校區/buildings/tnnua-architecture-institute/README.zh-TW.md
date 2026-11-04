@@ -1,37 +1,34 @@
-# 國立臺南藝術大學｜建築藝術研究所（加藤教學大樓）
+# 建築藝術研究所｜僅四天窗梁底局部灰金屬
 
-## 模型預覽
+**局部補色未完成：僅四天窗梁底 8 原面灰金屬；屋板柱根與透橋代理未完成。主要低角可見，非全色或2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項 `tnnua-architecture-institute`／`count_delta=0`，官田校區。20261103為處理日期而非拍攝日。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![低角梁底](entry-detail.png) | ![天窗梁底與屋板](facade-detail.png) |
+| ![中性屋板及天窗](roof-detail.png) | | |
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 材色範圍
 
-## 辨識量體與證據
-雙翼與低前臺座、通高柱撐大屋頂、中央採光開口、上層百葉、空橋、階梯和屋頂矩形凸量體。校方編號4、加藤義夫作品書摘全景與外廊、校方建築繁殖場專文內同一外觀照片互相核對。攝影師將此放在繁殖場主題中，本文以校方導覽與建築師書摘確認教學大樓，與半弧形工作棚分開。
+只四獨立天窗梁底：z46.5、x中心−15/−5/5/15各±0.75、y−22..16。全三頂點同一原矩形、各兩三角完整57mm²，共8灰金屬；2342面中性。全共面連通域一致，不用三角面心截色、不切面/加構件。名義灰不是金屬精確測色；低視角才能見底面，不能為圖面顯色擴到整屋底。
 
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
+大屋板頂/底、梁側頂端全部中性：照片鋼梁/淺屋板混材不能對應原大平面。所有全高柱跨基座接頭無原材界，整柱中性；橘橋實景是透空桁架/欄杆，原實厚欄板不能整橘。窗背/框/百葉/下基座孔格/壁面/階/後域未知中性。**中性不是實景灰證明；來源範圍界線不是實材接縫。**
 
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+原2350三角、STL/build字節、尺寸不變；不補桁架/玻璃框/柱根，不以補色追認原近似幾何為精測或當前現況。
 
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
+## 來源、日期與權利
 
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
+僅兩成功實景：校方 source-view1 與獨立 Flickr source-view4，均已親看外觀/仰看天窗。日期未知，不宣2026現況。archbook403來源未讀、不重試或繞過，不當證據。網址/hash見source register；公開不包含參考原照、不貼圖，未見CC不沿repo license推商用。HEX只展示色族。
 
+## 檔案與 QA
 
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共297層均封閉；0.8mm XY薄特徵篩查有28層警示（最高局部面積损失0.4 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
+`appearance.3mf`兩展示材，`scene.blend`真面材，`color-mesh.npz`原三角材索引。STL無色原件及build保字節；Immutable原包無OBJ，不冒稱原OBJ存在或保留。
 
-## 本件支撐特別警示
-大型頂棚底面、空橋與採光口梁需在真正切片器設定支撐並檢查拆除路徑；約3.2mm直徑細柱在150mm模型中可能折斷，建議低速列印並避免側向受力。本模型未做G-code或實際試印。
+原README保留為`ORIGINAL-MONOCHROME-README.md`/`.zh-TW.md`，舊previews/QA保單色歷程非新色QA。依requirements執行`colorize_model.py`、`export_appearance.py`、`validate_color.py`；Blender執行`render_color.py`/`verify_color_scene.py`。原build+color隔離重建保留不刪；3MF/STL三角座標、封閉正體積、重開scene、10張1200×900見QA。父另終審。
 
+**未實際列印。** 兩展示材不是已驗四色切片工程，薄部與支撐另核。
 
+## English limitations
+
+Very limited partial: only four complete original skylight beam underside rectangles at z46.5, two triangles and57mm² each,8gray-metal/2342neutral. Low-angle views reveal them; no expansion onto broad roof underside for visibility. Beam sides/top/ends, roof sheets, fullheight columns with mixed base/junction zones, solid bridge proxies replacing photographed open orange truss, windows and unknown surfaces remain neutral. Two successful built photographs viewed; capture dates unknown, archbook403 source not accessed.2350originaltriangles/STL/build bytes unchanged/count_delta0; color review does not authenticate original simplified geometry. Photos privately retained, not textures, no current-condition or commercial permission claim; not test-printed.

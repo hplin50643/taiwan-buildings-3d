@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Parent personally viewed three official exterior photographs, original code, preview and final ten-view montage. Independently verified nine whole original louver front rectangles18faces,37.2mm2each,841uniform coplanar domains and3416original triangles unchanged. Tops/sides/backing neutral. No invented wood-proxy color or simplified courtyard coloration; not complete exterior colors.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Nine complete original outward front louver rectangles18faces nominal charcoal.",
+    "All841coplanar connected domains uniform;18charcoal and3398neutral triangles.",
+    "Louver tops/sides/backing neutral; coarse wood panel proxies, simplified courtyard bowl, mixed walls and roofs neutral without false material-boundary cuts.",
+    "All ten captions identify partial original connected complex approximation, not2026 fullcolor and partial coloring; seven full views fit geometry, three closeups intentional.",
+    "Original3416triangles, STL/build bytes unchanged; immutable original has noOBJ; color review does not validate original approximate geometry or current condition."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "55d6a9eeb875cb0edce01e9148a7f3dd0d27bfba21f78c2b3509a9b9054f4604",
+    "README.zh-TW.md": "55d6a9eeb875cb0edce01e9148a7f3dd0d27bfba21f78c2b3509a9b9054f4604",
+    "colorize_model.py": "dddfebe6ce23969b4cb6b44cbbabd3d9229755a029bae86df3bef31d3f4f28aa",
+    "render_color.py": "8574c3ae53402a4d364d5bc9d655812a32e9b45d8ae5d840519f972e7ee68759",
+    "color-mesh.npz": "9aaf230a9e8d4c88d874236923ee5ec56931c59171e6af6aa5fce1b3d38c5dae",
+    "palette.json": "80a65db2621d23d4bda9f9fffb54212cfdc3677945f04c13261a8cde6925617d",
+    "appearance-materials.json": "c4d34e1a6f073531c880992317458b332c32755390d99a53a2dc3e8356936127",
+    "COLOR-SOURCE-REGISTER.json": "0bcae60cbe92e2397a6b54f25f0199deae9a65947f6000cefcbedf92061bd5df",
+    "model.stl": "853c057591a890c9923fe3fb219f345fedaff79a3a1d27eabac799b7ff83fee4",
+    "build_model.py": "5162c3db56e8c3185967b0ef24e48c2936df28e6b3d71e3b34e5dc04e6b85931",
+    "preview.png": "c0351727ea850d91565b51f1f7fc94eb013654a138e3c216fd21f1bab78c05b8",
+    "rear.png": "62fff71898c0ae8322ff36252feb754f6497f05724209fe955267155583401d4",
+    "front.png": "d85c7fd94195da89f91330c97708c4193e8a7b0e1e7444a867d3490f7b007af4",
+    "back.png": "6103606edc663433008b184dffafe61e383394c44e3b7142b1b4d68c6e4e82d6",
+    "west.png": "4d49926b88e95bbd754ad7547a6a72451e3b48cd1d8a96032b34a3a50c6c11c1",
+    "east.png": "882e85eb5a31696f2077c0f4387dbc6e6f761e6ab26ea08d21949a3c6db45530",
+    "top.png": "7c159f4b72a2aab08714c2c46afeed9146e150a0029e13bc6fe83b13e7eab67f",
+    "entry-detail.png": "7af35651eb4ee74273602d715477ffe5a076fec63dbcdfd760f3539fe2b188ae",
+    "facade-detail.png": "3973e75a1dd589ae5d15586fd3dbce01006d4b3ce652d8c56de280d16c61e4fa",
+    "roof-detail.png": "516a6681c3bc4836b609a3ace9f9adba9a0e73a63866665c5597a15398a98303"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T00:05:55.686943+00:00",
+  "parent_root_qa_sha256": {
+    "INDEPENDENT-IDENTITY-0001.json": "be25c1d71c19830dd8ca42e0d4d83f5e156bd99abb729815874bc73d9c1d05ba",
+    "INDEPENDENT-DOMAIN-0001.json": "cdea335f9612072d27deb571e43ea83e51ec024077d0f398d59db439d4617d5b"
+  }
+}
