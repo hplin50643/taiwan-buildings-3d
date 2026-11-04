@@ -1,0 +1,2631 @@
+{
+  "id": "A_NOMINAL_ROOF_SUPPORT_1",
+  "actual_to_expected": {
+    "all_source_boundary_covered": true,
+    "source_patches": 114,
+    "target_patches": 583,
+    "Linf_point_to_surface_distance_bound_mm": 5e-06,
+    "euclidean_point_to_surface_distance_bound_mm_upper": 8.660254037844388e-06,
+    "uncovered_fragments": [],
+    "uncovered_projected_area_mm2": 0,
+    "nonzero_boundary_envelope_bbox_mm": [
+      16.101261138916016,
+      72.45127868652344,
+      58.36159133911133,
+      45.90884017944336,
+      91.16859436035156,
+      67.80213928222656
+    ],
+    "maximum_assigned_support_plane_distance_mm_upper": 3.46507024711148e-06,
+    "changed_patch_ledger": [
+      {
+        "source_patch": 7,
+        "owner": 7,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "1",
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          72.45127868652344,
+          66.12643432617188,
+          21.06277847290039,
+          75.69735717773438,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.0696654627757e-06
+      },
+      {
+        "source_patch": 8,
+        "owner": 8,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.06277847290039,
+          73.69735717773438,
+          58.36159133911133,
+          45.90884017944336,
+          76.19474029541016,
+          65.50140380859375
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.5235634474588982e-06
+      },
+      {
+        "source_patch": 14,
+        "owner": 14,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "5",
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          60.88699722290039,
+          38.94732666015625,
+          86.4283447265625,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 4.64987701342809e-07
+      },
+      {
+        "source_patch": 15,
+        "owner": 15,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          86.42513275146484,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          60.36787414550781
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.4469132460899092e-06
+      },
+      {
+        "source_patch": 17,
+        "owner": 17,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "5",
+          "6",
+          "7"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          65.09893035888672,
+          25.037120819091797,
+          90.0888900756836,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.46507024711148e-06
+      },
+      {
+        "source_patch": 18,
+        "owner": 18,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "6",
+          "7"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          27.037120819091797,
+          88.0888900756836,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          64.54784393310547
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.5493745610413107e-06
+      },
+      {
+        "source_patch": 48,
+        "owner": 48,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "10"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.060687038020554,
+          73.69735717773438,
+          65.50140116466557,
+          23.06277847290039,
+          73.69735717773438,
+          65.50205477610619
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 49,
+        "owner": 49,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "10"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.06277847290039,
+          75.69436645507812,
+          65.50140116466557,
+          23.06277847290039,
+          75.69735717773438,
+          65.50140380859375
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 50,
+        "owner": 50,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "10"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          21.0646812933201,
+          75.69735717773438,
+          66.12550167759449,
+          21.065773065497638,
+          75.69735717773438,
+          66.12584287625798
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 54,
+        "owner": 54,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "10"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.06277847290039,
+          73.69735717773438,
+          65.50140116466557,
+          23.06277847290039,
+          75.69436645507812,
+          65.50140380859375
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 55,
+        "owner": 55,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "10"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          21.065773010253906,
+          75.69735717773438,
+          65.50140116466557,
+          23.06277847290039,
+          75.69735717773438,
+          66.12550354003906
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 58,
+        "owner": 58,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94411087036133,
+          86.42513275146484,
+          60.287299719192774,
+          40.94732666015625,
+          86.42513275146484,
+          60.288265228271484
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 59,
+        "owner": 59,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          88.42396407940106,
+          60.3679596510832,
+          40.94732666015625,
+          88.42513275146484,
+          60.36800765991211
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 60,
+        "owner": 60,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          38.94732666015625,
+          88.42513275146484,
+          60.9667316538633,
+          38.95056916475742,
+          88.42513275146484,
+          60.96770477294922
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 61,
+        "owner": 61,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          38.94732666015625,
+          86.42513275146484,
+          60.88699682273913,
+          38.94732666015625,
+          86.42834474216622,
+          60.88712692260742
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 63,
+        "owner": 63,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          38.94732666015625,
+          86.42513275146484,
+          60.28826398124746,
+          40.94411087036133,
+          86.42513275146484,
+          60.88699722290039
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 64,
+        "owner": 64,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          86.42513275146484,
+          60.287299719192774,
+          40.94732666015625,
+          86.83518782509972,
+          60.30384689545945
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 65,
+        "owner": 65,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          38.95056915283203,
+          88.42513275146484,
+          60.36800681114506,
+          40.94732666015625,
+          88.42513275146484,
+          60.966732025146484
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 66,
+        "owner": 66,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          38.94732666015625,
+          86.4283447265625,
+          60.887126437433395,
+          38.94732666015625,
+          88.42513275146484,
+          60.96770477294922
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 68,
+        "owner": 68,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          27.034109115600586,
+          88.0888900756836,
+          64.50772740382024,
+          27.037120819091797,
+          88.0888900756836,
+          64.50862121582031
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 69,
+        "owner": 69,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          27.037120819091797,
+          90.08585357666016,
+          64.54778037132822,
+          27.037120819091797,
+          90.0888900756836,
+          64.54784393310547
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 70,
+        "owner": 70,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          25.039337475898297,
+          90.0888900756836,
+          65.13814409813568,
+          25.040157358713117,
+          90.0888900756836,
+          65.13838645567026
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 72,
+        "owner": 72,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          25.037120819091797,
+          88.0888900756836,
+          64.50861769563774,
+          27.034109115600586,
+          88.0888900756836,
+          65.09893035888672
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 73,
+        "owner": 73,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          27.037120819091797,
+          88.0888900756836,
+          64.50772740382024,
+          27.037120819091797,
+          90.08585357666016,
+          64.54778289794922
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 74,
+        "owner": 74,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          25.040157318115234,
+          90.0888900756836,
+          64.54784127418998,
+          27.037120819091797,
+          90.0888900756836,
+          65.13814544677734
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 75,
+        "owner": 75,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "1",
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          72.45127868652344,
+          66.12643432617188,
+          21.06277847290039,
+          73.70032501220703,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.0696654627757e-06
+      },
+      {
+        "source_patch": 76,
+        "owner": 76,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "1",
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          72.45127868652344,
+          66.12643432617188,
+          21.06277847290039,
+          76.19474029541016,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.0696654627757e-06
+      },
+      {
+        "source_patch": 77,
+        "owner": 77,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          75.69735717773438,
+          66.12550354003906,
+          21.065773010253906,
+          76.19474029541016,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.0696654627757e-06
+      },
+      {
+        "source_patch": 78,
+        "owner": 78,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "1",
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          72.45127868652344,
+          65.50232696533203,
+          23.059812545776367,
+          73.69735717773438,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.0696654627757e-06
+      },
+      {
+        "source_patch": 79,
+        "owner": 79,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "1",
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          72.45127868652344,
+          65.50140380859375,
+          23.06277847290039,
+          73.69735717773438,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.5235634474588982e-06
+      },
+      {
+        "source_patch": 80,
+        "owner": 80,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          75.69735717773438,
+          58.36159133911133,
+          45.90884017944336,
+          76.19474029541016,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.7611781606505532e-06
+      },
+      {
+        "source_patch": 81,
+        "owner": 81,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          21.065773010253906,
+          75.69735717773438,
+          58.36159133911133,
+          45.90884017944336,
+          76.19474029541016,
+          66.12550354003906
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.5235634474588982e-06
+      },
+      {
+        "source_patch": 82,
+        "owner": 82,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "1",
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          72.45127868652344,
+          58.36159133911133,
+          45.90884017944336,
+          76.19474029541016,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.5235634474588982e-06
+      },
+      {
+        "source_patch": 83,
+        "owner": 83,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "2",
+          "3"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.06277847290039,
+          75.69436645507812,
+          58.36159133911133,
+          45.90884017944336,
+          76.19474029541016,
+          65.50140380859375
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.5235634474588982e-06
+      },
+      {
+        "source_patch": 84,
+        "owner": 84,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "4",
+          "5",
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94411087036133,
+          84.92948913574219,
+          58.73924255371094,
+          45.90884017944336,
+          86.42513275146484,
+          60.288265228271484
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.205213250922452e-06
+      },
+      {
+        "source_patch": 85,
+        "owner": 85,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          38.95056915283203,
+          88.42513275146484,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          60.966732025146484
+        ],
+        "maximum_support_plane_distance_mm_upper": 8.123986087241518e-07
+      },
+      {
+        "source_patch": 86,
+        "owner": 86,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          38.94732666015625,
+          88.42513275146484,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          60.96770477294922
+        ],
+        "maximum_support_plane_distance_mm_upper": 8.219805843583283e-07
+      },
+      {
+        "source_patch": 87,
+        "owner": 87,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "4",
+          "5",
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          58.73924255371094,
+          45.90884017944336,
+          86.42513275146484,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.205213250922452e-06
+      },
+      {
+        "source_patch": 88,
+        "owner": 88,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "5",
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          60.288265228271484,
+          40.94411087036133,
+          86.42513275146484,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.205213250922452e-06
+      },
+      {
+        "source_patch": 89,
+        "owner": 89,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "5",
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 8.219805843583283e-07
+      },
+      {
+        "source_patch": 90,
+        "owner": 90,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          88.42188262939453,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          60.36800765991211
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.4469132460899092e-06
+      },
+      {
+        "source_patch": 91,
+        "owner": 91,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "4",
+          "5",
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          84.92948913574219,
+          58.73924255371094,
+          45.90884017944336,
+          91.16859436035156,
+          60.28730010986328
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.7393083790450035e-07
+      },
+      {
+        "source_patch": 92,
+        "owner": 92,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "5",
+          "6",
+          "7"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          65.1390380859375,
+          25.037120819091797,
+          91.16859436035156,
+          67.80213928222656
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.46507024711148e-06
+      },
+      {
+        "source_patch": 93,
+        "owner": 93,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "6",
+          "7"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          90.0888900756836,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          67.80213928222656
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.46507024711148e-06
+      },
+      {
+        "source_patch": 94,
+        "owner": 94,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "5",
+          "6",
+          "7"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          64.50862121582031,
+          27.034109115600586,
+          88.0888900756836,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.40548110397046e-06
+      },
+      {
+        "source_patch": 95,
+        "owner": 95,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          27.037120819091797,
+          88.0888900756836,
+          64.50772857666016,
+          27.037120819091797,
+          90.0888900756836,
+          64.54784393310547
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 96,
+        "owner": 96,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "5",
+          "6",
+          "7"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          64.50772857666016,
+          27.037120819091797,
+          88.0888900756836,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.40548110397046e-06
+      },
+      {
+        "source_patch": 97,
+        "owner": 97,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "6",
+          "7"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          25.037120819091797,
+          90.0888900756836,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          65.1390380859375
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.46507024711148e-06
+      },
+      {
+        "source_patch": 98,
+        "owner": 98,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "6",
+          "7"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          25.040157318115234,
+          90.0888900756836,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          65.13814544677734
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.5493745610413107e-06
+      },
+      {
+        "source_patch": 99,
+        "owner": 99,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "5",
+          "6",
+          "7"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.124521731614681e-06
+      },
+      {
+        "source_patch": 101,
+        "owner": 101,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "10"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.06277847290039,
+          75.69436637592014,
+          65.50140116466557,
+          23.06277847290039,
+          75.69436645519667,
+          65.50140380859375
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 104,
+        "owner": 104,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94411082986518,
+          86.42513275146484,
+          60.28826396908501,
+          40.94411087042718,
+          86.42513275146484,
+          60.288265228271484
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 106,
+        "owner": 106,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          38.94732666015625,
+          88.42513275146484,
+          60.967703905806395,
+          38.94732668805314,
+          88.42513275146484,
+          60.96770477294922
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 107,
+        "owner": 107,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "11"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          38.94732666015625,
+          86.42513275146484,
+          60.886996822218954,
+          38.94732666015625,
+          86.42513276435518,
+          60.88699722290039
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 108,
+        "owner": 108,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          27.034109008616703,
+          88.0888900756836,
+          64.50861766396517,
+          27.034109115763382,
+          88.0888900756836,
+          64.50862121582031
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 109,
+        "owner": 109,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          27.037120819091797,
+          90.08585349987202,
+          64.54778036978574,
+          27.037120819091797,
+          90.08585357677684,
+          64.54778289794922
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 111,
+        "owner": 111,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          25.037120819091797,
+          88.0888900756836,
+          65.09892782952434,
+          25.037120819091797,
+          88.08889015193921,
+          65.09893035888672
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 112,
+        "owner": 112,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "5",
+          "6"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          60.88712692260742,
+          38.94732666015625,
+          88.42513275146484,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 8.219805843583283e-07
+      },
+      {
+        "source_patch": 113,
+        "owner": 113,
+        "primitive_id": null,
+        "face_indices": null,
+        "boundary_role": null,
+        "assigned_target_owners": [
+          "12"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          25.037120819091797,
+          88.0888900756836,
+          65.0989278310538,
+          25.037120819091797,
+          88.91234149978922,
+          65.11544374136552
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      }
+    ]
+  },
+  "expected_to_actual": {
+    "all_source_boundary_covered": true,
+    "source_patches": 583,
+    "target_patches": 114,
+    "Linf_point_to_surface_distance_bound_mm": 5e-06,
+    "euclidean_point_to_surface_distance_bound_mm_upper": 8.660254037844388e-06,
+    "uncovered_fragments": [],
+    "uncovered_projected_area_mm2": 0,
+    "nonzero_boundary_envelope_bbox_mm": [
+      16.101261138916016,
+      72.45127868652344,
+      58.36159133911133,
+      45.90884017944336,
+      91.16859436035156,
+      67.80213928222656
+    ],
+    "maximum_assigned_support_plane_distance_mm_upper": 5.000000000000001e-06,
+    "changed_patch_ledger": [
+      {
+        "source_patch": 106,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "10",
+          "80"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          26.456654240947977,
+          75.85108533256735,
+          63.97343561730051,
+          27.95198365251651,
+          76.19474029541016,
+          64.44075325665099
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.2168439053226093e-06
+      },
+      {
+        "source_patch": 107,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "3",
+          "32",
+          "5",
+          "7",
+          "76"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          72.45127868652344,
+          66.44420332073399,
+          20.04598716320624,
+          73.69735717773438,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 108,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "10",
+          "8",
+          "80",
+          "81",
+          "83"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.06277847290039,
+          74.65031531483551,
+          64.3134281387951,
+          26.864070904752836,
+          76.19474029541016,
+          65.50140116466557
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.523678688406177e-06
+      },
+      {
+        "source_patch": 109,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "10",
+          "31",
+          "32",
+          "7",
+          "76",
+          "77",
+          "80",
+          "81"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          75.69735717773438,
+          66.1036239557305,
+          21.135777700903223,
+          76.19474029541016,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 110,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "10",
+          "80",
+          "81"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          20.546064691336856,
+          75.69735717773438,
+          65.50140116466557,
+          23.06277847290039,
+          76.19474029541016,
+          66.28791999738714
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.5235637341890224e-06
+      },
+      {
+        "source_patch": 111,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "32",
+          "7",
+          "76"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          73.69735717773438,
+          66.12643754224914,
+          21.06277847290039,
+          75.69735717773438,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 112,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "10",
+          "5",
+          "8",
+          "80",
+          "81",
+          "82",
+          "83"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          43.92195412047473,
+          76.01650635714789,
+          58.361622959945066,
+          45.90873899866454,
+          76.19474029541016,
+          58.98252937159586
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.0616054744921038e-07
+      },
+      {
+        "source_patch": 113,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "10",
+          "5",
+          "8",
+          "80",
+          "81",
+          "82",
+          "83"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          26.864070904752836,
+          74.06837933618871,
+          60.567395923663916,
+          38.850676323188004,
+          76.19474029541016,
+          64.3134281387951
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.094729897273573e-06
+      },
+      {
+        "source_patch": 114,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "10",
+          "5",
+          "8",
+          "80",
+          "81",
+          "82",
+          "83"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          36.0274997185021,
+          75.30832260314472,
+          58.80511727679539,
+          44.48963978218405,
+          76.19474029541016,
+          61.4496899627997
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.0208259544708848e-06
+      },
+      {
+        "source_patch": 115,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "3",
+          "5",
+          "51",
+          "7",
+          "75",
+          "78",
+          "79",
+          "8",
+          "82"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          72.45127868652344,
+          65.26064674435659,
+          23.833147779211007,
+          73.69735717773438,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 116,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "5",
+          "82"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.507040369897826,
+          73.42230759037555,
+          64.5762000708873,
+          26.02324966132991,
+          73.69735717773438,
+          65.36256124126672
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.144865386335591e-06
+      },
+      {
+        "source_patch": 117,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "8",
+          "82"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.06277847290039,
+          73.69735717773438,
+          65.36256124126672,
+          23.507040369897826,
+          74.0720620999738,
+          65.50140116466557
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.523563364309896e-06
+      },
+      {
+        "source_patch": 118,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "5",
+          "8",
+          "80",
+          "81",
+          "82",
+          "83"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.06277847290039,
+          73.69735717773438,
+          63.65293061763714,
+          28.97753995982284,
+          75.85108533256735,
+          65.50140116466557
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.523563364309896e-06
+      },
+      {
+        "source_patch": 119,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "51",
+          "7",
+          "75"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          20.04598716320624,
+          73.69735717773438,
+          66.12643754224914,
+          21.06277847290039,
+          74.01854596835211,
+          66.44420332073399
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 120,
+        "owner": 3,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_3",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "5",
+          "8"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          45.90823514288232,
+          76.19466431033484,
+          58.36159133911133,
+          45.90884017944336,
+          76.19474029541016,
+          58.36178042404154
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.3531841943335744e-07
+      },
+      {
+        "source_patch": 245,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "112",
+          "12",
+          "14",
+          "87",
+          "88",
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          20.837119671675055,
+          84.92948913574219,
+          65.30803385761301,
+          24.001809877796866,
+          86.11000837504353,
+          66.29696310917048
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.436677908005694e-07
+      },
+      {
+        "source_patch": 246,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "12",
+          "87"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.06277847290039,
+          84.92948913574219,
+          65.31032462347186,
+          23.994170134842314,
+          85.22193477423214,
+          65.60140228271484
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.3565730766827255e-07
+      },
+      {
+        "source_patch": 247,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "112",
+          "12",
+          "14",
+          "17",
+          "87",
+          "88",
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          65.58960106419651,
+          23.06277847290039,
+          85.92076453165991,
+          67.677001953125
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.213088631843376e-07
+      },
+      {
+        "source_patch": 248,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "112",
+          "12",
+          "14",
+          "87",
+          "88",
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          21.74123983258215,
+          84.92948913574219,
+          61.71844510813754,
+          35.97314918012718,
+          86.42513275146484,
+          66.03350064866339
+        ],
+        "maximum_support_plane_distance_mm_upper": 9.116171083162831e-07
+      },
+      {
+        "source_patch": 249,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "112",
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          23.246759361364155,
+          86.42513275146484,
+          62.207316261565396,
+          34.54403895813511,
+          88.0888900756836,
+          65.59478918469556
+        ],
+        "maximum_support_plane_distance_mm_upper": 6.23779102264582e-07
+      },
+      {
+        "source_patch": 250,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          31.195427665641972,
+          88.0888900756836,
+          62.75113763288979,
+          32.95429353084203,
+          88.39568385166116,
+          63.27853101487584
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.3525457531145062e-07
+      },
+      {
+        "source_patch": 251,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "112",
+          "12",
+          "14",
+          "87",
+          "88"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          34.54403895813511,
+          84.92948913574219,
+          61.60343775786606,
+          36.35670064199394,
+          86.42513275146484,
+          62.207316261565396
+        ],
+        "maximum_support_plane_distance_mm_upper": 9.311677688695901e-07
+      },
+      {
+        "source_patch": 252,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          32.80184072878686,
+          88.42513275146484,
+          62.707371689044905,
+          33.145505153615716,
+          88.48546531086164,
+          62.81041896903642
+        ],
+        "maximum_support_plane_distance_mm_upper": 4.596634110218026e-08
+      },
+      {
+        "source_patch": 253,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "112",
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          32.95429353084203,
+          86.42513275146484,
+          62.07576615224843,
+          34.982760801722954,
+          88.0888900756836,
+          62.75113763288979
+        ],
+        "maximum_support_plane_distance_mm_upper": 6.389650619677547e-07
+      },
+      {
+        "source_patch": 254,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          32.661147411884244,
+          88.0888900756836,
+          62.60118532117956,
+          33.454387031222616,
+          88.42513275146484,
+          62.851417288785065
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.0214386253669803e-07
+      },
+      {
+        "source_patch": 255,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "10",
+          "112",
+          "12",
+          "14",
+          "15",
+          "84",
+          "87",
+          "88",
+          "91"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          34.982760801722954,
+          84.92948913574219,
+          58.73924255371094,
+          45.90884017944336,
+          86.42513275146484,
+          62.07576615224843
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.2107419100297936e-06
+      },
+      {
+        "source_patch": 256,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "15",
+          "84",
+          "91"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          86.42513275146484,
+          58.79959707712192,
+          45.90884017944336,
+          88.0888900756836,
+          60.35443822686877
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.1432563254481528e-06
+      },
+      {
+        "source_patch": 257,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "15",
+          "18",
+          "65",
+          "85",
+          "86",
+          "89",
+          "90",
+          "91"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          88.0888900756836,
+          58.86673558479792,
+          45.90884017944336,
+          91.16859436035156,
+          60.43680774091007
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 258,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "60",
+          "65",
+          "85",
+          "86",
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          33.09008198585746,
+          88.42513275146484,
+          60.36800681114506,
+          40.94732666015625,
+          90.13008650709497,
+          62.72642487832697
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 259,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "112",
+          "14",
+          "61",
+          "66",
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          33.454387031222616,
+          86.42513275146484,
+          60.886996822218954,
+          38.94732666015625,
+          88.0888900756836,
+          62.60118532117956
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 260,
+        "owner": 6,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_6",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "112",
+          "60",
+          "66",
+          "89"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          33.145505153615716,
+          88.0888900756836,
+          60.95413532989495,
+          38.94732666015625,
+          88.42513275146484,
+          62.707371689044905
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 288,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "17",
+          "89",
+          "94",
+          "96",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          20.23920229930525,
+          85.92076453165991,
+          66.03350064866339,
+          21.74123983258215,
+          86.42513275146484,
+          66.48382369240487
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.6121478493431204e-06
+      },
+      {
+        "source_patch": 289,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "20",
+          "39",
+          "40",
+          "92",
+          "93"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          90.0888900756836,
+          66.70062379647842,
+          19.7543705750455,
+          91.16859436035156,
+          67.80213928222656
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 290,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "40",
+          "92"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          88.42513275146484,
+          66.42166827408765,
+          20.585173933426297,
+          90.0888900756836,
+          67.78048372337015
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 291,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "17",
+          "92",
+          "94",
+          "96",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          18.26685477918861,
+          86.42513275146484,
+          66.08633628987323,
+          21.583881312545927,
+          88.0888900756836,
+          67.10021991198478
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.8750355867624467e-06
+      },
+      {
+        "source_patch": 292,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "92"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          17.868246521793893,
+          88.0888900756836,
+          66.365291812264,
+          20.75307795416513,
+          88.42513275146484,
+          67.22479259526978
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.80384102335212e-06
+      },
+      {
+        "source_patch": 293,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "12",
+          "14",
+          "17",
+          "40",
+          "89",
+          "92",
+          "94",
+          "96",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          84.92948913574219,
+          66.29696310917048,
+          20.837119671675055,
+          86.42513275146484,
+          67.70699998018522
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 294,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "40",
+          "92"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          88.42513275146484,
+          67.22479259526978,
+          17.868246521793893,
+          89.91565855514101,
+          67.77700922999065
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 295,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "17",
+          "40",
+          "92"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          86.42513275146484,
+          66.48382369240487,
+          20.23920229930525,
+          88.0888900756836,
+          67.74036985300042
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 296,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "40",
+          "92"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          16.101261138916016,
+          88.0888900756836,
+          67.10021991198478,
+          18.26685477918861,
+          88.42513275146484,
+          67.74711385055495
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 297,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "89",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          21.583881312545927,
+          86.11000837504353,
+          65.59478918469556,
+          23.246759361364155,
+          86.42513275146484,
+          66.08633628987323
+        ],
+        "maximum_support_plane_distance_mm_upper": 4.49688390525783e-07
+      },
+      {
+        "source_patch": 298,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "18",
+          "20",
+          "93",
+          "97",
+          "98",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          27.037120819091797,
+          88.42513275146484,
+          62.69629217575147,
+          33.374073824712326,
+          91.16859436035156,
+          64.56949683304639
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.133051970625389e-06
+      },
+      {
+        "source_patch": 299,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "17",
+          "18",
+          "20",
+          "70",
+          "74",
+          "92",
+          "93",
+          "97",
+          "98"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          19.21521625686301,
+          90.0888900756836,
+          64.54784127418998,
+          27.037120819091797,
+          91.16859436035156,
+          66.88165348654968
+        ],
+        "maximum_support_plane_distance_mm_upper": 5.000000000000001e-06
+      },
+      {
+        "source_patch": 300,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "17",
+          "92"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          19.7543705750455,
+          88.42513275146484,
+          65.10567182707888,
+          25.037120819091797,
+          90.0888900756836,
+          66.70062379647842
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.465088809799982e-06
+      },
+      {
+        "source_patch": 301,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "17",
+          "18",
+          "89",
+          "92",
+          "94",
+          "96",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          20.75307795416513,
+          86.42513275146484,
+          63.27853101487584,
+          31.195427665641972,
+          88.0888900756836,
+          66.365291812264
+        ],
+        "maximum_support_plane_distance_mm_upper": 3.405486961060432e-06
+      },
+      {
+        "source_patch": 302,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "18",
+          "89",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          27.037120819091797,
+          88.0888900756836,
+          62.84976982706697,
+          32.668718842131625,
+          88.42513275146484,
+          64.51447140137476
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.3640698089216383e-06
+      },
+      {
+        "source_patch": 303,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "17",
+          "92"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          20.585173933426297,
+          88.0888900756836,
+          65.09892782952434,
+          25.037120819091797,
+          88.42513275146484,
+          66.42166827408765
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.4251597521905055e-06
+      },
+      {
+        "source_patch": 304,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "18",
+          "20",
+          "89",
+          "93",
+          "97",
+          "98",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          32.668718842131625,
+          88.42513275146484,
+          62.58258563135238,
+          33.75873709441032,
+          91.16859436035156,
+          62.84976982706697
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.1090577825079748e-06
+      },
+      {
+        "source_patch": 305,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "89",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          32.661147411884244,
+          88.39568385166116,
+          62.81041896903642,
+          32.80184072878686,
+          88.42513275146484,
+          62.851417288785065
+        ],
+        "maximum_support_plane_distance_mm_upper": 1.1746231219812518e-07
+      },
+      {
+        "source_patch": 306,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "15",
+          "18",
+          "20",
+          "89",
+          "93",
+          "97",
+          "98",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          90.13008650709497,
+          58.99101257324219,
+          45.90884017944336,
+          91.16859436035156,
+          60.45763702561181
+        ],
+        "maximum_support_plane_distance_mm_upper": 8.23714796053196e-07
+      },
+      {
+        "source_patch": 307,
+        "owner": 7,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_primitive_roof_7",
+        "face_indices": [
+          1
+        ],
+        "boundary_role": "artificial_skin_backing_face",
+        "assigned_target_owners": [
+          "18",
+          "20",
+          "89",
+          "93",
+          "97",
+          "98",
+          "99"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          33.09008198585746,
+          88.48546531086164,
+          60.43680774091007,
+          40.94732666015625,
+          91.16859436035156,
+          62.72642487832697
+        ],
+        "maximum_support_plane_distance_mm_upper": 2.043490125834262e-06
+      },
+      {
+        "source_patch": 456,
+        "owner": 10,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_support0_post_bounds_mm",
+        "face_indices": [
+          2,
+          8
+        ],
+        "boundary_role": "artificial_support_or_cap",
+        "assigned_target_owners": [
+          "48",
+          "53"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          21.06277847290039,
+          73.69735717773438,
+          65.50205477610619,
+          23.060687038020554,
+          73.69735717773438,
+          66.12643754224914
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 472,
+        "owner": 10,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_support0_post_bounds_mm",
+        "face_indices": [
+          4,
+          10
+        ],
+        "boundary_role": "artificial_support_or_cap",
+        "assigned_target_owners": [
+          "50"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          21.06277847290039,
+          75.69735717773438,
+          66.12584287625798,
+          21.0646812933201,
+          75.69735717773438,
+          66.12643754224914
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 479,
+        "owner": 10,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_support0_post_bounds_mm",
+        "face_indices": [
+          5,
+          11
+        ],
+        "boundary_role": "artificial_support_or_cap",
+        "assigned_target_owners": [
+          "56"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          21.06277847290039,
+          74.01822523328056,
+          66.12643432617188,
+          21.06277847290039,
+          75.69735717773438,
+          66.12643754224914
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 481,
+        "owner": 10,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_support0_post_bounds_mm",
+        "face_indices": [
+          5,
+          11
+        ],
+        "boundary_role": "artificial_support_or_cap",
+        "assigned_target_owners": [
+          "51",
+          "56"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          21.06277847290039,
+          73.69735717773438,
+          66.12643432617188,
+          21.06277847290039,
+          74.01854596835211,
+          66.12643754224914
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 510,
+        "owner": 11,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_support1_post_bounds_mm",
+        "face_indices": [
+          3,
+          9
+        ],
+        "boundary_role": "artificial_support_or_cap",
+        "assigned_target_owners": [
+          "64"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          86.83518782509972,
+          60.30384689545945,
+          40.94732666015625,
+          88.0888900756836,
+          60.35443822686877
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 511,
+        "owner": 11,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_support1_post_bounds_mm",
+        "face_indices": [
+          3,
+          9
+        ],
+        "boundary_role": "artificial_support_or_cap",
+        "assigned_target_owners": [
+          "59",
+          "64"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          40.94732666015625,
+          88.0888900756836,
+          60.3544370324329,
+          40.94732666015625,
+          88.42396407940106,
+          60.3679596510832
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 569,
+        "owner": 12,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_support2_post_bounds_mm",
+        "face_indices": [
+          4,
+          10
+        ],
+        "boundary_role": "artificial_support_or_cap",
+        "assigned_target_owners": [
+          "70"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          25.037120819091797,
+          90.0888900756836,
+          65.13838645567026,
+          25.039337475898297,
+          90.0888900756836,
+          65.13904169989408
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      },
+      {
+        "source_patch": 581,
+        "owner": 12,
+        "primitive_id": "A_NOMINAL_ROOF_SUPPORT_1_support2_post_bounds_mm",
+        "face_indices": [
+          5,
+          11
+        ],
+        "boundary_role": "artificial_support_or_cap",
+        "assigned_target_owners": [
+          "113"
+        ],
+        "nonzero_envelope_source_bbox_mm": [
+          25.037120819091797,
+          88.91234149978922,
+          65.11544374136552,
+          25.037120819091797,
+          90.0888900756836,
+          65.13904169989408
+        ],
+        "maximum_support_plane_distance_mm_upper": 5e-324
+      }
+    ]
+  },
+  "elapsed_seconds": 11.923682451248169
+}

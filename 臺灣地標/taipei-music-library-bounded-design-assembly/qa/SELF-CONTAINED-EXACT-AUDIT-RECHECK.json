@@ -1,0 +1,23 @@
+{
+  "scope": "Packaged independent exact algorithms rerun using only supplied primitive/mesh inputs; path-binding only was changed in a new directory.",
+  "entry_script_sha256": "e88ac63d02172d7001de5ffaa35ba7584d438bf1c859519b9335ac2fd5f6d435",
+  "checks": [
+    {
+      "file": "SUMMARY-ALL.json",
+      "numerical_and_role_results_exact_excluding_elapsed_seconds": true
+    },
+    {
+      "file": "EXACT-EMBEDDING-QA.json",
+      "numerical_and_role_results_exact_excluding_elapsed_seconds": true
+    },
+    {
+      "file": "EXACT-INPUT-FRONT-DOMAIN-QA.json",
+      "numerical_and_role_results_exact_excluding_elapsed_seconds": true
+    },
+    {
+      "file": "final-envelope/MINKOWSKI-ENVELOPE-ALL.json",
+      "numerical_and_role_results_exact_excluding_elapsed_seconds": true
+    }
+  ],
+  "all_exact_excluding_runtime": true
+}

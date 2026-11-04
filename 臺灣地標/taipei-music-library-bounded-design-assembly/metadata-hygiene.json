@@ -1,0 +1,123 @@
+{
+  "method": "Embedded SDNA declared offsets; entire fixed buffers zeroed after relative value, every byte outside declared fields unchanged. PNG textual chunks removed, IDAT identical.",
+  "fields": [
+    {
+      "field": "FileSelectParams.dir",
+      "offset": 171624,
+      "size": 1090,
+      "value": "//",
+      "entire_tail_zero": true
+    },
+    {
+      "field": "Scene.r.pic",
+      "offset": 231956,
+      "size": 1024,
+      "value": "//previews/assembled.png",
+      "entire_tail_zero": true
+    }
+  ],
+  "scene_sha256": "45c97d506a574167db1a35895cd6b0f589133709916d040d6ea20f285eb2eabf",
+  "outside_declared_fields_exact": true,
+  "png": [
+    {
+      "path": "previews/review-hypotheses_removed.png",
+      "removed_text_chunks": [],
+      "IDAT_exact": true,
+      "sha256": "6305b6feec51d38b6cb6cf324e194ca77172b53b0c8a05124fcad392cb732d3e"
+    },
+    {
+      "path": "previews/review-source_only.png",
+      "removed_text_chunks": [],
+      "IDAT_exact": true,
+      "sha256": "80e432d6d6df0cd572fddf2d468ca8c54b22ea59217a06069672abb816ec63d5"
+    },
+    {
+      "path": "previews/review-exploded.png",
+      "removed_text_chunks": [],
+      "IDAT_exact": true,
+      "sha256": "f1ab0ed14e5b429ab1ba6e964305ede311f7213e65d384d2bb4da45cb2249c28"
+    },
+    {
+      "path": "previews/review-assembled.png",
+      "removed_text_chunks": [],
+      "IDAT_exact": true,
+      "sha256": "8c435c084949766ceaa43ad815f5d59916beceb4576faa0627964be65ba6557f"
+    },
+    {
+      "path": "previews/exploded.png",
+      "removed_text_chunks": [
+        "eXIf",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "2fe3bb8ff79434950f01e5b20c5796c581cda6a7bfe3322a3897d7c7402db2f4"
+    },
+    {
+      "path": "previews/hypotheses_removed.png",
+      "removed_text_chunks": [
+        "eXIf",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "b401e6a5510fdbc3828b9490e4c371def1a98327a1dfd85a0839618467019b42"
+    },
+    {
+      "path": "previews/source_only.png",
+      "removed_text_chunks": [
+        "eXIf",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "83060c074124a8e67326ca8c965709c3e6555180e56737b574ffa274b20350b0"
+    },
+    {
+      "path": "previews/assembled.png",
+      "removed_text_chunks": [
+        "eXIf",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "9c23a0a06dfd2fe39a6037be9b6fc6083b518f0acfa692e4aefaf219ae793ae8"
+    }
+  ]
+}
