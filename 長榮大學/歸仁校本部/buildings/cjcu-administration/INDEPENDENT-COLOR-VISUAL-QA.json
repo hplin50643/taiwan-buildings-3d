@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete building views and three intentional approach-facing cross closeups.",
+    "Complete cross profile, both arms and original union root visible; opposite profile and narrow returns neutral.",
+    "Stone tower including dark-base mixed domain, glazing, walls and neighboring library not colored or added."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 5500,
+  "material_face_counts": [
+    10,
+    5490
+  ],
+  "connected_coplanar_domains": 1316,
+  "original_obj_present": false,
+  "original_files_retained": 22,
+  "file_sha256": {
+    "README.md": "089e28c00ec30d2bb6c1933d5f301d85dc5ac1200997b4d3b981dbe442cd379d",
+    "README.zh-TW.md": "089e28c00ec30d2bb6c1933d5f301d85dc5ac1200997b4d3b981dbe442cd379d",
+    "model.stl": "2b7f6bae46e83a82ee78eb99707daad1387d7b3849b7f4996c76623fb0fa8565",
+    "build_model.py": "5b269e47f408fb54e320fe3e0eca5c5b70fb8ce968397cf2a82cafc642cba65f",
+    "colorize_model.py": "cfe0ffe5a10eff9167ff86d46752b249c39a4b84b1a295198dbd55b4eebb752e",
+    "render_color.py": "9b3857673ebb66e7de82efa2f799edc5482640227b853b22a4bb2b09f3937eff",
+    "verify_color_scene.py": "cce71dcea11beec2d469a6ca525d79dc3005a108df6afaab625d5efa1ebbe2ee",
+    "validate_color.py": "967c2a6d6bbfc6f4a663316daf14065fbeb321debd890f43200d8262a1c25122",
+    "color-mesh.npz": "9fa1c07263f3f1ac4b43fe1791e9b7882dc729180b31c5138373f88350bf23c4",
+    "palette.json": "854f25ec31c3da7bfaa53e49eed916932f29bbc1c8c691dc9ab7658578ed37e9",
+    "appearance-materials.json": "852d41489deb075ad339b60d57392393b6d092cbe02c74c921c77a957abe8baf",
+    "COLOR-SOURCE-REGISTER.json": "e41eab17e6c1f8ee8c789b2826c8d9aafd1da480e5e667561a11b7ff9775628b",
+    "appearance.3mf": "5cade9c8eb165601e98e3acf39cb9619bea447eeb272bfe6f8077be68914628d",
+    "scene.blend": "5935b8968b271a6fc753d9a66fc2dd459a06a7dfefeb2e20cfbfa24c7a5f0654",
+    "preview.png": "6e70d0c513214c8295b9a191b31ec46de531d5054ab72dea088bedcf67321428",
+    "rear.png": "162300eb4e00e2e27165a2146b0c1720bac17ea8af73110aa52d7444a7f6ff79",
+    "front.png": "7b955aba20ba245e5f9187aee8a1c23dffb05b35a9a3539be8f8aa0215d368be",
+    "back.png": "4803bd6a702a4d0f80c7c15178b0929f7170f409c1be7a6f8f89630fe1f30d2e",
+    "west.png": "b3ff6ca8704b039a2b5460eeb1394c51d5c305c76f39d81a6dab9f4ade2fd66f",
+    "east.png": "bf3c6edfcdcf38a8fdefda1d7bc64e2ad09bde6dfee0cbaa40699657ce7179ff",
+    "top.png": "02a378264e15c3421beec5e2523e36d8b049616adc958f74871c9d56eb89cbe2",
+    "entry-detail.png": "5d38775441d4c4f567b10ce7e001c46bf9495087cc71a04de52d7c75a793fa42",
+    "facade-detail.png": "d5099f1bbb709bc85349f6efc69a53610bdfbeb340ba117174d3d6732f260344",
+    "roof-detail.png": "02bbcf8776250c87c34ef87752ff8a60dcc5876ab27befcd91b16b5cd5964ff1",
+    "export_appearance.py": "f9ef9bdf0361077140302e32329fea1111756f1120e6976d264f7f1831f0ce44"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "1e40b1e95511ff702eead44d4c856c8066737c1c233365d7610a48e7070fa691",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "398a60340d4ba2d48ff22efaef804ed99e5c80a0ff46cfcf35da1b0457d3326c",
+    "SCENE-QA.json": "c6dd644df93fce20615929d3dd92390f046410a765729607b101ff17e527b882",
+    "FRAMING-QA.json": "8b53197cdbbb37b2665037b66a6f20cae4243696455f5d7b01936e4711694427",
+    "DELIVERY-QA.json": "9f3ffd5fec99ffbf692f899f879b15ac2504534bf7952225d53ea998a8215748"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "a2dfa6f23eb931a6509f7cdea79913f49d035fe91745ed552a306bfad2fb4846",
+    "ORIGINAL-RETENTION-QA.json": "3719104b0b54ba29fc627c72166753e7602e4b16b858e97fb0a4726877a56e85",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "b6be064210490d1bba13724a59130d6be8606f4049c6b8a022d206951f45a711",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "7f884ca2f988344da5c8cbfe17ffc50ec0f2582585091695af887a215ccd5f78",
+    "INDEPENDENT-DOMAIN-0736.json": "1e16300c6dd209fcfa3925961d2321d9a9bb19e93aa7c758c49c45a15772eeef",
+    "INDEPENDENT-IDENTITY-0736.json": "a367c1b2833099c096eafb5c2c8568ace27504b43ec93a1e379837b6f1f2a273",
+    "INDEPENDENT-PACKAGE-IDENTITY-0738.json": "7f884ca2f988344da5c8cbfe17ffc50ec0f2582585091695af887a215ccd5f78"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "7c9e514c308e142827dbf97c8c6edb5cbcf4851f8fc1379858210f60589c763c"
+  },
+  "limitations": [
+    "10 original complete y=14.1 cross profile triangles;5490 neutral.",
+    "Opposite y=11.9 profile remains neutral; original tower-union stem root retained.",
+    "Original5500 triangles and22 immutable files unchanged;no originalOBJ.",
+    "Contractor photograph right administration only; left library excluded. URL201807 not capture date,not2026."
+  ],
+  "history": [
+    "Preview approved then only remaining nine views rendered once.",
+    "Independent expected-name gate verifies CJCU Administration partial color against actual3MF and reopened scene."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T07:38:52Z",
+  "parent_review": "Parent personally viewed contractor actual photograph right administration excluding left library, originalcode, preview and final10montage0738. Whole original y+14.1 plane10 exactsharededge single complete cross component; original vertical and horizontal box union and tower root77.9 preserved. Exact raw triangles equal NPZ10 nominal offwhite photo-facing plane only. Oppositeface, narrow sides, mixeddeepbase stone tower, brickwalls/windows/roof and all5490others neutral. Official frontURL503 not used, URL201807 not capture proof. Preview +Y source approach documented. Explicit CJCU Administration actual3MF/Blender/four scripts/README/paletteRGB independently matches. Sevenwholeviews framed and three closeups show full cross arms and union root. Original5500triangles22files/noOBJ unchanged,1316 coplanar domains uniform; count0 partial not2026."
+}

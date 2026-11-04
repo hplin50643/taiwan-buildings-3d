@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete gate group views and three intentional curved canopy closeups.",
+    "Full outer fascia and both end boundaries visible pale blue-green; top, underside and inner faces neutral.",
+    "Lettered walls, glass proxies and rear neutral; no tiger sculpture, adjacent tower or transparency invented."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 1720,
+  "material_face_counts": [
+    128,
+    1592
+  ],
+  "connected_coplanar_domains": 674,
+  "original_obj_present": false,
+  "original_files_retained": 20,
+  "file_sha256": {
+    "README.md": "2d89b287a5ac89df7e2bc862c8f1ed264e8f4044104fd4a7537500f1015f64c9",
+    "README.zh-TW.md": "2d89b287a5ac89df7e2bc862c8f1ed264e8f4044104fd4a7537500f1015f64c9",
+    "model.stl": "a36f266bf25424ea993f3a9d0d92eaf4b17055bd604f6c046828a6f3df59634f",
+    "build_model.py": "18ea161ea905b85543ee0cbe260c6f3e36b9c18fe090f809e01beebfa961bf97",
+    "colorize_model.py": "40e821c2c046ae8b1250456f2c2efae7c4f57b9c875237dbf50b457d3211bc1c",
+    "render_color.py": "1e497c6191f090300b6f54c8b0652777d53cc18069d7bfcd22991c4b048c8b29",
+    "verify_color_scene.py": "70d17634ec82703ed941629ba53700c56b146f7667d1dcda704abe10fc448375",
+    "validate_color.py": "4553b3f9b2f15698e249e0856bf148cb2205fb655daf90c54f4f9217071a41d6",
+    "color-mesh.npz": "b9b2625efdb1796b2efdaa9d2dfe893d8113f1fdd489e0c81b726e4720b8678f",
+    "palette.json": "a3c236e276b2e7ae6b49aeb54fa1eab15e600363394883871684a295e834db26",
+    "appearance-materials.json": "69c85f0974f80a01bf42cf46fe500b8bf3b8b547d1a6626e545fb63ae74d2132",
+    "COLOR-SOURCE-REGISTER.json": "6555182f2cc65fef974939df303fbf06ccf45f2e94ee0facb9dac5c4c4b73985",
+    "appearance.3mf": "9e57e4b546acbcd8d2625d7e26566053c68ab3f92f0170418e8957779a4ec688",
+    "scene.blend": "db6e13209f30f029689f4491a90c1db0bfe418a4280a588f8c10357ca8026f17",
+    "preview.png": "159cea0a270576244b2bc38722ffab8ead0271be29156243d47524c86b62a502",
+    "rear.png": "0a43d43da9ff945a6faf76972f94da6bf1f359931dfa658e890a8a82485d4e03",
+    "front.png": "2325334a73a09bf5357a44fcb20b1f8e1e7946822681334a486343140f1052a3",
+    "back.png": "2d74c5a0fadaf36739bea1d6df712f3fab2115508d7d8800884ebb5603308f43",
+    "west.png": "b8d93bb8f75937c7b7f7ef68638dc65a068ef7c1e36d1d5cd5a79238bde59bd0",
+    "east.png": "e48fc5ece3a9b0877d6ed0dc42ebb24f762cd325475e0724bcd1990427c62c30",
+    "top.png": "4387445f9311a8b73181c8225ec5e384842c6fe08110dcf84f4c86d93f74437c",
+    "entry-detail.png": "c0853b2018809de73b1394a44358e2b9f7f8ca25c1fae8fdc26aa724efe49541",
+    "facade-detail.png": "d7a6ffcbcd7c8f1315ca166cf3241fd94f0d08b0e52224da8da4007a79436d57",
+    "roof-detail.png": "fea8ea151437529df0a0aad78d8a3bdebe61ef9188cd0390e4bc9dc953df8d0f",
+    "export_appearance.py": "13dbdc9ba93ae8ec41497217793a95fdff21cdce7d79328d47823ed0cb6f1b63"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "889ce8d6c1975964ce073e33c798a4203b14cf0ed026275004b78933f9de5f4b",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "b4cef03382138f089afdc5d844dfb76b609bea6e96826c3484ed3b63e0ab4110",
+    "SCENE-QA.json": "63cae4d762f332064dc44c24296bafcb2abf99e8187234442d573ec13901f988",
+    "FRAMING-QA.json": "97de649eda7fc53ae0b28f5a33315fee34a2fc693b0536e5f36f961fbcfa97af",
+    "DELIVERY-QA.json": "78cd2b80d58e7914d1d4f5137224ddcb1a04ebe2313cc7c397ae0583fb03eb8b"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "8a079a8051884d2858e026c779013683ec7395168dc311502b1a1e87eea25844",
+    "ORIGINAL-RETENTION-QA.json": "a8cca2c7a2c362d5eb73aedc78a31b86c411542680bc2fa242530cc6446ac89b",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "ade49b5d5cbdbf820b06dc7b65d84a3ea55d05ec7cba77d61c503da5cc26834c",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "05a7d5524a819b2e824f8eed0f69e76732741151fd727b4ef3906b6036415221",
+    "INDEPENDENT-DOMAIN-0755.json": "6d0bf4f1b131e5f9ed8467be90bd899152bcb00edd08b8910fa9dec8862d56f1",
+    "INDEPENDENT-IDENTITY-0755.json": "a13a0015ac268619bb517c7849bf64004d0e8f3feef4847e23917d86c698c102",
+    "INDEPENDENT-PACKAGE-IDENTITY-0758.json": "05a7d5524a819b2e824f8eed0f69e76732741151fd727b4ef3906b6036415221"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "a6fd6bb29f9540a675907d37565754a44221e34c856d8d2e1247dc38529d60aa"
+  },
+  "limitations": [
+    "128 original outer canopy facet triangles;1592 neutral.",
+    "64 finite original radius83 chord planes, whole infinite planes equal finite domains.",
+    "Original1720 triangles and20 immutable files unchanged;no originalOBJ.",
+    "OfficialPDF2025-06-27 publication not capture; not2026 or full plaza."
+  ],
+  "history": [
+    "Preview approved then only remaining nine views rendered once.",
+    "Independent expected-name gate verifies NFU Main Gate partial color against actual3MF and reopened scene."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T07:58:30Z",
+  "parent_review": "Parent personally viewed official PDF page2 actual closeup/aerial, originalcode, preview and final10montage0758. Independently reconstructed64 original chords center48,67 outerradius83 angles254..286; all3point plane+tangent+fullz19..21.7 at1e-5 every infiniteplane equals finite2, total128 exact rawtriangles equal NPZ pale bluegreen. No normal threshold or arbitrary colorcut. Canopy top bottom inner, lettered yellowwalls, glass, unseen rear and all1592others neutral. Document20250627 is not capturedate; no tiger sculpture/adjacenttower/fullplaza reconstruction. Explicit NFU Main Gate actual3MF/Blender/four scripts/README/paletteRGB independently matches. Seven wholeviews framed and three closeups show full outer arc and both ends. Original1720triangles20files/noOBJ unchanged,674coplanar domains uniform; count0 partial not2026."
+}

@@ -1,51 +1,29 @@
-# 國立虎尾科技大學｜第一教學區校門與警衛室
+# 虎尾校門與警衛室｜弧雨庇外緣局部淡藍綠
 
-## 模型預覽
+**含字曲牆、玻璃與其餘域尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅弧雨庇外側立邊128面名義淡藍綠，非整校門全色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![完整雨庇](entry-detail.png)|![左外緣](facade-detail.png)|
+|![右外緣](roof-detail.png)|||
 
-校區：校本部（第一教學區）。研究核對日：2026-10-13。
+## 材色範圍
+同 nfu-main-gate 原項目，same-item、count_delta=0。國立虎尾科技大學校本部（第一教學區）既有校門與警衛室，非全廣場。原1720三角及STL/build_model.py字節不變，20原件無OBJ。
+- 原curved_wall外半徑83，中心(48,67)、254..286度、z19..21.7，64真chord各完整2面共128。全3頂點plane/tangent/z界1e-5核，每無限plane恰等有限域，保原Boolean三角，不用normal閾漏片。
+- 其餘1592面中性：含黃字校名兩牆無文字材界、雨庇上皮/內背/端/底、框玻璃反光混窗、警衛室屋背/設備/階地。淡藍綠為不透明名義示意，不新造透明板、窗框或字樣。
+- 原未有虎雕仍不造2025虎雕，鄰教學大樓/另景觀不納。補色不追認原近似幾何，證據邊界非真材縫。
 
-**只做既有校門曲牆與警衛室，不含後方相鄰教學大樓。不是整個校門廣場現況模型；2025新增虎雕、旗桿與路障未建。**
+## 來源與日期
+親看官方位置PDF第2頁校門近照及空拍；抽圖為同PDF證據非獨立新源。不使用QR目標。文檔2025-06-27非已驗拍攝日，不稱2026現況。原照私人保存、不公開、不作紋理、不建人物；未確認CC或再散布授權，不保證商用。
 
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+150mm底座為原示意尺寸非測量比例。物件明名 NFU Main Gate partial color，獨立核真slug/館名。STL無色，3MF/Blender逐面分材，不是兩色或四色耗材切片驗證，未實際列印。
 
-[上視圖](previews/top.png) · [低角度立面圖](previews/elevation.png)
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes/全三角multiset、共面均一、閉合正體積、3MF面材、scene重開、十圖1200×900與hash。原README/previews/validation保留歷史，不冒新QA，不刪檔。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 上視圖<br>![上視圖](previews/top.png) | 低角度立面圖<br>![低角度立面圖](previews/elevation.png) |  |
-
-## 下載與重建
-- [毫米 STL](model.stl)（150.0 × 76.0 × 47.8 mm，含3mm底座，各件獨立近似比例）
-- [可編輯 Blender 網格](scene.blend)：由實際 STL 匯入，非第三方模型。
-- [獨立參數腳本](build_model.py) · [相依套件](requirements.txt)
-- `python build_model.py` 重建；`blender -b -t 2 -P render_preview.py` 由實際 STL 重新產生預覽與 Blend。
-
-## 證據與取捨
-保留左側升高弧形意象牆、右側警衛室弧形招牌牆與弧形雨遮、街側窗帶和內側門洞。
-
-警衛室背面照片不足，以無開口封閉面保守表示；間距、曲率、牆高與進深為照片近似。不可把此模型當作建築測繪。
-
-來源照片原始攝影日期未載明，文件日期不當作拍攝日期。幾何比例取自公開實拍與官方校圖，不是精密測繪。[來源與用途](sources.json)。第三方照片/PDF不隨公開包散布。
-
-## 列印說明
-單位毫米，底座平面朝下。弧形雨遮與凹窗可能需支撐。曲牆厚3mm，最高點加約3mm弧長短平段，避免漸薄頂尖；這是明載列印化改動。 建議先在自己的切片器預覽0.2mm層高及0.4mm噴嘴路徑，檢查橋接與支撐接觸。不得據本件宣稱免支撐或保證可印。
-
-## 數位 QA
-- [原STL、重建與Blend驗證](validation.json)：原始面法向/繞序一致、正體積、每邊2面、頂點環單一閉環、單一連通表面殼、無分離封閉內殼；重建SHA與Blend三角形幾何一致。
-- [0.2mm原始截面檢查](contour-validity-check.json)：固定z起點0.071mm，每層degree2閉合，個別與合成Polygon均有效。無buffer(0)、make_valid或修復後宣稱通過。
-- [0.8mm參考寬度薄件篩檢](thin-feature-check.json)：使用canonical fail-closed v3，1mm取樣；最大opening loss 1.164%。此為輔助篩檢，不是全面最小壁厚保證。
-- `python validate_model.py`、`python check_contour_validity.py`、`python check_thin_features.py` 均須exit0。
-- 尚未做實體試印、Cura/Prusa真實工具路徑或全面三角面自交檢驗。
-
-### 曲牆頂端薄件提示
-1個取樣層超過1% opening loss，並非零警告。[逐構件補充檢查](component-thin-audit.json)及[可重跑腳本](check_component_thin.py)確認全部48個取樣層之各Polygon均留存，0.4mm侵蝕核心未分裂。最不利z=47.071mm只有1個Polygon，11.703887mm²中保留98.836039%；包圍矩形最小寬3.0521mm。設計徑向壁厚3mm，包圍矩形寬不能當全面局部最小壁厚。開運算損失集中於角落，仍須實際切片與試印確認。
-
-[最不利頂端截面圖（自製數位QA）](previews/top-section-qa.png)
-
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 最不利頂端截面圖（自製數位QA）<br>![最不利頂端截面圖（自製數位QA）](previews/top-section-qa.png) |  |  |
+## English scope
+Partial only:128 original outer curved canopy fascia triangles pale muted blue-green;1592 neutral. Exact64 finite chord facets centered48,67 radius83 angles254..286 z19..21.7,all3vertex whole planes equal finite domains. Canopy top/inner/ends/underside, lettered walls, mixed glass and guardhouse rear neutral. Original1720 triangles and20 immutable files unchanged;no originalOBJ. OfficialPDF2025-06-27 publication not imagecapture;not2026. No tiger sculpture, adjacent teaching tower, transparency or geometrychanges; sameitem/count0/no filament test.

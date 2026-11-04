@@ -1,57 +1,29 @@
-# 行政大樓｜長榮大學
+# 長榮行政大樓｜十字照片朝向面局部白
 
-## 模型預覽
+**石塔混牆、玻璃與其餘域尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅塔頂十字照片朝向完整10面名義白，非全館完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面及背面並排](previews/front-rear.png) |  |  |
+| 總覽 | 另一側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![另一側](rear.png)|![正面](front.png)|
+|![背向](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![十字與塔](entry-detail.png)|![完整十字前皮](facade-detail.png)|
+|![十字側界](roof-detail.png)|||
 
-[學校目錄](../../../README.md) · [校區目錄](../../README.md)
+## 材色範圍
+同 cjcu-administration 原項目，same-item、count_delta=0。長榮大學歸仁校本部行政大樓，不含營造照片左鄰圖書館。原5500三角及STL/build_model.py字節不變，22原件無OBJ；code可輸出重建OBJ不代表有原件。
+- 照片朝向對應原+Y，整y=14.1平面10三角形成一個完整共邊十字域，x=-58..-48,z77.9..86.5。原根部與塔union後界保留；全3頂點有限界及整共面核，無人工截色。
+- 其餘5490面中性：十字反面y=11.9及窄側頂邊、石塔跨深基座、混磚灰拱廊、遮陽細框玻璃代理、檐屋背底。不是整塔米白或整片玻璃深灰。
+- preview採照片朝向以展示已核十字面，front仍原-Y坐標。色界為證據範圍非真材縫，名義白非校準色票，保原照片推估幾何不追認精度。
 
+## 來源與日期
+親看營造外觀照，右側為行政樓、左側圖書館排除。URL201807非已驗拍攝年月，實際拍攝日期未知，不稱2026現況。官方front503圖未取得不作色證。原照私人保存、不公開、不作紋理、不建人物；未確認CC或再散布授權，不保證商用。
 
-## 範圍與外觀
-保留六層量體的長向立面、非對稱窗群、中央大開口、頂層遮陽格柵、短側長槽窗、屋頂量體及後侧階梯塔十字、拱廊。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+150mm底座為原示意尺寸非測量比例。物件明名 CJCU Administration partial color，獨立核真slug/館名。STL無色，3MF/Blender逐面分材，不是兩色或四色耗材切片驗證，未實際列印。
 
-尺度及進深均為照片視覺估計；不具測繪精度。左短側未獲充分照片，採無細節壁面；後側窗格節奏由營造商斜照概括，非逐窗精測。未含独立校門鐘塔、警衛室或圖書館。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes/全三角multiset、共面均一、閉合正體積、3MF面材、scene重開、十圖1200×900與hash。原README/previews/validation保留歷史，不冒新QA，不刪檔。
 
-這是公開外觀照片推估的可編輯、可再建構縮尺模型，不是測量、竣工圖或完整BIM。各件獨立縮尺；包含平底座的外框為 150.00 × 87.00 × 86.50 mm，最大150 mm，不代表同校模型使用相同比例尺。
-
-## 檔案
-- [原始模型 STL](model.stl)
-- [可編輯 Blender 場景](scene.blend)
-- [建模程式](build_model.py) · [Python依賴](requirements.txt)
-- [正面](previews/front.png) · [背面](previews/rear.png) · [俯視](previews/top.png)
-- [來源與不確定性](sources.json)
-- [幾何驗證](validation.json) · [0.2mm層檢查](layer-check.json) · [輪廓多邊形有效性](contour-validity-check.json) · [0.8mm參考薄特徵篩查](thin-feature-check.json)
-- [SHA256](SHA256SUMS.txt) · [重跑檢查](check_all.sh)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |
-
-## 重建與驗證
-需要 Python 3.12、requirements.txt 所列套件與 Blender 4.3.2+。在本目錄安裝依賴後執行：
-
-```sh
-python -m pip install -r requirements.txt
-python build_model.py
-blender -b -t 2 -P render_preview.py
-sh check_all.sh
-```
-
-build_model.py 中各幾何參數單位為mm；修改視覺估計參數後必須重新建模、渲染和驗證，不能沿用舊驗證JSON。scene.blend只含一件與STL三角面位置一致的模型mesh、材質與相機。材質只用於預覽；STL不含顏色。
-
-## 驗證與列印限制
-原始STL未經repair：驗證水密、邊流形、頂點環單一、原始法向與繞序、正體積、單一連通表面殼、無分離內腔殼、150mm外框、獨立重建SHA及儲存Blender幾何一致。0.2mm節距、起始z=0.071mm逐層檢查閉合及degree2，並驗證各閉合多邊形及合併多邊形有效。
-
-薄特徵篩查使用canonical edge interpolation，在1mm節距截面做0.8mm參考形態開運算；尖角與曲線也會造成損失。此檢查不是全面壁厚測量，不代表0.8mm最小壁厚合格，也不是實際切片、支撐可拆除性、走線或實體試印保證。
-
-拱門、入口雨棚、後側拱廊與格柵下緣需切片支撐評估；十字加厚，不代表真實構材厚度。
-
-## 來源
-- [學校官方：キャンパス紹介／校園導覽](https://www163.cjcu.edu.tw/web2023/ja/about_campus_tour.php)：名稱和主要立面斜向實拍。
-- [學校官方：行政大樓外觀](https://www163.cjcu.edu.tw/images/campus/campus_adm.jpg)：主長向及右短側照片；照片含獨立鐘塔，模型不包含該鐘塔。
-- [華豐營造股份有限公司：長榮大學行政大樓新建工程](https://www.hwa-fong.com.tw/portfolio-single.php?id=93)：反側外觀實拍，確認石色階梯塔、十字、拱廊與上方大玻璃窗。
-- [華豐營造股份有限公司：行政大樓反側與相鄰圖書館](https://www.hwa-fong.com.tw/upload/201807271455032.jpg)：行政大樓在圖右；左側為相鄰圖書館，不能混為一館。
-
-公開封包不再散布來源照片，只提供連結與原創模型。全校尚未完成；見學校目錄的逐項缺口。
+## English scope
+Partial only:10 original triangles forming the complete approach-facing rooftop cross profile off-white;5490 neutral. Whole y=14.1 plane equals complete finite profile, including original tower-union root; opposite y=11.9 face and narrow returns neutral. Stone tower with dark base, mixed brick arcade, glazing screens and all other domains neutral. Contractor photo right administration only, left library excluded. Original5500 triangles and22 immutable files unchanged;no originalOBJ. URL201807 not verified capture date,not2026 survey. Preview faces+Y;front remains original-Y. Sameitem/count0/no geometrychanges/no filament test.

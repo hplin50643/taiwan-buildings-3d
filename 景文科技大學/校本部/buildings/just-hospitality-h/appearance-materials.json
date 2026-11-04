@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "JUST Hospitality H observed tower cap front light gray",
+      "hex": "#CBCDC8",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 1474
+    }
+  ],
+  "domain_face_indices": {
+    "whole_right_tower_cap_front": [
+      1298,
+      1303
+    ]
+  },
+  "coplanar_components": 442,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1476 original triangles unchanged",
+  "limits": [
+    "Tower front includes banner/lettering and slit-window details; not full gray.",
+    "Tower glazed return mixes glass and framework; no full blue/gray backing.",
+    "Cap top, underside, side returns, supports and rear are not inferred from the front fascia.",
+    "Main facade has window frames, AC units, wall variation and low-level transitions not isolated as original material domains; no blanket tan facade.",
+    "Rooftop stair/mechanical enclosure, roof surface, terrace/landscape proxy and base remain neutral.",
+    "Unseen rear and neighboring background building excluded; all unlisted faces remain neutral.",
+    "Preserve1476 original faces; no geometry edits, new openings, face boundaries or OBJ generation.",
+    "Use actual five-rank photographic building evidence, not official273illustration as color evidence."
+  ]
+}

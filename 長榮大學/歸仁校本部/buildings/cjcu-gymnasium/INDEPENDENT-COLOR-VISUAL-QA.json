@@ -1,0 +1,86 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven whole views and three left-column closeups.",
+    "Only four whole front-left facets of the left portico column light gray; original union top and bottom retained.",
+    "Unknown roof, other column facets, right column and mixed lettered brick walls neutral; original appearance history preserved."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 4694,
+  "material_face_counts": [
+    8,
+    4686
+  ],
+  "connected_coplanar_domains": 2114,
+  "original_obj_present": false,
+  "original_files_retained": 62,
+  "file_sha256": {
+    "README.md": "39881bf38aba89e85af9f9060792dc87af77068524c3cce00aa6cdd8f2a2ca55",
+    "README.zh-TW.md": "39881bf38aba89e85af9f9060792dc87af77068524c3cce00aa6cdd8f2a2ca55",
+    "model.stl": "ebecf2597fbc17fd0faf5a8bcd3ac13d1d9511d70a9600c5c09084ddbd26d879",
+    "build_model.py": "834342ec16c88e61ba73e6a75c996f52f9ce01e6b84c40c611c620606cbb043a",
+    "colorize_model.py": "a85cffc0c13e50e417488c465ef0eaf3581da4ea2faadfa5d51f106a0275acb3",
+    "render_color.py": "6da566b93a5092809e24d1f15fef8a40bd28a7d3d26fa98037c7079c9678fff0",
+    "verify_color_scene.py": "d1202ae1ca2d66fe5a5636f351fba31de20fc9f989193344fd66a92564b1a604",
+    "validate_color.py": "1447be6d0a47a530580a5433d91a5eba7c974bca77e16a24b629190271e96cd3",
+    "color-mesh.npz": "69a9ce8c824d65bb42a4d6e676c36b42359c615dbd782b29fc6ee1e0068b7564",
+    "palette.json": "f26556a4b7254aaf530ea3bd9a6b79e42a8e9d92c0f976d3a57189d7a1c4af26",
+    "appearance-materials.json": "8962a66fda4340dd6619e51928676b358b30b36d65c6968fea2f80b09e7cb470",
+    "COLOR-SOURCE-REGISTER.json": "fc9dd40651a422710337aaa227f13215e870d3b1848a6a35f38c2a40fabaf2a8",
+    "appearance.3mf": "15b69e92ea7b608dd0fdf6240ba9e6148746a4b2552858109a615fe30d00b1a7",
+    "scene.blend": "46a74c3f36c87ada82055c87b5feb79eb426af93a5e380560c26bef423d45dd3",
+    "preview.png": "3bee19e986688bc9cd3b9a4d7e2f536013024edc8fd9ebc3365f032bc94ec267",
+    "rear.png": "41c7a927f53dd38d37f63aa45e8e39b344ba960cfdd92462f3d404fd628f8197",
+    "front.png": "9ef1831fba16cc12c9450d1a213fdf0686583e4496f2dccd27fc1ff789ad36a5",
+    "back.png": "a74c1896c395c55ef4470d74646f895f2bce5699f3ba484e121c38aa3b6afdad",
+    "west.png": "e5774be0b3012649a6ed458632a4070ef7f24aa36dc065bbf65949b6d58a5ba2",
+    "east.png": "e246b7e29c611812e2882d6842ba8bf4b9ef682a7628ba57a69a54aa5e904721",
+    "top.png": "cc4f3563a8a8073cd1789571d46ebbd0ff28c8e1ed35ce02c7322a55be6430ee",
+    "entry-detail.png": "08719a72d11194def070218181c2bddeb19d1d2e8ded8f5b1e524507ff316203",
+    "facade-detail.png": "ad1d267170ceb5b5106538f95d83d157e2ed658989e87baea84e000b89306971",
+    "roof-detail.png": "1fa884a87668729137bb2d56cdd3cc8de92016801355b587af8457f04d6fa192",
+    "export_appearance.py": "f647e2bac9798e8598bd3c7e79907babc924d00b570ede257df51ab0f7a2d95b",
+    "PREVIEW-TRANSITION.json": "89460bbd02edc86a83ab44d07b41e4cc20d6cf6e25627846c7e4f0387687a4f1",
+    "ORIGINAL-SOURCE-GAP-scene.blend": "c2ce5bdfa7bd51e3b3141e8d14788fe056dfe5b56c9b96ed6d972f835e4a934b",
+    "ORIGINAL-SOURCE-GAP-README.md": "c3f037bc731e369aa149cd48c9c19497b0eca7e548e8ec07922bef9ba343b923",
+    "render_preview.py": "58b8853ad1e6d9a6fc73ee742c930b4a07a5a64262fb253f38c5f4070dfe60d3"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "2359714c531553b2bfbe4222ee1ebda80b8a4924e9a39f71a665f5f1d88d6891",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "5b9b0e022b7ef9a34eb8e143baf4d821e122f6a5dd8cc8775da24174af0cf7be",
+    "SCENE-QA.json": "9d96a006c83ad6ab3e07ac105e1068ea186eb82b92153fca848c1a0dfe762f90",
+    "FRAMING-QA.json": "3f497ecefab4234a7b7326d576a31b532b6a360908097ddb155e8b90a9156121",
+    "DELIVERY-QA.json": "fcd0a160adb6e21aa52ce8348b6806f3d754bf3f802466a2dc8fbfcac9d67a9c"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "be47c139e17ff075ac13289ca6e20e4020399e9e8a8edde50a72a020110cc8bf",
+    "ORIGINAL-RETENTION-QA.json": "bf9fd96e168e5cac2eba333c9ca89674d3e97ffbbf9408d2513f4fca7f12dc72",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "5c7c28638579b67f334706fe05538915f6fa62c100f080d76758eb276c1a8925",
+    "ORIGINAL-PACKAGE-READBACK.json": "4cce382d2703b2290abd8e519cd7038d39a5ca4bf5d74d05f7ea6a12224367cd",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "b24cbbc10206bc6ac1b08f394c66ff8013be5c78351c6919291f26785e4c59bd",
+    "INDEPENDENT-DOMAIN-0825.json": "3d4726f8adf03368cb7a9a9a1551ce79bc20cdaf6e14e4df61f6eae8be8c8eaa",
+    "INDEPENDENT-IDENTITY-0825.json": "4a5e3daa36557fafde1d7988e5216d41873f2dc7b638e39fd8b50d7291fa2a8c",
+    "INDEPENDENT-PACKAGE-IDENTITY-0829.json": "b24cbbc10206bc6ac1b08f394c66ff8013be5c78351c6919291f26785e4c59bd"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "9576ef6a014f3cf287e2577518dfe7d76dd37caae04c78e4659e1ae9b1128836"
+  },
+  "limitations": [
+    "8 original left-column facet triangles;4686 neutral.",
+    "Existing arbitrary roof sheet-family source-gap transition, not monochrome discovery or new model.",
+    "Original4694 triangles and62 immutable files unchanged;no originalOBJ.",
+    "Original approximate gymnasium, not surveyed geometry; capture dates unverified,not2026."
+  ],
+  "history": [
+    "Preview approved then only remaining nine views rendered once.",
+    "Independent expected-name gate verifies CJCU Gymnasium partial color against actual3MF and reopened scene."
+  ],
+  "existing_preview_transition": true,
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T08:29:01Z",
+  "parent_review": "Parent personally viewed official daylight portico photograph and originalcode0823, preview0825, finalten0829. Independently reconstructed original24gon leftcolumn center-12,-49 radius1.7 facets14..17; everywholeplane==finite2 allthreevertices/tangent/fulloriginalheight. Originalunion actualz3..31 preserved, exactraw8 equals NPZlightgray; other4686 unknownneutral. Sevenwholeviews and threecloseups show leftcolumn fullheight/root/upperunion without extending to otherfacets/rightcolumn. Original62files and4694triangles unchanged,2114coplanar domains uniform. Existing1206roof sheet neutral demonstration not materialproof, originalappearance/history/scene/render preserved with publicaliases and transitionnotmono. ActualCJCU Gymnasium identity Blender/3MF/fourscripts/paletteRGB PASS,count0,partial notfullcolor."
+}

@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete views and three intentional near-side canopy edge closeups.",
+    "Complete near-side edge pale gray visible; adjoining front, top and underside remain neutral.",
+    "Mixed balcony bands, windows and illustration-derived front silhouette remain neutral."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 2774,
+  "material_face_counts": [
+    2,
+    2772
+  ],
+  "connected_coplanar_domains": 716,
+  "original_obj_present": false,
+  "original_files_retained": 17,
+  "file_sha256": {
+    "README.md": "0cefaa87209c7b37f6ece0566cddf1beff525b4c14e1f6a60b8412343136dcf7",
+    "README.zh-TW.md": "0cefaa87209c7b37f6ece0566cddf1beff525b4c14e1f6a60b8412343136dcf7",
+    "model.stl": "948cc02b753b51ab2a16a3ddb6bdf6f2e519cbbd331fdf67d1feddc2e37b804e",
+    "build_model.py": "9e6b355c1b4ab2d0151c6eba493af32f6d1e92fbacdb900512339ff69b43cec5",
+    "colorize_model.py": "94978e7fedd319836cd48191e5daa75890dd2f4fea7a9ead891df8d207e1d768",
+    "render_color.py": "58960d6eb28a3d2779ef7215b33258996629311b5fe65adea00690c7235b6c6d",
+    "verify_color_scene.py": "9f0ed21193f2a9201e1a8e314260ad67941bbdeca997f4eceb37b1c766628909",
+    "validate_color.py": "cac4ae4279e2b8e2be753f272c0bc290328289b050c496a2765881093f787c7b",
+    "color-mesh.npz": "a48270298bc601ee9f87f5309464a7f0116a588eb40f26ddc9131f2a39e9d326",
+    "palette.json": "ab206dc8926025a21753d70c7a399e70a1df5d5266d7784116f4e3d94c442d64",
+    "appearance-materials.json": "01c8cc89874715078062dc22be1404e12d9adb948bebbdc6ee3b3a8c8e0937ea",
+    "COLOR-SOURCE-REGISTER.json": "b22801c499276e7130470188496004d1d5d54ffbd02972fe1a6174c8769735fe",
+    "appearance.3mf": "1620e4d331944c3162db9d06229f7bf1a00eb528db56929a797cc061da519705",
+    "scene.blend": "9ed47ef2c7d9b71af28aae8180f22729f936b5f57d05133ad98046ac0ec9a2ff",
+    "preview.png": "1c5a4eb53f2edf7ea75ecbd7a9b53045dbc09a89d1a5000ac45b43e1ef8b870d",
+    "rear.png": "43a5f19e5e0851db390fae80bcc60c65594ac36b121b7a4eaf198dc6e5980c61",
+    "front.png": "236e765e630e800581ea9d21f1f21c339f186189c67aaeb7237570bfbe7bdab3",
+    "back.png": "1ce1aaf3c8d92a8896ca986e6aa492655de03c8555c7568cc97963841ad23097",
+    "west.png": "a166028a6c0368159a8a93e371ce1d8ae69f843750849b3bac9de2db7e43efcd",
+    "east.png": "e5d6f8e53b94d1e7cf04349307038295757393f76631d8bed95e5e3fa44018a3",
+    "top.png": "147bfb83bad9bdec805720357fc6352e58289f21ced8a58d0edbc8de8b7a0173",
+    "entry-detail.png": "b563d1b3a911e2d05e257bbb2fe80dd68a8c59baf8652680ad85dfbc2b758a01",
+    "facade-detail.png": "8e28dde953bd493935ca3be1e5f9d0a14c6d1d11e90788d70bdd4297fa3f4216",
+    "roof-detail.png": "cc63b8397ed4abfb699daf2eecd861f0c3a9f0d90e15d15de27a9304b82a13d7",
+    "export_appearance.py": "49ca08581a249885d5b2f93930f1d41b0bff74cfeb48187a29c32d194139c86f"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "ce753f05e3a308a8caa72ae0d5fd1e8ce6cd98f9d31d455e474411d4d56e7fe1",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "5974a2f4a8ad4ba37dcd9704572037d41f987908a60ac7b0b57e5331c3ccbd1d",
+    "SCENE-QA.json": "9480d1d5a9a86a517e2c021d5429ccf5764f5b62e6fc24ef6d97302460839a17",
+    "FRAMING-QA.json": "ec46d98f070fbf758a3a7c2232518d9ab1a140d04793b855bce055bff1039c4d",
+    "DELIVERY-QA.json": "84b4bb6c995b5b5675f6c2bfd05311dddb699b615e44ef63091e5de7a49d44ed"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "d75caf62c8480f50abfc1bb860e6eea8a5c7245206cc35fd50744260935a2ee1",
+    "ORIGINAL-RETENTION-QA.json": "ab32248b435b2310055e9f8aa7329e2988bb9d338b0fd7747d4d7fddfbece878",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "1d195e21a6563b9f6e53030cd2e9954b65c8e43aa3ae65b34e593fb1c60e1da5",
+    "ORIGINAL-PACKAGE-READBACK.json": "a67f9c5bfef2936fa2a447155a6da54d3b09e75a2b4b0a06ccda79fbaba770bb",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "ddaf864320d9fd1f69f3b11eaf80aa945f1144708c38eced74b32a1512ed2241",
+    "INDEPENDENT-DOMAIN-0723.json": "d259946be08953aea0a0e4496a79d0bbc38b3a3e7c7e118b01f8fa01bd96b8c6",
+    "INDEPENDENT-IDENTITY-0723.json": "1dbf5ebc75abcc7f3af93921d887d2f38c78483a269a7cf4114b8bd8bf54ff50",
+    "INDEPENDENT-PACKAGE-IDENTITY-0727.json": "ddaf864320d9fd1f69f3b11eaf80aa945f1144708c38eced74b32a1512ed2241"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "b9821b823ce230b24a770f006856ed2e26cb7f46ad92a15b23b67cbcb79e5bb6"
+  },
+  "limitations": [
+    "2 original complete near-side canopy edge triangles;2772 neutral.",
+    "Whole x=-21 plane19 in2 components:2canopy selected,17stair neutral.",
+    "Original2774 triangles and17 immutable files unchanged;no originalOBJ.",
+    "Capture date unverified,not2026; mixed pink-white bands and illustration-only composition not color evidence."
+  ],
+  "history": [
+    "Preview approved then only remaining nine views rendered once.",
+    "Independent expected-name gate verifies JUST Electronics E partial color against actual3MF and reopened scene."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T07:27:09Z",
+  "parent_review": "Parent personally viewed official actual oblique exterior, originalcode, preview and all10 finalmontage0727. Whole original x-21 plane19 exactsharededge components2+17; near canopy component2 is complete original cap side from add(0,-39,20,42,22,2.7), Boolean termination y-33.5 not colorclipping. Exact original rawmultiset equals NPZ2 nominal palegray. Other17 sameplane stair faces and all2772others neutral, including tree-obscured front edge/mixedwhitepink balconies/windows/roofs. No illustration as material evidence. Explicit JUST Electronics E actual3MF/Blender/four scripts/README/paletteRGB independently matches. Seven wholeviews framed, three details display full near-side2 and distinguish neutral front/top/underside. Original2774triangles17files/noOBJ unchanged,716 coplanar domains uniform; count0 partial not2026."
+}

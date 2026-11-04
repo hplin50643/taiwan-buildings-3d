@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed two official actual exterior photographs,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Original80gonfront40chordplanes40..79 independently reconstructed;whole infinite plane equals finite tangent/z/y domain,96white3968neutral.",
+    "Eight originalcolumnintersection facets retain4Booleantriangles each,other32facets2;no missing slivers or endpoint clipping.",
+    "All1027coplanar componentsuniform;originalv3three pitchedpavilions/frontpediments/towers unchanged.",
+    "Cap top/under/rear,columns/feet/bands/fixtures,mixed walls/windows/roofunknownneutral.",
+    "Sevenwholeviewsfit;threecloseups show actualportico fascia and originalcolumnintersection fragments.",
+    "Original4064triangles/STL/build unchanged,17immutablefiles,noOBJ,ChineseoriginalREADMEretained,count_delta0.",
+    "Explicit3MF/scene/scripts JUST Design L partial color. PhotoEXIF2017:09:16 15:35:24 timezoneunverified,2022modifydatenotcapture,otherphoto unknown,no2026claim."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "bc959fe23c3d1a6a667a11e3a6caa37bd69004ac93f52c594ecff92c582f7750",
+    "README.zh-TW.md": "bc959fe23c3d1a6a667a11e3a6caa37bd69004ac93f52c594ecff92c582f7750",
+    "colorize_model.py": "5bf45c07cfd266275dc1f4ca8f59f10074c12a995229240986fefcb7d07b24c5",
+    "render_color.py": "25474e8541222fcb2601a11c50c32c61ff1c72cde67dd94a9a007d3635178c92",
+    "color-mesh.npz": "53fb2e22820d1c1376a01ec1014718782b72936198853b2b39edfc4e073c5a4a",
+    "palette.json": "41692bac110f7352169cc7c6597435a266f5a6bae5fec16230290c64b7e3c9fb",
+    "appearance-materials.json": "b746df1f46df70da5a4e7b1ea7bf8ffbcf6a67e636fa16093680b4a61ee71934",
+    "COLOR-SOURCE-REGISTER.json": "ed22b6f563736f48b7dec5e1c141d65439a3d7acf2e8313551d68c313be309da",
+    "model.stl": "6c06b4ed10a90a649780285ea55c19c7fd71228265a56f868d780af6babc3bce",
+    "build_model.py": "4fe6f5bf0d87db7bd0b09e7afb92142066575d43c85c9091915f587911480d56",
+    "preview.png": "48f9dc4a373e32b7994f990146d7f184d4b0d4848eb768744cd95d378f414cd2",
+    "rear.png": "c5299833fdcac06b8b973ad798f51cbd056f759c68da36006a09ac7e888ac9d6",
+    "front.png": "1f74d640d2cfcab63130387841909e47629e23ce7c6bbbe83aadef16654e694b",
+    "back.png": "a9deae859c939b61913e116d53db9753b7f9145ff4b81af379d684277bdfd6a5",
+    "west.png": "1d8420aecd7ce7fb9a982c9e4db84832970c4bfe3d65932bd475e64948e1e32f",
+    "east.png": "6e88afb831b2bfd573a73b3d2a86bcf19bdd3c6a5dadae23ff503f588a90fd01",
+    "top.png": "d209ce57c4e1b12c52627a16dbbd3df3a40b22c37ec499178262948cd023ee4d",
+    "entry-detail.png": "6b2eab72812e96536d354fae3a6bd62a938b024f77bb0946e1ac049c870b56b3",
+    "facade-detail.png": "a9793ab4929a66879555092991d54e13574e6c8e24b1880d911e92788fdd8c67",
+    "roof-detail.png": "ed49e3b7d0d6da1631620d5a1c858f7f98dd34a544347484f605a4c4ebb9db5a"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "81e325580219b87667ced527f2f1ef86b00d233db864c1530b376abdd6f5fe19",
+    "SCENE-QA.json": "46c159cd0bf648d2d20237e4914b902f657ec401879c2f8f287bbae120e926b8",
+    "DELIVERY-QA.json": "d227d0e2571bbe7991a071e0cd289420dc78346663ee5282c0b830a92624d512"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "955b3c1975cded0b65a8f8fc99b7b1b7ea5e8881754737f3c8d7b9d5bc4f66c6",
+    "ORIGINAL-RETENTION-QA.json": "6e9afdbfcf74694a13d290de4d432003da8d904987b4f7ffc4d62a78e6dd9c40",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0715.json": "aba903e9151f2a84e5d55b09033680b834f09293715cdf6c2556b707deeb0b72",
+    "INDEPENDENT-IDENTITY-0715.json": "393f6ee97c1c8960eb34707339dc4a83180955a8afe95f8a2016abe06a036e2a",
+    "INDEPENDENT-PACKAGE-IDENTITY-0721.json": "fabaa887b4f0d1748cbd62a3fbe8eeb2767aa1ef16cdb06b4cf7403e203e71e4"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T07:21:19Z",
+  "parent_review": "Parent personally viewed two official actual photographs, original code, preview and final ten-view montage0721. Original 80gon center(0,-10), r18, front k40..79 finite chord/tangent all-vertex domains contain96 original faces: 8 column-intersection facets retain4 fragments each, remaining32 retain2. Every infinite facet plane equals finite selection at1e-5; exact raw triangles equal NPZ96 nominalwhite. Back half, column base bands, flags, mixed walls and pitched roofs stayneutral3968. Original4064triangles17files/noOBJ and v3 pitched-tower geometry unchanged. Seven whole views fully framed; three closeups show complete front fascia and both original column intersections. Explicit JUST Design L identity actual3MF/Blender/four scripts/README/paletteRGB independently checked. Partial not exactmaterial/current2026; countdelta0."
+}

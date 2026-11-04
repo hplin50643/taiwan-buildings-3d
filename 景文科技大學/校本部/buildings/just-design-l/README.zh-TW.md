@@ -1,31 +1,32 @@
-# 景文科技大學設計館（L）
+# 景文科技大學設計大樓 L｜半圓門廊前立邊局部白色
 
-## 模型預覽
+**局部補色未完成：僅半圓門廊雨庇前外垂直皮96原三角名義白；柱、屋頂、混材牆與其餘面尚未分色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 just-design-l／count_delta=0，景文科技大學校本部。英文身份 JUST Design L partial color。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（證據不足處簡化）<br>![背面](previews/rear.png) |  |
+**保留既有v3原三座真坡屋亭、前山牆薄板與塔量體，沒有因新色源改造屋頂或新增細節。原照片估測尺度/粗化不因補色成為測繪。**
 
-公開外觀照片推估的建築微縮研究，非測繪級BIM，也不代表2026即時外觀。
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![門廊完整前皮](entry-detail.png) | ![左側交柱原碎面](facade-detail.png) |
+| ![右側交柱原碎面](roof-detail.png) | | |
 
-## 外觀依據
-- 中央半圓挑空柱廊、兩側高柱及上端突出窗塔
-- 三個中央三角山牆、兩翼拱窗及矩形窗
-- 新補高角度官方照片：中央及兩端坡屋頂塔亭
+## 完整原面與材色
 
-視傳系實拍及官方空拍03均已直接檢視。v3新補中央、兩端塔亭完整坡屋頂，而前方較低三角山牆仍保留薄立面構件。中央塔亭與前山牆前後關係依高角度照片近似；整體深度、屋頂後側及背面仍簡化。
+從原80邊柱雨庇中心(0,−10)、半徑18、z27..29.8重算40..79每一弦平面，全部三頂點距離≤0.0001mm；逐無限平面枚舉與有限切向0..弦長/z範圍/y≤−11完全一致，不按中心點或normal漏碎面。8個交柱facet47/48/53/54/65/66/71/72各4原Boolean三角，其餘32facet各2，共96；兩端40/79保留原union截斷，不新增裁切。全共面域材色一致，原4064三角不變、3968面中性。
 
-## 比例及限制
-- 含底板尺寸：150.00 × 91.00 × 76.70 mm。每件独立縮放，最長150 mm，並非統一比例校園拼圖。
-- 未取得實測尺寸；整體深度、背側、被遮擋細節為估計或明示簡化，未見的背面不任意複製正面窗格。
-- 門窗數量、曲率和間距是視覺近似。省略文字、旗幟、空調、植栽和細欄杆；細柱及窗框為列印加厚。
-- 官方273頁所附PNG是示意插畫，不能當照片。本模型另有 sources.json 所列實拍，來源照片不隨包公開。
+正面官照顯示連續名義白外立邊，高斜照補身份。頂面/底面/背半與背板全中性，不由陰影染黑或向後鏡色。柱有基座/箍帶/旗幟及附設物未分界，不全白。主牆混淺牆深base/石下翼/窗與設備不整白；玻璃混框、室內及反光不整藍黑。三座坡亭、前山牆板、階與未核後面全部中性。中性不是實景灰，資料覆蓋界線不是真實材料接縫。
 
-## 檔案及重建
-安裝 requirements.txt，執行 Python build_model.py 產生 model.stl。以 Blender -b -t 2 -P render_preview.py 由實際STL生成 scene.blend 與預覽；scene.blend 保留一個可編輯完整網格。再執行 validate_model.py、check_layers.py、check_thin_features.py。Python生成程式保留所有形體參數。
+## 日期與範圍
 
-## 檢查
-- 原STL法向、封閉邊與頂點流形、正體積、一個連通外表面、無分離內腔殼、重建SHA及Blend/STL幾何一致：通過。
-- 0.2 mm間距、非共面微偏移截面，共384層全部閉合。
-- 0.8 mm XY形態開運算篩檢（1 mm間距抽樣），0層超過1%面積損失，最高0.39%。此值包含尖角、凸緣，非完整壁厚或切片器噴嘴路徑分析。
-- 屋簷、雨庇、柱廊及開口頂緣可能需要支撐；依材料與方向在切片器中複查。未完成實體試印、完整切片或支撐可移除性驗證。
+近照EXIF DateTimeOriginal為2017:09:16 15:35:24，無獨立時區/時鐘驗證；修改欄2022:10:17 17:11:26不是拍攝日期。高斜照無capturemetadata，不稱2026現況。官方273PNG插畫不作取色實照。保單一設計大樓原範圍/估測厚化，不增加模型數；照片僅私人研究，不公開貼圖或推定商用權利。
+
+## 檔案與 QA
+
+原STL/build與4064三角座標拓撲字節保留；immutable17件無OBJ，原builder隔離生成OBJ僅私存，不冒稱原repo有OBJ。原README.zh-TW.md保存在ORIGINAL-MONOCHROME-README.zh-TW.md，舊單色QA/圖保留，原scene私人保留。兩展示材appearance.3mf與scene.blend實際面材保持原形；export/validate/render/verify及真3MF/scene身份 JUST Design L partial color。
+
+精確依賴隔離原build+color、閉合正體積、3MF座標/面材、Blender重開、十張1200×900與原件保留檢核；重建保留不刪，未試印或驗多料切片，STL本身無色。
+
+## English limitations
+
+JUST Design L partial color. Original4064triangles unchanged:96offwhite front curved portico vertical faces,3968neutral. Recompute original80gon centered(0,-10),radius18,chords40..79;whole infinite planes equal finite tangent/z/y domains. Eight column-intersection facets retain4Boolean triangles each,other32facets2each;no normal/centroid cutoff. Preserve originalunion-trimmed endfacets andv3truepitchedroofpavilions. Cap top/under/rear,columns/bases/fixtures,mixed walls/glass,roofslopes/steps unknownneutral. ClosephotoEXIF2017:09:16 15:35:24 withoutverifiedtimezone;2022modifydate notcapture,otherphoto unknown,no2026claim. Original17files,noOBJ,originalChineseREADME retained,count_delta0,no publicphotos/geometrychanges/testprint.

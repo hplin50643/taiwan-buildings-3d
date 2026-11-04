@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed one official actual oblique exterior photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole original infinitey-21 plane2 inone complete towercapfront rectangle,2lightgray1474neutral.",
+    "All442coplanar domainsuniform;actualx48.5..71.5,z68..69.9000015 recordedafterwholeplane,no clipping.",
+    "Actual official oblique image only;illustration excluded,captureunknown/no2026claim.",
+    "Cap top/under/returns/supports,lettered tower,glassreturn,mixed mainwalls/windows/AC,roof and terraces neutral.",
+    "Sevenwholeviewsfit;threecloseups show exactuppermost righttowercap front edge and ends.",
+    "Original1476triangles/STL/build unchanged,17immutablefiles,noOBJ,ChineseoriginalREADMEretained,count_delta0.",
+    "Explicit3MF/scene/scripts JUST Hospitality H partial color;one originalHbuilding notbackgroundneighbors."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "7efaecc4fee450c52fd11b7ee8cae17b1deb8a38e861d9c1bbeb38295a4104fc",
+    "README.zh-TW.md": "7efaecc4fee450c52fd11b7ee8cae17b1deb8a38e861d9c1bbeb38295a4104fc",
+    "colorize_model.py": "90464786af42e6e49fe63d836fc9cb781b3a5036330669e62ff7ef12af467ad1",
+    "render_color.py": "a7eceb9ed4dc664df9015e58fc71bc3fdf7c12acb8d236a92496ecf5bc108ff5",
+    "color-mesh.npz": "251090e51386eba8494e0f27d57e0de0ad424bd74bc1b90974df49ccb1ac4d17",
+    "palette.json": "19dd1dd6e7d4e792b3a2fe55b4a6a89b4b1606dbf8980695e440a320b7fe2fbc",
+    "appearance-materials.json": "e822186fdf3c21542fbe816a083452c1327785d9e8fc021a694e48b9c99a45b5",
+    "COLOR-SOURCE-REGISTER.json": "397c351eda707f4bb535fa9a292e4ea46d8b18228310653f5205a4012de4b906",
+    "model.stl": "ae110755183d79ba5b17b45ec048529ca0730eff43a91c68dab1e5b7ed482a13",
+    "build_model.py": "a3cd1b999e57f37bd080fe056231f92461ff2392294e6d8db3ca687575baa4a2",
+    "preview.png": "9eff18febf7fad8af34c04ab96773deba1cbfca9d3fbe37f4292864450062892",
+    "rear.png": "d9f57047e2930dcd94449d56ece9c1d2850ede453fa5ecf4d6f9fab5c8bc2e6b",
+    "front.png": "0031ef86dcc2caf30fe2a5891279928d06184a67abbf3a95a7b545314837c0c7",
+    "back.png": "3bfa3a179464bef930d53259a7b7bbbd875c4c40d14f90baea6b6d9f1f266507",
+    "west.png": "cb3af7f985a9fd47617a18ffac84680463cffc76204156bf4e2b7a252bad49a9",
+    "east.png": "e1443be83940ebf343bfb2aeffea3c47f9c71b47e77007c82cbfd58f60c5e95f",
+    "top.png": "af66586a71812e155f9190f7be1b28f6c6f2a465cf014cf9a33f78edd3f54f74",
+    "entry-detail.png": "4051fcb690eab2754174a16d28cb504978753c157f98a89a49ca436a4c497194",
+    "facade-detail.png": "4c76d603b5b5693cc4153cd3c540475e519e05ab1f53fac49067917fecdc30c7",
+    "roof-detail.png": "30964df86a457bb47cf5d65b557d32695d4f4550effddca4d8fc724b5bb3bfe2"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "44e2f02eaa25bb7f6141a5770d9078a6671f7add3a3242b7b7f3b3201d6889b5",
+    "SCENE-QA.json": "22a4c84f88cfae18e45db46b4720582215a2ed1bfb35b266d6b3f151c65035fb",
+    "DELIVERY-QA.json": "7876bb686d9615546710bd43c8fde42a6587b23971e2fc237c23350f5dc39cdd"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "2605574b6283cbabd86a2a2fc7b8e396d7d69f262ef1da095a945abd5fd39c09",
+    "ORIGINAL-RETENTION-QA.json": "6e9afdbfcf74694a13d290de4d432003da8d904987b4f7ffc4d62a78e6dd9c40",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0725.json": "02898ee76221ea8ed81ec3243ac0cfb7771bcc6f24b6b3e3eab1feeb19a67210",
+    "INDEPENDENT-IDENTITY-0725.json": "0710c5d5b79caf6d9275b7b8ce9d523a87813b76691fddedef16dffc2015245a",
+    "INDEPENDENT-PACKAGE-IDENTITY-0728.json": "43d22fb84483698ca5ff6b27d73c36af2e7a5c0ea7102070c6fbe3000a7f3e32"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T07:28:23Z",
+  "parent_review": "Parent personally viewed official actual photograph, originalcode, preview and final ten-view montage0728. Whole original y-21 plane2 exactsharededge complete cap front from add(60,5,68,23,52,1.9), all vertices within original finite x48.5..71.5,z68..69.9 at1e-5; no artificial colorcut. Exact raw triangles equal NPZ2 nominal lightgray. All1474 others neutral including slogan tower wall, glass, cap top underside sides, mixed walls and roofs. Original1476triangles17files/noOBJ unchanged,442 coplanar domains uniform. Seven whole views framed, three closeups show whole cap front and both ends distinguish neutral adjacent surfaces. Explicit JUST Hospitality H actual3MF/Blender/four scripts/README/paletteRGB independently checked. Partial not exactmaterial/current2026; countdelta0."
+}

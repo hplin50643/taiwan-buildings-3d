@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official and two architect actual exterior aerial photographs,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Original main144gon/lantern96gon finite4point trapezoids reconstructed;all-infinite-plane union equalsfiniteunion448+192=640metalgray,4094neutral.",
+    "16near-boundary slivers may touchadjacentplanes;unionassignment retains eachonce withoutnormalfilter;trueeaveunionbottom21.2/ribBoolean cuts preserved.",
+    "All1211coplanar domainsuniform and4734originaltriangles unchanged.",
+    "Threeactualaerials supportfullroofcircumference,notmirrorinference;no ribtexture orprecisionroofclaim.",
+    "Verticalfascias/roofunder/apexflatdisk/lanternribs/glassdrumproxy/annex/base/stairs unknownneutral.",
+    "Sevenwholeviewsfit;threecloseups showmainroof,lanterncap and rearroofside with neutralverticaledges.",
+    "Original22files/noOBJ/STLbuildbytes unchanged,count_delta0. Explicit3MF/scene/scripts CJCU Hall partial color,GuirenMainCampus samehall notseparatechapel/belltower. Captureunknown;URL202404/202210 andmodify2022notcapture/no2026claim."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "45d1d6dc898931afdc29aeed99d8123479bd96dc496002589c0cf52905db7e15",
+    "README.zh-TW.md": "45d1d6dc898931afdc29aeed99d8123479bd96dc496002589c0cf52905db7e15",
+    "colorize_model.py": "6f37ed1f84df811a05a2a0f1bc1574a8a14cb6b7cbf6dcec454a33e514990031",
+    "render_color.py": "4811550b8bdf7399cb3014a5bce8df05fd952abeaad407e0e7050e674cdb4023",
+    "color-mesh.npz": "f80c76ea2505e2da92bd8d45999f51c16c1d72a87fa043e3616a2cde393bd56c",
+    "palette.json": "0ff77cca377b07600bf1ac181a26efa40a550880d3206e981179fa9cf3f79f94",
+    "appearance-materials.json": "2646695f1925d1573dadc606817ae73d07a12943d0d3e29cdb2c53ec8813cb93",
+    "COLOR-SOURCE-REGISTER.json": "718f708b24683bde4e5c51810f87512265c3dc3b74d0e48dbdaf39c59e1e678a",
+    "model.stl": "eda523c703513c0d20fdbfed8d0d8472183a6b89e1b9638ab610eebf4d88bebf",
+    "build_model.py": "a5fdfd1813276816e8931a410a7533ce7a1df6820bd174ee8ec54fba6299b3a5",
+    "preview.png": "a093f8971cdca08f611b9c28efa9a32ebdea14ae9c3e4273edeabb05ea71d734",
+    "rear.png": "94ddbfed7c2bade3de18ae82ebcc0480e102c8024e1d061cb59904ef5c2bcd96",
+    "front.png": "06819452bd92ebbf6371a8bfc14856cdbf0a8d46814b04260af0e3f8573f385f",
+    "back.png": "7560a6f830b1bac51be8e814efb4939ebf420d9c398f712c353c4bf2eb12f022",
+    "west.png": "c2ba2db8a2abf79384f9e8ce2b9e11fb147dd31e19aee738a4ad527fbfdb1e02",
+    "east.png": "426db0699a0cebd0266c120aade7192ae2e8ac9a44ffc1cc0c31985722c7f728",
+    "top.png": "439140b202623f9a3db27e4e8c154c73782bda530a664c3231dae7633399f8c0",
+    "entry-detail.png": "07c5ddc363ff3690aa6dfb82cf36604433af4da7b72b56f27d92ae83b5791d44",
+    "facade-detail.png": "03540b14692e95c979ea5290ca006ba091f2decf1a7f5b098e8d956a1859de51",
+    "roof-detail.png": "3a8280a45e072cbec7fdeb80315df449814dd9eb1ef503cf5ecc9b2a3e8288be"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "5f6e1e0342a1381960869b34fd1cbdc31f0858b4e59de8e83d158816208a86f3",
+    "SCENE-QA.json": "48f3faeb1908d209a6db273a44f93da622117f341e0746b68ad8c36d2095c068",
+    "DELIVERY-QA.json": "bfffe706f2e4b8f4035da34bcda3cd271818ccaf5e045542511e99b845fe2f8e"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "ca0ac3b2013051e346acad9637ad4a7779f3d244eb06df1496851cff0745e8a9",
+    "ORIGINAL-RETENTION-QA.json": "86e85f7a1dd28671eb7bc896b2bd99510f569f02e6eb21ec446e44174bec209a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0742.json": "cf135a9dbc69e3bf3dbc129b57dabad1b787bc73df0085bd797693a9da809b3b",
+    "INDEPENDENT-IDENTITY-0742.json": "c10ee87ace51e0fa1c5934520fd954156dda6a0d19b4d522753a00f6bc2dc7e8",
+    "INDEPENDENT-PACKAGE-IDENTITY-0747.json": "0d6df7c3d50c611cd08fa8603b83f66de35a4b75269d32f26e67ad31856ffe66"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T07:47:40Z",
+  "parent_review": "Parent personally viewed official aerial plus architect topdown/opposite aerial, originalcode, preview and final ten-view montage0747. Independently reconstructed144/96 frustum facets using bottom2/top1 plane and all3point distance1e-5 plus angular wedge/full original z. Every infinite plane equals finite facet; 448main+192lantern=640 complete original Boolean faces exact rawmultiset equals NPZ material0. Three aerials support full roof skins, not symmetry extrapolation. Vertical eaves/glass/annex/topcenter/other4094 faces neutral; clocktower/adjoining shelters excluded. Original4734triangles22files/noOBJ unchanged,1211 coplanar domains uniform. Seven whole views framed, three closeups show both conical skins and neutral original eave/Boolean boundaries. Explicit CJCU Hall actual3MF/Blender/four scripts/README/paletteRGB independently checked. Partial not exactmetal/current2026; countdelta0."
+}
