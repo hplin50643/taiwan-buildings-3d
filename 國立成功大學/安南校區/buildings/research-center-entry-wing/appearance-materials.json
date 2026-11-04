@@ -1,0 +1,31 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed rightupper frame and entrycap front muted stonegray",
+      "hex": "#C4C0B2",
+      "faces": 10
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED windowbacks main walls side roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 1374
+    }
+  ],
+  "domains": {
+    "rightupper_framefront_gray": 8,
+    "entrycap_frontfascia_gray": 2,
+    "whole_coplanar_withdrawals": 0
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1384 original triangles unchanged; no cuts or addedgeometry",
+  "limitations": [
+    "Right projecting upperframe front only; recessback/sides unknown.",
+    "All other main/entry walls neutral; no added signage.",
+    "Entrycap front vertical only; roof/underside neutral.",
+    "Architect view4 daytime exterior; image capturedate unknown.",
+    "Two material labels not tested filament slicing."
+  ]
+}

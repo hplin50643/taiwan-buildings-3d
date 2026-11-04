@@ -10,4 +10,4 @@
 
 | 模型 | 模型 | 模型 |
 |---|---|---|
-| **國立成功大學｜南科研發大樓（台達大樓）**<br>[![正面](buildings/delta-building/previews/front.png)](buildings/delta-building/README.md)<br>[正面](buildings/delta-building/previews/front.png) · [背面](buildings/delta-building/previews/rear.png)<br>[說明與來源](buildings/delta-building/README.md) · [STL](buildings/delta-building/model.stl) |  |  |
+| **國立成功大學｜南科研發大樓（台達大樓）**<br>[![正面](buildings/delta-building/preview.png)](buildings/delta-building/README.md)<br>[正面](buildings/delta-building/preview.png) · [背面](buildings/delta-building/previews/rear.png)<br>[說明與來源](buildings/delta-building/README.md) · [STL](buildings/delta-building/model.stl)<br>[局部材色3MF](buildings/delta-building/appearance.3mf) · [範圍與限制](buildings/delta-building/README.md) |  |  |

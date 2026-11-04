@@ -1,0 +1,43 @@
+{
+  "slug": "ntu-bizhen-hall",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "NTU-BIZHEN-HALL-COLOR-SOURCE-GO-2233.json",
+    "sha256": "d53a9a24776524420f20f39701cf344572b97a4ead2d5c68720d0a0bfcf0fc7c"
+  },
+  "review": {
+    "file": "NTU-BIZHEN-HALL-INDEPENDENT-COLOR-MAPPING-2232-v1.json",
+    "sha256": "9ed27d3cf5d78a7f9bde341136b2dc9e451cd2c8cc16a42c1206531c2c327d51"
+  },
+  "sources": [
+    {
+      "file": "official-2015-report.pdf",
+      "sha256": "14a1f5ed8b848ea3e0d0449140d36f3ea80a4208b3af2b20ed085c8198f6c62e"
+    },
+    {
+      "file": "pdf-page-045.png",
+      "sha256": "e85f31b8d6298381b12424bb9015e7421fef687c0be39e30b78c90e30a134bbb"
+    },
+    {
+      "file": "pdf-page-046.png",
+      "sha256": "52ab85cc43e10ffb4cf1372631133225530c976f3c211f21ab2bd0dff9009839"
+    }
+  ],
+  "source_url": "https://sec.ntu.edu.tw/001/Upload/relfile/9804/25967/103-2-1report.pdf",
+  "source_scope": "Only four exterior photographs at physical PDF pages45/46 (printed43/44). Other photographs, interiors and report contents are not used for modeling.",
+  "date_scope": "Official 2015 report is publication context, not all-photo capture date. One exterior embeds camera date-looking text; not independently authenticated or generalized to other images.",
+  "z_transform": "Original build scales all geometry z by .75 BEFORE export. Every domain in this review is exported/model z.",
+  "scope": "僅鐘端外石壁及兩側長屋簷前緣局部補灰；長壁下部對位、窗背與未知面未完成。",
+  "limits": [
+    "Entire long-wall planes y±24 remain neutral in this narrow review: lower original solid-backed glazing/pilotis approximations do not align sufficiently with photograph lower openings/hidden ground; no all-gray wall or height threshold patch.",
+    "All small-window backs, top-bay backs, end vertical-glass slots and horizontal/vertical window grid members: mixed opaque panels, glass, reflections and frames without verified material domains.",
+    "Clock disk/rim, all lettering and banners: do not invent colors/text or geometry.",
+    "Opposite non-clock end broad wall, lower hidden ground/recess reveals, base, plant enclosure and roof top neutral.",
+    "No terrain/ramp/retaining-wall addition; preserve original simplified external ground levels."
+  ],
+  "rights": "No confirmed CC grant. Source originals private, no textures or commercial-use guarantee.",
+  "source_private_backup": "Original references separately privately preserved; no repeated public source images."
+}

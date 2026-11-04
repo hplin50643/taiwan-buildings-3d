@@ -1,0 +1,67 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "manual_review": "Personally viewed both sourcephotos/originalcode; reran finitefacetmapping and independently verified original facet156 two boundarytriangles. Viewed finaltenviewmontage incl skin,lowerarch,thickness andstairs closeups. Outer skincontinuous silveroffwhite;thickness/inner/braces/canopy/stairsneutral;no fake perforations or transparency.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "original_face_count": 5600,
+  "material_faces": {
+    "silveroffwhite": 1300,
+    "neutral": 4300
+  },
+  "connected_coplanar_domains": 2862,
+  "original_OBJ_exists": false,
+  "no_original_OBJ_note": "Build generatesOBJ but immutable publicpackage lacksOBJ. Earlier delivery templatefailure retained;actual original manifest used.",
+  "file_sha256": {
+    "README.md": "8afe299d67598b29e577ab37387f09639ab021004465950d7bffbedafcef322f",
+    "README.zh-TW.md": "8afe299d67598b29e577ab37387f09639ab021004465950d7bffbedafcef322f",
+    "model.stl": "7519576d2584246bb55c3b159c2226ff2081553c22b70ae74d8f6243feac0103",
+    "build_model.py": "255873328551247fe1b69d917caab74fdd693554900980222d9a5537e7cbe571",
+    "colorize_model.py": "c339050e01bc19afc96aef72448fefe93819b6897fcec01e3d687a93e421d7bd",
+    "render_color.py": "825bd98b1dffc8630ace83ab48fcd347e8b9105f820d320ca30e56794d1e49ae",
+    "color-mesh.npz": "b6823140fdff384e93b7532b45f0ad363bf2839e6bea0cd731615ad9a080e52a",
+    "palette.json": "f8a4a94b14257f661d18c680a6deade93dd875cb44ec85ecd61af8508cc88ff5",
+    "appearance-materials.json": "521069454a9a069c479b175c1250321805a5775373eed9d1efd0f76aaca09453",
+    "COLOR-SOURCE-REGISTER.json": "6842c18a271fad4fbbb60e9ad3f0a8b32125a8653addda7551026d49061c2685",
+    "appearance.3mf": "d7483f8b5c2c5b61d2a0c114d67a14b92e85cab958eae492a628d9ddb8847dec",
+    "scene.blend": "64d2802fb3477cb081a885f1a1a986e96b00d6d1ba475cf9af52948e4185c5fd",
+    "preview.png": "8cdd58949a5d7e55c9290935be8a858b6be783c67cec1150759620d49eb6e5c8",
+    "rear.png": "68906f247966932d6ebbcb2f8c09c0cb94658c5d521d53587c28e957f01be5ea",
+    "front.png": "097cc58f2bcd98feabcb4dfa47919b7a318f4346c3521ab65b68a59b8c09c171",
+    "back.png": "ae978e7b6d369e371b37246055c17a2658db9f52084cd2f7b35e826d5e449061",
+    "west.png": "20b8b8048d46bce9c4cdee3e2e18f618c419891c5cf94017ad925b2b55171ce0",
+    "east.png": "774dde6961cdf755e674363c04639635a40c981a3babffff982241f13d18123f",
+    "top.png": "3188bff5c79514ef6ba90d38b43c9a2dc568b86a2dd8c4cbca483cdea083d444",
+    "entry-detail.png": "076e47df3d14f87bcd65fd608401dbb907d9096d4a19ba963bca632bf5d4f874",
+    "facade-detail.png": "f7a3695167255f97a2efaaadcd0d36ff4bd8a4615c4924790e3c9349d7136053",
+    "roof-detail.png": "224bb30e4a86d28788e3cce30e5c447ce8c0b867bee4e88f012d7eed8c26f233"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "427dac43eefa296489fe81e5bf5153565925adef515133be4a6ad8b3a12ae0e3",
+    "COLOR-ASSIGNMENT-QA.json": "fff772a261d2d59f3e124ad556733115f717913520ca2c65a7d68d10be45125f",
+    "SCENE-QA.json": "8104ff099576e823c473d13199f0090a9c2d90e5292c7f04086b15d20daed38d",
+    "FRAMING-QA.json": "0c305106972a828b0fe5de5f0f173fff61fa436a79febe0ebba3c7b5fb577515",
+    "DELIVERY-QA.json": "35bb90d108fd6fb7ca4166d4fb24d972d0f1cfffb7a03b45a701af5136f3e5ac"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "b79809e51c614093b7ab40677b06e6dcccb634307daaf1bd58c68f72164f30d8",
+    "ORIGINAL-RETENTION-QA.json": "c14d09a0e55a1f4e9261443c65bf647f9908122e0e106b6499a9589a5ff378cb",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4b11f8983b699c5d1dfb86040eb904b9f2c26189f498420837157d648cce563c",
+    "ORIGINAL-PACKAGE-READBACK.json": "cee8a0804bcee0dcc601e9fd37690ef24510397ab95cfda69465278ff9d5d366"
+  },
+  "montage": "private-review/final-v1-ten-view-montage.jpg",
+  "limitations": [
+    "Unknown capturedate;2011publication/2024path not dated photography",
+    "Side segment not wholebuilding",
+    "1300layer0 only;no wholecolorcompletion",
+    "No physicalprint/verified4filament slicing"
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at": "2026-11-02T23:17:18.773694+00:00",
+  "review_scope": "Parent personally viewed both exterior photographs, original construction-facet mapping and exact two boundary exceptions, preview and final ten views including arch and stair; independently verified1300 raw original triangle subset including2708/2711 and excluding step5377.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2314.json": "d986f82df99df4ef10a8761afd395bd47cd27628cad5d9afd26380facd0e384e",
+    "INDEPENDENT-DOMAIN-2314.json": "0ecb7ee6c30a85faa740f7839747a543d36290ed3577031a63a64206166f01bb"
+  },
+  "history_note": "Initial delivery template incorrectly required nonexistent original OBJ; corrected with no fabricated original file. Initial failure log retained; final README and QA hashes rebound."
+}

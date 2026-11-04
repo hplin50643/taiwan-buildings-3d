@@ -6,4 +6,4 @@
 
 | 建築一 | 建築二 | 建築三 |
 |---|---|---|
-| [![碧禎館](buildings/ntu-bizhen-hall/previews/front.png)](buildings/ntu-bizhen-hall/README.md)<br>[碧禎館](buildings/ntu-bizhen-hall/README.md) |  |  |
+| [![碧禎館](buildings/ntu-bizhen-hall/preview.png)](buildings/ntu-bizhen-hall/README.md)<br>[碧禎館](buildings/ntu-bizhen-hall/README.md)<br>[局部材色3MF](buildings/ntu-bizhen-hall/appearance.3mf) · [範圍與限制](buildings/ntu-bizhen-hall/README.md) |  |  |

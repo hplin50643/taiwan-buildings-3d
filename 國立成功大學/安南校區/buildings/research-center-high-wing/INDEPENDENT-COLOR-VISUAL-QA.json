@@ -1,0 +1,53 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder visually inspected all ten final renders and two daylight architect exterior photographs; parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Only six projecting band fronts and four structural fin fronts have muted warm gray reference.",
+    "All 612 coplanar connected domains uniform; 68 gray and 2272 neutral triangles.",
+    "Window backs, main walls, frame reveals and roof/rear neutral; no low wing or connecting structures added.",
+    "All ten captions identify partial appearance; full seven views fit model, three closeups intentional.",
+    "Original 2340 triangles unchanged; color review does not retroactively validate geometry or current appearance.",
+    "Parent personally viewed daylight architect3/5 and original code, preview and final ten-view montage. Corrected high-wing captions verified in all final views; original mistaken template caption not retained as PNG, truthfully documented privately. Only true projecting front band/column planes colored; all glazing backs neutral."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "7536949b33b02aaa7740c8e44cd016197417d9dff0610c07b8cfad0e6fae5fab",
+    "README.zh-TW.md": "7536949b33b02aaa7740c8e44cd016197417d9dff0610c07b8cfad0e6fae5fab",
+    "colorize_model.py": "e13e560f91aa2d80aba0cabb229c7d174159fffe69a6e080495ef9a70698f738",
+    "render_color.py": "9512a75e0ef64044297c427acc3a32a03b2ea9c244dbf4ee0caf7704f2f72bc8",
+    "color-mesh.npz": "59d6d6b92aac5b7e98923f590c875ab583f3ec2037a698b0fd0c97236f4e6810",
+    "palette.json": "19cb5549fc912b3d8d9c18920c40bb7f2ccda3564c9e098631f26d418a2bed3f",
+    "appearance-materials.json": "d3cad5c5791679a24a687203217fd72370f6a69f3ba1105c2d11b9c5caee8202",
+    "COLOR-SOURCE-REGISTER.json": "f058507e6e6275832780315feb027c2a4ff01d8ac0c17ccad1c653572c0051f0",
+    "model.stl": "099ed50f802897d56c62391375035da51dc66b10de6bfbed3ae64c1de0ebdb63",
+    "build_model.py": "42fb14bc983bec5155623efb8fc0465ba225a4e942fb07c058391600dc3e66ec",
+    "preview.png": "644ae4079242c06a1d124d87b7608bfa41d2f5c656b0531365aebc4f1cae0ac9",
+    "rear.png": "fc97505641f12328cd31bdd83954954c8d680c3ed156eb3be9cecae4769e8556",
+    "front.png": "a086eb73c35ec9fb815dcba83aee9180deb944e32c1a6a4cb52b4abd4ad188a5",
+    "back.png": "cb2becbad05f0246d256542c8dd1934b3655adab1bb4adb1600c64299cd00e08",
+    "west.png": "e1b87ff45f14016d3fa0629c893d12d56a97abf57d60ee2a42ccfa51c6aaeb20",
+    "east.png": "e209ff5db54ffb208e12dc6e7cc461be26b2cc8b1dc18ab33f2421f479739e6a",
+    "top.png": "2d2cb0e7d11e89d0e276d74503459ef2734d28a2cc161315c9328b8f1394a4de",
+    "entry-detail.png": "2b3b62a0c7fecd6b02656a978c77488f5e58afa0cb8293afb1ae212c532673db",
+    "facade-detail.png": "a0439056e6083f59d57d241e50531d7cb9a84378624b95bb1688329318ee7a3b",
+    "roof-detail.png": "4c92a0f5da1742a06045c786920611b761db20fc4e039f8d8d961c7be8e9514a",
+    "appearance.3mf": "f4af19012c74f20411cda60f21c8c0a9a49d83cbe46b36ffd5f20b0fa3d44223",
+    "scene.blend": "c4f0940c95456cdf5210a536ed4405a6e0def9ace2ecdb894b99b7001d5c8cf3"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T22:51:04.721200+00:00",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2245.json": "5b74da20a0e499827439520581767153dacee5d984a16bfb5ef7cbac34cfd54f",
+    "INDEPENDENT-DOMAIN-2245.json": "8d2e82ca90c26eebe370379864217a4ae5d7329c75a7cbddb9a9883455e2748d"
+  }
+}

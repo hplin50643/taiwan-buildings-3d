@@ -1,0 +1,51 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed crown front posts and eave nose concrete gray",
+      "hex": "#A8A69E",
+      "faces": 12
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixed tower walls glazing roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 4194
+    }
+  ],
+  "domain_face_indices": {
+    "whole_saddle_crown_front": [
+      4035,
+      4036,
+      4044,
+      4070
+    ],
+    "front_post_x-50": [
+      4003,
+      4006
+    ],
+    "front_post_x-38": [
+      4020,
+      4022
+    ],
+    "eave_nose_y-24": [
+      3791,
+      3794
+    ],
+    "eave_nose_y26": [
+      3842,
+      3844
+    ]
+  },
+  "coplanar_components": 1195,
+  "coplanar_neutralized_faces": [],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "4206 original triangles unchanged",
+  "limits": [
+    "Whole crown front4, two front post fronts4, two original vertical eave noses4.",
+    "Whole connected coplanar domains uniform; no tower z-threshold.",
+    "Tower/wings mixed gray pink without geometry boundary, glazing, roof surfaces and undersides neutral.",
+    "Original thick abstract saddle preserved; cross-era photographs not2026current condition; completion1990 not capture date."
+  ]
+}
