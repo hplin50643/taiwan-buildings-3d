@@ -1,0 +1,96 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T18:49:20Z",
+  "mesh_sha256": "d874818de1757427e913269751e8720ee97665e1bc1a0262bd5ed550b90c222c",
+  "build_code_sha256": "9b38667795ac057b7c0529c5f793de3068b976156d912aebb8b3bafde272c578",
+  "color_code_sha256": "ecd195f0c8c2d5e48504393531f4b0546b4ad25e3bc3344bf645565346f02b9d",
+  "render_code_sha256": "2eba3e351d85d960aec2a026f04405075e1e3da4f6ae75a97db5f2981409e8bd",
+  "readme_sha256": "003dc46ea47552602b30dd1a981c419676b2e62cee93ec998376b0f45349f9c5",
+  "file_sha256": {
+    "model.stl": "490dd16c89baa07009b5edcd648919ecf99a8d715b5324b25867d0d02b9e7142",
+    "build_model.py": "9b38667795ac057b7c0529c5f793de3068b976156d912aebb8b3bafde272c578",
+    "colorize_model.py": "ecd195f0c8c2d5e48504393531f4b0546b4ad25e3bc3344bf645565346f02b9d",
+    "render_color.py": "2eba3e351d85d960aec2a026f04405075e1e3da4f6ae75a97db5f2981409e8bd",
+    "export_appearance.py": "c636f3fcd320201c734f9ca8f50a8121fd026df91489dee17534f37167423a78",
+    "validate_color.py": "a35d6524bf6b0529ba5e2392d1e0f8bf629613ef4a1604ccc005196c9ec88dc9",
+    "verify_color_scene.py": "970c3322d6cd50ce0f074bc835ae3268caea1b3a7409daebfc2eede04e7bc8f5",
+    "color-mesh.npz": "d874818de1757427e913269751e8720ee97665e1bc1a0262bd5ed550b90c222c",
+    "palette.json": "570241a9696ac3c3485985bc2bbe82343246ee9414650da30d12b8c5170ba7e1",
+    "appearance-materials.json": "a1db36dec98f64c9c0d87e59feb947cabccc7583153dbafe3289031c02b2d003",
+    "appearance.3mf": "fc3e11de2cc20479dd45db082a2f85d60d4aa967df9e09bc33db5693cb246b90",
+    "scene.blend": "f5a1dd2404b4f0376774655ac3730aba1a0494f56899f4bdbf0695b4c3ec22da",
+    "README.md": "003dc46ea47552602b30dd1a981c419676b2e62cee93ec998376b0f45349f9c5",
+    "COLOR-SOURCE-REGISTER.json": "49feeb48960ac28ddd880ad88cbec3909ad3c817bbcbc2e590320cd0c467a679",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "b673ac95f634182c2bd35e242ff266445415c616c3065a7c64f9b6ed3dd083d9",
+    "SCENE-QA.json": "af302c77ee5aac7e22e222c78248621e7ffbd527fa9ce3a92c6aaffe4008d8f1",
+    "DELIVERY-QA.json": "62030ae4d1e0e50271a54de8b810a67b0772e51ad06d4ccb0cbce0ac84251d90",
+    "FRAMING-QA.json": "673b73f4bbd022fe41acb8b6ea7277d20403db59ae68cf59998d7528f81d03e4"
+  },
+  "png_sha256": {
+    "preview.png": "89bc61479af35707a0a85d383f388257fedfa674fb7d52925b7f6994879d6d38",
+    "rear.png": "17187d282d2ff1422cde407cf1ef8d68b86ea9759d568cad1866d6abe296113a",
+    "front.png": "7d89b9cf02b6c8e29e979d1f3836077d2bc4e72b8587bbb535b9fdf24d93f17e",
+    "back.png": "d3af0ccefe315e79e03f51fb8dce335a886ff2e590cf8944a183d252df187886",
+    "west.png": "90d934610cedd0442499cbc46f28e2571a1dd05b7ee8f8cc04dc6877d4127e9f",
+    "east.png": "357ffbccd1ede3dd29ff645c3886acdcfedde0fecd8196fd6772275740cfcb6b",
+    "top.png": "64a427f4990663e11d3d51e473502449dc8cc4a4e0e6b2b39fbaabf3cbab207c",
+    "entry-detail.png": "39db63bb9f72f027f5bb2c0dd27ad413ea57c660a515416178f98bc9801fecd5",
+    "corridor-detail.png": "685b2e168d7939c1d0afb2a326c676bceaa9dba97ec67d91ebb4daebc9a26199",
+    "roof-detail.png": "f32f59498c8a4f69ccb9c560f24b91db3e4512161569ddae913346688847c5a7"
+  },
+  "source_review_sha256": {
+    "ELUANBI-LIGHTHOUSE-INDEPENDENT-FOCUSED-COLOR-REVIEW-1836.json": "3760f415a31de1c0cc009ddda9962e333b1b6316064dfbc9fe669762243626ae"
+  },
+  "numeric_checks": {
+    "original_triangles": 9564,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "build_model.py": true
+    },
+    "four_material_counts": [
+      7538,
+      344,
+      1054,
+      628
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_vertex_serialization_max_delta_mm": 5.000000413701855e-09,
+    "3MF_unit": "millimeter",
+    "unknown_keeper_roof_rear_and_display_base_neutral_visually_confirmed": true,
+    "lantern_pale_not_blue_glass": true
+  },
+  "actual_visual_review": {
+    "preview": "PASS full model/base and readable caption; bounded domains coherent",
+    "rear": "PASS full model/base and readable caption; bounded domains coherent",
+    "front": "PASS full model/base and readable caption; bounded domains coherent",
+    "back": "PASS full model/base and readable caption; bounded domains coherent",
+    "west": "PASS full model/base and readable caption; bounded domains coherent",
+    "east": "PASS full model/base and readable caption; bounded domains coherent",
+    "top": "PASS full model/base and readable caption; bounded domains coherent",
+    "entry-detail": "PASS intentional local framing; no material wedge",
+    "corridor-detail": "PASS intentional local framing; no material wedge",
+    "roof-detail": "PASS intentional local framing; no material wedge"
+  },
+  "source_findings": [
+    "Both national park daylight photos, original code and original front render actually inspected.",
+    "White original tower/corbels/gallery/lantern whole-component continuity explicitly bounded inference; dark cap limited to original cap/finial.",
+    "Original lantern panels pale rather than unsupported whole blue glazing.",
+    "Front five arches and perpendicular three arches retain white returns and dark genuine blind recess backing, not transparent interiors. Unknown keeper rear/roof, annex and paving neutral.",
+    "All ten final render views individually inspected; no material wedge, full-view clipping or misleading new geometry observed.",
+    "README/register distinguish source evidence boundaries, old approximate geometry, upload dates versus photo dates, private images, and no physical print or slicer validation."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen four actual shaders PASS",
+    "delivery/framing PASS"
+  ],
+  "limitations": [
+    "Original approximate shape unchanged, not newly surveyed.",
+    "No exact current or dated as-built color claim.",
+    "Four material families not tested filament slicing; no physical print.",
+    "Private sources excluded from public package, no blanket copyright license."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}

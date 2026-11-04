@@ -1,0 +1,108 @@
+{
+  "slug": "prehistory-museum-kangle",
+  "date_utc": "2026-11-02T18:18:00Z",
+  "audit": {
+    "path": "color-audit-landmark6-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
+    "sha256": "a7dbcea6f3b93774005973e0235208f526b095d4e335699c62eb793847ba0439"
+  },
+  "sources": [
+    {
+      "path": "color-source-review-20261102/prehistory-museum-kangle/official-entry-after.jpg",
+      "sha256": "5ae3c90b099042be11e43e5410d09b1138fe67acf40f4e12c8aa6655ff5d8173",
+      "url": "https://icloud.nmp.gov.tw/UserFiles/%E9%9B%BB%E5%AD%90%E5%A0%B1/480/B/%E5%8F%B2%E5%89%8D%E9%A4%A8%E6%94%B9%E9%80%A0%E5%BE%8C%E7%9A%84%E6%AD%A3%E9%96%80%EF%BC%8C%E7%9B%B4%E6%8E%A5%E9%9D%A2%E5%B0%8D%E9%96%8B%E9%97%8A%E7%9A%84%E8%8D%89%E5%9C%B0.jpg",
+      "actually_viewed": true,
+      "role": "official exterior reference"
+    },
+    {
+      "path": "color-source-review-20261102/prehistory-museum-kangle/official-street-after.jpg",
+      "sha256": "c86b9a27261a203cfaeeb5c2ac864b2abbbb75fab4114b85fe4a0ebe1f90c1ac",
+      "url": "https://icloud.nmp.gov.tw/UserFiles/%E9%9B%BB%E5%AD%90%E5%A0%B1/480/B/%E5%9C%A8%E5%8D%97%E5%B3%B6%E5%A4%A7%E9%81%93%E4%B8%8A%E5%8F%AF%E7%9B%B4%E6%8E%A5%E7%9C%8B%E8%A6%8B%E5%8F%B2%E5%89%8D%E9%A4%A8%E5%BB%BA%E7%AF%89%E9%9D%A2%E8%B2%8C.jpg",
+      "actually_viewed": true,
+      "role": "official exterior reference"
+    }
+  ],
+  "scope": "Same existing geometry/slug color upgrade; count increment zero; no textures or added faces",
+  "rights": "Public official references; no express CC or source redistribution license verified. Originals private; no photo textures/public image redistribution or commercial rights guarantee. Palette is approximate visual color family, not measured color.",
+  "constraints": [
+    "Original STL bytes/vertices/faces unchanged",
+    "Unknown or ambiguous facets remain neutral; no centroid paint wedges",
+    "Source dates not automatically photo capture dates"
+  ],
+  "version": "Official renovation-after exterior photographs; use grass entry version, do not borrow old sundial pool, monumental steps or removed title arch. Original cited 2023 news endpoint returned 404 this pass and is not newly verified.",
+  "public_output": "Only independent approximate model materials and source URL/limitations; not source photos",
+  "original_faces": 6186,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T18:19:00Z",
+  "independent_review": {
+    "path": "color-source-review-20261102/prehistory-museum-kangle/PREHISTORY-KANGLE-INDEPENDENT-FOCUSED-COLOR-REVIEW-1818.json",
+    "sha256": "a34dfebac64a482e39a2ca46af1b4daa9b9227108d1ff3fe9e263236d0f8289a"
+  },
+  "approved_mapping": [
+    {
+      "domain": "Original central projecting five-bay frame x[-26.4,10.4], y[-28.5,-22.7], z2.6..27.7",
+      "family": "cyan/turquoise blue opaque painted frame",
+      "limits": "Actual front/frame returns supported by close photograph; not all rear box cyan, not glazing."
+    },
+    {
+      "domain": "Original deep panel backs within five frame bays",
+      "family": "muted blue-gray/dark glass appearance",
+      "limits": "Only original separately located recessed faces; no new mullions, no whole opening as transparent interior."
+    },
+    {
+      "domain": "Original central front brick boxes x[-34.5,-17.5] and[1.5,18.5], front y=-24; front lower right brick wing y=-32.5",
+      "family": "muted red-brown tile with light warm bond grooves where original separated faces exist",
+      "limits": "Whole front facets only; large crossing face neutral. Do not texture tile squares or introduce new bond geometry."
+    },
+    {
+      "domain": "Original left projecting front bay around x=-47/y=-29 and visible left-front plane y=-25; right secondary front frame x52..64/y~-34.15",
+      "family": "red-brown bay, cyan side-front surround/secondary frame where uniquely aligned",
+      "limits": "Street photo supports these near front parts only; west side x=-58 and rear remain neutral. Partial occlusion does not justify full wing paint."
+    },
+    {
+      "domain": "Original right upper clerestory front y=2 and front-facing roof slope",
+      "family": "muted red-brown existing frame and gray-blue discrete panes; restrained gray roof if uniquely front-facing",
+      "limits": "No back/side clerestory or whole roof extrapolation."
+    },
+    {
+      "domain": "Existing front terrain primitive x[-44,29],y[-65,-25] upward surface only",
+      "family": "muted grass green",
+      "limits": "Source proves post-renovation front lawn, not side/bottom of solid terrain, not central rear mound or all display base."
+    }
+  ],
+  "mandatory_public_limits": [
+    "Unknown rear courtyard/mound, back windows, side planes and broad horizontal roofs neutral.",
+    "No new geometry, facets, textures, signs, people, traffic lights or cars.",
+    "Source photo front domain confirms colors only, not accuracy of original 6186-triangle interpreted geometry.",
+    "Full-vertex and normal/primitive tests; incompatible large facets coherently neutral rather than colored wedges.",
+    "Original photos private, rights not automatically CC or redistribution permission."
+  ],
+  "palette_nominal_srgb": {
+    "cyan_frame": "#61B8CE",
+    "tile_front": "#98685A",
+    "bond_grooves": "#C9BBA2",
+    "recess": "#42545D",
+    "front_grass": "#738459",
+    "unknown_neutral": "#B8BAB6"
+  },
+  "model_qa": "Pending builder: unchanged original STL bytes, vertices/faces; all full-face domains; no diagonal wedges; ten views; actual scene/3MF material mapping; no claim source GO equals completed model",
+  "source_GO_sha256": "02adc29f950a2d978ff0c9bb13ab3ac0a3f8b2442a435639c3015274b6504e19",
+  "source_status_at_issue": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "status": "SOURCE_GO_APPLIED_MODEL_QA_SEPARATE",
+  "mandatory_domain_appendix": {
+    "path": "color-source-review-20261102/prehistory-museum-kangle/PREHISTORY-KANGLE-FACE-DOMAIN-CLARIFICATION-1820.json",
+    "sha256": "1067dd475a50ea8ccacaec9e89d7edd55443a267c81cd0344ec2c864df3b33f1",
+    "content": {
+      "status": "MANDATORY_FACE_SCOPE_CLARIFICATION_NO_GEOMETRY_CHANGE",
+      "parent_GO_sha256": "02adc29f950a2d978ff0c9bb13ab3ac0a3f8b2442a435639c3015274b6504e19",
+      "clarification": [
+        "GO primitive bounding boxes identify components, not whole-volume coloring authorization.",
+        "Cyan frame limited to front outer skin and photograph-supported recess returns; rear plane y=-22.7 stays neutral.",
+        "Green limited to original front terrain upward faces; not all display base or terrain sides/bottom."
+      ],
+      "source": "builder focused 1818 and direct follow-up 2026-11-02T18:19Z",
+      "count_delta": 0
+    }
+  },
+  "private_source_backup_receipt": "color-source-backup-landmark6-20261102-1822/PRIVATE-BACKUP-RECEIPT-1822.json"
+}

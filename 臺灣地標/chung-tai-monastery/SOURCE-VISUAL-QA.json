@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T18:28:45Z",
+  "mesh_sha256": "38db67265cb71f66e67c22eefc833fc374697ebb2c8471d2a4943abe2fc36d41",
+  "build_code_sha256": "d6c2ecd8f754a36c850ad97ec6b64685e2bd55aa22c319a44019f7aeb397ea48",
+  "color_code_sha256": "3b7f896b4bbb8f50c25b1c8369b2d83e38471c699550b051a673bfe2aa03b444",
+  "render_code_sha256": "25a82c183079814c5c3f0234145dbb714423a8fdc419b2ad3a01ed1249481b02",
+  "readme_sha256": "d5e5ca879e3f55e8df57fde9b0aea0730c05ae16e55b621280d62bd91464cff6",
+  "file_sha256": {
+    "model.stl": "8d71508dea4ad2d0de0cdd69ec14cecca8791ca21530602c01f3ffc05ed21f17",
+    "build_model.py": "d6c2ecd8f754a36c850ad97ec6b64685e2bd55aa22c319a44019f7aeb397ea48",
+    "colorize_model.py": "3b7f896b4bbb8f50c25b1c8369b2d83e38471c699550b051a673bfe2aa03b444",
+    "render_color.py": "25a82c183079814c5c3f0234145dbb714423a8fdc419b2ad3a01ed1249481b02",
+    "export_appearance.py": "47faf285ec82ef983bf394ec50ead60ac58d67a78c2d1b6173b0f3673fd9755c",
+    "validate_color.py": "1bfb536221e27cbbc45abd11203def9cd951d17fff5035eb81f7b26a0c6bacea",
+    "verify_color_scene.py": "30539980275a72617612e76b33ba1595013d26de4ca3e2f4c858cd50ba713c6a",
+    "color-mesh.npz": "38db67265cb71f66e67c22eefc833fc374697ebb2c8471d2a4943abe2fc36d41",
+    "palette.json": "36284f353a7752f5f00b32ae55762a5ce9ab9bf230dc59485259634e8dcbe68d",
+    "appearance-materials.json": "93e65897f16d9e71a3dbd488b26130324282f40c971dc5d8bea706a17745e31e",
+    "appearance.3mf": "295c7d00ae35a0847e6c286e1820e2550689a1ef9be2fcbcbdc8e49c8b6ecfe1",
+    "scene.blend": "cb727ed502fb729eab4ed5d58ae4c792d4dd4b457bb1ea7f911df6d71346924a",
+    "README.md": "d5e5ca879e3f55e8df57fde9b0aea0730c05ae16e55b621280d62bd91464cff6",
+    "COLOR-SOURCE-REGISTER.json": "10b95098d2b015c87865105f7d441db9a0b2bd08f7ac5af7c5479820dad9a322",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "b24d455ccf4ec049f9a6a6003734cf186d4ac0cf168ba3480826b288701a1da9",
+    "SCENE-QA.json": "f4d356ff2123bbd2f112ad405fb90541a862d9a384232fc8241f3688d7cb1963",
+    "DELIVERY-QA.json": "abfdfd62c1806c008f0a49e97be0c6bf52f6c076ca46eab4b239e520c357717d",
+    "FRAMING-QA.json": "43a60391928a289563e2d3d1f908e4a97a76ab65a5e9b5fa89d42a3b8f0f9df0"
+  },
+  "png_sha256": {
+    "preview.png": "70e98afc2bfc8af0b746993bfc45f55225a0f56ce2a942927d12febb19846c71",
+    "rear.png": "f631b458ab8f571dd3344e9f7f9d0e49f59925b3f142220b9aafb9f809157cd2",
+    "front.png": "cd1813f83078447a1fe65356a8a2afa57c601956c36796a7f719997d6d0904d2",
+    "back.png": "e396e62e1c959cd5fcc70c477e9501968a700de4b831c100c73beb3fa988f46d",
+    "west.png": "2c4620615b8c13e540678d6a4c1c5d4cd49bbcc5d651dfbb74110731f89cef79",
+    "east.png": "9527c6f7457dfb75feb7cdb57abe42daca760914730783dbe49195f28ddf0ccb",
+    "top.png": "f60a3b39756c6797da02ae6263c87d5a5dd302aacf3f4f462bf5e07f182b0be3",
+    "entry-detail.png": "18dea94cca28ff545d5f5dc6335eb1ce36146df4fd09ef4effd82e8d4e8fc5ee",
+    "corridor-detail.png": "bf7e7d327b0474a633df6e09ec504f43d6c0ca83f855d2806bf2b7f106177fe9",
+    "roof-detail.png": "15173a3fb8f2eb9c0f33be87f737d2ede4e70f9e4a03d695fb5b323a97110a09"
+  },
+  "source_review_sha256": {
+    "chung-tai-monastery-INDEPENDENT-FOCUSED-COLOR-REVIEW-1800.json": "f4b81ffcb3a7046a1a4b2e3d14b8262f1df38b8f38e95789aab8d2252b66e71b"
+  },
+  "numeric_checks": {
+    "original_triangles": 13668,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "build_model.py": true
+    },
+    "seven_material_counts": [
+      429,
+      5546,
+      116,
+      191,
+      2178,
+      82,
+      5126
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_vertex_serialization_max_delta_mm": 4.996778102395183e-09,
+    "3MF_unit": "millimeter",
+    "rear_low_3219_faces_all_neutral": true,
+    "pink_side_facing_faces": 0,
+    "dark_roof_horizontal_faces": 0
+  },
+  "actual_visual_review": {
+    "preview": "PASS full model/base and readable caption; bounded domains coherent",
+    "rear": "PASS full model/base and readable caption; bounded domains coherent",
+    "front": "PASS full model/base and readable caption; bounded domains coherent",
+    "back": "PASS full model/base and readable caption; bounded domains coherent",
+    "west": "PASS full model/base and readable caption; bounded domains coherent",
+    "east": "PASS full model/base and readable caption; bounded domains coherent",
+    "top": "PASS full model/base and readable caption; bounded domains coherent",
+    "entry-detail": "PASS intentional local framing; no material wedge",
+    "corridor-detail": "PASS intentional local framing; no material wedge",
+    "roof-detail": "PASS intentional local framing; no material wedge"
+  },
+  "source_findings": [
+    "Official daylight front photograph and original code/preview actually inspected; failed architect nighttime source excluded, not used to substantiate rear colors.",
+    "Source-supported front pink-gray stone, existing front lotus gray-blue opaque backing, pale ribs and restrained gold original frame. Rear lotus and sloping shoulders neutral.",
+    "Only front-facing original roof surfaces dark gray, horizontal/side/back surfaces neutral. No misleading triangle wedges observed in any of ten actual images.",
+    "Complete crown petals/jewel/finial gold family explicitly same-component inference, not each unseen face photo-confirmed. Existing front staffs pale continuity, no new symbols.",
+    "All ten final render views individually inspected including crown/window details; adequate framing and readable captions.",
+    "README/register disclose original geometric approximation, source boundaries rather than real paint seams, seven materials not tested print/slicer scheme."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen seven actual shaders PASS",
+    "delivery/framing PASS"
+  ],
+  "limitations": [
+    "Original approximate shape unchanged, not newly surveyed.",
+    "No exact current or dated as-built color claim.",
+    "Seven material families not tested filament slicing; no physical print.",
+    "Private sources excluded from public package, no blanket copyright license."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}

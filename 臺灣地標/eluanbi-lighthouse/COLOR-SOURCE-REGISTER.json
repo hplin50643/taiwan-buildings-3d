@@ -1,0 +1,74 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "eluanbi-lighthouse",
+  "rights": "Official public exterior references; express CC not verified. Private originals only, no public source image/textures, no commercial-rights warranty.",
+  "capture_dates": "Upload paths are not verified photo capture dates; no exact current-condition claim.",
+  "constraints": [
+    "Original geometry and STL unchanged, count0",
+    "Lantern drum mixes white panels and glazing, not all blue glass",
+    "Unknown rear and unproved platform/roof faces neutral"
+  ],
+  "original_faces": 9564,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T18:38:00Z",
+  "approved_mapping": [
+    {
+      "region": "tower",
+      "geometry": "center16,-5; tapered shaft z5.5..61.5; corbels/gallery existing primitives",
+      "color": "off-white",
+      "limit": "Same tower component continuity, not every hidden face individually photographed."
+    },
+    {
+      "region": "lantern",
+      "geometry": "existing drum z78.1..89.7 and blind relief panels",
+      "color": "pale gray-white",
+      "limit": "Photographs show white cover/frame; no full blue glass."
+    },
+    {
+      "region": "cap",
+      "geometry": "existing roof z90.3..95.3 and finial",
+      "color": "dark charcoal",
+      "limit": "Do not extend dark cap down onto white lantern."
+    },
+    {
+      "region": "low building",
+      "geometry": "front five arches at y-6; perpendicular three arches near x6.7",
+      "color": "off-white exterior, dark recess backing",
+      "limit": "Original blind arches remain solid; not reconstructed transparent interior."
+    }
+  ],
+  "mandatory_public_limits": [
+    "Large horizontal keeper roof and unseen rear walls neutral.",
+    "Display paving/base not green lawn or blue sea.",
+    "No new diagonal lantern lattice, windows, or texture.",
+    "No new geometry, splitting or centroid-based diagonal color boundaries.",
+    "Use full vertices and actual original surface to identify regions; crossing faces neutral.",
+    "Source-scope pass does not establish model/material or ten-view final QA.",
+    "Photos private and not texture; official readability not a blanket license.",
+    "No exact current color or physical printing assurance."
+  ],
+  "palette_nominal_srgb": {
+    "pale": "#D8DBD5",
+    "stone": "#93968F",
+    "shadow": "#454945",
+    "cap": "#303837",
+    "unknown_neutral": "#B8BAB6"
+  },
+  "source_GO_sha256": "e74ed6c691948133cf029cd99842435287729be974133d039fab22501240e134",
+  "independent_review_sha256": "3760f415a31de1c0cc009ddda9962e333b1b6316064dfbc9fe669762243626ae",
+  "sources": [
+    {
+      "sha256": "386295d3baa5016ce3c97a45b74d5bfa6977901ac7589adf861ecc52ddde57cb",
+      "url": "https://www.taiwan.nps.gov.tw/upload/cmImage/2025-04-15/512f337b-2414-46de-8bc2-63425c32f238/49_93c7d1929e136bef040caf201b28def4_comp_webp.webp",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "3838351cebae0a5a0e0946cd6e3fe08997874322701100d8d3b5ae01333500d8",
+      "url": "https://www.taiwan.nps.gov.tw/upload/cmImage/2025-04-15/05721669-e550-4639-87b2-f6f308dfd50b/49_e6fa36810d2e00d2b27ad723f48a7574_comp_webp.webp",
+      "actually_viewed": true
+    }
+  ],
+  "source_stage_pending_historical_only": "Source issue preceded model. Final model QA separately in COLOR-FORMAT-GEOMETRY-QA, SCENE-QA, DELIVERY-QA, SOURCE-VISUAL-QA.",
+  "original_photographs_public": false
+}

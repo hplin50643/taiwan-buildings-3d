@@ -1,0 +1,29 @@
+{
+  "original_STL_sha256": "955fa5a6f1c348668930e03d7cea8edef6b02fae4dab5ee06c192bafa0667b2a",
+  "triangles": 26702,
+  "materials": {
+    "0": {
+      "name": "Source-supported pale shell",
+      "hex": "#CFD3D0",
+      "face_count": 17572
+    },
+    "1": {
+      "name": "Original glazing backing appearance",
+      "hex": "#596E70",
+      "face_count": 1079
+    },
+    "2": {
+      "name": "Existing gray mullions",
+      "hex": "#727B7A",
+      "face_count": 3059
+    },
+    "3": {
+      "name": "Unverified neutral",
+      "hex": "#B8BAB6",
+      "face_count": 4992
+    }
+  },
+  "geometry_changed": false,
+  "assignment_method": "Full vertices+center+normal original primitive matching; .018mm tolerance for original simplify(.006), not building precision.",
+  "limits": "Front/left/right shell and original closed glazing, four approximate original funnels pale; whole horizontal roof and rear/stagehouse neutral. No grass, environment reflection or yellow interior light."
+}

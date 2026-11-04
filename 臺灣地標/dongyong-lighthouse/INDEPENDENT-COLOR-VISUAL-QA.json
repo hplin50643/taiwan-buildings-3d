@@ -1,0 +1,98 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T18:02:45Z",
+  "mesh_sha256": "92c48a3209a5af1e91f2a278d1f7407bec63e4f8b8f1de9198c0bfa2ed25c6a2",
+  "build_code_sha256": "9cede3b6bb0eceac12d4bf5d5b0b651e072c0881bd3e0b40591e9471c1cb661d",
+  "color_code_sha256": "e783d8ec6c68f025b2fcdb1c1d17d4ab84dfbbd1783470cfc0765bb2014e3671",
+  "render_code_sha256": "707e5c48df48d1dc780426e053eb6f5cb512f2d7879e891913c1de1ae5b33b88",
+  "readme_sha256": "572a3f55790d1725239e6b4c361f7ba0c326dd16f5f5217ac197eebe1f44bc64",
+  "file_sha256": {
+    "model.stl": "f7bc48b52757cdfde579736c1ba7ad93bf72f9cb8fcb7ddf06eb47411e49771f",
+    "build_model.py": "9cede3b6bb0eceac12d4bf5d5b0b651e072c0881bd3e0b40591e9471c1cb661d",
+    "colorize_model.py": "e783d8ec6c68f025b2fcdb1c1d17d4ab84dfbbd1783470cfc0765bb2014e3671",
+    "render_color.py": "707e5c48df48d1dc780426e053eb6f5cb512f2d7879e891913c1de1ae5b33b88",
+    "export_appearance.py": "63a5dda12abb5c0796c86e1f90e3a2c34ebfc9adf4d0e1b7c9a48ba03f30c4ff",
+    "validate_color.py": "dc2becba1189a7e7214eb1795367e32b6b176598cc2d80fdef2a6abbfff81880",
+    "verify_color_scene.py": "1c29b4c86841ab8d4c50d8c6adf440b4a7c69c13bb0c685937b2a0ab7fb7f38d",
+    "color-mesh.npz": "92c48a3209a5af1e91f2a278d1f7407bec63e4f8b8f1de9198c0bfa2ed25c6a2",
+    "palette.json": "91348d77b9bd53c5b88c64f64f57c20ae2f6b7cf326f5ce58b30d91803efa8ea",
+    "appearance-materials.json": "f128b3156a272c201bd6d96d399b1b2918d14830bd829fb23fa32f2008f5e92a",
+    "appearance.3mf": "89e7de357f664d5a342796360c635be607e4aeae051820406adb5661bdacbbba",
+    "scene.blend": "f72d2f684bf6833b208a5703f5ccf7a7dc4173ec04de673d47b2d11c1859ff11",
+    "README.md": "572a3f55790d1725239e6b4c361f7ba0c326dd16f5f5217ac197eebe1f44bc64",
+    "COLOR-SOURCE-REGISTER.json": "4e4f20f57ed412e8cf0472469a810304cb59fcb2b8c2b0e45f0ca53e0612951b",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "658d9352d2535d3f96cd96b3359ab3c23738a5983546554e3bce1fbda513b597",
+    "SCENE-QA.json": "a839aaf13c25f804b59b2ab5e15d07d6e71553fd25ecdfd5ea57d27553a86b52",
+    "DELIVERY-QA.json": "f1ba4facbea16a82f472a129365cfae77a4d6f2e414181cc7a41a787469fb6c6",
+    "FRAMING-QA.json": "ef66536f825d1407462bdfc879b7a3e2d4bb75473aeacd0ae2471120fb92100b"
+  },
+  "png_sha256": {
+    "preview.png": "e1e910fc536f7e0d0c0b8c4fea6ed9a464d8b33016f235a911295202c2c370ab",
+    "rear.png": "44ff2c1a51a96d939d7ee3107d07f8f483a29c79e4ab1fca497b7a57c5be6d3b",
+    "front.png": "76955c67b1fbf681d91e3fe24b441bb28010ee15d1887a0c28114966c3a9a4e6",
+    "back.png": "12c801cabcb032af38b77985a1328f40eeeee6446969f986b8494a63b4d35d7a",
+    "west.png": "9990ff004ecdf85ee6e888b46e1718bb0da4f5127fa2307a3959a04852537d06",
+    "east.png": "fb25e24a5e14479d8e0c4aec43932ef436ece30f8aa762580fc8e9e8dcb444c0",
+    "top.png": "2ebbea1d01deb1849b4904b245b5e8c0ad9fe92e479cc84779a481021dd25005",
+    "entry-detail.png": "3a739f294d341d3deab0d7c492d3a4a7056eab70d612306ffedb7c9bc5c9c0db",
+    "facade-detail.png": "d4ce95d10f666bf90f44c0c429032186b01370798821fa9764049a5074dfcb59",
+    "roof-detail.png": "1ca587ba6db83825d02cf4d1104928e3006275cd82598c77ba0cb7eaeb84ac18"
+  },
+  "source_review_sha256": {
+    "dongyong-lighthouse-INDEPENDENT-FOCUSED-COLOR-REVIEW-1746.json": "6db288a529400506d3b9de266694984e21ca34c6eac1fcbee7975387ff79a55e"
+  },
+  "numeric_checks": {
+    "original_triangles": 11696,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "build_model.py": true
+    },
+    "six_material_counts": [
+      8404,
+      1720,
+      591,
+      404,
+      8,
+      569
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_vertex_serialization_max_delta_mm": 4.995115432393504e-09,
+    "3MF_unit": "millimeter",
+    "gallery_outer_vertical_faces_stone": 128,
+    "lowest_base_faces_52_all_neutral": true
+  },
+  "actual_visual_review": {
+    "preview": "PASS full model/base and readable caption; bounded domains coherent",
+    "rear": "PASS full model/base and readable caption; bounded domains coherent",
+    "front": "PASS full model/base and readable caption; bounded domains coherent",
+    "back": "PASS full model/base and readable caption; bounded domains coherent",
+    "west": "PASS full model/base and readable caption; bounded domains coherent",
+    "east": "PASS full model/base and readable caption; bounded domains coherent",
+    "top": "PASS full model/base and readable caption; bounded domains coherent",
+    "entry-detail": "PASS intentional local framing; no material wedge",
+    "facade-detail": "PASS intentional local framing; no material wedge",
+    "roof-detail": "PASS intentional local framing; no material wedge"
+  },
+  "source_findings": [
+    "Official daylight photos49/41/46 inspected in focused source review;49 re-viewed at full size for gallery edge. Sunset12 used only for component identification.",
+    "White cylindrical tower and existing rails are explicit same-structure continuation, not every hidden surface separately photographed.",
+    "Lantern drum is pale neutral generalized opaque appearance, not twelve invented blue glass sectors or internal optics.",
+    "V2 gallery outer vertical128 facets radius17.7,z61..62.5 now stone family consistent with photo49, excluding lower white ring and rail posts.",
+    "All ten V2 views individually inspected after completed render: no artificial diagonal color wedges; terrain/base neutral, white staircase domains follow original planes, captions readable.",
+    "README preserves original coarse geometry, no vegetation/water/rock textures, no physical printing claim."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen six actual shaders PASS",
+    "delivery/framing PASS"
+  ],
+  "limitations": [
+    "Original approximate shape unchanged, not newly surveyed.",
+    "No exact current or dated as-built color claim.",
+    "Six material families not tested filament slicing; no physical print.",
+    "Private sources excluded from public package, no blanket copyright license."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}

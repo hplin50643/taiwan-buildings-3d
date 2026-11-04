@@ -1,0 +1,81 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "penghu-tianhou-temple",
+  "sources": [
+    {
+      "path": "color-source-review-20261102/penghu-tianhou-temple/official-1.jpg",
+      "sha256": "f6e957573bdfb56a925064c99de1e25e0cc54db2e6df6ec77a51335b1fe6acd3",
+      "url": "https://www.penghu-nsa.gov.tw/FileDownLoad/TravelInformation/NotSet/20140820100502345.jpg",
+      "actually_viewed": true
+    },
+    {
+      "path": "color-source-review-20261102/penghu-tianhou-temple/official-2.jpg",
+      "sha256": "5e71dd4892e0b9abe2dc5f92265fbe75c93e7e4bd1f0af7ffd7c2018bb92ef1b",
+      "url": "https://view.boch.gov.tw/NationalHistorical/Images/Items/middle/XA09602000282.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "audit": {
+    "path": "color-audit-landmark7-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
+    "sha256": "7cc2a55c613b5c3a67949aa3eaf4a150235334760a7cef133f3fa51aa681ffd4"
+  },
+  "rights": "Official public exterior references; express CC not verified. Private originals only, no public source image/textures, no commercial-rights warranty.",
+  "capture_dates": "Upload paths are not verified photo capture dates; no exact current-condition claim.",
+  "constraints": [
+    "Original geometry and STL unchanged, count0",
+    "Unknown or cross-boundary facets neutral, no new texture patterns",
+    "Temple two photos differ in roof apparent color/lighting or period; no claimed roof version chronology without evidence."
+  ],
+  "original_faces": 51852,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T18:38:00Z",
+  "independent_review": {
+    "path": "color-source-review-20261102/penghu-tianhou-temple/PENGHU-TIANHOU-TEMPLE-INDEPENDENT-FOCUSED-COLOR-REVIEW-1836.json",
+    "sha256": "347dea2190e4f5d6928ad2168b4b658765b4efe7b3a37fd3ebadafbad71403ee"
+  },
+  "approved_mapping": [
+    {
+      "region": "front stairs and columns",
+      "geometry": "existing polygonal apron and x-27,-10,10,27 columns near y-52",
+      "color": "muted gray stone",
+      "limit": "No carved-detail geometry added."
+    },
+    {
+      "region": "front recesses",
+      "geometry": "three existing portal recesses and low-wing actual arch cuts",
+      "color": "dark shadow",
+      "limit": "Not evidence for a reconstructed red door leaf or interior."
+    },
+    {
+      "region": "front panel frames",
+      "geometry": "existing full frame/lattice relief only when uniquely separable",
+      "color": "gray stone",
+      "limit": "Whole low-wing body not red; visible red panels have smaller boundaries absent in original mesh."
+    }
+  ],
+  "mandatory_public_limits": [
+    "PREVIEW/README MUST prominently say: 局部石材與陰影示意；屋瓦及細部彩繪未完成。This is not full-color exterior reconstruction and must remain flagged partially colored, not silently counted as fully restored.",
+    "All roof skins and simplified crests neutral: official photos show materially different pale gray versus red-white/green-end appearance without established version/date resolution.",
+    "No arbitrary orange family, red-white tile stripes or green/gold dragons.",
+    "Red facade infill only if complete original surface uniquely matches an observed red panel; otherwise neutral, never whole fused wing red.",
+    "Side/back/courtyard and rear pavilion not extrapolated from front photos.",
+    "No new geometry, splitting or centroid-based diagonal color boundaries.",
+    "Use full vertices and actual original surface to identify regions; crossing faces neutral.",
+    "Source-scope pass does not establish model/material or ten-view final QA.",
+    "Photos private and not texture; official readability not a blanket license.",
+    "No exact current color or physical printing assurance."
+  ],
+  "palette_nominal_srgb": {
+    "pale": "#D8DBD5",
+    "stone": "#93968F",
+    "shadow": "#454945",
+    "cap": "#303837",
+    "unknown_neutral": "#B8BAB6"
+  },
+  "model_qa": "Pending original STL bytes/vertices/faces equality; full-face region tests; ten-view inspection; scene/3MF material QA. Source GO is not completed model.",
+  "source_GO_sha256": "8025ca56ced53335cdd2594a3b3326a6fd29949a984a9b5f7ff7aad3e6dc364b",
+  "partial_color_incomplete": true,
+  "model_QA_pending": true,
+  "private_source_backup_receipt": "color-source-backup-landmark7-20261102-1838/PRIVATE-BACKUP-RECEIPT-1838.json"
+}

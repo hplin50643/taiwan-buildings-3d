@@ -1,0 +1,70 @@
+{
+  "slug": "chimei-museum",
+  "original_faces": 17960,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T18:02:00Z",
+  "sources": [
+    {
+      "path": "color-source-review-20261102/chimei-museum/official-front.jpg",
+      "sha256": "490c9e3afb4ddb8647df15f478d566ec382bf7c719e7a349941f0743b5567794",
+      "url": "https://www.twtainan.net/content/images/attractions/17368/1024x768_Filedata635593365562299095.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "audit": {
+    "path": "color-audit-landmark5-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
+    "sha256": "c56327e3c5a659a7db974c09d2022a9b1d7b5687355657000e735596823a1650"
+  },
+  "independent_review": {
+    "path": "color-source-review-20261102/chimei-museum/chimei-museum-INDEPENDENT-FOCUSED-COLOR-REVIEW-1800.json",
+    "sha256": "63e8fa18799c19fbf8f4e9854d64f29ee4eca545a055e2a2f7171065b86be99b"
+  },
+  "approved_mapping": [
+    {
+      "part": "Front stone envelope",
+      "coordinates": "front=-Y; wings y≈−17, bays−18, portico columns y−25 and pediment front≈−28.5",
+      "color": "off-white/light gray family",
+      "limits": "Backlit image supports broad family, not precise calibration. Existing columns/relief only."
+    },
+    {
+      "part": "Front openings",
+      "coordinates": "Existing two front rows and portico recessed doors",
+      "color": "muted dark gray shadow/backing",
+      "limits": "No all-wall blue glass or invented mullions; actual cut faces only."
+    },
+    {
+      "part": "Dome",
+      "coordinates": "Original ribbed dome centered0,−6,z27.6..36.2",
+      "color": "restrained gray family on visible front half",
+      "limits": "No gold claim. Back half neutral unless explicitly documented same-component extrapolation."
+    }
+  ],
+  "mandatory_public_limits": [
+    "Official-front backlit photograph and original code/preview actually inspected. Museum-banner.jpg is interior and excluded.",
+    "Tiny summit angel insufficient color evidence: entire original simplified statue/finial neutral, not golden.",
+    "Broad horizontal roof, side/back walls/windows, display plinth neutral; no garden/fountain/persons/nearby buildings.",
+    "No new geometry or facet splitting. Full-vertex surface tests, not centroid color bands; unresolved crossing facets retain coherent neutral plane.",
+    "Source availability is not publication/print QA or blanket photo redistribution permission. Private source photo not bundled publicly."
+  ],
+  "rights": "公開官照未證CC；原照私人保存不貼圖、不保證商用授權",
+  "capture_dates": "照片未確證拍攝日，色值不校準",
+  "palette_nominal_srgb": {
+    "front_stone": "#D8DAD2",
+    "dome_front": "#9DA9A6",
+    "recess": "#4B5755",
+    "neutral": "#A7ABA5"
+  },
+  "model_QA_pending": true,
+  "required_QA": [
+    "原STL bytes/頂點/三角一致",
+    "十視圖/材域獨審、全頂點域不造centroid楔",
+    "未知中性、來源不公開/貼圖",
+    "保留原檔不刪除"
+  ],
+  "unique_scope": "只有前石色/實際原凹洞與前半圓頂灰；後半穹頂/天使/平屋/側背中性，不採任何全圓頂外推或金天使。",
+  "source_GO_sha256": "b7c726e9acf16f64592fb18fc451e37b0947d82e8e4d65458f3a8d3b5fd07ef0",
+  "source_status_at_issue": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "status": "SOURCE_GO_APPLIED_MODEL_QA_SEPARATE",
+  "private_source_backup_receipt": "color-source-backup-landmark5-20261102-1802/PRIVATE-BACKUP-RECEIPT-1802.json"
+}
