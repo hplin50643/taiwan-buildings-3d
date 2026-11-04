@@ -1,0 +1,50 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_PARTIAL_COLOR_SCOPE",
+  "reviewer": "parent independent of implementation worker",
+  "reviewed_utc": "2026-11-02T20:21:00Z",
+  "photos_actually_viewed": [
+    "IAM.jpg",
+    "IMG_6007.JPG",
+    "IMG_6008.JPG",
+    "IMG_6009.JPG"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "original_code_read": true,
+  "original_triangles": 2904,
+  "geometry_unchanged": true,
+  "count_delta": 0,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "mandatory_notice": "磚牆／混材門柱未分色；僅山牆／橫梁／門窗／階梯有據色族",
+  "findings": [
+    "Original STL OBJ code bytes and complete triangle-coordinate multiset independently identical.",
+    "Whole mixed masonry facade, portal and colonnade shafts neutral. No z-threshold triangle wedge.",
+    "Only independently modeled pediment front, beam fronts, original discrete glazing and members, stairs assigned.",
+    "All ten final views personally inspected, unknown rear and roof neutral, no new arch rings, lettering or equipment.",
+    "Official2010 and undatedIAM color families; no current precise color claim. Private source and unprinted restrictions disclosed."
+  ],
+  "sha256": {
+    "README.md": "ba73d4d3b49dc09acf7121983b9fab98e9908182046ade92c1110d05b4ad6ee4",
+    "README.zh-TW.md": "ba73d4d3b49dc09acf7121983b9fab98e9908182046ade92c1110d05b4ad6ee4",
+    "COLOR-SOURCE-REGISTER.json": "27fd856f815c781cba157d4b3e7d8a44b2dccec80074cc41b089e4873e547013",
+    "colorize_model.py": "a0b5780fa9c431a95e5cc21b97bf93e06ea032098c8635d20e02973991163e11",
+    "render_color.py": "12466181c3e9a0e59372ab09abc27b16d29217263c96c88bcff4312b79e75918",
+    "color-mesh.npz": "43d638f8e0f6d2767785a7dfff45931085b6acd467056d3b9d363b9cfd0059ff",
+    "palette.json": "457fccb326e5e246cad456eb12928cb9b961863d656ceebe448e48863261f0de",
+    "model.stl": "d6e367ac30bb294c31a2f63968623a995955ee4aec07e2cbbce3bf502c088e57",
+    "model.obj": "50f6313ae8eb8a53d7e6ac30fd2839e96cc9cfcdba8eea4a47688540b6fa2faf",
+    "build_model.py": "7db561be6eca803d45f59b2172e1ac0d8e67c06aacf3029d40d6de0b0a4e0b78",
+    "preview.png": "3d09bd8e207e786f810bca8f0c4cf227c22f7f615239d4788d1589579ae90dee",
+    "rear.png": "3ca864fb001e9a4adc757a530952d57c750896e704161fea275d14dbebb4c214",
+    "front.png": "7f6ad60819eac8efb1b35f4f11216ff3ef22dc7c86e53c2f8837ac34d097af1a",
+    "back.png": "8a1c81fddc6d22ee3c0737bf1320a0522e07c3e2bea972b0b48ce57c6ee6731d",
+    "west.png": "43dc98559122de23f48b1c2bff8638d76fff99e187cfaeab63bbf202c4220ce4",
+    "east.png": "bc65afc69f3c16188883217733fd4f92fffff2a10ea0ea98ec3c36005b19e77c",
+    "top.png": "859e1468958c4da4bc576f5e98bdc87560809ff731c44f2a9ec0deac32cee52e",
+    "entry-detail.png": "4ffa5cce292d3ed157a83f17db614afc94041fca5a5f92ce5c83cb02df7abf06",
+    "facade-detail.png": "521e1412736359075c353752fcf4597d6f79611d9ba1b6c3e0c537a0019a7813",
+    "roof-detail.png": "4f73822ca5cce469b30a4b9f78c28e16a2b10040dbee87d0fef1deed86c257d4"
+  },
+  "identity_report_sha256": "75b4e759ac774e651c1783e6f7384d43744f3b55c0fb216a5ce22ac0a0827de4",
+  "domain_report_sha256": "f6b4659cfd78f13c5f4fd66630a8eafb0673930f1197f57b26830d530694ca60"
+}
