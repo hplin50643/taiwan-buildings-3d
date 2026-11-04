@@ -1,0 +1,90 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:7wholemodel views framed and3intentional details;complete stepped frame front lightgray.",
+    "Bothsloping edges andBoolean fragments preserved;frameinterior remains originalopen geometry,not filled.",
+    "Mainbrickwall curvedbalcony columns glazing roof sides andback remainneutral."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 3794,
+  "material_face_counts": [
+    28,
+    3766
+  ],
+  "connected_coplanar_domains": 929,
+  "original_obj_present": false,
+  "original_files_retained": 19,
+  "file_sha256": {
+    "README.md": "5f43afd23a807cd22d99eece9bdfa5e09725443051239ccd818dd4316190bb73",
+    "README.zh-TW.md": "5f43afd23a807cd22d99eece9bdfa5e09725443051239ccd818dd4316190bb73",
+    "model.stl": "8e721a102e0deb7477154f65a1f0588f1d3dd029a2990489c1bf9386476b45ca",
+    "build_model.py": "9472e1290ce03677b1e5ea494dd41019b6dcfe6e8a3955105e895b6318d765e0",
+    "colorize_model.py": "d78f28c16011eb33fac07985d3af3e6c79eb8ddb5bdbea185a9d75863296750f",
+    "render_color.py": "f41edf2f13c99e70b79b8488ec41d76565907ade4beb6ea80a2db8723f2a75b2",
+    "verify_color_scene.py": "92c965350420762a1a4a1218a10158201d26e5a84e30fc7b39429fa9d0c9f169",
+    "validate_color.py": "6899e5f28e64aff1da3d264437bcba856b28bf0bf7490287aa13c8cf29b8261e",
+    "color-mesh.npz": "1970e6a3658e53326710da910763372458e12363574c2dde8f04bb479526e595",
+    "palette.json": "5ec338bc65ec2efb6b76a22635d0f15c414a67b386ca8b993e2d218b064a0b68",
+    "appearance-materials.json": "79d343cc3ce22ff9ae48dc219f0f3c17420ac814eb6e350acf55d633ee67b121",
+    "COLOR-SOURCE-REGISTER.json": "ddff647f28bc96785f54c82f35466239e0099cfc86a9b7c9c3a93ad9c8f48aa1",
+    "appearance.3mf": "413b93f02f49e052c0a16757bd83032cf5dafcabfe07a5ca1eba2611f45bb041",
+    "scene.blend": "21dd5e93a0c2ca0f1d5898562e224e1861477276aeb6473c5b081dce398fc967",
+    "preview.png": "6e029f3f6575cf0dc46873767c4d80e188463bc362bc87d70f3f0d3d177696ba",
+    "rear.png": "bb39cfd12c7c84d6f11b8c76e9e6d888376b44b23b888d0fd29e29b2b97f4f11",
+    "front.png": "e6b69139354994f188adf0050f0a4ffe4b5cefa8521967a85b17fbbd7e28f9bc",
+    "back.png": "a4dafc7740726634ed8ce2cb8c1402e23520cfbb91d2595f21ad1de4c67a3d30",
+    "west.png": "613cce975b455a3139fc10f8aeac030b9b5b949da99d081d03b3b5143a452ede",
+    "east.png": "097b7703c6d5aa7e5270b968201bc5a7422f54ceb6dc89b7cd63a51a2791bd72",
+    "top.png": "4eb7d23820d5a634e92f349cfac819fb80ec8badf201ddbcacb5e87b3e48b7f0",
+    "entry-detail.png": "92da0883305af5b094418f2f6063790c703b8a4debb302442573054dcb8a30a4",
+    "facade-detail.png": "37c28c79983308ece4dd688854661bfe9dec5d58f953bc8836ce0d75c38b790e",
+    "roof-detail.png": "77eb6e0d1ad5d5047df4e7f78c5f01150f70d960e182947d8e330bc06ec9614d"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "d39ef68fea1ebaff694234fea6affe73e75d74e9a252ebfc4d883c3e5e37d11c",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "c03eb4263bd2e27146474e612db5ecef188255a96855047567585cedea0af69d",
+    "SCENE-QA.json": "6f754b6238e0727bee585a14b761d14eabeff8ab8051af23aac2a281b5e33974",
+    "FRAMING-QA.json": "46e4b5b9fce034087efb1da831ca41d75d034963f0604464a50cdc277641d1f1",
+    "DELIVERY-QA.json": "c94088a3d8d9ac3918dc699bafc8a50316a420a161f8df409f1889d012caec3e"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "b700a6c4c3df50f2361c40a48de251d9f5c7d94811c043d657b88029eae47f6a",
+    "ORIGINAL-RETENTION-QA.json": "db805e04dcc75f19b881318877c19dc624f9643a8b2ba96978e64ff8d1001575",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "42bdcb00526b1cd7bd49713173686bcc58cca455654e1cd3c78dbc76f1de938b",
+    "INDEPENDENT-DOMAIN-0223.json": "89d86801e1444cda053cad91db0abb7f60ab9c01642cbafa0a6ec63080126423",
+    "INDEPENDENT-IDENTITY-0223.json": "ad7cb81ef7335a0cd08355f29d4d959ec7a1759af898eb55e2aa4c0c69426616",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "07d50e6100d30254cea56a37235204cacbbe7527217ca5ff7b8af96788ddbdfe"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "b32708073e87102f00c87004983ad45ef730439dfa108646323793e1d8cc9ae6"
+  },
+  "limitations": [
+    "Only28framefrontfaces colored;other3766unknownneutral;notfullcolorcompletion.",
+    "Captureunknown;report/formyear notcaptureproof.",
+    "Original19files retained,STL/buildunchanged;noimmutableOBJ.",
+    "Not testprinted;two materiallabels notvalidatedmultifilamentslicing.",
+    "Original approximategeometry notnewlycertified."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T02:25:26Z",
+  "parent_review": "Parent personally viewed both official PDF48 exterior photographs, original code, preview and final ten renders. Complete stepped large front frame only,28 original Boolean triangles pale gray; all3766 other faces neutral. Sloping sides and stepped cap fragments preserved without invented surface. Whole views framed and closeups deliberate. Main mixed brick walls, balcony, columns, sides, glazing and roof remain neutral. Unknown source capture dates and geometry accuracy not newly certified, no full exterior color claim.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "NTUE Gym partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "NTUE Gym partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}

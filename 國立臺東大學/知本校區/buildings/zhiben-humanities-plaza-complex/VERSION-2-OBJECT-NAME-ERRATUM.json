@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立臺東大學/知本校區/buildings/zhiben-humanities-plaza-complex",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "Zhiben Humanities Plaza Complex partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "9de2ce44c6aa3b09397c6ef522d6d16c772419de7e667eee9e85ae702abe2287",
+  "new_3mf_sha256": "dbdd0fbfc2d2a83c7c135f513165ed4622b24a6331b058f7131e3df3cab5dbdc",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "3ca790e9da7f9699697adcc20ea7710e89b34ac54e40aa148a0c62c9debc67b5",
+    "validate_color.py": "f58f1298b054b5705449f3a6bfdd145b15309cde3b7762de92a7935e18207c6b",
+    "render_color.py": "7ef8dd109b192618fad1d9e0a5f5bce44f29fb21e7362d28d1995d2560458e09",
+    "verify_color_scene.py": "0d774831d47c102c331e55ab13c1ffb24c334d698975ab4722710ba69e22f038",
+    "scene.blend": "9b0e5595719c2264d52d8637a24802a4319cbfe9a7bc634577ff285b27d27f17",
+    "appearance.3mf": "dbdd0fbfc2d2a83c7c135f513165ed4622b24a6331b058f7131e3df3cab5dbdc",
+    "README.md": "c7082465b25c217357f1342209c0f7c04802aad4a72638b97b731da24bc16e90",
+    "README.zh-TW.md": "c7082465b25c217357f1342209c0f7c04802aad4a72638b97b731da24bc16e90"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "Zhiben Humanities Plaza Complex partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "03eb950225ee88fa07a04191a7f0fbb048bde2e506a929921b7864f9c7f7d9ab",
+    "scene_reopened": true,
+    "scene_sha256": "9b0e5595719c2264d52d8637a24802a4319cbfe9a7bc634577ff285b27d27f17"
+  }
+}

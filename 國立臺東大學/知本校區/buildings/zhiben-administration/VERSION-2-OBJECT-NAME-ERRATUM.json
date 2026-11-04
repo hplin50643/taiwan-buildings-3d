@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立臺東大學/知本校區/buildings/zhiben-administration",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "Zhiben Administration partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "5065c81ecafe09799afec9460216186b80d97b6825a0037589eb2672d3dd9fcf",
+  "new_3mf_sha256": "5c53b92c05cf15fc27559a71d5dff2ae43cbfffc006242f864fb4db9d6ef7b4c",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "9df308c8a2a1f13ffbca321006a26441bdc51d5b18cd23284b3dfe73adb0c0fd",
+    "validate_color.py": "6d60d91cd231f400ddab38ff775486e781e3a8f956cb6ac7426934261afdbb6e",
+    "render_color.py": "d1d9d70dfa718232540afcc546772bc8a31dbe7031250ad4d0e0310097401d33",
+    "verify_color_scene.py": "3cd1a3c1eb9bd02d8d85db5f41d9712ce38d5834ca6177c195a3034d76eba39a",
+    "scene.blend": "6f1d5f944867d87e54561ad0bdfa2802be2b265fa664500e47a03c2a5df7d7a3",
+    "appearance.3mf": "5c53b92c05cf15fc27559a71d5dff2ae43cbfffc006242f864fb4db9d6ef7b4c",
+    "README.md": "cde910f5fabcd7e682766f6298aa9c87c0e5c122c131fa532c2a4ba2584c07a4",
+    "README.zh-TW.md": "cde910f5fabcd7e682766f6298aa9c87c0e5c122c131fa532c2a4ba2584c07a4"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "Zhiben Administration partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "625329f0b9c7df5661e85a14122fc2632f018d50b505e4045fc5612739f22b88",
+    "scene_reopened": true,
+    "scene_sha256": "6f1d5f944867d87e54561ad0bdfa2802be2b265fa664500e47a03c2a5df7d7a3"
+  }
+}

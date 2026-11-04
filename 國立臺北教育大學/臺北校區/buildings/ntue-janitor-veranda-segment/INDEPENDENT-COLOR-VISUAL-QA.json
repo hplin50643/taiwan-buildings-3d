@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed all3visitor exterior photos,original code/preview and all ten final renders;parent separately reviews beforefreeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Four complete original narrow post/Yfront planes y-36.6 with finite xcenter±9,z10.5..43:18/16/16/18=68offwhite,844neutral.",
+    "Initial64domain failed coplanar assertion;formal0241sourcecorrection adds4original outerbrace triangles beyondbeamx±64 up toz43. Historicalfailedmapper/docs retained;no geometric change.",
+    "All211coplanar connected components uniform,no arbitrarypaint cutoff/sliver omission.",
+    "Stonefeet,sides/backs,beamfascia,brick/base mixedwall,glazing/doors,roofmoss and rearunknown neutral.",
+    "Whole7views framed;lowfront details show actual posts/Yfaces and distinct neutralfeet/beam.",
+    "Original912triangles/STL/build unchanged;immutableOBJ absent,privateisolated buildergeneratedOBJ only. Same3bay/4post visible segment,count_delta0,notfull historicdormitory or detachedtoilet/auditorium.",
+    "2012reported source date and2024article period differ,no2026current/repaircompletion orgeometryaccuracyendorsement."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "6c3287aa99f77ddd54c6770fcde5f97133ffcd3db5758ac665747782e4776c06",
+    "README.zh-TW.md": "6c3287aa99f77ddd54c6770fcde5f97133ffcd3db5758ac665747782e4776c06",
+    "colorize_model.py": "856aa5425e1d048c15a7d225d8826ea2f922fe890f41b4483d6e8b5a93d03a59",
+    "render_color.py": "141f369c3933cf026104b3f513e8dd5a5291e3f44ed9467be62367899cb36c66",
+    "color-mesh.npz": "7d35ba3b6b18c3f75b05f25288db814289bd73b6282ba424f32c28db464473d1",
+    "palette.json": "93a6eec7d12080f3b61b4f6c42769f9e8372d8f08b7e5218f43737ce25054ea4",
+    "appearance-materials.json": "36804cd56192f9fc9649b56dfc025865e2f5c89ec6915899f4efb7a02351ab5c",
+    "COLOR-SOURCE-REGISTER.json": "d4a2a5a94db7894f68ce61e8dde1a40ab765963aa1b342004c8de9d9ce82ef08",
+    "model.stl": "5911c359bf430b39188165357ecb05ff66d2a2b016b552a73edbbc1ba6ad0410",
+    "build_model.py": "abfaedf2d5eabf20df12cd9b80c9f1d2919d1015c5dc6944f29be841959aeea1",
+    "preview.png": "e295d91b0aecff2d191d2a92140e1184d5672b3ac49098047be679b0435ff48a",
+    "rear.png": "453060f9777e44b4a00adf0349d3a42c1f96c987633ed9db6fdb4fbcc6cfc3ed",
+    "front.png": "1c3b0d25a7a166102b3ed0d70da5b25dbcb64e225fb6754fdb59205ecebe0363",
+    "back.png": "197faeb4dc61a49b8a9f8cc5ae981abb22e0e41f7da85af191cce4626e4f7009",
+    "west.png": "f598a5e2e07bec2d13b6741fe9f2d412291ef78a15273d1f642e415ba4fa32ce",
+    "east.png": "36c8e79661b83ed30778998789f97575199f80f47ae1396ea9fa2d86f250aabf",
+    "top.png": "7630cff1ffd9d558bb463bd3dbb1eb842cd2651dc2fc78dbf94882beadafe404",
+    "entry-detail.png": "c7005853de9278c977b4fd9751c84244d1868aa38e0201f9a7e6bbc8619e545c",
+    "facade-detail.png": "1beb18e4c412049e48906b7361672d9be3870cc3c01ca42d1db11f18d19cdd65",
+    "roof-detail.png": "b05f6c81b5f907964c4ccb9aeade57bf67dee9e924f58a8c04ab148fbe0b272c"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "bbf706e74b761e29cdb004b71905084e603c3e2b2e46a0221eca8192a0a53ce4",
+    "SCENE-QA.json": "9f457d6b552fc657c3c7af80d61a70411ce93becdca82811ad3b60afd754a87e",
+    "DELIVERY-QA.json": "9dbc84245582af43045d287990985ffda648997f5cfa2914f22fcec47969259d"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "b406424f0685dd870abac6243f302328ed3762d14005bf093efe5127f98efe37",
+    "ORIGINAL-RETENTION-QA.json": "3ad8c5efa34d33af357fbb6a283ba66fbec1e1895b5693d33f652d4452379f8e",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0243.json": "fc8acd8d00db67af2a9007887fcdab24146ed1eea12ecc5ef2c8e9d247367e43",
+    "INDEPENDENT-IDENTITY-0243.json": "8f566e3a9a7e3927d8063b7d69737124c71cfb8e238900a6a01f770ef1861fb2"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T02:46:30Z",
+  "parent_review": "Parent personally viewed three visitor exterior photographs, original code, preview and all ten final images. Four complete original column/Y-brace outward planes18/16/16/18=68 gray-white,844neutral. Initial sourcez42 bound omitted4 outer original fragments; coplanar QA blocked rendering, parent/researcher/worker fullplane independently found68, formal0241 correction approves completez43 domain. History retained and no geometry edited. Whole views fit and closeups deliberate. Bases, side faces, beam, roof, mixed brick walls/windows remain neutral. Selected three-bay four-post historic segment only,2012/2024 references not single-date/current2026 or full housing."
+}

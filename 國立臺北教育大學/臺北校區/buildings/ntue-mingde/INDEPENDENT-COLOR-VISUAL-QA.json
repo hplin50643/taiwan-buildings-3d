@@ -1,0 +1,93 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:7wholemodel views framed and3intentional details;shortend vertical fascia mediumgray only.",
+    "Original staggered circles androofshape retained;longfascia walls windowbacks neutral.",
+    "No diagonal colorwedges;limited2face scope visibly preserved."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 2150,
+  "material_face_counts": [
+    2,
+    2148
+  ],
+  "connected_coplanar_domains": 552,
+  "original_obj_present": false,
+  "original_files_retained": 20,
+  "file_sha256": {
+    "README.md": "d9c59d73ef216922fb2868e0ead909e5eff47a4682efa995f515ba186016a144",
+    "README.zh-TW.md": "d9c59d73ef216922fb2868e0ead909e5eff47a4682efa995f515ba186016a144",
+    "model.stl": "968dfdd9cbbe8b96268f737ae5cda3cc66ff890f8eeccb83d54a3723cd5fa8b8",
+    "build_model.py": "6fff902a3fbddb641bd2a29ff129298f5ad719aae34b1d1b95ac012ba45a9e25",
+    "colorize_model.py": "e51031882db72dcf88217c7a8f7e682e48da5230fb652135ebe8df4ec8eecb62",
+    "render_color.py": "27acb341f4a3558fec4fe9fd6321759db1130fbf4ec16c171516e8d28e1897e8",
+    "verify_color_scene.py": "12a4f538f5c119a08a86a836fcd1f56bfc9e5109e7dd7a4145b459d504144adb",
+    "validate_color.py": "3ab6eeddd37d4b15b28aa7d05525c271de6d6cf1d23e546471ad66227f2f39b3",
+    "color-mesh.npz": "842c7032901c5554f13949d720ded31fe437f8baca7dd5ee5a52b3c618bcef51",
+    "palette.json": "79c145063bcaee1b4ae23e30633e11c0f5cf2ab51787b36bf3e0d773ad8b2e66",
+    "appearance-materials.json": "7e00c99fc77ad5908ca26e0758a3f020bcb712ebe0a5bf8127854b4c20f22f72",
+    "COLOR-SOURCE-REGISTER.json": "796a82eb0644511c619e936d46d5123a7efd18f9774f0efda998a3ba847602b9",
+    "appearance.3mf": "a018cfa7802c15390e5d4179d87bafb919df45b7bffdff446e5a5d370c8c5933",
+    "scene.blend": "5a4e89089ffe08ebf3aca34dd9dcab5c53ae9139774efd9375122c3058362e39",
+    "preview.png": "ddc341e07e548f216698d88a31f5955e975c17ee2baf64f40122e85b64e584ed",
+    "rear.png": "d40e70e97bebf2d30b7f47f802017e3ac05443e7b148bf2f5c66162328703746",
+    "front.png": "1d1c9fb83cfb6bf27046453f1adbb722938c6da5dc7bc13e866b382958b58ba1",
+    "back.png": "9e04d4c01366b446ef32fd2e495fd6c62d7edd44a9d8dfb4925c36712e1cb91a",
+    "west.png": "41acc1c3c743d624295fbcd6c3be23f65806580032742cf3f76b425a79edd586",
+    "east.png": "a6513bd070f623a143a764ced2293c9aedc8e0da0a78b0b4640fd7f1183253bd",
+    "top.png": "9b5155e51549987eff7889e7b366433d98a340bc805c920fba5d19242f290ca8",
+    "entry-detail.png": "a425db42fbf35aa804bb4030826162e0a6e1f9b0f80a20cc02c2621db0353c53",
+    "facade-detail.png": "dbd8ba3102a865109d92863735085bd57a877990e7435776e2428aebafaed0f6",
+    "roof-detail.png": "8461ed7cc795242ac848801f0381bf7ea25e3de2f7ab8e253e5b010dd1e2dc4f"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "89a7e39bca06103b186f800570b3e2ca65bb2a60c6c2221afe3250c48c83ede2",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "4da088fc1665803e101ffa0bffee1ee5f09f3d4c1847a362881e7ca266f12a69",
+    "SCENE-QA.json": "c06a9eb54d0159750388bab825ee8549f97a2cd26d007c7c24a68e9f141261fd",
+    "FRAMING-QA.json": "5e2cd79d51cb007aa98c10f326c7cde6dd0f0bdb1361ce1584a0be4a7156223a",
+    "DELIVERY-QA.json": "6f4aad06233759b1df8acf6d3619be044e1ea722a0dba32030e84a49052e909a"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "e6a1c4ad32f3395fbd0bcdca6a0f29d08068453a9e2b6421d04d75860904ecbf",
+    "ORIGINAL-RETENTION-QA.json": "10253d91845a9d55ee841ac1e2d650f786f0f33b55ebb79e79eb50166da181a5",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "1960336a9adc7a97b6f9af6647e903c46c48a4159c11ffcb986d9f6682cc2bd5",
+    "INDEPENDENT-DOMAIN-0234.json": "750951b6084e85383ccddd6b3b0bd7d61ec797ee2fcb09c39292b48305c9f6f9",
+    "INDEPENDENT-IDENTITY-0234.json": "dc7c16cf0f329d4e53d08c272a3a5d173d01b3a27bfe81dbcf512abd1c435c4d",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "98e97e085da0fdd02dfd8d22e935b6b167d31eb9c3ea598e0f788eb30316f182"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "ab45d252dd298f704ea5485562b215be57be7fcb7b33169aca73457d7de12e05"
+  },
+  "limitations": [
+    "Only2shortendfasciafaces colored;other2148neutral;notfullcolorcompletion.",
+    "Captureunknown;2023documentdate/2022waterproofingnote notcaptureproof or roofcolorproof.",
+    "Original20files retained,STL/buildunchanged;noimmutableOBJ.",
+    "Not testprinted;two materiallabels notvalidatedmultifilamentslicing."
+  ],
+  "checker_history": {
+    "path": "CHECKER-SCHEMA-CORRECTION-HISTORY.json",
+    "sha256": "ab8cd48af3687dff68bfd8c74cd92e84192f00001be161ccedf3c6251b4e81a2"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T02:37:15Z",
+  "parent_review": "Parent personally viewed both official PDF22 exterior photographs, original code, preview and all ten final renders. Only complete short-end vertical roof fascia two original triangles medium gray, other2148neutral. No extending to long eaves/underside/roof or mixed base walls. Whole views fit and closeups deliberately show the small fascia.2022 waterproofing note is not roof color/shape evidence; source capture date unknown, no2026/full-color or geometry-accuracy endorsement. Checker schema correction history preserved without changing model/source.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "NTUE Mingde partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "NTUE Mingde partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}

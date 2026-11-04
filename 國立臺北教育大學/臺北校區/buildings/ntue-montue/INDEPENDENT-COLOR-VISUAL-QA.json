@@ -1,0 +1,88 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:7wholemodel views framed and3intentional details;only south outward column faces mediumgray.",
+    "North fins andbrickwalls remain neutral; south column detail shows wholefacets without diagonal colorwedges.",
+    "Original simplified ear outline andterraces retained;no originalgeometry accuracy endorsement."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 3248,
+  "material_face_counts": [
+    288,
+    2960
+  ],
+  "connected_coplanar_domains": 753,
+  "original_obj_present": false,
+  "original_files_retained": 19,
+  "file_sha256": {
+    "README.md": "ecdec39b284e3f01ddd11f014bd15697a693ce3283735f5ca95afbdd338840bb",
+    "README.zh-TW.md": "ecdec39b284e3f01ddd11f014bd15697a693ce3283735f5ca95afbdd338840bb",
+    "model.stl": "0dee5572aad7ff5d8b7fa56d4463d71dbb8585d3b029c131b554e0533194fc41",
+    "build_model.py": "87c4ddd87828c88dd188eea22519cea12a1afefb986f4317cba498a838c97848",
+    "colorize_model.py": "cc5a7d43a10c967a674f68d5f269d6aa7847e717c986949d226c61cf25139b70",
+    "render_color.py": "ecab57fde9594ae9d3450783abb813143cd159a7517825c9192124fecdd56b32",
+    "verify_color_scene.py": "baea336957b98c5cf1d62d56acf581b084abd3280f39839a25de208e6434ed99",
+    "validate_color.py": "7872a9b077ace4e370b7cab3788ec91e34901fee5a4f1cf9bf0a0e0521826931",
+    "color-mesh.npz": "d21bd1fb97e1fe2781841b14dcee2a4a7a7fafe92237fe13a08553aecec1819b",
+    "palette.json": "405f60e38397858da9568e00cd6126be2b5c39613cb30106a1119a43cc31221c",
+    "appearance-materials.json": "fff90dfec9e063e0407d5f1b66316672ef8ae75cab894c899c62ae2ad954f5e8",
+    "COLOR-SOURCE-REGISTER.json": "97560fa2009105b545dc3e962576a5b758bc7e34f4b44660036f82ab8d4afe7b",
+    "appearance.3mf": "9023ab7c365dcb16536259f3d4b09c2ec4ba525ecb905a378bac3aff04334c5d",
+    "scene.blend": "0cc3afe4f1a7462e0c23d1dde9f9f32803f52ab8e1a500546b398676860b7244",
+    "preview.png": "f3e7ed5c425c7595db6b786092f5fa1fcd246aa29ed651b84ebb17b72db930f7",
+    "rear.png": "fb05f12ed88a269e3895aaed4a424c147db96a10171186e241bcf0364c9177ce",
+    "front.png": "a132b22c17e3be4694f7e7306ff916cf1a08514441b73d3e27a137ec7524a6ad",
+    "back.png": "d2f5be5d6161026c11efe1ba860619e2d79d2a4591395c428aaebc452ee705d3",
+    "west.png": "10dded1d493ea2290757156094e23f92b4bf2178ebf63f6fce394eab4217eae4",
+    "east.png": "654afd07f9020cd1981f63e87dceb77418041893bd88d8cc49bef473b9a76746",
+    "top.png": "0839a3f070f3a222c654ee1ac8b720bbdbc922bc00dea0d96a3b73622dd6612f",
+    "entry-detail.png": "c36052ee53890e7b7c2c19f4ee2106f3199620a4203c18888b03b250a422f428",
+    "facade-detail.png": "44d769d3411936bbb4c12c8be541540c6405e62d7052c934d442eba6ca74e6b2",
+    "roof-detail.png": "ac6029afe0b5730c446eabb9b4af8c0db17d2444d55f923fed6399a324fd643a"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "4dc0435694bf2fc2e21f5c89e5f9e971d6ccf4cf9bc46c05478c9b2c10fca9f5",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "bf4b1cf7b0877b2a9e34d04dc93538f710e0ba0acf49f35e97d14ac549eddeb3",
+    "SCENE-QA.json": "531e275972c6598f4ca281ffcba00ffb43fb3e3f4c96d5aa40bdfa3bc71a55bd",
+    "FRAMING-QA.json": "7d0c790bc577851a45860586f92814febaf903432b97767c5d509acbffb8c3bb",
+    "DELIVERY-QA.json": "580a7a3234e2bfed3056ac7dcc7cb7f63ad9dc62d55ccdc876528b62ac714514"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "c49062d39514eb59672606149c3e14e17e7a39bbabba0d507da173e997933f05",
+    "ORIGINAL-RETENTION-QA.json": "db805e04dcc75f19b881318877c19dc624f9643a8b2ba96978e64ff8d1001575",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "10f69c9451d7c8417c36b3e785c937f8a91dc370ecd1c708f56762c35451d84d",
+    "INDEPENDENT-DOMAIN-0247.json": "63db95e1fe527f27b9aea82e563612a66ac0526b73da624e464233dbbe5052aa",
+    "INDEPENDENT-IDENTITY-0247.json": "a00c6f128fc66c93e1a6a3fc37decf3960e04eca6025e4d135461248da95ec7d",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "a89f81f1ce023cbb490c919b408fa4a8eac7d5685992ff7aadea7892ee93e98f"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "ada1f401c402abc98e5cff9e91c0043b81a6e0f7eb26410038d023f432c46a58"
+  },
+  "limitations": [
+    "288 outward24gon column faces only;2960 unverifiedneutral.",
+    "Captureunknown,2023documentdate notcapture.",
+    "No originalOBJ; no testprint or validatedfilament slicing."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T02:53:41Z",
+  "parent_review": "Parent personally viewed both official PDF77 south/east exterior photographs, original column code, preview/rear and final ten-image montage. Only 288 complete outward finite24gon facets on twelve south columns receive nominal pale gray. Seven whole views fit and three closeups intentional. Brick, letters, northern fins, glass and roof remain neutral; no arbitrary triangle wedges or new geometry. Partial only, source capture unknown, not current2026 certification.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "NTUE MoNTUE partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "NTUE MoNTUE partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}

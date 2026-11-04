@@ -1,0 +1,13 @@
+"""Whole original upper left pier front between slabs only."""
+from pathlib import Path
+import numpy as np,trimesh,json,hashlib
+R=Path(__file__).resolve().parent;H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();expected='57b6d6f95e5ffc87bc44eeab06ab0f62f72f50e61f27532374200a3dc34d2403';assert H(R/'model.stl')==expected
+m=trimesh.load(R/'model.stl',force='mesh',process=True);assert len(m.faces)==3684
+t=m.triangles;n=m.face_normals;e=.0001;a=np.full(len(t),1,np.int32);D={}
+for name,ax,p,bounds,count in [('upper_left_pier_front',1,-56,[(0,-31.6,-28.4),(2,21.3,34)],2)]:
+ hit=abs(t[:,:,ax]-p).max(1)<e
+ for k,lo,hi in bounds:hit &= (t[:,:,k].min(1)>=lo-e)&(t[:,:,k].max(1)<=hi+e)
+ ids=np.flatnonzero(hit);assert len(ids)==count;D[name]=ids.tolist();a[ids]=0
+ad=m.face_adjacency;cop=(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999;cs=trimesh.graph.connected_components(ad[cop],nodes=np.arange(len(t)),min_len=1);assert all(len(set(a[c]))==1 for c in cs);assert np.bincount(a).tolist()==[2,3682]
+pal=[('Observed complete upper left pier front pale cream','#D1D0C5'),('UNVERIFIED main walls entrance windows roofs neutral','#B8BAB5')]
+np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((a==i).sum())}for i,(name,col)in enumerate(pal)],'domain_face_indices':D,'coplanar_components':len(cs),'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'3684 original triangles unchanged','limits':['Both lower front column segments: gray stone foot/base boundary is not subdivided in the original full-height lower front component.', 'Right upper column front: red plaque/adjacent lift overlap and occlusion make whole surface uncertain; do not mirror left color.', 'Curved upper cornice fronts include dark gray bands and pale panel, without equivalent original subdivision; no whole cream band.', 'Semicircular balcony rings mix brick field and gray/white edges on original continuous facets.', 'Opaque lift proxy mixes glazing and structural metal, not uniformly blue or green.', 'Wall mass, side bays, roof, slab fascia/underside, glass backs, ground and hidden rear remain neutral.', 'No new cuts, topology, geometry, textures or reflected colors.', 'PDF2023 date is not capture; no2026 current-state assertion.', 'Only exterior images; page53-image1 plan not used for color. Sources private only.']};(R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n');(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','original_STL_sha256':expected,'triangles':3684,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(q['palette'],'components',len(cs))

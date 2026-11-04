@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed upper two complete screen fronts warmgray",
+      "hex": "#C0BDB1",
+      "faces": 256
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixedbrickwalls entryframes glazing roofplanes neutral",
+      "hex": "#B8BAB5",
+      "faces": 5552
+    }
+  ],
+  "domains": {
+    "top_two_complete_screen_fronts": 256,
+    "per_rectangle": [
+      128,
+      128
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 1721
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "5808 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "All vertices on complete frontplane y-34.7;two fullconnected screen components.",
+    "2 complete panels times128 original Boolean triangles=256.",
+    "No normal or centroid shortcuts;horizontal roofs side returns neutral.",
+    "Mixedbasewalls longobscuredelevations windows bands neutral.",
+    "Captureunknown;EXIF306 modificationdates notcapture.",
+    "Two labels not testedfourfilament."
+  ]
+}

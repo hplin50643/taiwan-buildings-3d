@@ -1,0 +1,89 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:7wholemodel views framed and3intentional details;only two upper screen fronts warmgray.",
+    "Screen apertures sides/backs neutral;no entirewall or hiddenpanel material inference.",
+    "Original courtyard/openings unchanged;no diagonalwedges or new goldlettering."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 5808,
+  "material_face_counts": [
+    256,
+    5552
+  ],
+  "connected_coplanar_domains": 1721,
+  "original_obj_present": false,
+  "original_files_retained": 15,
+  "file_sha256": {
+    "README.md": "cde910f5fabcd7e682766f6298aa9c87c0e5c122c131fa532c2a4ba2584c07a4",
+    "README.zh-TW.md": "cde910f5fabcd7e682766f6298aa9c87c0e5c122c131fa532c2a4ba2584c07a4",
+    "model.stl": "854e49c793350ad42e6188bfabb2f733c4707c956fdfca31bb88d92fe9c441c4",
+    "build_model.py": "0bb90ff810f11969ded6488ccdfa00d85f3f8a0345db47a790ec4918163e406e",
+    "colorize_model.py": "68c3d6914c6d23dc3c60c95619d3bf43b7585b617151df7e2b7675513c1b70f2",
+    "render_color.py": "d1d9d70dfa718232540afcc546772bc8a31dbe7031250ad4d0e0310097401d33",
+    "verify_color_scene.py": "3cd1a3c1eb9bd02d8d85db5f41d9712ce38d5834ca6177c195a3034d76eba39a",
+    "validate_color.py": "6d60d91cd231f400ddab38ff775486e781e3a8f956cb6ac7426934261afdbb6e",
+    "color-mesh.npz": "16788924164f2f600ab11c34e5635b4555fe1b1643193dac738adfd71b82407a",
+    "palette.json": "b6529c8cdf987d05f27f31386ff22a57f552d6b86f537911c8533c3949c07339",
+    "appearance-materials.json": "a10c6a01bac5998ccc71c883b5298ffd75a9eac7d820b30816ea3cc68610769b",
+    "COLOR-SOURCE-REGISTER.json": "34640d1ebcc58ac0f9c5892a5edf28e80889a504327e4356d6aa470bb554ec66",
+    "appearance.3mf": "5c53b92c05cf15fc27559a71d5dff2ae43cbfffc006242f864fb4db9d6ef7b4c",
+    "scene.blend": "6f1d5f944867d87e54561ad0bdfa2802be2b265fa664500e47a03c2a5df7d7a3",
+    "preview.png": "89c78e86612fa7287b199d65ac42c2dc5a4724d6000175b83bba37cc232c2827",
+    "rear.png": "e1f0db1f9418a9b044b8ded87b7c4f3ce32f3c1c90280da0e7fd0a94d01cfd80",
+    "front.png": "0af9f4a157476d0ab939b405267962266ca36403cfe0b47441b0e9915d4a9fe9",
+    "back.png": "42941752fb5527e798e2593e33e0d8704c2807043339d380c1cb9de4e28246cc",
+    "west.png": "5c9de27c955d6e9f2b11ff978b7a9d3d7af7a9e74efd7197090bbeb50ba4366a",
+    "east.png": "c229c3c25d4919ce7f2447682bf788de2cd1ad0fd81c91b6ea9c0c93de1bf472",
+    "top.png": "c343bbab9062594621a6ba943d71b4e76fae94603adf5e8c419a890a4abd3938",
+    "entry-detail.png": "8a959bacac9055bb68571f0d2f6e4ea73f284488ae6a692343bbcdb5f5065789",
+    "facade-detail.png": "d4bf90c63eae784ffb119abcf3b4c162368b1097489769435bb319b950b3ec48",
+    "roof-detail.png": "06b23045f9db4ee4591822e6cdd52359e5e4461f96bc44be19f460d3884ebca1"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "5aa7d537a1f526af31d05b657c95d324ad94725cad32bae6847f0d2523599dca",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "b524307dbb9bdbf42f3a6b632686490c7f422e9dc03a7c6b7c7e4425a609b097",
+    "SCENE-QA.json": "a213bfa3bb4a51ad92c7e473fea341bfc9b782df72784231dc240235c0ab0cf7",
+    "FRAMING-QA.json": "24efc30d0c91a8eb0da8b917b18f046b2c0a5ee288f029b7eefa473fcf392ce9",
+    "DELIVERY-QA.json": "c616aef5d767cf7922be5e9d73f95001aea6157d05d0ada440ae0a7eea5ab05a"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "fd806f3e1a36276c75a894396a2d68c078ff6a79c80382431cf5944f047f4892",
+    "WHOLE-SCREEN-COMPONENT-QA.json": "53427b5825478dc6a2bba282644b7c8e951eb981a883f2dcfb509724c7af50de",
+    "ORIGINAL-RETENTION-QA.json": "814ffef994f45d6666dde39197f74c3ca3305633b0d29509bd9cc34e31897056",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "323b5d98a16801b1c932369c121e54e3d90199c0b1c825b847a74adc7ef48dfa",
+    "INDEPENDENT-DOMAIN-0257.json": "651cb058de068203a387bdd566ca1985507d738e5cdb13f65e6b3b9d66afb75f",
+    "INDEPENDENT-IDENTITY-0257.json": "c13319e1d4cf0acff934df2a0e12283df5c0b75f74ddaaf9277806b1f6a5c93c",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "0929e3a96e09cf99647e37552c9cb151ff0dfbf31622c429ca9eab21ae756353"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "1b75a012dcadc20bd887dfa43fdcbd073c453f7d060dec9f0b3d3ff869cd96b8"
+  },
+  "limitations": [
+    "256 complete front material faces only;5552neutral.",
+    "Captureunknown;EXIFmodification notcapture.",
+    "No originalOBJ, no testprint or validatedfilament slicing."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T02:59:48Z",
+  "parent_review": "Parent personally viewed official front and architect courtyard photos, original screen code, preview and final ten-image montage. Only highest middle/right two complete outer screen planes128+128 receive warmgray, excluding all hole walls and backing. Seven whole views fit, three detail crops intentional. Other facade, shadowed screens, lettering, roof and courtyard remain neutral. Raw fullplane9 components independently checked; no wedge or new geometry. Partial and capture unknown, Zhiben not city campus.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "Zhiben Administration partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "Zhiben Administration partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}

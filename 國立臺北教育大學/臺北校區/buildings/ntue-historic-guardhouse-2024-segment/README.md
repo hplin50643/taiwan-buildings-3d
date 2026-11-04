@@ -1,42 +1,32 @@
-# 國立臺北教育大學｜舊警衛室可見外觀段（2024）
+# 北教歷史警衛室片段｜最低木板局部褪淺綠
 
-## 模型預覽
+**局部補色未完成：只有大窗下最低獨立橫板前面2原三角褪淺綠；混漆牆窗與屋瓦未完成／非全色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項 `ntue-historic-guardhouse-2024-segment`／`count_delta=0`。臺北校區；只2024文章可見投出木構山牆與退後左翼片段，不是2026修復後或完整現況。文章年非拍攝日。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![大窗下木板](entry-detail.png) | ![最低木板完整前面](facade-detail.png) |
+| ![中性屋瓦](roof-detail.png) | | |
 
-臺北校區，自行用Python／實體布林建模，沒有下載第三方3D模型。模型為照片支持的近似，非實測或施工圖。
+## 材色範圍
 
-## 來源與界線
+只有y−49、x5.5..64.5、z12..12.8最低獨立木板完整前面，所有三頂點有限plane/bounds核，2面褪淺綠、1222中性。全共面連通域一致，不按面心/任意高度剪主牆或新增面，不因上板局部有綠漆就染樹遮或剝落區。原粗木板數目/比例非精準實測。
 
-以2024照片可見的突出木造山牆窗面與左側退縮翼做局部。保留削頂山牆與短斜面前端近似、木板水平帶、山牆窄百葉、大窗上後加浪板罩、兩個基座通氣口及左翼長窗；前大窗細直鐵欄刻意略去，只保留大凹面，避免讀成粗九宮框；細木格、鏽蝕、瓦苔不復刻。依2024照片可見簷口與山牆比例，主簷口模型z53、山牆上緣約z66、未知後方屋脊不高於z69；左翼屋脊z62。這些數字全是近似模型毫米而非實測。突出翼窗面後方僅保留35模型毫米（人為截取深度，非現地量測）即平直截斷，屋頂也隨之縮短，避免未知背部讀成另一大高坡。屋頂坡率、翼深和不可見切面只作保守截斷，沒有全棟平面或精確量測。19號圍牆、紅大門及遮簷附加物不混作1926年木屋原形，也不在本模型範圍內。這是2024可見段的年代限定近似，不宣稱2026修復後現況；相關計畫核定不等於工程完工。舊警衛室地址為和平東路136巷19號，與134號大學正門現役警衛空間不同。未見背窗、後部房間、完整基地與地下基礎都不建。
+全連續木牆跨上裸木與下漆界中性；其他較高板面、返面、背/側截斷都中性。左窗粗分格混上灰框/老木與下紅框，不整紅；大窗背缺鐵花細界不染。苔瓦/風化、山牆填板/托架/閣窗、加設鐵皮罩、基座/通風洞背/地台全中性。中性色不是實景灰證明，資料範圍不是實材接縫。
 
-完整URL、年代與來源所支持特徵見[sources.json](sources.json)。原照片／PDF不隨公開包散布。
+原1224三角、STL/build字節不變。後35model-mm人工截斷是近似，不是量得深度；不補暗後室/完整基地/地下基礎，不納19號圍牆紅門/周邊雨棚，不是134號現役校門警衛空間。保留原削山牆、短屋、窗/樓板近似與省略細鐵花；不復原1926原貌或後續修復。
 
-## 模型與重建
+## 來源、日期與權利
 
-- [model.stl](model.stl)：毫米，含底座最長150毫米；每件比例獨立
-- [scene.blend](scene.blend)：由交付STL匯入的可編修網格
-- [build_model.py](build_model.py)、[requirements.txt](requirements.txt)：python build_model.py
-- [render_preview.py](render_preview.py)：blender -b -t 4 -P render_preview.py；圖片皆實際STL
+親看2024文章的正面照片與合照，最低大窗下木板全寬可見淺綠，色族近似而非色票測量。獨立拍攝日未知；文章年不是攝影年，規劃核准不是工程完工。不稱2026修復後現況。URL沿原sources.json，照片hash與獨審見COLOR-SOURCE-REGISTER；原影像只私人保存，不公開/貼圖，未見CC不推商用。
 
+## 檔案與 QA
 
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png) · [通口近圖](previews/entry_close.png)
+原STL/build字節及1224三角不改。appearance.3mf兩展示材、scene.blend真面材、color-mesh.npz同原三角。Immutable原包無OBJ；原程式匯出OBJ僅private隔離重建保存，不冒原件存在。原README.md保留ORIGINAL-MONOCHROME-README.md，原無README.zh-TW.md；舊previews/QA保單色歷程，非此次色QA。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
-| 通口近圖<br>![通口近圖](previews/entry_close.png) |  |  |
+原requirements隔離build+colorize、3MF三角/面材/封閉正體積、Blender重開與10張1200×900綁定驗證；shapely2.1.2私有target不改共享。重建目錄保留。未實際列印，兩展示材不是已驗四色切片；原細件/支撐另核。
 
-## 列印及數位QA
+## English limitations
 
-底座朝下。窗罩、簷廊頂板與厚化斜撐需要評估支撐；移除支撐可能傷害薄框、柱或懸掛構件。玻璃細格、木板及百葉細節有意省略或粗化。沒有實體試印或Cura／Prusa工具路徑驗證，不保證免支撐或保證可印。
-
-[validation.json](validation.json)檢原STL水密、正體積、法向／繞序、每邊兩面、vertex link單環、單一連通表面與無分離內腔殼，尺寸150毫米、重建SHA及Blend一致。[contour-validity-check.json](contour-validity-check.json)以z偏移0.071、每0.2毫米核全部輪廓閉合及Polygon有效，invalid直接失敗，不repair後宣稱成功。[thin-feature-check.json](thin-feature-check.json)使用canonical fail-closed v3的0.8毫米opening輔助篩檢，非完整最小壁厚或切片模擬。
-
-[原STL局部凹深／廊下射線證據](portal-ray-proof.json)與[檢查腳本](check_portal_geometry.py)。原三角形射線不修補mesh；數字全是模型毫米，不能視為現地尺寸。
-
-重跑：python validate_model.py；python check_contour_validity.py；python check_thin_features.py；python check_portal_geometry.py。
-
-外觀已覆核，本件為作者凍結版本；獨立QA通過後才可由唯一發布者發布。
+Very limited partial:only the lowest complete independent clapboard front y=-49,x5.5..64.5,z12..12.8,2faded palegreen triangles;1222neutral. All vertices finite-plane tested,whole coplanar components uniform,original1224triangles/STL/build unchanged,count_delta0. Main mixed timber/paint wall,higher boards,windows,mossy roof,plinth and cutoffs neutral. Original2024article-visible projecting bay/setback wing only;intentional rear35mm cutoff is not measured depth. Excludes full rear/site,19-address boundary/red gate and134-address active security space. No1926reconstruction or2026restored-current claim. Publication2024 not capture date. NoimmutableOBJ;build-generatedOBJ privately retained only. Private reference photos,no textures/rights inference,not testprinted or validated multicolor slicing.

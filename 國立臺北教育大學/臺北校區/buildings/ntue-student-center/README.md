@@ -1,45 +1,32 @@
-# 國立臺北教育大學｜學生活動中心
+# 北教學生活動中心｜左前柱上段局部淺米白
 
-## 模型預覽
+**局部補色未完成：只左前柱兩樓板間完整前面2原三角淺米白；陽臺電梯與未知域未完成／非全色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項 `ntue-student-center`／`count_delta=0`，臺北校區。保留原單館外觀近似，不是2026現況測繪或全館完成補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![左前柱與樓板](entry-detail.png) | ![完整柱面](facade-detail.png) |
+| ![中性屋檐](roof-detail.png) | | |
 
-臺北校區，自行以Python實體布林建模，沒有下載第三方3D模型。此件是證據限定的外觀／量體近似，不是測繪、施工圖或室內重建。
+## 材色範圍
 
-## 證據與範圍
+只y−56、x−31.6..−28.4、z21.3..34的左前柱完整前面2三角淺米白，其他3682中性。先枚舉完整y−56全平面，再由共邊連通核此面獨立閉合，有限全頂點核不是任切柱。原樓板z19..21.3與34..36.3向前突出，遮住柱面，兩上下界是真正原構件邊，不是人工漆界。全共面連通域材色一致，原3684三角/頂點不改，不盲套IDs或面心切色。
 
-依五層資料、正面及左側透視、B1及各地上樓層平面建模。保留前端上下兩層開放門廊、側向三層圓弧陽臺、中央大面磚牆及上下寬窗、弧形頂板與右前外加玻璃電梯。電梯的透明玻璃以不透明圓柱和粗水平分段表達，不虛構內部機構；陽臺細欄杆粗化為厚弧形欄板。長側鋸齒輪廓有逐層平面依據，但後段立面沒有實拍證據，故只作量體，不臆造窗群；近前側照片可見的連續退縮廊帶保留。地下廚房不重建為外部外觀。屋頂設備、不可見背窗與升降機精細鋼構未知；實際進深、外加電梯與舊平面的銜接偏差均屬照片近似。
+下段兩柱跨灰石腳界而原無分面全中性；右上柱有紅牌/電梯遮擋不鏡射左柱。上弧檐混暗灰帶與淡面、半圓陽臺磚腹和白灰邊無原對應界，均中性。電梯原不透明可列印proxy混玻璃/金屬，不整藍綠。主牆、側鋸齒灣、屋頂、樓板鼻端/底、窗背、地台與未知後部中性。中性色不等於實景灰；資料界線不是實際材質接縫。
 
-官方文件2023年10月25日，照片攝影日未載；文件更新日期不能視為拍攝日期。完整頁碼與URL見 [sources.json](sources.json)。原照片／PDF只保留私人核對，不隨公開包散布。
+原短正面、長側鋸齒量體、開放前廊、半圓陽臺及外加電梯近似全保留，不新增細窗格/牌字或以本次色審追認幾何精度。
 
-## 交付檔
+## 來源、日期與權利
 
-- [model.stl](model.stl)：毫米，含底座最長150毫米；每件比例獨立
-- [scene.blend](scene.blend)：由原STL匯入的可編修網格
-- [build_model.py](build_model.py) 與 [requirements.txt](requirements.txt)：建模參數；python build_model.py
-- [render_preview.py](render_preview.py)：以實際STL渲染；blender -b -t 2 -P render_preview.py
+親看官方PDF實頁52、53兩外觀照片，左前柱第一與第二流通樓板間淡米結構面連續，側照支持上柱與下灰腳分離。只外觀照，未用page53-image1平面或安全配置。2023文件日期非攝影日，capture未知，不宣2026現況。來源hash及獨審見COLOR-SOURCE-REGISTER，URL沿原sources.json。照片私人保存，不公開貼圖，未見CC不推商用。HEX為名義展示色族非測量色票。
 
+## 檔案與 QA
 
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png)
+原STL/build字節與3684三角保持。appearance.3mf兩展示材、scene.blend真面材、color-mesh.npz同原三角。Immutable原包無OBJ；原程式在private隔離重建生成OBJ，不冒原件存在。原README.md保留ORIGINAL-MONOCHROME-README.md；原無README.zh-TW.md。舊previews/QA留單色歷程，不替代本次QA。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
+依原requirements隔離build+color，3MF完整三角/實面材/封閉正體積、Blender重開/10張1200×900綁定核；shapely2.1.2私有target不改共享環境，重建保留不刪。未實際列印，兩展示材不是已驗四色切片；薄構件支撐另核。
 
-## 列印及QA限制
+## English limitations
 
-底座朝下；折角上帽、雨遮、入口頂板、通廊及薄框可能需要支撐，拆支撐有傷細件風險。厚化細格及柱不是實際建築尺寸，勿把不同館直接拼為同比例校園。沒有實體試印或Cura／Prusa工具路徑驗證，不保證免支撐或保證可印。
-
-[validation.json](validation.json) 檢原STL法向／繞序、水密、正體積、每邊兩面、vertex link、單連通表面、無分離內腔殼、150毫米限制、重建SHA與Blend一致。[contour-validity-check.json](contour-validity-check.json) 固定0.071偏移，每0.2毫米逐層閉合及個別／合成Polygon有效，不修補後算成功。[thin-feature-check.json](thin-feature-check.json) canonical fail-closed v3每1毫米抽樣0.8毫米opening輔助篩檢，不等於全面壁厚或切片模擬。
-
-重跑：python validate_model.py；python check_contour_validity.py；python check_thin_features.py。
-
-[入口近圖](previews/entry_close.png) · [原STL射線證據](portal-ray-proof.json) · [射線檢查腳本](check_portal_geometry.py)。以上深度均為獨立模型毫米，不是現地尺寸。
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 入口近圖<br>![入口近圖](previews/entry_close.png) |  |  |
-
-外觀已覆核，本件為作者凍結版本；獨立QA通過後才可由唯一發布者發布。
+Partial only:one complete upper-left front pier component y=-56,x[-31.6,-28.4],z[21.3,34],2palecream triangles/3682neutral. Original projecting slabs define actual upper/lower edges. Entire-plane/shared-edge component checked before finite all-vertex bounds;no centroid cut or new faces. Lower piers mixed withgrayfeet,right plaque/lift-obscured pier,balconybrick/edges,curvedcornice,liftproxy,windows,roofs and other walls neutral. Original3684triangles/STL/build unchanged,count_delta0. NoimmutableOBJ;privateisolated buildergeneratedOBJ only. OfficialPDF52/53 exterior photos viewed,not interior/plan/security content.2023document not capture;no2026current or originalgeometryaccuracy endorsement. No public source photos/textures/rights inference. Not testprinted or validated multicolor slicing.
