@@ -1,0 +1,45 @@
+{
+  "source": "../model.stl",
+  "source_sha256": "6e1c338abc56367db05ceb285e223071e96eb950f847d7895347387233de68b7",
+  "source_bytes": 36412062,
+  "binary": "model-binary.stl",
+  "binary_sha256": "9c8d83832ee8de3908ed20a9a76c70913feb8c93220bd94974ee1d1cfe4fc65e",
+  "binary_bytes": 6686184,
+  "triangle_count_source": 133722,
+  "triangle_count_binary": 133722,
+  "triangle_order_equal": true,
+  "max_axis_error_mm": 3.812735727137806e-06,
+  "max_vertex_distance_mm": 4.226651930514679e-06,
+  "bbox_source": [
+    [
+      -75.0,
+      -62.0,
+      0.0
+    ],
+    [
+      75.0,
+      62.0,
+      109.5
+    ]
+  ],
+  "bbox_binary": [
+    [
+      -75.0,
+      -62.0,
+      0.0
+    ],
+    [
+      75.0,
+      62.0,
+      109.5
+    ]
+  ],
+  "lossless_bytewise": false,
+  "method": "ASCII to standard binary STL float32; triangle order preserved; no simplification",
+  "independent_review": {
+    "triangles_and_order_preserved": true,
+    "all_vertices_and_normals_equal_ascii_float32_conversion": true,
+    "not_bytewise_lossless": true,
+    "physical_print_test": false
+  }
+}
