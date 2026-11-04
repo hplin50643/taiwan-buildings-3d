@@ -1,0 +1,65 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed two official completed opposing aerial photographs,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole exportedy-34.75plane23 andy+34.75plane31 outerupperframes/endpanels,54offwhite27236unknownneutral.",
+    "All7284coplanar componentsuniform; complete observedz66.7..75.65 notthinbeamclip, original Yflip retainedonce.",
+    "Two opposing completed aerials directly prove both outer upper frame color families; captureunknown/not2026.",
+    "Tops/undersides/interior roof frames,glass/redcanopies/mixedwalls remain neutral; no source-photo publiccopy.",
+    "Sevenwholeviewsfit;threecloseups show shortouterframe,longouterframe,shortouterendpanel boundaries.",
+    "Original27290triangles/STL/build and22immutablefiles/noOBJ retained; prior scene publicly aliased and privately retained.",
+    "Not truly monochrome baseline: documented3classpreview→source-supportedpartial54 update,sameC/D Zgroup/count0.",
+    "1240withdrawnselection/v2initialHOLD/v3full54approval preservedhistory; no erased contradictory source stage.",
+    "Actual3MF/scene/fourscripts NCUT Yanghao Dormitory partial color; paletteRGB/BSDF verified."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "b8b56fdebdd6493b2292fd20d63e8fc2c04a6cf97163b8a20a3270ffd0ad2939",
+    "README.zh-TW.md": "b8b56fdebdd6493b2292fd20d63e8fc2c04a6cf97163b8a20a3270ffd0ad2939",
+    "colorize_model.py": "5474ebf44172d98a006bee4b3709a92344d040e787891e4c60df434cba41e4a5",
+    "render_color.py": "7af599e6d3c1a92e3af4e2f4950a930d0ba7f526bdd609b6e41d4e1b9c35b7af",
+    "color-mesh.npz": "dd55bec7e28ff5cf1f1918abf466ad1671f051a89f35903485ea1135b403e5a6",
+    "palette.json": "c0a7cabbef94cdf276fcb831107951de4bd09662dc69844c1ebecf0642ba4659",
+    "appearance-materials.json": "32aae94921e48db5a01e6daf093f0e6ad796ad7f3fe1ebd6692eb187d7963a0d",
+    "COLOR-SOURCE-REGISTER.json": "c9dfc8dd0d03aa6dc006d95be41b7307ebff81fb9f27a46f31428f6efd4f8dac",
+    "model.stl": "6efc4133d359b70fab35aaeec47dd77bf6dffe53e48b93e6aa7183facbd16879",
+    "build_model.py": "3087b2673bb74b5535acd31b8aafba9a3ca6a01901779b1b91293fcdf3ffc3ae",
+    "PREVIEW-TRANSITION.md": "2957a10f7045c2e9a371034f1ed39aaa1aebc50a2f8dfe4a142d9fdd9ac7e011",
+    "preview.png": "7e79df6d8262fa0ebe19ec62d1a40a55c0bab82cb71e201d53b2ae94d3a12357",
+    "rear.png": "c18a086ac3a94440661b545ce55a7f13ff481ca09318da15830bb57c076e741d",
+    "front.png": "6f37d86eb9081d6ef1c4988ae9c7d6c70790691a9d1d63c35df7fae3885ff0e0",
+    "back.png": "35da777b817bfc7705173a40993fa94b0d0c664f396cf4b4f50c431dc1f785c9",
+    "west.png": "6281c88fcfe261e10b57663e1248534f4e1fbfa041dd6d5ce2a7327e1ad83345",
+    "east.png": "094b21d1a7d279f80c22c94e35b8127a8fb73875c16708ce35edcc4d7e4db0ad",
+    "top.png": "259f6959f6b675025faf1fd7421b47ffa4937abd7a8bf10ba552359c4f9d4dff",
+    "entry-detail.png": "ab3f138d46fa4300f0009fbd8b7c8bdc8349747a7fbe246e44c2d7435f982e5b",
+    "facade-detail.png": "36fd9424b20cc0f72ba48035bd2ded35e6e6c147389a119478b719c8cdd9d48f",
+    "roof-detail.png": "d4ecce63155fa48c6adb964acab98adff784b8eff975f67fe9c0968bfffe4840"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "97b603e3053d0929f83391b71c57ab3426ea7810896e14a2f8a093d5990204b2",
+    "SCENE-QA.json": "67d56a20f4a9c1e00ab28f117050fe4fe467722eb6dfd1fd36e86ffa3f5dc50b",
+    "DELIVERY-QA.json": "5beb1802e765a9863261d42848ad50efd7aa96a393f2d32906224cf749368779"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "0e928e37c3069f2edd3f715acb477a2681489db746c7504bf4dfeb31bd126107",
+    "ORIGINAL-RETENTION-QA.json": "d6fb2b83f06f1f910947b33a433fe04d2c32508769f6de573dbefa15a94a725e",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0821.json": "4c7eced09a0752f58b13668d5fa2419e20e2e06b99ae765f19829e05e4bf68f7",
+    "INDEPENDENT-IDENTITY-0818.json": "489e1eab6fe7c2308985f6a659836bc8881de1a38b3b573f093600ce31de208f",
+    "INDEPENDENT-PACKAGE-IDENTITY-0824.json": "9dafa4ed37bb91685c59d6e7738357993776818341634e9a610bde66e5d6419e"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T08:24:21Z",
+  "parent_review": "Parent personally viewed two opposing completed official aerials and originalcode0816, preview0818, finaltenmontage0824. Whole y-34.75/+34.75 planes23+31 retain complete external upperframes/endwhiteplates including z66.7..75.65, notthinbeam. Exact originalraw54 equals NPZwhite, all27236others unknownneutral including former depth/glassdisplay colors. Original Yflip not repeated. All27290triangles22originalfiles/noOBJ unchanged;7284coplanar domains uniform. Original threeclassscene/render/README publicaliases byteexact, transition.md explicit notmono/sourcegap/count0. Initial1240withdrawn/v2HOLD/v3full54 history retained. Sevenwholeviews framed, threecloseups expose short/long fullupperframes/endpanel; no roof/internalframe/underside extrapolation. Actualidentity NCUT Yanghao Dormitory 3MF/Blender/fourscripts/README/paletteRGB PASS. No capturedate/current2026/fullcolor claim."
+}

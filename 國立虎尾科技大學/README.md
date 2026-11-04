@@ -7,7 +7,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![第一教學區校門與警衛室：實際模型預覽](校本部（第一教學區）/buildings/nfu-main-gate/previews/front.png)](校本部（第一教學區）/buildings/nfu-main-gate/README.md)<br>**[第一教學區校門與警衛室](校本部（第一教學區）/buildings/nfu-main-gate/README.md)** | [![經國體育館正面入口段：實際模型預覽](校本部（運動區）/buildings/nfu-chingkuo-entrance/previews/front.png)](校本部（運動區）/buildings/nfu-chingkuo-entrance/README.md)<br>**[經國體育館正面入口段](校本部（運動區）/buildings/nfu-chingkuo-entrance/README.md)** | [![文理暨管理大樓：實際模型預覽](校本部（第三教學區）/buildings/nfu-cma-building/previews/front.png)](校本部（第三教學區）/buildings/nfu-cma-building/README.md)<br>**[文理暨管理大樓](校本部（第三教學區）/buildings/nfu-cma-building/README.md)** |
+| [![第一教學區校門與警衛室：實際模型預覽](校本部（第一教學區）/buildings/nfu-main-gate/preview.png)](校本部（第一教學區）/buildings/nfu-main-gate/README.md)<br>**[第一教學區校門與警衛室](校本部（第一教學區）/buildings/nfu-main-gate/README.md)**<br>[局部材色3MF](校本部（第一教學區）/buildings/nfu-main-gate/appearance.3mf) · [範圍與限制](校本部（第一教學區）/buildings/nfu-main-gate/README.md) | [![經國體育館正面入口段：實際模型預覽](校本部（運動區）/buildings/nfu-chingkuo-entrance/preview.png)](校本部（運動區）/buildings/nfu-chingkuo-entrance/README.md)<br>**[經國體育館正面入口段](校本部（運動區）/buildings/nfu-chingkuo-entrance/README.md)**<br>[局部材色3MF](校本部（運動區）/buildings/nfu-chingkuo-entrance/appearance.3mf) · [範圍與限制](校本部（運動區）/buildings/nfu-chingkuo-entrance/README.md) | [![文理暨管理大樓：實際模型預覽](校本部（第三教學區）/buildings/nfu-cma-building/previews/front.png)](校本部（第三教學區）/buildings/nfu-cma-building/README.md)<br>**[文理暨管理大樓](校本部（第三教學區）/buildings/nfu-cma-building/README.md)** |
 
 ## 使用限制
 前兩件STL單位毫米，含底座最長150mm、各件獨立近似比例；新文理暨管理大樓為248.4×172.8×125.55mm，另見其QA。底座朝下；雨遮/屋簷/凹窗仍可能需要支撐。數位幾何檢查不等於實際切片或試印，未保證免支撐。

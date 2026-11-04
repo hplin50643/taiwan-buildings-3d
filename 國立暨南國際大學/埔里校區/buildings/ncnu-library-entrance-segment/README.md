@@ -1,60 +1,31 @@
-# 圖書資訊暨多功能大樓入口柱廊段
+# 暨南圖書入口柱廊段｜最高雨庇前緣局部淺灰
 
-## 模型預覽
+**既有預覽分類色不是實景材質證；其餘未知域尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅最高雨庇前緣完整2面名義淺灰，本件不是新發現單色模型，也非全館完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 交付 STL 正面<br>![正面](previews/front.png) | 交付 STL 背面<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![完整最高前緣](entry-detail.png)|![左端界](facade-detail.png)|
+|![右端界](roof-detail.png)|||
 
-國立暨南國際大學 · 埔里校區 · 公開照片近似外觀模型
+## 材色範圍
+同 ncnu-library-entrance-segment 原項目，same-item、count_delta=0。國立暨南國際大學埔里校區圖書資訊暨多功能大樓入口雙柱、柱頭、雨庇及鄰接片段，不是整館；平背/截高牆不是實測完整背立面。原2336三角及STL/build_model.py字節不變，20原件無OBJ。
+- 整y=-40.5最高庇前plane恰2三角、單完整連通矩形x±57.5,z88.6..90.9。全3頂點有限域等於整無限面，保Boolean原界，不裁色。
+- 其餘2334面中性，包括舊深凹材：下庇陰影窄帶、混石材/金屬套柱、柱頭玻璃框/燈具、金字牌、窗門反光細框、階踏對比、屋頂側底/背截面。
 
-只建入口雙柱、折面倒錐柱頭、雨遮、門前階梯、相鄰局部立面及低柱廊。不是整棟圖書館。
+## 既有預覽轉換
+原scene已有 Warm stone preview only 與 Recess depth emphasis - preview color only 兩種展示材，不能稱原模型真單色，也不能把深凹分類當實景黑玻璃。此版本僅把有據2面淺灰，其餘未知中性，不增加棟數或改幾何。原scene完整另存 ORIGINAL-DEPTH-PREVIEW-scene.blend，原render_preview.py/previews與原README歷史保留；新scene/新十圖是本次來源限定版本。兩版本不是互相證色，舊檔不刪。
 
+## 來源與日期
+親看兩官日照/入口近照，最高前緣由完整遠照證，近照截頂僅支持身份與排除。照片日期未獨立確認，頁/網址時間非capture，不稱2026現況，不用夜燈取色。原照私人保存、不公開、不作紋理、不建人物；未確認CC或再散布授權，不保證商用。
 
-[俯視](previews/top.png) · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數腳本](build_model.py)
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [新Blender](scene.blend)
+150mm底座為原示意尺寸非測量比例。物件明名 NCNU Library Entrance Segment partial color，獨立核真slug/館名。STL無色，3MF/Blender逐面分材，不是兩色或四色耗材切片驗證，未實際列印。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) |  |  |
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes/全三角multiset、共面均一、閉合正體積、3MF面材、scene重開、十圖1200×900與hash。原README/previews/validation保留歷史，不冒新QA，不刪檔。
 
-## 範圍與辨識特徵
-- 雙柱與向上展開的倒錐折面柱頭
-- 柱頭三角窗以淺凹面表達，保留可見稜線
-- 兩層雨遮邊框、宽階梯、深凹入口與垂直窗帶
-- 相鄰低柱廊及小山牆；保留柱間開放空間
-
-## 比例與列印
-- 單位為毫米；含底座外廓 150.0 × 82.0 × 103.4 mm，最長150 mm。
-- 每件採獨立縮尺，不能直接和其他件拼成同一比例全校模型。
-- 底座朝下。先以0.4 mm噴嘴、0.2 mm層高在自己的切片器檢查；這只是起始參考。
-- 雨遮、屋簷與斜撐下方可能需要支撐；請檢查橋接跨度及拆支撐可及性。細柱與突出窗框拆支撐時易折，避免再縮小。
-- 已作數位幾何檢查，未作Cura/Prusa實際工具路徑驗證或實體試印，不能保證一次列印成功或無需支撐。
-
-## 證據與限制
-- 後方為刻意截斷的平面，並非圖書館真正背立面。
-- 未納入完整左右側翼、後棟、室內、地下室或全館屋頂。
-- 入口進深、柱距與細部厚度以照片目估，並為縮尺列印加粗；無實測比例。
-- 金色文字、細窗框、玻璃與燈具不逐一複製；三角玻璃為淺凹實心背板。
-- 所有圖片來源均為真實公開照片；未把效果圖或校園插畫當測繪資料。
-- 原照片拍摄年月未註者保持未知；網頁發布日、圖片路徑月份與查閱日不能當作拍攝日。
-- [來源與特徵對照](sources.json)。第三方原照片只供查核，本包不重新散布。
-
-## 重建與驗證
-使用 Python 3.11+ 安裝 [requirements.txt](requirements.txt)，並安裝 Blender 4.3.2 或相容版本。
-
-1. python build_model.py
-2. blender -b -t 3 -P render_preview.py
-3. python validate_model.py
-4. python check_contour_validity.py
-5. python check_thin_features.py
-6. python run_all_checks.py（統一重跑以上檢查及invalid Polygon反例測試）
-
-[原STL/重建/Blend驗證](validation.json)：所有checks為true，原STL水密、每邊兩面、頂點link單環、原法向和繞序一致、正體積、單一連通表面，重建STL SHA相同，Blend座標與交付STL一致。
-
-[0.2 mm逐層輪廓](contour-validity-check.json)：517層；固定起始z=0.071 mm，所有節點degree2、個別及合成Polygon有效，遇invalid立即失敗退出，沒有修補後通過。
-
-[0.8 mm參考寬度輔助篩檢](thin-feature-check.json)：1.0 mm層距、104層；形態opening最大面積損失 0.228%。這不是全表面最小壁厚證明，也不是切片器模擬。
-
-scene.blend含由本STL匯入的單一可編修網格；原始參數在build_model.py。預覽圖由該STL實際渲染；凹槽底面以較深預覽色強調深度，不是貼圖或新增玻璃平面。STL本身無顏色。
-
-本件完成不代表全校建築完成。最後資料查閱：2026-10-13。
+## English scope
+Partial only:2 complete highest canopy front fascia triangles pale gray;2334 neutral. Existing two preview/depth materials are not actual-color certification or a newly discovered monochrome item. Former dark recess classifications become unknown-neutral in the new source-bounded variant. Original scene saved unchanged as ORIGINAL-DEPTH-PREVIEW-scene.blend; original renderer/previews/README retained. Original2336 triangles and20 immutable files unchanged;no originalOBJ. Entrance segment not whole library/surveyed back. Capture dates unknown,not2026. Sameitem/count0/no geometrychanges/no filament test.

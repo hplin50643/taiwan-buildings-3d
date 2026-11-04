@@ -1,0 +1,86 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete entrance-section views and three intentional canopy closeups.",
+    "Complete highest front fascia visible in entry-detail and both endpoints in side closeups; returns/top neutral.",
+    "Former depth-only recess classifications become unknown-neutral, not certified dark glass; original preview history preserved."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 2336,
+  "material_face_counts": [
+    2,
+    2334
+  ],
+  "connected_coplanar_domains": 584,
+  "original_obj_present": false,
+  "original_files_retained": 20,
+  "file_sha256": {
+    "README.md": "0f5352b42e27180bc25fd4a1b755e8e34bfac61075d19e205c123ca9cf7d30bb",
+    "README.zh-TW.md": "0f5352b42e27180bc25fd4a1b755e8e34bfac61075d19e205c123ca9cf7d30bb",
+    "model.stl": "a35df6aefdf7594e37e806b8fc90fe97e99985f503aaca8b009b3b178d0eb193",
+    "build_model.py": "1625cf32097dad953f74809650ea6436701a6e685cdb3205a29e94db85019d13",
+    "colorize_model.py": "c0bd3b059ab9d6e2321bac6edc247a607d6776453b6bab50922fb2fd63078c62",
+    "render_color.py": "101bc5265c8651377ad93e24cce6937d8ac4bb5d7d2ed019d42a0ca498b06988",
+    "verify_color_scene.py": "1f6df0a43a8b1e6ca157f6464225aaeae4de40339407348ebde3bfdcf6653f1f",
+    "validate_color.py": "635a3667898077175e6fceb5318e0e5cca9fe6ccab6aab124327856ca77594f0",
+    "color-mesh.npz": "9100f6b6a2fc4314a6ff613abe3763003b34b087b4eef4b401dcd93df566a238",
+    "palette.json": "bf05484c010ee0ca43c5ff0e35792fb3ca2bc4ed85e2cc85617f90260c637af8",
+    "appearance-materials.json": "09a51e0619e4476fc35c7880e7e0f05335117e8e057ddb2532f3a7dfa3a2cd29",
+    "COLOR-SOURCE-REGISTER.json": "a0f4ad1e21b64c2ffb893dc38e9e9891d52e616ab7d306efd98b716a93e38cf3",
+    "appearance.3mf": "2ec6f4c4a01820af96ac30af789883b7c6000b1421a972a653ab036945b1458d",
+    "scene.blend": "170d0889bf15f638fb43faccf6c5f4036de145f693370de0d6e3ed301521a8ff",
+    "preview.png": "15bc45b2a5ef0af182e58453eedff02a25aa265642a37775ed13075751715130",
+    "rear.png": "b48362ad79afc0a6054a0021388f5fc6a7495a92377a7a235882f07750b5b37a",
+    "front.png": "a4b2597ef52fa04edf242cb2d6e1471da0d9acfd5ff9bf37ae79ed388edc42d1",
+    "back.png": "8d63527916ea73f35adc3a7a749205c393809acd5f87f22ea032478ee2eeeb7a",
+    "west.png": "f2901e448340e9b6eddc4d9db1890506e80f859ea401148ff2f39e1b6ac6da5c",
+    "east.png": "cadbbe642abf6217d1b12cfe853203a81faa258553381daf314d6a199c933791",
+    "top.png": "0a4e935d1afabaabb0d8ad59c7745a64104c30ab97525b96fc87f9bf42f86e6e",
+    "entry-detail.png": "d01af7eb5581976d3e7adb1f06f05e752a1ba99299b0a3f9620c8a563d9b10f8",
+    "facade-detail.png": "b0aa3f64b98e0bc42fa825bbfb1c9af46dd3a9899f79e352c1364dbbeb647f7f",
+    "roof-detail.png": "6f778919bbde17c5b215200fc8be76192990089eb91ad5aa9592315247535234",
+    "export_appearance.py": "29eeb4b4273c956a254cd189787311023e7079d7aa315e479cc271b3fd544bc3",
+    "PREVIEW-TRANSITION.json": "21240a48e48e89753698f599a901561d2392e42a8a9ac6c6d2990c14667dadd3",
+    "ORIGINAL-DEPTH-PREVIEW-scene.blend": "5e85ad07d6ce05f361442cde970e2dcafb8c177480ee891fe5ff52541790ca9d",
+    "ORIGINAL-DEPTH-PREVIEW-README.md": "e76d0c747a5705f7098c458f7796c37e7121f7491d4d94889361abb406b250a4",
+    "render_preview.py": "acc43957cba1dfe20851f22fe6bb1046f49dee80bd0ddcf3743d84dac9898a36"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "065cde973207413d624819b63de14c692d3320e2c88a08a0426758912e4c7e7f",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "d3127248b215eea006576e39c8e486e77606822fff0a98cf691ba27da461b28d",
+    "SCENE-QA.json": "2b8c75fb65271b173a4e5c38d9269bb071a799a98e4dfe3eb5a91d76e6bc935b",
+    "FRAMING-QA.json": "58633c4352170fe973d2ef2112e85116ae490b1a3ba567328435dff9fbb87aea",
+    "DELIVERY-QA.json": "d0aad109dbfa3b3497d6744cbf98d5849a7ab5bada2b4337529c4555e7bf7387"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "495f96fb425ca312be156f986541c02ae82d258f97ad581258dfa00d1b6ad2c5",
+    "ORIGINAL-RETENTION-QA.json": "51f7fe309e137d23fc5882b3e2b5679ff8538a097eed2c3c5955ac1e30285897",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "d6769d34a4a426734b96a1273e105be35e1de4af805059427695b11023ff414a",
+    "ORIGINAL-PACKAGE-READBACK.json": "c8f7d26c110bc1d1fd9bf98c4fba3f825295f816e6fdb43ea64ffb4cfbbb0cbe",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "ad1919c6b6e65f469c8e93fed8c59d46cf5731a49a3cb0493272eee5c8d166cb",
+    "INDEPENDENT-DOMAIN-0814.json": "b97f2aff6fad02dd898f346e64009ec51283a32dada9488e3e32e0215cd1cfca",
+    "INDEPENDENT-IDENTITY-0814.json": "d29e79c1583044ee58c09585675f5b98cd9277b706f6a3a9f43da289e3ea2374",
+    "INDEPENDENT-PACKAGE-IDENTITY-0821.json": "ad1919c6b6e65f469c8e93fed8c59d46cf5731a49a3cb0493272eee5c8d166cb"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "02163023721ce7b6c65678fd807d2f3c683f99ec68fd653bb5900fe77f0a34bb"
+  },
+  "limitations": [
+    "2 original highest canopy front fascia triangles;2334 neutral.",
+    "Existing preview/depth two-material transition, not monochrome discovery or new model.",
+    "Original2336 triangles and20 immutable files unchanged;no originalOBJ.",
+    "Entrance adjacent section not whole library; capture dates unverified,not2026."
+  ],
+  "history": [
+    "Preview approved then only remaining nine views rendered once.",
+    "Independent expected-name gate verifies NCNU Library Entrance Segment partial color against actual3MF and reopened scene."
+  ],
+  "existing_preview_transition": true,
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T08:21:18Z",
+  "parent_review": "Parent personally viewed official day/closeup photos and code0813, preview0814, final10montage0821. Whole uppercanopy front y-40.5 two originaltriangles exactly map material0; all2334others unknownneutral including formerly dark depthpreview. Original2336 triangles and20files unchanged; originalscene preserved public byteexact alias and originalrender unchanged. PREVIEW-TRANSITION explicitly sourcegap notmono/newmodel/fullcolor. Seven wholeviews and three near details show complete canopy front and original endpoints without extra color. Actual Blender/3MF/four scripts/README/paletteRGB identity PASS NCNU Library Entrance Segment. All584coplanar domains uniform, no geometry change,count0."
+}
