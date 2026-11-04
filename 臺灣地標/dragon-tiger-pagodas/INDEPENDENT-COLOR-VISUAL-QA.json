@@ -1,0 +1,66 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "actually_viewed_source_photos": [
+    "reopening-20250413.jpg"
+  ],
+  "actually_viewed_final_ten_views": true,
+  "observations": [
+    "Roof V1 per-facet selection gaps eliminated by original complete front loft sectors 6–10, reference-surface matching preserves exact original vertices.",
+    "Broad front tile surfaces orange, thin edge/finial/rear slopes neutral; no invented ornamental radial stripes.",
+    "Actual short front rail bands white; long repeated posts neutral.",
+    "Whole mixed dragon/tiger trunks/faces/paws remain neutral; only original schematic stripe tubes black and separate fangs/dragon horns off-white.",
+    "No arbitrary XYZ painted lips or belly borders, no colored pond/vegetation.",
+    "All ten captions and READMEs explicitly disclose unfinished animal/ornament/fine-eave color."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "original_triangle_count": 133722,
+  "count_delta": 0,
+  "geometry_changed": false,
+  "file_sha256": {
+    "README.md": "aa5247313a0bbbb8c33f5dbfb88a1f68260e84e51cb0c9ada9a16c0e2f052764",
+    "README.zh-TW.md": "aa5247313a0bbbb8c33f5dbfb88a1f68260e84e51cb0c9ada9a16c0e2f052764",
+    "colorize_model.py": "944ac56af14584257aabe2d4cde821b8caac8df05972a57de4f244bd6f41363b",
+    "render_color.py": "73e48b95dd374bb056ca666063e8a946c8ab04e7ce7fa2809ef0c8ea6a2f6585",
+    "color-mesh.npz": "17db7bbc520592a723fb50370824d97079047b1fe41e2a0f64b7d9916a0cc33c",
+    "palette.json": "9dda53315effd9120271440c9c008875c06573d2a67c589bc679f272c227065c",
+    "appearance-materials.json": "e9f6f28f5d6fa96f760d0ff3cfffd09ac0803d54623c36649f3b56466f9cb425",
+    "model.stl": "6e1c338abc56367db05ceb285e223071e96eb950f847d7895347387233de68b7",
+    "build_model.py": "0a7650b2072aa53c2531bae4c94863cbb8cba2294bddb77ebd0977df04d8ec4d",
+    "COLOR-SOURCE-REGISTER.json": "6bd234658842c77c9971f474f21f64158d3c545288e69e12b466aac0d6ea5b3b",
+    "color-requirements.txt": "dd4e0cd2af7ec995f2df62e248c98cbe3fa9ab2fda11b38fa5d542786e6ee180",
+    "preview.png": "5f3adfe4bd20f162b0cd5f0eb2d0a207222cdd998374d5d76589857d1bf909f8",
+    "rear.png": "8140a9cb6825fac82c66c0498f6bfbcc6585b51fc4b455704d5baf261b7ccd21",
+    "front.png": "3a6cf0f97a6637c4599cdb67fb885fba337683181f6e07cb3a65ea733ee04e15",
+    "back.png": "72daa7fbba2c1cef98ee1203af5106e94e1374d2228448c35bf71703699eb1da",
+    "west.png": "abcee13d65ea8c7393443611aedb7e8f399956706fff8bdbfc42f1c6f33e53b9",
+    "east.png": "01a6ce8fdebbf2dfb2eec53cefd772e328148b44d54b61569eb30708339e5bf9",
+    "top.png": "5f08617a07fa05832fc73a9f3445627dae8f3afd75dac0d707648d0c00c400aa",
+    "entry-detail.png": "4a60c9bb2356cee61ad56be9e7e067d69bcbfaddd7f918c0767b552cbddd4a8b",
+    "facade-detail.png": "2ce77300dd05f066da8a542e93016950993951529db0ee2801ffbb936ecafc33",
+    "roof-detail.png": "e31d303735d8ad1a266682320bbd461f5d27be697643c1edd5874edbb9f202f9",
+    "appearance.3mf": "5a22a3277fc158a2d639e44c6afae6f76ad6b8f9c20669ad17739d6037e7fe0e",
+    "scene.blend": "812e650da4985de8edae7e90f0098d954b06aaa561c95001f2f8db565178fcdc"
+  },
+  "qa": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "PASS",
+    "SCENE-QA.json": "PASS",
+    "FRAMING-QA.json": "PASS",
+    "DELIVERY-QA.json": "PASS"
+  },
+  "no_files_deleted": true,
+  "freeze_or_upload_performed": false,
+  "reviewed_utc": "2026-11-02T20:35:50.075581+00:00",
+  "independent_observations": [
+    "Personally inspected source, original code, v1/v2 preview, v2 roof close-up and final ten-view montage.",
+    "Whole original front roof sectors resolve false neutral radial slits, not a per-triangle visibility filter.",
+    "Rear roofs/bodies, long columns and finials neutral; whole animal mixed surfaces not arbitrarily sliced into green/yellow/white.",
+    "Original 133722 triangle multiset independently equal; ASCII release STL preserved byte-for-byte; original package has no OBJ.",
+    "Partial notice present on every render and README; detailed animal/ornament/eaves coloration remains unfinished."
+  ],
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2033.json": "227b05df19fedcd3a796bb1f5dfed8b1a031afa1d1a0bccab56e8365c085deef",
+    "INDEPENDENT-ROOF-V2-FOCUSED-2034.json": "6c231bfc864b587a35290d5a505d64461ee7d7b0579091f7242c04786ac25fc6"
+  }
+}

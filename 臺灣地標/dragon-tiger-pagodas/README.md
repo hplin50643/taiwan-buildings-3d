@@ -1,41 +1,40 @@
-# 蓮池潭龍虎塔｜可列印外觀微縮模型
+# 龍虎塔｜主要色族局部示意
 
-## 模型預覽
+| 正前 | 後方 | 正面 |
+|---|---|---|
+|![正前斜視](preview.png)|![後方斜視](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂視](top.png)|![龍虎細部](entry-detail.png)|![塔身細部](facade-detail.png)|
+|![瓦坡細部](roof-detail.png)|||
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+## 材色範圍
 
-## 先下載列印檔
+**動物／雕飾／薄檐彩繪未完成。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。僅主要色族局部示意，不計作全面補色或精細修復彩繪完成。
 
-[下載龍虎塔 STL：dragon_tiger_pagodas_150mm.stl](https://github.com/root50643/taiwan-landmark-buildings-3d/releases/download/v1.0.0/dragon_tiger_pagodas_150mm.stl)。此檔以 Release v1.0.0 附件提供，GitHub 原始碼 ZIP 不包含 model.stl。下載後請改名為 model.stl，置於本 README 所在目錄，再執行下列驗證、預覽或重建流程。STL 位元組及既有驗證雜湊均未變更。
+同一 `dragon-tiger-pagodas` 原項目（same-item、count_delta=0），**133722 個原三角面、頂點、原 STL 與 build_model.py 位元組不變**。原碼無 OBJ 產物，本次不冒稱有原 OBJ。未切面、未重建龍虎雕刻或改變塔層、欄杆、底座與池景。
 
+2025-04-13 高雄市政府 MICE 重開報導之日照（影像標示自由時報）支持前／斜前塔身金黃、寬瓦坡橘陶色、短欄白、真正拱凹暗影。文章日不是已證拍攝日，不是精確修復色票；無法取得的另一舊新聞照不作本次證據。
 
-## 模型內容
-- 成品尺寸：150 × 124 × 109.5 mm，含底座。
-- 七層、十二角雙塔、簡化翹簷及欄杆、可辨識的龍／虎身形與張口入口、共同平底座。
-- 動物是厚實、玩具式的辨識性簡化雕塑，非原雕塑精雕復刻。獸口為朝外開放的凹口，沒有內部閉合空腔殼。未製作完整九曲橋。
-- 一體式、單一連通封閉實體，最長邊 150 mm。
+### 原面可對應的局部
 
-## 列印起始建議（尚未切片實測或試印）
-- FDM 可由 0.4 mm 噴嘴、0.16–0.20 mm 層高、3 道外牆、12–18% 填充與 PLA 起步。
-- 原方向直立、平底貼平台；必要時增加 3–5 mm brim。
-- 重簷下方、獸口頂部、龍角與獸首局部有懸垂，建議支撐預覽後使用局部樹狀支撐。塔簷厚化約 1.2 mm；龍角頂端直徑 1.8 mm、塔尖末端直徑 1.6 mm；牙齒和獸身凸紋仍需低速與冷卻。拆支撐時避免拉扯屋簷和牙齒。
-- 請先檢查全高度切片路徑、懸空、薄壁與支撐拆除空間，再試印。不要直接縮小，縮放後應重新檢查所有細節。
+- 前方五組原十二邊塔面金黃，真正拱凹背面暗灰。
+- 每片屋頂只採最後寬坡的**完整前方五個原拓撲扇區**橘色；薄檐、翹角多色彩飾、頂尖與後坡保持中性。不是逐小三角法向截色，也不是虛構放射條紋。
+- 只有原短欄外側可證面為白；7.4mm 原長柱混合不同實景部位，不能整柱塗白或全紅。
+- 龍虎身體原橢球把主色、白腹及混色界線合在同一連續面，**整個軀幹與臉部保持中性**，不按 XYZ／半球硬畫綠、黃、嘴唇或腳色。
+- 原已存在的虎紋凸管作粗化黑色；不是新貼圖或真實花紋復刻。可辨原牙與龍角以白色族示意，其根部無法一致匹配則中性。龍鱗、臉、鬚、眼、鰭及未知後方細彩未完成。
 
-## 檔案與重建
-- model.stl：唯一列印實體，單位 mm。
-- build_model.py：參數化原始碼，可重新產生 STL。
-- scene.blend：由同一 STL 匯入的 Blender 場景，包含相機、燈光及非列印地板。編輯建模參數後應先重建 STL，再執行預覽腳本。
-- previews/front.png、rear.png、elevation.png：實際 STL 的前斜視、後斜視與正向視角。沒有照片貼圖，也沒有添加只在預覽中存在的建築細節。
-- render_preview.py：Blender 預覽腳本；使用無雜訊的工作室顯示。場景材質只是預覽色，STL 本身不含材質。
-- validate_model.py、validation.json：數位檢查程式及結果。
-- rebuild_check.json：重建前後 STL SHA-256 一致性結果。
-- requirements.txt：Python 套件版本。sources.md：公開參考來源及不確定性。
+分色以原造型函式的參考表面比對每個原三角頂點及中心，距離允差 0.012mm、法向一致性 >0.96；此容差僅數值配對，不代表建築實測精度。未對應面整面中性，不修改幾何使其配色。
 
-安裝 requirements.txt 後執行 python build_model.py。執行 python validate_model.py model.stl --output validation.json 檢查；以 Blender 4.x 執行 blender -b -P render_preview.py 產生場景和預覽。單張預覽可設定環境變數 VIEW=front 或 VIEW=rear。Blender 場景以 mm 顯示單位，匯出時只選 Printable_STL_mm，勿把地板、相機和燈光一起匯出。
+## 使用與重建
 
-## 檢驗範圍
-已檢查：單一連通邊界面、封閉網格、面向一致、每條邊恰有兩面、頂點鄰域為單一環、無退化三角面、正體積、平底接觸、尺寸與可重建雜湊。單一連通封閉邊界面沒有獨立的內部空腔殼。以上不是完整幾何自相交證明，也不等同切片測試或實體試印；未聲稱已試印成功。
+`scene.blend` 為實際多材質場景；`appearance.3mf` 使用基本材質標籤。`color-mesh.npz`、`palette.json` 與 `appearance-materials.json` 保留原面索引。STL 本身不含色。原 `previews/` 與 `ORIGINAL-MONOCHROME-README.md` 保留歷程，不是新色版 QA。
 
-本包是重新建立幾何的外觀微縮模型，非官方模型、測繪模型或結構模型。每座均以獨立成品大小設計，彼此不是共同比例，不能從模型反推真實尺寸。參考照片不隨包分發；若需商業散布或使用，請自行確認建築、雕塑、商標及其他適用權利。
+安裝 `requirements.txt` 與新增 `color-requirements.txt`，執行 `python colorize_model.py`、`python export_appearance.py`、`python validate_color.py`。分色程式只讀原建模函式定義作表面參考，不輸出新幾何。Blender：`blender -b -t 6 --python-exit-code 1 --python render_color.py`，再用 `verify_color_scene.py` 重開驗證。
+
+**未實際列印**；六種材質不是已配置或驗證的四色列印工程。原粗化雕飾、欄柱及厚度限制不變。
+
+## 來源與權利
+
+來源網址／hash 及版本列於 `COLOR-SOURCE-REGISTER.json`。政府頁公開與圖片署名不等於照片授權開放；未確認 CC 或再散布授權，原照僅私人參照、不隨模型公開、不貼圖、不保證商用。模型原授權不擴張至來源照片。
+
+原碼、ASCII STL（已實讀 release 真實位元組而非 Git LFS placeholder）與原單色場景均私人保留。來源 GO 與原圖獨審並非成品證明；本包另經原三角一致性、3MF、隔離重建、場景重開、十圖與人工視覺 QA，所有未核色面誠實保留中性。
