@@ -1,0 +1,38 @@
+{
+  "slug": "wzu-mingyuan",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "current_go": {
+    "filename": "WZU-MINGYUAN-COLOR-SOURCE-GO-2114-v2.json",
+    "sha256": "62dd137ecc7499ba983f13e5973c00b84bb544bbb55ea87741863efb71fcd43b"
+  },
+  "review": {
+    "filename": "WZU-MINGYUAN-INDEPENDENT-COLOR-MAPPING-2114-v2.json",
+    "sha256": "e64fc2794727a3f4a64ac320d841e59c34146cafa25d477fd8beeeeec02bf68f"
+  },
+  "sources": [
+    {
+      "url": "https://c005.wzu.edu.tw/ezcatfiles/c005/img/img/716/J.jpg",
+      "sha256": "9c10e08e341e72d75e3ac18c1aedc8641ddfabcdda4fb42830049447a2d6738e",
+      "date": "Photo capture date unknown; PDF edition is not capture date."
+    },
+    {
+      "url": "https://c004.wzu.edu.tw/datas/upload/files/Documents/111_1075_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8_1140312.pdf",
+      "sha256": "8dd3b916f05d2baadd88c8890bd6192dd05325a8e2f38a192169054427d7bde2",
+      "date": "Photo capture date unknown; PDF edition is not capture date."
+    }
+  ],
+  "rights": "No verified CC grant. Original official photograph/PDF private only; no textures redistributed and no commercial-use guarantee.",
+  "scope": "僅前廊欄杆、柱及門樓獨立橫帶局部灰白補色；磚瓦與混材立面仍未完成。",
+  "history": "Earlier permission for dark gable triangles withdrawn; only v2 applies.",
+  "limitations": [
+    "Centralfront y=-34 is continuous mixed brick/gray base/frame: keep entire mixed plane neutral; do not paint upper triangles orange by height.",
+    "Flank main fronts contain real brick/light edges/stonebase but missing separations, keep neutral.",
+    "Moon-window92back triangles are geometric recess placeholders; photographed opening reveals other material/space, no uniform darkterracotta claim and no white circle invented.",
+    "All sloped roof tiles where actual model surface orientation or rear extent not source-resolved, hidden court/back walls, rearroof and uncertain ground.",
+    "Unknown glass/black shaded interiors must not be painted black material just from shadow.",
+    "Both entire front gable triangles y=-41 remain neutral: photo has pale perimeter framing around dark louvers, and original1triangle per side has no separating frame geometry; painting whole triangle black would cover the real white border."
+  ]
+}

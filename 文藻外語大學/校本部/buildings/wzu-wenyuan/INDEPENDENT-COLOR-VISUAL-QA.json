@@ -1,0 +1,57 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:33:14.706987+00:00",
+  "actual_sources_viewed": [
+    "official-building.jpg",
+    "pdf-page16.png"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "findings": [
+    "Only2 exact front upper roof-slope triangles muted graygreen; ridge/back/side/underside neutral.",
+    "Only20 central outer-frame front and2 floor-fascia triangles creamgray.",
+    "Fullheight columns mixed pale/dark base have no matching split; remain neutral.",
+    "Nameplate gray-versus-blue inconsistent undated evidence neutral; no lettering added.",
+    "Roof color edge represents evidence boundary, not a claimed actual material seam.",
+    "Unknown rear/walls/windows/stairs neutral; no false diagonal paint, no background library/cross.",
+    "2023 form and2025 PDF edition not photographic capture dates;1980 original triangles and original bytes preserved."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "409884a64ac0d41bc284a6b71f5a0f4bfe9f827546d97e59f0b213793f3eb3a0",
+    "README.zh-TW.md": "409884a64ac0d41bc284a6b71f5a0f4bfe9f827546d97e59f0b213793f3eb3a0",
+    "model.stl": "59ed34ba2a8be04e11ce2a292611a47925595039534464100c5edac70ccc1379",
+    "build_model.py": "a0270791fa6c03cabbafcdc90f497ea5c99e30b00a82e3f7ba75267efa524298",
+    "colorize_model.py": "aec8c2ca9eae5a8e79349c5112f203cd56a3ff38bd97bf28bc13e41a0b74a422",
+    "render_color.py": "cd9372d66234f13230c864f045e01c4dd23a4245aef097454228ebd51c806002",
+    "color-mesh.npz": "1be26fd3e163fac93368dbf9b795a79fbb8b018f0082194d57b8aa02251439dc",
+    "palette.json": "b901634e8b34972220b5f210db563b4b4db6109634c5019d9f26af5dc473743c",
+    "COLOR-SOURCE-REGISTER.json": "dc6e82373712557c13bdc493bee66e0bc8cfb25504734c9dd5d4c5dee245638f",
+    "appearance.3mf": "d143adf370b18d76ff4d0e63c35ffd8643c8d51c23e5d2a366df8505f612a211",
+    "scene.blend": "f6c5510ae1c62c4fda965351eca7ce0dbde23045f6ecc6330063499ebad3b61e",
+    "preview.png": "15ae4531e684ad16530f2f37cd9f5d9927f375ec18cd4ed3f52b32cfc80cb23e",
+    "rear.png": "16c814d8ed356e7647d492d886dbb73a8b6887f1c0501eedfe70021e4943d3b0",
+    "front.png": "39b421272aa47a4fbdf60f592075c63a5995b61b5c58579c1b6a3b6ccb8eab7c",
+    "back.png": "fc1f012daf6fb2bdc55e71465ea2737b89b9c84eacf7017859c5f5a7afbc4c80",
+    "west.png": "23f1037d2b3b4a16430090b69ee6cbd82a3bfd1b87b51cf06e6bae01d610f16c",
+    "east.png": "7c5db6f584ea61aadf17aa08ed72cf62564b18e3111d73a8f8472509e83bbf99",
+    "top.png": "b93180ffc1022498a95d0287016bbf49664e3a7174acca6cb9c0849aae1d6a91",
+    "entry-detail.png": "595d951017fb519e0cdc816469f0f7176014180074b01c17315e46d696e6dee2",
+    "facade-detail.png": "812c236c163550951c9d5df96f3699a966b8fd9b3c4b362384460266e745fa05",
+    "roof-detail.png": "3f990ff9fc626d1b2ec0dcd10717a8a90634e4ca9bffc1fb12acaeacd7e07b78"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "5402c6d5700d45c94826bc09ec736644131d15c1983602aea744e002338413fe",
+    "SCENE-QA.json": "964822e37f20f9bca729a37d6e8d678b3068216981a54e39f42f7963318bb19a",
+    "FRAMING-QA.json": "9017b7964911980bd91b0c675273b90d6d9e8839a51f616661fad8e98e42c540",
+    "DELIVERY-QA.json": "dcb85ccf5653737e01ab365204315cfa4b96ea2ada7af326194ad5be97d00011"
+  },
+  "private_montage": "private-review/final-v1-ten-view-montage.jpg",
+  "independent_parent_review": "Personally viewed two official exterior source views, original code, preview and all ten final views. Exact two front slope faces and22 frame/fascia faces supported; unknown roof sides, mixed columns/walls/plaque neutral. Material boundary denotes evidence scope, not documented real finish joint.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2129.json": "d437f5d8c3ba27b9d59e930254b0ed8f302cf80dae2298d2e46c5b4457e4b51e",
+    "INDEPENDENT-DOMAIN-2129.json": "74896bc9f1ca34402f0f014eda8d6a863561678283b2c4985f7bb0411b58bcc7"
+  }
+}

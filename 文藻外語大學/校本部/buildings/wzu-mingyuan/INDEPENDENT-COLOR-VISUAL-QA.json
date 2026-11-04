@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:23:56.260306+00:00",
+  "actually_viewed_source": [
+    "official-mingyuan.jpg",
+    "pdf-page29.png exterior photographs"
+  ],
+  "actually_viewed_ten_final_views": true,
+  "findings": [
+    "Exactly54 existing pale member faces: four rail fronts, two central band fronts,48 post faces.",
+    "1434 other faces neutral; mixed gables not black, no false brick triangles or white moon-window ring.",
+    "Roof slope/brick/mixed facades remain explicitly unfinished; no actual full-color completion claim.",
+    "Original roof-ridge approximations unchanged; color review does not retrospectively validate geometry.",
+    "Coverage boundary not claimed as real finish joint; original1488 geometry/STL/build preserved.",
+    "No original public OBJ present; isolated generated OBJ retained only privately."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "2e200b41836a5bb71c6f590eb05f1fc22741711a69028af571a114912feaf61a",
+    "README.zh-TW.md": "2e200b41836a5bb71c6f590eb05f1fc22741711a69028af571a114912feaf61a",
+    "model.stl": "2aff6817679e3f592f1a7b41bb388d85c61a72f63abca23558dfdcd28ad232cd",
+    "build_model.py": "377e04e30b4b87f56cf7276ac5c69c9c181ef980191ff23f79c7eea47afdd4bc",
+    "colorize_model.py": "4fe8a620f89ed72dda06d95e4d2675fed2efdf30c004bb98b942b7afcf5b2894",
+    "render_color.py": "96ea71b5d444e92616da650aaf62b91960c544a1c9fca237229b6e3889949c18",
+    "color-mesh.npz": "2cc6ce4b976f5dbfb6b30b5561ee761d0f7d204236a5d4b9c26330468f5f82c9",
+    "palette.json": "ecb6012c047f7b4fb938f10de8c8cf92e3979ae80aeb1a4a93e7cd219dabf285",
+    "appearance-materials.json": "bc2aa3afee7e0a17c5e4a7be3e3b7db617eef8f47f29386667b37b5d5af59713",
+    "COLOR-SOURCE-REGISTER.json": "bcff498c31760b551d6feaafd2d3ad70bae0bde580619393532df3546a54e87f",
+    "preview.png": "85082444d56185a1846cf85192175686210fe315ca5345f03137a06b86c6d108",
+    "rear.png": "947ad45b034cb9b27ae4cedf3e8ea2d811c2c62ededc826ca53803dc2d84a1a5",
+    "front.png": "41529a9b57b9be2ca9a29e75ebf0d8146a498b4be05fdad5beab5120cff3d3ef",
+    "back.png": "f627e0796634f86c2a1c41d85a454c1fae246e7da81d0f973be688e8e19d55bd",
+    "west.png": "be26c3cbf2ca10d03dbfe3576d4a64e9f129d9348af39bba1df3374dbed6ec5c",
+    "east.png": "db0801ae7296f8624ea2a9068a50059fbb8a0e1de347c6a415d07dfd37d91975",
+    "top.png": "891a91d8cad1cc8140ea1761fb93100ee826ec604e39fd384a22ef25f3ed2ae7",
+    "entry-detail.png": "4164eb787ea76685379f4e09b5f10c336c446a6afdd911088e7c04608bd327bf",
+    "facade-detail.png": "bf733b1ec5b7d9df5058a01c2c357d805e736fe4e8ea4de75b0a01094b19e50f",
+    "roof-detail.png": "198432f14b3c88a1f285d32efed3d94b348930e760de38a96a88d82d6ea2325f",
+    "appearance.3mf": "c88706a1037a2cd80bdc628c5fb6ee7d8242720717f85d7ce5b6b150d9757763",
+    "scene.blend": "a8ad9a368e5a8a58c0c6d86efd2edfd6f035135af0efe4955f3dfcab1fbe3a63"
+  },
+  "independent_parent_review": "Personally viewed official photograph, PDF exterior photographs, original code, preview and all ten final views; exact independent domain and triangle identity PASS. Brick/tile/mixed gables unfinished; no false material wedges or black gable.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2122.json": "c52d48d2950dbc0256f57bdd827db0733c433541ef8ac68993bbc52f17bf5741",
+    "INDEPENDENT-DOMAIN-2122.json": "03ca954c661461714a3fd59eee3aefdd4fded1b68aef995c09adce58dc9fb1c4"
+  }
+}

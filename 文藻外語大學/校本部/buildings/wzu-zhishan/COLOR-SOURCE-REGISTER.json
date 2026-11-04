@@ -1,0 +1,37 @@
+{
+  "slug": "wzu-zhishan",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "WZU-ZHISHAN-COLOR-SOURCE-GO-2134.json",
+    "sha256": "20bec1f4616fd131896869b3a70eebfec50c07a18bc32158242ac4241f8b6aa1"
+  },
+  "review": {
+    "file": "WZU-ZHISHAN-INDEPENDENT-COLOR-MAPPING-2133-v2.json",
+    "sha256": "fddfd63b7b58dd5d074e7aa8b5f292c52b8715c359ee2f7bab4b65bd0ae5faed"
+  },
+  "sources": [
+    {
+      "url": "https://c005.wzu.edu.tw/ezcatfiles/c005/img/img/716/Z.jpg",
+      "sha256": "7fda1f88800e11dcfef446c745e078307f395d6a7c0a5dd13709782334e63ed4",
+      "date": "Unknown photo capture date; PDF edition not photograph date."
+    },
+    {
+      "url": "https://c004.wzu.edu.tw/datas/upload/files/Documents/111_1075_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8_1140312.pdf",
+      "sha256": "8dd3b916f05d2baadd88c8890bd6192dd05325a8e2f38a192169054427d7bde2",
+      "date": "Unknown photo capture date; PDF edition not photograph date."
+    }
+  ],
+  "scope": "僅經原刻槽完整封閉的上冠窗格及十字局部補色；曲窗、主牆及未知部位仍中性。",
+  "limits": [
+    "All main redbrick/graystone mixed fullheight walls and unbounded frontcap outer strips.",
+    "All ordinary windowbacks with reflection, frames and white curtain/opaque mixtures lacking exact original boundaries.",
+    "All curvedbay protruding rings, baseband, capdisks and unmatched sideglazing.",
+    "Unverified side/rear walls, upper slopes/roofplane and unseen rear crown.",
+    "Engraved round motif internal face is not a full reconstructed logo; leave neutral, no added design.",
+    "Entire curvedbay ring-between cylindrical bands neutral in this conservative mapping: actual photo has vertical metallic grid crossing each band, but original cylinder has no corresponding separate vertical mullion material domains. Existing polygon facets alone do not establish material divisions."
+  ],
+  "rights": "No confirmed CC grant. Original photograph/PDF private only, no public texture or commercial-use guarantee."
+}

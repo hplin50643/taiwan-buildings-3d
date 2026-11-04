@@ -1,0 +1,56 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:38:18.200786+00:00",
+  "actual_sources_viewed": [
+    "official-building.jpg",
+    "pdf-page32.png"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "findings": [
+    "Original19 front and22 right independent fins have656 actual exposed charcoal faces; backplanes not selected.",
+    "Only4 cap outer front/right fascia and16 high eyebrow outward ends gray.",
+    "Lower tile/window mixed recesses remain fully neutral; no false green pane.",
+    "High mixed brick-gray wall, longwing fullheight walls and columns, railings, rear and roof neutral.",
+    "No topology added or split; color evidence does not endorse original geometric approximation.",
+    "2023 form and2025 edition not capture dates; adjacent building excluded;2984 original faces preserved."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "23a15756578b6abdb98391532bb00be28efef2bda7f9a284cd73cabb6e6cf7fe",
+    "README.zh-TW.md": "23a15756578b6abdb98391532bb00be28efef2bda7f9a284cd73cabb6e6cf7fe",
+    "model.stl": "e441be1ba889649fd965097334f68f597d31b0bdc25fad0fb317e0c6a94cc309",
+    "build_model.py": "3c63bcc0b53709719c55116fadb5c5c80cea03aa4d15e47ddfcf21f7164e9a7a",
+    "colorize_model.py": "a655ee6043785ea1ef09f8775a335e62b15865d9bf44d471c79bd3ed32253800",
+    "render_color.py": "5e1457ba267e4cd22ce31b025cc4cbd91fdf4de00abc934c5fb5f4fcc0d30b83",
+    "color-mesh.npz": "de94238a41be14c7f0dcb3bf130d36e7af1cf2fb03cf7a7935f1ebb80f2e7c28",
+    "palette.json": "7b4cfd45a7001333f6ce406d3c62d2e8fbcddc0f6dba53d03ede8b8ca09eaa7d",
+    "COLOR-SOURCE-REGISTER.json": "72a32eb316fd9d9e6bf0cb373f634bb344526f05d4954643c2dce6687ab538b6",
+    "appearance.3mf": "69004e29ab9350fc750586a72997a06bd7385e7461f48b649717426351e8bbd1",
+    "scene.blend": "b9b20ea8f698e04e5eeace99eb742c5932c3e4b7db5c2acb5ec05f1b48d659ee",
+    "preview.png": "849147af215ec1cd9e8a0118fe39f6c13ac5a5b9a1ccc8f584767532c8d65597",
+    "rear.png": "132cf045919781253570304438dda90ed1502280e8b44be40f82de3f4c4004b7",
+    "front.png": "48a801b68599bc6595d48db589274c9a7e69d26a8856c5c36d5804bb1f7a8c86",
+    "back.png": "48c151e70542998eed30c73edb4928cbbd1a0893db5092bc841d2c0882173580",
+    "west.png": "c9e896e3a2f35f266d0c808e27f72bf8d44c38d5233c234d4ea03d5933256e7a",
+    "east.png": "610fc1502bb7862c48a0bafd2d51c2712ff3dcf49d0c2a2da20bc74cbe60b20a",
+    "top.png": "6b64018af20fca29a76fd4f465035f0727df35657ba42990bfced27b41d2e83d",
+    "entry-detail.png": "0b8c9c8b99db46b2e0858dab8f2d7314816c37df825b5f0ab956c7d5e4c8cf9e",
+    "facade-detail.png": "cf25bc1d246e4be099eaa1a661ea7d9294c0d0d8378e6bb1f532783dcc9b1e8e",
+    "roof-detail.png": "a91ec8047eb9bd11a389d7dd50c4ef89e2462442c877439ca9649254e193dfbf"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "17c63ef97ee3e9981cf78c4c9bbf65b7728633b8d6644e86b3b34b4032b0a566",
+    "SCENE-QA.json": "30638c63d53cb9784a9a054f80beca1609ac10ada06fecc011a554c62fc81ee9",
+    "FRAMING-QA.json": "1f34a82c276e6375b8ae077f1b1409920d127c51f3f169cf18d183f6976100cf",
+    "DELIVERY-QA.json": "297a3ef147d602f1b84ff18b01d5b0f079a65ce602d399bb2421d2f31251a4ac"
+  },
+  "private_montage": "private-review/final-v1-ten-view-montage.jpg",
+  "independent_parent_review": "Personally viewed official/PDF32 exterior source photographs, original code, preview and all ten final views. 656 true isolated fin surfaces charcoal;20 outward cap/brow faces gray. Mixed green/window backing and mainwalls remain neutral; partial only.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2135.json": "ce73dc50e00206e398bb2f918162c55a168e07659341692f7c991c91477a9044",
+    "INDEPENDENT-DOMAIN-2136.json": "295ac4ee62ccbdf649a6f43b11049da901db328c0912604e3bf966a02a7379a7"
+  }
+}

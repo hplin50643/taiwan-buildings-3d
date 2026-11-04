@@ -1,0 +1,25 @@
+{
+  "status": "SOURCE_BOUNDED_PARTIAL_COLOR",
+  "GO_file": "FJU-CHUNG-MEI-COLOR-SOURCE-GO-2107.json",
+  "GO_sha256": "317d7279c3771216090be5a28b7953c7e33cd7aef28579f9c32439b6feae68ee",
+  "independent_review_file": "FJU-CHUNG-MEI-INDEPENDENT-COLOR-MAPPING-2106.json",
+  "independent_review_sha256": "8dea03516b788d750c5c747a47e8a8ab5036ea411710e0877922fe9c28548f3e",
+  "door_shape_erratum": {
+    "file": "FJU-CHUNG-MEI-DOOR-SHAPE-ERRATUM-2109.json",
+    "sha256": "8fc71c5557167af2aef2fba7cf77f2358f3c50760bbaab42df85535faecb7873"
+  },
+  "source_url": "https://elibrary.fju.edu.tw/fjcustory/2-1",
+  "official_image_sha256": "800cbf53620c0dc8ec6dc842df82746616dec30e54b6e9d56c1a5a94454e696e",
+  "source_resolution": "380x219",
+  "capture_date": "unknown",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_change": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only front shell/cap, actual red door back planes and original stair tread/riser domains.",
+    "Original central arch differs from apparent rectangular photographed door; geometry not corrected.",
+    "Original image privately retained, not distributed or used as texture.",
+    "Approximate palette, not calibrated RGB; four labels not tested filament slicing; unprinted."
+  ]
+}

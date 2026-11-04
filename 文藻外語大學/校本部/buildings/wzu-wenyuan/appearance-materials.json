@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed FRONT inclined roof muted graygreen",
+      "hex": "#606B60",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "Observed central outer frame and front fascia warm gray",
+      "hex": "#CCC8B9",
+      "faces": 22
+    },
+    {
+      "id": 2,
+      "name": "UNVERIFIED mixed columns walls panes rear roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 1956
+    }
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1980 original triangles unchanged; no new or split faces",
+  "domains": {
+    "front_roof_upper_slope": 2,
+    "central_outer_frame": 20,
+    "front_floor_fascia": 2
+  },
+  "limitations": [
+    "True inclined front roof plane only; pale rim/ridge, roof side/back slopes neutral.",
+    "Mixed-height columns and broad brick/frame/window walls neutral; undated inconsistent nameplate gray-blue neutral.",
+    "Photo capture dates unknown;2023 form and2025 PDF edition not capture dates.",
+    "Material labels are not a verified multi-filament slicing job."
+  ]
+}
