@@ -1,36 +1,32 @@
-# 建國科技大學圖書人文研發大樓（2002）
+# 建國圖書人文研發大樓｜四入口柱前皮局部粉石色
 
-## 模型預覽
+**局部補色未完成：只四入口圓柱正前 1/4 的 96 原三角名義粉石色，其餘面尚未分色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 ctu-library-humanities-2002／count_delta=0，建國科技大學校本部。身份 CTU Library Humanities 2002 partial color。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
+**這是來源材色批准，不是全幾何或列印 QA 通過。原嚴格 component／surface false、有限例外與未試印限制完整保留。** 四冠腳向下控制實際 1.4874984741mm 未達要求 1.75mm；作者83/獨審215短首弦、24條0.7424642782mm首段後0.0048272640mm真空氣均不改寫。328為跨層高損樣本而非構件數。原獨審只接受指定根接有限證據，不能保證全域最小壁厚、免支撐或任意縮小。詳見未修改的 [原獨審](independent-review.md)。
 
-此為依公開照片、官方3–6樓逃生圖及2017/2023正射所建之原創外觀近似模型。已完成獨立數位核驗並獲接受本頁所列特定有限例外，遠端發布另查發布紀錄，不是全校完成或建築測繪成果。
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![四柱前皮](entry-detail.png) | ![左雙柱](facade-detail.png) |
+| ![右雙柱](roof-detail.png) | | |
 
-## 範圍與比例
-保留寬低基座、退縮高塔、兩側階梯狀退台、前入口深拱及成對柱、背面落地長玻璃幕牆、四角曲簷小亭、起伏冠座與透空立體冠。西鄰師生活動中心與北側獨立教學大樓不包含。
-- 毫米單位，底座朝下；名義1m對1.75mm。
-- 主頂56m、冠頂約73m、低部22m僅多面試配。第三方資料列主頂55.95m／結構頂75.35m，尚無官方標高交證，不能視為本模型實測高度。
-- 下部48×38m、上部35×33m為照片及影像投影有界近似，屋面高程視差不可當牆基懸挑。
-- 14地上層／2地下層為官方整棟口徑，圖書館只使用其中3–6F。模型未以14等層或總面積均分。
+## 材色範圍
 
-## 有界近似與列印簡化
-背幕牆/前中7條主要橫窗與側寬窗為可見特徵；未知側窗局部採保守淺凹，不宣稱每跨精測。屋冠基座多面起伏以有厚度抽象保留，未復刻字樣與細節。四亭曲簷分段加厚、設約1.14mm實簷板且各亭頂平端約1.5mm寬，鋼冠桿、匯交頸根及窗框適度加粗（新增窗框約1.05mm）、保留實體背接。球形冠尖頂端截去名義0.35m（模型0.61mm）形成小平帽，仍保留圓鈍外觀；入口山花尖端截約0.3m（模型0.53mm），防止細尖層消失。入口階梯逐級微展寬以避免共面退化，並非實測梯寬。
+原四柱中心 x=-8,-5.8,5.8,8m，y=-24m、半徑0.75m、48邊，原尺度1.75。只k30..41共48個完整有限chord立面，每域2三角，共96。以原三頂點plane/tangent與原union露出z6.125..16.625mm核，不用normal/centroid漏面；不造照片凹槽。柱基/帽/側後、黑邊拱/有字門楣山花、混框反光玻璃、主牆/露台/亭屋/鋼冠全部未知中性。資料界線不代表真實材料接縫，中性不是已證實現場灰。
 
-## 檔案與使用
-build_model.py為原創可重建參數；model.stl為列印候選；scene.blend由同一STL匯入。previews由實際STL渲染。來源照片只私用核對，不隨公開包散布。
-底座朝下，拱廊、曲簷及鋼冠可能需要支撐；細節解析度依設備而異。數位幾何、逐層輪廓、0.8mm opening及有限射線抽查不等同切片工具路徑或實體試印，不保證免支撐或全域最小壁厚。
+原11418三角不改，96名義粉石色#BBA09A、11322未知中性#B8BAB5。不是精確石種/色票，兩外航拍只補身份與全貌，不擴柱全周。
 
-## 檔案
+## 原件與限制
 
-[STL](model.stl) · [可編輯場景](scene.blend) · [原創參數](build_model.py) · [來源](sources.json) · [核驗與待審警告](QA.md)
+42 immutable 原件無OBJ；原code也不因本次補色生成新原件聲稱。原STL/build、原qa-summary/validation/independent-review及所有原false值原樣保留。原README.md另存ORIGINAL-PREVIEW-README.md，原scene公開別名ORIGINAL-PREVIEW-scene.blend及私存全包，原renderer/previews不改。原實際scene單展示材不等於已驗精確實景色。
 
+原四角亭/冠球/山花截尖與加粗近似保持，不加厚、尖化或改善原網格。來源capture未知，網站URL/發布日及2017/2023正射影像年代不構成同一時點或2026現況。照片只私存不公開貼圖。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![屋頂](previews/top.png) |  |  |
+## QA範圍
 
-## 獨立核驗與有限例外
+本次只檢原字節/三角multiset不變、共面一致、材色格式、隔離原build+color重現、3MF/reopen與十張1200×900。新同幾何identity PASS不是舊strict false變PASS；不重新執行或追認全域厚度/列印認證。隔離重建保留不刪，未試印/多料切片；STL無色。原有限例外需試切片、適當支撐與小心拆支撐。
 
-[完整精確補充與支撐限制](independent-review.md)及[結構化證據摘要](independent-review.json)保留原嚴格警告。原 component／surface 報告仍為 false；不是全表最小厚度達標，也沒有實際試印。模型實際最大尺寸130.1125030518mm符合≤150mm規格；早期固定「必須150」檢查結果保留於獨立紀錄，沒有為此縮放。
+CTU Library Humanities 2002 partial color. Only the front quarter of four existing 48-gon entrance shafts receives nominal pink stone: 96 original triangles; 11322 unknown neutral. Original 11418 triangles and all 42 immutable files remain unchanged, no original OBJ exists. No fluting or geometric repair is added.
+
+SOURCE-COLOR APPROVAL ONLY. Format and unchanged-geometry identity checks do not certify all original geometry or printability. Original component/surface strict false values, downward crown-foot control 1.4874984741mm versus required 1.75mm, author83/independent215 short first chords, and 24 first segments of0.7424642782mm followed by a real0.0048272640mm air gap remain unchanged.328 means cross-layer samples, not structures. Original finite-root exceptions do not establish global minimum thickness or support-free printing. Retain flattened lantern/crown/gable approximations and no physical-print limitation. Consult unchanged independent-review.md and original structured QA. No2026/single-date survey claim; no public source photos; count_delta=0.

@@ -1,0 +1,15 @@
+"""Complete original Boolean main upper cap front, no fill of truncated left end."""
+from pathlib import Path
+import numpy as np,trimesh,json,hashlib
+R=Path(__file__).resolve().parent;H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();expected='ae70a8c5ae538b1e10b03eae8bff0f65f69126deed0a6db94ec8633ce331e99a';assert H(R/'model.stl')==expected
+m=trimesh.load(R/'model.stl',force='mesh',process=True);assert len(m.faces)==5774
+t=m.triangles;n=m.face_normals;e=.0001;a=np.full(len(t),1,np.int32);D={}
+ids=np.flatnonzero(np.abs(t[:,:,1]-4.5).max(1)<1e-5);assert len(ids)==3
+edges=m.face_adjacency;edges=edges[np.isin(edges[:,0],ids)&np.isin(edges[:,1],ids)]
+pcs=trimesh.graph.connected_components(edges,nodes=ids,min_len=1);assert len(pcs)==1
+assert (t[ids,:,0]>=-45-1e-5).all() and (t[ids,:,0]<=69+1e-5).all()
+assert (t[ids,:,2]>=106-1e-5).all() and (t[ids,:,2]<=108+1e-5).all()
+D['complete_main_upper_cap_front']=ids.tolist();a[ids]=0
+ad=m.face_adjacency;cop=(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999;cs=trimesh.graph.connected_components(ad[cop],nodes=np.arange(len(t)),min_len=1);assert all(len(set(a[c]))==1 for c in cs);assert np.bincount(a).tolist()==[3,5771]
+pal=[('Meiho Zhimei Dormitory observed main upper cap front nominal coolgray','#C5CDCF'),('UNVERIFIED main walls entrance windows roofs neutral','#B8BAB5')]
+np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((a==i).sum())}for i,(name,col)in enumerate(pal)],'domain_face_indices':D,'coplanar_components':len(cs),'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'5774 original triangles unchanged','limits':['Left return upper cap extends beyond the crop; no mirrored assignment.', 'Rounded stair tower mixes pale structural rings and glazing; stair cap, raised corner finials and unknown rear/top remain neutral.', 'Balcony short panels and metal railing portions are distinct in the photograph. Do not color the entire proxy balcony or repeat a palette across seven rows without separate verified whole-domain mapping.', 'Main walls include gray bands, cream surfaces, red name lettering, equipment and windows without corresponding original material boundaries.', 'The lower canopy is green transparent/gridded material in the entry photo while the original is a solid thick box; do not fill it green. Column bases, steps, interior and hidden ground portions also remain neutral.', 'One partial photo-derived court wing plus approximate left return, not all dormitory wings or surveyed bounds. South campus identity retained while original repo校本部 path stays unchanged.']};(R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n');(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','original_STL_sha256':expected,'triangles':5774,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(q['palette'],'components',len(cs))

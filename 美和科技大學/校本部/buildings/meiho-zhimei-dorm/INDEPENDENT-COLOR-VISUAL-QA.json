@@ -1,0 +1,65 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed two official exterior photographs, original code/preview and all ten final renders; parent separately reviews before freeze. Color/unchanged-geometry checks only.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole y=4.5plane3 onecomplete sharededge component;3nominalcoolgray5771neutral.",
+    "All1544coplanar components uniform; originalBoolean left edge-29.937822 preserved,not filled to idealcapx-45.",
+    "Courtphoto directly shows complete mainupperfascia; entryphoto does not itself establish highestroof. Only grayfamily,not calibratedpaint.",
+    "Leftreturncap beyondcrop,roundstairmixedglazing/structure,cornerfinials,mixedwall/redletters,balconyproxies,green transparentcanopy representedsolid,unknownroof/ground/side/back neutral.",
+    "Seven wholeviews fit; threecloseups show entiremainfascia,leftBooleancontact and fullrightend.",
+    "Original5774triangles and17immutablefiles unchanged, no originalOBJ. ActualREADME.zh-TW.md preservedalias,not inventedoriginalREADME.md. Originalscene/render/previewhistory preserved.",
+    "Correct 致美軒,not至美/致和軒. Source southcampus identity with originalrepo校本部 path retained. Onepartialmainwing plus approximateleftreturn,countdelta0,not fullresidence.",
+    "Original595sections/119sampledlayers and maximum0.0016446695418172509openingfraction not exhaustivewallthickness/physicalprint certification.",
+    "Captureunknown,no2026claim,no publicsourcephotos. Actual3MF/scene/fourscripts Meiho Zhimei Dormitory partial color identity/RGB/BSDF verified."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "f66a768179e3309112a0ab0a3f68859eddab1cb7c06b7dd1f5c625ddf04c0ada",
+    "README.zh-TW.md": "f66a768179e3309112a0ab0a3f68859eddab1cb7c06b7dd1f5c625ddf04c0ada",
+    "colorize_model.py": "ce0bcd884a0b7e6d40ac71b6450a03f4a050438c5b5dd25928f182986b08a4e6",
+    "render_color.py": "3486cc2e95dc49938720c86d4ecd198962cf2fcf289a3d84e8cfe5e7b5c27669",
+    "color-mesh.npz": "cb72e187b500d84e57af7d88da01596ae2eb8af35a62cffe60daa6e13d494fd5",
+    "palette.json": "a0634349b35d31fd9ce0348ae9ca84558828f4b8deac2f21cf8b2c5a9a6f1275",
+    "appearance-materials.json": "34a6ceb0593ea6ca25a9b5285639e24c1b61cf40686321701b0cd9a012087222",
+    "COLOR-SOURCE-REGISTER.json": "fee8527c4283f4a80ce5e5621b2569d687ffda38296aa98b00088f5df2da3301",
+    "model.stl": "ae70a8c5ae538b1e10b03eae8bff0f65f69126deed0a6db94ec8633ce331e99a",
+    "build_model.py": "8e4b502bf6fd33ef623541f2c57e20def5cc2f8711e1da7dd97b81ea6871acd4",
+    "PREVIEW-TRANSITION.md": "d7ed0854f74cf4d13ec538dcc18beb33d29bf63dc1e8c5e2e75985bde95d2fb8",
+    "preview.png": "61ccdaf40aa8f2e759888bd5b3712c4caef64ad485129e361d4558153215aa9a",
+    "rear.png": "8989652b394492d47daf9be09c06dbfa680a20159f2ed913ba0b1f0ceab3e0e8",
+    "front.png": "85f0943797d72444abafdb10b04357c217073aeb05ee494afcd71fb1a536574a",
+    "back.png": "685ce28a0d645c0156563a03851eca9cb18ccfef1f9087f62a2265149d1cfda1",
+    "west.png": "1898b8f20bbea913c0427b30dd0626a33b4db084780ed2a29028253ae6c9b16a",
+    "east.png": "da232a3516fcbfbfb8b3e0b864c59f9c9165ad2c715059f0a84d6371c9369a0c",
+    "top.png": "642993f1bbf35614e5724bf96e379db8ac695c344f6ad000fe3adeaae0d15f27",
+    "entry-detail.png": "b4beb0d539f22e89e202c9fcb399c3444b5de5cae2d8ca80c5eae20f46fb1dd0",
+    "facade-detail.png": "bd90b06444927969635a4062e04476622098911ba9b382f52de0a6b249760715",
+    "roof-detail.png": "67049adf9e20fdbeeb3efbc09d3bf2efec64c70164826469b0067e838be62161"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "f21a6f9acd5c484bcde12e1f5755e84f46307c93d87919125c747638a7080620",
+    "SCENE-QA.json": "4cb3e1e19125d4cd1b6b2e87913b6eb40db557694646c7bc19e9661e87ef15b8",
+    "DELIVERY-QA.json": "d39673d6840c5a9285671ffc8f4cf3e9f8fc10274b012b91a0143ae74d53522a"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "1fd7e7e8b32c45bfcdc9aed62f91e76e8677ebbe5a13bdca98295f13f4d78340",
+    "ORIGINAL-RETENTION-QA.json": "895674f449bf49ff6362d76ca19a24dbef6475a74e74a935e8ad929214dcff21",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0932.json": "a111c7e90aba9e21297e0f713a73cbe63cc66b600e22821f8f0be6dde4db497f",
+    "INDEPENDENT-IDENTITY-0931.json": "dec027252291e24abc1b0ebd3502fe84fa02d9f5f974f2c3e07138c01d5501fc",
+    "INDEPENDENT-PACKAGE-IDENTITY-0934.json": "6dba59c1803534309e7ee0957de4752cb25bc5af26279c67731565b13e2b1bfe"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T09:34:43Z",
+  "parent_review": "Parent personally viewedtwoofficialphotos/code/originalREADME.zh-TW0928-29,preview0931,finalten0934. Originalmainuppercapadd12,23,106,114,37,2 giveswhole y4.5single3trianglecomponent; allpointsfiniteoriginalrectangle, actualBooleanleftend-29.937822 retained, raw3equalsNPZcoolpalegray. Other5771unknownneutral includinggreenperforatedcanopyrepresentedsolid,raisedcaps,leftreturn,roofandglass. Original5774triangles17files/noOBJ byteexact,1544coplanardomainsuniform. Sevenwholeviews andthreecloseups showcompleteupperfascia andbothoriginalends, no blanketblue roof. ActualMeihoZhimeiDormitoryscene/3MF/fourscripts/paletteRGB identityPASS; correct致美軒, Southcampusdescriptionbutoriginalrepo校本部 unchanged. OriginalREADME.zh-TW alias retained,partialcount0,notphysicalprint/fullcolorvalidated."
+}

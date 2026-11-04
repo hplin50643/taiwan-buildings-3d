@@ -1,0 +1,66 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed two official exterior photographs,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole y=-14 plane4 gives two separate complete2triangle highestbrow frontrectangles.4lightgray2856neutral.",
+    "All676coplanar componentsuniform; all original ends retained,leftx-72..-18/rightx-6..72,z61..62.799999.",
+    "Two official photographs directly support twinfrontbrows;2023-05-21article eventdate not everyimagecapture,no2026claim.",
+    "Roofupper/side/under,lowercroppedcanopy,obscuredpillars,mixedbalcony/glass/centraltiles and artificialrear neutral.",
+    "Sevenwholeviewsfit;threecloseups show both highestbrows/fullleft/fullright frontedges.",
+    "Original2860triangles/STL/build/OBJ and26immutablefiles retained;originalscene/publicalias bytes verified.",
+    "Actual originalscene singleWarmstone assigned2860faces,not previous multicolor sourcegap.",
+    "24mmdepth artificialentrancefacadesection,not entire residence or surveyedrear,count_delta0.",
+    "Actual3MF/scene/fourscripts NTOU Matsu Dorm Entrance Section partial color identity/RGB/BSDF PASS."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "a04bd8f5d5dc7ef3d0ed51e7387920c9915fff66beefd51599e2f2aa979a5acf",
+    "README.zh-TW.md": "a04bd8f5d5dc7ef3d0ed51e7387920c9915fff66beefd51599e2f2aa979a5acf",
+    "colorize_model.py": "2caad3d00e4ea48f4966d4ffe22a1cfdda6719648a4f85bce8b68c1afea9d05b",
+    "render_color.py": "5130e3b5d1f488007ed616480d6f33692aff2aff9ea16d46e133073e58c0471c",
+    "color-mesh.npz": "4c699121869a7f38deafb3de053852dce3453ea57ee487ef53e67cdf1fe47959",
+    "palette.json": "4927fb47766e3c9b54898aa722efff4878dfc3e9a0cf623d9c849b293a93e146",
+    "appearance-materials.json": "e5e95519488001d64e8b49f52f1096fd7a69370b12aab006457dd2a8da0d89ea",
+    "COLOR-SOURCE-REGISTER.json": "6e33f21ee5bceea0673df3904164fc933737eddf6ecea0c0c54b40593b95cb43",
+    "model.stl": "85bfde8fc1fd94aba8d838a41cb7faf6e47199c387ac8649f277cc41c90b86c5",
+    "build_model.py": "3e7ff38fbb815a0d87569f94c4157bd55c0b2d816957609a87b910618cdcc621",
+    "model.obj": "a2297ce35b5545d0f5e8b29e88e9fc4fb0093b0caec44f10f029e97e14f39e63",
+    "PREVIEW-TRANSITION.md": "80b921a38333896f63403448cf345139c4cfb6b6f5698aa51d53d6da093d6588",
+    "preview.png": "47cf1b84957a8efe192b66c77b6ec9966738d5d132210832bb946ba5efb15c26",
+    "rear.png": "adc56b87ec63071b025e214ab7755a67a0c6d6677dcee18b6f1485a6b9a03936",
+    "front.png": "c0ce6b19d3757054dbec02424ea5048674b3eed80385c0cfd68202f9f5cbda93",
+    "back.png": "2d04495dce616ef70e85a705be42c9c4cf4c0e2ec933c27b9b2abb5d103c3510",
+    "west.png": "27365f95f87645462d1fa4d8d5baa688ccf380a5ba5092a95c94b544fe44b45d",
+    "east.png": "5c1809285109860705397acdbcd75d9244b973919ca56385144246bffe7f7b7c",
+    "top.png": "b991ce96ac0daa6345d2f414e062dded0bc67d503c5a7fd3e309f5b2a8b721e5",
+    "entry-detail.png": "750b7d7c9e5a62bd6f2613362cae4d8af53f8a2db9e29a6d136264c2e58a061e",
+    "facade-detail.png": "0339379d7ae820aa8f131f4a397b9c6b9163e34112ba914b8d507d8f3806dd10",
+    "roof-detail.png": "453489aa38ff5e32ae371e5c483dac79cb98d2607d63b92d51c7c66e3ffc7eb1"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "d3659f94464808ecb5ec0e48c9646baece420210950ace25268e1728499b74de",
+    "SCENE-QA.json": "72f014fac438abe46a6f7e82b031faade748131b769d15db002676ee2fc7ef63",
+    "DELIVERY-QA.json": "d938e77fca00301c308c9fc3cd3abc3630011af127b30066a059969207147b09"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "94b7604af84b235f6f1fc8dc0db871f1b3fcb421f8176b1df2125b47a166cdf9",
+    "ORIGINAL-RETENTION-QA.json": "4204f13b2fdbf6e931824fdabb07ce875c5ac778b2e9c2fc290ba80ae7e9db12",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0836.json": "46f264a1324183cdf94ffc8ffeb28d20bc6fe3b18d6ae5e13c2f25248749a44a",
+    "INDEPENDENT-IDENTITY-0836.json": "a8ecfde79d7d053335da519defc313166db94839ef2b4aa95d89dfce32ed6527",
+    "INDEPENDENT-PACKAGE-IDENTITY-0841.json": "4432d8998b0533169b10a76df6a1400c76e2999dbbc7feb732e1b66b54b65bce"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T08:41:02Z",
+  "parent_review": "Parent personally viewed twoofficial photos/code0834, preview0836, finalten0841. Whole y-14plane four originaltriangles equals two complete highcapfront rectangles54/78wide,z61..62.8; exactraw4 equals NPZgray. Other2856unknownneutral including roofs/obscuredcolumns/lettering/mixedwalls/glass. Original2860triangles26files including actualOBJ a2297ce35b5545d0f5e8b29e88e9fc4fb0093b0caec44f10f029e97e14f39e63 byteexact;676coplanar domainsuniform. OriginalsingleWarmstone confirmed, not sourcegapclassification. Sevenwholeviews and threecloseups show twincompletecaps and centralgap, no extrapolatedback. Actual NTOU Matsu Dorm Entrance Section identity Blender/3MF/fourscripts/paletteRGB PASS. 24mm artificialentrance slice notwholeDorm, partialcount0."
+}

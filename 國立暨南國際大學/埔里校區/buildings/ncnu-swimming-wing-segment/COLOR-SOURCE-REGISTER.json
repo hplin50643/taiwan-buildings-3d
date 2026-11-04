@@ -1,0 +1,39 @@
+{
+  "status": "SOURCE_GO_BOUNDED_PARTIAL",
+  "building": "NCNU Swimming Wing Segment",
+  "source_go_sha256": "4500e9a725037d14f81a102838a60b936ff6173bf464efae790a4a75c23d25ca",
+  "independent_review_sha256": "699b324d0d6f539ae1eb60f0c5514637b1753e5b8eda50ac13192cafe7c7948e",
+  "existing_preview_transition": {
+    "old": "Original two assigned preview/depth materials remain immutable in original scene/preview/history; not originally mono or verified source-wide color.",
+    "new": "64 whole original left curved roof-end triangles nominal light gray; remaining6292 unknown neutral in new bounded source variant. No new building/count0, not fullcolor."
+  },
+  "sources": [
+    {
+      "name": "official-sport-l.jpg",
+      "sha256": "2a18fcb83d508df53843a71076e273854e35da8df5b139d77ea604f318e7262b"
+    },
+    {
+      "name": "architect04.jpg",
+      "sha256": "269422fd666a8f60d06443a54d79fe49a5cf676329a4586d1274b1914d664b2e"
+    }
+  ],
+  "sources_private": true,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "geometry_unchanged": true,
+  "source_dates": "Official EXIF2012 metadata unverified;architect URL2024/08 not capture;not2026",
+  "allowed": [
+    "64 complete original left curved roof-end triangles light gray"
+  ],
+  "unknown_neutral": [
+    "Long front roof edge right end is cropped in official-sport-l and architect04; cannot transplant ball-hall62faces or approve this wing long fascia.",
+    "Full roof upper/underside skins and opposite end stay unknown neutral.",
+    "Long raised roof monitor extends beyond sourceframe and contains glazing; no full cap gray or blue glazing.",
+    "Balcony complete front frame mixes gray borders and brick cheeks in connected original faces, with vegetation near lower edges; no blanket gray frame.",
+    "Front screen wall contains text, signage/banner and gray courses without matching material boundaries; no all-red screen.",
+    "Window/door backings mix frames, reflections and panels; no all-cyan material.",
+    "Rear and connector plain cuts, ground level proxies and all unlisted triangles stay neutral."
+  ],
+  "private_source_backup": "Sources private; no source photos or private identifiers distributed."
+}

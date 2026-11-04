@@ -1,38 +1,32 @@
-# 美和科技大學致美軒宿舍
+# 致美軒宿舍｜主翼最高前簷局部冷淺灰
 
-## 模型預覽
+**局部補色未完成：只內院主翼最高前簷完整3原三角名義冷淺灰，其餘面尚未分色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 meiho-zhimei-dorm／count_delta=0。美和科技大學致美軒，非「至美」或致和軒；來源南校區身份與原repo校本部分類並存，不自行改路徑。身份 Meiho Zhimei Dormitory partial color。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+只原可見主翼及局部近似左回翼，不是全宿舍或全基地測繪。原5774三角不改，未補原Boolean截口。
 
-南校區。這是公开外觀照片推估的可列印建築微縮研究，非測繪級BIM。館名依總務處和招生中心核對；現行網頁不保證照片為2026年。
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![主簷全幅](entry-detail.png) | ![左Boolean接界](facade-detail.png) |
+| ![右完整簷端](roof-detail.png) | | |
 
-## 外觀依據
-- 內院主立面的深陽台、短欄板與連續層帶
-- 左側部分折返翼、轉角圓形樓梯塔、端部高出屋面小塔
+## 材色範圍
 
-## 尺度與未知處
-- 含底板 150.00 × 111.00 × 119.00 mm；各棟獨立縮放至最長150 mm，不能當同一比例校園拼圖。
-- 無實測尺寸。整體深度、背面、隱蔽屋頂與被樹遮蔽位置為目測/簡化；背側不任意複製正面窗格。
-- 官方照片很小，門窗数量、柱距、曲率及細部不是精密還原。省略空調、海報、文字和細欄杆；細框為列印加厚。
-- 只重建本棟，不連同鄰棟、校園景物、中學或幼兒園。樓層表含屋頂層，與照片可見完整樓層不直接相等。
+先枚舉whole y=4.5無限平面所有3面，共享邊BFS一個完整3三角域，再核原有限帽邊x−45..69/z106..108。原union實露左界−29.937822，不填成理想114寬，不以normal/centroid漏片。3名義冷淺灰#C5CDCF、5771未知中性#B8BAB5；1544共面域一致。資料界線不是真實材色接縫，中性不是已證實現場灰。
 
-## 檔案與重建
-安裝 requirements.txt 所列Python依賴，執行 build_model.py 產生 model.stl/model.obj。Blender執行 render_preview.py 從實際STL匯入，產生可編輯 scene.blend 及正面/背面/立面預覽。再執行 validate_model.py、check_layers.py、check_thin_features.py。
+內院照可核主簷從圓梯接界到右外角，入口照只補同棟與低層，不能證最高層。左回翼帽出畫、中間圓梯混環玻璃、塔帽、陽台實板代理與真欄分界、混灰奶白主牆/紅字、窗反光框皆中性。下綠透棚原為厚實板，不能整染綠冒充透明格網；柱基/階/隱蔽地面/屋上底側背皆中性。
 
-## 驗證及列印限制
-- 原STL法向、流形邊/頂點、正體積、一個連通外表面、無分離內腔殼、原始重建SHA與blend/STL三角幾何：通過。
-- 0.2 mm高度間距共 595 層截面閉合檢查：True。數值採非共面微偏移，非真正切片器路徑。
-- 0.8 mm XY形態篩檢於1 mm間距抽樣，0 層超過1%形態開運算面積損失，最高 0.16%。小轉角也計入，不等於確定失敗或完整壁厚檢查。
-- 挑空、水平屋簷、雨庇及窗洞頂緣可能需要支撐；請依材料、方向和切片器先檢查。未完成實體試印、支撐可移除性測試或完整切片驗證。
+## 原件與日期
 
-來源見 sources.json。第三方照片只供內部研究，本交付不包含原照片。
+17 immutable原件無OBJ；原code會export OBJ不當原repo已有。原README實名README.zh-TW.md，保於ORIGINAL-PREVIEW-README.zh-TW.md，不捏造原README.md。原STL/build/QA/render/previews字節不變，原scene另名ORIGINAL-PREVIEW-scene.blend且全包私存。新色版不覆原資料/幾何。
 
-局部範圍：只模型化照片可辨識的內院主翼和左侧回翼；回翼長度和背面推估，不代表全宿舍建築群精準棟界或所有翼樓。與致和軒A/B棟不可混同。
+兩官照capture未知，目前頁面不代表2026拍攝；來源地圖只校區位置，不取建築材色。原595個0.2mm截面閉合、119個1mm抽層0.8mm XY opening、最大0.0016446695418172509及原canonical-edge-v2紀錄保留，不是全域壁厚證明或實際切片試印。原幾何近似/未知背側依舊。
 
-## 薄篩數值修訂
+原build+color精確隔離重建、原全字節/triangle multiset、共面整域、3MF/reopen與十圖1200×900/explicit身份QA。重建保留不刪，未多料切片/試印，STL無色。來源原照私存不公開貼圖。
 
-本包直接採canonical-edge-v2：固定共邊方向插值，節點度數2、閉環及Polygon有效斷言通過後，才進行1 mm間距0.8 mm XY開運算。舊算法可能因獨立端點取整漏環；舊工具/結果已替換，不是僅增附錄。STL、Blender、重建來源及原0.2 mm閉環驗證不變。
+Meiho Zhimei Dormitory partial color. Only the complete main court-wing highest fascia front receives nominal cool lightgray:3 original triangles,5771unknownneutral. Whole y=4.5plane is one3triangle connected domain. OriginalBoolean left edge -29.937822 retained, not filled to idealcap x-45. No geometry change;1544coplanar components uniform.
 
+Partial maincourtwing plus approximateleftreturn,not full dormitory/site. Correct official name 致美軒. Source southcampus identity retained while originalrepo校本部 path unchanged.17 immutablefiles include README.zh-TW.md and noOBJ. CodeexportsOBJ do not establish an originalrepoOBJ. All originalbytes/history preserved,scene/readme/render aliases retained,count_delta0.
 
+Lower green transparentcanopy remains solidproxy neutral; tower/glass/shortbalcony panels/mixedwall/redlettering,unknownleftcap/roof/back neutral. Twoofficialphotos undated,not2026. Original595closedsections/119sampledlayers/maximum0.0016446695418172509openingfraction not exhaustive thickness or physicalprint certification. Sourcephotos private; no full-color claim.

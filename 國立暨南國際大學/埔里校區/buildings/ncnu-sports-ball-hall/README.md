@@ -1,60 +1,34 @@
-# 體育健康中心綜合球館量體
+# 暨南體育健康中心綜合球館｜前長屋緣局部淺灰
 
-## 模型預覽
+**局部補色未完成：僅前長屋緣完整62原三角淺灰，其餘面尚未分色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 ncnu-sports-ball-hall／count_delta=0，國立暨南國際大學埔里校區。身份 NCNU Sports Ball Hall partial color。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 交付 STL 正面<br>![正面](previews/front.png) | 交付 STL 背面<br>![背面](previews/rear.png) |  |
+**原版已有兩類深度展示材，不是真單色。這次只將62有據面設淺灰，其餘4664未知中性；舊scene/render/預覽完整保留，非新增建築或全色完成。** PREVIEW-TRANSITION.md 說明版本轉換。只五菱形窗球館量體，不含泳池翼、健身水療區、相接入口大廳。
 
-國立暨南國際大學 · 埔里校區 · 公開照片近似外觀模型
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![前緣全幅](entry-detail.png) | ![左緣Boolean交界](facade-detail.png) |
+| ![右緣Boolean交界](roof-detail.png) | | |
 
-體育健康中心中有五個菱形窗的綜合球館外觀量體；不含游泳館、健身/水療區及連接入口廳。
+## 完整原域
 
+原三頂點whole y−41無限平面枚舉62面，exact共享邊形成單一完整連通域。先整plane後記原x±68、z59..60.8，原Boolean支撐侵入/缺口保留；實露面積218.352804mm²，並非136×1.8=244.8mm²完整矩形，不補缺面或染支撐。名義淺灰62、其餘4664中性，原4726三角保持。
 
-[俯視](previews/top.png) · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數腳本](build_model.py)
+三張官方及設計方實照支持前長外緣灰色族，不是屋頂整面或側後鏡射。弧屋上皮/底/後簷未知中性；菱窗背混反光框不整藍。磚牆及柱原面混灰橫帶無界不全紅，斜撐/拉桿各面遮擋不全白。門/字樣/下方遮蔽/地面未知全中性；來源範圍不是真實材界、中性不表示實景灰。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) |  |  |
+## 範圍與日期
 
-## 範圍與辨識特徵
-- 五個大菱形窗、底部兩端門洞
-- 高窗、百葉帶、前側斜撐與深屋簷
-- 跨短向的緩弧大屋頂
-- 側牆高大磚扶壁及水平腰線
+原solid外觀、估測寬深/屋弧、五窗、粗欄及未知後面保留，不因材色追認精測。三照無統一可驗拍攝時點，來源發布不作capture、不稱2026現況。原照及取圖紀錄私人留存，不公開照片或貼圖，不推定商用授權。
 
-## 比例與列印
-- 單位為毫米；含底座外廓 150.0 × 98.0 × 68.6 mm，最長150 mm。
-- 每件採獨立縮尺，不能直接和其他件拼成同一比例全校模型。
-- 底座朝下。先以0.4 mm噴嘴、0.2 mm層高在自己的切片器檢查；這只是起始參考。
-- 雨遮、屋簷與斜撐下方可能需要支撐；請檢查橋接跨度及拆支撐可及性。細柱與突出窗框拆支撐時易折，避免再縮小。
-- 已作數位幾何檢查，未作Cura/Prusa實際工具路徑驗證或實體試印，不能保證一次列印成功或無需支撐。
+## 原件與QA
 
-## 證據與限制
-- 後立面沒有取得足夠照片，刻意維持簡化素面；沒有把正面菱形窗鏡像到背面。
-- 進深與弧頂曲率依斜視照片目估；不是實測或竣工圖復原。
-- 館內體育空間未挖空；此為實心外觀量體，屋簷斜撐局部仍有懸挑。
-- 校徽及極細百葉不逐一複製；窗以淺凹帶表達。
-- 所有圖片來源均為真實公開照片；未把效果圖或校園插畫當測繪資料。
-- 原照片拍摄年月未註者保持未知；網頁發布日、圖片路徑月份與查閱日不能當作拍攝日。
-- [來源與特徵對照](sources.json)。第三方原照片只供查核，本包不重新散布。
+原4726三角/STL/build字節不變，immutable20件無OBJ、無原appearance.3mf，不虛稱舊3MF存在。全原包私人保存；原scene另公開ORIGINAL-PREVIEW-scene.blend，render_preview.py保原並有ORIGINAL-PREVIEW-render_preview.py別名，previews/原歷史不改。原README.md另存ORIGINAL-PREVIEW-README.md；原QA不當新QA。
 
-## 重建與驗證
-使用 Python 3.11+ 安裝 [requirements.txt](requirements.txt)，並安裝 Blender 4.3.2 或相容版本。
+新appearance.3mf與scene.blend及export/validate/render/verify身份 NCNU Sports Ball Hall partial color。精確依賴隔離原build+color/原三角multiset/共面一致/3MF/reopen/十張1200×900 QA，保留重建不刪。未試印/驗多料切片，STL自身無色。
 
-1. python build_model.py
-2. blender -b -t 3 -P render_preview.py
-3. python validate_model.py
-4. python check_contour_validity.py
-5. python check_thin_features.py
-6. python run_all_checks.py（統一重跑以上檢查及invalid Polygon反例測試）
+## English limitations
 
-[原STL/重建/Blend驗證](validation.json)：所有checks為true，原STL水密、每邊兩面、頂點link單環、原法向和繞序一致、正體積、單一連通表面，重建STL SHA相同，Blend座標與交付STL一致。
+NCNU Sports Ball Hall partial color. Original2depth-preview materials are not source-certified real colors or monochrome. Preserve original scene/render/preview aliases and full private package; new62frontfascia lightgray/4664unknown neutral is a count_delta0 source-gap correction,not complete coloring.
 
-[0.2 mm逐層輪廓](contour-validity-check.json)：343層；固定起始z=0.071 mm，所有節點degree2、個別及合成Polygon有效，遇invalid立即失敗退出，沒有修補後通過。
-
-[0.8 mm參考寬度輔助篩檢](thin-feature-check.json)：1.0 mm層距、69層；形態opening最大面積損失 0.536%。這不是全表面最小壁厚證明，也不是切片器模擬。
-
-scene.blend含由本STL匯入的單一可編修網格；原始參數在build_model.py。預覽圖由該STL實際渲染；凹槽底面以較深預覽色強調深度，不是貼圖或新增玻璃平面。STL本身無顏色。
-
-本件完成不代表全校建築完成。最後資料查閱：2026-10-13。
+Whole infinitey=-41plane gives62triangles,one exactedge-connected component. Original union interruptions retained; exposedarea218.352804mm2 is not136x1.8 rectangle244.8. No added boundaries or missing geometry. Curvedroof/under/oppositeeave,mixed brickgraywall,glass/reflections,braces/rods/doors/rear neutral. Only existing five-diamond hall,not pool/fitness/hydrotherapy/connecting entrance. Original4726triangles,20files,no originalOBJ or3MF. Capture not verified as one date/no2026claim/private photos/no testprint.

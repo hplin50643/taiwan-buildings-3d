@@ -1,41 +1,32 @@
-# 王光祥暨海大校友國際學舍・入口立面段
+# 海大馬祖學舍入口立面段｜兩最高簷前緣局部灰
 
-## 模型預覽
+**局部補色未完成：僅兩最高簷完整前緣4原三角淺灰，其餘面尚未分色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 ntou-matsu-dorm-entrance-section／count_delta=0，國立臺灣海洋大學馬祖校區。身份 NTOU Matsu Dorm Entrance Section partial color。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面／截面<br>![背面](previews/rear.png) |  |
+**原24mm深是人工入口立面截段，平後面是截界，非全學舍/非真實後立面。** 原scene全2860面同一Warm stone展示材，確為單材；原預覽及scene別名照原字節保留，非因補色增加測繪精度。
 
-國立臺灣海洋大學／馬祖校區。局部件，不計全棟。依公開實照自建的近似縮模，非測繪、非建築施工模型。
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![兩簷全幅](entry-detail.png) | ![左完整前緣](facade-detail.png) |
+| ![右完整前緣](roof-detail.png) | | |
 
+## 完整原域
 
-[正立面](previews/elevation.png) · [中央窗組近圖](previews/center-detail.png) · [俯視](previews/top.png) · [STL](model.stl) · [可編輯Blender檔](scene.blend) · [重建程式](build_model.py)
+原三頂點whole y−14無限平面枚舉4面，共享邊BFS兩個完整2三角矩形。整域後記左x−72..−18、右x−6..72，z61..62.799999，不以照片中間裁色、不按normal/centroid漏端。名義淺灰4、2856未知中性，原2860三角座標拓撲不改。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 中央窗組近圖<br>![中央窗組近圖](previews/center-detail.png) | 俯視<br>![俯視](previews/top.png) |
+兩官照可核兩最高簷完整前緣，不外推截斷屋上皮/底/側後。較低長庇超出照片邊、柱被花籃紅帶人物遮擋，不全灰。陽台石板與周框不同、玻璃混框/內部反光，原無對應分面不染滿。中央小瓦庇混淺壓石與暗瓦全中性；階/低欄代理/人工側後截口皆中性。資料界線不是真實材界，中性不當實景灰。
 
-## 範圍與外觀
-- 保留左2右3開間、外凸／齊平陽台、退縮入口、中央上層橫直分格窗、柱廊、小瓦簷
-- 僅截取正面24mm名義深度，背面是人為平直截面，絕非實際背立面
-- 主屋頂坡形、後棟進深、左右全側面尚未查得，本件沒有填入假造全館
-- 石牆材質與極細壓瓦石紋以簡化有背板浮雕表示
+## 日期與原件
 
-## 列印資訊
-- 單位：毫米（mm）。含底座尺寸約 150.0 × 48.0 × 62.8 mm；各館獨立比例，最長150mm。
-- 底座z=0朝下；先以0.2mm層高檢視實際切片預覽，再決定方向、支撐、填充與材料。
-- 陽台底板、遮陽板與前柱廊樑需要切片器支撐檢視。
-- 中央窗分格名義寬1.15mm，圓柱直徑2.9mm；薄材不得再任意縮小列印。
+官文2023-05-21是揭幕/發布脈絡，不自動是各照片capture；無可核EXIF拍攝時點，不稱2026現況。照片只私存不公開/貼圖。
 
-## 可重建來源與檢查
-Python需求見[requirements.txt](requirements.txt)。依序執行 build_model.py，再用 Blender背景模式執行 render_preview.py（會匯入實際STL並保存scene.blend及預覽），中央窗組近圖由 [render_detail.py](render_detail.py) 另行匯入同一實際STL渲染。再執行 validate_model.py、check_contour_validity.py、thin_canonical_v2.py。
+immutable26件含原model.obj，原STL/build/OBJ字節全保。原README.md另存ORIGINAL-PREVIEW-README.md，原render_preview.py/previews及舊QA保留，原scene公開另名ORIGINAL-PREVIEW-scene.blend且全原包私存；別名ORIGINAL-PREVIEW-render_preview.py與原renderer同字節。新scene與appearance.3mf只實作4有據材面，不改原形。
 
-- [原STL／重建／Blend驗證](validation.json)：水密、單一連通表面、每邊兩面、vertex link單環、原始法向與正體積、尺寸、重建SHA及Blend幾何一致。
-- [0.2mm層輪廓](contour-validity-check.json)：起始z=0.071mm，逐層degree2閉合；各個及組合Polygon有效。
-- [0.8mm形態opening輔助篩檢](thin-feature-check.json)：每1.0mm取樣；不是全面最小壁厚或噴嘴路徑模擬。腳本使用 canonical 共享邊插值，並以 assert 拒絕無效組合Polygon，不自動修復輪廓。
-- [綜合QA](qa-summary.json)、[逐檔SHA256](SHA256SUMS)、[來源及限制](sources.json)。
+## QA與英文限制
 
-以上是數位幾何檢查，沒有實體試印，也未在Cura／PrusaSlicer驗證實際工具路徑；不保證所有機器、材料、縮放均可列印。scene.blend為實際STL匯入的可編修網格，參數重建來源是build_model.py。
+精確依賴隔離原build+color、原STL/OBJ完整字節及三角multiset、共面一致、3MF/reopen、十張1200×900與身份 NTOU Matsu Dorm Entrance Section partial color 檢核。保留重建不刪，未試印/驗多料切片，STL無色。
 
-## 授權與來源
-僅提供自建模型與程式。第三方照片與圖資沒有隨包再散布；各來源網址及年代載於sources.json。未主張第三方建築設計或商標的權利。
+NTOU Matsu Dorm Entrance Section partial color. Whole originaly=-14plane4 gives2complete twin highestbrow frontrectangles,leftx-72..-18/rightx-6..72,z61..62.799999.4lightgray2856unknownneutral; original2860triangles/26files includingOBJ retained unchanged. Original actualscene is singleWarmstone preview,not a prior certified colorvariant. Retain originalscene/render/preview aliases and private fullpackage.
+
+Only photographed2+3bay entrancefront;24mmcutdepth artificial,not whole residence/rear elevation. Roofupper/rear/under,lowercroppedcanopy,obscuredcolumns,mixedstonebalconies/glass/centraltiles/ground neutral. Official2023-05-21article event date not eachphoto capture,no2026claim. No publicsourcephotos,geometrychange/count_delta0,testprint.
