@@ -1,0 +1,92 @@
+{
+  "scope": "Same-item existing-geometry bounded color upgrade",
+  "count_delta": 0,
+  "source_GO_sha256": "9e465f3672cec889af7e97e85ed6020c73061f317ee71931ac34266090e74191",
+  "independent_review_sha256": "25ec68a8112d065c23aa906d974eaae2440754cb03413a1440cd6fb55b1b0432",
+  "sources": [
+    {
+      "sha256": "8841dee5ac328c2fca3e31551c89807f00baac42606d1a547e61aaceecbb0632",
+      "url": "https://www.president.gov.tw/images/aboutus/4-2-3-13.jpg",
+      "actually_viewed": true,
+      "role": "中央塔紅幹、淺灰檐/框、暗窗及暗灰頂；不可由低屋綠推全塔帽綠"
+    },
+    {
+      "sha256": "3ff1ae4029c173096ccc57b90eb4fbc7db4e16ed74030462cbc31e51f6466ddc",
+      "url": "https://www.president.gov.tw/images/aboutus/4-2-3-05.jpg",
+      "actually_viewed": true,
+      "role": "角樓近景，紅磚/淺灰水平帶與窗框；不能唯一判照片哪個原四角，不把四角逐一實證化"
+    },
+    {
+      "sha256": "7caab0233f565a8d7a1e1c30fa20f6c329f6f11d9a0b9a330cc6a88f6c34c055",
+      "url": "https://www.president.gov.tw/images/aboutus/about07.jpg",
+      "actually_viewed": true,
+      "role": "正面總體日照照片：紅磚/灰白框、綠低屋頂"
+    },
+    {
+      "sha256": "b65365603734f3cdfb8afa7dbb9e8fac62aba1ce885b6f7fb92699ef5241544e",
+      "url": "https://www.president.gov.tw/images/aboutus/4-2-3-07.jpg",
+      "actually_viewed": true,
+      "role": "低坡屋面及小通風帽灰綠，帽下百葉灰"
+    },
+    {
+      "sha256": "d27ada3155120481e7e5877ce567feacdf2f8de258ffa51cf1283d5eeb98f0aa",
+      "url": "https://www.president.gov.tw/images/aboutus/about06.jpg",
+      "actually_viewed": true,
+      "role": "標示立面圖非照片；可輔助部位名稱，不採精確色值或新增構件"
+    },
+    {
+      "sha256": "10a4f4a678a7f0e864c6aeca7e9b490183f01aac84ede4c08b3412e27e23dd41",
+      "url": "https://www.president.gov.tw/images/aboutus/4-2-3-04.jpg",
+      "actually_viewed": true,
+      "role": "前入口石灰柱、門廊/階灰、內退門暗"
+    },
+    {
+      "sha256": "580cdd866b2b12ee916ed4ed90e302a5c12c0e1a818bf5d501a491206d3ff1fb",
+      "url": "https://www.president.gov.tw/images/aboutus/4-2-3-03.jpg",
+      "actually_viewed": true,
+      "role": "後中央半圓廊灰柱灰頂、近牆紅/灰與暗窗；不是整個背面/庭院色證"
+    }
+  ],
+  "rights": "公開官方/承包商圖片不等於CC或可商用再授權；照片日期未核。",
+  "approved_mapping": [
+    {
+      "domain": "正面負Y主壁、前角樓及高塔shaft約z20..54.8",
+      "color": "磚紅暖紅褐",
+      "limits": "紅僅原完整牆面，不整柱框/窗凹紅。高塔不是全淺灰。"
+    },
+    {
+      "domain": "既有正面凸橫帶/柱框/拱旁浮雕、前角樓山牆飾件、塔托座及lantern凸環",
+      "color": "淺石灰/灰白",
+      "limits": "原碼把裝飾簡化，若一個整山牆未分磚底/石框可取中性或有據整件石族，不畫新雕紋。高塔燈籠不是整白實盒：可分的牆間紅、凸環灰、凹孔暗。"
+    },
+    {
+      "domain": "前門廊x約±9/y−42..−50、階；背中央半圓廊",
+      "color": "石灰/偏暖灰，深凹門窗灰暗",
+      "limits": "不把暗拱洞全部說成玻璃；後廊證據不外推整後翼。"
+    },
+    {
+      "domain": "可見前長翼低坡屋面與前小屋帽、前角樓可對位坡頂",
+      "color": "低飽和灰綠",
+      "limits": "只向上坡面，帽下立牆/百葉灰；未知後翼/內院/中軸屋頂中性。"
+    },
+    {
+      "domain": "中央高塔z62.9以上斜帽與實心小頂",
+      "color": "保守暗灰或中性",
+      "limits": "13實照頂緣暗灰，about06繪圖藍綠不採；不借07低屋綠。"
+    },
+    {
+      "domain": "未可靠對位側長面、後翼遠段、內院全部",
+      "color": "中性",
+      "limits": "05可支持角樓色族但不能自動全四側紅；03也不能替整後面背書。"
+    }
+  ],
+  "mandatory_limits": [
+    "僅已證正面/局部後門廊及前低坡屋面色族；側後內院未知中性，不聲稱全館每面實測。",
+    "高塔帽灰暗，不將低坡綠屋皮擴套高塔；about06標註立面非實照，不取其色。",
+    "原碼四角/前後複製近似不因補彩獲得精確性背書。",
+    "照片拍攝日未確認、色值非測色；未作多色列印實證。",
+    "僅建築外觀，無室內/人物/保安細節，原照片私人不貼圖。"
+  ],
+  "original_photographs_public": false,
+  "source_issued_QA_pending": "Source issue historically preceded modeling. Current model evidence is COLOR-FORMAT-GEOMETRY-QA, SCENE-QA, DELIVERY-QA and SOURCE-VISUAL-QA."
+}

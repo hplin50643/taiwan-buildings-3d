@@ -1,0 +1,112 @@
+{
+  "slug": "palace-museum-north-model",
+  "original_faces": 5558,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T17:34:00Z",
+  "sources": [
+    {
+      "path": "color-source-review-20261102/palace-museum-north-model/official-front-2023.jpg",
+      "sha256": "2d265f93692a96cc4a9acf8e1b0b19be708746b6655b32738452a7c722a1efb6",
+      "url": "https://www-ws.gov.taipei/001/Upload/308/relpic/10162/9054827/843d2c10-5157-4501-86f0-65e1aed79606.jpg",
+      "actually_viewed": true
+    },
+    {
+      "path": "color-source-review-20261102/palace-museum-north-model/official-wide-2020.jpg",
+      "sha256": "63f67d73d29987226e5c9d0d1ec6945dfe4d7dfb8fcaf5a439cc2be23fc4dc37",
+      "url": "https://www-ws.gov.taipei/001/Upload/308/relpic/10162/8342165/77806958-9c02-4840-af74-36d2eef20683%40710x470.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "audit": {
+    "path": "color-audit-landmark3-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
+    "sha256": "f6e8b84a465209eb62f4aee26dfae3935e6626e4e26f652459cab462ed8aa5c4"
+  },
+  "independent_review": {
+    "path": "color-source-review-20261102/palace-museum-north-model/palace-museum-north-model-INDEPENDENT-FOCUSED-COLOR-REVIEW-1732.json",
+    "sha256": "8084a0bb1158c4ebd270455d92758ea86f2e0b95c5e102ab21074d83dd1f845d"
+  },
+  "scope": "Photographed north-branch principal front ensemble; unknown rear and roof-top planes neutral",
+  "approved_mapping": [
+    {
+      "domain": "main front y~6.5 and projections x±24,y~1.8, terminal visible front walls",
+      "color": "muted ochre/tan wall family",
+      "evidence": "both official front photographs"
+    },
+    {
+      "domain": "existing front parapets, piers, ornament plaques and engaged mullions",
+      "color": "off-white/pale stone",
+      "evidence": "front photos; not new fine balustrade geometry"
+    },
+    {
+      "domain": "front stair treads and lower wall/entrance stone",
+      "color": "gray stone",
+      "evidence": "2023 direct photo and 2020 wide"
+    },
+    {
+      "domain": "existing visible outward inclined roof faces",
+      "color": "muted jade/green",
+      "evidence": "both photos; whole upward slope faces only, never vertical supporting walls"
+    },
+    {
+      "domain": "separately modeled raised roof ridge/rim components",
+      "color": "yellow-ochre limited contrast",
+      "evidence": "photographed yellow roof edges; original broad rim approximate, cannot recreate unmodeled figurines"
+    },
+    {
+      "domain": "central canopy x±13,y-33..-14.3",
+      "color": "gray-green inclined surface, gray existing ribs",
+      "evidence": "2023 canopy visible; original solid wedge remains opaque geometry, no text or transparent interior"
+    },
+    {
+      "domain": "original front recess backs",
+      "color": "dark gray shadow/glass family where identifiable",
+      "evidence": "2020 wide and 2023 front"
+    },
+    {
+      "domain": "rear, inward roof slopes and broad horizontal roof tops",
+      "color": "neutral",
+      "evidence": "no photograph proves those faces; do not infer entire roof system green"
+    }
+  ],
+  "mandatory_public_limits": [
+    "Only Taipei north museum, not southern branch.",
+    "Original roofs and balustrades coarse; color does not newly certify roof form or surveyed dimensions.",
+    "403 missing reference not read or retried; two actual official photos suffice for bounded front scope.",
+    "Assign only complete existing triangles; crossing-material triangles require coherent neutral fallback, not centroid wedges.",
+    "No geometry or output modified; final mesh/material/ten-view QA still required.",
+    "Private reference images are not textures or public deliverables; no blanket copyright license inferred."
+  ],
+  "rights": "公開來源不等於CC，照片只私人保存不貼圖；不保證商用再授權。",
+  "source_period": "資料頁發布年不等於每張精確拍攝日；得月2025頁作修後時期證據但仍非測色標準",
+  "palette_nominal_srgb": {
+    "ochre_wall": "#C3AD77",
+    "pale_stone": "#D1D2C5",
+    "gray_stone": "#939B92",
+    "green_slope": "#579887",
+    "ridge": "#C2A14E",
+    "canopy": "#819D92",
+    "shadow": "#46534C",
+    "neutral": "#A7ABA5"
+  },
+  "model_QA_pending": true,
+  "required_QA": [
+    "原STL bytes／頂點／三角不變",
+    "10視圖＋材域獨審、無centroid斜楔",
+    "未知中性、無原照片公開/貼圖",
+    "舊檔保留不刪除"
+  ],
+  "excluded_fetch": {
+    "url": "https://www.ydn.com.tw/api/ugc_imagehandler.ashx?NFID=772891",
+    "outcome": "HTTP403; no file obtained; stopped no alternative-route retry",
+    "effect": "two independent official front photos suffice for restricted scope, unknown back/roof remains neutral"
+  },
+  "source_GO_sha256": "d955716cbcb376cd921786a8d1c6a8e09c69837e4047eedbdf66f034ae386238",
+  "source_status_at_issue": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "status": "SOURCE_GO_APPLIED_MODEL_QA_SEPARATE",
+  "modeling_limits": [
+    "Only front-dominant roof slopes colored; side/back slopes and horizontal roof surfaces neutral.",
+    "Existing opaque canopy preserved, no texture lettering or transparency reconstruction."
+  ],
+  "private_source_backup_receipt": "color-source-backup-landmark3-20261102-1734/PRIVATE-BACKUP-RECEIPT-1734.json"
+}

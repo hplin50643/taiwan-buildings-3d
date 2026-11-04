@@ -1,0 +1,68 @@
+{
+  "scope": "2025 restored front face only; older photos for component identification, not restoration color",
+  "count_delta": 0,
+  "source_GO_sha256": "b0fcd617089afbd80686487cdd6790a42d90b54cd9a3375e857b409dd8274f2a",
+  "independent_review_sha256": "49b46ad0a6469b3a744cdca641168240f27040db314b5cf4e9245f912e4f6218",
+  "sources": [
+    {
+      "sha256": "fd0f2c27430567cdd1318a38295152d1045b9b449ed7c9379eaa49b32b20096b",
+      "url": "https://www.taiwan.nps.gov.tw/upload/filesys/image/01_chinese/11_epaper/vol_376/park3.jpg",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "2aa68e02f17bdae29b254ca3f7b9b8ee95d8181c952b4bc37736ebf708ed452a",
+      "url": "https://www.kinmen.travel/articles/45301/1024x768_articles-image-dbki0pcwy0-cw07lx49hvq.jpg",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "588989705f758dcbc7f2ecd91eec27a8d20169159524685e21cfa94349f5af22",
+      "url": "https://www.taiwan.nps.gov.tw/upload/filesys/image/01_chinese/2021_Journal/02/tribe4.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "rights": "公開來源不等於CC，照片只私人保存不貼圖；不保證商用再授權。",
+  "approved_mapping": [
+    {
+      "domain": "front main wall y=-20, z~17..130",
+      "color": "low-saturation dusty pale pink / pink-gray",
+      "evidence": "2025 photo left tower; blank lower field retained"
+    },
+    {
+      "domain": "front corner pilasters, existing belts and coping",
+      "color": "pale cream/light stone family",
+      "evidence": "2025; older close photo helps isolate original component but no dirt colors"
+    },
+    {
+      "domain": "front discrete square/circular recess backs",
+      "color": "dark shadow",
+      "evidence": "2025 and prior close view identify apertures; not claimed glazing"
+    },
+    {
+      "domain": "visible projecting upper soffit only",
+      "color": "dark blue-gray bounded family",
+      "evidence": "2025 front underside visibly blue-dark; do not paint whole roof blue"
+    },
+    {
+      "domain": "front curved eyebrows and name tablet",
+      "color": "pale neutral or uniform conservative light family",
+      "evidence": "existing coarse relief identifiable, but 2025 small pixels do not support fine red/yellow subdivisions"
+    },
+    {
+      "domain": "side/back wall fields, unseen roof terrace and base display",
+      "color": "neutral",
+      "evidence": "no unique current color mapping; no automatic four-direction repetition"
+    }
+  ],
+  "source_period": "資料頁發布年不等於每張精確拍攝日；得月2025頁作修後時期證據但仍非測色標準",
+  "version_control": "2025-10-02竣工官報附照色族優先；2021舊近照只辨識部位，不套舊污斑/黃化。相鄰洋樓不在本模型。",
+  "mandatory_limits": [
+    "Old 2021/remote photos cannot supply restored stains or faded yellow/purple as 2025 colors.",
+    "Photo includes adjacent residence and front garden; model is tower only, no borrowed facade color.",
+    "Do not add name lettering, floral symbols or new facet splits; original approximate relief stays approximate.",
+    "Assign only complete existing triangles; crossing-material triangles require coherent neutral fallback, not centroid wedges.",
+    "No geometry or output modified; final mesh/material/ten-view QA still required.",
+    "Private reference images are not textures or public deliverables; no blanket copyright license inferred."
+  ],
+  "source_issued_QA_pending": "Historical source issue preceded model; final model QA is separate COLOR-FORMAT-GEOMETRY-QA, SCENE-QA, DELIVERY-QA and SOURCE-VISUAL-QA.",
+  "original_photographs_public": false
+}

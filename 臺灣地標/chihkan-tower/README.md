@@ -1,3 +1,54 @@
+# 臺灣地標｜赤崁樓：原幾何補彩色
+
+## 彩色模型預覽
+
+**同一項目材色更新（count_delta = 0），保留原雙閣及連續高臺，不代表全園區。僅近前右階相連前閣的可對位既有材域補色；雙閣屋瓦同色族是明示概化，不是每一坡都有實照。其他牆、遠閣與未證面維持中性。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西面](west.png) | ![東面](east.png) |
+| ![頂面](top.png) | ![前階](entry-detail.png) | ![近前閣欄面](corridor-detail.png) |
+| ![雙簷瓦皮](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+原 19150 三角面、頂點及尺度完全保留，不新增門扇、欄杆孔洞、細瓦紋、雕飾、題字或貼圖。原比例及遮蔽部位是近似，不因補彩改稱精確測繪。
+
+- 四片既有屋殼以低飽和橘褐瓦族連續概化；原可分屋脊及檐底深褐。這不是逐坡照片確認，也不把屋面染綠。
+- 原屋面分色僅以未改原碼的屋殼 primitive 表面作材域辨識，不把臨時計算構件加進輸出。**下層屋面附近的灰色長三角是原 z33 水平檐盒穿出斜屋皮的既有面，保中性；不是新增幾何或在同斜面畫色楔。**
+- 近前閣下層原窗 cut 未切入主牆，不能把整大牆染白冒充照片門扇。大平牆保中性；只既有小額板／柱頭紅色，上層獨立柱紅、實有淺凹門窗背淡灰，中央深凹孔用通用陰影。
+- 近前下柱照片白底與紅上段在原柱面沒有相應分界，整柱保守石灰中性色，不按重心造斜條。未精確呈現全部柱身雙色。
+- 前高臺立面、原碑面、近前外階及可分欄柱石灰；僅前欄／近閣前陽臺原可獨立板面灰綠。粗實欄板不是照片細透空綠格，不新增洞孔或雕花。
+- 遠照裸磚牆未能唯一對位到原模型哪閣哪面，不能套到後閣。遠閣牆、側後、未證欄與臺面中性，並非真實現場全部塗灰。
+- 照片日期未確證，URL數字不是拍攝年；色值是展示近似而非測色，也不宣稱最新現況。
+
+## 格式與重建
+
+原 `model.stl`、`build_model.py` bytes不變；原包沒有OBJ。原單材 `scene.blend` 完整保留在私人 original-remote 稽核副本，公開同名 scene 更新為實際shader彩材。STL不含彩色；新 `appearance.3mf` 有八種逐面基本材質，`color-mesh.npz` 保原三角座標。八色外觀不是已驗證四色／多耗材切片專案；未實際列印、未執行切片器驗證。
+
+```sh
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 3 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+沿原requirements與Blender4.3.2，材域表面辨識另需 rtree。隔離重建保留不刪。新QA見 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、DELIVERY-QA、SOURCE-VISUAL-QA；七全景檢查完整邊界，三細景刻意局部構圖。原 validation、rebuild_validation、blend_validation、previews 及原渲染／驗證程式保留歷程，不當本次彩色重建入口。
+
+## 來源與權利
+
+- [臺南市觀光旅遊局近前閣官方照片](https://www.twtainan.net/content/images/attractions/17463/1024x768_Filedata635593457626796798.jpg)
+- [交通部觀光署官方遠照](https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_10889_20.jpg)
+
+來源hash及適用面域見 COLOR-SOURCE-REGISTER.json。公開官圖不等於 CC 或商用再授權；原照私人保存、不隨模型公開、不貼圖，也不以儲存庫license再授權。模型不保證商用權利已清。本次僅建築外觀，不涉及室內、人物或保安細節。
+
+## 原始模型說明與限制
+
+原文保留如下，材色及重建入口以新段落優先；舊單材圖不是本次彩色成果。
+
 # 赤崁樓：海神廟、文昌閣與高臺
 
 ## 模型預覽

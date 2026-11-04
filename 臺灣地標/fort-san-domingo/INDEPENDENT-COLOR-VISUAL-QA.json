@@ -1,0 +1,99 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T17:33:30Z",
+  "mesh_sha256": "5a4c4a06dfded6980118d91e702d3876b9fec24f081eae7eeda964b0a4f37e86",
+  "build_code_sha256": "2483f8dd0dc649ebf8d6288f8b41e4ac214682d1020f41f8dedf47acb668d865",
+  "color_code_sha256": "7ab8d65391d9906540524e4b3d21ccbcffd411bede5e9d4ff1963865af39723d",
+  "render_code_sha256": "9a604b7739a77aa81518396fa34207931ff273e53ab9f30355ab94a75eb91621",
+  "readme_sha256": "26b84f976c6ffbd5d725b73a3d56ffbbcfd75404431638ef8992feff738397d1",
+  "file_sha256": {
+    "model.stl": "eb970466363f9c20b0dfec609f0e6ab94f619059c0d79869a1f69fd56183d524",
+    "build_model.py": "2483f8dd0dc649ebf8d6288f8b41e4ac214682d1020f41f8dedf47acb668d865",
+    "editable.blend": "98b9f1658e621124f1cbfa04293c92ab6338c90e9afa4a2b2222c8777cb584f4",
+    "colorize_model.py": "7ab8d65391d9906540524e4b3d21ccbcffd411bede5e9d4ff1963865af39723d",
+    "render_color.py": "9a604b7739a77aa81518396fa34207931ff273e53ab9f30355ab94a75eb91621",
+    "export_appearance.py": "93896685bc52904548d6fa03635c6272d4a3f47e104084a9d979beb26ae537da",
+    "validate_color.py": "81b65d19a8f8417dba0e89874c2eea9aee6d1c83316a247decb17ad754bf5738",
+    "verify_color_scene.py": "b9109b461e0d6f7d3be8b7f9e5677e1e52aa81c4f1afacaccc96779698aeb661",
+    "color-mesh.npz": "5a4c4a06dfded6980118d91e702d3876b9fec24f081eae7eeda964b0a4f37e86",
+    "palette.json": "1e420b72bc26ed1dab0bf0fd156bf92e72fa84c630f80b245498d2f81500a948",
+    "appearance-materials.json": "84ed58934230ceed256ebfcda56ebae838c76791a07ffdef8b95b36026ccffa9",
+    "appearance.3mf": "ef1139d3d23fb5da4d0e08d2b924647b64af57cff529c6bea303886ee9bebc54",
+    "scene.blend": "e0ac54a9de0e7382539c12ab7fcf99a8d6503f72886156507a4199c2e984e513",
+    "README.md": "26b84f976c6ffbd5d725b73a3d56ffbbcfd75404431638ef8992feff738397d1",
+    "COLOR-SOURCE-REGISTER.json": "bd0e2134578028f88196ec25fe443fc3a8c1ca8c69852000b756d5de7bf11e19",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "85ca4965cdf972d1b2d47607ac13fd206caf7c8720587c03df538ba5767c989c",
+    "SCENE-QA.json": "ce57b3fba5dc31f0426ad8d10b0ed7c63e58c79ecf0acb36dbc8387a8c2b45f7",
+    "DELIVERY-QA.json": "5542c3db19b61e93fe7c08d0f2dd67748ad49924aba3c82ae63dd9208925f781",
+    "FRAMING-QA.json": "58de880afff16c852bc411ba5b6e8f17ee5aa86e5762866d4b696061c344ac46"
+  },
+  "png_sha256": {
+    "preview.png": "6dd0d5f5873cbef6fd5c1fba2510fd4b01650a5deb5255a177450f56645172ab",
+    "rear.png": "04151cc20347ff7721f243e8f43c835c8db9e79ab974b31a5a1fdee445fec214",
+    "front.png": "4cc12b2b1272fe2d32da2180e2c5c77aa4df1af1c46cca6426b836ef545ca837",
+    "back.png": "4e5788353af7a410245f3225df64a59e3835b5633c78c8a22bfb9c8c149bcdad",
+    "west.png": "68312ef8dae87aaf23d128fc5838a7670cb380f3db38af80c1e8747a12ee9f13",
+    "east.png": "6791cfe7539904dc6b9844be4ac0ba43f0a7221eb812c7b993047e7788f51cb8",
+    "top.png": "40b9af9528efc7dee078d83514b656a8d3f131f277a77acf3c1edf80c2e4d2d4",
+    "entry-detail.png": "e712f56fbc3277548a4aa5e20960f134e01dadbae9d4e8f5fbb9c556fc0becc6",
+    "facade-detail.png": "0975cc03a5e2b262cd94cff57cf1e3a2874010f51693aa3cf698ceded2f0bf1e",
+    "roof-detail.png": "faf7a7a1d180cdf030cfd4b6769378598fcd4d77f55a6a23cbf943f87a9c57a3"
+  },
+  "source_review_sha256": {
+    "fort-san-domingo-INDEPENDENT-FOCUSED-COLOR-REVIEW-1718.json": "048f6d7df3ed6a9f6e6f81131521d326637f9d08e912a1aed2aee3f53b2be130"
+  },
+  "numeric_checks": {
+    "original_triangles": 3904,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "build_model.py": true,
+      "editable.blend": true
+    },
+    "five_material_counts": [
+      52,
+      2091,
+      457,
+      185,
+      1119
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_max_vertex_serialization_delta_mm": 4.981079104737773e-09,
+    "3MF_unit": "millimeter",
+    "side_xplus46_120_faces_all_neutral": true,
+    "side_xminus46_120_faces_all_neutral": true
+  },
+  "actual_visual_review": {
+    "preview": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "rear": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "front": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "back": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "west": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "east": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "top": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "entry-detail": "PASS intentional close view; coherent existing material domains, no improper diagonal patch",
+    "facade-detail": "PASS intentional close view; coherent existing material domains, no improper diagonal patch",
+    "roof-detail": "PASS intentional close view; coherent existing material domains, no improper diagonal patch"
+  },
+  "source_findings": [
+    "Official main-fort leaflet photos actually viewed; adjacent consulate and gate photos excluded.",
+    "Front plaster distinguished from warmer terrace masonry and near turret. Unknown rear, opposite turret and broad roof terrace neutral.",
+    "Both x plus/minus46 fused main side planes all neutral: original facets cross plaster and terrace masonry domains. No new split or centroid wedge.",
+    "Separately bounded existing left recesses and brick groove interiors retain limited color, not claimed complete side-wall reconstruction.",
+    "README truthfully states topology fallback and original approximate geometry. Palette front-and-left name is historical shorthand; actual side plaster plane is neutral as stated in README and correction appendix.",
+    "No new geometry, flag, inscription, people, interior or neighboring consulate."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen with five shaders PASS",
+    "delivery and framing PASS"
+  ],
+  "limitations": [
+    "Original geometry not newly measurement-certified.",
+    "Uncalibrated illustrative color families; neutral means unknown rather than actual gray finish.",
+    "No physical print or slicer validation.",
+    "Private reference photos excluded from public package; no unrestricted-rights assertion."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}

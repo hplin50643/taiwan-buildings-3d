@@ -1,3 +1,54 @@
+# 臺灣地標｜得月樓：原幾何補彩色
+
+## 彩色模型預覽
+
+**同一項目材色更新（count_delta = 0），只依2025修後時期官照補正面近似色族；側背、屋頂露臺及底座未證面中性。模型僅得月樓塔本體，不借旁邊洋樓外觀，也不是全聚落精確測繪。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西面](west.png) | ![東面](east.png) |
+| ![頂面](top.png) | ![前壁孔口](entry-detail.png) | ![上部彎眉](corridor-detail.png) |
+| ![前簷與冠部](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+保留原 7194 三角面、頂點及尺度。沒有新增名字題字、花飾、孔口、格網或分割三角面；原浮雕簡化與尺寸近似仍保留，不因補彩變成修復竣工CAD。
+
+- 正面大牆用低飽和粉灰；既有前角柱、凸帶、冠部前面及牌匾淡米灰。下段大留白不增假窗。
+- 原前方形與圓形凹底深陰影，不宣稱都是玻璃；前頂小凹口亦只陰影。
+- 只有正面出挑簷底與相連托座可對位下面用暗藍灰，**不是整屋頂藍色**。露臺水平地坪、背側牆與未見面保持中性，並非真正漆色。
+- 原彎眉曲面可分成單一保守淡色；無法由2025小像素證明的細紅／黃裝飾分區不新增。用未改原碼曲線構件作既有面材域比對，不輸出任何新增幾何。
+- 2025-10-02竣工官報附照作修後色族優先；舊2021及較早遠照只辨識部位，不套舊污斑、黃化或褪色紫。資料頁發布年不等於每張精確拍攝日，照片也不是測色色票。
+- 相鄰洋樓、庭園不在此原模型；不把它們的磚紅或米黃塗到塔上。整面跨材質但無既有分界時保中性，不用面重心製斜楔。
+
+## 格式與重建
+
+原 `model.stl`、`build_model.py`、`editable.blend` bytes不變；原包沒有OBJ。STL不含彩色；新 `appearance.3mf` 有五種逐面基本材質，`scene.blend` 為實際shader，`color-mesh.npz` 保原三角座標。五色外觀不是已驗證四色／多耗材切片專案；未實際列印、未執行切片器驗證。
+
+```sh
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 3 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+沿原requirements與Blender4.3.2，原曲面材域辨識另需 rtree。隔離重建保留不刪。新QA見 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、DELIVERY-QA、SOURCE-VISUAL-QA；七全景檢查完整邊界，三細景刻意局部構圖。原validation／blend_validation／previews及原程式保留歷程，不當本次彩色重建入口。
+
+## 來源與權利
+
+- [金門觀光官方2025修後報導附照](https://www.kinmen.travel/articles/45301/1024x768_articles-image-dbki0pcwy0-cw07lx49hvq.jpg)
+- [國家公園官方較早遠照](https://www.taiwan.nps.gov.tw/upload/filesys/image/01_chinese/11_epaper/vol_376/park3.jpg)
+- [國家公園2021期刊舊近照](https://www.taiwan.nps.gov.tw/upload/filesys/image/01_chinese/2021_Journal/02/tribe4.jpg)
+
+來源hash及角色見 COLOR-SOURCE-REGISTER.json。公開官圖不等於 CC 或商用再授權；原照私人保存、不隨模型公開、不貼圖，也不以儲存庫license再授權。模型不保證商用權利已清。本次僅建築外觀。
+
+## 原始模型說明與限制
+
+原文保留如下，材色及重建入口以新段落優先；舊單材圖不是本次彩色成果。
+
 # 金門得月樓｜150 mm 可列印外觀縮景
 
 研究與建模日期：2026-10-11。
