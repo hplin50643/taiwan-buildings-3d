@@ -1,0 +1,34 @@
+{
+  "status": "BOUNDED_DIGITAL_RESEARCH_NOT_PHYSICAL_FIT_OR_PRINT_APPROVAL",
+  "parts": 49,
+  "triangles": 3602,
+  "part_topology_status": "PASS_EACH_EXPORTED_PART",
+  "all_pairs": 1176,
+  "positive_AABB_candidates": 53,
+  "intersection_detection_threshold_mm3": 1e-05,
+  "intersections_above_threshold": 0,
+  "raw_max_intersection_mm3": 3.4017865002677894e-07,
+  "not_exact_zero_claim": true,
+  "source_front_symmetric_difference_max_mm2": 0.000690763851707743,
+  "source_boundary_report": "SOURCE-BOUNDARY-DISTANCE.json",
+  "actual_material_status": "PASS",
+  "micro_triangles_retained": 5,
+  "unproven": [
+    "physical insertion",
+    "retention/connectors",
+    "structural stability",
+    "material shrinkage",
+    "physical print",
+    "minimum manufacturable edge thickness",
+    "complete asbuilt appearance"
+  ],
+  "unknown_RF_domains_unbuilt": true,
+  "artificial_joint_design": {
+    "proxy_corner_and_roof_gable_depth_ratio": 0.98,
+    "source_gables_prioritized_over_proxy_walls": 8,
+    "platform_notches": 3,
+    "nominal_wall_and_roof_back_mm": 0.8,
+    "minimum_thickness_at_source_edge": "tends to zero; not a printable minimum guarantee"
+  },
+  "geometry_scope": "Nominal design reconstruction with bounded walls and neutral whole mixed opening proxies; not a building survey."
+}

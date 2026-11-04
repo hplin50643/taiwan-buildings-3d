@@ -1,0 +1,279 @@
+{
+  "status": "NO_POSITIVE_INTERSECTION_AT_THIS_NOMINAL_PLACEMENT",
+  "method": "AABB broadphase then exact Blender Boolean INTERSECT in temporary copies; no original scene save",
+  "all_pairs": 1176,
+  "broadphase_reject_only_nonpositive_axis_extent": true,
+  "positive_volume_detection_threshold_mm3": 1e-05,
+  "broadphase_candidates": 53,
+  "all_candidate_volumes": [
+    {
+      "a": "PROXY_1F_COURT_AB__MIXED_1",
+      "b": "PROXY_1F_COURT_AB",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_COURT_AB__MIXED_2",
+      "b": "PROXY_1F_COURT_AB",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_COURT_AB",
+      "b": "SOURCE_NORMALIZED_A_END",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_COURT_CD__MIXED_1",
+      "b": "PROXY_1F_COURT_CD",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_COURT_CD",
+      "b": "PROXY_BOUNDED_2F_PLATFORM",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_REAR__MIXED_1",
+      "b": "PROXY_1F_REAR",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_REAR__MIXED_2",
+      "b": "PROXY_1F_REAR",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_REAR__MIXED_3",
+      "b": "PROXY_1F_REAR",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_REAR",
+      "b": "SOURCE_NORMALIZED_A_END",
+      "volume_mm3": 1.0440584110151321e-08
+    },
+    {
+      "a": "PROXY_1F_SERVICE_0_0",
+      "b": "PROXY_1F_SERVICE_7",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_SERVICE_3",
+      "b": "PROXY_1F_SERVICE_4_1",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_SERVICE_4_1",
+      "b": "PROXY_1F_SERVICE_5",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_SERVICE_4_1",
+      "b": "PROXY_BOUNDED_2F_PLATFORM",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_SERVICE_5",
+      "b": "SOURCE_NORMALIZED_F_GABLE",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_1F_SERVICE_5",
+      "b": "PROXY_BOUNDED_2F_PLATFORM",
+      "volume_mm3": 5.67323965583455e-14
+    },
+    {
+      "a": "PROXY_1F_SERVICE_7__MIXED_1",
+      "b": "PROXY_1F_SERVICE_7",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_COURT_AB__MIXED_1",
+      "b": "PROXY_2F_COURT_AB",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_COURT_AB__MIXED_2",
+      "b": "PROXY_2F_COURT_AB",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_COURT_AB",
+      "b": "SOURCE_NORMALIZED_A_END",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_COURT_AB",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_COURT_CORE",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_COURT_CD__MIXED_1",
+      "b": "PROXY_2F_COURT_CD",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_COURT_CD",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_REAR__MIXED_1",
+      "b": "PROXY_2F_REAR",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_REAR__MIXED_1",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_REAR__MIXED_2",
+      "b": "PROXY_2F_REAR",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_REAR__MIXED_2",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_REAR__MIXED_3",
+      "b": "PROXY_2F_REAR",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_REAR__MIXED_3",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_REAR",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_CORE_RETURN_530",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_CORE_RETURN_615",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_0_0",
+      "b": "PROXY_2F_SERVICE_7",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_0_0",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_0_1",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_0_1",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_1",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_2_0",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_3",
+      "b": "PROXY_2F_SERVICE_4_1",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_3",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_4_1",
+      "b": "PROXY_2F_SERVICE_5",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_4_1",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_5",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_7__MIXED_1",
+      "b": "PROXY_2F_SERVICE_7",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_7__MIXED_1",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_2F_SERVICE_7",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_F_LOW_WINDOW_934",
+      "b": "SOURCE_NORMALIZED_F_GABLE",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "PROXY_F_LOW_WINDOW_1008",
+      "b": "SOURCE_NORMALIZED_F_GABLE",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "SOURCE_NORMALIZED_F_GABLE",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 3.4017865002677894e-07
+    },
+    {
+      "a": "SOURCE_NORMALIZED_F_GABLE",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 1.0962979472376599e-07
+    },
+    {
+      "a": "SOURCE_NORMALIZED_F_GABLE",
+      "b": "PROXY_BOUNDED_2F_PLATFORM",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "SOURCE_NORMALIZED_A_END",
+      "b": "SOURCE_NORMALIZED_ROOF_left",
+      "volume_mm3": 0.0
+    },
+    {
+      "a": "SOURCE_NORMALIZED_A_END",
+      "b": "SOURCE_NORMALIZED_ROOF_right",
+      "volume_mm3": 0.0
+    }
+  ],
+  "positive_intersections": [],
+  "errors": [],
+  "source_and_proxy_seams_not_solved": true,
+  "not_physical_test": true
+}
