@@ -1,0 +1,34 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed tower front circular reveals and entry stone warmgray",
+      "hex": "#BDB7A4",
+      "faces": 608
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixed mainwall windowbacks roof rear neutral",
+      "hex": "#B8BAB5",
+      "faces": 1440
+    }
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "2048 original triangles unchanged; no new or split faces",
+  "domains": {
+    "tower_front": 202,
+    "right_return_candidate_faces": 2,
+    "right_return_actual_colored_faces": 0,
+    "circle_reveals": 384,
+    "header_front": 2,
+    "step_tread_risers": 20,
+    "withdrawn_mixed_coplanar_candidates": 2
+  },
+  "limitations": [
+    "Towerfront/reveals and entry only; rightreturn candidate2 withdrawn to actual0 due continuous coplanar unknown rear. Circle and ordinary window backing disks neutral.",
+    "Mainfront spans stone and lowerbrick/louver; complete mixed wall plane neutral.",
+    "Photo dates unknown;2023 form and2025 PDF edition not capture dates.",
+    "Two material labels not a verified multi-filament slicing job."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T22:19:13.340817+00:00",
+  "actual_sources_viewed": [
+    "official-building.jpg",
+    "pdf-page87.png"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "findings": [
+    "534 original rail/fascia/stair faces warmgray;44 actual pure front upperroof triangles mutedgreen.",
+    "1410 unknown neutral; walls/piers/mixed different-version color panels/windowbacks not invented.",
+    "22 candidate gray faces withdrawn by whole connected coplanar closure;454 uniform connected domains.",
+    "Original penetrating pier tips visible and retained, not new geometry or material error.",
+    "Rear/side roofplanes,ridge,equipment and returns neutral; no texture or new geometry.",
+    "1988 original triangles and STL/build bytes unchanged; three material labels not verified filament slicing.",
+    "2023 form and2025 edition dates not capture dates; source version conflict retained as unknown."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "a08b252fca949462cc3b8d2eec28e5cc886ceda39ab78aa9932ff768f47f0a33",
+    "README.zh-TW.md": "a08b252fca949462cc3b8d2eec28e5cc886ceda39ab78aa9932ff768f47f0a33",
+    "model.stl": "d32018bb842d024c9add566535e7da54ec13e6468aa3ed0c17de1d9496771d33",
+    "build_model.py": "df13457ed3b1e52b912ecac810ea5a3f62ebf9fefa52a17d3d4e559ee65aa166",
+    "colorize_model.py": "8e5884811c07ff9f855bebde2042d4509726574320adf05c27558bb9ec4af3ea",
+    "render_color.py": "6463a7a0f09fa929e323d48586116370d5befe62a3e8fcabdb07e925541ab0b5",
+    "color-mesh.npz": "7afff5f6ac6ebe47568ccf11b99390dd7de586f269bc127fbfd19b545026c2db",
+    "palette.json": "3c116456d8b0430c3a5d5c0a27b81ea2c915d59deae633669ffae4fd2211495f",
+    "appearance-materials.json": "6b25d189b2a95fd821478c8dc17c711c04bd7fe7ae38a9c293ddf48165171d02",
+    "COLOR-SOURCE-REGISTER.json": "8428d1f1035ef80a3b6ad66d33f681949f96e7ec8ecd17dc03d3bfdbb9a25bf3",
+    "appearance.3mf": "ff0399c87f31c8cb9d7b34296e4f0bc8fc53225b6047d9ce930d9e7dc3f7d1f1",
+    "scene.blend": "22a16c7e8ac0186a953c175b0fd2e63878fd3d4d4e85e93a689acd1c40b6b3d6",
+    "preview.png": "4fb21a737fc0ddd277133e94285a031cd9e2cc3c5febcecda9d460d0e309fc0a",
+    "rear.png": "c23ac00742663638cfb2f518aa7466abba2d810d00067df47b47026f78092d79",
+    "front.png": "06a98d64da026a5cfcfa00c433c2b2ef6ed7545aa7d82abe98b7ddc5069a8ff7",
+    "back.png": "ae05abd58964910bee233b971d66921b089ba8dc009c1ad509cef008f70422e9",
+    "west.png": "b67b7ee355ef140b6ce711d7b2c0ef957dd6b9f7749b74e7e1b021294dd71d01",
+    "east.png": "dbc465909e2ad368acca7c2bd6a4419b76c10c5fa613f499c9b5142fc1af7228",
+    "top.png": "b14d671e8f1b16e8ddfd51da117b1af927f434042c1b3ee23adc8681b26435a3",
+    "entry-detail.png": "e3df1e60c962755f8cf6d070198ef34f031be58741cf2b145597e3388866cf2b",
+    "facade-detail.png": "44dc88d958b2e20491a3c6a4aefb225c8e9802797be268299dedd03894395519",
+    "roof-detail.png": "494a613eb571ede21dfea356e9a0de441769dadf8d98e6ec6f57d5c1230cc0b8"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "18e314cf9ac2d88195ed324d53e162597d5342f2501f334fe500ba2e209255ad",
+    "SCENE-QA.json": "5b93d52a955d9cdb75a3d10339b14ae83918ac28583acfd40e16ec8dbe13aadd",
+    "FRAMING-QA.json": "339372d76d261027847a1e0a4e6ca2d9beb558da5d26ba8971000470cfd47711",
+    "DELIVERY-QA.json": "032238e53b9d5761908a003bdadd0f0952444961d9d42b02521a3405ae909331"
+  },
+  "local_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "051ec21730a4c47100777e097fbefbe143b051a89c2e871c7cd6f269f80faafc",
+    "ORIGINAL-RETENTION-QA.json": "cc333109e5046a1feb46aecce55bc1a3a149c66a6c07a8f429766a53ea90e6b2",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "287d2a5d7243e3a629f627967008d6409441e28c263e576b99b9923d8982fec0"
+  },
+  "independent_parent_review": "Personally viewed official/photoPDF sources, originalcode, preview and all ten final views. Exact44 front hip slope faces green only;534 front rail/fascia/stair gray; whole connected coplanar domains uniform. Seven neutral pier tips crossing roof are preserved original geometry, not new white color artifacts. Mixed wall/version panels/windowbacks and rearroof neutral.1988 original triangles/bytes unchanged; partial only.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2214.json": "e127289b799bbeaf99997c8a6c81c500d8e4b0b5033a4382531045820a865ed7",
+    "INDEPENDENT-DOMAIN-2214.json": "f5d0eccdf162ad45c8025775e56bbdadf0f114b3627723b0b963fdaab1819e49"
+  }
+}

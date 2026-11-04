@@ -1,52 +1,38 @@
-# 國立臺灣大學 社會及社工館
+# 臺大社會社工館｜局部結構面參考補灰
 
-## 模型預覽
+**局部補色未完成：僅中央三道獨立水平帶與左外格網局部補灰；磚牆、山牆與窗背未完成，入口基座及未知面仍中性。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項目 `ntu-sociology-social-work`／`count_delta=0`，不新增套數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![前橫帶](entry-detail.png) | ![左格網](facade-detail.png) |
+| ![未完成山牆](roof-detail.png) | | |
 
-[返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
+## 材色範圍
 
-## 實際 STL 正面與背面
+中央三道原凸水平帶正向面y=-29.6，共6三角；照片可證左側格網向外x=-69的202三角，合208面為低飽和暖淺灰石材近似。其餘3036面未知中性，**不是實景灰色證明**。
 
+依原幾何的真正外平面與各原box組合之投影聯集重新判讀，不盲抄來源face index。776個共面連通域全部材色一致，不centroid切色、不生成任何新邊界。橫帶及格網側返不自動推定同色。
 
-[下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
+中央山牆灰面和下方磚牆在原y=-28融合成共面，完整中性，不按z64取上部三角。入口門廊跨灰石上段與深色基底，原無物材界，整件中性。窗背／門格／圓窗背混框、簾、玻璃及實板，不能全黑或白。主牆灰框／腰帶／基座未有分面，不能全磚紅；屋頂、背面、基座與遮蔽面中性。
 
-[新增34件列印幾何補查與細節警示](../../../qa/printability-20261013/README.zh-TW.md)
+原3244三角、坐標、尺寸、STL、OBJ及build字節均不變，沒有新增窗框或修補幾何。既有原模型省略未核背面，不鏡射正門；補色不追認原幾何或稱完整現況。
 
+## 來源與權利
 
-官方索引代碼 E9。公開外觀近似模型，非測繪或BIM。
+臺大官方2010影像路徑下三張[6010](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E9/IMG_6010.JPG)、[6011](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E9/IMG_6011.JPG)、[6012](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E9/IMG_6012.JPG)建築外照。2010路徑只是來源時期背景，拍攝日未獨立確認，不稱當今完整實測。精確hash及GO2225/獨審2224-v1見`COLOR-SOURCE-REGISTER.json`。
 
-## 範圍與比例
-依2010官方兩張主入口與左側斜角照片。這是E9社會社工館，不是外型相近的E10國發所大樓；主山牆圓飾與低弧入口分別處理。未見右側和背面留白；進深與樹遮窗格節奏近似。
+未確認CC授權，照片私存、不公開或作貼圖；原圖權利不被repo license取代，不保證商用。展示色不是精確色票。植物、人像、招牌不建模。
 
-保留辨識特徵：中央階梯狀低三角山牆與圓飾、三段中央窗帶、寬淺弧入口、底層圓窗、左側上層結構格柵。沒有把國發所的高半圓拱門複製到本館。
+## 檔案與重建
 
-尺寸 [150.0, 88.0, 74.5] mm，含底座最長150 mm。各館獨立比例，不是可拼接的共同尺度校園沙盤。尺寸、厚度、窗距均為照片目測和列印簡化，不是原建物實測。
+`appearance.3mf`含2展示材，`scene.blend`實際面材／相機，`color-mesh.npz`原三角及material index。原STL自身無色、原OBJ未補材且兩者字節保留。
 
-## 列印
-- 底座向下，毫米單位。參考起點：0.4 mm噴嘴、0.16–0.2 mm層高、3道外牆、15–20%填充。須依自己的切片器調整。
-- 淺弧入口與密集格窗上緣可能需局部支撐；窗格皆有背牆，門廊空間縮成淺凹以免形成內殼。
-- 新增細浮雕名義最小約0.9 mm；這不是全模型最小壁厚的測量結果。零碎設備、文字招牌、樹木、電線及細緻裝飾沒有加入。
-- 門窗背牆與實心量體避免隱藏內殼；實際填充由切片器決定。
-- 未實際列印；未用PrusaSlicer、Cura等生成工具路徑。不宣稱無支撐或無風險可印。
+依`requirements.txt`執行`python colorize_model.py`、`python export_appearance.py`、`python validate_color.py`；Blender執行`render_color.py`及`verify_color_scene.py`。完整原build+color隔離重建保留、不自動刪。原件私存；兩個`ORIGINAL-MONOCHROME-README*`、舊`previews/`、舊QA／SHA清單是單色歷程，不是本次補色QA。
 
-## 驗證與檔案
-- model.stl、model.obj；scene.blend是由實際STL匯入的可編修網格。
-- build_model.py為獨立參數來源；Python3.12，依requirements.txt裝依賴後執行python build_model.py。
-- Blender4.3.2：blender -b -t 2 -P render_preview.py。previews/front.png、rear.png、elevation.png均直接渲染交付STL。
-- python validate_model.py：原始法向、水密、流形邊／頂點、單一連通表面、無分離封閉內殼、正體積、150mm、獨立重建SHA256及已儲存Blender/STL三角幾何一致性。結果validation.json。
-- python check_layers.py：每0.2mm水平截面幾何檢查，共 373 層，所抽樣截面全部閉合。首層採z=0.071mm避免重合平面退化，非實際列印首層設定。
-- layer-check.json另記向下超45度面積指標與各層輪廓；它不是切片器、最小壁厚測試或實體試印。閉合截面不保證擠出連續、橋接、支撐可拆、床面附著或局部細節可印。
-- SHA256SUMS可核對檔案；更改參數後需重建、重繪、重驗證。
+## QA與列印限制
 
-## 公開來源
-查閱及圖像像素檢視：2026-10-13。來源照片未隨檔重新散布。
-- [社會學系官方交通資訊：社會社工館身份與位置](https://sociology.ntu.edu.tw/intro-2/map/)
-- [實際檢視2010官方外觀 6010](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E9/IMG_6010.JPG)
-- [實際檢視2010官方外觀 6011](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E9/IMG_6011.JPG)
-- [實際檢視2010官方外觀 6012](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E9/IMG_6012.JPG)
-- [臺大官方建物索引，檢索標題2026-08-17](https://cpo.ntu.edu.tw/map/C_01_list.pdf)
+原STL／三角multiset、封閉正體積、3MF索引及隔離重建見`COLOR-*QA.json`；重開見`SCENE-QA.json`；10張1200×900圖及三欄/hash見`DELIVERY-QA.json`。人工視看另交父終審。
 
-照片版權屬原權利人；沒有轉授原建築設計或照片權利。不同拍攝日期不等於已核實目前全部外觀。
+**未實際列印。** 2展示材非驗證過四色列印工程，切片、材料映射、支撐及薄部強度另驗，不保證直接多料成功。

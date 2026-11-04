@@ -1,37 +1,31 @@
-# 自強樓｜文藻外語大學
+# 文藻自強樓｜欄板與階梯局部材色示意
 
-## 模型預覽
+**屋頂、混材柱牆與未知面未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。只保有據欄板／樓板邊／階梯外面，並非全館完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![入口](entry-detail.png)|![前欄板](facade-detail.png)|
+|![屋部](roof-detail.png)|||
 
-校本部／公開外觀近似模型。每棟独立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 94.00 × 75.80 mm。
+## 材色範圍
+同 `wzu-ziqiang` 原項目，same-item、count_delta=0。原1928三角面及STL/build_model.py字節完全保留，無切面／新增幾何。原公開包沒有OBJ，隔離重建產出的OBJ不冒稱原件。
+- 原前欄板492面、樓板真正前fascia8面、入口階踏立面24面、左梯外側斜欄牆完整域2面，總526面近似暖灰。
+- 48個初候選面與未知表面共面連通，因此整域撤為中性；左斜梯候選不能任切長面染滿。未新增孔洞／修正原粗梯形。
+- 其餘1402面中性：全hip屋頂、全高柱、主牆、窗背與反光簾、設備、側後及未證梯底。低角度綠屋邊不能證明整坡綠，未移植別棟屋色。
+- 兩照片窗下板紅／藍色不同但拍攝日未定，原無板／牆細分界，所以不任選新版、不以三角面畫色塊。
+- 色與中性邊界只表示證據與拓撲限制，不代表真實材接縫。原近似幾何不因補色背書，未新增文字／樹木／人物或鄰樓。
 
+## 日期／權利
+校方外觀照與官方PDF實頁79／印刷2-73；2023-12填表、2025-03-12文件版次不是照片拍攝日，不稱某年現況精測。只讀外觀，不取防災內部配置。
+原照片/PDF私人保存、不公開、不作貼圖；未確認CC或再散布授權，不保證商用。HEX只是展示色族，非校準色票。
 
-## 外觀與範圍
-三層柱廊、長槽欄板、左端三段交錯外露樓梯、低坡長屋頂。正面下層柱廊主入口切開厚欄板並加宽階梯。
+## 格式與列印
+[原STL](model.stl) · [材色3MF](appearance.3mf) · [Blender](scene.blend) · [原說明](ORIGINAL-MONOCHROME-README.md)
+原150×94mm展示底座非精測比例。3MF基本面材與Blender逐面材質，STL本身不含色。兩材質標籤不是已驗證兩色／四色耗材切片專案；**未實際列印**，未提供切片路徑，原薄欄與梯風險不因補色解除。
 
-樹木遮蔽處、右端與後側近似；不包含鄰接連廊以外他館。樓梯以加厚踏步斜板近似，保留下方可見空隙。
-
-主要依據[校方建築物介紹](https://c005.wzu.edu.tw/category/132558)及[2025-03-12公開PDF第79頁外觀照片](https://c004.wzu.edu.tw/datas/upload/files/Documents/111_1075_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8_1140312.pdf#page=79)。現況表填於2023-12；兩來源照片拍攝日期未註明，不把文件日期當拍攝日期，不宣稱2026完全現況。來源照片、PDF及私用對照不隨模型公開。[完整來源及近似限制](sources.json)。
-
-## 檔案
-- [STL](model.stl)／[Blender](scene.blend)／[Python重建](build_model.py)
-- [原始STL拓撲、法向、重建SHA及Blend一致性](validation.json)
-- [0.2mm輪廓閉合與逐輪廓/合成多邊形有效性](contour-validity-check.json)
-- [0.8mm XY薄特徵篩查](thin-feature-check.json)
-
-## 數位檢查與列印限制
-單一連接表面殼、正體積、所有邊恰有兩面、vertex-link單循環、無獨立內腔、原始法向一致；Python重建SHA相同，Blend與STL三角形一致。0.2mm實際STL斷面通過閉合及有效性assert，未用buffer修補無效多邊形。
-
-樓梯斜板2.4mm、欄牆1.8mm，均接至平台；柱2.7mm。這是數位幾何檢查，樓梯懸挑需真正切片檢視支撐。
-
-這些均為數位幾何檢查，未經實際列印或真正列印切片器驗證。建議底板朝下、0.4mm噴嘴、0.2mm層高作為切片起點；簷口、雨遮、格柵及挑空需在切片器檢視支撐、橋接與可拆性；不得據此保證免支撐。
-
-## 重建
-Python 3.12，安裝requirements.txt，執行build_model.py；Blender以背景模式執行render_preview.py，產生實際STL預覽與scene.blend。接著依序執行validate_model.py、check_contour_validity.py、check_thin_features.py，退出碼均須為0且validation.json所有checks為true。
-
-STL SHA-256：d2137a4bfd1e7b09874c6c1d54d40ee3b7dcf72ad49ed16c3c3d1a5faa6f056a
-
-[校區圖鑑](../../README.md)／[學校](../../../README.md)
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`，Blender執行 `render_color.py` 與 `verify_color_scene.py`。
+逐三角座標、原字節、閉合正體積、3MF面材、完整隔離重建、scene重新開啟、十圖及圖文hash檢核。整個共面連通域同材另驗，程式不取代人工來源判讀。
+原單色previews/renderer/validation保存為歷程，不當新材色QA；未刪除原檔。

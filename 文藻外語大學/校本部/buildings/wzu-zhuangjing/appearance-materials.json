@@ -1,0 +1,39 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed front rail slab fascia and stair stone gray",
+      "hex": "#C4C0B2",
+      "faces": 534
+    },
+    {
+      "id": 1,
+      "name": "Observed pure FRONT upper roof slope muted green",
+      "hex": "#788572",
+      "faces": 44
+    },
+    {
+      "id": 2,
+      "name": "UNVERIFIED piers mixed colored panels walls rear equipment neutral",
+      "hex": "#B8BAB5",
+      "faces": 1410
+    }
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1988 original triangles unchanged; no new or split faces",
+  "domains": {
+    "rail_candidate_faces": 526,
+    "rail_actual_gray_faces": 504,
+    "fascia_actual_gray_faces": 6,
+    "stairs_actual_gray_faces": 24,
+    "front_upper_roof_green_faces": 44,
+    "mixed_coplanar_candidate_withdrawals": 22
+  },
+  "limitations": [
+    "Pure front roof upper plane only; ridge/side/back/underside neutral.",
+    "Walls have unseparated different-version color panels; piers fullheight mixed base and windows neutral.",
+    "Photo dates unknown;2023 form and2025 PDF edition not capture dates.",
+    "Three material labels not a verified multi-filament slicing job."
+  ]
+}

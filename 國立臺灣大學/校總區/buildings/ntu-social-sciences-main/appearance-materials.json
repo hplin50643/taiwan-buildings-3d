@@ -1,0 +1,33 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed true outward concrete fin and terrace column planes",
+      "hex": "#C4C0B2",
+      "faces": 2796
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixed horizontal bands windowbacks walls roof ends neutral",
+      "hex": "#B8BAB5",
+      "faces": 18560
+    }
+  ],
+  "domains": {
+    "fin_candidates": 2732,
+    "fin_actual_gray": 2732,
+    "column_candidates": 64,
+    "column_actual_gray": 64,
+    "whole_coplanar_withdrawals": 0
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "21356 original triangles unchanged; no cuts or added geometry",
+  "limitations": [
+    "Actual outward fin yplusminus10.35 andcolumn yplusminus9.6 planes independently matched, not raw review face indices.",
+    "All continuous horizontal mixed rail/slab bands,windowbacks,ends,roof and conference block neutral.",
+    "Low library pavilion excluded.",
+    "Photographer page visit years not image capture proof.",
+    "Two material labels not tested filament slicing."
+  ]
+}

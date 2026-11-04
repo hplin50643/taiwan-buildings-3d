@@ -1,37 +1,36 @@
-# 修院暨教職員宿舍｜文藻外語大學
+# 修院｜既有模型局部參考補色
 
-## 模型預覽
+**局部補色未完成：僅帆形前壁、獨立灰色格框及塔孔內壁局部補色；塔身紅磚帶、窗戶及未知面未完成。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項目`wzu-convent`／`count_delta=0`，不新增套數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![帆前細景](entry-detail.png) | ![原格框](facade-detail.png) |
+| ![塔孔細景](roof-detail.png) | | |
 
-校本部／公開外觀近似模型。每棟獨立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 119.00 × 135.00 mm。
+## 材色範圍
 
+帆形低壁真正前平面y=-38之79面，作低飽和暖灰褐石材近似；七個窄窗的背板與洞返不隨牆上色。原五凸柱與三橫梁223面、四個真透孔內壁32面採灰石色族，共255面。其餘656面未知中性，**不是實景灰色證明**。
 
-## 外觀與範圍
-四層窗格主體、右側高框塔、塔冠四個通透長孔、低層帆形上緣立面與七支狹長窗、左側入口。
+左端梁面與主樓未知側壁共面連通，該完整域全中性，不在x=-62平面截色。格框採原box實際外表面，不把同高度主牆當梁。塔孔只採切孔四周朝內的x/z面，沒有玻璃背板；整塔正／側外壁跨紅磚帶但原沒有真分面，完整中性，禁止z100切割上色。主體窗背含窗框、反射、簾而原無分界，全中性。帆頂側、後屋、鄰棟與入口未核域中性。來源範圍差不表示實際接縫。
 
-照片未涵蓋的側背面及棟深近似；修院/教職員宿舍依官方名錄作同棟，不把右旁聖安琪靈修中心算入。模型僅外殼，不推測內部配置。
+原990三角／坐標／尺寸／STL／原build字節完全不動，沒有新窗框、logo或幾何細節。色審不追認原近似造型，不稱現況精測。
 
-主要依據[校方建築物介紹](https://c005.wzu.edu.tw/category/132558)及[2025-03-12公開PDF第43頁外觀照片](https://c004.wzu.edu.tw/datas/upload/files/Documents/111_1075_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8_1140312.pdf#page=43)。現況表填於2023-12；兩來源照片拍攝日期未註明，不把文件日期當拍攝日期，不宣稱2026完全現況。來源照片、PDF及私用對照不隨模型公開。[完整來源及近似限制](sources.json)。
+## 來源與權利
 
-## 檔案
-- [STL](model.stl)／[Blender](scene.blend)／[Python重建](build_model.py)
-- [原始STL拓撲、法向、重建SHA及Blend一致性](validation.json)
-- [0.2mm輪廓閉合與逐輪廓/合成多邊形有效性](contour-validity-check.json)
-- [0.8mm XY薄特徵篩查](thin-feature-check.json)
+文藻[官方校園頁](https://c005.wzu.edu.tw/category/132558)照片與官方PDF實體43頁外觀照片。拍攝日未知，PDF2025-03-12版本／2023-12表格不是拍攝日。僅看建築外觀，不使用內部應變資訊。精確URL／SHA／GO2148與獨審2147-v1在`COLOR-SOURCE-REGISTER.json`。
 
-## 數位檢查與列印限制
-單一連接表面殼、正體積、所有邊恰有兩面、vertex-link單循環、無獨立內腔、原始法向一致；Python重建SHA相同，Blend與STL三角形一致。0.2mm實際STL斷面通過閉合及有效性assert，未用buffer修補無效多邊形。
+未確認CC授權；原照/PDF私存、不隨模型公開或作貼圖。來源權利不被repo license取代，不保證商用。來源另已私人備份，不在本公開包重傳。
 
-塔冠孔確實貫通，高框柱與橫梁加厚保留；帆形頂端的斜曲邊與凹窗須作支撐檢查。
+## 檔案與重建
 
-這些均為數位幾何檢查，未經實際列印或真正列印切片器驗證。建議底板朝下、0.4mm噴嘴、0.2mm層高作為切片起點；簷口、雨遮、格柵及挑空需在切片器檢視支撐、橋接與可拆性；不得據此保證免支撐。
+`appearance.3mf`含3展示材標，`scene.blend`含實際面材與相機，`color-mesh.npz`保留原三角與material index。STL自身無色且原字節不變。原公開包無OBJ；原build隔離生成的OBJ只私存，不聲稱保留原OBJ。
 
-## 重建
-Python 3.12，安裝requirements.txt，執行build_model.py；Blender以背景模式執行render_preview.py，產生實際STL預覽與scene.blend。接著依序執行validate_model.py、check_contour_validity.py、check_thin_features.py，退出碼均須為0且validation.json所有checks為true。
+依`requirements.txt`執行`python colorize_model.py`、`python export_appearance.py`、`python validate_color.py`；Blender執行`render_color.py`及`verify_color_scene.py`。完整原build＋color隔離重建目錄保留不自動刪。原場景及全部原件另私存；`ORIGINAL-MONOCHROME-README.md`、舊`previews/`與原QA是單色歷程，不是本次色材QA。
 
-STL SHA-256：e2d5852fbacec11765fe1fcdd1574f1bdac637b41c9ed2f6e68ada603d890b5e
+## QA與列印限制
 
-[校區圖鑑](../../README.md)／[學校](../../../README.md)
+原STL／三角multiset、封閉正體積、3MF索引與隔離重建見`COLOR-*QA.json`；Blender重開見`SCENE-QA.json`；10張1200×900圖與三欄展示／圖文hash見`DELIVERY-QA.json`。人工實看另交父終審。
+
+**未實際列印。** 三展示材標不是驗證過的四色列印工程，切片、材料映射、支撐和薄細部強度另驗，不保證直接多料成功。
