@@ -1,0 +1,53 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder visually inspected all ten final renders and original official front/aerial exterior photos; parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Six enclosed court cells green, original grooves neutral; no full roof green extrapolation.",
+    "Upper rim original faces pale gray, front belt bounded facet coverage; no arbitrary triangular wedges.",
+    "Walls/windows/support posts/equipment/unknown rear neutral; neutral does not assert actual finish.",
+    "All ten captions identify partial appearance; full seven views fit model, three closeups intentional.",
+    "Original 13806 triangles unchanged; no geometry validation retroactively asserted by color evidence."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "e4c61c6bf49cc0935c4714ba7c754f86a8b3f71f56e912a59e82b2b689ccdcae",
+    "README.zh-TW.md": "e4c61c6bf49cc0935c4714ba7c754f86a8b3f71f56e912a59e82b2b689ccdcae",
+    "colorize_model.py": "4c4cf9e031ae927e4a423f1a528b1fe905d2ae677c6f4220066e42c84ca722b9",
+    "render_color.py": "f0b1af4b0bb355fe583746367e3cc35b9337ba04ef13b5e133e710d8248925f7",
+    "color-mesh.npz": "e3b561ea9fc691c99a1a1f383d9be2f6e9c7ad3d4e3ebcc7b4b7e13825fe51f6",
+    "palette.json": "eef70fb671a5f9805e5c7f0e96323e59005196a57ca93ccd3432dfb8c09fd3d6",
+    "appearance-materials.json": "81840f3e4122ee5a563142f90d74e84d307c2493aafc222509bae64bb9770404",
+    "COLOR-SOURCE-REGISTER.json": "a769bfb4b710fcd1e38e3875772161c62a2d77156c1cb88d8297df3c2b514490",
+    "model.stl": "1401a0086b52e77230373c2d3372ef387d91c6ffe3c556a834ac6c744d3bf90e",
+    "build_model.py": "ddb140152eb8b876f47fd14b3cfd35b125a6bafdfec285f564d056a0593d6491",
+    "preview.png": "0eaf9ee769decb4ada29e8a184d1523a45971a252505b0b6e4dc8541add55106",
+    "rear.png": "3d275055a0a81df5466579ddb6330b324d376d0a8ad2f2c2ef4f5ab1e6672e9b",
+    "front.png": "675035e9daf6cc8c793f2adfd54c55ea2da31bbc8ce02110571c6afc697ad1ab",
+    "back.png": "904cf1dc9236c1dd8743919b86e51788ce00ac23db8644bc9d539ff21a7c351b",
+    "west.png": "8d5f0e77793aa2f947ddebfa2cd63d59a893447b0157afba9dc2de110f8078b1",
+    "east.png": "c06a98e2e3277ca5418491037c4210a3bbea199795a3cf9b1b0c60b83fc1021b",
+    "top.png": "9974c44ce911309917c83db178859b2a87cc1252a11e1431537b6793467538dd",
+    "entry-detail.png": "670c8b024c89db039644a604fa1c6bf5cfcba3340e1e4af0f3ebc80493af84d7",
+    "facade-detail.png": "028b102392f802cce8c12bd36b521e1fd9e14d320e1eb417d54da1e46f47255d",
+    "roof-detail.png": "89799bcc648d4a16188cd6fdbf71ba57ebd8a162c33568ad7ccb8d15eb14fd90",
+    "appearance.3mf": "d894321545b827c032938134c71a502b3b144be4b8185b3b4f89743441166e42",
+    "scene.blend": "17a9c443f64d2d73fa2f49565cdd9f2bec335db98b6bc876d6f45544a8c96712"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T22:20:24.614402+00:00",
+  "independent_parent_review": "Personally viewed official/photoPDF sources, original code, preview and all ten final views. Independent edge trace verifies6 enclosed original court topcells12triangles;3554 wholecoplanar domains uniform. True original144facet rim/frontbelts and stairs only gray; curved walls/windowbacks/supports/equipment unknown neutral.13806 original triangle multiset and bytes unchanged; partial only,821 mixed-coverage candidate faces withdrawn.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2216.json": "c5ab2f6be2dd21b7f00e772477b69b214bbbdf99450cd7bf1665f1662ba1f344",
+    "INDEPENDENT-DOMAIN-2216.json": "337913d9cd98a359fb019d1814c270fd3483312130e0c1b7af17c150c1fdfb23"
+  }
+}

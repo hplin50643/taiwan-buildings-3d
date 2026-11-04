@@ -1,37 +1,34 @@
-# 莊敬樓｜文藻外語大學
+# 文藻莊敬樓｜前欄板與屋坡局部材色示意
 
-## 模型預覽
+**柱牆、不同版本裝飾板與未知面未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。只做有據前欄板、樓板邊、純前屋坡與階梯，不是全館完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![入口階梯](entry-detail.png)|![前欄板](facade-detail.png)|
+|![屋部](roof-detail.png)|||
 
-校本部／公開外觀近似模型。每棟独立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 86.00 × 82.00 mm。
+## 材色範圍
+同 `wzu-zhuangjing` 原項目，same-item、count_delta=0。**1988 個原三角面、頂點與原 STL/build_model.py 位元組不變**，無切面、新增幾何或修正原近似外觀。原公開包無 OBJ，隔離重建的 OBJ 不冒稱原公開件。
 
+- 三層原獨立前欄板與真孔壁504面、樓板前fascia6面、左階梯踏／前立面24面，共534面近似暖灰。
+- 真正前hip上斜坡的44個原三角面近似低飽和綠；所有頂點符合原解析斜平面，沒有把向上法線一概染綠。原坡被柱相交細分但沒有新增面。
+- 淺ridge水平面、紅色簷底／屋邊、兩端坡與後坡都不染綠；這些未知處中性。色與中性界是照片／原拓撲證據範圍，不宣稱真實材接縫。
+- 22個初候選灰面因與未證表面共面連通，整域撤回中性，防止假斜三角。全高柱、短回廊、完整教室主牆與窗背中性，不能把柱牆上部任意白化。
+- 官照窗下紅／橘板、PDF則偏青藍，照片日期未載且原無分界，全部中性不任選最新版。屋頂設備混外殼／深格柵，沒有細界就不整白。
+- 前檐七處中性柱頂小塊是原柱穿坡幾何，並非本次新增或色錯；不改形或補綠掩蓋。
+- 共1410面仍未知中性。原粗幾何與真欄孔／屋面細部不同，補色不替原幾何背書；不新增彩板、窗框、文字、人物、樹木或設備細格。
 
-## 外觀與範圍
-三層深柱廊、厚欄板長槽、偏左入口樓梯、低坡屋頂與屋頂設備量體、側面短回廊。
+## 日期與來源
+採校方莊敬樓外觀照與官方PDF第87實頁／印刷2-81外部照片。拍攝日未知；2023-12為填表日、2025-03-12為文件版本，**不是攝影日期或現況精測**。只使用外觀照片，不取室內防災配置。
+原照片/PDF私人保存，不公開或作貼圖；未確認CC/再散布授權，不保證商用權利。HEX僅展示近似色族，不是校準色票。
 
-後側及深度近似；屋頂設備只保留大形，不擬製實際機械配置；校圖與實拍確認獨立館舍。
+## 格式與列印
+[原 STL](model.stl) · [材色 3MF](appearance.3mf) · [Blender](scene.blend) · [原說明](ORIGINAL-MONOCHROME-README.md)
+原底座150×86 mm為獨立照片近似展示，非測量比例。3MF basic materials與Blender真正逐面材質；STL不含色。三材質標籤不是已驗證三色／四色耗材切片專案。**未實際列印**，未產生切片工具路徑；原細欄板／挑屋風險不因補色解除。
 
-主要依據[校方建築物介紹](https://c005.wzu.edu.tw/category/132558)及[2025-03-12公開PDF第87頁外觀照片](https://c004.wzu.edu.tw/datas/upload/files/Documents/111_1075_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8_1140312.pdf#page=87)。現況表填於2023-12；兩來源照片拍攝日期未註明，不把文件日期當拍攝日期，不宣稱2026完全現況。來源照片、PDF及私用對照不隨模型公開。[完整來源及近似限制](sources.json)。
-
-## 檔案
-- [STL](model.stl)／[Blender](scene.blend)／[Python重建](build_model.py)
-- [原始STL拓撲、法向、重建SHA及Blend一致性](validation.json)
-- [0.2mm輪廓閉合與逐輪廓/合成多邊形有效性](contour-validity-check.json)
-- [0.8mm XY薄特徵篩查](thin-feature-check.json)
-
-## 數位檢查與列印限制
-單一連接表面殼、正體積、所有邊恰有兩面、vertex-link單循環、無獨立內腔、原始法向一致；Python重建SHA相同，Blend與STL三角形一致。0.2mm實際STL斷面通過閉合及有效性assert，未用buffer修補無效多邊形。
-
-前廊柱2.8mm、欄板2mm厚，長槽上下有結構連接；大出簷與回廊須檢查支撐。
-
-這些均為數位幾何檢查，未經實際列印或真正列印切片器驗證。建議底板朝下、0.4mm噴嘴、0.2mm層高作為切片起點；簷口、雨遮、格柵及挑空需在切片器檢視支撐、橋接與可拆性；不得據此保證免支撐。
-
-## 重建
-Python 3.12，安裝requirements.txt，執行build_model.py；Blender以背景模式執行render_preview.py，產生實際STL預覽與scene.blend。接著依序執行validate_model.py、check_contour_validity.py、check_thin_features.py，退出碼均須為0且validation.json所有checks為true。
-
-STL SHA-256：d32018bb842d024c9add566535e7da54ec13e6468aa3ed0c17de1d9496771d33
-
-[校區圖鑑](../../README.md)／[學校](../../../README.md)
+## 重建與 QA
+依原 requirements 安裝後 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`。Blender 執行 `render_color.py`、`verify_color_scene.py`。
+原位元組、逐三角座標、正體積閉合、3MF材質及完整隔離重建皆檢查；scene重開、十圖及README/hash另核。完整共面域同材另驗，程式不取代來源人工判讀。
+原previews/render/validation保留為單色歷程，不當新材色QA；未刪原件。

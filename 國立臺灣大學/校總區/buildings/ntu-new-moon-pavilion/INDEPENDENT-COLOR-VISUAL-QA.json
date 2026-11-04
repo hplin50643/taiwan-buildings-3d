@@ -1,0 +1,53 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder visually inspected all ten final renders and both official exterior photos; parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Only true ramp slope/front, landing top/front and five original steps have pale gray stone reference.",
+    "All 126 coplanar connected domains uniform; 44 gray and 472 neutral triangles.",
+    "Whole mixed brick/base walls, inconsistent window versions, solid rail substitutes and roof/canopies neutral.",
+    "All ten captions identify partial appearance; full seven views fit model, three closeups intentional.",
+    "Original 516 triangles unchanged; retain pre/post renovation common form, not single-day current appearance.",
+    "Parent personally viewed both official photographs/code, preview and final ten-view montage; true ramp/landing/stair surfaces only, no false brick/glass/rail color."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "1eed0a8cb7c9a3d704669ed48fa8d0026866014993a2f4987b2acf0511513e87",
+    "README.zh-TW.md": "1eed0a8cb7c9a3d704669ed48fa8d0026866014993a2f4987b2acf0511513e87",
+    "colorize_model.py": "2e2fc95431004ea7ec49f31b86d9e1cad9b5fb565afe8541d801b8247bed78dc",
+    "render_color.py": "d47fae725d2c9c169051679d4bf5142365660ab54987003c0952fe464f7b9b85",
+    "color-mesh.npz": "b0a96eb5424c1a444efcba9f4066d175ac44775f3619584c9d2bd09fd9142118",
+    "palette.json": "82235cb029eec7e919b5d22f762e162d95c8a1fa3216fa1333d98173f0464f72",
+    "appearance-materials.json": "fd05e0d0f2b4875967f0ace39f1b50df459c71be832773b6b4bc7552d91be396",
+    "COLOR-SOURCE-REGISTER.json": "c0ab9d12819dbf52762633b7942e16d6f61d431c6b4dd7caa7d3274bc40df27f",
+    "model.stl": "1472feffd228eb1a85d964b8f6871afe766b5ce007132d55b12db1661dae319c",
+    "build_model.py": "96b299b7f6493c442b32c09e016a5294135b534a05a652fdead5a7456e1d67bd",
+    "preview.png": "d86b4671bdfdd60b7b19009790f7fe7b8b23fd2f201c7af5710e21eeeac315a3",
+    "rear.png": "bac004ed00f738a325bc81adc89dbfe0da3ccb25053db9eda3cefa6c4b1ec306",
+    "front.png": "ada7b41c2f5246decf4b95d4517d84bd11fe0ef9457d70e6f8fe932c70a4f315",
+    "back.png": "dabd1ce81894071b1562a98ab35cacba3d7f914921a3c66d8c4775907b70f967",
+    "west.png": "c48ce53bd1e73e213fdc2911913e4caac77c3bacacd7c854b68c55b11cd61e98",
+    "east.png": "729cfcd142b80ac41550f1d5bbc5077d17c503da404a83ed819a534cd7af092d",
+    "top.png": "d179e42c86d887a964f61c6fc0c19063ea3bca400b6f936264019bbe80c4976a",
+    "entry-detail.png": "40e5aa35bc93b075dba03b27d6772455d2b10e1db4b08eb986baa8e777a5c5f1",
+    "facade-detail.png": "43cbb7a5bbee8902d36e43b37874042686f6a7bea8ab84047611b224312187be",
+    "roof-detail.png": "683629742adccac41278f25c0f72ae51219e6deb3fcba2b113429a12d774da06",
+    "appearance.3mf": "0e3ea51ab68922e2117cf4b2b77e451cd7a37541b43573701b76782b9c8a90a5",
+    "scene.blend": "d43251c335a22c50a2dde6bdc5078b42576740b614ff91e0c65a6fd1c41d523a"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T22:28:26.101431+00:00",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2224.json": "21c64678887e98aeb57ef0b10e8a6c4394302dd67b1157e407b2b5f7279a3e15",
+    "INDEPENDENT-DOMAIN-2224.json": "fdd625374e60b0653045e8ac66b52ac3a30c4cb8d35ae4284853eba40cc5b429"
+  }
+}

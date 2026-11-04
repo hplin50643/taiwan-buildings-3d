@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T22:27:43.442399+00:00",
+  "actual_sources_viewed": [
+    "official-building.jpg",
+    "pdf-page79.png"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "findings": [
+    "526gray1402neutral;492front rails8fascia24entrysteps2outerstair parapet faces.",
+    "48 initial candidates withdrawn in complete coplanar domains;426 uniform connected domains.",
+    "All hip roof neutral; lowangle greenedge not extrapolated to roofskin.",
+    "Fullheight piers/windowbacks and redblueversion panels unknown neutral; no new stair openings.",
+    "1928 original triangles and original STL/build bytes preserved; not a geometric correction.",
+    "Entry-detail v1 cropped close to entry edge; v2 camera centeredx36 with clear full entry steps; old screenshot/camera/montage preserved privately.",
+    "2023form/2025edition not photo dates; two labels not verified multi-filament slicing.",
+    "Parent independently inspected both source images/code, preview, final v2 ten-view montage; original roof and mixed walls remain neutral, corrected entry detail includes full stairs."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "a47181cea8da4cca5fcdbe1d64a49d36fabbdbbe9d0859f1c01e8a85904abcf5",
+    "README.zh-TW.md": "a47181cea8da4cca5fcdbe1d64a49d36fabbdbbe9d0859f1c01e8a85904abcf5",
+    "model.stl": "d2137a4bfd1e7b09874c6c1d54d40ee3b7dcf72ad49ed16c3c3d1a5faa6f056a",
+    "build_model.py": "e509020d92a74014b64101800b8561aa8c4d8502e815623529100446e41dbb0f",
+    "colorize_model.py": "cf8525b967f7c49ffeafbba6caa224172197e19c86488ca5c93eeb409ccdba54",
+    "render_color.py": "65b9022fe35bb2e1e4a75b4b4aff6b1149d9ad94af77643fa8664889b2e6ab3c",
+    "color-mesh.npz": "4d59b2d5ca3bf106240b74aa5d2858d5978225c9d59b4861cb5d7ed50989b72e",
+    "palette.json": "ceeae65a1a625fd9a5d616e7c5969b710f32294a67b770c922a0d6e81e20dea7",
+    "appearance-materials.json": "47bf7e3a92144498db57b36297b388409dcfbb12f81b9ccbe779143e97ad5ff3",
+    "COLOR-SOURCE-REGISTER.json": "ec2c0277ed5fda7891852a7583e2cfa3327ce4253be2ccdcb6f51a94f5a9023c",
+    "appearance.3mf": "7034b15971fb860ddcfc7e345fff44c6f2ed12a961dc9d6e3c4927f9e269b340",
+    "scene.blend": "aeda2b0f5fade5ffd12f68f2d6b6dec31fc04ba84b15c4be444bfa913e204070",
+    "preview.png": "295b3016c9e0c1e54bf8f6db5a2a924996637a589ffc7f75b43bd6eb8bb6e99e",
+    "rear.png": "1366c90b16805883122d890e4bbb489496c0547183f59d9baa7e5c06ce6d8a5d",
+    "front.png": "ba6e3cadd91d9e7c94e62cff41fc573540e7428a76c39bce7ebc74f1f0d9efb2",
+    "back.png": "cdf1f8dd7e0420ce7c00c346f27d8c4d83357f20926e44ac0e677079d8371247",
+    "west.png": "de9730bb34af2a488490d5d496c8a39f75e20e8c8e87eb60bd4d5724edee51b6",
+    "east.png": "e74b2214a93f9c50ed85532b2f8233634d275e9b5220df7f5bf1541e14a86d4a",
+    "top.png": "1d00ef2440c1d643a1fcd8fe1fd7c3bcafe69f63b68c1162ab83d9877447b68a",
+    "entry-detail.png": "1b2a050e37481e78cfa3983cef588ae85b23fe051c1b689d399af815b8f2399b",
+    "facade-detail.png": "d9f792fca943b415ee4226c302cba0fdb617813425dc90c302293e34e74aa990",
+    "roof-detail.png": "29b57953c7d0452d2ad8e46cbb6000f6f5be7102cea8549ac167c0c2e3ae50eb"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "357380fbfc23592116f92195162dece19898ec778cb29a0c13648e04f794eeff",
+    "SCENE-QA.json": "3ccd6510b807f804521da0043cca5e99212226bdd949a74fd1e2318156f6cacf",
+    "FRAMING-QA.json": "a69134ddacecf9a17e7471c70d18a6c3715f9e849bf6546d398830074f918821",
+    "DELIVERY-QA.json": "289cb11a987d31aa43e2d16c0397da567983ee969d6ba390e03148ea242b5e9b"
+  },
+  "local_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "7fbb9a2ab8ec0fa28325ecb626f7208d7ab810110e3b59b4e46fb8042632f41e",
+    "ORIGINAL-RETENTION-QA.json": "cc333109e5046a1feb46aecce55bc1a3a149c66a6c07a8f429766a53ea90e6b2",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "287d2a5d7243e3a629f627967008d6409441e28c263e576b99b9923d8982fec0"
+  },
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2221.json": "48231fe03540d3d7d75701b87d896e1dfcd31a9233d34c21920bd43d4f328c04",
+    "INDEPENDENT-DOMAIN-2221.json": "3f374b3aa6846c089ea219d1fe7160d5f73bbae73daadb87ae818abec7f9080c"
+  }
+}

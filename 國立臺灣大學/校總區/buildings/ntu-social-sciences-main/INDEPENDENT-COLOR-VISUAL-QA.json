@@ -1,0 +1,64 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T22:33:13.549110+00:00",
+  "actual_sources_viewed": [
+    "architecture-image11.jpg",
+    "architecture-image40.jpg",
+    "architecture-image41.jpg"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "findings": [
+    "2732 outward fin faces and64 actual central column outward faces gray;18560 remaining neutral.",
+    "Geometry derived original component plane masks independently matched source; no raw source index dependence.",
+    "5135 whole connected coplanar domains uniform, no withdrawn candidates or artificial wedges.",
+    "All horizontal mixedbands/windowbacks,ends/roof/conference volume unknown neutral; low library excluded.",
+    "Original21356triangles and originalSTL/OBJ/build bytewise unchanged; original bilingualREADME retained separately.",
+    "48sample final tenviews,reopen/full isolated originalbuild+color/3MF passed; not new geometric release.",
+    "Photo capture dates unknown;2017-2018page visits not independent captureproof,not2026survey.",
+    "Parent personally viewed all three source photographs, original code, preview and final ten-view montage; only original outward fins/columns colored, no false glass/yellow backing or end-louver color."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "3d5c235e47d63af4ab55c5c40913fb6fee8fa5df972c489fe7748b07c9d36594",
+    "README.zh-TW.md": "3d5c235e47d63af4ab55c5c40913fb6fee8fa5df972c489fe7748b07c9d36594",
+    "model.stl": "23c39f3022dbfe62fd0731e22b4974995073c15e8040179acf5d4ebfe0f61f1c",
+    "model.obj": "6ce0e625fa0785410b16cd56f6aecbe106c52900a1ce034472a3c02945cee2eb",
+    "build_model.py": "10c56ab0620a1a1cfb5bbbc6a164a1de28a8f2ea71b5a178f20d5bc7ea744875",
+    "colorize_model.py": "283ec58f86333df447b5c7bb3a7fb62093c8340f9c08aacf1f06884f648735b6",
+    "render_color.py": "205f7b49b95b57d32579feb386cf71efb13756f2c593b8fa200137134d6757c9",
+    "color-mesh.npz": "52db67da14e7c75f7fccc096c738b81e3e85e1453741046ebe823a9427effe40",
+    "palette.json": "351a8ca12b86b284c04c1ccb7728b8ce96db8d813bfdefd602e1db4b244e0004",
+    "appearance-materials.json": "50994b297dbd8084e07900c13eb1a79348fb7d8a108f10b2b930b6d34461bc64",
+    "COLOR-SOURCE-REGISTER.json": "5c00a8861532744847242540620c84b747d1a34e8459640427c29b38a558e3cb",
+    "appearance.3mf": "347f32a5ed48f0218515b8aaf90e265a3c27aad159ead2e08935ef98f099ffc4",
+    "scene.blend": "d810da02326842a1f292ef23d9106526b503a8a144aeedcb8aa25cb9efc5c0d7",
+    "preview.png": "f94e252c9217dd2d751ef9bd729afe93e12bed3b394a6a2f0aa13ce414a352d3",
+    "rear.png": "85c637f35d12e1b207c9b54d5be5887db5cc09b27e026321679cb0cae29d3a36",
+    "front.png": "7e7a18f804aee1a522f45d0ade21bdf1f0cf0a3954cc0dd8f3a9b49c64876f71",
+    "back.png": "4b10c328c5ef6031006a5d8045d4df532c84272a6b65f1c120ab915ed9e43c09",
+    "west.png": "22ea061b7f8c24e18a9867bf3e5576a92c7d6fe2cc0e1eabff4f7776c5805125",
+    "east.png": "fef2744867f1cf3e6285d4163c4338efa07436bf7d063a4d6be09f619d2f05f6",
+    "top.png": "9b864dfa70e806bb78da1acb1691aab3f586472ca9076d9d7f94f8568e222cb9",
+    "entry-detail.png": "c93b5efaed12c7a914ff17a009cb24a9802a944cd72b8178e2a77ddf3eff045a",
+    "facade-detail.png": "a0b6473cfac517d551cf8949edf4cce3b05e4dd887515733cbaccd1afa586841",
+    "roof-detail.png": "7c4da72fcf25f9a31d20896be4436ded48b64bd677b3d3cf1129c9bcc655a55f"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "452c30cd92b92b95af3b446c538368affda2f0563cb6ac3b0026bb269833b4e1",
+    "SCENE-QA.json": "e487e77c1dcfa9e01782794ae553d02716ecdeba5c3cdad8f05e1e5c129c029d",
+    "FRAMING-QA.json": "f91ac7aaeb42f104ff2c322444abbdc21d655e4f263a2758c9ad742ae90cc4ca",
+    "DELIVERY-QA.json": "81e42504709f48aff711f8453f0ec794cd883e46704f09b318c4907330bc98be"
+  },
+  "local_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "04e13ae8abf4c0334bd3ad6ecbc46e94adf75335d1bc486d655670d9a6731972",
+    "ORIGINAL-RETENTION-QA.json": "c4dc3bca707ec2df12595fe42ab911e18c9010dbe1f1b9decb7d76e55265ddf2",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "287d2a5d7243e3a629f627967008d6409441e28c263e576b99b9923d8982fec0"
+  },
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2230.json": "a10030be602280d5f53c1b82a98a4d1173893ac36f5669f2f0b6b25528c5e84a",
+    "INDEPENDENT-DOMAIN-2230.json": "744f9ebc4b15b7cceb2e569225849cbb8a614da24faa85d7f5782181f9cd2b76"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:59:24.007711+00:00",
+  "actual_sources_viewed": [
+    "official-building.jpg",
+    "pdf-page91.png"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "findings": [
+    "202 front tower faces and384 actual circular reveal facets warmgray; round backing disks neutral.",
+    "2 entry fascia and20 step tread/riser faces warmgray; no added text or handrails.",
+    "Right-return candidate2 fully withdrawn to actual0 across continuous coplanar unknown side; palette and appearance records explicitly corrected.",
+    "Mainfront mixed stone/lowerbrick/louver planes neutral, all ordinary windows and roofs unknown neutral.",
+    "All564 connected coplanar material domains uniform;2048 original triangles preserved.",
+    "2023 form and2025 edition not capture dates; two material labels not tested multi-filament slicing."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "89084b2c0033abbbd529e85313a37d18ef788a2a4de2519e310311145edcb400",
+    "README.zh-TW.md": "89084b2c0033abbbd529e85313a37d18ef788a2a4de2519e310311145edcb400",
+    "model.stl": "3cfcf3b3db5c7d78883722a34345081afa66ed8c87b2cdcf1b99c655e307dc14",
+    "build_model.py": "32f7f0b9f4d0be3a159e0c8d346c471f24a2d0caa928181898ba15abce2d545b",
+    "colorize_model.py": "80625da4ded23348360323b00fc07b2bd30da46b4c8fd560dba1df3c8a86c30c",
+    "render_color.py": "a7efc43192ae1c8921c4c7dc2141b22ca45156959b5422da7dfe600c485e7dcc",
+    "color-mesh.npz": "310a6a8564798f7bb8956f244a477ecb12bf4463a1d6b122e38ab7fe02b5eeb4",
+    "palette.json": "a7dfd0389b2679fa05c8dd23b1a787c099ef63c68e1146767c0d76537c4c4c0f",
+    "appearance-materials.json": "772d34928d0559ee7421a231336b210172eea55c946322abc5acdf11d433d6e3",
+    "COLOR-SOURCE-REGISTER.json": "376cc4f196c3f47c2bb1f2bfbf65fcb553724af14ac37db9c7c9ebb1ce81387b",
+    "appearance.3mf": "82c40228f0405f2cda332e6cb9a226ea4937a78def42e85a3b30b6dd049f1562",
+    "scene.blend": "58a2c22d16300f82cc6735d28d6cd5bb3857b625906c3bf4158eac7f79b4cec5",
+    "preview.png": "51cf602a603dfaa7e3ea7b14e414661ef1d7ba617408f7bd8e351067967ca0b7",
+    "rear.png": "3fe048ca1053b3d1afaece3d1b2462ee05b233af17c1cd749f66396f9f85b5bd",
+    "front.png": "8d44cfe2c5fcef393756845de0c1889ddc6b192e566386ccdd40cce96de3054c",
+    "back.png": "6511cbc360c1236fce108d490cad46f0544469288526cdc6648ba4c8f0107739",
+    "west.png": "66bbb9ce2141ee43592687aa3a3ce792bc33ab702936b49b4e559f39d49e6549",
+    "east.png": "e370d578cda13ea83d4e69380ee3322ed044054368a0815667754f61db98e5b4",
+    "top.png": "1c9c23a96db52be4507628fa6188c47e4515e08c5c64712e6d8547c9f2318a13",
+    "entry-detail.png": "804983be37442c18514ad69978d3db58cc428e7b58b573d1b2deed71171d5508",
+    "facade-detail.png": "5c53d9d27ada096c01f2a202243a5f7133444172228eeaa3867d8a3222fa29ff",
+    "roof-detail.png": "3ef30d1fdf51a2a94cce2156172d701fb37cd3297e8f811c1ca8e02001994d13"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "5f80ca327932b916fbfba9d8e8f0af319655570ac8ba4bdd4e8d24c62a4a8662",
+    "SCENE-QA.json": "fa4f4940becb8bc44063fa5640b8a4574e2a9362ed0b4e2e61c463997089912a",
+    "FRAMING-QA.json": "271be5df0eb7fc37ecc891111507ada9e8871c4aab2bdaa6f69f573ebf4fd803",
+    "DELIVERY-QA.json": "569d3c8ebb9c1ff8e0b459a6dbc2076fe4fb4cf995d9698c59239dec63767533"
+  },
+  "private_montage": "private-review/final-v1-ten-view-montage.jpg",
+  "independent_parent_review": "Personally viewed both source photographs/pages, original code, preview and all ten final views. Independent 564 connected coplanar domains uniform; tower front202/reveals384/header2/stairs20 only. Whole rightreturn neutral, all mixed mainwall/windowbacks neutral. Original2048 triangle multiset and bytes unchanged. Partial only.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2156.json": "ef58408560b755fead78ec25776e1e1126608449382ec471ca98c9a32a1ecc3b",
+    "INDEPENDENT-DOMAIN-2156.json": "1eb59e6364a02fe7d51df4eda2c2e6329ff68a6fd480f5b34836a3934e01d3c8"
+  }
+}

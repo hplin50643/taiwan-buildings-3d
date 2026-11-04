@@ -1,0 +1,49 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:53:03.886163+00:00",
+  "actually_viewed_source": [
+    "official-building.jpg",
+    "pdf-page50.png exterior photographs"
+  ],
+  "actually_viewed_ten_final_views": true,
+  "findings": [
+    "Only12 true front triangles of six horizontal mullions warmwhite; no painted pane backs or invented grid.",
+    "Only16 actual top/front stair faces mutedgray; sidefaces and base neutral.",
+    "All mixed facade/columns, upperhip and thick redrafter-like eavelip neutral; no unsupported redroof.",
+    "1200original triangle coordinates/STL/build unchanged, no originalOBJ claim.",
+    "All captions/README explicitly sparsepartial, not facade or roof completion."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "043c9bdb33f18b0e46f9dbf4bd5ebc61a632552b76eb3b3c8c6cbeab7476746c",
+    "README.zh-TW.md": "043c9bdb33f18b0e46f9dbf4bd5ebc61a632552b76eb3b3c8c6cbeab7476746c",
+    "model.stl": "f8a4030924c912a3b6e435b7f0b20790b822a290a7ea03b5c6dc87713b726453",
+    "build_model.py": "149fbf1967d5f689d2ca70514cc8ac3d38d1aa8c81a29d5aab0618481547b190",
+    "colorize_model.py": "2936c1f66545f3b346941d429f85216359f2b8e385a77fcea60ff0a241c92e12",
+    "render_color.py": "bf32dcd84d7b69f7f230082991384ad81595d4e19145cd1f1fbba8384561a252",
+    "color-mesh.npz": "aa2761df76c2c890eeceb941b56726f4620fed481a2e51724dcf74a42d417377",
+    "palette.json": "76aabfff8267cfa85768fbdaadb9d6c0f6bae5430be05f0ca876e69cd90825ce",
+    "appearance-materials.json": "e126c5fd4ce23fad375d9c10fa0ca3e474294d2c89de33f074875d7c0b366fa7",
+    "COLOR-SOURCE-REGISTER.json": "e4e93bad98dbd4d8d00e8142473da323c47d2786c6dcdf361e187e8b72a241d4",
+    "preview.png": "7476778d3efb575807408d7d4a3d26175eda67d05120c123fbe9e66e89e04e31",
+    "rear.png": "6dcc9f9f67caef3dd8c19de0c07e45feaea53f8c7ee9271a3bb10d83648fe185",
+    "front.png": "fba60d98d9425be350d35eee1aac62f639e6e8e3cbf50478477dd5acc85b4ba6",
+    "back.png": "adbb55fb6ef1310bdcabed832df667406b5c605a85fd34c862c59a52f38f04fa",
+    "west.png": "f6aca52913fb14b4bbccbb2306f7e17bea06578399020e52a4a68962b12f6ecb",
+    "east.png": "15bc21f540ac25f830baf715b9225309c5dca69602963d61dfb9837721a75b45",
+    "top.png": "a312c292faa003d271111a2aa93a48c3f2617e9ceec5923d11a77c7cd647b9ce",
+    "entry-detail.png": "70d4ce31844ee30b9734c752c15f5c42b62c4877443bbe0ec32c7033edd1756f",
+    "facade-detail.png": "067bfe5d6b793d44a546cdf6823f852a15346967c57af3556c91f5d8891d7e84",
+    "roof-detail.png": "13690389e2a24cb00dc787c6878200e40db05a755998005bc4eb89df4b18094c",
+    "appearance.3mf": "08c6c6a3a6ea988beeb63287f0995fd59532b461882a7e4c603d31b34d9a20cb",
+    "scene.blend": "44a256ddcf253c99b218ee70cef9bc7441a1311a554f15f5db384a1d12ff38bf"
+  },
+  "independent_parent_review": "Personally viewed reference photos, original code, preview and all ten final views; independently verified exact original triangle multiset and original bytes. Six actual mullion front pairs and four stair top/front domains only. Mixed walls/windows and all roof/eave details neutral, sparse partial only.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2148.json": "c77a01e548c1f292e1626c0c189da69ee50f2415e863f3f2e6a79508847ef505",
+    "INDEPENDENT-DOMAIN-2148.json": "4bb8033a768cd3abf15f3b45ea47a91569ba4cdb5cb414e038ddce2b477c146c"
+  }
+}

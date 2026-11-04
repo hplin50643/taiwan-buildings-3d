@@ -1,0 +1,80 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed ramp landing and steps muted pale gray stone",
+      "hex": "#B7B9B2",
+      "faces": 44
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED hybrid main walls glazing rail canopy roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 472
+    }
+  ],
+  "domain_face_indices": {
+    "ramp_true_slope_and_front": [
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440
+    ],
+    "landing_top_front": [
+      444,
+      445,
+      448,
+      455
+    ],
+    "entry_treads_and_front_risers": [
+      458,
+      459,
+      460,
+      461,
+      470,
+      471,
+      472,
+      473,
+      474,
+      475,
+      483,
+      484,
+      485,
+      486,
+      487,
+      495,
+      496,
+      497,
+      498,
+      506,
+      507,
+      510,
+      514
+    ]
+  },
+  "coplanar_components": 126,
+  "coplanar_neutralized_faces": [],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "516 original triangles unchanged",
+  "limits": [
+    "Actual ramp upperplane equation and frontside profile only; not arbitrary bbox.",
+    "Landing and step original top/front faces only.",
+    "All connected coplanar domains uniform.",
+    "Entire mixed wall, opaque rail substitution, glazing and canopy remain neutral.",
+    "Pre/post renovation common form, not a single-day complete current appearance."
+  ]
+}

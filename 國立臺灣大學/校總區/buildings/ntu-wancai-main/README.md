@@ -1,59 +1,30 @@
-# 國立臺灣大學 萬才館（主棟與前階梯段）
+# 臺大萬才主體｜前帶與入口階梯局部材色
 
-## 模型預覽
+**磚灰混牆、窗背與未知面未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。僅主體前帶、頂前緣與入口階局部補灰，不是整館全色完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![入口階梯](entry-detail.png)|![前帶](facade-detail.png)|
+|![頂前緣](roof-detail.png)|||
 
-[返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
+## 材色範圍
+同 `ntu-wancai-main` 原項目，same-item、count_delta=0。**3962原三角面及原STL／OBJ／build_model.py位元組不變**，無新切面、加構件、修形。兩份原README另存原單色歷程。
+- 三條獨立前水平帶6面、最上帽前fascia2面、真階踏面及前立面86面，總94面近似石灰色。
+- 初候選90階面中4面因與未放行面連續共平面，整域撤中性。不是為滿色沿三角邊切色；不稱全部梯／頰牆／曲平台已校色。
+- 其餘3868面中性，包含上磚／下灰但無材界的整主牆、短端、窗背玻璃反光細框、低附屋窗、右突出窗背、屋水平面、帶側返、未知側後／地台。不能以z高切紅磚、不能整窗塗黑。
+- 色／中性界是原拓撲與證據範圍，並非真實材接縫。保留原粗欄省略與階數，補色不為原近似幾何重新背書；不新增文字、人物或周邊連接建築。
 
-## 實際 STL 正面與背面
+## 來源／日期與權利
+三張校方公開影像IMG6031／6032／6044，2010網址資料夾只作年代脈絡，**不能當精確拍攝日或2026現況精測**。只外觀材色，不涉及內部。
+照片私人保存，不公開／貼圖；未確認CC或再散布授權，不保證商用，HEX為展示近似色族非校準色票。
 
+## 格式與列印
+[原STL](model.stl) · [材色3MF](appearance.3mf) · [Blender](scene.blend) · [原說明](ORIGINAL-MONOCHROME-README.md)
+150×120mm獨立近似展示底座，非精測縮尺。STL本身不含色，3MF與Blender真逐面材質；兩材標籤非已驗證兩色／四色耗材切片。**未實際列印**，無切片路徑，原薄件／挑台風險未因補色解除。
 
-[下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
-
-本件新增closed/valid與薄篩結果見本資料夾valid-sections.json、thin-feature-check.json。
-
-
-官方索引代碼 E53。公開外觀近似模型，非測繪或BIM。
-
-## 範圍與比例
-只作主棟及官方正面照片可確認的前部低量體、外階梯與淺弧平台，未見低附棟完整深度及後面簡化，不加入附近館舍或所有連通橋。與霖澤館外觀分開，不複製其兩組雙列窗。主要來源2010官方多角度；目前法律圖館舍身份由官方頁確認，但不宣稱2026每處設備/入口仍等同2010。
-
-保留辨識特徵：上部三列細長分組窗、較高灰色下部、短邊凸出玻璃窗段、抬高平棚、低前部與實心16級外階梯、淺弧入口平台及粗側牆。真實細扶手省略；平台曲面用厚實多邊形近似。
-
-尺寸 [150.0, 120.0, 92.0] mm，含底座最長150 mm。各館獨立比例，不是可拼接的共同尺度校園沙盤。尺寸、厚度、窗距均為照片目測和列印簡化，不是原建物實測。
-
-## 列印
-- 底座向下，毫米單位。參考起點：0.4 mm噴嘴、0.16–0.2 mm層高、3道外牆、15–20%填充。須依自己的切片器調整。
-- 抬高頂棚柱間約20mm跨距、外平台與窗緣需要切片支撐評估；頂棚支柱2.2mm，樓梯側牆1.4mm。5個薄篩警示層來自2.2mm方柱的角部，不是細柱被消除；不能由此宣稱免支撐。
-- 新增細浮雕名義最小約0.9 mm；這不是全模型最小壁厚的測量結果。零碎設備、文字招牌、樹木、電線及細緻裝飾沒有加入。
-- 門窗背牆與實心量體避免隱藏內殼；實際填充由切片器決定。
-- 未實際列印；未用PrusaSlicer、Cura等生成工具路徑。不宣稱無支撐或無風險可印。
-
-## 驗證與檔案
-- model.stl、model.obj；scene.blend是由實際STL匯入的可編修網格。
-- build_model.py為獨立參數來源；Python3.12，依requirements.txt裝依賴後執行python build_model.py。
-- Blender4.3.2：blender -b -t 2 -P render_preview.py。previews/front.png、rear.png、elevation.png均直接渲染交付STL。
-- python validate_model.py：原始法向、水密、流形邊／頂點、單一連通表面、無分離封閉內殼、正體積、150mm、獨立重建SHA256及已儲存Blender/STL三角幾何一致性。結果validation.json。
-- python check_layers.py：每0.2mm水平截面幾何檢查，共 460 層，所抽樣截面全部閉合。首層採z=0.071mm避免重合平面退化，非實際列印首層設定。
-- layer-check.json另記向下超45度面積指標與各層輪廓；它不是切片器、最小壁厚測試或實體試印。閉合截面不保證擠出連續、橋接、支撐可拆、床面附著或局部細節可印。
-- SHA256SUMS可核對檔案；更改參數後需重建、重繪、重驗證。
-
-## 公開來源
-查閱及圖像像素檢視：2026-10-13。來源照片未隨檔重新散布。
-- [官方萬才館落成身份及2009啟用](https://host.cc.ntu.edu.tw/sec/schinfo/epaper/article.asp?num=1251&sn=13982)
-- [法律圖官方簡介：位於萬才館](https://homepage.ntu.edu.tw/~ntukoolib/cp_n_42550.html)
-- [實際檢視2010官方外觀 E53-IMG_6031.JPG](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E53/IMG_6031.JPG)
-- [實際檢視2010官方外觀 E53-IMG_6032.JPG](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E53/IMG_6032.JPG)
-- [實際檢視2010官方外觀 E53-IMG_6044.JPG](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E53/IMG_6044.JPG)
-- [臺大官方建物索引，檢索標題2026-08-17](https://cpo.ntu.edu.tw/map/C_01_list.pdf)
-
-照片版權屬原權利人；沒有轉授原建築設計或照片權利。不同拍攝日期不等於已核實目前全部外觀。
-
-## 新增有效輪廓及薄篩
-- python check_valid_sections.py：0.2mm間距、z=0.071mm起，全部個別輪廓及組合多邊形均須closed/valid，沒有polygon repair。結果valid-sections.json。
-- python thin_canonical_v2.py：1mm間距有效截面作0.8mm參考opening；這是輔助特徵指標，不是全面壁厚、切片器或實體試印。
-- 薄篩92層，最大面積損失2.8544%，超過1%指標層5個。
-- 警示精確位於z=85.071–89.071mm抬高屋頂空隙。截面共16個2.2×2.2mm方柱，面積77.44mm²；0.8mm opening只削圓角，所有柱核心仍保留，2.854%不是細柱消失。thin-warning-notes.json包含逐柱包圍尺寸，未發現柱窄於0.8mm參考。屋頂仍有實際橋接/支撐問題，不能把此結果當免支撐保證。
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender執行 `render_color.py` 與 `verify_color_scene.py`。
+原bytes／三角multiset、閉合正體積、3MF頂點與材號、完整隔離原build＋color重建、scene重開、十圖1200×900與圖文hash均核。整連通共面同材另核，不以程式代替人工來源審核。
+原單色previews/render/validation全保留為歷程，不當新材色QA；未刪檔。

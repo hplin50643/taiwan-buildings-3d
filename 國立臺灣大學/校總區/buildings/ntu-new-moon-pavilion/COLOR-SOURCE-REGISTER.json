@@ -1,0 +1,49 @@
+{
+  "slug": "ntu-new-moon-pavilion",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "NTU-NEW-MOON-PAVILION-COLOR-SOURCE-GO-2217.json",
+    "sha256": "daecc37ee6d58a039fc37d8c721785597ee72c7e6f56d3378bd6633b55828f3f"
+  },
+  "review": {
+    "file": "NTU-NEW-MOON-PAVILION-INDEPENDENT-COLOR-MAPPING-2216-v1.json",
+    "sha256": "b0a546aa6a358c030994dab3ece6765dd2e6a720633fdade8c3fd536dbb99fdc"
+  },
+  "sources": [
+    {
+      "url": "https://ntubeats.ntu.edu.tw/enews/010/img/16-1.png",
+      "sha256": "8e973b70e4540c67822bb495eb5f956f844e12dd2adbe69efb06ef60e930cd07"
+    },
+    {
+      "url": "https://sec.ntu.edu.tw/schinfo_asp/images/epaper/25010_7830.jpg",
+      "sha256": "1269b90d094cbe406b5e23b364fa1827670a16eedbdca1462a2f058aa6b71fef"
+    }
+  ],
+  "article_context": [
+    {
+      "url": "https://ntubeats.ntu.edu.tw/enews/010/16.html",
+      "publication": "April2025",
+      "event": "2024-12-26 dedication;2024-12-27open",
+      "capture_date": "not separately verified"
+    },
+    {
+      "url": "https://sec.ntu.edu.tw/epaper/article.asp?num=1609&sn=29138",
+      "reported_event": "2024-06-28 renovation donation",
+      "capture_date": "not separately verified"
+    }
+  ],
+  "scope": "僅公共斜坡、平台及入口階梯少量補色；建築主體仍中性，保留改裝前後共形近似限制。",
+  "original_limitation": "兩層主體近似；參考2024改裝後入口與改裝前官方斜角照片。模型只保留共同可確認的建築量體，不混充某日完整現況；未重建地下停車空間。背面未確認而簡化。",
+  "limits": [
+    "Entire mainbrickface/returns that include palebase on samecontinuous originalfaces; no heighttriangles or allbrick.",
+    "All original solidbalcony rails and upperterracebacking, no blackmaterial standin for openrails.",
+    "Glazingbacks/mullions with oldpale versus newblue version and reflection/opaque mixtures.",
+    "Roofplate/coping/canopy/slab finishes where versions or graystone/blackbeam mixed and not isolated.",
+    "Unknown rear/hiddenstairs/backings, signs/text and surroundingvegetation."
+  ],
+  "rights": "No confirmed CC grant. Original source photos private only, no textures or commercial-use guarantee.",
+  "source_private_backup": "Source originals independently preserved privately; not duplicated in public package."
+}

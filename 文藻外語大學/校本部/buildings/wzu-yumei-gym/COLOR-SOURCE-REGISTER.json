@@ -1,0 +1,41 @@
+{
+  "slug": "wzu-yumei-gym",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "WZU-YUMEI-GYM-COLOR-SOURCE-GO-2210.json",
+    "sha256": "60c56030211a8cfc27a5b8cc65d213f1ccd048c3c46da3a44ffcba949cd79d9a"
+  },
+  "review": {
+    "file": "WZU-YUMEI-GYM-INDEPENDENT-COLOR-MAPPING-2209-v1.json",
+    "sha256": "27a201cadef527f09fb25278612324f2c2eb8c22f0a54cf694a0cbdf02c6e43c"
+  },
+  "sources": [
+    {
+      "path": "color-source-review-20261102/wzu-yumei-gym/official-building.jpg",
+      "url": "https://c005.wzu.edu.tw/ezcatfiles/c005/img/img/716/Y.jpg",
+      "sha256": "e6cdf02604d99b629ed30f3b683d9aac0740b559b90e30b43f68d2caf61535f4",
+      "actually_viewed": true
+    },
+    {
+      "path": "color-source-review-20261102/wzu-shared/official-exterior-reference.pdf",
+      "url": "https://c004.wzu.edu.tw/datas/upload/files/Documents/111_1075_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8_1140312.pdf",
+      "sha256": "8dd3b916f05d2baadd88c8890bd6192dd05325a8e2f38a192169054427d7bde2",
+      "physical_page": 71,
+      "render_file": "color-source-review-20261102/wzu-yumei-gym/pdf-page71.png",
+      "render_sha256": "080c587fa078299f8378e7382429c27e9d80ebed7fb0c603ade657f1c13fbab6",
+      "exterior_photo_page_viewed": true
+    }
+  ],
+  "limits": [
+    "Entire broad elliptical mainbody: photo brick fields contain additional narrow glazing andgraybands not all modeled, no overallbrick assignment even though triangle facets small.",
+    "Window recesses and cylinder mullions represent mixed glazing/opaque panels/frames; no uniformdark or white.",
+    "Roof supportposts partly brick and pale tops without original separators; neutral.",
+    "All serviceboxes/main equipmentwall, caps and lowerroof outside enclosedcourt; actualgray/brickbands not fully isolated.",
+    "Canopy shades/undersides and unknownrear surfaces."
+  ],
+  "rights": "No confirmed CC grant. Photos/PDF private only, not textures or commercial-use guarantee.",
+  "source_private_backup": "Original source package privately preserved separately; no source photographs publicly included."
+}

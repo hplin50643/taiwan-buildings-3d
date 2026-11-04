@@ -1,0 +1,36 @@
+{
+  "slug": "wzu-lourdes",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "WZU-LOURDES-COLOR-SOURCE-GO-2142.json",
+    "sha256": "38a8785b9d207c1c4f3dfb7e79c23a38bff2fd0755edeb0fba66f58834ed373d"
+  },
+  "review": {
+    "file": "WZU-LOURDES-INDEPENDENT-COLOR-MAPPING-2141-v1.json",
+    "sha256": "24bc25a5746ad81c6b908be9aa07581f7506343a47ea4cf6a7188bdde56ec33e"
+  },
+  "sources": [
+    {
+      "url": "https://c005.wzu.edu.tw/ezcatfiles/c005/img/img/716/G.jpg",
+      "sha256": "b715f44f9243081e54397daddeaf823893909549baa32e333eb0f2095ab70683",
+      "date": "Unknown photo capture date; PDF edition not photo date."
+    },
+    {
+      "url": "https://c004.wzu.edu.tw/datas/upload/files/Documents/111_1075_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8_1140312.pdf",
+      "sha256": "8dd3b916f05d2baadd88c8890bd6192dd05325a8e2f38a192169054427d7bde2",
+      "date": "Unknown photo capture date; PDF edition not photo date."
+    }
+  ],
+  "scope": "僅中央六片水平窗梃與入口階梯少量補色；立面、窗背、屋瓦與紅檐仍未完成。",
+  "limits": [
+    "All fullheight mainwalls/pillars/arcade supports mixing pale upperstone with darker base lacking interface.",
+    "All pane backings and unmodeled fine windowframes/curtains/reflections.",
+    "Entire central upswept thick profile, upperhiproof and wingroofs: mixedmaterial or unverifiedupper finish.",
+    "Decorative whitefriezes not geometrically separated from originalwall, plaques/text and entrance shaded backings.",
+    "Unknown courtyard/backside and continuous returnwall domains."
+  ],
+  "rights": "No confirmed CC grant. Original photos/PDF private only, no public textures or commercial-use guarantee."
+}
