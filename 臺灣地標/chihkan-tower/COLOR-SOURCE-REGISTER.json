@@ -1,0 +1,60 @@
+{
+  "scope": "Same-item existing-geometry bounded color upgrade",
+  "count_delta": 0,
+  "source_GO_sha256": "707092d73d267a0e1b72ff4a0b50a917e084e6d87ba7323f85df9fc5f1ed96cd",
+  "independent_review_sha256": "632250d106a5428b5e551147850103f8b068c60823aab8af8f2b27833288755f",
+  "sources": [
+    {
+      "sha256": "9b3955d49e4d2b4fb0aa7b88f4381c3700f7b4cee75db265ba6a845d86fa957f",
+      "url": "https://www.twtainan.net/content/images/attractions/17463/1024x768_Filedata635593457626796798.jpg",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "c9d728fb84eb346c339434086ca96ed5414814a384f35792e0434a16fb7b8a29",
+      "url": "https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_10889_20.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "rights": "公開官圖非CC保證，原圖/摺頁私人不公開貼圖；不保證商用權利清理",
+  "approved_mapping": [
+    {
+      "part": "four existing roof shells of two pavilions",
+      "color": "muted orange-brown/terracotta tile family; darker ridge accents only if existing separable component",
+      "limit": "Same roof-material family generalization across both pavilions, explicitly not each slope photographed. Under-eave dark muted brown, not green roof. Existing coarse ridges/ornaments not painted multicolor fantasies."
+    },
+    {
+      "part": "near pavilion y−29 negative-Y front original columns and framing",
+      "color": "muted red columns/frame with dark recesses",
+      "limit": "Near source includes pale lower column portions; if original cylinder triangle crosses pale/red division, keep full component conservative neutral rather than fake diagonal stripes or new cut."
+    },
+    {
+      "part": "near front discrete door/window backs",
+      "color": "pale muted gray for visible leaf family; dark for actual deep opening shade",
+      "limit": "Source panes/painted decorations not reproduced; cannot paint whole wall white or claim each original blind recess is exact door."
+    },
+    {
+      "part": "front stairs/high platform and original stele relief",
+      "color": "weathered stone gray",
+      "limit": "No new text/mottling, not arbitrary brick-red entire retaining base."
+    },
+    {
+      "part": "existing front railing panels vs posts",
+      "color": "posts/caps pale stone; greenish infill only if complete original panel domain identifiable",
+      "limit": "Original solid coarse parapet not fine perforated lattice. Do not invent green holes or treat whole parapet/post assembly as green."
+    },
+    {
+      "part": "far pavilion walls, unidentified sides/back and terrace horizontal field",
+      "color": "neutral",
+      "limit": "Do not infer mirrored red/white from near front or bare brick from unidentified overview."
+    }
+  ],
+  "mandatory_limits": [
+    "雙閣瓦皮同材色族連續是明示概化，不稱每坡逐照證實。",
+    "僅近前右階相連前閣皮有對位；遠照裸磚不能任套後閣，其他牆中性。",
+    "柱下白/上紅若原三角跨界整柱中性，不切新面或畫斜楔。",
+    "原粗實欄非穿孔花欄，綠只可完整識別面，不新增彩繪/題字。",
+    "日期/色值未校準，非今日全園區實測，不保證商用權利/實體多色列印。"
+  ],
+  "source_issued_QA_pending": "Historical source issue preceded model; final model QA is separate COLOR-FORMAT-GEOMETRY-QA, SCENE-QA, DELIVERY-QA and SOURCE-VISUAL-QA.",
+  "original_photographs_public": false
+}

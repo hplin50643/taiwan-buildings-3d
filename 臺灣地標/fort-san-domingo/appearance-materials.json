@@ -1,0 +1,41 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Photographed front and left red plaster",
+      "hex": "#B55F49",
+      "faces": 52
+    },
+    {
+      "id": 1,
+      "name": "Observed front terrace and near turret warm masonry",
+      "hex": "#B78354",
+      "faces": 2091
+    },
+    {
+      "id": 2,
+      "name": "Observed existing stone coping and base",
+      "hex": "#B4B3A4",
+      "faces": 457
+    },
+    {
+      "id": 3,
+      "name": "Shaded lean-to roof and original recess backs",
+      "hex": "#4C514B",
+      "faces": 185
+    },
+    {
+      "id": 4,
+      "name": "UNVERIFIED rear opposite turret roof terrace",
+      "hex": "#A7ABA5",
+      "faces": 1119
+    }
+  ],
+  "geometry_policy": "3904 original vertices and triangles unchanged",
+  "limits": [
+    "Only main fort, not separate consulate.",
+    "Front plaster distinct from front terrace and near turret masonry. Both fused main side planes neutral: existing triangles cross incompatible material domains.",
+    "Opposite turret and unseen rear/right/roof terrace neutral.",
+    "Five labels not verified multi-filament print."
+  ]
+}

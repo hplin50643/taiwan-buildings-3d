@@ -1,0 +1,110 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T17:41:50Z",
+  "mesh_sha256": "cf959602f52dd462c210db33140a54c125d46d1e17787e25310c612654a50e64",
+  "build_code_sha256": "d4fc35139a9ae7f9a034131a6a2ee8b74935f3c67e597e6f0e427f7c9a62595e",
+  "color_code_sha256": "76856054e3831e65478557e6d6d199a32aad84710f6e7cc0d47a024872696f89",
+  "render_code_sha256": "d75817158553559b669a0008c9db87c01ff00e5458a234aa7c0317407d9f60e6",
+  "readme_sha256": "294f66269d69c99c3dfbcc8ba5c5ab8f8699d0bb52e2199481eaad223319239b",
+  "file_sha256": {
+    "model.stl": "3eabe204535bf0ec3be8a9693218cbfe6a298372299f74c00de9f426b86603af",
+    "build_model.py": "d4fc35139a9ae7f9a034131a6a2ee8b74935f3c67e597e6f0e427f7c9a62595e",
+    "colorize_model.py": "76856054e3831e65478557e6d6d199a32aad84710f6e7cc0d47a024872696f89",
+    "render_color.py": "d75817158553559b669a0008c9db87c01ff00e5458a234aa7c0317407d9f60e6",
+    "export_appearance.py": "45981e79993a3bc40dd25c430ed721b01a7fa540f75e3f259aa0c45b8f4cf9a8",
+    "validate_color.py": "682d148ffe5dacb56034d34ec943abb0eb16a1fd7c64c5cbeac4518961148807",
+    "verify_color_scene.py": "9537464a7b32581c7483843f5e6a7bade12206189f420a29ad3aca86331d2b38",
+    "color-mesh.npz": "cf959602f52dd462c210db33140a54c125d46d1e17787e25310c612654a50e64",
+    "palette.json": "545c3723a1c132cf1600e195afb2f2190e4fddd1244fd6089377248de29b45d1",
+    "appearance-materials.json": "573397d04f6b7ac1a7518384636228637604030fa95bca98ee488114b9bccecb",
+    "appearance.3mf": "20ff6faa526f2f465bae236dbd8bfad0e04bc79cdf16420f1c476a96b5b26c13",
+    "scene.blend": "584bd63c1461be6776149890f28b566db6011a07559f9bfce9225b211c181673",
+    "README.md": "294f66269d69c99c3dfbcc8ba5c5ab8f8699d0bb52e2199481eaad223319239b",
+    "COLOR-SOURCE-REGISTER.json": "1d75fa7f8fde269f26013293ca7dae1ab7049eecebf7b3664d23b71ebf4941c5",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "67b4fc4484ac0a94a7014bd0b188d29c1500c3a12e7d33bd7ba9c90d531e106c",
+    "SCENE-QA.json": "1a7c2f002120c9eb4c634f157eb056da040d13ebc6ca0890abb52926ddd36ca3",
+    "DELIVERY-QA.json": "83dbf142f03d3a1634ef28f432eb674124223c3a749de38ed074fb7cf6a71ca1",
+    "FRAMING-QA.json": "581a3d35c092ec39ce3c91c654950b43bedb12c5d3701e265c6c6890417fe398"
+  },
+  "png_sha256": {
+    "preview.png": "6707bc3fc0524fdc7744bc5a8cb6e1972fdf5507c28aa1b7856cdfa7f86a22b8",
+    "rear.png": "3e2be7bca36430336bbfa9a1574d17f9713f5998a098f586c7e1eac6abd15a66",
+    "front.png": "687c128dfca5fc7184a1b2d64ae427ee0518a4f4422f2ea1fc712c199d9a0a68",
+    "back.png": "9e6d5ea827aac5cf8511f0b82070922422d919f25ec453362d31d8f781a7e86a",
+    "west.png": "b2dfba6267436f47f08a1331a9de53b8cfa2bfd0c19446d3d74bd0117a05c771",
+    "east.png": "71c696506af9719a7991b456e69e46c58625ac52f6e951513604ea8a7b010d5f",
+    "top.png": "5dee5f4017a00c1fa010f9a437f1454cc48aabc3e4afe96521fdc7cd3a191e17",
+    "entry-detail.png": "5a4fdea8e8ccd56cd85bf24b9417b83e7e7b9032114a75d7d2fc23b973e09ce4",
+    "corridor-detail.png": "59455af2610b5a9118bdd100892087339b9851db386bb28fae38e74823e06592",
+    "roof-detail.png": "354f3394360c79788eb889244971a1ab8adffb402789b9f8b6ece04e17f9e2c7"
+  },
+  "source_review_sha256": {
+    "chihkan-tower-INDEPENDENT-FOCUSED-COLOR-REVIEW-1718.json": "632250d106a5428b5e551147850103f8b068c60823aab8af8f2b27833288755f"
+  },
+  "numeric_checks": {
+    "original_triangles": 19150,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "build_model.py": true
+    },
+    "eight_material_counts": [
+      1173,
+      3867,
+      619,
+      8,
+      1856,
+      48,
+      2,
+      11577
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_max_vertex_serialization_delta_mm": 4.999996860988176e-09,
+    "3MF_unit": "millimeter",
+    "gray_horizontal_eave_faces_1566_1568": {
+      "all_vertices_z": 33,
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "material": 7,
+      "role": "unchanged original support box, not incorrect sloping tile material"
+    }
+  },
+  "actual_visual_review": {
+    "preview": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "rear": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "front": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "back": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "west": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "east": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "top": "PASS complete model and base, caption legible, no diagonal material wedge",
+    "entry-detail": "PASS intentional close view; coherent existing material domains, no improper diagonal patch",
+    "corridor-detail": "PASS intentional close view; coherent existing material domains, no improper diagonal patch",
+    "roof-detail": "PASS intentional close view; coherent existing material domains, no improper diagonal patch"
+  },
+  "source_findings": [
+    "Official near-front photo and overview actually viewed; near-front stair-linked pavilion only for wall colors.",
+    "Four existing roof skins share declared same-family tile generalization, not proof of every direction.",
+    "Original horizontal eave box protrudes through roof as gray narrow facets. Independently checked faces1566/1568, retained geometry and explicit README limitation.",
+    "Near lower wall has no actual door cuts, remains neutral. Lower columns contain unseparated white/red zones, coherent neutral stone family rather than centroid division.",
+    "Upper front discrete columns red and existing cut backs pale/dark; no fictitious door geometry.",
+    "Front coarse parapet panels green-gray with stone piers, not newly perforated photo lattice.",
+    "Unidentified overview brick wall not assigned to far pavilion; unknown side/rear/other walls neutral.",
+    "README accurately states source and topology limits; original 19150 triangle geometry is not newly accuracy-certified."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen with eight shaders PASS",
+    "delivery and framing PASS"
+  ],
+  "limitations": [
+    "Original geometry not newly measurement-certified.",
+    "Uncalibrated illustrative color families; neutral means unknown rather than actual gray finish.",
+    "No physical print or slicer validation.",
+    "Private reference photos excluded from public package; no unrestricted-rights assertion."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}

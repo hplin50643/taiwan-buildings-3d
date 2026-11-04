@@ -1,0 +1,103 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T17:48:45Z",
+  "mesh_sha256": "5a7c4232259265687c9408e303fa7fe0b0c5217d395d57ea2f09fdfb9cdaea0e",
+  "build_code_sha256": "a8496bf01998548ade7b7526665a202dab16952080fd77887b73f2cb080438b1",
+  "color_code_sha256": "3ad233b9320de06c9e27692f9ad4273797c001e551cabcfb5a995184c3250aee",
+  "render_code_sha256": "013957128c07124c69f8e7fe13adbd65dd1626aa5c3f65d69e1142d9a36ecbdb",
+  "readme_sha256": "dcb24c1c40ab6fd269862aa3de769da0d0357a63f3d1a4dae0837fc820714d6c",
+  "file_sha256": {
+    "model.stl": "0286971124851f5ffeeaade6b98fd056a26275edbd8b83312a2723892bb6340c",
+    "build_model.py": "a8496bf01998548ade7b7526665a202dab16952080fd77887b73f2cb080438b1",
+    "colorize_model.py": "3ad233b9320de06c9e27692f9ad4273797c001e551cabcfb5a995184c3250aee",
+    "render_color.py": "013957128c07124c69f8e7fe13adbd65dd1626aa5c3f65d69e1142d9a36ecbdb",
+    "export_appearance.py": "3e2d7025a39a8bbdff25d6eb9ccba974198a5a3c4e3691026853584ad1e01a58",
+    "validate_color.py": "29154f1c26625d9a09a41e1b1d062398a138344a229f7c51619fa3b0e18284c1",
+    "verify_color_scene.py": "51dd77497566d6a22d07d0f18d50f3c5faeb104f16973839a8ceea8406dfa7c5",
+    "color-mesh.npz": "5a7c4232259265687c9408e303fa7fe0b0c5217d395d57ea2f09fdfb9cdaea0e",
+    "palette.json": "54c3e245f8acee4b84b4c2a435b6152f9437e870c414f4896dee7f112fdf0528",
+    "appearance-materials.json": "bf11ad820408744c70e1bb7f3ca66281086e2224ed2e0e7455ba89c390a5a594",
+    "appearance.3mf": "9975101364062e1703bcf98b45710e3f88ccb97363fd8eb4c8a52a25d9880b7e",
+    "scene.blend": "827b708cf98b90064f6af864de8396d37c4dbbd6998aa57364ed6bd753265d7a",
+    "README.md": "dcb24c1c40ab6fd269862aa3de769da0d0357a63f3d1a4dae0837fc820714d6c",
+    "COLOR-SOURCE-REGISTER.json": "d945fb1835132b3562c07d8448aeb0795e135f36b9d2e5d84ed3c3c099cf86bc",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "978b301b7fc269bdc504da8a309ec9761094ea5335269cee8d20672731af33ac",
+    "SCENE-QA.json": "ba4a6e8f44275a25fcf09305ce0cf1c0d14730f4b9052b61733e7e91172bcf8e",
+    "DELIVERY-QA.json": "24982122dd30275c920a3dc04b935e95c9210ca993b8df128e7802135e6e5b4f",
+    "FRAMING-QA.json": "5c14c6b32eafa4887768ec4a59da7d47e4a7745a285f0fa98e97f115c7994741"
+  },
+  "png_sha256": {
+    "preview.png": "e7021b81b55e77c784186426f5bc1b8c4f220362f6b28e5c24d3fc2a6a702c56",
+    "rear.png": "4ad39c0b994f61c9a85c042ef525273c470dde2aa6b273dc4ef2cfe993137838",
+    "front.png": "0488faaf599ea3f40c375ab99dcc58f0e2d3cd3ef80ce8ec0b9bcd1fabc99b78",
+    "back.png": "e8ac085741b5b1179887141d2c5c0b6fc30e523e7dab000d69be953877ff58d9",
+    "west.png": "e510481edba5d5f9fb0a568d11d9d32e67debe273eb4cb81989cd4f7e0e609ca",
+    "east.png": "4f245a7e321bcd2ea56b5c852a86de6e1d227d0d2fe6140022ce0abad9402c4a",
+    "top.png": "e219c871c978ea8ea393cf4d1b04a4dde01d2c03e26b84897a035d9ff1e2c0cb",
+    "entry-detail.png": "24f4b21c1152a6d87760eb1a9afa1eb32eba04c2089da18fe9be33ffefcdeab0",
+    "facade-detail.png": "e7f123cd03d058c5c2cf75fd8eb4326634ae8247fb1b8a6dea71be0d0c79ed1d",
+    "roof-detail.png": "edba46d249d8ae0967e860dd1faadd0b6dd0ece34ff00e23bbc85ff269c72fa6"
+  },
+  "source_review_sha256": {
+    "palace-museum-north-model-INDEPENDENT-FOCUSED-COLOR-REVIEW-1732.json": "8084a0bb1158c4ebd270455d92758ea86f2e0b95c5e102ab21074d83dd1f845d"
+  },
+  "numeric_checks": {
+    "original_triangles": 5558,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "build_model.py": true
+    },
+    "seven_material_counts": [
+      170,
+      1603,
+      786,
+      362,
+      197,
+      176,
+      2264
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_vertex_serialization_max_delta_mm": 4.9902340037988324e-09,
+    "3MF_unit": "millimeter",
+    "green_horizontal_faces": 0,
+    "green_vertical_faces": 0,
+    "green_side_dominant_faces": 0,
+    "rear_lip_faces_382_471_560_605_all_neutral": true,
+    "V2_to_V3_rear_lip_reclassified_faces": 18,
+    "main_horizontal_roof_z30_7_82_faces_all_neutral": true
+  },
+  "actual_visual_review": {
+    "preview": "PASS full model/base and readable caption; bounded domains coherent",
+    "rear": "PASS full model/base and readable caption; bounded domains coherent",
+    "front": "PASS full model/base and readable caption; bounded domains coherent",
+    "back": "PASS full model/base and readable caption; bounded domains coherent",
+    "west": "PASS full model/base and readable caption; bounded domains coherent",
+    "east": "PASS full model/base and readable caption; bounded domains coherent",
+    "top": "PASS full model/base and readable caption; bounded domains coherent",
+    "entry-detail": "PASS intentional local framing; no material wedge",
+    "facade-detail": "PASS intentional local framing; no material wedge",
+    "roof-detail": "PASS intentional local framing; no material wedge"
+  },
+  "source_findings": [
+    "Both official daylight front photographs and original code/preview actually inspected. North museum only, not south branch.",
+    "Front ochre wall, pale existing relief/rails, gray stairs and dark original recesses bounded to supported domains.",
+    "Green roofs restricted to complete front-half facets with dominant front-facing slope. V2 rear upturned lips had negative-Y normals despite rear location; V3 whole-vertex front-half gate corrects18 faces. All ten V3 views independently re-viewed.",
+    "Only separately modeled front roof-rim sections ochre; no invented ridge figures. Unknown back, side and broad top planes neutral.",
+    "Central canopy is original opaque wedge, gray-green appearance not transparent reconstructed glazing; no lettering or internal space.",
+    "README/source register preserve topology limitations and uncalibrated color interpretation."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen seven actual shaders PASS",
+    "delivery/framing PASS"
+  ],
+  "limitations": [
+    "Original approximate shape unchanged, not newly surveyed.",
+    "No exact current or dated as-built color claim.",
+    "Seven material families not tested filament slicing; no physical print.",
+    "Private sources excluded from public package, no blanket copyright license."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}

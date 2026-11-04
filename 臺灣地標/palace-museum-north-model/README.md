@@ -1,50 +1,28 @@
-# 國立故宮博物院北部院區正館｜150 mm 外觀微縮模型
+# 故宮博物院北部院區正館｜原模型材色更新
 
-## 模型預覽
+| 彩色預覽 | 彩色預覽 | 彩色預覽 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![左側](west.png) | ![右側](east.png) |
+| ![頂視](top.png) | ![入口細部](entry-detail.png) | ![立面細部](facade-detail.png) |
+| ![屋頂細部](roof-detail.png) | | |
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+## 材色範圍
+同一既有北院正館項目補彩（count_delta 0），非南院。原 5558 三角面、頂點、STL 與 build_model.py 不變；不新增斗栱、欄杆、文字、旗、人像或室內。原照片推估的簡化幾何不因材色更新而變成精確測繪。
 
-## 模型範圍與辨識特徵
-- 成品尺寸約 **150 × 91 × 45.8 mm**，含厚 2.4 mm 平底展示座。STL 單位為 mm。
-- 臺北市士林區的北院正館：中央盝頂樓亭、後排兩座小亭、向前突出的兩端樓亭、長向館舍立面、成對前階及中央斜面採光罩。
-- 一體式實體；沒有室內、地下空間或封閉內腔。門窗均用朝外的淺凹浮雕表示。採光罩亦為實體斜坡，非透明薄殼。
-- 已實際查看市府正面照片、廣角照片，以及青年日報刊載、文化部提供的空拍照片後建立幾何。詳見 sources.md。
-- 這是照片判讀後重新建立的概略外觀模型，**不是測繪復刻、精確縮尺模型或官方模型**。館舍進深、各樓亭相對位置、階高及背面比例為推估；背面採簡化量體，沒有補畫不可見的門窗或設備。
-- 僅含主館與緊鄰前階，未加入天下為公牌坊、華表大道、園林、旗桿、車輛或其他院區建物。舊照片只作沿革比對；沒有混入1965年未擴建版本或未來整建構想。
-- 為 FDM 調整飛簷曲線，合併斗拱及細欄杆、厚化屋脊；省略雕刻、書法、牌匾文字及瓦片紋理。模型中的14級前階與門窗節奏不代表現地精確數量。
+- 2023 官方正照與 2020 廣角實景支持正面黃褐牆、淺色既有欄板／柱／浮雕、灰石入口和階梯。使用色族，不是校準色票；來源年份不等於整館當年精確紀錄。
+- 屋面僅原有完整、明確前向的斜面採保守玉綠色；向後、向內、側向未唯一對位的坡面與大水平頂面中性。原抬角可令側面三角法線帶微小前向分量，不能僅憑該分量塗綠形成斜色片。本版採主要面朝向及各原屋面中心之前半域共同限制；後緣反折小唇即使法線朝前也保持中性。沒有分割任何三角面。
+- 只有原獨立屋脊框之前段可用黃褐色近似；不增照片中的細脊飾。中央雨棚既有斜實體用灰綠、凸肋灰，仍是原不透明簡化實體，不造透明玻璃、題字或內部。
+- 窗／門凹口只在既有分離面作暗陰影；不以整面玻璃填補缺失開口。未知後部、側部、屋頂平台及展示座中性，非全棟滿色。
+- 七種外觀材料不是四色或多耗材列印切片方案；**未實際列印**，不保證免支撐。STL 本身不存色。
 
-## 列印建議（尚未實際切片或試印）
-- 起始設定：PLA、0.4 mm 噴嘴、0.16–0.20 mm 層高、3 道外牆、12–18% 填充。
-- 維持原方向，展示座平面貼列印平台。底座已足夠寬，是否加 brim 依平台附著狀況決定。
-- 屋簷下方做短斜面以降低懸垂，但部分飛簷、屋脊及突出浮雕仍可能需要局部支撐。請先完整檢查切片預覽的孤島、懸垂與薄線；不保證免支撐。
-- 欄杆採實心矮牆及約 1.05 mm 方柱；屋頂尖端最低直徑約 0.9 mm，脊飾約 1.15 mm；嵌入式窗框約 0.8 mm。採光罩浮雕肋寬約 0.52 mm，屬貼附細節，切片時可能弱化。
-- 不建議直接縮小。若改尺寸或噴嘴，需重新檢查飛簷、屋脊及細節可印厚度。
-- 封閉、連通的 STL 只代表數位網格基本健全，不等於支撐分析、完整切片驗證或實體試印成功。
+## 檔案與重建
+[彩色 3MF](appearance.3mf) · [彩色 Blender](scene.blend) · [保留原 STL](model.stl)
 
-## 檔案
-- model.stl：唯一列印用模型。
-- build_model.py：可編輯、可重建的參數化 Python 原始碼。
-- scene.blend：同一 STL 的 Blender 場景；含相機、燈光與非列印用展示地板。列印僅使用 model.stl。
-- previews/front.png、rear.png、elevation.png：直接由實際 STL 產生的前斜視、後斜視及正面預覽，未添加其他建築幾何。
-- render_preview.py：重建 Blender 場景與預覽。
-- validate_model.py、validation.json：封閉性、連通性、面向、所有邊兩面共用、頂點鄰域、尺寸、體積與平底檢查。
-- verify_rebuild.py、rebuild_validation.json：實際重新執行原始碼，比對 STL SHA-256、原始二進位法線、閉合殼層及水平截面。
-- verify_blend.py、blend_validation.json：比對 Blender 中的模型三角形與 STL，並記錄來源校驗碼。
-- SHA256SUMS.txt：各交付檔案的內容校驗碼。
-- requirements.txt：固定 Python 相依版本。
+原 build_model.py 重建原幾何；colorize_model.py 對完整原面分材，export_appearance.py 產 3MF 基本材料，render_color.py 產十圖。validate_color.py 驗原檔、三角座標、格式與保留隔離重建；verify_color_scene.py 重開實際 shader／索引／構圖。環境沿既有 numpy／trimesh／manifold3d／Pillow 與 Blender 4.3.2。
 
-## 重建
-先在自己的 Python 環境安裝 requirements.txt 中的套件，執行：
+## 來源與權利
+臺北旅遊網官方 2023 正照及 2020 廣角照片，僅核公開建築外觀。不含人物重製、室內、安全設施或地下空間。官方公開不等於 CC 或可任意再授權；原照只私人保留、不作貼圖、不隨模型公開，不保證商用。完整來源 URL／雜湊／限制見 COLOR-SOURCE-REGISTER.json。
 
-    python build_model.py
-    python validate_model.py model.stl --output validation.json
-    python verify_rebuild.py
-    blender -b -t 6 -P render_preview.py
-    blender -b scene.blend -P verify_blend.py
-
-亦可使用 python build_model.py --output 自訂路徑.stl。Blender 場景以毫米顯示；此腳本使用 Blender 4.x 的 STL 匯入操作。
-
-## 權利與限制
-本交付不包含參考照片、網站原檔或第三方圖說，亦不授予建築設計、商標或照片的權利。若要公開散布、商用或宣稱官方關聯，請另外確認適用權利與許可。未發布至 GitHub 或其他公開網站。
+## QA 與保留歷程
+本次 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、FRAMING-QA、DELIVERY-QA 與獨審檔記錄實際模型和影像。舊 previews、舊報告與 ORIGINAL-MONOCHROME-README.md 保留作歷程，非本次色版驗證；上方十圖與 scene.blend 為新入口。原包、原色初版及保留隔離重建私人保存，不刪檔。

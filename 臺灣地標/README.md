@@ -4,14 +4,14 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![臺北101前視模型預覽](Taipei101_150mm/preview.png)](Taipei101_150mm/README.md)<br>**[臺北101](Taipei101_150mm/README.md)**<br>[彩色3MF](Taipei101_150mm/appearance.3mf) · [彩色Blender](Taipei101_150mm/scene.blend) | [![中正紀念堂前視模型預覽](中正紀念堂_150mm/previews/front.png)](中正紀念堂_150mm/README.md)<br>**[中正紀念堂](中正紀念堂_150mm/README.md)** | [![國立故宮博物院北部院區前視模型預覽](palace-museum-north-model/previews/front.png)](palace-museum-north-model/README.md)<br>**[國立故宮博物院北部院區](palace-museum-north-model/README.md)** |
-| [![總統府前視模型預覽](presidential-office/previews/front.png)](presidential-office/README.md)<br>**[總統府](presidential-office/README.md)** | [![艋舺龍山寺前視模型預覽](longshan-temple/previews/front.png)](longshan-temple/README.md)<br>**[艋舺龍山寺](longshan-temple/README.md)** | [![淡水紅毛城前視模型預覽](fort-san-domingo/previews/front.png)](fort-san-domingo/README.md)<br>**[淡水紅毛城](fort-san-domingo/README.md)** |
+| [![臺北101前視模型預覽](Taipei101_150mm/preview.png)](Taipei101_150mm/README.md)<br>**[臺北101](Taipei101_150mm/README.md)**<br>[彩色3MF](Taipei101_150mm/appearance.3mf) · [彩色Blender](Taipei101_150mm/scene.blend) | [![中正紀念堂前視模型預覽](中正紀念堂_150mm/previews/front.png)](中正紀念堂_150mm/README.md)<br>**[中正紀念堂](中正紀念堂_150mm/README.md)** | [![國立故宮博物院北部院區前視模型預覽](palace-museum-north-model/preview.png)](palace-museum-north-model/README.md)<br>**[國立故宮博物院北部院區](palace-museum-north-model/README.md)**<br>[彩色3MF](palace-museum-north-model/appearance.3mf) · [彩色Blender](palace-museum-north-model/scene.blend) · [校驗版本說明](palace-museum-north-model/CHECKSUM-SCOPE.md) |
+| [![總統府前視模型預覽](presidential-office/preview.png)](presidential-office/README.md)<br>**[總統府](presidential-office/README.md)**<br>[彩色3MF](presidential-office/appearance.3mf) · [彩色Blender](presidential-office/scene.blend) · [校驗版本說明](presidential-office/CHECKSUM-SCOPE.md) | [![艋舺龍山寺前視模型預覽](longshan-temple/previews/front.png)](longshan-temple/README.md)<br>**[艋舺龍山寺](longshan-temple/README.md)** | [![淡水紅毛城前視模型預覽](fort-san-domingo/preview.png)](fort-san-domingo/README.md)<br>**[淡水紅毛城](fort-san-domingo/README.md)**<br>[彩色3MF](fort-san-domingo/appearance.3mf) · [彩色Blender](fort-san-domingo/scene.blend) · [校驗版本說明](fort-san-domingo/CHECKSUM-SCOPE.md) |
 | [![新竹火車站前視模型預覽](hsinchu-station/previews/front.png)](hsinchu-station/README.md)<br>**[新竹火車站](hsinchu-station/README.md)** | [![蘭陽博物館前視模型預覽](lanyang-museum/previews/front.png)](lanyang-museum/README.md)<br>**[蘭陽博物館](lanyang-museum/README.md)** | [![路思義教堂前視模型預覽](luce-chapel/previews/front.png)](luce-chapel/README.md)<br>**[路思義教堂](luce-chapel/README.md)** |
 | [![臺中國家歌劇院前視模型預覽](taichung-theater/previews/front.png)](taichung-theater/README.md)<br>**[臺中國家歌劇院](taichung-theater/README.md)** | [![中台禪寺前視模型預覽](chung-tai-monastery/previews/front.png)](chung-tai-monastery/README.md)<br>**[中台禪寺](chung-tai-monastery/README.md)** | [![國立故宮博物院南部院區前視模型預覽](palace-south/previews/front.png)](palace-south/README.md)<br>**[國立故宮博物院南部院區](palace-south/README.md)** |
-| [![赤崁樓前視模型預覽](chihkan-tower/previews/front.png)](chihkan-tower/README.md)<br>**[赤崁樓](chihkan-tower/README.md)** | [![安平古堡前視模型預覽](anping-old-fort/previews/front.png)](anping-old-fort/README.md)<br>**[安平古堡](anping-old-fort/README.md)** | [![奇美博物館前視模型預覽](chimei-museum/previews/front.png)](chimei-museum/README.md)<br>**[奇美博物館](chimei-museum/README.md)** |
+| [![赤崁樓前視模型預覽](chihkan-tower/preview.png)](chihkan-tower/README.md)<br>**[赤崁樓](chihkan-tower/README.md)**<br>[彩色3MF](chihkan-tower/appearance.3mf) · [彩色Blender](chihkan-tower/scene.blend) · [校驗版本說明](chihkan-tower/CHECKSUM-SCOPE.md) | [![安平古堡前視模型預覽](anping-old-fort/previews/front.png)](anping-old-fort/README.md)<br>**[安平古堡](anping-old-fort/README.md)** | [![奇美博物館前視模型預覽](chimei-museum/previews/front.png)](chimei-museum/README.md)<br>**[奇美博物館](chimei-museum/README.md)** |
 | [![高雄85大樓前視模型預覽](85-sky-tower/previews/front.png)](85-sky-tower/README.md)<br>**[高雄85大樓](85-sky-tower/README.md)** | [![衛武營國家藝術文化中心前視模型預覽](weiwuying/previews/front.png)](weiwuying/README.md)<br>**[衛武營國家藝術文化中心](weiwuying/README.md)** | [![龍虎塔前視模型預覽](dragon-tiger-pagodas/previews/front.png)](dragon-tiger-pagodas/README.md)<br>**[龍虎塔](dragon-tiger-pagodas/README.md)** |
 | [![鵝鑾鼻燈塔前視模型預覽](eluanbi-lighthouse/previews/front.png)](eluanbi-lighthouse/README.md)<br>**[鵝鑾鼻燈塔](eluanbi-lighthouse/README.md)** | [![松園別館前視模型預覽](pine-garden/previews/front.png)](pine-garden/README.md)<br>**[松園別館](pine-garden/README.md)** | [![國立臺灣史前文化博物館康樂本館前視模型預覽](prehistory-museum-kangle/previews/front.png)](prehistory-museum-kangle/README.md)<br>**[國立臺灣史前文化博物館康樂本館](prehistory-museum-kangle/README.md)** |
-| [![金門得月樓前視模型預覽](deyue-tower/previews/front.png)](deyue-tower/README.md)<br>**[金門得月樓](deyue-tower/README.md)** | [![澎湖天后宮前視模型預覽](penghu-tianhou-temple/previews/front.png)](penghu-tianhou-temple/README.md)<br>**[澎湖天后宮](penghu-tianhou-temple/README.md)** | [![馬祖東湧燈塔前視模型預覽](dongyong-lighthouse/previews/front.png)](dongyong-lighthouse/README.md)<br>**[馬祖東湧燈塔](dongyong-lighthouse/README.md)** |
+| [![金門得月樓前視模型預覽](deyue-tower/preview.png)](deyue-tower/README.md)<br>**[金門得月樓](deyue-tower/README.md)**<br>[彩色3MF](deyue-tower/appearance.3mf) · [彩色Blender](deyue-tower/scene.blend) · [校驗版本說明](deyue-tower/CHECKSUM-SCOPE.md) | [![澎湖天后宮前視模型預覽](penghu-tianhou-temple/previews/front.png)](penghu-tianhou-temple/README.md)<br>**[澎湖天后宮](penghu-tianhou-temple/README.md)** | [![馬祖東湧燈塔前視模型預覽](dongyong-lighthouse/previews/front.png)](dongyong-lighthouse/README.md)<br>**[馬祖東湧燈塔](dongyong-lighthouse/README.md)** |
 | [![臺北表演藝術中心完整主建築模型預覽](tpac-whole-2022/previews/front.png)](tpac-whole-2022/README.md)<br>**[臺北表演藝術中心](tpac-whole-2022/README.md)** | [![北投圖書館整棟歷史外觀模型預覽](beitou-library-whole-pre2026/previews/front.png)](beitou-library-whole-pre2026/README.md)<br>**[北投圖書館](beitou-library-whole-pre2026/README.md)** | [![日月潭向山行政暨遊客中心完整雙翼模型預覽](xiangshan-whole-2010/previews/front.png)](xiangshan-whole-2010/README.md)<br>**[日月潭向山行政暨遊客中心](xiangshan-whole-2010/README.md)** |
 | [![大溪武德殿主殿2014狀態完整模型預覽](daxi-butokuden-main-hall-2014/previews/front.png)](daxi-butokuden-main-hall-2014/README.md)<br>**[大溪武德殿主殿](daxi-butokuden-main-hall-2014/README.md)** | [![埔里紙教堂2008至2009完整單棟模型預覽](paper-dome-taiwan-whole-2008-2009/previews/front.png)](paper-dome-taiwan-whole-2008-2009/README.md)<br>**[埔里紙教堂](paper-dome-taiwan-whole-2008-2009/README.md)** | [![臺北府城北門完整歷史外觀近似模型預覽](taipei-north-gate-whole-2017-2022/previews/front.png)](taipei-north-gate-whole-2017-2022/README.md)<br>**[臺北府城北門／承恩門](taipei-north-gate-whole-2017-2022/README.md)** |
 | [![旗後燈塔完整連接主建築模型預覽](qihou-lighthouse-main-2020/previews/front.png)](qihou-lighthouse-main-2020/README.md)<br>**[旗後燈塔完整連接主建築](qihou-lighthouse-main-2020/README.md)** | [![原臺南測候所研究模型](former-tainan-weather-observatory-exterior-study/previews/front.png)](former-tainan-weather-observatory-exterior-study/README.md)<br>**[原臺南測候所（簡化外觀研究模型）](former-tainan-weather-observatory-exterior-study/README.md)** | [![打狗英國領事館山下辦公室研究模型](takao-british-consulate-lower-office-exterior-study/previews/front.png)](takao-british-consulate-lower-office-exterior-study/README.md)<br>**[打狗英國領事館山下辦公室（外觀研究模型）](takao-british-consulate-lower-office-exterior-study/README.md)** |
@@ -433,3 +433,28 @@
 ## 臺北101既有模型材色更新（不新增套數）
 
 [十張彩色實渲與材色限制](Taipei101_150mm/README.md) · [彩色3MF](Taipei101_150mm/appearance.3mf) · [保留原STL](Taipei101_150mm/model.stl)。同一原150 mm項目補彩，原三角面、STL與建模程式不變；色族為來源支持的有界近似，遮擋裙樓、未證屋面中性，不是現況測繪或提升原幾何精度。未驗證多耗材切片，未實體列印。原單色預覽與舊QA留作歷史資料，不代表本次彩材已驗印。
+
+
+## 既有模型材色更新：presidential-office（不新增套數）
+
+[十張彩色實渲與材色限制](presidential-office/README.md) · [彩色3MF](presidential-office/appearance.3mf) · [保留原STL](presidential-office/model.stl)。同一原項目補彩，原三角面、STL與建模程式不變；僅來源支持且既有面可映射的有界近似，未核部位保持中性；不是現況測繪或提升幾何精度。未驗證多耗材切片，未實體列印。原單色預覽與舊QA留作歷史資料；完整來源日期、推定與限制詳單項README。
+
+
+## 既有模型材色更新：fort-san-domingo（不新增套數）
+
+[十張彩色實渲與材色限制](fort-san-domingo/README.md) · [彩色3MF](fort-san-domingo/appearance.3mf) · [保留原STL](fort-san-domingo/model.stl)。同一原項目補彩，原三角面、STL與建模程式不變；僅來源支持且既有面可映射的有界近似，未核部位保持中性；不是現況測繪或提升幾何精度。未驗證多耗材切片，未實體列印。原單色預覽與舊QA留作歷史資料；完整來源日期、推定與限制詳單項README。
+
+
+## 既有模型材色更新：chihkan-tower（不新增套數）
+
+[十張彩色實渲與材色限制](chihkan-tower/README.md) · [彩色3MF](chihkan-tower/appearance.3mf) · [保留原STL](chihkan-tower/model.stl)。同一原項目補彩，原三角面、STL與建模程式不變；僅來源支持且既有面可映射的有界近似，未核部位保持中性；不是現況測繪或提升幾何精度。未驗證多耗材切片，未實體列印。原單色預覽與舊QA留作歷史資料；完整來源日期、推定與限制詳單項README。
+
+
+## 既有模型材色更新：palace-museum-north-model（不新增套數）
+
+[十張彩色實渲與材色限制](palace-museum-north-model/README.md) · [彩色3MF](palace-museum-north-model/appearance.3mf) · [保留原STL](palace-museum-north-model/model.stl)。同一原項目補彩，原三角面、STL與建模程式不變；僅來源支持且既有面可映射的有界近似，未核部位保持中性；不是現況測繪或提升幾何精度。未驗證多耗材切片，未實體列印。原單色預覽與舊QA留作歷史資料；完整來源日期、推定與限制詳單項README。
+
+
+## 既有模型材色更新：deyue-tower（不新增套數）
+
+[十張彩色實渲與材色限制](deyue-tower/README.md) · [彩色3MF](deyue-tower/appearance.3mf) · [保留原STL](deyue-tower/model.stl)。同一原項目補彩，原三角面、STL與建模程式不變；僅來源支持且既有面可映射的有界近似，未核部位保持中性；不是現況測繪或提升幾何精度。未驗證多耗材切片，未實體列印。原單色預覽與舊QA留作歷史資料；完整來源日期、推定與限制詳單項README。
