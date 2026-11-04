@@ -1,0 +1,55 @@
+{
+  "slug": "nkust-industry-a-front-segment",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "NKUST-INDUSTRY-A-FRONT-SEGMENT-COLOR-SOURCE-GO-2343.json",
+    "sha256": "c01e9c3aaea0400e15318fb501ef64691b5f73fd78bb148f93c2a1ae6ed4256e"
+  },
+  "review": {
+    "file": "INDEPENDENT-MAPPING-2342.json",
+    "sha256": "21a7d27a2e79ee19cc5ddd9480e09d33341de69881a5f32f5a0eb8b59777bdcb"
+  },
+  "sources": [
+    {
+      "file": "architect-1.jpg",
+      "sha256": "50f923681d5cd35142aca103184074f2fc0022e7879a38ac4779a4415a1b12bb",
+      "url": "https://static.wixstatic.com/media/558384_134f63292764430c925f0148a7995696~mv2.jpg",
+      "capture_date": "unknown"
+    },
+    {
+      "file": "architect-2.jpg",
+      "sha256": "60586e5cd72a7df26caab7622b99d3c83e678e130c7066105d3d0f644258b8c5",
+      "url": "https://static.wixstatic.com/media/558384_f4ffcb6c252a4358b03c7668c3be38de~mv2.jpg",
+      "capture_date": "unknown"
+    }
+  ],
+  "date_context": [
+    "Maintain original 國立高雄科技大學第一校區（西校區）/卓越路 identity and original A-front-segment title; architect/owner-page erroneous 燕巢 wording does not authorize campus relabeling.",
+    "2025–26 entrance improvement planning/construction is not verified completed work, and photographs have no independently verified capture date.",
+    "Photographed main facade segment only, not whole building or authenticated2026 current condition."
+  ],
+  "limits": [
+    "Red diagonal balcony frame remains neutral this pass: original y-25.5 plane merges with floor ledges and solid parapet proxies, requiring separate semantic-domain validation before any broader assignment. Do not use a simple z23..40.5 mask to color merged solids red.",
+    "Long diagonal blade has photographically visible gray foot but no faithful base material boundary: do not color allred or cut triangles by height.",
+    "Blue canopy roof/top and underside stay neutral: blue fascia evidence does not establish whole canopy skin material. No cables invented.",
+    "Roof cap upperface, underside and hidden edges stay neutral; only visible front fascia red-orange.",
+    "All glass proxies/windows/curtains/reflections, opaque parapets approximating glass rails, main mixed facade, side/rear/cut and plaza remain neutral."
+  ],
+  "rights": "Architect photographs privately retained; no CC permission inferred, no public texture or commercial-use guarantee.",
+  "source_private_backup": "Original references separately privately preserved; not included here.",
+  "mandatory_scope_narrowing": {
+    "file": "SOURCE-SCOPE-NARROWING-2350.json",
+    "sha256": "3c2303d3565cb84e2ca8691a0ee75b9adce5399dc9e9122ae3fa3cd8e033ff5e",
+    "withdrawn_cap_faces": [
+      2471,
+      2485
+    ],
+    "remaining_blue_faces": [
+      2684,
+      2691
+    ]
+  }
+}

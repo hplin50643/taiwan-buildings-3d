@@ -1,42 +1,32 @@
-# 新研究大樓（2020年啟用館）
+# 高師新研究大樓｜入口雨庇頂與柱前局部灰白
 
-## 模型預覽
+**混材簷面、欄代實板、窗背與其他未證面未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。只12個入口有據原面，不是全色現況。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![actual STL正面](previews/front.png) ![actual STL背面](previews/rear.png) |  |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![兩柱前](entry-detail.png)|![雨庇真頂](facade-detail.png)|
+|![中性屋部](roof-detail.png)|||
 
-國立高雄師範大學／和平校區。自主製作的完整外部量體近似，包含開放中庭；不是2016年拆改前的舊研究大樓，不是建築測繪或全校完成。
+## 材色範圍
+同 `nknu-new-research-building` 原項目，same-item、count_delta=0。**原8796三角面、STL、OBJ與build_model.py字節不變**；無切面／新增幾何。
+- 獨立入口雨庇真頂 z30.2、x−20..34／y−66..−48，6原面中灰，並非整盒灰色。
+- 兩柱真正前表面 y−65.55、中心x−15.5／20.5，原臺階／雨庇Boolean已剪界，6原面暖白。
+- 其餘8784面中性：雨庇前fascia混深上緣與淺下皮、柱側／雨庇底、主體混牆、代欄杆的原實板、窗背與粗框、屋頂設備、側後、中庭及階。
+- 全共面連通域同材，0候選撤色。不把實欄板塗黑冒充透空欄杆，不畫三角楔假材界。色／中性界是證據與原拓撲範圍，不是真實材接縫。
+- 此為新研究大樓，非已拆舊館；補色不重新背書原照片近似幾何、窗框或樓層精度。
 
+## 來源／日期與權利
+官方完工高視角與地面外觀兩照片。2020文章／完成歷史、2026附件網址均不是獨立拍攝日期證明，不稱2026現況精測。
+原照私有保存，不公開／貼圖；未確認CC／再散布授權，不保證商用。HEX只是近似灰白材色族，非校準色票。
+最終來源GO是來源範圍放行，不是發布核准，也不免除幾何／共面／視覺QA。
 
-[正立面](previews/elevation.png) · [俯視](previews/top.png) · [STL](model.stl) · [可編修Blend](scene.blend)
+## 格式與列印
+[原STL](model.stl) · [原OBJ](model.obj) · [材色3MF](appearance.3mf) · [Blender](scene.blend)
+150×147mm原展示底座，照片近似非精測比例。STL無色，3MF與Blender真逐面材質。三材質標籤不是驗證三色／四色耗材切片；**未實際列印**，無切片路徑。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |  |
-
-## 外觀與證據界線
-- 保留七層、成列深陽台、轉角玻璃梯塔、雙層入口柱廊、主要立面退縮、屋頂女牆／梯間及開放中庭。
-- 2020官方竣工空拍與2026官方公告附件的地面實拍提供前面、右側及屋頂證據；公告附件未標拍攝日期，不能當2026新拍。
-- 3F與4F／5F公開平面支持中庭挑空、前後梯間與退縮量體；模型以近似比例整理，局部進深和高度未經測量。
-- 背面及左側未取得完整實拍，窗口由平面與可見立面推定，並非測得實際窗數。
-- 鐵欄杆改為約1.2–1.3mm的連續實心矮欄；窗框加粗且有背托。玻璃是凹窗幾何，沒有貼圖。空調、細配管、字牌與樓外車道／景觀省略。
-- 屋頂中庭保持開放到底座上緣，不用實心方盒或封頂取代；室內房間沒有重建。
-
-## 列印提示
-- STL單位毫米；含底座150 × 147 × 110.9 mm。單棟獨立縮尺，不可與其他館按同一比例組整校。
-- 底座朝下。陽台板、側廊、入口大跨度遮棚及玻璃塔窗緣需在切片器檢查支撐／橋接；從中庭或凹陽台拆支撐可能較難，請先規劃。
-- 欄牆約1.2mm，主要柱約3.5mm，屋頂女牆約1.3mm。不要任意縮小後仍假設細節可印。
-- 沒有坡屋頂尖端，沒有不足最後0.2mm一層的坡頂專屬警示。
-- 沒有Cura/Prusa工具路徑驗證或實體試印；數位合格不等於保證列印成功。
-
-## 重建與數位QA
-Python 3.12依requirements.txt；Blender 4.3.2。執行python build_model.py；blender -b -t 2 -P render_preview.py；python validate_model.py；python check_valid_sections.py；python thin_canonical_v2.py。
-
-scene.blend是由實際交付STL匯入的可編修網格，參數重建來源為build_model.py。正背頂PNG均由實際STL渲染。
-
-[validation.json](validation.json)：原始法向／繞序、非退化面、水密、每邊兩面、頂點link單環、單一表面殼、正體積、150mm上限、重建SHA及Blend一致均通過。[valid-sections.json](valid-sections.json)：z=0.071mm起、0.2mm間距，共555截面逐環與組合Polygon閉合／有效，不repair或吞掉invalid。
-
-[thin-feature-check.json](thin-feature-check.json)：canonical固定邊插值、1.0mm節距、0.8mm形態opening參考，最大面積損失0.116%以下，0層超過1%。此法會受尖角影響，不是全面最小壁厚檢驗。
-
-[來源與年代](sources.json) · [SHA清單](SHA256SUMS)
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py` 與 `verify_color_scene.py`。
+原字節／三角multiset、閉合正體積、3MF面材、完整隔離原build＋color重建、scene重開、十圖1200×900及圖文hash皆核，程序不取代來源人工判讀。
+原README與單色previews/render/validation保留歷程，不冒稱新QA，沒有刪除原件。

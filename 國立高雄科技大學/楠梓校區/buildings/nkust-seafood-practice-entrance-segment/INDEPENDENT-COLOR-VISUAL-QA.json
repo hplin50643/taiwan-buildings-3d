@@ -1,0 +1,71 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "manual_review": "Personally viewed official108MP entryphoto resized privately, originalcode and finaltenviewmontage.72west oblique screen outward toprail faces charcoal only; inner top bottom endsneutral; longfacade rail neutral. No lettering/materialwedges. Rear truncatedsurface unverifiedneutral. Deliberate detail crops show approvedrail from west/front and rearangle; all7overallviews framed.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "original_face_count": 6966,
+  "material_faces": {
+    "charcoal": 72,
+    "neutral": 6894
+  },
+  "connected_coplanar_domains": 1567,
+  "original_OBJ_exists": false,
+  "file_sha256": {
+    "README.md": "87d361be06adf952ef240b72906734f94c135f5d951d38221f94166d36c9c2f3",
+    "README.zh-TW.md": "87d361be06adf952ef240b72906734f94c135f5d951d38221f94166d36c9c2f3",
+    "model.stl": "2edbf92d659ff8c9bec80df8cf458e2eeeeb657c7affd8a1c4bc29c5629dfb6d",
+    "build_model.py": "91746355b8e35901ca4620960fde20b0a7411071bb891d944c0c512825cef969",
+    "colorize_model.py": "8f70c851a07b2f40d9d3d4549ae5dbd309a0e6df95d87aec4eb27c232ec652eb",
+    "render_color.py": "efc05aee88d198c1f9b5bfb72f46cee87a34c51383f3731a52c99c56eb544137",
+    "verify_color_scene.py": "b061be6d0552d0ad81ce55ab94ba11af71666d67d7b010009c984123b666cdbc",
+    "color-mesh.npz": "94957d327e4c43e56a1edffeb8319dcafd5d5d09e9db5afc491324c154cb1692",
+    "palette.json": "c397556f6ab52b1e6302a9dfdac96bdac9f0d6fc2ef79f7f33513b7ec23efafd",
+    "appearance-materials.json": "aa4297353babad2c41aee234a258e5bc07233d4a489e327c392aed2b4a5b77e7",
+    "COLOR-SOURCE-REGISTER.json": "710d7b4147a02922155b7585ba6d231406b2ac3a528a012a56ae4202808459d8",
+    "appearance.3mf": "c580e73013c0cd86f137d9e171f8964df2f614a987b9a8aea7c1e1e213bb8fd3",
+    "scene.blend": "a546d6cbcd65a5b3795f47faa80bdee67990782242d226c13ee85815321a1869",
+    "preview.png": "c90da887047c89a482dc6cfdcc715a8fe633986fd718ff77f8d74d1f9dc072b6",
+    "rear.png": "c79fd00ce5733170ec39d253c63a5d852a5c10b346bc99e25c59a7a49b13f371",
+    "front.png": "d83962bc8e9adb6038fa0a5a7d112eb193735b25822e0b41bfc8e44b924c0504",
+    "back.png": "6f51c33b44c1da76c61579a0321ae5bf81a9d9ebf9e0dfbab046e87e076c4ecc",
+    "west.png": "28697976244041d7c3ad5c20564e0cda8ea7e8901afd486adec5c2b517e30642",
+    "east.png": "28605bd620e9e156e538de54708092b477add09eb660f7855662c292006b7e55",
+    "top.png": "1ee630df9e6731fd871803bd74b4cd4453f0b596acc6174010227d8c42cb1a95",
+    "entry-detail.png": "6945ba5e2aab7825c7edf735cb4e39572d3da1b046372579dcf3d0d1879949bc",
+    "facade-detail.png": "1ef44b5b3137469638378904b611ce2420453c5164e6d865c549f1715a042141",
+    "roof-detail.png": "44556f89e1036bfbd2f45bd11de6be46ae0f255e397e24de1bcdffa07cd2d576"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "4f250aca5a142ef18e927610863dde35902132368383abe63533cb8f7cf80b21",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "144f0af992bbb150553653e125c46c5a50c33ca96ea1a0733a16b4647fa63c50",
+    "SCENE-QA.json": "a3612b3b59d78c2951aa62da1efd36da4cf7199a54f56c928ef1f1582f88a9a7",
+    "FRAMING-QA.json": "9c022db58cf8dded2872aab2e97c7d2fe6bcf84aa1733780ffd913233af60c59",
+    "DELIVERY-QA.json": "209f6f3be940e1e7c3a1ea7bf0290a0e2b8b91e11601cc0385135417db973b32"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "57df2e7d147431f7ac044a1c995b7575d5cebdfd2f76f2ec1b79becfdc66e584",
+    "ORIGINAL-RETENTION-QA.json": "86723ffc7752c1b766cd1f25a3e6dd42c8c298405be309bad125f22b19434001",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4d1aed56c57bbcd12fea9a1abc6a55aeee7cef30b75cd749c787c34001906030",
+    "ORIGINAL-PACKAGE-READBACK.json": "7fa53c2771879bac699769183116a757bfff4d66c5b72f0242918cb86ff238bb"
+  },
+  "montage": "private-review/final-v1-ten-view-montage.jpg",
+  "retained_history": [
+    "reopen-v1.log retains validator template triangle-count check typo; verifier corrected to3vertices and reopen-v2 PASS. Geometry/material/render unchanged."
+  ],
+  "limitations": [
+    "Sourcecapture unknown; no2026currentclaim",
+    "Entrance/southfacade segment not wholecomplex",
+    "Longfacade503notread",
+    "Sourceprivate;no images/textures distributed",
+    "Not testprinted;2labels not testedfilamentproject"
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at": "2026-11-02T23:47:35.976860+00:00",
+  "review_scope": "Parent personally viewed single approved entry-layout photograph, originalscreen_transform code, preview and final ten views. Independently recomputed full oblique west railing outward plane72;top/sides/bottom/longfacaderails neutral. Seven full views framed,three intentional details. Original6966triangles unchanged;no originalOBJ;partial entrance segment not wholebuilding.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2343.json": "8b1c46cf25b0b0ad6eab105744a4ab950c4f0049519932a4f52f2aaeb7c12877",
+    "INDEPENDENT-DOMAIN-2343.json": "62a93f9a23fac95c9f284b1b668ca57002b8567bd9345ae7e6fce7569bd1a7db"
+  },
+  "qa_history": "reopen-v1 failed because template triangulated check incorrectly expected2vertices;actual mesh alreadytriangles. Correctedassertto3, retainedv1failurelog, reopen-v2PASS same meshhash. No geometry/render changed."
+}

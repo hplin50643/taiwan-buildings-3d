@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Parent personally viewed both architect daylight sources, original code, preview and final ten-view montage. Independently recomputed complete finite entry rectangle, area, whole coplanar uniformity and v1-to-v2 unchanged geometry with only red cap withdrawn. Full facade remains uncolored; this is limited partial material update, not current-condition verification.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Only one finite complete entry fascia rectangle2blue faces; fullwidth cap withdrawn to neutral per2350source correction.",
+    "All678coplanar connected domains uniform;2blue and2754neutral triangles.",
+    "Ring/floor/parapet merged planes and longblade grayfoot lack original material boundaries; allneutral. Roofskins, glass, walls and rear neutral.",
+    "All ten captions identify First Campus West frontsegment partial approximation, not verified2025–26improvement completion and partial coloring; seven full views fit geometry, three closeups intentional.",
+    "Original2756triangles, STL/build bytes unchanged; immutable original has noOBJ; color review does not validate original approximate geometry or current condition."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "cec0134d6cfd8b022719d2bb6adc3ac08d9556376c95dba7c7806494a0fcc184",
+    "README.zh-TW.md": "cec0134d6cfd8b022719d2bb6adc3ac08d9556376c95dba7c7806494a0fcc184",
+    "colorize_model.py": "6adb35647724646ad944e9af593ac71a895ec468e34e2ed78b96c3c8f6c4e85b",
+    "render_color.py": "0a0130f73c531a7e1dc1226582f6b6a496eb3c84d79815d8a7a884cc0d947974",
+    "color-mesh.npz": "71a13ee2dfd064265ef014e82954a9e430d74822a57890c1bdf9a017cff8d557",
+    "palette.json": "27cce259c20ca7885e89df7de02b49af9f5b6293ae653816640d4bf82a296d6e",
+    "appearance-materials.json": "a79a4395653fbe3a122ee18d586ace161a53f7628e5d8601c7705f71f3bdab62",
+    "COLOR-SOURCE-REGISTER.json": "d8e5c6579090e3433dbb797200e4d74f6567da927b649696104f178031a2919f",
+    "model.stl": "b097b43c754db67ab0281e4e660de2084042903d89c3deed954b3f9cf88fea42",
+    "build_model.py": "290f40971d39277558f060cc483daf467051ae4df19c2bc540b8e1bd0f2ca917",
+    "preview.png": "f4aa3f4e23169153647f501ec2a3513673eba8a266ef1cf4290b9014f722af28",
+    "rear.png": "3280e6eb41aecdff7c76d4802479d21fee12e21a78141d41ef039a8a0bc3498b",
+    "front.png": "2291deac2e121c78d451ec292a6cc5088744a7ed9930409bc08cb5b3ac3b0f24",
+    "back.png": "0ecf7f8c42e042ccfa86a71b2aa7cdf805dac6081d63af5c5cc20b89dc7c055b",
+    "west.png": "29bc0b4c0f5ed98d1ade100dcd33db754e6e0390d18f7280a545abf2b97f0a06",
+    "east.png": "dfff75f2eee1fb90a96c14e72390050199748e327701f8b28a615260996937b5",
+    "top.png": "7532fec74c86475db0e5d65338f46f0e0a04bad919112ccc96005e020c810293",
+    "entry-detail.png": "38b913c31cac91debc15e9dacf42bbdf5af3ebe14f96ad85d43903af85807ed2",
+    "facade-detail.png": "9338dd074bcbe82214de6d1f541373b85e9db2d7676162720847f0afbbbe037e",
+    "roof-detail.png": "c8015edd1da00266ec9c1eca2a0a934ada2fb86b8b04ebff8a901509d8ffb4d1"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-02T23:54:44.380044+00:00",
+  "parent_root_qa_sha256": {
+    "INDEPENDENT-IDENTITY-2351.json": "4b5326ce97d95c553d0d12d61a0bfe9b680ad945b8fd68438a4dea0aaeafaa27",
+    "INDEPENDENT-DOMAIN-2354.json": "ef9606c18889b552c9afca29e4804d69a44f8f4107ca71c16ead3c81ba698b90"
+  }
+}

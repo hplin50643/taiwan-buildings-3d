@@ -1,38 +1,32 @@
-# 體育健康休閒多功能教學大樓
+# 高大運休大樓｜屋簷前端與側邊局部綠色
 
-## 模型預覽
+**大屋頂、塔、混材主牆、底面與窗背未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。僅16原面簷緣，不是全色或2026現況完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正背面並列](previews/front-rear.png) |  |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![入口及中性塔](entry-detail.png)|![高翼前西簷](facade-detail.png)|
+|![低翼前東簷](roof-detail.png)|||
 
-國立高雄大學／楠梓校本部。自主建立的照片外觀近似模型；不是測繪、竣工BIM或全校完成。
+## 材色範圍
+同 `nuk-sports-leisure` 原項目，same-item、count_delta=0。**原2558三角面、STL、OBJ與build_model.py字節不變**；無切面／新增幾何。
+- 高翼屋簷前端 y−41.5 的6面、低翼前端 y−36 的6面綠色。
+- 高翼西側 x−68 完整延伸邊2面及低翼東側 x66 完整延伸邊2面，分別由照片3／4支持；不是未知後端或屋頂上皮，不按y任切前半三角。
+- 其餘2542面中性：整塔、全部窗背、屋頂與底面、混粉灰主牆、階與基座、未知側後。不延用舊v1的27底面灰／128窗背灰綠／4上塔米色候選。
+- 塔東 x8 原8面屬同連續混材平面，不能只染上4面造假斜楔；全部中性。所有連通共面域同材，0新增候選撤色。
+- 色／中性界是來源及原拓撲限制，非真實材接縫；不拿補色背書原粗幾何精度。
 
+## 來源／日期與權利
+四張高大官網外觀照。EXIF圖1為2007、圖2為2005、圖3／4為2002年元旦零時疑重設，均未認證時鐘／時區／拍攝日期，不視為2026現況。
+原照私有保存，不公開／貼圖；未確認CC／再散布授權，不保證商用。HEX僅近似灰綠簷材色族，非精確校色。
+本次採最終GO與獨審v2，不採v1範圍；GO是來源放行，仍須建模及終審QA，不是發布核准。
 
-[STL](model.stl) · [可編修Blender網格](scene.blend) · [正投影](previews/elevation.png) · [反面正投影](previews/rear_elevation.png) · [頂視](previews/top.png)
+## 格式與列印
+[原STL](model.stl) · [原OBJ](model.obj) · [材色3MF](appearance.3mf) · [Blender](scene.blend)
+150×108mm原展示底座，照片近似非精測比例。STL無色，3MF與Blender真逐面材質。兩材質標籤不是驗證兩色／四色耗材切片；**未實際列印**，無切片路徑。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正投影<br>![正投影](previews/elevation.png) | 反面正投影<br>![反面正投影](previews/rear_elevation.png) | 頂視<br>![頂視](previews/top.png) |
-
-## 建模範圍與來源限度
-- 高館、低館（泳池所在）、接合服務塔與後側低層玻璃翼合併成一件外觀近似模型；泳池不另計棟。
-- 保留：高低館的折弧屋簷、突出接合塔、上端水平高窗、下層深凹開口、粗柱墩、低館大窗與背側玻璃翼。服務塔頂z=53mm；主館靠塔簷頂z=46.1mm，高差6.9mm，是照片比例估計而非實測。
-- 整體進深、低館後翼平面與弧形曲率為照片近似；高館完整背立面受低館遮擋，背側僅留克制少量開口。屋頂設備、落水管、字牌及獨立欄杆未細建，未取得全屋頂空拍/竣工圖。
-- 主要外觀來源是官方舊版「校舍現況」四張實拍，攝影日期未標。115年官方校圖僅確認館名/位置仍列示，不是2026拍攝的證據。本模型不宣稱最新設備或小改建已全部核對。
-- [逐來源、立面與年代](sources.json)。不散布第三方原照片；未使用他人的3D網格。
-
-## 列印提示
-- STL座標單位：毫米；含底座 150 × 108 × 53 mm，最長150mm。每館獨立比例，不是全校統一縮尺。
-- 底座朝下，厚3mm。屋簷、門口小雨棚與深窗上緣有懸空，應檢查支撐。主屋頂片厚約1.6mm，窗槅約1.1mm並帶背托；小雨棚柱1.5mm。
-- 請在實際切片器檢查層高、線寬、橋接、支撐接觸及細部解析；縮小會使窗框與屋簷變薄。
-- 沒有實體試印或Cura/Prusa工具路徑測試。數位QA不保證任意印表機/材料都能直接列印，亦不宣稱無需支撐。
-
-## 自行重建
-Python 3.12與[requirements.txt](requirements.txt)，Blender 4.3.2。先執行python build_model.py，接著blender -b -t 2 -P render_preview.py，執行blender -b -t 2 -P render_elevations.py補渲染正反正投影，再執行python run_all_checks.py。參數script從基本布林幾何重建STL/OBJ；scene.blend是匯入實際STL的可編修三角網格，並包含拍攝相機。
-
-## 驗證
-- [validation.json](validation.json)：原STL法向/繞序、每邊兩面、頂點link單一環、水密、單一連通表面殼、正體積、150mm含底座、獨立重建SHA及saved Blend和STL幾何一致。
-- [valid-sections.json](valid-sections.json)：z=0.071mm起，每0.2mm截面，265層；逐段degree2、個別Polygon與組合Polygon均需有效，沒有buffer(0)修補或吞掉錯誤。
-- [thin-feature-check.json](thin-feature-check.json)：canonical固定方向邊插值，1.0mm節距，以0.8mm參考寬度形態opening輔助篩檢，53層、最高面積損失0.0942%。此結果不是全面最小壁厚保證；尖角損失亦包含其中。
-- [qa-summary.json](qa-summary.json)彙總。任一子檢查非0退出或checks出現false就拒絕通過。[逐檔SHA](SHA256SUMS)
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py` 與 `verify_color_scene.py`。
+原字節／三角multiset、閉合正體積、3MF面材、完整隔離原build＋color重建、scene重開、十圖1200×900及圖文hash皆核，程序不取代來源人工判讀。
+原README與單色previews/render/validation保留歷程，不冒稱新QA，沒有刪除原件。

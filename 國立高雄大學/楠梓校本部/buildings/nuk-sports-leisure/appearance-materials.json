@@ -1,0 +1,30 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed front andtwoverified side fascia green",
+      "hex": "#65715B",
+      "faces": 16
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED tower walls windowbacks soffit rooftops neutral",
+      "hex": "#B7B9B2",
+      "faces": 2542
+    }
+  ],
+  "domains": {
+    "four_fascia_groups_green": 16,
+    "whole_coplanar_withdrawals": 0
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "2558 original triangles unchanged; no cuts or addedgeometry",
+  "limitations": [
+    "Only highfront6 lowfront6 highwest2 loweast2 fascia triangles.",
+    "Entire tower8coplanar domain andwindowbacks neutral.",
+    "All soffits rooftops mixedwalls andunknownrear neutral.",
+    "Fourphotos datesunknown;some EXIF likelyreset;not2026.",
+    "Two material labels not tested filament slicing."
+  ]
+}

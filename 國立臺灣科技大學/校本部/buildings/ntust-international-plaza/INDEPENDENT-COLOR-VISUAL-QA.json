@@ -1,0 +1,53 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Parent personally viewed official exterior photos2/3, original code, preview and final ten views; independently recomputed complete four trimmed sunshade rectangles and thirty genuine column front domains, excluding coplanar mixed walls.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Four true sunshade front plates8yellow triangles and30true column fronts156gray triangles.",
+    "All1485 coplanar connected domains uniform;8yellow156gray6324neutral triangles.",
+    "Whole mixed glazing, solid rail substitutes, curved wing, otherwalls and roofs remain neutral; no blanket y18.9 coloring.",
+    "All ten captions identify 2012reference NOT2026 complete condition and partial coloring; seven full views fit geometry, three closeups intentional.",
+    "Original6488 triangles, STL/build bytes unchanged; color review does not validate original solid shade/rail approximations or current condition."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "3605f65943881390b0357b1580e241a940b802fca1a0585ab683906ff1d89737",
+    "README.zh-TW.md": "3605f65943881390b0357b1580e241a940b802fca1a0585ab683906ff1d89737",
+    "colorize_model.py": "121bd2fa3d3863f68757ba56cf008012d9110d1b77f68edee34962de64bb10c8",
+    "render_color.py": "e77cce386d1ea3a5c2dc28541e0d8f3a28e8b51f3bdf78937d276d525ba40228",
+    "color-mesh.npz": "2b3658f38a3627e977244f4778233e45f2fd5e7a9c8319be475b5a772eaaf617",
+    "palette.json": "d5177086577e9768c463035f13179db86c606c44036d9215ad844f27db1f730a",
+    "appearance-materials.json": "09a9ddc7e488593f481f0c334c3759e8a202a52848306a0a2bbe1f029909e8af",
+    "COLOR-SOURCE-REGISTER.json": "c0d5f6bc2deb1db8f78b3cd72a56654ceaa8541ce45cd3ad3382d1d587c145d1",
+    "model.stl": "4cb5bfdbde4b9d544e6944dc1e6a9b72bafb310e6df4bace43f63c6ae0037d42",
+    "build_model.py": "e210c2082837c6f3045bc9c26175f665c8125b7ce1e9073e48f2944e6c55c307",
+    "preview.png": "f06134dbffa31a65e503f82c76866d40f409e5e29e12c61b58e92ad207707bc8",
+    "rear.png": "c36f7de9160a2f8b8bbfe55901805f4e6e83bdd7a05c02d4aef8f66db8625400",
+    "front.png": "f0cdeb08d2a2d7c2855875615623caf0957dcb5c069297f647183e96d4442996",
+    "back.png": "448cf4a329fd3c6d850a697689a939df30055eaa2a39d3d1e8d66a5029e047a2",
+    "west.png": "4051532574fb8002b06b7b00b5d82cc16b5c23eba77a032d1a29640900d7f66e",
+    "east.png": "ab06a54b3e07ecafabea2ee1dffc6136a998cba456435c3a9057e0f3199dea83",
+    "top.png": "341a4f8a0316588db896e7fa586ceb3b0025e5345413218e320f42f1adab0238",
+    "entry-detail.png": "91549861ce48e0632782bdd01ecb19f58f512898c130911f1901117de6963faf",
+    "facade-detail.png": "bfba978762be10ac43ca97d2e949d4b99d561906670d748482e624bee35cdc71",
+    "roof-detail.png": "157ef871ee703ba4ac8aa8b93de701a85b3f70e6680d8fcdccf30f133b43fd76",
+    "appearance.3mf": "a7d9ab94d706a86f615807e026d8f65df26f971121386463ac3bf898edb5947f",
+    "scene.blend": "0c2ce4f0bdd4fd5086481480a24f6f5aa6cb536a0f518c1fbd575e3b17c48e64"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at": "2026-11-02T23:21:25.045250+00:00",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2318.json": "cfc2d546a74f44fd41dfae3934b9aee0ffc2a6fad5e7a9742e0368a8857f1aa3",
+    "INDEPENDENT-DOMAIN-2318.json": "ce70900d7c106aa13de417165e6a60f0b01c85cab1b8a3664c53650929634b7f"
+  },
+  "history_note": "Immutable original package has no OBJ; final README reflects actual retained files, not hypothetical build outputs."
+}
