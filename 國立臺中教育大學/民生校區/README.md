@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 行政樓中央入口段<br>[![行政樓中央入口段](buildings/ntcu-administration-central-section/previews/front.png)](buildings/ntcu-administration-central-section/README.md) | 中正樓入口段<br>[![中正樓入口段](buildings/ntcu-zhongzheng-entrance-section/previews/front.png)](buildings/ntcu-zhongzheng-entrance-section/README.md) |  |
+| 行政樓中央入口段<br>[![行政樓中央入口段](buildings/ntcu-administration-central-section/preview.png)](buildings/ntcu-administration-central-section/README.md)<br>[局部材色3MF](buildings/ntcu-administration-central-section/appearance.3mf) · [範圍與限制](buildings/ntcu-administration-central-section/README.md) | 中正樓入口段<br>[![中正樓入口段](buildings/ntcu-zhongzheng-entrance-section/previews/front.png)](buildings/ntcu-zhongzheng-entrance-section/README.md) |  |
 
 兩件局部入口模型，不是整棟或全校完成：
 - [行政樓中央入口段](buildings/ntcu-administration-central-section/README.md)：三層窗組與淺弧拱山牆門廊，頂端三格為飾格。

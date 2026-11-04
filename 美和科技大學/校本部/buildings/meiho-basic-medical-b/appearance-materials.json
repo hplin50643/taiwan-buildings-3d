@@ -1,0 +1,35 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Meiho B observed long roof fascia pale gray",
+      "hex": "#D3D6D2",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 3334
+    }
+  ],
+  "domain_face_indices": {
+    "whole_long_roof_fascia_front": [
+      3254,
+      3261
+    ]
+  },
+  "coplanar_components": 901,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3336 original triangles unchanged",
+  "limits": [
+    "Roof upper skin and dark underside are not approved by this fascia-only recommendation.",
+    "Left gabled shelter, its glass backing and all rooftop posts/screens remain neutral; left and right shelters are one building, not separate models.",
+    "Broad front wall contains circular openings and transitions to lower material/occluded base; no all-wall white or triangular material split.",
+    "Window backing contains frames/reflection and equipment; neutral.",
+    "Ground canopy, side/rear walls, hidden base, steps and all other faces remain neutral.",
+    "Preserve all3336 original triangles; no geometry modifications, new source retrieval, Git changes or OBJ generation.",
+    "Nominal limited material-family mapping, not complete coloring or 2026 condition confirmation."
+  ]
+}

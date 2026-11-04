@@ -1,0 +1,63 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official panorama and shared identity map, original code/preview and all ten final renders; parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Entirey=-10.5 plane2connected triangles complete85x2frontfascia;3334neutral.",
+    "All901coplanar domains uniform,no clipping or partialtriangles.",
+    "Lower B behind/right of tall G identified by stepped windowbands and circulartrios;no G color transferred.",
+    "Map banners provide identity only;no hidden wall colors inferred.",
+    "Roofskins/undersides/ends,leftgable/posts/screens,mixedwalls/windowbacks/groundcanopy/rearsidesneutral.",
+    "Sevenwholeviews fit;details show narrow pale longroofedge separate from neutralupper/underside.",
+    "Original3336triangles/STL/build unchanged,17immutablefiles,nooriginalOBJ,count_delta0.",
+    "Explicit3MF/scene/scripts Meiho Basic Medical B partial color;bothcapturedatesunknown,no2026survey;originalrepo校本部 remains,北校區 location prose preserved."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "f0ad0e76373421c18a39f020a168ee7cdae29ab6723a9fb404512cdd9bb17a8c",
+    "README.zh-TW.md": "f0ad0e76373421c18a39f020a168ee7cdae29ab6723a9fb404512cdd9bb17a8c",
+    "colorize_model.py": "2c86627fea81e7151337bd8377a7239367620d6975eb9fa6cb6defd15fd596a1",
+    "render_color.py": "b7a30ee7736c62f9cfce86a674949b2f652bd63e3a7c38242ec86e58fbfee36a",
+    "color-mesh.npz": "3340ad6bd2716a913c524afe17d335516730b9b2880a84c9d8aa1f20e6387e26",
+    "palette.json": "0247ec43fc899bfa5d2f5c0d494f75b10e208b6e18be49af874ea4d5b7b8689c",
+    "appearance-materials.json": "00101d686a0da78a15e0f008ec96872f0c79395985b64440fce32c3dd8b3bddc",
+    "COLOR-SOURCE-REGISTER.json": "c3538c0dec726b44d398e340f867a2d6bb6c892104d663380624f4cc7ed2b9fa",
+    "model.stl": "662a2e1b078e24446b4f6ab1d5758be8553d33824e5d82cead51aad301612439",
+    "build_model.py": "080ec348ad9b449769240236a0a8b76e4578b0e7dbbfebb8a4dc744ca2be2da5",
+    "preview.png": "5a7243ef4b53b22cd7e4e777f43d78c0f384697fc26873642ad159c1fb2dd947",
+    "rear.png": "15c0a88cc5a01a07f785ab26eacd9f503dd09d1b2e766eacff3046495e89cc2c",
+    "front.png": "ad4055f65289ca460641bc85f244444cfbea4c77a04feb22f40f766ae231562b",
+    "back.png": "a609c4ec66d8e9691b2ba9344b4114f96cc24b4477fc8bc48f18f9d0eac03d17",
+    "west.png": "83062d1f110119b2a4377b25892dbeea0a3ff9a1fb5cb3ba4a22408e0a31b16f",
+    "east.png": "e795281db80ceaf866540a1c9185a98ff2dd405b107a1dd1543fab4928effb18",
+    "top.png": "b31b2e6ee126c31d4c65cebee75cf015ca692f209d483116d964f6d3d7f5cdde",
+    "entry-detail.png": "8ddca9f0d0dd341c78925e828aa13740c703613cb44142fe4ab35ed085bb68bf",
+    "facade-detail.png": "35dda1cb504f8c0dd0657f418dfc1bfbb4a2bc5b10d8415b049b12f3dcf5e42e",
+    "roof-detail.png": "a55ed6bd3f6f73825e92ba79cc389774a6a8e3683ece22b12c4269293b187983"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "1f0d7b225126741bc3eb292bd29975e166747911708cfdc3d15f8d8cd998029d",
+    "SCENE-QA.json": "4a70f8bc8266623a494dff717371fa7807fe418a478d4adb4f7fb36a15d9778a",
+    "DELIVERY-QA.json": "0b7cb679d122f2b022b65eb77b7c18b5a4c110fb88859bfcf2c3d2851892f367"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "f74bf31e9ef120c5dba7743e8394624d0ea98ddfa803f263faac7dae7cb56d6d",
+    "ORIGINAL-RETENTION-QA.json": "6e9afdbfcf74694a13d290de4d432003da8d904987b4f7ffc4d62a78e6dd9c40",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0505.json": "64e0bd436e73f521e3cdb399a76e1bb0b9be78a95bf25ac89a03e5394512aad6",
+    "INDEPENDENT-IDENTITY-0505.json": "da432425cabdd757f4de5223566aa27397ac318edbeb5f6a945cce558ff59ae3",
+    "INDEPENDENT-PACKAGE-IDENTITY-0508.json": "412f33d15f91649dbf5ed5ea060eec9807f5f720806e10b1f1673e3c652f7b96"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T05:08:20Z",
+  "parent_review": "Parent personally viewed official panorama/rightbackground B and map identity, originalcode, preview and finaltenmontage. Whole original y-10.5 plane2 equals complete long right roof fascia rectangle x-19.5..65.5,z85..87, nominal palegraywhite only. Other3334faces neutral including top/soffit/posts/leftgable/mainwall/glass, no foreground G color borrowed. Explicit Meiho Basic Medical B identity independently read actual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit,3details intentional. Original3336triangles17files/noOBJ unchanged; original校本部 repo path kept, samebuilding not separate roofpieces, unknown capture date."
+}

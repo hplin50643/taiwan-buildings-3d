@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official190x143 photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Entirey=-57.5 plane2connected triangles full28x2raisedcapfront,1092neutral.",
+    "All291coplanar domains uniform,no clipping or partialtriangles.",
+    "Only nominal mutedgraybrown frontedge;not calibratedtexture,upperroof/underside/returnsneutral.",
+    "Tallpilasters/goldletteredentry/mixedwalls/windowbacks/base allneutral.",
+    "Sevenwholeviews fit;details show narrow capfront without extending into glazing or mainroof.",
+    "Original1094triangles/STL/build unchanged,17immutablefiles,nooriginalOBJ,count_delta0.",
+    "Explicit3MF/scene/scripts VNU Hongdao E partial color;captureunknown,no2026survey;originalpublicphoto geometriclimitations preserved."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "6cf8cb00ffc78150291a40c2eb4c755b4747390df2a7cb16e874577f5565de5a",
+    "README.zh-TW.md": "6cf8cb00ffc78150291a40c2eb4c755b4747390df2a7cb16e874577f5565de5a",
+    "colorize_model.py": "809e947f8385cd922dbf5f6588fa9be54cc0859919fc238246132c9e466130e9",
+    "render_color.py": "b472fc67e8f8e09b67cda6da621c93cf5f8fbc049cdc92ce3346d1a2e70a9e88",
+    "color-mesh.npz": "109b7e4f1ec94d26f083f79cd03c15bf3a7e9d89e5f027a2e4659f0e659df2c7",
+    "palette.json": "fd1ebf6c23a30b8b82ebc2ca6895f1433a03f4017c44901bc6504b63f7683158",
+    "appearance-materials.json": "5fa5a08ba5fc4b29cd8790358a78394a8a39039e2777e4506213608e10bde9ad",
+    "COLOR-SOURCE-REGISTER.json": "5a4c31b17927243f004514f9d1d3cd28a976259da602f97f06ce56eb6ab8dfb0",
+    "model.stl": "849ff897b43e89109e8fdc6d750fe8fa80505b84b0763cfb4f7277d4bd04ebfb",
+    "build_model.py": "6d858a39409c1478f4f77df8d982e3310c40c41d70567e47ebab54bf9c1740d8",
+    "preview.png": "c82ef8e4b59a9129e6014a5cfddf403cf3b790506e511104b955840f552bc315",
+    "rear.png": "e0fbffcc1063d1d37abe200c97b8556137aede7f60afaeebcdce041a65d8a18b",
+    "front.png": "5d14a136233189aafa6e3a57aefc415fb8dd320d424bd9ad2fd6375c3badf4d3",
+    "back.png": "69d9f69ddb3ce0035eb180784775510d0361110c47591ad49eaac0830b187795",
+    "west.png": "12cb7e0fe68363239bba2b5119777d4eeb7100bc34ace38804bf0e877f7dc36a",
+    "east.png": "36bd19130118f3b2cbf34224e71852a1753d9319faa22c06ccbd5528f890546a",
+    "top.png": "b23d40527f9668c628f380fb5fc8fe34b111451af3bb261128a74181d2848fb4",
+    "entry-detail.png": "894ad5ccfb14a8b6c60936494af7d4229862d7831e267f81618efa81036f952a",
+    "facade-detail.png": "fe46cbb5ac40f52c2bc72980c93ac6604fc235f08f2f4823bdc140d911fe7a94",
+    "roof-detail.png": "c2431afbcbbd89226363b4f92449a064aba0e30ac27f968ece6c09eca45b6f27"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "d07270ff616a327c86e0c03a74abb195819639ecab70ed0156c20bc2a970133e",
+    "SCENE-QA.json": "8d0a0194fa3416c18f56f4477ca7c07a5532889e298ac683baef47d5b0f3680c",
+    "DELIVERY-QA.json": "d2c1dcc7baabeee789f0715f3cf9a175036c3be6f670ba56da9fcf8afe8a4f93"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "4fb7af4379b3f8d4045e8dec08339019f92fccc0443ed80074eed081ac31a16b",
+    "ORIGINAL-RETENTION-QA.json": "3c1576c7df08e65b653cf1905dbedca868c8952bd0326d0d09eeb21363631519",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0518.json": "f728b7d1360ee2501d29ab666ca157356a76c57f8597130c776bdad214607fc4",
+    "INDEPENDENT-IDENTITY-0518.json": "04e7e094c3d03b2456f7b9042c3066542207b6acf386027411030bc0d6889eb7",
+    "INDEPENDENT-PACKAGE-IDENTITY-0520.json": "9c0cdc0471ac77f3e19c7c27b9602f549f80a717c046db4ca1bda7e2c2508e04"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T05:20:08Z",
+  "parent_review": "Parent personally viewed official190x143 actualphoto, originalcode, preview and finaltenmontage. Whole original y-57.5 plane2 equals complete raisedcap front rectangle x+-14,z123..125, nominal graybrown only. Other1092faces neutral including lettered portal/fullheightcolumns/glass/roof. Lowresolution source only supports broad family, not precise material or2026condition. Explicit VNU Hongdao E identity independently read actual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit,3details intentionally show actual highcap. Original1094triangles17files/noOBJ unchanged; 弘道館/弘道樓 naming variants documented same E building, not addedmodel."
+}

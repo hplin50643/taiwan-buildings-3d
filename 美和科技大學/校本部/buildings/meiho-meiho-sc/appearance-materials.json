@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Meiho SC lower end eave pale gray",
+      "hex": "#DEDDD3",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "Meiho SC unverified walls canopy neutral",
+      "hex": "#B8BAB5",
+      "faces": 1990
+    }
+  ],
+  "domains": {
+    "lower_end_eave_whole_component": 2,
+    "per_rectangle": [
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 481
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1992 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "2 complete original lower narrow-end eave triangles pale gray.",
+    "Whole x69.5 plane has two disconnected rectangle components: lower2 approved, upper2 neutral.",
+    "All3vertex finite original lower rectangle y-18.5..40.5,z87.5..89.8; no artificial cut.",
+    "Upper canopy, mixed yellow walls, columns, window backings, roofs and other faces neutral.",
+    "Official SC map photo is small; nominal color family only, capture unknown not2026.",
+    "Actual south campus; immutable repository campus classification retained.",
+    "Two labels not verified filament slicing."
+  ]
+}

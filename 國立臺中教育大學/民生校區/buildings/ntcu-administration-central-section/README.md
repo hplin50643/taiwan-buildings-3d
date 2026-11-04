@@ -1,38 +1,29 @@
-# 國立臺中教育大學｜民生校區｜行政樓中央入口段
+# 中教行政中央入口段｜山牆斜壓頂局部石灰
 
-## 模型預覽
+**混磚柱、拱框與牆窗等材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅原斜壓頂完整前域4面名義石灰，非全棟完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面](previews/front.png) ![實際STL背面](previews/rear.png) |  |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![斜壓頂前域](entry-detail.png)|![壓頂與拱框](facade-detail.png)|
+|![斜壓頂頂底中性](roof-detail.png)|||
 
-依官方公開實拍自建的局部建築外觀近似模型。不是全棟、不是測繪，也不提供真實建築比例尺。原照片不隨公開包散布。
+## 材色範圍
+同 ntcu-administration-central-section 原項目，same-item、count_delta=0。國立臺中教育大學民生校區行政樓中央入口片段，非全U形樓。7136原三角、STL、build_model.py與原model.obj字節不變。原OBJ確實存在250544bytes，依immutable逐hash保留，不是本次生成；早期無OBJ口述已更正，私有更正歷程保留。
+- 全y−25無限plane共10面，先依共享邊BFS分6底座與4獨立斜壓頂。完整4面全納，有限原雙斜臂profile全3點核，沒有bbox裁大面、normal或centroid漏片。
+- 其他7132面中性，包括整72面連通拱框及落地豎延伸、混灰黃磚柱、金字和牌匾、窗背反光、主牆與梯。壓頂頂底/回邊與中央山牆亦不染。
+- 原模型上平面與後方為片段裁切，不是實體屋皮，不塗屋色。原厚化框與近似幾何保留，色審不背書原精度。中性邊界為證據範圍而非真實材縫。
 
+## 來源與日期
+親看官方正面外照，兩完整斜壓頂外緣可分辨，僅名義石灰族非校準色票。官方文化資產身份不證照片年份，不稱2026現況。原照私人不公開、不作紋理，未確認CC或再散布授權，不保證商用。
 
-## 範圍與辨識特徵
-三層主體、中央突出窄三窗組、兩側各三扇獨立高窗、下層石造帶、中央淺弧拱門與三角山牆入口、上部低女兒牆。
+## 格式與列印
+[原STL](model.stl) · [原OBJ](model.obj) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150mm底座示意比例，非測量比例。實際物件名 NTCU Administration Central Section partial color，依真slug與館名獨立核。STL與原OBJ不冒稱本次彩材；3MF、Blender逐面分材。兩標籤非兩色或四色耗材切片驗證，未實際列印。
 
-尺寸：150 × 50 × 99.8毫米，含底座，獨立視覺縮放。不含完整U形兩端翼樓、背立面與内部院落。背面是任意截斷留白，平頂是模型截口，不代表真實屋頂。建物完整進深、屋頂設備未推測。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建，原bytes／全三角multiset、閉合正體積、3MF逐面材、scene重開、十圖1200×900及圖文hash。原README、previews與validation保留歷史，不冒充新QA；原OBJ只讀複製無替換，沒有刪檔。
 
-實拍拍攝日未標，資料頁更新日不等於拍攝日期。因此這是公開影像所示形體的局部研究，不保證2026現況所有外觀細節不變。浮雕式窗框、玻璃凹槽是列印簡化；沒有將窗框當主柱。未複製任何第三方3D模型。
-
-## 重建與交付
-- `build_model.py`：獨立Python參數化自建。依賴版本見`requirements.txt`。
-- `model.stl`、`model.obj`：同一毫米網格；STL是正式幾何驗證標的。
-- `scene.blend`：正式STL匯入的可編輯網格；`render_preview.py`由實際STL產生front/rear/elevation/top四圖。
-- `validate_model.py` / `validation.json`：原STL二面邊、vertex link、單連通殼、正法向/繞序/體積、尺寸、獨立重建SHA与Blend幾何一致。
-- `check_layers.py` / `layer-check.json`：起點z=0.071，每0.2毫米檢查閉合輪廓与個別及合成Polygon有效；invalid直接失敗，未修補。
-- `check_thin_features.py` / `thin-feature-check.json`：canonical fail-closed v3；0.8毫米形態opening是輔助篩檢，非全面最小壁厚。
-- `sources.json`、`qa-summary.json`、`SHA256SUMS`：來源限制、數位QA與逐檔雜湊。
-
-執行順序：python build_model.py；blender -b -t 2 -P render_preview.py；python validate_model.py；python check_layers.py；python check_thin_features.py。
-
-## 列印提醒
-底座朝下，單位毫米。門廊深拱和窗框凹槽需自行切片檢查支撐；拱框、石造線腳已加粗，未複製微小雕花、旗杆、告示或空調。
-
-數位QA不等於實體試印或Cura/PrusaSlicer工具路徑驗證，不宣稱保證可印或免支撐。請依噴嘴、材料與層高自行切片並檢查懸空區。
-
-## 驗收狀態
-2026-10-13外觀覆核已准，以此版本凍結交獨立QA；發布前須由獨立驗證者放行。
-
-中央頂端三個淺凹飾格是女兒牆裝飾，不是額外樓層。
+## English scope
+Partial only:4 complete original sloped gable coping front triangles stone gray;7132 neutral. Whole y-25 plane has10 faces in disconnected6-face support and4-face coping components. Full shared-edge BFS component preserved, all-three-vertex finite original profile verified.72-face arch trim, mixed jambs, walls, window backs and lettering remain neutral. Flat top/rear are section cuts, not roofs. Original7136 triangles and original250544-byte OBJ preserved unchanged, not newly generated. Central entrance section not whole U-shaped building, unknown capture,no2026 survey or tested filament slicing.

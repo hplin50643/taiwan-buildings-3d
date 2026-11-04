@@ -1,0 +1,80 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete-model views and three intentional front/right cap closeups.",
+    "Only two original cap outer-edge components muted gray brown; roof top, left return and underside neutral.",
+    "Lettered connected pier bands and banner wall not falsely colored; original approximate geometry retained."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 2940,
+  "material_face_counts": [
+    4,
+    2936
+  ],
+  "connected_coplanar_domains": 774,
+  "original_obj_present": false,
+  "original_files_retained": 17,
+  "file_sha256": {
+    "README.md": "a21c3cbc37649132b78857c01966681ef6ebd8f9e5e77ce7d17f569c1765e005",
+    "README.zh-TW.md": "a21c3cbc37649132b78857c01966681ef6ebd8f9e5e77ce7d17f569c1765e005",
+    "model.stl": "e907ae0be17200fc2391d9f17f942db0847b0e1ff6c6622eaec143ebee6390fe",
+    "build_model.py": "7357dc76b284642131d599cb3a68f34c6d55595955ef2817feac72f9406f5270",
+    "colorize_model.py": "10aad6d2e1db66c4301b7210aa61aa89d4f7e8b2a7c2cb59f8025debb1859254",
+    "render_color.py": "d8e38bc863809533a922b0b62418cb408da9627002e46b5b5eb73a5ea68e2975",
+    "verify_color_scene.py": "3efce3b98abcf7e62d102f5f42e1c13cceab8b30de1a4f557206e8a99a2de99a",
+    "validate_color.py": "533a6322ad532cbdd3162989fe58bfcbdaed06c5a6e1fc38141689f2437f27a5",
+    "color-mesh.npz": "de7488362e5060bb292d96e6fc171797f863ea80774cf49504191b6c237f5a30",
+    "palette.json": "a435d49b61f7fd5af710c1b663201c6b6f65f53558f6ccd5e2e7e411b4e95086",
+    "appearance-materials.json": "35fb0180c3c823d0fee8870a66957e82846700bcf438e14d10c11f156481351f",
+    "COLOR-SOURCE-REGISTER.json": "a64efb2801b8bb6b60ef7b6921034df4c23e45b1d7e309d9c631de93e5ed7047",
+    "appearance.3mf": "71002e4926d07a38e71778dee58a42e1ac2217dccd813bad01a3776d7052c349",
+    "scene.blend": "fffef2242798438627fe4b6d4ed212c381b8cb237e28ba852c658000ffad8d9d",
+    "preview.png": "ee64a1d8fdfb00184658b9f025e50630e9aa0f2770c82bb11aa3c6928e95a15f",
+    "rear.png": "b7c51529d5e4c695aaef639f152b9726c1d54d188b8e88d6e6ef57843b0bae4e",
+    "front.png": "2cbad3caeeb884374387d78f4f3cc5e506c879cace59f9c61a99aefeb9c0fde0",
+    "back.png": "1ed3e977b63fb05e353c65237eac790c0ad3d6a057fb2c14f8d83b802c3ec6fc",
+    "west.png": "32233c650bd0e971053e3870e39a2ee7de533e588bcc968a3b8ec91087ab03a4",
+    "east.png": "ecd8cdb9a1a30d6620d9e31587bac35a89306bc0f39a52156ad5556a968862b0",
+    "top.png": "f2487ca6d8988e1c36df75b3b7ae595b1a1312063d48e722f68c7552712bd09e",
+    "entry-detail.png": "feb56a121064f1f21c9d20b494ef0a3a004a907ec7e059869b8cc3f6c3684cbf",
+    "facade-detail.png": "1d05331f85a571c9e285c7b5ad10cc523ef2c2c82b99af8189fbd9a4959ad3e5",
+    "roof-detail.png": "3428081645da34b03162aed2c42396803cd5d790107ecd2b8dce287233663e3a",
+    "export_appearance.py": "121ce1614258ba8855e048016bbaa75e4b121dc4154f354ffd5050b56a5760f8"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "93b5ba28553a57c35fd6a33f360dcae547a498ea9a037ecb3e2db40ca1fd61a3",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "c1a6aa8946d7df4fc93c61b4caaac351cca704d8e560799e29015e056b8f7610",
+    "SCENE-QA.json": "65135aab26647984cc2a8864519593dce58c712b270c5b105b471bec404ce7c1",
+    "FRAMING-QA.json": "d7ea978c02e27a84c37a2ad3db8e161c864b9b2b7bb128d68cef7d6998700394",
+    "DELIVERY-QA.json": "aa53a775d1608743fd075afcc5d1d433288d86a89c951930dda99747b21e0e85"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "f76c05e1a1a3c8f15ffbf27583f950c1135f976408adc5ed7bf954ce7c967b14",
+    "ORIGINAL-RETENTION-QA.json": "ccf439bef7bb4840d282c2d75ee025a7b6e1e540e34094f8599c5b421f1e0ea9",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "1d195e21a6563b9f6e53030cd2e9954b65c8e43aa3ae65b34e593fb1c60e1da5",
+    "ORIGINAL-PACKAGE-READBACK.json": "ae3b365390f00fb9db5c17afb9ac44cbc03d70e37fa84007f1dfa3821d34c4ea",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "8d3c7cd9c998c5f345195b601ec89bb38ea847449ab25fd0adb5347329dc9435",
+    "INDEPENDENT-DOMAIN-0528.json": "5e6ba52d5c0c288b00a1e426f1e12a415fc2c8140d09cab78c5fade0ae19affc",
+    "INDEPENDENT-IDENTITY-0528.json": "28b2788dc860e5126229aa085042692a912a78e48862cbd05e409d861d0f7c56",
+    "INDEPENDENT-PACKAGE-IDENTITY-0530.json": "8d3c7cd9c998c5f345195b601ec89bb38ea847449ab25fd0adb5347329dc9435"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "048213f5f92dd7e9466c826858ec3560eb547c85be93a2803c31aedb3608f368"
+  },
+  "limitations": [
+    "Four complete front and right cap-edge triangles;2936 neutral.",
+    "All infinite-plane faces equal finite rectangles; no discarded fragments or artificial clipping.",
+    "Original2940 triangles and17 immutable files retained;no originalOBJ.",
+    "Official exterior image unknown capture, nominal gray-brown family only, not2026 condition."
+  ],
+  "history": [
+    "Verifier scale property corrected before final reopen to actual original150mm-base."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T05:30:27Z",
+  "parent_review": "Parent personally viewed official751x441 actualphoto, originalcode, preview and all10 finalmontage. Entire original roofcap front y-18.5 and right x69.5 planes each equal complete2tri rectangle z71..72.4, total4 nominal graybrown. All2936otherfaces neutral including writing-crossed pierbands, advertising endwall, windowbacks, treehidden base and roof top. Explicit VNU Renai RHB identity independently matches actual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details intentionally distinguish front/right vertical cap from neutral upper surface. Original2940triangles17immutablefiles/noOBJ unchanged, no currentyear or completecolor claim."
+}

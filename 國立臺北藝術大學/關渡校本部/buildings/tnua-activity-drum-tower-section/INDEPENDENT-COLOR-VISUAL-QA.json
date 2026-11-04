@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed 2018 exterior photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole x1.9 original plane33 in three complete sharededge components7/19/7;33nominal stonegray/3389neutral.",
+    "All723coplanar domains uniform,no clipping or partialtriangles;Boolean loweredgez132.8 preserved.",
+    "Mainx1.5 fullheightscreen,brickgraymixedwall,curvedwall,glass/rails/stairs/cutendsneutral.",
+    "Roofskins/soffit/eaverolls/crestornaments remainneutral,notmirrored tooppositegable.",
+    "Sevenwholeviews fit;closeups show actual projecting gable boundary without expandingcolor.",
+    "Original3422triangles/STL/build unchanged,23immutablefiles,nooriginalOBJ,count_delta0.",
+    "Explicit3MF/scene/scripts TNUA Activity Drum Tower Section partial color;drumtowerlocal segment notbelltower/wholeactivitycentre/pond/plaza. RawEXIF2018:02:19 15:05:27hasnotimezone,no2026claim;intakealias preservedprivate notsecondmodel."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "e1cc10115aef60c9b7a08b6353b444f5b895cbbe3547b5a960bb9c27d8b22501",
+    "README.zh-TW.md": "e1cc10115aef60c9b7a08b6353b444f5b895cbbe3547b5a960bb9c27d8b22501",
+    "colorize_model.py": "779599132980fed6beba4babb60e2b67e463ec31d11129bd08f7da3e3b1dd41f",
+    "render_color.py": "7ff89a575a8f5890a64285903e2e3ba119b8b82120afd5cbaa21706db0778471",
+    "color-mesh.npz": "145b1d864a60baaf3cf5bb755b556d44de181d4b383ab263fb9b08fab22ca030",
+    "palette.json": "86303b5e44ec46558810f1b6d427317dac30384c91de2b6c5f109522b52a8aca",
+    "appearance-materials.json": "e2dfdbbdec1398721bd6f98799e3bd3414c5794aeaa801a67d8b1ee1c64aa7d9",
+    "COLOR-SOURCE-REGISTER.json": "92edba08666cd59d52b7ab7884bbded622526b5279120756c542dca596d446b5",
+    "model.stl": "af435a570f06d52a5ea5a0462ba8e2520301b62a6bd9ffeae061de230dceca9c",
+    "build_model.py": "6452498d833e9c464554a71edb054ebb3a3e05c503f5f3f52cc862b84de79843",
+    "preview.png": "a940b9abf48786c215cc822f4fc37490453cb44e6116e66e873d76e578fadec4",
+    "rear.png": "62be1f9d8b4c4850971c9c4e4c33e718e3f4b621752ff9c2c9e257558e7bf16e",
+    "front.png": "3be2631e1c551686a8a7f8a85f4b48372d0dcf13d279e2ab1d52ef0cecd61714",
+    "back.png": "0a814bc23ec0f2711d93d685072a7cb8fd76fd644affb5314f0ad97cf52aef0f",
+    "west.png": "82eef7c8e610bd087b72dab998b6e8005c50869b5d5ec465afefcba67ad283c8",
+    "east.png": "6cc4b6739de20da672ebcae4fa36e18f053fc0e4de5f316127401f6d580a5e3e",
+    "top.png": "6d07049a3dc139b0802dc0f936bd0c215b8a5c47d08a82802cd10c85c0081adc",
+    "entry-detail.png": "6f0287a7f6e5a9b0799f5acb6e2c5161d4627d24992e6b061db087dfd7789642",
+    "facade-detail.png": "960009b44ed1154b49e730f140274ad2b3d3d121b433769af506a307f74c3494",
+    "roof-detail.png": "2ed08b8f72225f5c3391aa7f28846ae6b3904d39f4150948fac1bab36a220815"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "f9db7bb5a0fabd62028bfc142366acee829bcd1b4e9eebc45a4e12b440b12b5f",
+    "SCENE-QA.json": "43de9e4f9abf9d026e936fa105b1ed2d0fbe6d30680a1101b257e39a5aaaa3ea",
+    "DELIVERY-QA.json": "d5fd7640e6079646cb1c68417206c3ee491c1cb4653e5226e285144ea5358733"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "a5dffb93b1e38ffbb1e7ea9144cdd6eeec1813411d5c23c5494be3f6056d0463",
+    "ORIGINAL-RETENTION-QA.json": "5bffde7338bfc5175cbe6a7c67e77caa4776d879d79a4c267319ad3834b5e731",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0608.json": "560a9490794d37fbd620044a3fe0c707b1745778552b1ab8a2b84b0f5ef65834",
+    "INDEPENDENT-IDENTITY-0608.json": "261a5d551efcebc4105536b39b47b3b294b59496144e1c8798f8a2438fbb26ae",
+    "INDEPENDENT-PACKAGE-IDENTITY-0611.json": "39460692e9ddf9484c9784edfc56cc8a66489a3bbcb705878de772929db3206b"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T06:11:31Z",
+  "parent_review": "Parent personally viewed drum2018 actual exterior, originalcode, preview and finaltenmontage. Entire original x1.9 protruding gable end plane33 has exact sharededge components19/7/7 allretained; original beam union to132.8 not artificial z134cut. Raw exact coordinate multiset matches NPZ33. All3389otherfaces neutral including separate x1.5 main screen, walls/rails/roof/steps and unknownback. Activity drumtower segment not clocktower/full center; original approximate geometry and date limits retained. Actual explicit TNUA Activity Drum Tower Section identity independently matches3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details expose true upper gable versus neutral roof/main screen. Original3422triangles23files/noOBJ unchanged; initial intake wrongslug and delivery literal mismatch corrected history private, no deletedfiles or rerender."
+}

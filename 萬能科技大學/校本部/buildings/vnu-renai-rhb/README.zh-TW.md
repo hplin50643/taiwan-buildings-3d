@@ -1,37 +1,29 @@
-# 萬能科技大學仁愛樓（RHB）
+# 萬能仁愛樓 RHB｜屋帽前與右端局部灰棕
 
-## 模型預覽
+**柱牆、窗背與廣告牆等材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅兩完整屋帽外沿4面名義灰棕，非全棟完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見處簡化）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![長前屋帽](entry-detail.png)|![右端屋帽](facade-detail.png)|
+|![屋帽與上皮](roof-detail.png)|||
 
-依公开官方外觀實拍的微縮研究，非測繪級BIM，亦非2026即時完整外觀保證。
+## 材色範圍
+同 vnu-renai-rhb 原項目，same-item、count_delta=0。萬能科技大學校本部仁愛樓單群，原2940三角與STL/build_model.py字節不變，17原件無OBJ，不造原件。
+- 前y−18.5、右x69.5兩完整原plane各2面，z71..72.4。以全3頂點有限矩形核對，所有無限plane三角均全納，無片段漏選、無人工高度截色。
+- 其餘2936面中性：連通的全高柱與含字橫帶不可拆染、右端廣告牆、混磚窗框反光、樹遮基座、屋上皮與底、後與左回邊。
+- 原近似幾何與窗列保留，不因材色追認精度，不添加入口、廣告或文字。中性邊界是證據範圍而非真實材縫。
 
-## 證據及近似
-- 四排高窗上方第五層小窗，長向平屋頂
-- 正面粗直柱與連續頂梁
-- 偏心橫窗樓梯間及端牆中央窗
+## 來源與日期
+親看官網751×441長側與右端實照；只取原屋帽細外沿名義灰棕族，非精確材料或校準色票。照片拍攝日未知，不稱2026現況。原照片私人不公開、不作紋理，未確認CC或再散布授權，不保證商用。
 
-學務處提供751×441像素較完整長向及端牆實拍，頁面確認五層。前方樹蔭遮首層，背立面及深度未知；窗數與間距為視覺近似，未補猜測地面入口。橫幅廣告與管線省略。 主要實拍751×441像素，沒有放大新增細節；細窗、柱、深度及間距均為視覺近似，不能作精確復原。現行總務處校圖仍標此館，未取得照片拍攝年代。側後遮擋明示簡化。省略招牌文字、空調、植栽、細欄杆。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+保留原150mm底座示意比例，非測量比例。實際物件名 VNU Renai RHB partial color，獨立核對真slug與館名。STL無色，3MF及Blender逐面分材；兩材標籤非兩色或四色耗材切片驗證，未實際列印。
 
-## 比例與重建
-- 含底板尺寸：150.00 × 72.00 × 72.40 mm，單件最長150mm，各件獨立比例。
-- 安裝 requirements.txt；執行 python build_model.py 重建STL，再用 blender -b -t 2 -P render_preview.py 產生可編輯完整網格scene.blend與實際STL圖。
-- 執行 validate_model.py、check_layers.py、check_thin_features.py 複核。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建，原bytes與全三角multiset、閉合正體積、3MF逐面材、scene重開、十圖1200×900及圖文hash。原README、previews、validation保留歷史，不冒充新QA，沒有刪檔。
 
-## 檢查及列印限制
-- 原STL法向/邊與頂點流形、正體積、單一連通外表面、無分離內腔殼、重建SHA與Blend/STL三角幾何一致：全部通過。
-- 0.2mm間距非共面微偏移截面362層，每個閉環及組合Polygon有效性assert全通過，未自動修補無效形狀。
-- 0.8mm XY開運算（1mm抽樣）0層超過1%面積損失，最大0.04%。附牆窗檐1.2mm、構架1.4mm以上，沒有孤立細柱；屋檐角隅損失不等同承重薄壁。
-- 窗頂、拱口、柱廊、雨庇可能需支撐；此篩查不是完整壁厚測量、正式切片或實體試印，支撐不能補救噴嘴解析度。請在切片器複查材料、橋接及支撐可移除性。
-
-## 公開來源
-- https://www.vnu.edu.tw/campus
-- https://www.osa.vnu.edu.tw/album/osa/1689/642e26fa-71be-4df0-ab63-c4c7e2187fae.jpg
-- https://www.osa.vnu.edu.tw/1827?s=1930
-- https://www.vnu.edu.tw/school_tour.html
-- https://administration.vnu.edu.tw/oga/3130
-- https://resource.vnu.edu.tw/images/webmap/webmap.jpg
-
-第三方照片及校圖不隨公開模型包重製。
+## English scope
+Partial only:4 complete original front and right roofcap exterior faces muted gray-brown;2936 neutral. Whole infinite planes equal all-three-vertex finite rectangles, no missing fragments or clipping. Original2940 triangles and17 files unchanged, no immutable OBJ. Connected lettered band and piers, banner wall, windows, obscured base, roof top and underside remain neutral. One official exterior image, unknown capture, nominal family not calibrated finish or2026 survey. Original single group count0, no geometry changes or tested filament slicing.

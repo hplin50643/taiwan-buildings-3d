@@ -1,36 +1,29 @@
-# 美和科技大學美和大樓（SC）
+# 美和大樓 SC｜窄端主屋簷局部灰白
 
-## 模型預覽
+**上棚、牆柱與窗背等材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。只原窄端下層屋簷完整2面名義灰白，非全棟完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![窄端屋簷](entry-detail.png)|![屋簷交接](facade-detail.png)|
+|![上棚與下簷](roof-detail.png)|||
 
-南校區。這是公开外觀照片推估的可列印建築微縮研究，非測繪級BIM。館名依總務處和招生中心核對；現行網頁不保證照片為2026年。
+## 材色範圍
+同 meiho-meiho-sc 原項目，same-item、count_delta=0。美和科技大學美和大樓SC含兩層開放基座為單一群；實南校區，原repo校本部分類保留，不搬路徑、不拆套。1992原三角與STL/build_model.py原bytes不變；17原件無OBJ，不造原件。
+- x69.5原整平面有兩個分離矩形各2面。只完整下層y−18.5..40.5、z87.5..89.8屋簷外面灰白，原上棚z92..93.5兩面保持中性，不將同plane全部染。
+- 以全部3頂點有限矩形及共面連通域核對，沒有人工高度切牆或新增面。其他1990面中性，包括上棚、屋上皮底、長面簷、混黃牆窗框設備、全高柱與遮蔽底層。
+- 原照片推估幾何與樓層、屋棚近似保留；色審不追認原精度。中性色邊界是證據範圍，不代表真實材縫。
 
-## 外觀依據
-- 兩層架空基座及窄柱、主體上方五層教室
-- 水平遮陽簷、屋頂格柵與大出簷
+## 來源與日期
+親看官方校園地圖標SC的小外觀照片；檢視放大不增加原151×152像素證據。僅名義淺灰白色族，拍攝日未知，不稱2026現況或校準色票。原照片私人保留，不公開、不作紋理，未確認CC或再散布授權，不保證商用。
 
-## 尺度與未知處
-- 含底板 150.00 × 100.00 × 93.50 mm；各棟獨立縮放至最長150 mm，不能當同一比例校園拼圖。
-- 無實測尺寸。整體深度、背面、隱蔽屋頂與被樹遮蔽位置為目測/簡化；背側不任意複製正面窗格。
-- 官方照片很小，門窗数量、柱距、曲率及細部不是精密還原。省略空調、海報、文字和細欄杆；細框為列印加厚。
-- 只重建本棟，不連同鄰棟、校園景物、中學或幼兒園。樓層表含屋頂層，與照片可見完整樓層不直接相等。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+保留原150mm底座示意比例，非測量比例。實際物件名 Meiho SC Building partial color，依真slug及館名獨立核。STL無色；3MF與Blender逐面分材。兩材標籤非兩色或四色耗材切片驗證，未實際列印。
 
-## 檔案與重建
-安裝 requirements.txt 所列Python依賴，執行 build_model.py 產生 model.stl/model.obj。Blender執行 render_preview.py 從實際STL匯入，產生可編輯 scene.blend 及正面/背面/立面預覽。再執行 validate_model.py、check_layers.py、check_thin_features.py。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離原依賴Shapely2.1.2精確原build＋color重建，原bytes／全三角multiset、閉合正體積、3MF逐面材、scene重開、十圖1200×900及圖文hash。原README、previews與validation保留歷史，不冒充新QA，沒有刪檔。
 
-## 驗證及列印限制
-- 原STL法向、流形邊/頂點、正體積、一個連通外表面、無分離內腔殼、原始重建SHA與blend/STL三角幾何：通過。
-- 0.2 mm高度間距共 468 層截面閉合檢查：True。數值採非共面微偏移，非真正切片器路徑。
-- 0.8 mm XY形態篩檢於1 mm間距抽樣，2 層超過1%形態開運算面積損失，最高 6.58%。小轉角也計入，不等於確定失敗或完整壁厚檢查。
-- 挑空、水平屋簷、雨庇及窗洞頂緣可能需要支撐；請依材料、方向和切片器先檢查。未完成實體試印、支撐可移除性測試或完整切片驗證。
-
-來源見 sources.json。第三方照片只供內部研究，本交付不包含原照片。
-
-## 薄篩數值修訂
-
-本包直接採canonical-edge-v2：固定共邊方向插值，節點度數2、閉環及Polygon有效斷言通過後，才進行1 mm間距0.8 mm XY開運算。舊算法可能因獨立端點取整漏環；舊工具/結果已替換，不是僅增附錄。STL、Blender、重建來源及原0.2 mm閉環驗證不變。
-
-
+## English scope
+Partial only:2 original complete lower narrow-end eave faces pale gray;1990 neutral. The x69.5 plane contains two disconnected rectangle components; only the lower original component is approved, not the upper rooftop canopy. All-three-vertex finite bounds and whole coplanar closure preserve original1992 triangles and bytes.17 immutable files contain no OBJ. Official map SC photo is small, capture unknown; not2026 survey or calibrated color. Actual south campus, original repository campus classification retained. No geometry changes, no new count, no tested filament slicing.

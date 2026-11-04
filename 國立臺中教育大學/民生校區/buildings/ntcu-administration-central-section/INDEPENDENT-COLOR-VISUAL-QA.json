@@ -1,0 +1,86 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete-section views and three intentional gable coping closeups.",
+    "Complete original4-face sloped coping stone gray; arch trim, mixed jambs and cut top neutral.",
+    "Central entrance section only, not full U-shaped building; actual originalOBJ retained unchanged."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 7136,
+  "material_face_counts": [
+    4,
+    7132
+  ],
+  "connected_coplanar_domains": 1472,
+  "original_obj_present": true,
+  "original_files_retained": 20,
+  "file_sha256": {
+    "README.md": "e0147140a8c0f709cc90d2ffd668edce7ae5207afc08e261d682b47616ced303",
+    "README.zh-TW.md": "e0147140a8c0f709cc90d2ffd668edce7ae5207afc08e261d682b47616ced303",
+    "model.stl": "0dae6d42035f5acbb51e19fc4fca8b7d64654c73d9870cd57ae5bdc62d35dd84",
+    "build_model.py": "e74105ecc9b133a09dc5fe54810e67bc78f5c39de039ce241fb993fd9d829284",
+    "colorize_model.py": "bd098464e4fa606daf0fa8d2df79b1b56015c9acd4a32bb1eddb152dc22abdb2",
+    "render_color.py": "119b70166e6b4b79f0c865da9c7fd51d5248a51dab9e983b9a2683ce1ad97f7a",
+    "verify_color_scene.py": "27669ebb36af868a0305d6adb1a834e4940dd29758111211abab6be293e5140e",
+    "validate_color.py": "e400666436a7208f2e97299f0460de2f02df45b9e0fe79542e1870396d3b207d",
+    "color-mesh.npz": "ae8c7a2b641ddccc5687d958f67455631622373d26872997ab1f4a94d77f6623",
+    "palette.json": "3af9f9d1fec398313fa4c2302900a8c825913e66c7dc253bf77befa50d3b9074",
+    "appearance-materials.json": "955b067ec7b35be271ee80502829a5221614d68cb533fef74c5728277879614b",
+    "COLOR-SOURCE-REGISTER.json": "deafec2bc970f9516f1fd9fe269487265e177d697c0c7ed7e9d0fc988da5d986",
+    "appearance.3mf": "6d41952611e4618b3648a889a448d7ee67b3c6c7b72fbac2a7d1958b96f80065",
+    "scene.blend": "32dcbc557d796fae81254de5b039c1a45aaed09fbb6ae8d74cc7bd0a9ad9d2a8",
+    "preview.png": "a4c693862377e9024e8d3e64b2d692b388cb16a11cfcdeb6096c882458621883",
+    "rear.png": "fd7ed3bcd5874abc67983c7c61d9f986b55f90bfa4262520cbae281dc4b9ece1",
+    "front.png": "77cebd3a1855b13177c1567e0e430d662908258a25eb537924346bfafa04f21e",
+    "back.png": "6d4320583ec3af6a3ae4a7b64e2148ff6645a7d590e7fd85853040b006625fd2",
+    "west.png": "8083095c8e9d4a4612649d4640ddf033bd221acc0cb12cc30c3198c5bffe7a8f",
+    "east.png": "f99a5dd3032398ed05e8571aab4a339316b465cbf7b3db5b9c9b6556d8471eb7",
+    "top.png": "406c1aff8e9503384ee4eb6bc70e1474d7f6cdeac0be29dddad3265fa324529e",
+    "entry-detail.png": "ba45446bfab6a1f7e6ff2f5551a67c1e735504b6114c862ab0d0c21c6580db6c",
+    "facade-detail.png": "474e98a0dca9b0e2a5f1afa444017098a6ca4d5c70d0a97d0eb732e349f7b4f1",
+    "roof-detail.png": "b8040ee6a965dd40079d4619674a18cb203129dcacf891dc6f776298ca577fd3",
+    "export_appearance.py": "bd8f51c21fe5f4d926e7dc63bc99104b10b18a0ce6674cfece7c7afcbdb6e6be",
+    "model.obj": "ff5421e2b67de613c27ab98de1cd99cc88cffe32b20232198d0d1ba8b127c132"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "87ea9ccb85f9febfcccc3417fa94a43632751937e4ab8de75439f77f018b8909",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "161b31ba26988db9d40001e35a9968e960b21aa62c2f1a3d1325cfb35e93d901",
+    "SCENE-QA.json": "fc55e23114312d1c37d856e4008373454c6d4dc5e23749f76331631a8aeec94c",
+    "FRAMING-QA.json": "f888371a08e26aabcb36f564cbe1abaf125e55d1e03b4e73c65eadc5f1f8ea6b",
+    "DELIVERY-QA.json": "1b13f30297637533664252a6bfbc22106e93e9b1cd46805e32ab5f3815fe2a52"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "15a4cd68dc34f01ea8bacaae08a3c2ceaaf6213e942e28790db5848cecca978c",
+    "ORIGINAL-RETENTION-QA.json": "368e94d90391e51bf04c861e92a5c863d60cff27b48aa5973189e8e306d8f308",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "88c140e3802cdc4f2e3643b1de7270c8ce3ab156cd116ae022ba7ce8dd8af1ad",
+    "BUILDER-PACKAGE-IDENTITY-FINAL-V2.json": "c0cdb2a358c8a663db207d4c261b29f5b1fa9cd6ae7fee91733e5655e623fc54",
+    "RENDER-V2-SINGLE-VIEW-CORRECTION.json": "13a9dc2c174184108a0e8c98133f80dbd190f3bf1981cdfd341b33852c381bc2",
+    "ORIGINAL-OBJ-BYTE-CROSSCHECK.json": "1965065eed4a8a1d5671c1759a10f5d4b9fe07c9b159d9e5939f84f31cb991c5",
+    "INDEPENDENT-DOMAIN-0616.json": "bca13352382d53f5b5d6178f5c8f161e5a5c8cdd03ebf4ed78cc05da3ac8ea84",
+    "INDEPENDENT-IDENTITY-0616.json": "418b31eae7673559699f588b01f3d0a9363437f0a825481be266f8e6c52a119a",
+    "INDEPENDENT-PACKAGE-IDENTITY-0621.json": "c0cdb2a358c8a663db207d4c261b29f5b1fa9cd6ae7fee91733e5655e623fc54",
+    "PARENT-SINGLE-VIEW-CORRECTION-0621.json": "c2b82fdccfe77f27521d071152057cca6454d45f79a596cdd1492b3e3f5580d8"
+  },
+  "montage": {
+    "path": "private-review/final-v2-ten-view-montage.jpg",
+    "sha256": "e043cdbba1db69f60737d831a2c32f65493220717d6c10a5e87378905ba6d4f4"
+  },
+  "limitations": [
+    "Whole y-25 plane BFS splits6supportneutral and4gablecoping;all4 colored.",
+    "72-face complete arch trim withheld, no material clipping.",
+    "Original7136 triangles and20 immutable files preserved including250544-byte originalOBJ.",
+    "Central entrance section only, flat top/rear are section cuts not roofs, captureunknown."
+  ],
+  "history": [
+    "Two originalOBJ intake corrections retained privately; immutableOBJ copied without regeneration.",
+    "V1 facade-detail view was obstructed; only that camera changed and one image rerendered. Other9 images byte-exact, v1 renderer/scene/montage/images retained privately; new renderer/scene identity rebound.",
+    "Verifier scale property corrected before final reopen to original150mm-base."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T06:21:12Z",
+  "parent_review": "Parent personally viewed officialfront, originalcode, preview and finalv2tenmontage. Whole y-25 plane10 exactedge BFS base6neutral and complete slopedcoping4 gray. Exact original triangle multiset equals NPZ observed4; all7132otherfaces neutral including mixedbrick piers, fullarchframe/lowerregion, windows/letters and cuttop. Central entrance fragment not full U-shaped building. Original7136triangles20files and actual250544byteOBJ preserved; earlier oral noOBJ claim corrected with history retained. Actual explicit NTCU Administration Central Section identity independently matches3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details expose entrance; v1facadedetail wrongrear corrected by one camera literal, parent verifies other9 PNG bytes identical and originalrenderer/scene/history retained. No geometry or fullcolor claim."
+}

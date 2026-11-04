@@ -1,36 +1,28 @@
-# 萬能科技大學弘道館（E）
+# 萬能科技大學弘道館／弘道樓（E）｜中央高帽前緣局部灰棕
 
-## 模型預覽
+**局部補色未完成：只中央高帽完整前緣2原三角名義灰棕；柱牆、窗背、門廊、屋面與其他材色未完成。** partial_color_incomplete=true、fully_colored_exterior=false。同項 vnu-hongdao-e／count_delta=0，萬能科技大學校本部。英文身份 VNU Hongdao E partial color。原README稱弘道館，來源稱弘道樓，均E同棟，不另新增模型。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見處簡化）<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![高帽位置](entry-detail.png) | ![完整高帽前緣](facade-detail.png) |
+| ![中性屋上](roof-detail.png) | | |
 
-依公开官方外觀實拍的微縮研究，非測繪級BIM，亦非2026即時完整外觀保證。
+## 材色範圍
 
-## 證據及近似
-- 狹長館體與正面高起中央頂冠
-- 首層挑空柱廊、兩側拱口與中門
-- 中央實牆兩邊直向玻璃帶、左右不同窗型
+整原y−57.5無限plane，以三頂點0.0001mm檢核，恰2面共享完整對角線，完整x±14,z123..125矩形。finite全點域與無限plane一致，不用面心、normal或bbox剪掉面。2面名義低飽和灰棕、1092中性，291共面連通域uniform，1094原三角保持。
 
-官方190×143照片能辨識正面大輪廓；屋後與側面窗數無足夠解析度，側窗節奏為概略，深度依未標尺度校图近似。 官方實拍只有190×143像素，沒有放大新增細節；細窗、柱、深度及間距均為視覺近似，不能作精確復原。現行總務處校圖仍標此館，未取得照片拍攝年代。側後遮擋明示簡化。省略招牌文字、空調、植栽、細欄杆。
+唯一190×143官方實照僅支持獨立高起中央小帽前沿灰棕色族，不是校準色票或石紋。其暗底、上面、兩端、主屋上都不染。全高前柱跨低位混材、入口金字額枋、主牆、玻璃反光框、階地與樹遮基座均中性。中性非實景灰；資料範圍非實際材質接縫。
 
-## 比例與重建
-- 含底板尺寸：93.00 × 150.00 × 125.00 mm，單件最長150mm，各件獨立比例。
-- 安裝 requirements.txt；執行 python build_model.py 重建STL，再用 blender -b -t 2 -P render_preview.py 產生可編輯完整網格scene.blend與實際STL圖。
-- 執行 validate_model.py、check_layers.py、check_thin_features.py 複核。
+## 原幾何與來源限制
 
-## 檢查及列印限制
-- 原STL法向/邊與頂點流形、正體積、單一連通外表面、無分離內腔殼、重建SHA與Blend/STL三角幾何一致：全部通過。
-- 0.2mm間距非共面微偏移截面625層，每個閉環及組合Polygon有效性assert全通過，未自動修補無效形狀。
-- 0.8mm XY開運算（1mm抽樣）0層超過1%面積損失，最大0.09%。未出現超過1%面積損失層；附牆窗框至少1.1mm。弘道館首層拱間為厚實承重塊，沒有孤立細柱。
-- 窗頂、拱口、柱廊、雨庇可能需支撐；此篩查不是完整壁厚測量、正式切片或實體試印，支撐不能補救噴嘴解析度。請在切片器複查材料、橋接及支撐可移除性。
+沿原190×143照的主要外觀近似：狹長館體/挑空門廊/高起頂冠；側後窗數、深度與間距缺乏解析度，細框列印加厚，背側簡化，不因補色追認測繪或復原精度。不放大虛造細節；現行校圖標館不證照片年代，拍攝日未知、非2026現況。單件最長150mm獨立比例，不當同尺度校園拼圖。來源原照只私人參考，不公開貼圖或推定商用授權。
 
-## 公開來源
-- https://www.vnu.edu.tw/campus
-- https://www.vnu.edu.tw/images/campus/map16.png
-- https://www.vnu.edu.tw/school_tour.html
-- https://administration.vnu.edu.tw/oga/3130
-- https://resource.vnu.edu.tw/images/webmap/webmap.jpg
+## 檔案與 QA
 
-第三方照片及校圖不隨公開模型包重製。
+原STL/build與1094三角字節/座標拓撲保留，immutable17件無OBJ，原builder會產生OBJ但隔離生成只私存，不稱原repo有OBJ。原README.zh-TW存ORIGINAL-MONOCHROME-README.zh-TW.md，原單色預覽與QA保歷史。appearance.3mf兩展示材、scene.blend真面材同原三角；export/validate/render/verify及真3MF/scene明定 VNU Hongdao E partial color。精確依賴隔離原build+color、閉合正體積、3MF座標面材與Blender重開、10張1200×900檢核，重建保留不刪。未試印或驗多料切片；STL自身無色。
+
+## English limitations
+
+VNU Hongdao E partial color. Entire y=-57.5 plane exactly2connected triangles forming complete28x2central raised capfront,x+/-14,z123..125.2mutedgraybrown/1092neutral,291coplanar domains uniform,original1094triangles/STL/build unchanged,noimmutableOBJ,count_delta0. Official190x143 photograph supports only nominal colorfamily,no texture/calibratedcolor/current2026claim,captureunknown. Capupper/underside/returns,broadroof,tallmixedpilasters,goldletteredentry,windowbacks,walls/base remainneutral. Original publicphoto geometry is approximate,side/rear rhythm unresolved,no geometryrecertification;HongdaoHall/Building names identify same Ebuilding. No publicsourcephoto/texture,not testprinted.

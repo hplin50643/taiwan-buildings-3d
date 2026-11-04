@@ -1,0 +1,35 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "VNU Hongdao E observed high cap gray brown",
+      "hex": "#918B82",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 1092
+    }
+  ],
+  "domain_face_indices": {
+    "whole_high_cap_front": [
+      795,
+      801
+    ]
+  },
+  "coplanar_components": 291,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1094 original triangles unchanged",
+  "limits": [
+    "Cap upper surface, underside, left/right returns and broad main roof remain neutral.",
+    "Tall front pilasters extend through low regions and meet multiple facade elements; no blanket nominal tan coloring from partial visibility.",
+    "Entry entablature contains gold lettering; do not uniformly color it.",
+    "Main front/side wall fields, windows with frames/reflections, hidden ground and vegetation-obscured base remain neutral.",
+    "All other original faces remain neutral.",
+    "Preserve1094 original triangles, no geometry editing or new material cut. No OBJ generated.",
+    "Local review only: no new download, Git mutation, photo publication or formal GO."
+  ]
+}

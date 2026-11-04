@@ -1,0 +1,80 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten views personally inspected: seven complete-model views, three intentional right narrow-end eave closeups.",
+    "Only complete original lower end eave rectangle pale gray; separate upper rooftop canopy remains neutral.",
+    "No artificial yellow walls, glass, letters or material seams added; map source only supports nominal small-area color."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 1992,
+  "material_face_counts": [
+    2,
+    1990
+  ],
+  "connected_coplanar_domains": 481,
+  "original_obj_present": false,
+  "original_files_retained": 17,
+  "file_sha256": {
+    "README.md": "4f83069f63c6a1aebd9d6cb742c428a3983a09d53e323cc812d95423c51acdaf",
+    "README.zh-TW.md": "4f83069f63c6a1aebd9d6cb742c428a3983a09d53e323cc812d95423c51acdaf",
+    "model.stl": "6c2f92c2e76795c606b83098578dcf8b98df25cf9324a99fa4813ac46c4ded33",
+    "build_model.py": "333cfb8b44f8f52543c620b4e07903dfd13cd6c265e3e0fe653e1a515085a465",
+    "colorize_model.py": "2591940e4ec509efd89532076f77888f6cc0712a5e3ee98ff2df03f3a76de2c1",
+    "render_color.py": "15fbbd869e219c88d14277ffbaafebc58fadb67e1a8ed9914211159e62f76acc",
+    "verify_color_scene.py": "280e4efd0278749bde7bae8edb8e7164e7836a1736c01bc3f3622660564196ce",
+    "validate_color.py": "b2c7658f6391f123da019dbe5e05f5223ac76af2e3d092dccbf470dc36195755",
+    "color-mesh.npz": "480262f3670da12c9456ce8405dd58affaf5e35c4052da96bfe8a9fbc1f30285",
+    "palette.json": "e9c8e60214fec2fb9d0d9c5d90f4c5a56386393a906dde5cf8326680e456638c",
+    "appearance-materials.json": "468cfac73ac79fe1bea1dc8aaa44db6fcc53c88aebdef363de36c807cbe68fda",
+    "COLOR-SOURCE-REGISTER.json": "d6daacc6c2318782683cc5925f0de359bc34d1d8a36ef5b9b930a3d822a247fa",
+    "appearance.3mf": "a22f4b94760ada3e879d49d828326a0cd90b39ab49aeef8c2182c03836eb2cc2",
+    "scene.blend": "79d13600107c2735ba62483039cc593768dc4cdf06dc543d86a3c12ebad89076",
+    "preview.png": "48a164f883da87be1bc41f88cac9b1ef241d7ce2e68568bd63f4fecb84e2d34f",
+    "rear.png": "2afd67b15512274a1b411425f26116496b2e451ea55f8cabb608c9307bf3eff4",
+    "front.png": "d8c32f4c750468312ae17c5b6c49eee241d21ee7e4a8dd4038436ae9dfda3419",
+    "back.png": "f276e47792380f4175c39c9d284b68fff83a37ba277ddb698047dbfe27033740",
+    "west.png": "cc0aa61b2bd89a0ea1598ddde27dbe82a63f0979c164a0620b3f7c64c16b510a",
+    "east.png": "cc6602a03a8e612f56ab3bc45b578377ae1b4129c6ed79a5da96566830086090",
+    "top.png": "0812984684fc11c7c309a7f19737f101067f48a4de7f51b103cf70c4294ecc20",
+    "entry-detail.png": "b13a93399f0a024d5c37536062ed02126817a8425da337b35592bf1ed7778e41",
+    "facade-detail.png": "2ad3bf29c91ebb2f3c399c811e2503fe9787293e9063e9f86bde09af61e57b9f",
+    "roof-detail.png": "e9ff75db314bf38864428bd8637d895f3f227432e210ebbc439312de60201cc4",
+    "export_appearance.py": "cf4c32392455e9818d0f74acf8e3744a817804193ab969933e4637364daafa99"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "90d56a8350b70791ef0e57696c994f8a1d8512ccb2e09909c2b958292bd31c72",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "4edcece312843453f5bd2d9115188eeefe02da1cb77da7f1999fc73bd95fd650",
+    "SCENE-QA.json": "5d429d7c3ab143c4c93d7f7861ca9cc1269a9dc5e7e9ca479c06e168a1717082",
+    "FRAMING-QA.json": "c50b7c6aeaf999591f7728f612d7f53ccd132961be0158da7b56595877da2997",
+    "DELIVERY-QA.json": "c292874d2dec35cc633e0e3f6c0bc8a8b60d464eaa7ae68679db5533239b4124"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "d86f11afc19e9ba21d7481f94b72b8aee58e98f36a76eea887a3ce132552d336",
+    "ORIGINAL-RETENTION-QA.json": "ab32248b435b2310055e9f8aa7329e2988bb9d338b0fd7747d4d7fddfbece878",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "1d195e21a6563b9f6e53030cd2e9954b65c8e43aa3ae65b34e593fb1c60e1da5",
+    "ORIGINAL-PACKAGE-READBACK.json": "577790eeae48c368b08aa2c36df08a12576f8ddf3a6d335ee16a6a06ef8a24bf",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "f7c94da60e4026d21cb2cb9872f4110fdfc48bccccddba0c87410693f7ee29fe",
+    "INDEPENDENT-DOMAIN-0510.json": "8a1c0421ea7de3684da528cd1c479575ad302d6c68a854ef9d6896fdf14456a9",
+    "INDEPENDENT-IDENTITY-0510.json": "7c1b796883bc96f359cb1faf47e2ccda1a61961ad8da9184a882ff4b0d2c58a3",
+    "INDEPENDENT-PACKAGE-IDENTITY-0512.json": "f7c94da60e4026d21cb2cb9872f4110fdfc48bccccddba0c87410693f7ee29fe"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "bfbd9c9712b5525a2ef627ea85b09e676ae46142a2c49f36be7b832486907a67"
+  },
+  "limitations": [
+    "Only lower narrow-end eave2 complete triangles;1990 neutral.",
+    "Whole x69.5 plane has4 faces in two disconnected rectangles; upper2 remain neutral.",
+    "Original1992 triangles and17 immutable files retained; no originalOBJ.",
+    "Small official map photo nominal family only, unknown capture, actualsouth campus with original repository classification unchanged."
+  ],
+  "history": [
+    "No geometry or material revisions; verifier scale property corrected before final reopen to actual original150mm-base."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T05:12:30Z",
+  "parent_review": "Parent personally viewed officialmap SC labeled photograph, originalcode, preview and all10 finalmontage. Entire x69.5 plane4 divides into2 exact shared-edge rectangular domains; only complete lower main-eave component2 nominal palegraywhite. Uppercanopy2 and all1990otherfaces neutral, no partialtriangle split or fullwall extrapolation from lowresolution photo. Actual3MF/Blender/four scripts/README/paletteRGB explicitly Meiho SC Building identity correct. Sevenwholeviews framed and3details intentionally show right narrowend lowerobserved versus upperneutral eave. Original1992triangles17immutablefiles/noOBJ unchanged. Physicalsouthcampus description retained but original校本部 repo path not relocated, no2026/fullcolor claim."
+}
