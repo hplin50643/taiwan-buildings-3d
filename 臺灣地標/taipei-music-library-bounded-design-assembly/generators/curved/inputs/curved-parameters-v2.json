@@ -1,0 +1,1267 @@
+{
+  "skins": [
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_0",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_0",
+      "reference_vertices_mm": [
+        [
+          16.101261445966767,
+          26.281888765647302,
+          68.64213655379788
+        ],
+        [
+          16.101261445966767,
+          31.27317382348283,
+          68.51700254935287
+        ],
+        [
+          16.101261445966767,
+          35.01663761685947,
+          68.51700254935285
+        ],
+        [
+          45.90884206546163,
+          26.281888765647302,
+          59.956897243338496
+        ],
+        [
+          45.90884206546163,
+          31.27317382348283,
+          59.83101277060261
+        ],
+        [
+          45.90884206546163,
+          35.01663761685947,
+          59.57924382513085
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          2
+        ]
+      ],
+      "extrusion_axis": 2,
+      "artificial_delta_mm": -0.84,
+      "scope": "Manufacturing variant; original reference remains separate. Detachable hypothetical/reference-backed part, not true skin",
+      "supports": [
+        {
+          "xy": [
+            22.06277756986574,
+            41.27665980034862
+          ],
+          "support_triangle": 1,
+          "roof_attachment_xy": [
+            22.06277756986574,
+            29.276659800348618
+          ],
+          "post_bounds_mm": [
+            21.06277756986574,
+            40.27665980034862,
+            0,
+            23.06277756986574,
+            42.27665980034862,
+            65.62338565761537
+          ],
+          "arm_bounds_mm": [
+            21.06277756986574,
+            28.276659800348618,
+            63.62338565761537,
+            23.06277756986574,
+            42.27665980034862,
+            65.62338565761537
+          ],
+          "cap_bounds_mm": [
+            21.06277756986574,
+            28.276659800348618,
+            63.67338565761536,
+            23.06277756986574,
+            30.276659800348618,
+            66.40633073314626
+          ],
+          "angled_post_cap_corners_mm": [
+            [
+              21.06277756986574,
+              28.276659800348618,
+              66.40633073314626
+            ],
+            [
+              23.06277756986574,
+              28.276659800348618,
+              65.82352665457107
+            ],
+            [
+              23.06277756986574,
+              30.276659800348618,
+              65.77338565761536
+            ],
+            [
+              21.06277756986574,
+              30.276659800348618,
+              66.35618973619056
+            ]
+          ],
+          "attachment": "Artificial remote post and horizontal arm avoid entrance keep-out, cap fits finite roof; no real architectural-support claim."
+        },
+        {
+          "xy": [
+            22.06277756986574,
+            41.51925209950881
+          ],
+          "support_triangle": 3,
+          "roof_attachment_xy": [
+            22.06277756986574,
+            33.51925209950881
+          ],
+          "post_bounds_mm": [
+            21.06277756986574,
+            40.51925209950881,
+            0,
+            23.06277756986574,
+            42.51925209950881,
+            65.53960229153063
+          ],
+          "arm_bounds_mm": [
+            21.06277756986574,
+            32.51925209950881,
+            63.53960229153063,
+            23.06277756986574,
+            42.51925209950881,
+            65.53960229153063
+          ],
+          "cap_bounds_mm": [
+            21.06277756986574,
+            32.51925209950881,
+            63.58960229153062,
+            23.06277756986574,
+            34.51925209950881,
+            66.28929931748627
+          ],
+          "angled_post_cap_corners_mm": [
+            [
+              21.06277756986574,
+              32.51925209950881,
+              66.28929931748627
+            ],
+            [
+              23.06277756986574,
+              32.51925209950881,
+              65.68960229153063
+            ],
+            [
+              23.06277756986574,
+              34.51925209950881,
+              65.68960229153062
+            ],
+            [
+              21.06277756986574,
+              34.51925209950881,
+              66.28929931748627
+            ]
+          ],
+          "attachment": "Artificial remote post and horizontal arm avoid entrance keep-out, cap fits finite roof; no real architectural-support claim."
+        }
+      ],
+      "explicit_manufactured_projection_area_loss_mm2": 0,
+      "L5_clearance_notch": null,
+      "safe_individual_candidate_count": 2
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_1",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_1",
+      "reference_vertices_mm": [
+        [
+          16.101261445966767,
+          71.20345428616703,
+          68.50448914890836
+        ],
+        [
+          16.101261445966767,
+          72.45127555062592,
+          68.51700254935287
+        ],
+        [
+          16.101261445966767,
+          76.19473934400256,
+          68.51700254935287
+        ],
+        [
+          16.101261445966767,
+          84.92948819521473,
+          68.51700254935287
+        ],
+        [
+          16.101261445966767,
+          91.16859451750913,
+          68.64213655379788
+        ],
+        [
+          16.101261445966767,
+          93.6642370464269,
+          68.64213655379788
+        ],
+        [
+          45.90884206546163,
+          71.20345428616703,
+          59.075705934187326
+        ],
+        [
+          45.90884206546163,
+          72.45127555062592,
+          59.10717705237129
+        ],
+        [
+          45.90884206546163,
+          76.19473934400256,
+          59.2015904069232
+        ],
+        [
+          45.90884206546163,
+          84.92948819521473,
+          59.57924382513085
+        ],
+        [
+          45.90884206546163,
+          91.16859451750913,
+          59.83101277060261
+        ],
+        [
+          45.90884206546163,
+          93.6642370464269,
+          59.956897243338496
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          6,
+          7
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          1,
+          8,
+          2
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          2,
+          9,
+          3
+        ],
+        [
+          3,
+          9,
+          10
+        ],
+        [
+          3,
+          10,
+          4
+        ],
+        [
+          4,
+          10,
+          11
+        ],
+        [
+          4,
+          11,
+          5
+        ]
+      ],
+      "extrusion_axis": 2,
+      "artificial_delta_mm": -0.84,
+      "scope": "Manufacturing variant; original reference remains separate. Detachable hypothetical/reference-backed part, not true skin",
+      "supports": [
+        {
+          "xy": [
+            22.06277756986574,
+            74.6973538266519
+          ],
+          "support_triangle": 3,
+          "post_bounds_mm": [
+            21.06277756986574,
+            73.6973538266519,
+            0,
+            23.06277756986574,
+            75.6973538266519,
+            66.22643834438009
+          ],
+          "angled_post_cap_corners_mm": [
+            [
+              21.06277756986574,
+              73.6973538266519,
+              66.22643834438009
+            ],
+            [
+              23.06277756986574,
+              73.6973538266519,
+              65.60140189735377
+            ],
+            [
+              23.06277756986574,
+              75.6973538266519,
+              65.60140189735377
+            ],
+            [
+              21.06277756986574,
+              75.6973538266519,
+              66.22643834438009
+            ]
+          ],
+          "attachment": "Cap follows manufactured underside plus0.1mm attachment overlap; not a building support."
+        },
+        {
+          "xy": [
+            39.94732594156266,
+            87.42513072413249
+          ],
+          "support_triangle": 6,
+          "post_bounds_mm": [
+            38.94732594156266,
+            86.42513072413249,
+            0,
+            40.94732594156266,
+            88.42513072413249,
+            61.06770502786869
+          ],
+          "angled_post_cap_corners_mm": [
+            [
+              38.94732594156266,
+              86.42513072413249,
+              60.98699829441486
+            ],
+            [
+              40.94732594156266,
+              86.42513072413249,
+              60.387301268459225
+            ],
+            [
+              40.94732594156266,
+              88.42513072413249,
+              60.468008001913056
+            ],
+            [
+              38.94732594156266,
+              88.42513072413249,
+              61.06770502786869
+            ]
+          ],
+          "attachment": "Cap follows manufactured underside plus0.1mm attachment overlap; not a building support."
+        },
+        {
+          "xy": [
+            26.037121652465054,
+            89.08889241007766
+          ],
+          "support_triangle": 7,
+          "post_bounds_mm": [
+            25.037121652465054,
+            88.08889241007766,
+            0,
+            27.037121652465054,
+            90.08889241007766,
+            65.23904045573771
+          ],
+          "angled_post_cap_corners_mm": [
+            [
+              25.037121652465054,
+              88.08889241007766,
+              65.19892765817313
+            ],
+            [
+              27.037121652465054,
+              88.08889241007766,
+              64.60772746009785
+            ],
+            [
+              27.037121652465054,
+              90.08889241007766,
+              64.64784025766242
+            ],
+            [
+              25.037121652465054,
+              90.08889241007766,
+              65.23904045573771
+            ]
+          ],
+          "attachment": "Cap follows manufactured underside plus0.1mm attachment overlap; not a building support."
+        }
+      ],
+      "explicit_manufactured_projection_area_loss_mm2": 0,
+      "L5_clearance_notch": null,
+      "safe_individual_candidate_count": 18
+    },
+    {
+      "id": "B_FINITE_UPPER_CANDIDATE_PROXY",
+      "unit": "B_FINITE_UPPER_CANDIDATE_PROXY",
+      "reference_vertices_mm": [
+        [
+          145.05958094620811,
+          11.37652463171234,
+          61.65633762527289
+        ],
+        [
+          160.8987555850192,
+          11.37652463171234,
+          61.843401972648465
+        ],
+        [
+          145.05958094620811,
+          17.61365436401077,
+          61.15279973432937
+        ],
+        [
+          160.8987555850192,
+          17.61365436401077,
+          61.573734990422636
+        ],
+        [
+          145.05958094620811,
+          20.070511804785284,
+          61.02883237402358
+        ],
+        [
+          160.8987555850192,
+          20.070511804785284,
+          61.46751091616907
+        ],
+        [
+          145.05958094620811,
+          30.087913828607636,
+          60.52337737064996
+        ],
+        [
+          160.8987555850192,
+          30.087913828607636,
+          61.06327501865082
+        ],
+        [
+          145.05958094620811,
+          32.54872444937409,
+          60.41162722486395
+        ],
+        [
+          160.8987555850192,
+          32.54872444937409,
+          60.96397302522554
+        ],
+        [
+          145.05958094620811,
+          42.562173293204495,
+          59.956897243338496
+        ],
+        [
+          160.8987555850192,
+          42.562173293204495,
+          60.923565387885915
+        ],
+        [
+          145.05958094620811,
+          55.03643275780136,
+          59.83101277060261
+        ],
+        [
+          160.8987555850192,
+          55.03643275780136,
+          60.873227551203755
+        ],
+        [
+          145.05958094620811,
+          63.744256060846105,
+          60.06534700065815
+        ],
+        [
+          160.8987555850192,
+          63.744256060846105,
+          60.838088552489666
+        ],
+        [
+          145.05958094620811,
+          73.74782195469666,
+          60.334550661546146
+        ],
+        [
+          160.8987555850192,
+          73.74782195469666,
+          61.03992733403537
+        ],
+        [
+          145.05958094620811,
+          76.2224687054349,
+          60.47190212619188
+        ],
+        [
+          160.8987555850192,
+          76.2224687054349,
+          61.08985749796142
+        ],
+        [
+          145.05958094620811,
+          86.22208141929352,
+          61.02691526159348
+        ],
+        [
+          160.8987555850192,
+          86.22208141929352,
+          61.493375536930884
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          5,
+          4
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          6,
+          7,
+          9
+        ],
+        [
+          6,
+          9,
+          8
+        ],
+        [
+          8,
+          9,
+          11
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          10,
+          11,
+          13
+        ],
+        [
+          10,
+          13,
+          12
+        ],
+        [
+          12,
+          13,
+          15
+        ],
+        [
+          12,
+          15,
+          14
+        ],
+        [
+          14,
+          15,
+          17
+        ],
+        [
+          14,
+          17,
+          16
+        ],
+        [
+          16,
+          17,
+          19
+        ],
+        [
+          16,
+          19,
+          18
+        ],
+        [
+          18,
+          19,
+          21
+        ],
+        [
+          18,
+          21,
+          20
+        ]
+      ],
+      "extrusion_axis": 2,
+      "artificial_delta_mm": -0.81,
+      "scope": "Manufacturing variant; original reference remains separate. Detachable hypothetical/reference-backed part, not true skin",
+      "supports": [
+        {
+          "xy": [
+            148.22741587397033,
+            15.1188024710914
+          ],
+          "support_triangle": 1,
+          "post_bounds_mm": [
+            147.22741587397033,
+            14.1188024710914,
+            0,
+            149.22741587397033,
+            16.1188024710914,
+            60.835709832118276
+          ],
+          "angled_post_cap_corners_mm": [
+            [
+              147.22741587397033,
+              14.1188024710914,
+              60.78255867169583
+            ],
+            [
+              149.22741587397033,
+              14.1188024710914,
+              60.835709832118276
+            ],
+            [
+              149.22741587397033,
+              16.1188024710914,
+              60.67424521215503
+            ],
+            [
+              147.22741587397033,
+              16.1188024710914,
+              60.62109405173259
+            ]
+          ],
+          "attachment": "Cap follows manufactured underside plus0.1mm attachment overlap; not a building support."
+        },
+        {
+          "xy": [
+            151.39525080173254,
+            84.2221588765218
+          ],
+          "support_triangle": 19,
+          "post_bounds_mm": [
+            150.39525080173254,
+            83.2221588765218,
+            0,
+            152.39525080173254,
+            85.2221588765218,
+            60.477449991980585
+          ],
+          "angled_post_cap_corners_mm": [
+            [
+              150.39525080173254,
+              83.2221588765218,
+              60.307543497315656
+            ],
+            [
+              152.39525080173254,
+              83.2221588765218,
+              60.36644306575585
+            ],
+            [
+              152.39525080173254,
+              85.2221588765218,
+              60.477449991980585
+            ],
+            [
+              150.39525080173254,
+              85.2221588765218,
+              60.41855042354039
+            ]
+          ],
+          "attachment": "Cap follows manufactured underside plus0.1mm attachment overlap; not a building support."
+        },
+        {
+          "xy": [
+            148.22741587397033,
+            50.046728971962615
+          ],
+          "support_triangle": 11,
+          "post_bounds_mm": [
+            147.22741587397033,
+            49.046728971962615,
+            0,
+            149.22741587397033,
+            51.046728971962615,
+            59.45570087080326
+          ],
+          "angled_post_cap_corners_mm": [
+            [
+              147.22741587397033,
+              49.046728971962615,
+              59.32410123832653
+            ],
+            [
+              149.22741587397033,
+              49.046728971962615,
+              59.45570087080326
+            ],
+            [
+              149.22741587397033,
+              51.046728971962615,
+              59.435517793307845
+            ],
+            [
+              147.22741587397033,
+              51.046728971962615,
+              59.303918160831124
+            ]
+          ],
+          "attachment": "Cap follows manufactured underside plus0.1mm attachment overlap; not a building support."
+        }
+      ],
+      "explicit_manufactured_projection_area_loss_mm2": 0,
+      "L5_clearance_notch": null,
+      "safe_individual_candidate_count": 54
+    },
+    {
+      "id": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "reference_vertices_mm": [
+        [
+          181.24231386600184,
+          6.422866813134624,
+          71.53815347804978
+        ],
+        [
+          181.24231386600184,
+          98.52309839083192,
+          71.53815347804978
+        ],
+        [
+          181.24231386600184,
+          98.7475506205095,
+          67.85837887509534
+        ],
+        [
+          181.24231386600184,
+          6.273231993349563,
+          67.85837887509534
+        ]
+      ],
+      "faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "extrusion_axis": 0,
+      "artificial_delta_mm": -0.8,
+      "scope": "Manufacturing variant; original reference remains separate. Detachable hypothetical/reference-backed part, not true skin",
+      "supports": [
+        {
+          "xy": [
+            178.14231386600184,
+            9.273231993349562
+          ],
+          "post_bounds_mm": [
+            177.14231386600184,
+            8.273231993349562,
+            0,
+            179.14231386600184,
+            10.273231993349562,
+            70.69826617657256
+          ],
+          "arm_bounds_mm": [
+            178.14231386600184,
+            8.273231993349562,
+            68.69826617657256,
+            180.54231386600185,
+            10.273231993349562,
+            70.69826617657256
+          ],
+          "attachment": "0.1mm artificial-back overlap, no reference-plane penetration",
+          "inward_offset_mm": 3.1
+        },
+        {
+          "xy": [
+            178.14231386600184,
+            95.27323199334955
+          ],
+          "post_bounds_mm": [
+            177.14231386600184,
+            94.27323199334955,
+            0,
+            179.14231386600184,
+            96.27323199334955,
+            70.69826617657256
+          ],
+          "arm_bounds_mm": [
+            178.14231386600184,
+            94.27323199334955,
+            68.69826617657256,
+            180.54231386600185,
+            96.27323199334955,
+            70.69826617657256
+          ],
+          "attachment": "0.1mm artificial-back overlap, no reference-plane penetration",
+          "inward_offset_mm": 3.1
+        },
+        {
+          "xy": [
+            175.14231386600184,
+            53.27323199334956
+          ],
+          "post_bounds_mm": [
+            174.14231386600184,
+            52.27323199334956,
+            0,
+            176.14231386600184,
+            54.27323199334956,
+            70.69826617657256
+          ],
+          "arm_bounds_mm": [
+            175.14231386600184,
+            52.27323199334956,
+            68.69826617657256,
+            180.54231386600185,
+            54.27323199334956,
+            70.69826617657256
+          ],
+          "attachment": "0.1mm artificial-back overlap, no reference-plane penetration",
+          "inward_offset_mm": 6.1
+        }
+      ],
+      "explicit_manufactured_projection_area_loss_mm2": 0,
+      "L5_clearance_notch": null,
+      "safe_individual_candidate_count": 68
+    }
+  ],
+  "boxes": [
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_0_support0_post_bounds_mm",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_0",
+      "bounds_mm": [
+        21.06277756986574,
+        40.27665980034862,
+        0,
+        23.06277756986574,
+        42.27665980034862,
+        65.67338565761537
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_0_support0_arm_bounds_mm",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_0",
+      "bounds_mm": [
+        21.06277756986574,
+        28.276659800348618,
+        63.67338565761537,
+        23.06277756986574,
+        42.27665980034862,
+        65.67338565761537
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_0_support0_cap_bounds_mm",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_0",
+      "bounds_mm": [
+        21.06277756986574,
+        28.276659800348618,
+        63.67338565761536,
+        23.06277756986574,
+        30.276659800348618,
+        66.40633073314626
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_0_support1_post_bounds_mm",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_0",
+      "bounds_mm": [
+        21.06277756986574,
+        40.51925209950881,
+        0,
+        23.06277756986574,
+        42.51925209950881,
+        65.58960229153062
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_0_support1_arm_bounds_mm",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_0",
+      "bounds_mm": [
+        21.06277756986574,
+        32.51925209950881,
+        63.589602291530625,
+        23.06277756986574,
+        42.51925209950881,
+        65.58960229153062
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_0_support1_cap_bounds_mm",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_0",
+      "bounds_mm": [
+        21.06277756986574,
+        32.51925209950881,
+        63.58960229153062,
+        23.06277756986574,
+        34.51925209950881,
+        66.28929931748627
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_1_support0_post_bounds_mm",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_1",
+      "bounds_mm": [
+        21.06277756986574,
+        73.6973538266519,
+        0,
+        23.06277756986574,
+        75.6973538266519,
+        66.22643834438009
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_1_support1_post_bounds_mm",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_1",
+      "bounds_mm": [
+        38.94732594156266,
+        86.42513072413249,
+        0,
+        40.94732594156266,
+        88.42513072413249,
+        61.06770502786869
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_1_support2_post_bounds_mm",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_1",
+      "bounds_mm": [
+        25.037121652465054,
+        88.08889241007766,
+        0,
+        27.037121652465054,
+        90.08889241007766,
+        65.23904045573771
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "B_FINITE_UPPER_CANDIDATE_PROXY_support0_post_bounds_mm",
+      "unit": "B_FINITE_UPPER_CANDIDATE_PROXY",
+      "bounds_mm": [
+        147.22741587397033,
+        14.1188024710914,
+        0,
+        149.22741587397033,
+        16.1188024710914,
+        60.835709832118276
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "B_FINITE_UPPER_CANDIDATE_PROXY_support1_post_bounds_mm",
+      "unit": "B_FINITE_UPPER_CANDIDATE_PROXY",
+      "bounds_mm": [
+        150.39525080173254,
+        83.2221588765218,
+        0,
+        152.39525080173254,
+        85.2221588765218,
+        60.477449991980585
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "B_FINITE_UPPER_CANDIDATE_PROXY_support2_post_bounds_mm",
+      "unit": "B_FINITE_UPPER_CANDIDATE_PROXY",
+      "bounds_mm": [
+        147.22741587397033,
+        49.046728971962615,
+        0,
+        149.22741587397033,
+        51.046728971962615,
+        59.45570087080326
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE_support0_post_bounds_mm",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "bounds_mm": [
+        177.14231386600184,
+        8.273231993349562,
+        0,
+        179.14231386600184,
+        10.273231993349562,
+        70.69826617657256
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE_support0_arm_bounds_mm",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "bounds_mm": [
+        178.14231386600184,
+        8.273231993349562,
+        68.69826617657256,
+        180.54231386600185,
+        10.273231993349562,
+        70.69826617657256
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE_support1_post_bounds_mm",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "bounds_mm": [
+        177.14231386600184,
+        94.27323199334955,
+        0,
+        179.14231386600184,
+        96.27323199334955,
+        70.69826617657256
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE_support1_arm_bounds_mm",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "bounds_mm": [
+        178.14231386600184,
+        94.27323199334955,
+        68.69826617657256,
+        180.54231386600185,
+        96.27323199334955,
+        70.69826617657256
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE_support2_post_bounds_mm",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "bounds_mm": [
+        174.14231386600184,
+        52.27323199334956,
+        0,
+        176.14231386600184,
+        54.27323199334956,
+        70.69826617657256
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE_support2_arm_bounds_mm",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "bounds_mm": [
+        175.14231386600184,
+        52.27323199334956,
+        68.69826617657256,
+        180.54231386600185,
+        54.27323199334956,
+        70.69826617657256
+      ],
+      "kind": "artificial_support_conservative_box"
+    },
+    {
+      "id": "PEG_22_0",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_0",
+      "bounds_mm": [
+        21.06277756986574,
+        40.27665980034862,
+        -1.2,
+        23.06277756986574,
+        42.27665980034862,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_22_1",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_0",
+      "bounds_mm": [
+        21.06277756986574,
+        40.51925209950881,
+        -1.2,
+        23.06277756986574,
+        42.51925209950881,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_23_0",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_1",
+      "bounds_mm": [
+        21.06277756986574,
+        73.6973538266519,
+        -1.2,
+        23.06277756986574,
+        75.6973538266519,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_24_0",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_1",
+      "bounds_mm": [
+        38.94732594156266,
+        86.42513072413249,
+        -1.2,
+        40.94732594156266,
+        88.42513072413249,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_25_0",
+      "unit": "A_NOMINAL_ROOF_SUPPORT_1",
+      "bounds_mm": [
+        25.037121652465054,
+        88.08889241007766,
+        -1.2,
+        27.037121652465054,
+        90.08889241007766,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_26_0",
+      "unit": "B_FINITE_UPPER_CANDIDATE_PROXY",
+      "bounds_mm": [
+        147.22741587397033,
+        14.1188024710914,
+        -1.2,
+        149.22741587397033,
+        16.1188024710914,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_27_0",
+      "unit": "B_FINITE_UPPER_CANDIDATE_PROXY",
+      "bounds_mm": [
+        150.39525080173254,
+        83.2221588765218,
+        -1.2,
+        152.39525080173254,
+        85.2221588765218,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_28_0",
+      "unit": "B_FINITE_UPPER_CANDIDATE_PROXY",
+      "bounds_mm": [
+        147.22741587397033,
+        49.046728971962615,
+        -1.2,
+        149.22741587397033,
+        51.046728971962615,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_29_0",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "bounds_mm": [
+        177.14231386600184,
+        8.273231993349562,
+        -1.2,
+        179.14231386600184,
+        10.273231993349562,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_30_0",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "bounds_mm": [
+        177.14231386600184,
+        94.27323199334955,
+        -1.2,
+        179.14231386600184,
+        96.27323199334955,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    },
+    {
+      "id": "PEG_31_0",
+      "unit": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "bounds_mm": [
+        174.14231386600184,
+        52.27323199334956,
+        -1.2,
+        176.14231386600184,
+        54.27323199334956,
+        0
+      ],
+      "kind": "actual_designed_peg_extension"
+    }
+  ],
+  "units": "mm, identity assembly transform",
+  "source_contract_sha256": "20b4661bd9655ac55c225081beffb0c61a5da3cb5f38c0c9e135eea9d62f72b0",
+  "scope": "All4 fronts conditional or nominal hypothetical display skins, not confirmed architectural surfaces. Support geometry artificial; room/roof-protrusion occupation disclosed.",
+  "manufacturing_revision": "A0 two remote arms and post tops lower .05mm, independent2135 permitted. Original input/failures retained."
+}

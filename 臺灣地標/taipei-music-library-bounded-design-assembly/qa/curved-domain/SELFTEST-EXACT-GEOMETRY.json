@@ -1,0 +1,16 @@
+{
+  "tests": {
+    "cube_volume_8": true,
+    "half_overlap_volume_4": true,
+    "subtraction_volume_4": true,
+    "identical_subtraction_empty": true,
+    "face_touch_intersection_empty": true,
+    "face_touch_union_volume_16": true,
+    "tetra_volume_4over3": true,
+    "tetra_halfclip_volume_1over6": true,
+    "outside_origin_signed_tetra_overlap_4": true,
+    "cube_embedded_audit": true
+  },
+  "all_pass": true,
+  "scope": "Analytic unit tests for volume, clipping, disjoint subtraction, touch-only exclusion, outside-origin signed integration and embedding."
+}

@@ -1,0 +1,252 @@
+{
+  "inputs": {
+    "expected-convex-primitives.json": "0a9748170f1079405b64b7c1961804cb79be5ec8255c441a6e29999161d6a96f",
+    "geometry.json": "268cf08aae90bf994ef5a3ae34a238805db461074ef7c4f8e848737d8b26906f"
+  },
+  "results": [
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_0",
+      "method": "Exact rational signed-tetrahedron integration against a disjoint exact convex decomposition of expected union. IEEE754 coordinate conversion exact; no sampling and no numerical clipping tolerance. Requires actual mesh to be embedded, closed and consistently outward oriented; independent embedding audit reported separately.",
+      "integer_lattice_exponent": 22,
+      "primitive_count": 12,
+      "expected_disjoint_convex_cells": 25,
+      "actual_triangles": 296,
+      "nonzero_signed_tetrahedra": 296,
+      "positive_convex_intersections_evaluated": 1074,
+      "actual_geometry_equals_binary_stl_ordered_triangle_coordinates": true,
+      "expected_union_volume_mm3": {
+        "decimal_65_significant_digits": "570.20642383198672577456953387736971753765093141757744933898202327",
+        "float": 570.2064238319867,
+        "rational_numerator_bits": 179,
+        "rational_denominator_bits": 170,
+        "rational_sha256": "b99640a938786f93b1d93d62e1dfc6afcb3d7db31761492f472018b1aaaa0431",
+        "decimal_absolute_rounding_bound": "1E-62"
+      },
+      "actual_signed_volume_mm3": {
+        "decimal_65_significant_digits": "570.20644770157338214004264879501230704287687937418619791666666667",
+        "float": 570.2064477015734,
+        "rational_numerator_bits": 64,
+        "rational_denominator_bits": 55,
+        "rational_sha256": "3a03b067de5497bf24193c6dd3d111ca7baf22704b2f1aa44814b220b17ccff3",
+        "decimal_absolute_rounding_bound": "1E-62"
+      },
+      "intersection_signed_integral_mm3": {
+        "decimal_65_significant_digits": "570.20638219223792949274132534491132405895108883978975227535949927",
+        "float": 570.2063821922379,
+        "rational_numerator_bits": 236,
+        "rational_denominator_bits": 227,
+        "rational_sha256": "6d86bd79df74da6f8bbea9f49b12c496742dad1c95d33e6fa9408239bcd07c6d",
+        "decimal_absolute_rounding_bound": "1E-62"
+      },
+      "actual_extra_outside_expected_mm3": {
+        "decimal_65_significant_digits": "0.000065509335452647301323450100982983925790534396445641307167399868809",
+        "float": 6.550933545264731e-05,
+        "rational_numerator_bits": 213,
+        "rational_denominator_bits": 227,
+        "rational_sha256": "cb4e89decfe5ec1ccad52049cb93fee9076b7fac8f39b66841c712cfdf37e532",
+        "decimal_absolute_rounding_bound": "1E-69"
+      },
+      "expected_missing_from_actual_mm3": {
+        "decimal_65_significant_digits": "0.000041639748796281828208532458393478699842577787697063622524004859609",
+        "float": 4.163974879628183e-05,
+        "rational_numerator_bits": 253,
+        "rational_denominator_bits": 268,
+        "rational_sha256": "fd68b5aa286359f9317a1ab272705ba7ec2bf87a9dbaed89a1a8494c15166843",
+        "decimal_absolute_rounding_bound": "1E-69"
+      },
+      "symmetric_difference_mm3": {
+        "decimal_65_significant_digits": "0.00010714908424892912953198255937646262563311218414270492969140472842",
+        "float": 0.00010714908424892914,
+        "rational_numerator_bits": 254,
+        "rational_denominator_bits": 267,
+        "rational_sha256": "a55e09d416b7a2087b6683c2346092e3dae8cc5e25e88c0d107b2379412dc998",
+        "decimal_absolute_rounding_bound": "1E-68"
+      },
+      "exact_domain_equal": false,
+      "elapsed_seconds": 8.903225898742676
+    },
+    {
+      "id": "A_NOMINAL_ROOF_SUPPORT_1",
+      "method": "Exact rational signed-tetrahedron integration against a disjoint exact convex decomposition of expected union. IEEE754 coordinate conversion exact; no sampling and no numerical clipping tolerance. Requires actual mesh to be embedded, closed and consistently outward oriented; independent embedding audit reported separately.",
+      "integer_lattice_exponent": 22,
+      "primitive_count": 13,
+      "expected_disjoint_convex_cells": 18,
+      "actual_triangles": 114,
+      "nonzero_signed_tetrahedra": 114,
+      "positive_convex_intersections_evaluated": 241,
+      "actual_geometry_equals_binary_stl_ordered_triangle_coordinates": true,
+      "expected_union_volume_mm3": {
+        "decimal_65_significant_digits": "1341.8413498790136559501423229076223327940202972088604778491449986",
+        "float": 1341.8413498790137,
+        "rational_numerator_bits": 101,
+        "rational_denominator_bits": 90,
+        "rational_sha256": "fdd1d83c3d06ce94254bfe48049b2e79d2a4d9387f49a10b1e0b857a42104d9f",
+        "decimal_absolute_rounding_bound": "1E-61"
+      },
+      "actual_signed_volume_mm3": {
+        "decimal_65_significant_digits": "1341.841313812754794276838055111511494033038616180419921875",
+        "float": 1341.8413138127548,
+        "rational_numerator_bits": 65,
+        "rational_denominator_bits": 55,
+        "rational_sha256": "97175161498b90c98317e7ff1ff2e5f687c2ef6b5ad4753cd85aab0721be8e1e",
+        "decimal_absolute_rounding_bound": "1E-61"
+      },
+      "intersection_signed_integral_mm3": {
+        "decimal_65_significant_digits": "1341.8412301408001326742413531859977565318054379013609180288512032",
+        "float": 1341.8412301408002,
+        "rational_numerator_bits": 259,
+        "rational_denominator_bits": 249,
+        "rational_sha256": "9bef72e3510767c2a6179ff1dc06ff7bd286b9b5d2a7f19ca85c725c1a22dd94",
+        "decimal_absolute_rounding_bound": "1E-61"
+      },
+      "actual_extra_outside_expected_mm3": {
+        "decimal_65_significant_digits": "0.000083671954661602596701925513737501233178279059003846148796771781086",
+        "float": 8.36719546616026e-05,
+        "rational_numerator_bits": 230,
+        "rational_denominator_bits": 244,
+        "rational_sha256": "e9f5a02b78eba403b212847c060e5cce995960bdf327bd97ee43f4057d7a4d1b",
+        "decimal_absolute_rounding_bound": "1E-69"
+      },
+      "expected_missing_from_actual_mm3": {
+        "decimal_65_significant_digits": "0.00011973821352327590096972162457626221485930749955982029379541362816",
+        "float": 0.0001197382135232759,
+        "rational_numerator_bits": 236,
+        "rational_denominator_bits": 249,
+        "rational_sha256": "d0ee900176fd07d0b905c539ca4c6a1df1e5434832b000b12fc22e5add52ea51",
+        "decimal_absolute_rounding_bound": "1E-68"
+      },
+      "symmetric_difference_mm3": {
+        "decimal_65_significant_digits": "0.00020341016818487849767164713831376344803758655856366644259218540925",
+        "float": 0.0002034101681848785,
+        "rational_numerator_bits": 237,
+        "rational_denominator_bits": 249,
+        "rational_sha256": "ae40686cdcedc30587ab50833febd32be0d1eefa4e4b732ae4d23c9e4ea33a71",
+        "decimal_absolute_rounding_bound": "1E-68"
+      },
+      "exact_domain_equal": false,
+      "elapsed_seconds": 2.0408408641815186
+    },
+    {
+      "id": "B_FINITE_UPPER_CANDIDATE_PROXY",
+      "method": "Exact rational signed-tetrahedron integration against a disjoint exact convex decomposition of expected union. IEEE754 coordinate conversion exact; no sampling and no numerical clipping tolerance. Requires actual mesh to be embedded, closed and consistently outward oriented; independent embedding audit reported separately.",
+      "integer_lattice_exponent": 22,
+      "primitive_count": 23,
+      "expected_disjoint_convex_cells": 34,
+      "actual_triangles": 156,
+      "nonzero_signed_tetrahedra": 156,
+      "positive_convex_intersections_evaluated": 376,
+      "actual_geometry_equals_binary_stl_ordered_triangle_coordinates": true,
+      "expected_union_volume_mm3": {
+        "decimal_65_significant_digits": "1695.4507525866735316207723265295611066263669813944818467263019577",
+        "float": 1695.4507525866736,
+        "rational_numerator_bits": 120,
+        "rational_denominator_bits": 109,
+        "rational_sha256": "4fc2b618836b4a29b2fd0f78d6968fe82ebfc4cfe86a50a09a47e30a06064a56",
+        "decimal_absolute_rounding_bound": "1E-61"
+      },
+      "actual_signed_volume_mm3": {
+        "decimal_65_significant_digits": "1695.4507120056056490760750439979650157814224561055501302083333333",
+        "float": 1695.4507120056057,
+        "rational_numerator_bits": 67,
+        "rational_denominator_bits": 56,
+        "rational_sha256": "591e732b58dd5cdc76c9fe0e6ac05045c56559dde8a95df7ffdd547035554d12",
+        "decimal_absolute_rounding_bound": "1E-61"
+      },
+      "intersection_signed_integral_mm3": {
+        "decimal_65_significant_digits": "1695.4506813763461896980879384200988704098369236231576007563785187",
+        "float": 1695.4506813763462,
+        "rational_numerator_bits": 369,
+        "rational_denominator_bits": 358,
+        "rational_sha256": "5573071d2586fbfd616bf933d35a4eb350c7bdb1002142d62cdff69e7851c8b1",
+        "decimal_absolute_rounding_bound": "1E-61"
+      },
+      "actual_extra_outside_expected_mm3": {
+        "decimal_65_significant_digits": "0.000030629259459377987105577866145371585532482392529451954814637699468",
+        "float": 3.062925945937799e-05,
+        "rational_numerator_bits": 343,
+        "rational_denominator_bits": 358,
+        "rational_sha256": "fc2a384c5f8d89805ca5762cdad49e9c5e6a8011062fa8dec62ae98c163918f9",
+        "decimal_absolute_rounding_bound": "1E-69"
+      },
+      "expected_missing_from_actual_mm3": {
+        "decimal_65_significant_digits": "0.000071210327341922684388109462236216530057771324245969923439041694687",
+        "float": 7.121032734192268e-05,
+        "rational_numerator_bits": 366,
+        "rational_denominator_bits": 379,
+        "rational_sha256": "2eef7867cf2a0c02bd96ca8786782c5e4678f1d8881f0c8a75945c5216dc47b8",
+        "decimal_absolute_rounding_bound": "1E-69"
+      },
+      "symmetric_difference_mm3": {
+        "decimal_65_significant_digits": "0.00010183958680130067149368732838158811559025371677542187825367939416",
+        "float": 0.00010183958680130068,
+        "rational_numerator_bits": 365,
+        "rational_denominator_bits": 378,
+        "rational_sha256": "2d1722937672b4728877fd2dbe6eb7d0cfad3cc9c22ab0102bea07b1274898ce",
+        "decimal_absolute_rounding_bound": "1E-68"
+      },
+      "exact_domain_equal": false,
+      "elapsed_seconds": 5.2203288078308105
+    },
+    {
+      "id": "SOUTH_UPPER_BAND_NOMINAL_REFERENCE_PLANE",
+      "method": "Exact rational signed-tetrahedron integration against a disjoint exact convex decomposition of expected union. IEEE754 coordinate conversion exact; no sampling and no numerical clipping tolerance. Requires actual mesh to be embedded, closed and consistently outward oriented; independent embedding audit reported separately.",
+      "integer_lattice_exponent": 22,
+      "primitive_count": 11,
+      "expected_disjoint_convex_cells": 11,
+      "actual_triangles": 232,
+      "nonzero_signed_tetrahedra": 232,
+      "positive_convex_intersections_evaluated": 249,
+      "actual_geometry_equals_binary_stl_ordered_triangle_coordinates": true,
+      "expected_union_volume_mm3": {
+        "decimal_65_significant_digits": "1162.05750230470521977554909653918002732098102569580078125",
+        "float": 1162.0575023047052,
+        "rational_numerator_bits": 64,
+        "rational_denominator_bits": 54,
+        "rational_sha256": "83492308b074bb576873be7dddb06c2e5429bba9a57ccfe9dec061e966915e41",
+        "decimal_absolute_rounding_bound": "1E-61"
+      },
+      "actual_signed_volume_mm3": {
+        "decimal_65_significant_digits": "1162.05750230470521977554909653918002732098102569580078125",
+        "float": 1162.0575023047052,
+        "rational_numerator_bits": 64,
+        "rational_denominator_bits": 54,
+        "rational_sha256": "83492308b074bb576873be7dddb06c2e5429bba9a57ccfe9dec061e966915e41",
+        "decimal_absolute_rounding_bound": "1E-61"
+      },
+      "intersection_signed_integral_mm3": {
+        "decimal_65_significant_digits": "1162.05750230470521977554909653918002732098102569580078125",
+        "float": 1162.0575023047052,
+        "rational_numerator_bits": 64,
+        "rational_denominator_bits": 54,
+        "rational_sha256": "83492308b074bb576873be7dddb06c2e5429bba9a57ccfe9dec061e966915e41",
+        "decimal_absolute_rounding_bound": "1E-61"
+      },
+      "actual_extra_outside_expected_mm3": {
+        "decimal_65_significant_digits": "0",
+        "float": 0.0,
+        "rational_numerator_bits": 0,
+        "rational_denominator_bits": 1,
+        "rational_sha256": "a93875fe509ac2fae0e0939d3ec71c4d978244c7398dd7185ca68c393426a5a6",
+        "decimal_absolute_rounding_bound": "0"
+      },
+      "expected_missing_from_actual_mm3": {
+        "decimal_65_significant_digits": "0",
+        "float": 0.0,
+        "rational_numerator_bits": 0,
+        "rational_denominator_bits": 1,
+        "rational_sha256": "a93875fe509ac2fae0e0939d3ec71c4d978244c7398dd7185ca68c393426a5a6",
+        "decimal_absolute_rounding_bound": "0"
+      },
+      "symmetric_difference_mm3": {
+        "decimal_65_significant_digits": "0",
+        "float": 0.0,
+        "rational_numerator_bits": 0,
+        "rational_denominator_bits": 1,
+        "rational_sha256": "a93875fe509ac2fae0e0939d3ec71c4d978244c7398dd7185ca68c393426a5a6",
+        "decimal_absolute_rounding_bound": "0"
+      },
+      "exact_domain_equal": true,
+      "elapsed_seconds": 0.7527518272399902
+    }
+  ]
+}
