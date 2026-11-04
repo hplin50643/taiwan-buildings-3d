@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed both official exterior/aerial photographs, original code/preview and all ten final renders; parent reviews separately before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Only main upper 40-facet roof skin120 and cap upper20-facet skin40 are pale gray;1496 remaining triangles neutral.",
+    "Finite original sampled chord plane, tangent and full x bounds check every vertex; each entire infinite plane equals finite selection. No centroid or normal paint clipping.",
+    "All467 coplanar connected components uniformly assigned.",
+    "Roof ends, thickness/underside, clerestory walls/windows, lower walls, piers, sign block, stairs and platform neutral.",
+    "Whole views fit; three details show both upper skins and uncolored end/under surfaces.",
+    "Original1656 triangles and STL/build bytes unchanged; immutable OBJ absent. Same item count_delta0.",
+    "Unknown capture dates; one independent dining building beside second dormitory,not dormitory wing or athletics facility;no2026current-state or geometric accuracy endorsement."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "441da0ba1c38dea3a073becb8d3b1c306cf3daa2775779fb53793ce9a834bd22",
+    "README.zh-TW.md": "441da0ba1c38dea3a073becb8d3b1c306cf3daa2775779fb53793ce9a834bd22",
+    "colorize_model.py": "7a6f58a44ff4c4e560b71e4f06b6799f1ab535e2c0b00164a275fd77b36d8235",
+    "render_color.py": "7ae7ddb20968340c7738c0b0781a9cced144e9d33bc9821b3d599c56b4a28d81",
+    "color-mesh.npz": "640e51812da8394a0e4a887efc0a4199228f5389322497dbf3e20e7709526327",
+    "palette.json": "9cb9881450ef0e7ac05939508913ad62ca5a28c040ae954d61ae2522d5dffb8e",
+    "appearance-materials.json": "dcc031701a50f33edf022c136c837a454a0f7bc3dded5ee087b5ee9d97fb4f92",
+    "COLOR-SOURCE-REGISTER.json": "fe545ff4a2df684487da01943824d2e5c36a779f00ffe1e0e6c4bc636d99dffe",
+    "model.stl": "b727d519d2c5c8b1cb27664ad31134a5ec633cbc898b03c7f49e18de867e282c",
+    "build_model.py": "f6ed7dbd6fb03f37025687c1722967a757f28b99d6c93e1945e2fc9c7e8bf21c",
+    "preview.png": "a80e7a6896965dfef0c1603fdb60633c036a676eb31c1a487eab0dc86fb7f5c3",
+    "rear.png": "dedf61d8cf0c39c220183db53cbda24e554fc5e4b55c3fcfada1e521bd5e4f83",
+    "front.png": "5044b1d941f88a707df9e362523801ca9a69ddeef9dbf47519778903356a49a9",
+    "back.png": "becf4c23ade92f2d1b59f6cba91e6e438b070c674a7561448e881e4ac8296f46",
+    "west.png": "5c54ae9dc7a8c104053b982c103387d5561758f94ffbe9ec30fb9026df5e9700",
+    "east.png": "76822f715c8bd50c9beb033344f39184cfcbb8a5c06687d065d5577bd58eca4a",
+    "top.png": "fa265f5b375e2564d06b5bac749e9af89f6f8a409fbcd84346dc27b13be0e1ba",
+    "entry-detail.png": "6c07c9235adfa3694672268adbad60333844cd3a8aa3c4d5623a93b1af7649eb",
+    "facade-detail.png": "d602463277503fc1a9d3a2e610454b40d381e95ec9f0fa27d9e5335a9f86ded8",
+    "roof-detail.png": "ee8d943f2e2e4fc7f2e1a52f2e656214da01c7d565e3873e313068c1d5a30d76"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "4e4379fac71d2d778e104618df84b22f51e74385955636928b55638876e5cce6",
+    "SCENE-QA.json": "d1dcc6d142cb0d3e0a3803bee4e3c84dbae7df42656a9d1c8b41c5803d184ea4",
+    "DELIVERY-QA.json": "9fb35729a4f215c78dffb29e9361a08596ae148cf18e24a079158d0408d1a7fd"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "ebf3031c779f0f713105407dc6dea35c70bb32984ed64cae4a0ccf00358d0155",
+    "ORIGINAL-RETENTION-QA.json": "cf613ff3b525c15f381629548791232a7dbe2e2932e82eafe74100e95610e630",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0307.json": "3e076346aeb27427e790b48ce845dfc9bd80566307f25adf7ffccad3c7cd0a54",
+    "INDEPENDENT-IDENTITY-0307.json": "cff365b894cec88542772df238752e41118b790fc0f14f5a8086e2a57f6034f0"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T03:09:45Z",
+  "parent_review": "Parent personally viewed both official exterior and aerial photos, original sampled barrel/cap code, preview and final ten-image montage. Exact original full upper skins120+40 triangles nominal pale gray only; all original chord facets independently fullpoint plane/tangent/fullx rederived, no normal shortcut. Ends, thickness, undersides, windows and walls remain neutral. Seven whole views framed, three intentional closeups; originalBoolean cuts retained. Dining standalone not dorm or nearby gym; partial and capture unknown, geometry not recertified."
+}

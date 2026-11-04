@@ -1,0 +1,35 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed stepped perimeter frame front lightgray",
+      "hex": "#C8C9C2",
+      "faces": 28
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixedbrickwalls entryframes glazing roofplanes neutral",
+      "hex": "#B8BAB5",
+      "faces": 3766
+    }
+  ],
+  "domains": {
+    "stepped_perimeter_frame_front": 28,
+    "per_rectangle": [
+      28
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 929
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3794 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "All vertices on complete raised steppedframe frontplane y-66,x+-33,z5..42.6.",
+    "28faces whole stepped frame front includingslopes andBooleanfragments.",
+    "No normal or centroid shortcuts;horizontal roofs side returns neutral.",
+    "Mainbrickwall mixedcurvedbalcony columns glazing andsidewalls neutral.",
+    "Captureunknown;reportyear not captureproof.",
+    "Two labels not testedfourfilament."
+  ]
+}

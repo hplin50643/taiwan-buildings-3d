@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立臺北教育大學/臺北校區/buildings/ntue-gym",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "NTUE Gym partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "25eee75a7895b3201c94c012ce243f53a7c48f6b8ce2875a5985097de747a43c",
+  "new_3mf_sha256": "413b93f02f49e052c0a16757bd83032cf5dafcabfe07a5ca1eba2611f45bb041",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "06a791d2dac5c43ee81babbca7d11dd00e1852bd5be44cd78c1c6dcc2217e5fc",
+    "validate_color.py": "6899e5f28e64aff1da3d264437bcba856b28bf0bf7490287aa13c8cf29b8261e",
+    "render_color.py": "f41edf2f13c99e70b79b8488ec41d76565907ade4beb6ea80a2db8723f2a75b2",
+    "verify_color_scene.py": "92c965350420762a1a4a1218a10158201d26e5a84e30fc7b39429fa9d0c9f169",
+    "scene.blend": "21dd5e93a0c2ca0f1d5898562e224e1861477276aeb6473c5b081dce398fc967",
+    "appearance.3mf": "413b93f02f49e052c0a16757bd83032cf5dafcabfe07a5ca1eba2611f45bb041",
+    "README.md": "5f43afd23a807cd22d99eece9bdfa5e09725443051239ccd818dd4316190bb73",
+    "README.zh-TW.md": "5f43afd23a807cd22d99eece9bdfa5e09725443051239ccd818dd4316190bb73"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "NTUE Gym partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "6a02f2e69a714704ee294f9022e45e980e1aeb90acd7ab18c086e17d3cbcd7d2",
+    "scene_reopened": true,
+    "scene_sha256": "21dd5e93a0c2ca0f1d5898562e224e1861477276aeb6473c5b081dce398fc967"
+  }
+}

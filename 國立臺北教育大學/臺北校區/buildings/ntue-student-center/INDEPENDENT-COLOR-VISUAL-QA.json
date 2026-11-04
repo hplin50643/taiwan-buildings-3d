@@ -1,0 +1,63 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official PDF52/53 exterior photographs, original code/preview and all ten final renders; parent reviews separately before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true,
+    "WHOLE-PLANE-PIER-CLOSURE-QA.json": true
+  },
+  "visual_findings": [
+    "One whole upper-left pier front y=-56, x[-31.6,-28.4], z[21.3,34]: 2 pale-cream triangles and 3682 neutral.",
+    "Entire original y=-56 plane has 11 triangles in four separate components of 2/2/3/4; selected pair is one whole component. Original finite rectangle area checked.",
+    "All 818 coplanar components uniform. Original slabs physically occlude pier ends, not arbitrary paint cuts.",
+    "Lower piers with mixed gray feet, obscured right pier, balconies, curved cornice, lift proxy, glazing, roof and unknown surfaces neutral.",
+    "Seven whole views fit; two closeups display the left upper pier between original slabs without coloring the lower pier.",
+    "Original 3684 triangles and STL/build bytes unchanged. Immutable OBJ absent; builder-generated OBJ only retained in private isolated rebuild. Same item, count_delta=0.",
+    "PDF2023 date is not capture date. Unknown photography dates; no2026 current-condition or original geometry-accuracy endorsement."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "30076440866bbe30ef2c45bce3b8f1378eb476ebb10b674041674165e41322dd",
+    "README.zh-TW.md": "30076440866bbe30ef2c45bce3b8f1378eb476ebb10b674041674165e41322dd",
+    "colorize_model.py": "2f88385197ed7d3b83e5bd69f91e286cbbbe588ae9c9a7355c062a3b04ef72da",
+    "render_color.py": "74060bf0c384e85df3828edc5c402c78add2ca76ec4ac98fa0683382e4ae9af4",
+    "color-mesh.npz": "58822e3afb6dc8050151907971f4c947b2bc6e87161bc44f27ab3823f56c6b34",
+    "palette.json": "8fe2db997ff94b0be0a73148d957e7cb75ac5bd1455726bb2d5e848c36e0d267",
+    "appearance-materials.json": "17837205da993a79114c62f4d51f02830d0b450d4cf45af035a6cd3b22fb3c9f",
+    "COLOR-SOURCE-REGISTER.json": "87df906551985d1005c016335a056825be4ff444ea27ddfcf73b75e30d2c7cfa",
+    "model.stl": "57b6d6f95e5ffc87bc44eeab06ab0f62f72f50e61f27532374200a3dc34d2403",
+    "build_model.py": "c9758670eb7237c3e1b2e2e368945614f87fcc326fcbeb157e5b69388cb17010",
+    "preview.png": "e348ef4ba719a09d3a038714176670bace8de6490801b0a78c8995af0c7925d0",
+    "rear.png": "1e4b0bf14d4a12bf238b915d7b452a364bffb6fcc36cc695ddd4c03593fc72de",
+    "front.png": "a9b7250e220509b00fcfb5ae73487ce36fbe1daf19812dc209016ea98e9a09dc",
+    "back.png": "846fc7700f4947cda57d7dadcb9f674bc854f8bc648aadf82633fedb5a74487e",
+    "west.png": "9c07c53482bec4a776fdf99f0f8e6345ac33982a8c754822cc4af705fb85b671",
+    "east.png": "265bd99276f863552e86f549b03c5e9f97b7c890660380945aa8a4d0324edcc8",
+    "top.png": "5c51320e0e81f6cf391612fc94941745c70d0f8abc3106184dcdff9d6e2a93b5",
+    "entry-detail.png": "c711a784636d7de608dda96a1ff99cb0c724414055b65035d91483b523f3f67a",
+    "facade-detail.png": "2c6f0665bbe1fd157f379dc2fe8e17deab3dddd2faa5155d04f56e3ffd2745ae",
+    "roof-detail.png": "210c4ee12c41d00f0d8fdecd95300d20201300d7e4531dc4074dbc73dcc6dcaf"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "83dfd30d0d1288a2a32803f6939a0a64cdb5d0345ea9a2e22dde0236cdec077f",
+    "SCENE-QA.json": "13b126aca18ea9688c060f70b5a0cf9fecd68bcb07c3cba774e918aaa5f71d82",
+    "DELIVERY-QA.json": "05396b1d06822bbdfd95327fd52a565c299d87bd4794ed91836b98190f5da9ad"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "d06340a9c45c546f29b4cb10c894dc60a49d82e9b3e4114ce0cb2e2d69697ad5",
+    "ORIGINAL-RETENTION-QA.json": "3ad8c5efa34d33af357fbb6a283ba66fbec1e1895b5693d33f652d4452379f8e",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "WHOLE-PLANE-PIER-CLOSURE-QA.json": "57934e3ac8851947139d79200356178c9b8d52df3dd7e20c5cd2091b375f5ac9",
+    "INDEPENDENT-DOMAIN-0254.json": "8d2c238b917f59413e2a913f263a99713367ddf71ae92f8ea7ad766b6d8009db",
+    "INDEPENDENT-IDENTITY-0254.json": "f8e1ed6172859f0f82de82643a920ad161ace909ff497a0e3a2b847b2cd44dbd"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T03:00:08Z",
+  "parent_review": "Parent personally viewed both official exterior PDF52/53 photos, original pier/slab code, preview and all ten final renders. Only left front upper pier two complete triangles pale cream; raw fullplane11 triangles form4 separate components and selected component complete. Original slabs create true boundary; no invented paint cuts. Right plaque, lower mixed bases, curved brick parapets, glass proxy, roofs and rear remain neutral. Seven whole views fit, three detail views intentional. Source capture unknown and only partial, not2026 full exterior."
+}

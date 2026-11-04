@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed visitor exterior47/48/49, original code and all ten final renders. Parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Three complete original stone domains:10frontframe,2capfront,51leftouterretaining;63gray/365neutral.",
+    "All119coplanar connected components uniform; original Boolean fragments retained, no new triangles or textured pebbles.",
+    "Separate projecting courses, glass/door/louvers, cap top/underside/sides, ground and unknown rear/right neutral.",
+    "Seven whole-model views fit; details show frontframe/cap and leftretaining exterior without expanding material domains.",
+    "Original428triangles/STL/build bytes unchanged; immutableOBJ absent despite private isolated generated OBJ. One first ground-level entry segment only/count_delta0, no underground gallery or second portal.",
+    "Capture dates unknown, cross-era exterior approximation not2026survey or geometry accuracy endorsement."
+  ],
+  "workflow_correction": "Initial environment ONLY_VIEW option was ineffective;7whole views rendered before approval. Originalsession51226 interrupted exit130. Parent explicitly approved remaining work thereafter;only3detailviews resumed under --only-view arguments. History/log retained, not represented as earlier approval.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "93f7faf981861f9d4fe0a4a67748398cf4fc5d43f243c3bc3fbed5547762accd",
+    "README.zh-TW.md": "93f7faf981861f9d4fe0a4a67748398cf4fc5d43f243c3bc3fbed5547762accd",
+    "colorize_model.py": "38ac37a7853c14d4487f7f626a0627e638e2f2933e28972e1e054df29bc54474",
+    "render_color.py": "7ee48a9827cf227e3fee7c4c2a232ff7a3e9755040a0fd3f16dc4ee2586bb26d",
+    "color-mesh.npz": "8bf79fd9cdac347a7865a06124ffad56c9e96842111b439f0a48035003385c37",
+    "palette.json": "2dc6c4d20fd84812762aa3d27ebee0802e926661af3dd42866c63e5185858297",
+    "appearance-materials.json": "07552465c944c0277ee83f391a93f32c641ee52182ddd5ec74e3269c6d98969f",
+    "COLOR-SOURCE-REGISTER.json": "60ac29197ec5aacabe5218d4fd532b9b191b7c1069ef388ed719a5afa4faf1e2",
+    "model.stl": "c42bb89b7417421483e6f5c6be0548d027c744e8c5a36d277697f81385700592",
+    "build_model.py": "b527f5499740b569e04511dbf606ae3ec03883762679c17833789d2b388a8192",
+    "preview.png": "0f641b78a60f75abb99bbd6fad1486a8872fc023edb524c436f05fa4867c3a82",
+    "rear.png": "0801e6542f851e71b5af9b350b95eaae083706b1a13dfdd0223bd4f611d52fe8",
+    "front.png": "faf4327c3f78d4273aeb5288ab80cac67b4ff05ff4e188e80de835b4b42bf613",
+    "back.png": "acac27f509839b991a71567c8798280d2a4d484d682e185e90bd8c490b04c2b2",
+    "west.png": "47c6f09c40c909d4d7ae65e302a0dc2a6347541857b9c0266181bc367fd81e9d",
+    "east.png": "3d7ededa1ec81de00c461f259031c9b09010b501520b90c9022a6a2c83deefd5",
+    "top.png": "3966c00e7e0c92f3b4b95a3ff7b71e6ea2ea383a8b40a62abe01cf0fa758133f",
+    "entry-detail.png": "eb9d33a4c9056e0e989b25280c2ab01558375773b41426b9320385fdd1d6497e",
+    "facade-detail.png": "eb81636db87fe7d92828b188fae7e676636d6bf81386d2a0ddf6142ff95e0448",
+    "roof-detail.png": "fb93f998778e5b2fc4fb422f0269b7efe08c334588c4fe28a3e72e6e739da995"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "6ef1fc50c213de0126db865f2b660041720f978e31f88ed3961cb4430892e7ad",
+    "SCENE-QA.json": "73d12c7e9f05eedb4158bb38d950f3c97b0cd051f3c78ee41c473569bf5690b8",
+    "DELIVERY-QA.json": "048256b942e9147f707c738809a960d293d681e531e993ebda66f3354b75183d"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "1daa29dc26ad85bc104bddfbc1d095f2d48d23621ad3df77ad11492d87d25615",
+    "ORIGINAL-RETENTION-QA.json": "3ad8c5efa34d33af357fbb6a283ba66fbec1e1895b5693d33f652d4452379f8e",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0218.json": "9280f44882fef17d6ca2348c6670ee01c33fbc88867e78d75fffadde26c7ce7d",
+    "INDEPENDENT-IDENTITY-0218.json": "e9de8aa67e3bef65a98033c33f916977eeb71808bfb5d575629abece53bf6409"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T02:19:42Z",
+  "parent_review": "Parent personally viewed three visitor exterior photographs, original code, preview and all ten final images. Complete front frame10, cap front2 and left retaining outer51 original fragments receive nominal washed-stone gray. Door, three projecting courses, top and unknown back/cut faces neutral. Whole views fit, closeups intentional. First above-ground entry segment across periods only, not entire museum/underground/second entrance or 2026 survey. Initial preview option typo caused early full-view rendering, stopped exit130; history retained and only missing three closeups rendered after parent approval, no geometry/color change."
+}

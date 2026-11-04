@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立臺北教育大學/臺北校區/buildings/ntue-montue",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "NTUE MoNTUE partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "c656855e34ad7c0700a91cf3169e1cbbcef7dfa4c29a082417e02e1d562687e9",
+  "new_3mf_sha256": "9023ab7c365dcb16536259f3d4b09c2ec4ba525ecb905a378bac3aff04334c5d",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "0cac498f036a9f8f8e8e0f6d72550e80181d91cd814778fcfbc5106485ebf782",
+    "validate_color.py": "7872a9b077ace4e370b7cab3788ec91e34901fee5a4f1cf9bf0a0e0521826931",
+    "render_color.py": "ecab57fde9594ae9d3450783abb813143cd159a7517825c9192124fecdd56b32",
+    "verify_color_scene.py": "baea336957b98c5cf1d62d56acf581b084abd3280f39839a25de208e6434ed99",
+    "scene.blend": "0cc3afe4f1a7462e0c23d1dde9f9f32803f52ab8e1a500546b398676860b7244",
+    "appearance.3mf": "9023ab7c365dcb16536259f3d4b09c2ec4ba525ecb905a378bac3aff04334c5d",
+    "README.md": "ecdec39b284e3f01ddd11f014bd15697a693ce3283735f5ca95afbdd338840bb",
+    "README.zh-TW.md": "ecdec39b284e3f01ddd11f014bd15697a693ce3283735f5ca95afbdd338840bb"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "NTUE MoNTUE partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "848389172b21de03e01f53a115648fa7eb923fc46a82aba71137a4c5750e6047",
+    "scene_reopened": true,
+    "scene_sha256": "0cc3afe4f1a7462e0c23d1dde9f9f32803f52ab8e1a500546b398676860b7244"
+  }
+}

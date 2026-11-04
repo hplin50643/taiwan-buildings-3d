@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed upper two landing fronts warmgray",
+      "hex": "#C0BDB1",
+      "faces": 4
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixedbrickwalls entryframes glazing roofplanes neutral",
+      "hex": "#B8BAB5",
+      "faces": 4738
+    }
+  ],
+  "domains": {
+    "top_two_complete_landing_fronts": 4,
+    "per_rectangle": [
+      2,
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 1117
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "4742 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "All vertices on complete frontplane y-42.5;two fullconnected landing components.",
+    "Two whole landingfront components times2 originaltriangles=4.",
+    "No normal or centroid shortcuts;horizontal roofs side returns neutral.",
+    "Mixedbasewalls longobscuredelevations windows bands neutral.",
+    "Captureunknown;EXIF306 modificationdates notcapture.",
+    "Two labels not testedfourfilament."
+  ]
+}

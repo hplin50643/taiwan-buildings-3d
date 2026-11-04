@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checks": {
+    "original_STL_bytes_unchanged": true,
+    "3794_triangles_preserved": true,
+    "triangle_coordinates_unchanged": true,
+    "watertight": true,
+    "single_positive_volume": true,
+    "finite_and_nondegenerate": true,
+    "two_materials_actually_assigned": true,
+    "3MF_mm": true,
+    "3MF_vertices_same": true,
+    "3MF_faces_same": true,
+    "3MF_material_assignment_exact": true,
+    "3MF_object_identity": true,
+    "isolated_original_STL_hash": true,
+    "isolated_color_mesh_hash": true,
+    "isolated_palette_assignment_hash": true,
+    "inputs_unchanged_during_QA": true
+  },
+  "color_mesh_sha256": "1970e6a3658e53326710da910763372458e12363574c2dde8f04bb479526e595",
+  "original_STL_sha256": "8e721a102e0deb7477154f65a1f0588f1d3dd029a2990489c1bf9386476b45ca",
+  "bounds_mm": [
+    [
+      -48.0,
+      -79.0,
+      0.0
+    ],
+    [
+      48.0,
+      71.0,
+      58.599998474121094
+    ]
+  ],
+  "retained_rebuild": "Isolated rebuild retained privately; no automatic file deletion.",
+  "limitations": [
+    "Color model uses original unrefined geometry; no new facade accuracy claim.",
+    "Two base-material labels are not a tested four-filament slicer project.",
+    "STL format itself does not contain color."
+  ],
+  "metadata_v2": {
+    "expected_object_name": "NTUE Gym partial color",
+    "3MF_reopen_name_check": true,
+    "XML_except_name_byte_identical": true,
+    "original_isolated_rebuild_evidence_carried_forward_for_unchanged_inputs": true
+  }
+}

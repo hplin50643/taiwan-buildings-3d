@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立臺北教育大學/臺北校區/buildings/ntue-mingde",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "NTUE Mingde partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "149c0cd0f4b62aed62c9050939ef3d1f4ba87c0d30a8b3a9ffd23f34d431190b",
+  "new_3mf_sha256": "a018cfa7802c15390e5d4179d87bafb919df45b7bffdff446e5a5d370c8c5933",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "b3eb043155b101560eb6a6ec61f5147020474e2d0896cd8f81cea15e68872dcb",
+    "validate_color.py": "3ab6eeddd37d4b15b28aa7d05525c271de6d6cf1d23e546471ad66227f2f39b3",
+    "render_color.py": "27acb341f4a3558fec4fe9fd6321759db1130fbf4ec16c171516e8d28e1897e8",
+    "verify_color_scene.py": "12a4f538f5c119a08a86a836fcd1f56bfc9e5109e7dd7a4145b459d504144adb",
+    "scene.blend": "5a4e89089ffe08ebf3aca34dd9dcab5c53ae9139774efd9375122c3058362e39",
+    "appearance.3mf": "a018cfa7802c15390e5d4179d87bafb919df45b7bffdff446e5a5d370c8c5933",
+    "README.md": "d9c59d73ef216922fb2868e0ead909e5eff47a4682efa995f515ba186016a144",
+    "README.zh-TW.md": "d9c59d73ef216922fb2868e0ead909e5eff47a4682efa995f515ba186016a144"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "NTUE Mingde partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "c5a6e8ce4129978c057eaaf9d19e6492a2175615bdd4766c699368c19386e12a",
+    "scene_reopened": true,
+    "scene_sha256": "5a4e89089ffe08ebf3aca34dd9dcab5c53ae9139774efd9375122c3058362e39"
+  }
+}

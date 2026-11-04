@@ -1,0 +1,37 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed complete upper left pier front pale cream",
+      "hex": "#D1D0C5",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 3682
+    }
+  ],
+  "domain_face_indices": {
+    "upper_left_pier_front": [
+      820,
+      823
+    ]
+  },
+  "coplanar_components": 818,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3684 original triangles unchanged",
+  "limits": [
+    "Both lower front column segments: gray stone foot/base boundary is not subdivided in the original full-height lower front component.",
+    "Right upper column front: red plaque/adjacent lift overlap and occlusion make whole surface uncertain; do not mirror left color.",
+    "Curved upper cornice fronts include dark gray bands and pale panel, without equivalent original subdivision; no whole cream band.",
+    "Semicircular balcony rings mix brick field and gray/white edges on original continuous facets.",
+    "Opaque lift proxy mixes glazing and structural metal, not uniformly blue or green.",
+    "Wall mass, side bays, roof, slab fascia/underside, glass backs, ground and hidden rear remain neutral.",
+    "No new cuts, topology, geometry, textures or reflected colors.",
+    "PDF2023 date is not capture; no2026 current-state assertion.",
+    "Only exterior images; page53-image1 plan not used for color. Sources private only."
+  ]
+}
