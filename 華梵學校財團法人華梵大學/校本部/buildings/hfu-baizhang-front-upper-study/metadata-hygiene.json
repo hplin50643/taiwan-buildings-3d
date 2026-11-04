@@ -1,0 +1,65 @@
+{
+  "method": "Embedded SDNA declared offsets; entire fixed buffers zeroed after relative value, every byte outside declared fields unchanged. PNG textual chunks removed, IDAT identical.",
+  "fields": [
+    {
+      "field": "FileSelectParams.dir",
+      "offset": 171816,
+      "size": 1090,
+      "value": "//",
+      "entire_tail_zero": true
+    },
+    {
+      "field": "Scene.r.pic",
+      "offset": 232148,
+      "size": 1024,
+      "value": "//previews/front.png",
+      "entire_tail_zero": true
+    }
+  ],
+  "scene_sha256": "91c0d6990beeb4e22887bc9d5abca114f4a83c0c1c9bc8f6930392f6c9af3a07",
+  "outside_declared_fields_exact": true,
+  "png": [
+    {
+      "path": "previews/artificial-back.png",
+      "removed_text_chunks": [
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "f9608538181cefb8c396c36c88e0d73cdbc6d8041cd1354a002f607e4c565e9e"
+    },
+    {
+      "path": "previews/oblique.png",
+      "removed_text_chunks": [
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "d73e2b25c37dc43bbf66e0543c4739c8e1e9ca367a718d59866097792f91fd65"
+    },
+    {
+      "path": "previews/front.png",
+      "removed_text_chunks": [
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt",
+        "tEXt"
+      ],
+      "IDAT_exact": true,
+      "sha256": "e16ab2e1c91ef43b992b05f9718c54753ed06a65618f9c1b84459aac40c4edc9"
+    }
+  ]
+}

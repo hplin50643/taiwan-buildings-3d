@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "method": "Executed build_model.py in isolated directory and compared STL SHA256. Independently decoded 3MF XML and binary STL ordered coordinates after float32.",
+  "stl_sha256": "f2429e90db1ec05acffda3a422d2a62b41179b4d1f0aa293b21ac356777aa1d5",
+  "build_script_sha256": "8e2a964c165d2bc46d0ccaf3fabd538ad4b073587f151456d675b8d173ba20f6",
+  "triangles": 392,
+  "three_mf_unit": "millimeter",
+  "three_mf_mesh_matches_stl_float32": true,
+  "original_v2_trial_geometry_unchanged": true,
+  "limits": "No scene binary determinism, no physical print test, no full geometry self-intersection claim.",
+  "sanitizer_script_sha256": "2fb6826d83db1cc24cd6e065659444bfdefff9b883bcff48c57ce20244fe9dab",
+  "isolated_rebuild_includes_sanitizer": true,
+  "all_preview_rgba_equal_rebuild": true
+}

@@ -1,6 +1,6 @@
 # 華梵學校財團法人華梵大學
 
-現行收錄 **2 套模型包**；套件數不等於完整建築棟數，亦非全校／校區完成。未實體試印，來源年代、估計尺寸與未知範圍請閱各模型頁。
+現行收錄 **3 套模型包**；套件數不等於完整建築棟數，亦非全校／校區完成。未實體試印，來源年代、估計尺寸與未知範圍請閱各模型頁。
 
 ### 既有批次來源與列印限制（原批數量非現行總數）
 
@@ -10,7 +10,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/hfu-library-2009/preview.png" alt="東南面" width="220">](校本部/buildings/hfu-library-2009/README.md)<br>**[圖資大樓東南主要面](校本部/buildings/hfu-library-2009/README.md)**<br>[局部材色3MF](校本部/buildings/hfu-library-2009/appearance.3mf) · [範圍與限制](校本部/buildings/hfu-library-2009/README.md) | [<img src="校本部/buildings/hfu-yunshan-pavilion/previews/front.png" alt="華梵大學 雲山亭｜主要亭體彩色模型：實際模型預覽" width="220">](校本部/buildings/hfu-yunshan-pavilion/README.md)<br>**[華梵大學 雲山亭｜主要亭體彩色模型](校本部/buildings/hfu-yunshan-pavilion/README.md)** |  |
+| [<img src="校本部/buildings/hfu-library-2009/preview.png" alt="東南面" width="220">](校本部/buildings/hfu-library-2009/README.md)<br>**[圖資大樓東南主要面](校本部/buildings/hfu-library-2009/README.md)**<br>[局部材色3MF](校本部/buildings/hfu-library-2009/appearance.3mf) · [範圍與限制](校本部/buildings/hfu-library-2009/README.md) | [<img src="校本部/buildings/hfu-yunshan-pavilion/previews/front.png" alt="華梵大學 雲山亭｜主要亭體彩色模型：實際模型預覽" width="220">](校本部/buildings/hfu-yunshan-pavilion/README.md)<br>**[華梵大學 雲山亭｜主要亭體彩色模型](校本部/buildings/hfu-yunshan-pavilion/README.md)** | [<img src="校本部/buildings/hfu-baizhang-front-upper-study/previews/front.png" alt="百丈寮舊導覽正面上部投影淺浮雕研究截段，非完整建築" width="220">](校本部/buildings/hfu-baizhang-front-upper-study/README.md)<br>**[百丈寮｜舊導覽正面上部研究截段](校本部/buildings/hfu-baizhang-front-upper-study/README.md)**<br>[STL](校本部/buildings/hfu-baizhang-front-upper-study/model.stl) · [示意色3MF](校本部/buildings/hfu-baizhang-front-upper-study/model.3mf) · [來源與限制](校本部/buildings/hfu-baizhang-front-upper-study/sources.md)<br>單照投影近似／人工淺厚與下截／非實景材色認證／未試印 |
 
 [模型完整說明](校本部/buildings/hfu-library-2009/README.md) · [STL](校本部/buildings/hfu-library-2009/model.stl) · [Blend](校本部/buildings/hfu-library-2009/scene.blend) · [屋頂](校本部/buildings/hfu-library-2009/previews/top.png) · [來源](校本部/buildings/hfu-library-2009/sources.json) · [QA](校本部/buildings/hfu-library-2009/qa-summary.json)
 
