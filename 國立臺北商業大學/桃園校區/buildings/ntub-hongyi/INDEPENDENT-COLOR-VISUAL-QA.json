@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed two official exterior photographs,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole original y-64 plane4 in two complete2triangle capfrontrectangles;4palewarmgray/21912neutral.",
+    "All4774coplanar domains uniform,nocropping orpartialtriangles.",
+    "Both caps directlyseen incourtyardphoto,notmirroredinference;tops/undersides/returns neutral.",
+    "Letteredshaft/glazing/mixedwalls/balconyproxies/canopies/outerhips/rearservicecaps/PVunknown neutral.",
+    "Sevenwholeviewsfit;closeups target actualleftandright capfrontedges.",
+    "Original21916triangles/STL/build unchanged,23immutablefiles,nooriginalOBJ,count_delta0.",
+    "Explicit3MF/scene/scripts NTUB Hongyi partial color;TaoyuanCampus sameonebuilding,photo-derivedmassing notfullsurvey. TwoEXIFcapturemetadata withouttimezone/clockvalidation,modificationnotcapture,no2026claim orfabricatedprePVdating."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "515f0c825305b70e63ff2f10987df848219155e4d7e3c01f419063fde54093ae",
+    "README.zh-TW.md": "515f0c825305b70e63ff2f10987df848219155e4d7e3c01f419063fde54093ae",
+    "colorize_model.py": "7c106e29d7661670c4cae53f59f9114bab9532e71a8a2141e313f522b1fed971",
+    "render_color.py": "01e063e1c5b45506c6d8b2eb0271d851eb6ee1a6e145f5ae1702c95642c4c4db",
+    "color-mesh.npz": "b3520aa0f3c2b21f56a4ed59018757b04a6031c77ee64ef4e397af7355ed5b7c",
+    "palette.json": "2bb996eff208b95515388f7f8e5fe3f2541b6eb996b92a7d16e67ad4298774ac",
+    "appearance-materials.json": "59ac2fc4528e62da132de4ad694e73193a0617253e8d3a40cdff67eceb6bb97b",
+    "COLOR-SOURCE-REGISTER.json": "562f4e47ea300966340a8327b8d0db98a461f29334caf6b9da1c5fef3a385a25",
+    "model.stl": "e5c014bb143e5c8682be55e3bfb4022121c06a6594ad28cfcfeb12f3cddd7153",
+    "build_model.py": "4e72fe4a1b53b8e8ccff37e8ec52351cc35db74078594518cdf8ab1d7cc773b3",
+    "preview.png": "c576cd7766d3665ff4042dd8141284b02d120c38991bbfe562db1f45318644fc",
+    "rear.png": "e724eb0ee5b3efb8a7bd6fdb7a7dffa165bccdd7fed04aec7fc71bb5861154e1",
+    "front.png": "a89d61f064fb6f37e2d6f847d362bd644a5f5382b9f1cbca43cd621483715826",
+    "back.png": "f21ac841bc3e0f37f61ee7976096df6812afb7138a113f2b717391c0ab7d893d",
+    "west.png": "f20c080bb7e352ce20f9aea97c20c3655768a9c8f75c56759be982e71f83c3f2",
+    "east.png": "87227cad1090937447cc5f4f6f0552bb76bfd4503f670d3958dd9c1f5299b099",
+    "top.png": "c0d64a143aee1a2053a97b07f0210ed5fca8021e64c81159aaf5ae5aa1b69e00",
+    "entry-detail.png": "6d71fe791fda13e57743ff3d09d5dfba8447d2d650f8dab48c74189ff171a1a8",
+    "facade-detail.png": "c3f4332724e66c98491a8715f9ef4346452b796cdbcba740229859a9afb2ddca",
+    "roof-detail.png": "20fb6c04e25581671c0f810a03e027aa360e5c76ff72bb3e6907dd1bce70a09d"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "a03951fc9c8169971b2f778b45fd4f408a2c341ec13032cf28aeda82d2718d04",
+    "SCENE-QA.json": "d473aad6f93da4f8104db22c5709b9322551aef33c83bd006b8a5887b4f08cd1",
+    "DELIVERY-QA.json": "2712c7fa9f104516870937fe40db76fd4741310983e0b794ffc3ca1cbb819997"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "8593d366dfa4be22dc43fce2cd78d259b229788f2ed7c928b0a2e5d35e02f591",
+    "ORIGINAL-RETENTION-QA.json": "ea136c6f4d16f22d12e1bbf6dbfad65c66ad5ccca579f9c08a8abdd5b727b2a3",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0634.json": "19497249f33507094d6e31caf9381bee2fb891d035e35cfead37bf244458f8f9",
+    "INDEPENDENT-IDENTITY-0634.json": "3588a8fe61758ec858d25817332fcba956f6ae2b88dd14ddcd7c63ada031fb29",
+    "INDEPENDENT-PACKAGE-IDENTITY-0638.json": "b77334640e2f54108f1d14d7a1e9c75d0bdab83ec0202bd11f134c8fe96f7650"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T06:37:57Z",
+  "parent_review": "Parent personally viewed both official exterior photos, originalcode, preview and finaltenmontage. Whole original y-64 plane4 exactsharededge two complete2tri towercap fronts from original twinadd; both directly visible courtyardphoto, no mirroredsource inference. Exact rawmultiset equals NPZ4 lightwarmgray. All21912otherfaces neutral including goldletter walls, blueglass/backing, mixedbrick pale walls, PV and roofslopes. EXIF2015/2017 metadata withouttimezone not2026 condition. Explicit NTUB Hongyi identity independently matchesactual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details show two fronttowercaps. Original21916triangles23files/noOBJ unchanged, exactTaoyuan campus and samegroup/count0 retained; partial only."
+}

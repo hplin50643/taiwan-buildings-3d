@@ -1,40 +1,30 @@
-# 國立臺灣藝術大學｜臺藝表演廳
+# 臺藝表演藝術廳｜三條彎槽正面局部淺藍灰
 
-## 模型預覽
+**局部補色未完成：只三條彎折燈槽前面12原三角淺藍灰實體色，不發光；混橫帶牆、圓筒、屋頂與其餘面尚未分色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 ntua-performing-arts-hall／count_delta=0，國立臺灣藝術大學板橋校區。英文身份 NTUA Performing Arts Hall partial color。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面（直接STL）<br>![正面](previews/front.png) | 背面（直接STL）<br>![背面](previews/rear.png) |  |
+**一座含高舞台塔與低觀眾廳的既有劇場量體，不拆三場館，不含相鄰教學大樓；原照片估測毫米近似非測繪。**
 
-板橋校區。這是根據公開外觀照片自行製作的3D列印縮模，不是官方測量或施工模型；實際尺寸不詳，模型採獨立展示比例。含底座最長邊150 mm；檔案單位為毫米。
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![前槽位置](entry-detail.png) | ![三完整彎槽](facade-detail.png) |
+| ![前槽與中性側域](roof-detail.png) | | |
 
+## 材色範圍
 
-## 檔案
-- [STL](model.stl)
-- [可編輯Blender場景](scene.blend)：列印網格可編輯，與交付STL三角形幾何一致；參數來源另見Python
-- [參數建模](build_model.py)・[依賴](requirements.txt)・[渲染](render_preview.py)
-- [原始網格驗證](validation.json)・[0.2mm輪廓檢查](contour-validity-check.json)・[0.8mm細節篩查](thin-feature-check.json)
-- [來源紀錄](sources.json)・[SHA-256](SHA256SUMS.txt)
+全原y−60.2無限plane三頂點0.0001mm枚舉，恰12面分為三個完整共享邊4面原buffer彎折輪廓。保留buffer超出設計路徑端點的全部面，包括z39.761375..60.289429，不以路徑40..60裁端、不normal漏細面、無centroid切色。12名義淺藍灰實體色，13364中性，原13376三角不變。全原共面連通域一致。
 
-## 外觀與限制
-後側高舞台塔、較低主廳體、圓筒梯間、圓窗、水平外牆帶、彎折垂直燈條和入口雨庇。
+白日實景支持前三條槽件的低飽和淺藍灰；夜景僅補位置，不把鮮藍光當日間材質，不設自發光。原三條統一彎折/寬度是簡化代理，不改形、不宣精準製造。槽側/端/背中性，右側四條缺充分白日完整對位，不套前槽或夜光色。大牆與圓樓梯筒混淺皮/深橫帶不整白，後舞台塔/屋皮/小飾/設備未知；實填外階底代理、玻璃窗簾背、粗扶手、雨庇/支撐皆中性。中性不是實景灰；資料界線不是真實材界。
 
-以官方夜間空拍確認主要量體與屋頂輪廓，2012年訪客實照補圓窗和日間立面，非所有細節均有2026近照。未見的後側服務開口、進深與機房屋面從簡；不含連鄰的圖文／視傳系館及其他行政單位，不把表演藝術中心三場館當三棟。燈條僅為實心淺浮雕，不發光。外樓梯以靠牆的實心階梯體保留輪廓，省略樓梯下方中空；日景證實燈槽為外牆實體構件。
+## 日期與原始限制
 
-## 列印與數位QA
-建議0.4mm噴嘴、0.2mm層高起始試切片，底座平放；請先檢查切片預覽。雨庇、圓筒突出部與入口階梯視切片方向可能需要局部支撐；燈條和細水平線接近噴嘴解析極限。
+兩來源圖片無DateTimeOriginal。原建模來源描述白日參考2012、文章2014只是來源脈絡，不是獨立驗證拍攝日期，不稱2026現況。保原外觀尺度估計、加厚細件、實填外階與未知背面不裝飾限制；補色不追認完整測繪。照片僅私人研究，不公開貼圖，不推定商用權利。
 
-原始STL檢查包含水密、每邊兩面、頂點link單一循環、原始法向、正體積、單一連通表面、無獨立內腔殼、150mm、獨立重建SHA，以及保存的Blender幾何相符。0.2mm層截面檢查degree2閉合及個別／組合Polygon valid。0.8mm檢查是每1mm高度的形態學開運算篩查，銳角也可能被標示；不是全面壁厚測量。
+## 檔案與 QA
 
-這些僅為數位QA，不是實體試印、真切片驗證或對所有自交的窮盡證明。底座與主體為單件；部分細節被加厚或省略以便列印。
+原STL/build與13376三角座標拓撲/字節保留；immutable17件無OBJ，原程式可生成OBJ但隔離產物僅私存，不冒稱原repo有OBJ。原README另存ORIGINAL-MONOCHROME-README.md，單色圖/QA歷史保留。appearance.3mf兩展示材與scene.blend真面材同原幾何；export/validate/render/verify及真3MF/scene精確身份 NTUA Performing Arts Hall partial color。精確依賴隔離build+color、閉合正體積/3MF座標面材/Blender重開/10張1200×900檢核；保留重建不刪，未試印或驗多料切片，STL本身無色。
 
-## 重建
-Python 3.12 安裝requirements.txt後執行build_model.py，再以Blender 4.3.2以上執行render_preview.py。依序執行validate_model.py、check_contour_validity.py、check_thin_features.py。validate_model.py必須exit 0，且validation.json每個checks欄位為true。
+## English limitations
 
-## 來源
-- https://artcenter.ntua.edu.tw/about
-- https://artcenter.ntua.edu.tw/
-- https://hpc-micasa.blogspot.com/2014/08/blog-post.html
-- https://artcenter.ntua.edu.tw/images/about/intro.jpg
-
-來源照片與PDF權利屬原權利人，未附在本公開模型資料夾；僅提供原始網址。STL、參數程式與預覽皆為本案自行製作。
+NTUA Performing Arts Hall partial color. Single theater mass withstagetower/lowerauditorium,notthreevenues orneighboracademicblocks. Whole originaly=-60.2 plane12faces forms threecomplete4triangle bufferedprofiles;retainbufferendextentsz39.761375..60.289429,nodesignendpoint clipping. Nominalunlitpalebluegray12/neutral13364,original13376triangles/STL/buildunchanged,noimmutableOBJ,count_delta0. Nightblue onlylocation evidence,noemissionorcolorcalibration. Sides/ends/back,sidefourchannels,mixedhorizontalbandfacades/cylinder,roof/towerrear/glass/solidstairproxyneutral. BothEXIFcaptureunknown;2012/2014sourcecontextnotverifiedcapture/no2026claim. No publicphotos/textures,not testprinted.

@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [公能樓](buildings/ntub-gongneng/)<br>[有限原面彩色外觀](buildings/ntub-gongneng/appearance/README.md)<br>![公能樓](buildings/ntub-gongneng/appearance/previews/front.png) | [北商學舍](buildings/ntub-dormitory/)<br>![北商學舍](buildings/ntub-dormitory/previews/front.png) | [![國立臺北商業大學｜桃園校區弘毅樓：實際模型預覽](buildings/ntub-hongyi/previews/front.png)](buildings/ntub-hongyi/README.md)<br>**[國立臺北商業大學｜桃園校區弘毅樓](buildings/ntub-hongyi/README.md)** |
+| [公能樓](buildings/ntub-gongneng/)<br>[有限原面彩色外觀](buildings/ntub-gongneng/appearance/README.md)<br>![公能樓](buildings/ntub-gongneng/appearance/previews/front.png) | [北商學舍](buildings/ntub-dormitory/)<br>![北商學舍](buildings/ntub-dormitory/previews/front.png) | [![國立臺北商業大學｜桃園校區弘毅樓：實際模型預覽](buildings/ntub-hongyi/preview.png)](buildings/ntub-hongyi/README.md)<br>**[國立臺北商業大學｜桃園校區弘毅樓](buildings/ntub-hongyi/README.md)**<br>[局部材色3MF](buildings/ntub-hongyi/appearance.3mf) · [範圍與限制](buildings/ntub-hongyi/README.md) |
 
 弘毅樓已收錄，範圍與限制見下列說明。公能樓光電以官方屋頂實拍支持中央板區，4×5是列印粗化非真實片數；學舍U庭與不同高雙層凹口保留，坡角估計，未拍外立面留白。
 

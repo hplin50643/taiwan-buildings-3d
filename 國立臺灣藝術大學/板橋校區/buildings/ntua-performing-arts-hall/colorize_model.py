@@ -1,0 +1,14 @@
+"""Whole original front bent-channel plane y-60.2, three complete buffered profiles only."""
+from pathlib import Path
+import numpy as np,trimesh,json,hashlib
+R=Path(__file__).resolve().parent;H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();expected='cdd9687d98d597c4b597cb1b728edb4c259917768a6ffb2bdb084fca2259aacd';assert H(R/'model.stl')==expected
+m=trimesh.load(R/'model.stl',force='mesh',process=True);assert len(m.faces)==13376
+t=m.triangles;n=m.face_normals;e=.0001;a=np.full(len(t),1,np.int32);D={}
+ids=np.flatnonzero(np.abs(t[:,:,1]+60.2).max(1)<e)
+assert len(ids)==12
+edges=m.face_adjacency;edges=edges[np.isin(edges[:,0],ids)&np.isin(edges[:,1],ids)]
+pcs=trimesh.graph.connected_components(edges,nodes=ids,min_len=1);assert sorted(map(len,pcs))==[4,4,4]
+D['whole_front_bent_channels']=ids.tolist();a[ids]=0
+ad=m.face_adjacency;cop=(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999;cs=trimesh.graph.connected_components(ad[cop],nodes=np.arange(len(t)),min_len=1);assert all(len(set(a[c]))==1 for c in cs);assert np.bincount(a).tolist()==[12,13364]
+pal=[('NTUA Performing Arts Hall observed channels pale blue gray','#AABBC0'),('UNVERIFIED main walls entrance windows roofs neutral','#B8BAB5')]
+np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((a==i).sum())}for i,(name,col)in enumerate(pal)],'domain_face_indices':D,'coplanar_components':len(cs),'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'13376 original triangles unchanged','limits':['Original channels simplify the differing real bends and widths; no reshaping or exact fabrication claim. Front color only, sides/ends/back neutral.', 'Four right-side strips lack sufficient complete daylight correspondence; no color transfer from front or nighttime blue light.', 'Facade and round stair cylinder mix pale cladding with dark horizontal bands. No blanket white/gray across mixed original domains.', 'Rear stage-tower faces, roof surfaces, small accents and lighting fixtures are unknown in reliable daylight and remain neutral.', 'Solid stair underside proxy, glass/curtain backs, handrail approximation, canopy, support and all unlisted triangles remain neutral.', 'Preserve13376 original faces; no geometry changes, boundary cuts, new OBJ or public original photos.', 'One theater mass with stage tower and lower auditorium; adjacent teaching buildings excluded.']};(R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n');(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','original_STL_sha256':expected,'triangles':13376,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(q['palette'],'components',len(cs))

@@ -1,39 +1,29 @@
-# 景文科技大學商管二館A／行政B／商管一館C連體群
+# 景文ABC連體群｜入口雨庇前緣局部暖棕
 
-## 模型預覽
+**屋面、柱牆、山牆與玻璃等尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅雨庇弧形及兩直前緣64面名義淺暖棕，非全館完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（證據不足處簡化）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![入口雨庇](entry-detail.png)|![左接縫](facade-detail.png)|
+|![右接縫](roof-detail.png)|||
 
-公開外觀照片推估的建築微縮研究，非測繪級BIM，也不代表2026即時外觀。
+## 材色範圍
+同 just-abc-complex 原項目，same-item、count_delta=0。景文科技大學校本部ABC連體群維持一群，不拆為三棟。2798原三角及STL/build_model.py字節不變，18原件無OBJ；原code可輸出重建OBJ不代表有原件。
+- 原80gon中心(0,-25)、半徑17、z16..18.4的45..74號完整有限垂直facet，共60面，加whole y=-32.5兩直前矩形4面。全3頂點plane/tangent/z界核，末端Boolean裁片完整保留，無人工剪面或normal漏片。
+- 其餘2734面中性：綠屋面與淺邊無原界、雨庇底側背、掛布圓柱、混粉棕山牆、框實板反光窗、A/C牆、屋頂水箱與階底。不能把陰影當黑漆、不能全綠屋或全白山牆。
+- 色界是證據範圍非真材縫，名義暖棕非校準色票；保原照片推估形體，不追認精度或新建磁磚紋理。
 
-## 外觀依據
-- 中央行政B的高立面、三角山牆與弧面入口雨庇
-- 兩側商管長翼的院落側陽台、後方連廊、兩個露天院落
-- 一個連體研究模型保留三館碼，避免A/C共用插畫重複造模
+## 來源與日期
+四張官方外觀實照均親看，拍攝日期未知，不稱2026現況。原照私人保存、不公開、不作紋理、不建人物，未確認CC或再散布授權，不保證商用。
 
-行政01、03、04及商管01均已直接檢視。中央B与兩側院落立面已有照片；A/C遠端立面未見，模型刻意素面，不把一張共用示意插畫複製兩棟。群棟三翼與連廊依實拍及校圖定性關係建模；實際深度、翼寬、外端細節、院落尺度及館界精確位置仍估計。屋頂小房與兩水箱見行政03；玻璃罩、空調和不可辨細物省略。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+150mm底座為原示意尺寸非測量比例。物件明名 JUST ABC Complex partial color，獨立核真slug/館名。STL無色，3MF/Blender逐面分材，不是兩色或四色耗材切片驗證，未實際列印。
 
-## 比例及限制
-- 含底板尺寸：150.00 × 109.00 × 77.40 mm。每件独立縮放，最長150 mm，並非統一比例校園拼圖。
-- 未取得實測尺寸；整體深度、背側、被遮擋細節為估計或明示簡化，未見的背面不任意複製正面窗格。
-- 門窗數量、曲率和間距是視覺近似。省略文字、旗幟、空調、植栽和細欄杆；細柱及窗框為列印加厚。
-- 官方273頁所附PNG是示意插畫，不能當照片。本模型另有 sources.json 所列實拍，來源照片不隨包公開。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes/全三角multiset、共面均一、閉合正體積、3MF面材、scene重開、十圖1200×900與hash。原README/previews/validation保留歷史，不冒新QA，不刪檔。
 
-## 檔案及重建
-安裝 requirements.txt，執行 Python build_model.py 產生 model.stl。以 Blender -b -t 2 -P render_preview.py 由實際STL生成 scene.blend 與預覽；scene.blend 保留一個可編輯完整網格。再執行 validate_model.py、check_layers.py、check_thin_features.py。Python生成程式保留所有形體參數。
-
-## 檢查
-- 原STL法向、封閉邊與頂點流形、正體積、一個連通外表面、無分離內腔殼、重建SHA及Blend/STL幾何一致：通過。
-- 0.2 mm間距、非共面微偏移截面，共387層全部閉合。
-- 0.8 mm XY形態開運算篩檢（1 mm間距抽樣），0層超過1%面積損失，最高0.42%。此值包含尖角、凸緣，非完整壁厚或切片器噴嘴路徑分析。
-- 屋簷、雨庇、柱廊及開口頂緣可能需要支撐；依材料與方向在切片器中複查。未完成實體試印、完整切片或支撐可移除性驗證。
-
-## 實際STL俯視
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![俯視，藍色僅標示外露底板](previews/top.png) |  |  |
-
-藍色是底板預覽著色；兩庭院實際留空，沒有新增/刪除幾何。兩側院落各約19.5mm寬，後連廊保留。庭院並非內藏空腔。
+## English scope
+Partial only:64 original front canopy fascia triangles pale muted warm tan,2734 neutral. Thirty complete finite80gon chord facets60 plus two straight rectangles4; original Boolean end trims retained. Green top with missing pale perimeter boundary, underside, banner columns, mixed pediment, glass/window proxies, A/C walls and rear remain neutral. Original2798 triangles and18 immutable files unchanged;no originalOBJ. ABC connected complex remains one group/sameitem/count0. Capture dates unverified,not2026 survey. No geometrychanges or filament test.

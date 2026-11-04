@@ -1,37 +1,29 @@
-# 圖書資訊大樓入口立面段｜明志科技大學
+# 明志圖資立面段｜三方窗前環局部中灰
 
-## 模型預覽
+**玻璃、混牆、字塔與弧欄等尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅上三方窗完整前環24面名義中灰，非全館完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面及背面並排](previews/front-rear.png) |  |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![三前環](entry-detail.png)|![左窗環](facade-detail.png)|
+|![右窗環與弧欄](roof-detail.png)|||
 
-泰山校本部／明確只重建入口立面段，非整館。每件各自縮尺，最長尺寸含底板150mm，非全校統一比例。尺寸：150.00 × 68.00 × 147.80 mm。
+## 材色範圍
+同 mcut-library-facade-segment 原項目，same-item、count_delta=0。明志科技大學泰山校本部圖書資訊大樓前立面片段，原68mm厚度與平背為人工截段，不是全館深度或真實背立面。原4662三角及STL/build_model.py字節不變，19原件無OBJ，原code能輸出重建OBJ不等於有原件。
+- whole y−10.5平面40三角分11完整共邊域；只選上三窗前環8×3=24面，原11×9外框/8×6.2窗孔及Boolean三角完整保留。其餘8個陽台端共16面全中性。全3頂點有限界與完整共面域核對，不人工剪三角。
+- 其餘4638面中性：玻璃/窗簾/內淺框、環內壁側頂底、混磚與黃橫牆、金字服務塔、弧欄實心代理、雨棚吊桿、入口與地面、屋與背截面。
+- 中灰是名義石材族而非照片陰影黑，不填玻璃孔。保原近似幾何與窗列，不新建字樣或真透空欄，補色不追認精度。材界是證據範圍非真實材縫。
 
+## 來源與日期
+親看兩日照外觀。source0拍攝日未知；source1 EXIF2011-07-24原始、2011-07-29修改，均無驗證時區/時鐘，不稱2026現況。名義色族非校準色票。原照私人保存、不公開、不作紋理、不建人物，未確認再散布或CC授權，不保證商用。
 
-## 外觀與證據
-右側高塔、左側階梯式服務塔与長狹縫、五道寬窗帶、頂部獨立方窗、右側四個弧形陽台、深入口和帶斜拉桿雨遮。細欄杆以厚弧形矮牆概括，館名字體未複製。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150mm底座示意尺寸不是測量比例。實際物件名 MCUT Library Facade Segment partial color，獨立核對真slug/館名。STL無色；3MF與Blender逐面分材，兩材標籤不是兩色或四色耗材切片驗證，未實際列印。
 
-兩張校方前側實照確立入口及部分右側；完整後側與側翼進深未確定，因此68mm深為列印截段，不是原館進深。背面是平整截斷面，不能當成背立面。頂部塔高、窗距、弧形陽台弧度與雨遮角度屬視覺近似。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes/全三角multiset、共面均一、閉合正體積、3MF面材、scene重開、十圖1200×900與hash。原README/previews/validation保留歷史，不冒充新QA，不刪檔。
 
-[完整公開來源與限制](sources.json)。照片已實際目視；照片拍攝日期未確認，網頁日期不當作拍攝日期。這是公開照片外觀研究，沒有測量資料，不保證是2026年當下外觀。第三方及校方照片只用於私有外觀審查，不包含於公開資產；未擷取任何他人3D網格。
-
-## 檔案
-- [STL](model.stl)／[可編輯Blender網格](scene.blend)／[Python重建程式](build_model.py)
-- [原始STL、重建SHA與Blend幾何驗證](validation.json)
-- [每0.2mm輪廓閉合與Polygon有效性](contour-validity-check.json)
-- [0.8mm薄特徵數位篩查](thin-feature-check.json)
-
-## 列印與數位QA限制
-原始STL檢查：水密、每邊兩面、vertex-link單循環、單一連接表面殼、無分離內腔殼、正體積、原法向一致、150mm上限、獨立重建SHA相同、savedBlend三角幾何一致。輪廓檢查在0.071mm起點逐0.2mm取樣，所有點degree 2且閉合，逐輪廓及組合Polygon皆有效；未用repair或buffer修補。薄特徵篩查使用canonical shared-edge方法，在1mm取樣斷面作0.8mm形態開運算，非全面壁厚分析。
-
-雨遮、斜拉桿、弧形陽台底部需局部支撐；雨遮厚2.1mm、斜桿厚1.6mm、窗格約1.0mm、弧形矮牆約1.3mm，仍需實際切片確認。
-
-以上只是數位幾何QA，並非真正切片器驗證，亦未實體試印。底板朝下，0.4mm噴嘴及0.2mm層高只作切片起點；請逐層檢查支撐、橋接、細件、收縮及支撐可拆性，不保證免支撐。
-
-## 重建
-Python 3.12安裝[requirements.txt](requirements.txt)，執行build_model.py。用Blender 4.3.2或以上背景模式執行render_preview.py，將實際STL匯入、渲染預覽、儲存scene.blend。再依序執行validate_model.py、check_contour_validity.py、check_thin_features.py；三者退出碼須為0，validation.json所有checks須為true。
-
-STL SHA-256：4f7d9eabeeb9d4626bc679405bb4996604a119a516417b56370d0079b7358aae
-
-[校區圖鑑](../../README.md)／[學校](../../../README.md)
+## English scope
+Partial only:24 original triangles on three complete upper window front rings medium gray, not shadowblack;4638 neutral. Whole y=-10.5 plane40 triangles, three8triangle rings selected and eight unrelated2triangle balcony-end components neutral. Glass, inner frames/reveals, mixed brick-yellow walls, gold-lettered tower, railing proxies and backs remain neutral. Original4662 triangles and19 immutable files unchanged;no originalOBJ. Artificial68mm deep front section, not full library. Source0 captureunknown;source1 EXIF2011-07-24 unverified timezone/clock, not2026 survey. Sameitem/count0/no geometrychanges/no filament test.

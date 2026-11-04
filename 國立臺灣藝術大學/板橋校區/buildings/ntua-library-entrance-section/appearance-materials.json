@@ -1,0 +1,58 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "NTUA Library Entrance Section two support column front halves silver gray",
+      "hex": "#AEB3B5",
+      "faces": 52
+    },
+    {
+      "id": 1,
+      "name": "NTUA Library Entrance Section unverified walls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 17630
+    }
+  ],
+  "domains": {
+    "two_support_front_half_finite_facets": 52,
+    "per_rectangle": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      2,
+      2,
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 5012
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "17682 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "52 original triangles on24 finite24gon front facets of two entrance supports, nominal silver gray.",
+    "All3vertices chord plane tangent and z bounds, including4piece Boolean facets, without normal filtering.",
+    "Rear column halves, solid globe proxy, glass backings and opaque canopy remain neutral.",
+    "Original sphere is not the photographed open steel grid and must not be blanket silver.",
+    "EXIF2010-07-25 without verified timezone/clock; night image supports position only.",
+    "Entrance adjacent section only, not full library; no tested filament slicing."
+  ]
+}

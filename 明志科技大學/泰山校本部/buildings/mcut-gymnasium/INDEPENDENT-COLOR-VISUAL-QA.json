@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete model views and three intentional upper slab closeups.",
+    "Two complete upper slab fronts silver white; lower shades and y=-51.8 solid railing proxy neutral.",
+    "Curved roof, logo plaque, glass curtains, columns/tower and all other faces neutral, no false geometry claims."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 5992,
+  "material_face_counts": [
+    4,
+    5988
+  ],
+  "connected_coplanar_domains": 1370,
+  "original_obj_present": false,
+  "original_files_retained": 19,
+  "file_sha256": {
+    "README.md": "11f2655aec3c6a996a557a7a1e30a6f292428b4befd83b689136571dc0c97e01",
+    "README.zh-TW.md": "11f2655aec3c6a996a557a7a1e30a6f292428b4befd83b689136571dc0c97e01",
+    "model.stl": "a1811eb3ebc0fa47f8f2a0db1386fbb280d186fd9d8b1da614a2c40c6ef1b36e",
+    "build_model.py": "75152586ba388b39d3ee05788b0051e96a7c8ebf18a04ae55765ddf8df74d6e6",
+    "colorize_model.py": "46e428ecbd5442bc8810dd99d0610f3ce0db29e27e1b753b1ee19d683a731074",
+    "render_color.py": "d346c2156cf843bf4059a937e22a1efb1806f0607a0fb9b9622e3260c0f81d7d",
+    "verify_color_scene.py": "1964b8b3b7beca6885bf0670e670ad70780cfe2e4c38ede57a5fdc6317d192d1",
+    "validate_color.py": "4dc531de8167e64d1cd550f2f4a11e07cc271d01dd28231643021e73df2192b7",
+    "color-mesh.npz": "0f632579485b8883bd24679e9c4efb817f38a204764716913c1518f56f00db97",
+    "palette.json": "19acde01e6ca6387fac854ddddb3dd7a95e502db71d851c63eb9978568f351a6",
+    "appearance-materials.json": "74eaaec1545a3d326aa1ac11f5dd4a426f36b316fee5d499140bc3a563b7aa69",
+    "COLOR-SOURCE-REGISTER.json": "9becad3d96c088c870c80cfd15e312dfa2868123bd307ba7832933a19726c5e0",
+    "appearance.3mf": "28a45d79889b64279c18bcac2fa639b3116498f1e1aaeffd885a74aac5a719a0",
+    "scene.blend": "d9b19fb14a65a04f7b7a79cba8720d68739d8ddb1b0f551c715e0bf68440ff25",
+    "preview.png": "aecf6f55aabd2984687cb29c432cd7f06e28690f4ec0b3a290fdeef88186810c",
+    "rear.png": "586aa29e5ea871a8188c178013e6858d247acca4a9ce9066e418ffef2283cf26",
+    "front.png": "0bafdcde846ecc031801bf72967e5812edb3b429662ddc09164bf92bafca2027",
+    "back.png": "80859b188905a77097ff25ef05457f5c6853df20bbc624bd7300b09e91407334",
+    "west.png": "26d819427104bb61dd167c75b58b208225d93c64d83b319d2966c55c442a7618",
+    "east.png": "96985dc5c4e23b1391ece2e0fe800ad6b14f26dd1851613f0461206460fcdc83",
+    "top.png": "fe23a9a7e5a43c378e74274949abdda28f546accd63352a7cb225bb2b61f100c",
+    "entry-detail.png": "ac28eca7e8267bc9b91afdd3f12538a3136e2edb2ad24ca458cec0ee65bb089e",
+    "facade-detail.png": "a1513e9c73c1f139e835874e2d161ba808f60ce206eba3fb01b70a44bb74e9de",
+    "roof-detail.png": "80416b93360ba37fe2ec6dd534c14296f705d938e2a1c5f2659501eeaae87f7b",
+    "export_appearance.py": "7850e5cdfaa8cb52a1175455e85a2f726bc1a328d86703a1d7f63fc2b3362a5b"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "2aa0534b8058aed934d0bc09a54b8a104082e2a5ecae73abba66473957a5116c",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "fa778dd46503791d17e3cea5c5cd5853df66fbef94b462b606d3d1f3491d0174",
+    "SCENE-QA.json": "32ad4fa50b465e5b44b2d42391a8310110afb244c0cb43d4a3a66c521437ff7d",
+    "FRAMING-QA.json": "886d2d9f303e8d6b29a0755410459825faea957ef72ca0c8f70cdb2083281f3e",
+    "DELIVERY-QA.json": "52efaf925b70f9b17e63bd5c5cb231013b5f87ac040e90762cbca6973d497bd3"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "043973e6dfb4dc5d2e989b09bd475157156564c42daf3b4d750c4f6716ef269a",
+    "ORIGINAL-RETENTION-QA.json": "77bc4479cc131b381131fb4cd23ded26afec3dfdcf7ddcc08b9670ccc6fb6a20",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "61c81db48d66b86e95ad29859351375bb16632486806f88d68bc1a5bee19b31d",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "5ed90dc367491ecba83a4e17c2b35ea61c98ca16c3afe7de627d9fdbfcfa58b8",
+    "INDEPENDENT-DOMAIN-0649.json": "d0ac18aa42523f79ac882b26c697efd38270b28bcd170fe8109ed96fc3ddd020",
+    "INDEPENDENT-IDENTITY-0649.json": "61d0c3251a9244984e70168c1fd270184e808bee0c2c02dbb5af18ba65c08085",
+    "INDEPENDENT-PACKAGE-IDENTITY-0653.json": "5ed90dc367491ecba83a4e17c2b35ea61c98ca16c3afe7de627d9fdbfcfa58b8"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "150aa4fd15a81aec66f16b284b6afe8e0d949625738f4b0d1af0548711c4ed63"
+  },
+  "limitations": [
+    "4 original upper slabfront triangles;5988 neutral.",
+    "Whole y=-52 plane8 triangles in4 complete components, only upper2 selected.",
+    "Original5992 triangles and19 immutable files retained;no originalOBJ even though originalbuild exports one.",
+    "Photograph captureunknown;page2023 update notcapture or2026 condition; original gym main group only."
+  ],
+  "history": [
+    "Verifier scale property set before preview gate to actual original150mm-base.",
+    "Initial delivery-template wording and review filename corrected; initial versions retained privately."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T06:52:57Z",
+  "parent_review": "Parent personally viewed both actual exterior photos, originalcode, preview and all10 finalmontage0652. Whole original y-52 plane8 exactsharededge four complete2tri slabfront components; only original upperz71/85 components4 pale silverwhite, no triangleclip. Exact rawmultiset equals NPZ4. Adjacent railingproxy y-51.8 distinct and neutral, as are lower slabs, windows, logo, columns, curvedroof and other5988faces. No precise material or2026 claim. Actual explicit MCUT Gymnasium identity independently matches3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details separate slabfronts from neutralrail. Original5992triangles19files/noOBJ unchanged; exactTaishan campus and partial only. Initial wrongreviewfilename0645 corrected to actual0644 with history retained."
+}

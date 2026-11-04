@@ -1,0 +1,14 @@
+"""Whole original outer window frame fronts y-9.3, two complete components only."""
+from pathlib import Path
+import numpy as np,trimesh,json,hashlib
+R=Path(__file__).resolve().parent;H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();expected='4f46d9cf812ce60da69dae3c9727c2d7911ca0b263ba4c0f7291558543031349';assert H(R/'model.stl')==expected
+m=trimesh.load(R/'model.stl',force='mesh',process=True);assert len(m.faces)==5250
+t=m.triangles;n=m.face_normals;e=.0001;a=np.full(len(t),1,np.int32);D={}
+ids=np.flatnonzero(np.abs(t[:,:,1]+9.3).max(1)<e)
+assert len(ids)==48
+edges=m.face_adjacency;edges=edges[np.isin(edges[:,0],ids)&np.isin(edges[:,1],ids)]
+pcs=trimesh.graph.connected_components(edges,nodes=ids,min_len=1);assert sorted(map(len,pcs))==[24,24]
+D['whole_outer_window_frames']=ids.tolist();a[ids]=0
+ad=m.face_adjacency;cop=(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999;cs=trimesh.graph.connected_components(ad[cop],nodes=np.arange(len(t)),min_len=1);assert all(len(set(a[c]))==1 for c in cs);assert np.bincount(a).tolist()==[48,5202]
+pal=[('NTCU Lin Atelier observed outer window fronts brown','#655042'),('UNVERIFIED main walls entrance windows roofs neutral','#B8BAB5')]
+np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((a==i).sum())}for i,(name,col)in enumerate(pal)],'domain_face_indices':D,'coplanar_components':len(cs),'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'5250 original triangles unchanged','limits':['Inner grille bars may be dark metal and are not part of this perimeter-frame recommendation; glass/curtains/backing stay neutral.', 'Broad weatherboard walls carry white lamps, gray pipes and fire-safety signage absent from mesh; no whole timber-wall brown.', 'Door framing/panels have hardware, labels and weathering; not expanded into this limited window-only recommendation.', 'Window and door hood fronts have thin edge/cover transitions; no unverified single-color extension.', 'Brick plinth includes gray ventilation slots and concrete base; no full red plinth.', 'Roof is a shallow cutoff strip, not the actual pitched tiled roof; no black full top or back.', 'Frame sides, backs, model support, rear/cut surfaces and all remaining triangles remain neutral.', 'Preserve5250 original STL faces and immutable original OBJ unchanged. Do not regenerate geometry or replace original OBJ.', 'Courtyard elevation section only, not the entire atelier/museum.']};(R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n');(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','original_STL_sha256':expected,'triangles':5250,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(q['palette'],'components',len(cs))

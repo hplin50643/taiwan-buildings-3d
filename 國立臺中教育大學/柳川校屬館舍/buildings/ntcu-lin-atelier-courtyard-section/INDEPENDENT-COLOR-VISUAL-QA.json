@@ -1,0 +1,63 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official courtyard VR exterior photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Entire y-9.3 original plane48 forms two complete24face outer window-front frame components;48nominaldarkbrown/5202neutral.",
+    "All1130coplanar domains uniform;Boolean junctions throughz45 retained, no artificial clipping.",
+    "Innergrilles/glass/curtains,weatherboardswithlamps/pipes/signs,doorhardware,brickplinthgrayvents,hoodsneutral.",
+    "Frame sides/back and shallowcutoffroofstrip remainneutral,notwholepitchedroof.",
+    "Sevenwholeviewsfit;closeups showtwo actual perimeterframefronts distinctfromneutralinnergrilles.",
+    "Original5250triangles/STL/build/immutableOBJ unchanged,20originalfiles,count_delta0.",
+    "Explicit3MF/scene/scripts NTCU Lin Atelier Courtyard Section partial color;courtyardsectiononly notwholeatelier. Post2015restorationVRcontext,captureunknown,not2025entrance/2026survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "c395339a141316a380fb600cb730e8e202ee903d521fac2670bed9f8ba7347a4",
+    "README.zh-TW.md": "c395339a141316a380fb600cb730e8e202ee903d521fac2670bed9f8ba7347a4",
+    "colorize_model.py": "c25426bb5cea21253fe818b0ab84bb54cb1b219774a070e57d286f8f6a33fc33",
+    "render_color.py": "c97d232e5922d3cb2d07428e0c301530e50499e9639bcebbf4ad06210445ef25",
+    "color-mesh.npz": "98fe8ab00db0e89d779ee8463c7c4724bc43a699858c1c5761df9a5e901bcd37",
+    "palette.json": "db7215199ecce848608e658afe7e0a2c405b355609fb6633ecbffea5dfa16e06",
+    "appearance-materials.json": "1a8f7db88c668104da4675c70367470139fe8bd445612bdb08184d29c448cdbd",
+    "COLOR-SOURCE-REGISTER.json": "e6a3920bebc9a01e16381002fa7a0d0993467b54fd78db70fcc428eb920bc2de",
+    "model.stl": "4f46d9cf812ce60da69dae3c9727c2d7911ca0b263ba4c0f7291558543031349",
+    "build_model.py": "f3dc32460ee1c4051d4edc864bc74b3dc44e65345bd492a2ac08f4196f29e4e7",
+    "model.obj": "e84e6dc2b55811e1d4bbed3e73b4d2c0b14821d6dc9680b3284800db1857b7ba",
+    "preview.png": "720d3cf1970b60fd26cd03ac0fd11f7aa0863495c9f67237881e07fb4984d0d0",
+    "rear.png": "299e674673fbe842394a8262957ce7f95711fe15c8fb337525241e9e3cd8056d",
+    "front.png": "b37a147677952386af1eb2cb128291f2385a9036407e2759a710e4c9daabad7b",
+    "back.png": "4ad6e4048fbd154922f1dc63a194b7ac060d8360b1bf303ced00a7ea7f87158a",
+    "west.png": "6a00e00ac8dd12ca1ecd0f369d12926a2ed0f6f4afd53541521af860ec43362a",
+    "east.png": "7a30953024214f6b38d1853580da982d0b71dec25dc1549c9febcc76f7b79df9",
+    "top.png": "ab781e1361486c672c79e4f41ed7aa751f739a6a86e311a99cd4e6f959713ac8",
+    "entry-detail.png": "cbf8d7df0eed1f7377d1a290a58c208ad5e9b5a2d96bc84ada65cfdb60fe2775",
+    "facade-detail.png": "c3d7e33c289bfa823a044c1a7f79770a250832ce5916cd3697cba3b5b960d929",
+    "roof-detail.png": "49bbd62fce7ba153439399ae63f6eb24c1ab9ddeb0f744726296ddc9959374bc"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "b3b9e72e6bf3f6e68c810f7fa9c59de68143b56ef146bfd8d60c053629f69ef0",
+    "SCENE-QA.json": "bbc647cd69ddf3a87d8596c9ec671d752ba7bd18e3ae20a366e390e25db31ceb",
+    "DELIVERY-QA.json": "727fc7fa6a5ce4bbd7284e152fadf6ff1dfc2e4b99dac6b1756deac1c5255a28"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "8af45a51c64011921ba87aa445a2d4bc23cd443ea7c028bab5460fc4e786882d",
+    "ORIGINAL-RETENTION-QA.json": "71953c6206042d559be89c6efb5481d2137a6362f94906038c38a2f418e8b2ae",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0623.json": "91cab3d62330fae8d4187f0fdb4ee2e2de925b6918de91390ab5ae4193fd4b93",
+    "INDEPENDENT-IDENTITY-0623.json": "f8633f326d450cb03d374586af2b43c057ef5903712ea82c9cde79e69350788b",
+    "INDEPENDENT-PACKAGE-IDENTITY-0626.json": "cce9deef598196c92f41ac8fd2bcb4d2e49dd46af6243736680c00872a690b7f"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T06:26:15Z",
+  "parent_review": "Parent personally viewed official courtyard VR photograph, originalcode, preview and finaltenmontage. Entire original y-9.3 plane48 exactsharededge two complete24components equals outerwindowframe fronts; original Boolean fragments all retained. Raw exact coordinate multiset equals NPZ observed48 darkbrown, no precise woodspecies/material claim. All5202remainingfaces neutral including innerbars/glass, door, walllamps/signs, brickbase and arbitrary near-eave roof cutoff. Post2015 restoration image unknowncapture, not2025 entrance orfull atelier. Actual explicit NTCU Lin Atelier Courtyard Section identity independently matches3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3frontwindowdetails correct. Original5250triangles20files and actualOBJ preserved bytes; exact original repo Liuchuan school properties not Minshengcampus. No geometry or fullcolor endorsement."
+}

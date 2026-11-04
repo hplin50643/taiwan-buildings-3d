@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete connected-complex views and three intentional canopy closeups.",
+    "Full curved front fascia and both straight junctions pale warm tan; top, underside, side returns and columns neutral.",
+    "No invented green roof, banner text, white mixed pediment, glass or A/C material expansion."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 2798,
+  "material_face_counts": [
+    64,
+    2734
+  ],
+  "connected_coplanar_domains": 717,
+  "original_obj_present": false,
+  "original_files_retained": 18,
+  "file_sha256": {
+    "README.md": "ac9127e1937ab21a4cf32180c6b7dd2ece30ae011517f492b60a22763b206472",
+    "README.zh-TW.md": "ac9127e1937ab21a4cf32180c6b7dd2ece30ae011517f492b60a22763b206472",
+    "model.stl": "d6041d23be6781602e968776afe8971ca1caff32e93c845ea3d74a686d546c3a",
+    "build_model.py": "03bec0ac4732e3ca6f7d336992e7141b0871e75050c8c19a21d5e90ad9c502e8",
+    "colorize_model.py": "8fc317a8781af52e242e54d1fa1a002d21b44a7bb6490a5e729207bc60c2d68f",
+    "render_color.py": "794a312194d79209003f7ef9e99384b9d286f5f68b53406b54f28cbad1c57166",
+    "verify_color_scene.py": "bff4c670256d6a1e281c11903c54dfe2f9538abc21afa094874dcbc525a5f3ab",
+    "validate_color.py": "b81e112ce040e1f7fa7fbe3b127cd0ca616ef361d0750e67d570a4fd688a31df",
+    "color-mesh.npz": "7a3be9241b52ef9323f40cb1b0a547e70a77eb79bf1b37d87b6a4efa89090435",
+    "palette.json": "10dcd9d669999dcd7bbb526122b049f3ec10c63b568d81c3717a48f2838f9216",
+    "appearance-materials.json": "4e55179c07647a874826e209d0d729baac59f0a9cc05a5828990dc7264f15654",
+    "COLOR-SOURCE-REGISTER.json": "5afb3ea2ac8ae2ef746285c1b7dea73b967ffa684f89c9f7084fa343b4ce2998",
+    "appearance.3mf": "474861eefba0026bfd16aa4d15b3edd325003bfc26b7f7a46c8efce71aa92991",
+    "scene.blend": "3ba14cf2d26aff71d4e2afb407aa5ba0b6c16bae02faf0284f5e4ee625f22737",
+    "preview.png": "23d07a45a4913adf60e7e4c73a34bdcbdf98296eee606f3ea461b85d90dc35ce",
+    "rear.png": "9b2a1b4351b804a4befc4174286880467a6cb2171a507ad7ab48f73ad81d00e3",
+    "front.png": "ff7a6a81fc832924e965545e9d31f192830fd51f937085567a6d6c2ec74b45e6",
+    "back.png": "92ce4bc8e7ac0a84216eadd292be61a7dfdab960defca49435a847f39f3feeef",
+    "west.png": "8a42872631e15b2ef17ada832fc78df98622aaaca5ff818779b053e8411911f7",
+    "east.png": "c23ba6eea73b351b78e883562f899e431c8cda27f5162501e040f6e2f46a2691",
+    "top.png": "9e32473535b63538c13424b87f52e7ef130a4b0f4fde68812e77f5e03b7f7550",
+    "entry-detail.png": "c5148ef73f66bc5678010da4da9e21881d9eaa0e20a5e97e85566690d5fc7170",
+    "facade-detail.png": "f76eea2292f3618cff3bd7eea025c5c2f870f96df40b83192b7c2a2db0a6d623",
+    "roof-detail.png": "c924cb07f5eac4a424c847a15b9a068956747a00686ab668a7fd22bc62de3450",
+    "export_appearance.py": "288e9af13043d655c73768d916fe72065c5cb83072fe3b3120580b9c7f65924a"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "ebd803a6cd74e7dd81e1fe3a463f8ae910cf98a92bcd41393e97315ff4da7208",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "4e497a3d61a8a75d5697ee46039ce6c5edc699752a053576cb65bf441f1b421f",
+    "SCENE-QA.json": "0254f2521ce84ed98113eeb96b4ed05626d79347e5c48f857c714a7c6b63fcb1",
+    "FRAMING-QA.json": "9730e0fa65da04008807ba4a61fa2cbb9807b0ba2401cb181034ea32ad50bc24",
+    "DELIVERY-QA.json": "f0a061f8dff97f67fa765b0ea7adfb81fd0e2704a771c43b1cb00b6c9945b169"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "e07e4afa82f4310de95b2c0e68f09cc0674956c0fbd7d5b3563ab32f01e35b01",
+    "ORIGINAL-RETENTION-QA.json": "b6214e02695750b1bca35c2492a2beb645f65cf6731e2c09e9bc655f745f546a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "1d195e21a6563b9f6e53030cd2e9954b65c8e43aa3ae65b34e593fb1c60e1da5",
+    "ORIGINAL-PACKAGE-READBACK.json": "51ebe933b2e69232fe970a83e98598fbf3085d8cb56e7f2c0a20207e0949a683",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "269b5dbda16b80dd0d1be17138efd97faad46ae78c6a3dfff4ecd863f224c7f2",
+    "INDEPENDENT-DOMAIN-0711.json": "1f2efc47f1477a0584ed2a9ce3009dedcf085b31471c88e6dce4d1490f792673",
+    "INDEPENDENT-IDENTITY-0711.json": "ccabc422b96430d6dc2e0f19681af0314fa5510766891052dd97cee6124b205c",
+    "INDEPENDENT-PACKAGE-IDENTITY-0715.json": "269b5dbda16b80dd0d1be17138efd97faad46ae78c6a3dfff4ecd863f224c7f2"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "0aa80aedf5a2b6559f3011d39fdded65f672437db15e061d9868fee03e00f978"
+  },
+  "limitations": [
+    "64 original complete canopy front fascia triangles;2734 neutral.",
+    "Thirty80gon finite chord facets60 and two straight rectangles4 retain Boolean junctions.",
+    "Original2798 triangles and18 immutable files unchanged; no originalOBJ.",
+    "ABC connected complex is one group/count0; capture dates unverified, not2026 survey."
+  ],
+  "history": [
+    "Preview approved then only remaining nine views rendered once.",
+    "Independent expected-name gate verifies JUST ABC Complex partial color against actual3MF and reopened scene."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T07:14:57Z",
+  "parent_review": "Parent personally viewed four actualcampusphotos, originalcode, preview and all10 finalmontage0714. Original80gon45..74 independent finitechord all3point1e-5 everyinfiniteplane equalsfinite60 plus whole straighty-32.5plane4, total64 complete canopyfascia nominal palewarmtan. Exact rawmultiset equals NPZ64. Greenroofsurface mixedpalerim has no materialboundary so neutral; bannercolumns,mixedgable/windows, A/Cunknown and all2734otherfaces neutral. ABC connectedgroup one model, no fullcolor/current2026 claim. Explicit JUST ABC Complex identity independently matchesactual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews framed and3details show full curvedfascia plus bothstraightjunctions. Original2798triangles18files/noOBJ unchanged, count0; partial only."
+}

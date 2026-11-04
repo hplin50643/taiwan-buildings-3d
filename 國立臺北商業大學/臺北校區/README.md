@@ -4,4 +4,4 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![實際STL](buildings/ntub-student-center-west-facade/previews/front.png) |  |  |
+| ![實際STL](buildings/ntub-student-center-west-facade/preview.png)<br>[局部材色3MF](buildings/ntub-student-center-west-facade/appearance.3mf) · [範圍與限制](buildings/ntub-student-center-west-facade/README.md) |  |  |

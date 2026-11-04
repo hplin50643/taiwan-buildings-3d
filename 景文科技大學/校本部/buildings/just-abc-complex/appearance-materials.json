@@ -1,0 +1,65 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "JUST ABC Complex front canopy fascia pale warm tan",
+      "hex": "#C5B5A4",
+      "faces": 64
+    },
+    {
+      "id": 1,
+      "name": "JUST ABC Complex unverified walls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 2734
+    }
+  ],
+  "domains": {
+    "complete_canopy_fascia_components": 64,
+    "per_rectangle": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 717
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "2798 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "64 complete original canopy front fascia triangles pale muted warm tan.",
+    "30 finite80gon curved facets retain60 original triangles plus two straight rectangles4.",
+    "Canopy green top lacks pale perimeter boundary; top underside side and rear neutral.",
+    "Banner columns, mixed pediment, windows, A/C walls and all unlisted faces neutral.",
+    "ABC connected complex is one group/count0, not three buildings.",
+    "Capture dates unverified; not2026 survey or tested filament slicing."
+  ]
+}
