@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "scene_semantic_reopen": {
+    "passed": true,
+    "method": "Actual Blender reopen of old and sanitized v2 scene; compare all object transforms, vertices, faces, material assignment/diffuse values, cameras, world, render engine/resolution. Only path metadata excluded. Neither scene saved.",
+    "original_scene_sha256": "67b41983e5f6d7aa6d21ae9ae1d6c187dada5a4388fc17deaa53ff91bbbcd448",
+    "sanitized_scene_sha256": "91c0d6990beeb4e22887bc9d5abca114f4a83c0c1c9bc8f6930392f6c9af3a07",
+    "semantic_sha256": "cc9077efa9e46e50266b2c3536eb10703f09f73cca050017775ebdd93a6a8ffd",
+    "all_semantics_identical": true,
+    "scenes_not_modified_by_check": true
+  },
+  "png": [
+    {
+      "path": "previews/artificial-back.png",
+      "all_rgba_pixels_equal_original": true,
+      "rgba_sha256": "8953093533016bfb4b5c3c3b68852b4e62ab2641fdb4904d52bf65299914d69c",
+      "text_chunks": []
+    },
+    {
+      "path": "previews/oblique.png",
+      "all_rgba_pixels_equal_original": true,
+      "rgba_sha256": "d7efba74996c272b70ee55b9f1e3d8371f7026db1db4e5f34053882c9d5f9552",
+      "text_chunks": []
+    },
+    {
+      "path": "previews/front.png",
+      "all_rgba_pixels_equal_original": true,
+      "rgba_sha256": "21a4b29e541dee2e0b73c581f91ee36bde32b57c578c141b82e4a79e1211666e",
+      "text_chunks": []
+    }
+  ],
+  "expanded_3mf_and_plaintext_and_scene_scan": "No known workstation/private prefixes or credential markers found; supplements structural SDNA and PNG chunk checks, not sole proof.",
+  "original_package_preserved": true,
+  "stl_exact_old": true
+}

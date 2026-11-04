@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checks": {
+    "finite_coordinates": true,
+    "standard_binary_length": true,
+    "nondegenerate_faces": true,
+    "two_faces_per_edge": true,
+    "consistent_winding": true,
+    "single_component": true,
+    "single_cycle_vertex_links": true,
+    "positive_volume": true
+  },
+  "stl_sha256": "f2429e90db1ec05acffda3a422d2a62b41179b4d1f0aa293b21ac356777aa1d5",
+  "triangles": 392,
+  "vertices": 198,
+  "components": 1,
+  "volume_mm3": 43431.17243190672,
+  "minimum_triangle_area_mm2": 0.00037950092689698067,
+  "bbox_mm": [
+    [
+      -75.0,
+      -3.299999952316284,
+      0.0
+    ],
+    [
+      75.0,
+      6.0,
+      46.5
+    ]
+  ],
+  "limitations": [
+    "No comprehensive self-intersection test.",
+    "No minimum thickness, slicing or physical print certification.",
+    "Source-bounded artificial relief, not complete or measured building."
+  ]
+}
