@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checks": {
+    "original_STL_bytes_unchanged": true,
+    "4670_triangles_preserved": true,
+    "triangle_coordinates_unchanged": true,
+    "watertight": true,
+    "single_positive_volume": true,
+    "finite_and_nondegenerate": true,
+    "two_materials_actually_assigned": true,
+    "3MF_mm": true,
+    "3MF_vertices_same": true,
+    "3MF_faces_same": true,
+    "3MF_material_assignment_exact": true,
+    "3MF_object_identity": true,
+    "isolated_original_STL_hash": true,
+    "isolated_color_mesh_hash": true,
+    "isolated_palette_assignment_hash": true,
+    "inputs_unchanged_during_QA": true
+  },
+  "color_mesh_sha256": "dd2c6e8814da4c385af3f5e61601b208114cbf6d4a2f19de3f10400e66f9d4aa",
+  "original_STL_sha256": "0ddc3c661ebd8286ac853073eecb0f69b1925c63b818702aaffd92a45ecb8ac0",
+  "bounds_mm": [
+    [
+      -75.0,
+      -38.0,
+      0.0
+    ],
+    [
+      75.0,
+      38.0,
+      59.79999923706055
+    ]
+  ],
+  "retained_rebuild": "Isolated rebuild retained privately; no automatic file deletion.",
+  "limitations": [
+    "Color model uses original unrefined geometry; no new facade accuracy claim.",
+    "Two base-material labels are not a tested four-filament slicer project.",
+    "STL format itself does not contain color."
+  ],
+  "metadata_v2": {
+    "expected_object_name": "NTUE Dormitory 2 partial color",
+    "3MF_reopen_name_check": true,
+    "XML_except_name_byte_identical": true,
+    "original_isolated_rebuild_evidence_carried_forward_for_unchanged_inputs": true
+  }
+}

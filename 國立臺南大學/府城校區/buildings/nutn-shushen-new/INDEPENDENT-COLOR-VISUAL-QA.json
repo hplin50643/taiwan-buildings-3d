@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed successful official daylight photo and all ten final renders; unknown capture date and partial four-panel-only limitations retained. Parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Four whole original notched panel front domains,top yellow12/middleleft paleochre10/lowerleft terracotta6.",
+    "All467coplanar connected domains uniform;28colored and1724neutral triangles.",
+    "Whole treehidden middle-right panel neutral; no partial split. Gray/white walls returns windowbacks tanks roof and rear unknownneutral.",
+    "All ten captions identify partial original connected complex approximation, not2026 fullcolor and partial coloring; seven full views fit geometry, three closeups intentional.",
+    "Original1752triangles, STL/build bytes unchanged; immutable original has noOBJ, generated isolatedOBJ private; color review does not validate original approximate geometry or current condition."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "5e894281dbc2ef8eaa488a77e786f5ebf2fc5abe6ce709ecf52e8c0747e42473",
+    "README.zh-TW.md": "5e894281dbc2ef8eaa488a77e786f5ebf2fc5abe6ce709ecf52e8c0747e42473",
+    "colorize_model.py": "98db89423630169adad8352b09ccb92db0ea7a1817c9a612694a102450a5fcf9",
+    "render_color.py": "1c4c6d1660f29cac5ef98cc48119dd55cb980674db47adda2f78d448c01576b0",
+    "color-mesh.npz": "b586c653940f9fe33869d535f8e0df883a169bc06cd0cf062b130ac798c1c6f8",
+    "palette.json": "b3911561c42957bea4145fd5955a9738ce7b65b93617450cf04719f4c36482a1",
+    "appearance-materials.json": "310b14791169d8e9753ccbfe8188d8b8b89de5d01e270bf8ab251b260f844e47",
+    "COLOR-SOURCE-REGISTER.json": "f9304fef370f0494d389aea3c9884736c5814356c5bdd958fa74f413a39cc3d5",
+    "model.stl": "511db129ca786dcaedee1d1c5a4bf777945b454b0b53f166eff1e7f8d67f0e28",
+    "build_model.py": "2ad28b11a6c1e1e3610b73290e9e09f2ce5e2846073cc667d57b92a4ce038050",
+    "preview.png": "40797986459dea9c18fd3c871bbb8ccc89d8fb55676afd413f659e88e6f9f7f4",
+    "rear.png": "e0dba5161bd5231021db1913e5d03ade23ce9a80071cd1043722f9cac032c424",
+    "front.png": "18ea915f441885b70228417649a9ef0d573adf1f771b257d09979cec7709ae31",
+    "back.png": "c06f41a13818112413086de9ee59fb98863c46c531370ee9e7ed130b94a93d2b",
+    "west.png": "6100c140cead3ed7062885d5250782d27296b33c023e5edc02e8fd0a9ea80835",
+    "east.png": "d4c5679a626a9ecb62e48c68504d96327744227399da6bf3083025c0ded90f5e",
+    "top.png": "e64ecc24d048e1794da5072a73b648bb7b5f01bab6963d5329a25b0f8ed8e213",
+    "entry-detail.png": "fa96985703c1b1eaa1430b81d40f3064135f11f2f933e48ce8ba7ccf3869209c",
+    "facade-detail.png": "55dfcfa09d5937a50913f6de954d876644aced0e2d528316d164ba42d6abc774",
+    "roof-detail.png": "8d77ac556272a2be62f2a459716af4c3b6b2b4c0ddb4186e895e2d24a99f5219"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "5305e6f9e926cd4815c5dc43bb9fe1b759cc1a5c40e7e07a2b7bb6d3aea6bb7c",
+    "SCENE-QA.json": "2cad8bce44aa35fead6c8a22dd3fd6eed5f8d553cdecd4d5a2e9dc5301d005bc",
+    "DELIVERY-QA.json": "e505018b6dbb27cf5fa50d70d1b945e7bc719d4790390bc30c50b46281ed862d"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "34101a02613765e542f3fa5bbadeb59d862c9e426b5d83f5c4fcbc5bb2c9d009",
+    "ORIGINAL-RETENTION-QA.json": "a83df6a6ce5757fff3cafc5209e1bd92e954ac0803bff3928a9603203310c90c",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2"
+  },
+  "reviewer": "finish_science_hall",
+  "verified_at": "2026-11-03T00:47:57.053957+00:00",
+  "parent_manual_review": "Personally viewed successful official daylight photograph1477x1108, original code, preview and final ten-view montage. Four whole surviving original notched relief fronts:12top yellow,10middleleft paleochre,6lowerleft terracotta. Original simplified panel/window overlap preserved, not falsely corrected. Entire tree-obscured middleright panel and mixedwalls/roof/tanks neutral. Seven overall views fully frame building; three details intentional. Actual immutable18filepackage has noOBJ despite code export, false initial claim corrected with history retained; isolatedgeneratedOBJ only private. No fullcolor/current-condition or physical print claim.",
+  "parent_root_qa_sha256": {
+    "INDEPENDENT-IDENTITY-0044.json": "9e0849c21227445832fe62397c4e667f3fd530dfd155de929f4f330cf7620530",
+    "INDEPENDENT-DOMAIN-0044.json": "136b8861f37228201d7b310e30b38d6e08570bf1c49a402b2943c772a50acfe3",
+    "ORIGINAL-OBJ-CLAIM-CORRECTION-0044.json": "e3f6a37d5ff2bafff8ab8d46e85d5697e03b16f61aa0fdaab92bf96e1a9c2b38"
+  }
+}

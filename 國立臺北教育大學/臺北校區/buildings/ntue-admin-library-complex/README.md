@@ -1,47 +1,33 @@
-# 國立臺北教育大學｜行政大樓暨圖書館建築群
+# 北教行政圖書單群｜兩正面屋外沿局部灰
 
-## 模型預覽
+**磚牆、入口及窗背未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。行政與圖書兩命名館保留原同一連通院落群、同一slug，不拆套。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![行政屋外沿](entry-detail.png)|![圖書屋外沿](facade-detail.png)|
+|![原院落與屋邊](roof-detail.png)|||
 
-臺北校區。自行以Python實體布林建立外觀／量體近似，未下載第三方3D模型；不是測繪、施工圖或館內重建。
+## 材色範圍
+同 `ntue-admin-library-complex` 原項目，same-item、count_delta=0。**6092原三角面、STL與build_model.py字節不變**，不切面或造金字；原公開包無OBJ，不因原code會輸出而假稱保留。
+- 只兩個完整屋頂外沿垂直矩形：y−65.8及y+65.8、x−65.5..65.5、z71.2..72.7，2＋2＝4原面中灰。
+- 每三角全部頂點須符合原有限plane與界限，不採中心點／normal門檻。全1625共面連通域均一、0撤色。
+- 其餘6088中性：全高混紅磚／灰基座牆、入口上方金字與下灰石跨面、窗背混玻璃／簾／框、窗橫浮條、水平屋頂、內院邊、側return、連翼、階與地面。
+- 色／中性邊界是本次證據範圍，不是真實材接縫；不新增材料邊界、不追認原近似量體與開口為實測。院落保留原透空。
 
-## 證據與範圍
+## 來源／日期與權利
+只親看校方PDF物理頁11／42的四張建築外觀照片，不使用內部平面或安全資訊。拍攝日期未知，2023填表日期不是拍攝日期，不聲稱2026現況。兩正面真屋邊灰族可與原獨立外沿對位。
+原照／PDF私存，不公開或貼圖；未確認CC／再散布授權，不保證商用。HEX是名義灰族，不是校準色票。來源GO是有界放行，先期review-only文字非免除builder QA。
 
-本件合併官方A行政大樓與H圖書館，因1F平面兩側互標「往圖書館／往行政大樓」，兩翼相連圍繞真實開放院落。覆蓋2個官方命名館、交付只計1模型，沒有把相連側翼重複計件。行政入口面保留10個較窄主要窗群，圖書館入口面保留7個較寬主要窗群；頂部密直通風帶與5排主要上層窗分開，不當成8層。兩端低灰框、扁拱入口、階梯及後退玻璃面保留。樹遮部分比例與細格近似，圖書館側回轉面只做可見主要窗；內院壁面、相連側翼深側與屋頂設備缺多角度證據，保持素面。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原142×150mm展示底座，照片近似非精測比例。STL無色；3MF／Blender真逐面材。兩材標籤不是驗證兩色／四色耗材切片；**未實際列印**，無切片路徑。
 
-官方文件2023年10月25日，攝影日未載；文件日期不等於拍攝日，無法保證2026全部現況。各頁及URL見 [sources.json](sources.json)。原照片與PDF只留私人核對，不隨公開包散布。
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py`／`verify_color_scene.py`。
+完整隔離原build＋color重建、原bytes／三角multiset、閉合正體積、3MF面材、scene重開、十圖1200×900與圖文hash核對；程序不代替人工來源審核。
+原README／previews／render／validation保留歷程，不冒充本次QA；沒有刪檔。
 
-## 交付檔
-
-- [model.stl](model.stl)：毫米，含底座最長150毫米，各件獨立比例
-- [scene.blend](scene.blend)：由交付STL匯入的可編修網格
-- [build_model.py](build_model.py) 與 [requirements.txt](requirements.txt)：自行建模參數；python build_model.py
-- [render_preview.py](render_preview.py)：實際STL渲染；blender -b -t 2 -P render_preview.py
-
-
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
-
-[圖書館入口斜正立面](previews/library_elevation.png)；不把行政及圖書館同形外觀當成同一張照片重用。
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 圖書館入口斜正立面<br>![圖書館入口斜正立面](previews/library_elevation.png) |  |  |
-
-[原STL射線空隙檢核](portal-ray-proof.json) · [重跑射線程式](check_portal_geometry.py)。直接遍歷原STL三角形，不修補或封截面。
-
-## 列印與QA限制
-
-底座朝下。窗格、拱形框、薄簷與雨遮均有列印粗化，懸挑及入口可能需支撐；拆支撐仍可能傷細件。模型尺度不是實際建築尺寸，勿把各件直接拼成同比例校園。沒有實體試印或Cura／Prusa工具路徑驗證，不保證免支撐或保證可印。
-
-[validation.json](validation.json) 檢原STL水密、正體積、法向與繞序、每邊兩面、vertex link、單連通表面、無分離內腔殼、150毫米限制、重建SHA與Blend幾何一致。[contour-validity-check.json](contour-validity-check.json) 固定0.071毫米偏移，每0.2毫米逐層檢閉合與個別／合成Polygon有效，不修補後算成功。[thin-feature-check.json](thin-feature-check.json) 採canonical fail-closed v3每1毫米0.8毫米opening參考篩檢，不等於全面最小壁厚或切片模擬。
-
-重跑：python validate_model.py；python check_contour_validity.py；python check_thin_features.py。
-
-外觀已覆核，本件為作者凍結版本；獨立QA通過後才可由唯一發布者發布。
+## English scope
+Partial color only:4 existing outward vertical roofedge fasciafaces (2+2) nominalgray. All6088 otherfacesneutral. Two namedadministration/librarybuildings remain ONE originalconnectedgroup andslug. Original6092 triangles unchanged;no originalOBJ. Photo captureunknown;2023formdate notcapturedate. Exteriorphotosonly,no interior/securityreconstruction. Not testprinted or validatedfilament slicing.

@@ -1,41 +1,32 @@
-# 國立臺北教育大學｜第一宿舍
+# 北教學生第一宿舍｜僅入口雙柱原前皮局部淺灰
 
-## 模型預覽
+**局部補色未完成：僅入口雙柱原可見前皮20面淺灰；磚端鋸齒帽與玻璃未完成。不是全棟完成補色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項 `ntue-dormitory-1`／`count_delta=0`，臺北校區。只第一宿舍，不借第二宿舍後面證據。處理日期非拍攝日期。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![入口雙柱原外皮](entry-detail.png) | ![原扇體埋柱界線](facade-detail.png) |
+| ![中性鋸齒帽及屋頂](roof-detail.png) | | |
 
-臺北校區，自行以Python實體布林建模，沒有下載第三方3D模型。此件是證據限定的外觀／量體近似，不是測繪、施工圖或室內重建。
+## 材色範圍
 
-## 證據與範圍
+原24gon雙柱中心(±10.5,−29)、半徑1.3、z3..17。逐原構造facet n=(cos(2π(j+.5)/24),sin(...))，只n_y<0，所有三頂點必在有限chordplane rcos(π/24)、切向±rsin(π/24)、原z範圍。兩柱各5殘露facet、10三角，共20淺灰；3150中性。不用rawnormal閾漏掉小片，不面心裁色，不套ID取代幾何核。
 
-依五層資料、鋸齒狀1F平面、入口與端牆實拍，自行建立折角房間量體與上部前凸磚帽。保留中央淺扇形入口、兩道寬窗帶、頂層大凹口、真正後退的入口及雙柱。左端受樹遮的窗不複製右側補滿；未見的另一長側只依平面保留鋸齒量體，不臆補窗群。巨大近素面端牆取自官方側照，屋頂設備未知省略。房間斜角、翼深、磚帽突出量及窗格為列印近似，沒有重建宿舍內部。
+**保留原Boolean扇體埋柱形狀，不把被埋的柱面重新造出。** 全共面連通域一致。柱頂/背側/埋入域不擴染；巨大磚端牆跨不同底磚、管線，不能全紅。鋸齒房翼/高帽受樹遮且未證完整面域；中央扇牆、水平帶、雨庇、窗背混框玻璃內物、後梯、另一長側、屋面/地面全部中性。中性不是實景灰證明，資料範圍不代表真材接縫。
 
-官方文件2023年10月25日，照片攝影日未載；文件更新日期不能視為拍攝日期。完整頁碼與URL見 [sources.json](sources.json)。原照片／PDF只保留私人核對，不隨公開包散布。
+原3170三角及STL/build字節、獨立150mm模型比例不變；原折角房翼、五層窗、入口尺度與背部素面近似保留，不改開口或補內部。此色審不追認原照片/平面導向量體為實測或當前現況。
 
-## 交付檔
+## 來源、日期與權利
 
-- [model.stl](model.stl)：毫米，含底座最長150毫米；每件比例獨立
-- [scene.blend](scene.blend)：由原STL匯入的可編修網格
-- [build_model.py](build_model.py) 與 [requirements.txt](requirements.txt)：建模參數；python build_model.py
-- [render_preview.py](render_preview.py)：以實際STL渲染；blender -b -t 2 -P render_preview.py
+只親看共用官方PDF實頁63兩外觀照片，不讀內部/操作配置。正面入口淺色柱可辨，端照下磚差證不應整端塗紅。2023文件/填表不是攝影日期，capture未知、不稱2026現況。PDF與影像hash見register，URL沿原sources.json。原照只private、不公開/貼圖；未見CC不推商用。名義淺灰非精確色票。
 
+## 檔案與 QA
 
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png)
+`appearance.3mf`兩展示材，`scene.blend`真原面材索引，`color-mesh.npz`原三角。STL/build原字節保留。Immutable原包無OBJ；原程式匯出OBJ只在private隔離重建留存，不冒稱原件有OBJ。原README.md逐字保留`ORIGINAL-MONOCHROME-README.md`；原無README.zh-TW.md。舊previews/QA保單色歷程，不是此次色QA。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
+依原requirements隔離執行原build與colorize/export/validate，Blender render/verify。精確shapely2.1.2可載入獨立target，不改共享環境；重建目錄不自動刪。3MF/STL三角一致、閉合正體積、scene重開與十張1200×900見QA。**未實際列印**；兩展示材不是已驗四色切片，懸挑與厚化細格仍需另核支撐。
 
-[原STL射線空隙證據](portal-ray-proof.json) · [重跑射線檢查](check_portal_geometry.py)。直接檢原STL三角形，不修補或封截面；尺寸皆為模型估值。
+## English limitations
 
-## 列印及QA限制
-
-底座朝下；折角上帽、雨遮、入口頂板、通廊及薄框可能需要支撐，拆支撐有傷細件風險。厚化細格及柱不是實際建築尺寸，勿把不同館直接拼為同比例校園。沒有實體試印或Cura／Prusa工具路徑驗證，不保證免支撐或保證可印。
-
-[validation.json](validation.json) 檢原STL法向／繞序、水密、正體積、每邊兩面、vertex link、單連通表面、無分離內腔殼、150毫米限制、重建SHA與Blend一致。[contour-validity-check.json](contour-validity-check.json) 固定0.071偏移，每0.2毫米逐層閉合及個別／合成Polygon有效，不修補後算成功。[thin-feature-check.json](thin-feature-check.json) canonical fail-closed v3每1毫米抽樣0.8毫米opening輔助篩檢，不等於全面壁厚或切片模擬。
-
-重跑：python validate_model.py；python check_contour_validity.py；python check_thin_features.py。
-
-外觀已覆核，本件為作者凍結版本；獨立QA通過後才可由唯一發布者發布。
+Very limited partial:20original outward entrance-column triangles,10per original24gon cylinder at(+/-10.5,-29),r1.3,z3..17;3150neutral. Every vertex tested against finite chordplane/tangent/z for front-facing primitive facets. Five Boolean-clipped facets survive per column; embedded shafts are NOT reconstructed. Whole coplanar components uniform. Mixed brick ends/base/pipes, tree-obscured sawtooth caps, central fan body and bands, glazing backs, rear/unknown surfaces and roofs neutral. Original3170triangles/STL/build bytes unchanged/count_delta0, only Dormitory1. No immutableOBJ although original builder generates a private isolated OBJ. Official PDF physical63 exterior images viewed;2023form date not capture. No2026current or surveyed-accuracy endorsement, no public source images/photo textures/commercial-rights inference. No actual print or validated multi-filament slicing.

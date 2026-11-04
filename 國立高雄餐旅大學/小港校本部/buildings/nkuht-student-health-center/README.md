@@ -1,39 +1,35 @@
-# 2012 多功能學生健康活動中心
+# 高餐學生健康活動中心｜六柱可見面局部銀灰
 
-## 模型預覽
+**雨棚、窗背及其他混材未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。原活動中心與附屬群體範圍保留，同slug不新增套數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| 總覽 | 背側 | 南向 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![南向](front.png)|
+|![北向](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![西柱近景](entry-detail.png)|![東柱近景](facade-detail.png)|
+|![柱列與雨棚](roof-detail.png)|||
 
-國立高雄餐旅大學・小港校本部。原創來源比例完整群棟外觀近似；包含南主館、北獨立遮棚、三層折形輔樓、連橋、下沉廣場與基座。2012為完工識別，參考影像跨2014／2018／2024浮水印及2023報告，不宣稱還原同一天或實測BIM。
+## 材色範圍
+同 `nkuht-student-health-center` 原項目，same-item、count_delta=0。**7854原三角面、STL與build_model.py字節不變**；不切面或補斜撐。原公開包無OBJ，不假稱保留。
+- 六支原48邊圓柱，依原K=.1378645278805804、S=150/132、BASE=2.4和原中心／半徑／完整軸高重算北向半柱真facet：87＋48＋48＋48＋48＋48＝327原面銀灰。第一柱含原Boolean交接裁切細面。
+- 以原facet朝向定完整半柱，每一三角全部頂點必須滿足有限平面與tangent端界及軸高；不靠STL法線門檻或中心點挑色。
+- 全2036共面連通域均一、0撤色。其餘7527面中性：背半柱／柱帽、雨棚整片混鋼架透明皮、混玻璃框反光窗背、實心欄杆代理、主屋頂、附屬量體、橋／基座／下沉庭院等。
+- 色／中性界是證據範圍，不是真實柱材接縫；原屋緣比例描繪、地坪高差、厚化柱徑與省略斜撐均不因本次補色追認為精測。
 
+## 來源／日期與權利
+親看建築師日照9738及9707作銀灰柱色族；9695夜照只對位，綠色燈光不當材料。拍攝日期未知，URL的2016/04發表路徑不是拍攝日期，不稱2026現況。
+原照私人保存，不公開或貼圖；未確認CC／再散布授權、不保證商用。人物不建模、不公開來源人物照片。HEX為名義銀灰非校準色票。
+GO是有界來源放行，不是發布核准或幾何重審；先期review-only文字只保留歷程。
 
-[頂視](previews/top.png)・[東側](previews/right.png)・[西側](previews/left.png)・[空拍](previews/aerial.png)
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150mm展示長邊與S比例不變；圖量群體近似非精測BIM。STL無色；3MF與Blender真逐面材。兩材標籤不是驗證兩色／四色耗材切片；**未實際列印**，無切片路徑。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視<br>![頂視](previews/top.png) | 東側<br>![東側](previews/right.png) | 西側<br>![西側](previews/left.png) |
-| 空拍<br>![空拍](previews/aerial.png) |  |  |
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py`／`verify_color_scene.py`。
+請使用原 requirements.txt 的 Shapely==2.1.2。本機預設2.2.0會將11個共面頂帽三角重新剖分（頂點／表面union／體積不變），不是原byte再現；保留該失敗歷程，以既有2.1.2私人隔離target重建後，原STL byte及色版NPZ皆精確再現。公開檔一直使用immutable原STL。
+原字節／三角multiset、閉合正體積、3MF面材、完整隔離原build＋color重建、scene重開、十圖1200×900與圖文hash核對，程序不取代人工源控。
+原README、單色previews／render／validation保留歷程，不冒充本次QA；不刪檔。
 
-## 交付與尺度
-
-- [STL](model.stl)、[可編修Blend](scene.blend)、[原創參數源](build_model.py)、[描點參數](parameters.json)。Blend為實際交付STL匯入網格，參數腳本負責重建。
-- 單位毫米；含基座最長150mm，約1:880。底座朝下。三屋片、北折翼、G三跨玻璃及右白牆、四錯位陽台、主館兩長窗帶及六柱為識別特徵。
-- 本件是單一建築群，不代表全校完成。鐘樓、操場、鄰接其他棟、室內旋轉坡道不納入。
-
-## 近似與列印限制
-
-高度、曲折屋脊、窗框和地形由影像比例推估。主館地坪上檐約17m、最高20.8m；輔樓檐13.8m、屋脊16.2m，並非官方標高，仍有約±2m級不確定性。地坪高於下沉庭院3.2m為示意；來源植栽遮擋不能定B1腳點。
-
-G橫框為約0.625mm高的背接淺浮雕，並非六層凸樓板或獨立薄片；細柱、橋欄、陽台欄、屋脊有加粗。指定射線厚度及0.8mm形態篩檢不是全方向最小壁厚保證。遮棚、連橋、陽台及凹面需評估支撐，拆支撐時避開細框與欄杆，勿任意縮小。未實體試印、未產生Cura／Prusa工具路徑，不保證免支撐。
-
-[來源及限制](sources.md)・[來源機讀表](sources.json)・[核形與撤回紀錄](image-controls.json)・[數位QA](QA.md)
-
-## 重建與驗證
-
-Python依requirements.txt安裝；先執行build_model.py，再以Blender背景執行render_preview.py，最後執行run_all_checks.py。所有腳本使用本模型相對目錄；任一assert或非零退出均視為失敗，不修補原STL後宣稱通過。公開包不附第三方原照片、完整PDF或私人對照圖。
-
-## 輔樓同側跨年觀察差
-
-C同側在早期MG9707約見三組小凹陽台，2023遠景上部則約見四個寬窗／凹框且下部被樹遮；差異原因未明，無資料證明改建。本件立面採早期可見小陽台版本，2023對輔樓僅核屋片與橋，不宣稱同年完整復原。
+## English scope
+Partial color:327 existing finite north-facing48gon column facets (87+5x48) nominalsilvergray. All7527 remaining faces neutral, including reversecolumns, caps, mixedcanopy/glazing and solidrail proxies. Original7854 triangles unchanged;no originalOBJ. Daylight evidence only, night illumination excluded. Captureunknown;2016 URL path notcapturedate. Original image-derived groupgeometry not newlycertified. Not testprinted or validatedfilament slicing.

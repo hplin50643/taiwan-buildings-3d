@@ -1,0 +1,60 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed all four AHA actual photographs, original front preview/code and all ten final renders. Two original roof top skins only, capture dates unknown. Parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Each original inverse +/-18-degree factory top skin has130finite original roof triangles;260gray and9402neutral.",
+    "All2629coplanar connected components uniform; original Boolean roof cuts and clipped45of48facets per roof retained.",
+    "Factory end thickness and underside, teaching mixed yellow-white stepped facades, windows/reflections, canopy proxies, towers and unknown surfaces neutral.",
+    "Seven whole-model views fit; three roof closeups are intentional crops. All captions disclose roof-only partial update not full-color completion.",
+    "Original9662triangles and STL/build bytes unchanged; noimmutableOBJ exists, original connected complex remains one package/count_delta0.",
+    "Exact original dependencies used privately for isolated build, including shapely2.1.2; shared environment unchanged."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "537a0f78e2e051fd2e85a9e8ff0b1dd2f2f25f4334de7784994c8b540f705ab9",
+    "README.zh-TW.md": "537a0f78e2e051fd2e85a9e8ff0b1dd2f2f25f4334de7784994c8b540f705ab9",
+    "colorize_model.py": "e3010ba65eeeea359b83956d42c21d750824bf22918d1599da4b4b9ab5ec3dd6",
+    "render_color.py": "595150c2a857a02b28a768fdd032b3b9f689992915e335e24f65170227859a4e",
+    "color-mesh.npz": "d2e0b74124d99213cbcae80d8a59b0239b6177606f7b913883fd8b6822767d07",
+    "palette.json": "b0a30159d179a9fab5af4b20f177810357cbb58dc97a4a859845a89e3e717fbf",
+    "appearance-materials.json": "6c60edb02d0c5a7d4645eb54446023cd38908c9f6fcb5e1a419f4069e36a3324",
+    "COLOR-SOURCE-REGISTER.json": "8d2de2cd4866c374f5e165a3ced21c3dfb0ba0767c420c48629207b2755105da",
+    "model.stl": "167ad46cb6da38ceb84ef62dfedabc8aac461d8581357f96f51047168e833a94",
+    "build_model.py": "d3d2e4da78b5ce69f3a08fb246141399e8ff65754a988b44ed8f878c9cac6d8c",
+    "preview.png": "350f8935a2276318c98619cf9b33e4441c4179d8881b45c5f5c5ab64740c12e1",
+    "rear.png": "efac2400c91c08a0cb0e7212644f164981e424d2011b93b6d1da195d062de7ae",
+    "front.png": "d77e9fd8d618e523bfd445301c9e1f62b2733fb83c5973759025c9e1ec0cc7ad",
+    "back.png": "923b3208e10aa19fd9dab5d8c42cc1dee839c41572f0cb65b553b37432af095c",
+    "west.png": "69eea37ab85b0bc6bc784e1e90ea8e5185c6829c7fad4758916d4d542b1985dd",
+    "east.png": "905ad9ac08ff6f5cbdf0b828bb7166b2d22ed0087c76cabddd3713803b7d2b6c",
+    "top.png": "7e04249a8374b0cf8530025341566b5813406cff3ebf4f34a7b773d094d749d3",
+    "entry-detail.png": "6df53251fd8a9aa0f2f72c2a69dfae0e7c30b49a83c5806b2ddd5f032c7265b5",
+    "facade-detail.png": "a7fe81b7bc4ec79bcf53f1e41b13f2072b5b8820ee77b7eae6aa33b91213aed9",
+    "roof-detail.png": "695ee600e7568fee463420472f5d654e518a37a84b215e5af150d3de1bd0a806"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "ffcfedf5c1a0cf0b73707e7363dd6523eea13131a3579fa95a24be9c231c3ce8",
+    "SCENE-QA.json": "c000bfc63bbac6db1d63944726cf8c6a65d18744305e69c395fc5b399e307f64",
+    "DELIVERY-QA.json": "a74a77654156ef20c2e671952435eacfc93c3cae74f0e95ba4481c41bc5fb69d"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "9cb2b2d31f335d8322bf72b581a28cd39517c100dcfd06e6aa53871834afddc8",
+    "ORIGINAL-RETENTION-QA.json": "127a721b19019ac8e031b75bfd5a881d5303641ceebd98d95067c28fc96268b5",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-IDENTITY-0128.json": "9879f875c8820cc67d05916d63787cfbce926c15b094ade3d8b1c639318beaf5",
+    "INDEPENDENT-DOMAIN-0128.json": "cec789b74df40a4fa1d1722608ae2f0f26e5faef963d4966646bdf053d68d94c"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T01:32:43.912060+00:00",
+  "parent_manual_review": "Personally viewed all four actual photographs, original code, preview and final ten-view montage. Only two finite curved workshop roof upper skins gray; teaching mixed walls, thickness/underside, courtyard/towers/windows neutral. Seven full views framed and three intentional roof detail crops. Independently selected 260 all-vertex inverse-rotated finite cosine-segment faces; identity original 9662 triangles/bytes exact. Single existing complex, no original OBJ."
+}

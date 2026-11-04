@@ -1,0 +1,41 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed right wall and independent front pier muted brick",
+      "hex": "#A47258",
+      "faces": 10
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 1206
+    }
+  ],
+  "domain_face_indices": {
+    "right_wall": [
+      151,
+      166,
+      167,
+      169,
+      218,
+      237,
+      238,
+      239
+    ],
+    "front_pier": [
+      856,
+      862
+    ]
+  },
+  "coplanar_components": 293,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1216 original triangles unchanged",
+  "limits": [
+    "Only complete original right wall x68 and independent pier front y-44.6, all vertices finite bounds.",
+    "Main facade, unknown walls, window mixed backs, pale entrance soffits and roofs neutral.",
+    "Photo capture date unknown;2023form date not capture."
+  ]
+}

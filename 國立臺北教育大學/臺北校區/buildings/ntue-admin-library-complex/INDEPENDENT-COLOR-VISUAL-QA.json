@@ -1,0 +1,65 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "manual_review": "Parent personally viewed four exterior source images, original code, preview and all ten final montage views. Only two exterior top fascia rectangles gray, all mixed brick/base/entry gold lettering/windows/courtyard domains neutral. Whole original complex framed and three intentional upper-fascia details. Original6092 triangles/bytes exact, four finite all-vertex material faces independently verified, no original OBJ. Form date2023 is not photo capture.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "original_triangles": 6092,
+  "material_counts": [
+    4,
+    6088
+  ],
+  "connected_coplanar_domains": 1625,
+  "original_OBJ_exists": false,
+  "file_sha256": {
+    "README.md": "30c879cbeae2d8b4ec992cd1eb2124020f14036de4b4c8038a15c40d1b5e090b",
+    "README.zh-TW.md": "30c879cbeae2d8b4ec992cd1eb2124020f14036de4b4c8038a15c40d1b5e090b",
+    "model.stl": "7fa290233db6e22474ef2c8af0bee8d881b4dc5f8e7c01f8d6904afe947135b2",
+    "build_model.py": "5b82aa3085ac9d255388b619b252817ee09f3578a7a1bcaaa18e6a752f51e465",
+    "colorize_model.py": "e2ff467442bb9c44057717448cecb52a4ce7da94d9a4455f6553586b19ec1a3d",
+    "render_color.py": "ae71c2b945ad1107118b29b71fc62e8037f4e0a2feea98187c29ac500d9e173b",
+    "verify_color_scene.py": "36ccad27dac5bbd31de2e41547b83302a8bca412041433feaa1607066840a33d",
+    "validate_color.py": "d864a833a7f1fd7bc135745e12fdf8a8ac3db14540cdf469aaa51e51d12579a3",
+    "color-mesh.npz": "caddd49310c0a831bd4d5889da4ec05d096112713d9e347d9a3d27c7d7173290",
+    "palette.json": "96ee0c38e8df53840e764d4a26febc8499756e8aa2d76e3d1d22f855da838368",
+    "appearance-materials.json": "2add4125f1a2a606d4de8b27d339b1cb273dab7b0e45825c0fbe3490ecbc4f29",
+    "COLOR-SOURCE-REGISTER.json": "01b3093f4b426fa0ac67b0a635905a716a3df98a4c849696499057a33ef7ddb4",
+    "appearance.3mf": "038ebc844536d3d1b514004891d66c10fccecf97460090196a1649572c0f5c57",
+    "scene.blend": "e0baa7c75659a2eb033bcebc01c3576b0c7615e7e871535006be0ff74652d895",
+    "preview.png": "7424bf628e1f197fbdf02234c4ffc74552f9b7a50cd849c9467384bb02bedede",
+    "rear.png": "3b81be53bde164a8a4f618d7c08383a2fd1c0c3868489b1f56a1f8925157b3b2",
+    "front.png": "e2226a8c5ace394fb72ff71e323f7c6d9e482915a17d54fcebc843fd4c3185d9",
+    "back.png": "4bb218b3a1b8fa5fc6e5cdc3090e54cc0878929f5e62228ed46978081b01792d",
+    "west.png": "47c809617fce021ed8382850441049388a6092ecdfd75de2252a3620e6c8a6bc",
+    "east.png": "1b160e99c3d6e14eae6bc6deb26f92f61a0521540e3446c58848f1f39ad3b474",
+    "top.png": "bbe69eee50c35cfc0635369cd837833fdf1ceb83141a0ed19b72ed2248c49bdf",
+    "entry-detail.png": "552f74321dc2c4b07476d6ae2660da0a57c1c821e0bceeda7ee9bd902af0de19",
+    "facade-detail.png": "e537257d3bad09ec73349d5a19298fc0ac6a73c0c58f75c49ecf3aa8e38a2630",
+    "roof-detail.png": "6b7d64de43fb4b76a2bc6f1b92da0bef8346d4c9591fa54e28ccd76b84b7d3d2"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "f0aa1c4647e195fdc0b25cc295dadc87ea62736e367f81ae1bbcd83a1be94d85",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "910888d0a702dc7fd7fcce307ae3cef28c701d8c577da589da32e1f1de8f265c",
+    "SCENE-QA.json": "6010955893e1b999d19ff47995a9b18de235b5541df15005b0cebc1be2523d9c",
+    "FRAMING-QA.json": "184b315ae164ae1dd2ab10b250b327faf98f4c2ca5f92a77e14370bdadedbd5c",
+    "DELIVERY-QA.json": "635c2244f0a2178f0ae339328df06720b6effe75e3922ba94cc6cfd1fdc2e948"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "f4172f0869efc2c46f371baa55b257b739cfe07a2900a523634cc01367df3639",
+    "ORIGINAL-RETENTION-QA.json": "d721cacfd3934f7f26d70fc1d86b3e7144313c0ab07acd654f893f3ae15ee399",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "018f1d741f93a51418f3f949f3c355b00e87b9ff878ad0e968d69b5d5370c41d",
+    "ORIGINAL-PACKAGE-READBACK.json": "5af23637e7033dd820133d3e58353b1abdfd1739cb64d320341642b861fb4e0c",
+    "INDEPENDENT-IDENTITY-0141.json": "173d737700c9363c585624f87ad0585f4d4e5ae3bcca89b4cd4fc553319fe21a",
+    "INDEPENDENT-DOMAIN-0141.json": "aff43d8bfeed362938fd1ab5664e9aecad9c58d31d1c6136b6a120db7bef9faf"
+  },
+  "montage": "private-review/final-v1-ten-view-montage.jpg",
+  "limitations": [
+    "Two namedbuildingsone originalconnectedgroup, nottwo newmodels.",
+    "Only4finitefasciafaces;allother6088neutral.",
+    "Photo captureunknown;2023formdate notcapturedate.",
+    "No interior/securitysource use, no photosdistributed.",
+    "No testprint or verifiedfourfilament."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T01:45:16.747984+00:00"
+}

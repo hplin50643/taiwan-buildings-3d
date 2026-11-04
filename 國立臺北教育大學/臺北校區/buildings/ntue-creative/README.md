@@ -1,45 +1,38 @@
-# 國立臺北教育大學｜創意館
+# 北教創意樓｜百葉及下廊柱前面局部分色
 
-## 模型預覽
+**混材主牆、玻璃與未知域未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`，非全棟完成補彩。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![下廊柱前](entry-detail.png)|![上百葉前端](facade-detail.png)|
+|![原屋頂與側面](roof-detail.png)|||
 
-臺北校區，自行以Python實體布林建立的外觀近似模型。沒有下載第三方3D模型；不是測繪、施工圖或館內重建。
+## 材色範圍
+同 `ntue-creative` 原項目，same-item、count_delta=0。**1642原三角面、STL與build_model.py字節不變**，不切面不新增文字；原公開包無OBJ，不因原code會輸出而假稱保留。
+- 18片原百葉前端 y−35、每片寬1.6、z39..75，36完整原面深灰；4下廊柱前 y−36.5、寬3.2、z11..39，8完整原面淺灰。
+- 每三角全部頂點須符合原有限plane及界限，保留原Boolean裁切；不採中心點／normal門檻。全385共面連通域均一、0撤色。
+- 其餘1598中性：上下混淺灰／紅磚無分界牆、所有百葉與柱側背面、橫幅所在樓板、窗背混框反光、欄實板、設備塔、屋頂與邊、側入口及背面、底座。深凹處陰影不是新增玻璃材。
+- 色／中性邊界是證據使用範圍，不是真實材接縫。不新增材料邊界，不追認原近似量體為實測；相鄰舊紅磚斜屋頂館不在本包。
 
-## 證據與範圍
+## 來源／日期與權利
+只親看校方PDF物理頁25兩張建築外觀照片，不使用內部平面或安全資訊。拍攝日期未知，2023填表日期以及照片中109學年度橫幅不是獨立證實的拍攝日期，不聲稱2026現況。
+原照／PDF私存，不公開或貼圖；未確認CC／再散布授權，不保證商用。HEX僅名義灰族非校準色票。正式GO覆蓋先期review-only文字，但不免除builder QA。
 
-依官方正面及入口側實拍建立整體量體近似；背面與另一側缺實拍細部。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150×109mm展示底座，照片近似非精測比例。STL無色；3MF／Blender真逐面材。三材標籤不是驗證三色／四色耗材切片；**未實際列印**，無切片路徑。
 
-保留三組高垂直遮陽片、下層深柱廊、水平帶與寬屋簷、入口側玻璃樓梯量體和照片可見屋頂退階。三組各六片是加粗與密度簡化，並非照片中每片遮陽板的精確測繪。背面和未見側牆保持素面，沒有用平面圖捏造教室窗陣。
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py`／`verify_color_scene.py`。
+完整隔離原build＋color重建、原bytes／三角multiset、閉合正體積、3MF面材、scene重開、十圖1200×900與圖文hash核對；程序不代替人工來源審核。
+原README／previews／render／validation保留歷程，不冒充本次QA；沒有刪檔。
 
-官方文件日期2023年10月25日，實拍攝影日未載。博物館另有2017、2020實拍和館方供圖。資料更新日不視為拍攝日；這些來源不能保證2026全部現況。完整來源頁碼與URL見 [sources.json](sources.json)。原照片與PDF只留私人核對，不隨公開包散布。
-
-## 交付檔
-
-- [model.stl](model.stl)：毫米，含底座最長150毫米，每件獨立比例
-- [scene.blend](scene.blend)：由交付STL匯入的可編修網格
-- [build_model.py](build_model.py) 與 [requirements.txt](requirements.txt)：參數重建來源，執行 python build_model.py
-- [render_preview.py](render_preview.py)：以Blender讀取實際STL渲染；執行 blender -b -t 2 -P render_preview.py
+## English scope
+Partial only:36 original upper louver frontfaces darkgray plus8 lower gallery pier frontfaces palegray. All1598 otherfaces neutral. Original1642 triangles unchanged;no originalOBJ. Captureunknown;2023formdate and photographed109year banner not independentcapturedate. Exteriorphotosonly,no interior/security reconstruction. Not testprinted or validatedfilament slicing. Neighboring older brickhall excluded.
 
 
-[入口側](previews/side.png) · [正立面](previews/elevation.png) · [俯視](previews/top.png)
+## 版本 2 名稱勘誤
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 入口側<br>![入口側](previews/side.png) | 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
-
-## 列印與檢查限制
-
-底座朝下，勿直接把不同館的比例拼為同一校園。挑簷、入口框、百葉及柱廊可能需要支撐；粗化的片、柱、框仍有拆支撐損壞風險。沒有實體試印或Cura/Prusa工具路徑實測；不保證免支撐或保證可印。
-
-[validation.json](validation.json) 驗證原STL法向／繞序、正體積、水密、每邊兩面、vertex link單環、單一連通表面、無分離內腔殼、最長尺寸，以及獨立重建SHA和Blend幾何一致。
-
-[contour-validity-check.json](contour-validity-check.json) 使用固定z偏移0.071毫米，每0.2毫米檢驗原STL閉合degree2輪廓、個別及合成Polygon有效，不修補失效輪廓後算成功。
-
-[thin-feature-check.json](thin-feature-check.json) 使用canonical fail-closed v3每1毫米抽樣0.8毫米opening輔助篩檢；這不是全面最小壁厚或切片器模擬。
-
-驗證命令：python validate_model.py；python check_contour_validity.py；python check_thin_features.py。三者須exit0且所有檢查為真才可凍結；獨立審核通過前不可發布。
-
-外觀已覆核，本件為作者凍結版本；須經獨立幾何審核通過後由唯一發布者發布。
+3MF 與 Blender 物件顯示名稱統一更正為「NTUE Creative partial color」，並同步匯出、渲染與驗證程式的名稱。場景重新開啟與保存後，除物件名稱及非渲染執行期記錄外，網格、材質、變換、相機、燈光與字幕語義完全相同；場景檔案雜湊因此更新。原 STL、材色陣列與十張預覽位元不變，未重新渲染。原有局部補色及未試印限制不變。

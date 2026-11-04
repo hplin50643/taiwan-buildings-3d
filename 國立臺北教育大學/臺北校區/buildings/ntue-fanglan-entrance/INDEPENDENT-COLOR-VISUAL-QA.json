@@ -1,0 +1,90 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:7wholefragment views framed and3intentional details;seven louver leading rectangles pale warmgray.",
+    "Layer gaps shaded by lighting,not painted black;capsule rings/wallpatches/goldletters unknownneutral.",
+    "Original entrance plusfivewindowbay fragment retained,notentirebuilding."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 7676,
+  "material_face_counts": [
+    14,
+    7662
+  ],
+  "connected_coplanar_domains": 1287,
+  "original_obj_present": false,
+  "original_files_retained": 18,
+  "file_sha256": {
+    "README.md": "f9aba05f074de6d8c3a251627cad40ef3bb8ff95355036b34713fb73e8a03fdd",
+    "README.zh-TW.md": "f9aba05f074de6d8c3a251627cad40ef3bb8ff95355036b34713fb73e8a03fdd",
+    "model.stl": "6636efb429ac4f222e1837bbe6b01f5407d5e868f9c94571ca60082d4a39295f",
+    "build_model.py": "1da806b3185b755818d337d88be3cef63d618ad2e19721a7f26ef2be51acbb05",
+    "colorize_model.py": "161d114f1b62e386a00901ae4f7321c89b1aadae4dcf26b3190d1f22f0ea31b1",
+    "render_color.py": "933d4c8262f51f62356a03e410c8e76d05a6c1870fd7cfe9c5999069a0f00b1c",
+    "verify_color_scene.py": "06866d84ace8cdcb1528fd36788c25a3db28638619542fe7a3ad9562ba3bf796",
+    "validate_color.py": "1155e0246a31d9bd9606cf329cf6deb94cdb8f8b1a221d01c9d0ce5a1184b0a0",
+    "color-mesh.npz": "38d69b0317f6cc3d75c64713de94e81202c12b4ae6e1278a5dfb8c2f06b9fe76",
+    "palette.json": "d7b531947a6727afdaa990d5e0cdd723ec0388a58e78cecdcc99d37116167759",
+    "appearance-materials.json": "c9541d56cf64986cf791b98a9889f4d920c61e1e1adf0734f8089813e51f0b3b",
+    "COLOR-SOURCE-REGISTER.json": "1558e4c9be01fb29070b6619b759c28bb029b4c3ed4d0f1af17ef47c938409b2",
+    "appearance.3mf": "72a0d1866ecaaf279c20486b5c2c7bc05873cdf7bcdb99f15c312b61672a280d",
+    "scene.blend": "0c7187c6f6aba30ff317729f71a25824ca2d0256cee64069d55b7c8019408908",
+    "preview.png": "cacb7195409e757301a06f91737e8c1020df65f14667a1d8c21799a3c29d59fd",
+    "rear.png": "e75f4eda0fd4002f8ed4ddbc0e92ecbd168635da9a2b2b8705002b538e2b9253",
+    "front.png": "2b2fec0b034e08671fc7b1e2997fcac22df37999406ababbd35a6e59e871dffb",
+    "back.png": "2dee1d2bf7beb19d9f5dda48d7ad02ccc0d393d14fbda137413749f58154ce72",
+    "west.png": "2f26e51653090a57f1ecda54d9e1afafebb7e6b5df187c5427629a9f436eb871",
+    "east.png": "b28e46de7fbb4bda22b5bde2091975396c39a56d3551922b9f7a324f051b10e4",
+    "top.png": "bc6340020e82cd569c1d91ede363b0b26e132a8ec7808e837a4302c997c0c216",
+    "entry-detail.png": "81aa063ae9be66aad3b1c958ccbf8d609bb01f491b10d15c973872d18bd5b2a9",
+    "facade-detail.png": "d4242bac489727cd438318da9ccaed6b9e8963916e059cba81593830a4ccaacc",
+    "roof-detail.png": "9e94ba23da485842475d4246c4567b7561ecf016a0a670d0ae97fdb45d3cd98f"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "1eb192d3baa18413189beac7e6d7278f804304d940e42b49454c132c63e77d90",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "71930fd020d88de5991a6be9649ce521c8d765bbb5ab100537aaf020897220cd",
+    "SCENE-QA.json": "a4e2bf141c85327f2a6c7c4a42226b147c3e4276feae032a53be37d913783029",
+    "FRAMING-QA.json": "37d5fc6e367eb95d4351fa0eb0d4ea4c1f72e159aa74ee3bd6d8729dc6e9a9eb",
+    "DELIVERY-QA.json": "0cd0091e5711ce465537433aa522747b046a89d0002810e6d9c6354546ea8985"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "70afd5a4aaee6ef22cb595a46aab27aa9ebb892751a787f563c994c7957464b0",
+    "ORIGINAL-RETENTION-QA.json": "d498dca9db674dda6e5c18756e159273b9cbce2d106f22a1edce95ee5d6ec422",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "f2e3b548ef77d963c453e943dd4679bed9fdd31da7ee4cfddb70a114eb5e00e3",
+    "INDEPENDENT-DOMAIN-0215.json": "4b04f1d2888725b36896ccfd8c24d4b16dfb012ad6ecd5769951a30892c901e2",
+    "INDEPENDENT-IDENTITY-0215.json": "759a14d17239a233f5af4ba61acefe3b95c93de309acc13989a170670da2c8d2",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "0be9d15d5373264bde2d1d55e909224cd82089ef42ea2f970baf81be8adb0dc9"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "2b21897351ad48aa7b5fcb0bd29ada1ad39720e16bf56631eb1742a11b2a45d0"
+  },
+  "limitations": [
+    "Only14leadingfaces colored;other7662neutral;notfullcolorcompletion.",
+    "Captureunknown;report/formyear notcaptureproof.",
+    "Original18files retained,STL/buildunchanged;noimmutableOBJ.",
+    "Not testprinted;two materiallabels notvalidatedmultifilamentslicing.",
+    "Fragment only;original approximategeometry notnewlycertified."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T02:18:18Z",
+  "parent_review": "Parent personally viewed both official PDF91 exterior photos, original code, preview and all ten final renders. Seven complete louver leading rectangles only, fourteen original triangles pale warm gray, not dark interlayer shadow. Whole views framed, closeups intentional. Main mixed repaint wall, window frames/backs, lettering, canopy, roof and unknown cutoffs remain neutral. Original entrance plus five-window-bay segment only, not whole Fanglan building; unknown capture dates, no 2026 survey claim.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "NTUE Fanglan Entrance partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "NTUE Fanglan Entrance partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}
