@@ -1,0 +1,38 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed entrance canopy actual top mediumgray",
+      "hex": "#888C88",
+      "faces": 6
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED fascia rails windowbacks body neutral",
+      "hex": "#B8BAB5",
+      "faces": 8784
+    },
+    {
+      "id": 2,
+      "name": "Observed two entrance pillar frontfaces warmoffwhite",
+      "hex": "#D7D5CC",
+      "faces": 6
+    }
+  ],
+  "domains": {
+    "canopy_top": 6,
+    "two_pier_fronts": 6,
+    "whole_coplanar_withdrawals": 0
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "8796 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "Canopy true upperplane only;fascia mixed dark/pale remainsneutral.",
+    "Two pillarfronts only;columnside/underside neutral.",
+    "Originalsolidparapets not colored black as pretendopenrails.",
+    "All windowbacks/mainwalls/roof andotherfaces neutral.",
+    "2020article/2026imagepath not capturedate;newbuilding not demolishedold.",
+    "Three materiallabels not verified fourfilament slicing."
+  ]
+}

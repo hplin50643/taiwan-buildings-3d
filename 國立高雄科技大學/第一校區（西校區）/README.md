@@ -10,7 +10,7 @@
 
 | 模型一 | 模型二 | 模型三 |
 |---|---|---|
-| [![產創園區A棟主立面段](<buildings/nkust-industry-a-front-segment/previews/front.png>)](<buildings/nkust-industry-a-front-segment/README.md>)<br>[產創園區A棟主立面段](<buildings/nkust-industry-a-front-segment/README.md>)<br>第一校區（西校區）・局部 | — | — |
+| [![產創園區A棟主立面段](<buildings/nkust-industry-a-front-segment/preview.png>)](<buildings/nkust-industry-a-front-segment/README.md>)<br>[產創園區A棟主立面段](<buildings/nkust-industry-a-front-segment/README.md>)<br>第一校區（西校區）・局部<br>[局部材色3MF](buildings/nkust-industry-a-front-segment/appearance.3mf) · [範圍與限制](buildings/nkust-industry-a-front-segment/README.md) · [校驗版本說明](buildings/nkust-industry-a-front-segment/CHECKSUM-SCOPE.md) | — | — |
 
 每件資料夾都有正背並排、頂視、STL、可編輯Blend、獨立生成程式與完整數位QA。本頁首批局部件的外觀及獨立幾何審核已通過；不代表實體試印成功。第二批其他校區模型的待審狀態見學校入口。
 

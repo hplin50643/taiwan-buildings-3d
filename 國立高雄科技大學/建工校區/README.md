@@ -10,7 +10,7 @@
 
 | 模型一 | 模型二 | 模型三 |
 |---|---|---|
-| [![行政大樓中央曲面入口段](<buildings/nkust-jianggong-administration-central-segment/previews/front.png>)](<buildings/nkust-jianggong-administration-central-segment/README.md>)<br>[行政大樓中央曲面入口段](<buildings/nkust-jianggong-administration-central-segment/README.md>)<br>建工校區・局部 | — | — |
+| [![行政大樓中央曲面入口段](<buildings/nkust-jianggong-administration-central-segment/preview.png>)](<buildings/nkust-jianggong-administration-central-segment/README.md>)<br>[行政大樓中央曲面入口段](<buildings/nkust-jianggong-administration-central-segment/README.md>)<br>建工校區・局部<br>[局部材色3MF](buildings/nkust-jianggong-administration-central-segment/appearance.3mf) · [範圍與限制](buildings/nkust-jianggong-administration-central-segment/README.md) · [校驗版本說明](buildings/nkust-jianggong-administration-central-segment/CHECKSUM-SCOPE.md) | — | — |
 
 每件資料夾都有正背並排、頂視、STL、可編輯Blend、獨立生成程式與完整數位QA。外觀覆核已通過，獨立幾何審核尚待完成；不代表實體試印成功。
 

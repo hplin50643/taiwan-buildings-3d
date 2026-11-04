@@ -1,36 +1,35 @@
-# 國立臺南藝術大學｜圖書資訊大樓
+# 南藝圖資｜入口真弧帶白與簡化雙鳥前金
 
-## 模型預覽
+**彩繪底板、混主牆、屋背等未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。僅140個有據原面，非全色重建。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![真弧帶](entry-detail.png)|![雙鳥前面](facade-detail.png)|
+|![中性屋部](roof-detail.png)|||
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 材色範圍
+同 `tnnua-library-information` 原項目，same-item、count_delta=0。**5406原三角面、STL與build_model.py字節不變**，不切面、不新增鳥羽／喙／尾或其他幾何。原公開包沒有OBJ，不假稱保留。
+- 入口弧帶採原128面橢圓 rx42、ry17.5、中心(0,−28)，有限外立facet65..126、z24..25.8，124原三角面名義白。每頂點須落同原弦線有限端點範圍，不靠半徑或法線捷徑選曲面。
+- 兩獨立簡化鳥形原前面 y−27、x−16..16、z47..57，16原面金；只既有粗化剪影，不聲稱復原細雕。
+- 其餘5266面中性：鳥側／背、整塊彩繪crest板 y−27.65、混磚灰牆、窗背、階／基地、弧帶頂底、上主牆冠帶與屋背。
+- 全1251共面連通域均一，0候選撤色；不畫三角色楔、不把整塊彩繪底板金色。材色／中性界是證據與拓撲使用界，不是真實材料接縫。
+- 補色不追認原照片近似幾何、曲率、鳥形或窗孔精度。
 
-## 辨識量體與證據
-橢圓主量體、中央屋頂抬高、前方弧形矮翼、退入式入口、兩側窄窗與簡化成對鸞鳳輪廓。校圖提供屋頂側邊圓形低矮突起（頂面淺凹）；尺寸與後側立面未測量，後側不捏造窗列。
+## 來源／日期與權利
+三張官方外觀與雙鳥近照已核；拍攝日期未獲證明。EXIF修改2022及官頁檢視2026不是拍攝日期，不稱2026精測現況。
+原照片私有保存，不公開／貼圖；未確認CC／再散布授權，不保證商用。HEX是近似色族，非校準色票。
+GO繼承review的notformal字句屬先期審查階段；正式來源有界放行不免除建模QA，也不是發布核准。
 
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+150×108mm原展示底座，照片近似非精測比例。STL無色；3MF與Blender真逐面材。三材質標籤不是驗證三色／四色耗材切片；**未實際列印**，無切片路徑。
 
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py` 與 `verify_color_scene.py`。
+原字節／三角multiset、閉合正體積、3MF面材、完整隔離原build＋color重建、scene重開、十圖1200×900及圖文hash核對。程序不取代人工來源核。
+原README、單色previews／render／validation保留歷程，不冒充新QA，沒有刪除原件。
 
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
-
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
-
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共285層均封閉；0.8mm XY薄特徵篩查有2層警示（最高局部面積损失2.5999 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
-
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共285層均封閉；0.8mm XY薄特徵篩查有2層警示（最高局部面積损失2.5999 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
-
-
+## English scope
+Partial color only:124 existing finite curved coping outer faces offwhite and16 original simplified bird-profile fronts nominalgold. The remaining5266 triangles are unverifiedneutral, especially the multicolor crest slab, mixed brick/gray walls, roof/rear and bird sides. Original5406 triangles unchanged; no new ornament geometry. No original OBJ in immutable package. Capture dates unknown;2022EXIF modification is not capture proof. Not test printed or validated filament slicing.

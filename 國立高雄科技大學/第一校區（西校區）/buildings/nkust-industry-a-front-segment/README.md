@@ -1,74 +1,34 @@
-# 國立高雄科技大學｜產創園區A棟主立面段
+# 第一西校區產A前段｜僅雨遮前緣兩原面局部補藍
 
-## 模型預覽
+**局部補色未完成：僅入口雨遮前緣藍；頂帽、主牆、斜框與玻璃等未完成。非全色、非改善工程完工現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項`nkust-industry-a-front-segment`／`count_delta=0`，原第一校區（西校區）／卓越路身份，不因建築師頁文字誤概括為燕巢就改校區。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![藍前緣](entry-detail.png) | ![未證混材頂帽](facade-detail.png) |
+| ![未證後頂](roof-detail.png) | | |
 
-校區：第一校區（西校區）。建築實體：產業創新園區A棟。
+## 材色範圍
 
-**這是局部外觀模型，非全館／全棟測繪，全校亦尚未完成。** 只建築師公開照片可辨識的長主立面、兩端近側面和屋頂退台；背面以平面封口，非完整建築測繪。
+只有入口雨遮真正完整前矩形y−31、x−4..68、z27.4..29.1兩面藍，頂帽原完整前矩形y−23、x−69..69、z78..80.3兩面在v1曾染紅，後核照片左最高簷灰粉與右紅不同段，而原全寬138無材界，v2整兩面退中性；不硬選右半三角。舊v1保歷程但不作最終PASS。全頂點、正向、完整矩形面積與共面連通域核驗；不是盲套原面號或用bbox截面。原2756三角中2藍＋2754中性，678共面域一致，不新增分界／面／幾何。
 
-## 實際 STL 外觀
+紅斜環與樓板邊／實心欄代理共面混合，全部中性，不簡單z框整塗；長斜blade底腳實景灰但原無獨立色界，同樣中性。藍雨遮頂面／底面／未知側邊不沿前緣硬推；頂帽整件含前緣完全中性。全主粉牆／窗框玻璃簾反光／玻璃欄實心代理／後截斷／階廣場中性，**中性不是實景灰色證明**。資料色界不是真實不同材料接縫。
 
+只原照片前段近似，不含全建物／鄰棟；原STL/build／2756三角字節座標不變，不添加拉索、細欄與字樣，補色不追認粗原幾何精度。
 
-[正立面](previews/elevation.png)｜[頂視圖](previews/top.png)
+## 日期及權利
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 頂視圖<br>![頂視圖](previews/top.png) |  |
+兩張建築師日照已親看，對應原前段雨遮與頂帽色族，捕捉日未知。2025–26入口改善規劃／工程資訊不是驗證完工，不宣2026完工現況；不按檔案發布年當拍攝年。URL/hash見`COLOR-SOURCE-REGISTER.json`。原照私存不公開／不貼圖，未見CC不沿repo license推商用，名義HEX非測色。
 
-## 下載與比例
+## 檔案與 QA
 
-- [可列印模型 STL](model.stl)：毫米（mm），含底座 150 × 70 × 80.3 mm，最長150mm
-- [可編輯 Blender 場景](scene.blend)：匯入同一交付STL的網格，可編輯頂點；不是原建築CAD
-- [獨立參數生成程式](build_model.py)：自建幾何的重建來源，沒有下載第三方3D mesh
-- [固定版本依賴](requirements.txt)｜[來源與範圍](sources.json)｜[逐檔SHA256](SHA256SUMS.txt)
+`appearance.3mf`兩展示材、`scene.blend`真面材、`color-mesh.npz`原三角／材索引。原STL無色、原build字節保留。Immutable原包無OBJ，不冒稱原OBJ存在或已保留。
 
-各館獨立縮尺；原建築尺寸和進深以公開資料估計，不能用於工程、結構或測量用途。單色 STL 以凹槽/凸框表達玻璃、實牆和欄杆，不含真實材質或紋理。
+原README另存`ORIGINAL-MONOCHROME-README.md`或`.zh-TW.md`，舊previews／QA保留單色歷程不冒新色驗證。依requirements執行`colorize_model.py`、`export_appearance.py`、`validate_color.py`；Blender執行`render_color.py`與`verify_color_scene.py`。原build+color全隔離重建保留不刪，3MF/STL三角multiset／封閉正體積／重開／10張1200×900見COLOR-*QA、SCENE-QA及DELIVERY-QA，父另終審。
 
-## 保留的外觀特徵
+**未實際列印。** 兩展示材非已驗四色切片工程，支撐、材料對應與薄部強度另驗。
 
-- 左側三層深退露廊，較低層的斜邊大框與延伸至地面的斜向分隔牆。
-- 右側兩列直向細窗；直窗分組與組間較寬實牆保持分別。底部兩層玻璃用連續玻璃區和粗化窗梃表達。
-- 右側入口雨遮、玻璃轉角、頂部架高屋頂及退縮平台。
+## English limitations
 
-## 未知與省略範圍
-
-- 主立面被樹木遮擋的部分，窗梃節奏僅為照片可辨識部分的近似；欄杆、細框及纜索簡化或加粗。
-- 背面、屋頂設備、內部隔間、完整服務核心與精確基地坡度未重建。
-- 建築師照片未列攝影日期；不以檔名或網頁更新日當攝影日期。2025–2026官方文件另有A棟出入口／動線改善及設備搬遷規劃，本件不代表改善工程竣工現況。
-
-## 3D列印前
-
-底座朝下放置。先在自己的切片軟體檢查尺寸、細件解析度及橋接；柱廊、雨遮、露廊和架空屋頂底部可能需要支撐。欄杆、窗梃與柱採較粗的模型化尺寸，但材料、噴嘴、層高和支撐拆除仍會影響結果。
-
-數位QA不是實體試印，也不是Cura／Prusa實際工具路徑驗證；不保證免支撐或每台機器都能成功列印。0.8mm檢查是XY形態opening輔助篩檢，非全方位最小壁厚證明。
-
-## 重建與驗證
-
-Python 3.12環境安裝 requirements.txt 後執行 python build_model.py。使用 Blender 4.3.2 執行 blender -b -t 2 -P render_preview.py，從實際STL生成正背／正立面／頂視，並保存 scene.blend。執行 python run_checks.py 跑全部檢查；任一失敗會非零退出。
-
-- [原始STL、重建SHA及Blend一致驗證](validation.json)／[程式](validate_model.py)
-- [0.2mm逐層閉輪廓與個別及合成Polygon valid](contour-validity-check.json)／[程式](check_contour_validity.py)
-- [canonical fail-closed v3薄特徵篩檢](thin-feature-check.json)／[原程式](check_thin_features.py)
-- [canonical結果嚴格彙總](strict-thin-check.json)／[程式](check_thin_strict.py)
-- [額外0.2mm全層薄特徵篩檢](thin-all-layers-check.json)／[程式](check_thin_all_layers.py)
-- [完整QA摘要](QA-summary.json)
-
-原網格水密、每邊2面、頂點link單環、原normal與winding相符、正體積、單一連通表面且無分離內腔殼；生成程式獨立重建SHA一致，Blender保存網格和STL一致。輪廓固定以z=0.071mm開始，避開層面共面退化；任何invalid polygon直接失敗，未以buffer(0)、make_valid等修補放行。
-
-## 來源權利與日期
-
-第三方照片及PDF不隨本包散布。來源URL、影像年代、特徵依據與名稱衝突均詳見 sources.json。本件為依公開資料自行重建的近似外觀，不是官方模型或授權測繪成果。
-
-[回校區](../../README.md)｜[回學校圖鑑](../../../README.md)
-
-### 校區名稱衝突
-
-築宇作品頁業主欄將合併後校區寫成「燕巢校區」。高科大官方育成空間地址、環安中心A棟樓層圖與中程校務發展計畫將產創園區A棟列在第一校區西側／卓越路2-1號，因此資料夾歸第一校區（西校區）。與深中路58號的燕巢校區不同；也不要與第一校區東側行政大樓A棟混淆。
-
-官方2023版[散步地圖](https://www.nkust.edu.tw/var/file/0/1000/img/75/880959610.pdf)第6頁，第一校區西南角「產業創新園區」附紅斜框／窄直窗／左露廊的同一實拍外觀，可與築宇照片對上。該剪圖標的是園區，A棟名稱另由官方A棟樓層圖與第一期沿革交叉，並非把園區的其他棟一併納入。
-
-樓層定義：建築師頁列地上4層；官方疏散圖另有標為「5樓」的屋頂層，圖中主要是開放屋頂及兩端梯／電梯出屋頂，不等於照片中存在第5列一般辦公立面。本件依實拍保留4層主體及架高屋頂退台，不把PDF頁數換成窗列數。
+Extremely limited partial color: one original complete entry fascia rectangle,2blue faces and2754neutral. All678coplanar domains uniform;2756originaltriangles/STL/build unchanged. Mixed red diagonal ring/floor/parapet proxies and blade grayfoot have no reliable original material boundary and remain neutral, as do canopy upper/undersides, glazing, mainwall and rear. Fullwidth cap fused pinkleft/redright photographed regions, so v2 withdraws both previously red faces wholly to neutral; retained v1history is not final QA. Only original front segment, not wholebuilding. FirstCampusWest identity retained, notYanchao. Both photographs capture date unknown;2025–26improvement is not verified completion. Nominal color, count_delta0, sourcephotos private, not physically test-printed; color review does not validate original approximate geometry.

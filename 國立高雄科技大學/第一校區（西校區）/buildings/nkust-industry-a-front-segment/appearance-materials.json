@@ -1,0 +1,33 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed entry front fascia nominal cobalt",
+      "hex": "#26466F",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixed facade rear roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 2754
+    }
+  ],
+  "domain_face_indices": {
+    "entry_front_fascia": [
+      2684,
+      2691
+    ]
+  },
+  "coplanar_components": 678,
+  "coplanar_neutralized_faces": [],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "2756 original triangles unchanged",
+  "limits": [
+    "Only one whole finite original entry fascia rectangle2triangles, allvertices and exactarea checked.",
+    "Red balcony frame mixes floor/parapet solids; diagonal blade mixes grayfoot without boundary, allneutral.",
+    "Entire fullwidth cap neutral because it fuses photographed pinkleft and redright without boundary. Canopy top and bottom, glass/window/rail proxies, mixed mainfacade, rear and plaza neutral.",
+    "First Campus West identity retained, notYanchao; unknown capture;2025\u201326 improvement not verified complete."
+  ]
+}

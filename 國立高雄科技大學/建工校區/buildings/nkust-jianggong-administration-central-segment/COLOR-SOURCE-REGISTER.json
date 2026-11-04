@@ -1,0 +1,55 @@
+{
+  "slug": "nkust-jianggong-administration-central-segment",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "NKUST-JIANGGONG-ADMINISTRATION-CENTRAL-SEGMENT-COLOR-SOURCE-GO-2338.json",
+    "sha256": "abf0f8ec970c53470eed0ddb9ba098a818ec322c3f84225812aedaddee511b77"
+  },
+  "review": {
+    "file": "INDEPENDENT-MAPPING-2335.json",
+    "sha256": "2bddbb113b053de008469f3ee4fd90b8c993b858fef9cd034427b66f3f1fd60b"
+  },
+  "sources": [
+    {
+      "file": "conference-photo.png",
+      "sha256": "95650d9274bc57f7b5181f4892090d319e5f2c237c472e46972f7958a287054d",
+      "url": "https://ciie2025.conf.tw/site/userdata/1658/img/homepage/01_1.png"
+    },
+    {
+      "file": "shuttle-close-photo.jpg",
+      "sha256": "cf0ba792b8bd6f5e11437fb81f02fcb848bae3ea9e592cbe8c397eda76791d11",
+      "url": "https://gen.nkust.edu.tw/var/file/8/1008/img/74/441495110.jpg"
+    },
+    {
+      "file": "portico-photo.jpg",
+      "sha256": "b90a90942aa2200b8f9f8e55455875e6a49067cfbae695044c8a488d40ac0d82",
+      "url": "https://static.wixstatic.com/media/f61422_e64975dbce304f68b38890186451a2a2~mv2.jpg"
+    }
+  ],
+  "date_context": [
+    "Conference 2025 is event/publication context, not independently verified photo capture.",
+    "No authenticated capture dates or current-2026 appearance claim."
+  ],
+  "limits": [
+    "Entire z61.7..67 spandrel withheld: visible administrative-building lettering has no original geometric boundary; no letters fabricated or wiped into an all-cream finished claim.",
+    "Lowest spandrel z31..35 has dark edge and underside transition; keep neutral.",
+    "Upper z93.7..99 band and enlarged top crown/sign zone remain neutral, as do all roof/underside/support domains.",
+    "All glass proxies, window backs, curtain/reflection/metal mixtures and thickened mullions remain neutral.",
+    "Adjacent truncated wings, full-height columns, rear cut, side piers, plaza and fan steps remain neutral in this recommendation.",
+    "No source color transfer from interior scene to hidden exterior or rear cut."
+  ],
+  "rights": "Exterior reference photographs privately retained; no CC permission inferred, no public textures or commercial-use guarantee.",
+  "source_private_backup": "Original references separately privately preserved; not included here.",
+  "mandatory_domain_correction": {
+    "file": "SOURCE-DOMAIN-COMPLETENESS-ERRATUM-2341.json",
+    "sha256": "33ee1d49006790d46326a00196675b2155b834a97ff6e2ad9cbe50b43bf7bb1c",
+    "corrected_counts": [
+      264,
+      264
+    ],
+    "reason": "24 tiny original facet triangles restored to complete original coplanar tile domains; old GO retained."
+  }
+}

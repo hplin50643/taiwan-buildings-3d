@@ -1,0 +1,51 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Parent personally viewed three exterior sources, original160gon primitive code, preview and final ten views. Independently checked finitefacet plane+tangent+wholez correction and exactraw coloredsubset. Two full bands264each, letteredmiddle/lowestdarkedge/crown/windows neutral. Seven full views framed,three intentional details. Original18016triangles;no originalOBJ;partial central segment not wholebuilding.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Two complete outward original160gon tile bands264+264triangles nominal cream.",
+    "All4320coplanar connected domains uniform;528cream and17488neutral triangles.",
+    "Lettered middleband, lowest darkedge, crown, windows, walls, columns, stairs, rearcut and roofs neutral;24 tiny true facet triangles included by documented correction, no wedges.",
+    "All ten captions identify central segment partial approximation, not wholebuilding or fullcolor and partial coloring; seven full views fit geometry, three closeups intentional.",
+    "Original18016triangles, STL/build bytes unchanged; immutable original has noOBJ; color review does not validate original approximate geometry or current condition."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "08dcc383b5a7c07e2c334fc952d6931cf4e990734bfbd6b5df627bfd448fec50",
+    "README.zh-TW.md": "08dcc383b5a7c07e2c334fc952d6931cf4e990734bfbd6b5df627bfd448fec50",
+    "colorize_model.py": "f58cd7735bb50108b59aa123c317bbd5fbce75a89387ad508905084e5b6ee02d",
+    "render_color.py": "588d6b9d31d9ea584b4460786ffe2f98fd62fbeefec5a11f05534605c47194eb",
+    "color-mesh.npz": "8f48697638e60d4fe227772f0b711819a43d3fbc9f5277762d46b0f0bd508df3",
+    "palette.json": "337e106ebe2b32aa817b5f10b043a3f21f82ff545f0498b4ddb0e57e0bf9c73e",
+    "appearance-materials.json": "7f3a0b3132bdeba48d276604fb58e05712e8773131cffbc629d967dc24833d2b",
+    "COLOR-SOURCE-REGISTER.json": "e52cfd28a1413fbbec13763f2e4737dc6f70f7be5e8e45079cc6997c4ae0d347",
+    "model.stl": "b54b57c7c6c824161df9e4b461d02559bb54fbaad566a6d102e1f8a0c04e9949",
+    "build_model.py": "2f2e61f607c71c4f84aedf478e15c3f5439808d89d61b093393ec2b087369e48",
+    "preview.png": "a5d1ba97137063be505a065100e722e9e97e874a8b5d69994b36fa57fb064274",
+    "rear.png": "41e37694864088bc932b57fb85969bfc83eac34a6451d8aec06a038b3c60d2ad",
+    "front.png": "e0b7e88677da430a24bf3f8438a3ace6c538f081dc58e86c909a460549cd39a9",
+    "back.png": "5c358c9e6f15bee2e919430345c06985b5af814dcc5af1f2b41e0f898961d3f0",
+    "west.png": "0304226454794dc64daf3f88f060bbb3b0d9081d00b6cad73280a68fc9f0029b",
+    "east.png": "67b78eac156da59e89bc4397d0f40fd850791e9be2648e7567073c5d480e1f78",
+    "top.png": "510594f2e56f3da8bd91637cda197da8d35f007dd065635f5d4422f2da3bfb3a",
+    "entry-detail.png": "b26ad63f3c7fb8d4ca72251b8672584fc3209dce78518b5a60f33b8c879eb5d3",
+    "facade-detail.png": "07a2ebfbcb44c48c382b72889c6e0248bee82c95e22ee3fa8225f174687c8f9b",
+    "roof-detail.png": "ef56acb47f1e33feceb3d29852c72d334fff0073b4ce5f146fe4093668920754"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at": "2026-11-02T23:47:35.967598+00:00",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2342.json": "cf70c15ad5aade07b5cee004da2ce89fe8aa1901ce47d01109e1481b1681ce1a",
+    "INDEPENDENT-DOMAIN-2343.json": "943a319e0966cdf2021fa936b3c0b5c46dd671741b277ebc9622fb22ea4357fb",
+    "INDEPENDENT-FINITE-FACET-CORRECTION-2341.json": "7ad306a1ded254332deeb8e71fe7801e226d16ff896a7805719cb66bc8aad54e"
+  }
+}

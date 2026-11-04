@@ -1,65 +1,34 @@
-# 國立高雄科技大學｜行政大樓中央曲面入口段
+# 建工行政中央片段｜兩完整曲磚帶局部米白
 
-## 模型預覽
+**局部補色未完成：僅兩曲磚帶米白；字區、玻璃簾背及其餘域未完成。非整棟、非全色或2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項`nkust-jianggong-administration-central-segment`／`count_delta=0`，沿建工校區原中央片段，不含整棟長翼。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![actual STL正面](previews/front.png) | 背面<br>![actual STL背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![下磚帶](entry-detail.png) | ![上磚帶](facade-detail.png) |
+| ![未證頂冠](roof-detail.png) | | |
 
-校區：建工校區。建築實體：建工行政大樓。
+## 原面材色範圍
 
-**本件是局部外觀段，不是整棟測繪；全校尚未完成。** 只含中央曲面入口投影、其左右各兩跨短段與前弧柱廊；全長辦公翼、完整中庭和屋頂天窗不納入，背面是截斷封口。
+只原半徑36、160邊圓柱真正外向facet的兩完整磚帶z45.7–51及77.7–83米白；以每個原facet平面與全部頂點核，不以面心／粗半徑或任意z切開原面。中間61.7–67帶有原模型未建文字，保中性，不能拿整片米白宣稱完成字區。最低暗緣帶、最高帶與冠帽、所有窗背／反光／簾／框混合域、側翼／柱／入口階／後截斷／屋面均中性，**中性不是實景灰色證明**。色界是來源覆蓋而非實景材質接縫。
 
-## 實際 STL 外觀
+兩帶各264原面合528米白，其餘17488中性；源審早252/帶因浮點法向量過嚴漏12極細三角，現以原160邊真facet全頂點/完整共面域補回，不留假斜楔；原GO歷程保留，綁`SOURCE-DOMAIN-COMPLETENESS-ERRATUM-2341.json`的SHA見source register。4320共面連通域一致；原facet有限切向半寬36sin(pi/160)及平面/全z容差1e−5mm均核，不是無限平面誤收。
 
+原18016三角與尺寸、STL/build字節不改，不新增文字、磚縫、欄杆或薄窗。原幾何是照片估讀近似，補色不追認精測／完整原貌。本次只中央入口片段，不擴展至原未建長翼。所有完整共面連通域同材，幾何全原樣。
 
-[正立面](previews/elevation.png)｜[頂視](previews/top.png)
+## 來源年代、權利
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 頂視<br>![頂視](previews/top.png) |  |
+三張來源已親看：會議頁前照、校方交通指引近照、門廊實照；2025是會議發表背景，不是認證拍攝年，三照capture均未知。不宣2026現況，門廊照不作未知後面色證。URL/hash在`COLOR-SOURCE-REGISTER.json`。原照私人保存不公開／不貼圖，未見CC不套repo開源license，名義HEX僅色族不是測色；不保證商用。
 
-## 檔案與尺度
+## 檔案與 QA
 
-- [model.stl](model.stl)：毫米（mm），含底座 150 × 94 × 121.2 mm，最長150mm
-- [scene.blend](scene.blend)：同一STL匯入的可編輯網格，可編輯頂點，不是原建築CAD
-- [獨立參數生成程式](build_model.py)｜[固定依賴](requirements.txt)
-- [來源、日期及範圍](sources.json)｜[逐檔SHA256](SHA256SUMS.txt)
+`appearance.3mf`兩展示材、`scene.blend`真面材、`color-mesh.npz`原三角與材索引。原STL無色/build保原字節。Immutable原包沒有OBJ；不冒稱保留原OBJ，也不新增為原件。
 
-各館獨立縮尺。原建築尺寸未測量；圖面只作體量與棟界參照，不能用於工程、結構或測量。單色模型用凹槽與框體區別實牆和玻璃，無原材質貼圖。
+原README另存`ORIGINAL-MONOCHROME-README.md`或`.zh-TW.md`，舊previews／QA保單色歷程，不冒稱新色驗證。依requirements跑`colorize_model.py`、`export_appearance.py`、`validate_color.py`；Blender執行`render_color.py`、`verify_color_scene.py`。全原build+color隔離重建保留不刪；3MF/STL三角multiset/封閉正體積／scene reopen／10張1200×900見COLOR-*QA、SCENE-QA、DELIVERY-QA。父另人工終審。
 
-## 主要特徵
+**未實際列印。** 兩展示材非已驗四色切片工程，支撐、薄部與材料映射須另驗。
 
-- 中央五條連續曲面玻璃帶，對應第三至第七樓的可見窗帶；底部為兩層高挑空，不把七樓用途數畫成七條中央窗帶。
-- 前弧五支主柱、寬穿堂及弧形入口階；鄰接翼段有七列窗，主柱跨與細窗梃分別處理。
-- 最高一層同時向前及左右擴徑，並提高至其他層上方；下方保留短放射托梁。
+## English limitations
 
-## 證據限制與省略
-
-- 原照片未標攝影日期；2025研討會網站年份不是拍攝年份。原圖未有可用EXIF拍攝資訊。
-- 中央曲面弧度、柱距、進深及左右截取範圍為照片與疏散圖近似；細窗梃加粗及減量，不聲稱逐片玻璃尺寸完全相同。
-- 完整中庭／天窗、後側立面、全長兩翼、室內、文字、植栽與設備不重建。底層穿堂保留開放，而上層背面是局部截斷面。
-- 2024平面只有疏散示意用途；並非比例可靠的竣工圖。
-
-## 列印前須知
-
-底座朝下。先用自己的切片軟體檢查尺寸、細件解析度、橋接與支撐。柱廊、挑空、雨遮、陽台、屋頂欄杆與擴徑懸挑可能需要支撐，拆支撐時可能損傷細件。細框已粗化，但材料、噴嘴、層高和工具路徑仍會影響結果。
-
-**數位QA不等同實體試印，不能保證免支撐或成功列印。** 0.8mm參考寬度的XY形態opening是輔助篩檢，不是全面最小壁厚、強度或Cura／Prusa工具路徑證明。
-
-## 重建與數位QA
-
-安裝 requirements.txt 的Python 3.12環境後執行 python build_model.py。使用Blender 4.3.2執行 blender -b -t 2 -P render_preview.py，從實際STL產生四視圖及可編輯scene.blend。python run_checks.py 執行所有檢查；任一失敗非零退出。驗證會產生報告，請在副本操作，不改凍結原包。
-
-- [原始網格／保存normal與winding／重建SHA／Blend一致](validation.json)／[程式](validate_model.py)
-- [0.2mm全層閉環及個別、合成Polygon valid](contour-validity-check.json)／[程式](check_contour_validity.py)
-- [canonical fail-closed v3](thin-feature-check.json)／[原程式](check_thin_features.py)
-- [canonical SHA與結果嚴格檢查](strict-thin-check.json)／[程式](check_thin_strict.py)
-- [額外0.2mm全層thin](thin-all-layers-check.json)／[程式](check_thin_all_layers.py)
-- [完整QA摘要](QA-summary.json)
-
-原網格單殼、水密、每邊2面、vertex link單環、原法向與winding一致及正體積通過；未用修補修改輸入網格。所有輪廓從z=0.071mm起、以0.2mm逐層檢查；invalid立即失敗，不以buffer(0)或make_valid放行。獨立重建STL SHA一致，保存Blend幾何與STL一致。
-
-第三方照片及PDF不重新散布，只附來源URL與證據摘要。這是自建的近似建築外觀模型，非官方或授權測繪成果。
-
-[回校區](../../README.md)｜[回學校圖鑑](../../../README.md)
+Partial color only: two complete original radius36 regular160gon outward spandrel fields, z45.7–51 and77.7–83. Lettered middle strip, all windows/curtains/reflections, crown, lowest darkedge, wings, columns, stairs, rear cut and roof remain unverified neutral. This is the central photographed segment, not the complete administration building. Original18016triangles and STL/build bytes unchanged; no new geometry/letters or face splitting. Conference2025 is not authenticated capture date; all source dates unknown, not2026condition. Nominal color families only, count_delta0, source photos private, not physically test-printed.

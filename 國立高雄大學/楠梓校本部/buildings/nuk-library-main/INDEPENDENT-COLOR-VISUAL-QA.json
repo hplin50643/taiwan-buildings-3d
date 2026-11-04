@@ -1,0 +1,51 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Parent personally viewed all four official photos, original primitive code, preview and final ten-view montage; independently recomputed both complete screen outer field domains and three front pier outward faces, all triangle coordinates and coplanar uniformity.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Only true front125/reverse127 screen fields and three front pier faces6 have pale reference color.",
+    "All3246 coplanar connected domains uniform;258 pale and12338 neutral triangles.",
+    "Whole mixed brick/plinth walls, window backings, crown grids and roofs remain neutral; no wall z threshold. All screen groove floors, sides and backs neutral.",
+    "All ten captions identify partial approximation NOT2026 complete condition and partial coloring; seven full views fit geometry, three closeups intentional.",
+    "Original12596 triangles, STL/OBJ/build bytes unchanged; color review does not validate original main-block approximate geometry or current condition."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "83e1930940e10eb5b9329f16290cf43f210e2386bd75ed9828712cfb27fdffb6",
+    "README.zh-TW.md": "83e1930940e10eb5b9329f16290cf43f210e2386bd75ed9828712cfb27fdffb6",
+    "colorize_model.py": "6d36261a6a8ed23f8e24da3756c27d8ee83a4084c7169906617be9dace4783e2",
+    "render_color.py": "92e6fb9caa5dc5d997a610e68904843466f7d61693b2adfbfa0bd52486736815",
+    "color-mesh.npz": "b38f1d73c4211649c667b692262126c53b916f1be67d4b111761d6c9d8572e8e",
+    "palette.json": "1a954352e1a14d97bd11afd2ad3cdbceb9e3e2084212dc385a2cd2ff95b7643d",
+    "appearance-materials.json": "88901c618fd75f0ace6442b57f5f97ab2ae0d37bd51e09dfe328d299ea34ecb4",
+    "COLOR-SOURCE-REGISTER.json": "86f0b83a42b57c843dee2ac707f4723043f14ed318d67e28f1137c206d1be23b",
+    "model.stl": "75adb22859253404b84620cb1960576f44b3b89b9a7bd100809056341755c94a",
+    "model.obj": "740c91c206b70fa5653f13ad412c5a19a3a56ad99db88af38e014bb80248d3de",
+    "build_model.py": "06a7e5fcbc68a360ea64309815f620e8e6daa68899353086ffdfe2d480ba73d3",
+    "preview.png": "32afad86ae8266b1aff589dcb57c832b7b30ba4a9324efe80a29ce1fb891a4f0",
+    "rear.png": "9e96a4b1f880399a610d8359d543360e24b6f68002b9afd0ccba491717757024",
+    "front.png": "e5b7d2f8c4b8d5c7e02f3fdbe497bfcd87ab5e76a50e41b7b3e9e2e875909087",
+    "back.png": "0db783c43fdc1e994f37476d0a1c23479ee210e3dff3271c1c16e9af79d09451",
+    "west.png": "fc3cf644d824cf31c3dea4dc795d11b242bf33f42f60a7eab491ebd7383af81b",
+    "east.png": "82c3b92744e65217b520f94aad4d87eba2cf3b0fbcb16b35be07752a707e5e93",
+    "top.png": "53293149b686591795de7c72900234e1cd559666329848910dd02c88f2fd4a99",
+    "entry-detail.png": "8b7c05cbbd96c179f91fcad804333ae565c456bd7326bac921766c10b38ad8f3",
+    "facade-detail.png": "389eb60bc57885297b73341c857eef19b66169d931178f0fb036c8821286b819",
+    "roof-detail.png": "5885192399db9582ced099108454533dabe5144c45ddafb160b0c4c78ee7b148"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at": "2026-11-02T23:31:56.725245+00:00",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2329.json": "6e7653b6e8f11a86224069baecc633ed60fbf54386f6ff01663e4acc38ea7e6e",
+    "INDEPENDENT-DOMAIN-2329.json": "b761d13b152ca91546505e1682a86191319284907a0a64c825ec08b73c6b2088"
+  }
+}

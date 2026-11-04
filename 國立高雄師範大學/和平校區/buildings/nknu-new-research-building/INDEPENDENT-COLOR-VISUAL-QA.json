@@ -1,0 +1,66 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "manual_review": "Parent personally viewed two official exterior photos, original entry primitives, preview and final ten views. Independently recomputed6 true canopytop gray and6 two pier fronts offwhite;all mixedfascia, solidrail proxies, walls/windowbacks/roof neutral. Seven full views framed,three intentional details. Original8796triangles unchanged;partial/new sevenstory building not demolishedold, article2020/path2026 not capture.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "original_face_count": 8796,
+  "material_faces": {
+    "graytop": 6,
+    "offwhitepillarfront": 6,
+    "neutral": 8784
+  },
+  "connected_coplanar_domains": 2199,
+  "original_OBJ_exists": true,
+  "file_sha256": {
+    "README.md": "37488c83fe766fc0ef0a48f48684c53741a88ca127b3c454d904f0825e09bca9",
+    "README.zh-TW.md": "37488c83fe766fc0ef0a48f48684c53741a88ca127b3c454d904f0825e09bca9",
+    "model.stl": "6eec5d4549ee730f13ae66273ea4cbb4ee4d11a942d8dc7686fb931fe534a373",
+    "model.obj": "cfcf907e60fa529bfeb668bf2e9febc8eb3e90100f4d130579db4aefa5992b8e",
+    "build_model.py": "6258e3e800fa571c7ac0bbc77d6dba9c83ef2d9c311680342dadac81ed6a4e83",
+    "colorize_model.py": "e4ec19415ed28d0c88bfd7a4d442f9ad0ff128af376d93591c0ca2dceebe63d4",
+    "render_color.py": "3038ec94ec9ba98a0173f140b803d463836817f5183b0f34b8c2389a3122dc59",
+    "color-mesh.npz": "68823aea78d808276adfa630850b276147f08d0592d9027ea42fe0f17426894d",
+    "palette.json": "28fec85327ac5cdc38a0677bbc500dfef958552ebc14a221b9b1e5b71f7df9c0",
+    "appearance-materials.json": "abb38857ad158151dfbd6e4522680715d91933c571871eb09bbb60947c643a75",
+    "COLOR-SOURCE-REGISTER.json": "b68004929aefe874ffe302dc0c4e8239d43ae1ac77c56ef827ae8172e64dd382",
+    "appearance.3mf": "bb5548ba68594b28531f76c2bbd6201b3fff9249f46c1bca7cb9b7b237720430",
+    "scene.blend": "78a8974174dc61735d22ac10e88e8006017c2d7a10b175a00444fccc53e3a3a9",
+    "preview.png": "1e3781cf161772217548eb16c914410aadbfb6f5c310ee25344d32b4762221cd",
+    "rear.png": "227306776fa06f7d3465f7456aec21333171b9188a172474122c6d88fcb429ad",
+    "front.png": "6892079b8a95173f0e7154ea3718abea97d1ea7ec65419d2dcb9db62c5cd066d",
+    "back.png": "34ce4bb9a905aeb0c298efdcd41e011ad42e06b1b1172daa994edfc664912f4b",
+    "west.png": "a375148a8568c73a9a75b9e587a36f089c3de1d83a3741667e7a698bfceeefcd",
+    "east.png": "ed3d6fa93be70b810666a56a06fb3f871e4b5f2ea53f8ddbcf8766992323e4d6",
+    "top.png": "41d6ebfaacd6a64dd353249a588dc6b4122a16c706a212a693d62648255b3689",
+    "entry-detail.png": "a99725ec5ce62611fbc3ff5726b2352c0908724487b59af32e2cfeda1fbfc5ee",
+    "facade-detail.png": "98ea98e2c478e696374eb3af0718963f506a8e336edff5f70df5a4897e2e7bfc",
+    "roof-detail.png": "8189e2444b4104a0c82c839f78bace5df43d98087af5b3cd48b935cbfc1e2cbc"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "1ca5bf5c9facc5160d10cda1606981911b7ce28fce32cf4fb05da365e959ad67",
+    "COLOR-ASSIGNMENT-QA.json": "e176f398d47d92d008452e22fa3013eaff2c3b1854801c4e719e2f382aadcf76",
+    "SCENE-QA.json": "adfde4a2e93eb8859da6eff6f8d2d6f5974d69762d97105e5c7ce93445dfff49",
+    "FRAMING-QA.json": "e7565ca1d19f01abba0e2d1d6e50e05ebdc9bb0d2ff68b8da5984e69bc3da7ea",
+    "DELIVERY-QA.json": "139bf71e39b3e55dd5e408445cd7a9bd1af8bf2c0a1d0d70f65a936f6a99547b"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "ed8c381dc65fec0d647af427b0535e00f72a0efb740d4799207ffa8cb2554231",
+    "ORIGINAL-RETENTION-QA.json": "7e2d82e26b836d8f658ee50f94ba0febaff161694f698c5578c4bca7de936961",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "d951f6028c6c35b5bcd8ff58e15a71c38a0ddbf570ecc79218677c58f34f56cb",
+    "ORIGINAL-PACKAGE-READBACK.json": "5de547179fb6b0cfdf762b72cd69acd377fd6be63a7305f3e0e7c556a5c64413"
+  },
+  "montage": "private-review/final-v1-ten-view-montage.jpg",
+  "limitations": [
+    "Capturedateunknown;2020article/2026attachment not photodate",
+    "Newbuilding only not demolishedold",
+    "Only12faces notfullcolor",
+    "No physicalprint/verified4filament slicing"
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at": "2026-11-02T23:39:53.004609+00:00",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2336.json": "47054af693e1f03dd275cbb17dd794e301f39ccd7e70e72d33b04f39dac4c853",
+    "INDEPENDENT-DOMAIN-2336.json": "e860ec77f2f92a0e545fd01e1abd099934058cded218ee78c31f75fae06edab0"
+  }
+}
