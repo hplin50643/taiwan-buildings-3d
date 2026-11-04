@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "JUST Library I observed upper setback cap pale warm gray",
+      "hex": "#CECBC2",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 1580
+    }
+  ],
+  "domain_face_indices": {
+    "whole_upper_setback_cap_front": [
+      1448,
+      1462
+    ]
+  },
+  "coplanar_components": 455,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1582 original triangles unchanged",
+  "limits": [
+    "Entire upper slab top, underside, left/right returns and rear remain neutral; no material-family extrapolation from its front edge.",
+    "Main three-rank screen mixes pale panels, darker windows and frames without complete original material boundaries; no blanket pale facade or black window backing.",
+    "Right tower contains multicolor banners and sign elements absent from modeled surface; no all-gray tower.",
+    "Ground-floor piers, entrance canopy and lower walls partly vegetation-obscured or not fully matched; remain neutral.",
+    "Roof room, lower roof terrace, stairs, base and unlisted faces remain neutral.",
+    "Rear was deliberately modeled blank for lack of clear rear photograph; not inferred from front.",
+    "Preserve1582 original faces and existing geometry; no face splitting, new material boundaries or OBJ generation.",
+    "Nominal pale gray family only, not calibrated stone texture or complete building coloring."
+  ]
+}

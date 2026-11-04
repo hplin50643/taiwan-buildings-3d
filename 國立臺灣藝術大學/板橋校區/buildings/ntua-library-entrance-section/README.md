@@ -1,40 +1,29 @@
-# 國立臺灣藝術大學｜圖書館球體入口立面段
+# 臺藝圖書館入口鄰段｜兩柱前半局部銀灰
 
-## 模型預覽
+**球體、牆窗與其餘面尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。只有兩支柱前半52原面名義銀灰，非全館完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面（直接STL）<br>![正面](previews/front.png) | 背面（直接STL）<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![兩柱](entry-detail.png)|![左柱](facade-detail.png)|
+|![右柱與帽交接](roof-detail.png)|||
 
-板橋校區。這是根據公開外觀照片自行製作的3D列印縮模，不是官方測量或施工模型；實際尺寸不詳，模型採獨立展示比例。含底座最長邊150 mm；檔案單位為毫米。
+## 材色範圍
+同 ntua-library-entrance-section 原項目，same-item、count_delta=0。國立臺灣藝術大學板橋校區圖書館入口鄰段，非完整六層圖書館。原17682三角及STL/build_model.py字節不變，17原件無OBJ，原code可重建輸出OBJ不等於有原件。
+- 原兩24邊柱中心x−52/−16、y−32，r1.4、z3..25，前半各12有限facet，共52原三角。全3頂點核chord plane/tangent/z，原Boolean四片交接完整保留，不用normal閾漏碎面。
+- 其餘17630面中性：柱後半、帽、球體實心代理與原凸格、玻璃代理、透明雨棚的原實心皮、五角窗/背板、斜撐、牆體與裁切背。
+- 實照為透空鋼格球，原模型為實心曲體加凸格，不能整球染銀當真實鋼網。保留既有近似構造，不新增孔或結構，不因色審追認幾何。材色邊界是證據範圍，不是真實半柱材縫。
 
+## 來源與日期
+親看官方日照與夜照。日照兩入口柱可支持名義銀灰；夜照只作位置對照，不取藍黃照明色。EXIF2010-07-25時鐘與時區未驗，不稱2026現況、URL數字不是拍攝時間。色族非校準材料。原照私人保存、不公開、不作紋理、不建人物，未確認再散布或CC授權，不保證商用。
 
-## 檔案
-- [STL](model.stl)
-- [可編輯Blender場景](scene.blend)：列印網格可編輯，與交付STL三角形幾何一致；參數來源另見Python
-- [參數建模](build_model.py)・[依賴](requirements.txt)・[渲染](render_preview.py)
-- [原始網格驗證](validation.json)・[0.2mm輪廓檢查](contour-validity-check.json)・[0.8mm細節篩查](thin-feature-check.json)
-- [來源紀錄](sources.json)・[SHA-256](SHA256SUMS.txt)
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150mm底座示意尺寸不是測量比例。實際物件名 NTUA Library Entrance Section partial color，獨立核對真slug/館名。STL無色；3MF與Blender逐面分材，兩材標籤不是兩色或四色耗材切片驗證，未實際列印。
 
-## 外觀與限制
-球狀玻璃入口、入口圓柱底層、可見格柵、非規則多邊形窗、水平退縮帶及左側較高量體。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes/全三角multiset、共面均一、閉合正體積、3MF面材、scene重開、十圖1200×900與hash。原README/previews/validation保留歷史，不冒充新QA，不刪檔。
 
-只重現公開照片可見入口與相邻正立面段；不是完整六層圖書館。切段背面、進深、頂部收口及窗位為估計。玻璃使用實心曲面，格柵為加厚淺浮雕；沒有虛構透明可列印材料或室內。官方首頁「圖書館願景」效果圖未用作現況依據。
-
-## 列印與數位QA
-建議0.4mm噴嘴、0.2mm層高起始試切片，底座平放；請先檢查切片預覽。球體下緣、入口雨庇及斜撐可能需要樹狀支撐；格柵細節在0.4mm噴嘴下可能糊合。
-
-原始STL檢查包含水密、每邊兩面、頂點link單一循環、原始法向、正體積、單一連通表面、無獨立內腔殼、150mm、獨立重建SHA，以及保存的Blender幾何相符。0.2mm層截面檢查degree2閉合及個別／組合Polygon valid。0.8mm檢查是每1mm高度的形態學開運算篩查，銳角也可能被標示；不是全面壁厚測量。
-
-這些僅為數位QA，不是實體試印、真切片驗證或對所有自交的窮盡證明。底座與主體為單件；部分細節被加厚或省略以便列印。
-
-## 重建
-Python 3.12 安裝requirements.txt後執行build_model.py，再以Blender 4.3.2以上執行render_preview.py。依序執行validate_model.py、check_contour_validity.py、check_thin_features.py。validate_model.py必須exit 0，且validation.json每個checks欄位為true。
-
-## 來源
-- https://lib.ntua.edu.tw/wSite/mp
-- https://lib.ntua.edu.tw/wSite/ct?ctNode=862&mp=1&xItem=76003
-- https://lib.ntua.edu.tw/wSite/public/data/f1664124832118.jpg
-- https://lib.ntua.edu.tw/wSite/public/data/f1664174889180.jpg
-
-來源照片與PDF權利屬原權利人，未附在本公開模型資料夾；僅提供原始網址。STL、參數程式與預覽皆為本案自行製作。
+## English scope
+Partial only:52 original triangles on the complete front halves of two24gon entrance supports, nominal silver gray;17630 neutral. Allthreevertices tested against finite chords/tangent/z, including Boolean fragments. Original17682 triangles and17 immutable files preserved;no originalOBJ, even though original code can export a rebuilt OBJ. Solid globe proxy is not the real open steel grid and remains neutral, as do canopy, glazing, walls and back. Entrance adjacent section not full library. EXIF2010-07-25 with unverified timezone/clock, night illumination not material evidence;not2026 survey. Sameitem/count0/no geometrychanges/no filament test.

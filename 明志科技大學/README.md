@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![體育館主館實際STL預覽](泰山校本部/buildings/mcut-gymnasium/previews/front.png)](泰山校本部/buildings/mcut-gymnasium/README.md)<br>**[體育館主館](泰山校本部/buildings/mcut-gymnasium/README.md)** | [![創新大樓入口立面段實際STL預覽](泰山校本部/buildings/mcut-innovation-facade-segment/previews/front.png)](泰山校本部/buildings/mcut-innovation-facade-segment/README.md)<br>**[創新大樓入口立面段](泰山校本部/buildings/mcut-innovation-facade-segment/README.md)** | [![圖書資訊大樓入口立面段實際STL預覽](泰山校本部/buildings/mcut-library-facade-segment/previews/front.png)](泰山校本部/buildings/mcut-library-facade-segment/README.md)<br>**[圖書資訊大樓入口立面段](泰山校本部/buildings/mcut-library-facade-segment/README.md)** |
+| [![體育館主館實際STL預覽](泰山校本部/buildings/mcut-gymnasium/preview.png)](泰山校本部/buildings/mcut-gymnasium/README.md)<br>**[體育館主館](泰山校本部/buildings/mcut-gymnasium/README.md)**<br>[局部材色3MF](泰山校本部/buildings/mcut-gymnasium/appearance.3mf) · [範圍與限制](泰山校本部/buildings/mcut-gymnasium/README.md) | [![創新大樓入口立面段實際STL預覽](泰山校本部/buildings/mcut-innovation-facade-segment/preview.png)](泰山校本部/buildings/mcut-innovation-facade-segment/README.md)<br>**[創新大樓入口立面段](泰山校本部/buildings/mcut-innovation-facade-segment/README.md)**<br>[局部材色3MF](泰山校本部/buildings/mcut-innovation-facade-segment/appearance.3mf) · [範圍與限制](泰山校本部/buildings/mcut-innovation-facade-segment/README.md) | [![圖書資訊大樓入口立面段實際STL預覽](泰山校本部/buildings/mcut-library-facade-segment/preview.png)](泰山校本部/buildings/mcut-library-facade-segment/README.md)<br>**[圖書資訊大樓入口立面段](泰山校本部/buildings/mcut-library-facade-segment/README.md)**<br>[局部材色3MF](泰山校本部/buildings/mcut-library-facade-segment/appearance.3mf) · [範圍與限制](泰山校本部/buildings/mcut-library-facade-segment/README.md) |
 
 首批3件：體育館主館外觀近似、創新大樓入口立面段、圖書資訊大樓入口立面段。兩個入口段不是整館模型。各件最長150mm含底座、獨立縮尺，不是全校統一比例。
 

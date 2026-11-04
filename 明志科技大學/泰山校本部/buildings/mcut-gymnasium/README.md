@@ -1,37 +1,29 @@
-# 體育館主館｜明志科技大學
+# 明志體育館｜兩上陽台前緣局部銀白
 
-## 模型預覽
+**欄杆代理、玻璃塔牆與屋面等尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅兩上陽台樓板前緣4面名義銀白，非全棟完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面及背面並排](previews/front-rear.png) |  |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![兩上板](entry-detail.png)|![下陽台板](facade-detail.png)|
+|![上陽台與欄](roof-detail.png)|||
 
-泰山校本部／主館外觀量體研究；非實測復刻。每件各自縮尺，最長尺寸含底板150mm，非全校統一比例。尺寸：150.00 × 145.00 × 117.80 mm。
+## 材色範圍
+同 mcut-gymnasium 原項目，same-item、count_delta=0。明志科技大學泰山校本部體育館主體單群，不含相鄰樓或整片廣場。原5992三角及STL/build_model.py字節不變，19原件無OBJ，原code可重建輸出OBJ不等於有原件。
+- whole y−52平面8三角為4完整共邊矩形；只選上部z71..72.8、85..86.8兩完整樓板前緣各2面、x−64..41。下部z35/53是另一遮陽構件，全中性。這是完整構件身份，不是切割連續面取高處。
+- 其餘5988面中性：y−51.8實心欄板代理不是實景透空欄杆，原玻璃含窗簾/框、徽牌混藍白、全高柱/塔、曲屋前後/頂底、側背、樓板上下與回邊均未證完整材域。
+- 原近似窗列與形體保留，不新增徽標、欄杆或未見部分；補色不追認幾何精度。中性材界只是證據範圍，不是真實材縫。
 
+## 來源與日期
+親看兩日照主體外觀，兩上樓板下方完整淺面板支持銀白族；不把細金屬欄移植到原實板。照片拍攝日未證，2023頁面更新不是capture，非2026現況。名義色族非校準色票。原照私人保存、不公開、不作紋理、不建人物，未確認再散布或CC授權，不保證商用。
 
-## 外觀與證據
-深向曲面屋頂、兩層外挑陽台與深凹廊面、下層玻璃格帶及遮陽板、左側大面實牆與直向格窗、右側較高標誌塔及地面挑空。校徽、文字、細欄杆與戶外燈桿未複製。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150mm底座示意尺寸不是測量比例。實際物件名 MCUT Gymnasium partial color，獨立核對真slug/館名。STL無色；3MF與Blender逐面分材，兩材標籤不是兩色或四色耗材切片驗證，未實際列印。
 
-前面及左側有校方與營造商實照；後面、右後側、整體進深與屋頂曲率只有視覺近似。主館與鄰近綜合大樓、電子館、平台廣場未當成同棟建模。底板與階梯簡化坡地，不是原地形。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes/全三角multiset、共面均一、閉合正體積、3MF面材、scene重開、十圖1200×900與hash。原README/previews/validation保留歷史，不冒充新QA，不刪檔。
 
-[完整公開來源與限制](sources.json)。照片已實際目視；照片拍攝日期未確認，網頁日期不當作拍攝日期。這是公開照片外觀研究，沒有測量資料，不保證是2026年當下外觀。第三方及校方照片只用於私有外觀審查，不包含於公開資產；未擷取任何他人3D網格。
-
-## 檔案
-- [STL](model.stl)／[可編輯Blender網格](scene.blend)／[Python重建程式](build_model.py)
-- [原始STL、重建SHA與Blend幾何驗證](validation.json)
-- [每0.2mm輪廓閉合與Polygon有效性](contour-validity-check.json)
-- [0.8mm薄特徵數位篩查](thin-feature-check.json)
-
-## 列印與數位QA限制
-原始STL檢查：水密、每邊兩面、vertex-link單循環、單一連接表面殼、無分離內腔殼、正體積、原法向一致、150mm上限、獨立重建SHA相同、savedBlend三角幾何一致。輪廓檢查在0.071mm起點逐0.2mm取樣，所有點degree 2且閉合，逐輪廓及組合Polygon皆有效；未用repair或buffer修補。薄特徵篩查使用canonical shared-edge方法，在1mm取樣斷面作0.8mm形態開運算，非全面壁厚分析。
-
-曲面屋簷、兩條陽台、遮陽板、格窗及地面柱廊上方需局部支撐；薄格柵採約1.0至1.1mm附牆浮雕，圓柱最細直徑3.4mm，仍需檢查橋接與拆支撐風險。
-
-以上只是數位幾何QA，並非真正切片器驗證，亦未實體試印。底板朝下，0.4mm噴嘴及0.2mm層高只作切片起點；請逐層檢查支撐、橋接、細件、收縮及支撐可拆性，不保證免支撐。
-
-## 重建
-Python 3.12安裝[requirements.txt](requirements.txt)，執行build_model.py。用Blender 4.3.2或以上背景模式執行render_preview.py，將實際STL匯入、渲染預覽、儲存scene.blend。再依序執行validate_model.py、check_contour_validity.py、check_thin_features.py；三者退出碼須為0，validation.json所有checks須為true。
-
-STL SHA-256：a1811eb3ebc0fa47f8f2a0db1386fbb280d186fd9d8b1da614a2c40c6ef1b36e
-
-[校區圖鑑](../../README.md)／[學校](../../../README.md)
+## English scope
+Partial only:4 original triangles on two complete upper balcony slab-front rectangles silver white;5988 neutral. Whole y=-52 plane has4 complete components with8 triangles; lower2 shades remain neutral. Railing proxy at y=-51.8 is not the open metal rail in photos and remains neutral, as do logo, curtains/glass, columns/tower, curved roof and backs. Original5992 triangles and19 immutable files unchanged;no originalOBJ even though originalbuild exports one. Captureunknown,page2023 update notcapture/not2026 survey. Sameitem/count0/no geometrychanges/no filament test.

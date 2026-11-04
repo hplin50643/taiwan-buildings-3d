@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete section views and three intentional front canopy closeups.",
+    "Two complete canopy fascia front rectangles red brown, centre gold-letter sign kept neutral.",
+    "49 upper fins, colorful stair, mixed wall and glazing, canopy top underside returns and rear cut all neutral."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 3558,
+  "material_face_counts": [
+    4,
+    3554
+  ],
+  "connected_coplanar_domains": 739,
+  "original_obj_present": false,
+  "original_files_retained": 20,
+  "file_sha256": {
+    "README.md": "6c0d2fd6025d29d465b6ad2454ce7834dc9bce9a5ee726fc76d9e6f91bb19cd8",
+    "README.zh-TW.md": "6c0d2fd6025d29d465b6ad2454ce7834dc9bce9a5ee726fc76d9e6f91bb19cd8",
+    "model.stl": "754ab50813fe86bbe2c2cf8d2b4906e6777d67ce8c1dbcbce93f11739839f5f2",
+    "build_model.py": "8153248f7683ccfcb7751fa45cb8b4c87327c9e845572652bcd0a396c81ccf50",
+    "colorize_model.py": "c0eae105742eaa03e58c44c94f04edd685ee7e21d6f7c3696c03e7d717fce71e",
+    "render_color.py": "7a0bb9b80309bbd264ba8d08daf7cf1c7457b40f9efa822b3782d60923126f13",
+    "verify_color_scene.py": "a2f6878c4288e4127b70f122705da3789f48b14f226eafacb9940d84d1bc3dc8",
+    "validate_color.py": "307721bebd6c1bfc715da63aa4eaaca2f0c9fb0828a183305c36f7d520846594",
+    "color-mesh.npz": "87ec53eaf428132aa8bff68b4680680130c989287071d4bf9e1b517ead3702cb",
+    "palette.json": "c2ec5094572b055e910174529b36dd3bd8b7bfe65371394558cd59bae3198123",
+    "appearance-materials.json": "e3c68efc43eb04b1fe07543f5e845b17068b5dd9f9e5dab5905989fbff077815",
+    "COLOR-SOURCE-REGISTER.json": "acbf9854b2eabcefe970e7986de6a15e60b8d5f7751aed091d9a00d70fde1327",
+    "appearance.3mf": "5d68888daefae7c25ac31dea13efce310b02807d5382bb74959d91973bce64a7",
+    "scene.blend": "1709e36993354c6e10fa255055e1fb0b73d96d704ed9c66240c33f57e82203e7",
+    "preview.png": "9447255f727b383908702e340cc8fceef7f8c591276cced54a82a3f7ba582fe9",
+    "rear.png": "225aaddaec48a33956e8dcba1ab2967fd25d0ec6dbdd7e6d9e184460d23fe116",
+    "front.png": "2fe09ee8e66cda0ccfeb52104fdc252b877bf72d411842c0d70ea752e079c0c3",
+    "back.png": "254bd5244c50ab43bcd8cb018e2be8fb898abe02492ee00108dcc06307f4f696",
+    "west.png": "f118cb1ca80ed3f2d251fa6d37f1eb43c64de51d7e16682cd4c6f0ab3811e4c2",
+    "east.png": "cce81387ebb70713703240d263a1316e2a4da7055ebaa2acfc9520e87c129151",
+    "top.png": "b8d65a2c9af960bbc337f58326968b7c6f080d25ed0527b97649a5f7ec3b0f10",
+    "entry-detail.png": "9fa504daf90d38502f0590bd65af43a4a0b5057e950f030159c5db288724c731",
+    "facade-detail.png": "e4925a234ba1571b5ba1ea8ebc6b9fd69bb3459441fed0ac48254fcd7a14306a",
+    "roof-detail.png": "294deb227ff7a0c41668d531438e5324cb2d5e27000c4f8e5bdf18a272b47a9e",
+    "export_appearance.py": "4b0297f405e3894d1f743b750e1e5a84d4e7f90c7149161820138bcea380e71d"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "694ec794186e10cfa90179b0728c6a787b465e9f0fe9782b193b1776e54b6e5b",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "89a64dc603cff33e6aca1c70b6996b219a4d5ea8c032ddaebf63838bca403c7a",
+    "SCENE-QA.json": "abaefe750e2cf83e19ed42d2c45f82443ace0174b810bce45b23d6c439f2c3c1",
+    "FRAMING-QA.json": "a19dddbf03aaaa9d914c30272553791d2ea5c3b8f7dc20fa3941672ecebd542d",
+    "DELIVERY-QA.json": "729499d261d2f3e7a3744a302a1ad7ba530f17c73704e4a45be6d14ee6671980"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "8c81e50053d6ebaa6ebcdd0c9a3dafb832616cf120c5bdd7e87452278053e8a9",
+    "ORIGINAL-RETENTION-QA.json": "e5a59348e52be5bc2a768dfc4d2c7c9154bb57201850f5dd8f900d45f4c4e8bd",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "2437a92e09effdeb00c467c85976a454d7d2062240759c91b03b620374f74ad2",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "d91ba18c5f3ce33ab0b66449a6ded6e5f107148c646dc0d87d4e3530a715f07a",
+    "INDEPENDENT-DOMAIN-0628.json": "8da4fe0067f701b2710e83eeb48b6464a70446306449bb4e49801c31deb518e3",
+    "INDEPENDENT-IDENTITY-0628.json": "0b5fa7f2ce2e106cb00d5a458d1d13666c3a7e9d8ca7e0b84ac26250102185d9",
+    "INDEPENDENT-PACKAGE-IDENTITY-0631.json": "d91ba18c5f3ce33ab0b66449a6ded6e5f107148c646dc0d87d4e3530a715f07a"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "2968d770b445458a94082f91a9b37ccaba694ba65a93314364450e942f2762b8"
+  },
+  "limitations": [
+    "4 original canopy-front triangles;3554 neutral.",
+    "Whole y=-15.8 plane equals two complete finite rectangles, no discarded fragments or artificial clipping.",
+    "Original3558 triangles and20 immutable files retained;no originalOBJ.",
+    "EXIF2023-09-02 without verified timezone/clock, not2026 condition; west elevation section not full building."
+  ],
+  "history": [
+    "Verifier scale property corrected before preview gate to actual original150mm-base; initial template preserved privately.",
+    "Source slug/intake correction retained privately, not an additional building."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T06:31:20Z",
+  "parent_review": "Parent personally viewed photos18/22, originalcode, preview and all10 finalmontage. Whole original y-15.8 plane4 exactsharededge two complete2tri canopyfascia components; central sign union separates left/right, no colorcut. Exact rawmultiset equals NPZ4 redbrown. All3554otherfaces neutral including goldletter sign,49fin array mixedfans/treeocclusion, columns, paintedstairs/glassbacks and walls. Westfacade fragment not full center; EXIF2023-09-02 withouttimezone not2026 completion. Actual explicit NTUB Student Center West Facade identity independently matches3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3frontdetails show bothredfascias and neutral sign. Original3558triangles20files/noOBJ unchanged; sourceintakealias correction private not anothermodel; partial only."
+}

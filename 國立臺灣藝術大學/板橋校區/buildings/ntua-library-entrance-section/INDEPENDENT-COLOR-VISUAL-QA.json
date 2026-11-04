@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete section views and three intentional entrance support closeups.",
+    "Two complete original24gon support front halves silver gray; rear halves and canopy intersections unchanged.",
+    "Solid globe proxy, opaque canopy and glass backings remain neutral; no open-grid geometry or night colors invented."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 17682,
+  "material_face_counts": [
+    52,
+    17630
+  ],
+  "connected_coplanar_domains": 5012,
+  "original_obj_present": false,
+  "original_files_retained": 17,
+  "file_sha256": {
+    "README.md": "3daf720c14220840be9681be2291567957e70f2108ce495ab9ffbaca621ca72b",
+    "README.zh-TW.md": "3daf720c14220840be9681be2291567957e70f2108ce495ab9ffbaca621ca72b",
+    "model.stl": "0c326c24f88f5572c7ca74f373e5ab9ded637749224de6a8ac8f2a18da6b4da5",
+    "build_model.py": "82ea4a7a12c1109211f422c5510902550bb8e19a29935babf9fba2e53ba2590e",
+    "colorize_model.py": "c1315b7cd17ef0f52c7f5c2e8948fe777be8278c6ee0411e1945bfe6787525a5",
+    "render_color.py": "440718932ca248acedc7ad3e59f61d295c698c18c9d54750353375c2127fa0e6",
+    "verify_color_scene.py": "67a4821cac32a4005f72c9105677fcd68f9884374f59aadb75ad7c6e52c0b557",
+    "validate_color.py": "d6cb553209cea22fa0654162f40bd81c874fcefe2e40482a54a04a992b2a2d2d",
+    "color-mesh.npz": "f4275e7231a5a5854a0c973d595d144651416dac07cccea07b596724f29a5dac",
+    "palette.json": "53d127b36ac700fbf58b59dc41c1bd177d788e6d6ae57248f12cd5c70df5e905",
+    "appearance-materials.json": "867d16b9bdfcc85be1b9f354c47e18cf0e655267d7333d7110e946278a43585e",
+    "COLOR-SOURCE-REGISTER.json": "3afc75a83dc2d748b6fa41c62386b5a88c18f5d83e594bf7418c6772265f4883",
+    "appearance.3mf": "2d5b4141dc809186c1785b5c159ca15e5b1075835c892246910356ac4289d3bd",
+    "scene.blend": "2a0a1cb6aa4e263f739ef9e824ea13212b6479b416b5aa60407508b38f81ddb3",
+    "preview.png": "cc4fef20354599537801456464998c9eb5e66c9052d1f5d4f6ef468ad4f0bc0d",
+    "rear.png": "c7c8ffa83ee000ac270efe14502c8c65b93043e1e3857a35fdd696a09aa7d359",
+    "front.png": "930aba07dfa8878fc0f85728e3c60f1d294fb057ca5bc398c69e011fe29f18e6",
+    "back.png": "d6b3867dae6d9e2e3016e055174dfdc6ed36f9c9c3fe97f6fe0c07b1769521cc",
+    "west.png": "6ddaf72cb592d405c30f884cd0e6ef1b95b9669bba0cd8067d88d87c4c05c94e",
+    "east.png": "b2686ff6a5f56d77a781114e3b84ef44e120fb730cfca56ee0e6abd3bb98d768",
+    "top.png": "ed91989054c3abed899385b334bf940165e98b797b1f025ffc5abc46f0f85484",
+    "entry-detail.png": "d88ead211a30952be35154f7c33d22180b6bf30143377c0b559c9c1344a1c494",
+    "facade-detail.png": "5fa513c403c0a709c97014a48d1093ef87267f7b8ebb6aeda23fe094622bf705",
+    "roof-detail.png": "52a58d1dc9d282854a3b1202446bb84e468b2d3a2614eeba330910307701b828",
+    "export_appearance.py": "bc170b7798d4ebcf6d0d82a2e20b6301b003a6cdd5ccb495b72cfe3eaeb77774"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "7a0d6fb813942ec51af3d4ce4ef65bef83e98a19018939923174eec932121388",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "17604eebd7b64944b367326f7e92ecebaa2215470b304eba337c283f8d3eb716",
+    "SCENE-QA.json": "b59cae93f8795bdf5405acb46c702e3ff32c053df6321e6c02c1a450e819dc3a",
+    "FRAMING-QA.json": "310d8d70d5ef26a1682cac4e3040857d053a4ffc7ef912dc410202f09fcd17c7",
+    "DELIVERY-QA.json": "9664788051288e843d6062afa1e228d38241d50424ed3ffb70c38679b0acca7e"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "e988a889d1907253935b5bea860913bd9442b7b9bea953fcea1cc300704c26d1",
+    "ORIGINAL-RETENTION-QA.json": "2e9661f54ebabb3e319a291481d19ec78b45668a03970c9bade9beb705b28a4c",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "d9ae4737dace0a0e3ec102b1e23c1e2f9efe5610795d76ef37fa58770d2d0ed0",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "32f4806703f42e41a2bb1c5599d1867c45b66b2361dfc7a57d4a55877527dc5d",
+    "INDEPENDENT-DOMAIN-0643.json": "e31b7e7e63ccd9944fe8da321611fa9a1e3e87aaf963438823e09f5506fa14a4",
+    "INDEPENDENT-IDENTITY-0643.json": "0a5252570ae7039a26338d5132a4d783af06b3c82d8d9935b82d9d1cc6e752e8",
+    "INDEPENDENT-PACKAGE-IDENTITY-0646.json": "32f4806703f42e41a2bb1c5599d1867c45b66b2361dfc7a57d4a55877527dc5d"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "98c3f77b0795f491c2be11d160c3f84c20ae0d460438231f9eb2604822ac3848"
+  },
+  "limitations": [
+    "52 original finite support-front triangles;17630 neutral.",
+    "All3vertices chord/tangent/z and whole-plane equality, including4piece Boolean fragments.",
+    "Original17682 triangles and17 immutable files retained;no originalOBJ even though originalbuild exports one.",
+    "EXIF2010-07-25 without verified timezone/clock; night used only for location, not2026 condition; entrance adjacent section not full library."
+  ],
+  "history": [
+    "Verifier scale property set before preview gate to actual original150mm-base.",
+    "Initial delivery-template wording corrected before delivery QA; initial version retained privately."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T06:46:28Z",
+  "parent_review": "Parent personally viewed daylight/night official photos, originalcode, preview and final10montage0646. Independent original24gon chord+tangent+z allvertex1e-5 yields52 whole front-half column facets, each infiniteplane equals finite domain, Boolean4piece and shortened facets retained. Exact rawmultiset equals NPZ52 silvergray. Solid sphere proxy for open steel globe, grid, glass, rearcolumnhalves, annular canopy and all17630otherfaces neutral. Night lighting not material; EXIF2010 no timezone not2026 condition. Actual explicit NTUA Library Entrance Section identity independently matches3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details show bothcolumns and completejunctions. Original17682triangles17files/noOBJ unchanged; partial entrance/adjoininglowfacade only notfullsixstoreylibrary."
+}

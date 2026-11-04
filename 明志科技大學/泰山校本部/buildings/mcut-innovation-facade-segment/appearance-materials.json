@@ -1,0 +1,42 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "MCUT Innovation Facade Segment observed upper window heads muted gray",
+      "hex": "#929894",
+      "faces": 8
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 3598
+    }
+  ],
+  "domain_face_indices": {
+    "four_complete_upper_window_head_fronts": [
+      3340,
+      3343,
+      3390,
+      3393,
+      3440,
+      3443,
+      3490,
+      3493
+    ]
+  },
+  "coplanar_components": 1054,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3606 original triangles unchanged",
+  "limits": [
+    "Other12 window heads remain neutral in this conservative review; right lower heads obscured by adjoining building and left lower vegetation are not mirrored or extrapolated.",
+    "Brick wall includes pale horizontal bands without matching original boundaries; no full red wall.",
+    "Central glazing mixes bright frames, dark spandrels and reflections; no full blue backing.",
+    "Gallery rail/slab proxy and deep backs not blanket black.",
+    "Round entry columns contain brick/gray transitions and obscured lower areas; no full-column color.",
+    "Window-head top/underside/returns, all rear cut surfaces, roof, support and unlisted triangles remain neutral.",
+    "Preserve3606 original faces; no geometry edits, new boundaries or OBJ creation.",
+    "Shallow front facade segment only; back is an arbitrary cut, not the actual rear elevation."
+  ]
+}

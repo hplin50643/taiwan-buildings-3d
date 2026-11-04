@@ -1,41 +1,29 @@
-# 國立臺北商業大學｜學生活動中心西向主立面段（2023年實拍近似）
+# 北商學生活動中心西向主立面段｜局部雨遮紅褐
 
-## 模型預覽
+**金字牌、柱窗與彩繪階等材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。只兩完整雨遮前緣4面名義紅褐，非全館補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL前視](previews/front.png) ![實際STL背切面](previews/rear.png) |  |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![兩雨遮](entry-detail.png)|![左前緣](facade-detail.png)|
+|![右前緣與上皮](roof-detail.png)|||
 
-**局部立面模型，不是全館，也不是2026年現況測繪。** 外觀根據2023年9月2日公開實拍建立；原照片與PDF未包含於此包。正面朝校園球場。背面平整面是**人工切面**，不是建築真正背立面；模型12毫米主體厚度是列印與展示選擇，不能還原真實建築進深。已知另有改建規劃，尚未建立拆除／新建完成證據。
+## 材色範圍
+同 ntub-student-center-west-facade 原項目，same-item、count_delta=0。國立臺北商業大學臺北校區，西向主立面片段非整館。原3558三角及STL/build_model.py字節完全保留，20原件無OBJ，不造原件。
+- 兩雨遮前緣整y−15.8平面4面，分左右各2面完整共邊矩形。全3頂點有限域核對，不以中心或normal篩選，不截小三角。
+- 其餘3554面中性：中央金字牌、49上部fin混風扇與樹遮、主柱、門窗反光背板、告示支柱、彩繪階梯、混主牆、屋檐、雨遮上底側面及後方切面。
+- 平直背面是原模型片段截斷，不是真實背立面。近似窗列與支撐保留，補色不追認原幾何精度；不加字、不補整館。中性界線是證據範圍而非真實材縫。
 
+## 來源與日期
+親看官方photo18及photo22外觀；近景支持兩平整紅褐雨遮前緣，高視角只補定位。EXIF為2023-09-02，無時區且時鐘未校驗，不等於2026現況。名義色族非校準色票。原照私人保存、不公開、不作紋理、不建人物，未確認再散布或CC授權，不保證商用。
 
-## 外觀範圍
-- 保留7個主要大跨、8道主分界、上層密集垂直遮陽、下方窄窗帶、大片實牆、低矮出挑入口雨棚與階梯。
-- 窗片細框僅作有背牆連接的淺細分，沒有把玻璃細框當成主結構柱。
-- 圖片外側樹木遮挡處，重複構件節奏為近似。每跨7片上層遮陽片是150毫米尺度可辨的簡化，不保證原建築逐根數量；空調、招牌文字、樹木、細扶手未做。
-- 未建立整棟屋頂、內部樓層、背面、兩側長立面。頂部平檐有照片依據，後方切面上的平頂不宣称真實屋面。
-- 各方向比例均由照片估計，沒有實測尺寸或固定建築比例尺。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+保留原150mm底座示意尺寸，不是測量比例。實際物件名 NTUB Student Center West Facade partial color，獨立核對真slug與館名。STL無色，3MF與Blender逐面分材；兩材標籤非兩色或四色耗材切片驗證，未實際列印。
 
-## 列印與尺寸
-- 單位：毫米。含底座150 × 48 × 73.2 mm；底座朝下。
-- 雨棚、窗帶及豎片端部可能需要支撐；用切片軟體核對懸垂和工具路徑後再列印。細節已做與牆連接及加粗。
-- 原STL單一連通水密表面；數位QA不是實體試印，也不是Cura／Prusa工具路徑驗證，不能保證無支撐可印。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes與全三角multiset、共面均一、閉合正體積、3MF逐面材、scene重開、十圖1200×900及圖文hash。原README/previews/validation保留歷史，不冒充新QA，不刪檔。
 
-## 檔案與重建
-- [model.stl](model.stl)：實際列印網格；[scene.blend](scene.blend)：由此STL匯入的可編修三角網格。
-- [build_model.py](build_model.py)：自行撰寫參數建模，不含下載第三方3D。
-- [sources.json](sources.json)：公開來源與支持範圍；[validation.json](validation.json)、[contour-validity-check.json](contour-validity-check.json)、[thin-feature-check.json](thin-feature-check.json)：QA。
-- previews的所有PNG由交付STL渲染，非外觀示意圖。top圖只是局部切面模型頂視。
-
-Python 3.12環境安裝requirements.txt後，依序執行：
-
-```sh
-python build_model.py
-blender -b -t 2 -P render_preview.py
-python validate_model.py
-python check_contour_validity.py
-python check_thin_features.py
-python check_manifest.py
-```
-
-輪廓採0.2mm步距、z起始0.071mm；任何個別或合成多邊形無效均直接失敗，不修補後冒稱通過。0.8mm形態opening採canonical fail-closed v3，僅是輔助薄件篩檢。
+## English scope
+Partial color only:4 original triangles on two complete canopy fascia front rectangles, muted red brown;3554 neutral. Original3558 triangles and20 files preserved, no immutable OBJ. West elevation section only, not the entire building. Gold-lettered sign,49 fins, window backings, piers, colorful painted stairs, mixed walls, canopy returns/top/underside and rear cut remain neutral. EXIF2023-09-02 has no verified timezone/clock, not2026 appearance. Nominal family only, count0, unchanged geometry, no tested filament slicing.

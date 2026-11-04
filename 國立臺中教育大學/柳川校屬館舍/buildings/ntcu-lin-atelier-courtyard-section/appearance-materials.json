@@ -1,0 +1,83 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "NTCU Lin Atelier observed outer window fronts brown",
+      "hex": "#655042",
+      "faces": 48
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 5202
+    }
+  ],
+  "domain_face_indices": {
+    "whole_outer_window_frames": [
+      2606,
+      2609,
+      2610,
+      2644,
+      2645,
+      2650,
+      2671,
+      2672,
+      2673,
+      2706,
+      2707,
+      2709,
+      2738,
+      2739,
+      2740,
+      2773,
+      2774,
+      2794,
+      2834,
+      2841,
+      2843,
+      2861,
+      2862,
+      2863,
+      3622,
+      3625,
+      3626,
+      3651,
+      3652,
+      3657,
+      3671,
+      3672,
+      3673,
+      3706,
+      3707,
+      3709,
+      3742,
+      3743,
+      3744,
+      3753,
+      3754,
+      3768,
+      3821,
+      3830,
+      3832,
+      3837,
+      3838,
+      3839
+    ]
+  },
+  "coplanar_components": 1130,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "5250 original triangles unchanged",
+  "limits": [
+    "Inner grille bars may be dark metal and are not part of this perimeter-frame recommendation; glass/curtains/backing stay neutral.",
+    "Broad weatherboard walls carry white lamps, gray pipes and fire-safety signage absent from mesh; no whole timber-wall brown.",
+    "Door framing/panels have hardware, labels and weathering; not expanded into this limited window-only recommendation.",
+    "Window and door hood fronts have thin edge/cover transitions; no unverified single-color extension.",
+    "Brick plinth includes gray ventilation slots and concrete base; no full red plinth.",
+    "Roof is a shallow cutoff strip, not the actual pitched tiled roof; no black full top or back.",
+    "Frame sides, backs, model support, rear/cut surfaces and all remaining triangles remain neutral.",
+    "Preserve5250 original STL faces and immutable original OBJ unchanged. Do not regenerate geometry or replace original OBJ.",
+    "Courtyard elevation section only, not the entire atelier/museum."
+  ]
+}

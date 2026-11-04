@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed two official actual exterior photographs,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole original infinite y-5.5 plane2 forms one complete connected cap-front rectangle,2pale warm gray/1580neutral.",
+    "All455coplanar domainsuniform;actual exposed x-63..48.5,z53.5..55.299999 retained including tower union contact,no trimming or additions.",
+    "Actual official photos only;schematic PNG excluded,capturedateunknown/no2026claim.",
+    "Slab top/under/returns,screen mixed windows/panels,sign tower,ground piers/canopy,roof/rear remain neutral.",
+    "Sevenwholeviewsfit;closeups show completeuppercap and left/right ends including towercontact.",
+    "Original1582triangles/STL/build unchanged,17immutablefiles,nooriginalOBJ,count_delta0;originalREADME.zh-TW only retained.",
+    "Explicit3MF/scene/scripts JUST Library I partial color;JinwenUniversity campus originalonebuilding,no new survey claim."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "abd8e81c0a8d60bb4c7269276058069d369445ac31fa7cc340b53406cafe6337",
+    "README.zh-TW.md": "abd8e81c0a8d60bb4c7269276058069d369445ac31fa7cc340b53406cafe6337",
+    "colorize_model.py": "9f8550e108b8219f5b711e7fe21d6a4ee982196cadcaecd0898479c135cff353",
+    "render_color.py": "9e1fb050c30583b1cc67b9976a9fae5fe8ccfaf33c12aa6fc16a8f28f3840170",
+    "color-mesh.npz": "80c239d87383e42366c97dd1fa75cac55ae1227d9b52f908f70ee5fc5e54cca3",
+    "palette.json": "a5ac2ea86ce1effdc401e5eed0cb3e9ebe8df74c9239f41c08d4e4317496835d",
+    "appearance-materials.json": "bcce257e13418a2d834bda6064728babfd7769f0d012be2e01f1adec7a388d2d",
+    "COLOR-SOURCE-REGISTER.json": "c792f0316897b95328d470a4b3ee46e4f58fe0ad17d6665dd2b36c8297760889",
+    "model.stl": "13af7f41db8f2e61ba1542b8e36f4514217f01ed838e2c22997a980f5963b31a",
+    "build_model.py": "9d1ae848494e36b88186747679a11827feb398b14e65de9c599d1bc62b5d084f",
+    "preview.png": "30cf225087549d22486b2c50582db7bd9c49f93cf57aa9e0e1056de1d617ab03",
+    "rear.png": "6634f09876dc1b68fae373145dbe22df844657effc7e8c3fc3a1b64b6819a259",
+    "front.png": "f47f5fe0ae3c5eaf5135fdb64a15910063038d1b2954a6c4c810102059a247e6",
+    "back.png": "1cced311a9537c1524b0ac7cdc354783069e05e8ad53fbc1b4c3b34460fcc738",
+    "west.png": "1a66c024d478816a5403418069a1bd4e2b1cf1132fe268c4ef12d8658180772e",
+    "east.png": "8fb756b9169a446cc13953912f5c7ce3a305256ad7c006b9527f976e3252d868",
+    "top.png": "153b8312515122fd971b2d3319a14dab418067b357f5707c1aba58a451bbb46c",
+    "entry-detail.png": "3ea5c41cfdade5360b220e50fd51a55500f6c726a7da173e4c7ff5af4eab1c27",
+    "facade-detail.png": "40906d59fb468b1e195013fdaba276e41318d6bc970bd7e14d82b0b9fcd5a125",
+    "roof-detail.png": "73e2a41389f601c1b4cee9345ca8335db4c76906aa44ee8ddcca8d8654457137"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "8111f60edc3557e3bb1ff6490e31b70b95ef57ab0856adde400d587d7d681239",
+    "SCENE-QA.json": "e4c8773e4c1a948284a6c24becdf4dbc2c3ed85fc6638dedfe02a77c34ffbde0",
+    "DELIVERY-QA.json": "608c2e7030f7df981db868926ceeba9917ab255e7ffdd1530dc6750e6a225c70"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "2ca39d7882f3bf699d26b1a1f4a60c568ebf0e6fef913448c1324c3bf68403cd",
+    "ORIGINAL-RETENTION-QA.json": "6e9afdbfcf74694a13d290de4d432003da8d904987b4f7ffc4d62a78e6dd9c40",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0703.json": "d7899c366ef28f07e9d74cae7dd12b1c52d63737bb5b4390eea5bb82628ce999",
+    "INDEPENDENT-IDENTITY-0703.json": "3c6a079883d5dacd07dd0abb723ac98289d27399757d53d9773e3aec638cf564",
+    "INDEPENDENT-PACKAGE-IDENTITY-0705.json": "7de44d629a20f27d9b7fc1bc64dadb2b36ae16ca947af70942021e0a1f54e8d7"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T07:05:25Z",
+  "parent_review": "Parent personally viewed two actual campusphoto panels, originalcode, preview and final10montage0705; no illustrativePNG used as material evidence. Whole original y-5.5 plane2 exactsharededge one complete uppercapfront rectangle, originaltowerunion termination x48.5 preserved not colorcut. Exact rawmultiset equals NPZ2 pale warmgray. All1580otherfaces neutral including mixedwindowwall, slogan tower, roofs and rear. No exactmaterial or current2026 claim. Explicit JUST Library I identity independently matchesactual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews framed and3details show fullcap and left/right towerjunction. Original1582triangles17files/noOBJ unchanged, original README.zh-TW only preserved; initial README.md assumption correction history retained. Samegroup/count0; partial only."
+}

@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "NTUB Student Center West Facade two canopy fascia fronts muted red brown",
+      "hex": "#8A5148",
+      "faces": 4
+    },
+    {
+      "id": 1,
+      "name": "NTUB Student Center West Facade unverified walls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 3554
+    }
+  ],
+  "domains": {
+    "two_canopy_front_whole_components": 4,
+    "per_rectangle": [
+      2,
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 739
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3558 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "4 original triangles forming two complete canopy front rectangles, nominal red brown.",
+    "Whole y=-15.8 plane equals two finite rectangles; no fragment clipping.",
+    "Gold-lettered centre sign, painted stairs, columns,49 fins, windows and mixed walls remain neutral.",
+    "Canopy top underside returns, cornice and rear section cut remain neutral.",
+    "EXIF2023-09-02 without timezone or clock verification, not2026 appearance.",
+    "West elevation section only, not full building; no tested filament slicing."
+  ]
+}
