@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![圖書館正面](校本部/buildings/cnu-wang-chen-library/previews/front.png)](校本部/buildings/cnu-wang-chen-library/README.md)<br>**[王趁紀念圖書館](校本部/buildings/cnu-wang-chen-library/README.md)** | [![J司令台正面](校本部/buildings/cnu-j-grandstand-historical/previews/front.png)](校本部/buildings/cnu-j-grandstand-historical/README.md)<br>**[J 司令台／運動場看台](校本部/buildings/cnu-j-grandstand-historical/README.md)** |  |
+| [![圖書館正面](校本部/buildings/cnu-wang-chen-library/preview.png)](校本部/buildings/cnu-wang-chen-library/README.md)<br>**[王趁紀念圖書館](校本部/buildings/cnu-wang-chen-library/README.md)**<br>[局部材色3MF](校本部/buildings/cnu-wang-chen-library/appearance.3mf) · [範圍與限制](校本部/buildings/cnu-wang-chen-library/README.md) · [校驗版本與原檔說明](校本部/buildings/cnu-wang-chen-library/CHECKSUM-SCOPE.md) | [![J司令台正面](校本部/buildings/cnu-j-grandstand-historical/previews/front.png)](校本部/buildings/cnu-j-grandstand-historical/README.md)<br>**[J 司令台／運動場看台](校本部/buildings/cnu-j-grandstand-historical/README.md)** |  |
 
 - 逐棟補充
 - 其他建築仍需逐校查詢來源、建模及驗證。

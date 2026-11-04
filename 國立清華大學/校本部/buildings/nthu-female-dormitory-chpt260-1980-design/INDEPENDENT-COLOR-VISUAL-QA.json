@@ -1,0 +1,55 @@
+{
+  "status": "PASS_INDEPENDENT_DESIGN_COLOR_ONLY_ORIGINAL_QA_RETAINED",
+  "review_scope": "Personally inspected A5 original designwhite leaders, original code/preview, new preview and allten finalviews. Designcolor only; no asbuilt/current or globalQA certification.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-ASSET-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Exactly24 complete apron outward triangles,12 rectangles/2floors6bays, material7 to existingwhite0; original3MF and mesh assignments crosschecked. Other23794 assignments exactly unchanged, original8palettefamilies retained not recertified.",
+    "Original23818 fulltriangle multiset/vertices/faces unchanged, isolated originalbuild+color exacthashes pass. No originalOBJ.",
+    "Full36originalfiles byte-identical in original-version including8material3MF/scene/mesh/palette/tenviews/alloldQA; oldQA only scoped there.",
+    "Seven fullviews frame entire single two-courtyard design; three northern details show all12whiteaprons and left/rightends without coloringwindowframes/sides/glass.",
+    "1980-04 A0design date, A5blank, currentname unverified;1.6vs2.6window,R44 shallowcap,unknownwaterbox and fabricationlimits retained. No physicalprint/fullgeometryrecertification."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "d266d8cae47c8d8acf63c7d1a5bcfa1dc423cbd1e5855d237fa7e54cf1497d36",
+    "README.zh-TW.md": "d266d8cae47c8d8acf63c7d1a5bcfa1dc423cbd1e5855d237fa7e54cf1497d36",
+    "colorize_model.py": "26a96c9518b564a4b00d86dcec26a74b69509f0e10160a6bff468e8fbc362e38",
+    "render_color.py": "5bfeda488e0b4b5584680c4a0810a6d54897d6a0313b4c0e292489b94c83346b",
+    "verify_color_scene.py": "ddd211f21a804d1504d00752946e0ac6c178e846b8a4e3bac926f23771e40c74",
+    "color-mesh.npz": "cb802ad0ad156730fa2273a59d3ffb8d9893a9c3c91b433d7a0f4cb24ed05e06",
+    "palette.json": "16b414cac70086923803d828971377be292f04465c8fb1613d3e644b9ca077b7",
+    "appearance-materials.json": "d5291d3888d439ab0f216e4860fc6596eb878e9cc7ed95cb635b4b354b5c95f1",
+    "COLOR-SOURCE-REGISTER.json": "9bfe879ad58abdc40d4604fe9a5fce5699773bbb2f43ca4075fba2180b5f2f75",
+    "model.stl": "509024f81f6f07eb86c0d45a53127465b26719188f50e83c4f052ecc1058fb0b",
+    "build_model.py": "8a2627d77da6bd4a7304cd05188f15a5cb148fd0d5b405a91258be35b459a801",
+    "PREVIEW-TRANSITION.md": "75ae3f5468e5ad6f165c9c87c460def48c587614c00b39c12bb9162c363b1833",
+    "preview.png": "d0594c11c2d5b5c2068b6700fb1f2695cd292d7c69dcc9fd57c13e871375923c",
+    "rear.png": "24b4dc72d4792e88586a391f4c67ef670174de15ab4bfb443636092c4a9fd540",
+    "front.png": "ac80d548256ff41cffd3597e3a5b1ba11b2f22a59efa2767c474ffec13117357",
+    "back.png": "9ca75e3139d0261a19ad8322889c5ba66eee939335eeefbc63335883c2ef7f32",
+    "west.png": "0b65bf73fb60135b9a1e8b8d87652a9ee5a12f5f7a91b30062713e24ecf2f4ae",
+    "east.png": "bd86c7b094a11d318bef0b22191b49315a6baca1e26f547cd0cb227d6f8f04ef",
+    "top.png": "47835d91ffc5e256a329dd585448b9a6fc18bb21e9995e4c7320841093a330c8",
+    "entry-detail.png": "4cede89457ce41eb47dd0f7abeb1c85e88919b07b507594f302f09ec299b5f2c",
+    "facade-detail.png": "ad7d540c031ccb50c000f92d435ca09af2c988b635be852b4fc28a86c0e95955",
+    "roof-detail.png": "5dbf3a0172eb2adf16103928dc7d4322c2619f49d3c1a3b2f9492288aa239588"
+  },
+  "scene_sha256": "f21050cff53b3983cc413adca5121088a0df30e06cbe1e64b4f3c4abf99fc4f1",
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T13:56:39Z",
+  "parent_review": "Parent personally viewed A5 fullsheet and白色paint leader crops, originalcode/README1348,preview1352 andfinalten1356. Independently derived north-left12apron originalbounds from opening/apron and translate*5; rawwhole y38.8==24 finite complete12 rectangles with sharededge pairs. Full23818triangle multiset identical; trianglekey materialdifference exactly24 old7 to existing0, all23794otherassignments unchanged. Existingdesignwhite is not negated, allother historicalillustrativefamilies preserved without newsourcecertification. Original36files/8material3MFscenealloldQA preserved. Only1980designwhite notmeasured/asbuilt/current, A0April/A5blank, no unverified慧齋name. W1width1.6vs2.6formula/R44rooflightconflict/waterboxunknown/authoredsupport andalloriginalQA limitationsretained. ActualNTHU Female Dormitory CHPT260 1980 Design scene/3MF/fourscripts/paletteidentityPASS. No fullcolor/physicalprint/globalQA claim.",
+  "root_qa_sha256": {
+    "INDEPENDENT-DOMAIN-1352.json": "829126588095ff0269cb54adaa8d580091ddd62df02810716762fa83f8b78307",
+    "INDEPENDENT-IDENTITY-1352.json": "4fbc4a4c5a9489347574adabc90c84615a8cf3a367011273ee0e41a99e6aca3c",
+    "INDEPENDENT-PACKAGE-IDENTITY-1356.json": "4e4a72c9133c7182771ddcf805aebd873fe52259f5627b9fac50388a60ddf458"
+  }
+}

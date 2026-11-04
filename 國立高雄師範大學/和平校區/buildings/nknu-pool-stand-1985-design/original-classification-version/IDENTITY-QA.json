@@ -1,0 +1,40 @@
+{
+  "candidate": "國立高雄師範學院體育館及游泳池新建工程：游泳池",
+  "catalog_case": "CCCK296",
+  "status": "historical_pool_existence_and_campus_supported_design_version_proposal_subject_to_source_geometry_review",
+  "official_sources": [
+    {
+      "url": "https://w3.nknu.edu.tw/zh/his-president",
+      "directly_read": true,
+      "fact": "張壽山1983–1989院長任內興建體育館、游泳池；不提供單獨1987啟用日期"
+    },
+    {
+      "url": "https://sso.nknu.edu.tw/Services/Site/index.aspx?cLv2=205017&page=1",
+      "read_mode": "official indexed full content",
+      "fact": "體育系硬體設備列和平校區游泳池；燕巢場地清單無泳池"
+    }
+  ],
+  "date_precision": {
+    "1985": "design source date from the archival drawings",
+    "1987": "not independently verified exact official opening date in this pass; secondary architect-work chronology alone insufficient"
+  },
+  "present_day_caution": {
+    "official_index": "https://news.nknu.edu.tw/nknu_news/lastNews.aspx?catid=SCHOOLADMIN&place=nknu&unid=D15E2627AC5694D977FF31C08D30107220F67852",
+    "fact": "2025水上運動會因游泳池整建工程暫停之官方搜尋索引",
+    "access": "page open cache miss, not a directly read full announcement",
+    "consequence": "Historical design cannot be advertised as2026 current state"
+  },
+  "dedup": {
+    "remote_commit": "f1cd523f",
+    "tree_sha": "6693d0378fe0362464f100037f3f008d961d5ae7",
+    "existing_NKNU_buildings": [
+      "nknu-administration-complex",
+      "nknu-historical-gate-main-assembly",
+      "nknu-new-research-building",
+      "nknu-yanchao-library-information"
+    ],
+    "pool_match": false
+  },
+  "recommendation": "Can propose1985original-design reconstruction if full pool envelope/attached elements sufficiently supported by actualdrawings; do not assume1987asbuilt or exactcurrentversion.",
+  "reviewed_utc": "2026-11-01T05:10:02.413155+00:00"
+}

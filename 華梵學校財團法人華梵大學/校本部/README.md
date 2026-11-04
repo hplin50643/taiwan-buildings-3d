@@ -10,7 +10,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 模型預覽<br>圖資大樓東南主要面<br>[<img src="buildings/hfu-library-2009/previews/front.png" alt="東南面" width="220">](buildings/hfu-library-2009/README.md) | [<img src="buildings/hfu-yunshan-pavilion/previews/front.png" alt="華梵大學 雲山亭｜主要亭體彩色模型：實際模型預覽" width="220">](buildings/hfu-yunshan-pavilion/README.md)<br>**[華梵大學 雲山亭｜主要亭體彩色模型](buildings/hfu-yunshan-pavilion/README.md)** |  |
+| 模型預覽<br>圖資大樓東南主要面<br>[<img src="buildings/hfu-library-2009/preview.png" alt="東南面" width="220">](buildings/hfu-library-2009/README.md)<br>[局部材色3MF](buildings/hfu-library-2009/appearance.3mf) · [範圍與限制](buildings/hfu-library-2009/README.md) | [<img src="buildings/hfu-yunshan-pavilion/previews/front.png" alt="華梵大學 雲山亭｜主要亭體彩色模型：實際模型預覽" width="220">](buildings/hfu-yunshan-pavilion/README.md)<br>**[華梵大學 雲山亭｜主要亭體彩色模型](buildings/hfu-yunshan-pavilion/README.md)** |  |
 
 模型預覽
 

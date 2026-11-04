@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "scope": "Fresh publication documentation/link/hash checks only; historical geometry/render/source QA was not rerun or relabelled.",
+  "checked_at": "2026-11-01T05:34:54.738772+00:00",
+  "readme_sha256": "45e9bfca91ad0a8c009e883549479fe0d648abf8db4f4eb5ffa3198ffb3ffeb9",
+  "inline_images": [
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "front-detail.png",
+    "rear-detail.png"
+  ],
+  "relative_links": [
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "front-detail.png",
+    "rear-detail.png",
+    "model.stl",
+    "model.3mf",
+    "scene.blend",
+    "build_model.py",
+    "render_model.py",
+    "export_3mf.py",
+    "requirements.txt"
+  ],
+  "missing": [],
+  "source_model_rights_separated": true,
+  "historical_design_not_current": true,
+  "raw_media_or_html_included": false,
+  "geometry_render_scripts_unchanged_sha256": {
+    "back.png": "dd32740433f55ae6188129413c27bea7493c6a5518ecc093f80813d348a49863",
+    "verify_scene.py": "4ecd72abcf063caa100219e5cc1cd150d09639092716ad0af60e28f8908a7c06",
+    "render_model.py": "2dfafd7cccb1c258dc623905b9736ba1a8156ac57c531a1d83ae848cf4f49cd3",
+    "export_3mf.py": "5e202392752888f016577518932afd56970c1d7a6f54ddaab54550c3676855af",
+    "west.png": "8cd32604d856d8073500f470a27af5ed3732fb33380b8adaef7401bf075cd1d6",
+    "validate_model.py": "be16b3483be94eb70567c02ca0ca4171ee53166131ef91d595878283927c05c3",
+    "scene.blend": "bd32a6a214ee93039ddf345d28784f518807af49d3a36e4ebea4788be634b9ba",
+    "rear-detail.png": "d4bea5f95cfab984eaef52c00cb3ea9d98c3a2a8e0e2b811b2950d549e7b25ae",
+    "top.png": "12788ae04bf5794007e5aba80ca2d5f5e3c5e27d4c7cc2fe0a95808c4018f9d7",
+    "build_model.py": "73462b5d8f976555e43876362ad8a4fd18a74a84e6f0f498e03cd6b10681c73b",
+    "front-detail.png": "f2ba7d81abc3ca99f649abfee64f0135ae05529fc23538ef9595c4d8f9933711",
+    "model.3mf": "246e6bf22bfed605f329a6173bdb71528be803a49199e0566010cf67e4b0d422",
+    "model.stl": "4b7f69e59b76e32cee16be3402f990cd72c9a429df253c8553f070549359b5dd",
+    "rear.png": "4decd2a4275ee4676efe915bbc41f380a12cc6ca10c9e886b1fd09a9c4d8846c",
+    "preview.png": "784dba534c22923fec2ca0610a0374dff7d28c873b8d40e3e279da9005fc5064",
+    "front.png": "5ca4583607fa454ec8c260744c54a6cd836cfbc915189538090912dc619505d3",
+    "mesh.npz": "d0dd90599325c71afd7f50449c81afc2e6d36a63583a7a595c6c087e2228c206",
+    "east.png": "1f0a1b509e4623900adb89222ea8946d9a913c0b2a4e3a24cd41ce2de01e0246"
+  },
+  "prior_document_qa": {
+    "sha256": "095aa140f8adce7ecb9142a06fb2752a076c4b67bb719c1f2c654e19c7409d7c",
+    "result": {
+      "status": "PASS",
+      "inline_images": [
+        "preview.png",
+        "rear.png",
+        "front.png",
+        "back.png",
+        "west.png",
+        "east.png",
+        "top.png",
+        "front-detail.png",
+        "rear-detail.png"
+      ],
+      "links_local_exist": true,
+      "source_model_rights_separated": true,
+      "historical_design_not_current": true,
+      "raw_media_or_html_included": false,
+      "readme_sha256": "d3307f23088df9f3162c028de2e1013f2cb1b4485e7755db9b1e2c7a09e02cb4"
+    },
+    "applicability": "Historical original README check; superseded for current documentation only."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "GO_PARTIAL_SURVEY_COLOR_ONLY",
+  "building": "wisteria-house-survey-2001-2003",
+  "source_go_sha256": "049d29c7a67b756777308f6e8651b8b6d32753f224bb044f8718e77aa03cc6ea",
+  "independent_review_sha256": "3767855ea4a6795cca90846146f71bd55676ceb52d5ce0325ac6790e45bea584",
+  "existing_preview_transition": {
+    "actual_existing_assignment": "NPZ triangle order checked against rawSTL; all48 selected faces assigned material2 Painted timber frames #D4D4C8 (generic offwhite), not darkcoffee.",
+    "existing_source_evidence_preserved": "Original wood palette refers to white-painted weatherboards; this evidence remains valid and must not be described as wholly unsupported. Original immutable10-material scene/3MF/renders/history retained.",
+    "new_variant": "Only48 newly verified darkcoffee outer-surround front faces; allotherfaces neutral for this bounded variant. This does not deny existing white-paint evidence or replace original historical presentation."
+  },
+  "source": {
+    "sha256": "a1bc27843bd3ac44b8a1f90b02dd18e5c93108b473ff1adbff82aea48dada600",
+    "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=b533b43a-7d44-466b-a90c-8c22300f5e98",
+    "status": 200,
+    "physical_pages_viewed": [
+      266,
+      267,
+      268
+    ],
+    "recorded_dates": "Cover2002; drawings2001/06 and2003/03. Not one capture date and not2008/2024-restored condition."
+  },
+  "sources_private": true,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "geometry_unchanged": true,
+  "allowed": [
+    "48 complete three upper outer-surround front faces deepcoffee"
+  ],
+  "unknown_neutral": [
+    "Yellow-green boards/posts on page266 low rear structure not securely mapped to original whole architectural domains; no yellow-green assignment.",
+    "Red corrugated sheet annotations do not authorize entire roof; no redroof assignment.",
+    "Glass reflections/grayscale notblue; lower whiteframes notdarkcoffee.",
+    "No cropped or partial connected coplanar components, no added subdivision or geometry."
+  ],
+  "retained_original_qa": [
+    "Survey exterior not1920s original or post2008/current restoration; multiple survey dates preserved.",
+    "West timber wing, east two-storey addition and low service/flower roofs form one study; no garden/perimeter/interior/furniture.",
+    "Right-angle simplification, scan-registered dimensions, common display datum, approximate footings/steps/roof valleys and sparse tilecourses remain.",
+    "Glass is opaque backed geometry; no hidden equipment or detailed construction fidelity.",
+    "Original digitalQA12920faces/singlecomponent/watertight/15checks not newly reapproved. Manufacturing risks thinpergola/frames/supports remain; no trialprint."
+  ]
+}

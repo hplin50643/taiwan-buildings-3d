@@ -1,0 +1,99 @@
+{
+  "status": "PASS_INDEPENDENT_DESIGN_COLOR_ONLY_ORIGINAL_QA_RETAINED",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:seven wholeviews and three entrance surround closeups.",
+    "20complete original entrance surround faces nominalblack A5 design family;red drawing ink not materialcolor.",
+    "Original six materials and35598other assignments retained exact;not newly certified current/asbuilt appearance."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 35618,
+  "material_face_counts": [
+    5484,
+    1006,
+    920,
+    26798,
+    166,
+    1224,
+    20
+  ],
+  "connected_coplanar_domains": 9597,
+  "original_obj_present": false,
+  "original_files_retained": 32,
+  "file_sha256": {
+    "README.md": "dcbac0215229ad14ed43223a9eb917cf673b0036358701d29fe9abeb1f94311f",
+    "README.zh-TW.md": "dcbac0215229ad14ed43223a9eb917cf673b0036358701d29fe9abeb1f94311f",
+    "model.stl": "e991e8d40fd2b86acb95e78ff5cb2c4ea695c6508cea7aec2f96bb4584a416ac",
+    "build_model.py": "96ee48d21dbd004d971fbb5e2a4e98112f33047bf154e2bfcb5e75acfea2d215",
+    "colorize_model.py": "d9c2cfe7b7220cad13e3c6910e6e3740da474c82fa5fea1e88c6f4cc5f028e0d",
+    "render_color.py": "2835fb3bc74211f0c8ebb87e6efc37ad430078b0bb4b9d6119619deba2ddbd98",
+    "verify_color_scene.py": "c4812e03623cb028f84fc390d5d3917588296331d2e14183cc97cf9c73f9e898",
+    "validate_color.py": "739fe713806d05879847445b587e1307a2065f0d63e0c4dc1f8fe6239a24b307",
+    "color-mesh.npz": "96120468d367cdaf54323517c773b6a5162e85604dba6990fcda4979a3f228b5",
+    "palette.json": "a5bb36cb25571291557f3fb0e74b9f27efddd311ee9b995a145862d434323a14",
+    "appearance-materials.json": "63ac6a31d7f8010ff7b67a9768b4704e301a7e80acdbfbf39399be020c0ee640",
+    "COLOR-SOURCE-REGISTER.json": "2549335231c6365f74fef9372f53d1044337a668342e3e66fd7e5911edc88a40",
+    "appearance.3mf": "e39661b27aea6b53e853a0d12d70a81ef7e808ecf133793e1d6f3637f5bfb12f",
+    "scene.blend": "73c2e9328faab16dd0ad5ab3f11f61d83edb657b660490343d48681c653af429",
+    "preview.png": "7020a716af54948e080922cbf88b0c62a603e0cd617b3541e050caeb1ef90697",
+    "rear.png": "2d55e404b7c01b3d782fd82ad7da401a0b3e6e526491e4b52bc8aa01905c603c",
+    "front.png": "9a9e86796d32ccb0389cb518100b5deed6f76fa8a00fef66d5213084bc2d8b71",
+    "back.png": "14bfbe22d4e3cc25873d5804369561b229988716acfdbf3063b9592c97048de6",
+    "west.png": "1bb9547e7cd7c62978a983bb2984c12b42a87603e59c8cf9b7e46435aff5f522",
+    "east.png": "d0ef31a9eb68e668c823f94a8e850048342e578a637ad3c7c66c78a93d6f2733",
+    "top.png": "b434b3d12cf0de2f99bb42908177a98da541b3cb8e1e6404f566ddc93604894d",
+    "entry-detail.png": "ef6f10d082438d001c3fc815ce097c9b3f793d0e4dd2c7a23d1977a487867b98",
+    "facade-detail.png": "85f5b20f9ede447b1a5ff493ce123710f47ae8000a08c96f3a1784fa06054c8d",
+    "roof-detail.png": "5bce3be65a4c6993d55a3662d1c338bf2106f178fc19be5ab271b878882758d7",
+    "export_appearance.py": "11dc0d1455a59561ebc0576d823ec5a44ba821501efcc74419cfdd748ccc46df",
+    "PREVIEW-TRANSITION.json": "f7cedc9c8b06c8d008a2ccbaccfc3c28919b6505e704a364af5cfbfac0146389",
+    "ORIGINAL-SOURCE-GAP-scene.blend": "1a130488098d3389efae58a58ecbb1d07eb9d617ce44b6a07086d111e21afc53",
+    "ORIGINAL-SOURCE-GAP-README.md": "33b1a48cdb45be8d9ffea063090e1ae5a77e119561eda1362156fc39c135fbef",
+    "ORIGINAL-LOCAL-README.md": "f8c27dda56306e0dfad54b93fe69774f30831717bda7496bea1ffd6b3bd705a0",
+    "ORIGINAL-CLASSIFICATION-QA-SCOPE.json": "8a7de9e28c4e298b3f82696c9ad2530709e593e29c08eaed7c1808f9dfb1c793",
+    "render_model.py": "bcb14d93f76c6ffe150983cf5350bb4c37a0d4bf2559178fbf9ec8dde6e064f7"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "583a10ec1aeba0990cd35eaa6d1e1991e93117a7245d75ee251599ee0701e4b9",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "8b9ed8a4fb26ff707cf0d72bc37d6cbd0293e6dac825b4c48b2f3b4131aa1c52",
+    "SCENE-QA.json": "de38d1f3e3dd207c3ea3dead03810041c83612d8e332eab2a4fbf8054564d884",
+    "FRAMING-QA.json": "93fa44abb1f0a9f9f28c80fa942c6a93328fef9bcbee741df2ca501396192a40",
+    "DELIVERY-QA.json": "6b194efa9be049be66c3c2d63b4fb6c86c5d4f2cf287d87d7840bbe7a17fc764"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "21ca25ac99f9ff41661628b17470c23629b8075e28bd38572f5d2e81913ca4c7",
+    "ORIGINAL-RETENTION-QA.json": "9c315b77e8ecffda6ba526265570d4dc5cb5e9769f803e864b6157ccd7fa8956",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "3d15fc43b2d118bf5e8bf8033a5276a50fb7f6f04553bbc7c05c205ec2338abf",
+    "ORIGINAL-PACKAGE-READBACK.json": "6dc58d7d59ab136e8b621c57759bf718eb396e133f23a2bc41881ff859a766ba",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "eebed6a883b3542aec07ea34566b6e4327e3ca07217a054d756648da186f5613",
+    "EARLIER-LOCAL-RETENTION-QA.json": "82999b306ee55533ddb5821ecf43ab32fbf2b6213b2f75a742ed3d5a06877ec2",
+    "INDEPENDENT-DOMAIN-1438.json": "f69c1cdd3936a135548e564c3d090eb93e3ffcc5110b2b443514b04fac45f961",
+    "INDEPENDENT-PACKAGE-IDENTITY-1442.json": "eebed6a883b3542aec07ea34566b6e4327e3ca07217a054d756648da186f5613"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "fb3b95f2accaf1c1912a553c0acb19afc1277b84a8020d03e4981944fb1bbf12"
+  },
+  "limitations": [
+    "1964A5 design black door surroundings only,not asbuilt/currentcolor.",
+    "Only clearblack materialfamily;uncertain finishmethod not asserted;red drawingink not redmaterial.",
+    "20faces in2wholecomponents;other68 sameplane faces unchanged.",
+    "35618 originalNPZ vertices/faces/order exact;rawSTL unchangedbyte,serializationfloat32 exactcrosscheck.",
+    "Original32publishedfiles/earlier31localfiles/noOBJ preserved,sameitem/count0.",
+    "HistoricalLOCAL_READY_PUBLICATION_HOLD retained,not interpretedas newpermissiondecision;1965builtidentity unconfirmed,no1989/1990mix.",
+    "Original15cm doordifference,datumuncertainty,±.10m estimatedwindowlevels,backedscreen and untestedmanufacture retained,no newglobalQAendorsement."
+  ],
+  "history": [
+    "Originalsixmaterialversion retained;only20 originalmat0faces to appendedmat6.",
+    "Canonicalimmutable32 files and earlierlocal31 separatelyretained;4metadatachanged and PUBLICATION-DOC-QA addedin historicalpublication,not samebytesclaim.",
+    "HistoricalQA aliases bind historicalsubpackage;earlierpresanitization hashesnot altered or newlycertified.",
+    "Independentexpectedidentity Nantou School Hall1964Design partialcolor checkedactual3MF/reopenedscene/fourscripts/palette."
+  ],
+  "earlier_local_original_files_retained": 31,
+  "existing_preview_transition": true,
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T14:42:04Z",
+  "parent_review": "Parent personally viewed A5 originalfullsheet and blackleadercrop,originalfront/code/README,preview andfinalten. Explicit黑色/磨石子 entrance wall annotation supports nominalblack,not red drawing wash;middletechnicalcharacters not overinterpreted. Independently enumerated whole x-117.5 88faces/10sharededgecomponents,selectedtwo complete10 components defined by originalpillars y9/13.75/18.5 widths.24,step.5/shelter4.02 transformed(-23.5,-13.75,1)*5. Only20 oldmat0 to newmat6black,other35598 originalsixmaterialassignments exact. NPZvertices/faces exactarrays and float32serialization exact originalrawSTL35618,not tolerancebasedmatching. Canonicalimmutable32 preserved,local31 earlierdocumentversion separatelyprivate plus oldHOLDREADMEpublichistory;27files same,4documentsdifferent/1publicationQAnew. SourceGO doesnot resolve1964design identity to1965asbuilt or1989/1990/current,oldHOLDnotnewdenial. Datum/A11vsA12 15cm/estimated.10m/screenbacking/thindetails andunprinted limitations retained. ActualNantou School Hall1964 Design identity/3MFscene4scriptspaletteRGB after writesstoppedPASS. No fullcolor/globalprintability approval."
+}

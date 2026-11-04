@@ -1,7 +1,18 @@
 {
   "status": "PASS",
-  "opened_actual_blend": true,
-  "mesh_identity": "ad8e6581ac749f9e6a171f2217e5e80df07f5afbb9f3e0fc00fc1fffa6511bc6",
-  "faces": 12154,
-  "materials_match": true
+  "checks": {
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "mesh_sha_property_matches": true,
+    "scale_property": true,
+    "camera_exists": true,
+    "triangulated": true,
+    "historical_notice_exists": true,
+    "material_indices_match": true,
+    "two_material_slots": true,
+    "shader_0": true,
+    "shader_1": true,
+    "saved_camera_full_model_margin": true
+  },
+  "mesh_sha256": "10397abc930b7050f12d56d3b001547c9b711259e4072252913b149c7679fc29"
 }

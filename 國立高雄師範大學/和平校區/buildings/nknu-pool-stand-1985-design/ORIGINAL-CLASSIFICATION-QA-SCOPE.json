@@ -1,0 +1,58 @@
+{
+  "status": "HISTORICAL_QA_SCOPE_ONLY",
+  "rule": "Original QA aliases are byte-identical historical evidence. Ordinary final relative bindings refer to original-classification-version/,never newroot. Explicit pre-sanitization original_sha256 history exception below is not a final binding. No old hashes altered.",
+  "aliases": [
+    {
+      "alias": "original-classification-qa-aliases/ORIGINAL-CLASSIFICATION-DOC-QA.json",
+      "sha256": "7d0f14ec795a9cbeeaba272097bac80a7f30803cc0a8d327a6fb469ec8c1c88c",
+      "authoritative_historical_file": "original-classification-version/DOC-QA.json",
+      "binding_base": "original-classification-version/"
+    },
+    {
+      "alias": "original-classification-qa-aliases/ORIGINAL-CLASSIFICATION-FORMAT-QA.json",
+      "sha256": "0e33d866be0e8b2ad9be560ae40f42bf7686b7aa977da9491b3cf18548dff90b",
+      "authoritative_historical_file": "original-classification-version/FORMAT-QA.json",
+      "binding_base": "original-classification-version/"
+    },
+    {
+      "alias": "original-classification-qa-aliases/ORIGINAL-CLASSIFICATION-PUBLICATION-DOC-QA.json",
+      "sha256": "def6024f6afc833b200040157a30c26daaef56bf25f9f9f31012f4886e2d4d56",
+      "authoritative_historical_file": "original-classification-version/PUBLICATION-DOC-QA.json",
+      "binding_base": "original-classification-version/"
+    },
+    {
+      "alias": "original-classification-qa-aliases/ORIGINAL-CLASSIFICATION-BUILD-QA.json",
+      "sha256": "6003140c1d05e2771de559c71327bd74219f9f679986ef9b67181bcca8edd04e",
+      "authoritative_historical_file": "original-classification-version/BUILD-QA.json",
+      "binding_base": "original-classification-version/"
+    },
+    {
+      "alias": "original-classification-qa-aliases/ORIGINAL-CLASSIFICATION-IDENTITY-QA.json",
+      "sha256": "bcf8339cccdce326141443e33f7fb6053fe1840ad87b47486fb5e8f8247e18e7",
+      "authoritative_historical_file": "original-classification-version/IDENTITY-QA.json",
+      "binding_base": "original-classification-version/"
+    },
+    {
+      "alias": "original-classification-qa-aliases/ORIGINAL-CLASSIFICATION-SOURCE-VISUAL-QA.json",
+      "sha256": "c4b433b2484cb247f1aadc61b9645bd70c6e6ce1c8b5287c68851e9e7561d940",
+      "authoritative_historical_file": "original-classification-version/SOURCE-VISUAL-QA.json",
+      "binding_base": "original-classification-version/"
+    },
+    {
+      "alias": "original-classification-qa-aliases/ORIGINAL-CLASSIFICATION-REBUILD-QA.json",
+      "sha256": "e747bc1052a7e4e2e42fac83faed791de6c630a7420805403fa6f8df5489df3c",
+      "authoritative_historical_file": "original-classification-version/REBUILD-QA.json",
+      "binding_base": "original-classification-version/"
+    }
+  ],
+  "original_full_package": "original-classification-version/",
+  "new_root_qa": "COLOR-ASSIGNMENT/FORMAT-GEOMETRY, SCENE, FRAMING, DELIVERY refer to new design-color variant.",
+  "historical_preimage_exceptions": {
+    "file": "original-classification-version/PUBLICATION-DOC-QA.json",
+    "keys": [
+      "metadata_only_sanitization/original_sha256/SOURCE-VISUAL-QA.json",
+      "metadata_only_sanitization/original_sha256/IDENTITY-QA.json"
+    ],
+    "meaning": "Earlier pre-sanitization historical hashes,not final hashes of already-sanitized files in original subpackage. They do not match and are retained unchanged without reapproval."
+  }
+}

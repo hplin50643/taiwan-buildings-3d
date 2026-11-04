@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed two official photographs, original code and all ten final renders. Color/unchanged-geometry checks only; original finite QA exceptions not resolved or globally certified.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-ASSET-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole y=-63.1plane4 exactly two complete2triangle rectangular components;4nominalgray15098neutral;3821coplanar components uniform.",
+    "Sevenwholeviews framed; threecloseups show full twinfascias and both endpoints. No changes to redroofproxy/whitecaps/glass/mixedwalls/railproxies/unknownsideback.",
+    "Original15102triangles and33immutablefiles unchanged,noOBJ. All originalthreepresentationmaterials/scene/render/README/previews retained; source-gapvariant not falselymonochrome.",
+    "2053crosslayerlossrecords notcolumns;77squarepostsegments plus2roundcolumns. Originalnonzerooutsidecornerresiduals,lossfractions,finiteprobeexceptions preserved. Identity/formatpass notglobalprintability,physicalprint/supportfree/strength certification.",
+    "SouthEXIF2008predates2009opening; metadataunverified/nozone,not2026. No sourcephotos public.",
+    "Initialidentityread oldscene beforepreviewwrite andfailed; retainedlog, rerun afterterminal savedscenePASS. No falseoriginalidentityclaim."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "4dafdc677555a9a5012ccf370d389a8b880e845486a1b7e63a8135513bf91f42",
+    "README.zh-TW.md": "4dafdc677555a9a5012ccf370d389a8b880e845486a1b7e63a8135513bf91f42",
+    "colorize_model.py": "f41b8c1f9b6e7ce572dea1a70881eacb6aa54cc9308df3416d51c76423209997",
+    "render_color.py": "8a5d57000f85be330e92678b060d52d105a95da6173efea68dfc230217cb4f9c",
+    "color-mesh.npz": "5703245448b4ffb7d9c0efedd20055f01c706d15fd0a3de2f69daefd16de8ae1",
+    "palette.json": "0afaed5241cb0ed994b9f85504010366af752d2c26b2d6bd06771ebc6b3f0e31",
+    "appearance-materials.json": "957383b294a7de4745b405424a4a78b14195299d78b54753723a8ff0cc07c7bd",
+    "COLOR-SOURCE-REGISTER.json": "f272918c9e3ba6005084e321573e812cf0ddd9b587e0fb26bda23bc58ad34171",
+    "model.stl": "b3d24d272e0ffdb171d770735c87feba10ee0b6ad423149e185de9310bc5a7b7",
+    "build_model.py": "970a4b18d58525163ff013efa5d55baeaf7aaa549117301ec39d8040d65c564b",
+    "PREVIEW-TRANSITION.md": "1a756cf8a867eb1381ee76ffed66244175fb7bca63abaec34e0d46065d4d6b6a",
+    "preview.png": "9c449303b594081acd404a148f586003ca610b0839cc7592b971dc82cd994ffc",
+    "rear.png": "2cc88baae2d4a8621a1c77048df253c85d04ce94f0090b58559b18d8ab099a78",
+    "front.png": "5bb24753c7bd2ca444273e3fe3d96e7369c909531f556e06c9a9c13a312eeac9",
+    "back.png": "4cecff1795597bd766621691d33e2fd1022ecc047f5697a67f99b3a82b14e5ed",
+    "west.png": "a797187a6fc8e867d064ea11dcb9c4ea39698e5b032c7a5a94e54283e7036dc4",
+    "east.png": "99bdb1d76869514b6b8cfc24ff134899443bbac4db7ee76e022569f6e282838d",
+    "top.png": "12aa470e88eb4d2702dafd6ed8858bb82097b783fd11d0f4bd62380018fe0d00",
+    "entry-detail.png": "5b0d435211c9a202d60369e1c8c53ce6e505cc13206b72b385093b28a28d2a6a",
+    "facade-detail.png": "6f41d23bc540f87a2044de8c0522469e5327efa0c4b857ca7259d6c135d3e619",
+    "roof-detail.png": "43e032634e892512c0a8e2ec6e5f706373992cb13dfe998c2f13a87dba47a393"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "ed39c4728de6b83ab2dc4f67aea7d8dfbe092841224c281e94a02e0169bc16cb",
+    "SCENE-QA.json": "ea0fdabb87f2b51141dc5b53dffeafd3fd8627b8f1e0095d360062dac808dae0",
+    "DELIVERY-QA.json": "fdf0092f388bcaa4687a568b7303a32c5009d17712e61f2a5170210d89a6a1be"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "387fd5c38ea1b023dd48824c8f2ed1a270d528d21bce7d7ecc7119ca7f1a4845",
+    "ORIGINAL-ASSET-RETENTION-QA.json": "c3de05ed7ef4aeaff85f5013ab7067708acb87b638178cbd9d5bfd6fcd627171",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "f0f513845c12efe88ed4c1e5420d02cfabf1057173ea1a0e6827fceee75c612f",
+    "INDEPENDENT-DOMAIN-1000.json": "6a1cbede5daee4671ff396bd40b8efe811127a01111be7d8811d275f647a7084",
+    "INDEPENDENT-IDENTITY-1000.json": "2d29d0d1555f6ceb2fc3efae3e63140bd75246d179d258aed7df7ba05b443a05",
+    "INDEPENDENT-PACKAGE-IDENTITY-1004.json": "ace109c86a4602533cf679319adc83524d4d340ffe927c0441b986f3eaddbda2"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T10:03:59Z",
+  "parent_review": "Parent personally viewedtwoofficialphotos/code/originalREADME0958,preview1000,finalten1004. Originalroofslab/explicitupperadd scale2+z3 yields whole y-63.1 exactly4 originaltriangles in2 complete rectangles; exactraw4 equalsNPZgray. Remaining15098unknownneutral includingtile roofs,ends,soffits,rails/glass/walls. 15102triangles33originalfiles/noOBJ unchanged; old3display historypreserved notmono. Sevenwholeviews/threecloseups showbothcompletefascias andleft/rightendpoints. Actual HFU Library 2009 scene/3MF/fourscripts/paletteRGB identityPASS; notYZUlegacyartifact. Original2053crosslayerloss NOTcolumncount,77squarepostsegments+2roundcolumns; nonzero corneroutside and finiteprobe/QAexceptions unchanged,notglobalprintability.2008southEXIFunverifiedclock predates2009opening,notcurrentcapture. Initialidentity-previewtimingfailure retainedprivate; partialcount0,no physicalprintapproval."
+}

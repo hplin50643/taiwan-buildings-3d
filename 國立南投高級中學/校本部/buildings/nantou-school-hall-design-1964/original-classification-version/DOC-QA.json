@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "scope": "Fresh publication documentation/link/hash checks only. Prior geometry/render/source QA was not rerun or relabelled by this documentation edit.",
+  "checked_at": "2026-11-01T05:14:15.953034+00:00",
+  "documents": [
+    {
+      "file": "README.md",
+      "sha256": "33b1a48cdb45be8d9ffea063090e1ae5a77e119561eda1362156fc39c135fbef",
+      "inline_images": [
+        "preview.png",
+        "rear.png",
+        "front.png",
+        "back.png",
+        "west.png",
+        "east.png",
+        "top.png"
+      ],
+      "relative_links": [
+        "preview.png",
+        "rear.png",
+        "front.png",
+        "back.png",
+        "west.png",
+        "east.png",
+        "top.png",
+        "model.stl",
+        "model.3mf",
+        "scene.blend",
+        "build_model.py",
+        "render_model.py",
+        "export_3mf.py"
+      ],
+      "missing": [],
+      "passed": true
+    }
+  ],
+  "source_model_rights_separate": true,
+  "source_media_excluded": true,
+  "geometry_render_and_scripts_unchanged_sha256": {
+    "back.png": "56154dbfeeb034ecadb50d6ac96988b9aa6a50ac2a5f304e9f0700aa60b53adc",
+    "verify_scene.py": "4ecd72abcf063caa100219e5cc1cd150d09639092716ad0af60e28f8908a7c06",
+    "render_model.py": "bcb14d93f76c6ffe150983cf5350bb4c37a0d4bf2559178fbf9ec8dde6e064f7",
+    "export_3mf.py": "1264f3877e99d424f1bdc258da93017fe69e9faf2480957c05df98dee2147147",
+    "west.png": "824fc9bb6361b51eeba20681b34c0ba29b33a765cf9e556ad3035fe410f6ea76",
+    "validate_model.py": "71452b46bfb560a89e0c330e303adf7d81024d994846b13814af35d29c9a8f7c",
+    "scene.blend": "1a130488098d3389efae58a58ecbb1d07eb9d617ce44b6a07086d111e21afc53",
+    "top.png": "f8383a0d37cc4c6b2ddf5dc268dbd2386b2c00142d467ad9ea50a8a9f5eb8719",
+    "build_model.py": "96ee48d21dbd004d971fbb5e2a4e98112f33047bf154e2bfcb5e75acfea2d215",
+    "model.3mf": "6f03517f086eda7ffc573deb11dfd3831ae2039ed751f5142df03bfa2e68ff7b",
+    "model.stl": "e991e8d40fd2b86acb95e78ff5cb2c4ea695c6508cea7aec2f96bb4584a416ac",
+    "rear.png": "45f8f7800cf4574bfd9642ed8053c6f7bc6236c6dd0b7468b9a32b09c240657b",
+    "preview.png": "f3d3f6208c996046e6c74a3c38312741c2c3865545dff837b1a105ac5813b683",
+    "front.png": "5207a441a283488b8870bd448ea16f6a852a06e98a613d9a74700f5de3b1eaeb",
+    "mesh.npz": "965dd5d8c1fd91ebcf71915b1f055e8b1d993296012856ab3d3954c5a4e6a6e4",
+    "east.png": "c1c22476722b134cf5316eb4392c379cc5a55a6f57d9b8573ed09e098aa749d5"
+  },
+  "prior_document_qa": {
+    "file": "DOC-QA.json",
+    "sha256": "62b2ba0c4368b74a4945b1e6d6a805b6cb663c21ba7bb868574dcc28bada7d40",
+    "historical_result": {
+      "status": "PASS",
+      "inline_images": [
+        "preview.png",
+        "rear.png",
+        "front.png",
+        "back.png",
+        "west.png",
+        "east.png",
+        "top.png"
+      ],
+      "missing": [],
+      "original_design_not_asbuilt": true,
+      "name_not_asserted_as_zhongzheng_hall": true,
+      "source_model_rights_separate": true,
+      "source_media_excluded": true
+    },
+    "applicability": "Historical pre-publication document QA, including any HOLD/old rights wording, is not the current document status."
+  }
+}

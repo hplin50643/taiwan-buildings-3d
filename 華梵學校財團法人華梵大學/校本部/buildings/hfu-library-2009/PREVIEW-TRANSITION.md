@@ -1,0 +1,1 @@
+原三展示材Warm stone/Recess/Base只深度基座示意，非實景全彩。本次只南兩長簷4灰/15098中性，原scene/render/README公開ORIGINAL-PREVIEW別名與全部私原包保留，原previews和全部QA未刪改。source-gap同項count0，不追認原全printability。

@@ -1,0 +1,39 @@
+{
+  "slug": "ncu-water-tower-1969-design",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "NCU-WATER-DESIGN-COLOR-SOURCE-GO-1054.json",
+    "sha256": "221590a1de90880169ac570432ad89d2cc7bc6e6b78b00124deea609f56bb5ba"
+  },
+  "review_sha256": "2b819e7ab91a2dcd2a3b08ad4569ed7e3f8130c83b9dfee3e85c9c9c19aa11ae",
+  "source_records": [
+    {
+      "file": "MXMRMAMQMD.jpg",
+      "sha256": "0c802e569ed587ca59f51288fba47b108c8d6e0a9ac02e3a463ce3ec036a5551"
+    },
+    {
+      "file": "MNMRMAMQMD.jpg",
+      "sha256": "a88c7311e6277b745c11b8b8edbb92e84139b9c028a34cd9749fe1a90ccd08e6"
+    }
+  ],
+  "source_scope": "1969 design specification whitecement only,not asbuilt/current",
+  "limits": [
+    "All vertical tank skin/ribs/supports and B4 chord beams remain outside this bounded recommendation.",
+    "Pipe, ladder, cover, roof/rim, author base and hidden solid print core not assigned source white.",
+    "No new texture, line, geometry or mirrored material domain.",
+    "Historical1969design not as-built/current; exact present site/preservation unverified.",
+    "T1 clear inner diameter3.66m takes priority; T2 3.60m discrepancy retained without averaging.",
+    "16radialribs22.5deg, slab/height chain/ring geometry unchanged.",
+    "Tank interior solid print core, closed25mm display lid, rectangularized ladder and .8mm printed return-pipe enlargement remain disclosed fabrication approximations.",
+    "Base not terrain/foundation; underground and unknown services excluded; no physical print test.",
+    "Sourcecolor recommendation does not rewrite or independently reapprove original QA."
+  ],
+  "original_qa_scope": "Entire original-version subtree byte-identical; its QA applies to its own original renders/mesh/palette only.",
+  "parent_domain": {
+    "file": "BUILDER-PARENT-COMPLETE-DESIGN-UNDERSIDE-1055.json",
+    "sha256": "7283f8d6ea7f8e6b845efd6d43e7b894edb743d92c9bb6cbacda6c36a0869235"
+  }
+}

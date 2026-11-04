@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Fresh publication documentation/link/hash checks only; historical geometry/render/source QA was not rerun or relabelled.",
+  "documentation_qa_sha256": "7d0f14ec795a9cbeeaba272097bac80a7f30803cc0a8d327a6fb469ec8c1c88c",
+  "readme_sha256": "45e9bfca91ad0a8c009e883549479fe0d648abf8db4f4eb5ffa3198ffb3ffeb9",
+  "geometry_render_scripts_unchanged": true,
+  "metadata_only_sanitization": {
+    "files": [
+      "SOURCE-VISUAL-QA.json",
+      "IDENTITY-QA.json"
+    ],
+    "scope": "Removed private workflow references only; original factual findings and limitations retained, no fresh source review claimed.",
+    "original_sha256": {
+      "SOURCE-VISUAL-QA.json": "f2741598538d93554cef4ed86593a52386b5abc8c882fd5f76c04afc962f131f",
+      "IDENTITY-QA.json": "61fae6b508901d0cef06c2d981be000777d8d68e0e1ba2abbfa228ecb4c8c124"
+    }
+  }
+}

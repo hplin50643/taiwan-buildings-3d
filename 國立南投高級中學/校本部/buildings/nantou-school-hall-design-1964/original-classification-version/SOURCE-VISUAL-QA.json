@@ -1,0 +1,69 @@
+{
+  "status": "passed_with_explicit_scope_limits",
+  "passed": true,
+  "reviewed_utc": "2026-11-01T05:03:21.144987+00:00",
+  "reviewer": "independent source and visual review subagent",
+  "mesh_sha256": "965dd5d8c1fd91ebcf71915b1f055e8b1d993296012856ab3d3954c5a4e6a6e4",
+  "review_directory": "nantou-school-hall-design-1964-model-20261101/review-965dd5d8",
+  "actually_viewed_png_sha256": {
+    "front.png": "5207a441a283488b8870bd448ea16f6a852a06e98a613d9a74700f5de3b1eaeb",
+    "back.png": "56154dbfeeb034ecadb50d6ac96988b9aa6a50ac2a5f304e9f0700aa60b53adc",
+    "east.png": "c1c22476722b134cf5316eb4392c379cc5a55a6f57d9b8573ed09e098aa749d5",
+    "west.png": "824fc9bb6361b51eeba20681b34c0ba29b33a765cf9e556ad3035fe410f6ea76",
+    "top.png": "f8383a0d37cc4c6b2ddf5dc268dbd2386b2c00142d467ad9ea50a8a9f5eb8719",
+    "preview.png": "f3d3f6208c996046e6c74a3c38312741c2c3865545dff837b1a105ac5813b683",
+    "rear.png": "45f8f7800cf4574bfd9642ed8053c6f7bc6236c6dd0b7468b9a32b09c240657b"
+  },
+  "source_jpg_sha256": {
+    "M8MAMZMHMD.jpg": "8d4df011c9a282dc54d523f0fca2df45d254d674971496d768b8b01f0ef12094",
+    "MLMAMZMHMD.jpg": "f7baf2089f002e91f7586246397e1cd0361b48897743906be4d36dddbc94467c",
+    "MXMAMZMHMD.jpg": "85e6487facaeedd89b1e45529c65ba37894e0a3123c00ab50db600700750ea27",
+    "MNMAMZMHMD.jpg": "f641654106c140e2a1aa91d7fceef5ccd15021423a0591187fd9bc4ac34e0ee6",
+    "MCMAMZMHMD.jpg": "5d07986550fab3d5c32cecfe52468a686d6cd0d3b2191220cab7fe895e1de27e",
+    "M7MAMZMHMD.jpg": "ddf2bc6c21bfa476943cebf8e254e3cc51f940eb6d5f194e9319a32ac32d2820",
+    "MHMAMZMHMD.jpg": "25153b5d10ec7bcde8ebc892d891e9b0fcf46bc307ec3400dea310f81c22a1fd",
+    "M8M6MZMHMD.jpg": "375ecf901131234d76c198104f3bd7e59796a6e68fd307313981d26d2d7f25c2",
+    "MLM6MZMHMD.jpg": "2556003e4d70301e1d24799dc7b5856bd0de20feb888a6d207ccf4cd51b7f55a"
+  },
+  "method": "Direct visual inspection of all seven unique v4 renders after reading source drawings and local enlarged crops. Not inferred from format metadata. Numerical mesh/rebuild/scene tests are separate parent checks.",
+  "checked": [
+    "Complete47x27.5m twin-pitch principal volume and source axis arrangement",
+    "Front gabled backed grille, two four-leaf entrance groups and canopy",
+    "Both long sides: single near-entrance window strip plus eight paired groups, lower doors at two axes",
+    "Rear three paired window groups, highest center pair has sloping upper edge, two raised door exits",
+    "Source-supported vertical facade divisions, gable fascia and four small rear vents",
+    "All seven image frames contain principal roof and base without visible clipping"
+  ],
+  "resolved_interim_issues": [
+    {
+      "issue": "missing fine front/rear gable divisions",
+      "status": "resolved visibly in v4"
+    },
+    {
+      "issue": "missing four rear low vents",
+      "status": "resolved visibly in v4"
+    },
+    {
+      "issue": "highest rear center windows wrongly rectangular topped",
+      "status": "resolved; sloped tops now visible"
+    },
+    {
+      "issue": "missing substantial gable edge frame",
+      "status": "resolved; approx0.75m downward fascia, not whole roof thickened"
+    },
+    {
+      "issue": "front/back elevated small framing hides facade",
+      "status": "resolved orthogonal front/back and entrance-side preview"
+    }
+  ],
+  "remaining_major_source_mismatches": [],
+  "explicit_scope_limits": [
+    "1964 design-drawing reconstruction only; no assertion of as-built1965 Zhongzheng Hall identity or present-day state. Completion/use chronology is indirect matching evidence, not proof of this design implementation.",
+    "GlobalA5 datum GL0/1F0.5/2F4.35/3F7.93/eave10/ridge14.12; localA11 floor/dimension discrepancies remain disclosed, no claim of precise surveyed alignment.",
+    "A12 window height explicit2.5m; A5 sill elevations graphically estimated approximately±0.1m. Gable fascia/ribs/screen/vents locations partly graphical.",
+    "Screen is backed coarse grid relief, not exact individual historic ornamental masonry; figurative wall decoration and tiny surface detailing not reconstructed.",
+    "Neutral colors, opaque glazing, simplified mullions/roof corrugation and no interior reconstruction.",
+    "Authored base, local apron and external stair supports are schematic rather than surveyed terrain.",
+    "No physical print/support validation; no copyright/license/publication clearance implied by this visual pass."
+  ]
+}

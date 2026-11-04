@@ -1,52 +1,28 @@
-# 南投中學綜合禮堂 — 1964 年原設計圖版
+# 南投中學綜合禮堂｜1964 原設計入口門周名義黑
 
-> **本地模型與數位 QA 完成。**
-> 依陳其寛／中國建築師事務所工號5218、圖框民國53年4月的原設計圖重建。**不是竣工測繪，也不是現況模型。**
+**1964 設計色示意，非竣工或現況實色。原 LOCAL_READY_PUBLICATION_HOLD 保留為歷史狀態；來源色域GO不解原身份或幾何QA限制，也不作新的發布授權判斷。** 僅兩完整入口門周20面採A5明寫黑色族 #333333；其他35598面保持原六材指派/RGB，仍是歷史展示示意，不是新增實景證據。partial_color_incomplete=true、fully_colored_exterior=false。原版非單色，未試印。
 
-![斜視](preview.png)
+| 全館原設計 | 背側 | 長側 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![長側一](front.png)|
+|![長側二](back.png)|![入口端](west.png)|![後端](east.png)|
+|![頂面](top.png)|![兩門周](entry-detail.png)|![左門周](facade-detail.png)|
+|![右門周](roof-detail.png)|||
 
-## 身分範圍
+## 材色範圍與年代
+同 nantou-school-hall-design-1964，35618原三角/原STL與原NPZ坐標及面次序不改，count_delta=0；只x−117.5平面88面中兩完整10面門周改新增mat6，其他68同平面未改。門柱/門背/階/棚體及棚上4.18..4.35帶不染；外側黑區與其他牆同域不可切面湊色。
+A5門周引線明寫黑色與磨石子詞，中間工法字未清，不硬轉確切工法；圖面紅色鋪繪不是紅色材質。僅名義設計黑色族，非校準色票，不加顆粒/門圖案。
+1964-04/工號5218/CCCK428，不是已證1965中正堂竣工版本；原身份關聯仍缺同形照片/紀錄，不混1989中正大樓、1990活動中心或2026現況。
 
-國立臺灣博物館典藏案名為「南投中學大禮堂圖書館綜合建築工程」，圖組CCCK428。官方校史另記1965年中正堂落成、原日本神社拆除；其時序與用途相符，**但尚未取得同形竣工照片或紀錄確認工號5218就是該堂實際建成版本**，因此不直接以「中正堂」作模型名稱，不混入1989年中正大樓或1990年活動中心。
+## 全部原版與限制保留
+原immutable32件在original-classification-version/完整逐byte保留，包括原六材scene/mesh/palette/model.3mf/七圖/QA；原README/scene另有ORIGINAL-SOURCE-GAP alias，render_model.py原bytes不變。更早local31件私有原封保留，當中LOCAL_READY_PUBLICATION_HOLD README公開ORIGINAL-LOCAL-README.md原bytes保留。既有出版修文差別不冒稱兩版本相同。
+舊QA在original-classification-qa-aliases/只綁歷史子包；PUBLICATION-DOC-QA的更早sanitization前hash若不同，不改舊hash或追認原QA。新十圖與appearance.3mf是新增設計色variant。
+原47×27.5m外包、GL0/1F+.50/2F4.35/3F7.93/檐10/脊14.12m控制維持；不可混以1F為0的datum。A11/A12門型15cm差與局部高程疑義保留，A5窗估讀±.10m不冒實測。花磚屏封背格網低浮雕代理、玻璃封背、框/山牆簡化與展示基座均不改；不追認全域壁厚、支撐或實體列印。
+比例1:200/mm，含基座約275×167.5×75.6mm。原NPZ雙精度與STL float32串列化有既有微差；新NPZ原坐標與面完全不變，另按float32串列化精確比原STL，不重造替代STL。
 
-## 幾何與限制
+## 來源與格式
+[A5典藏](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MCMAMZMHMD)，陳其寛／中國建築師事務所；臺博館CCCK428。原圖像CC BY-NC版本未確認，不保證商用或自動套repo授權；圖像/裁圖私人研究，不公開作貼圖。
+[原STL](model.stl) · [新增逐面設計色3MF](appearance.3mf) · [新scene](scene.blend)。原無OBJ不新增。實物件 Nantou School Hall 1964 Design partial color；七材不是已測試四色切片。隔離原build及color重建只證本variant數位一致性，不替原工程身份/列印作背書。
 
-- 原圖47.00×27.50m雙坡大禮堂、教室與圖書館外包，保留正面花磚屏位置、兩組各四扇入口、長側1單＋8雙聯窗、背面三窗帶與外門。
-- 以GL=0：1F+.50m、2F4.35m、3F7.93m、檐10.00m、屋脊14.12m。以1F為0則分別為0、3.85、7.43、9.50、13.62m；不可混用datum。
-- A12側窗型高2.50m有明標；A5圖估A窗GL+2.00～4.50m、B窗GL+7.00～9.50m，圖估誤差約±0.10m。A11局部地坪與全館立面高程差未完全解，不拿局部鏈硬套全館。
-- A11側門淨高與A12總高有15cm差異，模型優先採A12窗門型式與A5整體立面比例。
-- 前後山牆斜框深約0.75m、細直肋與背牆四個小通風格按A5比例簡化；背面最高中央雙窗保留順屋坡梯形上緣。這些比例讀值不冒充逐項標註。
-- 花磚屏以**封背格網低浮雕簡化**，不聲稱逐塊還原原花紋；細框、屋面波紋、配筋、室內觀眾席與設備不逐一表現。玻璃不透明封背。
-- 基座、地坪和局部外階承托為展示示意，不是精確地形；材料色為中性辨識色，不冒充原建物色票。
-- 比例1:200，STL／3MF單位mm；含底座約275×167.5×75.6mm。未實體試印，須自行檢查機台範圍及支撐設定。
-
-## 已完成的數位檢查
-
-七視角由同源網格實際渲染並獨立對圖；全頂點相機取景、單一連通水密網格、STL／3MF回讀、壓縮BLEND真實重開，以及另一乾淨目錄的逐位元重建均通過。來源比對是明示範圍的外觀設計重建檢查，不等於實測或實體試印。檢查結果見各`*-QA.json`。
-
-## 來源與權利分開說明
-
-原圖作者：**陳其寛／中國建築師事務所**；典藏：**國立臺灣博物館／臺灣現代建築圖說**。圖像頁標CC BY-NC，版本未確認；這是原圖像標示，不自動等於整包模型授權。本包保留設計者與來源，不把原圖像標示概括成整包模型僅限非商業，也不宣稱取得不限用途商用權利。原圖、PDF及含token的HTML均不隨成果包附送。
-
-- [地盤配置A1](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=M8MAMZMHMD)
-- [首層A2](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MLMAMZMHMD)
-- [正、背、側立面A5](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MCMAMZMHMD)
-- [縱斷A6](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=M7MAMZMHMD)
-- [橫斷A7](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MHMAMZMHMD)
-- [門窗A12](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MLM6MZMHMD)
-- [南投高中官方校史](https://www.ntsh.ntct.edu.tw/ischool/widget/main_menu/show.php?cid=1292)
-
-完整URL與圖檔雜湊見sources.json；原圖查讀日期2026-11-01，不等於圖面年代。
-
-## 其他視角
-
-![背斜視](rear.png)
-![圖示正面](front.png)
-![圖示背面](back.png)
-![長側一](west.png)
-![長側二](east.png)
-![頂視](top.png)
-
-## 下載與重建
-
-[單色 STL](model.stl) · [彩色 3MF](model.3mf) · [可編輯 Blender 場景](scene.blend) · [建模程式](build_model.py) · [渲染程式](render_model.py) · [3MF 匯出程式](export_3mf.py)
+## English scope
+1964 DESIGN black only,not current/asbuilt.20 complete entrance surround faces from originalmat0 to appendedmat6;35598 original six illustrative assignments/RGB EXACT.35618 original triangles/count0/noOBJ.Original32 publishedfiles and earlier31localfiles retained separately;historical LOCAL_READY_PUBLICATION_HOLD not erased or interpreted as current permission.1965built hall identity unconfirmed;no1989/1990mix.Original15cm door/datum conflicts,±.10m estimates,backed screen and untested manufacturing limits retained.Only clear black family used,not uncertain finish-method transcription or red rendering ink.

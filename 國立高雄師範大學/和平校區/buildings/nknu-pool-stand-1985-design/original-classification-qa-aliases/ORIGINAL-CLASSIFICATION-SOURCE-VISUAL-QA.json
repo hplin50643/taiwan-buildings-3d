@@ -1,0 +1,57 @@
+{
+  "status": "passed_with_explicit_scope_limits",
+  "passed": true,
+  "reviewed_utc": "2026-11-01T05:31:27.333768+00:00",
+  "mesh_sha256": "d0dd90599325c71afd7f50449c81afc2e6d36a63583a7a595c6c087e2228c206",
+  "actual_images_reviewed": {
+    "preview.png": "784dba534c22923fec2ca0610a0374dff7d28c873b8d40e3e279da9005fc5064",
+    "rear.png": "4decd2a4275ee4676efe915bbc41f380a12cc6ca10c9e886b1fd09a9c4d8846c",
+    "top.png": "12788ae04bf5794007e5aba80ca2d5f5e3c5e27d4c7cc2fe0a95808c4018f9d7",
+    "front.png": "5ca4583607fa454ec8c260744c54a6cd836cfbc915189538090912dc619505d3",
+    "back.png": "dd32740433f55ae6188129413c27bea7493c6a5518ecc093f80813d348a49863",
+    "east.png": "1f0a1b509e4623900adb89222ea8946d9a913c0b2a4e3a24cd41ce2de01e0246",
+    "west.png": "8cd32604d856d8073500f470a27af5ed3732fb33380b8adaef7401bf075cd1d6",
+    "front-detail.png": "f2ba7d81abc3ca99f649abfee64f0135ae05529fc23538ef9595c4d8f9933711",
+    "rear-detail.png": "d4bea5f95cfab984eaef52c00cb3ea9d98c3a2a8e0e2b811b2950d549e7b25ae"
+  },
+  "source_image_sha256": {
+    "MLM4MIMNMD.jpg": "7ca5f85fb3151639cb08489fcceb6e2dfccb264a5c19072b76f54feba0047711",
+    "MXM4MIMNMD.jpg": "8959ae8b47ca67f335a9ddc7f5fe6dee8fb9e0f81fdf207690945fa5fbe636da",
+    "MNM4MIMNMD.jpg": "a2e90719c6b15bffa481d410e91daf5a31052be257bfa5093aad03286e5a5594",
+    "MCM4MIMNMD.jpg": "6878a30c3064649e1a170ad9e622fac5df79c90090b22468e0cf1b2608b49e84",
+    "M7M4MIMNMD.jpg": "fd476a034e68710ee3bb18ea8786c3ad24f1a90b7e675a3d09af14aa81f7cbff",
+    "MKM4MIMNMD.jpg": "c23dd5677f83971b72595bc7cde1c78a041f3cb0a17cbe1b3cc2cd6a8b1a572b",
+    "MNMDMIMNMD.jpg": "a82f91e42d4a56107f8de71839b2c4d9542edd5bd5006f100cfe8db99aa36070",
+    "MHM4MIMNMD.jpg": "c53188e42dedd6e10b00434de008e00c6ab3f89d3635da70c25c752ce3581b64",
+    "MQM4MIMNMD.jpg": "cd7f724be9bb01a5be70bf95d894f7aacb3241484ffb72027144182c868b8bfb",
+    "M8MEMIMNMD.jpg": "cec617451a8b46d551898bfb6889bd535df28696d837ca83b987bff1cfcf99da",
+    "M8MDMIMNMD.jpg": "6634d48fd1d25e6222ccfa74234ce0c87c486e9d5a57ac66436711700fac0e43",
+    "MLMDMIMNMD.jpg": "60b37befe5454db81a405dd8bd9f56dd528d0b632bb8bfa8bec6d405ea035a33",
+    "MXMDMIMNMD.jpg": "b91d3104bbd71c0dfb46ec7527cfecd15c88fe6b7a118bed9056f32cdd4b7c18"
+  },
+  "method": "Actually viewed seven whole-model renders and two cropped detail renders, source plans/elevations/sections/stair/pool/window drawings; also inspected source-to-code mapping. Seven final whole images match immutable review-d0dd9059; both details use final output images; front-detail is latest completedrender-detail-final-log version(targetz29.15) independently viewed. Not inferred from formatQA.",
+  "checks_passed": [
+    "Overall pool/stand relative layout, unroofedtieredstand slope and front/back/side distinction.",
+    "Six intermediate seat treads/sevenrises,20circulationtreads21rises, coveredmainaccess rather than invented full open-sky shaft.",
+    "Pool slope0to-.18 againstrim+1.5,10lanes,20startingblocks,6longside ladders and shallowfootwashring.",
+    "Front DW1/DW2 and fourpatternbandbays distinct from plainthree-panelbays; highrearvents andsix lowrearvents; northendentry visible.",
+    "Wholemodelviews show entire principalgeometry/base; twodetailviews intentionallycropped, notwholeframechecks.",
+    "README distinguishes1985originaldesign fromasbuilt/currentanddisclosesdimensionchain/finishdifferences."
+  ],
+  "scope_limits": [
+    "Originaldesign interpretation, not measuredasbuilt or present-day exterior; existence/campus evidence doesnot proveeverydrawingwasbuilt.",
+    "A2-1/2standspan15cm, sitechain5cm andelevationfinish3cm differences explicitly retained, not claims of exactuniformsurvey.",
+    "Finepipe/laddergeometrythickened, curvedpipesangular, backedopaqueglazing and simplifiedmesh/panel/neutralmaterials; exacthistoriccolorunknown.",
+    "Pool ladderlocations and lowventheights graphicallyestimated; drainlocal-.20 depression omitted; fullconcealedstairs/basement/equipmentnot modeled.",
+    "Perimeterfence simplifiedframesnotexactdiamondmesh/existingpropertyboundary; displaybase not surveyedterrain.",
+    "front-detail intentionallycroppedbutupper/lowerpatternbandsvisible; sevenfullviews supplycompleteoutline.",
+    "This source comparison is not a physical print test, structural assessment or legal rights review."
+  ],
+  "remaining_required_source_geometry_corrections": [],
+  "supersedes": "INTERIM-SOURCE-VISUAL-ISSUES.json v5 findings; front/rearclassification, entrydoor andladdersresolved; footwashabsenceclaimwithdrawn after codeandnewvisual review.",
+  "final_hash_gate": {
+    "all_nine_match": true,
+    "mesh_matches": true,
+    "note": "Finalrear-detailactuallyre-viewed after details-only render also refreshedit. Nootherhashmismatch."
+  }
+}
