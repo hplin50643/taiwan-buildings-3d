@@ -1,0 +1,55 @@
+{
+  "status": "PASS_AUTOMATED_INVENTORY_AND_MESH_NOT_SOURCE_QA",
+  "checks": {
+    "scale_1_350": true,
+    "authored_support_070m": true,
+    "actual_component_extrema_match_print_bbox": true,
+    "base_z_zero_mm": true,
+    "roof720_plus_support070_scaled": true,
+    "mesh_closed_single_component_positive_volume": true,
+    "STL_triangle_coordinates_match": true
+  },
+  "mesh_sha256": "c6b00231c310f1528fb6371398a78ce66dad92b7aa08d76617469d39664ab08a",
+  "input_sha256": {
+    "build_model.py": "32672d71d87e4056c09775840ce7b2e0e37d6d397cf7baad50391df23f8b16fb",
+    "geometry_helpers.py": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f"
+  },
+  "scale": "1:350",
+  "mm_per_source_m": 2.857142857142857,
+  "authored_base_m": 0.7,
+  "source_roof_high_m": 7.2,
+  "derived_rear_roof_endpoint_m": 5.111,
+  "derived_endpoint_allowance_m": 0.1,
+  "expected_print_top_mm": 22.571428571428573,
+  "actual_bounds_mm": [
+    [
+      -125.85713958740234,
+      -19.285715103149414,
+      0.0
+    ],
+    [
+      125.85713958740234,
+      19.285715103149414,
+      22.571428298950195
+    ]
+  ],
+  "authored_component_expected_bounds_mm": [
+    [
+      -125.85714314285714,
+      -19.285714285714285,
+      0.0
+    ],
+    [
+      125.85714257142858,
+      19.28571428571429,
+      22.57142857994352
+    ]
+  ],
+  "limitation": "Automated geometry checks are not source or visual PASS. Human QA must inspect four complete paired groups, eight actual round apertures, eight short140cm canopies, open terraces, source60cm parapet conflict and detail priority, rear roof derived5.111±.10m, and excluded remote site works.",
+  "not_claimed": [
+    "final visual QA",
+    "current survey",
+    "physical print testing",
+    "publication readiness"
+  ]
+}

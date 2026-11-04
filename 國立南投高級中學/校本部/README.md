@@ -8,6 +8,6 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/nantou-school-hall-design-1964/preview.png" alt="南投中學綜合禮堂｜1964原設計圖版：實際模型渲染" width="220">](buildings/nantou-school-hall-design-1964/README.md)<br>**[南投中學綜合禮堂｜1964原設計圖版](buildings/nantou-school-hall-design-1964/README.md)**<br>[STL](buildings/nantou-school-hall-design-1964/model.stl) · [彩色3MF](buildings/nantou-school-hall-design-1964/model.3mf) · [Blender](buildings/nantou-school-hall-design-1964/scene.blend) |  |  |
+| [<img src="buildings/nantou-school-hall-design-1964/preview.png" alt="南投中學綜合禮堂｜1964原設計圖版：實際模型渲染" width="220">](buildings/nantou-school-hall-design-1964/README.md)<br>**[南投中學綜合禮堂｜1964原設計圖版](buildings/nantou-school-hall-design-1964/README.md)**<br>[STL](buildings/nantou-school-hall-design-1964/model.stl) · [彩色3MF](buildings/nantou-school-hall-design-1964/model.3mf) · [Blender](buildings/nantou-school-hall-design-1964/scene.blend)<br>[設計色局部3MF](buildings/nantou-school-hall-design-1964/appearance.3mf) · [範圍與限制](buildings/nantou-school-hall-design-1964/README.md) · [校驗版本與原檔說明](buildings/nantou-school-hall-design-1964/CHECKSUM-SCOPE.md) |  |  |
 
 [回學校圖鑑](../README.md)

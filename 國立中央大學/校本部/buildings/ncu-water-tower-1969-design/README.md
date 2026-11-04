@@ -1,46 +1,30 @@
-# 國立中央大學水塔 — 1969 設計圖重建
+# 中央水塔1969設計｜槽底板局部白水泥設計色
 
-**歷史原設計模型，不是竣工測繪，也不代表 2026 年現況。精確現址與保存狀況未核。**
+**局部補色未完成：只1969原設計標註「刷白水泥三道」的槽底板外露下表面142原三角呈名義白，其餘面尚未分色。不是竣工實色、現地採色或2026現況；色審不追認全幾何/列印QA。** partial_color_incomplete=true、fully_colored_exterior=false。同項 ncu-water-tower-1969-design/count_delta=0。身份 NCU Water Tower 1969 Design partial color。
 
-![模型預覽](preview.png)
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![槽底低角](entry-detail.png) | ![左下交界](facade-detail.png) |
+| ![反側槽底](roof-detail.png) | | |
 
-## 來源與範圍
-以國立臺灣博物館臺灣現代建築圖說 CCCK19104006（T1）與 CCCK19104007（T2）重建。校核欄 58.6.20 換算 1969-06-20，不由案號推年份。原圖題名「國立中央大學水塔新建工程」；T2 註記 60T。
-設計者：陳其寛、劉應昌；T2 另列黃寶瑜。精確連結見 sources.json。
+## 材色範圍
 
-## 幾何控制與差異
-- 比例 1:100，毫米模型。16 根徑向肋、22.5° 間隔。
-- T1 槽淨內徑 3.66 m；T2 同基準標 3.60 m。本模型採 T1，不平均、不冒稱一致。
-- 槽壁厚 0.10 m；上肋徑向 0.35 m、下柱 0.50 m，切向寬 0.20 m。
-- GL 至槽底板下 11 m，底板 0.20 m；再 6 m、0.15 m、B1 0.50 m、屋緣凸起 0.10 m，至凸緣 17.95 m。
-- 下部三道 B4 弦梁；頂部人孔 0.70 m。
+T1槽底板引線明示水泥粉刷／刷白水泥三道；本件只採其歷史設計色族，不以照片猜現況。先取原z112.5無限plane全部142面、exact共享邊一完整component，再按原128gon半空間r19.4、normals(k+.5)×2π/128核全部三頂點。原面等於有限域；C1/C2柱腳交疊已由原Boolean扣除，不補圓盤。142名義設計白#DFE0D4，12012未知中性#B8BAB5，3224共面域uniform。
 
-## 明示簡化
-原槽內空間改為不外露列印實心核，並非建築實際填實；封閉人孔蓋用 25 mm 設計尺度顯示厚度。下部爬梯桿採簡化矩形截面，未作五金細節。槽內梯與配筋不呈現；T1 頂部回彎管按屋蓋上下各 90 cm、水平 20/30 cm 重建；名義 1 英吋管徑在 1:100 過細，明示增粗為列印直徑 0.8 mm，非原尺寸。底盤為作者展示底座，不是地形或原設計基礎。地下基礎及未知管線不造。中性色非現地採色。未實體試印。
+112.5mm=(11m+.25m展示平移)×10，原transform已含在STL，不重施。只外露槽底板+同高B2環底融合表面；立槽皮、肋柱、B4弦梁、屋蓋、上緣、封閉人孔、爬梯、回彎管、底座與實心列印核不染白。名義色不是精確RGB/漆樣，資料範圍邊界不是實材接縫；中性不當已證灰。
 
-## 權利
-原圖頁標示 **CC BY-NC**，版本未確認；此為來源條件，不把整包自動概括為非商業授權，也不宣稱模型可無限制商用。保留設計者與典藏出處；本包不含原圖、PDF 或網頁。
+## 原件作用域與歷史限制
 
-## 檢視
-![正面](front.png)
-![背面](back.png)
-![東面](east.png)
-![西面](west.png)
-![俯視](top.png)
-![後透視](rear.png)
+完整36原檔含原3MF、3材palette、scene、mesh、8張圖及全部QA，逐byte保於original-version/；另私存original-remote。原QA只驗原子包內檔案，不誤綁新10圖/scene/palette。本根目錄為新色版，原model.stl/build_model.py字節保留，原inventory無OBJ，不捏造。舊中性混凝土/底座/蓋3展示分類不是已測實色；PREVIEW-TRANSITION.md記source-gap同項更新。
 
-![屋頂細節](roof-detail.png)
+來源校核58.6.20=1969-06-20設計圖日期，非建成/拍攝/今日狀態。精確現址與保存未核。T1槽淨內徑3.66m優先、T2同基準3.60m差保留，不平均。原16徑向肋22.5°及全標高環幾何不變。槽內填實為不可見列印代理，封人孔蓋25mm設計厚度、爬梯矩形簡化、回彎管列印直徑0.8mm增粗均保。展示底座不代表地形/地下基礎，未知管線不造。
 
-## 重現與驗證
-```sh
-python build_model.py
-python export_3mf.py
-python validate_model.py
-blender -b --python render_model.py
-blender -b --python verify_scene.py
-```
-模型檔為毫米、1:100；STL 不攜帶色彩，3MF 包含中性展示色。八張 PNG 為同一 mesh 的實際 Blender 渲染；屋頂細節刻意裁去底盤，其餘七向完整取景。
+新QA僅原bytes/12154全triangle identity、精確隔離原build+color重建、2材3MF/reopen/身份/十圖；不改寫或另認證原geometryQA。未切片/實體試印，不稱免支撐或強度保證。來源設計者陳其寛、劉應昌，T2另黃寶瑜；典藏臺博館。原圖CC BY-NC版本未核，不擴稱整包無限制商用。原圖與crop私存不公開。
 
-## 下載與重建檔案
+NCU Water Tower 1969 Design partial color. Only the complete exposed tank-bottom underside142originaltriangles receive nominal whitecement from the1969design instruction,not measured/asbuilt/currentcolor. Wholez112.5plane equals one connected142triangle domain within original128gon radius19.4mm; support footprints stay Boolean-cut.12012neutral,3224coplanar domains uniform,12154triangles unchanged,count0.
 
-[單色 STL](model.stl) · [彩色 3MF](model.3mf) · [可編輯 Blender 場景](scene.blend) · [建模程式](build_model.py) · [渲染程式](render_model.py) · [3MF 匯出程式](export_3mf.py) · [重建依賴](requirements.txt)
+All36originalfiles including originalmodel.3mf,three-materialscene/palette,originaleightviews andQA remain byte-identical under original-version/. Those oldQA records apply only to that self-contained originalpackage,not newimages. OriginalSTL/build unchanged,no originalOBJ. Exactrebuild/identity does not independently reapprove originalprintability.
+
+T1clear3.66m versus T2 3.60m discrepancy retained.1969design date not construction/capture,current site unverified. Solidinteriorproxy,25mmcover,rectangularladder,.8mmprintpipe and authored base remain disclosed. No actual print,globalstrength/currentclaim. Private sourceimages excluded. Verticalskin/supports/rings/roof/pipe/core remain neutral. Closeups deliberately low-angle to show underside; preview neednot make hiddenfaces appear colored.

@@ -1,0 +1,436 @@
+{
+  "kind": "append-only-publication-supplement",
+  "target": "國立中央大學/校本部/buildings/ncu-water-tower-1969-design",
+  "original_payload_files": 70,
+  "manifest_self_reference": false,
+  "original_freeze_unchanged": true,
+  "files": [
+    {
+      "path": "COLOR-ASSIGNMENT-QA.json",
+      "size": 228,
+      "sha256": "babd8c2b0b77c69f7e10ca1a0c82cf959b2f30f3c40caa192f2ddf278fa714d7",
+      "git_sha1": "040c03f38f15e49725e52efadb3cb9116edd9dec"
+    },
+    {
+      "path": "COLOR-FORMAT-GEOMETRY-QA.json",
+      "size": 1268,
+      "sha256": "91745032b1e08572647f42ea914c8056da45c92eb684cbfb6947467740f85358",
+      "git_sha1": "36bff8c584248332dce0e88adcc886df0c75bc23"
+    },
+    {
+      "path": "COLOR-SOURCE-REGISTER.json",
+      "size": 2007,
+      "sha256": "28edfc14a661500e35985d1a2e3085abf5712003dd18e95c6ea7c37953247474",
+      "git_sha1": "a910c22219515cf1ea6362c5b7a92d6dffb07997"
+    },
+    {
+      "path": "DELIVERY-QA.json",
+      "size": 2518,
+      "sha256": "8c79514389ca357cf52635e17ed0d32022dd511b6c5dad67dca9e1b8a59ca31c",
+      "git_sha1": "c10551febe8a2e7ed352e38f79bd026eccf66132"
+    },
+    {
+      "path": "FRAMING-QA.json",
+      "size": 1022,
+      "sha256": "62c7a33d38741957bfd1734221b671415b4d42bcb4d1a44e9eda10957ae1e417",
+      "git_sha1": "1e00b52efb9862a22855fb8e083e066bf41f771b"
+    },
+    {
+      "path": "INDEPENDENT-COLOR-VISUAL-QA.json",
+      "size": 6075,
+      "sha256": "1f72160b37bd4c46714ed9d8a36f16042c0863e28a15a30f73d6b66a48fd835b",
+      "git_sha1": "0f72762544ec1be30b9b12a2215c4d3ad3de4c77"
+    },
+    {
+      "path": "PREVIEW-TRANSITION.md",
+      "size": 228,
+      "sha256": "76662d3ae1a999efb572edd80b77a2046724a3728496941475a2cb28ce53b514",
+      "git_sha1": "4b90105e785f0d4f428dbccb298f0baf9e036b0d"
+    },
+    {
+      "path": "README.md",
+      "size": 4058,
+      "sha256": "f577aca79c5381ec9869279f3153236153b4509f00b05e83f7061a15c5ce1979",
+      "git_sha1": "9f4769682ba7b997048b431c4bab625aeb83d154"
+    },
+    {
+      "path": "README.zh-TW.md",
+      "size": 4058,
+      "sha256": "f577aca79c5381ec9869279f3153236153b4509f00b05e83f7061a15c5ce1979",
+      "git_sha1": "9f4769682ba7b997048b431c4bab625aeb83d154"
+    },
+    {
+      "path": "SCENE-QA.json",
+      "size": 502,
+      "sha256": "91df5bb21076dfa7eb3bccb0b32c047ce823b3eb7121386f216c139b044b8ef3",
+      "git_sha1": "c1eaa45a7cafe75c0a1d23bdc91da4b00ffa7097"
+    },
+    {
+      "path": "SHA256SUMS",
+      "size": 6107,
+      "sha256": "6ba8e6c9aea570ce66e45122beddb29e15b2232153b1a9d06e7288e1416ca429",
+      "git_sha1": "5ce989d67405e38a4f1824fc97f3ff50e32ab013"
+    },
+    {
+      "path": "appearance-materials.json",
+      "size": 3208,
+      "sha256": "e631ef95d9e26224028cea87edc286f4c5ab02d0ecfdd61a142512c38cb6276a",
+      "git_sha1": "78be45894276698a374588b3e3b9fa44fdb20f6e"
+    },
+    {
+      "path": "appearance.3mf",
+      "size": 119614,
+      "sha256": "28eddd136d98551eea614d5d081fd9abcd5fb9bb50c4875c0cd1e3d7d0159ba6",
+      "git_sha1": "3cd920df7b67b606dbca8dfcfe6a5e754e098100"
+    },
+    {
+      "path": "back.png",
+      "size": 672769,
+      "sha256": "d4805f28b754864d74834b4aab67af4249f35878f28d6e1b04edc3cacdb9ce45",
+      "git_sha1": "d8238b028c920eb115234723c96b0d5c8272728a"
+    },
+    {
+      "path": "build_model.py",
+      "size": 4840,
+      "sha256": "6099dce7fffc598692c0099e879bd58aaf52858fc1de66726a5e6e141c7d30ae",
+      "git_sha1": "56fe797b20fd8332f4d4a94df5f33d8d03bf9588"
+    },
+    {
+      "path": "color-mesh.npz",
+      "size": 83184,
+      "sha256": "10397abc930b7050f12d56d3b001547c9b711259e4072252913b149c7679fc29",
+      "git_sha1": "dbfa6830b19b9853c999d036abfde57b447ab820"
+    },
+    {
+      "path": "colorize_model.py",
+      "size": 2947,
+      "sha256": "9325675b6eabab12ee0abe76931597415c7889bed23053746f264a14cc1194ce",
+      "git_sha1": "477de07e2a50db63059b13cc59f19c27bf95928f"
+    },
+    {
+      "path": "east.png",
+      "size": 673730,
+      "sha256": "6026799711eefb1c30e24bcceac729df0aef4da908fe31e4d10944a4a9f3f21b",
+      "git_sha1": "e9f06aae01ea2c22eb5b02ef47b7cbfb251b23b7"
+    },
+    {
+      "path": "entry-detail.png",
+      "size": 1489719,
+      "sha256": "46f5586392345c349d36469374d2dd4f922d1b970dca19a2cd839a431c9d3911",
+      "git_sha1": "db3abbe401c082a70ba24a7e28204eb03fd7691e"
+    },
+    {
+      "path": "export_appearance.py",
+      "size": 1749,
+      "sha256": "050a68d08d2e69f75b68e6811762449303592fe4202c3cd8620ad8650fb7092e",
+      "git_sha1": "547d27469a20187f0d548cec4cffeff1b141078d"
+    },
+    {
+      "path": "facade-detail.png",
+      "size": 1603794,
+      "sha256": "b948b9a64703dd3ccfb839f5c67b7c30d4ebb1c147512730d679ed528b131314",
+      "git_sha1": "3c9e6b53de2a892b30b49798208afe6b282fc9f4"
+    },
+    {
+      "path": "front.png",
+      "size": 666940,
+      "sha256": "05832df0f5413d10815fdfb8964387274afd4533163d16327127fd78e249c950",
+      "git_sha1": "a0c1f29de3d3bbcf0af34a447fe521516eb1992c"
+    },
+    {
+      "path": "model.stl",
+      "size": 607784,
+      "sha256": "a67695b2eb747c0a90b62e3a8fe586db969250437e6194793a329e8a0edcb1f1",
+      "git_sha1": "1f955ac4e30fb2cc8b66ce6d3fc65d6080fde9d0"
+    },
+    {
+      "path": "original-version/BUILD-QA.json",
+      "size": 350,
+      "sha256": "d28ca313652e785b2a1f58ab4e7d131472b113d3380cdf05a5120bd01bdf38c7",
+      "git_sha1": "6b45b6a6ef722bb6a725df4207f5219763ac48ef"
+    },
+    {
+      "path": "original-version/DEDUP-QA.json",
+      "size": 475,
+      "sha256": "36938c01be64f01571becf15ed7078a168cf266bedf743c84e52752b24a4eeff",
+      "git_sha1": "de890e8ad68dbe00f88578e084ceacbd15d3cf69"
+    },
+    {
+      "path": "original-version/DOC-QA.json",
+      "size": 3174,
+      "sha256": "c0adaf02bdfb21a75ad2f4f976f67b16064c719816d784313ee2cf0a2c8cccfc",
+      "git_sha1": "3a36ab1450a90d3375f2c64e875402b85b64b8b1"
+    },
+    {
+      "path": "original-version/FORMAT-QA.json",
+      "size": 459,
+      "sha256": "387c5508c111f141691a271ec6c12a72069ef9f86a4421e26f43a0be920a0b71",
+      "git_sha1": "e64f73d0ca87888e5d4b99d6acf2678a04d34af9"
+    },
+    {
+      "path": "original-version/FRAMING-QA.json",
+      "size": 1019,
+      "sha256": "834d7d64cb777cacbc1bb5e2f1c442e3df901fed388f15ac5da326ccc32501ed",
+      "git_sha1": "e8aa7a55ffa9cb43d9a0dbe9518f883fb778b8e7"
+    },
+    {
+      "path": "original-version/MODEL.json",
+      "size": 559,
+      "sha256": "be0ce5c70a49f545ded21a787355e1fd4cbee3663779a15683fbeb275272e42f",
+      "git_sha1": "6a895e64e45d315fafd5c1fdf20d18f13efc2135"
+    },
+    {
+      "path": "original-version/MODEL.md",
+      "size": 2558,
+      "sha256": "bb9a8010aaeb0821a0fbfe644ae14100c38d12e2ccf7e85fd98eb7e28ea601e6",
+      "git_sha1": "efecc5e0e49a4c7fc739c2a548815ce78aeb307f"
+    },
+    {
+      "path": "original-version/PUBLICATION-DOC-QA.json",
+      "size": 387,
+      "sha256": "fd8dd4b112af76e27d89529963061b7897f787ec13a28c2d71657dd63577f483",
+      "git_sha1": "01ccfcec06d3ccd2864362c82b2c6623e3c0585a"
+    },
+    {
+      "path": "original-version/README.md",
+      "size": 2558,
+      "sha256": "bb9a8010aaeb0821a0fbfe644ae14100c38d12e2ccf7e85fd98eb7e28ea601e6",
+      "git_sha1": "efecc5e0e49a4c7fc739c2a548815ce78aeb307f"
+    },
+    {
+      "path": "original-version/REBUILD-QA.json",
+      "size": 499,
+      "sha256": "bdb3f8299851fc59dd8288d2959507b82f21365a8d95c2096bb3820f6f5ed9f4",
+      "git_sha1": "2dca4dfa1f5e8c9b7e868a0a131ab8bf76321424"
+    },
+    {
+      "path": "original-version/RENDER-BINDING.json",
+      "size": 989,
+      "sha256": "18872d405b2d9daefc2cff7cf188a364579fea0511e8b66aae33aa861d573e0d",
+      "git_sha1": "01169e27bd0af366a56cc3aaaa8e2e90de9ced75"
+    },
+    {
+      "path": "original-version/SCENE-QA.json",
+      "size": 185,
+      "sha256": "71e0c46159d0d513857609b2e8a49d52cd1d69431b14551de2ef3ee5d9ca31cc",
+      "git_sha1": "20c9274d7cadf511f1c8105195ec7c185bf1def2"
+    },
+    {
+      "path": "original-version/SOURCE-CONTROLS.json",
+      "size": 2356,
+      "sha256": "a445ca378d76f62eded992d0d2230485372b6ad6ef101a1603230a0ec25478d9",
+      "git_sha1": "9c1b594b8bbffa936d078698f0b46305601c41e5"
+    },
+    {
+      "path": "original-version/SOURCE-VISUAL-QA.json",
+      "size": 2357,
+      "sha256": "071ae362352905c9b8954ae70c171110622b2ee209ca153d7c1412e0e9a8f11b",
+      "git_sha1": "b823dcfc49b3c3efaa76f0ae2c4f9d2c08c29fca"
+    },
+    {
+      "path": "original-version/back.png",
+      "size": 783568,
+      "sha256": "0f6cf5bb9f9277b98c29e912855eb8f29bc18b89f05fa02d472fa718d65db983",
+      "git_sha1": "b99740a76791e6864e07bdc670a68460bc5666f9"
+    },
+    {
+      "path": "original-version/build_model.py",
+      "size": 4840,
+      "sha256": "6099dce7fffc598692c0099e879bd58aaf52858fc1de66726a5e6e141c7d30ae",
+      "git_sha1": "56fe797b20fd8332f4d4a94df5f33d8d03bf9588"
+    },
+    {
+      "path": "original-version/components.json",
+      "size": 26754,
+      "sha256": "2a58d015e4f12d8ced9902fa62d0a9fe02f649a558784a2e69f97449d583769f",
+      "git_sha1": "c71b669d98628e03fca92b18a216fff15a1ef35b"
+    },
+    {
+      "path": "original-version/east.png",
+      "size": 803631,
+      "sha256": "e7f19ff641faaaecb2ab67715e0a8a31f1bb249aff779fb832e58909801ba4b2",
+      "git_sha1": "b905a472e43f29ba53ef342132d04196bff88ec5"
+    },
+    {
+      "path": "original-version/export_3mf.py",
+      "size": 1739,
+      "sha256": "18fe11730ba3c2a7fc3d7269f81b82ff55d688f2fbed6eb46d6eb6580ca079dc",
+      "git_sha1": "21c4847a2331b16a12004a9026ab07cdfd906f9c"
+    },
+    {
+      "path": "original-version/front.png",
+      "size": 792040,
+      "sha256": "073aac23725f4798ea72fd7718dedc0ed8baef3a547bbd589b8102dbeeb70353",
+      "git_sha1": "2aa34ca0125447d03929a808e6398b55a937b95b"
+    },
+    {
+      "path": "original-version/mesh.npz",
+      "size": 103247,
+      "sha256": "ad8e6581ac749f9e6a171f2217e5e80df07f5afbb9f3e0fc00fc1fffa6511bc6",
+      "git_sha1": "e74ec854e356b3270275c84a8105c9712796e797"
+    },
+    {
+      "path": "original-version/model.3mf",
+      "size": 133399,
+      "sha256": "99d0d3e37958d2e07a0b4d6ac7fd2251b3d861027058d107bbdb526274012638",
+      "git_sha1": "e438e6a3a02f70c338acd458719ca95787dcc8fd"
+    },
+    {
+      "path": "original-version/model.stl",
+      "size": 607784,
+      "sha256": "a67695b2eb747c0a90b62e3a8fe586db969250437e6194793a329e8a0edcb1f1",
+      "git_sha1": "1f955ac4e30fb2cc8b66ce6d3fc65d6080fde9d0"
+    },
+    {
+      "path": "original-version/palette.json",
+      "size": 123,
+      "sha256": "8fb4dd691d116baae75a3922a83c7889133a7fb2cd3f32c961763bd85b9ef34a",
+      "git_sha1": "1748987fad3e488bdf993d61939eb52e15f68ed5"
+    },
+    {
+      "path": "original-version/preview.png",
+      "size": 822696,
+      "sha256": "649d7a6cac24b3a0d43732c96418a10549d557252c65f8fc509b93ea3af98a65",
+      "git_sha1": "121d67dbbd707c1c3f12cacd5a56e6f6edef880e"
+    },
+    {
+      "path": "original-version/rear.png",
+      "size": 817718,
+      "sha256": "8f70f243a76f26695aab24ebe21be02e6b9c194dcba4c6140034d3241dd3d838",
+      "git_sha1": "f9d9026784c70c3715a624ca420bb5382ea749b0"
+    },
+    {
+      "path": "original-version/render_model.py",
+      "size": 3372,
+      "sha256": "a6c3c61daadd46a797cc9e13e529b57ac4716d16a4c88b0cbb89619498e8aea3",
+      "git_sha1": "3a3c8314f3dae8191cae49f421b54787819e9a7c"
+    },
+    {
+      "path": "original-version/requirements.txt",
+      "size": 99,
+      "sha256": "8b59e514ea5b12e8996e935a4872dd7d9b1d8534a165674380c4b651c00c8f13",
+      "git_sha1": "1dde0ed079150f8318c08f136f23909315eec555"
+    },
+    {
+      "path": "original-version/roof-detail.png",
+      "size": 1042696,
+      "sha256": "f1dd75208c270f7cec926b22db03243c41fd1a83b49fc01d733460ffc665ff2d",
+      "git_sha1": "f01b4e83138542030c6ddb9e481bab0c79a430af"
+    },
+    {
+      "path": "original-version/scene.blend",
+      "size": 328922,
+      "sha256": "60700a1847f22ea28b9f3df5fa96a495a98bdd506e95f77c105083b6c9035a5a",
+      "git_sha1": "d5812f710ed62abc4704ea3eabe1ab832f3002d4"
+    },
+    {
+      "path": "original-version/sources.json",
+      "size": 877,
+      "sha256": "9db3f2763eefd792d609ebd76af14fd0c5b8a4a39feac8161a1c3e95c89af3a6",
+      "git_sha1": "b005e73ba9e544d8b5326299b81e675836aa0e25"
+    },
+    {
+      "path": "original-version/top.png",
+      "size": 1037682,
+      "sha256": "9139b52a328aa8400c087dc27333f90d2219dce7da62963cd1c9189159d5a3a6",
+      "git_sha1": "d1e9d9b2b568925afa8ba2c8d8f41c0b565f8fb3"
+    },
+    {
+      "path": "original-version/validate_model.py",
+      "size": 1611,
+      "sha256": "24f73869a006f599de963014a1ea22931b01642d9567b2151cccfc3065d5286b",
+      "git_sha1": "ab596f485525e8aa07616a6b5c4f3157b07e1553"
+    },
+    {
+      "path": "original-version/verify_scene.py",
+      "size": 842,
+      "sha256": "4ecd72abcf063caa100219e5cc1cd150d09639092716ad0af60e28f8908a7c06",
+      "git_sha1": "502a599d6bc40ab7c85ca458b47d880f1575983e"
+    },
+    {
+      "path": "original-version/west.png",
+      "size": 801097,
+      "sha256": "18f19de5bd9f415fa3dcb0316742ec8ba4f59d71805d72c3f326d9c051cd4eaf",
+      "git_sha1": "0d672eab6e675dcd42d80ec96bc939e6d27f8419"
+    },
+    {
+      "path": "palette.json",
+      "size": 192,
+      "sha256": "001fec901eb2a728d6c5256493f7be67de59bbb3affb958bf39ac46e1da043d4",
+      "git_sha1": "80b769fb6553e7c7fedcebd94b501b6ae90c6c2c"
+    },
+    {
+      "path": "preview.png",
+      "size": 659921,
+      "sha256": "61750635b2a54ca096253331f4e97551c7a7d41d6a9e81d9be11e0db660b1d72",
+      "git_sha1": "bb838e5ba7420e668fe8ad603da3a8d3445d2403"
+    },
+    {
+      "path": "rear.png",
+      "size": 660979,
+      "sha256": "104c182a5a4f7d00cd4a767f23d8b618f28925cc5088a19daced39eae6407c64",
+      "git_sha1": "7caa0b7408aa900d4dab950b14867dc294eb79f7"
+    },
+    {
+      "path": "render_color.py",
+      "size": 6633,
+      "sha256": "c8eb6536967f648e52546f82764e7d5dc10bbb38468bb5b9e70881867804784e",
+      "git_sha1": "e6c79a7b5acaa7ccea0a0c35cdc8fc45b1036d7d"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 99,
+      "sha256": "8b59e514ea5b12e8996e935a4872dd7d9b1d8534a165674380c4b651c00c8f13",
+      "git_sha1": "1dde0ed079150f8318c08f136f23909315eec555"
+    },
+    {
+      "path": "roof-detail.png",
+      "size": 1616824,
+      "sha256": "3f0516fa8b76d4a04ef13a79911fce415e4e187891c567968cf39cc33620cbe3",
+      "git_sha1": "c7df11146a8d418a5bf8d8179aeafec6e5b282f9"
+    },
+    {
+      "path": "scene.blend",
+      "size": 336731,
+      "sha256": "f96faba7d4ef9f2f1f9d83fe4946d568609255d16e0a1d41179ac94cfa8fa199",
+      "git_sha1": "84a09c523200eacee2f390210168ee97f29067a1"
+    },
+    {
+      "path": "top.png",
+      "size": 605734,
+      "sha256": "61c1dffad0e55371f672df9539ad39c82e67376466fcdc22abf9e747d24c92a0",
+      "git_sha1": "3a556b42fa40aaf6dadd77bcc42b07a6b1a5fce0"
+    },
+    {
+      "path": "validate_color.py",
+      "size": 3504,
+      "sha256": "8341bce55c11363555f682bea78cce70909fc8e5426c6d7fee8778c911d68078",
+      "git_sha1": "f0d9966985dc4df96642450362411dd917874a0e"
+    },
+    {
+      "path": "verify_color_scene.py",
+      "size": 2109,
+      "sha256": "1ae6bc3830fb8b0385603b241db9e8fefdf4da854b8fd4eea7fd1167ae3ec3a9",
+      "git_sha1": "ef2109b776ff5b9742e5d1314cc585da2080eb04"
+    },
+    {
+      "path": "west.png",
+      "size": 676170,
+      "sha256": "98a75b97ca0a20eb1910e73be5b3c3fe156dacc3d8e2cc9afdedf3cbd9e75d38",
+      "git_sha1": "30264f5cc5cfd6e73e15b5d9104cd6f5866287d7"
+    },
+    {
+      "path": "FREEZE-MANIFEST.json",
+      "size": 11427,
+      "sha256": "34e6387ee681dc1dd49e5b669c90e67bb1cec153a44a55cb0a4f0120eb2f0d2f",
+      "git_sha1": "49a11f103f94a733be50e4278bf1f67057bc355e"
+    },
+    {
+      "path": "CHECKSUM-SCOPE.md",
+      "size": 1383,
+      "sha256": "2b3a2e9988c013f1cafaa8fcde4af6d5a90d0d386eaafc4ed2a5cb98501f2abe",
+      "git_sha1": "e9d81fc3cf593fb04d23ef4eca93754e2d9d986b"
+    }
+  ],
+  "scope": "Original frozen payload plus this appended public scope only; original freeze unchanged. Manifest itself is identified by Git commit and excluded to avoid self-reference. Omitted historical tables are not asserted as members."
+}

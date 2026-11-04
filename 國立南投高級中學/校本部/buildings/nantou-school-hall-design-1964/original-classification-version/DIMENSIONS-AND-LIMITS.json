@@ -1,0 +1,138 @@
+{
+  "candidate": "南投中學綜合禮堂1964設計圖版",
+  "reviewed_utc": "2026-11-01T04:55:58.495476+00:00",
+  "scope": "independent source controls, no geometry/publication authorization implied",
+  "coordinates": "x=0 front entrance gable, x=47 rear stage gable; y=0..27.5 across width; heights explicitly labelled by datum",
+  "explicit_controls": {
+    "width_m": 27.5,
+    "length_m": 47,
+    "longitudinal_grid_m": [
+      0,
+      6,
+      11,
+      16,
+      21,
+      26,
+      31,
+      36,
+      41,
+      47
+    ],
+    "length_chain": "600 + 7 bays ×500 +600 cm",
+    "width_chain_cm": [
+      450,
+      450,
+      475,
+      475,
+      450,
+      450
+    ],
+    "GL_heights_m": {
+      "1F": 0.5,
+      "2F": 4.35,
+      "3F": 7.93,
+      "eave": 10,
+      "ridge": 14.12
+    },
+    "relative_1F_heights_m": {
+      "2F": 3.85,
+      "3F": 7.43,
+      "eave": 9.5,
+      "ridge": 13.62
+    },
+    "height_chain_cm": [
+      50,
+      385,
+      358,
+      207,
+      412
+    ],
+    "roof": "symmetric gable; 1/2 span1375cm and slope3:10 in A7; rise412cm rounded vs412.5 mathematical",
+    "windows_cm": {
+      "A": [
+        100,
+        250
+      ],
+      "B": [
+        100,
+        250
+      ],
+      "C": [
+        100,
+        190
+      ],
+      "D_width": 130,
+      "Dprime_width": 110,
+      "E": [
+        130,
+        120
+      ],
+      "Eprime": [
+        110,
+        120
+      ]
+    },
+    "doors_cm": {
+      "type1_width": 430,
+      "type1_leaf_height": 240,
+      "type1_transom_height": 74,
+      "type4_width": 150,
+      "type4_leaf_height": 210,
+      "type4_upper_height": 155
+    }
+  },
+  "visually_supported_topology": {
+    "side": "one single strip immediately behind front gable, then eight paired strips at x6,11,16,21,26,31,36,41; no long strip at x47. Lower strips at x21 and36 replaced by double doors and short horizontal canopies. Upper/lower windows separated by solid panels, not continuous glass.",
+    "front": "two 430cm door assemblies, each four leaves / paired pairs; overhead continuous canopy. Large central patterned masonry screen has gabled top, not rectangular level top. Flanking full-height narrow solid panels and relief/texture; do not invent figurative mural.",
+    "rear": "three paired vertical window-strip groups; center continues into gable apex, side groups shorter at sloped roof. Two lower doors between strips with small canopies and stairs. Bottom ventilation grilles visible.",
+    "roof": "one continuous twin-pitch roof, no invented rooftop plant or extra rooms; gable perimeter raised fascia distinguishable from sheet roof"
+  },
+  "graphical_estimates_m": {
+    "front_screen_y": [
+      7.9,
+      19.6
+    ],
+    "front_canopy_y": [
+      6.5,
+      21.0
+    ],
+    "front_screen_z_bottom_GL": "approximately 2F4.35, exact trim thickness unverified",
+    "rear_strip_centers_y": [
+      3.5,
+      13.75,
+      24.0
+    ],
+    "tolerance": "approximately0.2–0.4m on graphical location; use detail drawings when explicit",
+    "side_window_GL": {
+      "A": [
+        2.0,
+        4.5
+      ],
+      "B": [
+        7.0,
+        9.5
+      ],
+      "type_height_explicit_m": 2.5,
+      "sill_position_tolerance_m": 0.1,
+      "method": "A5 raw pixels: GL v~1644, eave datum~1252.5 =>39.15px/m; upper frame~1269..1368 yields9.58..7.05; lower~1467..1565 yields4.52..2.02. Select rounded2.0/7.0 sills and explicitA12 2.5m height.",
+      "limitation": "Sill elevations graphical not dimension-labelled; A11 localfloor/detaildatum conflicts unresolved, not silently merged."
+    }
+  },
+  "ambiguities": [
+    "A11 detail1 side door clear height350cm versus A12 type4 total365cm; retain discrepancy, prioritize A12 door type and A5 global vertical controls.",
+    "A11 detail3 C sill120cm above its local makeup-room floor; do not equate every local floor with common1F.",
+    "Upper B sill appears210cm above detail floor, but detail/floor datum requires modeler crosscheck; not promoted to global height.",
+    "47x27.5 reference dimensions are plan/site controlling frame, do not claim measured outer cladding precision."
+  ],
+  "source_sha256": {
+    "M8MAMZMHMD.jpg": "8d4df011c9a282dc54d523f0fca2df45d254d674971496d768b8b01f0ef12094",
+    "MLMAMZMHMD.jpg": "f7baf2089f002e91f7586246397e1cd0361b48897743906be4d36dddbc94467c",
+    "MXMAMZMHMD.jpg": "85e6487facaeedd89b1e45529c65ba37894e0a3123c00ab50db600700750ea27",
+    "MNMAMZMHMD.jpg": "f641654106c140e2a1aa91d7fceef5ccd15021423a0591187fd9bc4ac34e0ee6",
+    "MCMAMZMHMD.jpg": "5d07986550fab3d5c32cecfe52468a686d6cd0d3b2191220cab7fe895e1de27e",
+    "M7MAMZMHMD.jpg": "ddf2bc6c21bfa476943cebf8e254e3cc51f940eb6d5f194e9319a32ac32d2820",
+    "MHMAMZMHMD.jpg": "25153b5d10ec7bcde8ebc892d891e9b0fcf46bc307ec3400dea310f81c22a1fd",
+    "M8M6MZMHMD.jpg": "375ecf901131234d76c198104f3bd7e59796a6e68fd307313981d26d2d7f25c2",
+    "MLM6MZMHMD.jpg": "2556003e4d70301e1d24799dc7b5856bd0de20feb888a6d207ccf4cd51b7f55a"
+  }
+}

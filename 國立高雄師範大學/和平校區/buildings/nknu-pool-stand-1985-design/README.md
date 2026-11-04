@@ -1,61 +1,34 @@
-# 高雄師範學院游泳池與看台更衣室 — 1985 年原設計圖版
+# 高師泳池與看台更衣室｜1985設計色示意，非現況實色
 
-> 依陳其寛建築師事務所 1985 年原設計圖重建的校園建築組。**不是竣工測繪，不代表 2026 年現況。** 本地模型與數位 QA 已完成。
+**1985設計色示意，非現況實色。** 僅依原設計圖的「水藍色磁磚、送樣」呈現乾池底144原面名義色族，**不是水面、不是已核准色票或竣工／2026現況實色**。其餘18404面未知中性；partial_color_incomplete=true、fully_colored_exterior=false。既有六分類展示非單色，原版及全部歷史保留。本次不追認全域壁厚、實體試印或強度。
 
-![斜視](preview.png)
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![完整乾池底](entry-detail.png)|![左端設計色](facade-detail.png)|
+|![右端設計色](roof-detail.png)|||
 
-## 身分與版本
+## 材色範圍
+同 nknu-pool-stand-1985-design 原群，same-item/count_delta=0，18548原三角不改。原包無OBJ，不新增OBJ。只分析平面z+(0.18/50.1)x=2.84、x±100.2、y−24.9..75.5全三頂點有限域，144面單一完整共面連通域，包括細小Boolean裁切片。十泳道凸線、20端標與起跳台、池壁、爬梯、看台、更衣室、池緣均中性；不補磁磚分縫或水面。
+送樣表示尚需樣品選定，展示HEX只表設計色族，不是核准色票。原圖白磁磚十字註18處與原模型10泳道／20起跳台不一致，本次保留差異不靠上色默改。不是全池或全館完整補色。
 
-國立臺灣博物館典藏案名「國立高雄師範學院游泳池新建工程」，圖組 **CCCK296**，圖框日期民國74年4、5月（1985-04／05）；部分原始題名包含同案體育館。**本模型只重建泳池、看台及其更衣室，不以結構圖推造旁邊體育館。**
+## 原版與限制保留
+原六分類材質、原scene/model.3mf/mesh.npz/palette/九圖/全部QA與程式完整保存於 original-classification-version/；原scene與README另有 ORIGINAL-SOURCE-GAP- 公開別名。原renderer render_model.py bytes不變，不否定原分類展示，也不將它當實景材色證據。新appearance.3mf/scene.blend及十圖是獨立1985設計色variant。
+保留A2-2看台58.90m與A2-1 58.75m、9.37/9.40m、場地51.25/51.30m原差異。50.10×25.10m結構池界不改50×25m完成淨界；原斜底0至−.18m，不補−.20m局部排水。六梯比例位置、封背不透明玻璃、隱藏內梯/管線/細網省略與非測繪展示底座均保。1985原設計並非已證1987竣工，也不混整修後現況。原格式水密/單體/最小面積5.25e−9mm²數位檢查不等於全域最薄壁、支撐、強度或實體試印認證。
 
-高雄師範大學官方歷任校長頁記載1983–1989年間興建體育館、游泳池，體育系資料確認和平校區泳池；這支持校園及年代背景，不等於逐項證明原圖完全照建。未直接核實精確啟用日期，不將「1987」寫成已證竣工年份。後續整建不混入本原設計版本。
+## 來源、格式與再現
+陳其寛建築師事務所原圖A7-4，國立臺灣博物館典藏CCCK296，1985年5月圖框。圖像CC BY-NC版本未核，不自動套用生成模型；原圖只私存，不公開貼圖。下方掃描色條不是建築色票。
+[原圖典藏頁](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=M8MEMIMNMD) · [原STL](model.stl) · [新增逐面設計色3MF](appearance.3mf) · [新增Blender](scene.blend)
+原比例1:250、mm、約268.2×221×40.68mm；未實體試印，兩材標籤不是四色耗材切片。物件 NKNU Pool Stand 1985 Design partial color。build_model.py→colorize_model.py→export_appearance.py→validate_color.py，render_color.py/verify_color_scene.py；隔離重建只驗原幾何再現及本次材域，不新增幾何放行。
 
-## 幾何範圍與差異
+## English scope
+1985 DESIGN COLOR ONLY, NOT CURRENT/AS-BUILT COLOR. 144 complete dryfloor triangles show the documented waterblue ceramic tile design family requiring sample approval, not water or an approved colorimetric swatch;18404 neutral. Original18548triangles and complete six-classification presentation retained unchanged.18whitecross design notes versus10lanes/20blocks remain unreconciled. Sameitem/count0/noOBJ/no geometry repair. Historic differences, omitted details and untested physicalprint/minwall/support limitations remain;newcolorQA does not endorse original globalprintability.
 
-- 看台／更衣室採A2-2外寬 **58.90m**、深 **11.70m**；A2-1另標58.75m，保留15cm圖間差，不假稱全部完全一致。
-- 以GL=0，池邊地坪+1.50m；看台細部前走道+4.77m、後平台+8.27m、女兒牆頂+9.37m。整體立面將頂高概括為9.40m，差3cm；模型採細部完成面。
-- 看台是**7個50cm升階、6個110cm踏面**；端部小梯為21升階、20踏面。下層主梯出口是有屋蓋的凹入通道，不是整片後平台開天井。地下室、設備與被遮蔽的完整內梯不重建。
-- 池內結構控制50.10×25.10m，原圖說明完成貼面淨50×25m；本模型用結構內界。池底左端GL±0、右端−0.18m，乾池深1.50–1.68m。中間排水點−0.20m的小局部低點不另造槽。
-- 洗腳池環槽保留淺凹；10泳道標記與兩端起跳台、兩長邊各3組爬梯可辨。六梯位置按原平面符號比例讀取（不是全部逐項標註），彎管角化，細桿約加厚到0.10m供縮尺表現。
-- 更衣室池側保留DW1／DW2、窄格帶與三片入口的不同分組；背側保留高窗／百葉及六格外露地下層低通風窗。低窗高度依立面比例估讀約0.50m，非現場測量。玻璃封背、不透明。
-- 場地主尺寸鏈合計51.25m，總標51.30m差5cm，依明標局部鏈配置，不將全場拉伸。既有圍牆、欄杆僅作輪廓及框架簡化；**不逐孔復原菱形金屬網，也不宣稱精確地界或既有圍牆支柱間距**。展示底座與承托不是地形測量。
-- 所有色彩是中性分類色，不冒充原建築色票；水面不造，圖像呈現乾池幾何。隱藏管線、排水設備、細網、細磁磚分縫及部分微小五金省略。
-- 比例1:250，STL／3MF單位mm。含底座約268.2×221×40.68mm；未實體試印，細欄杆／梯具需依印表機檢查厚度與支撐。
+## 原歷史引用說明
+原 DIMENSIONS-AND-LIMITS.json 保留兩個既有本機裁圖引用（pool-EL-left/right.png）；不是公開可開啟的圖片連結，未修原歷史bytes。本次新增文檔沒有新增私人路徑，不能將此說成整包零歷史路徑。
 
-## 檢查與再現
+## 原分類QA相對路徑範圍
+原QA的一般最終逐檔綁定解讀於 original-classification-version/，不綁根目錄新設計色版本；但歷史前像雜湊另列以下特例。原根QA副本原bytes移存 original-classification-qa-aliases/，詳 ORIGINAL-CLASSIFICATION-QA-SCOPE.json；完整原35件子包原位不變，未修改任何舊雜湊。根本次COLOR、SCENE、FRAMING、DELIVERY QA才驗新設計色成果。
 
-`build_model.py`產生同源網格，`render_model.py`產生實際渲染。七張完整視角另附兩張明確裁切的建築細節圖；完整取景檢查不誤套於局部細節。來源視覺、格式回讀、壓縮BLEND重開與乾淨重建結果分別見`*-QA.json`，數位水密不等於實體製造保證。
-
-## 來源與權利分開說明
-
-原圖作者：**陳其寛／陳其寛建築師事務所**；典藏：**國立臺灣博物館／臺灣現代建築圖說**。原圖像頁標示 **CC BY-NC**，版本未確認；此標示屬原圖像，**不自動概括套用整包生成模型**。本包保留來源、設計者及歷史版本限制，不宣稱已取得不限用途商用權利。原圖、PDF及含token的HTML不隨成果包附送。
-
-- [一層平面A2-1](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MLM4MIMNMD)
-- [看台／地下層平面A2-2](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MXM4MIMNMD)
-- [東西向立面A3-1](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MNM4MIMNMD)
-- [南北向立面A3-2](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MCM4MIMNMD)
-- [看台剖詳A4-1](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=M7M4MIMNMD)
-- [門窗A6-1](https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=MNMDMIMNMD)
-- [泳池、爬梯、起跳台詳A7-4／原圖授權標示](https://collections.culture.tw/Object?RNO=Q0NDSzI5NjIzMDIw&SYSUID=31)
-- [高師大官方歷任校長](https://w3.nknu.edu.tw/zh/his-president)
-
-完整來源URL及查讀原檔雜湊見`sources.json`；查讀日期2026-11-01不等於建築年代。
-
-## 其他視角
-
-![背斜視](rear.png)
-![池側全景](front.png)
-![背側全景](back.png)
-![端面一](west.png)
-![端面二](east.png)
-![頂視](top.png)
-![池側局部細節（裁切）](front-detail.png)
-![背側局部細節（裁切）](rear-detail.png)
-
-## 本機重建
-
-Python 3.12，依 `requirements.txt` 安裝依賴；執行 `python build_model.py`、`python export_3mf.py`、`python validate_model.py`。影像與原生場景使用 Blender 4.3.2：`blender -b --python render_model.py`，完成後 `blender -b --python verify_scene.py`。一般重建請使用完整渲染，不使用僅更新細節的內部選項。
-
-## 下載與重建檔案
-
-[單色 STL](model.stl) · [彩色 3MF](model.3mf) · [可編輯 Blender 場景](scene.blend) · [建模程式](build_model.py) · [渲染程式](render_model.py) · [3MF 匯出程式](export_3mf.py) · [重建依賴](requirements.txt)
+歷史特例：PUBLICATION-DOC-QA.json 內 metadata_only_sanitization/original_sha256 的 SOURCE-VISUAL-QA.json 與 IDENTITY-QA.json 兩值，是更早sanitization之前的歷史前像雜湊，不匹配子包已sanitized的兩現存檔。原值及現存原件完整保留，不為通過檢查改舊hash，也不追認此兩前像為子包最終綁定。

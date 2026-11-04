@@ -1,0 +1,67 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Personally inspected original T1 scan, underside leader, original code/preview and all ten newrenders; design-specification color only, not asbuilt/current and not originalQA reapproval.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-ASSET-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Complete142 underside plane is singleconnected component, allvertices within original128gon;12012neutral and3224coplanar domainsuniform.",
+    "Sevenoverview images fullyfit; three lowanglecloseups show original underside/supportBooleancontacts, not filled supportfootprints. Shadowed underside remains physicallylit rather than artificiallyemissive.",
+    "Full36originalfiles unchanged under original-version including oldthree-material3MF/scene/palette/eightviews andQA. OldQA scopedto oldfiles, no originalOBJ.",
+    "Original12154triangles and3.66vs3.60 discrepancy unchanged. Presentlocation/preservationunverified;1969date designnotcapture/realization. Interiorcore/25mmcover/.8mmpipe/base remain proxies.",
+    "Verifier old150mmtemplateliteral failed onlyscale check; correctedto truthfuloriginal1:100 without rerender or scenesave. Oldscript/report/log retained in history-scale-verifier-template-correction.",
+    "No pre-correction PNGhashsnapshot wasmade; no claim of nonexistent priorhashproof. AlltenPNG mtime precede verifiercorrection; actualfinalidentity read-only scene before/afterhash PASS. Currentimages boundbydelivery and builderhashes."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "f577aca79c5381ec9869279f3153236153b4509f00b05e83f7061a15c5ce1979",
+    "README.zh-TW.md": "f577aca79c5381ec9869279f3153236153b4509f00b05e83f7061a15c5ce1979",
+    "colorize_model.py": "9325675b6eabab12ee0abe76931597415c7889bed23053746f264a14cc1194ce",
+    "render_color.py": "c8eb6536967f648e52546f82764e7d5dc10bbb38468bb5b9e70881867804784e",
+    "verify_color_scene.py": "1ae6bc3830fb8b0385603b241db9e8fefdf4da854b8fd4eea7fd1167ae3ec3a9",
+    "color-mesh.npz": "10397abc930b7050f12d56d3b001547c9b711259e4072252913b149c7679fc29",
+    "palette.json": "001fec901eb2a728d6c5256493f7be67de59bbb3affb958bf39ac46e1da043d4",
+    "appearance-materials.json": "e631ef95d9e26224028cea87edc286f4c5ab02d0ecfdd61a142512c38cb6276a",
+    "COLOR-SOURCE-REGISTER.json": "28edfc14a661500e35985d1a2e3085abf5712003dd18e95c6ea7c37953247474",
+    "model.stl": "a67695b2eb747c0a90b62e3a8fe586db969250437e6194793a329e8a0edcb1f1",
+    "build_model.py": "6099dce7fffc598692c0099e879bd58aaf52858fc1de66726a5e6e141c7d30ae",
+    "PREVIEW-TRANSITION.md": "76662d3ae1a999efb572edd80b77a2046724a3728496941475a2cb28ce53b514",
+    "preview.png": "61750635b2a54ca096253331f4e97551c7a7d41d6a9e81d9be11e0db660b1d72",
+    "rear.png": "104c182a5a4f7d00cd4a767f23d8b618f28925cc5088a19daced39eae6407c64",
+    "front.png": "05832df0f5413d10815fdfb8964387274afd4533163d16327127fd78e249c950",
+    "back.png": "d4805f28b754864d74834b4aab67af4249f35878f28d6e1b04edc3cacdb9ce45",
+    "west.png": "98a75b97ca0a20eb1910e73be5b3c3fe156dacc3d8e2cc9afdedf3cbd9e75d38",
+    "east.png": "6026799711eefb1c30e24bcceac729df0aef4da908fe31e4d10944a4a9f3f21b",
+    "top.png": "61c1dffad0e55371f672df9539ad39c82e67376466fcdc22abf9e747d24c92a0",
+    "entry-detail.png": "46f5586392345c349d36469374d2dd4f922d1b970dca19a2cd839a431c9d3911",
+    "facade-detail.png": "b948b9a64703dd3ccfb839f5c67b7c30d4ebb1c147512730d679ed528b131314",
+    "roof-detail.png": "3f0516fa8b76d4a04ef13a79911fce415e4e187891c567968cf39cc33620cbe3"
+  },
+  "scene_sha256": "f96faba7d4ef9f2f1f9d83fe4946d568609255d16e0a1d41179ac94cfa8fa199",
+  "history_requires_private_freeze": [
+    "history-scale-verifier-template-correction"
+  ],
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "91745032b1e08572647f42ea914c8056da45c92eb684cbfb6947467740f85358",
+    "SCENE-QA.json": "91df5bb21076dfa7eb3bccb0b32c047ce823b3eb7121386f216c139b044b8ef3",
+    "DELIVERY-QA.json": "8c79514389ca357cf52635e17ed0d32022dd511b6c5dad67dca9e1b8a59ca31c"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "033d4a38ee0b47199d160dab50035c0da9b6816580d5674e38735eee7e651885",
+    "ORIGINAL-ASSET-RETENTION-QA.json": "74bfffc0058c372101223a664c59383a46d68f30cdcb1df3c48bc77155c890e3",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "f0f513845c12efe88ed4c1e5420d02cfabf1057173ea1a0e6827fceee75c612f",
+    "INDEPENDENT-DOMAIN-1056.json": "64bd6eda9f8b098cca6e0e815538caf66d3e079f5f5084c051e238815114c177",
+    "INDEPENDENT-IDENTITY-1056.json": "69029bd27f767100cc04dfaf2a9a9c1057e087d8c6b8cf8fefc9f18ffa72089d",
+    "INDEPENDENT-PACKAGE-IDENTITY-1100.json": "771428e8de93a07f9b3fd4df0bfeb5bbf76d783d9406b0f75968eed2a7df42a4"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T11:00:02Z",
+  "parent_review": "Parent personally viewedT1fullscan/undersideleader/code/originalREADME1055,preview1056,finalten1100. Originaltankbottom/B2wholez112.5plane142 equals128gonfinitehalfspaces andsingleexactedgecomponent; raw142equalsNPZdesignwhite. Other12012neutral, original12154triangles36files/noOBJ unchanged. Old3classificationcompleteoriginal-version retained, historicalQA scopedseparatelynotnewimagebindings. Sevenwholeviews+3lowanglecloseups showunderside/supportfootprintBooleaninterfaces withoutpaintingverticalskin/core. Only1969whitecement3coats DESIGN family notcurrent/asbuilt/alltower. T13.66vsT23.60/sitesunknown/solidcore/closedlid/pipeprintproxies retained, no globalprintability. ActualNCUWaterTower1969Designscene3MF/fourscriptpaletteRGBPASS. Initialverifierexpected150mmwrongtemplate failedscaleonly; original1:100 correctedverifier, priorfailure/script/log retained. No rerenderclaimed byworker andtimestamps; no inventedprecorrectionPNGhashsnapshot. Finaltenhashes boundandactualscene readonlyhashPASS. Partialcount0."
+}

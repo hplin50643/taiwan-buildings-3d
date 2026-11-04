@@ -1,0 +1,15 @@
+{
+  "historical_files": [
+    "DOC-QA.json",
+    "FORMAT-QA.json",
+    "FRAMING-QA.json",
+    "PUBLICATION-DOC-QA.json",
+    "BUILD-QA.json",
+    "IDENTITY-QA.json",
+    "SCENE-QA.json",
+    "SOURCE-VISUAL-QA.json",
+    "REBUILD-QA.json"
+  ],
+  "binding_base": "original-classification-version/",
+  "rule": "Historical QA hashes retained without claiming new color QA. PUBLICATION-DOC-QA pre-sanitization original hashes refer to prior local metadata, not necessarily final published subpackage; do not alter historical hashes."
+}

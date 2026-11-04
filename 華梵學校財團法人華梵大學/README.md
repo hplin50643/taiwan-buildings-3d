@@ -10,7 +10,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/hfu-library-2009/previews/front.png" alt="東南面" width="220">](校本部/buildings/hfu-library-2009/README.md)<br>**[圖資大樓東南主要面](校本部/buildings/hfu-library-2009/README.md)** | [<img src="校本部/buildings/hfu-yunshan-pavilion/previews/front.png" alt="華梵大學 雲山亭｜主要亭體彩色模型：實際模型預覽" width="220">](校本部/buildings/hfu-yunshan-pavilion/README.md)<br>**[華梵大學 雲山亭｜主要亭體彩色模型](校本部/buildings/hfu-yunshan-pavilion/README.md)** |  |
+| [<img src="校本部/buildings/hfu-library-2009/preview.png" alt="東南面" width="220">](校本部/buildings/hfu-library-2009/README.md)<br>**[圖資大樓東南主要面](校本部/buildings/hfu-library-2009/README.md)**<br>[局部材色3MF](校本部/buildings/hfu-library-2009/appearance.3mf) · [範圍與限制](校本部/buildings/hfu-library-2009/README.md) | [<img src="校本部/buildings/hfu-yunshan-pavilion/previews/front.png" alt="華梵大學 雲山亭｜主要亭體彩色模型：實際模型預覽" width="220">](校本部/buildings/hfu-yunshan-pavilion/README.md)<br>**[華梵大學 雲山亭｜主要亭體彩色模型](校本部/buildings/hfu-yunshan-pavilion/README.md)** |  |
 
 [模型完整說明](校本部/buildings/hfu-library-2009/README.md) · [STL](校本部/buildings/hfu-library-2009/model.stl) · [Blend](校本部/buildings/hfu-library-2009/scene.blend) · [屋頂](校本部/buildings/hfu-library-2009/previews/top.png) · [來源](校本部/buildings/hfu-library-2009/sources.json) · [QA](校本部/buildings/hfu-library-2009/qa-summary.json)
 

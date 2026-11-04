@@ -1,0 +1,109 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_HISTORICAL_DESIGN_LIMITS",
+  "reviewed_at_utc": "2026-11-02T11:11:14.902177+00:00",
+  "reviewer": "independent source-controls agent",
+  "scope": "1963–1965 圖版所示乙種學人住宅本期六戶連與四戶連；兩組獨立展示，不復原基地配置。",
+  "mesh_sha256": "5306d6f3b9ed9d91bc91d2d5df67f2518746dd740bd233bb23e0e9b48bafe55f",
+  "build_code_sha256": "7a47da9e997f0b5e719c71abc3b9a4f44dcc75b753e28bb7910a08dc8421ccf1",
+  "geometry_helpers_sha256": "c2eb8a854af4a3e8d1e27b25904e21af23341c9877defd434f9500fa9a49af8f",
+  "render_code_sha256": "d440a8c26b5350ceef9d3bd8510f4659da27257ec2bdd26d0c4bd5d9af58c1a4",
+  "readme_sha256": "95dd715f861bd6a1571808f959b7ae8feac7a9d8840cea58665f44c5dd23ff3b",
+  "png_sha256": {
+    "preview.png": "2d34d1599928839820fbccc0df5cbc07b58103e64904aefa8b9ad10109ee3cec",
+    "rear.png": "111d9caf18b122e403257bb564cd8410f1429ba3400c44eb21d43f281b6d01d7",
+    "front.png": "98308559898cbe4f1918683c2f57ae6241a5b122d72c1ca06123a4b66324a6a3",
+    "back.png": "14da8a7d49a186f1624adf18c138de96afe905da91ca0dab2c6eb9568353eef9",
+    "west.png": "6f88bae6f7d458c0b3b2810ff8ddb3527b31ef079a113c7243e039ba2f48d837",
+    "east.png": "f2b1d3d506078e8c9dc11490c5a78790097b99afda38ca78ce7c74d2f88e67e8",
+    "top.png": "26d739c179f27b533865419f9fd70b7dffddd685097a10ee80286097b786c12c",
+    "entry-detail.png": "8c5fef3a388e0f7c0e735992999aa3c9704e2a1dda6ada06dd94af6173f65f55",
+    "courtyard-detail.png": "3c5aa7c52f688a99671828bacffe7e5bb819cad439bf41298ab804be7b35c34f",
+    "roof-detail.png": "9fe492b7dc0e565293ee2497213cb65722b8ec30c87c3ba3e9aa233e13acd993"
+  },
+  "visual_review": {
+    "preview.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "六戶、四戶兩底座及單端嵌桿；全體完整入框。"
+    },
+    "rear.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "後院開放足跡與正背不同開口，兩列完整。"
+    },
+    "front.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "雙戶鏡配節奏、樓梯低窗與 D1 玻璃可辨。"
+    },
+    "back.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "上層三 W1、下層 W1/W4/D2 分域，非正面複製。"
+    },
+    "west.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "兩列同一可證端嵌桿；屋簷與分格可辨。"
+    },
+    "east.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "另一端不無證加嵌桿，端面完整。"
+    },
+    "top.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "六戶與四戶院界、每雙戶一管及兩獨立支座可辨。"
+    },
+    "entry-detail.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "D1 葉片方玻璃、上亮與 120 cm 雨庇；刻意局部構圖。"
+    },
+    "courtyard-detail.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "D2 玻璃及上亮、修正院門缺口、未覆蓋後院；刻意局部。"
+    },
+    "roof-detail.png": {
+      "status": "PASS",
+      "actual_view_image_inspected": true,
+      "finding": "上挑屋緣、微坡、通氣管與單端踏桿；刻意局部。"
+    }
+  },
+  "render_version": "render-all-v4.log completed Blender quit; all ten final images individually re-inspected after reduced fill lighting and saved-preview camera fitting. Historical v3 QA retained; no old image hashes adopted.",
+  "source_code_corrections_closed": [
+    "A1 院門正戶中心 3.25 m、寬 0.70 m；鏡戶相應反轉，不沿 D2 中心。",
+    "D1 40×40 cm 葉片玻璃及上亮、D2 葉片玻璃及上亮已分材質；不建鎖五金。"
+  ],
+  "independent_npz_test": {
+    "faces": 25704,
+    "watertight": true,
+    "winding_consistent": true,
+    "components": 2,
+    "component_volumes_mm3": [
+      263272.2148273842,
+      177127.3596154675
+    ],
+    "positive_volume": true,
+    "two_components_intentional": true
+  },
+  "limitations": [
+    "後院僅深色 20 cm 高界線足跡，非歷史院牆高度；原圖院牆高度未定。",
+    "兩底座相對位置為展示，不採 A0 圖量基地配置。",
+    "A1 主深 750 cm 對側分格鏈 826 cm 的 76 cm 差保留。",
+    "W1/W4 圖表 5 cm、W3 圖表 2 cm、D2 總 256 與分鏈 261 的 5 cm 差保留，未證框扇差解。",
+    "名義屋皮 6.70±0.10 m 與主屋緣 7.05 m 為分域有界協調；A3 濕區局部鏈不覆全棟。",
+    "開口中心、管帽與嵌桿局部圖量；框桿加厚及不透明玻璃、顏色為展示／列印約定。",
+    "不含地下及室內細節，不混王大閎1970案、不宣稱逐棟現況核實。",
+    "影像有輕微路徑追蹤顆粒；v4 補光降低後入口材質與框線可辨，未見先前局部過曝；細圖故意局部，不是全件框選。",
+    "未實際列印；此 PASS 非逐窗精密測量、實建證明或製造成功保證。"
+  ],
+  "source_review_binding": {
+    "SOURCE-CODE-REVIEW-FINDINGS-1100.json": "995fb1f4ef5229ad0fe05d626e98372873603d402716a91bc4eb1b10674542ae"
+  },
+  "responsibility_boundary": "本審核獨立實看十圖並核 NPZ；格式、隔離重建、scene reopen 由主建模者另行測試，不以其 PASS 代替本視覺審核。",
+  "output_edited": false,
+  "private_independent_review_sha256": "b21ab8f80b22dcfa29301ebd1bb3a476ba7f91aa5fb91fe8c8b7198053559cb1"
+}

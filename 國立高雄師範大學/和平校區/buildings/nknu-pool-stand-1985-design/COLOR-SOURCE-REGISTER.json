@@ -1,0 +1,46 @@
+{
+  "status": "GO_PARTIAL_DESIGN_COLOR_ONLY",
+  "building": "nknu-pool-stand-1985-design",
+  "source_go_sha256": "7cfb5168ef0c6e06f30165f90513b53c6283b374985609fe9a7e035588191a13",
+  "independent_review_sha256": "dd076eb9cc434ae8585948df75be58ebf4d6d4b213fca1022a6c7c7017869a69",
+  "existing_preview_transition": {
+    "old": "Original6neutralclassificationmaterials/scene/3MF/renders remainhistoricalpresentation. Originalbluegrayfloor was classification,not actualbuildingcolorproof.",
+    "new": "Only144floorsurfaces newlyassigned documented1985designblue;everyotheroriginalfaceunknownneutral. Do notoverwriteoriginalfiles orclaimfullcolor/asbuiltmatch."
+  },
+  "source": {
+    "sha256": "cec617451a8b46d551898bfb6889bd535df28696d837ca83b987bff1cfcf99da",
+    "existing_local_reused": true,
+    "new_network_requests": 0,
+    "original_page": "https://collections.culture.tw/docomomo_collectionsweb/Collection?GID=M8MEMIMNMD",
+    "sheet": "CCCK29623020 / A7-4",
+    "drawing_date": "民國74年5月，1985原設計，非竣工照或現況",
+    "viewed": true,
+    "evidence": "池四周壁及池底註明3.6×3.6水藍色磁磚並需送樣；端部另註白磁磚十字共18處。",
+    "sample_limit": "Water-blue is a documenteddesignfamily only.送樣 requiresselection/approval; noexactapprovedswatch established.",
+    "rights": "Originalmuseumdrawing private research only; colorchart atbottom is scanningreference, not buildingpalette."
+  },
+  "sources_private": true,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "geometry_unchanged": true,
+  "allowed": [
+    "144 complete sloped dryfloor faces,1985 waterblue tile design family only"
+  ],
+  "unknown_neutral": [
+    "All10raisedlane_lines and20lane_end_marks are geometricallyhigher(+.015/.018m),notpartofselectedfloorplane. Their colors remainunverifiedneutral.",
+    "Endwalls mix specifiedwhitecrossmarkers andwaterbluetile, butmodelhasnoequivalentwhitecross boundaries. Drawing18markerplacesvs20startingblocks/10lanes mustnotbe silentlyreconciled bycolor. Noentireendwall blue.",
+    "Longwalls are notincluded inthisboundedrecommendation; no automaticextensionfromfloor.",
+    "Startingblocks havestonedesignnotes andsamples,notexplicit blue/white proof; do notapplygenericstonegray.",
+    "No waterplane, terrain,poolrim/footwash,boundaryrailing,glazing,stands orchangingroom recolor."
+  ],
+  "retained_original_qa": [
+    "OriginalA2-2stand58.90m vsA2-1 58.75m difference preserved;GLheights9.37mvs9.40m remain.",
+    "Original50.10x25.10mstructuralbasin vs50x25mfinishedtileclear size stays; nofinishthicknessgeometriccorrection. Slopedfloor0to−.18m/local−.20drain omitted remains.",
+    "Tenlanes,20blocks and6simplifiedladderpositions remainoriginalgeometry; whitecross18designnote not used tochange counts.",
+    "Originalsite51.25vs51.30m discrepancy,glassopaque/hiddenstairs/pipesomissions andsupportbase notsurvey remain.",
+    "FormatQA originalzeroarea0,mintrianglearea5.25e−9mm2,watertightonecomponent androundtrip do notguaranteephysicalprint,minwall/support/strength. No QA reapproval orrepair.",
+    "Originalhistoricalidentity1985designnot1987verifiedcompletion,notpostrenovationor2026conditions. Onegroupcount0."
+  ],
+  "no_global_printability_endorsement": true
+}
