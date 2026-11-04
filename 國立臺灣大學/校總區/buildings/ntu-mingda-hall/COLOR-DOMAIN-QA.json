@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": {
+    "-39_no_lower_wall_triangle_crosses_33": true,
+    "-39_coherent_lower_wall_ochre_excluding_projecting_front_fins": true,
+    "39_no_lower_wall_triangle_crosses_33": true,
+    "39_coherent_lower_wall_ochre_excluding_projecting_front_fins": true,
+    "rear_neutral": true
+  },
+  "mesh_sha256": "8b351d61dd19bfc6d5101f730e996d991528750f49c56b4bb73cffc2da511953",
+  "material_counts": {
+    "0": 846,
+    "1": 392,
+    "2": 10511,
+    "3": 758,
+    "4": 9377
+  },
+  "scope": "Original projecting front fin end faces at x+-39 are grid material, not lower side-wall paint."
+}

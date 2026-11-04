@@ -1,0 +1,42 @@
+{
+  "status": "SOURCE_GO_APPLIED_MODEL_QA_SEPARATE",
+  "slug": "Taipei101_150mm",
+  "count_delta": 0,
+  "source_GO_sha256": "14a6ae9507ad1be2cbaede5806914d2edffd70d5e1211d9341510c00e7b9d181",
+  "independent_source_review_sha256": "4bd2704ac7b7a57215d7266d95f1cc7e658b22ef97bd03133c45b4df3b31919c",
+  "sources": [
+    {
+      "path": "color-source-review-20261102/Taipei101_150mm/kumagai-3.png",
+      "sha256": "e2c999c30e7cfa3d299aece43573a5d9ac656b242830cde8b523ecc4ce740711",
+      "url": "https://www.kumagaigumi.co.jp/en/works/uploads/en-taipei-101-003.png",
+      "actually_viewed": true,
+      "role": "夜景只形態與裙樓相對位置，不取黃燈或夜藍作日間實材。"
+    },
+    {
+      "path": "color-source-review-20261102/Taipei101_150mm/kumagai-2.png",
+      "sha256": "bda2b5d4f8f1779341e36e0a9857f8657772196db10a28fd153d32e5831f07b0",
+      "url": "https://www.kumagaigumi.co.jp/en/works/uploads/en-taipei-101-002.png",
+      "actually_viewed": true,
+      "role": "不同視角支持高塔色族；低層被其他建物遮擋，前景全排除"
+    },
+    {
+      "path": "color-source-review-20261102/Taipei101_150mm/kumagai-1.png",
+      "sha256": "98426f78807f48112f43d478b1f3ec17965be5086da5ddba186ca7efde9d4a23",
+      "url": "https://www.kumagaigumi.co.jp/en/works/uploads/en-taipei-101-001.png",
+      "actually_viewed": true,
+      "role": "白日主色證據，塔身兩可見面及部分基底"
+    }
+  ],
+  "rights": "公開官方/承包商圖片不等於CC或可商用再授權；照片日期未核。",
+  "mandatory_public_limits": [
+    "原為單色Jade teal，這次加入有據構件材色；非照片貼圖、非逐格玻璃實測。",
+    "同塔幕牆四向連續色族是明示概化，不稱四向各有照片對位。",
+    "裙樓/桶屋中性；夜景黃光不作日間材色。",
+    "原簡化樓層帶/角柱/如意帽不改，不能補線或切三角。",
+    "照片未確認日期/未校準色值；非多色實體列印驗證。",
+    "原照僅私有，承包商all rights reserved，不保證商用再授權。"
+  ],
+  "unique_coordination": "同一塔幕牆四向青灰色族連續概化；不是每向照片證實，不任選兩模型面當已證方位。此工作約定經focused reviewer 16:59明確接受；原focused SHA保留。",
+  "source_backup": "PRIVATE-BACKUP-RECEIPT-1700.json",
+  "model_QA": "See format, scene, delivery and independent visual reports; source PASS alone is not model QA."
+}

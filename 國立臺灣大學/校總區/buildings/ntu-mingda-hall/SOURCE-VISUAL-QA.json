@@ -1,0 +1,109 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T17:11:00Z",
+  "candidate": "v2 after whole-plane gate correction",
+  "mesh_sha256": "8b351d61dd19bfc6d5101f730e996d991528750f49c56b4bb73cffc2da511953",
+  "build_code_sha256": "a3939436a52852400581bee417315fa981a6095387610c1dc8b0a77ecfb216b1",
+  "color_code_sha256": "30c760bf88042d1b96c41868064383a67ed6b3717e03768d3187d7d61b1ec83d",
+  "render_code_sha256": "64e6645f755d59f66790a0bb4de92f78b46a30ab15cabb3fcac53779a7be175f",
+  "readme_sha256": "fa1bbce64af7fb5b9b1f90c8565fa2e026d1d8b33f5786ac6a9e6ab693d28bf1",
+  "file_sha256": {
+    "model.stl": "e3c99e1ac086fd37cb1db00633400f25867b2692a8ae9ce3bafa034e1daec642",
+    "model.obj": "9f643dfcb120979a1d064324ad04dc1cd97025aa2d82766c3cf28334e577e76f",
+    "build_model.py": "a3939436a52852400581bee417315fa981a6095387610c1dc8b0a77ecfb216b1",
+    "colorize_model.py": "30c760bf88042d1b96c41868064383a67ed6b3717e03768d3187d7d61b1ec83d",
+    "render_color.py": "64e6645f755d59f66790a0bb4de92f78b46a30ab15cabb3fcac53779a7be175f",
+    "export_appearance.py": "81ce8b1f64eec1eee81669dbdd1976b67aac747510fb58073bcb13b4a64fb1b1",
+    "validate_color.py": "62c635d5b59e360b4d304d7e67f874814ab11cab8bd781c3d36f13e1356847fe",
+    "verify_color_scene.py": "90ae905340bafade879685f0c5784bcc8856ba67974469d9e6a2c9d0e39e6654",
+    "color-mesh.npz": "8b351d61dd19bfc6d5101f730e996d991528750f49c56b4bb73cffc2da511953",
+    "palette.json": "0a50f849c5738c8f334c9d699779f142f463ba83413494be9d025747750508fb",
+    "appearance-materials.json": "0c3568643602ecd9577bf19fcb3ee0cf642cea2abd1946d1c1a46366bbcb831f",
+    "appearance.3mf": "a1b329ec3b59ca76eb43c1ee9892a39696b082bbcd0b2ee19c9ff224f45902ac",
+    "scene.blend": "09a134ce3a7c854e5b96e74fdaf30ddb21cea1688ae5d98a45172f7c3fab48a4",
+    "README.md": "fa1bbce64af7fb5b9b1f90c8565fa2e026d1d8b33f5786ac6a9e6ab693d28bf1",
+    "README.zh-TW.md": "ca65b1910601b1c197c03a9e7615679c6fffb6e694f70d6226d82090dc30f3e6",
+    "COLOR-SOURCE-REGISTER.json": "a363f7915909b8446c5e6a940d6568672b902436673a22e808a36dc28dbc22ab",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "59c4dec2ecdcc22778476a1e05299fc61b78526c99e50a553d3c99fc209f08ce",
+    "SCENE-QA.json": "d77706820d07763cd2341af945ca5462992bf25268d31a64733fda592c03d91e",
+    "DELIVERY-QA.json": "927bfcfa8cc471ce25930fe2145a210f83d2a50781bb71ee32f932c73284566a",
+    "FRAMING-QA.json": "f6d6114c4c09e44edd3281728990e65305b249d3beb4e4b2463eaca4edca2918"
+  },
+  "png_sha256": {
+    "preview.png": "dc9541e4a3dc52b0b38a197850e804dac86152b93a328ccf070f0bc961fd7e86",
+    "rear.png": "de1cdd63bddf04aa7c49a53e2c45563f55056a89e6638511951088f6c6d863f1",
+    "front.png": "b9d30592e77b85482307870164df2ecbf04ed5643796376fade445443ffe6a97",
+    "back.png": "d1e0db47fbb02b4d9c06241bba474d627c49bd0816da74a540a8ce946fea7193",
+    "west.png": "dcfdde4a2fcd8c0ce2a23b247826d4f5b2d1614a1fefef472b8be64549e04dec",
+    "east.png": "d598973e1ace25bf240731f79111b7faeba662c96e36335580db6c0e2c1f8e3f",
+    "top.png": "a5710c20b61827b5e5b9b6d94a582a4f3ea8fa83b6dcbaeff71015e7bafc9ade",
+    "entry-detail.png": "d53dee40f8d80955b5145572e0c5e88a68f8fe13a7410b5911aadde6e2c1dcdc",
+    "corridor-detail.png": "c6751e532428be3e41a1f2459963ad04f76538a06c2b90dcdef2d2fcb2bc9f8d",
+    "roof-detail.png": "0fd733c6db3851bdb7e797b7dd284101bde473c3dd8c3b0f94e9f024077d14cd"
+  },
+  "source_sha256": {
+    "IMG_5986.JPG": "7a5e1a75ba593077117dc4e42718b5bb1bc90654025e12eb72128df349a01a25",
+    "IMG_5989.JPG": "077775ba032c1901aa04e1bea2494ae6d7e2565b35406622ba6c13edbc8e88fa",
+    "IMG_5987.JPG": "8c7e3c58de2044b8e23599cb88b136d5662d8e9dd69292e79a3c32644123a18a"
+  },
+  "independent_source_review_sha256": "6045fcd05d80714f0d8ac1b1bcded016f9d27c104194a899821ca559a7083db3",
+  "numeric_checks": {
+    "triangles": 21884,
+    "original_vertices_faces_exact": true,
+    "original_STL_OBJ_build_bytes_unchanged": true,
+    "materials_used": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "material_counts": [
+      846,
+      392,
+      10511,
+      758,
+      9377
+    ],
+    "horizontal_ochre_faces": 0,
+    "horizontal_shadow_faces": 0,
+    "rear_neutral_faces": 54,
+    "upper_front_recessed_wall_neutral_faces": 310,
+    "highest_upward_faces_neutral": 238,
+    "3MF_faces_and_materials_exact": true,
+    "3MF_max_vertex_serialization_delta_mm": 4.99755792304768e-09,
+    "3MF_unit": "millimeter"
+  },
+  "actual_visual_review": {
+    "preview": "PASS complete full view and caption, no artificial triangular color wedge",
+    "rear": "PASS complete full view and caption, no artificial triangular color wedge",
+    "front": "PASS complete full view and caption, no artificial triangular color wedge",
+    "back": "PASS complete full view and caption, no artificial triangular color wedge",
+    "west": "PASS complete full view and caption, no artificial triangular color wedge",
+    "east": "PASS complete full view and caption, no artificial triangular color wedge",
+    "top": "PASS complete full view and caption, no artificial triangular color wedge",
+    "entry-detail": "PASS intentional detail crop, color domains legible and coherent",
+    "corridor-detail": "PASS intentional detail crop, color domains legible and coherent",
+    "roof-detail": "PASS intentional detail crop, color domains legible and coherent"
+  },
+  "resolved_finding": "Initial candidate cornice tops had ochre wedges on four upward triangles due centroid y=-65. V2 whole-vertex front-plane gate also corrected four downward counterparts. New top/entry-detail and all eight other images verified; original geometry unchanged.",
+  "source_and_document_checks": [
+    "Three official source photographs actually inspected; lower frontal ochre, existing gray arch relief and front/side projecting grid supported as bounded families.",
+    "Upper recessed wall left neutral because original planes cannot faithfully split mixed source wall finishes; discrete window backs shade only.",
+    "Side lower ochre ends at existing z33 whole-face boundary rather than slicing triangles at z31; README explicitly calls this topology accommodation, not surveyed paint boundary.",
+    "Rear and horizontal roofs neutral; no invented thin stripes, symbols, text, facade subdivision or photo texture.",
+    "2010 official collection not exact EXIF dates or present-day condition; README and source register correctly limit scope."
+  ],
+  "reported_checks_reviewed": [
+    "COLOR-FORMAT-GEOMETRY-QA PASS",
+    "SCENE-QA PASS",
+    "DELIVERY-QA PASS"
+  ],
+  "limitations": [
+    "Color-only result does not endorse original approximate geometry, facade counts or measured dimensions.",
+    "Five appearance labels do not constitute tested multi-filament slicing; not physically printed.",
+    "Official source images private; no inferred CC or commercial reuse guarantee."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}
