@@ -1,0 +1,110 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "information-building",
+  "original_faces": 2452,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "sources": [
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3827",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2026/05/28/20260528071459-496a7885-me.jpg",
+      "sha256": "43966abd403c6038e6cb6e20d3529368b14b0630424b9a78c5b842adaa118421",
+      "page_sha256": "cf2fd8c53f8aac136c862bec7ba6aa68c8925a9f0de7158eef217bf9f10bc3a2",
+      "author": "計網中心資訊系統發展組-林政傑",
+      "posted_date": "2026-05-28",
+      "capture_date": "未確認",
+      "actually_viewed": true
+    },
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/1948",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2018/10/16/20181016123430-19124772-me.jpg",
+      "sha256": "abe07e6e3a38736becc9206e69ef8ab50acaea1bc73f80e69efe2bdef1209b38",
+      "page_sha256": "c20c8b9315a9d0620249ae533e0c524abad4c4c8aa54bbd13d5b4842d4e5ce11",
+      "author": "計網中心 陳怜吟",
+      "posted_date": "2018-10-16",
+      "capture_date": "未確認",
+      "actually_viewed": true
+    }
+  ],
+  "audit": {
+    "sha256": "cd9ce71ff2b6a97ce09b84117c150c184a314fa0557567e0b52259f60569454b"
+  },
+  "identity_scope": "B006資訊高棟，不含長理化樓/連橋",
+  "rights": "成大素材網非商業利用及署名條款，原作者如sources。原照/頁面只私存不公開不貼圖，不以專案license再授權或宣稱商用權利。",
+  "limits": [
+    "舊簡化幾何不更動，不以補彩背書尺寸/逐窗",
+    "原三角跨色界不得重心染成斜片；整面中性或一致粗化",
+    "無證後面/屋面中性",
+    "上傳年不等拍攝年，混時期照片不稱精準現況",
+    "夜景燈光不可當白日原色"
+  ],
+  "observations": [
+    "3827傍晚正面支持灰格/較深灰頂框、兩側磚條；偏藍光不當實測色碼",
+    "1948日側支持紅磚短端及灰格長面",
+    "入口/階前被遮，不套前景理化長樓/連橋/大坡道"
+  ],
+  "palette_nominal_srgb": {
+    "brick": "#A8735D",
+    "facade_gray": "#A9B0B0",
+    "top_frame": "#717B80",
+    "window_shadow": "#424C4F",
+    "unknown": "#A7ABA5"
+  },
+  "issued_utc": "2026-11-02T14:46:00Z",
+  "independent_review": {
+    "sha256": "46b3f25119decea7d5e6a3f73f86f069ec2d86b395252719fe1e22424b5d3c67"
+  },
+  "approved_mapping": [
+    {
+      "region": "Front y=-53 existing wall/grid surface",
+      "family": "light to medium neutral gray",
+      "limit": "No added thin mullions, fine grid or gray paint extending onto the unobserved other short end. Existing irregular lower bays retained, not reinterpreted from adjacent long building."
+    },
+    {
+      "region": "Existing frontage window-recess backing",
+      "family": "dark gray / subdued blue-gray reflected shade",
+      "limit": "Discrete original backs only, not a continuous blue wall; photograph lighting does not establish literal glass tint."
+    },
+    {
+      "region": "Top frame front face x approximately -45..45, z130..143",
+      "family": "darker neutral gray",
+      "limit": "3827 shows full front outline and its openings. Original simplified two slots are not exact photograph geometry. Horizontal top and unobserved rear face stay neutral; no new intermediate posts."
+    },
+    {
+      "region": "Photographed x=-46 short-end wall",
+      "family": "red/orange brick family",
+      "limit": "1948 supports this one end only. Existing small recesses may receive generic dark shade; no invented cantilever shades, texture or brick coursing."
+    }
+  ],
+  "coordinate_mapping": {
+    "front": "y=-53, x from left to right in straight-on frontage view",
+    "source_1948_brick_end": "x=-46",
+    "reason": "1948 shows the sparse single-column short end at image left and the gray-grid frontage receding to image right, matching the original front-preview left-front viewpoint. Original x=-46 has narrow single-column side recesses; x=+46 has wider recesses and is not the photographed end.",
+    "geographic_direction": "Not independently established; do not label cardinal orientation from these photographs alone."
+  },
+  "unknown_neutral_regions": [
+    "Opposite x=+46 short-end outer face, despite brick margins visible in frontal photograph; margins alone do not certify entire side.",
+    "Rear y=+53 and broad horizontal roof.",
+    "Obscured lower entrance canopy, round landing, external stair and small post; do not borrow forecourt bridge, ramp or neighboring long-building details.",
+    "Display base and any uncertain interfaces."
+  ],
+  "mandatory_public_limits": [
+    "B006 high block only, excludes physics/chemistry long wing, connecting bridge and large forecourt ramp.",
+    "Material families are approximate; 3827 dusk illumination is not calibrated paint color.",
+    "2018/2026 upload dates are not verified capture dates or a common-date architectural survey.",
+    "Original 2452 faces retained; color does not certify original dimensions/window counts/geometry.",
+    "Original photos private, no textures/public originals; retain source attribution/noncommercial terms and no commercial-rights guarantee.",
+    "No physical print or multi-filament slicing verification implied."
+  ],
+  "required_QA": [
+    "Exact original STL bytes and mesh coordinate/triangle equality.",
+    "Actually inspect final front/end/back/roof views and details for fake diagonal patches.",
+    "Unknown side/roof/entry neutrality and material usage verification."
+  ],
+  "private_source_backup": "Source photos and reviews are privately retained; not bundled in public deliverables.",
+  "adopted_source_go_sha256": "d9b87f160b8caf3bdcebadd0d870440e3281a9f9156706b26af9ea96502e7e7e",
+  "independent_source_face_review_sha256": "46b3f25119decea7d5e6a3f73f86f069ec2d86b395252719fe1e22424b5d3c67",
+  "source_backup": "Original sources privately backed up in project backup folder; public package contains links and hashes only.",
+  "model_QA_pending_at_source_issue": true,
+  "current_model_QA": "See COLOR-FORMAT-GEOMETRY-QA.json, SCENE-QA.json, DELIVERY-QA.json and INDEPENDENT-COLOR-VISUAL-QA.json; source-issued pending flag is historical, not the final model status."
+}

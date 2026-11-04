@@ -1,3 +1,50 @@
+# 國立成功大學｜資訊高棟 B006：原幾何補彩色
+
+## 彩色模型預覽
+
+**同一項目材色更新（count_delta = 0），保留原 2452 三角面；僅有證正面與單一磚短端補近似色，入口、另一端、背面及屋面保中性。不是現況精測或全館精確色彩復原。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂面](top.png) | ![入口](entry-detail.png) | ![立面](facade-detail.png) |
+| ![頂框](roof-detail.png) |  |  |
+
+## 材色範圍與限制
+
+- 官方日景與正面照對位支持左短端（原座標 x = −46）磚紅／棕紅色族、前灰格及較深灰頂框前面；另一短端 x = +46 不因正面兩側露出磚邊就整片塗磚。
+- 只給原離散窗凹底通用深灰陰影，非新增連續玻璃幕牆或精確玻璃色。頂框保持原兩孔近似形狀，不補照片其他柱格。
+- 原附外階、圓平台、入口小簷與柱被遮蔽，均保中性，不借前景理化長樓、連橋或大坡道色彩。B006 高棟不包含這些鄰接建物。
+- 水平屋面、後面、未知端面與展示底座中性；中性不是現場真漆。照片夕光／偏藍只證色族，並非校準色票。上傳日期不等於拍攝日，不宣稱同一年精確全館外觀。
+- 不增刪頂點、三角面或構件，不畫新磚紋／白線，不以本次補彩背書舊近似幾何。原大三角無法對應細邊界時採完整面中性或一致粗化，不切新面湊色。
+
+## 格式、重建與驗證
+
+原 `model.stl` 與 `build_model.py` 位元組保持不變；STL 不含材色。`appearance.3mf` 使用五個基本材質及逐三角指派；`scene.blend` 有實際 shader，`color-mesh.npz` 保存原頂點與面。五材質不是已驗證四色／多耗材切片專案；未實際列印，未執行切片器驗證。原包未提供 OBJ，本次也不虛稱交付 OBJ。
+
+```sh
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 6 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+沿原 requirements 安裝 NumPy、trimesh、manifold3d，另使用 Blender 4.3.2。隔離重建保留、不刪除。新 QA 見 COLOR-FORMAT-GEOMETRY-QA.json、SCENE-QA.json、DELIVERY-QA.json 與 INDEPENDENT-COLOR-VISUAL-QA.json。舊 previews、驗證檔與 render_preview.py 保留為單色歷程，不能當本次材色重建入口。三細景為刻意局部構圖，其餘七全景有完整模型邊界檢查。
+
+## 公開來源與權利
+
+- [成大素材網資訊館日景](https://material.ncku.edu.tw/picture.php?/1948)
+- [成大素材網資訊高棟正面](https://material.ncku.edu.tw/picture.php?/3827)
+
+原照片、網頁與私人核圖不隨模型公開，沒有貼圖。保留成大素材網非商業利用及署名要求、照片作者權利；本專案公開不代表原照自由再授權或商用權利已清。詳 COLOR-SOURCE-REGISTER.json。
+
+## 原模型說明與歷程
+
+以下保留原說明；本次材色檔／場景入口以本文新段落優先，舊單色圖為歷程。
+
 # 國立成功大學｜資訊大樓高棟
 
 ## 模型預覽
