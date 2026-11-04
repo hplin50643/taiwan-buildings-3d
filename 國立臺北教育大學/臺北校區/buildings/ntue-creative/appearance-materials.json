@@ -1,0 +1,63 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed upper louver front rectangles darkgray",
+      "hex": "#45494A",
+      "faces": 36
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixed walls glazing roof sides neutral",
+      "hex": "#B8BAB5",
+      "faces": 1598
+    },
+    {
+      "id": 2,
+      "name": "Observed lower gallery pier fronts palegray",
+      "hex": "#CECEC5",
+      "faces": 8
+    }
+  ],
+  "domains": {
+    "upper_louver_fronts": 36,
+    "lower_pier_fronts": 8,
+    "per_louver": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "per_pier": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 385
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1642 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "All vertices on complete finite front rectangles of18original louvers and4gallerypiers.",
+    "Only front surfaces; side returns backs and whole mixedwalls neutral.",
+    "Capture unknown;2023formdate and photographed109yearbanner not capturedate.",
+    "Three material labels not testedfourfilament."
+  ]
+}

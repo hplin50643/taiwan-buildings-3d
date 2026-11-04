@@ -1,0 +1,69 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "manual_review": "Parent personally inspected daylight exterior sources, original code, preview and all ten final views in montage. Only 327 north-facing column facets silver-gray; 7527 unknown faces neutral. Full group framed, intentional detail crops, no false colored triangle wedges. Original 7854 triangles and bytes preserved. Pinned Shapely 2.1.2 exact rebuild verified; 2.2.0 failure and coplanar retriangulation history retained.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "original_triangles": 7854,
+  "material_counts": [
+    327,
+    7527
+  ],
+  "connected_coplanar_domains": 2036,
+  "original_OBJ_exists": false,
+  "file_sha256": {
+    "README.md": "35d6db5da1e7427b731c7aa51520f651d4fbe96447458e645a4172c865210c24",
+    "README.zh-TW.md": "35d6db5da1e7427b731c7aa51520f651d4fbe96447458e645a4172c865210c24",
+    "model.stl": "01277bf8746a2ae19b5abe792d334756caa2e22db1252f5d586e1951069ec7a0",
+    "build_model.py": "8f4f30e263b86ea74bff4225086dbd865e742accdbd806373930f459f753c243",
+    "colorize_model.py": "d67a8b7fef0df8faafefacde9cc7b637234d76eb5e284e4028e6fb29adc293f4",
+    "render_color.py": "465774f27ca7d5b49c78092c11bf0b88993482f0edd01d510b4596244c0c5292",
+    "verify_color_scene.py": "7e3a4b898e417949b32c0ff8aab1b7d43f9a959ff04a9866818fac22abfe2ea9",
+    "validate_color.py": "503254f082e61004c4e49d5bb3789fa9549c85b299697186136c266d4ec78994",
+    "color-mesh.npz": "c2bf93cd4396fcdf497b8fdcc688979ddd24539ab40b5e87de7f34a36a3db671",
+    "palette.json": "299d0ff2e180c9fc0922767007a3b1cdff54708433ab9ce43ecbb62a719f4036",
+    "appearance-materials.json": "b1aee1de5e46033d0057cbb6305b182bd60b4307528837491fe75a8f675e267a",
+    "COLOR-SOURCE-REGISTER.json": "ef618035749d5a69c40c500fb82f9c48bbc64a158e40341f4a16893cf251fdbd",
+    "appearance.3mf": "307414f0e1b24008c1fd6c350d0f37d631c7de9c6139197a769e75b05ede9fdc",
+    "scene.blend": "2db8dbc97b5bdb71a843982001934676fd08428837bf8c5f46de66e86c0ccf21",
+    "preview.png": "5b6dac80946707903b852fa51c211752a95e2354a1e86dc31e6973e15d7dcf78",
+    "rear.png": "d4ac1aec654aa0f0f024c97aef84479818a8b0a6bb86abc875f73523e215c078",
+    "front.png": "6198c172d2c2f8c2960eef0145db942c4a5c11de5f182456ad4e5cb94f48d5b6",
+    "back.png": "d92c96f4f1c41f012e89fb4d4ea05ec4907a24833bdb8ea819af491380895086",
+    "west.png": "cab531d556edf63fda20e9c41feac36c593f36a9ab645029ab97a264d60fb10d",
+    "east.png": "8b634df35528ce55ab9c5ba7ea2c8fca21bd775b7136a1abdea8dfd8ff5c8ead",
+    "top.png": "6049002b93cd6e14435de00b4799bada4f56ac18e27da3fe5b7883c3660b832d",
+    "entry-detail.png": "f131a925ab12ce2af773f9d4b6b7be7ae08af400f46ae8aacf663f6aa2b0926f",
+    "facade-detail.png": "2d8427f1d87d63cd8cdbccb83f15a07402f77f29746b0bc76fd019da10fc6c8d",
+    "roof-detail.png": "ee5993fc3de11d6d87588175c785f9aff5b0f32970e079a923c866956bd06f47"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "7d228566390668d4bce29b90771b2118ec81dbc2ef4baf9cce3356829830a53b",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "6345b7a9916733d6679f885ad3fbc636c3b751ac2fa80d0944009453da15c5b3",
+    "SCENE-QA.json": "9cbc351c8d66e3bbc5caea6693e06a69d3f91b50de3be684d6090e8916788c34",
+    "FRAMING-QA.json": "fe5dcdfe3f4a821fc4927fbba5f0978ab11b553a1b90cdaf1dd882a16c54fcd1",
+    "DELIVERY-QA.json": "88c54b0f189ff75b278ab847d7a71a2ca0d304400d03438738dfa6552b5811df"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "736dccb477404a24bc3d59126f3cc49a8fb9a1b2f4983a0486cfbbc381b4b4cd",
+    "ORIGINAL-RETENTION-QA.json": "f647bd78dc12591c75870bd6036fd397c26c1e90927767337e02bd00a584d48f",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "70ef301db5abfa0844499da2f37e32ef4e08ce44277b026df500a5459243d3e4",
+    "ORIGINAL-PACKAGE-READBACK.json": "5507e48a139e657e9986b4a25aa10ae21bcda6515f5582a113df5435d0379e15",
+    "INDEPENDENT-IDENTITY-0054.json": "45ae1c52371468198aaceda29a9d58a8ff27af1365212a10ede327cb0ec880f4",
+    "INDEPENDENT-DOMAIN-0057.json": "e2f8d923ed67da267281c25dec669cf7213c4469ffe004c69e1cf43c13bf353c",
+    "PARENT-RETRIANGULATION-SURFACE-CROSSCHECK-0053.json": "63d7459c40d0f7309e183cf4a3348f2ba775a288b0b8991e85dab8a47b40c193"
+  },
+  "montage": "private-review/final-v1-ten-view-montage.jpg",
+  "dependency_rebuild_history": "Initial defaultShapely2.2.0 retriangulated11coplanarfaces;retained failurelog/differenceJSON/temp. Existinglocal2.1.2 isolatedtarget rebuilt exactoriginalSTL andcolorNPZ/palette, v2andv3PASS. Sharedvenv andoriginalcode unchanged. README discloses exactdependency.",
+  "history_sha256": {
+    "ORIGINAL-BUILD-DIFFERENCE-0053.json": "0d59b2eed484b1e8ec889d049cefe50b3b039b605e47ed99b4477ff8381f1b72"
+  },
+  "limitations": [
+    "Original image-derived whole group retained, not measuredBIM.",
+    "327 finite48gon northhalf faces;reversehalf andcapsneutral.",
+    "2016/04URLnotcapturedate;no2026conditionclaim.",
+    "No testprint or verifiedfourfilament."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T01:00:35.847685+00:00"
+}

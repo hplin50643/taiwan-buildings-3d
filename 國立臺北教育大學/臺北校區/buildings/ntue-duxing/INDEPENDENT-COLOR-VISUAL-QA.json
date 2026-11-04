@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed both official PDF physical81 exterior photos, original front preview/code and all ten final renders. Only original entrance exterior left return, not inner sloping porch; unknown capture dates. Parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Complete original x24 outer entry return within y-63..-51,z3..40:14Boolean-fragment triangles mediumgray/2520neutral.",
+    "All658coplanar connected components uniform; original clipped fragment edges retained, no new triangles.",
+    "Lettering and upper-window front context, inner porch, main brick walls, mixed window backs, courtyard and roofs neutral.",
+    "Seven whole-model views fit; left-front preview and two deliberate exterior-return details show the limited domain without expanding it.",
+    "Original2534triangles/STL/build bytes unchanged; immutableOBJ absent though original build exports private isolated OBJ. Same Duxing/count_delta0, no MoNTUE or foreground canopy.",
+    "Official2023form date not capture, no2026current or original geometry-accuracy endorsement."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "d320fe7a63a3f375f12291c8dc3d1188a2949b14e00699dc992b577e6b4e76c5",
+    "README.zh-TW.md": "d320fe7a63a3f375f12291c8dc3d1188a2949b14e00699dc992b577e6b4e76c5",
+    "colorize_model.py": "2b75a8a08e558b38bae60d3d6d595926c61b852aab65f71e838b1b0f00f18663",
+    "render_color.py": "13fdee865c538778d63fc1ef080dd7a93c461c026920d096763129520581061d",
+    "color-mesh.npz": "bb05596b274d04a85dddaa4d454ead5c92889307ea9a03a9109c88b7ef140780",
+    "palette.json": "e7291958bfb1f1bd3a1559a403138a38f4fa691d09251399fca413b9e20455d9",
+    "appearance-materials.json": "2c83bc381d6078713ba4e10828257831678b76a8472a0c0499fe2065e2ea506f",
+    "COLOR-SOURCE-REGISTER.json": "ed8cdd18f3e59e6af4b378f9752a7bfede489fb3e04e0c7986136ee4695b3fd3",
+    "model.stl": "8f9f2dd522f47de6caadd109b304f9abe71ada41a577919fbbcf14d800cc3e4a",
+    "build_model.py": "4e7f088ad1807d33f8823d5b24bca627e9633070bbf587e3b2106c897c9efcf6",
+    "preview.png": "072f09335b464ec98eed28acd021e1f42e87629b17d22fc2ddf3310c57765d8a",
+    "rear.png": "cfae5adbdba82c6d1f42bbd87669d690a4ca0367bc6cc795346fd466dc92c28a",
+    "front.png": "35f19cda62d20d2059e1adbf67185d23b5b6c376a380027e2dd1c3242a2b5712",
+    "back.png": "2047e1447e7a44df7d30a8d1eef5f6371061a2fe96cbccd3f3c7e7e3002a41dd",
+    "west.png": "cd92a481985d94fe203abdf80cbf0ad898186dccee182995b6ca8667e26ce656",
+    "east.png": "df9202b8790992c8a85c60fb3fbe84639ca552b7bb712f5fc463f93e81deefa6",
+    "top.png": "ce062a563e23355af1197dbfe7b77bbad0212c1c32332dbff4a8f0167e02bfe7",
+    "entry-detail.png": "188bd9da18c2b489a9bfb74e47edff4cecc5fb3fdc1ec97980ff5c0e72cf6bc1",
+    "facade-detail.png": "400ede237fc0d320ba201a5a138ab7113ada8189df6ecaf88415a92d27f01a7f",
+    "roof-detail.png": "cbf8c0d236cea9c30974bda9f8fd487b6083ee769dfe2bcfe2833b3411c05903"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "d6f85a879be747d74aa6da5651abcd87d01cf511e7c8d7994d5e4b28fcfb9ec1",
+    "SCENE-QA.json": "15113450fdd4e4ad4ac3fc68e02dd63fb91f3a39479c58bba95ce8fd326e2f43",
+    "DELIVERY-QA.json": "f54c5fa7e5091e686701e496c2e239e12f4cef10d002c878c4db98ffc6dd349c"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "62261c8a4056c372a6c4fb14c4a7a4f5976f40e90fb4a08a4e467ff014316309",
+    "ORIGINAL-RETENTION-QA.json": "a11947adf09b87da9a07f8122f1f4fd567b4ad192d443c3ad93d737c8f74768b",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0206.json": "0b738896fa80aee48ba3118413ee5bb93a20e3f867f754f29768a48e9b5bae45",
+    "INDEPENDENT-IDENTITY-0206.json": "a811141d400d5fe05ca5b0289db2d7427c721db5f30cdbb00bad574678e2732d",
+    "WHOLE-RETURN-AREA-QA.json": "e1d421f4934ff673834042fd9c428c2976fc8820b7da8a86f96aa6d0d62a4b6c"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T02:11:12Z",
+  "parent_review": "Parent personally viewed both official PDF81 exterior photos, original code, preview and all ten final renders. Fourteen surviving Boolean fragments of complete exterior left entrance return only, medium gray; visible bounds y-63..-55, not filled to primitive y-51. Inner sloped surface remains neutral. Seven whole views framed and three intentional closeups. No mixed-wall color, no new geometry, no current-state/full-color claim."
+}

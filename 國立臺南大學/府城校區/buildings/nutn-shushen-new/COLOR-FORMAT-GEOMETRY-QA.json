@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "checks": {
+    "original_STL_bytes_unchanged": true,
+    "1752_triangles_preserved": true,
+    "triangle_coordinates_unchanged": true,
+    "watertight": true,
+    "single_positive_volume": true,
+    "finite_and_nondegenerate": true,
+    "four_materials_actually_assigned": true,
+    "3MF_mm": true,
+    "3MF_vertices_same": true,
+    "3MF_faces_same": true,
+    "3MF_material_assignment_exact": true,
+    "3MF_object_identity": true,
+    "isolated_original_STL_hash": true,
+    "isolated_generated_OBJ_retained_privately": true,
+    "isolated_color_mesh_hash": true,
+    "isolated_palette_assignment_hash": true,
+    "inputs_unchanged_during_QA": true
+  },
+  "color_mesh_sha256": "b586c653940f9fe33869d535f8e0df883a169bc06cd0cf062b130ac798c1c6f8",
+  "original_STL_sha256": "511db129ca786dcaedee1d1c5a4bf777945b454b0b53f166eff1e7f8d67f0e28",
+  "bounds_mm": [
+    [
+      -75.0,
+      -42.0,
+      0.0
+    ],
+    [
+      75.0,
+      42.0,
+      127.0
+    ]
+  ],
+  "retained_rebuild": "Isolated rebuild retained privately; no automatic file deletion.",
+  "limitations": [
+    "Color model uses original unrefined geometry; no new facade accuracy claim.",
+    "Four base-material labels are not a tested four-filament slicer project.",
+    "STL format itself does not contain color."
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed entrance twin columns exposed front skin light gray",
+      "hex": "#CDD0C9",
+      "faces": 20
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED brick walls caps glass roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 3150
+    }
+  ],
+  "domain_face_indices": {
+    "-10.5": {
+      "indices": [
+        3057,
+        3063,
+        3056,
+        3062,
+        3058,
+        3064,
+        3059,
+        3061,
+        3060,
+        3065
+      ],
+      "finite_facets": {
+        "14": [
+          3057,
+          3063
+        ],
+        "15": [
+          3056,
+          3062
+        ],
+        "16": [
+          3058,
+          3064
+        ],
+        "17": [
+          3059,
+          3061
+        ],
+        "18": [
+          3060,
+          3065
+        ]
+      }
+    },
+    "10.5": {
+      "indices": [
+        3066,
+        3071,
+        3067,
+        3072,
+        3068,
+        3073,
+        3069,
+        3074,
+        3070,
+        3075
+      ],
+      "finite_facets": {
+        "17": [
+          3066,
+          3071
+        ],
+        "18": [
+          3067,
+          3072
+        ],
+        "19": [
+          3068,
+          3073
+        ],
+        "20": [
+          3069,
+          3074
+        ],
+        "21": [
+          3070,
+          3075
+        ]
+      }
+    }
+  },
+  "coplanar_components": 744,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3170 original triangles unchanged",
+  "limits": [
+    "Only two original24gon column front finite facets, all vertices chord/tangent/z3..17;10+10 surviving triangles.",
+    "Boolean embedding within original fan body retained, not standalone reconstructed columns.",
+    "Mixed brick ends, caps and window backs neutral; only Dormitory1 evidence, no borrowed Dormitory2 rear.",
+    "Photo capture unknown;2023form date not capture."
+  ]
+}

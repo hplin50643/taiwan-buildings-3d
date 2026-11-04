@@ -1,45 +1,39 @@
-# 國立臺北教育大學｜芳蘭樓入口暨可見立面段
+# 芳蘭入口片段｜七百葉前緣局部淺暖灰
 
-## 模型預覽
+**混補漆牆、窗框及未知域未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。原入口加五個可見窗 bay 的片段，不是芳蘭全棟；只14面局部補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![七百葉前緣](entry-detail.png)|![原五窗bay](facade-detail.png)|
+|![原屋頂與截面](roof-detail.png)|||
 
-臺北校區。自行以公開照片和平面資料建立的外觀近似模型；不是下載第三方3D模型、測繪成果或建築施工圖。
+## 材色範圍
+同 `ntue-fanglan-entrance` 原項目，same-item、count_delta=0。**7676原三角面、STL與build_model.py字節不變**。不切面、不新增金字或遮蔽餘棟。原公開包沒有OBJ，不因code可輸出而假稱保留。
+- 七百葉完整前緣 y−20.5、x−64..−44，各z41/46/51/56/61/66/71起厚1.8，共7×2＝14原面淺暖灰。
+- 全三頂點符合有限plane與矩形界限，保Boolean裁切；不用中心點／normal門檻。1287共面連通域均一，0撤色。
+- 其餘7662中性：百葉上下端背、層間暗處、全主牆混灰／下部補漆、金字側牆、膠囊窗圈與窗背混框反光、入口雨庇／門、地坡、屋頂與未知截面。
+- 實景百葉前緣是淺色；間隙陰影不能當成深灰塗料。原厚片間隙保留自然光影，不把實面染黑。
+- 色／中性邊界只是證據範圍，不是真實材接縫。原近似窗圈、材分界與量體不因補色追認為精測。
 
-## 範圍與來源時點
+## 來源／日期與權利
+只親看校方PDF物理頁91兩張建築外觀，不使用內部平面或安全資料。拍攝日期未知，報告／填表年不是拍攝日，不聲稱2026現況。
+原照／PDF私人保存，不公開、不貼圖；未確認CC或再散布授權，不保證商用。HEX僅名義淺暖灰族，不是校準色票。正式GO覆蓋先期review-only文字，但不免除builder QA。
 
-局部模型；僅左側入口及可見2＋3組長圓窗段，不代表全棟。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150×69mm展示底座，照片近似非實測比例。STL無色；3MF／Blender有真逐面材。兩材標籤不是驗證兩色／四色耗材切片，**未實際列印**，無切片路徑。
 
-保留入口樓梯屏風、7道厚化百葉、兩層長圓窗和2＋3分組、端牆長圓窗。樹遮的後續立面未擴充；右側與背面為明確截斷面。未製作微細扶手及設備。
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py`／`verify_color_scene.py`。
+完整隔離原build＋color重建、原bytes／全三角multiset、閉合正體積、3MF面材、scene重開、十圖1200×900及圖文hash核對。程序不代替人工來源核對。
+原README／previews／validation／render保留歷程，不冒充新QA；沒有刪檔。
 
-官方防災計畫為2023年10月25日版本，實拍攝影日期未載。來源頁更新日不視為攝影日期。大禮堂另參考原檔EXIF標示2026年8月22日的四面照片；不能由此保證其他館舍2026年的外觀。
-
-原照片、原PDF及照片對照只用於私人QA，不隨公開包散布。來源精確URL與支持特徵見 [sources.json](sources.json)。
-
-## 模型檔案
-
-- [model.stl](model.stl)：實際交付網格，毫米單位，含底座最長150毫米
-- [scene.blend](scene.blend)：由相同STL匯入的可編修網格，參數建模來源為 [build_model.py](build_model.py)
-- [requirements.txt](requirements.txt)：Python依賴；執行 python build_model.py 可重建
-- [render_preview.py](render_preview.py)：用 Blender 實際讀取交付STL渲染，非示意效果圖
+## English scope
+Partial entrance fragment and five visible window bays,not the entire Fanglan building.14 original seven louver leading faces lightwarmgray;7662 otherfacesneutral. Original7676 triangles unchanged;no originalOBJ. Dark interlayer shadows are not darkpaint on leadingfaces. Captureunknown;report/formyear notcamera date. Not testprinted or validatedfilament slicing;original approximategeometry not newlycertified.
 
 
-[俯視圖](previews/top.png) · [正立面](previews/elevation.png)
+## 版本 2 名稱勘誤
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視圖<br>![俯視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
-
-## 列印與驗證
-
-底座朝下。每館獨立縮放，不能直接拼為同一比例校園。建議先在自己的切片器檢查；拱頂、雨遮、百葉與屋簷的懸伸可能需要支撐。長圓窗框、拱邊與窗格屬細件，拆支撐時容易損傷。沒有實體試印，亦未聲稱Cura或Prusa的實際工具路徑驗證、不用支撐或保證可印。
-
-[validation.json](validation.json) 檢查原始STL水密、原法向與繞序、正體積、每邊兩面、vertex link單環、單一連通表面、無分離內殼、尺寸、獨立重建SHA及Blend幾何一致。
-
-[contour-validity-check.json](contour-validity-check.json) 逐0.2毫米、固定z偏移0.071毫米檢查閉合與每個/合成Polygon有效性；不允許repair後算通過。[thin-feature-check.json](thin-feature-check.json) 是canonical fail-closed v3的0.8毫米參考opening輔助篩檢，採1毫米抽樣，不等於全面最小壁厚或切片工具路徑。
-
-驗證命令：python validate_model.py；python check_contour_validity.py；python check_thin_features.py。需先以 blender -b -t 2 -P render_preview.py 建立scene.blend。
-
-本件為作者凍結包，外觀已覆核；需獨立幾何審核通過後才可由指定發布者發布。
+3MF 與 Blender 物件顯示名稱統一更正為「NTUE Fanglan Entrance partial color」，並同步匯出、渲染與驗證程式的名稱。場景重新開啟與保存後，除物件名稱及非渲染執行期記錄外，網格、材質、變換、相機、燈光與字幕語義完全相同；場景檔案雜湊因此更新。原 STL、材色陣列與十張預覽位元不變，未重新渲染。原有局部補色及未試印限制不變。

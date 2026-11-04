@@ -1,0 +1,352 @@
+{
+  "status": "FROZEN_COLOR_UPGRADE",
+  "repo_path": "國立高雄餐旅大學/小港校本部/buildings/nkuht-student-health-center",
+  "count_delta": 0,
+  "geometry_unchanged": true,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "files": [
+    {
+      "path": "COLOR-ASSIGNMENT-QA.json",
+      "sha256": "7d228566390668d4bce29b90771b2118ec81dbc2ef4baf9cce3356829830a53b",
+      "bytes": 227
+    },
+    {
+      "path": "COLOR-FORMAT-GEOMETRY-QA.json",
+      "sha256": "6345b7a9916733d6679f885ad3fbc636c3b751ac2fa80d0944009453da15c5b3",
+      "bytes": 1448
+    },
+    {
+      "path": "COLOR-SOURCE-REGISTER.json",
+      "sha256": "ef618035749d5a69c40c500fb82f9c48bbc64a158e40341f4a16893cf251fdbd",
+      "bytes": 1502
+    },
+    {
+      "path": "DELIVERY-QA.json",
+      "sha256": "88c54b0f189ff75b278ab847d7a71a2ca0d304400d03438738dfa6552b5811df",
+      "bytes": 2484
+    },
+    {
+      "path": "FRAMING-QA.json",
+      "sha256": "fe5dcdfe3f4a821fc4927fbba5f0978ab11b553a1b90cdaf1dd882a16c54fcd1",
+      "bytes": 1020
+    },
+    {
+      "path": "INDEPENDENT-COLOR-VISUAL-QA.json",
+      "sha256": "54acbb9c42bef954aeefefed7855145b51a602ff7f5fc4167ed35c9083cd84f1",
+      "bytes": 5042
+    },
+    {
+      "path": "ORIGINAL-MONOCHROME-README.md",
+      "sha256": "3b72ce35ada30b4bc73125a592019c9e41347d5c4cae7d9e48acf686ef798d02",
+      "bytes": 2884
+    },
+    {
+      "path": "QA.md",
+      "sha256": "1b346a542fdabc280dc11ea60a6c0b09c83885755b2c1cb044666549f2f86955",
+      "bytes": 3428
+    },
+    {
+      "path": "README.md",
+      "sha256": "35d6db5da1e7427b731c7aa51520f651d4fbe96447458e645a4172c865210c24",
+      "bytes": 3600
+    },
+    {
+      "path": "README.zh-TW.md",
+      "sha256": "35d6db5da1e7427b731c7aa51520f651d4fbe96447458e645a4172c865210c24",
+      "bytes": 3600
+    },
+    {
+      "path": "SCENE-QA.json",
+      "sha256": "9cbc351c8d66e3bbc5caea6693e06a69d3f91b50de3be684d6090e8916788c34",
+      "bytes": 502
+    },
+    {
+      "path": "SHA256SUMS",
+      "sha256": "f712e8acdb340abc69c8d3737e5970068b4cba206babdd81b069c0b098ef4e01",
+      "bytes": 5564
+    },
+    {
+      "path": "appearance-materials.json",
+      "sha256": "b1aee1de5e46033d0057cbb6305b182bd60b4307528837491fe75a8f675e267a",
+      "bytes": 1234
+    },
+    {
+      "path": "appearance.3mf",
+      "sha256": "307414f0e1b24008c1fd6c350d0f37d631c7de9c6139197a769e75b05ede9fdc",
+      "bytes": 88307
+    },
+    {
+      "path": "back.png",
+      "sha256": "d92c96f4f1c41f012e89fb4d4ea05ec4907a24833bdb8ea819af491380895086",
+      "bytes": 651469
+    },
+    {
+      "path": "build_model.py",
+      "sha256": "8f4f30e263b86ea74bff4225086dbd865e742accdbd806373930f459f753c243",
+      "bytes": 15768
+    },
+    {
+      "path": "check_all_layers.py",
+      "sha256": "03f7514a485d7cd41642e8d9afba16f00d0500e59cf25947482bd917dda954a6",
+      "bytes": 2592
+    },
+    {
+      "path": "check_component_detail.py",
+      "sha256": "aa51ec13999ad152ddb8e42416e39b0448b4ce6dae3f2f2439afb879f7cd5094",
+      "bytes": 4777
+    },
+    {
+      "path": "check_feature_rays.py",
+      "sha256": "ea4cd08d28949658db02d0fc62bdb82d2dbd3c4dcf40744de133f0ad9003fdcd",
+      "bytes": 6985
+    },
+    {
+      "path": "check_layer_components.py",
+      "sha256": "365e437af0d3d6defc2f52adf3e8601ac3643a14e15e03c8c8610b10bb8061a5",
+      "bytes": 3551
+    },
+    {
+      "path": "check_raw_mesh.py",
+      "sha256": "01e4e1e63205b76fb3299100fa974f9075c5c5d60fb4f09ed343b88b3fbc42af",
+      "bytes": 2719
+    },
+    {
+      "path": "check_render_rebuild.py",
+      "sha256": "307bc7b64d7daab83531f42016f44f9f272bb8d73ccc3be79fd735a9ba6fc75e",
+      "bytes": 1768
+    },
+    {
+      "path": "check_thin_features.py",
+      "sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915",
+      "bytes": 2591
+    },
+    {
+      "path": "color-mesh.npz",
+      "sha256": "c2bf93cd4396fcdf497b8fdcc688979ddd24539ab40b5e87de7f34a36a3db671",
+      "bytes": 57811
+    },
+    {
+      "path": "colorize_model.py",
+      "sha256": "d67a8b7fef0df8faafefacde9cc7b637234d76eb5e284e4028e6fb29adc293f4",
+      "bytes": 3369
+    },
+    {
+      "path": "component-detail.json",
+      "sha256": "22c0547adac212f04d33959efaea039c2c4d58218e9a6ba50d1f71ccea32de07",
+      "bytes": 535801
+    },
+    {
+      "path": "documentation-check.json",
+      "sha256": "585d3df2d82e8d955714fdf91a02a94e9fae6bb4f5f2700b19037cb169b96366",
+      "bytes": 660
+    },
+    {
+      "path": "east.png",
+      "sha256": "8b634df35528ce55ab9c5ba7ea2c8fca21bd775b7136a1abdea8dfd8ff5c8ead",
+      "bytes": 664949
+    },
+    {
+      "path": "entry-detail.png",
+      "sha256": "f131a925ab12ce2af773f9d4b6b7be7ae08af400f46ae8aacf663f6aa2b0926f",
+      "bytes": 1625584
+    },
+    {
+      "path": "export_appearance.py",
+      "sha256": "97b614b0a4ac120efdae1afe56a6b95cf3e584956dd3af7ec209f9d2c326a76f",
+      "bytes": 1749
+    },
+    {
+      "path": "facade-detail.png",
+      "sha256": "2d8427f1d87d63cd8cdbccb83f15a07402f77f29746b0bc76fd019da10fc6c8d",
+      "bytes": 1608940
+    },
+    {
+      "path": "feature-rays.json",
+      "sha256": "c371d007e4455153c25f28c5326b0f3a240cc4f9c2be5cc4f63cd50921f2a278",
+      "bytes": 51022
+    },
+    {
+      "path": "front.png",
+      "sha256": "6198c172d2c2f8c2960eef0145db942c4a5c11de5f182456ad4e5cb94f48d5b6",
+      "bytes": 628953
+    },
+    {
+      "path": "image-controls.json",
+      "sha256": "dabd2ee5e1cc32343a3fdd3ebd165a73aaf7e2de18d7b0630d2c08e892efac35",
+      "bytes": 7629
+    },
+    {
+      "path": "layer-component-check.json",
+      "sha256": "7330f5410099e17ad66530482bba7efd51395f18aea724625d611df30a8ee8cd",
+      "bytes": 251961
+    },
+    {
+      "path": "layer-opening-check.json",
+      "sha256": "b1264f607e62da9ba675696032a38c5e1853030f3d3d64b5a7917ac9bae570fc",
+      "bytes": 28650
+    },
+    {
+      "path": "model.stl",
+      "sha256": "01277bf8746a2ae19b5abe792d334756caa2e22db1252f5d586e1951069ec7a0",
+      "bytes": 392784
+    },
+    {
+      "path": "palette.json",
+      "sha256": "299d0ff2e180c9fc0922767007a3b1cdff54708433ab9ce43ecbb62a719f4036",
+      "bytes": 190
+    },
+    {
+      "path": "parameters.json",
+      "sha256": "58275b5fe0c5a080d4866fc32abced6eac7516f53707319e4f38bc277217a29a",
+      "bytes": 4774
+    },
+    {
+      "path": "preview.png",
+      "sha256": "5b6dac80946707903b852fa51c211752a95e2354a1e86dc31e6973e15d7dcf78",
+      "bytes": 663455
+    },
+    {
+      "path": "previews/aerial.png",
+      "sha256": "abf89463740e4b4ba08e4374eb71659f02a523fcca9170b26b4e8c366bbd4fc3",
+      "bytes": 1215261
+    },
+    {
+      "path": "previews/elevation.png",
+      "sha256": "aef489b6bbc80a74ff3a36328d54aeb43325e93ece1ba74cbdc5f05d52c3fcf7",
+      "bytes": 1089590
+    },
+    {
+      "path": "previews/front.png",
+      "sha256": "9ada99a4a8e7aee4c964d80a6c523a7fbc81b417cd0387d091452828bf0a8bc8",
+      "bytes": 1141471
+    },
+    {
+      "path": "previews/left.png",
+      "sha256": "534b0aee58652fef83f4335aefae4291c776e99fb602baa14e3f0155ccd73cff",
+      "bytes": 1134003
+    },
+    {
+      "path": "previews/rear.png",
+      "sha256": "c44d52e743febb43f6273d4c2561424d927f3dd72ce27479c267e3d24e15bb71",
+      "bytes": 1127821
+    },
+    {
+      "path": "previews/right.png",
+      "sha256": "6f4466368d2e3a0856ad9963de73db1fe6003e95ae053820dde65264b6e7b2dc",
+      "bytes": 1151963
+    },
+    {
+      "path": "previews/top.png",
+      "sha256": "48ff6102c94bfd2d24d773c7d19f7da2fa6c9f6a96a2975a18d9d9860c7b4756",
+      "bytes": 1058768
+    },
+    {
+      "path": "previews/west_elevation.png",
+      "sha256": "14733ffcd5a7243992b8a3447b77d15ae5227237a291896b2579e78f75d3859b",
+      "bytes": 1092180
+    },
+    {
+      "path": "qa-summary.json",
+      "sha256": "d9714fa616a4e993d25138066b9f536eadd0aebba9dcd2d44d2e4dc194f79efa",
+      "bytes": 3597
+    },
+    {
+      "path": "raw-mesh-check.json",
+      "sha256": "560621d99a5cb61ac4d5ef8256150a78d51c02c52e528735eae910319bb5aab2",
+      "bytes": 864
+    },
+    {
+      "path": "rear.png",
+      "sha256": "d4ac1aec654aa0f0f024c97aef84479818a8b0a6bb86abc875f73523e215c078",
+      "bytes": 652520
+    },
+    {
+      "path": "render-manifest.json",
+      "sha256": "bc91c75a88bc9748e3ca054392a5afe31bcfa635b8339c84e8b5435930bd9da5",
+      "bytes": 3949
+    },
+    {
+      "path": "render_color.py",
+      "sha256": "465774f27ca7d5b49c78092c11bf0b88993482f0edd01d510b4596244c0c5292",
+      "bytes": 6627
+    },
+    {
+      "path": "render_preview.py",
+      "sha256": "82598055f33c8e31dbec3a2c0dac9dcc19631c4a288b78b6bb646807b0876443",
+      "bytes": 3919
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "f49f2d69dfb5e2a02a9190ed9ac8d2609f21d15d7db6014eeb6be54eb5af5080",
+      "bytes": 90
+    },
+    {
+      "path": "roof-detail.png",
+      "sha256": "ee5993fc3de11d6d87588175c785f9aff5b0f32970e079a923c866956bd06f47",
+      "bytes": 1418786
+    },
+    {
+      "path": "run_all_checks.py",
+      "sha256": "9800b9513ce72885996adc917cc4a34228907787f49c24299426556d44c17ec4",
+      "bytes": 3593
+    },
+    {
+      "path": "scene.blend",
+      "sha256": "2db8dbc97b5bdb71a843982001934676fd08428837bf8c5f46de66e86c0ccf21",
+      "bytes": 250993
+    },
+    {
+      "path": "sources.json",
+      "sha256": "7c8732b9fee1d1813a9f0e1ca26318cfef4d928372d8c86bb927f84642c226b3",
+      "bytes": 11711
+    },
+    {
+      "path": "sources.md",
+      "sha256": "d5517bb22c2dc14ca34aad2a307b8d4364fce0a46e58fc70a214eef9b85eab59",
+      "bytes": 4932
+    },
+    {
+      "path": "thin-feature-check.json",
+      "sha256": "0b3e4d9da83848234e6efd52dad94ff441db0df431fbed440c03a9e8c3a5f39a",
+      "bytes": 6187
+    },
+    {
+      "path": "top.png",
+      "sha256": "6049002b93cd6e14435de00b4799bada4f56ac18e27da3fe5b7883c3660b832d",
+      "bytes": 971231
+    },
+    {
+      "path": "validate_color.py",
+      "sha256": "503254f082e61004c4e49d5bb3789fa9549c85b299697186136c266d4ec78994",
+      "bytes": 3765
+    },
+    {
+      "path": "validate_model.py",
+      "sha256": "13ccb530901ff9c8dce7895cfc922d4ed83906cb2e0422e2d6cdb4480f876343",
+      "bytes": 5398
+    },
+    {
+      "path": "validation.json",
+      "sha256": "d6256ece958fd53b623c31fcd0c949690b6da0e4763a1b97d87b1eea4ba1060b",
+      "bytes": 1553
+    },
+    {
+      "path": "verify_color_scene.py",
+      "sha256": "7e3a4b898e417949b32c0ff8aab1b7d43f9a959ff04a9866818fac22abfe2ea9",
+      "bytes": 2099
+    },
+    {
+      "path": "west.png",
+      "sha256": "cab531d556edf63fda20e9c41feac36c593f36a9ab645029ab97a264d60fb10d",
+      "bytes": 659983
+    }
+  ],
+  "exclusions": [
+    "scene.blend1",
+    "private references and original photographs",
+    "private workspace paths",
+    "original-remote audit copy"
+  ],
+  "original_STL_sha256": "01277bf8746a2ae19b5abe792d334756caa2e22db1252f5d586e1951069ec7a0"
+}

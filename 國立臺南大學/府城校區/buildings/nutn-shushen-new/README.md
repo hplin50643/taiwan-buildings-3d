@@ -1,41 +1,32 @@
-# 新淑慎樓｜國立臺南大學
+# 新淑慎樓｜僅頂黃／中左淡黃／下左橘板局部補色
 
-## 模型預覽
+**局部補色未完成：只頂黃12／中左淡黃10／下左橘6原面；中右樹遮及其他未證中性。非全色或2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項 `nutn-shushen-new`／`count_delta=0`，府城校區；只新淑慎不含鄰舊棟。20261103為處理日期非拍攝日。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![上黃與中左淡黃](entry-detail.png) | ![下左橘與缺口](facade-detail.png) |
+| ![中性屋頂水罐](roof-detail.png) | | |
 
-府城校區／新淑慎樓可見主體近似；背面未核。逐件獨立縮放，含底座最長150mm；非各館同一比例。尺寸：150.00 × 84.00 × 127.00 mm。
+## 材色範圍
 
+只原 y−19.9 四有限前浮板域：頂左 x−38..−32／頂右20..26，z94..111，各6三角名義黃；中左x−13..−7、z59..94，10三角淡赭黃；下左x−38..−32、z41..57，6三角橘。原窗Boolean切去的缺口原樣，選所有存活全三頂點在域內的完整原三角，不假補成照片平板，不新增切面或面心截色。共面連通域全同材，1724面中性。
 
-[實際STL頂視](previews/top.png)
+中右原板下部樹遮，整塊中性，不只染樹上半。全高左灰牆及主壁跨遮蔽基座／側面不擴灰；原白橫帶/返邊/板厚側背/窗背/玻璃/樓梯格背全中性。水罐正面金屬不證整圓周背頂，整罐及帽中性；屋/突出機房/背/基座/其餘全部中性。**中性不等於實景灰證明，來源覆蓋界線不是實材接縫。**
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL頂視<br>![實際STL頂視](previews/top.png) |  |  |
+原1752三角、STL/build字節與尺寸不變；不以補色追認原近似開窗重疊或現況精測。
 
-## 外觀與模型範圍
-六層宿舍主體、左端灰牆窄窗、白色框帶、上中段獨立近方窗與少數直向色帶淺浮雕、右端僅上部可見窄玻璃梯間、屋頂機房及五組可見水箱輪廓。
+## 來源、日期與權利
 
-官方完成實拍僅一個斜視角；背面與樓深近似，下部樹遮處留白，只保留左側實際可見窗，水箱非設備實測。未把舊宿舍或規劃效果圖作現況。
+校方永續頁成功1477×1108實景 `official-shushen.jpg` 已親看；先前503技術失敗不是已讀證據，以這次成功實檔hash為準。照片capture未知，網頁年份/識別碼及取用日不是拍攝或2026現況證明。URL/hash見source register，HEX為色族近似非測色。原照私人保留，不公開/不貼圖；未見CC不沿repo license推商用。
 
-使用官方永續網完成建物實拍，拍攝日期未註明；與舊淑慎樓拆除前外觀及新建效果圖分開。 [官方主要照片](https://sdgs.nutn.edu.tw/sustainable/mode02.aspx?boss=20260706152525384)／[來源及近似限制](sources.json)。來源照片與校圖僅私用研究，不隨模型公開；此處預覽均由實際交付STL渲染。
+## 檔案與 QA
 
-## 檔案
-- [STL](model.stl)／[可編輯Blender場景](scene.blend)／[Python重建](build_model.py)／[依賴](requirements.txt)
-- [原STL幾何、法向與重建一致性](validation.json)
-- [0.2mm逐層閉合/各輪廓/合成多邊形有效性](contour-validity-check.json)
-- [0.8mm薄特徵數位篩查](thin-feature-check.json)
+`appearance.3mf`四展示材，`scene.blend`真面材，`color-mesh.npz`原三角索引；原STL無色及build保字節；immutable原包無OBJ，原碼雖可產出OBJ，不冒稱原OBJ存在或保留，隔離產物僅私存。原README另存`ORIGINAL-MONOCHROME-README.md`/`.zh-TW.md`，舊previews/QA保單色歷程不是新色審。
 
-## 檢查與列印限制
-原始STL通過水密、每邊兩面、頂點link單循環、正體積、原始法向與繞向、單一表面且無孤立內腔殼；獨立重建SHA與保存Blend三角形一致。檢查不以repair掩蓋錯誤。0.2mm層高的輪廓graph degree2、每個多邊形與合成多邊形有效。
+依requirements執行colorize/export/validate，Blender執行render_color.py/verify_color_scene.py。原build+color全隔離重建保留不刪；3MF/STL三角同一／封閉正體積／重開scene／10張1200×900見QA，父另終審。**未實際列印。** 四展示材不代表已驗四色實際切片、材料/支撐須另核。
 
-0.8mm XY薄特徵篩查以canonical shared-edge內插，每1mm高度取樣；0層開運算面積損失超過1%，包含尖角、簷口等，不能當作噴嘴路徑可印證明。這些是數位QA，沒有真正切片器驗證或實體試印。建議底座朝下、0.4mm噴嘴與0.2mm層高作切片起點；門廊/陽台/屋簷/窗洞上沿需逐一檢視橋接、局部支撐與移除空間；不保證免支撐。細窗格與欄板孔在小比例下有列印限制。
+## English limitations
 
-## 重建
-Python 3.12安裝requirements.txt後執行build_model.py。Blender背景執行render_preview.py取得scene.blend與actual-STL預覽。依次執行validate_model.py、check_contour_validity.py、check_thin_features.py，全部exit0且validation.json的checks全true才可交付。
-
-STL SHA-256：511db129ca786dcaedee1d1c5a4bf777945b454b0b53f166eff1e7f8d67f0e28
-
-[校區圖鑑](../../README.md)／[學校](../../../README.md)
+Partial only: whole original y−19.9 notched relief fronts,top yellow6+6,middleleft paleochre10,lowerleft terracotta6;1724neutral. WindowBoolean contours retained, no repair or triangle cut. Whole tree-obscured middleright panel neutral, not just hidden lower portion. All gray/white mainwalls, returns, panel thickness, windowbacks/stairproxy, tanks entirecircumferences,roof/rear unknownneutral. Unknowncapture date; webpage year not current-condition evidence.1752originaltriangles/STL/build bytes unchanged/count_delta0;immutable package has noOBJ despite original code exportingOBJ; isolatedgeneratedOBJ privately retained,new Shushen only not adjacent older blocks; color does not authenticate original geometry. Photo private,nottexture; nominal palette not calibration; not test-printed or validated four-filament project.

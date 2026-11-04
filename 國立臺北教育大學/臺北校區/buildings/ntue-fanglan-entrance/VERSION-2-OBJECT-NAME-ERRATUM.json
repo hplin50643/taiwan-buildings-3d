@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立臺北教育大學/臺北校區/buildings/ntue-fanglan-entrance",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "NTUE Fanglan Entrance partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "6b60567865b332029c22dadb93d49808c8a50b6e3066489061064bb8ab94c6b2",
+  "new_3mf_sha256": "72a0d1866ecaaf279c20486b5c2c7bc05873cdf7bcdb99f15c312b61672a280d",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "fc5f1214a859f633370eb46ef0cd6d29f78b6d684d34df4bf0afec957cb4f4db",
+    "validate_color.py": "1155e0246a31d9bd9606cf329cf6deb94cdb8f8b1a221d01c9d0ce5a1184b0a0",
+    "render_color.py": "933d4c8262f51f62356a03e410c8e76d05a6c1870fd7cfe9c5999069a0f00b1c",
+    "verify_color_scene.py": "06866d84ace8cdcb1528fd36788c25a3db28638619542fe7a3ad9562ba3bf796",
+    "scene.blend": "0c7187c6f6aba30ff317729f71a25824ca2d0256cee64069d55b7c8019408908",
+    "appearance.3mf": "72a0d1866ecaaf279c20486b5c2c7bc05873cdf7bcdb99f15c312b61672a280d",
+    "README.md": "f9aba05f074de6d8c3a251627cad40ef3bb8ff95355036b34713fb73e8a03fdd",
+    "README.zh-TW.md": "f9aba05f074de6d8c3a251627cad40ef3bb8ff95355036b34713fb73e8a03fdd"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "NTUE Fanglan Entrance partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "9cbb1edbfb47b7702d9472e77069f7aa3831e26b00d1cf9db1a1b7158c10a0b4",
+    "scene_reopened": true,
+    "scene_sha256": "0c7187c6f6aba30ff317729f71a25824ca2d0256cee64069d55b7c8019408908"
+  }
+}
