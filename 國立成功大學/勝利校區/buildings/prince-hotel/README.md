@@ -1,3 +1,53 @@
+# 國立成功大學｜太子文旅：原幾何補彩色
+
+## 彩色模型預覽
+
+**同一項目材色更新（count_delta = 0）：鐘塔與圓筒裙樓採同構件磚色族連續的有界推定，不是全周精測色。僅夜照對位之長窗面牆與樓帶、未知側後／屋面保中性；夜景黃光不當白日漆色。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西面](west.png) | ![東面](east.png) |
+| ![頂面](top.png) | ![裙樓拱洞](entry-detail.png) | ![鐘塔](corridor-detail.png) |
+| ![屋面](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+原 2802 三角面、頂點座標、STL 與建模原碼均不變。不新增窗格、鐘數字、商標、建築或貼圖，不借旁學舍色彩。材色更新不背書原簡化模型的尺寸與逐窗精度。
+
+- 日景支持鐘塔與圓筒磚色族；夜景僅支持其前角位置。圓筒全周同色是明示同構件連續推定，不是每個方向已有日照照片。
+- 原鐘面淺白，原塔冠帶及圓筒簷冠垂直邊淺灰米；水平屋皮未證，保中性。沒有新增鐘面細節。
+- 既有拱洞內壁可淺色、凹底深陰影；原拓撲沒有獨立外白拱環，不切三角湊圈，也不聲稱精確白圈寬度。
+- 原長陽台立面只有匹配夜照，牆／樓帶保中性，凹底只通用陰影，非黃色照明或全數玻璃。日景另一矩形裙樓不能直接套入前拱廊色帶。原矩形裙樓與圓筒相交後露出的直條灰面維持中性，不當新柱或真實材料分界。
+- 未對位矩形裙樓、主體平側後、屋頂與底座保中性，並非真實現場油漆。色票為光照下近似色族，非量測色票。
+- 兩照2016-06-24為上傳日，不是已確定拍攝年，不稱2026現況或同年精測外觀。
+
+## 交付、重建與驗證
+
+`model.stl` 不含色且保留原bytes；`build_model.py` 未改。原包沒有OBJ，不虛稱提供。新增 `appearance.3mf` 五基本材質逐面指派、`scene.blend` 實際shader、`color-mesh.npz` 原幾何和面材質。五材質外觀不是已驗證四色／多耗材切片專案；未實際列印，未執行切片器驗證。
+
+```sh
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 3 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+使用原 requirements 與 Blender 4.3.2。隔離重建目錄保留、不自動刪除。新QA見 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、DELIVERY-QA、SOURCE-VISUAL-QA。七張全景有完整模型邊界檢查，三張細景刻意裁切。原 validation／截面／薄特徵及 previews、render_preview.py 保留單色歷程，不是本次彩色重建入口。
+
+## 色源與權利
+
+- [成大素材網：日景1689](https://material.ncku.edu.tw/picture.php?/1689)
+- [成大素材網：夜景1692](https://material.ncku.edu.tw/picture.php?/1692)
+
+照片作者：計網中心行政與諮詢組－陳永川，來源成大素材網。原圖／頁面只私人保存，原圖不隨模型公開、不貼於網格。保留素材網非商業利用及署名要求，公開模型不代表原照可依專案license再授權；不保證商用權利已清。精確來源紀錄見 COLOR-SOURCE-REGISTER.json。
+
+## 原始模型說明與限制
+
+以下保留原文，材色與場景入口以新段落優先；原單材圖不當本次彩色成果。
+
 # 國立成功大學｜太子文旅（原成大會館）
 
 ## 模型預覽

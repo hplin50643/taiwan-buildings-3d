@@ -1,3 +1,54 @@
+# 國立成功大學｜生醫卓群大樓：原幾何補彩色
+
+## 彩色模型預覽
+
+**同一項目材色更新（count_delta = 0），只為照片重疊的正面及唯一對位返面補近似色族；不是完整四面材質調查。左高凹口內皮是遮陰實牆，不是整片黑玻璃；未知側後與屋面中性。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西面](west.png) | ![東面](east.png) |
+| ![頂面](top.png) | ![入口](entry-detail.png) | ![左高凹口](corridor-detail.png) |
+| ![屋面](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+保留原 3166 三角面、全部頂點與原比例；不增窗格、標字、雕塑、設備或相鄰醫院量體。原粗化尺寸、樓層、逐窗位置不因補彩而獲精確認證。
+
+- 正面左右階梯實牆、右高塔及入口高屏暖米灰；只照片2925可對應的左突出塊右返面延用此色，不按構件名稱把所有側背一起染色。
+- 中央既有窗間平面與原凸梃銀灰，避免越界染到前凸入口實牆。照片細窗格在舊模型沒有對應面，不新增。
+- 原中央／狹長／小窗凹底分別灰綠；不把所有窗間牆變成連續玻璃。左高凹口的內壁、頂內面與背景實皮用暗暖灰表達遮陰，九個既有小窗另分灰綠，沒有整口亮玻璃或黑色空洞。
+- 原下入口柱及屏框淺色，三下窗凹底通用深陰影，不新增精細入口配件。
+- 大水平屋面、屋頂退台、完整背面、未對位外側及底座中性，不是真實現場漆色。陰影與反光只為視覺解讀，非校準色票。
+- 三張照片上傳日2023-09-21，不當確定拍攝日，亦不主張2026現況。
+
+## 格式與重建
+
+原 `model.stl` 及 `build_model.py` bytes不變；原包沒有OBJ。STL不含彩色。`appearance.3mf` 指派六基本材質，`scene.blend` 有實際shader，`color-mesh.npz` 保原三角座標。六材質外觀不是已驗證四色／多耗材切片專案；未實際列印、未執行切片器驗證。
+
+```sh
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 3 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+沿原requirements與Blender4.3.2。隔離重建保留不刪。新QA見 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、DELIVERY-QA、SOURCE-VISUAL-QA；七全景有完整邊界檢查，三細景刻意局部構圖。原validation／截面／薄特徵／previews與render_preview.py保留單色歷程，不當本次彩色重建入口。
+
+## 來源與權利
+
+- [成大素材網正面2933](https://material.ncku.edu.tw/picture.php?/2933)
+- [成大素材網正面2934](https://material.ncku.edu.tw/picture.php?/2934)
+- [成大素材網左返面2925](https://material.ncku.edu.tw/picture.php?/2925)
+
+作者：計網中心教學科技組－陳怜吟；來源成大素材網。保留非商業利用及署名條款；原照與網頁私人保存，原圖不隨模型公開、不貼於模型，也不以儲存庫license再授權。公開模型不保證商用權利已清。來源hash與適用範圍見 COLOR-SOURCE-REGISTER.json。
+
+## 原始模型說明與限制
+
+原文保留如下，材色及重建入口以新段落優先；舊單材圖不是本次彩色成果。
+
 # 國立成功大學｜生醫卓群大樓
 
 ## 模型預覽
