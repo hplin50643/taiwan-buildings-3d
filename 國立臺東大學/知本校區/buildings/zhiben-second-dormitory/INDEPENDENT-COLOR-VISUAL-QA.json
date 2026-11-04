@@ -1,0 +1,89 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:7wholemodel views framed and3intentionaldetails;onlytwo front lowcap upper skins mutedterracotta.",
+    "Allmainroofs andothercaps,eaves,walls andwindows neutral;originalBooleannotches preserved withno addedfaces.",
+    "Three approximate residentialbars areonegroup;diningcentre excluded."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 4426,
+  "material_face_counts": [
+    16,
+    4410
+  ],
+  "connected_coplanar_domains": 1098,
+  "original_obj_present": false,
+  "original_files_retained": 15,
+  "file_sha256": {
+    "README.md": "01b76f7c0219f8eda7dc1549b6c2a4bee4dd17901dc4fb8d9ad3d9653cc3fdaf",
+    "README.zh-TW.md": "01b76f7c0219f8eda7dc1549b6c2a4bee4dd17901dc4fb8d9ad3d9653cc3fdaf",
+    "model.stl": "a378a3f5d2ddd8370a40f2a3f3ec48df6c414c62dded17920a1eb4bc9f7770c5",
+    "build_model.py": "8b6de376bfc4241b6ff0331c631e7f8cbf88a14ec266ba59e3fd595d7b18bd66",
+    "colorize_model.py": "a476629ff933184f44f8fa5c67ac8d0d0be98e700fb8911e0d5c29a16b8d47e0",
+    "render_color.py": "9802d1d1e1ba2b81d4ced8024edab60754e729ddb5a3a2d8e22ff3eef8471fcf",
+    "verify_color_scene.py": "a8e3c8839e8b876cadef728bf89d3ce650649ca41bd204da63dd6dc6eaeb1489",
+    "validate_color.py": "9df8f1a590b57a11e40e91c950458f16895239ac611080e902b6061da9ec1b5e",
+    "color-mesh.npz": "24f83885be404939af83b607a0ef416fa488e0e2e95619293636585178f77cd6",
+    "palette.json": "4efec7f7e42b43f84c7de3877d30cc95f983f0808729d38464def7e4111b5271",
+    "appearance-materials.json": "b530d160d433f9f8391e941a0c8eb99b8c03e6c724d6d544d38aad624cd1c122",
+    "COLOR-SOURCE-REGISTER.json": "16d1bd16fd52f53c0a02fe83dc911ec95afdcf47625ef183b9087b628a392eb7",
+    "appearance.3mf": "29eb8a994000b20af484db51524dd14977f4a4994f92de92d7e2d95961ce65c1",
+    "scene.blend": "66a98f406cf3c1ac9d2f6d3fffc25b7051d4ef59c70df4f76a85f3c9946cbc4f",
+    "preview.png": "e7b3d43ccac8c4da0bbc3be95fb1c9454cbee09b3dfccc4ac9e437458251cb5d",
+    "rear.png": "30f64c660da9238859635169fe298d95e4b8bdd6a0d7994ce60fb5c6de4ceeed",
+    "front.png": "cc6d41051501d5ad159e28974ad3de7a4e753283422900bffdc2ca2ce9e27ea3",
+    "back.png": "4070872d6fff0897b3db0805d0510c4497c4a6a1874527cff31899c9830e748a",
+    "west.png": "ba41c83a8eeaea9b65469d12e7664a1826e7a33b0f455809a05d6af13edf2967",
+    "east.png": "ca808799921ac0df625f06af62beaaa9d10b1fb47f58d84ba8d5cc3e47b0c9a4",
+    "top.png": "ddb81a32339244f10aad69de123592e244cc28b3cedf6f67f24e51b7f78ca5e5",
+    "entry-detail.png": "ca0339bd734bdd715100a3d5920c9b59ade1b511641132b267b3eccd8e7c0962",
+    "facade-detail.png": "3ef1ef16ec85fa2e90688923e1e8a6e079d2703e168664b5531dadab7e5e994b",
+    "roof-detail.png": "0ee21f1d82d203b11a8d97a2cf24dbc9bd1782638528336d3b5396ff960b8e80"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "fba49222793f55604d520259f4329aad81ac36b9fbbdfeb7f77a0a7653a379c2",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "3bb8a522598bd9297e60762ed8027e4eb97cb855f074422c3d97b736d004e527",
+    "SCENE-QA.json": "7eecc476cb8137d031fb1c9663275cac6f17b8107c177bdf8a04dec841239bcf",
+    "FRAMING-QA.json": "addbcd3c03e1050c5ba4caf327f6000db4ba06feeb7181c56ae66edec00ef209",
+    "DELIVERY-QA.json": "423d630c9938c64eae9b0b918ab30260129919c942a99afda6d6cf04bfa87d52"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "7464d92e4a02b700106108fedb3ecc4f7e9be23d8c92e526ad87bd7ecdaab839",
+    "ORIGINAL-RETENTION-QA.json": "814ffef994f45d6666dde39197f74c3ca3305633b0d29509bd9cc34e31897056",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "c4a9a2da02aec5f400d0b3a51ada9199cf74a940b0791164bae809ce696a7d2c",
+    "INDEPENDENT-DOMAIN-0334.json": "6a36d1fd9b38e30a6a26f59c1c8f6291319f4ce75757d460691a16932314a49a",
+    "INDEPENDENT-IDENTITY-0334.json": "64d4129a9200d283a83f4bf8de50072763195c96ec4b8b77f8bdb8870d340bb8",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "c2760c2fbe46ed609d7ecb9486451a6437c4ce862a466d9b778822e9b4aed952"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "4bdee5ea0379ceef8f305abcb9ec141e052853c37367e17fecef416dce2bdefd"
+  },
+  "limitations": [
+    "16complete frontlowcap triangles:8+8Booleanfragments;4410neutral.",
+    "Allinfiniteplane triangles equalbothfull finitecomponents;natural occlusion retained.",
+    "Three approximate residentialbars onegroup,diningexcluded.",
+    "Captureunknown;no originalOBJ,no testprint."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T03:40:19Z",
+  "parent_review": "Parent personally viewed near official photo and previously viewed reused dining exterior/aerial, original lowcaps code, preview and final ten montage. Only two near lowcap upper slopes8+8 original triangles earthy redtile. Infinite yz plane equals finite original fullx/endpoint domains16, no manual y-50 cut; surviving Boolean notches retained. All other roof slopes/walls/glazing neutral. Seven whole views fit and three intentional details. Original4426 triangles and bytes unchanged/no immutable OBJ, one residential group excludes dining, partial not complete current survey.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "Zhiben Second Dormitory partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "Zhiben Second Dormitory partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}

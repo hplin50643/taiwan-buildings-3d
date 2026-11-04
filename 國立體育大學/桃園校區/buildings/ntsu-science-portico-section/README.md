@@ -1,39 +1,28 @@
-# 國立體育大學｜綜合科技大樓弧廊及內凹立面段
+# 國體綜合科技弧廊片段｜下薄板外緣局部淺灰
 
-## 模型預覽
+**局部補色未完成：只下薄板外垂直緣128原面淺灰；字帶柱與主牆未完成／非2026現況。** partial_color_incomplete=true、fully_colored_exterior=false。同項ntsu-science-portico-section／count_delta=0，桃園校區；只凹角門廊與裁切主翼，不是整棟綜合科技大樓。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 前側 actual STL<br>![前侧](previews/front.png) | 後側 actual STL<br>![後侧留白切面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![門廊薄板](entry-detail.png) | ![完整外緣](facade-detail.png) |
+| ![中性上欄板與薄板](roof-detail.png) | | |
 
-**局部外觀近似，非全館測繪。** 桃園市龜山區文化一路250號，NTSU；不是臺中國立臺灣體育運動大學NTUS。
+## 材色範圍
 
+由原arc_strip獨立重建ro88.5、cy49、±42度65點64個chord。每chord所有三頂點須落完整無限垂直plane，再核切向0至原chord長與原z17.6..19.8有限界，容差0.0001mm。每個無限plane等於有限域，恰2共邊原面，共128淺灰、4958中性；不用面心或normal閾值漏碎面。所有1349原共面連通域一致，原5086三角不變。
 
-## 製作範圍
-保留兩直翼的內凹角、雙窗群組、六根圓柱弧廊與11個上層透空洞。圓弧是真實自建幾何；上層洞與柱間空間均貫通，不以淺刻線代替。
+只有下薄slab外垂直緣取名義淺灰；上層有字parapet與開口全部中性，圓柱貼紙/告示/異材腳未分界故整柱中性。薄板頂、暗底、內邊與端蓋不沿用前緣色。主翼磚牆混淺帶/底座/遮蔽區，玻璃窗背、地面、階、人工側後截面與未知面中性。中性不代表實景灰，資料範圍不是材料接縫。
 
-只取弧廊與其後的兩翼短段，並非全樓。整修後廣角照用以交叉核弧廊保存，不依鏡頭變形建造彎曲主樓。外牆配色不在單色STL表達；屋頂、後側及現代空調布置未作。
+## 來源與版本限制
 
-來源照片攝影日期未載；網頁更新、PDF上傳與本次讀取日期不是照片年代。科技大樓外牆2021年整修，行政／教學／科技立面空調美化2024-05-28完工；規劃中的網球館屋頂光電和2026室內工程不當作已完成外觀。**模型不聲稱2026當下實況。** 精確適用範圍與日期在 [sources.json](sources.json)。
+親看舊官網斜照與官方PDF外觀照片，僅支持連續下薄緣淺灰色族，不稱精確飾面尺寸或測色。原舊外觀與2021外牆、2024空調改造脈絡保留，以上來源/計畫年份不是拍攝日期，不認證2026現況。凹角兩翼與弧門廊是原公開照片近似片段，側後人工截斷不是完整實測牆；補色不追認幾何、無室內或新翼。來源私人，不公開照片或貼圖，不推未見CC為商用許可。
 
-## 檔案與重建
-- [model.stl](model.stl)：毫米；含底座最長150mm，各件獨立近似比例。底座朝下。
-- [scene.blend](scene.blend)：由實際交付STL匯入的可編修網格；與STL幾何核對。
-- [build_model.py](build_model.py)：自建參數原始碼，沒有下載第三方3D模型。建立原始mesh時去除float32量化造成的零面積冗餘三角片，再assert封閉；交付STL不經修復直接驗證。
-- [requirements.txt](requirements.txt)：版本與重建套件。
-- [render_preview.py](render_preview.py)：由實际STL輸出front/rear/elevation/top PNG，Blender 4.3.2。
+## 檔案與 QA
 
-執行 Python build_model.py，再執行 blender -b -t 2 -P render_preview.py。每個PNG都由該件STL產生，不是替代模型的效果圖。原照片／PDF只供私有對照，不隨公開包重散布。
+原STL/build與5086三角字節/座標保留；immutable21件沒有OBJ，原builder只輸出STL。原README存ORIGINAL-MONOCHROME-README.md，舊單色previews與QA為歷程。appearance.3mf兩展示材、scene.blend真面材、color-mesh.npz同原三角。精確requirements隔離build+color、閉合正體積、3MF面材座標/Blender重開/10張1200×900檢核，重建保留不刪，未實際列印或證多色切片。
 
-## 列印注意
-弧廊梁板、上層透空孔、柱間挑空與側向連接可能需支撐；留空會增加橋接難度。
+## English limitations
 
-窗框、欄杆及屋緣做適量加粗或簡化。未知背部是有厚度實體切面，並非零厚面。數位QA不等於Cura／Prusa實際工具路徑或實體試印；不保證免支撐、完整最小壁厚或每種機器都能成功。請檢查切片後先試印。
-
-## fail-closed QA
-- [validate_model.py](validate_model.py) → [validation.json](validation.json)：原STL法向與繞序、原始面、每邊兩面、vertex link單環、水密、正體積、單一表面殼、150mm、獨立重建SHA及Blend/STL一致。
-- [check_contour_validity.py](check_contour_validity.py) → [contour-validity-check.json](contour-validity-check.json)：固定z=.071起，每0.2mm，全層degree2閉合、個別及組合Polygon valid與0.8mm opening。invalid直接失敗；無buffer(0)或make_valid修補。
-- [check_thin_features.py](check_thin_features.py) → [thin-feature-check.json](thin-feature-check.json)：原樣canonical fail-closed v3輔助檢查。正式薄件判斷採上列每0.2mm全層結果，不只看1mm抽樣。
-- [check_depth_rays.py](check_depth_rays.py) → [depth-ray-check.json](depth-ray-check.json)：原始二進位STL射線验证入口／弧廊空隙；只量模型，非實建測量。
-- [qa-summary.json](qa-summary.json)：逐程式exit0、全部checks與全0.2mm薄件摘要。
-- [SHA256SUMS.txt](SHA256SUMS.txt)：逐檔SHA。
+Partial only:128 original lower-slab outer vertical fascia triangles palegray;4958neutral. Recompute64 original chords from radius88.5,cy49,span±42degrees. All three vertices must lie on each infinite plane and finite tangent/z17.6..19.8 bounds;infinite plane equals finite pair for every facet. All1349coplanar components uniform,original5086triangles unchanged,noOBJ,count_delta0. Lettered upper parapet,columns with notices/mixedfeet,slabtop/underside/inneredge/endcaps,wingwalls,glazing and cutrear neutral. Cropped concave-corner portico section,not entire complex. Retain original older appearance and2021wall/2024AC context;unknown capture,no2026current survey. No source photos/textures public,no geometry recertification,not testprinted.

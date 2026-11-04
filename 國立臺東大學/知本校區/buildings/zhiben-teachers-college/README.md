@@ -1,69 +1,30 @@
-# 國立臺東大學知本校區：師範學院主要教學棟
+# 知本師範主要教學群｜左右前屋坡局部灰金屬
 
-## 模型預覽
+**局部補色未完成：僅左右主翼前屋坡4原三角名義灰金屬；塔帽後坡混材牆未完成／非全色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 zhiben-teachers-college／count_delta=0，保留主要相連教學外觀一群，不是全師範院落或2026現況精測。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![左前坡完整域](entry-detail.png) | ![右前坡完整域](facade-detail.png) |
+| ![兩前坡與中性塔帽](roof-detail.png) | | |
 
-官方照片中的四層主要外觀棟群；不是師範學院全部院落或全部翼棟。
+## 材色範圍
 
-這是公開照片外觀詮釋模型，非校方官方模型、非測繪成果，也不表示全校已完成。來源照片拍攝年代較早，不能保證與 2026 年現況完全一致。
+左右原roof函式前側yz弦面，各2原三角，共4灰金屬、3622中性。左端點(y,z)=(-11.5,31.6)到(2,37)，原全x範圍−64.5..4.5；右端點(-11.5,36.2)到(4,41.6)，x9..63。所有三頂點須在完整plane、有限tangent區間與原全x範圍。獨立枚舉每個無限共面與有限域完全相同，兩三角共邊為一完整面，不依原ID或normal/面心猜色。
 
-## 檔案
-- `model.stl`：毫米制單件實心外形，可供切片；最長邊 **150 mm（含底座）**，各模型比例獨立。
-- `scene.blend`：Blender 4.3.2 可編輯三角網格；場景只有一個列印網格及攝影機，原始程式亦嵌入文字資料塊。
-- `build_model.py`：可攜參數化 CSG 原始程式，不需要照片或網路。
-- `render_preview.py`：直接載入實際 STL 製作正面、背面與正立面 PNG。
-- `validate_model.py`、`validation.json`：原始 STL、乾淨重建及 Blender 一致性驗證。
-- `sources.json`：來源、照片像素觀察、範圍與近似說明。
+原檐板union遮住下屋條，左實際z32.15起、右z36.75起；原塔union使左實露終x−4、右起x14。這些是原幾何真界，不以任意bbox補回或重切漆界。原3626三角不變，不添屋板、窗或分面。
 
-## 已實際檢視的來源
-- [校方師範學院外觀](https://enews.nttu.edu.tw/p/406-1045-36360,c4248-1.php)：[照片](https://enews.nttu.edu.tw/var/file/45/1045/img/669/144043877.jpg)。實際檢視 800×536 像素；可見四層白牆、左低右高長翼、中央直立樓梯塔與斜屋頂。
-- [綠建築協會師範／理工學院照片](https://www.taiwangbc.org.tw/tw/modules/news/article.php?storyid=359)：[照片](https://www.taiwangbc.org.tw/tw/uploads/news/1000/2/3ddc8e51ea6bf02b.png)。實際檢視組圖；下圖有師範學院題字、中央塔與多重斜屋頂。
+所有後坡與後垂直翼屋、塔不對稱實帽、其他平台、屋厚邊/端山牆/底、主牆與柱、窗背、字牌、階與底座全部中性。照片塔頂是真棚架而原簡化實帽無唯一面材映射，不自動整灰。混白牆/紅線/暗窗/金字無界亦不硬色。中性不等於實景灰，前後色差是來源覆蓋差而非實際不同屋材接縫。
 
-- [校方知本校區配置圖](https://ndga.nttu.edu.tw/p/412-1008-9291.php?Lang=zh-tw)：實際檢視校圖像素，確認建物名稱及相對位置。
+## 來源與版本
 
-原始參考照片不包含在此套件；照片權利屬原提供者。本套件未取得校方背書或第三方照片再散布授權。
+親看校方主要正斜照與綠建築合成圖下方師範照片，左右前坡灰金屬族有據；上方理工照完全排除，不借鏡心紅磚。拍攝日期未核，發表/修改日期非capture，不宣2026現況。原主要教學群近似保留，不包含全部院落，也不以本次色審追認原幾何精度。照片私人參考、不公開貼圖，未見CC不推商用；HEX只是名義展示族。
 
-## 近似與缺口
-保留主立面樓層節奏、中央塔及左右不同高度斜頂。照片透視未校正；長寬深度、屋頂斜度、窗距為近似。背面缺乏完整近照，所以後立面留白；後側低翼僅作校圖／斜照所見量體概括，未完整重建三軸兩院配置。
+## 檔案與 QA
 
-只製作公開外觀，不建置室內、設備或安全配置。底座是模型附加構件，非真實基地邊界。正面固定 -Y，並非地理正北。
+原STL/build字節與3626完整三角不變；immutable無OBJ，原builder只輸出STL。原README保留ORIGINAL-MONOCHROME-README.md，舊previews/QA是單色歷程。appearance.3mf兩展示材、scene.blend真面材、color-mesh.npz原幾何。精確requirements隔離重建build+color，驗封閉正體積、3MF全三角與材色、Blender重開、10張1200×900。重建保留不刪，未實際列印，不是已驗多色切片。
 
-## 列印建議及限制
-平底向下。斜頂有 0.75 mm 厚化屋簷；小懸挑、遮陽板與窗框可能需局部支撐。塔前玻璃橫格約 0.8 mm，入口階梯約 0.65 mm 高。
+## English limitations
 
-建議先以 PLA、0.12–0.16 mm 層高檢查預覽；這只是起始建議。底座 2.4 mm 厚。STL 是閉合實心邊界，實際填充率由切片器決定。未進行實體試印或切片驗證，也不保證免支撐、所有機種可直接成功列印。正式列印前應檢查懸挑、細柱、第一層及床面黏著。
-
-## 重建
-使用 Python 3.12，在此資料夾執行：
-
-```sh
-python -m pip install -r requirements.txt
-python build_model.py
-blender -b -t 2 -P render_preview.py
-python validate_model.py
-```
-
-驗證腳本在臨時空目錄重建 STL，逐 byte 比對 SHA-256，並讀取已儲存 Blender 真實頂點／三角面作幾何雜湊比對。不能只重建 STL 後沿用舊 Blender，修改模型後必須重新渲染、存場景及驗證。
-
-## 本次驗證
-- 尺寸：150.00 × 100.00 × 46.00 mm；三角面：3626；表面連通殼：1。
-- 原始 STL 法線與繞序一致、法線為單位向量、非退化面、封閉性、邊流形、頂點單一環、單一表面殼、正體積皆通過。
-- 無獨立內部空腔殼；乾淨重建 STL 雜湊一致；Blender 幾何雜湊一致。
-- 未宣稱完成全域自相交的獨立窮舉檢查；數位幾何驗證不等於試印。
-- STL SHA-256：`6bd3e91f0d0feb8401baeea03181e6f1efcef14bdc295f1253e5f7c41a5c3217`。
-
-
-## 第二版外觀 QA 修正
-第二版依正確師範學院照片深化左右兩翼外廊，新增連續直柱與水平樓板，中央樓梯塔改成深凹開口及樓層平台。校方紅磚 news4 照片屬鏡心書院，不是師範學院，沒有將兩建物混用。
-
-外廊、窗框、樓層平台有實際凹凸深度，局部水平突出需在切片器檢查支撐；沒有試印。
-
-
-## 實際STL正背並排
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+Partial only: two entire front roof-slope components,2triangles each,4nominal gray-metal/3622neutral. Each original yz plane is independently enumerated and equals finite endpoint tangent/full-x domain. Original slab/tower Boolean truncations remain,not guessed paint cuts or filled gaps. All933 coplanar components uniform;original3626triangles/STL/build unchanged,noimmutableOBJ,count_delta0. Tower cap,rear slopes,roof thickness/gables/undersides,mixed walls/windows and unknowns neutral. Front/rear color difference denotes evidence coverage,not actual different roof materials. Official front and lower Teachers College composite photograph viewed;upper engineering photo excluded. Capture unknown,no2026current-state or geometric-accuracy claim. Principal connected teaching group only,not whole courtyard. No public source images or textures;not testprinted.

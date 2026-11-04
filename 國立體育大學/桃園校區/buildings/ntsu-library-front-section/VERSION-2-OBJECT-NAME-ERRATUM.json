@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立體育大學/桃園校區/buildings/ntsu-library-front-section",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "NTSU Library Front Section partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "1343d7ae493440d100e54afca2ceed9d2bc1143c01b18e9bb8f7e564dcc95752",
+  "new_3mf_sha256": "6fb1b10be39736ecc80b9f14664879300b906ea303b7fc304c9aaa6ef366ddd1",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "9c2bf6df70e5fcbfb7f296827e9b12fa6dd76c5d833a6566bca5917b01d65919",
+    "validate_color.py": "79f04b5c3a36ff4eddea86eef341183063808a795246698b168d6954176dbd11",
+    "render_color.py": "8fbdd01192af4316be2dc0626af1fcb9c96524c05b0543047f4d8d8bcef9fd65",
+    "verify_color_scene.py": "577a04cc6ae5ad2fb6f43c050b76b3febe4874063378e8ffc1f564d78b64dd82",
+    "scene.blend": "4d1030a07eaf5d69103e57b22e7744f995d5e3d3747208bb1513795d8c415c8a",
+    "appearance.3mf": "6fb1b10be39736ecc80b9f14664879300b906ea303b7fc304c9aaa6ef366ddd1",
+    "README.md": "9abc8bdbf74e279632054586b99e9b5fd553f39908a239e3611f8c459bab7a15",
+    "README.zh-TW.md": "9abc8bdbf74e279632054586b99e9b5fd553f39908a239e3611f8c459bab7a15"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "NTSU Library Front Section partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "f7811c993406839ff8dc2f1c52fd4884d2f17db9e0cd8118deb8f0422ef67d34",
+    "scene_reopened": true,
+    "scene_sha256": "4d1030a07eaf5d69103e57b22e7744f995d5e3d3747208bb1513795d8c415c8a"
+  }
+}

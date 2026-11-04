@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立臺東大學/知本校區/buildings/zhiben-student-union-sports",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "Zhiben Student Union Sports partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "8d3d0cf373d5c109a2742a00503c85635c9199d820b70ac5ec702866e33203ac",
+  "new_3mf_sha256": "b2b3c56129fd7326970f93a8ff0cb5bafdf1e8eea3cbe0e9c4f38c7798708803",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "b9246b6e67cd78656eb02f84ba37fb40cc32cffbcc06420877493e770459db54",
+    "validate_color.py": "e5e59757bca2afa7bdbcfa9a0956519e4e243bffd1a3c69e1b10fbec1127afa2",
+    "render_color.py": "f702261cb5141416884501da66b5043eeef0f05d435a1918a1fdb223bb402c5e",
+    "verify_color_scene.py": "5a08120acb71a27d1852e61377c026a1444fcc4c557096c9f5cb191968ab41de",
+    "scene.blend": "2e5b98a67212b921eb55108ea9e77506825d92610339eeadf0ad0350d2457f2b",
+    "appearance.3mf": "b2b3c56129fd7326970f93a8ff0cb5bafdf1e8eea3cbe0e9c4f38c7798708803",
+    "README.md": "c550f2f2155e8c7211f43f39a38392be189e15842cf2fa32049011d685867000",
+    "README.zh-TW.md": "c550f2f2155e8c7211f43f39a38392be189e15842cf2fa32049011d685867000"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "Zhiben Student Union Sports partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "1edfc2db856763dabff243e25069af4ad17a9001a5716bdfc4f040507c6ed06e",
+    "scene_reopened": true,
+    "scene_sha256": "2e5b98a67212b921eb55108ea9e77506825d92610339eeadf0ad0350d2457f2b"
+  }
+}

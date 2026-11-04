@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official front and lower Teachers College composite photograph, original code/preview and all ten final renders; parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Two complete front slope planes,2triangles each,4gray-metal/3622neutral.",
+    "Original yz plane enumeration equals finite original tangent/full-x selection;slab/tower Boolean boundaries not repainted or reconstructed.",
+    "All933 coplanar components uniform.",
+    "Tower cap,all rear roofs,fascia/gables/undersides,mixed walls/windows and unknown domains neutral.",
+    "Seven whole views fit;details show complete left/right front slopes with neutral tower cap and rear surfaces.",
+    "Original3626triangles and STL/build bytes unchanged;noimmutableOBJ,count_delta0.",
+    "Principal connected Teachers College teaching group only,not entire courtyard;engineering photo excluded,capture unknown,no2026survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "51a06a05ab9a8cf1755b442e704ce333b5bb01c2e53f0892850258db94ee0fa0",
+    "README.zh-TW.md": "51a06a05ab9a8cf1755b442e704ce333b5bb01c2e53f0892850258db94ee0fa0",
+    "colorize_model.py": "80bd59ec715a02bd261c3d84d2a66aa3c8f5e27f50ad659dd50e9a33f7062c86",
+    "render_color.py": "004cbeaeadd6803b3ec1ef7b8e8541b997235067f7243326e17fe1cd821be3bd",
+    "color-mesh.npz": "fbd2ea775f7135417b268162f0677d252334d66c85b171cdbfdd5c1463c3990d",
+    "palette.json": "593da440a47404873b562441cc962fb89724b3676394a90773dab5a76934e972",
+    "appearance-materials.json": "f796cf23154192a353313ece0e71abc49f4cfd668d585fd9638b0602e553d3ed",
+    "COLOR-SOURCE-REGISTER.json": "8202ed9127bf12b78503040c4263c0726f31d04ddca3ecd233b8fb43ae8f9753",
+    "model.stl": "6bd3e91f0d0feb8401baeea03181e6f1efcef14bdc295f1253e5f7c41a5c3217",
+    "build_model.py": "d3c03d622c630f353ac697d8c8f0edbac8b7a1661e7d653360bfbebca35a8c64",
+    "preview.png": "2485166e0f45b3a054fc7637abadf21614188387b0a43c3de95488271488eb8e",
+    "rear.png": "39d33f714cb7e22267cf194898b4b25c396a2effc4bb790ac04c0855f13d4644",
+    "front.png": "a0ef8bff969d2f37dfd5bb8c887affdaa21a66b2293b2df3d5d35ef98facf5f5",
+    "back.png": "968672026b65433e27ffc7396afa5297b1f7cf58fac3429cc47206ea777e084e",
+    "west.png": "617386b4076ae2ce43d9979556a5d30faef80dc81df3eeb2515dedef69efe7bf",
+    "east.png": "2238e69039a347555cb4f191c2b7f443bee368099238263f57dedddf549fb704",
+    "top.png": "bb92e42b5d16cfddf027f9a5b87dc7780826f8729140bc1b5e66cde160b116c9",
+    "entry-detail.png": "9d10b875a0abf6b8182fb89ffa593520a5ced4d8bda9080dc19b8a275f35f13e",
+    "facade-detail.png": "afbd256463349f79c3abd804b7bfed79da200a535b39e9a04ed25ae2470fcdac",
+    "roof-detail.png": "f75960ce32e3f5dbf59f2871373a46a6fe17288a7db1a841c8d54763babfc520"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "99ea09bf69f11ebb5464392b1ff2c484172dceeb7f5ab85df2f1259d0b043cd7",
+    "SCENE-QA.json": "069b09a0d9b122c30eab8e07d7d4a088a5f991417acdce649c71a7ab08be8693",
+    "DELIVERY-QA.json": "b6ef209ff9e28b06fe525eae1ff7d32504e4ed40b6448da723cb7a8a9d6b05b3"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "1802725364951edc531b4eb4ca3624aa731d8f82c649c21bd30602b089119376",
+    "ORIGINAL-RETENTION-QA.json": "914777794e058afd6eb0307a05ab92cd7b50cd3a54f86866f48290f5a8ce3654",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0341.json": "173befdf4d390c4a7da20a9fa25df7ba13791701e7bec1f69a97324764b142a9",
+    "INDEPENDENT-IDENTITY-0341.json": "94f1257c02af8c5ce7db2a68ebae95ef7e006b64300d7e4dd3aff8a4a39729b1"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T03:44:03Z",
+  "parent_review": "Parent personally viewed official front and only lower Teachers College association composite, original roof functions, preview and final ten montage. Two complete original forward upper roof slopes2+2 nominal gray metal. Infiniteplanes equal allvertex finite original endpoint/fullx domains; slab and tower Boolean truncations retained, no filling. Tower shelter mapping insufficient, all rear/trim/mixed walls/glass neutral. Seven whole views fit and three intentional details. Original3626 triangles/noOBJ unchanged; connected principal teaching group not entire college, partial not2026 survey."
+}

@@ -1,0 +1,90 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:7wholemodel views framed and3intentional details;only two complete front roofslopes mediumlight metalgray.",
+    "Rear slopes,eaves,gables andmixedwalls neutral;Boolean roofintersection retains all4 shortrooftriangles.",
+    "Original connectedteachinggroup notdetachedDbuilding; no redtilematerial or geometrychange."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 3044,
+  "material_face_counts": [
+    6,
+    3038
+  ],
+  "connected_coplanar_domains": 753,
+  "original_obj_present": false,
+  "original_files_retained": 15,
+  "file_sha256": {
+    "README.md": "6187d92da041042d3964706939456e807caaccdd6f23c53ee9c2a713311ea058",
+    "README.zh-TW.md": "6187d92da041042d3964706939456e807caaccdd6f23c53ee9c2a713311ea058",
+    "model.stl": "41a0a7cb66486d913c6dea1bfb00b334bae33dfde48ea7f8a082e81af68a5206",
+    "build_model.py": "14c5828be093541a70a524a9dbab61e5cef68ce1afa9ca9fee4f00430cc1075d",
+    "colorize_model.py": "56e985f42f7cb0ddc9bb052cce99cd4c5d0102fd0932f9c5759fa6db9845b293",
+    "render_color.py": "fa32eae9c0881cc1eb284137f86b621a79792fc152b89156e6674024bf6d9fba",
+    "verify_color_scene.py": "68d541a0fc0a56b08a265914494ab1620741786944aa4936c3e7470ad17880d3",
+    "validate_color.py": "6d337d1c1d8e8f1d17fc2e00e3cec61a3356c6678eaaaf5e24907e371e871cc2",
+    "color-mesh.npz": "63cb0154dd6423d902b5e2832394347627e4803428ffe3598a0f098e86427844",
+    "palette.json": "a3fc2afcba768876265b33d6e831c03fd67e660236241d61f4290cb379cbde53",
+    "appearance-materials.json": "8a7a335224a9d328e19d8759325d0c58eda85c57282b83ff9f64933446f68edd",
+    "COLOR-SOURCE-REGISTER.json": "501c9349e8b830f389fb4795c4ad4234ff7da51459672cdba80bbde33b921a69",
+    "appearance.3mf": "13e6ee4ee334142b2692c81f5b931a26e2a8332ea5c431f348dcac18bc24ba5a",
+    "scene.blend": "f90fccc66c545abb74ba20c92dafdca8d0f2bb84e12d4a1438eb916788d8ecab",
+    "preview.png": "2d9e8efa06a7cfe71fe77367e5dbf4cf609e6c3e526fa8f802e440d833e6388c",
+    "rear.png": "b9114bc2f9b5318c9a35a6fa2bf393af1ae196041b4bf469eb3d38e6c83aaa7e",
+    "front.png": "a4259c45992a0ad154428a1d6fb453ed283bf4e6b50ce7f8010e740a71063412",
+    "back.png": "81af687e5909f6266e2b19a3d2fdd1c8879d8a9b0dfa132cf97d7298433919f7",
+    "west.png": "ee929a3eb18710e664a49828da253336af3e77d4dbe99f672940d82cad0b6618",
+    "east.png": "5a4372ddeb15dc73f3f5619cd8b868d98459372f5646b689be7a4819dc663ead",
+    "top.png": "70b3e2bbacb97a1e5285468797efe8fe90867e29a29a491b04ac3d53e4ed112b",
+    "entry-detail.png": "ba2cd71cd29fcca0a5c6fbacf7093bdbddee299195a339bdd383922c1f4d443e",
+    "facade-detail.png": "3a38bab3e35f8368b537709bda409ef403c945ca6b1c00a949151e237aaad5b0",
+    "roof-detail.png": "cc6de3388b746492405a17472b46871acce6b695724609eb15bb8813226c49fb"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "c07fcdcdf02547a0ca9ba6597a07844a81598509e1efc0ac103c2b396f9069e9",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "f972326e8fd682d32c7b83b09191b32ab8446e8b1353656ca245c89ffde342d6",
+    "SCENE-QA.json": "7ac1c680fc7870503e4a5637f0f834247c40bc1591a803ce8c1cb2de3304bbd0",
+    "FRAMING-QA.json": "707c347432d72d1505e4cbe95289f5ceb838152f059688b8c810fd45f14154a8",
+    "DELIVERY-QA.json": "3ff1e87a9b74a36cbd7c5787821c464820050c63862bc441d05115accac0463f"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "5b97fd946ecf75f3f051bf55f0d17a5606f6cff5bc75072daea57207dc66f1df",
+    "ORIGINAL-RETENTION-QA.json": "814ffef994f45d6666dde39197f74c3ca3305633b0d29509bd9cc34e31897056",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "9bf7354c1fd4b834cd845e26ee0fdf8b88c4d93ad863374ddbf71eab885925e0",
+    "TASK-TEXT-COLOR-CORRECTION.json": "3c638b3481cfea54e83eb0361a027e82f227ecd501cb143aa6720252c6dfa6ff",
+    "INDEPENDENT-DOMAIN-0321.json": "58693588ccb0e1b3408db8ce91cda74e93a62bbd3a038bfdbe68c9430f4533a4",
+    "INDEPENDENT-IDENTITY-0321.json": "43e550ff9db3800b4b63bb4d65d742d29d98d78ae5fa2c3b5cc308be8a898959",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "857922f85beb7564fd5d21acd50b1cb8a31616443a23bc55ee0d66e37dd4d4e5"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "44ed412cdca04d85836efa600977507114366c5682e06332ad1f5573b9ea47ff"
+  },
+  "limitations": [
+    "6complete frontroof triangles:2+4,graymetal;3038neutral.",
+    "Connected mainteachinggroup excludesDbuilding.",
+    "Captureunknown;publication/modification notcapture.",
+    "No originalOBJ/no testprint."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T03:23:34Z",
+  "parent_review": "Parent personally viewed both official obliques, original gable code, preview and final ten-image montage. Only two complete forward roofslopes2+4 triangles nominal gray metal, not redtile. Original finiteallvertex plane/tangent/fullx equals infiniteplane independently verified. Rear slopes, fascia and mixedpinkcreamgraywalls neutral. Sevenwhole views fit and three intentional details. Mainconnected group excludesD and not current2026/fullcolor. Parent initial redtile tasktext typo independently caught and corrected before any incorrect material render; history retained, formalGO always gray.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "Zhiben Jinsin Academy Main partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "Zhiben Jinsin Academy Main partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}

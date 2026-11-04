@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed complete central fin front nominal green",
+      "hex": "#6F9E84",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixedwalls windows lettering neutral",
+      "hex": "#B8BAB5",
+      "faces": 1732
+    }
+  ],
+  "domains": {
+    "one_complete_central_fin_front": 2,
+    "per_rectangle": [
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 489
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1734 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "One complete centralfin frontrectangle2triangles,nominalgreen.",
+    "All3vertices originalfiniteplane; entire infiniteplane equalsfinite rectangle.",
+    "NaturalBoolean survivingz28.6..116,not artificialmaterialcut.",
+    "Horizontal sills differfromphoto extent;entireplane neutral.",
+    "Central facadegroup plus narrow wingstrips,notwholebuilding.",
+    "Captureunknown;2024AC notnewgeometry or2026proof.",
+    "Two labels not verifiedfilament slicing."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed two front low cap upper skins terracotta",
+      "hex": "#A47565",
+      "faces": 16
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main roofs walls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 4410
+    }
+  ],
+  "domains": {
+    "two_complete_front_low_cap_upper_skins": 16,
+    "per_rectangle": [
+      8,
+      8
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 1098
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "4426 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "Two complete front low cap upper skins8+8Boolean triangles; muted terracotta tilefamily.",
+    "All3vertices finite tangent andfull extrusion; entire infiniteplane equals union ofboth finite components.",
+    "OriginalBoolean occlusion at y-50 not artificial clipping; notches retained.",
+    "Allthree mainroofs,walls,windows andothercaps neutral;diningexcluded.",
+    "Captureunknown;not2026condition.",
+    "Two labels not verifiedfilament slicing."
+  ]
+}

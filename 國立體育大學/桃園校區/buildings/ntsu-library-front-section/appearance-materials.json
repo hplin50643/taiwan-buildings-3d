@@ -1,0 +1,39 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed four complete front fascia bands nominal red",
+      "hex": "#A53D40",
+      "faces": 8
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED stripedpier windows walls neutral",
+      "hex": "#B8BAB5",
+      "faces": 3468
+    }
+  ],
+  "domains": {
+    "four_complete_front_fascia_bands": 8,
+    "per_rectangle": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 919
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3476 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "Four complete original fasciafront rectangles2triangles each;8total.",
+    "All3vertices finiteplanes; entire infiniteplane equalsunion offour finite rectangles.",
+    "Originalleft stonepier Boolean occlusion retained,not arbitrarymaterialcut.",
+    "Stripedpier,windows,stairproxies,roofsides andallothers neutral.",
+    "Librarymuseum frontsection only,notwholebuilding.",
+    "Captureunknown;nightorange notmaterialcolor.",
+    "Two labels not verifiedfilament slicing."
+  ]
+}

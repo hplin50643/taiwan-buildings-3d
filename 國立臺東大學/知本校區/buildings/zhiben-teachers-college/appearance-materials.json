@@ -1,0 +1,39 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed complete front roof slopes nominal gray metal",
+      "hex": "#727B80",
+      "faces": 4
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 3622
+    }
+  ],
+  "domain_face_indices": {
+    "left_front": [
+      461,
+      462
+    ],
+    "right_front": [
+      743,
+      744
+    ]
+  },
+  "coplanar_components": 933,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3626 original triangles unchanged",
+  "limits": [
+    "All main rear slopes and rear perpendicular wing roofs, not transferred from repeated roof function.",
+    "Asymmetric tower cap, its solid side/thickness and other flat top pieces; actual shelter and model simplified mass are not proven identical material domains.",
+    "All roof fascia, gables, undersides and thickness edges: white trim is not the gray upper roof skin.",
+    "Main walls and piers, facade/window backs, lettering areas and stair tower: white, dark panels/glazing, red accent strips and gold text remain mixed or incompletely delimited.",
+    "Stairs, base, hidden and rear surfaces remain neutral.",
+    "Principal photographed connected teaching block only, not all Teachers College courtyard wings; no material borrowed from Jinsin Academy or the upper engineering photo.",
+    "Capture dates unverified; no 2026 current-condition claim."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "國立臺東大學/知本校區/buildings/zhiben-jinsin-academy-main",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "Zhiben Jinsin Academy Main partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "adea1231267f10f30de08963d97a326dd582b079fb95ed0859c710c6936c84c7",
+  "new_3mf_sha256": "13e6ee4ee334142b2692c81f5b931a26e2a8332ea5c431f348dcac18bc24ba5a",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "ee4c7b0250b7e7ea5bf516d492de54e92e788327c843af8f668c52f961512878",
+    "validate_color.py": "6d337d1c1d8e8f1d17fc2e00e3cec61a3356c6678eaaaf5e24907e371e871cc2",
+    "render_color.py": "fa32eae9c0881cc1eb284137f86b621a79792fc152b89156e6674024bf6d9fba",
+    "verify_color_scene.py": "68d541a0fc0a56b08a265914494ab1620741786944aa4936c3e7470ad17880d3",
+    "scene.blend": "f90fccc66c545abb74ba20c92dafdca8d0f2bb84e12d4a1438eb916788d8ecab",
+    "appearance.3mf": "13e6ee4ee334142b2692c81f5b931a26e2a8332ea5c431f348dcac18bc24ba5a",
+    "README.md": "6187d92da041042d3964706939456e807caaccdd6f23c53ee9c2a713311ea058",
+    "README.zh-TW.md": "6187d92da041042d3964706939456e807caaccdd6f23c53ee9c2a713311ea058"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "Zhiben Jinsin Academy Main partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "69f924ee1cdc401e2ee60ed0603c61f54bbc975dd40900b45550cfeb3f025dee",
+    "scene_reopened": true,
+    "scene_sha256": "f90fccc66c545abb74ba20c92dafdca8d0f2bb84e12d4a1438eb916788d8ecab"
+  }
+}
