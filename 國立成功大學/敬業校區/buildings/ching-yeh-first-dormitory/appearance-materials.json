@@ -1,0 +1,30 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed upper balcony slab outward fascias gray",
+      "hex": "#AAA9A2",
+      "faces": 80
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED walls windows balconyupstands roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 5816
+    }
+  ],
+  "domains": {
+    "upper_balcony_slab_fronts": 80,
+    "whole_coplanar_withdrawals": 0
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "5896 original triangles unchanged; no cuts or addedgeometry",
+  "limitations": [
+    "Only ten uppertiers of four original slabfrontfascias.",
+    "Lowest three tiers vegetationobscured and neutral.",
+    "Upstands,windowbacks,mixed walls,rooftops,slabsides all neutral.",
+    "2024 albumpublication not capturedate.",
+    "Two material labels not tested filament slicing."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T22:49:56.707381+00:00",
+  "actual_sources_viewed": [
+    "foundation-photo.jpg"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "findings": [
+    "8 actual roofbox front faces offwhite;2true canopyfrontfascia palegray;1368neutral.",
+    "390whole connected coplanar domains uniform,no arbitrary mixed-domain triangles.",
+    "Fullheight whiteupper/graystonebase mixed walls neutral,all windows/rooftops/entrybody/sidesunknown neutral.",
+    "1378 original triangles,STL/build bytes unchanged;nooriginalOBJ present and none claimed.",
+    "16immutable original files independently GitSHA/SHA256 verified;full originalbuild+color isolatedrebuild and3MF/reopen/delivery PASS.",
+    "48sample tenviews personally reviewed;roofbox andcanopy detail frames clear.",
+    "Foundation page reports2015dates,not authenticatedcapture dates;partial not fullcolor,three labels not tested filament slicing.",
+    "Parent personally viewed foundation photo/code, preview and final ten-view montage; roofbox front and canopy front fascia only, mixed white/gray fullheight skin remains neutral."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "03bce0dec226df9856108a811a3661447db5f0b3aa328db12a76384d3c70221c",
+    "README.zh-TW.md": "03bce0dec226df9856108a811a3661447db5f0b3aa328db12a76384d3c70221c",
+    "model.stl": "d8f0539a785192bc10a8c346b59869c6be984a6e95d54d0cfe144a99bfe1ac52",
+    "build_model.py": "1bf2ba312081806883049eb61052f6526e38cf75b86918bf69dc97c50072eaa1",
+    "colorize_model.py": "273ac9bd2c70b411af6b60c36cd58c7784c11af4c1067a5f1394b220e20f4c43",
+    "render_color.py": "4c8b859a5b191d9a11e602189e11b0d6044a6d53642a2df25f6496e1c5afc6ae",
+    "color-mesh.npz": "067dcac35c5acbfcf95d85e780b29f8e4c7f6fba71526331faa6328a33553693",
+    "palette.json": "f3d7d5196a9baebd45fec85ef9788fca9217c1864128795076950e7a70da56b7",
+    "appearance-materials.json": "6b28651d435329a445bc9ae5e924f80642429638d6c0b8f2ed90d4730e70f77b",
+    "COLOR-SOURCE-REGISTER.json": "5e30eb3217b12f45c6b9c75cc024d6137837f31c42a861dc16358549571006b4",
+    "appearance.3mf": "89e48c7f2abbf757eda0e27174cf16f766af1f84de85dc7c4c1702e447d689b5",
+    "scene.blend": "598958fa9c5850c02c43c9cd1e15132b39216747ad88f1317c01efa08e669401",
+    "preview.png": "c45c8a490e1d73958c41943fdc719993333e6d0ba2ff1048ae6ec711b8b4fa40",
+    "rear.png": "df376998e2c80835d3030ea1d9b5ce5be8c031cf7eb12f7e7be3b776f7d9204e",
+    "front.png": "f48f8b1b663a3a094877b9c99058b1d49313c98c2f84ee7d506fe3113fecb743",
+    "back.png": "12c99492923aca965b09a0346783b663d6d4ed0e889c157d1e24f2ddd45db4a9",
+    "west.png": "cc12f3df92eb33145bac539e7bdeaf82dca77ebb4b4b7a105d58c90d581f3d23",
+    "east.png": "a3b279edaf51a22f21d03279930dfa81074744cc9714a21d2ff7da57c198d6ff",
+    "top.png": "24ff8ee10d6d7f20c0e644e0e0d018a765ab3a337df9ddfdac0bbf8165aa60e7",
+    "entry-detail.png": "efb04b02eb3caa6953b24a6108bd3e920dc04bd6082885c0a1c97645b41541da",
+    "facade-detail.png": "03392d32ce125efc796ccdb82997f4b683a101ce4c90a9b8c95b142de5ea8a61",
+    "roof-detail.png": "648534757827160eeb8693c1fc15fd69ea2553707a4ce23750265c681df0d897"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "3b278f52d2a976c4e0acfdbc58067aa7b96c97007798133043a71efd091b4d99",
+    "SCENE-QA.json": "a22e2b8dd4f0f532b504abcfb18f2747e41056d92d0deff3c5d12f381434a1f8",
+    "FRAMING-QA.json": "e705283565985f9dbbf40a971612a212a6a72f08a622d361a0a49d29cc23e646",
+    "DELIVERY-QA.json": "0de09b66eef2055b9aa3798f14ad8041431f9cecd3e5639301a53501d0ce13f8"
+  },
+  "local_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "09bfec3e4621d98c1597c88d3a20962857f3fa7fe3dfb81e5b95d21ea02dafe5",
+    "ORIGINAL-RETENTION-QA.json": "498c16a28e990b91aed519e38761b017e965faec925a771f95ed8dc1bb5ca16e",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "287d2a5d7243e3a629f627967008d6409441e28c263e576b99b9923d8982fec0",
+    "ORIGINAL-PACKAGE-READBACK.json": "83f24e287f9ae4defe803e081ef95affb275e27f07b90f338a5f517f007b41dc"
+  },
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2245.json": "7f889771c496be1c73988cab3efe5f6d2784364fc774b15ea7ab40fa0fc18b85",
+    "INDEPENDENT-DOMAIN-2245.json": "0912731c3607bba5a0a8e6364ef5a3d65fdbf322c06f49684c2cfba4c202edcc"
+  }
+}

@@ -1,62 +1,36 @@
-# 國立清華大學｜化工館
+# 清華化工館｜整修前舊照橫帶局部補色
 
-## 模型預覽
+**局部補色未完成：只前／右獨立橫帶淺色；粉牆、玻璃與其餘未知面未完成。整修前舊公開照片外觀近似，非2026整修後現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項目`nthu-chemical-engineering`／`count_delta=0`，不新增套數、不表示整修工程完工。化工館不是化學館。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![前橫帶](entry-detail.png) | ![右橫帶](facade-detail.png) |
+| ![未完成屋面](roof-detail.png) | | |
 
-第三批公開外觀近似模型，並非測繪成果。每件獨立比例，150.00 × 118.00 × 92.00mm，最長150mm含底座。全校尚未完成。
+## 材色範圍
 
-## 來源與觀察
-[官方建築導覽](https://attractions.site.nthu.edu.tw/p/406-1515-187011,r8697.php?Lang=zh-tw)；2026-10-13檢視來源實際像素。
+僅16個前橫帶真正外表面（y=-29.55、兩翼x[-56,-24]/[24,56]）與8個右橫帶真正外表面（x=56.55、y[-29,39]），高程z15/26/37/48/59/70/81/87、厚.9。逐原構件完整矩形面積驗證，前34＋右16原三角為暖灰白，其餘2874面未知中性，**不是實景灰色證明**。全部837共面連通域一致，不用剪裁大三角假造材界。
 
-已實看官方正面與正右側外觀照片。可辨識中央上方微尖山牆、凸出中央塊、貫穿中央細脊、下方有柱式山牆門廊、樓層水平線。模型以實際前後深度表現兩組山牆及門廊。
+粉色主壁包含未有幾何界的白直帶，不整牆粉色；上山牆白帽混域、入口山牆粉白框混域、全高中央spine近頂深孔無獨立界，全部中性。圓柱柱基柱帽、原簡化階梯磚白帶、窗背玻璃框簾反光亦不一色推定。橫帶頂側底、後左屋面與基座未知中性。前後材色範圍只資料覆蓋，不是真實材料接縫。
 
-來源照片僅列連結，不放入成果、不重新發布：
-- https://attractions.site.nthu.edu.tw/var/file/515/1515/pictures/400/m/mczh-tw700x700_large38204_476810677262.jpg
-- https://attractions.site.nthu.edu.tw/var/file/515/1515/pictures/400/m/mczh-tw700x700_large38205_941567177262.jpg
+原2924三角、坐標尺寸、STL／OBJ／build字節保留，不新增切面或幾何。既有近似幾何不由材色審核追認，不能聲稱現況精測或全色完成。
 
-## 近似與缺口
-建築深度、側面開間、窗位置與階數為照片估計；高植栽遮擋部分不虛構細節。後面／左側未見完整照片，素面包絡。門口雕塑、玻璃、欄杆及字牌省略。
+## 來源、年代與權利
 
-僅公開訪客可見外觀，無室內、地下、敏感設備或安全配置。未下載、擷取或反編譯官方Unity或任何原始3D模型。官方3D場景沒有逐面檢視，不能視為未見部位已獲證實。
+清華官方公開正面與斜側實照僅作色族參考，原照拍攝日期未確定；1993建成年份不是拍攝日。來源URL及SHA見`COLOR-SOURCE-REGISTER.json`。必保留原補充`chemical-engineering-era-clarification.zh-TW.md`：**整修前舊公開照片外觀近似，非2026整修後現況**；2026公告記施工中，不能由預定日期推完工。本次不改原版本/原幾何。
 
-## 檔案
-- `build_model.py`：可攜參數化來源。
-- `model.stl` / `model.obj`：單一連通、封閉實體，單位mm；不預挖內腔。
-- `scene.blend`：實際STL的可編輯三角網格與相機，不是BIM或保留布林歷史的場景。
-- `previews/front.png`、`rear.png`、`elevation.png`：實際STL預覽，已看像素。正背為顯示方向，不是實測方位。
-- `validation.json`：原檔法線、邊與頂點流形、正體積、單一表面、重建及Blend/STL一致等18項通過。
-- `check_layers.py` / `layer-check.json`：0.2mm幾何截面與0.8mm XY薄特徵篩查。
+原照私存、不隨模型公開或作貼圖；未見CC不得沿repo license宣稱照片自由商用；HEX是展示近似非色票，未保證商業授權。
 
-## 列印起點與支撐
-底座向下，保持150mm尺寸。可從0.4mm噴嘴、0.2mm層高、3道外牆、15–20%填充起始，但不是測試完成的參數。
+## 檔案、重建及 QA
 
-突出上部前塊及柱廊檐下請評估局部支撐；門廊柱直徑3mm，與底座/檐融合。
+`appearance.3mf`含2展示材，`scene.blend`有實際面材，`color-mesh.npz`保原三角與material index。原STL無色、原OBJ及build字節保留。原單色README另存`ORIGINAL-MONOCHROME-README.zh-TW.md`（及原包有的README），舊previews與QA是歷程不是本次新審。
 
-薄特徵：唯一警戒在z=91.90001mm的山牆尖頂截面，尖角最後0.1mm的小區域窄於0.8mm；下方為連續厚山牆，不是薄壁。切片器可能省略/鈍化尖端，需檢查最後一層，不能保證尖角完整。
+依`requirements.txt`執行`python colorize_model.py`、`python export_appearance.py`、`python validate_color.py`；Blender跑`render_color.py`與`verify_color_scene.py`。原build+color全隔離重建目錄保留不刪。格式/三角multiset/封閉正體積見`COLOR-*QA.json`，重開`SCENE-QA.json`，10張1200×900圖與hash綁定`DELIVERY-QA.json`，父另人工終審。
 
-## 驗證範圍
-18項網格驗證通過；原始STL法線與繞向相符，所有邊連接兩面、頂點環流形、單一連通表面且沒有分離內腔殼，正體積、z=0底面與150mm最大尺寸通過。乾淨暫存目錄重建STL的SHA-256相符，Blender幾何與STL一致；驗證不自動修原檔。
+**未實際列印。** 2材展示不是已驗四色切片工程；支撐/薄部強度/材料映射另驗。
 
-0.2mm間距共460個抽樣高度，所有輪廓閉合。端點數值聚合容差0.0001mm；首層0.100013mm以避共面。0.8mm XY形態開運算標示1層超過0.2mm²警戒，最大差異面積4.77078mm²，含義見薄特徵說明。
+## English limitations
 
-**未正式切片、未生成G-code、未實體試印。** 抽樣幾何截面不等於刀路、擠出、支撐或橋接驗證，亦不能證明全面三維壁厚或自相交完全不存在。
-
-## 重建
-Python 3.12與Blender 4.3.2+；所有程式從本檔目錄讀寫，不依賴製作端絕對路徑。
-
-```sh
-python -m pip install -r requirements.txt
-python build_model.py
-blender -b -t 2 -P render_preview.py
-python validate_model.py
-python check_layers.py
-```
-
-
-## 發布補充
-請併讀[本輪版本與範圍](../../../audits/amendments/round-status-20261013.zh-TW.md)、[首批薄特徵警示與方法](../../../audits/amendments/layer-audit-20261013.zh-TW.md)及[化工館年代說明](../../../audits/amendments/chemical-engineering-era-clarification.zh-TW.md)。旺宏館保留原幾何；台達館及校友體育館採列印修正版，不重複計數。
-
-
+Partial reference color only: 24 complete original front/right trim surfaces, 50 triangles. All mixed pink walls, glazing, columns, steps and roof remain unverified neutral. Original2924 triangles and STL/OBJ/build bytes unchanged; no new geometry and count_delta0. Pre-renovation public-photo approximation, NOT the renovated2026 condition, NOT evidence of completed construction. Source capture dates unknown. Photographs private, no texture redistribution. Not physically test-printed; display materials are not a validated multicolor slicing job.

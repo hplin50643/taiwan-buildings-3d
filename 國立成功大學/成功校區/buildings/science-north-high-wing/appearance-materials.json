@@ -1,0 +1,99 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed whole tower metal horizontal front members dark gray green",
+      "hex": "#40544D",
+      "faces": 34
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED reflective glazing main walls roof rear neutral",
+      "hex": "#B8BAB5",
+      "faces": 6346
+    }
+  ],
+  "domain_face_indices": {
+    "whole_band_z18": [
+      5783,
+      5787
+    ],
+    "whole_band_z24": [
+      5808,
+      5815
+    ],
+    "whole_band_z30": [
+      5837,
+      5841
+    ],
+    "whole_band_z36": [
+      5859,
+      5867
+    ],
+    "whole_band_z42": [
+      5891,
+      5895
+    ],
+    "whole_band_z48": [
+      5911,
+      5939
+    ],
+    "whole_band_z54": [
+      5961,
+      5969
+    ],
+    "whole_band_z60": [
+      5997,
+      6010
+    ],
+    "whole_band_z66": [
+      6041,
+      6053
+    ],
+    "whole_band_z72": [
+      6078,
+      6103
+    ],
+    "whole_band_z78": [
+      6131,
+      6142
+    ],
+    "whole_band_z84": [
+      6175,
+      6183
+    ],
+    "whole_band_z90": [
+      6208,
+      6219
+    ],
+    "whole_band_z96": [
+      6246,
+      6248
+    ],
+    "whole_band_z102": [
+      6271,
+      6279
+    ],
+    "whole_band_z108": [
+      6302,
+      6305
+    ],
+    "whole_band_z114": [
+      6323,
+      6331
+    ]
+  },
+  "coplanar_components": 1794,
+  "whole_rectangle_count": 17,
+  "coplanar_neutralized_faces": [],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "6380 original triangles unchanged",
+  "limits": [
+    "17 complete original rectangular metal fronts z18..114 every6; each area18.4.",
+    "Original bottom6/12 and top120 members neutral; all reveals neutral.",
+    "Whole connected coplanar domains uniform.",
+    "Reflective glass and visible stair rails do not establish one blue/green surface.",
+    "Main wall, underlying tower plane, broad residual strips, side/rear/roof neutral."
+  ]
+}

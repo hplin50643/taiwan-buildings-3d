@@ -1,0 +1,66 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "manual_review": "Personally viewed four official exterior photos, original code, preview and final tenview montage. Connected offcenter vertical/upperhorizontal outward frame only offwhite; all windowgrids, mainwalls,tower,curvedwing,stairs,roof neutral. No false diagonal color boundaries; intersection coherent. Three details show actual entry, frameintersection and neutral roof.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "original_face_count": 6520,
+  "material_faces": {
+    "offwhite": 10,
+    "neutral": 6510
+  },
+  "connected_coplanar_domains": 2083,
+  "original_OBJ_preserved": true,
+  "file_sha256": {
+    "README.md": "c24dbccd61a68c10906d9134179749f48b764f0315373e35a16f85f7c4abb07b",
+    "README.zh-TW.md": "c24dbccd61a68c10906d9134179749f48b764f0315373e35a16f85f7c4abb07b",
+    "model.stl": "7fb891cfc398172c7d835d08a2a84e71bd092dfa5d044135e4e0522d41949a11",
+    "model.obj": "d627f25b557db82ab4f0875d10abdeb7d2c0e87613df339bfa853a689fb33538",
+    "build_model.py": "96a0da95a2f41ce579a74912ab8e6156647c87e3719cbf8f5fd6e8835b40d518",
+    "colorize_model.py": "ffa8f4681b79ea15b86fda97cef228a80371aa5b3c3e71a0dd90d46fa1656703",
+    "render_color.py": "94fb2ffcda1bba59651697c184c53f5cfe5d0b6ca83c34e6520c00c7c681feeb",
+    "color-mesh.npz": "5645c05bb521c32146e516d1f187110732a9202a594d253f3314d379fbd64c8a",
+    "palette.json": "2434a5f7150ecbd4143f7a2dafe31bc90cbda13c735ed94b793ba6d8ad071a7c",
+    "appearance-materials.json": "0d6e94efed591b80578ad5717b5031da1cc5dba6b4e7a4cc7d5e1fd415861a31",
+    "COLOR-SOURCE-REGISTER.json": "01c252a0e6174149ceef791495b1a422741b7dbf415895b868d14e3ba797a0dc",
+    "appearance.3mf": "296c2d0529096f7cd274413a96e55a45dffd40cd6a939ef90b4c5a2d164b3172",
+    "scene.blend": "9eccab561e364c19904fa0bd1760d04e525ae683a6e2c4fa25f64d90f1ab5fff",
+    "preview.png": "b9a4edb106526707974606e4e48ddf702e09900eaf1f3b3dbc40a37fa07e0f11",
+    "rear.png": "e07a23c0b22882f860184964f85423803df0c0853be32ca0015b3966a46f6011",
+    "front.png": "7bcd0f18bb61cc9924ab238aadfb892339194a01185fc29212fddc17ae78db50",
+    "back.png": "2009cb45bea23113eb9693d792932e1480e4caed698bcdc7bb8bfbe338b533f4",
+    "west.png": "d7b7070de0514851e772815173f3cef667049a907c6d6a96d3aa41170d112322",
+    "east.png": "488695ac2c8de747e2e761197fa3f5c9e40a2078e0b5a15f126b42b53f07713f",
+    "top.png": "50484f3ae68dfe88e323ff660c0edc59336f50973cf6aeaec6bcbae46be536ea",
+    "entry-detail.png": "f16331e5a50b6beaa665a1be0d985a4144d71dcce66691546f62087327dabb1a",
+    "facade-detail.png": "b9ff851ad6e273ac2f1757694e1cec2aa621450aa92da27a79f3329a0b951bb0",
+    "roof-detail.png": "508f314381ab8e478b78d64ce61f85b1a4ab8d17fd55eefc504551b1319aac78"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "aba7fc186726b2f96f8d48791cfa7f56d78e7ff07a66a55e6976a2a0a31370f4",
+    "COLOR-ASSIGNMENT-QA.json": "7e08e363ee8df1bcfc83d9df6a6a621ff1d85457cfa80395e817bae655f73183",
+    "SCENE-QA.json": "1ff6fe9c65f44575079e0f4cb534588a5ded0407aa97f6b6564eb0870c397f27",
+    "FRAMING-QA.json": "5793942cafc96891a7d21ad3def00bffa02c508e109ed2ebfa45f23656936ee7",
+    "DELIVERY-QA.json": "98973aff0587060576f5752ff18d28070bbfcc5479bfd86bf51b82e5601ac74e"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "4fa1f140cd69efa5a2041733535c5f6f91494e3eb4b17d2241884cbcc001194d",
+    "ORIGINAL-RETENTION-QA.json": "adc7e588e6c8d343577c1dea8f14a5a3a2d5258f2575b167e9efb7f58163ef01",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "2e0d4a8b7bb88cffac27f447aebfe50b82948cb24a41103a7e8d5cbdb568a4bf",
+    "ORIGINAL-PACKAGE-READBACK.json": "ed90b86726451d04336ed9bd47f0e63245d44cb1f6e35199b04a8e6222d96eaa"
+  },
+  "montage": "private-review/final-v1-ten-view-montage.jpg",
+  "limitations": [
+    "Photo capturedateunknown;not ChemicalEngineering renovation era",
+    "Original coarsegeometry not revalidated bycolor",
+    "Only10framefaces not fullcolor",
+    "No physicalprint or verified4filament slicing"
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at": "2026-11-02T23:08:46.773519+00:00",
+  "review_scope": "Parent personally viewed official front and oblique exterior photographs, original code, preview and final ten-view montage; independently recomputed unchanged triangle identity and complete projecting frame union area.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2306.json": "b44af30665bb18a846af37d4a57575ed69256ec977afbc18b6e37f44fe66b248",
+    "INDEPENDENT-DOMAIN-2306.json": "807200482dc12064fe64ede0aaab55f31116a72cf8f3c9999acfa98610ffecfb"
+  }
+}

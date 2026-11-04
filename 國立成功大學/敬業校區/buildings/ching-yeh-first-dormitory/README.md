@@ -1,66 +1,31 @@
-# 國立成功大學｜敬業第一宿舍
+# 成大敬一舍｜上部陽臺板緣局部灰色
 
-## 模型預覽
+**欄代實板、窗背、混材主牆與屋頂未完成分色。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。只在上部可證的原陽臺板前緣補灰，不是整棟全色完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![入口與下層](entry-detail.png)|![上部板緣](facade-detail.png)|
+|![屋部](roof-detail.png)|||
 
-第八批；敬業校區。尺寸 150 × 122 × 143 mm，含底座最長邊150 mm，每件比例獨立。
+## 材色範圍
+同 `ching-yeh-first-dormitory` 原項目，same-item、count_delta=0。**原5896三角面、STL與build_model.py字節不變**；不切面／新孔／新增幾何。原公開包沒有OBJ，不聲稱保留未存在原件。
+- 原模型十個上部tier zz43..133、四列x−49/−29/29/49的板緣外向面 y−49.5，40完整矩形／80原三角面灰色。
+- 原最低三tier zz13/23/33因樹遮維持中性；欄杆的粗化實板y−49.35不是板緣，不染灰冒充已核。
+- 其餘5816面中性：混磚／基座大牆、窗背的框玻璃簾與反光、屋頂與中央屋凸、側後、各板上／下／側面、入口與地面柱。
+- 連通共面域同色，0候選撤色，無假斜楔。色／中性界是證據範圍與原拓撲限制，不是真實材接縫。
+- 原13-tier近似保持，不宣稱每層精測或用補色追認原幾何。
 
+## 來源／日期與權利
+成大宿舍官方相簿物理第10頁外觀照片；2024相簿版本／出版背景不是已驗拍攝年。只採外部影像，不用室內資料。影像中遮蔽下層不延推。
+原照私有保存，不公開／貼圖；未確認CC／再散布授權，不保證商用。HEX只近似灰色族，非校準色票、精確現況或全年代復原。
 
-## 公開來源與像素檢視
+## 格式與列印
+[原STL](model.stl) · [材色3MF](appearance.3mf) · [Blender](scene.blend) · [原說明](ORIGINAL-MONOCHROME-README.md)
+150×122mm照片近似展示底座，非精測比例。STL不含色；3MF與Blender真逐面材質。兩材質標籤不是已驗證兩色／四色耗材切片；**未實際列印**，無切片路徑。
 
-- [校方GIS：正面](https://db.nckumap.ncku.edu.tw/nckugis/public/uploadfiles.htm?action=listImg&q=36500)：已檢視正面全高像素：兩側雙列陽臺、中央較高核心與狹縫。
-- [校方GIS：轉角](https://db.nckumap.ncku.edu.tw/nckugis/public/uploadfiles.htm?action=listImg&q=36499)：已檢視側面量體後退、少量側窗與突出陽臺。
-- [校方2024宿舍照片集](https://housing-osa.ncku.edu.tw/var/file/52/1052/img/141/NCKUStudentDormitoryPhotoAlbum-20240717.pdf)：只使用頁10外觀照片，交叉核對單棟名稱與正面；未使用寢室照片或配置。
-- [校方公開GIS建物範圍圖](https://nckumap.ncku.edu.tw/map.php)：建物識別F003，只參考外框圖層gis_base；未使用樓層室內配置。
-- [2026/1/30校方財產清冊](https://prop-oga.ncku.edu.tw/var/file/59/1059/img/4743/218075103.pdf)：核對校區及校碼R4A-8-0。
-
-## 範圍與近似
-
-本件為校方GIS F003的敬業第一宿舍主體，不合併背景敬業其他宿舍。公開外框顯示前面較寬、背側較窄；保留中央高核心、兩側雙列突出陽臺、重複橫帶與側面後退。陽臺為有實體後牆的深淺凹槽，不復原寢室。陽臺列數與窗距依照片近似，細欄杆加粗，底層被樹遮擋部分簡化。背面沒有完整像素，保守重複淺窗；屋頂沒有俯拍，採簡單平面與核心高差，不加設備。2026新版宿舍照片集連結在web工具受安全檢查阻擋，未繞過，日期依此處已讀來源。
-
-## 交付與重建
-
-- `model.stl`：毫米單位，與底座合成的單一實體。最長邊為 150 mm（含底座）；各棟獨立縮放，不適合直接拼成等比例校園。
-- `build_model.py`：完整可攜參數化原始程式，無外部貼圖、私有路徑或參考照片依賴。
-- `scene.blend`：由交付 STL 匯入，只有一個建築網格，可在 Blender 編輯頂點；細部參數請修改 Python 後重建。
-- `previews/front.png`、`rear.png`、`elevation.png`：由實際交付 STL 產生。
-- `validate_model.py`、`validation.json`：可重跑的幾何與重建驗證。
-
-建議 Python 3.12，在虛擬環境執行：
-
-```sh
-python -m pip install -r requirements.txt
-python build_model.py
-blender -b -t 2 -P render_preview.py
-python validate_model.py
-```
-
-已使用 Blender 4.3.2。驗證器在獨立臨時目錄重建 STL 並比較 SHA-256，讀取 Blender 場景的網格後比較三角形幾何。它檢查原始二進位 STL 儲存法線、面積、封閉性、邊恰有兩面、頂點連結為單一環、表面只有一個連通分量、正體積、底面位於 Z=0、最長邊 150 mm。單一封閉表面也排除獨立藏在內部的空腔殼；沒有宣稱完成所有自交的窮舉檢測。
-
-## 製作原則與限制
-
-這是依公開照片觀察製作的外觀近似收藏模型，不是測繪、修復、工程或精確 BIM 資料。牆身為實體，門窗、拱廊通常改成淺凹浮雕；不含室內、設備或安全配置。屋頂、深度、窗距及後側比例沒有測量基準，不能視為實際尺寸。原始參考照片未收錄、未重新授權或隨套件發布。來源權利屬原作者／校方；原創模型與程式可沿用儲存庫授權，不涵蓋外部參考照片。
-
-## 列印說明
-
-底座平貼平台，Z 軸向上。可從 0.4 mm 噴嘴、0.16–0.20 mm 層高、3 道外牆與 12–18% 填充開始試切片；這是設定建議，並非已測參數。小於約 0.8 mm 的淺浮雕可能因噴嘴或縮放消失。STL 是封閉實體，切片器仍會依填充率產生內部填充。
-
-未實體試印、未執行切片器列印驗證，沒有保證免支撐。請依下列模型特有支撐需求檢查切片預覽。
-
-多層陽臺下方及狹凹上方有懸垂，可局部支撐；細欄杆已加粗，仍需避免粗暴拆支撐。
-
-## 逐層截面檢查
-
-`validate_sections.py` 以0.20 mm間距抽樣實際STL水平交線，檢查端點節點度數及零長線段；見 `cross_sections.json`。這不是切片器工具路徑或實體列印驗證。
-
-查核日期：2026-10-13。
-
-
-## 整合版截面與薄特徵補充驗證
-
-本整合版使用固定共同邊方向後插值的 `validate_sections.py` 與 [0.2 mm 截面結果](cross_sections.json)，避免同一邊浮點方向差異造成假斷環。原始 STL 幾何未修改。舊截面程式有閉合斷言，既有通過結果不代表曾有破面；此處以新版重跑結果為準。
-
-另提供 `check_thin.py` 與 [新增 0.8 mm 薄特徵輔助篩查](thin-feature-check.json)：每 1 mm 水平取樣，先確認輪廓閉合與有效，再作半徑 0.4 mm 形態開運算。這不是切片器、完整壁厚分析或實體試印，尖屋頂、銳角也會造成損失，不能據此宣稱無支撐或列印成功。執行前請安裝 requirements.txt。
+## 重建與 QA
+原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender執行 `render_color.py` 與 `verify_color_scene.py`。
+原字節／三角multiset、閉合正體積、3MF面材、完整隔離原build＋color重建、scene重開、十圖1200×900及圖文hash皆核，程序不取代來源人工判讀。
+原單色previews/render/validation保留歷程，不冒稱新QA，原檔沒有刪除。

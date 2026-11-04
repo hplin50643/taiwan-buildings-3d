@@ -1,0 +1,34 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed original sail layer0 opaque silveroffwhite",
+      "hex": "#D4D6CF",
+      "faces": 1300
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED innerback thickness braces canopy stairs neutral",
+      "hex": "#B8BAB5",
+      "faces": 4300
+    }
+  ],
+  "domains": {
+    "strict_layer0_facets": 1298,
+    "documented_boundary_exceptions": 2,
+    "outward_layer0_actual": 1300,
+    "excluded_step5377": true,
+    "whole_coplanar_withdrawals": 0
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "5600 original triangles unchanged; no perforations or new cuts",
+  "limitations": [
+    "Layer0 actual finite constructionfacets only, not analyticalsy proximity.",
+    "Two explicit originalBoolean edgeexceptions checked on facet156.",
+    "Inner layer1 andedge thickness neutral.",
+    "Canopy stripes,braces,stairs,body andwindows unverifiedneutral.",
+    "Source publication/path years not capture dates;not whole Haoyangbuilding.",
+    "Two material labels not tested filament slicing."
+  ]
+}
