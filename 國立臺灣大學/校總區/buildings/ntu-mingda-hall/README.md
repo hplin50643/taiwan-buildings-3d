@@ -1,3 +1,55 @@
+# 國立臺灣大學｜明達館：原幾何補彩色
+
+## 彩色模型預覽
+
+**同一項目材色更新（count_delta = 0）。前低基座與兩長側低層暖黃褐、原凸格柵灰；上層混合材色後退牆整面中性。不是全館精準材質重建，未證背面及水平屋面中性。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂面](top.png) | ![入口拱圈](entry-detail.png) | ![側格柵](corridor-detail.png) |
+| ![屋面](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+原 21884 三角面及全部頂點位置、原 STL／OBJ／建模碼 bytes 保持一致，不切面、不新增窗格、字、牆或貼圖。補彩不背書原近似幾何之尺寸與窗位。
+
+- 前低牆與山牆暖黃褐／赭磚，不是鮮紅。原已有凸拱圈、橫帶與可分齒飾灰；原無獨立山牆外框面，不新增畫條紋。
+- 兩長側下層有日景支持暖黃褐。原網格在 z31 有跨界三角，採首橫帶底的既有完整 z33 面界概化，使整面一致；不是實測31或33漆色分界，不切三角湊色。
+- 上層僅原凸直肋、橫帶、窗中短梃淺灰。後退牆照片包含褐色樓帶、灰金屬與窗等混合，無完整原面界可精分，因此整後退牆中性，不全磚、全玻璃或按重心產生斜楔。
+- 既有離散上窗凹底低飽和灰藍／暗灰；不聲稱每個凹口皆已證實玻璃形式。下層拱凹與圓飾凹底為陰影，未新建門窗。
+- 後端完整立面、水平大屋頂、未證屋面設備與低處遮蔽部分中性；中性不是真實漆色。只採本棟，不借照片圍牆、植栽或鄰樓材色。
+- 官方頁為2010年建築影像組，非每張EXIF拍攝日證明，不稱2026現況；色族未測色校準。
+
+## 格式、重建與QA
+
+原 `model.stl` 與 `model.obj` 不變；STL本身不含材色。`appearance.3mf` 五種基本材質逐三角指定，`scene.blend` 實際shader，`color-mesh.npz` 原幾何與面材質。五材質外觀不是已驗證四色／多耗材切片專案；未實際列印、未作切片器列印驗證。
+
+```sh
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 3 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+使用原 requirements 與 Blender 4.3.2。隔離重建保留，不自動刪除。新QA見 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、DELIVERY-QA、SOURCE-VISUAL-QA。七全景檢模型完整框界；三細景刻意裁切。原 validation、layer-check、source-model-comparison、previews、render_preview.py 及 README.zh-TW.md 保留為舊單色歷程，不當本次彩色重建入口，當前限制以此README優先。
+
+## 官方來源與權利
+
+- [臺大校園建築影像E區頁](https://homepage.ntu.edu.tw/~cpo/about_campus_archeitectureimage_E.html)
+- [官方斜視5986](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E71/IMG_5986.JPG)
+- [官方長側5989](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E71/IMG_5989.JPG)
+- [官方正面5987](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E71/IMG_5987.JPG)
+
+原照片與頁面僅私人研究保存，原圖不隨模型公開、不貼圖。官方公開不等於 CC，未見通用再授權，不以模型／程式license涵蓋原照，不保證商用權利已清。精確來源與對應限制見 COLOR-SOURCE-REGISTER.json。
+
+## 原單色模型說明與歷程
+
+下列原文保留，其舊場景／驗證入口以本次新說明優先。
+
 # 國立臺灣大學 明達館（電機四館）
 
 ## 模型預覽

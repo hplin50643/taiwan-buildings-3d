@@ -1,0 +1,113 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_2010_COLOR_SCOPE_LIMITS",
+  "reviewed_at_utc": "2026-11-02T17:01:00Z",
+  "review_scope": "Independent local source, code, numeric array and all ten actual render-image review; no modeling/output modification.",
+  "mesh_sha256": "6b9e226e980f7fa54ca0f952446543758473783f53be42b49cb2e48aec7f6822",
+  "build_code_sha256": "b3e89faa6e93a6ced0aad42a0e73eca96e95736820f271e9f5aed64a39e8ad62",
+  "color_code_sha256": "627287193461d278135195bb834f445aaa3aa88b3d1cfe91d232aa04930470d2",
+  "render_code_sha256": "0516151886aa3fa9a9fad2a941bce501e9de15a71d12656bcba30bbafb4f26a1",
+  "readme_sha256": "1df15ccaf29f25f986c04ff9ea9465a60d7473e34b98ec76493ac9cf34cbfb51",
+  "png_sha256": {
+    "preview.png": "a5eae8419f2d69013f117232e4928378e50c8ecc77204b75201d73eb248ffe19",
+    "rear.png": "9d85a8ceb15b3537b099b38485fde6e48496b92eaf8bfde5dafd36d4fcb85e27",
+    "front.png": "1265d8fe54fcb58ea4bc4eb4dc5f7d2346c8ed8978c5da9935d74efa659accb6",
+    "back.png": "cdfa58c4d643c96f7f6656bf0cc8b636f3abc0a94ee0ef4ed8de92537f2e0260",
+    "west.png": "b819ff6ef8a5f1701eaa18804b19dc126e2e441876e728cfbf9fa08e80c6e520",
+    "east.png": "63a9bc8024f25bcf4597322d0ddab6961527850190e7ed765f401a104c332019",
+    "top.png": "87221eeed1d1060e221deff40a7049fe645e148238a5b8baf1341c9225f83d54",
+    "entry-detail.png": "f50e1ae9c1c53a042f11b4dd849c6e2022d62c55f08c1e1dc7b508ec4625fb52",
+    "facade-detail.png": "26276f029a0af0b406fc6ca9e0c9a4b5b8733fab224475767e345888ba9e5c0b",
+    "roof-detail.png": "5a9b1f21ad07eba74564618add1d0eea5207c93828ec2bdf47f4cb4fd1657bfb"
+  },
+  "file_sha256": {
+    "model.stl": "a3f4ad6ddb02a5a0c65f2abb1f939102f3144b4d80e47d002ce8e303fd208f1b",
+    "model.obj": "130eec74f371bd1d6c69259aac8bf72f9f43d91f98f505d8a63e6df9d85b810f",
+    "build_model.py": "b3e89faa6e93a6ced0aad42a0e73eca96e95736820f271e9f5aed64a39e8ad62",
+    "colorize_model.py": "627287193461d278135195bb834f445aaa3aa88b3d1cfe91d232aa04930470d2",
+    "render_color.py": "0516151886aa3fa9a9fad2a941bce501e9de15a71d12656bcba30bbafb4f26a1",
+    "export_appearance.py": "161e9ce465abad30e37e0989209cb7dcb189d3218e23d7e18ea5b9c464d96fad",
+    "validate_color.py": "6eb68a0175b9aea8ecd337531c80afe763f85fdc41126642ce4a538851f84d45",
+    "verify_color_scene.py": "0fab5a1162a73942936a6dc88aacfd786adb7862a18d28b63de6e83c84d3e118",
+    "color-mesh.npz": "6b9e226e980f7fa54ca0f952446543758473783f53be42b49cb2e48aec7f6822",
+    "palette.json": "47d0d105344e1fc5408672ba693df7408a68fc20a0dc0a85d66a94d6b760deb2",
+    "appearance-materials.json": "3314630b52be3c5a34c83f49399fb9ebc6e400dc534260beb983302c3105a1c5",
+    "appearance.3mf": "10b45ed0d3912b6da0185bee9aecd784e87e348a8b35eb34d84bfbf368b42b06",
+    "scene.blend": "65294069f1d364ac9f03e8241096ded3342d473222cfdc8e9e46a375ee82d601",
+    "README.md": "1df15ccaf29f25f986c04ff9ea9465a60d7473e34b98ec76493ac9cf34cbfb51",
+    "README.zh-TW.md": "1df15ccaf29f25f986c04ff9ea9465a60d7473e34b98ec76493ac9cf34cbfb51",
+    "COLOR-SOURCE-REGISTER.json": "dbc81fd12fc170e38f1ece4e5bfba7183d082edc77e70581f6e7f222edda5b5b",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "6522384a5a07000d641a085eafb98d92a4032fd329cef616a98f9ce1cc38d898",
+    "SCENE-QA.json": "907dbd1ee2dba3bc6da4d0c169094eae93a029e10ac93d5564358f239d481485",
+    "DELIVERY-QA.json": "15f861cdb69660c721fb7643b300f4c29ae5a474c1abc1728494f013997aed19",
+    "FRAMING-QA.json": "58a25bc49ff7d9e647f229a205f969952d5255a486c1a40631f7dfb2a33d4430"
+  },
+  "source_sha256": {
+    "IMG_6026.JPG": "c127be73505beacad52502d3fb96aface160c66cd3d546ee300fa1dee32e77d4",
+    "IMG_6028.JPG": "4261d0c60f677d1fbb24675779c21244f248b1290cc960e4fe5ed2e28a5a2c19",
+    "IMG_6029.JPG": "09e03ef213e8770ff2157370da51a5e604c93d6f831f89805d342e5c08e5b9c1"
+  },
+  "source_review_sha256": {
+    "OFFICIAL-COLOR-SOURCE-PRELIMINARY-1525.json": "0e07422bfef4766a6f44bdd6c2a7dfb4a07f94eaec628a7b376b91d7d2326be5",
+    "LINZE-INDEPENDENT-FOCUSED-COLOR-REVIEW-1654.json": "ceb0316278bea4042d15367bd3968eea9ecd1dc767e5b38c324c747f6fd08ce6",
+    "NTU-LINZE-COLOR-SOURCE-GO-1655.json": "ba403fe4b79cb7d928dd59637f4c8eb81e4f9568c2ea100fcbad359ac551ff70",
+    "LINZE-VERSION-AND-PREVIEW-NOTE-1526.json": "d38d5b41d12b8f2be094201828670fed1026494eb36347e91d6a8fe3b1fe753a"
+  },
+  "independent_numeric_checks": {
+    "original_STL_OBJ_build_bytes_unchanged": true,
+    "original_processed_vertices_exact": true,
+    "original_processed_faces_exact": true,
+    "triangle_count": 4150,
+    "materials_used": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "material_face_counts": [
+      1413,
+      1718,
+      744,
+      4,
+      271
+    ],
+    "right_main_plane_neutral_faces": 18,
+    "back_main_plane_neutral_faces": 19,
+    "highest_horizontal_roof_neutral_faces": 2,
+    "3MF_units": "millimeter",
+    "3MF_faces_materials_exact": true,
+    "3MF_max_vertex_serialization_delta_mm": 4.632568550988481e-09
+  },
+  "visual_checks": {
+    "preview": "PASS full view; model and base complete, readable caption, no spurious diagonal color patch",
+    "rear": "PASS full view; model and base complete, readable caption, no spurious diagonal color patch",
+    "front": "PASS full view; model and base complete, readable caption, no spurious diagonal color patch",
+    "back": "PASS full view; model and base complete, readable caption, no spurious diagonal color patch",
+    "west": "PASS full view; model and base complete, readable caption, no spurious diagonal color patch",
+    "east": "PASS full view; model and base complete, readable caption, no spurious diagonal color patch",
+    "top": "PASS full view; model and base complete, readable caption, no spurious diagonal color patch",
+    "entry-detail": "PASS intentional detail crop; source-supported face colors and no spurious triangular color patch",
+    "facade-detail": "PASS intentional detail crop; source-supported face colors and no spurious triangular color patch",
+    "roof-detail": "PASS intentional detail crop; source-supported face colors and no spurious triangular color patch"
+  },
+  "findings": [
+    "2010 official front/left sources support brick fields and concrete bands; original coarse window topology retained rather than adding photo-like new divisions.",
+    "Existing window backs dark, tiny mullions gray; entry remains coarse gray without invented lettering or doors.",
+    "Right/back and horizontal roof remain neutral, not inferred from the front; visible front/left canopy vertical edge has restrained gray contrast.",
+    "Image 6029 low annex, bridge and pool excluded.",
+    "README and source register accurately disclose pre-renovation source period and unknown domains."
+  ],
+  "reported_QA_reviewed": [
+    "COLOR-FORMAT-GEOMETRY-QA.json PASS",
+    "SCENE-QA.json PASS including five actual shaders and saved camera",
+    "DELIVERY-QA.json PASS"
+  ],
+  "limitations": [
+    "Color-only upgrade does not validate original approximate dimensions, facade details or current appearance.",
+    "2010 source set precedes 2017–2018 facade renovation; no current-condition claim.",
+    "Five material labels are not a tested four-filament or multi-material slicer project; not physically printed.",
+    "Photos remain private and are not textures; official availability does not guarantee reuse rights."
+  ],
+  "no_output_modified": true,
+  "no_files_deleted": true
+}

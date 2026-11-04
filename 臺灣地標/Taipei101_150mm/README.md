@@ -1,40 +1,28 @@
-# 台北101｜150 mm 外觀微縮模型
+# 臺北101｜原150 mm模型材色更新
 
-## 模型預覽
+| 彩色預覽 | 彩色預覽 | 彩色預覽 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![左側](west.png) | ![右側](east.png) |
+| ![頂視](top.png) | ![基部細景](entry-detail.png) | ![塔節細景](facade-detail.png) |
+| ![冠塔細景](roof-detail.png) | | |
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+## 材色範圍
+同一既有項目補彩（count_delta 0），保留原12444三角面、頂點、STL與build_model.py；不新畫樓層線、不切分三角、不加文字或紋理。尺寸仍為原獨立150 mm模型，不是與其他建築共同比例。
 
-## 模型內容
-- 成品尺寸：56 × 54 × 150 mm（包含平底展示座）。STL 單位為 mm。
-- 一體式、單一連通實體。主塔八個外張塔節、收分基部、古錢形浮雕、退縮冠塔與加粗尖塔，搭配簡化 L 形裙樓。
-- 根據多視角照片與結構工程簡報的外觀、立面及配置圖重新建立幾何，並非測繪級復刻，也不是官方模型。
-- 裙樓弧形採光屋頂與立面紋理為可印的概略表現；細窗格、如意裝飾、屋頂設備及不可見細節均簡化。七道內部橫帶表達每節八層的節奏；其他紋理不代表精確樓層或窗戶數量。
-- 以獨立成品高度為準；非與其他建築共同比例。不可依模型量取真實建築尺寸。
+- 主塔玻璃色族採低飽和青灰／灰綠；**四向一致是同一塔幕牆材料連續的有界概化，不是四向照片逐一測繪。** 原實心塔壁並非透明玻璃復刻。
+- 只有原有凸橫帶、角柱、如意簡化帽採淺灰金屬色；古錢圓飾與尖桿銀灰，原凹心一般暗色。未添加更精密的窗格、鐘面或雕刻。
+- L形裙樓與桶狀屋面被白日照片遮擋，保中性；夜景僅辨位置，不把黃燈或夜藍塗成日間材色。未證水平冠塔台面亦中性。
+- 原有樓層節奏、角柱、裙樓仍是粗化近似，新增色彩不為原幾何準確度背書。色票非校準色值，圖片拍攝年月未確認，非某年精確竣工／現況外觀。
+- 五材質外觀標籤並非四色或多色切片作業；**未實際列印**，未證免支撐或可直接多料輸出。STL格式本身不保存材色。
 
-## 列印起始建議（尚未實際試印）
-- FDM：0.4 mm 噴嘴、0.16–0.20 mm 層高、3 道外牆、12–18% 填充，PLA 可作起點。
-- 原方向直立列印，底座貼平台。必要時加 3–5 mm brim。尖塔最後段直徑至少 1.4 mm，仍需低速、充分冷卻並小心搬運。
-- 主塔外張坡面緩和，頂緣以收坡收回；如意浮雕、錢形浮雕和裙樓簷緣需在切片預覽檢查懸垂。先測試無支撐，若切片有懸空，僅局部加支撐；不要把「封閉網格」解讀成已保證免支撐。
-- 浮雕高度約 0.3–0.5 mm；小尺寸會弱化細節。避免縮小到 150 mm 以下，若縮放需重新檢查尖塔及細節厚度。
-- 先檢查全高度的切片路徑、薄壁與層間連接，再試印。此模型尚未切片實測或完成實體試印。
+## 檔案與重建
+[彩色3MF](appearance.3mf) · [彩色Blender](scene.blend) · [保留原STL](model.stl)
 
-## 檔案
-- model.stl：唯一列印用實體。
-- scene.blend：載入同一 STL 的預覽場景，包含相機、燈光及非列印用地板。
-- previews/front.png、rear.png、elevation.png：實際 STL 的三種視角，不額外添加不可列印的建築裝飾。
-- build_model.py：可重建的參數化 Python 原始碼。
-- render_preview.py：Blender 預覽腳本。
-- validate_model.py、validation.json：數位網格檢查與結果。
-- check_layers.py、layer_check.json：以 0.2 mm 間隔檢查 750 個水平截面，未出現空層。裙樓屋頂與浮雕處有多輪廓截面；這不是切片或支撐檢查。
-- requirements.txt：Python 相依版本。
-- sources.md：參考網址、比對範圍及限制。
+build_model.py產原幾何；colorize_model.py只指派既有三角面材質；export_appearance.py寫3MF基本材料；render_color.py產十圖/場景。validate_color.py驗原STL、完整三角座標、3MF、保留的隔離重建；verify_color_scene.py重開實際Blender shader與面索引。既有Python環境numpy/trimesh/manifold3d/Pillow；Blender4.3.2。
 
-## 重建
-安裝 requirements.txt 中的套件後，執行 python build_model.py。以 python validate_model.py model.stl --output validation.json 驗證；以 Blender 4.x 執行 blender -b -P render_preview.py 產生預覽及場景。Blender 檔中的單位顯示為 mm。
+## 來源與權利
+熊谷組公開臺北101工程頁的白日照片支持主塔青灰、淺灰金屬與銀灰圓飾。另一張白日照多遮擋；夜景不當日間校色。照片與網頁註all rights reserved，未確認CC或可商用再授權；來源照片僅私人保存，不公開、不貼圖。詳COLOR-SOURCE-REGISTER.json。
 
-## 品質與使用說明
-數位檢查包括封閉性、面向一致、單一連通實體、所有邊由兩面共用、頂點鄰域、正體積、平底、尺寸。此檢查不等於完整自相交證明、切片通過或實體試印成功。
-
-本包不包含參考照片或工程簡報原檔，也不授予第三方照片、建築設計或商標的使用授權。若要商用、散布或宣稱官方關聯，請另行確認適用權利與許可。
+## QA與保留歷程
+COLOR-FORMAT-GEOMETRY-QA.json、SCENE-QA.json、FRAMING-QA.json、DELIVERY-QA.json及INDEPENDENT-COLOR-VISUAL-QA.json為本次材色QA。原單色previews和ORIGINAL-MONOCHROME-README.md保留，舊validation/layer檢查不代表新增材色已印驗。上方十圖與scene.blend為新版入口；沒有刪檔，舊原包另私人保存。

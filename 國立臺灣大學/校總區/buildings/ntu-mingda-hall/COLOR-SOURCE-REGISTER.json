@@ -1,0 +1,52 @@
+{
+  "scope": "Same-item original-geometry bounded color upgrade",
+  "count_delta": 0,
+  "source_GO_sha256": "bbb673c0dfa4fd2af03f749ed101f87ab582d9b8af515d4fba3274d1e328fa44",
+  "independent_review_sha256": "6045fcd05d80714f0d8ac1b1bcded016f9d27c104194a899821ca559a7083db3",
+  "sources": [
+    {
+      "sha256": "7a5e1a75ba593077117dc4e42718b5bb1bc90654025e12eb72128df349a01a25",
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E71/IMG_5986.JPG"
+    },
+    {
+      "sha256": "077775ba032c1901aa04e1bea2494ae6d7e2565b35406622ba6c13edbc8e88fa",
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E71/IMG_5989.JPG"
+    },
+    {
+      "sha256": "8c7e3c58de2044b8e23599cb88b136d5662d8e9dd69292e79a3c32644123a18a",
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E71/IMG_5987.JPG"
+    }
+  ],
+  "source_page": "https://homepage.ntu.edu.tw/~cpo/about_campus_archeitectureimage_E.html",
+  "source_period": "官方頁標 2010 年建築影像，非各照片 EXIF 拍攝日期證明",
+  "rights": "官方公開不等於 CC；原圖僅私人研究，不公開／不貼圖，不保證再授權。",
+  "approved_mapping": [
+    {
+      "region": "前低牆與山牆 y約−65、z3..56.7",
+      "material": "暖黃褐/赭磚，非鮮紅",
+      "condition": "僅既有完整牆面；凸出拱圈/橫帶及齒飾另依可辨幾何灰。無獨立山牆邊框時不畫新條紋。"
+    },
+    {
+      "region": "兩長側下層 x±39，z低於約31",
+      "material": "暖黃褐牆；既有拱凹暗陰影",
+      "condition": "若同一三角跨上下不同色族，跨界面或整同平面中性，不切面或按重心製造斜色。"
+    },
+    {
+      "region": "上層既有凸直肋/橫帶：前 y−49、側 x±39，z31..108.3",
+      "material": "淺灰至灰金屬",
+      "condition": "只完整既有凸件，不能將後退牆整片灰格化或新增細格。頂外緣可灰、水平大屋頂中性。"
+    },
+    {
+      "region": "既有離散上窗凹底",
+      "material": "低飽和灰藍/暗灰窗色族",
+      "condition": "只窗凹底，不染返回牆/整格間牆；不稱每個凹口都已確認精確玻璃形式。"
+    }
+  ],
+  "neutral_regions": [
+    "上層連續後退主牆面：照片暖褐樓帶、灰金屬面與窗混合；若原面不能無斜楔分域，整後退牆中性而非整磚。",
+    "後端 y68 全立面、後側未拍細節、水平屋面與設備。",
+    "被遮且無可靠對位的低層入口細件；照片外圍圍牆/植栽/其他建築不借色。"
+  ],
+  "model_stage_QA": "See final COLOR-FORMAT-GEOMETRY-QA, SCENE-QA, DELIVERY-QA and SOURCE-VISUAL-QA; original source-issued pending flags are historical only.",
+  "original_photographs_public": false
+}
