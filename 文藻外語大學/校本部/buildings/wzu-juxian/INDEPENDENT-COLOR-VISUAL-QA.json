@@ -1,0 +1,57 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:53:03.898090+00:00",
+  "actual_sources_viewed": [
+    "official-building.jpg",
+    "pdf-page67.png"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "findings": [
+    "1790 original lattice faces in first-three narrow blocks muted terracotta; backing planes neutral.",
+    "24 independent front band faces gray, not entire stepped walls.",
+    "Whole right60wide lattice neutral because source gray separator lacks true joined-grid material boundary; no diagonal red triangles.",
+    "10 connected coplanar border groups retained neutral, removing15 initial red candidates; all1755 coplanar groups uniform.",
+    "Five thick roof wedges neutral, shaded underside not assumed roof material; rear and ground unknown neutral.",
+    "2023 form and2025 edition not capture dates;6182 original triangles retained; no added grille or photo textures."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "1ad148def2c2dff0a6c1b57d24547cfcaf46706f547f706e14f26b0e3146a8b3",
+    "README.zh-TW.md": "1ad148def2c2dff0a6c1b57d24547cfcaf46706f547f706e14f26b0e3146a8b3",
+    "model.stl": "afbf6e7d00ccedddb3769974f57d7424a81b8e7dab13c1ed8315e3d7570cbfc5",
+    "build_model.py": "6258d7739197bfb0217ed6327837a012de07255907749924a03280621b2c30f2",
+    "colorize_model.py": "1ae434b290ba315bedbe504aa467cdb31a0fe54d621738edc5c4a9e5dc37b0e8",
+    "render_color.py": "b7574cc9b4a05178e327e7e82063cc6f634ce92720f086dae84043a6a0d09ec1",
+    "color-mesh.npz": "5b660fc3b5ae0284a064f0ce10dc211b1d452d214b73183c7f5f04cf36c78209",
+    "palette.json": "ab5e2426bcaf681fbb2c1f23dd6b4d0a2abeef8b4b73131ffc4f5f9c90b7fdc8",
+    "COLOR-SOURCE-REGISTER.json": "bc55bf9d24cee17077c05bda6dc6dc4162be7317c7657d26d6d6fb010bcb7674",
+    "appearance.3mf": "ab71ea33a7c8145caf919787ee4df89d7df0d0290d5538456cd8114422251e72",
+    "scene.blend": "618fc68e67c2a8f11adf7a69cc95b19ec0988bcf12665f7b99476d352a28b454",
+    "preview.png": "d50a18e3ffb34f2929076d7c926b2638fe92221387fc9f32e6ffa6cc11750616",
+    "rear.png": "46cdb1b82e013656da2e796b364239c0bf9022f0bf6ac50fffcba2a1804945ac",
+    "front.png": "52f9b8a1c6889c953b57b0204628a68fd5d01680a090dc0f65d1ad4e0b490433",
+    "back.png": "1c1e670f560eff11046f3ecfeb2daf9797234d9b2d63ae6bd5c97053f3499ae8",
+    "west.png": "33f3ed42d5de448b4ef2a9c611f183b2083792ffa0cc07e0a2121121fc969f70",
+    "east.png": "e8372a9cd09b374d6b8fe3951a2f1d5e651a55db0de4c8c20def5f2725ac5757",
+    "top.png": "1dfaaaa55f07520d6877e248f57a64fdaecf9bc9e7e7a4b766763114827eb4ac",
+    "entry-detail.png": "1236b2eb11c0ae88b9c512476d1967b95d1de130eecadda643137135dead6190",
+    "facade-detail.png": "957789bc5fb3c894182424d5fa68e063d9190c88305e632d52fdd0b41f5c1a70",
+    "roof-detail.png": "936b02da69e097591dbf0b1e15ccd0912b44fe9fcca940bab38cfec06689690a"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "162ec38a9e6cf0fe54729314c7bfc7e717524774eea019d6587d9b471830eaa9",
+    "SCENE-QA.json": "56b7cad2568703ff70a3d520839768c076445b1d242378414e6c8df8a6fbd742",
+    "FRAMING-QA.json": "560c7dee0f35fc4784af52858741adfcde47965c4b9ecd3fb5d6717d7069418a",
+    "DELIVERY-QA.json": "9fa8304f2ca816a9e32f296bea2c75b6da051cadb6a11838128c32c4baee00d2"
+  },
+  "coplanar_withdrawal_evidence_sha256": "f417eaee766e90db057fcc73c10ac4bc3e0f4c4823147942019e0582e535365b",
+  "private_montage": "private-review/final-v1-ten-view-montage.jpg",
+  "independent_parent_review": "Personally viewed reference photos, original code, preview and all ten final views; independently verified exact original triangle multiset and original bytes. First three narrow screen grids only terracotta; broad right joined grid neutral. 1755 complete shared-edge coplanar components each uniform; 24 independent gray bands. No arbitrary color wedges; all roof/backings neutral.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2148.json": "beba1f15b7e99fb87a8fd05a9bda4540eaf24fcb81b081a0104e466a519d43df",
+    "INDEPENDENT-DOMAIN-2148.json": "eaad7fd548cb9b4ab1c01cb4dd339b1aa1419e188296cea946dbc6bfdf19e5aa"
+  }
+}

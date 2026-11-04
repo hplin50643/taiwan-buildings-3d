@@ -1,0 +1,36 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed screen and canopy FRONT warm off-white",
+      "hex": "#DADBD2",
+      "faces": 404
+    },
+    {
+      "id": 1,
+      "name": "Actual screen backing and nearest slots muted shadow",
+      "hex": "#414B47",
+      "faces": 6
+    },
+    {
+      "id": 2,
+      "name": "UNVERIFIED upper windows walls rear roof underside neutral",
+      "hex": "#B8BAB5",
+      "faces": 3426
+    }
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3836 original triangles unchanged; no new or split faces",
+  "domains": {
+    "screen_front": 402,
+    "screen_back": 2,
+    "near_slot_backs": 4,
+    "canopy_front": 2
+  },
+  "limitations": [
+    "Only exact existing front coplanar domains; upper long window band, canopy underside and unknown large walls neutral.",
+    "2019 publication photo capture unknown plus 2023 entrance event, not code2025/current color survey.",
+    "Three material labels are not a verified multi-filament slicing job."
+  ]
+}

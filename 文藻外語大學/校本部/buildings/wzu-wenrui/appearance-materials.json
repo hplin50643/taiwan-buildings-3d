@@ -1,0 +1,83 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed independent front and right fins charcoal",
+      "hex": "#3D4140",
+      "faces": 656
+    },
+    {
+      "id": 1,
+      "name": "Observed cap outer fascia and high eyebrows palegray",
+      "hex": "#CBCDCA",
+      "faces": 20
+    },
+    {
+      "id": 2,
+      "name": "UNVERIFIED mixed green/window walls rear roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 2308
+    }
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "2984 original triangles unchanged; no new or split faces",
+  "domains": {
+    "front_fins": 304,
+    "right_fins": 352,
+    "individual_front_fin_counts": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "individual_right_fin_counts": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "cap_front": 2,
+    "cap_right": 2,
+    "high_eyebrows_x_front": 16
+  },
+  "limitations": [
+    "Only original independent fins, cap outward fascia and high eyebrow end faces.",
+    "Green lower band has unmodeled windows; entire backing neutral. Mixed fullheight walls and rails neutral.",
+    "Photo capture dates unknown;2023 form and2025 PDF edition not capture dates.",
+    "Material labels are not a verified multi-filament slicing job."
+  ]
+}

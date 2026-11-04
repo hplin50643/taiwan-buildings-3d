@@ -1,0 +1,52 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_V2_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:34:35.268687+00:00",
+  "actually_viewed_source": [
+    "official-building.jpg",
+    "pdf-page83.png exterior photographs"
+  ],
+  "actually_viewed_ten_final_views": true,
+  "findings": [
+    "V2 excludes17 actual horizontal terrace-slab top triangles atz94.6 from rail color; old v1 retained privately and superseded.",
+    "Only384 original right octagonal ring faces plus519 front/right rail faces warmgray; ring interior backing excluded.",
+    "15 original true upward front/right hip slope triangles green; mixed eavelip/underside neutral.",
+    "Fullheight shell, glazing/windowframes/versiondifferences/roof terrace/left and rear remain neutral.",
+    "Right rear crossing faces remain neutral due source coverage, not real different-material seam.",
+    "Original4976 coordinates/STL/build unchanged; no originalOBJ claim.",
+    "Partial status in firstREADME paragraph and all image captions, no full-color completion claim."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "4a74f2043ee4a0f2d56f29384db179dfa31bb7b9fd58513129cd20815d640d47",
+    "README.zh-TW.md": "4a74f2043ee4a0f2d56f29384db179dfa31bb7b9fd58513129cd20815d640d47",
+    "model.stl": "240fd8e4f8c04f5be804fc3492849de4fcbe6fd911200fc432443fb6e7329ffa",
+    "build_model.py": "4ee7965dc32da2679adc2da8fb5353a30d62e5e8665ebfe991ffbdfeea838a41",
+    "colorize_model.py": "1b6100b8419b38fdb79a8bdebe3cfbeae9b55c1a3836e79c2e2c87683eef16ca",
+    "render_color.py": "b7678408ddbf3742d9de5153c61fd6df5d0be57d1c398f82365ca36189c986a5",
+    "color-mesh.npz": "55fc91c10ed92082f4e092213efb9c50066015fa948cb195f3262045c24190c8",
+    "palette.json": "6df704a21b270fa1934c35198bad1172668dada16a48ef48c185332c3ef6939d",
+    "appearance-materials.json": "5ca52fb1932e98e652188df8dcaba382659cfd3b7ffc135c888a7419270715d0",
+    "COLOR-SOURCE-REGISTER.json": "ffef170427e7041a4771721991f255ab0e5b332a07c322597bda20dce1f05dc9",
+    "preview.png": "ebbbbad413bb32555030f7d6e5cc7199a36b5d133299a127cb5492e05e03c8e4",
+    "rear.png": "7a2b8ac7f62ee4b12a0e48501d46255d97e3b57959bbe0728b55237a1d17fcb2",
+    "front.png": "b1c7f0a52c28d5718865b1826bb589be766de715daea7470855a5410c1839b3d",
+    "back.png": "1e541beeb4ea441f3900348635d955fb5d41ca926bef9c4c54eadaf6f0fec080",
+    "west.png": "21730d19f19e02506033163098ccf99add87086c4a4c6fb41e33c5cd6bb17919",
+    "east.png": "1e610c4e884f307f125460289ef176dce4e2c56dd430d5be5904ab375db38f6a",
+    "top.png": "5bdeabc38e349a600115232f431849675bb115b6fdeb0d45cee67681dd0bb5cb",
+    "entry-detail.png": "0b1d8acdeaef24cc45f6018069d91a7ab7dd3bd168a124bf8c4d4eaccfdb396e",
+    "facade-detail.png": "3cbc2a26329f5278ddff6073e6378cc6f97b1f2c9570d91fdc52efb73a32b517",
+    "roof-detail.png": "250800b9e0a6900024c71d4298e64554b78c390d06b59d75a7ec3fc2335b2555",
+    "appearance.3mf": "491c020523d1f6d8306c0e955eb4190718475bdc662cde51ddc600a8c68f6c19",
+    "scene.blend": "03e592313169f4318f5f8dd1a586f3124d958c029edcdb209605831e2f6f1026"
+  },
+  "correction_sha256": "f9d8834c7dd9a2b5bfea88034c55bade279bbdd4ddbd474a87fbf38d54313d22",
+  "independent_parent_review": "Personally viewed official and PDF83 exterior photos, original code, preview and all ten final v2 views. 17 former bbox-misclassified terrace topfaces now neutral; final903 warmgray,15 entry hip green,4058neutral. Prior2129 bbox domain report is historical and superseded by2130 correction. V1 retained; no topology change.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-V2-2134.json": "578ca5c0fec96136acb6534648e599e354896844082ebe4955e6e5fee131e0d7",
+    "INDEPENDENT-V2-TERRACE-CORRECTION-2130.json": "e412909c7b55c221c3cb554c56cc2ec7177e0530f6ac2b00348dd0c9f97a2f3f"
+  }
+}

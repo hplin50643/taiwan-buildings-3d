@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:39:08.052498+00:00",
+  "actually_viewed_source": [
+    "official-building.jpg",
+    "pdf-page59.png exterior photographs"
+  ],
+  "actually_viewed_ten_final_views": true,
+  "findings": [
+    "Twelve actual closed rectangular crown panes24faces cyan-green; selected whole connected coplanar components before spatial eligibility.",
+    "All922faces of continuous mainwall component neutral; no thresholdtriangles or false slope wedges.",
+    "Incomplete uppercells, sideglass, curvedbay and simplified rings allneutral, no invented mullions.",
+    "44true crossfaces pale metal; roofs remain neutral.",
+    "All8394triangle coordinates/STL/build unchanged; original public package has no OBJ.",
+    "README and ten caption notices explicitly partial, not fullglass/brickwall completion."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "6a6a0b9783a2e9a3fc0316c16b447d9abac7a5ad31f79bb5cf98bdc34a2cdb8d",
+    "README.zh-TW.md": "6a6a0b9783a2e9a3fc0316c16b447d9abac7a5ad31f79bb5cf98bdc34a2cdb8d",
+    "model.stl": "d7419f9bfbc65e746413bd49cb8fdd9f807c06ce6cff21bc265ddbe61f3f84f4",
+    "build_model.py": "599a022e2ce2b484978c6d4ac26e9b06f9105486cd05766edc591e0ca66a1f1e",
+    "colorize_model.py": "6ae55ef109cb585a304e4421fd9398018b335410332093c88fc5508de9a138a2",
+    "render_color.py": "f4269d23f8b5677817cd08cc39362a3f4d8184c9a108bebaff8053a9e872182c",
+    "color-mesh.npz": "f9839085ee801b8b38cb10815d2c81108eb6f7c9f1db39f83679a65cc93deee8",
+    "palette.json": "8020e288fcef8dfb9ed22792ce2d1b1d3f96def0a5dc6455a7798e59cffd2a57",
+    "appearance-materials.json": "c3e80b5f9ce4c9a05b01a4894fb680b014eb05d4b8959160951c6df5b4b1eec7",
+    "COLOR-SOURCE-REGISTER.json": "f4234de9c6e2c59e6941fecf4d85060777adc06fa7a44f46cbd550c29440604d",
+    "preview.png": "e4a4293437151d1a0bef0aedc54842c0413cc06d981b175aafdaf128606cd57b",
+    "rear.png": "11cfe46944625da88896fad49e7f1b09cba10a581dde8d6591cf1508d6ea39cc",
+    "front.png": "12d3422b9935bec651ad550bdd7e0d0a4dd88971e5238fafe9e65bb4346c6c66",
+    "back.png": "421176a11a67b7d2ce1e535526f71f2731c55c8640fec6bf2b2968b1d1b8f777",
+    "west.png": "73a5422071fe543e05a00c105c9c607ab1a1c9306b8bc193e9542c370ba3f1d7",
+    "east.png": "2c0ff9c96b4ec6db8a3c1aad2e3ba2e42d6133c2072c0d79b2a3611f24fde5b5",
+    "top.png": "06e790d5267029b538b2db19c86c8fde34a73e460d13e1d10eee8b9aa44b5848",
+    "entry-detail.png": "3edba0ab9ba997fdf1fe5316866e5e702ff1265e2e2cf05cf610aff196739785",
+    "facade-detail.png": "8a58104e28ad9e59da00416f54e44e321231c98a7c013a71be9625ad52edd593",
+    "roof-detail.png": "7933d67ebd8be9c156257fa6d22e225057bd4f3518d18b21bf3c74c101cf1ace",
+    "appearance.3mf": "efcc84d077285eb920897a70f4df458c4d1e3420f02673e5f17fa274163a65b0",
+    "scene.blend": "ebf2c3fa67a19ed35b21bd94d6f214deef4074224795bfd4e7d2e3da59229ad2"
+  },
+  "independent_parent_review": "Personally viewed official/PDF59 exterior photos, original code, preview and all ten final views. Independent full-plane shared-edge BFS verifies12 complete closed rectangular pane components; largest922-face mixed wall remains entirelyneutral. True existing cross pale metal; curvedbay and mixed walls unresolved, partial only.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2136.json": "7f3f82f3a8d43160510e3baf1d71eaadc11ebc3b2436de04b7aaaace81233eec",
+    "INDEPENDENT-COMPONENT-CLOSURE-2137.json": "26699865379c9ea5ffb6db4d7c9458224570c6002d38b6455fdf2a87c8a92fff"
+  }
+}

@@ -1,37 +1,38 @@
-# 至善樓｜文藻外語大學
+# 至善樓｜既有模型局部窗格補色
 
-## 模型預覽
+**局部補色未完成：僅經原刻槽完整封閉的上冠窗格及十字局部補色；曲窗、主牆及未知部位仍中性。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項目 `wzu-zhishan`／`count_delta=0`，不新增套數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![上冠窗格](entry-detail.png) | ![冠側細景](facade-detail.png) |
+| ![十字細景](roof-detail.png) | | |
 
-校本部／公開外觀近似模型。每棟独立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：102.00 × 86.00 × 150.00 mm。
+## 材色範圍
 
+僅12個原有刻槽四邊完整封閉的前冠矩形面域（24三角面）採低飽和青綠；原真十字44面採淺中性金屬色族，其餘8326面未知中性，**不是實景灰色證明**。
 
-## 外觀與範圍
-十六層塔樓、山形玻璃冠、凸出曲面窗、左右垂直凹槽、主要方窗序列、頂部十字架。
+先取完整前平面y=-18.5的所有相鄰共面components，再以原刻槽、矩形4邊與完整面積驗證，不是以z>=123切大牆。連到下部的922面主牆component一律中性；12個窗格在左右各3列、2排，完整8394面索引與component證據在`appearance-materials.json`。不完整斜頂格、外帶、凹刻槽／圓標誌不染，無新增logo或文字。
 
-後立面與深度近似；只表現可見側面凹槽與局部窗序；連至他館的高架廊道不納入。
+圓弧bay實景有金屬豎格，而原圓柱沒有對應分面，整個曲面與突環中性，不把facet當玻璃分界。混磚／灰石全高牆、普通窗混窗框／白簾／反射、未知側後及屋皮一律中性。材色覆蓋邊界不是實際材質接縫。
 
-主要依據[校方建築物介紹](https://c005.wzu.edu.tw/category/132558)及[2025-03-12公開PDF第59頁外觀照片](https://c004.wzu.edu.tw/datas/upload/files/Documents/111_1075_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8_1140312.pdf#page=59)。現況表填於2023-12；兩來源照片拍攝日期未註明，不把文件日期當拍攝日期，不宣稱2026完全現況。來源照片、PDF及私用對照不隨模型公開。[完整來源及近似限制](sources.json)。
+原8394三角、坐標、尺寸、`model.stl`與`build_model.py`字節不變；不切面、不加窗框、屋件、文字或新玻璃。色審不追認原簡化幾何精度，非現況精測。
 
-## 檔案
-- [STL](model.stl)／[Blender](scene.blend)／[Python重建](build_model.py)
-- [原始STL拓撲、法向、重建SHA及Blend一致性](validation.json)
-- [0.2mm輪廓閉合與逐輪廓/合成多邊形有效性](contour-validity-check.json)
-- [0.8mm XY薄特徵篩查](thin-feature-check.json)
+## 來源與權利
 
-## 數位檢查與列印限制
-單一連接表面殼、正體積、所有邊恰有兩面、vertex-link單循環、無獨立內腔、原始法向一致；Python重建SHA相同，Blend與STL三角形一致。0.2mm實際STL斷面通過閉合及有效性assert，未用buffer修補無效多邊形。
+文藻[官方校園頁](https://c005.wzu.edu.tw/category/132558)照片、官方PDF實體59頁之外觀照片；拍攝日未知，PDF2025-03-12版本／2023-12表格不是拍攝日。只採公開外觀，不使用內部應變資訊。精確URL／SHA與GO2134、獨審2133-v2見`COLOR-SOURCE-REGISTER.json`；早期曲bay玻璃許可已撤。
 
-高度含十字架為150mm；十字架加厚為1.5mm。小窗中梃0.9mm為附牆浮雕；屋頂山形尖端可能有角點薄篩警示。
+未確認CC授權。原照/PDF私存、不隨模型公開、不作貼圖；來源權利不被repo license取代，不保證商用。
 
-這些均為數位幾何檢查，未經實際列印或真正列印切片器驗證。建議底板朝下、0.4mm噴嘴、0.2mm層高作為切片起點；簷口、雨遮、格柵及挑空需在切片器檢視支撐、橋接與可拆性；不得據此保證免支撐。
+## 檔案與重建
 
-## 重建
-Python 3.12，安裝requirements.txt，執行build_model.py；Blender以背景模式執行render_preview.py，產生實際STL預覽與scene.blend。接著依序執行validate_model.py、check_contour_validity.py、check_thin_features.py，退出碼均須為0且validation.json所有checks為true。
+`appearance.3mf`含3展示材標，`scene.blend`有實際面材與相機，`color-mesh.npz`含原三角與material index。原STL本身無色。原公開包沒有OBJ；隔離執行原build生成的OBJ只私人保留，不聲稱原OBJ已保留。
 
-STL SHA-256：d7419f9bfbc65e746413bd49cb8fdd9f807c06ce6cff21bc265ddbe61f3f84f4
+依`requirements.txt`執行`python colorize_model.py`、`python export_appearance.py`、`python validate_color.py`；Blender執行`render_color.py`及`verify_color_scene.py`。完整原build＋color隔離重建目錄保留，不自動刪除。原場景與全原件另私存；`ORIGINAL-MONOCHROME-README.md`、舊`previews/`與原驗證只作單色歷程，不是本次材色QA。
 
-[校區圖鑑](../../README.md)／[學校](../../../README.md)
+## QA與列印限制
+
+原STL／三角multiset、封閉正體積、3MF材質、完整隔離重建在`COLOR-*QA.json`；Blender重開在`SCENE-QA.json`；10張1200×900圖／首段三欄／圖文hash在`DELIVERY-QA.json`。人工視覺另交父終審。
+
+**未實際列印。** 三展示材標不是驗證過的四色列印工程；切片、材料映射、支撐與細部強度另驗，不保證直接多料成功。
