@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": {
+    "object_identity": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "mesh_sha_property_matches": true,
+    "scale_property": true,
+    "camera_exists": true,
+    "triangulated": true,
+    "six_actual_material_slots": true,
+    "actual_shader_palette": true,
+    "historical_notice_exists": true,
+    "material_indices_match": true,
+    "saved_camera_full_model_margin": true
+  },
+  "mesh_sha256": "36474062e92253cdfc6157845453494e30845b038be75dbf9c81f6a153b1dd17"
+}

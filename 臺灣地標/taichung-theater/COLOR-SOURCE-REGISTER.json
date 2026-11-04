@@ -1,0 +1,58 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "taichung-theater",
+  "rights": "Official public exterior references; express CC not verified. Originals private, not public textures/images or commercial-rights guarantee.",
+  "version": "Official source photos undated; twilight interior yellow illumination not wall/glass material color; visible roof grass only if original primitive matches.",
+  "constraints": [
+    "Original STL/vertices/faces unchanged; same slug count0",
+    "Unknown and unresolved crossing faces coherently neutral",
+    "No centroid-based paint wedges, no new letters or texture motifs"
+  ],
+  "original_faces": 26702,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T18:52:00Z",
+  "approved_mapping": [
+    "Front y=-40 and left x=-65 exterior wall family gray-white, including original curved returns, not nighttime yellow interior illumination.",
+    "Actual original glazing backing at front y=-36 and left near x=-61 can restrained gray-green; existing mullions gray. No transparent interior or extra grid.",
+    "Right x65 bowl and low entrance supported by daylight side photograph, pale curved shell and bounded gray-green low backing.",
+    "Existing four rooftop funnels may pale same-component family with explicit approximate positions; roof photo supports material not exact original placement."
+  ],
+  "mandatory_public_limits": [
+    "Entire flat roof neutral: original has no lawn/path boundaries; do not turn whole roof green.",
+    "Rear facade and rear stagehouse neutral.",
+    "No sky/environment reflections, trees, people or yellow interior light as material.",
+    "All vertices/surface checks rather than centroid color boundaries; no new or split triangles.",
+    "Approximate uncalibrated color families, not exact current color/as-built proof.",
+    "Photos private, no texture or blanket reuse rights; final mesh and ten-view independent QA still required."
+  ],
+  "palette_nominal_srgb": {
+    "pale_wall": "#CFD3D0",
+    "glass_back": "#596E70",
+    "mullion": "#727B7A",
+    "brick": "#A17C6F",
+    "recess": "#3F4747",
+    "unknown_neutral": "#B8BAB6"
+  },
+  "source_GO_sha256": "a555213f4fc917f992d7a3c9ba77658f6d0c4b0129589e1b506bba29ef7b2774",
+  "independent_review_sha256": "9b6ae9ec2c58282c0823e30487b64be1496dc2b49acd9368cbbef5f362e6d5e4",
+  "sources": [
+    {
+      "sha256": "04d28744024a1d824c08535f6aab1123cfe93883f9d1ca311e09ec0fe5063895",
+      "url": "https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_A12-00235.jpg",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "8b1f96933fe1e235eed4e517c9b938b5b70e0d3c5388da401707c0a3a047ee20",
+      "url": "https://www.npac-ntt.org/dispUploadBox/PJ-/Ckeditor/20200303150605451.jpg",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "e129c8d132973003bb3de57b60cc204367c1745d2f5ec723d6c982d530fa20dc",
+      "url": "https://www.npac-ntt.org/images/img-build-new-03.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "source_stage_pending_historical_only": "Original source issue preceded modeling. Final model evidence separately in COLOR-FORMAT-GEOMETRY-QA, SCENE-QA, DELIVERY-QA, SOURCE-VISUAL-QA.",
+  "original_photographs_public": false
+}

@@ -1,3 +1,52 @@
+# 臺灣地標｜鵝鑾鼻燈塔：原幾何補彩色
+
+## 彩色模型預覽
+
+**同項目更新（count_delta = 0）：白塔、黑帽及可辨前／轉角拱廊補色。白塔以同構件連續概化；未證後屋、大平屋面、圍牆及展示地坪中性。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西面](west.png) | ![東面](east.png) |
+| ![頂面](top.png) | ![拱廊](entry-detail.png) | ![塔身](corridor-detail.png) |
+| ![燈室與塔帽](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+原 9564 三角面、全部頂點、比例與單體不變，不新增斜向燈室格網、欄杆孔、室內、額外門窗或任何貼圖。原照片判讀幾何不因補色成為測繪CAD。
+
+- 塔身、原水平圈帶、支托、平台外殼及燈室採灰白族；不可見背向塔面按同一構件連續，屬概化而非逐面照片核證。
+- 燈室原封閉芯與淺刻窗仍灰白；照片有白板／框與玻璃混合，不能整個圓筒塗成藍玻璃，也不新增斜格。
+- 原塔帽與尖頂炭灰，從 z90.3 起的原帽構件識別，不把深色下延至白燈室。數值是原模型mm位置，不代表實際建築標高。
+- 低屋有證前五拱、垂直轉角三拱之既有外皮灰白；原盲拱返回面灰白，真正封底採通用暗影，不是透明室內或玻璃。塔身原小開口亦採陰影，不臆造門扇細部。
+- 後牆與未證側、低屋大水平屋面、附屋、圍牆及鋪面維持中性；不把展示底座塗綠草或藍海。白色與中性區界只是本次證據範圍，未必是現場換漆縫。
+- 原 primitive 表面辨識採完整頂點、面中心與法線，不按面重心切出假斜塊。0.004mm數值辨識容差不是實景精度；無新增或分割任何輸出面。
+- 官照路徑的2025上傳日期不是已確證拍攝日期；不宣稱今日精準外觀。色值為非校準展示近似，保留光線／陰影差異的不確定性。
+
+## 格式與重建
+
+原 `model.stl`、`build_model.py` bytes 不變，原包沒有OBJ。原單材 `scene.blend` 私人副本保留，公開同名 scene 更新為實際shader。STL本身無色；`appearance.3mf` 含四種逐面基本材質，`color-mesh.npz` 保留原三角座標。四種外觀標籤不等於已驗證四耗材切片工程；未實際列印、未執行切片器驗證。
+
+```sh
+python -m pip install -r color-requirements.txt
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 3 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+沿原requirements，表面辨識另需rtree，Blender4.3.2。原碼的臨時primitive只供面辨識，不加入輸出。隔離重建保留不刪。新QA：COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、DELIVERY-QA、SOURCE-VISUAL-QA；七全景與三刻意局部細景。原 validation/rebuild_validation/blend_validation/previews/校驗表與程式保留歷程，不當新補色QA。
+
+## 來源與權利
+
+兩張[國家公園署官方外觀照之一](https://www.taiwan.nps.gov.tw/upload/cmImage/2025-04-15/512f337b-2414-46de-8bc2-63425c32f238/49_93c7d1929e136bef040caf201b28def4_comp_webp.webp)與[之二](https://www.taiwan.nps.gov.tw/upload/cmImage/2025-04-15/05721669-e550-4639-87b2-f6f308dfd50b/49_e6fa36810d2e00d2b27ad723f48a7574_comp_webp.webp)，hash／角色見COLOR-SOURCE-REGISTER.json。官網公開不代表CC或商用再授權；原照私人保留、不公開、不貼圖、不以儲存庫license再授權，不保證商用權利已清。僅公開建築外觀。
+
+## 原始模型說明與限制
+
+原文保留如下，本次材色與重建入口以新段落優先，舊單色圖不是新成果。
+
 # 鵝鑾鼻燈塔｜150 mm 外觀列印模型
 
 ## 模型預覽

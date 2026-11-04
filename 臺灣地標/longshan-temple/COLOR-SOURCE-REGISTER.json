@@ -1,0 +1,121 @@
+{
+  "slug": "longshan-temple",
+  "date_utc": "2026-11-02T18:18:00Z",
+  "audit": {
+    "path": "color-audit-landmark6-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
+    "sha256": "a7dbcea6f3b93774005973e0235208f526b095d4e335699c62eb793847ba0439"
+  },
+  "sources": [
+    {
+      "path": "color-source-review-20261102/longshan-temple/official-4.jpg",
+      "sha256": "d6e7dcc6cea10e028933dd22c300d13f9aba833b447c9c2b591df872d0328d24",
+      "url": "https://www.lungshan.org.tw/tw/images/img03_1_4.jpg",
+      "actually_viewed": true,
+      "role": "official exterior reference"
+    },
+    {
+      "path": "color-source-review-20261102/longshan-temple/official-5.jpg",
+      "sha256": "b5671976f87379eb3cfc01a84e030eb844d1cc479e5a85649be0ec1b9b74f261",
+      "url": "https://www.lungshan.org.tw/tw/images/img03_1_5.jpg",
+      "actually_viewed": true,
+      "role": "official exterior reference"
+    },
+    {
+      "path": "color-source-review-20261102/longshan-temple/official-6.jpg",
+      "sha256": "f719f4cf0dd39b275d1d7336bf8f5c57b8dc1e934961c1b17424bee162646e5d",
+      "url": "https://www.lungshan.org.tw/tw/images/img03_1_6.jpg",
+      "actually_viewed": true,
+      "role": "official exterior reference"
+    },
+    {
+      "path": "color-source-review-20261102/longshan-temple/official-7.jpg",
+      "sha256": "e8b372d8218811c47d0d7f292fa28ba17f690ad72eb7d36422b0452203cb02a0",
+      "url": "https://www.lungshan.org.tw/tw/images/img03_1_7.jpg",
+      "actually_viewed": true,
+      "role": "official exterior reference"
+    },
+    {
+      "path": "color-source-review-20261102/longshan-temple/official-9.jpg",
+      "sha256": "6503ab72174358be981617ecbc02a1dc36d9f7d7f58a1058a2eea34d5cd3a9dc",
+      "url": "https://www.lungshan.org.tw/tw/images/img03_1_9.jpg",
+      "actually_viewed": false,
+      "role": "configuration diagram only, not color evidence"
+    }
+  ],
+  "scope": "Same existing geometry/slug color upgrade; count increment zero; no textures or added faces",
+  "rights": "Public official references; no express CC or source redistribution license verified. Originals private; no photo textures/public image redistribution or commercial rights guarantee. Palette is approximate visual color family, not measured color.",
+  "constraints": [
+    "Original STL bytes/vertices/faces unchanged",
+    "Unknown or ambiguous facets remain neutral; no centroid paint wedges",
+    "Source dates not automatically photo capture dates"
+  ],
+  "version": "Official undated temple photographs; rear-hall illuminated photo is not calibrated daylight color. Roof ornaments heavily simplified, no fabricated polychrome carvings; diagram not a color source.",
+  "public_output": "Only independent approximate model materials and source URL/limitations; not source photos",
+  "original_faces": 29236,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T18:22:00Z",
+  "independent_review": {
+    "path": "color-source-review-20261102/longshan-temple/LONGSHAN-INDEPENDENT-FOCUSED-COLOR-REVIEW-1820.json",
+    "sha256": "c133005a5bbdadb5453a7b230ec2869065f552b27e927ad5e0a9940f49477af4"
+  },
+  "approved_mapping": [
+    {
+      "part": "Front and central roof tile surfaces",
+      "source": "official4/5",
+      "domain": "Source-corresponding original roof heightfield upward slopes, exclude lower horizontal box surfaces and modeled ridge silhouettes. Front-facing visible halves preferred; same tile family inference across comparable visible roofs explicitly disclosed.",
+      "color": "muted terracotta-orange",
+      "limit": "Do not turn all original roof solid sidewalls or rear/unobserved slopes orange; no new tile or decorative facets."
+    },
+    {
+      "part": "Bell/drum tower roofs",
+      "source": "official7",
+      "domain": "Existing three hexagonal flared roof sloping facets only, source-corresponding front sectors; shared tower family interpretation disclosed for paired tower.",
+      "color": "muted orange tile family",
+      "limit": "Original coarse solid hexagon lacks real tiny multicolor motifs. Entire tower walls not red or green."
+    },
+    {
+      "part": "Front stone components",
+      "source": "official4,5",
+      "domain": "Front engaged stone columns, original pale/gray wall panels, steps/platform at front and central courtyard",
+      "color": "restrained gray stone with darker genuine recesses",
+      "limit": "Source sculptures/coatings vary; do not repaint entire fused wall under dark-eave rule."
+    },
+    {
+      "part": "Existing eave underside/beam",
+      "source": "official4,5",
+      "domain": "Only uniquely separable existing front-facing eave underside or beam surfaces",
+      "color": "restrained dark brown-gray",
+      "limit": "No gold lettering, dragon paintings, lanterns or patterns; unresolved cross-domain triangles neutral."
+    },
+    {
+      "part": "Rear hall",
+      "source": "official6",
+      "domain": "Identifiable original front stone elements/recesses only where correspondence clear",
+      "color": "gray/shadow, otherwise neutral",
+      "limit": "Interior warm lamps and red doors are not whole exterior wall evidence; no universal red rear hall."
+    }
+  ],
+  "mandatory_public_limits": [
+    "official9 is configuration diagram, not color photograph.",
+    "Green tower door/window paint not mapped onto whole hexagonal wall: original arch recess differs from photographed rectangular pane groups. Leave unresolved wall neutral; recess may be shadow only.",
+    "Simplified crest/swallow-tail solid is not detailed multicolored ceramic dragon; neutral rather than invented uniform gold/green.",
+    "Dark original opening backs signify shadow, not exact reconstructed doors; front red metal gate not painted over an entire large passage back.",
+    "Unknown exterior back/side walls, roof backs, display base and distant landscape neutral. No interior altars, people, incense burner or temporary lamps added.",
+    "No geometry changes/facet splits. Match complete original surfaces with all vertices plus normals; verify no color leaks to vertical roof closures or opposite half.",
+    "If a coarse primitive cannot uniquely separate supported color family from unknown area, retain whole coherent face/plane neutral.",
+    "Source PASS requires later original triangle identity, material array, ten actual render views, README and final hashes QA."
+  ],
+  "palette_nominal_srgb": {
+    "visible_tile": "#AC6948",
+    "stone": "#93948C",
+    "eave_shadow": "#4D4841",
+    "recess": "#424743",
+    "unknown_neutral": "#B8BAB6"
+  },
+  "model_qa": "Pending unchanged STL bytes/vertices/faces, source-bounded full-face materials, ten views, actual scene and 3MF material QA; no source PASS claimed as model completion",
+  "source_GO_sha256": "9287e85e1c1357015e57646205b430b035ebc366b8fe40a0f6b14d4fb17b4ab6",
+  "source_status_at_issue": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "status": "SOURCE_GO_APPLIED_MODEL_QA_SEPARATE",
+  "private_source_backup_receipt": "color-source-backup-landmark6-20261102-1822/PRIVATE-BACKUP-RECEIPT-1822.json"
+}

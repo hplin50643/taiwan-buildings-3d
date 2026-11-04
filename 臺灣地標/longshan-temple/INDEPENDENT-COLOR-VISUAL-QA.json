@@ -1,0 +1,102 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T18:39:00Z",
+  "mesh_sha256": "66876da02c40bd7458c05e0e600d385dab3864bbebd6eba9635db66d90e78375",
+  "build_code_sha256": "8f77b2523a9f518761408e37028537f56c939369308ba7304ac3129219236c7a",
+  "color_code_sha256": "73f00372ec512f8db3c54ea651964101f031858f9f68e320aa184ccf08f0426e",
+  "render_code_sha256": "b68bce174e3f82dc172e00891b4fb11b94b279fc9547f4b2adf4d7d6c7fde1b7",
+  "readme_sha256": "034088ac90855f9054643739b99bae74586b7fcf247373e22b9fb86947e3c29f",
+  "file_sha256": {
+    "model.stl": "711cc5fe4d900955600e1fc5fea5930b3b1db1b7e12fc4cc3b35730c18d47206",
+    "build_model.py": "8f77b2523a9f518761408e37028537f56c939369308ba7304ac3129219236c7a",
+    "colorize_model.py": "73f00372ec512f8db3c54ea651964101f031858f9f68e320aa184ccf08f0426e",
+    "render_color.py": "b68bce174e3f82dc172e00891b4fb11b94b279fc9547f4b2adf4d7d6c7fde1b7",
+    "export_appearance.py": "baf9c266e5dc9bd45ff02aaaf745cde2bd3a107ce3317cee228325874eef8161",
+    "validate_color.py": "b37d2d0ddabde314debf021ae3743ad4f69a31f3b222fdf6d21f3255fffc63e0",
+    "verify_color_scene.py": "d8582c496c8849a7dcbc62d2ee3f79477affd028df5bc79cb0ae70158724e7a0",
+    "color-mesh.npz": "66876da02c40bd7458c05e0e600d385dab3864bbebd6eba9635db66d90e78375",
+    "palette.json": "e97415aada3032f1d7dc909076881d976a9a665a88e3382337378a8cdb84b506",
+    "appearance-materials.json": "4838e338fb0d837f634fa8a8bbfeeb2113bd85942fcef139ed0958592004b0f0",
+    "appearance.3mf": "4ef647988b0bbfc9e3765b87890a8d64659d0a82f5a711ac39d76a859467ee32",
+    "scene.blend": "dc770934f882e809a1356d4675198c9d128158ca61339dea0b0535be8cf052bb",
+    "README.md": "034088ac90855f9054643739b99bae74586b7fcf247373e22b9fb86947e3c29f",
+    "COLOR-SOURCE-REGISTER.json": "d45ec91484847d0af52895d49b486041ea854708830874446dd9e23f8c2b64b5",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "d9d8cf06bb2349a533db56f9c1a12cf458de806f9080d58ef041637668c506d6",
+    "SCENE-QA.json": "5d06253f282246ec053eeada89c433c4c3833eae7b0d3691f5ea1e421c1046e0",
+    "DELIVERY-QA.json": "24d693c94ae5e55e46ea3415914b02d5054705418e79784f5d0f2d04f1d1424a",
+    "FRAMING-QA.json": "cfe9f326c33bcfc2cff50f9035792b8c8f75c025c076a196c5ec5fe75083abed"
+  },
+  "png_sha256": {
+    "preview.png": "ac229e5343937960e13c3ba3465aee878507f5a9d061bc2e95f4d0eb278d756c",
+    "rear.png": "9fe6c9e049f09eb3d43704e2cf864828a14cf2ebe6cf5cd5c41ee2ca15d69a73",
+    "front.png": "949f746eb60eb427d2d6970ee389ec769db3e38e393f9a623550e11652ab0fb2",
+    "back.png": "d11fd5cb1cf3315ef1417a6d494af20b1b0f9714fe4ef985397892cf371152af",
+    "west.png": "56b075a07e944059fc17ec4074fab52fced6419f3ca7a917c27381247cc4c19a",
+    "east.png": "9d6afe2c96a84ef062e12504900e177befce55b3e7d8f7e28dc92a07760fa7f1",
+    "top.png": "9958832f2acc871b39280c99f5aaeded06d80105be1d43a7aafecd8ee66cc1cb",
+    "entry-detail.png": "0300dee987626374b0f9bdd833a65dbbae9d5261a59fa13aec2867c6776f3175",
+    "facade-detail.png": "6a2425c0e4060af779e11ca120342a05860b30d4ac74a41c44ca86006f54c1c2",
+    "roof-detail.png": "baf792ba0037856fc625c65ba8d4929de3241bc1333edfca41b2ef32c008dcde"
+  },
+  "source_review_sha256": {
+    "LONGSHAN-INDEPENDENT-FOCUSED-COLOR-REVIEW-1820.json": "c133005a5bbdadb5453a7b230ec2869065f552b27e927ad5e0a9940f49477af4",
+    "COLOR-SOURCE-PRELIMINARY-1818.json": "29971276c3fd6439a7d6180ec64ca5d6728b620064b4a852aafc19090ecedf73",
+    "LONGSHAN-COLOR-SOURCE-GO-1822.json": "9287e85e1c1357015e57646205b430b035ebc366b8fe40a0f6b14d4fb17b4ab6"
+  },
+  "numeric_checks": {
+    "original_triangles": 29236,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "build_model.py": true
+    },
+    "five_material_counts": [
+      5624,
+      1136,
+      207,
+      76,
+      22193
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_vertex_serialization_max_delta_mm": 5.000000413701855e-09,
+    "3MF_unit": "millimeter",
+    "original_main_front_horizontal_wall_top_neutral_faces": 21,
+    "original_gallery_roof_intersection_neutral_faces_left_right": [
+      86,
+      88
+    ],
+    "unexplained_nonhorizontal_neutral_side_front_faces": 0
+  },
+  "actual_visual_review": {
+    "preview": "PASS full model/base and readable caption; bounded domains coherent",
+    "rear": "PASS full model/base and readable caption; bounded domains coherent",
+    "front": "PASS full model/base and readable caption; bounded domains coherent",
+    "back": "PASS full model/base and readable caption; bounded domains coherent",
+    "west": "PASS full model/base and readable caption; bounded domains coherent",
+    "east": "PASS full model/base and readable caption; bounded domains coherent",
+    "top": "PASS full model/base and readable caption; bounded domains coherent",
+    "entry-detail": "PASS intentional local framing; no material wedge",
+    "facade-detail": "PASS intentional local framing; no material wedge",
+    "roof-detail": "PASS intentional local framing; no material wedge"
+  },
+  "source_findings": [
+    "Four official temple photos and original code/front render actually inspected; configuration diagram and lit interior red/gold excluded as daylight exterior color evidence.",
+    "Muted orange only complete front-facing original roof skin facets matched to original triangular heightfields or tower frustum surfaces. Back slopes, crests, towers walls and unknown courtyard/back neutral.",
+    "All ten images individually viewed including three details. Visible neutral patches independently identified as original horizontal hall tops or original intersecting gallery roofs, not missed hall tile facets; disclosed rather than painted to conceal original geometry.",
+    "Front gray stone and genuine recess shadows only; no imaginary red doors or green rectangular tower windows added to incompatible original geometry.",
+    "Paired tower roof color continuity is bounded family inference, not every hidden face photo-confirmed. README retains original approximate geometry, limited colors, private-source rights and untested printing."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen five actual shaders PASS",
+    "delivery/framing PASS"
+  ],
+  "limitations": [
+    "Original approximate shape unchanged, not newly surveyed.",
+    "No exact current or dated as-built color claim.",
+    "Five material families not tested filament slicing; no physical print.",
+    "Private sources excluded from public package, no blanket copyright license."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}

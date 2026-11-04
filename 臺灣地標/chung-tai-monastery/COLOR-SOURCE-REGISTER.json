@@ -1,0 +1,76 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "chung-tai-monastery",
+  "original_faces": 13668,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T18:02:00Z",
+  "approved_mapping": [
+    {
+      "part": "Front walls",
+      "coordinates": "front=-Y; long wing y=-34, central tower y=-12.5, entry y≈-46.5",
+      "color": "pale pink-gray stone",
+      "limits": "Whole source-supported front faces only; large side and rear planes neutral."
+    },
+    {
+      "part": "Central lotus window",
+      "coordinates": "original front flame around x0/y−12,z48..80 and existing ribs",
+      "color": "muted gray-blue backing, pale ribs and restrained light-gold existing frame",
+      "limits": "No invented transparency or detailed gold patterns; rear counterpart neutral."
+    },
+    {
+      "part": "Crown",
+      "coordinates": "original eight petals/jewel/finial around x0,y5,z99..132",
+      "color": "muted gold family",
+      "limits": "Same crown component continuity explicitly inferred; not each unseen face photograph-confirmed."
+    },
+    {
+      "part": "Front eaves",
+      "coordinates": "Existing front-facing slopes and separate front bands of corner/entry/tower roofs",
+      "color": "dark warm gray with only uniquely separated pale/gold trim",
+      "limits": "No all-surface roof painting, no small ornament textures; side/back/top neutral."
+    },
+    {
+      "part": "Front recesses",
+      "coordinates": "Existing front wing and entry cuts only",
+      "color": "dark gray/gray-blue",
+      "limits": "Shadow/backing, no interior."
+    }
+  ],
+  "mandatory_public_limits": [
+    "Official-front photograph actually inspected; architect HTTP403 image/page not obtained, not used.",
+    "Old build comment claiming rear night photograph does not establish available color evidence. Rear sloping shoulder faces at y38 and rear lotus window remain neutral.",
+    "Front staff color may use restrained pale/gold family only where original entire component supported; no extra rings or symbols.",
+    "No new geometry or facet splitting. Full-vertex surface tests, not centroid color bands; unresolved crossing facets retain coherent neutral plane.",
+    "Source availability is not publication/print QA or blanket photo redistribution permission. Private source photo not bundled publicly."
+  ],
+  "rights": "公開官照未證CC；原照私人保存不貼圖、不保證商用授權",
+  "capture_dates": "照片未確證拍攝日，色值不校準",
+  "palette_nominal_srgb": {
+    "front_stone": "#CDBFBC",
+    "gold": "#BEA65D",
+    "front_roof": "#55574F",
+    "glass_appearance": "#536A7C",
+    "pale_trim": "#D5CEAF",
+    "shadow": "#414B46",
+    "neutral": "#A7ABA5"
+  },
+  "required_QA": [
+    "原STL bytes/頂點/三角一致",
+    "十視圖/材域獨審、全頂點域不造centroid楔",
+    "未知中性、來源不公開/貼圖",
+    "保留原檔不刪除"
+  ],
+  "unique_scope": "前向石/窗/檐有據，冠頂同一構件金色連續為明示推定；背蓮窗與後斜肩/後側屋頂中性，不借403未得夜照。",
+  "source_GO_sha256": "8230c76176c96a187c654ccd1853dad5743836ec190af0c2359b6b9869a86dc9",
+  "independent_review_sha256": "f4b81ffcb3a7046a1a4b2e3d14b8262f1df38b8f38e95789aab8d2252b66e71b",
+  "sources": [
+    {
+      "sha256": "0fe568eb963317342a346f373b3c586910f67c12f11164ff3700b9b900d74ca5",
+      "url": "https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_R32_2.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "source_issued_model_QA_pending": "Historical source-stage flag only. Final model evidence: COLOR-FORMAT-GEOMETRY-QA, SCENE-QA, DELIVERY-QA and SOURCE-VISUAL-QA.",
+  "original_photographs_public": false
+}

@@ -1,0 +1,102 @@
+{
+  "slug": "dongyong-lighthouse",
+  "original_faces": 11696,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T17:48:00Z",
+  "sources": [
+    {
+      "path": "color-source-review-20261102/dongyong-lighthouse/official-41.jpg",
+      "sha256": "40aa913d0abb22041210e36a8fe1955596f447bba349744788ceaa007053d6b0",
+      "url": "https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94(%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94)_%E6%9D%B1%E5%BC%95_2025_41.jpg",
+      "actually_viewed": true
+    },
+    {
+      "path": "color-source-review-20261102/dongyong-lighthouse/official-49.jpg",
+      "sha256": "e88ec309fcd7338eb2a99db2bf4afa6efd5e94000587197615e28e537e3b9c24",
+      "url": "https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94(%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94)_%E6%9D%B1%E5%BC%95_2025_49.jpg",
+      "actually_viewed": true
+    },
+    {
+      "path": "color-source-review-20261102/dongyong-lighthouse/official-46.jpg",
+      "sha256": "75a8e3d748b7b9b684fadfd4d0374abec463f8a24d73a0fff08755adb1a84ff1",
+      "url": "https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94(%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94)_%E6%9D%B1%E5%BC%95_2025_46.jpg",
+      "actually_viewed": true
+    },
+    {
+      "path": "color-source-review-20261102/dongyong-lighthouse/official-12.jpg",
+      "sha256": "d96da1b2d6f63f3117a0da7474492184179fe593a116ae2775d4666945b3ffd3",
+      "url": "https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94(%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94)_%E6%9D%B1%E5%BC%95_2025_12.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "audit": {
+    "path": "color-audit-landmark4-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
+    "sha256": "8ef8d1739da688e441e6c72c436dcd222b221a70654d25507d0e5036fe4da042"
+  },
+  "independent_review": {
+    "path": "color-source-review-20261102/dongyong-lighthouse/dongyong-lighthouse-INDEPENDENT-FOCUSED-COLOR-REVIEW-1746.json",
+    "sha256": "6db288a529400506d3b9de266694984e21ca34c6eac1fcbee7975387ff79a55e"
+  },
+  "approved_mapping": [
+    {
+      "domain": "original tower center(-32,-15), shaft and lower lantern; corner/side vestibule; original stair and low parapet",
+      "family": "off-white",
+      "basis": "three daylight photos of same white structure; cylindrical continuation bounded, not every hidden surface independently photographed"
+    },
+    {
+      "domain": "dome z92..103.5 and original simplified finial",
+      "family": "near-black/dark gray",
+      "basis": "clear daylight 49/41/46; no new weather-vane geometry"
+    },
+    {
+      "domain": "upper lantern drum z76..91",
+      "family": "pale neutral, separate existing relief mullions white",
+      "basis": "daylight shows opaque white screens and pale glass mixed; cannot classify all12 original sectors as blue glazing or replicate night illumination"
+    },
+    {
+      "domain": "exposed gallery walking ring at z61..62.5 and visible stair treads",
+      "family": "muted stone gray/brown",
+      "basis": "daylight walking stone; no invented rust/masonry lines"
+    },
+    {
+      "domain": "existing aperture backs",
+      "family": "dark shadow",
+      "basis": "shallow existing exterior recesses only"
+    },
+    {
+      "domain": "coarse cliff/rock shoulders and display base",
+      "family": "neutral",
+      "basis": "abstracted unmeasured terrain not paint-mapped to vegetation or sea"
+    }
+  ],
+  "mandatory_public_limits": [
+    "official-12 is sunset semantic/location reference only, not daytime blue/gold color evidence.",
+    "No lighthouse interior, optical apparatus, people, flags or security detail.",
+    "Only original complete facets, no added geometry or splitting to create false color borders.",
+    "Original coarse geometry not newly accuracy-certified; final arrays and visual QA required.",
+    "Reference photos private, no texture redistribution or blanket licensing guarantee."
+  ],
+  "rights": "官網與專業刊物公開不等於CC，原圖私人保存、不貼圖不再散布，不保證商用授權",
+  "source_period": "2025相簿或2016刊物為來源期間，不當每張精確拍攝日",
+  "palette_nominal_srgb": {
+    "tower": "#DBDDD3",
+    "dome": "#292F2F",
+    "drum_neutral": "#BCC4BE",
+    "stone": "#AAA18C",
+    "shadow": "#454E4B",
+    "neutral": "#A7ABA5"
+  },
+  "model_QA_pending": true,
+  "required_QA": [
+    "原STL bytes/頂點/三角一致",
+    "10視圖＋材域獨審，完整面域/法線/原primitive一致，無centroid楔",
+    "未知中性、無照片公開/貼圖",
+    "原檔保留不刪檔"
+  ],
+  "unique_scope": "白塔同一連續構件色族可概化，燈室鼓體淡中性＋原凸梃白，不能整鼓藍玻璃；黑帽、石色步行環，粗崖體/展示底座中性。",
+  "source_GO_sha256": "c2deb94735243df1c13fd09546a668aa0a87b237c01ed2301353f7b77fdea9a9",
+  "source_status_at_issue": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "status": "SOURCE_GO_APPLIED_MODEL_QA_SEPARATE",
+  "private_source_backup_receipt": "color-source-backup-landmark4-20261102-1748/PRIVATE-BACKUP-RECEIPT-1748.json"
+}

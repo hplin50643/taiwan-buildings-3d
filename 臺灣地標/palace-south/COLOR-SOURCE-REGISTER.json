@@ -1,0 +1,80 @@
+{
+  "scope": "Same-item original museum and existing Zhimei Bridge bounded color upgrade",
+  "count_delta": 0,
+  "source_GO_sha256": "679b90d60dd59b43d5b36ff341304e2447b6dfc8e97c83ebb86cfb06135dfa30",
+  "independent_review_sha256": "1867876c7334e62a41685cc01250dc6e4ba7101eae3306c2a7d1da50ade0a99d",
+  "sources": [
+    {
+      "sha256": "da4b24b097134a5225137d762e54f245d1a83df7b7bf3a23f1b081b9fb0a09ad",
+      "url": "https://www.twarchitect.org.tw/web2015/wp-content/uploads/2016/08/201608a1-1.jpg",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "2ea35884f8889c0f8f1d45a50af96a8e0adf2650feb394d8d758e8f501c81522",
+      "url": "https://www.twarchitect.org.tw/web2015/wp-content/uploads/2016/08/201608a1-3.jpg",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "d057b23a6f8635b00ef9aa12813b4a67ea43f5f3f2aa387d4f13369b1893918f",
+      "url": "https://www.twarchitect.org.tw/web2015/wp-content/uploads/2016/08/201608a1-2.jpg",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "a2b52b2468279692754af991226fe3ae6b6d3e8a2eb975c83c3e61c8aa078545",
+      "url": "https://south.npm.gov.tw/uploads/Info-pic-00.jpg",
+      "actually_viewed": true
+    },
+    {
+      "sha256": "3ed5d337db9af666c6ad02ebf0fbb07facf3cb7caa41db5e6825166213e9dd0b",
+      "url": "https://south.npm.gov.tw/uploads/Info-pic-01.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "rights": "官網與專業刊物公開不等於CC，原圖私人保存、不貼圖不再散布，不保證商用授權",
+  "approved_mapping": [
+    {
+      "domain": "visible front/entry part of original ink sweep around(-29,18) to(-5,8)",
+      "family": "dark charcoal",
+      "basis": "daylight architect-mag-3 left cladding; original smooth mass cannot reproduce thousands of discs"
+    },
+    {
+      "domain": "existing entry portal x-3..20,y-2..7,z3..25 exterior frame",
+      "family": "dark gray",
+      "basis": "daylight entry photo; original portal coarse shape retained"
+    },
+    {
+      "domain": "existing front portal recessed backing and identifiable front glass sweep wall near entry",
+      "family": "muted gray-green opaque appearance",
+      "basis": "daylight entry photo; no fake transparent interior, no whole roof blue"
+    },
+    {
+      "domain": "existing front curtain-wall ribs and identifiable horizontal bars",
+      "family": "gray/silver or dark-gray bounded component contrast",
+      "basis": "daylight framing; original repeated ribs are approximate"
+    },
+    {
+      "domain": "existing bridge arch/hangers/deck",
+      "family": "conservative muted gray family, separately identifiable components only",
+      "basis": "official daylight overall supports silhouette and broadly neutral structural family; sunset not gold paint"
+    },
+    {
+      "domain": "unseen roof tops, inward/back curved walls, courtyard/solid support and base",
+      "family": "neutral",
+      "basis": "no calibrated daytime face map; sunset roof glints not material proof"
+    }
+  ],
+  "source_period": "2025相簿或2016刊物為來源期間，不當每張精確拍攝日",
+  "mandatory_limits": [
+    "architect-mag-1 night and architect-mag-2 sunrise only shape/position; do not adopt glowing yellow windows or golden roof.",
+    "official-bridge sunset only structure support, not exact hue.",
+    "Use original primitive face recognition plus full-vertex/local-domain limits for interwoven sweeps, not broad bounding-box coloring or centroid wedges.",
+    "If front versus back curved-wall location cannot be determined coherently, reduce to portal and uniquely mapped front components; source PASS is conditional, not license to color entire curves.",
+    "Main original south museum only; no later second pavilion or newly modeled bridge underside.",
+    "Only original complete facets, no added geometry or splitting to create false color borders.",
+    "Original coarse geometry not newly accuracy-certified; final arrays and visual QA required.",
+    "Reference photos private, no texture redistribution or blanket licensing guarantee."
+  ],
+  "mandatory_fallback": "交織曲面不能唯一辨前域時收縮到已辨門框/入口凹底/完整框件；不將整個glass sweep含屋頂染藍，不改填實橋底幾何。",
+  "source_issued_QA_pending": "Historical source issue preceded model; final model QA is separate COLOR-FORMAT-GEOMETRY-QA, SCENE-QA, DELIVERY-QA and SOURCE-VISUAL-QA.",
+  "original_photographs_public": false
+}

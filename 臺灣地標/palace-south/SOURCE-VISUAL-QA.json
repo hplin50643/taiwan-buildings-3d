@@ -1,0 +1,98 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T18:19:20Z",
+  "mesh_sha256": "36474062e92253cdfc6157845453494e30845b038be75dbf9c81f6a153b1dd17",
+  "build_code_sha256": "ac23a94ec3b66412332aeca107c423afe24a77528ec041e259e65daab00c072a",
+  "color_code_sha256": "6c40bbc8c704953747d13c54ec9644cff57332c569b9cc6103f21004a4d528ab",
+  "render_code_sha256": "1cbaa7a63a75976b4f2db5a13361bd9fed1892d10969a1a0831e5b315c6cdc86",
+  "readme_sha256": "a330fe69c6144147c0172b3d4d3ea12018c59688df420718103fb0be28c62db3",
+  "file_sha256": {
+    "model.stl": "79d4e4dd06a731f5f17ea7feb3b848f0cae04e317acdd1bb64d94383a21dc476",
+    "build_model.py": "ac23a94ec3b66412332aeca107c423afe24a77528ec041e259e65daab00c072a",
+    "colorize_model.py": "6c40bbc8c704953747d13c54ec9644cff57332c569b9cc6103f21004a4d528ab",
+    "render_color.py": "1cbaa7a63a75976b4f2db5a13361bd9fed1892d10969a1a0831e5b315c6cdc86",
+    "export_appearance.py": "306df0a2cd53c42b2593729c692b6e93303607a3f73a2447c0a6374502b2bf3b",
+    "validate_color.py": "4bf1e6147df6779ac9a80c7ca9594103b1e996aeb3d56f9cde89f02f2f72e61c",
+    "verify_color_scene.py": "6ab935bf170310f3cbf9a0b44f9e16dab203aa7a8c8986076d6c7f3492f243fb",
+    "color-mesh.npz": "36474062e92253cdfc6157845453494e30845b038be75dbf9c81f6a153b1dd17",
+    "palette.json": "6e5959aeab984adb00ea2e4da2288fc2b584dd9d440aad6aea2b679c69732c49",
+    "appearance-materials.json": "9a03a4969dd07f8af46afcc5dd4de6c34800a3d3478602096a93ca55bc530e21",
+    "appearance.3mf": "00038c87a00ae6921a19c809cd9950ae41840777fc3cbdd7da7a1a5cad26eeae",
+    "scene.blend": "6cb56facfae58a3b300106d6d3c894032c5d0e921fddf1ce44bdb8033596c380",
+    "README.md": "a330fe69c6144147c0172b3d4d3ea12018c59688df420718103fb0be28c62db3",
+    "COLOR-SOURCE-REGISTER.json": "92269b2efa7f299724fb930aa7f04aa15b6610e928928aa5dfc67bc61735dc40",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "3e87852e5b5d7c2cfaf9c5c87fa507e9b9697abfd7fa07f45cc27756661ef60e",
+    "SCENE-QA.json": "050c093b41595f37fe79b3dabbc1ea46d31fcea7d7e60bfd696c5a07d71c2435",
+    "DELIVERY-QA.json": "7cdcc331710edb7fd4442603626483209f8a17b45015e6ef75ead43247e2990d",
+    "FRAMING-QA.json": "031398db5c8e18e3bd48c695c0e050815b56d1e05772fb87f4319b05e39d2bfd"
+  },
+  "png_sha256": {
+    "preview.png": "bd379f0f68d3659ccccc84b28dea8262612b69d54199a43f37d59eb80c50f208",
+    "rear.png": "2d0f9ca5b2212fab2058a9be3752f272c4c0091a7b81f8b7f06a116c87659028",
+    "front.png": "1790e62b22d7b18a13165188f42669c9c211ad310afebe2e3cde8edbb1306ba2",
+    "back.png": "6f26e09212fda088e65d1c22ec738af4e19ea43ca8f3fbe292b81c08193e8b18",
+    "west.png": "eb32353a7faa944eb08fc7a6833749088e5c83f2b71035e25d3d4ed6fcbfb9a4",
+    "east.png": "b1e70b75e3b2439df7f00a9090477a05a4e12b007b586127f5bd8c704641e6e2",
+    "top.png": "dd74ed301fa661d5cd2a570ecbe6771d5b85af3b46e8073b2cdbbee2d2c43aa9",
+    "entry-detail.png": "8228a3484797cf5204f54bd00b2b9d836f684e153645d73a75407fae1b253b62",
+    "corridor-detail.png": "f212b69119dc126e5d98f37c6b4206677d76444fa3c294d4294390808cf959db",
+    "roof-detail.png": "7f7cb6c0d3408aef47ea478b179408a4a298204cefe65bccb1b50fc5099e7f27"
+  },
+  "source_review_sha256": {
+    "palace-south-INDEPENDENT-FOCUSED-COLOR-REVIEW-1746.json": "1867876c7334e62a41685cc01250dc6e4ba7101eae3306c2a7d1da50ade0a99d"
+  },
+  "numeric_checks": {
+    "original_triangles": 29422,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "build_model.py": true
+    },
+    "six_material_counts": [
+      51,
+      53,
+      424,
+      711,
+      8201,
+      19982
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_vertex_serialization_max_delta_mm": 5.000000413701855e-09,
+    "3MF_unit": "millimeter",
+    "portal_rear_y7_26_faces_all_neutral": true,
+    "ink_glass_upward_faces": 0
+  },
+  "actual_visual_review": {
+    "preview": "PASS full model/base and readable caption; bounded domains coherent",
+    "rear": "PASS full model/base and readable caption; bounded domains coherent",
+    "front": "PASS full model/base and readable caption; bounded domains coherent",
+    "back": "PASS full model/base and readable caption; bounded domains coherent",
+    "west": "PASS full model/base and readable caption; bounded domains coherent",
+    "east": "PASS full model/base and readable caption; bounded domains coherent",
+    "top": "PASS full model/base and readable caption; bounded domains coherent",
+    "entry-detail": "PASS intentional local framing; no material wedge",
+    "corridor-detail": "PASS intentional local framing; no material wedge",
+    "roof-detail": "PASS intentional local framing; no material wedge"
+  },
+  "source_findings": [
+    "Official daylight overall and architect daytime entrance photographs inspected; sunrise/night and sunset bridge photographs only support form, not gold/yellow material.",
+    "Local front outer ink cladding charcoal and glass-family backing muted green-gray; original nearby frames silver-gray. Full vertices plus center/normal matched to original primitive side patches, no geometry added.",
+    "Boundaries of colored patches are disclosed limits of verified coverage, not assertions of real paint seams. Unknown roof, inward/back curves remain neutral.",
+    "V1 portal rear plane unsupported deep gray corrected in V2: all26 y7 faces neutral, front frame/returns and original recessed backing retained.",
+    "Bridge existing arch/hangers/rail/deck gray family; original print-filled underside neutral, not represented as real bridge anatomy.",
+    "All ten V2 images re-viewed individually after completed render; no false diagonal color wedges, captions readable and full views framed. README and register preserve geometric/source/printing limits."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen six actual shaders PASS",
+    "delivery/framing PASS"
+  ],
+  "limitations": [
+    "Original approximate shape unchanged, not newly surveyed.",
+    "No exact current or dated as-built color claim.",
+    "Six material families not tested filament slicing; no physical print.",
+    "Private sources excluded from public package, no blanket copyright license."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}

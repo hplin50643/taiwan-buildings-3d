@@ -1,0 +1,95 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T19:10:00Z",
+  "mesh_sha256": "262d9b2c1b865667ea4a0c16ed2a3fff83114d4bdd657641dac2271a995206e2",
+  "build_code_sha256": "2245637954bc1dc21b6085690da27f8084e7674528c8326e8494dea82632cc5b",
+  "color_code_sha256": "7a2a24c29624f680350c17e90a34c8a00ce932abf394e484a79789652f52f0de",
+  "render_code_sha256": "7b18c0ef2afc2cfe0978cff6b76d203909e5d0ca5ded36db3f1b050687549027",
+  "readme_sha256": "4cedbaf7d502cd464ded4b90a3c0405fe6e64710dd53b7a7d7ebe51c77851ad7",
+  "file_sha256": {
+    "model.stl": "955fa5a6f1c348668930e03d7cea8edef6b02fae4dab5ee06c192bafa0667b2a",
+    "build_model.py": "2245637954bc1dc21b6085690da27f8084e7674528c8326e8494dea82632cc5b",
+    "colorize_model.py": "7a2a24c29624f680350c17e90a34c8a00ce932abf394e484a79789652f52f0de",
+    "render_color.py": "7b18c0ef2afc2cfe0978cff6b76d203909e5d0ca5ded36db3f1b050687549027",
+    "export_appearance.py": "1265b3aee5f2867991d303db0f307c6e1cc5ab74eaa0b5380048501f6fab36b5",
+    "validate_color.py": "b9bb69fb5e812e6581b73fda5fabec5411c8fbcb0eba05b8427da132a1ddba32",
+    "verify_color_scene.py": "dd4cb782244c6b88e32e21400329025e602aad47708301384cd0002ff6e08746",
+    "color-mesh.npz": "262d9b2c1b865667ea4a0c16ed2a3fff83114d4bdd657641dac2271a995206e2",
+    "palette.json": "9a79b4099b1408f6af293db1885c36b939d0b23cb6d5991986cf2fd9759f29dd",
+    "appearance-materials.json": "058e5bbf48a70bdb6b045f453b3979e601facf433deed5d95beded039939434f",
+    "appearance.3mf": "d86086f913c255a90fa95025c3f578cf12a3d389a5b862ac6c2223964f57c374",
+    "scene.blend": "8ebabc9d2fe589030c852806397fc01fce5fb60cdf978ec55701929603b7e15a",
+    "README.md": "4cedbaf7d502cd464ded4b90a3c0405fe6e64710dd53b7a7d7ebe51c77851ad7",
+    "COLOR-SOURCE-REGISTER.json": "a1f5497f80f93981b6792062f69c134a98b8544772ddea5fa550b3a543d6dc2a",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "e1af01560fea539b379ca07702da8cbd2fd82e1f2dae40d542541d6723d6d23d",
+    "SCENE-QA.json": "814b06867d75343aa8997fef4073a1c28c70ca372eed768d4b5bf62b3e8bc042",
+    "DELIVERY-QA.json": "b3249c4017e2de1b2976c166871ca68f53295c8328a7cc89e765db195255edb3",
+    "FRAMING-QA.json": "2ead3c26be4cea60997abdda428a734f2f2301e363706adbbe49cf5cb9305517"
+  },
+  "png_sha256": {
+    "preview.png": "b31d21c8bffb59c97f07faf96e22ccfbf1e22046fb55886e6431786c2c6b22c9",
+    "rear.png": "48c254fe8145b2194e71efce49069940e5e301f39ba7bb32f6b86c61bf835182",
+    "front.png": "03fe77fa4d6143b07000b077595687ce98f097b8cc97f29d4599c6c3258ab97f",
+    "back.png": "1b91c39e9156d09a30cb84683fbe6fb286fcd7a466db9d305dd88b262bacec6d",
+    "west.png": "7af644e143c68b8315571ddf9fea6fd34a0f7991a0fae25065bcfa7da427c8f8",
+    "east.png": "393595afa30f306487ff778d5cbc25732237586f9d1bcf6de9ea8a07b823a4fe",
+    "top.png": "491b08f35aabafe51e8469a02e59f77607248a6b4381a376345f4355a8c351d0",
+    "entry-detail.png": "5b3a5ca34c4f1a48d02a00347e1a3479d14776ad4386ab16182e11b5916d8d8c",
+    "corridor-detail.png": "33075477032336fa8f0bccc4c60a0c3a3c321107c8f660f2e1c5d719a46a820a",
+    "roof-detail.png": "48ab16ae011aca7a24f944d77433ba1577787f903819d7dfe03113db288a8336"
+  },
+  "source_review_sha256": {
+    "TAICHUNG-THEATER-INDEPENDENT-FOCUSED-COLOR-REVIEW-1851.json": "9b6ae9ec2c58282c0823e30487b64be1496dc2b49acd9368cbbef5f362e6d5e4"
+  },
+  "numeric_checks": {
+    "original_triangles": 26702,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "build_model.py": true
+    },
+    "four_material_counts": [
+      17572,
+      1079,
+      3059,
+      4992
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_vertex_serialization_max_delta_mm": 4.999886726864133e-09,
+    "3MF_unit": "millimeter",
+    "threshold_faces_182_184_neutral": true,
+    "roof_horizontal_and_rear_stagehouse_neutral": true
+  },
+  "actual_visual_review": {
+    "preview": "PASS full model/base and readable caption; bounded domains coherent",
+    "rear": "PASS full model/base and readable caption; bounded domains coherent",
+    "front": "PASS full model/base and readable caption; bounded domains coherent",
+    "back": "PASS full model/base and readable caption; bounded domains coherent",
+    "west": "PASS full model/base and readable caption; bounded domains coherent",
+    "east": "PASS full model/base and readable caption; bounded domains coherent",
+    "top": "PASS full model/base and readable caption; bounded domains coherent",
+    "entry-detail": "PASS intentional local framing; no material wedge",
+    "corridor-detail": "PASS intentional local framing; no material wedge",
+    "roof-detail": "PASS intentional local framing; no material wedge"
+  },
+  "source_findings": [
+    "Three official photos, original code and original preview actually inspected.",
+    "Pale front/left/right shell and original curved returns; gray-green original closed glazing backing and gray existing mullions. No nighttime yellow lighting painted as material.",
+    "Four original rooftop funnels pale family, positions and geometry approximate. Entire horizontal roof remains neutral because grass/path boundaries absent.",
+    "V2 threshold faces182/184 at z3 returned neutral; original base not shell. Back and stagehouse neutral.",
+    "All ten V2 images individually inspected, no false diagonal patch or framing issue found. README retains source scope, private rights, original approximate geometry and untested printing."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen four actual shaders PASS",
+    "delivery/framing PASS"
+  ],
+  "limitations": [
+    "Original approximate shape unchanged, not newly surveyed.",
+    "No exact current or dated as-built color claim.",
+    "Four material families not tested filament slicing; no physical print.",
+    "Private sources excluded from public package, no blanket copyright license."
+  ],
+  "output_modified": false,
+  "files_deleted": false
+}

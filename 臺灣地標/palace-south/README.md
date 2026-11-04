@@ -1,3 +1,55 @@
+# 臺灣地標｜故宮南院：原幾何補彩色
+
+## 彩色模型預覽
+
+**同一項目材色更新（count_delta = 0），只補原模型可辨近入口完整面材域與既有橋構件；不把整座曲面當玻璃，也不以夕照取金色屋頂。側背、屋面及填實橋底維持中性。**
+
+| 正面斜視 | 背面斜視 | 正面 |
+|---|---|---|
+| ![預覽](preview.png) | ![背斜](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西面](west.png) | ![東面](east.png) |
+| ![頂面](top.png) | ![入口](entry-detail.png) | ![近入口曲牆](corridor-detail.png) |
+| ![至美橋既有構件](roof-detail.png) |  |  |
+
+## 材質範圍與限制
+
+保留原 29422 三角面、全部頂點與原比例；不新增圓盤、玻璃格、二館、橋底、人物或園區。原分析曲線量體與加粗框架為照片判讀概化，不因補色成為實測CAD。
+
+- 近入口墨韻量體外向壁局部炭灰；不是整棟黑色，也不描造原模型欠缺的數萬片圓盤。
+- 原入口框的垂直外皮及內返面深灰，已有入口凹底灰綠不透明外觀；不建假透明室內。不可對位頂面及入口原後板（y=7）中性，不把整個門框實體的背面自動染深灰。
+- 近入口飛白曲牆外向側限定灰綠，原可分前框／橫梃銀灰。採原 primitive 表面辨識：墨韻側面 path samples 78–104、飛白外側 100–129、前框104／111／118／125；完整原面與法線共同匹配，不以大bounding box或重心切出假斜塊。
+- **有色區與中性區交界是本次來源可核範圍的截止，不是宣稱現場在該線換漆或換材。** 內向壁、背側曲牆及大屋頂未證面中性，未細分的相交體與無法唯一對位部分不硬補色。
+- 既有至美橋弧架、吊件、內欄及向上deck採保守灰族。橋下為原列印簡化填實支撐，保持中性、不新挖空，也不把填實面稱真實橋底外觀。灰族不是經校準的橋鋼塗料色號。
+- 日照入口照作局部材質依據；夜照／日出只支持形狀與位置，不採黃燈窗或金屋皮。官方橋夕照只支持結構，不直接取夕陽色。2016刊物／2025相簿為來源期間，不當各張精確拍攝日。
+
+## 格式與重建
+
+原 `model.stl`、`build_model.py` bytes不變；原包沒有OBJ。原單材 `scene.blend` 私人保留 original-remote 稽核副本，公開同名 scene 更新為實際shader。STL不含彩色；新 `appearance.3mf` 有六種逐面基本材質，`color-mesh.npz` 保原三角座標。六色外觀不是已驗證四色／多耗材切片專案；未實際列印、未執行切片器驗證。
+
+```sh
+python -m pip install -r color-requirements.txt
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 3 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
+
+沿原requirements與Blender4.3.2，原表面材域辨識另需 rtree。臨時 primitive 只作既有面辨識，不加入任何輸出幾何；原 simplify(.004) 容差下用0.012 mm距離核對，不代表真實建築精度。隔離重建保留不刪。新QA見 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、DELIVERY-QA、SOURCE-VISUAL-QA；七全景完整邊界、三細景刻意局部構圖。原validation／rebuild_check／scene_check／previews及原程式保留歷程，不當本次彩色重建入口。
+
+## 來源與權利
+
+- [建築師雜誌日照入口](https://www.twarchitect.org.tw/web2015/wp-content/uploads/2016/08/201608a1-3.jpg)
+- [建築師雜誌夜景](https://www.twarchitect.org.tw/web2015/wp-content/uploads/2016/08/201608a1-1.jpg)與[日出屋面](https://www.twarchitect.org.tw/web2015/wp-content/uploads/2016/08/201608a1-2.jpg)僅形體佐證
+- [故宮南院官方整體照](https://south.npm.gov.tw/uploads/Info-pic-00.jpg)與[官方橋照](https://south.npm.gov.tw/uploads/Info-pic-01.jpg)
+
+來源hash及角色見 COLOR-SOURCE-REGISTER.json。官網與專業刊物公開不等於 CC 或商用再授權；原照私人保存、不隨模型公開、不貼圖，也不以儲存庫license再授權。模型不保證商用權利已清。本次僅建築外觀。
+
+## 原始模型說明與限制
+
+原文保留如下，材色及重建入口以新段落優先；舊單材圖不是本次彩色成果。
+
 # 故宮南院主館＋至美橋｜150 mm 外觀列印模型
 
 以館方與建築師刊登的實景及園區圖重建的桌上型外觀詮釋，非測繪複製品。保留墨韻樓、飛白館相互交織的流線量體，以及連向入口的彎曲至美橋。交付的是單一封閉、連通實體，無室內空腔；不是只有方盒的替代品。

@@ -1,0 +1,62 @@
+{
+  "original_STL_sha256": "79d4e4dd06a731f5f17ea7feb3b848f0cae04e317acdd1bb64d94383a21dc476",
+  "triangles": 29422,
+  "materials": {
+    "0": {
+      "name": "Local front ink cladding",
+      "hex": "#424B49",
+      "face_count": 51
+    },
+    "1": {
+      "name": "Front entry portal",
+      "hex": "#555D59",
+      "face_count": 53
+    },
+    "2": {
+      "name": "Local front glass appearance",
+      "hex": "#859A8C",
+      "face_count": 424
+    },
+    "3": {
+      "name": "Original front framing",
+      "hex": "#A9B0A8",
+      "face_count": 711
+    },
+    "4": {
+      "name": "Bridge structure family",
+      "hex": "#94978D",
+      "face_count": 8201
+    },
+    "5": {
+      "name": "Unverified neutral",
+      "hex": "#A7ABA5",
+      "face_count": 19982
+    }
+  },
+  "geometry_changed": false,
+  "assignment_method": "Full facet vertices+center and outward normal match to original primitive surface patches, tolerance .012 mm for original simplify(.004). No new output geometry.",
+  "bounded_curve_scope": {
+    "ink_path_side": -1,
+    "ink_path_samples": [
+      78,
+      104
+    ],
+    "glass_path_side": 1,
+    "glass_path_samples": [
+      100,
+      129
+    ],
+    "front_rib_indices": [
+      104,
+      111,
+      118,
+      125
+    ]
+  },
+  "matched_counts": {
+    "ink_front": 51,
+    "glass_front": 391,
+    "portal": 130,
+    "portal_back": 33
+  }
+}
