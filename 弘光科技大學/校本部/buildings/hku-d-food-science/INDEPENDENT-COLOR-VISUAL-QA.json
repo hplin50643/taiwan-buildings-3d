@@ -1,0 +1,60 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official food science exterior photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole y=-15plane2triangles onecomplete135x1.7capfront rectangle offwhite;4156neutral.",
+    "All957coplanar domains uniform,no clipping or partialtriangle paint.",
+    "Billboard-covered connectedgrid,mixedburgundy/glasswindowbacks,letteredcanopy,rightbalconies and roof top/otheredges neutral.",
+    "Sevenwholeviews fit;details show full narrow whitecapfront and neutral roof/grid.",
+    "Original4158triangles/STL/build unchanged;noimmutableOBJ,isolatedgeneratedOBJprivate,count_delta0.",
+    "D Food Science distinct from F Culinary and N roundtower;unknowncapture,no2026survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "fc7698bc4b33b7834a40d1b26836d5498296642093467bc9d54842aeb6d4eabd",
+    "README.zh-TW.md": "fc7698bc4b33b7834a40d1b26836d5498296642093467bc9d54842aeb6d4eabd",
+    "colorize_model.py": "cb963f0e1c71f6c58fe7fa8cffe81b0063bbd98d98c3249371c6588ac756e294",
+    "render_color.py": "a094f3abe246feeb50326d93b9cd8bcd3ad0a2313302fef4d9f92998b28df02a",
+    "color-mesh.npz": "eafb0049ec63593a8cabc90af827a509b422fcb5efd9f1c274d9d8210e0ab5b3",
+    "palette.json": "0e7dbd6eec6d7f3cc520d6d38c274b720cefdef0c94b38c9ba495a544f9119f7",
+    "appearance-materials.json": "678a19fda9ab1570881f7a975e7703efe290e1904d8429104c5d571022f8c5b7",
+    "COLOR-SOURCE-REGISTER.json": "db7e1e3e34d84dd16df6fe65460ee2eb75cdf948ea6125b3c4a29e1062e626ea",
+    "model.stl": "fbc389a257bb4a6d7b3cefe58e965f32886172ad52410655af4a472d8245ac81",
+    "build_model.py": "4c85c5bcb447824e74eae4c77655936b33ea7300a8590520f56fb1e977057485",
+    "preview.png": "9f8a7a99055727a5416e2fce9c797b79aabc33c5817461825bf30d2325c8ada1",
+    "rear.png": "65ff726d134ed3c78cce83d57a6d313327f1dcc89b325c74b609a39e3f743bab",
+    "front.png": "d49cc8e7036babcbdca126a94a59fc42788c8e4249c384f9c6be6bf64942b1b1",
+    "back.png": "aa0b84b10b553e3bc1babcc38a64e016c6fad1d5164b4db877e03933efafdda0",
+    "west.png": "6c49fa49f16846d29b20940575f526fff127d603e4bb94a2fdf577b28eda64c7",
+    "east.png": "f9b94b457a8a4cf05b3de06d71316ca2b963315185b43622013f7e6d1d5d2043",
+    "top.png": "042f0fc76b264ad38a5b94ebdd7943ca664f53e3d80025715f80b8aa3244493f",
+    "entry-detail.png": "2e5e32e805c047cf1aa714549bc473402236ac0d3aa18a6906517ac66f597215",
+    "facade-detail.png": "ba642f55d5712c22921558a46c989abc5911cb34249aa925ed1cb36ef9482935",
+    "roof-detail.png": "22b5121795a0b2a4800b5999170b2b1de4ddaf1e0fbe5a83fc2581599e3e9db9"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "ccace8c3eee017256bd7d0fd80c9e9beeb2af9dc770bb8fa69d6586ef3b49c2a",
+    "SCENE-QA.json": "6e524e984daaf8ca9186cb78e6b98b13639634b01ce27212f7fd679dfe2e9224",
+    "DELIVERY-QA.json": "60bf3d07fa6290b3b06badaaba208ede1aa1de5cd939eb724d91010ed8756091"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "093054e29e175f84bc92f0caeccc08d5d2fe2c0f4003c8794f1035b0c11e5b0c",
+    "ORIGINAL-RETENTION-QA.json": "ed99417dfc678637602a21f2eb3817c8a37bbba6381e9e64e619860e8a5e115a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0423.json": "60e7a4443bbab07f3e53ff6ea3ef61d69c027137849ba2edc76ae2eb31f40f17",
+    "INDEPENDENT-IDENTITY-0423.json": "85378114b875cb41bc019c843e55c8c7610a17c16a46d4030104639f2e5ec44b"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:26:30Z",
+  "parent_review": "Parent personally viewed official exteriorphoto, originalcode, preview and finaltenmontage. Whole y-15 plane2 complete topcapfront offwhite only;4156others neutral. Grid crosses advertisement,windowbacks wine-red spandrel/glass and letteredentry unknown neutral. LeftNroundtower excluded,rightbalcony rendernotcolorproof. Actual3MF name independently read HKU D Food Science matches slug. Sevenwholeviews fit/threeintentionaldetails,original4158triangles18immutablefiles/noOBJ unchanged,not2026/fullcolor."
+}

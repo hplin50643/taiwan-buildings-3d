@@ -1,71 +1,32 @@
-# 弘光科技大學｜校門警衛室與曲塔
+# 弘光校門警衛室與曲塔｜前弧帶外面局部淺灰
 
-## 模型預覽
+**塔身、徽牌、玻璃與後弧等材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅前半弧帶原外立面98三角名義淺灰，非全體完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![俯視](previews/top.png) |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![前弧外面](entry-detail.png)|![右弧交接](facade-detail.png)|
+|![弧帶頂底](roof-detail.png)|||
 
-## 模型範圍
+## 材色範圍
+同 hku-gate-guardhouse 原項目，same-item、count_delta=0。弘光科技大學校本部警衛室／整合曲塔單群，獨立校名字牆不在此模。2560原三角、STL與build_model.py字節不變，原18件無OBJ，不造原件。
+- 原弧帶96邊ellipse半徑38/25、中心y−2、局部z0..19，原先Rx3°再Ry−12°、平移z43，最後全模uniform scale。由STL原底座x跨度/110重算scale，再反旋全三頂點。
+- 僅前半facet48..95完整有限chord外立域。每facet所有原無限plane三角均符合弦切向0..length與局部z0..19；不以normal或centroid篩面。47片各2三角，facet94原Boolean四碎片全保，共98面，並非假設96。
+- 其餘2462中性：整塔身／徽牌／槽／斜頂、弧後半／內壁／頂底、未核下垂端與支柱、混門窗玻璃警衛室、地面全部不擴染。
+- 原粗化橢圓、旋轉、厚度、支柱與Boolean交界保留；不改幾何補精度。中性邊界是證據範圍非真實材縫，不造徽字或透明玻璃。
 
-保留高曲塔斜頂、下部左右漸升的開口弧形雨簷、弧形單層警衛室、門窗與雨簷端落地支牆。塔與警衛室同一件，獨立校名牆和門外道路不納入。
+## 來源與日期
+親看正側官方外觀及另一後視實照，前弧外淺灰與下玻璃混皮可區別；後視只輔助辨識，不自動放行未證全塔。照片精確拍攝日期未由本次核定；檔名2024非唯一日期證據，不稱2026現況。
+原照私人不公開、不貼圖，未確認CC或再散布授權，不保證商用。HEX是名義色族非校準色票。正式GO與保留先期獨審分開，不免builder QA。
 
-曲率、深度、遮擋後側門窗為視覺近似；雨簷弧帶以開口橢圓環段簡化並以至少2mm厚度融合；曲簷沿正面左右呈12度緩升，頂底同斜，支柱加粗。校徽只留無字附牆圓牌，不复制商標圖案/文字。並非校門全場景或2026現地測繪。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原最高150mm整體縮放展示，非測量比例。物件名 HKU Gate Guardhouse partial color，由真slug／館名獨立核。STL無色，3MF及Blender逐面分材；兩材標籤非驗證兩色／四色耗材切片，未實際列印。
 
-每棟獨立視覺比例，最長邊含底板150 mm；不是測量、BIM或施工圖。尺寸：110.52 × 95.45 × 150.00 mm。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離精確原build＋color重建、原bytes／全三角multiset、閉合正體積、3MF逐面材、scene重開、十圖1200×900及圖文hash。隔離原依賴，不改原碼；程序不替代人工來源核。
+原README／previews／validation／renderer保留歷程，不冒充新QA；沒有刪檔。
 
-校方113學年建物基線列警衛室，2024有實拍；2026完整現況未核。
-
-
-
-## 下載與重建
-
-- [STL](model.stl)
-
-- [Blender可編輯場景](scene.blend)
-
-- [Python重建程式](build_model.py)
-
-- [依賴](requirements.txt)
-
-- [幾何驗證](validation.json)
-
-- [0.2 mm截面閉合及Polygon有效性](valid-sections.json)
-
-- [0.8 mm XY薄特徵篩查](thin-feature-check.json)
-
-
-
-Python 3.12安裝requirements.txt後執行 python build_model.py；Blender執行 blender -b -t 2 -P render_preview.py；python validate_model.py；python check_valid_sections.py model.stl .；python thin_canonical_v2.py。
-
-
-
-## 驗證與列印限制
-
-原始STL單表面殼、每邊兩面、vertex-link單環、法向與繞序、正體積、150 mm尺寸、重建SHA256與Blend三角幾何一致均通過。750層0.2 mm截面逐環與合併Polygon皆閉合有效，不使用修補。
-
-0.8 mm XY形態開運算篩查最大面積損失比例 0.003242；此值不是最薄壁厚保證。設計獨立肋/框一般至少1 mm，窗上牆面浮雕可更淺。
-
-挑簷、深凹廊、懸挑平台需在實際切片軟體檢查支撐、橋接及方向。尚未正式切片或實體試印，不承諾任何機型無支撐直接列印。
-
-
-
-## 公開來源
-
-- [師大大學博覽會校方供圖：校門實拍](https://www.nups.ntnu.edu.tw/univ-expo?school=hk)：拍攝日期未標
-
-- [曲塔背側現地實拍](https://www.markchoo.com.tw/mark/3868/photo/68)：2024-10-19
-
-- [校方113學年建物基線](https://www.hk.edu.tw/学校现况简介/)：2026-10-13查閱
-
-來源照片、原始PDF、網站模型/貼圖不隨此檔案包公開。僅含自行建立的簡化幾何與來源連結。
-
-
-
-## 完整SHA256
-
-STL: 24dd885b3cf13ca73a5903d9e57195ebc3bd9b3a2819315da19f83c5a3a6d65d
-
-重建STL: 24dd885b3cf13ca73a5903d9e57195ebc3bd9b3a2819315da19f83c5a3a6d65d
-
-詳見 [SHA256SUMS](SHA256SUMS)。
+## English scope
+Partial only:98 original exterior faces on the front half curved ribbon, pale gray;2462 neutral. Original2560 triangles and bytes unchanged,18 immutable files noOBJ. Inverse original uniform scale and Ry(-12)@Rx(3) transform, then all-three-vertex finite chords48..95 of ellipse96. Every infinite-plane selection equals its finite domain. Facet94 has4 Boolean fragments; all retained. Tower/emblem, booth glazing, rear half, inner wall, top/underside and unknown supports remain neutral. Separate lettered wall excluded. Approximate shape retained, no2026 survey/capture claim. Not tested filament slicing or full color.

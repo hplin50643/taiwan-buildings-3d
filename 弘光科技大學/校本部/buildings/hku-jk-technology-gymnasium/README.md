@@ -1,73 +1,28 @@
-# 弘光科技大學｜智慧科技大樓與體育館（J/K連體群）
+# 弘光JK科技體育連體群｜右低柱廊前簷局部灰
 
-## 模型預覽
+**局部補色未完成：只右低柱廊前簷2原三角灰；雙翼共享廳同群／其他材色未完成。** partial_color_incomplete=true、fully_colored_exterior=false。同項hku-jk-technology-gymnasium／count_delta=0，弘光科技大學校本部。英文身份為 HKU JK Technology Gymnasium partial color。J/K雙翼與共享低廳同一原群，不拆成兩套。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![俯視](previews/top.png) |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![右低廊前簷](entry-detail.png) | ![完整窄灰邊](facade-detail.png) |
+| ![中性雙翼與共享廳](roof-detail.png) | | |
 
-## 模型範圍
+## 材色範圍
 
-一件保留J/K兩翼與共享低廳；右翼長垂直玻璃帶、底層柱廊、上層雙排小窗；左翼水平窗群與中央開放入口。
+只全原y−21無限plane，所有三頂點容差0.0001mm；恰2面共邊單component，完整原x2..68、z13..14.9矩形。2面名義中淺灰、4114中性，1155原共面連通域uniform，原4116三角與頂點不變。不按面心或只裁帳篷未遮半邊，不把上方藍灰窗間帶染成此灰。
 
-背側、進深與兩翼長度視覺近似，中央樓梯為較粗簡化；不把各窗格直接當成樓層數，也不主張整群只有單一行政棟號。
+兩翼整牆/格網含不同色域、窗背含玻璃與框/實板、門廳拱孔、字帶、左低簷、屋上、側背、柱與階地保持中性。下前灰邊不外推棚頂、底或側端。中性不是實景灰，資料範圍不是材料接縫。
 
-每棟獨立視覺比例，最長邊含底板150 mm；不是測量、BIM或施工圖。尺寸：150.00 × 83.00 × 64.80 mm。
+## 來源與審核歷程
 
-2026查閱校方名錄仍列此棟，不等同2026完整實拍確認。
+親看photo77與photo65：77帳篷遮住右低廊中央，初0438審因此HOLD；65另一角度完整露出窄灰前緣，review0438-v2解除該來源缺口，GO0441只放行這一原完整面。原HOLD/修訂都私存，不重寫歷史、不以移除帳篷造新幾何。photo77頁列2024-10-19 10:49:36，無時區或相機鐘校證，不自行換算；65拍攝日期未證，不從URL推。不是2026現況測繪。既有雙翼共享廳近似不因補色追認實測；照片私人，不公開貼圖，不推未見CC為商用許可。
 
+## 檔案與 QA
 
+原STL/build與4116三角字節/座標不變；immutable18件無OBJ，原builder雖輸出OBJ，隔離生成只私存，不宣稱原repo有OBJ。原README存ORIGINAL-MONOCHROME-README.md，舊單色previews/QA保歷程。appearance.3mf兩展示材、scene.blend實際面材、color-mesh.npz同原三角。四腳本與實際3MF/scene均必須精確身份 HKU JK Technology Gymnasium partial color，不用舊模板名互比。精確requirements隔離build+color、閉合正體積、3MF面材座標/Blender重開/10張1200×900檢核；重建保留不刪，未實際列印或證多色切片。
 
-## 下載與重建
+## English limitations
 
-- [STL](model.stl)
-
-- [Blender可編輯場景](scene.blend)
-
-- [Python重建程式](build_model.py)
-
-- [依賴](requirements.txt)
-
-- [幾何驗證](validation.json)
-
-- [0.2 mm截面閉合及Polygon有效性](valid-sections.json)
-
-- [0.8 mm XY薄特徵篩查](thin-feature-check.json)
-
-
-
-Python 3.12安裝requirements.txt後執行 python build_model.py；Blender執行 blender -b -t 2 -P render_preview.py；python validate_model.py；python check_valid_sections.py model.stl .；python thin_canonical_v2.py。
-
-
-
-## 驗證與列印限制
-
-原始STL單表面殼、每邊兩面、vertex-link單環、法向與繞序、正體積、150 mm尺寸、重建SHA256與Blend三角幾何一致均通過。324層0.2 mm截面逐環與合併Polygon皆閉合有效，不使用修補。
-
-0.8 mm XY形態開運算篩查最大面積損失比例 0.000822；此值不是最薄壁厚保證。設計獨立肋/框一般至少1 mm，窗上牆面浮雕可更淺。
-
-挑簷、深凹廊、懸挑平台需在實際切片軟體檢查支撐、橋接及方向。尚未正式切片或實體試印，不承諾任何機型無支撐直接列印。
-
-
-
-## 公開來源
-
-- [現地雙棟正面實拍](https://www.markchoo.com.tw/mark/3868/photo/77)：2024-10-19
-
-- [右棟及地面柱廊實拍](https://www.markchoo.com.tw/mark/3868/photo/65)：2024-10-19
-
-- [雙棟另一斜角實拍](https://www.markchoo.com.tw/mark/3868/photo/78)：2024-10-19
-
-- [校方建物名錄與JK共用外觀渲染](https://www.hk.edu.tw/學校環境介紹/)：2026-10-13
-
-來源照片、原始PDF、網站模型/貼圖不隨此檔案包公開。僅含自行建立的簡化幾何與來源連結。
-
-
-
-## 完整SHA256
-
-STL: 0ebcc5cec5e4c51b7138efdabf1feaf4bea0360b97bd7e5c34fdeb1e1cc1face
-
-重建STL: 0ebcc5cec5e4c51b7138efdabf1feaf4bea0360b97bd7e5c34fdeb1e1cc1face
-
-詳見 [SHA256SUMS](SHA256SUMS)。
+HKU JK Technology Gymnasium partial color. Entire y=-21 plane exactly2 connected triangles covering original x2..68,z13..14.9 right low canopy front,nominalgray;4114neutral. All1155coplanar domains uniform,original4116triangles/STL/build unchanged,noimmutableOBJ,count_delta0. Original HOLD0438 due tent in photo77 resolved only by unobstructed photo65 and review0438-v2;both historical records preserved privately. Photo77 reported2024-10-19 10:49:36 has no timezone/camera-clock certification;photo65captureunknown,no2026survey. J/K plus shared hall onegroup,not two packages. Mixedwalls/windowbacks/upperbluegraystrip/leftcanopy/rooftops/rear neutral. No public source images/textures,no geometry recertification,not testprinted.

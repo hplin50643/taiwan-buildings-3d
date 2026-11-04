@@ -1,71 +1,32 @@
-# 弘光科技大學｜食品技藝大樓（F棟）
+# 弘光F食品技藝大樓｜六豎框前局部白
 
-## 模型預覽
+**百葉、字牆與屋帽等材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅六直框完整前表面12原三角名義白，非全棟補色完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![俯視](previews/top.png) |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![六直框](entry-detail.png)|![前面近景](facade-detail.png)|
+|![未知屋緣](roof-detail.png)|||
 
-## 模型範圍
+## 材色範圍
+同 hku-f-culinary-arts 原項目，same-item、count_delta=0。4180原三角面、STL與build_model.py字節不變。弘光科技大學校本部F食品技藝大樓，不是活動頁標題L棟，也不是另棟D食品科技。原公開18件無OBJ；原碼可生成不代表原包存在，不造原件。
+- 僅原六獨立框前y−24，中心x−63/−46/−29/−12/5/22、寬2、原z12..64，完整12原面名義暖白。全三頂點有限矩形核，整無限plane12面恰等於六矩形聯集，不靠normal或centroid。
+- 原雨棚Boolean自然遮去框底至z14.1，這是原幾何邊界，不是材色人工裁線。全部原裁切保留，無新增頂點/缺口/彩繪線。
+- 其餘4168面中性：頂帽原全寬與照片上退縮跨度不唯一，整帽不染不裁半。五片浮雕百葉混棕黑實板／玻璃，右金字牆、紅字棚、窗背、側後、屋皮、階及設備均未證，不整塗。
+- 原粗化百葉與群體不因補色追認為實測；中性分界僅表示證據範圍，不是現實材縫。無補造文字、門窗、周邊棟或人物。
 
-保留五排高長百葉框、側面直格柵、頂部水平帶、地面雨棚。百葉全部為與牆體融合的浮雕，不是漂浮片。
+## 來源與日期
+親看官方活動導引中的已建成外觀，照片食品技藝字樣辨識F；活動頁L標題不套到此棟。畫面2024旗是場景內容，非精確拍攝日期，拍攝日未證，不稱2026現況。
+原照私存不公開／不貼圖，未確認CC或再散布授權，不保證商用；HEX是近似名義白非色票。正式GO已發，先期review-only標籤不免除builder QA。
 
-未知後側及部分屋頂設備從簡；整體進深、坡地與階梯為視覺近似。校方渲染只作輔證，未取得或轉用既有3D網格。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150×103mm展示底座，照片近似非測量比例。STL無色，3MF與Blender實際逐面分材；兩材標籤不等於驗證兩色／四色耗材切片，未實際列印，無切片路徑。
 
-每棟獨立視覺比例，最長邊含底板150 mm；不是測量、BIM或施工圖。尺寸：150.00 × 103.00 × 83.00 mm。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離精確原build＋color重建、原bytes／全三角multiset、閉合正體積、3MF逐面材、scene重開、十圖1200×900及圖文hash。隔離原依賴，不改原碼；程序不替代人工來源核對。
+原README／previews／validation／renderer保留歷程，不冒充新QA；沒有刪檔。
 
-2026查閱校方名錄仍列此棟，不等同2026完整實拍確認。
-
-
-
-## 下載與重建
-
-- [STL](model.stl)
-
-- [Blender可編輯場景](scene.blend)
-
-- [Python重建程式](build_model.py)
-
-- [依賴](requirements.txt)
-
-- [幾何驗證](validation.json)
-
-- [0.2 mm截面閉合及Polygon有效性](valid-sections.json)
-
-- [0.8 mm XY薄特徵篩查](thin-feature-check.json)
-
-
-
-Python 3.12安裝requirements.txt後執行 python build_model.py；Blender執行 blender -b -t 2 -P render_preview.py；python validate_model.py；python check_valid_sections.py model.stl .；python thin_canonical_v2.py。
-
-
-
-## 驗證與列印限制
-
-原始STL單表面殼、每邊兩面、vertex-link單環、法向與繞序、正體積、150 mm尺寸、重建SHA256與Blend三角幾何一致均通過。415層0.2 mm截面逐環與合併Polygon皆閉合有效，不使用修補。
-
-0.8 mm XY形態開運算篩查最大面積損失比例 0.000743；此值不是最薄壁厚保證。設計獨立肋/框一般至少1 mm，窗上牆面浮雕可更淺。
-
-挑簷、深凹廊、懸挑平台需在實際切片軟體檢查支撐、橋接及方向。尚未正式切片或實體試印，不承諾任何機型無支撐直接列印。
-
-
-
-## 公開來源
-
-- [主辦單位實際照片](https://www.taichungjobfair.com/地點-弘光科技大學Ｌ棟生活應用大樓-location-hungkuang-university-building-l)：照片旗幟標示2024；頁面活動更新為2025，拍攝日未提供
-
-- [前項原圖URL](https://images.cdn-files-a.com/uploads/8927069/2000_663088cb047f0.jpg)：2024旗幟可見
-
-- [校方現行建物名錄及3D渲染輔證](https://www.hk.edu.tw/學校環境介紹/)：2026-10-13查閱；縮圖路徑2025/05，非拍攝日
-
-來源照片、原始PDF、網站模型/貼圖不隨此檔案包公開。僅含自行建立的簡化幾何與來源連結。
-
-
-
-## 完整SHA256
-
-STL: f6da2b555c5e75e62ea3d166f559cbc01262d42c327104456761decbe0103ee6
-
-重建STL: f6da2b555c5e75e62ea3d166f559cbc01262d42c327104456761decbe0103ee6
-
-詳見 [SHA256SUMS](SHA256SUMS)。
+## English scope
+Partial only: twelve original triangles on six complete front framing strips are nominal off-white;4168 faces remain neutral. All4180 original triangles and source bytes unchanged. Original18-file package contains noOBJ. F Culinary Arts is not the event-page L venue or separate D Food Technology building. Whole y−24 plane equals six original finite rectangles; awning Boolean boundaries retained. Topcap correspondence is unproven, so no partial-span painting. Mixed brown louvers/glazing, gold lettering wall, marked awning, windows, sides and roof remain neutral. Visible2024 flag does not establish capture date; no2026 condition or survey claim. Not testprinted or filament-slicer validated.

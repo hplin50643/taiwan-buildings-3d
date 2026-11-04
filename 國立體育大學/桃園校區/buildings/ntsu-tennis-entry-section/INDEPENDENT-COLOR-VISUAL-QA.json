@@ -1,0 +1,60 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed official entrance exterior photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole y=-15.5 plane7triangles onecomponent offwhite;809neutral.",
+    "All small original flattened tip and eave-end triangles retained;no threshold or cropping.190coplanar domains uniform.",
+    "Roof upper/underside/reargable,piers with yellowstripes/notices,signband,bluegreen truss,ramp and windowbacks neutral.",
+    "Seven whole views fit;three details show open gable whiteleading fascia and neutral depth/roof.",
+    "Original816triangles/STL/build unchanged;noimmutableOBJ,count_delta0.",
+    "Central pavilion plus one sidewindow each only,not whole tennis/multiuse hall;captureunknown,PV plans not installation proof,no2026survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "1ad9fd748593e88bb0d28c744ba6911307e8dfee882bd0f8c0a241d6338a32cf",
+    "README.zh-TW.md": "1ad9fd748593e88bb0d28c744ba6911307e8dfee882bd0f8c0a241d6338a32cf",
+    "colorize_model.py": "9199af8c1e124faecfbf9f1620ceb8ac4904761433eeab5c49f7c4ed49ae2135",
+    "render_color.py": "7c5de747e64527992f043150d1e61b45ca72041f2fb0d8ebf6595f4f2c4ca3a9",
+    "color-mesh.npz": "36833ea87aac72ec0ad0aa92606a9cecd0260599d4ee5c74dcbea22e8fac3a0b",
+    "palette.json": "affb54163fb1ab196b1ccb153f44740ca6ba19d5784da41d32093265be3879cc",
+    "appearance-materials.json": "db165d4dc34527b75793cd7cee76c879e2ac36f642d0fb7d841729c9f132dec0",
+    "COLOR-SOURCE-REGISTER.json": "7449a1e6c0a694672684e932304a161093f808a6b1edb862fb4bc8f9906b185f",
+    "model.stl": "d89f40d9b54331b72d9f6c1b4c0e2ad364c8fb3c10decedbb60cea4783437093",
+    "build_model.py": "41a04d714ecb542ab8317643570609a6f59175321c033697c3b11e659359643a",
+    "preview.png": "7f0366a8b2b91ac288ccbb4d96a81e06081965a7c51cf88867df62cab5f42642",
+    "rear.png": "b546a970bd8888c9a0c2aeeb1d7d68263c219f02179f86090fc359030ba41939",
+    "front.png": "864a4456622277f261b9f7ebd0abb3df5d23477f5fb0d23786b876f01b174c89",
+    "back.png": "0d5a949523110e89d5d7cd1ed120dbce4316c871ddb74bfc066461158a7f3912",
+    "west.png": "53358786d62c252e65cb1bfdb5704c8bff574862c5bae40586114b5c432ebada",
+    "east.png": "203d62fc05d75a73a9e6deb75de26f0d007e431a679aa10a78ab58cbb18e5e17",
+    "top.png": "88eea440abec13c74326b84ab734c00b42ad99fe4c7910b3b5810a668365b912",
+    "entry-detail.png": "61b17ec41e0e9490cd8e1ae36bc6287358e4deaa3c1319e2eee2df5ba3d0aa6c",
+    "facade-detail.png": "28f4cd4e336ae616c73b2a0673b1b2948296dda993dfcd8bee3698ca67152edc",
+    "roof-detail.png": "09a74f0240c2d19ac3ce0641c83e838d822fe816d7b02e199086c385d8711825"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "aa4fd3cbe90decc097163aeb7370ae28c542e9cbb20d5a55464eea05a728f4b4",
+    "SCENE-QA.json": "5f8f87ad25119a8d8b8a496b52fef7e4e2a4f94b78d0df34f9856fd91cb6a169",
+    "DELIVERY-QA.json": "bf31fe8f9550d257060086dd623f02fdad2ea33a5c521e4b9b2c326571126de5"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "1779105fe09a1c39f8b164819a1e0a44d8f7c228cb744544537bc13e5cf84f62",
+    "ORIGINAL-RETENTION-QA.json": "2fe2cb36ac4a08650fb29445e9a1a35b1b594c67f26a0903735513ed4441caa2",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0407.json": "396ad86732ffacd413e161fce05bc2e175b12470ea070eea2c41fd31f0ccd768",
+    "INDEPENDENT-IDENTITY-0407.json": "7ecac631d6ebfc796b4d904b7a7700a1edcac4ee901169ef39d7468b357a5f29"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:09:45Z",
+  "parent_review": "Parent personally viewed official exterior, original open gable profile code, preview and final ten montage. Whole y-15.5 front profile seven original triangles offwhite includes tiny apex/end faces, no normal/area exclusion. Roofupper/blue truss, marked yellowline columns, signpanel, ramp and unknown remain neutral. Sevenwhole views fit and three intentional details. Original816 triangles and bytes/noOBJ unchanged. Central entrance plus one window each side only, same tennis/multifunction hall not whole, no plannedPV/current survey."
+}

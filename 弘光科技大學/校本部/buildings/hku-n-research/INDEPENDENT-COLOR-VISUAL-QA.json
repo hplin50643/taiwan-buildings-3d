@@ -1,0 +1,77 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "All ten final views personally inspected; seven whole views framed and three intentional closeups.",
+    "Highest whole connected balcony front component pale gray; lower three complete components remain neutral despite real open red rails.",
+    "N research connected group excludes adjacent D and sculpture. Original slot and slab overlap remain unchanged."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 7070,
+  "material_face_counts": [
+    12,
+    7058
+  ],
+  "connected_coplanar_domains": 1599,
+  "original_obj_present": false,
+  "original_files_retained": 18,
+  "file_sha256": {
+    "README.md": "db06644e7c7e525f19b0f94f6ecbdcc48183de3041bd264a3145d81456af5d55",
+    "README.zh-TW.md": "db06644e7c7e525f19b0f94f6ecbdcc48183de3041bd264a3145d81456af5d55",
+    "model.stl": "b6f7a1f79f82f2c535ba629446a1482941f4f55900b20e7c182f683804c7daec",
+    "build_model.py": "52d0254ac0d385b6592da5ce88dd1d709a4ec866f0d6fc94ed112cbf9b500abc",
+    "colorize_model.py": "4e4bb5973bda88694a30895581dc356219d443121b361ecec08c7f20bca704d0",
+    "render_color.py": "e2c5b9dd17523c14f531be778640771b49f693cea8babdc1bac038b02a7cb4e8",
+    "verify_color_scene.py": "20f5978b203dde300d78fa6994541b30c460ef3aafd8e6d702f610092f029462",
+    "validate_color.py": "47c03d9323f7f8454dc873f6a701f3ae45974ed413d42b491ce0412fc403b198",
+    "color-mesh.npz": "8e6cc50be6e56b1a249d7f69dec3416d09145f5cf4fba02a6926e26ae6209a4c",
+    "palette.json": "be86d29a9a023f0e6dbf39581f2f39e69f97854e439d885502e7da8cd62d2968",
+    "appearance-materials.json": "6e30537f22888ab8ca76fd87ddcd2b5185a0bab1a087f4ef7a8cc05d43fe7cb0",
+    "COLOR-SOURCE-REGISTER.json": "df3ae5790c537bf791e8f8507bec9db765a658f4be8ce49e43e7a008654d01d3",
+    "appearance.3mf": "c930b475e26780c4bdd0bcd14549dc06f09623dd36940c71e1e756772b780f5c",
+    "scene.blend": "257cd3e739dc669eb8de87a8f1f9be2113376a029e0aedac73f12bcb7d16db84",
+    "preview.png": "0eb29e27ba93f28d696259024d76c2f9864866949eecfd76d5be9e2482988391",
+    "rear.png": "bf3f09c36757c7709f676cbceaff9818853862ab16af5d770c353e68e7e69886",
+    "front.png": "2070d3cf65165501e1d3d0c7f1557b24b7d333531246e5f98ef70273a195604f",
+    "back.png": "3a8db51b288f41182925297acf535bac7143daba84bc709c95f48b68c98b00dd",
+    "west.png": "7f0f312ad9098e8db0a61d7b3c71a0427e1ae58d5b0c4cd33e258a19c8cb9fa2",
+    "east.png": "48675562dd0b2d69501d21d8f9efc80e2e1ea80821398f5c83a93082ab175c74",
+    "top.png": "1cac3b19e05db0780c799738601546407263d9c87ccd4401e03c8a2e466cc76b",
+    "entry-detail.png": "fecc1780d918930e24dc3ddaf2b3f99d095ff2a825576762479dbe97e9bff109",
+    "facade-detail.png": "62753e6277ac52b8144fad8d884675f7868fd3177eb5b143949c5e6daa1329d1",
+    "roof-detail.png": "f40b1d770f67387887fb3169fde9ce2fc56aa71b0752556fd4d9f818ae7b4ece",
+    "export_appearance.py": "8ccc72accb14e2fe6e90f98851e9f595d32bde571bd2729776149fb577549281"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "1160cd943b80c336349a91005e7113b6a5ec12570f3587a0c0b34ea37b0969f9",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "0598bc5e196bddb6691962f95813cf3d4b369224f1ff89fbe31ae446fd917af4",
+    "SCENE-QA.json": "d1ebbe1fbfdd792d2bf4caa5e88f59912e234f566aff8440798e8d3155244db4",
+    "FRAMING-QA.json": "2fa5f3f3b14024ac488e81fa0536386f8652f003ddca6d5fbcfc7f5f9e72aef3",
+    "DELIVERY-QA.json": "7fadfcb4a0d00d9c5a45744f8650a32ebeb1dc817eedfc424a186e36e9db27ff"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "de74232712f3846e9584f6ed67d8a09c0abfec71449717376fea86aae68d0473",
+    "ORIGINAL-RETENTION-QA.json": "372947bdbc3fe53123dd370790fac9b6c6ac0930bc1f988f1e06fe1e10a6d53a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "f65b0e19df73cfaed931e9dc6a0233b3c62829dfb88d33f9a2b7b63de0769996",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "3b89f231577634108abf5cf4867687574cfaa7ae3e46621e5d7b62dbac60c542",
+    "INDEPENDENT-DOMAIN-0444.json": "6694611704b684d23db3df848852cd1505b6a2887292953189c8656acbadd4ec",
+    "INDEPENDENT-IDENTITY-0444.json": "1582ec180cbde9ff30f42fdc88c957ae485e578d0f7da4fce89d4dfaa757fe06",
+    "INDEPENDENT-PACKAGE-IDENTITY-0448.json": "3b89f231577634108abf5cf4867687574cfaa7ae3e46621e5d7b62dbac60c542"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "a70f0df39c8b5c86f4028928983877102da6e6a684597f58e8206b50a58ec129"
+  },
+  "limitations": [
+    "12 highest whole balcony front triangles pale gray;7058 neutral.",
+    "Four entire y−7 plane components enumerated12/10/10/12; highest complete one only, no right-half selection.",
+    "Photo capture unknown;project and URL dates are not capture dates.",
+    "Not full exterior color, survey or tested filament slicing."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:48:11Z",
+  "parent_review": "Parent personally viewed contractor actualphoto, originalcode, preview and all10 finalmontage. Entire y-7 plane44 has4 edgecomponents12/10/10/12; only highest complete12 palegray, no zclipping. Lower3 realleft redpermeable rails incompatible with solidproxy so whole lower3 neutral. All7058otherfaces neutral. Explicit HKU N Research identity independently matches actual3MF/Blender/scripts/README/paletteRGB. Sevenwholeviews fit and3details intentional. Original7070triangles18immutablefiles/noOBJ unchanged, N excludesD,not2026/fullcolor."
+}

@@ -1,73 +1,33 @@
-# 弘光科技大學｜研究大樓（N棟）
+# 弘光N研究大樓｜最高陽台前局部淺灰
 
-## 模型預覽
+**下三層陽台、牆窗等材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅最高陽台完整前實欄與連續板緣12原三角淺灰，非全棟完整補色。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![俯視](previews/top.png) |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![最高陽台](entry-detail.png)|![原實欄](facade-detail.png)|
+|![屋緣近似](roof-detail.png)|||
 
-## 模型範圍
+## 材色範圍
+同 hku-n-research 原項目，same-item、count_delta=0。弘光科技大學校本部N研究大樓單一連通群，不含D棟與獨立雕塑。7070原三角面、STL與build_model.py字節不變；原18件無OBJ，不假稱保存不存在原件。
+- 原y−7全平面先列44原三角，分四個共享邊連通域12/10/10/12；只最高一個完整域12面淺暖灰。原有限x−62..−14、z58..63.2，全三頂點核；不按normal、centroid或局部高度選面。
+- 原板緣／實欄union及橫凹槽完整保留，不只染z59.6以上。真實多個小凹槽與原單一近似槽不同，不改幾何補精度。
+- 下三陽台實照左段為通透紅欄、右段白實板，原全寬實心代理沒有材界，三個完整共面域全部中性，不能只挑右半三角。
+- 其餘7058面中性：主磚牆／窗帶混框板、曲玻璃塔與低入口為不透明代理，不假染藍透明；車庫字牆／側返／屋／地面／最高欄頂底及槽內亦未證。
+- 材色邊界是證據範圍而非真實材縫，原近似比例與群體不因補色成為實測。無新增文字、欄杆、門窗或人物。
 
-保留L形內庭、六列主要窗帶、錯列懸挑陽台、內角圓弧玻璃塔、前方低層玻璃體與深車道口。沒有以實心填平院落。
+## 來源與日期
+親看承包商已建成外觀，最高錯落陽台前為連續淺灰實板，與下三層左側紅通透欄區別明確。工程2004/06–2005/10及URL180524均非拍攝時間，拍攝日未知，不稱2026現況。
+原照私存不公開、不貼圖，未確認CC或再散布授權，不保證商用；HEX名義色非校準色票。正式GO已發行，先期review-only標籤不免除builder QA。
 
-外側後牆、屋頂與右翼長度為公開視角下的近似，N右側相鄰D食品科技大樓另件建模。前方低玻璃體以不透明封閉量體與表面凹紋簡化，並非透明薄殼。獨立雕塑不納入建物模型。
+## 格式與列印
+[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
+原150×112mm展示底座，照片近似非精測比例。公開物件名 HKU N Research partial color，與本slug/館名核對；STL無色，3MF和Blender有逐面材。兩材標籤不是驗證兩色／四色耗材切片，未實際列印，無切片路徑。
 
-每棟獨立視覺比例，最長邊含底板150 mm；不是測量、BIM或施工圖。尺寸：150.00 × 112.00 × 86.00 mm。
+## 重建與 QA
+原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離精確原build＋color重建、原bytes／全三角multiset、閉合正體積、3MF逐面材、scene重開、十圖1200×900及圖文hash。隔離原依賴，不改原碼；程序不替代人工來源核對。
+原README／previews／validation／renderer保留歷程，不冒充新QA；沒有刪檔。
 
-2026查閱校方名錄仍列此棟，不等同2026完整實拍確認。
-
-
-
-## 下載與重建
-
-- [STL](model.stl)
-
-- [Blender可編輯場景](scene.blend)
-
-- [Python重建程式](build_model.py)
-
-- [依賴](requirements.txt)
-
-- [幾何驗證](validation.json)
-
-- [0.2 mm截面閉合及Polygon有效性](valid-sections.json)
-
-- [0.8 mm XY薄特徵篩查](thin-feature-check.json)
-
-
-
-Python 3.12安裝requirements.txt後執行 python build_model.py；Blender執行 blender -b -t 2 -P render_preview.py；python validate_model.py；python check_valid_sections.py model.stl .；python thin_canonical_v2.py。
-
-
-
-## 驗證與列印限制
-
-原始STL單表面殼、每邊兩面、vertex-link單環、法向與繞序、正體積、150 mm尺寸、重建SHA256與Blend三角幾何一致均通過。430層0.2 mm截面逐環與合併Polygon皆閉合有效，不使用修補。
-
-0.8 mm XY形態開運算篩查最大面積損失比例 0.000578；此值不是最薄壁厚保證。設計獨立肋/框一般至少1 mm，窗上牆面浮雕可更淺。
-
-挑簷、深凹廊、懸挑平台需在實際切片軟體檢查支撐、橋接及方向。尚未正式切片或實體試印，不承諾任何機型無支撐直接列印。
-
-
-
-## 公開來源
-
-- [營造商工程資料及外觀實拍](https://www.huiguang.com.tw/project5.10)：工程2004/06–2005/10；照片路徑含180524，實際拍攝日未確認
-
-- [2024現地N棟標牌實拍](https://www.markchoo.com.tw/mark/3868/photo/47)：2024-10-19
-
-- [校方供圖的師大大學博覽會頁](https://www.nups.ntnu.edu.tw/univ-expo?school=hk)：未標拍攝日
-
-- [2026現行校方名錄及渲染輔證](https://www.hk.edu.tw/學校環境介紹/)：2026-10-13
-
-來源照片、原始PDF、網站模型/貼圖不隨此檔案包公開。僅含自行建立的簡化幾何與來源連結。
-
-
-
-## 完整SHA256
-
-STL: b6f7a1f79f82f2c535ba629446a1482941f4f55900b20e7c182f683804c7daec
-
-重建STL: b6f7a1f79f82f2c535ba629446a1482941f4f55900b20e7c182f683804c7daec
-
-詳見 [SHA256SUMS](SHA256SUMS)。
+## English scope
+Partial only:12 original triangles on the highest whole connected balcony front component are pale warm gray;7058 neutral. All7070 original triangles and source bytes unchanged;18 immutable files have noOBJ. N Research connected group excludes neighboring D and sculpture. Enumerate all44 y−7 plane triangles first:four components12/10/10/12, only the highest complete component selected. Original slab/rail overlap and single slot remain. Lower three full solid proxies lack actual open red railing/white-panel boundaries and stay neutral, not right-half painted. Roofs, mixed walls/windows, opaque glazing proxies and garage remain neutral. Construction/project/URL dates are not capture dates. No2026 survey, full color or tested filament-slicing claim.

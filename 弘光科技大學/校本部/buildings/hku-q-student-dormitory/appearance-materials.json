@@ -1,0 +1,54 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "HKU Q observed balcony slab front pale gray",
+      "hex": "#D2D5D1",
+      "faces": 20
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 9500
+    }
+  ],
+  "domain_face_indices": {
+    "whole_balcony_slab_fronts": [
+      712,
+      736,
+      772,
+      782,
+      813,
+      832,
+      864,
+      875,
+      911,
+      932,
+      963,
+      977,
+      1014,
+      1036,
+      1067,
+      1077,
+      1115,
+      1134,
+      1166,
+      1177
+    ]
+  },
+  "coplanar_components": 2284,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "9520 original triangles unchanged",
+  "limits": [
+    "Perforated privacy screens and low rail proxies remain neutral: original coplanar fused screen/solid-rail domains do not match the photograph\u2019s white perforated panels and dark open metal rails.",
+    "All slit interiors, window/door backing and recess side surfaces remain neutral. No colors from the opposite facade are transferred.",
+    "Top open-frame gray beam and pale posts form connected original surfaces with mixed actual material/color appearances; no blanket white assignment.",
+    "Blue roof service core includes real dark windows absent from the model; do not paint the whole solid blue.",
+    "Balcony slab tops, undersides, side returns, rear envelope, entrance box and ground-level structures remain neutral.",
+    "Only nominal pale slab-front family, not calibrated exact color, texture, perforation count or current 2026 condition.",
+    "Correct slug hku-q-student-dormitory; earlier hku-q-dormitory intake is an alias correction, not another building.",
+    "Preserve all 9520 original triangles; no geometry edits, new material boundaries, mesh repairs or inferred concealed structures."
+  ]
+}

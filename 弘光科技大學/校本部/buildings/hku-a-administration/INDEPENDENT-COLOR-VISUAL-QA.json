@@ -1,0 +1,90 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten finalviews personally inspected:7wholemodel views framed and3intentionaldetails;only leftcap frontnominaloffwhite.",
+    "Redshoulders,emblemproxy,archwindows andcentralwhitewall neutral;rightlowwing notphotocolorverified.",
+    "Aadministration/formerteaching onegroup,notseparatenewbuilding;originalBoolean shoulderboundaries retained."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 1210,
+  "material_face_counts": [
+    4,
+    1206
+  ],
+  "connected_coplanar_domains": 324,
+  "original_obj_present": false,
+  "original_files_retained": 18,
+  "file_sha256": {
+    "README.md": "5826f84d24c09536c9b8628a10f5a9801d9048eb4ceedbca2ea05d03adbf391c",
+    "README.zh-TW.md": "5826f84d24c09536c9b8628a10f5a9801d9048eb4ceedbca2ea05d03adbf391c",
+    "model.stl": "ce17592a6e446c56105a0ec3c1b9202e017a6ee9427d670ed6fb8056ae3c39e7",
+    "build_model.py": "e7ec62c5091be393a0ec04d1e9fb15f656e6904bff7515fc18905a2c84ab0e4d",
+    "colorize_model.py": "d2719bf39cb165bcf636a00486fa4f4c582e633dc638ec9626675e146b4191a5",
+    "render_color.py": "edf36cf3e5285d6fc6646ce06895da07aa536c6e47f76f8caff83cd3315a8c33",
+    "verify_color_scene.py": "3b78ecfc2c87a757563374e8899cac6fa6fb4ba7cd4ccf3c92fb97c4a097e2d2",
+    "validate_color.py": "6e73cb1ec7138294bc13105870f2bca6a56262922d83a5931c59103b37260246",
+    "color-mesh.npz": "ed0d560fae4da96da6f8493d4f4bd057b32718fe9c7e4dc8af00fded2e2b89d1",
+    "palette.json": "675e47746f1665ae2a3e3360c2bf090140c7f28667cde46b06b4baef4499709b",
+    "appearance-materials.json": "1c8617870a54abb11d0757a33162d3e94fc3496221f28a8c420329a7fc30f901",
+    "COLOR-SOURCE-REGISTER.json": "c5dcdd52f269b7999586105f6074862b86bfab50ed94e0eccc85e8d92f10f688",
+    "appearance.3mf": "2ebe6f6d0e0b55569ba4e92ce9fd19f506308a0e81e041569293a352ce17ba24",
+    "scene.blend": "6e34aaa87d50f563e086cf2422f0fe6003efdf783b6354e1652c836ced40c9ae",
+    "preview.png": "d05328c6ebeeaf8c20e38036d4af136c6ff32d38843a8715a7f93ff05b5c4f1c",
+    "rear.png": "473f279d745abbfdbe5d284143cf08bb9fa9424b1cfec15cbc76c3cd7c5283d4",
+    "front.png": "f3dd0046b324ab0bb46ba60e363db08df002bdc6848929f2407cdaa9b5194350",
+    "back.png": "267df14c4e52b2edfa4e314c5953bebfb0134bacb404bdb6fb02e61a00d0dbb1",
+    "west.png": "bca4932c4af8c50dbe8f6d364d4e42b0aecbf4eb3b1e0ce9f09b986bdb9520bc",
+    "east.png": "52086322a64ac3187898ed4132ef1b6cb3bfe67f33d4303cc1c9811b0931e6d6",
+    "top.png": "70439370d209a9025ad65d69d4038d5b4e152e083735e61d0dcc31d59f9d0847",
+    "entry-detail.png": "ef2771bbac8f34b0c907e19e19200cd0ab71dd00a9c093f34f6eb3dfbbf46da5",
+    "facade-detail.png": "0077d0f0c61589ea77e5924d1bc9972d18f32982ae5b9a34b4a09858171f1766",
+    "roof-detail.png": "b0ddfc57e24f5917c0267215180231a33175f2ce14fc72eb41b771c3b27b5a17"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "1dd3023c68fb5ef6969ad6157e6f75ca5949cc7839bab11c0288ec3311e8acf2",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "f7bb09e01fe03d66122abde9dfc25269fed68b5a36798e7556054b538977a3cb",
+    "SCENE-QA.json": "1c0d4e7fc86ea0677faf43c82a415382c0d9bcd51eaa84912b695f39a67ebc76",
+    "FRAMING-QA.json": "303e43b4656956c92ef6f04461ab32115ecfad4a3368dd93d52b5a5f9644207c",
+    "DELIVERY-QA.json": "34f31af30296d448650c363f7cb255d8405521ffefef471dbbaf777e9ebff8c9"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "898ac8283dfc130a7c9d39b987dd661fa0b5f57528461f73580bd5bb142f3fa2",
+    "ORIGINAL-RETENTION-QA.json": "372947bdbc3fe53123dd370790fac9b6c6ac0930bc1f988f1e06fe1e10a6d53a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "0d17d16557befc5315202f95509ba99f26d5343d58d99ff7fa42f80a99c080ae",
+    "INDEPENDENT-DOMAIN-0415.json": "94c16304504e847f25dc29c18d3b5655a7152d144082c1d87a3f9ed6fffffb05",
+    "INDEPENDENT-IDENTITY-0415.json": "19b3257cc55e2952911d95c97d75031ff20db1eb58245689b84b05176c591c4d",
+    "PARENT-METADATA-V2-IDENTITY-0431.json": "e5a4b1b684fa520880340e208e1cab431edfaa67e041bfeedd5c251a8f3dfbd5"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "c455abbd1af43f11a050a29551b6c93ff6a4bb6bead79dfbcdf2760e42c6f5f4"
+  },
+  "limitations": [
+    "4complete leftcap frontBoolean triangles;1206neutral.",
+    "Wholeplane equalsoriginalfinite domain;shoulderunion boundary notmaterialcut.",
+    "Hungkuang Aadministration/formerteaching onegroup,rightlowwing unverified.",
+    "Captureunknown,not2026condition.",
+    "No originalOBJ,no testprint."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:17:23Z",
+  "parent_review": "Parent personally viewed official photograph, original cap code, preview and all10 final montage. Only entire y-13.5 capfront4 offwhite, true shoulder union endpoint x-4 retained. Red shoulders missing door/emblem boundary, arch glazing mixed brown, centralwall occluded base and rightlowwing not colorverified all neutral. Sevenwhole views fit and three detailviews intentional. Original1210 triangles and18immutable bytes/noOBJ unchanged; old A teaching/current administration onegroup not2026.",
+  "metadata_v2_rebinding": {
+    "basis": "Original visual inspection retained for byte-identical geometry, palette and ten images. Scene label renamed and resaved; render-relevant semantics independently serialized and compared by metadata tool, not a new visual inspection.",
+    "object_name": "HKU A Administration partial color",
+    "erratum": "VERSION-2-OBJECT-NAME-ERRATUM.json"
+  },
+  "metadata_v2_parent_review": {
+    "reviewer": "finish_science_hall",
+    "status": "PASS_PARENT_IDENTITY_AND_BYTE_SEMANTIC_CROSSCHECK",
+    "original_visual_review_carried_forward": true,
+    "new_image_inspection_claimed": false,
+    "no_rerender": true,
+    "expected_package_name": "HKU A Administration partial color",
+    "scope": "Scene bytes changed by metadata-only save; rendered geometry/material/camera/light semantic dumps equal, ten PNG bytes exact. Old frozen package retained."
+  }
+}
