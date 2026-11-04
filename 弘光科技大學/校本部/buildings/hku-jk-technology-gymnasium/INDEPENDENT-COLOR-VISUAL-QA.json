@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed photo65 and photo77 exterior photographs,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Entirey=-21plane2connected triangles full66x1.9rightlowcanopyfront gray;4114neutral.",
+    "All1155coplanar domains uniform,no clipping/partialtriangles.",
+    "photo65 unobstructed grayedge resolves photo77tent;HOLD0438 andv2 both preserved privately.",
+    "Mixedwalls/windowbacks/leftcanopy/roof and upperbluegraystripneutral.",
+    "Sevenwholeviews fit;details show narrowrightgrayedge separate from neutralupperwindowband.",
+    "Original4116triangles/STL/build unchanged,noimmutableOBJ,count_delta0.",
+    "Exact3MF/scene identity HKU JK Technology Gymnasium partial color;oneJKsharedhallgroup. Photo77reportedtime no timezone;photo65unknowncapture,no2026survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "c45eebc19935a79a9c9c0f0ff6fc539b87d48e7ef66b94bd68e49a6559be226b",
+    "README.zh-TW.md": "c45eebc19935a79a9c9c0f0ff6fc539b87d48e7ef66b94bd68e49a6559be226b",
+    "colorize_model.py": "24e52b0d7ec4270cdf12081190d760c5068795e321a8c3b95e6ac9a3ac882d91",
+    "render_color.py": "8f2a30b9620911e2520d4c516068c471a308bd632290e504e5ef804f49b4fa26",
+    "color-mesh.npz": "25618248ee99702397849c2805305982652a9d423a4d3ad697a61cf34708b065",
+    "palette.json": "1347d3a0ee103e53369548d617ad86fa04aaf464b69450ab69d3ab54fa8ade71",
+    "appearance-materials.json": "16ae623dd73ccadf901c5f4687f9f3dbbf49ef4c8726d4c5b4535db259108d36",
+    "COLOR-SOURCE-REGISTER.json": "a2abf6a6494767a5de5414a6515dc04819ef96093d00043c55538b6b95fde112",
+    "model.stl": "0ebcc5cec5e4c51b7138efdabf1feaf4bea0360b97bd7e5c34fdeb1e1cc1face",
+    "build_model.py": "cf84d074d2477024bbbaf5c1f99900699f62755ba299581360d4a4fe8a9b887e",
+    "preview.png": "6f29a06668416afd25fc17f4709bd2e212685d2a1feaf247192a0e01b7427a16",
+    "rear.png": "91afbf8a9f8f8464e2e1b924781824dd37e4b4b4671f89f5bdc605a563735d0c",
+    "front.png": "9927904567abb43182872abeac2128ba574b0bd4b7a5160a03d08f1524847540",
+    "back.png": "9cc99cc8a4b6b2220e22d63daff64e6c13f1266ce0e8ffe79cc4b03039036214",
+    "west.png": "c7722a7a4c3da687b318bdb752e42f35a751ac432bdc38425b8dfcfd2d43c827",
+    "east.png": "1b4c04b9fc99f0b7b3a79f1a57d351aa296e1eaeb2fd8f8a951304e35a05c5de",
+    "top.png": "302e7290a8ff54626388e89082af8078278c2616d395404a1ae69747a14bc7d8",
+    "entry-detail.png": "4cf181b938a77d40eb46ecbfc4d53a7233b02a4fd33a8f025b289dda49fda62c",
+    "facade-detail.png": "fe4ec27e618147e37df84ffae94cbf7ec465faf10c15eece4782f34f61dbcd47",
+    "roof-detail.png": "0117a443e10319066c0710d9d21af42539f7e810909ca5ff48f4622108407161"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "b59b490b4b863b12bdb54db64c0c476f9fca2e94d260f901c403abc7e2d9a988",
+    "SCENE-QA.json": "40df81b992a22e5f8c033b87a905938b8aa022027d9feae6ad8f65ec7b1b5bcc",
+    "DELIVERY-QA.json": "4799e7d26db120c2891c20efde4f82d8f7422e01116ca371e732619ef0bd97fe"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "f758ace5e9ef5296cea22e22695b76595bbba94bc867a557ef2f83f4744d7ebc",
+    "ORIGINAL-RETENTION-QA.json": "ed99417dfc678637602a21f2eb3817c8a37bbba6381e9e64e619860e8a5e115a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0444.json": "bb2574121feb9b4d12296e5a89f0473fb3176e9e63dce8b3cc9705efbe38bfc1",
+    "INDEPENDENT-IDENTITY-0444.json": "bcdf355558043c6eacd3fefe47f0fc4007e0433fd4cd3a37a5487aa8a25facb5",
+    "INDEPENDENT-PACKAGE-IDENTITY-0449.json": "d659bfc2571a2f92ac3c543915955216819fc65f4a280d0068f7657698956e13"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:49:18Z",
+  "parent_review": "Parent personally viewed actual photos65/77, originalcode, preview and finaltenmontage. Photo65 unobscured right lowcanopy resolves prior77tent HOLD; whole y-21 plane2 complete front nominalgray only,4114neutral. No expansion into mixedwalls/windowproxy/roof. Explicit HKU JK Technology Gymnasium identity independently read actual3MF/Blender/scripts/README/paletteRGB. Sevenwholeviews fit,3details intentional. Original4116triangles18files/noOBJ unchanged,JKsamegroup nottwo,sourceHOLDandv2 history retained."
+}

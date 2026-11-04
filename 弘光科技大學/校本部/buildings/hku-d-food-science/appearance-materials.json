@@ -1,0 +1,35 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed complete roof cap front fascia offwhite",
+      "hex": "#D3D6D3",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 4156
+    }
+  ],
+  "domain_face_indices": {
+    "whole_roof_cap_front": [
+      4090,
+      4099
+    ]
+  },
+  "coplanar_components": 957,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "4158 original triangles unchanged",
+  "limits": [
+    "Entire connected facade grid remains neutral: large billboard covers the right portion and lower vegetation obscures bases; do not crop arbitrary triangles or assume the poster is white structure.",
+    "Window recess backs mix burgundy spandrels, frames, glass and air conditioners; no whole dark or burgundy fill.",
+    "Entrance canopy contains gold\u6587\u5b57; no uniform white across its lettering plane.",
+    "Roof top, side edge and rear faces, right balcony pockets, ground, steps and all unknown faces neutral.",
+    "Left neighboring round tower belongs to N and is not this building; no transferred colors.",
+    "D Food Science building only, distinct from F Culinary Arts and neighboring N round tower.",
+    "Exact capture date unknown; no2026 current-condition claim."
+  ]
+}

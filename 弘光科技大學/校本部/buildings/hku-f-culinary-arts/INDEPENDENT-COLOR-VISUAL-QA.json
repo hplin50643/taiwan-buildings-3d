@@ -1,0 +1,75 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "All ten final views personally inspected: seven whole views framed and three intentional detail views.",
+    "Only six complete framing front rectangles are offwhite; mixed louver backs, sign wall, awning and full width cap remain neutral.",
+    "F Culinary Arts identity from actual photographed sign, not event-page L title; D Food Technology excluded."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 4180,
+  "material_face_counts": [
+    12,
+    4168
+  ],
+  "connected_coplanar_domains": 757,
+  "original_obj_present": false,
+  "original_files_retained": 18,
+  "file_sha256": {
+    "README.md": "e450b1aafbfefe94a73f8944d4ba75e71514f4bc50c94ba384599d91b78d9527",
+    "README.zh-TW.md": "e450b1aafbfefe94a73f8944d4ba75e71514f4bc50c94ba384599d91b78d9527",
+    "model.stl": "f6da2b555c5e75e62ea3d166f559cbc01262d42c327104456761decbe0103ee6",
+    "build_model.py": "f994bcfa6bafe894bf3cccdd00752743c9fac59248232957585ae43324fedf31",
+    "colorize_model.py": "52e31b872b3c9a52dc9a6bbe2e00fd14e6e6a408f1d4a0328061e53d584f4251",
+    "render_color.py": "aa93925b532d859cf523a87f7a1eeb5fcd65b1c5800d069421c401e692ea2ee2",
+    "verify_color_scene.py": "2dfaaaf3a12b9f1789335bca92099fa3557565f975cb86af62636e574371a57d",
+    "validate_color.py": "c92a0528ec762216ae4bda2a8aa31de5ac73412be10d9c5efebc97df1644f20f",
+    "color-mesh.npz": "98c9c4b4982fb527d583c14d55887c62dfd67b065456f54b65925ba2a5fb6c64",
+    "palette.json": "f3f844026ab619afe69ee15036ac4f2c186c765461676cccf79bccc599fdb6ee",
+    "appearance-materials.json": "2c03d38c6f60fd54c0a2f166f2993dc03e6505ff1030274e0e99a5b2bf7fb3ff",
+    "COLOR-SOURCE-REGISTER.json": "f283c58e7b54080d6e0f9315f027fb579503ef6ed4674dddd11b814090ada883",
+    "appearance.3mf": "d1c6a8e7f1d944e93ceff46372134d136729c0670b8fb370a939573d0a404838",
+    "scene.blend": "0914cf53bee2e39f9568bb5442bae68df7ecf2fa5f23c1da7174dfde20984743",
+    "preview.png": "7eb50cafbddfd63a8276b97c9ce03efde2c39343d086981d6cd149fdc3da3623",
+    "rear.png": "15e5df717ff2422dc65efa27d9f54e6a57922662b0957500365e2b26352febf0",
+    "front.png": "3f7ba37e4af17024bac855ac06013cff865d8716964c88745d4dded72b046f7c",
+    "back.png": "5218b7acc209f17a80b29f1a8c84f6eaee9af7ee051252a8ec3ec6fcf6b28783",
+    "west.png": "7f01506c84321c2e152674461116309b6e14792bd7984950e8be6bb5df9b4462",
+    "east.png": "b5e7933ae4f3f88b1a66bd1121a8415b0a28899ef3a1efadef3d1f8b0004d1ef",
+    "top.png": "dbd856b2913571313a7387be6060134a1c190914c034c107d56dae1a7d56508b",
+    "entry-detail.png": "3a00a602b2aa04855e6b244c7201f3a6b1553db7d726714fa20f7e2c14ff8ed3",
+    "facade-detail.png": "c2f8511529214ba1b0adfcea832db07fd451fe8a31d592313535700ae915af81",
+    "roof-detail.png": "4444bcbcca6ac2a9226269f9698e46e445baee305ffebe2aaa949abcbd791e8a"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "9941b11f97021e5f333bc180001773c3fd9867b5546db593f323c69c6273e3d3",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "3fb14b9bb51af1790c53cc7530f665f57c19a6548d134995f2ad807283cf3025",
+    "SCENE-QA.json": "1862935a42cd3470a7a4dc70fbf6ffdba22baa32422d405ba5a269d00a584064",
+    "FRAMING-QA.json": "f43d1e622fd59eb2bbe6ae447351b7c34a509fbd40762f125615ffdc606db192",
+    "DELIVERY-QA.json": "07a95a3ec4654a4e54d03209300e0bccee26c7cf432fd9726277c2681425794d"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "cff55e4198cba4c7dfe94a388f3cf2fe8ea0c7eeb12f7774665b623c95e918e9",
+    "ORIGINAL-RETENTION-QA.json": "372947bdbc3fe53123dd370790fac9b6c6ac0930bc1f988f1e06fe1e10a6d53a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "40989f17c8b43cb662511dcf0746bad1f67ce124d96547f7581781f1bf300c27",
+    "PUBLIC-OBJECT-IDENTITY-CROSSCHECK.json": "d9a930e080625e335da329c36a6bb14053db667b46ede405fb81e4f53cd1d7ee",
+    "INDEPENDENT-DOMAIN-0423.json": "a5f0a9e09798da35eb1afa60e218a14a519898e1bb8860e8c568f6f18bc89cc4",
+    "INDEPENDENT-IDENTITY-0423.json": "7696ce795040b6ce8446b12105561b8423d574e12d01e78df7a3a344085da491"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "18046e5935b95951f962bff0b58c105cfbccfa0d997253e3a260f255a38c1be1"
+  },
+  "limitations": [
+    "Twelve original complete framing front triangles;4168 neutral.",
+    "Awning Boolean union boundary retained without clipping or new geometry.",
+    "Capture date unknown;2024 flag does not establish exact timestamp.",
+    "Not fully colored exterior, surveyed geometry or tested filament slicing."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:26:03Z",
+  "parent_review": "Parent personally viewed event exteriorphoto, original fullcode, preview and all10 finalmontage. Only whole y-24 six complete vertical framefronts12 offwhite; all4168others neutral. Topcap extent mismatches real setback utility, solidlouver relief mixes brown/glass, rightletterwall/redlettercanopy neutral. Actual3MF name explicitly HKU F Culinary Arts matched slug independently. Sevenwholeviews fit/threeintentionaldetails. Original4180triangles and18immutablebytes/noOBJ unchanged, FnotL and Dseparate,flag2024 not exactcapture."
+}

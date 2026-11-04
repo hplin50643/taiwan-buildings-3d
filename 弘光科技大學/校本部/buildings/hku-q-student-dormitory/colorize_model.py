@@ -1,0 +1,14 @@
+"""Whole original balcony slab front plane only."""
+from pathlib import Path
+import numpy as np,trimesh,json,hashlib
+R=Path(__file__).resolve().parent;H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();expected='c80c141e0299ed4cced2e0e44ad20b03c0fa823dbab7e83ba110178285fb49de';assert H(R/'model.stl')==expected
+m=trimesh.load(R/'model.stl',force='mesh',process=True);assert len(m.faces)==9520
+t=m.triangles;n=m.face_normals;e=.0001;a=np.full(len(t),1,np.int32);D={}
+ids=np.flatnonzero(np.abs(t[:,:,1]+14).max(1)<e)
+assert len(ids)==20
+edges=m.face_adjacency;edges=edges[np.isin(edges[:,0],ids)&np.isin(edges[:,1],ids)]
+pcs=trimesh.graph.connected_components(edges,nodes=ids,min_len=1);assert len(pcs)==10;assert all(len(c)==2 for c in pcs)
+D['whole_balcony_slab_fronts']=ids.tolist();a[ids]=0
+ad=m.face_adjacency;cop=(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999;cs=trimesh.graph.connected_components(ad[cop],nodes=np.arange(len(t)),min_len=1);assert all(len(set(a[c]))==1 for c in cs);assert np.bincount(a).tolist()==[20,9500]
+pal=[('HKU Q observed balcony slab front pale gray','#D2D5D1'),('UNVERIFIED main walls entrance windows roofs neutral','#B8BAB5')]
+np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((a==i).sum())}for i,(name,col)in enumerate(pal)],'domain_face_indices':D,'coplanar_components':len(cs),'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'9520 original triangles unchanged','limits':['Perforated privacy screens and low rail proxies remain neutral: original coplanar fused screen/solid-rail domains do not match the photograph’s white perforated panels and dark open metal rails.', 'All slit interiors, window/door backing and recess side surfaces remain neutral. No colors from the opposite facade are transferred.', 'Top open-frame gray beam and pale posts form connected original surfaces with mixed actual material/color appearances; no blanket white assignment.', 'Blue roof service core includes real dark windows absent from the model; do not paint the whole solid blue.', 'Balcony slab tops, undersides, side returns, rear envelope, entrance box and ground-level structures remain neutral.', 'Only nominal pale slab-front family, not calibrated exact color, texture, perforation count or current 2026 condition.', 'Correct slug hku-q-student-dormitory; earlier hku-q-dormitory intake is an alias correction, not another building.', 'Preserve all 9520 original triangles; no geometry edits, new material boundaries, mesh repairs or inferred concealed structures.']};(R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n');(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','original_STL_sha256':expected,'triangles':9520,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(q['palette'],'components',len(cs))

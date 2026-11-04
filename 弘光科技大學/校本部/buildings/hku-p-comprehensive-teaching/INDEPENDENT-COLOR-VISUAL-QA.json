@@ -1,0 +1,78 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven whole views framed, three intentional fascia details.",
+    "Only complete front and rightfold roof fascia pale gray; top, shaded underside, lettered brick tower and walls neutral.",
+    "Tower union shortens rightfold naturally; no new pyramid or extra floors."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 2198,
+  "material_face_counts": [
+    4,
+    2194
+  ],
+  "connected_coplanar_domains": 572,
+  "original_obj_present": false,
+  "original_files_retained": 18,
+  "file_sha256": {
+    "README.md": "85ae638593edf799f1e4e210630118941d4cf4fa4f3a977571f14c319b76dfdf",
+    "README.zh-TW.md": "85ae638593edf799f1e4e210630118941d4cf4fa4f3a977571f14c319b76dfdf",
+    "model.stl": "369cd63ba611be6fe51cca721c0b1b8cb198c8cee8a5ef451eed584d6c47a6d4",
+    "build_model.py": "cfc28c0c23c3edef3790e214808d011f9ffc5c1c0245130e339513c63ef12ae9",
+    "colorize_model.py": "b5b6fc91b049f13e7b070df346ddb320790967d708b5c0b60c9fca18b1d34ccd",
+    "render_color.py": "ac7f5fca851649736a2c2e364420c84c5d37310f27a808b52d5f6d9a18d1790b",
+    "verify_color_scene.py": "949f204ffdd38dd86697f1ec125252e156dc76918b72da067f0f7661b976d265",
+    "validate_color.py": "8946471370d4dc2704f786f64ada7b4f7c5f82ff3c0e4a8aa98b6602c797221d",
+    "color-mesh.npz": "6261644b9dcd1825fc1e9ba445f9f834a0a69cd84e86674c23fbe8178b43a43f",
+    "palette.json": "132db18476fd06fe7ed893c3532480d960befe05d8ecac0bf06bda9fdac96f8a",
+    "appearance-materials.json": "be08cc4932d951faa21b5a08aa034f6dc2364e216159cbf59342631029d7ac87",
+    "COLOR-SOURCE-REGISTER.json": "f9b84f25ed6ff9b6f54e516966a3862ed971972a749fe2b117a3a8fcecf1ed2b",
+    "appearance.3mf": "ffbf71fa3436caa0fd3e44c1df8e314fbc035dfbe578f77a68fa0b4d2743aebd",
+    "scene.blend": "99000a1e13d5298efebf8756328ee5c42ae407d3210f0c585e6e6378368dd6f7",
+    "preview.png": "3cc8d6d22c60893484ad6598480c11d618a67dab42d1b10aeebc7fbfa429cce3",
+    "rear.png": "73336d6bd5b918f3c8bdc3427aa815d476c68c019161d3f1a3f25648ee57a3bc",
+    "front.png": "a75ddddd2458b62e086fc0e3a48f2c1c023f6a676fc00b4cc6744cf5b9017d43",
+    "back.png": "20bd901f2b8d94aaa83d7918586648d6b9a0a503de5e5fee0e23de839d1cc9f9",
+    "west.png": "812e49493395b88d11eb5680152978482ed3b1f85b6da04819d15a9ce0a861c9",
+    "east.png": "809b4c8b0a75754586aa7fe084e03ceb40cba3145f118de01b21b4933a6fd446",
+    "top.png": "b738d42356ceeaf135c1aaec5601538aa4061eff3570e68e5ba1737b5d2f85d0",
+    "entry-detail.png": "b6dc38b76623fbe003d5e4d047e225d497d94f04bef2a26eeefcfb80d548832c",
+    "facade-detail.png": "1b48b76b999e881b1f1e1b51e378a4ccc5bf92ab5f094160b5d696f4709bcadb",
+    "roof-detail.png": "a1feb7aae36d03c19f1f077d6b7726521cf2a08d5a69dee5f6e349a1f92ebb2f",
+    "export_appearance.py": "26bac56c96ecf763b07f20f3f00bd898c0c2a182e7ecef17b07eca365eb6f58d"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "14afec7f123078636e22bf31abd7b26de2c640531377a5c232f2a454da1a4aad",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "3efa3ba2ffdceb1ed1ae00c2db4f2d02005231aac3108dbf562f1abf424c1d51",
+    "SCENE-QA.json": "7d06fa2a827f4a145896e0c4630ee871c74cfe93adb8415742e397dbea20edf2",
+    "FRAMING-QA.json": "b5f9a736b63549873513f3c18b34a4ec9b3669878f41dfa91cbb80d083904387",
+    "DELIVERY-QA.json": "01f41e78574827315dd2fdaba9902e4c053bb6b8cda27323d0ba9ab582e211be"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "1ffaeed1ecca71a1afb3ab27af8dd2b919ed58a3d0f670f9cc87ab61e8965a25",
+    "ORIGINAL-RETENTION-QA.json": "372947bdbc3fe53123dd370790fac9b6c6ac0930bc1f988f1e06fe1e10a6d53a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "200a50489c6342564ad9754f29d70ff255d7d8625ed728d87b99ae291bc4906f",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "1488b103e6eb0a41801ce7e98c3694e642f347811a8bec923e8254a271c27ae4",
+    "INDEPENDENT-DOMAIN-0453.json": "9ca83f0ed681a95417f1dd9a8d5a1af13c2f9667c40e6771fddee7ba01a467a6",
+    "INDEPENDENT-IDENTITY-0453.json": "252058f7b40c84bdacd547a2082207d074cfa02615ded78d990aedcddf0acc4b",
+    "INDEPENDENT-PACKAGE-IDENTITY-0456.json": "1488b103e6eb0a41801ce7e98c3694e642f347811a8bec923e8254a271c27ae4"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "db39d2795e35b90d4724bf9a7d7d956de5bc83ed060593a494ce56fd878863f6"
+  },
+  "limitations": [
+    "Four original fascia triangles;2194 neutral.",
+    "Two entire infinite planes equal finite original surviving domains,2+2.",
+    "Construction2009 is not capture date; no2026 current-condition claim.",
+    "Original six visible window rows retained, not total-floor certification."
+  ],
+  "retained_label_history": "private-review/MATERIAL-DOMAIN-QA-label-v1.json",
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T04:56:03Z",
+  "parent_review": "Parent personally viewed both contractor actualphotos, originalcode, preview and all10 finalmontage. Original front and folded-right roof polygon edge whole planes equal finite domains, two triangles each, four palegray total. Tower Boolean terminates right edge naturally, no artificial color crop. All2194otherfaces neutral including lettered brick tower, roof top and soffit. Explicit HKU P Comprehensive Teaching identity independently matches actual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews framed and3details intentional. Original2198triangles18immutablefiles/noOBJ unchanged, visible facade only not extra eight floors or pyramid, not2026/fullcolor."
+}

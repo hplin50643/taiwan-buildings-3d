@@ -1,69 +1,28 @@
-# 弘光科技大學｜食品科技大樓（D棟）
+# 弘光D食品科技｜頂帽前帶局部白
 
-## 模型預覽
+**局部補色未完成：只頂帽前帶2原三角淺白；框架窗與其餘未完成／不含N圓塔。** partial_color_incomplete=true、fully_colored_exterior=false。同項hku-d-food-science／count_delta=0，弘光科技大學校本部；D食品科技不等於F餐旅，也不包含左鄰N圓塔。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![俯視](previews/top.png) |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![完整頂帽前帶](entry-detail.png) | ![窄白前緣](facade-detail.png) |
+| ![中性屋上皮](roof-detail.png) | | |
 
-## 模型範圍
+## 材色範圍
 
-保留前方粗框格柵、五個主要窗層及各層窄通風帶、偏左矩形門簷與雙柱。臨時布條廣告沒有當作建築牆體。
+先枚舉原y−15整個無限plane，所有三頂點容差0.0001mm；恰2面共邊單component，完整覆蓋原x±67.5、z66..67.7矩形。不是截一半面或按normal/面心判定；2白、4156中性，957原共面連通域uniform，原4158三角與頂點不變。
 
-遠側、後側及進深是近似；右側少量凹陽台由校方外觀渲染補充，並非已確認實拍。照片左邊圓塔屬相鄰N棟，未放進本件。
+頂帽前窄帶有白色族證據；不外推屋上面、側邊、背面。大格架右側有巨幅廣告、底部植栽遮蔽，整個原連通格架中性，不把廣告當白結構，也不隨意只截左側原三角染白。窗洞背板混酒紅窗間板、框、玻璃、冷氣，整體中性。入口棚含金字，無原材界不整白。原右側陽台凹口無本照色證、階地/未見後面全中性，左N圓塔完全排除。中性不是實景灰，資料覆蓋界不是材接縫。
 
-每棟獨立視覺比例，最長邊含底板150 mm；不是測量、BIM或施工圖。尺寸：150.00 × 86.00 × 67.70 mm。
+## 來源與版本限制
 
-2026查閱校方名錄仍列此棟，不等同2026完整實拍確認。
+親看校方提供外照及原碼/預覽，只支持頂帽前緣名義白色，不模擬污斑/細欄/植物。拍攝日期未知，不聲稱2026現況。原D食品科技五主要樓層與通風短帶近似不因補色追認實測，通風短帶不是新增樓層。原右側/屋背估算保留，不新增設備或幾何。照片私人，不公開貼圖，不推未見CC為商用許可。
 
+## 檔案與 QA
 
+原STL/build與4158三角字節/座標不變；immutable18件無OBJ，原builder雖輸出OBJ，隔離生成只私存，不宣稱原repo有OBJ。原README存ORIGINAL-MONOCHROME-README.md，舊單色previews/QA保歷程。appearance.3mf兩展示材、scene.blend實際面材、color-mesh.npz同原三角。精確requirements隔離build+color、閉合正體積、3MF面材座標/Blender重開/10張1200×900檢核；重建保留不刪，未實際列印或證多色切片。
 
-## 下載與重建
+## English limitations
 
-- [STL](model.stl)
-
-- [Blender可編輯場景](scene.blend)
-
-- [Python重建程式](build_model.py)
-
-- [依賴](requirements.txt)
-
-- [幾何驗證](validation.json)
-
-- [0.2 mm截面閉合及Polygon有效性](valid-sections.json)
-
-- [0.8 mm XY薄特徵篩查](thin-feature-check.json)
-
-
-
-Python 3.12安裝requirements.txt後執行 python build_model.py；Blender執行 blender -b -t 2 -P render_preview.py；python validate_model.py；python check_valid_sections.py model.stl .；python thin_canonical_v2.py。
-
-
-
-## 驗證與列印限制
-
-原始STL單表面殼、每邊兩面、vertex-link單環、法向與繞序、正體積、150 mm尺寸、重建SHA256與Blend三角幾何一致均通過。339層0.2 mm截面逐環與合併Polygon皆閉合有效，不使用修補。
-
-0.8 mm XY形態開運算篩查最大面積損失比例 0.000276；此值不是最薄壁厚保證。設計獨立肋/框一般至少1 mm，窗上牆面浮雕可更淺。
-
-挑簷、深凹廊、懸挑平台需在實際切片軟體檢查支撐、橋接及方向。尚未正式切片或實體試印，不承諾任何機型無支撐直接列印。
-
-
-
-## 公開來源
-
-- [師大大學博覽會刊登校方提供實拍](https://www.nups.ntnu.edu.tw/univ-expo?school=hk)：拍攝日未標
-
-- [2026現行名錄及D棟渲染輔證](https://www.hk.edu.tw/學校環境介紹/)：2026-10-13
-
-來源照片、原始PDF、網站模型/貼圖不隨此檔案包公開。僅含自行建立的簡化幾何與來源連結。
-
-
-
-## 完整SHA256
-
-STL: fbc389a257bb4a6d7b3cefe58e965f32886172ad52410655af4a472d8245ac81
-
-重建STL: fbc389a257bb4a6d7b3cefe58e965f32886172ad52410655af4a472d8245ac81
-
-詳見 [SHA256SUMS](SHA256SUMS)。
+Partial only:entire y=-15 plane exactly2 shared-edge triangles covering original x±67.5,z66..67.7 front roof-cap fascia offwhite;4156neutral. No centroid/normal/bbox clipping;957coplanar domains uniform,original4158triangles/STL/build unchanged,noimmutableOBJ,count_delta0. Isolated builder-generated OBJ private,not an original repo file. Billboard-covered connected grid,windowbacks mixing burgundy panels/frames/glass/AC,lettered entrance canopy,right balcony pockets,roof top/side/rear and ground remain neutral. D Food Science only,not F Culinary or neighboring N round tower. Unknown capture,no2026survey or geometry recertification. No public source images/textures,not testprinted.

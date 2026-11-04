@@ -1,0 +1,63 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed two contractor photographs, original code/preview and all ten final renders; parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Entire y=-14 plane20triangles forms ten complete shared-edge rectangular slab-front components;9500neutral.",
+    "All2284coplanar domains uniform,no clipping or partialtriangles.",
+    "Lowest pair originalx-69..8/40..69 and upperpairsx-69..17/33..69 Boolean interruptions preserved.",
+    "Photo2front matched asymmetric entry;photo1opposite facade not used for frontcolors.",
+    "Perforated screens/solid rail proxies/windowbacks/roof frame/bluecore/entrance/slabdepths neutral.",
+    "Sevenwholeviews fit;details show intact narrow pale frontfascias separated by original gaps.",
+    "Original9520triangles/STL/build unchanged,noimmutableOBJ,count_delta0.",
+    "Explicit3MF/scene/scripts identity HKU Q Student Dormitory partial color;both capture datesunknown,no2026survey;old intake slug correction retained,not another model."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "76b3fbbf93901e6626fd76eb5c5bbde5f0f85aff047aa012fb3e390a534403c1",
+    "README.zh-TW.md": "76b3fbbf93901e6626fd76eb5c5bbde5f0f85aff047aa012fb3e390a534403c1",
+    "colorize_model.py": "5238287e5ddc5297285df9ea5c3a3ea22faae001c5b216952728bec7ba473c82",
+    "render_color.py": "249a0bb72eee9842fd8266db6f5fd417e6c3b94ae939838278f258307ce75aac",
+    "color-mesh.npz": "df057bd9562b4d9d6e24efdff2af48863398ea27079fc0dfe6bf1d590214cd95",
+    "palette.json": "5e1ae6bd07e11ebdd17c2300a89f3dea002c71d7fbadde857a7f6cd253b06776",
+    "appearance-materials.json": "1cab596751b83b4f40f079d932c9c8ef97ee9507972780594b4f380a85b44caf",
+    "COLOR-SOURCE-REGISTER.json": "654c25a7ec2a37b03f0eacce44f9b98b85fba56b59afe8cc197b9b6682f825cf",
+    "model.stl": "c80c141e0299ed4cced2e0e44ad20b03c0fa823dbab7e83ba110178285fb49de",
+    "build_model.py": "847253d185a6b51565f80a297048a87ad64ab433cb1b737a46bc100cc527fd2d",
+    "preview.png": "d667daebf1137be54b88a7b9a569b60d2a7a471ebd74bb0b13a4cc98f444991a",
+    "rear.png": "b63add9d3cd30642874dcdfb75dd546ca9dcac237ebc95f789edbfaea099d070",
+    "front.png": "1e07a5ba50661bcc1e59896cb1f4df3b37f45bd34e9c73d590da097179b14633",
+    "back.png": "2b5605cb3b599ccc05036922638e13500212d7653fba39f336ee9856ff7f6936",
+    "west.png": "ee6afaf1ae82ece13e342cacfd486428aab5e07c19900bb09a42f5f76c881212",
+    "east.png": "0bc0a1b9d417b4af96d36f090b08572d3e3becde5314052db525d05848bfe63a",
+    "top.png": "aeece5cc77e3e1b04e3db34e23944201996b62c212f4171307d1175128e9de36",
+    "entry-detail.png": "b02ae2464157eb9319cc9a69a494bfc486f19ff9f9edb0ffc68c6a2d8238e94e",
+    "facade-detail.png": "693ee4a1fe9e5a8df91f0f4a3fa3ec7b8150d09001d7cf941904c6de0ea1487d",
+    "roof-detail.png": "2362e77f6ec4a077da1faa5f91add668f3345bb7cf48b09adb969ddc3fa4d4fd"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "465c8e7996c153f3038625b309b2ea5cd9d9854c870034584f7b60c4d2ab5da5",
+    "SCENE-QA.json": "dfa316ed0b1abd86b02c512a6bc7666e9dcc0f40f724979954982314b2f150bd",
+    "DELIVERY-QA.json": "92c970b6f0aa1237aa16fa207a862a84d8514113cbc710a55cf66568fbd17320"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "e2af5a8ab00a40321771aee155e5e8f39756c334873cc22bccd46eae74f7e980",
+    "ORIGINAL-RETENTION-QA.json": "ed99417dfc678637602a21f2eb3817c8a37bbba6381e9e64e619860e8a5e115a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0457.json": "dc2f9978dc5b6111f01ecfc25909d8c0caba736212ab0c93b795b80f07fb1489",
+    "INDEPENDENT-IDENTITY-0457.json": "a50f3cc5866a78dca6c74ce87d1cc474adaee982e847655db4a521dd229bafd5",
+    "INDEPENDENT-PACKAGE-IDENTITY-0500.json": "28f85390c2c6e4789a941c87d7177556a9b5d08bb5614ca5ed997a2abbf1a083"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T05:00:34Z",
+  "parent_review": "Parent personally viewed contractor2 correctfront, originalcode, preview and finaltenmontage. Whole original y-14 plane20 has ten exact shared-edge two-triangle components, only complete five-tier balcony slab fronts nominal palegraywhite. All9500otherfaces neutral including screens/solidrail proxies/roof frame/bluecore. Original entrance Boolean gaps preserved without colorcrop, perforation density not upgraded to survey accuracy. Explicit HKU Q Student Dormitory identity independently read actual3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit,3details intentional. Original9520triangles18files/noOBJ unchanged; old incorrectfolder identity history retained, onegroup not secondmodel."
+}

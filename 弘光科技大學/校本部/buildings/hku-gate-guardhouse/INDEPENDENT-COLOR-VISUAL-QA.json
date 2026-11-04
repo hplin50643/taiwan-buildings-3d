@@ -1,0 +1,77 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven whole views include complete tower and base; three intentional ribbon closeups.",
+    "Only original front-half exterior band pale gray, rear/inner/top/bottom and tower neutral.",
+    "All facet94 Boolean fragments retained; no emblem or glazing invented."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 2560,
+  "material_face_counts": [
+    98,
+    2462
+  ],
+  "connected_coplanar_domains": 638,
+  "original_obj_present": false,
+  "original_files_retained": 18,
+  "file_sha256": {
+    "README.md": "ab8ca98049f91aecada7ddf06b906ed3c3d8867a0d5383f40d708e7b9b31204b",
+    "README.zh-TW.md": "ab8ca98049f91aecada7ddf06b906ed3c3d8867a0d5383f40d708e7b9b31204b",
+    "model.stl": "24dd885b3cf13ca73a5903d9e57195ebc3bd9b3a2819315da19f83c5a3a6d65d",
+    "build_model.py": "0cf428fd6f6fdc9a0bae84b00eb1a0799d2758a919679829426139036d187694",
+    "colorize_model.py": "743d4ee61d8b10b5c2824004247c3192d152d01803d7fe12628c7ffeaae16924",
+    "render_color.py": "4045b3d1d86f201a066a659a49d3c6313643d83ecb6daf7259365577aae2167f",
+    "verify_color_scene.py": "e0288eca94bfdd50de310520a900ec1121cd61a8abce3f8db1decd28d0501caa",
+    "validate_color.py": "a171a1e5cf09ef2149bdb0b78b222708ad38dfb1af32ad4f83bb16464152d98a",
+    "color-mesh.npz": "b5fd18a4fb26aec6615b0bb3382f1c69673570f44133113bf81ef35df9853904",
+    "palette.json": "cad159516bd44044cf5c42a4aab4c522033be56225c74016c3ee77df8df1794f",
+    "appearance-materials.json": "39bcfbdd102c8bc8d6ce27b0faf86d3bc85ee5efd8a788e440e88c338732cde0",
+    "COLOR-SOURCE-REGISTER.json": "39924ff2b42c3d367d0583e59117bd4cf8f15637b420e9974061967e91085420",
+    "appearance.3mf": "81e475085104b84aadf3031728d8f5c453b63b17e582e19634f83e327bfe70b8",
+    "scene.blend": "df41dd57ac29f4f2535fe0b91cadaad0a69695d573e92c805e08bbebcd87b01f",
+    "preview.png": "0c67e8682c4189dbd172bdb86114d91c1fd2fffb076c8d126b1988b80e0909a9",
+    "rear.png": "d9fe3ab84fa2dee6440b3a27873bb079a60e1d8a3233d4462e4b2fb9824eaa0f",
+    "front.png": "46c5bb3115de1c5bb133f34238e85e376d7dce28148a392a35aee0c97b5ad2ce",
+    "back.png": "804e64517b7d1f363e755e1d18b206f346ad61fca41f9dfe3840eabc69637ee8",
+    "west.png": "fff7cac7397823151dc06ff54b35ebe63ded4f07ff1bf4b326ccea524ea36af1",
+    "east.png": "d9fe12bcd8a742923a30b32e7eb17dc666e2412ac6fd51213d3a6ecab969b0fd",
+    "top.png": "a278d606c656a1d3918e189ad1c7e2c796adf208c4b9c6a825b9565ab3bae517",
+    "entry-detail.png": "4a1cc827aa876fbbbd465d08322d0c1f7320588a800fc7d196cd74645e79775d",
+    "facade-detail.png": "b6cfae7947359ffd37bddb5badc45e2280c01238ed5643ffe01767e7a102122b",
+    "roof-detail.png": "f559f5c9e18706c0961acf9198150c10e77c3da8b20345d72187a3d1925b388e",
+    "export_appearance.py": "8da059f3f717e656fdfe388ac9861c572cd2d0ee298c7264fb40fef1266b3283"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "736dd7b6d7d07944305c3f0f8e413ced8793817c4bc231ca2e907a0b2889b827",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "0639a1e114362eaf7694c092e9e87da6742530e1968c5557b07d8c42523d141a",
+    "SCENE-QA.json": "9630a8b747841712226e2c6e09dd5321ad68eef58fd861b1b082dd421f16bb1c",
+    "FRAMING-QA.json": "afc0b74c2ccd2fb671149392bfd1106e98cc2cceb60ab06d4888fb635e691adc",
+    "DELIVERY-QA.json": "a5799de52706024c30288745818c746c48de5992ee4b6246159b90e270154fe4"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "d042ac13289f34e6a8474043d7054cb6a9bb7fe584b514589aff3ff49cf50d7e",
+    "ORIGINAL-RETENTION-QA.json": "372947bdbc3fe53123dd370790fac9b6c6ac0930bc1f988f1e06fe1e10a6d53a",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "6d85cbf99d16036496fbbd5e5f3d0db4e768718135646625cd8cab31ff97b652",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "778314670715efa20ba6a5bdf95ca994c2417bba21778a4fbf095b3cf682e113",
+    "INDEPENDENT-DOMAIN-0504.json": "b9d29c22dd6d2133caebb91f56dd9ed392bb89078c530f64693a93c3e78ad2e9",
+    "INDEPENDENT-IDENTITY-0504.json": "eb0ac7aa1bdacb60fe0ba98e6711feada47c290c640b2587c0b3551c1454523f",
+    "INDEPENDENT-PACKAGE-IDENTITY-0506.json": "778314670715efa20ba6a5bdf95ca994c2417bba21778a4fbf095b3cf682e113"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "76ce8a0299944de26b2405b201ba19bdb14a48507d54faa2851134f713b1bb61"
+  },
+  "limitations": [
+    "98 original front-half ribbon faces;2462 neutral.",
+    "48 finite ellipse chord facets,47 times2 plus facet94 times4, full-vertex plane/tangent checks.",
+    "Original scale, Euler rotation and union boundaries unchanged.",
+    "Source capture unverified;not2026 full-condition or precision survey."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T05:06:31Z",
+  "parent_review": "Parent personally viewed front/rear actualphotos, originalcode, preview and all10 finalmontage. Independent baseextent scale and inverse Ry(-12)Rx(3) recovered original96gon ribbon: allvertices finite chord/tangent/z0..19 equals each wholeplane for front48facets48..95,98tri including complete facet94four Boolean fragments. Only frontouterband nominal lightgray,2462neutral. No tower/emblem/window/rear/top/bottom or separate signwall color extrapolation. Actual3MF/Blender/four scripts/README/paletteRGB explicitly HKU Gate Guardhouse identity correct. Sevenwholeviews keep fulltower and3intentionaldetail crops. Original2560triangles18immutablefiles/noOBJ unchanged, no2026/fullcolor claim."
+}

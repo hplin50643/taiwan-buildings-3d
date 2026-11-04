@@ -1,0 +1,56 @@
+{
+  "status": "PASS_METADATA_ONLY_OBJECT_NAME_CORRECTION",
+  "version": 2,
+  "repo_path": "弘光科技大學/校本部/buildings/hku-a-administration",
+  "count_delta": 0,
+  "old_object_name": "NTUE Administration Library Complex partial color",
+  "corrected_object_name": "HKU A Administration partial color",
+  "checks": {
+    "registry_slug_matches_frozen_repo_path": true,
+    "3MF_reopened_expected_object_name": true,
+    "3MF_XML_only_object_name_changed": true,
+    "all_other_ZIP_members_byte_identical": true,
+    "no_render_or_geometry_rebuild_performed": true,
+    "original_geometry_palette_and_ten_images_byte_identical": true,
+    "scene_semantics_except_object_label_identical": true,
+    "scene_bytes_changed_by_metadata_save": true,
+    "render_and_reopen_scripts_only_name_replacement": true
+  },
+  "old_3mf_sha256": "5f3a31f7654c6344be031d790c53d20736ab9400a51baaf92da8d28365c26e6b",
+  "new_3mf_sha256": "2ebe6f6d0e0b55569ba4e92ce9fd19f506308a0e81e041569293a352ce17ba24",
+  "limitations": [
+    "Metadata identity correction only; all original partial color and geometry limitations remain.",
+    "Existing image visual review carries forward because all ten image bytes remain identical; scene semantic equality is separately tested after rename and save."
+  ],
+  "file_sha256": {
+    "export_appearance.py": "cc7e394799fde3ebae48315cccca80466707838005e0aab003ac698a1b656b9c",
+    "validate_color.py": "6e73cb1ec7138294bc13105870f2bca6a56262922d83a5931c59103b37260246",
+    "render_color.py": "edf36cf3e5285d6fc6646ce06895da07aa536c6e47f76f8caff83cd3315a8c33",
+    "verify_color_scene.py": "3b78ecfc2c87a757563374e8899cac6fa6fb4ba7cd4ccf3c92fb97c4a097e2d2",
+    "scene.blend": "6e34aaa87d50f563e086cf2422f0fe6003efdf783b6354e1652c836ced40c9ae",
+    "appearance.3mf": "2ebe6f6d0e0b55569ba4e92ce9fd19f506308a0e81e041569293a352ce17ba24",
+    "README.md": "5826f84d24c09536c9b8628a10f5a9801d9048eb4ceedbca2ea05d03adbf391c",
+    "README.zh-TW.md": "5826f84d24c09536c9b8628a10f5a9801d9048eb4ceedbca2ea05d03adbf391c"
+  },
+  "scene_semantic_check": {
+    "status": "PASS",
+    "object_name": "HKU A Administration partial color",
+    "only_render_relevant_object_label_changed": true,
+    "serialization_note": "Unassigned zero-user default datablocks may be omitted by normal Blender save; no assigned material or rendered object is omitted.",
+    "geometry_materials_transforms_cameras_lights_world_render_and_caption_semantically_equal": true,
+    "runtime_bookkeeping_excluded": [
+      "users",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "session_uid",
+      "is_runtime_data",
+      "is_evaluated",
+      "original",
+      "dicing_camera"
+    ],
+    "normalized_semantics_sha256": "9976614c591bd235e6c3b83428522bc6a23cf195846525dd539e93610f41e4be",
+    "scene_reopened": true,
+    "scene_sha256": "6e34aaa87d50f563e086cf2422f0fe6003efdf783b6354e1652c836ced40c9ae"
+  }
+}

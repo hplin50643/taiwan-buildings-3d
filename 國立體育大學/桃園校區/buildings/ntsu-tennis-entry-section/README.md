@@ -1,39 +1,28 @@
-# 國立體育大學｜室內網球館中央門樓段
+# 國體網球館中央門樓片段｜開放尖頂前緣局部白
 
-## 模型預覽
+**局部補色未完成：只開放山牆前緣7原面淺白；招牌柱黃線與其他未完成／非全館。** partial_color_incomplete=true、fully_colored_exterior=false。同項ntsu-tennis-entry-section／count_delta=0，桃園校區；中央門樓加左右各一窗，不是全網球館/多功能館，兩名稱不增另一套。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 前側 actual STL<br>![前侧](previews/front.png) | 後側 actual STL<br>![後侧留白切面](previews/rear.png) |  |
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![開放山牆](entry-detail.png) | ![完整前緣尖端](facade-detail.png) |
+| ![中性屋皮與白前緣](roof-detail.png) | | |
 
-**局部外觀近似，非全館測繪。** 桃園市龜山區文化一路250號，NTSU；不是臺中國立臺灣體育運動大學NTUS。
+## 材色範圍
 
+只枚舉原y−15.5整個無限plane，三頂點容差0.0001mm；全部7面恰一共邊連通component，包含原削平尖端與兩端小三角，不用面心、normal或面積閾值漏面，不按bbox裁上半。7淺白、809中性，190共面連通域uniform，原816三角與頂點完全不變。保原開放三角口，不補實三角牆。
 
-## 製作範圍
-四根方柱與開放尖頂門樓、鏤空三角屋架、招牌橫梁、深入口、左右鄰窗與入口坡道。尖頂檐底做2.2mm平底檐板，屋脊寬約1.8mm，避免原STL出現不可解析尖薄端。
+白前緣不外推整屋皮、深向側緣、內底與後山牆。實景柱有黃線、告示、石腳等未有原對應材界，整柱中性；橫招牌有字而原無界，整帶中性。藍綠桁架、窗背、坡道與實心欄代理、地坪、植栽/空調及人工截面與未知後部中性，不把照片綠地坪強套原坡道。中性不是實景灰，覆蓋界不是實際材接縫。
 
-室內網球場與多功能球場屬同館，只計一件。只做門樓及兩側短牆；主球場屋頂、後部、側立面、第三期光電布置未知，均不補造。原細金屬扶手不能直接縮印，改用加粗坡道邊帶表示邊界。
+## 來源與版本限制
 
-來源照片攝影日期未載；網頁更新、PDF上傳與本次讀取日期不是照片年代。科技大樓外牆2021年整修，行政／教學／科技立面空調美化2024-05-28完工；規劃中的網球館屋頂光電和2026室內工程不當作已完成外觀。**模型不聲稱2026當下實況。** 精確適用範圍與日期在 [sources.json](sources.json)。
+親看官方入口外照與原碼/預覽。白山牆前緣沿兩斜邊與尖端連續，只採名義色族，不重現污斑或精測材色。拍攝日期未知；光電計畫與多功能館命名不能證設備已裝或2026現況，不加光電板。原只是中央門樓和側窗片段，後部人工截斷不是完整實測牆；原加厚檐端、桁架與坡欄簡化不因補色獲幾何追認。照片私人，不公開貼圖，不推未見CC為商用許可。
 
-## 檔案與重建
-- [model.stl](model.stl)：毫米；含底座最長150mm，各件獨立近似比例。底座朝下。
-- [scene.blend](scene.blend)：由實際交付STL匯入的可編修網格；與STL幾何核對。
-- [build_model.py](build_model.py)：自建參數原始碼，沒有下載第三方3D模型。建立原始mesh時去除float32量化造成的零面積冗餘三角片，再assert封閉；交付STL不經修復直接驗證。
-- [requirements.txt](requirements.txt)：版本與重建套件。
-- [render_preview.py](render_preview.py)：由實际STL輸出front/rear/elevation/top PNG，Blender 4.3.2。
+## 檔案與 QA
 
-執行 Python build_model.py，再執行 blender -b -t 2 -P render_preview.py。每個PNG都由該件STL產生，不是替代模型的效果圖。原照片／PDF只供私有對照，不隨公開包重散布。
+原STL/build與816三角字節/座標保留；immutable21件無OBJ，原builder只輸出STL。原README存ORIGINAL-MONOCHROME-README.md，舊單色previews/QA保歷程。appearance.3mf兩展示材、scene.blend實際面材、color-mesh.npz同原三角。精確requirements隔離build+color、閉合正體積、3MF面材座標/Blender重開/10張1200×900檢核，重建保留不刪，未實際列印或證多色切片。
 
-## 列印注意
-尖頂屋簷、門楣、開放屋架及入口空隙可能需支撐；請特別看三角屋頂內側橋接。
+## English limitations
 
-窗框、欄杆及屋緣做適量加粗或簡化。未知背部是有厚度實體切面，並非零厚面。數位QA不等於Cura／Prusa實際工具路徑或實體試印；不保證免支撐、完整最小壁厚或每種機器都能成功。請檢查切片後先試印。
-
-## fail-closed QA
-- [validate_model.py](validate_model.py) → [validation.json](validation.json)：原STL法向與繞序、原始面、每邊兩面、vertex link單環、水密、正體積、單一表面殼、150mm、獨立重建SHA及Blend/STL一致。
-- [check_contour_validity.py](check_contour_validity.py) → [contour-validity-check.json](contour-validity-check.json)：固定z=.071起，每0.2mm，全層degree2閉合、個別及組合Polygon valid與0.8mm opening。invalid直接失敗；無buffer(0)或make_valid修補。
-- [check_thin_features.py](check_thin_features.py) → [thin-feature-check.json](thin-feature-check.json)：原樣canonical fail-closed v3輔助檢查。正式薄件判斷採上列每0.2mm全層結果，不只看1mm抽樣。
-- [check_depth_rays.py](check_depth_rays.py) → [depth-ray-check.json](depth-ray-check.json)：原始二進位STL射線验证入口／弧廊空隙；只量模型，非實建測量。
-- [qa-summary.json](qa-summary.json)：逐程式exit0、全部checks與全0.2mm薄件摘要。
-- [SHA256SUMS.txt](SHA256SUMS.txt)：逐檔SHA。
+Partial only:all7 original triangles on y=-15.5 form one complete shared-edge front open-gable fascia component,offwhite;809neutral. Whole infinite plane selection with all3vertices tolerance0.0001mm,no bbox/centroid/normal/area clipping;retain pointed flattened tip and eave-end pieces. All190coplanar components uniform,original816triangles/STL/build unchanged,noOBJ,count_delta0. Roofupper/underside/reargable/depthfaces,piers with yellowstripes/notices,mixed signband,bluegreen truss,windows,ramp/solidrail proxy and hidden cuts neutral. Central pavilion plus one side-window bay each,not whole tennis/multiuse hall or separate buildings. Captureunknown,PVplan not installed-state proof,no2026survey. No source images/textures public,no geometry recertification,not testprinted.
