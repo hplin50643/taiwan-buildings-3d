@@ -1,44 +1,32 @@
-# 國立臺灣大學 應用力學研究大樓（主要前棟）
+# 臺大應用力學研究所前棟｜局部材色示意
 
-官方索引代碼 N59。公開外觀近似模型，非測繪或BIM。
+| 正前 | 後方 | 正面 |
+|---|---|---|
+|![正前斜視](preview.png)|![後方斜視](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂視](top.png)|![入口細部](entry-detail.png)|![立面細部](facade-detail.png)|
+|![屋面細部](roof-detail.png)|||
 
-## 模型預覽
+## 材色範圍
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+**局部山牆、柱廊橫梁、門窗與階梯；磚牆和混材質門柱分色未完成。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。這是局部材色包，不計作全面補色完成。
 
-## 範圍與比例
-只製作中央入口與相鄰主前棟，不包括後方院落、完整側翼與附屬量體。依2010三張官方外觀及目前應力所網站大幅入口照片；背面與屋頂缺乏證據，留白，進深為目測估計。
+同一 `ntu-applied-mechanics-front` 原項目（same-item、count_delta=0），保留 **2904 個原三角面、頂點及 STL／OBJ／build_model.py 位元組**。只含原前棟近似範圍，不擴建為全院中庭建築群。沒有新增、切分或修正幾何。
 
-保留辨識特徵：帶圓窗的淺弧階梯山牆、三排寬窄交替窗、大型淺弧階梯拱門、兩側較低柱廊、入口台階。門廊左右原曲線以短直段簡化；圓窗、玻璃皆實心背牆淺凹。
+採官方 N59 2010 照片與拍攝日期未核的所方 IAM.jpg 近似色族：獨立弧形山牆正面、下柱廊既有橫梁正面與階梯為灰色，真凹門窗背面為克制灰藍陰影，原有細梃為深灰。IAM 藍天反光不是玻璃固有鮮藍油漆，未仿製污斑、反光、植栽及招牌。
 
-尺寸 [150.0, 82.0, 80.4000015258789] mm，含底座最長150 mm。各館獨立比例，不是可拼接的共同尺度校園沙盤。尺寸、厚度、窗距均為照片目測和列印簡化，不是原建物實測。
+**主立面同一平面混紅磚、灰基座、灰女兒牆；原大型門柱與柱廊柱亦混磚身與灰腳，未被原拓撲分界，所以整個連續平面保持中性。** 不用高度門檻把上三角染色形成假斜楔。橫梁上面、主屋面、側端與後面未證保持中性；不虛造灰窗外框、欄杆或文字。
 
-## 列印
-- 底座向下，毫米單位。參考起點：0.4 mm噴嘴、0.16–0.2 mm層高、3道外牆、15–20%填充。須依自己的切片器調整。
-- 大型門廊、淺拱頂與側柱廊需局部支撐；不宣稱自支撐或完整建物重建。
-- 新增細浮雕名義最小約0.9 mm；這不是全模型最小壁厚的測量結果。零碎設備、文字招牌、樹木、電線及細緻裝飾沒有加入。
-- 門窗背牆與實心量體避免隱藏內殼；實際填充由切片器決定。
-- 未實際列印；未用PrusaSlicer、Cura等生成工具路徑。不宣稱無支撐或無風險可印。
+## 使用與重建
 
-## 驗證與檔案
-- model.stl、model.obj；scene.blend是由實際STL匯入的可編修網格。
-- build_model.py為獨立參數來源；Python3.12，依requirements.txt裝依賴後執行python build_model.py。
-- Blender4.3.2：blender -b -t 2 -P render_preview.py。previews/front.png、rear.png、elevation.png均直接渲染交付STL。
-- python validate_model.py：原始法向、水密、流形邊／頂點、單一連通表面、無分離封閉內殼、正體積、150mm、獨立重建SHA256及已儲存Blender/STL三角幾何一致性。結果validation.json。
-- python check_layers.py：每0.2mm水平截面幾何檢查，共 402 層，所抽樣截面全部閉合。首層採z=0.071mm避免重合平面退化，非實際列印首層設定。
-- layer-check.json另記向下超45度面積指標與各層輪廓；它不是切片器、最小壁厚測試或實體試印。閉合截面不保證擠出連續、橋接、支撐可拆、床面附著或局部細節可印。
-- SHA256SUMS可核對檔案；更改參數後需重建、重繪、重驗證。
+`scene.blend` 為實際多材質場景；`appearance.3mf` 使用基本材質標籤，`color-mesh.npz`、`palette.json` 與 `appearance-materials.json` 為原三角面材質對照。STL 自身不含顏色，原 OBJ／程式與 `ORIGINAL-MONOCHROME-README.md`、原 `previews/` 保留，不當作新色版 QA。
 
-## 公開來源
-查閱及圖像像素檢視：2026-10-13。來源照片未隨檔重新散布。
-- [應力所本館身份及1987完工記載](https://www.iam.ntu.edu.tw/zh/intro/history)
-- [應力所官方公開場地介紹（只使用館外正門）](https://www.iam.ntu.edu.tw/zh/conference-room/conference-room2/98-site)
-- [實際檢視官方入口大圖](https://www.iam.ntu.edu.tw/images/stories/site/IAM.jpg)
-- [2010官方外觀 6007](https://homepage.ntu.edu.tw/~cpo/2010photo/N/N59/IMG_6007.JPG)
-- [2010官方外觀 6008](https://homepage.ntu.edu.tw/~cpo/2010photo/N/N59/IMG_6008.JPG)
-- [2010官方外觀 6009](https://homepage.ntu.edu.tw/~cpo/2010photo/N/N59/IMG_6009.JPG)
-- [臺大官方建物索引，檢索標題2026-08-17](https://cpo.ntu.edu.tw/map/C_01_list.pdf)
+重建材色：`python colorize_model.py`、`python export_appearance.py`、`python validate_color.py`。原幾何仍由 `build_model.py` 重建。Blender：`blender -b -t 6 --python-exit-code 1 --python render_color.py`；以 `verify_color_scene.py` 重開檢查。
 
-照片版權屬原權利人；沒有轉授原建築設計或照片權利。不同拍攝日期不等於已核實目前全部外觀。
+**未實際列印**；四種顏色標籤不是已配置或驗證的四色列印工作。原外觀近似與細件列印限制保持。本更新不宣稱精確竣工、完整現況或 2026 材料測繪。
+
+## 來源與權利
+
+官方來源列於 `COLOR-SOURCE-REGISTER.json`。來源照片未確認 CC／開放再散布授權，僅私人參照，不隨模型公開、不作貼圖、不保證商用。原模型授權不擴張到照片權利。來源與原包已私人保留，沒有刪檔。
+
+來源 GO／原照獨立審核不等同成品通過；本包另有原三角座標一致性、3MF、Blender 材質、隔離重建、十視角與人工視覺 QA。HEX 是未校準色族，未知區域中性是明示未完成範圍。

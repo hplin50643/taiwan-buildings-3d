@@ -1,0 +1,101 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BOUNDED_COLOR_SCOPE",
+  "reviewed_at_utc": "2026-11-02T19:15:00Z",
+  "mesh_sha256": "33b52ffa4e8b0a69f676b52d9cad920a91708ba21bd383d2c80fa858dd6027af",
+  "build_code_sha256": "c3d2bd5e494a774f6fd86034540e5aee6ab5a34b140fa6907d936339c45e4a93",
+  "color_code_sha256": "433dd89bc920dbe97522c94fe3acf13adcc80743aa46e6d79ed7e50299e2b018",
+  "render_code_sha256": "4fba7368cce98f87b1574c9ea3a623862fa9d2784c747b6c5450b3bbef887e82",
+  "readme_sha256": "025714668e31453ad69d3e333818af4f1626a83e40def07e7574fc2937db9f96",
+  "file_sha256": {
+    "model.stl": "34622c157322ad7bb3ab6ae6d1f5c51672b7466aaafe259bc1ee17f1bbaf7c78",
+    "build_model.py": "c3d2bd5e494a774f6fd86034540e5aee6ab5a34b140fa6907d936339c45e4a93",
+    "colorize_model.py": "433dd89bc920dbe97522c94fe3acf13adcc80743aa46e6d79ed7e50299e2b018",
+    "render_color.py": "4fba7368cce98f87b1574c9ea3a623862fa9d2784c747b6c5450b3bbef887e82",
+    "export_appearance.py": "499f0a3f95d11cdcc9b999b80b186e49870748f4b8101d06b2c9001c8921c440",
+    "validate_color.py": "0edc5eb20429c514b95dcc53e98ae9cba878ac8cd86d24b43fc8ea7360f9ab3d",
+    "verify_color_scene.py": "b3b77fdce99bd57ba9dc02024e271b07e68cf0ed9014ac9afcc8cf8477b81f40",
+    "color-mesh.npz": "33b52ffa4e8b0a69f676b52d9cad920a91708ba21bd383d2c80fa858dd6027af",
+    "palette.json": "d3c1ebaeb05739cc01cd3854d4d9b3ea20dd178e9510e8d65a45661ad85bf809",
+    "appearance-materials.json": "43c8252666d19614b8bdc5f18ce6470c115d862de60e1a4cef4ba43b51236c0c",
+    "appearance.3mf": "f1f212167755afa7bceb86c843c5f0262acfb98a2b17caac56534b2fdbdf91aa",
+    "scene.blend": "c04cf85119509e2e1b2a695cc5d6502c1176834d390a347c4ddced528af9b0e7",
+    "README.md": "025714668e31453ad69d3e333818af4f1626a83e40def07e7574fc2937db9f96",
+    "COLOR-SOURCE-REGISTER.json": "71e95b5aea96b633fd362a3a4ebcd71e69632cfbae68b155810de795f6955558",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "ff8854824e92833deb976ed1a9b574a109b29c6a9147def014857d1028c8dd0e",
+    "SCENE-QA.json": "a186756f333a41dcb11e3ac55f658cdda3cd83f7d30967bbb185ea914e1f4dc2",
+    "DELIVERY-QA.json": "bc00b0b433a2f34edf512d6d049e3e7ed5ab8e42dbe76ab9623e1f1bf17ec365",
+    "FRAMING-QA.json": "3199081246747c1d458b234ca3dbe49bd3b29157b3f93f7085f85f33b0650ad7"
+  },
+  "png_sha256": {
+    "preview.png": "178a7c4d0de97ce00284b5e15179f1991a1febbaa58eddf5778a04c7f53a09f8",
+    "rear.png": "fb4bf0588dbb799839c85fb86bc5485b3fc6653f32ec207ea523833fd6439474",
+    "front.png": "dd6ad24eb74b6bd290323c4f321c68e73c9615f7b3cd73b68158ddb05854c340",
+    "back.png": "c1b716ce6eb97f54858fa175db761870eb4a518b12a6a7d0e5b343c5bd9dd730",
+    "west.png": "c099295ee84f699178dd41cd0406ac0b1696703ed42c4656d92615c0068e561c",
+    "east.png": "8c78d65bc5edfc9d27a1c469b4780fdb148d67dcefc06b9e1c5d2196ffed5c9c",
+    "top.png": "9451af09582144177f4de4da763078a8d80ea879eb3f0dbf6994f9b824f89b1b",
+    "entry-detail.png": "a3e3124749ed58606c600eb76fbc396669bdb026623e46fe480fd7cde0ccc16b",
+    "facade-detail.png": "b1187754168d65113d6a823416f4956d3abcbd7ff00a25e2e861703885329c5b",
+    "roof-detail.png": "37ebf4ca3742339d7bbf8051ca9e632fe8746abf3e22dfc58a70ec833ca459f6"
+  },
+  "source_review_sha256": {
+    "NTU-ELECTRICAL-ENGINEERING-TWO-INDEPENDENT-FOCUSED-COLOR-REVIEW-1851.json": "4827e9f49d9a0919d5310884e7e6c8194dd96dc99db49fdd8eabf8964d8968c1"
+  },
+  "numeric_checks": {
+    "original_triangles": 6318,
+    "original_vertices_faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "model.obj": true,
+      "build_model.py": true
+    },
+    "five_material_counts": [
+      1308,
+      983,
+      508,
+      2,
+      3517
+    ],
+    "3MF_faces_materials_exact": true,
+    "3MF_vertex_serialization_max_delta_mm": 4.970701183992787e-09,
+    "3MF_unit": "millimeter",
+    "stair_face_5413_gray": true,
+    "expected_material_counts_match": true
+  },
+  "actual_visual_review": {
+    "preview": "PASS full model/base and readable caption; bounded domains coherent",
+    "rear": "PASS full model/base and readable caption; bounded domains coherent",
+    "front": "PASS full model/base and readable caption; bounded domains coherent",
+    "back": "PASS full model/base and readable caption; bounded domains coherent",
+    "west": "PASS full model/base and readable caption; bounded domains coherent",
+    "east": "PASS full model/base and readable caption; bounded domains coherent",
+    "top": "PASS full model/base and readable caption; bounded domains coherent",
+    "entry-detail": "PASS intentional local framing; no material wedge",
+    "facade-detail": "PASS intentional local framing; no material wedge",
+    "roof-detail": "PASS intentional local framing; no material wedge"
+  },
+  "source_findings": [
+    "Three official 2010 E3 photographs and original code inspected; original approximate central triangular gable differs from photographed shallow arch and is not corrected.",
+    "Entire original front and left main walls and full-height pilasters remain neutral because gray plinth and brick lack separate original faces. Only separable cap fronts and window returns brick, existing bands gray, real window backs muted gray-green.",
+    "Central upper cap 31 backing faces corrected to gray solid infill, not glazing.",
+    "V3 stair face5413 corrected to gray; fused sloping original stair face no longer creates pale triangular patch. All ten V3 images individually inspected; no new false diagonal color boundary found.",
+    "Unknown right, rear, roof and base neutral; no added geometry, labels or equipment. README retains partial scope, private sources and untested printing."
+  ],
+  "reported_checks_reviewed": [
+    "format and isolated rebuild PASS",
+    "scene reopen five actual shaders PASS",
+    "delivery/framing PASS"
+  ],
+  "limitations": [
+    "Original approximate shape unchanged, not newly surveyed.",
+    "No exact current or dated as-built color claim.",
+    "Four material families not tested filament slicing; no physical print.",
+    "Private sources excluded from public package, no blanket copyright license."
+  ],
+  "output_modified": false,
+  "files_deleted": false,
+  "correction_review_sha256": {
+    "INDEPENDENT-CAP-MATERIAL-REVIEW-1858.json": "2886a328169e9af275ddbad7ea0a41b718133a0ff65883ccdcf5b511f50099ef",
+    "INDEPENDENT-STAIR-FACE-MATERIAL-REVIEW-1904.json": "63573d30f6673af0d75a2486fe685962a945a09d5c11d932fbcf89f95765f5a1"
+  }
+}

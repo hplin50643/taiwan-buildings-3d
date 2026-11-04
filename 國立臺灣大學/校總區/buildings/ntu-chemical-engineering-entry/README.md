@@ -1,53 +1,31 @@
-# 國立臺灣大學 化學工程館正門入口段
+# 臺大化工館中央入口｜既有模型局部材色更新
 
-## 模型預覽
+**局部窗罩、窗台、細柱、三拱門廊與門窗；磚牆及窗間實板分色未完成。** 同一原入口片段，不是全館完整外觀；不因色彩更新增加東西延伸翼或後接實驗室。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+| ![總覽](preview.png) | ![背側](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![左側](west.png) | ![右側](east.png) |
+| ![頂面](top.png) | ![門廊](entry-detail.png) | ![窗罩](facade-detail.png) |
+| ![屋面](roof-detail.png) |  |  |
 
-[返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
+## 材色範圍
+- 原 `ntu-chemical-engineering-entry` 項目，count_delta=0；4262 個原三角形及座標完全保留。原 STL、OBJ、build_model.py 位元組不改，不新增、切割或細分幾何。
+- 依實照，原獨立曲面窗罩、窗台、細柱及三拱門廊採灰石/混凝土色族；已有各個獨立窗洞背面、入口及通風凹口採深灰綠/陰影，不表示已重建室內。
+- 主前牆同一連通平面混紅褐磚及灰色窗間實板，原模型缺這些分域，因此整片中性。右側大盲牆與同平面相連，不用 x 座標或三角形斜邊假造磚色界線。
+- 後面、端面、水平屋頂及門廊頂面未充分見於照片，保中性。沒有補曲面窗間板、冷氣、樹、文字或相鄰翼。
+- 原形體是公開外觀近似片段，色彩不背書其窗距、樓高、拱/窗罩形狀或尺寸精確。
 
-## 實際 STL 正面與背面
+## 來源與權利
+採臺大總務處公開入口/前立面兩照；網頁發布/更新日為2026-09-29，**照片實際拍攝日期未確認**，不是2026精測現況。原照及研究檔已私人備份，原圖不公開、不作貼圖；未確認 CC 或開放重製授權，不保證商用權利。HEX 是未校色展示近似。
 
+## 格式與列印
+[原 STL](model.stl) · [原 OBJ](model.obj) · [彩色 3MF](appearance.3mf) · [彩色 Blender](scene.blend) · [材質表](appearance-materials.json) · [原模型說明](ORIGINAL-MONOCHROME-README.md)
 
-[下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
+3MF basic materials 及 Blender 真正面材質分配；STL 本身不含色。四材質標籤不是驗證過的四色耗材切片專案。毫米單位、原含底座150 mm長，非測繪比例。未實際列印，未產生切片工具路徑；拱底、窗罩及細柱支撐需另檢查。
 
-本件新增closed/valid與薄篩結果見本資料夾valid-sections.json、thin-feature-check.json。
+## 重建與 QA
+按原 requirements 安裝依賴後執行 `build_model.py`、`colorize_model.py`、`export_appearance.py`、`validate_color.py`；Blender 執行 `render_color.py`，再 `verify_color_scene.py`。
+`COLOR-FORMAT-GEOMETRY-QA.json` 核原 STL bytes、逐三角座標、閉合正體積、3MF 幾何/材質索引與完整隔離重建；`SCENE-QA.json` 重開真正場景材質，`DELIVERY-QA.json` 綁定十圖。程式 QA 不替代人工來源/視覺核對。
 
-
-範圍：正門中央三拱門廊及鄰接可見立面段，不含東西增建翼樓、南側連接實驗室與機器間；外觀依2026-09-29官方頁所刊照片。
-
-## 來源與模型
-- 兩層長窗及淺弧雨庇
-- 三跨淺拱門廊、實心前階梯
-- 右側較寬無窗牆面
-- 上方通風帶與突出平屋緣
-
-官方記錄1963落成、1976增建東西翼、2024登錄歷史建築，2026修復再利用計畫核准，尚不得聲稱修復已完成。系史館舊照只交叉核對門廊和窗格；其舊平屋頂欄杆未混用為2026屋頂通風帶。
-
-## 簡化與不確定性
-- 照片裁切以外的西端長度不推造，兩端為截段研究邊界
-- 未知背側為素面；模型不是完整化工館
-- 窗格/立柱加粗，立面比例估計
-- 省略右側長坡道與細欄杆，完整東西翼/機器間另待建模
-
-外觀照片推估，非測繪/工程模型。成品尺寸[150.0, 79.0, 51.599998474121094]mm，每件獨立最長150mm，不能作同尺度校園拼接。
-
-## 列印與驗證
-門廊跨距約12.3mm；屋頂、雨庇與拱梁須切片支撐/橋接評估，前階梯高0.65mm、窄直框1.2mm、拱罩實心加厚。 底座朝下，先以0.4mm噴嘴/0.2mm層高檢查工具路徑。未作真正切片器測試或實體試印。
-
-原STL拓撲、原法向、單一連通封閉表面、正體積、重建雜湊及Blender幾何一致性全通過。0.2mm截面closed/valid報告見valid-sections.json；1mm抽樣0.8mm參考opening薄篩見thin-feature-check.json，這只是輔助幾何指標，不是完整壁厚分析。
-
-## 公開證據
-- [公開來源1](https://ga.ntu.edu.tw/main_ch/docDetail/2623/2583/44553/260929)
-- [公開來源2](https://ga.ntu.edu.tw/upload/cont_att/373ca0d6-ce59-4d24-ad7a-720fa0d60043.jpg)
-- [公開來源3](https://ga.ntu.edu.tw/upload/cont_att/0c646e4e-acdb-490d-b624-8ef19419a8b1.jpg)
-- [公開來源4](https://www.ntuchehistory.com/products_detail/59)
-- [公開來源5](https://www.ntuchehistory.com/upload/images/4.%E5%8C%96%E5%B7%A5%E9%A4%A8.jpg)
-- [官方索引](https://cpo.ntu.edu.tw/map/C_01_list.pdf)，2026-08-17版，代碼M8。
-
-來源照片只查閱不重新散布，previews全由實際STL生成。
-
-## 重建
-以requirements.txt列依賴執行python build_model.py；Blender 4.3.2+執行blender -b -P render_preview.py；python validate_model.py檢查原STL、獨立重建與場景。check_valid_sections.py及thin_canonical_v2.py均接受model.stl和輸出資料夾兩參數。
+舊 `previews/`、`render_preview.py` 與原 validation 檔保留，是單色歷程而非本次材色 QA。上方十圖及新 appearance 產物才是本次局部材色；未刪原件。

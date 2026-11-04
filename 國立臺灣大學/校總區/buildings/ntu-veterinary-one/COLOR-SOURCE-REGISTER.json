@@ -1,0 +1,74 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "ntu-veterinary-one",
+  "sources": [
+    {
+      "path": "color-source-review-20261102/ntu-veterinary-one/IMG_5938.JPG",
+      "sha256": "690ef0010f86f0593756bbde1940f998a3938a80236a5d66697881f80859b8e7",
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E1/IMG_5938.JPG",
+      "actually_viewed": true
+    },
+    {
+      "path": "color-source-review-20261102/ntu-veterinary-one/IMG_5939.JPG",
+      "sha256": "f7b9dcd18826406a2e340f4dd6dcdba862bd2edbb9f8a8c05813287e73520bd9",
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E1/IMG_5939.JPG",
+      "actually_viewed": true
+    },
+    {
+      "path": "color-source-review-20261102/ntu-veterinary-one/IMG_5940.JPG",
+      "sha256": "bd7fc85dd7feba3619d82290d23f3f8bb7ea27c60fee6b5e102cc2ee269b8f98",
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E1/IMG_5940.JPG",
+      "actually_viewed": true
+    }
+  ],
+  "audit": {
+    "path": "color-audit-campus-next1-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
+    "sha256": "2f17731a7492944f4d39acb821df2f22e540dbfce7f056fcf053b1cb77c1f652"
+  },
+  "rights": "Official public reference photos; no express CC verified. Originals private, no public textures/source redistribution or commercial-rights warranty.",
+  "version": "2010 official E1 Veterinary Building 1 exterior group, not Buildings2/3. Later use/material condition not verified.",
+  "constraints": [
+    "Same slug/count0, original STL vertices/faces unchanged",
+    "Unknown/occluded/back/roof faces neutral; source color family not calibrated",
+    "No new signs, characters, air conditioners, vegetation or fine lattice",
+    "Full-face material boundaries, no centroid wedges"
+  ],
+  "original_faces": 2890,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "issued_utc": "2026-11-02T19:08:00Z",
+  "independent_review": {
+    "path": "color-source-review-20261102/ntu-veterinary-one/NTU-VETERINARY-ONE-INDEPENDENT-FOCUSED-COLOR-REVIEW-1907.json",
+    "sha256": "5ac5bc24ee94c6afcc67f6751fb43d904c7a9ed94f7bac35746fa930348c00a7"
+  },
+  "approved_mapping": [
+    "2010 veterinary hall ONE only, not veterinary hospital or halls two/three.",
+    "Front warm muted buff-orange brick infill, original gray horizontal bands/central vertical strips/entrance canopy/frame, restrained gray-green window backs.",
+    "Right-end visible facade supports bounded same brick/gray families only where original distinct surfaces permit; vines are vegetation, not green wall paint.",
+    "Central stepped cap solid field is mainly gray; photographed partial brick rising into cap cannot be replicated by arbitrary triangle assignment. Whole unseparated cap face gray/neutral, not invented brick zigzag."
+  ],
+  "mandatory_public_limits": [
+    "Photographed lower gray plinth versus brick must respect original full-face boundaries; neutral fallback for crossing triangles.",
+    "Side gray grid not all present in original: do not invent lines or blindly color whole right wall brick if mixed gray areas inseparable.",
+    "Unknown left/rear/roof neutral; no foliage paint, plaques, mailboxes, air-conditioners or new grilles.",
+    "Full-vertex surface matching only; no new or split geometry.",
+    "Not exact current appearance, original geometry remains approximate.",
+    "Source photos private, no blanket reuse rights; final material/ten-view QA required."
+  ],
+  "palette_nominal_srgb": {
+    "brick": "#B99A79",
+    "stone": "#969B97",
+    "window_back": "#536567",
+    "shadow": "#3F4745",
+    "unknown_neutral": "#B8BAB6"
+  },
+  "model_qa": "Pending original STL bytes/vertices/faces identity, full-face domains/no wedges, ten renders, actual scene/3MF materials and private final backup.",
+  "source_GO_sha256": "653d95823bcfadfbd7b1611520fd88850b2180a2cb10bb0300fb8c7f057695d9",
+  "mandatory_implementation_narrowing": {
+    "path": "color-source-review-20261102/ntu-veterinary-one/NTU-VETERINARY-ONE-IMPLEMENTATION-SCOPE-NARROWING-1913.json",
+    "sha256": "ec838dcab6b3be757d0be10c8c9ded603fcc78f4f929c6205a2320e07bc23076",
+    "interpretation": "Mixed brick and gray broad facade fields neutral; no inserted color boundaries. Only original separated gray bands, central strips, gray cap and actual recess backing colored."
+  },
+  "private_source_backup_receipt": "color-source-backup-campus-next1-20261102-1909/PRIVATE-BACKUP-RECEIPT-1909.json",
+  "scope_appendix_backup": "1913 appendix to be included in next source backup; current model private-final contains source register hash and interpretation."
+}

@@ -1,53 +1,47 @@
-# 國立臺灣大學 國家發展所大樓
+# 臺大國發所 E10｜既有模型局部補彩
 
-## 模型預覽
+本次只依臺大官方 **2010 E10 外觀照片組**，為既有簡化模型可對位面補上近似展示色；不代表搬遷後新館或 2026 全面現況，照片組年份不是精確拍攝日期。**前方與側方跨越灰基座的大牆整面保持中性**，不宣稱全立面已完整精確上色。原 4112 三角形、頂點、STL／OBJ 與建模程式不變；同項目更新，count_delta = 0。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| ![預覽](preview.png) | ![背斜視](rear.png) | ![正面](front.png) |
+|---|---|---|
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![入口](entry-detail.png) | ![側格](corridor-detail.png) |
+| ![冠部](roof-detail.png) | 原幾何保留 | 未證面中性 |
 
-[返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
+## 材質範圍
 
-## 實際 STL 正面與背面
+- 可由原格柵劃分的側牆填面採低飽和暖磚色；原灰石外格、中央入口塔、階梯、拱圈、既有梃與階梯式冠部採灰色；格柵端面作同構件色族連續概化，並非逐面實景校色；中央冠部只保已證正面灰，未證冠背與冠頂 27 個原面保留中性（菱孔真內返不誤併入）。
+- 原窗凹底採節制灰綠展示色，其他洞內用通用深陰影；圓孔與入口不一律當玻璃，不增門扇或內部。
+- 原前牆大三角與其同平面連通面跨越磚牆／灰基座材色界線，**整個混合牆域保持中性**；不切面、不用重心染成假斜色。僅已有獨立邊界的側格填面可染磚色。
+- 原 primitive 只供完整面對位；原程式最後 Z × 0.9，材域查找先反算此縮放，輸出座標仍完全不動。
+- 後牆、水平屋面、遮蔽或無唯一對位的面保留中性。中性不是實景油漆色；材色分界亦非新建真實縫線。
+- HEX 為未校色照片的展示近似，不是量測色票。未增加題字、菱形裝飾、空調、植栽、精細格柵或任何新幾何。既有簡化形體／比例未因補色獲得實測精度背書。
 
+## 檔案與重建
 
-[下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
+`model.stl`、`model.obj`、`build_model.py` 保留原檔位元；STL 本身無彩色。`appearance.3mf` 以逐面 base-material 標籤保存五種材色，`scene.blend` 使用實際節點材質；`color-mesh.npz` 保存原頂點／面序與材質索引。
 
-[新增34件列印幾何補查與細節警示](../../../qa/printability-20261013/README.zh-TW.md)
+```sh
+python -m pip install -r requirements.txt -r color-requirements.txt
+python build_model.py
+python colorize_model.py
+python export_appearance.py
+python validate_color.py
+blender -b -t 3 --python render_color.py
+blender -b --python-exit-code 1 --python verify_color_scene.py
+```
 
+原環境版本見 `requirements.txt`；彩色查面另需 `color-requirements.txt`。隔離重建保留，不自動刪除。十張圖由同一實際彩色模型渲染；相機／取景見 `FRAMING-QA.json`。檢核見 `COLOR-FORMAT-GEOMETRY-QA.json`、`SCENE-QA.json`、`DELIVERY-QA.json`、`SOURCE-VISUAL-QA.json`。
 
-官方索引代碼 E10。公開外觀近似模型，非測繪或BIM。
+## 來源與權利
 
-## 範圍與比例
-依2010官方正面及兩側斜角照片。樹遮小窗與磚紋省略；側面窗格節奏及進深近似，背面及屋頂設備無充分證據而留白。不宣稱2026全部外觀現況。
+臺大營繕組官方 2010 E10 圖片：
+- [正面 IMG_6020](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E10/IMG_6020.JPG)
+- [側面 IMG_6021](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E10/IMG_6021.JPG)
+- [側面 IMG_6022](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E10/IMG_6022.JPG)
 
-保留辨識特徵：中央階梯山牆與菱形凹飾、灰色入口塔、底層大半圓拱、中央階梯窗帶、底層圓窗及兩側結構格柵。
+來源原照只私人核對，沒有公開貼圖或隨包重散布；未確認 CC 授權，不保證商用或以倉庫授權涵蓋原照。來源判讀與雜湊見 `COLOR-SOURCE-REGISTER.json`。原單色檔及舊渲染歷史保留，彩色新增檔是本次入口。`README.zh-TW.md`、`previews/`、`validation.json`、`source-model-comparison.json`、`layer-check.json` 與原檢核／單色渲染腳本皆屬舊版紀錄，不作本次材色 QA 結果。
 
-尺寸 [150.0, 90.0, 78.30000305175781] mm，含底座最長150 mm。各館獨立比例，不是可拼接的共同尺度校園沙盤。尺寸、厚度、窗距均為照片目測和列印簡化，不是原建物實測。
+## 列印限制
 
-## 列印
-- 底座向下，毫米單位。參考起點：0.4 mm噴嘴、0.16–0.2 mm層高、3道外牆、15–20%填充。須依自己的切片器調整。
-- 入口拱、窗框與結構格柵上緣可能需要支撐，凹窗保留實心背牆；菱形頂飾及高處階梯邊應慢速列印。
-- 新增細浮雕名義最小約0.81 mm（模型高度調整後）；這不是全模型最小壁厚的測量結果。零碎設備、文字招牌、樹木、電線及細緻裝飾沒有加入。
-- 門窗背牆與實心量體避免隱藏內殼；實際填充由切片器決定。
-- 未實際列印；未用PrusaSlicer、Cura等生成工具路徑。不宣稱無支撐或無風險可印。
-
-## 驗證與檔案
-- model.stl、model.obj；scene.blend是由實際STL匯入的可編修網格。
-- build_model.py為獨立參數來源；Python3.12，依requirements.txt裝依賴後執行python build_model.py。
-- Blender4.3.2：blender -b -t 2 -P render_preview.py。previews/front.png、rear.png、elevation.png均直接渲染交付STL。
-- python validate_model.py：原始法向、水密、流形邊／頂點、單一連通表面、無分離封閉內殼、正體積、150mm、獨立重建SHA256及已儲存Blender/STL三角幾何一致性。結果validation.json。
-- python check_layers.py：每0.2mm水平截面幾何檢查，共 392 層，所抽樣截面全部閉合。首層採z=0.071mm避免重合平面退化，非實際列印首層設定。
-- layer-check.json另記向下超45度面積指標與各層輪廓；它不是切片器、最小壁厚測試或實體試印。閉合截面不保證擠出連續、橋接、支撐可拆、床面附著或局部細節可印。
-- SHA256SUMS可核對檔案；更改參數後需重建、重繪、重驗證。
-
-## 公開來源
-查閱及圖像像素檢視：2026-10-13。來源照片未隨檔重新散布。
-- [臺大學輔中心官方：國發所大樓與位置身份](https://csw.ntu.edu.tw/cp_n_188377.html)
-- [臺大校友雙月刊：國發所搬回校總區沿革](https://ntualumnibm.ntu.edu.tw/bm.bimonthly.article/detail/sn/9010)
-- [實際檢視2010官方外觀 6020](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E10/IMG_6020.JPG)
-- [實際檢視2010官方外觀 6021](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E10/IMG_6021.JPG)
-- [實際檢視2010官方外觀 6022](https://homepage.ntu.edu.tw/~cpo/2010photo/E/E10/IMG_6022.JPG)
-- [臺大官方建物索引，檢索標題2026-08-17](https://cpo.ntu.edu.tw/map/C_01_list.pdf)
-
-照片版權屬原權利人；沒有轉授原建築設計或照片權利。不同拍攝日期不等於已核實目前全部外觀。
+**未實際列印**。五種展示材質並非已測試的四耗材專案；未提供已驗證的換料、可分件、支撐、壁厚或設備設定。保留既有模型的簡化與可列印性限制，不因格式檢核通過而稱已試印。

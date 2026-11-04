@@ -1,0 +1,33 @@
+{
+  "status": "BOUNDED_PARTIAL_COLOR_SOURCE_REGISTER",
+  "source_go_sha256": "a0cab2981ffd57c81b2a4df89d79634e5fa000388fb0327ab510ea0001c99d47",
+  "source_version": "Official NTU 2010 S45 photos IMG_5829 / IMG_5831; B hall only, not A/C.",
+  "sources": [
+    {
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/S/S45/IMG_5829.JPG",
+      "sha256": "bcdcb95fd26a911b6b20f4ceb358a5e6483c8a4b7a9f4a70c356e888f86b0ec3"
+    },
+    {
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/S/S45/IMG_5831.JPG",
+      "sha256": "492e89cff92989aee626303082d31a3fce92f1a1d285314e9d0ae267373e16a2"
+    }
+  ],
+  "rights": "Historical public reference photos; no express redistribution license verified. Originals remain private; no source-photo public upload, texture reuse or commercial-rights warranty.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "mandatory_notice": "僅既有淺框與門廊陰影；磚牆、深窗與實板分色未完成。",
+  "count_delta": 0,
+  "geometry_unchanged": true,
+  "scope_limits": [
+    "Assign only entire existing polygon with all vertices satisfying a supported material domain; no centroid wedges or mesh splits.",
+    "Unknown rear, unsupported surfaces and polygons spanning different real material domains remain neutral.",
+    "Original photos private reference only; no verified open redistribution license, no textures or source-photo public upload.",
+    "Colors are uncalibrated historical color-family approximations, not 2026 current-condition guarantees.",
+    "Final implementation must independently verify original STL identity, scene face/material assignment and multi-view renders.",
+    "Original B portal has no separately modeled narrow roof coping; if side face is combined with beige portal facade it remains neutral across color boundary.",
+    "Main facade lower plinth is dark reddish brown but no separate added plinth geometry; retain cross-boundary wall polygons neutral.",
+    "Photograph right side is visible; preview left blank side is NOT photographed right side and remains neutral.",
+    "No addition of cars, air conditioners, signs, vegetation, grille detail or neighboring hall."
+  ],
+  "private_source_backup": "來源已私人備份，原圖不公開。"
+}
