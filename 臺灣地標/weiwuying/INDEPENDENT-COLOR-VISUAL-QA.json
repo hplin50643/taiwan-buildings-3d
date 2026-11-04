@@ -1,0 +1,56 @@
+{
+  "status": "PASS_INDEPENDENT_BOUNDED_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewed_utc": "2026-11-02T20:32:34.792382+00:00",
+  "actual_visual_inputs": [
+    "designer-main.jpg",
+    "designer-theater.jpg",
+    "all ten final renders and combined montage"
+  ],
+  "findings": [
+    "Pale roof is matched original analytic upper skin, not all upward faces.",
+    "Gray-green only inset band backing; original lips/mullions not colored as whole glass volume.",
+    "Explicit original seating gray, unsupported mixed bowl and wells neutral without fictitious grass.",
+    "Sculpted underside and rear retained neutral; no black paint based on photo shadows.",
+    "Six Boolean roof-seat transition facets remain neutral with specific disclosure; they are not active-bowl crossings.",
+    "Original geometry coarse interpretation remains unchanged, not a new exact building reconstruction."
+  ],
+  "full_precise_color_completion": false,
+  "sha256": {
+    "README.md": "26bc1f2119f81b1c581297506d6714e2b80b25222bd698cd92600132886717ac",
+    "README.zh-TW.md": "26bc1f2119f81b1c581297506d6714e2b80b25222bd698cd92600132886717ac",
+    "colorize_model.py": "408f24824a9eb5214fe0e381fd59cd84e63549683a45c1b83654ab3f014457fd",
+    "color-mesh.npz": "b0d8c222d1a41e2bc7ede517e2094f469a20150cdcd3272a53e929d08c3d8180",
+    "palette.json": "27d1c87825bcab1acb67fa1136a1ebdd9cfdbdd998418e96e63e097aba95a869",
+    "COLOR-SOURCE-REGISTER.json": "be00d8b28c9657ea3d9b22135314edf99e6434bd1b5fd46559a2abb58eab386f",
+    "preview.png": "09e29ec27724ce6b16e7be5d300c3df81b33a9a71a7072044d3821da9d003578",
+    "rear.png": "99e7222326c3484fa6ff97478130466ae713dc35706f6a580109fa9198ea1294",
+    "front.png": "b71a612e11b8d583f19a415ebee3802306a8810e8b852908b6da3e230cf6e3ec",
+    "back.png": "884d4a5ba5a9aab1549aa24dde2a48950bdda7c1afb513ac8cc83c7207e35ccc",
+    "west.png": "89ba41ae3e9e62d70bf5e7a0210b46fffdb7509598822b0e5b62eb1f97c5ee55",
+    "east.png": "305e5120d030c493aaa50b4154b9142801fcf6f57fd7994720c1431aaa0697f9",
+    "top.png": "ebcf059ddd9ef3c865f3a6fcba9b325608189c5d21e70d04c8e8714256b1328d",
+    "entry-detail.png": "9b113612492c04d320f6b92b9279b6751c454d610a6a9b85143abb59fae92e64",
+    "facade-detail.png": "226efb7b493d26fdc26c48fe94f68ab63b415cdc64771f61009e852ecaee28a4",
+    "roof-detail.png": "ab8df11151bcaabb1b3439692edd4ac6a7d8fcd165435f8311d5a2142962b201",
+    "build_model.py": "15dd95e52af21cfddcd260061f2f6149ddd7fee47239fe32f97400577da28e5c",
+    "model.stl": "13b1a18eb3f24fad733478a1efc9531be5bc52167cc7f1b4fa33494fa78b40cb",
+    "render_color.py": "9fe36a32688ed2cedb7863438e53c61773057a247bf26baf0c0de4e2384e6243",
+    "appearance.3mf": "a106bbd7c2a7b35309237c7fefaca8b4d115b17d5694d692d76140e9dbf89eda",
+    "scene.blend": "66f7385a15fda6cec125ad7d7eb84a3fde0d3590e554986b5557920ea6a41df4"
+  },
+  "independent_review": "Personally viewed designer source photographs, original code, preview and all ten final images via montage; independently audited analytic domains and complete triangle identity.",
+  "reviewer": "finish_science_hall",
+  "bounded_source_color": true,
+  "count_delta": 0,
+  "geometry_unchanged": true,
+  "limitations": [
+    "Unknown underside, wells and mixed bowl remain neutral.",
+    "Six original Boolean roof-seat boundary facets retained neutral, not an active-bowl claim.",
+    "Not precise full-building color, not verified filament slicing, unprinted."
+  ],
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2025.json": "f9f4bcbc853fef8f45c645843fa63c34bd56d1890c892905ebbc8865785cc614",
+    "INDEPENDENT-ANALYTIC-DOMAIN-2026.json": "ccfd33674b7109282ee347e6b9178f5ed8033b8964cdcdbc8bc4a151e68a0572",
+    "SIX-BOOLEAN-TRANSITION-SCOPE-QA.json": "d52ccb9e59713b4ed60725cd69f30917df0992ea822d1bc588fbe40811c26845"
+  }
+}

@@ -1,37 +1,33 @@
-# 衛武營國家藝術文化中心｜可列印外觀微縮模型
+# 衛武營｜既有模型有界材色更新
 
-## 模型預覽
+有據屋皮、前右外緣與玻璃帶、原座席分色；未知劇場凹槽、採光井、後側及大部分底腹維持中性。**不是全館精確色彩/測繪復原**，不新增景觀或建築細部。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
-| 低角度斜視<br>![低角度斜視](previews/low-oblique.png) |  |  |
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+| ![總覽](preview.png) | ![背側](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![左側](west.png) | ![右側](east.png) |
+| ![頂面](top.png) | ![前玻璃](entry-detail.png) | ![框與窗](facade-detail.png) |
+| ![屋皮與座席](roof-detail.png) |  |  |
 
-## 模型內容
-- 成品尺寸：150 × 118 × 26.04 mm，含底座。
-- 連續起伏屋頂、五個下垂至地面的曲面核心、開放底部、前／右側窗帶、屋頂採光淺凹及公園側露天劇場。
-- 核心布局和曲面高程是照片近似，沒有測繪級外殼。預覽的 low-oblique.png 補充顯示窗帶與落地曲面。
-- 一體式、單一連通封閉實體，最長邊 150 mm。
+## 材色範圍
+- 同 `weiwuying` 項目、count_delta=0；原 38690 三角面及座標不變。原 ASCII `model.stl` 與 `build_model.py` 位元組保留；原包無 OBJ，不虛稱有保留 OBJ。不新增或分割幾何。
+- 淺銀白屋皮依原 `surfaces(x,y)` 解析上表面比對，不以所有朝上面一律染屋色；原劇場凹槽及採光井不冒稱同一屋面材。
+- 前/右已有淺凹玻璃帶採灰綠，逐面所有頂點對原曲線 inset 背面判斷；唇口與外緣不染成玻璃。原細梃灰色，沒有增造細窗。
+- 前/右可辨外緣淺暖灰；底腹整體保守中性，不把照片陰影當黑色塗料。後外緣及不明側面中性。
+- 原戶外劇場座席是粗化同心環帶，只有明確原環帶表面採灰。凹槽真實含草坡、路徑、擋牆等未分域，全部未知中性，不整片塗綠。
+- 屋皮與座席外緣6片原 Boolean 轉接面材質未唯一，保中性；不是跨 active bowl 的判定，不為補滿色而放寬整體上皮容差。
+- 底座只是原展示平台，不宣稱精確鋪面或基地；照片中的人車、設備、草木、屋面接縫與小通風器不新增。
 
-## 列印起始建議（尚未切片實測或試印）
-- FDM 可由 0.4 mm 噴嘴、0.16–0.20 mm 層高、3 道外牆、12–18% 填充與 PLA 起步。
-- 原方向直立、平底貼平台；必要時增加 3–5 mm brim。
-- 屋頂大面積跨越開放底部，必須檢查支撐可達性與拆除路徑，通常需要局部樹狀或有界支撐。不要將封閉網格當作免支撐保證。屋面外殼厚化約 2.8 mm；窗帶為 0.68 mm 深的淺凹，上下保留約 0.65 mm 與 1 mm 的邊，需查看切片薄壁。小型座席和窗梃皆有厚化。
-- 請先檢查全高度切片路徑、懸空、薄壁與支撐拆除空間，再試印。不要直接縮小，縮放後應重新檢查所有細節。
+## 來源與權利
+依 Mecanoo 設計者之主景與劇場鳥瞰照片。檔名20210506與2019新聞不等於確定拍攝日期，不主張任何年份的精確現況。兩原照已私人備份；未確認開放授權，原圖不公開、不作貼圖，沒有商用權利保證。HEX 是照片未校色的展示近似。
 
-## 檔案與重建
-- model.stl：唯一列印實體，單位 mm。
-- build_model.py：參數化原始碼，可重新產生 STL。
-- scene.blend：由同一 STL 匯入的 Blender 場景，包含相機、燈光及非列印地板。編輯建模參數後應先重建 STL，再執行預覽腳本。
-- previews/front.png、rear.png、elevation.png：實際 STL 的前斜視、後斜視與正向視角。沒有照片貼圖，也沒有添加只在預覽中存在的建築細節。
-- render_preview.py：Blender 預覽腳本；使用無雜訊的工作室顯示。場景材質只是預覽色，STL 本身不含材質。
-- validate_model.py、validation.json：數位檢查程式及結果。
-- rebuild_check.json：重建前後 STL SHA-256 一致性結果。
-- requirements.txt：Python 套件版本。sources.md：公開參考來源及不確定性。
+## 格式、比例與列印
+[原 STL](model.stl) · [彩色 3MF](appearance.3mf) · [Blender](scene.blend) · [材質表](appearance-materials.json) · [原模型說明](ORIGINAL-MONOCHROME-README.md)
 
-安裝 requirements.txt 後執行 python build_model.py。執行 python validate_model.py model.stl --output validation.json 檢查；以 Blender 4.x 執行 blender -b -P render_preview.py 產生場景和預覽。單張預覽可設定環境變數 VIEW=front 或 VIEW=rear。Blender 場景以 mm 顯示單位，匯出時只選 Printable_STL_mm，勿把地板、相機和燈光一起匯出。
+3MF basic materials 與 Blender 實際面材質；STL 本身不含色。六材質標籤不是已驗證六色/四色耗材切片專案。毫米單位、原底座150 mm長，非實測比例。未實際列印，未產生切片工具路徑；大挑簷、凹槽、細梃的支撐與切片風險需另檢查。
 
-## 檢驗範圍
-已檢查：單一連通邊界面、封閉網格、面向一致、每條邊恰有兩面、頂點鄰域為單一環、無退化三角面、正體積、平底接觸、尺寸與可重建雜湊。單一連通封閉邊界面沒有獨立的內部空腔殼。以上不是完整幾何自相交證明，也不等同切片測試或實體試印；未聲稱已試印成功。
+## 重建與 QA
+安裝原 requirements 後依序執行 `build_model.py`、`colorize_model.py`、`export_appearance.py`、`validate_color.py`；Blender 執行 `render_color.py` 與 `verify_color_scene.py`。
+`COLOR-FORMAT-GEOMETRY-QA.json` 檢查原 STL bytes、逐三角座標、閉合正體積、3MF頂點/面/材質索引與完整隔離重建；`SCENE-QA.json` 重開真正面材，`DELIVERY-QA.json` 綁十圖。程式 QA 不替代人工照片與材域核對。
 
-本包是重新建立幾何的外觀微縮模型，非官方模型、測繪模型或結構模型。每座均以獨立成品大小設計，彼此不是共同比例，不能從模型反推真實尺寸。參考照片不隨包分發；若需商業散布或使用，請自行確認建築、雕塑、商標及其他適用權利。
+原 `previews/`、`render_preview.py`、舊 validation 等保留，是原單色歷程而非新材色 QA；新十圖與 appearance 產物為本次更新，未刪原件。

@@ -1,0 +1,51 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:03:06.562986+00:00",
+  "actual_sources_viewed": [
+    "source-3.jpg",
+    "source-4.jpg",
+    "official PDF physical231 upper photo only"
+  ],
+  "actual_final_views": "All ten viewed via final-v1-ten-view-montage.jpg; details and source/code comparison",
+  "findings": [
+    "Whole continuous x=-63 mixed-material wall neutral including all 345 faces, no false upper triangular brown wedges.",
+    "All 2448 lower podium faces neutral; reverse photograph does not authorize front canopy or screen colors.",
+    "Independent north core return muted brown, pale original folded screens, discrete gray-green recessed window backs; no filled-in glass balcony.",
+    "Observed terrace neutral gray, no invented roof planting or equipment.",
+    "Original 22312 triangle coordinates and STL/OBJ/build bytes independently identical; original scale proven from base150/top146.7.",
+    "README and every render explicitly retain partial/not-printed restrictions; unknown dates not precise present survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "61d9682ff3641ce93b31e695c82da90b62aed6927684153abea0671b101d6f9b",
+    "README.zh-TW.md": "61d9682ff3641ce93b31e695c82da90b62aed6927684153abea0671b101d6f9b",
+    "model.stl": "c3f378290aa76b677b0350ad97fbc96c21b20e135d30eadb24ecd56cf0d33152",
+    "model.obj": "336d9e9e6e3961cce73fc5d32d3162147a6f6290f54d989be92549074b7c13ae",
+    "build_model.py": "6ae2482622a1dfa7c086646bcb9de2e4db9fe9459ca027812e4721b9ca93d9dc",
+    "colorize_model.py": "8a0bf05de96161d3577817a397a681df0a8943595b182904b6c907c853c2ff58",
+    "render_color.py": "4153afb95bc99e50c6e640b61af0f349201f6ac9f204d19f8ce75ba6e7fd3930",
+    "color-mesh.npz": "a21ef616ad68edbc0f21b5993509dd6249d4897740807cb3caf2cd2892d903b4",
+    "palette.json": "66c428cd455447c2939e19848b911d823679ed76737a621c091464707568518b",
+    "COLOR-SOURCE-REGISTER.json": "0cf4fc2f63835d686d61c794ebc0a9475ff7b4058808a6fe17dfb393e6d628e6",
+    "appearance.3mf": "6965e00d36f0ffc89e8e72f159e801ef2d91b594f4be45f91d3d235e6542f4a9",
+    "scene.blend": "b93813081d069aa516274f2deb014f314c0a9195b750641b7a96bbbf25ec5243",
+    "preview.png": "1bbd24524dba88ec4333b64a111018cd4d885d4108bc0ee0d3ce05889110fd09",
+    "rear.png": "2f6b108258ee8bdec7074b49760c91b50dbefd5862f40f8db35677f0df6e1917",
+    "front.png": "b85c7fafd64ddaee6888a1d6ea67302648fa9eeb5178953a1682f5eceecb272c",
+    "back.png": "1e06e07a2ef9bc91ad5cac7eefe0b1693a96d2f63e9e0087be1ddc74d6bdacdd",
+    "west.png": "db34251c14f23a902c04c4699d09efe7f3c364a89173bec49c8f706621aa3cf2",
+    "east.png": "03b27676488c5c146983326748d3840f236caa3afe8da2d8f1f61dacc23ad147",
+    "top.png": "51cf6b1ddb731fa151b27450c6883c88eaeb19a9ad095d2b180b4fd614598f11",
+    "entry-detail.png": "974fbebbebd6e547b96d79d6100455a4e56b1f5d7ea42e89bd7ec3ea2b748fe4",
+    "facade-detail.png": "ddc0d9975796495849e0a9cb323a3c144f694a77bec39384a592128c81a489b0",
+    "roof-detail.png": "65d197e2efde86157d87eff22923041ed422febe31bb242f56128b6acbfb2298"
+  },
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2040.json": "9122ed5ad23bbe2038f23dbfce2c820640ce9c07a7aae3326f744bdd5b5db655",
+    "INDEPENDENT-DOMAIN-2041.json": "a08ff77d6eff04a3f8342bc557a95c3ea18545046c70837f4495ce14ee49ddd0",
+    "INDEPENDENT-PREVIEW-2040.json": "fc4dcb91c0e14399427916666de562519b98ec5af43c6b9b97807b992b764c7a"
+  }
+}
