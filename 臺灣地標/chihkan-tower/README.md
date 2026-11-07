@@ -51,11 +51,7 @@ blender -b --python-exit-code 1 --python verify_color_scene.py
 
 # 赤崁樓：海神廟、文昌閣與高臺
 
-## 模型預覽
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
+歷史單色 STL 預覽（下載）：[正面](previews/front.png) · [背面](previews/rear.png)
 
 ## 模型範圍
 

@@ -49,11 +49,7 @@ blender -b --python-exit-code 1 --python verify_color_scene.py
 
 本件是依總統府公開照片與建築介紹重新建立的可列印外觀模型。保留中央方塔、八角塔頂、左右衛塔、四角塔、兩翼拱窗、橫向飾帶，以及兩座露天庭院形成的「日」字量體。不是測繪成果，也不是精密等比例建築圖。
 
-## 模型預覽
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+歷史單色 STL 預覽（下載）：[正面](previews/front.png) · [背面](previews/rear.png) · [正立面](previews/elevation.png)
 
 ## 檔案
 

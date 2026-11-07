@@ -50,11 +50,7 @@ blender -b --python-exit-code 1 --python verify_color_scene.py
 
 依建築師事務所與觀光署的正、背面照片重建的桌上外觀詮釋，非實測複製。單一連通封閉實體、無室內空腔；不含寺內佛像、院內其他建築及植栽。
 
-## 模型預覽
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
+歷史單色 STL 預覽（下載）：[正面](previews/front.png) · [背面](previews/rear.png)
 
 ## 模型
 - 整體 150 × 108 × 132 mm，含 3 mm 平底底座；毫米制 STL。

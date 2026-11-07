@@ -54,11 +54,7 @@ blender -b --python-exit-code 1 --python verify_color_scene.py
 
 本模型以官方外觀照片重新建立幾何，是桌上型外觀詮釋，非實測、工程模型或館方授權複製品。單一封閉連通實體，沒有室內空腔；門窗以外露淺凹表現。所有尺寸以毫米為單位。
 
-## 模型預覽
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
+歷史單色 STL 預覽（下載）：[正面](previews/front.png) · [背面](previews/rear.png)
 
 ## 辨識重點及範圍
 - 方整外邊界中保留連續曲牆、瓶口狀玻璃立面、上寬下收再外張的不等寬曲線。

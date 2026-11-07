@@ -49,11 +49,7 @@ blender -b --python-exit-code 1 --python verify_color_scene.py
 
 # 鵝鑾鼻燈塔｜150 mm 外觀列印模型
 
-## 模型預覽
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
+歷史單色 STL 預覽（下載）：[正面](previews/front.png) · [背面](previews/rear.png)
 
 ## 模型內容
 依國家公園署公開實景照片判讀，自行建立白色微錐圓塔、放大的環形挑臺、支托、燈室、尖頂，以及相鄰平屋頂拱廊低樓。這是桌上型建築意象模型，不是測量復原或官方模型。
