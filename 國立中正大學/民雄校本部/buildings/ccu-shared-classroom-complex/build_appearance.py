@@ -15,13 +15,15 @@ assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Three official undated classroom photographs; actual mesh already scaled1,.64,.75.
-palette=[('Unknown sides rear roofs base','#AAA79F',.86),('Muted pink brick observed front portal','#B58A78',.86),('Pale original frames bands arc caps','#C1C3B5',.85),('Grey green front window mixed opaque proxy','#798780',.65),('Visible front shoulder roof terracotta proxy','#B26E55',.86),('Original grey entrance steps','#999B93',.86)]
+palette=[('Unknown sides rear roofs base','#AAA79F',.86),('Muted pink brick observed front portal','#B58A78',.86),('Pale original frames bands arc caps','#C1C3B5',.85),('Grey green front window mixed opaque proxy','#798780',.65),('Visible front shoulder roof terracotta proxy','#B26E55',.86),('Original grey entrance steps','#999B93',.86),('Inferred continuous brick sides rear courtyard','#B58A78',.86),('Inferred matching pitched roof terracotta','#B26E55',.86),('Existing side recess opaque glazing proxy','#798780',.65)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
 def near(v,t,e=.035):return abs(v-t)<e
 import numpy as np
 EPS=.012
@@ -82,11 +84,38 @@ for p in mesh.polygons:
  # No panel-edge subdivision: fifth-storey solid brown patch omitted, remains brick.
  # Unknown inner/outer side window backs and rear array intentionally not assigned glass.
  if max(v[:,2])<=3+EPS:i=0
+ original_indices.append(i)
+ # v2: extend the established material family only across EXISTING surfaces.
+ # Explicitly inferred, not rear-elevation photographic verification.
+ if i==0 and min(v[:,2])>=3-EPS:
+  if abs(nz)<.1:i=6
+  # Recess back planes already modelled from side/entrance evidence. Never add windows.
+  for x in [-43,43]:
+   outer=x+(-9.2 if x<0 else 9.2)
+   inner=x+(9.2 if x<0 else -9.2)
+   for z in [6,16,26,36]:
+    for y in [-13,-4,5,14]:
+     if plane(v,0,outer) and bounded(v,[outer,y-2.9,z],[outer,y+2.9,z+6.3]) and abs(nx)>.8:i=8
+    for y in [-12,0,12]:
+     if plane(v,0,inner) and bounded(v,[inner,y-3.5,z],[inner,y+3.5,z+6.3]) and abs(nx)>.8:i=8
+  # Identical existing gabled roofs: broad main slopes and rear shoulder slopes.
+  # Flat connecting roofs and the portal cap remain neutral concrete/trim.
+  roofs=[]
+  for x in [-43,43]:
+   for y in [-27,26]:
+    roofs.append((x,y,51.8,31,20,4.8))
+    for dx in [-21,21]:roofs.append((x+dx,y,42.4,15,20,2.8))
+  roofs.append((0,26,32.5,36,20,4.5))
+  for x,y,z,w,d,h in roofs:
+   if bounded(v,[x-w/2,y-d/2,z],[x+w/2,y+d/2,z+h]) and nz>.2:
+    dist=abs(v[:,0]-x); slope=z+h*(w/2-dist)/(w/2-.55)
+    if (min(dist)>=.55-EPS and max(abs(v[:,2]-slope))<EPS) or (max(dist)<=.55+EPS and plane(v,2,z+h)):i=7
+ if i!=original_indices[-1]:changed_faces.append(p.index)
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; side/rear material continuity inferred, no fabricated rear windows'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -116,9 +145,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Originalscaled above-ground classroom mass unchanged. Unknown inner/outer side windowbacks, rear walls, high/back roofs and flat roofs neutral. Fifth-storey brown solid panel omitted because originalfaces spanpanel andsurround; nofakeglass or new split. No B1, repair-completion claim, letters, landscaping, brick/roof seams or white columnfeet/caps withoutoriginal boundaries.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Side/rear brick and repeated roof color inferred from existing front and official photos, not individually verified rear surfaces. Existing side recesses use an opaque glazing proxy. No new geometry or rear window array.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original above-ground mesh unchanged. Base and flat roofs neutral. Fifth-storey brown panel remains omitted due to original face boundaries. No B1, completion claim, letters, landscaping, seams or unmodelled cap subdivisions.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-160,-230,140),(0,0,21.225),200),'rear':((160,230,140),(0,0,21.225),200),'elevation':((0,-300,21.225),(0,0,21.225),200),'source-angle':((-150,-230,70),(0,-5,21.225),200),'top':((0,0,300),(0,0,0),200)}
+views={'front':((-160,-230,140),(0,0,21.225),200),'rear':((160,230,140),(0,0,21.225),200),'elevation':((0,-300,21.225),(0,0,21.225),200),'source-angle':((-150,-230,70),(0,-5,21.225),200),'left':((-260,0,110),(0,0,21.225),200),'right':((260,0,110),(0,0,21.225),200),'top':((0,0,300),(0,0,0),200)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
