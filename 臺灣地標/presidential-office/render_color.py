@@ -35,6 +35,10 @@ if hasattr(backing,'visible_shadow'):backing.visible_shadow=False
 def update_caption():
  sc=cam.data.ortho_scale;caption.location=(-.45*sc,-.29*sc,-10);caption.rotation_euler=(0,0,0);caption.data.size=.026*sc
  backing.location=(-.355*sc,-.322*sc,-10.1);backing.scale=(.23*sc,.090*sc,1);backing.rotation_euler=(0,0,0)
+# README previews intentionally contain no caption overlays.
+caption.hide_render=True
+backing.hide_render=True
+scene.render.use_stamp=False
 from bpy_extras.object_utils import world_to_camera_view
 framing={}
 for name,loc in views.items():
