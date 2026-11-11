@@ -39,6 +39,10 @@ def update_caption():
 caption.hide_render=True
 backing.hide_render=True
 scene.render.use_stamp=False
+# Hidden non-architectural notice must not retain an external font dependency.
+caption.data.font=next(font for font in bpy.data.fonts if font.filepath=='<builtin>')
+for unused_font in list(bpy.data.fonts):
+ if unused_font.filepath!='<builtin>':bpy.data.fonts.remove(unused_font,do_unlink=True)
 from bpy_extras.object_utils import world_to_camera_view
 framing={}
 for name,loc in views.items():

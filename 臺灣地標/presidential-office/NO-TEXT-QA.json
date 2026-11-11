@@ -6,7 +6,8 @@
     "material_indices_match": true,
     "no_rendered_text_objects": true,
     "backing_hidden": true,
-    "stamp_disabled": true
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
   },
   "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
   "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
@@ -21,5 +22,10 @@
     "roof-detail.png": "ff4071ffd11cb651ad800270fbefdbfd1bc8137d66c590e53124d6aab33618bb",
     "top.png": "e40a015d18823a062fa51214a0a609dd0a00ddddb2983004cc6479d9cf9ea05b",
     "west.png": "75727b39cbc0c3e790f300f196dd07307fbbb20c7cb5b7194b0031b0d0bef887"
+  },
+  "visual_review": {
+    "passed": true,
+    "method": "Original main image and all ten output views reviewed visually.",
+    "notes": "No in-image caption or background text panel; original framing retained, including intentional cropped detail views."
   }
 }
