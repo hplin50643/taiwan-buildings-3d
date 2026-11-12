@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in nkuht-student-health-center-all-views.jpg. Caption/backing absent; original geometry, materials and view framing retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "68df817d68f0eae95c4be7dbe18088011e81d7856f6b8756b06656ddc66a49bc",
-    "east.png": "73d5b9e180ffdec8306c9079cacfac9874573b94295d43c5a57924e7c8203e85",
-    "entry-detail.png": "3435107ff2c8aa3b51c0dd5a7d0f5066f090990b957f09394fd3aa1e0139a875",
-    "facade-detail.png": "1a3b97cbdc812470382c7f9c3fb3cc1ea3139a10deffba6692487d96c0094bfd",
-    "front.png": "ad3e5e9db76b79a30ac36eab1456a534904004cd2d601c365061c8b559221190",
-    "preview.png": "aec0e4f5b4e3153ba9b20c8b87a2828d7689e56594a2da1c27f8c9f2447d3606",
-    "rear.png": "e27f469a213530c07bc93fcfcbaf8ce274a55ab4bf8cef80ed1469f9e63f8a44",
-    "roof-detail.png": "d16ba021f559406c27a74b63deb83f132175bbc45e9e83a22178b06f94615003",
-    "top.png": "4becf328d2e510e74a4bbce661fc8f0b45d38b1613e5a1a65523277568c47a4f",
-    "west.png": "038c7651ff953343b1b086630f52405fe521aeaad3a0a855f565d7edc0cb42ca"
-  }
+    "preview.png": "4b207bcde6270c24f9d166f63d8736981456c935c244c9fd931390ae6b114f31",
+    "rear.png": "ecf5deacd7948b049226131c5f0d7efe13da721507f2bd4709b8959a0b4a939d",
+    "front.png": "0c4b92f7b02828a9838eeacee2fb3fbcf78af27b89265f5898f1fed65dd17f58",
+    "back.png": "2eced43e7fa18bd88f443362ed6f59a9960d9a300dea72c18f705af8cec6d1ff",
+    "west.png": "1d64ce6a67f5bb9bf50bc89d63e23b42c73e4866b9531067686c61a34777bab7",
+    "east.png": "76d21639149e6ca6199aff3143fc7978e62950fd01086bb9f08dad23c3e8718d",
+    "top.png": "877707bfc1f110dfc30ef4ab7c2420ac8d31e92308bf694fde342ffe6c4b42ba",
+    "entry-detail.png": "23efe9a5999f4b91a33651a5025a4da9a0bbdb4090656f3a1b91cfb6002514f0",
+    "facade-detail.png": "c94ddde69b7024c10c44377a12a1bc2e1a5450cc94fdab9b35dd3e090489069e",
+    "roof-detail.png": "f7d87cba5fb641068a8992e725c8a6c2201227c2d90db93e10cffa2d3c1b03c7"
+  },
+  "mesh_sha256": "22eac16e4b1ddc58d36c7ec7c2bd737ee9e7cfda2f1fb8c33987f762e2a2a9bf",
+  "independent_visual_review": "COLUMN-RETURN-INDEPENDENT-QA.json",
+  "previous_qa": "qa/column-return-previous/NO-TEXT-QA.json"
 }

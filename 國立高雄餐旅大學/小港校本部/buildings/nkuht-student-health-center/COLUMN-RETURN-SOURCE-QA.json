@@ -1,0 +1,86 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_INDEPENDENT_REVIEW",
+  "official_page": "https://fca.com.tw/portfolio/高雄餐旅大學學生活動中心/",
+  "sources": [
+    {
+      "name": "architect-9695.jpg",
+      "url": "https://fca.com.tw/wordpress/wp-content/uploads/2016/04/MG_9695.jpg",
+      "sha256": "0cc7a69cc2106cb18a451fadbc0576d1fad7fabd4798c326a3b89f1492a52c5d",
+      "bytes": 510082
+    },
+    {
+      "name": "architect-9707.jpg",
+      "url": "https://fca.com.tw/wordpress/wp-content/uploads/2016/04/MG_9707.jpg",
+      "sha256": "c4878383471f9c59801e26608e845a6eb1b4824bd65f4692ee20098f8f5d02fb",
+      "bytes": 402232
+    },
+    {
+      "name": "architect-9738.jpg",
+      "url": "https://fca.com.tw/wordpress/wp-content/uploads/2016/04/MG_9738.jpg",
+      "sha256": "89d6eed3f688f3f8d8352f92894252107c6ff94082141ed50fc1b61d4294d36f",
+      "bytes": 251951
+    }
+  ],
+  "observation": "Daylight 9707 and 9738 show silvergray column side material; no observed half-circumference material change.",
+  "inference": "335 original reverse-facing side triangles inferred continuous same-column silvergray, not individually visible or directly photo-confirmed.",
+  "selection": "Six original 48-gon cylinder finite side planes with tangent and axial bounds; no caps, canopy, glazing or rail selection. Whole connected coplanar domains only.",
+  "face_counts": {
+    "triangles": 7854,
+    "original": 327,
+    "added": 335,
+    "colored": 662,
+    "neutral": 7192
+  },
+  "limits": [
+    "Partial color only; all other surfaces unknown-neutral.",
+    "Night 9695 for alignment only; green illumination not material evidence.",
+    "Capture dates unknown; 2016/04 URL does not establish capture date or 2026 current condition.",
+    "Nominal HEX not calibrated; original approximate geometry not recertified.",
+    "Photos retained privately, not redistributed or mapped as textures."
+  ],
+  "historical_source_register": "qa/column-return-previous/COLOR-SOURCE-REGISTER.json",
+  "original_register": {
+    "status": "SOURCE_GO_BOUNDED_PARTIAL",
+    "building": "NKUHT Student Health Activity Center Group",
+    "source_go_sha256": "c3a0c199c3cdbf6da445de9d72998d7ca63688e5489e313221040a338e2bc212",
+    "independent_review_sha256": "84293f67bd9a2328ce570698cbd09de8e4b0c19278e56b1dae6d2c1186a96dbd",
+    "sources": [
+      {
+        "name": "architect-9695.jpg",
+        "sha256": "0cc7a69cc2106cb18a451fadbc0576d1fad7fabd4798c326a3b89f1492a52c5d",
+        "use": "viewed only to distinguish illumination; not color evidence"
+      },
+      {
+        "name": "architect-9707.jpg",
+        "sha256": "c4878383471f9c59801e26608e845a6eb1b4824bd65f4692ee20098f8f5d02fb",
+        "use": "daylight primary material evidence"
+      },
+      {
+        "name": "architect-9738.jpg",
+        "sha256": "89d6eed3f688f3f8d8352f92894252107c6ff94082141ed50fc1b61d4294d36f",
+        "use": "daylight primary material evidence"
+      }
+    ],
+    "sources_private": true,
+    "original_photographs_not_distributed": true,
+    "partial_color_incomplete": true,
+    "fully_colored_exterior": false,
+    "count_delta": 0,
+    "geometry_unchanged": true,
+    "source_dates": "Captureunknown;2016/04 URL is not capturedate",
+    "allowed": [
+      "327finitecolumnnorthhalffaces87+5x48"
+    ],
+    "unknown_neutral": [
+      "reversecolumns",
+      "caps",
+      "canopy",
+      "mixedglazing",
+      "solidrailproxies",
+      "roofs",
+      "annexes",
+      "terrain"
+    ],
+    "private_source_backup": "Shared research source privately retained; no raw photographs or private identifiers distributed."
+  }
+}

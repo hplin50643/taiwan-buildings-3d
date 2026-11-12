@@ -1,0 +1,41 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed north-facing canopy column facets nominalsilvergray",
+      "hex": "#AEB4B5",
+      "faces": 327
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED reversecolumns canopy mixedglazing rails roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 7527
+    }
+  ],
+  "domains": {
+    "north_facing_column_facets": 327,
+    "per_column": [
+      87,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 2036
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "7854 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "All vertices on finite original48gon north-facing cylinder facets, full original z bounds.",
+    "327 original faces87+5x48;includes firstcolumn Boolean fragments.",
+    "Facet normal chooses whole original hemisphere only;no STL-normal or centroid filtering.",
+    "Reversehalves caps canopy glazing rails andremaining domainsneutral.",
+    "Two daylight photos;nightphoto excludes lighting from materialcolor.",
+    "Captureunknown;URL2016/04 not confirmed capturedate.",
+    "Two labels not testedfourfilament."
+  ]
+}

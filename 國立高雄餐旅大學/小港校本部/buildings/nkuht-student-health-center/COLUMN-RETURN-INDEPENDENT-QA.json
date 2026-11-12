@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T09:37:19.525581+00:00",
+  "scope": "Independent bounded NKUHT six-column reverse-side material continuity review; not publication approval",
+  "blockers": [],
+  "numeric_checks": {
+    "status": "PASS",
+    "checks": {
+      "vertices_exact": true,
+      "faces_exact": true,
+      "7854_triangles": true,
+      "original327_preserved": true,
+      "335_new": true,
+      "material_counts": true,
+      "model.stl_unchanged": true,
+      "build_model.py_unchanged": true,
+      "parameters.json_unchanged": true,
+      "independent_per_column_counts": true,
+      "independent_finite_cylinder_selection": true,
+      "all_other_materials_unchanged": true,
+      "no_coplanar_split": true,
+      "3mf_vertices": true,
+      "3mf_faces": true,
+      "3mf_materials": true,
+      "source_hashes": true
+    },
+    "independent_selected_faces": 662,
+    "mesh_sha256": "22eac16e4b1ddc58d36c7ec7c2bd737ee9e7cfda2f1fb8c33987f762e2a2a9bf"
+  },
+  "scene_checks": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "two_material_slots": true,
+      "palette_0": true,
+      "palette_1": true
+    },
+    "scene_sha256": "a95257519fa507a43b7c5f10009d9f3b7c0deea43de662a76406bfbc25b830bb"
+  },
+  "face_counts": {
+    "total": 7854,
+    "original_colored_preserved": 327,
+    "added": 335,
+    "colored": 662,
+    "neutral": 7192,
+    "per_column": [
+      178,
+      96,
+      96,
+      96,
+      96,
+      100
+    ]
+  },
+  "findings": [
+    "Actually viewed architect daylight photographs 9707 and 9738; visible column surfaces show silvergray with lighting gradients, not an observed half-circumference material break. Unseen reverse sides remain an explicitly bounded same-member inference. Viewed night 9695 only to distinguish illumination, not as material-color evidence.",
+    "Independently reconstructed original six cylinder centers, radius, axial bounds and 48-facet support planes. All triangle vertices must satisfy the finite original side domain; selected set exactly matches candidate including first/last Boolean fragments.",
+    "Original geometry, STL, build script and parameters remain unchanged. Original package has no OBJ. 3MF vertices/faces/material indices match candidate. No adjacent coplanar material split.",
+    "After completed ten-render log and scene save, actually inspected all ten final views in two private montages and full-size facade detail. Silvergray remains on six column sides only; no visible unintended canopy, cap, glass proxy, wall, rail, roof, annex or terrain fill.",
+    "Independently reopened original and final scenes and verified mesh, material indices, palette linear shader values, camera, lights, rendering configuration and hidden notices.",
+    "README and COLUMN-RETURN-SOURCE-QA accurately distinguish observed original half-side facets from inferred reverse sides, unknown source capture dates, night illumination, historical QA and unchanged approximate geometry."
+  ],
+  "image_sha256": {
+    "preview.png": "4b207bcde6270c24f9d166f63d8736981456c935c244c9fd931390ae6b114f31",
+    "rear.png": "ecf5deacd7948b049226131c5f0d7efe13da721507f2bd4709b8959a0b4a939d",
+    "front.png": "0c4b92f7b02828a9838eeacee2fb3fbcf78af27b89265f5898f1fed65dd17f58",
+    "back.png": "2eced43e7fa18bd88f443362ed6f59a9960d9a300dea72c18f705af8cec6d1ff",
+    "west.png": "1d64ce6a67f5bb9bf50bc89d63e23b42c73e4866b9531067686c61a34777bab7",
+    "east.png": "76d21639149e6ca6199aff3143fc7978e62950fd01086bb9f08dad23c3e8718d",
+    "top.png": "877707bfc1f110dfc30ef4ab7c2420ac8d31e92308bf694fde342ffe6c4b42ba",
+    "entry-detail.png": "23efe9a5999f4b91a33651a5025a4da9a0bbdb4090656f3a1b91cfb6002514f0",
+    "facade-detail.png": "c94ddde69b7024c10c44377a12a1bc2e1a5450cc94fdab9b35dd3e090489069e",
+    "roof-detail.png": "f7d87cba5fb641068a8992e725c8a6c2201227c2d90db93e10cffa2d3c1b03c7"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "22eac16e4b1ddc58d36c7ec7c2bd737ee9e7cfda2f1fb8c33987f762e2a2a9bf",
+    "appearance.3mf": "8dec133ed2ba1839d414a68dc7b6fbba18adbf0b8d807ad2e7cf01ef02039adb",
+    "scene.blend": "a95257519fa507a43b7c5f10009d9f3b7c0deea43de662a76406bfbc25b830bb",
+    "colorize_model.py": "d60ad0b4312f8ff2acf32c8f375cd4feaa9298c87ab874937cc9e7ea0e5f7e00",
+    "COLUMN-RETURN-SOURCE-QA.json": "32f758575a02790b92d707d631cdf4a7186a92ea73fb8eec7b2c968b6108e842"
+  },
+  "source_sha256": {
+    "architect-9695.jpg": "0cc7a69cc2106cb18a451fadbc0576d1fad7fabd4798c326a3b89f1492a52c5d",
+    "architect-9707.jpg": "c4878383471f9c59801e26608e845a6eb1b4824bd65f4692ee20098f8f5d02fb",
+    "architect-9738.jpg": "89d6eed3f688f3f8d8352f92894252107c6ff94082141ed50fc1b61d4294d36f"
+  },
+  "limitations": [
+    "335 reverse-side faces use same-column continuity inference; not direct photographic confirmation of every hidden face.",
+    "Capture dates unknown; upload path 2016/04 is not capture-date evidence and no 2026-current-condition claim is made.",
+    "Nominal silvergray is not color-calibrated; night illumination is excluded.",
+    "Partial coloration only; 7192 other faces remain unknown-neutral.",
+    "No dimensional accuracy or physical printability recertification. Original thickened columns and omitted braces remain existing modeling limitations.",
+    "Reference photos remain private and not textures; no redistribution rights inferred."
+  ]
+}
