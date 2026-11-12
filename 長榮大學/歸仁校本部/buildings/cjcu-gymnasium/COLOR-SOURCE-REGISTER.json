@@ -1,34 +1,26 @@
 {
-  "status": "SOURCE_GO_BOUNDED_PARTIAL",
-  "building": "CJCU Gymnasium",
-  "source_go_sha256": "2ee3a018aeebc5c29350678cd657662f8847a3b4b5b1c7eebb7f07115722c484",
-  "independent_review_sha256": "f76824bc68f6cd2bb44715a589066d8408fd47578051646c779a2ef561853729",
-  "existing_preview_transition": {
-    "old": "Existing roof sheet-family arbitrary neutral display classification, including 1206 roof faces, remains immutable in its historical files. It is not verified daylight material color.",
-    "new": "Only eight directly evidenced left-column skin triangles receive nominal light gray; all remaining 4686 faces are unknown neutral in this new bounded source variant. Not mono originally; no new building and no full-color completion."
-  },
-  "sources": [
-    {
-      "name": "official-portico.jpg",
-      "sha256": "f3cbf29d2795b4942ce5144a8878fff8d37478af8f751c256bec0d7dcad03db8"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "source": "https://www.cjcu.edu.tw/images/campus/campus_gym.jpg",
+  "page": "https://www.cjcu.edu.tw/en/about_campus_tour.php",
+  "source_sha256": "f66c9ac9053905c3b02d96b4615ed638beaf40f5748061788e9bab71f90dbe4b",
+  "new_fetch_not_new_capture": true,
+  "capture_date": "unknown",
+  "source_pixels": [
+    640,
+    426
   ],
-  "sources_private": true,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "count_delta": 0,
-  "geometry_unchanged": true,
-  "source_dates": "Capture unknown;URL202404 not capture or2026 condition",
-  "allowed": [
-    "8 complete original left-column front-left facets triangles light gray"
+  "source_support": "Full-height right front column visible without former planter/rail lower occlusion; cross-check original higher-resolution official portico for gray stone family.",
+  "proposed_new_faces": 8,
+  "proposed_domain": "Four right-column original front-left facets k14..17 only; not whole cylinder or symmetry extension.",
+  "limits": [
+    "New full-height view has only about 10px column width, no calibrated HEX or fine surface detail.",
+    "Original24gon/radius/depth/height remains geometric approximation.",
+    "Higher-resolution prior official-portico image confirms right-column gray stone upper/mid surfaces but occludes foot; used jointly, not falsely as new image.",
+    "Other right facets, all unselected left facets, caps, mixed wall/glazing/soffit/steps and roof remain neutral.",
+    "Old appearance/ arbitrary roof-family classification and ORIGINAL-SOURCE-GAP aliases immutable."
   ],
-  "unknown_neutral": [
-    "Right column and every unselected left-column facet remain unknown neutral. No symmetry replication behind planters or railings.",
-    "Curved main brick entrance wall contains gold/dark characters, gray stone window edges and other mixed surfaces without equivalent original boundaries; neutral.",
-    "Portico ceiling and parapet edge mix soffit panels, beams and details absent from coarse original cut; neutral.",
-    "Door/window backings mix white frames, opaque panels, reflections and openings; neutral.",
-    "Full barrel roof/light-guide domes and unknown rear remain neutral in this new source-grounded variant. Existing neutral sheet-family roof preview is not daylight source color.",
-    "Steps and ground carry tread edge contrasts; all unlisted triangles neutral."
-  ],
-  "private_source_backup": "Sources private; no source photos or private identifiers distributed."
+  "selected_geometry": "preselection-right-column.json",
+  "work_built": true,
+  "historical_source_register": "qa/right-column-previous/COLOR-SOURCE-REGISTER.json",
+  "second_review": "second-source-domain-review.json, separate final review pending"
 }

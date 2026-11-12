@@ -1,15 +1,4 @@
-# 校驗版本說明：當前交付補充
-
-本檔為 append-only 發布補充；原模型、幾何、材色、原凍結資料及兩校驗表均未修改。
-
-- `SHA256SUMS.txt` 屬原版歷史表。下列精確舊項對當前色版 NOT_RECERTIFIED，不能視為新檔校驗通過；其餘項仍照表核對。
-- 無副檔名 `SHA256SUMS` 核對所列當前檔案，不含自身與 FREEZE，也未回填本次兩份追加補充。
-- `PUBLICATION-SUPPLEMENT-MANIFEST.json` 綁定全部原凍結公開 payload 與本說明的大小、SHA256、Git blob SHA；不自循環包含自身，其位元組由發布 commit 與外層交付 manifest 綁定。
-- 本補充不提高來源材色、幾何、數位 QA 或實體列印可信度；原限制仍見 README。
-
-## 精確歷史項
-
-- `README.md`：舊 SHA256 `c3f037bc731e369aa149cd48c9c19497b0eca7e548e8ec07922bef9ba343b923`；當前 SHA256 `39881bf38aba89e85af9f9060792dc87af77068524c3cce00aa6cdd8f2a2ca55`。原項 NOT_RECERTIFIED，當前值由新表與交付 manifest 核對。
-- `scene.blend`：舊 SHA256 `c2ce5bdfa7bd51e3b3141e8d14788fe056dfe5b56c9b96ed6d972f835e4a934b`；當前 SHA256 `46a74c3f36c87ada82055c87b5feb79eb426af93a5e380560c26bef423d45dd3`。原項 NOT_RECERTIFIED，當前值由新表與交付 manifest 核對。
-
-[返回模型說明](README.md) · [當前校驗表](SHA256SUMS) · [發布補充清單](PUBLICATION-SUPPLEMENT-MANIFEST.json)
+# 本次校驗範圍
+RIGHT-COLUMN-INDEPENDENT-QA/DELIVERY-QA是本次最終報告。SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW是固定來源階段快照，不回寫。原8+新8=16/4678中性/4694原面。
+SHA256SUMS本次不自含、不含本次freeze manifest或備份；manifest不自含。qa/right-column-previous與原FREEZE/PUBLICATION-SUPPLEMENT及HISTORICAL-NESTED-CHECKSUM-SCOPE屬歷史。appearance/與ORIGINAL-SOURCE-GAP系列、原工程aliases全bytes不動；原屋面族分類非實景色或本次工程認證。私人來源/比較圖/日誌不發布。
+私人right-column.png僅檢查正式細圖未對準的右柱前左面；臨時相機/補光不保存scene，獨審另外綁私圖hash，不當公開標準取景或校色色票。

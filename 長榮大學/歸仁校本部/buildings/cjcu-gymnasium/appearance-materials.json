@@ -4,13 +4,13 @@
       "id": 0,
       "name": "CJCU Gymnasium visible left column facets light gray",
       "hex": "#CBCBC5",
-      "faces": 8
+      "faces": 16
     },
     {
       "id": 1,
       "name": "CJCU Gymnasium unverified walls windows neutral",
       "hex": "#B8BAB5",
-      "faces": 4686
+      "faces": 4678
     }
   ],
   "domains": {
@@ -21,6 +21,7 @@
       2,
       2
     ],
+    "right_column_added_faces": 8,
     "whole_coplanar_withdrawals": 0,
     "coplanar_domains": 2114
   },
@@ -28,9 +29,9 @@
   "fully_colored_exterior": false,
   "geometry_policy": "4694 original triangles unchanged; no cuts or newgeometry",
   "limitations": [
-    "8 original left-column front-left facet triangles light gray; four complete24gon facets only.",
+    "Original8 left facets plus8 right front-left facet triangles; each four complete24gon facets.",
     "Existing1206 roof-face neutral sheet-family display is historical arbitrary preview, not verified daylight color.",
-    "All other4686 triangles neutral, including right column, roof, mixed brick walls/gold letters, glazing, steps and soffit.",
+    "All other4678 triangles neutral, including unselected column facets, roof, mixed walls/glazing/steps/soffit.",
     "Old appearance folder and original scene/renderer preserved unchanged; this is not a monochrome discovery or new building.",
     "Capture date unknown; URL202404 not capture or2026 condition. No textures, geometry changes or tested filament slicing."
   ]

@@ -1,0 +1,26 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "source": "https://www.cjcu.edu.tw/images/campus/campus_gym.jpg",
+  "page": "https://www.cjcu.edu.tw/en/about_campus_tour.php",
+  "source_sha256": "f66c9ac9053905c3b02d96b4615ed638beaf40f5748061788e9bab71f90dbe4b",
+  "new_fetch_not_new_capture": true,
+  "capture_date": "unknown",
+  "source_pixels": [
+    640,
+    426
+  ],
+  "source_support": "Full-height right front column visible without former planter/rail lower occlusion; cross-check original higher-resolution official portico for gray stone family.",
+  "proposed_new_faces": 8,
+  "proposed_domain": "Four right-column original front-left facets k14..17 only; not whole cylinder or symmetry extension.",
+  "limits": [
+    "New full-height view has only about 10px column width, no calibrated HEX or fine surface detail.",
+    "Original24gon/radius/depth/height remains geometric approximation.",
+    "Higher-resolution prior official-portico image confirms right-column gray stone upper/mid surfaces but occludes foot; used jointly, not falsely as new image.",
+    "Other right facets, all unselected left facets, caps, mixed wall/glazing/soffit/steps and roof remain neutral.",
+    "Old appearance/ arbitrary roof-family classification and ORIGINAL-SOURCE-GAP aliases immutable."
+  ],
+  "selected_geometry": "preselection-right-column.json",
+  "work_built": true,
+  "historical_source_register": "qa/right-column-previous/COLOR-SOURCE-REGISTER.json",
+  "second_review": "second-source-domain-review.json, separate final review pending"
+}
