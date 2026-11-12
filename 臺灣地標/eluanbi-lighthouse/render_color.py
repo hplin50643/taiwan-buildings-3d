@@ -73,4 +73,10 @@ for _ in range(20):
  cam.data.ortho_scale*=1.08;bpy.context.view_layer.update()
 assert bb[0]>.03 and bb[1]<.97 and bb[2]>.14 and bb[3]<.97
 update_caption()
+# Portable preview destination; do not retain the build computer's output path.
+scene.render.filepath='//preview.png'
+for screen in bpy.data.screens:
+ for area in screen.areas:
+  for space in area.spaces:
+   if space.type=='FILE_BROWSER' and space.params:space.params.directory=b'//'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'scene.blend'),compress=True)

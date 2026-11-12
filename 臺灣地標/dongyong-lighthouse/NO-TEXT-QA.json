@@ -1,6 +1,12 @@
 {
+  "visual_review": {
+    "passed": true,
+    "method": "Original main image and all ten output views reviewed visually.",
+    "notes": "No in-image caption or background text panel; original framing retained, including intentional cropped detail views."
+  },
   "status": "PASS",
   "checks": {
+    "portable_output_path": true,
     "mesh_vertices_match": true,
     "mesh_faces_exact": true,
     "material_indices_match": true,
@@ -22,10 +28,5 @@
     "roof-detail.png": "7bcd641cf4202a4fbee5a071fcefb748443148a8ac42a347a4883a7b5daffb40",
     "top.png": "790555a83498802aa26acea671a935aaec9b7731ade53302ee9d96e0643a79a8",
     "west.png": "71584396207eec99b871960404f9bfb5ee9882b9e7b2c6f26ac2122a351582de"
-  },
-  "visual_review": {
-    "passed": true,
-    "method": "Original main image and all ten output views reviewed visually.",
-    "notes": "No in-image caption or background text panel; original framing retained, including intentional cropped detail views."
   }
 }

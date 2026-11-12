@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "reviewed_at_utc": "2026-11-11T19:01:08.251789+00:00",
+  "reviewer": "Builder pixel inspection; independent parent review is separate.",
+  "mesh_sha256": "f2dd4370c71af03f5823b87925efb36389dca00eba1e165afb29f17f7c7b1d3d",
+  "scene_sha256": "8098fd223ad97fdc23be8930b45c75d8eea95a4c7f0c7e12c654217426e4050d",
+  "changed_faces": 993,
+  "render_views": 10,
+  "matched_before_after_views": [
+    "preview",
+    "rear"
+  ],
+  "scene_comparison_checks": {
+    "lights": true,
+    "world": true,
+    "camera": true,
+    "render": true,
+    "material_values": true,
+    "vertices": true,
+    "faces": true,
+    "indices_differ_by_exact_993_whole_faces": true,
+    "all_other_original_indices_preserved": true
+  },
+  "images_sha256": {
+    "back.png": "8a66787d0e8b94ab08dae58865b5126b562772281ae3285693bc877510af00af",
+    "east.png": "82cec2fa2a7b5cde96a74382d913b081b8f80f879361c885b2d00828dcd66647",
+    "entry-detail.png": "936fa7471504f743ee7e92d7ec0be8ab4ba6238392ed205f60dcbab8fb7fbe56",
+    "facade-detail.png": "bf8a32b4c52cbc85ba80c3d2344f2e94a4e9d08009b5827ec1a69a9fe0a1a2a6",
+    "front.png": "163d42dadc222f30a84784bfcc12dd2b24d17fcc4de26b3471deb2aae12a0852",
+    "preview.png": "62cbb42994cdcb5e17569391bdbb96795b6f6c34e2b6468c0b8c216fa0610f71",
+    "rear.png": "353e50169e3f4d8bae6c17aa833d16aa9bd9c596979d8bea00fceb614cd20074",
+    "roof-detail.png": "e5bfd0772d1c7289073d163d1e6b6b15b38665b23a7217f50642d27c1c1b3837",
+    "top.png": "5411b1c67751396dcaaa4c5bfb43a152b100f42725d6f3cb1e90aa1321aa20ae",
+    "west.png": "d3fe7a65d169abb0e244ff2a9fe957ea06482b80d539b4b4236ce381676409ab"
+  },
+  "findings": [
+    "All ten images depict the same final 993-face revision without text or backing overlays.",
+    "Original complete side/rear walls and roof-slope groups have coherent existing color families.",
+    "Earlier five-triangle side-wall gap was corrected using the complete original shell boundary, then all ten images were rerendered.",
+    "Broad horizontal roofs, terrace/base, small unsupported pavilion wall colors and ambiguous areas remain neutral.",
+    "No windows, doors, ornaments, texture lettering or geometric changes were added.",
+    "Detail images intentionally crop the model; seven general views show the full model."
+  ],
+  "evidence_limits": [
+    "Official sources confirm front color families, not unseen side/rear faces individually.",
+    "No calibrated color measurement, current/historical full-survey certification, or physical print test."
+  ],
+  "comparison_layout": "Left: caption-free prior color model; right: final continuation. Both rendered with identical actual lighting, world, camera, 96-sample CPU settings and material values."
+}

@@ -1,41 +1,58 @@
 {
   "status": "PASS",
   "checks": {
-    "original_STL_bytes_unchanged": true,
-    "5558_triangles_preserved": true,
-    "triangle_coordinates_unchanged": true,
+    "vertices_byte_identical_to_caption_free_base": true,
+    "triangle_indices_identical_to_base": true,
+    "all_3294_original_non_neutral_faces_preserved": true,
+    "only_original_neutral_faces_changed": true,
+    "palette_file_byte_identical": true,
+    "original_stl_byte_identical": true,
+    "original_geometry_builder_byte_identical": true,
+    "clean_rebuild_stl_byte_identical": true,
+    "clean_color_rebuild_arrays_exact": true,
+    "changeset_matches_actual_diff": true,
+    "mesh_matches_stl_exact": true,
     "watertight": true,
-    "single_positive_volume": true,
-    "finite_and_nondegenerate": true,
-    "seven_materials_actually_assigned": true,
-    "3MF_mm": true,
-    "3MF_vertices_same": true,
-    "3MF_faces_same": true,
-    "3MF_material_assignment_exact": true,
-    "3MF_object_identity": true,
-    "isolated_original_STL_hash": true,
-    "isolated_color_mesh_hash": true,
-    "isolated_palette_assignment_hash": true,
-    "inputs_unchanged_during_QA": true
+    "winding_consistent": true,
+    "positive_volume": true,
+    "single_connected_component": true,
+    "no_degenerate_triangles": true,
+    "3mf_vertices_equal_original": true,
+    "3mf_faces_equal_original": true,
+    "3mf_vertices_match_npz": true,
+    "3mf_faces_match_npz": true,
+    "3mf_materials_match_npz": true,
+    "3mf_original_material_definitions_preserved": true,
+    "3mf_mm_units_preserved": true,
+    "3mf_build_transforms_preserved": true
   },
-  "color_mesh_sha256": "5a7c4232259265687c9408e303fa7fe0b0c5217d395d57ea2f09fdfb9cdaea0e",
-  "original_STL_sha256": "0286971124851f5ffeeaade6b98fd056a26275edbd8b83312a2723892bb6340c",
-  "bounds_mm": [
-    [
-      -75.0,
-      -45.5,
-      0.0
-    ],
-    [
-      75.0,
-      45.5,
-      45.79999923706055
-    ]
+  "vertices": 2781,
+  "triangles": 5558,
+  "dimensions_mm": [
+    150.0,
+    91.0,
+    45.79999923706055
   ],
-  "retained_rebuild": "Isolated rebuild retained privately; no automatic file deletion.",
+  "volume_mm3": 211174.6998060837,
+  "changed_faces": 993,
+  "original_protected_faces": 3294,
+  "neutral_faces_remaining": 1271,
+  "material_histogram": {
+    "0": 272,
+    "1": 1611,
+    "2": 786,
+    "3": 993,
+    "4": 449,
+    "5": 176,
+    "6": 1271
+  },
+  "base_mesh_sha256": "5a7c4232259265687c9408e303fa7fe0b0c5217d395d57ea2f09fdfb9cdaea0e",
+  "mesh_sha256": "f2dd4370c71af03f5823b87925efb36389dca00eba1e165afb29f17f7c7b1d3d",
+  "stl_sha256": "0286971124851f5ffeeaade6b98fd056a26275edbd8b83312a2723892bb6340c",
+  "clean_rebuild": "Fresh directory; original geometry recipe -> STL -> revised colorizer -> 3MF.",
   "limitations": [
-    "Color model uses original unrefined geometry; no new facade accuracy claim.",
-    "Seven base-material labels are not a tested four-filament slicer project.",
-    "STL format itself does not contain color."
+    "No physical print test.",
+    "Unseen side/rear material continuation is inference.",
+    "Original simplified geometry/proportions unchanged; no survey accuracy claim."
   ]
 }

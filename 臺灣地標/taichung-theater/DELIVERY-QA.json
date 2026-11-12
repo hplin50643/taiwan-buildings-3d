@@ -45,16 +45,16 @@
     "COLOR-SOURCE-REGISTER.json": "a1f5497f80f93981b6792062f69c134a98b8544772ddea5fa550b3a543d6dc2a"
   },
   "images_sha256": {
-    "preview.png": "b31d21c8bffb59c97f07faf96e22ccfbf1e22046fb55886e6431786c2c6b22c9",
-    "rear.png": "48c254fe8145b2194e71efce49069940e5e301f39ba7bb32f6b86c61bf835182",
-    "front.png": "03fe77fa4d6143b07000b077595687ce98f097b8cc97f29d4599c6c3258ab97f",
-    "back.png": "1b91c39e9156d09a30cb84683fbe6fb286fcd7a466db9d305dd88b262bacec6d",
-    "west.png": "7af644e143c68b8315571ddf9fea6fd34a0f7991a0fae25065bcfa7da427c8f8",
-    "east.png": "393595afa30f306487ff778d5cbc25732237586f9d1bcf6de9ea8a07b823a4fe",
-    "top.png": "491b08f35aabafe51e8469a02e59f77607248a6b4381a376345f4355a8c351d0",
-    "entry-detail.png": "5b3a5ca34c4f1a48d02a00347e1a3479d14776ad4386ab16182e11b5916d8d8c",
-    "corridor-detail.png": "33075477032336fa8f0bccc4c60a0c3a3c321107c8f660f2e1c5d719a46a820a",
-    "roof-detail.png": "48ab16ae011aca7a24f944d77433ba1577787f903819d7dfe03113db288a8336"
+    "back.png": "018539656b7b13269907e329ac75ace8409ee944e69934211ba9d95baddd3092",
+    "corridor-detail.png": "84054d9ce34a76322eb52a196fc0f5298b3e73fa5b3fccc4797e696513f39610",
+    "east.png": "daab209fa923ca66524ab48dc5318cea9a1b34536c114cb519f8e125192d9430",
+    "entry-detail.png": "31f50707bddd61a6689ed7d3e30b4eca3500be640d24c7ec21023b9246da5ff7",
+    "front.png": "6994fe719fc8f6c12adc3f645869d07550166a069da136310654c8ca26273988",
+    "preview.png": "93d98eccb2535d17718e77ac11cc651109f58e189c4d007805dde28f03e7d6e1",
+    "rear.png": "f03fcc21d4eb19e17cc5e830fac45231aef118592667ffa82cd60674dd419971",
+    "roof-detail.png": "be9ec74c24da8faacb12b574004cd4bac2f1e4bbeb3ff54d568050b8cd294849",
+    "top.png": "db72b7818d782c4081abedd9ae31bf8a69eac79040f5179771a5ac05c574ab86",
+    "west.png": "e13968bd4f0deb521fafed6ad55d58e07efe17497e4c91bb5fc683771b60fc25"
   },
   "mesh_sha256": "262d9b2c1b865667ea4a0c16ed2a3fff83114d4bdd657641dac2271a995206e2",
   "geometry_change": false,
@@ -63,5 +63,10 @@
   "limitations": [
     "Four appearance labels are not a tested multi-filament slicer project.",
     "Original simplified geometry retained; no exact surveyed facade geometry."
-  ]
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
 }

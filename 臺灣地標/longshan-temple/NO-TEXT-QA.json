@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-11-11T19:38:44.325290+00:00",
+  "scope": "Ten actual views of the original geometry with a declared 13366-face neutral-to-existing-tile extension. The unpublished no-text baseline is preserved: rendered captions/backing and stamp remain disabled. This QA does not assert original material indices are unchanged; 7043 previously colored facets and all original shader values are unchanged.",
+  "color_mesh_sha256": "de44302094c76d673ce618bc04a579dff260200713c3d66baa34de8da9b88d17",
+  "scene_sha256": "1fd3879f46b17849fd3984cf33e330495e18ee9573ad01cd89b337ec9463b29a",
+  "images_sha256": {
+    "preview.png": "d3c4bc3343a74a0382f9d93267b2cccc72b4d0b2533c3400a9fb156a7fe65cc5",
+    "rear.png": "d174b51cce8a4c81b7d88beb13bb7481ad4824eab742eeaa039000f3fe0aa3f2",
+    "front.png": "fdd90b2a92b123ceb04473cfac88079eb495d15983d71e5aa934384fc1796c9c",
+    "back.png": "ba7e357771a0ab2cc3a2e82e00e139a17501e6b841fe6f58f3dec57c992b1c96",
+    "west.png": "c47ac5fb4f7e5c069d7f96af700441fe679c44d5b613e8b89b5dbcf9327b8a86",
+    "east.png": "36a2d34d09a6b9b2f7197112c94c60db7c9245e75e5fe5e68f9d205a56d2ef50",
+    "top.png": "06ff944afe4b08b648ecef1d9b4b8050ce192a2b17fada9b3a3db6c929de203b",
+    "entry-detail.png": "277554cfa908cc02c8ae05e86299b8c2a322ee03991eeb4da0fb65a65258a463",
+    "facade-detail.png": "74ec7654fdfb0443c2d734df31366f629ab0a2df46653bf886c1a53fa69b9268",
+    "roof-detail.png": "2f47062fba200e6918c04a4c7b131d7364c8ba85bb1e3ca3ba3a1b4f05607726"
+  },
+  "checks": {
+    "text_objects_hidden": true,
+    "text_bodies_empty": true,
+    "caption_backing_hidden": true,
+    "no_render_stamp": true,
+    "portable_output": true,
+    "no_external_fonts": true
+  },
+  "visual_review": {
+    "status": "PASS",
+    "views_reviewed": [
+      "preview",
+      "rear",
+      "front",
+      "back",
+      "west",
+      "east",
+      "top",
+      "entry-detail",
+      "facade-detail",
+      "roof-detail"
+    ],
+    "image_sha256": {
+      "preview": "d3c4bc3343a74a0382f9d93267b2cccc72b4d0b2533c3400a9fb156a7fe65cc5",
+      "rear": "d174b51cce8a4c81b7d88beb13bb7481ad4824eab742eeaa039000f3fe0aa3f2",
+      "front": "fdd90b2a92b123ceb04473cfac88079eb495d15983d71e5aa934384fc1796c9c",
+      "back": "ba7e357771a0ab2cc3a2e82e00e139a17501e6b841fe6f58f3dec57c992b1c96",
+      "west": "c47ac5fb4f7e5c069d7f96af700441fe679c44d5b613e8b89b5dbcf9327b8a86",
+      "east": "36a2d34d09a6b9b2f7197112c94c60db7c9245e75e5fe5e68f9d205a56d2ef50",
+      "top": "06ff944afe4b08b648ecef1d9b4b8050ce192a2b17fada9b3a3db6c929de203b",
+      "entry-detail": "277554cfa908cc02c8ae05e86299b8c2a322ee03991eeb4da0fb65a65258a463",
+      "facade-detail": "74ec7654fdfb0443c2d734df31366f629ab0a2df46653bf886c1a53fa69b9268",
+      "roof-detail": "2f47062fba200e6918c04a4c7b131d7364c8ba85bb1e3ca3ba3a1b4f05607726"
+    },
+    "observations": [
+      "Final variant extends identifiable rear-hall roof skins and excludes horizontal and simplified near-horizontal original wall/column top facets.",
+      "No geometry changes; original pre-colored faces remain unchanged. The preserved gray horizontal intersections are original geometry limitations, not real-world paint boundaries.",
+      "Final front oblique shows continuous tile-family coverage across front, central and rear hall slopes, both towers and galleries; original wall/cap intersections and ornamental blocks remain distinct gray, without overlay text.",
+      "Final rear oblique confirms the rear hall roofs now continue the existing tile family on their actual slopes; wall tops/caps, vertical closures and decorative ridges remain neutral and geometry stays unchanged.",
+      "Final cardinal front/back/west/east views show consistent orange tile-family extension including rear hall slopes while ornamental ridges, gray wall enclosures and original crossing body tops remain distinct. No text overlays or full-model clipping.",
+      "Final top view confirms coherent selected roof skins and neutral horizontal/near-horizontal wall/column cap intersections, including the audited large central gray wedge. These are preserved original geometry intersections, not inferred paint patterns.",
+      "Entry detail is an intentional crop. Existing front stone and aperture shadows remain intact, orange roof skin is continuous, and the audited original gray crossing wall-top slivers remain visible rather than hidden by false roof coloring. No text overlay.",
+      "Tower/gallery detail confirms separate orange sloping hexagonal roof shells and gallery roofs, with gray vertical tower walls, ridge rods and finials preserved. Original gray roof/body intersections remain visible. Intentional detail crop, no text overlay.",
+      "Roof detail confirms both central and rear hall tile skins have the same inferred tile family, with their original gray crests, vertical closures, horizontal cap strips and crossing tooth/wedge shapes preserved. No invented painted boundary, text overlay or geometry alteration. Intentional detail crop."
+    ],
+    "detail_views_pending": [],
+    "reviewed_utc": "2026-11-11T19:38:44.242813+00:00"
+  }
+}

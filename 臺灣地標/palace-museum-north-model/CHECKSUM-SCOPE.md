@@ -1,15 +1,11 @@
-# 校驗版本說明：當前交付補充
+# 本版核對範圍
 
-本檔為 append-only 發布補充。原凍結模型、幾何、材色、歷史文件與兩份校驗表均未修改。
+SHA256SUMS 僅列本次本機審核包內的檔案，不包含 SHA256SUMS 本身。這些檔案構成目前的幾何、材色、3MF／Blender、十張預覽、重建腳本、說明及本版 QA。
 
-- `SHA256SUMS.txt` 是原版歷史校驗表，保留原位元組，不是新增色版的完整校驗入口。下列精確項目不追認為當前檔案通過（NOT_RECERTIFIED）；其餘項目仍照表驗證。
-- 無副檔名的 `SHA256SUMS` 核對其所列的當前檔案，不含自身與 FREEZE，也不宣稱涵蓋這次新增的兩份發布補充。
-- `PUBLICATION-SUPPLEMENT-MANIFEST.json` 記錄全部原凍結公開 payload 與本說明的大小、SHA256、Git blob SHA；它不循環包含自身，其位元組由發布 Git commit 與批次交付 manifest 綁定。
-- 此說明只釐清校驗版本，不提高原來源、幾何、材色、數位 QA 或實體列印可信度。完整限制仍見原 README。
+這是現有模型的局部修補，不是整個 GitHub 儲存庫鏡像。本機包未下載的遠端歷史預覽、舊色版來源紀錄、舊驗證程式和舊 manifest 不是本版重新驗證的輸出。若未來整合至儲存庫，這些歷史檔可保留，但不能把它們的舊 PASS、舊照片邊界或舊雜湊當成本版證據。
 
-## 原歷史表中不適用於新色版的精確項目
+遠端原有 SHA256SUMS.txt、FREEZE-MANIFEST.json、PUBLICATION-SUPPLEMENT-MANIFEST.json、舊 COLOR-SOURCE-REGISTER.json 及舊獨審紀錄均屬歷史。新入口由 README、FACADE-SOURCE-REGISTER.json、FACADE-COLOR-CHANGESET.json、COLOR-FORMAT-GEOMETRY-QA.json、SCENE-QA.json、NO-TEXT-QA.json、FACADE-VISUAL-QA.json 與 DELIVERY-QA.json 說明。
 
-- `README.md`：舊表 SHA256 `b74047069eb513f8acd071c6b0ac5175f559a6b9d5eea30f5b574ccde256074a`；當前 SHA256 `dcb24c1c40ab6fd269862aa3de769da0d0357a63f3d1a4dae0837fc820714d6c`。舊項 NOT_RECERTIFIED，當前值由新 `SHA256SUMS` 與交付 manifest 核對。
-- `scene.blend`：舊表 SHA256 `688de99719cb7e380d972898d9990dd032252be6791672266c18519e772efabc`；當前 SHA256 `827b708cf98b90064f6af864de8396d37c4dbbd6998aa57364ed6bd753265d7a`。舊項 NOT_RECERTIFIED，當前值由新 `SHA256SUMS` 與交付 manifest 核對。
+本機精確待整合 manifest 另存，逐檔列遠端 old blob 與未發布去字基底，兩者不可混用。本版未執行任何 GitHub 寫入，也沒有遠端發布讀回或 CI 通過的宣稱。
 
-[返回模型說明](README.md) · [當前檔案校驗表](SHA256SUMS) · [發布補充清單](PUBLICATION-SUPPLEMENT-MANIFEST.json)
+來源原圖、來源 HTML、私人比對工作檔、日誌與 Blender 備份不在模型包或 SHA256SUMS 中。原圖不是貼圖，也不隨模型分享。

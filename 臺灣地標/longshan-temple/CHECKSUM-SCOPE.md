@@ -1,14 +1,9 @@
-# 校驗版本說明：當前交付補充
+# 當前彩色入口校驗範圍
 
-本檔為 append-only 發布補充；原模型、幾何、材色、原凍結資料及兩校驗表均未修改。
+本次 SHA256SUMS 核對目前屋面側背補色入口、十張無字圖、scene.blend、基本材料 3MF、重建／驗證程式與本次 QA；包含保留原位元組的 model.stl、build_model.py、palette.json、export_appearance.py。校驗表不自含，外層精確交付清單綁定其大小與 SHA256／Git blob SHA。
 
-- `SHA256SUMS.txt` 屬原版歷史表。下列精確舊項對當前色版 NOT_RECERTIFIED，不能視為新檔校驗通過；其餘項仍照表核對。
-- 無副檔名 `SHA256SUMS` 核對所列當前檔案，不含自身與 FREEZE，也未回填本次兩份追加補充。
-- `PUBLICATION-SUPPLEMENT-MANIFEST.json` 綁定全部原凍結公開 payload 與本說明的大小、SHA256、Git blob SHA；不自循環包含自身，其位元組由發布 commit 與外層交付 manifest 綁定。
-- 本補充不提高來源材色、幾何、數位 QA 或實體列印可信度；原限制仍見 README。
+歷史 SHA256SUMS.txt、FREEZE-MANIFEST.json、PUBLICATION-SUPPLEMENT-MANIFEST.json 與先前前面補彩的獨立報告保留，但對這次更新檔案不重新認證，不可當作新版本通過證據。歷史 previews/ 與 editable.blend 亦非目前彩色入口。
 
-## 精確歷史項
+原官照、網頁快照、私人前後對比及隔離重建目錄不在公開包。補色以先前本機無字基準為底，保留移除字幕的修改；不能用較早有字渲染覆蓋本次圖片。
 
-- `README.md`：舊 SHA256 `310d469876e8db1995059a1813a038f948bdd673a8ddebcb085e2d3ae53604ae`；當前 SHA256 `034088ac90855f9054643739b99bae74586b7fcf247373e22b9fb86947e3c29f`。原項 NOT_RECERTIFIED，當前值由新表與交付 manifest 核對。
-
-[返回模型說明](README.md) · [當前校驗表](SHA256SUMS) · [發布補充清單](PUBLICATION-SUPPLEMENT-MANIFEST.json)
+[模型說明](README.md) · [當前校驗表](SHA256SUMS)

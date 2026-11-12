@@ -1,56 +1,32 @@
 {
-  "status": "PASS",
-  "checks": {
-    "preview_size": true,
-    "preview_fresh": true,
-    "rear_size": true,
-    "rear_fresh": true,
-    "front_size": true,
-    "front_fresh": true,
-    "back_size": true,
-    "back_fresh": true,
-    "west_size": true,
-    "west_fresh": true,
-    "east_size": true,
-    "east_fresh": true,
-    "top_size": true,
-    "top_fresh": true,
-    "entry-detail_size": true,
-    "entry-detail_fresh": true,
-    "facade-detail_size": true,
-    "facade-detail_fresh": true,
-    "roof-detail_size": true,
-    "roof-detail_fresh": true,
-    "COLOR-FORMAT-GEOMETRY-QA.json_PASS": true,
-    "COLOR-FORMAT-GEOMETRY-QA.json_mesh": true,
-    "SCENE-QA.json_PASS": true,
-    "SCENE-QA.json_mesh": true,
-    "FRAMING-QA.json_PASS": true,
-    "FRAMING-QA.json_mesh": true,
-    "model.stl_original_bytes": true,
-    "build_model.py_original_bytes": true,
-    "first_section_ten_images": true,
-    "three_columns": true,
-    "no_private_absolute_paths_in_new_public_text": true
-  },
-  "images_sha256": {
-    "preview.png": "e7021b81b55e77c784186426f5bc1b8c4f220362f6b28e5c24d3fc2a6a702c56",
-    "rear.png": "4ad39c0b994f61c9a85c042ef525273c470dde2aa6b273dc4ef2cfe993137838",
-    "front.png": "0488faaf599ea3f40c375ab99dcc58f0e2d3cd3ef80ce8ec0b9bcd1fabc99b78",
-    "back.png": "e8ac085741b5b1179887141d2c5c0b6fc30e523e7dab000d69be953877ff58d9",
-    "west.png": "e510481edba5d5f9fb0a568d11d9d32e67debe273eb4cb81989cd4f7e0e609ca",
-    "east.png": "4f245a7e321bcd2ea56b5c852a86de6e1d227d0d2fe6140022ce0abad9402c4a",
-    "top.png": "e219c871c978ea8ea393cf4d1b04a4dde01d2c03e26b84897a035d9ff1e2c0cb",
-    "entry-detail.png": "24f4b21c1152a6d87760eb1a9afa1eb32eba04c2089da18fe9be33ffefcdeab0",
-    "facade-detail.png": "e7f123cd03d058c5c2cf75fd8eb4326634ae8247fb1b8a6dea71be0d0c79ed1d",
-    "roof-detail.png": "edba46d249d8ae0967e860dd1faadd0b6dd0ece34ff00e23bbc85ff269c72fa6"
-  },
-  "mesh_sha256": "5a7c4232259265687c9408e303fa7fe0b0c5217d395d57ea2f09fdfb9cdaea0e",
+  "status": "PASS_LOCAL_ONLY",
+  "local_completed_at_utc": "2026-11-11T19:01:08.525909+00:00",
+  "publication_status": "NOT_PUBLISHED_NO_GITHUB_WRITES",
   "geometry_change": false,
   "count_delta": 0,
-  "manual_visual_review": "Builder manual final review recorded separately; Photographed front wall ochre, existing pale rails, gray stairs, outward jade slopes; unknown rear/roof horizontal faces neutral. Original geometry unchanged.",
+  "mesh_sha256": "f2dd4370c71af03f5823b87925efb36389dca00eba1e165afb29f17f7c7b1d3d",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "NO-TEXT-QA.json": true,
+    "FACADE-VISUAL-QA.json": true
+  },
+  "images_sha256": {
+    "preview.png": "62cbb42994cdcb5e17569391bdbb96795b6f6c34e2b6468c0b8c216fa0610f71",
+    "rear.png": "353e50169e3f4d8bae6c17aa833d16aa9bd9c596979d8bea00fceb614cd20074",
+    "front.png": "163d42dadc222f30a84784bfcc12dd2b24d17fcc4de26b3471deb2aae12a0852",
+    "back.png": "8a66787d0e8b94ab08dae58865b5126b562772281ae3285693bc877510af00af",
+    "west.png": "d3fe7a65d169abb0e244ff2a9fe957ea06482b80d539b4b4236ce381676409ab",
+    "east.png": "82cec2fa2a7b5cde96a74382d913b081b8f80f879361c885b2d00828dcd66647",
+    "top.png": "5411b1c67751396dcaaa4c5bfb43a152b100f42725d6f3cb1e90aa1321aa20ae",
+    "entry-detail.png": "936fa7471504f743ee7e92d7ec0be8ab4ba6238392ed205f60dcbab8fb7fbe56",
+    "facade-detail.png": "bf8a32b4c52cbc85ba80c3d2344f2e94a4e9d08009b5827ec1a69a9fe0a1a2a6",
+    "roof-detail.png": "e5bfd0772d1c7289073d163d1e6b6b15b38665b23a7217f50642d27c1c1b3837"
+  },
   "limitations": [
-    "Seven appearance materials, not a verified four-filament slicer job.",
-    "Original simplified geometry preserved; no current full-building survey claim."
-  ]
+    "993 original-neutral whole triangles reassigned using same-family inference.",
+    "Unseen side/rear not photographically verified face-by-face.",
+    "Original coarse geometry, unknown areas and no physical print test remain."
+  ],
+  "dependency": "This revision includes and must preserve the unpublished caption-free predecessor. Do not replace its renderer or scene with the remote captioned versions."
 }

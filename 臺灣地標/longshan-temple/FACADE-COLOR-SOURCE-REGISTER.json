@@ -1,0 +1,75 @@
+{
+  "status": "REVIEWED_BOUNDED_INFERENCE",
+  "reviewed_utc": "2026-11-11T18:51:52.038292+00:00",
+  "references": [
+    {
+      "url": "https://lungshan.org.tw/tw/images/img03_1_4.jpg",
+      "page": "https://lungshan.org.tw/tw/03_1_4_art.php",
+      "sha256": "d6e7dcc6cea10e028933dd22c300d13f9aba833b447c9c2b591df872d0328d24",
+      "actually_viewed": true,
+      "role": "三川殿前瓦面與石構；支持同一屋坡材料延伸，不能證明每一背面。",
+      "capture_date": "not stated on source page",
+      "public_redistribution": false
+    },
+    {
+      "url": "https://lungshan.org.tw/tw/images/img03_1_5.jpg",
+      "page": "https://lungshan.org.tw/tw/03_1_5_art.php",
+      "sha256": "b5671976f87379eb3cfc01a84e030eb844d1cc479e5a85649be0ec1b9b74f261",
+      "actually_viewed": true,
+      "role": "中殿重簷可見瓦坡；只比對既有可分離瓦皮。",
+      "capture_date": "not stated on source page",
+      "public_redistribution": false
+    },
+    {
+      "url": "https://lungshan.org.tw/tw/images/img03_1_6.jpg",
+      "page": "https://lungshan.org.tw/tw/03_1_6_art.php",
+      "sha256": "f719f4cf0dd39b275d1d7336bf8f5c57b8dc1e934961c1b17424bee162646e5d",
+      "actually_viewed": true,
+      "role": "後殿室內與局部簷下；燈光影響，不能作整屋面或牆面的日光色證。",
+      "capture_date": "not stated on source page",
+      "public_redistribution": false
+    },
+    {
+      "url": "https://lungshan.org.tw/tw/images/img03_1_7.jpg",
+      "page": "https://lungshan.org.tw/tw/03_1_7_art.php",
+      "sha256": "e8b372d8218811c47d0d7f292fa28ba17f690ad72eb7d36422b0452203cb02a0",
+      "actually_viewed": true,
+      "role": "鐘鼓樓既有瓦坡與兩側可見側廊瓦面；綠門及多色雕飾不套到粗模型。",
+      "capture_date": "not stated on source page",
+      "public_redistribution": false
+    },
+    {
+      "url": "https://www.lungshan.org.tw/Tour_Guide/uploads/summernote/static_page_doc/f563fed2.jpg",
+      "page": "https://lungshan.org.tw/Tour_Guide/audio_guide",
+      "sha256": "0b24a7866770d9407ec27bb97bb56e68444e39790c343cbd89cad78f3157f0eb",
+      "actually_viewed": true,
+      "source_caption": "艋舺龍山寺，1998",
+      "role": "Rear-hall exterior shows orange-family tile rows. The old image has a green/yellow cast; used only as tile-family corroboration, never a measured current color.",
+      "public_redistribution": false
+    },
+    {
+      "url": "https://lungshan.org.tw/Tour_Guide/audio_guide",
+      "sha256": "3ab0ef14a64de65e305d972abad875b826406b3fcc0c59e3f5957e108c7341ba",
+      "role": "寺方文字說明三川殿背面為開放式對看廳、沒有牆壁隔間。模型封閉粗牆與真實構法不符，因此不刷色掩蓋。",
+      "actually_read": true,
+      "use": "architectural limitation only; unviewed page images not used as color evidence"
+    }
+  ],
+  "geometry_scope": "Same original 14,620 vertices and 29,236 triangles; no geometry revision.",
+  "change": {
+    "front_and_central_halls": "4,721 originally neutral complete tile-skin facets assigned existing orange tile material using the original heightfield at every triangle vertex; exact original front material assignments retained.",
+    "towers": "270 originally neutral whole sloping facets assigned existing same-shell orange tile material; top finials, vertical walls and decorative rods stay neutral.",
+    "side_galleries": "1,483 original gallery tile-skin facets, separately matched to original rotated 24x24 heightfields, receive same tile family inferred from official-7 visible neighboring roofs.",
+    "wall_paint": "No wall-paint extension. Real open colonnades do not map reliably to the old fused closed-wall abstraction.",
+    "rear_hall": "6,892 original rear-hall roof-skin facets assigned the existing tile family by same-building inference. The temple guide photograph f563fed2 captioned 1998 shows orange-family tile rows; color cast and age prohibit exact present-day color claims.",
+    "other_neutrals": "Crests, relief/decorative coarse blocks, roof solid closures, horizontal fusion patches, unknown walls, base and landscaping unchanged."
+  },
+  "limits": [
+    "Same-component continuity and gallery-family inference are explicitly estimated, not a measured or fully photographed present-day reconstruction.",
+    "Original palette labels, RGBA, Principled Base Color and roughness 0.72 are retained. Their historical front/unknown names describe provenance, not the new full material face selection.",
+    "No invented green eave bands, dragons, painted panel boundaries, new door/window finishes or facial detail.",
+    "Sources contain no verified color calibration; older undated photographs do not establish current paint condition.",
+    "Original photographs remain private and are absent from the publication manifest."
+  ],
+  "supersedes": "New facade-continuity scope supplements the earlier front-only COLOR-SOURCE-REGISTER.json, which remains historical evidence; its old no-rear inference scope no longer describes the updated selected roof facets."
+}

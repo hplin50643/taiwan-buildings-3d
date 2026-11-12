@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "method": "For every newly assigned heightfield tile triangle, compare all 3 vertices, centroid and 3 edge midpoints against the original piecewise linear roof heightfield with a 0.03 mm validation margin for the original 0.01 mm simplification; this independently rejects triangles whose corners only touch an intersection. Tower slopes separately satisfy exact planar hexagon equations.",
+  "color_mesh_sha256": "de44302094c76d673ce618bc04a579dff260200713c3d66baa34de8da9b88d17",
+  "groups": [
+    {
+      "domain": "front_main_hall_tile_continuity",
+      "face_count": 4721,
+      "max_7point_residual_mm": 0.02494242713109074,
+      "above_0_030_mm_count": 0,
+      "above_0_030_face_ids": [],
+      "worst_faces": [
+        {
+          "id": 19479,
+          "error": 0.008693173368993001
+        },
+        {
+          "id": 19504,
+          "error": 0.008693609535473712
+        },
+        {
+          "id": 19510,
+          "error": 0.008697004867354252
+        },
+        {
+          "id": 19514,
+          "error": 0.008714007970180404
+        },
+        {
+          "id": 19829,
+          "error": 0.008770605088624706
+        },
+        {
+          "id": 17731,
+          "error": 0.008805047591007309
+        },
+        {
+          "id": 4630,
+          "error": 0.010019833556452085
+        },
+        {
+          "id": 4632,
+          "error": 0.010649225316360145
+        },
+        {
+          "id": 4631,
+          "error": 0.011277311647653221
+        },
+        {
+          "id": 4337,
+          "error": 0.02494242713109074
+        }
+      ]
+    },
+    {
+      "domain": "rear_hall_tile_family_inference",
+      "face_count": 6892,
+      "max_7point_residual_mm": 0.017696495994140804,
+      "above_0_030_mm_count": 0,
+      "above_0_030_face_ids": [],
+      "worst_faces": [
+        {
+          "id": 23485,
+          "error": 0.009339713335172917
+        },
+        {
+          "id": 24385,
+          "error": 0.009339713335172917
+        },
+        {
+          "id": 8542,
+          "error": 0.009339713335180022
+        },
+        {
+          "id": 9538,
+          "error": 0.009339713335180022
+        },
+        {
+          "id": 23367,
+          "error": 0.012805992228805962
+        },
+        {
+          "id": 9681,
+          "error": 0.0128100159750133
+        },
+        {
+          "id": 29035,
+          "error": 0.013808752875821284
+        },
+        {
+          "id": 9682,
+          "error": 0.016071105028323984
+        },
+        {
+          "id": 23371,
+          "error": 0.016071105028323984
+        },
+        {
+          "id": 29016,
+          "error": 0.017696495994140804
+        }
+      ]
+    },
+    {
+      "domain": "gallery_tile_family_inference",
+      "face_count": 1483,
+      "max_7point_residual_mm": 0.025666034432450857,
+      "above_0_030_mm_count": 0,
+      "above_0_030_face_ids": [],
+      "worst_faces": [
+        {
+          "id": 28334,
+          "error": 0.009924239086608111
+        },
+        {
+          "id": 28346,
+          "error": 0.009924239086608111
+        },
+        {
+          "id": 21608,
+          "error": 0.013901668967690739
+        },
+        {
+          "id": 21715,
+          "error": 0.01507838559976804
+        },
+        {
+          "id": 18157,
+          "error": 0.0204657478451864
+        },
+        {
+          "id": 10831,
+          "error": 0.022081832246207966
+        },
+        {
+          "id": 10832,
+          "error": 0.022081832246207966
+        },
+        {
+          "id": 1453,
+          "error": 0.022141856372964952
+        },
+        {
+          "id": 29172,
+          "error": 0.022823131242230232
+        },
+        {
+          "id": 8659,
+          "error": 0.025666034432450857
+        }
+      ]
+    }
+  ],
+  "tower_polytope_check": {
+    "status": "PASS",
+    "tower_extension_faces": 270,
+    "all_vertices_within_original_tower_hexagonal_roof_polytope": true,
+    "invalid_face_ids": []
+  },
+  "total_validated_new_tile_faces": 13366
+}

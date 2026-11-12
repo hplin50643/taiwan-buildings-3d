@@ -1,23 +1,164 @@
 {
   "status": "PASS",
   "checks": {
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "mesh_sha_property_matches": true,
-    "scale_property": true,
-    "camera_exists": true,
-    "triangulated": true,
-    "historical_notice_exists": true,
-    "material_indices_match": true,
-    "seven_material_slots": true,
-    "shader_0": true,
-    "shader_1": true,
-    "shader_2": true,
-    "shader_3": true,
-    "shader_4": true,
-    "shader_5": true,
-    "shader_6": true,
-    "saved_camera_full_model_margin": true
+    "vertices": true,
+    "faces": true,
+    "matrix": true,
+    "dimensions": true,
+    "original_rgba_and_roughness_preserved": true,
+    "material_indices_match_npz": true,
+    "original_colored_faces_preserved": true,
+    "no_text_object": true,
+    "one_architectural_mesh": true,
+    "no_render_stamp": true,
+    "cpu_one_thread_96_no_denoise": true,
+    "portable_output_path": true,
+    "clean_blender_geometry_indices_transform_exact": true,
+    "clean_blender_material_values_exact": true
   },
-  "mesh_sha256": "5a7c4232259265687c9408e303fa7fe0b0c5217d395d57ea2f09fdfb9cdaea0e"
+  "materials": [
+    {
+      "name": "Photographed front ochre wall",
+      "diffuse": [
+        0.5520114302635193,
+        0.3613067865371704,
+        0.14126329123973846,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "node_base": [
+        0.5520114302635193,
+        0.3613067865371704,
+        0.14126329123973846,
+        1.0
+      ],
+      "node_roughness": 0.7200000286102295,
+      "node_metallic": 0.0,
+      "node_alpha": 1.0
+    },
+    {
+      "name": "Existing pale front rails and relief",
+      "diffuse": [
+        0.6583748459815979,
+        0.6653872728347778,
+        0.5906188488006592,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "node_base": [
+        0.6583748459815979,
+        0.6653872728347778,
+        0.5906188488006592,
+        1.0
+      ],
+      "node_roughness": 0.7200000286102295,
+      "node_metallic": 0.0,
+      "node_alpha": 1.0
+    },
+    {
+      "name": "Existing gray stairs and entrance stone",
+      "diffuse": [
+        0.31398871541023254,
+        0.33716362714767456,
+        0.3049873113632202,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "node_base": [
+        0.31398871541023254,
+        0.33716362714767456,
+        0.3049873113632202,
+        1.0
+      ],
+      "node_roughness": 0.7200000286102295,
+      "node_metallic": 0.0,
+      "node_alpha": 1.0
+    },
+    {
+      "name": "Observed outward jade roof slopes",
+      "diffuse": [
+        0.13013647496700287,
+        0.3324515223503113,
+        0.2622506618499756,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "node_base": [
+        0.13013647496700287,
+        0.3324515223503113,
+        0.2622506618499756,
+        1.0
+      ],
+      "node_roughness": 0.7200000286102295,
+      "node_metallic": 0.0,
+      "node_alpha": 1.0
+    },
+    {
+      "name": "Existing broad roof rim ochre interpretation",
+      "diffuse": [
+        0.4910208582878113,
+        0.2961382567882538,
+        0.07818742096424103,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "node_base": [
+        0.4910208582878113,
+        0.2961382567882538,
+        0.07818742096424103,
+        1.0
+      ],
+      "node_roughness": 0.7200000286102295,
+      "node_metallic": 0.0,
+      "node_alpha": 1.0
+    },
+    {
+      "name": "Original recess shadow and opaque canopy",
+      "diffuse": [
+        0.08650045841932297,
+        0.14702726900577545,
+        0.13013647496700287,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "node_base": [
+        0.08650045841932297,
+        0.14702726900577545,
+        0.13013647496700287,
+        1.0
+      ],
+      "node_roughness": 0.7200000286102295,
+      "node_metallic": 0.0,
+      "node_alpha": 1.0
+    },
+    {
+      "name": "UNVERIFIED rear inward slopes roof top",
+      "diffuse": [
+        0.38642942905426025,
+        0.40724021196365356,
+        0.3762621283531189,
+        1.0
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0,
+      "node_base": [
+        0.38642942905426025,
+        0.40724021196365356,
+        0.3762621283531189,
+        1.0
+      ],
+      "node_roughness": 0.7200000286102295,
+      "node_metallic": 0.0,
+      "node_alpha": 1.0
+    }
+  ],
+  "mesh_sha256": "f2dd4370c71af03f5823b87925efb36389dca00eba1e165afb29f17f7c7b1d3d",
+  "scene_sha256": "8098fd223ad97fdc23be8930b45c75d8eea95a4c7f0c7e12c654217426e4050d",
+  "compared_to": "Unpublished caption-free predecessor scene; original shader values and transforms preserved."
 }

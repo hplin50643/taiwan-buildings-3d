@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "performed_utc": "2026-11-11T18:51:52.038292+00:00",
+  "checks": {
+    "model.stl": true,
+    "color-mesh.npz": true,
+    "palette.json": true,
+    "continuity-map.npz": true,
+    "appearance-materials.json": true,
+    "3MF_all_member_bytes": true
+  },
+  "environment": {
+    "Blender": "4.3.2",
+    "Python": "3.12.14",
+    "trimesh": "5.1.1",
+    "numpy": "2.3.5",
+    "manifold3d": "3.5.4"
+  },
+  "method": "Empty local directory; execute unchanged build_model.py, updated colorize_model.py, unchanged export_appearance.py. Model bytes/material archives exact; all 3MF member bytes exact, ZIP packaging timestamps not asserted identical.",
+  "source_hashes": {
+    "build_model.py": "8f77b2523a9f518761408e37028537f56c939369308ba7304ac3129219236c7a",
+    "colorize_model.py": "0f1ec631ea516af8d06e3cf5cc489ab67e194b5ee292c4be322a31e313026f71",
+    "export_appearance.py": "baf9c266e5dc9bd45ff02aaaf745cde2bd3a107ce3317cee228325874eef8161"
+  },
+  "original_STL_SHA256": "711cc5fe4d900955600e1fc5fea5930b3b1db1b7e12fc4cc3b35730c18d47206",
+  "clean_STL_SHA256": "711cc5fe4d900955600e1fc5fea5930b3b1db1b7e12fc4cc3b35730c18d47206",
+  "color_mesh_SHA256": "de44302094c76d673ce618bc04a579dff260200713c3d66baa34de8da9b88d17",
+  "print_test": "NOT_RUN"
+}

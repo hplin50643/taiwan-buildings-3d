@@ -1,21 +1,158 @@
 {
   "status": "PASS",
   "checks": {
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "mesh_sha_property_matches": true,
-    "scale_property": true,
-    "camera_exists": true,
-    "triangulated": true,
-    "historical_notice_exists": true,
-    "material_indices_match": true,
-    "five_material_slots": true,
-    "shader_0": true,
-    "shader_1": true,
-    "shader_2": true,
-    "shader_3": true,
-    "shader_4": true,
-    "saved_camera_full_model_margin": true
+    "vertices_exact": true,
+    "faces_exact": true,
+    "material_indices_exact": true,
+    "identity_matrix": true,
+    "palette_count": true,
+    "text_objects_hidden": true,
+    "text_bodies_empty": true,
+    "caption_backing_hidden": true,
+    "no_render_stamp": true,
+    "96_samples": true,
+    "denoise_disabled": true,
+    "cpu_single_thread": true,
+    "portable_output": true,
+    "no_external_image_textures": true,
+    "no_external_fonts": true,
+    "material_0_name_RGBA_roughness": true,
+    "material_1_name_RGBA_roughness": true,
+    "material_2_name_RGBA_roughness": true,
+    "material_3_name_RGBA_roughness": true,
+    "material_4_name_RGBA_roughness": true,
+    "baseline_vertices_exact": true,
+    "baseline_topology_exact": true,
+    "baseline_matrix_exact": true,
+    "baseline_all_material_names_RGBA_basecolor_roughness_metallic_IOR_exact": true,
+    "baseline_lighting_exact": true,
+    "baseline_world_color_exact": true,
+    "baseline_color_management_exact": true
   },
-  "mesh_sha256": "66876da02c40bd7458c05e0e600d385dab3864bbebd6eba9635db66d90e78375"
+  "scene_sha256": "1fd3879f46b17849fd3984cf33e330495e18ee9573ad01cd89b337ec9463b29a",
+  "color_mesh_sha256": "de44302094c76d673ce618bc04a579dff260200713c3d66baa34de8da9b88d17",
+  "baseline_scene_sha256": "7efadfccd1cad5338211952e8660aead95c8d1dc8da6ae858ac86d57f7f0e283",
+  "material_values": [
+    {
+      "name": "Source-bounded front orange tile family",
+      "diffuse": [
+        0.4125426113605499,
+        0.14126329123973846,
+        0.06480326503515244,
+        1.0
+      ],
+      "Base Color": [
+        0.4125426113605499,
+        0.14126329123973846,
+        0.06480326503515244,
+        1.0
+      ],
+      "Roughness": 0.7200000286102295,
+      "Metallic": 0.0,
+      "IOR": 1.5
+    },
+    {
+      "name": "Observed front gray stone family",
+      "diffuse": [
+        0.2917706370353699,
+        0.2961382567882538,
+        0.2622506618499756,
+        1.0
+      ],
+      "Base Color": [
+        0.2917706370353699,
+        0.2961382567882538,
+        0.2622506618499756,
+        1.0
+      ],
+      "Roughness": 0.7200000286102295,
+      "Metallic": 0.0,
+      "IOR": 1.5
+    },
+    {
+      "name": "Existing front eave dark underside",
+      "diffuse": [
+        0.07421357184648514,
+        0.06480326503515244,
+        0.052860647439956665,
+        1.0
+      ],
+      "Base Color": [
+        0.07421357184648514,
+        0.06480326503515244,
+        0.052860647439956665,
+        1.0
+      ],
+      "Roughness": 0.7200000286102295,
+      "Metallic": 0.0,
+      "IOR": 1.5
+    },
+    {
+      "name": "Original genuine aperture shadows",
+      "diffuse": [
+        0.05448027700185776,
+        0.06301001459360123,
+        0.05612849071621895,
+        1.0
+      ],
+      "Base Color": [
+        0.05448027700185776,
+        0.06301001459360123,
+        0.05612849071621895,
+        1.0
+      ],
+      "Roughness": 0.7200000286102295,
+      "Metallic": 0.0,
+      "IOR": 1.5
+    },
+    {
+      "name": "UNVERIFIED ornaments roof backs walls and base",
+      "diffuse": [
+        0.4793201684951782,
+        0.4910208582878113,
+        0.4677838087081909,
+        1.0
+      ],
+      "Base Color": [
+        0.4793201684951782,
+        0.4910208582878113,
+        0.4677838087081909,
+        1.0
+      ],
+      "Roughness": 0.7200000286102295,
+      "Metallic": 0.0,
+      "IOR": 1.5
+    }
+  ],
+  "object_transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "dimensions_mm": [
+    142.0,
+    150.0,
+    36.650001525878906
+  ]
 }
