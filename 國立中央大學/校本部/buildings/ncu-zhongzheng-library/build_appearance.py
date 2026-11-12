@@ -22,6 +22,13 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
+change_reasons={}
+
+def plane_support(p,axis,value,other_bounds,normal_sign):
+ vs=[mesh.vertices[v].co for v in p.vertices]
+ return p.normal[axis]*normal_sign>.999 and all(abs(v[axis]-value)<.002 and all(lo-.002<=v[j]<=hi+.002 for j,(lo,hi) in other_bounds.items()) for v in vs)
 def near(v,t,e=.035):return abs(v-t)<e
 for p in mesh.polygons:
  x,y,z=p.center;n=p.normal;i=0
@@ -41,11 +48,24 @@ for p in mesh.polygons:
  if abs(x)<37.51 and y<-60.01 and 3<z<5.61:i=3
  # Horizontal roof/court/base and uncertain interiors cannot inherit a facade color.
  if z<=3 or (z>=39.99 and n.z>.8):i=0
+ original_indices.append(i);reason=None
+ if i==0:
+  # Existing side/rear inset infill: complete original supporting facets only.
+  # Grey-green comes from the same-building official photograph, direction inferred.
+  for axis,value,bounds,sign,label in [(0,54.5,{1:(-50,50),2:(3,36)},1,'right_inset_infill'),(1,50,{0:(-54.5,54.5),2:(3,36)},1,'rear_inset_infill')]:
+   if plane_support(p,axis,value,bounds,sign):i=2;reason='inferred_complete_'+label
+  # Exact solid outer corner walls and original fascia planes share pale colonnade.
+  for axis,value,bounds,sign,label in [(0,-62,{1:(-58,58),2:(3,40)},-1,'left_corner_and_fascia'),(0,62,{1:(-58,58),2:(3,40)},1,'right_corner_and_fascia'),(1,-58,{0:(-62,62),2:(3,40)},-1,'front_corner_and_fascia'),(1,58,{0:(-62,62),2:(3,40)},1,'rear_corner_and_fascia')]:
+   if plane_support(p,axis,value,bounds,sign):i=1;reason='inferred_complete_'+label
+  # Short end reveals of the original external colonnade cutouts, no mixed facade cutting.
+  for axis,value,bounds,sign,label in [(0,-57.5,{1:(-58,58),2:(3,36)},1,'left_end_reveal'),(0,57.5,{1:(-58,58),2:(3,36)},-1,'right_end_reveal'),(1,-52,{0:(-62,62),2:(3,36)},1,'front_end_reveal'),(1,52,{0:(-62,62),2:(3,36)},-1,'rear_end_reveal')]:
+   if plane_support(p,axis,value,bounds,sign):i=1;reason='inferred_complete_'+label
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; complete right/rear inset walls use inferred existing grey-green; left mixed wall unchanged; corner/fascia/reveal planes inferred warm white; roof/court/base and mixed surfaces remain neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-facade-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -72,9 +92,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown roof courtyard and side infill neutral; coarse screen recess is not certified glazing','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-facade-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Complete right/rear inset infill inferred grey-green; mixed left plane remains original from same-building photograph; orientation and window layout not verified. Roof/court/base and ambiguous mixed surfaces neutral. Coarse screen recess remains an opaque proxy, not certified glazing.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-195,-220,155),(0,0,21),190),'rear':((195,230,160),(0,0,21),190),'elevation':((0,-260,21),(0,0,21),190),'source-angle':((-210,-260,60),(0,0,21),190),'top':((0,0,300),(0,0,0),190)}
+views={'front':((-195,-220,155),(0,0,21),190),'rear':((195,230,160),(0,0,21),190),'elevation':((0,-260,21),(0,0,21),190),'source-angle':((-210,-260,60),(0,0,21),190),'left':((-280,0,120),(0,0,21),190),'right':((280,0,120),(0,0,21),190),'top':((0,0,300),(0,0,0),190)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

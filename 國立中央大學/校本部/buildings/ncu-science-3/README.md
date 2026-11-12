@@ -11,7 +11,7 @@
 
 ### 照片近似彩色預覽
 
-依完整正面實景與校方入口近照交叉核對：原前牆／柱／凹口粉灰、窗背暗灰綠、中央凹窗稍淺、既有排氣柱淺灰與帽灰；未知側背與屋頂中性。灰綠水平細帶無獨立原面界，省略不切面。
+新讀完整正面實景與化學系官方入口照，確認原粉灰牆柱材料家族。本輪將 236 個原中性面補為同粉灰：包括完整左右外牆、後牆，以及有完整界線的既有窗洞回面。側背色彩為材料連續性推估，沒有同角度實景佐證；原背面仍為無窗素面。屋頂、樓板底／面及未定窗凹仍中性。灰綠水平細帶無原面界，省略不切面。
 
 
 原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變；詳[來源與重建限制](APPEARANCE.md)。
@@ -59,10 +59,16 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 [STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
 
 
-以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+以上是實際彩色模型渲染；rear 的完整側背牆採粉灰材料連續性推估，不代表同角度實景或已查證現況。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 
 本發布包已直接採用canonical-edge-v2薄篩工具與結果，固定共邊插值方向，要求節點度數2、閉環及各Polygon有效，再做1 mm間距的0.8 mm XY開運算。舊版可能因共邊端點分開計算後取整而漏環，不能沿用舊面積值。這項修正不改STL、Blender或重建來源；真實薄特徵警示照常保留。
 
 另以0.2 mm間距逐層補查閉環及Polygon有效性，共 330 層通過，見[有效性報告](contour-validity-check.json)與[可攜檢查程式](check_contour_validity.py)。這項較密補查沒有做薄篩開運算；薄篩採樣間距仍是1 mm。兩者都不是正式切片、試印或全域壁厚保證。
+
+## 側背補色審核（color-v2）
+
+[左側](appearance/left.png) · [右側](appearance/right.png) · [同鏡位原正面](appearance-review-v2/original-front.png) · [同鏡位原背面](appearance-review-v2/original-rear.png) · [材料／幾何／邊界審核](appearance-review-v2/color-continuity-review.json)
+
+原 934 頂點／1880 三角面、transform、150 × 104 × 66 mm 尺寸、全部已彩面與 RGBA／roughness 不變。五組原排氣柱不增細節；原 STL／OBJ／scene、預覽及幾何 QA 不替換。保留估計尺寸、深廊與懸板支撐／橋接評估、尚未實體試印等限制。

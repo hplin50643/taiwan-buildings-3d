@@ -1,0 +1,163 @@
+{
+  "render_engine": "CYCLES",
+  "device": "CPU",
+  "samples": 96,
+  "seed": 0,
+  "denoising": false,
+  "threads": 1,
+  "resolution": [
+    900,
+    800
+  ],
+  "no_text_or_stamp": true,
+  "build_script_sha256": "04140993ed37ce2d1a79fe2c25b86a4ea212e29ad9928177acfba64235d07fd2",
+  "blend_sha256": "8b74f0c97e39e6366e6e67bda0aa9fe30c962eb324755feb061144bad0b8dee9",
+  "files": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "cf8909a703e3e7930bdd4bd30cd1837e9f280cadf35edc05a96392a74ecb34c0",
+      "camera_position": [
+        -195,
+        -220,
+        155
+      ],
+      "camera_target": [
+        0,
+        0,
+        21
+      ],
+      "ortho_scale_method": "whole model transformed bounding box projected to camera; max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "dca1cda9e83ea385b46256ae1e92edf28c845c0218897c6728baf6d9890f955f",
+      "camera_position": [
+        195,
+        230,
+        160
+      ],
+      "camera_target": [
+        0,
+        0,
+        21
+      ],
+      "ortho_scale_method": "whole model transformed bounding box projected to camera; max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "6bbd3b70055363cc30033b7ee5c2887f02928cc99c650e9c983947936403428f",
+      "camera_position": [
+        0,
+        -260,
+        21
+      ],
+      "camera_target": [
+        0,
+        0,
+        21
+      ],
+      "ortho_scale_method": "whole model transformed bounding box projected to camera; max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "ee64fd8c33d3b27bdfe84648448f844fd879ef668989f59f11833f80147ea422",
+      "camera_position": [
+        -210,
+        -260,
+        60
+      ],
+      "camera_target": [
+        0,
+        0,
+        21
+      ],
+      "ortho_scale_method": "whole model transformed bounding box projected to camera; max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "879ca42c1bf5f3e751a444b06a7b7350a8fa7505bcb4b244273dd64d9ca91bf3",
+      "camera_position": [
+        -280,
+        0,
+        120
+      ],
+      "camera_target": [
+        0,
+        0,
+        21
+      ],
+      "ortho_scale_method": "whole model transformed bounding box projected to camera; max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "d0d910cad2c1617e3510b4a47b093b00f38ca65bbb59781990f2b2108bfacbf8",
+      "camera_position": [
+        280,
+        0,
+        120
+      ],
+      "camera_target": [
+        0,
+        0,
+        21
+      ],
+      "ortho_scale_method": "whole model transformed bounding box projected to camera; max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "6e1a3a2d5a22b8aa71403e7325eefb3731909576a4cd7afde499d07c2aa4e20d",
+      "camera_position": [
+        0,
+        0,
+        300
+      ],
+      "camera_target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale_method": "whole model transformed bounding box projected to camera; max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "bf5e41d4baddb75ec1b0df043a3391040877d5cd3aacbef97119cba38f8f5945",
+      "camera_position": [
+        -195,
+        -220,
+        155
+      ],
+      "camera_target": [
+        0,
+        0,
+        21
+      ],
+      "ortho_scale_method": "identical projected model bounding-box formula",
+      "variant": "exact original face indices restored only",
+      "compared_against": "appearance/front.png"
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "dba76381128449837ece7eedbbb766a736ae74722ccd55ba5cf1e59b40651662",
+      "camera_position": [
+        195,
+        230,
+        160
+      ],
+      "camera_target": [
+        0,
+        0,
+        21
+      ],
+      "ortho_scale_method": "identical projected model bounding-box formula",
+      "variant": "exact original face indices restored only",
+      "compared_against": "appearance/rear.png"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "both_original_comparisons_match_repaired_camera_formulas_exactly": true,
+  "actual_numeric_records_compared": true,
+  "fields": [
+    "location",
+    "rotation_euler",
+    "ortho_scale",
+    "target"
+  ],
+  "method": "Original comparisons independently use literal final camera specifications and the same bounds-fitting formula. Their recorded numeric settings exactly equal actual final front/rear camera records; only material indices were restored to v1.",
+  "images": [
+    "original-front.png",
+    "original-rear.png"
+  ]
+}

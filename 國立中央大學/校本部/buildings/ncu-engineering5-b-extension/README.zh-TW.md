@@ -9,12 +9,28 @@
 | ![彩色反向斜視](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
 
 
+[左側](appearance/left.png) · [右側](appearance/right.png) · [原版深框側對照](appearance-review-v2/original-front.png) · [原版另一側對照](appearance-review-v2/original-rear.png)
+
 ### 照片近似彩色預覽
 
 依B棟2014–2015增建工程兩張完工實景：淺灰米深框、灰褐凹壁、深灰綠窗、另一長面淺灰及較深灰原遮陽／核心直柵。原簡化斜蓋淡灰藍近似，不稱精確光電板；未知平屋頂與截斷端中性。
 
 
 僅本增建條翼，不含舊AB圓入口或獨立C；照片旁亮白舊樓未套色。原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變；詳[來源與重建限制](APPEARANCE.md)。
+
+## 第二次補色：既有窗洞完整回折面
+
+本次僅將 614 個原中性三角面延續同一構件的既有外牆色：深框側 32 個窗洞的左右窗洞側壁、上緣、窗台 256 面沿用灰褐；另一長側 40 個窗洞 320 面與核心直柵凹口 38 面沿用淺灰。既有窗背、框格、遮陽及直柵材質均不改。這些是原模型已構造的窗洞壁面，不是新造窗戶，也不是把建築人工平截面冒充真實背牆。
+
+兩張工程實照已重新讀取。實照支持相鄰牆的材質家族；每個隱藏窗台／上緣的色澤仍屬同構件連續性推估，不聲稱逐面測量。原有 1,640 個非中性色面及全部七個材質的 RGBA、roughness 保留；1,099 頂點、2,338 三角面、transform 與約 150 × 63 × 67.8 mm 尺寸完全不變。
+
+仍保留中性的 84 面：人工底座 28、未知平屋頂 8、兩個人工／未明窄端 4、核心高低差側面 34、簡化斜蓋邊緣及底面 10。核心側面跨越灰褐與淺灰外牆，原網格沒有足夠材料分界，本次不替它假造分界。斜蓋也不據外觀假定為精確光電模組。
+
+七張本次彩色圖：深框斜視、另一側斜視、正面、來源角、左、右、上視。另附兩張與新版完全相同相機及光線的原色面配置對照。均以 Cycles CPU、96 samples、單執行緒、停用降噪、900 × 800 渲染，不含文字浮水印與 PNG 文字 metadata。相機名稱只是模型座標視角，並非地理方位。
+
+詳細證據見 [逐面邊界審核](appearance-review-v2/boundary-continuity-audit.json)、[幾何與 3MF 核對](appearance-review-v2/model-verification.json)、[來源紀錄](appearance-review-v2/source-register.json)、[九張圖檢視](appearance-review-v2/color-continuity-review.json) 與 [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。舊 appearance-review 為第一版歷史，本次以 appearance-review-v2 及 appearance-freeze.json 為準。原首頁／校級代表圖、previews、STL、OBJ、scene 與建模來源不變。
+
+原照片拍攝日期不明，不聲稱 2026 全棟現況。原估計尺寸、深框與遮陽支撐／薄特徵限制、未正式切片與未實體試印等限制仍適用。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 63 × 67.8 mm。
 
@@ -59,7 +75,7 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 [STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
 
 
-以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+以上為模型渲染。兩個長側有工程照片，但窄端及相接舊樓截斷面仍未明；rear 相機不等於地理背面，也沒有同相機逐點實景配準。
 
 ## 截面數值方法修訂與補查
 

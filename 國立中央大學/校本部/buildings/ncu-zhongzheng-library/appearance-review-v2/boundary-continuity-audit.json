@@ -1,0 +1,3389 @@
+{
+  "status": "passed",
+  "classification": "Exact original complete supporting planes, all vertices and 21 barycentric samples within each bounded material domain. Existing original colors retained, no centroid cuts or new mesh subdivisions.",
+  "changed_faces": 36,
+  "changed_reason_counts": {
+    "inferred_complete_left_corner_and_fascia": 4,
+    "inferred_complete_front_corner_and_fascia": 4,
+    "inferred_complete_rear_corner_and_fascia": 4,
+    "inferred_complete_right_corner_and_fascia": 4,
+    "inferred_complete_left_end_reveal": 4,
+    "inferred_complete_right_end_reveal": 4,
+    "inferred_complete_rear_inset_infill": 2,
+    "inferred_complete_front_end_reveal": 4,
+    "inferred_complete_rear_end_reveal": 4,
+    "inferred_complete_right_inset_infill": 2
+  },
+  "complete_plane_checks": [
+    {
+      "name": "right_inset_infill",
+      "axis": 0,
+      "supporting_plane": 54.5,
+      "normal_sign": 1,
+      "other_axis_bounds": {
+        "1": [
+          -50,
+          50
+        ],
+        "2": [
+          3,
+          36
+        ]
+      },
+      "material_index": 2,
+      "face_indices": [
+        1355,
+        1429
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    },
+    {
+      "name": "rear_inset_infill",
+      "axis": 1,
+      "supporting_plane": 50,
+      "normal_sign": 1,
+      "other_axis_bounds": {
+        "0": [
+          -54.5,
+          54.5
+        ],
+        "2": [
+          3,
+          36
+        ]
+      },
+      "material_index": 2,
+      "face_indices": [
+        856,
+        884
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    },
+    {
+      "name": "left_corner_and_fascia",
+      "axis": 0,
+      "supporting_plane": -62,
+      "normal_sign": -1,
+      "other_axis_bounds": {
+        "1": [
+          -58,
+          58
+        ],
+        "2": [
+          3,
+          40
+        ]
+      },
+      "material_index": 1,
+      "face_indices": [
+        124,
+        126,
+        139,
+        157,
+        159,
+        160
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    },
+    {
+      "name": "right_corner_and_fascia",
+      "axis": 0,
+      "supporting_plane": 62,
+      "normal_sign": 1,
+      "other_axis_bounds": {
+        "1": [
+          -58,
+          58
+        ],
+        "2": [
+          3,
+          40
+        ]
+      },
+      "material_index": 1,
+      "face_indices": [
+        181,
+        194,
+        202,
+        204,
+        222,
+        224
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    },
+    {
+      "name": "front_corner_and_fascia",
+      "axis": 1,
+      "supporting_plane": -58,
+      "normal_sign": -1,
+      "other_axis_bounds": {
+        "0": [
+          -62,
+          62
+        ],
+        "2": [
+          3,
+          40
+        ]
+      },
+      "material_index": 1,
+      "face_indices": [
+        125,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        180,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    },
+    {
+      "name": "rear_corner_and_fascia",
+      "axis": 1,
+      "supporting_plane": 58,
+      "normal_sign": 1,
+      "other_axis_bounds": {
+        "0": [
+          -62,
+          62
+        ],
+        "2": [
+          3,
+          40
+        ]
+      },
+      "material_index": 1,
+      "face_indices": [
+        158,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        203,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        223,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    },
+    {
+      "name": "left_end_reveal",
+      "axis": 0,
+      "supporting_plane": -57.5,
+      "normal_sign": 1,
+      "other_axis_bounds": {
+        "1": [
+          -58,
+          58
+        ],
+        "2": [
+          3,
+          36
+        ]
+      },
+      "material_index": 1,
+      "face_indices": [
+        264,
+        322,
+        830,
+        844
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    },
+    {
+      "name": "right_end_reveal",
+      "axis": 0,
+      "supporting_plane": 57.5,
+      "normal_sign": -1,
+      "other_axis_bounds": {
+        "1": [
+          -58,
+          58
+        ],
+        "2": [
+          3,
+          36
+        ]
+      },
+      "material_index": 1,
+      "face_indices": [
+        504,
+        585,
+        899,
+        918
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    },
+    {
+      "name": "front_end_reveal",
+      "axis": 1,
+      "supporting_plane": -52,
+      "normal_sign": 1,
+      "other_axis_bounds": {
+        "0": [
+          -62,
+          62
+        ],
+        "2": [
+          3,
+          36
+        ]
+      },
+      "material_index": 1,
+      "face_indices": [
+        1122,
+        1157,
+        1335,
+        1356
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    },
+    {
+      "name": "rear_end_reveal",
+      "axis": 1,
+      "supporting_plane": 52,
+      "normal_sign": -1,
+      "other_axis_bounds": {
+        "0": [
+          -62,
+          62
+        ],
+        "2": [
+          3,
+          36
+        ]
+      },
+      "material_index": 1,
+      "face_indices": [
+        1217,
+        1241,
+        1428,
+        1444
+      ],
+      "all_vertices_and_21_barycentric_samples_verified": true
+    }
+  ],
+  "remaining_neutral_counts": {
+    "artificial_base_and_courtyard_ground": 358,
+    "unsegmented_court_wall_extends_into_roof_edge_unknown_finish": 8,
+    "canopy_soffit_kept_neutral_no_new_horizontal_finish": 263,
+    "left_infill_with_front_screen_intersection_unsegmented_mixed_material": 10,
+    "screen_cut_overshoot_at_canopy_mixed_material_no_boundary": 81,
+    "parapet_underside_finish_unknown": 8,
+    "horizontal_roof_top_finish_unknown": 8,
+    "original_clock_upper_rim_neutral_preserved": 20
+  },
+  "remaining_neutral_faces": [
+    {
+      "face_index": 0,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 2,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 3,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 4,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 5,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 6,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 7,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 8,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 9,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 10,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 11,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 12,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 13,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 14,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 15,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 16,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 17,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 18,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 19,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 20,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 21,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 22,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 23,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 24,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 25,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 26,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 27,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 28,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 29,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 30,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 31,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 32,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 33,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 34,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 35,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 36,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 37,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 38,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 39,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 40,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 41,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 42,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 43,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 44,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 45,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 46,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 47,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 48,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 49,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 50,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 51,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 52,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 53,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 54,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 55,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 56,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 57,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 58,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 59,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 60,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 61,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 62,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 63,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 64,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 65,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 66,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 67,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 68,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 69,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 70,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 71,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 72,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 73,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 74,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 75,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 76,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 77,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 78,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 79,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 80,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 81,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 82,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 83,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 84,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 85,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 86,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 87,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 88,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 89,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 90,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 91,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 92,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 93,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 94,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 95,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 96,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 97,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 98,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 99,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 100,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 101,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 102,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 103,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 104,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 105,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 106,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 107,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 108,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 109,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 110,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 111,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 112,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 113,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 114,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 115,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 116,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 117,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 118,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 119,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 120,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 121,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 122,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 123,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 236,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 237,
+      "reason": "unsegmented_court_wall_extends_into_roof_edge_unknown_finish"
+    },
+    {
+      "face_index": 238,
+      "reason": "unsegmented_court_wall_extends_into_roof_edge_unknown_finish"
+    },
+    {
+      "face_index": 239,
+      "reason": "unsegmented_court_wall_extends_into_roof_edge_unknown_finish"
+    },
+    {
+      "face_index": 240,
+      "reason": "unsegmented_court_wall_extends_into_roof_edge_unknown_finish"
+    },
+    {
+      "face_index": 241,
+      "reason": "unsegmented_court_wall_extends_into_roof_edge_unknown_finish"
+    },
+    {
+      "face_index": 242,
+      "reason": "unsegmented_court_wall_extends_into_roof_edge_unknown_finish"
+    },
+    {
+      "face_index": 243,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 244,
+      "reason": "unsegmented_court_wall_extends_into_roof_edge_unknown_finish"
+    },
+    {
+      "face_index": 245,
+      "reason": "unsegmented_court_wall_extends_into_roof_edge_unknown_finish"
+    },
+    {
+      "face_index": 246,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 247,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 248,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 249,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 250,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 251,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 252,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 253,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 254,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 255,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 256,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 257,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 274,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 275,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 276,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 277,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 285,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 286,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 287,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 288,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 289,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 290,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 337,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 338,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 339,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 340,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 341,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 342,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 343,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 344,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 346,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 347,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 348,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 349,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 351,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 352,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 353,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 354,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 390,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 391,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 392,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 395,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 396,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 397,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 398,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 399,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 400,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 403,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 404,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 405,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 406,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 407,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 408,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 409,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 410,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 411,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 412,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 415,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 416,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 417,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 418,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 419,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 421,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 422,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 424,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 425,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 426,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 427,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 428,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 429,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 430,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 431,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 432,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 434,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 435,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 436,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 437,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 439,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 440,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 441,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 442,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 443,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 444,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 445,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 446,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 475,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 476,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 477,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 478,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 479,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 480,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 481,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 482,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 483,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 484,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 485,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 491,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 492,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 493,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 494,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 539,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 540,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 541,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 542,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 545,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 546,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 547,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 548,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 549,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 550,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 551,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 553,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 554,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 555,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 556,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 557,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 559,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 560,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 561,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 562,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 563,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 566,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 567,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 568,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 569,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 570,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 586,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 587,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 588,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 591,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 592,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 593,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 594,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 595,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 597,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 598,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 600,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 601,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 602,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 603,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 604,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 605,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 821,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 822,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 823,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 824,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 825,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 826,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 827,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 828,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 829,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 831,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 832,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 833,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 834,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 835,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 836,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 837,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 838,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 839,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 840,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 841,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 842,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 843,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 845,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 846,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 847,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 848,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 849,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 850,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 851,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 852,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 853,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 854,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 855,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 857,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 858,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 859,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 860,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 861,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 862,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 863,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 864,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 865,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 866,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 867,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 868,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 869,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 870,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 871,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 872,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 873,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 874,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 875,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 876,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 877,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 878,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 879,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 880,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 881,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 882,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 883,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 885,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 886,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 887,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 888,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 889,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 890,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 891,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 892,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 893,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 894,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 895,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 896,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 897,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 898,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 900,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 901,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 902,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 903,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 904,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 905,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 906,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 907,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 908,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 909,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 910,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 911,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 912,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 913,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 914,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 915,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 916,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 917,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 919,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 920,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 921,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 922,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 923,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 924,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 925,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 926,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 927,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 928,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 929,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 930,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1107,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1108,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1109,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1110,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1111,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1112,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1113,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1114,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1115,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1116,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1117,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1118,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1119,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1120,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1121,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1125,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1126,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1127,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1128,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1129,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1130,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1131,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1132,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1133,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1134,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1135,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1136,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1137,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1138,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1139,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1140,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1141,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1142,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1143,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1144,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1145,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1146,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1147,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1148,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1149,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1150,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1151,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1152,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1153,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1154,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1155,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1156,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1162,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1163,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1164,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1165,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1166,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1167,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1168,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1169,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1170,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1171,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1172,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1173,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1174,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1175,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1176,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1177,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1178,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1179,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1180,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1181,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1182,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1183,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1184,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1185,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1186,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1187,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1188,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1189,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1190,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1191,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1192,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1193,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1194,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1195,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1196,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1197,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1198,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1199,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1200,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1201,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1202,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1203,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1204,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1205,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1206,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1207,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1208,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1209,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1210,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1211,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1212,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1213,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1214,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1215,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1216,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1218,
+      "reason": "left_infill_with_front_screen_intersection_unsegmented_mixed_material"
+    },
+    {
+      "face_index": 1219,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1220,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1221,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1222,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1223,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1224,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1225,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1226,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1227,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1228,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1229,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1230,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1231,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1232,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1233,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1234,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1235,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1236,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1237,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1238,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1239,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1240,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1242,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1243,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1244,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1245,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1246,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1247,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1248,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1249,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1250,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1251,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1252,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1253,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1326,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1327,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1328,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1329,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1330,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1331,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1332,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1333,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1334,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1336,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1337,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1338,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1339,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1340,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1341,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1342,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1343,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1344,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1345,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1346,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1347,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1348,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1349,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1350,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1351,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1352,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1353,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1354,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1357,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1358,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1359,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1360,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1361,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1362,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1363,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1364,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1365,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1366,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1367,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1368,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1369,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1370,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1371,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1372,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1373,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1374,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1375,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1376,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1377,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1378,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1379,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1380,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1381,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1382,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1383,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1384,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1385,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1386,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1387,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1388,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1389,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1390,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1391,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1392,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1393,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1394,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1395,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1396,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1397,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1398,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1399,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1400,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1401,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1402,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1403,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1404,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1405,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1406,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1407,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1408,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1409,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1410,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1411,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1412,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1413,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1414,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1415,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1416,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1417,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1418,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1419,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1420,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1421,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1422,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1423,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1424,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1425,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1426,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1427,
+      "reason": "artificial_base_and_courtyard_ground"
+    },
+    {
+      "face_index": 1430,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1431,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1432,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1433,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1434,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1435,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1436,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1437,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1438,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1439,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1440,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1441,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1442,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1443,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1445,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1446,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1447,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1448,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1449,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1450,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1451,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1452,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1453,
+      "reason": "canopy_soffit_kept_neutral_no_new_horizontal_finish"
+    },
+    {
+      "face_index": 1554,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1555,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1556,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1557,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1558,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1563,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1564,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1565,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1566,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1603,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1604,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1607,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1608,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1609,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1610,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1611,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1612,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1648,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1649,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1651,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1652,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1653,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1654,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1657,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1658,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1694,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1695,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1696,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1697,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1701,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1702,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1703,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1704,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1739,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1740,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1745,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1746,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1747,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1748,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1749,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1750,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1783,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1784,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1790,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1791,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1792,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1793,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1795,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1796,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1834,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1835,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1836,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1837,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1839,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1840,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1841,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1842,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1878,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1879,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1881,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1882,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1883,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1884,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1887,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1888,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1924,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1925,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1927,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1928,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1929,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1930,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1933,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1934,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1970,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1971,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1972,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1973,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1977,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1978,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1979,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1980,
+      "reason": "screen_cut_overshoot_at_canopy_mixed_material_no_boundary"
+    },
+    {
+      "face_index": 1981,
+      "reason": "parapet_underside_finish_unknown"
+    },
+    {
+      "face_index": 1983,
+      "reason": "horizontal_roof_top_finish_unknown"
+    },
+    {
+      "face_index": 1984,
+      "reason": "parapet_underside_finish_unknown"
+    },
+    {
+      "face_index": 1986,
+      "reason": "horizontal_roof_top_finish_unknown"
+    },
+    {
+      "face_index": 1988,
+      "reason": "parapet_underside_finish_unknown"
+    },
+    {
+      "face_index": 1989,
+      "reason": "horizontal_roof_top_finish_unknown"
+    },
+    {
+      "face_index": 1990,
+      "reason": "horizontal_roof_top_finish_unknown"
+    },
+    {
+      "face_index": 1991,
+      "reason": "parapet_underside_finish_unknown"
+    },
+    {
+      "face_index": 1993,
+      "reason": "parapet_underside_finish_unknown"
+    },
+    {
+      "face_index": 1995,
+      "reason": "horizontal_roof_top_finish_unknown"
+    },
+    {
+      "face_index": 1996,
+      "reason": "horizontal_roof_top_finish_unknown"
+    },
+    {
+      "face_index": 1997,
+      "reason": "parapet_underside_finish_unknown"
+    },
+    {
+      "face_index": 1999,
+      "reason": "horizontal_roof_top_finish_unknown"
+    },
+    {
+      "face_index": 2000,
+      "reason": "parapet_underside_finish_unknown"
+    },
+    {
+      "face_index": 2002,
+      "reason": "horizontal_roof_top_finish_unknown"
+    },
+    {
+      "face_index": 2003,
+      "reason": "parapet_underside_finish_unknown"
+    },
+    {
+      "face_index": 2087,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2089,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2090,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2091,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2092,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2093,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2094,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2095,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2096,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2097,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2182,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2183,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2184,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2185,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2186,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2187,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2188,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2189,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2190,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    },
+    {
+      "face_index": 2193,
+      "reason": "original_clock_upper_rim_neutral_preserved"
+    }
+  ],
+  "material_json_sha256": "96ee59d4d035fc32c02cf4c3b2a84b8a5ff0a19f8fd2fca48af1148551127565",
+  "limitations": "Green photo has no verified orientation. Full side/rear infill continuity is inference, not exact side-specific photographic matching. Model omits windows; none added."
+}

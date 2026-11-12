@@ -21,7 +21,7 @@ def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
-indices=[]
+indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
 def boxed(p,x0,x1,y0,y1,z0,z1):
  return all(x0-.015<=mesh.vertices[v].co.x<=x1+.015 and y0-.015<=mesh.vertices[v].co.y<=y1+.015 and z0-.015<=mesh.vertices[v].co.z<=z1+.015 for v in p.vertices)
@@ -51,11 +51,33 @@ for p in mesh.polygons:
  for k in range(3):
   if boxed(p,-20.5,4.5,-36.85+k*1.4,-35.15+k*1.4,2.8,2.8+.7*(k+1)):i=8
  if z<=3:i=0
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+# Complete only the original narrow clerestory solid-wall reveals.
+# These are not the opaque dark backing; all three vertices must lie on one
+# exact original opening support plane and inside that opening volume.
+# The official front photo shows pale tiled surrounds. Hidden reveal finish is
+# inferred by same-host continuity, not claimed to have a close-up survey.
+EPS=.003
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=[mesh.vertices[v].co for v in p.vertices];n=p.normal;reason=None
+ for xx,h in modules:
+  for zz in range(8,h-4,10):
+   if xx==-8 and zz<65:continue
+   x0,x1,y0,y1,z0,z1=xx-6.5,xx+6.5,-17.5,-16,zz-2,zz-.5
+   within=all(x0-EPS<=v.x<=x1+EPS and y0-EPS<=v.y<=y1+EPS and z0-EPS<=v.z<=z1+EPS for v in q)
+   if not within:continue
+   on=lambda axis,value:all(abs(v[axis]-value)<EPS for v in q)
+   surface=((on(0,x0) and n.x>.999) or (on(0,x1) and n.x<-.999) or (on(2,z0) and n.z>.999) or (on(2,z1) and n.z<-.999))
+   if surface:
+    reason={'family':'pale_clerestory_solid_wall_reveals','module_x':xx,'screen_base_z':zz,'basis':'Whole original opening bounds and exact reveal plane; same pale exterior tiled-host finish inferred on hidden returns. Dark slot backs and existing colored frames unchanged.'}
+ if reason:
+  p.material_index=1;indices[p.index]=1;changed_faces.append(p.index);change_reasons[str(p.index)]=reason
+
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and colors preserved; same-host pale narrow-opening reveals inferred; artificial cuts and mixed canopy surfaces neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-clerestory-reveals'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -70,6 +92,7 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -85,15 +108,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown cut rear sides roofs deep canyon neutral; original three-panel recesses represent opaque screens not glazing; no added grid seams arch spokes or tiny pier arches','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-clerestory-reveals','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Pale original narrow-opening reveals inferred from tiled exterior host; existing dark backing unchanged. Artificial rear/side cuts, roofs, coarse front blanks, deep canyon, and mixed green-glass/red-frame canopy return surfaces remain neutral. Original three-panel recesses are opaque screen proxies; no added seams, spokes, holes, text, or arches.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-195,-300,175),(0,0,61.4),235),'rear':((195,300,175),(0,0,61.4),235),'elevation':((0,-340,61.4),(0,0,61.4),235),'source-angle':((-20,-340,80),(0,0,61.4),235),'top':((0,0,360),(0,0,0),235)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-195,-300,175),(0,0,61.4),235),'rear':((195,300,175),(0,0,61.4),235),'elevation':((0,-340,61.4),(0,0,61.4),235),'source-angle':((-20,-340,80),(0,0,61.4),235),'left':((-340,0,155),(0,0,61.4),235),'right':((340,0,155),(0,0,61.4),235),'top':((0,0,360),(0,0,0),235)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -102,4 +126,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

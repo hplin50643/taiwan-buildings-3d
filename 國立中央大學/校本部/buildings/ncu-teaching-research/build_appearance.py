@@ -21,7 +21,7 @@ def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
-indices=[]
+indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
 def boxed(p,x0,x1,y0,y1,z0,z1):
  return all(x0-.015<=mesh.vertices[v].co.x<=x1+.015 and y0-.015<=mesh.vertices[v].co.y<=y1+.015 and z0-.015<=mesh.vertices[v].co.z<=z1+.015 for v in p.vertices)
@@ -63,11 +63,50 @@ for p in mesh.polygons:
  for side in [-1,1]:
   if near(x,side*26.5,.015) and nx*side<-.8 and any(abs(y-yy)<5.01 for yy in [-46,-32,-18,-4,10,24]) and any(zz-.01<z<zz+6.01 for zz in [9,21,33,45]):i=2
  if z<=3:i=0
+ original_indices.append(i);reason=None
+ # New v2 rules use all vertices, never triangle centroid, and original support
+ # planes/constructive bounds. Original nonzero material assignments are locked.
+ q=[mesh.vertices[v].co for v in p.vertices]
+ def plane(axis,value):return all(abs(v[axis]-value)<.015 for v in q)
+ if i==0 and min(v.z for v in q)>=3-.015 and max(v.z for v in q)>3.015:
+  # Left facade is the same original two-wing wall family as colored right.
+  # Missing narrow real metal spandrel divisions stay omitted, as in v1 right.
+  if plane(0,-53) and boxed(p,-53,-53,-59,59,3,63):
+   i=1;reason='inferred_pale_complete_left_outer_wall_same_family_as_right'
+  # Official reverse aerial shows a genuine large rear opening absent from
+  # the original model. Lower two giant closure triangles stay neutral. Only
+  # the independently bounded original overhead beam support is continued.
+  if plane(1,59) and boxed(p,-53,53,59,59,54,63):
+   i=1;reason='source_supported_pale_rear_overhead_beam_complete_support'
+  # Entire existing left exterior aperture backs mirror the original right.
+  for zz in [8,20,32,44,54]:
+   if i==0 and plane(0,-51.5) and boxed(p,-51.5,-51.5,-53,53,zz,zz+6.6):
+    i=2;reason='inferred_opaque_left_existing_long_window_back'
+  # Existing left mullion blocks, all exposed faces together, match right.
+  for zz in [8,20,32,44,54]:
+   for yy in range(-49,50,7):
+    if i==0 and boxed(p,-55,-51,yy-.5,yy+.5,zz,zz+6.6):
+     i=3;reason='inferred_pale_left_existing_mullion_complete_block'
+  # Both outer long-window reveals bounded by real original cuts.
+  for side in [-1,1]:
+   lo,hi=sorted([side*51.5,side*53])
+   for zz in [8,20,32,44,54]:
+    if i==0 and boxed(p,lo,hi,-53,53,zz,zz+6.6) and (plane(1,-53) or plane(1,53) or plane(2,zz) or plane(2,zz+6.6)):
+     i=1;reason='inferred_pale_existing_outer_window_reveal'
+  # Inward windows: complete original reveal supports only, never terrace cut
+  # walls or round/rectangular intersections extending outside these boxes.
+  for side in [-1,1]:
+   lo,hi=sorted([side*25,side*26.5])
+   for yy in [-46,-32,-18,-4,10,24]:
+    for zz in [9,21,33,45]:
+     if i==0 and boxed(p,lo,hi,yy-5,yy+5,zz,zz+6) and (plane(1,yy-5) or plane(1,yy+5) or plane(2,zz) or plane(2,zz+6)):
+      i=1;reason='inferred_pale_existing_courtyard_window_reveal'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry, existing colors and RGBA/roughness preserved; same-family inference on complete left wall and window supports; official rear beam supported; artificial lower rear closure neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -94,9 +133,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown left exterior far rear broad roofs neutral; no adjacent auditorium colors or nighttime yellow lighting; missing metal spandrel boundaries omitted not subdivided; terrace only exact existing floor','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Left exterior pale family and existing windows inferred from right. Official reverse aerial supports pale rear overhead beam; lower rear artificial closure remains neutral because actual opening is absent in original mesh. Missing openings and metal spandrel divisions not added. Broad roof, plant blocks, artificial terrace cuts remain neutral. Round lecture band and terrace original colored boundaries preserved; adjacent auditorium excluded.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((195,-260,145),(0,0,34.5),220),'rear':((-195,260,145),(0,0,34.5),220),'elevation':((0,-300,34.5),(0,0,34.5),220),'source-angle':((260,-180,130),(0,0,34.5),220),'top':((0,0,330),(0,0,0),220)}
+views={'front':((195,-260,145),(0,0,34.5),220),'rear':((-195,260,145),(0,0,34.5),220),'elevation':((0,-300,34.5),(0,0,34.5),220),'source-angle':((260,-180,130),(0,0,34.5),220),'left':((-330,0,145),(0,0,34.5),220),'right':((330,0,145),(0,0,34.5),220),'top':((0,0,330),(0,0,0),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

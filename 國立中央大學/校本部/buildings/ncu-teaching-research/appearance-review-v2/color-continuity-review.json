@@ -1,0 +1,131 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T21:13:57.535881+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "a3facc89f3c2d18ed94925c6471cd95c3cf241729b9fa31d4e235a73d37eea76",
+      "size_bytes": 873448,
+      "dimensions": [
+        900,
+        800
+      ],
+      "personally_viewed_full_image": true,
+      "observations": "Full model visible. Original pale front and right facade, grey-green windows, round lecture warm wall/window band and tan terrace preserved. Added pale returns do not cross round/terrace original boundaries."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "9d92a8bc4c30fc28966f6a71f7edd28d1c44b02173766a6de5a2f11eb9f0cd20",
+      "size_bytes": 851659,
+      "dimensions": [
+        900,
+        800
+      ],
+      "personally_viewed_full_image": true,
+      "observations": "Left windows and complete mullions now continue the original right family. Rear six upper beam faces are pale; two giant lower closure triangles remain evenly neutral with their horizontal original boundary. No false diagonal material split; this is an acknowledged original geometry defect."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "b2e8a375bf8a190902bccaabedc35a6cc563bd7ea5e104730850945e81d683d4",
+      "size_bytes": 864756,
+      "dimensions": [
+        900,
+        800
+      ],
+      "personally_viewed_full_image": true,
+      "observations": "Front opening, courtyard windows, original stairs, round lecture and terrace remain the original geometry and colors. No added objects, lettering or material diagonal."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "2ec7b5150452aeebbae96c88ca8454a2600c815f8a12c3d0f6d668b38d16021f",
+      "size_bytes": 860933,
+      "dimensions": [
+        900,
+        800
+      ],
+      "personally_viewed_full_image": true,
+      "observations": "Original right window rhythm and round lecture features retained. Reveals continue pale family on complete cut surfaces; roof/plant boxes remain neutral."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "ae4219768a70cd2a3dfec4185530842a8071c98c01ec2bfea7e46dcfe66d5049",
+      "size_bytes": 887256,
+      "dimensions": [
+        900,
+        800
+      ],
+      "personally_viewed_full_image": true,
+      "observations": "Complete left outer wall and all original long-window backs/mullion faces carry same-family colors. No grey unclassified outer-wall patches or centroid-driven spandrel bands."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "33dc2333c9031889ba09b4dce5b0f2e54220f4a7c2166c2063b33153fc0d8a2e",
+      "size_bytes": 873091,
+      "dimensions": [
+        900,
+        800
+      ],
+      "personally_viewed_full_image": true,
+      "observations": "Original colored right wall/window/mullion assignments preserved; new pale returns are confined to original aperture surfaces."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "d9b1150695e47dffb2da252ca6a47d3eee52320aae081ace12b75e30317dda16",
+      "size_bytes": 863874,
+      "dimensions": [
+        900,
+        800
+      ],
+      "personally_viewed_full_image": true,
+      "observations": "Broad roof and approximate plant stay neutral; two original roof-well floors retain metal proxy. Original tan terrace floor and round rim intact, artificial square-cut walls remain neutral."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "cbeba3597be6e4c8cefbfa8a5f066322aa1f12ebe4294b4fda94a7f3799b6d59",
+      "size_bytes": 873649,
+      "dimensions": [
+        900,
+        800
+      ],
+      "personally_viewed_full_image": true,
+      "observations": "Same front camera and lighting as revised front. Original colors retained; differences limited to originally neutral reveal faces."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "f1a96255dc47c04ebe1b665702d0f1c7cb818c9bb4e0501b132fa517f3f5d7f3",
+      "size_bytes": 832730,
+      "dimensions": [
+        900,
+        800
+      ],
+      "personally_viewed_full_image": true,
+      "observations": "Same rear camera and lighting as revised rear. Clearly shows original entire left wall/window/mullion assembly neutral and rear neutral; revised fixes left family and only bounded rear upper beam."
+    }
+  ],
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "seed": 0,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "source_reference_images_personally_viewed": [
+    "009.jpg",
+    "010.jpg",
+    "014.jpg",
+    "official-003.jpg",
+    "official-courtyard.jpg"
+  ],
+  "findings": [
+    "2620 originally neutral triangles colored; 4118 originally colored triangles and palette values preserved.",
+    "224 neutral triangles all classified. Official rear evidence identifies a geometry defect, not a license to paint a fake facade.",
+    "Exact all-vertex support and independent barycentric audit prevents new diagonal material borders; no geometry split or invented windows.",
+    "Images show the model, not photographic reconstruction. Full actual geometry remains simplified; no physical trial print."
+  ]
+}

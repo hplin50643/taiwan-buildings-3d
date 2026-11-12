@@ -1,0 +1,84 @@
+{
+  "geometry_unchanged": true,
+  "blend_original_vs_repaired_point_by_point_and_face_by_face": true,
+  "original_3mf_material_assignments_match_original_blend": true,
+  "all_previously_colored_faces_unchanged": true,
+  "all_original_material_rgba_roughness_unchanged": true,
+  "changed_originally_neutral_faces": 32,
+  "changed_face_indices": [
+    80,
+    185,
+    186,
+    187,
+    188,
+    358,
+    388,
+    389,
+    390,
+    391,
+    392,
+    442,
+    492,
+    500,
+    518,
+    521,
+    524,
+    557,
+    569,
+    570,
+    574,
+    594,
+    634,
+    2322,
+    2323,
+    2331,
+    2332,
+    2333,
+    2639,
+    2641,
+    2642,
+    2643
+  ],
+  "vertices": 5977,
+  "triangles": 11966,
+  "geometry": {
+    "vertices": "81a80b5881f848cc197ee1654d45ef61a77e9f45dc01d6a3ba9b68012062bd3f",
+    "faces": "27ed6907aa594850aaa985b5d852324bbb93b92f985d66ea81ff5c738cd51b55"
+  },
+  "dimensions_mm": [
+    150.0,
+    143.0,
+    105.45911407470703
+  ],
+  "transform_unchanged": true,
+  "three_mf_matches_blend_point_by_point_face_by_face": true,
+  "three_mf_original_vertices_connectivity_palette_preserved": true,
+  "text_objects": 0,
+  "render_stamp_disabled": true,
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "denoising": false,
+    "threads": 1,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "material_face_counts": {
+    "0": 742,
+    "1": 495,
+    "3": 92,
+    "2": 979,
+    "4": 80,
+    "5": 90,
+    "6": 184,
+    "7": 9304
+  },
+  "limitations": [
+    "Inferred side/rear material continuity, not four-side photo verification.",
+    "Original complete approximate envelope recolored without invented rear windows. Broad roofs, base and unresolved mixed window-frame/recess faces remain neutral.",
+    "Unmeasured photographic approximation; no physical print test."
+  ]
+}

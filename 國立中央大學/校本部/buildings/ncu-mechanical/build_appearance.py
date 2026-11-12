@@ -21,7 +21,7 @@ def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
-indices=[]
+indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
 def boxed(p,x0,x1,y0,y1,z0,z1):
  return all(x0-.015<=mesh.vertices[v].co.x<=x1+.015 and y0-.015<=mesh.vertices[v].co.y<=y1+.015 and z0-.015<=mesh.vertices[v].co.z<=z1+.015 for v in p.vertices)
@@ -58,11 +58,62 @@ for p in mesh.polygons:
  for k in range(3):
   if boxed(p,-39,29,-36.85+k*1.4,-35.15+k*1.4,2.8,2.8+.7*(k+1)):i=6
  if z<=3:i=0
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+# V2 exact-support material continuity. Only originally neutral faces may change.
+# Right x=65 side merges observed distinct materials and stays neutral.
+# Left x=-65 is a whole core-dominated support plane: new photos support ochre
+# core faces, and the unresolved 1.5mm far-back overlap is explicitly inferred
+# continuous ochre, without inventing a tiny pale strip or diagonal seam.
+EPS=.002
+def plane(p,axis,value):return all(abs(mesh.vertices[j].co[axis]-value)<EPS for j in p.vertices)
+def bounds(p,a,b):return all(all(a[k]-EPS<=mesh.vertices[j].co[k]<=b[k]+EPS for k in range(3)) for j in p.vertices)
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ n=p.normal;i=0;reason=None
+ if plane(p,0,-65) and n.x<-.99 and bounds(p,(-65,-45,3),(-65,46.5,79.8)):
+  i=2;reason='inferred_ochre_complete_core_outer_plane_unresolved_rear_overlap'
+ # Fresh Commons and NCU public-art images show ochre on the tall left core.
+ # Main front and courtyard-side supports are whole existing planes; back upper
+ # return is continuous same-component inference. No omitted slots are drawn.
+ if (plane(p,1,-45) and n.y<-.99 and bounds(p,(-65,-45,3),(-47,-45,79.8))) or (plane(p,0,-47) and n.x>.99 and bounds(p,(-47,-45,3),(-47,45,79.8))):
+  i=2;reason='photo_supported_ochre_complete_left_core_front_courtyard_supports'
+ if plane(p,1,45) and n.y>.99 and bounds(p,(-65,45,70.8),(-47,45,79.8)):
+  i=2;reason='inferred_ochre_left_core_upper_back_return'
+ # Broad rear is the external wall of the original full main rear volume, NOT
+ # an artificial cut plane. Its plain geometry is retained: no windows added.
+ if plane(p,1,46.5) and n.y>.99 and bounds(p,(-65,46.5,3),(65,46.5,70.8)):
+  i=1;reason='inferred_near_white_main_volume_complete_rear_wall'
+ # Separate exact end/short-return planes of the near-white main bar and body.
+ if plane(p,0,35.5) and n.x>.99 and bounds(p,(35.5,-12.5,60),(35.5,16.5,71)):
+  i=1;reason='inferred_near_white_main_bar_complete_end'
+ if plane(p,1,16.5) and n.y>.99 and bounds(p,(-47,16.5,70.8),(35.5,16.5,71)):
+  i=1;reason='inferred_near_white_main_bar_short_back_fascia'
+ if plane(p,1,9.5) and n.y<-.99 and (bounds(p,(35.5,9.5,60),(65,9.5,70.8)) or bounds(p,(62.5,9.5,26.8),(65,9.5,38))):
+  i=1;reason='inferred_near_white_main_body_front_returns'
+ if plane(p,0,62.5) and n.x>.99 and bounds(p,(62.5,-47,26.8),(62.5,9.5,38)):
+  i=1;reason='inferred_near_white_intermediate_support_room_outer_side'
+ # Existing main-window returns: no altered colored glass, no new window planes.
+ # The leftmost window intersects the core: leave its unsupported cut fragments.
+ for x in [-23,-4,15]:
+  for z in [42,58]:
+   if bounds(p,(x-7.5,-14,z),(x+7.5,-11,z+8)) and not plane(p,1,-11):
+    i=1;reason='inferred_near_white_existing_main_window_returns'
+ # Complete lower gallery reveals follow their existing pale structural frame.
+ # Entire first bay (ending at x=-45.9) intersects the ochre core; keep that
+ # whole bay neutral, not only the crossing triangles.
+ for z in [6,23]:
+  if bounds(p,(-44.1,2,z),(30,5,z+9)) and not plane(p,1,5):
+   i=1;reason='inferred_near_white_existing_lower_gallery_returns'
+ # Upper right frontal reveal floors already belong to the same ochre shell.
+ if bounds(p,(35.5,-60,43),(60.5,-57,52)) and not plane(p,1,-57):
+  i=2;reason='inferred_ochre_existing_right_front_window_returns'
+ if i:
+  p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]=reason
+
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and colors preserved; complete support-plane material continuity; unresolved mixed outer side planes remain neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -74,6 +125,7 @@ scene.view_settings.view_transform='Standard';scene.view_settings.look='Medium H
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -89,15 +141,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown left core exterior backs roofs roof wedges neutral; original coarse unglazed lower room remains plain; no added small windows text or ochre gallery bands','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Fresh 2014 Commons and NCU public-art photos support ochre left core front/courtyard faces. Rear white body, core upper back and separate ends/returns are material-continuity inference, not back photography. Left x=-65 whole outer plane is inferred ochre including its unresolved 1.5mm rear-body overlap; no proven mixed material boundary there. Entire right x=65 mixed side remains neutral because original triangles cross photo-supported ochre wing and pale support/body without a complete material boundary. Roofs, wedges, soffits, base and unresolved recess fragments remain neutral; no new windows, text, bands or geometry.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-195,-260,145),(0,0,39.9),220),'rear':((195,260,145),(0,0,39.9),220),'elevation':((0,-300,39.9),(0,0,39.9),220),'source-angle':((80,-300,57),(0,0,39.9),220),'top':((0,0,340),(0,0,0),220)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-195,-260,145),(0,0,39.9),220),'rear':((195,260,145),(0,0,39.9),220),'elevation':((0,-300,39.9),(0,0,39.9),220),'source-angle':((80,-300,57),(0,0,39.9),220),'left':((-320,0,150),(0,0,39.9),220),'right':((320,0,150),(0,0,39.9),220),'top':((0,0,340),(0,0,0),220)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -106,4 +159,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

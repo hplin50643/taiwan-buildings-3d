@@ -1,0 +1,56 @@
+{
+  "status": "reviewed",
+  "reviewed_at_utc": "2026-11-11T17:30:29.400737+00:00",
+  "all_nine_render_images_viewed": true,
+  "comparison_viewed": true,
+  "view_names": [
+    "front",
+    "rear",
+    "elevation",
+    "source-angle",
+    "left",
+    "right",
+    "top"
+  ],
+  "render_engine": "Cycles",
+  "device": "CPU",
+  "threads_per_process": 1,
+  "samples": 96,
+  "denoising": false,
+  "png_text_metadata": false,
+  "image_overlays": false,
+  "source_photographs_viewed": 5,
+  "interior_gallery_image_excluded": true,
+  "source_photo_publicly_packaged": false,
+  "observations": {
+    "front": "Teaching outer flank pale beige, tower shell coarse grey and front ochre remain distinct; silhouette unchanged.",
+    "rear": "Theatre and teaching closed back masses now use component-specific inferred finishes; no fabricated rear openings or texture. Roof tops and display base remain neutral.",
+    "elevation": "Existing ochre front, coarse grey window box, dark original mixed slots and brown cross bridge retained; no text objects or overlays.",
+    "source-angle": "Visible inner courtyard and right theatre outer wall retain their different finish families; original slots remain dark mixed proxies and narrow jambs pale.",
+    "left": "Pale beige teaching flank and grey tower remain separate. The two tiny original neutral slivers at the pre-existing offset are retained. Roof/frame, stair end and base neutral; no clipped geometry.",
+    "right": "Outer theatre side ochre and teaching/rear wing beige stay distinct; existing dark courtyard slots and bridge visible. Original grey roof frame and horizontal roofs remain neutral; no new windows or silhouette changes.",
+    "top": "All horizontal roof surfaces and display base remain neutral; existing courtyard bridge, platform and stair layout unchanged. No new roof finish, markings, geometry, or crop."
+  },
+  "comparison_observations": [
+    "Top comparison row: same front camera, only component-specific neutral walls have gained color; original front assignments unchanged.",
+    "Bottom comparison row: original neutral rear masses versus ochre theatre and pale teaching wing inference; same silhouette and all original openings unchanged."
+  ],
+  "reviewed_image_sha256": {
+    "appearance/front.png": "b362bd3b0650a64fe3ce4f3c48bef0cef8362b126676fecdf88efbf0b8ef699b",
+    "appearance/rear.png": "7e19c51264784b0fa3dc4fa867d52ba9020c949c94bbf6ad34eb74657697fe6a",
+    "appearance/elevation.png": "24a4568fc42a7cd6f50f33ce359a3bf601bc7721dfcdfe1133dbbaef1cd43ad8",
+    "appearance/source-angle.png": "3f12b5ec85e8c29dea8096792c744c867652fa1dd6e8f198402df57a6dd871b7",
+    "appearance/left.png": "beae8a61fada41e0db24d13ab3fd94baa6a33a29d71e17ed7f95599759d52f50",
+    "appearance/right.png": "aaef75d322aec04c567274c1d9173f817c31f93c6d525b561e43d277eb41cf4f",
+    "appearance/top.png": "9eb6bf632bfe5527de06fba151edd43471970757575ea7246e34ed0dc6782fa0",
+    "appearance-review-v2/original-front.png": "588c2760cfbca5582b9718ef7d2841290e44a1f808e5a5ade257e9c2cc3558af",
+    "appearance-review-v2/original-rear.png": "cb6ef85d442ebf1fb32b3f75615d539da6713d1def56d3f3c1c929591b991539",
+    "appearance-review-v2/comparison.png": "7dc53556beda031333551bdbd90f62299af29c256e7ec311544348c49c048c24"
+  },
+  "limitations": [
+    "Photographic approximation; capture dates unknown; 2024/11 is upload directory, not capture date.",
+    "Far side and rear material continuity inferred from original closed component masses, not verified by matching rear photos.",
+    "Preserve mixed slot backings, original 0.5 mm offset front skin approximation and unmodelled rear openings.",
+    "No real-world survey or physical trial print."
+  ]
+}

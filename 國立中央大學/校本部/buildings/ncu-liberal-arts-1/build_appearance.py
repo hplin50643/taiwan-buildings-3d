@@ -22,7 +22,12 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
+change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
+def plane(axis,value):return all(abs(mesh.vertices[j].co[axis]-value)<.001 for j in p.vertices)
+def bounds(lo,hi):return all(all(lo[a]-.001<=mesh.vertices[j].co[a]<=hi[a]+.001 for a in range(3)) for j in p.vertices)
 for p in mesh.polygons:
  x,y,z=p.center;n=p.normal;i=0
  # Source-visible upper long front band and existing giant entrance piers.
@@ -49,11 +54,33 @@ for p in mesh.polygons:
  if abs(x)<49.01 and -40.851<y<-34.949 and 3<z<5.61:i=5
  # Roof and unknown large right/rear planes never inferred from front photograph.
  if z<=3 or (n.z>.8 and z>45) or (near(x,65,.015) and n.x>.8) or (near(y,43,.015) and n.y>.8):i=0
+ original_indices.append(i);reason=None
+ # Color-v2: complete approximate exterior shell, not a rear cut cap.
+ # Continue original stone-family color only on identifiable same-building elements.
+ if i==0:
+  if abs(n.z)<.001 and bounds((-65,-31,3),(65,43,68)) and ((plane(0,65) and n.x>.999) or (plane(1,43) and n.y>.999) or (plane(0,-65) and n.x<-.999)):
+   i=1;reason='inferred_existing_side_rear_stone_family_exterior'
+  # Existing upper-front recessed-window structural reveals belong to stone band,
+  # not pale-green window backing or pale-grey thin mullions.
+  if i==0:
+   for cx,w in [(-52,19),(0,58),(52,19)]:
+    if bounds((cx-w/2,-31,50),(cx+w/2,-29.5,64)) and not plane(1,-29.5):
+     if plane(0,cx-w/2) or plane(0,cx+w/2) or plane(2,50) or plane(2,64):
+      i=1;reason='inferred_upper_stone_band_window_reveals'
+  # Original left-side window backs were already color3; recolor only the
+  # actual reveal walls of those openings, not the mixed front spandrels.
+  if i==0:
+   for yy in [-9,7,23,39]:
+    for zz in [8,28]:
+     if bounds((-65,yy+2,zz),(-63.5,min(yy+10,43),zz+11)) and not plane(0,-63.5):
+      if plane(1,yy+2) or plane(1,yy+10) or plane(2,zz) or plane(2,zz+11):
+       i=1;reason='inferred_existing_left_stone_window_reveals'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; side/rear exterior and stone-window reveals inferred; mixed front spandrels, roofs and base remain neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -80,9 +107,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown rear roof other side and mixed spandrels neutral; ochre tiles omitted where original boundaries absent','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Existing side/rear exterior and stone-window reveal colors inferred from same-building material continuity, not complete rear photographs; all originally colored faces, material RGBA and roughness unchanged. Mixed front spandrels, horizontal roofs and base remain neutral; ochre tiles omitted where original boundaries absent.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-195,-260,145),(0,0,34),200),'rear':((195,260,145),(0,0,34),200),'elevation':((0,-300,34),(0,0,34),200),'source-angle':((-150,-300,60),(0,0,34),200),'top':((0,0,330),(0,0,0),200)}
+views={'front':((-195,-260,145),(0,0,34),200),'rear':((195,260,145),(0,0,34),200),'elevation':((0,-300,34),(0,0,34),200),'source-angle':((-150,-300,60),(0,0,34),200),'left':((-300,0,150),(0,0,34),200),'right':((300,0,150),(0,0,34),200),'top':((0,0,330),(0,0,0),200)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

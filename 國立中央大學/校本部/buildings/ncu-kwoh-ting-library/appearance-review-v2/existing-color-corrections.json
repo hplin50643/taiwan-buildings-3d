@@ -1,0 +1,294 @@
+{
+  "status": "corrected_and_verified",
+  "correction_count": 8,
+  "reason": "Original v1 centroid-only pergola box assigns dark trim to large triangles lying on tall-wing rear exterior plane. Geometry is tall-wing wall, not a diagonal real-world material strip.",
+  "original_rule": "if 43.49<abs(x)<58.51 and -11.01<y<23.01 and 113.49<z<122.71:i=4",
+  "model_construction_evidence": "build_model.py: for x in [-34,34]:add(x,-7,2.8,25,49,125). Thus x=[21.5,46.5] or [-46.5,-21.5], rear y=17.5, z<=127.8; exposed below cornice z=127. The retained triangles lie on those full rear wall support planes.",
+  "original_script_sha256": "8b192fb20356341c1b4c1b429247bf7aee3ae124e3023f46ca0ef8dbaf6e89e4",
+  "original_materials_json_sha256": "04ead33ae64d40c34d54a56bd95ed1c4745f9b776431ac440f4f1dac697ae31e",
+  "corrections": [
+    {
+      "face_index": 247,
+      "original_material": 4,
+      "repaired_material": 1,
+      "original_centroid": [
+        -44.91666793823242,
+        17.5,
+        116.0666732788086
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "vertices": [
+        [
+          -46.5,
+          17.5,
+          113.5999984741211
+        ],
+        [
+          -45.75,
+          17.5,
+          121.0
+        ],
+        [
+          -42.5,
+          17.5,
+          113.5999984741211
+        ]
+      ],
+      "original_rule_matched": true,
+      "all_vertices_on_tall_wing_rear_plane_y_17_5": true,
+      "all_vertices_within_tall_wing_construction_bounds": true
+    },
+    {
+      "face_index": 248,
+      "original_material": 4,
+      "repaired_material": 1,
+      "original_centroid": [
+        -46.0,
+        17.5,
+        119.0999984741211
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        -0.0
+      ],
+      "vertices": [
+        [
+          -46.5,
+          17.5,
+          113.5999984741211
+        ],
+        [
+          -45.75,
+          17.5,
+          122.69999694824219
+        ],
+        [
+          -45.75,
+          17.5,
+          121.0
+        ]
+      ],
+      "original_rule_matched": true,
+      "all_vertices_on_tall_wing_rear_plane_y_17_5": true,
+      "all_vertices_within_tall_wing_construction_bounds": true
+    },
+    {
+      "face_index": 249,
+      "original_material": 4,
+      "repaired_material": 1,
+      "original_centroid": [
+        -46.25,
+        17.5,
+        121.0999984741211
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "vertices": [
+        [
+          -46.5,
+          17.5,
+          113.5999984741211
+        ],
+        [
+          -46.5,
+          17.5,
+          127.0
+        ],
+        [
+          -45.75,
+          17.5,
+          122.69999694824219
+        ]
+      ],
+      "original_rule_matched": true,
+      "all_vertices_on_tall_wing_rear_plane_y_17_5": true,
+      "all_vertices_within_tall_wing_construction_bounds": true
+    },
+    {
+      "face_index": 250,
+      "original_material": 4,
+      "repaired_material": 1,
+      "original_centroid": [
+        -44.16666793823242,
+        17.5,
+        118.53333282470703
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "vertices": [
+        [
+          -42.5,
+          17.5,
+          113.5999984741211
+        ],
+        [
+          -45.75,
+          17.5,
+          121.0
+        ],
+        [
+          -44.25,
+          17.5,
+          121.0
+        ]
+      ],
+      "original_rule_matched": true,
+      "all_vertices_on_tall_wing_rear_plane_y_17_5": true,
+      "all_vertices_within_tall_wing_construction_bounds": true
+    },
+    {
+      "face_index": 334,
+      "original_material": 4,
+      "repaired_material": 1,
+      "original_centroid": [
+        44.41666793823242,
+        17.5,
+        116.0666732788086
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "vertices": [
+        [
+          42.5,
+          17.5,
+          113.5999984741211
+        ],
+        [
+          44.25,
+          17.5,
+          121.0
+        ],
+        [
+          46.5,
+          17.5,
+          113.5999984741211
+        ]
+      ],
+      "original_rule_matched": true,
+      "all_vertices_on_tall_wing_rear_plane_y_17_5": true,
+      "all_vertices_within_tall_wing_construction_bounds": true
+    },
+    {
+      "face_index": 336,
+      "original_material": 4,
+      "repaired_material": 1,
+      "original_centroid": [
+        45.5,
+        17.5,
+        118.53333282470703
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "vertices": [
+        [
+          46.5,
+          17.5,
+          113.5999984741211
+        ],
+        [
+          44.25,
+          17.5,
+          121.0
+        ],
+        [
+          45.75,
+          17.5,
+          121.0
+        ]
+      ],
+      "original_rule_matched": true,
+      "all_vertices_on_tall_wing_rear_plane_y_17_5": true,
+      "all_vertices_within_tall_wing_construction_bounds": true
+    },
+    {
+      "face_index": 337,
+      "original_material": 4,
+      "repaired_material": 1,
+      "original_centroid": [
+        46.0,
+        17.5,
+        119.0999984741211
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "vertices": [
+        [
+          46.5,
+          17.5,
+          113.5999984741211
+        ],
+        [
+          45.75,
+          17.5,
+          121.0
+        ],
+        [
+          45.75,
+          17.5,
+          122.69999694824219
+        ]
+      ],
+      "original_rule_matched": true,
+      "all_vertices_on_tall_wing_rear_plane_y_17_5": true,
+      "all_vertices_within_tall_wing_construction_bounds": true
+    },
+    {
+      "face_index": 338,
+      "original_material": 4,
+      "repaired_material": 1,
+      "original_centroid": [
+        46.25,
+        17.5,
+        121.0999984741211
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "vertices": [
+        [
+          46.5,
+          17.5,
+          113.5999984741211
+        ],
+        [
+          45.75,
+          17.5,
+          122.69999694824219
+        ],
+        [
+          46.5,
+          17.5,
+          127.0
+        ]
+      ],
+      "original_rule_matched": true,
+      "all_vertices_on_tall_wing_rear_plane_y_17_5": true,
+      "all_vertices_within_tall_wing_construction_bounds": true
+    }
+  ],
+  "all_other_original_colored_faces_preserved": true,
+  "all_original_palette_values_preserved": true,
+  "recovery": "Restore original_face_material_indices from appearance-materials.json; original model remains available at the immutable source commit recorded in appearance-freeze.json."
+}

@@ -1,0 +1,98 @@
+{
+  "status": "reviewed",
+  "all_nine_images_personally_viewed": true,
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "seed": 0,
+    "denoising": false,
+    "threads": 1,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "ba4dd2fd3df06a6606af4cd2bd0470e6183ead59363547cdcf5a71527412fd56",
+      "personally_viewed_full_frame": true,
+      "observation": "Full model viewed. Original lake-facing window, gallery and dish colors retained. Side end-core return and service-box walls continue pale family; no diagonal color cuts or new windows."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "c4652125d32835c44f08f7e8cd30de1efaba55935077b0610a29f313bc1a87cc",
+      "personally_viewed_full_frame": true,
+      "observation": "Full model viewed. Both complete simplified back walls now use pale family with shading by orientation. No diagonal triangle patch, window invention or roof recolor."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "cba175b654cf0841baa032653807a377d3e341cf70b66095eb708c732e00df81",
+      "personally_viewed_full_frame": true,
+      "observation": "Full model viewed. Existing ten-level recess grid and dark central gallery unchanged; all model edges and dish remain within frame."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "804cd11018f32ddbd26743136766d6a05b47a2d1e8205048e0c1889729efd74d",
+      "personally_viewed_full_frame": true,
+      "observation": "Full model viewed. Low lake-side angle retains original openings and frame hierarchy; new pale continuity limited to existing solid side returns and boxes."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "8eeffad88bb712839d1031332cfb75c25cc433bf2aad4beb3e8dbe9f65da7657",
+      "personally_viewed_full_frame": true,
+      "observation": "Full model viewed. Complete outer wall has a uniform material across original triangles. End-core side and roof-box vertical wall join without artificial diagonal patches; gray roof cap preserved."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "35da079e7031ec1cfa30b32223f855410f3eb8c1e1fde25eb41b12198480d0f0",
+      "personally_viewed_full_frame": true,
+      "observation": "Full model viewed. Original lake-facing glazing proxies and gallery recesses retained. End-core side stays solid; no additional glazing or decorative geometry."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "fa9f326ee31bce919cf2dc4b77d6c2f075e5aec1efe1e28c6ed44b72696bc09a",
+      "personally_viewed_full_frame": true,
+      "observation": "Full model viewed. Original L-shaped footprint, flat roof caps, roof boxes and thickened satellite dish unchanged. No colors painted as new roof fixtures."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "1c8e3ac1cd406ba469f9cd808fad44467862ca370e9f26468bb5a8b1b7832168",
+      "personally_viewed_full_frame": true,
+      "observation": "Full model viewed with identical revised front camera, render settings and lighting but original face indices. Lake-side colors agree; small return/box material extension is the intended difference."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "f404a916235bbe458ef2aa3fc979fba0689d8aeb4bf1db44036281a74ec71796",
+      "personally_viewed_full_frame": true,
+      "observation": "Full model viewed with identical revised rear camera, render settings and lighting but original face indices. Original neutral backs are visibly grayer than revised pale backs; geometry and silhouette agree."
+    }
+  ],
+  "original_comparison_pixel_statistics": {
+    "front": {
+      "pixels_with_any_rgb_difference": 56062,
+      "maximum_channel_difference": 30,
+      "mean_absolute_channel_difference": 0.3723449074074074,
+      "note": "Same camera and deterministic Cycles settings. Indirect light may also alter neighboring pixels; geometry proof is mesh comparison, not image equality."
+    },
+    "rear": {
+      "pixels_with_any_rgb_difference": 285291,
+      "maximum_channel_difference": 34,
+      "mean_absolute_channel_difference": 7.271655555555555,
+      "note": "Same camera and deterministic Cycles settings. Indirect light may also alter neighboring pixels; geometry proof is mesh comparison, not image equality."
+    }
+  },
+  "scope": "186 original neutral faces on complete existing outer back planes, end-core side returns and vertical service-box walls. Original colored faces and all material values preserved.",
+  "source_photo_viewed": "Official astronomy lake exterior, successfully downloaded from same-host HTTP URL after direct HTTPS returned503; original full image personally viewed.",
+  "source_limitations": [
+    "No direct complete rear photograph; pale extension is explicit same-building material continuity inference.",
+    "Official science4 map image is an illustration, not photographic color evidence.",
+    "2026 limited construction notice does not establish full exterior finish.",
+    "Capture date and calibrated colors unverified; no full 2026-condition claim."
+  ],
+  "preserved_neutral_faces": 2087,
+  "no_new_geometry_windows_or_decorations": true,
+  "original_printing_caveats_and_no_trial_print_retained": true,
+  "reviewed_at": "2026-11-11T22:06:33.643563+00:00"
+}

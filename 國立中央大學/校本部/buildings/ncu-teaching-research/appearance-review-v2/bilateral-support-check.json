@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "family": "outer_wall",
+      "sides": [
+        {
+          "side": -1,
+          "triangles": 349,
+          "area_mm2": 3582.00040435791,
+          "new_material": 1
+        },
+        {
+          "side": 1,
+          "triangles": 348,
+          "area_mm2": 3582.00040435791,
+          "new_material": 1
+        }
+      ],
+      "full_support_area_matches_original_right": true
+    },
+    {
+      "family": "window_back",
+      "sides": [
+        {
+          "side": -1,
+          "triangles": 160,
+          "area_mm2": 3002.999652862549,
+          "new_material": 2
+        },
+        {
+          "side": 1,
+          "triangles": 160,
+          "area_mm2": 3002.999652862549,
+          "new_material": 2
+        }
+      ],
+      "full_support_area_matches_original_right": true
+    }
+  ],
+  "method": "All full x support faces and integrated actual triangle area compared; unequal triangulation allowed. Left same-family extension matches entire original right support area and material, not centroid selection."
+}

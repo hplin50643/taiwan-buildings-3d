@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ncu-water-tower-1969-design-all-views.jpg. No caption or backing; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "28da0da25664a3b4a7d98041004fa5701a0d02622bd4b8f7a541fd5559b0dac8",
+    "east.png": "c290d1820a697f4774e34178893aa5fccbf77b950c9879095db01fa148b32a05",
+    "entry-detail.png": "228b91ca20123f63fe7c5db6816c385bf59165d1742e3b7556e70997eeef37b5",
+    "facade-detail.png": "02e6345cd8cff925b6afe40aabd69488f0a2a9b7eb23e92a00c13e72e0a803f7",
+    "front.png": "3ca354b3e87d098168164bf09e4223f4a3cc17f52c5af9dd04ef6537a05db52e",
+    "preview.png": "59566a6f0fb8223ae25aebab59655a1663ebfd8acce88269d934f6c77b5b6a60",
+    "rear.png": "f9b5e1a555092b75e5fa36167a5416e220ed60bee11d399091586f2eed280c5d",
+    "roof-detail.png": "22bebf0fc1275d0fdf9193b12233b6c87c8686b23c36ef0ef62c0772fc0b9ba0",
+    "top.png": "118c17c495ee6e44f83a72e9559049d5c081ac899ff5e42c42e4788530706681",
+    "west.png": "f78115b0ca733039c857b20aaa638810be5347beb11beb26cd37d69c9183e918"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T22:26:13.910011+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 866672,
+      "sha256": "89fb108e27c9aa042faf3e87ab239cc6df8d5fbf7d13077c196788dca41d1b90",
+      "personally_viewed": true,
+      "finding": "Full front oblique image inspected: left side now pink-grey continuous main wall; neutral roof/base preserved, original dark windows and five vent groups unchanged. No visible diagonal patches."
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 805128,
+      "sha256": "4bf7fe327abf4d1c9aec824521737968384b7b2803b78c7680884c902821a379",
+      "personally_viewed": true,
+      "finding": "Complete rear oblique inspected: both plain outer walls consistently pink-grey with no diagonal material split. Roof neutral and five original vent groups preserved; no invented rear windows."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 835086,
+      "sha256": "755187d8846081c89a6de397c48b033538d873e89ae76dd84ab9c08847c53a33",
+      "personally_viewed": true,
+      "finding": "Full frontal elevation inspected: original front colors, window proxies, columns, entrance recess and stairs preserved; window returns form continuous frames, no added lettering or tile bands."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 840331,
+      "sha256": "a0758bdfda915aec0c5a346df5bd61ebaaf1c86a2a347cf5149ec68574e912ff",
+      "personally_viewed": true,
+      "finding": "Full source-angle low front image inspected: continuous pink-grey columns and intact reveals, original window backing colors and recessed geometry unchanged. Neutral ceilings and base remain; no artificial diagonal coloring or added detail."
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 863847,
+      "sha256": "0492ef191a7b6a0ed9dccdd1dd58c2fb76e7f26f9be49c43637b55de7d39448d",
+      "personally_viewed": true,
+      "finding": "Full left elevation inspected: entire actual model outer wall is a single pink-grey family; existing colonnade opening preserved, roof/base stay neutral. No triangular color patches."
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 853329,
+      "sha256": "4cba10bce2630fc6d88abd0fec5688bcb253bb081f43543f635b3f84e78100f6",
+      "personally_viewed": true,
+      "finding": "Full right elevation inspected: complete uninterrupted pink-grey side wall, no diagonal split or false windows. Neutral roof/base and original vent groups preserved."
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 858735,
+      "sha256": "283cf28261a68abc208014ac9971a32bd0e07800a25bda3a80c522398694d1a3",
+      "personally_viewed": true,
+      "finding": "Full top image inspected: continuous neutral roof and base, five unchanged circular exhaust groups/caps, unchanged protruding columns and steps. No added equipment, marks or misplaced wall color on roof."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 868053,
+      "sha256": "20dd2b2e2d010d39fd57527d56a4abf3191f4579847f2e3491fa6b57a81d4e16",
+      "personally_viewed": true,
+      "finding": "Full original-color front comparison inspected: original large side wall is neutral green-grey, while final side becomes pink-grey. Original front, window backs and vents retain the same appearance."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 790625,
+      "sha256": "49695a53e44d9cbcd2174a39e0e3fa68cec7749d19ad194269e97f9bbec62e42",
+      "personally_viewed": true,
+      "finding": "Full original-color rear comparison inspected: old exterior rear and right wall are neutral green-grey; final version extends pink-grey consistently. Roof, base and vent groups unchanged."
+    }
+  ],
+  "directly_viewed_reference_images": 2,
+  "findings": [
+    "Whole simplified main-volume left, right and rear exterior walls now continue original pink-grey main material; no fabricated windows or bands added. No diagonal color patches appear.",
+    "Only intact existing window reveal surfaces are extended pink-grey, preserving original dark and lighter grey-green window backing colors. All precolored faces and materials unchanged.",
+    "Corner-intersecting second left window cut fragments, flat roof, gallery floors and soffits, base and unspecified surfaces remain neutral. Five original vent groups are unchanged in geometry and color.",
+    "Seven final 900x800 Cycles CPU96 single-thread no-denoising renders and two original material comparisons inspected. Numeric camera locations, rotations and scales match for the comparisons."
+  ],
+  "known_limits": [
+    "No full side or rear photograph obtained. Color continuity on simplified whole exterior wall planes is declared inference, not observed rear elevation or 2026 survey.",
+    "Commons photo file EXIF 2013-06-01 and official Department entrance file EXIF 2018-10-24 read this run; dates not independently authenticated. Official old accessibility entrance URL returned 503.",
+    "Original grey-green narrow tile bands and brown/grey base detailing lack full face boundaries and remain omitted. Geometry remains an approximate coarse exterior model.",
+    "No physical trial print or new slicing/support validation. Original deep recess/gallery slabs/overhead floors, exhaust cap support and bridge risks remain."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "asset_privacy": "asset-privacy-review.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

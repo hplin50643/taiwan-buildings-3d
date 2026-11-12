@@ -1,0 +1,221 @@
+{
+  "status": "passed",
+  "classification": "Every vertex tested against complete original construction boundaries; cylinder outward supporting planes include interpolated Boolean vertices. No centroid thresholds in new rules.",
+  "all_other_precolored_faces_unchanged": true,
+  "corrected_original_material4_rear_wall_faces": [
+    247,
+    248,
+    249,
+    250,
+    334,
+    336,
+    337,
+    338
+  ],
+  "all_nonvertical_faces_unchanged": true,
+  "base_unchanged": true,
+  "missed_neutral_outward_cylinder_facets": [],
+  "complete_pale_wall_planes": [
+    {
+      "axis": 0,
+      "coordinate": -58.5,
+      "z_range": [
+        3,
+        112.8
+      ],
+      "faces": [
+        80,
+        81,
+        82,
+        95,
+        96,
+        97
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 0,
+      "coordinate": 58.5,
+      "z_range": [
+        3,
+        112.8
+      ],
+      "faces": [
+        149,
+        151,
+        174,
+        175,
+        176,
+        178
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 1,
+      "coordinate": 41.5,
+      "z_range": [
+        3,
+        112.8
+      ],
+      "faces": [
+        106,
+        150
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 0,
+      "coordinate": -46.5,
+      "z_range": [
+        3,
+        127
+      ],
+      "faces": [
+        185,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        246
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 0,
+      "coordinate": 46.5,
+      "z_range": [
+        3,
+        127
+      ],
+      "faces": [
+        283,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        333
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 0,
+      "coordinate": -21.5,
+      "z_range": [
+        3,
+        127
+      ],
+      "faces": [
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        230,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        257,
+        258
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 0,
+      "coordinate": 21.5,
+      "z_range": [
+        3,
+        127
+      ],
+      "faces": [
+        269,
+        272,
+        273,
+        274,
+        275,
+        276,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        326,
+        327
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 1,
+      "coordinate": 17.5,
+      "z_range": [
+        112.8,
+        127
+      ],
+      "faces": [
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        328,
+        329,
+        330,
+        331,
+        332,
+        334,
+        335,
+        336,
+        337,
+        338
+      ],
+      "all_material": 1
+    }
+  ],
+  "changed_faces": 262,
+  "changed_reason_counts": {
+    "inferred_pale_lower_wing_side_rear_exterior": 14,
+    "inferred_pale_tall_wing_side_rear_exterior": 80,
+    "corrected_original_pergola_centroid_misclassification_on_tall_rear_wall": 8,
+    "inferred_taupe_original_core_outer_skin": 122,
+    "inferred_dark_tall_wing_vertical_cornice": 16,
+    "inferred_dark_lower_wing_vertical_cornice": 22
+  },
+  "materials_json_sha256": "b9b40f40b10da9b31cd1bf70b350e597d637167057110ed71f534f2f39664407",
+  "limitations": "Inferred rear materials, original simplified plane geometry; no geometric subdivision or invented windows."
+}

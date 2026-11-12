@@ -1,0 +1,19 @@
+{
+  "engine": "CYCLES",
+  "device": "CPU",
+  "samples": 96,
+  "denoising": false,
+  "threads_mode": "FIXED",
+  "threads": 1,
+  "resolution": [
+    900,
+    800,
+    100
+  ],
+  "stamp": false,
+  "font_objects": 0,
+  "mesh_objects": 1,
+  "use_adaptive_sampling": true,
+  "seed": 0,
+  "compositor_denoise_nodes": 0
+}

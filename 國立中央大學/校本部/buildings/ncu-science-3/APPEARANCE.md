@@ -1,25 +1,34 @@
-# 中央科學三館｜有限正面彩色增補
+# 中央科學三館｜側背材料連續性增補
 
-## 範圍與原幾何保留
+## 本次範圍
 
-原934頂點／1880三角面、transform及尺寸不變，只指定原每三角材料。保留原STL、OBJ、scene.blend、建模／預覽script、三舊圖與原QA。彩色另有3MF、BLEND、五視圖，雙README第一章保留原圖再加彩表，不換首頁／校級鎖定代表。
+在原 color-v1 上將 236 個原中性面補為原粉灰材料；原 934 頂點／1880 三角面、transform、150 × 104 × 66 mm 尺寸、已彩面與全部 RGBA／roughness 不變。原 STL、OBJ、scene.blend、build_model.py、previews 與幾何 QA 保留。沒有新增窗、文字、灰綠磁磚帶、機電或排氣細節。
 
-## 直接讀到的實景
+## 這次直接下載並親看的資料
 
-[校方無障礙校園頁](https://love.adm.ncu.edu.tw/NCU_counsel/NCU-barrier-free/)SB3標科學三館，其[入口近照](https://love.adm.ncu.edu.tw/NCU_counsel/NCU-barrier-free/images/SB3/1.jpg)僅259×194，不足單獨代表完整正面。另正常取得並親看[Commons完整正面照片](https://upload.wikimedia.org/wikipedia/commons/1/1a/NCU_Science_Building_III.JPG)，可見四層正面、左廊柱、中央凹口、右窗帶及排氣塔，與官方入口粉灰材料相符，並非只由局部粉牆外推。
+- [Commons 完整正面照片](https://upload.wikimedia.org/wikipedia/commons/1/1a/NCU_Science_Building_III.JPG)：4000 × 3000；本次實讀 EXIF DateTimeOriginal 為 2013-06-01 12:13:09。看見連續粉灰前牆、柱與凹口、暗窗及灰綠水平細帶和原五組排氣塔。既有 sources.json 記作者 SSR2000、CC BY-SA 3.0／GFDL；本輪檔案說明頁無法經網頁工具讀取，因此作者／授權資訊保留為既有來源記錄，未假稱本輪重新驗證全文。
+- [中央化學系官方簡介](https://www.chem.ncu.edu.tw/zh_tw/intro/intro1)的[入口近照](https://www.chem.ncu.edu.tw/uploads/asset/data/5e7dd78f1d41c859c7000042/281_6bd3cd25.jpg)：2385 × 1529；本次實讀 EXIF DateTimeOriginal 為 2018-10-24 10:30:46。能清楚確認入口粉灰柱、牆及窗洞回折同一家族；無完整側背資訊。EXIF 是檔案內日期，未另行鑑定相機時鐘或實際拍攝日期。
+- 舊無障礙入口圖這輪 HTTP 503，未讀到像素，不作新增證據。校方學系地圖頁可讀，但科三圖為校圖示意，不當實景色彩資料。本輪未重讀防災 PDF，不增補測量或現況證據。
 
-[Commons檔案來源頁](https://commons.wikimedia.org/wiki/File:NCU_Science_Building_III.JPG)，既有sources記錄作者SSR2000、CC BY-SA3.0／GFDL及2013-06-01 EXIF；本輪未重新驗證EXIF或授權頁全文，不把該日期升格為新查證拍攝日。官方近照拍攝日未知。本輪未重讀原防災圖冊；非當代完整現況或歷史色彩復原，來源照片不包入公開檔。
+[來源記錄](appearance-review-v2/source-register.json)保存網址、下載雜湊及使用限制。公開包不含照片、PDF、HTML 或本機絕對路徑。不把照片當 2026 現況調查，也不從光照影像宣稱校色量測或官方色票。
 
-## 有據色彩與省略
+## 外牆、推估與保留中性
 
-原正面牆、柱及可見凹口回牆粉灰，原窗背為深灰綠不透明proxy，中央較退縮窗背依入口近照以稍淺灰綠近似。窗／簾／室內明暗均合併，非實際透明玻璃或窗框構造。照片灰綠水平磁磚細帶缺乏原獨立三角界線，完全省略，不切面也不任意整條牆染綠。
+原 build_model.py 的主體為完整 130 × 68 × 58 mm 箱體，左右 x=-65／65 和背面 y=41 是其外界，不是把建物裁半的人工截面。前方挑空、入口與窗洞是原有布林孔。這只確認建模意圖，不能證明實際深度或背立面完整性。
 
-原五組排氣柱淺灰、帽灰，只粗化已有設備，不補管線或機電精細配置。未知外側、背面、平屋頂中性；下層或右側被植栽／車輛遮擋處只是相同材料家族近似，不稱逐面看見。入口門金字／格線、空調、窗框、院景仍省略，不新畫原模型不存在的玻璃面。
+- 8 個完整左右外牆面與 2 個完整背牆面，將原正面粉灰主要牆材延續。沒有直接側背照片，屬明示同棟材料連續性推估。原素面仍素面，不補不存在的窗帶或設備。完整支承平面一次選取，不按三角形中心或對角線造出假材界。
+- 128 個上層窗凹回面、66 個右側原窗帶回面、16 個完整左內窗回面和 16 個入口內窗回面，沿用同粉灰結構材料。原暗窗背板與已彩面不變。正面灰綠細帶和灰磚台基沒有完整原網格分界，沿用原粗化政策省略，沒有將某三角片單獨染成細帶。
+- 左內第二窗格跨過 x=-18 的凹口轉角，全部未定切口碎面保留原中性，不用局部盒選製造斜色塊。屋頂、挑空頂板底面、廊道樓板面、底座及其他未定表面共 236 面仍中性；照片中的灰白頂棚不拿粉灰任意填滿。
+- 原五組排氣柱的所有原形體與材料保持；不加帽、管線或新設備。原中央灰綠窗色、門窗框簡化與階梯也保留。
 
-色值為低飽和照片近似，未校正曝光光線，不是官方色票或材質實測；原凹口與窗帶粗化不改，彩色不等於精確立面。
+原材料名稱完整保留以維持相容；名稱中的舊用途不限制新版分派。色彩是同建物主材料近似，不代表每個新塗面均在照片可見。原四層、深凹口與後方箱體仍是外觀研究模型，非測繪／BIM／完整實況復原。
 
-## 可重現與檢核
+## 重建與驗證
 
-Blender4.3.2：`blender -b -t 1 --python-exit-code 1 -P build_appearance.py`，原scene.blend/model.stl同目錄。Cycles CPU32samples固定seed0，獨立clean目錄重建；3MF原頂點／三角不切分，純base material。PNG移除文字時間／本機路徑；BLEND做語義幾何材料檢核，不要求容器byte相同。見[審核](appearance-review/)。
+Blender 4.3.2，原 scene.blend、model.stl 與新版 build_appearance.py 放同一目錄：
 
-原QA仍為幾何／XY抽樣非全域壁厚或正式切片，深廊、懸板及帽蓋需支撐評估，未試印，不保證免支撐。STL無色正常；3MF顯示依軟體base material支援，不含特定AMS映射。
+    blender -b -t 1 --python-exit-code 1 -P build_appearance.py
+
+新七視圖為 900 × 800、Cycles CPU、96 samples、seed 0、單執行緒、無降噪。兩張原版對照沿用新版同相機位置、旋轉、正交尺度與光照，只恢復原材料分派。PNG 移除文字／日期／路徑 metadata。3MF 原三角直接指定 base material、不切面。Blender／3MF 逐點逐面、材值、transform 與乾淨重建檢核見 [新版審核](appearance-review-v2/color-continuity-review.json)。舊 appearance-review 保留作 v1 歷史，以此版審核與 appearance-freeze.json 為目前外觀範圍。
+
+原估計尺寸、XY 薄篩而非全域壁厚、深凹口／懸板／排氣帽蓋支撐與橋接評估等限制繼續有效；未試印，不保證免支撐或可印。STL 無色正常；3MF 顯色取決於軟體 base material 支援，沒有特定 AMS 設定。

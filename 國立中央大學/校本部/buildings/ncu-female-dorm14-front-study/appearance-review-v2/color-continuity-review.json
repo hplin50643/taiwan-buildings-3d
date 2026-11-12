@@ -1,0 +1,80 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T23:57:34.266783+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 951160,
+      "sha256": "cbec07aeeba7484ff9847c5e9e583a32decff8633c75338439875ce3fd6636c6",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 798149,
+      "sha256": "25966eb854ac062406ae48cf62084c101e31357b6257da36430d68f026f68a69",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 929979,
+      "sha256": "645f0d1cd283ad7a9ad097e860e5056e0a2f3839c482e95f54200325f9d7a7aa",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 944611,
+      "sha256": "23dbbd94d7d6b69ad2695a6d64e653ba273d58abaf3a99e254f0e98efad2900e",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 809743,
+      "sha256": "bfe72755f5def87c9fa681ef3fc5e56b38cbd129c50fa8c1e99ffbe3954712d8",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 796917,
+      "sha256": "4181beaec406e6ab3359436876a0fe744f70bc6d0dda45c6781a352b5b835ae6",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 851297,
+      "sha256": "0c31645a40dca5cb500ca953e8f373377f32e8f0f068f76bba90718dc0ecadc5",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 949948,
+      "sha256": "9bf199f645295d5be3614b9e8be821db274276ebd72b83cf7394a40976535aae",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 798084,
+      "sha256": "34ba98453e9e327c3e3b46d60c961c102f9ccfba96d9a9fd6f54cfdf3a122420",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_images": 1,
+  "findings": [
+    "Front, elevation and source-angle preserve the existing pale screen frames, gray opaque panels, dark slot backs, stone piers, brick adjacent piers, bluegray arch and green canopy top. Newly pale narrow-slot reveals do not alter screen or backing polygons.",
+    "The material extension is subtle and limited to original narrow-opening solid-wall top/bottom/side returns. Whole rectangular supports are colored, not diagonal or centroid-selected patches.",
+    "Rear remains a large neutral artificial study cut; no full rear facade or doors/windows have been invented. Left/right/top retain original stepped sides and roof massing and base.",
+    "Low canopy underside and edge remain original neutral because source green translucent panels and red supporting frames do not map to one complete original surface family. The original arch and columns already have full relevant surface materials.",
+    "All views frame the complete model and base without new text, source-photo textures or missing geometry. Existing large upper-front blank margins, coarse roof steps and deep canyon are known simplifications, not newly introduced defects.",
+    "Original-front and original-rear comparisons use exactly equal camera location, rotation, scale, lighting, material values and render settings; only original per-face assignments were restored."
+  ],
+  "known_limits": [
+    "464 narrow-opening reveal faces use same-host finish inference from the official front photo; concealed surfaces not directly surveyed. Exact color calibration and photo capture date are unknown.",
+    "1441 neutral faces remain: artificial cuts, roofs, base, mixed canopy surfaces, coarse front blank regions and deep canyon. This is an entry facade study, not a full dormitory model.",
+    "Original estimated dimensions and support/bridge risk remain; no physical print, fresh slicer validation or2026-condition claim."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

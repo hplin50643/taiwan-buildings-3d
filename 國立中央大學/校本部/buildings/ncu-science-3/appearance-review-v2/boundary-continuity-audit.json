@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "method": "Exact ALL-vertex support planes/bounds and guard on original material index. Coplanar shared-edge audit across every newly changed seam.",
+  "changed_faces": 236,
+  "new_coplanar_seams": [],
+  "new_coplanar_diagonal_seams": 0,
+  "complete_exterior_planes": [
+    {
+      "axis": 0,
+      "value_mm": -65,
+      "faces": [
+        44,
+        76,
+        134,
+        135,
+        136,
+        137
+      ],
+      "material": 1,
+      "scope": "Complete original support plane, no partial triangle selection."
+    },
+    {
+      "axis": 0,
+      "value_mm": 65,
+      "faces": [
+        219,
+        322
+      ],
+      "material": 1,
+      "scope": "Complete original support plane, no partial triangle selection."
+    },
+    {
+      "axis": 1,
+      "value_mm": 41,
+      "faces": [
+        169,
+        302
+      ],
+      "material": 1,
+      "scope": "Complete original support plane, no partial triangle selection."
+    }
+  ],
+  "unchanged_roof_and_exhaust_faces": 970,
+  "five_original_exhaust_groups_unchanged": true,
+  "unresolved_corner_window_fragments_unchanged": [
+    946,
+    947,
+    948,
+    949,
+    951,
+    952,
+    953,
+    954,
+    955,
+    956,
+    958,
+    959,
+    960,
+    961,
+    982,
+    983,
+    984,
+    985,
+    987,
+    988,
+    989,
+    990,
+    991,
+    992,
+    993,
+    995,
+    996,
+    997
+  ],
+  "artificial_cut_plane_assessment": {
+    "result": "No intentionally artificial cut cap is selected.",
+    "evidence": "Original build_model.py constructs one complete main volume: add(0,7,2.8,130,68,58). The x=+/-65 and y=41 planes are its external bounds. Cuts form the front colonnade, entrance and windows; no whole-building cutaway exists. Depth and rear are explicitly approximate.",
+    "limitations": "Model-construction intent only. Rear and sides are simplified physical exterior proxies, not an actual surveyed complete building or photograph of those elevations."
+  },
+  "neutral_face_count": 236,
+  "photo_supported_mixed_material_boundary": "Visible narrow grey-green tile bands lack original face boundaries and remain omitted, as in v1. Whole primary wall-family color is an approximate representation, not exact observed surface-by-surface coloring."
+}

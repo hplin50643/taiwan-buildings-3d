@@ -9,9 +9,9 @@
 | ![彩色背向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
 
 
-### 照片近似彩色預覽
+### 側背原面材料續色
 
-依建築師供稿009／010／014實照：教研框體灰米、已證窗背灰藍綠、小圓講堂米灰與有限褐色露台；不套用旁側彩鱗大禮堂或夜間黃光。未知左外側／背端／廣大屋頂中性。
+保留全部原彩面，補色2,620個原中性三角面：左外側完整原牆、長窗與框條延續原右側材料，既有窗凹面延續灰米牆族，原背上跨梁補同族淺色。官方反向航拍顯示背端真有大型開口，原模型封口大面、露台人工切面與未知屋頂保中性。不套用旁側彩鱗大禮堂，不增加窗或構件。
 
 
 原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變；詳[來源與重建限制](APPEARANCE.md)。
@@ -25,7 +25,7 @@
 
 ## 證據與簡化
 - 側窗採加厚框條與凹槽近似，非逐一等比例復刻。
-- 背向端立面未充分可見，素面簡化；屋頂機電只保留主要體塊。
+- 本輪新增官方反向航拍可見背端大型開口；原模型把下部封成無界大面，這是原幾何簡化限制，保持中性且未改幾何。原上跨梁獨立背緣可沿淺色外牆家族補色。屋頂機電仍只保留主要體塊。
 - 跨棟連通橋省略，圓形講堂與大禮堂是不同量體。
 
 全部來源及照片/設計圖區分見 sources.json。來源原照片、PDF、內部對照圖不隨模型發布。照片年代不同，不聲稱完整2026現況。
@@ -58,10 +58,19 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 [STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
 
 
-以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+以上展示為本版彩色外觀模型的真網格渲染；rear所示灰色大封面是原模型錯缺大型開口的簡化，不能當作實物完整背牆。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 
 本發布包已直接採用canonical-edge-v2薄篩工具與結果，固定共邊插值方向，要求節點度數2、閉環及各Polygon有效，再做1 mm間距的0.8 mm XY開運算。舊版可能因共邊端點分開計算後取整而漏環，不能沿用舊面積值。這項修正不改STL、Blender或重建來源；真實薄特徵警示照常保留。
 
 另以0.2 mm間距逐層補查閉環及Polygon有效性，共 345 層通過，見[有效性報告](contour-validity-check.json)與[可攜檢查程式](check_contour_validity.py)。這項較密補查沒有做薄篩開運算；薄篩採樣間距仍是1 mm。兩者都不是正式切片、試印或全域壁厚保證。
+
+
+## 本版原面補色與核對
+
+[新版左側](appearance/left.png) · [新版右側](appearance/right.png) · [原版同相機正斜視](appearance-review-v2/original-front.png) · [原版同相機背向](appearance-review-v2/original-rear.png)。
+
+[逐點逐面及材質值核對](appearance-review-v2/model-verification.json) · [完整面域／中性原因](appearance-review-v2/boundary-continuity-audit.json) · [本輪來源判讀](appearance-review-v2/source-register.json) · [九圖審閱](appearance-review-v2/color-continuity-review.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。
+
+原appearance-review保留為前版歷史；本版由appearance-review-v2及appearance-freeze.json綁定。原幾何QA、未試印及支撐限制不變。校級校驗碼待授權發布時合併，本版目前只完成本機準備，未發布或遠端讀回。

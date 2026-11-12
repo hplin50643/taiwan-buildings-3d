@@ -21,7 +21,7 @@ def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
-indices=[]
+indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
 def boxed(p,x0,x1,y0,y1,z0,z1):
  return all(x0-.015<=mesh.vertices[v].co.x<=x1+.015 and y0-.015<=mesh.vertices[v].co.y<=y1+.015 and z0-.015<=mesh.vertices[v].co.z<=z1+.015 for v in p.vertices)
@@ -54,11 +54,42 @@ for p in mesh.polygons:
  for k in range(3):
   if boxed(p,-26,26,-64.85+k*1.4,-63.15+k*1.4,2.8,2.8+.7*(k+1)):i=6
  if z<=3:i=0
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+# V2 whole-support-plane material continuity. No centroid based new selection.
+# The original build_model.py defines full L-shaped volumes, not cut sections.
+# No new windows are inferred on the plain exterior volumes.
+EPS=.002
+def plane(p,axis,value):return all(abs(mesh.vertices[j].co[axis]-value)<EPS for j in p.vertices)
+def bounds(p,a,b):return all(all(a[k]-EPS<=mesh.vertices[j].co[k]<=b[k]+EPS for k in range(3)) for j in p.vertices)
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ n=p.normal;reason=None
+ # Main bar and wing complete rear exterior, including rear parapet faces.
+ # Their material family follows the observed white-grey inner-court shell.
+ if plane(p,1,56) and n.y>.99 and bounds(p,(-59.5,56,3),(57,56,108)):
+  reason='inferred_pale_complete_main_bar_wing_and_parapet_rear_support'
+ if plane(p,0,57) and n.x>.99 and bounds(p,(57,-60,3),(57,56,93.8)):
+  reason='inferred_pale_complete_right_wing_outer_support'
+ # Tall left terminal wall is part of the same visible white-grey shell.
+ if plane(p,0,-65) and n.x<-.99 and bounds(p,(-65,29,3),(-65,57,107.8)):
+  reason='inferred_pale_complete_left_terminal_outer_support'
+ if plane(p,1,57) and n.y>.99 and bounds(p,(-65,57,3),(-57,57,107.8)):
+  reason='inferred_pale_complete_left_terminal_rear_support'
+ if plane(p,0,-57) and n.x>.99 and bounds(p,(-57,29,3),(-57,57,107.8)):
+  reason='inferred_pale_complete_left_terminal_exposed_returns'
+ if plane(p,0,40.5) and n.x>.99 and bounds(p,(40.5,30,93.8),(40.5,56,100.8)):
+  reason='inferred_pale_complete_main_bar_upper_end_support'
+ # The front end y=-60 has coarse triangles spanning upper shell and lower
+ # colour bands suggested by the visible end. With no boundary in the mesh,
+ # keep that entire support plane neutral, not a diagonal subset.
+ # Roofs, base, existing window returns and mixed lower front end stay neutral.
+ if reason:
+  p.material_index=1;indices[p.index]=1;changed_faces.append(p.index);change_reasons[str(p.index)]=reason
+
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and colors preserved; unseen whole rear/side support material continuity inferred; mixed front end and roofs remain neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -70,6 +101,7 @@ scene.view_settings.view_transform='Standard';scene.view_settings.look='Medium H
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -85,15 +117,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown outer elevations flatroofs neutral; no new yellow ground-floor panels railings AC frames; lower screen pink and existing support piers pale, original coarse facade only','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unseen whole rear and side supports inferred pale white-grey from observed inner-court shell, not rear photographic confirmation. Roofs, base, existing window returns and mixed lower right front-end y=-60 support remain neutral. No new windows, yellow panels, railings, air conditioners, frames or geometry. Original pink screen and colored piers unchanged.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-220,-300,170),(0,0,54),220),'rear':((220,300,170),(0,0,54),220),'elevation':((-150,-300,54),(0,0,54),220),'source-angle':((-120,-300,72),(0,0,54),220),'top':((0,0,360),(0,0,0),220)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-220,-300,170),(0,0,54),220),'rear':((220,300,170),(0,0,54),220),'elevation':((-150,-300,54),(0,0,54),220),'source-angle':((-120,-300,72),(0,0,54),220),'left':((-340,0,160),(0,0,54),220),'right':((340,0,160),(0,0,54),220),'top':((0,0,360),(0,0,0),220)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -102,4 +135,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

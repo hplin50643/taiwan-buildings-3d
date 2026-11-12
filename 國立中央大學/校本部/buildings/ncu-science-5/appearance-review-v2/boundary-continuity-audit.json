@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "changed_faces": 48,
+  "remaining_neutral_faces": 853,
+  "whole_support_groups": [
+    {
+      "name": "main_and_wing_rear",
+      "axis": 1,
+      "plane": 56,
+      "neutral_faces": 34,
+      "new_material": 1,
+      "face_indices": [
+        146,
+        183,
+        218,
+        219,
+        481,
+        532,
+        560,
+        561,
+        562,
+        563,
+        564,
+        580,
+        581,
+        582,
+        583,
+        584,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        612,
+        613
+      ],
+      "all_original_neutral_faces_in_complete_support_changed": true
+    },
+    {
+      "name": "right_outer",
+      "axis": 0,
+      "plane": 57,
+      "neutral_faces": 2,
+      "new_material": 1,
+      "face_indices": [
+        405,
+        480
+      ],
+      "all_original_neutral_faces_in_complete_support_changed": true
+    },
+    {
+      "name": "left_outer",
+      "axis": 0,
+      "plane": -65,
+      "neutral_faces": 2,
+      "new_material": 1,
+      "face_indices": [
+        536,
+        544
+      ],
+      "all_original_neutral_faces_in_complete_support_changed": true
+    },
+    {
+      "name": "left_rear",
+      "axis": 1,
+      "plane": 57,
+      "neutral_faces": 2,
+      "new_material": 1,
+      "face_indices": [
+        538,
+        545
+      ],
+      "all_original_neutral_faces_in_complete_support_changed": true
+    },
+    {
+      "name": "left_returns",
+      "axis": 0,
+      "plane": -57,
+      "neutral_faces": 6,
+      "new_material": 1,
+      "face_indices": [
+        535,
+        537,
+        539,
+        542,
+        546,
+        547
+      ],
+      "all_original_neutral_faces_in_complete_support_changed": true
+    },
+    {
+      "name": "main_upper_end",
+      "axis": 0,
+      "plane": 40.5,
+      "neutral_faces": 2,
+      "new_material": 1,
+      "face_indices": [
+        222,
+        223
+      ],
+      "all_original_neutral_faces_in_complete_support_changed": true
+    }
+  ],
+  "mixed_right_front_end_entirely_retained_neutral": {
+    "plane": "y=-60",
+    "count": 10,
+    "face_indices": [
+      317,
+      318,
+      319,
+      320,
+      321,
+      384,
+      385,
+      386,
+      387,
+      388
+    ]
+  },
+  "all_newly_colored_faces_previously_neutral": true,
+  "all_original_colored_faces_retained": true,
+  "no_changed_horizontal_faces": true,
+  "no_centroid_selection_for_new_color": true,
+  "no_triangle_split_or_new_geometry": true,
+  "geometry_classification": "Original full L-wing and terminal-wall box unions. Exterior support planes, not an artificial cropped/cutaway section. This identifies the original model intent only, not surveyed real-world completeness.",
+  "limits": "No outer/back photo obtained. Whole selected supports are explicitly inferred same-component pale shell. The front end with plausible lower mixed bands lacks complete mesh color boundaries and stays entirely neutral. Roofs, base and existing window reveals stay original neutral.",
+  "newly_colored_area_mm2": 26167.00062561035,
+  "original_neutral_area_mm2": 78497.73527436811,
+  "original_neutral_area_percent_colored": 33.33472046569307
+}

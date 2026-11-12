@@ -9,9 +9,11 @@
 | ![彩色背向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
 
 
-### 照片近似彩色預覽
+### 照片近似彩色預覽 v2
 
-依校方女14舍入口實照，既有遮屏框淺灰青、密屏灰色（不是玻璃），入口大壁柱灰石／低窄附柱磚褐、拱圈藍灰與低雨棚灰綠。不補新構件；背平切、側面、屋頂及粗化上端空白保持中性。
+[左視](appearance/left.png) · [右視](appearance/right.png) · [原色同相機正面](appearance-review-v2/original-front.png) · [原色同相機背向](appearance-review-v2/original-rear.png) · [本次審核](appearance-review-v2/color-continuity-review.json)
+
+依校方女14舍入口實照，保留原遮屏、石柱、磚褐附柱、藍灰拱框與雨棚配色。本次僅把58個狹長窗槽的464個實體返邊沿用相鄰淺灰青色；這是同牆材料延續推論，暗色槽背不變。照片中的雨棚含綠板與紅框，無完整分件所以不改。人工背平切、側截面、屋頂及粗化空白保持中性，共1441面。
 
 
 原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變；詳[來源與重建限制](APPEARANCE.md)。

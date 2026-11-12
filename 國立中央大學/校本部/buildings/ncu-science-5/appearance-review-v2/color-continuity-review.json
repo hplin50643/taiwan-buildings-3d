@@ -1,0 +1,82 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T22:33:58.748844+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 948369,
+      "sha256": "52e850b037241e70ac6a438989bb4f4cbbe41cdf98e79cd6acbee6be3ec996c1",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 822483,
+      "sha256": "bb173423f9273c7e10168b8a2f0ec3e578f51b3e120b2e9b1c1de38f467aebd1",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 889098,
+      "sha256": "807fd3a5842e4ab82ce90cc23e39f89e4c7dd1d737387c735905a0ad59c2085b",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 919282,
+      "sha256": "4c406ffd4b0459d9dfba30af9d0a28c2916895409af705cc9df793722783cc77",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 933187,
+      "sha256": "463cf476791543d3ec2a035e703f1f49acd96860a249e2c8828abe156376a578",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 836943,
+      "sha256": "4c02676af9206c815068b198395abb3add7d48174a3b4a85046c1e7eb5dcf1f3",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 929975,
+      "sha256": "c3f8a409483ee0fc7b2503c59635a23850c68a9a4ab8ee5d481254d382f61da1",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 949105,
+      "sha256": "8d0426708ced1f12e1af06709d7d17695047c6ab8443bde38c9a10be94d95fe2",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 804893,
+      "sha256": "d57537313f1d69f219cba0e3fbe94a8d87640f962f28f00babe818f25c163f46",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_images": 3,
+  "directly_viewed_facade_photographs": 2,
+  "map_illustration_not_facade_evidence": 1,
+  "findings": [
+    "Complete original rear and side exterior support planes now use the original pale white-grey main-shell material. These retain their intentionally plain original geometry; no invented windows or diagonal colored triangles.",
+    "All 10 original neutral faces on the right front end y=-60 remain neutral because coarse triangles lack a complete boundary for plausible lower mixed bands. Roofs, base and existing window returns remain original neutral.",
+    "Original dusty pink-taupe projecting screen, ivory balconies, pale support piers and green-grey glazing proxies remain unchanged. No yellow panels, equipment, new facade lines or geometry were added.",
+    "Tall terminal outer and rear faces, short exposed returns and main-bar upper end have consistent whole-support pale material assignment. 48 original neutral faces changed and 853 remain neutral.",
+    "Seven final images and two original-material comparisons inspected in full at 900x800, Cycles CPU96, single-thread, no denoising. Front/rear original comparisons have numerically identical camera parameters and lighting."
+  ],
+  "known_limits": [
+    "No outer/back photograph obtained. Pale rear/side colors are explicitly declared same-component continuity inference, not direct exterior evidence or a 2026 survey.",
+    "Commons EXIF 2013-06-01 confirmed; official SB5 capture date unknown. Official map icon is only an illustration and not a color/detail reference.",
+    "Original coarse merged volumes and estimated dimensions remain. No geometry survey, formal slicing, full wall-thickness certification or physical trial print.",
+    "Original screen/balcony/gallery/roof-opening support, bridging, fragile details and support removal caveats remain."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

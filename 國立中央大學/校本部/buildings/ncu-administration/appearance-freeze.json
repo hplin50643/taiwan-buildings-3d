@@ -1,332 +1,120 @@
 {
-  "revision": "appearance-color-v1",
-  "head_basis": "1cf1c7cdc42fba416d03423169935af78b6960de",
-  "repository_path": "國立中央大學/校本部/buildings/ncu-administration",
-  "scope": "Existing photo-derived front exterior color-only addendum; unknown sides/rear/roof neutral; no new geometry",
-  "original_files_unchanged": {
-    "validate_model.py": true,
-    "validation.json": true,
-    "model.stl": true,
-    "model-info.json": true,
-    "model.obj": true,
-    "thin-feature-check.json": true,
-    "sources.json": true,
-    "check_contour_validity.py": true,
-    "scene.blend": true,
-    "source-model-comparison.json": true,
-    "contour-validity-check.json": true,
-    "requirements.txt": true,
-    "layer-check.json": true,
-    "check_layers.py": true,
-    "check_thin_features.py": true,
-    "build_model.py": true,
-    "render_preview.py": true,
-    "previews/rear.png": true,
-    "previews/front.png": true,
-    "previews/elevation.png": true
-  },
-  "checksum_manifest_policy": "Existing SHA256SUMS regenerated for new package; not classified as immutable geometry or preview",
-  "representative_policy": "All original three previews preserved; homepage and school representative selection unchanged",
-  "geometry": {
-    "vertices": 2748,
-    "triangles": 5500,
-    "bounds_mm": [
-      150,
-      87,
-      47.1
-    ]
-  },
-  "review_results": "appearance-review/",
-  "clean_rebuild": "appearance-review/clean-rebuild-equality.json",
+  "revision": "color-v2-side-rear-continuity",
+  "head_basis": "123e103381f4d7eb98627857d9b720b8e497ecaa",
+  "scope": "54 originally neutral faces: 24 exterior side/rear wall faces, 24 left-band structural reveals, 6 vertical fascia faces. Inferred material continuity, not four-side photograph verification.",
+  "geometry_verified": "appearance-review-v2/model-verification.json",
+  "clean_rebuild": "appearance-review-v2/clean-rebuild-equality.json",
+  "historical_reviews": "appearance-review contains retained v1 history, superseded for current material assignments and render bindings by appearance-review-v2 and this freeze.",
   "files": [
     {
       "path": "APPEARANCE.md",
-      "sha256": "832d1ad5b58d89b0645ff5e23f3b52e8b09bf5d776e2bad3562b94b7d2cc2e52",
-      "bytes": 2982
+      "sha256": "c9ad04226c56aa0ba84a20161cd6ba57190053b8212098fd88f8269912ce1357",
+      "bytes": 4325
     },
     {
       "path": "README.md",
-      "sha256": "d2e5f62b9ed52bde14efa4ed50d814960ebf93c8d78fd12f22fcf0044d30e176",
-      "bytes": 4675
+      "sha256": "4de423d2d782c6ef25eaee0dd2d6fd60778faf83ce1be1a0d0e473f4c859ece8",
+      "bytes": 5326
     },
     {
       "path": "README.zh-TW.md",
-      "sha256": "d2e5f62b9ed52bde14efa4ed50d814960ebf93c8d78fd12f22fcf0044d30e176",
-      "bytes": 4675
+      "sha256": "4de423d2d782c6ef25eaee0dd2d6fd60778faf83ce1be1a0d0e473f4c859ece8",
+      "bytes": 5326
     },
     {
       "path": "appearance/elevation.png",
-      "sha256": "cf98350566343a6eb37c880b7feb54043c4f49bf036f88926d7561d919a3378f",
-      "bytes": 850456
+      "sha256": "d87c2e17923194b9823979d88bc0c492d5d477db4715fdb8842ce9324385396d",
+      "bytes": 816259
     },
     {
       "path": "appearance/front.png",
-      "sha256": "93433802e73a3f453e3027891b12560c0562a1be8bf784b0f6ad7adf1ddb55e8",
-      "bytes": 911670
+      "sha256": "0ee31501d2eca7884b122f8cbd06e8be021dea4c3ba1ea8f0ea016c5096479ff",
+      "bytes": 874553
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "7ce932180bca26cfafe577edb8f36e7c7033d060d0541366be5253e08cfc732c",
+      "bytes": 835261
     },
     {
       "path": "appearance/rear.png",
-      "sha256": "3f04bd7d8109c52d097f1d13d35a2effecfb58586097abcce8a0b2662ff56eb3",
-      "bytes": 820744
+      "sha256": "5843b3a889231ebebb5fef7e4cd29dfb60860e7a16db3ccf1574b533152f6ba2",
+      "bytes": 781322
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "01189e3f98e50427022f5a50f5c71c19239c3613c73a21eb1aecf73f05b94f2d",
+      "bytes": 834043
     },
     {
       "path": "appearance/source-angle.png",
-      "sha256": "19c99282ef1e3c89a6f7954c5851930bb3b41881d72c97e82dd3452c22150cca",
-      "bytes": 873236
+      "sha256": "795e0ef5f8b2c3da438685bba2105feb4a36d7bdc720568fdbee016ec99d26eb",
+      "bytes": 840241
     },
     {
       "path": "appearance/top.png",
-      "sha256": "a51083931060c3ec8f5ca64eff6937ae327f51645c6cebf3e0880e92ffc66c33",
-      "bytes": 841376
+      "sha256": "97f03f1f984989590f993052c2607d3c9ee0ebcb6968cf79c742d8dab5a32523",
+      "bytes": 790859
     },
     {
       "path": "appearance-materials.json",
-      "sha256": "e14cb233d60b7f390f1f56950d9441253af852aab88fd77e3f7b61660f4dc278",
-      "bytes": 40005
+      "sha256": "f282a3d44340b9b8a6b8caf0816648d8b1706998c9f62eeeb8dff7c104ad117c",
+      "bytes": 82826
     },
     {
-      "path": "appearance-review/clean-geometry-review.json",
-      "sha256": "3acab3b20214e6dbf4498b84ca40c8534950064c84a9482759d5aa0976c92c94",
-      "bytes": 1080
+      "path": "appearance-review-v2/clean-rebuild-equality.json",
+      "sha256": "ee48ac26b46caae8a8f407826f7500fc00458142210a3f7c9afe9360a40f52c2",
+      "bytes": 345
     },
     {
-      "path": "appearance-review/clean-rebuild-equality.json",
-      "sha256": "ef391dfcdc629346fe8e70db376a4358897beb80e62157969a387eacab783ced",
-      "bytes": 1340
+      "path": "appearance-review-v2/color-continuity-review.json",
+      "sha256": "d5a2585162591c6c6503711f37dc46244f219c48d4e63028bda7e56ec372c898",
+      "bytes": 1914
     },
     {
-      "path": "appearance-review/color-visual-review.json",
-      "sha256": "1c06cf94e3e3b1328dd920c96ac08303c5ea1422172afa6590540fddb2936683",
-      "bytes": 9179
+      "path": "appearance-review-v2/comparison.png",
+      "sha256": "9b2767f92532b2279d5f96d00206e805b739750fdb903a7d6a166498f98e79ef",
+      "bytes": 1444485
     },
     {
-      "path": "appearance-review/final-review-binding.json",
-      "sha256": "d02f001a0e6f0ee257dde6f356fd2eb0ac372b1479391f04bf5ffbf3e8328269",
-      "bytes": 6200
+      "path": "appearance-review-v2/material-value-verification.json",
+      "sha256": "bfe61f13a328df282d0f21849fb037e30ef3995ab77a3f9b10d5dc0f67dec401",
+      "bytes": 4407
     },
     {
-      "path": "appearance-review/geometry-visual-review.json",
-      "sha256": "72066662ce8979bb4210e45b232fdce29d9068f3a3c0dd22a1c0efc9dae70c9a",
-      "bytes": 2526
+      "path": "appearance-review-v2/model-verification.json",
+      "sha256": "4061c3a6a4fe30ba7bc9b05bfceac6c6e11f072b4acb1c9bf105a721b9002155",
+      "bytes": 2044
     },
     {
-      "path": "appearance-review/material-region-check.json",
-      "sha256": "d63e6458c96e949981d5287ff488e7e4f06796cd47b67a9bdf199b8efab708a9",
-      "bytes": 521
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "555db6b87bbc6bf4814cb09e3ebc529de92ddfa6933a489d41a0f59877c046c0",
+      "bytes": 867725
     },
     {
-      "path": "appearance-review/output-geometry-review.json",
-      "sha256": "34450bede25c8afe4743579c64e3f209d4beffb33c44639b0e226a37eaf24366",
-      "bytes": 1080
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "cf989f9762306ea8f27ff8665483d54dc8793d3948ea43a06674c9564e7feeaf",
+      "bytes": 793946
     },
     {
-      "path": "appearance-review/png-privacy.json",
-      "sha256": "bedd42a89d964e1309157e215ac947e3d3328b05d1b525b4b1c351970521825e",
-      "bytes": 157
-    },
-    {
-      "path": "appearance-review/preservation-and-readme.json",
-      "sha256": "0cdaf8db2db75a8eb218305b75e38582c28d9dd910ab9972605b8bf644f64447",
-      "bytes": 5120
-    },
-    {
-      "path": "appearance-sources.json",
-      "sha256": "5b1a990207956d780550ccdb6f16f697028fa60d7b316c46443799852527695c",
-      "bytes": 5039
+      "path": "appearance-review-v2/render-bindings.json",
+      "sha256": "8658b79d9835e3f626b976cbd0e59356ece25819e7ab8ecc02c6c97665f24526",
+      "bytes": 4250
     },
     {
       "path": "appearance.3mf",
-      "sha256": "1af4fbd80610873c16ee5e91b130164ce5787ff7ed2d80ccb30621544eda5f05",
-      "bytes": 50339
+      "sha256": "3864bcfcfe67ac076d356385ed24d56842c193f2186d759838dcac27faa5891f",
+      "bytes": 50330
     },
     {
       "path": "appearance.blend",
-      "sha256": "d8669032bced7693f89a74d6455e73f876979d908b890e39486cf209158dc240",
-      "bytes": 876028
+      "sha256": "bc439fadbebf2c4ff5801d9ca29069f65fd7eeb5d727b63819df0a06692a1723",
+      "bytes": 876120
     },
     {
       "path": "build_appearance.py",
-      "sha256": "a9f3336e12ce6358e9bafa84cf97c43fbdfed7b699d19695d17a9f522cea5b1b",
-      "bytes": 8220
-    },
-    {
-      "path": "build_model.py",
-      "sha256": "c87de47fb151721725cc98738fa57118023307334951d7aa9766a8da5b7d1887",
-      "bytes": 2884
-    },
-    {
-      "path": "check_contour_validity.py",
-      "sha256": "18b6320883c371664e256d25f132589566d819d1d750cf2391add2bcee5ddc8a",
-      "bytes": 2119
-    },
-    {
-      "path": "check_layers.py",
-      "sha256": "73cfedd2adae5f4e52cafdd11c62454286f22b099c20616d43256a46314863c3",
-      "bytes": 3062
-    },
-    {
-      "path": "check_thin_features.py",
-      "sha256": "8445c5db5fec8220525b3e3b9aa3097f1cabb9b35441783aa0b6f754f1d0d659",
-      "bytes": 2554
-    },
-    {
-      "path": "contour-validity-check.json",
-      "sha256": "5910dffe5cb84c527d5a3217f46fe128498d4fc79ae814c4ce80082c3057bfea",
-      "bytes": 16519
-    },
-    {
-      "path": "layer-check.json",
-      "sha256": "02379e18c2acedadd2435efa8004927ab0b1d052ec401ca87a0c98c82fdb93af",
-      "bytes": 36853
-    },
-    {
-      "path": "model-info.json",
-      "sha256": "ac35db55929642467955afd3f3a5197c4905e2089963c4e9970a409c3cd32051",
-      "bytes": 560
-    },
-    {
-      "path": "model.obj",
-      "sha256": "d11f793aec2bbf636dcb343455e2d0fe2e1b31511c3df4e8aef5b20a34731854",
-      "bytes": 194441
-    },
-    {
-      "path": "model.stl",
-      "sha256": "2c748f04cc57e3ad64d27689f90cc90c2c1e81353d4d13381d2bdf096f880bef",
-      "bytes": 275084
-    },
-    {
-      "path": "previews/elevation.png",
-      "sha256": "e062eb2f7e6e4e7f801389fbb373003fa07657d4d475c7e1ba47de1ad3996d3f",
-      "bytes": 1305534
-    },
-    {
-      "path": "previews/front.png",
-      "sha256": "2a1019a7231c0b4cb38f19bf5ae327b19a03f498882107c205a08b627c50ad88",
-      "bytes": 1563927
-    },
-    {
-      "path": "previews/rear.png",
-      "sha256": "f1f79af86fa2fe6da9ecba1281eec1706d5d8929f77c3a28ac21ae28836ffb9e",
-      "bytes": 1407593
-    },
-    {
-      "path": "render_preview.py",
-      "sha256": "1baeb9e8bb5183d516ca2cbac5960437ef1a1265d116dfaa4775c24a27df7df1",
-      "bytes": 3195
-    },
-    {
-      "path": "requirements.txt",
-      "sha256": "df04896d2eca85c35c3cbc39502f30edcad2a6f436e63e4ffe6702748bf5658b",
-      "bytes": 61
-    },
-    {
-      "path": "scene.blend",
-      "sha256": "9cbedfb58185df23b5c225ae278e49a04ff27119aac2d39692e6adf9992c696b",
-      "bytes": 714700
-    },
-    {
-      "path": "source-model-comparison.json",
-      "sha256": "6f496949b30375638baa974686fa832e901d80544d0f4e79b70a020eb6b861b9",
-      "bytes": 680
-    },
-    {
-      "path": "sources.json",
-      "sha256": "83e1813255eb74ad18c0bd39a38e97878b755182488a4806172507857d76e8ca",
-      "bytes": 1906
-    },
-    {
-      "path": "thin-feature-check.json",
-      "sha256": "b9727876b5b307cd07b4b0d79c04356a294dbfca82d260ca53567fc484ad5645",
-      "bytes": 9482
-    },
-    {
-      "path": "validate_model.py",
-      "sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95",
-      "bytes": 5222
-    },
-    {
-      "path": "validation.json",
-      "sha256": "b32041a68a19bec586a213f0074cc3f5064c05b875c02ede406f6074005e0d9c",
-      "bytes": 1528
-    },
-    {
-      "path": "verify_color_geometry.py",
-      "sha256": "cb2878cf2f1418ff528aaa0ce85cf7af6644b0e9127d63d4a77c2209cdefd04d",
-      "bytes": 3609
+      "sha256": "8dbc79b6f4ecaefbab702da475bc9092a719ca2796c5e8f34c043730729240db",
+      "bytes": 10414
     }
-  ],
-  "documentation_revision": {
-    "status": "color-only README embeds; original image files retained",
-    "baseline_commit": "b76b036c7c88c26a839738b934f907795c29791b",
-    "writer_static_audit": {
-      "status": "WRITER_STATIC_DOCUMENTATION_AUDIT_ONLY",
-      "checked_at_utc": "2026-10-29T15:32:06.882525+00:00",
-      "baseline_commit": "b76b036c7c88c26a839738b934f907795c29791b",
-      "scope": "Only README image embeds changed to existing color images. Existing geometry, scripts, all PNG and original preview files unchanged. This is static docs/link/hash verification, NOT a new human source or visual review.",
-      "documents": [
-        {
-          "path": "README.md",
-          "before_sha256": "dc86bda2edca269a4616bb47d21bc9e5441c7fc6978de4f61a3be591b52242aa",
-          "after_sha256": "d2e5f62b9ed52bde14efa4ed50d814960ebf93c8d78fd12f22fcf0044d30e176",
-          "embedded_color_images": [
-            "appearance/front.png",
-            "appearance/source-angle.png",
-            "appearance/elevation.png",
-            "appearance/rear.png",
-            "appearance/top.png"
-          ],
-          "old_embedded_images": 0,
-          "local_links_verified_against_base_tree": [
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/front.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/source-angle.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/elevation.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/rear.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/top.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance.3mf",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance.blend",
-            "國立中央大學/校本部/buildings/ncu-administration/APPEARANCE.md",
-            "國立中央大學/校本部/buildings/ncu-administration/model.stl",
-            "國立中央大學/校本部/buildings/ncu-administration/scene.blend",
-            "國立中央大學/校本部/buildings/ncu-administration/build_model.py",
-            "國立中央大學/校本部/buildings/ncu-administration/validation.json",
-            "國立中央大學/校本部/buildings/ncu-administration/sources.json",
-            "國立中央大學/校本部/buildings/ncu-administration/contour-validity-check.json",
-            "國立中央大學/校本部/buildings/ncu-administration/check_contour_validity.py"
-          ]
-        },
-        {
-          "path": "README.zh-TW.md",
-          "before_sha256": "dc86bda2edca269a4616bb47d21bc9e5441c7fc6978de4f61a3be591b52242aa",
-          "after_sha256": "d2e5f62b9ed52bde14efa4ed50d814960ebf93c8d78fd12f22fcf0044d30e176",
-          "embedded_color_images": [
-            "appearance/front.png",
-            "appearance/source-angle.png",
-            "appearance/elevation.png",
-            "appearance/rear.png",
-            "appearance/top.png"
-          ],
-          "old_embedded_images": 0,
-          "local_links_verified_against_base_tree": [
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/front.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/source-angle.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/elevation.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/rear.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance/top.png",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance.3mf",
-            "國立中央大學/校本部/buildings/ncu-administration/appearance.blend",
-            "國立中央大學/校本部/buildings/ncu-administration/APPEARANCE.md",
-            "國立中央大學/校本部/buildings/ncu-administration/model.stl",
-            "國立中央大學/校本部/buildings/ncu-administration/scene.blend",
-            "國立中央大學/校本部/buildings/ncu-administration/build_model.py",
-            "國立中央大學/校本部/buildings/ncu-administration/validation.json",
-            "國立中央大學/校本部/buildings/ncu-administration/sources.json",
-            "國立中央大學/校本部/buildings/ncu-administration/contour-validity-check.json",
-            "國立中央大學/校本部/buildings/ncu-administration/check_contour_validity.py"
-          ]
-        }
-      ],
-      "original_review_claims": "Original reviewer documentation statements and hashes below are historical; only image/geometry evidence remains applicable to unchanged bytes."
-    },
-    "no_geometry_or_image_byte_changes": true
-  }
+  ]
 }

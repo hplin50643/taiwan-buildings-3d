@@ -1,0 +1,182 @@
+{
+  "status": "passed",
+  "classification": "Every vertex tested against complete original component bounds and supporting planes, not centroid thresholds. Independent exhaustive plane checks find no neutral triangle remaining on the repaired walls or vertical fascia.",
+  "all_precolored_faces_unchanged": true,
+  "all_nonvertical_faces_unchanged": true,
+  "base_unchanged": true,
+  "complete_repaired_planes": [
+    {
+      "axis": 0,
+      "coordinate": -63.5,
+      "normal_sign": -1,
+      "z_range": [
+        3,
+        49
+      ],
+      "faces": [
+        80,
+        185
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 0,
+      "coordinate": 63.5,
+      "normal_sign": 1,
+      "z_range": [
+        3,
+        49
+      ],
+      "faces": [
+        358,
+        388
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 1,
+      "coordinate": 60,
+      "normal_sign": 1,
+      "z_range": [
+        3,
+        49
+      ],
+      "faces": [
+        186,
+        187,
+        188,
+        389,
+        390,
+        391,
+        392,
+        442,
+        492
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 0,
+      "coordinate": -65.5,
+      "normal_sign": -1,
+      "z_range": [
+        49,
+        54
+      ],
+      "faces": [
+        500,
+        518
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 0,
+      "coordinate": 65.5,
+      "normal_sign": 1,
+      "z_range": [
+        49,
+        54
+      ],
+      "faces": [
+        557,
+        569
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 1,
+      "coordinate": 61,
+      "normal_sign": 1,
+      "z_range": [
+        49,
+        54
+      ],
+      "faces": [
+        594,
+        634
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 1,
+      "coordinate": 61.5,
+      "normal_sign": 1,
+      "z_range": [
+        49,
+        54
+      ],
+      "faces": [
+        521,
+        524,
+        570,
+        574
+      ],
+      "all_material": 1
+    },
+    {
+      "axis": 0,
+      "coordinate": 15.5,
+      "normal_sign": 1,
+      "z_range": [
+        54,
+        74.5
+      ],
+      "faces": [
+        2331,
+        2332
+      ],
+      "all_material": 5
+    },
+    {
+      "axis": 1,
+      "coordinate": 54,
+      "normal_sign": 1,
+      "z_range": [
+        54,
+        74.5
+      ],
+      "faces": [
+        2322,
+        2323,
+        2333
+      ],
+      "all_material": 5
+    },
+    {
+      "axis": 0,
+      "coordinate": 45,
+      "normal_sign": 1,
+      "z_range": [
+        54,
+        62.5
+      ],
+      "faces": [
+        2641,
+        2642
+      ],
+      "all_material": 5
+    },
+    {
+      "axis": 1,
+      "coordinate": 52,
+      "normal_sign": 1,
+      "z_range": [
+        54,
+        62.5
+      ],
+      "faces": [
+        2639,
+        2643
+      ],
+      "all_material": 5
+    }
+  ],
+  "changed_faces": 32,
+  "changed_reason_counts": {
+    "inferred_complete_outer_side_rear_tile_wall": 13,
+    "inferred_continuous_vertical_tile_fascia": 10,
+    "inferred_roof_tower_side_rear_wall": 5,
+    "inferred_adjacent_roof_room_side_rear_wall": 4
+  },
+  "materials_json_sha256": "c22d7b9fc7e23a9d423e6bc09ee072ae8da399909d75e36266f8d07d078a6a96",
+  "limitations": "Side/rear material continuity inference on original simplified envelope; no geometric subdivision or invented rear windows. Broad roof waterproofing, concrete soffits/steps, base and original unresolved mixed window recesses retained."
+}

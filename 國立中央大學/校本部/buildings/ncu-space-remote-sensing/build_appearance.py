@@ -22,7 +22,13 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
+change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
+# V2 selection tests every original vertex, not triangle centroids.
+def plane(p,axis,value):return all(abs(mesh.vertices[j].co[axis]-value)<.001 for j in p.vertices)
+def within(p,lo,hi):return all(all(lo[a]-.001<=mesh.vertices[j].co[a]<=hi[a]+.001 for a in range(3)) for j in p.vertices)
 def boxed(p,x0,x1,y0,y1,z0,z1):
  return all(x0-.015<=mesh.vertices[v].co.x<=x1+.015 and y0-.015<=mesh.vertices[v].co.y<=y1+.015 and z0-.015<=mesh.vertices[v].co.z<=z1+.015 for v in p.vertices)
 def dish_surface(p):
@@ -76,11 +82,25 @@ for p in mesh.polygons:
  # Real rear shade cuts also penetrate the porch; keep the two shared recess backs dark.
  if near(y,19.5,.015) and ny<-.8 and any(abs(x-xx)<7.01 for xx in [-20,0,20]) and any(zz+9.19<z<zz+11.01 for zz in [7,22,37]):i=4
  if z<=3:i=0
+ original_indices.append(i);reason=None
+ if i==0:
+  # Complete original three-storey U envelope: same tile-wall family inferred.
+  if abs(nz)<.001 and within(p,(-63.5,-60,3),(63.5,60,49)) and ((plane(p,0,-63.5) and nx<-.999) or (plane(p,0,63.5) and nx>.999) or (plane(p,1,60) and ny>.999)):
+   i=1;reason='inferred_complete_outer_side_rear_tile_wall'
+  # Entire original fascia vertical outer perimeter, including recessed rear center.
+  elif abs(nz)<.001 and within(p,(-65.5,-61.5,49),(65.5,61.5,54)) and ((plane(p,0,-65.5) and nx<-.999) or (plane(p,0,65.5) and nx>.999) or ((plane(p,1,61) or plane(p,1,61.5)) and ny>.999)):
+   i=1;reason='inferred_continuous_vertical_tile_fascia'
+  # Original roof housing and adjacent smaller room, no new windows or antennas.
+  elif abs(nz)<.001 and within(p,(-15.5,26,54),(15.5,54,74.5)) and ((plane(p,0,15.5) and nx>.999) or (plane(p,1,54) and ny>.999)):
+   i=5;reason='inferred_roof_tower_side_rear_wall'
+  elif abs(nz)<.001 and within(p,(27,28,54),(45,52,62.5)) and ((plane(p,0,45) and nx>.999) or (plane(p,1,52) and ny>.999)):
+   i=5;reason='inferred_adjacent_roof_room_side_rear_wall'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; outer side/rear walls, fascia and roof room backs inferred from material continuity; roofs and unresolved mixed recesses neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -107,9 +127,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown outer walls backs broad roofs neutral; shade recesses are dark void proxies not glass; original smooth dish does not add lattice feed struts cables signs or people','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Outer side/rear walls and vertical fascia use inferred existing tile material continuity; tower/room backs use inferred pale wall continuity, not direct rear photographic verification. Broad roofs/base and unsegmented mixed window-frame/structural reveals remain neutral. All original colored faces and RGBA/roughness preserved. No invented windows, lattice, struts, cables, signs or people.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-195,-290,155),(0,0,50),220),'rear':((195,290,155),(0,0,50),220),'elevation':((0,-320,50),(0,0,50),220),'source-angle':((-140,-280,100),(0,20,60),220),'top':((0,0,360),(0,0,0),220)}
+views={'front':((-195,-290,155),(0,0,50),220),'rear':((195,290,155),(0,0,50),220),'elevation':((0,-320,50),(0,0,50),220),'source-angle':((-140,-280,100),(0,20,60),220),'left':((-320,0,150),(0,0,50),220),'right':((320,0,150),(0,0,50),220),'top':((0,0,360),(0,0,0),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

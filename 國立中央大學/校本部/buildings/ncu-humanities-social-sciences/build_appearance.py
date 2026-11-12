@@ -14,7 +14,7 @@ verts=[tuple(v.co) for v in mesh.vertices];faces=[tuple(p.vertices) for p in mes
 assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
-# Two architect exterior photographs; remaining photos unread, capture date unknown.
+# Five architect exterior photographs reviewed; sixth gallery image is interior and excluded. Capture dates unknown.
 palette=[('Unknown roof rear outer flank display base','#A7A9A5',.86),('Muted ochre orange source-visible cladding','#B88A4D',.85),('Pale beige grey courtyard wall proxy','#C4BFB0',.84),('Coarse grey source-visible tower side and window box','#92968C',.87),('Dark grey green existing glazing or mixed recess proxy','#455652',.5),('Dark brown original frames and bridge','#655246',.8),('Grey original stair and platform walking surface','#9D9D92',.86)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
@@ -22,6 +22,10 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
+change_regions={}
+def bounds(v,lo,hi):return all(all(lo[j]-.016<=c[j]<=hi[j]+.016 for j in range(3)) for c in v)
 def near(v,t,e=.035):return abs(v-t)<e
 for p in mesh.polygons:
  x,y,z=p.center;n=p.normal;i=0
@@ -57,11 +61,32 @@ for p in mesh.polygons:
  if near(y,-59.9,.015) and n.y<-.8 and -7.01<x<60.01 and 3<z<21.01:i=3
  # No unsupported horizontal roof finish. Base and unseen opposite/rear remain neutral.
  if z<=3 or (n.z>.8 and z>40):i=0
+ original_indices.append(i)
+ region=None
+ if i==0 and abs(n.z)<.1 and z>3:
+  v=[tuple(mesh.vertices[k].co) for k in p.vertices]
+  # Source photo 2 shows ochre wrapping the outer theatre wall; far length is inferred.
+  if near(x,61,.015) and n.x>.8 and bounds(v,[61,-50,3],[61,18,44.8]):i=1;region='theatre_outer_wall_visible_plus_continuity'
+  # Same full theatre volume return. Approximate continuity, not a photographed rear.
+  elif near(y,18,.015) and n.y>.8 and bounds(v,[13,18,3],[61,18,44.8]):i=1;region='theatre_rear_return_inferred'
+  # Grey tower shell is kept distinct from ochre front and beige teaching wing.
+  elif near(x,-55.5,.015) and n.x<-.8 and bounds(v,[-55.5,-53,3],[-55.5,-33,88.8]):i=3;region='tower_opposite_side_inferred'
+  elif near(y,-33,.015) and n.y>.8 and bounds(v,[-55.5,-33,3],[-30.5,-33,88.8]):i=3;region='tower_rear_shell_return_inferred'
+  # Closed external mass faces of the original teaching/rear wings, not open cut sections.
+  # This is only a base-finish inference; no rear windows, tiles or strips are invented.
+  elif near(x,-55,.015) and n.x<-.8 and min(c[1] for c in v)>=-33-.016:i=2;region='teaching_outer_flank_inferred'
+  elif near(y,59.5,.015) and n.y>.8 and bounds(v,[-55,59.5,3],[39,59.5,80.8]):i=2;region='teaching_rear_return_inferred'
+  elif near(x,39,.015) and n.x>.8 and bounds(v,[39,34.5,3],[39,59.5,67.8]):i=2;region='rear_wing_end_inferred'
+  # Vertical wall reveals of existing courtyard slots continue the pale tile surface.
+  # Original dark mixed glazing/louver/spandrel backings remain unchanged.
+  elif abs(n.y)>.8 and any(bounds(v,[-30.3,yy-2.6,27],[-29,yy+2.6,74]) for yy in [-30,-13,4,21,38]):i=2;region='courtyard_slot_jamb_continuity'
+  elif abs(n.x)>.8 and any(bounds(v,[xx-2.4,34.5,25],[xx+2.4,36,58]) for xx in [-26,-12,2,16,30]):i=2;region='rear_courtyard_slot_jamb_continuity'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_regions[str(p.index)]=region
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; material continuity inferred on identified closed outer walls; mixed recesses, roofs and base retained'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-material-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -88,9 +113,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown roofs rear outer flanks neutral; slot colors are mixed recess proxies; no invented louvers or tile seams','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-material-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_regions':change_regions,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Outer closed wall base finish inferred by component; roofs base and unsupported surfaces neutral; original mixed recess backings preserved; no invented rear openings or tile seams','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-195,-260,160),(0,0,44.4),220),'rear':((195,260,160),(0,0,44.4),220),'elevation':((0,-300,44.4),(0,0,44.4),220),'source-angle':((150,-300,75),(0,0,44.4),220),'top':((0,0,330),(0,0,0),220)}
+views={'front':((-195,-260,160),(0,0,44.4),220),'rear':((195,260,160),(0,0,44.4),220),'elevation':((0,-300,44.4),(0,0,44.4),220),'source-angle':((150,-300,75),(0,0,44.4),220),'left':((-300,0,160),(0,0,44.4),220),'right':((300,0,160),(0,0,44.4),220),'top':((0,0,330),(0,0,0),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

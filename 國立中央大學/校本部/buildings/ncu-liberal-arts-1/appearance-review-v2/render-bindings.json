@@ -1,0 +1,161 @@
+{
+  "render_engine": "CYCLES",
+  "device": "CPU",
+  "samples": 96,
+  "seed": 0,
+  "denoising": false,
+  "threads": 1,
+  "resolution": [
+    900,
+    800
+  ],
+  "no_text_or_stamp": true,
+  "files": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "d08d6abcd20cdde3f7a4c137564507241c783ef213e92b8c3b40cc9df9e36d55",
+      "camera_position": [
+        -195,
+        -260,
+        145
+      ],
+      "camera_target": [
+        0,
+        0,
+        34
+      ],
+      "ortho_scale_method": "whole model projected bounding box: max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "a44b42884bcb743e3817c95abfd9c2cd291eb192e02a52c2705a4f8327c5439e",
+      "camera_position": [
+        195,
+        260,
+        145
+      ],
+      "camera_target": [
+        0,
+        0,
+        34
+      ],
+      "ortho_scale_method": "whole model projected bounding box: max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "162b1e48e389cce1f7d2f185d6c581c814e702b9e57de9521b86da4305131063",
+      "camera_position": [
+        0,
+        -300,
+        34
+      ],
+      "camera_target": [
+        0,
+        0,
+        34
+      ],
+      "ortho_scale_method": "whole model projected bounding box: max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "b22fbd1c090234ad2ed567fb25d5f365b5e106e4779342b18d4fd708d9302b70",
+      "camera_position": [
+        -150,
+        -300,
+        60
+      ],
+      "camera_target": [
+        0,
+        0,
+        34
+      ],
+      "ortho_scale_method": "whole model projected bounding box: max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "c37e67cfd05e94d299ac58ad5cc0fa158e853036a33c5a28a5cf65b5d4ff7e3e",
+      "camera_position": [
+        -300,
+        0,
+        150
+      ],
+      "camera_target": [
+        0,
+        0,
+        34
+      ],
+      "ortho_scale_method": "whole model projected bounding box: max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "d482d58dd6b93b1f8e23b168cd68f59cac4f481f88562a585e90061c70c5a051",
+      "camera_position": [
+        300,
+        0,
+        150
+      ],
+      "camera_target": [
+        0,
+        0,
+        34
+      ],
+      "ortho_scale_method": "whole model projected bounding box: max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "d397b1f000293bc4b9cf21024905db02ee679c47d6017ce1cb032867d5ef7f51",
+      "camera_position": [
+        0,
+        0,
+        330
+      ],
+      "camera_target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale_method": "whole model projected bounding box: max(width,height*900/800)*1.18",
+      "variant": "repaired"
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "61e6d8083b0273bdba539c39b6501fff9d0ba0324200b3914c8071c1c28e9070",
+      "camera_position": [
+        -195,
+        -260,
+        145
+      ],
+      "camera_target": [
+        0,
+        0,
+        34
+      ],
+      "ortho_scale_method": "identical projected bounding-box formula",
+      "variant": "all face indices restored to original; same lights, mesh, materials and camera",
+      "compared_against": "appearance/front.png"
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "2efc12f7f302b7d515829a7d51bd2c581af5258de6814c71ee5e0a2e729df01e",
+      "camera_position": [
+        195,
+        260,
+        145
+      ],
+      "camera_target": [
+        0,
+        0,
+        34
+      ],
+      "ortho_scale_method": "identical projected bounding-box formula",
+      "variant": "all face indices restored to original; same lights, mesh, materials and camera",
+      "compared_against": "appearance/rear.png"
+    }
+  ]
+}

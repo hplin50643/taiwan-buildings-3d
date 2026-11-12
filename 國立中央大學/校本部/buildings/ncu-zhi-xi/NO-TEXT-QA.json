@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ncu-zhi-xi-all-views.jpg. No caption or backing; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "acedaefce678bcd13ddd001c253471935ca4828684c7eb324d05c2dacfdd99b5",
+    "east.png": "3db7d03c1735424d3f04101aef232c87eeaca1a98dc57f64b67275d209ac1ca3",
+    "entry-detail.png": "3ce7e64517926b7125ab8c0188c1d8c153a51dcb8ee324a5d8543d0d671455d1",
+    "facade-detail.png": "658028144876eb556581e0451d2d5fc41ab307d68d4dd4e0221080faced1e040",
+    "front.png": "13169f2e78e7f274c68201086ef5190baf0ae455c2cf5ad6d66ad41810dc0f96",
+    "preview.png": "f5eb5edda2345f690ca976aed4f0c2a4194333f78c108e14db67268d8182b303",
+    "rear.png": "ca7bd15005d9563bf6189fbf83bd86a15a01108d771e454417c294e9b909424f",
+    "roof-detail.png": "73e7065f7b0fe545886f93bd394885d96e3b46053fd13b7a99614698e2a619bb",
+    "top.png": "daae887c476ffa167a878b773ce6af9c31191e266ffea99887a0052a776bfd5e",
+    "west.png": "9ce3e7c7d6695c6a50e1ea0057a3cf06e94c823b1f9c92f13d24a3d31b52dad4"
+  }
+}

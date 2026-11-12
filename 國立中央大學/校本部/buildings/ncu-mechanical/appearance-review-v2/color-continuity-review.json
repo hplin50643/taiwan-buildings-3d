@@ -1,0 +1,80 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T22:09:39.485074+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 883625,
+      "sha256": "495516f12491172b1aeaab2411398520f5fe26bc995a04c0b2a26a53ea50982c",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 830738,
+      "sha256": "576d797861c1b0bef9da20920950ad3ec47a7f87906c65c0dae989a2941dc5ce",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 888184,
+      "sha256": "7a44dd4ca498d5d5452879bb868f74a791525e2caf6ee6e4efb1cd41a0f0ead6",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 875037,
+      "sha256": "8197adeea8df8870f7a2b0d919805222a11f6a1e863c62a2000122912d0f7d89",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 861156,
+      "sha256": "aefff3da2f789582346feb9871c46d629211bb2934d51f6ed68a16296da8e552",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 883182,
+      "sha256": "c447c7c23d77a6974999f9b530239ae25bcb3e6605d06ebeb04b6ccb0719a8da",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 937550,
+      "sha256": "818d0c5b9d4addf5f39abf3050ff88da6a0456b9702d062838d462b0f5eb0b36",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 874356,
+      "sha256": "5da0927b86bf2fe06a926b4bce25b0207db3ee1dfb58a0d06c38e27cb2db43dc",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 814589,
+      "sha256": "82635b1a41773ab03019b780a21d93586d9970f17b5c3c4ca7a283ee14d0e4a3",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_images": 7,
+  "findings": [
+    "Visible left core planes and the full left outer support now carry existing ochre; broad rear and separate pale main-body/end supports are no longer blank. The unresolved 1.5mm left far-back overlap follows the whole core plane by declared inference.",
+    "Right outer x=65 support plane stays neutral because source-supported ochre upper wing and pale support/body merge without a complete original boundary. No partial triangular patches.",
+    "Original colored windows, upper wing, canopy and stairs remain unchanged. Existing opening returns have complete supporting boundaries; the first left gallery bay is left wholly neutral.",
+    "Roof, two original wedges, base, soffits and unresolved recess fragments remain neutral. No new windows, thin plinth bands, letters, geometry or source photographs.",
+    "Seven final renders and two original material comparisons inspected at 900x800, Cycles CPU96, single-thread, no denoising; camera records are numerically identical for front/rear comparisons."
+  ],
+  "known_limits": [
+    "Rear facade has no photograph; rear white and unseen component return colors are material-continuity inference, not a 2026 survey.",
+    "2014 Commons capture date verified from EXIF; six public-art photos have unknown capture dates. Two are context/plaque only, not facade evidence.",
+    "Original coarse merged volumes and estimated dimensions remain. 252 original faces remain neutral including right mixed side and first gallery bay.",
+    "No physical trial print or fresh full slicing/support validation. Original overhang/canopy/fragile detail, bridge and support caveats remain."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

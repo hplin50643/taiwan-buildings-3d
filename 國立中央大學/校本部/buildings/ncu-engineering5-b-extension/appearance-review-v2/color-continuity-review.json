@@ -1,0 +1,80 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T23:54:02.852826+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 879127,
+      "sha256": "d226a78b56dfb173b48eb3d5fe6f2689d48e36f8fefa23bbfe6bf23cd967f855",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 859989,
+      "sha256": "f2f50791721a7fdfd38e3355f32c44ce12f4862808bafe1323a2a6d0a25f986f",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 833270,
+      "sha256": "0fc4edaa255d77a5f6f8a4a2f486a99bfe6282e32252f3d4e3f8749ae2bbd4e3",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 827839,
+      "sha256": "6e0a2eb8e9faf162f99e46154748541ee4491f2963a44fcb916c4662f87001ac",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 799072,
+      "sha256": "fd29bb795927c4b7a86d51434447bb813cfffa6e1d2991d5e97aa9719e4d14a9",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 814212,
+      "sha256": "33949a4fd95b393541977b9ac79c2b75edab770096a45d066df60cb87be3f06a",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 796171,
+      "sha256": "f8f371d1e639c17ee45ad3a132a69ea8244cfb2d9c6733fcec9e6d0cb52a5ad1",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 879451,
+      "sha256": "bb13997782ef323b7305cb500281d22cdb1b8b7bd6614eabb09400d2c6356c67",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 858767,
+      "sha256": "5d00ea835a3099424577ef240dc2aa57c6ba0df6f9d303fb5509c652d88112db",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_images": 2,
+  "findings": [
+    "Front/elevation retain original pale deep structural frames and dark glazing. Complete original window-wall returns use the unchanged adjacent taupe wall color. No diagonal material spills or invented openings.",
+    "Rear/source-angle retain pale-gray original walls and dark louvers/fins; original window-wall returns and core-strip recess jamb/head/sill surfaces continue pale-gray. All original colored louvers/fins/glazing are untouched.",
+    "Left/right preserve the two broad artificial/unresolved narrow ends as neutral. They are not portrayed as reconstructed real backwalls.",
+    "Top keeps unknown flat roofs, simplified sloping cover edges/underside, exposed core step side and artificial base neutral. Original simplified cover top color is preserved without a new photovoltaic-material claim.",
+    "Original-front and original-rear use exactly the same camera, lighting and material values as final front/rear, with original face assignments restored. Changes are intentionally subtle because source facade families are low-saturation gray/taupe."
+  ],
+  "known_limits": [
+    "Hidden window jambs, heads and sills are same-component wall-material continuity inference, not directly measured finishes.",
+    "Only the2014–2015 B extension wing is modeled. Adjacent old bright-white B building and separate C block remain excluded.",
+    "84 original neutral faces remain for unresolved/artificial boundaries, roofs and base. No new geometry, lettering, equipment or photograph textures.",
+    "Photos have unknown dates; no2026-condition claim. Original dimensions are estimates; support/fragile-feature risks, no physical trial print and no fresh slicer validation remain."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

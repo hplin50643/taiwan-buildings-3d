@@ -22,6 +22,8 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
 def near(v,t,e=.035):return abs(v-t)<e
 for p in mesh.polygons:
  x,y,z=p.center;n=p.normal;i=0
@@ -44,11 +46,22 @@ for p in mesh.polygons:
  # Unknown broad side and rear surfaces stay neutral; source does not support roof finishes.
  if (any(near(x,xx,.015) for xx in [-64.5,-37.5,-49,63,61.5]) and abs(n.x)>.8 and y>-25.49) or y>39.49:i=0
  if z<=3 or (n.z>.8 and z>33.9):i=0
+ original_indices.append(i)
+ # Only existing neutral, identifiable vertical exterior returns. The broad
+ # simplified rear block can represent unmodelled courtyard/cut geometry: retain grey.
+ if i==0 and abs(n.z)<.2 and z>3:
+  # Left outer core plane and rounded front corner; not the rear termination.
+  if x<-49 and y<39.49 and (n.x<-.05 or n.y<-.05):i=1
+  # Short right-hand return of projecting front teaching band only.
+  if near(x,61.5,.015) and n.x>.8 and -32.01<y<-23.49 and 34<z<64.49:i=2
+  # Original thin fascia side returns, not roof or rear edge.
+  if near(abs(x-10),52.5,.015) and abs(n.x)>.8 and -33.01<y<-15 and 64.49<z<66.01:i=3
+ if i!=original_indices[-1]:changed_faces.append(p.index)
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; limited outer core and wing returns inferred; simplified rear remains neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-limited-returns'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -75,9 +88,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown sides rear roof neutral; no invented photo tile seams or narrow bands','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-limited-returns','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Limited exterior return continuity inferred; simplified rear/courtyard, main side, roofs and base remain neutral; no new geometry','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-195,-260,145),(0,0,35.4),200),'rear':((195,260,145),(0,0,35.4),200),'elevation':((0,-300,35.4),(0,0,35.4),200),'source-angle':((-100,-300,55),(0,0,35.4),200),'top':((0,0,330),(0,0,0),200)}
+views={'front':((-195,-260,145),(0,0,35.4),200),'rear':((195,260,145),(0,0,35.4),200),'elevation':((0,-300,35.4),(0,0,35.4),200),'source-angle':((-100,-300,55),(0,0,35.4),200),'left':((-300,0,130),(0,0,35.4),200),'right':((300,0,130),(0,0,35.4),200),'top':((0,0,330),(0,0,0),200)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

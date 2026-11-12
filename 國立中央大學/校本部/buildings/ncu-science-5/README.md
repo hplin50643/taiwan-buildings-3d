@@ -11,7 +11,7 @@
 
 ### 照片近似彩色預覽
 
-依校方與Commons內院實照：原兩翼白灰、窗背青灰綠、下遮屏灰粉褐、轉角陽台米白；屏後牆與下柱不整體染粉。未知外側背面／屋頂中性，不增黃色面板或細構件。
+依校方與Commons內院實照：原兩翼白灰、窗背青灰綠、下遮屏灰粉褐、轉角陽台米白；屏後牆與下柱不整體染粉。本輪在原彩色上補 48 個原中性面：完整側背與高端牆支持面延續原白灰，屬同構件材料連續性推估，沒有同角度背側實照。右翼前端疑有下層混材但原網格無完整界線，整面仍中性；屋頂、底座、窗洞回折也不擴染。不增黃色面板或細構件。
 
 
 原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變；詳[來源與重建限制](APPEARANCE.md)。
@@ -59,10 +59,16 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 [STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
 
 
-以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+以上是實際彩色模型渲染。rear 的完整側背外牆採同構件白灰延續推估，保留原素面幾何，不代表同角度實景或查證現況。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 
 本發布包已直接採用canonical-edge-v2薄篩工具與結果，固定共邊插值方向，要求節點度數2、閉環及各Polygon有效，再做1 mm間距的0.8 mm XY開運算。舊版可能因共邊端點分開計算後取整而漏環，不能沿用舊面積值。這項修正不改STL、Blender或重建來源；真實薄特徵警示照常保留。
 
 另以0.2 mm間距逐層補查閉環及Polygon有效性，共 540 層通過，見[有效性報告](contour-validity-check.json)與[可攜檢查程式](check_contour_validity.py)。這項較密補查沒有做薄篩開運算；薄篩採樣間距仍是1 mm。兩者都不是正式切片、試印或全域壁厚保證。
+
+## 側背補色審核（color-v2）
+
+[左側](appearance/left.png) · [右側](appearance/right.png) · [同鏡位原正面](appearance-review-v2/original-front.png) · [同鏡位原背面](appearance-review-v2/original-rear.png) · [完整材料／幾何／邊界審核](appearance-review-v2/color-continuity-review.json)
+
+原尺寸、1509 頂點／3246 三角面、transform、所有已彩面與每個材料 RGBA／roughness 不變。原三張 previews、STL／OBJ／scene、建模腳本、原幾何 QA 與首頁／校級代表圖均不替換。新七圖為 Cycles CPU、96 samples、900 × 800、單執行緒、無降噪；兩張原版對照僅恢復原面材料，使用相同相機與光照。仍須檢查支撐與橋接，尚未實體試印。
