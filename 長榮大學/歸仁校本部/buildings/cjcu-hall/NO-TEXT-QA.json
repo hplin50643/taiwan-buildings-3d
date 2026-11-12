@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in cjcu-hall-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "f40582ad0ac5886476b4ae6e6235aba3535e0cce45b12c9342c55c1940978ccb",
+    "east.png": "97937b6e990df14a0f77cf960d32a2db373cd423ebfebdda6c8d270c3cdc4347",
+    "entry-detail.png": "d65d0e01c1a79d797bf4bd246e7882b878d52dfca225461a383c88a044e352ba",
+    "facade-detail.png": "6d901e205a1de5fb53a457c444f878a3629bcb62919c074da9a443e5b30dbf9f",
+    "front.png": "6e9e0f185856170ffb2f7005d0a5d5b93d67cb27247767ce3bec6a0cd838a786",
+    "preview.png": "4b116665a0d834c766068e68f7a5321161aae70cd46e236e7ba57b5b4f1af14f",
+    "rear.png": "58451854594c79a2c1ea39fdd491812ba56eda4dd02149559d28cacbabbee037",
+    "roof-detail.png": "f7c0ad5a6412fd8c6b485c5ea1bf34d79ba1a5c43c6d7fa21baea73ed16276d6",
+    "top.png": "cbb37e8e20cdedea0b5e16979101522c29491463de7fe75035fa72aaca1e0f18",
+    "west.png": "26d2830731f2deb5d2840aaa53832daa10d9adb6f3fe2da2dfb7d85cb9038486"
+  }
+}
