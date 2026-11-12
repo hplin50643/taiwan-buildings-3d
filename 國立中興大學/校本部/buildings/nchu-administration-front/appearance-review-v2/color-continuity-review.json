@@ -1,0 +1,108 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T01:23:25.307025+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "952dd6b95454296dbd0f7cbfedb42e4c9a3be5356df3c941e227e41fb3e12dd5",
+      "personally_viewed": true,
+      "observations": "Front perspective personally inspected: original six columns, frames and opaque window backings remain; beige front fascia and bounded recess continuity is coherent, gray terrace/stair supports now connect. Wing end and roof tops stay neutral; no text or invented window geometry."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "e66402443e93c3476cbbc9d47b49293a6ed82de5a0d545e7bd86747173c6606f",
+      "personally_viewed": true,
+      "observations": "Rear perspective personally inspected: broad rear section planes, stepped roofs and unresolved wing ends retain neutral material. Existing section overhang/void below block remains original geometry, not a reconstructed real rear facade."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "7669bbe5002b747c143781e2cd332dabde907f0cec23d0d750dbbbd21b65da5c",
+      "personally_viewed": true,
+      "observations": "Front orthographic view personally inspected: six original giant columns and simplified window rhythm intact; no lettering/red-banners invented. Bounded recess/fascia continuity and gray platform are coherent."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "61131211e6e85655a2ff7152b55a542beb189f932266599524abbef550b796bf",
+      "personally_viewed": true,
+      "observations": "Near-front perspective personally inspected: original dark opaque windows and grey-white frames retained; recess edges and front fascia use original warm wall family. Open portico and gray floor/stairs remain distinct."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "477d272932083ea6018778203c6d571835cbc306c731b4705396edbaab2959ca",
+      "personally_viewed": true,
+      "observations": "Left elevation personally inspected: unresolved wing-end and long upper side faces remain neutral; original colored front edges and column retain color. Terrace/stair supports do not color artificial base or broad rear section."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "0b4903aacfceffcf8a3ca05e8c8ee6cb1415f8072eef846076fc43003d5a04f0",
+      "personally_viewed": true,
+      "observations": "Right elevation personally inspected: original cream column/front pilasters stand against unchanged neutral wing-end and long upper-side supports. Gray front terrace and original stairs are coherent; cut back and base stay neutral."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "ae42c43ecbfbd8a0f7d7be3637f510da0ca167288fd72a8a496d31ce4f1b9b2c",
+      "personally_viewed": true,
+      "observations": "Top view personally inspected: all roof fields and upper roof cap top remain original neutral. Gray exposed front terrace/stairs follows original model footprint; no roof texture, text or invented features."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "6ae7aff57f79577532c288901bebee87953bb73437e609e45d2a5d21dd2fdb9c",
+      "personally_viewed": true,
+      "observations": "Same-camera original-front personally inspected and compared with final front. Original neutral terrace and recess/fascia gaps are the corrected regions; original columns, window backs, frames, proportions and positions remain unchanged."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "5997a2d15d5b0e6765c68841c25095905d1563c935c4e965b6f4ae454fc9642b",
+      "personally_viewed": true,
+      "observations": "Same-camera original-rear personally inspected and compared with final rear. Large artificial rear planes, wing section ends and roofs remain neutral and geometrically identical; only front-facing edge/terrace continuity can differ at periphery."
+    }
+  ],
+  "before_after": [
+    {
+      "view": "front",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 126703,
+      "pixels_differing_by_more_than_8_rgb_levels": 39502,
+      "mean_absolute_rgb_difference": 1.4516939814814815,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    },
+    {
+      "view": "rear",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 6008,
+      "pixels_differing_by_more_than_8_rgb_levels": 1359,
+      "mean_absolute_rgb_difference": 0.05575324074074074,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    }
+  ],
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "observations": [
+    "All2082original colored faces, original column/window/frame assignments and five original material values remain unchanged.",
+    "895originally neutral faces now use same-component cream-grey or stair-grey continuity within full bounded original triangle supports. Hidden extents are explicit inferences.",
+    "Window positions and recesses, open portico and original partial section geometry remain unchanged. No new windows, text, red banners, tile details or geometry.",
+    "All original rear cut planes, large unresolved wing ends, long mixed-support side faces, roof fields, base and unresolved supports remain neutral.",
+    "Seven final views and two same-camera original assignment comparisons were personally inspected."
+  ],
+  "limitations": [
+    "One2024front photo supports bounded continuity inference, not all sides or2026conditions.",
+    "Front-block and portico study only, with artificial rear and approximate dimensions; no physical trial print or slicer toolpath. Original digital QA rerun separately recorded."
+  ],
+  "artifacts": {
+    "appearance.blend": "a3efadbae58ef75250d3e23b118fc654a10cf6ec980f8e691101f15afd490cf6",
+    "appearance.3mf": "bb75c28aaf02fb34e87a23838813724f1445fb2a98fd9b97bb2730c620aa4359",
+    "appearance-materials.json": "b9cb55c9f47d47bc490ffe1723052c9dd4c97d02e6ab1433500429baff602a03",
+    "build_appearance.py": "53ca19c3b0a331330a56d6c97d78f63ded195475aa9b11547772bd7bcc3251fa",
+    "render_review.py": "e04b1880c06f07259126d146d99909c9515fafe944265edad0c458ce624e58eb"
+  }
+}

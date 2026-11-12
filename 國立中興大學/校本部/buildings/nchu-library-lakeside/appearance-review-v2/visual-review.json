@@ -1,0 +1,58 @@
+{
+  "result": "pass_with_inference_limits",
+  "images": [
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "48a2c1f3fbf09bfa5f7522e40de453b8031242556bef53b07efa2dd570854719",
+      "pixels_inspected": true,
+      "no_text_or_stamp_visible": true,
+      "framing_complete": true
+    },
+    {
+      "path": "appearance/front.png",
+      "sha256": "d0e00aaa7000e8bea6b270a056cc990ee2b4df8ba6301f71fbdbdd10851d0c51",
+      "pixels_inspected": true,
+      "no_text_or_stamp_visible": true,
+      "framing_complete": true
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "711af61313705a35621e425c029113539acdc2b5f2d5457bec7f495413543d32",
+      "pixels_inspected": true,
+      "no_text_or_stamp_visible": true,
+      "framing_complete": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "70acfd5f5f061971023fcafb44ab40592b09d2e38beede8c6a4aea0101e4e80c",
+      "pixels_inspected": true,
+      "no_text_or_stamp_visible": true,
+      "framing_complete": true
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "3fa862b27971d94f8a90ec5b27fb4eb390f325bc9192f57fe181848725baae5b",
+      "pixels_inspected": true,
+      "no_text_or_stamp_visible": true,
+      "framing_complete": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "fbf88e1760570a24febb9588c638cb768b205447b31cbe211929150720821c43",
+      "pixels_inspected": true,
+      "no_text_or_stamp_visible": true,
+      "framing_complete": true
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "3e05e6913912a2a9e4c2b5cf1c360ce5e1ab960e34a3c5e7fefd0282d2596f51",
+      "pixels_inspected": true,
+      "no_text_or_stamp_visible": true,
+      "framing_complete": true
+    }
+  ],
+  "review": "Seven actual mesh views inspected. Left end light masonry and 3 long plus 4 short original slots read coherently. Existing front/right colors preserved. Artificial rear section and roofs deliberately neutral. No new geometry or text.",
+  "limitation": "Left-end color is same-building material continuity inference; low-resolution official aerial does not individually verify the left elevation.",
+  "samples": 96,
+  "denoising": false
+}

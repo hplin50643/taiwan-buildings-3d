@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nchu-swimming-pool-hall-1983-design-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "colonnade-detail.png": "de68a87c917351e4d7b1c31e46e1ea8aa27ec58dc88970124d4ca3c8eb19c43b",
+    "east.png": "34405e080dc4031caf5a9454a02e7a0d592cf22e73ef8ec09087f1cc18de9353",
+    "entrance-detail.png": "6658f5d2b7a463489e6fee8b37629e2a96be7c13ff61dcb7e52dba9231ce2527",
+    "north.png": "601d9d8826c38fa080e5243ad31c9e7bcab0ce745a4880577867db591d8c9128",
+    "preview.png": "12556095262184a94e040becd535468f32b7d0093fc98cdd4455eb5963c30a59",
+    "rear.png": "d0f26ad30d75168becff975adb3f842b7e5476a290c1bdcc8b6e89b8cc375137",
+    "roof-detail.png": "0caba9311a7f9eb8664927d30eb8c932eadaaf0aeb586cc9123afe565c20567e",
+    "south.png": "77e0d1452c6f256016ce8ce004aea8739262e1915c2c1cdeb60fb5d2493ff2bf",
+    "top.png": "8fdff4a4effe56f26de198d3dfc31b6a93561cde10cf618624a026db2bfb2d95",
+    "west.png": "4aa264f9922f53e6613d39e76b9e2cf70e4acafee1843dae3e4e26a7f3f1d34b"
+  }
+}

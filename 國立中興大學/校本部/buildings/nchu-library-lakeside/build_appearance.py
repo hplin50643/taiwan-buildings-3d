@@ -15,14 +15,14 @@ assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # One library-hosted aerial freshly viewed; inaccessible Commons image not used.
-palette=[('Unknown left outer wall roof plant and artificial rear cut','#AAA79F',.86),('Supported front masonry ribs and right end pale beige','#C8BDA8',.86),('Original left sunshades frames and frontal caps silver grey','#B2B8B6',.8),('True recessed backing mixed opaque grey green','#5E7472',.82)]
+palette=[('Unknown left outer wall roof plant and artificial rear cut','#AAA79F',.86),('Supported front masonry ribs and right end pale beige','#C8BDA8',.86),('Original left sunshades frames and frontal caps silver grey','#B2B8B6',.8),('True recessed backing mixed opaque grey green','#5E7472',.82),('Inferred left end wall continuity pale beige','#C8BDA8',.86),('Inferred existing left end recess opaque grey green','#5E7472',.82)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.002;indices=[]
+EPS=.002;indices=[];original_indices=[];changed_faces=[]
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def boxface(x0,x1,y0,y1,z0,z1):
@@ -63,11 +63,22 @@ for p in mesh.polygons:
   for yy in [-2,3,8,13]:
    if bounds((61.8,yy-.85,61),(61.8,yy+.85,63.7)):i=3
  if hi[2]<=3+EPS:i=0
+ original_indices.append(i)
+ # Existing left end slab only. Rear y=24 is an artificial section, not a facade.
+ # Do not color the sign/banner blade, roof plant, horizontal caps, or section back.
+ if i==0 and lo[2]>=3-EPS:
+  if (plane(0,-68) and n[0]<-.8) or (plane(1,-10) and n[1]<-.8 and bounds((-68,-10,3),(-62,-10,80))):i=4
+  # Existing modeled slot backs and vertical reveals, never new window arrays.
+  for yy,half,z0,z1 in [(y,1.25,15,63) for y in [-2,5,12]]+[(y,.85,70,73) for y in [-2,3,8,13]]:
+   if bounds((-68,yy-half,z0),(-66.9,yy+half,z1)):
+    if plane(0,-66.9) and n[0]<-.8:i=5
+    elif abs(n[2])<.1:i=4
+ if i!=original_indices[-1]:changed_faces.append(p.index)
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-left-end-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -97,9 +108,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original single warm display material. Only one490x327library-hosted event aerial freshly viewed; Commons2024photo403 was stopped and not used as seen evidence. Limited front ribs/right end warm beige, original left sunshades/frames silvergrey, true window cut backs opaque mixed grey-green. Trees hide lower supports: same-family continuation inference. Purple sign banner is not masonry and omitted. Left outer wall/slits, artificial rear cut, flat roofs and broad plant/penthouse remain neutral. No geometry split/new frames/lettering. Event2020andfilename20160120notverifiedphotodates; no2024or2026restorationclaim. Original partial section and print limitations unchanged.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-left-end-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Left end wall and existing recessed slots are material continuity approximations, not a separately verified left elevation. Artificial rear section remains neutral.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original single warm display material. Only one490x327library-hosted event aerial freshly viewed; Commons2024photo403 was stopped and not used as seen evidence. Limited front ribs/right end warm beige, original left sunshades/frames silvergrey, true window cut backs opaque mixed grey-green. Trees hide lower supports: same-family continuation inference. Purple sign banner is not masonry and omitted. Left end wall/slits now use continuity approximations in v2; artificial rear cut, flat roofs and broad plant/penthouse remain neutral. No geometry split/new frames/lettering. Event2020andfilename20160120notverifiedphotodates; no2024or2026restorationclaim. Original partial section and print limitations unchanged.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-195,-220,160),(0,0,45.5),220),'rear':((195,230,160),(0,0,45.5),220),'elevation':((0,-260,45.5),(0,0,45.5),220),'source-angle':((210,-230,150),(0,0,45.5),220),'top':((0,0,350),(0,0,45.5),220)}
+views={'front':((-195,-220,160),(0,0,45.5),220),'rear':((195,230,160),(0,0,45.5),220),'elevation':((0,-260,45.5),(0,0,45.5),220),'source-angle':((210,-230,150),(0,0,45.5),220),'left':((-260,-50,120),(0,0,45.5),220),'right':((260,50,120),(0,0,45.5),220),'top':((0,0,350),(0,0,45.5),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "run_at": "2026-11-12T01:08:33.494978+00:00",
+  "method": "Unmodified original QA scripts rerun on byte-identical original model.stl and scene.blend in a separate directory, with exact original requirements versions.",
+  "steps": [
+    {
+      "script": "validate_model.py",
+      "exit_code": 0,
+      "original_script_sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95"
+    },
+    {
+      "script": "check_layers.py",
+      "exit_code": 0,
+      "original_script_sha256": "73cfedd2adae5f4e52cafdd11c62454286f22b099c20616d43256a46314863c3"
+    },
+    {
+      "script": "check_valid_sections.py",
+      "exit_code": 0,
+      "original_script_sha256": "056b0d691eb70c2b8feaf15973e38c84dda48cd090dfd9d37cc5040495156e9a"
+    },
+    {
+      "script": "thin_canonical_v2.py",
+      "exit_code": 0,
+      "original_script_sha256": "8445c5db5fec8220525b3e3b9aa3097f1cabb9b35441783aa0b6f754f1d0d659"
+    }
+  ],
+  "limitations": [
+    "Digital checks only, not physical test print or slicer toolpath.",
+    "Original overhang and support-removal caveats remain."
+  ],
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "trimesh": "5.1.1",
+    "manifold3d": "3.5.4",
+    "shapely": "2.1.2"
+  }
+}

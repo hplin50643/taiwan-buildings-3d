@@ -15,12 +15,15 @@
 [正投影](appearance/elevation.png) / [頂面與退縮區](appearance/top.png)
 
 
-### 新增有限活動空拍材料（原四圖保留）
+### 左端既有外牆補色 v2（原四圖保留）
 
-本輪只依圖書館活動頁單張低解析空拍補前翼米灰牆肋、灰銀遮陽條與暗灰綠凹窗；不是重新驗證2024地面原圖的色彩。左端未知外牆、背側截面及未證屋頂保中性；粉紫直幅不當建材整面染色。不同年代來源僅作材料近似，不宣稱全館或當代現況。
+左端真實外牆與既有3長／4短窗槽，依原前翼／右端的米灰牆和暗灰綠窗色延伸，共102個原中性三角面。左端精確色值屬合理近似，沒有新增窗陣或幾何。原已著色面不變。
 
+**背面為人為截斷／剖切面，不是真實背立面，維持中性。** 屋頂、設備量體及標示牆亦保留原狀，不為求全彩虛構外觀。不宣稱全館完成或2026現況。
 
-[材料來源與限制](APPEARANCE.md)。原STL、scene、幾何及四張鎖定預覽保留；本輪不重跑原列印QA，沒有實體試印。
+[左側](appearance/left.png) · [右側](appearance/right.png) · [修補前正面](appearance-review-v2/before-front.png) · [修補前背面](appearance-review-v2/before-rear.png)
+
+[材料來源與限制](APPEARANCE.md) · [逐面保留檢查](appearance-review-v2/model-verification.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。原STL、scene及四張鎖定預覽不變，沒有實體試印。舊appearance-review為歷史v1審核。
 
 ## 保留特徵與範圍
 前翼左端水平遮陽條、中間較高垂直標示牆、右側長向密集直窗條、上層退縮帶窗與大挑簷、屋頂階梯狀量體及保留的退縮平台。
