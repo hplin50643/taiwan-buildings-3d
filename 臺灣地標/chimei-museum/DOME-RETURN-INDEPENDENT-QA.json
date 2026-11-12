@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T09:58:50.356757+00:00",
+  "scope": "Bounded original reverse-dome color continuity only; inherited mixed coplanar domains preserved, not whole-model seam repair or publication approval",
+  "blockers": [],
+  "numeric_checks": {
+    "status": "PASS",
+    "checks": {
+      "vertices_exact": true,
+      "faces_exact": true,
+      "17960_triangles": true,
+      "old_counts": true,
+      "new_counts": true,
+      "3929_new": true,
+      "original_non_neutral_preserved": true,
+      "model.stl_unchanged": true,
+      "build_model.py_unchanged": true,
+      "7872_candidates": true,
+      "8_candidate_exclusions": true,
+      "independent_change_mask": true,
+      "neutral_to_dome_only": true,
+      "exact40_existing_mixed_domains_retained": true,
+      "existing_mixed_domain_face_materials_unchanged": true,
+      "all_selected_vertices_on_original_fluted_dome": true,
+      "3mf_vertices": true,
+      "3mf_faces": true,
+      "3mf_materials": true,
+      "new_source_hashes": true
+    },
+    "maximum_dome_equation_residual": 0.0006108512741511696,
+    "existing_mixed_domain_count": 40,
+    "mesh_sha256": "165b2aba94ad59de8bf3fdc5e0994b3f166edf452afde20b8296f72d36ad22f2"
+  },
+  "scene_checks": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "four_material_slots": true,
+      "palette_0": true,
+      "palette_1": true,
+      "palette_2": true,
+      "palette_3": true
+    },
+    "scene_sha256": "913de24c66b91f03348b346586a20709280c3754aa135296d5005ac66343b356"
+  },
+  "face_counts": {
+    "total": 17960,
+    "front_stone_unchanged": 4533,
+    "old_dome_preserved": 3935,
+    "dome_added": 3929,
+    "dome_total": 7864,
+    "apertures_unchanged": 408,
+    "neutral": 5155,
+    "candidate_faces": 7872,
+    "candidate_new_faces_excluded": 8,
+    "inherited_mixed_coplanar_domains": 40,
+    "new_mixed_domains": 0
+  },
+  "findings": [
+    "Actually viewed new official video storyboards1/2, including rear aerial frames about47–49seconds; museum news embeds the matching YouTube video. Rear pale-gray family is visible at coarse resolution and supports explicitly inferred same-dome continuity, not individual facet observation.",
+    "Independent finite surface selection and coplanar exclusion flooding exactly match3929 new neutral-to-gray triangles and8 excluded candidates. All selected vertices additionally satisfy the original integrated fluted ellipsoid relation with maximum residual0.000611.",
+    "All original non-neutral materials retained. Original vertices/faces, STL and build bytes unchanged; no OBJ existed in original package. 3MF geometry and indices match.",
+    "All40 inherited mixed coplanar component face sets and their material assignments are exactly unchanged. This review confirms no new mixed domains, not zero seams or repair of inherited seams.",
+    "After all ten final renders and scene save completed, actually inspected every view in two private montages plus full-size roof detail. Rear dome now coherently continues nominal gray, while summit statue/finial, drum, horizontal roof and other domains retain original materials.",
+    "Independently reopened original/final Blender scenes; mesh/material indices, four palette shader colors, camera, lights, render configuration and hidden notices all pass.",
+    "README/source QA disclose low-resolution inference, inherited mixed domains, approximate geometry and unknown capture dates. Updated summit wording correctly leaves gold-colored video evidence outside this unmapped simplified-statue review rather than denying that evidence."
+  ],
+  "image_sha256": {
+    "preview.png": "ed0c5a8a821515ee46c65736c0b1f394d64d190787f8d20b86df5e44034d9bc4",
+    "rear.png": "3cec908a458073e0b56978adea7293a39bcba9aacb57a09a8f31a777bd279b23",
+    "front.png": "e8fa2c04a854fc1b66690af21546d8a4a183761066a23eb2835e77a2d44695e7",
+    "back.png": "de880a84a6b40163f120bfb475473d1a36c39b045080084ddfb054a0c4136dd2",
+    "west.png": "a54f14952df43ec75f0926a101d5e613c6b0766ae351049a8612f0a63406b28e",
+    "east.png": "e037061cc6a4620face42b89ea387d182b47843c517b49ff51b98fc4cc44dca8",
+    "top.png": "df8cd8bb7491fefa92375e96ab66bebcc39c7e763807d289cbf6d6c4d5f0fbb3",
+    "entry-detail.png": "453a7faef9fe1d5335de45f23574851454b6771276859533a0b549c61273358e",
+    "facade-detail.png": "46f8ba07da9aee6d24820471abc825126510d6d9cd36970445ddded34eaf93d2",
+    "roof-detail.png": "f24cab7da0e7e9d240518e73500101e4fbdf31d96fd60756f8f36ed5071a684b"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "165b2aba94ad59de8bf3fdc5e0994b3f166edf452afde20b8296f72d36ad22f2",
+    "appearance.3mf": "498447d46c36fc5ca8f8302da8cb341142f1c6e261ced7823786dffe1bb8fd14",
+    "scene.blend": "913de24c66b91f03348b346586a20709280c3754aa135296d5005ac66343b356",
+    "colorize_model.py": "8c67d7bac0316a8a07b5cbfa3ff4dcfd8e2855338df148a7905a723493788f3f",
+    "DOME-RETURN-SOURCE-QA.json": "759dbf07470f7220cf4752b112000c0174662033fe4fcda87e0dd545ee06de18"
+  },
+  "source_sha256": {
+    "official-aerial-storyboard-1.jpg": "53a2d18d7f9a888bd53125ce489f5c767826f5379fdd612c4004871bef62d556",
+    "official-aerial-storyboard-2.jpg": "eebe79596cd6bf9091e1918aa3b25c6fee2cdb378968f5232b3ed57c3f2f6d06",
+    "aerial-news.html": "749513bc4611fbbaf5a156fb27fb274076eabf9e14097433d9e5831fa25abeb1",
+    "aerial-storyboard-sources.json": "0a95ccffe92bef530e7b37a7f3f6489a8f0129ad70244095d5847ad22c0559d8"
+  },
+  "limitations": [
+    "Each video tile is160x90; no fine rib/valley material differences, calibrated HEX or individual hidden-facet certification.",
+    "Summit gold-colored evidence is not mapped or approved for original simplified statue/finial; its neutral assignment remains.",
+    "Inherited40 mixed coplanar domains remain, including a dome-adjacent domain. This is bounded extension approval only.",
+    "No new source approval for drum, horizontal roofs, side/rear walls or plinth.",
+    "Video publication is not capture date or2026 condition.",
+    "No dimensional accuracy, physical print or filament slicing certification. Source imagery stays private, not redistributed or textured."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded dome-return update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T09:58:51.506658+00:00",
+  "triangles": 17960,
+  "original_color_faces": 8876,
+  "new_color_faces": 3929,
+  "colored_faces": 12805,
+  "unknown_neutral_faces": 5155,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "4638f88fa1d8d6dd598d17c98d74086cc5a66923a4ddf0b519e47a74a2e2a873",
+  "color_mesh_sha256": "165b2aba94ad59de8bf3fdc5e0994b3f166edf452afde20b8296f72d36ad22f2",
+  "images_sha256": {
+    "preview.png": "ed0c5a8a821515ee46c65736c0b1f394d64d190787f8d20b86df5e44034d9bc4",
+    "rear.png": "3cec908a458073e0b56978adea7293a39bcba9aacb57a09a8f31a777bd279b23",
+    "front.png": "e8fa2c04a854fc1b66690af21546d8a4a183761066a23eb2835e77a2d44695e7",
+    "back.png": "de880a84a6b40163f120bfb475473d1a36c39b045080084ddfb054a0c4136dd2",
+    "west.png": "a54f14952df43ec75f0926a101d5e613c6b0766ae351049a8612f0a63406b28e",
+    "east.png": "e037061cc6a4620face42b89ea387d182b47843c517b49ff51b98fc4cc44dca8",
+    "top.png": "df8cd8bb7491fefa92375e96ab66bebcc39c7e763807d289cbf6d6c4d5f0fbb3",
+    "entry-detail.png": "453a7faef9fe1d5335de45f23574851454b6771276859533a0b549c61273358e",
+    "facade-detail.png": "46f8ba07da9aee6d24820471abc825126510d6d9cd36970445ddded34eaf93d2",
+    "roof-detail.png": "f24cab7da0e7e9d240518e73500101e4fbdf31d96fd60756f8f36ed5071a684b"
+  },
+  "current_independent_review": "DOME-RETURN-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Official 160x90 aerial storyboards support only a broad gray family and inferred continuity on the original dome; no calibrated rib or finial detail. Existing 40 mixed-material coplanar domains are preserved unchanged, not recertified or repaired. No new mixed domains.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

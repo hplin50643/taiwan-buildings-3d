@@ -40,6 +40,24 @@ for i,(t,c,n)in enumerate(zip(m.triangles,m.triangles_center,m.face_normals)):
  # Original drum front, vertical only; horizontal rim is not a verified roof surface.
  if rad.max()<=9.801 and lo[2]>=22.899 and hi[2]<=28.101 and hi[1]<=-5.999 and abs(nz)<.1:a[i]=0
  if lo[2]>=36.17:a[i]=3
+# Additional evidence supports bounded same-dome continuity, not new architectural parts.
+original=a.copy();assert np.bincount(original).tolist()==[4533,3935,408,9084]
+t=m.triangles;n=m.face_normals;lo=t.min(1);hi=t.max(1);rad=np.linalg.norm(t[:,:,:2]-[0,-6],axis=2)
+candidate=(rad.max(1)<=9.521)&(lo[:,2]>=27.599)&(hi[:,2]<=36.157)&(n[:,2]>0)
+candidate&=~((rad.max(1)<=1.741)&(lo[:,2]>=35.629));assert candidate.sum()==7872 and np.all(candidate[original==1])
+trial=a.copy();trial[candidate]=1
+ad=m.face_adjacency;cs=trimesh.graph.connected_components(ad[(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999],nodes=np.arange(len(t)),min_len=1)
+oldmixed=[list(map(int,x)) for x in cs if len(set(original[x]))>1];excluded=[]
+for ids in cs:
+ if np.all(trial[ids]==1):a[ids]=1
+ elif np.any(candidate[ids]):excluded.extend(int(i) for i in ids if candidate[i] and original[i]!=1)
+newmixed=[list(map(int,x)) for x in cs if len(set(a[x]))>1]
+added=np.flatnonzero((a==1)&(original!=1));assert len(added)==3929 and len(excluded)==8
+assert np.all(original[added]==3) and np.array_equal(a[original!=3],original[original!=3])
+assert oldmixed==newmixed and len(oldmixed)==40
+assert np.bincount(a).tolist()==[4533,7864,408,5155]
+pal[1]=('Dome gray; front observed and rear bounded continuity inferred','#9DA9A6')
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'geometry_policy':'17960 original triangles unchanged','limits':['Backlit official front photo supports color families, not calibrated stone color.','Front half dome only; summit angel is unverified neutral, not gold.','Broad roofs, side/rear and display plinth neutral.','Four appearance labels are not a verified four-filament slicer project.']},indent=2)+'\n')
-q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':len(m.faces),'materials_used':np.unique(a).tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q)
+q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((a==i).sum())}for i,(name,col)in enumerate(pal)],'original_dome_faces':3935,'new_inferred_dome_faces':3929,'dome_faces':7864,'candidate_faces':7872,'new_face_indices':added.tolist(),'excluded_candidate_faces':excluded,'coplanar_domains':len(cs),'original_mixed_coplanar_domains':oldmixed,'current_mixed_coplanar_domains':newmixed,'new_mixed_coplanar_domains':0,'count_delta':0,'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'17960 original triangles and STL/build bytes unchanged','limits':['3929 original neutral rear dome faces use bounded same-component gray continuity inference, not direct individual facet observation.','Official film storyboards at approximately 47-49 seconds show rear dome broad pale-gray family; each tile only 160x90, insufficient for rib-specific material differences or calibrated HEX.','Original 40 mixed-material coplanar domains persist exactly unchanged, including one adjacent to the dome; this update does not repair or certify those inherited seams. No new mixed domain introduced.','Eight candidate faces adjoining mixed coplanar domains outside the dome are excluded.','All original front stone 4533, aperture shadow 408 and original dome 3935 assignments preserved.','Angel and finial, drum, broad roofs, side/rear walls/windows and plinth unchanged.','Unknown capture dates; 2017 video publication is not capture date or 2026 condition. Not printed or validated filament slicing.']}
+(R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n')
+(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':17960,'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest(),'old_palette_counts':[4533,3935,408,9084],'new_palette_counts':[4533,7864,408,5155],'added':3929,'excluded':8,'inherited_mixed_domains_unchanged':40,'new_mixed_domains':0},indent=2)+'\n');print('PASS: 3929 bounded dome return faces, inherited 40 mixed domains unchanged')

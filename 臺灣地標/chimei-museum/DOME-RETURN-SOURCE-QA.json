@@ -1,0 +1,100 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_INDEPENDENT_REVIEW_PASS",
+  "original_source": [
+    {
+      "path": "color-source-review-20261102/chimei-museum/official-front.jpg",
+      "sha256": "490c9e3afb4ddb8647df15f478d566ec382bf7c719e7a349941f0743b5567794",
+      "url": "https://www.twtainan.net/content/images/attractions/17368/1024x768_Filedata635593365562299095.jpg",
+      "actually_viewed": true
+    }
+  ],
+  "official_news_url": "https://www.chimeimuseum.org/news/60dbeedd0d460/detail",
+  "official_building_url": "https://www.chimeimuseum.org/about/building?OpBrower=1",
+  "video_url": "https://www.youtube.com/watch?v=aAlPX-IVi8g",
+  "video_title": "【奇美博物館 空拍影片】看見奇美（建議以高畫質觀賞）",
+  "channel": "奇美博物館 CHIMEI Museum",
+  "video_duration_seconds": 82,
+  "video_publication": "2017-09-06T19:57:01-07:00; not capture date",
+  "news_publication": "2017-09-12; not capture date",
+  "source_records": [
+    {
+      "file": "official-aerial-storyboard-0.jpg",
+      "sha256": "5f85f0075e032561d26c865f94b93ec9830b0ff0b69650f7105eef9819cb21de",
+      "frame_interval_seconds": 1,
+      "tile_grid": [
+        5,
+        5
+      ],
+      "first_frame_seconds": 0,
+      "tile_size": [
+        160,
+        90
+      ]
+    },
+    {
+      "file": "official-aerial-storyboard-1.jpg",
+      "sha256": "53a2d18d7f9a888bd53125ce489f5c767826f5379fdd612c4004871bef62d556",
+      "frame_interval_seconds": 1,
+      "tile_grid": [
+        5,
+        5
+      ],
+      "first_frame_seconds": 25,
+      "tile_size": [
+        160,
+        90
+      ]
+    },
+    {
+      "file": "official-aerial-storyboard-2.jpg",
+      "sha256": "eebe79596cd6bf9091e1918aa3b25c6fee2cdb378968f5232b3ed57c3f2f6d06",
+      "frame_interval_seconds": 1,
+      "tile_grid": [
+        5,
+        5
+      ],
+      "first_frame_seconds": 50,
+      "tile_size": [
+        160,
+        90
+      ]
+    },
+    {
+      "file": "official-aerial-storyboard-3.jpg",
+      "sha256": "371b4065d27199cdb626ef578bec58e08b57d33307fc12e10677d5c50ea94247",
+      "frame_interval_seconds": 1,
+      "tile_grid": [
+        5,
+        5
+      ],
+      "first_frame_seconds": 75,
+      "tile_size": [
+        160,
+        90
+      ]
+    }
+  ],
+  "supporting_building_image": {
+    "url": "https://www.chimeimuseum.org/uploads/photos/shares/about/5fd329ca9e118.jpg",
+    "file": "5fd329ca9e118.jpg",
+    "sha256": "27c368d5e87c44ffedc5d08fa05e7674defae2975f35e83de62360a7b43f8423"
+  },
+  "observation": "Official daylight aerial storyboard at approximately 47-49 seconds shows rear dome pale-gray family continuous with the front. Canonical video identity is linked by museum news and building pages.",
+  "inference": "3929 bounded original rear dome faces receive same-component gray continuity inference, not per-facet direct visual confirmation.",
+  "resolution_limits": "Each storyboard tile is only 160x90. Cannot authenticate rib-specific materials, fine trim or calibrated HEX. No such details added.",
+  "excluded": "Angel/finial, drum, broad roofs, side/rear walls/windows and plinth unchanged; 8 candidate faces at mixed coplanar domains excluded.",
+  "coplanar_limits": "40 inherited mixed-material coplanar domains remain byte-index-identical, including one adjoining dome. No new mixed domain; not a zero-seam or repaired-whole-model claim.",
+  "face_counts": {
+    "triangles": 17960,
+    "original_dome": 3935,
+    "added_dome": 3929,
+    "dome": 7864,
+    "front_stone": 4533,
+    "aperture_shadow": 408,
+    "neutral": 5155
+  },
+  "capture_dates": "Unknown. 2017 publication does not establish capture date or 2026 condition.",
+  "rights": "Reference images/storyboards privately retained, not publicly redistributed or textured; no CC/commercial authorization inferred.",
+  "historical_source_register": "qa/dome-return-previous/COLOR-SOURCE-REGISTER.json",
+  "current_independent_review": "DOME-RETURN-INDEPENDENT-QA.json"
+}

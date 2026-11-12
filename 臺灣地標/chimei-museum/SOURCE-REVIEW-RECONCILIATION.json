@@ -1,0 +1,116 @@
+{
+  "status": "SOURCE_SNAPSHOT_RECONCILED_FINAL_BYTES_VERIFIED",
+  "scope": "Supplement to original independent review; does not rewrite its hash or claim its source snapshot hash matches current source file. No new geometry, color, source or printability certification.",
+  "original_frozen_manifest": {
+    "key": "chimei",
+    "manifest": "chimei-frozen-changed-manifest.json",
+    "files": 44,
+    "bytes": 10729277,
+    "manifest_sha256": "537d9d560de05100e5553fb8b39d57d7de3868c983dfd801217b817d5eb1e3ca",
+    "state": "LOCAL_FROZEN_PUBLICATION_NOT_VERIFIED_BY_THIS_THREAD"
+  },
+  "original_independent_review": "DOME-RETURN-INDEPENDENT-QA.json",
+  "original_independent_review_sha256": "73501e26480d52507cce7418daadeeb9074018dee110ac90d63be8501c59ddba",
+  "source_snapshot": "qa/source-review-reconciliation/SOURCE-QA-REVIEWED-SNAPSHOT.json",
+  "source_snapshot_sha256": "759dbf07470f7220cf4752b112000c0174662033fe4fcda87e0dd545ee06de18",
+  "current_source": "DOME-RETURN-SOURCE-QA.json",
+  "current_source_sha256": "bbba67d888fc4ceec1e683ec5e52010336a78568806c86d1a4804cefab5d5e88",
+  "only_source_differences": [
+    "status changed from SOURCE_SCOPE_SUPPORTED_PENDING_INDEPENDENT_REVIEW to completed review status",
+    "current_independent_review appended"
+  ],
+  "proof": "Restoring exactly these two JSON fields and original UTF-8 indent2 plus trailing newline reproduces the source SHA bound by original independent review. All other source evidence, domains, counts and limitations are identical.",
+  "references": [
+    {
+      "path": "color-mesh.npz",
+      "original_report_sha256": "165b2aba94ad59de8bf3fdc5e0994b3f166edf452afde20b8296f72d36ad22f2",
+      "current_sha256": "165b2aba94ad59de8bf3fdc5e0994b3f166edf452afde20b8296f72d36ad22f2",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "appearance.3mf",
+      "original_report_sha256": "498447d46c36fc5ca8f8302da8cb341142f1c6e261ced7823786dffe1bb8fd14",
+      "current_sha256": "498447d46c36fc5ca8f8302da8cb341142f1c6e261ced7823786dffe1bb8fd14",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "scene.blend",
+      "original_report_sha256": "913de24c66b91f03348b346586a20709280c3754aa135296d5005ac66343b356",
+      "current_sha256": "913de24c66b91f03348b346586a20709280c3754aa135296d5005ac66343b356",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "colorize_model.py",
+      "original_report_sha256": "8c67d7bac0316a8a07b5cbfa3ff4dcfd8e2855338df148a7905a723493788f3f",
+      "current_sha256": "8c67d7bac0316a8a07b5cbfa3ff4dcfd8e2855338df148a7905a723493788f3f",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "DOME-RETURN-SOURCE-QA.json",
+      "original_report_sha256": "759dbf07470f7220cf4752b112000c0174662033fe4fcda87e0dd545ee06de18",
+      "current_sha256": "bbba67d888fc4ceec1e683ec5e52010336a78568806c86d1a4804cefab5d5e88",
+      "relation": "PRE_FINALIZATION_SOURCE_SNAPSHOT"
+    },
+    {
+      "path": "preview.png",
+      "original_report_sha256": "ed0c5a8a821515ee46c65736c0b1f394d64d190787f8d20b86df5e44034d9bc4",
+      "current_sha256": "ed0c5a8a821515ee46c65736c0b1f394d64d190787f8d20b86df5e44034d9bc4",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "rear.png",
+      "original_report_sha256": "3cec908a458073e0b56978adea7293a39bcba9aacb57a09a8f31a777bd279b23",
+      "current_sha256": "3cec908a458073e0b56978adea7293a39bcba9aacb57a09a8f31a777bd279b23",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "front.png",
+      "original_report_sha256": "e8fa2c04a854fc1b66690af21546d8a4a183761066a23eb2835e77a2d44695e7",
+      "current_sha256": "e8fa2c04a854fc1b66690af21546d8a4a183761066a23eb2835e77a2d44695e7",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "back.png",
+      "original_report_sha256": "de880a84a6b40163f120bfb475473d1a36c39b045080084ddfb054a0c4136dd2",
+      "current_sha256": "de880a84a6b40163f120bfb475473d1a36c39b045080084ddfb054a0c4136dd2",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "west.png",
+      "original_report_sha256": "a54f14952df43ec75f0926a101d5e613c6b0766ae351049a8612f0a63406b28e",
+      "current_sha256": "a54f14952df43ec75f0926a101d5e613c6b0766ae351049a8612f0a63406b28e",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "east.png",
+      "original_report_sha256": "e037061cc6a4620face42b89ea387d182b47843c517b49ff51b98fc4cc44dca8",
+      "current_sha256": "e037061cc6a4620face42b89ea387d182b47843c517b49ff51b98fc4cc44dca8",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "top.png",
+      "original_report_sha256": "df8cd8bb7491fefa92375e96ab66bebcc39c7e763807d289cbf6d6c4d5f0fbb3",
+      "current_sha256": "df8cd8bb7491fefa92375e96ab66bebcc39c7e763807d289cbf6d6c4d5f0fbb3",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "entry-detail.png",
+      "original_report_sha256": "453a7faef9fe1d5335de45f23574851454b6771276859533a0b549c61273358e",
+      "current_sha256": "453a7faef9fe1d5335de45f23574851454b6771276859533a0b549c61273358e",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "facade-detail.png",
+      "original_report_sha256": "46f8ba07da9aee6d24820471abc825126510d6d9cd36970445ddded34eaf93d2",
+      "current_sha256": "46f8ba07da9aee6d24820471abc825126510d6d9cd36970445ddded34eaf93d2",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "roof-detail.png",
+      "original_report_sha256": "f24cab7da0e7e9d240518e73500101e4fbdf31d96fd60756f8f36ed5071a684b",
+      "current_sha256": "f24cab7da0e7e9d240518e73500101e4fbdf31d96fd60756f8f36ed5071a684b",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    }
+  ],
+  "new_model_changes": false
+}

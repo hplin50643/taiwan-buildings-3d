@@ -1,10 +1,6 @@
 {
-  "slug": "chimei-museum",
-  "original_faces": 17960,
-  "count_delta": 0,
-  "geometry_change_permitted": false,
-  "issued_utc": "2026-11-02T18:02:00Z",
-  "sources": [
+  "status": "SOURCE_SCOPE_SUPPORTED_INDEPENDENT_REVIEW_PASS",
+  "original_source": [
     {
       "path": "color-source-review-20261102/chimei-museum/official-front.jpg",
       "sha256": "490c9e3afb4ddb8647df15f478d566ec382bf7c719e7a349941f0743b5567794",
@@ -12,59 +8,93 @@
       "actually_viewed": true
     }
   ],
-  "audit": {
-    "path": "color-audit-landmark5-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
-    "sha256": "c56327e3c5a659a7db974c09d2022a9b1d7b5687355657000e735596823a1650"
-  },
-  "independent_review": {
-    "path": "color-source-review-20261102/chimei-museum/chimei-museum-INDEPENDENT-FOCUSED-COLOR-REVIEW-1800.json",
-    "sha256": "63e8fa18799c19fbf8f4e9854d64f29ee4eca545a055e2a2f7171065b86be99b"
-  },
-  "approved_mapping": [
+  "official_news_url": "https://www.chimeimuseum.org/news/60dbeedd0d460/detail",
+  "official_building_url": "https://www.chimeimuseum.org/about/building?OpBrower=1",
+  "video_url": "https://www.youtube.com/watch?v=aAlPX-IVi8g",
+  "video_title": "【奇美博物館 空拍影片】看見奇美（建議以高畫質觀賞）",
+  "channel": "奇美博物館 CHIMEI Museum",
+  "video_duration_seconds": 82,
+  "video_publication": "2017-09-06T19:57:01-07:00; not capture date",
+  "news_publication": "2017-09-12; not capture date",
+  "source_records": [
     {
-      "part": "Front stone envelope",
-      "coordinates": "front=-Y; wings y≈−17, bays−18, portico columns y−25 and pediment front≈−28.5",
-      "color": "off-white/light gray family",
-      "limits": "Backlit image supports broad family, not precise calibration. Existing columns/relief only."
+      "file": "official-aerial-storyboard-0.jpg",
+      "sha256": "5f85f0075e032561d26c865f94b93ec9830b0ff0b69650f7105eef9819cb21de",
+      "frame_interval_seconds": 1,
+      "tile_grid": [
+        5,
+        5
+      ],
+      "first_frame_seconds": 0,
+      "tile_size": [
+        160,
+        90
+      ]
     },
     {
-      "part": "Front openings",
-      "coordinates": "Existing two front rows and portico recessed doors",
-      "color": "muted dark gray shadow/backing",
-      "limits": "No all-wall blue glass or invented mullions; actual cut faces only."
+      "file": "official-aerial-storyboard-1.jpg",
+      "sha256": "53a2d18d7f9a888bd53125ce489f5c767826f5379fdd612c4004871bef62d556",
+      "frame_interval_seconds": 1,
+      "tile_grid": [
+        5,
+        5
+      ],
+      "first_frame_seconds": 25,
+      "tile_size": [
+        160,
+        90
+      ]
     },
     {
-      "part": "Dome",
-      "coordinates": "Original ribbed dome centered0,−6,z27.6..36.2",
-      "color": "restrained gray family on visible front half",
-      "limits": "No gold claim. Back half neutral unless explicitly documented same-component extrapolation."
+      "file": "official-aerial-storyboard-2.jpg",
+      "sha256": "eebe79596cd6bf9091e1918aa3b25c6fee2cdb378968f5232b3ed57c3f2f6d06",
+      "frame_interval_seconds": 1,
+      "tile_grid": [
+        5,
+        5
+      ],
+      "first_frame_seconds": 50,
+      "tile_size": [
+        160,
+        90
+      ]
+    },
+    {
+      "file": "official-aerial-storyboard-3.jpg",
+      "sha256": "371b4065d27199cdb626ef578bec58e08b57d33307fc12e10677d5c50ea94247",
+      "frame_interval_seconds": 1,
+      "tile_grid": [
+        5,
+        5
+      ],
+      "first_frame_seconds": 75,
+      "tile_size": [
+        160,
+        90
+      ]
     }
   ],
-  "mandatory_public_limits": [
-    "Official-front backlit photograph and original code/preview actually inspected. Museum-banner.jpg is interior and excluded.",
-    "Tiny summit angel insufficient color evidence: entire original simplified statue/finial neutral, not golden.",
-    "Broad horizontal roof, side/back walls/windows, display plinth neutral; no garden/fountain/persons/nearby buildings.",
-    "No new geometry or facet splitting. Full-vertex surface tests, not centroid color bands; unresolved crossing facets retain coherent neutral plane.",
-    "Source availability is not publication/print QA or blanket photo redistribution permission. Private source photo not bundled publicly."
-  ],
-  "rights": "公開官照未證CC；原照私人保存不貼圖、不保證商用授權",
-  "capture_dates": "照片未確證拍攝日，色值不校準",
-  "palette_nominal_srgb": {
-    "front_stone": "#D8DAD2",
-    "dome_front": "#9DA9A6",
-    "recess": "#4B5755",
-    "neutral": "#A7ABA5"
+  "supporting_building_image": {
+    "url": "https://www.chimeimuseum.org/uploads/photos/shares/about/5fd329ca9e118.jpg",
+    "file": "5fd329ca9e118.jpg",
+    "sha256": "27c368d5e87c44ffedc5d08fa05e7674defae2975f35e83de62360a7b43f8423"
   },
-  "model_QA_pending": true,
-  "required_QA": [
-    "原STL bytes/頂點/三角一致",
-    "十視圖/材域獨審、全頂點域不造centroid楔",
-    "未知中性、來源不公開/貼圖",
-    "保留原檔不刪除"
-  ],
-  "unique_scope": "只有前石色/實際原凹洞與前半圓頂灰；後半穹頂/天使/平屋/側背中性，不採任何全圓頂外推或金天使。",
-  "source_GO_sha256": "b7c726e9acf16f64592fb18fc451e37b0947d82e8e4d65458f3a8d3b5fd07ef0",
-  "source_status_at_issue": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
-  "status": "SOURCE_GO_APPLIED_MODEL_QA_SEPARATE",
-  "private_source_backup_receipt": "color-source-backup-landmark5-20261102-1802/PRIVATE-BACKUP-RECEIPT-1802.json"
+  "observation": "Official daylight aerial storyboard at approximately 47-49 seconds shows rear dome pale-gray family continuous with the front. Canonical video identity is linked by museum news and building pages.",
+  "inference": "3929 bounded original rear dome faces receive same-component gray continuity inference, not per-facet direct visual confirmation.",
+  "resolution_limits": "Each storyboard tile is only 160x90. Cannot authenticate rib-specific materials, fine trim or calibrated HEX. No such details added.",
+  "excluded": "Angel/finial, drum, broad roofs, side/rear walls/windows and plinth unchanged; 8 candidate faces at mixed coplanar domains excluded.",
+  "coplanar_limits": "40 inherited mixed-material coplanar domains remain byte-index-identical, including one adjoining dome. No new mixed domain; not a zero-seam or repaired-whole-model claim.",
+  "face_counts": {
+    "triangles": 17960,
+    "original_dome": 3935,
+    "added_dome": 3929,
+    "dome": 7864,
+    "front_stone": 4533,
+    "aperture_shadow": 408,
+    "neutral": 5155
+  },
+  "capture_dates": "Unknown. 2017 publication does not establish capture date or 2026 condition.",
+  "rights": "Reference images/storyboards privately retained, not publicly redistributed or textured; no CC/commercial authorization inferred.",
+  "historical_source_register": "qa/dome-return-previous/COLOR-SOURCE-REGISTER.json",
+  "current_independent_review": "DOME-RETURN-INDEPENDENT-QA.json"
 }

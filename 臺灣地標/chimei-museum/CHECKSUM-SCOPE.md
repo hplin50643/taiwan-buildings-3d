@@ -1,15 +1,16 @@
-# 校驗版本說明：當前交付補充
+# 來源快照調和補充為準
 
-本檔為 append-only 發布補充；原模型、幾何、材色、原凍結資料及兩校驗表均未修改。
+本版本新增 [來源快照調和說明](SOURCE-REVIEW-RECONCILIATION.md) 及逐檔驗證 JSON。原獨審 SOURCE-QA 雜湊僅對應另存的審核時快照，不驗證目前同名來源檔案；原報告本身保持不變。新根 SHA256SUMS 及 SOURCE-REVIEW-RECONCILIATION-FREEZE-MANIFEST.json 核驗補充版本，原 scope FREEZE、原根表別名及原獨審維持原版本作用域。以下原說明中「當次」須依上述快照／最終檔案區別解讀。
 
-- `SHA256SUMS.txt` 屬原版歷史表。下列精確舊項對當前色版 NOT_RECERTIFIED，不能視為新檔校驗通過；其餘項仍照表核對。
-- 無副檔名 `SHA256SUMS` 核對所列當前檔案，不含自身與 FREEZE，也未回填本次兩份追加補充。
-- `PUBLICATION-SUPPLEMENT-MANIFEST.json` 綁定全部原凍結公開 payload 與本說明的大小、SHA256、Git blob SHA；不自循環包含自身，其位元組由發布 commit 與外層交付 manifest 綁定。
-- 本補充不提高來源材色、幾何、數位 QA 或實體列印可信度；原限制仍見 README。
+# 原穹頂背側局部補色校驗範圍
 
-## 精確歷史項
+本次只增加原穹頂背側 3929 個原側面的同構件名義灰色連續推定，未修改 STL、原建模程式或原幾何。仍是局部配色未完成，非現況或列印認證。
 
-- `README.md`：舊 SHA256 `8546317fa5087d7759cab5f4d06a5964af28d0d3e57b03e997ac6721d3e29c09`；當前 SHA256 `efae2e3e4a065470425db87fbc195b4fbb789894847cb9e5ae06d4c7876e475c`。原項 NOT_RECERTIFIED，當前值由新表與交付 manifest 核對。
-- `scene.blend`：舊 SHA256 `c8c88bbf10b05f12800d82b67be1e7aa3e52b90e77cebd31c552bb773e30c9cd`；當前 SHA256 `ec012618a1f2600cf7e3a55847b52aee5fa161cc8076b2d003a943eebbdb7738`。原項 NOT_RECERTIFIED，當前值由新表與交付 manifest 核對。
+- 根目錄 `SHA256SUMS` 核對此次清單列出的檔案，不含各版本 SHA256SUMS 本身與此次 DOME-RETURN-FREEZE-MANIFEST。
+- `DOME-RETURN-FREEZE-MANIFEST.json` 綁定本次全部交付檔案，不自包含；不包含私人來源照片、比較圖、日誌或 .blend1 備份。
+- `FREEZE-MANIFEST.json`、`PUBLICATION-SUPPLEMENT-MANIFEST.json`、`SHA256SUMS.txt`、`INDEPENDENT-COLOR-VISUAL-QA.json` 與 qa/dome-return-previous 中資料均保留原位元組，是舊版本歷史紀錄，不表示此次變更檔已通過舊校驗。
+- 本次實際 QA 以 DOME-RETURN 開頭檔案，以及根目錄重新產生的 COLOR-ASSIGNMENT、COLOR-FORMAT-GEOMETRY、SCENE、FRAMING、NO-TEXT、DELIVERY QA 為準。
 
-[返回模型說明](README.md) · [當前校驗表](SHA256SUMS) · [發布補充清單](PUBLICATION-SUPPLEMENT-MANIFEST.json)
+[模型說明](README.md)
+
+本次僅依官方160×90空拍分鏡支持灰色大色族與連續推定。原40個混材共面域保留不變，僅驗證不新增，不宣稱原模型全域材界正確。天使/頂飾、鼓座及大平屋面不擴染。
