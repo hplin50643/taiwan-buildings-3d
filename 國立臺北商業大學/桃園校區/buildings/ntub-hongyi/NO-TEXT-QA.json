@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views visually checked in ntub-hongyi-all-views.jpg. No image caption/backing, original mesh/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "a8d2163293001b10e04405fbef91dd4c07b78f480e463e52b0ce0e938cdfef5c",
+    "east.png": "4d0d4704ce55cbbbbfb4c5c67e8a2e279aa5483206b665956da1dcaf6f5e7f9e",
+    "entry-detail.png": "b1fee0bf1ad20d6464116d65ce80c1bf6708a4a630dbfeff64920fde378268c2",
+    "facade-detail.png": "9ad239d93d1914c306d0b25df2e2e07263466b182198e7be8b01c3ecb2071d52",
+    "front.png": "9bf49a5785cc27cda209397e71c4e49621c4a9bba0a5a979f4eb012fd54fbf11",
+    "preview.png": "4c0b9c64cb833db3384d5e851a2e19e40eae13e2274bd9b44f63d3da0f9a8f56",
+    "rear.png": "c70ebd292162ddff34819cab2b09c45a45778607ad7f7b988e3892c4b53aa9de",
+    "roof-detail.png": "1067d26ef45391e235334e77fa7453994977e63d5d4fca09783ac94eee027897",
+    "top.png": "8c754202a485977384791de464bb3c02eba4ea024678f2e4e435769e99640640",
+    "west.png": "05a91dff01632626288f926b66bbb1d440cee7985a7bdeeaac643d2abff8534c"
+  }
+}
