@@ -16,6 +16,12 @@ assert edges.sum()==16
 assert not np.any((bands|edges)&bar)
 a[bands|edges]=0;a[bar]=1
 pal=[('Observed exposed floorband edges gray','#BCBFBB'),('Observed central front stair mullion dark gray','#48504D'),('UNVERIFIED brick mixed panes rear roof neutral','#B8BAB5')]
+original=a.copy()
+added=plane(1,-22)&span(0,45.5,62.5)&span(2,109,110.5)
+assert np.flatnonzero(added).tolist()==[3866,3868]
+assert (original[added]==2).all()
+a[added]=0
+assert np.array_equal(a[~added],original[~added])
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'3926 original triangles unchanged; no new or split faces','domains':{'front_bands':int(bands.sum()),'left_slab_edges':int(edges.sum()),'tower_central_front_bar':int(bar.sum())},'limitations':['Exact exposed planes only; mixed panes and continuous brick/gray walls neutral.','Photo capture dates unknown;2023 form and2025 PDF edition are not capture dates.','Material labels are not a verified multi-filament slicing job.']},indent=2)+'\n')
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'3926 original triangles unchanged; no new or split faces','domains':{'front_bands':int(bands.sum()),'left_slab_edges':int(edges.sum()),'tower_central_front_bar':int(bar.sum()),'service_tower_cap_front':int(added.sum())},'limitations':['Exact exposed planes only; mixed panes and continuous brick/gray walls neutral.','Photo capture dates unknown;2023 form and2025 PDF edition are not capture dates.','Material labels are not a verified multi-filament slicing job.']},indent=2)+'\n')
 (R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','triangles':3926,'original_STL_sha256':expected,'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()},indent=2));print(np.unique(a,return_counts=True))

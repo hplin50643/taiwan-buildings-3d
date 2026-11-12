@@ -1,0 +1,35 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed exposed floorband edges gray",
+      "hex": "#BCBFBB",
+      "faces": 50
+    },
+    {
+      "id": 1,
+      "name": "Observed central front stair mullion dark gray",
+      "hex": "#48504D",
+      "faces": 18
+    },
+    {
+      "id": 2,
+      "name": "UNVERIFIED brick mixed panes rear roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 3858
+    }
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "3926 original triangles unchanged; no new or split faces",
+  "domains": {
+    "front_bands": 34,
+    "left_slab_edges": 16,
+    "tower_central_front_bar": 18
+  },
+  "limitations": [
+    "Exact exposed planes only; mixed panes and continuous brick/gray walls neutral.",
+    "Photo capture dates unknown;2023 form and2025 PDF edition are not capture dates.",
+    "Material labels are not a verified multi-filament slicing job."
+  ]
+}

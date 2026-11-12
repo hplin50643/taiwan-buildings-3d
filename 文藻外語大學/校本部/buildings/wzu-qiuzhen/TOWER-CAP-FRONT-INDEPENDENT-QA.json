@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "reviewer": "Independent source/domain/model reviewer, not builder",
+  "source_review": "second-source-domain-review.json",
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "rebuild_review": "independent-rebuild-review.json",
+  "triangles": 3926,
+  "added_faces": [
+    3866,
+    3868
+  ],
+  "complete_new_domains": 1,
+  "original_colored_faces": 68,
+  "colored_faces": 70,
+  "neutral_faces": 3856,
+  "palette_entries_unchanged": 3,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "actual_visual_review": {
+    "all_ten": true,
+    "contact_sheet": "wzu-qiuzhen-ten-views.jpg",
+    "full_size": [
+      "front.png",
+      "entry-detail.png",
+      "facade-detail.png",
+      "roof-detail.png"
+    ],
+    "specific_check": "Front image clearly shows the highest right cap front strip; roof detail confirms top/back remain neutral. No extensions to tower wall, other cap faces or lower geometry."
+  },
+  "source_and_geometry_limits": [
+    "Original undated official Q photograph reinspection, not new capture or2026 survey. Nominal gray family only, not calibrated material composition.",
+    "Only17x1.5 front plane; original16depth and overall geometry approximate, not source-certified. Historical floorband palette label retained without claiming identical physical material.",
+    "Original68 colored and all other indices retained exactly. No OBJ in original public package, none added."
+  ],
+  "model_and_3MF_verified": true,
+  "isolated_build_color_export_QA_checked": true,
+  "retained_isolated_outputs_independently_compared": true,
+  "scene_independently_reopened": true,
+  "scene_mesh_transforms_camera_lights_render_unchanged": true,
+  "source_pending_snapshot_unchanged": true,
+  "image_sha256": {
+    "preview.png": "f22137a89399cf28a5a42bfee6084befee5031e105832647789ad68728732a6f",
+    "rear.png": "aa1cc3cc348a3a6f6e60bf405888346bbfd315ca146cb08450b2a17d482e5cef",
+    "front.png": "323eff2c952aac2bdf6c532fe6d4eae94063c5cd662ddd397c48133feaebf2ad",
+    "back.png": "5650bdfa9bdbe13e400ce64c31dff9a735704a63486bbf4d974d0bef04f5d8c7",
+    "west.png": "72bcafd3a56faed336c2093af26af3da87db4a22c058abbf477c5b0ab529497a",
+    "east.png": "d08b9b2cd7b7d36fa2283b1bddb57b3d6451b60ac088ef936e323207b4d83360",
+    "top.png": "33ba4450d2ae1e28f9430a22d6dbd8548aaa2c273d036052cadbdbe82a710540",
+    "entry-detail.png": "66e1838d484e302295d3b3383431cd3274356711f38017f90bb89b15c750fe57",
+    "facade-detail.png": "9db44212ce117eb36f08e7e4313830c77b0f8c529a3187a8805328aed4bfcfb3",
+    "roof-detail.png": "50a2d5f7c03fcdba3034fd715a5ef5956ece99f6c9bd4aa3aef2acc05d270759"
+  },
+  "file_sha256": {
+    "model.stl": "de7f24a7c25d7f5c5344f0f0887718080a7b0201a07b42d2bea4d1100d2508b2",
+    "build_model.py": "c6f7672105c3150fc391a998c768dcdc6ba54fa23fc3afffef41968c365ca61b",
+    "color-mesh.npz": "951dc28704fcddcd4bfd4838378defefd76f0e01f4d936e6849408cc44723b41",
+    "palette.json": "9e6f8d220459f406e9e9223e09c8c5a98dcfc665fc88c99fd4e465a6a52bb76a",
+    "appearance.3mf": "1b361862d7ae24a476329a6eb4fce4724a9a2bdb9286887215bfb313907d3b82",
+    "appearance-materials.json": "e0bf68f61b9c3f6d945c3d40e5f2b3cc822ef1e0381b03ba6258b51e969b7b2e",
+    "scene.blend": "0002ae7e44370e70990bf9cfa821697e0ca3c2639452101aac225fbf9cee18aa",
+    "colorize_model.py": "1cd60d07b33012f5669c8abcb82b6599273bb16ae5d2f72265eea6da4b669558",
+    "export_appearance.py": "21ac53b1470377df7896dfae431c2bf75d551386f09e25b8639fbe158a8571af",
+    "validate_color.py": "a2b7da6c6a7598ba4761f86633b00ad6a5374decc0ec39ea51c3a8321a4729c4",
+    "verify_color_scene.py": "fa07fbdac2b6989e56fa41d3c2104b8bb6496eceec7eec049dba3de3fddb376c",
+    "render_color.py": "e53e5b669d743ef67bbefe0e9c5255b0de5a8b41cdee742c546b905f3bde06c0",
+    "README.md": "a1c16596e1879e7a528c998af67c6d858577655302e054151ca475af4b948383",
+    "CHECKSUM-SCOPE.md": "73c46c0776bd1ea26997bd9374647318f53bd38f19a877f60a082df0ebd9593b",
+    "COLOR-ASSIGNMENT-QA.json": "af8a62b8fa90dc5c7aaf43442a75f3bf6482bb6b45cadf89fd469334cda55180",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "34a524287ab010b52e1e0f702aee8224ad3b5913264fc3937919b926db702ba4",
+    "SCENE-QA.json": "733caeadf878e148970b96d453adaafbe3fd99ee97fec095c70c11d3e04d402f",
+    "TOWER-CAP-FRONT-SCENE-QA.json": "3a146b11cc8ed68b6d9b8c87c6b8c090201ecc7aaa0ab6e9e40d3a8e719cfa11",
+    "TOWER-CAP-FRONT-SOURCE-QA.json": "049e67b950d9f05370a1f87ddf885e8fc55f72e4bc935530ee491278f598fe7d",
+    "COLOR-SOURCE-REGISTER.json": "049e67b950d9f05370a1f87ddf885e8fc55f72e4bc935530ee491278f598fe7d",
+    "README.zh-TW.md": "a1c16596e1879e7a528c998af67c6d858577655302e054151ca475af4b948383"
+  },
+  "no_blockers": true
+}

@@ -13,12 +13,13 @@
     "3MF_faces_same": true,
     "3MF_material_assignment_exact": true,
     "3MF_object_identity": true,
+    "isolated_3MF_XML_identical": true,
     "isolated_original_STL_hash": true,
     "isolated_color_mesh_hash": true,
     "isolated_palette_assignment_hash": true,
     "inputs_unchanged_during_QA": true
   },
-  "color_mesh_sha256": "b20dfbf3bf865de87a03847fbcfc0d6a505ea95e37635db3029cc20f1638e716",
+  "color_mesh_sha256": "951dc28704fcddcd4bfd4838378defefd76f0e01f4d936e6849408cc44723b41",
   "original_STL_sha256": "de7f24a7c25d7f5c5344f0f0887718080a7b0201a07b42d2bea4d1100d2508b2",
   "bounds_mm": [
     [
@@ -35,7 +36,7 @@
   "retained_rebuild": "Isolated rebuild retained privately; no automatic file deletion.",
   "limitations": [
     "Color model uses original unrefined geometry; no new facade accuracy claim.",
-    "Three base-material labels are not a tested four-filament slicer project.",
+    "Three base-material labels are not a tested multi-filament slicer project.",
     "STL format itself does not contain color."
   ]
 }

@@ -1,34 +1,49 @@
 {
-  "status": "SOURCE_GO_BOUNDED_PARTIAL",
-  "building": "WZU Qiuzhen",
-  "source_go_sha256": "3f8963d45b0a985b0bee71d5bec81caa1a05ee943798812c7b2e8acae38fbf02",
-  "source_review_sha256": "cf9107b593a908765c49340d737edbda226b19765d6d839f9bf4c975c06c6ffe",
-  "sources": [
-    {
-      "name": "official-qiuzhen.jpg",
-      "sha256": "7e76b0fd8bb2513b9d80076f79e42f1b6f1faa48464c0d3ebdf086a9b865dd8d"
-    },
-    {
-      "name": "pdf-page53.png",
-      "sha256": "d4b03ac646f3cb840b9bb3ad493e1b88ebe86245eaecf6e2ce058b80c8b82b28"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Only highest right service-tower cap front -Y face",
+  "face_ids": [
+    3866,
+    3868
   ],
-  "sources_private": true,
-  "original_photographs_not_distributed": true,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "source_dates": "Capture unknown;2023 form and2025 PDF edition not capture dates",
-  "allowed": [
-    "34 frontband triangles and16 left slab-edge triangles gray",
-    "18 front central tower bar triangles darkgray"
+  "bounds": [
+    [
+      45.5,
+      -22,
+      109
+    ],
+    [
+      62.5,
+      -22,
+      110.5
+    ]
   ],
-  "unknown_neutral": [
-    "mixed window backings",
-    "main continuous walls",
-    "tower broad pane/opaque areas",
-    "roof rear service rooms entry canopy"
+  "complete_domains": 1,
+  "old_material": 2,
+  "proposed_material": 0,
+  "nominal_hex": "#BCBFBB",
+  "colored_before": 68,
+  "colored_after": 70,
+  "neutral_after": 3856,
+  "triangles": 3926,
+  "evidence": [
+    "Original registered official Q.jpg hash exact. Native crop clearly distinguishes thin gray front lip over darker masonry face, from cap top and left return. This is reinspection of original undated photograph, not a new camera angle.",
+    "Official PDF53 confirms same tower location above front stair glazing, but low-resolution tower cap is contextual rather than precision material evidence."
   ],
-  "count_delta": 0,
-  "geometry_unchanged": true,
-  "private_source_backup": "Research source backup referenced privately; no raw sources or private identifiers distributed."
+  "limits": [
+    "Name of existing palette is historical floorband label; proposed reuse only nominal gray family, not exact calibrated material equality.",
+    "Original 17x16x1.5 cap is approximate; only front plane is proposed, no top/bottom/left/right/back or tower brick, panes, lower canopy.",
+    "Gray under oblique lighting does not establish precise HEX or paint composition."
+  ],
+  "file_sha256": {
+    "domain-screen.json": "bbe2b0c9799930834410f10fb1de2f6e806265aa32f559d582a4c394abd2c890",
+    "original-verification.json": "96a27e0b895f6b7d6045b0b823dd76ee40b5e7be74629a5665ae366f6ac465ef",
+    "original/build_model.py": "c6f7672105c3150fc391a998c768dcdc6ba54fa23fc3afffef41968c365ca61b",
+    "private-reference/official-Q.jpg": "7e76b0fd8bb2513b9d80076f79e42f1b6f1faa48464c0d3ebdf086a9b865dd8d",
+    "private-reference/cap-native.png": "08080fb4a00483b5b148046e4d7b8484d507f14adfb25e8120354dfa3be84ad3",
+    "private-reference/pdf53.jpg": "a97263cbf80c2a9b2765b55e4f867d76ba1fee03ed4f183d15eaf04cfdfda93b",
+    "original-mixed-domains.json": "f1afb91b77b7790a74b5ef2df769a00dca6253e375741f5ab8e25cfe30603fc6"
+  },
+  "original_connected_mixed_domains": 0,
+  "expected_mixed_domains_after": 0,
+  "historical_source_register": "qa/tower-cap-front-previous/COLOR-SOURCE-REGISTER.json"
 }

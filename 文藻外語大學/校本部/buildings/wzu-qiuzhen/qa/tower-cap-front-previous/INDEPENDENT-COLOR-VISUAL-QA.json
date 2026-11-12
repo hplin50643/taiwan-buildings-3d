@@ -1,0 +1,56 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_utc": "2026-11-02T21:25:41.716857+00:00",
+  "actual_sources_viewed": [
+    "official-qiuzhen.jpg",
+    "pdf-page53.png"
+  ],
+  "all_ten_final_views_actually_viewed": true,
+  "findings": [
+    "Only34 exact front floorband faces and16 left slab-edge faces gray; whole large walls remain neutral.",
+    "Only18 central stair-tower front bar faces darkgray; no broad green-glass pane assignment.",
+    "Mixed curtains/opaque panels/glass/framing have no true boundaries and stay neutral.",
+    "Rear/roof/service rooms neutral; no false color triangles or foreground other-building orange roof.",
+    "2023 form and2025 PDF edition explicitly not photographic capture dates.",
+    "3926 original triangles preserved; no original OBJ exists; no raw photographs distributed."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "70c8965160cdceeee63ad7c2f347302c86b3c6f3955cca0158e64519cb11295e",
+    "README.zh-TW.md": "70c8965160cdceeee63ad7c2f347302c86b3c6f3955cca0158e64519cb11295e",
+    "model.stl": "de7f24a7c25d7f5c5344f0f0887718080a7b0201a07b42d2bea4d1100d2508b2",
+    "build_model.py": "c6f7672105c3150fc391a998c768dcdc6ba54fa23fc3afffef41968c365ca61b",
+    "colorize_model.py": "55ba138d25222cfddb444531cd024f2e701d61bb9fab6e2aa00a6ad6d35277ea",
+    "render_color.py": "f1bb8fdf2be38c8545fce301941c4fe030b976795b422c4b9f053a7a66811e22",
+    "color-mesh.npz": "b20dfbf3bf865de87a03847fbcfc0d6a505ea95e37635db3029cc20f1638e716",
+    "palette.json": "9e6f8d220459f406e9e9223e09c8c5a98dcfc665fc88c99fd4e465a6a52bb76a",
+    "COLOR-SOURCE-REGISTER.json": "477d4f57dfb876003bcb723a0e5a45418a1544f8e631eedfd142e963df6265c0",
+    "appearance.3mf": "8dafe4d4af34e0dbda53b9794777c1d82acbc77271dcb568066ea4f9898b9dd9",
+    "scene.blend": "e59ec826b3814f56c48e7875909896c92d3f9f90a6dc20ba643a5527b1fb0bed",
+    "preview.png": "c70a738e86c74b0d1afaff354e8e0be5066e499eaa2d2d897679fc215b08d95f",
+    "rear.png": "acd2bdd27135a382ec3aa32e3310f2353baf3b299034332860a1d8e56feb7fef",
+    "front.png": "f70fa06f2c18188c75c7913a88738ee57fd5ad4a303a25ce94a8896e27e4c810",
+    "back.png": "5cb492d0b3643224343cc0b2779b7b9e64f3184a509d57fa100b12f1d1357a4a",
+    "west.png": "fba6435ea7983b3753b04bca7187c69874db3614182fbaf2234338556c302b1b",
+    "east.png": "b6e78312288d8b0cf663e1464c6b5894732d1ad6a8c3cb333240222fd59116e0",
+    "top.png": "7b23fbfd2baf77922111ffd598b78935045d89bca103cc29113b3e47f1f71a16",
+    "entry-detail.png": "70fa5bfa55a65c95095911eebc616be161ba60c9cdd362af4efe40b659416d8c",
+    "facade-detail.png": "e213ec5e5e34434546f1f665cb797c3079fd45b0e1b34a398412be94367a9880",
+    "roof-detail.png": "da83f8135ef83b30fe996c43aa1f3bb2a8eedd0bddd6f715320c93abda1ce53d"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "efb10fec663934b6e75fe136e1d80ff1ca28b6928bede12181b1ff9fc60067c7",
+    "SCENE-QA.json": "a8bf1ce7cbeedaf7c0848fa2c8c8b889037bb1f186d27ce39e9183cc33e29db6",
+    "FRAMING-QA.json": "59848c1edac34865357b9e333f84876ea3067defa7c3debfef67d50cd90fdaf5",
+    "DELIVERY-QA.json": "db2cae2ed15110fb3f8b1871f150c0e4d79501368b810733d3d34e5e870e6ea4"
+  },
+  "private_montage": "private-review/final-v1-ten-view-montage.jpg",
+  "independent_parent_review": "Personally viewed official photograph, PDF exterior photographs, original code, preview and all ten final views; independent exact triangle identity and semantic face domains PASS. 50 gray bands and18 metal-frame faces; broad mixed window/wall domains remain neutral, partial only.",
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2122.json": "6ede21822739b4029a6b0682b4bf81c79ecc55c2f7509e3b57018b47d4ee465c",
+    "INDEPENDENT-DOMAIN-2122.json": "b97b488a98ac730ef24dcda6e7be150b07c2880dfe645d895be2cdac15d0c150"
+  }
+}
