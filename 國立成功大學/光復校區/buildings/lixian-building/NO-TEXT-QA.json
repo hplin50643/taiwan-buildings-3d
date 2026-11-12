@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in lixian-building-all-views.jpg. Caption/backing absent; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "arcade-detail.png": "9fef9fcd600051b835241231d24eb9ed6c79abfc39bdd77a4e0c1f1d47b583bf",
+    "back.png": "9ba214b2ec52f0647b8c3fe0f8f3fbd1ab31dd381d4b1eeb9b2f4dd6232e7463",
+    "east.png": "1261013baad4e2af5b982543a8ea8eb5e22f8f27b818d0f97e9c9d5dd433ebe8",
+    "entry-detail.png": "bc0b0c9f8d2ae44b007e6c62c5e8b9141046406d226065a468bd22f9939a1277",
+    "front.png": "d001627604f7163665d052d2f6d42cbe047e4060ed0f1649e79b25d339c8a514",
+    "preview.png": "25374d0322a8af9b5cd8817be3bb648f600648392e4487e9faf7615c90f3e35a",
+    "rear.png": "53f8bd59988e372ee4f38fdcda1752ddc5a13ae367d2ab535e2aa7d9a75a2fce",
+    "roof-detail.png": "0ec584483f4c822ac82aa730100054989b908a53623a4d654ca5265a43085c26",
+    "top.png": "a3cb186bf99389298b1f9a19c6c7d0ed0a61d47e21c2b15f011a03dfc3774bc2",
+    "west.png": "3ecca39c2286a29d4d6149f23e2606e2104143e8722050e093dfec2038c1a933"
+  }
+}

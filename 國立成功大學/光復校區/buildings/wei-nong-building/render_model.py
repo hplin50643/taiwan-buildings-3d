@@ -35,6 +35,14 @@ if hasattr(backing,'visible_shadow'):backing.visible_shadow=False
 def update_caption():
  sc=cam.data.ortho_scale;caption.location=(-.45*sc,-.29*sc,-10);caption.rotation_euler=(0,0,0);caption.data.size=.026*sc
  backing.location=(-.355*sc,-.322*sc,-10.1);backing.scale=(.23*sc,.090*sc,1);backing.rotation_euler=(0,0,0)
+# Unlabelled README previews; original limitations remain in README.
+caption.hide_render=True
+for obj in bpy.context.scene.objects:
+ if obj.name=='NOTICE_BACKDROP_NOT_PRINT_GEOMETRY':obj.hide_render=True
+scene.render.use_stamp=False
+caption.data.font=next(font for font in bpy.data.fonts if font.filepath=='<builtin>')
+for unused_font in list(bpy.data.fonts):
+ if unused_font.filepath!='<builtin>':bpy.data.fonts.remove(unused_font,do_unlink=True)
 from bpy_extras.object_utils import world_to_camera_view
 framing={}
 for name,loc in views.items():
@@ -60,4 +68,10 @@ for name,loc,target,ortho in [('entry-detail',(130,-170,100),(53,-38,17),95),('c
  cam.location=loc;cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=ortho;update_caption();scene.render.filepath=str(R/(name+'.png'));bpy.ops.render.render(write_still=True)
 cam.location=views['preview'];cam.rotation_euler=(Vector((0,0,25))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=340
 update_caption()
+# Portable preview destination; do not retain the build computer's output path.
+scene.render.filepath='//preview.png'
+for screen in bpy.data.screens:
+ for area in screen.areas:
+  for space in area.spaces:
+   if space.type=='FILE_BROWSER' and space.params:space.params.directory=b'//'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'scene.blend'),compress=True)

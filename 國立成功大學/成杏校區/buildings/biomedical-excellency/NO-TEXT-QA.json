@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in biomedical-excellency-all-views.jpg; caption/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "d46f74f86ff376bf6956f1639b471ddf90c2c88f4d1ca7483e3074c63fa5b15d",
+    "corridor-detail.png": "57fb31edaf0fc1b176a027204a559e3fff8b3617e8ec2ccdc9d7a252887efeb9",
+    "east.png": "f85d0afac551d95ea4fc6ea715fe89abc7ae00eae70262dabeb35b36648290e6",
+    "entry-detail.png": "c87df5bad4f647507cd635d196d5c1b05d0a4ddd31e7acd7aee8a2a2cc5bd782",
+    "front.png": "291fc0e9075bedb9a19d62db4b1c8103643071703a5c1f81868fe3f54a4e5ce2",
+    "preview.png": "bb5d67559a3bcd170684ed2a36c1894b75af8827d791848c4cc0202c6fbfe72d",
+    "rear.png": "6af0c619b968c10e453d1717b20dd35e8bc24a499731ea6952dadb5e263c7bce",
+    "roof-detail.png": "b4b3e0ca7a2013f311de46bbac59ee195d430860f0419feead7356b4f2a78574",
+    "top.png": "76fa1f1bbb74e724a8ff73c677a579fa7be7c87575d64ca7a7c935c8248ed289",
+    "west.png": "1bf2bcdefc03342a3fdd8d2b2ffc72727645767110d97b552ffe5dcb60fd18df"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in science-north-high-wing-all-views.jpg; caption/backing absent; original geometry/materials/cameras preserved."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "7b85d398c35af8116f8000181de9266fa61a095f330492fc8a5359a7e6265417",
+    "east.png": "b2f08a73f3c424fd599ffb6d717aa6ce3f160a4348db2a3e0751373404c7ce5f",
+    "entry-detail.png": "551e54bf20465ba06ff7e19aa23b3b4df124f24e78344239b7338305bbbc04d2",
+    "facade-detail.png": "d4f60d0f833ade421730c2d136f003a538ebf45eb7156bf03bd3633b4b498be1",
+    "front.png": "2f57122a06dedcece805e1d8de3ba0609852df9c2bf0f0987299790309cd7a80",
+    "preview.png": "78a3915686162e56b97481ffc1c23d2ede7f1287a88990ea3b3986b1a00b4045",
+    "rear.png": "9d5942add37cd527e6b9e3843a2dc56fa466ed8d121656d5a39b3258d1ff2c01",
+    "roof-detail.png": "980ced2c5a49abd2f41bab8521415e6dd1f6cf8414f2c3e3b25fb777137fad4a",
+    "top.png": "f42eae94cb13e4d43468b66862f2d083c6ee356b606a9af843fbe59828b191fd",
+    "west.png": "a9ac7f3ba58052dbfc23b5252a7d170b9f529b578e16cd74eb811b9db19d8a13"
+  }
+}

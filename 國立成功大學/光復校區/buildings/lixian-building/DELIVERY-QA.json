@@ -35,16 +35,16 @@
     "mesh_limits_disclosed": true
   },
   "images_sha256": {
-    "preview.png": "73cbffba472382ab95d8d975c5a6f602cc2ffa211b3e2583b2138f076e6a8def",
-    "rear.png": "2ff4b164856f4b84a2b22063650502bdca0ea806411e11574ee92ec3695193e0",
-    "front.png": "3398516ec0365fdaaf1d5900609a4dacbe7f904482d6ae5fd1c831f1784f3d17",
-    "back.png": "bd317403c9f9a952706337153af55b02850c33714ce54e65a300ebf0078d60f5",
-    "west.png": "5bdb935b1d13a37ae9aec5b97bf43670dd45741ff740460e3b63fc8200271f95",
-    "east.png": "8878b38355882cb83e96970415068b414142914163bc95550ad10b8caa181420",
-    "top.png": "6deef3a48cd2172050db033683cb8de18d159cd843934db5d0c94d232b453e66",
-    "entry-detail.png": "ee95653c0c0abb0af8c10cde4961dfd3aa86a489d07f1e8f2638013ac2a20471",
-    "arcade-detail.png": "80bd176a57beb5f1975ebd799fa65bd2f2e6ead3281463633be3b29099f52102",
-    "roof-detail.png": "ebb0e3c59fce748ef03ef910ad44e87733bdef34dffe97d9c01b0551413e29cf"
+    "arcade-detail.png": "9fef9fcd600051b835241231d24eb9ed6c79abfc39bdd77a4e0c1f1d47b583bf",
+    "back.png": "9ba214b2ec52f0647b8c3fe0f8f3fbd1ab31dd381d4b1eeb9b2f4dd6232e7463",
+    "east.png": "1261013baad4e2af5b982543a8ea8eb5e22f8f27b818d0f97e9c9d5dd433ebe8",
+    "entry-detail.png": "bc0b0c9f8d2ae44b007e6c62c5e8b9141046406d226065a468bd22f9939a1277",
+    "front.png": "d001627604f7163665d052d2f6d42cbe047e4060ed0f1649e79b25d339c8a514",
+    "preview.png": "25374d0322a8af9b5cd8817be3bb648f600648392e4487e9faf7615c90f3e35a",
+    "rear.png": "53f8bd59988e372ee4f38fdcda1752ddc5a13ae367d2ab535e2aa7d9a75a2fce",
+    "roof-detail.png": "0ec584483f4c822ac82aa730100054989b908a53623a4d654ca5265a43085c26",
+    "top.png": "a3cb186bf99389298b1f9a19c6c7d0ed0a61d47e21c2b15f011a03dfc3774bc2",
+    "west.png": "3ecca39c2286a29d4d6149f23e2606e2104143e8722050e093dfec2038c1a933"
   },
   "mesh_sha256": "ad207853c97b4d9c4fba8b4467d6ba3cf52badaddc825610c0cb65ac70c247f9",
   "geometry_change": false,
@@ -53,5 +53,10 @@
   "limitations": [
     "Four appearance labels are not a tested four-filament slicer project.",
     "Original simplified geometry retained; no exact arch-ring front color boundary."
-  ]
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
 }

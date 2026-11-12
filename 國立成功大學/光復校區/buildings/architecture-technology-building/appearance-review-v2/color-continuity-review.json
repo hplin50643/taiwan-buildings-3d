@@ -1,0 +1,127 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T20:13:56.886065+00:00",
+  "all_nine_images_personally_viewed": true,
+  "source_photos_personally_viewed": 1,
+  "source_photo_3404_current_read": "HTTP503; not viewed in this pass, historical record retained separately",
+  "no_text_objects_stamp_or_png_text": true,
+  "no_new_diagonal_color_fragments_observed": true,
+  "classification_geometry_audit": "boundary-continuity-audit.json",
+  "only_original_neutral_faces_changed": true,
+  "existing_colored_faces_unchanged": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "45ac1a740df132695877d1380b9ff7e22973e54baa05b3e65d319fcafe570f64",
+      "size_bytes": 918638,
+      "resolution": [
+        900,
+        800
+      ],
+      "review": "Viewed full 900x800 image. Brick body and raised side continuous; stone portico and curved bay coherent; original front window and arch shadow proxies retained. Horizontal roofs/base remain neutral. No labels, crop, diagonal color wedges or entire blank side."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "40f59a9e5325dce45309fdbd5eaddfa9e471deb7d0c4ac0c981fc71717e285ab",
+      "size_bytes": 873169,
+      "resolution": [
+        900,
+        800
+      ],
+      "review": "Viewed full900x800 image. Previously neutral opposite long facade and plain rear now continuous brick; recesses read as dark windows, raised center side/rear colored. No stray neutral vertical wall, triangular wedges or text. Rear plain geometry retained, no fabricated windows."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "6152be826f6025a0cddbcb98b87135a345b20101973ceb9e9b7891c626c4aafb",
+      "size_bytes": 888474,
+      "resolution": [
+        900,
+        800
+      ],
+      "review": "Full900x800 viewed: original rectangular windows, arches and front color retained; neutral side of curved bay now stone; no captions or diagonal masks."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "59b87b2ff7c43f558a51531e676ba8713e3c4d0ede1d5ed6ab0a17788e1cbb57",
+      "size_bytes": 917583,
+      "resolution": [
+        900,
+        800
+      ],
+      "review": "Full900x800 viewed: brick side and front coherent, raised center side red; curved stone bay and lower portico distinct. No color wedges, text or crops. Original massing approximations retained."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "7c7d1b1e7799791430fa72a3a554e8d2db854be450fa5636cb2fa038936669e4",
+      "size_bytes": 836259,
+      "resolution": [
+        900,
+        800
+      ],
+      "review": "Full900x800 viewed: complete left brick wall with stone curved bay; raised center side brick. Bay end return and soffit consistent with same stone family. Roof and base neutral, no stray neutral wall."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "e7ad4bbff2f9a721c8cab6255346284f0aae28df7338d66e21b6350d7c3ebfb5",
+      "size_bytes": 849790,
+      "resolution": [
+        900,
+        800
+      ],
+      "review": "Full900x800 viewed: original42 rectangular recesses now readable dark backs surrounded by consistent red brick walls and returns. Raised side brick; stone portico end cohesive. Neutral bands are actual horizontal roof planes viewed obliquely, not remaining uncolored walls. No text, color wedges or crops."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "9db8ce3eea88aa51cc4765c024755229147eaf809e5f2ee955eb9a762c6cc85d",
+      "size_bytes": 915310,
+      "resolution": [
+        900,
+        800
+      ],
+      "review": "Full900x800 viewed: all horizontal rooftops and artificial base stay neutral intentionally. Full footprint and curved projection inside frame, no text, diagonal color wedge or invented rooftop details."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "b6efc56ff21281cc7dcd17a64d4f286de69ee2c1d38c1cb9a5ce2d0ea902d555",
+      "size_bytes": 910299,
+      "resolution": [
+        900,
+        800
+      ],
+      "review": "Full900x800 original-front personally viewed and compared with revised front. Original main front, original left brick wall, window backs and gray portico unchanged; raised-center side is originally neutral, now brick. Curved bay minor return/soffit continuation; exact same framing and no text."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "c6d152e2ad507dfff79c45d91f95b39f0da248178553532025989655ba7284f0",
+      "size_bytes": 823779,
+      "resolution": [
+        900,
+        800
+      ],
+      "review": "Full900x800 original-rear personally viewed and compared with revised rear. Original whole opposite/rear and42 window recesses neutral; revision colors complete walls brick and backs dark. Same true mesh silhouette, scale, framing, light and original palette. No new geometry, diagonal fragments, labels or crops."
+    }
+  ],
+  "comparison_layout": "1800x1600, top front and bottom rear; left original, right revised; no image labels",
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "seed": 0,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "comparison_control": "Same revised scene lighting, camera position/framing, world and material values; only original per-face material indices restored for original-front/original-rear. Actual per-image values recorded in camera-render-records.json.",
+  "limits": [
+    "737 neutral faces extended by same-component brick/stone/dark-backing inference, not a remodel.",
+    "22 artificial base and53 broad horizontal rooftop faces remain neutral.",
+    "No all-side photo calibration or current-condition survey; only3402 pixels read this pass.",
+    "Historical print QA not rerun; no physical trial print."
+  ],
+  "comparison_personally_viewed": true,
+  "comparison_sha256": "12d6a4ff48c982cec87680a6194eab7f9d8cc50a1c66c723553677d26b395db2",
+  "comparison_review": "Personally viewed complete2x2 collage: top row same front cameras, bottom row same rear cameras; left original/right revised. Coherent complete-wall continuation, no cropping/text/diagonal masks. Roofs and base unchanged."
+}

@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ching-yeh-first-dormitory-all-views.jpg; caption/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "b83b1c4f80ecb3b6006bb044b47d1cf39370fb291a3d585c5f93aa5018e6c790",
+    "east.png": "17bbbf9e946bcd213b1cfaf90268391bc2081145ba942e40b3bd129bac7c55c5",
+    "entry-detail.png": "766fdfb973372ef954875fb8ba8b88f1bcd9e83a1375e4d2f6b581ea3fd8dc74",
+    "facade-detail.png": "41771d2dd0daf78a72802ceb426edc64b609d35639f8f989e99372178a31fc2c",
+    "front.png": "ac8e45b64c3341caaeae13a2289ffc5708d0d4e756a26dfd0bb4148cf385a56e",
+    "preview.png": "f3fa06aa468464a3807e4180a3ca2747cabb5fd05e82f424298823eb996ae55c",
+    "rear.png": "edd70cd95752238fd2fd836083f11c5a4a7aca0cebe8d023a4f4b9ef4c0e530c",
+    "roof-detail.png": "a373f2271bfcd4dcb6e0f5b1f93d84451363aaea7c7c45e5d3f85b7fb56ed5f9",
+    "top.png": "7737ad1e9f66aeb513b794f074059ce9dc36755e1fc9c47a7e3fe0b091f57dc6",
+    "west.png": "e3b8bccd1ef2a73e9679f9feec51b73f40ec4faab40fa91465d8e23cb154a4c4"
+  }
+}

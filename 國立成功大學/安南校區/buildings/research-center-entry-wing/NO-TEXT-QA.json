@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual rendered views inspected in research-center-entry-wing-all-views.jpg. Captions/backing absent; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "e46f8693df5505fb1d3bac61f7bdbd352ae4570908579d51211edc7530dd497d",
+    "east.png": "733498dd8a33a5b0ea8e02f3e615841312e624c5060e9c3c20910c10cdb38974",
+    "entry-detail.png": "7dc9f764f8f4f189352dabacc4e8b15563743697fa18c43a9295e8debf340cb1",
+    "facade-detail.png": "91837df9cce8f1ea4f7571db115352e733afe878a7ca5fb3ae19feb886e6dc08",
+    "front.png": "91bd75fce933349539b4d6c2509a071d2ad1c93e9f9a4ae5e4e4d52e08929d17",
+    "preview.png": "52e5bb6a726ba35c493caabd8b0ad31f4cb0ac251ca5386e2d58e5211e908b7f",
+    "rear.png": "13b997ea2b46cdec1d5c6326ed3cef7773ee08f382262b59886bf3e0b1ec415f",
+    "roof-detail.png": "c6b31b53a3e1300cdb9e06faadc8abb5d62a3204357b00bedb7564f8e1511aed",
+    "top.png": "536159036a567a38b218b0e42e196af6e2badf808cfdf42fcd94c5f1beacbd1d",
+    "west.png": "ac628a8e83a7e49b1bbe824f087c3a515e45c6318bfd9df74f75436f0a7808d0"
+  }
+}

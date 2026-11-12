@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.003;indices=[]
+EPS=.003;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def boxface(x,y,z,w,d,h,vertical=True):
@@ -80,12 +80,47 @@ for p in mesh.polygons:
    if bounds((xx-1.75,y-2.2,z),(xx+1.75,y+2.2,z+6.2)):
     if (plane(1,y-2.2) and n[1]>.99) or (plane(1,y+2.2) and n[1]<-.99) or (plane(2,z) and n[2]>.99) or (plane(2,z+6.2) and n[2]<-.99):i=2
  if hi[2]<=3+EPS:i=0
+ original_indices.append(i);reason=None
+ # All new assignments require complete original face vertices inside a source
+ # component boundary. Existing colored faces are immutable. Never centroid masks.
+ if i==0 and hi[2]>3+EPS:
+  if plane(0,63) and n[0]>.99 and bounds((63,-51,2.9),(63,55,121.9)):
+   i=1;reason='inferred_main_opposite_brick_wall'
+  elif plane(1,55) and n[1]>.99 and bounds((-63,55,2.9),(63,55,132)):
+   i=1;reason='inferred_main_and_raised_rear_brick_wall'
+  elif boxface(0,2,121,43,106,11) and abs(n[0])>.99:
+   i=1;reason='inferred_raised_center_brick_side_wall'
+  elif boxface(0,-57,2.9,132,19,49):
+   i=2;reason='inferred_stone_portico_side_and_back_returns'
+  # The rounded facade is the original ellipse plus its planar connector.
+  # Curved return tips use original facet supports, not a smooth ellipse mask.
+  elif bounds((-73.3,-38,25),(-63,4,59)) and abs(n[2])<.001:
+   if boxface(-64,-17,25,5,42,34):
+    i=2;reason='inferred_stone_curved_bay_end_return'
+   else:
+    local=np.column_stack(((q[:,0]+67)/.3,q[:,1]+17))
+    for t in angles:
+     vv=np.array([np.cos(t),np.sin(t)]);nn=np.array([vv[0]/.3,vv[1],0]);nn/=np.linalg.norm(nn)
+     if max(abs(local@vv-21*np.cos(np.pi/64)))<EPS and n@nn>.999:
+      i=2;reason='inferred_stone_curved_bay_facet_return';break
+  elif plane(2,25) and n[2]<-.99 and bounds((-73.3,-38,25),(-63,4,25)):
+   i=2;reason='inferred_stone_curved_bay_soffit'
+  # Opposite-side original rectangular recesses. Their back plane is a mixed
+  # glazing/reflection/shadow proxy; complete reveals follow the brick surround.
+  for y in [-34,-19,-4,11,26,41]:
+   for z in [16,31,46,61,76,91,106]:
+    if i==0 and bounds((61.85,y-4,z),(63,y+4,z+6.4)):
+     if plane(0,61.85) and n[0]>.99:
+      i=3;reason='inferred_opposite_true_window_backing'
+     elif ((plane(1,y-4) and n[1]>.99) or (plane(1,y+4) and n[1]<-.99) or (plane(2,z) and n[2]>.99) or (plane(2,z+6.4) and n[2]<-.99)):
+      i=1;reason='inferred_opposite_brick_window_reveal'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; inferred same-component wall and recess continuity; distinct broad roofs and artificial base neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-component-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -115,9 +150,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; original portico recess geometry remains unchanged; backing shadow is not added glass','Official3402 and3404 photographs personally viewed.3406 returned503 and was not retried or bypassed; no later photo claimed viewed. Only A005 building, excluding adjacent historical architecture hall C-Hub and extension. Source-visible -Y front and -X curved-bay side brick and stone families. Opposite +X and rear including their windowbacks unknown neutral, broad roofs and base neutral. Curved stone bay one grey family because observed lower/upper variation lacks original face boundary. Original 64-facet ellipse support,24-segment arch outlines and actual planar windowbacks only. Minor pale brick bands AC frames lettering and equipment omitted without splits. True portico backs mixed masonry/glazing/shadow proxy not pure glass. Upload2025path is not capturedate or2026condition. Original geometry and0.01089075percent thin-opening-loss record retained, no new printQA','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-component-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; original portico recess geometry remains unchanged; backing shadow is not added glass','V2 personally viewed official3402 photo;3404 request returned HTTP503 and was not retried. V1 two-photo claims are history. Only A005 building, excluding adjacent historical architecture hall C-Hub and extension. Same original brick family inferred on complete opposite/rear and raised-center walls and rectangular reveals, same opaque dark proxy on actual opposite window backs, same stone family on portico returns, curved-bay end facets and soffit. Broad roofs and artificial base neutral. Inference, not all-side photographic verification. Curved stone bay one grey family because observed lower/upper variation lacks original face boundary. Original 64-facet ellipse support,24-segment arch outlines and actual planar windowbacks only. Minor pale brick bands AC frames lettering and equipment omitted without splits. True portico backs mixed masonry/glazing/shadow proxy not pure glass. Upload2025path is not capturedate or2026condition. Original geometry and0.01089075percent thin-opening-loss record retained, no new printQA','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-190,-250,185),(0,0,64),220),'rear':((180,250,185),(0,0,64),220),'elevation':((0,-300,64),(0,0,64),220),'source-angle':((-250,-180,170),(0,0,64),220),'top':((0,0,400),(0,0,64),220)}
+views={'front':((-190,-250,185),(0,0,64),220),'rear':((180,250,185),(0,0,64),220),'elevation':((0,-300,64),(0,0,64),220),'source-angle':((-250,-180,170),(0,0,64),220),'left':((-300,0,120),(0,0,64),220),'right':((300,0,120),(0,0,64),220),'top':((0,0,400),(0,0,64),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

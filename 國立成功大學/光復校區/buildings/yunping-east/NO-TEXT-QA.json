@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in yunping-east-all-views.jpg; no caption/backing, original mesh/materials/cameras preserved."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "eaa56fdf9dd0f1fffb6cbb419805ee87905e0e4d03f62c66cefd3fc5b95763ed",
+    "east.png": "daf5fcb73de14f68422ac5da1bc807ad6e8d5dc19b63f55124ac52d1781f6d77",
+    "entry-detail.png": "cb2901c11f77d41e4e91fb66422985170cb690b17b347994de8f8f8c80ce0056",
+    "facade-detail.png": "d80d744d04f8692b35f4a31db8e01d2deeda82a8f43bce3ea7385db1fc3c5498",
+    "front.png": "d3b5a7073413b0c92c632634f95ceb1b01aa4b1346f9ca259eaed1288cc6736a",
+    "preview.png": "4b9f3038191829c8064b1a5fdc1f6cfa9af9e7d7fa29e9ceb588ae1969fd0b3b",
+    "rear.png": "d3c24c6c7f5f5a06d8c26aab234b7048dd47949674edc0690fc9b4e3e706ca33",
+    "roof-detail.png": "b9a0da8cffb609c01141a06e2fcc5d386d6a85813693da535e26b59ae0f53bc9",
+    "top.png": "eb9e451468f778ddeb01531faaedc9d01736140b3dd413a4654bf48a2d41974a",
+    "west.png": "3472d8161843dea97e95a06b0aeab801d667e60b6b3ffebc602f5bb3870ed186"
+  }
+}

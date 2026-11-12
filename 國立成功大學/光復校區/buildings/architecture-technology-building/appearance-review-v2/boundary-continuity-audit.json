@@ -1,0 +1,400 @@
+{
+  "status": "passed",
+  "changed_faces": 737,
+  "all_original_colored_faces_preserved": true,
+  "full_opposite_and_rear_wall_coverage": true,
+  "method": "New classifier checks all triangle vertices against original box boundaries, original window planes, and exact original 64-facet ellipse supports. No centroid or height-cut mask; no geometry split. Each remaining neutral face independently classified below.",
+  "reason_counts": {
+    "inferred_main_and_raised_rear_brick_wall": 6,
+    "inferred_main_opposite_brick_wall": 256,
+    "inferred_raised_center_brick_side_wall": 4,
+    "inferred_stone_portico_side_and_back_returns": 6,
+    "inferred_stone_curved_bay_facet_return": 4,
+    "inferred_stone_curved_bay_soffit": 37,
+    "inferred_stone_curved_bay_end_return": 4,
+    "inferred_opposite_brick_window_reveal": 336,
+    "inferred_opposite_true_window_backing": 84
+  },
+  "remaining_neutral_face_count": 75,
+  "remaining_neutral_reason_counts": {
+    "artificial_display_base": 22,
+    "broad_horizontal_roof_distinct_finish_unknown": 53
+  },
+  "remaining_neutral_faces": [
+    {
+      "face": 0,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 1,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 2,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 3,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 4,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 5,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 6,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 7,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 8,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 9,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 10,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 11,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 12,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 13,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 14,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 15,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 16,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 17,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 18,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 19,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 20,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 21,
+      "reason": "artificial_display_base",
+      "z": null
+    },
+    {
+      "face": 109,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 121.9000015258789
+    },
+    {
+      "face": 206,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 121.9000015258789
+    },
+    {
+      "face": 384,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 121.9000015258789
+    },
+    {
+      "face": 605,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 121.9000015258789
+    },
+    {
+      "face": 651,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 132.0
+    },
+    {
+      "face": 661,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 132.0
+    },
+    {
+      "face": 701,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 51.900001525878906
+    },
+    {
+      "face": 704,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 51.900001525878906
+    },
+    {
+      "face": 806,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 51.900001525878906
+    },
+    {
+      "face": 973,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 51.900001525878906
+    },
+    {
+      "face": 1062,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 51.900001525878906
+    },
+    {
+      "face": 1064,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 51.900001525878906
+    },
+    {
+      "face": 2751,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2752,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2753,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2754,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2755,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2756,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2757,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2758,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2759,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2760,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2761,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2762,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2763,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2764,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2765,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2810,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2811,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2815,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2816,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2818,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2819,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2820,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2821,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2822,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2823,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2824,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2825,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2826,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2827,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2828,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2829,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2830,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2831,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2832,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2833,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2870,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2871,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2872,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2877,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2878,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    },
+    {
+      "face": 2879,
+      "reason": "broad_horizontal_roof_distinct_finish_unknown",
+      "z": 59.0
+    }
+  ]
+}

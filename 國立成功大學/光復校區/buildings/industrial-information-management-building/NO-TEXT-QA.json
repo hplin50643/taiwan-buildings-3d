@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in industrial-information-management-building-all-views.jpg. Caption/backing absent; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "a7c3c168dd8a75d4af9266fcd71a065d30b335bb01c3ac16ada0c3f8fab8f563",
+    "east.png": "7300164d97ad97554aa024230cf0a85c4e0e507c7bfc9a51d3df4a157db21ffd",
+    "entry-detail.png": "0fe93648890ac32f8210a4c9409247596051af296c4aea432af414888f3293e7",
+    "facade-detail.png": "ab54cf8baa673afb6857a28e4c51b0c7c2c9106fc6e3aeaf762bd031524c5ee6",
+    "front.png": "ad15ef8eebeae1306a284b13bfde0a76238470fb19c14c371622a08f2d6df21b",
+    "preview.png": "c5e27972cae2061ff7b59b557747b5cc63e6115959ae47e41078fe2f61b26709",
+    "rear.png": "7f6efccce63321eb35c91bc57cdc26699c50ff8d7085f8fa6f434f095137d95d",
+    "roof-detail.png": "696f986edf6ccdddc49ab0b79d05bd00ba5c8cc282559a0bd240d728b6b6084b",
+    "top.png": "a88e23ec9054d24d577d5ed311f9019bea384ca68e76d7d08e2451a58577db67",
+    "west.png": "b2dcb13466605d0559198bd957bd186893ed0722aa65bd9c10bd3078c706607b"
+  }
+}

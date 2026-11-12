@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views in research-center-high-wing-all-views.jpg visually inspected; original geometry/materials/cameras retained; no caption/backing."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "44a534bca1c4e63859bf2a42f5fa042acc1257b7c979a77a1e9a46650d2099e6",
+    "east.png": "0cf43a61c143d2fa73f8fecf11095bba5d64717a9ac4b8131e2530cc56bf598c",
+    "entry-detail.png": "3f32414674ba774d4b42440f8c316af196551bb04559a687494f13c4379f8807",
+    "facade-detail.png": "1dbd71da62f747b240ff72103050f2838c7630dc43f47058672a18f67fd206e7",
+    "front.png": "caf160d0a5d0bdac7412da5442be3726a635af443bad9dc260df01c24609ccb4",
+    "preview.png": "4c7c6579c4e6c7577bbb2cafce503e067ede1f0a8f5c649ddbead0010b7b6e1d",
+    "rear.png": "f4fe47e991adbf8e4f97140ecf8e47818b74a0f74e8b393892045a1743fa3b5c",
+    "roof-detail.png": "98b6287f0a30d933787a9c4455f41bbdca6e2d703204ea712110913157232dc0",
+    "top.png": "649ccea27ac273db135ed23bc993fa15408799b51fad8b5227027faf111912da",
+    "west.png": "a912d50216311d2fdf0b0a24c08ca06593cef5f5419498c663622143279607eb"
+  }
+}

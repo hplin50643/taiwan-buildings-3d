@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in delta-building-all-views.jpg. No caption/backing; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "9344e02fdd7a619ace27640b31755d7a0c04d22eb7fe14b206f9918b44936433",
+    "east.png": "c1bd96e87fb8cc32201288797f41238b56e94263e7fbc17f3aa021b701bd0069",
+    "entry-detail.png": "5dec81234a21eedbd5266f38a2abe7e0bf7a7623cab92d41a21e5dd532c091de",
+    "facade-detail.png": "fcd3b2c98e1d90c48788b5f1b71b0fef6bb6d9227762a4b3885e25f6eeee3a2c",
+    "front.png": "0ad16c67625902aec79aa301be263da758aaa4eed36a9074c5c775c5d0ce1a94",
+    "preview.png": "80697df371d86160b67bc243e181da8d4dc2b71e5768aa19521115822d78ef05",
+    "rear.png": "e84d0157ec2e2a704d5fa2dad19926974e520b402c5b8331fa71c2a88226e6d6",
+    "roof-detail.png": "4faf648ca69f75ab4f556ed1a283f1f5960671040369e8dce0f4a782e61145b5",
+    "top.png": "2005ff542de4632506203db7b60a2dacf6e55143187ba0dd4b04d18138640b90",
+    "west.png": "b9a13efe7e4465a2db5041ee5f4fbb43dfdc5f3924ea269528de8a91945cea39"
+  }
+}

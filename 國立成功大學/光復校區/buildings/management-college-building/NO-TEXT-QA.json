@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in management-college-building-all-views.jpg. Captions/backing absent; original geometry/materials/cameras preserved."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "1d5c31b1003ca54861034fc5a5c64a6d556074bb931658a611c509f42004302b",
+    "corridor-detail.png": "996993644c51b0ca2dfb19a76a0985cce37a48d223574f7ecbda136dab1ad828",
+    "east.png": "02cd044e05952b2a13907c4bbdd93f3d23934ff23a72f47c3c96d758dbbff2cd",
+    "entry-detail.png": "5faa7ed55d5ab55ff193be256682f1a01b0c18712fa79306b601248c55529db4",
+    "front.png": "bc937fa21c9b5ad17cd1ddcff02bc93c37afb602f2e58b3fa7ab5ecc78f25dc9",
+    "preview.png": "9fadf54beca18faccf5cd4ad762b5b144ebb4e87d89b7cdde4ccc154b8e0a411",
+    "rear.png": "6bfaf5bfe6924119c3b9baaaaa473c568b04f7077be3360b782197e191f70396",
+    "roof-detail.png": "f745aaab464acb36a68bdcb7a8c1fff96bfef35f9f59465921d1ebaddbb88e75",
+    "top.png": "51663e97617935cd188c7d3dd800a2765e350ffa9d1eca16bdcedfe4d1f2ea8d",
+    "west.png": "99d629ecefaae3f7bf82c820e75b7cfcff0ecdfaf049a07b05a35e34d27c046d"
+  }
+}
