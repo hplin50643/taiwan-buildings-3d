@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in asia-modern-museum-all-views.jpg. Caption/backing absent; original geometry, materials and view framing retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "f6c539fe6e234ded9912ae9a9cb61b950b2b2bd3a68ec333b7593d3563a3ba4d",
+    "east.png": "b0fd73bb19282091710a8e598522546a886327d5446728c12e1cb5a3833cb079",
+    "entry-detail.png": "85f5d78dcdf0b6e219f557acb6368531c1130d44613b0fcc8a082c01191457ed",
+    "facade-detail.png": "2c40e17da5851293c95f16f8005f4afb8486f15c21485d5873f7c7c5e9668797",
+    "front.png": "2587603f94c67b4b20e98fca85f47ec46f24f550afe86c335b72443cf74c1eaa",
+    "preview.png": "68f9164c63111beff157582e07ec787b57c076c0f1044455e5c18858d3e88697",
+    "rear.png": "1b33315c6a9e610dfb62e0fdf793646685e195350af9ceadb419c56a95ae6910",
+    "roof-detail.png": "4d0b9cc937515526e0373c8fdd856cedfc4636b0fb540ed9dbcef6cfb23145f9",
+    "top.png": "5181fb7015511e0f8cc89486326ba39ef6bfb3bbdc3c194cede7c6e07126f8f2",
+    "west.png": "7a98ee60aa2957695d1f7c9350b7c4536ce66d903ef9c6bff8432467fbd04894"
+  }
+}
