@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntsu-teaching-central-section-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "3ff26922597196d58a5958984db7499615f19e74c419c154f244e67138f77ef0",
+    "east.png": "a4fc17bdec76c90df6677d704714536fd106d500b157eea825c24fa4010ddc0b",
+    "entry-detail.png": "b4b4f0dbe467f7780521093ab71ca59b41c80cf3dfe1ff10794259544089830b",
+    "facade-detail.png": "12c1e566062c0d76fda73cab5daea8c681e4b87cd219aa5683ddf5fa00b9cedd",
+    "front.png": "670f9367063107116f85acd9ff1c1ee0644dc1aee0b110b5455558ebbc433131",
+    "preview.png": "f667ee45d8a5b2ea98f7f4c224642e4eb533b45410f4024abb66c2c7f68e3e7e",
+    "rear.png": "275f15988fce8eb49137b585845b7b742558a28418e6c4e5c981b1b2e876b129",
+    "roof-detail.png": "649df324ecca616da93a167ddbe49fb4df43fe7e20eae3e8ea6109f624bc8b14",
+    "top.png": "4f5b8a2d01c1d60ac24d0b1f8d7e830ecafb809e6fcae23275614aa28499c15c",
+    "west.png": "33ea208e503b7aaa04b9a109b50e2518aec90dbf884b30b6b0cd174cad52c63f"
+  }
+}

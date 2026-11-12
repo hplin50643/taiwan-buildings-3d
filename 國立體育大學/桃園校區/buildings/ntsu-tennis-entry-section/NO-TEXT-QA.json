@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntsu-tennis-entry-section-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "5cb30486e9fe0e650666d351b1fc9be5f2d45c21b53fa580d4cf0170c2d72846",
+    "east.png": "00ac0854a5b532092a7656821c214dbb926463a695df755637ab7ae4d858f5c8",
+    "entry-detail.png": "5130b667e847133316a436e3f8a73d5d988be24f0c8cb541920109bbecdc0c7e",
+    "facade-detail.png": "a12ab0b25672e89438a79dd9cb3acbdd0c1095301eead22a6c28a47952bbaa87",
+    "front.png": "07def36174506bcb85bd3b560dcaf62055925a17047832611823553ef90eeda6",
+    "preview.png": "9dc7f9d9b38cbc509261b5c830ab3aa9c51194e4c4781d699db59d4fb7a5c071",
+    "rear.png": "18cfd51627e7762da588e69c148578eea70f1a6edcaacb59d8be76d26556cc83",
+    "roof-detail.png": "830e4a5da2d4f3b0edc49775566d7a7d1772c5a6a982df73baacb51270773521",
+    "top.png": "d00ef2b0c4e0196d3475be161f41931bff2b7c9f64bb1b489d17d4da3e83af4c",
+    "west.png": "6b1317d10139ad408eea087f33f9bd5677c0a3771cb45fa139c7318bb59a420b"
+  }
+}
