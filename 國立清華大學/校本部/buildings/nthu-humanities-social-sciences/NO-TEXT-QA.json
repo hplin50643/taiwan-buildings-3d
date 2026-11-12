@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nthu-humanities-social-sciences-all-views.jpg; caption/backing absent; original geometry/materials/cameras preserved."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "2b3cc63245aaf3c7c479e986ecd991a441863edce5502d2714f4be134dd05344",
+    "east.png": "22950795e45025da333869a2ea97032e5e38d61e27335f9c1dec540b14bb3622",
+    "entry-detail.png": "055eb9de230984220286ea16dc5bca3c728dd1f951a520bf41090ef1eede7ce4",
+    "facade-detail.png": "c85906275df2ced178d1f910cb0f89d0a5567a2a46a35e2a5b9b84f61b76c004",
+    "front.png": "6e62912806517884666269eb9516cdd44fd2fc707ddcb94343e0271853de1fb3",
+    "preview.png": "0107a829da70ed7997f9121c2552c4602a31ed02994a72aacad1ec4d02b62897",
+    "rear.png": "664347ea7c441003d286d0464a5c39e451dc18d39d69bf7bbb91ed6502caf055",
+    "roof-detail.png": "7b2589090e99955d72dda2c5b93bc55a7a314f5b81ca4b7ed243e6c6a155f5a9",
+    "top.png": "012781fd46f692420227e15f4631b737ead12a1c48a3d1dceb083e098e5c7dd4",
+    "west.png": "2d09ba2bf6567f4f2bf7d15bb89d264913f302424edf3a3d3b83066a5de0c1ab"
+  }
+}
