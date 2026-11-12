@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in wzu-zhuangjing-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "f3403700525ffdfb3633641ee3a385a34f9539e13e0c8afc64ea93dbf3e032c9",
+    "east.png": "707c467f2acf638d1df8e609ad2dccc07cf0de11e152250eae02cdc5e45aa243",
+    "entry-detail.png": "8fefec6254559461e227806aacdb1498da3f1f8a640980d1e849cce5864a03b0",
+    "facade-detail.png": "401d88e13a2366e1716495a9f28c5f9f796cfad0f26a0862ecefc483ee3f89e9",
+    "front.png": "0826e84e9b1ab97363283aa96a1776c5fccbe15d3a64923339b8a97a5455c46a",
+    "preview.png": "b665e607798f7cb78a26cc3bdcc1dcbc6aab373267ec8555241c3bc4b26a6541",
+    "rear.png": "4afe56b076ca8da7e902ef7329997ba187182628f2580aa7a1b5329c354d9878",
+    "roof-detail.png": "5b1b1965915f3888dc848c28db88ad35e5b965aaa8dc735dd40518468882f37b",
+    "top.png": "368771782ee93b531a955254eb1fc6c23ffecd491aef7d42d79cbd5a06c8793d",
+    "west.png": "1c2ee11f841cec32e50a81e5e67e5048443798e15fcd14cdcf776ec59e061d2e"
+  }
+}

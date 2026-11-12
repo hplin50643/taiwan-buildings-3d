@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in wzu-convent-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "773f99c3f89a4cf9d080661779436a7220011896be01b3ce896e65f0c799c66e",
+    "east.png": "9a9e4851008f19b63fabcda6f29fbffc45191496b9eba4c23d83b5da84988417",
+    "entry-detail.png": "97af55499597ba50bfb74e9d536ce02982c366cfd0805f7531733c9c69906227",
+    "facade-detail.png": "df1de364ceb3fb819a5e3df08da5c4f9416d9dbc6e5891c194c37e2b30d88026",
+    "front.png": "202e2ced2b8e718aaaf6f67fba3a88ae2447c7b2d51c079943e0dc1f39da73b9",
+    "preview.png": "290008078dcadac2c15cf0514c71e144fe636fc7649b6d40f079721540ea75aa",
+    "rear.png": "0a25f94cb1177d3e434883f689f9ad4e916deee12b847cb5d906abd87d97563f",
+    "roof-detail.png": "23fdeea6530eea448ded24ba5ef90d9e9fc98801997d9f56e0197051f22d2a4d",
+    "top.png": "7039eac918a7fd7102fcb4c4986246928e69ba0a8c11d043226128243e7e988f",
+    "west.png": "dfc585f9a0557531de9ad3fdbc566c6e33058e3aba92685a3f3f2998ebeaf8e6"
+  }
+}

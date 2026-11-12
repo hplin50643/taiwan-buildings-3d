@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in wzu-student-activities-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "e0381403200ea8cc70db112e6591865abcb54431c29de61129246386ff66a268",
+    "east.png": "6387d58c4298ed5f3f19ae3341afd9766d263c334cf1f408242e8e72036e313d",
+    "entry-detail.png": "e281b60494dcc854740263303937daa57f519235257305520865a348e80e2656",
+    "facade-detail.png": "104ad51d9f3ee95b9d3fe7b30f4ec9b78090bbad93ade6d814b620dacf2db05b",
+    "front.png": "606a8e4740acbdfa496654502c227dd7cca3e32d194d17a8eae40988f0972f87",
+    "preview.png": "4e5a14753b4e5348017f70c652385ac83dc9a8c39a2363359da99d14d643b10a",
+    "rear.png": "2fc605ca31e82a1ccd88b1a55a46934501cf946ce5bd09ca0ec961c35f980414",
+    "roof-detail.png": "59f7356ecaf91c379195f925206612f06990f48ca2b274ea93bb0271aff467e1",
+    "top.png": "92b53772f5ea48474d9f69607f7cdf0190f2eec43a01703b3f1749bb4f6d7370",
+    "west.png": "a7a90f5f0c453084e7443d57ae8cf8e9cd8ebf202e200fb309923dde3c417e24"
+  }
+}

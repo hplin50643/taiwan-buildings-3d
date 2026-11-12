@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in wzu-mingyuan-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "65738469f18003cbad7bb8f7a98431ad8fd1645a155d1d28c2cc83f9b8e1241c",
+    "east.png": "0fb396991a80e49d22e39e900cfdc872d39f3920065fe96aca1547fd66f6ec8f",
+    "entry-detail.png": "2ac8a6a7aa8f01c698f5992e5a90ddc7009264e11d0cf32bfe387cc24a1c17e4",
+    "facade-detail.png": "2430dc0e92d968ae9b1c8f0fba52bbba9e438d365fca9f255cdc3e42a78afd23",
+    "front.png": "b7333cef99800a2cefab33ff51c0cb473399e183ffe997e83506d874276bdd74",
+    "preview.png": "be1128d7d179a0a85e04ad9e155179c43bedb86b9098dd3d5f9269cb5f80c88b",
+    "rear.png": "9c8b51e2623c7984e1935fb445e35ecd62ccc31e624fc91c3c39b53ca9153927",
+    "roof-detail.png": "5d127695e92377483da7dc2ad980e7c033df01b4a5677131292b07ea2070eb8c",
+    "top.png": "3b7b0f90bffd7b0cd64bf91d314941cb61ef2167dfe4e3708218676b8d67064b",
+    "west.png": "b28095a07ef41b91419b73c824b9acb351966cf5bf6640db299d56b4efcfa2c2"
+  }
+}

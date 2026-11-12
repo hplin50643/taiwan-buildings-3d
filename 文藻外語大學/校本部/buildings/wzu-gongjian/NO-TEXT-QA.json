@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in wzu-gongjian-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "fc6da83aa7eef3fb9acd731ac4916d69be6f008d18994e59cab43adb99bb27bd",
+    "east.png": "ea0f28fad2bae461992b3f8c38981645d1e066aa3dfea4c5d57af2d65753014b",
+    "entry-detail.png": "094bd5d0f5c33c2f5018148c45e5abd2c032bc89722611c3df0509bb2dab6b41",
+    "facade-detail.png": "108b6d736d255bb3cdf63d83bbcf27342fd91361f94c7f858efd0c7f5ca5de31",
+    "front.png": "cc1ac6df4368d6f18ac7be42fa7eda984b26fafc8e03509abd97ba5d6628a00f",
+    "preview.png": "faa698284c872b4e402e7a6fe78f7e86d9ee7230e2ee1aa62b0c0f46f2ceaad4",
+    "rear.png": "f6be6a3816b39d612e1e34c5f789d91704722fbee9fb2623a879276e10895cd7",
+    "roof-detail.png": "848da7ab679b5f1e3283420f31cf874129f8d548c2ddf7db8fe736a90eb5d3ce",
+    "top.png": "22305fac7d23103ae237a4aaae85aba08ccb9bef576fb454cbf83fec5f9f7965",
+    "west.png": "a0202e1c331682cf33e6135736e8142933d2fb836f26f2c701eb196d36281764"
+  }
+}
