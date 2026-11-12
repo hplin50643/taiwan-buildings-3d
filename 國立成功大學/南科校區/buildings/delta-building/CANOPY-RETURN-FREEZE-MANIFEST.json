@@ -1,0 +1,377 @@
+{
+  "scope": "Bounded canopy-return candidate, not yet published.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "files": [
+    {
+      "path": "CANOPY-RETURN-DELIVERY-QA.json",
+      "size": 2456,
+      "sha256": "5ffde1462c280c4e75432808203b4b058a0b310a9e5bb141d1a39eb2c0457381"
+    },
+    {
+      "path": "CANOPY-RETURN-INDEPENDENT-QA.json",
+      "size": 5187,
+      "sha256": "d16dbc59c57c12c08ffb562c588a5fba63fe816b5fa4f5a3e34272d3fe397c99"
+    },
+    {
+      "path": "CANOPY-RETURN-SCENE-QA.json",
+      "size": 298,
+      "sha256": "7c59591ba8281f6b7e839a251423fb18da5b25a2fd18cd09f6132c2c879c66a5"
+    },
+    {
+      "path": "CANOPY-RETURN-SOURCE-QA.json",
+      "size": 2287,
+      "sha256": "e380633a030733cce4ca3065cb85f5fa720ec61125450cefd3a83e7ae6ee1836"
+    },
+    {
+      "path": "CHECKSUM-SCOPE.md",
+      "size": 420,
+      "sha256": "83ccee39deb91c5bc108c3a024971bdff6022f217e72afa9863bd1fb3e07b436"
+    },
+    {
+      "path": "COLOR-ASSIGNMENT-QA.json",
+      "size": 227,
+      "sha256": "5b1e1d879d9b732ef6578d364a5542315c05c3928dcfb6133b7c4c559d2503d8"
+    },
+    {
+      "path": "COLOR-FORMAT-GEOMETRY-QA.json",
+      "size": 1310,
+      "sha256": "340b8d6a279370991fd6550d4ffa03263a18a54cc0e7a3e282158e33bbea8501"
+    },
+    {
+      "path": "COLOR-SOURCE-REGISTER.json",
+      "size": 1078,
+      "sha256": "5e30eb3217b12f45c6b9c75cc024d6137837f31c42a861dc16358549571006b4"
+    },
+    {
+      "path": "DELIVERY-QA.json",
+      "size": 2456,
+      "sha256": "5ffde1462c280c4e75432808203b4b058a0b310a9e5bb141d1a39eb2c0457381"
+    },
+    {
+      "path": "FRAMING-QA.json",
+      "size": 1024,
+      "sha256": "b23c83c885d78c51fd16d913cfa27fee7afdcc2b8170b9923f5aa89393a4148b"
+    },
+    {
+      "path": "FREEZE-MANIFEST.json",
+      "size": 7335,
+      "sha256": "11bfa19dab56ac94b09490d28dfbc8987ad0099dd039ca0907c2b3a00552a89b"
+    },
+    {
+      "path": "INDEPENDENT-COLOR-VISUAL-QA.json",
+      "size": 4376,
+      "sha256": "704e7616ee74aeb3fdd1dc3b4abc249eb826f1926919299ee9872c754baf6d37"
+    },
+    {
+      "path": "NO-TEXT-QA.json",
+      "size": 1266,
+      "sha256": "05573dae2fe729c7de1d106f91f2c08635a4971d8e44f22d7adb28306af76a47"
+    },
+    {
+      "path": "ORIGINAL-MONOCHROME-README.md",
+      "size": 5226,
+      "sha256": "ab8105db1107093b3a28a2dce49a18026c1883887a589e40b8040dfac9c9c378"
+    },
+    {
+      "path": "README.md",
+      "size": 4316,
+      "sha256": "5729131482bfc2be3e66ecce7f09753a50bf36e10cdcb89c6015b609cd03d9ef"
+    },
+    {
+      "path": "README.zh-TW.md",
+      "size": 4316,
+      "sha256": "5729131482bfc2be3e66ecce7f09753a50bf36e10cdcb89c6015b609cd03d9ef"
+    },
+    {
+      "path": "SCENE-QA.json",
+      "size": 526,
+      "sha256": "fbe2b5f820f04fe2900c0d1b5bd5ea7b027f02c3e6979830e4766d3c57ba103c"
+    },
+    {
+      "path": "SHA256SUMS",
+      "size": 6543,
+      "sha256": "cf8fd4b08c01e2f4ed9e2f4323b6c20196662a6316c9b0d8f3aae78a6d7874d4"
+    },
+    {
+      "path": "appearance-materials.json",
+      "size": 1174,
+      "sha256": "73ceb2c3a8469b8c23bebd6fc9a877263b11358f33b0074abcc9816bb1126919"
+    },
+    {
+      "path": "appearance.3mf",
+      "size": 12914,
+      "sha256": "6e54dedfd9ac9dcd73acd8d23f1a51ed120ce3c0bb905470762a7855481c5437"
+    },
+    {
+      "path": "back.png",
+      "size": 936416,
+      "sha256": "44d52c040c5a727a141581fd9eac762dc18de51960798b508619dde9e95f1f53"
+    },
+    {
+      "path": "build_model.py",
+      "size": 3173,
+      "sha256": "1bf2ba312081806883049eb61052f6526e38cf75b86918bf69dc97c50072eaa1"
+    },
+    {
+      "path": "check_thin.py",
+      "size": 2640,
+      "sha256": "6a6211df5c01377c2437d730e9a73107e308219eba5822d496d61c7a3955c876"
+    },
+    {
+      "path": "color-mesh.npz",
+      "size": 8920,
+      "sha256": "6113b32d2ee9683970906fb98abe321410c7a7da716dff47924e23552fb9ea54"
+    },
+    {
+      "path": "colorize_model.py",
+      "size": 3157,
+      "sha256": "8bcc1dee6838095104a035c94cdd44d884a83763ce782a2a3daa916b138f2228"
+    },
+    {
+      "path": "cross_sections.json",
+      "size": 73840,
+      "sha256": "3777b923f458d9e3c54c319e826ec66d0b4b42983d64011671be9e456161c6e3"
+    },
+    {
+      "path": "east.png",
+      "size": 826306,
+      "sha256": "3f199869dd04276b027fc0ba6b40c5c87defd5a71b24e2da8d0998a9dc22ce76"
+    },
+    {
+      "path": "entry-detail.png",
+      "size": 1411720,
+      "sha256": "58349b4083c783e86a8b6cf3c3d762a9489e4670dcb33ff5443acf6c5ebec558"
+    },
+    {
+      "path": "export_appearance.py",
+      "size": 1741,
+      "sha256": "47b7fd4a7d1c81299ead609595d31acf045ca4227a97b4d3fbcb258b6da2f00e"
+    },
+    {
+      "path": "facade-detail.png",
+      "size": 1591044,
+      "sha256": "f7bfc20b21b833bbcb5ebe487dcce2905e1b972ce595008bf0c23d7c14c9bbfb"
+    },
+    {
+      "path": "front.png",
+      "size": 983191,
+      "sha256": "e99415bd05d9602433eb30fca96c928a69b20c1e77f8b6eb69a9a1c3bc19f21c"
+    },
+    {
+      "path": "model.stl",
+      "size": 68984,
+      "sha256": "d8f0539a785192bc10a8c346b59869c6be984a6e95d54d0cfe144a99bfe1ac52"
+    },
+    {
+      "path": "palette.json",
+      "size": 239,
+      "sha256": "f3d7d5196a9baebd45fec85ef9788fca9217c1864128795076950e7a70da56b7"
+    },
+    {
+      "path": "preview.png",
+      "size": 847488,
+      "sha256": "a838181ead54d3ce8b07ea76fb400a182edf9f5dea625d1123b96732b26444b1"
+    },
+    {
+      "path": "previews/elevation.png",
+      "size": 1328261,
+      "sha256": "5cc4469d6b51306615a9be0abdaa61fec714a49eded03707d61bff6adbc3aca9"
+    },
+    {
+      "path": "previews/front.png",
+      "size": 1550193,
+      "sha256": "338f4986c51321c3b32a31510ff1e7c0034ceef27cdb5c115f17f0cf393a4642"
+    },
+    {
+      "path": "previews/rear.png",
+      "size": 1498937,
+      "sha256": "30ca0a083e061e474ff345177b0d3aaa2d9f3a69248dd9273708759c18c021fa"
+    },
+    {
+      "path": "qa/canopy-return-previous/COLOR-ASSIGNMENT-QA.json",
+      "size": 227,
+      "sha256": "77fd5f807a6c7b0c932694d40e7caf729a09ca3007a308bd8307f0d464d0b426"
+    },
+    {
+      "path": "qa/canopy-return-previous/COLOR-FORMAT-GEOMETRY-QA.json",
+      "size": 1269,
+      "sha256": "3b278f52d2a976c4e0acfdbc58067aa7b96c97007798133043a71efd091b4d99"
+    },
+    {
+      "path": "qa/canopy-return-previous/COLOR-SOURCE-REGISTER.json",
+      "size": 1078,
+      "sha256": "5e30eb3217b12f45c6b9c75cc024d6137837f31c42a861dc16358549571006b4"
+    },
+    {
+      "path": "qa/canopy-return-previous/DELIVERY-QA.json",
+      "size": 2715,
+      "sha256": "2a7557227c3289dc769a6a8cc2dada30c6b0af2db61f17dd15ea9df6bc829c2e"
+    },
+    {
+      "path": "qa/canopy-return-previous/FRAMING-QA.json",
+      "size": 1024,
+      "sha256": "e705283565985f9dbbf40a971612a212a6a72f08a622d361a0a49d29cc23e646"
+    },
+    {
+      "path": "qa/canopy-return-previous/FREEZE-MANIFEST.json",
+      "size": 7335,
+      "sha256": "11bfa19dab56ac94b09490d28dfbc8987ad0099dd039ca0907c2b3a00552a89b"
+    },
+    {
+      "path": "qa/canopy-return-previous/INDEPENDENT-COLOR-VISUAL-QA.json",
+      "size": 4376,
+      "sha256": "704e7616ee74aeb3fdd1dc3b4abc249eb826f1926919299ee9872c754baf6d37"
+    },
+    {
+      "path": "qa/canopy-return-previous/NO-TEXT-QA.json",
+      "size": 1634,
+      "sha256": "1b36e7ec5e172702cfe6e1f4abc36207a22b358e9799a314af03a84df77468f5"
+    },
+    {
+      "path": "qa/canopy-return-previous/ORIGINAL-MONOCHROME-README.md",
+      "size": 5226,
+      "sha256": "ab8105db1107093b3a28a2dce49a18026c1883887a589e40b8040dfac9c9c378"
+    },
+    {
+      "path": "qa/canopy-return-previous/README.md",
+      "size": 2622,
+      "sha256": "03bce0dec226df9856108a811a3661447db5f0b3aa328db12a76384d3c70221c"
+    },
+    {
+      "path": "qa/canopy-return-previous/README.zh-TW.md",
+      "size": 2622,
+      "sha256": "03bce0dec226df9856108a811a3661447db5f0b3aa328db12a76384d3c70221c"
+    },
+    {
+      "path": "qa/canopy-return-previous/SCENE-QA.json",
+      "size": 526,
+      "sha256": "a22e2b8dd4f0f532b504abcfb18f2747e41056d92d0deff3c5d12f381434a1f8"
+    },
+    {
+      "path": "qa/canopy-return-previous/SHA256SUMS",
+      "size": 3743,
+      "sha256": "35f7fc16c8cb8f346514f4aba9c9aa152853d293a76a94f9a3c0fa6c6b645890"
+    },
+    {
+      "path": "qa/canopy-return-previous/appearance-materials.json",
+      "size": 1075,
+      "sha256": "6b28651d435329a445bc9ae5e924f80642429638d6c0b8f2ed90d4730e70f77b"
+    },
+    {
+      "path": "qa/canopy-return-previous/colorize_model.py",
+      "size": 2530,
+      "sha256": "273ac9bd2c70b411af6b60c36cd58c7784c11af4c1067a5f1394b220e20f4c43"
+    },
+    {
+      "path": "qa/canopy-return-previous/cross_sections.json",
+      "size": 73840,
+      "sha256": "3777b923f458d9e3c54c319e826ec66d0b4b42983d64011671be9e456161c6e3"
+    },
+    {
+      "path": "qa/canopy-return-previous/palette.json",
+      "size": 239,
+      "sha256": "f3d7d5196a9baebd45fec85ef9788fca9217c1864128795076950e7a70da56b7"
+    },
+    {
+      "path": "qa/canopy-return-previous/sources.json",
+      "size": 2127,
+      "sha256": "42b384f74e7a7416a5be6564c9e22db4faa7e6e378259a6bddd50759c5e28e2a"
+    },
+    {
+      "path": "qa/canopy-return-previous/thin-feature-check.json",
+      "size": 15538,
+      "sha256": "f8d19d683314fecf6a96cd2fbcd40b3b31236f1cf5a21925e2e0535a1f202f6b"
+    },
+    {
+      "path": "qa/canopy-return-previous/validate_color.py",
+      "size": 3485,
+      "sha256": "2130197a7bc20b5395e5b9bf27192c7e833d44b5402965da23c52d1d39de3893"
+    },
+    {
+      "path": "qa/canopy-return-previous/validation.json",
+      "size": 1525,
+      "sha256": "ad04e1f5192588d197c2c96292fc4bc944cb1b95aa7cb418778004130f5ecf6e"
+    },
+    {
+      "path": "rear.png",
+      "size": 825983,
+      "sha256": "37710e904404e58657ef5222bace109090b827eb3601872569e7241dbf0f11d3"
+    },
+    {
+      "path": "render_color.py",
+      "size": 7260,
+      "sha256": "b095dd475606ea4f84bccab5d0daa02b6d9260e770d4d177de78b0d5309b1a26"
+    },
+    {
+      "path": "render_preview.py",
+      "size": 3128,
+      "sha256": "288c1f06c43ecc5007ca7abdbbca7da4f6cd5712f090cb4124677c10e9e66ba7"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 61,
+      "sha256": "8a250b2d904a7a81060f3006eaf589b73324140e47e92d2993e607f0c7526692"
+    },
+    {
+      "path": "roof-detail.png",
+      "size": 1293560,
+      "sha256": "fc62ef2fc04039a7ba75131d58f53284a426344d0708855b303521e3549e4ffc"
+    },
+    {
+      "path": "scene.blend",
+      "size": 122117,
+      "sha256": "3c913893ab055aba658e3cad3b3ae2dcf0ffb874a51b5565db0d8f9a167d6157"
+    },
+    {
+      "path": "sources.json",
+      "size": 2127,
+      "sha256": "42b384f74e7a7416a5be6564c9e22db4faa7e6e378259a6bddd50759c5e28e2a"
+    },
+    {
+      "path": "thin-feature-check.json",
+      "size": 15538,
+      "sha256": "f8d19d683314fecf6a96cd2fbcd40b3b31236f1cf5a21925e2e0535a1f202f6b"
+    },
+    {
+      "path": "top.png",
+      "size": 1114375,
+      "sha256": "02b78bf13f04827c0afef9bb49dd64e058552824e97dcb137ab7f2715ac7c94a"
+    },
+    {
+      "path": "validate_color.py",
+      "size": 3792,
+      "sha256": "00512c3198ac8bfbfdb24d989bb6bf95c6b697b5841d969e5c1558b5f0e8eb85"
+    },
+    {
+      "path": "validate_model.py",
+      "size": 5222,
+      "sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95"
+    },
+    {
+      "path": "validate_sections.py",
+      "size": 2357,
+      "sha256": "f3967c8013be57871f19833ffc11afbbfbb9ff0ccbbeaaa9e5cd47e36ba00c08"
+    },
+    {
+      "path": "validation.json",
+      "size": 1525,
+      "sha256": "ad04e1f5192588d197c2c96292fc4bc944cb1b95aa7cb418778004130f5ecf6e"
+    },
+    {
+      "path": "verify_color_scene.py",
+      "size": 2093,
+      "sha256": "736bdbc522ce386bb9423d0e5d236587a0dec7f689f6365ab64888b939ce18fa"
+    },
+    {
+      "path": "west.png",
+      "size": 863003,
+      "sha256": "cd1daa7164bcc2b6c38aa49dadf4b90ba4d0bc8f98263af142da87e57408de97"
+    }
+  ],
+  "excluded": [
+    "source photographs",
+    "private comparison sheets",
+    "scene.blend1",
+    "private logs"
+  ]
+}

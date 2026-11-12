@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "scope": "2 original canopy right vertical end faces only; 10 original colored retained, 12 colored and 1366 neutral, 1378 original triangles.",
+  "numeric": {
+    "status": "PASS",
+    "triangles": 1378,
+    "added_faces": [
+      1350,
+      1351
+    ],
+    "original_colored": 10,
+    "colored_after": 12,
+    "neutral_after": 1366,
+    "complete_domains": [
+      [
+        1351,
+        1350
+      ]
+    ],
+    "mixed_domains_before": 0,
+    "mixed_domains_after": 0,
+    "remaining_mixed_domains_exact": true,
+    "all_other_indices_and_original_palette_exact": true,
+    "preserved_files": [
+      "model.stl",
+      "build_model.py",
+      "previews/front.png",
+      "previews/elevation.png",
+      "previews/rear.png",
+      "render_preview.py",
+      "requirements.txt",
+      "sources.json",
+      "thin-feature-check.json",
+      "validate_model.py",
+      "ORIGINAL-MONOCHROME-README.md"
+    ],
+    "geometry_and_3MF_exact": true
+  },
+  "scene": {
+    "status": "PASS",
+    "mesh_materials_shaders_exact": true,
+    "camera_light_render_mesh_object_inventory_unchanged": true,
+    "caption_backdrop_hidden_stamp_off": true,
+    "scene_sha256": "3c913893ab055aba658e3cad3b3ae2dcf0ffb874a51b5565db0d8f9a167d6157"
+  },
+  "visual_review": "Actually inspected all ten final views together and entry/facade/roof details at full size. Right canopy thin vertical end is visible in entry detail, while horizontal top/soffit, pier and main mixed walls remain neutral. No arbitrary split, caption or new geometry observed.",
+  "isolated_build_color_export": "Reviewed PASS checks including original STL, color mesh and 3MF XML identical in retained isolated rebuild.",
+  "image_sha256": {
+    "preview.png": "a838181ead54d3ce8b07ea76fb400a182edf9f5dea625d1123b96732b26444b1",
+    "rear.png": "37710e904404e58657ef5222bace109090b827eb3601872569e7241dbf0f11d3",
+    "front.png": "e99415bd05d9602433eb30fca96c928a69b20c1e77f8b6eb69a9a1c3bc19f21c",
+    "back.png": "44d52c040c5a727a141581fd9eac762dc18de51960798b508619dde9e95f1f53",
+    "west.png": "cd1daa7164bcc2b6c38aa49dadf4b90ba4d0bc8f98263af142da87e57408de97",
+    "east.png": "3f199869dd04276b027fc0ba6b40c5c87defd5a71b24e2da8d0998a9dc22ce76",
+    "top.png": "02b78bf13f04827c0afef9bb49dd64e058552824e97dcb137ab7f2715ac7c94a",
+    "entry-detail.png": "58349b4083c783e86a8b6cf3c3d762a9489e4670dcb33ff5443acf6c5ebec558",
+    "facade-detail.png": "f7bfc20b21b833bbcb5ebe487dcce2905e1b972ce595008bf0c23d7c14c9bbfb",
+    "roof-detail.png": "fc62ef2fc04039a7ba75131d58f53284a426344d0708855b303521e3549e4ffc"
+  },
+  "file_sha256": {
+    "model.stl": "d8f0539a785192bc10a8c346b59869c6be984a6e95d54d0cfe144a99bfe1ac52",
+    "build_model.py": "1bf2ba312081806883049eb61052f6526e38cf75b86918bf69dc97c50072eaa1",
+    "color-mesh.npz": "6113b32d2ee9683970906fb98abe321410c7a7da716dff47924e23552fb9ea54",
+    "palette.json": "f3d7d5196a9baebd45fec85ef9788fca9217c1864128795076950e7a70da56b7",
+    "appearance.3mf": "6e54dedfd9ac9dcd73acd8d23f1a51ed120ce3c0bb905470762a7855481c5437",
+    "appearance-materials.json": "73ceb2c3a8469b8c23bebd6fc9a877263b11358f33b0074abcc9816bb1126919",
+    "scene.blend": "3c913893ab055aba658e3cad3b3ae2dcf0ffb874a51b5565db0d8f9a167d6157",
+    "colorize_model.py": "8bcc1dee6838095104a035c94cdd44d884a83763ce782a2a3daa916b138f2228",
+    "export_appearance.py": "47b7fd4a7d1c81299ead609595d31acf045ca4227a97b4d3fbcb258b6da2f00e",
+    "validate_color.py": "00512c3198ac8bfbfdb24d989bb6bf95c6b697b5841d969e5c1558b5f0e8eb85",
+    "render_color.py": "b095dd475606ea4f84bccab5d0daa02b6d9260e770d4d177de78b0d5309b1a26",
+    "verify_color_scene.py": "736bdbc522ce386bb9423d0e5d236587a0dec7f689f6365ab64888b939ce18fa",
+    "README.md": "5729131482bfc2be3e66ecce7f09753a50bf36e10cdcb89c6015b609cd03d9ef",
+    "COLOR-ASSIGNMENT-QA.json": "5b1e1d879d9b732ef6578d364a5542315c05c3928dcfb6133b7c4c559d2503d8",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "340b8d6a279370991fd6550d4ffa03263a18a54cc0e7a3e282158e33bbea8501",
+    "COLOR-SOURCE-REGISTER.json": "5e30eb3217b12f45c6b9c75cc024d6137837f31c42a861dc16358549571006b4",
+    "CANOPY-RETURN-SOURCE-QA.json": "e380633a030733cce4ca3065cb85f5fa720ec61125450cefd3a83e7ae6ee1836",
+    "SCENE-QA.json": "fbe2b5f820f04fe2900c0d1b5bd5ea7b027f02c3e6979830e4766d3c57ba103c",
+    "CANOPY-RETURN-SCENE-QA.json": "7c59591ba8281f6b7e839a251423fb18da5b25a2fd18cd09f6132c2c879c66a5",
+    "CHECKSUM-SCOPE.md": "83ccee39deb91c5bc108c3a024971bdff6022f217e72afa9863bd1fb3e07b436",
+    "README.zh-TW.md": "5729131482bfc2be3e66ecce7f09753a50bf36e10cdcb89c6015b609cd03d9ef"
+  },
+  "limits": [
+    "Old foundation photograph re-examined, not new source angle; reported capture date not independently authenticated.",
+    "Only bounded nominal pale stone family, not calibrated HEX or finish identification.",
+    "Original 17mm box depth/1.5mm thickness with 8.5mm exposed right end remains unmeasured geometry approximation.",
+    "No top, soffit, opposite end, back, pier/frame, mixed white/gray main walls or glazing authorized.",
+    "Fixed pending source snapshot is superseded only by this separate review; engineering and printing not recertified."
+  ],
+  "published": false
+}

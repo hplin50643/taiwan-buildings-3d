@@ -10,18 +10,19 @@
       "id": 1,
       "name": "Observed canopy front fascia pale stone gray",
       "hex": "#C4C0B2",
-      "faces": 2
+      "faces": 4
     },
     {
       "id": 2,
       "name": "UNVERIFIED mixed fullheight walls glazing sides roofs neutral",
       "hex": "#B8BAB5",
-      "faces": 1368
+      "faces": 1366
     }
   ],
   "domains": {
     "roofbox_front_offwhite": 8,
     "canopy_frontfascia_gray": 2,
+    "canopy_rightreturn_gray": 2,
     "whole_coplanar_withdrawals": 0
   },
   "partial_color_incomplete": true,
@@ -30,7 +31,7 @@
   "limitations": [
     "Roofbox front only, no roof/back/slit backing.",
     "Whole fullheight white upper/gray stonebase mixed walls neutral, no heightmasked triangles.",
-    "Entrybody/posts neutral, canopy front vertical only.",
+    "Entrybody/posts neutral; canopy front and only exposed right vertical return colored; top/bottom/other faces unknown.",
     "Foundation page dates2015reported not independently authenticated.",
     "Three material labels not tested filament slicing."
   ]

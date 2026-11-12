@@ -1,0 +1,37 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed raisedroof box front offwhite",
+      "hex": "#D8D4C9",
+      "faces": 8
+    },
+    {
+      "id": 1,
+      "name": "Observed canopy front fascia pale stone gray",
+      "hex": "#C4C0B2",
+      "faces": 2
+    },
+    {
+      "id": 2,
+      "name": "UNVERIFIED mixed fullheight walls glazing sides roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 1368
+    }
+  ],
+  "domains": {
+    "roofbox_front_offwhite": 8,
+    "canopy_frontfascia_gray": 2,
+    "whole_coplanar_withdrawals": 0
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1378 original triangles unchanged; no cuts or addedgeometry",
+  "limitations": [
+    "Roofbox front only, no roof/back/slit backing.",
+    "Whole fullheight white upper/gray stonebase mixed walls neutral, no heightmasked triangles.",
+    "Entrybody/posts neutral, canopy front vertical only.",
+    "Foundation page dates2015reported not independently authenticated.",
+    "Three material labels not tested filament slicing."
+  ]
+}

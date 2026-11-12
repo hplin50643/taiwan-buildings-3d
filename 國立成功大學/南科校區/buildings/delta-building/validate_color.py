@@ -15,14 +15,17 @@ checks['3MF_object_identity']=e.find('.//m:object',ns).attrib.get('name')=='NCKU
 # Retained isolated original build + color program reproduction, never TemporaryDirectory cleanup.
 before={n:H(R/n)for n in ['build_model.py','colorize_model.py','model.stl','color-mesh.npz','appearance-materials.json']}
 tmp=Path(tempfile.mkdtemp(prefix='delta-building-color-isolated-'))
-for n in ['build_model.py','colorize_model.py']:shutil.copy2(R/n,tmp/n)
+for n in ['build_model.py','colorize_model.py','export_appearance.py']:shutil.copy2(R/n,tmp/n)
 subprocess.run([sys.executable,str(tmp/'build_model.py')],check=True,capture_output=True)
 subprocess.run([sys.executable,str(tmp/'colorize_model.py')],check=True,capture_output=True)
+subprocess.run([sys.executable,str(tmp/'export_appearance.py')],check=True,capture_output=True)
+with zipfile.ZipFile(tmp/'appearance.3mf') as za,zipfile.ZipFile(R/'appearance.3mf') as zb:
+ checks['isolated_3MF_XML_identical']=za.read('3D/3dmodel.model')==zb.read('3D/3dmodel.model')
 checks['isolated_original_STL_hash']=H(tmp/'model.stl')==expected
 checks['isolated_color_mesh_hash']=H(tmp/'color-mesh.npz')==H(R/'color-mesh.npz')
 checks['isolated_palette_assignment_hash']=H(tmp/'appearance-materials.json')==H(R/'appearance-materials.json')
 checks['inputs_unchanged_during_QA']=before=={n:H(R/n)for n in before}
 (R.parent/'PRIVATE-COLOR-REBUILD-LOCATION.json').write_text(json.dumps({'retained_directory':str(tmp)},indent=2))
 checks={k:bool(v) for k,v in checks.items()}
-q={'status':'PASS'if all(checks.values())else'FAIL','checks':checks,'color_mesh_sha256':H(R/'color-mesh.npz'),'original_STL_sha256':expected,'bounds_mm':t.bounds.tolist(),'retained_rebuild':'Isolated rebuild retained privately; no automatic file deletion.','limitations':['Color model uses original unrefined geometry; no new facade accuracy claim.','Three base-material labels are not a tested four-filament slicer project.','STL format itself does not contain color.']}
+q={'status':'PASS'if all(checks.values())else'FAIL','checks':checks,'color_mesh_sha256':H(R/'color-mesh.npz'),'original_STL_sha256':expected,'bounds_mm':t.bounds.tolist(),'retained_rebuild':'Isolated rebuild retained privately; no automatic file deletion.','limitations':['Color model uses original unrefined geometry; no new facade accuracy claim.','Three base-material labels are not a tested three-filament slicer project.','STL format itself does not contain color.']}
 (R/'COLOR-FORMAT-GEOMETRY-QA.json').write_text(json.dumps(q,indent=2)+'\n');print(q);assert all(checks.values())
