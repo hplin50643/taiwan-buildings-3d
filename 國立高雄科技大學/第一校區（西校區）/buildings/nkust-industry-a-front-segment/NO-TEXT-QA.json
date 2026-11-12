@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nkust-industry-a-front-segment-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "bbd9d3015db32188ab0fa5172cf73149a92865921021d267980c5fc642c0b8ed",
+    "east.png": "dbc9481da07406c744881eeeb46a70c77066a3e69ae18f9adbf75c0c2a7dcc7c",
+    "entry-detail.png": "06d3cdb8e22675cfd7b92ba372db04ad254e7c9f2f318c95998b21eacbae63d3",
+    "facade-detail.png": "a61e9cdf2f565801f1d3648c7963ef8bc402ebc9d025e374565f58b0197e5831",
+    "front.png": "8eed6f8a77901834c966430d03567d2634a601fcc39245bd2f66747d86e97557",
+    "preview.png": "685ce41feaefe7271463dba55baabb2c5a4f8abea7139f9c16c4e0098454126e",
+    "rear.png": "d245910c587c649373c9ac7a77ccd2cf7573976328f2a6732195d1393a1065b9",
+    "roof-detail.png": "0a5712075c1e6741f1e2ebcaeb77912396d697c68d811f599b95f26b09335ac4",
+    "top.png": "1cf3f2dc2f6983fbdca00e6095b6e5bc440bd87edd77695a2b6bb14a99fd2552",
+    "west.png": "7b60b197e6e19d7c2467be135432605ca123d6fa78f2c86e8ae11a4031d4da8f"
+  }
+}
