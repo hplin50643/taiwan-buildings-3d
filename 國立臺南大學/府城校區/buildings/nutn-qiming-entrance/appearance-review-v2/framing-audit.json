@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "all_498_vertices_inside_all_seven_camera_frames": true,
+  "method": "Same render camera formula, world-to-camera projection for every original vertex, not only visible silhouette. Pixel coordinates use top-left origin.",
+  "views": [
+    {
+      "view": "front",
+      "left_px": 68.64397153258324,
+      "right_px": 831.3558876514435,
+      "top_px": 152.7517795562744,
+      "bottom_px": 683.5930585861206,
+      "ortho_scale": 215.4808807373047
+    },
+    {
+      "view": "rear",
+      "left_px": 68.64416599273682,
+      "right_px": 831.3559949398041,
+      "top_px": 244.68140602111816,
+      "bottom_px": 683.592963218689,
+      "ortho_scale": 215.4808807373047
+    },
+    {
+      "view": "elevation",
+      "left_px": 68.64406540989876,
+      "right_px": 831.3559412956238,
+      "top_px": 188.98329734802246,
+      "bottom_px": 618.6444044113159,
+      "ortho_scale": 177.0
+    },
+    {
+      "view": "source-angle",
+      "left_px": 68.64385083317757,
+      "right_px": 831.3557267189026,
+      "top_px": 170.4348087310791,
+      "bottom_px": 654.9319624900818,
+      "ortho_scale": 211.9215850830078
+    },
+    {
+      "view": "left",
+      "left_px": 148.84512573480606,
+      "right_px": 751.1548340320587,
+      "top_px": 79.02994155883789,
+      "bottom_px": 743.1584119796753,
+      "ortho_scale": 156.8960418701172
+    },
+    {
+      "view": "right",
+      "left_px": 148.84517937898636,
+      "right_px": 751.154887676239,
+      "top_px": 222.94163703918457,
+      "bottom_px": 743.1584119796753,
+      "ortho_scale": 156.8960418701172
+    },
+    {
+      "view": "top",
+      "left_px": 68.64406540989876,
+      "right_px": 831.3559412956238,
+      "top_px": 133.05082321166992,
+      "bottom_px": 666.9491648674011,
+      "ortho_scale": 177.0
+    }
+  ]
+}

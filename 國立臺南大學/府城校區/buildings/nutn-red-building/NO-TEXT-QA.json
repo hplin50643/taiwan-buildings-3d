@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nutn-red-building-all-views.jpg; no caption/backing, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "fa4caa29058211a4e314fb8db7dae4f77e3caad9d2b500747caa5b3eabbdb344",
+    "corridor-detail.png": "69f9184b264784ed6501faf426d703eb4393f9ebff5ab4b7fb966b904928ef77",
+    "east.png": "c1bcee7182431a0ce9d527ca7392d791f6dbcf3372e0d8df11aeb9edbdbaf3f8",
+    "entry-detail.png": "9460cbad9ec71cc608a2df5a35ced60b0a6409cc5ca0ff7743be4b8ad14790a1",
+    "front.png": "645a1c16517d508cd0f1b30bdf148015a959e81bb9224c865cd221bbfd65e3c3",
+    "preview.png": "ee4941353630f627f3c19ce8cacf7d78a9cad11585c56742e51ddbbe17b675a2",
+    "rear.png": "6a5012719fcfdbc41fce16cd7909bcce7e56a665be2ad18991dedf1dd1f14512",
+    "roof-detail.png": "a737161d52c4966577611c2c85bdff9c69ed5dbc0cb6db8d355139f6f639bb32",
+    "top.png": "495e8960c8c24859cacd8c990c053fb26a020dfae9d9c1104aab1a7b3d95bf58",
+    "west.png": "1c2fab72aeb7d9cd0f19e708cbaa63b9e0443b772a9b84c543bed5d5cb36caac"
+  }
+}

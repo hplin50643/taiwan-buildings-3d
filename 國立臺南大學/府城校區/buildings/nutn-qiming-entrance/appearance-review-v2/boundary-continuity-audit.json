@@ -1,0 +1,846 @@
+{
+  "status": "passed",
+  "selection_method": "Every vertex, original surface plane, outward normal and full primitive bounds; curved top all vertices share an exterior half-plane of the inner convex polygon. No centroids or face splitting.",
+  "changed_faces": 164,
+  "family_counts": {
+    "low_hall_original_opposite_vertical_side": 16,
+    "low_hall_original_vertical_eave_returns": 4,
+    "independent_tower_original_vertical_outer_walls": 36,
+    "portal_original_canopy_vertical_returns_and_underside": 10,
+    "portal_original_floor_vertical_edges": 9,
+    "portal_original_solid_balustrade_complete_boundary": 16,
+    "curved_original_solid_balustrade_narrow_top": 35,
+    "curved_original_solid_balustrade_vertical_inner_outer_returns": 38
+  },
+  "protected_face_count": 76,
+  "original_colored_faces_preserved": 374,
+  "artificial_rear_crop_y_planes_unchanged": [
+    31.5,
+    41,
+    43.5
+  ],
+  "tower_is_complete_independent_primitive": true,
+  "tower_rear_y29_is_not_low_hall_crop": true,
+  "rows": [
+    {
+      "triangle": 78,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 79,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 80,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 82,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 83,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 84,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 85,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 86,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 87,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 89,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 90,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 91,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 92,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 93,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 94,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 95,
+      "family": "low_hall_original_opposite_vertical_side",
+      "material": 2
+    },
+    {
+      "triangle": 117,
+      "family": "low_hall_original_vertical_eave_returns",
+      "material": 2
+    },
+    {
+      "triangle": 119,
+      "family": "low_hall_original_vertical_eave_returns",
+      "material": 2
+    },
+    {
+      "triangle": 120,
+      "family": "low_hall_original_vertical_eave_returns",
+      "material": 2
+    },
+    {
+      "triangle": 123,
+      "family": "low_hall_original_vertical_eave_returns",
+      "material": 2
+    },
+    {
+      "triangle": 266,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 267,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 268,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 269,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 290,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 291,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 292,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 306,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 315,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 316,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 317,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 318,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 319,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 320,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 321,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 322,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 323,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 324,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 325,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 326,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 327,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 328,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 332,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 333,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 334,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 335,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 336,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 337,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 338,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 339,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 340,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 341,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 342,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 343,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 344,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 345,
+      "family": "independent_tower_original_vertical_outer_walls",
+      "material": 1
+    },
+    {
+      "triangle": 520,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 521,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 523,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 527,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 543,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 556,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 557,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 559,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 562,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 565,
+      "family": "portal_original_canopy_vertical_returns_and_underside",
+      "material": 2
+    },
+    {
+      "triangle": 569,
+      "family": "portal_original_floor_vertical_edges",
+      "material": 2
+    },
+    {
+      "triangle": 574,
+      "family": "portal_original_floor_vertical_edges",
+      "material": 2
+    },
+    {
+      "triangle": 575,
+      "family": "portal_original_floor_vertical_edges",
+      "material": 2
+    },
+    {
+      "triangle": 580,
+      "family": "portal_original_floor_vertical_edges",
+      "material": 2
+    },
+    {
+      "triangle": 588,
+      "family": "portal_original_floor_vertical_edges",
+      "material": 2
+    },
+    {
+      "triangle": 605,
+      "family": "portal_original_floor_vertical_edges",
+      "material": 2
+    },
+    {
+      "triangle": 610,
+      "family": "portal_original_floor_vertical_edges",
+      "material": 2
+    },
+    {
+      "triangle": 614,
+      "family": "portal_original_floor_vertical_edges",
+      "material": 2
+    },
+    {
+      "triangle": 627,
+      "family": "portal_original_floor_vertical_edges",
+      "material": 2
+    },
+    {
+      "triangle": 629,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 631,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 632,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 634,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 636,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 637,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 638,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 640,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 643,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 644,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 645,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 646,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 647,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 648,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 649,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 650,
+      "family": "portal_original_solid_balustrade_complete_boundary",
+      "material": 2
+    },
+    {
+      "triangle": 772,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 773,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 774,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 775,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 776,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 777,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 778,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 779,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 780,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 781,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 782,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 783,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 784,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 785,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 786,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 787,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 788,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 789,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 792,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 793,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 794,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 795,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 796,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 797,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 798,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 799,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 800,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 801,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 802,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 803,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 804,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 807,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 809,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 810,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 811,
+      "family": "curved_original_solid_balustrade_narrow_top",
+      "material": 2
+    },
+    {
+      "triangle": 812,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 813,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 814,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 815,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 816,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 817,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 818,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 819,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 820,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 821,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 822,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 823,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 824,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 825,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 826,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 827,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 828,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 829,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 830,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 831,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 832,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 833,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 834,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 835,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 836,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 837,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 838,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 839,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 840,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 841,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 842,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 843,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 844,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 845,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 846,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 847,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 848,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    },
+    {
+      "triangle": 849,
+      "family": "curved_original_solid_balustrade_vertical_inner_outer_returns",
+      "material": 2
+    }
+  ]
+}

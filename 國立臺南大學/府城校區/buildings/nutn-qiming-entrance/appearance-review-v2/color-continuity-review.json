@@ -1,0 +1,127 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T01:24:35.604102+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "c8a9c680c73a3ad1f932ac72c7f14be90678a1df071c81ce77ba54cb75ba8e79",
+      "bytes": 881891,
+      "personally_viewed": true,
+      "observation": "Front retains original brick front/left tower walls, cream low hall, deep green-grey entry/window backs and dark bars. Curved balcony returns continuous cream; broad roofs, coping, steps and base neutral. No text, overlays or clipping.",
+      "reviewed_at": "2026-11-12T01:11:19.866968+00:00"
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "d8822f98a9b76397d3b029b6fcec2baa44bc95dc81fb3f66314d9bad07785dfb",
+      "bytes": 843353,
+      "personally_viewed": true,
+      "observation": "Complete independent tower right and rear exterior is brick red, original discrete window backs remain. Low hall/entry artificial rear cuts and roof/rear fascia stay neutral; narrow real low-hall side is cream. No rear window invention, text, overlays or clipping.",
+      "reviewed_at": "2026-11-12T01:11:59.386813+00:00"
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "770c0bfccb46a9443fa128b2c17a444c96df9eee10959a5d63bb72bce3e94604",
+      "bytes": 852966,
+      "personally_viewed": true,
+      "observation": "Front orthographic keeps the entrance open upper gallery and original dark lower window panels/bars. Brick tower front remains continuous except original discrete green-grey windows. Parapets have clean cream boundaries without text or clipping.",
+      "reviewed_at": "2026-11-12T01:13:42.070748+00:00"
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "66f3bca2b8c5f48d6ef9a95685ba0385585b71bc88114e3f922d7096f48ac541",
+      "bytes": 870191,
+      "personally_viewed": true,
+      "observation": "Lower front oblique supports comparison to photo035: cream solid curved parapet and portal return follow original component surfaces. Original tower and entry colors unchanged; neutral broad tops and roofbox distinct, no clipping or text.",
+      "reviewed_at": "2026-11-12T01:16:35.574739+00:00"
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "5a53de25e1b096da04fcfa46708415872be0060eba1f14625b1666ecec84500f",
+      "bytes": 867329,
+      "personally_viewed": true,
+      "observation": "Left side shows retained original cream hall wall and neutral high ribbon opening. Curved parapet inner return and narrow rim cream without filling its open center. Roof plane and tower coping neutral; tower entirely in frame with79px upper clearance.",
+      "reviewed_at": "2026-11-12T01:17:44.329751+00:00"
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "85eb5d6e1d1d5d12875257138752c85c3f39526e2960d188956c6df079aab28a",
+      "bytes": 857422,
+      "personally_viewed": true,
+      "observation": "Right side clearly shows newly continuous brick exterior surrounding the five original discrete dark window backs. No new glass strip or frames introduced. Portal side remains open, neutral coping/roof/base preserved; all geometry within frame.",
+      "reviewed_at": "2026-11-12T01:19:48.088327+00:00"
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "cae9369588bc34fe22188602b01f939e59f020f68d033fb9b2cf10da509819bc",
+      "bytes": 894360,
+      "personally_viewed": true,
+      "observation": "Top view retains all broad roof fields, roofbox, tower coping, entry walking surfaces and base neutral. Only exposed narrow curved solid parapet rim carries cream; no glass inserted into the balcony or new geometry/overlays.",
+      "reviewed_at": "2026-11-12T01:22:02.502947+00:00"
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "2808f7d206d698f66112cfdf656f8e5676d1e99fefaf6ac2f20958fc60738d6f",
+      "bytes": 880365,
+      "personally_viewed": true,
+      "observation": "Matched original front preserves same framing, front colors, original silhouette and window/entry layout. Differences are small visible cream component returns, including curved parapet rim; main missing tower sides are hidden at this angle.",
+      "reviewed_at": "2026-11-12T01:23:20.653625+00:00"
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "803fad90637bc318cf847f8effed5abdf9d1ad315d942bbd841f307fa13c0c91",
+      "bytes": 828619,
+      "personally_viewed": true,
+      "observation": "Matched original rear clearly shows formerly neutral independent tower walls; final rear extends brick to these genuine exteriors and cream to the narrow hall side. Artificial low rear cuts, roof fields, coping, original window backs and all geometry stay unchanged.",
+      "reviewed_at": "2026-11-12T01:24:34.750587+00:00"
+    }
+  ],
+  "before_after": [
+    {
+      "view": "front",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 34794,
+      "pixels_differing_by_more_than_8_rgb_levels": 1225,
+      "mean_absolute_rgb_difference": 0.07432037037037037,
+      "limit": "Rendered differences include indirect lighting effects; independent face-level audit establishes scope."
+    },
+    {
+      "view": "rear",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 100986,
+      "pixels_differing_by_more_than_8_rgb_levels": 68628,
+      "mean_absolute_rgb_difference": 3.7979666666666665,
+      "limit": "Rendered differences include indirect lighting effects; independent face-level audit establishes scope."
+    }
+  ],
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "observations": [
+    "Original front tower brick, cream entry, dark window backs and coarse dark entry bars are preserved.",
+    "164 original neutral faces continue existing families:36 tower exterior walls and128 cream hall/portal/balustrade faces. Hidden or opposite faces are inference.",
+    "Independent tower rear wall y29 gains brick continuity; low artificial rear truncations y31.5/y41/y43.5 remain neutral with no invented window rows.",
+    "Original open upper portal remains open. Solid balcony parapets gain cream returns and narrow ring tops; walking slab roofs, tower coping and unresolved details stay neutral.",
+    "All seven final and two original images are uncut, have no added text or source-photo overlays."
+  ],
+  "limitations": [
+    "Original coarse model has discrete tower-window backs unlike the continuous photographed strip. This is unchanged, not corrected by invented glass.",
+    "Three legacy photographs have unknown capture dates; no2026-as-built claim. Material values uncalibrated; opposite and hidden extension inferred.",
+    "Original partial entrance-end model, estimated dimensions and support risks remain. Not physical printing, slicer toolpath or full-wall-thickness verification."
+  ],
+  "artifacts": {
+    "appearance.blend": "995c26b9696c4005df52764ec5305a3aac519171159c9e8329473e268124029e",
+    "appearance.3mf": "18a04c3ad972cab02f627d0cec7d78966e9fdb726253087766649b8239eac8f8",
+    "appearance-materials.json": "24f4e3c0e96b0b99ef7c54fac8f2619c11c436ade18cbaec931e85ecf7afc179",
+    "build_appearance.py": "24285bf19729a3eacc20b2a0e5ef625d386e96efd1880093433de45be583570b",
+    "render_review.py": "e82ef37e06f6e62902f3edeba24c19b8f78490003b3da0cb7d5680a69241fef5"
+  }
+}

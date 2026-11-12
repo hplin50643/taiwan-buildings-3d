@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.003;indices=[]
+EPS=.003;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def front(x,y,z,w,h):return plane(1,y) and n[1]<-.999 and bounds((x-w/2,y,z),(x+w/2,y,z+h))
@@ -77,12 +77,52 @@ for p in mesh.polygons:
  if front(15,-32,38,54,4.5):i=2
  if round_outer():i=2
  if front(-29,-25.5,51,78,3) or left(-68,9,51,69,3):i=2
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# V2 extends only full original component boundary triangles.
+# The low hall +Y planes are artificial truncations, NOT real rear facades.
+def ring_boundary():
+ if not bounds((-26,-32,38),(-8,-14,44)):return False
+ for radius,outward in [(9,1),(7.3,-1)]:
+  for k in range(40):
+   th=(k+.5)*2*np.pi/40;v=np.array([np.cos(th),np.sin(th)])
+   if max(abs((q[:,:2]-[-17,-23])@v-radius*np.cos(np.pi/40)))<EPS and np.dot(n[:2],v)*outward>.999:return True
+ return False
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0);i=0;reason=None
+ # Complete independent brick tower wall sides, not roof cap or window reveals.
+ if bounds((40,-21,2.8),(64,29,83.8)) and any(plane(k,t) and n[k]*sg>.999 for k,t,sg in [(0,40,-1),(0,64,1),(1,-21,-1),(1,29,1)]):
+  i=1;reason='independent_tower_original_vertical_outer_walls'
+ # Low hall exposed opposite side. Its rear crop y41 is expressly excluded.
+ if plane(0,7) and n[0]>.999 and bounds((7,-23,2.8),(7,41,51.8)):
+  i=2;reason='low_hall_original_opposite_vertical_side'
+ # Low hall slab returns; rear crop y43.5 and broad roof stay neutral.
+ if boxsurface(-29,9,51,78,69,3) and abs(n[2])<.001 and not plane(1,43.5):
+  i=2;reason='low_hall_original_vertical_eave_returns'
+ # Projecting canopy and floor edges are genuine original component surfaces.
+ if boxsurface(15,-21,49,61,24,3) and not (plane(2,52) and n[2]>.999):
+  i=2;reason='portal_original_canopy_vertical_returns_and_underside'
+ if boxsurface(15,-23,36,58,17,2.8) and abs(n[2])<.001:
+  i=2;reason='portal_original_floor_vertical_edges'
+ if boxsurface(15,-31,38,54,2,4.5):
+  i=2;reason='portal_original_solid_balustrade_complete_boundary'
+ if ring_boundary():
+  i=2;reason='curved_original_solid_balustrade_vertical_inner_outer_returns'
+ # Tops of curved parapet: every vertex must belong to original annulus,
+ # not the balcony walking slab. Validate whole triangle lies outside inner
+ # convex polygon by checking same inner supporting half-plane for all points.
+ if plane(2,44) and n[2]>.999 and bounds((-26,-32,44),(-8,-14,44)):
+  inside_outer=all(np.max((q[:,:2]-[-17,-23])@np.array([np.cos((k+.5)*2*np.pi/40),np.sin((k+.5)*2*np.pi/40)]))<=9*np.cos(np.pi/40)+EPS for k in range(40))
+  outside_inner=any(np.min((q[:,:2]-[-17,-23])@np.array([np.cos((k+.5)*2*np.pi/40),np.sin((k+.5)*2*np.pi/40)]))>=7.3*np.cos(np.pi/40)-EPS for k in range(40))
+  if inside_outer and outside_inner:i=2;reason='curved_original_solid_balustrade_narrow_top'
+ if reason:
+  p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'basis':'Complete original component boundary with every triangle vertex checked. Hidden or opposite extent is continuity inference, not directly photograph-confirmed.'}
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and material values preserved; qualified whole-component continuity; artificial rear cuts and unresolved surfaces neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-component-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -97,6 +137,7 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -112,15 +153,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original partial entrance-end hall geometry retained, not complete auditorium','Three actual official NUTN photographs personally read, capture dates unknown. Legacywebsite updateyear is not photo capture or2026condition. Independenttower front-Y/left-X planes brick; observedhall front/left andentrywall cream. Trueentry threewindowbacks andoriginalsplit towerstrip backs mixedopaqueproxy, no new continuousglassstrip orfinegrid. Original twohorizontalentrybars dark, twoportalpiers cream withsmallcomponenthiddenface familycontinuation disclosed. Originalslab frontfascias/visibleundersides, frontbalustrade, front40facet curvedouterwall/loweredge andoriginalprojectingfloorunderside cream; exact originalcircle+slab union only, no newfacecuts. Hallroofslab front/left verticalfascias cream, allbroadrooftops/capsneutral. Curvedinner/back/top, towercap, clerestory, treeobscuredsideribbon, steps/base, rearcut andunseen broadright/backtower neutral. No newletters/posters/handrails/tiles/equipment orgeometry. OriginalprintQA/support limitations unchanged','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-component-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original partial entrance-end hall geometry retained, not complete auditorium','Official legacy photos017,018,035 freshly viewed. Same original brick tower vertical exterior walls and cream low hall opposite side, eave returns, portal canopy edges and underside, floor edges and solid straight/curved balcony parapet boundaries extend the existing material families. All triangle vertices tested on original boundaries. Opposite and hidden surfaces inferred, not individually photo-confirmed. Existing colored faces, material RGBA and roughness preserved. Artificial low rear truncations y31.5/y41/y43.5, broad roofs, tower coping, clerestory, uncertain window reveals, upper gallery posts, stairs and base remain unchanged neutral. No new windows, glass, lettering, seams or geometry. Photos have unknown capture dates; no2026-current-condition claim. Original model and print limitations remain','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-220,-270,155),(0,0,43),215),'rear':((220,270,155),(0,0,43),215),'elevation':((0,-350,43),(0,0,43),215),'source-angle':((-240,-230,110),(0,0,43),215),'top':((0,0,380),(0,0,43),215)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-220,-270,155),(0,0,43),215),'rear':((220,270,155),(0,0,43),215),'elevation':((0,-350,43),(0,0,43),215),'source-angle':((-240,-230,110),(0,0,43),215),'left':((-350,0,130),(0,0,43),215),'right':((350,0,130),(0,0,43),215),'top':((0,0,380),(0,0,43),215)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -129,4 +171,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))
