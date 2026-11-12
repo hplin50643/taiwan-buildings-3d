@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "blockers": [],
+  "numerical_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "actual_visual_review": [
+    "Official source-0 and contractor source-1 exterior photographs at full image resolution.",
+    "All seven representative views viewed together; entry-detail, facade-detail and roof-detail each viewed fullsize.",
+    "Final private low-soffit.png viewed fullsize after render completion; no image edits requested."
+  ],
+  "findings": [
+    "87 new downward slab faces exactly4+83; original4fronts retained. All other material indices unchanged.",
+    "19left-return candidates remain neutral; fullcoplanar domains uniform. 5992 original triangles and STL/build bytes unchanged;3MF exact.",
+    "Reference shows pale panel fields with seams/small fixtures; original uniform slab omits these details. Documentation explicitly limits this to simplified family mapping, not exact material layout.",
+    "Final low-angle image uses temporary fill to inspect underside; saved scene remained unchanged, no sources redistributed.",
+    "No new roof/column/glazing/return color or unsupported current-condition claim found."
+  ],
+  "image_sha256": {
+    "preview.png": "219edeb3b7eaa5b8562e2016375e38c03424f1116cb9fd83757572b55a17d2b4",
+    "rear.png": "1623bc0f3bd68f62f07d4369b7d40320782c0a43760c96878057a5dd2f3b041c",
+    "front.png": "ca684f232c5f02d9138248be5e34c6c5217cbefd333a7c7f1b54ef7390059e99",
+    "back.png": "68ad0be39323269675f403f9eb3b9a1239e59adb20a90ad44d323a15aeb772db",
+    "west.png": "a2e4ccc0ce61b3b13bd5e557ac4c61466aeab610899b86f7f118e069b833183e",
+    "east.png": "15ece87f671bdcc03b2d23251875dac908a6b3072844fa8b3a8175cedb151139",
+    "top.png": "fb303dd40125cb4c22aa1492e26587fc886ea3c98a3d706642dc8db90f66c03f",
+    "entry-detail.png": "7027793218df58b15e3fa17790164b633b927c4eab02d0b32e9abb98463c0749",
+    "facade-detail.png": "84867041105b76663b852fc64dfbde27ea903a27d9b57ce914ee313ce66acfe9",
+    "roof-detail.png": "c8b5d29595b38513da9b687e0b42cbea817e646056d0b14d7eae098450d6bb64"
+  },
+  "supplementary_private_image_sha256": {
+    "low-soffit.png": "372a2c6527793a7e92303669195607e2b45e1b82879856079d5e373061d6f525"
+  },
+  "file_sha256": {
+    "model.stl": "a1811eb3ebc0fa47f8f2a0db1386fbb280d186fd9d8b1da614a2c40c6ef1b36e",
+    "build_model.py": "75152586ba388b39d3ee05788b0051e96a7c8ebf18a04ae55765ddf8df74d6e6",
+    "colorize_model.py": "8e9a9656f5f7713cf1c4588cc83203bdff5f7fd027ad126e95508de39bc90b7a",
+    "color-mesh.npz": "21b0802b643b25c4510c38bd4ea28071388cafabadcdec1818b5c67b24faedcd",
+    "palette.json": "cb18191dd1852ca617cc4bdbfc1fd9c0bcf7fca1f79240cf32c7fb9dff6e9cea",
+    "appearance.3mf": "077b0ac92bc476b6806e501f12b042cb4aa603381962a4a3f4b031eabff099e3",
+    "appearance-materials.json": "af270010bb2cd042eae6b79d3d0b5d9b0f8916399dbd02906bc1b9a575fb3582",
+    "scene.blend": "c7331009cc831c6524534010004423e2ec221815d25c8be35d6cba2196892925",
+    "SOFFIT-SOURCE-QA.json": "714720ea106959e05ade8d2e7a0eee05abdff055c3e5af15af5f13752d64aa44",
+    "COLOR-SOURCE-REGISTER.json": "714720ea106959e05ade8d2e7a0eee05abdff055c3e5af15af5f13752d64aa44",
+    "README.md": "d992ebb76959d92db892f907f3ab30d22a2eb9fa381b7063c6e9fe9ee4638d14",
+    "README.zh-TW.md": "d992ebb76959d92db892f907f3ab30d22a2eb9fa381b7063c6e9fe9ee4638d14"
+  },
+  "counts": {
+    "triangles": 5992,
+    "original_colored": 4,
+    "added": 87,
+    "colored": 91,
+    "neutral": 5901
+  }
+}

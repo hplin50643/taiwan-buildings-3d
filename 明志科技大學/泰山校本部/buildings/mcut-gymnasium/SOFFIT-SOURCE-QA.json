@@ -1,0 +1,80 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Only two original upper balcony exposed horizontal undersides,87 original faces; no upper main roof underside, returns, columns, glazing or railings.",
+  "source_observation": "Actually inspected official source-0.jpg at full resolution and contractor source-1.jpg. Official image clearly shows two pale soffit panel fields with seams and small recessed lights; broad dark shading is illumination, not black material. Contractor image confirms identity and two balcony geometry but is weaker underside color evidence.",
+  "inference": "Original solid planar slabs omit panel seams, small recessed lights and exact recess depth. Mapping pale family to exposed whole original underside faces is simplified uniform-family inference, not per-pixel/per-vertex material matching. Light fixtures are not modeled/colored separately; do not imply photo texture or reconstructed lighting geometry.",
+  "numerical_exploration": [
+    {
+      "z": 71,
+      "faces": 4,
+      "bounds": [
+        [
+          -64.0,
+          -52.0,
+          71.0
+        ],
+        [
+          41.0,
+          -45.5,
+          71.0
+        ]
+      ]
+    },
+    {
+      "z": 85,
+      "faces": 83,
+      "bounds": [
+        [
+          -64.0,
+          -52.0,
+          85.0
+        ],
+        [
+          41.0,
+          -35.5,
+          85.0
+        ]
+      ]
+    }
+  ],
+  "source_sha256": {
+    "source-0.jpg": "179464b366129d1bd5ee34a055ba52196164ca5450e70071f2db42391862d747",
+    "source-1.jpg": "ce5846c5069a02a6439bf6b84959a8de70187f0d200f3465a650c0911f67fa2b"
+  },
+  "conditions": [
+    "Verify87 are whole coplanar domains, original4front faces unchanged, all other material indices unchanged.",
+    "Retain excluded19left-return faces neutral.",
+    "Final ten images and separately lit low-angle soffit inspection, unchanged saved scene.",
+    "No measured depth/current-condition/calibrated color claims."
+  ],
+  "historical_source_register": "qa/soffit-previous/COLOR-SOURCE-REGISTER.json",
+  "scope_counts": {
+    "original": 4,
+    "added": 87,
+    "colored": 91,
+    "neutral": 5901,
+    "triangles": 5992
+  },
+  "sources": [
+    {
+      "url": "https://adm.mcut.edu.tw/p/406-1033-43991,r1180.php?Lang=zh-tw",
+      "use": "校方校園美景實照；頁面最後更新2023-07-24，並非照片拍攝日期",
+      "photograph_capture_date": "未確認；檢索或網頁更新日期不等於拍攝日期"
+    },
+    {
+      "url": "https://live.staticflickr.com/65535/53067013066_999dfbedba_k_d.jpg",
+      "use": "由校方美景頁連出之正面近景實照",
+      "photograph_capture_date": "未確認；檢索或網頁更新日期不等於拍攝日期"
+    },
+    {
+      "url": "https://www.tasacope.com.tw/院校及實驗機構建築",
+      "use": "大三億營造工程實績，體育館左前全景實照",
+      "photograph_capture_date": "未確認；檢索或網頁更新日期不等於拍攝日期"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/3479fb_aedf198173f640198823dbbb9b6fb66a~mv2.jpg",
+      "use": "營造商頁面的實際外觀照片",
+      "photograph_capture_date": "未確認；檢索或網頁更新日期不等於拍攝日期"
+    }
+  ]
+}

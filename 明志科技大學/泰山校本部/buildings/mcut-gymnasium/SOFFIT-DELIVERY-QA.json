@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded soffit update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T10:45:27.570771+00:00",
+  "triangles": 5992,
+  "original_color_faces": 4,
+  "new_color_faces": 87,
+  "colored_faces": 91,
+  "unknown_neutral_faces": 5901,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "a1811eb3ebc0fa47f8f2a0db1386fbb280d186fd9d8b1da614a2c40c6ef1b36e",
+  "color_mesh_sha256": "21b0802b643b25c4510c38bd4ea28071388cafabadcdec1818b5c67b24faedcd",
+  "images_sha256": {
+    "preview.png": "219edeb3b7eaa5b8562e2016375e38c03424f1116cb9fd83757572b55a17d2b4",
+    "rear.png": "1623bc0f3bd68f62f07d4369b7d40320782c0a43760c96878057a5dd2f3b041c",
+    "front.png": "ca684f232c5f02d9138248be5e34c6c5217cbefd333a7c7f1b54ef7390059e99",
+    "back.png": "68ad0be39323269675f403f9eb3b9a1239e59adb20a90ad44d323a15aeb772db",
+    "west.png": "a2e4ccc0ce61b3b13bd5e557ac4c61466aeab610899b86f7f118e069b833183e",
+    "east.png": "15ece87f671bdcc03b2d23251875dac908a6b3072844fa8b3a8175cedb151139",
+    "top.png": "fb303dd40125cb4c22aa1492e26587fc886ea3c98a3d706642dc8db90f66c03f",
+    "entry-detail.png": "7027793218df58b15e3fa17790164b633b927c4eab02d0b32e9abb98463c0749",
+    "facade-detail.png": "84867041105b76663b852fc64dfbde27ea903a27d9b57ce914ee313ce66acfe9",
+    "roof-detail.png": "c8b5d29595b38513da9b687e0b42cbea817e646056d0b14d7eae098450d6bb64"
+  },
+  "current_independent_review": "SOFFIT-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Native-pixel re-review of original official photograph supports two upper balcony soffit domains. Approximate plain slab underside does not reproduce seams or small light fixtures, nor certify measured depth. Tops, side returns, columns, glazing and all other surfaces unchanged. Historical approximation, not2026 current condition.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

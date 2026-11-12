@@ -1,29 +1,24 @@
-# 明志體育館｜兩上陽台前緣局部銀白
+# 明志科技大學體育館｜兩層陽台有限底面銀白
 
-**欄杆代理、玻璃塔牆與屋面等尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅兩上陽台樓板前緣4面名義銀白，非全棟完整補色。
+局部補色未完成。保留原上層兩陽台前緣4面，新補兩層外露板底87面，共91面銀白、5901面未知中性。5992原三角、STL及build字節保持，不切面、不增加模型幾何。原包無OBJ。
 
-| 總覽 | 背側 | 正面 |
+## 來源與界限
+重新實看原官方近照及營造商照片，不是新影像。官方照清楚可見兩層底板淺銀白色族、細板縫及小嵌燈。陰影不是黑色材料，名義色不是校準色票。原板底為省略板縫及燈具的平面代理，完整底面均質映射含有限推定，不等於逐像素或逐頂點材料測量。
+
+只選原向下底面z=71與85，原板框x[-64,44]、y[-52,-34]；實露範圍受原Boolean遮擋，z71有4面，z85有83面，各完整共面域不切開。左返19候選面跨域全部排除。上表面、左右後返面、柱、欄杆、玻璃、下層遮陽、曲屋面與其底腹、標誌及所有其他面保持原指派。中性不代表實景灰或真實材料邊界。
+
+原估測深度及接合不因補色成為精測；小嵌燈未另建或染色。拍攝日未知，不代表2026現況。原照和裁圖只私人留存，不公開照片或貼圖，不推定商用權利。未實體試印或驗多料切片，STL本身無色。
+
+## 十視角
+|前斜|後斜|正面|
 |---|---|---|
-|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![前斜](preview.png)|![後斜](rear.png)|![正面](front.png)|
 |![背面](back.png)|![西側](west.png)|![東側](east.png)|
-|![頂面](top.png)|![兩上板](entry-detail.png)|![下陽台板](facade-detail.png)|
-|![上陽台與欄](roof-detail.png)|||
+|![頂](top.png)|![入口](entry-detail.png)|![詳1](facade-detail.png)|
+|![詳2](roof-detail.png)|||
 
-## 材色範圍
-同 mcut-gymnasium 原項目，same-item、count_delta=0。明志科技大學泰山校本部體育館主體單群，不含相鄰樓或整片廣場。原5992三角及STL/build_model.py字節不變，19原件無OBJ，原code可重建輸出OBJ不等於有原件。
-- whole y−52平面8三角為4完整共邊矩形；只選上部z71..72.8、85..86.8兩完整樓板前緣各2面、x−64..41。下部z35/53是另一遮陽構件，全中性。這是完整構件身份，不是切割連續面取高處。
-- 其餘5988面中性：y−51.8實心欄板代理不是實景透空欄杆，原玻璃含窗簾/框、徽牌混藍白、全高柱/塔、曲屋前後/頂底、側背、樓板上下與回邊均未證完整材域。
-- 原近似窗列與形體保留，不新增徽標、欄杆或未見部分；補色不追認幾何精度。中性材界只是證據範圍，不是真實材縫。
+## 檢核範圍
+本次SOFFIT-SOURCE-QA、COLOR-ASSIGNMENT、COLOR-FORMAT-GEOMETRY、SCENE及SOFFIT-SCENE-QA對應新候選。舊文件及QA保存在qa/soffit-previous；舊FREEZE、獨審及預覽歷史不作本次放行。來源狀態固定為SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW，最終獨審另檔記錄，不回寫來源快照。私人低仰補光圖僅為模型檢查，不是照片、非正式十圖，未改保存scene。尚待最終獨審及凍結，未發布。
 
-## 來源與日期
-親看兩日照主體外觀，兩上樓板下方完整淺面板支持銀白族；不把細金屬欄移植到原實板。照片拍攝日未證，2023頁面更新不是capture，非2026現況。名義色族非校準色票。原照私人保存、不公開、不作紋理、不建人物，未確認再散布或CC授權，不保證商用。
-
-## 格式與列印
-[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [Blender](scene.blend)
-原150mm底座示意尺寸不是測量比例。實際物件名 MCUT Gymnasium partial color，獨立核對真slug/館名。STL無色；3MF與Blender逐面分材，兩材標籤不是兩色或四色耗材切片驗證，未實際列印。
-
-## 重建與 QA
-原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes/全三角multiset、共面均一、閉合正體積、3MF面材、scene重開、十圖1200×900與hash。原README/previews/validation保留歷史，不冒充新QA，不刪檔。
-
-## English scope
-Partial only:4 original triangles on two complete upper balcony slab-front rectangles silver white;5988 neutral. Whole y=-52 plane has4 complete components with8 triangles; lower2 shades remain neutral. Railing proxy at y=-51.8 is not the open metal rail in photos and remains neutral, as do logo, curtains/glass, columns/tower, curved roof and backs. Original5992 triangles and19 immutable files unchanged;no originalOBJ even though originalbuild exports one. Captureunknown,page2023 update notcapture/not2026 survey. Sameitem/count0/no geometrychanges/no filament test.
+## English limitations
+Original4 front faces retained;87 original soffit faces added,91 colored/5901 neutral/5992 original triangles. Only two bounded exposed balcony bottoms;19 left-return candidates rejected across coplanar boundaries. No roofs, slab tops, sides, columns, glazing or rails added. Same-photo native-pixel reinspection. Simplified flat slab omits panel joints and tiny light fixtures, with unmeasured depth; uniform pale-family mapping is not per-vertex proof. No calibrated colors, current-condition or physical-print certification. No original OBJ. Reference pixels remain private.

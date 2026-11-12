@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "pass",
-    "scope": "All ten output views inspected; in-image caption removed; original architectural features, materials, base and framing retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "40c0cbb0247da23d207a5e772d1af85d89d81205bbf1cc7b136f06076c2c75b0",
-    "east.png": "22cff75b3faccb12d10df6b533879f3080f4f00beddb414fa04b09fe5c53a0cb",
-    "entry-detail.png": "2cd28f9d34e78db4026ebffb1921c8ab2e403bc721dcff586ffa5de02a05bb41",
-    "facade-detail.png": "4cc0d20b61b6653f1aeb4437acc54c2ac042e428cf112c72e0fcb03f4003809b",
-    "front.png": "ce5cae72672da1ebca3ea86212f7c6c15287f63a021819d123a3d94af65547b4",
-    "preview.png": "2763f0d1d008886bcaf03f7f7e040cceb59f0d530f959060cd79ad0a207ccb29",
-    "rear.png": "7006e281c8d910ced34ff9117c32f36a527e298ae0d09f790e79256e93992145",
-    "roof-detail.png": "71a3c6151d7381691f4805acdab7b3ad8414962e1e6131023714d84b833d1e4c",
-    "top.png": "b3e9889d8055b533b9258d555bc5c7a949da0a4f4ed23a10751a7257ac06ffd3",
-    "west.png": "8e78dfbdfb15da721fa4f38cb26a7c74823593abc0f4ee6b3a9c18ff7d3ee7d5"
-  }
+    "preview.png": "219edeb3b7eaa5b8562e2016375e38c03424f1116cb9fd83757572b55a17d2b4",
+    "rear.png": "1623bc0f3bd68f62f07d4369b7d40320782c0a43760c96878057a5dd2f3b041c",
+    "front.png": "ca684f232c5f02d9138248be5e34c6c5217cbefd333a7c7f1b54ef7390059e99",
+    "back.png": "68ad0be39323269675f403f9eb3b9a1239e59adb20a90ad44d323a15aeb772db",
+    "west.png": "a2e4ccc0ce61b3b13bd5e557ac4c61466aeab610899b86f7f118e069b833183e",
+    "east.png": "15ece87f671bdcc03b2d23251875dac908a6b3072844fa8b3a8175cedb151139",
+    "top.png": "fb303dd40125cb4c22aa1492e26587fc886ea3c98a3d706642dc8db90f66c03f",
+    "entry-detail.png": "7027793218df58b15e3fa17790164b633b927c4eab02d0b32e9abb98463c0749",
+    "facade-detail.png": "84867041105b76663b852fc64dfbde27ea903a27d9b57ce914ee313ce66acfe9",
+    "roof-detail.png": "c8b5d29595b38513da9b687e0b42cbea817e646056d0b14d7eae098450d6bb64"
+  },
+  "mesh_sha256": "21b0802b643b25c4510c38bd4ea28071388cafabadcdec1818b5c67b24faedcd",
+  "independent_visual_review": "SOFFIT-INDEPENDENT-QA.json",
+  "previous_qa": "qa/soffit-previous/NO-TEXT-QA.json"
 }
