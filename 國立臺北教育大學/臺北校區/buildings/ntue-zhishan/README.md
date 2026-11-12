@@ -7,7 +7,7 @@
 
 ### 照片材料近似彩色預覽
 
-官方正面／背側兩張實照支持前、後與窄窗側的磚色大面、原真窗背灰綠混合表觀及雨遮紅前緣／米灰底面。未知另一側、屋頂、雨遮寬頂及未證細部保持中性。只賦原完整面，不新增窗格、校名或設備；遮蔽區同牆材料延伸是近似，不是逐處實照。
+官方正面／背側兩張實照支持前、後與窄窗側的磚色大面、原真窗背灰綠混合表觀及雨遮紅前緣／米灰底面。本輪以三面同族磚牆為依據，將原 −X 素面及背部窄翼兩側垂直回折延伸同色，明列推估；屋頂、雨遮寬頂及未證細部保持中性。只賦原完整面，不新增窗格、校名或設備；遮蔽區同牆材料延伸是近似，不是逐處實照。
 
 | 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
@@ -55,4 +55,10 @@
 
 重跑：python validate_model.py；python check_contour_validity.py；python check_thin_features.py。
 
-外觀已覆核，本件為作者凍結版本；獨立QA通過後才可由唯一發布者發布。
+本輪為本機補色版本，尚未上傳或發布；原版本審核檔只適用原版本，不作本輪結果。
+
+## 外牆連續補色 v2
+
+[左側](appearance/left.png) · [右側](appearance/right.png) · [修補前左側](appearance-review-v2/before-left.png) · [修補前背側](appearance-review-v2/before-rear.png) · [幾何、逐面與材質檢核](appearance-review-v2/model-verification.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)
+
+沿用原磚色 #A56C59、roughness 0.86。只改原中性面的材質索引，不改尺寸、幾何、transform 或任何原已著色面。補色面是合理連續推估，非新增實測證據。七角度圖為實網格渲染，無圖內文字或stamp。第三方照片不收入公開包。原六張 previews 及代表圖選擇不變。

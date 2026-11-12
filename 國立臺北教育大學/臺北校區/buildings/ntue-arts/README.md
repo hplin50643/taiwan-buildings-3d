@@ -5,17 +5,19 @@
 
 臺北校區。自行使用Python實體布林建立的外觀／量體近似模型；沒有下載第三方3D模型，非施工圖、測繪或館內重建。
 
-### 僅中央入口構件的材料增補
+### 原入口構件延色與既有窗背補色
 
-本版只為原中央曲窗真背、前向白框／樓帶、四柱及獨立端帽前面補色。**兩側主翼磚／混凝土混合牆全保中性，並非全館配色恢復**；不以三角面斜界假畫照片磚色。
+新增2,520個原中性面：完整曲框／樓帶及入口底板、高帽側頂回折、既有窄窗與小窗真背。**兩側主翼磚／混凝土混材仍缺原面分界，1,360面保留中性；不是全館復色。** 原幾何、原彩面及色票不變。
 
 | 正斜視 | 來源角度 | 正立面 |
 | :---: | :---: | :---: |
-| ![入口限定彩色正斜視](appearance/front.png) | ![入口限定來源角度](appearance/source-angle.png) | ![入口限定正立面](appearance/elevation.png) |
-| 背向 | 上視 | 新外觀下載 |
-| ![入口限定背向](appearance/rear.png) | ![入口限定上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
+| ![新版正斜視](appearance/front.png) | ![新版來源角度](appearance/source-angle.png) | ![新版正立面](appearance/elevation.png) |
+| 左側 | 右側 | 背向 |
+| ![新版左側](appearance/left.png) | ![新版右側](appearance/right.png) | ![新版背向](appearance/rear.png) |
+| 上視 | 原配色正斜對照 | 原配色背向對照 |
+| ![新版上視](appearance/top.png) | ![同相機原配色正斜](appearance-review-v2/original-front.png) | ![同相機原配色背向](appearance-review-v2/original-rear.png) |
 
-[有據構件及未知範圍](APPEARANCE.md)。原六張模型圖保留檔案，README只展示新版五圖；原幾何及列印警告不變。
+[彩色3MF](appearance.3mf) · [Blender](appearance.blend) · [材色範圍與限制](APPEARANCE.md) · [逐面與材值驗證](appearance-review-v2/model-verification.json)。原六張預覽仍保留，沒有更換原STL或scene。
 
 ## 證據與範圍
 
@@ -45,4 +47,4 @@
 
 重跑：python validate_model.py；python check_contour_validity.py；python check_thin_features.py。
 
-外觀已覆核，本件為作者凍結版本；須經獨立幾何審核通過後由唯一發布者發布。
+本輪外觀與幾何保持結果以 [v2審核](appearance-review-v2/color-continuity-review.json) 為準；未進行新的實體試印。

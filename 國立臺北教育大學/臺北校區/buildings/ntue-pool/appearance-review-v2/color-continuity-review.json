@@ -1,0 +1,80 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T22:59:48.286920+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 835741,
+      "sha256": "e30745914d164149e791ce891bea9343ff7722d3fc2c8ce678e18df15f714f11",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 809203,
+      "sha256": "7e001e6b3f4ecfa223519dc4ce243379e111451f0b5cfebe3205886d75eef794",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 818337,
+      "sha256": "35dbc7c750721ae9641076484dc900c3465228530554e668cbcc32fae711ec87",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 834246,
+      "sha256": "7065baaae726e01dd6ff8a8b45d5fe0dd073ef2de3864e1ad6ddec8402b43f0c",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 842646,
+      "sha256": "ed6cf80a0d0b53c08945f85b8c94621a630d32b96a5c7668d0122a4f49c296ed",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 927479,
+      "sha256": "5f1ebec56899ee235f776c6edbc863df34583baa02ef37cb588778b7d82ad281",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 841899,
+      "sha256": "3ee2b6bae78123ce2a3aabac80e9c79898c1ac70b19fa6a8038de0a491fd4f29",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 836423,
+      "sha256": "8a0be95b2cf37135503814d2cf709d29ce95e2e83c78fa3290dcadfda827439f",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 810578,
+      "sha256": "e4e8955e0d9ac78cbee4b3fc425bab12810fac90e08dea21dc504c44bfe76841",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_images": 8,
+  "findings": [
+    "Front and source-angle preserve original ten brick piers, bluegray glazing and gray monumental frame. Gray canopy now has continuous full top and underside without diagonal color cuts.",
+    "Right view shows brick extending around the four existing window recesses; no new window grid, geometry or backing recolor.",
+    "Rear and left retain the explicitly unresolved large neutral wall proxies. Complete portal rear caps continue gray; those small component returns do not justify coloring the main rear block.",
+    "All five coarse screen bars remain neutral because their red/dark source material divisions are absent from the mesh. Main roof/parapet and artificial base remain neutral.",
+    "Original front/rear comparisons use exactly the same cameras, lighting and original material values, with only original face assignments restored."
+  ],
+  "known_limits": [
+    "Hidden small component returns are same-material inference; eight photographs are historical and not a 2026 survey.",
+    "Long rear proxy has two large triangles but real photos show window-rich facade and design text mentions greenwalls. It is intentionally not colored as one solid brick wall.",
+    "2800 original neutral faces remain. No new geometry, text, fixtures or colored textures.",
+    "No physical trial print or fresh full slicer/support validation."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

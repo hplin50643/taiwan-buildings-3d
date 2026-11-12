@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntue-air-gallery-entry-segment-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "07b66d8da42003d9a85528dbcdc5026cdb0e2a66c4ef3579e9dbb7bef811650b",
+    "east.png": "d1d7614e6e865b9c59ee9e8dddd12da710ab0081a1bd71ad73bcff505a439283",
+    "entry-detail.png": "7c9db3a0f2e021f9f2282d5d444817fce821e4990a0f99dadd76532c16943ef8",
+    "facade-detail.png": "90188b7692f3588f3fe87d917d88010c3bcfd792af3c91c2a81ecc13e1bf1cdf",
+    "front.png": "402057b00328cee2b1f0814662be74a57164dcbc94527bb08eacfb31e205a762",
+    "preview.png": "c3c24e7654bc94763a8668bf675216c733791f3ca18b67f7e8ce7745ca45b5bb",
+    "rear.png": "a66ae8ac7bca80f7fdd9e460d4f467c31622bf30638867a22e7d3478a353bd1f",
+    "roof-detail.png": "350ad4c309d25dfff472469f869a530e8ef837a0c79c7a154990aae0ae1b45bc",
+    "top.png": "bd3e953f7cf5c8f45fe0542172afd72c0a34fea7cd5a125332736bba04762067",
+    "west.png": "d23b66792cc09af58d7df32f347bb859030c554f39038d46d25fbc134b1ff358"
+  }
+}

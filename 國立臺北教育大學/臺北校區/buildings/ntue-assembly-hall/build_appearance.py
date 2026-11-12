@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.002;indices=[]
+EPS=.002;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def boxface(x,y,z,w,d,h):
@@ -80,12 +80,46 @@ for p in mesh.polygons:
  if bounds((-70,-22,20),(70,1.8,37)) and max(abs((q-np.array([0,-22,20]))@nn))<EPS and n@nn>.999:i=3
  if boxface(0,1.8,36.1,140,1.5,1.2):i=3
  if hi[2]<=3+EPS:i=0
+ original_indices.append(i);reason=None
+ # V2: only original neutral faces, all vertices in original construction
+ # supports. Real mixed broad facades stay neutral; no centroid color patches.
+ if i==0 and hi[2]>3+EPS:
+  rear_normal=np.array([0,11.5/22.2,1]);rear_normal/=np.linalg.norm(rear_normal)
+  if bounds((-70,1.8,25.5),(70,24,37)) and max(abs((q-np.array([0,24,25.5]))@rear_normal))<EPS and n@rear_normal>.999:
+   i=3;reason='inferred_continuous_original_rear_roof_tile_slope'
+  # The rear broad exterior plane has no observed contradictory material
+  # evidence. Extend the original front brick dominant-family proxy over the
+  # WHOLE original rear exterior support, as requested; unseen trim is not claimed.
+  if plane(1,23) and n[1]>.99 and bounds((-69,23,3),(69,23,23.7)):
+   i=1;reason='inferred_complete_original_rear_wall_brick_family'
+  if boxface(0,23,23.7,140,2.5,1.5):
+   i=2;reason='inferred_original_rear_cornice_same_stone_family'
+  for side in [-1,1]:
+   xx=side*69.3
+   for yy in [-21,-5,17.5,24]:
+    if boxface(xx+side*1.1,yy,15.5,3.5,3.3,1.7):
+     i=2;reason='source_supported_existing_side_buttress_stone_band'
+   # Existing end-window back planes are opaque door/window/frame/shadow
+   # proxies. Do not recolor reveals whose real finish is mixed or uncertain.
+   for yy,hh in [(-1,24),(6.5,24),(14,20.5)]:
+    shape=edges(archpoly(yy,5.5,4.4,hh))
+    if plane(0,side*67.2) and n[0]*side>.99 and inside(q[:,[1,2]],shape) and bounds((min(side*67.2,side*70.35),yy-2.2,5.5),(max(side*67.2,side*70.35),yy+2.2,5.5+hh)):
+     i=4;reason='source_supported_existing_side_arch_window_opaque_back'
+   for yy in [-8,20.5]:
+    for zz,hh in [(5.5,11),(20,6.3)]:
+     if plane(0,side*67.1) and n[0]*side>.99 and bounds((min(side*67.1,side*70.35),yy-2.05,zz),(max(side*67.1,side*70.35),yy+2.05,zz+hh)):
+      i=4;reason='source_supported_existing_side_rectangular_window_opaque_back'
+  for xx in xs:
+   shape=edges(archpoly(xx,5.5,5.8,16))
+   if plane(1,20.2) and n[1]>.99 and inside(qq,shape) and bounds((xx-2.9,20.2,5.5),(xx+2.9,20.2,21.5)):
+    i=4;reason='inferred_existing_rear_arch_window_opaque_back'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-bounded-material-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -115,9 +149,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; true open arcade remains open; dark material only on actual existing door and window backing faces','Official disaster-plan PDF physical71 two exterior photos and72 plan personally viewed; only exterior color used, no interior reconstruction.2023-10-25 document date and PDF metadata not capture dates. Four Commons pages returned403 stopped, no pixels or2026EXIF freshly verified. Original front arcade wall,14 independent original arch_trim rings, plinths/frontcornice/steps and only front roof slope plus ridge supported. True original24segment arch ring outer-minus-inner polygon and exact supporting planes, no new geometry. Door/window back y=-14 mixed opaque shade, original backing wall y=-15 neutral and open corridor never filled. Rear high windows/wall/roof slope and both gable ends unknownneutral, model-end source mapping unverified. No brick joints tiles signs plants glazing or topology edits; original printQA and geometry limitations retained','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-bounded-material-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; true open arcade remains open; dark material only on actual existing door and window backing faces','Original front colors retained. V2 actual corridor and both end-entry photos show mixed pale/grey/brick surfaces. Broad end walls, buttress bodies and corridor backs remain neutral because original triangles lack real finish boundaries. Whole rear exterior support follows original front dominant brick-family approximation; unseen trim not reconstructed. Existing stone bands, rear cornice, side/rear window opaque backs and whole rear roof original slope receive same-building family continuity. Side-window family partly supported; whole rear exterior wall, rear window and roof finish inferred, no fresh complete rear pixels. No new geometry, windows, texture, letters, fake details or diagonal centroid patches. Source photography excluded','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((170,-250,140),(0,0,17),220),'rear':((-180,250,140),(0,0,17),220),'elevation':((0,-300,17),(0,0,17),220),'source-angle':((220,-230,100),(0,0,17),220),'top':((0,0,400),(0,0,17),220)}
+views={'front':((170,-250,140),(0,0,17),220),'rear':((-180,250,140),(0,0,17),220),'elevation':((0,-300,17),(0,0,17),220),'source-angle':((220,-230,100),(0,0,17),220),'left':((-300,0,100),(0,0,17),220),'right':((300,0,100),(0,0,17),220),'top':((0,0,400),(0,0,17),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

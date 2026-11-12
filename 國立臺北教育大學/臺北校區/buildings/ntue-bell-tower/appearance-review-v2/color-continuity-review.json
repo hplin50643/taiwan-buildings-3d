@@ -1,0 +1,80 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T21:38:07.969136+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 882020,
+      "sha256": "659f7a5bcf8ee48678a21a064edac9bf42526ad5d5a109f47832eccae0be5fb3",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 873045,
+      "sha256": "d4972077a12a02a0cb6d771ada956439143c84feaf15a9b9d85a418bfe230dc4",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 821189,
+      "sha256": "71884839a4e7f058976a629e34af3c99188c4b0c26ea69b582763bfe7971608e",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 888027,
+      "sha256": "bb9415368c602b1b460dcd16009864a13516e83c9582a3b7d359b8a68be76969",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 849411,
+      "sha256": "d4000b15d1aee31693ab792f5f348a761582947a8fcd0f5531acef663b810f74",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 851234,
+      "sha256": "af67a62b71aab158bd31eca8274132a57f8b965ca81e02ebbb9eb0f82ac55b24",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 923368,
+      "sha256": "e703f2bb2c0c6c277cfc63a91f03640c8b0b4900005aadc80b22c624b8a5de6a",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 881644,
+      "sha256": "cc7bbbb094e770706de2e86366b1892006b197ac8e79073e8c04cb325608ac54",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 851341,
+      "sha256": "24493c9db7b3d972cce15e077cd687d224c1229fa8a1cab4d8cac5426ba090e8",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_images": 9,
+  "findings": [
+    "Revised front/source angle retain original brick, gray arch frames, pale clocks and historical dark bell. New opposite walls now continue the same family without large neutral outer wall panels.",
+    "Revised rear/left/right show consistent existing wall/gable/frame colors; no centroid-created diagonal color islands or arbitrary horizontal waist bands.",
+    "Top view and elevations keep crossing roof slopes separate from vertical brick gables. Existing ridge knobs and horizontal/inner surfaces remain neutral.",
+    "Four-way lower and upper arch openings remain genuinely open. No added clock hands/numbers, glazing, letters or geometry.",
+    "Both original comparisons show the prior blank side/rear surfaces under exactly the revised camera/light/render settings; numerical camera equality recorded separately."
+  ],
+  "known_limits": [
+    "Multi-angle photographs support material families; model coordinate mapping and unseen fragments remain inferred, not surveyed geolocation.",
+    "Original simplified geometry and missing mixed-material horizontal boundaries remain. Colors do not imply fine reconstruction accuracy.",
+    "2298 unknown or distinct roof/knob/inner/horizontal/artificial faces remain neutral. Source capture dates unverified; no 2026 condition guarantee.",
+    "No physical trial print or fresh full slicing/support validation."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

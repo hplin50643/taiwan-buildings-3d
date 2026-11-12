@@ -1,0 +1,126 @@
+{
+  "status": "reviewed",
+  "checked_at": "2026-11-11T21:13:18.330399+00:00",
+  "all_nine_images_personally_viewed": true,
+  "render_engine": "CYCLES",
+  "device": "CPU",
+  "samples": 96,
+  "seed": 0,
+  "denoising": false,
+  "threads": 1,
+  "resolution": [
+    900,
+    800
+  ],
+  "no_text_objects_or_render_stamp": true,
+  "no_png_text_metadata": true,
+  "no_added_geometry_or_window_patterns": true,
+  "same_camera_comparisons": [
+    {
+      "view": "original-front",
+      "camera_location": [
+        170.0,
+        -250.0,
+        140.0
+      ],
+      "camera_rotation_euler": [
+        1.1844006776809692,
+        3.997002551159312e-08,
+        0.5971766710281372
+      ],
+      "ortho_scale": 190.15869140625,
+      "target": [
+        0,
+        0,
+        17
+      ],
+      "same_camera_as": "front"
+    },
+    {
+      "view": "original-rear",
+      "camera_location": [
+        -180.0,
+        250.0,
+        140.0
+      ],
+      "camera_rotation_euler": [
+        1.1909152269363403,
+        -1.502859561242076e-07,
+        -2.5175697803497314
+      ],
+      "ortho_scale": 189.14724731445312,
+      "target": [
+        0,
+        0,
+        17
+      ],
+      "same_camera_as": "rear"
+    }
+  ],
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 810985,
+      "sha256": "fffe694b7258371f5f2528049cb1760afc945bcdf8e8e4ff958cf0733a770986",
+      "personally_viewed": true,
+      "review": "Original red arcade and grey arch rings/roof unchanged. Side window backs and stone waist bands use existing palette. Broad gable neutral is deliberate due missing true stone-base and cap boundaries, not a red diagonal patch."
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 811263,
+      "sha256": "9c163dbebe1af955d14af05d5e52f036bd2af644be8981fb8774970e70590f23",
+      "personally_viewed": true,
+      "review": "Rear slope has continuous original tile-family color, with no center-selected diagonal leftovers. Dark original tall-arch backs are opaque proxies; complete original rear outer wall uses inferred brick-family proxy while arch returns remain neutral."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 774468,
+      "sha256": "b2ff7bd3ecfd099a1847c31c0951503b45672e2d99f05f750193e68f055eb965",
+      "personally_viewed": true,
+      "review": "Original seven paired arches and color assignments intact; actual open corridor remains open with no infill or decorative geometry."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 810796,
+      "sha256": "bd1b8ca4d85bb1e701481823e4e2644e713209f8830c4f41b91ebd278a535aad",
+      "personally_viewed": true,
+      "review": "Lower front-oblique angle keeps original arcade depth and original front materials. End wall remains neutral without invented base stripe."
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 866844,
+      "sha256": "81a3661f38905a894c1dc8fa94eb7ce650796fbeafcf219aebe6fa665f8b2c56",
+      "personally_viewed": true,
+      "review": "Existing arch and rectangular recess backs are colored, stone bands are complete original boxes; gable and buttress bodies retained neutral due true unresolved mixed finish boundaries."
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 862583,
+      "sha256": "aa54629f008de7567e8463290c94699918db45ae206bd207e55d6d1f363c5dd4",
+      "personally_viewed": true,
+      "review": "Opposite original end retains its different platform and original geometry. Complete original supports colored without fake new windows or materials split across triangles."
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 777298,
+      "sha256": "260fa36532da62ccbdd069f3af09a814d7ca114320a5da78fd60ac76680e2ff1",
+      "personally_viewed": true,
+      "review": "Two original roof slopes now have same original tile-family material. Neutral side gable caps and artificial base remain; roof ridge and asymmetric footprint unchanged."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 810842,
+      "sha256": "a3fcc2b4ec9858b96b4d0ae02eed103d7cd5c49407c82c68f00b125f57979dd6",
+      "personally_viewed": true,
+      "review": "Same camera, lighting and palette; only original indices restored. Original neutral window back and stone-band assignments visible as comparison."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 798587,
+      "sha256": "01d01e4a7044629b987a0076c6f09df3e3dbf1172d0aef08eff9544cde3f1cdf",
+      "personally_viewed": true,
+      "review": "Same camera, lighting and palette; only original indices restored. Original neutral rear wall, roof, cornice and aperture backs show exact limited repair coverage."
+    }
+  ],
+  "limitations": "Not complete facade recoloring. Significant actual end/corridor mixed finishes lack original boundaries and broad walls remain neutral. Rear wall/roof/window family finish inferred, no new complete rear image. Original scale/geometry and no physical print test retained."
+}

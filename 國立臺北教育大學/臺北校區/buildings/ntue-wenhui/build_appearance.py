@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.003;indices=[]
+EPS=.003;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 for p in mesh.polygons:
@@ -36,12 +36,50 @@ for p in mesh.polygons:
   if any(bounds((x-.6,-64.2,5),(x+.6,-64.2,40.8)) for x in [-8,-1,6]) or any(bounds((-12.75,-64.2,z),(12.75,-64.2,z+1.2)) for z in [17,24,31,38]):i=4
  if bounds((-17.5,-69.5,20.5),(17.5,-61.5,22.1)):
   if (plane(2,22.1) and n[2]>.999) or (plane(1,-69.5) and n[1]<-.999) or (abs(n[0])>.999 and any(plane(0,t) for t in [-17.5,17.5])):i=5
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# color-v2: only complete original entrance component supports; no centroid selection.
+# The official front photo establishes gray stone, dark mullion and green canopy
+# families. Hidden return finishes are a continuity inference, not a measurement.
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0);i=0;reason=None
+ # Complete horizontal sill and head planes within the existing gray entry recess.
+ if bounds((-12,-64.5,4),(12,-62.1,40)) and ((plane(2,4) and n[2]>.999) or (plane(2,40) and n[2]<-.999)):
+  i=2;reason='gray_entrance_complete_sill_and_head'
+ # Gray projecting frame top; separate from the neutral main roof coping.
+ if plane(2,44.8) and n[2]>.999 and bounds((-15.75,-64.5,44.8),(15.75,-60.25,44.8)):
+  i=2;reason='gray_entrance_frame_top'
+ # Existing dark frames: every complete face within one original bar prism.
+ # The original colored front is preserved. All side/end supports remain on
+ # original boundary planes; no glass or adjacent stone support is captured.
+ for x in [-8,-1,6]:
+  if bounds((x-.6,-64.2,5),(x+.6,-62.1,40)) and ((abs(n[0])>.999 and any(plane(0,t) for t in [x-.6,x+.6])) or (abs(n[2])>.999 and any(plane(2,t) for t in [5,40]))):
+   i=4;reason='dark_original_vertical_mullion_returns'
+ for z in [17,24,31,38]:
+  if bounds((-12,-64.2,z),(12,-62.1,z+1.2)) and abs(n[2])>.999 and any(plane(2,t) for t in [z,z+1.2]):
+   i=4;reason='dark_original_horizontal_mullion_returns'
+ # Complete canopy solid exposed underside and rear/cutout end faces.
+ # Original front, top and two outer end surfaces are already green.
+ if bounds((-17.5,-69.5,20.5),(17.5,-61.5,22.1)) and ((plane(2,20.5) and n[2]<-.999) or (n[1]>.999 and any(plane(1,t) for t in [-65.9,-61.5])) or (abs(n[0])>.999 and any(plane(0,t) for t in [-12,12]))):
+  i=5;reason='green_canopy_complete_soffit_and_rear_returns'
+ # The twelve existing side-window recess backs are complete original surfaces.
+ # Official side photo confirms windows with grilles/AC; use the unchanged
+ # opaque mixed bluegray proxy, not a claim of pure exposed glass. Opposite
+ # side uses the original repeated-window interpretation. Jambs stay neutral.
+ for side in [-1,1]:
+  for y in [-42,-16,10]:
+   x=side*(40.05 if y==-42 else 33.05)
+   for z in [8,29]:
+    if plane(0,x) and n[0]*side>.999 and bounds((x,y-5,z),(x,y+5,z+10)):
+     i=3;reason='side_window_complete_opaque_mixed_glazing_proxy'
+ if reason:
+  p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'basis':'All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values.'}
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry/colors preserved; full entry stone, frame and canopy returns inferred; mixed side walls and unknown rear surfaces remain neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-complete-entry-returns'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -56,6 +94,7 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -71,15 +110,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Wenhui front facade and original entry components only, not whole-building restoration','Official NTUE PDF page74 front and side photographs, capture dates unknown. Front plane pink tile; existing granite frame front and vertical reveal/outer side faces gray; actual recess backs opaque mixed bluegray glass approximation, no reflected objects painted. Original mullion fronts darkgray. Existing canopy front, ends and top green; underside neutral. All long side walls, rear, roofs, parapets, base and uncertain unseen surfaces neutral. Side pink/olive transitions lack original material boundaries, deliberately not colored. No new geometry, lettering, windows, glass divisions, AC or source-image textures. No2026 current-condition claim','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-complete-entry-returns','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Wenhui original colored front preserved. Existing twelve side-window backs use unchanged opaque mixed bluegray proxy; photo shows grilles/AC, not pure measured glass; opposite side is repeated-component inference. Extend gray entry sill/head/frame top, dark original mullion returns, and green canopy soffit/back/end returns across complete original component supports. Hidden finishes are continuity inference from official PDF page74, not a direct survey. Pink and olive side transitions lack matching topology, so all main side walls, side window jambs, rear, terraces, main roofs/coping and artificial base remain neutral. Extra official map/scenery, Commons and web research found no verified rear photograph; official VR endpoints unavailable. Photograph dates unknown; no 2026-condition claim. No geometry, lettering, windows, AC or photo textures added','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-220,-300,165),(0,0,24),200),'rear':((220,300,165),(0,0,24),200),'elevation':((0,-350,40),(0,0,24),200),'source-angle':((180,-300,110),(0,0,24),200),'top':((0,0,380),(0,0,24),200)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-220,-300,165),(0,0,24),200),'rear':((220,300,165),(0,0,24),200),'elevation':((0,-350,40),(0,0,24),200),'source-angle':((180,-300,110),(0,0,24),200),'left':((-320,0,150),(0,0,24),200),'right':((320,0,150),(0,0,24),200),'top':((0,0,380),(0,0,24),200)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -88,4 +128,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

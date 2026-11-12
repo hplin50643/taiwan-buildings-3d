@@ -1,0 +1,2939 @@
+{
+  "status": "passed",
+  "changed_faces": 98,
+  "changed_family_counts": {
+    "brick_raised_namewall_complete_end_return": 8,
+    "gray_namewall_top_course_complete_end_return": 4,
+    "gray_cornice_complete_return_top_soffit": 54,
+    "gray_arch_surround_float32_sliver_completion": 32
+  },
+  "complete_other_component_supports": {
+    "all_faces_match_family": true,
+    "whole_triangle_vertex_test": true,
+    "samples_per_face": 28
+  },
+  "ring_precision_mm2": {
+    "tolerance": 1e-05,
+    "observed_max_excess": 3.12920600062007e-06,
+    "explanation": "Existing float32 ring coordinates have micrometric numerical overlap; no physical mixed-material face admitted. Original brick-stone boundary triangles are outside this support and remain untouched."
+  },
+  "changed_face_evidence": [
+    {
+      "face": 240,
+      "family": "brick_raised_namewall_complete_end_return",
+      "old_material": 0,
+      "new_material": 1,
+      "vertices": [
+        [
+          -47.0,
+          -13.0,
+          59.0
+        ],
+        [
+          -47.0,
+          -13.0,
+          68.0
+        ],
+        [
+          -47.0,
+          -12.699999809265137,
+          68.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 241,
+      "family": "brick_raised_namewall_complete_end_return",
+      "old_material": 0,
+      "new_material": 1,
+      "vertices": [
+        [
+          -47.0,
+          -13.0,
+          59.0
+        ],
+        [
+          -47.0,
+          -12.699999809265137,
+          68.0
+        ],
+        [
+          -47.0,
+          13.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 242,
+      "family": "gray_namewall_top_course_complete_end_return",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -47.0,
+          -12.699999809265137,
+          68.0
+        ],
+        [
+          -47.0,
+          -12.699999809265137,
+          69.0
+        ],
+        [
+          -47.0,
+          12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 244,
+      "family": "brick_raised_namewall_complete_end_return",
+      "old_material": 0,
+      "new_material": 1,
+      "vertices": [
+        [
+          -47.0,
+          13.0,
+          59.0
+        ],
+        [
+          -47.0,
+          -12.699999809265137,
+          68.0
+        ],
+        [
+          -47.0,
+          12.699999809265137,
+          68.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 245,
+      "family": "gray_namewall_top_course_complete_end_return",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -47.0,
+          12.699999809265137,
+          68.0
+        ],
+        [
+          -47.0,
+          -12.699999809265137,
+          68.0
+        ],
+        [
+          -47.0,
+          12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 246,
+      "family": "brick_raised_namewall_complete_end_return",
+      "old_material": 0,
+      "new_material": 1,
+      "vertices": [
+        [
+          -47.0,
+          13.0,
+          59.0
+        ],
+        [
+          -47.0,
+          12.699999809265137,
+          68.0
+        ],
+        [
+          -47.0,
+          13.0,
+          68.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 249,
+      "family": "brick_raised_namewall_complete_end_return",
+      "old_material": 0,
+      "new_material": 1,
+      "vertices": [
+        [
+          47.0,
+          -13.0,
+          59.0
+        ],
+        [
+          47.0,
+          -12.699999809265137,
+          68.0
+        ],
+        [
+          47.0,
+          -13.0,
+          68.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 250,
+      "family": "brick_raised_namewall_complete_end_return",
+      "old_material": 0,
+      "new_material": 1,
+      "vertices": [
+        [
+          47.0,
+          -13.0,
+          59.0
+        ],
+        [
+          47.0,
+          12.699999809265137,
+          68.0
+        ],
+        [
+          47.0,
+          -12.699999809265137,
+          68.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 251,
+      "family": "gray_namewall_top_course_complete_end_return",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          47.0,
+          -12.699999809265137,
+          68.0
+        ],
+        [
+          47.0,
+          12.699999809265137,
+          68.0
+        ],
+        [
+          47.0,
+          -12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 253,
+      "family": "brick_raised_namewall_complete_end_return",
+      "old_material": 0,
+      "new_material": 1,
+      "vertices": [
+        [
+          47.0,
+          -13.0,
+          59.0
+        ],
+        [
+          47.0,
+          13.0,
+          59.0
+        ],
+        [
+          47.0,
+          12.699999809265137,
+          68.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 254,
+      "family": "gray_namewall_top_course_complete_end_return",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          47.0,
+          12.699999809265137,
+          68.0
+        ],
+        [
+          47.0,
+          12.699999809265137,
+          69.0
+        ],
+        [
+          47.0,
+          -12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 255,
+      "family": "brick_raised_namewall_complete_end_return",
+      "old_material": 0,
+      "new_material": 1,
+      "vertices": [
+        [
+          47.0,
+          13.0,
+          59.0
+        ],
+        [
+          47.0,
+          13.0,
+          68.0
+        ],
+        [
+          47.0,
+          12.699999809265137,
+          68.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 257,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          -14.0,
+          57.0
+        ],
+        [
+          -70.0,
+          -13.0,
+          57.0
+        ],
+        [
+          -69.5,
+          -14.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 258,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -70.0,
+          -13.0,
+          57.0
+        ],
+        [
+          -69.5,
+          -13.0,
+          57.0
+        ],
+        [
+          -69.5,
+          -14.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 261,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          -14.0,
+          57.0
+        ],
+        [
+          -70.0,
+          13.0,
+          57.0
+        ],
+        [
+          -70.0,
+          -13.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 262,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          -14.0,
+          57.0
+        ],
+        [
+          -71.0,
+          -14.0,
+          59.0
+        ],
+        [
+          -71.0,
+          14.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 263,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          -14.0,
+          59.0
+        ],
+        [
+          -47.0,
+          -13.0,
+          59.0
+        ],
+        [
+          -47.0,
+          13.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 265,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          48.5,
+          -13.0,
+          57.0
+        ],
+        [
+          -48.5,
+          -14.0,
+          57.0
+        ],
+        [
+          -48.5,
+          -13.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 267,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          -14.0,
+          59.0
+        ],
+        [
+          71.0,
+          -14.0,
+          59.0
+        ],
+        [
+          -47.0,
+          -13.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 268,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          -14.0,
+          57.0
+        ],
+        [
+          -71.0,
+          14.0,
+          57.0
+        ],
+        [
+          -70.0,
+          13.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 269,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          -14.0,
+          57.0
+        ],
+        [
+          -71.0,
+          14.0,
+          59.0
+        ],
+        [
+          -71.0,
+          14.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 270,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          -14.0,
+          59.0
+        ],
+        [
+          -47.0,
+          13.0,
+          59.0
+        ],
+        [
+          -71.0,
+          14.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 272,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -70.0,
+          13.0,
+          57.0
+        ],
+        [
+          -69.5,
+          14.0,
+          57.0
+        ],
+        [
+          -69.5,
+          13.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 273,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          14.0,
+          57.0
+        ],
+        [
+          -69.5,
+          14.0,
+          57.0
+        ],
+        [
+          -70.0,
+          13.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 276,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          14.0,
+          59.0
+        ],
+        [
+          -47.0,
+          13.0,
+          59.0
+        ],
+        [
+          47.0,
+          13.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 277,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.5,
+          13.0,
+          57.0
+        ],
+        [
+          -48.5,
+          14.0,
+          57.0
+        ],
+        [
+          48.5,
+          14.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 280,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.5,
+          -14.0,
+          57.0
+        ],
+        [
+          48.5,
+          -13.0,
+          57.0
+        ],
+        [
+          48.5,
+          -14.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 283,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -47.0,
+          -13.0,
+          59.0
+        ],
+        [
+          71.0,
+          -14.0,
+          59.0
+        ],
+        [
+          47.0,
+          -13.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 285,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          71.0,
+          -14.0,
+          57.0
+        ],
+        [
+          69.5,
+          -14.0,
+          57.0
+        ],
+        [
+          70.0,
+          -13.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 286,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          70.0,
+          -13.0,
+          57.0
+        ],
+        [
+          69.5,
+          -14.0,
+          57.0
+        ],
+        [
+          69.5,
+          -13.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 289,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          71.0,
+          -14.0,
+          59.0
+        ],
+        [
+          71.0,
+          14.0,
+          59.0
+        ],
+        [
+          47.0,
+          -13.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 290,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          71.0,
+          -14.0,
+          57.0
+        ],
+        [
+          70.0,
+          -13.0,
+          57.0
+        ],
+        [
+          71.0,
+          14.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 291,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          71.0,
+          -14.0,
+          57.0
+        ],
+        [
+          71.0,
+          14.0,
+          57.0
+        ],
+        [
+          71.0,
+          -14.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 292,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.5,
+          13.0,
+          57.0
+        ],
+        [
+          48.5,
+          14.0,
+          57.0
+        ],
+        [
+          48.5,
+          13.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 293,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -71.0,
+          14.0,
+          59.0
+        ],
+        [
+          47.0,
+          13.0,
+          59.0
+        ],
+        [
+          71.0,
+          14.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 296,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          47.0,
+          -13.0,
+          59.0
+        ],
+        [
+          71.0,
+          14.0,
+          59.0
+        ],
+        [
+          47.0,
+          13.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 297,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          70.0,
+          -13.0,
+          57.0
+        ],
+        [
+          70.0,
+          13.0,
+          57.0
+        ],
+        [
+          71.0,
+          14.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 298,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          71.0,
+          -14.0,
+          59.0
+        ],
+        [
+          71.0,
+          14.0,
+          57.0
+        ],
+        [
+          71.0,
+          14.0,
+          59.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 300,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          70.0,
+          13.0,
+          57.0
+        ],
+        [
+          69.5,
+          13.0,
+          57.0
+        ],
+        [
+          69.5,
+          14.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 301,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          70.0,
+          13.0,
+          57.0
+        ],
+        [
+          69.5,
+          14.0,
+          57.0
+        ],
+        [
+          71.0,
+          14.0,
+          57.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 306,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.0,
+          -14.0,
+          69.0
+        ],
+        [
+          -47.5,
+          -12.699999809265137,
+          69.0
+        ],
+        [
+          -47.5,
+          -14.0,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 307,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.0,
+          -14.0,
+          69.0
+        ],
+        [
+          -48.0,
+          14.0,
+          69.0
+        ],
+        [
+          -47.5,
+          -12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 308,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.0,
+          -14.0,
+          69.0
+        ],
+        [
+          -48.0,
+          -14.0,
+          71.0
+        ],
+        [
+          -48.0,
+          14.0,
+          71.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 309,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.0,
+          14.0,
+          69.0
+        ],
+        [
+          -47.0,
+          -12.699999809265137,
+          69.0
+        ],
+        [
+          -47.5,
+          -12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 311,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -47.5,
+          12.699999809265137,
+          69.0
+        ],
+        [
+          -47.0,
+          12.699999809265137,
+          69.0
+        ],
+        [
+          -47.0,
+          -12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 312,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.0,
+          14.0,
+          69.0
+        ],
+        [
+          -47.5,
+          12.699999809265137,
+          69.0
+        ],
+        [
+          -47.0,
+          -12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 313,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.0,
+          -14.0,
+          69.0
+        ],
+        [
+          -48.0,
+          14.0,
+          71.0
+        ],
+        [
+          -48.0,
+          14.0,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 314,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.0,
+          14.0,
+          69.0
+        ],
+        [
+          -47.5,
+          14.0,
+          69.0
+        ],
+        [
+          -47.5,
+          12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 321,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          48.0,
+          -14.0,
+          69.0
+        ],
+        [
+          47.5,
+          -14.0,
+          69.0
+        ],
+        [
+          47.5,
+          -12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 322,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          48.0,
+          -14.0,
+          69.0
+        ],
+        [
+          47.5,
+          -12.699999809265137,
+          69.0
+        ],
+        [
+          47.0,
+          12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 323,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          47.5,
+          -12.699999809265137,
+          69.0
+        ],
+        [
+          47.0,
+          -12.699999809265137,
+          69.0
+        ],
+        [
+          47.0,
+          12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 324,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          48.0,
+          -14.0,
+          69.0
+        ],
+        [
+          48.0,
+          14.0,
+          69.0
+        ],
+        [
+          48.0,
+          -14.0,
+          71.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 326,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          48.0,
+          -14.0,
+          69.0
+        ],
+        [
+          47.0,
+          12.699999809265137,
+          69.0
+        ],
+        [
+          47.5,
+          12.699999809265137,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 327,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          48.0,
+          -14.0,
+          69.0
+        ],
+        [
+          47.5,
+          12.699999809265137,
+          69.0
+        ],
+        [
+          48.0,
+          14.0,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 328,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          48.0,
+          -14.0,
+          71.0
+        ],
+        [
+          48.0,
+          14.0,
+          69.0
+        ],
+        [
+          48.0,
+          14.0,
+          71.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 329,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          48.0,
+          14.0,
+          69.0
+        ],
+        [
+          47.5,
+          12.699999809265137,
+          69.0
+        ],
+        [
+          47.5,
+          14.0,
+          69.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 333,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -49.0,
+          -14.0,
+          71.0
+        ],
+        [
+          -49.0,
+          14.0,
+          71.0
+        ],
+        [
+          -48.0,
+          -14.0,
+          71.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 334,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -49.0,
+          -14.0,
+          71.0
+        ],
+        [
+          -49.0,
+          -14.0,
+          73.0
+        ],
+        [
+          -49.0,
+          14.0,
+          73.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 336,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -49.0,
+          -14.0,
+          73.0
+        ],
+        [
+          49.0,
+          -14.0,
+          73.0
+        ],
+        [
+          -49.0,
+          14.0,
+          73.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 337,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -48.0,
+          -14.0,
+          71.0
+        ],
+        [
+          -49.0,
+          14.0,
+          71.0
+        ],
+        [
+          -48.0,
+          14.0,
+          71.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 338,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -49.0,
+          -14.0,
+          71.0
+        ],
+        [
+          -49.0,
+          14.0,
+          73.0
+        ],
+        [
+          -49.0,
+          14.0,
+          71.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 343,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          48.0,
+          -14.0,
+          71.0
+        ],
+        [
+          48.0,
+          14.0,
+          71.0
+        ],
+        [
+          49.0,
+          -14.0,
+          71.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 344,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          49.0,
+          -14.0,
+          71.0
+        ],
+        [
+          49.0,
+          14.0,
+          71.0
+        ],
+        [
+          49.0,
+          -14.0,
+          73.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 345,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -49.0,
+          14.0,
+          73.0
+        ],
+        [
+          49.0,
+          -14.0,
+          73.0
+        ],
+        [
+          49.0,
+          14.0,
+          73.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 347,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          49.0,
+          -14.0,
+          71.0
+        ],
+        [
+          48.0,
+          14.0,
+          71.0
+        ],
+        [
+          49.0,
+          14.0,
+          71.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 348,
+      "family": "gray_cornice_complete_return_top_soffit",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          49.0,
+          -14.0,
+          73.0
+        ],
+        [
+          49.0,
+          14.0,
+          71.0
+        ],
+        [
+          49.0,
+          14.0,
+          73.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": null
+    },
+    {
+      "face": 1620,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -32.153194427490234,
+          -14.199999809265137,
+          37.36730194091797
+        ],
+        [
+          -29.665149688720703,
+          -14.199999809265137,
+          36.6125602722168
+        ],
+        [
+          -28.64026641845703,
+          -14.199999809265137,
+          37.444149017333984
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.8148328470394247e-06
+    },
+    {
+      "face": 1622,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -32.153194427490234,
+          -14.199999809265137,
+          37.36730194091797
+        ],
+        [
+          -28.64026641845703,
+          -14.199999809265137,
+          37.444149017333984
+        ],
+        [
+          -27.33955955505371,
+          -14.199999809265137,
+          38.24256896972656
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.79208564774384e-06
+    },
+    {
+      "face": 1635,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -27.937379837036133,
+          -14.199999809265137,
+          40.44461441040039
+        ],
+        [
+          -21.920310974121094,
+          -14.199999809265137,
+          40.36396026611328
+        ],
+        [
+          -19.66619110107422,
+          -14.199999809265137,
+          40.95709228515625
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 2.870264286367181e-06
+    },
+    {
+      "face": 1640,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -25.97315216064453,
+          -14.199999809265137,
+          41.35896301269531
+        ],
+        [
+          -19.66619110107422,
+          -14.199999809265137,
+          40.95709228515625
+        ],
+        [
+          -17.22267723083496,
+          -14.199999809265137,
+          41.48322677612305
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 2.092604938275223e-06
+    },
+    {
+      "face": 1642,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -25.97315216064453,
+          -14.199999809265137,
+          41.35896301269531
+        ],
+        [
+          -17.22267723083496,
+          -14.199999809265137,
+          41.48322677612305
+        ],
+        [
+          -14.613298416137695,
+          -14.199999809265137,
+          41.93729019165039
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.3586895203365756e-06
+    },
+    {
+      "face": 1645,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -25.97315216064453,
+          -14.199999809265137,
+          41.35896301269531
+        ],
+        [
+          -14.613298416137695,
+          -14.199999809265137,
+          41.93729019165039
+        ],
+        [
+          -11.863186836242676,
+          -14.199999809265137,
+          42.31491470336914
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 3.1292042699773987e-06
+    },
+    {
+      "face": 1652,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -23.758787155151367,
+          -14.199999809265137,
+          42.20243835449219
+        ],
+        [
+          -6.047800064086914,
+          -14.199999809265137,
+          42.82706832885742
+        ],
+        [
+          -3.0385313034057617,
+          -14.199999809265137,
+          42.956661224365234
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.228470431241524e-06
+    },
+    {
+      "face": 1665,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -3.0385313034057617,
+          -14.199999809265137,
+          42.956661224365234
+        ],
+        [
+          0.0,
+          -14.199999809265137,
+          43.0
+        ],
+        [
+          -1.75,
+          -14.199999809265137,
+          43.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.999843923527232e-06
+    },
+    {
+      "face": 1687,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          0.0,
+          -14.199999809265137,
+          43.0
+        ],
+        [
+          3.0385313034057617,
+          -14.199999809265137,
+          42.956661224365234
+        ],
+        [
+          1.75,
+          -14.199999809265137,
+          43.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.9998439235367323e-06
+    },
+    {
+      "face": 1693,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          3.0385313034057617,
+          -14.199999809265137,
+          42.956661224365234
+        ],
+        [
+          6.047800064086914,
+          -14.199999809265137,
+          42.82706832885742
+        ],
+        [
+          18.667160034179688,
+          -14.199999809265137,
+          43.64504623413086
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.2285907196542515e-06
+    },
+    {
+      "face": 1707,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          11.863186836242676,
+          -14.199999809265137,
+          42.31491470336914
+        ],
+        [
+          14.613298416137695,
+          -14.199999809265137,
+          41.93729019165039
+        ],
+        [
+          21.315614700317383,
+          -14.199999809265137,
+          42.966922760009766
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 3.12920600062007e-06
+    },
+    {
+      "face": 1708,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          14.613298416137695,
+          -14.199999809265137,
+          41.93729019165039
+        ],
+        [
+          17.22267723083496,
+          -14.199999809265137,
+          41.48322677612305
+        ],
+        [
+          21.315614700317383,
+          -14.199999809265137,
+          42.966922760009766
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.3586943317737677e-06
+    },
+    {
+      "face": 1713,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          19.66619110107422,
+          -14.199999809265137,
+          40.95709228515625
+        ],
+        [
+          21.920310974121094,
+          -14.199999809265137,
+          40.36396026611328
+        ],
+        [
+          25.97315216064453,
+          -14.199999809265137,
+          41.35896301269531
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 2.8702683792234084e-06
+    },
+    {
+      "face": 1721,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          17.22267723083496,
+          -14.199999809265137,
+          41.48322677612305
+        ],
+        [
+          19.66619110107422,
+          -14.199999809265137,
+          40.95709228515625
+        ],
+        [
+          23.758787155151367,
+          -14.199999809265137,
+          42.20243835449219
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 2.0926020132816525e-06
+    },
+    {
+      "face": 1730,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          29.665149688720703,
+          -14.199999809265137,
+          36.6125602722168
+        ],
+        [
+          31.0423526763916,
+          -14.199999809265137,
+          38.43912887573242
+        ],
+        [
+          28.64026641845703,
+          -14.199999809265137,
+          37.444149017333984
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.8148324856686262e-06
+    },
+    {
+      "face": 1731,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          27.33955955505371,
+          -14.199999809265137,
+          38.24256896972656
+        ],
+        [
+          28.64026641845703,
+          -14.199999809265137,
+          37.444149017333984
+        ],
+        [
+          31.0423526763916,
+          -14.199999809265137,
+          38.43912887573242
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.7920865485019798e-06
+    },
+    {
+      "face": 1994,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -31.0423526763916,
+          14.199999809265137,
+          38.43912887573242
+        ],
+        [
+          -28.64026641845703,
+          14.199999809265137,
+          37.444149017333984
+        ],
+        [
+          -29.665149688720703,
+          14.199999809265137,
+          36.6125602722168
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.8148324925468967e-06
+    },
+    {
+      "face": 1996,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -31.0423526763916,
+          14.199999809265137,
+          38.43912887573242
+        ],
+        [
+          -27.33955955505371,
+          14.199999809265137,
+          38.24256896972656
+        ],
+        [
+          -28.64026641845703,
+          14.199999809265137,
+          37.444149017333984
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.7920865507383771e-06
+    },
+    {
+      "face": 2008,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -25.97315216064453,
+          14.199999809265137,
+          41.35896301269531
+        ],
+        [
+          -19.66619110107422,
+          14.199999809265137,
+          40.95709228515625
+        ],
+        [
+          -21.920310974121094,
+          14.199999809265137,
+          40.36396026611328
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 2.870268376679432e-06
+    },
+    {
+      "face": 2015,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -23.758787155151367,
+          14.199999809265137,
+          42.20243835449219
+        ],
+        [
+          -17.22267723083496,
+          14.199999809265137,
+          41.48322677612305
+        ],
+        [
+          -19.66619110107422,
+          14.199999809265137,
+          40.95709228515625
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 2.092602001679822e-06
+    },
+    {
+      "face": 2018,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -21.315614700317383,
+          14.199999809265137,
+          42.966922760009766
+        ],
+        [
+          -14.613298416137695,
+          14.199999809265137,
+          41.93729019165039
+        ],
+        [
+          -17.22267723083496,
+          14.199999809265137,
+          41.48322677612305
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.358694329147445e-06
+    },
+    {
+      "face": 2020,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -21.315614700317383,
+          14.199999809265137,
+          42.966922760009766
+        ],
+        [
+          -11.863186836242676,
+          14.199999809265137,
+          42.31491470336914
+        ],
+        [
+          -14.613298416137695,
+          14.199999809265137,
+          41.93729019165039
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 3.129205999832308e-06
+    },
+    {
+      "face": 2031,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -18.667160034179688,
+          14.199999809265137,
+          43.64504623413086
+        ],
+        [
+          -3.0385313034057617,
+          14.199999809265137,
+          42.956661224365234
+        ],
+        [
+          -6.047800064086914,
+          14.199999809265137,
+          42.82706832885742
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.2285907186113056e-06
+    },
+    {
+      "face": 2038,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          -3.0385313034057617,
+          14.199999809265137,
+          42.956661224365234
+        ],
+        [
+          -1.75,
+          14.199999809265137,
+          43.0
+        ],
+        [
+          0.0,
+          14.199999809265137,
+          43.0
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.999843923527232e-06
+    },
+    {
+      "face": 2060,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          0.0,
+          14.199999809265137,
+          43.0
+        ],
+        [
+          1.75,
+          14.199999809265137,
+          43.0
+        ],
+        [
+          3.0385313034057617,
+          14.199999809265137,
+          42.956661224365234
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.999843923541863e-06
+    },
+    {
+      "face": 2071,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          3.0385313034057617,
+          14.199999809265137,
+          42.956661224365234
+        ],
+        [
+          23.758787155151367,
+          14.199999809265137,
+          42.20243835449219
+        ],
+        [
+          6.047800064086914,
+          14.199999809265137,
+          42.82706832885742
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.2284704269097882e-06
+    },
+    {
+      "face": 2081,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          11.863186836242676,
+          14.199999809265137,
+          42.31491470336914
+        ],
+        [
+          25.97315216064453,
+          14.199999809265137,
+          41.35896301269531
+        ],
+        [
+          14.613298416137695,
+          14.199999809265137,
+          41.93729019165039
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 3.1292043261318155e-06
+    },
+    {
+      "face": 2086,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          19.66619110107422,
+          14.199999809265137,
+          40.95709228515625
+        ],
+        [
+          27.937379837036133,
+          14.199999809265137,
+          40.44461441040039
+        ],
+        [
+          21.920310974121094,
+          14.199999809265137,
+          40.36396026611328
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 2.870264287847649e-06
+    },
+    {
+      "face": 2095,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          14.613298416137695,
+          14.199999809265137,
+          41.93729019165039
+        ],
+        [
+          25.97315216064453,
+          14.199999809265137,
+          41.35896301269531
+        ],
+        [
+          17.22267723083496,
+          14.199999809265137,
+          41.48322677612305
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.3586894914283385e-06
+    },
+    {
+      "face": 2096,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          17.22267723083496,
+          14.199999809265137,
+          41.48322677612305
+        ],
+        [
+          25.97315216064453,
+          14.199999809265137,
+          41.35896301269531
+        ],
+        [
+          19.66619110107422,
+          14.199999809265137,
+          40.95709228515625
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 2.092604967611463e-06
+    },
+    {
+      "face": 2103,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          29.665149688720703,
+          14.199999809265137,
+          36.6125602722168
+        ],
+        [
+          28.64026641845703,
+          14.199999809265137,
+          37.444149017333984
+        ],
+        [
+          32.153194427490234,
+          14.199999809265137,
+          37.36730194091797
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.8148328455773906e-06
+    },
+    {
+      "face": 2104,
+      "family": "gray_arch_surround_float32_sliver_completion",
+      "old_material": 0,
+      "new_material": 2,
+      "vertices": [
+        [
+          27.33955955505371,
+          14.199999809265137,
+          38.24256896972656
+        ],
+        [
+          32.153194427490234,
+          14.199999809265137,
+          37.36730194091797
+        ],
+        [
+          28.64026641845703,
+          14.199999809265137,
+          37.444149017333984
+        ]
+      ],
+      "whole_triangle_support_pass": true,
+      "barycentric_samples_checked": 28,
+      "ring_outside_area_mm2": 1.792085641894924e-06
+    }
+  ],
+  "retained_neutral_total": 259,
+  "retained_neutral_groups": {
+    "mixed_front_rear": {
+      "count": 44,
+      "faces": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        80,
+        81,
+        83,
+        84,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        127,
+        128,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        192,
+        193,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        235,
+        236
+      ],
+      "bounds": [
+        [
+          -70.0,
+          -13.0,
+          3.0
+        ],
+        [
+          70.0,
+          13.0,
+          57.0
+        ]
+      ]
+    },
+    "mixed_outer_ends": {
+      "count": 4,
+      "faces": [
+        79,
+        126,
+        196,
+        199
+      ],
+      "bounds": [
+        [
+          -70.0,
+          -13.0,
+          16.0
+        ],
+        [
+          70.0,
+          13.0,
+          57.0
+        ]
+      ]
+    },
+    "pedestrian_jambs": {
+      "count": 4,
+      "faces": [
+        526,
+        529,
+        534,
+        537
+      ],
+      "bounds": [
+        [
+          -56.0,
+          -13.0,
+          3.0
+        ],
+        [
+          56.0,
+          13.0,
+          32.0
+        ]
+      ]
+    },
+    "pedestrian_soffits": {
+      "count": 4,
+      "faces": [
+        527,
+        530,
+        535,
+        538
+      ],
+      "bounds": [
+        [
+          -56.0,
+          -13.0,
+          32.0
+        ],
+        [
+          56.0,
+          13.0,
+          32.0
+        ]
+      ]
+    },
+    "central_portal_intrados": {
+      "count": 110,
+      "faces": [
+        354,
+        355,
+        356,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        397,
+        398,
+        399,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        439,
+        440,
+        441,
+        442,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        480,
+        481,
+        482,
+        483,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517
+      ],
+      "bounds": [
+        [
+          -30.790515899658203,
+          -13.0,
+          35.0
+        ],
+        [
+          30.790515899658203,
+          13.0,
+          43.0
+        ]
+      ]
+    },
+    "artificial_base": {
+      "count": 93,
+      "faces": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        350,
+        351,
+        352,
+        396,
+        434,
+        478,
+        479,
+        485,
+        486,
+        487,
+        523,
+        524,
+        525,
+        528,
+        531,
+        532,
+        533,
+        536,
+        539,
+        540,
+        541
+      ],
+      "bounds": [
+        [
+          -75.0,
+          -26.0,
+          0.0
+        ],
+        [
+          75.0,
+          26.0,
+          3.0
+        ]
+      ]
+    }
+  },
+  "limits": [
+    "Cornice tops and exact side-course return are inferred from continuous original components, not independently surveyed.",
+    "Official and visitor low angles show cream coffered ceilings and gray beams plus inner brick/stone jambs. Those material divisions are absent from the existing geometry, so broad portal interior faces remain neutral.",
+    "Large lower facade and end triangles span photographed brick/gray-tooth transitions. No centroid thresholds or geometry subdivision used."
+  ]
+}

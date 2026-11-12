@@ -5,9 +5,9 @@
 
 臺北校區，自行以Python實體布林建立的外觀近似模型。沒有下載第三方3D模型；不是測繪、施工圖或館內重建。
 
-### 磚柱、右端與入口限定補色
+### 原構件完整返面補色
 
-原十道磚柱、右端外牆、真窗背及灰入口框／花臺前面依官方照片補色。**一般正牆、混合遮陽條、側後屋頂與不明面保持中性，不是整館配色復原。**
+保留原十道磚柱、右端外牆、真窗背及灰入口框／花臺彩色面，再為64個完整原始三角面補色：右端四窗的磚色返面、入口灰框後端與頂板頂／底／後面、花臺右端。同構件未見部分明列延續推估。**五道混材遮陽、缺少真實窗／綠牆分界的大側背面、一般正牆與主屋頂仍中性，不是整館復原。**
 
 | 正斜視 | 右前斜視 | 正立面 |
 | :---: | :---: | :---: |
@@ -15,7 +15,9 @@
 | 背向 | 上視 | 外觀檔案 |
 | ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
 
-[來源與限制](APPEARANCE.md)。原七張模型圖仍保留檔案，README只展示新版；原幾何與列印警告不變。
+[左側](appearance/left.png) · [右側](appearance/right.png) · [原版同相機正斜視](appearance-review-v2/original-front.png) · [原版同相機背向](appearance-review-v2/original-rear.png)。七張新版與兩張原版對照皆為900×800無字真網格渲染。
+
+[來源與限制](APPEARANCE.md)。原七張模型圖仍保留檔案；原幾何與列印警告不變。
 
 ## 證據與範圍
 
@@ -53,4 +55,6 @@
 
 驗證命令：python validate_model.py；python check_contour_validity.py；python check_thin_features.py。三者須exit0且所有檢查為真才可凍結；獨立審核通過前不可發布。
 
-外觀已覆核，本件為作者凍結版本；須經獨立幾何審核通過後由唯一發布者發布。
+原appearance-review保留為前版歷史。本版以appearance-review-v2、appearance-freeze.json與模型SHA256SUMS綁定；校級checksum未改，待授權發布時整合。
+
+[逐點逐面驗證](appearance-review-v2/model-verification.json) · [完整面界審核](appearance-review-v2/boundary-continuity-audit.json) · [來源判讀](appearance-review-v2/source-register.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。

@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntue-student-center-all-views.jpg; caption/backing absent, original mesh/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "888d6b1f5940be208afd04859ca9ddebc23b0ae7f92a9d21d9730fb7dcce2bb6",
+    "east.png": "b6278c19f66d4e26fe4d8eafe7d43fe39190be4f2377a8dc2b854e6621629a71",
+    "entry-detail.png": "1b446ff6235caec8d8b6509f10166907c5158254468ae758cbea89c9440cf1fa",
+    "facade-detail.png": "80fc62718b85ac50df1fc2b43db2a819098080370a4550aa99fd0869ad907565",
+    "front.png": "2068c8fd144f76981fc8ebfc77385c5714b8d510396441c662aea4ca7e95763b",
+    "preview.png": "b280f6d32d7d54305e39629bcf84bbe2d6e9133c81ee076d744f2e2535dcf599",
+    "rear.png": "483d8a7c6971593664a81240c5346e6eafccf13c70d5978a60abd72809701c2a",
+    "roof-detail.png": "9858f58045cebeaa777455ade78b30ae82f7c5053b790a6282a6491edc1b19ae",
+    "top.png": "2cbab4f4417aa815eb85eada20d9f2a9bbce12f5ab437791cd9288a37dffbad0",
+    "west.png": "2c3a68f8541b4121bc77124bc8fcd35f6a9de6d401958c575f5b81460be8d8e3"
+  }
+}

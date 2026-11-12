@@ -5,9 +5,9 @@
 
 臺北校區。自行以公開照片和平面資料建立的外觀近似模型；不是下載第三方3D模型、測繪成果或建築施工圖。
 
-### 正面及入口限定補色
+### 正面保留、入口構件及側窗凹背補色（v2）
 
-正面粉色磁磚、原灰石入口框、玻璃真凹背、原窗格與綠雨棚依官方照片補色。**側面粉／橄欖色交界缺原始網格分界，側後屋頂與不明面留中性；不是整棟驗色完成。**
+保留原正面顏色與全部幾何，本版將192個原中性面延伸為同構件材質：入口灰石窗台／頂回折／框頂18面、原深灰窗格回折130面、綠雨棚底面及背面20面、12處原側窗完整凹背24面。隱藏回折色為相鄰構件連續性推估。**側牆粉／橄欖灰材質交界沒有對應網格邊界，側後牆、露台、主屋頂／壓頂及底座共500面仍留中性；不是整棟驗色完成。**
 
 | 正斜視 | 來源角度 | 正立面 |
 | :---: | :---: | :---: |
@@ -15,7 +15,9 @@
 | 背向 | 上視 | 外觀檔案 |
 | ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
 
-[來源與範圍](APPEARANCE.md)。原四張模型圖保留檔案、不再放於 README；原幾何及列印警告不變。
+[左側檢查](appearance/left.png) · [右側檢查](appearance/right.png) · [同相機原正面](appearance-review-v2/original-front.png) · [同相機原背面](appearance-review-v2/original-rear.png)
+
+[本版面域與外觀審核](appearance-review-v2/color-continuity-review.json)。[來源與範圍](APPEARANCE.md)。原四張模型圖保留檔案、不再放於 README；原幾何及列印警告不變。
 
 ## 範圍與來源時點
 
@@ -48,4 +50,4 @@
 
 驗證命令：python validate_model.py；python check_contour_validity.py；python check_thin_features.py。需先以 blender -b -t 2 -P render_preview.py 建立scene.blend。
 
-本件為作者凍結包，外觀已覆核；需獨立幾何審核通過後才可由指定發布者發布。
+本版逐點逐面、材質值與乾淨重建結果見 appearance-review-v2。原 appearance-review 作為 v1 歷史保留，不代表本版重測結果。發布狀態由實際遠端提交與讀回確認，不以本機凍結代替。

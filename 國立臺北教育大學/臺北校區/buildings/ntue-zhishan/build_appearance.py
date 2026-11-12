@@ -15,14 +15,14 @@ assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Official disaster-plan PDF photos support three original exterior faces; unknown fourth side/roof neutral.
-palette=[('Unknown unobserved surfaces neutral','#AAA79F',.86),('Observed brick exterior family','#A56C59',.86),('Opaque mixed window backing proxy','#82918D',.62),('Original canopy front rim red','#A9443D',.78),('Original canopy pale underside','#BBB9A9',.84),('Original entrance steps','#969A90',.86)]
+palette=[('Unknown unobserved surfaces neutral','#AAA79F',.86),('Observed brick exterior family','#A56C59',.86),('Opaque mixed window backing proxy','#82918D',.62),('Original canopy front rim red','#A9443D',.78),('Original canopy pale underside','#BBB9A9',.84),('Original entrance steps','#969A90',.86),('Inferred continuous brick exterior','#A56C59',.86)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-S=150/117.7;EPS=.003;indices=[]
+S=150/117.7;EPS=.003;indices=[];original_indices=[];changed_faces=[];change_regions={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def boxsurface(x,y,z,w,d,h):
@@ -71,12 +71,21 @@ for p in mesh.polygons:
  if plane(2,17) and n[2]<-.999 and canopy_inside():i=4
  for k in range(4):
   if boxsurface(15,-45+k*2,2.8,61,2.8,.65*(k+1)):i=5
+ original_indices.append(i)
+ # Material-only continuity on COMPLETE existing exterior faces; no cut planes.
+ region=None
+ if i==0:
+  if plane(0,-49) and n[0]<-.999 and bounds((-49,-30,2.8),(-49,42,116.8)):region='main_minus_x_exterior'
+  if plane(0,30) and n[0]<-.999 and bounds((30,42,14),(30,46.5,116.8)):region='rear_strip_minus_x_return'
+  if plane(0,48) and n[0]>.999 and bounds((48,42,14),(48,46.5,116.8)):region='rear_strip_plus_x_return'
+ if region:
+  i=6;changed_faces.append(p.index);change_regions[str(p.index)]=region
  p.material_index=i;indices.append(i)
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -106,9 +115,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original recessed entrance remains open; mixed window color only on actual cut backing planes, never on a filled portal','Official PDFphysical35 printed2-29 front and rear-side photos personally read, identity18-06 onphysical34 and groundplan37. Document2023-10-25/table2023-09-13 not capture dates and no2026 current-condition guarantee. Front -Y, slit side +X, rear +Y and projecting strip exterior +Y use observed brick family with locally tree-obscured continuity disclosed. Unseen -X, projection returns, roofs/parapet tops, window reveals and internal ceilings neutral. Opaque mixed glass/reflection/curtain/shadow proxy only on genuine original cut backs. Canopy six front polygon extrusion edges red, original underside pale; canopy top and back/side edges neutral. Original steps gray. No new mullions, letters, AC, trees or geometry. Classifier uses pre-scale primitives, original scale150/117.7 and mesh unchanged. Original printQA and support warnings unchanged','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_regions':change_regions,'limits':['V2 extends original brick family to existing main minus-X wall and two rear-strip vertical returns by material continuity. These are inferred, not directly verified photographs of those faces. All other original indices and materials preserved.','Photographic approximation, not calibrated real finish values','Original recessed entrance remains open; mixed window color only on actual cut backing planes, never on a filled portal','Official PDFphysical35 printed2-29 front and rear-side photos personally read, identity18-06 onphysical34 and groundplan37. Document2023-10-25/table2023-09-13 not capture dates and no2026 current-condition guarantee. Front -Y, slit side +X, rear +Y and projecting strip exterior +Y use observed brick family with locally tree-obscured continuity disclosed. V1 kept unseen -X and projection returns neutral; V2 replaces only the three named complete exterior surface groups with inferred brick. Roofs/parapet tops, window reveals and internal ceilings remain neutral. Opaque mixed glass/reflection/curtain/shadow proxy only on genuine original cut backs. Canopy six front polygon extrusion edges red, original underside pale; canopy top and back/side edges neutral. Original steps gray. No new mullions, letters, AC, trees or geometry. Classifier uses pre-scale primitives, original scale150/117.7 and mesh unchanged. Original printQA and support warnings unchanged','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-220,-270,200),(0,0,75),230),'rear':((220,270,200),(0,0,75),230),'elevation':((0,-350,75),(0,0,75),230),'source-angle':((250,-230,170),(0,0,75),230),'top':((0,0,450),(0,0,75),230)}
+views={'front':((-220,-270,200),(0,0,75),230),'rear':((220,270,200),(0,0,75),230),'elevation':((0,-350,75),(0,0,75),230),'source-angle':((250,-230,170),(0,0,75),230),'left':((-350,90,180),(0,0,75),230),'right':((350,-90,180),(0,0,75),230),'top':((0,0,450),(0,0,75),230)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

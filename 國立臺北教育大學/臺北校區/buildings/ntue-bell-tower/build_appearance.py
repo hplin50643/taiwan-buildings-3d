@@ -14,7 +14,7 @@ verts=[tuple(v.co) for v in mesh.vertices];faces=[tuple(p.vertices) for p in mes
 assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
-# Official document supports front arcade and front roof only.
+# Original palette values retained; additional multi-angle photos support same-building material families.
 palette=[('Unknown surfaces neutral','#AAA79F',.86),('Observed brick two adjacent walls','#A56553',.86),('Original stone supports','#A8ABA3',.86),('Original pale clock dials','#D0D1C4',.86),('Historical opaque bell','#343A34',.86),('Visible original step risers','#868C84',.86)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.003;indices=[]
+EPS=.003;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def edges(poly):
@@ -98,12 +98,50 @@ for p in mesh.polygons:
    if plane(1,-half) and n[1]<-.99 and bounds((-half,-half,z),(half,-half,z+h)):i=5
  q=originalq;n=originaln;lo=q.min(0);hi=q.max(0)
  if coneface(88,22,10,6,40) or coneface(86,3,11.5,10,40) or coneface(109,10,3,3,24):i=4
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# V2: preserve every original colored face. Reuse exact original support
+# polygons on all four rotations. No centroid-height classification.
+def support_family():
+ if plane(1,-42) and n[1]<-.99 and bounds((-42,-42,7.5),(42,-42,71.5)):return (1,'brick_lower_outer_wall_plane')
+ if plane(1,-33) and n[1]<-.99 and bounds((-33,-33,75.5),(33,-33,119.5)):return (1,'brick_upper_outer_wall_plane')
+ if plane(1,-35) and n[1]<-.99 and inside(q[:,[0,2]],gable):return (1,'brick_original_gable_face_not_roof_slope')
+ if ring(7.6,56,55,14,3,-42):return (2,'stone_original_lower_arch_ring')
+ if ring(76,46,36,10,2.2,-33):return (2,'stone_original_upper_arch_ring')
+ for x in [-36,36]:
+  if plane(1,-42.5) and n[1]<-.99 and bounds((x-6.5,-42.5,7.5),(x+6.5,-42.5,21.5)):return (2,'stone_original_outer_corner_foot_face')
+ for half,z,h in [(44,69.5,3.5),(47,72.5,3.5)]:
+  if plane(1,-half) and n[1]<-.99 and bounds((-half,-half,z),(half,-half,z+h)):return (2,'stone_original_vertical_cornice_fascia')
+ if surface_poly(wedge1,-36.25,-33.75) or surface_poly(wedge2,-36.25,-33.75):return (2,'stone_original_gable_edge_band_not_roof_slope')
+ if rim():return (2,'stone_original_clock_rim')
+ if plane(1,-35.2) and n[1]<-.99 and inside(q[:,[0,2]],edges(diskpoly(8.5))):return (3,'pale_original_clock_disc_face')
+ for half,z,h in [(51,2.8,1.7),(47.5,4.3,1.7),(43.5,5.8,2)]:
+  if plane(1,-half) and n[1]<-.99 and bounds((-half,-half,z),(half,-half,z+h)):return (5,'gray_original_step_vertical_riser')
+ return None
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ originalq=np.array([verts[j] for j in p.vertices]);originaln=np.array(p.normal)
+ for rotation in range(4):
+  if rotation==0:q=originalq.copy();n=originaln.copy()
+  elif rotation==1:q=np.column_stack((-originalq[:,1],originalq[:,0],originalq[:,2]));n=np.array([-originaln[1],originaln[0],originaln[2]])
+  elif rotation==2:q=originalq*np.array([-1,-1,1]);n=originaln*np.array([-1,-1,1])
+  else:q=np.column_stack((originalq[:,1],-originalq[:,0],originalq[:,2]));n=np.array([originaln[1],-originaln[0],originaln[2]])
+  lo=q.min(0);hi=q.max(0);result=support_family()
+  if result:
+   i,reason=result;p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'rotation_quarter_turns':rotation,'basis':'Multi-angle photos confirm common material family; exact model-facing assignment and unseen fragments are same-component continuity inference.'};break
+ # Full stone corner-block side returns: original block support planes only.
+ # A larger main-wall triangle crossing stone/brick boundaries is not captured.
+ if indices[p.index]==0:
+  q=originalq;n=originaln;lo=q.min(0);hi=q.max(0)
+  for x in [-36,36]:
+   for y in [-36,36]:
+    if bounds((x-6.5,y-6.5,7.5),(x+6.5,y+6.5,21.5)) and any(plane(k,t) and n[k]*sign>.99 for k,c in [(0,x),(1,y)] for sign,t in [(-1,c-6.5),(1,c+6.5)]):
+     i=2;indices[p.index]=i;p.material_index=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':'stone_original_corner_block_side_return','basis':'Continuous original stone prism; no horizontal band or new split.'}
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and colors preserved; multi-angle supported side/rear material families extended on complete original supports; unresolved roof/interior/base neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -133,15 +171,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Four-way openings remain genuinely open, not glass; historical bell is original fused geometry','Two official day/night and one listed visitor day photo personally read. Capture dates unknown; article2025date not freshly verified; night orange lighting not finish color. Two observed adjacent faces mapped to -Y/-X only illustrative not geographic. Original lower and upper brick walls, gable face planes, exact32segment surrounds and48facet dials/rims supported. Unseen opposite faces, large roof slopes, ridge balls, broad unsegmented step tops and interiors neutral. Front/left step risers only, no invented lower wall stone belt. Full original fused bell with40facet tapered body and24facet neck is historic-photo proxy, not2026 presence confirmation. No clock hands/numbers/tile/brick textures/new topology or filled portals. Original printQA and support warnings unchanged','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Four-way openings remain genuinely open, not glass; historical bell is original fused geometry','Original colored faces, palette, geometry and open portals preserved. New multi-angle GoGo photographs personally viewed with visitor day photo support brick walls and gables, gray stone frames and cornice fascia, pale clock faces and gray vertical step risers on other sides. Model rotations are illustrative, not georeferenced; unpictured fragments and complete prism side returns are declared same-component inference. Official image requests returned503; no claim to fresh reread. Source capture dates unverified and not2026 condition. Existing roof slopes, ridge balls, horizontal cornice/step surfaces and main portal interiors remain neutral; no new thin stone belt on unsplit wall, hands, numbers, tiles, fixtures or closed openings. Original fused historical bell unchanged; not current equipment guarantee','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-220,-260,195),(0,0,75),230),'rear':((220,260,195),(0,0,75),230),'elevation':((0,-320,75),(0,0,75),230),'source-angle':((-270,-180,180),(0,0,75),230),'top':((0,0,420),(0,0,75),230)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-220,-260,195),(0,0,75),230),'rear':((220,260,195),(0,0,75),230),'elevation':((0,-320,75),(0,0,75),230),'source-angle':((-270,-180,180),(0,0,75),230),'left':((-320,0,195),(0,0,75),230),'right':((320,0,195),(0,0,75),230),'top':((0,0,420),(0,0,75),230)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -150,4 +189,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

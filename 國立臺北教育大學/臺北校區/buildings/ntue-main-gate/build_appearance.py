@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.003;indices=[]
+EPS=.003;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def edges(poly):
@@ -86,12 +86,37 @@ for p in mesh.polygons:
     if cylinder(x+dx,y):i=2
  for x in [-64,64]:
   if boxsurface(x,0,3,13,28,13):i=2
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# Complete original component surfaces only. Preserve original colored faces.
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0);i=0;reason=None
+ for z,w in [(57,142),(69,96),(71,98)]:
+  if boxsurface(0,0,z,w,28,2):
+   i=2;reason='gray_cornice_complete_return_top_soffit'
+ for x in [-47,47]:
+  if plane(0,x) and n[0]*x>46.9:
+   if bounds((x,-13,59),(x,13,68)):
+    i=1;reason='brick_raised_namewall_complete_end_return'
+   elif bounds((x,-12.7,68),(x,12.7,69)):
+    i=2;reason='gray_namewall_top_course_complete_end_return'
+ # These exposed front/back faces belong only to original segment_trim.
+ # Float32 rounding formerly produced up to 3.13e-6 mm2 false overlap with
+ # the central opening and left 32 slivers neutral. Verify the whole profile,
+ # not face centroid. Tolerance is 1e-5 mm2, not a material-height threshold.
+ if ((plane(1,-14.2) and n[1]<-.999) or (plane(1,14.2) and n[1]>.999)) and bounds((-33.6,-14.2,3),(33.6,14.2,45.6)):
+  qq=q[:,[0,2]];oe=edges(segmentpoly(3,67.2,42.6,11.6));ie=edges(segmentpoly(2.8,62,40.2,9))
+  excess=max(0,area(qq)-area(clip(qq,oe)))+area(clip(qq,ie))
+  if inside(qq,oe) and excess<1e-5:
+   i=2;reason='gray_arch_surround_float32_sliver_completion'
+ if reason:
+  p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'basis':'Exact original support plane and whole-face bounds. Cornice hidden tops and namewall side stone course are same-component continuity inference; arch frame planar slivers have direct front/rear evidence.'}
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Exact original geometry and colored faces preserved; complete cornice and raised-wall returns inferred; mixed portal and wall surfaces neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-complete-component-returns'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -106,6 +131,7 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -121,15 +147,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original three portal openings and paired-column gaps remain genuinely open; no glazing inserted','One official low-angle photograph and two original-listed visitor rear photographs personally read. Dates unverified; Commons image403 not read. Only whole existing triangles on front/rear upper brick planes z>=34 and raised name wall colored. Lower outer mixed brick/stone-tooth walls, unsegmented pedestrian lintels, hidden cut interiors and model base neutral. Grey material on original32segment arch surrounds, keystone, stone courses, front/back vertical cornice fascias only (broad tops neutral), plinths/capitals and eight28facet columns is same-component approximation including unseen portions. No new tooth joints, glyphs, signs, lights or topology. Cross-period illustrative finish, not2026 condition, calibrated RGB or real survey. Original printQA warning unchanged','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-complete-component-returns','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original three portal openings and paired-column gaps remain genuinely open; no glazing inserted','Official low-angle, two visitor rear and fresh visitor low-angle photos personally read. Complete gray cornice tops/soffits/ends, raised namewall brick side returns and gray top-course side return, and original arch-surround planar float32 slivers colored. Unseen tops and exact side course continuity inferred. Broad lower front/rear triangles and outer side walls cross brick and stone-tooth finishes; portal intrados and pedestrian soffits lack cream coffer/gray beam divisions and jambs have brick/stone mixing. All stay neutral. No new geometry, glyphs, signs, coffers or decorations. Original colored faces and all material RGBA/roughness preserved. Capture dates not verified; not a2026 survey','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-175,-220,125),(0,0,36),210),'rear':((175,220,125),(0,0,36),210),'elevation':((0,-320,36),(0,0,36),210),'source-angle':((-240,-180,85),(0,0,36),210),'top':((0,0,360),(0,0,36),210)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-175,-220,125),(0,0,36),210),'rear':((175,220,125),(0,0,36),210),'elevation':((0,-320,36),(0,0,36),210),'source-angle':((-240,-180,85),(0,0,36),210),'left':((-320,0,125),(0,0,36),210),'right':((320,0,125),(0,0,36),210),'top':((0,0,360),(0,0,36),210)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -138,4 +165,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

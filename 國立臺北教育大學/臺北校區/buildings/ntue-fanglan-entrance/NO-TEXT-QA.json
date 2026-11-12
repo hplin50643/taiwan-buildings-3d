@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntue-fanglan-entrance-all-views.jpg; caption/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "e446a85652e28f968b77a4f6b664095fe7634e8c9d1225edbd4351945ee7dde1",
+    "east.png": "b8820cd80a233d3f6e998a7f17b812013df86774cdd8f6942b12b4ccd38f5874",
+    "entry-detail.png": "c71dfe22cc741af41cf57d54aff4cb8ea164a80ecc1e7fd9c25e7ddd751da2a2",
+    "facade-detail.png": "c3734aa53b1ffb10c5c809d10edfe32377a03f43efa7e50d4fe6c4451d528416",
+    "front.png": "6e487b82e9893a64fa1a4c4c0f29bf5629de7569d4ecaa00e71d8c24bda90585",
+    "preview.png": "e431fe8c1e9ae2cbf6f0f931d1a205de326d277e738211b0f1ac1c0d6df2a3a2",
+    "rear.png": "ceaf38ef8ce40c9a95f90f4fd9e330955b8896918d19f36555d54b0deaf31177",
+    "roof-detail.png": "10d11adcb5e6c0207d0560afb003cf51cae5a3c64e1cf23ba8a4cc0f8768521d",
+    "top.png": "1cde5fceba8a3779aa7929a7935e9dec4a329b40e8da5743dbcb0c89aa52cf0e",
+    "west.png": "caafc4a044ee91fcaa023d6b43829584c9e41f2ebb0380a5cd2b38cd4b655e55"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "revision": "color-v1",
+  "revision": "color-v2-complete-entry-returns",
   "geometry": {
     "vertices": "c58fbba5b40ba933fefc1cee75edf12e4f4d3c0a83d531876a0d857e6436035e",
     "faces": "7a5fb74160f101e670d270ffedbd6997f0a35324bdf3d8a430bded447005d158"
@@ -36,15 +36,7 @@
       "roughness": 0.8
     }
   ],
-  "face_counts": {
-    "0": 692,
-    "1": 4,
-    "2": 68,
-    "3": 46,
-    "4": 86,
-    "5": 16
-  },
-  "face_material_indices": [
+  "original_face_material_indices": [
     0,
     0,
     0,
@@ -958,10 +950,1895 @@
     0,
     0
   ],
+  "changed_faces": [
+    190,
+    201,
+    206,
+    218,
+    220,
+    224,
+    250,
+    252,
+    253,
+    255,
+    256,
+    257,
+    260,
+    271,
+    278,
+    279,
+    303,
+    304,
+    306,
+    307,
+    308,
+    309,
+    310,
+    312,
+    314,
+    315,
+    316,
+    318,
+    319,
+    321,
+    322,
+    324,
+    325,
+    327,
+    328,
+    330,
+    331,
+    333,
+    334,
+    336,
+    337,
+    339,
+    340,
+    342,
+    343,
+    345,
+    346,
+    347,
+    349,
+    350,
+    351,
+    353,
+    354,
+    356,
+    358,
+    359,
+    361,
+    362,
+    363,
+    365,
+    367,
+    368,
+    369,
+    371,
+    372,
+    374,
+    376,
+    377,
+    378,
+    379,
+    381,
+    382,
+    383,
+    385,
+    386,
+    388,
+    390,
+    391,
+    393,
+    394,
+    395,
+    397,
+    399,
+    400,
+    401,
+    403,
+    404,
+    406,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    415,
+    417,
+    419,
+    421,
+    425,
+    426,
+    427,
+    428,
+    431,
+    434,
+    437,
+    439,
+    440,
+    442,
+    443,
+    445,
+    447,
+    448,
+    449,
+    451,
+    455,
+    458,
+    461,
+    462,
+    464,
+    466,
+    467,
+    469,
+    470,
+    471,
+    473,
+    475,
+    477,
+    478,
+    479,
+    481,
+    485,
+    486,
+    489,
+    492,
+    494,
+    495,
+    497,
+    499,
+    500,
+    502,
+    503,
+    505,
+    507,
+    508,
+    509,
+    511,
+    515,
+    518,
+    521,
+    522,
+    524,
+    526,
+    527,
+    529,
+    531,
+    533,
+    535,
+    537,
+    538,
+    540,
+    543,
+    545,
+    548,
+    550,
+    553,
+    554,
+    556,
+    559,
+    563,
+    567,
+    573,
+    577,
+    584,
+    586,
+    594,
+    597,
+    603,
+    606,
+    613,
+    618,
+    620,
+    624,
+    630,
+    634,
+    642,
+    646,
+    652,
+    656,
+    661,
+    666,
+    671,
+    676
+  ],
+  "change_reasons": {
+    "190": {
+      "family": "gray_entrance_frame_top",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "201": {
+      "family": "gray_entrance_frame_top",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "206": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "218": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "220": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "224": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "250": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "252": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "253": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "255": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "256": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "257": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "260": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "271": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "278": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "279": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "303": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "304": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "306": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "307": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "308": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "309": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "310": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "312": {
+      "family": "gray_entrance_complete_sill_and_head",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "314": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "315": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "316": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "318": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "319": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "321": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "322": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "324": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "325": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "327": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "328": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "330": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "331": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "333": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "334": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "336": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "337": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "339": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "340": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "342": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "343": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "345": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "346": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "347": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "349": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "350": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "351": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "353": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "354": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "356": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "358": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "359": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "361": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "362": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "363": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "365": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "367": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "368": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "369": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "371": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "372": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "374": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "376": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "377": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "378": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "379": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "381": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "382": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "383": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "385": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "386": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "388": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "390": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "391": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "393": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "394": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "395": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "397": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "399": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "400": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "401": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "403": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "404": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "406": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "408": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "409": {
+      "family": "dark_original_vertical_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "410": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "411": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "412": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "413": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "415": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "417": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "419": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "421": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "425": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "426": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "427": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "428": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "431": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "434": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "437": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "439": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "440": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "442": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "443": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "445": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "447": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "448": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "449": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "451": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "455": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "458": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "461": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "462": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "464": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "466": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "467": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "469": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "470": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "471": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "473": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "475": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "477": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "478": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "479": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "481": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "485": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "486": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "489": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "492": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "494": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "495": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "497": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "499": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "500": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "502": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "503": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "505": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "507": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "508": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "509": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "511": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "515": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "518": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "521": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "522": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "524": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "526": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "527": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "529": {
+      "family": "dark_original_horizontal_mullion_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "531": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "533": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "535": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "537": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "538": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "540": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "543": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "545": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "548": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "550": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "553": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "554": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "556": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "559": {
+      "family": "green_canopy_complete_soffit_and_rear_returns",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "563": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "567": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "573": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "577": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "584": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "586": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "594": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "597": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "603": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "606": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "613": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "618": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "620": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "624": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "630": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "634": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "642": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "646": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "652": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "656": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "661": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "666": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "671": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    },
+    "676": {
+      "family": "side_window_complete_opaque_mixed_glazing_proxy",
+      "basis": "All three triangle vertices satisfy original component support boundaries. Same-component hidden-return finish inferred from observed adjacent material; no new faces or material values."
+    }
+  },
+  "face_counts": {
+    "0": 500,
+    "1": 4,
+    "2": 86,
+    "3": 70,
+    "5": 36,
+    "4": 216
+  },
+  "face_material_indices": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    2,
+    3,
+    3,
+    2,
+    3,
+    2,
+    2,
+    3,
+    2,
+    5,
+    2,
+    5,
+    2,
+    3,
+    3,
+    5,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    2,
+    2,
+    3,
+    2,
+    2,
+    3,
+    2,
+    2,
+    3,
+    3,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    3,
+    2,
+    2,
+    3,
+    2,
+    2,
+    2,
+    3,
+    3,
+    2,
+    3,
+    3,
+    3,
+    2,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    5,
+    3,
+    3,
+    2,
+    3,
+    3,
+    2,
+    5,
+    5,
+    2,
+    3,
+    2,
+    2,
+    2,
+    3,
+    2,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    3,
+    2,
+    2,
+    2,
+    2,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    2,
+    2,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    3,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
   "limits": [
     "Photographic approximation, not calibrated real finish values",
-    "Wenhui front facade and original entry components only, not whole-building restoration",
-    "Official NTUE PDF page74 front and side photographs, capture dates unknown. Front plane pink tile; existing granite frame front and vertical reveal/outer side faces gray; actual recess backs opaque mixed bluegray glass approximation, no reflected objects painted. Original mullion fronts darkgray. Existing canopy front, ends and top green; underside neutral. All long side walls, rear, roofs, parapets, base and uncertain unseen surfaces neutral. Side pink/olive transitions lack original material boundaries, deliberately not colored. No new geometry, lettering, windows, glass divisions, AC or source-image textures. No2026 current-condition claim",
+    "Wenhui original colored front preserved. Existing twelve side-window backs use unchanged opaque mixed bluegray proxy; photo shows grilles/AC, not pure measured glass; opposite side is repeated-component inference. Extend gray entry sill/head/frame top, dark original mullion returns, and green canopy soffit/back/end returns across complete original component supports. Hidden finishes are continuity inference from official PDF page74, not a direct survey. Pink and olive side transitions lack matching topology, so all main side walls, side window jambs, rear, terraces, main roofs/coping and artificial base remain neutral. Extra official map/scenery, Commons and web research found no verified rear photograph; official VR endpoints unavailable. Photograph dates unknown; no 2026-condition claim. No geometry, lettering, windows, AC or photo textures added",
     "No actual trial print; original partial-model QA caveats remain"
   ]
 }

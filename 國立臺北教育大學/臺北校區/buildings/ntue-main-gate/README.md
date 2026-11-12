@@ -11,10 +11,12 @@
 
 臺北校區，自行用Python／實體布林建模，沒有下載第三方3D模型。模型為照片支持的近似，非實測或施工圖。
 
-### 新增來源支持的材料（原 6 張預覽保留）
+### 完整原構件返面補色（原 6 張預覽保留）
 
-依本輪親看的校方前照與兩張訪客背照，前後原上部整面磚牆採磚紅，原拱框／石帶／柱座柱頭與圓柱灰。下外側石齒接、未分界的人行石橫樑與跨色域三角面保中性，不切新面或零碎補色；原三通口與柱間空隙不填玻璃。
+保留原彩面，再為98個完整原三角面補色：中央高牆8個磚側返、4個灰頂帶側返、54個灰簷頂／底／端面，以及灰拱框32個因float32容差漏分的小面。官方低角、兩張背照及新增遊記低角照片支持材料族；未入鏡頂面與精確側帶延續明列推估。下外牆磚／灰石齒接、門洞米色格狀天花與灰樑、內側磚石混合處沒有原面界，259面仍中性，不以三角中心補出假斜塊。
 
+
+[左側](appearance/left.png) · [右側](appearance/right.png) · [原版同相機正斜視](appearance-review-v2/original-front.png) · [原版同相機背向](appearance-review-v2/original-rear.png)。七張新版、兩張原版對照均900×800，Cycles CPU 96samples、單執行緒、無降噪。
 
 [來源、範圍與文案勘誤](APPEARANCE.md)。只正門入口段，不含後警衛空間或歷史舊警衛室。原幾何／STL／scene／六張原圖與數位QA不改；未實體試印。
 
@@ -42,4 +44,6 @@
 
 重跑：python validate_model.py；python check_contour_validity.py；python check_thin_features.py；python check_portal_geometry.py。
 
-外觀已覆核，本件為作者凍結版本；獨立QA通過後才可由唯一發布者發布。
+原appearance-review保留為前版歷史。本版以appearance-review-v2、appearance-freeze.json及模型SHA256SUMS綁定；校級checksum未改，待授權發布整合。
+
+[逐點逐面驗證](appearance-review-v2/model-verification.json) · [面界審核](appearance-review-v2/boundary-continuity-audit.json) · [來源判讀](appearance-review-v2/source-register.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。

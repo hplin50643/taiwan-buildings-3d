@@ -1,0 +1,81 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T23:33:37.298973+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 822105,
+      "sha256": "fdcdebd6586ff02591814142c4624f5924b0de6e134875111916b067d95bf853",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 807321,
+      "sha256": "e12103a0c1a5cc005c93edb99b24382d0ec0841873691e0f0d9f232d3a87fd44",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 834533,
+      "sha256": "4a7e10e58901de213e0b3b5f77add93080bc4d1bb57924dba2742cb028402463",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 819531,
+      "sha256": "ee896f9d1041da4ecc74ad8a96cd803816fd57db603659b456083be2f15057d4",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 812268,
+      "sha256": "03982dacabbba12c59fe45aac876c87a3a94b3ffe4e70130f00cf30c291e032e",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 816948,
+      "sha256": "b21201bc29b31fbc29c4428b6cde5749c019646c5f4fb52d76d1c39d1e2aa551",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 832221,
+      "sha256": "96b5a21e5ae479956828a8311394009c983a16b4c9cb8e285a990fa97bdd47f3",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 823385,
+      "sha256": "5b8949597d5c025440cfc741f79bb8659791437a48882d4989af64652309f18b",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 804528,
+      "sha256": "f7b4626f3e6abaed62faa9eb243b4f3107eaef9ac686eb86987bd8d45d2ad084",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_images": 2,
+  "findings": [
+    "Front and source-angle retain original pink front, gray entry and bluegray glass. Gray sill/head and projecting frame top are continuous with their original gray vertical sides.",
+    "Original dark mullions now have uniformly dark complete side/end returns instead of neutral recess patches. No glass backing, bar geometry or original front material is changed.",
+    "Green canopy continues across its full original soffit and rear/end return supports; no diagonal material cuts.",
+    "Rear and left/right images retain neutral long walls and side-window jambs;24 complete window back faces use original bluegray opaque mixed proxy. The photograph includes grilles/AC so this is a composite proxy, not pure exposed glass. The side photograph has pink/olive material systems with no matching original triangle boundaries. Unknown rear/terrace surfaces are not filled by guesswork.",
+    "Top preserves main roof and coping as neutral while gray entrance-frame top is a separate original component. Artificial ground/base stay neutral.",
+    "Original-front and original-rear comparisons use exactly the same camera/lighting/material values as new front/rear, with only original face assignments restored."
+  ],
+  "known_limits": [
+    "Hidden entry-frame/mullion/canopy returns and opposite side-window backs use same-component continuity inference. Side windows are composite opaque glazing/grille proxies, not measured pure glass.",
+    "Searches and official map/scenery/Commons did not find a verified rear image; official panorama endpoints failed. Only official PDF page74 front/side photos used for material evidence.",
+    "500 original neutral faces remain. No new geometry, text, fixtures, or colored textures.",
+    "Estimated dimensions, support/fragile part risks, no physical print and no fresh slicer validation remain."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

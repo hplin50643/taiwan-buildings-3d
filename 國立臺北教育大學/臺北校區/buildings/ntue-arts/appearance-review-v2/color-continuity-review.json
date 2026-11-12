@@ -1,0 +1,65 @@
+{
+  "status": "reviewed",
+  "all_nine_images_personally_viewed": true,
+  "reviewed_at": "2026-11-11T23:03:18.011371+00:00",
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "width": 900,
+    "height": 800
+  },
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "d0eae04c3d5b103310a00225f668833c7753706140cfbb886b129fde24bee795",
+      "finding": "親看完整圖。曲框與樓帶連續，兩側現有窗真背藍灰，高帽側頂一致；原混材主牆和長側維持中性。頂部原未分區屋面未出現三角白碎片。"
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "28d388ff2cb3370e66fefb831961a35600090d1c06adcc1e656f57e17e727359",
+      "finding": "親看完整圖。兩高帽後回折一致，U形院落仍真開放；院內、長翼後端與屋面維持中性，未新增門窗或粉飾未知立面。"
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "12ea34ebebc5b0c0d9533b48912947e1dd772b17fac7739c1c38e04d959f310b",
+      "finding": "親看完整圖。左右八個窄窗及十二個小窗依現有凹槽補背色，框帶一致；原四柱與入口真空隙保持。"
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "9eb10d2e01ccf6429f9a4736525c60dc5dd942683bb5c5e7329d18141edd892a",
+      "finding": "親看完整圖。從另一前斜方向核對曲框回折、獨立高帽與窗背；側翼中性與幾何不變，未出現主牆假斜塊。"
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "8525dfc553812d604ba90ed1a24c864732a19962e5d3a0f4d544ab7154cfb4eb",
+      "finding": "親看完整圖。高帽側面及曲框側回折補色連續；大面積側牆、女兒牆與屋頂保持未知中性。"
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "1aa278129131dfb5a53a7fe642a4ff6f87a5fee1891b422b56f4e15806a0ae96",
+      "finding": "親看完整圖。對側高帽與原入口曲面材料延續一致，主翼外牆未冒稱實物灰色或全館復色。"
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "b94ac0bb19a940b2539f42a8aa1256c8bb8595c8faf3e3bfd8283d1966a5523d",
+      "finding": "親看完整圖。U形院落和入口凸曲量體保持；兩高帽頂面為同構件灰，最上層未分區整片屋面維持中性，沒有三角碎片白邊。"
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "01904c27a52c656b98aeddde102d84e498e8c1d665651236b12c3e761578ab31",
+      "finding": "親看完整圖並與新版正斜圖比較。相機相同，原圖窗背中性、高帽只前向有色；新版補色範圍與逐面紀錄一致。"
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "7b6048f06f0d71f987be9e3d78e725414ae07df7e03042417eadbcd6459944bf",
+      "finding": "親看完整圖並與新版後斜圖比較。相機相同；差異限兩高帽可見背側頂等原構件延色，原院落／後翼不變。"
+    }
+  ],
+  "decision": "原入口構件及既有窗背延色通過；主翼、深側／院落／後端及未分區屋頂保中性。不是全館復色。",
+  "source_vs_inference": "官方兩照與Commons2018照片支持材料家族。隱側／未見回折屬同構件延續推估，色票未重新校準；側背未取得可讀照片，不作補色依據。",
+  "revision_during_review": "初稿最上層z73.5共面屋頂出現85片可被環帶篩選的三角碎片。移除該未分區整片頂面補色，全部117面保持中性；已重新渲染並驗證最終2520面版本。",
+  "printing": "本輪未重跑原切片篩檢，僅驗證所有原幾何和原STL字節保持。未實體試印，不保證支撐、多色切片相容或任意縮小。"
+}

@@ -1,0 +1,79 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-11T23:27:12.781819+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 870463,
+      "sha256": "8da0ae78e322da6e4a51705d56f97e52ed43e7946931592b56bd8baf3b517ea2",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 866798,
+      "sha256": "19f21965d3a16b3ddf209d0c8d4b0230e1de78f6b174983d35a00113f754b835",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 794233,
+      "sha256": "f5ce1933d59fc675da0db3f0aaca39b4f703e505fd0e777e219a87e359b75f8b",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 876054,
+      "sha256": "9fd36f15407fa29f7583e3011615591d5580366472d8c2b48581f61b1b46931d",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 783823,
+      "sha256": "11c2d9bae10f6d9ad5a7dc347fa4f5a366b0a4b821d6f6127528860ec9354567",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 786955,
+      "sha256": "0c2c2651a0b8c306c63680705d883f6def67c916f86da4dc0a892b3a922f35ce",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 766568,
+      "sha256": "46bf7e5e5e50e2169e8141d254b7cb8be2dd7d8c55069490e0d1d17e7b1231c7",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 871888,
+      "sha256": "947c09bfea1e419428cc9bd1e25346146c5405fa258cbe8ef77e7f664166eb62",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 866425,
+      "sha256": "dccd8dc35d06fc734e89ee976e554c2301dc0ecb0419bd464d5826ad5294d582",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_images": 4,
+  "findings": [
+    "Front and source-angle show the raised central wall brick side return and gray cornice surfaces continuing around the original solids. Front/rear gray arch frame gaps are completed without changing its outline.",
+    "Left and right show central upper brick ends, gray top-course side return and cornice ends. The large outer end planes remain neutral because they span unmodeled brick/stone transitions.",
+    "Top shows original three-tier massing and complete gray cornice top surfaces. Those unseen upper surfaces are explicitly continuity inference.",
+    "Original front and rear comparisons confirm preserved existing colors and geometry. Original lower front/rear neutral triangular transitions remain; this repair adds no new center-threshold diagonal patches.",
+    "Portal interior soffits and jambs remain neutral because real photos have cream coffers, gray beams and brick/stone combinations without matching mesh boundaries. All three passage openings and paired-column gaps remain unchanged."
+  ],
+  "known_limits": [
+    "Unseen cornice tops and exact upper-course end return are same-component inference; four photographs are historical and not a2026 survey.",
+    "259 original neutral faces remain. No new geometry, text, fixtures or colored textures.",
+    "No physical trial print or fresh full slicer/support validation."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

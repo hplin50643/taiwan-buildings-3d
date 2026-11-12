@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.003;indices=[]
+EPS=.003;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 for p in mesh.polygons:
@@ -40,12 +40,39 @@ for p in mesh.polygons:
   if bounds((x-1.7,-47.5,3),(x+1.7,-22.5,35)) and abs(n[2])<.001 and (plane(1,-47.5) or plane(0,x-1.7) or plane(0,x+1.7)):i=3
  if bounds((-70.7,-48.5,33.5),(-35.3,-21.5,36.5)) and ((plane(1,-48.5) and n[1]<-.999) or (abs(n[0])>.999 and (plane(0,-70.7) or plane(0,-35.3)))):i=3
  if plane(1,-14.5) and n[1]<-.999 and bounds((-37.5,-14.5,3),(69.5,-14.5,6.6)):i=3
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# Extend only complete original component supports. The five screen bars,
+# large incomplete side/rear facade proxies, and artificial ground stay neutral.
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0);i=0;reason=None
+ # Full gray portal canopy: photo confirms soffit, other faces are continuous
+ # concrete component inference; no wall face is captured by its support box.
+ if bounds((-70.7,-48.5,33.5),(-35.3,-21.5,36.5)) and ((plane(2,33.5) and n[2]<-.999) or (plane(2,36.5) and n[2]>.999) or (plane(1,-21.5) and n[1]>.999)):
+  i=3;reason='gray_portal_canopy_complete_soffit_top_rear'
+ # Rear end caps of the two original side-wall solids. Their front and
+ # lateral faces are already gray. Excludes adjoining rear connector rail.
+ for x in [-69,-37]:
+  if plane(1,-22.5) and n[1]>.999 and bounds((x-1.7,-22.5,3),(x+1.7,-22.5,33.5)):
+   i=3;reason='gray_portal_sidewall_rear_caps'
+ # Existing right-end shallow window reveals, all 3 vertices inside exactly
+ # one original window prism and on its original jamb/head/sill plane.
+ # No new opening or triangle subdivision; backing stays original bluegray.
+ for y,w,z,hh in [(3,7,7,10),(15,7,7,10),(2,8,21,10),(19,20,21,10)]:
+  if bounds((67.1,y-w/2,z),(69,y+w/2,z+hh)) and ((plane(1,y-w/2) and n[1]>.999) or (plane(1,y+w/2) and n[1]<-.999) or (plane(2,z) and n[2]>.999) or (plane(2,z+hh) and n[2]<-.999)):
+   i=1;reason='brick_right_end_complete_window_reveal_inference'
+ # One exposed right cap of the low continuous planter. Top and rear tray
+ # proxy are not gray because soil/vegetation is not separately modeled.
+ if plane(0,69.5) and n[0]>.999 and bounds((69.5,-14.5,3),(69.5,-11.5,6.6)):
+  i=3;reason='gray_planter_right_end_cap'
+ if reason:
+  p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'basis':'Whole original support; hidden returns and exact material depth are explicitly inferred from adjacent same component, not directly surveyed.'}
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and colored faces preserved; complete portal and right window component returns inferred; mixed screens and incomplete broad facades neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-complete-component-returns'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -60,6 +87,7 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -75,15 +103,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Swimming fitness hall limited brick piers right end and gray portal refinement only','Official NTUE PDF page88 front and right side photos, capture dates unknown. Ten original projecting brick pier vertical faces, modest small hidden side same-component continuation disclosed. Right end x69 facade brick only; roof coping neutral. Original cutbacks front/right/entry bluegray opaque mixed glazing reflection proxy, no fine grids added. Gray portal vertical walls and canopy front/ends, planter front. Broad main front wall, original five screen bars, roofs, backside, portal soffit and tops, entryground and base neutral. Source upper red and lower dark screen systems not separately represented in old bars, deliberately not guessed or split. Not whole building restoration, no geometry or photo textures or current-condition guarantee','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-complete-component-returns','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Complete portal gray canopy soffit/top/rear and sidewall rear caps, right-end brick opening reveals, and planter right cap. Direct official front/right photos and visitor entrance photo support brick and gray component families; exact hidden returns are continuity inference. Architect describes greenwalls and opposite indoor photo shows extensive windows, so incomplete large rear/left facade proxies remain neutral instead of solid brick. Five original screen bars span incompatible red and dark systems and remain neutral; no splitting, added geometry, decals or equipment. Original colored faces and RGBA/roughness preserved. Capture dates unverified; not a 2026-condition survey','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-220,-300,165),(0,0,20),190),'rear':((220,300,165),(0,0,20),190),'elevation':((0,-350,40),(0,0,20),190),'source-angle':((180,-300,110),(0,0,20),190),'top':((0,0,380),(0,0,20),190)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-220,-300,165),(0,0,20),190),'rear':((220,300,165),(0,0,20),190),'elevation':((0,-350,40),(0,0,20),190),'source-angle':((180,-300,110),(0,0,20),190),'left':((-320,0,150),(0,0,20),190),'right':((320,0,150),(0,0,20),190),'top':((0,0,380),(0,0,20),190)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -92,4 +121,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

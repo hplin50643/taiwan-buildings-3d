@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntue-dormitory-2-all-views.jpg; caption/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "66dc4887421a428d527059308da86c33c90e147f78375902c45336e28196d939",
+    "east.png": "91260445c1f09b10ba3721f6d552ad37b9e2be17547fe9321be288d02d2a116d",
+    "entry-detail.png": "2b9075b7a7d89ab5ee4ccb0fc2f4bd372d6a8bc3b487d55fd1dd1e6aa4480efd",
+    "facade-detail.png": "26bc53b1d9c043e49b57fd51cf542b2c12f8a7da2bc9d7ef63062eea17c81168",
+    "front.png": "362528a5c0b9472e403c5afa214b9a55fbef9bae467ac55efb7da4387d4a6fec",
+    "preview.png": "4d600901a23bfcd4d3e873d939e6944b820355825e269bf4def3ab4065620207",
+    "rear.png": "714617f87e38d35225045500a990d19ca853c155c9538870d6f9b369c8f780b3",
+    "roof-detail.png": "2774bc202dd8d75e64be5664bdc9d5bb4ceff5b4f0ad739b2281757a2f0597ea",
+    "top.png": "015debaa4d72c0a1aba0e308239a645d95f72aebb7b514408fc5e25b585dd459",
+    "west.png": "5c42bd217bbbcd2374634eaf9e4be484a0c142608dad1750fb67f6df5e3c8fff"
+  }
+}

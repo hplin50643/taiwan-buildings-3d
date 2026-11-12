@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views in ntue-gym-all-views.jpg visually inspected; original mesh/materials/cameras preserved; no caption/backing."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "7c33fc3b3051d7d83bf9c38ddb232e2a7e6636d758996b095c01c0909ba5ecfc",
+    "east.png": "7ba049ce47a9732b4c228cfd0b21192724f60bbeb2fb04077059171800e61b2f",
+    "entry-detail.png": "dc324177caf8986ceb2877a3e426f13148c146cfb6ceaddeadae1c56353a1f8a",
+    "facade-detail.png": "c9b1b30b47c7da26f476c91e16dec8d83587d3045dbe39228dd653cff94152b3",
+    "front.png": "023604b7f0337e8c3e5e6526b00783c8eb929e26ccec53f07eca2c8aee634160",
+    "preview.png": "2da992e952ad67373b5ecf2b85ff229df684c60b49ce6eba7424fe33bf178b25",
+    "rear.png": "2c4b0546b3e55b479e293da0e1164931fc80b2f272fbce31547a70b0f6d91dd8",
+    "roof-detail.png": "4aaf36098c10a9e5f7c6031eee81e8369f350cce25ce0e9a576e7d77991288ff",
+    "top.png": "51b91b8b5327c84e2d524f9ee48e6da2c3cb235c1acb913cb3ee940f9f22d271",
+    "west.png": "fbbb59b8756dc487984ae6cf9fc3729fc4fb798f1029c6826b9c8619e7d45442"
+  }
+}
