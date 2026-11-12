@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "reviewer": "finish_science_hall",
+  "reviewed_at": "2026-11-02T23:27:17.016650+00:00",
+  "review_scope": "Parent personally viewed approved highview exterior, original code, preview and final ten-view montage; independently recomputed 120 complete upper-tier fin-front rectangles and exact original triangle identity.",
+  "visual_findings": [
+    "Only four upper rows of true outward fin fronts are offwhite:240 triangles; lower two obscured tiers remain neutral.",
+    "6892 original triangles unchanged;6652neutral;1611connected coplanar domains uniform.",
+    "Seven full views fit model;three detail views intentionally cropped.No false glass or diagonal color wedges.",
+    "Facade segment only,not entire building or gym;EXIF2009 timezone unknown/not2026;not physically printed or verified multicolor slicer setup."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "2dbd4441f5f8ac226f89781278f35aca719d207ebfb8b254df9ffa95bf02c063",
+    "README.zh-TW.md": "2dbd4441f5f8ac226f89781278f35aca719d207ebfb8b254df9ffa95bf02c063",
+    "model.stl": "d2722ddd9101bceb87ef8540d46127b753451052b5d1e6ec0b0ef0a6963fb3f0",
+    "build_model.py": "01ceae9896362fd25fd3767a9496a83fca97e0fdfb9750f78f567c0e15f40af4",
+    "colorize_model.py": "b856f8d3ebb8c0efd49e630852c7bd25da1bd7ca26dbed1c7b529128b174bf80",
+    "render_color.py": "c27a9121afd9c6dd421b36e71ef02c757dd6ebe446906e4a5082c0dc40e457ec",
+    "color-mesh.npz": "32bf36731199c885bc727a22b06a08a9b80b98ae5828ea09126092cbb30c0b16",
+    "palette.json": "4f09ef1923f54f52f11e56072bcaeac8d798e4db789014d4cf0d8a2394c8c46d",
+    "appearance-materials.json": "441678556377dd828599d6136945bbf0946542eb0552ad39bcd4df49570db4e5",
+    "COLOR-SOURCE-REGISTER.json": "8162ea296f4a902a26972955522e6f5f87c29a2c65f2a1d3a19f63b7b7807566",
+    "appearance.3mf": "e7aa9dc8fedf1ae1fe16fea3be3d8f320334b4016e3ac6cfde2c3fa95072e632",
+    "scene.blend": "2f3137cb2ca2bfc92099ce2e0a1825502ab30d98c222538e0d6ac39465054d53",
+    "preview.png": "c97b81af11b6adb614394aaeee28a1e6cea4cd2a4e9da93338ce410a6980bf72",
+    "rear.png": "04e6e62145d914eae9364238ed33f9e955c673db13e7b61706a81f135fc3880a",
+    "front.png": "bdf398038016c11179d3b80264a4666d18fba68fdac831a8f178032ef333e422",
+    "back.png": "61eb35c486bffc4cc50666f21ee1fc070bb15efad396faa767c12879f4028e42",
+    "west.png": "781016f9a2afcdce8114ced708fd43558bac9cbb6e9e3a9b18f69411785040ae",
+    "east.png": "00e58bfb6c2b02ae50ee8fabb9ef4ffb86cd97638d49c028ed22974b55e1132c",
+    "top.png": "5aa4c4d613f755c79d3c635b46f29b10973055bd3696b7ae64ad7f6c6e0451e1",
+    "entry-detail.png": "a376e1540275dc1360334e6e5330a428737ce26cf56255a9166c0c8d218d0ff5",
+    "facade-detail.png": "da89fbf33690a0d84e88a333224c91389e66bfd65f4809acc2a0d85108fd7feb",
+    "roof-detail.png": "b8333561f3d14165aa0cdae66e6de868cd1faed764488d8961bd9b1ebd481722"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "aa9828f2b2590620a85e80af5724fb10d8b3837ff2304a56e6e65c86525aab3b",
+    "COLOR-ASSIGNMENT-QA.json": "64bf183065821443a737f4558524a3d00bfd68d5d8f8872741954e6435e62d6b",
+    "SCENE-QA.json": "2f35a7639bc296378e91ded473353c7262ec03afe9dbd9677120372aa51018a1",
+    "FRAMING-QA.json": "8027b1740943fb6f97225f4f5691361e719f74d001c7879e07cbd439a019b2d7",
+    "DELIVERY-QA.json": "b5595f3382acebd426eb373cbde1e2cdffee4040452423a87febee4df0187cfa"
+  },
+  "independent_evidence": {
+    "INDEPENDENT-IDENTITY-2321.json": "3305d727ecfd3388a602f46a3644577f32596ac1b046933827c7b16e79773515",
+    "INDEPENDENT-DOMAIN-2321.json": "78721a0923f54cd6208f80b7aba98f3027daacf6498c90b629815b5e8846d71b"
+  }
+}

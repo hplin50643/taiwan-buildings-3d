@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in ntust-aeon-sports-facade-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "28ad66a2623e6e505d36fe522c0381747bcfd395ac9dd139b68d3dfd53f86f00",
-    "east.png": "64bee23d80a402e3d6d29ad133ec34dde6d02b9681d4811d79c50c2da45e893a",
-    "entry-detail.png": "ae311dabd6134fb717f8b728adaddbfaf7b12251312bed8805fd7a4486b25004",
-    "facade-detail.png": "e9b6e4ea6619a006384c403ef7beeab5a993cb69384b7f97f445f3995cc31fa3",
-    "front.png": "cb5f5e613a84ede60f53dbd3cc3932c1f41255a43383cf9ec51aa72fca4ba53d",
-    "preview.png": "b8fae606f28c2c657734a0bd0159efe118e647deca557a5b9b6ede3e49c04b6d",
-    "rear.png": "58e10e4f8d6952d577d387b07411ce27a416b74c5da6b854dbabf03930caa471",
-    "roof-detail.png": "918fbe6f074ce3940dc2b8b737bbb9f147b56f857fa6eac3ba5549f5c62eef32",
-    "top.png": "80e617feb94d2e23c653bfbec77f8283fb2b2f9c89f2fe84a938b942ae153b25",
-    "west.png": "0a797af72d808310c0ad6f3213ac249f967c7a45a848bf8f173b4078443939f0"
-  }
+    "preview.png": "aab1bf0ccc2b144fdf922f6a1841d8115e158fbbf41f46d592b4ccbd8b5540fb",
+    "rear.png": "a0552ebe74693e31576b2f86b7961f2e0b6a7d7d4e8269059b36f00366f869a4",
+    "front.png": "e6b278a3933857887d4507c70e6b6d54c2cb8fa8442da515d47d561e6384eb51",
+    "back.png": "48acc33fa72ff44f777461fb99a6bf023889235b18dc6a037756f21fa63209a4",
+    "west.png": "7b78d79aa7af359879be889b07da0a54c5934775f890c44b637eb544322a2ccf",
+    "east.png": "901827867d1939655a7bc32d6558d57822b87aff8341a45f8b470ab7aa8dde62",
+    "top.png": "3bf1666533aeee16d01eec093a377e7f7f3d18b9caae1bc2367c4c72d086b0db",
+    "entry-detail.png": "a6778aa5c2ab5593249f6163c81ecdafd01edddc209b43ba6aba5cb545277844",
+    "facade-detail.png": "b9f0baa2ab87613ed1884d2d1712437482b4b57d8a98c5c98dd13a592eb5a106",
+    "roof-detail.png": "1b562cdfc61973881b4165e10dce1d93c39704927ed85be23b6a79246e864d56"
+  },
+  "mesh_sha256": "1fe376e8362ce299e40cb98314a323f1b9c32b4afc535197f1a86945d2e61093",
+  "independent_visual_review": "LOWER-LEFT-FIN-INDEPENDENT-QA.json",
+  "previous_qa": "qa/lower-left-fin-previous/NO-TEXT-QA.json"
 }
