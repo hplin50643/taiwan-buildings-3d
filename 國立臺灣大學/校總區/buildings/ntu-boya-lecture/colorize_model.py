@@ -30,6 +30,17 @@ for i,(t,(x,y,z),n)in enumerate(zip(m.triangles,m.triangles_center,m.face_normal
  if lo[0]>=-55.501 and hi[0]<=-54.699 and abs(nx)<.99:mat[i]=2
  # Roof greenery only sloping top of the original wedge, not any vertical wall.
  if lo[0]>=-60.501 and hi[0]<=-11.499 and lo[1]>=38.999 and hi[1]<=59.001 and lo[2]>=2.899 and hi[2]<=15.901 and .5<nz<.999:mat[i]=5
+
+t=m.triangles;n=m.face_normals;old=mat.copy();hit=np.zeros(len(t),bool);e=.0001
+for xx in [-8,6,20,34,48]:
+ for zz in [29,39,49]:
+  for side in [-1,1]:
+   q=(abs(t[:,:,0]-(xx+side*2.9)).max(1)<e)&(t[:,:,1].min(1)>=-27-e)&(t[:,:,1].max(1)<=-26.1+e)&(t[:,:,2].min(1)>=zz-e)&(t[:,:,2].max(1)<=zz+6+e)&(n[:,0]*side<-.999999);assert q.sum()==2;hit|=q
+assert hit.sum()==60 and np.all(old[hit]==4)
+ad=m.face_adjacency;cs=trimesh.graph.connected_components(ad[(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999],nodes=np.arange(len(t)),min_len=1);assert all(not hit[c].any()or hit[c].all()for c in cs)
+oldmix=[c for c in cs if len(set(old[c]))>1];assert len(oldmix)==2
+mat[hit]=6;assert all(np.array_equal(old[c],mat[c])for c in oldmix);assert sum(len(set(mat[c]))>1 for c in cs)==2
+assert np.bincount(mat).tolist()==[8,295,181,72,224,6,306]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=mat);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int((mat==i).sum())}for i,(a,b)in enumerate(pal)],'geometry_policy':'1092 original triangles unchanged.','limits':['Main front full plane neutral because original triangles cross upper brick/lower frame boundary.','No added bridge/railings/sunshade blades.','Green only sloped top; unknown far side/back/flat roofs neutral.','Seven labels are not a tested multi-filament project.']},indent=2)+'\n')
-q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':len(m.faces),'materials_used':np.unique(mat).tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q)
+q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((mat==i).sum())}for i,(name,col)in enumerate(pal)],'withdrawn_face_indices':np.flatnonzero(hit).tolist(),'withdrawn_color_faces':60,'new_color_faces':0,'original_colored_faces':846,'colored_faces':786,'neutral_faces':306,'triangles':1092,'complete_selected_domains':30,'original_mixed_domains':2,'current_mixed_domains':2,'original_mixed_domains_indices_and_materials':[{'faces':c.tolist(),'materials':old[c].tolist()}for c in oldmix],'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'1092original triangles;STL/OBJ/build unchanged','limits':['Withdraw insufficiently supported blanketmetal designation of60verticalwindowreturns;not evidence everyjamb is brick or wrong.','Designer side photograph contextual only,not color transfer to oppositefacade.','Mainfront149neutralfaces and all otherindices unchanged; original2mixed domains exact.','No newcolor,geometryfix,calibratedHEX or2026claim.']}
+(R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n');(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':1092,'withdrawn':60,'new_color':0,'colored':786,'neutral':306,'mixed_domains_unchanged':2,'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()},indent=2)+'\n');print(q['palette'])

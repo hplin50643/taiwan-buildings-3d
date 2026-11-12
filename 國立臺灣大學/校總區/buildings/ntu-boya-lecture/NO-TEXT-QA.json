@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in ntu-boya-lecture-all-views.jpg; captions/backing absent, original mesh/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "ff54d5917248576c4f4c17a674fadb60db015fa451830f7323cc19b74d3f04e6",
-    "east.png": "d535f73d461796fdfc41dc29c2d8f7ea5074d878a0c78eb14a0fa5dc225223b6",
-    "entry-detail.png": "dd7d3ef890e23d665149259cf6b1537abcc2cbdeb18a26015ce79629a0b1aafb",
-    "facade-detail.png": "ba772e54268401e55f30e86be90256124dc64eb12330def03ebf80d1d26b1530",
-    "front.png": "7663969c4e2130950b4ee02e19c55616ba0d40bbe46e520a94f0ed2821cddf24",
-    "preview.png": "86e54f186b182d3a64b2b1bf7e52641d5d2627d274064e08af49d3c40b3158b3",
-    "rear.png": "1a217948b9397e2882f2169b88b5bdfcfa7a5db98ccccf566b5ffe33d26c7038",
-    "roof-detail.png": "6b568dee5e9b2dc970674aa4d7c6dd096bd86c7f5f4be1827975b337a73629a0",
-    "top.png": "392180439d5d351edb747145944fcb9dbd22110acf9998c49760184a33437fe8",
-    "west.png": "72afeb1dc11e5811a68e8eb404675505801e5218fe82e608ac5bb76e9aa9b6af"
-  }
+    "preview.png": "f3508539cf26f05cde5529af2f989d55b88fb9cd02401de4d2e1387efdfb0609",
+    "rear.png": "1ba3caaa83894bcccd65954bac8b2ffecb1a3d88c73aa939ae3cfc16feeaa0b7",
+    "front.png": "b6282592b9b62db80e8ccc03b1508a74416677af54a69488112f94a9168a0618",
+    "back.png": "0bfda6c10641ed1f2be685789a26175bb619a678dc660763b67078869c42983d",
+    "west.png": "b40161afc5c06e4c3572db42ea0ad9164b1653e8aeec096b0e6d51535f5df62b",
+    "east.png": "6a4a2082b3f270808db6eb4ee5f5c50c4018e60c61a37aaaf0235cfe74d97e75",
+    "top.png": "825230e116bdd65138c3717f87a852a3ddbcf162c6bb2cf6af3b1b497477b098",
+    "entry-detail.png": "bf5024e4b4beb36b564de09d79e30c81fb03762b306addc30253a58a86b36754",
+    "facade-detail.png": "80500a64d3b7d781138e2aa40e323a0766d1660e4b5f4c3fc32065307ce38a2f",
+    "roof-detail.png": "c0a38908e6a42c52d20b10b07d4359eee6b9a9760e00d9ff29b63be0d7266e68"
+  },
+  "mesh_sha256": "f9f8526ef238fc53c5454cdefc15c14fdd2705269228c84c2efda5d284057dad",
+  "independent_visual_review": "REVEAL-WITHDRAWAL-INDEPENDENT-QA.json",
+  "previous_qa": "qa/reveal-withdrawal-previous/NO-TEXT-QA.json"
 }

@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T11:31:37.923756+00:00",
+  "scope": "Withdraw unsupported all-metal assignment from60original vertical upper-front window return triangles; no new color",
+  "blockers": [],
+  "counts": {
+    "triangles": 1092,
+    "colored_before": 846,
+    "colored_after": 786,
+    "neutral_before": 246,
+    "neutral_after": 306,
+    "withdrawn": 60,
+    "added": 0,
+    "whole_changed_domains": 30,
+    "original_mixed_domains_unchanged": 2
+  },
+  "numeric_review": {
+    "status": "PASS",
+    "checks": {
+      "vertices": true,
+      "faces": true,
+      "60_exact_withdrawals": true,
+      "neutral6": true,
+      "all_other_indices": true,
+      "original7palette": true,
+      "counts": true,
+      "two_mixed_exact_unchanged": true,
+      "30whole_domains": true,
+      "model.stl_bytes_unchanged": true,
+      "model.obj_bytes_unchanged": true,
+      "build_model.py_bytes_unchanged": true,
+      "3mf_vertices": true,
+      "3mf_faces": true,
+      "3mf_materials": true,
+      "3mf_7materials": true
+    },
+    "mixed_domain_face_indices": [
+      [
+        79,
+        63,
+        70,
+        51,
+        52,
+        69,
+        61,
+        65
+      ],
+      [
+        102,
+        104,
+        108,
+        95,
+        98,
+        96,
+        85,
+        90,
+        82,
+        80,
+        118,
+        117,
+        116,
+        114,
+        76,
+        75,
+        109,
+        119,
+        110,
+        111,
+        112,
+        113
+      ]
+    ]
+  },
+  "scene_review": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "seven_material_slots": true,
+      "palette_0": true,
+      "palette_1": true,
+      "palette_2": true,
+      "palette_3": true,
+      "palette_4": true,
+      "palette_5": true,
+      "palette_6": true
+    },
+    "scene_sha256": "c34326f8c846638a9b10497402eb1c6af9c3050ead4f622cb2915011b6f826c0"
+  },
+  "image_sha256": {
+    "preview.png": "f3508539cf26f05cde5529af2f989d55b88fb9cd02401de4d2e1387efdfb0609",
+    "rear.png": "1ba3caaa83894bcccd65954bac8b2ffecb1a3d88c73aa939ae3cfc16feeaa0b7",
+    "front.png": "b6282592b9b62db80e8ccc03b1508a74416677af54a69488112f94a9168a0618",
+    "back.png": "0bfda6c10641ed1f2be685789a26175bb619a678dc660763b67078869c42983d",
+    "west.png": "b40161afc5c06e4c3572db42ea0ad9164b1653e8aeec096b0e6d51535f5df62b",
+    "east.png": "6a4a2082b3f270808db6eb4ee5f5c50c4018e60c61a37aaaf0235cfe74d97e75",
+    "top.png": "825230e116bdd65138c3717f87a852a3ddbcf162c6bb2cf6af3b1b497477b098",
+    "entry-detail.png": "bf5024e4b4beb36b564de09d79e30c81fb03762b306addc30253a58a86b36754",
+    "facade-detail.png": "80500a64d3b7d781138e2aa40e323a0766d1660e4b5f4c3fc32065307ce38a2f",
+    "roof-detail.png": "c0a38908e6a42c52d20b10b07d4359eee6b9a9760e00d9ff29b63be0d7266e68"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "f9f8526ef238fc53c5454cdefc15c14fdd2705269228c84c2efda5d284057dad",
+    "appearance.3mf": "73d05464f84ee05629c25dc6b86a17746deba62a61a044c468819f16c129d3e0",
+    "scene.blend": "c34326f8c846638a9b10497402eb1c6af9c3050ead4f622cb2915011b6f826c0",
+    "palette.json": "d817db708310eeadd173559a25980afc6f2ffabb0f22ab6bdd6e9bc843308d7a",
+    "colorize_model.py": "29146155814e0970c0b4f3aec6264735fda543ed643d30522b4818eb61af41c9",
+    "REVEAL-WITHDRAWAL-SOURCE-QA.json": "a1e5429522907a1079d5c36b1b80db9935c30e10a4acefa5751c0c8b5ffba827",
+    "COLOR-SOURCE-REGISTER.json": "a1e5429522907a1079d5c36b1b80db9935c30e10a4acefa5751c0c8b5ffba827",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "dacff6ab8569246388f837e978a24b49fff6320095316278f0455652d0823a08",
+    "README.md": "47b835f7acc534f5fab27ddf2c12a8322e5b9ed6201e121eb48282a90693e5dd",
+    "README.zh-TW.md": "b5ac727af9e9c57f75496f74fdf51303d04812a28a9768c7d473949fd611441c",
+    "CHECKSUM-SCOPE.md": "4f0e03d11eea083f0adf0f86e965705f2354097951459abf8cd1e7c77848a9da"
+  },
+  "source_sha256": {
+    "Boya-2.jpg": "1f7a869bf79f6b91d9df1c42cf58c208bb444be0d1dde0f22c217d12ce0a01eb",
+    "designer-02.jpg": "b76d7f001bba6374cb4a0c0497aa78c0535dc1057edfa307edadeefc56a78b1e",
+    "designer-03.jpg": "d87a469918f9b3f87d400561090c775dbb3ea796e6939d43e1d1bc9296310548"
+  },
+  "findings": [
+    "Actually viewed all ten final views in two montages and full-size facade detail. Upper window returns now neutral; backs, horizontal returns, balcony strips,portico and brick edge remain as before.",
+    "Independent exact60face change mask,30whole coplanar domains,all other indices,all7palette entries,STL/OBJ/build and mesh arrays verified.",
+    "Both existing mixed coplanar domains retain exact face sets and material indices; no new mixed domain,not zero-global-mixed.",
+    "Independent reopen of original/final scene confirms exact camera/light/render/meshobject inventory,geometry/material assignments,source mesh SHA,sevenlinear shader colors; hidden caption/backdrop and stamp-off preserved.",
+    "3MF and retained isolatedbuild/color verification PASS. Source snapshot not modified."
+  ],
+  "limits": [
+    "This corrects an insufficiently supported all-metal attribution,not proof that each jamb is brick or individually wrong. No red replacement or color transfer from designer side image.",
+    "Original front149neutral faces and original geometry approximations retained. Horizontal sunshade plates absent from original model are not invented by color.",
+    "Sources do not certify2026condition,calibratedHEX,asbuiltdimensions or physical/multi-material printing.",
+    "Private source pixels not redistributed; original engineering limitations remain."
+  ]
+}

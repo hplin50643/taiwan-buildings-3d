@@ -1,0 +1,115 @@
+{
+  "status": "PASS_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE_WITH_DOCUMENTED_LIMITS",
+  "reviewed_utc": "2026-11-02T15:25:00Z",
+  "personally_viewed": [
+    "official-exterior.jpg",
+    "harvard-entry.jpg",
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "entry-detail.png",
+    "facade-detail.png",
+    "roof-detail.png"
+  ],
+  "mesh_sha256": "68d128dda8fb65d6ecafe482b87db398105b2ab791ecdce09215c01e7b106ab1",
+  "original_STL_sha256": "5bc3c76a42c666bd6360ab1af6abe5a70795dc6eab512843b66e2e7a4587d85f",
+  "build_code_sha256": "e4e57101347c6ea75d461ab077101859c2a21fbb2f14d34bff1e653f4cd21b7d",
+  "render_code_sha256": "16998c7f8b2d4b777d79565c0ee3a29d9032234b5beacb36b6e59bd7fccb53b0",
+  "readme_sha256": "d3a456c77cdc44c5bccbb461b2e9df7a0f0846e91407217b895e433471a4091d",
+  "bound_files_sha256": {
+    "model.stl": "5bc3c76a42c666bd6360ab1af6abe5a70795dc6eab512843b66e2e7a4587d85f",
+    "model.obj": "808fa52209a71cb571852ade709efbcccb0434a8e45cb14a5cc8adda7705ffaa",
+    "build_model.py": "e4e57101347c6ea75d461ab077101859c2a21fbb2f14d34bff1e653f4cd21b7d",
+    "colorize_model.py": "e8e8d48eae7b73dd78fafdf42bb85d905eb28a22f19b635868ff76ca7f7a96e2",
+    "render_color.py": "16998c7f8b2d4b777d79565c0ee3a29d9032234b5beacb36b6e59bd7fccb53b0",
+    "export_appearance.py": "5bcfc6584823acf438e064440e52132f60c4590f0e74116911bc51917d623ce7",
+    "validate_color.py": "38329412efb62814572f267d8ce98bd826089d32af278c417b655edfff6eeb7c",
+    "verify_color_scene.py": "7ba55dc8aa14fedd2769e611b345a114d95522831ef7c264cac304f5d39e9774",
+    "README.md": "d3a456c77cdc44c5bccbb461b2e9df7a0f0846e91407217b895e433471a4091d",
+    "COLOR-SOURCE-REGISTER.json": "9546ccbb6b788df42027dcfbefd4f10c2e3c655b2ddce55a75f9184ffc0b70e1",
+    "palette.json": "d817db708310eeadd173559a25980afc6f2ffabb0f22ab6bdd6e9bc843308d7a",
+    "appearance-materials.json": "2c03c05a17232c3fbda443f0dbb40d9166d3b463e90584f26b5170d3741d3002",
+    "scene.blend": "cd489163973cdd1c38e219232d50edb6b4e2cbe6dee6c7ccce68888c98d86246",
+    "appearance.3mf": "fc38b978339c2c5a0021e4a59a368453a0fe71fc2144a3427b8062a5cb46f9ce"
+  },
+  "png_sha256": {
+    "preview.png": "4b1349fac363cbdc51cee3da990c17dfe8142f9afef1dd094849631ede4db507",
+    "rear.png": "ab41d2bbe2d35a91c8a3c9dd281c42187bd52b5bb576bb21245c64df11397bb0",
+    "front.png": "f7af76f812cac1fc3b0fcc5d924173c5047ccda03e95a897e0287e5509b5ae02",
+    "back.png": "867e1bddaa7b6ba99b57a127313d2ce7e9550f036cbb861973f8061201087c63",
+    "west.png": "988e96292fea08d04e95ca667b9bf0cb42c24e7d2ac07c5d524356679163fd17",
+    "east.png": "5cd37d70b7a7cee1576538bc72aac326fdb6428f240c902cf6e93f0ddcd81cb3",
+    "top.png": "5b1f3dcf695173ad171f09316267b94274801ae2f5044bd6675a2530a8ff57cd",
+    "entry-detail.png": "9a83002e557a85cc0881ce11a542458377ca12534669697ac6c6c98df81547c1",
+    "facade-detail.png": "ef2b872b1ad1e81d68af9b7fe9d24f99df8b0fd57fbdaa0a59c6845272b87108",
+    "roof-detail.png": "f7799ae0b488b03eefbc7c03543af03fd0be7ae743b3c25e76518910bf6840af"
+  },
+  "source_hashes": {
+    "official-exterior.jpg": "861592527e64209ac8465aa7a8afea039583a8ecbc160af2875c5717e101ca44",
+    "harvard-entry.jpg": "1f7a869bf79f6b91d9df1c42cf58c208bb444be0d1dde0f22c217d12ce0a01eb",
+    "NTU-BOYA-INDEPENDENT-TOPOLOGY-NARROWING-1517.json": "855e76d448997e9b9a9e63b62e4485d7bceecb732e960169fce0edd8c5d2eebf"
+  },
+  "geometry": {
+    "triangles": 1092,
+    "vertices_exact": true,
+    "faces_exact": true,
+    "original_bytes_unchanged": {
+      "model.stl": true,
+      "model.obj": true,
+      "build_model.py": true
+    }
+  },
+  "material_face_counts": {
+    "0": 8,
+    "1": 295,
+    "2": 181,
+    "3": 72,
+    "4": 284,
+    "5": 6,
+    "6": 246
+  },
+  "focused_numeric": {
+    "main_front149_all_neutral": true,
+    "brick_faces": [
+      75,
+      76,
+      82,
+      90,
+      96,
+      98,
+      102,
+      104
+    ],
+    "green_faces": [
+      1006,
+      1007,
+      1008,
+      1010,
+      1011,
+      1014
+    ],
+    "green_all_true_upward_slope": true
+  },
+  "visual_findings": [
+    "All ten final images personally inspected: no artificial diagonal paint patch or incoherent plane assignment identified.",
+    "Entire main front neutral is an intentional topology fallback, not a claim actual wall is gray; documented original triangle172 crosses z3..59.8.",
+    "Brick restricted to eight coherent forward x=-17 return facets; balcony inner/rear skin neutral.",
+    "Existing portico/circular opening/stair gray, low-wing faces light gray and discrete original window backs shaded; no added detail geometry.",
+    "Six original slope upper facets green, vertical slope sides neutral; main/low flat roof and unknown back remain neutral.",
+    "Seven complete overall views and three intentional closeups; captions readable."
+  ],
+  "limitations": [
+    "Source supports more brick than can be represented without changing original mesh; public README explicitly discloses conservative omission.",
+    "Original1092-face architecture is preserved, not revalidated as exact geometry/current condition.",
+    "No new subdivisions, railing geometry, canopy additions, brick textures or neighboring bridge copied.",
+    "Photo colors uncalibrated; original images privately retained, not redistributed or used as textures.",
+    "Seven appearance labels are not a verified multi-filament slicing project or physical print.",
+    "Original source rights retained, no third-party commercial rights guarantee."
+  ],
+  "document_review": "Latest README and current source register reviewed, scope narrowing and historical original text clearly distinguished.",
+  "review_scope": "Independent source/code/exact geometry/material/ten-image QA, not a substitute for separate builder format/rebuild/reopen evidence."
+}
