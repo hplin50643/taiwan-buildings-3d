@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nkuht-student-health-center-all-views.jpg. Caption/backing absent; original geometry, materials and view framing retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "68df817d68f0eae95c4be7dbe18088011e81d7856f6b8756b06656ddc66a49bc",
+    "east.png": "73d5b9e180ffdec8306c9079cacfac9874573b94295d43c5a57924e7c8203e85",
+    "entry-detail.png": "3435107ff2c8aa3b51c0dd5a7d0f5066f090990b957f09394fd3aa1e0139a875",
+    "facade-detail.png": "1a3b97cbdc812470382c7f9c3fb3cc1ea3139a10deffba6692487d96c0094bfd",
+    "front.png": "ad3e5e9db76b79a30ac36eab1456a534904004cd2d601c365061c8b559221190",
+    "preview.png": "aec0e4f5b4e3153ba9b20c8b87a2828d7689e56594a2da1c27f8c9f2447d3606",
+    "rear.png": "e27f469a213530c07bc93fcfcbaf8ce274a55ab4bf8cef80ed1469f9e63f8a44",
+    "roof-detail.png": "d16ba021f559406c27a74b63deb83f132175bbc45e9e83a22178b06f94615003",
+    "top.png": "4becf328d2e510e74a4bbce661fc8f0b45d38b1613e5a1a65523277568c47a4f",
+    "west.png": "038c7651ff953343b1b086630f52405fe521aeaad3a0a855f565d7edc0cb42ca"
+  }
+}
