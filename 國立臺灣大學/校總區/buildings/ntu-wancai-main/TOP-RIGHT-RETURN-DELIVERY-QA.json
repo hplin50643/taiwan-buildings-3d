@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded top-right-return update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T12:10:30.168972+00:00",
+  "triangles": 3962,
+  "original_color_faces": 94,
+  "new_color_faces": 4,
+  "colored_faces": 98,
+  "unknown_neutral_faces": 3864,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "a3d5cc659830a56537d7b602bdd32f140c2581dbc703c0b9b1758efeafb0d47a",
+  "color_mesh_sha256": "abc035a0358913098f891b0673b28610d01491cf751b3510c182f18d262c2609",
+  "images_sha256": {
+    "preview.png": "b4d99f70c4118410732849e16a9b527cca1636fccf7eddccfac912b3fe941716",
+    "rear.png": "4f9732a445b83b98edbdbbca07ec627187fa70cda0ccc33753c38d50e2eb6987",
+    "front.png": "8659604296b4c0ad3aca8f3917ec0049143367e716e0d6f8392304db72e5d8d5",
+    "back.png": "652183762aa36448a244fd55127ca16d8217d4485700e4be41da3cdcd89adb80",
+    "west.png": "d92d4a63da5da8b07cee3c3472f6d682a22285323afc0a5282e0a4d469228317",
+    "east.png": "7b8289c229cbd1b7ec1f3400c7bbb46e78da1c1ec088885d4883ce38d4f9d70b",
+    "top.png": "b5e004b71ad3cff7be32a042dc7d4a4e648ba4eed96d3a33ce32acfaf63f1bdb",
+    "entry-detail.png": "2121e7b48b18b9b997bb92d3eb588cc2065728d18baa7eaa9ae6f82a2eca02a2",
+    "facade-detail.png": "bc5d7015e3d949529f9264ada84435acdd73b8043416a71d996d0397aae28f4f",
+    "roof-detail.png": "0993ca9ca55444d46d24fc3bda538dc610d63608ffca3a60535187098545bd5b"
+  },
+  "current_independent_review": "TOP-RIGHT-RETURN-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Existing official6031/6044 nativepixel reinspection supports only right short-end topcap and uppergraybelt,4originaltriangles/2whole domains. Small336x448photos: inherited nominal grayfamily,not exactthickness,seamdepth or calibratedcolor; darkcap shadow not blackpaint. No newphoto or2026condition claim. Original94coloredfaces/2palette/STL/OBJ/build/otherindices unchanged; lowerbands,roof topbottom,otherreturns,mixedwalls/windows neutral.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

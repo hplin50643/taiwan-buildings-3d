@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "4 original right upper cap/band faces,2 whole domains; original94 retained,98 colored/3864 neutral/3962 triangles. No other returns or mixed walls expanded.",
+  "source_review": "second-source-domain-review.json",
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "visual_review": {
+    "all_ten_final_views_actually_inspected": true,
+    "full_size_details_inspected": [
+      "entry-detail.png",
+      "facade-detail.png",
+      "roof-detail.png"
+    ],
+    "findings": "Gray right upper cap and uppermost band remain confined to two original end planes. Mixed wall,glass,roof and other returns unchanged. No captions, clipping or unintended broad recoloring found."
+  },
+  "limitations": [
+    "Official6031/6044 images each336x448 support broad gray family only, not calibrated HEX or precise modeled thickness/depth.",
+    "Existing official pixels re-inspected, unknown capture date and2010photo path not proof, not2026condition.",
+    "Original approximate geometry and remaining neutral areas preserved. No print validation or publication."
+  ],
+  "blockers": [],
+  "image_sha256": {
+    "preview.png": "b4d99f70c4118410732849e16a9b527cca1636fccf7eddccfac912b3fe941716",
+    "rear.png": "4f9732a445b83b98edbdbbca07ec627187fa70cda0ccc33753c38d50e2eb6987",
+    "front.png": "8659604296b4c0ad3aca8f3917ec0049143367e716e0d6f8392304db72e5d8d5",
+    "back.png": "652183762aa36448a244fd55127ca16d8217d4485700e4be41da3cdcd89adb80",
+    "west.png": "d92d4a63da5da8b07cee3c3472f6d682a22285323afc0a5282e0a4d469228317",
+    "east.png": "7b8289c229cbd1b7ec1f3400c7bbb46e78da1c1ec088885d4883ce38d4f9d70b",
+    "top.png": "b5e004b71ad3cff7be32a042dc7d4a4e648ba4eed96d3a33ce32acfaf63f1bdb",
+    "entry-detail.png": "2121e7b48b18b9b997bb92d3eb588cc2065728d18baa7eaa9ae6f82a2eca02a2",
+    "facade-detail.png": "bc5d7015e3d949529f9264ada84435acdd73b8043416a71d996d0397aae28f4f",
+    "roof-detail.png": "0993ca9ca55444d46d24fc3bda538dc610d63608ffca3a60535187098545bd5b"
+  },
+  "file_sha256": {
+    "model.stl": "a3d5cc659830a56537d7b602bdd32f140c2581dbc703c0b9b1758efeafb0d47a",
+    "model.obj": "055537de003cf1641c56427bef8fd03621b1e66011d01394c9682eaa0f3bfd43",
+    "build_model.py": "0d51863101e0f7bce5fb40e585c6d4a58d11d65a8fbe55d67b8ea0bb3ac459f7",
+    "color-mesh.npz": "abc035a0358913098f891b0673b28610d01491cf751b3510c182f18d262c2609",
+    "palette.json": "ef5c3ef2244c2adc029e3a4d16fc15c1644e91715447eda1e7a23747660c75f6",
+    "appearance.3mf": "db3316fd9cf7dc4dbd462af8c5bb409f07a97299d56e9f7cdaed12c79eaa69cc",
+    "scene.blend": "27d92369c661ef70050418d1bbe35b76465722cdcfb8a7e196a0a740b23804a9",
+    "colorize_model.py": "aea70b5817fadc2d03773104c8dd3941b14dd2ada867c912e8236c09eb936afb",
+    "export_appearance.py": "12ae655a5ed431cecd31830cac22dcf71ed687e143a89b7b4bef5b7b3a46dadb",
+    "validate_color.py": "c3194d0bf8292c34263a8c9570c43560ad3ac74dcd3234a5b6f32d1f832cd948",
+    "render_color.py": "5a94aa48b88c0f67441cdac98d3218c9da8834ed83fb3ba76c7060d0af12e5bb",
+    "verify_color_scene.py": "e2114c4c44ade405f745a6c5333fcb09415f272cbc7c8fd980e833019eaadb1a",
+    "README.md": "126fb2785530d5410f99665fa7b13b9f06530c6e965a33e5edd66cced78e369b",
+    "README.zh-TW.md": "126fb2785530d5410f99665fa7b13b9f06530c6e965a33e5edd66cced78e369b",
+    "CHECKSUM-SCOPE.md": "cde8f2ebd74bbe7d0ceb4d5781f450e9d21b92a5691b29ffb8214adb7feb8f6a",
+    "TOP-RIGHT-RETURN-SOURCE-QA.json": "8a7bb72da2f2fdee8d405edd5b2bbdc7461d9a7c9b2f0ff590add74eeb595d08",
+    "COLOR-SOURCE-REGISTER.json": "8a7bb72da2f2fdee8d405edd5b2bbdc7461d9a7c9b2f0ff590add74eeb595d08",
+    "COLOR-ASSIGNMENT-QA.json": "d8f0e666d1dc3fc5f931c7512644a22e6738a227e72ffa25dc162b1e39645497",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "39dd5f43b1a145e86727565462452541defd9b5cf1137513edcc5d0ac9ea1ca5",
+    "SCENE-QA.json": "081ccbcca09f68510697c8bf79933a5fda2267ff9f9403893e784255d5d26979",
+    "TOP-RIGHT-RETURN-SCENE-QA.json": "0c58dd8949f1fc3f56b44231b3143dec89bb95f37d77c93e67dbceda63b4eaf5"
+  }
+}

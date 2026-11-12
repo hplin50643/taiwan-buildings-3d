@@ -1,0 +1,95 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "parts": [
+    {
+      "bounds": [
+        72,
+        -17.5,
+        39.5,
+        90,
+        92
+      ],
+      "faces": [
+        3946,
+        3952
+      ]
+    },
+    {
+      "bounds": [
+        70,
+        -14.5,
+        36.5,
+        83,
+        84.8
+      ],
+      "faces": [
+        2662,
+        2666
+      ]
+    }
+  ],
+  "count": 4,
+  "complete_domains": [
+    [
+      2662,
+      2666
+    ],
+    [
+      3946,
+      3952
+    ]
+  ],
+  "crossing_domains": [],
+  "old_materials": [
+    1
+  ],
+  "original_files_git_verified": 53,
+  "source_records": [
+    {
+      "name": "official-6031.jpg",
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E53/IMG_6031.JPG",
+      "sha256": "62641548f3fa5e64a15a2288f8fbc3054e988e806554c58fc6df543cf43601a2"
+    },
+    {
+      "name": "official-6032.jpg",
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E53/IMG_6032.JPG",
+      "sha256": "7537bae9a872bdd432ebdf835edb037a92f0e9d0497ea60c522064684c708bab"
+    },
+    {
+      "name": "official-6044.jpg",
+      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E53/IMG_6044.JPG",
+      "sha256": "36839955fbcd4ca507a15a4448d14050ea2ed924b6fdedf708ebfdbc0a8c9016"
+    }
+  ],
+  "personally_viewed": [
+    "official-contact.jpg(all3)",
+    "newsletter-exterior.jpg",
+    "upper-right-6031-native.png",
+    "upper-right-6044-native.png"
+  ],
+  "source_basis": "Existingofficial6031/6044 show short right uppercap edge and grayband below openrooftop strip, not newphotographs. Need secondreview atnativepixels on whether entireoriginal finiteprofile corresponds to samevisiblegraycomponent.",
+  "new_newsletter": "New official115issue exteriorphoto only300x225 shows frontalentry/stairs,not proofrightend; not usedfor newfaces.",
+  "excluded": [
+    "lower2sidebands obscured",
+    "sidewalls mixedbrickstone",
+    "roof top/underside",
+    "rearcap",
+    "windows",
+    "annexe",
+    "newcuts"
+  ],
+  "candidate_counts": {
+    "original_colored": 94,
+    "new": 4,
+    "colored": 98,
+    "neutral": 3864,
+    "triangles": 3962
+  },
+  "limitations": [
+    "Sources336x448/448x336,thinupperedges; nocapturedateverified",
+    "Whole original componentmapping approximate,not measureddepth"
+  ],
+  "work_created": true,
+  "second_source_review": "Independent bounded source GO; final model review separate",
+  "historical_source_register": "qa/top-right-return-previous/COLOR-SOURCE-REGISTER.json"
+}

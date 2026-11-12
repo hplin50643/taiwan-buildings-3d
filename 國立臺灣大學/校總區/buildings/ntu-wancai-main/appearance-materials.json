@@ -4,26 +4,27 @@
       "id": 0,
       "name": "Observed front bands capfascia and entry tread riser stone gray",
       "hex": "#C4C0B2",
-      "faces": 94
+      "faces": 98
     },
     {
       "id": 1,
       "name": "UNVERIFIED mixed brickstone wall windowbacks sides roof neutral",
       "hex": "#B8BAB5",
-      "faces": 3868
+      "faces": 3864
     }
   ],
   "domains": {
     "front_bands": 6,
     "cap_fascia": 2,
     "entry_treads_risers": 86,
-    "whole_coplanar_withdrawals": 4
+    "whole_coplanar_withdrawals": 4,
+    "right_upper_returns": 4
   },
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
   "geometry_policy": "3962 original triangles unchanged; no cuts or addedgeometry",
   "limitations": [
-    "Front bands and cap vertical fascia only; roof top and band returns neutral.",
+    "Original front bands/cap/steps plus4 rightupper cap/belt faces; otherreturns and rooftops neutral.",
     "Whole mixed brickstone walls/windowbacks/annexe/cheeks/landing neutral.",
     "2010photo path not precise capture evidence.",
     "Two material labels not tested filament slicing."
