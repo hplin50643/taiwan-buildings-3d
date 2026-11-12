@@ -15,13 +15,15 @@ assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Three official undated photos: central tower and portico only, not full library.
-palette=[('Unknown sides roof base','#A7AAA5',.86),('Muted reddish brown brick family','#946D61',.86),('Original grey green trim bars','#9A9E94',.85),('Pale glass block appearance opaque proxy','#ACB8AF',.65),('Pale triangular infill opaque proxy','#9BABA8',.65),('Dark front windows entrance proxy','#46565A',.62),('Original muted red narrow frames','#795C58',.8),('Rear and outward drum window proxy','#697D78',.62),('Original grey entry steps','#A0A29A',.86)]
+palette=[('Unknown sides roof base','#A7AAA5',.86),('Muted reddish brown brick family','#946D61',.86),('Original grey green trim bars','#9A9E94',.85),('Pale glass block appearance opaque proxy','#ACB8AF',.65),('Pale triangular infill opaque proxy','#9BABA8',.65),('Dark front windows entrance proxy','#46565A',.62),('Original muted red narrow frames','#795C58',.8),('Rear and outward drum window proxy','#697D78',.62),('Original grey entry steps','#A0A29A',.86),('Continuous brick on existing side and return walls','#946D61',.86),('Inferred existing side window opaque proxy','#697D78',.62)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
 def near(v,t,e=.035):return abs(v-t)<e
 import numpy as np
 EPS=.012
@@ -97,11 +99,23 @@ for p in mesh.polygons:
  for k in range(5):
   if boxface(v,0,-66+k*1.6,2.8,104,2,.55*(k+1)):i=8
  if max(v[:,2])<=3+EPS:i=0
+ original_indices.append(i)
+ # v2 material continuity across existing surfaces; no new vertices or window arrays.
+ # Broad brick family supported by official rear-oblique photograph; hidden faces inferred.
+ if i==0 and min(v[:,2])>=3-EPS:
+  if abs(nz)<.1:i=9
+  # Original side recess back planes only; returns remain brick.
+  for side in [-1,1]:
+   xx=side*52.5
+   for y in [-23,-10,3,16,29]:
+    for z in [11,23,35,47,59]:
+     if plane(v,0,xx) and nx*side>.8 and bounded(v,[xx,y-4,z],[xx,y+4,z+5.8]):i=10
+ if i!=original_indices[-1]:changed_faces.append(p.index)
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; continuous side brick, existing side glazing proxy, hidden faces inferred'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -131,9 +145,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Central tower and front portico only, no low east-west wings or landscape pillars. Undated photo appearance, not repair-completion certification. Unknown side windows and broad roofs neutral; no diagonal infill grid, glass-block grid, gold text, brick seams or extra bands. Triangular infills and short portico windows are opaque mixed-material proxies, not confirmed transparent glass.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Broad side wall brick family supported by official rear-oblique photograph. Hidden side/return surfaces and side glazing color are continuity approximations, not individually surveyed.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Central tower and front portico only, no low east-west wings or landscape pillars. Undated photo appearance, not repair-completion certification. Broad roofs and base remain neutral; existing side windows use matching opaque proxies; no diagonal infill grid, glass-block grid, gold text, brick seams or extra bands. Triangular infills and short portico windows are opaque mixed-material proxies, not confirmed transparent glass.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-190,-270,170),(0,0,50.5),230),'rear':((190,270,160),(0,0,50.5),230),'elevation':((0,-330,50.5),(0,0,50.5),230),'source-angle':((-155,-270,90),(0,-5,50.5),230),'top':((0,0,350),(0,0,0),230)}
+views={'front':((-190,-270,170),(0,0,50.5),230),'rear':((190,270,160),(0,0,50.5),230),'elevation':((0,-330,50.5),(0,0,50.5),230),'source-angle':((-155,-270,90),(0,-5,50.5),230),'left':((-300,-60,150),(0,0,50.5),230),'right':((300,60,150),(0,0,50.5),230),'top':((0,0,350),(0,0,0),230)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

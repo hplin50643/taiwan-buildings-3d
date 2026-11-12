@@ -15,13 +15,15 @@ assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Official pre-repair photographs, capture dates unknown; same original mesh.
-palette=[('Unknown court rear roof base','#A7AAA5',.86),('Pale peach sand observed wall family','#B5A48D',.86),('Grey cloud ribbons caps structural family','#8F938B',.87),('Grey green window curtain mixed opaque proxy','#8A9692',.65),('Neutral grey original entry steps','#9B9D95',.86)]
+palette=[('Unknown court rear roof base','#A7AAA5',.86),('Pale peach sand observed wall family','#B5A48D',.86),('Grey cloud ribbons caps structural family','#8F938B',.87),('Grey green window curtain mixed opaque proxy','#8A9692',.65),('Neutral grey original entry steps','#9B9D95',.86),('Inferred continuous sand peach courtyard rear walls','#B5A48D',.86),('Inferred continuous grey cap tops and reveals','#8F938B',.87)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
 def near(v,t,e=.035):return abs(v-t)<e
 import numpy as np
 EPS=.012
@@ -107,11 +109,26 @@ for p in mesh.polygons:
  for k in range(4):
   if boxgeom(v,0,-74+k*1.3,2.8,43,1.5,.5*(k+1)):i=4
  if max(v[:,2])<=3+EPS:i=0
+ original_indices.append(i)
+ # v2: original neutral surfaces only. Reuse actual face boundaries; add no geometry.
+ if i==0 and min(v[:,2])>=3-EPS:
+  # Continue the measured model's existing cap and beam material to its upper faces.
+  if grey:i=6
+  # Main pyramid court-facing wall and originally neutral window jamb/reveal faces.
+  elif bounded(v,[-39,-61,3],[39,-13,75]) and abs(nz)<.95:i=5
+  # Original rear cross-block walls; cut rear openings retain neutral back planes.
+  elif bounded(v,[-34,47,3],[34,65,29]) and abs(nz)<.1:
+   window_back=plane(v,1,64.25) and any(bounded(v,[x-4.5,64.25,8],[x+4.5,64.25,21]) for x in [-14,0,14])
+   if not window_back:i=5
+  # Tower slot reveals continue the existing wall family, never filled with glass.
+  for x in [-26,26]:
+   if i==0 and bounded(v,[x-5.5,47.5,3],[x+5.5,62.5,67]) and abs(nz)<.1:i=5
+ if i!=original_indices[-1]:changed_faces.append(p.index)
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; inferred courtyard/rear wall material continuity; no new windows'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -141,9 +158,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Pre-repair exterior only; photo capture dates unknown; rear court wall and rear crossblock windows neutral. No repairs, courtyard emblem, bells, flags, lettering, grids, vegetation or new trim faces added. Open portico and tower openings are not glass.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'original_face_material_indices':original_indices,'changed_faces':changed_faces,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Pre-repair exterior only; photo capture dates unknown; rear court wall material inferred from visible wall family; rear crossblock window back planes remain neutral. No repairs, courtyard emblem, bells, flags, lettering, grids, vegetation or new trim faces added. Open portico and tower openings are not glass.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-180,-260,160),(0,0,40.6),230),'rear':((180,260,140),(0,0,40.6),230),'elevation':((0,-330,40.6),(0,0,40.6),230),'source-angle':((-200,-230,90),(0,-10,40.6),230),'top':((0,0,350),(0,0,0),230)}
+views={'front':((-180,-260,160),(0,0,40.6),230),'rear':((180,260,140),(0,0,40.6),230),'elevation':((0,-330,40.6),(0,0,40.6),230),'source-angle':((-200,-230,90),(0,-10,40.6),230),'left':((-300,0,130),(0,0,40.6),230),'right':((300,0,130),(0,0,40.6),230),'top':((0,0,350),(0,0,0),230)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
