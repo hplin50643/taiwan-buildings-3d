@@ -38,6 +38,11 @@
       "sha256": "75d2bcb28eb81f156ed15a357381d3734dd76e2740bd268889b1d1bd65fe9758"
     },
     {
+      "path": "NO-TEXT-QA.json",
+      "size": 1137,
+      "sha256": "6551316470b60bcb6ec1367d7ee6674d7d4bb17bd785a26001e6129ec7cd2f9c"
+    },
+    {
       "path": "PUBLIC-HYGIENE-QA.json",
       "size": 228,
       "sha256": "5630ea96cec0cceefdb93d6a67c9a7457a71035077388711404ecf96a84fc31a"
@@ -59,8 +64,8 @@
     },
     {
       "path": "SHA256SUMS",
-      "size": 8980,
-      "sha256": "a919027492b971ba147462a6056195e118e29eca48ebc514e195811a5c55ca67"
+      "size": 9062,
+      "sha256": "c53817aeb908e91dc2cc388412e3f523fde83c3ec1f8efee2bdb1bd32d8bf22d"
     },
     {
       "path": "SOURCE-BOUNDARY-DISTANCE.json",
@@ -134,8 +139,8 @@
     },
     {
       "path": "label_previews.py",
-      "size": 874,
-      "sha256": "76cb3eb8a3402b9166fc0e44791123ca7a74fdd85f66bdfd79689050fa767f6b"
+      "size": 346,
+      "sha256": "2daf2a51272a9f1e367ad5b485c818fa5483d1073e127c770d5c4627cd1a0092"
     },
     {
       "path": "metadata-hygiene.json",
@@ -424,23 +429,23 @@
     },
     {
       "path": "review-court-oblique.png",
-      "size": 886561,
-      "sha256": "50522709a0cbf7c70372f5b22a14d7aa50b827306f17afd83470b23052bfbe74"
+      "size": 1315763,
+      "sha256": "5a6ff43077971a6b0a268b612fda94860537e4e2f7b5bd22b8969dab9903b128"
     },
     {
       "path": "review-entry-end.png",
-      "size": 888692,
-      "sha256": "fa8327984f6dc533c3883a41039025c80256636a31748b54fd918b1b8c5f1f45"
+      "size": 1307549,
+      "sha256": "9acd32dab95a07a524d505d641335d26c027fbcd863cff79075f3600c5edf63f"
     },
     {
       "path": "review-rear-oblique.png",
-      "size": 942179,
-      "sha256": "e5125593bac7f7e71158689e8f1db9ab52b4b94937ed22234f11986399f332cf"
+      "size": 1388733,
+      "sha256": "fd4f3c812da6fa6a8f0d41d26aa44c6f721211d62174088989c754c5267586b8"
     },
     {
       "path": "review-top.png",
-      "size": 1000622,
-      "sha256": "74eceb504bacba345747a5e88da24030f7c86ec306e5c2c27ad150971a6683fc"
+      "size": 1417382,
+      "sha256": "d8ca4d25463608b1172638c2f1a54958066c01a30f25319a73bac2beb7c56d42"
     },
     {
       "path": "sanitize_metadata.py",
@@ -493,8 +498,9 @@
       "sha256": "0ec240cd2a9ce459bc5404403dfca0e7db38e0241361af8d53b6756d3fb8d6a1"
     }
   ],
-  "file_count": 98,
+  "file_count": 99,
   "source_photographs_not_included": true,
   "no_original_models_overwritten": true,
-  "physical_fit_or_print_approval": false
+  "physical_fit_or_print_approval": false,
+  "preview_update": "Caption aliases now contain unlabelled original render bytes; physical and research limitations unchanged."
 }

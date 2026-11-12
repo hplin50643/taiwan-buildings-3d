@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "method": "Existing original unlabelled renders copied byte-for-byte, no pixel editing or geometry changes.",
+  "checks": [
+    {
+      "file": "review-court-oblique.png",
+      "unlabelled_original": "court-oblique.png",
+      "architectural_pixels_exact": true,
+      "original_dimensions": [
+        1500,
+        1300
+      ]
+    },
+    {
+      "file": "review-rear-oblique.png",
+      "unlabelled_original": "rear-oblique.png",
+      "architectural_pixels_exact": true,
+      "original_dimensions": [
+        1500,
+        1300
+      ]
+    },
+    {
+      "file": "review-top.png",
+      "unlabelled_original": "top.png",
+      "architectural_pixels_exact": true,
+      "original_dimensions": [
+        1500,
+        1300
+      ]
+    },
+    {
+      "file": "review-entry-end.png",
+      "unlabelled_original": "entry-end.png",
+      "architectural_pixels_exact": true,
+      "original_dimensions": [
+        1500,
+        1300
+      ]
+    }
+  ],
+  "visual_review": "All four original render views inspected and contain no overlaid text; actual architectural pixels match original labelled previews exactly."
+}
