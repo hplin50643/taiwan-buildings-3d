@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "scope": "Independent final material-withdrawal review; not geometry or print-engineering recertification",
+  "triangles": 6318,
+  "withdrawn_color_faces": 29,
+  "added_color_faces": 0,
+  "colored_before": 2801,
+  "colored_after": 2772,
+  "neutral_after": 3546,
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "findings": [
+    "Exact 29 brick-to-neutral changes within one complete 41-face connected coplanar domain; its other 12 faces were already neutral.",
+    "Original vertices, faces, STL, OBJ, build and five palette entries preserved; 3MF exact and isolated reconstruction PASS.",
+    "Mixed domains reduced from 5 to 4; all remaining four domain memberships and material indices unchanged. All unselected indices exact.",
+    "Actually inspected all ten final views in montage and entry-detail, facade-detail, roof-detail separately at full image size. Portal cap neutral, no additional recoloring observed.",
+    "Independently reopened saved scene: mesh, five shaders, camera, lights, render settings and object inventory verified; captions/backdrop hidden and stamp off.",
+    "README.zh-TW.md is unchanged historical monochrome documentation; current material withdrawal is documented in README.md. Historical engineering aliases remain intact."
+  ],
+  "limits": [
+    "Original official low-resolution 2010-photo source reinspection, not a new capture or current-condition survey.",
+    "Visible mixed pale inset, brick ring and dark coping lack matching original geometry boundaries. Neutral means unsupported assignment withdrawn, not all faces proven gray or brick-free.",
+    "No new inset geometry or repair of original upper triangular gable. Four old mixed domains remain; no claim the whole model is resolved.",
+    "Source QA intentionally remains a fixed pending-final-review snapshot, superseded for final disposition by this independent report."
+  ],
+  "image_sha256": {
+    "preview.png": "bcd9a35c66d2d67eac10963a9a5f9e1d90b2a92a39e7e875f3e747a5b31b0c3f",
+    "rear.png": "cb433e9d5f1bc2a5b57830be09cd3aaba1ee0e298d4d19bb26474fd41ace0bc8",
+    "front.png": "66e1dd7cb8f57d3fad1b8e86037e2786d6cc6dfd8d525efcf94668de277129ba",
+    "back.png": "73a25c876be7d2a8d82d7ca39befa683d42fe61738b816f69a03be403d5746a0",
+    "west.png": "a4f11f123444541c38c8384fc5331707e32ed2e4b9bd141b7a55a05dc78199ff",
+    "east.png": "8185e551e4dc24e7a632f4dd930c0b6ffa8c4fb4db62654f8c8467700c4d2cd2",
+    "top.png": "4ea4716727c6948165c40f8466a28303cd41dc9e385ea6f4b1b299ef5c950803",
+    "entry-detail.png": "602a42f192f23af7963cea43debaf3f6f02e101c6ce5a5e3ff3fa011db84a77a",
+    "facade-detail.png": "249b2d42344753c09abed67b139e7daf10b420bc34bdbfc60fa5411cf13397b4",
+    "roof-detail.png": "9d83433cf248cf2ada3d90da0476841047c2d4d5aa304d2941c28a07237b6206"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "49d5316110d1924fd236039550b57f0671c834ee5d3d97901ce9b255dcffc07b",
+    "appearance.3mf": "0ba47e774af11b2ca7998822231b7cf17148524ab4372d673f23f2e8edf39c14",
+    "palette.json": "d3c1ebaeb05739cc01cd3854d4d9b3ea20dd178e9510e8d65a45661ad85bf809",
+    "appearance-materials.json": "1c148b676570f6c9f60f43c84e1d190bb20e5d8faa72ef6e5e7e11f7df865f7e",
+    "colorize_model.py": "2cfd2fff6af7f4899ad27c097c4c3ba238f5386af4454a0dfd4720bc8fbe9ad1",
+    "export_appearance.py": "499f0a3f95d11cdcc9b999b80b186e49870748f4b8101d06b2c9001c8921c440",
+    "validate_color.py": "548e6b23c8ce1443caa5252741321afc4133c505682cf8f17abdc13145f6fb3b",
+    "verify_color_scene.py": "b3b77fdce99bd57ba9dc02024e271b07e68cf0ed9014ac9afcc8cf8477b81f40",
+    "render_color.py": "d2ee0b048f24147abbd9c2479340a1789ef7d9f37865948ae4b0e79018d1012a",
+    "scene.blend": "8c700746fcd8c3e24e3944f615e28e148c5f5e5c69d882524e584565e21a67bc",
+    "README.md": "c28afe79d2ca79a9631fbb078e903cb24ff8007a072e97e4489afe223c690c0f",
+    "README.zh-TW.md": "d56a5e2ee2b9d7884b47d84853b0ed9a029d0da81f5bde28bb427683d60031e5",
+    "CHECKSUM-SCOPE.md": "55eab9e71d9e04778fc46029b2eb02c6556260ea47de4b80b1d892108276f1d5",
+    "COLOR-ASSIGNMENT-QA.json": "0683674835b61c9dc9c3fdbadf37dff6c9433a577d0312cc2e781a3219b81f3e",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "8b272b1dd752ade51c0c5d4546de663ab0d87649d3745f70c5f2d4e998df8c65",
+    "COLOR-SOURCE-REGISTER.json": "26d8835b9df92b906712f5b5ea6c81172fe20d0899467c199b75f3d32f0eb510",
+    "SCENE-QA.json": "36650bd5c870369baa70e1beaa2be6a60e6ae0cfe56b8739460a9dcb2f5376c4",
+    "PORTAL-CAP-WITHDRAWAL-SOURCE-QA.json": "26d8835b9df92b906712f5b5ea6c81172fe20d0899467c199b75f3d32f0eb510",
+    "PORTAL-CAP-WITHDRAWAL-SCENE-QA.json": "91e371c41368421cf4ae5d7c5a698308cc55322644b1e48e60bcb1e197301730",
+    "model.stl": "34622c157322ad7bb3ab6ae6d1f5c51672b7466aaafe259bc1ee17f1bbaf7c78",
+    "model.obj": "46a1b45fa2478ba5810a8d469ef5d0efbb23d6992b8d35d99b0d1e7392b0dd66"
+  },
+  "private_source_pixels_included": false,
+  "published": false
+}

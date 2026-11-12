@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "Bounded portal-cap-withdrawal update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T12:39:05.214869+00:00",
+  "triangles": 6318,
+  "original_color_faces": 2801,
+  "new_color_faces": 0,
+  "withdrawn_color_faces": 29,
+  "colored_faces": 2772,
+  "unknown_neutral_faces": 3546,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "34622c157322ad7bb3ab6ae6d1f5c51672b7466aaafe259bc1ee17f1bbaf7c78",
+  "color_mesh_sha256": "49d5316110d1924fd236039550b57f0671c834ee5d3d97901ce9b255dcffc07b",
+  "images_sha256": {
+    "preview.png": "bcd9a35c66d2d67eac10963a9a5f9e1d90b2a92a39e7e875f3e747a5b31b0c3f",
+    "rear.png": "cb433e9d5f1bc2a5b57830be09cd3aaba1ee0e298d4d19bb26474fd41ace0bc8",
+    "front.png": "66e1dd7cb8f57d3fad1b8e86037e2786d6cc6dfd8d525efcf94668de277129ba",
+    "back.png": "73a25c876be7d2a8d82d7ca39befa683d42fe61738b816f69a03be403d5746a0",
+    "west.png": "a4f11f123444541c38c8384fc5331707e32ed2e4b9bd141b7a55a05dc78199ff",
+    "east.png": "8185e551e4dc24e7a632f4dd930c0b6ffa8c4fb4db62654f8c8467700c4d2cd2",
+    "top.png": "4ea4716727c6948165c40f8466a28303cd41dc9e385ea6f4b1b299ef5c950803",
+    "entry-detail.png": "602a42f192f23af7963cea43debaf3f6f02e101c6ce5a5e3ff3fa011db84a77a",
+    "facade-detail.png": "249b2d42344753c09abed67b139e7daf10b420bc34bdbfc60fa5411cf13397b4",
+    "roof-detail.png": "9d83433cf248cf2ada3d90da0476841047c2d4d5aa304d2941c28a07237b6206"
+  },
+  "current_independent_review": "PORTAL-CAP-WITHDRAWAL-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Same original official2010directory photograph5952 native-pixel reinspection shows gray inset,brick arc and dark cap line across one modeled solid shallow-arch front. Withdraw29brick triangles to neutral within a41face complete coplanar domain, retaining its12alreadyneutral faces. No invented gray/brick boundary or new triangles. Mixed coplanar domains reduce5to4; all remaining4 and other material indices unchanged. Not a new source photo or2026condition claim; nominal existing colors uncalibrated.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": {
+    "preview_size": true,
+    "preview_fresh": true,
+    "rear_size": true,
+    "rear_fresh": true,
+    "front_size": true,
+    "front_fresh": true,
+    "back_size": true,
+    "back_fresh": true,
+    "west_size": true,
+    "west_fresh": true,
+    "east_size": true,
+    "east_fresh": true,
+    "top_size": true,
+    "top_fresh": true,
+    "entry-detail_size": true,
+    "entry-detail_fresh": true,
+    "facade-detail_size": true,
+    "facade-detail_fresh": true,
+    "roof-detail_size": true,
+    "roof-detail_fresh": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_PASS": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_mesh": true,
+    "SCENE-QA.json_PASS": true,
+    "SCENE-QA.json_mesh": true,
+    "FRAMING-QA.json_PASS": true,
+    "FRAMING-QA.json_mesh": true,
+    "model.stl_original_bytes": true,
+    "build_model.py_original_bytes": true,
+    "first_section_ten_images": true,
+    "three_columns": true,
+    "no_private_absolute_paths_in_new_public_text": true
+  },
+  "images_sha256": {
+    "back.png": "022ea9d46fa6663ddfdb9949dfbc1083f6c4c0ab6142cae7a6159b25320d2eb7",
+    "east.png": "edabe46cce6bfaef299c6b2dd4bccaf2cfe15105d183414282eeed5969141d39",
+    "entry-detail.png": "1a3f4b2d1a56868f2264d09f4f97bcfba5cea5101d60e7f0328e4afac1e3a97c",
+    "facade-detail.png": "3368d5cbcebefa197f95c751e439da2106a00d63f7e9d81517432beeadd58cf5",
+    "front.png": "5f8bd950e20b4131617d8a8c08d3c6176681a1f6633e0d7ffb19799c01ac239d",
+    "preview.png": "5078a7692514a7f8b52a4e5e9543a856e8fc91e59624d2aed9407b5b3d3146e0",
+    "rear.png": "2c6551c8c7976cc8ac4056d6d66b60de5192fd4eb39ff29072763a865123ab2d",
+    "roof-detail.png": "21a49a511c488914fad128db64233226ad794ecb908ca89e8fd368f7d44ef713",
+    "top.png": "63a26e103a3ff9446e6ba3314c5f795f5ce62d8da7ccb451620736494b230853",
+    "west.png": "6064164028ee63f269eccc20ca2457ac32c8afbe27f6161bf9d462bab6d132e3"
+  },
+  "mesh_sha256": "33b52ffa4e8b0a69f676b52d9cad920a91708ba21bd383d2c80fa858dd6027af",
+  "geometry_change": false,
+  "count_delta": 0,
+  "manual_visual_review": "Builder manual final review recorded separately; 2010 front and left limited color families; unsplit plinth-crossing large faces and rear/roof neutral. Original geometry unchanged.",
+  "limitations": [
+    "Five appearance materials, not a verified four-filament slicer job.",
+    "Original simplified geometry preserved; no current full-building survey claim."
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
+}

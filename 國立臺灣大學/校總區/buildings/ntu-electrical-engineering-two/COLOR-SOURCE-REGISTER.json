@@ -1,77 +1,116 @@
 {
-  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
-  "slug": "ntu-electrical-engineering-two",
-  "sources": [
-    {
-      "path": "color-source-review-20261102/ntu-electrical-engineering-two/IMG_5936.JPG",
-      "sha256": "3d6a21fe1a6ceb0bec28fc47d793d3a879ddf0cda18ff8af0b8c4e1ad87e92c1",
-      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E3/IMG_5936.JPG",
-      "actually_viewed": true
-    },
-    {
-      "path": "color-source-review-20261102/ntu-electrical-engineering-two/IMG_5952.JPG",
-      "sha256": "e3538145f9b7f3edf506e592737ea2a83579f15cb0d7ac3a699ce4370f361995",
-      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E3/IMG_5952.JPG",
-      "actually_viewed": true
-    },
-    {
-      "path": "color-source-review-20261102/ntu-electrical-engineering-two/IMG_5954.JPG",
-      "sha256": "5f57681749bde2b59f28a655fb101cc8b98b5d16b4d10dc01bd235879d9dcad6",
-      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E3/IMG_5954.JPG",
-      "actually_viewed": true
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "action": "Withdraw29 brickassigned triangles to neutral; no newcolor and no claim all29 actualgray.",
+  "selected_faces": [
+    5297,
+    5304,
+    5305,
+    5306,
+    5307,
+    5308,
+    5309,
+    5310,
+    5311,
+    5312,
+    5313,
+    5314,
+    5315,
+    5316,
+    5317,
+    5318,
+    5338,
+    5339,
+    5340,
+    5341,
+    5342,
+    5343,
+    5344,
+    5345,
+    5346,
+    5347,
+    5354,
+    5355,
+    5374
   ],
-  "audit": {
-    "path": "color-audit-mixed1-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
-    "sha256": "0ab1b0f8c3b3e8ea2a3298415df110292cf7c637b9246605de9a7bb45ccf3318"
+  "whole_domain_faces": [
+    5306,
+    5342,
+    5305,
+    5345,
+    5346,
+    5347,
+    5344,
+    5311,
+    5309,
+    5308,
+    5297,
+    5307,
+    5304,
+    5355,
+    5310,
+    5318,
+    5354,
+    5256,
+    5255,
+    5246,
+    5260,
+    5259,
+    5341,
+    5343,
+    5340,
+    5339,
+    5338,
+    5316,
+    5317,
+    5374,
+    5312,
+    5313,
+    5315,
+    5258,
+    5314,
+    5248,
+    5245,
+    5244,
+    5247,
+    5249,
+    5257
+  ],
+  "before_domain_counts": [
+    29,
+    0,
+    0,
+    0,
+    12
+  ],
+  "after_domain_counts": [
+    0,
+    0,
+    0,
+    0,
+    41
+  ],
+  "personally_viewed": [
+    "IMG_5952.JPG",
+    "portal-cap-native.png"
+  ],
+  "source": {
+    "file": "IMG_5952.JPG",
+    "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E3/IMG_5952.JPG",
+    "sha256": "e3538145f9b7f3edf506e592737ea2a83579f15cb0d7ac3a699ce4370f361995"
   },
-  "rights": "Official public exterior references; express CC not verified. Originals private, not public textures/images or commercial-rights guarantee.",
-  "version": "Official 2010 photograph group of electrical engineering building 2 E3, not building1/Boli. No exact present-condition color claim. 5954 name plaque identity only, not new modeled text.",
-  "constraints": [
-    "Original STL/vertices/faces unchanged; same slug count0",
-    "Unknown and unresolved crossing faces coherently neutral",
-    "No centroid-based paint wedges, no new letters or texture motifs"
+  "findings": [
+    "Official frontphoto visibly distinguishes palegray inset from redbrick arch surround and darkcopingline.",
+    "Original shallow_arch solid front has no matching inset/coping boundaries; existing rule assigns wholeboundedupperregionbrick regardless of realpanel.",
+    "Withdrawing assigned29 on the complete41face coplanardomain removes an unsupporteduniformbrick interpretation; its other12neutralfaces remainexact.",
+    "Independent originalvertices/domain recomputation matches29/41 and proposedchangedindicesexactly."
   ],
-  "original_faces": 6318,
-  "count_delta": 0,
-  "geometry_change_permitted": false,
-  "issued_utc": "2026-11-02T18:52:00Z",
-  "independent_review": {
-    "path": "color-source-review-20261102/ntu-electrical-engineering-two/NTU-ELECTRICAL-ENGINEERING-TWO-INDEPENDENT-FOCUSED-COLOR-REVIEW-1851.json",
-    "sha256": "4827e9f49d9a0919d5310884e7e6c8194dd96dc99db49fdd8eabf8964d8968c1"
-  },
-  "approved_mapping": [
-    "2010 E3 front y=-19.5 and documented x=-68.5 end support muted brick family; use complete uniquely matched original wall faces only.",
-    "Existing original window/mullion bands and cap trim gray, real recessed backing dark gray; source air-conditioners and gold characters not added.",
-    "Front low portal brick only on uniquely supported original outer faces, gray existing edge/steps and dark actual cut backing. If original cut failed to produce recess do not paint a false door."
+  "limits": [
+    "Lowresolution historicalphoto reinspection,not newcapture or2026state.",
+    "Neutral means unverified/inseparable,not grayreplacement or proofall29redwrong.",
+    "No newgray/black/brick detail,top/rear/side changes,meshcuts or geometryrepair.",
+    "Otheroriginalmixeddomains mustremain exact; onlyoneaffectedmixed domain removed,not globalmaterialQA clean.",
+    "Sourcesprivate; alloriginalpalette/geometry/engineeringlimitations stay.",
+    "Final numerical,3MF,tenviews andsavedscene review pending."
   ],
-  "mandatory_public_limits": [
-    "Source lower gray plinth is not license to centroid-split long triangles: any unseparated face crossing brick/gray boundary neutral, entire-plane fallback if needed.",
-    "Unknown far end, rear and entire horizontal roof neutral.",
-    "Original triangular central gable differs from photographed shallow arch; color does not validate or repair this geometry.",
-    "No air-conditioners, gold labels, glass texture or new topology.",
-    "All vertices/surface checks rather than centroid color boundaries; no new or split triangles.",
-    "Approximate uncalibrated color families, not exact current color/as-built proof.",
-    "Photos private, no texture or blanket reuse rights; final mesh and ten-view independent QA still required."
-  ],
-  "palette_nominal_srgb": {
-    "pale_wall": "#CFD3D0",
-    "glass_back": "#596E70",
-    "mullion": "#727B7A",
-    "brick": "#A17C6F",
-    "recess": "#3F4747",
-    "unknown_neutral": "#B8BAB6"
-  },
-  "model_qa": "Pending unchanged STL bytes/vertices/faces, full-face domains/no diagonal wedges, ten views, actual scene/3MF materials, private final backup. Source GO not model completion.",
-  "source_GO_sha256": "70435796b853ebcb8c7b46eca15fea2eaccb7df2747cb686a50ed3178cca5eb6",
-  "private_source_backup_receipt": "color-source-backup-mixed1-20261102-1853/PRIVATE-BACKUP-RECEIPT-1853.json",
-  "implementation_scope_narrowing": [
-    "Entire front and left major wall planes and full-height projecting pilasters neutral because photographed gray plinth boundary has no separate original face boundary.",
-    "Brick only upper parapet/cap fronts and existing window reveals; no repaired geometry."
-  ],
-  "scope_appendix": {
-    "path": "color-source-review-20261102/ntu-electrical-engineering-two/NTU-E3-IMPLEMENTATION-SCOPE-NARROWING-1857.json",
-    "sha256": "8cb25b09b3c84f4bd4ea21094cbb4a00c9210bf05fa2567c64a35ac6fe359323"
-  },
-  "central_cap_infill_correction": "Observed upper shallow-arch solid gray infill, not glass; only existing recess backing material changed."
+  "historical_source_register": "qa/portal-cap-withdrawal-previous/COLOR-SOURCE-REGISTER.json"
 }

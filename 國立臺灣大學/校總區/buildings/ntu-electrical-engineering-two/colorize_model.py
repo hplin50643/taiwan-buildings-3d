@@ -39,5 +39,17 @@ for i,(t,n)in enumerate(zip(m.triangles,m.face_normals)):
  if inside(-18,18,-35.85,-29.95,2.801,5.601) and (nz>.5 or ny<-.5):a[i]=1
  # Narrow known front cap fascia, no top/side/back extension.
  if plane(1,-20.5) and inside(-69.5,69.5,-20.51,-20.49,64,65.3):a[i]=1
+
+# Withdraw unsupported uniformbrick on lowerportal mixedinfill cap; no new material.
+old=a.copy();t=m.triangles;n=m.face_normals
+hit=(abs(t[:,:,1]+30).max(1)<.003)&(t[:,:,0].min(1)>=-12.5-.003)&(t[:,:,0].max(1)<=12.5+.003)&(t[:,:,2].min(1)>=17-.003)&(t[:,:,2].max(1)<=22+.003)&(a==0)
+ad=m.face_adjacency;groups=trimesh.graph.connected_components(ad[(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999],nodes=np.arange(len(t)),min_len=1)
+affected=[c for c in groups if hit[c].any()];assert len(affected)==1 and len(affected[0])==41 and hit.sum()==29
+assert np.bincount(old[affected[0]],minlength=5).tolist()==[29,0,0,0,12]
+a[affected[0]]=4;assert np.array_equal(np.flatnonzero(a!=old),np.flatnonzero(hit))
+old_mixed=[c for c in groups if len(set(old[c]))>1];new_mixed=[c for c in groups if len(set(a[c]))>1]
+assert len(old_mixed)==5 and len(new_mixed)==4
+assert all(np.array_equal(a[c],old[c]) for c in groups if not hit[c].any())
+assert np.bincount(a).tolist()==[1279,983,508,2,3546]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'geometry_policy':'6318 original triangles unchanged','limits':['2010 photographs, not current precise colors.','Front and left full wall planes and full-height pilasters crossing gray plinth remain neutral.','Original central triangular gable not repaired to photographed shallow arch.','Unknown back/right/roof neutral; no air conditioners or gold labels added.','Five appearance labels are not a verified four-filament slicer project.']},indent=2)+'\n');q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':len(m.faces),'materials_used':np.unique(a).tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q)
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'geometry_policy':'6318 original triangles unchanged','withdrawn_color_faces':29,'new_color_faces':0,'affected_whole_domain_faces':41,'old_mixed_domains':5,'remaining_original_mixed_domains':4,'unaffected_domain_materials_exact':True,'limits':['Historical officialphoto reinspection withdraws29 unsupporteduniformbrick portalcapfaces,not newgray paint.','Four other original mixedcoplanardomains remain exact,not zero mixed-domain claim.','2010 photographs, not current precise colors.','Front and left full wall planes and full-height pilasters crossing gray plinth remain neutral.','Original central triangular gable not repaired to photographed shallow arch.','Unknown back/right/roof neutral; no air conditioners or gold labels added.','Five appearance labels are not a verified multi-filament slicer project.']},indent=2)+'\n');q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':len(m.faces),'materials_used':np.unique(a).tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q)
