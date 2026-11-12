@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nfu-chingkuo-entrance-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "b97ea6e8f6fe4ff161d154341789bfae48a17823047f6faec745c8f1f8a09027",
+    "east.png": "356927c0ca9745423860ac704a9790d33ed42699fdb5d72a546d8cd4d72e7629",
+    "entry-detail.png": "f0af399f2a1c2c40fbf52ff31dc3107940e44b5846f6d9d2367d4642dc5c1ba5",
+    "facade-detail.png": "d7e47d0a39fa69b6da4a04ad28125d82b8bb9e7f5411aaa2f7be16fc9a6b120b",
+    "front.png": "37bfba2f5f002ee61ad91b665d5be07311a1cb56090092ea396a036c3eb2d9d0",
+    "preview.png": "6d17ed08f3928026a7bb29addf1bdfd1fd77ee310e7f4a7ce1e6b89ef0fa260d",
+    "rear.png": "61ef7d97152f11cc99e0b5e81ed72f33493995f6f6ffc0f925f383f769bcfe48",
+    "roof-detail.png": "7e67b5f772ff404c254c75778d7cedf9da24b2cde7431caaf9c373cf3bd1de54",
+    "top.png": "36bfc4e2c26ddd32faf0b7e1a41be79168d654f67c5bb0e14968fb822d4a82d3",
+    "west.png": "0b594d4ce6a387a683e3c908d75d6604ddb69594a47431ab2774a56bd304d997"
+  }
+}

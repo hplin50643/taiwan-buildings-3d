@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten views in nfu-main-gate-all-views.jpg visually checked: no overlay text, geometry and original framing preserved."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "86fcdb95056cca75c3a2415cd813340c53a9af82ab7bf110ad67e2163081e798",
+    "east.png": "93eeaf63ea0461f95a2380350b2320b31230c6e9851b1cd297f96604efd8dcde",
+    "entry-detail.png": "96fd4c5f8ca33fe6714d506043b7493e71c2f1bc8ce4844e0d42a2b8a9c00eb5",
+    "facade-detail.png": "11f57a53360ee7493ebda42c52e481ec635a6013680af79aa67f67048af83534",
+    "front.png": "3ce239d6441d14914501cf4aca5e288b2605213bcdd81ea79b193ab19195b1a9",
+    "preview.png": "3f3601ad18c70eeb188ab1040f9f20d20c53a17666fa8ee389b3c84ae1b42717",
+    "rear.png": "8be9c037580155b98c8aa8dfc793f8f182c7065507b705962c92e3f584547e8a",
+    "roof-detail.png": "a324731829132a3665078b9471392eef15de4919fe0e1c9ba29031b8e1408261",
+    "top.png": "19f796ef033d589a89537bef05d21f13866f324dfcbbc16cd9dc47d3cbe6c781",
+    "west.png": "607dd0048020d164cda7b8c4b96692b35daf053bd81e4084b1fe8fd9f8d45c68"
+  }
+}
