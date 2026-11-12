@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in meiho-zhimei-dorm-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "a11d831825d1b2d04b44c836526a3f69c82327be4c5900e4dbf334b12ef14fef",
+    "east.png": "8dae509732a425519bb66e9cd24488f60b3617c843a846d848e8dc1ace016771",
+    "entry-detail.png": "872a2925212bb3b48fb401b84f21b2d38eb6e3c277efcb9a9c659edaefa96d25",
+    "facade-detail.png": "ffa3f947370679a0bbe782b656e3e28596dea9514364cb29c51069bed2e05d39",
+    "front.png": "112559bb26f1c0f261a4d57d08bb97dc37dda27aefd5cc6f12ba06a7a5d6195c",
+    "preview.png": "35d0c3c54f3baace4c02aece91ab66ce83a4710c5026102ab70809216f5e32e8",
+    "rear.png": "50754c35893211ffff91cf373560df12ccc13cab3df68ea86a13548f7141d106",
+    "roof-detail.png": "4b4fa2f944ca77f03960f48a5df776a779f2e65e262e10553c2585fd8239cd33",
+    "top.png": "75be7e0f6ff2d4ee7c4e9bcf0b90313eae605507123deda5ef4a98bf8e860a5f",
+    "west.png": "e06ba87f90cf868943d0437d7a86f636091d8b96573ec98eb23e2ebab18e7de9"
+  }
+}
