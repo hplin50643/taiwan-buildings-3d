@@ -1,33 +1,50 @@
 {
-  "slug": "hfu-library-2009",
-  "count_delta": 0,
-  "geometry_change": false,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "go": {
-    "file": "HFU-LIBRARY-COLOR-SOURCE-GO-0954.json",
-    "sha256": "d0561fb89ec4aebf2023ff40254cce8d2007eb24d3f6ab8790ccbc1e71725214"
-  },
-  "review": {
-    "file": "INDEPENDENT-MAPPING-0953.json",
-    "sha256": "57fb25a8725b6a59c1b5704cc591c8c53fdcc8c0aefead0406380afa847c01f9"
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Only right/east return of two south eave fascia slabs: x40, y-63.1..-53.6, z16.7..18 and24.3..25.6,4original triangles in2complete coplanar domains",
+  "selected_face_indices": [
+    7962,
+    7963,
+    8780,
+    8783
+  ],
+  "counts": {
+    "original_colored": 4,
+    "new_candidate": 4,
+    "total_candidate_colored": 8,
+    "total_triangles": 15102
   },
   "source_records": [
     {
-      "file": "official-south.jpg",
+      "name": "official-south.jpg",
+      "url": "https://cc.hfu.edu.tw/~pr/hfuen/images/b/lib.jpg",
       "sha256": "0fcea1342d8b693f09516157ccd74f64811fea9b6f186dc0ecc6268de50cba67"
     },
     {
-      "file": "official-tower.jpg",
+      "name": "official-tower.jpg",
+      "url": "https://lib.hfu.edu.tw/var/file/1/1001/img/49/236836268.jpg",
       "sha256": "65c5a9e31bc583a062d234d59b72c54e02c15889313ac523354c5905991f9c57"
     }
   ],
-  "limits": [
-    "True HFUgroup, not YZUlegacyHFUobject-nameartifact. Fourpavilions and Guangqinmemoriallibrary samebuildingcount0.",
-    "2009-10-30 officialopeningrecord preserved. Raw2008/2009 photoEXIF metadata,2017/2024orthographic and2023/24otherphotos are not same-date survey or2026state.",
-    "Only immutableoriginal15102triangles; no newgeometry, repair,facecutting,texture,Gitwrite or publicreferencephoto release.",
-    "Rear/ground/rightcroppedextent unknown; no symmetry transfer to otherpavilion/eavefaces."
+  "personally_viewed": [
+    "review-official-south.jpg",
+    "review-official-tower.jpg",
+    "south-right-eaves-native.jpg",
+    "south-columns-native.jpg"
   ],
+  "observations": [
+    "Native3072px official south photo shows gray front fascia turning right and continuing toward adjacent tower beneath red tiled roof. Both upper and lower eave right returns are visible, separate from white sloping edge ornaments and red roof slopes.",
+    "Both selected original side planes terminate at main wall y-53.6; exact original exposed whole domains are2triangles each. No mesh cuts or sourcecoverage-based triangle clipping.",
+    "Do not extend to left unseen returns, any underside, roof slope, white ornaments, columns, walls or other pavilions."
+  ],
+  "limits": [
+    "This is same-photo nativepixel reinspection, not a new photograph. Both originals match existing register hashes.",
+    "South EXIF2008 clock metadata predates2009 opening; neither metadata nor existing2009model is proof of asbuilt/current2026 appearance.",
+    "Model eave thickness, depth and simplified right attachment remain approximations; broad same-fascia gray family only, not measuredHEX or exact material composition.",
+    "Four pavilions and Guangqin library remain one building; all old QA exceptions, presentation aliases and original67files remain untouched.",
+    "No original limited printing QA or engineering status recertification; no private photo redistribution."
+  ],
+  "work_created": true,
+  "historical_source_register": "qa/eave-return-previous/COLOR-SOURCE-REGISTER.json",
   "original_qa_exceptions": {
     "layer_samples": "268layers2804originalpolygons;2053crosslayerlossrecords=1936rectangular+117nonrectangular, NOT2053columns.25wholelayers>1%,wholemax3.157475829520%.",
     "physical_members": "77squarepostsegments=18south+9north+10eastupper+40pavilions;2roundcolumns;fourpavilions remain open.",
@@ -35,15 +52,5 @@
     "nonzero_corner": "Originalvertex0.41mm mask outside max0.0030853459156mm2;truecorneroutside0.00319574819093mm2 /0.07246599662%,withinoriginaledge0.005mm. Nonrectangular6.9944162e−17 numericalresidual notclaimedabsolutezero.",
     "finite_thickness": "77postnormalsminimum2.0999984mm,3634nonrectangularprobesminimum1.0999985mm,5recessbacksminimum1.1599998mm,3716specifiedstartsinside. Finite roots/openings only, notwholemeshallorientationcertification.",
     "print": "Existinglimitedexceptions retained; source review does not endorseglobalQA,physicalprint,supportfreeorstrength. Noactual slicer/physical test;do not arbitrarilyshrink."
-  },
-  "source_dates": [
-    "Raw EXIF clock/date metadata only; no timezone or independent clock verification. South metadata predates2009 opening record; not asserted postopening or currentappearance.",
-    "Raw EXIF clock/date metadata only; no timezone or independent clock verification. South metadata predates2009 opening record; not asserted postopening or currentappearance."
-  ],
-  "issuance_clarification": "This sealed document formally authorizes only the4 source-bounded faces. Inherited recommendation text belongs to independentreview history; originalglobalQA is not endorsed.",
-  "rights": "Private references only; no photographs published.",
-  "parent_domain": {
-    "file": "BUILDER-PARENT-COMPLETE-SOUTH-EAVES-0958.json",
-    "sha256": "9bf3d9de0f47ea9cb6c8744353635d4239d9c5c6e7a905be03a9727f21768525"
   }
 }

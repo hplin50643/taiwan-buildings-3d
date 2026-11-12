@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "scope": "Independent final review of four original right south-eave fascia return faces only. No publication authorization or engineering recertification.",
+  "image_sha256": {
+    "preview.png": "3af7b8095f563595bc4da3295ba8cd29da49d5fe2f6f42b47be24351d51a7b72",
+    "rear.png": "c93591f2e97a29dbec156987dc151d39176d2b71e143ed2a5857cc6537c1902f",
+    "front.png": "238b607cb1f9d8002e1223ca8103e6ad471666cea6bddb61bf4a4f4a959f4c50",
+    "back.png": "20e4c5583ca829f2f4db65b82cc1afedba91f424db86df76bca535e972afdae0",
+    "west.png": "766ff975beeff3250a62a6883f4de1453586af0e802aa0a20b17e2ebea074b27",
+    "east.png": "3e278abb9e1e5ab2987bbeeb02ab34ea684d9c6eedd0021df376735a0c895527",
+    "top.png": "b40b84292a4c5ae2d4a4897ef86509e92e8c6860ea1d4fbf39a6003b577d0022",
+    "entry-detail.png": "471d2f367c3760e1f4fa83247555ee62745ea50457167b901158a41f4b9454e1",
+    "facade-detail.png": "04d7f0311297ad7e314c45f0bfb333ebf8684a9e4e5b212421d244c67659c65f",
+    "roof-detail.png": "9c6db644ff7d44406fe62643a438569463f11af898025f15e361361a4a831dac"
+  },
+  "file_sha256": {
+    "model.stl": "b3d24d272e0ffdb171d770735c87feba10ee0b6ad423149e185de9310bc5a7b7",
+    "build_model.py": "970a4b18d58525163ff013efa5d55baeaf7aaa549117301ec39d8040d65c564b",
+    "colorize_model.py": "3263a48b3ea6da63f428b9011e459b3e4ed9617eb4c738754abb1dfe1d82740f",
+    "color-mesh.npz": "b5c15f112ce99dd381d9d0e903bc5ec283fdf48a7dba75a18eaf0518ec357d8b",
+    "palette.json": "0afaed5241cb0ed994b9f85504010366af752d2c26b2d6bd06771ebc6b3f0e31",
+    "appearance.3mf": "120282b1cd610cfe5846d0319de8d880682348b887cffba5058f39df24275c92",
+    "appearance-materials.json": "17b028c0109d9e8fd6eca1a96d7b7a110033c2886192aea4cca710ff3ba2631d",
+    "scene.blend": "31a7840a2c856dd54b7cd7187761afaf24128dbed6956708b485b4e7ef1d76ec",
+    "EAVE-RETURN-SOURCE-QA.json": "13bad82f9f30ee315dbc8f95649af5e43fb10980d6fd285da5f6c4190b056bfb",
+    "COLOR-SOURCE-REGISTER.json": "13bad82f9f30ee315dbc8f95649af5e43fb10980d6fd285da5f6c4190b056bfb",
+    "README.md": "938c81e11b08b051b06c78fc23f4a90d643f072cfefc92643e3eb76a495c94ae",
+    "README.zh-TW.md": "938c81e11b08b051b06c78fc23f4a90d643f072cfefc92643e3eb76a495c94ae",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "abeb707dab1efec90335a26f25e5c3ca2e5d7b83dfe6513cedb0276950f48b77",
+    "SCENE-QA.json": "5ccbc83295eaf5ce6f87af62f66221ee5c9189dfac3ce7d1a8c1170809632b5d",
+    "EAVE-RETURN-SCENE-QA.json": "f5fb2f0c280f77bc72f4e65d4d3dd3b6b26edb779e1cb92e3059d3a68d498ce7"
+  },
+  "numeric_report": "independent-numeric-review.json",
+  "scene_report": "independent-scene-review.json",
+  "source_report": "second-source-domain-review.json",
+  "checks": {
+    "four_exact_added_faces_two_whole_domains": true,
+    "original_four_and_all_other_material_indices_unchanged": true,
+    "palette_geometry_and_3mf_exact": true,
+    "isolated_rebuild_records_pass": true,
+    "independently_reopened_scene_shaders_camera_lights_render_mesh_inventory_match": true,
+    "ten_final_images_personally_viewed": true,
+    "three_detail_images_viewed_fullsize_including_right_returns": true,
+    "all_old_engineering_files_unchanged": true,
+    "source_and_historical_limitations_preserved": true
+  },
+  "visual_findings": [
+    "Right two exposed eave return planes join existing front gray fascia without coloring sloping roof, soffit or neighboring tower wall.",
+    "Left end remains neutral; all other surfaces preserve prior incomplete-color condition.",
+    "Original camera, lighting and non-denoised rendering retained, including grain. No new framing or geometric fault observed."
+  ],
+  "limitations": [
+    "Only same-photo broad gray family; not calibrated color or exact simplified fascia depth/attachment.",
+    "EXIF2008 versus2009opening chronology not resolved; no2026current condition.",
+    "Original bounded geometric/printing exceptions remain; no physicalprint or global engineering guarantee.",
+    "Source pictures private, no public redistribution."
+  ],
+  "blockers": []
+}
