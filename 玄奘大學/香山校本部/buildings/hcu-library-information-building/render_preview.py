@@ -10,7 +10,7 @@ bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=Fals
 bpy.ops.wm.stl_import(filepath=str(OUT/'model.stl'));model=bpy.context.object;model.name='HCU_Library_Draft'
 mat=bpy.data.materials.new('Warm stone preview only');mat.diffuse_color=(.69,.64,.54,1);model.data.materials.append(mat)
 target_z=(min(v.co.z for v in model.data.vertices)+max(v.co.z for v in model.data.vertices))/2
-scene=bpy.context.scene
+scene=bpy.context.scene;scene.render.use_stamp=False
 scene.render.engine='CYCLES';scene.cycles.samples=16;scene.cycles.use_denoising=False;scene.display.shading.light='STUDIO';scene.display.shading.studiolight_rotate_z=.35
 scene.display.shading.color_type='MATERIAL';scene.display.shading.show_shadows=False
 scene.display.shading.show_cavity=True;scene.display.shading.cavity_type='BOTH';scene.display.shading.curvature_ridge_factor=1.5;scene.display.shading.curvature_valley_factor=1.2
@@ -64,8 +64,6 @@ for name,loc,aim in [('front',(-60,-260,170),(0,0,20)),('rear',(-180,250,145),(0
   pos+=length+12
  path.write_bytes(clean)
  # Public uncertainty caption, outside the original actual-STL image (no cropping).
- caption_code="from PIL import Image,ImageDraw,ImageFont; import sys; p=sys.argv[1]; im=Image.open(p).convert('RGB'); out=Image.new('RGB',(im.width,im.height+64),(242,240,235)); out.paste(im,(0,0)); d=ImageDraw.Draw(out); f=ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',19); d.text((15,im.height+4),'P2低坡端配對：中高信心；長主翼未知窗省略。原STL有界近似，非精準測繪。',font=f,fill=(30,30,30)); d.text((15,im.height+31),'2022年後光電棚厚背簡化；未實體試印，列印前須另檢查切片與支撐。',font=f,fill=(30,30,30)); out.save(p)"
- subprocess.run(['python3','-c',caption_code,str(path)],check=True)
 (OUT/'preview-framing-check.json').write_text(json.dumps({'passed':True,'checks':{'every_public_preview_includes_entire_STL_and_base':True},'frames':frames},indent=2))
 cam.data.type="ORTHO";cam.location=(-60,-260,170);cam.rotation_euler=(Vector((0,0,target_z))-cam.location).to_track_quat('-Z','Y').to_euler()
 scene.render.filepath='//previews/front.png'
@@ -79,3 +77,14 @@ for screen in bpy.data.screens:
    if space.type=='FILE_BROWSER' and space.params:space.params.directory=b'//'
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'scene.blend'))
 
+
+# Prove the rendered architecture still matches the original binary STL exactly.
+import hashlib
+raw=(OUT/'model.stl').read_bytes();ntri=struct.unpack_from('<I',raw,80)[0]
+def canonical(tris):
+ return sorted(b''.join(sorted(struct.pack('<3f',*v) for v in tri)) for tri in tris)
+a=[tuple(struct.unpack_from('<3f',raw,84+i*50+12+j*12) for j in range(3)) for i in range(ntri)]
+b=[[tuple(model.data.vertices[j].co) for j in p.vertices] for p in model.data.polygons]
+assert canonical(a)==canonical(b)
+assert not any(o.type=='FONT' and not o.hide_render for o in scene.objects)
+(OUT/'NO-TEXT-QA.json').write_text(json.dumps({'status':'PASS','original_stl_geometry_exact':True,'stamp_disabled':not scene.render.use_stamp,'no_visible_font_objects':True,'images_sha256':{str(p.relative_to(OUT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in PREV.glob('*.png')}},indent=2))
