@@ -24,5 +24,5 @@ checks['isolated_palette_assignment_hash']=H(tmp/'appearance-materials.json')==H
 checks['inputs_unchanged_during_QA']=before=={n:H(R/n)for n in before}
 (R.parent/'PRIVATE-COLOR-REBUILD-LOCATION.json').write_text(json.dumps({'retained_directory':str(tmp)},indent=2))
 checks={k:bool(v) for k,v in checks.items()}
-q={'status':'PASS'if all(checks.values())else'FAIL','checks':checks,'color_mesh_sha256':H(R/'color-mesh.npz'),'original_STL_sha256':expected,'bounds_mm':t.bounds.tolist(),'retained_rebuild':'Isolated rebuild retained privately; no automatic file deletion.','limitations':['Color model uses original unrefined geometry; no new facade accuracy claim.','Three base-material labels are not a tested four-filament slicer project.','STL format itself does not contain color.']}
+q={'status':'PASS'if all(checks.values())else'FAIL','checks':checks,'color_mesh_sha256':H(R/'color-mesh.npz'),'original_STL_sha256':expected,'bounds_mm':t.bounds.tolist(),'retained_rebuild':'Isolated rebuild retained privately; no automatic file deletion.','limitations':['Color model uses original unrefined geometry; no new facade accuracy claim.','Three base-material labels are not a tested multi-filament slicer project.','STL format itself does not contain color.']}
 (R/'COLOR-FORMAT-GEOMETRY-QA.json').write_text(json.dumps(q,indent=2)+'\n');print(q);assert all(checks.values())

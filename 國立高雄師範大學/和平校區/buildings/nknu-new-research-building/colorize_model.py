@@ -20,7 +20,12 @@ removed=[]
 for ids in g.values():
  if len(set(a[ids]))>1:removed.extend(i for i in ids if a[i]!=1);a[ids]=1
 pal=[('Observed entrance canopy actual top mediumgray','#888C88'),('UNVERIFIED fascia rails windowbacks body neutral','#B8BAB5'),('Observed two entrance pillar frontfaces warmoffwhite','#D7D5CC')]
+
+old=a.copy();hit=plane(0,18.75)&span(1,-65.55,-62.05)&span(2,2.8,28.4)&(m.face_normals[:,0]<-.999999)
+assert hit.sum()==8 and np.all(a[hit]==1)
+assert all(not hit[c].any()or hit[c].all()for c in g.values())
+a[hit]=2;assert np.bincount(a).tolist()==[6,8776,14];assert all(len(set(a[c]))==1 for c in g.values())
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-domains={'canopy_top':int((canopy&(a==0)).sum()),'two_pier_fronts':int((piers&(a==2)).sum()),'whole_coplanar_withdrawals':len(removed)}
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'domains':domains,'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'8796 original triangles unchanged; no cuts or newgeometry','limitations':['Canopy true upperplane only;fascia mixed dark/pale remainsneutral.','Two pillarfronts only;columnside/underside neutral.','Originalsolidparapets not colored black as pretendopenrails.','All windowbacks/mainwalls/roof andotherfaces neutral.','2020article/2026imagepath not capturedate;newbuilding not demolishedold.','Three materiallabels not verified fourfilament slicing.']},indent=2)+'\n')
+domains={'canopy_top':int((canopy&(a==0)).sum()),'two_pier_fronts':int((piers&(a==2)).sum()),'whole_coplanar_withdrawals':len(removed),'right_pillar_inner_faces':int(hit.sum()),'new_face_indices':np.flatnonzero(hit).tolist()}
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'domains':domains,'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'8796 original triangles unchanged; no cuts or newgeometry','limitations':['Canopy true upperplane only;fascia mixed dark/pale remainsneutral.','Originaltwo pillarfronts plus boundedrightinnerplane8faces;othercolumnsides/underside neutral.','Originalsolidparapets not colored black as pretendopenrails.','All windowbacks/mainwalls/roof andotherfaces neutral.','2020article/2026imagepath not capturedate;newbuilding not demolishedold.','Three materiallabels not verified multi-filament slicing.']},indent=2)+'\n')
 (R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','triangles':8796,'original_STL_sha256':expected,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(np.unique(a,return_counts=True),domains)

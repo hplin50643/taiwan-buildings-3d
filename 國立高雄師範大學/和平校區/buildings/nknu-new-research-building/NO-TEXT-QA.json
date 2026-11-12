@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in nknu-new-research-building-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "af069d2ecfb6b683cd5579733f34b6891530194bf7e12113c748935302f5dc74",
-    "east.png": "dd7348931a67e1a5a651799f0221ebef0d765ef42579fd4c75b44ff8eb0e0861",
-    "entry-detail.png": "25787ba205a2bb78bfea77742d75e86730781917396de9e1573d7c8773085cdd",
-    "facade-detail.png": "c30286e8d4ec764d5db93cba95d45d4a4a2cea7bd3fbbdfe2356f5043078c7a8",
-    "front.png": "53295b4041feed4e08f6d36dc7b55f9eef3f5c2a40b83318f2b2904784e971c8",
-    "preview.png": "e963bd63833a9ee3511e1a1a17d8663bab790b4f445cf3cc6f332b8066fb27c1",
-    "rear.png": "907192cd7b452fc25b3fd4cba35b0a04b560daf22fc1b5a4071a816132625517",
-    "roof-detail.png": "4c400a72b256fad73df13a632c1279e2aa4425ae08335c1c79129b35037b8c8a",
-    "top.png": "ceb464aace32ac067f7f02d915654efca4c134e89487e3772206e1de6701fd2c",
-    "west.png": "4c8b7e278d32224ed4675996ebc3e1410eb389a7f2c6e91494b832e9715cce02"
-  }
+    "preview.png": "ab7951c10ef9735d2ce921a117346cf89b1e5124ac3159937923d5c1c5e59f61",
+    "rear.png": "4cb8bf653c8e592fe1dd5a8a6b3e6cfc1f2821940c8342f5e3fc4d623b73062f",
+    "front.png": "218fa8e36aabf253f02b9d2534d3b5b8d3a9782c2b3542ffbddc06d87399b9ff",
+    "back.png": "51eba8bc3b267e4cf30070bbb6cc5eeb0cf9c8a204709a518f7b8161133a0e28",
+    "west.png": "5c062575912b009c00ab0d9ecb0d50397a722ef84d4af68a1e68685170254dba",
+    "east.png": "d70171f5f732527f2de0cd4f7f377446dc9108ce6a139d2166a0b6136b7185c0",
+    "top.png": "ae7bb997f1adab59283dc3d4d29c89008e61f19574e2db23895419043fc37618",
+    "entry-detail.png": "940ac11c8b5cbbf9b2624a7a4d847a1ad2ab3a72dc740c02d6dd9c840f59baf6",
+    "facade-detail.png": "447793e07e8f5815f607eaebee6de103429711746d1c205b19111fa04bd5dc58",
+    "roof-detail.png": "7dbb03d409ca5e0818ca951ea201f43b336e08a36a2e809f859e3ffc693bb7c1"
+  },
+  "mesh_sha256": "742ee4c3d8ea33c094d65358cabc6f4624df91de11057b27fc509afdeb2fb2f2",
+  "independent_visual_review": "PILLAR-INNER-INDEPENDENT-QA.json",
+  "previous_qa": "qa/pillar-inner-previous/NO-TEXT-QA.json"
 }

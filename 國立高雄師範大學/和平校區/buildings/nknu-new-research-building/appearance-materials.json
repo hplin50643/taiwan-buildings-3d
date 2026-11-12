@@ -10,29 +10,40 @@
       "id": 1,
       "name": "UNVERIFIED fascia rails windowbacks body neutral",
       "hex": "#B8BAB5",
-      "faces": 8784
+      "faces": 8776
     },
     {
       "id": 2,
       "name": "Observed two entrance pillar frontfaces warmoffwhite",
       "hex": "#D7D5CC",
-      "faces": 6
+      "faces": 14
     }
   ],
   "domains": {
     "canopy_top": 6,
     "two_pier_fronts": 6,
-    "whole_coplanar_withdrawals": 0
+    "whole_coplanar_withdrawals": 0,
+    "right_pillar_inner_faces": 8,
+    "new_face_indices": [
+      3925,
+      3926,
+      3928,
+      3932,
+      3933,
+      3934,
+      3935,
+      3942
+    ]
   },
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
   "geometry_policy": "8796 original triangles unchanged; no cuts or newgeometry",
   "limitations": [
     "Canopy true upperplane only;fascia mixed dark/pale remainsneutral.",
-    "Two pillarfronts only;columnside/underside neutral.",
+    "Originaltwo pillarfronts plus boundedrightinnerplane8faces;othercolumnsides/underside neutral.",
     "Originalsolidparapets not colored black as pretendopenrails.",
     "All windowbacks/mainwalls/roof andotherfaces neutral.",
     "2020article/2026imagepath not capturedate;newbuilding not demolishedold.",
-    "Three materiallabels not verified fourfilament slicing."
+    "Three materiallabels not verified multi-filament slicing."
   ]
 }

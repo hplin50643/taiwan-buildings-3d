@@ -1,0 +1,38 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "faces": [
+    3925,
+    3926,
+    3928,
+    3932,
+    3933,
+    3934,
+    3935,
+    3942
+  ],
+  "complete_domains": 1,
+  "source": {
+    "file": "official-ceremony.jpg",
+    "url": "https://c.nknu.edu.tw/affair/fckeditor/ckfinder/userfiles/dbhp/images/04%20%281%29.jpg",
+    "sha256": "a7d1fe9af28509e112be79a626657a1bb37a944f331d4ba1d9442c54c2c4190c",
+    "page": "https://c.nknu.edu.tw/affair/Page.aspx?Kind=dbhp&PN=174&SN=233"
+  },
+  "personally_viewed": [
+    "official-ceremony.jpg",
+    "official-ground.jpg"
+  ],
+  "findings": [
+    "Ceremony close-up actually shows right entrance square pillar inward-facing plane with pale aggregate/stone-like appearance; this is not inference solely from frontface.",
+    "Original ground view supports same entrance pillar under canopy and fullheight continuity; no evidence of a separate horizontal material switch within proposed plane.",
+    "All8 original triangles form one complete coplanar connected domain at x18.75 with stair/canopy clipping; independently recomputed exactly.",
+    "No left support,outer/back,cap,canopy,window ormainwall addition."
+  ],
+  "limits": [
+    "Ceremony image top is cropped and lower portion partly hidden by people; full original plane requires explicitly bounded sameplane continuity inference, not claim eachtriangle directly seen.",
+    "Walllight and joints are not modeled; pale family cannot validate geometry,texture or precise HEX.",
+    "Square3.5mm modeldepth is approximate; no extension into larger actual wall-return support.",
+    "Publication2020 and imagepathdates do not independently verify capture or2026condition.",
+    "Sourcepixels private; original geometry and engineeringlimits unchanged; final modelQA still pending."
+  ],
+  "historical_source_register": "qa/pillar-inner-previous/COLOR-SOURCE-REGISTER.json"
+}

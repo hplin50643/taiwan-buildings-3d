@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "scope": "Bounded right entrance pillar inward plane material-only addition; not geometry recertification or full exterior color completion.",
+  "numeric": {
+    "status": "PASS",
+    "triangles": 8796,
+    "new_faces": [
+      3925,
+      3926,
+      3928,
+      3932,
+      3933,
+      3934,
+      3935,
+      3942
+    ],
+    "colored_faces": 20,
+    "neutral_faces": 8776,
+    "whole_selected_domains": 1,
+    "mixed_domains": 0,
+    "all_unselected_materials_exact": true,
+    "palette_unchanged": true,
+    "preserved_files": [
+      "model.stl",
+      "model.obj",
+      "build_model.py",
+      "validate_model.py",
+      "render_preview.py",
+      "check_valid_sections.py",
+      "requirements.txt",
+      "ORIGINAL-MONOCHROME-README.md",
+      "thin-feature-check.json",
+      "thin_canonical_v2.py",
+      "model-info.json",
+      "validation.json",
+      "valid-sections.json",
+      "previews/front.png",
+      "previews/elevation.png",
+      "previews/top.png",
+      "previews/rear.png"
+    ],
+    "geometry_and_3mf_exact": true,
+    "color_mesh_sha256": "742ee4c3d8ea33c094d65358cabc6f4624df91de11057b27fc509afdeb2fb2f2"
+  },
+  "scene": {
+    "status": "PASS",
+    "mesh_materials_shaders_exact": true,
+    "camera_light_render_mesh_object_inventory_unchanged": true,
+    "caption_backdrop_hidden_stamp_off": true,
+    "scene_sha256": "36579eaa11fe52b7091de6494fe63e7c0f346c5565d1c14f07002f1d1a382522"
+  },
+  "image_sha256": {
+    "preview.png": "ab7951c10ef9735d2ce921a117346cf89b1e5124ac3159937923d5c1c5e59f61",
+    "rear.png": "4cb8bf653c8e592fe1dd5a8a6b3e6cfc1f2821940c8342f5e3fc4d623b73062f",
+    "front.png": "218fa8e36aabf253f02b9d2534d3b5b8d3a9782c2b3542ffbddc06d87399b9ff",
+    "back.png": "51eba8bc3b267e4cf30070bbb6cc5eeb0cf9c8a204709a518f7b8161133a0e28",
+    "west.png": "5c062575912b009c00ab0d9ecb0d50397a722ef84d4af68a1e68685170254dba",
+    "east.png": "d70171f5f732527f2de0cd4f7f377446dc9108ce6a139d2166a0b6136b7185c0",
+    "top.png": "ae7bb997f1adab59283dc3d4d29c89008e61f19574e2db23895419043fc37618",
+    "entry-detail.png": "940ac11c8b5cbbf9b2624a7a4d847a1ad2ab3a72dc740c02d6dd9c840f59baf6",
+    "facade-detail.png": "447793e07e8f5815f607eaebee6de103429711746d1c205b19111fa04bd5dc58",
+    "roof-detail.png": "7dbb03d409ca5e0818ca951ea201f43b336e08a36a2e809f859e3ffc693bb7c1"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "742ee4c3d8ea33c094d65358cabc6f4624df91de11057b27fc509afdeb2fb2f2",
+    "palette.json": "28fec85327ac5cdc38a0677bbc500dfef958552ebc14a221b9b1e5b71f7df9c0",
+    "appearance-materials.json": "1b36b9ab7db0962928071795e0dd2c74645cc13aa878d62fa9165f1f7fa63af1",
+    "appearance.3mf": "b4ea7bce40f1b8d8fdc6c55d5aba375109620fc5743161dbafcecebb27e41cf0",
+    "scene.blend": "36579eaa11fe52b7091de6494fe63e7c0f346c5565d1c14f07002f1d1a382522",
+    "model.stl": "6eec5d4549ee730f13ae66273ea4cbb4ee4d11a942d8dc7686fb931fe534a373",
+    "model.obj": "cfcf907e60fa529bfeb668bf2e9febc8eb3e90100f4d130579db4aefa5992b8e",
+    "build_model.py": "6258e3e800fa571c7ac0bbc77d6dba9c83ef2d9c311680342dadac81ed6a4e83",
+    "colorize_model.py": "9cb2ec8f0445fda14a8dd80113dd6328fa43c966a7373f9ee80f3709f6e76ee5",
+    "export_appearance.py": "d262134d55b92a024e7c5097bbeb1c60455e49042fca8fae2ea42e5c61f637de",
+    "validate_color.py": "c46420c27e01c1274f82f0c7386050ddbe8123c630c48a5210b9f33deaba5ee4",
+    "verify_color_scene.py": "c07c7e949885c90889b19833a81967c188fc773e4c9623b4fa434666fa8ee1dc",
+    "COLOR-SOURCE-REGISTER.json": "76fc51286d76726f50318c1046e7c99ad2aad55b0b0e5b470381636e9f89000d",
+    "PILLAR-INNER-SOURCE-QA.json": "76fc51286d76726f50318c1046e7c99ad2aad55b0b0e5b470381636e9f89000d",
+    "COLOR-ASSIGNMENT-QA.json": "b2a3f8fe4f1911ebe0f86065bf20f0def44962ef3c92f03a26c1b71067df7125",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "368f356b2fceae81348bc28ab711435c83ad058dd20a24d660340a00fb2b98dd",
+    "SCENE-QA.json": "20dbde71438fed575e2cf256319c1ecd8b9956898ad9dc91d5821047ca0a7845",
+    "PILLAR-INNER-SCENE-QA.json": "95d9620c7a3ea5b6bba70e86aff7f2e5cb082d552826d944ebc4ab3d7de99ac3",
+    "README.md": "80b5ce2b2944846ddbc9d500b787826f86101ccda2f68636df3f9be1fd3cb7f2",
+    "README.zh-TW.md": "80b5ce2b2944846ddbc9d500b787826f86101ccda2f68636df3f9be1fd3cb7f2",
+    "CHECKSUM-SCOPE.md": "0fdcfe4d6cfd04cc57b577ffa0067a6a20e16f95359284b6393ea82ff7ea6ae7"
+  },
+  "supplementary_private_image_sha256": {
+    "inner-pillar.png": "c3c4512c8dcecc499b285333b829a44eaf5ad37f4aa0e03ca1a6c37817ebdee1"
+  },
+  "source_review": "second-source-domain-review.json",
+  "visual_review": {
+    "all_ten_actual_images_inspected": true,
+    "method": "Ten-view montage plus fullresolution entry-detail,facade-detail,roof-detail; supplementary opposite lowoblique inner-pillar.png actually inspected.",
+    "findings": [
+      "Original tenviews largely show opposite side of newinnerplane; supplementary view exposes actual added surface, not relying on hiddenfaces in montage.",
+      "Added inwardplane is pale warmwhite continuous with original frontface, clean complete domain; stair/canopy/mainwalls,otherpillar sides and roof remain unchanged.",
+      "No unexpected labels, blackshade paint or false triangular wedges. Existing noisy non-denoised lighting remains unchanged.",
+      "Private supplementary camera/fill not saved to officialscene; actual scene hash matches pre/post private QA."
+    ]
+  },
+  "limits": [
+    "Official ceremony top cropped/lower people occlusion; fulloriginalplane limitedsameplane continuation inference, not perface direct evidence.",
+    "Original3.5mm pillar depth,omitted light/joints and coarse othergeometry remain approximations.",
+    "Capturedate not independently verified;2020publication/2026imagepath not2026survey.",
+    "Source pending stage snapshot is intentionally unchanged; this separate report establishes finalmodel review.",
+    "Original12 assignments and3palette entries preserved; only8neutral→index2,20colored/8776neutral/8796triangles.",
+    "No leftwall,columnotherfaces,canopyfascia/soffit,glazing,rooftop expansion. No physicalprint or slicer certification.",
+    "Sourcephotos and supplementary privateimage not part of publictenrender delivery."
+  ],
+  "published": false
+}

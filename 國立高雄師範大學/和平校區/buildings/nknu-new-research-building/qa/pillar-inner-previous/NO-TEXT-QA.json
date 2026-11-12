@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nknu-new-research-building-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "af069d2ecfb6b683cd5579733f34b6891530194bf7e12113c748935302f5dc74",
+    "east.png": "dd7348931a67e1a5a651799f0221ebef0d765ef42579fd4c75b44ff8eb0e0861",
+    "entry-detail.png": "25787ba205a2bb78bfea77742d75e86730781917396de9e1573d7c8773085cdd",
+    "facade-detail.png": "c30286e8d4ec764d5db93cba95d45d4a4a2cea7bd3fbbdfe2356f5043078c7a8",
+    "front.png": "53295b4041feed4e08f6d36dc7b55f9eef3f5c2a40b83318f2b2904784e971c8",
+    "preview.png": "e963bd63833a9ee3511e1a1a17d8663bab790b4f445cf3cc6f332b8066fb27c1",
+    "rear.png": "907192cd7b452fc25b3fd4cba35b0a04b560daf22fc1b5a4071a816132625517",
+    "roof-detail.png": "4c400a72b256fad73df13a632c1279e2aa4425ae08335c1c79129b35037b8c8a",
+    "top.png": "ceb464aace32ac067f7f02d915654efca4c134e89487e3772206e1de6701fd2c",
+    "west.png": "4c8b7e278d32224ed4675996ebc3e1410eb389a7f2c6e91494b832e9715cce02"
+  }
+}
