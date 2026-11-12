@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views visually checked in ntcu-lin-atelier-courtyard-section-all-views.jpg. No image caption/backing, original mesh/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "165bf8b9a2fef2d132b3e91285fe45268d25708daa0422abf8da52e0878fb12f",
+    "east.png": "33697c5fbdb0533d1a5765d026568135c944c716fa7b568f5f78bd50acc73886",
+    "entry-detail.png": "4c57766f220b5b743149c0c87e30e34a77773f4ae6d7a1b3611f42a3680c0736",
+    "facade-detail.png": "f9355c148c2e8eb9fbd2a6a78253174f02429afcb6c905e4f88183246c9adaf9",
+    "front.png": "19e536575d8e8466652ea0ce2461999fe6bf80d5b5b88fc3abf1553ff8ba6a2b",
+    "preview.png": "1102ef62a4d83fade93619742678b30efad8455356b4fe2208a96d78c16196e9",
+    "rear.png": "469bac3848c1f78dde50388557c77f3e83f3a3a9f23888d0d52dcfe57eb6c246",
+    "roof-detail.png": "59afb83b6279ce3dc31b20ac0208cf3a152cae7e59e7d687b555756f13d08e4c",
+    "top.png": "7a772c850f8337ac8b2a0296f4eef83487080a4ad298f36c979e05abea2ba66f",
+    "west.png": "83678d68ea5f07581e9274d228d6f9162177f2d30bdc5d1e37f51ba08c7eb661"
+  }
+}

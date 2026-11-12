@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntcu-administration-central-section-all-views.jpg; caption/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "3484f51b4b9c27be57ba50a7e9def066dac995e5f625aff4b9fdbcb439348649",
+    "east.png": "a6557ef61f547fef651bd624c6502ed8a95499fd8826b9d577ec6d3346eeab08",
+    "entry-detail.png": "3e89da5d58672350178fa66bab7a9071db089decf9e5e6171c9dab9172b7fbb9",
+    "facade-detail.png": "d9283f4efd5d4b2c43321dfb1f88923edcd33aa1765c8bf471fa843b49346732",
+    "front.png": "09a158a3944b550b3550c92cdb8ee7a093b4e9e801af5acde5c356bcd40bfde0",
+    "preview.png": "46dc2ace6e9d1d4e17db86d7462eddb089b230b98e3e8678737dfd14bdb5ea6a",
+    "rear.png": "19fa07b9db22217b306a9b1bf97ef7abef413bd5d29933b949ecb05d941577c5",
+    "roof-detail.png": "d71e97619dc18a30b8709f6bed90e6677fb9fbbc8f20796e8dedc4dc6bd150d8",
+    "top.png": "cec23abecbae316a5ab0c9117156421ddb51933e1228744335e5670bcb450919",
+    "west.png": "a15e1e85e509839cfb22d656704dcd14cc90f196eb9924f1bbc0b8321960917f"
+  }
+}
