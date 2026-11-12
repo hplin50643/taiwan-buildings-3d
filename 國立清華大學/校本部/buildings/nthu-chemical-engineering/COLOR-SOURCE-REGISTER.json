@@ -1,17 +1,7 @@
 {
-  "slug": "nthu-chemical-engineering",
-  "count_delta": 0,
-  "geometry_change": false,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "go": {
-    "file": "NTHU-CHEMICAL-ENGINEERING-COLOR-SOURCE-GO-2258.json",
-    "sha256": "3dce67c7c360aae4d1e250a55fcc4f07fdfae6d6d9ba297d216e8a2020ab8e66"
-  },
-  "review": {
-    "file": "INDEPENDENT-MAPPING-2257-v2.json",
-    "sha256": "f8308e80f7d0be3d1e7ea065d312497e5351231805ace3b6442460cdc1bdb143"
-  },
+  "status": "BOUNDED_TRIM_RETURN_CANDIDATE",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "building": "nthu-chemical-engineering",
   "sources": [
     {
       "file": "official-front.jpg",
@@ -26,7 +16,23 @@
       "capture_date": "unknown"
     }
   ],
-  "scope": "清華化工館整修前舊照版：局部前/右橫帶淺色；其餘未知中性。非2026整修後現況、非全色完成",
+  "sources_verified_against_original_hashes": true,
+  "source_pixels_private": true,
+  "observed": "The official front and right oblique photographs show pale horizontal bands on the historic facade. Original 50 outward trim faces remain.",
+  "inferred": "Nominal pale color continuity over the same finite trim members; side returns, tops and soffits are not separately measured or photographed in full.",
+  "selection": "24 original finite box members; 275 candidate boundary triangles; retain only complete uniform coplanar domains. Original 50 plus 174 new faces; 51 candidate faces excluded because their coplanar domain extends into broad unverified walls.",
+  "face_counts": {
+    "total": 2924,
+    "original_colored": 50,
+    "newly_colored": 174,
+    "colored": 224,
+    "neutral": 2700
+  },
+  "era": "Pre-renovation historical public-photo approximation, not the renovated 2026 condition or evidence of completed construction.",
+  "geometry_unchanged": true,
+  "count_delta": 0,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
   "limits": [
     "Main continuous pink/brick wall planes include white vertical bands lacking corresponding geometry; no allpink facade.",
     "Upper projecting gable/front includes pale cap trim not independently segmented in original; no wholepink triangle or z threshold.",
@@ -35,12 +41,9 @@
     "Round column shafts/bases/capitals and trees obscure precise material/vertical transitions; this narrow review does not release them.",
     "All window backs mix glass, opaque portions, curtains and reflections; neutral.",
     "Entry stair contains brick/white strips and is simplified; no wholegray stairs.",
-    "Roof tops, underside, unknown rear/left and ground base remain neutral."
+    "Unverified roof mass, rear/left walls and base remain neutral. Only bounded same-member trim top/soffit/return continuity is inferred.",
+    "No new geometry, whole-wall pink fill, photograph texture, measured color claim or physical print."
   ],
-  "era_amendment": {
-    "file": "chemical-engineering-era-clarification.zh-TW.md",
-    "sha256": "6594815e0ac6e727566b8d979a0515d462f9a6d0d4ddbfd06580a55f83c996bd"
-  },
   "rights": "Official photographs privately retained; no CC permission inferred, no public texture or commercial-use guarantee.",
-  "source_private_backup": "Original references separately privately preserved; not included here."
+  "historical_source_register": "qa/trim-return-previous/COLOR-SOURCE-REGISTER.json"
 }

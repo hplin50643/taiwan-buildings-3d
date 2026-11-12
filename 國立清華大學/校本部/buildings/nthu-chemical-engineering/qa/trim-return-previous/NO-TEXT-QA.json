@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual rendered views inspected in nthu-chemical-engineering-all-views.jpg. Captions/backing absent; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "68b747acf6250385e6ddc9d1fea3f242edbaddadf32010defb25ef638ecbee3d",
+    "east.png": "e1f4dc01ab401cc08cc46c094cfdfaadf654873800b7637fc1c78c6574101428",
+    "entry-detail.png": "89fc71f88b71575cda0d03e6db0cd7acbd78b529d2116b40e82cdd34c061af3c",
+    "facade-detail.png": "1a8cec9dcf917658112d327b458f40edd3da11c4eff3baa5bb30b54931be6032",
+    "front.png": "4d25e306ce3cfd6d6ba825a81ba545b8575b7f9491d7f08263719ae95c303238",
+    "preview.png": "9d4a26b1123d49fa44dc20cf825f31ff3014f12d217b9a21d3feda6e9518d6c0",
+    "rear.png": "edf6a12a1456f0aa2951cc59b97a8e18511ed2f90808a143e0c3efc469c07156",
+    "roof-detail.png": "2626fd08b278790db87c1a5502ea729b652c1d48f65edb358c44070dc274738f",
+    "top.png": "8f5cb7a293db8bdd6faca3b613c822f106ce0ce1e5a0f1d71d6c539584044baa",
+    "west.png": "da4000a3dd53c3c98c25e541420da1c139b629b60faa1808351e366731d15580"
+  }
+}

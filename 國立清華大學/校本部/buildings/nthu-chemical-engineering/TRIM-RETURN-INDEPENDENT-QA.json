@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T09:28:18.303088+00:00",
+  "scope": "Independent bounded pre-renovation NTHU Chemical Engineering trim-return material review; no publication",
+  "blockers": [],
+  "numeric_checks": {
+    "status": "PASS",
+    "checks": {
+      "vertices_exact": true,
+      "faces_exact": true,
+      "2924_triangles": true,
+      "original50_preserved": true,
+      "174new": true,
+      "counts": true,
+      "model.stl_unchanged": true,
+      "model.obj_unchanged": true,
+      "build_model.py_unchanged": true,
+      "independent_275_boundary_candidates": true,
+      "51_mixed_domain_candidates_excluded": true,
+      "exact_independent_material_selection": true,
+      "no_coplanar_split": true,
+      "3mf_vertices": true,
+      "3mf_faces": true,
+      "3mf_materials": true,
+      "source_hashes": true
+    },
+    "mesh_sha256": "f40fce80c4c060f1d66df0e12bae9972fbb8af4bedb1480d9afc1a5f36fd1f04"
+  },
+  "scene_checks": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "two_material_slots": true,
+      "palette_0": true,
+      "palette_1": true
+    },
+    "scene_sha256": "52a5851f9cd3e718b03930e99c0e3b2b0e54327189ceb08f68a9b0fe15210018"
+  },
+  "face_counts": {
+    "total": 2924,
+    "original_colored_preserved": 50,
+    "added": 174,
+    "colored": 224,
+    "neutral": 2700,
+    "boundary_candidates": 275,
+    "excluded_mixed_coplanar_candidates": 51
+  },
+  "findings": [
+    "Viewed both official reference photographs at native display size; pale front/right horizontal band color supports narrowly bounded same-member return continuity as an inference, not direct observation of every return.",
+    "Independently reconstructed finite original 24 boxes and flooded neutral constraints over coplanar adjacency. Exact selected set matches candidate, without mixed-wall expansion or coplanar material splits.",
+    "Original vertices, faces, STL, OBJ and construction script remain unchanged. 3MF vertices/faces/material indices match the candidate.",
+    "After all ten final renders and scene save completed, visually inspected all ten views in two private montages, plus full-size facade-detail. Narrow pale bands continue around their original returns; no unintended broad wall, roof, column, glazing, stair or gable coloring observed.",
+    "Independently reopened original and final Blender scenes; geometry and material indices, palette shader colors, camera, lights and rendering settings match expected state. Captions and notice board are hidden.",
+    "README and TRIM-RETURN-SOURCE-QA distinguish observed original faces, inferred returns, excluded mixed domains, historical pre-renovation era, and incomplete coloration."
+  ],
+  "image_sha256": {
+    "preview.png": "24e7b3c8a8460b83f26c5359fb45f8f12f1725f061c797c169663938f09b3f3d",
+    "rear.png": "eecfaa2c724c4c40482984ff72d95adb0ac19dd2f497e2296c1e4c220ce00ad8",
+    "front.png": "7b1c19ea005300905c46a36894cdca7e8582af9fac59c5858343a6e2dd797acd",
+    "back.png": "1b327a982f9a0b5f5ea551c746096aa46a40676d8a53adb8acdabc50dc868507",
+    "west.png": "684b8d45baa05642775111e57d00bb96ec8610d5ab07072fd615643cbc9b1287",
+    "east.png": "1efce7a9ae921e5965cd70041580781020ac21ce5fdafdd825feb4307108bd1c",
+    "top.png": "01467f030ed89cb08dfe97e520edf513fabca653d0cf32cf8efb6e9624c4066b",
+    "entry-detail.png": "fd9dee5372349c5cd6773a2d6d9b342f055f47e89c00304f01dae6e40bc604cd",
+    "facade-detail.png": "9d289bb81f325193b0426c67070c36dc1a1aefa114bd66e6eb82f1f2a4c5e58c",
+    "roof-detail.png": "e02a355f9343b0685c205de854367681d337823c7a0c69ef9269c40250d97100"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "f40fce80c4c060f1d66df0e12bae9972fbb8af4bedb1480d9afc1a5f36fd1f04",
+    "appearance.3mf": "62740d31ee7a8bdbedeb7479f4ee4deda40331cacc841b5c4aba7e461ea47c89",
+    "scene.blend": "52a5851f9cd3e718b03930e99c0e3b2b0e54327189ceb08f68a9b0fe15210018",
+    "colorize_model.py": "677558fbaa84ed94a1c09b378303e96d98a79b9c00b787c0b84ef93452fd39c5",
+    "TRIM-RETURN-SOURCE-QA.json": "7b8ae5d4394164d3e4fb1ddfe1871c703bbcd4896c9c7b69cd03151fc732f82a"
+  },
+  "source_sha256": {
+    "official-front.jpg": "6a2f4a0c6e68f1e6481291527f0987917890f5a1a3859c37b6396c48c583c5c4",
+    "official-oblique.jpg": "3331f23be019424889be2fcf6a7d5e33b54bd638225cee6fa8a004c738d5ac51"
+  },
+  "limitations": [
+    "Historical pre-renovation approximation only; not verified 2026 renovated condition or evidence of construction completion.",
+    "Source capture dates are unknown. Nominal palette colors are not measured color samples.",
+    "Return top, bottom and end faces use bounded same-member continuity inference; photographs do not separately resolve every such face.",
+    "All unverified/mixed domains remain neutral; not fully colored exterior.",
+    "No new dimensional accuracy, printability or physical test-print approval; no official-photo redistribution rights inferred."
+  ]
+}

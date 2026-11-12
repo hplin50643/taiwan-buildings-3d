@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded trim-return update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T09:28:27.619530+00:00",
+  "triangles": 2924,
+  "original_color_faces": 50,
+  "new_color_faces": 174,
+  "colored_faces": 224,
+  "unknown_neutral_faces": 2700,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "41e8564cf83b71f554aa716cfd5ae1992bbc522e7443b0ba5a81aaa0102e952a",
+  "color_mesh_sha256": "f40fce80c4c060f1d66df0e12bae9972fbb8af4bedb1480d9afc1a5f36fd1f04",
+  "images_sha256": {
+    "preview.png": "24e7b3c8a8460b83f26c5359fb45f8f12f1725f061c797c169663938f09b3f3d",
+    "rear.png": "eecfaa2c724c4c40482984ff72d95adb0ac19dd2f497e2296c1e4c220ce00ad8",
+    "front.png": "7b1c19ea005300905c46a36894cdca7e8582af9fac59c5858343a6e2dd797acd",
+    "back.png": "1b327a982f9a0b5f5ea551c746096aa46a40676d8a53adb8acdabc50dc868507",
+    "west.png": "684b8d45baa05642775111e57d00bb96ec8610d5ab07072fd615643cbc9b1287",
+    "east.png": "1efce7a9ae921e5965cd70041580781020ac21ce5fdafdd825feb4307108bd1c",
+    "top.png": "01467f030ed89cb08dfe97e520edf513fabca653d0cf32cf8efb6e9624c4066b",
+    "entry-detail.png": "fd9dee5372349c5cd6773a2d6d9b342f055f47e89c00304f01dae6e40bc604cd",
+    "facade-detail.png": "9d289bb81f325193b0426c67070c36dc1a1aefa114bd66e6eb82f1f2a4c5e58c",
+    "roof-detail.png": "e02a355f9343b0685c205de854367681d337823c7a0c69ef9269c40250d97100"
+  },
+  "current_independent_review": "TRIM-RETURN-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Nominal color and inferred continuity for trim return/top/bottom faces. Pre-renovation old-photo version, not 2026 current condition.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "status": "BOUNDED_TRIM_RETURN_CANDIDATE",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "building": "nthu-chemical-engineering",
+  "sources": [
+    {
+      "file": "official-front.jpg",
+      "sha256": "6a2f4a0c6e68f1e6481291527f0987917890f5a1a3859c37b6396c48c583c5c4",
+      "url": "https://attractions.site.nthu.edu.tw/var/file/515/1515/pictures/400/m/mczh-tw700x700_large38204_476810677262.jpg",
+      "capture_date": "unknown"
+    },
+    {
+      "file": "official-oblique.jpg",
+      "sha256": "3331f23be019424889be2fcf6a7d5e33b54bd638225cee6fa8a004c738d5ac51",
+      "url": "https://attractions.site.nthu.edu.tw/var/file/515/1515/pictures/400/m/mczh-tw700x700_large38205_941567177262.jpg",
+      "capture_date": "unknown"
+    }
+  ],
+  "sources_verified_against_original_hashes": true,
+  "source_pixels_private": true,
+  "observed": "The official front and right oblique photographs show pale horizontal bands on the historic facade. Original 50 outward trim faces remain.",
+  "inferred": "Nominal pale color continuity over the same finite trim members; side returns, tops and soffits are not separately measured or photographed in full.",
+  "selection": "24 original finite box members; 275 candidate boundary triangles; retain only complete uniform coplanar domains. Original 50 plus 174 new faces; 51 candidate faces excluded because their coplanar domain extends into broad unverified walls.",
+  "face_counts": {
+    "total": 2924,
+    "original_colored": 50,
+    "newly_colored": 174,
+    "colored": 224,
+    "neutral": 2700
+  },
+  "era": "Pre-renovation historical public-photo approximation, not the renovated 2026 condition or evidence of completed construction.",
+  "geometry_unchanged": true,
+  "count_delta": 0,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "limits": [
+    "Main continuous pink/brick wall planes include white vertical bands lacking corresponding geometry; no allpink facade.",
+    "Upper projecting gable/front includes pale cap trim not independently segmented in original; no wholepink triangle or z threshold.",
+    "Fullheight center spine has unmodeled dark slots near cap; no blanketwhite spine.",
+    "Portico gable faces contain pale frame/pink field without material boundaries; keep neutral.",
+    "Round column shafts/bases/capitals and trees obscure precise material/vertical transitions; this narrow review does not release them.",
+    "All window backs mix glass, opaque portions, curtains and reflections; neutral.",
+    "Entry stair contains brick/white strips and is simplified; no wholegray stairs.",
+    "Unverified roof mass, rear/left walls and base remain neutral. Only bounded same-member trim top/soffit/return continuity is inferred.",
+    "No new geometry, whole-wall pink fill, photograph texture, measured color claim or physical print."
+  ],
+  "rights": "Official photographs privately retained; no CC permission inferred, no public texture or commercial-use guarantee.",
+  "historical_source_register": "qa/trim-return-previous/COLOR-SOURCE-REGISTER.json"
+}
