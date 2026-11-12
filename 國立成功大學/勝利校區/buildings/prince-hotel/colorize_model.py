@@ -29,7 +29,12 @@ for i,(x,y,z) in enumerate(c):
    mat[i]=3 if abs(y-back)<.002 else 1
  # Roof horizontal faces remain neutral even above tower and cylinder.
  if nz>.99 and z>30:mat[i]=4
+# Bounded new official daytime front fascia, not underside or roof top.
+old=mat.copy();hit=np.all(abs(t[:,:,1]+20)<.002,axis=1)&np.all(t[:,:,2]>=110.999,axis=1)&np.all(t[:,:,2]<=113.501,axis=1)&np.all(t[:,:,0]>=-64.501,axis=1)&np.all(t[:,:,0]<=32.001,axis=1)
+assert np.flatnonzero(hit).tolist()==[261,262] and np.all(mat[hit]==4)
+mat[hit]=5;pal.append(('Bounded daytime main roof front fascia pale grey family','#BEC2BC'))
+assert np.array_equal(old[~hit],mat[~hit])
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=mat)
-(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');assert len(np.unique(mat))==5
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int(np.sum(mat==i))}for i,(a,b)in enumerate(pal)],'geometry_policy':'2802 original triangles unchanged.','limits':'Tower and cylinder brick-family continuity is explicit same-component inference. Night-only long wall/slabs neutral; no warm illumination painted. Pale arch intrados only, no added white rings. Unknown roofs and sides neutral.','printing':'Five appearance labels are not a tested multi-filament slicer project.'},indent=2)+'\n')
+(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');assert len(np.unique(mat))==6
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int(np.sum(mat==i))}for i,(a,b)in enumerate(pal)],'geometry_policy':'2802 original triangles unchanged.','limits':'Tower and cylinder brick-family continuity is explicit same-component inference. Long wall/slabs remain neutral; two highest roof front fascia faces use bounded new official daytime palegrey evidence, not top or soffit; no warm illumination painted. Pale arch intrados only, no added white rings. Unknown roofs and sides neutral.','printing':'Six appearance labels are not a tested multi-filament slicer project.'},indent=2)+'\n')
 q={'status':'PASS','original_STL_sha256':EXPECTED,'triangles':len(m.faces),'materials_used':np.unique(mat).tolist(),'bounds_mm':m.bounds.tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2)+'\n');print(q)

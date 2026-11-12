@@ -28,10 +28,16 @@
       "id": 4,
       "name": "UNVERIFIED wall slab roof sides neutral",
       "hex": "#A7ABA5",
-      "faces": 1225
+      "faces": 1223
+    },
+    {
+      "id": 5,
+      "name": "Bounded daytime main roof front fascia pale grey family",
+      "hex": "#BEC2BC",
+      "faces": 2
     }
   ],
   "geometry_policy": "2802 original triangles unchanged.",
-  "limits": "Tower and cylinder brick-family continuity is explicit same-component inference. Night-only long wall/slabs neutral; no warm illumination painted. Pale arch intrados only, no added white rings. Unknown roofs and sides neutral.",
-  "printing": "Five appearance labels are not a tested multi-filament slicer project."
+  "limits": "Tower and cylinder brick-family continuity is explicit same-component inference. Long wall/slabs remain neutral; two highest roof front fascia faces use bounded new official daytime palegrey evidence, not top or soffit; no warm illumination painted. Pale arch intrados only, no added white rings. Unknown roofs and sides neutral.",
+  "printing": "Six appearance labels are not a tested multi-filament slicer project."
 }

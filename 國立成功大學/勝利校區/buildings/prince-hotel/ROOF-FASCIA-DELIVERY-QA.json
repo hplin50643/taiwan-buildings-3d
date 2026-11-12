@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "Bounded roof-fascia update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T14:11:40.027365+00:00",
+  "triangles": 2802,
+  "original_color_faces": 1577,
+  "new_color_faces": 2,
+  "colored_faces": 1579,
+  "unknown_neutral_faces": 1223,
+  "geometry_unchanged": true,
+  "preserved_connected_mixed_domains": 1,
+  "preserved_round4_coplanar_mixed_groups": 2,
+  "original_STL_sha256": "cf5263cd1a58f66ee38a8ecc5aacc955cb286320808485da817b9754c3de7b60",
+  "color_mesh_sha256": "6d486860b4e545cdb12cd30341370bcc1cb4720540e9cb2c06490563b9f149e3",
+  "images_sha256": {
+    "preview.png": "32fcca29a2a899fe377a4b255f0ea8687a4f19ad8d19ea8af32349b7563ddbb4",
+    "rear.png": "356b2845ddeb2eed90d35067e2c8d169f4bc2675a48fbbfa531a4cb546d6b81e",
+    "front.png": "d158b655e86b628a6065d01d1028eb7e7a22108fd79c576200c7ff6d1d2a3d93",
+    "back.png": "e3ce717c6adb91fd950da9552fdcca27e4177508633f284d042c59ee66cb1d80",
+    "west.png": "978ac67c30ac17142b848a7bbbae6703ab81505240ea8561cdc38e99cce9f02a",
+    "east.png": "a990d19be5583ca4fbbb750ac1c28ca55bafa6a2c6401bb289d25720deb3f63d",
+    "top.png": "6fb1041fef729c9254c1e60470b45a3caf6fcf3a1573f1fe9eec3722b0599ce8",
+    "entry-detail.png": "f28538e0f49299f236590eb61c9f9e6a7332b346e2b01ed6cf8b1c8fe5267f7b",
+    "corridor-detail.png": "0985529caa524dadac316df3b6491cc9682a3e86064ad3efc2851188883dcf2d",
+    "roof-detail.png": "2754f0edc4a67cb46ce0b7795cad53c6dc08639de1e4494b6c42d7a6f3a25507"
+  },
+  "current_independent_review": "ROOF-FASCIA-INDEPENDENT-QA.json",
+  "original_historical_review": "SOURCE-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Newly reviewed public official NCKU virtual-campus daytime photographs node2/3 and highlevel native roof crop separate a thin lightgray front lip from dark underside above the main long facade. Only2originaltriangles/1whole roof-front plane added at y-20,x[-64.5,32],z111..113.5. Append nominalgray material5; original5entries and all other indices unchanged. Original2.5mm roofthickness exaggeration remains, real lip onlyabout10sourcepixels. No upper/lower/side/back or intermediate bands extension; intermediate short ledges alternate with brick piers. XML2022/9/27 is unverified metadata,not2026survey. Sourcephotos private and source rights preserved.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

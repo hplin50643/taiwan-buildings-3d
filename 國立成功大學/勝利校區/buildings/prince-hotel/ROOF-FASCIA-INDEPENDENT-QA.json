@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "slug": "prince-hotel",
+  "independent_numeric_review": "independent-numeric-review.json",
+  "independent_scene_review": "independent-scene-review.json",
+  "independent_plane_group_review": "independent-plane-groups-review.json",
+  "source_domain_review": "second-source-domain-review.json",
+  "actual_visual_review": "All ten final renders viewed in montage, plus full entry-detail/corridor-detail/roof-detail. New mainroof front fascia visible in front/preview/corridor-detail; other roof faces and intermediate slabs retain original neutral. Savedscene independently reopened; original camera/light/render/mesh inventory and6shaders verified.",
+  "counts": {
+    "triangles": 2802,
+    "original_colored": 1577,
+    "added": 2,
+    "colored": 1579,
+    "neutral": 1223,
+    "palette_face_counts": [
+      620,
+      425,
+      276,
+      256,
+      1223,
+      2
+    ]
+  },
+  "mixed_domain_checks": {
+    "adjacency_connected_normdot_gt_0_999999": {
+      "before": 1,
+      "after": 1,
+      "exact": true
+    },
+    "global_normal_plane_distance_round4_possibly_disconnected": {
+      "before": 2,
+      "after": 2,
+      "exact": true
+    }
+  },
+  "geometry_3mf_original5palette_other_indices_preserved": true,
+  "isolated_rebuild_QA_checked": true,
+  "source_pending_snapshot_unchanged": true,
+  "image_sha256": {
+    "preview.png": "32fcca29a2a899fe377a4b255f0ea8687a4f19ad8d19ea8af32349b7563ddbb4",
+    "rear.png": "356b2845ddeb2eed90d35067e2c8d169f4bc2675a48fbbfa531a4cb546d6b81e",
+    "front.png": "d158b655e86b628a6065d01d1028eb7e7a22108fd79c576200c7ff6d1d2a3d93",
+    "back.png": "e3ce717c6adb91fd950da9552fdcca27e4177508633f284d042c59ee66cb1d80",
+    "west.png": "978ac67c30ac17142b848a7bbbae6703ab81505240ea8561cdc38e99cce9f02a",
+    "east.png": "a990d19be5583ca4fbbb750ac1c28ca55bafa6a2c6401bb289d25720deb3f63d",
+    "top.png": "6fb1041fef729c9254c1e60470b45a3caf6fcf3a1573f1fe9eec3722b0599ce8",
+    "entry-detail.png": "f28538e0f49299f236590eb61c9f9e6a7332b346e2b01ed6cf8b1c8fe5267f7b",
+    "corridor-detail.png": "0985529caa524dadac316df3b6491cc9682a3e86064ad3efc2851188883dcf2d",
+    "roof-detail.png": "2754f0edc4a67cb46ce0b7795cad53c6dc08639de1e4494b6c42d7a6f3a25507"
+  },
+  "file_sha256": {
+    "model.stl": "cf5263cd1a58f66ee38a8ecc5aacc955cb286320808485da817b9754c3de7b60",
+    "build_model.py": "3bb0f402a0a9a8ebc04be1bfac8c12c31c1c9e367384fae8277d33ab790bd50b",
+    "color-mesh.npz": "6d486860b4e545cdb12cd30341370bcc1cb4720540e9cb2c06490563b9f149e3",
+    "palette.json": "483285acf373916c9a431c0489347a49eb93dc51597335eb5478b5552c9a418b",
+    "appearance.3mf": "8f032f671a7814b6d35453e69b9b54320b51a01f6de8e188bff70413b439279c",
+    "appearance-materials.json": "da8a68ecfb5d7b69bdb27369770e7a0ac84f727173c49d0bd2b21d10e9b1e416",
+    "scene.blend": "46bef030cca82ae98ff1ce60b1de8c7eee0efa34bec49e9fc6948ff2c81a8805",
+    "colorize_model.py": "13647671e0cb7521b3cf97c9e6353578c23d2fb477aacc7b90b10a5cf7ccecf7",
+    "export_appearance.py": "ed6aaaeaef55a5da769d24b124b32c33203b07c878fbb93ec5150a93ee4007ac",
+    "validate_color.py": "8f04c889c77662507a17e3c2aded2f300f8f4f8e22b3fe2a0d0cde49404c530e",
+    "render_color.py": "1b201a01af2212cf978f8f57c781443f0ac984b8f7a7ceead9c5e35eabfa9f03",
+    "verify_color_scene.py": "f77a6e48aa56e5191a7ff83ae70a6c36f0ad95ae8e404f7513b98033213f83dc",
+    "README.md": "3b738b00731e4d1e45f49e9dff0a15054b7fe8314de763d2780dc4ef614774a3",
+    "COLOR-ASSIGNMENT-QA.json": "79cde8c8b2085b953e6eea642a0d00cc4cf6e11a0b3edf0d131c90f6557bc623",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "963ea7e162367c5590c6d7a0d784a11fdffeac53d876b176ff279942ef0a86f2",
+    "COLOR-SOURCE-REGISTER.json": "69eb9c736e3bf7efc9aaa7c791d9a69edb1898ef7a655d2e992c78007215464b",
+    "ROOF-FASCIA-SOURCE-QA.json": "73aeca6b23f175272f17a4cea3c0a548085a8d6bd121ca2755b055befe53daa1",
+    "SCENE-QA.json": "b6de4e60499a067267faf0d8ad5176ff5c72971d03b346b53abf50a55afff36b",
+    "ROOF-FASCIA-SCENE-QA.json": "0d67e9e6cec97fc93ae8960697a8cae06d169c19276cbfe516bffe91d0e6d118",
+    "CHECKSUM-SCOPE.md": "2c3bac035bd46eb1f3ef76c4f92034dcbb2819f730035af9aaa82fc491d27cce"
+  },
+  "limits": [
+    "Native highlevel image supports only coarse lightgray vertical lip, not dark underside; nominal#BEC2BC is not measured.",
+    "Original2.5mm thick roof proxy retained, not real fascia thickness certification.",
+    "No extension to short real window ledges and brick piers via fullwidth original intermediate slabs.",
+    "XML2022/9/27 metadata not independently verified capture; no2026 condition claim.",
+    "Original source day/night description inversion documented without changing historical bytes."
+  ],
+  "published": false
+}

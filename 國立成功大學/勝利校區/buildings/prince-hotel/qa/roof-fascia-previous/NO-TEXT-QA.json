@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in prince-hotel-all-views.jpg. No caption/backing; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "bd92f6643db3f6c285e5d5a5a86f1a841bceb705027ef81b394658844029775e",
+    "corridor-detail.png": "94407d9a6510f1637335dcd689a0ca45180ccc963f79009cd30fd42ad16bb373",
+    "east.png": "07b1974189cf9018b65988d1ced2579a0e692733f7d6a2d57187ee889f4fb4c6",
+    "entry-detail.png": "0fb069e1a84b3255245135056b437578adc8ea21550dacf38464d09cd59ee364",
+    "front.png": "6fdc0d2b8f1737fca052dd4bfbb454ba67c6de2ede24195b0adc9115233aac6e",
+    "preview.png": "7481e6bf79dfa698acd425a7c80511e0416bfe654a5c76a06bb59d57cb58731f",
+    "rear.png": "ea0b777e03391c4aafdc7cc55f3d2d86e0db0ea31e584b76cfe3e2f338b2330b",
+    "roof-detail.png": "de023abd7167636c658280394497693236c0e89a3d710284b685b8cda03d0531",
+    "top.png": "1d3da1de241af68c5bd62f20f2188ddcdbf34b27d3f8080d572522133a47c491",
+    "west.png": "e41d06af629205a02d9bd068c20eb88ecce01d1d18a45f8cc26e892971d2e034"
+  }
+}

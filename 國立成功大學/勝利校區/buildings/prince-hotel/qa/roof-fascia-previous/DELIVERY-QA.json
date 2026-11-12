@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "checks": {
+    "preview_size": true,
+    "preview_fresh": true,
+    "rear_size": true,
+    "rear_fresh": true,
+    "front_size": true,
+    "front_fresh": true,
+    "back_size": true,
+    "back_fresh": true,
+    "west_size": true,
+    "west_fresh": true,
+    "east_size": true,
+    "east_fresh": true,
+    "top_size": true,
+    "top_fresh": true,
+    "entry-detail_size": true,
+    "entry-detail_fresh": true,
+    "corridor-detail_size": true,
+    "corridor-detail_fresh": true,
+    "roof-detail_size": true,
+    "roof-detail_fresh": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_PASS": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_mesh": true,
+    "SCENE-QA.json_PASS": true,
+    "SCENE-QA.json_mesh": true,
+    "FRAMING-QA.json_PASS": true,
+    "FRAMING-QA.json_mesh": true,
+    "model.stl_original_bytes": true,
+    "build_model.py_original_bytes": true,
+    "first_section_ten_images": true,
+    "three_columns": true,
+    "no_private_absolute_paths_in_public_text": true,
+    "mesh_limits_disclosed": true
+  },
+  "final_artifact_hashes": {
+    "README.md": "1115422d7ab51623278e956318a974801a81342f355d1c796de3d09335f88446",
+    "colorize_model.py": "ffdb5cdffd638f28fb2362fe2c6e3bdbacb70ed364098ad02edd2294a117229c",
+    "render_color.py": "207880ea94a60e0613524af7dea37258178ced4532484d69f0a192d1e77dae3c",
+    "appearance.3mf": "3b961e37ee4bd6e66b2030d8fe36720fc5eae65f8180e9a6cb0b22cdd087be73",
+    "color-mesh.npz": "2660c95479f032faea5b6cf0006c30a463709124e72fc57e27d6826df52d37d1",
+    "model.stl": "cf5263cd1a58f66ee38a8ecc5aacc955cb286320808485da817b9754c3de7b60",
+    "scene.blend": "eecb689f24f6dd40cf348e41052b864381531f4b8a76581c9a7ddb3819555dcc",
+    "COLOR-SOURCE-REGISTER.json": "69eb9c736e3bf7efc9aaa7c791d9a69edb1898ef7a655d2e992c78007215464b"
+  },
+  "images_sha256": {
+    "back.png": "bd92f6643db3f6c285e5d5a5a86f1a841bceb705027ef81b394658844029775e",
+    "corridor-detail.png": "94407d9a6510f1637335dcd689a0ca45180ccc963f79009cd30fd42ad16bb373",
+    "east.png": "07b1974189cf9018b65988d1ced2579a0e692733f7d6a2d57187ee889f4fb4c6",
+    "entry-detail.png": "0fb069e1a84b3255245135056b437578adc8ea21550dacf38464d09cd59ee364",
+    "front.png": "6fdc0d2b8f1737fca052dd4bfbb454ba67c6de2ede24195b0adc9115233aac6e",
+    "preview.png": "7481e6bf79dfa698acd425a7c80511e0416bfe654a5c76a06bb59d57cb58731f",
+    "rear.png": "ea0b777e03391c4aafdc7cc55f3d2d86e0db0ea31e584b76cfe3e2f338b2330b",
+    "roof-detail.png": "de023abd7167636c658280394497693236c0e89a3d710284b685b8cda03d0531",
+    "top.png": "1d3da1de241af68c5bd62f20f2188ddcdbf34b27d3f8080d572522133a47c491",
+    "west.png": "e41d06af629205a02d9bd068c20eb88ecce01d1d18a45f8cc26e892971d2e034"
+  },
+  "mesh_sha256": "2660c95479f032faea5b6cf0006c30a463709124e72fc57e27d6826df52d37d1",
+  "geometry_change": false,
+  "count_delta": 0,
+  "manual_visual_review": "Separate SOURCE-VISUAL-QA.json and parent independent review required.",
+  "limitations": [
+    "Five appearance labels are not a tested multi-filament slicer project.",
+    "Original simplified geometry retained; no exact surveyed facade geometry."
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
+}
