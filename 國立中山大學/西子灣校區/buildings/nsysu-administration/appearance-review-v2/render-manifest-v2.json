@@ -1,0 +1,81 @@
+{
+  "revision": "color-v2-side-rear-continuity",
+  "render_parameters": {
+    "render_engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "seed": 0,
+    "denoising": false,
+    "threads": 1,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "views": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 927226,
+      "sha256": "ace3823bb9ea11b3983a1ca45d59df65f7f26003c38bb29c3f15ead66774423f",
+      "personally_viewed": true,
+      "review": "Upper left shell and front outer parapet brick proxy is continuous with original upper front. Original front columns, beams, balcony and glazing retained. Side lower join stays neutral."
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 876286,
+      "sha256": "267e2cce24896d3bac9cbe68cb7f6ffaadef55031fcbad456dfc2112b7eaf1cd",
+      "personally_viewed": true,
+      "review": "Complete upper shell brick proxy has no diagonal leftovers. Existing upper and lower aperture backs are opaque colored proxies; substantial lower mixed-material wall and deep notch remain neutral."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 898220,
+      "sha256": "becb3a7d6e6f1b0f14d703539b7201fd56096253c2c0a297f3321011db47f53a",
+      "personally_viewed": true,
+      "review": "All original front colored surfaces retained. Original opening reveals have same-family wall/frame colors; no letters, emblems or new window geometry."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 896779,
+      "sha256": "1c7c93b933b8b9327ad26fa55ceee7c414b94cc5ec725b6f00b8179553b3f7fe",
+      "personally_viewed": true,
+      "review": "Lower viewpoint retains original portico depth, columns and balcony. Upper side brick and window families form one existing box. Geometry remains the original approximation."
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 885379,
+      "sha256": "fe4029e1acede05bd0be0cb0b6bd9c69aabf05b4f9ff6049f1e88ed64f56ea0e",
+      "personally_viewed": true,
+      "review": "Upper box support plane is uniformly brick proxy, all six original upper side apertures retain real recess geometry. Artificial lower join and existing stair bulge stay neutral."
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 878613,
+      "sha256": "d9a03a2d3fa44c4584faa751ed961d53e6e9e24a088ba23a4c8c983571f95bf9",
+      "personally_viewed": true,
+      "review": "Opposite upper box support plane and original windows follow the same material family. Lower side planes and stair bulge are deliberately neutral, without invented openings."
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 883694,
+      "sha256": "1c8ca729e18b25ea8306b5e09ef4b3b71a4168b6652f36a0349a78626fcc29d6",
+      "personally_viewed": true,
+      "review": "Original roof, two stair heads and central lightwell remain neutral. Footprint, roof void and parapet geometry unchanged. Outer parapet brick does not color inner roof surfaces."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 918697,
+      "sha256": "f675a3a7a1f228c7ffcad0eaa71c5d51409355c7d98d063b79dfc55757268a66",
+      "personally_viewed": true,
+      "review": "Same camera, lighting, palette and render settings; only original face indices restored. Original neutral upper side and front opening returns visible for comparison."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 843111,
+      "sha256": "53ddef3f87614478c63d0f68d64f7d84dae93cd51101d43740d4c3ec05f0fc84",
+      "personally_viewed": true,
+      "review": "Same camera, lighting, palette and render settings; only original face indices restored. Original neutral upper shell and rear windows expose repair coverage."
+    }
+  ],
+  "note": "Original appearance-review remains historical. These image hashes bind only current v2 materials and the stated original-index comparisons."
+}

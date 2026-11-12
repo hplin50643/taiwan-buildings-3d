@@ -9,12 +9,14 @@
 | ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
 
 
-### 新增官方實照近似彩色（原圖保留）
+### 側背原面材料續色（原圖保留）
 
-僅行政主棟正面：磚褐後牆／上盒、灰米柱梁、深淺灰藍窗與弧陽台磚色代理。照片外的側背屋頂保中性，鄰棟不納入；字樣、紅布條與細格天花未新增。
+保留全部原彩面，補色920個原中性三角面：上盒沿用既有正面磚色主材代理延伸完整側背，既有側背窗背／凹面與簷板側邊補同族材料。上盒細白框帶未有原面界，仍按原正面近似省略。下部背面顯著淺柱與磚牆混材無面界、人工連棟截面及未知屋頂保中性；不新增窗或飾物。
 
 
 原全部預覽及代表選圖、geometry／尺寸／STL／scene不變；詳[來源與限制](APPEARANCE.md)。
+
+[新版左側](appearance/left.png) · [新版右側](appearance/right.png) · [原版同相機正斜視](appearance-review-v2/original-front.png) · [原版同相機背向](appearance-review-v2/original-rear.png)。
 
 [返回西子灣校區](../../README.md) · [返回全校圖鑑](../../../README.md)
 
@@ -32,11 +34,11 @@
 - 官方1F–3F圖的背面中央深退縮；3F至RF中央井口及兩側樓梯頭位置
 
 ## 未知與簡化
-- 背面完整照片本次未成功取得，後側窗孔及側面留白為低細節示意，不表示與現況逐窗一致。
+- 原建模階段未取得完整背照；本版已親看2024-06-18背面及官方後門近照，但只補原面材料，後側窗孔及側面仍是原低細節近似，不表示與照片或現況逐窗一致。
 - 屋頂中央井口由3F以上貫通，背面下層依官方平面保留退縮；各層高度、高層出挑深度及樓梯頭高度以目視比例估算，未還原內部房間。
 - 主樓與東西相鄰低層群棟連接處截斷；柱身為列印加粗。
 
-[正立面](appearance/elevation.png) · [俯視／屋頂](appearance/top.png)。照片年代未提供，2026-10-13為查閱日，不代表拍攝日或全校現況確認。
+[正立面](appearance/elevation.png) · [俯視／屋頂](appearance/top.png)。官方舊相簿未提供拍攝年代；本版新增Commons照片標示2024-06-18，與查閱日分開記錄。不同來源不能視為同一時間現況。
 
 
 ## 列印與數位檢查
@@ -59,3 +61,10 @@ Python 3.12安裝requirements.txt，執行python build_model.py。Blender 4.3.2+
 - [教學行政區--行政大樓 PDF](https://rpa121.nsysu.edu.tw/static/file/296/1296/attach/76/pta_174542_9100967_04268.pdf)
 
 只自建幾何，未擷取第三方mesh。原照片和PDF不隨本包散布，預覽只含實際STL渲染。
+
+
+## 本版材料驗證
+
+[逐點逐面／材料驗證](appearance-review-v2/model-verification.json) · [完整原面與中性原因](appearance-review-v2/boundary-continuity-audit.json) · [來源判讀](appearance-review-v2/source-register.json) · [九張真渲染審閱](appearance-review-v2/color-continuity-review.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。
+
+原appearance-review保留為前版歷史，不作本版材料與圖片綁定；現版由appearance-review-v2及appearance-freeze.json綁定。原幾何QA與未試印限制未變，校級校驗碼待授權發布時合併。
