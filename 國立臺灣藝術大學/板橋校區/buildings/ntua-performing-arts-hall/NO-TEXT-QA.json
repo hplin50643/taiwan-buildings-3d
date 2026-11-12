@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntua-performing-arts-hall-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "da267eaaf582ffb98f0093806d3b32d771a57585bd32f1e37bf4b62f4272066e",
+    "east.png": "1164b9f8683d006e567f4b59887a00f48c34e175ed108646debb0e904540099d",
+    "entry-detail.png": "57697b982ba44f9762b2c8cd10ee08799fd3488eb1dfdb2b2d879c5950727cce",
+    "facade-detail.png": "84a0014fcf4077a146a9b3d1b59aebfd2b40561191f69bbce65cc37d0b396a13",
+    "front.png": "817bb570faf54e6a955395c1c7565e8c8d3b20be2ba9fecf407311650f533873",
+    "preview.png": "701c73a1cec47337ab49abe37de87b9c085c4e9f328b9bc35ad8acf09edf0b09",
+    "rear.png": "12e9d9c3991031b6a28e561d96bf85cfef1e6da99c2215001db8047daf37c2b8",
+    "roof-detail.png": "5f6167dabd1bfa6066638e614218de9f115e98fe79dfe4b2e9753ff427430d4d",
+    "top.png": "6d241f936200e3f84b45472547d18e1e82605e5862149dc52790c3f4520fa363",
+    "west.png": "eb1189745c87e248963f7f00d016653774ddaa06fbbb02398828953bd85e5861"
+  }
+}
