@@ -1,6 +1,6 @@
 {
   "model": "ypu-guanghan-guanghuan-complex",
-  "version": "有界跨年外觀近似",
+  "version": "外牆材料連續性推估 v2",
   "public_source_images_included": false,
   "sources": [
     {
@@ -70,6 +70,15 @@
       "url": "https://maps.nlsc.gov.tw/",
       "supports": "完整屋頂長弧、端核、H東雙弧與光電；兩期圖內標記2016/2024",
       "limits": "PHOTO2018服務所得圖內標記是2016；年份標記不等於精確拍攝日。高頂視差明顯，不能當地面牆基或把位移當改建；0.1355482437m/px為該z20地面比例"
+    },
+    {
+      "title": "元培60週年校慶：時光走廊，2007光寰與光瀚樓",
+      "url": "https://anniversary.ypu.edu.tw/p/426-1068-3.php",
+      "image_url": "https://anniversary.ypu.edu.tw/var/file/68/1068/img/2470/19.jpg",
+      "reviewed_in_v2": true,
+      "supports": "實見內院連續米灰牆、灰綠窗、上緣粉褐格架及灰色基座；側背延伸僅同構件材料推估",
+      "limits": "頁面2007是項目標年，未明載攝影日期。390x260照片，不能精確色度、窗數或背面細節。不與原2008院訊目錄日期或2022報告相片混為同日現況。"
     }
-  ]
+  ],
+  "v2_source_read_limit": "2022永續報告兩個校方下載連結、原內院JPEG、音輝49均HTTP503；本輪未實看這些內容。歷史來源紀錄保留但不冒稱本輪重讀。"
 }

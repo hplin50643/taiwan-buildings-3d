@@ -22,6 +22,9 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
+change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
 import numpy as np
 D=json.loads((R/'plan-registration.json').read_text());S=1.07;B=1.6;MPP=.13554824373866425
@@ -42,6 +45,13 @@ def band(p,a,b,half,lo,hi):
  return all(-.006<=np.dot(np.array(mesh.vertices[v].co[:2])-a,u)<=length+.006 and abs(np.dot(np.array(mesh.vertices[v].co[:2])-a,n))<=half*S+.006 and B+lo*S-.006<=mesh.vertices[v].co.z<=B+hi*S+.006 for v in p.vertices)
 rot=np.array([[math.cos(-.8),-math.sin(-.8)],[math.sin(-.8),math.cos(-.8)]])
 center=xy([1152,679]);ovalpoints=[np.array([7*math.cos(k*2*math.pi/48),3.5*math.sin(k*2*math.pi/48)]) for k in range(48)]
+# V2: use original registered support planes, never transform the finished mesh.
+Lsrc=[[95,333],[150,313],[210,298],[325,285],[440,290],[555,315],[660,355],[760,413],[820,450],[730,610],[650,570],[520,490],[480,570],[320,540],[260,530],[100,550],[30,420]]
+Hsrc=[[15,180],[30,153],[65,148],[80,155],[145,100],[175,75],[205,75],[230,90],[240,118],[275,120],[340,145],[380,185],[395,210],[510,190],[635,190],[760,205],[880,240],[1020,300],[910,500],[790,465],[650,450],[530,460],[410,500],[285,560],[175,510],[80,410],[30,300]]
+Gsrc=[[100,550],[130,640],[210,680],[300,698],[380,680],[450,640],[490,580],[480,570],[320,540],[260,530]]
+wall_components=[('L_outer_and_roof_fascia',coords(Lsrc,'L'),26.8),('H_outer_and_roof_fascia',coords(Hsrc,'H'),26.8),('G_entry_side_wall',coords(Gsrc,'L'),24.3),('central_seam_wall',coords([[700,815],[752,820],[766,700],[733,691]]),26)]
+for plan,hi in [([[750,420],[830,450],[795,500],[720,470]],30.0),([[720,495],[795,520],[735,610],[680,570]],28.8),([[30,420],[100,390],[140,450],[65,485]],29.2)]:wall_components.append(('L_stair_enclosure',coords(plan,'L'),hi))
+Lrear=coords([[95,333],[150,313],[210,298],[325,285],[440,290],[555,315],[660,355],[760,413]],'L')
 for p in mesh.polygons:
  x,y,z=p.center;nx,ny,nz=p.normal;i=0
  # Only exact original inward wall planes, not unobserved outer H or Lrear.
@@ -71,11 +81,27 @@ for p in mesh.polygons:
  if all(abs(q[1]-2.975)<.006 and -4.006<=q[0]<=4.006 for q in local) and localnormal[1]>.8 and any(all(lo-.006<=h<=hi+.006 for h in zz) for lo,hi in rows):i=2
  if all(abs(q[0]-6.35)<.006 and 5.994<=h<=24.406 for q,h in zip(local,zz)) and localnormal[0]>.8 and any(all(t-.356<=q[1]<=t+.356 for q in local) for t in [-.6,.6]):i=2
  if z<=B:i=0
+ original_indices.append(i);reason=None
+ if i==0 and abs(nz)<.01 and all(mesh.vertices[v].co.z>=B-.001 for v in p.vertices) and max(mesh.vertices[v].co.z for v in p.vertices)>B+.001:
+  # Only exact complete original vertical facets, all three vertices tested.
+  for label,plan,hi in wall_components:
+   for a,b in zip(plan,np.roll(plan,-1,axis=0)):
+    if strip(p,a,b,0,hi):i=1;reason='inferred_complete_'+label
+  # The full original H oval outer shell, not its inner opening or top ring.
+  if all(-.04<=h<=29.106 for h in zz) and np.dot(localnormal,sum(local)/len(local))>0:
+   for k,a in enumerate(ovalpoints):
+    b=ovalpoints[(k+1)%48];u=(b-a)/np.linalg.norm(b-a);n=np.array([-u[1],u[0]])
+    if all(abs(np.dot(q-a,n))<.006 and -.006<=np.dot(q-a,u)<=np.linalg.norm(b-a)+.006 for q in local):i=1;reason='inferred_complete_H_oval_outer_wall'
+  # Original L external curved recess backs only, not entire dark recess or new windows.
+  for a,b in zip(Lrear[:-1],Lrear[1:]):
+   for lo,hi in rows:
+    if any(strip(p,a,b,lo,hi,off) for off in [-.34,.34]):i=2;reason='inferred_L_outer_existing_window_back'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; complete outer wall and stair/oval shell color continuity inferred; unresolved roofs, artificial base and mixed recess reveals neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-facade-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -105,9 +131,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown outer L arc windows and H back roofs base slope neutral; no PV or new facade divisions;2022 report images are different epochs not same-day condition','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-facade-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Complete L/H/G outer wall facets, stair enclosures, vertical fascia and H oval shell use inferred existing pale wall family; L existing outer recess backs use inferred grey-green. Roofs/base/slope and unresolved mixed reveals remain neutral. Official anniversary front photograph visually reviewed; 2022 report unavailable HTTP503 in this revision, historical v1 source claims not repeated as fresh review. Different epochs, no same-day or current-condition claim. No PV or new facade divisions.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((20,260,155),(0,0,16.85),200),'rear':((-150,-260,100),(0,0,16.85),200),'elevation':((0,300,16.85),(0,0,16.85),200),'source-angle':((-170,220,170),(0,0,16.85),200),'top':((0,0,330),(0,0,0),200)}
+views={'front':((20,260,155),(0,0,16.85),200),'rear':((-150,-260,100),(0,0,16.85),200),'elevation':((0,300,16.85),(0,0,16.85),200),'source-angle':((-170,220,170),(0,0,16.85),200),'left':((-320,0,145),(0,0,16.85),200),'right':((320,0,145),(0,0,16.85),200),'top':((0,0,330),(0,0,0),200)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
