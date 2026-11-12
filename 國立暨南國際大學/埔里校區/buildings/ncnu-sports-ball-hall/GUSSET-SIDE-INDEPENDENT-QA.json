@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T10:40:23.855730+00:00",
+  "scope": "Six original +X visible gusset planar sides only,42 new original triangles; original62 fascia unchanged.",
+  "blockers": [],
+  "numeric_checks": {
+    "status": "PASS",
+    "checks": {
+      "vertices_exact": true,
+      "faces_exact": true,
+      "4726_triangles": true,
+      "per_plate7": true,
+      "42new_exact_mask": true,
+      "original62_preserved": true,
+      "42new_gray": true,
+      "counts": true,
+      "whole_domains": true,
+      "no_mixed_coplanar": true,
+      "model.stl_unchanged": true,
+      "build_model.py_unchanged": true,
+      "3MF_vertices": true,
+      "3MF_faces": true,
+      "3MF_materials": true
+    },
+    "counts_per_plate": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "mesh_sha256": "12ec18058a0325c0debce5e6f1357e260ed20ad12dcc3c6b0787cbff13a32d28"
+  },
+  "scene_checks": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "two_material_slots": true,
+      "palette_0": true,
+      "palette_1": true
+    },
+    "scene_sha256": "3adee15168474dc10ba3c0415690f2adfc8349d19c88006ac7bbd85e8ddb488c"
+  },
+  "face_counts": {
+    "total": 4726,
+    "original_preserved": 62,
+    "added": 42,
+    "colored": 104,
+    "neutral": 4622
+  },
+  "findings": [
+    "Independently reconstructed original triangular yz-profile and six x=center+.95 visible sides from all vertices and outward normals; exactly seven original faces per plate,42 total,whole coplanar domains with no mixed material boundary.",
+    "All other material assignments unchanged. Original geometry/STL/build exact;3MF vertices/faces/material indices independently match. No original OBJ.",
+    "Actually inspected source contact of all eight photographs, full original07 and01, and native07 gusset crop. Pale visible plate side family supported; original detailed steel flanges are simplified as triangular proxies. Opposite faces, thickness and tie rods not inferred.",
+    "After renderer saved all ten images and scene, actually inspected all ten final images in two private montages and full roof-detail image. Subtle pale side assignment remains bounded; no wall/rod/roof expansion observed.",
+    "Independently reopened original and final saved scenes; exact geometry/materials, shader palettes, source hash, camera/lights/render/mesh lists pass. Captions/backdrop hidden,stamp off.",
+    "Source QA retains fixed SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW as evidence snapshot. This separate final independent report supplies model PASS without modifying source snapshots."
+  ],
+  "image_sha256": {
+    "preview.png": "c5d78a942b1bec0869c75bb504cd63c9f3fc1d40df172685fde90688f8ef6b36",
+    "rear.png": "c0233d1c71bdda633ed25d80df2bd7ac20c37ac125a217f8a8a6f302e24ac961",
+    "front.png": "ffb78867c361fea7e7662da625b842c37c695a44300f981f0e34b0aa0eae5549",
+    "back.png": "dc869db86679c5d485ddcb8c1fc658e4151303ef6629485dc126a8237ca32b70",
+    "west.png": "3d44519edec2fa5d23ffa64d4af566329408a660d918201140e3b930843c095c",
+    "east.png": "ea61db00fbb18bce9ec75911c90383b49840f94cf9948b8a9b1cf7d8ae682007",
+    "top.png": "d41edf91bf57ddd8cf395dacec755a750d91bf13775a711fc8cf661243d6b269",
+    "entry-detail.png": "84e712b5f605897856708961b6154d4e8ef26fd98f51c4953e22573ac53cc251",
+    "facade-detail.png": "6465aa9124c73ce7ac24f18312b039222f9980da2b0acfee61332d726c38bdf4",
+    "roof-detail.png": "96d031a36c1fca20044243806e4b40ae3043a71f56b826f84a4a3c06d3ed6612"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "12ec18058a0325c0debce5e6f1357e260ed20ad12dcc3c6b0787cbff13a32d28",
+    "appearance.3mf": "26f479b34b32e01c7b5ba300d8ce7fd329179d3649be684450bb79519d253f37",
+    "scene.blend": "3adee15168474dc10ba3c0415690f2adfc8349d19c88006ac7bbd85e8ddb488c",
+    "colorize_model.py": "f58ff3cf9627f0c2ca3b09c08ec5921f596675fabdf0cfacf47d769e38150a8d",
+    "GUSSET-SIDE-SOURCE-QA.json": "54d24a018caf2766142c9cf028d5e0c2a9ac35d9e6ca2b304c0cefc28ce2fa81"
+  },
+  "source_sha256": {
+    "architect01.jpg": "4594435e03ed0bed54d7f2833dcae386a3f5714eb4ade3853641c46c0d0e7de8",
+    "architect02.jpg": "52b8450d0c53f5182ad4ace80b9b38f3dd41334ecae5d8a989df16538f101654",
+    "architect03.jpg": "5c812f6f6dec68b145797cf4d8d248de01f7f71132a5491f089676138a15312a",
+    "architect04.jpg": "269422fd666a8f60d06443a54d79fe49a5cf676329a4586d1274b1914d664b2e",
+    "architect05.jpg": "60658ac9c8a146202c25da59af536ec18303ecb20adad2ede188d4f5922e3a53",
+    "architect06.jpg": "741851b170a837dcd6b696e8a909f41d895287bf255da31130dacadbcb624964",
+    "architect07.jpg": "95d5a8bfee9664ccb8cd1c93410b8c1c225a2e3b436806b8ecd92e1e0b673333",
+    "official-sport-r.jpg": "8bf68f75176b2eec2bb087d16cbccfd20a99a964eb7d2e00b91f09378d416cae"
+  },
+  "limitations": [
+    "Only visible +X sides; no reverse sides,thickness,rods,whole soffit,roof,glass or mixed brick-gray walls added.",
+    "Triangular plate is simplified original geometry,not detailed flange/joint reconstruction. Nominal lightgray not calibrated or per-vertex measured.",
+    "07 is existing source reinspection; additional01-06 contextual photos are not new dated captures.",
+    "Capture dates unknown; original roof omits later solar installation,not2026 current-condition certification.",
+    "Partial five-diamond ball hall only,not pool/connecting wings. No physical print/multicolor-slicer validation. Reference photographs/crops private."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed three actual official/architect exterior photographs,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole original y=-41 plane62 formsone exactedge-connected Boolean fascia,62lightgray4664unknownneutral.",
+    "All1144coplanar componentsuniform; exposedarea218.352804mm2 notboundingrectangle244.8, original supportintersections remain.",
+    "Three actual exteriorphotos prove frontfascia family only,captureunverified/not2026.",
+    "Curvedtop/under/oppositeeave,mixedbrickgraywalls/columns,glass/reflections/frames,braces/rods/doors/rear remain neutral.",
+    "Sevenwholeviewsfit;threecloseups show completefrontfascia and left/right Boolean boundaries.",
+    "Original4726triangles/STL/build and20immutablefiles/noOBJ/nooriginal3MF retained,originalscene publicly aliased and privately retained.",
+    "Two depth-preview materials notmono: PREVIEW-TRANSITION documents source-gap correction only,no falsewholecolorcompletion.",
+    "Samefive-diamond hall,count_delta0,excludes pool/fitness/hydrotherapy/connectingentrance.",
+    "Actual3MF/scene/fourscripts NCNU Sports Ball Hall partial color with paletteRGB/BSDF verification."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "4e356646200b8917e06d985cf0a4f0ee23b07ad2f6ebfd29c6bb0c0657266efa",
+    "README.zh-TW.md": "4e356646200b8917e06d985cf0a4f0ee23b07ad2f6ebfd29c6bb0c0657266efa",
+    "colorize_model.py": "de096b3a7ba3dbc72c5fe82103cb8c018842f38e865e8617950f5ce36a60fcf2",
+    "render_color.py": "c0cd9b4e81cfc112270a6515abc81c67c7e59dda50023097a36f947af25a3c0a",
+    "color-mesh.npz": "6dac28360dde35ddec5891d019e7e266000397284432356f464d22c5821257e9",
+    "palette.json": "7eaf937f4fec9a591fa9119ad671a7892b4a60cbebd91df702ce271d8073d3d3",
+    "appearance-materials.json": "ad0230f62b1692109aac062255aaffc3247be47c4fd0acdc2f99d6279f7ac68e",
+    "COLOR-SOURCE-REGISTER.json": "01131f53ca00b8ae740a5a7ff6d286fae23b24680d7b410265fac2a6c1532bcf",
+    "model.stl": "b58ec49d9ac34394b02ed4c57ed4e67e6150877b32339a4d14d4fc80c497a1e9",
+    "build_model.py": "dcbdbebee40e61af23f03aad368807f83cfeed7f7cf6d3aa6d0cb2babb9c7788",
+    "PREVIEW-TRANSITION.md": "eed781773381d6a16d2ea97066a71da60bceddb1517c58198608cb5f1a7b72dd",
+    "preview.png": "eb710ad5d044928e82d7b9487ea17b8cbd696584a643719938978dfd46a3a15a",
+    "rear.png": "ffe4d6605314b43b29590a0fa0b2df0def979e3547a01115a25d0f1d94a10491",
+    "front.png": "2c052733fbc005ee3af40d36625fa9a2c4c52b06150851075a7f4b737a32bb0d",
+    "back.png": "e092b1ab5b0e49b8dc54cc0c506d570cf6236a60d5ccdc295579971f0a191fc5",
+    "west.png": "9d26662e1cb68c21116d987e3bdd0de0235b7725ce2e2b6164ac961bf37a52c4",
+    "east.png": "4618373057e4b93a21cd449e0b5f490206a6b87411372c34a5f32dcef38c0007",
+    "top.png": "1bf71e01279b3f658e670344e15ebbaddd09230ffb59f25bfd2d7993fc05e310",
+    "entry-detail.png": "31d9ad6b182e6537c0578690729b28c4882c1986c2d9be500bbfdbbc82758635",
+    "facade-detail.png": "c407f24d9c441d497332f6d158797e1fa308f7d4cacdfdc71c2d0aac0b8f42d3",
+    "roof-detail.png": "f65156453a3a4942237e1917bef19ce76ef8d17b73db574d19c7cce93d31e2b4"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "1ed560420e8eee4f9cc6839a9f149b26e523ae6f9d9efbefc0b0c38a6e90e2f9",
+    "SCENE-QA.json": "40153ba4e087d5794deab882133b65afb419f76dbe7103140f581c64d79d6933",
+    "DELIVERY-QA.json": "d355e8ebf2911849409ff9ebb85e0dbc6587d1a1404924211684e84ce2c9c39c"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "29cc606122334a6b3076506bc1d380288d1d260b68decbcc603661da937fd5fe",
+    "ORIGINAL-RETENTION-QA.json": "53e905969335b423cc02f8c86f1939467ae1d669a637f3210507f32af8f70005",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0829.json": "0626f0b0a849916933a26b453446fa0851ab7c7b18a2b24d572cb82c4351c7ac",
+    "INDEPENDENT-IDENTITY-0829.json": "c6c5ef8e000b837956c8d589c22438ace3e2b5ea7794f8a96f4cbb314c6ac970",
+    "INDEPENDENT-PACKAGE-IDENTITY-0832.json": "4e56dd8b1ba945b4f96461df40af8480e7f0d17ebb166d2504079f4961a76010"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T08:32:42Z",
+  "parent_review": "Parent personally viewed three official/architect daylight photographs and originalcode0827, preview0829, finalten0832. Rawwhole y-41plane62 exactsharededge singlecomponent matches original roofedge finite fullx136 andz59..60.8; actualarea218.35280368 preserves gusset/tie uniongaps, not filled rectangle. Exactraw62 equals NPZlightgray, all4664othersunknownneutral. Original4726triangles20files/noOBJ unchanged,1144coplanar domains uniform. Original2depthpreview scene/render/README publicaliases byteexact; transition.md explicit notmono/sourcegap/count0. Sevenwholeviews and threecloseups show fullfrontroofedge and both originalunion ends without roofsurface color extension. Actualidentity NCNU Sports Ball Hall Blender/3MF/fourscripts/paletteRGB PASS. Only same five-diamond hall, not adjacentpool/entrycenter, partialnotfullcolor."
+}

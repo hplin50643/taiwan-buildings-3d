@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in ncnu-sports-ball-hall-all-views.jpg. No caption/backing; original geometry/materials/framing retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "3ef2e2653dda7bcffcaac452034ebc0cd67f7b6bd17339e52037173ed3edf034",
-    "east.png": "a8ef082e8047383475a1f1c8010484f9488b0d7a7e37285e963ca332b5eaa329",
-    "entry-detail.png": "b48b7a6b8a1e47dea121d1aab8cf0e945c103b121004753fda42b03e9e95421f",
-    "facade-detail.png": "b5ccf5e07550f075340fa84884abe4c40b4958946b87cfc026cfe7204300b272",
-    "front.png": "c34070d0509f61e823ab82301da2bfea7886688d76736b155222c78e7203c168",
-    "preview.png": "c1753c509208c633890567377ad7c01016a79811b6a1489fcbefbb67639721c9",
-    "rear.png": "fbb74cd1fabbe39fe8782309b8f9fc5b8af858a4ed44b479c4d0df9649e590f4",
-    "roof-detail.png": "9d6689b0141f2c62a39012dbb0b8039af136ba0f7fff1387678517dc259d9138",
-    "top.png": "686e1c9d0c932daa9ec80825d467490d55e022b78fdf0ff56f06848bb235bc64",
-    "west.png": "811e660df402a2eb730f1f89656dfa565bf121dc2b8604e8132c354951814bc6"
-  }
+    "preview.png": "c5d78a942b1bec0869c75bb504cd63c9f3fc1d40df172685fde90688f8ef6b36",
+    "rear.png": "c0233d1c71bdda633ed25d80df2bd7ac20c37ac125a217f8a8a6f302e24ac961",
+    "front.png": "ffb78867c361fea7e7662da625b842c37c695a44300f981f0e34b0aa0eae5549",
+    "back.png": "dc869db86679c5d485ddcb8c1fc658e4151303ef6629485dc126a8237ca32b70",
+    "west.png": "3d44519edec2fa5d23ffa64d4af566329408a660d918201140e3b930843c095c",
+    "east.png": "ea61db00fbb18bce9ec75911c90383b49840f94cf9948b8a9b1cf7d8ae682007",
+    "top.png": "d41edf91bf57ddd8cf395dacec755a750d91bf13775a711fc8cf661243d6b269",
+    "entry-detail.png": "84e712b5f605897856708961b6154d4e8ef26fd98f51c4953e22573ac53cc251",
+    "facade-detail.png": "6465aa9124c73ce7ac24f18312b039222f9980da2b0acfee61332d726c38bdf4",
+    "roof-detail.png": "96d031a36c1fca20044243806e4b40ae3043a71f56b826f84a4a3c06d3ed6612"
+  },
+  "mesh_sha256": "12ec18058a0325c0debce5e6f1357e260ed20ad12dcc3c6b0787cbff13a32d28",
+  "independent_visual_review": "GUSSET-SIDE-INDEPENDENT-QA.json",
+  "previous_qa": "qa/gusset-side-previous/NO-TEXT-QA.json"
 }

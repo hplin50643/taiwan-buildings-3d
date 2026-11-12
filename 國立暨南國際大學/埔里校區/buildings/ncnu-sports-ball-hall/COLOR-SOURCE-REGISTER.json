@@ -1,47 +1,62 @@
 {
-  "slug": "ncnu-sports-ball-hall",
-  "count_delta": 0,
-  "geometry_change": false,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "go": {
-    "file": "NCNU-SPORTS-BALL-HALL-COLOR-SOURCE-GO-0826.json",
-    "sha256": "1ecc52624d4b82487e15490940e24eb91b010f0999b2c0f9d8ec4dc037cfe537"
-  },
-  "review": {
-    "file": "INDEPENDENT-MAPPING-0828.json",
-    "sha256": "7558f782182af4f49785ba267604704833cb1e624a2aedc7a3f12e0f857d0fa1"
-  },
-  "source_records": [
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "sources": [
     {
-      "file": "official-sport-r.jpg",
-      "sha256": "8bf68f75176b2eec2bb087d16cbccfd20a99a964eb7d2e00b91f09378d416cae"
+      "file": "architect01.jpg",
+      "url": "https://www.archtext.com.tw/wp-content/uploads/2024/08/A0510_國立暨南國際大學體育健康中心新建工程01.jpg",
+      "sha256": "4594435e03ed0bed54d7f2833dcae386a3f5714eb4ade3853641c46c0d0e7de8"
     },
     {
-      "file": "architect07.jpg",
-      "sha256": "95d5a8bfee9664ccb8cd1c93410b8c1c225a2e3b436806b8ecd92e1e0b673333"
+      "file": "architect02.jpg",
+      "url": "https://www.archtext.com.tw/wp-content/uploads/2024/08/A0510_國立暨南國際大學體育健康中心新建工程02.jpg",
+      "sha256": "52b8450d0c53f5182ad4ace80b9b38f3dd41334ecae5d8a989df16538f101654"
     },
     {
       "file": "architect03.jpg",
+      "url": "https://www.archtext.com.tw/wp-content/uploads/2024/08/A0510_國立暨南國際大學體育健康中心新建工程03.jpg",
       "sha256": "5c812f6f6dec68b145797cf4d8d248de01f7f71132a5491f089676138a15312a"
+    },
+    {
+      "file": "architect04.jpg",
+      "url": "https://www.archtext.com.tw/wp-content/uploads/2024/08/A0510_國立暨南國際大學體育健康中心新建工程04.jpg",
+      "sha256": "269422fd666a8f60d06443a54d79fe49a5cf676329a4586d1274b1914d664b2e"
+    },
+    {
+      "file": "architect05.jpg",
+      "url": "https://www.archtext.com.tw/wp-content/uploads/2024/08/A0510_國立暨南國際大學體育健康中心新建工程05.jpg",
+      "sha256": "60658ac9c8a146202c25da59af536ec18303ecb20adad2ede188d4f5922e3a53"
+    },
+    {
+      "file": "architect06.jpg",
+      "url": "https://www.archtext.com.tw/wp-content/uploads/2024/08/A0510_國立暨南國際大學體育健康中心新建工程06.jpg",
+      "sha256": "741851b170a837dcd6b696e8a909f41d895287bf255da31130dacadbcb624964"
+    },
+    {
+      "file": "architect07.jpg",
+      "url": "https://www.archtext.com.tw/wp-content/uploads/2024/08/A0510_國立暨南國際大學體育健康中心新建工程07.jpg",
+      "sha256": "95d5a8bfee9664ccb8cd1c93410b8c1c225a2e3b436806b8ecd92e1e0b673333"
+    },
+    {
+      "file": "official-sport-r.jpg",
+      "url": "https://www.lib.ncnu.edu.tw/ncnu_his/images/imageslider/sport-r.jpg",
+      "sha256": "8bf68f75176b2eec2bb087d16cbccfd20a99a964eb7d2e00b91f09378d416cae"
     }
   ],
-  "limits": [
-    "Entire curved roof upper skin, underside and opposite eave lack complete visual evidence and remain unknown neutral.",
-    "Diamond glazing backings contain varying reflections and frames; no blanket cyan/blue.",
-    "Main brick wall/pilasters and side buttresses mix gray horizontal courses with brick without matching continuous face boundaries; no all-red masonry family.",
-    "Gussets/tie rods appear pale but full original surfaces include orientation/occlusion uncertainty; outside this deliberately bounded recommendation.",
-    "Door backings, lettering/emblem, lower obscured areas, ground, unknown rear and all unlisted triangles remain neutral.",
-    "This existing item has two prior depth-preview materials, not verified real-world colors. Count delta0; no new building or monochrome classification.",
-    "New source-evidenced variant applies only62 fascia faces; every other face returns to unknown neutral, including former dark depth cues. Preserve original scene/3MF/preview and previous audit evidence unchanged.",
-    "Preserve4726 triangles and all geometry. No subdivisions, new texture or transparent glass claim.",
-    "Only five-diamond ball hall volume; no swimming-pool wing, fitness/hydrotherapy area or connecting entrance hall."
-  ],
-  "preview_transition": {
-    "old": "Original two assigned depth-preview materials and all original files remain immutable; they are not evidence of source-supported whole color.",
-    "new": "Only 62 complete front-roof-fascia triangles nominal light gray; all remaining4664 unknown neutral. Existing building count0 and partial only, not originally mono."
+  "observation": "Architect right-oblique07 image and native-pixel crop visibly support the pale +X planar sides of six large tapered gusset plates. New fetched01-06 provide contextual angles;07 is re-examined existing source, not new capture.",
+  "inference": "Original solid triangle is a simplified proxy for flanged/tapered detailed steelwork. Whole bounded planar mapping does not certify geometry, hidden connections, or measured color at each vertex. Existing nominal lightgray family reused, not measured HEX.",
+  "scope": {
+    "original_fascia_faces": 62,
+    "new_visible_plate_faces": 42,
+    "colored_faces": 104,
+    "neutral_faces": 4622,
+    "triangles": 4726
   },
-  "issuance_clarification": "Formal GO overrides inherited recommendation-only wording without altering the independent review. Review filename0828 is a local label, not a verified issuance timestamp; this GO UTC is authoritative for issuance only.",
-  "rights": "Private references only; no public source images or textures.",
-  "source_private_backup": "Sources separately privately retained."
+  "excluded": "Opposite plate sides, thickness edges, rods, entire roof underside/upper skin, mixed walls/pilasters, glazing, unknown rear, base and all other domains unchanged.",
+  "historical_source_register": "qa/gusset-side-previous/COLOR-SOURCE-REGISTER.json",
+  "limits": [
+    "Capture dates unknown, publication paths not capture dates.",
+    "Original roof without later solar panels, not2026/current condition.",
+    "Only ball hall, not entire sports complex.",
+    "Private source references, no texture/public-photo redistribution or commercial-rights warranty."
+  ]
 }

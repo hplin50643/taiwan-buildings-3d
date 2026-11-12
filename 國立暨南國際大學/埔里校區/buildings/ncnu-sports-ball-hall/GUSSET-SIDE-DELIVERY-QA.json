@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded gusset-side update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T10:40:36.651677+00:00",
+  "triangles": 4726,
+  "original_color_faces": 62,
+  "new_color_faces": 42,
+  "colored_faces": 104,
+  "unknown_neutral_faces": 4622,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "b58ec49d9ac34394b02ed4c57ed4e67e6150877b32339a4d14d4fc80c497a1e9",
+  "color_mesh_sha256": "12ec18058a0325c0debce5e6f1357e260ed20ad12dcc3c6b0787cbff13a32d28",
+  "images_sha256": {
+    "preview.png": "c5d78a942b1bec0869c75bb504cd63c9f3fc1d40df172685fde90688f8ef6b36",
+    "rear.png": "c0233d1c71bdda633ed25d80df2bd7ac20c37ac125a217f8a8a6f302e24ac961",
+    "front.png": "ffb78867c361fea7e7662da625b842c37c695a44300f981f0e34b0aa0eae5549",
+    "back.png": "dc869db86679c5d485ddcb8c1fc658e4151303ef6629485dc126a8237ca32b70",
+    "west.png": "3d44519edec2fa5d23ffa64d4af566329408a660d918201140e3b930843c095c",
+    "east.png": "ea61db00fbb18bce9ec75911c90383b49840f94cf9948b8a9b1cf7d8ae682007",
+    "top.png": "d41edf91bf57ddd8cf395dacec755a750d91bf13775a711fc8cf661243d6b269",
+    "entry-detail.png": "84e712b5f605897856708961b6154d4e8ef26fd98f51c4953e22573ac53cc251",
+    "facade-detail.png": "6465aa9124c73ce7ac24f18312b039222f9980da2b0acfee61332d726c38bdf4",
+    "roof-detail.png": "96d031a36c1fca20044243806e4b40ae3043a71f56b826f84a4a3c06d3ed6612"
+  },
+  "current_independent_review": "GUSSET-SIDE-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Native-pixel re-review of original architect photograph supports six +X visible gusset side planes. Simplified triangular plate proxy is not detailed taper or joint geometry certification. Opposite sides, edges, rods and whole roof remain unchanged. Historical approximation, not2026 current condition.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

@@ -2,18 +2,18 @@
   "palette": [
     {
       "id": 0,
-      "name": "NCNU Sports Ball Hall observed complete front roof fascia lightgray",
+      "name": "Observed front fascia and bounded visible gusset plate sides lightgray",
       "hex": "#C7CECC",
-      "faces": 62
+      "faces": 104
     },
     {
       "id": 1,
-      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "name": "Unverified other original geometry neutral",
       "hex": "#B8BAB5",
-      "faces": 4664
+      "faces": 4622
     }
   ],
-  "domain_face_indices": {
+  "original_domain_face_indices": {
     "complete_front_roof_fascia": [
       549,
       552,
@@ -79,19 +79,121 @@
       872
     ]
   },
+  "new_plate_domains": {
+    "-60": [
+      2883,
+      2886,
+      2890,
+      2894,
+      2898,
+      2899,
+      2905
+    ],
+    "-36": [
+      3057,
+      3061,
+      3064,
+      3069,
+      3073,
+      3074,
+      3080
+    ],
+    "-12": [
+      3231,
+      3235,
+      3238,
+      3243,
+      3246,
+      3247,
+      3254
+    ],
+    "12": [
+      3406,
+      3410,
+      3413,
+      3418,
+      3421,
+      3422,
+      3429
+    ],
+    "36": [
+      3581,
+      3585,
+      3588,
+      3593,
+      3596,
+      3597,
+      3604
+    ],
+    "60": [
+      3759,
+      3760,
+      3766,
+      3767,
+      3773,
+      3774,
+      3778
+    ]
+  },
+  "new_face_indices": [
+    2883,
+    2886,
+    2890,
+    2894,
+    2898,
+    2899,
+    2905,
+    3057,
+    3061,
+    3064,
+    3069,
+    3073,
+    3074,
+    3080,
+    3231,
+    3235,
+    3238,
+    3243,
+    3246,
+    3247,
+    3254,
+    3406,
+    3410,
+    3413,
+    3418,
+    3421,
+    3422,
+    3429,
+    3581,
+    3585,
+    3588,
+    3593,
+    3596,
+    3597,
+    3604,
+    3759,
+    3760,
+    3766,
+    3767,
+    3773,
+    3774,
+    3778
+  ],
+  "original_colored_faces": 62,
+  "added_colored_faces": 42,
+  "colored_faces": 104,
+  "neutral_faces": 4622,
   "coplanar_components": 1144,
+  "mixed_coplanar_domains": 0,
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
-  "geometry_policy": "4726 original triangles unchanged",
+  "geometry_policy": "4726 original triangles and STL/build bytes unchanged",
   "limits": [
-    "Entire curved roof upper skin, underside and opposite eave lack complete visual evidence and remain unknown neutral.",
-    "Diamond glazing backings contain varying reflections and frames; no blanket cyan/blue.",
-    "Main brick wall/pilasters and side buttresses mix gray horizontal courses with brick without matching continuous face boundaries; no all-red masonry family.",
-    "Gussets/tie rods appear pale but full original surfaces include orientation/occlusion uncertainty; outside this deliberately bounded recommendation.",
-    "Door backings, lettering/emblem, lower obscured areas, ground, unknown rear and all unlisted triangles remain neutral.",
-    "This existing item has two prior depth-preview materials, not verified real-world colors. Count delta0; no new building or monochrome classification.",
-    "New source-evidenced variant applies only62 fascia faces; every other face returns to unknown neutral, including former dark depth cues. Preserve original scene/3MF/preview and previous audit evidence unchanged.",
-    "Preserve4726 triangles and all geometry. No subdivisions, new texture or transparent glass claim.",
-    "Only five-diamond ball hall volume; no swimming-pool wing, fitness/hydrotherapy area or connecting entrance hall."
+    "Only +X planar visible side of six original triangular gusset proxies. Reverse sides/thickness edges/rods stay neutral.",
+    "Original solid triangle is simplified detailed tapered/flanged steelwork, not surveyed joints. Mapping covers the original bounded proxy, not measured per-vertex evidence.",
+    "Reuse nominal pale lightgray family, not calibrated HEX; shadows not dark material.",
+    "No whole roof underside, brick-gray mixed walls, glazing, unknown rear, base or other surfaces newly colored.",
+    "Only five-diamond ball hall volume, not swimming pool/connecting hall or entire sports complex.",
+    "Original geometry has no later solar panels; not2026 condition. Reference dates unknown; photos private."
   ]
 }

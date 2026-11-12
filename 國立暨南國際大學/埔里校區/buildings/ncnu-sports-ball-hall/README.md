@@ -1,34 +1,26 @@
-# 暨南體育健康中心綜合球館｜前長屋緣局部淺灰
+# 暨南大學體育館球類館｜六三角撐可見平側局部淺灰
 
-**局部補色未完成：僅前長屋緣完整62原三角淺灰，其餘面尚未分色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 ncnu-sports-ball-hall／count_delta=0，國立暨南國際大學埔里校區。身份 NCNU Sports Ball Hall partial color。
+局部配色未完成。保留原前屋緣62面，新增六三角撐 +X 可見平側42面，共104面配色、4622面未知中性，4726原三角不變。無新增幾何、切面或材界。
 
-**原版已有兩類深度展示材，不是真單色。這次只將62有據面設淺灰，其餘4664未知中性；舊scene/render/預覽完整保留，非新增建築或全色完成。** PREVIEW-TRANSITION.md 說明版本轉換。只五菱形窗球館量體，不含泳池翼、健身水療區、相接入口大廳。
+## 來源與推定
+實看設計單位右斜照片07與原像素裁切，可見六大三角撐平側屬淡白／淺灰色族；01–06為此次另外取得的同作者外觀脈絡，07是原來源再審而非新拍攝。色值沿用原名義淺灰 #C7CECC，非校準或逐像素測色，陰影不當黑材。
 
-| 前斜視 | 後斜視 | 正面 |
+原模型三角厚板為實景漸變、帶折邊鋼撐的簡化代理，不能以配色追認接合、厚度或每個頂點位置。只映射可見側完整原平面，不對反側、厚邊或圓拉桿作連續色推定。
+
+六原板中心x=-60,-36,-12,12,36,60；只取 x=中心+0.95 的 +X 平側，所有頂點須在原 yz 三角(-36.5,45.5)、(-42,60.7)、(-35,59)內。每板7面，六完整共面域42面，無混域。布林交界原貌保留，原62屋緣面及其餘指派完全不動。
+
+整屋頂、底腹、反側、厚邊、拉桿、磚灰混牆、反光混框玻璃、後方及基地保持中性。中性不等於實景灰，也不是實際材料邊界。僅五菱窗球類館，不含泳池翼、健身水療或連接入口廳。原屋頂不含後來太陽能板，照片日期未知、網址年月非拍攝日，不宣稱2026現況。
+
+## 十視角
+|前斜|後斜|正面|
 |---|---|---|
-| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
-| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
-| ![頂視](top.png) | ![前緣全幅](entry-detail.png) | ![左緣Boolean交界](facade-detail.png) |
-| ![右緣Boolean交界](roof-detail.png) | | |
+|![前斜](preview.png)|![後斜](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂](top.png)|![入口](entry-detail.png)|![詳](facade-detail.png)|
+|![屋詳](roof-detail.png)|||
 
-## 完整原域
-
-原三頂點whole y−41無限平面枚舉62面，exact共享邊形成單一完整連通域。先整plane後記原x±68、z59..60.8，原Boolean支撐侵入/缺口保留；實露面積218.352804mm²，並非136×1.8=244.8mm²完整矩形，不補缺面或染支撐。名義淺灰62、其餘4664中性，原4726三角保持。
-
-三張官方及設計方實照支持前長外緣灰色族，不是屋頂整面或側後鏡射。弧屋上皮/底/後簷未知中性；菱窗背混反光框不整藍。磚牆及柱原面混灰橫帶無界不全紅，斜撐/拉桿各面遮擋不全白。門/字樣/下方遮蔽/地面未知全中性；來源範圍不是真實材界、中性不表示實景灰。
-
-## 範圍與日期
-
-原solid外觀、估測寬深/屋弧、五窗、粗欄及未知後面保留，不因材色追認精測。三照無統一可驗拍攝時點，來源發布不作capture、不稱2026現況。原照及取圖紀錄私人留存，不公開照片或貼圖，不推定商用授權。
-
-## 原件與QA
-
-原4726三角/STL/build字節不變，immutable20件無OBJ、無原appearance.3mf，不虛稱舊3MF存在。全原包私人保存；原scene另公開ORIGINAL-PREVIEW-scene.blend，render_preview.py保原並有ORIGINAL-PREVIEW-render_preview.py別名，previews/原歷史不改。原README.md另存ORIGINAL-PREVIEW-README.md；原QA不當新QA。
-
-新appearance.3mf與scene.blend及export/validate/render/verify身份 NCNU Sports Ball Hall partial color。精確依賴隔離原build+color/原三角multiset/共面一致/3MF/reopen/十張1200×900 QA，保留重建不刪。未試印/驗多料切片，STL自身無色。
+## QA與歷史
+本次GUSSET-SIDE-SOURCE-QA、COLOR-ASSIGNMENT、COLOR-FORMAT-GEOMETRY、SCENE及GUSSET-SIDE-SCENE-QA適用候選。原文件與QA原字節保存於qa/gusset-side-previous；原FREEZE及舊獨審僅對舊版有效，不作本次放行。原兩種深度預覽是歷史展示慣例，不宣稱原模型原本無材質或將本次另計建物。原STL/build不變，STL本身無色；未實體試印或驗多料切片。原照片私人研究不公開或貼圖，不推定商用授權。獨立最終審核及凍結另行完成，未發布。
 
 ## English limitations
-
-NCNU Sports Ball Hall partial color. Original2depth-preview materials are not source-certified real colors or monochrome. Preserve original scene/render/preview aliases and full private package; new62frontfascia lightgray/4664unknown neutral is a count_delta0 source-gap correction,not complete coloring.
-
-Whole infinitey=-41plane gives62triangles,one exactedge-connected component. Original union interruptions retained; exposedarea218.352804mm2 is not136x1.8 rectangle244.8. No added boundaries or missing geometry. Curvedroof/under/oppositeeave,mixed brickgraywall,glass/reflections,braces/rods/doors/rear neutral. Only existing five-diamond hall,not pool/fitness/hydrotherapy/connecting entrance. Original4726triangles,20files,no originalOBJ or3MF. Capture not verified as one date/no2026claim/private photos/no testprint.
+Retain62 fascia faces; add42 original +X planar gusset proxy faces, seven per plate across six complete domains. Total104 colored,4622 neutral,4726 triangles unchanged. Visible pale plate sides supported by architect07, re-examined at native pixels. Detailed steelwork remains simplified; not a joint/depth survey. Reverse sides, thickness, rods, whole underside, mixed walls and glazing unchanged. Nominal existing lightgray not calibrated. Only ball-hall volume; roof lacks later solar panels, not current2026 condition. References private; no print/material assurance.
