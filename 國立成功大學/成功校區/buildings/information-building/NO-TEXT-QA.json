@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in information-building-all-views.jpg; caption/backing absent; original geometry/materials/cameras preserved."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "224a3aedabf771c7856a7903a214ec3986c0a406ca0b43064cc94846c65cd3a6",
-    "east.png": "efa23a9705ebc8b5d12f08d36a4cdc45422f30b7ee86c67bdad5eaaa6af917cd",
-    "entry-detail.png": "13eafa17b8a32e2113d2896e9f3aeeda78ab0b8640bddb796f386f101d353b51",
-    "facade-detail.png": "70301f477fa7f20625fe6439891be65aebaf06e5dd3507c8408fe0e4b2709dbd",
-    "front.png": "50c6b629aea2fc53fd6e68cd3d39a34753a6fc8af89938d9f49428ffd5b2c58b",
-    "preview.png": "4701caaedbd179507f8f458bb87cbfa6a894aa887aa469ae85a0ea6ab87d1cd7",
-    "rear.png": "279d24b9725c0ae99f448234af5d2137b2c519fbe4b09391d780d3af802f0417",
-    "roof-detail.png": "7a51ea61145dddd353c669c0857b19b0a94da0d1954a8691a0369d0d57c3d39e",
-    "top.png": "cbf0801e1e361fe75e9cabf61652df01b4ad3da507fee4b28b5b9b3a7d7d7e3b",
-    "west.png": "65b5c529e94622c9c30bd1a9cad9a4fd4ffe36884e335ecae7d938a9f8ad74d2"
-  }
+    "preview.png": "3abf4eb75c8be944a0a47732ccad697faa4ad096d81dd03d2deacb06ec08612e",
+    "rear.png": "605546ef6e9e868f4b2535f419c74c0e1c153c37d9a5c5ca21dccbdb0e9db814",
+    "front.png": "affa44c08fd2e6ad809b18e23dac8131ffbf164afdaa555628bbb919dff913d3",
+    "back.png": "3b4d3b27e3162150c28dc1f27582399f07727698c27de6640c207e71492402ca",
+    "west.png": "8a776ba2c185ac44c7dca14f1436c7bb7f1c059954fe918e36e31cb84d379438",
+    "east.png": "78807a2abbae45f3976ec37e6621b4f1bc51856ea3051a42c00704dadb6f75f2",
+    "top.png": "98306bc77a4b35f183f6c5619ca9bd672b4d871570f776d20dc458b37a02eeeb",
+    "entry-detail.png": "f45ac9a0f96f307e7a7fe21a903c996df732dc916ac2700c06a62e00a2dfa7d0",
+    "facade-detail.png": "b47735c1207104f14a6014eef22b30b667a5f2410877b58bad2efe2121a02195",
+    "roof-detail.png": "f1304b7cc5bf6dfc8166d47abf15efe46926ceb5d254a345b9e1e07e24976862"
+  },
+  "mesh_sha256": "1f6255dcd1265eb9a8914972114e07caabf650be84ac79647c8d57ba2978935f",
+  "independent_visual_review": "ROUND-EDGE-INDEPENDENT-QA.json",
+  "previous_qa": "qa/round-edge-previous/NO-TEXT-QA.json"
 }

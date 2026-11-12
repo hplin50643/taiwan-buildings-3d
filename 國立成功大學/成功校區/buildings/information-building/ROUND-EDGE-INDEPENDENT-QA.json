@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "slug": "information-building",
+  "independent_numeric_review": "independent-numeric-review.json",
+  "independent_scene_review": "independent-scene-review.json",
+  "source_domain_review": "second-source-domain-review.json",
+  "actual_visual_review": "All ten final renders actually viewed in montage, entry-detail/facade-detail/roof-detail at full size. Rounded front thin edge visibly gray in entry-detail; platform top, stairs, canopy and rear remain original. Savedscene independently reopened; five shaders, mesh/material indices, original cameras/lights/render/object inventory verified.",
+  "counts": {
+    "triangles": 2452,
+    "original_colored": 1912,
+    "added": 40,
+    "colored": 1952,
+    "neutral": 500
+  },
+  "mixed_domains_before": 3,
+  "mixed_domains_after": 3,
+  "all_original_mixed_domains_indices_exact": true,
+  "geometry_3mf_original5palette_other_indices_preserved": true,
+  "isolated_build_color_export_XML_QA_checked": true,
+  "source_pending_snapshot_unchanged": true,
+  "image_sha256": {
+    "preview.png": "3abf4eb75c8be944a0a47732ccad697faa4ad096d81dd03d2deacb06ec08612e",
+    "rear.png": "605546ef6e9e868f4b2535f419c74c0e1c153c37d9a5c5ca21dccbdb0e9db814",
+    "front.png": "affa44c08fd2e6ad809b18e23dac8131ffbf164afdaa555628bbb919dff913d3",
+    "back.png": "3b4d3b27e3162150c28dc1f27582399f07727698c27de6640c207e71492402ca",
+    "west.png": "8a776ba2c185ac44c7dca14f1436c7bb7f1c059954fe918e36e31cb84d379438",
+    "east.png": "78807a2abbae45f3976ec37e6621b4f1bc51856ea3051a42c00704dadb6f75f2",
+    "top.png": "98306bc77a4b35f183f6c5619ca9bd672b4d871570f776d20dc458b37a02eeeb",
+    "entry-detail.png": "f45ac9a0f96f307e7a7fe21a903c996df732dc916ac2700c06a62e00a2dfa7d0",
+    "facade-detail.png": "b47735c1207104f14a6014eef22b30b667a5f2410877b58bad2efe2121a02195",
+    "roof-detail.png": "f1304b7cc5bf6dfc8166d47abf15efe46926ceb5d254a345b9e1e07e24976862"
+  },
+  "file_sha256": {
+    "model.stl": "fbfdb2588ad010d36724ea67d48560a51f941d440e6f84327f973e14e5cff03e",
+    "build_model.py": "0607948a8fd88cd8ba861f7d9adbeec9b052666159002ff17fe41a2cf381a9ec",
+    "color-mesh.npz": "1f6255dcd1265eb9a8914972114e07caabf650be84ac79647c8d57ba2978935f",
+    "palette.json": "e1182210e79faae056a0366802e8850453eb9797104335380fd7f1a0d6c70819",
+    "appearance.3mf": "a89a70d1a9a6206d431cedabdac557f7005b6a3c085061c6a73476950c83d758",
+    "appearance-materials.json": "4a204565d74627d228226816f863bba14c84befc0374396f6a485b7c59c4cddd",
+    "scene.blend": "d359703e2cce244ec623b65ce300d1bc0ce57ae6cc4e4b453ce2c8a51d0b1526",
+    "colorize_model.py": "4dd6b5c62d1fb6ed9f2a2371d4e321bc1da6ee3427eb29ed6d093141478cd116",
+    "export_appearance.py": "42e69fe43c82f4da1ea6d0bd01c1f98316ac92a5636280542c62807c6434ab32",
+    "validate_color.py": "be6ee77dbb30a697132602e89a6e7040a0036e190a6d28a9d59612e846141023",
+    "render_color.py": "edc7537e3d1e1aa72269aae75ac88f7f27ed7cb292487d20cfcd0ba94b712c3b",
+    "verify_color_scene.py": "e712887517d28930f9904a6ce31ed36be59b8cec22583720237e9e627186c7b2",
+    "README.md": "d96197cf6fe364bf918382bbcecc4671c1e187e987858bf5cd788ca3ab66032d",
+    "COLOR-ASSIGNMENT-QA.json": "10911eb39e42ee279f9986a03c46ea1d71177e4fdc066eb435e251f2215859b4",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "07f8c4cc88afd1cd00c07098ac1d2f910f9bc5f41fa9f21a8d9ff1874b4181cf",
+    "COLOR-SOURCE-REGISTER.json": "6f431dc8fd825e38d0866f40340a85a30f416e6cd3ad0a067b84cbdc4eba714a",
+    "ROUND-EDGE-SOURCE-QA.json": "4f4336c27279314da19d85b8d71ec221d3468557a9389390d3a277c7c618ae96",
+    "SCENE-QA.json": "abb2948ddae19c22079e48ae76ff44a124f793e7502520538927020895a92cc6",
+    "ROUND-EDGE-SCENE-QA.json": "8c40a7902dbb96bba0776ca6251c06095f65608b62680d74d02540630acd08c4",
+    "CHECKSUM-SCOPE.md": "2d044606e8d61dae8de00e21bf2de46e172ff47be9115513aa8a2562a73fda3d"
+  },
+  "limits": [
+    "Only thin rounded platform front skin, not actual missing tall parapet or railings.",
+    "Original thickness2.4mm/radius11 and geometry remain approximations, no geometry certification.",
+    "No pale panelled soffit, top, rear, adjacent bridge or other entry components colored.",
+    "Official newly retrieved photograph capture date unverified; no2026claim.",
+    "Nominal existing gray family is not calibrated finish."
+  ],
+  "published": false
+}

@@ -1,0 +1,74 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "information-building B006 high block only",
+  "proposal": "Existing rounded entry platform front vertical thin edge, not its top, soffit, parapet, railing or adjacent bridge",
+  "selection_file": "preselection-platform-front.json",
+  "faces": 40,
+  "domains": 20,
+  "geometry": "Original48gon cylinder center(-27,-55), radius11, z24.6..27; exposed front facets26..45, all verticesy<=-58.5, original facet plane normals and full connected-domain checks",
+  "original_material": 4,
+  "proposed_material": 1,
+  "palette": "Keep all five original entries exactly; use nominal gray family#A9B0B0 index1. Historical entry name references front grid, this additional limited edge is separately documented.",
+  "primary_source_page": "https://cc.ncku.edu.tw/p/404-1213-83470.php?Lang=zh-tw",
+  "primary_source_image": "https://cc.ncku.edu.tw/var/file/2/1002/img/1395/IMG_0747-1.jpg",
+  "primary_source_sha256": "87b33f82b90119760a11dd2c087878a64622f40f3de8ff555c1f52e42e2ed416",
+  "primary_source_dimensions": [
+    1800,
+    1200
+  ],
+  "corroborating_image": "https://cc.ncku.edu.tw/var/file/2/1002/img/1395/IMG_0742-1.jpg",
+  "evidence": "Newly retrieved official close frontal photograph shows a continuous gray thin curved edge immediately below the much taller curved parapet and above the distinctly panelled pale soffit. Native crop separates these layers. Only the original thin platform cylinder vertical skin is proposed, not the missing tall parapet.",
+  "limits": [
+    "Original slab2.4mm thickness and radius11 are coarse model approximations, not measured fidelity. Actual tall parapet and railing are not modeled and cannot receive color by proxy.",
+    "No top or soffit; actual soffit has panels and fixtures absent from topology.",
+    "No rear or side beyond exposed front finite facet bounds; no stair, canopy, small post or neighboring bridge.",
+    "Photograph capture date not independently established; this is a new source retrieval, not a new or2026 photograph claim.",
+    "HEX is nominal coarse family, not calibrated sample. Keep five palette names and all other indices unchanged.",
+    "Original1948 photographed brick end and3827 dusk facade limits remain. Reference images private, no textures or public redistribution."
+  ],
+  "original_source_records": [
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3827",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2026/05/28/20260528071459-496a7885-me.jpg",
+      "sha256": "43966abd403c6038e6cb6e20d3529368b14b0630424b9a78c5b842adaa118421",
+      "page_sha256": "cf2fd8c53f8aac136c862bec7ba6aa68c8925a9f0de7158eef217bf9f10bc3a2",
+      "author": "計網中心資訊系統發展組-林政傑",
+      "posted_date": "2026-05-28",
+      "capture_date": "未確認",
+      "actually_viewed": true,
+      "file": "original-0.jpg"
+    },
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/1948",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2018/10/16/20181016123430-19124772-me.jpg",
+      "sha256": "abe07e6e3a38736becc9206e69ef8ab50acaea1bc73f80e69efe2bdef1209b38",
+      "page_sha256": "c20c8b9315a9d0620249ae533e0c524abad4c4c8aa54bbd13d5b4842d4e5ce11",
+      "author": "計網中心 陳怜吟",
+      "posted_date": "2018-10-16",
+      "capture_date": "未確認",
+      "actually_viewed": true,
+      "file": "original-1.jpg"
+    }
+  ],
+  "new_primary_records": [
+    {
+      "file": "new-2.jpg",
+      "url": "https://cc.ncku.edu.tw/var/file/2/1002/img/1395/IMG_0742-1.jpg",
+      "sha256": "79e650246e6e63b9e700073a6230264852a771186cb07538840d51914e4c139c",
+      "size": [
+        1800,
+        1200
+      ]
+    },
+    {
+      "file": "new-3.jpg",
+      "url": "https://cc.ncku.edu.tw/var/file/2/1002/img/1395/IMG_0747-1.jpg",
+      "sha256": "87b33f82b90119760a11dd2c087878a64622f40f3de8ff555c1f52e42e2ed416",
+      "size": [
+        1800,
+        1200
+      ]
+    }
+  ],
+  "source_photos_private": true
+}

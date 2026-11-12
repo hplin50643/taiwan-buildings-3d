@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": {
+    "preview_size": true,
+    "preview_fresh": true,
+    "rear_size": true,
+    "rear_fresh": true,
+    "front_size": true,
+    "front_fresh": true,
+    "back_size": true,
+    "back_fresh": true,
+    "west_size": true,
+    "west_fresh": true,
+    "east_size": true,
+    "east_fresh": true,
+    "top_size": true,
+    "top_fresh": true,
+    "entry-detail_size": true,
+    "entry-detail_fresh": true,
+    "facade-detail_size": true,
+    "facade-detail_fresh": true,
+    "roof-detail_size": true,
+    "roof-detail_fresh": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_PASS": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_mesh": true,
+    "SCENE-QA.json_PASS": true,
+    "SCENE-QA.json_mesh": true,
+    "FRAMING-QA.json_PASS": true,
+    "FRAMING-QA.json_mesh": true,
+    "model.stl_original_bytes": true,
+    "build_model.py_original_bytes": true,
+    "first_section_ten_images": true,
+    "three_columns": true,
+    "no_private_absolute_paths_in_new_public_text": true
+  },
+  "images_sha256": {
+    "back.png": "224a3aedabf771c7856a7903a214ec3986c0a406ca0b43064cc94846c65cd3a6",
+    "east.png": "efa23a9705ebc8b5d12f08d36a4cdc45422f30b7ee86c67bdad5eaaa6af917cd",
+    "entry-detail.png": "13eafa17b8a32e2113d2896e9f3aeeda78ab0b8640bddb796f386f101d353b51",
+    "facade-detail.png": "70301f477fa7f20625fe6439891be65aebaf06e5dd3507c8408fe0e4b2709dbd",
+    "front.png": "50c6b629aea2fc53fd6e68cd3d39a34753a6fc8af89938d9f49428ffd5b2c58b",
+    "preview.png": "4701caaedbd179507f8f458bb87cbfa6a894aa887aa469ae85a0ea6ab87d1cd7",
+    "rear.png": "279d24b9725c0ae99f448234af5d2137b2c519fbe4b09391d780d3af802f0417",
+    "roof-detail.png": "7a51ea61145dddd353c669c0857b19b0a94da0d1954a8691a0369d0d57c3d39e",
+    "top.png": "cbf0801e1e361fe75e9cabf61652df01b4ad3da507fee4b28b5b9b3a7d7d7e3b",
+    "west.png": "65b5c529e94622c9c30bd1a9cad9a4fd4ffe36884e335ecae7d938a9f8ad74d2"
+  },
+  "mesh_sha256": "8039eb08becc1e7337a66e05b49a0d145c75b23e9d274ebeebafa3715db20629",
+  "geometry_change": false,
+  "count_delta": 0,
+  "manual_visual_review": "Builder manual final review recorded separately; expected gray front, one brick end, dark frame front and neutral entry/opposite end/rear/roof. Original geometry unchanged.",
+  "limitations": [
+    "Five appearance materials, not a verified four-filament slicer job.",
+    "Original simplified geometry preserved; no current full-building survey claim."
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
+}

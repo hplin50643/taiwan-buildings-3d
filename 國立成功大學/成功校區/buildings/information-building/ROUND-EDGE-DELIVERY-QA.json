@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "Bounded round-edge update, not full color or geometry certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 2452,
+  "original_color_faces": 1912,
+  "new_color_faces": 40,
+  "colored_faces": 1952,
+  "unknown_neutral_faces": 500,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 3,
+  "current_mixed_connected_domains": 3,
+  "unchanged_remaining_domains": 3,
+  "current_independent_review": "ROUND-EDGE-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "40 original faces in20whole front vertical facets of the thin round entry platform now use existing nominalgray1. Official computing-center close photograph IMG_0747-1 separates thin gray edge from tall unmodeled parapet and pale panelled soffit. Original48gon radius11 and2.4mm thickness are coarse proxies. No top,soffit,parapet,railing,sideback or adjacent bridge recolored. Original5palette entries and all other indices unchanged;3original mixed connected domains exactly preserved.",
+    "Source retrieval and posting dates are not verified capture dates or2026conditions. Source photos stay private. Original geometric and source limitations remain; no global printability recertification and no physical print."
+  ],
+  "checked_at": "2026-11-12T14:45:23.508434+00:00",
+  "original_STL_sha256": "fbfdb2588ad010d36724ea67d48560a51f941d440e6f84327f973e14e5cff03e",
+  "color_mesh_sha256": "1f6255dcd1265eb9a8914972114e07caabf650be84ac79647c8d57ba2978935f",
+  "images_sha256": {
+    "preview.png": "3abf4eb75c8be944a0a47732ccad697faa4ad096d81dd03d2deacb06ec08612e",
+    "rear.png": "605546ef6e9e868f4b2535f419c74c0e1c153c37d9a5c5ca21dccbdb0e9db814",
+    "front.png": "affa44c08fd2e6ad809b18e23dac8131ffbf164afdaa555628bbb919dff913d3",
+    "back.png": "3b4d3b27e3162150c28dc1f27582399f07727698c27de6640c207e71492402ca",
+    "west.png": "8a776ba2c185ac44c7dca14f1436c7bb7f1c059954fe918e36e31cb84d379438",
+    "east.png": "78807a2abbae45f3976ec37e6621b4f1bc51856ea3051a42c00704dadb6f75f2",
+    "top.png": "98306bc77a4b35f183f6c5619ca9bd672b4d871570f776d20dc458b37a02eeeb",
+    "entry-detail.png": "f45ac9a0f96f307e7a7fe21a903c996df732dc916ac2700c06a62e00a2dfa7d0",
+    "facade-detail.png": "b47735c1207104f14a6014eef22b30b667a5f2410877b58bad2efe2121a02195",
+    "roof-detail.png": "f1304b7cc5bf6dfc8166d47abf15efe46926ceb5d254a345b9e1e07e24976862"
+  }
+}

@@ -32,6 +32,17 @@ for i,(t,(x,y,z),n) in enumerate(zip(m.triangles,m.triangles_center,m.face_norma
  # Entry cavity, original added approach and canopy not source-confirmed: neutral whole domains.
  if lo[0]>=-39.001 and hi[0]<=-15.001 and lo[1]>=-67.101 and hi[1]<=-51.599 and hi[2]<=39.501 and lo[2]>=2.999:
   if hi[1]<-53.001 or (lo[0]>=-32.501 and hi[0]<=-21.499 and lo[2]>=24.999 and hi[2]<=38.001 and lo[1]>=-53.001 and hi[1]<=-51.599 and (ny>-.99 or y>-52.99)):mat[i]=4
+# Existing rounded platform thin front edge only; not tall parapet or panelled soffit.
+t=m.triangles;old=mat.copy();hit=np.zeros(len(t),bool);ap=11*np.cos(np.pi/48)
+for k in range(24,48):
+ th=(k+.5)*2*np.pi/48;n2=np.array([np.cos(th),np.sin(th)])
+ d=np.einsum('fvi,i->fv',t[:,:,:2]-[-27,-55],n2)
+ q=np.all(abs(d-ap)<.001,axis=1)&(m.face_normals[:,:2]@n2>.999999)&np.all(t[:,:,2]>=24.599,axis=1)&np.all(t[:,:,2]<=27.001,axis=1)&np.all(t[:,:,1]<=-58.499,axis=1);hit|=q
+assert np.flatnonzero(hit).tolist()==[2189, 2190, 2191, 2192, 2193, 2194, 2195, 2196, 2197, 2198, 2199, 2206, 2207, 2208, 2209, 2211, 2212, 2213, 2229, 2230, 2231, 2232, 2236, 2237, 2238, 2241, 2242, 2243, 2246, 2248, 2249, 2252, 2253, 2264, 2265, 2267, 2269, 2271, 2272, 2273] and np.all(mat[hit]==4)
+e=m.face_adjacency;groups=trimesh.graph.connected_components(e[np.einsum('ij,ij->i',m.face_normals[e[:,0]],m.face_normals[e[:,1]])>.999999],nodes=np.arange(len(t)),min_len=1)
+assert all(not hit[g].any()or hit[g].all()for g in groups)
+mat[hit]=1;assert np.array_equal(mat[~hit],old[~hit]);assert np.bincount(mat).tolist()==[100,1596,14,242,500]
+assert all(np.array_equal(old[g],mat[g])for g in groups if len(set(old[g]))>1)
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=mat);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int((mat==i).sum())}for i,(a,b)in enumerate(pal)],'geometry_policy':'2452 original triangles unchanged.','limits':['Only one brick end and gray front are photograph-matched.','Entry/stair/opposite end/rear/horizontal roof neutral.','Five labels are not a tested multi-filament project.']},indent=2)+'\n')
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int((mat==i).sum())}for i,(a,b)in enumerate(pal)],'geometry_policy':'2452 original triangles unchanged.','limits':['Only one brick end and gray front are photograph-matched.','40 original thin round-platform front edge faces gray; rest of entry/stair/opposite end/rear/horizontal roof remain neutral.','Five labels are not a tested multi-filament project.']},indent=2)+'\n')
 q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':len(m.faces),'materials_used':np.unique(mat).tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q)
