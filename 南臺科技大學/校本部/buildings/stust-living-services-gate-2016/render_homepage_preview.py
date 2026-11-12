@@ -2,9 +2,9 @@
 Run: blender --disable-autoexec --background --factory-startup --python-exit-code 1 \
     --python render_homepage_preview.py
 Optional: -- --source /model/directory --out /output/directory
-Uses the delivered scene.blend, model.stl and draft-parameters.json; geometry,
+Uses the preserved ORIGINAL-SOURCE-GAP-scene.blend, model.stl and draft-parameters.json; geometry,
 materials, lighting, world and the original nine technical previews are preserved.
-Requires the original Noto Sans CJK font and Pillow for unchanged limitation text.
+No caption font or Pillow dependency; original limitation text remains in README.
 """
 import argparse, hashlib, json, math, pathlib, struct, subprocess, sys
 import bpy
@@ -20,8 +20,8 @@ ROOT, OUT = args.source.resolve(), args.out.resolve()
 (OUT / 'previews').mkdir(parents=True, exist_ok=True)
 (OUT / 'qa').mkdir(parents=True, exist_ok=True)
 source_hashes = {n: hashlib.sha256((ROOT / n).read_bytes()).hexdigest()
-                 for n in ['scene.blend', 'model.stl', 'draft-parameters.json']}
-bpy.ops.wm.open_mainfile(filepath=str(ROOT / 'scene.blend'), load_ui=False, use_scripts=False)
+                 for n in ['ORIGINAL-SOURCE-GAP-scene.blend', 'model.stl', 'draft-parameters.json']}
+bpy.ops.wm.open_mainfile(filepath=str(ROOT / 'ORIGINAL-SOURCE-GAP-scene.blend'), load_ui=False, use_scripts=False)
 scene = bpy.context.scene
 cam = scene.camera
 meshes = [o for o in scene.objects if o.type == 'MESH']
@@ -109,16 +109,7 @@ p = OUT / 'previews/homepage-three-quarter.png'
 scene.render.filepath = str(p)
 scene.render.use_stamp = False
 bpy.ops.render.render(write_still=True)
-caption_code = """from PIL import Image,ImageDraw,ImageFont
-import sys
-p=sys.argv[1]
-font=ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',16,index=3)
-im=Image.open(p).convert('RGB');d=ImageDraw.Draw(im);d.rectangle((0,im.height-52,im.width,im.height),fill=(235,237,237))
-d.text((12,im.height-48),'有界近似，非測繪：背側服務牆輪廓、門梁接館支承線仍屬推配，未知背窗省略。',font=font,fill=(25,30,35))
-d.text((12,im.height-25),'官方館高42.2m／門高43m；4F天井底名義13.5m（估計12–15m）。未試印，內廊僅背靠浮雕線。',font=font,fill=(25,30,35))
-im.save(p)
-"""
-subprocess.run(['python3', '-c', caption_code, str(p)], check=True)
+# README cover caption omitted; original limitations remain in README.
 raw = p.read_bytes(); clean = raw[:8]; pos = 8
 while pos < len(raw):
     n = struct.unpack('>I', raw[pos:pos + 4])[0]; kind = raw[pos + 4:pos + 8]
@@ -134,7 +125,7 @@ report = {
     'source_blend_git_blob_sha': '5332773f6c1af957519cec3e6939574b27f21623',
     'source_stl_git_blob_sha': 'fa01ad8df441f42060531adc0592ad582cfe3320',
     'source_file_sha256': source_hashes, 'blender_version': bpy.app.version_string,
-    'scope': 'Separate camera/framing only; source scene, STL, 3 materials and 9 technical views unchanged. Same limitation captions retained.',
+    'scope': 'Separate camera/framing only; source scene, STL, 3 materials and 9 technical views unchanged. Limitation text remains in README; preview caption omitted.',
     'scene_stl_exact_float32_triangle_match': True,
     'before_signature': before_signature, 'after_signature': after_signature,
     'vertex_count': len(ob.data.vertices), 'triangle_count': len(ob.data.polygons), 'material_count': len(ob.data.materials),
@@ -148,7 +139,7 @@ report = {
                   'elevation_deg': elevation,
                   'screen_bounds': {'min_x': min(p.x for p in projection), 'max_x': max(p.x for p in projection),
                                     'min_y': min(p.y for p in projection), 'max_y': max(p.y for p in projection)},
-                  'all_vertices_in_frame': True, 'caption_height_pixels': 52},
+                  'all_vertices_in_frame': True, 'caption_height_pixels': 0},
     'output': {'file': p.name, 'bytes': len(clean), 'sha256': hashlib.sha256(clean).hexdigest()}}
 (OUT / 'qa/homepage-camera-validation.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
 print(json.dumps(report, ensure_ascii=False, indent=2))

@@ -1,0 +1,28 @@
+{
+  "visual_review": "All ten actual views inspected in stust-current-no-text-contact.jpg; captions and backing removed, original mesh/materials/cameras unchanged.",
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "0bdf6c50b79184cb0f376ddf097e04a10798094ae304560d55eebaca9c95d43c",
+    "east.png": "87d604a2c24748b1a230e1d93c2d7a19f1c2f5e58c2f52c0dc9f0e3c5009fc0f",
+    "entry-detail.png": "0cff9a492b7f326d576710882c4d86fe68c99f218874c7b0ce6d924ee00ff9d0",
+    "facade-detail.png": "09ec7a33cb8306955def4e9cdb37b927a37e14b8bd08b2a2240585612944363f",
+    "front.png": "031093b9f2bedc95114ade0f632b14dff406d9cce92ddbbbe878c5ff733b678e",
+    "preview.png": "6cb567022fa68a3fc52e826ea471571c1aa1bd4e1d04dffbac4a5ff835a3658e",
+    "rear.png": "5fd7b8b6a6d64fd8290af1c8b00c18e80dcfd9224d51594352e5f832cb176cbd",
+    "roof-detail.png": "d1b7e1237815713749585646c293724b09fdd485ba70974c5fba6fbf2a31b952",
+    "top.png": "215f4551d0a20e187977defff68da2f126bae0afffd6cb8938d195aec969c190",
+    "west.png": "a6d09eb15fb6cd464d4a5e137f428c73832536d226981ebfdbc6f0115c624a34"
+  }
+}

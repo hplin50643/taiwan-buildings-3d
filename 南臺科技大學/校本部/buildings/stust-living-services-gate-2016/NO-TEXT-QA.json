@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Separate current NPZ and preserved historical STL versions; all twenty rendered views contain no captions. README text, geometry, materials and original view angles unchanged.",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "historical_mesh_material_signature": "3b0c141bba5ad5bebf16690aa9d3d1e55b02ef2963750385ec5099e6417a258b",
+  "historical_seven_readme_views_outside_caption_pixel_difference": 0,
+  "homepage_cover_qa": "qa/no-text-homepage-cover.json",
+  "visual_review": "All current10, historical9 and locked homepage1 actual views visually inspected; original distinctions retained.",
+  "images_sha256": {
+    "east.png": "87d604a2c24748b1a230e1d93c2d7a19f1c2f5e58c2f52c0dc9f0e3c5009fc0f",
+    "west.png": "a6d09eb15fb6cd464d4a5e137f428c73832536d226981ebfdbc6f0115c624a34",
+    "front.png": "031093b9f2bedc95114ade0f632b14dff406d9cce92ddbbbe878c5ff733b678e",
+    "back.png": "0bdf6c50b79184cb0f376ddf097e04a10798094ae304560d55eebaca9c95d43c",
+    "preview.png": "6cb567022fa68a3fc52e826ea471571c1aa1bd4e1d04dffbac4a5ff835a3658e",
+    "rear.png": "5fd7b8b6a6d64fd8290af1c8b00c18e80dcfd9224d51594352e5f832cb176cbd",
+    "facade-detail.png": "09ec7a33cb8306955def4e9cdb37b927a37e14b8bd08b2a2240585612944363f",
+    "entry-detail.png": "0cff9a492b7f326d576710882c4d86fe68c99f218874c7b0ce6d924ee00ff9d0",
+    "roof-detail.png": "d1b7e1237815713749585646c293724b09fdd485ba70974c5fba6fbf2a31b952",
+    "top.png": "215f4551d0a20e187977defff68da2f126bae0afffd6cb8938d195aec969c190",
+    "previews/campus-detail.png": "819c912c1525c22ebb74422f9d1194397602794afd25ff3d8965296776d8e3ea",
+    "previews/campus.png": "819c912c1525c22ebb74422f9d1194397602794afd25ff3d8965296776d8e3ea",
+    "previews/gate.png": "8ae2109c617740593d2728df752b7ac9f98afd6c2936802438d7c841457b2944",
+    "previews/road-detail.png": "23b241739ec25c7891e00dae756d61ec94480dc802a7548755f325719e8e66c4",
+    "previews/homepage-three-quarter.png": "04c5191ade02d9106cfc3a17d0ddb3e75be81a5812e7b6e686a1227ed26b1cb7",
+    "previews/rear.png": "9d09acbff58ff264a12945656b46c448140f9e0c6ef9fbc74226cb8baa71f860",
+    "previews/road.png": "7ce586eae61da28abef23a7813d54eac8cee39483513df0c497b3d1cb8976808",
+    "previews/campus-low.png": "25580f65a56f3d1e2122e6127cc0255d5800fa0305487260bac9a0ce89bf467c",
+    "previews/atrium.png": "dd4fd3b0bc81a9cdfa4597b6c630557e9d2382b44abea3471721a458d4eb4db4",
+    "previews/top.png": "c276d9a91f5e9e1bc34a7f7cb8a62a34e7a219b82f79cbe1bfe55050541873a6"
+  }
+}

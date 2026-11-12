@@ -70,21 +70,11 @@ for screen in bpy.data.screens:
  for area in screen.areas:
   for space in area.spaces:
    if space.type=='FILE_BROWSER' and space.params:space.params.directory=b'//'
-bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'scene.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ORIGINAL-SOURCE-GAP-scene.blend'))
 
 
 
-# Public limitation captions, outside model pixels.
-import subprocess,shutil,hashlib
-caption_code="""from PIL import Image,ImageDraw,ImageFont
-from pathlib import Path
-import sys
-font=ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',16,index=3)
-for p in Path(sys.argv[1]).glob('*.png'):
- im=Image.open(p).convert('RGB');d=ImageDraw.Draw(im);d.rectangle((0,im.height-52,im.width,im.height),fill=(235,237,237))
- d.text((12,im.height-48),'有界近似，非測繪：背側服務牆輪廓、門梁接館支承線仍屬推配，未知背窗省略。',font=font,fill=(25,30,35))
- d.text((12,im.height-25),'官方館高42.2m／門高43m；4F天井底名義13.5m（估計12–15m）。未試印，內廊僅背靠浮雕線。',font=font,fill=(25,30,35))
- im.save(p)
-"""
-subprocess.run([shutil.which('python3'),'-c',caption_code,str(PREV)],check=True)
-(OUT/'render-manifest.json').write_text(json.dumps({'stl_sha256':hashlib.sha256((OUT/'model.stl').read_bytes()).hexdigest(),'render_source':'Imported delivered STL only; material contrast on actual recess faces; no proxy geometry','previews':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(PREV.glob('*.png'))}},indent=2))
+# Caption overlays omitted; limitations remain in README.
+
+import hashlib
+(OUT/'render-manifest.json').write_text(json.dumps({'stl_sha256':hashlib.sha256((OUT/'model.stl').read_bytes()).hexdigest(),'render_source':'Imported delivered STL only; captions omitted; historical geometry/materials preserved','previews':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(PREV.glob('*.png'))}},indent=2))

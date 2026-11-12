@@ -3,12 +3,12 @@
   "source_blend_git_blob_sha": "5332773f6c1af957519cec3e6939574b27f21623",
   "source_stl_git_blob_sha": "fa01ad8df441f42060531adc0592ad582cfe3320",
   "source_file_sha256": {
-    "scene.blend": "9c9549ae676b39c2dc0f3435a2c2030c19abe0b61576e2d913ec507670088a2b",
+    "ORIGINAL-SOURCE-GAP-scene.blend": "9c9549ae676b39c2dc0f3435a2c2030c19abe0b61576e2d913ec507670088a2b",
     "model.stl": "bbc2dde32fdf1acff429b99dcac55e937e42ad022e6753595571d6498c4a91c5",
     "draft-parameters.json": "f85e1306c61b564463bdf6e48c3a93414fd13f096bdb4beea4e01ff17864f028"
   },
   "blender_version": "4.3.2",
-  "scope": "Separate camera/framing only; source scene, STL, 3 materials and 9 technical views unchanged. Same limitation captions retained.",
+  "scope": "Separate camera/framing only; source scene, STL, 3 materials and 9 technical views unchanged. Limitation text remains in README; preview caption omitted.",
   "scene_stl_exact_float32_triangle_match": true,
   "before_signature": {
     "mesh_and_material_indices": "8eef552daf3d0a2e11d53b6008b978145e4be064c2691827bdedaa9d137ade7e",
@@ -107,11 +107,11 @@
       "max_y": 0.7727395296096802
     },
     "all_vertices_in_frame": true,
-    "caption_height_pixels": 52
+    "caption_height_pixels": 0
   },
   "output": {
     "file": "homepage-three-quarter.png",
-    "bytes": 1073593,
-    "sha256": "563e8d543c7f70d1ddb4215a1a804c3ce1823886cda70bb032de22c4d5ac580b"
+    "bytes": 1519287,
+    "sha256": "04c5191ade02d9106cfc3a17d0ddb3e75be81a5812e7b6e686a1227ed26b1cb7"
   }
 }
