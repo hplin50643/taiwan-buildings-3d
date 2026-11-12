@@ -22,10 +22,16 @@
       "id": 3,
       "name": "UNVERIFIED treehidden panel walls glass roof neutral",
       "hex": "#B8BAB5",
-      "faces": 1724
+      "faces": 1704
+    },
+    {
+      "id": 4,
+      "name": "Observed two upper complete front band fields nominal offwhite",
+      "hex": "#E0E0D9",
+      "faces": 20
     }
   ],
-  "domain_face_indices": {
+  "original_domain_face_indices": {
     "top_left": [
       895,
       896,
@@ -63,15 +69,68 @@
       1015
     ]
   },
+  "new_front_band_domains": {
+    "111": [
+      1026,
+      1027,
+      1028,
+      1031,
+      1033,
+      1035
+    ],
+    "94": [
+      731,
+      733,
+      735,
+      739,
+      743,
+      745,
+      746,
+      754,
+      756,
+      757,
+      760,
+      764,
+      767,
+      769
+    ]
+  },
+  "new_face_indices": [
+    731,
+    733,
+    735,
+    739,
+    743,
+    745,
+    746,
+    754,
+    756,
+    757,
+    760,
+    764,
+    767,
+    769,
+    1026,
+    1027,
+    1028,
+    1031,
+    1033,
+    1035
+  ],
+  "original_colored_faces": 28,
+  "added_colored_faces": 20,
+  "colored_faces": 48,
+  "neutral_faces": 1704,
   "coplanar_components": 467,
+  "mixed_coplanar_domains": 0,
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
-  "geometry_policy": "1752 original triangles unchanged",
+  "geometry_policy": "1752 original triangles and original STL/build bytes unchanged",
   "limits": [
-    "Four whole original notched front panel domains y-19.9, allvertices finitebounds, no centroid splitting.",
-    "Top yellow6+6/middleleft paleochre10/lowerleft terracotta6.",
-    "Whole treeshaded middle-right panel neutral, not partially colored above trees.",
-    "Gray walls white bands returns windowbacks tanks fullcircumferences roof rear base neutral.",
-    "Unknown photo date, webpage year not capture or currentcondition; new building only, no adjacent old buildings."
+    "Original palette0..3 includingneutral3 unchanged; newoffwhite appendedat4. Original28coloredfaces unchanged.",
+    "Only two upper visible front band planes; no top/underside/return/depth or treehidden lower band expansion.",
+    "Shallow original band depths/notches remain simplified, not newly measured geometry. Nominal offwhite not calibrated.",
+    "Unknown photo capture date, pageyear not capture or2026condition. Only new Shushenbuilding, no adjacent old buildings.",
+    "Source private, no photo textures or public source images."
   ]
 }

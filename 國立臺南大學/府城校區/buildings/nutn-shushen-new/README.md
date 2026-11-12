@@ -1,32 +1,24 @@
-# 新淑慎樓｜僅頂黃／中左淡黃／下左橘板局部補色
+# 臺南大學新淑慎樓｜兩上層完整前白帶局部補色
 
-**局部補色未完成：只頂黃12／中左淡黃10／下左橘6原面；中右樹遮及其他未證中性。非全色或2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項 `nutn-shushen-new`／`count_delta=0`，府城校區；只新淑慎不含鄰舊棟。20261103為處理日期非拍攝日。
+局部補色未完成。保留原28面黃／淡赭／陶土色，新增最高前細帶6面及最高窗列下水平前帶14面，共48面配色、1704面未知中性，1752原三角不變。原材質0至3的色名、色票及未選面索引全部保持，未知中性仍為index3；新名義米白#E0E0D9附於index4，非把中性變白。
 
-| 前斜視 | 後斜視 | 正面 |
+## 來源與有限原域
+重新實看原官方1477×1108照片及原像素上部裁切，最高細前帶與最高窗列下水平帶均清楚可見，非新照片或不同角度。名義白色不是校準色票。原淺浮雕帶深度與缺口保留原近似，不因配色追認測量精度。
+
+只選最高前帶 y=-19.7、x[-56.5,56.5]、z[111,113]，與下一前帶 y=-19.3、x[-56.5,54.5]、z[94,96.3]。所有頂點須在有限原框內且朝前；6+14原三角完整共面域不拆分。原28色面保留，無混域。兩帶頂／底／返側不延伸，z58與40等下帶因樹遮不取，儘管原網格可選取也不代表照片來源充分。
+
+整主牆、樹遮右側色板、玻璃窗背、水塔、屋頂、背面、基地及其餘面全部原樣。中性不等於實景灰或真正材界。照片拍攝日未知，網頁年月非拍攝日，非2026現況測繪；只本棟新淑慎樓，不納鄰近舊樓。原照與裁切私存不公開或貼圖，不推定商用授權。
+
+## 十視角
+|前斜|後斜|正面|
 |---|---|---|
-| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
-| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
-| ![頂視](top.png) | ![上黃與中左淡黃](entry-detail.png) | ![下左橘與缺口](facade-detail.png) |
-| ![中性屋頂水罐](roof-detail.png) | | |
+|![前斜](preview.png)|![後斜](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂](top.png)|![入口](entry-detail.png)|![詳](facade-detail.png)|
+|![屋詳](roof-detail.png)|||
 
-## 材色範圍
-
-只原 y−19.9 四有限前浮板域：頂左 x−38..−32／頂右20..26，z94..111，各6三角名義黃；中左x−13..−7、z59..94，10三角淡赭黃；下左x−38..−32、z41..57，6三角橘。原窗Boolean切去的缺口原樣，選所有存活全三頂點在域內的完整原三角，不假補成照片平板，不新增切面或面心截色。共面連通域全同材，1724面中性。
-
-中右原板下部樹遮，整塊中性，不只染樹上半。全高左灰牆及主壁跨遮蔽基座／側面不擴灰；原白橫帶/返邊/板厚側背/窗背/玻璃/樓梯格背全中性。水罐正面金屬不證整圓周背頂，整罐及帽中性；屋/突出機房/背/基座/其餘全部中性。**中性不等於實景灰證明，來源覆蓋界線不是實材接縫。**
-
-原1752三角、STL/build字節與尺寸不變；不以補色追認原近似開窗重疊或現況精測。
-
-## 來源、日期與權利
-
-校方永續頁成功1477×1108實景 `official-shushen.jpg` 已親看；先前503技術失敗不是已讀證據，以這次成功實檔hash為準。照片capture未知，網頁年份/識別碼及取用日不是拍攝或2026現況證明。URL/hash見source register，HEX為色族近似非測色。原照私人保留，不公開/不貼圖；未見CC不沿repo license推商用。
-
-## 檔案與 QA
-
-`appearance.3mf`四展示材，`scene.blend`真面材，`color-mesh.npz`原三角索引；原STL無色及build保字節；immutable原包無OBJ，原碼雖可產出OBJ，不冒稱原OBJ存在或保留，隔離產物僅私存。原README另存`ORIGINAL-MONOCHROME-README.md`/`.zh-TW.md`，舊previews/QA保單色歷程不是新色審。
-
-依requirements執行colorize/export/validate，Blender執行render_color.py/verify_color_scene.py。原build+color全隔離重建保留不刪；3MF/STL三角同一／封閉正體積／重開scene／10張1200×900見QA，父另終審。**未實際列印。** 四展示材不代表已驗四色實際切片、材料/支撐須另核。
+## 本次與歷史QA
+本次WHITE-BAND-SOURCE-QA、COLOR-ASSIGNMENT、COLOR-FORMAT-GEOMETRY、SCENE及WHITE-BAND-SCENE-QA對應新候選。舊文件及QA原字節存於qa/white-band-previous，原FREEZE、舊獨審不作本次放行。來源狀態固定SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW，最終獨審另檔記錄不回寫來源快照。STL/build不變，STL本身無色；五種展示材質非已驗多料切片，未實體試印。獨立審核與凍結另行完成，未發布。
 
 ## English limitations
-
-Partial only: whole original y−19.9 notched relief fronts,top yellow6+6,middleleft paleochre10,lowerleft terracotta6;1724neutral. WindowBoolean contours retained, no repair or triangle cut. Whole tree-obscured middleright panel neutral, not just hidden lower portion. All gray/white mainwalls, returns, panel thickness, windowbacks/stairproxy, tanks entirecircumferences,roof/rear unknownneutral. Unknowncapture date; webpage year not current-condition evidence.1752originaltriangles/STL/build bytes unchanged/count_delta0;immutable package has noOBJ despite original code exportingOBJ; isolatedgeneratedOBJ privately retained,new Shushen only not adjacent older blocks; color does not authenticate original geometry. Photo private,nottexture; nominal palette not calibration; not test-printed or validated four-filament project.
+Retain28 original yellow/ochre/terracottafaces. Add20 complete upperfront-band faces(6+14), total48colored/1704neutral/1752triangles. Originalpalette0..3 and their unaffected assignments unchanged; nominaloffwhite appendedat4,neutralremains3. Sameofficialphoto nativepixel reinspection,not newphoto. Originalbanddepth/notches approximate; no exactcoloror surveyclaims. No tops,undersides,returns,lower treehiddenbands,fullwalls,glass,tanks,roof,rear or adjacentbuildings changed. Captureunknown,not2026. Sourcesprivate,no physicalprint assurance.

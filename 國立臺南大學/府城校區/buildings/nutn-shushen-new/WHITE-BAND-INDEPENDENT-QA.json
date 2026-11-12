@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T10:54:49.969507+00:00",
+  "scope": "20 original front faces only on two highest pale bands; original28 colored faces and four existing palette entries unchanged.",
+  "blockers": [],
+  "numeric_checks": {
+    "status": "PASS",
+    "checks": {
+      "vertices_exact": true,
+      "faces_exact": true,
+      "1752_triangles": true,
+      "bands6and14": true,
+      "20new_exact_mask": true,
+      "original28_and_other_indices_preserved": true,
+      "20neutral_to_new4": true,
+      "counts": true,
+      "whole_domains": true,
+      "no_mixed_coplanar": true,
+      "original4palette_names_colors_exact": true,
+      "new_palette4": true,
+      "model.stl_unchanged": true,
+      "build_model.py_unchanged": true,
+      "3MF_vertices": true,
+      "3MF_faces": true,
+      "3MF_materials": true,
+      "3MF_five_materials": true
+    },
+    "bands_counts": [
+      6,
+      14
+    ],
+    "mesh_sha256": "83116504b8c09c823eb3197de8f8d386b975a08c7aabb434a6916b4cb0993aa3"
+  },
+  "scene_checks": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "five_material_slots": true,
+      "palette_0": true,
+      "palette_1": true,
+      "palette_2": true,
+      "palette_3": true,
+      "palette_4": true
+    },
+    "scene_sha256": "a0779002613513c492c146c98ed182eb52647b744f197b93e67ce34778bc4720"
+  },
+  "face_counts": {
+    "total": 1752,
+    "original_preserved": 28,
+    "added": 20,
+    "colored": 48,
+    "neutral": 1704,
+    "per_new_band": [
+      6,
+      14
+    ]
+  },
+  "findings": [
+    "Independently reselected all vertices of finite forward-facing domains y=-19.7,z111..113 and y=-19.3,z94..96.3. Exactly6+14 faces,whole coplanar domains,no mixed material boundary.",
+    "Original palette entries0..3 names/colors unchanged,neutral remains3. Only20 original neutral faces switch to appended index4 nominal#E0E0D9. All other1752-face geometry/material indices and STL/build bytes unchanged; original package has noOBJ.",
+    "3MF independently verified vertices,faces,indices and five base materials. Retained isolated rebuild QA passes original STL and new palette/mesh hashes.",
+    "Actually inspected official1477x1108 photo and native upper crop; visible two pale front strips are not tree-obscured. Lower bands and returns remain excluded. Same-source reinspection,not newly dated image.",
+    "After all ten render saves and scene completion, actually inspected every final image in two private montages plus full facade-detail and entry-detail. Added pale strips stay confined; original yellow/ochre/terracotta and neutral walls/glass/roof/tanks retained.",
+    "Independently reopened original and final scenes: camera,lights,render settings,mesh list,vertices,faces,material indices,mesh hash and all five shader palettes match expected. Text/backdrop hidden and stamp disabled.",
+    "Source QA fixed pending-final-model status is a historical evidence snapshot; this separate independent final report gives model PASS without rewriting its hash."
+  ],
+  "image_sha256": {
+    "preview.png": "be94f0a40f2ce029dd9c1b451bbacb79cfa942b068518309920d56a6ee6d783b",
+    "rear.png": "2b6438b6d76926ae97f6999cd29c70185bcb93195d16989b28fd3f2c3e6ba7c8",
+    "front.png": "ebb544132ddd251563898091806a812279437e0f0032c515181149df17f00bce",
+    "back.png": "90f3109e247316fa3ccfc6ab2fae4cd282ab6cb4c54e8c01b31c16d63dab4a2a",
+    "west.png": "7b9fa6797727e0f589e0f0533eb3460e9048a2b8f92bbfe8d0a7c7c5472f041c",
+    "east.png": "188147479c9c3870928318a2bb451b4496696da8de640c619402dc569992c412",
+    "top.png": "4eb2013955343f6ee5c2b9674c4135fce5bdfd642a1dc6aaddbbec4f34a80ad4",
+    "entry-detail.png": "0496fbc3d6e39fe59e3a3bf066a14c5f4043065ca281b43cd102f21007e8144d",
+    "facade-detail.png": "d4b558762cfeae778c81a352cc9d0bc9bacb25eb87f15537b2f6e9688e687457",
+    "roof-detail.png": "d2e1d17fc8044caf70b9af15d0de3b3717d77ecafdf7270e75ab71c66c9fec5f"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "83116504b8c09c823eb3197de8f8d386b975a08c7aabb434a6916b4cb0993aa3",
+    "appearance.3mf": "7f53079bb095e2d5f3f9c04abf4d4fe1929daa52e3697ba1001be4ba4f3eb66b",
+    "scene.blend": "a0779002613513c492c146c98ed182eb52647b744f197b93e67ce34778bc4720",
+    "colorize_model.py": "8b2ef221be73dd6b22de4a53621d3937bd01216c11f85fad168115b9e648d3aa",
+    "palette.json": "846e103749712adb98e5f30334955e432ca603bdbb8ea76acc423dd8d6a43598",
+    "WHITE-BAND-SOURCE-QA.json": "1c93de0f6bb4f7dd7135179e9b36c846721d4b034692947ba533872cf56327d8"
+  },
+  "source_sha256": {
+    "official-shushen.jpg": "907a1937605a657243320531aa7424fde5b2baa7da29db9999e81656097fca52"
+  },
+  "limitations": [
+    "No lower treehidden bands,strip tops/undersides/returns,full walls,obscured right colored panel,windowbacks,tanks,rear orroof changes.",
+    "Original band depths/notches approximate,not measured or recertified by coloration. Nominal white not calibrated.",
+    "Capture date unknown,webpage year not photo date,no2026 current-condition guarantee.",
+    "Only new Shushen building,not adjoining older buildings. Five appearance labels not validated multicolor print/slicer project. Reference photographs private."
+  ]
+}
