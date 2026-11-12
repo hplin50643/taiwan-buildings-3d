@@ -1,0 +1,563 @@
+{
+  "status": "passed",
+  "test": "Independent all-vertex bounded plane and face-normal recheck against original saved mesh. No centroid assignment or split.",
+  "original_colored_faces_retained": 2244,
+  "changed_neutral_faces": 70,
+  "retained_neutral_faces": 690,
+  "groups": [
+    {
+      "family": "canopy_cut_side",
+      "material": 4,
+      "faces": 6
+    },
+    {
+      "family": "front_bay_cap",
+      "material": 1,
+      "faces": 6
+    },
+    {
+      "family": "return_bay_cap",
+      "material": 1,
+      "faces": 11
+    },
+    {
+      "family": "return_bay_underside",
+      "material": 1,
+      "faces": 11
+    },
+    {
+      "family": "stair_end",
+      "material": 5,
+      "faces": 36
+    }
+  ],
+  "artificial_closure_faces_preserved_neutral": [
+    90,
+    91,
+    94,
+    122,
+    123,
+    124,
+    140,
+    145,
+    322,
+    350,
+    351,
+    353,
+    354,
+    355,
+    356,
+    357,
+    391,
+    392,
+    396,
+    397,
+    398,
+    399,
+    443,
+    444,
+    445,
+    446,
+    459,
+    460,
+    461,
+    462,
+    471,
+    472,
+    489,
+    490
+  ],
+  "changes": [
+    {
+      "face": 566,
+      "material": 1,
+      "family": "front_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 568,
+      "material": 1,
+      "family": "front_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 866,
+      "material": 1,
+      "family": "front_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 907,
+      "material": 1,
+      "family": "front_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1219,
+      "material": 1,
+      "family": "front_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1251,
+      "material": 1,
+      "family": "front_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1619,
+      "material": 4,
+      "family": "canopy_cut_side",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1620,
+      "material": 4,
+      "family": "canopy_cut_side",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1621,
+      "material": 4,
+      "family": "canopy_cut_side",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1628,
+      "material": 4,
+      "family": "canopy_cut_side",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1629,
+      "material": 4,
+      "family": "canopy_cut_side",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1638,
+      "material": 4,
+      "family": "canopy_cut_side",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1643,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1644,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1685,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1693,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1933,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1934,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1975,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 1981,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2231,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2232,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2268,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2269,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2529,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2530,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2538,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2539,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2540,
+      "material": 1,
+      "family": "return_bay_underside",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2577,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2578,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2583,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2586,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2587,
+      "material": 1,
+      "family": "return_bay_cap",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2873,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2874,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2879,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2880,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2881,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2882,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2883,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2884,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2885,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2890,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2891,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2892,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2893,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2894,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2895,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2896,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2897,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2902,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2903,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2904,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2905,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2906,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2907,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2908,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2909,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2914,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2915,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2916,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2917,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2918,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2919,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2920,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2921,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2929,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2930,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    },
+    {
+      "face": 2931,
+      "material": 5,
+      "family": "stair_end",
+      "all_vertices_pass": true,
+      "normal_pass": true
+    }
+  ],
+  "limitation": "Geometry containment is not photographic evidence for hidden surfaces. Only component returns/caps/ends are inferred, not full striped walls or artificial rear elevations."
+}

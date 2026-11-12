@@ -15,12 +15,16 @@
 [下載 STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py) · [頂視圖](appearance/top.png) · [來源紀錄](sources.json)
 
 
-### 新增有限照片材料（原預覽保留）
+### v2：原構件返面延伸（原預覽保留）
 
-僅入口轉角原可分凸窗採土米色、既有窗梃近白、真窗背深灰綠、入口罩墨綠與階梯灰色。實照大白／米寬橫帶無原完整色界，因此大牆、雙色柱與原窄凸線保持中性，不冒充寬條紋；不是全館完整配色復原。
+70 個原中性面補上同構件原材質：28 面凸窗帽板／轉角底返面土米色、6 面斜罩切口側返面墨綠、36 面階梯兩端灰色。隱蔽面是連續性推估，不是照片逐面確認。原 2,244 個有色面、全部材料值與幾何不變。
 
+大牆白／米黃寬橫帶缺原完整分界，不用細凸線冒充，690 面仍保持中性；人工後切面不是實際背牆。柱廊保持開放，原罩仍是不透明粗化框／屋皮代理，不另造透明玻璃或網格。
 
-[來源與省略限制](APPEARANCE.md)。原幾何、四張預覽與QA不改；0.2235% opening loss僅保留原記錄，未重跑列印QA或實體試印。原柱廊真淨空仍開放。
+[左側](appearance/left.png) · [右側](appearance/right.png) · [來源及限制](APPEARANCE.md) · [九圖審核](appearance-review-v2/color-continuity-review.json) · [數位 QA 重跑](appearance-review-v2/original-qa-rerun-summary.json)
+
+原 STL／scene、四張 previews、歷史 QA 保留。本輪重新下載並親看 M+ 完工照片，日期未知，不稱 2026 現況；其餘舊來源未重讀。原數位 QA 已重跑通過，未做切片器工具路徑或實體試印。本輪只在本機準備，尚未發布，最新 HEAD 未重查。
+
 
 ## 保留的外觀
 
@@ -62,7 +66,7 @@ python validate_sections.py
 
 ## 來源與年代
 
-研究查閱日期：2026-10-13。僅公開來源URL、日期和支持的特徵；第三方照片/PDF不放入交付包。照片上傳日期不視為攝影日期。
+原幾何來源研究日期：2026-10-13。本輪2026-11-12實讀範圍另見 [來源登錄](appearance-review-v2/source-register.json)。僅公開來源URL、日期和支持的特徵；第三方照片/PDF不放入交付包。照片上傳日期不視為攝影日期。
 
 - [M+：國立彰化師範大學圖書館項目檔案](https://www.mplus.org.hk/tc/collection/objects/project-file-main-library-national-changhua-university-of-education-19861989-chang-hua-changhua-taiwan-ca39-4-6-1/)：典藏項目1986–1989；完成照片攝影日未知；典藏項目1986–1989，王秋華作品；完工照片中三列直向凸窗、鋸齒窗角、柱廊、偏置斜屋入口。
 - [M+典藏完工實拍](https://res.cloudinary.com/mplustms/image/upload/w_1000/v1627899124/v2/prod/small/014001_014500/014189_001.jpg)：攝影日未知；URL上傳時間不當攝影日；主立面和入口側轉角的實際外觀；三層上部凸窗，另有下方窄窗層。

@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.002;indices=[]
+EPS=.002;indices=[];original_indices=[];changed_faces=[];change_reasons={};support_records=[]
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def boxface(x,y,z,w,d,h):
@@ -103,12 +103,48 @@ for p in mesh.polygons:
  j=surf_material()
  if j:i=j
  if hi[2]<=3+EPS:i=0
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# V2: only whole original material supports; no face splitting or geometry edits.
+# Main-body rear and side crop closures are NOT complete building elevations.
+supports=[]
+def support(family,low,high,planes,material):
+ supports.append({'family':family,'low':low,'high':high,'planes':planes,'material':material})
+# Inward-facing original window reveals: wall material, never extra glazing.
+for z in [20,31,42,53,64,75]:
+ for x in [-60,-47,-34,-21,-8,5,18]:
+  support('main_window_wall_reveal',[x-5.5,-11,z],[x+5.5,-9,z+8],[(0,x-5.5,1),(0,x+5.5,-1),(2,z,1),(2,z+8,-1)],2)
+for x in [-57,-44,-31,-18,-5,8,21]:
+ support('top_ribbon_wall_reveal',[x-5,-11,86],[x+5,-10,88.3],[(0,x-5,1),(0,x+5,-1),(2,86,1),(2,88.3,-1)],2)
+for z in [23,35,47,59,71]:
+ for x in [49,56]:
+  support('tower_paired_window_wall_reveal',[x-2.3,-10.5,z],[x+2.3,-9.5,z+7],[(0,x-2.3,1),(0,x+2.3,-1),(2,z,1),(2,z+7,-1)],2)
+for z in [20,31,42,53,64]:
+ for y in [14,24]:
+  support('short_right_return_window_wall_reveal',[69.75,y-3,z],[71.5,y+3,z+7],[(1,y-3,1),(1,y+3,-1),(2,z,1),(2,z+7,-1)],2)
+# Independent rooftop masses visible in the long-view photograph. Their
+# simplified vertical exterior walls continue the existing tan family; unseen
+# sides are explicit continuity inference. Roofs and artificial closures excluded.
+for family,x,y,z,w,d,h in [('main_rooftop_mass',-54,5,89,24,20,6),('tower_rooftop_mass',40,8,95,22,20,4),('return_rooftop_mass',66,20,78,12,18,4)]:
+ low=[x-w/2,y-d/2,z];high=[x+w/2,y+d/2,z+h]
+ support(family,low,high,[(0,low[0],-1),(0,high[0],1),(1,low[1],-1),(1,high[1],1)],2)
+support('top_sunshade_visor_upper_face',[-70,-17.5,89],[32,-9.5,90.6],[(2,90.6,1)],1)
+support('platform_wall_end_returns',[-68,-15.5,3],[24,-9.5,19],[(0,-68,-1),(0,24,1)],5)
+support('stair_front_and_outer_end',[-60.3,-21.2,3],[-7.3,-13.2,16.47],[(1,-21.2,-1),(0,-7.3,1)],7)
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0)
+ if hi[2]<=3+EPS:continue
+ for k,r in enumerate(supports):
+  if bounds(r['low'],r['high']) and any(plane(ax,t) and n[ax]*sg>.999 for ax,t,sg in r['planes']):
+   i=r['material'];p.material_index=i;indices[p.index]=i;changed_faces.append(p.index)
+   change_reasons[str(p.index)]={'family':r['family'],'support_index':k,'basis':'All three vertices lie in the bounded original component and on its material plane with matching normal. Original photographs establish material family; occluded extents and returns are continuity inference.'};break
+support_records=supports
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and original material RGBA and roughness preserved; full-face original component continuity; synthetic closures neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-component-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -123,6 +159,8 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
+for text in list(bpy.data.texts):bpy.data.texts.remove(text)
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -138,15 +176,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing surface proxy; original through-slot remains open','Original NCUE engineering main front segment only, deliberate28mmdepth and synthetic rear closure, not whole building. Four official/architect photographs personally viewed; university composite lower Teaching Building1 excluded. Dates unknown,2016URL not capturedate,2008-11 originalrecord not freshly reverified. Exact original folded front float32 support triangles regenerated from GLASS_PROFILE/xs/zs; full final triangles tested by coplanar/outnormal and XZ clipped intersection union area by material. Original relief shoulders/rib planes distinct from flatback glass, no new bands or face splits. Source light spandrels unsegmented omitted. Tower planar front mixed tan/grey boundary lacks exact face support so remainsneutral; true windowbacks still supported. Main shade fins/shelves/columns grey, actual tan fields and shortreturn only, platformgrey and small canopy coarse mixed proxy. Minor hidden faces of same shade members continue source-supported family. Broad roofs/cutrear/unknowns neutral; no letters, tiles, PV or newgeometry. Original0.1995percent printQA warning retained, not rerun','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-component-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'component_supports':support_records,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing surface proxy; original through-slot remains open','Original NCUE engineering principal facade segment only. Deliberate28mmdepth and synthetic rear closure, not whole building. Architect MG_3724,MG_3730,MG_3694 and official university composite freshly downloaded and personally viewed. Composite lower Teaching Building1 excluded. Dates unknown;2016URL is not capturedate. Same original tan family extends to original wall reveals and three rooftop mass vertical walls; silver-grey roof visor top, grey platform end returns and stair lateral faces continue original component materials. Opposite/occluded extents inferred, not individually photographed. All original colored faces and exact material values preserved. Full original triangles bounded and normal/plane checked, no centroid-only assignment. Main body crop closures, mixed grey/tan tower front, through-slot, folded curtain wall boundary strips, broad roofs and artificial base unchanged. No new windows, letters, tiles, PV, sourcephotos or geometry. Original QA freshly rerun separately; no slicer toolpath or trial print','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((190,-270,165),(0,0,49),220),'rear':((-170,260,155),(0,0,49),220),'elevation':((0,-300,49),(0,0,49),220),'source-angle':((170,-290,100),(0,0,49),220),'top':((0,0,400),(0,0,49),220)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((190,-270,165),(0,0,49),220),'rear':((-170,260,155),(0,0,49),220),'elevation':((0,-300,49),(0,0,49),220),'source-angle':((170,-290,100),(0,0,49),220),'left':((-350,0,135),(0,0,49),220),'right':((350,0,135),(0,0,49),220),'top':((0,0,400),(0,0,49),220)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -155,4 +194,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

@@ -1,0 +1,117 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T01:47:39.177699+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "32cce4df503d7b4b7cf4c2df92d5c5804d1451f04c8f9a85f9d01d61fbf533ea",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:34:52.902357+00:00",
+      "observation": "Silver-grey screen structure, folded curtain wall and canopy remain intact. Tan rooftop vertical walls and window reveals are coherent; top fields stay neutral. Tower slot remains open; broad tower front retains neutral mixed-boundary policy. Grey stairs and platform remain original geometry."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "9e090f22159f9b743ca91f710bfa3867bb525171f7285ffbd4cf22607a4a1727",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:35:30.726651+00:00",
+      "observation": "All broad artificial rear closure planes remain neutral. Three rooftop masses show bounded tan vertical faces and neutral roofs. Slot remains truly open; no fabricated rear windows or wall patterns."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "b64b2cef539d6778a0174106f788a1562eeb23247d05d93557bb41256350bf32",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:40:56.702797+00:00",
+      "observation": "Front screen rhythm, original window backing and folded curtain-wall ribs are unchanged. Opening reveals use tan wall continuity, without new window bands. Upper rectangular opening is still a true void; tower mixed-material unsplit front remains neutral."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "187a98bd7d0412b215e49f8e025103114633ea60946a8c5f5b9beeec6b43d553",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:40:56.705199+00:00",
+      "observation": "Original folded curtain wall depth changes, silver shade structure and projecting canopy remain distinct. Rooftop vertical faces, stair side and right short-return window reveals are coherent; no changed geometry or fabricated detail."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "7a0eee502d4aff661e063a594a85fb3c439e74cbca16a0db9b4ea77cb6d2f3f8",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:46:37.687381+00:00",
+      "observation": "Narrow section depth is clear. Main left unresolved boundary remains neutral; shaded front structure is preserved. Rooftop wall families are bounded to the original independent masses."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "47a3699c179794550ebbae0b6b2d3c6f3cb69324a85a90b5d1ababd4b90d2f7f",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:46:37.688669+00:00",
+      "observation": "Original short return wall and ten windows are intact. Tan reveals follow existing openings without added windows. Tower side and broad roof remain neutral; original canopy and folded glazing profile are unchanged."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "9ea8248e832b3eea0bd18b92bf85c443a48913d726210027e2c4a4752ad2603e",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:46:37.690096+00:00",
+      "observation": "Broad horizontal roofs, artificial base and three rooftop cap faces retain original neutral material. Only the bounded original sunshade visor upper face is extended silver-grey; no material spills across roofs."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "15d6e16463e1aa445d68fd10395b6623934d0dcd9096ee85e84226cf496dd597",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:46:37.692462+00:00",
+      "observation": "Same front camera as repaired view. Original uncolored rooftop vertical faces, visor upper face, reveals and stair side are visible for comparison; original precolored screen and folded curtain wall remain identical."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "ac6a77f0e25be14bd0813cfebb02c8519fa92a2e61dee1c5c5e96e198abfd902",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:47:38.597833+00:00",
+      "observation": "Same rear camera as repaired view. Original rooftop wall neutral surfaces contrast with the new bounded tan continuity. All artificial rear closures, broad roofs, base and upper true slot remain unchanged."
+    }
+  ],
+  "before_after": [
+    {
+      "view": "front",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 71547,
+      "pixels_differing_by_more_than_8_rgb_levels": 17985,
+      "mean_absolute_rgb_difference": 0.594437037037037,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    },
+    {
+      "view": "rear",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 25134,
+      "pixels_differing_by_more_than_8_rgb_levels": 13132,
+      "mean_absolute_rgb_difference": 0.4084638888888889,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    }
+  ],
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "observations": [
+    "All original colored screen, folded curtain wall, existing window backs and canopy retain their original assignments.",
+    "695 originally neutral faces now continue original tan wall/reveal and rooftop mass families, silver-grey visor, grey platform ends and stair lateral surfaces.",
+    "The original upper rectangular through-slot remains open. No new windows, lettering, divisions or geometry.",
+    "The large rear planes are artificial crop closures and remain neutral. Main unresolved left side, mixed tower grey/tan front, broad roofs and folded curtain-wall boundary strips remain unchanged."
+  ],
+  "limitations": [
+    "Hidden rooftop walls and original component returns are continuity inference, not individually photo-confirmed surfaces.",
+    "This is a shallow front segment, not complete-building elevations. Photographs have unknown capture dates.",
+    "No physical test print or slicer toolpath. Original digital QA rerun is separately reported."
+  ],
+  "artifacts": {
+    "appearance.blend": "3f4e71ec6eda94d3039a2b2195bac6105ffabfdb3a3a490f89316fa0420a728b",
+    "appearance.3mf": "6c23fdfe30152740e77d9837d88952755c60fd2163b4695e4a31f506fbb1c846",
+    "appearance-materials.json": "f1fb4c85bbe7fcc5b7438ba59187f15ee8fcb7b09d9cafd38605791411477175",
+    "build_appearance.py": "c68be173a164f88d976e812582fb67eb76bc5e0d3ac62c3287fc622d9932fe49",
+    "render_review.py": "fc390bbcce1fcb79fcabfb40a0fba7e276a4fb9b028748fb8bd1936ced24839f"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "method": "Independent read of actual original mesh vertices/normals and saved revised assignments. Every full triangle must fit one closed original component box and exact oriented material plane. Exhaustive negative-set checks cover retained crop planes, base and true tower slot.",
+  "changed_faces": 695,
+  "material_counts_of_changed_faces": {
+    "2": 638,
+    "7": 47,
+    "5": 6,
+    "1": 4
+  },
+  "families": {
+    "main_window_wall_reveal": 362,
+    "top_ribbon_wall_reveal": 86,
+    "top_sunshade_visor_upper_face": 4,
+    "tower_paired_window_wall_reveal": 78,
+    "platform_wall_end_returns": 6,
+    "stair_front_and_outer_end": 47,
+    "main_rooftop_mass": 8,
+    "tower_rooftop_mass": 12,
+    "return_rooftop_mass": 12,
+    "short_right_return_window_wall_reveal": 80
+  },
+  "unchanged_groups": {
+    "main_rear_artificial_crop": {
+      "face_count": 2,
+      "unchanged": true
+    },
+    "tower_rear_artificial_crop": {
+      "face_count": 10,
+      "unchanged": true
+    },
+    "return_rear_artificial_crop": {
+      "face_count": 2,
+      "unchanged": true
+    },
+    "main_left_unresolved_side": {
+      "face_count": 39,
+      "unchanged": true
+    },
+    "artificial_base": {
+      "face_count": 53,
+      "unchanged": true
+    },
+    "true_through_slot": {
+      "face_count": 8,
+      "unchanged": true
+    }
+  },
+  "retained_neutral_faces": 1649,
+  "all_precolored_faces_preserved": true,
+  "no_new_window_back_or_glazing_assignment": true,
+  "all_face_vertices_tested": true,
+  "no_centroid_only_classification": true,
+  "limitations": [
+    "Tops and sides of window openings are original simplified wall returns, not exact frame anatomy.",
+    "Unseen rooftop walls and component returns are same-building material continuity inference.",
+    "Main body crop closures are not rear elevations."
+  ]
+}

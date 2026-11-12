@@ -1,0 +1,117 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T01:48:35.211044+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "402aa844e510bb2243a2e94e8d01eacafa59a5e65caa7cabd9c28d60aaf51c9d",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:34:03.334420+00:00",
+      "observation": "Front bay caps continue tan, end steps grey, green coarse canopy and open colonnade preserved; broad unresolved stripe walls remain neutral."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "fd1609624c3da365d9bfea3d16d628efd618e3d6a3387f1f4c3a03517583b68d",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:37:53.876422+00:00",
+      "observation": "Large artificial rear closure stays neutral, as does service/roof mass; small tan original-component caps do not spread across cut closure. No new actual rear facade claimed."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "01402db41faba97cec337eb8bb0d1ac69b3d8d606075c432008e689ec2a0ed75",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:43:17.444379+00:00",
+      "observation": "Three front bay stacks and original pale cross mullions preserved; no artificial white broad band painted on thin courses; canopy opening and porch remain unfilled."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "78634460c47022f432218334c2be84d4eed9603370b516ff32175729283ae110",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:43:17.445745+00:00",
+      "observation": "Tan component caps join existing bay sides without spilling onto broad grey wall; short return/window stacks intact; stairs and canopy retain original proxies."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "cd337d9af315f7d63257b26d0fcc7151a99cc9c571e203d82b5d9d21e31d4460",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:43:17.447062+00:00",
+      "observation": "Unresolved large end wall and artificial side/depth closure remain neutral; narrow real bay-cap extension does not coat large cuts or roof."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "1cb6bff6641a67db1a472d4c634d077a3896e30b70a3f1d066a24feff94efa97",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:48:34.456420+00:00",
+      "observation": "Four original return window stacks remain tan with pale cross mullions; cap/underside continuity stays within those stacks. Lower openings and colonnade are not changed."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "5c4127aa145120835b70d3cb0948501d81ed62909df7d4db32fcea669738f0a9",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:48:34.459106+00:00",
+      "observation": "Main roof remains neutral; only complete bay caps are tan. No roof patches invented, and canopy remains the original coarse dark green form."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "a52617726c4a97c876f2df85023b7096c8c0fa8ece06d74f60a2cc8e91c1fca1",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:48:34.461734+00:00",
+      "observation": "Same-camera original has neutral cap tops and stair end returns; existing colored front and side faces match final. Final change is confined to component continuations."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "e57894708ac0712e476d33460829dd35944ade1c4324a86ceed9cbf2c66440ef",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:48:34.462707+00:00",
+      "observation": "Same-camera original confirms broad artificial rear closure and roof are unchanged; visible cap tops become tan in final without changing other rear faces."
+    }
+  ],
+  "before_after": [
+    {
+      "view": "front",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 15042,
+      "pixels_differing_by_more_than_8_rgb_levels": 2414,
+      "mean_absolute_rgb_difference": 0.07831527777777778,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    },
+    {
+      "view": "rear",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 4066,
+      "pixels_differing_by_more_than_8_rgb_levels": 1241,
+      "mean_absolute_rgb_difference": 0.03870324074074074,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    }
+  ],
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "observations": [
+    "Existing window fascia, cross mullions, opaque mixed window backs, canopy and stair materials are unchanged.",
+    "70 originally neutral faces receive only original component continuation:28 bay cap/underside faces,6 canopy-cut side-return faces,36 stair end faces.",
+    "Broad striped walls and columns remain neutral because original thin courses do not provide the white/tan band boundaries.",
+    "Artificial rear closures stay neutral and are not treated as real rear elevations. The model remains a partial entry-corner segment.",
+    "Open colonnade and canopy aperture remain open, and the canopy retains the coarse opaque mixed frame/skin proxy. No added glass, fine grid, text or geometry."
+  ],
+  "limitations": [
+    "Hidden caps, undersides and returns are material-continuity inferences, not direct photographic confirmation.",
+    "No physical trial print, current-condition claim or fresh slicer toolpath. Original digital QA rerun is separately reported."
+  ],
+  "artifacts": {
+    "appearance.blend": "8713be84e43decf549d633f64c923effd543a4b8e6d06707320283094090f1e4",
+    "appearance.3mf": "6dd2b8472ec5efe6c2f9cd8226ec437defaee0fa9e2cc0cc9ee7a5126393e431",
+    "appearance-materials.json": "bad4c3c170b289ea60516265be03f037d86b29a916d30da36c1078d422bd675f",
+    "build_appearance.py": "c362fcbf012f2476d6ad95c9e4556c59520f5f338fcdc36bd90bd23db3b1b3f6",
+    "render_review.py": "8d3c7f950392a9b99b5e8e0c7ce5e40f7656c7aac321bfb78b52aa8a98bad08a"
+  }
+}
