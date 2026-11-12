@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in just-library-i-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "e9a6a415d6c98bb98246aa91a13e5e4b5e40fe8472272161e3c99e2f2db5ea7d",
+    "east.png": "b9ba9f4daa17f687e940e50fff95064c0ab4e0e74678786f9fd5f8dc07f194f7",
+    "entry-detail.png": "e1a06dd647aa2f7a5816a59ebe90c299cbeecc172b373021645c8e1854cab631",
+    "facade-detail.png": "fc31e32aeb3fd76a59259abbb8e4ad0b0500c2cd77109beadf1e541f1aa22638",
+    "front.png": "ca1d0c196ae13943edef527d8807fde79c197c4170035b10dd8ae48421b6372f",
+    "preview.png": "671f74d5a5369030b26253c4647a591302420547235de4729c42610fa03cdfb6",
+    "rear.png": "29e3de4afc4adf38f061eae148f6a1133df2c3cd95bc16a21221a43dc881fc2e",
+    "roof-detail.png": "370b38860a9996877df0499aae13da78dffac61b8fb756c626b0ffc94c985bf0",
+    "top.png": "6ad86be11d7c66bf6437f602c351214cc2b14025970d357393675da470233e5f",
+    "west.png": "ae50b754eee08a20c6d9eb33d1c1bb1445bbaf3119c23dbf793fb544edadda2f"
+  }
+}

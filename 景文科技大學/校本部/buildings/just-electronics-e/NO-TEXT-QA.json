@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in just-electronics-e-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "3542b7df458db52526cddd97cf3905a751bfd4055e966160e8db043339d28203",
+    "east.png": "33d9ee5e049d86d53254b36a35ed02c7ed0c110b4661f01205ccbfc7e8b2d9c3",
+    "entry-detail.png": "52b59562e561ec0869cd52dde211ec276aab16328a5c4efa1db9b2cb9017ba31",
+    "facade-detail.png": "4c08e336c157231969c2595cfea60b82ffa1cb6e37990b6e0f9486fffb39e8ba",
+    "front.png": "b4abd11878354efcd808c3e66dc4b7b92ce74075e63a5f5f375f0b05514837e5",
+    "preview.png": "d1fc1acd537268ca22a947d7e6819ab948dba978fb6433e69e5b00c72e13e542",
+    "rear.png": "9dbcb2dc5ae184d333ef8eb853e50387d44465ef00edbff0c1d7d7eedb9f9520",
+    "roof-detail.png": "a8b6d6827c6e816be285e66bb5a19daaf7aa294c72c89bc8096c4862d18b2f30",
+    "top.png": "8281e1f693ee7f78289e1caa8d19124b40a940eef61f820643b12d2e67b152cd",
+    "west.png": "9aa960f45b7e052aa73d2e737d26656635ebfa209987873309397db4bb07d71b"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in just-hospitality-h-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "d25ca2e4c06ac96cbaba72fd1871b7914c832d3e93f629b1ade22a005ba7190c",
+    "east.png": "67b6ff7a4c0148ed210f95ab47fd48e966023461b7a31cf7181d3de9f9514ef5",
+    "entry-detail.png": "b57d2c3fd066ea312e79db0a9c66f05fea7380a1f92b7f85bed541f1c1acf413",
+    "facade-detail.png": "00baf36c3a277616dad2207b5c981e7fe2f183653d2d3bfdfddf73385ccedb38",
+    "front.png": "338af53b1d6ceaed962349788bc036d1d0e91f259a46af5129d911d2009b1aa9",
+    "preview.png": "cab0b099a78f32314579d33be8e89918c4cea9c3ceb550182dad47777d616a19",
+    "rear.png": "e985ab63c8e9b26e3f230da71674099b7d4c6a7f95e5990382c4b028c64b8c08",
+    "roof-detail.png": "d1a8e0a0a527dbfe3017fb6776fa2750df0ea225bbf7596a77b8298b8f400a95",
+    "top.png": "c7a88a4353482cf91352e1dfa4955dfc01506dfdfca2cdbf8483513ae003c8dc",
+    "west.png": "4187172cb9dacb50f60e8207098ef7501f7e9aa75f33be3c6ba4a43f27108661"
+  }
+}
