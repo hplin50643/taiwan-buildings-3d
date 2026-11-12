@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in zhiben-dining-centre-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "c6cae6847f1a5c7df47a957de849f9344bf0d312beb135516f8ac7912b1656dc",
+    "east.png": "12587cb0ed895095c39ef6aaa6dfa2d7683add0d1c17b91caa922b41ff988f0c",
+    "entry-detail.png": "dcb29425775c0b9aa00226b5be4a7a4ab2e8e7bf003e6b5e7b5f3d552b2b1a56",
+    "facade-detail.png": "e8b41f293b6769b1198c8fcf57001f2b146f602b076525bd8fe86e4b8342f28f",
+    "front.png": "9bbb29c40afe63a0a55151457f7eb80e524d4a905d2c74df30a6d28c00e99dc7",
+    "preview.png": "c3222d448573dfe74f950c5dd6c822d44efc10285aeb93faafbf21a8d67872c3",
+    "rear.png": "3b92b4fbfebee79099cc13b157bf019cf29bcafa10774da4b908b302902e0e42",
+    "roof-detail.png": "bf3e3cb15a22157334d8a884937a7ae6ffac35ad4c543cbebb97fe536524623d",
+    "top.png": "6ff331577f46762807fc1aa37316d55a80f685ba0edc6bd6cebd2c073cda8af1",
+    "west.png": "0dfe7089319ee07d90df1b79a8ce6fcab49c9a8c815baa0a0d4dfd7aca709b8e"
+  }
+}

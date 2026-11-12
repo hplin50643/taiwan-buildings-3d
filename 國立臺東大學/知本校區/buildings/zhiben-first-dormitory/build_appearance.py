@@ -15,7 +15,7 @@ assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Official dormitory photo and aerial; original three bars retained unchanged.
-palette=[('Unknown tower body rear and ground','#AAA79F',.86),('Observed front wall and original piers warm near white','#CECABF',.86),('Observed separate floor beams pale blue grey','#A8B1B4',.82),('Corridor backing mixed opaque shadow not pure glass','#72716A',.88),('Lantern recessed solid red panels not glass','#A04F37',.85),('Observed pitched roof muted red brown','#A76D60',.85),('Observed gable and front eave grey white','#C6C8C3',.86)]
+palette=[('Unknown tower body rear and ground','#AAA79F',.86),('Observed front wall and original piers warm near white','#CECABF',.86),('Observed separate floor beams pale blue grey','#A8B1B4',.82),('Corridor backing mixed opaque shadow not pure glass','#72716A',.88),('Lantern recessed solid red panels not glass','#A04F37',.85),('Observed pitched roof muted red brown','#A76D60',.85),('Observed gable and front eave grey white','#C6C8C3',.86),('Inferred rear and left wall continuity','#CECABF',.86),('Inferred existing rear shallow bay opaque shadow','#72716A',.88),('Inferred opposite gable and eave continuity','#C6C8C3',.86)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
@@ -23,7 +23,7 @@ for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
 EPS=.002
-indices=[]
+indices=[];original_indices=[];changed_faces=[]
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def boxface(x0,x1,y0,y1,z0,z1):
@@ -60,11 +60,27 @@ for p in mesh.polygons:
    # Front eave slab fascia; top/underside and unverified opposite eave stay neutral.
    if plane(1,yc-d/2) and n[1]<-.8 and hi[2]<=z+.55+EPS:i=6
  if hi[2]<=2.4+EPS:i=0
+ original_indices.append(i)
+ if i==0 and lo[2]>=2.4-EPS:
+  for yc in [-34,0,34]:
+   # Main accommodation bar only: no stair tower or consolidated balcony.
+   if bounds((-62,yc-9.5,2.3),(32,yc+9.5,34.3)):
+    if (plane(1,yc+9.5) and n[1]>.8) or (plane(0,-62) and n[0]<-.8):i=7
+    for xc in np.arange(-56,27,10):
+     for z in [6,18,30]:
+      if bounds((xc-2.25,yc+8.9,z),(xc+2.25,yc+9.5,z+2.5)):
+       if plane(1,yc+8.9) and n[1]>.8:i=8
+       elif abs(n[2])<.1:i=7
+   # Main roof's opposite actual gable / rear fascia, not tower-body mosaic.
+   if bounds((-63,yc-10.5,33.8),(51,yc+10.5,37.2)):
+    if plane(0,-63) and n[0]<-.8 and lo[2]>=34-EPS and np.all(q[:,2]<=37.2-(6.4/21)*abs(q[:,1]-yc)+EPS):i=9
+    if plane(1,yc+10.5) and n[1]>.8 and hi[2]<=34.55+EPS:i=9
+ if i!=original_indices[-1]:changed_faces.append(p.index)
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; rear bar continuity inferred; tower mosaic neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -94,9 +110,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original scene is single warm display material. Official dormitory and aerial photos support front near-white walls/piers, pale blue-grey original floor beams, mixed opaque corridor cut backs, solid red lantern panels, and red-brown original pitched roof planes. Unsplittable tower-body blue/cream mosaic remains neutral; no fake patches, glass claim, new railing or AC geometry. Unknown rear walls/windows, distant gables and bottom remain neutral. Photograph dates unverified; not a claim of unchanged2026condition. Original geometry/preview/QA remain intact.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Rear and left bar walls, existing shallow rear bay shadows, opposite main roof gables/eaves are inferred continuity, not directly verified elevations. Tower mosaic and balconies remain neutral.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original scene is single warm display material. Official dormitory and aerial photos support front near-white walls/piers, pale blue-grey original floor beams, mixed opaque corridor cut backs, solid red lantern panels, and red-brown original pitched roof planes. Unsplittable tower-body blue/cream mosaic remains neutral; no fake patches, glass claim, new railing or AC geometry. Rear bar and left wall colors are inferred in v2; tower mosaic, balconies and bottom remain neutral. Photograph dates unverified; not a claim of unchanged2026condition. Original geometry/preview/QA remain intact.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-195,-220,155),(0,0,24),220),'rear':((195,230,160),(0,0,24),220),'elevation':((0,-260,24),(0,0,24),220),'source-angle':((190,-230,125),(0,0,24),220),'top':((0,0,350),(0,0,24),220)}
+views={'front':((-195,-220,155),(0,0,24),220),'rear':((195,230,160),(0,0,24),220),'elevation':((0,-260,24),(0,0,24),220),'source-angle':((190,-230,125),(0,0,24),220),'left':((-260,0,100),(0,0,24),220),'right':((260,0,100),(0,0,24),220),'top':((0,0,350),(0,0,24),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

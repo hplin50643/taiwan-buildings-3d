@@ -35,16 +35,16 @@
     "no_private_absolute_paths_in_new_public_text": true
   },
   "images_sha256": {
-    "preview.png": "2485166e0f45b3a054fc7637abadf21614188387b0a43c3de95488271488eb8e",
-    "rear.png": "39d33f714cb7e22267cf194898b4b25c396a2effc4bb790ac04c0855f13d4644",
-    "front.png": "a0ef8bff969d2f37dfd5bb8c887affdaa21a66b2293b2df3d5d35ef98facf5f5",
-    "back.png": "968672026b65433e27ffc7396afa5297b1f7cf58fac3429cc47206ea777e084e",
-    "west.png": "617386b4076ae2ce43d9979556a5d30faef80dc81df3eeb2515dedef69efe7bf",
-    "east.png": "2238e69039a347555cb4f191c2b7f443bee368099238263f57dedddf549fb704",
-    "top.png": "bb92e42b5d16cfddf027f9a5b87dc7780826f8729140bc1b5e66cde160b116c9",
-    "entry-detail.png": "9d10b875a0abf6b8182fb89ffa593520a5ced4d8bda9080dc19b8a275f35f13e",
-    "facade-detail.png": "afbd256463349f79c3abd804b7bfed79da200a535b39e9a04ed25ae2470fcdac",
-    "roof-detail.png": "f75960ce32e3f5dbf59f2871373a46a6fe17288a7db1a841c8d54763babfc520"
+    "back.png": "9bf647205ab6a0986ae5376f1f1ccf7b4d5c679b64c3ab01848c93bc48aea875",
+    "east.png": "114e40e58a042df1ae9bccf24d0c29c25f50c40e64bbb1042b101b5fc2882bb7",
+    "entry-detail.png": "b0c8b6a1ab474b751eaae72c33776d5e54b9337a1dacf210952b0065de0b878c",
+    "facade-detail.png": "27407d2c464b0055622f90c2813561249bc715afb486d70530b1aa142ca379ac",
+    "front.png": "d1a471cef024dac52ea91d8a54a6c015a2565545bca974b43e115b66c4347061",
+    "preview.png": "b5fafcfe84d72e9fd91db39c5fb47117330e8eb1c946715a94cd26981a639e0b",
+    "rear.png": "94a93f6037a469b403a733ac2f9d7d4d99bb44ba62bba70f8a8ed5080bd48e44",
+    "roof-detail.png": "af3ec9d7330574a7aac04cc504f50efa12c564ad0a22712f782eb6bd950e3a2d",
+    "top.png": "5909f92c9fad71a0543c76c74c6d29401014effc63fb6b21c1546a9f5b60167c",
+    "west.png": "242dc717e16212691e450732bc6cb9b16d2542c78cd340b6e11ef4ccab8ffa1a"
   },
   "mesh_sha256": "fbd2ea775f7135417b268162f0677d252334d66c85b171cdbfdd5c1463c3990d",
   "geometry_change": false,
@@ -55,5 +55,10 @@
   "limitations": [
     "Two appearance materials, not a verified four-filament slicer job.",
     "Original simplified geometry preserved; no current full-building survey claim."
-  ]
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
 }

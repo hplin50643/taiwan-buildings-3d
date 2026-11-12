@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in zhiben-student-union-sports-all-views.jpg; captions/backing absent; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "20d6d2267f2972f934075ad323da52a3f5d97915c28e581bd0f9a2c8d4c0774b",
+    "east.png": "e72cf1e7749f8c6f4677d4bb911f1ad3730a911232fdbff35ab4590b9acc50a4",
+    "entry-detail.png": "a2e76cba4677ccf7edce14490b8382f712cbbc48a459913ee2b24e772ea3a2b1",
+    "facade-detail.png": "69e5dfef86f8045dddb457223f6a4c7f4be184b6bd60a349de0829b0c62a8c98",
+    "front.png": "af72c8ec38eec682760e82cc3e984ab9b3e8fb7d03f757cdbe9bb3dfc364e0d2",
+    "preview.png": "d362c851b3f8359debde86572e1b48664a245b567de97e049cba803895ae2fdf",
+    "rear.png": "00504bab8e7c27dfe7daa0ae69e3cda13b4f6942080e34b91b6a384848e40eba",
+    "roof-detail.png": "ffad50f84b666f9b57fd4bf263375667f78d88f09b636f224a78b04d55f3b6f5",
+    "top.png": "9da7802737d29613eede41d842f839f5c6231a9947eb83f2067ca2f7aeff234d",
+    "west.png": "562e2c43c7e78751d18e5091f7e3bc0f48c9e611b16919532a97f5a29c3db69c"
+  }
+}

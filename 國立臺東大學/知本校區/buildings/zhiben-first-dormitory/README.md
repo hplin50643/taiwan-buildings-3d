@@ -49,3 +49,9 @@ validation.json記錄原始二進位STL法線單位長及繞序一致、無退�
 本件8688三角面，體積271768.43 mm³。section_validation.json另檢查239個0.2 mm等距幾何截面；這不是切片器、刀路或支撐驗證，也不宣稱窮盡所有可能自交問題。
 
 
+
+## 外牆補色 v2（本機修補）
+
+既有後牆、左端牆、後淺窗與主屋頂反側山牆／簷邊依同棟材料連續合理延伸。後向細節是推估，不是逐面實照證實。塔身不規則拼貼、端陽台與底座保留原狀。原幾何及原色面全部不變。
+
+[現行材料與限制](APPEARANCE.md) · [左側](appearance/left.png) · [右側](appearance/right.png) · [原正面](appearance-review-v2/before-front.png) · [原背面](appearance-review-v2/before-rear.png) · [逐面驗證](appearance-review-v2/model-verification.json)。上文舊版未知後面說明已由本節與現行APPEARANCE修訂；原預覽及歷史QA保留，未實體試印。

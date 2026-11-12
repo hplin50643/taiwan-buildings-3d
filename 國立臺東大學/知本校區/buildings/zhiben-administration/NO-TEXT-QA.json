@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in zhiben-administration-all-views.jpg; no caption/backing, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "00e5055aee653b0120f3cbefb5b2ccb8fbca9bf0347f903f052d49ef83fc1448",
+    "east.png": "e52c416f00f2f2f7d33d8274f651e59a45ace2206ddd527712435f1f64f9a6af",
+    "entry-detail.png": "af1e1a61f379c018dfb7157035d8d46fab745296f669340e49a7496d49521c14",
+    "facade-detail.png": "8f947dda54fe13cb7be0fcc2d7e14146ffe61c2fc55511b995aa09773940b310",
+    "front.png": "a1e049409d74a058946f0853ea32e2968b4e12460f6a40b5a96c2d2406ad86b0",
+    "preview.png": "3281a730766d9b5a75715b964d39ac970f326438d56ce2ac259458ec2374f42b",
+    "rear.png": "40b34f29a6cd7b668be5f971c0544591d4b35ef299f7d3b3c3f18daf7034a588",
+    "roof-detail.png": "76fa3ff46731d7ec416a0ca9f6a2410b895f71bdbf609e6ed5c68a7a780a50bd",
+    "top.png": "7898ea8f47bf1df84613d163fddf048c2a8cc2fd624ab00985c8c58927386d6b",
+    "west.png": "fe9c8c83ee83ad62ee2d2cdb227ad8a497093050afc450a80c21df9bc2f713d8"
+  }
+}

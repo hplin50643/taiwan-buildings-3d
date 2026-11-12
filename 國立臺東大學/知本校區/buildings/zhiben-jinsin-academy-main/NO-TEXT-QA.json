@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in zhiben-jinsin-academy-main-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "5f1a690a649697ae75f45738ada6234cb261b49b679569d63931a9245f9c1f04",
+    "east.png": "6fc34f8fbfd0aa1f314f03eb398b62ac3a34cd05576fe671ed098639751405d3",
+    "entry-detail.png": "38b3c058c34a64ba4295c02819929e90ad5feb392e5314910329727a623637f7",
+    "facade-detail.png": "a9f48683eb1231883936f7693d04358959fce5de7607881fe94c0a064907a264",
+    "front.png": "cddb6cca91636c54ddadfed80da8a22a241e9e1c839279289cd51c2632775b61",
+    "preview.png": "95dd260a770a25b40c37b8d7d62dd6afc9c302492bbc21da9d73d6492ded1421",
+    "rear.png": "8ed3898eb444563d0b4fb843b3e343f8ec5c1bb22cef8aff0e83b81936663623",
+    "roof-detail.png": "22f3a7a1b782164e56e99db945291c9f4bb5c783b9776c0471b986c32da9aa18",
+    "top.png": "13db578b65550d7ac539107e00c33b23c059f8fbaa5b20c3d4944d82c52bcec2",
+    "west.png": "54e7ba29c4e05c6a5b850d2a46fd5d2f576cd6cc70f7d11ec72972a9adfdcf59"
+  }
+}
