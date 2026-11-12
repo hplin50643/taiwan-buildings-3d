@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "pass",
+    "scope": "All ten rendered views inspected; text removed, original materials and complete architectural composition retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "east.png": "10d0857914f82eeae45454325170bb011c7bf969a8c5ace9e5edceec1d795134",
+    "entrance-detail.png": "f17bccabe44e306e934454e41188bda723db8d17ca1c6a10e82ec52ccdbd74cf",
+    "left-window-detail.png": "d2000d23238b860cd7fe8dae9d1f3314604e8f4424eb9d09f6ecfef476df5164",
+    "north.png": "d20c1b63dfb843f3d656c153469520654b35071013dedc047c99cec23340a0b5",
+    "preview.png": "66f6a66244068926916aeb16eccd76e37d3fb690b11af1ea314e31856c3996db",
+    "rear-roof-detail.png": "640d534cad247c13f83739713c5a804a64098240b24848c56b935f8f1143861e",
+    "rear.png": "5e0706858dc21fb2523de28f3d73ff1d274fd3cbf5c6c31af88b524bf4e688c0",
+    "south.png": "86915f2995c31361da16d56df23cce1110ee2af5140da98e8f1f9752a9ffb177",
+    "top.png": "35adf1b5b7d317898a99e45521ef2e333c50bb10b29fdea27798965fdd2dd9bf",
+    "west.png": "f4a7e8b3d6cfcfd67b38602569c743678db91220da57e647a4d9645895d49b50"
+  }
+}
