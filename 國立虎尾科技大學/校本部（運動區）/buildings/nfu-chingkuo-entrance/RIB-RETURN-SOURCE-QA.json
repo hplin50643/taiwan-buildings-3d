@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_INDEPENDENT_REVIEW_PASS",
+  "sources": [
+    {
+      "url": "https://pe.nfu.edu.tw/uploads/archive_file_multiple/file/69772c144eae3513c06d9791/%E9%AB%94%E8%82%B2%E9%A4%A8%E5%9C%96%E7%89%87.jpg",
+      "sha256": "a7449842e17c8b1574745afdc21cbec19ce77ade501ace69c2bb3f4ae1082cdc"
+    }
+  ],
+  "observation": "Reinspection of original4032x3024 official exterior photo at native pixels: five central rib lower surfaces and the four left/right inward-facing vertical sides show restrained pale-cream family. Not a new photograph or new angle.",
+  "inference": "Existing rectangular rib proxies use approximate depth and joint shape; mapping extends the visible color family over each bounded original full face, not measured per-vertex evidence.",
+  "scope": {
+    "original_faces": 14,
+    "new_bottom_faces": 10,
+    "new_inward_side_faces": 8,
+    "colored_faces": 32,
+    "neutral_faces": 3406,
+    "triangles": 3438
+  },
+  "excluded": "x+/-48 bottom and side domains due real bracket/junction mismatch; central rib both sides; outward-facing sides; outermost ribs; whole canopy; artificial rear; glass; banners; stairs; all other unlisted faces.",
+  "historical_source_register": "qa/rib-return-previous/COLOR-SOURCE-REGISTER.json",
+  "limits": [
+    "Nominal uncalibrated sRGB, shadow not separate dark material.",
+    "Original20mm entrance section is illustrative, not full gym/rear measurement.",
+    "Unknown capture date; not2026 current condition.",
+    "Private reference only; no public photo/texture/rights warranty."
+  ],
+  "current_independent_review": "RIB-RETURN-INDEPENDENT-QA.json"
+}

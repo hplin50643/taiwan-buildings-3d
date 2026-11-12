@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "review_scope": "Builder personally viewed one official high-resolution actual entrance photograph,original code/preview and all ten final renders;parent separately reviews before freeze.",
+  "checks": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": true,
+    "SCENE-QA.json": true,
+    "DELIVERY-QA.json": true,
+    "BUILDER-DOMAIN-QA.json": true,
+    "ORIGINAL-RETENTION-QA.json": true,
+    "PUBLIC-TEXT-PRIVACY-QA.json": true
+  },
+  "visual_findings": [
+    "Whole original y=-10 plane18 gives9 complete2triangle edge components; central7 selected14palecream3424neutral.",
+    "All859coplanar domainsuniform; original exposedz65..69.099998 Boolean bounds retained, no clipped domains or normal filter.",
+    "High-resolution official actual photograph only,captureunknown/no2026claim; failed PDF not used.",
+    "Outer2ribs and all rib sides/undersides,large title canopy,glass/curtains/frames,lettering,banners,columns,stairs/roof/back remain neutral.",
+    "Sevenwholeviewsfit;threecloseups show true central7ribfrontends and both inner sidegroups.",
+    "Original3438triangles/STL/build unchanged,17immutablefiles,noOBJ,originalREADME retained,count_delta0.",
+    "Explicit3MF/scene/scripts NFU Chingkuo Entrance partial color; original20mm entrancecutdepth illustrative notwholegym/rear survey."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "file_sha256": {
+    "README.md": "023ee68908d16ef0dd5f989cb960a1150f8df80f5d85cf2c534878be1af0c007",
+    "README.zh-TW.md": "023ee68908d16ef0dd5f989cb960a1150f8df80f5d85cf2c534878be1af0c007",
+    "colorize_model.py": "3e3261741232267d0c443dd5d80520a16ab1222e1f0e2b90c9721293a5df45a3",
+    "render_color.py": "8a9bbf3d4b7f1321654ad15eff9ce41fb1bf2eea146a4e3dbc78d62f08e98d55",
+    "color-mesh.npz": "cd51ca7f818ba9d1bb6fe8d85968901740c94da5c213c4e8c4e78d7124103b2f",
+    "palette.json": "743a175f6d76e6258461c7bd81a451446f33310b90722175e5f96896de81eb74",
+    "appearance-materials.json": "e10b4a8c9d8e37850d23a0d5d056c10128919de143b059477517105139d349a4",
+    "COLOR-SOURCE-REGISTER.json": "7f5d1482ea61dd6cdfaadc4dcaca480892a62a49930342d671ff69b182fe9c76",
+    "model.stl": "99578e16887d6d610bd1b7a1f132337bb002a133f816ff6cdce136b34ebc5e3d",
+    "build_model.py": "1f3f0bbd80a50f2b4d4701f90952472fa33dc5b3ac2be63353da9035fb394006",
+    "preview.png": "3b40c50bf3f27c7074a2a2e65cc721e927cbeea1a32cc5765be53bd3f30340e6",
+    "rear.png": "01fe1e748872508c8a913730467542079aa2f763ca1cdf00f6858e2eb9fdcd97",
+    "front.png": "2ff65cabfe877bdf8d20ba0e7a90117adaa95304d1068d9ff9f47709d719a1ec",
+    "back.png": "7bccc23fc04d0083b2436b0eea170637d433f82fc409feb5d4d87c1e702761df",
+    "west.png": "69851a5afe7601c4dc40c2985ab841f17b47f219df38b0361d1a73006a7d9a5a",
+    "east.png": "215722a95b0fa885ef9d8db3d8f891d3662ba5d31c2d08517b5f46368b0ed03b",
+    "top.png": "ab2a678df1f56b73f4dd4bd884259837cf5ea5dce1b7a3a74d145d0dba802a0d",
+    "entry-detail.png": "ee18d51f030f989a7fe0ef3eb82ff67e6244755170a83d8ab96748b8545a571e",
+    "facade-detail.png": "b94e112132bafc00cef96c4f1255e58373cd1abc8d2b2e475fc732b336646ff1",
+    "roof-detail.png": "5f995c2b91f80a869a6f2e2073881fe26ef5ac097f15dbab0408d6f97f43f2b3"
+  },
+  "qa_sha256": {
+    "COLOR-FORMAT-GEOMETRY-QA.json": "8a95b440c439b7e54df7789d3701f92aa839c0459f05ca7e8f3a90a86e645b07",
+    "SCENE-QA.json": "1b62efac604ff86acde0c0669ade91c00a217c0be33ab8a2f66706c8276cee22",
+    "DELIVERY-QA.json": "61cbc79d1c73882c11a24551fa4d906b4a0c21235090a1081de4216260b0cc9c"
+  },
+  "root_qa_sha256": {
+    "BUILDER-DOMAIN-QA.json": "a0431617e7006d0c87f6097776a0ac7bcfafa1b273817a47c7b57db04bf3f187",
+    "ORIGINAL-RETENTION-QA.json": "0377cf909947063bc04762560acdd190de47f4bc9693af59103a8868966735f2",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "4737a22385a5f46259df7d8f862c5db9687551c5aa8c9c8d13e57bc78cd7d9e2",
+    "INDEPENDENT-DOMAIN-0759.json": "db88ae991c38d51591fb76df8104246225b999472971d15349415caaae647420",
+    "INDEPENDENT-IDENTITY-0759.json": "a521ec47823a45f9c9a9c39cbf34092c5f9dc31f72447278f56cd0e984f4daf4",
+    "INDEPENDENT-PACKAGE-IDENTITY-0801.json": "2f83addc03fdd37b3375caab897ded54ed1004f88a7ccc156e14ff5cd1d1cb46"
+  },
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T08:01:50Z",
+  "parent_review": "Parent personally viewed official high-resolution entrance photograph, originalcode, preview and final ten-view montage0801. Whole original y-10 plane18 exactsharededge nine complete2tri rectangles; independently match seven original central ribcenters x-48,-32,-16,0,16,32,48 width1.5 and select14 entirefaces. Outer two photo-cropped components entirely neutral, no trianglewedge or arbitrary cutting. Exact rawtriangles equal NPZ14 ivory; other3424 neutral including lettered big canopy, glass, flags, ribundersides and sides. Original3438triangles17files/noOBJ unchanged,859coplanar domains uniform. Sevenwholeviews framed; threecloseups show seven-rib overview and left/right centralgroups. Explicit NFU Chingkuo Entrance actual3MF/Blender/four scripts/README/paletteRGB independently checked. Entrance segment not wholehall; PDF503 not used, partial not current2026/countdelta0."
+}

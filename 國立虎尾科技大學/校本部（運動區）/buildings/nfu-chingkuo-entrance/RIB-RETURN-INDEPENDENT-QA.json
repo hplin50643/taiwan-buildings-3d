@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T10:29:59.206442+00:00",
+  "scope": "18 original central-five-rib bottom/inward-side faces only; same-photo native-pixel bounded reinspection",
+  "blockers": [],
+  "numeric_checks": {
+    "status": "PASS",
+    "checks": {
+      "vertices_exact": true,
+      "faces_exact": true,
+      "3438_triangles": true,
+      "original14_preserved": true,
+      "18_new": true,
+      "counts": true,
+      "model.stl_unchanged": true,
+      "build_model.py_unchanged": true,
+      "per_rib_selected_counts": true,
+      "exact_change_mask": true,
+      "new_faces_to_cream": true,
+      "all_other_indices_unchanged": true,
+      "no_coplanar_split": true,
+      "nine_whole_domains": true,
+      "3mf_vertices": true,
+      "3mf_faces": true,
+      "3mf_materials": true,
+      "official_photo_hash": true
+    },
+    "per_rib_counts": [
+      4,
+      4,
+      2,
+      4,
+      4
+    ],
+    "mesh_sha256": "4eebf3cb555dc4e883be086025cb621daa11e23a5f19a29852ccf667a8eaa129"
+  },
+  "scene_checks": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "two_material_slots": true,
+      "palette_0": true,
+      "palette_1": true
+    },
+    "scene_sha256": "4a1f166516130d63cb55db3e500ba4145293e1c01b5c4276f35556191e6f267b"
+  },
+  "face_counts": {
+    "total": 3438,
+    "original_preserved": 14,
+    "added": 18,
+    "colored": 32,
+    "neutral": 3406,
+    "new_bottom_faces": 10,
+    "new_inward_side_faces": 8,
+    "complete_new_coplanar_domains": 9
+  },
+  "findings": [
+    "Actually inspected native-pixel upper-facade crop from original4032x3024official photograph. Middle five simple ribs show pale cream undersides and inward-facing visible sides; source hash matches original.",
+    "Rejected expansion at±48where real sloped/curved pier connections differ from rectangular proxies. Original14front ends remain, without claiming renewed geometry certification.",
+    "Independently reconstructed finite boxes and selected five bottom planes plus inward sides at±16/±32: per-rib counts4/4/2/4/4, exactly18new faces across9complete coplanar domains. All other indices unchanged, no coplanar split.",
+    "Original3438triangles and STL/build bytes unchanged. Original package has noOBJ.3MF geometry/materials match candidate.",
+    "After ten renders and scene save completed, actually inspected all ten final images in two private montages. Also inspected supplementary low-soffit.png at full size to see central bottom faces from below; no unintended broad soffit or neighboring-domain color observed.",
+    "Low-soffit uses temporary camera/fill illumination only; saved scene hash verified unchanged afterwards. Original/final scene independent reopen checks pass geometry/materials, two shader palettes, camera/lights/render settings and hidden notices.",
+    "Documents distinguish same-photo reinspection from new source imagery, finite visible material family from simplified depth/joint inference, and entrance fragment from whole gym.",
+    "Reinspected final supplementary low-soffit image after temporary fill-light adjustment; central five undersides remain bounded and visible. All ten standard image hashes and saved scene/model hashes remain unchanged. Source QA final PASS status and independent-review pointer checked; evidence scope/counts/exclusions remain consistent."
+  ],
+  "image_sha256": {
+    "preview.png": "d7b96bfd71bda7e5df070d105b45c1758c488959ba67701ebf0c7e1399573363",
+    "rear.png": "46bfbce43df7d8c411bc17940cd1d3ef57379a24ff7ccf6649bdc78e3698a19b",
+    "front.png": "88ee259305c4ecdbc32f9a092f6e4acd28195574a4436cbd6eb2aca795400a71",
+    "back.png": "118ac326e17346370ebea629aa991037e6f9ba4bd356943f38f8b54c75e5dd1b",
+    "west.png": "6864696673d2ca572c4e7290855f4cc82a682a7606e645fff21013fb2a90bbd5",
+    "east.png": "a015ebfa56baef7bf9ff8a413e131292febf18cd4a68eaa7231d0c2c3bf5a3b4",
+    "top.png": "781320d407dd7e81fd4152f5daa77c9734d0e71211792bda3b626655ee8ef848",
+    "entry-detail.png": "ae452c6e5eccec236c2f8671594dfbb4fcb6e7b43b9c76fa8077f4680ee56433",
+    "facade-detail.png": "7d2c9fdd628340090419198b13afc294b76c5ebd4a94cdb6347274c7523b1b35",
+    "roof-detail.png": "1528f5802d248a1b041f1becab9052d951448d4816dab4798b82c22a0121e781"
+  },
+  "supplementary_private_image_sha256": {
+    "low-soffit.png": "a547f154651017680963895d30406be04981eb1b39f76bde6e6a1b96a30d2c9b"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "4eebf3cb555dc4e883be086025cb621daa11e23a5f19a29852ccf667a8eaa129",
+    "appearance.3mf": "cdf9e1605a315089ecff28d8bc5f996277e58adfbee4730c9326b438658330cf",
+    "scene.blend": "4a1f166516130d63cb55db3e500ba4145293e1c01b5c4276f35556191e6f267b",
+    "colorize_model.py": "77a505a18a6a666926ef529adf8221f00f2d4d5e6b81c79112623b007a5b7c63",
+    "RIB-RETURN-SOURCE-QA.json": "460947bc39ee6d411c8bf7218a82b29fd031f120f8eaf4e52e665ff537d6444e"
+  },
+  "source_sha256": {
+    "official-exterior.jpg": "a7449842e17c8b1574745afdc21cbec19ce77ade501ace69c2bb3f4ae1082cdc"
+  },
+  "limitations": [
+    "No new±48side/bottom, outermost ribs, central rib sides, reverse sides, artificial back cut, whole canopy or other surface coloration.",
+    "Original20mm facade-section depth and rectangular rib connections are approximate, not surveyed complete gym geometry.",
+    "Nominal cream uncalibrated; shadow differences are lighting, not dark material.",
+    "Same existing photograph newly examined at native pixels; capture date unknown, not2026condition guarantee.",
+    "Private supplementary render is model QA, not reference photography or one of standard ten deliverables.",
+    "No physical print or validated multicolor slicing; original photo/crops stay private."
+  ]
+}
