@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in fju-fahy-memorial-building-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "d1deb8ca42725bed699f42e673c99d215528d80265be8df25f98d55ba39724da",
+    "east.png": "6ffc46cc2af64b5a0a2a1e51943fc7e84f9cb5ef0ba63a7018930d713dedb5a7",
+    "entry-detail.png": "6044f662855f35af3f34502245a71d5b36e35f320bb59fb2e82e06777cf7c3cc",
+    "facade-detail.png": "6cd4788fd580f897de9de1682d134706e8e35159aaea7760b85cc70f8439336a",
+    "front.png": "a45d94bf765cfb1c714776a9cc0d936fadf7f57b78fcdf9128eee0a6a97702e1",
+    "preview.png": "a4f73ef7ba015946201208bb67b1911a18b3113b295fc85874929dba563fb7a2",
+    "rear.png": "7a222447750e4df476854c05d27fb9aa0447495f30a9baa8b19a60de0ff005fb",
+    "roof-detail.png": "e771cbd80ccabfb85e4a75a94504438536b9e5b57391bc0526a77955d0a086d3",
+    "top.png": "7b422e356761970414393c1c4a4a9b3a172a47e9e03f3a0f534a104e23da961b",
+    "west.png": "1922ec2d24fcf7ec61dd75ca5a91b4b512498bb2a3022b10e9ab8a2453af132a"
+  }
+}
