@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in vnu-renai-rhb-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "8c72d3556902cf25a98ab19aff0eaf62edf4f7920cac61f836b1b0923aa04405",
+    "east.png": "83d952ca6acf06f9247f01c7ac4ad5fb53c80d21b7c4832170b182c668edb0ce",
+    "entry-detail.png": "3f77dddc15fccce6e2ecba4ad2fff79b32f4667a5e6bc40fe453c50d03dabd0d",
+    "facade-detail.png": "ca30b8039a84a99226d0ee6bd33c0691ce927d396e79ea51c5285beb01e1c7af",
+    "front.png": "d61a2fc4be416e815ccfbd8bf234f3fc27926e9469b66b0c01c0f95bca99ea8d",
+    "preview.png": "51bcd0492c5fb26495e1838cecf68bbac46a4848dd54830b261876e06b1c8a08",
+    "rear.png": "ef5e51f349d335afc90fe10010965cc1d207095b71943643b14fe1bfa5db30b0",
+    "roof-detail.png": "8d2dde092629c5d4a68750cc3763066fce55c1a31fb4bf074f3806bd90b381e1",
+    "top.png": "ebcdd60fe37e3dbaf9aab2d176880762d1d7c79fd73d4e22e227f969f1d30857",
+    "west.png": "0bdd112c4ce8a4dd7e6c3413cee8db307a795921ac92fc3939a000aca6b61b92"
+  }
+}

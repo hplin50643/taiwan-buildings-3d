@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in vnu-hongdao-e-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "cedd4b762de81e83f2cc4e040c71e7d00ffd23322c5931a06c0d588f2e73e7d1",
+    "east.png": "7b01a0f69854ed55e459c49eff7d1fc2e3958d80a3b626569765e1842e6a290d",
+    "entry-detail.png": "831f090f7e56c039fad90a9591244837ce3fa45ceb75d9efae850ddaf2d760ea",
+    "facade-detail.png": "08b2a6aeba720fd52d645701669a82c024ca447bd686611c45b683dce32058ac",
+    "front.png": "784517488b3d42462a34aa7c2a18931a13e7616b1b976678ed6dc39936c88d0b",
+    "preview.png": "4d6e1f625027f265a7a786d35d2d2b6e79ffc6767c75991037c070a7da786384",
+    "rear.png": "6e5c163467189e7740a583f2f9e11084bc3460b52d685bcec2c2190a69bbead5",
+    "roof-detail.png": "40fd7d9fc103e08ca451363716af032c86b2bfa696cb9e754db2f52037ba3844",
+    "top.png": "df98645b67709f92a35612c01aa8d0442316d7e0439786a405fd7ee5f18d475f",
+    "west.png": "31f4cfa73b9e3924a84e0a40ac255f9e84d4307443160327748af1a3c85179ea"
+  }
+}
