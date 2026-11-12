@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "Bounded service wall top cap front update, not full color or geometry certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 13806,
+  "original_color_faces": 2134,
+  "new_color_faces": 2,
+  "colored_faces": 2136,
+  "unknown_neutral_faces": 11670,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 0,
+  "current_mixed_connected_domains": 0,
+  "current_independent_review": "SERVICE-CAP-FRONT-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only2original triangles[13393,13398]/1whole domain of highest servicewall cap front toward rooftop court atx43.5,y[-24,24],z92..93.7 use original gray family. Newly retrieved official sports-office stadium-10.jpg2256x1496 photograph separates thin gray top front from brick below. No lower2bands,mainwall,side,top,back or entry canopy extended. Original19depth/48width/1.7thickness remain coarse proxies, not surveyed fidelity. Original13806triangles/3palette entries/all other indices unchanged.",
+    "Photo capture date not established, no2026condition or calibrated paint claim. Source photos private; original geometry and source limitations remain, no full color/printability certification or physical print."
+  ],
+  "checked_at": "2026-11-12T16:43:46.049247+00:00",
+  "original_STL_sha256": "1401a0086b52e77230373c2d3372ef387d91c6ffe3c556a834ac6c744d3bf90e",
+  "color_mesh_sha256": "30928e4720af0a4cecf086a708b5dc8ba0a55b78957de5d81a6d671e9ce899d7",
+  "images_sha256": {
+    "preview.png": "2e96463e59530a64dc947c502d38bb58c1de55ca9201ce50d1f5712a498b4fd9",
+    "rear.png": "7dadbe22ea8ccafc6669409e833270fa8f86d952eb3dd1d17bbfc6ae85b39909",
+    "front.png": "c865d1c720ff4019be0842ec556cbec012049fea3718276ac46c3fdaa9d2d225",
+    "back.png": "2f03dd2c51555cce3752fdd68005c1691d8af2ec6cc0a21258bf08132ccef43e",
+    "west.png": "8825e6c1d62d77f080666d26f3ce52fdb4c587b97912404853aeedd87a9b06ef",
+    "east.png": "892a9749e749d8ccba36d2e26214cf9f565ceeba5d40a22ac25a8333a205fd08",
+    "top.png": "dcdbabcd4b61786d20178a5f448a6fe6bd86f5b269154e0058f3f935663542f9",
+    "entry-detail.png": "627ab3cee42c9e5b23dae293aa2b0a76550ea366c06d76ed2f4db3edfe02346c",
+    "facade-detail.png": "6c9a53b6e54bdfea3ce4c3a1a0891b0190682bb657fa4f704a2f726faa5d8b3e",
+    "roof-detail.png": "a751fb34cd1d30b1c91060f5d6eca40fcc2baad7317f3d4b5bdc44f88d00043a"
+  }
+}

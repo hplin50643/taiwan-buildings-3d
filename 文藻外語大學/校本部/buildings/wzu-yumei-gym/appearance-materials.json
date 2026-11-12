@@ -10,13 +10,13 @@
       "id": 1,
       "name": "Observed separate rim belts and stairs pale gray",
       "hex": "#B8BBB3",
-      "faces": 2122
+      "faces": 2124
     },
     {
       "id": 2,
       "name": "UNVERIFIED curved walls windows equipment and rear neutral",
       "hex": "#B8BAB5",
-      "faces": 11672
+      "faces": 11670
     }
   ],
   "domain_face_indices": {
@@ -2161,6 +2161,10 @@
       13798,
       13802,
       13805
+    ],
+    "service_cap_court_facing_front": [
+      13393,
+      13398
     ]
   },
   "court_components": [
@@ -3116,6 +3120,6 @@
     "Court only original enclosed top cells; groove sides and floors not painted white.",
     "Rim/belts matched actual 144-segment annulus surface, not boxes or height ranges.",
     "Entire connected coplanar mixed-coverage regions neutral; front scope is evidence coverage, not actual finish boundary.",
-    "Curved main walls, windows, supports and equipment remain neutral."
+    "Curved main walls, windows, supports and equipment except bounded service top-cap front remain neutral."
   ]
 }

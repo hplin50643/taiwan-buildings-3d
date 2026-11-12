@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in wzu-yumei-gym-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "2e1fba0fc0368da6bd1e705ef3657b76944334ee057558b33b3105ec24482126",
-    "east.png": "742ca93cbfe0d6472530a77b4958a6415b3f0109e354cde23d6f88f4fb831f17",
-    "entry-detail.png": "e5cef89668ed0e2db3d2036f920e2d407379b221debc9f34342ce8ed9e6fd42b",
-    "facade-detail.png": "8bf8b01f563b15f868679fcfc0470e2c0bcc38efaa6f51789e97fd64546f4b69",
-    "front.png": "6483a69ab15efd2af7f7fef193b3b840844d13510c15e0ff1b61d4318e425856",
-    "preview.png": "3c4dc98eb4ff7f3e8147b23eb0a3b6cd4f6cec5d8d1ad4394e2e9f3d441dc6b8",
-    "rear.png": "da92bc240f565b29800a7db1271b78984217b9673b49943bd404a81800f00669",
-    "roof-detail.png": "62042c97a64e6a9a7f7360022981f4f0f621965683a12a52b8253a1aa8ff425e",
-    "top.png": "06b2c6406b5c24e59c3bbc2b84ee6265210a458587b35dfc40f1c7cb3c611627",
-    "west.png": "575b97fa19ba41b43c5008bc88670e8cba1eb48328fae9d9f7243a92e5d4d849"
-  }
+    "preview.png": "2e96463e59530a64dc947c502d38bb58c1de55ca9201ce50d1f5712a498b4fd9",
+    "rear.png": "7dadbe22ea8ccafc6669409e833270fa8f86d952eb3dd1d17bbfc6ae85b39909",
+    "front.png": "c865d1c720ff4019be0842ec556cbec012049fea3718276ac46c3fdaa9d2d225",
+    "back.png": "2f03dd2c51555cce3752fdd68005c1691d8af2ec6cc0a21258bf08132ccef43e",
+    "west.png": "8825e6c1d62d77f080666d26f3ce52fdb4c587b97912404853aeedd87a9b06ef",
+    "east.png": "892a9749e749d8ccba36d2e26214cf9f565ceeba5d40a22ac25a8333a205fd08",
+    "top.png": "dcdbabcd4b61786d20178a5f448a6fe6bd86f5b269154e0058f3f935663542f9",
+    "entry-detail.png": "627ab3cee42c9e5b23dae293aa2b0a76550ea366c06d76ed2f4db3edfe02346c",
+    "facade-detail.png": "6c9a53b6e54bdfea3ce4c3a1a0891b0190682bb657fa4f704a2f726faa5d8b3e",
+    "roof-detail.png": "a751fb34cd1d30b1c91060f5d6eca40fcc2baad7317f3d4b5bdc44f88d00043a"
+  },
+  "mesh_sha256": "30928e4720af0a4cecf086a708b5dc8ba0a55b78957de5d81a6d671e9ce899d7",
+  "independent_visual_review": "SERVICE-CAP-FRONT-INDEPENDENT-QA.json",
+  "previous_qa": "qa/service-cap-front-previous/NO-TEXT-QA.json"
 }

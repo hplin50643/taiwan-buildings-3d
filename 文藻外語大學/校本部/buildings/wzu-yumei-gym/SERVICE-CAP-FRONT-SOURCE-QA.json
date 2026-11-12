@@ -1,0 +1,49 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Only original service-wall top-cap court-facing -X vertical face",
+  "selection": {
+    "status": "EXPLORATORY_NOT_SOURCE_GO",
+    "ids": [
+      13393,
+      13398
+    ],
+    "complete": true,
+    "domains": [
+      [
+        13393,
+        13398
+      ]
+    ],
+    "materials": [
+      2,
+      2
+    ],
+    "bounds": [
+      [
+        43.5,
+        -24.0,
+        92.0
+      ],
+      [
+        43.5,
+        24.0,
+        93.69999694824219
+      ]
+    ]
+  },
+  "original_triangles": 13806,
+  "original_colored": 2134,
+  "proposed_colored": 2136,
+  "neutral_after": 11670,
+  "palette": "Existing gray index1; original3 entries unchanged",
+  "source": "Official sports-office rooftop court image 206846479.jpg, freshly retrieved, undated capture",
+  "source_url": "https://c039.wzu.edu.tw/ezcatfiles/c039/img/img/1646/206846479.jpg",
+  "source_sha256": "3f3b6bbc3c61ad6c31bf5621746b3bf9592754d290adba56a2caec899e572724",
+  "reason": "Top gray stone-family horizontal front strip is visible above two brick fields across the service wall. Select only bounded original top-cap vertical front, not mid-wall strips whose original heights are not reliably aligned.",
+  "limits": [
+    "Original rectangular cap thickness/depth/projection are approximate. No geometry certification.",
+    "No top, side, rear, brick fields, middle horizontal strips, court columns or unknown canopy expansion.",
+    "Newly retrieved old public image, not a claim of recent capture."
+  ],
+  "historical_source_register": "qa/service-cap-front-previous/COLOR-SOURCE-REGISTER.json"
+}

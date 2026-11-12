@@ -28,7 +28,7 @@ def ring(rx,ry,ix,iy,z,h,front=False):
   elif abs(n[i,2])<.001:
    for poly in [outer,inner]:
     for k in range(144):
-     p0=poly[k];p1=poly[(k+1)%144];d=p1-p0;L=np.linalg.norm(d);cross=np.abs(np.cross(d,q-p0))/L;proj=(q-p0)@d/(L*L)
+     p0=poly[k];p1=poly[(k+1)%144];d=p1-p0;L=np.linalg.norm(d);cross=np.abs((d[0]*(q-p0)[:,1]-d[1]*(q-p0)[:,0]))/L;proj=(q-p0)@d/(L*L)
      if max(cross)<e and min(proj)>-e and max(proj)<1+e:ok=True;break
     if ok:break
   if ok:ids.append(int(i))
@@ -49,6 +49,14 @@ for c in cs:
  if len(set(a[c]))>1:neutralized+=c[a[c]!=2].tolist();a[c]=2
 D={'closed_court_cells':[i for i in court if a[i]==0],'upper_rim':[i for i in rim if a[i]==1],'front_belts':[i for i in belts if a[i]==1],'stair_tread_riser':[i for i in stairs if a[i]==1]}
 assert all(len(v)>0 for v in D.values())
+original=a.copy()
+added=(abs(t[:,:,0]-43.5).max(1)<.001)&(t[:,:,1].min(1)>=-24.001)&(t[:,:,1].max(1)<=24.001)&(t[:,:,2].min(1)>=91.999)&(t[:,:,2].max(1)<=93.701)
+assert np.flatnonzero(added).tolist()==[13393,13398]
+assert (original[added]==2).all()
+a[added]=1
+assert np.array_equal(a[~added],original[~added])
+assert all(len(set(a[c]))==1 for c in cs)
+D['service_cap_court_facing_front']=np.flatnonzero(added).tolist()
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((a==i).sum())}for i,(name,col)in enumerate(pal)],'domain_face_indices':D,'court_components':cellrecords,'coplanar_components':len(cs),'coplanar_neutralized_faces':sorted(neutralized),'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'13806 original triangles unchanged','limits':['Court only original enclosed top cells; groove sides and floors not painted white.','Rim/belts matched actual 144-segment annulus surface, not boxes or height ranges.','Entire connected coplanar mixed-coverage regions neutral; front scope is evidence coverage, not actual finish boundary.','Curved main walls, windows, supports and equipment remain neutral.']}
+q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((a==i).sum())}for i,(name,col)in enumerate(pal)],'domain_face_indices':D,'court_components':cellrecords,'coplanar_components':len(cs),'coplanar_neutralized_faces':sorted(neutralized),'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'13806 original triangles unchanged','limits':['Court only original enclosed top cells; groove sides and floors not painted white.','Rim/belts matched actual 144-segment annulus surface, not boxes or height ranges.','Entire connected coplanar mixed-coverage regions neutral; front scope is evidence coverage, not actual finish boundary.','Curved main walls, windows, supports and equipment except bounded service top-cap front remain neutral.']}
 (R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n');(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','original_STL_sha256':expected,'triangles':13806,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(q['palette'],{k:len(v)for k,v in D.items()},'cells',len(cellrecords),'neutralized',len(neutralized))
