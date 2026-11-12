@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nuk-sports-leisure-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "111b693ad7aac3a9ff95e5613c1609d6b122882e73b1399bd2e680971ae48fda",
+    "east.png": "2b7a53c7d689d123b9804c229083b06438cfc43d5086498e6298593812a547aa",
+    "entry-detail.png": "b1087d2461583482dd2f2c25d8ee9d941e80d6c8863efa31ce155c3354afa929",
+    "facade-detail.png": "1eb725635621b21d902a8c09f40377a9ec32ec0fabd7f64a0a2ed419c5ec994c",
+    "front.png": "e61c14fe7d2f8dfd8ce4c42cd9e3267ff81c0b5d41bd292e56712e060317f1ad",
+    "preview.png": "fb76b7eafb1280631439d13ad09ae458ceb338f3dcb647f1b6860a149223fcfa",
+    "rear.png": "da6b6631fe8c242f1b90806a686258795bb35a637bffec719af3f8f2615e66c5",
+    "roof-detail.png": "de3e93269b0e6c05b8d6356877168014a653058e4a0fd7be450b57ca7a6f8419",
+    "top.png": "c6a0225659dbe18aaada7fab906a03a00d1bed4cb481ae51aca4f17ff5cc2754",
+    "west.png": "f18aef9c64ed0be721c00f1a1cf7b082ee7e924940b0dfb57722bf59fbbb73e6"
+  }
+}

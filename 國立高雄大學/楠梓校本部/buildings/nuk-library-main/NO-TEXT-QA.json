@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nuk-library-main-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "eac7f8848e5f50bc1f4c615285637139bea5313148980f93a8e334c909f3a43e",
+    "east.png": "98ad10966b48d5bf8dedd7ce149cdda009ff7dc056af61ee35b4f507d17d227f",
+    "entry-detail.png": "0f1cfa88d1896abccc7d8ba15e8adee2deeca3024526af5775b4495badb218a1",
+    "facade-detail.png": "e5c0ec06b955bb771c6c8de6a0c31126c64d13da29b2024a2e626a3fe4024679",
+    "front.png": "661bb966809ba3ff5361cdaec9b74edcf8b0a8e170430a578378d64a2b93f94e",
+    "preview.png": "68ddf7839bfaaefd846d1c60659b2562e066017026fc8774b327e3bb1dc1b7e6",
+    "rear.png": "3253f79be8d44d1111b379ef30358ad94cd7d2b9f5c928508c191cb33474d871",
+    "roof-detail.png": "042a417d5b6896d00ff386b5a5bdf9c1ed680b6b94812334da53a66018646edb",
+    "top.png": "e883abd35f371d5e15a5a9be98218338c993580c8d54dd4554884c9b2e54f547",
+    "west.png": "bd521cec94fbf59e4fb8421dc4b6ae58202d5b2fcb8cde9607d7399dbe2b58d5"
+  }
+}
