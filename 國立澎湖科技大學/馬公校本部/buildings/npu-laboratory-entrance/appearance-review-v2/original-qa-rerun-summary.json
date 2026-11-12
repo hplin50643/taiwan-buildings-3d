@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "run_at": "2026-11-12T01:56:25.454730+00:00",
+  "method": "Unmodified original QA scripts rerun on byte-identical original model.stl and scene.blend in a separate directory, with exact original requirements versions.",
+  "steps": [
+    {
+      "script": "validate_model.py",
+      "exit_code": 0,
+      "original_script_sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95"
+    },
+    {
+      "script": "check_contour_validity.py",
+      "exit_code": 0,
+      "original_script_sha256": "fbcaa1fa0a0828f165011001a13deb10c087d9c10b6c5d7c2aa5db7b5a3209fa"
+    },
+    {
+      "script": "check_thin_features.py",
+      "exit_code": 0,
+      "original_script_sha256": "3dd114762029616be9faa1e0cf5e05254781de412e1e5730834b6cad12e0ed3c"
+    },
+    {
+      "script": "check_recess_rays.py",
+      "exit_code": 0,
+      "original_script_sha256": "2aed9fd1a425fb1e19e1962710921b21208fece90e0ebb39c6ff73f33afc21c9"
+    }
+  ],
+  "limitations": [
+    "Digital checks only, not physical test print or slicer toolpath.",
+    "Original overhang and support-removal caveats remain."
+  ]
+}

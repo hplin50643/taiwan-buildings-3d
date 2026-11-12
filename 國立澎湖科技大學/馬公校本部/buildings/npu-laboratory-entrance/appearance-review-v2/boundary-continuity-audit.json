@@ -1,0 +1,308 @@
+{
+  "status": "passed",
+  "analytic_original_stair_end_area_mm2": 87.0,
+  "method": "Independent Shapely triangle-polygon difference against the union of original four staircase profile bands. Every changed triangle has negligible zero-tolerance residual area outside the true stepped support; no centroid selection. Original x=-68 closure rule had accidentally caught real stair ends.",
+  "changed_stair_left_end_triangles": 49,
+  "changed_triangles_area_mm2": 86.99999713897705,
+  "full_triangle_support": [
+    {
+      "face": 1971,
+      "triangle_area_mm2": 1.8000001907348633,
+      "outside_original_stair_profile_area_mm2": 3.814697067067802e-07
+    },
+    {
+      "face": 1972,
+      "triangle_area_mm2": 3.3481483459472656,
+      "outside_original_stair_profile_area_mm2": 2.0210991170446072e-14
+    },
+    {
+      "face": 1973,
+      "triangle_area_mm2": 0.17722925466114248,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1974,
+      "triangle_area_mm2": 0.6809333257060644,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1975,
+      "triangle_area_mm2": 2.5802474174970484,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1976,
+      "triangle_area_mm2": 0.0550756366819769,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1977,
+      "triangle_area_mm2": 0.6274133748393069,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1978,
+      "triangle_area_mm2": 1.0826772126551987,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1979,
+      "triangle_area_mm2": 0.3489755437772146,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1980,
+      "triangle_area_mm2": 1.3761699227407007,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1981,
+      "triangle_area_mm2": 0.28340682169391584,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1982,
+      "triangle_area_mm2": 0.511716262308255,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1983,
+      "triangle_area_mm2": 0.49929554068421567,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1984,
+      "triangle_area_mm2": 3.3629686104422944,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1993,
+      "triangle_area_mm2": 2.1999998092651367,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1994,
+      "triangle_area_mm2": 0.38260841369628906,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1995,
+      "triangle_area_mm2": 3.0289862370145784,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1996,
+      "triangle_area_mm2": 0.06149075075700239,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1997,
+      "triangle_area_mm2": 1.2132345087388785,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 1998,
+      "triangle_area_mm2": 0.47018393191046925,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2008,
+      "triangle_area_mm2": 0.245962708040679,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2009,
+      "triangle_area_mm2": 1.4142864908490083,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2010,
+      "triangle_area_mm2": 1.04643349948401,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2011,
+      "triangle_area_mm2": 0.07462278086131846,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2012,
+      "triangle_area_mm2": 0.4336073423446578,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2013,
+      "triangle_area_mm2": 0.11835732559848111,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2014,
+      "triangle_area_mm2": 0.46497556092072045,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2015,
+      "triangle_area_mm2": 0.15714232581012766,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2016,
+      "triangle_area_mm2": 0.061111045766665484,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2017,
+      "triangle_area_mm2": 1.4259245589928469,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2018,
+      "triangle_area_mm2": 4.242856979370117,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2020,
+      "triangle_area_mm2": 0.22764030963753612,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2021,
+      "triangle_area_mm2": 0.7882499102925067,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2022,
+      "triangle_area_mm2": 3.4957178473396198,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2023,
+      "triangle_area_mm2": 10.919115543365479,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2024,
+      "triangle_area_mm2": 2.0851648079169536,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2025,
+      "triangle_area_mm2": 6.75000080195332,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2026,
+      "triangle_area_mm2": 1.4090895219283084,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2045,
+      "triangle_area_mm2": 1.0591406467146953,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2054,
+      "triangle_area_mm2": 0.2883775597338172,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2055,
+      "triangle_area_mm2": 3.639704579465615,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2056,
+      "triangle_area_mm2": 3.0509314563446424,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2057,
+      "triangle_area_mm2": 0.6308770288205778,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2058,
+      "triangle_area_mm2": 1.0169766878998416,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2059,
+      "triangle_area_mm2": 8.249999284744263,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2060,
+      "triangle_area_mm2": 0.10008792693224677,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2061,
+      "triangle_area_mm2": 0.4421638688127132,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2062,
+      "triangle_area_mm2": 0.8207183425402036,
+      "outside_original_stair_profile_area_mm2": 0.0
+    },
+    {
+      "face": 2063,
+      "triangle_area_mm2": 8.249999284744263,
+      "outside_original_stair_profile_area_mm2": 0.0
+    }
+  ],
+  "retained_neutral_faces": 45,
+  "artificial_wall_side_rear_and_top_faces": [
+    41,
+    47,
+    56,
+    57,
+    61,
+    62,
+    73,
+    86,
+    105,
+    118,
+    119,
+    120
+  ],
+  "base_faces": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "all_originally_colored_faces_preserved": 2196,
+  "all_existing_glazing_and_frame_faces_preserved": 1183,
+  "actual_vs_inferred": "Official photo shows grey steps and existing glazed entrance; hidden left-end material continuity is inferred from the same staircase. Artificial x=+-68 wall cuts begin at y=0 and are not the protruding negative-y stair end.",
+  "new_windows_or_geometry": false
+}

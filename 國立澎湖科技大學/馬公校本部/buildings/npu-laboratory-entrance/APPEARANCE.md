@@ -1,30 +1,40 @@
-# 實驗大樓入口局部｜彩色外觀增補
+# 澎湖科大實驗大樓入口段｜階梯端面補色 v2
 
-## 同一幾何，新增材質
+## 本次範圍
 
-本件仍為入口門廊及後方前兩層立面段，不是全館、不是完整兩層建築。原 1,143 頂點／2,290 三角面／transform／150 × 78 × 81.6 mm 完全不變。原 STL、scene.blend、build_model.py、render_preview.py、五張原預覽與QA紀錄保留，不新增構件、切面、細字、磁磚刻紋或植栽。
+只把 49 個原中性三角面補為原有的階梯石材色，總面積約 87 mm²。位置是 x=-68 mm、y=-44.5 至 -17.5 mm 的真正階梯左端。原 v1 程式對所有 x=-68 面套用「人工側切面」規則，誤把伸出建築前方的階梯端面一起中性化。本次區分真正牆體裁切與原階梯構件，不把整個 x=-68 平面一律上色。
 
-原照片可見更高退縮窗帶、山牆、屋面；那些從原模型即排除，本次不加回。背面 y=20、左右 x=±68、上界是人工截斷，配中性灰，不冒稱完整真實側後面。
+完整三角形須位於原四級階梯的折線輪廓內。生成器以 YZ 多邊形裁切核對完整覆蓋面積，獨立審核另用三角形減去階梯輪廓聯集，核對越界面積接近零；不是依面中心點推算，也沒有切分網格。
 
-## 官方照片與色彩限制
+原 2,196 個有色面不變，包括 1,183 個既有玻璃／門窗框面；八種材料的 RGBA、Base Color 及 roughness 全數保留。1,143 頂點、2,290 三角面、150 × 78 × 81.6 mm、物件 transform、原 STL 與 scene.blend 均保留，未增窗、門、文字、細框、貼圖或幾何。
 
-[官方實驗大樓導覽](https://www.npu.edu.tw/tour/Details.aspx?Parser=13%2C4%2C34%2C%2C%2C%2C11)所列[入口近景](https://www.npu.edu.tw/df_ufiles/034/s_r0345943(1).jpg)是本次直接視讀配色依據：淡米灰磁磚牆、近白門廊與柱、淡綠灰玻璃、偏暖銀灰框、深灰棕右棚梁、淡灰綠棚板和中性石階。不是海事大樓照片。
+## 直接證據與推估
 
-導覽頁更新日 2018-09-06，不是拍攝日；照片拍攝日期未知，不能代表2022屋頂工程後或2026現況。RGB為照片近似，不是校準色卡或施工塗裝規格。玻璃/棚板以不透明顏色代理，不是透明材質/室內重建；底座是原人工平板，不畫成真實草坡。來源照片及PDF未包含於公開包。
+本輪重新下載並親看[澎湖科大官方入口近照](https://www.npu.edu.tw/df_ufiles/034/s_r0345943%281%29.jpg)：近白門廊、兩圓柱、淡米灰磁磚牆、五組前方門窗、右側深框雨棚及灰色階梯，與原模型的入口段相符。既有窗色是不透明的玻璃／反光近似，不是純玻璃色或透明認證。
 
-## 格式與重建
+階梯踏面／立面及材質類別可直接辨識；左端受畫面邊界、視角及植栽限制，新增端面色是同一階梯材料連續性的合理推估，不能稱逐面照片證實。使用原階梯材料，不用照片陰影另造黑帶或改動原色。
 
-新增 `appearance.blend`、逐三角面 base-material 的 `appearance.3mf`、`appearance/` 五彩圖。3MF保留同一原頂點及面索引，不重新取樣、拆面或Boolean。不提供特定AMS/多噴頭耗材映射；軟體需支援3MF材質顯示，切片時仍需設定機台工具/材料。
+官方照片 SHA256 與原 v1 來源登錄一致。拍攝日期未知；導覽頁 2018-09-06 更新日不等於照片拍攝日，也不代表 2026 現況。原平面圖、廣場／後側照片及 2022 屋頂整修會議本輪未重新讀取。詳見[本輪來源登錄](appearance-review-v2/source-register.json)。來源照片僅私人研究，不附入模型包、不作模型貼圖。
 
-使用 Blender 4.3.2：
+## 仍保持中性的範圍
 
-```sh
-MALLOC_ARENA_MAX=2 LP_NUM_THREADS=1 OMP_NUM_THREADS=1 blender -b -t 1 --python-exit-code 1 -P build_appearance.py
-blender -b --python-exit-code 1 -P verify_color_geometry.py -- scene.blend appearance.blend appearance-geometry-QA.json appearance.3mf
-```
+保留 45 個中性面：33 個底座面與 12 個人工牆側／背／頂封口面。真正牆側 x=±68 位於 y≥0，背面 y=20，頂面 z=79，均不補色為實際立面或屋頂。階梯端面位於負 y，與這些牆體切面在空間與用途上不同。
 
-第一步只寫新增appearance檔／新彩圖，不寫原 STL／scene／原預覽。CPU Cycles32 samples、seed0、單執行緒；PNG去除全部文字metadata（含檔案路徑、日期與計時），保留影像IDAT像素。3MF固定ZIP時間及完整double精度座標。Blender容器metadata可能不同，clean rebuild比對其幾何/材質語義，不假稱BLEND二進位必然相同。
+本件仍是門廊與前兩層立面局部，不是整棟建築，沒有增高到山牆或補造側翼。模型 −Y 是入口前方；不賦予未核實羅盤方位。照片中細磁磚縫、字牌、欄杆、燈具、植物及更高退縮窗列均未新增。
 
-## QA與列印限制
+## 重建與驗證
 
-原網格/transform不變、3MF與BLEND逐面材質一致、調色sRGB→linear、五視圖及獨立clean rebuild另附檢核。原QA仍適用於同一幾何，但這次不把單純配色說成新增全面厚度保證。原0.8mm opening等數位篩檢不是Cura/Prusa工具路徑驗證；未實體試印，不保證免支撐、必然可印或真實建築安全。門廊頂板、雨棚、挑梁仍需切片支撐/橋接檢查。
+原 scene.blend、model.stl 與更新 build_appearance.py 同層，以 Blender 4.3.2 執行：
+
+    blender -b -t 1 --python-exit-code 1 -P build_appearance.py -- --skip-render
+    blender -b -t 1 --python-exit-code 1 -P render_review.py
+
+七張終圖與兩張原材料同相機比較均為 Cycles CPU、96 samples、單執行緒、900 × 800、無降噪、無文字印記。原色比較只還原面材質索引，相機、照明及材料數值相同。七視角：斜前、人工背切面、正面、同來源低角、左、右、上視。舊五張 previews 及 v1 appearance-review 保留不變；本輪有效審核位於 appearance-review-v2。
+
+[逐點逐面／材料／3MF 核對](appearance-review-v2/model-verification.json)、[完整面支撐範圍](appearance-review-v2/boundary-continuity-audit.json)、[乾淨重建](appearance-review-v2/clean-rebuild-equality.json)、[九圖檢視](appearance-review-v2/color-continuity-review.json)分別記錄。新 appearance.blend 無文字物件／文字區塊、外部照片、linked libraries 或絕對渲染路徑。
+
+原 validate_model.py、check_contour_validity.py、check_thin_features.py、check_recess_rays.py 在獨立目錄以原樣腳本及原固定版本依賴重跑；結果見[本輪原 QA 重跑](appearance-review-v2/original-qa-rerun-summary.json)。檢查包括重建 STL 雜湊、封閉拓撲、原 scene/STL 同形、408 層 0.2 mm 輪廓與 opening、13 項原面射線。0.8 mm opening 最大面積損失約 0.0466%，不是全面最小壁厚保證。未做實體試印、多色設備映射或 Cura／Prusa 工具路徑；門廊頂板、雨棚、挑梁及窗洞上緣仍需支撐與拆除評估。
+
+## 本機狀態
+
+只在本機準備，未建立 GitHub blob／commit／PR／ref，未發布或遠端讀回。基底固定為 123e103381f4d7eb98627857d9b720b8e497ecaa；先前最新 HEAD 讀取遭拒後，未重試或改路徑繞過。校級 SHA256SUMS 未動，之後若獲允許發布，須先重核最新基底與校級校驗檔。

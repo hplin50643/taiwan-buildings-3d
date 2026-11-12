@@ -1,0 +1,117 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T02:11:37.914929+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "6a6cba08634b2c8dc9296dd7fbb901a61a22d31e24e3f6ea75c0693bc18e1478",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:57:44.419569+00:00",
+      "observation": "Clean framed entrance segment; existing white portico, glazing and warm tile-like wall preserved. Right artificial wall side neutral. Changed left step end is mostly hidden from this right-front view."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "9e050c34f3ca3f6178fdbb98dfec593aabb96cd2c8d34ead56037be125ec7a9f",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T01:58:21.779189+00:00",
+      "observation": "Broad artificial back, side and top closures remain neutral. The exposed staircase end beyond the wall is stone grey and its stepped outline remains intact; no window or facade was painted onto the crop."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "6383460f0e8dd0f9bb4cee9610c7b7529d90df3f7185b235711f55c0aa8aef52",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T02:04:47.995388+00:00",
+      "observation": "Front elevation remains clean, with open portico, unequal original lower window/door groups and two upper groups. Original colors remain unchanged; the left step-end correction is edge-on from this view."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "beae2b59cfc66e4f59d7f2c1262b7395c3df600578ad09fa5f5d87f48ac08bd8",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T02:05:44.138163+00:00",
+      "observation": "Low orthographic source-direction view keeps the real portico opening and dark lightweight canopy beams intact. Existing window/door groups stay colored. The authored base underside is visible in this low-angle display view; it is not a photographed ground surface."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "98ea843b213b50854b7d26e394ff8d8cb2361b5297107c2a69c93503309d9be5",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T02:11:18.018219+00:00",
+      "observation": "The genuine stair left-end stepped profile is continuous stone grey, matching the original right-end treatment. The taller artificial wall-side closure stays neutral, with a clear spatial gap from the step end."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "2923c67211fdca0f2e12eeda4f6adcbe505d3ddc63823f55af45d93939166719",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T02:11:18.020093+00:00",
+      "observation": "Original stone stair right end and portico remain unchanged; right artificial wall side stays neutral. No additional openings or colored panels appear on the wall cut."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "d0cc28c9de72b59d765c5988bbaf595e4e50347ba9e4a3022076b5fbc654666c",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T02:11:18.021521+00:00",
+      "observation": "Projected beam and canopies retain original colors. Broad upper artificial wall closure remains neutral; no full roof has been invented. Entire partial footprint and base remain intact."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "1d8257b5e1ff638de9fc70570b7787e12db97fbaa4ef88491481c4616d91df70",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T02:11:18.023435+00:00",
+      "observation": "Original assignment comparison is visually almost identical from this right-front angle because the altered left step end is largely occluded. Window groups, canopy, columns and wall colors match the repaired front."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "e27752351b9aabbc2629fdd0fe8eefb7470541540f797b2c237672f39748dd15",
+      "personally_viewed": true,
+      "viewed_at": "2026-11-12T02:11:37.207640+00:00",
+      "observation": "The original stair left end appears neutral darker grey. Comparison with repaired rear shows that small stepped end alone becomes continuous stone grey; the broad artificial back, side and top remain neutral and identical."
+    }
+  ],
+  "before_after": [
+    {
+      "view": "front",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 707,
+      "pixels_differing_by_more_than_8_rgb_levels": 0,
+      "mean_absolute_rgb_difference": 0.0006837962962962963,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    },
+    {
+      "view": "rear",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 3134,
+      "pixels_differing_by_more_than_8_rgb_levels": 1206,
+      "mean_absolute_rgb_difference": 0.06805138888888888,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    }
+  ],
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "observations": [
+    "The only new color is the existing stone-step material on49 original left stair-end triangles, independently validated against the entire stepped outline.",
+    "All2196 precolored triangles, including1183 existing glazing/frame faces, preserve their original assignments and all material values.",
+    "The12 actual artificial wall side/back/top closures and33 base triangles remain neutral. They are not treated as real elevations.",
+    "Original portico void, canopy geometry, stepped profile and door/window recesses remain unchanged. No new windows, text or geometry."
+  ],
+  "limitations": [
+    "The grey stair material is supported by the viewed official entrance photograph; left-end continuation is an inference, not direct photo confirmation.",
+    "This is a cropped entrance segment, not the full building.",
+    "No physical trial print, current-condition claim or fresh slicer toolpath. Original digital QA rerun is separately reported."
+  ],
+  "artifacts": {
+    "appearance.blend": "ad80916ba22a6e2b174f7f0f5145fb219d306a8d20cb2ce4670782ff46354f8b",
+    "appearance.3mf": "a658dc32dcef22d00f67e6dbf0e904506d2898ed67884f553895f95a3409dc03",
+    "appearance-materials.json": "eb4841b4ee09b45ad247ad6629d6efcb1179c25c7d2081b9d065ac79461a103a",
+    "build_appearance.py": "05510a49ba43ed7f819c349ffade4b1d0d1e4461c10bb4eb820ad12676301944",
+    "render_review.py": "009b3cf96c9c36c737bb6e23694ee59d496e2a9fd0a95bb2e88247af116be2c3"
+  }
+}

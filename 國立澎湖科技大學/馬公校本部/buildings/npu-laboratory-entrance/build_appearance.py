@@ -20,7 +20,7 @@ def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
-indices=[]
+indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
 for p in mesh.polygons:
  x,y,z=p.center;n=p.normal;i=1
@@ -48,11 +48,47 @@ for p in mesh.polygons:
  if 21.49<x<64.51 and -17.51<y<.51 and (near(z,44.5) or near(z,43)):i=6
  # All deliberately cropped outer boundary planes are neutral, not claimed elevations.
  if (near(y,20) and n.y>.8) or (near(abs(x),68) and abs(n.x)>.8) or (near(z,79) and n.z>.8):i=0
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+# V2: restore only the left ends of the already modeled entrance stairs.
+# The original blanket x=-68 closure rule also neutralized genuine stair faces.
+# Prove coverage of the WHOLE triangle by disjoint original step-profile bands.
+# Clipping is geometric polygon clipping in the YZ plane, never a centroid test.
+# y extents and tops derive from the four original build_model.py step boxes.
+EPS=0.0001
+step_bands=[(-44.5,-40.5,3.9),(-40.5,-36.5,5.0),(-36.5,-32.5,6.1),(-32.5,-17.5,7.2)]
+def clip(poly,axis,bound,greater):
+ out=[]
+ for a,b in zip(poly,poly[1:]+poly[:1]):
+  ina=a[axis]>=bound if greater else a[axis]<=bound
+  inb=b[axis]>=bound if greater else b[axis]<=bound
+  if ina:out.append(a)
+  if ina!=inb:
+   t=(bound-a[axis])/(b[axis]-a[axis]);out.append(tuple(a[k]+t*(b[k]-a[k]) for k in range(2)))
+ return out
+def area(poly):
+ return abs(sum(a[0]*b[1]-a[1]*b[0] for a,b in zip(poly,poly[1:]+poly[:1])))*.5 if len(poly)>2 else 0
+support_records=[]
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=[verts[j] for j in p.vertices]
+ if not all(abs(v[0]+68)<EPS for v in q) or p.normal.x>-.999:continue
+ if min(v[2] for v in q)<3-EPS or max(v[2] for v in q)>7.2+EPS:continue
+ yz=[(v[1],v[2]) for v in q];whole=area(yz);covered=0
+ for y0,y1,z1 in step_bands:
+  part=yz
+  for axis,bound,greater in [(0,y0,True),(0,y1,False),(1,3.0,True),(1,z1,False)]:
+   part=clip(part,axis,bound,greater)
+  covered+=area(part)
+ if whole<1e-10 or abs(covered-whole)>max(1e-7,whole*1e-6):continue
+ p.material_index=7;indices[p.index]=7;changed_faces.append(p.index)
+ change_reasons[str(p.index)]='Whole original triangle inside the genuine left staircase-end profile; existing stone-step material continued. The left end is inferred, not directly established by the photograph.'
+ support_records.append({'face':p.index,'triangle_area_mm2':whole,'covered_by_original_step_bands_mm2':covered})
+assert len(changed_faces)==49
+
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='49 original left step-end triangles restored to the existing stone-step material; all artificial wall, rear and top closures neutral; geometry and original material values unchanged'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-stair-end-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -64,6 +100,8 @@ scene.view_settings.view_transform='Standard';scene.view_settings.look='Medium H
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
+for text in list(bpy.data.texts):bpy.data.texts.remove(text)
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -79,7 +117,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown rear cut neutral; authored base not a grass slope','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-stair-end-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'step_profile_bands_y0_y1_ztop':step_bands,'whole_triangle_support':support_records,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Official entrance photograph freshly downloaded and personally viewed; capture date unknown, no current-condition claim. Only the existing left step end is newly colored, as inferred same-component continuity. All original colored faces and material values unchanged. Genuine artificial wall side x=+/-68 above the steps, rear y=20, top z=79, and authored base remain neutral. This is a cropped entrance segment, not a full building. Other historical plans and renovation sources not freshly reread.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((145,-260,110),(0,-12,40.8),180),'rear':((-195,230,160),(0,-12,40.8),180),'elevation':((0,-260,40.8),(0,-12,40.8),180),'source-angle':((110,-260,18),(0,-12,47),180),'top':((0,0,260),(0,-12,0),180)}
 out=R/'appearance';out.mkdir(exist_ok=True)
