@@ -5,20 +5,23 @@
 | 新彩色運動場側 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
 | ![運動場側](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
-| 新彩色背側 | 新彩色上視 | 彩色下載 |
-| ![背側](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+| 新彩色背側 | 新彩色左短端 | 新彩色右短端 |
+| ![背側](appearance/rear.png) | ![左短端](appearance/left.png) | ![右短端](appearance/right.png) |
+| 新彩色上視 | 原版同相機比較 | 彩色下載 |
+| ![上視](appearance/top.png) | [原正面](appearance-review-v2/original-front.png) · [原背面](appearance-review-v2/original-rear.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
 
 
 太平校本部原坪林營區（新校區）的**附屬看臺模型**。範圍包括長條運動看臺、下方露出地面的建築量體、前後立面及局部端部，合為一件；跑道、球場、樹木與其他棚架未納入。
 
 模型含底座為 **150 × 53 × 23.376 mm**；底座厚 3 mm。它是按公開照片自行建模的外觀近似件，沒有完整測繪尺寸，也不與其他館舍共用固定比例。
 
-### 新增有限工程實照配色（原四圖保留）
+### 原短端及立面同材補色
 
-官方附件第2頁兩張施工後空拍支持粉赭牆架/紅肋、暗凹窗與背側米黃半圓外欄板。兩照屋面分別偏粉及近白，拍攝日與曝光差異未解，因此大屋面保持中性，不強拼同一時期。短端未知、底座亦中性；樹遮背下層同構件配色為推估。
+原短端主牆、結構、既有窗背／返面與階梯等補足同棟材料連續性；新增官方照片支持粉赭短端與構架，遮擋及對稱面仍屬推估。只改原中性面，原幾何、原已彩面及所有 RGBA／roughness 不變。新版七視角另加兩張原版同相機比較。
 
+大屋面粉／白差異仍未釐清，新增官方空拍另見原模型沒有的光電板陣，因此屋面繼續中性，不增幾何、不宣稱當前完整狀態。新照片後側偏粉與舊版米黃判讀有差異，依保留原彩限制不改米黃，也不擴塗內面。真通道不填玻璃，人工底座仍中性。
 
-[材料來源及限制](APPEARANCE.md)。原STL/scene、四圖、屋肋補檢和3.627%薄尖警示均保留；本輪不重跑列印QA，無實體試印。
+[材料來源及限制](APPEARANCE.md) · [本輪審核](appearance-review-v2/color-continuity-review.json)。原 STL／scene、四圖、屋肋補檢和 3.627% 薄尖警示均保留；本輪未重跑列印 QA，沒有實體試印。
 
 ## 實際 STL 預覽
 

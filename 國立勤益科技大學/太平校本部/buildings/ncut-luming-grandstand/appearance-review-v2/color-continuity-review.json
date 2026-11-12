@@ -1,0 +1,131 @@
+{
+  "status": "reviewed",
+  "checked_at": "2026-11-11T21:34:05.900759+00:00",
+  "all_nine_images_personally_viewed": true,
+  "render_engine": "CYCLES",
+  "device": "CPU",
+  "samples": 96,
+  "seed": 0,
+  "denoising": false,
+  "threads": 1,
+  "resolution": [
+    900,
+    800
+  ],
+  "no_text_objects_or_render_stamp": true,
+  "no_png_text_metadata": true,
+  "no_added_geometry_or_window_patterns": true,
+  "same_camera_comparisons": [
+    {
+      "view": "original-front",
+      "camera_location": [
+        -180.0,
+        -220.0,
+        130.0
+      ],
+      "camera_rotation_euler": [
+        1.1773217916488647,
+        -7.83397240411432e-08,
+        -0.6857295632362366
+      ],
+      "ortho_scale": 176.59312438964844,
+      "target": [
+        0,
+        0,
+        12
+      ],
+      "same_camera_as": "front"
+    },
+    {
+      "view": "original-rear",
+      "camera_location": [
+        170.0,
+        220.0,
+        130.0
+      ],
+      "camera_rotation_euler": [
+        1.1694198846817017,
+        1.0872917677318128e-08,
+        2.483704090118408
+      ],
+      "ortho_scale": 178.29737854003906,
+      "target": [
+        0,
+        0,
+        12
+      ],
+      "same_camera_as": "rear"
+    }
+  ],
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "20940a95467e7406976d1a850d6e4acc149d7813029c1a2d6537aa3c770474b5",
+      "bytes": 841393,
+      "personally_viewed_full_image": true,
+      "finding": "Continuous pink short end, original stairs and lower window structures visible. No newly painted diagonal patch. Roof stays neutral and central passage remains open."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "3d2ce85b007cde616757ae561783475e62dd69768e6536ca4e110d1eb6700b89",
+      "bytes": 847545,
+      "personally_viewed_full_image": true,
+      "finding": "Pink short end and existing rear window returns/frameworks continuous. Original cream outer parapets unchanged; unresolved inner/top faces neutral."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "8a6a32c21b081aeb2f91ec2cc699ba53b0802827b17d49a7966c9357429e5bc6",
+      "bytes": 775969,
+      "personally_viewed_full_image": true,
+      "finding": "Original four seat groups, central dais and three lower openings preserved; no new windows or fill planes."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "2db07869b6e4036b0190f0fc2145ae91157897514367acf3c0e5f5b7f9571761",
+      "bytes": 816177,
+      "personally_viewed_full_image": true,
+      "finding": "Original low, long profile and 15 broad roof panel regions remain. Neutral broad roof distinct from pink original ribs."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "a8408b9904e7441dbaaf1562ac01898c35854b16192a4a1648d5c72df4fff91d",
+      "bytes": 952148,
+      "personally_viewed_full_image": true,
+      "finding": "Short-end body and pier coherent pink; real original short-end recess and staircase remain geometrically unchanged."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "79f0ea9ab02ac8e651e64d0c6604b4395fa27d2da313e1caae080323b62bc0f3",
+      "bytes": 965965,
+      "personally_viewed_full_image": true,
+      "finding": "Opposite short-end body and pier coherent pink; original short-end window backing uses dark proxy, gray stairs retain original contour."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "8f9fc961be35a5ec5dbbb5ffa847a31df3f52a5726d2eb4074191c964c3e8b8a",
+      "bytes": 823465,
+      "personally_viewed_full_image": true,
+      "finding": "Original roof, rib arrangement, artificial base, half-disc protrusions and footprint intact. No photovoltaic panel pattern added."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "2d8f48a548ffc19646f260c0368af721cf0110429d3b932c2992ceeddcbe164c",
+      "bytes": 842852,
+      "personally_viewed_full_image": true,
+      "finding": "Same front camera and illumination show original neutral short-end and window structures before repair."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "67377bc7c8216e358b4c75780ae909fb562a921d8e4832c65cc3106dbbb51635",
+      "bytes": 845755,
+      "personally_viewed_full_image": true,
+      "finding": "Same rear camera and illumination show original neutral short-end/rear returns before repair; previous cream surfaces already present."
+    }
+  ],
+  "limitations": [
+    "Not a current-state photogrammetric model. Additional official photograph shows photovoltaic roof geometry absent here.",
+    "Original bare roof color uncertainty retained, no forced pink or white selection.",
+    "Original cream rear faces preserved despite additional reference areas appearing pink; uncertainty not extended onto inner/top surfaces.",
+    "Original 3.627 percent highest-rib opening-loss warning retained; no physical trial print or formal slicer test."
+  ]
+}

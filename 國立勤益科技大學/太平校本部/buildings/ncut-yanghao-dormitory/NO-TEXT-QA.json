@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ncut-yanghao-dormitory-all-views.jpg. Caption/backing absent; original geometry, materials and view framing retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "7211a9118c3cd7b6ccdaad17acfbb40fb6dcbb81aa6e37dfe0d1192aefc7fb02",
+    "east.png": "1ff20548ff2245115ce1c7595d688546e38616eaf9385e234ce7b6adceaff621",
+    "entry-detail.png": "442e465ecff7a212f05a379da9d5203b6bf83c41354c129717b00cdd1663f55f",
+    "facade-detail.png": "70dfea299675b37f6a72610b04ebebfdb3ddb5c122271bfa3f96c1c2e192f227",
+    "front.png": "2ded06abf1fd1cb6205d66c9d11353b547183d70c5cb68b1a7fbe87371d5248d",
+    "preview.png": "19e3e10c3810d3b6e86b02b21c130358844b1482894e912c02697ccbcbb8c937",
+    "rear.png": "ea769395cbd81bd1c9136351847b3c59bc18dce65078c51ea4da68152aa7301c",
+    "roof-detail.png": "483bfbf38424ac6de0204f600b4e28580542443b5fdeffce03960f8ced7d0695",
+    "top.png": "448997d3c12411acd3e24e6c9a6cdaba82de37de946bb0e0138fe74d2c1dbcea",
+    "west.png": "f9e75ec9a11cc4697f5b5bc60c9c4b4275530f30f32a919ff6b6346328daa423"
+  }
+}

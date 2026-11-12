@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.002;indices=[]
+EPS=.002;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def boxface(x0,x1,y0,y1,z0,z1):
@@ -88,11 +88,70 @@ for p in mesh.polygons:
    if plane(1,7.65) and n[1]>.8 and bounds((xc-2.5,7.65,z+3.95),(xc+2.5,7.65,z+8.75)):i=4
  if plane(1,7.5) and n[1]>.8 and bounds((-9,7.5,16),(9,7.5,23)):i=4
  if max(actual[:,2])<=3+EPS:i=0
+ original_indices.append(i);reason=None
+ # V2: complete original supporting faces only. q is a coordinate query in
+ # drafting space, NOT a second mesh scaling; actual vertices are untouched.
+ if i==0 and min(actual[:,2])>=3-EPS and max(actual[:,2])>3+EPS:
+  # Opposite short walls share the photographed pink building-wall family.
+  if bounds((-69,-9,3),(69,9,14.6)) and ((plane(0,-69) and n[0]<-.999) or (plane(0,69) and n[0]>.999)):
+   i=1;reason='pink_original_short_end_outer_wall'
+  for xc in [-69,69]:
+   if i==0 and boxface(xc-1.15,xc+1.15,-9,9,14.3,26.5):
+    i=1;reason='pink_original_short_end_structural_pier'
+  # Existing backing faces, not newly inserted panes. The extra outer cut faces
+  # belonging to the staircase remain distinct from the inner window back.
+  for side in [-1,1]:
+   for yc in [-4,3]:
+    if i==0 and bounds((min(side*67.5,side*69),yc-1.9,7),(max(side*67.5,side*69),yc+1.9,11.3)):
+     if plane(0,side*67.5) and n[0]*side>.999:
+      i=4;reason='inferred_opaque_original_short_end_window_back'
+     elif plane(1,yc-1.9) or plane(1,yc+1.9) or plane(2,7) or plane(2,11.3):
+      i=1;reason='pink_original_short_end_window_returns'
+  # Existing uncolored window returns use the same wall family. Old colored
+  # opaque window backs stay unchanged. No passage is turned into glazing.
+  for a,b in [(-68,-32),(-22,-6),(6,22),(32,68)]:
+   if i==0 and bounds((a,-9,7),(b,-7.6,11)) and not plane(1,-7.6):
+    i=1;reason='pink_original_front_window_returns'
+   for xc in __import__('numpy').arange(a+4,b,5):
+    if i==0 and boxface(xc-.55,xc+.55,-10.45,-7.55,6.9,11.1):
+     i=1;reason='pink_original_front_structural_window_mullions'
+  for xc in centers:
+   for z in [6.8,17.2]:
+    if i==0 and bounds((xc-2.5,7.65,z+3.95),(xc+2.5,9,z+8.75)) and not plane(1,7.65):
+     i=1;reason='pink_original_rear_window_returns'
+  if i==0 and bounds((-9,7.5,16),(9,9,23)) and not plane(1,7.5):
+   i=1;reason='pink_original_central_rear_window_returns'
+  for xc in [-6,-2,2,6]:
+   if i==0 and boxface(xc-.55,xc+.55,7.55,10.65,15.9,23.1):
+    i=1;reason='pink_original_central_rear_window_mullions'
+  # Visible inner face of the original rear structural wall, behind seating.
+  if i==0 and plane(1,5.2) and n[1]<-.999 and bounds((-69,5.2,14.3),(69,5.2,25.8)):
+   i=1;reason='pink_original_seating_back_wall'
+  # Vertical fascia of the original front cantilever, no roof/soffit assumption.
+  if i==0 and abs(n[2])<.001 and boxface(-70,70,-14,-6.6,13.3,15):
+   i=1;reason='pink_original_front_walkway_vertical_fascia'
+  # True through passages keep their voids. Paint existing vertical returns
+  # only; no glass, newly added wall, or soffit-color claim.
+  for xc,w in [(0,12),(-27,6),(27,6)]:
+   if i==0 and abs(n[0])>.999 and bounds((xc-w/2,-9,3),(xc+w/2,9.5,8)) and (plane(0,xc-w/2) or plane(0,xc+w/2)):
+    i=1;reason='pink_original_open_passage_wall_returns'
+  # Pink structural stair sides and gray actual tread/riser faces. These
+  # stairs are original simplified geometry, not reconstructed finer steps.
+  for side in [-1,1]:
+   xc=side*70.7
+   for k in range(9):
+    yy=-8+k*1.8;zz=3.95+k*1.16
+    if i==0 and boxface(xc-1.5,xc+1.5,yy-1,yy+1,2.8,zz):
+     if abs(n[0])>.999 or (n[1]>.999 and k==8):
+      i=1;reason='pink_original_short_end_stair_structural_sides'
+     elif n[2]>.999 or n[1]<-.999:
+      i=3;reason='gray_original_short_end_stair_treads_risers'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Exact original geometry and existing colors preserved; source-supported short ends and same-building material continuity on complete existing faces'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -122,15 +181,17 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original single warm display material. OfficialPDFpage2two after-construction aerials support muted pink primary faces/ribs/seating, cream only real rear outer semicircular48facets, silvergrey coarse front rail and exposed circulation tops, dark opaque actualwindowbacks. Through-passages stayopen. Roofpanels differ pink/nearlywhite in two photos and remainneutral; shortends/shortendglazing/innerbalcony/tops/base unknownneutral. No rails/seats/clock/lettering/newgeometry. Lower rear treehidden parts samecomponentfamily inference. PDF2023-10-16metadata not capture/completiondate. Original3.627percent highest-rib thin-feature openingloss warning retained; coloring not printQA or trialprint.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Official construction PDF page 2 and three official gallery views support pink short-end/structural wall continuity. Existing short-end window backs use original opaque mixed-dark proxy; original stair sides pink and treads/risers gray inferred from visible circulation. Original colored faces retained, including cream rear outer parapets, despite additional photographs appearing pink. Broad roof remains neutral: original two aerials disagree, and additional official solar aerial depicts a different photovoltaic roof configuration absent from this mesh. No solar panels or later geometry added, no current-state claim. Inner balcony/soffit/unresolved roof surfaces and artificial base stay neutral. The 0.72 height transform is queried inversely only, never reapplied to vertices. Existing 3.627 percent highest-rib thin-feature opening-loss warning and no physical trial print remain','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-180,-220,130),(0,0,12),220),'rear':((170,220,130),(0,0,12),220),'elevation':((0,-260,12),(0,0,12),220),'source-angle':((0,-240,170),(0,0,12),220),'top':((0,0,350),(0,0,12),220)}
+views={'front':((-180,-220,130),(0,0,12),220),'rear':((170,220,130),(0,0,12),220),'elevation':((0,-260,12),(0,0,12),220),'source-angle':((0,-240,170),(0,0,12),220),'left':((-260,0,90),(0,0,12),220),'right':((260,0,90),(0,0,12),220),'top':((0,0,350),(0,0,12),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
+camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':target})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -139,4 +200,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'appearance-camera-records.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))
