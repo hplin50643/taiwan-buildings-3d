@@ -2,7 +2,7 @@
 Run: blender -b -t 4 -P render_preview.py
 """
 import bpy,json,os,struct
-from PIL import Image,ImageDraw,ImageFont
+
 from mathutils import Vector
 from pathlib import Path
 OUT=Path(__file__).resolve().parent; PREV=OUT/'previews'; PREV.mkdir(exist_ok=True)
@@ -44,8 +44,7 @@ for name,loc,aim in [('front',(-160,-280,145),(0,0,target_z)),('rear',(160,280,1
  cam.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
  if name=='front':front_scale=cam.data.ortho_scale
  scene.render.filepath=str(PREV/(name+'.png'));bpy.ops.render.render(write_still=True)
- if name in ['rear','rear-low','north-elevation','east','west']:
-  im=Image.open(PREV/(name+'.png'));draw=ImageDraw.Draw(im);draw.rectangle((0,635,900,675),fill=(38,43,51));draw.text((15,645),'REAR / SIDE DETAILS SIMPLIFIED - WINDOWS UNVERIFIED',font=ImageFont.load_default(size=18),fill='white');im.save(PREV/(name+'.png'))
+ # No caption overlay; original limitations remain in README.
  strip_nondeterministic_metadata(PREV/(name+'.png'))
 cam.location=(-160,-280,145);cam.rotation_euler=(Vector((0,0,target_z))-cam.location).to_track_quat('-Z','Y').to_euler()
 scene.render.filepath='//previews/front.png'

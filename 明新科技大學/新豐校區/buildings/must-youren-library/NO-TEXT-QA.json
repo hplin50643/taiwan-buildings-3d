@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "original_stl_triangles_exact_to_1e5": true,
+  "no_rendered_text_objects": true,
+  "images_sha256": {
+    "previews/east.png": "38976190db77c0868b7f3c6c006ffd34df4251824d8407f9f31624dc4a26bb00",
+    "previews/west.png": "c279bcad24dad06125a828c8e553a006b382651afd0d61734086f6c70813e8c1",
+    "previews/south-elevation.png": "20375079b65d8ac1f5e23f56971bc11298d1b2a34fad034ac3eb5255e97ad544",
+    "previews/north-elevation.png": "0d1903f8f0bf11775b7f1486e086748d1cfee8e06783c174130d28a322d8ce05",
+    "previews/front.png": "6f757cac797271fbeefb9372ec71562cbf9f5f8400a217717e79cd64a9dac4ab",
+    "previews/rear-low.png": "82d4f433771f1fb3e9586fc5f0739a516e89cbb8f9e41a371e07679c8abb6727",
+    "previews/front-low.png": "0275f586f15d2e0f2a40a2d43a3c356117f91451afe1a851148b1cc8b7460eb2",
+    "previews/rear.png": "8cb171e595cdf56f67909029f60cd12392f5e5190fcb5be33a2d54716a49f25c",
+    "previews/top.png": "14fe53ba0baf6735a61ddfc985a5e1a0c497f8cb783802acf3481b7919ac50e3"
+  },
+  "visual_review": "All nine actual views inspected in must-special-no-text-contact.jpg. Front unchanged and rear outside caption bit-exact; no overlays remain, original STL geometry retained.",
+  "reference_pixel_checks": {
+    "front.png": {
+      "non_caption_max_difference": 0,
+      "non_caption_mean_difference": 0.0
+    },
+    "rear.png": {
+      "non_caption_max_difference": 0,
+      "non_caption_mean_difference": 0.0
+    }
+  }
+}
