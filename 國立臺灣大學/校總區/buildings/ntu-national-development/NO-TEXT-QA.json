@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in ntu-national-development-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "5b20d3e4a6af9a92265dc0f9c6367ea84d1e454ae38fada5ea928ef8210f8140",
-    "corridor-detail.png": "9e3632959c79cdb1eeff1ac78649992935f2e3b152473f03cac52c86025cb88a",
-    "east.png": "bbdfe280ab4f31250a4d016c93f1980d25e386c8a4363726e95dd2b809599f08",
-    "entry-detail.png": "e11dc4aa48ec8e0dbc630bba124973f3ae364bb8886a44a5aa3ef164895446e0",
-    "front.png": "e80c6903a534fc47a1e27f8e079a4e1dd7d97a3fb5f07c5c08f5b2b9a6bb22d5",
-    "preview.png": "0d6304251a6673ebb4280f4e633ac46df0d1c28effdb6f985d5b16befa526222",
-    "rear.png": "f415e8df83df7f5b5d0dd85004a3c2b27d99e8754e878f28ddc12b71624b9742",
-    "roof-detail.png": "0f153ad25ea57045f60e91111a9cc8f370f3adac985535f93d835b3a692e4dc0",
-    "top.png": "0950ce3210a7179e47f2576feca1956146ede4359c97a136e01fe3621f5b6e66",
-    "west.png": "02fc9005dc2b3d8355bfd9888f74deb51e32246214a29f354633991985ba69e0"
-  }
+    "preview.png": "093106d79e28efac22b7f19729bb59d01ad75809bc6eab76d936483fc8d30278",
+    "rear.png": "cfd1ed5aef74f46b2af6907c50f6c289f2602e98feacfa789a7feaa17a8a1822",
+    "front.png": "855e5aa21f359d64475b84024bcdbf1fa17161ceeb63555eb965444c3aa8ef9e",
+    "back.png": "35a93712c0524d3984b32a35bb6e3904b15fdbf260be8192deb23a8a8f78e83b",
+    "west.png": "941bed7a44d4f2fa19b4c81aedcb07adb2a530c4452fbaf82e01ffe38b8ad268",
+    "east.png": "556b38c2ab4512a49c69c63087e1015c328371b0164e0836db0ecf893dd14949",
+    "top.png": "b53752cc11bd4690705938a2050a2dc212647474115518c1ee8085d85f286302",
+    "entry-detail.png": "ead277df501abce94cb82dd1ed3ce0013b5ac3e26aeda7ffbba01e81042aeb47",
+    "corridor-detail.png": "4378b713053821cc9e4626a1b13464237e19aa2213a6fa4d7fc0866962d6ce27",
+    "roof-detail.png": "a3f25b70484e03370d63c9621753d6c3372f328178ed778d870d76d8cf37efde"
+  },
+  "mesh_sha256": "35338a06600f2acf125357380af9d558ec400216df18c118df93ae62e0703b51",
+  "independent_visual_review": "LOWER-PORTAL-WITHDRAWAL-INDEPENDENT-QA.json",
+  "previous_qa": "qa/lower-portal-withdrawal-previous/NO-TEXT-QA.json"
 }

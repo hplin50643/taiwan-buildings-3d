@@ -1,0 +1,70 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "withdrawn_faces": [
+    786,
+    787,
+    788,
+    789,
+    790,
+    795,
+    796,
+    797,
+    798,
+    799,
+    851,
+    852,
+    853,
+    854,
+    855,
+    856,
+    857,
+    858,
+    859,
+    860
+  ],
+  "complete_coplanar_domains": [
+    [
+      789,
+      787,
+      788,
+      798,
+      795,
+      786,
+      799,
+      790,
+      796,
+      797
+    ],
+    [
+      859,
+      860,
+      853,
+      856,
+      855,
+      851,
+      858,
+      857,
+      854,
+      852
+    ]
+  ],
+  "new_color_faces": 0,
+  "old_material": 1,
+  "new_material": 4,
+  "original_triangles": 4112,
+  "source_sha256": "1b0b4cc795b423b2c7262d3bb09e16d9ad3087150ccf0da222e8587b4879c30a",
+  "actual_source_visual_review": true,
+  "findings": [
+    "New official 3787x2840 entrance photo visibly shows two brick horizontal rings crossing the lower gray portal supports. Original low front planes contain no matching brick-band boundaries.",
+    "Independent full-vertex selection and coplanar components match exactly 20 original faces in two complete low front domains.",
+    "Withdrawal is neutral uncertainty, not proof all 20 faces are brick or wholly non-stone. Genuine stone areas within these domains are deliberately left unknown instead of inventing boundaries.",
+    "Upper 83-face domain, projecting gray fascia, arch trim, cylinder-like/other supports, crown and all other indices remain excluded."
+  ],
+  "limits": [
+    "Capture date unknown; new fetch is not a verified new capture.",
+    "Original low portal proxy remains approximate; not engineering/geometry recertification.",
+    "Lookup z/0.9 only; original output vertices must remain exact.",
+    "Final color/3MF/rebuild/ten-view/saved-scene verification pending."
+  ],
+  "historical_source_register": "qa/lower-portal-withdrawal-previous/COLOR-SOURCE-REGISTER.json"
+}

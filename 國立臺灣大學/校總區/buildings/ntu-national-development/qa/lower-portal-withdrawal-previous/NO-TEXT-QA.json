@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-national-development-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "5b20d3e4a6af9a92265dc0f9c6367ea84d1e454ae38fada5ea928ef8210f8140",
+    "corridor-detail.png": "9e3632959c79cdb1eeff1ac78649992935f2e3b152473f03cac52c86025cb88a",
+    "east.png": "bbdfe280ab4f31250a4d016c93f1980d25e386c8a4363726e95dd2b809599f08",
+    "entry-detail.png": "e11dc4aa48ec8e0dbc630bba124973f3ae364bb8886a44a5aa3ef164895446e0",
+    "front.png": "e80c6903a534fc47a1e27f8e079a4e1dd7d97a3fb5f07c5c08f5b2b9a6bb22d5",
+    "preview.png": "0d6304251a6673ebb4280f4e633ac46df0d1c28effdb6f985d5b16befa526222",
+    "rear.png": "f415e8df83df7f5b5d0dd85004a3c2b27d99e8754e878f28ddc12b71624b9742",
+    "roof-detail.png": "0f153ad25ea57045f60e91111a9cc8f370f3adac985535f93d835b3a692e4dc0",
+    "top.png": "0950ce3210a7179e47f2576feca1956146ede4359c97a136e01fe3621f5b6e66",
+    "west.png": "02fc9005dc2b3d8355bfd9888f74deb51e32246214a29f354633991985ba69e0"
+  }
+}

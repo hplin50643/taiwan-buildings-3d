@@ -15,7 +15,7 @@ union=lambda pp:m.Manifold.batch_boolean(pp,m.OpType.Add)
 def match(p,inverted=False):
  q=p.to_mesh();mesh=trimesh.Trimesh(np.asarray(q.vert_properties[:,:3]),np.asarray(q.tri_verts),process=False);ids=np.flatnonzero(np.all(tri>=mesh.bounds[0]-tol,axis=(1,2))&np.all(tri<=mesh.bounds[1]+tol,axis=(1,2)));out=np.zeros(len(f),bool)
  if len(ids):
-  pts=np.concatenate([tri[ids],tri[ids].mean(axis=1)[:,None,:]],axis=1).reshape(-1,3);_,ds,fs=trimesh.proximity.closest_point(mesh,pts);out[ids]=np.all(ds.reshape(-1,4)<tol,axis=1)&(np.einsum('ij,ij->i',norm[ids],mesh.face_normals[fs.reshape(-1,4)[:,-1]])*(-1 if inverted else 1)>.97)
+  pts=np.concatenate([tri[ids],tri[ids].mean(axis=1)[:,None,:]],axis=1).reshape(-1,3);_,ds,fs=trimesh.proximity.closest_point_naive(mesh,pts);out[ids]=np.all(ds.reshape(-1,4)<tol,axis=1)&(np.einsum('ij,ij->i',norm[ids],mesh.face_normals[fs.reshape(-1,4)[:,-1]])*(-1 if inverted else 1)>.97)
  return out
 def plane(ax,z):return np.all(abs(tri[:,:,ax]-z)<.004,axis=1)
 # Coherent connected coplanar wall regions: NEVER paint upper triangles alone.
@@ -44,4 +44,15 @@ crown_unknown=[845, 846, 899, 900, 1858, 1859, 1866, 1867, 1876, 1886, 1887, 842
 assert len(f)==4112 and np.all(a[crown_unknown]==1)
 a[crown_unknown]=4
 
+
+# Narrow withdrawal: lower tower front crosses unmodeled brick bands.
+old=a.copy()
+hit=np.all(abs(tri[:,:,1]+28)<tol,axis=1)&np.all(tri[:,:,2]>=3-tol,axis=1)&np.all(tri[:,:,2]<=20+tol,axis=1)&(np.all(tri[:,:,0]<=-9.5+tol,axis=1)|np.all(tri[:,:,0]>=9.5-tol,axis=1))&np.all(abs(tri[:,:,0])<=20.5+tol,axis=1)
+assert hit.sum()==20 and np.all(a[hit]==1)
+ad=lookup.face_adjacency;groups=trimesh.graph.connected_components(ad[(norm[ad[:,0]]*norm[ad[:,1]]).sum(1)>.999999],nodes=np.arange(len(f)),min_len=1)
+affected=[c for c in groups if hit[c].any()];assert len(affected)==2 and all(len(c)==10 and hit[c].all() for c in affected)
+a[hit]=4;assert np.array_equal(a[~hit],old[~hit])
+assert np.bincount(a,minlength=5).tolist()==[376,1985,126,1170,455]
+old_mixed=[c for c in groups if len(set(old[c]))>1];assert len(old_mixed)==19 and all(np.array_equal(a[c],old[c]) for c in old_mixed)
+assert len([c for c in groups if len(set(a[c]))>1])==19
 np.savez_compressed(R/'color-mesh.npz',vertices=v,faces=f,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');q={'original_STL_sha256':H(R/'model.stl'),'triangles':len(f),'materials':{str(k):{'name':pal[k][0],'hex':pal[k][1],'face_count':int(np.sum(a==k))}for k in range(len(pal))},'geometry_changed':False,'lookup_transform':'Only lookup coordinates z/0.9; output vertices unchanged.','assignment_method':'Complete connected coplanar regions, then exact original primitive surfaces by all vertices/center/normals; no new faces.','wall_regions':regions,'limits':'Large original wall regions crossing plinth remain neutral. 2010 E10 original building, not relocated premises. Roof/back neutral.'};(R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n');print(q)

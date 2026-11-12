@@ -1,48 +1,70 @@
 {
-  "status": "SOURCE_APPROVED_BOUNDED_COLOR_SCOPE",
-  "slug": "ntu-national-development",
-  "source_go_sha256": "690cc434daec89fa3f07b218a433fd17773373c64cace9a607a8f70c8dc5d5fa",
-  "independent_focused_review_sha256": "c02c547b946857ecb8f439e6a3857eadd9a3a3bfffcc72dd414c71d0bbff91cc",
-  "sources": [
-    {
-      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E10/IMG_6020.JPG",
-      "sha256": "a7548e0b38f93bdc9dc1508db8d43e13725554700808877e935ec8b293a64f97",
-      "private_original_not_distributed": true
-    },
-    {
-      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E10/IMG_6021.JPG",
-      "sha256": "11b422248039973de3501f017fa1e8ba6fa12f57fd593d567faaa914b524ffcb",
-      "private_original_not_distributed": true
-    },
-    {
-      "url": "https://homepage.ntu.edu.tw/~cpo/2010photo/E/E10/IMG_6022.JPG",
-      "sha256": "bdee0e43612c96744d132fec6faeaddea77b1a748865ff91ea347ada30a23e33",
-      "private_original_not_distributed": true
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "withdrawn_faces": [
+    786,
+    787,
+    788,
+    789,
+    790,
+    795,
+    796,
+    797,
+    798,
+    799,
+    851,
+    852,
+    853,
+    854,
+    855,
+    856,
+    857,
+    858,
+    859,
+    860
   ],
-  "source_stage_model_qa_pending_is_historical": true,
-  "current_model_qa": "See final COLOR-FORMAT-GEOMETRY-QA.json, SCENE-QA.json, DELIVERY-QA.json and SOURCE-VISUAL-QA.json; source GO pending flag referred to issue time, not final delivery.",
-  "version": "2010 official E10 building exterior group; not evidence for relocated department new premises or 2026 full current condition.",
-  "rights": "Official public reference photos; no express CC verified. Originals private, no public textures/source redistribution or commercial-rights warranty.",
-  "palette": {
-    "brick": "#A17C69",
-    "stone": "#969B97",
-    "window_back": "#536567",
-    "shadow": "#3F4745",
-    "unknown_neutral": "#B8BAB6"
-  },
-  "geometry_change": false,
-  "count_delta": 0,
+  "complete_coplanar_domains": [
+    [
+      789,
+      787,
+      788,
+      798,
+      795,
+      786,
+      799,
+      790,
+      796,
+      797
+    ],
+    [
+      859,
+      860,
+      853,
+      856,
+      855,
+      851,
+      858,
+      857,
+      854,
+      852
+    ]
+  ],
+  "new_color_faces": 0,
+  "old_material": 1,
+  "new_material": 4,
+  "original_triangles": 4112,
+  "source_sha256": "1b0b4cc795b423b2c7262d3bb09e16d9ad3087150ccf0da222e8587b4879c30a",
+  "actual_source_visual_review": true,
+  "findings": [
+    "New official 3787x2840 entrance photo visibly shows two brick horizontal rings crossing the lower gray portal supports. Original low front planes contain no matching brick-band boundaries.",
+    "Independent full-vertex selection and coplanar components match exactly 20 original faces in two complete low front domains.",
+    "Withdrawal is neutral uncertainty, not proof all 20 faces are brick or wholly non-stone. Genuine stone areas within these domains are deliberately left unknown instead of inventing boundaries.",
+    "Upper 83-face domain, projecting gray fascia, arch trim, cylinder-like/other supports, crown and all other indices remain excluded."
+  ],
   "limits": [
-    "Lower plinth differs from brick; if original whole wall faces cross its boundary keep whole face neutral, do not centroid-split or paint whole mixed panel brick.",
-    "Unknown back/flat roof and any hidden unmatched domain neutral.",
-    "No new diamond ornaments, lettering, air-conditioners, trees or interior.",
-    "Full-vertex surface matching only; no new or split geometry.",
-    "Not exact current appearance, original geometry remains approximate.",
-    "Source photos private, no blanket reuse rights; final material/ten-view QA required.",
-    "Whole connected mixed front/plinth wall planes neutral; only bounded side infill colored.",
-    "Original final Z times 0.9 is reversed only for face lookup, never altered in output.",
-    "Five color labels are not a verified multi-filament printing project.",
-    "V2: 27 original crown rear/top faces neutral; diamond aperture returns preserved. V1 retained privately, no geometry change."
-  ]
+    "Capture date unknown; new fetch is not a verified new capture.",
+    "Original low portal proxy remains approximate; not engineering/geometry recertification.",
+    "Lookup z/0.9 only; original output vertices must remain exact.",
+    "Final color/3MF/rebuild/ten-view/saved-scene verification pending."
+  ],
+  "historical_source_register": "qa/lower-portal-withdrawal-previous/COLOR-SOURCE-REGISTER.json"
 }

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "Bounded lower-portal-withdrawal update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T12:48:46.094294+00:00",
+  "triangles": 4112,
+  "original_color_faces": 3677,
+  "new_color_faces": 0,
+  "withdrawn_color_faces": 20,
+  "colored_faces": 3657,
+  "unknown_neutral_faces": 455,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "f6054555c12e1a38add4290d852c4a8b6b4b11720a90e643367e8e92174b6d3d",
+  "color_mesh_sha256": "35338a06600f2acf125357380af9d558ec400216df18c118df93ae62e0703b51",
+  "images_sha256": {
+    "preview.png": "093106d79e28efac22b7f19729bb59d01ad75809bc6eab76d936483fc8d30278",
+    "rear.png": "cfd1ed5aef74f46b2af6907c50f6c289f2602e98feacfa789a7feaa17a8a1822",
+    "front.png": "855e5aa21f359d64475b84024bcdbf1fa17161ceeb63555eb965444c3aa8ef9e",
+    "back.png": "35a93712c0524d3984b32a35bb6e3904b15fdbf260be8192deb23a8a8f78e83b",
+    "west.png": "941bed7a44d4f2fa19b4c81aedcb07adb2a530c4452fbaf82e01ffe38b8ad268",
+    "east.png": "556b38c2ab4512a49c69c63087e1015c328371b0164e0836db0ecf893dd14949",
+    "top.png": "b53752cc11bd4690705938a2050a2dc212647474115518c1ee8085d85f286302",
+    "entry-detail.png": "ead277df501abce94cb82dd1ed3ce0013b5ac3e26aeda7ffbba01e81042aeb47",
+    "corridor-detail.png": "4378b713053821cc9e4626a1b13464237e19aa2213a6fa4d7fc0866962d6ce27",
+    "roof-detail.png": "a3f25b70484e03370d63c9621753d6c3372f328178ed778d870d76d8cf37efde"
+  },
+  "current_independent_review": "LOWER-PORTAL-WITHDRAWAL-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "New official student-counseling-center entrance photograph3787x2840 shows two brick bands crossing the two lower portal tower fronts. Original unsegmented front planes cannot isolate these bands. Withdraw20stone triangles across2complete10face coplanar domains to neutral; no red additions or new geometric boundaries. All original19mixed domains and all other indices retained, including upper83face domain,gray frontband,arch and crown. Photograph capture date unknown; not2026survey or calibratedcolor.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}
