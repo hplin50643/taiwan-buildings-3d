@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "Bounded first post side update, not full color or geometry certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 912,
+  "original_color_faces": 68,
+  "new_color_faces": 2,
+  "colored_faces": 70,
+  "unknown_neutral_faces": 842,
+  "geometry_unchanged": true,
+  "current_independent_review": "FIRST-POST-SIDE-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only2original triangles [578,581] of first veranda post gable-facing lower straight side use original white family. Original2012nonofficial oblique travel-photo pixels separate this side from gray foot. No upper post,Ybrace,foot,other posts,wall or roofs inferred. Original912triangles,palette entries and all other indices unchanged. Nominalfamily not calibrated paint.",
+    "Original2012/2024nonofficial source scope and approximate fragment preserved; neither an official/new photograph nor surveyed historical reconstruction or2026condition. Source photos private. Immutable originalpackage has noOBJ, private build-generatedOBJ not claimed as original. Original geometric and source limits remain; no full color/printability certification or physical print."
+  ],
+  "checked_at": "2026-11-12T15:39:12.742123+00:00",
+  "original_STL_sha256": "5911c359bf430b39188165357ecb05ff66d2a2b016b552a73edbbc1ba6ad0410",
+  "color_mesh_sha256": "3d2055d479f25aa0c4b09a11061a47a645e2edb4019e49765c92b7725c92d130",
+  "images_sha256": {
+    "preview.png": "7510cf8af0cf90001f026280e1f6c157692e646e40f6b6bb8e2d921ed9efabe4",
+    "rear.png": "f37ec2aebb4bab8cdde1b2161f9ea72d9a5ed756c55e9601acafd13f33d45789",
+    "front.png": "a19817d1b384a40fa51400a8a92d80b775d6b2b680e8dddcf63ca3dbef9ebbad",
+    "back.png": "873bb714dc458151eec575d4b6abddafd0d6ff01c5ca159455b23f9ef077ffe8",
+    "west.png": "139891ead7a29a401671f81667d7bdadbf4b58f4139bfecae5290fb2720fc223",
+    "east.png": "70236aa0f3099b5fe906d4e90e45106ced0c0b0d2a2d4ab1bd2ae8c00971ab56",
+    "top.png": "716f8eb64b404dfbc6f52fa8a206ffe4dd0778ddec73bd8c021cb7b71164860d",
+    "entry-detail.png": "c3b22039224bf9f02641415828bf6ae74b6f6c8723f9541bc9023d2cacff5dcd",
+    "facade-detail.png": "1ab449657c89acc6c064246f6008b4025ac33bbf575f8053d905873987f9385f",
+    "roof-detail.png": "7473b7740c27b745a0fda63c4e8530ba47a88cbff424434c9d80de973428a605"
+  }
+}

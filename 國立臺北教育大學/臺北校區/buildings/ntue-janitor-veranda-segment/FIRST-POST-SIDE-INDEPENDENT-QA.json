@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "reviewer": "Independent reviewer, not builder",
+  "source_review": "second-source-domain-review.json",
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "triangles": 912,
+  "added_faces": [
+    578,
+    581
+  ],
+  "complete_new_domains": [
+    [
+      578,
+      581
+    ]
+  ],
+  "original_colored_faces": 68,
+  "colored_faces": 70,
+  "neutral_faces": 842,
+  "palette_entries_unchanged": 2,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "actual_visual_review": {
+    "seven_full_views": "Actually inspected all seven via independent-seven-views.jpg",
+    "full_resolution_detail_views": [
+      "entry-detail.png",
+      "facade-detail.png",
+      "roof-detail.png"
+    ],
+    "observations": "Only near-gable first post lower -X side added offwhite. Original post/Y fronts retained. Upper short side, other post sides, gray feet, beam, walls, windows and roof remain unchanged. Original detail framing retained."
+  },
+  "source_and_geometry_limits": [
+    "Existing nonofficial 2012 end-oblique visitor photograph reexamined; source-reported date not independently verified capture. 2024 context is different period, no 2026 restoration/current-condition claim.",
+    "Three-bay/four-post segment and post dimensions are coarse approximations, not measured building reconstruction. Nominal aged offwhite family, not calibrated paint.",
+    "Only lower shaft side, not upper short side [590,592], diagonal Y sides, gray foot, other columns or beam.",
+    "Original public package has no OBJ. Isolated generated OBJ is not a preserved published original.",
+    "Private reference photographs not redistributed; no physical print or slicer certification."
+  ],
+  "model_and_3MF_verified": true,
+  "isolated_build_color_export_QA_checked": true,
+  "scene_independently_reopened": true,
+  "scene_mesh_transforms_camera_lights_render_unchanged": true,
+  "image_sha256": {
+    "preview.png": "7510cf8af0cf90001f026280e1f6c157692e646e40f6b6bb8e2d921ed9efabe4",
+    "rear.png": "f37ec2aebb4bab8cdde1b2161f9ea72d9a5ed756c55e9601acafd13f33d45789",
+    "front.png": "a19817d1b384a40fa51400a8a92d80b775d6b2b680e8dddcf63ca3dbef9ebbad",
+    "back.png": "873bb714dc458151eec575d4b6abddafd0d6ff01c5ca159455b23f9ef077ffe8",
+    "west.png": "139891ead7a29a401671f81667d7bdadbf4b58f4139bfecae5290fb2720fc223",
+    "east.png": "70236aa0f3099b5fe906d4e90e45106ced0c0b0d2a2d4ab1bd2ae8c00971ab56",
+    "top.png": "716f8eb64b404dfbc6f52fa8a206ffe4dd0778ddec73bd8c021cb7b71164860d",
+    "entry-detail.png": "c3b22039224bf9f02641415828bf6ae74b6f6c8723f9541bc9023d2cacff5dcd",
+    "facade-detail.png": "1ab449657c89acc6c064246f6008b4025ac33bbf575f8053d905873987f9385f",
+    "roof-detail.png": "7473b7740c27b745a0fda63c4e8530ba47a88cbff424434c9d80de973428a605"
+  },
+  "file_sha256": {
+    "model.stl": "5911c359bf430b39188165357ecb05ff66d2a2b016b552a73edbbc1ba6ad0410",
+    "build_model.py": "abfaedf2d5eabf20df12cd9b80c9f1d2919d1015c5dc6944f29be841959aeea1",
+    "color-mesh.npz": "3d2055d479f25aa0c4b09a11061a47a645e2edb4019e49765c92b7725c92d130",
+    "palette.json": "93a6eec7d12080f3b61b4f6c42769f9e8372d8f08b7e5218f43737ce25054ea4",
+    "appearance.3mf": "d807fdbaeaf7d98a59afe48b340a97f51266e50feb4328d9d05cddc6b8021dd7",
+    "appearance-materials.json": "48df5ebe702abb85dbe949bb3fd904ecde174ccbcc0fdb0c1dc7fe6e81659c30",
+    "scene.blend": "e2d698c96d14ecf8e17b6bc7e2cfd00ac41e3906bc73f603c9ffa5551c0f0eee",
+    "colorize_model.py": "9d3c60aee00aa2fd38890652f6c8af0b6747f60a7a390e9dfaeb7206d2068608",
+    "export_appearance.py": "9a179d41df6adbde95dd598bb116af526065618513801fc8a3bb62456549bb10",
+    "validate_color.py": "1bb5995abbec7551a3b2cfc774123e02a9acac339408dfc932eb45273360dde4",
+    "verify_color_scene.py": "91c5ca1e9633ff46c5395231c0f7e17f4007ff8f99611c4df25ea2a3fd9b99dc",
+    "render_color.py": "77ebea885a0536be78ce1212a710c4fef154966f2970a65d85a415380c71bd58",
+    "README.md": "f767fbc1d8202a9e006cb8d47298189ee709a296e2b6042775fb194571ac86e9",
+    "CHECKSUM-SCOPE.md": "f25116b9b778f9f22a7e254fef9fa26bf91292a0f4ad25f122af40fcf5215871",
+    "COLOR-ASSIGNMENT-QA.json": "cbb71db71d7b1ad3543aa8994ee804ee7d888172b92adbfd65355dc928547a4e",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "86cb3ed443d74c92ce52471dac849962e19cdb5182e2050e3699cbad461347f3",
+    "SCENE-QA.json": "dd015452bf2bb7afb610f841a57ccf8187d9fb22ea6e3ee82498ea7572936dd0",
+    "FIRST-POST-SIDE-SCENE-QA.json": "cdcfbfb8b59e58c203c6bed5b274da5ab2bd094d51b60c5f36a8e6453915e83a",
+    "FIRST-POST-SIDE-SOURCE-QA.json": "1853570fa93126f47863ced4cfb60d872a381898b9f421a9eb9081a9169ec2d4",
+    "COLOR-SOURCE-REGISTER.json": "1853570fa93126f47863ced4cfb60d872a381898b9f421a9eb9081a9169ec2d4",
+    "README.zh-TW.md": "f767fbc1d8202a9e006cb8d47298189ee709a296e2b6042775fb194571ac86e9"
+  },
+  "no_blockers": true
+}

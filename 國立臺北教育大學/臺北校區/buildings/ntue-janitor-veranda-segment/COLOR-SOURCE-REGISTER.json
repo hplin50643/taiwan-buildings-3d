@@ -1,57 +1,38 @@
 {
-  "slug": "ntue-janitor-veranda-segment",
-  "count_delta": 0,
-  "geometry_change": false,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "go": {
-    "file": "NTUE-JANITOR-VERANDA-SEGMENT-COLOR-SOURCE-GO-0236.json",
-    "sha256": "fbd2be3d0a9c523260564b90bd7a1f0f5a6e1e9221024af5179ea2a146b2b42c"
-  },
-  "review": {
-    "file": "INDEPENDENT-MAPPING-0235.json",
-    "sha256": "b27b5136b342fbff79f797ffc586b40b334615f2719ab29876df3ecf447e4eb3"
-  },
-  "source_images": [
-    {
-      "file": "visitor-1.jpg",
-      "sha256": "a0dd8b9f05090e7a350935b450d0c8a651c5b22fb46115130e58d9344819122d"
-    },
-    {
-      "file": "visitor-2.jpg",
-      "sha256": "271684727ebb351aeea705d7f2a91dc11935b915afee26d59fbdea08a439bf03"
-    },
-    {
-      "file": "visitor-3.jpg",
-      "sha256": "4da480f061d2f7807de6e998d087aaeadc1e554e57fe1d218608ac4823386608"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Only first post near visible gable, outward gable-facing -X vertical lower shaft",
+  "face_ids": [
+    578,
+    581
   ],
-  "limits": [
-    "All gray masonry feet, including top surfaces.",
-    "All side/back post and brace faces, unobserved portion of cutoff and rear facade.",
-    "Entire front beam: older dark reddish fascia and later flaking pale paint, not a uniform color claim.",
-    "Red-brick wall mass crossing gray base without original material boundary.",
-    "Roof planes: moss is not green tile material, changing weathering is not a uniform material color.",
-    "Glazing/window backs, door reflections and interior views, floor and site base.",
-    "Only visible gable and selected three-bay/four-post veranda segment, not whole historic dormitory or full column count.",
-    "Does not include separate toilet building or auditorium.",
-    "Original cutoff, uncertain lengths, tree-hidden openings and omitted rear windows remain unchanged.",
-    "2012 and 2024 reference periods are not one date; no 2026 current or restoration-completion claim.",
-    "Only exterior photos used; source originals remain private, never textures or public package imagery."
-  ],
-  "rights": "Private references only; no public images/textures or commercial-rights inference.",
-  "source_private_backup": "Sources separately privately retained.",
-  "domain_correction": {
-    "file": "FORMAL-COMPLETE-Y-CORRECTION-0241.json",
-    "sha256": "8e0af95674725932599eb033004705999141473d481b698e144c9f7fe1b94c69",
-    "current_domain_counts": [
-      18,
-      16,
-      16,
-      18
+  "new_faces": 2,
+  "whole_connected_domains": 1,
+  "bounds": {
+    "x": -58.6,
+    "y": [
+      -36.6,
+      -33.4
     ],
-    "total_approved_faces": 68,
-    "neutral_faces": 844,
-    "reason": "Original beam ends atx±64;outer Y ends to±66 remain exposed up toz43. Include all4extra triangles, no geometry change."
-  }
+    "z": [
+      10.5,
+      36.42222213745117
+    ]
+  },
+  "original_colored": 68,
+  "proposed_colored": 70,
+  "proposed_neutral": 842,
+  "triangles": 912,
+  "material": "Original index0 aged offwhite #CFD0C7, both original palette entries unchanged",
+  "sources": "Original visitor2 2012 end-oblique photograph re-examined, exact registered hash271684727ebb351aeea705d7f2a91dc11935b915afee26d59fbdea08a439bf03. Original visitor1 and2024visitor3 context, all exact hashes. Not official photographs or new angles.",
+  "evidence": "End-oblique view identifies near-gable first post. Its outward side is visibly offwhite above separate gray foot and below Y brace. This is not all-four-post mirroring or whole-column backside inference.",
+  "limits": [
+    "Original three-bay/four-post segment is not full building or exact observed column count.",
+    "Post cross section and height are coarse approximations, no measured geometry certification.",
+    "Upper shaft separate2faces[590,592] excluded; diagonal Y surfaces, all other post sides, back, gray feet/top, beam and roof excluded.",
+    "Original68front faces include corrected exposed Y ends; all retained exactly.",
+    "2012 source reports2012-02-04;2024publication is distinct period, no2026current/restoration claim.",
+    "Nominal faded offwhite family not calibrated HEX, surface weathering/cables not added."
+  ],
+  "new_source_screening": "Public search finds cultural identity/guide references and old2009Flickr; no new period-matched close opposite view established. Does not justify enlarging to beam or roof.",
+  "historical_source_register": "qa/first-post-side-previous/COLOR-SOURCE-REGISTER.json"
 }

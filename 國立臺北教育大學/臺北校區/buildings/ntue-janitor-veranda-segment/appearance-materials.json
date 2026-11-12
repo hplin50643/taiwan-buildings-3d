@@ -4,13 +4,13 @@
       "id": 0,
       "name": "Observed narrow post and Y brace front aged off-white",
       "hex": "#CFD0C7",
-      "faces": 68
+      "faces": 70
     },
     {
       "id": 1,
       "name": "UNVERIFIED main walls entrance windows roofs neutral",
       "hex": "#B8BAB5",
-      "faces": 844
+      "faces": 842
     }
   ],
   "domain_face_indices": {
@@ -89,6 +89,10 @@
       815,
       816,
       822
+    ],
+    "first_post_gable_facing_lower_shaft": [
+      578,
+      581
     ]
   },
   "coplanar_components": 211,
@@ -97,7 +101,7 @@
   "geometry_policy": "912 original triangles unchanged",
   "limits": [
     "All gray masonry feet, including top surfaces.",
-    "All side/back post and brace faces, unobserved portion of cutoff and rear facade.",
+    "All side/back post and brace faces except first post lower gable-facing side; cutoff and rear unchanged.",
     "Entire front beam: older dark reddish fascia and later flaking pale paint, not a uniform color claim.",
     "Red-brick wall mass crossing gray base without original material boundary.",
     "Roof planes: moss is not green tile material, changing weathering is not a uniform material color.",
