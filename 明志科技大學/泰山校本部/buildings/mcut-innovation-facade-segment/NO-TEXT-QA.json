@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in mcut-innovation-facade-segment-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "258c79432d051be02ce64c8e1ef43f258dd01781b19d17d9efe0d55685004295",
+    "east.png": "fdecfa9b807e560fab295c3da5bba51352b16cbb1d430ff02ae11b38f8d3141e",
+    "entry-detail.png": "1d5d6f2d5eef0fb09a3d0a8c50ab413d32a0c3d854c680680d6d7bbbb22dcf6e",
+    "facade-detail.png": "2485fc16c2a0b90c2d44f00849131f43201601f976ead2ae4cffae24aefcf4e5",
+    "front.png": "dc3b61cbccbed419244009f19487b34d1b51888a413ecf27bfba282a9cc5313d",
+    "preview.png": "a705b9a231f7ac6fcd399877cd93bd5ba1b8091bf968f6a084619b92d83614ff",
+    "rear.png": "a63a56ae6e90450dbcd269238913fc2220b5ab8f1ed07d3eb5c36d992b432c97",
+    "roof-detail.png": "a13dacacbe65c48b86d100b69bd5310804eec0a633b10e87a4c549bfafdafe13",
+    "top.png": "2670951cc89b4b3af1994692479f9fb2647efd034cb8a2f263e0b59b8e2dcba3",
+    "west.png": "278610853908dcd2fa8c8848e3ccd1d71a28b537aecdb6219d0f055493f27438"
+  }
+}
