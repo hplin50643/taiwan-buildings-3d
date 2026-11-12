@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-veterinary-one-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "e90d11acfff8212abfa88562d232c075af25dd95b5b83825b03db4a46457a215",
+    "east.png": "99af74fa1be56c72596042b43238dea089c29917e1dde6f0f4ccabe6b3d532d3",
+    "entry-detail.png": "698804e2ba4fe482abf24857efa58c754d82a58463f81e326b544bd0de69ab4a",
+    "facade-detail.png": "b10e57cf492745f5f489163b5647c596040368f56ad85d917d93ac41f72be636",
+    "front.png": "7574c5e08be11301465ceeef44a14f7e69de351faf8f4242836a945b69b7562a",
+    "preview.png": "8c2d53a795fb013e69a42c55de107429f10ae324a241b049ecd31bc4a1f97a30",
+    "rear.png": "7d0921f39bbf5d0f85130cf7d5024f369cf1024820f0ee71ceeb092d026bc7d4",
+    "roof-detail.png": "e186d218931453ee556b9a8e339e72bab8a118568faa1d11611585e1bb16cd92",
+    "top.png": "54e423d2b326e8831d9540b33327acf3dfc7c15199d20ae8254c3d5cc0a73db2",
+    "west.png": "a42d0ab2292faf7078bdd1a82174b9736a2780aa6eec264f4d05f871e7fd5c0f"
+  }
+}

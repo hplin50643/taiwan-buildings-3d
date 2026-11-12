@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-new-moon-pavilion-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "0274d6413df276c5957337b520a732d73917d9b266cba1f8f95c5272849007f6",
+    "east.png": "6141cd2dbacaab7643abc246f8058fa9f1799339bd4a8c932a3ae1bf8541eca8",
+    "entry-detail.png": "855e23fe9e133eca939fd06ab21c286b8ea55bc9b517f36b9b0090e6a6486a01",
+    "facade-detail.png": "910b6c18242c6622cb93f44107e22189b6ffb064546a7d68c8c1c38baf2b2e2f",
+    "front.png": "72a1ebf7610622474d1630a8310dd32a211a2e8fbba93114f9ec7efaf2169de5",
+    "preview.png": "5f69b9563b66813dc6b4c6c91950b337ca7c2e50ccb46a580851352bef5af41e",
+    "rear.png": "666018c3c343571ce8780fa0968fadc1f43981ca58703a3f385d12b1d32cd8e0",
+    "roof-detail.png": "3e7c17e84910224cfdecf97231b247f0d1304cbaed70524a8f856db69b4d84c7",
+    "top.png": "0dd6eb1305979d66afe801ca75947c820b6ba40363a36f8407fe99e77390458f",
+    "west.png": "a6382279825eb50e0ae436c230eeddbea3aa29ad8c99db1849892a2f1a6b81cd"
+  }
+}

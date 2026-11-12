@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-xinsheng-lecture-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "7c11ad62a622d1b17411a0a1d50dc61f7ff5f6990b5e9374ddcddc4bc866c610",
+    "corridor-detail.png": "1ad47282a995c069fe9a5305dc0d84bd064b2020cb90414d997ee347cc0d4fd8",
+    "east.png": "970a5363a3a7bc550a292081d32a096bf32a8b54722e805373b1e98ca44551c8",
+    "entry-detail.png": "09eb0b926fcd11a5ed093f941fdd1e7e4572bf6738f66605164a21db0c2026af",
+    "front.png": "7537c61d168683b7c8d1e7c6dff114d01dd5f53d1eea0ac52d7b66e2c025513b",
+    "preview.png": "558dcc3551c1b9c82c74feb008fe4174408a14718ef5d14d3a17dbfde9b3a836",
+    "rear.png": "82ce54102b6781038f7245949c7b7781849f2b45f2c73f7f8110f9e288603a72",
+    "roof-detail.png": "60767564d3f40ba58ab57465e568d4cf51f662d8e8f50f79adc322984e981f27",
+    "top.png": "3dfcf8b74daee9f2415812e1f6e46307c9ccc2f6fe2c187cc39ae66187afcbc8",
+    "west.png": "78f17c88ccfa779c6089d6c44502717c6a2551ae32315a0bccdbed42f2e61b82"
+  }
+}

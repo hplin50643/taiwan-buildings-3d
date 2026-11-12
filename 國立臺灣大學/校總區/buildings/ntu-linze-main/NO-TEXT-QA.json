@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-linze-main-all-views.jpg; captions and backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "de7c674ad4ea5fdb96e83fdf6e4fdf0e3eb9533b645d7c92c8d59977a4a70d12",
+    "east.png": "29913b18f81d806f6edf9952d9aa425237260c7db465e6b92390d508db7eed0e",
+    "entry-detail.png": "2284bc838db69f539fd949c0bdcb7742b1818675336a40d445fa9d9201f52987",
+    "facade-detail.png": "bb290595484e07e3bdf67d69206e3a79eb517fa0b0057286769dbacf31177733",
+    "front.png": "aa2dfd16d7845bed19a34c78d6fa89dd89c94c06abd2bdfe0a40c1bb9fc18273",
+    "preview.png": "a698daaee812b7b2bb01a43ea354e519087bd7579fd6f96876e606a310233bc3",
+    "rear.png": "4d96c354276d49ea2f34880a811ad57486bbd2b4226f5f08e49f53b53380c601",
+    "roof-detail.png": "a98a564fcdb1f3eede5dd42461ab7b235fe77b8ddf1adb23e1dcf4e0c4fdca0f",
+    "top.png": "0cfb50d1006907b05640b11dfdacf0e53aca3f456b976a013cb7e6a95acac821",
+    "west.png": "ef78e6abedf61bf368fa96c534b1f54f3507d1439cd662f37101949f64a3a551"
+  }
+}

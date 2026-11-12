@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-sociology-social-work-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "6390752f7ddd56f88481fe0e5fde94f5fcf0f1e889b8bea06958f87ad29ebc0d",
+    "east.png": "480b29b7ce060e6cb70764047c064a7d7c43fd8f0c9facc8239ce23487325989",
+    "entry-detail.png": "421cf7e41750b9b11d4f7153129b9633e02491225b4e57260fe717dc17e316fb",
+    "facade-detail.png": "e958c12fa7044ac571b7e52ddb4833930443c14dc0705dfdb5d9146af378e0a0",
+    "front.png": "9c5d8ba65358e387ed53a917a05a0e3c1efc99a349eeab44049a454e324a318a",
+    "preview.png": "6975503066fa64d1ba951d8f6e08f7084760696adcb67c27ec37a24490662982",
+    "rear.png": "51558a4f8a315b314fe415f3168523e34e0f57ba2395a90ced049187b54372be",
+    "roof-detail.png": "283b5044790857d0742383c743b96b6c7ff522597ba4a717676f7fb2f308195f",
+    "top.png": "50fa70643bb0d54e97ca3bcbf253a399094182657a64f54b6eaebef1e7a7bdc9",
+    "west.png": "ef80c9a189955958b30b6bcb1fcada4d97e0d11c5aa639fc48fdfabb2f89d31c"
+  }
+}

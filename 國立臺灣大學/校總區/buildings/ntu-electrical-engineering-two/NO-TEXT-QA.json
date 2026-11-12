@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-electrical-engineering-two-all-views.jpg; captions and backing absent, original geometry, materials and cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "022ea9d46fa6663ddfdb9949dfbc1083f6c4c0ab6142cae7a6159b25320d2eb7",
+    "east.png": "edabe46cce6bfaef299c6b2dd4bccaf2cfe15105d183414282eeed5969141d39",
+    "entry-detail.png": "1a3f4b2d1a56868f2264d09f4f97bcfba5cea5101d60e7f0328e4afac1e3a97c",
+    "facade-detail.png": "3368d5cbcebefa197f95c751e439da2106a00d63f7e9d81517432beeadd58cf5",
+    "front.png": "5f8bd950e20b4131617d8a8c08d3c6176681a1f6633e0d7ffb19799c01ac239d",
+    "preview.png": "5078a7692514a7f8b52a4e5e9543a856e8fc91e59624d2aed9407b5b3d3146e0",
+    "rear.png": "2c6551c8c7976cc8ac4056d6d66b60de5192fd4eb39ff29072763a865123ab2d",
+    "roof-detail.png": "21a49a511c488914fad128db64233226ad794ecb908ca89e8fd368f7d44ef713",
+    "top.png": "63a26e103a3ff9446e6ba3314c5f795f5ce62d8da7ccb451620736494b230853",
+    "west.png": "6064164028ee63f269eccc20ca2457ac32c8afbe27f6161bf9d462bab6d132e3"
+  }
+}

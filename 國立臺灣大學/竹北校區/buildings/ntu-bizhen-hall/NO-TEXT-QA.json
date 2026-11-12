@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-bizhen-hall-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "a230bab36287b1922f3a5c715becbec8526c9b951f8513485933f2a1862632a7",
+    "east.png": "fd33fec35bbcf1ef2a710782e3cba4042b27a4fe18a24286b4caf0683c1239e4",
+    "entry-detail.png": "ad9fe1c589af8bbfa81b0c5e84d28e044e3283cf95675df0968b82382deffb29",
+    "facade-detail.png": "1afb20c3ea741c216c01897b20553b05460b959169287c9e7f589162bee9aaac",
+    "front.png": "7976607193b871e5fff06963e7704b29eacd04733df3863feebb02bcdd85f49b",
+    "preview.png": "d0a04c4f270dc94d5ae131103346837c22b7df72b31b2d27a83f91ac52f89f03",
+    "rear.png": "6bcefd13cffe189662ca44b0c1516125acf3cbb44bdd153f27d3f316d719fb73",
+    "roof-detail.png": "d0f88afda687f8b520dedfa35271674cddf14fa72770ddcaf29063150fcf01a4",
+    "top.png": "ab6c6b7aed3ded6a1c5ecc465a4bd1a228e076e426f87c0ca1b36566ad4db876",
+    "west.png": "d58be0686e9db4cce0229c8d18cf2f0de9dce269f23a79201d364039043b749e"
+  }
+}

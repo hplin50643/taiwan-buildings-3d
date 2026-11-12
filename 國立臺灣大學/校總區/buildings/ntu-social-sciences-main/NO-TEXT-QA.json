@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-social-sciences-main-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "2eb6d8ede151baa4058620d76c44b25493db70480a6fffe68da4ccf1b78a3ccd",
+    "east.png": "39aa1d5f099ca017c2ffcdebf694dbdee46f4341a8bb98ba99908e258e850cd1",
+    "entry-detail.png": "56c0490468273c4abcba24abcc08866b80ccd367b16687856bcd6d792c277232",
+    "facade-detail.png": "a64dac0012bbdcd437d9daaf4a427345d307b58127a5b868075c4b0d6cff3e94",
+    "front.png": "bc9805c613ee214f0e2de4d30b20d50f8a82964c88d88ef943050d23f2aac925",
+    "preview.png": "b503360e2298ec61fa5a30192bf30b03279f60be1a675425c4d09715182368ae",
+    "rear.png": "72279a3e871feceadab1d5ae608693dad1436eaf82a77a472fd31e41a67258d9",
+    "roof-detail.png": "858ac42ce845087d970721260f0c9f8563572860a14a649bf9084a6dc0c7a5b4",
+    "top.png": "f52a48cf77a7ef3fbcfdb8a95bc5f21f18e61b4e54f445b417d6977ed9d82912",
+    "west.png": "85927fcdd9499e66c0aaf6652dee3611bd96aa4c8c91773eb6a8603631b94e33"
+  }
+}

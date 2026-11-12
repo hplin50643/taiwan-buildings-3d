@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-wancai-main-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "7dd86918de73fea883e98900bfb18c7982a548e8249eb8fe96cca6ba68a1d148",
+    "east.png": "3025dbbdf078c8fcd7604ee7d8e6b4670445d2519049356494798bae657134ec",
+    "entry-detail.png": "cf6bb1714c9e73c3114b6c7482d65744c0adbf652f9a8bc35eabcd3ea108837c",
+    "facade-detail.png": "2be0f401a929a0f80f99b7c118533926ee1a46a5896544c464a0ecdcaffdd014",
+    "front.png": "d342f5fdc4810e5f72bb4abb940584181ad33b093591a2dda7ac95987f8a3e2e",
+    "preview.png": "851b40487d62cbe47da2a851e687031575d51a6ca04134e78dde95cf60b8192a",
+    "rear.png": "1764d9b09e8b25f3e89d48e9cd7804d14deb692ba0d1340deea62d1f48be42fc",
+    "roof-detail.png": "6afcec49745592cbf257dca325e4325e8cb7370f160fcc346c46e203776eabe6",
+    "top.png": "b641bc7e4d958a43e19664590befa08bfc2c3807a304c55bdba80c1da33145c8",
+    "west.png": "69bafe44e83aa8d003d00a2071b66fc39fe8d432808dfc2e9bf375376963d520"
+  }
+}

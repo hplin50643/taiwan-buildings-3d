@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-meteorology-a-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "287ef23ddda24406230e721e478597de0d15d8211c691e59d18981857af06e8a",
+    "east.png": "3fb3b48202b356c6f794a04a861fb35d69c65b2f3e31d16a310a3631f72a9f27",
+    "entry-detail.png": "62b5ad5206dd9e4179cf66a9e017e6dcddff40981a0973ed923eadcf6cc11b93",
+    "facade-detail.png": "c579a358e7331bc15ae81161b28344dd627733bb9dc895c86f949736ac713c55",
+    "front.png": "4d99053313809b20aaae75ba0829338ac967121be0019804222bb86ccbe2bac7",
+    "preview.png": "aa69ff236b6db150a6c6a20d92298c8352b8de1a2d4964dd92a448a1d010c4e3",
+    "rear.png": "5d05f0418b1057e30b21074024f1dda46a2782e32deb1e11884b0f30167a14df",
+    "roof-detail.png": "9c674bc45d7cfbedf29722d77ea1763e5063ac037bda7df035000b2d495ba27a",
+    "top.png": "6a7d0ad8976ecba24beec6c3758f74da8afb6d1dc958fdb07187576dd1c2e688",
+    "west.png": "669d9892fd7cc708de6645471589022c7a27bc6dd407204d1e25e5e527195e59"
+  }
+}
