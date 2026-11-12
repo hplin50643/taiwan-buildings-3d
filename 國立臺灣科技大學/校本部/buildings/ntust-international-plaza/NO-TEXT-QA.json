@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntust-international-plaza-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "63207053f1799ebe78179b129169aef8b35d395d7fa39805b11d3630e5c2fe24",
+    "east.png": "1fbe035c63d5a00a0e57071e7cc637b6d34101b02f87f7ed3b258089da275ab9",
+    "entry-detail.png": "62be5a9b2f5f10bfcfad1df49c687e69133ddc3e12de2824a5d1012a391f3942",
+    "facade-detail.png": "14644603375b619ad778033b5413160431bd81c676c818dcf16cdaa90416598a",
+    "front.png": "9f42960d700a4aeb99a711bc6892e99f777f7683fc240b915ad4fc1d261396e4",
+    "preview.png": "971535af3ac3ad08e3602327459de47388c6634f771d4efefc9fefb370854c8f",
+    "rear.png": "8fbb35e4ebc195f81dee851f2469311d675589b3c25109b65c6744bf34e678b9",
+    "roof-detail.png": "592ac6595d673eec229e684a108c6d6d5969c40dd1e2c66c16f160706d7dc753",
+    "top.png": "035883beeb54605c9fe58e5559b216c10a4882832806e58fe77eb5deb4adc2fe",
+    "west.png": "0a675c0f26b45d146fda85e2df693217d152083e7dbf23cde78e17345eeaa3ad"
+  }
+}
