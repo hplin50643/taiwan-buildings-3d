@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "completed_at": "2026-11-12T02:06:41.505003+00:00",
+  "method": "All twelve original run_checks.py stages rerun unchanged in isolated copy with exact requirements.txt versions; existing original source and artifact bytes verified against pinned tree or original manifest.",
+  "environment": "Python3.12 / Blender4.3.2 / C++17; single thread render and OMP settings",
+  "dependency_versions": {
+    "manifold3d": "3.5.4",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0",
+    "rtree": "1.4.1",
+    "scipy": "1.17.0",
+    "shapely": "2.2.0",
+    "trimesh": "5.1.1"
+  },
+  "stl_sha256": "7e9fdb8a610f566d7f22e06d07545f12d2e761ae16f5b660f8e2f5d52cb5388d",
+  "steps": [
+    {
+      "script": "check_raw_mesh.py",
+      "script_sha256": "01e4e1e63205b76fb3299100fa974f9075c5c5d60fb4f09ed343b88b3fbc42af",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "check_component_detail.py",
+      "script_sha256": "e9a2cbe809ee69b444d2ac2314c42db4a8300652d3b18a6dfe8f0868c713893f",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "check_negative_controls.py",
+      "script_sha256": "e4e3c37ff7ec443a2e14e36b683047b3b1168dad6b2cb893e7a6296db8ecce5f",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "check_dense_surface.py",
+      "script_sha256": "7d6c26b01bda3c794340222ff8d5a6d0b4afa29eac4b86a9bea09532dc727e50",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true
+    },
+    {
+      "script": "check_drum_relief_roots.py",
+      "script_sha256": "9da4d853e07043dc3c57d01a708547f9f973532163a2f9349ce6f30abd45b7a5",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "check_drum_root_intervals.py",
+      "script_sha256": "468da2ec5e2be2702661cdf3a0d1cbf8016551a49cbc683009901a589826d8e0",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "check_full_boundary_intervals.py",
+      "script_sha256": "bfd0ea0cc7256e3dd91c5043cac3fb852c4c6a1654627a229a78a749c7c7fcc6",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "check_flag_boundaries.py",
+      "script_sha256": "73d47a184f9e50ab83ad450aacd46279c68271a9677f75b6f1d4086deedc9525",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "check_reproducibility.py",
+      "script_sha256": "ed86db85bb7f55d2a97cc4e97a2696d762f8eb54a6deaef069225053a505856f",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "validate_model.py",
+      "script_sha256": "0e82a68349d7624ab07cf237e516e21b69979ad02b446cca41971626172eeee3",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "check_v3_gate_controls.py",
+      "script_sha256": "cf1f3feda7b477e59abaaae7282dce994ea8eae12f70c7418e5a01667bbb21e4",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    },
+    {
+      "script": "check_documentation.py",
+      "script_sha256": "7c3f572f8137b855be6d6a7758a9ad7d14e2cf4b1e27131b3a8718201cdc9c90",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true
+    }
+  ],
+  "component_layers": 520,
+  "maximum_combined_opening_loss_fraction": 0.0037360437370455497,
+  "maximum_individual_polygon_loss_fraction": 0.008634515094540555,
+  "unqualified_strict_diagnostic": {
+    "passed": false,
+    "expected_exit": 1,
+    "short_normal_segments": 1977,
+    "minimum_first_chord_mm": 0.0133115275996,
+    "fixed_direction_flags": 3,
+    "note": "This expected geometry diagnostic failure is retained, not converted to pass. Bounded root and boundary evidence gates passed separately."
+  },
+  "bounded_validation": {
+    "exact_approved_stl_preserved": true,
+    "every_report_bound_to_actual_stl": true,
+    "raw_original_mesh_all_checks": true,
+    "all_520_unrounded_sections_and_original_polygons_pass": true,
+    "negative_controls_reject_real_failures": true,
+    "strict_false_and_all_original_samples_preserved": true,
+    "regenerated_raw_numeric_rows_identical_to_v2": true,
+    "all_short_samples_uniquely_covered_by_fixed_roots": true,
+    "zero_unclassified_or_failed_roots": true,
+    "root_points_and_original_normals_preserved": true,
+    "complete_root_and_next_intervals_have_no_boundary_overlap": true,
+    "all_full_root_winding_controls_pass": true,
+    "all_original_normals_screened_with_no_first_material_boundary": true,
+    "five_after_boundary_rays_explicitly_retained": true,
+    "all_boundary_material_air_and_finite_triangle_controls_pass": true,
+    "three_original_flags_have_exact_bounded_explanation": true,
+    "stl_saved_blend_and_four_actual_stl_previews_reproduce": true,
+    "every_recovered_numerical_source_is_byte_identical": true,
+    "detail_binding_dense-short-samples.json.gz": true,
+    "detail_binding_drum-relief-root-samples.json.gz": true,
+    "detail_binding_drum-root-interval-details.json.gz": true,
+    "detail_binding_component-layer-details.json.gz": true
+  },
+  "original_reproducibility": {
+    "independent_rebuilt_stl_sha_identical": true,
+    "saved_reopened_blend_exact_oriented_triangles": true,
+    "saved_blend_one_mesh_mm_units": true,
+    "four_actual_stl_renders_reproduce": true
+  },
+  "limitations": [
+    "Qualified digital checks only, not full-direction thickness guarantee.",
+    "No slicer toolpath, actual printing, support clearance or machine/material assignment tested.",
+    "No independent real-world survey or contemporary material measurement."
+  ]
+}

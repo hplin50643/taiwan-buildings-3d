@@ -20,7 +20,7 @@ def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
-indices=[]
+indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
 for p in mesh.polygons:
  x,y,z=p.center;n=p.normal;i=1
@@ -57,10 +57,42 @@ for p in mesh.polygons:
  if 32.1<z<35.2 and y<-17 and rad>25.8:i=6
  if near(z,78) and n.z>.9:i=0 # main roof finish not established by photographs
  if y>=24 and n.y>.5:i=0
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# V2: only the full outside back faces of the existing roof lattice receive
+# its original concrete material. The broad y=24 and y=24.5 building cuts,
+# main roof field and presentation base are intentionally excluded.
+# All triangle vertices must fit the original screen rectangle and y=25 plane;
+# polygon clipping independently excludes every original open grille aperture.
+EPS=0.00001
+openings=[(-58,-49),(-45,-38),(-34,-27),(-23,-16),(-12,-5),(-1,6),(10,20),(24,34)]
+def clip(poly,axis,bound,sign):
+ out=[]
+ for a,b in zip(poly,poly[1:]+poly[:1]):
+  aa=sign*(a[axis]-bound)>=0;bb=sign*(b[axis]-bound)>=0
+  if aa:out.append(a)
+  if aa!=bb:
+   t=(bound-a[axis])/(b[axis]-a[axis]);out.append([a[k]+t*(b[k]-a[k]) for k in range(2)])
+ return out
+def overlap(poly,x0,x1,z0,z1):
+ for axis,bound,sign in [(0,x0,1),(0,x1,-1),(1,z0,1),(1,z1,-1)]:
+  poly=clip(poly,axis,bound,sign)
+  if not poly:return 0
+ return abs(sum(a[0]*b[1]-b[0]*a[1] for a,b in zip(poly,poly[1:]+poly[:1])))*.5
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=[verts[j] for j in p.vertices]
+ if (all(abs(v[1]-25)<EPS and -63-EPS<=v[0]<=58+EPS and 77.5-EPS<=v[2]<=91.5+EPS for v in q) and p.normal.y>.999):
+  for x0,x1 in openings:assert overlap([[v[0],v[2]] for v in q],x0,x1,81.5,88.2)<.0001
+  p.material_index=4;indices[p.index]=4;changed_faces.append(p.index)
+  change_reasons[str(p.index)]={'family':'roof_lattice_complete_back_faces','material':4,'support':'all vertices on y=25 and inside original screen x[-63,58], z[77.5,91.5]; zero positive-area overlap with original apertures','basis':'Original concrete grille component continuity, supported categorically by source photographs. Exact hidden rear face color is inferred, not directly resolved.'}
+assert len(changed_faces)==50
+
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1';scene.cycles.samples=32;scene.cycles.seed=0
+obj['appearance_policy']='Original geometry and palette preserved; complete rear surfaces of existing roof lattice use concrete continuity; artificial rear cuts remain neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-full-face-continuity';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.device="CPU";scene.cycles.use_denoising=False;scene.render.engine="CYCLES";scene.render.threads_mode="FIXED";scene.render.threads=1;scene.render.resolution_x=900;scene.render.resolution_y=800;scene.render.resolution_percentage=100;scene.render.use_stamp=False
+scene.render.filepath='//appearance/front.png'
+for text in list(bpy.data.texts):bpy.data.texts.remove(text)
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -76,17 +108,17 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown rear cut neutral; authored base not a grass slope','No actual trial print; original small-feature QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-full-face-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Existing roof lattice back faces use qualified same-component concrete continuity. Hidden face color inferred, not directly measured. Artificial rear cuts, main roof and base remain neutral','No actual trial print; original small-feature QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((165,-265,165),(0,-6,45),205),'rear':((-165,265,165),(0,-6,45),205),'elevation':((0,-320,52),(0,0,52),180),'top':((0,-7.5,360),(0,-7.5,0),180)}
+views={'front':((165,-265,165),(0,-6,45),205),'rear':((-165,265,165),(0,-6,45),205),'elevation':((0,-320,52),(0,0,52),180),'source-angle':((170,-290,90),(0,-6,45),205),'left':((-320,0,135),(0,-7.5,52),205),'right':((320,0,135),(0,-7.5,52),205),'top':((0,-7.5,360),(0,-7.5,0),180)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
- c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
+ c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();inv=c.rotation_euler.to_matrix().transposed();v=[inv@(obj.matrix_world@Vector(x)-c.location) for x in obj.bound_box];c.data.ortho_scale=max(max(x.x for x in v)-min(x.x for x in v),(max(x.y for x in v)-min(x.y for x in v))*scene.render.resolution_x/scene.render.resolution_y)*1.18
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
   length=struct.unpack_from('>I',data,off)[0];typ=data[off+4:off+8];body=data[off+8:off+8+length];key=body.split(b'\0',1)[0]
-  variable=typ==b'tEXt' and key.startswith(b'cycles.') and key.endswith((b'.total_time',b'.render_time',b'.synchronization_time'))
+  variable=typ in (b'tEXt',b'zTXt',b'iTXt')
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)

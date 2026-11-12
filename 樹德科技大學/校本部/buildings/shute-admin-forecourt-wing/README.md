@@ -1,5 +1,14 @@
 # 樹德科技大學｜行政大樓弧形入口及前庭行政翼（局部）
 
+
+### v2：屋頂格架完整後表面補色
+
+將原屋頂開放格架的 50 個中性三角面延用同構件混凝土灰，明示隱蔽背面為材料連續性推估。大面主翼／短回翼仍是人工終止面而非完整背立面，保持中性；主屋頂、底座及鋪面也保留。5,520 個原有色面、幾何、尺寸、transform 及八種原材質值不改。
+
+[左側](appearance/left.png) · [右側](appearance/right.png) · [近景相似角度](appearance/source-angle.png) · [九圖檢視](appearance-review-v2/color-continuity-review.json) · [變更、來源與限制](APPEARANCE.md)
+
+本輪七張終圖及兩張原色同相機比較均採 900 × 800、CPU 96 samples、單執行緒、無降噪。原代表圖及歷史 QA 不改；尚未發布，最新 HEAD 未重查，未做試印。
+
 ## 模型預覽
 
 

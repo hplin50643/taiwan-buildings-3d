@@ -1,0 +1,107 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T02:12:56.329379+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "7ea888f19115e9dcf09fbefd60eb32ee753f53f37d59969d162fdd0350c8c7c1",
+      "personally_viewed": true,
+      "assessment": "Full forecourt wing well framed. Original rose walls, beige tower, teal panes, silver frames and concrete fins retained. Roof screen continues pale concrete; no text or new geometry."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "57ee09cf61a9d48c9b0f736319081524db21415e536414834c32c3c746250427",
+      "personally_viewed": true,
+      "assessment": "Rear roof lattice surface now shares concrete family with its other faces, retaining all holes. Large main and narrow return artificial cuts visibly neutral; no invented windows. Frame and silhouette unobstructed."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "223b165992a27417f6d76a419a34977035443a92bd81346df9a116cd484eee4d",
+      "personally_viewed": true,
+      "assessment": "Frontal elevation shows retained original concrete fins, rose wall fields, green glazing and beige tower. Roof grille apertures stay open. Full base and tower fit inside frame; no text."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "aaa4f9631537c2d219790b0717c5b27936ac2c1826362eea554b5f42c32f1ffb",
+      "personally_viewed": true,
+      "assessment": "Low front oblique source-comparable camera shows retained rose wall, pale tower, green drum glass and silver frames. Full model framed with no lettering or new detail."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "6ab32e007356cc7c9bd1ecb5a66818d2879cb058f831942890fba34cab434368",
+      "personally_viewed": true,
+      "assessment": "Top view retains original roof field neutral, concrete beams and frame, rose balcony floor and silver rim. All model extents visible. No new cap, filled grille hole or roof detail."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "34b0e8c2d2c792e83f0a263ddc3be9d3f6fc58344140d378e45184af5721f3c9",
+      "personally_viewed": true,
+      "assessment": "Recentered left profile gives tower and base comfortable margin. Rose original side, pale concrete fins, neutral roof and rear cut remain unchanged."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "fb43970526be6f15d8aefdfc5c67d206eb22e8bbc2634453f637719ce9c8b53e",
+      "personally_viewed": true,
+      "assessment": "Original color assignments restored at exact front camera, lighting and render settings. Overall front appearance matches final, as changed roof grille backs face away from the camera."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "ced6d204a62e893b352cac5c614d78fc739fdac2fc4adc3f18a178830d441de6",
+      "personally_viewed": true,
+      "assessment": "Original roof grille rear is visibly darker neutral than final concrete; large artificial cut remains neutral in both. Grille aperture geometry and entire outline align with final rear."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "f3b8fdecea0191218a459ee3211658521763955f7a6b5fad50ebf280d1a0aad9",
+      "personally_viewed": true,
+      "assessment": "Recentered right profile retains original tower glazing with pale frames, beige tower returns and curved drum. Full top and base fit with margin; no new geometry or artificial rear wall repaint."
+    }
+  ],
+  "before_after": [
+    {
+      "view": "front",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 20,
+      "pixels_differing_by_more_than_8_rgb_levels": 0,
+      "mean_absolute_rgb_difference": 1.4351851851851851e-05,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    },
+    {
+      "view": "rear",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 21633,
+      "pixels_differing_by_more_than_8_rgb_levels": 19055,
+      "mean_absolute_rgb_difference": 0.2927148148148148,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    }
+  ],
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "observations": [
+    "All original rose facade walls, beige tower, green glass proxies, metal frames and concrete fins retained.",
+    "50 originally neutral complete rear faces of the existing roof lattice now use its original concrete material. Hidden exact hue is a same-component continuity inference.",
+    "The grille apertures, roof beams, flared entrance and overall partial-wing silhouette remain intact, with no new geometry or text.",
+    "164 faces remain neutral, including artificial building terminations at y24 and y24.5, the main roof field, authored base and entrance paving."
+  ],
+  "limitations": [
+    "This is continuity inference for simplified original geometry, not precise materials, actual glazing certification, current-condition evidence or survey reconstruction.",
+    "No physical trial print or fresh slicer toolpath. Original digital QA rerun is separately reported."
+  ],
+  "artifacts": {
+    "appearance.blend": "06d8159640462bfe0a43d42760b21c767f63ca02444f26327350d6f8c9c34087",
+    "appearance.3mf": "1e06b6b0801b08952856ae6c38ec64a5fbf2f2514d42ff242875d8ad257184d3",
+    "appearance-materials.json": "e709161be379a710111e406a444fb7dbbe3e356d09e837c9bd530f420b50f151",
+    "build_appearance.py": "9e6a1ccde2f947f2dabcf9c819677a2ebd33beed4b7dc6e13cfecddba1fe4ad7",
+    "render_review.py": "4dfd0d1860810cff1b76a24d1805afd14e506e6f1b0c966d12c7dd27b62b97b1"
+  }
+}
