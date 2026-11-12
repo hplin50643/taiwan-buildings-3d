@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in tnnua-antiquities-conservation-all-views.jpg; captions/backing absent, original mesh/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "8ab32c366282ee98d7da549a416e6dc0424b200659accc10547db3841c4ed63d",
+    "east.png": "c5de4459db77880f360e9efa24fe0a9d0c0972e3a5cd940004f03f99626bc2a8",
+    "entry-detail.png": "204a4e6428e665fb276dcbb69184d9c2de4bf6b529d3abc185029c183658f9db",
+    "facade-detail.png": "76ba3e7014011b766b40589732b0525dbd8443682c89062f7e74d3478dba1c7a",
+    "front.png": "3b5267891a8ab8d534e51a87a6b0f2e5f4d2337d291be424ee22019f5d8dd7f8",
+    "preview.png": "1498754e3062d4c13838727f2dda16188cefea530835f5c30e5d5c1d18394a39",
+    "rear.png": "50c716f4e2a0aa34bc5cd528fb3dac52dd7b2f8a3b53577e2ade7621c66c54e9",
+    "roof-detail.png": "edc37f89c2ae259495b78d144518806019d0992b28633e53e54aab8705bd2a67",
+    "top.png": "0c64e25ac921395df76c740f99229cc90974bc8bfdfab021836b690644b4ab14",
+    "west.png": "127759c33838d5a6e998f171dae26794e4d24a27a5b22b6716a89bc57556d151"
+  }
+}

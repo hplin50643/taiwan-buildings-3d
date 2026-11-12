@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views in tnnua-sound-image-all-views.jpg visually inspected; original mesh/materials/cameras preserved; no caption/backing."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "0a9fb0146e3dcfe22af317561f6c8763dfc3737904fca980a4a8596417d41fb7",
+    "east.png": "61e702d968d19ea8184c359037a36ff41d1bee6ebbf58de4e2de9541fe3a3ed8",
+    "entry-detail.png": "69907ca31f32efadfacaac3ac3f023bf26319c3c326680907c677e686d89ae7b",
+    "facade-detail.png": "550e123567a6d26824f83b6f615c849c6ce3373102a7d053e00cc28e6e10df0c",
+    "front.png": "5264779d160004e4f3f0bb856cfcd86a8e9aac7b3bdf311177c60f1cde5947bc",
+    "preview.png": "12d0c13913d28d0045f5a47e32bf1c489c02e90a18bb0b48f2bb86e08e1198a0",
+    "rear.png": "65ca760b457c653acf0446a477c4e407132d71b79ef4e24976e9c69f39867bc8",
+    "roof-detail.png": "192f30021aab4a6a039cfbec57e0620497797caec1fc0d2fde8c833c430010a6",
+    "top.png": "a562d29dad06e7892468a6849a587fb843bef212a4d2f631d6c7bd76aa8fb1d2",
+    "west.png": "29997d4c3703170d6159c78ba4f5ded4c219f38524dc494b3e9b428ac79956dc"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in tnnua-campus-life-hall-all-views.jpg; captions and backing absent, original geometry, materials and cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "5b7c202fe86d605026d61aaf78d0bdb8171cb30b765e7b8dc8a9e08d2cee60b7",
+    "east.png": "8d2bd8eb2033e8043b2d01a9cc5cfa0f038aeb991a2279fbda4e540cfa343a0d",
+    "entry-detail.png": "8aa474875a2d4582fddfed03fddd5cd7125a32067a663c988f4668c52f9816d9",
+    "facade-detail.png": "5a946809bf2fcd65763f026056183fef0b587a8e4024c077245de39c8280b1cd",
+    "front.png": "6269ec2c33cbd126fa1b8d0dd5102546c96f73ac5221c92e2105c0d1b20a4256",
+    "preview.png": "a62f2bf0a036be6ed2729be3150c8a17af4844d7041535ece998c692f457916f",
+    "rear.png": "32493be671644fa38456b7c55541d1cdab7ada99a9602b8a7954b69ed31d8515",
+    "roof-detail.png": "b3fd617b0ca1ebcc5934390b70cc2eac115a0a9b27f8f5850f9e5979d432b5cd",
+    "top.png": "7fd7d3f85d5822e2294517bd8c4f8e82bf9a8c51af0810766600d4db6142c8ce",
+    "west.png": "8688a0f14361deb1e84dd5fd6e21f2ce1b7b02d2e4c0a65494e9897e73a59500"
+  }
+}

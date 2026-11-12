@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in tnnua-faculty-housing-visible-row-all-views.jpg; caption/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "84ffa1253bc2c7481baeb11736e7ef239986033a28de2cff31fa0492c4b9686d",
+    "east.png": "4bd2ed99a554b864e9745171028531ece94927d3d5391efbbbc9178cf0bb31a9",
+    "entry-detail.png": "cbc0410ffa8f031c34a97bef390b5e68872641472d2ce0878eba31f116e689e3",
+    "facade-detail.png": "c4b2afa33fdeaee19bff3913f53543900404c800b0c808f599be16d9c3e8a8cd",
+    "front.png": "c6f930a4673d1dffae8cfb53371cbb7b30ace9452450f2a28d9fbbbee9d12a18",
+    "preview.png": "dfe2f7fa347d0c78549e3d7a9e5bf9488187ed105ada385fc8f67026a5caa6a9",
+    "rear.png": "8f4ee64fcc664e051ecfd8af654cac34c41010c03c1021bb039838e1cded89c6",
+    "roof-detail.png": "4fb52e899fb6904e9759e92affe1748a4e3eb071872656faa78a6bae392d1ee1",
+    "top.png": "ade91ed82d145e465c586d8229aa44d40015d883158fc197819f92581ea85b74",
+    "west.png": "da66cf64877fb93941ba8fb209f2796a59ed89d7196bcdd6e55ea5b95460a208"
+  }
+}

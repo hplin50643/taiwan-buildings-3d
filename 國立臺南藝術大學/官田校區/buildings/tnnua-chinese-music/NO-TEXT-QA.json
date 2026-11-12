@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in tnnua-chinese-music-all-views.jpg; caption/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "3069c3717f5fc38882be0e5caffe8b342d963cdf6559c5369ac62135ee2c1461",
+    "east.png": "76689859e7ca4643dd1d2946a4778ab8b765de1e63cd841b1752f0161b6ad21d",
+    "entry-detail.png": "9cb40e3f0afc546cc01fea8c7454135be49222b6f0af12bf69e6a64ff5f6538d",
+    "facade-detail.png": "828eb6df29db371a37d0fa88403bc36ada3088af3d6c082a46d2dcfbc95476a2",
+    "front.png": "2746b70c87a26d439dfd75fa75088df54cc15e88aa68490e6cf0df0d4e3418ba",
+    "preview.png": "dee352ebc2a5b005017085299051be268e8b3bcd0a38a835e49c0f774328fe17",
+    "rear.png": "f8ebd5392e10b3c91ca9dc2a1b013d1e87465182e99053f4a0aa7b1bde855e8d",
+    "roof-detail.png": "b8262301ad47d373d88b19a8cacf5278f3070933b2ead536e7f57bbe7ac7057c",
+    "top.png": "38e845f38c6869aa7d2c7c515c004697850b5953d4736abc203dd7b9fe952fa5",
+    "west.png": "4969c3a896ccd6e1f3848b127efe6894db6b4ac24f90745dd8be779c9eedbfeb"
+  }
+}

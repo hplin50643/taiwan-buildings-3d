@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views in tnnua-south-lake-restaurant-all-views.jpg visually inspected; original mesh/materials/cameras preserved; no caption/backing."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "540fd24d4b51f62897513eba1367461a5e243bbaacb0857cb77331423ced83a3",
+    "east.png": "48017e4a40668fa2b1961657ecfae34df09711f1936d439d978a1137b1b35e7c",
+    "entry-detail.png": "166b25ca266dab84d4f8850266b4871fb989f3807a64d98547c7291c7ce87ff9",
+    "facade-detail.png": "b25a15d7641d448623c4c5f56d4bcd9dc7e62240b984684054a8e5eb2b48125f",
+    "front.png": "63ac8b663c7c869e74c422ff8fc5f3f82c1b317d7f2e903aa4d31763bd772a59",
+    "preview.png": "73c83b8f43babd2d31e7462616093728814c549b4d303da2825cea131a099ccc",
+    "rear.png": "eb0e2d1bc3f11151ac1275021bb41c22b1e6b064e0d940d7dc04af308eb9c596",
+    "roof-detail.png": "398d81cbd4b4601820282e20dc32a84aebf9e42314890ce02a5110647e3b779f",
+    "top.png": "e6c73d7ab5a2d31a8f31f825bebd229fb86949ba1bfdccd3e1e1de64e8f3e4a9",
+    "west.png": "a8709b239407e60cf83f7e8580b96c58a1c8afd51990fca3cb68203312ee4804"
+  }
+}

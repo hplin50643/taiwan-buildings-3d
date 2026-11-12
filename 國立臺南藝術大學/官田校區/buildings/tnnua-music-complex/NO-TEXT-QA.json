@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in tnnua-music-complex-all-views.jpg; caption/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "54a2f985c302aa83e0e1ac78d60ebaabc47f82e1b324f5d06f7422e1d507a1ef",
+    "east.png": "8babf2a13967ac02d111ff23a008d691f8b18ea521d42abc5e60d7756125fb52",
+    "entry-detail.png": "08bf755fb930fc052ccf6fa274a755aac6899328d9a6fae0496f133dc9a6553d",
+    "facade-detail.png": "953b9f674968c33fcbdef94530cb865d5f8b3ae479589009dfceaf1b260badf0",
+    "front.png": "a2d6b1d983b207f616f85567bedb3db83757599501e0d94231aae5067e87c6cb",
+    "preview.png": "4954c54ae63949c71d2c114bf65d39f1abd86094fa171416800f9ecd7e7644e2",
+    "rear.png": "a181b2aac44657b33eb8624abf34d70b71d9e0c953643a4765c0c7b9c89529b1",
+    "roof-detail.png": "34f0438100d90db718eec531bad5c19e10401f285e84e1e7e857e1e7031ca0af",
+    "top.png": "76b0be65917eb3953fb6533944443e67f6671ccb1a492bdb42c417727159560b",
+    "west.png": "f76b4c16e4170e3be3839a70fedd002b3ad2167e706323d599a77bc874530af1"
+  }
+}

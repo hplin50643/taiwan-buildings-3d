@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in tnnua-architecture-institute-all-views.jpg; captions/backing absent; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "0fdfccbb5aab38780e1725aa2a36a6f21dd07c0936f490fb9a01616ab7860e76",
+    "east.png": "3bc4f0c88f17fc064be8de34f210f0e03683b0cf590f42cbe1be73566753c231",
+    "entry-detail.png": "fe4a327ae1cc4a5ab8b4fc7b2a8d608b9c5ff1d0be9bca80c8437db69c8c8e79",
+    "facade-detail.png": "14965785cb4f8058bd436925a4a18abddbed85c7f720b5d6e67d49102f5f2461",
+    "front.png": "a24ff70108e296a963c7e02c9c7872cc818dd4c635d7a35bdcfcfb22e0cfab90",
+    "preview.png": "c1d8f0ed2519d385c72a4671ab45e4277a9aecb7525de3f2e476b7cdd0c76a9b",
+    "rear.png": "bfd2e890caaef411309cbba650a5650b5455b14321cbcd738db45b5960692a7d",
+    "roof-detail.png": "4213eb90ee2e00d4b3a8fd34c867b988115f70cc758fb6bbea9465ea2edf6867",
+    "top.png": "903f1ad5a9f0d05e1dc6fa4f9f8edbe65b2c208c0e0a26270421c56ca6595151",
+    "west.png": "0031e64ae69d552d311c1e967643d3129e3c8903a2e66c7084fabcffb6dbf1c6"
+  }
+}
