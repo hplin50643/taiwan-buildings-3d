@@ -1,33 +1,44 @@
 {
-  "status": "SOURCE_GO_BOUNDED_PARTIAL",
-  "building": "Hungkuang Gate Guardhouse",
-  "source_go_sha256": "140bb41ef04941b7124339aefc008820296856900011cb1740af862bed415770",
-  "independent_review_sha256": "1fab8f3870fafda11e0060571e65afe0ab3739038d8e279f2d8da72356ad0d36",
-  "sources": [
-    {
-      "name": "official-exterior.jpg",
-      "sha256": "659da2a318580df21984c4ceed552547e375622482d3c5405b4486f4258b2eb5"
-    },
-    {
-      "name": "rear-2024.jpg",
-      "sha256": "16c3ddeab1ede623ec807043963e08d03c2218ca7ee527ff019083a52f57460a"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Rear ribbon middle exterior eight finite ellipse96 facets16..23 only",
+  "face_ids": [
+    1639,
+    1808,
+    1809,
+    1810,
+    1821,
+    1822,
+    1823,
+    1825,
+    1826,
+    1832,
+    1834,
+    1835,
+    1836,
+    1870,
+    1871,
+    1884
   ],
-  "sources_private": true,
-  "original_photographs_not_distributed": true,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "count_delta": 0,
-  "geometry_unchanged": true,
-  "source_dates": "Capture unverified;filename2024 not sole capture evidence;not2026",
-  "allowed": [
-    "Front half curved ribbon exterior98 original triangles pale gray"
+  "complete_domains": 8,
+  "added_faces": 16,
+  "material_from": 1,
+  "material_to": 0,
+  "triangles": 2560,
+  "color_before": 98,
+  "color_after": 114,
+  "evidence": "Original registered rear photograph reinspection supports pale gray rear outer ribbon broad family. Proposed subset is away from downward terminal intersection facets12/13 and cut-end facet25; no top/inner/underside/tower extension.",
+  "limits": [
+    "Finite facet angular interval is conservative review extent, not a true material seam.",
+    "Original elliptic tilt/height differs from sculpted real ribbon; correspondence is only broad middle exterior surface and must be independently judged, not assumed from numerical isolation.",
+    "Photo depicts small mounted hardware absent in simplified model; no hardware color or geometry is certified.",
+    "Capture date not independently verified; filename2024 alone not proof. No new photograph claim."
   ],
-  "unknown_neutral": [
-    "All tall tower faces, medallion/emblem, slot and inclined top remain neutral; no uniform whole-tower gray extrapolation through obscured base or insignia.",
-    "Ribbon back half, inner wall, top rim, slab underside and every downward support/terminal not in these exact outer transformed facet groups remain neutral.",
-    "Booth backing mixes glazing, mullions, equipment and doors; do not blanket-color it blue or gray.",
-    "Ground, pier bases and separate sign wall are not approved. Separate sign wall is not part of this model."
-  ],
-  "private_source_backup": "Sources retained privately; no raw images or private identifiers distributed."
+  "file_sha256": {
+    "domain-screen.json": "37401bcc25fe5d44d38e70f39115a9b5a6ce7ee8782239d25172560171a3f812",
+    "original/build_model.py": "0cf428fd6f6fdc9a0bae84b00eb1a0799d2758a919679829426139036d187694",
+    "original-verification.json": "8b056ef2d87009ac900a3ac108fdf77ae056059d4ad720af8ff998ea727195d8",
+    "private-reference/rear.jpg": "16c3ddeab1ede623ec807043963e08d03c2218ca7ee527ff019083a52f57460a",
+    "private-reference/expo-0.jpg": "659da2a318580df21984c4ceed552547e375622482d3c5405b4486f4258b2eb5"
+  },
+  "historical_source_register": "qa/rear-middle-ribbon-previous/COLOR-SOURCE-REGISTER.json"
 }

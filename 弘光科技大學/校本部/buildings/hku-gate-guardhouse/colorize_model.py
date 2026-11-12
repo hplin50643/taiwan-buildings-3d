@@ -33,9 +33,27 @@ for i in range(len(a)):g.setdefault(root(i),[]).append(i)
 removed=[]
 for ids in g.values():
  if len(set(a[ids]))>1:removed.extend(i for i in ids if a[i]!=1);a[ids]=1
+original=a.copy()
+assert (original==0).sum()==98
+rear_fields=[]
+for k in range(16,24):
+ a0=2*np.pi*k/96;a1=2*np.pi*(k+1)/96
+ p0=np.array([38*np.cos(a0),-2+25*np.sin(a0)]);p1=np.array([38*np.cos(a1),-2+25*np.sin(a1)])
+ delta=p1-p0;length=np.linalg.norm(delta);tan=delta/length;n=np.array([-tan[1],tan[0]])
+ vec=local[:,:,:2]-p0;dist=vec@n;along=vec@tan
+ finite=(np.max(abs(dist),1)<1e-5)&(along.min(1)>=-1e-5)&(along.max(1)<=length+1e-5)&(local[:,:,2].min(1)>=-1e-5)&(local[:,:,2].max(1)<=19+1e-5)
+ assert finite.sum()==2
+ assert any(set(np.flatnonzero(finite))==set(ids) for ids in g.values())
+ rear_fields.append(finite)
+added=np.logical_or.reduce(rear_fields)
+assert np.flatnonzero(added).tolist()==[1639,1808,1809,1810,1821,1822,1823,1825,1826,1832,1834,1835,1836,1870,1871,1884]
+assert (original[added]==1).all()
+a[added]=0
+assert np.array_equal(a[~added],original[~added])
+assert all(len(set(a[ids]))==1 for ids in g.values())
 pal=[('HKU Gate front ribbon exterior pale gray','#DEDDD3'),('HKU Gate unverified tower booth rear neutral','#B8BAB5')]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-domains={'front_half_ribbon_finite_facets':int((rail&(a==0)).sum()),'per_rectangle':[int(x.sum())for x in fields],'whole_coplanar_withdrawals':len(removed),'coplanar_domains':len(g)}
-assert (a==0).sum()==98
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'domains':domains,'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'2560 original triangles unchanged; no cuts or newgeometry','limitations':['98 original front half ribbon exterior triangles pale gray.','Inverse original scale and Ry(-12)@Rx(3), finite ellipse96 chord facets48..95, all3vertices.','Each entire infinite plane equals finite chord domain; facet94 retains4 original Boolean fragments.','Tower emblem and glazing, ribbon rear half, inner top and underside remain neutral.','Original approximate tower/ribbon and supports unchanged; separate sign wall excluded.','Capture date unverified, source filename not proof; not2026condition.','Two labels not verified filament slicing.']},indent=2)+'\n')
+domains={'front_half_ribbon_finite_facets':int((rail&(a==0)).sum()),'per_rectangle':[int(x.sum())for x in fields],'whole_coplanar_withdrawals':len(removed),'coplanar_domains':len(g),'rear_middle_ribbon_faces':int(added.sum())}
+assert (a==0).sum()==114
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'domains':domains,'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'2560 original triangles unchanged; no cuts or newgeometry','limitations':['98 original front half ribbon exterior triangles pale gray.','Inverse original scale and Ry(-12)@Rx(3), finite ellipse96 chord facets48..95, all3vertices.','Each entire infinite plane equals finite chord domain; facet94 retains4 original Boolean fragments.','Tower emblem and glazing, all rear facets except bounded16..23, inner top and underside remain neutral.','Original approximate tower/ribbon and supports unchanged; separate sign wall excluded.','Capture date unverified, source filename not proof; not2026condition.','Two labels not verified filament slicing.']},indent=2)+'\n')
 (R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','triangles':2560,'original_STL_sha256':expected,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(np.unique(a,return_counts=True),domains)
