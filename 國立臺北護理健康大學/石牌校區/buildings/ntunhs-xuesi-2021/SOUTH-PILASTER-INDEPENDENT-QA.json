@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T11:43:21.579171+00:00",
+  "scope": "Only16original south projecting pilaster front faces; preserve north18gray and all other assignments",
+  "blockers": [],
+  "counts": {
+    "triangles": 18170,
+    "original_colored": 18,
+    "new_colored": 16,
+    "total_colored": 34,
+    "neutral": 18136,
+    "complete_selected_domains": 8
+  },
+  "numeric_review": {
+    "status": "PASS",
+    "checks": {
+      "18170triangles": true,
+      "16exactchanges": true,
+      "8whole_domains": true,
+      "newindex2": true,
+      "otherindices_preserved": true,
+      "original18gray": true,
+      "counts": true,
+      "vertices": true,
+      "faces": true,
+      "oldpalette": true,
+      "newpalette": true,
+      "model.stl_unchanged": true,
+      "build_model.py_unchanged": true,
+      "historical_aliases_engineering_bytes": true,
+      "3mf_vertices": true,
+      "3mf_faces": true,
+      "3mf_materials": true,
+      "3mf3materials": true
+    },
+    "retained_aliases_engineering": [
+      "ORIGINAL-SOURCE-GAP-README.md",
+      "qa-summary.json",
+      "layer-opening-check.json",
+      "feature-loss-locations.json",
+      "layer-component-check.json",
+      "thin-feature-check.json",
+      "architectural-ray-check.json",
+      "ORIGINAL-SOURCE-GAP-scene.blend",
+      "PREVIEW-TRANSITION.json",
+      "previews/front.png",
+      "previews/elevation.png",
+      "previews/top.png",
+      "previews/rear.png",
+      "previews/rear-elevation.png",
+      "previews/east.png",
+      "previews/west.png"
+    ]
+  },
+  "scene_review": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "three_material_slots": true,
+      "palette_0": true,
+      "palette_1": true,
+      "palette_2": true
+    },
+    "scene_sha256": "8422bc3c1e92a72acf67b418e33b19a4576e40874bac2e8280bc91b368759670"
+  },
+  "image_sha256": {
+    "preview.png": "40d5cbc1e6b4db7166b9fc678dd64869a808d9e4015afd5d4da77f37db206e6f",
+    "rear.png": "4de72739a7fee505592ca8d3bb5acab76e18d8673aeddf6f188a3671dad5fc01",
+    "front.png": "886b7758cfea5ec156636a7b9d710bc00796ea94fc9404215c1a5da8f7f44301",
+    "back.png": "d1a1633eac5c913ca4aa16180e06c08ea9457b0374c7be6d82fedc3cf335e5ac",
+    "west.png": "c576f01df7643b801d05111d8fa6ffad96c40f2a53890501c51ccb1bc9f623ef",
+    "east.png": "f6d378695cfa41a3a581698cfd568232429e6ac8fd7db1299efbc2bfb2ef913f",
+    "top.png": "4217b699558265effb353463632dd52d6921c28247d440de9f29017147677345",
+    "entry-detail.png": "4b621fc014a768a04f194fdc4ba8bbfdbff48886bfa68c89d3a3fb01d3c49762",
+    "facade-detail.png": "4bf969322702ea9d7042c4c9e05b8ae7fbe4dadc6654256c00a3b9c59b83c53d",
+    "roof-detail.png": "7f26b8388b4e7e112d8100e66fdc7e52013f27a20b8739b83d81f8cc748c21c4"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "0d6a204561368e44c0524b5f0b06cce8294acf3ec527b43792be04721bf88013",
+    "appearance.3mf": "c6d7bf7ae7682cb9c93d6e917892b7bd9b7ae9751792f227af26d23c1d16f228",
+    "scene.blend": "8422bc3c1e92a72acf67b418e33b19a4576e40874bac2e8280bc91b368759670",
+    "palette.json": "83dbea7702e029393ae252af113d8b59a6abfd456a950eb322185bccd27be9d5",
+    "colorize_model.py": "ca1e04735dc5b4322145af86b48f43a84e2b54e6779104da1fb99e344048a5bc",
+    "SOUTH-PILASTER-SOURCE-QA.json": "7c299c7a9c90357cc48d4975cddebda19c54abdfc595485eb870f84c15243772",
+    "COLOR-SOURCE-REGISTER.json": "7c299c7a9c90357cc48d4975cddebda19c54abdfc595485eb870f84c15243772",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "b376ea18a894d7eb19ddc4f582865069eca4b99374cb26e30e2a91fbc17519a5",
+    "README.md": "f8aac6034f75316e05da8efac7fbf164a5834ba040862c0b1b811d7a76055cf5",
+    "README.zh-TW.md": "f8aac6034f75316e05da8efac7fbf164a5834ba040862c0b1b811d7a76055cf5",
+    "CHECKSUM-SCOPE.md": "25e7716e0ccb6f0339433682f9a43fa52a9e24a6a43ce34505aee6339c9d4769"
+  },
+  "source_sha256": {
+    "new-official-3.jpg": "959458be54a16ca64e15fff0063e54a6650d43e8d822eccf076f24e2b30e817f",
+    "new-official-9.jpg": "3b55e0b817489330b6c6aa0b7fcd694831470727abf89c3c79d71ece8ce6094f"
+  },
+  "findings": [
+    "Actually inspected all ten final rendered views in two montages and full1200x900southfront.png. Eight pale fronts are distinct from neutral horizontalbands/recesses and unchanged northern grayframe.",
+    "Independent allvertex selection matches16changedfaces in8whole domains; original18gray,allotherindices andfirsttwo palette entries exact. New nominal pale#E0E0D9 index2 is not reused northern mediumgray.",
+    "STL/build/vertex/faceidentity andthree-material3MF verified; originalOBJ absent,not invented. Retained isolatedbuild/color reproduction PASS reviewed.",
+    "Original source-gap aliases,previewtransition,oldpreviewimages and specifiedengineering files retain exactbytes; no removal of890crosslayercorner or22groundcolumnlimitations.",
+    "Independently reopened original/finalsavedscenes: camera/lights/render/meshobjectlist identical,indices/geometry/sourceSHA exact,3linearshadercolors verified,caption/backdrop hidden andstampoff.",
+    "Sourcepending snapshot preserved; final independent modelstatus recorded here."
+  ],
+  "limits": [
+    "Lower tree-obscured portions use bounded samepilaster continuouscolor inference,not fullheightpointwise evidence ormeasuredHEX.",
+    "Onlyfrontplaney-33.8;side/top/bottom/back,groundcolumns,y-33.2horizontalbands,windowbacks,uppergrille,roof/court/canopies untouched.",
+    "Original2021 identity/unknown49.9mbuildingassignment and2022possiblemirrorphotolimits retained. Newpublicationdates notcapturedate or2026condition.",
+    "Original890crosslayercornerloss samples are not890columns;22groundcolumns andfiniteengineeringexceptions retain their originalscope,no newprintability/strength/multifilamentcertification.",
+    "Photos private; no license or sourcepixel redistribution implied."
+  ]
+}

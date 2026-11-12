@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded south-pilaster update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T11:43:56.200488+00:00",
+  "triangles": 18170,
+  "original_color_faces": 18,
+  "new_color_faces": 16,
+  "colored_faces": 34,
+  "unknown_neutral_faces": 18136,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "2de888add0b76df4136756192cd94ee9be8d5a50f91a17756464f95897bcb883",
+  "color_mesh_sha256": "0d6a204561368e44c0524b5f0b06cce8294acf3ec527b43792be04721bf88013",
+  "images_sha256": {
+    "preview.png": "40d5cbc1e6b4db7166b9fc678dd64869a808d9e4015afd5d4da77f37db206e6f",
+    "rear.png": "4de72739a7fee505592ca8d3bb5acab76e18d8673aeddf6f188a3671dad5fc01",
+    "front.png": "886b7758cfea5ec156636a7b9d710bc00796ea94fc9404215c1a5da8f7f44301",
+    "back.png": "d1a1633eac5c913ca4aa16180e06c08ea9457b0374c7be6d82fedc3cf335e5ac",
+    "west.png": "c576f01df7643b801d05111d8fa6ffad96c40f2a53890501c51ccb1bc9f623ef",
+    "east.png": "f6d378695cfa41a3a581698cfd568232429e6ac8fd7db1299efbc2bfb2ef913f",
+    "top.png": "4217b699558265effb353463632dd52d6921c28247d440de9f29017147677345",
+    "entry-detail.png": "4b621fc014a768a04f194fdc4ba8bbfdbff48886bfa68c89d3a3fb01d3c49762",
+    "facade-detail.png": "4bf969322702ea9d7042c4c9e05b8ae7fbe4dadc6654256c00a3b9c59b83c53d",
+    "roof-detail.png": "7f26b8388b4e7e112d8100e66fdc7e52013f27a20b8739b83d81f8cc748c21c4"
+  },
+  "current_independent_review": "SOUTH-PILASTER-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "New official south facade photos support eight pale projecting pilaster front domains,16originaltriangles only; source resolution and base trees limit pointwiseproof. Broad same-component pale-family continuity over approximate geometry,not calibrated color or measureddepth. Original18northgrayfaces unchanged,not mirrored; no sides,horizontalbands,windows,groundcolumns,roof or equipment recolored. Original2021version/22groundcolumns/890cornerloss samples and other engineering exceptions preserved; publicationdates not capture or2026condition.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

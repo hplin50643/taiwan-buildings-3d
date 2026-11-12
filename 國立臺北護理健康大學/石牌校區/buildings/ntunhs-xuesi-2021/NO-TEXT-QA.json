@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in ntunhs-xuesi-2021-all-views.jpg; no caption/backing, original mesh/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "1292805365c858ea54d2ba15409f140a8efd4e778484de4cd0df2e8e256c347d",
-    "east.png": "e3295f1f08d060e9b24df168dba9c48fe9583b75949aa54c12edada284822b4e",
-    "entry-detail.png": "44c549a866ce8dc2d896d3f0e375d60735992e44a2a8b44b2b07b797eb21c700",
-    "facade-detail.png": "cda422229a6169bb110296e13ff97dfb01cb03336219f17baa57b1998d736fc3",
-    "front.png": "2060d375120b594e3537071fa80d14070acdbdba1330310861c1b63c612d47df",
-    "preview.png": "23f220c46fe1247a3780531454dc6d4332ff3be6d4074e70baeff9aded601baf",
-    "rear.png": "69e9c3cbdb55cd0ba760fbf2095b076fd8e27d543db61dda53f48f85aa0e092e",
-    "roof-detail.png": "030258f5a631a59148b46e759023de91c11d24faef9193c7ac5c8c7dbf543e27",
-    "top.png": "3170dc57516257d927515f0cde540ba9af2c695ca9576a72b9f2fef0e9ff30c3",
-    "west.png": "4f27fed7bfce992e6e4c1de1935aff2239cc1c3348072b8a4579cdb9be313c7d"
-  }
+    "preview.png": "40d5cbc1e6b4db7166b9fc678dd64869a808d9e4015afd5d4da77f37db206e6f",
+    "rear.png": "4de72739a7fee505592ca8d3bb5acab76e18d8673aeddf6f188a3671dad5fc01",
+    "front.png": "886b7758cfea5ec156636a7b9d710bc00796ea94fc9404215c1a5da8f7f44301",
+    "back.png": "d1a1633eac5c913ca4aa16180e06c08ea9457b0374c7be6d82fedc3cf335e5ac",
+    "west.png": "c576f01df7643b801d05111d8fa6ffad96c40f2a53890501c51ccb1bc9f623ef",
+    "east.png": "f6d378695cfa41a3a581698cfd568232429e6ac8fd7db1299efbc2bfb2ef913f",
+    "top.png": "4217b699558265effb353463632dd52d6921c28247d440de9f29017147677345",
+    "entry-detail.png": "4b621fc014a768a04f194fdc4ba8bbfdbff48886bfa68c89d3a3fb01d3c49762",
+    "facade-detail.png": "4bf969322702ea9d7042c4c9e05b8ae7fbe4dadc6654256c00a3b9c59b83c53d",
+    "roof-detail.png": "7f26b8388b4e7e112d8100e66fdc7e52013f27a20b8739b83d81f8cc748c21c4"
+  },
+  "mesh_sha256": "0d6a204561368e44c0524b5f0b06cce8294acf3ec527b43792be04721bf88013",
+  "independent_visual_review": "SOUTH-PILASTER-INDEPENDENT-QA.json",
+  "previous_qa": "qa/south-pilaster-previous/NO-TEXT-QA.json"
 }

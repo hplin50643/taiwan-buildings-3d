@@ -10,25 +10,82 @@
       "id": 1,
       "name": "NTUNHS Xuesi 2021 unverified walls windows neutral",
       "hex": "#B8BAB5",
-      "faces": 18152
+      "faces": 18136
+    },
+    {
+      "id": 2,
+      "name": "South pilaster fronts nominal pale family",
+      "hex": "#E0E0D9",
+      "faces": 16
     }
   ],
-  "domains": {
-    "complete_north_four_row_outer_frame": 18,
-    "per_rectangle": [
-      18
+  "south_front_domains": {
+    "-65.5": [
+      6640,
+      6667
     ],
-    "whole_coplanar_withdrawals": 0,
-    "coplanar_domains": 5448
+    "-50.5": [
+      6722,
+      6745
+    ],
+    "-35.5": [
+      6803,
+      6829
+    ],
+    "-20.5": [
+      6895,
+      6915
+    ],
+    "-5.5": [
+      6974,
+      6996
+    ],
+    "9.5": [
+      7054,
+      7081
+    ],
+    "24.5": [
+      7142,
+      7162
+    ],
+    "39.5": [
+      7224,
+      7241
+    ]
   },
+  "new_face_indices": [
+    6640,
+    6667,
+    6722,
+    6745,
+    6803,
+    6829,
+    6895,
+    6915,
+    6974,
+    6996,
+    7054,
+    7081,
+    7142,
+    7162,
+    7224,
+    7241
+  ],
+  "original_colored_faces": 18,
+  "added_colored_faces": 16,
+  "colored_faces": 34,
+  "neutral_faces": 18136,
+  "triangles": 18170,
+  "complete_new_domains": 8,
+  "mixed_coplanar_domains": 0,
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
-  "geometry_policy": "18170 original triangles unchanged; no cuts or newgeometry",
+  "geometry_policy": "18170original triangles and STL/build unchanged",
   "limitations": [
-    "18 complete original north four-row outer frame front triangles medium gray;18152 neutral.",
-    "Original four readability/depth/frame presentation materials and all original evidence retained;not monochrome discovery.",
-    "22 ground columns with890 cross-layer corner-loss samples,max2.0436738percent retained as finite exception,not890columns or global minimum thickness.",
-    "No new printability endorsement or physical slicer/print certification.",
-    "Project49.9m unallocated to this building;2022mirror-suspect aerial not used for orientation.2021publication context not individual capture or2026 condition."
+    "Original18northgray and original2palette entries unchanged; newpaleindex2 distinct from neutralindex1.",
+    "Only south projectingpilaster front,y-33.8;not horizontalband y-33.2 or returns.",
+    "Lower treehidden parts inferred continuoussamepilaster;not eachface directlyseen.",
+    "Original2021identity/22groundcolumns/890crosslayercornerexceptions remain,not globalengineering certification.",
+    "No2026condition or calibratedcolor. Sourcephotos private."
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "existing_preview_transition": {
+    "original_assigned_materials": 4,
+    "original_presentation": "neutral/depth/frame readability display; not monochrome discovery",
+    "original_scene_and_previews_preserved": true,
+    "new_bounded_variant": "Only18 newly source-supported gray front-frame faces; every other original face neutral, including old depth/frame/roof display colors. No original asset overwritten."
+  },
+  "original_scene_sha256": "57c21b2e10684019b4633292d6f6c4e3cd1b2767b4504bfb818e537b187d68ff",
+  "preserved_public_original_scene": "ORIGINAL-SOURCE-GAP-scene.blend",
+  "new_scene": "scene.blend",
+  "original_renderer_preserved": "render_preview.py",
+  "original_qa_history": {
+    "retain_finite_exception": true,
+    "warning_samples": 890,
+    "actual_ground_columns": 22,
+    "maximum_local_loss_percent_approx": 2.0436738,
+    "retained_percent_approx": 97.9563262,
+    "notes": [
+      "Warnings are cross-layer samples, not890columns; preserve all scores.",
+      "Original local normal ray minimum2.5999984mm and corner-mask residual evidence remain finite position-specific measurements, not global minimum wall thickness.",
+      "No geometry repair, new topology testing, all-QA endorsement, physical print or slicer-toolpath certification from this source review.",
+      "Unallocated project49.9m is not exact building height.2022mirror-suspect aerial not used to determine east/west."
+    ]
+  },
+  "no_global_printability_endorsement": true
+}

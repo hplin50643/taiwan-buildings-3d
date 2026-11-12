@@ -1,0 +1,86 @@
+{
+  "status": "PASS_INDEPENDENT_COLOR_ONLY_ORIGINAL_EXCEPTIONS_REMAIN",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:seven whole views and three north-frame closeups.",
+    "Only four original unioned outer-frame front rectangles18triangles medium gray; lower white columns and returns neutral.",
+    "Original four-material display retained;22columns/890sample finite corner-loss exception preserved without new global printability claim."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 18170,
+  "material_face_counts": [
+    18,
+    18152
+  ],
+  "connected_coplanar_domains": 5448,
+  "original_obj_present": false,
+  "original_files_retained": 30,
+  "file_sha256": {
+    "README.md": "0dd0230d5d3a3756c0f0741fc1e4b2e899f1f7ace2c4485d41883910dff9f49c",
+    "README.zh-TW.md": "0dd0230d5d3a3756c0f0741fc1e4b2e899f1f7ace2c4485d41883910dff9f49c",
+    "model.stl": "2de888add0b76df4136756192cd94ee9be8d5a50f91a17756464f95897bcb883",
+    "build_model.py": "c7a3dee9eb0f71499fae8af8402da29899e66617d08f64d3888e802a85ebfc07",
+    "colorize_model.py": "9e46f1b7e3e0c274cde20e61064d892bf7a4cd9ee7333cb155cfcd186a50079d",
+    "render_color.py": "d203c6426e2fa150dd1a15c83e7855a874bbf103038eb54f5bf636e7b4aab26c",
+    "verify_color_scene.py": "3c2b763e3c362dd528e47c6b8d2cc5cbd15e2e6507b7bc4882b8906c3d1c24e6",
+    "validate_color.py": "d8dedbec8753bcd48c63eb787bb70dee5e60d49025320754c05e00bf3c1d307f",
+    "color-mesh.npz": "600f52a60859762f183f32f50d593445334fea4b2dc1a4053f1aeeff9d6a7b0a",
+    "palette.json": "e31fb8cd17617d3f8f6316d4b5cf8d38516fd9f53802dca2d1e67a63c0cce49b",
+    "appearance-materials.json": "d55edd1f1f2fb4f89049eb6d3814daf910d4c934f5ef4ba2fb01b551a917cab9",
+    "COLOR-SOURCE-REGISTER.json": "a79755e181d0ef9c9d71fb92ec374c3792e2c7ba018706842569abc123e37f30",
+    "appearance.3mf": "fcfd12c0b0340e3940e2ae72f2433c2c7991036730d7bf85a8b8ee6b8c8cded7",
+    "scene.blend": "123478c57af43119ba63e2e3a0e004428728ff00e2fb639e6aafa48459864775",
+    "preview.png": "a81631ba7f5543c371ba5c311ba390e80d696fb05e5efc26837e5bc10a691b15",
+    "rear.png": "8eb91a152c72fab4b0bae9fd5f9b17fdad4561e6594ea583e14ad98220984289",
+    "front.png": "d3e96a845167e9f6710711e25af5ec05cd2d4ad2d7406cb2626c0b851398a07b",
+    "back.png": "a816d4adcad638a28467765684d97aa6fb71c69031531d141411d2c6f953375e",
+    "west.png": "8d746f4ab683ebd1497f13d7802459de80572e51bbd80607d8def47a68ab4576",
+    "east.png": "1b398bda02b7da7d03549b9d0a199a7c217d6df2c090251cc1525772b3b9e35f",
+    "top.png": "3adb39bcdfc480a5755d0704809e49299d65c27c5b8e1344dcc49dbc94910550",
+    "entry-detail.png": "10af4b642765b0d340e39d400b605ddc477a63fae5b7ad00e67a6d1cbdc591b0",
+    "facade-detail.png": "3bf763311c1e5f5422b1521140b61a7e8da60b3c01bc4df080f5e64fe8d05304",
+    "roof-detail.png": "d9b102824bd52492a24fc51c91fc049031a9abc163507253dedb9ac0b16ff043",
+    "export_appearance.py": "be4b56086a8d3da628cef04f62c2404481e542ebaae374b3cfc178932ecc3882",
+    "PREVIEW-TRANSITION.json": "2f4450e546a138342933e32ac37f371184c2a86dad465fdb42bcbcd4d75a7b73",
+    "ORIGINAL-SOURCE-GAP-scene.blend": "57c21b2e10684019b4633292d6f6c4e3cd1b2767b4504bfb818e537b187d68ff",
+    "ORIGINAL-SOURCE-GAP-README.md": "e229345efbd6f38612ad9926f3d1c185003a247c62f02999cd92b38b83f10cf3",
+    "render_preview.py": "dfeb4cc501cb0f43bd19e23f816c8cfb9fcf5639ab7cb64e6f05ea7c6f1faa5f"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "66f2c62ca049643b14ef8a3ebb6e455bdcae614e6d1ac61171c1fa21d131ceb7",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "a5020ce8c98d43734d5fc72a951d8d64a1fad78e30ed1633d9482124a152b90d",
+    "SCENE-QA.json": "4bfb3566c25840d5d7401be61a26d7db5823f68c0c2a178b4540db92e6109123",
+    "FRAMING-QA.json": "432c90f51471d5f6d627b0b9fbd31a078006ebd731b442529184da3ab173d277",
+    "DELIVERY-QA.json": "2eabc3bf96b03ca1369a13e11bd6011efd58c4550114fecdc9b9a61fc7ab60b3"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "974ec52181f6b83265bd3d70429cffff107a28f618517ee27328bdfcc1792303",
+    "ORIGINAL-RETENTION-QA.json": "0a99aebd9cdff7647d6ca87869a088b8bed54c6427f27eb3a71a04207088d886",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "5c7c28638579b67f334706fe05538915f6fa62c100f080d76758eb276c1a8925",
+    "ORIGINAL-PACKAGE-READBACK.json": "f9cd6e27181b91f66504fd8b458a8184223b7e31da61b847ba29e16e142560ab",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "3d7cf2142de148f7142bf2dfefbc3a82a35a94a1cdd80a4e55a3de0be91a446f",
+    "INDEPENDENT-DOMAIN-0912.json": "48c60bd7edad58e2d0768dab6349502c81d10255871df7aec0bdbbc21a5ae40f",
+    "INDEPENDENT-IDENTITY-0912.json": "c6b4193c0295a7cd724a20589aa3dba629e15420afc5db2e7500e95a51a688ae",
+    "INDEPENDENT-PACKAGE-IDENTITY-0915.json": "3d7cf2142de148f7142bf2dfefbc3a82a35a94a1cdd80a4e55a3de0be91a446f"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "16f7386404bd2499e7c903d42408339c990c1c9ee1491f0b0a83bc94efc8febe"
+  },
+  "limitations": [
+    "18 original north four-row outer frame front triangles;18152 neutral.",
+    "Existing four depth/frame display materials preserved separately, not monochrome discovery or new model.",
+    "Original18170 triangles and30 immutable files unchanged;no originalOBJ.",
+    "Original22columns890cross-layer sample corner-loss max2.0436738percent retained finite exception,not global thickness or print certification; capture dates unverified,not2026."
+  ],
+  "history": [
+    "Initial south-camera preview retained privately; north-facing preview v2 approved then remaining nine rendered once.",
+    "Independent expected-name gate verifies NTUNHS Xuesi 2021 partial color against actual3MF and reopened scene."
+  ],
+  "existing_preview_transition": true,
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T09:15:54Z",
+  "parent_review": "Parent personally viewed contractorPDF54lower/58upper/59upper daylight andoriginalcode/README0910, northpreviewv20912, finalten0915. Whole y33.65 exact18 singleedgecomponent equals complete unionoffouroriginalouterframe rectangles, raw18 exactly NPZgray; other18152neutral. Lowercolumnsy33.6 notmixed. Original18170triangles30files/noOBJ byteexact,5448coplanardomainsuniform. Original4displaymaterials scene/readme/renderer retained aliases unchanged,notmono. Initialsouthcamera retainedprivatehistory; finalnorthviews andthreecloseups show wholeframe/bothunioncorners without shade/glasscolorclaim. Original22columns890samples cornerloss2.0436738percent finiteexception andno globalminwall/physicalprintvalidation retained;49.9m wholeprojectnotbuildingheight and2022mirrororientationambiguity remain. Actual NTUNHS Xuesi 2021 identity scene/3MF/fourscripts/paletteRGB PASS. Color-only format/samegeometry check not alloriginalQA approval,countdelta0."
+}

@@ -1,43 +1,68 @@
 {
-  "status": "SOURCE_GO_BOUNDED_PARTIAL",
-  "building": "NTUNHS Xuesi 2021",
-  "source_go_sha256": "fd21947f91564511ea32e733240ff0aa1b1da72cccaa868b7e40f358dba1f085",
-  "independent_review_sha256": "306f49b38cb131d0055348d580120477b4789b2d79cc5a9981cf89784960478f",
-  "existing_preview_transition": {
-    "original_assigned_materials": 4,
-    "original_presentation": "neutral/depth/frame readability display; not monochrome discovery",
-    "original_scene_and_previews_preserved": true,
-    "new_bounded_variant": "Only18 newly source-supported gray front-frame faces; every other original face neutral, including old depth/frame/roof display colors. No original asset overwritten."
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "16original front triangles of8south projecting pilasters only: y-33.8,xcenters[-65.5,-50.5,-35.5,-20.5,-5.5,9.5,24.5,39.5]plusminus1.3,z11.5..78.3",
+  "selected_face_indices": [
+    6640,
+    6667,
+    6722,
+    6745,
+    6803,
+    6829,
+    6895,
+    6915,
+    6974,
+    6996,
+    7054,
+    7081,
+    7142,
+    7162,
+    7224,
+    7241
+  ],
+  "independent_numeric": {
+    "per_pilaster": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "total": 16,
+    "cross_domains": [],
+    "original_material": 1,
+    "original_triangles": 18170
   },
-  "sources": [
+  "personally_viewed": [
+    "new-official-3.jpg",
+    "new-official-9.jpg"
+  ],
+  "source_records": [
     {
-      "name": "page54.png",
-      "sha256": "9f98567d79d34181e708dd823ded488e3d92b8945b757881bc3584775c80929f"
+      "name": "new-official-3.jpg",
+      "url": "https://acadsys.ntunhs.edu.tw/Periodical-eNews/public/image/218jj.jpg",
+      "sha256": "959458be54a16ca64e15fff0063e54a6650d43e8d822eccf076f24e2b30e817f"
     },
     {
-      "name": "page-58.png",
-      "sha256": "f80206f0e51f18552b1df5c73490034ec750b876a4aa8962a76643f1bc505daa"
-    },
-    {
-      "name": "page-59.png",
-      "sha256": "58f2a2f18ec16d264e525cb8d99375eb8f3dd252982bb6b16b48fe30936dd76b"
+      "name": "new-official-9.jpg",
+      "url": "https://secr.ntunhs.edu.tw/var/file/8/1008/img/1433/596977005.jpg",
+      "sha256": "3b55e0b817489330b6c6aa0b7fcd694831470727abf89c3c79d71ece8ce6094f"
     }
   ],
-  "sources_private": true,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "count_delta": 0,
-  "geometry_unchanged": true,
-  "source_dates": "2021 contractor publication;2024archive not photo capture;not2026",
-  "allowed": [
-    "18 complete original north four-row outer frame front triangles medium gray"
+  "findings": [
+    "Two official playing-field south views show pale projecting vertical pilaster fronts distinct from dark horizontalspandrels and windowrecesses.",
+    "Original protruding y-33.8front planes lie forward of horizontalbands y-33.2; independent wholevertex selector yields8complete2trianglefacesets with no crossing coplanarcomponent.",
+    "Some lower portions behind vegetation inferred continuous pale within same modeledcolumn; not eachface or wholeheight directlyobserved."
   ],
-  "unknown_neutral": [
-    "All frame side returns/back surfaces unassigned.",
-    "North window backings and white/gray spandrels remain neutral; no allblueglass or inferred metal.",
-    "South grid presents differing vertical/horizontal tones and mixed windows; not included.",
-    "Whole side walls cross gray/white stripes, logos, fixtures and hidden bases; neutral.",
-    "Solar/roof, court, ground columns, canopies and equipment not newly assigned. Construction net and night lighting excluded."
+  "requirements": [
+    "Preserve original18northmediumgrayfaces and bothoriginalpalette entries;append newnominal pale-family index2,do not mirror northern gray south.",
+    "No side/top/bottom/backreturns,groundcolumns,horizontalbands,windowbacks,wallfield,roof orequipment.",
+    "Original2021 identity and22groundcolumns/890crosslayercornerexceptions plusallaliases remain; newarticle dates notcapturetime or2026state.",
+    "Geometrydimensions are originalapproximations,not colorcertification; full3MF/rebuild/tenviews/sceneQA beforefinalPASS.",
+    "Sourcephotographsprivate,no redistributionlicense assumption."
   ],
-  "private_source_backup": "Sources private; no source photos or private identifiers distributed."
+  "work_created_by_reviewer": false,
+  "historical_source_register": "qa/south-pilaster-previous/COLOR-SOURCE-REGISTER.json"
 }
