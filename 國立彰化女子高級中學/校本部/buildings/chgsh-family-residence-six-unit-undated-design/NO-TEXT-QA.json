@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in chgsh-family-residence-six-unit-undated-design-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "eaa793e7ac1aadcd60afbcc41790956e370bc50378b56f4a32ac071b1007c152",
+    "east.png": "b4bd13f950ffcb56f347871793e4472a8dc19fc4ff445e90702d74a52e18324a",
+    "front-detail.png": "b6ea8f2c53f76b505e611d047619d25e4c82fac3e22c315bdd12bfe3522248e1",
+    "front.png": "bf45e6d7b2457028a46afa1674633b607113306b859fc43a7252f55c0693a77e",
+    "preview.png": "b7d21e24684305c5f7d4087164a5cc38ea1116af9c1d32800d7e357c8cb79111",
+    "rear-detail.png": "63b8f6441f0613f43af627c0b947d9342a9202b72f658b19bf5aee3999106e0c",
+    "rear.png": "00b9314c7a68a6dc91f1858332d2df4e3216d52f6c217b7b14f819fda43deb1e",
+    "roof-detail.png": "77c9db0366b1cf8ad1de214d3ea1c78ed3e763e526edc80735ebd25ff8382958",
+    "top.png": "f273141656b49f8eb30ad7f4746ecefdb47d53ef5e63264f3b21e6eab56eb9e4",
+    "west.png": "bc50ee67d849b770a7ef69f7f8297f0f6fac723caa52c430cab69de8533237c4"
+  }
+}

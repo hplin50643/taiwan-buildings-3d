@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "pass",
+    "scope": "All ten output views inspected; no captions; original bounded attached-wing geometry, interface opening and camera composition retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "arcade-detail.png": "f904c31cb759787f79cb99e58e62ca6ebd936bd846b50cde570ee86f53de33ce",
+    "back.png": "9bb09aa2cf902caf5815771e8e88a2d066496cba863e952ac62850d7eb22a705",
+    "east.png": "9caae7c86c81dc25bd90546882c3752388231705bc0b8d12c733e58ed9dbb150",
+    "fins-detail.png": "50fe9691985d18403bcb92c187d4ec551e8d8494519e9883d40980665067ad66",
+    "front.png": "3d6437b9083ea75f493d304ea0eda78a64a891c3a81a9e6f659de5d8ba9339be",
+    "interface-detail.png": "0f7a0845332bedba799cb4937d9764e0bbe3dfef9a9dca6757dc8fa8511712a6",
+    "preview.png": "33fda9baf7dcfc7a98ecd36811476f2a16d7d9fdb297919053137c6db40a2b96",
+    "rear.png": "1795ce01246af151b73149a7ecb3b66107241841f1fdc738e397d78ea84add17",
+    "top.png": "c3ee1150c4e99fa5580c207bbd50ce1e6908773cc4dbbf77bca236f1c246d4de",
+    "west.png": "4f2fce32c719f991b6d2e216cabc4a7f1971ee518557125ec4a3ff2481b82266"
+  }
+}
