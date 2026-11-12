@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntu-main-library-all-views.jpg; captions and backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "ee9f7aed0baa0cf8cd2528bfea2d6a2b15d0d40be2d7c5f33a35fdb27e60929c",
+    "east.png": "3b90cffbe82daaa3f45990f839c9fe0b1f65dbe564eae8170c97d385cca5b6c8",
+    "entry-detail.png": "2d2c1e3b94c7b963a166e12d8cdbdf5e56e52039aef851e1059e5eef033214ed",
+    "front.png": "f9839d5262da50b60c3608ef275f95f6c61d1422a5339489a523d98800bb668e",
+    "preview.png": "b7d79175d4f8c3075397447a6b70f8733f48fa5ed6af12631b9fae65f8ec2bed",
+    "rear.png": "ea0cc24ec6fd16f4b6e5f3e770d9963af2cee7c6cc42ea516c015c1ca336302c",
+    "roof-detail.png": "d1008743d37114ea8a8e05edaf5e04a0ac554a666a7a87e637a2c9b6f8e5e6cf",
+    "top.png": "7439ce858da4c650749303ca0d08302dcbe479277e6ba33511ce1bd6e2825e63",
+    "tower-detail.png": "5c46c0405843ed956fdb09350f884fa979c4d6be3e233de2ac963b0863604675",
+    "west.png": "666bb1137652aef12bfd296495fa72892ab52e158f23b6ed8b7738d9a89790bf"
+  }
+}

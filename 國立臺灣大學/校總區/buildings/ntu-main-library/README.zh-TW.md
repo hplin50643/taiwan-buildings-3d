@@ -1,8 +1,8 @@
-# 國立臺灣大學新總圖書館｜同項目彩色更新
+# 國立臺灣大學新總圖書館｜鐘亭前面過度指派勘誤
 
 ## 彩色模型預覽
 
-**原模型幾何完全不變：150×92×63 mm、3264 三角面，原 STL 位元組保留。** 本次僅按官方照片為原有表面分材質、增加彩色 3MF 與重渲染，**不是更精密的建築重建，不增加模型套數**。後部／長側與大平屋面原本資料不足，保持中性未核，不冒稱實景全方位配色。
+**原模型幾何完全不變：150×92×63 mm、3264 三角面，原 STL 位元組保留。** 本次僅將鐘亭正面一個無法精確對位真材界的完整 8 三角域撤回未知中性、更新 3MF 與重渲染，**不是更精密的建築重建，不增加模型套數**。後部／長側與大平屋面原本資料不足，保持中性未核，不冒稱實景全方位配色。
 
 | 整體 | 反向／未核後部 | 正向 |
 |---|---|---|
@@ -69,3 +69,17 @@
 - [臺大官方臺北校區建物索引，檢索標題日期2026-08-17](https://cpo.ntu.edu.tw/map/C_01_list.pdf)
 
 來源頁的照片版權屬原權利人；本資料夾不含來源照片或校徽貼圖。腳本與幾何為依公開外觀重新製作；未授予第三方建築設計或照片的權利。
+
+## 本次八面撤色勘誤
+臺大圖書館官方 20 周年專刊 PDF 第 12 頁（印刷第 14 頁）高角度外觀照及原訪客中心正照顯示鐘亭外柱為紅磚，另有淺石橫帶；但既有簡化模型的外面三角跨真實材界，不能只將部分三角染紅，亦不能用 z 門檻切出假色界。
+
+因此只將 y=-6、x=-66.5..-53.5、z=47.2..57.5 的**完整單一共面連通域 8 面**（原 2 磚＋6 石）撤回未知中性。這是撤回過度指派，不是增加已證配色，也不表示實景是灰色。已配色由 3,105 降為 3,097 面，中性由 159 增為 167 面。其餘所有面材完全不變。
+
+原擬將 16 個鐘亭內返面改紅的方案維持 HOLD，外柱證據不足以推定全部內返色，沒有套用。塔帽、內返、下塔身、背牆與屋面不動；3,264 原三角及 STL／OBJ／build 字節不變，不新建材界或幾何。
+
+原版有 107 個混材共面域，本次消除上述 1 個，仍有 106 個原混域完全保留；無新增混域，**不是全模型無接縫或已精確還原**。照片拍攝日期未知，20 周年／出版年不等於拍攝日或 2026 現況。
+
+本次 `BELFRY-WITHDRAWAL` 來源／配色／格式／場景 QA 與新獨立審核對應目前候選。歷史文件與 QA 原樣保存在 `qa/belfry-withdrawal-previous/`；其他舊 QA／FREEZE 不作本次放行。來源照片與 PDF 私存、不隨公開包散布；未實際列印，六材非已驗多料切片。
+
+## English correction scope
+Withdraw only the complete 8-triangle upper front belfry plane to unknown-neutral (formerly 2 brick and 6 pale-stone faces). Official photographs establish mixed brick piers and stone bands, but the original triangles do not align to the real material boundaries. Neutral means unresolved mapping, not actual gray paint. No newly verified color is added and no geometry is split. Every other material assignment, including cap and 16 inner returns, remains unchanged. Colored faces decrease from 3,105 to 3,097; neutral increases from 159 to 167. One of 107 inherited mixed coplanar domains is removed, leaving 106 unchanged; not a whole-model zero-seam claim. Original 3,264 triangles and STL/OBJ/build bytes unchanged. Capture dates unknown, not current-2026 certification. References private; not physically printed or validated filament slicing.

@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T10:11:06.938178+00:00",
+  "scope": "Eight-face complete outward belfry domain withdrawal to unknown-neutral; not added sourced coloration or whole-model repair",
+  "blockers": [],
+  "numeric_checks": {
+    "status": "PASS",
+    "checks": {
+      "vertices_exact": true,
+      "faces_exact": true,
+      "3264_triangles": true,
+      "old_neutral159": true,
+      "new_neutral167": true,
+      "model.stl_unchanged": true,
+      "model.obj_unchanged": true,
+      "build_model.py_unchanged": true,
+      "whole_eight_face_domain": true,
+      "previous_two_brick_six_stone": true,
+      "exact_withdrawal_mask": true,
+      "all_eight_to_neutral": true,
+      "all_other_indices_unchanged": true,
+      "exact_one_mixed_domain_removed": true,
+      "remaining106_domain_materials_unchanged": true,
+      "3mf_vertices": true,
+      "3mf_faces": true,
+      "3mf_materials": true,
+      "official_pdf_hash": true
+    },
+    "withdrawn_faces": [
+      2688,
+      2691,
+      2692,
+      2693,
+      2696,
+      2697,
+      2702,
+      2703
+    ],
+    "old_mixed_domains": 107,
+    "remaining_mixed_domains": 106,
+    "mesh_sha256": "08e02fd237219b456dcf6420253e01085615024a3c70ad1f51dbe93c26b53a05"
+  },
+  "scene_checks": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "six_material_slots": true,
+      "palette_0": true,
+      "palette_1": true,
+      "palette_2": true,
+      "palette_3": true,
+      "palette_4": true,
+      "palette_5": true
+    },
+    "scene_sha256": "95297b179d382fa033091bea7df198c140a2ba382e6a10322275bf68a09e7b6f"
+  },
+  "face_counts": {
+    "total": 3264,
+    "withdrawn_brick": 2,
+    "withdrawn_stone": 6,
+    "colored_before": 3105,
+    "colored_after": 3097,
+    "neutral_before": 159,
+    "neutral_after": 167,
+    "mixed_domains_before": 107,
+    "mixed_domains_after": 106
+  },
+  "findings": [
+    "Actually viewed official20th-anniversary PDF exterior pages11/12, printed13/14. High-angle tower view shows mixed brick supports and pale bands that do not align with original coarse triangles.",
+    "Independently reconstructed complete outward y=-6,z47.2..57.5 coplanar component: exactly8 original faces, previously2 brick plus6 stone. Only these become neutral; all3256 other material indices remain exactly unchanged.",
+    "Exactly one inherited mixed coplanar domain is removed; the remaining106 component face sets and all their material indices remain unchanged. No new mixed domain.",
+    "Original vertices/faces and STL/OBJ/build bytes unchanged.3MF matches candidate geometry/materials; official PDF hash verified.",
+    "After complete ten-view render and scene save, actually inspected all ten final images in private montages plus full-size tower detail. Target outward plane is coherent neutral with no triangular brick/stone division; other inherited mappings remain visibly present and are not claimed repaired.",
+    "Independently reopened original/final scenes and checked geometry/material indices, all six palette shaders, camera/lights/render settings and hidden notices.",
+    "README and source QA accurately distinguish withdrawn unsupported appearance from actual gray material, preserve16-inner-return HOLD, and disclose106 remaining inherited mixed domains."
+  ],
+  "image_sha256": {
+    "preview.png": "b7898188f841563f1c2bb91f137f81a605a3234e90fe7215f22175817896ef36",
+    "rear.png": "af050bb4a00691404e35cffe8ce22447518d2e06dc64ef3be72c61eff487700d",
+    "front.png": "9920a53f80b0a1a9bedcf9dd00f70a53e5fce76b58aa6e999c938c1ca1f8e484",
+    "back.png": "a8a3d7ef4e827313c811ca8d7dfa1f31c934b89a0711a3cc86541144e533527f",
+    "west.png": "2079921bbbe139a892951de3763135bc6b0030cc51920e4012676362b6ab713c",
+    "east.png": "62a1f9a70a01ca58b7d08f92244490ed943019f1ed01425ac6c7ed9ffe905a1a",
+    "top.png": "b72987c243c89e834f787ebf80bf495881a82b262066f119904998e62563af8e",
+    "entry-detail.png": "c5bd43e3cd61d443f4fd080fbaeb6af19c92230c98b584e896c153d349f1cb0c",
+    "tower-detail.png": "2f284de5c999d755877a9c63e5a13fe2c5cbbbe3683915df3dca4365804b9c75",
+    "roof-detail.png": "10bc91b131cec1555d5ac0e5c2b8b23176d2b605b02a9f9b3d4d8cd588a787e4"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "08e02fd237219b456dcf6420253e01085615024a3c70ad1f51dbe93c26b53a05",
+    "appearance.3mf": "9780c34b95cb59709687a5df13b715c7eb0121d389033e62e91c67e19ea6e883",
+    "scene.blend": "95297b179d382fa033091bea7df198c140a2ba382e6a10322275bf68a09e7b6f",
+    "colorize_model.py": "f7d649c36661ac0020a749adc1620310737190c83167a9a678ff02426f9798de",
+    "BELFRY-WITHDRAWAL-SOURCE-QA.json": "006ebb77fe4a8deb5db2f2fd1fd06fa0cf44fdbaa94b9f71081d60a072ea834b"
+  },
+  "source_sha256": {
+    "ntulib20th.pdf": "9c95a2e42035a22a170976b61bb3c29691d672f486e1b44e299b8ec44b5970b6",
+    "exterior-011.jpg": "983dffba64ebd1f4cd517c4cf32ac5b9951aef430f22c91aa4c5ba709fe9b833",
+    "exterior-012.jpg": "9f7afe8be71ede346ce28db3859d4d49afb1236c484c1d1761c113917e40fcf6"
+  },
+  "limitations": [
+    "Neutral denotes unresolved mixed-material mapping, not observed gray paint. No newly verified color faces added.",
+    "Sixteen interior returns remain unchanged; rejected red/neutral-return proposal remains HOLD.",
+    "106 inherited mixed coplanar domains remain; not whole-model zero seams, calibrated color or geometric correction.",
+    "Unknown aerial capture date; publication anniversary not capture date or2026-condition proof.",
+    "No physical print or filament slicing certification. Official reference PDF/photos remain private."
+  ]
+}

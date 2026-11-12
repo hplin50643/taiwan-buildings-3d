@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "Bounded belfry-withdrawal update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T10:11:08.993859+00:00",
+  "triangles": 3264,
+  "original_color_faces": 3105,
+  "new_color_faces": 0,
+  "withdrawn_color_faces": 8,
+  "colored_faces": 3097,
+  "unknown_neutral_faces": 167,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "80f25ad47c6aa3c2918840a275709a07aeba024e064db20aaad97a4bd9d4c909",
+  "color_mesh_sha256": "08e02fd237219b456dcf6420253e01085615024a3c70ad1f51dbe93c26b53a05",
+  "images_sha256": {
+    "preview.png": "b7898188f841563f1c2bb91f137f81a605a3234e90fe7215f22175817896ef36",
+    "rear.png": "af050bb4a00691404e35cffe8ce22447518d2e06dc64ef3be72c61eff487700d",
+    "front.png": "9920a53f80b0a1a9bedcf9dd00f70a53e5fce76b58aa6e999c938c1ca1f8e484",
+    "back.png": "a8a3d7ef4e827313c811ca8d7dfa1f31c934b89a0711a3cc86541144e533527f",
+    "west.png": "2079921bbbe139a892951de3763135bc6b0030cc51920e4012676362b6ab713c",
+    "east.png": "62a1f9a70a01ca58b7d08f92244490ed943019f1ed01425ac6c7ed9ffe905a1a",
+    "top.png": "b72987c243c89e834f787ebf80bf495881a82b262066f119904998e62563af8e",
+    "entry-detail.png": "c5bd43e3cd61d443f4fd080fbaeb6af19c92230c98b584e896c153d349f1cb0c",
+    "tower-detail.png": "2f284de5c999d755877a9c63e5a13fe2c5cbbbe3683915df3dca4365804b9c75",
+    "roof-detail.png": "10bc91b131cec1555d5ac0e5c2b8b23176d2b605b02a9f9b3d4d8cd588a787e4"
+  },
+  "current_independent_review": "BELFRY-WITHDRAWAL-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Whole eight-face outward belfry coplanar domain withdrawn to unknown-neutral; no new observed color. Original 107 mixed domains reduce to106; other106 domains and assignments preserved, not blanket recertification. Undated archival exterior evidence, not current-condition claim.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

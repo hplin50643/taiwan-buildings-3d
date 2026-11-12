@@ -1,0 +1,116 @@
+{
+  "status": "SOURCE_SNAPSHOT_RECONCILED_FINAL_BYTES_VERIFIED",
+  "scope": "Supplement to original independent review; does not rewrite its hash or claim its source snapshot hash matches current source file. No new geometry, color, source or printability certification.",
+  "original_frozen_manifest": {
+    "key": "ntu",
+    "manifest": "ntu-frozen-changed-manifest.json",
+    "files": 46,
+    "bytes": 10443137,
+    "manifest_sha256": "ab01f6a8eba36250b7a62f48bf5ad55765de97d4b3e970306568c7c3179d16ca",
+    "state": "LOCAL_FROZEN_PUBLICATION_NOT_VERIFIED_BY_THIS_THREAD"
+  },
+  "original_independent_review": "BELFRY-WITHDRAWAL-INDEPENDENT-QA.json",
+  "original_independent_review_sha256": "5ebdc3fc58326b4a1ecc3f05b5b0bd7774e0589ca672e003df7d490dcc3046f7",
+  "source_snapshot": "qa/source-review-reconciliation/SOURCE-QA-REVIEWED-SNAPSHOT.json",
+  "source_snapshot_sha256": "006ebb77fe4a8deb5db2f2fd1fd06fa0cf44fdbaa94b9f71081d60a072ea834b",
+  "current_source": "BELFRY-WITHDRAWAL-SOURCE-QA.json",
+  "current_source_sha256": "14bf567718ed0e525b61ed1a1bf3ee1e33d0651b8740f122fffb05c4b005c8ff",
+  "only_source_differences": [
+    "status changed from SOURCE_SCOPE_SUPPORTED_PENDING_INDEPENDENT_REVIEW to completed review status",
+    "current_independent_review appended"
+  ],
+  "proof": "Restoring exactly these two JSON fields and original UTF-8 indent2 plus trailing newline reproduces the source SHA bound by original independent review. All other source evidence, domains, counts and limitations are identical.",
+  "references": [
+    {
+      "path": "color-mesh.npz",
+      "original_report_sha256": "08e02fd237219b456dcf6420253e01085615024a3c70ad1f51dbe93c26b53a05",
+      "current_sha256": "08e02fd237219b456dcf6420253e01085615024a3c70ad1f51dbe93c26b53a05",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "appearance.3mf",
+      "original_report_sha256": "9780c34b95cb59709687a5df13b715c7eb0121d389033e62e91c67e19ea6e883",
+      "current_sha256": "9780c34b95cb59709687a5df13b715c7eb0121d389033e62e91c67e19ea6e883",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "scene.blend",
+      "original_report_sha256": "95297b179d382fa033091bea7df198c140a2ba382e6a10322275bf68a09e7b6f",
+      "current_sha256": "95297b179d382fa033091bea7df198c140a2ba382e6a10322275bf68a09e7b6f",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "colorize_model.py",
+      "original_report_sha256": "f7d649c36661ac0020a749adc1620310737190c83167a9a678ff02426f9798de",
+      "current_sha256": "f7d649c36661ac0020a749adc1620310737190c83167a9a678ff02426f9798de",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "BELFRY-WITHDRAWAL-SOURCE-QA.json",
+      "original_report_sha256": "006ebb77fe4a8deb5db2f2fd1fd06fa0cf44fdbaa94b9f71081d60a072ea834b",
+      "current_sha256": "14bf567718ed0e525b61ed1a1bf3ee1e33d0651b8740f122fffb05c4b005c8ff",
+      "relation": "PRE_FINALIZATION_SOURCE_SNAPSHOT"
+    },
+    {
+      "path": "preview.png",
+      "original_report_sha256": "b7898188f841563f1c2bb91f137f81a605a3234e90fe7215f22175817896ef36",
+      "current_sha256": "b7898188f841563f1c2bb91f137f81a605a3234e90fe7215f22175817896ef36",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "rear.png",
+      "original_report_sha256": "af050bb4a00691404e35cffe8ce22447518d2e06dc64ef3be72c61eff487700d",
+      "current_sha256": "af050bb4a00691404e35cffe8ce22447518d2e06dc64ef3be72c61eff487700d",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "front.png",
+      "original_report_sha256": "9920a53f80b0a1a9bedcf9dd00f70a53e5fce76b58aa6e999c938c1ca1f8e484",
+      "current_sha256": "9920a53f80b0a1a9bedcf9dd00f70a53e5fce76b58aa6e999c938c1ca1f8e484",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "back.png",
+      "original_report_sha256": "a8a3d7ef4e827313c811ca8d7dfa1f31c934b89a0711a3cc86541144e533527f",
+      "current_sha256": "a8a3d7ef4e827313c811ca8d7dfa1f31c934b89a0711a3cc86541144e533527f",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "west.png",
+      "original_report_sha256": "2079921bbbe139a892951de3763135bc6b0030cc51920e4012676362b6ab713c",
+      "current_sha256": "2079921bbbe139a892951de3763135bc6b0030cc51920e4012676362b6ab713c",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "east.png",
+      "original_report_sha256": "62a1f9a70a01ca58b7d08f92244490ed943019f1ed01425ac6c7ed9ffe905a1a",
+      "current_sha256": "62a1f9a70a01ca58b7d08f92244490ed943019f1ed01425ac6c7ed9ffe905a1a",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "top.png",
+      "original_report_sha256": "b72987c243c89e834f787ebf80bf495881a82b262066f119904998e62563af8e",
+      "current_sha256": "b72987c243c89e834f787ebf80bf495881a82b262066f119904998e62563af8e",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "entry-detail.png",
+      "original_report_sha256": "c5bd43e3cd61d443f4fd080fbaeb6af19c92230c98b584e896c153d349f1cb0c",
+      "current_sha256": "c5bd43e3cd61d443f4fd080fbaeb6af19c92230c98b584e896c153d349f1cb0c",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "tower-detail.png",
+      "original_report_sha256": "2f284de5c999d755877a9c63e5a13fe2c5cbbbe3683915df3dca4365804b9c75",
+      "current_sha256": "2f284de5c999d755877a9c63e5a13fe2c5cbbbe3683915df3dca4365804b9c75",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    },
+    {
+      "path": "roof-detail.png",
+      "original_report_sha256": "10bc91b131cec1555d5ac0e5c2b8b23176d2b605b02a9f9b3d4d8cd588a787e4",
+      "current_sha256": "10bc91b131cec1555d5ac0e5c2b8b23176d2b605b02a9f9b3d4d8cd588a787e4",
+      "relation": "UNCHANGED_EXACT_MATCH"
+    }
+  ],
+  "new_model_changes": false
+}

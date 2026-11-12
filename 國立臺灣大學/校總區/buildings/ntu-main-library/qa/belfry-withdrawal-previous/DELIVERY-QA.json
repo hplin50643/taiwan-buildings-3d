@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "checks": {
+    "preview_size": true,
+    "preview_fresh": true,
+    "rear_size": true,
+    "rear_fresh": true,
+    "front_size": true,
+    "front_fresh": true,
+    "back_size": true,
+    "back_fresh": true,
+    "west_size": true,
+    "west_fresh": true,
+    "east_size": true,
+    "east_fresh": true,
+    "top_size": true,
+    "top_fresh": true,
+    "entry-detail_size": true,
+    "entry-detail_fresh": true,
+    "tower-detail_size": true,
+    "tower-detail_fresh": true,
+    "roof-detail_size": true,
+    "roof-detail_fresh": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_PASS": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_mesh": true,
+    "SCENE-QA.json_PASS": true,
+    "SCENE-QA.json_mesh": true,
+    "FRAMING-QA.json_PASS": true,
+    "FRAMING-QA.json_mesh": true,
+    "model.stl_original_bytes": true,
+    "model.obj_original_bytes": true,
+    "build_model.py_original_bytes": true,
+    "first_section_ten_images": true,
+    "three_columns": true,
+    "no_private_absolute_paths_in_new_public_text": true
+  },
+  "images_sha256": {
+    "back.png": "ee9f7aed0baa0cf8cd2528bfea2d6a2b15d0d40be2d7c5f33a35fdb27e60929c",
+    "east.png": "3b90cffbe82daaa3f45990f839c9fe0b1f65dbe564eae8170c97d385cca5b6c8",
+    "entry-detail.png": "2d2c1e3b94c7b963a166e12d8cdbdf5e56e52039aef851e1059e5eef033214ed",
+    "front.png": "f9839d5262da50b60c3608ef275f95f6c61d1422a5339489a523d98800bb668e",
+    "preview.png": "b7d79175d4f8c3075397447a6b70f8733f48fa5ed6af12631b9fae65f8ec2bed",
+    "rear.png": "ea0cc24ec6fd16f4b6e5f3e770d9963af2cee7c6cc42ea516c015c1ca336302c",
+    "roof-detail.png": "d1008743d37114ea8a8e05edaf5e04a0ac554a666a7a87e637a2c9b6f8e5e6cf",
+    "top.png": "7439ce858da4c650749303ca0d08302dcbe479277e6ba33511ce1bd6e2825e63",
+    "tower-detail.png": "5c46c0405843ed956fdb09350f884fa979c4d6be3e233de2ac963b0863604675",
+    "west.png": "666bb1137652aef12bfd296495fa72892ab52e158f23b6ed8b7738d9a89790bf"
+  },
+  "mesh_sha256": "4271fa4da7bde5ade9ac7e2bfb946d20153ba4af9b40df5842dc6e97b7b280a0",
+  "geometry_change": false,
+  "count_delta": 0,
+  "manual_visual_review": "Builder viewed preview plus all nine other rendered views; neutral rear and broad flat roof, gray cap base and blue-green sloped cap, brick high gable and pale front gable verified. Independent review separate.",
+  "limitations": [
+    "Six appearance materials, not a verified four-filament slicer job.",
+    "Original simplified geometry preserved; no current full-building survey claim."
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
+}

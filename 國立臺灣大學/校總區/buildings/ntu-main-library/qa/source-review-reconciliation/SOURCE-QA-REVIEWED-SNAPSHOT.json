@@ -1,0 +1,56 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_INDEPENDENT_REVIEW",
+  "original_source": {
+    "status": "SOURCE_COLOR_FAMILIES_VERIFIED_NOT_CALIBRATED_COLORIMETRY",
+    "official_page": "https://visitorcenter.ntu.edu.tw/News_Content_n_74842_s_81635.html",
+    "official_photo": "https://visitorcenter.ntu.edu.tw/001/Upload/photoedittemp/9ad8b3c8-6143-4770-a110-00d9f6dbc734.jpg",
+    "photo_sha256": "6a2ed23994290127fbc292af0857442e0a01f1cbcb4db9d569af66b9f3c58207",
+    "color_source_go_sha256": "55211d0f4614dc909ebc3e20bf0999e7c2f58ac0651df04cd5e3e13286097d1d",
+    "source_image_publicly_included": false,
+    "photo_as_texture": false,
+    "source_restrictions": "Copyright retained by original holders; no CC or commercial-use guarantee inferred.",
+    "limitations": [
+      "Original simplified geometry unchanged; color cannot repair unsupported rear/depth.",
+      "Photo-derived color families and illustrative HEX; no on-site color measurement.",
+      "Neutral unverified rear and broad original top; tower cap only blue-green.",
+      "No four-filament slicer proof or physical print."
+    ],
+    "independent_focused_source_review_sha256": "87d5d94f44471511e17a7c97abe17d6cb4ad7880632f13bc29382be5837ad0f8"
+  },
+  "new_official_pdf": "https://www.lib.ntu.edu.tw/Publication/pdf/ntulib20th.pdf",
+  "pdf_sha256": "9c95a2e42035a22a170976b61bb3c29691d672f486e1b44e299b8ec44b5970b6",
+  "source_pdf_page": 12,
+  "printed_page": 14,
+  "extracted_images": [
+    {
+      "file": "official-aerial-page12-000.jpg",
+      "sha256": "8645f1416414915cf9bcb1e4eb4a87ba46dbcafb00f45c8fb723a4898cfb8f00",
+      "source_pdf_page": 12,
+      "printed_page": 14
+    }
+  ],
+  "observation": "Official front and new high-angle library publication photograph show orange-red brick belfry piers and separate pale stone bands.",
+  "action": "Withdraw entire existing upper front coplanar domain of 8 triangles (2 brick, 6 stone) to unknown-neutral because original triangles cross real material boundaries. This corrects overassignment; no red material is added.",
+  "domain": {
+    "y": -6,
+    "x": [
+      -66.5,
+      -53.5
+    ],
+    "z": [
+      47.2,
+      57.5
+    ],
+    "triangles": 8
+  },
+  "rejected_proposal": "16 inner-return red faces remain HOLD; exterior brick evidence does not establish all inner-return materials.",
+  "limits": [
+    "No facet splitting, z-clipping, geometry edits or whole tower brick fill.",
+    "All other assignments unchanged; cap and inner returns not remapped.",
+    "107 original mixed domains reduced to 106; no new mixed domain, not whole-model zero seams.",
+    "Unknown capture date; anniversary/publication does not establish capture date or current 2026 condition.",
+    "Neutral means unresolved mapping, not actual gray paint."
+  ],
+  "rights": "Official photos and PDF retained privately; not redistributed publicly or used as textures. No CC/commercial license inferred.",
+  "historical_source_register": "qa/belfry-withdrawal-previous/COLOR-SOURCE-REGISTER.json"
+}
