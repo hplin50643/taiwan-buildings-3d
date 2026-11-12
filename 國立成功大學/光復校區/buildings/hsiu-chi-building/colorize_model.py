@@ -39,7 +39,17 @@ for i,(t,c,n) in enumerate(zip(m.triangles,m.triangles_center,m.face_normals)):
  # Far-right high block cannot be uniquely matched in official front photograph.
  if lo[0]>=39.999 and z>3:mat[i]=5
  if hi[1]<-27.9 and lo[2]>=2.999 and hi[2]<=10.201:mat[i]=4
+original=mat.copy();t=m.triangles
+withdraw=(abs(t[:,:,1]+32).max(1)<1e-4)&(t[:,:,0].min(1)>=-23.5001)&(t[:,:,0].max(1)<=7.5001)&(t[:,:,2].min(1)>=9.9999)&(t[:,:,2].max(1)<=27.0001)
+assert np.flatnonzero(withdraw).tolist()==[1412,1419,1420,1433,1434,1435,1436,1437,1445,1446,1447,1448,1459,1460,1470,1471,1472,1473]
+assert np.bincount(original[withdraw],minlength=7).tolist()==[0,16,0,0,2,0,0]
+ad=m.face_adjacency;n=m.face_normals;cs=trimesh.graph.connected_components(ad[(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999],nodes=np.arange(len(t)),min_len=1)
+selected=[c for c in cs if withdraw[c].any()];assert len(selected)==1 and withdraw[selected[0]].all()
+before=[(c.tolist(),original[c].tolist())for c in cs if len(set(original[c]))>1]
+mat[withdraw]=5;after=[(c.tolist(),mat[c].tolist())for c in cs if len(set(mat[c]))>1]
+assert len(before)==33 and len(after)==32 and all(x in before for x in after)
+assert np.array_equal(mat[~withdraw],original[~withdraw]) and np.bincount(mat).tolist()==[479,595,54,4,142,771,59]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=mat)
 (R/'palette.json').write_text(json.dumps(pal,ensure_ascii=False,indent=2)+'\n')
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int((mat==i).sum())}for i,(a,b)in enumerate(pal)],'geometry_policy':'2104 original triangles unchanged; no subdivision.','scope':'Observed central entrance and right frontage color-family interpretation only; left broad arch and rear neutral.','limitations':['Original convex curvature is not revalidated by these photographs.','Paint boundaries coarsened to existing faces; no restoration color precision.','Seven material labels not a verified four-filament slicing project.']},ensure_ascii=False,indent=2)+'\n')
-q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':len(m.faces),'materials_used':np.unique(mat).tolist(),'watertight':bool(m.is_watertight),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q)
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int((mat==i).sum())}for i,(a,b)in enumerate(pal)],'geometry_policy':'2104 original triangles unchanged; no subdivision.','scope':'Original bounded colors with18 complete portal front faces withdrawn neutral; all other assignments unchanged.','limitations':['Original convex curvature is not revalidated by these photographs.','Paint boundaries coarsened to existing faces; no restoration color precision.','Seven material labels not a verified four-filament slicing project.']},ensure_ascii=False,indent=2)+'\n')
+q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'withdrawn_color_faces':18,'mixed_domains_before':33,'mixed_domains_after':32,'other32_mixed_domains_exact':True,'triangles':len(m.faces),'materials_used':np.unique(mat).tolist(),'watertight':bool(m.is_watertight),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q)

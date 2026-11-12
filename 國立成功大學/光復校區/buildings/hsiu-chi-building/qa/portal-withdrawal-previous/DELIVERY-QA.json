@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": {
+    "preview_size": true,
+    "preview_fresh": true,
+    "rear_size": true,
+    "rear_fresh": true,
+    "front_size": true,
+    "front_fresh": true,
+    "back_size": true,
+    "back_fresh": true,
+    "west_size": true,
+    "west_fresh": true,
+    "east_size": true,
+    "east_fresh": true,
+    "top_size": true,
+    "top_fresh": true,
+    "entry-detail_size": true,
+    "entry-detail_fresh": true,
+    "facade-detail_size": true,
+    "facade-detail_fresh": true,
+    "roof-detail_size": true,
+    "roof-detail_fresh": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_PASS": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_mesh": true,
+    "SCENE-QA.json_PASS": true,
+    "SCENE-QA.json_mesh": true,
+    "FRAMING-QA.json_PASS": true,
+    "FRAMING-QA.json_mesh": true,
+    "model.stl_original_bytes": true,
+    "build_model.py_original_bytes": true,
+    "first_section_ten_images": true,
+    "three_columns": true,
+    "no_private_absolute_paths_in_new_public_text": true
+  },
+  "images_sha256": {
+    "back.png": "289d5fd68d5eece871b3e8d87b2539301622cf4fc5886fc550064bc73ad637b6",
+    "east.png": "71c82c8660f00a2bf2486648a23ffee587f302338e99183404d86a152ab6aa62",
+    "entry-detail.png": "d4ad01ff3a5842b4568f49154501e4668500157ecd472154f53e6e9dd898d947",
+    "facade-detail.png": "e0c948238f1369e4743897214bf6c6a18c0fdcc37e9754f4c1abde45feeb5e76",
+    "front.png": "3da0a2612918bcfde75ee6aa34e8f6ed30a4bbfd5e48ebf3c9c5bd6c81a22abe",
+    "preview.png": "b2d2a1e10f97a8207b3721014b7a287d0cb93b19fca3de263c722ce3ea1014ed",
+    "rear.png": "f07703220e76d04004dec669359bd269ab29d5e0c3fea723c3508958a282d5e4",
+    "roof-detail.png": "8f1c5410ce19bc92a9d5f29549d1a374832e85ae9cd2b5f4350d260d4d459d8f",
+    "top.png": "0296c285eeee46c73232af4f44eb3cf229c427182d43912a9d561c8c18e59ec8",
+    "west.png": "2be6c47e3bf2b35f6401ee379888b29054f7520c6ceda6fd95fcba7434885c5d"
+  },
+  "mesh_sha256": "7729efa7082d8552499d0d85491fccd7a0a0cedadc177c6974ff1d513a48e875",
+  "geometry_change": false,
+  "count_delta": 0,
+  "manual_visual_review": "Builder viewed preview plus all nine other rendered views; bounded brick/gray central entrance and right frontage; unknown left arch, sides, rear and flat roofs neutral; original geometry unchanged. Independent review separate.",
+  "limitations": [
+    "Seven appearance materials, not a verified four-filament slicer job.",
+    "Original simplified geometry preserved; no current full-building survey claim."
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
+}

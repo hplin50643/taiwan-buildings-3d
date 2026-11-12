@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in hsiu-chi-building-all-views.jpg. Caption/backing absent; original geometry, materials and view framing retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "289d5fd68d5eece871b3e8d87b2539301622cf4fc5886fc550064bc73ad637b6",
+    "east.png": "71c82c8660f00a2bf2486648a23ffee587f302338e99183404d86a152ab6aa62",
+    "entry-detail.png": "d4ad01ff3a5842b4568f49154501e4668500157ecd472154f53e6e9dd898d947",
+    "facade-detail.png": "e0c948238f1369e4743897214bf6c6a18c0fdcc37e9754f4c1abde45feeb5e76",
+    "front.png": "3da0a2612918bcfde75ee6aa34e8f6ed30a4bbfd5e48ebf3c9c5bd6c81a22abe",
+    "preview.png": "b2d2a1e10f97a8207b3721014b7a287d0cb93b19fca3de263c722ce3ea1014ed",
+    "rear.png": "f07703220e76d04004dec669359bd269ab29d5e0c3fea723c3508958a282d5e4",
+    "roof-detail.png": "8f1c5410ce19bc92a9d5f29549d1a374832e85ae9cd2b5f4350d260d4d459d8f",
+    "top.png": "0296c285eeee46c73232af4f44eb3cf229c427182d43912a9d561c8c18e59ec8",
+    "west.png": "2be6c47e3bf2b35f6401ee379888b29054f7520c6ceda6fd95fcba7434885c5d"
+  }
+}

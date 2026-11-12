@@ -1,0 +1,75 @@
+{
+  "status": "SOURCE_REFERENCED_BOUNDED_COLOR",
+  "count_delta": 0,
+  "source_GO_sha256": "e9bc587b1907e4d6e7ac8afef4e68db45a1dccbbfdfd455c34aa5d28cb35572e",
+  "source_urls": [
+    "https://material.ncku.edu.tw/picture.php?/139",
+    "https://material.ncku.edu.tw/picture.php?/3587",
+    "https://material.ncku.edu.tw/picture.php?/2806",
+    "https://material.ncku.edu.tw/picture.php?/3631",
+    "https://flld.ncku.edu.tw/p/412-1165-31511.php?Lang=zh-tw"
+  ],
+  "materials": [
+    {
+      "id": "red_brick",
+      "hex": "#9F5946",
+      "scope": "observed central stair-tower brick wall portions and visible right wing brick field",
+      "certainty": "family high, not individual brick palette or exact boundaries"
+    },
+    {
+      "id": "gray_concrete_stone",
+      "hex": "#B0B2A7",
+      "scope": "central top gray cap/wall, broad tower horizontal bands, entrance upper frame, observed window surrounds/wing cornice",
+      "certainty": "gray finish appearance; actual material composition not asserted"
+    },
+    {
+      "id": "dark_opening",
+      "hex": "#414A48",
+      "scope": "existing window/deep entrance recess backs",
+      "certainty": "generic opaque display approximation, do not infer glass for every open void"
+    },
+    {
+      "id": "roof_dark_gray",
+      "hex": "#525957",
+      "scope": "right long shallow roof portion visibly dark gray in FLLDfront, not entire flat tower roofs",
+      "certainty": "visible gray tile family; no texture"
+    },
+    {
+      "id": "steps_gray",
+      "hex": "#999D95",
+      "scope": "existing main front stair treads",
+      "certainty": "photographed gray stair family; no brick stair-sidewall geometry added"
+    },
+    {
+      "id": "unverified_neutral",
+      "hex": "#A7ABA5",
+      "scope": "unseen rear, left broad-arch side volume where street multiarch photograph cannot be uniquely mapped, flat tower roofs, faces crossing unresolved material boundaries",
+      "certainty": "explicit unverified placeholder"
+    },
+    {
+      "id": "display_base",
+      "hex": "#ABA8A0",
+      "scope": "display base",
+      "certainty": "presentation only"
+    }
+  ],
+  "limitations": [
+    "OriginalGISphotos cannot currently be reread (4 HTTP503 terminal). Independent official FLLD and material-site photographs support the same named building but capture dates are not stated.",
+    "Material139 posted2015;3587/3631 posted2025, not necessarily photo dates.3631shows scaffolding; do not model scaffolding or call it2025asbuilt.",
+    "Official campus repair search identifies2019 facade work. Therefore do not claim any source photo or new colors are2026current precise paint.",
+    "Use broad redbrick/gray contrast concordant between139andFLLD; do not merge fine finishing differences across dates as calibrated restoration.",
+    "139/FLLD/3631look at entrance box, broad stairs and upper stepped window bands; model convex curvature remains its preexisting approximation.",
+    "3587street elevation has repeated arches unlike model single broad left arch; do not automatically assign its exact facade pattern to the model front.",
+    "2806is distant contextual view, includes other buildings; do not color this model from foreground right unrelated light building.",
+    "No added ornamental squares, school lettering, rock inscription, railing or new windows; source photos never textures.",
+    "No centroid checkerboard across large source triangles; use existing coherent regions and keep cross-boundary faces neutral where necessary."
+  ],
+  "rights": {
+    "material_site": "Explicit noncommercial use terms allow downloads for noncommercial purposes with credit 成大素材網; retain credit, keep photos private, do not imply free commercial relicensing.",
+    "flld": "Officialdepartmentphoto no confirmedCC; private source only.",
+    "commons": "MetadataCCBY4.0S0990012017-01-26read, original403 unavailable; not used as pixelcolor evidence.",
+    "public_package": "Only independent material assignments and source citations, no original images/crops/texture maps/official graphics."
+  },
+  "final_conservative_scope": "Far-right high block entirely neutral including window recesses, as source photographs do not uniquely locate it; only middle right frontage supported.",
+  "scope_narrowing_appendix_sha256": "781d24064467de7de163b8bb43f437a753a1eb864089eed4e61dbdbc91024cf1"
+}
