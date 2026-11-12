@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in npust-dormitory-e-1987-design-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "central-entry-completed.png": "c3cdf627c16e3741f535ab82fdb6eaec29cffa59b1e21e2f08ff1d6dc67a7a0e",
+    "east.png": "e41dad5787972e92ca366a3987981fda10620b558e2566b41c0756cc7f00cd96",
+    "eave-beam-detail.png": "291400d37d0d5b960c385a01746b0941b791e3ab6f9ae89025207e3229f88971",
+    "north.png": "294c489d7adfb4b95879176ad10d6cd2dbcdbb06b57c9136482b29748209bf5b",
+    "preview.png": "809196fe65c4da60a58e128aa253ae7b0aa33fb1b7276d2677c8f16398756b81",
+    "rear.png": "c7ab1098c42822342186e9de57c7e9a92504638a150c36c6bbb4c13c99b2009b",
+    "south.png": "f8adb0e6e7ffe0d1f7973e37bc340fa0d526d6f3aded08d9e7e285febd4e8188",
+    "stepped-roof-detail.png": "f8a2df6126f99bc06f0858d1222f7ce6651e50027a76ae62f86b35e7e8c8a8e7",
+    "top.png": "ece7d3a807899e71bab9ee51b4a402be8180946ef7f5bb44940ce25f35b4bb08",
+    "west.png": "9a17eec962996f33d55f5e338074792007bbd9f58c752a730cec2218a1842ddc"
+  }
+}

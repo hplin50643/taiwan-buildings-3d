@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in npust-dormitory-d-1987-design-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "annex-detail.png": "32010f3f7ad2e7ebca95724c05fe24a119cb959d8ae592503e180339cc31d701",
+    "east.png": "f3cc4dcc57e37edcbf2889fad79c20bbc672875846f1160b5aba595c1d0c94fa",
+    "entrance-detail.png": "b1562337df90c53d13333f6decab25b4c32a70a77db5b1f575f6d65d20355ade",
+    "north.png": "e7f5cf0d0242e9a88c5ea2b70f243f5a2fefff17058b9cdcc125c9e444b50d61",
+    "preview.png": "169dc2a7a13270a1aac29dc1bde9410dcdffe8268b5a7a4cdb000c746d3d68cf",
+    "rear.png": "e127bd4a0d14ec97ce80325eb66322c40f893f3007242e8eed580b589561d400",
+    "roof-detail.png": "4b4594edac4e15e45078390673ca4e56e4eee4b4865e39b6a399fbac92cd6c7a",
+    "south.png": "aa3a5dee7cc5368c9ef3e90d08fcda315761c6bbdc5767b0c58daff51abf55e6",
+    "top.png": "f5b5bfae5ee196a3a9dd8906f60e7d24368baea2ac2545269574374d2e726b1b",
+    "west.png": "f529324610b42b941a209ef84709b8f97b625517bd124838139f792b4b616e2e"
+  }
+}
