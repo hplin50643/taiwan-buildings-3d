@@ -1,17 +1,5 @@
 {
-  "slug": "nthu-humanities-social-sciences",
-  "count_delta": 0,
-  "geometry_change": false,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "go": {
-    "file": "NTHU-HUMANITIES-SOCIAL-SCIENCES-COLOR-SOURCE-GO-2306.json",
-    "sha256": "1f7f5365b4f3549c182706268f8265977b0cd95045ac31921e67dc17e3e278a6"
-  },
-  "review": {
-    "file": "INDEPENDENT-MAPPING-2305.json",
-    "sha256": "17b6681af60153ef5cd3bf80ddb28648f19c5d2487781a386918997ded44b989"
-  },
+  "status": "SOURCE_SCOPE_SUPPORTED_INDEPENDENT_REVIEW_PASS",
   "sources": [
     {
       "file": "reference-view1.jpg",
@@ -39,14 +27,23 @@
     }
   ],
   "source_context": "1 school teaching exterior;2 school2020historical exhibition original appearance;3 alumni distant exterior;4 contractor exterior work photograph. 1990completion and2020publication are not authenticated capture dates. Different dates cannot be presented as one2026current condition.",
-  "scope": "人社院局部鐘塔冠前、前鐘亭柱與斜檐鼻端灰色；跨年代外觀近似，未知中性，非2026全貌或全色完成",
+  "observation": "Official school, library exhibition and alumni photographs plus contractor exterior photo show gray concrete family at belfry posts, with lighting and shadow differences.",
+  "inference": "Only two front original belfry posts: twelve bounded vertical side/rear original faces inferred continuous gray with their four previously observed front faces. Not individually directly visible evidence.",
+  "excluded": "Rear posts, caps, crown returns, eave returns/tops/undersides/brackets, mixed pink-gray tower and wings, glazing and all other unknown domains. Shadow never interpreted as black material.",
+  "face_counts": {
+    "triangles": 4206,
+    "original_colored": 12,
+    "added": 12,
+    "colored": 24,
+    "neutral": 4182
+  },
   "limits": [
-    "Fullheight tower shaft transitions grayupper/pinklower without original material edge; whole shaftneutral, no z-threshold triangle patch.",
-    "All roof/eave top surfaces, undersides and brackets remain neutral in this narrow approval; darkness is shade, not blackmaterial.",
-    "Whole wing wall planes, courtyard steppedpiers and ledges can cross gray/pink/tile/occlusion without verified boundaries; no broad uniformpaint.",
-    "Windowbackings/grid members contain glazing, frames, airconditioners, reflections and vegetation; no glass or greenvegetation inference.",
-    "Stairs, lowerwall/base, unknownrear and all crown/post sides not listed remain neutral."
+    "Cross-era appearance approximation, not 2026 condition.",
+    "Original sculptural crown abstraction and geometric approximation unchanged.",
+    "Unknown capture dates; completion and publication are not capture dates.",
+    "Nominal gray not measured color; unverified surfaces neutral, not asserted actual gray."
   ],
   "rights": "Reference photographs privately retained; no CC permission inferred, no public texture or commercial-use guarantee.",
-  "source_private_backup": "Original references separately privately preserved; not included here."
+  "historical_source_register": "qa/belfry-return-previous/COLOR-SOURCE-REGISTER.json",
+  "current_independent_review": "BELFRY-RETURN-INDEPENDENT-QA.json"
 }

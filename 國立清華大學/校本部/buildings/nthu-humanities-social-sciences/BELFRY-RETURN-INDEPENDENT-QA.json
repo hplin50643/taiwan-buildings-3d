@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T09:44:26.070595+00:00",
+  "scope": "Independent bounded NTHU Humanities two front belfry-post vertical return color review; no publication",
+  "blockers": [],
+  "numeric_checks": {
+    "status": "PASS",
+    "checks": {
+      "vertices_exact": true,
+      "faces_exact": true,
+      "4206_triangles": true,
+      "STL_unchanged": true,
+      "OBJ_unchanged": true,
+      "build_unchanged": true,
+      "original12_preserved": true,
+      "12new": true,
+      "counts": true,
+      "independent_box_side_faces": true,
+      "only_selected_side_changes": true,
+      "no_coplanar_split": true,
+      "3mf_vertices": true,
+      "3mf_faces": true,
+      "3mf_materials": true,
+      "source_hashes": true
+    },
+    "pier_side_counts": [
+      8,
+      8
+    ],
+    "prior_front_face_counts": [
+      2,
+      2
+    ],
+    "mesh_sha256": "b40dec1c44a85fbb58fa05712aa8d15419c67c9304de7dcbfe839fb732f659f4"
+  },
+  "scene_checks": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "two_material_slots": true,
+      "palette_0": true,
+      "palette_1": true
+    },
+    "scene_sha256": "600a0e8c7090516ff15a74b7e056066c7a6a5d9e6bbc6d04dddb058f2c96de0d"
+  },
+  "face_counts": {
+    "total": 4206,
+    "original_colored_preserved": 12,
+    "added": 12,
+    "colored": 24,
+    "neutral": 4182,
+    "front_post_side_counts": [
+      8,
+      8
+    ],
+    "previous_front_faces_per_post": [
+      2,
+      2
+    ]
+  },
+  "findings": [
+    "Actually viewed all four reference photographs and private crop of alumni tower top. Visible post surfaces support nominal gray concrete family with lighting gradients; hidden reverse/side faces are explicitly same-member continuity inference, not individually observed facts.",
+    "Independently reconstructed exact original front boxes at x=-50/-38,y=12.5,z=121..133 with2.6x2.6section. Each has8 vertical triangles, of which2 were previously colored. Exact new-face mask matches12 candidate changes.",
+    "All12 original colored faces retained, including crown fronts and eave noses. No new crown returns, eave surfaces, rear posts, caps, tower-shaft or wing-wall coloring. No adjacent coplanar material split.",
+    "Original vertices/faces, STL/OBJ and build script remain unchanged. 3MF geometry and material indices match candidate. All four source hashes match original register.",
+    "After all ten renders and scene save completed, actually inspected all ten images in private montages and full-size facade-detail. Column side color is coherent; no unintended broad-domain coloring observed.",
+    "Independently reopened original/final scenes, checked mesh/material indices, palette shader values, camera/lights/render settings, hidden captions and backdrop, and stamp disabled.",
+    "Source QA and README clearly preserve cross-era/date uncertainty, unseen-side inference, shade-not-black rule, excluded domains, approximate original saddle geometry and historical QA scope."
+  ],
+  "image_sha256": {
+    "preview.png": "2703ba42fb32077f49b0cd5acacae6e1d80a96978f80cdf6adf71def4fb44e2a",
+    "rear.png": "1f2dab18d55977c9a3dd272c370c95767e451daa9fe38d2c0e67da2bb976f441",
+    "front.png": "4c0e618d8281edb5a079547f2bc54cff43e7945239c7f6e5b3f6c24a6f0d6357",
+    "back.png": "19c9e00c59c2d8eb78322ff154146359b0252a977e1f221bf51e1795ca6e6c9a",
+    "west.png": "58c3c88221c8d95ecb522b0d7069a683f85699e00ed82b906f045a787f2fc8cd",
+    "east.png": "11b284d908f3e0b37b546d8ada5effa3d2303818a2d3d510d47b79a297b6603a",
+    "top.png": "b6d643c896d6bf6b13fa2267052cd5c4343ee9448c48c3ab0ca607e2f7a96737",
+    "entry-detail.png": "7418b7525bbf7fb7dd2b6760f70aa3238cbced739b96ed7f74cbf6cb6da9b0ac",
+    "facade-detail.png": "ec4bc6b40d1cf1b888aedd852c9bbc1b374a4c89777523403de829dcc0a93365",
+    "roof-detail.png": "2a8945f5e5bd2e01205039421bbc8b9cd1cb1d77595cd88dbdc82a716a486e9b"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "b40dec1c44a85fbb58fa05712aa8d15419c67c9304de7dcbfe839fb732f659f4",
+    "appearance.3mf": "8026baa7a74b37fc9a55e604a018850c96f5c237e532634386bec22bc1b4d014",
+    "scene.blend": "600a0e8c7090516ff15a74b7e056066c7a6a5d9e6bbc6d04dddb058f2c96de0d",
+    "colorize_model.py": "a2128a70dafd59aee9538dc718861caaca13a73e2dd2c39441bdb9e9d5fc54df",
+    "BELFRY-RETURN-SOURCE-QA.json": "2ee75f122a7f9d6ac7a1ba0da051afbd363c1a987e53355cd100925598338daa"
+  },
+  "source_sha256": {
+    "reference-view1.jpg": "ca97cfbd909322c1c3bbf15cc2d3ba89bcbf891a32518fb5e50f3d5392e4f1ad",
+    "reference-view2.jpg": "0d798be766c7300ad445578670acf0f0ce3fd32852528b89934ffb12cafec927",
+    "reference-view3.jpg": "f1074be874d98c974f39d583e8da04a4021f7b286e1aee2a2a28e1fa417543f9",
+    "reference-view4.jpg": "003eeca81ba77f2907c56f2bc0bd6508f7c71a979510ea19a66e9b0a38935488"
+  },
+  "limitations": [
+    "Cross-era appearance approximation, not a verified2026 condition. Capture dates unknown; completion/publication dates are not capture dates.",
+    "Only two front-post vertical sides receive inferred continuity. Dark surfaces are treated as illumination/shadow, not black material.",
+    "Nominal gray not calibrated. Crown/eave return surfaces and mixed pink-gray tower/wing domains remain unverified-neutral.",
+    "No new dimensional or physical printability certification; original sculptural saddle remains a simplified abstraction.",
+    "Reference photos remain private, not textures, with no redistribution rights inferred."
+  ]
+}

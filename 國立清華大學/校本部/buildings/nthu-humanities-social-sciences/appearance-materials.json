@@ -2,18 +2,18 @@
   "palette": [
     {
       "id": 0,
-      "name": "Observed crown front posts and eave nose concrete gray",
+      "name": "Observed crown post fronts eave noses; inferred front post returns gray",
       "hex": "#A8A69E",
-      "faces": 12
+      "faces": 24
     },
     {
       "id": 1,
       "name": "UNVERIFIED mixed tower walls glazing roof neutral",
       "hex": "#B8BAB5",
-      "faces": 4194
+      "faces": 4182
     }
   ],
-  "domain_face_indices": {
+  "original_domain_face_indices": {
     "whole_saddle_crown_front": [
       4035,
       4036,
@@ -37,15 +37,88 @@
       3844
     ]
   },
+  "front_post_members": [
+    {
+      "x": -50,
+      "bounds": [
+        [
+          -51.3,
+          11.2,
+          121.0
+        ],
+        [
+          -48.7,
+          13.8,
+          133.0
+        ]
+      ],
+      "side_faces": [
+        4003,
+        4004,
+        4005,
+        4006,
+        4007,
+        4008,
+        4009,
+        4010
+      ]
+    },
+    {
+      "x": -38,
+      "bounds": [
+        [
+          -39.3,
+          11.2,
+          121.0
+        ],
+        [
+          -36.7,
+          13.8,
+          133.0
+        ]
+      ],
+      "side_faces": [
+        4019,
+        4020,
+        4021,
+        4022,
+        4023,
+        4024,
+        4025,
+        4026
+      ]
+    }
+  ],
+  "new_inferred_face_indices": [
+    4004,
+    4005,
+    4007,
+    4008,
+    4009,
+    4010,
+    4019,
+    4021,
+    4023,
+    4024,
+    4025,
+    4026
+  ],
+  "original_colored_faces": 12,
+  "added_colored_faces": 12,
+  "colored_faces": 24,
+  "neutral_faces": 4182,
   "coplanar_components": 1195,
-  "coplanar_neutralized_faces": [],
+  "excluded_faces": [],
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
-  "geometry_policy": "4206 original triangles unchanged",
+  "count_delta": 0,
+  "geometry_policy": "4206 original triangles and original STL/OBJ/build bytes unchanged; no cuts",
   "limits": [
-    "Whole crown front4, two front post fronts4, two original vertical eave noses4.",
-    "Whole connected coplanar domains uniform; no tower z-threshold.",
-    "Tower/wings mixed gray pink without geometry boundary, glazing, roof surfaces and undersides neutral.",
-    "Original thick abstract saddle preserved; cross-era photographs not2026current condition; completion1990 not capture date."
+    "Original 12 observed faces retained. Only the two original front belfry posts receive inferred continuous gray on their bounded vertical side/rear faces.",
+    "Twelve new faces are same-member continuity inference, not directly photograph verified individually.",
+    "Rear posts, post caps, saddle crown returns, roof/eave tops, undersides and brackets remain neutral; shadow is not black material.",
+    "Mixed pink/gray tower shaft, wing walls, glazing, base and all other unknown surfaces remain neutral.",
+    "Original thick sculptural saddle remains an abstraction, not newly geometry-certified.",
+    "Cross-era photographs with unknown capture dates do not establish 2026 current condition; 1990 completion and 2020 publication are not capture dates."
   ]
 }

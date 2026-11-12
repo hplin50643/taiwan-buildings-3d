@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded belfry-return update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T09:44:26.729382+00:00",
+  "triangles": 4206,
+  "original_color_faces": 12,
+  "new_color_faces": 12,
+  "colored_faces": 24,
+  "unknown_neutral_faces": 4182,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "061812d33bb8aced519a7a6344d30190401af9206341c33e0796a29857fb3a90",
+  "color_mesh_sha256": "b40dec1c44a85fbb58fa05712aa8d15419c67c9304de7dcbfe839fb732f659f4",
+  "images_sha256": {
+    "preview.png": "2703ba42fb32077f49b0cd5acacae6e1d80a96978f80cdf6adf71def4fb44e2a",
+    "rear.png": "1f2dab18d55977c9a3dd272c370c95767e451daa9fe38d2c0e67da2bb976f441",
+    "front.png": "4c0e618d8281edb5a079547f2bc54cff43e7945239c7f6e5b3f6c24a6f0d6357",
+    "back.png": "19c9e00c59c2d8eb78322ff154146359b0252a977e1f221bf51e1795ca6e6c9a",
+    "west.png": "58c3c88221c8d95ecb522b0d7069a683f85699e00ed82b906f045a787f2fc8cd",
+    "east.png": "11b284d908f3e0b37b546d8ada5effa3d2303818a2d3d510d47b79a297b6603a",
+    "top.png": "b6d643c896d6bf6b13fa2267052cd5c4343ee9448c48c3ab0ca607e2f7a96737",
+    "entry-detail.png": "7418b7525bbf7fb7dd2b6760f70aa3238cbced739b96ed7f74cbf6cb6da9b0ac",
+    "facade-detail.png": "ec4bc6b40d1cf1b888aedd852c9bbc1b374a4c89777523403de829dcc0a93365",
+    "roof-detail.png": "2a8945f5e5bd2e01205039421bbc8b9cd1cb1d77595cd88dbdc82a716a486e9b"
+  },
+  "current_independent_review": "BELFRY-RETURN-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Nominal same-post gray continuity on unseen front-belfry-post sides is inferred. Cross-era undated photographs are not a single 2026 current condition. Crown, eaves, rear posts and mixed tower shaft unchanged.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_INDEPENDENT_REVIEW_PASS",
+  "sources": [
+    {
+      "file": "reference-view1.jpg",
+      "sha256": "ca97cfbd909322c1c3bbf15cc2d3ba89bcbf891a32518fb5e50f3d5392e4f1ad",
+      "url": "https://www.nthu.edu.tw/public/images/img07.jpg",
+      "capture_date": "unknown"
+    },
+    {
+      "file": "reference-view2.jpg",
+      "sha256": "0d798be766c7300ad445578670acf0f0ce3fd32852528b89934ffb12cafec927",
+      "url": "https://www.lib.nthu.edu.tw/events/2020/GoodTimes/image/8.jpg",
+      "capture_date": "unknown"
+    },
+    {
+      "file": "reference-view3.jpg",
+      "sha256": "f1074be874d98c974f39d583e8da04a4021f7b286e1aee2a2a28e1fa417543f9",
+      "url": "https://alumni.site.nthu.edu.tw/var/file/346/1346/img/507572817.jpg",
+      "capture_date": "unknown"
+    },
+    {
+      "file": "reference-view4.jpg",
+      "sha256": "003eeca81ba77f2907c56f2bc0bd6508f7c71a979510ea19a66e9b0a38935488",
+      "url": "https://www.houngsheng.com.tw/image/cache/data/20160224165522-825x619.jpg",
+      "capture_date": "unknown"
+    }
+  ],
+  "source_context": "1 school teaching exterior;2 school2020historical exhibition original appearance;3 alumni distant exterior;4 contractor exterior work photograph. 1990completion and2020publication are not authenticated capture dates. Different dates cannot be presented as one2026current condition.",
+  "observation": "Official school, library exhibition and alumni photographs plus contractor exterior photo show gray concrete family at belfry posts, with lighting and shadow differences.",
+  "inference": "Only two front original belfry posts: twelve bounded vertical side/rear original faces inferred continuous gray with their four previously observed front faces. Not individually directly visible evidence.",
+  "excluded": "Rear posts, caps, crown returns, eave returns/tops/undersides/brackets, mixed pink-gray tower and wings, glazing and all other unknown domains. Shadow never interpreted as black material.",
+  "face_counts": {
+    "triangles": 4206,
+    "original_colored": 12,
+    "added": 12,
+    "colored": 24,
+    "neutral": 4182
+  },
+  "limits": [
+    "Cross-era appearance approximation, not 2026 condition.",
+    "Original sculptural crown abstraction and geometric approximation unchanged.",
+    "Unknown capture dates; completion and publication are not capture dates.",
+    "Nominal gray not measured color; unverified surfaces neutral, not asserted actual gray."
+  ],
+  "rights": "Reference photographs privately retained; no CC permission inferred, no public texture or commercial-use guarantee.",
+  "historical_source_register": "qa/belfry-return-previous/COLOR-SOURCE-REGISTER.json",
+  "current_independent_review": "BELFRY-RETURN-INDEPENDENT-QA.json"
+}

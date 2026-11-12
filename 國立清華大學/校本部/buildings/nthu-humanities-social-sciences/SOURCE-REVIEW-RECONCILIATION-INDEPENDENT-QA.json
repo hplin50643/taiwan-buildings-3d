@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "scope": "Independent reconciliation supplement review only. No new visual, model or printability certification. Original and new work read-only. Freeze manifest is not yet generated.",
+  "checks": {
+    "all_originals_except_scope_identical": true,
+    "old_report_exact": true,
+    "scope_backup_exact": true,
+    "checksum_backup_exact": true,
+    "snapshot_exact_recorded_hash": true,
+    "snapshot_two_fields_only": true,
+    "other_final_file_hashes": true,
+    "ten_image_hashes": true,
+    "supplement_reference_table": true,
+    "source_hash_current": true,
+    "source_hash_snapshot": true,
+    "report_hash": true,
+    "no_private_absolute_path_in_supplement": true
+  },
+  "original_file_count": 67,
+  "original_file_differences": [
+    "CHECKSUM-SCOPE.md"
+  ],
+  "findings": [
+    "Read all three supplemental MD notices and scope override. They explicitly state original source hash verifies separate review-time snapshot, not current same-name source.",
+    "Only source status and appended current_independent_review differ; exact prior serialization is reproducible. Unchanged original final reports remain immutable.",
+    "Current raw SHA256SUMS is still pre-supplement at review time; scope states new checksum/freeze will be generated subsequently."
+  ],
+  "blockers": [],
+  "file_sha256": {
+    "SOURCE-REVIEW-RECONCILIATION.json": "aa185b3e6225076f6b073f4623ba6522582d842e752f7543c39939f01b0bbc71",
+    "SOURCE-REVIEW-RECONCILIATION.md": "877135dd372569184b2ad7501b5c8438051ab3fbea9c7f861e75409c88286df4",
+    "CHECKSUM-SCOPE.md": "6a5809dc140f869a07271e9d0b5a65cff483b601c198bfb5bdd4291727808341",
+    "qa/source-review-reconciliation/SOURCE-QA-REVIEWED-SNAPSHOT.json": "2ee75f122a7f9d6ac7a1ba0da051afbd363c1a987e53355cd100925598338daa",
+    "BELFRY-RETURN-INDEPENDENT-QA.json": "17eadaaeccc6b8590f99148112a73e0c9ffe7747d00bbf75443ab176f3f08941",
+    "BELFRY-RETURN-SOURCE-QA.json": "25b95ba095155ef32afcbe4c300214da616fd286db522519f5ba072a29914275",
+    "qa/source-review-reconciliation/PRE-SUPPLEMENT-CHECKSUM-SCOPE.md": "f97624b4980ba9c555f3c7675735ed755034db8d11cff2c000181f6fa6d88842",
+    "qa/source-review-reconciliation/PRE-SUPPLEMENT-SHA256SUMS": "683fe403602a4181b67a5fa612dead5207fcf67afb9e770a9561b95b5a5adbbb"
+  },
+  "image_sha256": {
+    "preview.png": "2703ba42fb32077f49b0cd5acacae6e1d80a96978f80cdf6adf71def4fb44e2a",
+    "rear.png": "1f2dab18d55977c9a3dd272c370c95767e451daa9fe38d2c0e67da2bb976f441",
+    "front.png": "4c0e618d8281edb5a079547f2bc54cff43e7945239c7f6e5b3f6c24a6f0d6357",
+    "back.png": "19c9e00c59c2d8eb78322ff154146359b0252a977e1f221bf51e1795ca6e6c9a",
+    "west.png": "58c3c88221c8d95ecb522b0d7069a683f85699e00ed82b906f045a787f2fc8cd",
+    "east.png": "11b284d908f3e0b37b546d8ada5effa3d2303818a2d3d510d47b79a297b6603a",
+    "top.png": "b6d643c896d6bf6b13fa2267052cd5c4343ee9448c48c3ab0ca607e2f7a96737",
+    "entry-detail.png": "7418b7525bbf7fb7dd2b6760f70aa3238cbced739b96ed7f74cbf6cb6da9b0ac",
+    "facade-detail.png": "ec4bc6b40d1cf1b888aedd852c9bbc1b374a4c89777523403de829dcc0a93365",
+    "roof-detail.png": "2a8945f5e5bd2e01205039421bbc8b9cd1cb1d77595cd88dbdc82a716a486e9b"
+  }
+}

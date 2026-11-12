@@ -1,4 +1,4 @@
-# 清華人社院｜冠前與斜檐鼻端局部補灰
+# 清華人社院｜前鐘亭柱有限返側補灰
 
 **局部補色未完成：僅冠前、前鐘亭柱及兩斜檐鼻端灰色；塔身、主牆與其餘未知面未完成。跨年代外觀近似，非2026全貌。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項目`nthu-humanities-social-sciences`／`count_delta=0`，不新增套數。
 
@@ -11,9 +11,11 @@
 
 ## 材色範圍
 
-原厚鞍冠真正前剖面y8.5的4面、兩前鐘亭柱y11.2各2面，以及兩斜檐x-8真正竪鼻端各2面：共12三角灰混凝土色族，4194面中性未知，**不是實景灰色證明**。逐原構件全頂點、鼻端完整矩形面積核驗；1195共面連通域均一致，不硬切z、不以大牆三角造斜色楔。
+保留原冠前 4 面、兩前鐘亭柱前面 4 面及兩斜檐鼻端 4 面，共 12 面。這次只在兩前鐘亭柱原有限盒體中，新增 12 個垂直側／背面，採同構件灰色連續推定。合計 24 面配色、4,182 面未知中性；不是逐一照片直接觀察或精測色票。
 
-全高塔身有上灰下粉而原無材界，全塔身中性；鐘冠與柱側背未釋出不推色。兩屋檐上皮、底面、托架不把陰影當黑材；原厚鞍只是抽象雕塑近似，不改輪廓。兩翼混粉／灰／磚／遮蔽無界，主壁全中性。窗背混玻璃、空調、框、反光及植物，不一律玻璃或綠色。台階、基地、未知背面不染。
+兩原柱中心 x=-50/-38、y=12.5，寬深 2.6、高程 z=121..133。每個三角所有頂點須落在完整有限盒體且屬四個垂直側面，共 16 柱面（含原 4 前面）。1,195 個共面連通域保持單材，無混域、無新切面。不延伸後兩柱、柱帽、鞍冠厚邊、斜檐頂底／回邊／托架；暗部只視為陰影，不當黑色材料。
+
+全高塔身上灰下粉而原無材界，塔身與混粉灰翼牆全部保持中性。窗背混玻璃、空調、框、反光及植物，不一律染玻璃或綠。原厚鞍為抽象雕塑近似，不修改或追認其精度。台階、基地及未知背面不染。
 
 原4206三角、尺寸、STL／OBJ／build字節保留，不新增切面、雕刻或幾何。分色與中性界線僅來源覆蓋，不是真實不同材界；色審不追認既有近似幾何，也不宣全色完成。
 
@@ -31,6 +33,8 @@
 
 **未實際列印。** 2材展示不是已驗四色切片工程；材料映射、支撐與薄部強度另驗。
 
-## English limitations
+## 本次與歷史 QA
+本次使用 `BELFRY-RETURN-SOURCE-QA.json`、COLOR-ASSIGNMENT / COLOR-FORMAT-GEOMETRY / SCENE QA。歷史程式、來源、文件與 QA 原樣副本位於 `qa/belfry-return-previous/`；其他舊獨立審核、FREEZE及交付紀錄只對應舊版，不能作本次放行。十圖及本次獨立審核完成後才凍結，尚未發布。
 
-Partial reference color only: saddle front4, front belfry post faces4 and two vertical eave noses4 triangles. Other4194 triangles remain unverified neutral. Original4206 triangles, STL/OBJ/build bytes unchanged; no new geometry and count_delta0. Existing thick saddle abstraction is not corrected or newly validated. Four references span unknown capture dates;1990completion and2020publication are not capture dates, and this is NOT a complete2026condition or fully colored reconstruction. Source photos private; no texture redistribution. Not physically test-printed.
+## English limitations
+Retain all 12 originally colored faces. Add only 12 original bounded vertical return faces of the two front belfry posts, inferred continuous gray with the four observed front-post faces. Total 24 colored and 4,182 unknown-neutral triangles. Return colors are same-member inference, not direct individual photo confirmation. Rear posts, caps, crown returns, eave returns/tops/undersides/brackets and mixed tower/wing walls remain neutral. Shadow is not black material. Original 4,206 triangles and STL/OBJ/build bytes unchanged. The sculptural saddle remains an approximation. Cross-era references with unknown capture dates do not establish a 2026 current condition. Photos private, no texture redistribution. Not physically printed or validated multicolor slicing.
