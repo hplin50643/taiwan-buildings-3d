@@ -1,5 +1,5 @@
 {
-  "status": "SOURCE_GO_BOUNDED_PARTIAL",
+  "status": "SOURCE_GO_BOUNDED_PARTIAL_WITH_LABELED_INFERENCE",
   "building": "NTHU Engineering I",
   "source_go_sha256": "10a8c1476e4185d08846065d010adf70307794f1c7c3f83ba84467077a6ea29b",
   "independent_review_sha256": "243ec1180359b310e10d6a39b0d98adf809f3e14c4c8e37d8306ce63fcabb1b8",
@@ -29,7 +29,8 @@
   "geometry_unchanged": true,
   "source_dates": "All photo capture dates unknown;1998 buildingcompletion not photo date;no ChemicalEngineering renovation era imported",
   "allowed": [
-    "10original outward independent connected offcenter framefaces"
+    "10original outward independent connected offcenter framefaces",
+    "66 complete original faces on returns of the same projecting frame, inferred from continuity with observed offwhite front; not independently measured rear-wall evidence"
   ],
   "unknown_neutral": [
     "main mixedwalls",
@@ -41,5 +42,13 @@
     "roof",
     "side rear base"
   ],
-  "private_source_backup": "Shared research source privately retained; no raw photographs or private identifiers distributed."
+  "private_source_backup": "Shared research source privately retained; no raw photographs or private identifiers distributed.",
+  "inference_update": {
+    "source_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+    "source_photos_retrieved_again": true,
+    "source_photos_hashes_match_prior_register": true,
+    "basis": "Actual review of all four official photos supports the existing frame family. Uniform return color is a bounded same-member inference requested by the owner, not observation of every return.",
+    "geometry_changed": false,
+    "count_delta": 0
+  }
 }

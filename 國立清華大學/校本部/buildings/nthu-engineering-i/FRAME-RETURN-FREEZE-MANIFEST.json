@@ -1,0 +1,302 @@
+{
+  "status": "FROZEN_BOUNDED_FRAME_RETURN_CANDIDATE",
+  "source_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "repo_path": "國立清華大學/校本部/buildings/nthu-engineering-i",
+  "geometry_unchanged": true,
+  "count_delta": 0,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "files": [
+    {
+      "path": "COLOR-ASSIGNMENT-QA.json",
+      "bytes": 227,
+      "sha256": "b3193298fdcbb1c1fb9e2d46e71fff083e91d8b7be0cdf6a9a2a75e72517f276"
+    },
+    {
+      "path": "COLOR-FORMAT-GEOMETRY-QA.json",
+      "bytes": 1253,
+      "sha256": "8bc977d74dcd2c25eb739f27d68faf3533218cb77f09bc0d1eb07ae0a2d17326"
+    },
+    {
+      "path": "COLOR-SOURCE-REGISTER.json",
+      "bytes": 2190,
+      "sha256": "7f45b1d0c43c7801f8532bca00da66f8a9b499494ed8dbbc9e15e4c94aa7decb"
+    },
+    {
+      "path": "DELIVERY-QA.json",
+      "bytes": 2685,
+      "sha256": "1dbcb5bd794b035788b643ef1233c2b98588caa12325a0b0a5885574ab7e89f7"
+    },
+    {
+      "path": "FRAME-RETURN-COLOR-QA.json",
+      "bytes": 1605,
+      "sha256": "3889b901549bdbc157831a07d45cc8d64bc32b97108c33a9366ca48a0f7693a5"
+    },
+    {
+      "path": "FRAME-RETURN-INDEPENDENT-QA.json",
+      "bytes": 3794,
+      "sha256": "bcd9ceae19ce99069813fb8ef20ec3c78f46517646f4c7e4c3a48871e59742e4"
+    },
+    {
+      "path": "FRAME-RETURN-SCENE-QA.json",
+      "bytes": 848,
+      "sha256": "283c344e18ae29b92cb752a171378bd724befad43386318843a37017f329f07b"
+    },
+    {
+      "path": "FRAMING-QA.json",
+      "bytes": 1024,
+      "sha256": "e73f1d5e7ef9e5569d0a3c4fffb1327ef3bed03c2f118736df5d79d1994c924f"
+    },
+    {
+      "path": "FREEZE-MANIFEST.json",
+      "bytes": 7330,
+      "sha256": "2c7bf29322f1a3e1a679f7affc9bf3dbc942eb98c56be29dbb33c87dd23d9704"
+    },
+    {
+      "path": "INDEPENDENT-COLOR-VISUAL-QA.json",
+      "bytes": 4594,
+      "sha256": "2ab4ab81be9168319c8f8f111b57ca2a0149a7f76a074b67f8d9ba2c46912c80"
+    },
+    {
+      "path": "NO-TEXT-QA.json",
+      "bytes": 1729,
+      "sha256": "8ac6a74c8a719d3ce7baec98368804ee25aad779ba82beb28be02eb0e6d2be37"
+    },
+    {
+      "path": "ORIGINAL-MONOCHROME-README.zh-TW.md",
+      "bytes": 3934,
+      "sha256": "e321a4a3e8c1695c016b7f08ecb108140660294dc52483c91696472cf1549620"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3604,
+      "sha256": "b0c9753d3d2da86ffa8d7d2e5bc3f9b2d234888b4aa71601f83529dd9c4df798"
+    },
+    {
+      "path": "README.zh-TW.md",
+      "bytes": 3604,
+      "sha256": "b0c9753d3d2da86ffa8d7d2e5bc3f9b2d234888b4aa71601f83529dd9c4df798"
+    },
+    {
+      "path": "SCENE-QA.json",
+      "bytes": 502,
+      "sha256": "e1b6a8bab13dbcb466786403f4d74d06dc51dca4b96e929fe7c87807bed66c4f"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 4886,
+      "sha256": "e4ec3c8c481d96e6c4a544f17183a3fbbea55b9c27a4a1e7169e32182e64e1ff"
+    },
+    {
+      "path": "appearance-materials.json",
+      "bytes": 1194,
+      "sha256": "c89d7969bed99d3379d9cdc65adc11f092abbab3aa885fbcc7e38d6485cff7b2"
+    },
+    {
+      "path": "appearance.3mf",
+      "bytes": 56782,
+      "sha256": "ee3efa46fb9e1e660f270d81bb223d6b4115c0917021d002dee1d3fbe79ffc99"
+    },
+    {
+      "path": "back.png",
+      "bytes": 1052628,
+      "sha256": "4aef66ba784b2cdd84dfd2cd2ebd4b0980aea80b55dfa9f3c401f85ffa5e2ae8"
+    },
+    {
+      "path": "build_model.py",
+      "bytes": 3247,
+      "sha256": "96a0da95a2f41ce579a74912ab8e6156647c87e3719cbf8f5fd6e8835b40d518"
+    },
+    {
+      "path": "check_layers.py",
+      "bytes": 3691,
+      "sha256": "37b98d3a4897ef45882611362ec15d377f9f531d0ea75652ad8eefb62ed8ce4d"
+    },
+    {
+      "path": "color-mesh.npz",
+      "bytes": 38888,
+      "sha256": "1e3b3e6e9b59a73a0c0e68e945d5236577d6ed9e0cad4e6f9770f84772f46a72"
+    },
+    {
+      "path": "colorize_model.py",
+      "bytes": 2803,
+      "sha256": "0d511e4a924ac5b1d3d14272edd62d56a4b105fc75a4bac2fb3b58f9f471486b"
+    },
+    {
+      "path": "east.png",
+      "bytes": 981258,
+      "sha256": "eb946d1440c3575ffcbf152298ca73192c45c5abd781298eacee3b3c20857468"
+    },
+    {
+      "path": "entry-detail.png",
+      "bytes": 1341435,
+      "sha256": "761c08a5be17f861b806a2bf5ead30a143f02549b4a7fa9f071efc172b58cc97"
+    },
+    {
+      "path": "export_appearance.py",
+      "bytes": 1740,
+      "sha256": "127b5fcc6c92f9b1bd41c93c87b8571a3910b077b3ddb09339c72fac5d18873c"
+    },
+    {
+      "path": "facade-detail.png",
+      "bytes": 1447487,
+      "sha256": "9924e7753a1683cc3535fd0f915fd0d48df0f00e7efc01fca843b7ab774997be"
+    },
+    {
+      "path": "front.png",
+      "bytes": 1048676,
+      "sha256": "b39ce9321b16c2d7fd9be385cad68f40379018c2610f6027c87e3446efa74d46"
+    },
+    {
+      "path": "hash-manifest.json",
+      "bytes": 2115,
+      "sha256": "9fb58d1a5565a1293cf05f73436411f42c3efd57bffc5c83d71431de43510ee3"
+    },
+    {
+      "path": "layer-check.json",
+      "bytes": 71644,
+      "sha256": "72aae36150bf255b469e5b193aaf1274f1fd95aa23206e6248e0425ef81480ec"
+    },
+    {
+      "path": "model.obj",
+      "bytes": 231833,
+      "sha256": "d627f25b557db82ab4f0875d10abdeb7d2c0e87613df339bfa853a689fb33538"
+    },
+    {
+      "path": "model.stl",
+      "bytes": 326084,
+      "sha256": "7fb891cfc398172c7d835d08a2a84e71bd092dfa5d044135e4e0522d41949a11"
+    },
+    {
+      "path": "palette.json",
+      "bytes": 184,
+      "sha256": "7d5836e9f00149b736268f1c4b3d2b453b36651ab4f64d82e0276c82054d8dbb"
+    },
+    {
+      "path": "preview.png",
+      "bytes": 823591,
+      "sha256": "450fd779e77c6aea9ef63ce54a09031c6c859bfe329dc26db4bbbf68b2e65c3c"
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1356051,
+      "sha256": "b314afb5c1a7e1a0aa14975926e00ebaefa3be311d1ede1a4967c56f7d9a37d0"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1575740,
+      "sha256": "a2c3448ddbecdd86cbfd5accbc6ced5b7ba07a4e89922ea6c2f66651d18aca0c"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1539244,
+      "sha256": "86ef283b49ece0b5b635c960b95445b740382dd0607fc366d5ecdedbb4983e4d"
+    },
+    {
+      "path": "qa/frame-return-previous/COLOR-ASSIGNMENT-QA.json",
+      "bytes": 227,
+      "sha256": "7e08e363ee8df1bcfc83d9df6a6a621ff1d85457cfa80395e817bae655f73183"
+    },
+    {
+      "path": "qa/frame-return-previous/COLOR-FORMAT-GEOMETRY-QA.json",
+      "bytes": 1253,
+      "sha256": "aba7fc186726b2f96f8d48791cfa7f56d78e7ff07a66a55e6976a2a0a31370f4"
+    },
+    {
+      "path": "qa/frame-return-previous/COLOR-SOURCE-REGISTER.json",
+      "bytes": 1540,
+      "sha256": "01c252a0e6174149ceef791495b1a422741b7dbf415895b868d14e3ba797a0dc"
+    },
+    {
+      "path": "qa/frame-return-previous/DELIVERY-QA.json",
+      "bytes": 2731,
+      "sha256": "8690ed7eb6317446856779f770122d7d5aea4b1378102618cd6b43a373a38fd6"
+    },
+    {
+      "path": "qa/frame-return-previous/FRAMING-QA.json",
+      "bytes": 1024,
+      "sha256": "5793942cafc96891a7d21ad3def00bffa02c508e109ed2ebfa45f23656936ee7"
+    },
+    {
+      "path": "qa/frame-return-previous/NO-TEXT-QA.json",
+      "bytes": 1652,
+      "sha256": "4de88e158f637b60a3e235e4d16ab53c9cdfb54fefeccc2dafc73a1271d634f3"
+    },
+    {
+      "path": "qa/frame-return-previous/SCENE-QA.json",
+      "bytes": 502,
+      "sha256": "1ff6fe9c65f44575079e0f4cb534588a5ded0407aa97f6b6564eb0870c397f27"
+    },
+    {
+      "path": "rear.png",
+      "bytes": 869866,
+      "sha256": "7e20e3142d8c2a16dcd7ac73f354386d2c06cce93c69b18f9779717fafd9da26"
+    },
+    {
+      "path": "render_color.py",
+      "bytes": 7266,
+      "sha256": "631e7cbdd433969b560153cf497218229d8912d15a1c99281438eaf35d10c252"
+    },
+    {
+      "path": "render_preview.py",
+      "bytes": 3475,
+      "sha256": "1a1a9263730c86913f1e7e0207f2da2af094b31bf2a1250b2c59c40fcba25659"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 75,
+      "sha256": "0f9606af93bf18d4a71dd5ae5c00d6cd07fb6313f56a94f9537ac58a8869fcc0"
+    },
+    {
+      "path": "roof-detail.png",
+      "bytes": 1118316,
+      "sha256": "a32b9484f41cbd7d4368aaf319b46389723205e78f8f4abb0bff909f845182c8"
+    },
+    {
+      "path": "scene.blend",
+      "bytes": 217457,
+      "sha256": "8a509341a12f747a977bf1e29bf6415616e6b74354d4616f740fd822650a5eea"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 1287,
+      "sha256": "66c7aa517ca8b8b5eccbf072f16c2e889293b4d55afbabac1fa881b694798890"
+    },
+    {
+      "path": "top.png",
+      "bytes": 1036903,
+      "sha256": "365ab137d13fade0cacf261ad954c1e3649b9fec0c45dd03849b3e9729c0ef57"
+    },
+    {
+      "path": "validate_color.py",
+      "bytes": 3484,
+      "sha256": "ab0a8486d797c6dabe75911ecf4b65464836e982f33d6993a8a6c09925897c53"
+    },
+    {
+      "path": "validate_model.py",
+      "bytes": 5222,
+      "sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1513,
+      "sha256": "90ff1eaea43afac12be4e97d0581f839dc540c744f4e98f6ea6dae5b634065b9"
+    },
+    {
+      "path": "verify_color_scene.py",
+      "bytes": 2090,
+      "sha256": "854799502def11d2d4ebd50595490584d872b3294263f7ca93a7d02caf409b5d"
+    },
+    {
+      "path": "west.png",
+      "bytes": 953443,
+      "sha256": "372d0710fe9c803003317f4fced04f59a23c9feabbd13440508d372f1180d7d6"
+    }
+  ],
+  "exclusions": [
+    "scene.blend1 and other backups",
+    "private reference photographs",
+    "private review contact sheets and workspace logs"
+  ],
+  "original_STL_sha256": "7fb891cfc398172c7d835d08a2a84e71bd092dfa5d044135e4e0522d41949a11"
+}

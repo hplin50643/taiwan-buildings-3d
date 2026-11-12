@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "checks": {
+    "camera": true,
+    "lights": true,
+    "render": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "portable_output_path": true,
+    "no_external_font_dependencies": true
+  },
+  "before_camera": {
+    "location": [
+      220.0,
+      -330.0,
+      230.0
+    ],
+    "rotation": [
+      1.14266037940979,
+      -1.8632828613363017e-08,
+      0.5880027413368225
+    ],
+    "scale": 325.6266174316406
+  },
+  "after_camera": {
+    "location": [
+      220.0,
+      -330.0,
+      230.0
+    ],
+    "rotation": [
+      1.14266037940979,
+      -1.8632828613363017e-08,
+      0.5880027413368225
+    ],
+    "scale": 325.6266174316406
+  },
+  "scope": "Same camera, lights, render settings; text/backing remain hidden; only bounded frame-return materials updated."
+}

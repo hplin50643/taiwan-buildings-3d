@@ -1,0 +1,57 @@
+{
+  "status": "PASS_INDEPENDENT_BOUNDED_FRAME_RETURN_REVIEW",
+  "reviewed_at": "2026-11-12T08:07:17.984916+00:00",
+  "source_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "scope": "Review of one local material-only candidate; no publication or full-building completion certification.",
+  "numerical_checks": {
+    "original_vertices_exact": true,
+    "original_faces_exact": true,
+    "exact_66_additional_faces": true,
+    "all_changes_neutral_to_existing_offwhite": true,
+    "original_10_colored_faces_retained": true,
+    "all_changes_in_projecting_frame_bounds": true,
+    "no_partial_coplanar_domain_color": true,
+    "original_STL_OBJ_build_unchanged": true,
+    "render_code_identical": true
+  },
+  "saved_scene_checks": {
+    "saved_vertices_match": true,
+    "saved_faces_exact": true,
+    "saved_material_indices_exact": true,
+    "no_visible_caption": true,
+    "backdrop_hidden": true,
+    "stamp_disabled": true,
+    "portable_output_path": true
+  },
+  "manual_source_review": "Personally viewed all four official photographs. They support the existing offwhite front-frame family; uniform color on the same bounded projecting frame returns remains a disclosed continuity inference, not direct evidence for every side or the building rear.",
+  "manual_visual_review": "Personally inspected all ten newly rendered views in before/after comparison and full-resolution facade and entry details after confirming all ten render saves and Blender completion. Frame front/return junctions are coherent, including the horizontal endpoint and vertical lower end. No visible color spill onto neighboring walls or window grids, no diagonal material wedges, and no text overlays. Seven overview views retain the full building/base; three detail views preserve intentional crops. Geometry and framing are unchanged. The visual difference is modest and localized, not a whole-building recolor.",
+  "faces": {
+    "total_original": 6520,
+    "observed_frame_front_retained": 10,
+    "new_inferred_return_faces": 66,
+    "total_offwhite": 76,
+    "remaining_neutral": 6444
+  },
+  "whole_coplanar_components": 2083,
+  "images_sha256": {
+    "preview.png": "450fd779e77c6aea9ef63ce54a09031c6c859bfe329dc26db4bbbf68b2e65c3c",
+    "rear.png": "7e20e3142d8c2a16dcd7ac73f354386d2c06cce93c69b18f9779717fafd9da26",
+    "front.png": "b39ce9321b16c2d7fd9be385cad68f40379018c2610f6027c87e3446efa74d46",
+    "back.png": "4aef66ba784b2cdd84dfd2cd2ebd4b0980aea80b55dfa9f3c401f85ffa5e2ae8",
+    "west.png": "372d0710fe9c803003317f4fced04f59a23c9feabbd13440508d372f1180d7d6",
+    "east.png": "eb946d1440c3575ffcbf152298ca73192c45c5abd781298eacee3b3c20857468",
+    "top.png": "365ab137d13fade0cacf261ad954c1e3649b9fec0c45dd03849b3e9729c0ef57",
+    "entry-detail.png": "761c08a5be17f861b806a2bf5ead30a143f02549b4a7fa9f071efc172b58cc97",
+    "facade-detail.png": "9924e7753a1683cc3535fd0f915fd0d48df0f00e7efc01fca843b7ab774997be",
+    "roof-detail.png": "a32b9484f41cbd7d4368aaf319b46389723205e78f8f4abb0bff909f845182c8"
+  },
+  "mesh_sha256": "1e3b3e6e9b59a73a0c0e68e945d5236577d6ed9e0cad4e6f9770f84772f46a72",
+  "scene_sha256": "8a509341a12f747a977bf1e29bf6415616e6b74354d4616f740fd822650a5eea",
+  "limitations": [
+    "Partial color remains incomplete; mixed main walls, windows, tower, curved wing, stairs, roofs and unrelated rear/side domains are not certified.",
+    "Same-frame side/top/underside/recess-exposed back coloring is inferred continuity, not independently observed finish on each face.",
+    "Original approximate geometry and dimensions remain; no physical print test or filament slicing validation.",
+    "This review does not refresh historical QA snapshots or certify publication receipts; current metadata and checksums must be finalized separately."
+  ],
+  "blocking_issues": []
+}
