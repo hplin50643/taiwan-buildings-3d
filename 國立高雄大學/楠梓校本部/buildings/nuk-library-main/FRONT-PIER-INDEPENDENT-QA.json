@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T09:22:07.693966+00:00",
+  "scope": "Independent bounded front portico pier side-color review. Not complete exterior coloration, surveyed geometry, or printability certification.",
+  "blockers": [],
+  "numeric_checks": {
+    "vertices_exact": true,
+    "faces_exact": true,
+    "12596_triangles": true,
+    "STL_unchanged": true,
+    "OBJ_unchanged": true,
+    "build_unchanged": true,
+    "original258_preserved": true,
+    "36new": true,
+    "counts": true,
+    "independent_box_side_faces": true,
+    "only_selected_side_changes": true,
+    "no_coplanar_split": true,
+    "3mf_vertices": true,
+    "3mf_faces": true,
+    "3mf_materials": true,
+    "source_hashes": true
+  },
+  "scene_checks": {
+    "camera": true,
+    "lights": true,
+    "render": true,
+    "mesh_objects": true,
+    "vertices_match": true,
+    "faces_match": true,
+    "materials_exact": true,
+    "mesh_sha": true,
+    "text_hidden": true,
+    "notice_hidden": true,
+    "no_stamp": true,
+    "two_material_slots": true,
+    "palette_0": true,
+    "palette_1": true
+  },
+  "face_counts": {
+    "original_colored": 258,
+    "newly_colored": 36,
+    "colored_total": 294,
+    "unknown_neutral": 12302,
+    "total": 12596,
+    "pier_vertical_sides": [
+      14,
+      14,
+      14
+    ],
+    "prior_front_faces_per_pier": [
+      2,
+      2,
+      2
+    ]
+  },
+  "findings": [
+    "Personally viewed official-view1 and official-view3 at full size, plus the four-source contact sheet. The visible entrance piers and side returns are consistent with a pale stone family. Unseen faces are not separately evidenced.",
+    "Independently derived three pier boxes from original build_model.py and tested their finite local coordinates and outward vertical boundary planes. Each has 14 original vertical side triangles, including 2 previously colored front triangles. Exactly 36 neutral triangles change.",
+    "Original 258 colored faces, all vertices and 12,596 triangles, STL, OBJ and build source remain unchanged. 3MF matches NPZ vertices, faces and material indices.",
+    "No adjacent coplanar faces have conflicting material indices. All unselected faces, including pier caps, rear piers, glazing and screen grooves, retain their original materials.",
+    "Actually viewed all ten completed renderings, including full-size entrance detail. The local pale returns are consistent, rear piers stay neutral, and no caption overlays appear.",
+    "Reopened both scenes and verified exact mesh faces/material assignments, vertex coordinates within Blender storage tolerance, camera, lighting, mesh-object list, render settings and palette shaders. Caption/backing remain hidden and stamps disabled.",
+    "README discloses nominal same-pier continuity for unseen faces, unknown source dates, incomplete wall/window coloration, preserved geometry and lack of physical print testing."
+  ],
+  "image_sha256": {
+    "preview.png": "2bc09d1ad8630fd58f238c5f50721c6b529731a3900003ff9bdb95a15c906d15",
+    "rear.png": "8305541b10e39f4351c42107956f68984b71ab15e8c7bd36b45b8e27bf915c1d",
+    "front.png": "55c8a48a7035381767f9975ecccba0031657215e6c8b89150899b7843a7d929c",
+    "back.png": "ca6e5141a6d5cf140c184c03d8ecd097fb7c4d626cc03793a08d34ffa063bd46",
+    "west.png": "3163fae3f9a325acad413a4e1bb820be86e519b86bfba3b0b078782222a94fd3",
+    "east.png": "69af6c10be4f15a9d892c44a4c20011e70515835fc5c8d7762ab4228bbf8f929",
+    "top.png": "721bec7973e356f983178882eba4a557ace6c855dadcd9a487e814ef1bc4ae23",
+    "entry-detail.png": "d2a59f4a550d446e635879b2177fff90c301e33390561e1fe8e487d45da9dd59",
+    "facade-detail.png": "36e1da292ee825dd0d52357d519d4f4d9190ad8e3c5317a32d63df062b2dfa4a",
+    "roof-detail.png": "7e9450b34f08cef79e2606065be325640a087129e5b9c8c8277be4bdd0efefdd"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "42cb6af8c2315102bae4c1ffe094a959a9eb997fc7a2d885ef59da1a45693659",
+    "colorize_model.py": "95f357242e98b2de7957411b9005245d4fac32d6caaaf57df74871dcef5bec0a",
+    "appearance.3mf": "1b9065a5924beeae99ac2ccd91865cc0b4589b7be199f82cb3b2804384fb9958",
+    "scene.blend": "02d6f750b3bd09a7548fef95409f9be7093ba6c7525e252b4aa8594abdaa7724",
+    "README.md": "15f855cef5cb074d7e1cdc1172c5edbb4a38aaa43edb1dcc11b7fcd3b8eda0f3",
+    "FRONT-PIER-SOURCE-QA.json": "14d0149a8e4e40fe94bc4ccbdb8c742e9518188680a3144ea7684daf15c9314d"
+  },
+  "source_sha256": {
+    "official-view1.jpg": "2b478d9e6d593d1ee52ddfd7e4af73d31ffff1afcf71be77461712f49993cc72",
+    "official-view2.jpg": "efec23cf86807722e108b9f70ef8ec6f0c4772773ade88cf6c7265cc544a82ee",
+    "official-view3.jpg": "436ef6c143ebf3edb9a1c14bc84af4e3f3a37df6ec2bcb63e030eccafd6abbfd",
+    "official-view4.jpg": "a6e060b139ed9a1c477d76e8fdb968441f796d3b6b6e294502e9d6edbb9d1321"
+  },
+  "limits": [
+    "Nominal #D1C7B3 is not a calibrated measured stone color.",
+    "Unseen rear-facing vertical surfaces of the same front piers use explicitly inferred continuity.",
+    "Source photograph dates are unverified. No current 2026 or as-built claim.",
+    "Existing simplified dimensions, screen geometry and other model limitations remain; no new geometric accuracy or printability certification.",
+    "Only the existing main block is reviewed; low pavilion and long bridge remain excluded."
+  ]
+}

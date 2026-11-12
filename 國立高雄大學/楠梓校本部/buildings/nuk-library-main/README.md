@@ -1,4 +1,4 @@
-# 高大圖資主體｜前後屏板與前廊柱局部補淺
+# 高大圖資主體｜前後屏板與前廊柱側面局部補淺
 
 **局部補色未完成：僅前後屏真外平面及三前廊柱淺色；主牆、窗背與未知面未完成。非2026現況，不含低館與長橋。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項目`nuk-library-main`／`count_delta=0`，不新增套數。
 
@@ -9,9 +9,15 @@
 | ![頂視](top.png) | ![前屏與柱](entry-detail.png) | ![反面屏](facade-detail.png) |
 | ![未知屋面](roof-detail.png) | | |
 
+## 本次前廊柱側面補色
+
+官方 view1 與 view3 可辨三根前廊柱為淺石色，斜照可見轉側。本次逐原箱體有限範圍核對全部頂點，取每柱14個原直立側面（含原正面2個），新增36面；不可見同柱背向面延續名義 #D1C7B3 屬推定。柱頂底、後廊柱、屏板厚邊與槽內、玻璃及混色主牆均不改，不把陰影當獨立材色。
+
+[來源與範圍](FRONT-PIER-SOURCE-QA.json) · [獨立審核](FRONT-PIER-INDEPENDENT-QA.json) · [前一版說明](qa/front-pier-previous/README.md)
+
 ## 材色範圍
 
-前屏y-43.75真外平面125面、反屏y43.75真外平面127面，兩者x[-31.75,5.75]、z24..42.5，僅原刻槽之間剩餘表皮，不塗槽底與返側。另三前廊柱x-25/-13/-1、y-43.3原外露前面各2面，共258淺暖石灰色，12338面未核中性；**中性不是實景灰色證明**。
+前屏y-43.75真外平面125面、反屏y43.75真外平面127面，兩者x[-31.75,5.75]、z24..42.5，僅原刻槽之間剩餘表皮，不塗槽底與返側。另三前廊柱x-25/-13/-1、y-43.3原外露前面各2面，原有258面淺暖石灰色，本次加前廊三柱36側面，共294配色、12302面未核中性；**中性不是實景灰色證明**。
 
 全部3246共面連通域uniform，不用bbox塗整屏箱體、不抹平原格槽。反柱遮蔽不複製前柱色。主粉磚牆與白基座原共面融合無材界，全牆中性，不以高度挑三角。長側窗背/粗網格/屋冠混金屬玻璃反光與近似，未整染銀或黑。屏內側、厚邊、槽底、屋面/設備/階/平台/基座均中性。
 
@@ -33,4 +39,8 @@
 
 ## English limitations
 
-Partial reference only: front125/reverse127 true screen outer-field triangles plus6front pier faces;12338neutral. All3246coplanar components uniform; groove floors and sides unchanged neutral, no blanket boxfill or wall-height color cut. Original12596faces/STL/build bytes preserved, count_delta0. Main block only, excludes lowpavilion and longbridge. Capture dates unknown; default-looking2002EXIF is not reliable evidence,2003opening not capture,2007EXIF not independently authenticated. Not2026currentcondition and not full color. Source photos private. Not physically test-printed.
+Partial reference only: front125/reverse127 true screen outer-field triangles plus42 front pier vertical side faces (6 original and36 added);12302 neutral. Unseen same-pier continuity inferred. All3246coplanar components uniform; groove floors and sides unchanged neutral, no blanket boxfill or wall-height color cut. Original12596faces/STL/build bytes preserved, count_delta0. Main block only, excludes lowpavilion and longbridge. Capture dates unknown; default-looking2002EXIF is not reliable evidence,2003opening not capture,2007EXIF not independently authenticated. Not2026currentcondition and not full color. Source photos private. Not physically test-printed.
+
+## Current bounded update
+
+The original258 colored faces remain. Adds36 original vertical side triangles of three front piers, for294 colored and12302 unknown-neutral faces. Visible pale side returns are photo-supported; unseen same-pier continuity is inferred. Caps, rear piers, screen grooves, mixed walls and glazing are unchanged. Geometry and count unchanged; not fully colored or physically print-tested. Historical manifests and independent QA remain historical; current FRONT-PIER QA and manifest bind this update.

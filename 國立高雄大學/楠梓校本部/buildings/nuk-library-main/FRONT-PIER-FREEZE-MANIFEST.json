@@ -1,0 +1,372 @@
+{
+  "scope": "Bounded front-pier candidate, not yet published.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "files": [
+    {
+      "path": "CHECKSUM-SCOPE.md",
+      "size": 910,
+      "sha256": "c5ec3d36fd85a381a8957907a14e1a61529bcde5f7fdd6a221f08fe05c5a1902"
+    },
+    {
+      "path": "COLOR-ASSIGNMENT-QA.json",
+      "size": 228,
+      "sha256": "6fd3232d4aa75c45a9a193d309113c56e2d91a8e6c128f86ba50760cb24ad91e"
+    },
+    {
+      "path": "COLOR-FORMAT-GEOMETRY-QA.json",
+      "size": 1254,
+      "sha256": "26beb22dc07ff9f8733ad2f5a05d1473aaa542b09b326afaf864869e72c65449"
+    },
+    {
+      "path": "COLOR-SOURCE-REGISTER.json",
+      "size": 4157,
+      "sha256": "fe252626bfb2466c690c29e9c0bb670c46e7f22948233b1c01b6ac11f7e9722c"
+    },
+    {
+      "path": "DELIVERY-QA.json",
+      "size": 1943,
+      "sha256": "112ba27faefac9f93f2a12e9abb624c3f0bf588cdb3d8384fce5a6b77becbd16"
+    },
+    {
+      "path": "FRAMING-QA.json",
+      "size": 1018,
+      "sha256": "68670816a1b09055a93fd6b3217bb50d77b867e6904e1f6c00894bb325456d89"
+    },
+    {
+      "path": "FREEZE-MANIFEST.json",
+      "size": 8577,
+      "sha256": "6924fabf7f6ceaf0b91f289a6443504a6f5eef0a7c13d7da4be232802fe8c1a8"
+    },
+    {
+      "path": "FRONT-PIER-DELIVERY-QA.json",
+      "size": 1943,
+      "sha256": "112ba27faefac9f93f2a12e9abb624c3f0bf588cdb3d8384fce5a6b77becbd16"
+    },
+    {
+      "path": "FRONT-PIER-INDEPENDENT-QA.json",
+      "size": 5277,
+      "sha256": "389a0ddb7b26d4b8f634d534ff09def889cd63aba77d20cfa5c7417bc074e667"
+    },
+    {
+      "path": "FRONT-PIER-SCENE-QA.json",
+      "size": 298,
+      "sha256": "5a05d3fe9aaf064456e0386109d2714fb386a901cb8776aed9e67d4cce49114b"
+    },
+    {
+      "path": "FRONT-PIER-SOURCE-QA.json",
+      "size": 1336,
+      "sha256": "14d0149a8e4e40fe94bc4ccbdb8c742e9518188680a3144ea7684daf15c9314d"
+    },
+    {
+      "path": "INDEPENDENT-COLOR-VISUAL-QA.json",
+      "size": 3609,
+      "sha256": "98059cecefa938ce474936cdedc95832ef73d55628eba32962a5d4052c08b6fe"
+    },
+    {
+      "path": "NO-TEXT-QA.json",
+      "size": 1260,
+      "sha256": "609490188445f0c91bb1830bd4e31a35759703466f37414550dd348ad3ca69aa"
+    },
+    {
+      "path": "ORIGINAL-MONOCHROME-README.md",
+      "size": 3676,
+      "sha256": "4882a5e8a9f3b42c018b0c60b30241a960a7e7503066da5d115ee082c8d6a586"
+    },
+    {
+      "path": "README.md",
+      "size": 4756,
+      "sha256": "15f855cef5cb074d7e1cdc1172c5edbb4a38aaa43edb1dcc11b7fcd3b8eda0f3"
+    },
+    {
+      "path": "README.zh-TW.md",
+      "size": 3541,
+      "sha256": "83e1930940e10eb5b9329f16290cf43f210e2386bd75ed9828712cfb27fdffb6"
+    },
+    {
+      "path": "SCENE-QA.json",
+      "size": 502,
+      "sha256": "5a12de2c3800d5c3d7458150802119def8d03ed8ef6f2df5db44d6b087a17250"
+    },
+    {
+      "path": "SHA256SUMS",
+      "size": 6167,
+      "sha256": "5b1b957a8987ec71b15bc691f2c305ad0fd1a7cc689b5d4fc5bb6794df194430"
+    },
+    {
+      "path": "appearance-materials.json",
+      "size": 5150,
+      "sha256": "645fd010d3b4c7293efcaba63c036f0601e7f0e45734394242c696727233b914"
+    },
+    {
+      "path": "appearance.3mf",
+      "size": 105377,
+      "sha256": "1b9065a5924beeae99ac2ccd91865cc0b4589b7be199f82cb3b2804384fb9958"
+    },
+    {
+      "path": "back.png",
+      "size": 885320,
+      "sha256": "ca6e5141a6d5cf140c184c03d8ecd097fb7c4d626cc03793a08d34ffa063bd46"
+    },
+    {
+      "path": "build_model.py",
+      "size": 5077,
+      "sha256": "06a7e5fcbc68a360ea64309815f620e8e6daa68899353086ffdfe2d480ba73d3"
+    },
+    {
+      "path": "check_valid_sections.py",
+      "size": 2280,
+      "sha256": "17a9c8122051ad4cf90b01e118cd48c602b407bb734d809c07d341585436b7f0"
+    },
+    {
+      "path": "color-mesh.npz",
+      "size": 72084,
+      "sha256": "42cb6af8c2315102bae4c1ffe094a959a9eb997fc7a2d885ef59da1a45693659"
+    },
+    {
+      "path": "colorize_model.py",
+      "size": 3381,
+      "sha256": "95f357242e98b2de7957411b9005245d4fac32d6caaaf57df74871dcef5bec0a"
+    },
+    {
+      "path": "east.png",
+      "size": 809269,
+      "sha256": "69af6c10be4f15a9d892c44a4c20011e70515835fc5c8d7762ab4228bbf8f929"
+    },
+    {
+      "path": "entry-detail.png",
+      "size": 1636631,
+      "sha256": "d2a59f4a550d446e635879b2177fff90c301e33390561e1fe8e487d45da9dd59"
+    },
+    {
+      "path": "export_appearance.py",
+      "size": 1738,
+      "sha256": "8473062e22e71694701872130bc3dc1297e1671da23e3f9b1daa00a691b561e3"
+    },
+    {
+      "path": "facade-detail.png",
+      "size": 1657341,
+      "sha256": "36e1da292ee825dd0d52357d519d4f4d9190ad8e3c5317a32d63df062b2dfa4a"
+    },
+    {
+      "path": "front.png",
+      "size": 899518,
+      "sha256": "55c8a48a7035381767f9975ecccba0031657215e6c8b89150899b7843a7d929c"
+    },
+    {
+      "path": "model-info.json",
+      "size": 587,
+      "sha256": "10db7c601e87627102c1709bf5ecbd88b115cff0f604673bdccf6736e2e35336"
+    },
+    {
+      "path": "model.obj",
+      "size": 440360,
+      "sha256": "740c91c206b70fa5653f13ad412c5a19a3a56ad99db88af38e014bb80248d3de"
+    },
+    {
+      "path": "model.stl",
+      "size": 629884,
+      "sha256": "75adb22859253404b84620cb1960576f44b3b89b9a7bd100809056341755c94a"
+    },
+    {
+      "path": "palette.json",
+      "size": 187,
+      "sha256": "0493f26ebac33a62e48ee782c1119d81800ee8ed1f2eb240f7630fd9c96d305c"
+    },
+    {
+      "path": "preview.png",
+      "size": 934917,
+      "sha256": "2bc09d1ad8630fd58f238c5f50721c6b529731a3900003ff9bdb95a15c906d15"
+    },
+    {
+      "path": "previews/elevation.png",
+      "size": 699065,
+      "sha256": "36263a827f53f9dacffc8a6c620883f747d9484cf79eab19bb506064e5a073b8"
+    },
+    {
+      "path": "previews/front-rear.png",
+      "size": 190454,
+      "sha256": "398f2e47f02e60b10c16a695dcb73801516b6d82b7730e580e41ab27470bf744"
+    },
+    {
+      "path": "previews/front.png",
+      "size": 936410,
+      "sha256": "627a622d00cd2389e017d62edc21b50de0737953d4d92a8b9a15f407c5e459e8"
+    },
+    {
+      "path": "previews/rear.png",
+      "size": 949415,
+      "sha256": "053857ad82c4ffdf80b0e3870e1ac382d678728c395e490afc591860671282d8"
+    },
+    {
+      "path": "previews/rear_elevation.png",
+      "size": 713080,
+      "sha256": "1eaee134c0f94e237320080b50e1afbdcf70e10c9c9062e207a1f2cb8fa5d8e5"
+    },
+    {
+      "path": "previews/top.png",
+      "size": 705017,
+      "sha256": "6c6309988f2dc0f9d940ac55262515195e5d5dbb86f6b39d4019338027433515"
+    },
+    {
+      "path": "qa/front-pier-previous/COLOR-ASSIGNMENT-QA.json",
+      "size": 228,
+      "sha256": "a6deb6870c7550924037d9ae2771918824cb1c2e1094eaa8e9a754c18fba577e"
+    },
+    {
+      "path": "qa/front-pier-previous/COLOR-FORMAT-GEOMETRY-QA.json",
+      "size": 1254,
+      "sha256": "e08d1238764ca27ec46fe4fa954b0b192ec437f6484baeafae3b496cc2d32fde"
+    },
+    {
+      "path": "qa/front-pier-previous/COLOR-SOURCE-REGISTER.json",
+      "size": 2737,
+      "sha256": "86f0b83a42b57c843dee2ac707f4723043f14ed318d67e28f1137c206d1be23b"
+    },
+    {
+      "path": "qa/front-pier-previous/DELIVERY-QA.json",
+      "size": 2786,
+      "sha256": "5d4790823db60ae50f1f6a9a56f1f7bf3ae87cd2b40d55e0aa706b3e9bdce74b"
+    },
+    {
+      "path": "qa/front-pier-previous/FRAMING-QA.json",
+      "size": 1018,
+      "sha256": "92a4af3555e04cb3e73705a2fe658da5efcb5217cc36d88fe1530328e340783a"
+    },
+    {
+      "path": "qa/front-pier-previous/NO-TEXT-QA.json",
+      "size": 1641,
+      "sha256": "dacf587de21a7e226c62b84b4806d6388a06f0fa9570b8d05e1ea7de145770c4"
+    },
+    {
+      "path": "qa/front-pier-previous/README.md",
+      "size": 3541,
+      "sha256": "83e1930940e10eb5b9329f16290cf43f210e2386bd75ed9828712cfb27fdffb6"
+    },
+    {
+      "path": "qa/front-pier-previous/SCENE-QA.json",
+      "size": 502,
+      "sha256": "7fbea11f474ee8f36a598b60413e7216b7595c91ec6289c164f8b1540a56736e"
+    },
+    {
+      "path": "qa/front-pier-previous/SHA256SUMS",
+      "size": 4431,
+      "sha256": "0fc74c23147bbd852064c25df2d7ae129592441b584425af55465c5937dc5ca6"
+    },
+    {
+      "path": "qa/front-pier-previous/appearance-materials.json",
+      "size": 4280,
+      "sha256": "88901c618fd75f0ace6442b57f5f97ab2ae0d37bd51e09dfe328d299ea34ecb4"
+    },
+    {
+      "path": "qa/front-pier-previous/colorize_model.py",
+      "size": 2619,
+      "sha256": "6d36261a6a8ed23f8e24da3756c27d8ee83a4084c7169906617be9dace4783e2"
+    },
+    {
+      "path": "qa/front-pier-previous/palette.json",
+      "size": 179,
+      "sha256": "1a954352e1a14d97bd11afd2ad3cdbceb9e3e2084212dc385a2cd2ff95b7643d"
+    },
+    {
+      "path": "qa-summary.json",
+      "size": 251,
+      "sha256": "bbdda110ea32357019c91a8b83b4550249c9aa2efd3e1bf3c07ea529123ca0a6"
+    },
+    {
+      "path": "rear.png",
+      "size": 937445,
+      "sha256": "8305541b10e39f4351c42107956f68984b71ab15e8c7bd36b45b8e27bf915c1d"
+    },
+    {
+      "path": "render_color.py",
+      "size": 7258,
+      "sha256": "ba3e91cae1b7f2da6f0bdf1cb9410384855eafd1d2b5d6358ba260d7813a339b"
+    },
+    {
+      "path": "render_elevations.py",
+      "size": 1913,
+      "sha256": "c9d18426c361be60bd2f62349e31451c54529021693addc078aeeae88e233db3"
+    },
+    {
+      "path": "render_preview.py",
+      "size": 3436,
+      "sha256": "b78c3dcb1523416ca9a847cd0187270dba4798b013d7ffc4cde7f899a099784a"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 61,
+      "sha256": "df04896d2eca85c35c3cbc39502f30edcad2a6f436e63e4ffe6702748bf5658b"
+    },
+    {
+      "path": "roof-detail.png",
+      "size": 1366785,
+      "sha256": "7e9450b34f08cef79e2606065be325640a087129e5b9c8c8277be4bdd0efefdd"
+    },
+    {
+      "path": "run_all_checks.py",
+      "size": 939,
+      "sha256": "3764c4beca5fcb576fcbf7bec56de5e0ab8281e7eaba5d13107a6514b57e2816"
+    },
+    {
+      "path": "scene.blend",
+      "size": 330990,
+      "sha256": "02d6f750b3bd09a7548fef95409f9be7093ba6c7525e252b4aa8594abdaa7724"
+    },
+    {
+      "path": "sources.json",
+      "size": 2445,
+      "sha256": "594e2fcf89586b04373cfb1ded56aa25bc617334319ba175f7c405167ede6b6a"
+    },
+    {
+      "path": "thin-feature-check.json",
+      "size": 11093,
+      "sha256": "411ebc9fcab505b63463f49d07c9efb6f02d4ba5b1ce37b3e37e37d1095c7947"
+    },
+    {
+      "path": "thin_canonical_v2.py",
+      "size": 2904,
+      "sha256": "33b3c4ffd9d970794494fa5eaa9126a8ff85137225dd9b247efdf1e5fae99deb"
+    },
+    {
+      "path": "top.png",
+      "size": 1028912,
+      "sha256": "721bec7973e356f983178882eba4a557ace6c855dadcd9a487e814ef1bc4ae23"
+    },
+    {
+      "path": "valid-sections.json",
+      "size": 28528,
+      "sha256": "606e4eb4963bc95e4b26f9e4614cdf069dafc74bf842c22d72543a0d3d385fcd"
+    },
+    {
+      "path": "validate_color.py",
+      "size": 3482,
+      "sha256": "c573a5ecec804d4a27e8e3a6191eccfc589089d79b6e957a90920ddf0eeba249"
+    },
+    {
+      "path": "validate_model.py",
+      "size": 5222,
+      "sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95"
+    },
+    {
+      "path": "validation.json",
+      "size": 1515,
+      "sha256": "5b8c8cdb5b38ce7586c88ada729e0d11eb6269ed2d4876357fd1fa26ea37b698"
+    },
+    {
+      "path": "verify_color_scene.py",
+      "size": 2088,
+      "sha256": "e1eba058e7f2fb0c1a237e5b8bf8dd65e98b302dceb8d346c530840e768eb63c"
+    },
+    {
+      "path": "west.png",
+      "size": 817749,
+      "sha256": "3163fae3f9a325acad413a4e1bb820be86e519b86bfba3b0b078782222a94fd3"
+    }
+  ],
+  "excluded": [
+    "source photographs",
+    "private comparison sheets",
+    "scene.blend1",
+    "private logs"
+  ]
+}

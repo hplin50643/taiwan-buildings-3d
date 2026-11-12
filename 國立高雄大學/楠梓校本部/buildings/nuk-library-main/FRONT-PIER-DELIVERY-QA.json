@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded front-pier update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T09:22:12.258278+00:00",
+  "triangles": 12596,
+  "original_color_faces": 258,
+  "new_color_faces": 36,
+  "colored_faces": 294,
+  "unknown_neutral_faces": 12302,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "75adb22859253404b84620cb1960576f44b3b89b9a7bd100809056341755c94a",
+  "color_mesh_sha256": "42cb6af8c2315102bae4c1ffe094a959a9eb997fc7a2d885ef59da1a45693659",
+  "images_sha256": {
+    "preview.png": "2bc09d1ad8630fd58f238c5f50721c6b529731a3900003ff9bdb95a15c906d15",
+    "rear.png": "8305541b10e39f4351c42107956f68984b71ab15e8c7bd36b45b8e27bf915c1d",
+    "front.png": "55c8a48a7035381767f9975ecccba0031657215e6c8b89150899b7843a7d929c",
+    "back.png": "ca6e5141a6d5cf140c184c03d8ecd097fb7c4d626cc03793a08d34ffa063bd46",
+    "west.png": "3163fae3f9a325acad413a4e1bb820be86e519b86bfba3b0b078782222a94fd3",
+    "east.png": "69af6c10be4f15a9d892c44a4c20011e70515835fc5c8d7762ab4228bbf8f929",
+    "top.png": "721bec7973e356f983178882eba4a557ace6c855dadcd9a487e814ef1bc4ae23",
+    "entry-detail.png": "d2a59f4a550d446e635879b2177fff90c301e33390561e1fe8e487d45da9dd59",
+    "facade-detail.png": "36e1da292ee825dd0d52357d519d4f4d9190ad8e3c5317a32d63df062b2dfa4a",
+    "roof-detail.png": "7e9450b34f08cef79e2606065be325640a087129e5b9c8c8277be4bdd0efefdd"
+  },
+  "current_independent_review": "FRONT-PIER-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Nominal color and inferred continuity for return faces, not measured current condition.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

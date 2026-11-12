@@ -2,15 +2,15 @@
   "palette": [
     {
       "id": 0,
-      "name": "Observed front reverse screen pale fields and front pier fronts",
+      "name": "Observed front reverse screen pale fields and front pier vertical sides",
       "hex": "#D1C7B3",
-      "faces": 258
+      "faces": 294
     },
     {
       "id": 1,
       "name": "UNVERIFIED mixed walls glazing roof grooves neutral",
       "hex": "#B8BAB5",
-      "faces": 12338
+      "faces": 12302
     }
   ],
   "domain_face_indices": {
@@ -281,7 +281,57 @@
     "front_pier_x-1": [
       3044,
       3045
-    ]
+    ],
+    "front_pier_vertical_sides": {
+      "-25": [
+        3015,
+        3016,
+        3017,
+        3018,
+        3019,
+        3020,
+        3021,
+        3022,
+        3023,
+        3024,
+        3025,
+        3026,
+        3027,
+        3028
+      ],
+      "-13": [
+        3029,
+        3030,
+        3031,
+        3032,
+        3033,
+        3034,
+        3035,
+        3036,
+        3037,
+        3038,
+        3039,
+        3040,
+        3041,
+        3042
+      ],
+      "-1": [
+        3043,
+        3044,
+        3045,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056
+      ]
+    }
   },
   "coplanar_components": 3246,
   "coplanar_neutralized_faces": [],
@@ -289,7 +339,7 @@
   "fully_colored_exterior": false,
   "geometry_policy": "12596 original triangles unchanged",
   "limits": [
-    "Front125/reverse127 true outer screen field triangles, excluding all groove floors and reveals. Three front pier faces6.",
+    "Front125/reverse127 true outer screen field triangles, excluding all groove floors and reveals. Three front piers: 42 original vertical side faces, including original 6 front faces. Visible side returns pale; unseen same-pier continuity inferred. Caps and reverse piers remain neutral.",
     "Whole connected coplanar domains uniform.",
     "Main mixed pinkwall/whitebase coplanar all neutral, no z threshold.",
     "All windows crown rails screens roofs steps unknown neutral. Mainblock only, no lowpavilion/longbridge.",
