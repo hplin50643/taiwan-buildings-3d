@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in mcut-library-facade-segment-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "40805c880b732f41a67cf0a558568c22964b2483443e7f44a69db7ff3b5c5683",
+    "east.png": "aec0db05b2f0422b02fa6c0e5e9b5b7b479ed10c3c17b0d076a2ac2d5912cb06",
+    "entry-detail.png": "dc6eeaceea08ec168f0b53f751a193bbc26b957d3abd45db5398afbaaea6f802",
+    "facade-detail.png": "f0e5f0abc21791a66c4399b1772d0634098b5369dafca78714e25a109fa02b13",
+    "front.png": "73b2faaa728cd8b4b297f0babf95ee4b74a5693fc7232bfc960e5d4921c846ab",
+    "preview.png": "ee25c44ed55fd522b7536e820f8993b26fa12a6df19c1a9d1627f21334537a86",
+    "rear.png": "7aa1cb0b49704fa3a69ff55d85a3075d814627e0581387b2399e48d95558ddb6",
+    "roof-detail.png": "88e0dff1108afe5a11749b9daa0993b0da991be663b541a13b672b6c299a849b",
+    "top.png": "1f71884a85e0f5b9def53b14c68c4ca90705fabb0aac99d590f146d97d0bd78c",
+    "west.png": "6ed536be6d50bdfa6702bfef9c9fb448582ce5a8e0f752709936ec9da8cf31b8"
+  }
+}

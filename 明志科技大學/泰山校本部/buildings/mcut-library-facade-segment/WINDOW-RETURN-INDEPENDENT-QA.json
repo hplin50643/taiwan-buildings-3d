@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "slug": "mcut-library",
+  "independent_numeric_review": "independent-numeric-review.json",
+  "independent_scene_review": "independent-scene-review.json",
+  "source_domain_review": "second-source-domain-review.json",
+  "actual_visual_review": "All ten final renders inspected in montage; entry-detail, facade-detail and roof-detail additionally inspected full1200x900. Three right exterior gray returns are visible, left returns and top/bottom/inner aperture remain neutral. No supplementary rendering needed.",
+  "counts": {
+    "triangles": 4662,
+    "original_colored": 24,
+    "added": 6,
+    "complete_added_domains": 3,
+    "colored": 30,
+    "neutral": 4632
+  },
+  "geometry_3mf_palette_other_indices_preserved": true,
+  "mixed_domains": 0,
+  "scene_shaders_camera_light_render_inventory_verified": true,
+  "isolated_rebuild_QA_checked": true,
+  "source_pending_snapshot_unchanged": true,
+  "image_sha256": {
+    "preview.png": "92376c9bdac1fba316fb09fc3bb6a21facd4d0468da48fd00691c77987d23630",
+    "rear.png": "8e0dc9262f0fa3dd1d99c0ad9a44f2b837cc755155a2453511c50eef621a793b",
+    "front.png": "b0e5cbf8baf9716822044aff84b6a2b4c30914c1c2a88de800793c5801259643",
+    "back.png": "82250a192eee10cfde880c89d2d9c969e3aae8877460b96e69f1eeec2a61130e",
+    "west.png": "f34acf5b65e5c871bf337f6f82efd7b4a9279e326ad5010d56e3fafa5f1cf4bb",
+    "east.png": "28c447439a1b5e7996e8aee269b5f355b908c1fb7aa895a71a1114554f585d6c",
+    "top.png": "4e8a160d4cf5e64a2ed7728e4a80b8493cf87b98c91e3cfaf136821677910440",
+    "entry-detail.png": "9f4f9749c306ee0b4340f5732d2433095bd0e0f3ae959f369a85fc2ceef65ab2",
+    "facade-detail.png": "5816c03eb5f7b58f08e33b1e68f63edac532ba4bf48d8116a9a926755c039c2a",
+    "roof-detail.png": "b8d2806f342f1d7a08db873d8b7eab4e5f69c4188d8a16ebe0c6cdc13f5f8c2b"
+  },
+  "file_sha256": {
+    "model.stl": "4f7d9eabeeb9d4626bc679405bb4996604a119a516417b56370d0079b7358aae",
+    "build_model.py": "5a1ae3b7de113704478b2a723195308af21def045c749c9f1de27d0496813efd",
+    "color-mesh.npz": "7470f701aa88f8d9550195fb78816345c3f9b18d00612d7387d8b32bf8b877e4",
+    "palette.json": "f859cdee16b684720da1e7383f6018084a27565a8829aefbb7694beda51a200f",
+    "appearance.3mf": "ec013fc8bcf20f42ddafda065f2420fe38062124f793adb2d37e52a111cd3fde",
+    "appearance-materials.json": "6295c542eb122e34ddd569b704c283aab6f33e3bdc0fb2055bfb1cb5125466d7",
+    "scene.blend": "0516a156e5e049d20ecde4b33a056630e924513d2ec6b97627b2fdcd8907d45c",
+    "colorize_model.py": "8d5ee41f43ae5a26eb8cba49ae5ce5a4c60b41b0d9177416e18bd2babc248004",
+    "export_appearance.py": "a564932a230092a52f0869fe33ba7a854333029112a804d6215719dab842bd5a",
+    "validate_color.py": "1c66d7139fece62b7e8c3c7013e95d33a25a3772f3b56d560a69968ac79f6885",
+    "render_color.py": "189a9be664603353cb34bc911d0670cdd6d7ff91fffd9e0c0e03fa4fadeeac94",
+    "verify_color_scene.py": "68b8e70d37cd30c80998d5aabed0a08a75b6e89af2a72d84f5c58657e8953629",
+    "README.md": "2ce2034032e070a0a1640d4b96d1c4d46620b20a89c33119436251028fe14b4c",
+    "README.zh-TW.md": "b3fabb5d6b00d82b8da1e1b883d47271186fc4d8e52cf88999b5148b09ced7e9",
+    "COLOR-ASSIGNMENT-QA.json": "74094f0f7a86bf3b4b4f34272e13b69db5fe0371b589d701849ba1c055b45461",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "5aa6bfee1146c5a3a6958f14afcfdfc98d53a9a47bbfec982ac49bcfc18a8030",
+    "COLOR-SOURCE-REGISTER.json": "39ee5bd08be951945a571ca11bb968dbd540d2ce63f72f63d70175963059735b",
+    "WINDOW-RETURN-SOURCE-QA.json": "6301970d06de66633a37f7487cae49da9d8e3fbeffdee26f1c4c7989f6a85e69",
+    "SCENE-QA.json": "644abf174c6b07046580c251ce0724102e9d759e4990dcb4e1de442df4a4a926",
+    "WINDOW-RETURN-SCENE-QA.json": "f2f8467da41f0e037619a89c15927c39ac60c620e88efc882dc61572deab7dba",
+    "CHECKSUM-SCOPE.md": "48bc3d5449a554fa413512e15c8620a338a83310c585b35e9be28d3b898bbb63"
+  },
+  "limits": [
+    "Nominal gray family inferred only for three visible same-frame exterior returns; warmer light and wall shadows are not new materials.",
+    "Original thick box window and68mm facade segment approximation not newly certified.",
+    "Old official photographs reexamined, no newcapture or2026 condition claim.",
+    "Original24 front indices and all other materials/geometry retained; partial color remains incomplete."
+  ],
+  "published": false
+}

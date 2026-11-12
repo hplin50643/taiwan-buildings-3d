@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded window-return update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T13:44:02.819898+00:00",
+  "triangles": 4662,
+  "original_color_faces": 24,
+  "new_color_faces": 6,
+  "colored_faces": 30,
+  "unknown_neutral_faces": 4632,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "4f7d9eabeeb9d4626bc679405bb4996604a119a516417b56370d0079b7358aae",
+  "color_mesh_sha256": "7470f701aa88f8d9550195fb78816345c3f9b18d00612d7387d8b32bf8b877e4",
+  "images_sha256": {
+    "preview.png": "92376c9bdac1fba316fb09fc3bb6a21facd4d0468da48fd00691c77987d23630",
+    "rear.png": "8e0dc9262f0fa3dd1d99c0ad9a44f2b837cc755155a2453511c50eef621a793b",
+    "front.png": "b0e5cbf8baf9716822044aff84b6a2b4c30914c1c2a88de800793c5801259643",
+    "back.png": "82250a192eee10cfde880c89d2d9c969e3aae8877460b96e69f1eeec2a61130e",
+    "west.png": "f34acf5b65e5c871bf337f6f82efd7b4a9279e326ad5010d56e3fafa5f1cf4bb",
+    "east.png": "28c447439a1b5e7996e8aee269b5f355b908c1fb7aa895a71a1114554f585d6c",
+    "top.png": "4e8a160d4cf5e64a2ed7728e4a80b8493cf87b98c91e3cfaf136821677910440",
+    "entry-detail.png": "9f4f9749c306ee0b4340f5732d2433095bd0e0f3ae959f369a85fc2ceef65ab2",
+    "facade-detail.png": "5816c03eb5f7b58f08e33b1e68f63edac532ba4bf48d8116a9a926755c039c2a",
+    "roof-detail.png": "b8d2806f342f1d7a08db873d8b7eab4e5f69c4188d8a16ebe0c6cdc13f5f8c2b"
+  },
+  "current_independent_review": "WINDOW-RETURN-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Same two original official day photographs native-pixel reinspection supports only three upper square-window outer-right vertical returns,6triangles/3whole domains. Narrow gray returns are distinct from wider cast shadows; do not assign warmer illumination as a new material. Original2mm exposed depth and box-surround are geometric approximations,not surveyed measurements. No inneraperture/top/bottom/leftside extension. Original24frontfaces/2palette/STL/build/otherindices unchanged. CapturetimeEXIF is not independently verified or2026condition. Facade segment/backing not wholebuilding.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}

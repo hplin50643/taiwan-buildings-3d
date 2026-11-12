@@ -1,0 +1,37 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "MCUT Library Facade Segment upper square window front rings medium gray",
+      "hex": "#878985",
+      "faces": 24
+    },
+    {
+      "id": 1,
+      "name": "MCUT Library Facade Segment unverified walls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 4638
+    }
+  ],
+  "domains": {
+    "three_upper_window_ring_whole_components": 24,
+    "per_rectangle": [
+      8,
+      8,
+      8
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 1121
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "4662 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "24 original triangles on three complete upper window front rings medium gray, not black.",
+    "Whole y=-10.5 plane40 triangles;24 ring triangles and16 unrelated balcony-end triangles neutral.",
+    "Window glass inner frames and reveals remain neutral; no shadow black treatment.",
+    "Mixed brick yellow walls, gold-lettered tower, balcony proxies, roof and rear neutral.",
+    "Source1 EXIF2011-07-24 metadata only; source0 captureunknown; not2026 condition.",
+    "Artificial68mm deep facade section only, not full library footprint; no tested filament slicing."
+  ]
+}

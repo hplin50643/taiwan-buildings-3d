@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_PARTIAL_COLOR_FINAL_VISUAL_REVIEW",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected: seven complete section views and three intentional upper window ring closeups.",
+    "Three complete front rings mediumgray; original holes and light inner reveals neutral, not black glass.",
+    "Sixteen coplanar balcony-end faces neutral, as are mixed walls, gold-lettered tower and all other domains."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 4662,
+  "material_face_counts": [
+    24,
+    4638
+  ],
+  "connected_coplanar_domains": 1121,
+  "original_obj_present": false,
+  "original_files_retained": 19,
+  "file_sha256": {
+    "README.md": "b3fabb5d6b00d82b8da1e1b883d47271186fc4d8e52cf88999b5148b09ced7e9",
+    "README.zh-TW.md": "b3fabb5d6b00d82b8da1e1b883d47271186fc4d8e52cf88999b5148b09ced7e9",
+    "model.stl": "4f7d9eabeeb9d4626bc679405bb4996604a119a516417b56370d0079b7358aae",
+    "build_model.py": "5a1ae3b7de113704478b2a723195308af21def045c749c9f1de27d0496813efd",
+    "colorize_model.py": "6ae3268af78c705ad8b35db768ab7af455caf05af530bc5ba538683cfef44da3",
+    "render_color.py": "2578704ce22309ce817e70b036c6e2c4a961bf6600653317efe46c8dd18b658d",
+    "verify_color_scene.py": "68b8e70d37cd30c80998d5aabed0a08a75b6e89af2a72d84f5c58657e8953629",
+    "validate_color.py": "8e6fcfd58f90bc83f1b730febb36cdb09bd4b077c398434807cb17182fbbc3bb",
+    "color-mesh.npz": "e872c536a24d37760e3723eba3329f4f0b02fa8fdc5de97aa9b9c6653e329138",
+    "palette.json": "f859cdee16b684720da1e7383f6018084a27565a8829aefbb7694beda51a200f",
+    "appearance-materials.json": "e3c36db222f5ac0a8c3d94d217fa9c57fe78820a0f735c5a50be6769d7ed2369",
+    "COLOR-SOURCE-REGISTER.json": "39ee5bd08be951945a571ca11bb968dbd540d2ce63f72f63d70175963059735b",
+    "appearance.3mf": "cd63bd3c3e7f098a65376785e776f51f799eec333761d2fadd6f87470f154015",
+    "scene.blend": "41294574508be4bca0393fbb9eca09c2bd205437279d24697767c4322b203cb3",
+    "preview.png": "33f99fbb0f9bdc4c0a94c6735b1ebae8e0e3ddbf18c1a29df3720e2e823317d3",
+    "rear.png": "485fb12cc6e69e34ea19ef7356f72c2508fcc384d4a61524b5928cd6e15b31b0",
+    "front.png": "8efdbec1b134905931faedd84cb2d13b83e938f49cd74fde41be76ebb5c50fe8",
+    "back.png": "1471a826c03d2aee1e11023d457cf5a2201083af5293842b9bc356f6b1896ccc",
+    "west.png": "1334c9c53881ea7020a31bd0c88735e6122d471f1df902563bfc1f96fc21c6ff",
+    "east.png": "936f7cf5d56b59c9064ea6a601c2293cee170bab3f85ed422079eab679ff3e94",
+    "top.png": "864b436f612c9996192c2119a2a4925fa1f2058faf7ac0b7c0b7e4a0396f511a",
+    "entry-detail.png": "e3e8add02c5dcdc0e1ba21832db97292c02f34132be25918bf7e063f96c13aa9",
+    "facade-detail.png": "4f1e760e203a5ddb724574bcc36ab6824bd1d1491373bc91767e960f0c56c56a",
+    "roof-detail.png": "ca653adb3f6ce0865ccb4b2d545843c7977d13ac8030e3d9e54735cad555c7c5",
+    "export_appearance.py": "a564932a230092a52f0869fe33ba7a854333029112a804d6215719dab842bd5a"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "2867e11460fa1ebd9ba13093672a14d199fb33377c533da47aab8047f418f5d0",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "890e56c83ea1bf71e76504c33300656bbf56feb99f3c31ad420d0aae46ad653c",
+    "SCENE-QA.json": "d4371b86ca2a011e42295475f804768f87e6e711621255c5a2276197f05cd9d2",
+    "FRAMING-QA.json": "f28aa13e4513c2224715e80bd99faf0cd072fdffd917be6181bb04211d0804fd",
+    "DELIVERY-QA.json": "16fa76aeb7444b3c2b7e4f3482636a938773d1e034df504d0e2a89e1e15778b0"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "38aff42637595ad684d5d0476d7c3e429944342edd1a885fd18c6c27f0477949",
+    "ORIGINAL-RETENTION-QA.json": "77bc4479cc131b381131fb4cd23ded26afec3dfdcf7ddcc08b9670ccc6fb6a20",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "af0794949087953d955df47939a658ae0151fbaa354f4f1892fd281dd2e86298",
+    "ORIGINAL-PACKAGE-READBACK.json": "33cd16804f2dda6c5d53b001b56f87420cc77c3db10de670138d9683d93892c0",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "9b4c34ed0fd5aa9ca5c0d14ff5a8207a7dc13ef68ae5d8c28a3a58f7162779b9",
+    "INDEPENDENT-DOMAIN-0659.json": "3e6eac0a77350399e851818bccff0d4edb852b30dc5028d6c29ab6794db5d5e8",
+    "INDEPENDENT-IDENTITY-0659.json": "f5b9cfdc8db348a3c84b3a0698d485e92b0cede22db1ab6856c4afa23f1faaf6",
+    "INDEPENDENT-PACKAGE-IDENTITY-0702.json": "9b4c34ed0fd5aa9ca5c0d14ff5a8207a7dc13ef68ae5d8c28a3a58f7162779b9"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "25ceba3a52b38262c2d9da6ce4ead30cab10bf8bda7e3a422e3bed97f4a05401"
+  },
+  "limitations": [
+    "24 original upper window ring triangles;4638 neutral.",
+    "Whole y=-10.5 plane40 triangles in11 complete components, only3 eighttriangle rings selected.",
+    "Original4662 triangles and19 immutable files retained;no originalOBJ even though originalbuild exports one.",
+    "Source0 captureunknown;source1 EXIF2011 metadata only, not2026 condition; artificial68mm facade section not whole library."
+  ],
+  "history": [
+    "Verifier scale property set before preview gate to actual original150mm-base.",
+    "Initial delivery-template wording corrected before delivery QA; initial version retained privately."
+  ],
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T07:02:08Z",
+  "parent_review": "Parent personally viewed both actual sourcephotos, originalcode, preview and all10 finalmontage0702. Whole original y-10.5 plane40 exactsharededge components includes three complete8tri upperwindow rings24 selected midgray, not shadowblack; other16balconyend faces neutral. Exact rawmultiset equals NPZ24. Glassbacking, yellowredmixedwall, goldletter tower, curvedrailproxy, canopy and all4638otherfaces neutral. Original68mm artificialsection not actualfullhall depth; source1EXIF2011-07-24 metadata not certifiedcapture or2026 state. Actual explicit MCUT Library Facade Segment identity independently matches3MF/Blender/four scripts/README/paletteRGB. Sevenwholeviews fit and3details show full targetrings with neutralbackings and returns. Original4662triangles19files/noOBJ unchanged; Taishan campus and partial only."
+}
