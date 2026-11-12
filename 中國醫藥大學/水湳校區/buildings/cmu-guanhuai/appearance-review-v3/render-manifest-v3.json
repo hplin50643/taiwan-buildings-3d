@@ -1,0 +1,87 @@
+{
+  "revision": "color-v3-full-facade-continuity",
+  "render_parameters": {
+    "render_engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "seed": 0,
+    "denoising": false,
+    "threads": 1,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "bound_artifacts": {
+    "appearance.blend": "df475875debe15a1db0f9d325a57cdbd3ab56819925e097fd44d1d9024713912",
+    "appearance.3mf": "b3ef265d721186550b40eae698a9a7bbd27a6a01ba95f8e37283869489e20d77",
+    "appearance-materials.json": "d86a0ba4aaa006464e97461b5d182f6e263328181b71a8cd36c15e04127ef487",
+    "build_appearance.py": "0ed29d0a02de0ed2e1c4c713a0b21d9ee5d2be542582e38eaca49cdf30a7c84c"
+  },
+  "views": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 904121,
+      "sha256": "0cf01a42b963ccd648df4ec2e0182bbe6b93fd8ec5e7d953365610776ee79a5a",
+      "personally_viewed": true,
+      "review": "Prior west-facing pale bands, dark recesses and original slanted columns retained. Former x=0 neutral transition on visible right edge is removed. Original simplified terrace mouths remain neutral, without painted false windows."
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 865308,
+      "sha256": "0c0e7ae184e1239d2c56def318c660f4ac4e1b9b41c8ba202143fc4e227657b6",
+      "personally_viewed": true,
+      "review": "Pale solid bands and dark existing recesses continue over the full curved rear. Both original low curved lobes have coherent band and core colors. Roof cap, central opening cuts and artificial base remain neutral as documented."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 900768,
+      "sha256": "48747fcfd0cfae491d44140be407284fe57e425fbdf9b55c57241b289d5dfc1c",
+      "personally_viewed": true,
+      "review": "Original western material character and opening shapes retained. Mixed terrace interiors are not flattened into a single unsupported glass or wall color. No text or newly invented facade details."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 900093,
+      "sha256": "f878e0dca3eb904127056acd4c7fb7afc7c7d98c8c0cee24a22e767c654081c4",
+      "personally_viewed": true,
+      "review": "Northwest oblique exterior follows continuous existing solid/recessed bands. Original three terrace groups and slanted columns remain unchanged; neutral inner cuts are visible and intentional."
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 864794,
+      "sha256": "e4fd0afd621f3cf8fa1d79085291da37182620354afd59b2b25be655825c8ab5",
+      "personally_viewed": true,
+      "review": "South-facing curve has uninterrupted pale/dark material families without the former geographic half-plane cutoff. Low-volume material changes follow complete existing facets, not diagonal centroid splits."
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 870652,
+      "sha256": "0d8c4f2963446693d98696494336ca96413a493484f5ac0c82e0ed5c0eaa9cc3",
+      "personally_viewed": true,
+      "review": "North-facing curve and upper terrace edge retain original geometry. Complete shell bands continue around the model; irregular inner terrace surfaces are not given arbitrary facade colors."
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 884242,
+      "sha256": "d8513945604922ff1b784f372dd7df690aff5498425d5bf289325fcfdbfcd5bd",
+      "personally_viewed": true,
+      "review": "Original covered cap, base and plan outline retained. Cap is deliberately neutral because its real frame and dark panels lack matching model face boundaries; no fake roof grid or source photo texture."
+    },
+    {
+      "path": "appearance-review-v3/original-front.png",
+      "bytes": 911408,
+      "sha256": "e1559039a1be9ce6a12bdfb86f4908d90efe42df06d21c35d60980ff8cec652d",
+      "personally_viewed": true,
+      "review": "Same 900x800 camera, lights and 96-sample settings, with all original per-face material indices restored. The original neutral side transition is visible for honest comparison."
+    },
+    {
+      "path": "appearance-review-v3/original-rear.png",
+      "bytes": 862353,
+      "sha256": "7d8146095a872c7ab13e3a5036b5f7a3eaca8548515ad82d23b241353f5de222",
+      "personally_viewed": true,
+      "review": "Same camera, lighting and 96-sample settings with original indices restored. Original neutral rear bands and eastern low lobes clearly contrast with the repaired version."
+    }
+  ],
+  "note": "Original render-manifest.json and previews remain unchanged historical geometry evidence. This manifest binds current v3 colors and original-index comparison images only."
+}

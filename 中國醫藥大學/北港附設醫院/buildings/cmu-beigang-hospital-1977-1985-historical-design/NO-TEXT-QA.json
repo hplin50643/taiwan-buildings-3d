@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in cmu-beigang-hospital-1977-1985-historical-design-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "ee9da5c7dd9bf70b354e081dae26d926cc76af0de7388ced673c9d37bee278ee",
+    "east.png": "18401689f7f161baec693c40cd9dec6f5dd1925851973527477665fb40bc145d",
+    "front.png": "b11a4a3526e1732d4513103cc2ed5bc71b52435ceb5b702ee2af6b67b8b6b1be",
+    "podium-detail.png": "d77a629c0b8a33a22a6cda9366d5b2e4d490d5d0c4509d552ed51d1b8aeb345f",
+    "preview.png": "7c5316d8bfd925b92a6395e5661e2656e1c4b12a3e2769748fe9f4887187dd7f",
+    "rear.png": "388df31eba2b24518ca4a1c376b312cbba33adf9152b4a28c911cde6a163e7a2",
+    "rooflights-detail.png": "c2526fdf103343583311aef218569c58554aa744697d1da9782c856485157df2",
+    "top.png": "dd80719dae3380b599029d4b8b3f89bae8061f4ec9251536d479548c0f5df949",
+    "tower-detail.png": "f69dac971791abaf02d508f505358e72ffc45a28a7b83c8f6b6e87a2d9fd38f9",
+    "west.png": "3b91148215fefb6401868d3e39722bb96c5bb038df4bce7179bc1b08a536ff21"
+  }
+}

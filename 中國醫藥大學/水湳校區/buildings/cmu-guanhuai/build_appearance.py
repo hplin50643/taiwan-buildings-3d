@@ -14,7 +14,7 @@ verts=[tuple(v.co) for v in mesh.vertices];faces=[tuple(p.vertices) for p in mes
 assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
-# Five official photographs: source-limited western neutral-family calibration.
+# Nine official article photographs inspected for v3: existing material families extend over full original exterior support planes.
 # Existing four display-contrast materials are NOT a previously all-monochrome model.
 palette=[('Unverified rear roof recess and ground neutral','#AAA79F',.86),('Observed western grey white solid bands','#C8C8C2',.86),('Observed slanted column dark grey brown','#55514D',.8),('Observed recessed band mixed opaque appearance not pure glass','#656B6B',.8)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
@@ -28,6 +28,8 @@ S=148/55.2;BASE=2.;N=128;EPS=.00035
 # Index true original triangulated loft support planes, not smooth superellipse distance.
 # Bounds only prefilter: all vertices must lie in the paired true triangles of one original quad. No geometry is generated in the scene.
 records=[];bins=defaultdict(list)
+record_labels=[]
+current_label="main_outer_solid_band"
 def contour(rx,ry,n=3.15,cx=0,cy=0):
  t=np.arange(N)*2*math.pi/N;c=np.cos(t);s=np.sin(t)
  return np.array([cx+rx*np.sign(c)*abs(c)**(2/n),cy+ry*np.sign(s)*abs(s)**(2/n)]).T
@@ -48,28 +50,39 @@ def register(levels,mat,exponent=3.15,zclip=None):
     normals.append(normal/ll)
    if len(normals)!=2:continue
    lo=Q.min(0);hi=Q.max(0)
-   if lo[0]>EPS or min(abs(n[2]) for n in normals)>.95:continue
+   if min(abs(n[2]) for n in normals)>.95:continue
    if zclip is not None:lo[2]=max(lo[2],zclip[0]);hi[2]=min(hi[2],zclip[1])
    if hi[2]<lo[2]-EPS:continue
-   idx=len(records);records.append((Q,normals,lo,hi,mat))
+   idx=len(records);records.append((Q,normals,lo,hi,mat));record_labels.append(current_label)
    for zz in range(math.floor(lo[2]*2),math.floor(hi[2]*2)+1):bins[zz].append(idx)
 def dims(z):
  t=np.clip((z-13.05)/36.5,0,1);return 16.7*(1-.12*t**3),21.7*(1-.12*t**3)
 def shelllevels(a,b,inset=0):return [(z,dims(z)[0]-inset,dims(z)[1]-inset,0,0) for z in np.linspace(a,b,max(2,int((b-a)/.7)+1))]
 register(shelllevels(13,50.12),1)
+current_label="main_existing_recessed_band"
 for i in range(10):
  z=13.05+i*3.65;top=z+3.65
  register(shelllevels(z+2.10,top+.02,1.05),3,zclip=(z+2.12,top))
 for i,z in enumerate([0,4.35,8.7]):
  rx=[14,14.8,15.4][i];ry=[19.5,20.3,20.8][i]
+ current_label="low_floor_outer_solid_band"
  register([(z,rx,ry,0,0),(z+1,rx,ry,0,0)],1)
+ current_label="low_floor_existing_recessed_core"
  register([(z,rx-2.4,ry-1.8,0,0),(z+4.55,rx-2.4,ry-1.8,0,0)],3)
  for cy,rry in [(-11.2,8.4),(10,7.2)]:
   if cy>0 and i==2:continue
+  current_label="western_low_lobe_existing_solid_band"
   register([(z,7.4,rry,-11,cy),(z+1,7.4,rry,-11,cy)],1,2.3)
   # Protected parapet cores are ambiguous glass/solid in the coarse original;
   # preserve neutral rather than claiming every curved guard is glazing.
+current_label="existing_western_slanted_columns"
 for y,dy in [(-3.8,-1.7),(4.3,1.7)]:register([(0,.8,.8,-18.1,y),(13.45,.8,.8,-16.38,y+dy)],2,4)
+for z in [0,4.35]:
+ for cy,rry in [(-10.2,7.5),(10.2,7.0)]:
+  current_label='eastern_low_lobe_solid_band'
+  register([(z,6.0,rry,10.5,cy),(z+1.0,6.0,rry,10.5,cy)],1,2.5)
+  current_label='eastern_low_lobe_existing_recessed_core'
+  register([(z+1.0,4.5,rry-1.1,9.7,cy),(z+4.4,4.5,rry-1.1,9.7,cy)],3,2.5)
 RQ=np.array([r[0] for r in records]);RN=np.array([r[1] for r in records]);RL=np.array([r[2] for r in records]);RH=np.array([r[3] for r in records]);RM=np.array([r[4] for r in records])
 bins={k:np.array(v,dtype=np.int32) for k,v in bins.items()}
 def in_tri(points,A,B,C):
@@ -82,9 +95,10 @@ def in_tri(points,A,B,C):
   result.append((abs(np.sum(d*normal,axis=1))<EPS)&(ss>=-.0005)&(tt>=-.0005)&(ss+tt<=1.0005))
  return np.array(result)
 indices=[]
+original_indices=[];changed_faces=[];change_reasons={};support_record_ids={}
 for p in mesh.polygons:
  q=(np.array([verts[j] for j in p.vertices])-[0,0,BASE])/S;n=np.array(p.normal);lo=q.min(0);hi=q.max(0);i=0
- if hi[0]<=EPS and lo[2]>=-EPS and hi[2]<=50.12+EPS:
+ if lo[2]>=-EPS and hi[2]<=50.12+EPS:
   candidates=bins.get(math.floor(float((lo[2]+hi[2])*.5)*2))
   if candidates is not None:
    keep=(np.max(RN[candidates]@n,axis=1)>.99995)&np.all(lo>=RL[candidates]-EPS,axis=1)&np.all(hi<=RH[candidates]+EPS,axis=1)
@@ -94,12 +108,26 @@ for p in mesh.polygons:
     contained=np.all(in_tri(q,Q[:,0],Q[:,1],Q[:,2])|in_tri(q,Q[:,0],Q[:,2],Q[:,3]),axis=0)
     ids=ids[contained]
     if len(ids):
+     # Complete triangle containment in paired original quad triangles, never centroid zoning.
      mats=RM[ids];i=2 if 2 in mats else (3 if 3 in mats else 1)
+     selected=[int(k) for k in ids if int(RM[k])==i]
+     support_record_ids[str(p.index)]=selected
+ # Recompute the previous western-only classification independently.
+ oi=0
+ if hi[0]<=EPS and lo[2]>=-EPS and hi[2]<=50.12+EPS and i and str(p.index) in support_record_ids:
+  prior=[k for k in ids if RL[k][0]<=EPS and not record_labels[k].startswith('eastern_')]
+  if prior:
+   om=RM[prior];oi=2 if 2 in om else (3 if 3 in om else 1)
+ original_indices.append(int(oi))
+ if oi:i=oi # every already colored original face is locked
+ if i!=oi:
+  changed_faces.append(p.index)
+  change_reasons[str(p.index)]='continuity_'+record_labels[support_record_ids[str(p.index)][0]]
  p.material_index=int(i);indices.append(int(i))
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; existing complete exterior solid and recessed bands extended around facade; unresolved terrace cuts, roof and artificial base remain neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-full-facade-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -114,6 +142,7 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -129,15 +158,17 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Existing four materials were neutral/display contrasts, not literal monochrome. Five official 2021 article photos support western grey-white bands, dark grey-brown slanted columns and mixed opaque recessed bands. No pure-glass claim; terrace interiors, protected parapet cores, eastern rear, roof cap and unsplit roof panel/grid remain neutral. No lighting tint baked into materials. Original printability QA and short-root limitations preserved, not rerun.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-full-facade-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'support_record_ids':{str(i):support_record_ids[str(i)] for i in changed_faces},'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original appearance was not monochrome: nine images from the official 2021-10-28 article were visually reviewed. Rear overall and side/roof photos support light solid bands and dark recessed mixed facade bands. Complete original registered envelope facets are extended around the model, including existing eastern low lobes. This is approximate material-family continuity, not a current 2026 four-side survey. No pure-glass claim, warm-light paint, new windows or invented roof grid. Terrace cut interiors, protected western parapet cores, horizontal ledges, artificial base and unsplit roof cap remain neutral. Original printability QA and short-root limitations preserved, not rerun.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-280,-125,130),(0,0,75),220),'rear':((280,125,135),(0,0,75),220),'elevation':((-320,0,75),(0,0,75),220),'source-angle':((-260,80,125),(0,0,75),220),'top':((0,0,350),(0,0,75),220)}
+views={'front':((-280,-125,130),(0,0,75),220),'rear':((280,125,135),(0,0,75),220),'elevation':((-320,0,75),(0,0,75),220),'source-angle':((-260,80,125),(0,0,75),220),'left':((0,-320,130),(0,0,75),220),'right':((0,320,130),(0,0,75),220),'top':((0,0,350),(0,0,75),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
+camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'camera_location':list(c.location),'camera_rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target),'engine':'CYCLES','device':'CPU','samples':96,'threads':1,'denoising':False,'resolution':[900,800]})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -146,4 +177,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'appearance/camera-render-records.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

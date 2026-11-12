@@ -1,0 +1,198 @@
+[
+  {
+    "view": "front",
+    "camera_location": [
+      -280.0,
+      -125.0,
+      130.0
+    ],
+    "camera_rotation_euler": [
+      1.3933172225952148,
+      -1.9945852614000614e-07,
+      -1.150916576385498
+    ],
+    "ortho_scale": 233.16075134277344,
+    "target": [
+      0,
+      0,
+      75
+    ],
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  {
+    "view": "rear",
+    "camera_location": [
+      280.0,
+      125.0,
+      135.0
+    ],
+    "camera_rotation_euler": [
+      1.3775651454925537,
+      -1.931220872108952e-08,
+      1.9906764030456543
+    ],
+    "ortho_scale": 235.8416748046875,
+    "target": [
+      0,
+      0,
+      75
+    ],
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  {
+    "view": "elevation",
+    "camera_location": [
+      -320.0,
+      0.0,
+      75.0
+    ],
+    "camera_rotation_euler": [
+      1.5707963705062866,
+      -0.0,
+      -1.5707963705062866
+    ],
+    "ortho_scale": 199.125,
+    "target": [
+      0,
+      0,
+      75
+    ],
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  {
+    "view": "source-angle",
+    "camera_location": [
+      -260.0,
+      80.0,
+      125.0
+    ],
+    "camera_rotation_euler": [
+      1.389021635055542,
+      2.1629739777040413e-08,
+      -1.8692952394485474
+    ],
+    "ortho_scale": 231.32333374023438,
+    "target": [
+      0,
+      0,
+      75
+    ],
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  {
+    "view": "left",
+    "camera_location": [
+      0.0,
+      -320.0,
+      130.0
+    ],
+    "camera_rotation_euler": [
+      1.4005845785140991,
+      -0.0,
+      0.0
+    ],
+    "ortho_scale": 226.9954833984375,
+    "target": [
+      0,
+      0,
+      75
+    ],
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  {
+    "view": "right",
+    "camera_location": [
+      0.0,
+      320.0,
+      130.0
+    ],
+    "camera_rotation_euler": [
+      1.40058434009552,
+      8.615941737843968e-08,
+      3.1415927410125732
+    ],
+    "ortho_scale": 226.99554443359375,
+    "target": [
+      0,
+      0,
+      75
+    ],
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  {
+    "view": "top",
+    "camera_location": [
+      0.0,
+      0.0,
+      350.0
+    ],
+    "camera_rotation_euler": [
+      0.0,
+      -0.0,
+      0.0
+    ],
+    "ortho_scale": 181.52120971679688,
+    "target": [
+      0,
+      0,
+      75
+    ],
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  }
+]
