@@ -1,37 +1,31 @@
 {
-  "slug": "ntue-historic-guardhouse-2024-segment",
-  "count_delta": 0,
-  "geometry_change": false,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "go": {
-    "file": "NTUE-HISTORIC-GUARDHOUSE-2024-SEGMENT-COLOR-SOURCE-GO-0224.json",
-    "sha256": "3fc1052d6865c269a5cb596985d5988a7596c893d7d712e16556a3cbf1fdadf7"
-  },
-  "review": {
-    "file": "INDEPENDENT-MAPPING-0223.json",
-    "sha256": "2d451a3884ed891fdcdfa25528d93fb5c27bb776c80044b2a5fefcf995167249"
-  },
-  "source_images": [
-    {
-      "file": "guardhouse-view.jpg",
-      "sha256": "512da6f1dae61fa7bef8a1b674bc5231c848bb2846818853528ea075f246c31b"
-    },
-    {
-      "file": "guardhouse-collage.jpg",
-      "sha256": "800b56f793dbb1aaf58fd55f85e5feecfb18d2d027dbe1cbf30bc9b3d14f3f5a"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Only two short outward clapboard front rectangles adjacent to main window lower sill at original z16..16.8",
+  "faces": [
+    368,
+    371,
+    374,
+    377
   ],
-  "limits": [
-    "Main continuous timber plane crossing weathered upper wood and lower green paint",
-    "All higher board faces, returns, back and side cutoff surfaces",
-    "Left window coarse original subdivisions cross upper gray pane/aged trim and lower red frame; no blanket red",
-    "Roof, moss/weathering, gable infill/brackets/attic vent and added sheet-metal hood",
-    "Large window backing with omitted fine iron bars",
-    "Masonry plinth/vent backs, ground/base and all remaining faces",
-    "Model remains explicitly a2024-visible-image-derived segment. Article publication year does not independently verify photographic shutter date; no2026 repaired/current-condition claim. Plan approval is not construction completion.",
-    "Only projecting timber gabled bay and setback left wing. Rear35model-mm cutoff is an intentional approximation, not measured depth; no hidden rear rooms, full site or underground foundations. No19-address boundary wall/red gate/added perimeter canopy, and not134-address active university gate security space."
+  "new_faces": 4,
+  "original_colored": 2,
+  "proposed_colored": 6,
+  "proposed_neutral": 1218,
+  "triangles": 1224,
+  "material": "original faded pale green index0; original palette names preserved",
+  "source": "2024 Julie public authored blog photograph blog-10.jpg, SHA800b56f793dbb1aaf58fd55f85e5feecfb18d2d027dbe1cbf30bc9b3d14f3f5a exactly matches historical guardhouse-collage.jpg. Re-examination, NOT new photograph nor official photograph.",
+  "evidence": "Main-window sill level and both adjacent short wall sections visibly remain pale green, well below the irregular upper green/wood boundary. Selection uses complete original independent outward board faces only, not main continuous wall or paint-height masking.",
+  "uncertainties": [
+    "Original exaggerated board spacing does not identify a surveyed single real plank; mapping is bounded to lower-sill zone.",
+    "Aged faded/weathered color varies; nominal family only, no exact paint calibration.",
+    "2024 publication date not independently verified capturedate; no2026 or post-restoration claim.",
+    "Higherboard exclusions remain except explicitly proposed two complete lower-sill pieces; no extending to wood/green boundary.",
+    "No wall plane,return,roof,windowframe,iron bars,base or rear cutoff coloring."
   ],
-  "rights": "Private references only; no public images/textures or commercial-rights inference.",
-  "source_private_backup": "Sources separately privately retained."
+  "new_source_screening": [
+    "Cultural identity page read; preservation description is not2024paint evidence.",
+    "Search found2016Commons and2020author photos; mismatched year not used to overwrite2024scheme.",
+    "Official restoration/design/financial reports show plans, not evidence of completed current appearance."
+  ],
+  "historical_source_register": "qa/lower-sill-board-previous/COLOR-SOURCE-REGISTER.json"
 }

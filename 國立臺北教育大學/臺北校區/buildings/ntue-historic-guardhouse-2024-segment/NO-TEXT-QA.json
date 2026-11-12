@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views in ntue-historic-guardhouse-2024-segment-all-views.jpg visually inspected; captions/backing absent, original mesh/materials/cameras preserved."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "43b46d5aae09e400d1a2ef28a8c3009472cc642ab409961faa863181eeea370d",
-    "east.png": "d9d49d8e3a635b061d5ad643d460039b8adae8724e11e3bc8befad54f1e8d8b3",
-    "entry-detail.png": "02fd51c7b8a17aa70d7ecbfdfa7c866440585af1d77682966d9f2b84f087b53d",
-    "facade-detail.png": "4829b496687f00c87ff18ac5e2a9e6138a4679f75380227e8c88afe16550b102",
-    "front.png": "0a1e260f277524ef03d8add722c0b8150563a1044b6ef459c082114aa0c14c0d",
-    "preview.png": "c4cad4d7711ec31eff6d47e77f800f38abb09a99335ba42338da3d9f7dd81e7d",
-    "rear.png": "9b9cee39ba8b593988646ec44b23f00c96a10a8ea203b39c012e61d6c2b7d500",
-    "roof-detail.png": "f9fa49c345eb92e42b9a2b5a40e7620eed208048b972af117461a1d2a6e31639",
-    "top.png": "6d016b36a931075857a7fdaa1cf8670d57f54ca9aa222a5c0e3ea47707d9c255",
-    "west.png": "f1b3ac6a91f2b88422cddb9a8f62cd176a505b64bf094bd6045dbd9e74f32324"
-  }
+    "preview.png": "76e3a0b168d7a16b85a71cbe7878cef031308964b1abccf3f40c48acfddb414e",
+    "rear.png": "ac825a4ab6ac0f51848ea3af92314e05ff3d172bfd71ccd1881a0c0763f6d49e",
+    "front.png": "102e9487df040fa9640430ffaea81f6b373522be05721fb66d405711aaa75fd7",
+    "back.png": "dd8f875d2444789b5b013f9c2ca57f31cfd1ae1b24dd9c7b617e4411e0c3f30f",
+    "west.png": "04cce6c711f3b7f8c19b172da0d0418ec65381f19966d29a80ccc2f76f62cb3c",
+    "east.png": "a14e21e75fc6438856bc00b5b6cfe8d5f0f342821507e9bc5221758a7116735a",
+    "top.png": "071e2c92056e09ac9a791ea99c11e85fa81d39e028f3ea6865ff48c3cf0bd66b",
+    "entry-detail.png": "45c00d31345d1d5e78f899fd227f21259f3d93ac5f4f3a5960a3432ba70d4c9b",
+    "facade-detail.png": "04ec278cb396d737a6f48ff2b0f37c1a030602b1d0b407a6486ad3b71d89f6f3",
+    "roof-detail.png": "f4d2f3244b358df39f6946c7a683704bc86da2d1233c5bd67d156d5daf322a72"
+  },
+  "mesh_sha256": "5f1d1dae0ecc6f3fd8f2d2aedf0fc96f29a132b4208129cb8816e2921f9a8f4a",
+  "independent_visual_review": "LOWER-SILL-BOARD-INDEPENDENT-QA.json",
+  "previous_qa": "qa/lower-sill-board-previous/NO-TEXT-QA.json"
 }

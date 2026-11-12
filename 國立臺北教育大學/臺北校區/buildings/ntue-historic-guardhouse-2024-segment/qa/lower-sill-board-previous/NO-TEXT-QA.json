@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views in ntue-historic-guardhouse-2024-segment-all-views.jpg visually inspected; captions/backing absent, original mesh/materials/cameras preserved."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "43b46d5aae09e400d1a2ef28a8c3009472cc642ab409961faa863181eeea370d",
+    "east.png": "d9d49d8e3a635b061d5ad643d460039b8adae8724e11e3bc8befad54f1e8d8b3",
+    "entry-detail.png": "02fd51c7b8a17aa70d7ecbfdfa7c866440585af1d77682966d9f2b84f087b53d",
+    "facade-detail.png": "4829b496687f00c87ff18ac5e2a9e6138a4679f75380227e8c88afe16550b102",
+    "front.png": "0a1e260f277524ef03d8add722c0b8150563a1044b6ef459c082114aa0c14c0d",
+    "preview.png": "c4cad4d7711ec31eff6d47e77f800f38abb09a99335ba42338da3d9f7dd81e7d",
+    "rear.png": "9b9cee39ba8b593988646ec44b23f00c96a10a8ea203b39c012e61d6c2b7d500",
+    "roof-detail.png": "f9fa49c345eb92e42b9a2b5a40e7620eed208048b972af117461a1d2a6e31639",
+    "top.png": "6d016b36a931075857a7fdaa1cf8670d57f54ca9aa222a5c0e3ea47707d9c255",
+    "west.png": "f1b3ac6a91f2b88422cddb9a8f62cd176a505b64bf094bd6045dbd9e74f32324"
+  }
+}

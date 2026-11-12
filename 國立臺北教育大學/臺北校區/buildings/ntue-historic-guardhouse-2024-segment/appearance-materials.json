@@ -4,19 +4,25 @@
       "id": 0,
       "name": "Observed lowest independent clapboard faded pale green",
       "hex": "#A7B8A2",
-      "faces": 2
+      "faces": 6
     },
     {
       "id": 1,
       "name": "UNVERIFIED main walls entrance windows roofs neutral",
       "hex": "#B8BAB5",
-      "faces": 1222
+      "faces": 1218
     }
   ],
   "domain_face_indices": {
     "lowest_front_board": [
       339,
       342
+    ],
+    "lower_sill_adjacent_board_fronts": [
+      368,
+      371,
+      374,
+      377
     ]
   },
   "coplanar_components": 288,
@@ -25,7 +31,7 @@
   "geometry_policy": "1224 original triangles unchanged",
   "limits": [
     "Main continuous timber plane crossing weathered upper wood and lower green paint",
-    "All higher board faces, returns, back and side cutoff surfaces",
+    "All higher board faces except the two lower-sill adjacent front pieces, plus all returns, back and side cutoff surfaces",
     "Left window coarse original subdivisions cross upper gray pane/aged trim and lower red frame; no blanket red",
     "Roof, moss/weathering, gable infill/brackets/attic vent and added sheet-metal hood",
     "Large window backing with omitted fine iron bars",

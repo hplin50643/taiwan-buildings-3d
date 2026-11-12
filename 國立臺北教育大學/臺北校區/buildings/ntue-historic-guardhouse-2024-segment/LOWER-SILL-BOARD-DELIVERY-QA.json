@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "Bounded lower sill board update, not full color or geometry certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 1224,
+  "original_color_faces": 2,
+  "new_color_faces": 4,
+  "colored_faces": 6,
+  "unknown_neutral_faces": 1218,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 0,
+  "current_mixed_connected_domains": 0,
+  "current_independent_review": "LOWER-SILL-BOARD-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only4original triangles/2whole domains of lowest short front boards beside main window sill y=-49,z16..16.8,x5.5..18and52..64.5 use original faded palegreen0. Same2024nonofficial travel-article photographs reexamined, not official or new capture. No higher boards,returns,mainwall,roof or other unknowns extended. Original1224triangles/2palette entries/all other indices unchanged; nominalfamily not calibrated paint.",
+    "Preserve2024article-visible segment and intentional rear35mm cutoff, not1926reconstruction or2026restored-current claim. Original immutable package has noOBJ, private build-generatedOBJ not claimed as original. Photos private; capture date not established. Original coarse board spacing and other geometric/source limits remain, no full color/printability certification or physical print."
+  ],
+  "checked_at": "2026-11-12T15:26:48.108683+00:00",
+  "original_STL_sha256": "6d40b0ae68f5739412626889d5b14d3b0df23ad6e32b15fbea243726c24feed9",
+  "color_mesh_sha256": "5f1d1dae0ecc6f3fd8f2d2aedf0fc96f29a132b4208129cb8816e2921f9a8f4a",
+  "images_sha256": {
+    "preview.png": "76e3a0b168d7a16b85a71cbe7878cef031308964b1abccf3f40c48acfddb414e",
+    "rear.png": "ac825a4ab6ac0f51848ea3af92314e05ff3d172bfd71ccd1881a0c0763f6d49e",
+    "front.png": "102e9487df040fa9640430ffaea81f6b373522be05721fb66d405711aaa75fd7",
+    "back.png": "dd8f875d2444789b5b013f9c2ca57f31cfd1ae1b24dd9c7b617e4411e0c3f30f",
+    "west.png": "04cce6c711f3b7f8c19b172da0d0418ec65381f19966d29a80ccc2f76f62cb3c",
+    "east.png": "a14e21e75fc6438856bc00b5b6cfe8d5f0f342821507e9bc5221758a7116735a",
+    "top.png": "071e2c92056e09ac9a791ea99c11e85fa81d39e028f3ea6865ff48c3cf0bd66b",
+    "entry-detail.png": "45c00d31345d1d5e78f899fd227f21259f3d93ac5f4f3a5960a3432ba70d4c9b",
+    "facade-detail.png": "04ec278cb396d737a6f48ff2b0f37c1a030602b1d0b407a6486ad3b71d89f6f3",
+    "roof-detail.png": "f4d2f3244b358df39f6946c7a683704bc86da2d1233c5bd67d156d5daf322a72"
+  }
+}
