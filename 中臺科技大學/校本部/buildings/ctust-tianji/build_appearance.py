@@ -22,6 +22,9 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 indices=[]
+original_indices=[]
+changed_faces=[]
+change_reasons={}
 def near(v,t,e=.035):return abs(v-t)<e
 import numpy as np
 S=150/88;BASE=2.;EPS=.012
@@ -171,11 +174,43 @@ for p in mesh.polygons:
     if boxface(-32.7,-29.65,yy-.02,yy+1.32,3.85,4.2+(k+1)*.60):i=2
  # Base and unverified court texture remain neutral; actual open voids never filled.
  if mx[2]<=.01:i=0
+ original_indices.append(i);reason=None
+ # Material continuity is evaluated against complete original source-component
+ # boundaries and the full triangle, never a centroid threshold.
+ if i==0:
+  for sign in [-1,1]:
+   a,b=sorted((sign*24.,sign*39.5))
+   if plane(0,-29.7) and nx<-.8 and bounded((-29.7,a,3.9),(-29.7,b,26.2)):
+    i=2;reason='inferred_grey_wing_west_end_wall'
+  # Top shelter piers belong to the same grey concrete slab/column family.
+  for y in np.arange(-27,28,6):
+   if i==0 and boxface(12.3,13.4,y-.55,y+.55,40.5,41.5) and nz<.8:
+    i=2;reason='inferred_grey_roof_shelter_pier'
+  # Actual corridor void boundaries: slab tops/soffits and end returns only.
+  # Dark recess backing remains its original shadow proxy, never glass.
+  for fi,z in enumerate(floors):
+   bays=[(y,y+5.5,z+.7,z+3.15) for y in [-25,-18,-11,7,14,21]] if fi==0 else [(-29.5,29.5,z+.9,min(z+3.12,39.75))]
+   for ya,yb,za,zb in bays:
+    if i==0 and bounded((9.9,ya,za),(13.3,yb,zb)) and ((plane(2,za) and nz>.8) or (plane(2,zb) and nz<-.8) or (plane(1,ya) and ny>.8) or (plane(1,yb) and ny<-.8)):
+     i=2;reason='inferred_grey_court_corridor_slab_return'
+  for sign in [-1,1]:
+   ya,yb=sorted((sign*23.9,sign*27.9))
+   for z in floors[:6]:
+    za,zb=z+.95,z+3.
+    if i==0 and bounded((-34,ya,za),(5.6,yb,zb)) and ((plane(2,za) and nz>.8) or (plane(2,zb) and nz<-.8) or (plane(0,5.6) and nx<-.8)):
+     i=2;reason='inferred_grey_wing_corridor_slab_return'
+   # Circular aperture in an already-grey wing roof slab: original 48-sided
+   # support planes capture any Boolean split edge vertices without missing
+   # triangles. This does not color the broad upward rooftop.
+   q=v[:,:2]-np.array([-31.,sign*26.1])
+   if i==0 and bounded((-32.11,sign*26.1-1.11,25.95),(-29.89,sign*26.1+1.11,26.8)) and abs(nz)<.001 and max(abs(q@n[:2]+1.1*math.cos(math.pi/48)))<.002:
+    i=2;reason='inferred_grey_roof_aperture_inner_edge'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; existing grey wall/slab/column family continued on supported component surfaces; unresolved mixed facade and broad roofs neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-component-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -205,9 +240,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original3materials were explicitlyneutral/displaycontrast, not photo-derived finishes. Newarchitect-photo broadfamilies only; undated photos and2004projectyear are not2026appearance. Longcorridor recesses shadow notglass, realarch/arcade/roofholes remainopen. Unverifiedendgrid grooves, broadrooftops and courttexture neutral. Thickoriginalstairs greyproxy notgreenmetalrail reconstruction; noletters/railinggeometry/brickjoints/landscape added. OriginalQA preserved, not rerun printcertification.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-component-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original3materials were explicitlyneutral/displaycontrast, not photo-derived finishes. Newarchitect-photo broadfamilies only; undated photos and2004projectyear are not2026appearance. Longcorridor recesses shadow notglass, realarch/arcade/roofholes remainopen. V2 extends the grey family to original west wing end walls, open corridor slab surfaces/returns, top shelter piers and roof aperture inner edges. Inference, not calibrated all-side proof. Unverified end grid, mixed window reveals, broad rooftops and court texture stay neutral. Thickoriginalstairs greyproxy notgreenmetalrail reconstruction; noletters/railinggeometry/brickjoints/landscape added. OriginalQA preserved, not rerun printcertification.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-235,-205,165),(-5,0,37.4),220),'rear':((235,205,160),(-5,0,37.4),220),'elevation':((-300,0,37.4),(-5,0,37.4),220),'source-angle':((-230,-140,110),(-5,0,37.4),220),'top':((0,0,350),(-5,0,0),220)}
+views={'front':((-235,-205,165),(-5,0,37.4),220),'rear':((235,205,160),(-5,0,37.4),220),'elevation':((-300,0,37.4),(-5,0,37.4),220),'source-angle':((-230,-140,110),(-5,0,37.4),220),'left':((-40,-300,120),(-5,0,37.4),220),'right':((-40,300,120),(-5,0,37.4),220),'top':((0,0,350),(-5,0,0),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

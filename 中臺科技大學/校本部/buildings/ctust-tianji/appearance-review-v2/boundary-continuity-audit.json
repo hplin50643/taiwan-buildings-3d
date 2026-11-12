@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "classification": "Full original construction domains, outward/inward surface normals, 7 samples per triangle (all vertices, all edge midpoints, centroid). Independent geometry-driven rerun. No new centroid-only selection or generated geometry.",
+  "tested_original_triangles": 23050,
+  "sampled_original_neutral_triangles": 11866,
+  "tested_samples": 83062,
+  "expected_original_neutral_faces": 1235,
+  "changed_faces": 1235,
+  "changed_reason_counts": {
+    "inferred_grey_court_corridor_slab_return": 720,
+    "inferred_grey_wing_west_end_wall": 67,
+    "inferred_grey_wing_corridor_slab_return": 176,
+    "inferred_grey_roof_aperture_inner_edge": 192,
+    "inferred_grey_roof_shelter_pier": 80
+  },
+  "missed_expected_neutral_faces": [],
+  "changed_outside_component_domains": [],
+  "all_original_colored_faces_unchanged": true,
+  "new_coplanar_boundary_neutral_neighbors": [],
+  "coplanar_neighbor_reason_counts": {},
+  "materials_json_sha256": "01134b99c9053be051371e01108e36ff3c138468ea967045a4d01a704683774f",
+  "limits": "Photographic family inference. Grey slabs not glass. Unresolved mixed end-grid and original cross-component Boolean interface remain neutral. Not print QA."
+}
