@@ -14,7 +14,7 @@ verts=[tuple(v.co) for v in mesh.vertices];faces=[tuple(p.vertices) for p in mes
 assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
-# Two adjacent source-visible clock-tower elevations only.
+# Original palette values preserved; complete exterior family continuity added below.
 palette=[('Unknown rear interior roof and base','#AAA79F',.86),('Visible outer wall warm grey cream','#C9C5B5',.86),('Visible column moulding metal appearance','#AEB3B1',.75),('Original front clock opaque dial','#C6C9C7',.8),('Original schematic hands','#59605E',.86)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.002;indices=[]
+EPS=.002;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def cyl_side(cx,cy,r,N,z0,z1):
@@ -55,12 +55,52 @@ for p in mesh.polygons:
  for x0,x1,z0,z1 in [(-.6,.6,132.4,136.8),(-.05,4.05,132.4,133.6)]:
   if bounds((x0,-29.65,z0),(x1,-28.55,z1)) and any((plane(k,a) and n[k]<-.8) or (plane(k,b) and n[k]>.8) for k,a,b in [(0,x0,x1),(1,-29.65,-28.55),(2,z0,z1)]):i=4
  if hi[2]<=5.8+EPS:i=0
+ original_indices.append(i);reason=None
+ # V2: full original support surfaces, never polygon-centroid height bands.
+ # Only previously neutral faces can change; original values and geometry stay.
+ if i==0 and hi[2]>5.8+EPS:
+  if bounds((-27,-27,5.8),(27,27,138)) and ((plane(0,27) and n[0]>.99) or (plane(1,27) and n[1]>.99)):
+   i=1;reason='inferred_warm_side_rear_outer_wall_planes'
+  if ((plane(1,29.5) and n[1]>.99 and bounds((-21,29.5,137),(21,29.5,143))) or (plane(0,29.5) and n[0]>.99 and bounds((29.5,-21,137),(29.5,21,143)))):
+   i=1;reason='inferred_warm_side_rear_original_gable_faces'
+  # Full corner pillars, cap collars, stems and orb finials follow the visible
+  # silver-gray family. Reflections are not recreated as gold-painted patches.
+  for cx in [-25,25]:
+   for cy in [-25,25]:
+    if i==0 and cyl_side(cx,cy,3.6,24,5.6,140.6):
+     i=2;reason='inferred_silver_complete_corner_column_sides'
+    for z in [54,62,87,130,140]:
+     if i==0 and cyl_side(cx,cy,5,40,z,z+2.2):
+      i=2;reason='inferred_silver_complete_corner_cap_sides'
+     if i==0 and (plane(2,z) or plane(2,z+2.2)) and max(np.linalg.norm(q[:,:2]-[cx,cy],axis=1))<=5+EPS:
+      i=2;reason='inferred_silver_same_cap_horizontal_surfaces'
+    if i==0 and cyl_side(cx,cy,2.4,24,140.6,145.1):
+     i=2;reason='inferred_silver_complete_finial_stems'
+    if i==0 and bounds((cx-4,cy-4,142.2),(cx+4,cy+4,150)):
+     i=2;reason='source_family_silver_original_orb_finials'
+  # Original continuous metal tier band: its complete outer support planes and
+  # horizontal ledge share one component. Inner shaft face remains unresolved.
+  for z in [53,62,86,91,129,137]:
+   if i==0 and bounds((-28.5,-28.5,z),(28.5,28.5,z+2.1)):
+    if any(plane(k,t) and n[k]*t>28 for k in [0,1] for t in [-28.5,28.5]):
+     i=2;reason='inferred_silver_tier_band_side_rear_outer_planes'
+    elif plane(2,z) or plane(2,z+2.1):
+     i=2;reason='inferred_silver_same_tier_band_horizontal_ledges'
+  # Existing clock cylinder edge is not another dial or a changed hand.
+  for radius,y0,y1,index,why in [(6.8,-28.8,-27,2,'inferred_silver_existing_clock_rim_edge'),(5.6,-29.3,-28.8,3,'inferred_gray_existing_clock_disc_edge')]:
+   if i==0 and bounds((-radius,y0,133-radius),(radius,y1,133+radius)) and abs(n[1])<.001:
+    v=q[:,[0,2]]-[0,133]
+    for k in range(64):
+     a=(k+.5)*2*math.pi/64;nn=np.array([math.cos(a),math.sin(a)]);tt=np.array([-nn[1],nn[0]])
+     if np.dot(nn,n[[0,2]])>.9999 and max(abs(v@nn-radius*math.cos(math.pi/64)))<EPS and max(abs(v@tt))<=radius*math.sin(math.pi/64)+EPS:
+      i=index;reason=why;break
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and colors preserved; complete exterior side/rear family continuity inferred; unresolved inner/roof/base surfaces neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -90,15 +130,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque clock dial only; true openings remain open, no glazing proxies','Original single warm display material. Only source-visible -Y and -X outer planes and outward sectors of three corner columns/caps receive approximate finish. Fourth rear corner, hidden circumference, sphere finials, roof, inner shaft/stair, base and back faces neutral. True arch and baluster openings stay open, no glazing or new geometry. Silver grey is not gold paint or certified alloy. Original schematic hands unchanged; laurel/inscriptions/antenna absent and not invented. EXIF2017-12-13 10:39:01 has no timezone/clock verification, not 2026 condition. Original printQA caveats retained','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque clock dial only; true openings remain open, no glazing proxies','Original palette and colored faces preserved. Exterior side/rear warm wall and gable planes, full silver corner columns/caps/stems/orbs, original tier-band ledges and outer sides, and clock perimeter extend the visible same-building family. This is declared inference, not a rear survey. Inner shaft/stair, opening returns, gable thickness/roof and artificial base remain neutral. True arch and baluster openings stay open; no added glazing, lettering, laurel, antenna or geometry. Original schematic hands unchanged. JPEG EXIF2017-12-13 10:39:01 lacks timezone/clock verification; page2023-04-28 is publication, not photo date or 2026 condition. Original printQA caveats retained','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-220,-270,190),(0,0,75),220),'rear':((220,270,190),(0,0,75),220),'elevation':((0,-300,75),(0,0,75),220),'source-angle':((-250,-220,100),(0,0,75),220),'top':((0,0,400),(0,0,75),220)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-220,-270,190),(0,0,75),220),'rear':((220,270,190),(0,0,75),220),'elevation':((0,-300,75),(0,0,75),220),'source-angle':((-250,-220,100),(0,0,75),220),'left':((-300,0,180),(0,0,75),220),'right':((300,0,180),(0,0,75),220),'top':((0,0,400),(0,0,75),220)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -107,4 +148,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

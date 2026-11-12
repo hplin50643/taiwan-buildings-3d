@@ -1,0 +1,25 @@
+{
+  "blend_semantics_equal": true,
+  "three_mf_byte_equal": true,
+  "materials_json_byte_equal": true,
+  "tested_vertices": 5074,
+  "tested_triangles": 10240,
+  "method": "Rebuilt in fresh directory from original scene.blend and updated build_appearance.py; exact point, connectivity, assignment, transform, material RGBA/roughness comparison.",
+  "verified_files": [
+    {
+      "path": "build_appearance.py",
+      "sha256": "b05f0ca09350ac1e86f463bf95a7e4bb821c5b5128759809a9f85966968b75a9",
+      "bytes": 13328
+    },
+    {
+      "path": "appearance.3mf",
+      "sha256": "31b136845e586fe99df73c004a1536f14dc0477227a57cefd5e2a15847dda9c3",
+      "bytes": 99200
+    },
+    {
+      "path": "appearance-materials.json",
+      "sha256": "33327ab98e99ab9709f68f9e718f569a9f7b9b5f2f0d6f42826b8a790fd3724e",
+      "bytes": 629842
+    }
+  ]
+}

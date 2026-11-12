@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ncyu-lantan-jiahe-gymnasium-historical-design-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "5d414fa576062b8309b8c759bf7f51d3c5a0dc3766755f7507933638b157e8ca",
+    "east.png": "57a8120066c4a6bd3927f58af6e2f1e61cf0b3f97ddd617001c62b15c5ad33eb",
+    "entry-detail.png": "d477580ec2077183efb88acc9bc9bc8da78fa3f6372dde0b6a3cb7b45db8ba10",
+    "front.png": "6ff771d96747bf82e691236746678bac608fe22a53d701bb2ed564af114470c9",
+    "preview.png": "313f564a597cd5f76a964800ab27bba3c0f9baa28c49a15269efa42f80f13eb1",
+    "rear-detail.png": "d9b494f936fc519a499d82323384cc5d4c504991d6431b1646cc40256141590c",
+    "rear.png": "e594c2631b354520f678370bd55f1ff194d77bd74cc240d7f54410c125a64815",
+    "roof-detail.png": "0bb470107e82b2fbb4959bec7a86a9182d68735ecc7d66ab5b3dd7456c33c514",
+    "top.png": "330a87513b73a541acfcca7b1cffea6d9574d5181d93f4b250f9e613c7029a2a",
+    "west.png": "aed06c1378a3954f1e485c51901378d5c731986934ca0f0e7c2212b7d0d5ed75"
+  }
+}

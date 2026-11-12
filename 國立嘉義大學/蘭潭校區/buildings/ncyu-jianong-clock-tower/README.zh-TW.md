@@ -12,9 +12,9 @@
 這是校園附屬地標構造物的外觀近似模型，不是教學館，不增加教學館完成棟數。依官方斜角實拍自建幾何；四方塔身由可見相鄰兩面推估，其餘面保留簡化。
 
 
-### 新增有限實照材料（原五張預覽保留）
+### 側背原面同族材料延伸（原五張預覽保留）
 
-官方斜角照僅支持帶鐘正面與相鄰左面：暖灰米板身、銀灰柱/線腳、灰白鐘面及原示意指針。其餘未證面保持中性，不加綠月桂、文字或玻璃。三可見角柱只分可見朝前/左扇區，背曲面與球飾維持中性；遠背角柱不依對稱臆染。
+保留全部原彩面及材質值，只補 7,084 個原中性三角面。依官方相鄰兩面照片，將暖灰米外板、銀灰角柱／線腳／球飾同族材料合理延伸至完整原側背構件；背面屬同棟延續推估，不冒稱新背照或現況測繪。1,216 個內梯、開口內部、屋頂／山牆厚度與底座等面保留中性。拱口／欄孔仍通透，無新窗、文字、月桂或裝飾，原鐘針不動。
 
 
 [新讀照片日期與材料限制](APPEARANCE.md)。本輪JPEG EXIF記錄2017-12-13 10:39:01（無時區），不以2023網頁發佈日當攝影日。原幾何、STL、scene、五張原圖與列印限制保留，沒有實體試印。
@@ -24,7 +24,7 @@
 - 照片可見內梯，縮尺為加厚實體階梯並接到底座／塔身；非完整室內階梯測繪。
 - 背面銘文未有清楚實拍，省略而不臆造；鐘盤與指針僅示意，不代表拍攝時間。頂面細節、背部与精確高度未知，屬外觀推估。
 - 細天線、文字與鐘機省略。角球／柱飾加粗以適合縮尺，但仍可能脆弱。
-- 秘書室與英文校景頁使用同幅鐘樓照片，不當作兩個独立角度；照片拍攝日期未提供。[來源與支持特徵](sources.json)。
+- 秘書室與英文校景頁使用同幅鐘樓照片，不當作兩個独立角度；原研究當時未提供拍攝日期；本版確認原JPEG的EXIF記錄2017-12-13，與頁面2023發佈日分開。[來源與支持特徵](sources.json)。
 - 原照片及PDF僅用於私人核對、不隨包散布；未擷取現成3D mesh。
 
 ## 尺寸與列印注意
@@ -46,3 +46,12 @@ Python3.12安裝requirements.txt後，依序執行build_model.py、Blender背景
 - [SHA256SUMS.txt](SHA256SUMS.txt)：逐檔SHA256。
 
 2026-10-13外觀覆核通過。獨立幾何與發佈檢查另見總清單。本件不代表學校或校區建築已全部完成。
+
+
+## 本版材料核對
+
+[新版左側](appearance/left.png) · [新版右側](appearance/right.png) · [原版同相機正斜視](appearance-review-v2/original-front.png) · [原版同相機背向](appearance-review-v2/original-rear.png)。
+
+[逐點逐面與材料](appearance-review-v2/model-verification.json) · [完整面域分類](appearance-review-v2/boundary-continuity-audit.json) · [來源判讀](appearance-review-v2/source-register.json) · [九張渲染審閱](appearance-review-v2/color-continuity-review.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。
+
+原appearance-review保留為前版歷史，現版由appearance-review-v2與appearance-freeze.json綁定。原幾何QA及未試印限制未變，校級校驗碼待授權發布時合併。

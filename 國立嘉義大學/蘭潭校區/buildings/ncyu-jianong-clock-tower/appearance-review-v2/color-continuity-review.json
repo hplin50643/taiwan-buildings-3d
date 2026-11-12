@@ -1,0 +1,126 @@
+{
+  "status": "reviewed",
+  "checked_at": "2026-11-11T21:12:00.183551+00:00",
+  "all_nine_images_personally_viewed": true,
+  "render_engine": "CYCLES",
+  "device": "CPU",
+  "samples": 96,
+  "seed": 0,
+  "denoising": false,
+  "threads": 1,
+  "resolution": [
+    900,
+    800
+  ],
+  "no_text_objects_or_render_stamp": true,
+  "no_png_text_metadata": true,
+  "no_added_geometry_or_window_patterns": true,
+  "same_camera_comparisons": [
+    {
+      "view": "original-front",
+      "camera_location": [
+        -220.0,
+        -270.0,
+        190.0
+      ],
+      "camera_rotation_euler": [
+        1.2518751621246338,
+        -6.175224598337081e-08,
+        -0.6837093830108643
+      ],
+      "ortho_scale": 239.4450225830078,
+      "target": [
+        0,
+        0,
+        75
+      ],
+      "same_camera_as": "front"
+    },
+    {
+      "view": "original-rear",
+      "camera_location": [
+        220.0,
+        270.0,
+        190.0
+      ],
+      "camera_rotation_euler": [
+        1.2518749237060547,
+        -6.95767141678516e-08,
+        2.457883358001709
+      ],
+      "ortho_scale": 239.44505310058594,
+      "target": [
+        0,
+        0,
+        75
+      ],
+      "same_camera_as": "rear"
+    }
+  ],
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 867460,
+      "sha256": "481bab248a0d77387a6c3a5452a100df99ee1e61a44e96bc34ecae8aa0032056",
+      "personally_viewed": true,
+      "review": "Warm front/left wall color and original schematic hands preserved. Corner cylinder sectors, caps, ledges and orbs now share silver-gray family without isolated neutral facet patches. True lower and upper openings remain open; interior stays neutral."
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 859781,
+      "sha256": "6002f3b115f12f7c7d98009dd4138a4e0aa2287e9029a91ae474f77c17f28b0d",
+      "personally_viewed": true,
+      "review": "Complete rear/right wall family is warm cream, without diagonal color boundaries. Corner details and tiers continue coherently; original inner stair mass, base and roof remain neutral. No rear inscriptions or new clock invented."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 802556,
+      "sha256": "26d2f2e6c9868bd04e3d75013e0ff16e9a9e5f11f38318a67eb32c2a45b5fd0e",
+      "personally_viewed": true,
+      "review": "Original front face, clock and two relief bars unchanged. Slots and arches remain genuine openings. Finials and complete existing tier metal edges share the same pale silver family, without writing or new glazing."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 863419,
+      "sha256": "a288a6cddfab75ded1dd59da4d9b716b4ac82703b0ff50434707467473f7da7c",
+      "personally_viewed": true,
+      "review": "Low oblique view preserves the original simplified pointed arch and inner stair geometry. Existing visible family extends around columns and caps. Source photo has finer framing, metallic reflections and details not recreated by this color-only revision."
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 828042,
+      "sha256": "78e96ae7f5061a12e25e87c993f2ad7423feb08a82dbd62578e6d10eb98d4757",
+      "personally_viewed": true,
+      "review": "Original source-side warm panels preserved. Column/cap/orb full forms and horizontal ledges now match their existing family. The stair silhouette and internal faces remain neutral and unmodified."
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 834007,
+      "sha256": "97398b391c6b4e99ba7b1d60e84bdffb27da78d47dd7e72d6a36040f54dda367",
+      "personally_viewed": true,
+      "review": "Opposite exterior wall is now the same warm family and full original corner components follow silver-gray. No copied new openings or diagonal patches. Inner stairs, slot depth and arch returns remain neutral."
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 905136,
+      "sha256": "5b63603b3b5c547bc6b131e24f4b15f33d4b5dd91f86a8465775e946c8c725fe",
+      "personally_viewed": true,
+      "review": "Four original orb finials and surrounding ledge family are coherent. Central roof slab and gable thickness remain distinct neutral surfaces. Footprint and original simplified gables unchanged."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 869062,
+      "sha256": "8f8ffcf3ea7e6663eea576e7654c715a00092f6fd6a35e4be2263954363e4141",
+      "personally_viewed": true,
+      "review": "Exact revised front camera/lighting/palette/settings with only original face indices restored. Comparison exposes the former neutral orbs, horizontal ledges and hidden corner sectors while the original front panels and clock remain identical."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 841620,
+      "sha256": "7af2d992e314d68a2f75905520a62a5d072697c890a1d55b6815551a04fc2b4b",
+      "personally_viewed": true,
+      "review": "Exact revised rear camera/lighting/palette/settings with only original indices restored. Original rear walls/corner sectors were mostly neutral; comparison shows color continuity improvement without geometric change."
+    }
+  ],
+  "limitations": "Original low-detail approximate geometry preserved. Same-building hidden-side/rear family continuation is inferred from the 2017 EXIF official oblique image, not a new full rear/current survey. Unknown inner/opening/roof/base faces remain neutral. No physical trial print."
+}
