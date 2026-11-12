@@ -1,0 +1,84 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T00:50:16.259852+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 844412,
+      "sha256": "547a789752df92448c9c3a73caf612a7401a277642b3ffc61ed643783e53e813",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 824367,
+      "sha256": "79e68c99361f7db4b9535fa4917ade086614666b7262f238d18fa9a1fc43f279",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 806698,
+      "sha256": "60a3c55a361769a426e08dbfdb3e0c14b3abd2bbccafb94529549e95f067dc8f",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 845030,
+      "sha256": "bda50f65319ec40c1854ef62b941ce8a55b06bea7aa61234a32426a63f649edd",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 797912,
+      "sha256": "f6772c90b7bdc2c2290fccd337db74f8de798ae383f47a252ca07774b738c879",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 788141,
+      "sha256": "3bc8c810ba7951419f42c29e7feff48d4535d45513702e809fd660bc16660801",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 915320,
+      "sha256": "d72a59c1d3a637fc1229461b44386cb0ada3ba5f6d577e15332ec2172b245b71",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 844889,
+      "sha256": "402612db3208c3448698d5ddcac2250895bc55379b884d23ccf2b8f5386ee04b",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 821261,
+      "sha256": "5737b853b8eed58cd0e3cef852e9a935c3d8523419316be537b474d0b6c9af35",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_photos": 1,
+  "findings": [
+    "Matched front comparison preserves the original stone face, red-brown roof and dark bell; ridge fins and complete component returns now continue the existing stone family.",
+    "Matched rear comparison shows previously neutral opposite upper exterior and opposite tiled slope now follow the same original material families. The artificial lower teaching-wing truncation remains neutral, with no copied window array.",
+    "Side and oblique views show original side openings remain open, their full reveals pale. New material boundaries follow original component geometry without arbitrary diagonal color stripes.",
+    "Front/elevation and oblique views retain the dark hanging bell, while the distinct carrying beam uses pale continuity. No glazing is added across the tall open gallery.",
+    "Top keeps only the two outer slopes red-brown; round eaves and exposed roof substrate remain neutral because material cannot be established confidently. Ridge fins retain original shapes and use stone continuity.",
+    "Low mixed volumes, low wing, stair, platform and base retain original materials. All seven final and two original views show no visible text, source-photo overlay or unintended clipping."
+  ],
+  "known_limits": [
+    "One historic photo supports observed material families; opposite and hidden upper component extents and the opposite tile slope are inferred, not directly observed.",
+    "The photo date is unknown; recorded2017article date is not a capture date or2026condition confirmation.",
+    "Round eaves show a distinct dark weathered surface of uncertain material, so were not assigned tile, bell-metal or plain-stone finish.",
+    "1193 neutral faces remain. Lower mixed brick/stone surfaces and artificial cut are not extrapolated into an invented rear facade.",
+    "Original estimated dimensions and support/fragile-part risks remain. Numerical QA rerun passed but is not physical printing, slicer-toolpath or full-wall-thickness verification."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "topology_check": "topology-check.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json",
+  "original_qa_rerun": "rerun-qa-summary.json"
+}

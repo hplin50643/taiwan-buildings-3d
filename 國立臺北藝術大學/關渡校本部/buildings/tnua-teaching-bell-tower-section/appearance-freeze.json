@@ -1,253 +1,167 @@
 {
-  "revision": "appearance-color-v1",
-  "head_basis": "b3e31116d163627c1ae1990b2ee19db400942817",
-  "repository_path": "國立臺北藝術大學/關渡校本部/buildings/tnua-teaching-bell-tower-section",
-  "scope": "Original partial bell-tower section geometry; only visible upper stone screens/portal and opposite interior, one roof slope and bell colored. Lower mixed walls, unseen opposite/exterior/roof, steps neutral; historical photo notcurrentcondition",
-  "original_files_unchanged": {
-    "validate_model.py": true,
-    "qa-summary.json": true,
-    "validation.json": true,
-    "model.stl": true,
-    "thin-feature-check.json": true,
-    "sources.json": true,
-    "check_contour_validity.py": true,
-    "scene.blend": true,
-    "run_all_checks.py": true,
-    "contour-validity-check.json": true,
-    "requirements.txt": true,
-    "layer-check.json": true,
-    "check_layers.py": true,
-    "check_thin_features.py": true,
-    "build_model.py": true,
-    "render_preview.py": true,
-    "previews/rear.png": true,
-    "previews/front.png": true,
-    "previews/top.png": true,
-    "previews/elevation.png": true
-  },
-  "checksum_manifest_policy": "SHA256SUMS regenerated to include new appearance files",
-  "representative_policy": "All original four previews preserved; homepage and school representative selection unchanged",
-  "geometry": {
-    "vertices": 1134,
-    "triangles": 2388,
-    "bounds_mm": [
-      112,
-      100,
-      150
-    ]
-  },
-  "review_results": "appearance-review/",
-  "clean_rebuild": "appearance-review/clean-rebuild-equality.json",
+  "revision": "color-v2-component-continuity",
+  "head_basis": "123e103381f4d7eb98627857d9b720b8e497ecaa",
+  "scope": "792 neutral full original upper-component triangles colored:493 stone,293 pale interior/reveal/carrier,6 opposite tiled slope.403 original colored faces and all material values unchanged;1193 neutral retained.",
+  "geometry_verified": "appearance-review-v2/model-verification.json",
+  "clean_rebuild": "appearance-review-v2/clean-rebuild-equality.json",
+  "original_qa_rerun": "appearance-review-v2/rerun-qa-summary.json",
+  "historical_reviews": "Original appearance-review retained as v1 history; this revision bound by appearance-review-v2 and this freeze.",
+  "source_photographs_packaged": false,
   "files": [
     {
       "path": "APPEARANCE.md",
-      "sha256": "411904b135dba33ed978fc0808f2a8c3b7fa31d7f442e4ea16600a37952b2bda",
-      "bytes": 3439
+      "sha256": "7fe712e6bebfa572aac4b5425f8fbeccfd4137410415839510ca59270f378e42",
+      "bytes": 4132
     },
     {
       "path": "README.md",
-      "sha256": "40c1514c560c6dd4cf620161a30e80a6a1bd7170109b9772cb4d55d754523aee",
-      "bytes": 6792
+      "sha256": "a685569daaa4ff75059f4bbe523e9851464d55b2d425c5aea2ab7bb83e2c2521",
+      "bytes": 7326
     },
     {
       "path": "README.zh-TW.md",
-      "sha256": "40c1514c560c6dd4cf620161a30e80a6a1bd7170109b9772cb4d55d754523aee",
-      "bytes": 6792
+      "sha256": "a685569daaa4ff75059f4bbe523e9851464d55b2d425c5aea2ab7bb83e2c2521",
+      "bytes": 7326
     },
     {
       "path": "appearance/elevation.png",
-      "sha256": "d39d1c251edaa57a575b6cb1453a7e2ee251cba7db70a214ff1a755f5d0b2a22",
-      "bytes": 847805
+      "sha256": "60a3c55a361769a426e08dbfdb3e0c14b3abd2bbccafb94529549e95f067dc8f",
+      "bytes": 806698
     },
     {
       "path": "appearance/front.png",
-      "sha256": "f2e7440113078521f5b618999d228b0db3ed8c0b12caa50be4724d3d998e6cd2",
-      "bytes": 886618
+      "sha256": "547a789752df92448c9c3a73caf612a7401a277642b3ffc61ed643783e53e813",
+      "bytes": 844412
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "f6772c90b7bdc2c2290fccd337db74f8de798ae383f47a252ca07774b738c879",
+      "bytes": 797912
     },
     {
       "path": "appearance/rear.png",
-      "sha256": "b86194c4f462aa74cf85ab071c12522b1972476319508dd1a76c6a6fe6db9d22",
-      "bytes": 858969
+      "sha256": "79e68c99361f7db4b9535fa4917ade086614666b7262f238d18fa9a1fc43f279",
+      "bytes": 824367
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "3bc8c810ba7951419f42c29e7feff48d4535d45513702e809fd660bc16660801",
+      "bytes": 788141
     },
     {
       "path": "appearance/source-angle.png",
-      "sha256": "0852d25ebfa26691facb5ad8c18153e531fd177a966f4e755843fc13379f849b",
-      "bytes": 888710
+      "sha256": "bda50f65319ec40c1854ef62b941ce8a55b06bea7aa61234a32426a63f649edd",
+      "bytes": 845030
     },
     {
       "path": "appearance/top.png",
-      "sha256": "027d5b3cfc7e41b0a4711b118ea6259e5e05d3995b712aab64aacfff2b50deae",
-      "bytes": 1005933
+      "sha256": "d72a59c1d3a637fc1229461b44386cb0ada3ba5f6d577e15332ec2172b245b71",
+      "bytes": 915320
     },
     {
       "path": "appearance-materials.json",
-      "sha256": "c01c7703f0548cef5fc4489b0fa6c1745097d71d0baef0ed45a583fc17e1d60f",
-      "bytes": 18722
+      "sha256": "d137db9d826f4fff13244941165f22be7fba5a5f70f815762594c77a9b294a79",
+      "bytes": 232825
     },
     {
-      "path": "appearance-review/clean-geometry-review.json",
-      "sha256": "47ee89ff9f6a561e3b8012c44902de7145bc8659507d65b0847eb84c03e5370d",
-      "bytes": 1048
+      "path": "appearance-review-v2/asset-privacy-review.json",
+      "sha256": "9385b6340b2af2e714b4e9d029072aa62ec4bf8e863c2f7126017e387e7a7545",
+      "bytes": 544
     },
     {
-      "path": "appearance-review/clean-material-region-check.json",
-      "sha256": "4d1e0aa74e18ab13ac4d818e2ecc676b0a4e0e29eb9931b9924971a9737d6392",
-      "bytes": 1070
+      "path": "appearance-review-v2/boundary-continuity-audit.json",
+      "sha256": "df026ef8d8d831810aabc233370f9009f5bb57b6424d63f7fc8092be885331ff",
+      "bytes": 11987
     },
     {
-      "path": "appearance-review/clean-rebuild-equality.json",
-      "sha256": "10bf863a14097575d8fe294a43110b25d3d4cb605b47a12c16e757a9cb44dcd3",
-      "bytes": 1340
+      "path": "appearance-review-v2/camera-consistency.json",
+      "sha256": "337f1fa4625e9a154ca0ce809636dab4a7f8d6773296b9676923e58423d6866b",
+      "bytes": 3442
     },
     {
-      "path": "appearance-review/color-visual-review.json",
-      "sha256": "e7e016cf20b69a30160ee7df39fe8780c93f06ac2889061187cb69f3f110f50f",
-      "bytes": 3259
+      "path": "appearance-review-v2/clean-rebuild-equality.json",
+      "sha256": "a24f5e28a2b03b4b21bc8544e04ed379bb8e763518f124cee4f6341aca1066c7",
+      "bytes": 345
     },
     {
-      "path": "appearance-review/final-review-binding.json",
-      "sha256": "22b284ddce3b5fcd91764a8a1a0afff7f5d5eaaf695c6d8f06df9b80f829833a",
-      "bytes": 1230
+      "path": "appearance-review-v2/color-continuity-review.json",
+      "sha256": "048824baad638e46a17a5794921f83f84d4f32f45db47fa3d8c6a0ac8b1c130b",
+      "bytes": 4285
     },
     {
-      "path": "appearance-review/geometry-visual-review.json",
-      "sha256": "45b8effc158637fa64ffe7a0fd307571e31901a8c51e03a8b28c1f175992ddc9",
-      "bytes": 4126
+      "path": "appearance-review-v2/material-value-verification.json",
+      "sha256": "30aaa6751db93929e3063456affaaffef38100ce134c3d87c648ec9cd383b711",
+      "bytes": 3167
     },
     {
-      "path": "appearance-review/material-region-check.json",
-      "sha256": "88745e3ef39fa51cc2f171466b1e36ff7c10d7d12d4519e0f490d69656ad3b90",
-      "bytes": 1070
+      "path": "appearance-review-v2/model-verification.json",
+      "sha256": "982c185f6f0597cbff243b9d0b9cef429da894745327f6b542f3a09e063e1813",
+      "bytes": 9283
     },
     {
-      "path": "appearance-review/output-geometry-review.json",
-      "sha256": "053333932b613f0c1a6b76ecb67fc88c6dcb67f43e4829170b89d7caa8c9fb59",
-      "bytes": 1048
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "402612db3208c3448698d5ddcac2250895bc55379b884d23ccf2b8f5386ee04b",
+      "bytes": 844889
     },
     {
-      "path": "appearance-review/png-privacy.json",
-      "sha256": "bedd42a89d964e1309157e215ac947e3d3328b05d1b525b4b1c351970521825e",
-      "bytes": 157
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "5737b853b8eed58cd0e3cef852e9a935c3d8523419316be537b474d0b6c9af35",
+      "bytes": 821261
     },
     {
-      "path": "appearance-review/preservation-and-readme.json",
-      "sha256": "ab64990ff73dba8aeb6218a11f1bb862c4edcd5ca412d1a0c6706a4bbc1d0b4f",
-      "bytes": 892
-    },
-    {
-      "path": "appearance.3mf",
-      "sha256": "baec5815c17cb35b5511731fdbd54158c44caeaaa9d527d3370f003ed0a5fc88",
-      "bytes": 24187
-    },
-    {
-      "path": "appearance.blend",
-      "sha256": "2782b64e8e33b43c97bec56099c1a936abe58c2d18441061f615cda790d783e3",
-      "bytes": 670300
-    },
-    {
-      "path": "build_appearance.py",
-      "sha256": "755ceb21fb87fe744802ff2cac37482362dd56cb6e39a3f42eaaaf03e81377db",
-      "bytes": 10168
-    },
-    {
-      "path": "build_model.py",
-      "sha256": "25cbf9f988443be22d7fbe1baa3c05d4bc9ded69b0b682e86037dec4c38b09bd",
-      "bytes": 4755
-    },
-    {
-      "path": "check_contour_validity.py",
-      "sha256": "18b6320883c371664e256d25f132589566d819d1d750cf2391add2bcee5ddc8a",
-      "bytes": 2119
-    },
-    {
-      "path": "check_layers.py",
-      "sha256": "73cfedd2adae5f4e52cafdd11c62454286f22b099c20616d43256a46314863c3",
-      "bytes": 3062
-    },
-    {
-      "path": "check_thin_features.py",
-      "sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915",
-      "bytes": 2591
-    },
-    {
-      "path": "contour-validity-check.json",
+      "path": "appearance-review-v2/rerun-contour-validity-check.json",
       "sha256": "40dd7c869c322cc81ce57994bd1633d8d08ce13f32fa138bf124eda1c3c708cd",
       "bytes": 52821
     },
     {
-      "path": "layer-check.json",
+      "path": "appearance-review-v2/rerun-layer-check.json",
       "sha256": "de4b18221faffa792410cfd33968415a34cff1f0e768233430230f00e2a9c3a5",
       "bytes": 116816
     },
     {
-      "path": "model.stl",
-      "sha256": "7bb2ffdde3160d458b5976877cf7f05e0dfea5e2e724481538965e09648f7995",
-      "bytes": 119484
-    },
-    {
-      "path": "previews/elevation.png",
-      "sha256": "4d3e9c062e8ef2b19e6c5cfd1288ee81664923ea6836446e579395bc64cec71c",
-      "bytes": 757363
-    },
-    {
-      "path": "previews/front.png",
-      "sha256": "566aa80c8172497b92cbb3e8d9251b12257e0ef014a30ce72beb97c56a19dc79",
-      "bytes": 838779
-    },
-    {
-      "path": "previews/rear.png",
-      "sha256": "fedbade6741dd7bfe69927a741d958ad7f393967dc551da6ed3d3d01a5a56c5f",
-      "bytes": 834231
-    },
-    {
-      "path": "previews/top.png",
-      "sha256": "81681f6650acbbe43333760aeff75e3454a2367be7660d57041aa9f533cd8f56",
-      "bytes": 769609
-    },
-    {
-      "path": "qa-summary.json",
+      "path": "appearance-review-v2/rerun-qa-summary.json",
       "sha256": "e5ae6f2a186251e2e8dd5e2d0699b237a1427be3854e1ceb67a4aee903feba2c",
       "bytes": 1272
     },
     {
-      "path": "render_preview.py",
-      "sha256": "2dde066b9adf48eac21a7b7cc3e82bdf5f515a55648dc15c7b0ecdfd5c0d5b30",
-      "bytes": 3247
-    },
-    {
-      "path": "requirements.txt",
-      "sha256": "df04896d2eca85c35c3cbc39502f30edcad2a6f436e63e4ffe6702748bf5658b",
-      "bytes": 61
-    },
-    {
-      "path": "run_all_checks.py",
-      "sha256": "73eb060fd3292e99a2c3d7074d088cf37fd85041300c61a639960ecdc3ebc681",
-      "bytes": 2525
-    },
-    {
-      "path": "scene.blend",
-      "sha256": "0c50ea9bee02bb460859528d0557d495949e9951dd55d3de86dabc962156025e",
-      "bytes": 567768
-    },
-    {
-      "path": "sources.json",
-      "sha256": "4ebad55b01eff4555765bc343333fe621590957898df9489ab5acccc26566d28",
-      "bytes": 5531
-    },
-    {
-      "path": "thin-feature-check.json",
+      "path": "appearance-review-v2/rerun-thin-feature-check.json",
       "sha256": "07ea62b6586b000bde35fb209a950728f7491fa22bffc3a5d74bc0146571fa7e",
       "bytes": 28678
     },
     {
-      "path": "validate_model.py",
-      "sha256": "6df8d4373b81432a8808f070d4422c2f9cd75fa4ba6848e18675482d7cea2e5d",
-      "bytes": 5322
-    },
-    {
-      "path": "validation.json",
+      "path": "appearance-review-v2/rerun-validation.json",
       "sha256": "5b9424b971eb92125c54f6447ebd6fcc0294b69199ae356ce08f5778577f3ac6",
       "bytes": 1516
+    },
+    {
+      "path": "appearance-review-v2/source-register.json",
+      "sha256": "dde1680233f508d86c1394270bc67b6006f2c5ce3b65a1597a2b74e4391dc206",
+      "bytes": 1994
+    },
+    {
+      "path": "appearance-review-v2/topology-check.json",
+      "sha256": "2a637209b22425187ca43b8ab45d383037b0bec046688273e44a77372280de5b",
+      "bytes": 507
+    },
+    {
+      "path": "appearance.3mf",
+      "sha256": "b5f16dc893f45185c755ad13f9573df2a73d43a2bee46eba6965f6addcdc91fb",
+      "bytes": 24339
+    },
+    {
+      "path": "appearance.blend",
+      "sha256": "98b59a15aa5fba612b7f1692b5b24cbb165a2fdc66e92a149ae0dca59a66d257",
+      "bytes": 670376
+    },
+    {
+      "path": "build_appearance.py",
+      "sha256": "8f53c3ca7dac66ae51241d75b3efb8fe4c09222754173778f1bd6adc1c820f13",
+      "bytes": 14319
+    },
+    {
+      "path": "render-cameras.json",
+      "sha256": "8a12129e9f0784aaf10d48579c20c2e7378e102cfeae88aadfd663b915898170",
+      "bytes": 1924
     }
   ]
 }

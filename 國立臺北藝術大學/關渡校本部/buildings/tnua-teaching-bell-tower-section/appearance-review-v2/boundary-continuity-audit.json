@@ -1,0 +1,598 @@
+{
+  "status": "passed",
+  "selection_method": "Independent full-vertex bounds and genuine original primitive boundary tests, plus inward opening-face normals. No centroid or arbitrary facade strip selection.",
+  "changed_neutral_faces": 792,
+  "retained_precolored_faces": 403,
+  "counts_by_component": {
+    "original_gallery_slab_complete_edges": 37,
+    "original_balustrade_complete_boundary": 173,
+    "original_balustrade_open_slot_reveals": 144,
+    "upper_screen_complete_inner_or_outer_boundary": 56,
+    "original_open_screen_reveals_pale_continuity": 48,
+    "original_portal_columns_complete_returns": 116,
+    "original_portal_beam_complete_returns": 74,
+    "original_gable_complete_boundaries": 64,
+    "opposite_original_roof_outer_slope_continuity": 6,
+    "original_stone_ridge_fin_complete_primitive": 40,
+    "original_bell_carrier_pale_continuity": 34
+  },
+  "representative_full_faces": {
+    "original_gallery_slab_complete_edges": [
+      {
+        "triangle": 125,
+        "vertices_mm": [
+          [
+            -3.0,
+            -27.0,
+            76.0
+          ],
+          [
+            1.5,
+            -27.0,
+            77.0
+          ],
+          [
+            -3.0,
+            -27.0,
+            77.0
+          ]
+        ],
+        "normal": [
+          0.0,
+          -1.0,
+          -0.0
+        ]
+      },
+      {
+        "triangle": 126,
+        "vertices_mm": [
+          [
+            -3.0,
+            -27.0,
+            76.0
+          ],
+          [
+            -3.0,
+            -24.100000381469727,
+            77.0
+          ],
+          [
+            -3.0,
+            14.100000381469727,
+            77.0
+          ]
+        ],
+        "normal": [
+          -1.0,
+          -0.0,
+          0.0
+        ]
+      }
+    ],
+    "original_balustrade_complete_boundary": [
+      {
+        "triangle": 799,
+        "vertices_mm": [
+          [
+            1.5,
+            -27.0,
+            85.0
+          ],
+          [
+            39.5,
+            -24.799999237060547,
+            85.0
+          ],
+          [
+            1.5,
+            -24.799999237060547,
+            85.0
+          ]
+        ],
+        "normal": [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "triangle": 806,
+        "vertices_mm": [
+          [
+            1.5,
+            -27.0,
+            85.0
+          ],
+          [
+            39.5,
+            -27.0,
+            85.0
+          ],
+          [
+            39.5,
+            -24.799999237060547,
+            85.0
+          ]
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "original_balustrade_open_slot_reveals": [
+      {
+        "triangle": 881,
+        "vertices_mm": [
+          [
+            1.9500000476837158,
+            -27.0,
+            79.19999694824219
+          ],
+          [
+            4.25,
+            -27.0,
+            79.19999694824219
+          ],
+          [
+            4.25,
+            -24.799999237060547,
+            79.19999694824219
+          ]
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "triangle": 882,
+        "vertices_mm": [
+          [
+            1.9500000476837158,
+            -27.0,
+            79.19999694824219
+          ],
+          [
+            4.25,
+            -24.799999237060547,
+            79.19999694824219
+          ],
+          [
+            1.9500000476837158,
+            -24.799999237060547,
+            79.19999694824219
+          ]
+        ],
+        "normal": [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "upper_screen_complete_inner_or_outer_boundary": [
+      {
+        "triangle": 1145,
+        "vertices_mm": [
+          [
+            -3.5,
+            -24.100000381469727,
+            78.0
+          ],
+          [
+            -3.0,
+            14.100000381469727,
+            78.0
+          ],
+          [
+            -3.0,
+            -24.100000381469727,
+            78.0
+          ]
+        ],
+        "normal": [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "triangle": 1152,
+        "vertices_mm": [
+          [
+            -3.5,
+            -24.100000381469727,
+            78.0
+          ],
+          [
+            -3.5,
+            14.100000381469727,
+            78.0
+          ],
+          [
+            -3.0,
+            14.100000381469727,
+            78.0
+          ]
+        ],
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ]
+      }
+    ],
+    "original_open_screen_reveals_pale_continuity": [
+      {
+        "triangle": 1194,
+        "vertices_mm": [
+          [
+            -3.5,
+            -22.600000381469727,
+            85.0
+          ],
+          [
+            1.2999999523162842,
+            -22.600000381469727,
+            103.0
+          ],
+          [
+            1.2999999523162842,
+            -22.600000381469727,
+            85.0
+          ]
+        ],
+        "normal": [
+          0.0,
+          1.0,
+          -0.0
+        ]
+      },
+      {
+        "triangle": 1195,
+        "vertices_mm": [
+          [
+            -3.5,
+            -22.600000381469727,
+            85.0
+          ],
+          [
+            1.2999999523162842,
+            -22.600000381469727,
+            85.0
+          ],
+          [
+            -3.5,
+            -15.399999618530273,
+            85.0
+          ]
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "original_portal_columns_complete_returns": [
+      {
+        "triangle": 1296,
+        "vertices_mm": [
+          [
+            -3.700000047683716,
+            -27.100000381469727,
+            77.0
+          ],
+          [
+            -3.700000047683716,
+            -24.100000381469727,
+            77.0
+          ],
+          [
+            -3.0,
+            -27.0,
+            77.0
+          ]
+        ],
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ]
+      },
+      {
+        "triangle": 1297,
+        "vertices_mm": [
+          [
+            -3.0,
+            -27.0,
+            77.0
+          ],
+          [
+            -3.700000047683716,
+            -24.100000381469727,
+            77.0
+          ],
+          [
+            -3.0,
+            -24.100000381469727,
+            77.0
+          ]
+        ],
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ]
+      }
+    ],
+    "original_portal_beam_complete_returns": [
+      {
+        "triangle": 1428,
+        "vertices_mm": [
+          [
+            -3.299999952316284,
+            -27.700000762939453,
+            133.0
+          ],
+          [
+            -3.299999952316284,
+            -27.100000381469727,
+            134.0
+          ],
+          [
+            -3.299999952316284,
+            -27.100000381469727,
+            133.0
+          ]
+        ],
+        "normal": [
+          -1.0,
+          -0.0,
+          0.0
+        ]
+      },
+      {
+        "triangle": 1429,
+        "vertices_mm": [
+          [
+            -3.299999952316284,
+            -27.700000762939453,
+            133.0
+          ],
+          [
+            -3.299999952316284,
+            -27.700000762939453,
+            134.0
+          ],
+          [
+            -3.299999952316284,
+            -27.100000381469727,
+            134.0
+          ]
+        ],
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ]
+      }
+    ],
+    "original_gable_complete_boundaries": [
+      {
+        "triangle": 1513,
+        "vertices_mm": [
+          [
+            -3.5,
+            -28.0,
+            134.0
+          ],
+          [
+            -3.5,
+            -27.100000381469727,
+            134.0
+          ],
+          [
+            -3.299999952316284,
+            -27.700000762939453,
+            134.0
+          ]
+        ],
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ]
+      },
+      {
+        "triangle": 1515,
+        "vertices_mm": [
+          [
+            -3.5,
+            -28.0,
+            134.0
+          ],
+          [
+            -3.299999952316284,
+            -27.700000762939453,
+            134.16696166992188
+          ],
+          [
+            -3.5,
+            -27.100000381469727,
+            134.50086975097656
+          ]
+        ],
+        "normal": [
+          -2.3762622731737792e-05,
+          -0.48628827929496765,
+          0.8737984895706177
+        ]
+      }
+    ],
+    "opposite_original_roof_outer_slope_continuity": [
+      {
+        "triangle": 1646,
+        "vertices_mm": [
+          [
+            -4.099999904632568,
+            0.35537189245224,
+            146.0
+          ],
+          [
+            2.9000000953674316,
+            0.35537189245224,
+            146.0
+          ],
+          [
+            -4.099999904632568,
+            21.51643180847168,
+            136.51670837402344
+          ]
+        ],
+        "normal": [
+          0.0,
+          0.40895891189575195,
+          0.9125527739524841
+        ]
+      },
+      {
+        "triangle": 1655,
+        "vertices_mm": [
+          [
+            2.9000000953674316,
+            -5.0,
+            148.39999389648438
+          ],
+          [
+            38.099998474121094,
+            -5.0,
+            148.39999389648438
+          ],
+          [
+            2.9000000953674316,
+            0.35537189245224,
+            146.0
+          ]
+        ],
+        "normal": [
+          0.0,
+          0.40895798802375793,
+          0.9125532507896423
+        ]
+      }
+    ],
+    "original_stone_ridge_fin_complete_primitive": [
+      {
+        "triangle": 1682,
+        "vertices_mm": [
+          [
+            -5.099999904632568,
+            -11.0,
+            146.0
+          ],
+          [
+            -4.099999904632568,
+            -5.0,
+            146.0
+          ],
+          [
+            -4.099999904632568,
+            -10.355371475219727,
+            146.0
+          ]
+        ],
+        "normal": [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "triangle": 1683,
+        "vertices_mm": [
+          [
+            -5.099999904632568,
+            -11.0,
+            146.0
+          ],
+          [
+            -5.099999904632568,
+            -11.0,
+            150.0
+          ],
+          [
+            -5.099999904632568,
+            1.0,
+            146.0
+          ]
+        ],
+        "normal": [
+          -1.0,
+          -0.0,
+          -0.0
+        ]
+      }
+    ],
+    "original_bell_carrier_pale_continuity": [
+      {
+        "triangle": 1938,
+        "vertices_mm": [
+          [
+            1.2999999523162842,
+            -6.300000190734863,
+            118.5
+          ],
+          [
+            1.2999999523162842,
+            -3.700000047683716,
+            118.5
+          ],
+          [
+            20.5,
+            -6.199999809265137,
+            118.5
+          ]
+        ],
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ]
+      },
+      {
+        "triangle": 1939,
+        "vertices_mm": [
+          [
+            1.2999999523162842,
+            -3.700000047683716,
+            118.5
+          ],
+          [
+            19.460769653320312,
+            -5.599999904632568,
+            118.5
+          ],
+          [
+            19.651472091674805,
+            -5.848527908325195,
+            118.5
+          ]
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      }
+    ]
+  },
+  "all_geometry_below_gallery_retained": true,
+  "artificial_cut_is_not_a_real_back_facade": true,
+  "no_glazing_or_new_windows": true,
+  "excluded_eaves_reason": "Rounded eaves visibly read as a distinct dark weathered surface. Its material and finish are uncertain, so not equated to red tile, bell metal or plain stone.",
+  "continuity_limits": "The photo supports component families, not full hidden extents or calibrated color. Existing material values and every already-colored triangle are preserved."
+}

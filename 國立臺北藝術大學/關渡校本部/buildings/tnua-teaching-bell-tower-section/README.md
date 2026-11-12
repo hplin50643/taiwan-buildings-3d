@@ -10,9 +10,9 @@
 
 
 
-### 上部構件有據彩色預覽
+### 上部同構件延續補色 v2
 
-僅依本輪實讀斜面照片，已見上塔灰石、內壁淡灰、單側可見屋坡紅褐、既有鐘暗色；下量體、低翼、背截斷與未見屋坡中性。這是局部段的有限材料增補，不是全教學大樓或2026現況復原。
+依重新查看的DSCF2656斜面照片與同構件延續原則，補齊792個原中性面：上塔石色外側與轉折、淡灰內側／原孔側壁、屋脊凸片、承鐘橫梁及對側原瓦坡。未見面屬推估；圓簷條、下部混合磚石、低翼、階梯、基座及人工截斷面仍中性。原403個已上色面保持不變，不是全教學大樓或2026現況復原。
 
 | 新正斜視 | 新來源角度 | 新立面 |
 | :---: | :---: | :---: |
@@ -20,7 +20,11 @@
 | 新背向 | 新上視 | 新外觀下載 |
 | ![彩色背向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
 
-[本輪來源、原面界與限制](APPEARANCE.md)。四張舊模型圖保留原檔，但不再於README展示。原形狀／STL／scene及原列印警告不變。
+| 新左側 | 新右側 | 同相機原圖 |
+| :---: | :---: | :---: |
+| ![左側](appearance/left.png) | ![右側](appearance/right.png) | [原正斜視](appearance-review-v2/original-front.png) · [原背向](appearance-review-v2/original-rear.png) |
+
+[本輪來源、原面界與限制](APPEARANCE.md) · [v2審核](appearance-review-v2/color-continuity-review.json)。四張舊模型圖保留原檔，但不再於README展示。原形狀／STL／scene及原列印警告不變。
 
 ## 下載與尺寸
 
@@ -51,11 +55,11 @@ Python3.12依 requirements.txt 安裝版本後執行 build_model.py；再用Blen
 - [0.2mm逐層閉合](layer-check.json)：750層，自z=0.071mm起
 - [個別與合成Polygon有效性](contour-validity-check.json)
 - [canonical fail-closed v3 薄特徵篩檢](thin-feature-check.json)：0.8mm參考寬度、150切層，最大面積損失0.5711%
-- [綜合QA](qa-summary.json)：所有硬檢查皆true。形態opening只是輔助篩檢，不是完整壁厚檢測。
+- [原綜合QA](qa-summary.json) · [v2獨立重跑原QA](appearance-review-v2/rerun-qa-summary.json)：所有硬檢查皆true。形態opening只是輔助篩檢，不是完整壁厚檢測。
 
 ## 原建模證據與年代
 
-以下是原建模來源記錄，不表示本次補色全部重新讀取。本輪只實讀DSCF2656斜面照片；兩個Commons來源本輪HTTP403停止，沒有繞過，未重新核實其EXIF日期。
+以下是原建模來源記錄，不表示本次補色全部重新讀取。v2只重新查看DSCF2656斜面照片；兩個Commons來源曾有HTTP403，v2未重試、未繞過，未重新核實其EXIF日期。
 
 - [北藝大115學年度舞蹈學系七年一貫制招生簡章，附件校圖（PDF第27頁／印刷頁25）](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)：北藝大製作、芳苑國中公開轉載的正式招生文件。已查看圖像：館舍相對位置、鐘樓／教學大樓、研究大樓與文資書苑標籤。 插畫非測繪平面；最新取得的學年度資料，不等同確認2026全校外觀未變。
 - [112年氣候友善校園計畫配置圖（PDF第24頁）](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)：官方早期配置圖，核位置和別名。 插畫非測量平面。

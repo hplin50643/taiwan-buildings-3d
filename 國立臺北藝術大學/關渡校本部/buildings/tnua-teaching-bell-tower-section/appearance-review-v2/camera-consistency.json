@@ -1,0 +1,192 @@
+{
+  "status": "passed",
+  "both_original_comparisons_match_repaired_cameras_exactly": true,
+  "original_comparison_cameras": [
+    {
+      "view": "front",
+      "location": [
+        -230.0,
+        -290.0,
+        175.0
+      ],
+      "rotation_euler": [
+        1.3094444274902344,
+        1.6538638902829916e-08,
+        -0.6705217361450195
+      ],
+      "ortho_scale": 243.10975646972656,
+      "target": [
+        0,
+        0,
+        76
+      ]
+    },
+    {
+      "view": "rear",
+      "location": [
+        230.0,
+        290.0,
+        175.0
+      ],
+      "rotation_euler": [
+        1.3094443082809448,
+        8.193037359660593e-08,
+        2.471071243286133
+      ],
+      "ortho_scale": 243.10975646972656,
+      "target": [
+        0,
+        0,
+        76
+      ]
+    }
+  ],
+  "all_final_cameras": [
+    {
+      "view": "front",
+      "location": [
+        -230.0,
+        -290.0,
+        175.0
+      ],
+      "rotation_euler": [
+        1.3094444274902344,
+        1.6538638902829916e-08,
+        -0.6705217361450195
+      ],
+      "ortho_scale": 243.10975646972656,
+      "target": [
+        0,
+        0,
+        76
+      ]
+    },
+    {
+      "view": "rear",
+      "location": [
+        230.0,
+        290.0,
+        175.0
+      ],
+      "rotation_euler": [
+        1.3094443082809448,
+        8.193037359660593e-08,
+        2.471071243286133
+      ],
+      "ortho_scale": 243.10975646972656,
+      "target": [
+        0,
+        0,
+        76
+      ]
+    },
+    {
+      "view": "elevation",
+      "location": [
+        0.0,
+        -350.0,
+        76.0
+      ],
+      "rotation_euler": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 199.12503051757812,
+      "target": [
+        0,
+        0,
+        76
+      ]
+    },
+    {
+      "view": "source-angle",
+      "location": [
+        -250.0,
+        -210.0,
+        145.0
+      ],
+      "rotation_euler": [
+        1.3625264167785645,
+        -6.863389501177153e-08,
+        -0.8721365332603455
+      ],
+      "ortho_scale": 236.0159454345703,
+      "target": [
+        0,
+        0,
+        76
+      ]
+    },
+    {
+      "view": "left",
+      "location": [
+        -350.0,
+        0.0,
+        145.0
+      ],
+      "rotation_euler": [
+        1.3761495351791382,
+        -0.0,
+        -1.570796251296997
+      ],
+      "ortho_scale": 224.12242126464844,
+      "target": [
+        0,
+        0,
+        76
+      ]
+    },
+    {
+      "view": "right",
+      "location": [
+        350.0,
+        0.0,
+        145.0
+      ],
+      "rotation_euler": [
+        1.3761495351791382,
+        -0.0,
+        1.570796251296997
+      ],
+      "ortho_scale": 224.12242126464844,
+      "target": [
+        0,
+        0,
+        76
+      ]
+    },
+    {
+      "view": "top",
+      "location": [
+        0.0,
+        0.0,
+        410.0
+      ],
+      "rotation_euler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 132.75,
+      "target": [
+        0,
+        0,
+        76
+      ]
+    }
+  ],
+  "original_and_repaired_lighting_view_settings_match": true,
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "denoising": false,
+    "threads": 1,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "source": "Actual camera locations, Euler rotations and ortho scales captured during the corresponding render loops; source scene lighting and color-management states compared exactly."
+}

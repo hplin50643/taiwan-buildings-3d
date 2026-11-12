@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.003;indices=[]
+EPS=.003;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def side(x,z,h):return plane(0,x) and n[0]<-.999 and bounds((x,-27,z),(x,17,z+h))
@@ -55,12 +55,62 @@ for p in mesh.polygons:
  # Only outer-upward original front slope, not edge/underside/opposite slope.
  if bounds((-4.1,-32,136.3),(45.1,-5,148.4)) and max(abs(q[:,2]-(136.3+(q[:,1]+32)*(12.1/27))))<EPS and n[2]>.8 and n[1]<-.3:i=3
  if cylinder_surface(20.5,-5,105,14,1.2,1.2,24) or cylinder_surface(20.5,-5,99,6.4,3.6,2.0,32) or boxsurface(20.5,-5,98.5,7.4,6.7,1.3):i=4
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# V2: qualified same-component continuity. Every selected triangle must lie
+# wholly on a genuine original component boundary; never centroid selection.
+# The plain +Y lower cut is an artificial truncation, not a real rear facade.
+def gable_prism(x):
+ if not bounds((x-2.4,-28,134),(x+2.4,18,146.8)):return False
+ yz=q[:,[1,2]]
+ inside=np.all(yz[:,1]>=134-EPS) and np.all(yz[:,1]<=146.8-(12.8/23)*abs(yz[:,0]+5)+EPS)
+ if not inside:return False
+ return any(plane(0,t) and n[0]*sg>.999 for t,sg in [(x-2.4,-1),(x+2.4,1)]) or (plane(2,134) and n[2]<-.999) or any(max(abs(q[:,2]-(146.8+sg*(12.8/23)*(q[:,1]+5))))<EPS for sg in [-1,1])
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0);i=0;reason=None
+ # Main solid upper screen, including its complete wall-thickness boundaries.
+ for x in [-1.1,42.1]:
+  if boxsurface(x,-5,78,4.8,44,57.5):
+   inside=plane(0,x+(2.4 if x<0 else -2.4))
+   i=2 if inside else 1;reason='upper_screen_complete_inner_or_outer_boundary'
+  for y in [-19,-5,9]:
+   if bounds((x-2.4,y-3.6,85),(x+2.4,y+3.6,103)) and (any(plane(1,t) for t in [y-3.6,y+3.6]) or any(plane(2,t) for t in [85,103])):
+    i=2;reason='original_open_screen_reveals_pale_continuity'
+  if gable_prism(x):
+   inside=plane(0,x+(2.4 if x<0 else -2.4))
+   i=2 if inside else 1;reason='original_gable_complete_boundaries'
+  if boxsurface(x,-5,146,8,12,4):
+   i=1;reason='original_stone_ridge_fin_complete_primitive'
+  for y in [-25.6,15.6]:
+   if boxsurface(x,y,77,5.2,3,59.2):
+    inside=plane(0,x+(2.6 if x<0 else -2.6))
+    i=2 if inside else 1;reason='original_portal_columns_complete_returns'
+ for y in [-25.6,15.6]:
+  if boxsurface(20.5,y,133,47.6,4.2,5):i=1;reason='original_portal_beam_complete_returns'
+ for y in [-25.9,15.9]:
+  if boxsurface(20.5,y,78,47,2.2,7):i=1;reason='original_balustrade_complete_boundary'
+  for x in [3.1,7.45,11.8,16.15,20.5,24.85,29.2,33.55,37.9]:
+   if bounds((x-1.15,y-1.1,79.2),(x+1.15,y+1.1,83.7)) and (any(plane(0,t) for t in [x-1.15,x+1.15]) or any(plane(2,t) for t in [79.2,83.7])):
+    i=2;reason='original_balustrade_open_slot_reveals'
+ if boxsurface(20.5,-5,76,47,44,2.2):i=1;reason='original_gallery_slab_complete_edges'
+ # The carrying beam is pale in the observed open gallery; hidden faces infer
+ # the same component finish without interpreting shadow as new dark material.
+ if boxsurface(20.5,-5,118.5,42.8,2.6,2.6):i=2;reason='original_bell_carrier_pale_continuity'
+ # Same two-slope roof: only outer sloping tile surface, not concrete substrate.
+ if bounds((-4.1,-5,136.3),(45.1,22,148.4)) and max(abs(q[:,2]-(148.4-(q[:,1]+5)*(12.1/27))))<EPS and n[2]>.8 and n[1]>.3:
+  i=3;reason='opposite_original_roof_outer_slope_continuity'
+ # Rounded eaves are distinct dark weathered/unclear surfaces in the photo.
+ # Do not equate them to tile, bell metal, or the calibrated outer stone family.
+ # All low mixed brick/stone volumes, low wing, stairs, base and artificial cut
+ # retain their original neutral material; no hidden facade or window invented.
+ if reason:
+  p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'basis':'All vertices lie on the original whole component surface. Opposite and hidden extents infer continuity; not individually photograph-confirmed.'}
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and material values retained; full original upper-component boundaries extended by qualified continuity; unresolved eaves and lower mixed volumes neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-component-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -75,6 +125,7 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -90,15 +141,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original partial bell-tower section geometry retained, not full teachingbuilding or drumtower','Actual original-listed2017 blog image personally read. Articleyear is not verified capturedate/currentcondition. Opposite view from original preview mapped to-X/-Y via actual originalscene/build and singlephoto. Visible-X original upper screen/gable outer and-Y portalcolumn/beam/balustrade front planes stone; visible+Xscreen interior facing-X pale. Only original-Y roofslab outerupward plane redbrown, no newtilepattern. Original rod/bellcone/flange dark family including smallcomponent unseenrear extrapolation; no alloy/acoustic/currentinstallation claim. Lowergraybrick mixed/tree-obscured box, lowcurvedwing, stairs/base, opposite roof andunseen+Xexterior/rear neutral. Reveals remain neutral conservatively. No added geometry, lettering or texture. Original support/printQA warnings unchanged','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-component-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original partial bell-tower section geometry retained, not full teachingbuilding or drumtower','Original-listed DSCF2656 blog photograph freshly viewed. Upper tower stone outside, pale interior and openings, ridge fins, portal and balustrade returns, carrier and opposite tiled roof slope extend the existing component material families by qualified continuity. Every triangle uses all vertices on genuine primitive boundaries. Original already colored faces and all material RGBA/roughness unchanged. Actual photo capture date unknown; article publication date2017 does not prove2026condition. Rounded eaves have a distinct dark weathered appearance of uncertain material and stay neutral, not automatically treated as tile or bell metal. Lower mixed brick/stone volume, low wing, stair, artificial base and artificial teaching-wing truncation remain neutral. The cut is not a real rear facade. No new windows, glass, lettering, tile seams or geometry. Original print limitations remain','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-230,-290,175),(0,0,76),205),'rear':((230,290,175),(0,0,76),205),'elevation':((0,-350,76),(0,0,76),205),'source-angle':((-250,-210,145),(0,0,76),205),'top':((0,0,410),(0,0,76),205)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-230,-290,175),(0,0,76),205),'rear':((230,290,175),(0,0,76),205),'elevation':((0,-350,76),(0,0,76),205),'source-angle':((-250,-210,145),(0,0,76),205),'left':((-350,0,145),(0,0,76),205),'right':((350,0,145),(0,0,76),205),'top':((0,0,410),(0,0,76),205)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -107,4 +159,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

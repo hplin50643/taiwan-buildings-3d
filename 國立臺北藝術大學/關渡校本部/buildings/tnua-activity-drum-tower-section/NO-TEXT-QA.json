@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in tnua-activity-drum-tower-section-all-views.jpg; captions/backing absent; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "a026718e70c5e38ec03fd62b6230f056fb8c9a765b8a6faff76ce673a709ffc8",
+    "east.png": "62e2c626cb27104eae673bba66589a25ff78a47c6a5f7bada1ec2f0f631677ce",
+    "entry-detail.png": "343b453494127b6bd459f491e31d73613de4597c1ec2d25086dc58c28ef3e54a",
+    "facade-detail.png": "c8664fcdebdba5d751df76e30da54b118efc6c0537e98a6d6a00ce37f4e6c5a8",
+    "front.png": "bae48366cbfb3759f6fb7d6ba5308e07c857c1aa8fd181acbe7cad9159f0f06e",
+    "preview.png": "3972e9a9f2de7fbee25dbb9e11d925184432f5b13455bf45d4ec452641e0a402",
+    "rear.png": "e1fbade6a08d25faa8c538f672edc09fdaa10342025aeb8c030a1b57bcce2cfe",
+    "roof-detail.png": "73dacea6283790c3f91d05d9cb441855505203458103103ed6f50f3b272b23a0",
+    "top.png": "e228554f345ff127511b7b25135e801da03c5ee2ca3f4750006f84c20832531a",
+    "west.png": "38eed69415a4dbc8cb1b799eb17a9882a826f6126f65c3dfc19d46726e554ead"
+  }
+}
