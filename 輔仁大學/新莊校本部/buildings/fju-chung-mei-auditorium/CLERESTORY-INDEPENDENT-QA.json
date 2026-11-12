@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T11:07:40.340755+00:00",
+  "scope": "FJU Chungmei finite front upper clerestory outward skin material-only addition",
+  "blockers": [],
+  "counts": {
+    "triangles": 20662,
+    "original_colored_preserved": 3516,
+    "new_colored": 492,
+    "total_colored": 4008,
+    "neutral": 16654,
+    "whole_selected_coplanar_domains": 174
+  },
+  "numeric_review": {
+    "status": "PASS",
+    "checks": {
+      "geometry_vertices": true,
+      "geometry_faces": true,
+      "492_exact_changed": true,
+      "old_indices_preserved": true,
+      "new4": true,
+      "counts": true,
+      "palette_preserved": true,
+      "palette_new": true,
+      "174_whole_domains": true,
+      "no_mixed": true,
+      "model.stl_unchanged": true,
+      "build_model.py_unchanged": true,
+      "3MF_vertices": true,
+      "3MF_faces": true,
+      "3MF_materials": true,
+      "3MF_palette_count": true
+    }
+  },
+  "scene_review": {
+    "status": "PASS",
+    "checks": {
+      "camera": true,
+      "lights": true,
+      "render": true,
+      "mesh_objects": true,
+      "vertices_match": true,
+      "faces_match": true,
+      "materials_exact": true,
+      "mesh_sha": true,
+      "text_hidden": true,
+      "notice_hidden": true,
+      "no_stamp": true,
+      "five_material_slots": true,
+      "palette_0": true,
+      "palette_1": true,
+      "palette_2": true,
+      "palette_3": true,
+      "palette_4": true
+    },
+    "scene_sha256": "0bc8abaad0e70d978522da8cd3967b3115f6f55b610293d83947e93c0bec9a10"
+  },
+  "source_review": "second-source-domain-review.json",
+  "image_sha256": {
+    "preview.png": "6e6062e42e7ce441519960637066f7c957bff9987f803b03cdd11f2cd61d1bb1",
+    "rear.png": "643725991bfb98f32997db4cba2a37bfa1691229a3ef2d46df68f1d286fcfa70",
+    "front.png": "af36a38795f21d5316f75cb8ff31257870bd1937c316863d8b978761eb8d3b54",
+    "back.png": "6d475ef8f71ccce71fbaaa8ef61f4e3f9490381398b93fe9f970b303877dc3f2",
+    "west.png": "30e6d4a1d3484ba7b72b9349fdeeb37d6f9484460df1b2b29a04e85902a977cc",
+    "east.png": "fc2445c734cb94f36dfc32c5b250a8da3b5f4b8c6ba07df9f8764a00134246f6",
+    "top.png": "ed6802fd3fae7241e54136b332858f8beeaded5e382a5cd8d495f087042f422d",
+    "entry-detail.png": "f5639dce060e5593b7872aae754de41d0a0117533af47044640fe65b206a18cf",
+    "facade-detail.png": "f9cf32178435482be2795bf690fdf5c09bec945002f53510a3774cee777ad96f",
+    "roof-detail.png": "942d93e188a77d121d29dd39466f5ecf0c05792039df331c531767c2f32e1fd8"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "36827120b30c168336b3f38389fc6f52583e876fba2f0e6f9ac4d50ef254f274",
+    "appearance.3mf": "f5f465de5b5f2042468c84adcdea16d69363a0cc6e03b5fe69f03b70aad9233a",
+    "scene.blend": "0bc8abaad0e70d978522da8cd3967b3115f6f55b610293d83947e93c0bec9a10",
+    "palette.json": "3413684f4bac7ad2a9da3354272e09b391319ce83918a7d0fc2cc6dc1b72ab61",
+    "colorize_model.py": "c65fa35157409e6cdd92df7e6109c3591b221bf0bdedf22d8824e04f363ea3df",
+    "CLERESTORY-SOURCE-QA.json": "10efd8d26dd868cafcb07d67726a800c265d72459a8f749bcf84981c0d35096d",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "20de94c12da558b1de49f7504a5e2c67f41f666e4ffbbe6d953317d203a6aa78",
+    "README.md": "d0b67292dd0180354ca8a58a149b5a3c0edbf4083ee461118800d8065ec10737",
+    "README.zh-TW.md": "d0b67292dd0180354ca8a58a149b5a3c0edbf4083ee461118800d8065ec10737"
+  },
+  "source_sha256": {
+    "flickr-53530510524-original.jpg": "3931a1240f7e31b46f33a52270d895af8de5908a3a82c0e2d05e684fd24d680d"
+  },
+  "findings": [
+    "Actually inspected all ten final views in two review montages and facade-detail at full1200x900. New pale ring remains bounded to outer fronts; window recesses and rear remain unchanged.",
+    "Original source photo and crop were independently viewed. Broad pale family supports bounded same-ring continuity, not every facet or measured HEX.",
+    "Independent exact selection, old material indices and original four palette entries verified. Naive nearest-point implementation did not change any of the3516 existing colored faces or other unselected indices.",
+    "Independently reopened original and final saved scenes: camera/light/render/mesh-object inventory identical, vertices/faces/materials and mesh SHA exact; all five linear shader colors verified.",
+    "Hidden historical caption/backdrop and stamp-off preserved. Original undenoised48-sample grain remains; no render-quality or geometry recertification claimed.",
+    "Five-material3MF matches exact mesh and indices; retained isolated original build/color regeneration PASS reviewed."
+  ],
+  "limits": [
+    "Photographer source is public third-party original, not university or architect.20231231 is inscription, not independently established capture time; no2026 condition claim.",
+    "Front-half cutoff is evidence/inference boundary, not physical material seam. Recesses, jambs, top/bottom, rear ring,75 red door faces and all other original geometry unchanged.",
+    "Original simplifying geometry and historical door concerns remain disclosed; new three-arch view does not invalidate unknown-date older photographs.",
+    "No source photo publication/license assumption, no five-filament or physical printing certification.",
+    "SourceQA pending-final is a preserved source-stage snapshot; this independent report supplies final model review status without rewriting it."
+  ]
+}

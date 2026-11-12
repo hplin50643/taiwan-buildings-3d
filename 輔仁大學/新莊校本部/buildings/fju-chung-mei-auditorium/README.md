@@ -1,30 +1,25 @@
-# 輔仁中美堂｜局部屋面、階梯與前門參考補色
+# 輔仁大學中美堂｜前半上燈環外皮局部補色
 
-**後半及未證格柵、細部維持中性；不是全棟全色完成。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。
-
-| 總覽 | 後方 | 正面 |
-|---|---|---|
-| ![總覽](preview.png) | ![後方](rear.png) | ![正面](front.png) |
-| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
-| ![頂面](top.png) | ![前門](entry-detail.png) | ![前立面](facade-detail.png) |
-| ![屋扇](roof-detail.png) | | |
-
-## 材色範圍
-同 `fju-chung-mei-auditorium` 原項目、same-item、count_delta=0。保留 **20662 個原三角面與座標、原 STL/build_model.py 位元組**，沒有新增或切分面。原不可變公開包沒有 OBJ，雖原碼執行會產生 OBJ，本次不冒稱有原 OBJ 可保留。
-
-- 前半原波折屋扇及小錐帽採淺暖灰；按原建構表面與完整原前半三角對位，不把陰谷塗黑或加斑駁。前後分界是照片覆蓋限制，不是真實材質接縫；後半與屋底中性。
-- 紅只在三個原拱凹的 **背面 y=-49.6，共75片（每門25片）**；洞側壁、拱內頂、周圍牆不染紅，不添拱框。
-- **小官照中間紅門看似矩形，原模型卻是三拱；僅借紅色色族，不聲稱三個實門均為拱形，不修改原幾何。**
-- 灰只在十級原階梯的獨立踏面／朝前立面，不將框選盒中的牆、側板、基地一起塗灰；不補文字獻辭或圖案。
-- 連續圓形外牆、格柵、採光窗、後部和基地未知中性，不為增加分色率硬套黑玻璃或石材線。
+局部補色未完成。保留原屋面/帽前半3360面、75紅門面、81階梯面，新增492面上燈環前半外皮，共4008配色、16654未知中性，20662原三角與STL/build不變。原四材色名、色票、未選索引完全保留，中性仍index3；新增名義淺白灰#DEDED6於index4，非把中性全面變白。
 
 ## 來源與限制
-來源是輔仁圖書館校史頁一張 **380×219** 官照，標「現在」不等於拍攝日期已確定；僅支持大致色族，不是色票、材料測繪或2026現況證明。其他取用失敗的照片不當作已看來源，也不借其2025檔名替官照定年。
-原照只私人保存，不隨模型公開、不貼圖；未確認 CC／再散布授權，不保證商用。原模型授權不自動涵蓋原照。
+新參照為公開攝影作者Chen Liang Dao（idisdao）的Flickr照片 https://www.flickr.com/photos/idisdao/53530510524/ ，不是校方或設計方。原圖1024×768，上燈環約150像素寬，裁切不增加解析度。外環淺白灰與深色窗洞可辨；不支持逐片尺寸、材質化學識別、校準HEX或原幾何測繪精度。前半端部採有限同環連續推定，並非每面直接可見證明。畫面20231231為作者署字，非獨立核定拍攝日，非2026現況。照片及裁切僅私有參考，不公開貼圖或推定商用權。
 
-## 格式、重建與列印
-[原 STL](model.stl) · [基本材質 3MF](appearance.3mf) · [彩材 Blender](scene.blend) · [原模型說明](ORIGINAL-MONOCHROME-README.md)
-STL沒有色；3MF basic materials 與 Blender 實際面材一致。四材質標籤**不是已驗證四色耗材切片專案**。原毫米模型與150mm展示底座保留，非實測比例；**未實際列印**，無切片路徑、無新列印保證。
+## 完整原域
+以原中心(0,6)、半徑20、140邊柱側的逐片精確平面及切向邊界核驗所有頂點、法向，z40.7..45.4、前半y≤6，取492原中性面、174完整共面域，不切割三角或跨大牆。前半邊界是證據範圍，不是真實材縫。窗凹背、洞返面、頂底、後半燈環、後屋面、主牆、基地等全不動；全共面材一致。
 
-依原 requirements：`build_model.py` 重建原模；`colorize_model.py` → `export_appearance.py` → `validate_color.py`。Blender 執行 `render_color.py` 和 `verify_color_scene.py`；檢查原STL/三角座標/正體積閉合/3MF身份與完整隔離重建。十圖需人工色域審核，程式PASS不能替代。
-原預覽/來源/舊QA完整保留作歷程，不能當作本次色版證據；沒有刪檔。
+新圖可辨三個拱頂紅門，僅補充這張署日期影像的可辨程度，不反推未知日期舊照必然判錯、不改75紅門面、不認證全幾何。舊矩形門疑慮與其他勘誤文件原字節保留於qa/clerestory-previous，歷史說明不覆寫。
+
+## 十視角
+|前斜|後斜|正面|
+|---|---|---|
+|![前斜](preview.png)|![後斜](rear.png)|![正面](front.png)|
+|![背](back.png)|![西](west.png)|![東](east.png)|
+|![頂](top.png)|![入口](entry-detail.png)|![立面](facade-detail.png)|
+|![屋頂](roof-detail.png)|||
+
+## QA範圍
+CLERESTORY-SOURCE-QA、COLOR-ASSIGNMENT、COLOR-FORMAT-GEOMETRY、SCENE與CLERESTORY-SCENE-QA為本次；歷史QA位於qa/clerestory-previous，舊凍結與舊獨審不替代本次。來源QA固定pending-final狀態，最終獨審另檔記錄。五種展示材質不是已驗五料切片，STL無色，未實體試印。原近似外觀與孔洞尺度不因配色得到新保證。尚未發布。
+
+## English limitations
+Add492 complete original front clerestory exterior faces,174 coplanar domains; preserve3516original coloredfaces and all four palette entries. Total4008colored/16654neutral/20662triangles. Nominaloffwhite appendedindex4. Public photographer source,notofficial;1024x768image and~150pxring support limitedfamily continuity,not everyfacet or measuredHEX. Windowrecesses,returns,top,bottom,rear unchanged.20231231 is authorinscription,not independentlyverified or2026condition. Newimage shows threearched red doors without invalidating olderunknown-date evidence. Historicalerrata preserved. No geometrychanges or printassurance.

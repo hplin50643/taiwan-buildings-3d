@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "pass",
-    "scope": "All ten output views inspected; caption absent; circular auditorium geometry, original colors and base retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "675161a281e1a21af168604878eca0544983185b1a3bacf6f569d39c5cd716ac",
-    "east.png": "2028dcc604bcf9e3b2140e72c930e751cc4bdd6fa2458a914153246a6a82607c",
-    "entry-detail.png": "6047c45c85ae902412f1602f1bc88fcb047816600f7fa5d6e236590ef88e3279",
-    "facade-detail.png": "c67fdb4107f56e13d13fdb0a757a87e0532e8ec40243c9aafbd8ed9f1551904c",
-    "front.png": "f0c2fceabb8ec03f330870a22039693a5f6802ae840e9ffc4a39ed9c1b53304e",
-    "preview.png": "e2c0cac6e73bb34905c23d70243da94c3bb34630ebab650fc8e396f9043cd01b",
-    "rear.png": "65346017d5541c496e608595c6113a659dee71069a1e9861ff760a5360da3b15",
-    "roof-detail.png": "f8681fc411b81199ad0dca5f8eefea6238268061495a9f4049848c5eead43336",
-    "top.png": "1dd5f39df2282848cc3fe4c9dbf0e38d18df54338e694f851b5bdf9f53cab0c6",
-    "west.png": "73f52c89e6d6c9e61a0ae0157b541265677417547adf9eb15a680d84e77b82d3"
-  }
+    "preview.png": "6e6062e42e7ce441519960637066f7c957bff9987f803b03cdd11f2cd61d1bb1",
+    "rear.png": "643725991bfb98f32997db4cba2a37bfa1691229a3ef2d46df68f1d286fcfa70",
+    "front.png": "af36a38795f21d5316f75cb8ff31257870bd1937c316863d8b978761eb8d3b54",
+    "back.png": "6d475ef8f71ccce71fbaaa8ef61f4e3f9490381398b93fe9f970b303877dc3f2",
+    "west.png": "30e6d4a1d3484ba7b72b9349fdeeb37d6f9484460df1b2b29a04e85902a977cc",
+    "east.png": "fc2445c734cb94f36dfc32c5b250a8da3b5f4b8c6ba07df9f8764a00134246f6",
+    "top.png": "ed6802fd3fae7241e54136b332858f8beeaded5e382a5cd8d495f087042f422d",
+    "entry-detail.png": "f5639dce060e5593b7872aae754de41d0a0117533af47044640fe65b206a18cf",
+    "facade-detail.png": "f9cf32178435482be2795bf690fdf5c09bec945002f53510a3774cee777ad96f",
+    "roof-detail.png": "942d93e188a77d121d29dd39466f5ecf0c05792039df331c531767c2f32e1fd8"
+  },
+  "mesh_sha256": "36827120b30c168336b3f38389fc6f52583e876fba2f0e6f9ac4d50ef254f274",
+  "independent_visual_review": "CLERESTORY-INDEPENDENT-QA.json",
+  "previous_qa": "qa/clerestory-previous/NO-TEXT-QA.json"
 }
