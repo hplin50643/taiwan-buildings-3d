@@ -1,0 +1,126 @@
+{
+  "status": "reviewed",
+  "checked_at": "2026-11-11T20:06:18.910771+00:00",
+  "all_nine_images_personally_viewed": true,
+  "render_engine": "CYCLES",
+  "device": "CPU",
+  "samples": 96,
+  "seed": 0,
+  "denoising": false,
+  "threads": 1,
+  "resolution": [
+    900,
+    800
+  ],
+  "no_text_objects_or_render_stamp": true,
+  "no_png_text_metadata": true,
+  "no_added_geometry_or_window_patterns": true,
+  "same_camera_comparisons": [
+    {
+      "view": "original-front",
+      "camera_location": [
+        220.0,
+        -310.0,
+        180.0
+      ],
+      "camera_rotation_euler": [
+        1.1881436109542847,
+        -1.7429256260470538e-08,
+        0.6171915531158447
+      ],
+      "ortho_scale": 246.7830047607422,
+      "target": [
+        0,
+        0,
+        27
+      ],
+      "same_camera_as": "front"
+    },
+    {
+      "view": "original-rear",
+      "camera_location": [
+        -220.0,
+        310.0,
+        180.0
+      ],
+      "camera_rotation_euler": [
+        1.1881434917449951,
+        -1.0002680994602997e-07,
+        -2.5244014263153076
+      ],
+      "ortho_scale": 246.782958984375,
+      "target": [
+        0,
+        0,
+        27
+      ],
+      "same_camera_as": "rear"
+    }
+  ],
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 822014,
+      "sha256": "ff05838f42e63b2231d1d93da2ceb2698c1f5ebd21081d5b04da28bb3ef2fce6",
+      "personally_viewed": true,
+      "review": "Continuous gray outer Aitu wall and chapel long wall; terracotta tower and gable remain coherent. Original colored window sequence and cross preserved."
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 803424,
+      "sha256": "33e105ad9419a43ac8a634982c4ce3387f223abf8c48703003f0daece6a13f94",
+      "personally_viewed": true,
+      "review": "Tower rear vertical shell terracotta, chapel long/rear walls gray without diagonal neutral remnants; actual rear short windows have pale mullions and opaque mixed backs, no mirrored stained patterns."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 795824,
+      "sha256": "6e9a370b9909833bab7cd92a1319f9385baf825f8fa9b3a6baf007727e3947de",
+      "personally_viewed": true,
+      "review": "Front original colored faces preserved; window returns and spandrel edges follow wall family. No added letters, emblem, frames or artificial glass planes."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 827056,
+      "sha256": "0e72d930779bd55ea3a64bab0340473d80f1213a1df11174b4bd8a8b1c54d8cc",
+      "personally_viewed": true,
+      "review": "Gray roof-slab edges and existing canopy agree with the material family; roof and tower geometry unchanged. Not a photographic geometric reconstruction."
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 806333,
+      "sha256": "b8ba682936934782ab5bf10fd84045b7e2652f111b9088765b1269c3ef777b50",
+      "personally_viewed": true,
+      "review": "Complete long-wall support planes and side-window returns inspected for missing diagonal triangles; terrain and distinct roof/soffit surfaces retained as documented."
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 839205,
+      "sha256": "bdc380fe85a444af46f6335144bd469b3f684e0eb0c81d85032d636c5bb4f049",
+      "personally_viewed": true,
+      "review": "Outer Aitu wall, inner chapel long wall, annex and roof edges form coherent original volumes; no new rear patterns or hidden scene objects."
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 874959,
+      "sha256": "0b3f32896c98ba1801a95f15f31541d3d58a03f7600ed53bfee3554315a99799",
+      "personally_viewed": true,
+      "review": "Original plan, shallow ridge, tower stepped outline and frame footprints unchanged. Documented neutral coping/annex roof and base are not treated as facade gaps."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 822369,
+      "sha256": "c6b5c919d600c23ad1d1511fbdf986679216c0f80dc53f3f3148bce1973f5586",
+      "personally_viewed": true,
+      "review": "Same camera, light and palette as new front, with original material indices restored. Original neutral outer wall and recess returns remain visible for comparison."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 801564,
+      "sha256": "b2718d956a6d4be576ee2ba7d5dbadf51a6c4e1910bd1077c9e97dfe37a9ac86",
+      "personally_viewed": true,
+      "review": "Same camera, light and palette as new rear, with original material indices restored. Original neutral tower rear and long/back walls expose the repaired areas."
+    }
+  ],
+  "limitations": "Inferred same-building material continuity on complete existing faces, local 2013 Aitu rear evidence, mixed source dates and simplified original geometry. No print test or verified 2026 state."
+}

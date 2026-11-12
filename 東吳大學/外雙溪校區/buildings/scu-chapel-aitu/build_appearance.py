@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.0012;indices=[]
+EPS=.0012;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def facebox(a,b,k,sg):return bounds(a,b) and plane(k,a[k] if sg<0 else b[k]) and n[k]*sg>.999
@@ -71,12 +71,78 @@ for p in mesh.polygons:
  for x in [11.3,13.3,15.3,17]:frames.append(((x-.18,-20.4,1),(x+.18,-20.05,4.4)))
  frames.extend([((-6.1,-21.1,17.3),(-5.5,-20.5,21)),((-7.15,-21.1,19.6),(-4.45,-20.5,20.2))])
  if any(surface(a,b) for a,b in frames):i=4
+ original_indices.append(i);reason=None
+ # V2 extends existing material families on complete original construction faces.
+ # Every test uses ALL vertices, face normals and exact support planes.
+ if i==0:
+  # Main tower and stepped crown: vertical shell continuity; horizontal crown
+  # tops remain separate unresolved coping/waterproofing, not assumed brick.
+  for a,b in [((-7.6,-24,-.01),(-3,-18,16.7)),((-7.6,-23.6,16.65),(-5.7,-18,17.45)),((-5.9,-21.7,16.65),(-3,-18,18.15))]:
+   if abs(n[2])<.001 and surface(a,b):i=1;reason='inferred_terracotta_tower_vertical_shell'
+  # Tower slit jambs, heads and sills are existing walls, not new window planes.
+  for z in [2.4,7.1,12.1]:
+   for x in [-6.1,-4.8]:
+    if i==0 and bounds((x-.22,-24,z),(x+.22,-23.5,z+2.3)) and not plane(1,-23.5):i=1;reason='inferred_terracotta_existing_tower_recess_returns'
+   for y in [-22.5,-21.2]:
+    if i==0 and bounds((-3.5,y-.22,z),(-3,y+.22,z+2.3)) and not plane(0,-3.5):i=1;reason='inferred_terracotta_existing_tower_recess_returns'
+  # Complete original gray body side/rear supporting planes. The rear outline
+  # unites chapel and low annex; test complete triangles against the stepped union.
+  gray_shell=False
+  for a,b in [((-22,-22,0),(-6,19.8,11.7)),((-6,-21,0),(19.5,-4.8,11.4)),((-6.2,10,0),(-1.5,19.8,4.6))]:
+   if abs(n[2])<.001 and surface(a,b):gray_shell=True
+  if abs(n[2])<.001 and plane(1,19.8) and n[1]>.999 and bounds((-22,19.8,0),(-1.5,19.8,11.7)):
+   # Original polygon may span the same-material chapel/annex junction.
+   samples=list(q)+[(q[0]+q[1]+q[2])/3]+[(q[j]+q[(j+1)%3])/2 for j in range(3)]
+   gray_shell=all(v[0]<=-6+EPS or v[2]<=4.6+EPS for v in samples)
+  if i==0 and gray_shell:i=2;reason='inferred_gray_chapel_aitu_annex_outer_walls'
+  # Same solid roof-slab fascia on remaining sides/rear. Underside is a distinct
+  # soffit surface and deliberately not represented as roof waterproofing.
+  for a,b in [((-22.5,-22.7,11.65),(-5.5,-7.4,12.35)),((-6.5,-21.7,11.35),(20,-4.3,11.9))]:
+   if i==0 and abs(n[2])<.001 and surface(a,b):i=3;reason='inferred_gray_slab_vertical_fascia'
+  # Existing entry canopy has gray top/edge support in the high-angle image.
+  if i==0 and n[2]>-.001 and surface((10.6,-23.2,4.5),(17.6,-20.7,4.95)):
+   i=3;reason='inferred_gray_original_entry_canopy_top_and_edges'
+  # The shallow roof prism has an existing exact vertical edge boundary;
+  # terracotta on that edge does not imply painting new bands on the body wall.
+  if i==0 and abs(n[2])<.001 and bounds((-22.5,-7.6,11.65),(-5.5,20.4,13.4)) and (plane(0,-22.5) or plane(0,-5.5) or plane(1,-7.6) or plane(1,20.4)):
+   i=1;reason='inferred_terracotta_original_gable_vertical_edges'
+  # Chapel front and side existing opening reveals keep wall family; true side
+  # backs receive opaque mixed clear-window proxy, never front stained patterns.
+  for a,b in [((-21.1,-22,4.4),(-8.1,-21.1,11.05)),((-20.8,-22,1),(-8.2,-20.9,3.8))]:
+   if i==0 and bounds(a,b):i=2;reason='inferred_gray_chapel_existing_opening_returns'
+  for y in [-5,0,5,10,15]:
+   if i==0 and bounds((-22,y-.9,8.2),(-21.5,y+.9,10.3)):
+    i=5 if plane(0,-21.5) and n[0]<-.999 else 2
+    reason='inferred_opaque_mixed_chapel_side_window_back' if i==5 else 'inferred_gray_chapel_existing_opening_returns'
+  # 2013 images directly support gray rear/outer Aitu walls, pale real frames,
+  # and ordinary short windows. Full window count remains original approximation.
+  for x in [-2,2.5,7,11.5,16]:
+   for z in [2,5.6,9.2]:
+    if i==0 and bounds((x-1.25,-5.3,z),(x+1.25,-4.8,z+1)):
+     i=5 if plane(1,-5.3) and n[1]>.999 else 2
+     reason='source_supported_opaque_mixed_aitu_rear_window_backs' if i==5 else 'inferred_gray_aitu_rear_window_returns'
+    if i in [0,2] and surface((x-.16,-5.35,z),(x+.16,-5,z+1)):
+     i=4;reason='source_supported_pale_original_aitu_rear_mullions'
+  # Front body reveals and spandrel edges complete the original gray structural
+  # family. Existing colored glass proxies stay untouched. The final cropped
+  # stained-window backs retain neutral because their color sequence is unknown.
+  for x in [-1,2.5,6,9.5,18]:
+   if i==0 and bounds((x-1.15,-21,1.25),(x+1.15,-20.82,11.05)):
+    i=2;reason='inferred_gray_aitu_front_shallow_recess_returns'
+   for dx in [-.5,.5]:
+    if i==0 and bounds((x+dx-.34,-20.82,1.7),(x+dx+.34,-20.45,10.75)) and not plane(1,-20.45):
+     i=2;reason='inferred_gray_aitu_front_deep_recess_returns'
+  for a,b in [((11.3,-21,8.3),(16.8,-20.45,10.75)),((11,-21,.9),(17.2,-20.1,4.5))]:
+   if i==0 and bounds(a,b) and not plane(1,b[1]):i=2;reason='inferred_gray_aitu_entry_returns'
+  for z in [4.35,7.7]:
+   if i==0 and surface((-2.8,-21.08,z),(19.45,-20.4,z+.55)):i=2;reason='inferred_gray_original_spandrel_edges'
+ if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and colors preserved; complete shell side/rear material-family inference; only distinctly unresolved surfaces neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -106,9 +172,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original connected chapel and Aitu geometry preserved including S2.5 and BASE3','Original scene uses three neutral display-contrast materials, not source-guided color and not literally single-material. Official high-angle photo capture date unknown, original2013-2024 geometric synthesis not new2026survey. Front/right tower and visible vertical steppedfascias terracotta; hiddenrear/left/tops neutral. Originalshallow roof upper facets and print-flat ridge terracotta; verticalgable andunderside neutral. Chapel/Aitu slabtop andfrontfascia gray; hiddenedges neutral. Frontchapel/Aitu originalsurvivingwall/spandrelfaces gray. Only actual truecutbacks mixedopaque; firstfour Aitu rightdeepbacks mutedred/yellow/green/green, leftmixedpalegray; croppedlastgroup neutral. Originalcontinuoushalfback includes whiteframe/lowerclear panes: coarse opaque colorfamily proxy, not exact stainedglass or transparency, no newhorizontalcolorseam. Originalgrid/entrybars/cross light withsmallhiddenface familycontinuation disclosed. All side/rearwalls annex, stairs groundbase retainingmasses and unknowns neutral. No newtext/emblem/AC/plants/tiles orgeometry. Original278layer thinfeature warnings including36 cross samples above1percent andmaximum6.140099622784399percent loss preserved; no physicalprint or slicer approval','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original connected chapel and Aitu geometry preserved including S2.5 and BASE3','Existing side/rear shell and opening material continuity inferred from complete original surfaces; 2013 Aitu back/outer-corner photographs support gray walls and pale actual frames. Original front stained proxies unchanged; cropped final stained backs not invented. Existing gable edge terracotta, slab vertical fascia gray. Coping tops, soffits, annex roof, terrain, stairs and unresolved mixed junction faces remain neutral. All original colors and exact geometry preserved. Not a 1964 reconstruction or 2026 survey. Original 278-layer cross warnings retained','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((220,-310,180),(0,0,27),225),'rear':((-220,310,180),(0,0,27),225),'elevation':((0,-350,27),(0,0,27),225),'source-angle':((240,-310,220),(0,0,27),225),'top':((0,0,380),(0,0,27),225)}
+views={'front':((220,-310,180),(0,0,27),225),'rear':((-220,310,180),(0,0,27),225),'elevation':((0,-350,27),(0,0,27),225),'source-angle':((240,-310,220),(0,0,27),225),'left':((-350,0,160),(0,0,27),225),'right':((350,0,160),(0,0,27),225),'top':((0,0,380),(0,0,27),225)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

@@ -1,214 +1,135 @@
 {
-  "revision": "appearance-color-v1",
-  "head_basis": "aedc01f56772525b942a46a0cf63eee23adee46e",
-  "repository_path": "東吳大學/外雙溪校區/buildings/scu-chapel-aitu",
-  "scope": "Original connected chapel/Aitu geometry and thinfeature warnings unchanged; source-visible front/right tower terracotta, independent roofs gray/red, front gray walls and original grid/cross pale; firstfour rightdeepbacks coarse red/yellow/green/green mixed family, not exact glass; croppedlast and unseen surfaces neutral. Original three neutral display contrasts, not literally single material; no capturedate or current2026 condition claim",
-  "original_files_unchanged": {
-    "validate_model.py": true,
-    "render-manifest.json": true,
-    "layer-opening-check.json": true,
-    "detailed-component-check.json": true,
-    "open-space-check.json": true,
-    "qa-summary.json": true,
-    "validation.json": true,
-    "check_root_rays.py": true,
-    "model.stl": true,
-    "check_all_layers.py": true,
-    "thin-feature-check.json": true,
-    "sources.json": true,
-    "thin-feature-review.json": true,
-    "freeze-record.json": true,
-    "check_warning_calipers.py": true,
-    "root-ray-check.json": true,
-    "scene.blend": true,
-    "layer-component-check.json": true,
-    "run_all_checks.py": true,
-    "requirements.txt": true,
-    "check_thin_features.py": true,
-    "warning-caliper-check.json": true,
-    "check_open_spaces.py": true,
-    "build_model.py": true,
-    "check_layer_components.py": true,
-    "render_preview.py": true,
-    "check_detailed_components.py": true,
-    "previews/rear-low.png": true,
-    "previews/rear.png": true,
-    "previews/front.png": true,
-    "previews/top.png": true,
-    "previews/south-elevation.png": true,
-    "previews/east.png": true,
-    "previews/west.png": true,
-    "previews/north-elevation.png": true,
-    "previews/front-low.png": true
-  },
-  "checksum_manifest_policy": "SHA256SUMS regenerated to include new appearance files",
-  "representative_policy": "All original nine previews preserved; homepage and school representative selection unchanged",
-  "geometry": {
-    "vertices": 2559,
-    "triangles": 5134,
-    "bounds_mm": [
-      150,
-      150,
-      55.5
-    ]
-  },
-  "review_results": "appearance-review/",
-  "clean_rebuild": "appearance-review/clean-rebuild-equality.json",
+  "revision": "color-v2-side-rear-continuity",
+  "head_basis": "123e103381f4d7eb98627857d9b720b8e497ecaa",
+  "scope": "1911 originally neutral faces: existing tower side/rear vertical shell and slit returns; chapel/Aitu/annex side/rear gray walls; slab edges; gable edges; existing opening returns, actual short rear window backs and mullions. All original colored faces preserved. Same-material inference with local 2013 Aitu rear/outer-corner photograph support, not a complete current-state survey.",
+  "geometry_verified": "appearance-review-v2/model-verification.json",
+  "clean_rebuild": "appearance-review-v2/clean-rebuild-equality.json",
+  "historical_reviews": "appearance-review contains retained v1 history, superseded for current material assignments and render bindings by appearance-review-v2 and this freeze.",
   "files": [
     {
       "path": "APPEARANCE.md",
-      "sha256": "9c040cccd6203583ab6656b3211a9b807155cd79bde584d8deb773ebee462eb5",
-      "bytes": 4396
+      "sha256": "f3612338fd279057bcde81179f08ccb693872149539e2de1a43327e1022c9b22",
+      "bytes": 6019
     },
     {
       "path": "README.md",
-      "sha256": "b66650a71e9295687098338f86137b4d494b775a9348794bc4b4e148f3c806f8",
-      "bytes": 6143
+      "sha256": "977d4ffbdeb202b3f3e91c0c55b5f414cae82d936a233ee2241dc50cc5041a26",
+      "bytes": 7231
     },
     {
       "path": "README.zh-TW.md",
-      "sha256": "b66650a71e9295687098338f86137b4d494b775a9348794bc4b4e148f3c806f8",
-      "bytes": 6143
+      "sha256": "977d4ffbdeb202b3f3e91c0c55b5f414cae82d936a233ee2241dc50cc5041a26",
+      "bytes": 7231
     },
     {
       "path": "appearance/elevation.png",
-      "sha256": "291d91a435b35d26640b7ec2e254912c6c7fb4c36dd51296e5218fd021c653e3",
-      "bytes": 819781
+      "sha256": "6e9a370b9909833bab7cd92a1319f9385baf825f8fa9b3a6baf007727e3947de",
+      "bytes": 795824
     },
     {
       "path": "appearance/front.png",
-      "sha256": "af8356199a0c063cc878bbfa3011f579ef9875fc5b8d8249cb4ac2097b7509a3",
-      "bytes": 851455
+      "sha256": "ff05838f42e63b2231d1d93da2ceb2698c1f5ebd21081d5b04da28bb3ef2fce6",
+      "bytes": 822014
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "b8ba682936934782ab5bf10fd84045b7e2652f111b9088765b1269c3ef777b50",
+      "bytes": 806333
     },
     {
       "path": "appearance/rear.png",
-      "sha256": "bc35cdf8a6711e412538c4055d6774268ce71ffac72bf4bb084634c0fb2ece6e",
-      "bytes": 825727
+      "sha256": "33e105ad9419a43ac8a634982c4ce3387f223abf8c48703003f0daece6a13f94",
+      "bytes": 803424
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "bdc380fe85a444af46f6335144bd469b3f684e0eb0c81d85032d636c5bb4f049",
+      "bytes": 839205
     },
     {
       "path": "appearance/source-angle.png",
-      "sha256": "b5c95037278071d1c3c865221621f944625de93b1ce1a38f246573324b67dfff",
-      "bytes": 856147
+      "sha256": "0e72d930779bd55ea3a64bab0340473d80f1213a1df11174b4bd8a8b1c54d8cc",
+      "bytes": 827056
     },
     {
       "path": "appearance/top.png",
-      "sha256": "ea100d3189c9d297f74994c1d9f1580ef816571c0f012c28241b7e5c9022de1f",
-      "bytes": 975984
+      "sha256": "0b3f32896c98ba1801a95f15f31541d3d58a03f7600ed53bfee3554315a99799",
+      "bytes": 874959
     },
     {
       "path": "appearance-materials.json",
-      "sha256": "d3d4c59e3b2b0b07fd0c6695748a0f07bafbf347f523202c619bdabe3adaa93b",
-      "bytes": 38931
+      "sha256": "259e720a941e190d59e1534679e10ce0ba5284bb05eef4d3ea56255f591e99de",
+      "bytes": 206574
     },
     {
-      "path": "appearance-review/clean-geometry-review.json",
-      "sha256": "cdc0ee28047d5775d692f973e0bebd58b27e8b365b3db9c83718041b127a2cad",
-      "bytes": 1125
+      "path": "appearance-review-v2/boundary-continuity-audit.json",
+      "sha256": "9de0a0a0653b8b06b297bc49f49e6708121dfe2c3741b2278a1ee3efbad1f66d",
+      "bytes": 366779
     },
     {
-      "path": "appearance-review/clean-material-region-check.json",
-      "sha256": "c71b6bc9dcc598cd6b29230a2aae78bc76660f1bb29ca47245fc5d99bec75203",
-      "bytes": 1477
+      "path": "appearance-review-v2/camera-consistency.json",
+      "sha256": "305ac326352142d378954d97cee426aab1559b9b2c4205991b9471e2c4c06ccd",
+      "bytes": 2680
     },
     {
-      "path": "appearance-review/clean-rebuild-equality.json",
-      "sha256": "0c4da960d294f357d6a18ef070aeeb8e46a8360e4a97a1c8477dfec890854e4d",
-      "bytes": 1340
+      "path": "appearance-review-v2/clean-rebuild-equality.json",
+      "sha256": "69340a04959f2ef0648ec0e900348768eabbab4b28a744c09991777bad0d7fb6",
+      "bytes": 345
     },
     {
-      "path": "appearance-review/color-visual-review.json",
-      "sha256": "9d8ae4d5e6219699992c8699b71b228cad9995230cc3e1f77fb244e66bf41d4e",
-      "bytes": 3999
+      "path": "appearance-review-v2/color-continuity-review.json",
+      "sha256": "aff69099f07f68ff60e004fd3ccb28ec4b51c61e1a385fcc531ccfc1ac2eb8b0",
+      "bytes": 4819
     },
     {
-      "path": "appearance-review/final-review-binding.json",
-      "sha256": "caf9d2ac55269d470e099648c65732e0430d0694b7367debe13bcb928d2a0932",
-      "bytes": 1230
+      "path": "appearance-review-v2/comparison-camera-records.json",
+      "sha256": "ccd14c9b0491e3b09842b2139afa4a65f395079fc3234b95d5176e254bc875c8",
+      "bytes": 696
     },
     {
-      "path": "appearance-review/geometry-visual-review.json",
-      "sha256": "fdc00962681ddff80ec6358730102131cb3996cef4da92a65b432d110851b8d4",
-      "bytes": 5038
+      "path": "appearance-review-v2/material-value-verification.json",
+      "sha256": "bee5a91466ff3905edb4391477fdf57c7ce86c5a7085d052f644a27e375c2084",
+      "bytes": 5639
     },
     {
-      "path": "appearance-review/material-region-check.json",
-      "sha256": "bbe97c78507dcded9967d29a2645670c3172cfdae23751ef4511e6946ef6bd3e",
-      "bytes": 1477
+      "path": "appearance-review-v2/model-verification.json",
+      "sha256": "b350fcd7929292f083f3f2a726168fddbbf72e89cc68b34271cffe181bd3c96e",
+      "bytes": 20395
     },
     {
-      "path": "appearance-review/output-geometry-review.json",
-      "sha256": "983ba578ab4208808285e84bc8a4a5544f8913b57e89808ecad298adb3c7e39d",
-      "bytes": 1125
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "c6b5c919d600c23ad1d1511fbdf986679216c0f80dc53f3f3148bce1973f5586",
+      "bytes": 822369
     },
     {
-      "path": "appearance-review/png-privacy.json",
-      "sha256": "bedd42a89d964e1309157e215ac947e3d3328b05d1b525b4b1c351970521825e",
-      "bytes": 157
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "b2718d956a6d4be576ee2ba7d5dbadf51a6c4e1910bd1077c9e97dfe37a9ac86",
+      "bytes": 801564
     },
     {
-      "path": "appearance-review/preservation-and-readme.json",
-      "sha256": "a1ac09ad4826ce3deb76d42da2f96ea48e49649886acb60258c8e72d138ef159",
-      "bytes": 1073
+      "path": "appearance-review-v2/render-manifest-v2.json",
+      "sha256": "c6d4c4d96983a75b849bf99317bf95679234f3cf5ddb914d123970cfc9b21116",
+      "bytes": 3826
+    },
+    {
+      "path": "appearance-review-v2/source-register.json",
+      "sha256": "e8d8f29ff4f1afd99df7449971575cf1eff14daaf4da27ad5a48bd882aaee834",
+      "bytes": 1715
     },
     {
       "path": "appearance.3mf",
-      "sha256": "c8ec917a33794b844d2d4360d6d3a0604c737e9e7534c537d0d954e5babbb8ac",
-      "bytes": 50170
+      "sha256": "f79dba27a1fb6ca98b50ba10be71defdb16465f7543066fd71d39c633e3deaca",
+      "bytes": 50524
     },
     {
       "path": "appearance.blend",
-      "sha256": "463c9cd969c8217dec73a3fb602cfae8fd77645557eb3092a6a506e5d6ef1203",
-      "bytes": 904328
+      "sha256": "cb76a5b224a8fd8b2b4cd6fc138cf1515dd8315c56bc3dfcf42dfebcf85ab9e9",
+      "bytes": 904368
     },
     {
       "path": "build_appearance.py",
-      "sha256": "ce91c8ff3a2be3d993335e556038fa0b67c0f58ae3fbdf913690b795af1ad4d9",
-      "bytes": 12108
-    },
-    {
-      "path": "build_model.py",
-      "sha256": "bb89bbdeeb52a9b3a9212135763363e634fa57c9ae344abebe0f640710309082",
-      "bytes": 4553
-    },
-    {
-      "path": "check_all_layers.py",
-      "sha256": "03f7514a485d7cd41642e8d9afba16f00d0500e59cf25947482bd917dda954a6",
-      "bytes": 2592
-    },
-    {
-      "path": "check_detailed_components.py",
-      "sha256": "d1ea62f58813e75e39b83bca84d562de0bce3397cd277d92f63d4a9c5c14683a",
-      "bytes": 4229
-    },
-    {
-      "path": "check_layer_components.py",
-      "sha256": "365e437af0d3d6defc2f52adf3e8601ac3643a14e15e03c8c8610b10bb8061a5",
-      "bytes": 3551
-    },
-    {
-      "path": "check_open_spaces.py",
-      "sha256": "3f547f8b566af6c49789bc867ac3b3ed32f2b77a888f4603c51b1e2d8a3e9004",
-      "bytes": 1760
-    },
-    {
-      "path": "check_root_rays.py",
-      "sha256": "d0ab7d3d1339d307029f2dd79b7f28b9fdbfbb9b15452f2512c45f1925030f6a",
-      "bytes": 4792
-    },
-    {
-      "path": "check_thin_features.py",
-      "sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915",
-      "bytes": 2591
-    },
-    {
-      "path": "check_warning_calipers.py",
-      "sha256": "578f4b9f2e8fc98319f9763abbd50b7cd0c9647ae5f1a848f6987399bf305ffd",
-      "bytes": 2811
-    },
-    {
-      "path": "detailed-component-check.json",
-      "sha256": "1724cc1dd5528076116a3770de9b37461f68f96c3c9b6d601f23c798f539a4e0",
-      "bytes": 381765
+      "sha256": "7fcfb3f5355e94a915d89ad7f28ca74eba2d458179b8c798e0f24196ba68c80b",
+      "bytes": 16566
     },
     {
       "path": "freeze-record.json",
@@ -216,134 +137,9 @@
       "bytes": 1099
     },
     {
-      "path": "layer-component-check.json",
-      "sha256": "90468091cff9f2bdd146decb6f18e233bf098aaaac2faf47c9d82a7abc32f0c7",
-      "bytes": 131555
-    },
-    {
-      "path": "layer-opening-check.json",
-      "sha256": "b5a2e245f2b5842c8c09611c90edb0791651083323204c4006f1ad5053cc96f2",
-      "bytes": 51761
-    },
-    {
-      "path": "model.stl",
-      "sha256": "167964bef1eb06c8015128dafa3829b71fbade88e5a76a807740966d5c3eaec6",
-      "bytes": 256784
-    },
-    {
-      "path": "open-space-check.json",
-      "sha256": "92ea03b92a0ffefc4344787e61c1e59a868ade70c18eb67bfa8cb75a06ed985a",
-      "bytes": 2549
-    },
-    {
-      "path": "previews/east.png",
-      "sha256": "982f3d25ff1ac30e7fe5e182036d34db78e78f934908b50a740d18103945ed61",
-      "bytes": 649882
-    },
-    {
-      "path": "previews/front-low.png",
-      "sha256": "caa5c4b0aa10dab13e472ce189b919f62477130abe2b29ca3d31ce29fee5016f",
-      "bytes": 590734
-    },
-    {
-      "path": "previews/front.png",
-      "sha256": "e337bdfeda59d3f1dfe7cd24fb058489a437407844ccc0d71803c7229fc93a5c",
-      "bytes": 655789
-    },
-    {
-      "path": "previews/north-elevation.png",
-      "sha256": "2eb98f8a30560a990e61cb943659ba2b633df3e05c194061e129b681e5c545a2",
-      "bytes": 564955
-    },
-    {
-      "path": "previews/rear-low.png",
-      "sha256": "085921e9e0bc350d2e59793e09fa61867bd5ded2804cf03b013c8f59496d4761",
-      "bytes": 569064
-    },
-    {
-      "path": "previews/rear.png",
-      "sha256": "a61a9701cecd77e4b6a98f3d9e80a9a582ce3ffc2cce3045f8ed696bb4501591",
-      "bytes": 641282
-    },
-    {
-      "path": "previews/south-elevation.png",
-      "sha256": "b3be06dab56ace354662b5fa1716899f05b27e29f2abb4be741a87c3d0244dba",
-      "bytes": 586499
-    },
-    {
-      "path": "previews/top.png",
-      "sha256": "d561a448c13df8c88f1323ff329ed359198a31cb6fab41b2964a7bdd9381deca",
-      "bytes": 572540
-    },
-    {
-      "path": "previews/west.png",
-      "sha256": "71b415b4212924fe33f778b85959bbc5a1128844e264a59a1420707a30822a47",
-      "bytes": 640577
-    },
-    {
-      "path": "qa-summary.json",
-      "sha256": "7b386e8519832a1a794e2f6c8773f552339c167a4b4dec7bdece99a7de4538d7",
-      "bytes": 1810
-    },
-    {
       "path": "render-manifest.json",
       "sha256": "808911867e4b25a1ddf4635cd10bd6072aa38f9a6eb5dcfaaeeafb36c1d0e855",
       "bytes": 963
-    },
-    {
-      "path": "render_preview.py",
-      "sha256": "76af41cd5a7cffabc4908bfc0e28544bffe94b58473688f42f66cb927969e740",
-      "bytes": 5097
-    },
-    {
-      "path": "requirements.txt",
-      "sha256": "9ac613256ccc616292edc9c32d2531b8e4605ac89396d891f0669935e1d8f976",
-      "bytes": 123
-    },
-    {
-      "path": "root-ray-check.json",
-      "sha256": "c38f61323061a2af37fb149739e95d830d4cc921f2f2be1bd5ba1d6cc1ed2c8f",
-      "bytes": 27017
-    },
-    {
-      "path": "run_all_checks.py",
-      "sha256": "9b94b42cdece003c70ac1a4de59ef2da06f7e714d2feb9f3be625695cc417e28",
-      "bytes": 4013
-    },
-    {
-      "path": "scene.blend",
-      "sha256": "554d0bac93a4b1ab9dafbe55e4ba020ddd3e0743b693f2f03a73b0355f82077a",
-      "bytes": 719616
-    },
-    {
-      "path": "sources.json",
-      "sha256": "99ba5f7243931e393372f623cdab06a4152f622c9f3f7e3a99446524805b407f",
-      "bytes": 4514
-    },
-    {
-      "path": "thin-feature-check.json",
-      "sha256": "4a8a87a2600daa4bd3ff7446bbf0c4667e6fdf7d55a4d7687d46357ff80ef39a",
-      "bytes": 10930
-    },
-    {
-      "path": "thin-feature-review.json",
-      "sha256": "45e46f27268b29c44fd2c5a5f256e83b34d6caa3e1700ba6c9243079d412d733",
-      "bytes": 1852
-    },
-    {
-      "path": "validate_model.py",
-      "sha256": "af83119ede0e7b233e5968c3bde4c15e316b39728a68fafb07dcfde343238e78",
-      "bytes": 6541
-    },
-    {
-      "path": "validation.json",
-      "sha256": "a050950c85d48433b5ec3f7308613498c8aca80cac472f813037d0ce562dbbe0",
-      "bytes": 2223
-    },
-    {
-      "path": "warning-caliper-check.json",
-      "sha256": "43b322e01fb577d530114ae7265b9d57600902d45468ee5b117413c0d57ee123",
-      "bytes": 15926
     }
   ]
 }

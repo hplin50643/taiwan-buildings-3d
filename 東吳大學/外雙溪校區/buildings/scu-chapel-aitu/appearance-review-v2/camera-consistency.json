@@ -1,0 +1,134 @@
+{
+  "status": "passed",
+  "views": {
+    "front": {
+      "camera_location": [
+        220.0,
+        -310.0,
+        180.0
+      ],
+      "camera_rotation_euler": [
+        1.1881436109542847,
+        -1.7429256260470538e-08,
+        0.6171915531158447
+      ],
+      "ortho_scale": 246.7830047607422,
+      "target": [
+        0,
+        0,
+        27
+      ]
+    },
+    "rear": {
+      "camera_location": [
+        -220.0,
+        310.0,
+        180.0
+      ],
+      "camera_rotation_euler": [
+        1.1881434917449951,
+        -1.0002680994602997e-07,
+        -2.5244014263153076
+      ],
+      "ortho_scale": 246.782958984375,
+      "target": [
+        0,
+        0,
+        27
+      ]
+    },
+    "elevation": {
+      "camera_location": [
+        0.0,
+        -350.0,
+        27.0
+      ],
+      "camera_rotation_euler": [
+        1.5707964897155762,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 177.0,
+      "target": [
+        0,
+        0,
+        27
+      ]
+    },
+    "source-angle": {
+      "camera_location": [
+        240.0,
+        -310.0,
+        220.0
+      ],
+      "camera_rotation_euler": [
+        1.113336443901062,
+        -1.122990234136978e-08,
+        0.6588061451911926
+      ],
+      "ortho_scale": 248.31275939941406,
+      "target": [
+        0,
+        0,
+        27
+      ]
+    },
+    "left": {
+      "camera_location": [
+        -350.0,
+        0.0,
+        160.0
+      ],
+      "camera_rotation_euler": [
+        1.2076494693756104,
+        -3.4694018324898934e-08,
+        -1.5707966089248657
+      ],
+      "ortho_scale": 177.0000457763672,
+      "target": [
+        0,
+        0,
+        27
+      ]
+    },
+    "right": {
+      "camera_location": [
+        350.0,
+        0.0,
+        160.0
+      ],
+      "camera_rotation_euler": [
+        1.2076494693756104,
+        3.4694018324898934e-08,
+        1.5707966089248657
+      ],
+      "ortho_scale": 177.0000457763672,
+      "target": [
+        0,
+        0,
+        27
+      ]
+    },
+    "top": {
+      "camera_location": [
+        0.0,
+        0.0,
+        380.0
+      ],
+      "camera_rotation_euler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 199.125,
+      "target": [
+        0,
+        0,
+        27
+      ]
+    }
+  },
+  "method": "Recomputed camera transforms and orthographic framing from the exact v2 build script and preserved mesh bounds; compared bit-for-bit with actual original-comparison render camera records.",
+  "both_original_comparisons_match_repaired_camera_formulas_exactly": true,
+  "same_lighting_and_palette": "Comparison render opens the saved repaired appearance.blend and only restores original per-face material indices."
+}

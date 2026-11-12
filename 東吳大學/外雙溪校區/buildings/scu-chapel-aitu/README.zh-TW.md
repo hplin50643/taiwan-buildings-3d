@@ -3,15 +3,17 @@
 ## 模型預覽
 
 
-### 有據材料彩色預覽
+### 側背材料延續補色
 
-原有三種中性預覽對比並非實景配色；本次依校方高角照，校正可見灰牆、橘塔、前灰頂／後紅坡與原彩窗背面。未知背側保中性，不是1964全復原或2026現況保證。
+本版保留全部原彩面，再為1,911個原中性三角面補上同構件材料。接點塔側背延伸赤陶色，堂與愛徒既有側背外牆沿用灰色；兩張2013背側照片直接支持愛徒局部灰牆、水平短窗與淡框，其餘完整面延伸明列推估。不鏡像正面彩窗，不是1964全復原或2026現況保證。
 
 | 正斜視 | 來源角度 | 正立面 |
 | :---: | :---: | :---: |
 | ![彩色正斜視](appearance/front.png) | ![彩色來源角度](appearance/source-angle.png) | ![彩色正立面](appearance/elevation.png) |
 | 背向 | 上視 | 新外觀下載 |
 | ![彩色背向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
+
+[左側](appearance/left.png) · [右側](appearance/right.png) · [原版同相機正斜視](appearance-review-v2/original-front.png) · [原版同相機背向](appearance-review-v2/original-rear.png)。七張新版及兩張對照均為900×800無字真網格渲染。
 
 [材料來源與限制](APPEARANCE.md)。原九張模型圖保留檔案，README僅展示新版；原幾何及十架薄特徵警告保持。
 
@@ -55,3 +57,10 @@
 ## 獨立原面補充
 278層352原Polygon侵蝕及opening均保留單核心，零分裂／消失。十架z48.471–55.471mm共36跨層樣本及36整層超過1%，不是36個實體構件；最大損失6.140099622784399%、保留93.8599003772156%。原頂點與去共線真轉角0.41mm鄰域外計算損失均為0。72筆原三角面法向厚度最小1.5mm，36中心點向下實連底座z0，兩橫臂穿接直桿亦重現。
 近頂平脊指定點寬1.25029464mm；擋牆指定厚2mm、22階原面頂高及底根、65框梁背接均核實。這些是指定位置模型尺度，不是全域最小壁厚。十架與薄細節仍需切片支撐、謹慎拆支撐，不得任意縮小，未實體試印。背窗估佈、末端出框未知、跨年來源及2013坡牆不代表2024現況等限制維持。
+
+
+## 本版外觀驗證與歷史檔案
+
+[逐點逐面驗證](appearance-review-v2/model-verification.json)、[完整面界與中性保留原因](appearance-review-v2/boundary-continuity-audit.json)、[來源判讀](appearance-review-v2/source-register.json)、[乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。
+
+原freeze-record.json與render-manifest.json保留原bytes，屬原幾何／九張原圖及當時文件的歷史記錄；其中舊README雜湊不適用本版。原appearance-review為前版材料審核歷史；新版由appearance-review-v2、appearance-freeze.json及更新的SHA256SUMS綁定。未重跑實體試印，原十架薄特徵警告完整保留。
