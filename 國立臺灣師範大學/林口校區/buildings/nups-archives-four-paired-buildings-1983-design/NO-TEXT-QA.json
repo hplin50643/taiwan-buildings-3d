@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nups-archives-four-paired-buildings-1983-design-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "b7357a7f7e591d2f6c85fb15df4b0e0eb4eaf3c6f93ccb44d57bd97a982a9d19",
+    "east.png": "9056681be102d1e412beb08348c243aabb485141f5717d4d7005a0f8cec63123",
+    "entry-detail.png": "e1fb2fce40d8a181eca13c930bc1b83d9181f42d7a82829a11ed669a1c73d4d9",
+    "facade-detail.png": "c12ace8c03478cea81c22f1bd81027b4b4a23eb199f578a4860758ca8fd10d25",
+    "front.png": "bc5323e58a0d8ae54978fa3b6e4bc8197ba02bb61cecca3eda3a6ea4f55e51d4",
+    "preview.png": "78a54d42970cda3a7725f08145ba70ff878337d09a673e11e69718e4fc3521b6",
+    "rear.png": "e87094e9e6daa930845eead5e2f8d6f3a4babf00006d8649da57236ad1089685",
+    "roof-detail.png": "cfe2cbc10bd0bed60f3fe75e3358fa4285389336fb7f0795d51021ad4d9aa78c",
+    "top.png": "8e7c37d9a3ab498c5511e21335350f2fba092a4ccf301ac9d4deae6eecc707aa",
+    "west.png": "a5d773ac9962634d6f5e782a2da808cfb0e49f6395f7f127eef74725dbd5fc5b"
+  }
+}
