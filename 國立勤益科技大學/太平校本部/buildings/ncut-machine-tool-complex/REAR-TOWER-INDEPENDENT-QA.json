@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T09:14:42.638323+00:00",
+  "scope": "Independent bounded rear cylindrical tower color review. No full-exterior, surveyed-geometry or printability certification.",
+  "blockers": [],
+  "numeric_checks": {
+    "vertices_exact": true,
+    "faces_exact": true,
+    "9662_triangles": true,
+    "STL_unchanged": true,
+    "build_unchanged": true,
+    "original_roof_260_preserved": true,
+    "276_new": true,
+    "material_counts": true,
+    "independent_finite_cylinder_selection": true,
+    "new_faces_only_offwhite": true,
+    "all_other_materials_unchanged": true,
+    "no_coplanar_split": true,
+    "3mf_vertices": true,
+    "3mf_faces": true,
+    "3mf_materials": true,
+    "source_hashes": true
+  },
+  "scene_checks": {
+    "camera": true,
+    "lights": true,
+    "render": true,
+    "mesh_objects": true,
+    "vertices_match": true,
+    "faces_match": true,
+    "materials_exact": true,
+    "mesh_sha": true,
+    "text_hidden": true,
+    "notice_hidden": true,
+    "no_stamp": true,
+    "three_material_slots": true,
+    "palette_0": true,
+    "palette_1": true,
+    "palette_2": true
+  },
+  "face_counts": {
+    "original_gray_roof": 260,
+    "new_offwhite_tower": 276,
+    "unknown_neutral": 9126,
+    "total": 9662
+  },
+  "findings": [
+    "Personally viewed architect photograph 200001038 at full size and aerial 200001520 at full size. These support the offwhite rear cylindrical wall and its position between the two workshop wings. The four-source contact sheet was also inspected.",
+    "Independently reconstructed the original 80-facet cylinder using triangle normals snapped to the nearest polygon facet, then tested all vertices against the exact supporting plane and finite radius/height bounds. The result exactly matches all 276 changed material indices.",
+    "Original 260 roof material indices are retained. All vertices and faces, STL bytes and build source are unchanged. 3MF vertices, faces and material indices match the candidate NPZ.",
+    "No adjacent coplanar faces have different material indices. Caps, glazing backs/mullions, canopy, other walls and the front teaching tower have no material-index changes.",
+    "Actually viewed all ten completed rendered views, including full-size back view and detail montages. The white side wall is bounded to the rear tower, while glazing and roof caps remain neutral. No visible labels or captions appear in the renderings.",
+    "Reopened original and final scenes. Geometry, material assignment, camera, lights, mesh-object list and render settings are consistent; all three palette shader values match. Caption and backing remain hidden, stamps are off.",
+    "README clearly identifies unseen cylindrical-wall continuity as inference, keeps original geometric limitations and says the overall color work is incomplete."
+  ],
+  "image_sha256": {
+    "preview.png": "42aae1db134c804e66d821898b705a9ea50e5f622ec93f622c6685082d78fce6",
+    "rear.png": "f49f9b3f1122d49362b4308380fcbe43beb2ac24995b7e5eb0425ee76052cc58",
+    "front.png": "32186b0eb6ce5032ace2be3b23c30f42b131485fa52cb9e510e9fa8d58d6369b",
+    "back.png": "ccd54a2c286636851e2d8dda44bf89d8f855312fbb1536884192340ca9f3efc9",
+    "west.png": "26f3905e60c19f0cff692604e76399fa404f5f827f5d4797e4734402b1c6a240",
+    "east.png": "411c10f84c7d775fea4dfe0ebc33c979629d105f7ff3d4d09672f4f9a20ced72",
+    "top.png": "c3e6ea8aa0c6f158d9dde401dbf1de471ffed4182537b5e400fe193c400d8a2a",
+    "entry-detail.png": "7aca49c1cc858ace22eb68e38f26fd92216ef1b9a9c1fb68f0b95053aa8cbc1d",
+    "facade-detail.png": "2ed33a93256b654865a124f47865649942245969f21343de0c6fc74cb27c08f0",
+    "roof-detail.png": "8ef3f9d7f87a2434aa640f0306a938ded581fcbda6d11d6847c1848f7870ec92"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "90d94130ecb616d6bff2b8f07402ce55d36b2ebf03d2e658c08ce8d38e5794b7",
+    "colorize_model.py": "e05cbbaceb8777e06f900c7c3fc89f8012677e8bcffae894ed4b9c62fcb62941",
+    "appearance.3mf": "fe20a6a737edff13c4364f6580cbedcd9506434a344f269fd64b976edd6a1fbb",
+    "scene.blend": "a43d582e65316fa4c4ff6aac4bb4e192365074381d1ee777766227f430ab0a22",
+    "README.md": "1b00423265310017d223976ac46f04ee68157c96961111bc76f9819a58ebe45c",
+    "REAR-TOWER-SOURCE-QA.json": "e634689c3986fce1e5f09232a38c0bff041b1e191159ef64a4e6a65d0f69e08c"
+  },
+  "source_sha256": {
+    "aha-200001520.jpg": "e620ecbbd36f88f62c3b15765fc87e50657b8fdd60d7e70abd05988f31b50080",
+    "aha-200001024.jpg": "09902a6db6c66b0bd54a16230087f2046dca9a59d45f79ec9b471553aa1254e6",
+    "aha-200001038.jpg": "61ce1bb418825bbef33662ed4177a360706db60301adb7d3348fb12944beaa54",
+    "aha-200001050.jpg": "9ff750657bdf4df8966fc7a00726e8787fcfcfed5e06506d3973c6d97afac964"
+  },
+  "limits": [
+    "Nominal offwhite is a color-family interpretation, not a calibrated tile color.",
+    "Unseen portions of the same cylinder retain inferred color continuity. Source capture dates are unverified.",
+    "Existing simplified facade/entry/canopy geometry remains unchanged and is not newly certified as accurate or current.",
+    "Mixed yellow-white walls, glazing and other tower finishes remain incomplete. No physical print or renewed global printability claim."
+  ],
+  "numerical_tolerance_note": "Tiny Boolean-clipped triangles in float32 STL have normal jitter up to about 8e-5 radians; nearest known original facet normals were reconstructed before strict all-vertex supporting-plane checks within 2e-5 mm. No mesh coordinates were altered."
+}

@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual rendered views inspected in ncut-machine-tool-complex-all-views.jpg. Caption and backing removed; geometry/materials/original camera framing preserved."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "8f5a424050fba7bf521d80d8fee1c76f5cf6eebdecfeaf27046e18c84199e858",
+    "east.png": "eb7f13a3b0081a43e2f68d73d49852791bb73debb02b9b0fc3f764580e5d5705",
+    "entry-detail.png": "adda9a7973619f2da5391bf5e963fa25786c2ba370fa5cba52a5df83c274017a",
+    "facade-detail.png": "5cb52826916b3dd6f52e2ca3f19d309e2fd25417a0a7706ec19a15e6ef2ee33c",
+    "front.png": "22625c369124f84eb9230123b288a4bccbd3c45e4e6ed7cae611c65ef44f17e1",
+    "preview.png": "92d20f903c0a42b9b2daa8a478d352e5980138b9d0a4deac7152af2f9232deba",
+    "rear.png": "18f40b78f16eddd0ea080d8357670ccad6f237b4645c3c4c0cd0d737b90a2a53",
+    "roof-detail.png": "c04992422510eb66059778a6544adebbd4671db21f8b7fde84c21465d95718b1",
+    "top.png": "9810af82571954a8db31ef5a7dd8caa4338cc5b3c2342d78b06a856497e83267",
+    "west.png": "61365e2fb5d20d7c6e306b7c8a88733e8afd0905c4c8d29a9b21ac22ececc78e"
+  }
+}

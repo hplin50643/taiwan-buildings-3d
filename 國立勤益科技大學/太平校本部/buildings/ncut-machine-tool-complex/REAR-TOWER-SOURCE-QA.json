@@ -1,0 +1,30 @@
+{
+  "status": "BOUNDED_REAR_TOWER_CANDIDATE",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "building": "ncut-machine-tool-complex",
+  "source_register_previous": "qa/rear-tower-previous/COLOR-SOURCE-REGISTER.json",
+  "observed": "Architect photograph 200001038 shows offwhite cylindrical rear tower exterior around pointed glazing; aerial 200001520 confirms cylindrical mass.",
+  "inferred": "Unseen parts of the same cylinder continue nominal offwhite. Exact HEX is not calibrated; source capture dates unverified.",
+  "domain": "All triangle vertices on one original 80-facet cylinder boundary, center (0,51), radius 10.5, z 2.8..36, epsilon 0.00002. Original Boolean openings retained.",
+  "original_colored": 260,
+  "newly_colored": 276,
+  "colored_total": 536,
+  "unknown_neutral": 9126,
+  "total": 9662,
+  "geometry_unchanged": true,
+  "count_delta": 0,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "exclusions": [
+    "roof cap and top",
+    "window backs and mullions",
+    "canopy",
+    "front teaching tower",
+    "mixed yellow-white walls",
+    "source photo pixels"
+  ],
+  "limitations": [
+    "Not current-condition or survey certification.",
+    "No new geometry or printability endorsement; no physical print."
+  ]
+}

@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual rendered views inspected in ncut-machine-tool-complex-all-views.jpg. Caption and backing removed; geometry/materials/original camera framing preserved."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "8f5a424050fba7bf521d80d8fee1c76f5cf6eebdecfeaf27046e18c84199e858",
-    "east.png": "eb7f13a3b0081a43e2f68d73d49852791bb73debb02b9b0fc3f764580e5d5705",
-    "entry-detail.png": "adda9a7973619f2da5391bf5e963fa25786c2ba370fa5cba52a5df83c274017a",
-    "facade-detail.png": "5cb52826916b3dd6f52e2ca3f19d309e2fd25417a0a7706ec19a15e6ef2ee33c",
-    "front.png": "22625c369124f84eb9230123b288a4bccbd3c45e4e6ed7cae611c65ef44f17e1",
-    "preview.png": "92d20f903c0a42b9b2daa8a478d352e5980138b9d0a4deac7152af2f9232deba",
-    "rear.png": "18f40b78f16eddd0ea080d8357670ccad6f237b4645c3c4c0cd0d737b90a2a53",
-    "roof-detail.png": "c04992422510eb66059778a6544adebbd4671db21f8b7fde84c21465d95718b1",
-    "top.png": "9810af82571954a8db31ef5a7dd8caa4338cc5b3c2342d78b06a856497e83267",
-    "west.png": "61365e2fb5d20d7c6e306b7c8a88733e8afd0905c4c8d29a9b21ac22ececc78e"
-  }
+    "preview.png": "42aae1db134c804e66d821898b705a9ea50e5f622ec93f622c6685082d78fce6",
+    "rear.png": "f49f9b3f1122d49362b4308380fcbe43beb2ac24995b7e5eb0425ee76052cc58",
+    "front.png": "32186b0eb6ce5032ace2be3b23c30f42b131485fa52cb9e510e9fa8d58d6369b",
+    "back.png": "ccd54a2c286636851e2d8dda44bf89d8f855312fbb1536884192340ca9f3efc9",
+    "west.png": "26f3905e60c19f0cff692604e76399fa404f5f827f5d4797e4734402b1c6a240",
+    "east.png": "411c10f84c7d775fea4dfe0ebc33c979629d105f7ff3d4d09672f4f9a20ced72",
+    "top.png": "c3e6ea8aa0c6f158d9dde401dbf1de471ffed4182537b5e400fe193c400d8a2a",
+    "entry-detail.png": "7aca49c1cc858ace22eb68e38f26fd92216ef1b9a9c1fb68f0b95053aa8cbc1d",
+    "facade-detail.png": "2ed33a93256b654865a124f47865649942245969f21343de0c6fc74cb27c08f0",
+    "roof-detail.png": "8ef3f9d7f87a2434aa640f0306a938ded581fcbda6d11d6847c1848f7870ec92"
+  },
+  "mesh_sha256": "90d94130ecb616d6bff2b8f07402ce55d36b2ebf03d2e658c08ce8d38e5794b7",
+  "independent_visual_review": "REAR-TOWER-INDEPENDENT-QA.json",
+  "previous_qa": "qa/rear-tower-previous/NO-TEXT-QA.json"
 }

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded rear-tower update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T09:14:44.438444+00:00",
+  "triangles": 9662,
+  "original_color_faces": 260,
+  "new_color_faces": 276,
+  "colored_faces": 536,
+  "unknown_neutral_faces": 9126,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "167ad46cb6da38ceb84ef62dfedabc8aac461d8581357f96f51047168e833a94",
+  "color_mesh_sha256": "90d94130ecb616d6bff2b8f07402ce55d36b2ebf03d2e658c08ce8d38e5794b7",
+  "images_sha256": {
+    "preview.png": "42aae1db134c804e66d821898b705a9ea50e5f622ec93f622c6685082d78fce6",
+    "rear.png": "f49f9b3f1122d49362b4308380fcbe43beb2ac24995b7e5eb0425ee76052cc58",
+    "front.png": "32186b0eb6ce5032ace2be3b23c30f42b131485fa52cb9e510e9fa8d58d6369b",
+    "back.png": "ccd54a2c286636851e2d8dda44bf89d8f855312fbb1536884192340ca9f3efc9",
+    "west.png": "26f3905e60c19f0cff692604e76399fa404f5f827f5d4797e4734402b1c6a240",
+    "east.png": "411c10f84c7d775fea4dfe0ebc33c979629d105f7ff3d4d09672f4f9a20ced72",
+    "top.png": "c3e6ea8aa0c6f158d9dde401dbf1de471ffed4182537b5e400fe193c400d8a2a",
+    "entry-detail.png": "7aca49c1cc858ace22eb68e38f26fd92216ef1b9a9c1fb68f0b95053aa8cbc1d",
+    "facade-detail.png": "2ed33a93256b654865a124f47865649942245969f21343de0c6fc74cb27c08f0",
+    "roof-detail.png": "8ef3f9d7f87a2434aa640f0306a938ded581fcbda6d11d6847c1848f7870ec92"
+  },
+  "current_independent_review": "REAR-TOWER-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Nominal color and inferred continuity for return faces, not measured current condition.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}
