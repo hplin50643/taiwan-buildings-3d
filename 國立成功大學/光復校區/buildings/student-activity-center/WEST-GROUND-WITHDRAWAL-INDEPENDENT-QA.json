@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "slug": "student-activity-center",
+  "independent_numeric_review": "independent-numeric-review.json",
+  "independent_scene_review": "independent-scene-review.json",
+  "source_domain_review": "second-source-domain-review.json",
+  "actual_visual_review": "Actually viewed all ten final renders in montage and entry-detail/facade-detail/roof-detail at full size. Lowest west front is neutral, distinct from three unchanged dark upper planes; pale bands and recess backs remain. Original noisy lighting retained. Saved scene independently reopened and geometry, material indices, four shaders, original cameras/lights/render/mesh inventory checked.",
+  "counts": {
+    "triangles": 2284,
+    "original_colored": 835,
+    "added": 0,
+    "withdrawn": 20,
+    "colored": 815,
+    "neutral": 1469
+  },
+  "mixed_domain_checks": {
+    "method": "adjacency connected face normals dot product >0.999999",
+    "before": 3,
+    "after": 3,
+    "all_original_domains_and_indices_exact": true
+  },
+  "geometry_3mf_original4palette_other_indices_preserved": true,
+  "isolated_build_color_export_QA_checked": true,
+  "isolated_3MF_XML_identical": true,
+  "source_pending_snapshot_unchanged": true,
+  "image_sha256": {
+    "preview.png": "16cae7f535ee542cdb577bb0bae39765acc2ae0492ea8820ee5d7998528be0e3",
+    "rear.png": "e6a1fc4f03609da48c8b771ef054575afbdda02721500800d240e88c314e6f60",
+    "front.png": "6721599c509db4fdb5920fc269e40c07fbfd94212933cabf714a8c3778f8d331",
+    "back.png": "5f2dafb71165146d7cd044bc5e01bd92af4bd86f65b00116d31f60cc148cfcbe",
+    "west.png": "0d00f479ca6dbd16d73bd45af469b0e30fcf830df8a2d4ff075a31abfe5089ed",
+    "east.png": "c31e1c395c83e11aad503ac0745f729998c5b26f5a77fe6f41e6f5e0a8b05e5d",
+    "top.png": "e04ca7cbc262cea41cb1ed07bceda2c71a0ecc9898a759f43cfb25db041d03e3",
+    "entry-detail.png": "a8aca0de95f49e3eb1439eda3970609498679128fdba9d57f15c9725358e08db",
+    "facade-detail.png": "9f603052b96b11c83e1e4e2edc27893cc903c91a3c0901daea1fa09e11f265d4",
+    "roof-detail.png": "1cebf36809d3392eec7fba30227e80c44d9eba21d2e8cbb2b4fbc1a9ea08979c"
+  },
+  "file_sha256": {
+    "model.stl": "2531748ccbcdc18d006d7501e590834df96fa5fc4aa17a11094fa23d43dc1211",
+    "build_model.py": "53659ecdb29226ac3f63295f200ccc55bab3c334a02114695e5aa0d1f8f5ebec",
+    "color-mesh.npz": "e0cfd5be9db3f7c94cdf575cc55fa0be5043406cb525db1512c530b34a11a6af",
+    "palette.json": "be26c6d0054fa530dda91aa9285718b483653f44775c485a4d385c94049a229d",
+    "appearance.3mf": "4a5e37001ac7d43df6d4f3b5deb2ebb53ccc4e0963b8fa115c7b71d91c73426e",
+    "appearance-materials.json": "7d6eda6d0123ed03aeb3eff9389875e28e1b9a06451a55894bdf1d9321d6d7a2",
+    "scene.blend": "ed55d2803f1b8b70ade0489168e38ea972c5f8de748644902bcd251b7d87cf5a",
+    "colorize_model.py": "60af145cc38cd7fc6ba7ce1d2e2dfa886aa6f734670336203e1ead74379e4d54",
+    "export_appearance.py": "94b9aa5a32586b0f7bb520ee08f40b4bf2837941726700cdbdc3b944ffa8ea8d",
+    "validate_color.py": "b11e7b4e6306ce1cddf3147b589be617edde1ef2966d3cdb427f196a6d3b4bd5",
+    "render_color.py": "40ab13e21a57d1cf32c962569621fef8e4ff2b2f81e2314d8356bf8df288c40c",
+    "verify_color_scene.py": "658eb72db6ba3792d285400b425aa000407ca7e1bff5775e2e5ec0b6ff9a2d01",
+    "README.md": "d9dab6a42d628189933da972d9c5034d7820c64f2cf331c31e3a1d4b74dcd116",
+    "README.zh-TW.md": "d8e771f52b91a005601c3080f9dee610d371d9d482721b13fc1314c63d34f805",
+    "COLOR-ASSIGNMENT-QA.json": "38e16837ecc31fe65ec7be903f4bf2c06ee5f0acfadd8362125e365f39209782",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "8dd21bcca027e6de5e6d0a8443a8c5745469f646be0a9d984ef2e21cbb58d4ed",
+    "COLOR-SOURCE-REGISTER.json": "381fd7dfad863aaf5651d747da6a56e04428e11581a39ce13a1b53b47163f94a",
+    "WEST-GROUND-WITHDRAWAL-SOURCE-QA.json": "e7733fea93e197098a617b61b667274737a55fdcb48245b47133d66a9098412d",
+    "SCENE-QA.json": "20eb1fe945455362f99cad9b4645eae530e29a3c0c0124828d72d0f3bfe43d35",
+    "WEST-GROUND-WITHDRAWAL-SCENE-QA.json": "7d6a6b0f1b80fb9f2dfd9123f0a9b8d71bd0cd955dfd95a4705e901b24536d3c",
+    "CHECKSUM-SCOPE.md": "5a9c553818a508c656b57438f3a487333036692309a7b9d84aa0df0b93e71ce8"
+  },
+  "limits": [
+    "Withdrawal of uniform screen assignment only, not a new gray-blue material claim.",
+    "Original coarse ground field crosses columns, wall, shutter and shade without material boundaries. Dark portions also conservatively become unknown.",
+    "Three upper planes and existing mapping are not newly certified by this narrow correction.",
+    "Official3358 original pixels reexamined, not new capture or2026 condition evidence.",
+    "Original geometry and engineering/printing limitations remain; no new OBJ claimed."
+  ],
+  "published": false
+}

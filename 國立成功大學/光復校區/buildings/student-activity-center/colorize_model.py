@@ -32,7 +32,15 @@ for i,(t,(x,y,z),n)in enumerate(zip(m.triangles,m.triangles_center,m.face_normal
  if nz>.99 and z>=23.9 and (hi[1]-lo[1])>5:mat[i]=3
  if nz>.99 and abs(z-26.5)<.003 and lo[1]>=-4.751:mat[i]=3
  if nz>.99 and abs(z-34.5)<.003:mat[i]=3
+# Withdraw unsupported uniform screen assignment from whole lowest west-front domain.
+t=m.triangles;old=mat.copy();hit=np.all(abs(t[:,:,1]+42)<.002,axis=1)&np.all(t[:,:,2]<=10.001,axis=1)&(m.face_normals[:,1]<-.99)
+assert np.flatnonzero(hit).tolist()==[347,348,352,353,354,355,358,359,360,361,362,363,364,365,366,367,368,392,431,433]
+assert np.all(mat[hit]==1);mat[hit]=3;assert np.array_equal(old[~hit],mat[~hit])
+e=m.face_adjacency;groups=trimesh.graph.connected_components(e[np.einsum('ij,ij->i',m.face_normals[e[:,0]],m.face_normals[e[:,1]])>.999999],nodes=np.arange(len(mat)),min_len=1)
+assert all(not hit[g].any() or hit[g].all() for g in groups)
+assert all(np.array_equal(old[g],mat[g]) for g in groups if len(set(old[g]))>1)
+assert np.bincount(mat).tolist()==[673,60,82,1469]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=mat)
 (R/'palette.json').write_text(json.dumps(pal,ensure_ascii=False,indent=2)+'\n')
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int((mat==i).sum())}for i,(a,b)in enumerate(pal)],'geometry_policy':'Original2284 triangles unchanged; no surface subdivision.','limits':['No yellow panels: original solid bands lack panel topology.','No gray-blue success-hall columns mapped onto main light columns.','West outside long wall, rear and broad roofs neutral.','Four material labels do not establish a tested four-filament slicer project.']},ensure_ascii=False,indent=2)+'\n')
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int((mat==i).sum())}for i,(a,b)in enumerate(pal)],'geometry_policy':'Original2284 triangles unchanged; no surface subdivision.','limits':['No yellow panels: original solid bands lack panel topology.','No gray-blue success-hall columns mapped onto main light columns.','Lowest west front20faces withdrawn to neutral; uniform screen assignment unsupported. West outside long wall, rear and broad roofs remain neutral.','Four material labels do not establish a tested four-filament slicer project.']},ensure_ascii=False,indent=2)+'\n')
 q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':len(m.faces),'materials_used':np.unique(mat).tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q)

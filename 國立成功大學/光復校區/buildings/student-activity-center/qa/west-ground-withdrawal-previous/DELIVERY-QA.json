@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": {
+    "preview_size": true,
+    "preview_fresh": true,
+    "rear_size": true,
+    "rear_fresh": true,
+    "front_size": true,
+    "front_fresh": true,
+    "back_size": true,
+    "back_fresh": true,
+    "west_size": true,
+    "west_fresh": true,
+    "east_size": true,
+    "east_fresh": true,
+    "top_size": true,
+    "top_fresh": true,
+    "entry-detail_size": true,
+    "entry-detail_fresh": true,
+    "facade-detail_size": true,
+    "facade-detail_fresh": true,
+    "roof-detail_size": true,
+    "roof-detail_fresh": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_PASS": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_mesh": true,
+    "SCENE-QA.json_PASS": true,
+    "SCENE-QA.json_mesh": true,
+    "FRAMING-QA.json_PASS": true,
+    "FRAMING-QA.json_mesh": true,
+    "model.stl_original_bytes": true,
+    "build_model.py_original_bytes": true,
+    "first_section_ten_images": true,
+    "three_columns": true,
+    "no_private_absolute_paths_in_new_public_text": true
+  },
+  "images_sha256": {
+    "back.png": "bce12d935aeebb0b500a9081db0e0cd46253503fa820ba2a7f0df41b6fd5260f",
+    "east.png": "67e60de4ff484be83c38312933422aa13a246345d604a70d39c40d3ffd780b12",
+    "entry-detail.png": "f94b1e7b44d1ff8f16c97978facf57090ed5d18f341d44e475ea3a6b66404c72",
+    "facade-detail.png": "3e735980ea95e427a9b86a628c7f60d8dfaf50502666fe73f620de27900d0db5",
+    "front.png": "d92f0d599bc78692f82a4b135950d88d75d37dcab804e6ff84f4eff54e2319e4",
+    "preview.png": "5b6897764528c142d3cc781709dca506d845f5a854f5ab24dff11c6cb8322394",
+    "rear.png": "b4247250d3218e66a87450032524619a87976316a6fc134199a55e4486fdd5c1",
+    "roof-detail.png": "6c90b0e9aba1b14ea3cb5610f6641184dfee3411ec287b24a651c0162df4d206",
+    "top.png": "e8195f5271e685cc04e24b7eedcd4bcfdcbd0a55b17f1feb312e741359e1314b",
+    "west.png": "f669ebedd41d8250f0b1bc71e5d4956463d95bb84b2634ceb5c38637f18ae5bd"
+  },
+  "mesh_sha256": "4e8fd580f83e4f9e86569f92cbd1668e3a5c56177fc7063336a0691e79da9062",
+  "geometry_change": false,
+  "count_delta": 0,
+  "manual_visual_review": "Builder viewed preview plus all nine other rendered views; main light-gray columns/terrace/stair, western front gray-brown and existing light edges, neutral dark recesses; unknown long west side/rear/roofs neutral; original geometry unchanged. Independent review separate.",
+  "limitations": [
+    "Four appearance materials, not a verified four-filament slicer job.",
+    "Original simplified geometry preserved; no current full-building survey claim."
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
+}

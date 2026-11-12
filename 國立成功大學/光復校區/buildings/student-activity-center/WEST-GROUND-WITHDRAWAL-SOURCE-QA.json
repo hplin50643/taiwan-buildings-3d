@@ -1,0 +1,102 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "proposal": "Withdraw unsupported uniform dark gray-brown screen-family assignment from whole lowest western-wing front plane, not add gray-blue color",
+  "selection_file": "preselection-west-ground-withdrawal.json",
+  "changed_faces": 20,
+  "complete_connected_domains": 1,
+  "original_material": 1,
+  "neutral_material": 3,
+  "source": "Original official NCKU material photograph3358, SHA256 reverified, source-register.json; actual pixels reexamined, not a new capture",
+  "evidence": "Lowest successful-hall entrance level has gray-blue columns, pale surfaces, shutter/entry assemblies and shade, not a uniformly dark gray-brown screen. Original four-level box lacks those material boundaries. The whole finite ground-front plane is over-assigned screen color.",
+  "scope": "Only y=-42, x[-67,-33], z3..10 front plane;20 original faces in one complete connected coplanar domain. The next horizontal trim atz10 separates it from upper front domains.",
+  "conservative_loss": "Some dark or shaded pieces within the plane could retain dark appearances, but no source-to-original topology permits isolating them. The entire selected domain becomes explicitly unknown, not a claim all20faces physically share one new material.",
+  "unchanged": [
+    "three upper west front domains",
+    "all original pale trim",
+    "recess backs and reveals",
+    "main right wing and pillars",
+    "stair/plinth",
+    "roof and west side unknowns",
+    "geometry and four palette entries"
+  ],
+  "limitations": [
+    "Original four-level box is a coarse proxy, not exact successful-hall facade. Withdrawal does not certify remaining mapping or geometry.",
+    "2025 source posting is not capture date or2026condition.",
+    "No new gray-blue columns are invented or assigned to main front pillars.",
+    "Virtual campus flat node2/3 images depict interior and are not used for exterior color evidence.",
+    "Reference photos and tiles private; no texture or republication."
+  ],
+  "additional_public_source": "https://virtualcampustour.ossd.ncku.edu.tw/index.php?inter=detail&id=6, public panorama08/node1 exterior cube3 low-resolution corroboration only",
+  "original_source_records": [
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3373",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2025/02/05/20250205123737-3143b056-me.jpg",
+      "sha256": "086d44c6bd5d6fb9faf86ca467b005501495b0ed3789cf9c386679c54d6ce76a",
+      "page_sha256": "af5c149685daa82c423660a10262a45128545677e6031bac438bde37510181b0",
+      "author": "外國語文學系-蔡美慧",
+      "actually_viewed": true,
+      "posted_date": "2025-02-05",
+      "capture_date": "未確認",
+      "file": "original-0.jpg"
+    },
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3358",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2025/02/05/20250205123614-8898ff52-me.jpg",
+      "sha256": "0f5d8f8aa48967e23a4becb9349fce7f3deaf8a0f2be1feb4d7f6dac189d1387",
+      "page_sha256": "2437258c393ec6a3bd7dcaa2aaab5eaec9043284dba1c1d93274219f5c82ff4c",
+      "author": "外國語文學系-蔡美慧",
+      "actually_viewed": true,
+      "posted_date": "2025-02-05",
+      "capture_date": "未確認",
+      "file": "original-1.jpg"
+    }
+  ],
+  "corroborating_exterior_tile_records": [
+    {
+      "file": "exterior-cube3-l2-x0-y0.jpg",
+      "url": "https://virtualcampustour.ossd.ncku.edu.tw/panorama/panorama08/tiles/node1/cf_3/l_2/c_0/tile_0.jpg",
+      "sha256": "3d79d073ec4b87e14464570546e091fb2b321191eb3cbe8a9d1f2a2f48881ced"
+    },
+    {
+      "file": "exterior-cube3-l2-x0-y1.jpg",
+      "url": "https://virtualcampustour.ossd.ncku.edu.tw/panorama/panorama08/tiles/node1/cf_3/l_2/c_0/tile_1.jpg",
+      "sha256": "74141e60b4b712a8a71eecd81d3b44c1551e45010dd77237411fd9c1dbd3e29b"
+    },
+    {
+      "file": "exterior-cube3-l2-x0-y2.jpg",
+      "url": "https://virtualcampustour.ossd.ncku.edu.tw/panorama/panorama08/tiles/node1/cf_3/l_2/c_0/tile_2.jpg",
+      "sha256": "a14c7fd29c5cc4586b8c585b663115340a2770b6a7af4ead20549f4ed4d64104"
+    },
+    {
+      "file": "exterior-cube3-l2-x1-y0.jpg",
+      "url": "https://virtualcampustour.ossd.ncku.edu.tw/panorama/panorama08/tiles/node1/cf_3/l_2/c_1/tile_0.jpg",
+      "sha256": "9fdcfe5212c662954d275307dbba04e02a65bb89ac801a0a556da54a56a64e43"
+    },
+    {
+      "file": "exterior-cube3-l2-x1-y1.jpg",
+      "url": "https://virtualcampustour.ossd.ncku.edu.tw/panorama/panorama08/tiles/node1/cf_3/l_2/c_1/tile_1.jpg",
+      "sha256": "0a6ff865385b3011aadd9bde3979b38a8ee6fd876dee0db84769a59759d5ffe4"
+    },
+    {
+      "file": "exterior-cube3-l2-x1-y2.jpg",
+      "url": "https://virtualcampustour.ossd.ncku.edu.tw/panorama/panorama08/tiles/node1/cf_3/l_2/c_1/tile_2.jpg",
+      "sha256": "b265d27c568b7178a941721ff558aefd68c3b86136156270d7ef1be98028cdcf"
+    },
+    {
+      "file": "exterior-cube3-l2-x2-y0.jpg",
+      "url": "https://virtualcampustour.ossd.ncku.edu.tw/panorama/panorama08/tiles/node1/cf_3/l_2/c_2/tile_0.jpg",
+      "sha256": "a79591b58563cffe26e3b9359672574121ebefba65560ef56c15f1d3d518d806"
+    },
+    {
+      "file": "exterior-cube3-l2-x2-y1.jpg",
+      "url": "https://virtualcampustour.ossd.ncku.edu.tw/panorama/panorama08/tiles/node1/cf_3/l_2/c_2/tile_1.jpg",
+      "sha256": "4741a3c9680df017b2643522aaa672ca1278aa91efa82ffcb6286ca5b18164ba"
+    },
+    {
+      "file": "exterior-cube3-l2-x2-y2.jpg",
+      "url": "https://virtualcampustour.ossd.ncku.edu.tw/panorama/panorama08/tiles/node1/cf_3/l_2/c_2/tile_2.jpg",
+      "sha256": "734154ce133a7f5390fc99646b69ccfc4d93d7c0781e4d7b31651af6da464db2"
+    }
+  ],
+  "source_photos_private": true
+}

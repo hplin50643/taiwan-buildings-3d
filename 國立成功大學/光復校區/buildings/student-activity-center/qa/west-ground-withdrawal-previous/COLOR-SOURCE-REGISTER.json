@@ -1,0 +1,100 @@
+{
+  "status": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
+  "slug": "student-activity-center",
+  "original_faces": 2284,
+  "count_delta": 0,
+  "geometry_change_permitted": false,
+  "source_images_private_only": true,
+  "sources": [
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3373",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2025/02/05/20250205123737-3143b056-me.jpg",
+      "sha256": "086d44c6bd5d6fb9faf86ca467b005501495b0ed3789cf9c386679c54d6ce76a",
+      "page_sha256": "af5c149685daa82c423660a10262a45128545677e6031bac438bde37510181b0",
+      "author": "外國語文學系-蔡美慧",
+      "actually_viewed": true,
+      "posted_date": "2025-02-05",
+      "capture_date": "未確認"
+    },
+    {
+      "page_url": "https://material.ncku.edu.tw/picture.php?/3358",
+      "image_url": "https://material.ncku.edu.tw/_data/i/upload/2025/02/05/20250205123614-8898ff52-me.jpg",
+      "sha256": "0f5d8f8aa48967e23a4becb9349fce7f3deaf8a0f2be1feb4d7f6dac189d1387",
+      "page_sha256": "2437258c393ec6a3bd7dcaa2aaab5eaec9043284dba1c1d93274219f5c82ff4c",
+      "author": "外國語文學系-蔡美慧",
+      "actually_viewed": true,
+      "posted_date": "2025-02-05",
+      "capture_date": "未確認"
+    }
+  ],
+  "audit": {
+    "sha256": "8f9ae7cd6ef16a1700a4e457fdd421aa6efbdc9cb9c75828ff9e4790832d8df6"
+  },
+  "identity_scope": "A018 連續L形一棟",
+  "rights": "成大素材網非商業利用及署名條款；來源署名成大素材網、照片作者。原照/版面/縮圖不公開，不作照片貼圖，不將其重新套專案開源license或保證商用。",
+  "limits": [
+    "原幾何近似，補彩不是幾何精確度背書",
+    "上傳2025不等拍攝年或2026現況",
+    "未證屋面/背面及無可靠面域中性",
+    "無新增三角/切面；跨界面整面中性或一致粗化",
+    "不可用大三角重心畫出斜色塊"
+  ],
+  "observations": [
+    "3373 L形，右懸挑淺灰網/白灰柱階，零星黃板位置在原粗帶無精確拓撲，不拼假小格",
+    "3358 左成功廳深灰褐網、白邊、灰藍柱；原四層盒極簡，只做對應色族"
+  ],
+  "palette_nominal_srgb": {
+    "light_gray": "#D0D1C9",
+    "screen_dark_gray_brown": "#77776F",
+    "glass_shadow": "#424E4E",
+    "unknown_neutral": "#A7ABA5"
+  },
+  "issued_utc": "2026-11-02T14:03:00Z",
+  "independent_review": {
+    "sha256": "a17d0e1d32a6003e747e308a5b1a59b352ae7039bcd9a196a8cbe9d46ab2b175"
+  },
+  "approved_mapping": [
+    {
+      "region": "Main right stepped terraces / existing front parapet bands / columns and stair",
+      "code": "front band center(15,-21.7), z18.9..23.9; higher parapet strips centered(18,yy-2.4); columns x=-30,0,31,61 y=-19; existing stair solid",
+      "color": "light gray/off-white family",
+      "limits": "3373 supports light main front screen/structure; original solid band is not a measured perforated grille. Do not paint isolated yellow photo panels onto broad unsegmented triangles."
+    },
+    {
+      "region": "Joined western wing front",
+      "code": "x approximately -67..-33, y=-42; existing thin horizontal additions at z10/17/24/31",
+      "color": "front opaque spandrel family dark gray-brown, thin existing border bands light gray",
+      "limits": "3358 supports dark grille/fascia plus white edging. Original repeated rectangular openings and four-level box are coarse, not exact grille geometry. Do not darken entire western roof or all unseen outer side."
+    },
+    {
+      "region": "Actual shallow front recess backs",
+      "code": "main backing y=-4.1; upper row y=1.9; western front recess y=-41.2, by actual mesh planes",
+      "color": "neutral dark gray shade; only identifiable glazed bays may be described as glass",
+      "limits": "Do not turn terrace/open corridor band into blue glazing. Source has both open shade and doors/windows; original mesh does not fully distinguish them."
+    }
+  ],
+  "mandatory_corrections": [
+    "3358 gray-blue columns belong successful-hall western entrance; original code lacks uniquely corresponding separate left entrance columns. Do NOT use this observation to color all four main-front columns gray-blue (3373 shows those white/light). Gray-blue palette may remain unused.",
+    "White tall success-hall side sign wall and letters have no uniquely separable original feature: no stripe/letter added.",
+    "Yellow individual panels in3373 lack original facet cells; omit rather than paint diagonal/yellow blanket band."
+  ],
+  "unknown_neutral_regions": [
+    "Western external long face x=-67 not uniquely fully verified in these two views: retain neutral except source-confirmed face domains.",
+    "Back y31 / horizontal roof and broad stepped roof tops neutral."
+  ],
+  "mandatory_public_limits": [
+    "Original geometry, triangle coordinates and topology unchanged; count_delta 0.",
+    "Do not classify large cross-boundary triangles by centroid alone. Whole coherent plane fallback or neutral is preferable; no subdivision for paint.",
+    "Unseen roof/rear/obscured faces neutral; source upload date is not capture date or proof of current paint.",
+    "Original photos/pages private, no textures. Preserve material-site noncommercial/credit conditions; no commercial rights guarantee.",
+    "This is focused source-to-existing-face review, not completed model/render QA."
+  ],
+  "required_QA": [
+    "原STL bytes/三角座標不變，新scene/3MF逐面幾何一致",
+    "材色實際指派與十視圖檢查，避免大三角跨界斜片",
+    "README公開未證中性/舊幾何近似/非同年精準復原",
+    "不刪原檔、不貼原照、不新增文字"
+  ],
+  "model_QA_pending_at_source_issue": true,
+  "model_QA_current": "See separate final model QA files; source GO is not model QA."
+}
