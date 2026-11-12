@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual rendered views inspected in cjcu-administration-all-views.jpg. No caption/backing/stamp remains; original cross and original detail-camera selection preserved."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "35aa4110d5ab15cec07b1128af8f7e0af07edbb71f376dd0a67cc0b4ba10fb71",
-    "east.png": "435e86984a83ef9b3d729179a81a1b959f8e3c80328ed03fe8aeedf4e8a9d623",
-    "entry-detail.png": "45c618c6cd374276205eb358886309a7ce2057221714152cfed9a3d98108c1e4",
-    "facade-detail.png": "e9031e722311e70844b99d40e4c52f981c4d6b968c987b3ce8f9a69662a4ef45",
-    "front.png": "d76ec6d8f03f77e757a0a6fe434de147c0e841ae8854997a53987084faed71d9",
-    "preview.png": "40c27b8fd3ea20901eaaac260329c0f81cb494a7112e00c6aa27d2f0d980505d",
-    "rear.png": "fab2aadbf1d91e2c08950ad19964d15873536ed7a8b1b5b6c270f0a71be1d85f",
-    "roof-detail.png": "e6e662077f281e26dda2996290c7fd95bd7ec834c9cb525bf9eaa3114803f617",
-    "top.png": "da27146faed39c8bf1f5ae23c0dc22a66cd77ec6429075ed80533341924714bc",
-    "west.png": "545f4ce20b8baf047ffc460bef1e39feb89c54eded56537d1acb5342660d60fa"
-  }
+    "preview.png": "d66b5fc38dfb192bd044d4c524c0b261545294cc32a07ed06bf0866c85e7c3ef",
+    "rear.png": "a4a60bbcc2acd7fdf41b3cf8ba91e2badd7801bc0000bafdcb191619a3891fe6",
+    "front.png": "e8826527a91a0e3b761b269b0ce40a0c0161a101b6ebfad73923cc3020bd467f",
+    "back.png": "4ac20ce7c71883f65dec2c8f65b10bc2aad9a0db123d52c4070e662ee0b39c41",
+    "west.png": "deca058ad9de6899e3362642fb80060b4ded5e63a0c40ed3e1172d842778f2bd",
+    "east.png": "e9319283a86dc14945e60a70c74e16d8fef7975d924c2328f55d40cb82a2b494",
+    "top.png": "24ba3acd7a2cfc790a72656e2f27f0e0ebc85def60431d3cc1d3fc1336d12370",
+    "entry-detail.png": "812c72d5c4d5c539a2a76ef8ce066028c155bfe9f50b8c5e342d50cc6826cb94",
+    "facade-detail.png": "9236d686a71bcf666c5370dff41ab031a9e22bb6cec924a23947bc5b2d9077fc",
+    "roof-detail.png": "dfde79cc39b8dea9f85290983d40d9da114738f9fe9c1d2dbdb5d5dd92fb6f25"
+  },
+  "mesh_sha256": "d8e78f17dbd7f3b92c95573184e5ae8c794e633d3a5a56fea9c1a5b0e9f48d15",
+  "independent_visual_review": "CROSS-BACK-INDEPENDENT-QA.json",
+  "previous_qa": "qa/cross-back-previous/NO-TEXT-QA.json"
 }

@@ -4,13 +4,13 @@
       "id": 0,
       "name": "CJCU Administration approach-facing rooftop cross off-white",
       "hex": "#DDDCD5",
-      "faces": 10
+      "faces": 20
     },
     {
       "id": 1,
       "name": "CJCU Administration unverified walls windows neutral",
       "hex": "#B8BAB5",
-      "faces": 5490
+      "faces": 5480
     }
   ],
   "domains": {
@@ -19,14 +19,27 @@
       10
     ],
     "whole_coplanar_withdrawals": 0,
-    "coplanar_domains": 1316
+    "coplanar_domains": 1316,
+    "opposite_profile_faces": 10,
+    "new_face_indices": [
+      3180,
+      3181,
+      3188,
+      3189,
+      3196,
+      3202,
+      3204,
+      3206,
+      3213,
+      3214
+    ]
   },
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
   "geometry_policy": "5500 original triangles unchanged; no cuts or newgeometry",
   "limitations": [
-    "10 original triangles forming the complete approach-facing rooftop cross profile off-white.",
-    "Whole y=14.1 profile selected, opposite y=11.9 face and narrow returns neutral.",
+    "Original10 approach-facing plus10 opposite whole-profile triangles off-white; originalpalette name is historical.",
+    "Whole y14.1 originalprofile preserved; newwhole y11.9 oppositeprofile added; narrowreturns stillneutral.",
     "Stone tower crosses dark base with no material boundary, so whole tower neutral.",
     "Brick arcade glazing roof and all unlisted faces neutral; neighboring left library excluded.",
     "Source URL201807 is not verified capture date; not2026 survey or tested filament slicing."

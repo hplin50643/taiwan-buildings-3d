@@ -1,31 +1,67 @@
 {
-  "status": "SOURCE_GO_BOUNDED_PARTIAL",
-  "building": "CJCU Administration",
-  "source_go_sha256": "eadcc0c1380309a4154b339015e9c0aa87aa8b57d7ab4b3545014936ef433135",
-  "independent_review_sha256": "81bbada91291d1ea4b1bff17bcb559bee551cf8a894e95bed1e22e104614f5f8",
-  "sources": [
-    {
-      "name": "source-1.jpg",
-      "sha256": "0e75ef09f911d15cd360da66b7a09370e48c7274c443833688aca8bbba117a46"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "plane_faces": 10,
+  "selected_faces": 10,
+  "selected_face_indices": [
+    3180,
+    3181,
+    3188,
+    3189,
+    3196,
+    3202,
+    3204,
+    3206,
+    3213,
+    3214
   ],
-  "sources_private": true,
-  "original_photographs_not_distributed": true,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "count_delta": 0,
-  "geometry_unchanged": true,
-  "source_dates": "Capture date unverified;URL201807 not capture;not2026 condition",
-  "allowed": [
-    "Complete approach-facing rooftop cross10 original triangles off-white"
+  "complete_domains": [
+    [
+      3180,
+      3181,
+      3188,
+      3189,
+      3196,
+      3202,
+      3204,
+      3206,
+      3213,
+      3214
+    ]
   ],
-  "unknown_neutral": [
-    "Stone tower has pale upper stone and dark lower base without matching original material boundaries; no all-beige tower.",
-    "Brick facade, lower arcade and gray/white transitions are not blanket red or pale.",
-    "Upper sunscreen, frames and glass/backing are mixed; no full gray glazing panel.",
-    "Cross opposite face, narrow returns and top edges remain neutral in this minimal review.",
-    "Main top cornice, roof, rear hidden areas, ground and all unlisted faces remain neutral.",
-    "Left neighboring library in the contractor photograph is not this building and contributes no color domains."
+  "crossing_domains": [],
+  "normals": [
+    [
+      0.0,
+      -1.0,
+      0.0
+    ]
   ],
-  "private_source_backup": "Sources retained privately; no raw images or private identifiers distributed."
+  "original_counts": [
+    10,
+    5490
+  ],
+  "original_files_git_verified": 55,
+  "scope": "Only opposite rooftopcross whole y11.9plane10originaltriangles; front y14.1 old10white unchanged. No narrowreturns,stone tower,neighbor gatecross or library.",
+  "new_source": {
+    "file": "official-adm.jpg",
+    "url": "https://www.cjcu.edu.tw/images/campus/campus_adm.jpg",
+    "sha256": "640f6427f2c767f08fd9e615d2e1d5849aaa1e5e993cf1a29cd7fe5251497dbc"
+  },
+  "source_page": "https://www.cjcu.edu.tw/en/about_campus_tour.php",
+  "source_observation": "Official640x426campusimage nowdownloaded successfully via exact imageURL publishedbyofficialcampustour; oldpackage noted formerfrontphoto503. Viewedwholephoto andnativecrop: small pale rooftopcross on stone stairtower behind building,not large separate gatecross foreground. Oppositefront-buildingview supports pale crossprofile while contractor oppositeview supports oldy14.1face.",
+  "limitations": [
+    "Native rooftopcross onlyabout24x30px; supports broadpale family not fineedges or calibratedHEX.",
+    "Geometry dimensions anddepth originalapproximation. Newaccess toexistingofficialimage,not claimnewphotocapture.",
+    "Narrow side/topreturns remainneutral,do not infer rear entiretower or glass.",
+    "Dateunverified,not2026condition;photosprivate."
+  ],
+  "proposed_counts": {
+    "original_colored": 10,
+    "added": 10,
+    "colored": 20,
+    "neutral": 5480,
+    "triangles": 5500
+  },
+  "work_created": true,
+  "historical_source_register": "qa/cross-back-previous/COLOR-SOURCE-REGISTER.json"
 }

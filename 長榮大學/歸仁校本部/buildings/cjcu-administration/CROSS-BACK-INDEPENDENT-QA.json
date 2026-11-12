@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "scope": "10 original opposite rooftop cross broad-plane faces, y11.9; original10 white retained,20 colored/5480 neutral/5500 triangles. No narrow returns or stone tower expansion.",
+  "source_review": "second-source-domain-review.json",
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "visual_review": {
+    "all_ten_final_views_actually_inspected": true,
+    "full_size_details_inspected": [
+      "entry-detail.png",
+      "facade-detail.png",
+      "roof-detail.png"
+    ],
+    "findings": "Pale opposite broad cross plane remains confined to rooftop cross silhouette. Narrow returns remain neutral, tower and other building surfaces unchanged. No captions, clipping or unintended broad recoloring found."
+  },
+  "limitations": [
+    "Official source640x426,roof cross roughly24x30pixels: broad pale family only, not color calibration or dimensional verification.",
+    "New access to existing image, unknown capture date, not2026condition.",
+    "Original approximate geometry and remaining neutral areas preserved. No print validation or publication."
+  ],
+  "blockers": [],
+  "image_sha256": {
+    "preview.png": "d66b5fc38dfb192bd044d4c524c0b261545294cc32a07ed06bf0866c85e7c3ef",
+    "rear.png": "a4a60bbcc2acd7fdf41b3cf8ba91e2badd7801bc0000bafdcb191619a3891fe6",
+    "front.png": "e8826527a91a0e3b761b269b0ce40a0c0161a101b6ebfad73923cc3020bd467f",
+    "back.png": "4ac20ce7c71883f65dec2c8f65b10bc2aad9a0db123d52c4070e662ee0b39c41",
+    "west.png": "deca058ad9de6899e3362642fb80060b4ded5e63a0c40ed3e1172d842778f2bd",
+    "east.png": "e9319283a86dc14945e60a70c74e16d8fef7975d924c2328f55d40cb82a2b494",
+    "top.png": "24ba3acd7a2cfc790a72656e2f27f0e0ebc85def60431d3cc1d3fc1336d12370",
+    "entry-detail.png": "812c72d5c4d5c539a2a76ef8ce066028c155bfe9f50b8c5e342d50cc6826cb94",
+    "facade-detail.png": "9236d686a71bcf666c5370dff41ab031a9e22bb6cec924a23947bc5b2d9077fc",
+    "roof-detail.png": "dfde79cc39b8dea9f85290983d40d9da114738f9fe9c1d2dbdb5d5dd92fb6f25"
+  },
+  "file_sha256": {
+    "model.stl": "2b7f6bae46e83a82ee78eb99707daad1387d7b3849b7f4996c76623fb0fa8565",
+    "build_model.py": "5b269e47f408fb54e320fe3e0eca5c5b70fb8ce968397cf2a82cafc642cba65f",
+    "color-mesh.npz": "d8e78f17dbd7f3b92c95573184e5ae8c794e633d3a5a56fea9c1a5b0e9f48d15",
+    "palette.json": "854f25ec31c3da7bfaa53e49eed916932f29bbc1c8c691dc9ab7658578ed37e9",
+    "appearance.3mf": "93d527f11dacec7a16faeaaa7c6c88e42a86fdbdf18b3b99ba6e6bbb51b08a06",
+    "scene.blend": "79231a72be5b18aad75a1a54827c0ffa28de33594a688f542bda07773a6974ed",
+    "colorize_model.py": "2a8689e9e2fc8527939ba3cdecadeb42c688ae8591af2a3e4d2dfaa247761166",
+    "export_appearance.py": "f9ef9bdf0361077140302e32329fea1111756f1120e6976d264f7f1831f0ce44",
+    "validate_color.py": "b0e252c3a62c0849d12d4578ff12d047d647a334bc9bf6fa915c67b2a031586e",
+    "render_color.py": "3afaa12397f59923bfba1fe1e4b5046da4dc18c5a220c167befd4a459df2622b",
+    "verify_color_scene.py": "cce71dcea11beec2d469a6ca525d79dc3005a108df6afaab625d5efa1ebbe2ee",
+    "README.md": "46aa9a358d6810b050d4396b0af4c03881955dac5db6d9491817294213d157a1",
+    "README.zh-TW.md": "46aa9a358d6810b050d4396b0af4c03881955dac5db6d9491817294213d157a1",
+    "CHECKSUM-SCOPE.md": "2863ba341710c48be99f731f44ec8c1ebb9b851954aceafbb3e15901aeb32ab0",
+    "CROSS-BACK-SOURCE-QA.json": "c87310437abdfd26ef77e63a357ca2b52cdb9fa0c3459c0168aeaab63fd71b73",
+    "COLOR-SOURCE-REGISTER.json": "c87310437abdfd26ef77e63a357ca2b52cdb9fa0c3459c0168aeaab63fd71b73",
+    "COLOR-ASSIGNMENT-QA.json": "496d57e69c69b2ee255fb06092f88e02476f2e60f4bf650cb3cdd8ed0112b360",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "035430d0fb7b5d4402aaa96dc5054a87f14cb4055bec604ad3d0a92c4d52fec9",
+    "SCENE-QA.json": "378fc73a7e808a6218406a35144f4f7533dd93d1d3840a7cf5f13c3d5c96377c",
+    "CROSS-BACK-SCENE-QA.json": "896d8f85b01f6a21bcc05a5c96c4082e1afd8ac9574d31d975e9b7d8c42808b7"
+  }
+}

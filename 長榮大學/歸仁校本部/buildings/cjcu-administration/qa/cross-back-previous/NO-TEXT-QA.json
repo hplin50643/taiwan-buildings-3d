@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual rendered views inspected in cjcu-administration-all-views.jpg. No caption/backing/stamp remains; original cross and original detail-camera selection preserved."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "35aa4110d5ab15cec07b1128af8f7e0af07edbb71f376dd0a67cc0b4ba10fb71",
+    "east.png": "435e86984a83ef9b3d729179a81a1b959f8e3c80328ed03fe8aeedf4e8a9d623",
+    "entry-detail.png": "45c618c6cd374276205eb358886309a7ce2057221714152cfed9a3d98108c1e4",
+    "facade-detail.png": "e9031e722311e70844b99d40e4c52f981c4d6b968c987b3ce8f9a69662a4ef45",
+    "front.png": "d76ec6d8f03f77e757a0a6fe434de147c0e841ae8854997a53987084faed71d9",
+    "preview.png": "40c27b8fd3ea20901eaaac260329c0f81cb494a7112e00c6aa27d2f0d980505d",
+    "rear.png": "fab2aadbf1d91e2c08950ad19964d15873536ed7a8b1b5b6c270f0a71be1d85f",
+    "roof-detail.png": "e6e662077f281e26dda2996290c7fd95bd7ec834c9cb525bf9eaa3114803f617",
+    "top.png": "da27146faed39c8bf1f5ae23c0dc22a66cd77ec6429075ed80533341924714bc",
+    "west.png": "545f4ce20b8baf047ffc460bef1e39feb89c54eded56537d1acb5342660d60fa"
+  }
+}
