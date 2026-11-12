@@ -4,7 +4,7 @@ Run: blender --disable-autoexec --background --factory-startup --python-exit-cod
 Optional: -- --source /model/directory --out /output/directory
 Uses the published appearance.blend, model.stl and draft-parameters.json; geometry,
 materials, lighting, world and the original eight technical previews are preserved.
-Requires the original Noto Sans CJK font and Pillow for unchanged limitation text.
+No caption font or Pillow dependency; original limitation text remains in README.
 """
 import argparse, hashlib, json, math, pathlib, struct, subprocess, sys
 import bpy
@@ -105,16 +105,7 @@ p = OUT / 'appearance/homepage-three-quarter.png'
 scene.render.filepath = str(p)
 scene.render.use_stamp = False
 bpy.ops.render.render(write_still=True)
-caption_code = """from PIL import Image,ImageDraw,ImageFont
-import sys
-p=sys.argv[1]
-font=ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',16,index=3)
-im=Image.open(p).convert('RGB');d=ImageDraw.Draw(im);d.rectangle((0,im.height-50,im.width,im.height),fill=(238,238,238))
-d.text((10,im.height-47),'有界近似，非測繪：18.85m起算由1985雙剖面推定為1F至主屋面；非梯核最高點。',font=font,fill='black')
-d.text((10,im.height-24),'地下花園／廣場下會議廳深度與地腳仍為剖面配圖估計；不含懷恩樓。未試印。',font=font,fill='black')
-im.save(p)
-"""
-subprocess.run(['python3', '-c', caption_code, str(p)], check=True)
+# README preview intentionally omits the former caption band.
 raw = p.read_bytes(); clean = raw[:8]; pos = 8
 while pos < len(raw):
     n = struct.unpack('>I', raw[pos:pos + 4])[0]; kind = raw[pos + 4:pos + 8]
@@ -131,7 +122,7 @@ report = {
     'source_blend_git_blob_sha': '5e2b998d0ade8ada5d05400d5a0d9061cd5440c7',
     'source_stl_git_blob_sha': '9f6cd50094e369b39994515a94647cd0162e47e4',
     'source_file_sha256': source_hashes, 'blender_version': bpy.app.version_string,
-    'scope': 'Separate color representative camera/framing only; published appearance BLEND geometry, material indices, shader nodes, lights/world and source bytes unchanged. Same original locked angle, framing and limitation captions retained; no BLEND saved.',
+    'scope': 'Separate color representative camera/framing only; published appearance BLEND geometry, material indices, shader nodes, lights/world and source bytes unchanged. Same original locked angle, framing retained; limitation captions omitted only from image; no BLEND saved.',
     'scene_stl_exact_float32_triangle_match': True,
     'before_signature': before_signature, 'after_signature': after_signature,
     'vertex_count': len(ob.data.vertices), 'triangle_count': len(ob.data.polygons), 'material_count': len(ob.data.materials),
@@ -144,7 +135,7 @@ report = {
                   'elevation_deg': elevation,
                   'screen_bounds': {'min_x': min(p.x for p in projection), 'max_x': max(p.x for p in projection),
                                     'min_y': min(p.y for p in projection), 'max_y': max(p.y for p in projection)},
-                  'all_vertices_in_frame': True, 'caption_height_pixels': 50},
+                  'all_vertices_in_frame': True, 'caption_height_pixels': 0},
     'output': {'file': p.name, 'bytes': len(clean), 'sha256': hashlib.sha256(clean).hexdigest()}}
 (OUT / 'qa/color-homepage-camera-validation.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
 print(json.dumps(report, ensure_ascii=False, indent=2))
