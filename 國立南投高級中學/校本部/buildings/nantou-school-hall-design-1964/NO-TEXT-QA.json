@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views visually inspected in nantou-school-hall-design-1964-all-views.jpg. Captions/backing absent; original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "714d651a734699268aac92e6261e2fbf021af9a66badfebda2ef7c2c3b99c57d",
+    "east.png": "1408f587f52ca28385df6e9263225df1c78614682785c3ec647af556a9027853",
+    "entry-detail.png": "0652cd00a18a3b99ae315d390b49dab1d089c849dde4d20129b3ecf345f5c808",
+    "facade-detail.png": "ba863b8b336b1fe93f685394d198489a8099ff9c5336bf27fbef418a2fc30e69",
+    "front.png": "f366f452c48672e88a0a7c4719cf48e131b02e98dac2181dbe7353432b6fdfd9",
+    "preview.png": "f556b641fb6a0e37f214ebe7bc306dac1a16ab6f85d892cdfa66d92f9b6d71c4",
+    "rear.png": "6f3a1bc8e1999ddc919ab9eaff0471af6a9c534af43661e4acc311e6f27864ae",
+    "roof-detail.png": "5e7553cd407fcbd3707ee821de521f5362c422451780860707a37263957cd89d",
+    "top.png": "94b112b1adde86f5c85d0c1907b7ed1a2999acd837c7b20ead89421304fc33cb",
+    "west.png": "c322be7a3c58f202c627f50433c25c25a971736c8c83762bfa4bc98b2c1b7515"
+  }
+}
