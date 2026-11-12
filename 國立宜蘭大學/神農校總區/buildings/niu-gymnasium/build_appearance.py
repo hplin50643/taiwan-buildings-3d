@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.002;indices=[]
+EPS=.002;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def boxface(x,y,z,w,d,h):
@@ -80,12 +80,68 @@ for p in mesh.polygons:
   y=-64+k*1.6;h=(k+1)*.87
   if bounds((34.5,y-.95,2.9),(61.5,y+.95,2.9+h)) and ((plane(2,2.9+h) and n[2]>.99) or (plane(1,y-.95) and n[1]<-.99)):i=5
  if hi[2]<=3+EPS:i=0
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# Revision 2 completes solid wall returns inside existing supported window recesses.
+# Require every vertex to lie on an original jamb/head/sill support, never centroid.
+# Confine field-facing returns to the base wall depth; triangles that span the
+# pale-pink band projection and base-wall boundary are deliberately left neutral.
+reveal_supports=[]
+for z,h,groups in rows:
+ for a,b in groups:
+  reveal_supports.append(('field_window_reveal',(fx(a),-59,z),(fx(b),-57.1,z+h)))
+reveal_supports.append(('front_vestibule_reveal',(37.5,-40.5,18),(58.5,-39.1,36)))
+for x in [45.4,51.5,57.6]:
+ reveal_supports.append(('north_glazed_entrance_reveal',(x-2.5,51.2,5.1),(x+2.5,53,20.7)))
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0)
+ for family,a,b in reveal_supports:
+  if bounds(a,b) and any(abs(n[k])>.999 and (plane(k,a[k]) or plane(k,b[k])) for k in [0,2]):
+   p.material_index=1;indices[p.index]=1;changed_faces.append(p.index)
+   change_reasons[str(p.index)]={'family':family,'support_min':a,'support_max':b,'basis':'Complete original solid-wall jamb/head/sill within existing opening. Grey-white wall finish continues from the supported host by same-component inference. No glazing, artificial cut end, or mixed-band projection is recolored.'}
+   break
+assert len(changed_faces)==337
+
+# Same-building continuity for ORIGINAL modeled side/rear window backing faces.
+# The original generator explicitly creates these as glazing/recessed window rows.
+# Reuse the original opaque mixed glazing/shadow proxy, not certified glass specs.
+backing_supports=[]
+for z in [6,19,30,41,51]:
+ for x in [-57,-43,-29,-15,-1,13]:backing_supports.append(('north_hall_existing_window_back',1,63.4,(x-5,63.4,z),(x+5,63.4,z+6.1),1))
+for y in [-49,-35,-21,-7,7,21,35,49,59]:
+ for z,h in [(5,7),(19,8),(32,7),(45,8)]:backing_supports.append(('west_hall_existing_window_back',0,-63.2,(-63.2,y-5,z),(-63.2,y+5,z+h),-1))
+for y in [-28,-14,0,14,48,59]:
+ for z,h in [(5,6),(16,6),(27,7),(37,5.5)]:backing_supports.append(('east_wing_existing_window_back',0,61.3,(61.3,y-4.65,z),(61.3,y+4.65,z+h),1))
+for p in mesh.polygons:
+ if original_indices[p.index]!=0 or p.index in changed_faces:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0)
+ for family,axis,value,a,b,sign in backing_supports:
+  if bounds(a,b) and plane(axis,value) and sign*n[axis]>.999:
+   p.material_index=3;indices[p.index]=3;changed_faces.append(p.index)
+   change_reasons[str(p.index)]={'family':family,'support_min':a,'support_max':b,'basis':'Complete surviving backing face of an explicitly modeled original window recess. Same-building opaque mixed glazing/reflection/curtain/shadow proxy is inferred from original supported windows. No new window geometry or claim of exact glazing, layout, photograph date, or current condition.'}
+   break
+assert len(changed_faces)==513
+
+# Original projecting west piers have explicit complete primitive boundaries.
+# Continue the original grey-white projecting front-pier finish by same-building
+# component-family inference, rather than treating the whole mixed wall as white.
+for p in mesh.polygons:
+ if original_indices[p.index]!=0 or p.index in changed_faces:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0)
+ for y in [-56,-42,-28,-14,0,14,28,42,56]:
+  if boxface(-65,y,3,1.4,1.8,57):
+   p.material_index=1;indices[p.index]=1;changed_faces.append(p.index)
+   change_reasons[str(p.index)]={'family':'west_hall_projecting_pier','support_min':(-65.7,y-.9,3),'support_max':(-64.3,y+.9,60),'basis':'Complete surviving outer face of an original projecting pier, bounded by the original primitive. Grey-white projecting front-pier finish is continued by same-building component-family inference. Mixed broad wall planes are not recolored.'}
+   break
+assert len(changed_faces)==609
+
+
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='337 neutral solid-wall returns and96 original projecting-pier faces use grey-white component continuity;176 surviving side/rear original window backing faces use original opaque mixed glazing proxy, all by same-building inference. Geometry and all earlier colors preserved. Mixed band-crossing and unpartitioned wall/court/roof/base faces remain neutral.'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-window-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -100,6 +156,8 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+for block in list(bpy.data.texts):bpy.data.texts.remove(block)
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -115,15 +173,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; true open courts, arch and upper frames remain open','Historical school-history photographs printed159-161/PDF15-17 personally viewed. Only field-facing facade and source-supported corner/vestibule plus north administrative entrance. Original discrete bands pale pink; true cut backs mixed opaque grey green; actual frames grey beige and exposed stair treads/risers grey. Six facade height bands are not six floors. Long west/high rear/wing side windows/court/whole roof neutral; five crown depths unknown. No murals/banners/new face stripes/phototextures/PV. PDF2020metadata not photography date, no2018-renovation or2026-condition claim. Original maximum openingloss about0.153percent retained, no new printQA','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-window-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['609 originally neutral faces changed:337 solid-wall reveals and96 original projecting-pier faces use grey-white component continuity;176 original side/rear window backing faces use same-building opaque mixed glazing/shadow proxy inference. Other neutral faces remain, including mixed band-crossing wall faces. No new geometry, window, stripe, material or transparent glazing is added. Photographic approximation, not calibrated finish values','Opaque mixed glazing backing only; true open courts, arch and upper frames remain open','Historical school-history photographs printed159-161/PDF15-17 personally viewed. Direct source support covers field-facing facade, corner/vestibule and north administrative entrance; side/rear backs and west piers are explicit same-building inference. Original discrete bands pale pink; true cut backs mixed opaque grey green; actual frames grey beige and exposed stair treads/risers grey. Six facade height bands are not six floors. Original side/rear window backs now use inferred same-building opaque mixed glazing proxy; unpartitioned wall, court and whole roof remain neutral; five crown depths unknown. No murals/banners/new face stripes/phototextures/PV. PDF2020metadata not photography date, no2018-renovation or2026-condition claim. Original maximum openingloss about0.153percent retained; original digital QA rerun is reported separately, no physical trial print or fresh slicer toolpath','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-200,-250,160),(0,0,32),220),'rear':((170,250,140),(0,0,32),220),'elevation':((0,-300,32),(0,0,32),220),'source-angle':((200,-260,130),(0,0,32),220),'top':((0,0,400),(0,0,32),220)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((-200,-250,160),(0,0,32),220),'rear':((170,250,140),(0,0,32),220),'elevation':((0,-300,32),(0,0,32),220),'source-angle':((200,-260,130),(0,0,32),220),'left':((-320,0,125),(0,0,32),220),'right':((320,0,125),(0,0,32),220),'top':((0,0,400),(0,0,32),220)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -132,4 +191,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

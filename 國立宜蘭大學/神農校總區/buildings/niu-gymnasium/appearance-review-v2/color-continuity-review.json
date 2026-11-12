@@ -1,0 +1,108 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T00:32:57.261354+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "ca5b26b5d0c47d3642cb737c9066d8f6d98ec35f6d7b75fe51ecde930fafa697",
+      "personally_viewed": true,
+      "notes": "Original front pink bands and existing material palette retained; west window backs and projecting piers now consistently colored. No broad mixed-wall repainting."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "7252a8440b92d6c33acfa62e49d54b459221d1395da83b2fce0e99e7246c8e1a",
+      "personally_viewed": true,
+      "notes": "North/east original window backs now use opaque grey-green proxy; arch/open upper frame and courtyard remain open; roofs and large unpartitioned wall sheets stay neutral."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "ede6678f6b821f6ec1c8a7a388348237a02717771068002aee329d355ffc4919",
+      "personally_viewed": true,
+      "notes": "Front view retains original unequal window groups and pale-pink bands. New grey-white returns do not erase original glazed backs or mullions; no text, mural or new stripe."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "d43496b76dea445b8f7ac9f110c15bf1033edfc327049fc0eaee7892201cdc6b",
+      "personally_viewed": true,
+      "notes": "Existing eastern wing window backs use the same opaque mixed proxy, while corner balconies, stairs and original front colors are preserved. Roof crowns and light court remain unchanged; no new windows or photo texture."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "a04ec350f6ab7e8d174b27dba9568dbfc39ca4691b5655e2944b89835a6d2dfe",
+      "personally_viewed": true,
+      "notes": "West original window backing rectangles and surviving nine projecting-pier components are colored consistently. Broad wall planes remain neutral, without diagonal color patches or invented band boundaries. Original window-cut interruptions in the last pier are preserved."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "c9515e5a8885a5125a34b3b5e72d4b5a31e9fa05385bda58bd5c7984dbd170f2",
+      "personally_viewed": true,
+      "notes": "East administration original surviving backs now have a consistent opaque mixed window proxy. The two lower northern window positions remain cut through, not filled with new backing. Original balcony openings, stair underside and light court remain open; no broad mixed-wall repainting."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "e7dad69ff0fe3c272c4119beb325e4f9959a0fcba67bf87c6093822e5062e9bd",
+      "personally_viewed": true,
+      "notes": "Five original roof crowns, artificial base outline, flat wing roof, light court and open entrance structure are unchanged. No added solar array, equipment, text, photography, sealed courtyard or color spanning an unknown roof region."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "d6be8108011b7e924b016a78c9e7c6ca5f0cceb29307df44a67db2909d34d1c8",
+      "personally_viewed": true,
+      "notes": "Same-camera original material assignments visibly leave west windows and projecting piers neutral; original front bands and supported front glazing already exist. The final view adds limited window/pier continuity without altering silhouette or existing colors."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "37900a75436faa64de77ab6f1422dbf1e8b00adbd505ba6b2a8fe4918b23a1c2",
+      "personally_viewed": true,
+      "notes": "Same-camera original north/east backing rectangles were neutral. The final uses the existing grey-green opaque proxy only on surviving modeled window backs, while leaving original open frame/arch/court and mixed wall sheets unchanged."
+    }
+  ],
+  "before_after": [
+    {
+      "view": "front",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 71924,
+      "pixels_differing_by_more_than_8_rgb_levels": 35329,
+      "mean_absolute_rgb_difference": 2.0785055555555556,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    },
+    {
+      "view": "rear",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 46069,
+      "pixels_differing_by_more_than_8_rgb_levels": 24981,
+      "mean_absolute_rgb_difference": 1.318950925925926,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    }
+  ],
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "observations": [
+    "Original front bands, glazing, mullions and entrance/stair palette remain unchanged.",
+    "337 original wall returns and96 existing projecting-pier faces continue grey-white component colors;176 side/rear original backing faces use inferred same-building opaque mixed proxy.",
+    "Actual open frames, arch, courtyard and two cut-through east low window positions remain open. No added geometry, windows, text, murals, textures, invented stripes or roof equipment.",
+    "Broad mixed-material wall sheets and band-crossing faces remain neutral, without arbitrary diagonal paint patches.",
+    "Original base, geometry silhouette, roof crowns and framing remain intact in all seven final angles."
+  ],
+  "limitations": [
+    "This is continuity inference for simplified original geometry, not precise materials, actual glazing certification, current-condition evidence or survey reconstruction.",
+    "No physical trial print or fresh slicer toolpath. Original digital QA rerun is separately reported."
+  ],
+  "artifacts": {
+    "appearance.blend": "de6cd0fc6c274087ebd3a352c44934910d2aab069d4e7e47f25b1ce1f00bb0dc",
+    "appearance.3mf": "7a28c962bce390c48e23175ac71cc315925b9966fc5512302a52981cfc723069",
+    "appearance-materials.json": "f44cc826bf2f534d362e561baa84d83425e441565fafb5b5cb94d7d0619a6b8a",
+    "build_appearance.py": "f0247bf3c64d9cfc290409cf613f20cdfd2381bf44cbfd49a8b22b4c2210ce69",
+    "render_review.py": "d3c954653736f40d9154f3b1f53b9505b852241b798c582140c9af043afe865b"
+  }
+}

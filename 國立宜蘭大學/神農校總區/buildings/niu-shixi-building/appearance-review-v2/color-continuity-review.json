@@ -1,0 +1,83 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T00:22:10.332567+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "bytes": 913450,
+      "sha256": "645729f47549bcab2a89a2b3fb9dd701cae03ccfa0e4a03272e48d6388945743",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/rear.png",
+      "bytes": 884479,
+      "sha256": "d870b71bb2f605892c95f7557514a3be9c233546fe99bb9c8dac1314675442ba",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/elevation.png",
+      "bytes": 865556,
+      "sha256": "0784bbb2c2071db82b43b8bbf7be64b57adc1dfde25741203e8ce67712deb80d",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "bytes": 903517,
+      "sha256": "268e2ee2e25a83cfe7a7342b91d480c2b763bddeb314955216bed20e9da7243a",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/left.png",
+      "bytes": 924325,
+      "sha256": "14db2d83244e02ad76d932fb86fbe71119c63287bcd25670739c01b5c3afe1ea",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/right.png",
+      "bytes": 917977,
+      "sha256": "c5edf5ff77f547260d39138d72ccb55199c120a1686f9f03e2c22e118074347c",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance/top.png",
+      "bytes": 888137,
+      "sha256": "e4a80268fc950df01e6e587651e3aa6700da20d1377809d08692d04acab82d34",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "bytes": 901419,
+      "sha256": "20c3d5e88a46b3692fe384910829439db84c20d0f56a5cda2f00cf7c92cd7a2f",
+      "personally_viewed": true
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "bytes": 870257,
+      "sha256": "2d507f4cd7734137325f95e1596f1afa6f0c353c9fe14f1d18c469c9d618abf6",
+      "personally_viewed": true
+    }
+  ],
+  "directly_viewed_reference_pages": 1,
+  "reference_photographs_on_page": 3,
+  "findings": [
+    "Front and elevation preserve the original gray-brown bars, opaque mixed window back color and pink entry stairs. Front window side/head/sill faces now continue the pale tile family. No new frames or geometry.",
+    "Front and rear matched-camera comparisons show previously neutral outer side walls and existing recessed window backs now continue the existing cream and gray-bluegreen families. Original window count and extents stay unchanged.",
+    "Left and right show full existing external supports without arbitrary diagonal color divisions; wall faces and original band returns meet at their original geometric boundaries.",
+    "Rear and source-angle keep the deep courtyard and recessed gallery backs neutral. They are not converted into new glass. D-shaped balcony openings remain open.",
+    "Top retains broad main roofs, service core and artificial base. Only existing outer coping vertical faces and modeled thin floor-band returns continue cream material.",
+    "All seven final and two original views have no visible text, source-photo overlays or unintended clipping."
+  ],
+  "known_limits": [
+    "Observed pale-tile material family supports a qualified same-building continuity inference; opposite and hidden outer extents are not directly photographed in full.",
+    "Existing outside window backs are opaque mixed glazing/frame/reflection/shadow proxies, not measured pure glass.",
+    "Three official photographs are from different periods with unknown capture dates. No2026-condition claim.",
+    "2814 originally neutral faces remain. Original estimated dimensions, support and fragile-part risks remain; no physical print or fresh slicer toolpath checks."
+  ],
+  "geometry_verification": "model-verification.json",
+  "boundary_review": "boundary-continuity-audit.json",
+  "topology_check": "topology-check.json",
+  "clean_rebuild": "clean-rebuild-equality.json",
+  "camera_consistency": "camera-consistency.json",
+  "source_register": "source-register.json"
+}

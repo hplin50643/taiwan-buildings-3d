@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.002;indices=[]
+EPS=.002;indices=[];original_indices=[];changed_faces=[];change_reasons={}
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def boxface(x,y,z,w,d,h):
@@ -80,12 +80,57 @@ for p in mesh.polygons:
   y=-51+k*1.35;h=.65*(k+1)
   if bounds((-15,y-.8,2.9),(15,y+.8,2.9+h)) and ((plane(2,2.9+h) and n[2]>.99) or (plane(1,y-.8) and n[1]<-.99)):i=5
  if hi[2]<=3+EPS:i=0
- p.material_index=i;indices.append(i)
+ p.material_index=i;indices.append(i);original_indices.append(i)
+
+# V2 same-building continuity on complete original supports. No geometry edits.
+# Photographs show a continuous pale tile family on the visible outer elevations.
+# The two complete modeled outside faces are a qualified continuity inference;
+# courtyard corridors are not windows and retain their existing neutral finish.
+for p in mesh.polygons:
+ if original_indices[p.index]!=0:continue
+ q=np.array([verts[j] for j in p.vertices]);n=np.array(p.normal);lo=q.min(0);hi=q.max(0);i=0;reason=None
+ for side in [-1,1]:
+  x=68*side
+  if plane(0,x) and n[0]*side>.99 and bounds((x,-40.85,3),(x,.5,61.7)):
+   i=1;reason='outer_front_bar_complete_wall_and_coping_faces'
+  x=59.5*side
+  if plane(0,x) and n[0]*side>.99 and bounds((x,.5,3),(x,43.85,61.7)):
+   i=1;reason='outer_wing_complete_wall_and_coping_faces'
+  xa,xb=sorted((59.5*side,68*side))
+  if plane(1,.5) and n[1]>.99 and bounds((xa,.5,3),(xb,.5,61.7)):
+   i=1;reason='outer_bar_complete_return_shoulders'
+  # Original shallow outer window cuts have a real backing surface. Preserve
+  # their shape and reuse existing opaque mixed glazing proxy, not pure glass.
+  for xout,xback,ys,half,hh in [(68,66.6,[-32,-18,-4],4.7,6.2),(59.5,58.2,[10,26,37],5.4,4.5)]:
+   xa,xb=sorted((side*xout,side*xback))
+   for y in ys:
+    for f in range(5):
+     z=6+10.8*f
+     if not bounds((xa,y-half,z),(xb,y+half,z+hh)):continue
+     if plane(0,side*xback) and n[0]*side>.99:
+      i=2;reason='existing_outer_window_complete_opaque_back'
+     elif (abs(n[1])>.99 and any(plane(1,t) for t in [y-half,y+half])) or (abs(n[2])>.99 and any(plane(2,t) for t in [z,z+hh])):
+      i=1;reason='existing_outer_window_complete_tile_reveals'
+ # Complete slab-band returns and horizontal edges, no broad main roof plane.
+ for z in [14.8,25.6,36.4,47.2,58]:
+  if boxface(0,-20,z,137,42,1.4):
+   i=1;reason='original_front_bar_floor_band_complete_returns'
+ # Recess jambs, sills, and heads of the already-colored front windows.
+ for f in range(5):
+  z=6+10.8*f
+  for x in [-60,-47,-34,-21,-8,8,21,34,47,60]:
+   if f==0 and abs(x)<14:continue
+   if bounds((x-5.05,-40.5,z),(x+5.05,-38.4,z+6.4)) and ((abs(n[0])>.99 and any(plane(0,t) for t in [x-5.05,x+5.05])) or (abs(n[2])>.99 and any(plane(2,t) for t in [z,z+6.4]))):
+    i=1;reason='existing_front_window_complete_tile_reveals'
+ # Keep every artificial base face neutral. No court-back proxy is added.
+ if hi[2]<=3+EPS:i=0;reason=None
+ if reason:
+  p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'basis':'Every vertex satisfies an original full component face boundary. Hidden or opposite extents use same-building continuity, not direct all-facade observation.'}
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+obj['appearance_policy']='Original geometry and material values retained; full outer-wall and original-window continuity inferred; courtyard and roof unknowns preserved'
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-outer-wall-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -100,6 +145,7 @@ for lamp in list(scene.objects):
 for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
  light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
 
+scene.render.filepath='//appearance/front.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
 # Core 3MF base materials per original triangle: no geometry splitting/resampling.
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
@@ -115,15 +161,16 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; open courts and balconies remain open','Shi Xi is 時習大樓, not 實習大樓. Official school-history PDF10/printed154 three photographs personally viewed. Upper old D-end and lower newer entry images are different periods, unknown capture dates, not single-date reconstruction or2026condition. -Y entrance cream walls/grey brown original rails/grey blue green true window backs and pale brick stairs. +Y source-visible end fields, true narrow window backs, actual central recess shadow, D outer40facet fascia and paired piers cream. D openings remain open; no glass infill. Minor hidden faces of actual columns/porch continue same material family; long unknown side walls/court depths/D inner faces and tops/roof/base neutral. No letters, tile texture, AC, new rails or2025condition claim. No geometry/face splits or printQA rerun','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-outer-wall-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; open courts and balconies remain open','Shi Xi is 時習大樓. Official school-history PDF physical page10 printed154 three photographs freshly viewed. Visible pale tiled exterior and original window material families support qualified continuity on full existing outside walls, outside window backs and reveals, front window reveals and floor-band returns. Opposite and hidden extent colors are inferred, not direct observation. The existing window backs are opaque glass/frame/reflection/shadow proxies, not pure glass or new windows. Courtyard walls and gallery recesses, D inner surfaces, roof fields, roof service core, artificial base and unknown step finishes stay unchanged. Photo dates unknown and mixed; no2026condition claim. Original geometry, precolored faces and all RGBA/roughness preserved. No letters, tile texture, AC, frame invention, geometry splits or printQA rerun','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((190,-250,150),(0,0,32),220),'rear':((-180,250,145),(0,0,32),220),'elevation':((0,-300,32),(0,0,32),220),'source-angle':((0,280,115),(0,0,32),220),'top':((0,0,400),(0,0,32),220)}
-out=R/'appearance';out.mkdir(exist_ok=True)
+views={'front':((190,-250,150),(0,0,32),220),'rear':((-180,250,145),(0,0,32),220),'elevation':((0,-300,32),(0,0,32),220),'source-angle':((0,280,115),(0,0,32),220),'left':((-320,0,145),(0,0,32),220),'right':((320,0,145),(0,0,32),220),'top':((0,0,400),(0,0,32),220)}
+out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
  inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ camera_records.append({'view':name,'location':list(c.location),'rotation_euler':list(c.rotation_euler),'ortho_scale':c.data.ortho_scale,'target':list(target)})
  scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
  data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
  while off<len(data):
@@ -132,4 +179,5 @@ for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.ite
   if not variable:cleaned+=data[off:off+length+12]
   off+=length+12
  (out/(name+'.png')).write_bytes(cleaned)
+if camera_records:(R/'render-cameras.json').write_text(json.dumps(camera_records,indent=2))
 print('APPEARANCE_DONE',before,dict(Counter(indices)))

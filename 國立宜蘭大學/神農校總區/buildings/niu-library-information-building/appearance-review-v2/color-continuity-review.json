@@ -1,0 +1,108 @@
+{
+  "status": "reviewed",
+  "reviewed_at": "2026-11-12T00:58:07.267274+00:00",
+  "all_nine_images_personally_viewed": true,
+  "images": [
+    {
+      "path": "appearance/front.png",
+      "sha256": "7f0f2e03b68c750e2ff9ca687f0f16bce73655daeb0f9a800b5e58c91639f8b0",
+      "personally_viewed": true,
+      "observations": "Front and right facade retain grey-taupe shading elements, opaque green-grey window backs and historical grey stairs; added white reveals sit within the existing openings. Both portico voids remain visibly open. Roof field, inner parapet and service block remain neutral. Full model fits the frame."
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "c2a07e5b1aa7d01392f441a049107fb42b0b8b2f14472850ced16c9c6cc08194",
+      "personally_viewed": true,
+      "observations": "Rear end, recessed return and oblique facade show continuous pale wall faces and existing opaque mixed window backs. Recess shapes and original rear-wing/oblique outline are intact, with no arbitrary diagonal paint patches or invented window frames. Roof and base remain neutral."
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "262a4726c2cb69fd824d1153a51595a53109d56ca04f40ea207c733d30833d5b",
+      "personally_viewed": true,
+      "observations": "Unequal left four-row and right three-row facade window groups, middle horizontal slits, lower right vertical slits and four upper right openings are intact. Original grey-taupe shades and grey stair scheme remain. Front returns are light within their existing cut boundaries; no letters or new openings."
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "a89debdd18abf3bf0740ce9243d064e208219ead2e5390b677cad8f5b2dcd955",
+      "personally_viewed": true,
+      "observations": "Front/right source-like view shows pale host walls and neutral grey-taupe shades with consistent complete window reveals. Both actual portico voids remain open. No stair artwork, geometry change or external texture. All edges fit the image."
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "7ad908b9936f6616ef9b501f55953a29ac8b028fee7600866aab2cacd81cd202",
+      "personally_viewed": true,
+      "observations": "Oblique flank and recessed return show existing seven-row shallow openings with grey-green opaque backs and continuous pale walls; original approximate geometry is unchanged. No false frames, strips or diagonal material boundaries. Neutral roof, parapet inner surfaces and base remain distinct."
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "71f97a189f27c71042b23bcb5401b18ab36933d9ed3f2b7861c4f96614fae368",
+      "personally_viewed": true,
+      "observations": "Original paired right-side windows, continuous central recess, grey-taupe shelves and front-side portico remain intact. New reveal surfaces remain inside original complete cuts, without closing open portico space."
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "542a9a787e0ad89dbcad76616f21292e3496800bfd6a97d30488ce59a3534faa",
+      "personally_viewed": true,
+      "observations": "Original trapezoid footprint, narrow rear wing, roof service block, parapet and stair projection preserved. Roof field, coping top and artificial base stay neutral; no invented roof equipment, images, text or geometry. All geometry fits the frame."
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "57b6c3d5d949b06b96891d122e8575fdafef237961b821d7705c2611233de1eb",
+      "personally_viewed": true,
+      "observations": "Restored original assignment at identical front camera confirms unchanged geometry, shade/entrance/stair palette and neutral roof/base. Final front view differs in previously neutral reveals and complete outer parapet faces, without repainting original colored surfaces."
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "cfd56a00fc52b88318f7dfff18e7feb572aa8d76ac7616f0c95486dd76366408",
+      "personally_viewed": true,
+      "observations": "Restored original rear camera confirms the missing-color condition: entire original rear, return, oblique wall and window recesses were neutral. Final view preserves the exact openings and outline while applying qualified wall/window continuity; roof and base remain unchanged."
+    }
+  ],
+  "before_after": [
+    {
+      "view": "front",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 73971,
+      "pixels_differing_by_more_than_8_rgb_levels": 25906,
+      "mean_absolute_rgb_difference": 1.1061046296296295,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    },
+    {
+      "view": "rear",
+      "same_camera_exact": "camera-consistency.json",
+      "pixel_values_differ": 235293,
+      "pixels_differing_by_more_than_8_rgb_levels": 204294,
+      "mean_absolute_rgb_difference": 11.830692592592593,
+      "limit": "Rendered differences include indirect lighting effects, not a per-pixel material-region proof. Face-level scope is verified independently."
+    }
+  ],
+  "render_settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 96,
+    "threads": 1,
+    "denoising": false,
+    "resolution": [
+      900,
+      800
+    ]
+  },
+  "observations": [
+    "All original front/right facade, shade blade, window and entrance/stair colors remain unchanged.",
+    "3195 originally neutral faces now use the same-building pale wall and opaque mixed window families. Unphotographed rear, return and oblique extents are explicit continuity inferences.",
+    "The modeled oblique facade, narrow rear wing and existing window recesses remain intact; no added or widened window or geometry.",
+    "Actual entrance and side portico open voids remain open. The historical grey stair scheme remains; no newer multi-color artwork, text, tile joints, fine frames or photos were added.",
+    "Roof fields, service core, inner parapet and coping, artificial base and unresolved mixed support faces remain neutral."
+  ],
+  "limitations": [
+    "This is continuity inference for simplified original geometry, not precise materials, actual glazing certification, current-condition evidence or survey reconstruction.",
+    "No physical trial print or fresh slicer toolpath. Original digital QA rerun is separately reported."
+  ],
+  "artifacts": {
+    "appearance.blend": "455e16286ff5a02463975a96fedf8d0fd30d141b7ad5c10131e885e702dc022f",
+    "appearance.3mf": "0a7fc2540c2b004d3b70c0ec1c7290f505c91f210355ca08299e08c4c240fcea",
+    "appearance-materials.json": "94d1a3176c178de5ae5a2d668d888c9aaa92c29e17ca98cba06d28671e9aee44",
+    "build_appearance.py": "4c512e589b072714d351b840088ef7a6bf2d9493705b6f2399e86e21fb195636",
+    "render_review.py": "5962ae8b31fe11eca638aeee3b03eb85d4973ac107fa00dab6988988b36af173"
+  }
+}
