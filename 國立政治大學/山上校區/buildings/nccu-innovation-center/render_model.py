@@ -32,7 +32,7 @@ for name,(loc,target,scale) in views.items():
   n=struct.unpack('>I',raw[pos:pos+4])[0];kind=raw[pos+4:pos+8]
   if kind not in [b'tEXt',b'zTXt',b'iTXt',b'eXIf']:clean+=raw[pos:pos+n+12]
   pos+=n+12
- p.write_bytes(clean);subprocess.run([os.environ.get('BUILD_PYTHON','python3'),str(A/'caption_preview.py'),str(p)],check=True);clean=p.read_bytes();records.append({'path':'previews/'+name+'.png','bytes':len(clean),'sha256':hashlib.sha256(clean).hexdigest(),'camera':loc,'target':target,'ortho_scale':scale,'all_vertices_in_frame':True,'caption':'官方PDF外觀平面參考版；攝年未知、非已核2026現況'})
+ p.write_bytes(clean);clean=p.read_bytes();records.append({'path':'previews/'+name+'.png','bytes':len(clean),'sha256':hashlib.sha256(clean).hexdigest(),'camera':loc,'target':target,'ortho_scale':scale,'all_vertices_in_frame':True,'caption_rendered':False,'caption_retained_as_metadata':'官方PDF外觀平面參考版；攝年未知、非已核2026現況'})
 camd.type='ORTHO';camd.lens=22;cam.location=views['front'][0];aim(cam,views['front'][1]);camd.ortho_scale=views['front'][2];scene.render.filepath='//previews/front.png'
 for screen in bpy.data.screens:
  for area in screen.areas:

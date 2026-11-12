@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "checks": {
+    "original_3mf_vertices_match": true,
+    "original_3mf_faces_exact": true,
+    "original_material_indices_exact": true,
+    "original_palette_match": true,
+    "no_rendered_text": true,
+    "stamp_disabled": true,
+    "portable_output": true
+  },
+  "images_sha256": {
+    "previews/elevation.png": "171ff36539d706ce2848054e5aafa97dccce8d0d2382895928ad282868fed181",
+    "previews/left_oblique.png": "9da059505547808752762645658d279e6bf4f706982aded8a5c2fe8340cd0bd7",
+    "previews/front.png": "341305011570fa9b66336d32980bb4f8237708c9f6acf478e1acc126b0396661",
+    "previews/rear.png": "94cba7d41c46cd0d5c1e70bb051fc86e881a8755d6572db2c6dee9c4517c9fbb",
+    "previews/top.png": "3692ac0a042fb1e9d02977d0bfee8a26bc32e037e6f5abbe1d5cef5113eaefd4"
+  },
+  "visual_review": "All five actual rendered views inspected in nccu-research-building-special-no-text-contact.jpg; no captions, original model/view angles retained.",
+  "reference_pixel_checks": {
+    "front.png": {
+      "outside_caption_max_difference": 0,
+      "outside_caption_mean_difference": 0.0
+    },
+    "rear.png": {
+      "outside_caption_max_difference": 0,
+      "outside_caption_mean_difference": 0.0
+    },
+    "top.png": {
+      "outside_caption_max_difference": 0,
+      "outside_caption_mean_difference": 0.0
+    }
+  }
+}

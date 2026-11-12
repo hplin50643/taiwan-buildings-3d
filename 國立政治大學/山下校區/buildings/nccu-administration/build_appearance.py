@@ -14,7 +14,7 @@ verts=[tuple(v.co) for v in mesh.vertices];faces=[tuple(p.vertices) for p in mes
 assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
-# Two official front/left photographs support original material families; opposite side/court/roof neutral.
+# Official front/left photographs anchor retained palette; v2 extends identified exterior families by inference.
 palette=[('Unknown opposite court roof surfaces neutral','#AAA79F',.86),('Observed front and left stone family','#B7B7B2',.86),('Opaque mixed actual front left and entry window backs','#525A5C',.66),('Original entry door backing muted mixed','#55504C',.7),('Original coarse doorway supports pale','#AFB0A8',.82),('Observed approximate original stair treads risers','#A2A7A4',.86)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
@@ -22,7 +22,7 @@ mesh.materials.clear()
 for name,col,rough in palette:
  m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
 import numpy as np
-EPS=.004;indices=[];original_scale=150/(118*1.7);inverse_scale=np.array([original_scale,original_scale*1.7,original_scale])
+EPS=.004;indices=[];original_indices=[];changed_faces=[];change_reasons={};original_scale=150/(118*1.7);inverse_scale=np.array([original_scale,original_scale*1.7,original_scale])
 def bounds(a,b):return bool(np.all(lo>=np.array(a)-EPS) and np.all(hi<=np.array(b)+EPS))
 def plane(k,t):return max(abs(q[:,k]-t))<EPS
 def front(x,y,z,w,h):return plane(1,y) and n[1]<-.999 and bounds((x-w/2,y,z),(x+w/2,y,z+h))
@@ -89,12 +89,40 @@ for p in mesh.polygons:
  for k in range(7):
   y=-57+k*1.3;h=.5+k*.65
   if front(0,y-.85,2.8,65,h) or (plane(2,2.8+h) and n[2]>.999 and bounds((-32.5,y-.85,2.8+h),(32.5,y+.85,2.8+h))):i=5
+ original_indices.append(i);reason=None
+ # v2: extend only identifiable existing surfaces, without mirroring geometry.
+ # Right wall and plain far rear are exterior envelope, not artificial cut caps.
+ if i==0 and abs(n[2])<.001:
+  if plane(0,66) and n[0]>.999 and bounds((66,-50,3),(66,50,106.4)):
+   i=1;reason='inferred_right_exterior_stone'
+  elif plane(1,50) and n[1]>.999 and bounds((-66,50,3),(66,50,106.4)):
+   i=1;reason='inferred_plain_rear_envelope_stone_no_new_windows'
+  # Right existing recessed loggia backs repeat left geometry; opaque mixed proxy.
+  for y in range(-41,46,7):
+   for z in [22,36,50,64,84,98]:
+    if plane(0,61.5) and n[0]>.999 and bounds((61.5,y-2.35,z),(61.5,y+2.35,z+8)):
+     i=2;reason='inferred_existing_right_loggia_back'
+    # Stone jamb returns only, never broad mixed backplanes or horizontal soffits.
+    for side in [-1,1]:
+     xa,xb=sorted((side*61.5,side*66))
+     if bounds((xa,y-2.35,z),(xb,y+2.35,z+8)) and ((plane(1,y-2.35) and n[1]>.999) or (plane(1,y+2.35) and n[1]<-.999)):
+      i=1;reason='side_loggia_vertical_stone_jamb_continuity'
+  for y in [-44,-26,-8,10,28,45]:
+   if boxsurface(64,y,2.8,4,4,15):i=1;reason='inferred_right_arcade_column_stone'
+  # Narrow outward vertical roof rim only; roof deck and inner court remain neutral.
+  if bounds((-67.5,-51.5,106.4),(67.5,51.5,108.1)) and ((plane(0,-67.5) and n[0]<-.999) or (plane(0,67.5) and n[0]>.999) or (plane(1,-51.5) and n[1]<-.999) or (plane(1,51.5) and n[1]>.999)):
+   i=1;reason='exterior_vertical_roof_rim_stone_continuity'
+  # Existing deep entrance sidewalls, not its void or unknown ground undercroft.
+  if bounds((-31,-50,3),(31,-30.5,81)) and ((plane(0,-31) and n[0]>.999) or (plane(0,31) and n[0]<-.999)):
+   i=1;reason='entrance_vertical_stone_return_continuity'
+ if i!=original_indices[-1]:
+  changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
-scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
 for attr in dir(scene.render):
@@ -124,9 +152,9 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original complete approximate building geometry and Ystretch preserved, no added components','Two actual fullsize official NCCU wiki photographs front and leftside personally read, capturedates unknown. Front and left original outer planes andentrybackwall stone; actual recessed frontrectangles andconnectedslots are opaque coarsewindow proxy, including original unsplit spandrel/curtain/shadow mixture notpuretransparentglass. Leftloggia originalbackplanes similarlymixed, no inventedrails. Trueentrybackwallwindowcuts anddoorback only, neverfill hugeportal/undercroft/courtvoids. Original portal/groundfront/leftarcade supports stone family withsmallhiddenface extrapolation disclosed. Original four doorway reliefbars, two sideposts andoverdoorbeam pale. Existingsevenstep front/top gray approximation notexactphoto count/dimensions. Unseenright/rear/court/roof/returns/undercroftceilings/base neutral. No newletters, solarequipment, fineframes, textures orgeometry. Original geometric andprintQA limits unchanged','No actual trial print; original approximate-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original complete approximate building geometry and Ystretch preserved, no added components','Two fullsize official NCCU wiki front and left photographs personally inspected; capture dates unknown. V2 infers the same stone on existing right exterior and simplified plain rear envelope, narrow exterior vertical roof rim, side loggia jambs, right arcade posts and entrance vertical returns. Existing right loggia backs receive the unchanged opaque mixed left-window proxy, not verified pure glass. No invented rear windows or new mesh. Court walls/windows, roof deck, base, unresolved mixed faces and horizontal undercroft soffits remain neutral. This is disclosed material continuity, not four-side photographic verification. Original geometric and printing caveats remain','No actual trial print; original approximate-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
-views={'front':((-230,-270,170),(0,0,40),215),'rear':((230,270,170),(0,0,40),215),'elevation':((0,-350,40),(0,0,40),215),'source-angle':((-270,-210,125),(0,0,40),215),'top':((0,0,380),(0,0,40),215)}
+views={'front':((-230,-270,170),(0,0,40),215),'rear':((230,270,170),(0,0,40),215),'elevation':((0,-350,40),(0,0,40),215),'source-angle':((-270,-210,125),(0,0,40),215),'left':((-350,0,155),(0,0,40),215),'right':((350,0,155),(0,0,40),215),'top':((0,0,380),(0,0,40),215)}
 out=R/'appearance';out.mkdir(exist_ok=True)
 for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
  c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale

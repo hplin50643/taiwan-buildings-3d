@@ -1,0 +1,73 @@
+{
+  "status": "reviewed",
+  "reviewed_at_utc": "2026-11-11T17:29:28.205086+00:00",
+  "scope": "Disclosed exterior material continuity from observed front/left to identified right/rear original surfaces; no geometry changes.",
+  "all_nine_images_personally_viewed": true,
+  "view_names": [
+    "front",
+    "rear",
+    "elevation",
+    "source-angle",
+    "left",
+    "right",
+    "top"
+  ],
+  "original_comparison_views": [
+    "right",
+    "rear"
+  ],
+  "comparison_layout": "Top row right-side camera; bottom row rear camera. In each row original on left, revised on right. No text overlays. Only original face-material indices restored for comparison; same camera, geometry, lighting, seed, engine and samples.",
+  "render_engine": "Cycles",
+  "render_device": "CPU",
+  "samples": 96,
+  "threads": 1,
+  "denoising": false,
+  "individual_image_size": [
+    900,
+    800
+  ],
+  "png_text_metadata": false,
+  "image_overlays": false,
+  "sources": [
+    {
+      "url": "https://nccuwiki.lib.nccu.edu.tw/index.php/行政大樓",
+      "local_source_sha256": "24a62813ad09c6e543f454c0e675aeb4bc00223e35db26acae47e4e92bc452f9",
+      "type": "official page"
+    },
+    {
+      "url": "https://nccuwiki.lib.nccu.edu.tw/images/f/f3/%E8%A1%8C%E6%94%BF%E5%A4%A7%E6%A8%93_%E5%81%B4%E9%9D%A2AA.jpg",
+      "local_source_sha256": "cd2bca2b351540b271ef583a3a6d503d5a780feeb40c0e702cf9cd2923c864c3",
+      "type": "personally viewed fullsize official front-left photograph"
+    },
+    {
+      "url": "https://nccuwiki.lib.nccu.edu.tw/images/b/b3/%E8%A1%8C%E6%94%BF%E5%A4%A7%E6%A8%93.jpg",
+      "local_source_sha256": "84f9709b4e096ffa47d78b5cce304702b59863f59f41f8c0cb7b8907fbc24d4e",
+      "type": "personally viewed fullsize official front photograph"
+    }
+  ],
+  "source_capture_dates": "Unknown; 1986 construction/1990 completion are not photographic dates.",
+  "source_photos_publicly_packaged": false,
+  "changed_faces": 1329,
+  "change_reason_counts": {
+    "inferred_plain_rear_envelope_stone_no_new_windows": 2,
+    "inferred_right_exterior_stone": 486,
+    "entrance_vertical_stone_return_continuity": 5,
+    "inferred_right_arcade_column_stone": 48,
+    "side_loggia_vertical_stone_jamb_continuity": 624,
+    "inferred_existing_right_loggia_back": 156,
+    "exterior_vertical_roof_rim_stone_continuity": 8
+  },
+  "observations": [
+    "Official front and front-left photos show a continuous low-saturation grey stone family across walls, columns and recess jambs; deep window backs are mixed dark appearances.",
+    "Right outer wall, existing right arcade columns, side recess vertical jambs and outward roof rim now follow the unchanged stone family. Existing right loggia backs use the unchanged opaque mixed dark proxy. This is inferred continuation, not newly verified right-side photography.",
+    "The original rear is an unbroken simplified exterior envelope, not an artificial slice through the building. Its stone assignment is explicitly inferred, with no rear windows created or existing plain shape certified.",
+    "Front established color assignments and overall silhouette stay intact. Court, roof deck, base, unclear mixed surfaces and horizontal undercroft soffits remain neutral.",
+    "All seven new render views and two original comparison renders were personally viewed with view_image. The comparison shows improved window/wall separation on the right and coherent rear stone tone without new geometry."
+  ],
+  "limitations": [
+    "No complete right/rear photographic verification or calibrated color measurement.",
+    "Original geometric simplifications, stretched plan proportions, open court and plain rear retained.",
+    "No physical test print or new slicer/toolpath QA.",
+    "Local preparation only; no GitHub upload or publication attempted."
+  ]
+}

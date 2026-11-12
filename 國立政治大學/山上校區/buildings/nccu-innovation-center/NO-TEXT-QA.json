@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "checks": {
+    "original_3mf_vertices_match": true,
+    "original_3mf_faces_exact": true,
+    "original_material_indices_exact": true,
+    "original_palette_match": true,
+    "no_rendered_text": true,
+    "stamp_disabled": true,
+    "portable_output": true
+  },
+  "images_sha256": {
+    "previews/elevation.png": "bd7dd841ecc998340e63864d276567e65a505dec70f0d656c60f0acd9e9cea38",
+    "previews/left_oblique.png": "5af335a991d420ae5d17aaeab33e3fe5c607a3d9738ea40ba7ef5208ca778462",
+    "previews/front.png": "56310ceff9f3b33f5d7fdd935d6ea684fd38ad2ce0f6bcea451c0e7eac0c9201",
+    "previews/rear.png": "deda89b53a3cfa844ee76caa70c65cf1eba52d1e031ed334b89244d8bfabc015",
+    "previews/top.png": "c760dfec18ee8410c2ba869363492d45dae92326308d05b0a87c598df2eaddd3"
+  },
+  "visual_review": "All five actual rendered views inspected in nccu-innovation-center-special-no-text-contact.jpg; no captions, original model/view angles retained.",
+  "reference_pixel_checks": {
+    "front.png": {
+      "outside_caption_max_difference": 0,
+      "outside_caption_mean_difference": 0.0
+    },
+    "rear.png": {
+      "outside_caption_max_difference": 0,
+      "outside_caption_mean_difference": 0.0
+    },
+    "top.png": {
+      "outside_caption_max_difference": 0,
+      "outside_caption_mean_difference": 0.0
+    }
+  }
+}

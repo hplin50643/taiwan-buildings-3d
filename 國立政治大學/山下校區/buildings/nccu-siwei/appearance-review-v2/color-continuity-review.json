@@ -1,0 +1,76 @@
+{
+  "status": "reviewed",
+  "scope": "Existing long side walls, deep piers, high-window backs/bars, front returns and vertical canopy/sill ends; rear main/service exterior walls; same-building material continuity with explicit inference.",
+  "view_names": [
+    "elevation",
+    "front",
+    "left",
+    "rear",
+    "right",
+    "source-angle",
+    "top"
+  ],
+  "render_engine": "Cycles",
+  "device": "CPU",
+  "samples": 96,
+  "threads": 1,
+  "denoising": false,
+  "image_size": [
+    900,
+    800
+  ],
+  "png_text_metadata": false,
+  "image_overlays": false,
+  "source_photo_publicly_packaged": false,
+  "sources": [
+    {
+      "url": "https://nccuwiki.lib.nccu.edu.tw/index.php/四維堂",
+      "date": "2023 photo, caption explicit",
+      "photo_sha256": "fb4f02cff0f4cb75ddc97e88ad0d6dc29a4713701bc535008bb71ab255a82837"
+    },
+    {
+      "url": "https://osa.nccu.edu.tw/CSRC/files/169362228269a7c8ada230d.pdf",
+      "pdf_pages_1based": [
+        48,
+        49,
+        50
+      ],
+      "date": "Form2021-10-01; side capture date unknown; PDF creation2026-03-04 is not capture date",
+      "pdf_sha256": "6f3b5072196adbac6f78211bc29b340fd2eaf91e6a6edce31b38063a04a97c75"
+    }
+  ],
+  "observations": [
+    "Official2023 front photograph confirms low-saturation grey-beige washed stone and pale window frame family.",
+    "Official PDF49 side photo pixels show same washed-stone side wall/deep pier and pale high window frames; partial tree and noticeboard occlusion.",
+    "Both full long sides are a same-building material inference; neither is claimed fully documented by direct photographs.",
+    "Seven rendered angles visually inspected; no new geometry, characters or overlays.",
+    "Front and left identical-camera originals also inspected against revised views.",
+    "Rear main/service exterior walls use explicit inferred material continuity without direct rear photo; no rear windows added. Roof/slope/roof edge, service block top, broad canopy tops, side canopy undersides, steps and base remain neutral."
+  ],
+  "changed_neutral_faces": 1230,
+  "change_categories": {
+    "long_side_wall_continuity": 192,
+    "rear_main_wall_inferred_continuity": 2,
+    "front_projecting_wall_returns": 25,
+    "front_entry_stone_returns": 6,
+    "front_window_stone_returns": 132,
+    "front_window_coarse_bar_returns": 54,
+    "front_canopy_end_fascia": 4,
+    "front_side_window_stone_returns": 80,
+    "front_side_window_coarse_bar_returns": 24,
+    "front_sill_fascia_returns": 8,
+    "side_structural_pier_continuity": 88,
+    "side_window_stone_returns": 240,
+    "existing_side_window_back_proxy": 20,
+    "existing_side_window_coarse_bars": 320,
+    "side_canopy_fascia_continuity": 12,
+    "side_entry_stone_returns": 9,
+    "existing_side_entry_back_proxy": 4,
+    "rear_service_wall_inferred_continuity": 10
+  },
+  "limitations": [
+    "Historical exterior approximation, not current repaired condition.",
+    "Uncalibrated photographic material values, partial side evidence and inferred opposite side.",
+    "Original dimensions/shape are approximate; no physical trial print."
+  ]
+}
