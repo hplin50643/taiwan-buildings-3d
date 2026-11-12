@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "reviewer": "Independent reviewer, not builder",
+  "source_review": "second-source-domain-review.json",
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "triangles": 1810,
+  "added_faces": [
+    443,
+    452,
+    463,
+    465
+  ],
+  "original_colored_faces": 1117,
+  "colored_faces": 1121,
+  "neutral_faces": 689,
+  "palette_entries_unchanged": 7,
+  "mixed_connected_domains_before": 46,
+  "mixed_connected_domains_after": 45,
+  "remaining45_domains_exact": true,
+  "actual_visual_review": {
+    "seven_full_views": "All seven views actually inspected via1400x600 independent contact",
+    "full_resolution_detail_views": [
+      "entry-detail.png",
+      "corridor-detail.png",
+      "roof-detail.png"
+    ],
+    "observations": "Top outward front member now joins existing4silver front verticals coherently. Roof top/side/back and inner underside remain unchanged; no diagonal partial triangle patches or changes to rear details. Original deliberate detail cropping retained."
+  },
+  "source_and_geometry_limits": [
+    "Official full photos show top front panel, but visibly greenish tone remains uncertain; ambient reflection plausible not proven. This is bounded same-frame nominal gray/silver-family inference, not verified silver paint or exclusion of green finish.",
+    "Actual top outer face is sloped/beveled; original vertical-box proxy unchanged and not geometrically certified.",
+    "No new top, underside21faces, rear, side, glasswall or adjacent-building material mapping.",
+    "Original nominal palette, approximate geometry, no physical print or slicer certification; private photos not redistributed."
+  ],
+  "model_and_3MF_verified": true,
+  "isolated_build_color_export_QA_checked": true,
+  "scene_independently_reopened": true,
+  "scene_mesh_transforms_camera_lights_render_unchanged": true,
+  "image_sha256": {
+    "preview.png": "7eb215c714a64112230510947d5e3b0cb906a4c9d070bc80cbec75b9695a5b3a",
+    "rear.png": "6ad3e8a178ec7a79c82f6ee8250ef98b9902339de59b6c1ef227d139e2ff60c8",
+    "front.png": "c4b9032244a28462791cd9279bca0d144c4d46f77022e6e7053f3fa22342a0bb",
+    "back.png": "730caae7cb1276601fcdaa2fcb704ae52de4c52b0fe408245ceeddfb169357d1",
+    "west.png": "fe7bf65e0fce772db0e9abceb39e3abbeaf5f40674f76e23792e87e5ba256e5e",
+    "east.png": "1ee6a80b2553cc839fd1d231614854cf6d1a7f55f39986850b8d960fe3f55a7a",
+    "top.png": "f72d42aba579e209e091dfc103cfbc671b51ea4d389bb2d5d30f6ccae6a994d9",
+    "entry-detail.png": "c89e310b48cdaff61b344a8a9204d0ade6662f184cedc6f4ff0abf1ddc96bc40",
+    "corridor-detail.png": "99d7dac46ffdb969284af539c0f93c4ae4d1b7201847384180683bf41088f7fb",
+    "roof-detail.png": "b05aaf8e5780ae54bcb76fe43cd63b991e71fbf4d52162cb08bd2df557275db4"
+  },
+  "file_sha256": {
+    "model.stl": "22f1971723e00c6a7c314d9a32b1cdb15fc52046829ea8bb3aa6b873dedba64f",
+    "build_model.py": "fe93cf99ebe458140e27ea8ffaa73d55ae27266a2896b2126b5631a5ac1c9e83",
+    "color-mesh.npz": "d84c9ae7bd478d950ac7b4751d300f1237d64f3e5bd6ab57c849c782d8805826",
+    "palette.json": "0a005848f5090700497a243e4b80d9900014fc0d6bbfd727827af1ec2b99a18e",
+    "appearance.3mf": "73898e540204345c263c3c653f2de130cb61ab18f0f06234545632589ddcb829",
+    "appearance-materials.json": "8d2cc127bb83f5897d12c2d1d01a486b65a461e812893de723d29f8403608b71",
+    "scene.blend": "4e054e222318504a5eff6fba2ae7ae2a51f115c1945993f56abd8bcd2e38c3e8",
+    "colorize_model.py": "186b89c536481c27ffee187a9af0186435156aa205bd98a910eb62ae1d3fcfb2",
+    "export_appearance.py": "a076b05f4ce0cef286da97a954b43578a432cb97d46342621caa94c38e2247a1",
+    "validate_color.py": "d36ff8ff42c35eda1576504ec9401f7ddcb862336312923ffcee28ec2bb6accf",
+    "verify_color_scene.py": "893098efd3cd915762170e813a687ac298c4bc2a605c9bc4d95b757d7e879584",
+    "render_color.py": "26228ded361593b09222f5afa053c402fc03172d92a1a1dd1587f0b2a0870e89",
+    "README.md": "9553fe002ad886f0058dc2a668dca408cf99d9dcc1a5b3549d11661a8bfde733",
+    "CHECKSUM-SCOPE.md": "1bc78a3808b825921bb4f6ddbf53204aece0e607b8dc0e2cd66eff44685daff0",
+    "COLOR-ASSIGNMENT-QA.json": "97d94aac248a0e17702dbf56abc53b0e151d234ef85e4808106037a2bf5c160b",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "a14f4610e3b2cd69f0648652a809da51f50b06496cc39bfe6d418ff69ffc68f3",
+    "SCENE-QA.json": "3fda765dc15aa6dd2bdf76c9cd584f20e8718f2c79a4fd308f04b81e202e4d44",
+    "TOP-FRAME-FRONT-SCENE-QA.json": "3020b7f0b07b8ddcfc454b5c9e7002fcf086a7a54cd1bc5396e3eed5c244f505",
+    "TOP-FRAME-FRONT-SOURCE-QA.json": "a47a2b2412095e87a0627834505e044a1c90bb295b736868ec6eea109c254140",
+    "COLOR-SOURCE-REGISTER.json": "a47a2b2412095e87a0627834505e044a1c90bb295b736868ec6eea109c254140"
+  },
+  "blockers": [],
+  "published": false
+}

@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in chi-duan-building-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "1dbf6c7ce15f39a6c5810c9a55cee836fe40ccd8b4e83c949c1af7bc58a662b1",
-    "corridor-detail.png": "8ffaba682f964eff6211dd8e04a3593610df275a2a4e65663260aa0c142efad8",
-    "east.png": "8970803cb7d1bca69a173757fe45ebbac55c70fb7eaec3f9ea29aac46dbe4d1d",
-    "entry-detail.png": "419ec2347a0014d1e7c26970794700e6d01d175d9401fd0f8bd8a93cbf3c14bf",
-    "front.png": "5776e448ce3a80ed4419678fbfcc83b36d33f2bff3aba745b4670d5fca1f6457",
-    "preview.png": "59d02d62369fd648189d13356f33f6757f2df6826d990f2a1488b9cacd7f1334",
-    "rear.png": "238784d8ec66d91fab36261f7a16ef00061c911f20777d4806c63db5314e5475",
-    "roof-detail.png": "204fb0da0c646304f65969b07f9ce4829dbe415ab954d72cfea5f600a2529a1b",
-    "top.png": "a34c84606bed8812351d3c1efe6e3540c6c643c43fed5efcd50e955f12a20add",
-    "west.png": "d4f5cb9838ad7dce090e7516296bc8f33b02d02aff16d9bb3c8a3f4b3644c08f"
-  }
+    "preview.png": "7eb215c714a64112230510947d5e3b0cb906a4c9d070bc80cbec75b9695a5b3a",
+    "rear.png": "6ad3e8a178ec7a79c82f6ee8250ef98b9902339de59b6c1ef227d139e2ff60c8",
+    "front.png": "c4b9032244a28462791cd9279bca0d144c4d46f77022e6e7053f3fa22342a0bb",
+    "back.png": "730caae7cb1276601fcdaa2fcb704ae52de4c52b0fe408245ceeddfb169357d1",
+    "west.png": "fe7bf65e0fce772db0e9abceb39e3abbeaf5f40674f76e23792e87e5ba256e5e",
+    "east.png": "1ee6a80b2553cc839fd1d231614854cf6d1a7f55f39986850b8d960fe3f55a7a",
+    "top.png": "f72d42aba579e209e091dfc103cfbc671b51ea4d389bb2d5d30f6ccae6a994d9",
+    "entry-detail.png": "c89e310b48cdaff61b344a8a9204d0ade6662f184cedc6f4ff0abf1ddc96bc40",
+    "corridor-detail.png": "99d7dac46ffdb969284af539c0f93c4ae4d1b7201847384180683bf41088f7fb",
+    "roof-detail.png": "b05aaf8e5780ae54bcb76fe43cd63b991e71fbf4d52162cb08bd2df557275db4"
+  },
+  "mesh_sha256": "d84c9ae7bd478d950ac7b4751d300f1237d64f3e5bd6ab57c849c782d8805826",
+  "independent_visual_review": "TOP-FRAME-FRONT-INDEPENDENT-QA.json",
+  "previous_qa": "qa/top-frame-front-previous/NO-TEXT-QA.json"
 }

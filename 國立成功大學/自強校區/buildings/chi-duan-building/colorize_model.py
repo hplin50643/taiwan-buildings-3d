@@ -27,9 +27,14 @@ for i,(x,y,z) in enumerate(c):
  for a in range(10,55,3):
   if lo[0]>=a-.601 and hi[0]<=a+.601 and lo[1]>=44.799 and hi[1]<=46.801 and lo[2]>=17.999 and hi[2]<=100.001:mat[i]=5
  if abs(y-44.55)<.002 and abs(x-20)<6.501 and any(a-.001<z<a+12.001 for a in [24,45,66,87]):mat[i]=2
- # Entire upper transverse frame, horizontal main roof and plain side walls stay neutral.
+ # Upper frame initially neutral; bounded front update below. Horizontal main roof and plain side walls stay neutral.
  if z>=107.899 or (lo[2]>=106.999 and lo[1]>=-44.001 and hi[1]<=-23.999):mat[i]=6
+original=mat.copy()
+added=(abs(t[:,:,1]+44).max(1)<.001)&(t[:,:,2].min(1)>=106.999)&(t[:,:,2].max(1)<=115.001)&(original==6)
+assert np.flatnonzero(added).tolist()==[443,452,463,465]
+mat[added]=1
+assert np.array_equal(mat[~added],original[~added])
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=mat)
 (R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');assert len(np.unique(mat))==7
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int(np.sum(mat==i))}for i,(a,b)in enumerate(pal)],'geometry_policy':'1810 original triangles unchanged.','limits':'Only existing discrete panes colored; no continuous glazing, added fins or gray band boundaries. Top transverse frame, roofs, connecting sides and obscured base neutral.','printing':'Seven appearance labels are not a tested multi-filament slicer project.'},indent=2)+'\n')
-q={'status':'PASS','original_STL_sha256':EXPECTED,'triangles':len(m.faces),'materials_used':np.unique(mat).tolist(),'bounds_mm':m.bounds.tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2)+'\n');print(q)
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int(np.sum(mat==i))}for i,(a,b)in enumerate(pal)],'geometry_policy':'1810 original triangles unchanged.','limits':'Only existing discrete panes colored; no continuous glazing, added fins or gray band boundaries. Top frame front4faces now silver; roofs, frame inner/top/back/sides and connecting walls remain original.','printing':'Seven appearance labels are not a tested multi-filament slicer project.'},indent=2)+'\n')
+q={'status':'PASS','new_faces':4,'new_face_indices':np.flatnonzero(added).tolist(),'original_STL_sha256':EXPECTED,'triangles':len(m.faces),'materials_used':np.unique(mat).tolist(),'bounds_mm':m.bounds.tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2)+'\n');print(q)

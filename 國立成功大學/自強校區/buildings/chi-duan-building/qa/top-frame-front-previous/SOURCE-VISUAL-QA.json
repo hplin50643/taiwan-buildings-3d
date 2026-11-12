@@ -1,0 +1,106 @@
+{
+  "status": "PASS_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE_WITH_DOCUMENTED_LIMITS",
+  "reviewed_utc": "2026-11-02T14:41:00Z",
+  "personally_viewed": [
+    "official-opening-building.jpg",
+    "official-side.jpg",
+    "official-corner.jpg",
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "west.png",
+    "east.png",
+    "top.png",
+    "entry-detail.png",
+    "corridor-detail.png",
+    "roof-detail.png"
+  ],
+  "original_STL_sha256": "22f1971723e00c6a7c314d9a32b1cdb15fc52046829ea8bb3aa6b873dedba64f",
+  "mesh_sha256": "c401966ad8ac3735c0549e1c6f2acebbdeedfe61f631e26b4d4fd75d013addeb",
+  "build_code_sha256": "fe93cf99ebe458140e27ea8ffaa73d55ae27266a2896b2126b5631a5ac1c9e83",
+  "render_code_sha256": "762fe1533981be2d74206347cfdf0f710d82c4108128c937fc05e238b0005fc1",
+  "readme_sha256": "64c6f9f78f076e12525da0e16da72cb1692c8ff4f34febf1056e2336083d2237",
+  "png_sha256": {
+    "preview.png": "a2b8de9f4668639c74d74bf14683098602f0f89df2a40ca7b61c7889220b5be9",
+    "rear.png": "a1f8eb0620c2489092317ba28b9ee64946b07ce0325967d37612d52e5e6ff1ec",
+    "front.png": "8c4183c57ba02189c27aa4c32ba8fa25927f4733215cf3ffb42a79cdf4af3214",
+    "back.png": "563bbe6ad90275cdc7a0094bf772646618e4090e5587364dd5068c8f8ad363bb",
+    "west.png": "2302984f0669360cf7cbe61f1648f8d848b2ed502df9555bdc409827d477e748",
+    "east.png": "3c1ba0281485f5335afcc75e61c1c1d7aefa9ec6a46ed69f403c745748ce90fa",
+    "top.png": "ce982e4feab0611c6ee3581575184b6279b36d7f5f27860aadd33e6f9dedbf66",
+    "entry-detail.png": "95d4a1d988cafe4ccc5a585bf9d643a2cacd15b09b33afc619cd65b8ea59ae75",
+    "corridor-detail.png": "a4bba7a4a38e1bf9ca967e3a765c90e501448624ecf83316ff13d43528fec441",
+    "roof-detail.png": "f30c9b3422aa47a13d06553de20012168d6684366894147d5edf10e2cc8392fd"
+  },
+  "bound_files_sha256": {
+    "build_model.py": "fe93cf99ebe458140e27ea8ffaa73d55ae27266a2896b2126b5631a5ac1c9e83",
+    "colorize_model.py": "6a2663a142b64488f354c52791d65bd2b8db785a0d35f29cbf7856a9d16a4240",
+    "export_appearance.py": "a076b05f4ce0cef286da97a954b43578a432cb97d46342621caa94c38e2247a1",
+    "render_color.py": "762fe1533981be2d74206347cfdf0f710d82c4108128c937fc05e238b0005fc1",
+    "verify_color_scene.py": "893098efd3cd915762170e813a687ac298c4bc2a605c9bc4d95b757d7e879584",
+    "validate_color.py": "8ec27134cce7182f10cbceed4e2a9f6c35879ffc8119e76775119aad46d01fbe",
+    "README.md": "64c6f9f78f076e12525da0e16da72cb1692c8ff4f34febf1056e2336083d2237",
+    "COLOR-SOURCE-REGISTER.json": "4c7722154009450d8a8aa422d2f5ee0960733b6d5b30215bfa0b10f0c7ac789f",
+    "palette.json": "0a005848f5090700497a243e4b80d9900014fc0d6bbfd727827af1ec2b99a18e",
+    "appearance-materials.json": "15d55be92cc2767bd7d9a53c03155a1e678ee6bc54bf39f4115980b18471c559",
+    "scene.blend": "2cf4f48e6b005354f44c282e69fc5e7780b8a7c970db186f36f85e5f6595c23a",
+    "appearance.3mf": "73f6d4639e80362a6028161679d3279907ff83eaa3976f7e829153bd40178146"
+  },
+  "source_hashes": {
+    "official-opening-building.jpg": "582d846c4fb7abcc688e5d1c77e1401e7eabb5a3207857709b9bd13df0f19d45",
+    "official-side.jpg": "52baa8c1e8313f56131b1a62a7e0c349e15a7f016e7c136ef1d3dbb5ec419131",
+    "official-corner.jpg": "5ca671adc42e1f82effe0afba94a602582c172218c54c5b42902413a8e9083d9",
+    "CHI_DUAN-COLOR-SOURCE-GO-1419.json": "472b3221ffedf7f75bd18e10716491072640b68d065cdd8b9b545fe26c208022",
+    "CHI_DUAN-INDEPENDENT-FACE-COLOR-REVIEW-1418.json": "2f8c3eabdc18e6380a0fe41ce955a9d376178763ff11afa259146e4edbcab5fb"
+  },
+  "geometry": {
+    "triangles": 1810,
+    "vertices_exact": true,
+    "faces_exact": true,
+    "STL_bytes_exact": true,
+    "build_code_bytes_exact": true
+  },
+  "material_face_counts": {
+    "0": 220,
+    "1": 57,
+    "2": 387,
+    "3": 78,
+    "4": 36,
+    "5": 339,
+    "6": 693
+  },
+  "numeric_focus": {
+    "rear_gray_strip_faces": [
+      118,
+      130,
+      134,
+      135,
+      159,
+      160,
+      175,
+      176
+    ],
+    "rear_gray_strip": "Eight triangles form four complete rectangular spandrels, not a continuous invented vertical frame.",
+    "upper_horizontal_roof_and_top_frame_faces": 8,
+    "upper_horizontal_all_neutral": true
+  },
+  "visual_findings": [
+    "All ten final views personally inspected: no artificial diagonal paint patch or inconsistent planar material region identified.",
+    "Front vertical silver frame distinct from dark columns/shade shelves; existing discrete blue-gray recesses not whole-wall glazing; blue entry canopy localized.",
+    "Entire upper transverse frame neutral, as full source photograph does not establish its finish.",
+    "Rear warm wall, four existing rectangular gray window spandrels, discrete blue-gray backs and pale simplified fins remain separate; dark terrace recesses not asserted glass.",
+    "Unknown connecting sides and roof remain neutral; no neighboring brick colors borrowed.",
+    "Seven overall views complete; three details intentionally cropped. Captions remain legible."
+  ],
+  "limitations": [
+    "1810-face simplified original geometry is preserved, not newly certified accurate architecture.",
+    "No new faces, frames, letters or photo textures; original source photographs remain private.",
+    "Rear gray bands are not the complete continuous silver frame shown in photographs.",
+    "Seven appearance labels do not constitute verified slicer filament assignments or an actual print.",
+    "Different source publication/upload dates do not establish one precise survey date or 2026 condition.",
+    "Source noncommercial/credit restrictions retained; no third-party commercial rights guarantee."
+  ],
+  "document_review": "README reviewed including explicitly separated original monochrome history; current scope and source register agree.",
+  "scope": "Independent source-photo, code/material-region, exact geometry and ten-image review; separate builder format/rebuild/reopen results not substituted for visual inspection."
+}
