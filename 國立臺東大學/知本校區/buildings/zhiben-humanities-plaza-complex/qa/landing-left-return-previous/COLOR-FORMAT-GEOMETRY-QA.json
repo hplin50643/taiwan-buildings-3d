@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checks": {
+    "original_STL_bytes_unchanged": true,
+    "4742_triangles_preserved": true,
+    "triangle_coordinates_unchanged": true,
+    "watertight": true,
+    "single_positive_volume": true,
+    "finite_and_nondegenerate": true,
+    "two_materials_actually_assigned": true,
+    "3MF_mm": true,
+    "3MF_vertices_same": true,
+    "3MF_faces_same": true,
+    "3MF_material_assignment_exact": true,
+    "3MF_object_identity": true,
+    "isolated_original_STL_hash": true,
+    "isolated_color_mesh_hash": true,
+    "isolated_palette_assignment_hash": true,
+    "inputs_unchanged_during_QA": true
+  },
+  "color_mesh_sha256": "a0b6b4a97b5862d8ba5449531373d1d91d16f1b465f6104d1b13842f5d2c1c24",
+  "original_STL_sha256": "a2766d109052b10610b3bbcfa20b27d854ac8b18bbc5521a27bfc857ec8c80e2",
+  "bounds_mm": [
+    [
+      -75.0,
+      -55.0,
+      0.0
+    ],
+    [
+      75.0,
+      55.0,
+      47.900001525878906
+    ]
+  ],
+  "retained_rebuild": "Isolated rebuild retained privately; no automatic file deletion.",
+  "limitations": [
+    "Color model uses original unrefined geometry; no new facade accuracy claim.",
+    "Two base-material labels are not a tested four-filament slicer project.",
+    "STL format itself does not contain color."
+  ],
+  "metadata_v2": {
+    "expected_object_name": "Zhiben Humanities Plaza Complex partial color",
+    "3MF_reopen_name_check": true,
+    "XML_except_name_byte_identical": true,
+    "original_isolated_rebuild_evidence_carried_forward_for_unchanged_inputs": true
+  }
+}
