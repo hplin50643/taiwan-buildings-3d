@@ -1,0 +1,31 @@
+{
+  "slug": "nsysu-library-information",
+  "geometry_target": "geometry/v2/model.stl",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "NSYSU-LIBRARY-V2-COLOR-SOURCE-GO-1422.json",
+    "sha256": "55e0910c064237e4c8bd3ca6bd471281e8be937a2191804e76e298f0bbd84dfa"
+  },
+  "review_sha256": "308a7dbdbefe042aed5a87695c57ec4836625bd4cf71674a7fced28ab9a4f167",
+  "source_image": {
+    "file": "official-campus-undated.jpg",
+    "sha256": "f9725c13b451983e909e99c1919b020d75ea1eb11248636924e819b0dd8c7ffb"
+  },
+  "source_url": "https://www.nsysu.edu.tw/static/file/0/1000/pictures/561/m/mczh-tw1920x1200_large98856_852303433549.jpg",
+  "limits": [
+    "No arc recess interior/underside/top/rear/long elevations/roof machine color inferred.",
+    "South is original drawing/entry-relative label, not surveyed world orientation.",
+    "Model bridge connector artificial closure not real facade; remain neutral.",
+    "Commons2024 original pixels GET403 stopped and not used; 2026 photo only original citation, not read or used as color evidence.",
+    "Preserve all original v2 geometry/source/printability limits and original previews; no globalQA recertification or current/asbuilt assertion.",
+    "One existing mainblock; no newbuilding/count increase; still partial."
+  ],
+  "original_QA_scope": "All originalQA binds only complete original-version tree, not newroot; no globalQA recertification",
+  "parent_domain": {
+    "file": "BUILDER-PARENT-COMPLETE-V2-SOUTH-CROWN-1424.json",
+    "sha256": "8e6271ff19b1e6303ba5141dc0b4582471ccd1ee3937a58a1fd01b5d725b94be"
+  }
+}

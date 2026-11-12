@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-12T09:03:01.221193+00:00",
+  "scope": "Independent bounded front-column color review; not a full-exterior or printability certification.",
+  "blockers": [],
+  "numeric_checks": {
+    "vertices_exact": true,
+    "faces_exact": true,
+    "38898_triangles": true,
+    "STL_unchanged": true,
+    "build_unchanged": true,
+    "params_unchanged": true,
+    "original_179_preserved": true,
+    "new_328": true,
+    "color_counts": true,
+    "independent_original_cylinder_domains": true,
+    "only_front_side_faces": true,
+    "no_adjacent_coplanar_split": true,
+    "3mf_vertices": true,
+    "3mf_faces": true,
+    "3mf_materials": true,
+    "official_reference_hash": true
+  },
+  "scene_checks": {
+    "camera": true,
+    "lights": true,
+    "render": true,
+    "mesh_objects": true,
+    "vertices_match": true,
+    "faces_match": true,
+    "materials_exact": true,
+    "mesh_sha": true,
+    "text_hidden": true,
+    "notice_hidden": true,
+    "no_stamp": true,
+    "two_material_slots": true,
+    "palette_0": true,
+    "palette_1": true
+  },
+  "face_counts": {
+    "original_colored": 179,
+    "newly_colored": 328,
+    "colored_total": 507,
+    "unknown_neutral": 38391,
+    "total_triangles": 38898,
+    "columns": [
+      84,
+      80,
+      80,
+      84
+    ]
+  },
+  "findings": [
+    "Personally inspected the official undated photograph. The entrance-facing four columns have a warm gray-brown brick family, supporting the bounded nominal material choice.",
+    "Independently reconstructed original cylinder facets using triangle normals snapped to the nearest original 32-gon facet and finite all-vertex bounds. The 328 selected faces exactly match the material changes.",
+    "The original 179 crown faces retain their material. All vertices and triangles, STL, build source and parameters are unchanged; 3MF matches the mesh and materials.",
+    "Viewed all ten completed rendered images, including full-size front and crown detail. Only the front columns show the new color; windows, other walls, rear columns and roof remain neutral. No caption overlays were visible.",
+    "Reopened the final scene and checked geometry, materials, camera, lights and render settings. Hidden caption/backdrop remain hidden and stamps are off.",
+    "README explicitly discloses back-facing same-column color continuity as inference and retains partial-color and original printability limitations."
+  ],
+  "image_sha256": {
+    "preview.png": "05e4b2a563f9d51576bb368b58eb169fab7445c24a260b87434e5efbc0eab921",
+    "rear.png": "3bebe33c6d2dbd8896e3a8c9040028cef19ff21e8502bf373871a29e47d45b4e",
+    "front.png": "913327058f5bc25748a51b5adedb7ef750969d9dd89edc29aacb15ef4baa52bc",
+    "back.png": "044bbfcc4245e7929e78e656dbe1948e0d57e57ed43ac0a9bab41735f9b3c6b8",
+    "west.png": "5d63016941974fb5e46db7c3ffd8235e55f18f99f9e8607cdbe758e3118370c0",
+    "east.png": "2172de93ee864cb37b43f92bfae778557931683f642c84f1d3190ed5d3aab770",
+    "top.png": "7b6000fca00b3af0fe1a7f6dd6be2331021d5fa3442592f31235fd3efe40da46",
+    "entry-detail.png": "48274904bb19e188f44d0b00a768cd1c2041afbaac9ef41d56d6dc52f996bd1e",
+    "facade-detail.png": "7a65edc5b61339f643088da04f166a5ba851f88d77d25edf5cbd1465c67365e4",
+    "roof-detail.png": "29de5f6ca85d76284820d34efabad13934b2cd6e6da6226abf22d1473eeaad4a"
+  },
+  "file_sha256": {
+    "color-mesh.npz": "0a61097133c46478259ff09e00a630b0e5ac2560a09e848e2b86c51adf556583",
+    "colorize_model.py": "54c4fb973336e940794b56dd9349cc5c0d57fb82364243e63659fec7bdd5040b",
+    "appearance.3mf": "b6861060d6878aabe7d7ebf650babd4520739708a9dd5039487bb7db3ae37986",
+    "scene.blend": "47c1585d808ee274fffe51886c72b4f01d5516b5615204bf21118ab1aa3a61e4",
+    "README.md": "bda9c8d300195fae09295ec59ff20f9885b5303d896078bfc3c6b734abe6fded",
+    "FRONT-COLUMN-SOURCE-QA.json": "9f30a0f159bc28c686c3d0cf847443580e547c041559d3213839fa284673ac61"
+  },
+  "reference_sha256": "f9725c13b451983e909e99c1919b020d75ea1eb11248636924e819b0dd8c7ffb",
+  "limits": [
+    "The photograph is undated; no certified 2026 or as-built condition is claimed.",
+    "Nominal brick family, not a measured exact color swatch. Unseen/back-facing surfaces of the same four columns are inferred.",
+    "No changes to crown recesses, other facades, rear columns, windows, roofs or geometry.",
+    "Original simplified geometry and printability limitations remain; no physical print."
+  ],
+  "numerical_tolerance_note": "Original float32 STL triangulation produces side-normal angular jitter up to 5.2e-5 radians. Independent classification snaps normals to known original facets, then checks every vertex against those facet planes within 2e-5 mm; no coordinates are altered."
+}

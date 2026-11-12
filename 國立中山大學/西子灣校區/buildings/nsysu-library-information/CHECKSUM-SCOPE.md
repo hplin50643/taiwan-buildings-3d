@@ -1,3 +1,9 @@
+# 2026-11-12 前圓柱局部配色校驗範圍
+
+根 SHA256SUMS 核驗本次候選的當前檔案，FRONT-COLUMN-FREEZE-MANIFEST.json 保存完整凍結清單；兩者不自我循環。舊校驗表、README 與受替換 QA 保留於 qa/front-column-previous/，只供歷史查核，不驗證本次新檔案。原 FREEZE-MANIFEST.json、PUBLICATION-SUPPLEMENT-MANIFEST.json 及 INDEPENDENT-COLOR-VISUAL-QA.json 保留原版本作用域，不視為本次重簽。
+
+以下保留先前補充原文（如有），只描述先前版本。
+
 # 校驗版本與原檔交付範圍說明
 
 本說明是追加的發布補充，未修改本機原凍結模型、README、舊校驗表或原 FREEZE-MANIFEST.json。此處未修改凍結原件不表示遠端同名根校驗表仍保留舊 bytes；根表新版取代與巢狀表保留的差異詳見下文。原凍結清單不包含本補充。

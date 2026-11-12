@@ -1,0 +1,40 @@
+{
+  "status": "BOUNDED_FRONT_COLUMN_CANDIDATE",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "building": "nsysu-library-information",
+  "source": {
+    "url": "https://www.nsysu.edu.tw/static/file/0/1000/pictures/561/m/mczh-tw1920x1200_large98856_852303433549.jpg",
+    "sha256": "f9725c13b451983e909e99c1919b020d75ea1eb11248636924e819b0dd8c7ffb",
+    "capture_date_verified": false,
+    "private_pixels_only": true
+  },
+  "observed": "The four cylindrical columns of the entrance-facing short facade have a warm gray-brown brick family. The original south crown color is retained.",
+  "inferred": "Unseen/back-facing portions of the same four columns use nominal continuous color. No assertion that all facade pixels share an exact measured hue.",
+  "domains": "Original 32-facet cylinder boundary planes, all triangle vertices within the finite original radius and height. No triangle cutting.",
+  "face_counts": {
+    "original_colored": 179,
+    "newly_colored": 328,
+    "colored_total": 507,
+    "neutral": 38391,
+    "total": 38898
+  },
+  "geometry_unchanged": true,
+  "count_delta": 0,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "exclusions": [
+    "back columns",
+    "all other walls",
+    "crown recesses",
+    "column end caps",
+    "roof",
+    "windows and doors",
+    "source pixels"
+  ],
+  "limitations": [
+    "The official photograph is undated, not a certified current or as-built state.",
+    "Nominal color family, not a calibrated brick swatch.",
+    "Original independent display scale, simplified main-block geometry, source limits and printability constraints remain.",
+    "No physical print or new global printability endorsement."
+  ]
+}

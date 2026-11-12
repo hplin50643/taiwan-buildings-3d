@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded front-column update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T09:03:28.834483+00:00",
+  "triangles": 38898,
+  "original_color_faces": 179,
+  "new_color_faces": 328,
+  "colored_faces": 507,
+  "unknown_neutral_faces": 38391,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "4fde918dd4060a88e5ed64b03e6a233e8e34d176306fd21f16cbd171e14acb35",
+  "color_mesh_sha256": "0a61097133c46478259ff09e00a630b0e5ac2560a09e848e2b86c51adf556583",
+  "images_sha256": {
+    "preview.png": "05e4b2a563f9d51576bb368b58eb169fab7445c24a260b87434e5efbc0eab921",
+    "rear.png": "3bebe33c6d2dbd8896e3a8c9040028cef19ff21e8502bf373871a29e47d45b4e",
+    "front.png": "913327058f5bc25748a51b5adedb7ef750969d9dd89edc29aacb15ef4baa52bc",
+    "back.png": "044bbfcc4245e7929e78e656dbe1948e0d57e57ed43ac0a9bab41735f9b3c6b8",
+    "west.png": "5d63016941974fb5e46db7c3ffd8235e55f18f99f9e8607cdbe758e3118370c0",
+    "east.png": "2172de93ee864cb37b43f92bfae778557931683f642c84f1d3190ed5d3aab770",
+    "top.png": "7b6000fca00b3af0fe1a7f6dd6be2331021d5fa3442592f31235fd3efe40da46",
+    "entry-detail.png": "48274904bb19e188f44d0b00a768cd1c2041afbaac9ef41d56d6dc52f996bd1e",
+    "facade-detail.png": "7a65edc5b61339f643088da04f166a5ba851f88d77d25edf5cbd1465c67365e4",
+    "roof-detail.png": "29de5f6ca85d76284820d34efabad13934b2cd6e6da6226abf22d1473eeaad4a"
+  },
+  "current_independent_review": "FRONT-COLUMN-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Nominal color and inferred continuity for return faces, not measured current condition.",
+    "Original geometric and source limitations remain; no global printability recertification.",
+    "No physical print."
+  ]
+}
