@@ -1,3 +1,9 @@
+# 2026-11-12 入口框架更新的校驗範圍
+
+目前根 SHA256SUMS 已為本次入口框架候選重新建立，核驗其明列的當前檔案。ENTRY-FRAME-FREEZE-MANIFEST.json 是本次新增清單，不自列以避免循環。前一版本根校驗表、README 及受替換 QA 已保存在 qa/entry-frame-previous/，只作歷史證據，不能在該目錄直接當作當前檔案的校驗表。原 FREEZE-MANIFEST.json、PUBLICATION-SUPPLEMENT-MANIFEST.json 與 INDEPENDENT-COLOR-VISUAL-QA.json 均保留其原版本作用域；本次 QA 不追認它們的舊雜湊為新檔案。
+
+以下為先前發布補充的原文，描述當時的檔案狀態。
+
 # 校驗版本與原檔交付範圍說明
 
 本說明是追加的發布補充，未修改本機原凍結模型、README、舊校驗表或原 FREEZE-MANIFEST.json。此處未修改凍結原件不表示遠端同名根校驗表仍保留舊 bytes；根表新版取代與巢狀表保留的差異詳見下文。原凍結清單不包含本補充。

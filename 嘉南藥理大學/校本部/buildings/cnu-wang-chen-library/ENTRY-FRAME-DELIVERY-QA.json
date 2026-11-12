@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Bounded entrance-frame update; not a full color, geometry or printability certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "checked_at": "2026-11-12T08:55:09.014720+00:00",
+  "triangles": 65686,
+  "original_color_faces": 48,
+  "new_color_faces": 91,
+  "colored_faces": 139,
+  "unknown_neutral_faces": 65547,
+  "geometry_unchanged": true,
+  "original_STL_sha256": "353a5ce7fcd15a798f8bbf932e73d67b95ef856c60623cc3d7831f46dd609897",
+  "color_mesh_sha256": "797b2e941fbc089c1bf602e96e3b69a2f8797f08d8af5e0806b6383b7a25573a",
+  "images_sha256": {
+    "preview.png": "9419017e0cf3eee7333dbf2f9736b284d9dc1549226ede398b338e194b816866",
+    "rear.png": "96e2321f9ddb99a660b13d1a3c37b21c00de262b6efe2f2df9f63d9edac8309e",
+    "front.png": "0bd56be345255212b14ae3b80d31584af8b03f3b5a5ee10590c578eca9b6e3d3",
+    "back.png": "5becc124f07e504013253bef359ed0bb5c69d82bb3d5deb8b70a43bd9ddd7761",
+    "west.png": "de1541e0a429c57b07f0fff1cd7da37465363d463ddd5e8d82f2ce267f847e4e",
+    "east.png": "6eaae28e904bf4ec79a0fb37e2d7264dc05f7e69f6d086bb9966ec958904de41",
+    "top.png": "da3cb7d67f0ca12e45ceb9d8aae6bc6a7dab0287a0e69b18be1a64c38363eed8",
+    "entry-detail.png": "ef8c019f52556e551adf9c53ccf41044722c11dead7e0463106e7f9807c5359f",
+    "facade-detail.png": "8a0666d96812255dd482074286241f553a92f2052986ddc272e0ab842588895a",
+    "roof-detail.png": "f7d2bf2ca518db8c0b47899d21dce928d4919582d8a9653731588ff739696d99"
+  },
+  "current_independent_review": "ENTRY-FRAME-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Nominal color and inferred continuity for return faces, not measured current condition.",
+    "Original 459 opening warnings and limited geometric QA remain.",
+    "No physical print."
+  ]
+}

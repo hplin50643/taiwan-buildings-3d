@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual rendered views inspected in cnu-wang-chen-library-all-views.jpg. Caption and backing removed; geometry/materials/original camera framing preserved."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "779fedc05f521e0f93473849ded887d27d6e7694941195be672b574fe8a3a341",
+    "east.png": "4e50c9b9982e3f81eb9eaceae8e4af6e0930b4e0a85612dbd6dc848c352dc82a",
+    "entry-detail.png": "b4fa1672a74a2d86ca17741eb90b7dcf5fdef42be3b045d89f4fb79f9933a842",
+    "facade-detail.png": "2850ea4d22b541b227714a039a0580183b41f870a62b4bc9dc233c73e3bdb5ae",
+    "front.png": "cf048cfa2515f618795c374039817010393de9206319eb4bab0b37f2a0da4310",
+    "preview.png": "d850c255aacfb43482ae35f243ed782d285ad5f25b92c88ff90f9ff3e69887ba",
+    "rear.png": "c2063abde454ce2c29c5fe5db7987c9e2b00b762c648bfd56ca98cb949ac4839",
+    "roof-detail.png": "9121f51f7e99f37b89343950d19023810fa484012a667dd63cfd6926b5a56227",
+    "top.png": "8f64cb0bf6ed28c7dc7e8804a8a342322700d7c7b27655550af7c8306f0cda1b",
+    "west.png": "e48c4c39d898bbee251721f265a01a51752b2058617d0320324dfa5fda8a4fb4"
+  }
+}

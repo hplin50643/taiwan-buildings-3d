@@ -2,19 +2,26 @@
   "palette": [
     {
       "id": 0,
-      "name": "CNU Wang Chen Library source observed southwall and lintel graywhite",
+      "name": "CNU south highwall and entrance frame graywhite; returns inferred",
       "hex": "#D9D9D3",
-      "faces": 48
+      "faces": 139
     },
     {
       "id": 1,
       "name": "CNU Wang Chen Library unverified walls windows neutral",
       "hex": "#B8BAB5",
-      "faces": 65638
+      "faces": 65547
     }
   ],
   "domains": {
-    "south_highwall_and_entrylintel": 48,
+    "original_south_highwall_and_lintel_front": 48,
+    "entrance_frame": 93,
+    "entrance_parts": {
+      "lintel": 34,
+      "left_pier": 27,
+      "right_pier": 32
+    },
+    "added_faces": 91,
     "per_rectangle": [
       46,
       2
@@ -27,8 +34,8 @@
   "geometry_policy": "65686 original triangles unchanged; no cuts or newgeometry",
   "limitations": [
     "v2 accepted limited exceptions remain;459opening warnings, directional shortchords,728 junctionpoints with533pair/195triple controls and v1HOLD history. This sourceGO does not recertify printability/support/globalQA. Original homepage preview remains; new variant separate.",
-    "Original5 preview contrast materials and everyoriginal file remain unchanged. New separate variant assigns48 documented faces light family; all otherfaces unknownneutral, not an assertion original darkpreview was real dark finish.",
-    "48complete original faces only,65638unknownneutral;L only not adjacentQ.",
+    "Original five preview contrast materials and historical files remain unchanged. Entrance-frame fronts are supported by the official photo; side, rear, top and soffit continuity is inferred, not directly verified as current condition.",
+    "139 original faces have nominal graywhite, including 91 added entrance-frame faces; 65547 faces remain unknown neutral. The original 48 observed south-wall/lintel faces are retained. Only building L, not adjacent Q.",
     "Named2017/2020/2025 albumfiles not capture or current2026 certification."
   ]
 }

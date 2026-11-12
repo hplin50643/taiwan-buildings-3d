@@ -1,0 +1,40 @@
+{
+  "status": "BOUNDED_ENTRANCE_FRAME_COLOR_CANDIDATE",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "building": "cnu-wang-chen-library",
+  "reference": {
+    "page": "https://libcvod.cnu.edu.tw/media/1229",
+    "image": "https://libcvod.cnu.edu.tw/sysdata/album/71/d14d01b8cf78a13eed9da0ba9b4e9965_xl.jpg",
+    "album_id": "5962",
+    "label": "20170322嘉南廣場-72",
+    "sha256": "f3a718d0fa6b3bc2fb5d8b0904e2ee467cbc34058236464d959eee3c4c90157e",
+    "capture_date_verified": false,
+    "private_copy_only": true
+  },
+  "observed": "The entrance lintel and two piers form a light gray-white frame. Original 48 south highwall/lintel front faces retained.",
+  "inferred": "Nominal color continuity across finite faces of the same entrance-frame pieces, including rear/side/top/soffits, rather than a new observation of all faces.",
+  "face_counts": {
+    "original_colored": 48,
+    "newly_colored": 91,
+    "colored_total": 139,
+    "neutral": 65547,
+    "total": 65686
+  },
+  "geometry_unchanged": true,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "excluded": [
+    "glazed canopy",
+    "curved glazing",
+    "other walls",
+    "roof",
+    "north facade",
+    "private source pixels"
+  ],
+  "limitations": [
+    "Not measured color values or a 2026/as-built claim.",
+    "Existing geometry, 459 opening warnings, junction and directional-thickness limitations remain unchanged.",
+    "No physical print or renewed global printability certification."
+  ]
+}
