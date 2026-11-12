@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in hku-jk-technology-gymnasium-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "12e1fa8a9ca19c77ac28252e6760d7f183ea2196fb00e225df865111fa5292ef",
+    "east.png": "636d1eb2d751da97452d06a9f3d561d9b8ed10d89b79fb0e801e17de9fecddce",
+    "entry-detail.png": "17b8492ca5fa56ec4f582422ee0233741ac8bba758fd5cc5352cec4a01835210",
+    "facade-detail.png": "f6e458f6b3bc114bdb6d6fc568ed19a96fe5b1157fd2eb839119672b8943c94b",
+    "front.png": "b18c6eb1a8b8df82882b30060a33365e9dae1db19d91af5e087dd34a7fba00a9",
+    "preview.png": "3b7142d5e1d0ba59492b7636b82d70e5364fa557390f8e03ce2ce181ca35f5be",
+    "rear.png": "383ba358ca1e61d7cb8057ad19146bc5a662250a3f3f9a3d921f5a5aa0ba1f0d",
+    "roof-detail.png": "faa596806982a53b7117129ab3af6b4c9749510ab1b7604f8be3ce1ef7b1ad99",
+    "top.png": "3d465a849f61990930fd1af6d861b80ffe0bd5edac39d37ca470712bffa4d7b5",
+    "west.png": "76d1a789f34812f324ea9b876ed0672588439b9a83350e342ba8aeb7b14c5616"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in hku-g-library-information-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "a743b3f83f4088420c8410b6c63e168550c7071e8169a1fcdbf4eff1e06a5a26",
+    "east.png": "ab451508efa13ce950878e372a7d75cdbf4e726de58bc9a5cb5481dc72d76be9",
+    "entry-detail.png": "bd4afcde71b8511e51fd90dca294ca5510078830ddef33381feb965b96ab8663",
+    "facade-detail.png": "4914423f2fe325d451e85ad3dc086b75bd735b17a85fd75b6f0756df7229f3cb",
+    "front.png": "2986fe554bd461f48ddd8bfb83c6d7c3678506984cf2c44d96ee766b4c5bc14c",
+    "preview.png": "d55f2d3b9371b30127b62e6c60b695827714f7aa874c0e58c7b7b30da120e7a3",
+    "rear.png": "4413f867a527ebde2f606535cbb7eed4b461c8fd83714fa50f71445c96b70098",
+    "roof-detail.png": "0df4978ec943028b2255a062ea7732dab7ae9990181c9f2e85b00d6b8ec04266",
+    "top.png": "e35a13522f740ead1230a50c0b35eb87872dec5da28ab6180299af45ecfa5234",
+    "west.png": "0b483eaf3d63dc0d57b5f51e10c8e0be1c4fac72489fcb9262bc26ef546396ac"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in hku-f-culinary-arts-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "4b08d55c3da444e6692df7e4f280e21c95e0c6137cd345b6346dc2a60f065963",
+    "east.png": "114ee96c13db09126a0033cb3bf0ee0913241c74e203fe49c41e9b48c0827908",
+    "entry-detail.png": "8c5d25b42d97e38857451cb7f626a1ef6acccaac8f62470258803957dd9fa400",
+    "facade-detail.png": "93eb6e666f6b300780251f7f2aecd3a016f940eadbf39011a7f8035966d5c4c6",
+    "front.png": "952597a16d701f15fdb2e9e42e2f0f8e92500d3c82dad1d7bf8eeb726b1a92dd",
+    "preview.png": "3f10c9c91abfeff2f08b0b15a8bae33a7c0a10d3e4766ff46f196805ded55f4a",
+    "rear.png": "589d637e29d6ff1d23d958f4f40613f80645d2b1447635ec85492fb574762458",
+    "roof-detail.png": "93b6a59b5e51a91949f9b6e149d1694d21142e54663b71e53d7665fc92bd1d3c",
+    "top.png": "462422b0c2c427d38dcfad52ddab902839588e673288b1234fba04aa026892ff",
+    "west.png": "28da2f97778634ccc8f9c2301a787d6a9dd222ed4003972f451a62db7dfe1591"
+  }
+}

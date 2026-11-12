@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in hku-q-student-dormitory-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "8eb2b309e5c7b963954845952c1559aa5f1122aba9b75861fd4afbb54dd4e3bf",
+    "east.png": "5f76944429095732283d0faf6cf74bf88280fbb036b5604cfbaea47106a67040",
+    "entry-detail.png": "70221d0853e83ce1b50b3a6ebe5e7efa6f42e3f8556dc09c5e9a3311ec839157",
+    "facade-detail.png": "d81698003eeb591643653347f445f0e22df872f2b93d9281ebaaef75df79d839",
+    "front.png": "879336e6fa48eb238816e364c76d50484d80274a149e26fb46a867cacdd6c6b9",
+    "preview.png": "7daa19a466ae4d79f43020d3a03ec1c2b8575bc780e291adbf27444ffe35aa46",
+    "rear.png": "7a070320eca90943b21090c9a52c5a8b68371cdfc334d9134e360b7434cb9f80",
+    "roof-detail.png": "9fe68454ef675f9a7345572f94fa90e04e0c2c494dd90a5b7e8e98630e0fd046",
+    "top.png": "65c5a74cfa07e391048553ed48462a08e83a004eeff49f5fb48945f2c0dc51f2",
+    "west.png": "d966abb4bf73f57dc86bafc82410ae87268685dcd8fcdd24d43ab968027c17da"
+  }
+}
