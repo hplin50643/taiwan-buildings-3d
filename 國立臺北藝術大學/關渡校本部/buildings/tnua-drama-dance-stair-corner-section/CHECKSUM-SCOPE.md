@@ -1,0 +1,1 @@
+UPPER-SILL：2新面/1完整域，4→6色／3190中性／3196tri。原2palette及其餘indices保持；色名tower cap是歷史名，新域僅高窗挑臺外向立面。0混域。原公開包無OBJ，工程別名/原預覽保持。來源pending固定，歷史qa/upper-sill-previous不是當次驗證；最終獨審採work精確相對路徑hash。

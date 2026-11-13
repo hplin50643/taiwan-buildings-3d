@@ -4,13 +4,13 @@
       "id": 0,
       "name": "TNUA Drama Dance Stair Corner Section tower cap front right light stone",
       "hex": "#C5C3B8",
-      "faces": 4
+      "faces": 6
     },
     {
       "id": 1,
       "name": "TNUA Drama Dance Stair Corner Section unverified corner walls glazing neutral",
       "hex": "#B8BAB5",
-      "faces": 3192
+      "faces": 3190
     }
   ],
   "domains": {
@@ -19,6 +19,8 @@
       2,
       2
     ],
+    "new_upper_sill_faces": 2,
+    "new_upper_sill_domains": 1,
     "whole_coplanar_withdrawals": 0,
     "coplanar_domains": 631
   },
@@ -26,7 +28,7 @@
   "fully_colored_exterior": false,
   "geometry_policy": "3196 original triangles unchanged; no cuts or newgeometry",
   "limitations": [
-    "4 original tower cap front and right vertical triangles light stone gray.",
+    "4 original capfront/right faces retained;2new upperwindow sill outward vertical faces same nominal lightstone gray.",
     "Both whole infinite planes equal finite all3vertex rectangles; original top150mm retained.",
     "Full-height tower wall, landings, glazing proxies, mixed brick base, roofs and other faces neutral.",
     "Outer stair and glazing corner section only, not complete teaching building, courtyard or sculpture.",

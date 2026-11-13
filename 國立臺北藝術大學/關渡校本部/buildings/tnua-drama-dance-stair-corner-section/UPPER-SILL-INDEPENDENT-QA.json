@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "building": "tnua-drama-dance-stair-corner-section",
+  "triangles": 3196,
+  "new_color_faces": 2,
+  "exterior_color_before": 4,
+  "exterior_color_after": 6,
+  "neutral_after": 3190,
+  "complete_domains": 1,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "findings": [
+    "Independent allvertex finite rectangle selection verifies2faces[1905,1909] in1whole connected coplanar domain. Original4and allunselectedindices/two palette entries exact.",
+    "3MF two materials and unchangedgeometry independently verified; original engineering/history files SHA-identical.",
+    "Retained isolatedSTL/NPZ/palette/materials/3MF XML directly compared exact.",
+    "Savedscene independently reopened:3196mesh indices,2shaders,originalcamera/lights/render/objectinventory/transforms exact.",
+    "Actually inspected ten final views and full-size detail views; only upper sill outward vertical face added, no top/soffit/tower extension."
+  ],
+  "limits": [
+    "Small originalpixel support only nominal grayfamily, not calibratedHEX or chemical material diagnosis.",
+    "Original projecting5.8x8.4x2.8box dimensions coarse; no geometry accuracy certification. Historical towercap palette name retained.",
+    "Historical engineering limitations and SOURCEpending snapshots retained; not2026 survey or tested multi-material print."
+  ],
+  "image_sha256": {
+    "preview.png": "e37dd266e5f45e3a3ee783fb355b0012ad66dc8279594250915bd744d6e204bc",
+    "rear.png": "167ef17e05f1e0cf307d20c38552d4f17d5c7134434910e63067c37bab88f38f",
+    "front.png": "914bfc9ccb12e6a79a00d33d4bbfdfdf3ab00a0f35514d2d03a9ee97f3fc571f",
+    "back.png": "6a2579cbddabc5383b02c848321e8661b20ce7813138f366f757acd9c92cb40a",
+    "west.png": "5e7d6539f4d79aa66ef5d80365b9c79a1f808940ff66bb4bfb09aff39397b59a",
+    "east.png": "589625454fc836cd663c082238e60c42eaf5fe5172fd850ae8f1b8166e2085a6",
+    "top.png": "d6139c8d0496daeec251cdda4b3994019df7d41424f7f459fea42fac4be3c7ce",
+    "entry-detail.png": "f316809249c7f924892b0e2a1fe4f8d4e2b5ebcc539f20e6d43d114f0285a4b7",
+    "facade-detail.png": "7a5618069e4c66d1635d422c1d2d3386e86f46fad4a6ba87a862d63cd287124f",
+    "roof-detail.png": "e8e8b36cbe8415bc793b104e019dcfe20dd2ee3dcbb8d57191e94c514ae5952c"
+  },
+  "file_sha256": {
+    "model.stl": "2553c19571f53b70a8fd1c82736caa54002bd5dcc9cc03e2584bc714c09918d5",
+    "build_model.py": "f10f4e11345821a8f516d6b391e0421d4ef42a64335068c5eae6c3b566d0f466",
+    "color-mesh.npz": "bce5c8ff4ab81ecdc4f7ed3234107ed14273b44b463fb015d020af73f5f5771b",
+    "palette.json": "5c308e4d890f677830e243ffbd3d7fc7dbb6dff3d38840f351c78d9cf5e7b4f6",
+    "appearance.3mf": "911b8331fdea02219445108935af35f15d9aa3a900203a0d030f246b128f642e",
+    "appearance-materials.json": "f841b3485e3a401ac91d1c9beb7aeee9f9aa06999a86c58f85396bd0216b1709",
+    "scene.blend": "9457d761b0310a48db1e59ad15c87b03cc2dc532e03ea470f47375ecc51d9c0a",
+    "colorize_model.py": "f510ad3f3ec34a612ca19b4a98107e21884ab50469663f920aadf630be8e73e5",
+    "export_appearance.py": "a041165559d1e492166431c2e782ce560fb225e6eb2b1b59f868cfef95d682c4",
+    "validate_color.py": "d03470a03e762497aec0e447a3412704229bcd66c4b868cbfcf47b0b79ffc4f0",
+    "verify_color_scene.py": "fafa5618527f427ee3409aaaf3ae9076b49514d95192161b2e4311fd2e661ee9",
+    "render_color.py": "d118eafa35e558ce66b116579a6f95c9942d3a90184accfdafd735f1409d975f",
+    "README.md": "605d03786bd60a35e0000528e62da3140c1f4739ef474faf21400d88e657266e",
+    "README.zh-TW.md": "605d03786bd60a35e0000528e62da3140c1f4739ef474faf21400d88e657266e",
+    "CHECKSUM-SCOPE.md": "c7fa65076f771b8a6f1b92c3d5cf104eec9de9c4b69d6370668a71850d402e6d",
+    "COLOR-ASSIGNMENT-QA.json": "730eef2f0c731bd3fc57ebe9833fad03962889a3fbd3ddd32976d509ea70ba56",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "8a1bed97ed1bd803f654ff50283dac9da1b804ad91d987f9f873906ad1b963be",
+    "SCENE-QA.json": "fdb05d5215f761a78f3b21cdc766ddce5e07208c1ac463c5b18f6e27f783ac7a",
+    "UPPER-SILL-SCENE-QA.json": "7ef3361fda020c202b6dcf85f257f42ef256e80dab2a761db71a8139e9ac3e90",
+    "UPPER-SILL-SOURCE-QA.json": "5631db887d81e5cf004e6e2a4f9b5014442f614b69cac01f53cdfa89cc27a45b",
+    "COLOR-SOURCE-REGISTER.json": "5631db887d81e5cf004e6e2a4f9b5014442f614b69cac01f53cdfa89cc27a45b"
+  }
+}

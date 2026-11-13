@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "Bounded upper-window sill outward front gray-family update,not whole tower or fullcolor.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 3196,
+  "original_color_faces": 4,
+  "new_color_faces": 2,
+  "colored_faces": 6,
+  "unknown_neutral_faces": 3190,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 0,
+  "current_mixed_connected_domains": 0,
+  "current_independent_review": "UPPER-SILL-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only2original outward+x upperwindow sill faces,1whole connectedcoplanardomain. Original4capindices/palette/unselectedfaces preservedexact. Historicalpalette name contains cap but newdomain explicitlysill.",
+    "Native visitorabout40px and two480px officialpublicart photos support only broadgrayfamily,not measuredHEX or materialchemistry. No top/soffit/side/wholewall assignment.",
+    "Original5.8x8.4x2.8approximate box retained not surveycertified. Photo/artwork/filenames not independentcapture or2026condition. Sourcepending fixed; originalnoOBJ; no testedphysicalprint."
+  ],
+  "checked_at": "2026-11-12T21:16:43.206331+00:00",
+  "original_STL_sha256": "2553c19571f53b70a8fd1c82736caa54002bd5dcc9cc03e2584bc714c09918d5",
+  "color_mesh_sha256": "bce5c8ff4ab81ecdc4f7ed3234107ed14273b44b463fb015d020af73f5f5771b",
+  "images_sha256": {
+    "preview.png": "e37dd266e5f45e3a3ee783fb355b0012ad66dc8279594250915bd744d6e204bc",
+    "rear.png": "167ef17e05f1e0cf307d20c38552d4f17d5c7134434910e63067c37bab88f38f",
+    "front.png": "914bfc9ccb12e6a79a00d33d4bbfdfdf3ab00a0f35514d2d03a9ee97f3fc571f",
+    "back.png": "6a2579cbddabc5383b02c848321e8661b20ce7813138f366f757acd9c92cb40a",
+    "west.png": "5e7d6539f4d79aa66ef5d80365b9c79a1f808940ff66bb4bfb09aff39397b59a",
+    "east.png": "589625454fc836cd663c082238e60c42eaf5fe5172fd850ae8f1b8166e2085a6",
+    "top.png": "d6139c8d0496daeec251cdda4b3994019df7d41424f7f459fea42fac4be3c7ce",
+    "entry-detail.png": "f316809249c7f924892b0e2a1fe4f8d4e2b5ebcc539f20e6d43d114f0285a4b7",
+    "facade-detail.png": "7a5618069e4c66d1635d422c1d2d3386e86f46fad4a6ba87a862d63cd287124f",
+    "roof-detail.png": "e8e8b36cbe8415bc793b104e019dcfe20dd2ee3dcbb8d57191e94c514ae5952c"
+  }
+}

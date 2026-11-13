@@ -1,0 +1,64 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "tnua-drama-dance-stair-corner-section",
+  "scope": "Upper projecting window sill outward +X vertical front only",
+  "faces": [
+    1905,
+    1909
+  ],
+  "complete_domains": [
+    [
+      1905,
+      1909
+    ]
+  ],
+  "bounds": [
+    [
+      46.5,
+      -16.200000762939453,
+      115.5
+    ],
+    [
+      46.5,
+      -7.800000190734863,
+      118.30000305175781
+    ]
+  ],
+  "original_material": 1,
+  "proposed_material": 0,
+  "nominal_hex": "#C5C3B8",
+  "triangles": 3196,
+  "original_color_faces": 4,
+  "new_color_faces": 2,
+  "after_color_faces": 6,
+  "after_neutral_faces": 3190,
+  "source_reason": "Original2016visitor020 native upper sill front lightgray face can be separated from dark underside and upper window. Recovered official publicart two480px photos provide additional same-component views; not new capture. Narrow existing original rectangle only, not whole tower or underside.",
+  "limitations": [
+    "Very small originalpixel coverage about40px in visitor photograph and smaller publicart images; only broad nominal gray/light stone family, not calibrated HEX or chemically identified material.",
+    "Original5.8x8.4x2.8box width/thickness/depth and location are approximate, not surveyed. No expansion to top/underside/side returns/window/recess backs.",
+    "Originalpalette name mentions tower cap; historical label retained if reused for bounded samegrayfamily sill front. Original4capindices unchanged.",
+    "Publicart2014artworkdate/2017filenames not photography dates; original2016articledate not independently capture date. Not2026condition.",
+    "Lower sign canopy has lettering and remainsneutral; glass/towerstriping/brickgraybase/cutwings not filled."
+  ],
+  "new_search": {
+    "publicart_page": "https://publicart.taipei/Works_detail.aspx?id=780",
+    "museum_page": "https://tnua.openmuseum.tw/muse/digi_object/e87d0614079f25250d4d06ad6e97f3f7",
+    "museum_result": "Site Unavailable HTML, no pixels used",
+    "publicart_result": "Two targetimages actually viewed; remaining page images are otherart recommendations not samebuilding."
+  },
+  "file_sha256": {
+    "domain-screen.json": "fd512a6c719809bad24ffc3d6bc2f04b3baa56de5ce24016368e2a45b0a78175",
+    "preselection-sill.json": "6fab56efde54a37c527d539e613608b2ad26bc5ba87fe3ee3f098ff6e44e6a6f",
+    "original-verification.json": "3691cb0647a443fb5aba4a8eff2731abbb07fb5fef6b29899cc77a9be38d00e9",
+    "original/build_model.py": "f10f4e11345821a8f516d6b391e0421d4ef42a64335068c5eae6c3b566d0f466",
+    "original/color-mesh.npz": "de5d9dc2a7ac2c02da0f5f8b8781dc178a75043d11277b44f0c3fea099ef40e8",
+    "private-reference/tour-020.jpg": "ca1aaeedd6291d3e8c9f44ace356ad1b39a92884b4673f6b29992db92bcbf804",
+    "private-reference/tour-021.jpg": "d05a35e6ebffe8d4c2d72037c88b0a19aca1386dd017a6abed6fc1568ae424f9",
+    "private-reference/upper-sill-native.png": "b44ec0dba362268228b58dd18e171ceac0d39e40cdbc194dd1bb666e6bf07a3a",
+    "private-reference/publicart-0.png": "590c07b77811e15fe4df39f84a217f5477f5c399833724a7ce85f109f61f209f",
+    "private-reference/publicart-1.png": "a9d49dd6bb97e00d2050d788f1c542bdd702b81c4091007e149f88ce89eb94f8",
+    "private-reference/original-photo-register.json": "593d985fc3319c95e8d2899e36f9981d843dcbf1117d4e5796995515b2506172",
+    "private-reference/publicart-register.json": "a8a0f03e2d08fc1eb2686ce7ceff632ed7e2b97f3bce0c23abaf1d8ca73198f6"
+  },
+  "historical_source_register": "qa/upper-sill-previous/COLOR-SOURCE-REGISTER.json"
+}
