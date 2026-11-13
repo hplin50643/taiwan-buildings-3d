@@ -103,6 +103,17 @@ for p in mesh.polygons:
   changed_faces.append(p.index);change_categories[str(p.index)]=category
  p.material_index=i;indices.append(i)
 
+# Withdraw unsupported stone identity from complete artificial-base top domain.
+continuation_baseline=list(indices)
+base_domain=[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 26, 27, 28, 29, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 44, 45, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 67, 68, 69, 70, 71, 74, 75, 76, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 88, 1233, 1234, 1235, 1236, 1238, 1239, 1601, 1602, 1608, 1609, 1610]
+base_changed=[1601]
+assert [i for i in base_domain if indices[i]!=0]==base_changed
+assert indices[1601]==1
+for i in base_domain:
+ face=mesh.polygons[i]
+ assert face.normal.z>.999
+ assert all(abs(mesh.vertices[j].co.z-3)<.0001 for j in face.vertices)
+ face.material_index=0;indices[i]=0
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
 scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-continuity'
@@ -136,7 +147,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_categories':change_categories,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original hall geometry and approximate roof retained, no facade detail added','Official NCCU 2023 front photograph and official disaster-plan page49 side photograph inspected. Grey beige long side walls and existing deep pier faces use original wall family; existing high-window backs and coarse bars use original opaque dark and pale materials. Opposite side continuity is an explicit inference, not a measured match. Rear main and stage/service external walls use inferred stone continuity without adding rear windows. Roof, service-block top, broad canopy tops, steps and base remain neutral. Original geometry and all previously colored faces/material RGBA/roughness preserved. No added panes, text, posters or structures','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-base-withdrawal','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'base_complete_domain':base_domain,'base_changed_faces':base_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_categories':change_categories,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original hall geometry and approximate roof retained, no facade detail added','Official NCCU 2023 front photograph and official disaster-plan page49 side photograph inspected. Grey beige long side walls and existing deep pier faces use original wall family; existing high-window backs and coarse bars use original opaque dark and pale materials. Opposite side continuity is an explicit inference, not a measured match. Rear main and stage/service external walls use inferred stone continuity without adding rear windows. Roof, service-block top, broad canopy tops, steps and base remain neutral. Original geometry and all previously colored faces/material RGBA/roughness preserved. No added panes, text, posters or structures','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-170,-290,145),(0,0,23),205),'rear':((170,290,145),(0,0,23),205),'elevation':((0,-350,23),(0,0,23),205),'source-angle':((0,-300,90),(0,0,23),205),'left':((-300,0,130),(0,0,23),205),'right':((300,0,130),(0,0,23),205),'top':((0,0,380),(0,0,23),205)}
 out=R/'appearance';out.mkdir(exist_ok=True)

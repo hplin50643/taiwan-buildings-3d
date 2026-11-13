@@ -1,0 +1,47 @@
+{
+  "status": "PENDING_PUBLIC_VERSION_INDEPENDENT_REVIEW",
+  "scope": "One original artificial-base face withdrawn from wall material to existing unknown. No new color, geometry, real flooring, full-building or printing certification.",
+  "public_source_url": "https://nccuwiki.lib.nccu.edu.tw/images/8/8b/%E5%9B%9B%E7%B6%AD%E5%A0%82_%E5%A4%96%E8%A7%80.jpeg",
+  "source_observation": "Official front photograph shows washed-stone vertical facade, narrow pale window frames, different canopy front and underside, and foreground paving. It does not verify material of side doorway floor. No facade colour is extrapolated onto the artificial model base.",
+  "source_date_limit": "Historical 2023 reference; photograph capture date not independently established in this review.",
+  "changed_faces": [
+    1601
+  ],
+  "transition": [
+    1,
+    0
+  ],
+  "triangles": 1770,
+  "vertices": 821,
+  "palette_entries": 6,
+  "complete_domain_face_count": 90,
+  "unchanged_other_face_count": 1769,
+  "limits": [
+    "Coplanarity alone does not establish real material. Withdrawal only, no claim whole plane has one physical finish.",
+    "Original doorway floor joins artificial base; no measured threshold boundary is modeled. No new boundary or geometry change.",
+    "All v2 facade/side continuity and canopy assignments preserved, only face1601 changes1→0; native 7 views/96samples preserved.",
+    "Historical engineering limitations and QA retained; appearance-only review is not engineering certification.",
+    "Baseline has noOBJ; isolatedOBJ generated is not added or claimed a baseline match."
+  ],
+  "public_artifact_sha256": {
+    "build_model.py": "9a1cececc2a8fc72850a06ef921edd848260bd6e85457445d35d0ddf03f4c42f",
+    "build_appearance.py": "abb9d8fe6834ee9da3fb5d9c21b3c584f7cdda49e0100e5c0e238a3320eec0a3",
+    "model.stl": "b8c7c0d959a7c39c1ac9f647ffc4c9daf9f25accd5c33a1a34eb653d8b01619e",
+    "scene.blend": "c720dd5223472f7702f310fa7b99d7874f09bc86d5d628a3e98bfe05f7640e18",
+    "appearance.blend": "34050381136669a7743f6583ec801f345e9c9521cc0e0ff7e83656ebb60672ee",
+    "appearance.3mf": "ffe220f8a57e89a72360913326ab483980726a7fb7bc00a30879670c422c6e29",
+    "appearance-materials.json": "796e8ca7d8efa36a0d3c0af31d63ebb5bfa03321de13a58a0c0346afd4cb12c9",
+    "README.md": "00202acccc373cd982a8a35e718fb0a09b7c6d3988e107bed0bb05bd0fd41a59",
+    "APPEARANCE.md": "cd5aab969a1c0003e1437b33f66cb4130adc7968bd5ea79eba3ae0cc7f787190",
+    "CHECKSUM-SCOPE.md": "39683836f7068793d51c0f9bcaf47b66adba146f0c0cc9b29ee07839f60d43f5"
+  },
+  "image_sha256": {
+    "appearance/front.png": "0416ad34fadb9764359a21f47d6c1a7ac73f63f8a3756d2d58ee516b86d6d14b",
+    "appearance/rear.png": "d4b63e58fecc82dc70c137a2ee0520945559ef6ec37024a4712674f76a67c2c4",
+    "appearance/elevation.png": "e4f2118514b47c14084751d190bfde5c1773392362e4c24d965d4fcccf625f20",
+    "appearance/source-angle.png": "0d1f22ebd3cfee4336eb2da01eac915170d09ce14e443f1fac9790937f383734",
+    "appearance/left.png": "02f3f673d4b2557d2774854ec7b91c0f9ced06f7ece3dc929b107db06a8fcd28",
+    "appearance/right.png": "6b52166320cc39c5b2b5582d1026bec87caaa4691d963abe712afc396e8c29a3",
+    "appearance/top.png": "f956678c20ef46539140d8a5279fbfe4697bc9872f36fe8103604a97a2874d96"
+  }
+}

@@ -31,3 +31,13 @@
 [逐點逐面驗證](appearance-review-v2/model-verification.json)核對 BLEND 原版與新版的頂點、連接、transform、尺寸、原彩面；3MF 頂點、每面與材質指派對應 BLEND，並保持原 palette。[原材質值核對](appearance-review-v2/material-value-verification.json)保存 RGBA 與 roughness 比較；[乾淨重建](appearance-review-v2/clean-rebuild-equality.json)比較新目錄重建結果。[同相機比較](appearance-review-v2/comparison.png)為兩列原版（左）與本次（右），照片本身未入比較圖。
 
 原 appearance-review 屬歷史 v1，仍保留但不代表本版材質指派；本版以 appearance-review-v2 與 appearance-freeze.json 為準。本次未重跑幾何列印 QA，原輪廓／薄特徵記錄仍為歷史結果。未做 Cura／Prusa 實際切片或實體試印；不保證 AMS 相容、免支撐或任意縮放可印。
+
+
+## 2026-11-13 底座撤除誤用洗石子身份
+本次重新取得並實看政大校史官方正面照片，沿用歷史2023引用。照片可辨垂直洗石子牆、淺窗框與前方鋪地，但不證實側門水平門檻材色。本次不把垂直牆材外推到人工底座。
+原88×150×3mm底座z3頂面是90面完整連通共面域，89面已明示未知0；側門石材bounds選域未限制垂直法線，讓1601一面誤用洗石子1。只撤1601為原unknown0，90面完整域一致，不聲稱現實地坪同材、不推定白色鋪面，不切新界、不改geometry。原821頂點1770面與其餘1769材索引、6原材保持。側門底和人工底座共面且連接，不代表實建邊界已測量；其他v2側背連續材、雨遮與原首頁不改。
+保留原7張900×800、96samples、單執行緒原生鏡頭照明及scene/STL/previews（原交付無OBJ）。歷史工程QA與限制照存，無實體試印；本次僅有限外觀撤誤。本次公開交付版的精確校驗範圍見 CHECKSUM-SCOPE.md；不附私人研究檔識別或摘要。
+
+
+## 公開交付版審核範圍
+本版保留模型、材質及七張原生視角圖像。研究過程的比較圖、來源下載副本及完整審核工作紀錄不隨本版交付；既有儲存庫歷史檔案未刪除。公開校驗表僅驗證明列的公開檔案，不代替私人證據鏈，亦不構成新的工程或試印認證。
