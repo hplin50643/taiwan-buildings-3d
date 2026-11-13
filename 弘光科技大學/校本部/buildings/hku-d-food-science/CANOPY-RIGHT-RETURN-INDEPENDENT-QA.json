@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "reviewer": "Independent source/domain/model reviewer, not builder",
+  "source_review": "second-source-domain-review.json",
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "rebuild_review": "independent-rebuild-review.json",
+  "findings": [
+    "獨立重算新增6面完整1域，原2色及其餘indices/2palette/4158幾何精確保持；0混域。",
+    "直接核保留隔離STL/color/palette/materials及3MF XML逐bytes相同。",
+    "實看全部10圖總覽、3detail全幅及私人canopy-right全幅；新增右立返可辨，前面/頂/柱不擴色。",
+    "獨立開啟saved scene核2shader與mesh材索引/原相機燈光render/物件清單不變，字及背景板隱藏。"
+  ],
+  "limits": [
+    "官PDF原照片425x484支持淺白族，非HEX實測。",
+    "111/112同構圖非獨立新拍；原35x18x2.6近似及後端Boolean不認證。",
+    "原包無OBJ；工程限制與歷史aliases保持，未實測多料列印。",
+    "SOURCE pending是固定階段快照，不在終審後改寫。"
+  ],
+  "image_sha256": {
+    "preview.png": "0959fa34a29aec28586a495c47f4e336fb004be377fc88188ad5b3081c074c8b",
+    "rear.png": "c0d6639cda61a67afb37ad25910a5c5353220de77f9550ed17bea5bf4fd84a01",
+    "front.png": "b7608880cba3a5bd684042f3326952cde463e403d788dd74a0d48ebcb759fae0",
+    "back.png": "191781223329a73632070f0e7c4bfb6cc9a0de63ed991e543b65cfac9e861dc1",
+    "west.png": "f75e8df98f410842d9f3ccc261c0e75795077548e68035182fe53b69d0175245",
+    "east.png": "2c3ed8e839e8227a20157eef16a1e1048b9a82c3f821624844500c5e97b85684",
+    "top.png": "ec74a72aec6bbf54d137306973d27c7e4ab38b45b260fab7630f24941867b76f",
+    "entry-detail.png": "c0668664b06935db29316335013f0aff06a0cded19334428061e9daee7ffad6e",
+    "facade-detail.png": "33c67c52b071b8c1a5740a252a6c6454bf6d43876ffc794eccba3699ad4fa501",
+    "roof-detail.png": "0387605b3698683bfe65faffdb72b023f397916103a575a4491258fc91efd4c7"
+  },
+  "file_sha256": {
+    "model.stl": "fbc389a257bb4a6d7b3cefe58e965f32886172ad52410655af4a472d8245ac81",
+    "build_model.py": "4c85c5bcb447824e74eae4c77655936b33ea7300a8590520f56fb1e977057485",
+    "color-mesh.npz": "1a826456ae6f3dea136dd926ab3a6804b586beba5da599115b1625788a95c712",
+    "palette.json": "0e7dbd6eec6d7f3cc520d6d38c274b720cefdef0c94b38c9ba495a544f9119f7",
+    "appearance.3mf": "136bdb7aa23598265530f91f3a358d4751871c3a890f19757312a08bbd13fc56",
+    "appearance-materials.json": "a50d9894884a549b4ce303c409c88e46993ab015c29d54d90cdb88a13f380f42",
+    "scene.blend": "9608d241c78e0ea0c548bcaba1da76293bc6add6a37981668c6d250d25c19220",
+    "colorize_model.py": "84d8df782e04981fd8078548e9b20b402e3d4fe53dc2ec596a936998804ea0c7",
+    "export_appearance.py": "fdaee2142047fff7a6fafdc7ddcf303adb5c42f70f5f8c52b77619672d2c888a",
+    "validate_color.py": "87f2659401c8e3a604aa07001ba9d5adaa9ceffcd35c8ed7c86235c2ae2e2afe",
+    "verify_color_scene.py": "f25bd806b16b200b2e9377e367d149f70f8f6acc5ea00675f580d065363a4255",
+    "render_color.py": "b686af1e8b798ee6509a886f77884f03f8670d0d8182a775202ac49f6c14bca1",
+    "README.md": "a6c3b51b5b4a40fc012fe8350dba3294ccc98f6eb0d74c73460b43832bf18de7",
+    "CHECKSUM-SCOPE.md": "1690e00a33f71a1df873bb117b0a656a23fdb4b8aa7b2ac5e652a613e5639bbf",
+    "COLOR-ASSIGNMENT-QA.json": "b961e5d90856a5f7e005131e41d7dd0e6bba21de64a210967431e32c305fcf5d",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "f5344a9924484b94235588592ec67f566a40cbe9c7086f5f6c8a00965457a3bd",
+    "SCENE-QA.json": "68410d3d230379e9e61c9414e99db0a2de7b6f00d16e61e41c54715b0ea81ee5",
+    "CANOPY-RIGHT-RETURN-SCENE-QA.json": "9fc6d59a7e02ecd5f3e0d599e2615e36c1ad75505cabb162fe66483518fcb4cd",
+    "CANOPY-RIGHT-RETURN-SOURCE-QA.json": "55865ceebb0aa8a1f5b9d73a467bf4166cd5f43851c7d7ee20b4398f0fee55db",
+    "COLOR-SOURCE-REGISTER.json": "55865ceebb0aa8a1f5b9d73a467bf4166cd5f43851c7d7ee20b4398f0fee55db",
+    "README.zh-TW.md": "a6c3b51b5b4a40fc012fe8350dba3294ccc98f6eb0d74c73460b43832bf18de7"
+  },
+  "supplementary_private_image_sha256": {
+    "canopy-right.png": "7249cd5b0804e71355c9fd07be403aec06c2c10a030782e5edd3b9c652f69ce1"
+  }
+}

@@ -10,5 +10,15 @@ edges=m.face_adjacency;edges=edges[np.isin(edges[:,0],ids)&np.isin(edges[:,1],id
 pcs=trimesh.graph.connected_components(edges,nodes=ids,min_len=1);assert len(pcs)==1;assert all(len(c)==2 for c in pcs)
 D['whole_roof_cap_front']=ids.tolist();a[ids]=0
 ad=m.face_adjacency;cop=(n[ad[:,0]]*n[ad[:,1]]).sum(1)>.999999;cs=trimesh.graph.connected_components(ad[cop],nodes=np.arange(len(t)),min_len=1);assert all(len(set(a[c]))==1 for c in cs);assert np.bincount(a).tolist()==[2,4156]
+original=a.copy()
+added=(abs(t[:,:,0]-7.5).max(1)<1e-5)&(t[:,:,1].min(1)>=-31.00001)&(t[:,:,1].max(1)<=-13.49999)&(t[:,:,2].min(1)>=12.99999)&(t[:,:,2].max(1)<=15.60001)
+assert np.flatnonzero(added).tolist()==[4039,4043,4049,4050,4052,4053]
+assert any(set(c)==set(np.flatnonzero(added))for c in cs)
+assert (original[added]==1).all()
+a[added]=0
+assert np.array_equal(a[~added],original[~added])
+assert np.bincount(a).tolist()==[8,4150]
+assert all(len(set(a[c]))==1 for c in cs)
+D['entry_canopy_right_return']=np.flatnonzero(added).tolist()
 pal=[('Observed complete roof cap front fascia offwhite','#D3D6D3'),('UNVERIFIED main walls entrance windows roofs neutral','#B8BAB5')]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');q={'palette':[{'id':i,'name':name,'hex':col,'faces':int((a==i).sum())}for i,(name,col)in enumerate(pal)],'domain_face_indices':D,'coplanar_components':len(cs),'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'4158 original triangles unchanged','limits':['Entire connected facade grid remains neutral: large billboard covers the right portion and lower vegetation obscures bases; do not crop arbitrary triangles or assume the poster is white structure.', 'Window recess backs mix burgundy spandrels, frames, glass and air conditioners; no whole dark or burgundy fill.', 'Entrance canopy contains gold文字; no uniform white across its lettering plane.', 'Roof top, side edge and rear faces, right balcony pockets, ground, steps and all unknown faces neutral.', 'Left neighboring round tower belongs to N and is not this building; no transferred colors.', 'D Food Science building only, distinct from F Culinary Arts and neighboring N round tower.', 'Exact capture date unknown; no2026 current-condition claim.']};(R/'appearance-materials.json').write_text(json.dumps(q,indent=2)+'\n');(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','original_STL_sha256':expected,'triangles':4158,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(q['palette'],'components',len(cs))

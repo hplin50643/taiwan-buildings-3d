@@ -1,32 +1,49 @@
 {
-  "slug": "hku-d-food-science",
-  "count_delta": 0,
-  "geometry_change": false,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "go": {
-    "file": "HKU-D-FOOD-SCIENCE-COLOR-SOURCE-GO-0421.json",
-    "sha256": "82b5b44bec516829144277366871b0094e250160038c1779f8bcd55f60228d22"
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Entry canopy right vertical return only, six original triangles in one complete domain",
+  "domain": {
+    "ids": [
+      4039,
+      4043,
+      4049,
+      4050,
+      4052,
+      4053
+    ],
+    "bounds": [
+      [
+        7.5,
+        -31.0,
+        13.0
+      ],
+      [
+        7.5,
+        -13.5,
+        15.600000381469727
+      ]
+    ],
+    "materials": [
+      1
+    ],
+    "scope": "entry-canopy"
   },
-  "review": {
-    "file": "INDEPENDENT-MAPPING-0421.json",
-    "sha256": "a51b5b0ef6051c899900dfe20562272b0ac9bae0014766d88bdd7c385617ee63"
-  },
-  "source_images": [
-    {
-      "file": "official-exterior.jpg",
-      "sha256": "0d696a8454f50faaddbabe9ce4b4833551057c7d0f43ad48bc35a9402ebf6aae"
-    }
-  ],
+  "triangles": 4158,
+  "old_color_faces": 2,
+  "new_faces": 6,
+  "result_color_faces": 8,
+  "source": "Newly read official112 recruitment PDF page38 embedded425x484 D exterior photograph; capture date unknown.",
   "limits": [
-    "Entire connected facade grid remains neutral: large billboard covers the right portion and lower vegetation obscures bases; do not crop arbitrary triangles or assume the poster is white structure.",
-    "Window recess backs mix burgundy spandrels, frames, glass and air conditioners; no whole dark or burgundy fill.",
-    "Entrance canopy contains gold文字; no uniform white across its lettering plane.",
-    "Roof top, side edge and rear faces, right balcony pockets, ground, steps and all unknown faces neutral.",
-    "Left neighboring round tower belongs to N and is not this building; no transferred colors.",
-    "D Food Science building only, distinct from F Culinary Arts and neighboring N round tower.",
-    "Exact capture date unknown; no2026 current-condition claim."
+    "Photo right canopy plane is pale family distinct from gold-lettered front and dark underside.",
+    "Original35x18x2.6 box is approximate; rear Boolean not geometry certified.",
+    "No front goldletter plane, bottom/top,left side,columns,grid orwindow extension.",
+    "Newly read source, not new capture; existing nominal offwhite palette only."
   ],
-  "rights": "Private references only; no public images/textures or commercial-rights inference.",
-  "source_private_backup": "Sources separately privately retained."
+  "file_sha256": {
+    "domain-screen.json": "1076421fbda78a7525e3cfd9ec0cbcb6bb8a9ba635e419516e23af56e1f13f4a",
+    "original/build_model.py": "4c85c5bcb447824e74eae4c77655936b33ea7300a8590520f56fb1e977057485",
+    "private-reference/recruit.pdf": "1224ab5adef6adbbe9c59617f92c5fa96f684ffaac95c2b20a9e81d8c7d1209f",
+    "private-reference/page38-image0.jpeg": "40e4d95a78ded90c58bc7965c9e9e11c5604385d7bda08afe5633deebda8e95e",
+    "private-reference/official-exterior.jpg": "0d696a8454f50faaddbabe9ce4b4833551057c7d0f43ad48bc35a9402ebf6aae"
+  },
+  "historical_source_register": "qa/canopy-right-return-previous/COLOR-SOURCE-REGISTER.json"
 }

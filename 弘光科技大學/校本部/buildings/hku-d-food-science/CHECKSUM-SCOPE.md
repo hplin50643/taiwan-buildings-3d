@@ -1,0 +1,1 @@
+CANOPY-RIGHT-RETURN：6新面1完整域，2→8色／4150中性／4158tri，0混域，原無OBJ。SOURCE pending固定階段快照；final獨審及DELIVERY精確相對路徑hash另檔。qa/canopy-right-return-previous及舊FREEZE均歷史，不作當次驗證。

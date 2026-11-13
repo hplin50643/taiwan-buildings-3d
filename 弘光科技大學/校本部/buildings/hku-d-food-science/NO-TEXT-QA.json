@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in hku-d-food-science-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "804a02ddfc2496fda5626d2f7aaed6c0a61369e2625ea15db24ff813391eba48",
-    "east.png": "c290cbfce8bc9cfb9e0606e581cf5f7d2dc0361eedc3cd45b4ba783120dd781d",
-    "entry-detail.png": "b2e4b41aa86ab73ce666cb794fd8f9a4ae30b35bdb1f96ab5158cc6a1d1ade14",
-    "facade-detail.png": "50a3c679c9c99cbacca00247567f79331068afd6ce457e3b9f77a17861fababa",
-    "front.png": "d57474dcc58e0828460c79ed5ee01686e69f2771567285a21a8a3336c37da318",
-    "preview.png": "fe53640c47cef35de9802ef4c31e47b2dfea1d7e9c42a46ee17756daa6edc023",
-    "rear.png": "03aebc2f6789e66261fb98d74bd122ca7dd0f70f6d6b591bb83ef5c3769d9237",
-    "roof-detail.png": "c8d33b3d47b04179e8627c80b0909862a1a1766e6fa2ccea8b5dc57f73a8607e",
-    "top.png": "de3f674371a77d2702bcf891b2e9d2e14419e81dfcdd3efff6bb29f890976b62",
-    "west.png": "650dc829e10897faca9e3893a482c3dc8d0c8b1f13f70bf1bc49f2f1df86c9f1"
-  }
+    "preview.png": "0959fa34a29aec28586a495c47f4e336fb004be377fc88188ad5b3081c074c8b",
+    "rear.png": "c0d6639cda61a67afb37ad25910a5c5353220de77f9550ed17bea5bf4fd84a01",
+    "front.png": "b7608880cba3a5bd684042f3326952cde463e403d788dd74a0d48ebcb759fae0",
+    "back.png": "191781223329a73632070f0e7c4bfb6cc9a0de63ed991e543b65cfac9e861dc1",
+    "west.png": "f75e8df98f410842d9f3ccc261c0e75795077548e68035182fe53b69d0175245",
+    "east.png": "2c3ed8e839e8227a20157eef16a1e1048b9a82c3f821624844500c5e97b85684",
+    "top.png": "ec74a72aec6bbf54d137306973d27c7e4ab38b45b260fab7630f24941867b76f",
+    "entry-detail.png": "c0668664b06935db29316335013f0aff06a0cded19334428061e9daee7ffad6e",
+    "facade-detail.png": "33c67c52b071b8c1a5740a252a6c6454bf6d43876ffc794eccba3699ad4fa501",
+    "roof-detail.png": "0387605b3698683bfe65faffdb72b023f397916103a575a4491258fc91efd4c7"
+  },
+  "mesh_sha256": "1a826456ae6f3dea136dd926ab3a6804b586beba5da599115b1625788a95c712",
+  "independent_visual_review": "CANOPY-RIGHT-RETURN-INDEPENDENT-QA.json",
+  "previous_qa": "qa/canopy-right-return-previous/NO-TEXT-QA.json"
 }
