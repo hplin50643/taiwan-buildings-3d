@@ -16,6 +16,7 @@ def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Three official undated classroom photographs; actual mesh already scaled1,.64,.75.
 palette=[('Unknown sides rear roofs base','#AAA79F',.86),('Muted pink brick observed front portal','#B58A78',.86),('Pale original frames bands arc caps','#C1C3B5',.85),('Grey green front window mixed opaque proxy','#798780',.65),('Visible front shoulder roof terracotta proxy','#B26E55',.86),('Original grey entrance steps','#999B93',.86),('Inferred continuous brick sides rear courtyard','#B58A78',.86),('Inferred matching pitched roof terracotta','#B26E55',.86),('Existing side recess opaque glazing proxy','#798780',.65)]
+palette.append(('Approximate pale entrance ceiling background','#C5C2B6',.88))
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
@@ -112,9 +113,22 @@ for p in mesh.polygons:
     if (min(dist)>=.55-EPS and max(abs(v[:,2]-slope))<EPS) or (max(dist)<=.55+EPS and plane(v,2,z+h)):i=7
  if i!=original_indices[-1]:changed_faces.append(p.index)
  p.material_index=i;indices.append(i)
+
+# Whole original entrance ceiling planar domain, no geometry or material-boundary cuts.
+continuation_baseline=list(indices)
+reveal_domains=[[8198, 8201, 8202, 8203, 8204, 8210, 8211, 8212, 8214, 8215, 8216, 8217, 8219, 8221, 8222, 8224, 8225, 8226, 8228, 8229, 8230, 8231, 8238, 8239, 8240, 8242]]
+reveal_changed=[8198, 8201, 8202, 8203, 8204, 8210, 8211, 8212, 8214, 8215, 8216, 8217, 8219, 8221, 8222, 8224, 8225, 8226, 8228, 8229, 8230, 8231, 8238, 8239, 8240, 8242]
+for fi in reveal_changed:
+ assert indices[fi]==0
+ face=mesh.polygons[fi]
+ assert face.normal.z<-.999
+ for vi in face.vertices:
+  q=mesh.vertices[vi].co
+  assert abs(q.z-18)<1e-5 and -15.50001<=q.x<=15.50001 and -21.76001<=q.y<=-12.15999
+ face.material_index=9;indices[fi]=9
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; side/rear material continuity inferred, no fabricated rear windows'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-continuity'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-entrance-ceiling'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -145,7 +159,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Side/rear brick and repeated roof color inferred from existing front and official photos, not individually verified rear surfaces. Existing side recesses use an opaque glazing proxy. No new geometry or rear window array.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original above-ground mesh unchanged. Base and flat roofs neutral. Fifth-storey brown panel remains omitted due to original face boundaries. No B1, completion claim, letters, landscaping, seams or unmodelled cap subdivisions.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-entrance-ceiling','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'reveal_complete_domains':reveal_domains,'reveal_changed_faces':reveal_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Side/rear brick and repeated roof color inferred from existing front and official photos, not individually verified rear surfaces. Existing side recesses use an opaque glazing proxy. No new geometry or rear window array.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original above-ground mesh unchanged. Base and flat roofs neutral. Fifth-storey brown panel remains omitted due to original face boundaries. No B1, completion claim, letters, landscaping, seams or unmodelled cap subdivisions.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-160,-230,140),(0,0,21.225),200),'rear':((160,230,140),(0,0,21.225),200),'elevation':((0,-300,21.225),(0,0,21.225),200),'source-angle':((-150,-230,70),(0,-5,21.225),200),'left':((-260,0,110),(0,0,21.225),200),'right':((260,0,110),(0,0,21.225),200),'top':((0,0,300),(0,0,0),200)}
 out=R/'appearance';out.mkdir(exist_ok=True)
