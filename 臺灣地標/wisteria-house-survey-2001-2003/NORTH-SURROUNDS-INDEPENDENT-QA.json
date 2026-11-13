@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "reviewer": "independent eluanbi_resume reviewer",
+  "scope": "Final bounded historical north upper three outer-surround outward faces only; no geometry or current-restoration claim.",
+  "counts": {
+    "triangles": 12920,
+    "changed_faces": 48,
+    "complete_coplanar_connected_domains": 3,
+    "colored_faces": 96,
+    "neutral_faces": 12824,
+    "other_indices_unchanged": 12872,
+    "preserved_history_files_checked": 90
+  },
+  "checks": [
+    "vertices/faces/STL/buildscript/palette unchanged",
+    "only48 approved indices1to0; all other12872 indices unchanged",
+    "3MF units/vertices/faces/materials exact",
+    "isolated rebuild STL/NPZ and3MF XML identical",
+    "source proposal/review hashes intact and pending source snapshot retained",
+    "vertex/face/material arrays exact",
+    "only2palette slots exact linearRGB shaders; nonmodel mesh backdrop hidden",
+    "allmodel within savedcamera margin",
+    "caption separateFONTnotprintmesh",
+    "scene reopened without saving/mutation"
+  ],
+  "visual_review": {
+    "ten_images": "All ten final native 1200x900 images individually opened and visually inspected. Seven full-object views preserve framing, three intentional south-window detail crops. No text overlay expected by no-text render design.",
+    "supplementary": "Both native north-detail-before and north-detail-after opened. After shows only thin outward dark-coffee surround on three upper north windows; adjacent upper access door, internal mullions/rails and lower frame remain neutral. Full back view change is subtle at global scale; detailed pair resolves it.",
+    "limitations": "Gray neutral remains incomplete classification, not evidence of original gray paint. Render has visible sampling grain and shaded north/east planes but no new global-material leakage. Not print-tested, no four-filament claim.",
+    "source_reading": "Previously independently inspected survey pages 267 north and 268 south at native rendered size; 2001/2003 survey interpretation only. No claim of visually inspecting pages 266/272."
+  },
+  "source_snapshot_policy": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW remains immutable historical source-stage status. This separate final review resolves model QA; does not rewrite snapshot. README explicitly labels old 48-count prose as historical.",
+  "file_sha256": {
+    "build_model.py": "054483f0bf2654569c58aea9e4b889e0e4acc159e0f7e895116a788535b55fe1",
+    "colorize_model.py": "01e47ad4f0a338582b9f191a8375f02e1252aa4780c6adc5a22bd497091f3875",
+    "export_appearance.py": "cc28820e995585c200e291988af825eff847358ed70e484131b32cccde983514",
+    "validate_color.py": "45e66a4c919ff4f22c4c21027be56f5034029a31489863b7fcc1c928855d1712",
+    "validate_model.py": "32b8a5280e4f7644d5a4b9fc8fa2169fd474ce11d29b22cdbbfeaa4faee873a3",
+    "render_color.py": "757544d05e1bbf3c32373496cb34b69e7ea68a15682fe297e0b8e06d75e76539",
+    "verify_color_scene.py": "8f8a59ba59c48bbfdd9892a45d20912dea3ef2ba75938b34140ac21ff1c7a516",
+    "model.stl": "40aebcdd46b43c3ba9066c6031b0c07855f4184cdf83e51b56108cf2a4d78fde",
+    "model.3mf": "9555ca274b10fbb9399cca2e7af64713125de7aa0fb01d9c973c1475fec20a64",
+    "color-mesh.npz": "56e69e24f333c02423208fae8151fefb34fbe18200cb993579d6453050ce4233",
+    "palette.json": "f0584864525007f7b1bad739ed914b2b2b4e578c1e08ebbe0c9414e6ef7d8d6d",
+    "appearance.3mf": "46381e42eebe14465ecfb9f9ba1a4ff924f788a024c169168d0b2a9260ec234a",
+    "appearance-materials.json": "cd5db25a1a1312107e078faf90550eef661c18a141e6ecbd224e1f07c980ed16",
+    "README.md": "c05acfc45d9fd39ea8fa3cd06e280f1fc3e8da25633084234cc3a020c56e5536",
+    "README.zh-TW.md": "c05acfc45d9fd39ea8fa3cd06e280f1fc3e8da25633084234cc3a020c56e5536",
+    "scene.blend": "a2b0b07596368b87f5f2cdf4fc2a5a0dff4d74b67b245e9b7deebe7ff9b4d75c",
+    "NORTH-SURROUNDS-SOURCE-QA.json": "3951610151d3a9183f49311309644a2578078aafed7efa910d6c2e3cd0f2d32d",
+    "NORTH-SURROUNDS-SOURCE-INDEPENDENT-QA.json": "3f72ecfc4d21834919c0aa033e032b93ae2bfe95b50db9c65ca7e6466f67021c",
+    "NORTH-SURROUNDS-LOCAL-QA.json": "6924ea1aac4bc9e0b52d686c277a6364eb8f6301da6c1a4c9a8a594a12cb203e",
+    "COLOR-SOURCE-REGISTER.json": "3951610151d3a9183f49311309644a2578078aafed7efa910d6c2e3cd0f2d32d",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "fdd6c5b58c3a80431b2e77e8c08e93b9c3a565a13444025cf650f6b9c82dc0d5",
+    "COLOR-ASSIGNMENT-QA.json": "e337328053ca361e10048e88bab783afd1df9f947d60a437854e70a39c31f8ca",
+    "SCENE-QA.json": "2385dd205add8c043863fd384cf4e92ce038f19cc0a465e1345bcf4da6dee412",
+    "FRAMING-QA.json": "9463e895819c52852b662e1f9c59376c68b805a8096ba5be1e5a27925f2a7112"
+  },
+  "image_sha256": {
+    "preview.png": "fd699d633fdd8b2972a00d5a319e614633f2587ff593c7e25f55b377ec2f5222",
+    "rear.png": "c166495ded65c9348b28aca67e547ca6f8b4b049ee4f6a5a150d003c0d0011e9",
+    "front.png": "632a349a6dfd65eee8be9c0306eca4e2c7433d78ecd29cac9d65cf6bd99bf307",
+    "back.png": "e9a79354ce3cf07fd3934419ee122335149a977261d4a91ae71f16a9d0843c12",
+    "west.png": "1f1b69c21c8e9622600a362b642f443807a5f0733f1b3b314d8f2f86e201fb2a",
+    "east.png": "9f91361a84f9bc19542e9f987232e270637862189aac0747dbcc3105c3a91dc9",
+    "top.png": "c6394ed05e0239499c84f27e9c0d37201f0b1b074f56f84c2dd695b5686ef8b6",
+    "entry-detail.png": "cd06b5ada171ed9a49fc67532d8b415e3a134cbc2120255c86625a85c25ff342",
+    "facade-detail.png": "47fad1224f8eaacd0dd0f116cdba97347888d4277092a7685268cc9f69b4763c",
+    "roof-detail.png": "59f6235f36702cae6dadf8bc31d74a64305468d95427877846e36938b461e731"
+  },
+  "supplementary_private_image_sha256": {
+    "north-detail-before.png": "0384ae13120e292e0ed7e29f4b47ff526fb65577ff6bf54ea382778420e482a1",
+    "north-detail-after.png": "5af6e9b16d4d38aab24767f5c7902f0a36bc41aa63a77f442e568fb598e46c8d"
+  },
+  "private_evidence_sha256": {
+    "SOURCE-PROPOSAL.json": "817f63b9f39197977c6585559c82a97a64160e01725bce15845bc2a0123129b3",
+    "second-source-domain-review.json": "3f72ecfc4d21834919c0aa033e032b93ae2bfe95b50db9c65ca7e6466f67021c",
+    "north-outer-surround-proposal.json": "39f14f7d3f9744c50436c29aead67ef8de33e7530026100b1be7fa333c8cc2e2",
+    "independent-final-numeric.json": "3931f5d23783bfdebe3eed8bb6afdd0a2c4cf3b8e055508a1de091d613931db9",
+    "independent-scene-reopen.json": "b00d798afe6c372d25ec53b66bcbc4d4b5d8ff4139d0d8e2130ed2efecb482e3",
+    "independent_final_numeric.py": "3a32a11d38e73acf4ede95683607fe9f74aaaab363454d7cc6999f448c887118",
+    "independent_scene_reopen.py": "e2934cbb59838fb141b80f98d1194d9a0fcf1c580769ef605b35be82dc98dddd"
+  },
+  "hash_scope": "file_sha256 and image_sha256 paths are exact relative to work root, never basename search. supplementary/private paths relative to candidate root. DELIVERY-QA.json, NO-TEXT-QA.json, SHA256SUMS and future finalizer artifacts intentionally excluded because not final yet; no permission to change reviewed input bytes."
+}

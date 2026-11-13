@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "Only48north upper outer-window outward front faces/3complete connected coplanar domains neutral1 to deepcoffee0; original48south unchanged.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 12920,
+  "original_color_faces": 48,
+  "new_color_faces": 48,
+  "colored_faces": 96,
+  "unknown_neutral_faces": 12824,
+  "palette_unchanged": true,
+  "geometry_unchanged": true,
+  "current_independent_review": "NORTH-SURROUNDS-INDEPENDENT-QA.json",
+  "original_historical_review": "qa/north-surrounds-previous/INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "original_STL_sha256": "40aebcdd46b43c3ba9066c6031b0c07855f4184cdf83e51b56108cf2a4d78fde",
+  "color_mesh_sha256": "56e69e24f333c02423208fae8151fefb34fbe18200cb993579d6453050ce4233",
+  "images_sha256": {
+    "preview.png": "fd699d633fdd8b2972a00d5a319e614633f2587ff593c7e25f55b377ec2f5222",
+    "rear.png": "c166495ded65c9348b28aca67e547ca6f8b4b049ee4f6a5a150d003c0d0011e9",
+    "front.png": "632a349a6dfd65eee8be9c0306eca4e2c7433d78ecd29cac9d65cf6bd99bf307",
+    "back.png": "e9a79354ce3cf07fd3934419ee122335149a977261d4a91ae71f16a9d0843c12",
+    "west.png": "1f1b69c21c8e9622600a362b642f443807a5f0733f1b3b314d8f2f86e201fb2a",
+    "east.png": "9f91361a84f9bc19542e9f987232e270637862189aac0747dbcc3105c3a91dc9",
+    "top.png": "c6394ed05e0239499c84f27e9c0d37201f0b1b074f56f84c2dd695b5686ef8b6",
+    "entry-detail.png": "cd06b5ada171ed9a49fc67532d8b415e3a134cbc2120255c86625a85c25ff342",
+    "facade-detail.png": "47fad1224f8eaacd0dd0f116cdba97347888d4277092a7685268cc9f69b4763c",
+    "roof-detail.png": "59f6235f36702cae6dadf8bc31d74a64305468d95427877846e36938b461e731"
+  },
+  "checked_at": "2026-11-12T23:48:28.068799+00:00",
+  "limits": [
+    "Same2001/06and2003/03survey, not2008/2024restored or current condition.",
+    "No lowerwhiteframes,glass,mullions,rails,reveals,door or roof extension.",
+    "Deepcoffee family approximation, not calibratedRGB. Original10material classification retained; white timber evidence not denied.",
+    "Original coarsegeometry/manufacturing risks remain; no trialprint. Sourcepending remains historical snapshot."
+  ]
+}

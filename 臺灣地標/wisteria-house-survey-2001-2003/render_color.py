@@ -6,7 +6,7 @@ ONLY_VIEW=next((x.split('=',1)[1] for x in sys.argv if x.startswith('--only-view
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 d=np.load(R/'color-mesh.npz');v=d['vertices'];f=d['faces'];mi=d['materials'];pal=json.loads((R/'palette.json').read_text())
 m=bpy.data.meshes.new('validated_printable_mesh');m.from_pydata(v.tolist(),[],f.tolist());m.update();o=bpy.data.objects.new('Wisteria House Survey 2001 2003 partial color',m);bpy.context.collection.objects.link(o)
-o['source_mesh_sha256']=hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest();o['scale']='original1to100-mm' ;o['scope']='Same original simplified geometry; source-referenced color, neutral unverified rear'
+o['source_mesh_sha256']=hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest();o['scale']='original1to100-mm' ;o['scope']='Same original simplified geometry; source-referenced color, bounded upper north and south surrounds; all other faces neutral'
 for name,col in pal:
  mat=bpy.data.materials.new(name);rgb=tuple((v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4) for v in [int(col[i:i+2],16)/255 for i in (1,3,5)]);mat.diffuse_color=(*rgb,1);mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(*rgb,1);bs.inputs['Roughness'].default_value=.72;m.materials.append(mat)
 for p,k in zip(m.polygons,mi):p.material_index=int(k)
@@ -21,8 +21,8 @@ views={'preview':(430,-300,240),'rear':(-150,340,240),'front':(150,-500,100),'ba
 bpy.ops.object.text_add();caption=bpy.context.object;caption.name='HISTORICAL_SCHEME_NOTICE_NOT_PRINT_GEOMETRY';caption.parent=cam
 fontpath=Path('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')
 if fontpath.exists():
- caption.data.font=bpy.data.fonts.load(str(fontpath));caption.data.body='紫藤廬修前調查｜三窗外框局部深咖啡\n2001–2003調查／非修復後或現況\n原12920面不變；未試印'
-else:caption.data.body='WISTERIA PRE-RESTORATION SURVEY COLOR\nOriginal geometry unchanged / neutral unverified rear'
+ caption.data.font=bpy.data.fonts.load(str(fontpath));caption.data.body='紫藤廬修前調查｜南北六窗外框局部深咖啡\n2001–2003調查／非修復後或現況\n原12920面不變；未試印'
+else:caption.data.body='WISTERIA PRE-RESTORATION SURVEY COLOR\nOriginal geometry unchanged / bounded upper north and south surrounds; all other faces neutral'
 caption.data.align_x='LEFT';caption.data.space_line=1.0
 cm=bpy.data.materials.new('caption emission');cm.use_nodes=True;cm.node_tree.nodes.clear();em=cm.node_tree.nodes.new('ShaderNodeEmission');em.inputs['Color'].default_value=(.95,.95,.95,1);out=cm.node_tree.nodes.new('ShaderNodeOutputMaterial');cm.node_tree.links.new(em.outputs[0],out.inputs['Surface']);caption.data.materials.append(cm)
 if hasattr(caption,'visible_shadow'):caption.visible_shadow=False

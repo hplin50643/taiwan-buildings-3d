@@ -1,43 +1,200 @@
 {
-  "status": "GO_PARTIAL_SURVEY_COLOR_ONLY",
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
   "building": "wisteria-house-survey-2001-2003",
-  "source_go_sha256": "049d29c7a67b756777308f6e8651b8b6d32753f224bb044f8718e77aa03cc6ea",
-  "independent_review_sha256": "3767855ea4a6795cca90846146f71bd55676ceb52d5ce0325ac6790e45bea584",
-  "existing_preview_transition": {
-    "actual_existing_assignment": "NPZ triangle order checked against rawSTL; all48 selected faces assigned material2 Painted timber frames #D4D4C8 (generic offwhite), not darkcoffee.",
-    "existing_source_evidence_preserved": "Original wood palette refers to white-painted weatherboards; this evidence remains valid and must not be described as wholly unsupported. Original immutable10-material scene/3MF/renders/history retained.",
-    "new_variant": "Only48 newly verified darkcoffee outer-surround front faces; allotherfaces neutral for this bounded variant. This does not deny existing white-paint evidence or replace original historical presentation."
-  },
-  "source": {
-    "sha256": "a1bc27843bd3ac44b8a1f90b02dd18e5c93108b473ff1adbff82aea48dada600",
-    "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=b533b43a-7d44-466b-a90c-8c22300f5e98",
-    "status": 200,
-    "physical_pages_viewed": [
-      266,
-      267,
-      268
-    ],
-    "recorded_dates": "Cover2002; drawings2001/06 and2003/03. Not one capture date and not2008/2024-restored condition."
-  },
-  "sources_private": true,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "count_delta": 0,
+  "triangles": 12920,
+  "original_color_faces": 48,
+  "proposed_new_color_faces": 48,
+  "proposed_color_faces": 96,
+  "proposed_neutral_faces": 12824,
   "geometry_unchanged": true,
-  "allowed": [
-    "48 complete three upper outer-surround front faces deepcoffee"
+  "palette_unchanged": true,
+  "scope": "Three complete north-facing upper outer-window surround front planes only,16tri each/3whole coplanar domains. Retain existing southern48faces. Not mullions/rails/reveals/glass or lower windows.",
+  "source_basis": "Same original official survey PDF SHA exact. Physical267 north elevation explicitly labels upper window frames deepcoffee paint. Three upper windows correspond to existing named north_hall_large/small/north_end primitives. Physical268 southern same label supports existing palette colorfamily. No modern-photo transfer.",
+  "era": "Cover2002 and drawings2001/06,2003/03. Not2008or2024restored appearance.",
+  "excluded": [
+    "Lower white-painted timber windows and boards evidence remains valid but is not part of this proposal.",
+    "Rear high access door not called window; exclude.",
+    "Yellow-green low rear boards/posts, red metal roof, glass, stone/plaster not extended."
   ],
-  "unknown_neutral": [
-    "Yellow-green boards/posts on page266 low rear structure not securely mapped to original whole architectural domains; no yellow-green assignment.",
-    "Red corrugated sheet annotations do not authorize entire roof; no redroof assignment.",
-    "Glass reflections/grayscale notblue; lower whiteframes notdarkcoffee.",
-    "No cropped or partial connected coplanar components, no added subdivision or geometry."
+  "domains": [
+    {
+      "name": "north_hall_large",
+      "faces": [
+        8461,
+        8462,
+        8464,
+        8466,
+        8467,
+        8468,
+        8470,
+        8471,
+        8474,
+        8476,
+        8477,
+        8478,
+        8479,
+        8481,
+        8483,
+        8484
+      ],
+      "complete_domains": [
+        [
+          8461,
+          8462,
+          8464,
+          8466,
+          8467,
+          8468,
+          8470,
+          8471,
+          8474,
+          8476,
+          8477,
+          8478,
+          8479,
+          8481,
+          8483,
+          8484
+        ]
+      ],
+      "bounds": [
+        [
+          201.39999389648438,
+          90.69999694824219,
+          54.599998474121094
+        ],
+        [
+          227.60000610351562,
+          91.5999984741211,
+          73.5999984741211
+        ]
+      ],
+      "outward_plane_y": 91.5999984741211
+    },
+    {
+      "name": "north_hall_small",
+      "faces": [
+        8663,
+        8664,
+        8666,
+        8668,
+        8670,
+        8671,
+        8673,
+        8674,
+        8676,
+        8678,
+        8679,
+        8680,
+        8681,
+        8682,
+        8685,
+        8686
+      ],
+      "complete_domains": [
+        [
+          8663,
+          8664,
+          8666,
+          8668,
+          8670,
+          8671,
+          8673,
+          8674,
+          8676,
+          8678,
+          8679,
+          8680,
+          8681,
+          8682,
+          8685,
+          8686
+        ]
+      ],
+      "bounds": [
+        [
+          180.0,
+          90.69999694824219,
+          55.400001525878906
+        ],
+        [
+          192.89999389648438,
+          91.5999984741211,
+          73.5999984741211
+        ]
+      ],
+      "outward_plane_y": 91.5999984741211
+    },
+    {
+      "name": "north_end",
+      "faces": [
+        8865,
+        8866,
+        8868,
+        8870,
+        8872,
+        8874,
+        8875,
+        8876,
+        8878,
+        8880,
+        8881,
+        8882,
+        8883,
+        8886,
+        8887,
+        8888
+      ],
+      "complete_domains": [
+        [
+          8865,
+          8866,
+          8868,
+          8870,
+          8872,
+          8874,
+          8875,
+          8876,
+          8878,
+          8880,
+          8881,
+          8882,
+          8883,
+          8886,
+          8887,
+          8888
+        ]
+      ],
+      "bounds": [
+        [
+          262.3999938964844,
+          66.19999694824219,
+          55.400001525878906
+        ],
+        [
+          283.6000061035156,
+          67.0999984741211,
+          73.80000305175781
+        ]
+      ],
+      "outward_plane_y": 67.0999984741211
+    }
   ],
-  "retained_original_qa": [
-    "Survey exterior not1920s original or post2008/current restoration; multiple survey dates preserved.",
-    "West timber wing, east two-storey addition and low service/flower roofs form one study; no garden/perimeter/interior/furniture.",
-    "Right-angle simplification, scan-registered dimensions, common display datum, approximate footings/steps/roof valleys and sparse tilecourses remain.",
-    "Glass is opaque backed geometry; no hidden equipment or detailed construction fidelity.",
-    "Original digitalQA12920faces/singlecomponent/watertight/15checks not newly reapproved. Manufacturing risks thinpergola/frames/supports remain; no trialprint."
-  ]
+  "file_sha256": {
+    "selected.json": "2f957c3e6aacb4c72c6e3a46b2bc7fdf115daae9350f39c814c60f5fbee2ef53",
+    "original-verification.json": "59f043276711968b1e12691feecabb6529553a231f5b8cfecfa693ebf5a9689b",
+    "domain-screen.json": "f0e5568606a0262639b75d61bb7ba324cfa528ba513fc1610b5f93ab32f73292",
+    "north-outer-surround-proposal.json": "39f14f7d3f9744c50436c29aead67ef8de33e7530026100b1be7fa333c8cc2e2",
+    "original/color-mesh.npz": "aa868e2938bf540baba909b252c198d89d594163b01c27b286a5bfb70b8c959b",
+    "original/build_model.py": "054483f0bf2654569c58aea9e4b889e0e4acc159e0f7e895116a788535b55fe1",
+    "original/colorize_model.py": "be41056aae99629b546e93f80e59cf0794303ecf9e2e6d634de5704e359e00d1",
+    "original/COLOR-SOURCE-REGISTER.json": "1c01b20bd85c350c34b7376f14788312b86ab0b3968ccb2eb8d3f72d15a72b5e",
+    "private-reference/survey.pdf": "a1bc27843bd3ac44b8a1f90b02dd18e5c93108b473ff1adbff82aea48dada600",
+    "private-reference/survey-register.json": "62a191477ef48a8d3c11a01251c8efeaeb843e88512892e2f8a9a4b895f2892a",
+    "private-reference/page266.png": "91f18a484ecd01e2578757d96ef4a4d6133faa898f1ead511861459e3b668308",
+    "private-reference/page267.png": "bdcd78f6167b1564d25803a8abd9446cf0ffd41899c320a8ec034487d44fbf57",
+    "private-reference/page268.png": "057e4f5f87e6f38e21035be04e945d0e44f1f4defce4d9f7496ce621a01378b8",
+    "private-reference/page272.png": "539ccccea81c8fcf846cdb312bd5a81c5eea9017bf1e3e3f383934336e90d653"
+  },
+  "historical_source": "qa/north-surrounds-previous/COLOR-SOURCE-REGISTER.json"
 }
