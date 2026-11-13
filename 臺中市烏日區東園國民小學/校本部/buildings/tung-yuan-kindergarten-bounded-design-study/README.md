@@ -2,7 +2,11 @@
 
 臺中市烏日區東園國小附設幼兒園，作者 office aaa／究境聯合建築師事務所。此包是作者設計圖與部分完成照支持的名義軸網研究，**不是整個國小校園、竣工測繪、完整實景配色或試印成品**。
 
-![庭院方向研究預覽](review-court-oblique.png)
+|  |
+| :---: |
+| ![庭院方向研究預覽](review-court-oblique.png) |
+| 庭院方向研究預覽 |
+
 
 [背向](review-rear-oblique.png) · [俯視](review-top.png) · [入口端](review-entry-end.png)
 

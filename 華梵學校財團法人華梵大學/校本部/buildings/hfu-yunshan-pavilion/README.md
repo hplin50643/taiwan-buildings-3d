@@ -2,7 +2,11 @@
 
 以華梵大學 2024-06-24 官方揭幕新聞三張照片為依據，重建獨立亭體的四圓柱、主要樑框、淺四坡屋頂、無字橘色匾與名義支撐底盤。**不是全景園區、測繪模型或施工復原**。
 
-![主視角](previews/front.png)
+|  |
+| :---: |
+| ![主視角](previews/front.png) |
+| 主視角 |
+
 
 ## 範圍與省略
 - 覆面使用照片比例近似的厚實體；不將纖維覆材虛構為精細瓦片。背側未確認樑細節不添加。
@@ -17,10 +21,13 @@
 幾何與檔案一致性見 `QA.json`；全新目錄重建見 `REBUILD-QA.json`；Blender/渲染/構圖及來源視覺審核各有獨立紀錄。這些不是實際試印保證。
 
 ## 六視圖
-![正面](previews/front_elevation.png)
-![背面](previews/rear.png)
-![側面](previews/left_end.png)
-![俯視](previews/top.png)
-![局部：上部與匾額，非全體](previews/entry_detail.png)
+
+|  |  |  |
+| :---: | :---: | :---: |
+| ![正面](previews/front_elevation.png) | ![背面](previews/rear.png) | ![側面](previews/left_end.png) |
+| 正面 | 背面 | 側面 |
+| ![俯視](previews/top.png) | ![局部：上部與匾額，非全體](previews/entry_detail.png) |  |
+| 俯視 | 局部：上部與匾額，非全體 |  |
+
 
 參考照片僅用於研究，不嵌入模型或發布包。來源與誤差見 [SOURCES.md](SOURCES.md)。

@@ -14,16 +14,12 @@
 
 舊版本仍在原Git歷史中；本次公開QA只綁公開產物。私人研究與比較不隨包分發。
 
-![front](appearance/front.png)
+|  |  |  |
+| :---: | :---: | :---: |
+| ![正面斜視](appearance/front.png) | ![背面斜視](appearance/rear.png) | ![正立面](appearance/elevation.png) |
+| 正面斜視 | 背面斜視 | 正立面 |
+| ![來源角度](appearance/source-angle.png) | ![左側](appearance/left.png) | ![右側](appearance/right.png) |
+| 來源角度 | 左側 | 右側 |
+| ![俯視](appearance/top.png) |  |  |
+| 俯視 |  |  |
 
-![rear](appearance/rear.png)
-
-![elevation](appearance/elevation.png)
-
-![source-angle](appearance/source-angle.png)
-
-![left](appearance/left.png)
-
-![right](appearance/right.png)
-
-![top](appearance/top.png)

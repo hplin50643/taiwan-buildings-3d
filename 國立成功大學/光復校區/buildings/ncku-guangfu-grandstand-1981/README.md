@@ -4,9 +4,11 @@
 
 **1981 原建築圖外觀重建｜非竣工測繪、非 2026 現況。**
 
-![西側整體模型](previews/front.png)
-![東側入口模型](previews/rear.png)
-![屋頂模型](previews/top.png)
+|  |  |  |
+| :---: | :---: | :---: |
+| ![西側整體模型](previews/front.png) | ![東側入口模型](previews/rear.png) | ![屋頂模型](previews/top.png) |
+| 西側整體模型 | 東側入口模型 | 屋頂模型 |
+
 
 ## 下載與使用
 - [彩色 3MF](model.3mf)、[單色 STL](model.stl)、[可編輯 Blender 場景](scene.blend)。

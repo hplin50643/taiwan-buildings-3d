@@ -3,7 +3,13 @@
 **既有三材展示非單色；其餘未知域尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅曲門最高外立面60面淺灰，其他5270中性；原150柱角跨層樣本／1163短首弦、v1 HOLD與v2有限例外保留，不追認全域最薄壁或試印。
 
 ## 指定首頁與圖鑑代表圖保持原件
-![原指定校園三分之四代表圖](previews/homepage-three-quarter.png)
+
+|  |
+| :---: |
+| ![原指定校園三分之四代表圖](previews/homepage-three-quarter.png) |
+| 原指定校園三分之四代表圖 |
+
+
 首頁、校級、校區圖鑑仍指定原 previews/homepage-three-quarter.png，36.87°偏轉／23.43°俯視、1200×1200原bytes不變。不是下方新補色preview，不以本次新增十圖取代首頁。原README公開另存 ORIGINAL-SOURCE-GAP-README.md，完整原指定與九張技術圖、三展示材、原scene/renderer保留。
 
 ## 附加本次材色QA十圖（不是首頁替代）

@@ -14,16 +14,12 @@
 ## 工程與歷史範圍
 原四向通拱、懸鐘、鐘盤及球飾皆既有近似，不加時針、刻字或玻璃封板。原validation/contour/thin-feature等報告保留為歷史範圍，不是本輪完整工程重測；未實體試印或實際切片，不保證AMS、任意切片器、多色支撐或任意縮放可印。原拱頂、懸鐘連接、鐘框、屋面及細部風險不變。舊公開版本在原Git歷史保留。
 
-![front](appearance/front.png)
+|  |  |  |
+| :---: | :---: | :---: |
+| ![正面斜視](appearance/front.png) | ![背面斜視](appearance/rear.png) | ![正立面](appearance/elevation.png) |
+| 正面斜視 | 背面斜視 | 正立面 |
+| ![來源角度](appearance/source-angle.png) | ![左側](appearance/left.png) | ![右側](appearance/right.png) |
+| 來源角度 | 左側 | 右側 |
+| ![俯視](appearance/top.png) |  |  |
+| 俯視 |  |  |
 
-![rear](appearance/rear.png)
-
-![elevation](appearance/elevation.png)
-
-![source-angle](appearance/source-angle.png)
-
-![left](appearance/left.png)
-
-![right](appearance/right.png)
-
-![top](appearance/top.png)

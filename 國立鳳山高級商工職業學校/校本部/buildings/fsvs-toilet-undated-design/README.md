@@ -19,13 +19,15 @@
 
 ## 預覽
 
-![入口側透視](preview.png)
-![另一側透視](rear.png)
-![南向](south.png)
-![北向](north.png)
-![西向](west.png)
-![東向](east.png)
-![屋頂](top.png)
+|  |  |  |
+| :---: | :---: | :---: |
+| ![入口側透視](preview.png) | ![另一側透視](rear.png) | ![南向](south.png) |
+| 入口側透視 | 另一側透視 | 南向 |
+| ![北向](north.png) | ![西向](west.png) | ![東向](east.png) |
+| 北向 | 西向 | 東向 |
+| ![屋頂](top.png) |  |  |
+| 屋頂 |  |  |
+
 
 ## 重建與來源
 

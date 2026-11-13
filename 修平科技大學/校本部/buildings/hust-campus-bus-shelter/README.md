@@ -2,7 +2,11 @@
 
 依修平官方校園相簿正面及近斜面實景照建模：橘色短向淺弧頂、四藍柱、左側無字資訊板、右側紅色六角穿孔板、綠架深色長凳及簡化頂燈。
 
-![主視角](previews/front.png)
+|  |
+| :---: |
+| ![主視角](previews/front.png) |
+| 主視角 |
+
 
 ## 明確範圍
 - 完整主要亭體，不含獨立外燈、公車站牌、校門牆、植栽及道路排水設施。
@@ -16,10 +20,13 @@
 14項幾何/格式檢查、全新目錄精確重建、Blend等值、五全景一局部構圖及渲染雜湊檢查，各有QA紀錄；不構成實際試印保證。
 
 ## 六視圖
-![正面](previews/front_elevation.png)
-![背面](previews/rear.png)
-![左側](previews/left_end.png)
-![俯視](previews/top.png)
-![右側孔板局部，非全體](previews/entry_detail.png)
+
+|  |  |  |
+| :---: | :---: | :---: |
+| ![正面](previews/front_elevation.png) | ![背面](previews/rear.png) | ![左側](previews/left_end.png) |
+| 正面 | 背面 | 左側 |
+| ![俯視](previews/top.png) | ![右側孔板局部，非全體](previews/entry_detail.png) |  |
+| 俯視 | 右側孔板局部，非全體 |  |
+
 
 [來源與限制](SOURCES.md)。包內不含原始照片或人物影像。

@@ -1,6 +1,10 @@
 # 敏實科技大學｜大華橋上部橋體
 
-![大華橋上部橋體模型](previews/front.png)
+|  |
+| :---: |
+| ![大華橋上部橋體模型](previews/front.png) |
+| 大華橋上部橋體模型 |
+
 
 依校方公開日間外觀與夜間橋內照片製作的來源約束展示模型。模型範圍是**整跨上部橋體**，不是包含橋墩、基礎、谷地的完整工程橋梁，也不是量測或結構設計成果。
 
@@ -24,10 +28,13 @@
 模型未實體試印；薄棚、長跨與欄杆需自行評估支撐、縮尺及列印材料，非工程用途。
 
 ## 六視圖
-![front_elevation](previews/front_elevation.png)
-![rear](previews/rear.png)
-![left_end](previews/left_end.png)
-![top](previews/top.png)
-![entry_detail](previews/entry_detail.png)
+
+|  |  |  |
+| :---: | :---: | :---: |
+| ![front_elevation](previews/front_elevation.png) | ![背面斜視](previews/rear.png) | ![left_end](previews/left_end.png) |
+| front_elevation | 背面斜視 | left_end |
+| ![俯視](previews/top.png) | ![entry_detail](previews/entry_detail.png) |  |
+| 俯視 | entry_detail |  |
+
 
 薄吊桿及微細連接省略。側拱腳與橋板接法是作者名義連通處理，不是現場基礎或工程結構的證明。

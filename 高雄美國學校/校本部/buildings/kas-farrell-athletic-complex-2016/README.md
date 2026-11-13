@@ -2,9 +2,11 @@
 
 **2016 建築師竣工供圖外觀｜不是精密竣工測繪，也不代表 2026 現況。**
 
-![操場側模型](previews/front.png)
-![街側背面模型](previews/rear.png)
-![屋頂模型](previews/top.png)
+|  |  |  |
+| :---: | :---: | :---: |
+| ![操場側模型](previews/front.png) | ![街側背面模型](previews/rear.png) | ![屋頂模型](previews/top.png) |
+| 操場側模型 | 街側背面模型 | 屋頂模型 |
+
 
 ## 模型
 [彩色 3MF](model.3mf) · [STL](model.stl) · [可編輯壓縮 Blender](scene.blend) · [建模程式](build_model.py) · [參數](parameters.json) · [QA](QA.json)

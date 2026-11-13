@@ -1,6 +1,10 @@
 # 大葉大學｜設計曲橋（彩虹橋）上部橋體
 
-![上部橋體](previews/front.png)
+|  |
+| :---: |
+| ![上部橋體](previews/front.png) |
+| 上部橋體 |
+
 
 官方公開外觀拼圖及校園 360 全景支持的來源約束展示模型。保留整跨雙黃側拱、多道上方橫桿、圓直桿、直線綠橋面及兩側灰白格柵；上方**沒有屋頂**。不擴張到相接校舍。
 
@@ -21,8 +25,11 @@
 未試印。細格柵、長跨和薄桿應按列印機/材料另評估支撐，不能當工程零件。
 
 ## 六視圖
-![front_elevation](previews/front_elevation.png)
-![rear](previews/rear.png)
-![left_end](previews/left_end.png)
-![top](previews/top.png)
-![entry_detail](previews/entry_detail.png)
+
+|  |  |  |
+| :---: | :---: | :---: |
+| ![front_elevation](previews/front_elevation.png) | ![背面斜視](previews/rear.png) | ![left_end](previews/left_end.png) |
+| front_elevation | 背面斜視 | left_end |
+| ![俯視](previews/top.png) | ![entry_detail](previews/entry_detail.png) |  |
+| 俯視 | entry_detail |  |
+

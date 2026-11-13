@@ -14,16 +14,12 @@
 ## 工程與歷史限制
 不改原五屋冠、兩片無材界壁畫、框架與真門洞。側背混白/粉但無原分帶面界仍未知；不憑三角碎塊新增斜補丁。原validation、contour、thin-feature等工程報告留其原範圍，不是本次全面重測。未實體試印、未實際Cura/Prusa切片；不保證AMS、任意多色切片器、免支撐或任意縮放可印。原開口、薄梁、凹窗與懸挑等風險不變。舊公開版本保留Git歷史。
 
-![front](appearance/front.png)
+|  |  |  |
+| :---: | :---: | :---: |
+| ![正面斜視](appearance/front.png) | ![背面斜視](appearance/rear.png) | ![正立面](appearance/elevation.png) |
+| 正面斜視 | 背面斜視 | 正立面 |
+| ![來源角度](appearance/source-angle.png) | ![左側](appearance/left.png) | ![右側](appearance/right.png) |
+| 來源角度 | 左側 | 右側 |
+| ![俯視](appearance/top.png) |  |  |
+| 俯視 |  |  |
 
-![rear](appearance/rear.png)
-
-![elevation](appearance/elevation.png)
-
-![source-angle](appearance/source-angle.png)
-
-![left](appearance/left.png)
-
-![right](appearance/right.png)
-
-![top](appearance/top.png)

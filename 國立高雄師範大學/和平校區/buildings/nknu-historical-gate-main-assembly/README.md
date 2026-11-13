@@ -18,9 +18,11 @@
 
 以下為本套件模型的實際渲染，非建築現場照片；建模範圍與限制仍以本文說明為準。
 
-![模型正面立體預覽](previews/front.png)
+|  |  |
+| :---: | :---: |
+| ![模型正面立體預覽](previews/front.png) | ![模型正立面預覽](previews/front_elevation.png) |
+| 模型正面立體預覽 | 模型正立面預覽 |
 
-![模型正立面預覽](previews/front_elevation.png)
 
 ## 檔案
 `model.stl` 為單一連通網格；`model.3mf` 含四類近似色彩及毫米單位；`scene.blend` 含實際輸出網格與隱藏施工分件；`build_model.py`、`render_model.py` 可重建模型和六張圖。原始歷史照片不附入模型包，不作貼圖。

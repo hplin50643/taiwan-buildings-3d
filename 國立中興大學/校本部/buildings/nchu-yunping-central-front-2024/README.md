@@ -2,9 +2,11 @@
 
 依官方2024-07-31空拍封面建立的近似彩色模型。**僅中央正立面截段，不是整棟或測繪模型**。兩側斜翼、真實後側與完整屋頂平面不在範圍；棕紅塔只呈現前切片，背板及底座為人工封閉支撐。被樹遮蔽的左下部留空白支撐，不補猜窗門。來源年份不等於2026現況確認。
 
-![正面透視](previews/front.png)
-![正立面](previews/front_elevation.png)
-![頂視](previews/top.png)
+|  |  |  |
+| :---: | :---: | :---: |
+| ![正面透視](previews/front.png) | ![正立面](previews/front_elevation.png) | ![頂視](previews/top.png) |
+| 正面透視 | 正立面 | 頂視 |
+
 
 - `model.stl`：單色幾何；`model.3mf`：同網格逐面色材質。
 - `scene.blend`：實際網格與隱藏可編輯原始零件，不含來源影像。

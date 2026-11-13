@@ -6,9 +6,11 @@
 
 以下為本套件模型的實際渲染，非建築現場照片；建模範圍與限制仍以本文說明為準。
 
-![模型正面立體預覽](previews/front.png)
+|  |  |
+| :---: | :---: |
+| ![模型正面立體預覽](previews/front.png) | ![模型正立面預覽](previews/front_elevation.png) |
+| 模型正面立體預覽 | 模型正立面預覽 |
 
-![模型正立面預覽](previews/front_elevation.png)
 
 - `model.stl`：封閉單連通幾何。
 - `model.3mf`：同幾何基礎材質色。
