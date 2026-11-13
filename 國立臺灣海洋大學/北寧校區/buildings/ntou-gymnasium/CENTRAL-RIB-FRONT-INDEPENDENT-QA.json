@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "building": "ntou-gymnasium",
+  "triangles": 5630,
+  "new_color_faces": 18,
+  "exterior_color_before": 2,
+  "exterior_color_after": 20,
+  "neutral_after": 5610,
+  "complete_domains": 8,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "findings": [
+    "Independent finite analytic elliptical-chord all-vertex selector verified18original faces in8whole central-rib domains, segments16..23 only. Allother indices and original2palette entries unchanged.",
+    "3MF geometry/three material assignments exact;112 unmodified baseline files independently SHA compared including engineering reports/aliases.",
+    "Retained isolated STL/NPZ/palette/materials and3MF model XML directly compared exact.",
+    "Savedscene independently reopened;5630mesh vertices/faces/indices and3shaders exact; original camera/lights/render/object inventory/transforms same.",
+    "Actually inspected all10final images via overview plus3details full; private central-rib image shows finite red front strip without expansion into gray glazing or upper/lower rib.",
+    "README/CHECKSUM accurately retain original strict false and historical107-delivery-scope distinction."
+  ],
+  "limits": [
+    "COLOR-ONLY PASS: original strict false / run_checks exit1,60opening-loss exceptions,1227shortchords and12along-surface intervals remain unresolved. Not geometric repair, zero-warning or print approval.",
+    "Only nominal muted-red family; facet endpoints are evidence extent, not true paint seams; original curved proxy not surveyed.",
+    "No side thickness/top/lower curl/other12ribs/wall or glass extension.",
+    "Baseline143blob retained; historical107item wording does not mean107were all in old frozen publication.",
+    "Sourcepending fixed snapshot, original noOBJ."
+  ],
+  "image_sha256": {
+    "preview.png": "2176341bfceb67f6d105416f0e9b9e5264f399c1991c826a5ced818e184c1d0c",
+    "rear.png": "10961a81e39a9f193baab77407ced4767e38962e4f59415f6bf080d0c36cfb4c",
+    "front.png": "5c5f6c49b371a7404b732af1e32109a259da5d3b8efda7a766e6d7989428b9f4",
+    "back.png": "2a659b20b47645a71598176fc1cab05c6beed718948adb55863f8555fea47301",
+    "west.png": "76501fbdb1a5d73d528cbccecc1a44509d4a11488326aea7aae58835e0f7b4ab",
+    "east.png": "f926067266406f928ae981a68e899248a04431a4200a35788d35f84b8fae2d4c",
+    "top.png": "bffebd4eace7a6cd09d4053a336884f5913dff3862ed658b835e1af878a0242c",
+    "entry-detail.png": "8db7a9bd1cba16a8e04a97698e70b4e25339e0f3035fc804c8ff389648f473ca",
+    "facade-detail.png": "cad0736162553254953d59157d885b6bfa041957964eca3ee8a2c1c0f2debd74",
+    "roof-detail.png": "87236145975678f9342151284830c611255540d664ab101f111ec9769c7111fd"
+  },
+  "file_sha256": {
+    "model.stl": "752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49",
+    "build_model.py": "4f35f2b343c2ca3bf5fea02c93a93bbf2eee0dcde8981a77a08f3ba02893e174",
+    "color-mesh.npz": "6d40886b7c18f5934d0bf467735962d898c3e990e10d9c0a462a35a3efdce965",
+    "palette.json": "eb31ffd615037d250624338ac1d9bc5700668ac20931f97b95c12c67ce907f63",
+    "appearance.3mf": "6d3014aa5a166d3bec4119573171b129b92df353a218f750c8dd3a669717482c",
+    "appearance-materials.json": "9fba527865ea306df81c9bc2031e5298c5b8d774a7d60170f2888c60951b3379",
+    "scene.blend": "4d4e131cd2ba5f8934ce69b57915bf153f3d0ba6f749a18add4b1cd25a2c0452",
+    "colorize_model.py": "0ca752b90373d7eee2e81e27e5d358332f958f368397403fad3465f47806d8e9",
+    "export_appearance.py": "93b9d7d048ad60e04b9cd28e131540a91b88fb5964774ded9c3c5666ed01019a",
+    "validate_color.py": "84b79bfff8f0bfa685cb0b5a6af205ee031af5d106fe377cb580732a9011e8b9",
+    "verify_color_scene.py": "be87196cd9c5d754e00ffa4d662a37e26388625f9e5400998ec41e2ce76ac927",
+    "render_color.py": "9a983bfe21be15b7228158ec62905233ab58824de8949f503c7948e4e39d59eb",
+    "README.md": "5c8f9cc0312747a71bcdb0c68f15d449a55b279314f3fbb3519556e3b68895f6",
+    "README.zh-TW.md": "5c8f9cc0312747a71bcdb0c68f15d449a55b279314f3fbb3519556e3b68895f6",
+    "CHECKSUM-SCOPE.md": "00dd264db6687d99a55ec26a9a5539636bebb890c4fe43514c97b068c5bb88b4",
+    "COLOR-ASSIGNMENT-QA.json": "267dfcef11d6e0831dcc936b425e68125c895499468d29a63e1067367b6a7580",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "bb777f2da26f9516a26bb8937aae6ba51690f2769a8631b7633c5877d110f050",
+    "SCENE-QA.json": "187ce34efab9c77a3e885045368ee61a41d1ed454148a3f0d43dcaf738a56147",
+    "CENTRAL-RIB-FRONT-SCENE-QA.json": "07086f887ecd56321d33ff798990f0d4c6a89d973a1ad90e49b0fcf5ec7a36a7",
+    "CENTRAL-RIB-FRONT-SOURCE-QA.json": "017920f61c970984ad64fdb58b88c0696c6e70d9e90ca64b4a3931fd18625cd2",
+    "COLOR-SOURCE-REGISTER.json": "017920f61c970984ad64fdb58b88c0696c6e70d9e90ca64b4a3931fd18625cd2"
+  },
+  "supplementary_private_image_sha256": {
+    "central-rib.png": "9b603f00ca629b29e556fecd6faf2e7dbec3ef07e4eec8d6c72f73a3b89d8dbf"
+  },
+  "supplementary_private_QA_sha256": {
+    "private-central-rib-QA.json": "3877ab366eae83d0d1c00014b80713076c88191693cd2fb8e086c5ac34e76e19"
+  }
+}

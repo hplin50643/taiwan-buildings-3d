@@ -1,0 +1,35 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "NTOU Gymnasium small door canopy front nominal gray",
+      "hex": "#B4B7B5",
+      "faces": 2
+    },
+    {
+      "id": 1,
+      "name": "NTOU Gymnasium unverified walls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 5628
+    }
+  ],
+  "domains": {
+    "small_door_canopy_front_whole_component": 2,
+    "per_rectangle": [
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 1332
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "5630 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "2 complete small left-door canopy front triangles nominal gray;5628 neutral.",
+    "Original single display material retained unchanged, no geometry repair.",
+    "Original strict false/run_checks exit1 and60 polygons opening loss above1percent,1227 short chords and12 along-face rays remain retained finite exceptions.",
+    "Color geometry identity PASS is not a global minimum-wall, zero-warning or physical-print certification.",
+    "Small canopy solid top is a proxy for photographed open grid, top/underside/returns remain neutral.",
+    "EXIF2026-04-21/page2026-04-22 not independently authenticated capture; original2026-03-19 attribution retained unverified."
+  ]
+}

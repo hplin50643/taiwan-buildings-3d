@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in ntou-gymnasium-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "46afac7d1fb8f875f0f2f1caceb03cf492befab9946d15b22a3ea24e50ceeb02",
-    "east.png": "ac896602230baf14cd77a916312ec2e1c7045d5a15513a55ffef42123845a007",
-    "entry-detail.png": "afc0602a72ed828d9cf50939e64a78038eb41a16ab8ed0d66c585895e4d6da18",
-    "facade-detail.png": "3375700efabe2be91a3bba1ece8028bd495cb730c9aa2a9d3fa587f8b44d2901",
-    "front.png": "e38a6e659b28f4a29f94517d09e6740370e1e26a03b7423525948d667c55c0a5",
-    "preview.png": "5cfd17459db59e0869eff9f4068ff145e00c64cb1f7b343585ec8ddae9270c77",
-    "rear.png": "1616678a9cfe03595007e1f730b39099704f83c188ee13406f60dd81fb7569ed",
-    "roof-detail.png": "b2119295f442f242c3ada98d57ac4306f1164aba83a36bcf6732f1b5440e891c",
-    "top.png": "499b64951f49df61a96c858a99e71b37e552018eee415996c92e3793276affe8",
-    "west.png": "5abadee9d3dc64c75a4065399ee281fc5e273c4ce8a51353e795596ad1cf7196"
-  }
+    "preview.png": "2176341bfceb67f6d105416f0e9b9e5264f399c1991c826a5ced818e184c1d0c",
+    "rear.png": "10961a81e39a9f193baab77407ced4767e38962e4f59415f6bf080d0c36cfb4c",
+    "front.png": "5c5f6c49b371a7404b732af1e32109a259da5d3b8efda7a766e6d7989428b9f4",
+    "back.png": "2a659b20b47645a71598176fc1cab05c6beed718948adb55863f8555fea47301",
+    "west.png": "76501fbdb1a5d73d528cbccecc1a44509d4a11488326aea7aae58835e0f7b4ab",
+    "east.png": "f926067266406f928ae981a68e899248a04431a4200a35788d35f84b8fae2d4c",
+    "top.png": "bffebd4eace7a6cd09d4053a336884f5913dff3862ed658b835e1af878a0242c",
+    "entry-detail.png": "8db7a9bd1cba16a8e04a97698e70b4e25339e0f3035fc804c8ff389648f473ca",
+    "facade-detail.png": "cad0736162553254953d59157d885b6bfa041957964eca3ee8a2c1c0f2debd74",
+    "roof-detail.png": "87236145975678f9342151284830c611255540d664ab101f111ec9769c7111fd"
+  },
+  "mesh_sha256": "6d40886b7c18f5934d0bf467735962d898c3e990e10d9c0a462a35a3efdce965",
+  "independent_visual_review": "CENTRAL-RIB-FRONT-INDEPENDENT-QA.json",
+  "previous_qa": "qa/central-rib-front-previous/NO-TEXT-QA.json"
 }

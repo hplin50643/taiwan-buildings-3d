@@ -10,7 +10,13 @@
       "id": 1,
       "name": "NTOU Gymnasium unverified walls windows neutral",
       "hex": "#B8BAB5",
-      "faces": 5628
+      "faces": 5610
+    },
+    {
+      "id": 2,
+      "name": "NTOU central rib outward middle nominal muted red",
+      "hex": "#A65D52",
+      "faces": 18
     }
   ],
   "domains": {
@@ -18,6 +24,8 @@
     "per_rectangle": [
       2
     ],
+    "new_central_rib_faces": 18,
+    "new_complete_domains": 8,
     "whole_coplanar_withdrawals": 0,
     "coplanar_domains": 1332
   },
@@ -25,7 +33,7 @@
   "fully_colored_exterior": false,
   "geometry_policy": "5630 original triangles unchanged; no cuts or newgeometry",
   "limitations": [
-    "2 complete small left-door canopy front triangles nominal gray;5628 neutral.",
+    "Original2gray plus18central rib outward mid faces nominalred;5610neutral. All original strict failures remain.",
     "Original single display material retained unchanged, no geometry repair.",
     "Original strict false/run_checks exit1 and60 polygons opening loss above1percent,1227 short chords and12 along-face rays remain retained finite exceptions.",
     "Color geometry identity PASS is not a global minimum-wall, zero-warning or physical-print certification.",

@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntou-gymnasium-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "46afac7d1fb8f875f0f2f1caceb03cf492befab9946d15b22a3ea24e50ceeb02",
+    "east.png": "ac896602230baf14cd77a916312ec2e1c7045d5a15513a55ffef42123845a007",
+    "entry-detail.png": "afc0602a72ed828d9cf50939e64a78038eb41a16ab8ed0d66c585895e4d6da18",
+    "facade-detail.png": "3375700efabe2be91a3bba1ece8028bd495cb730c9aa2a9d3fa587f8b44d2901",
+    "front.png": "e38a6e659b28f4a29f94517d09e6740370e1e26a03b7423525948d667c55c0a5",
+    "preview.png": "5cfd17459db59e0869eff9f4068ff145e00c64cb1f7b343585ec8ddae9270c77",
+    "rear.png": "1616678a9cfe03595007e1f730b39099704f83c188ee13406f60dd81fb7569ed",
+    "roof-detail.png": "b2119295f442f242c3ada98d57ac4306f1164aba83a36bcf6732f1b5440e891c",
+    "top.png": "499b64951f49df61a96c858a99e71b37e552018eee415996c92e3793276affe8",
+    "west.png": "5abadee9d3dc64c75a4065399ee281fc5e273c4ce8a51353e795596ad1cf7196"
+  }
+}

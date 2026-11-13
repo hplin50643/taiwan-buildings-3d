@@ -1,43 +1,84 @@
 {
-  "status": "SOURCE_GO_BOUNDED_PARTIAL",
-  "building": "NTOU Gymnasium",
-  "source_go_sha256": "fd74be831ffb07ffa0d39a9e693f6505168c2cb0e666be97f1e1a47ee44ba09c",
-  "independent_review_sha256": "21f0511cf1ce992ab3a7acbae774f0be31bf7047fbe8a3ce2a812898a317d858",
-  "sources": [
-    {
-      "name": "official-front.jpg",
-      "sha256": "e0e48c94f3e4decbfd1c5e1126cd26e25106a7a2b3f184a45dc2f6f73e2cf2d7",
-      "capture_warning": "Official page update 2026-04-22 is not capture. Original sources list author photo 2026-03-19; this review has not independently authenticated that date. Neither establishes current 2026 condition."
-    },
-    {
-      "name": "author-close.jpg",
-      "sha256": "3e3f4050fe1e11abe32855260ab38a7467aa8661e5e57cc174a94a93db9950e0",
-      "capture_warning": "Official page update 2026-04-22 is not capture. Original sources list author photo 2026-03-19; this review has not independently authenticated that date. Neither establishes current 2026 condition."
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "triangles": 5630,
+  "faces": [
+    2846,
+    2940,
+    2848,
+    2941,
+    2856,
+    2857,
+    2948,
+    2950,
+    2858,
+    2951,
+    2859,
+    2952,
+    2860,
+    2953,
+    2861,
+    2954,
+    2862,
+    2955
   ],
-  "sources_private": true,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "count_delta": 0,
-  "geometry_unchanged": true,
-  "allowed": [
-    "2 complete original small left-door canopy front triangles nominal gray"
+  "new_faces": 18,
+  "complete_domains": [
+    [
+      2846,
+      2940
+    ],
+    [
+      2848,
+      2941
+    ],
+    [
+      2856,
+      2857,
+      2948,
+      2950
+    ],
+    [
+      2858,
+      2951
+    ],
+    [
+      2859,
+      2952
+    ],
+    [
+      2860,
+      2953
+    ],
+    [
+      2861,
+      2954
+    ],
+    [
+      2862,
+      2955
+    ]
   ],
-  "unknown_neutral": [
-    "Canopy top, underside, side returns, small columns and mixed masonry column feet stay neutral.",
-    "Central large column bottom is hidden by people in the official photo; no full-height column color.",
-    "Long front band y=-30 is one 54-triangle connected plane and includes building lettering plus cropped endpoints; all neutral.",
-    "Lower main wall y=-28 is one 137-triangle plane with brick/gray masonry stripes and openings; all neutral.",
-    "Red curved ribs are visible at their fronts but their top/rear returns are not fully established by the two close photographs. Do not color all 13 ribs by repetition or extrapolate the full curved shells.",
-    "Glazed/backing surfaces mix panels, framing and reflections; roof, rear, terminal bays, base and all other faces neutral."
+  "selector": "Central rib x±0.85, original rounded ellipse outward chord segments16..23 only (72..108degrees), whole allvertex finite domains; no sides/top/bottom or other12ribs.",
+  "old_index": 1,
+  "new_index": 2,
+  "nominal_hex": "#A65D52",
+  "source_basis": "Reinspection of original2000px official front exactSHA plus author close exactSHA; central rib uniquely aligned over entry round column. Mid outward red strip visibly separate from gray glazing. Not a new photograph.",
+  "limitations": [
+    "Only central outward middle sector, original facet bounds are evidence limits not actual material seams. No entire13rib repetition or continuous roof extrapolation.",
+    "Original20×27.4ellipse and1.7width are geometry proxies, no measured facade correspondence or calibratedHEX.",
+    "Original strict false/run_checks exit1,60 opening-loss polygons,1227 short chords and12 along-face rays remain intact; partial color never endorses printability.",
+    "New official administrativePDF text mentions planned rust work, not verified completion or new color; search image snippet did not match retrieved referenced pages. No2026current-condition assertion."
   ],
-  "retained_original_qa": {
-    "strict_result": "Original strict false and run_checks exit1 remain unchanged. Color review does not approve global QA.",
-    "component_opening": "60 original polygons have opening loss above 1%: 24 end ribs and 36 upper-rib tips; peak 5.1513425349%, retained 94.8486574651%.",
-    "dense_chords": "1227 short first chords out of 56300 original-face dense samples; minimum 0.0000335533604338 mm. Existing continuous-root shortest 6.65393095985 mm and true-edge-distance maximum 0.782656059265 mm are limited evidence, not global minimum-wall guarantees.",
-    "boundary_intervals": "12 rays / 24 original triangles contain along-face intervals. Original eight parity flags fall on these; along-face intervals are not volume air, winding 0/1 on faces is not an inside/outside decision. 528 nonboundary controls passed; 72 on-face values diagnostic only.",
-    "preservation": "Keep original independent revision audit, all 107 original files and finite adjudication history intact; no geometry repair, reclassification of warnings or physical-print claim."
+  "file_sha256": {
+    "preselection-central-rib.json": "5c754bdf079a612995454214360334b502182df6a980dbbe05d5c8ea4de33bdf",
+    "domain-screen.json": "5b58067e6db776c8bdb05bbcc4ee8c1b333e725099ca5846115cb64efa5d376f",
+    "original-verification.json": "55dea1058e56a7aef98317a9e4c7734df13bbcd6a81190c40c1c7e3d1a8e806b",
+    "original/build_model.py": "4f35f2b343c2ca3bf5fea02c93a93bbf2eee0dcde8981a77a08f3ba02893e174",
+    "original/color-mesh.npz": "2e20d6cbadf1d663a4ecf3a8303593cff9a455af9f5d296a6c5e36ae9e2750e0",
+    "private-reference/official-front.jpg": "e0e48c94f3e4decbfd1c5e1126cd26e25106a7a2b3f184a45dc2f6f73e2cf2d7",
+    "private-reference/author-close.jpg": "3e3f4050fe1e11abe32855260ab38a7467aa8661e5e57cc174a94a93db9950e0",
+    "private-reference/central-rib-native.png": "d71807d798fd11a412a2fc769a95bdd4577de8ffa3f88b8f381f7c74099ffa1d",
+    "private-reference/new-official.pdf": "ea4c441f43eb472b625dc25d4cea33f08b1092e5dc939f57caab59902db70fab"
   },
-  "no_global_printability_endorsement": true,
-  "private_source_backup": "Sources private; no source photos or private identifiers distributed."
+  "historical_source_register": "qa/central-rib-front-previous/COLOR-SOURCE-REGISTER.json"
 }
