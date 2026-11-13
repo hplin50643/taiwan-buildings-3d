@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "reviewer": "independent cycu_source_review",
+  "scope": "Appearance material identity only; no new engineering or printability approval",
+  "triangles": 5132,
+  "changed_faces": [
+    4457,
+    4462,
+    4489,
+    4498,
+    4511,
+    4516,
+    4627,
+    4635,
+    4657,
+    4664,
+    4687,
+    4698
+  ],
+  "complete_domains": 6,
+  "material_transition": [
+    0,
+    4
+  ],
+  "palette_entries": 8,
+  "checks": {
+    "source_second_review": "GO",
+    "exact_58_original_blobs": true,
+    "six_whole_connected_coplanar_domains": true,
+    "baseline_checksums_57_exact_preserved_paths": true,
+    "geometry_and_other_5120_indices_exact": true,
+    "all_eight_original_materials_exact": true,
+    "isolated_stl_obj_byte_exact": true,
+    "isolated_all_3mf_members_and_material_json_exact": true,
+    "saved_scene_independently_reopened": true,
+    "camera_lights_transforms_render_contract_exact": true,
+    "nested_source_and_numeric_exact_path_hashes_verified": true,
+    "seven_original_900x800_views": true
+  },
+  "actual_visual_review": {
+    "native_views": "All seven actually inspected in seven-views.jpg contact sheet; source-angle additionally opened at native resolution. Model wholly framed, no missing model or apparent geometry regression.",
+    "private_pair": "Both 1200x900 before/after actually opened individually. Existing three beam tops on inspected side change from light neutral to dark frame family; roof slabs and surrounding wall remain unchanged. Private detail is not whole-model framing proof; six total complete domains independently verified numerically.",
+    "sources": "Newly fetched Commons3000x4000 historic photograph actually viewed; library sign and two corner dark pergolas identifiable. Official image failed503 and was not freshly inspected. Beam tops unseen: same-component inference, not direct top color evidence. Page date2013-06-01 and file EXIF2013-09-30 differ; no exact capture or present-condition claim."
+  },
+  "limitations": [
+    "Unseen beam top faces are explicit same-component inference; not aerial/material-card evidence",
+    "Photographic appearance not calibrated finish; retain original dark palette value without tuning",
+    "No roof slabs/cylinder roof/cornice roofs/recess interfaces/other domains recolored",
+    "No missing beam/frame subdivisions added, no geometry or face cuts",
+    "All other5120 triangle assignments and eight original palettes/transform/scene/STL/lockedpreviews preserved",
+    "Original v2 eight rear-wall corrections and254 neutral extensions retained",
+    "Original manufacturing/printability exceptions unchanged",
+    "Baseline root SHA256SUMS57/57 and58 blobs exact, no baseline checksum exceptions; historic snapshots retained"
+  ],
+  "source_snapshot_policy": "Pending source QA and original review snapshots remain historical; exact original-input paths explicitly verified. Final PASS binds current files below, not historical basename matches.",
+  "file_sha256": {
+    "build_model.py": "f873b246060f4fcbf8e5a91a8845750470d17812e4f6663a3bcfdd0d4e0d2974",
+    "build_appearance.py": "8b0960ff4cb8e76d2d62ef025ee144c29f9510c9caf4617e5dd19ad32904376a",
+    "appearance-materials.json": "e0b549e36bdc8534d0c491e6582d66d513f4318cc24a547546bd8baa5bb07bd6",
+    "appearance-sources.json": "171ad19c471b3f2cc0c0cb139633750553ea7898538baf06c99166ca9edc1d2a",
+    "appearance.3mf": "b61d4edc9ec5a63013bf08cedcf4e14ec61e41fd5b94191e8e30d43b26f1c0dc",
+    "appearance.blend": "cc6f8bb4efbc2900f44f2398eb008a7d5e2c1ec1c60cce3e2187a2be3d0e4053",
+    "scene.blend": "4387e7d24f5e3027e9c6046e7ff95cfe6ec44517669846dc0037bf15736f82c2",
+    "model.stl": "e66d24cd323cd90c5c894eb03039464201cd2defb8c56e7db59a6d14002c5115",
+    "model.obj": "675a232e4c7b495ef03d3a6a4829c8bfe81790c762013f174056b565ed2f4e68",
+    "README.md": "deceb7fb463928f966816affb19135aa3c9214c8ecc4961a6defb01fb230c68c",
+    "README.zh-TW.md": "a592e14243800fab2648357ea776d5097aa97457a348fcca2c273fdccef53b07",
+    "APPEARANCE.md": "90eb0d6ed8b690179df62e8d440c725ff70c53a6a503c2770f7e434102d2c1a6",
+    "CHECKSUM-SCOPE.md": "40151057edb68b5174fe066e24234d3fc15de57fc6fc8099ee9f4daa6c4711a5",
+    "BASELINE-CHECKSUM-AUDIT.json": "d98d4a08f20cd4b611771e58bd5a17b34ed4e6111139ac50925c616cd22598b2",
+    "PERGOLA-TOP-SOURCE-QA.json": "a2bdb1985021a960f0747fc2de4941588b573bc108f73fc2f00ccc9d7557779c",
+    "PERGOLA-TOP-NUMERIC-QA.json": "ef7010846491cb1013ce9df6a3f0aa7ab16bc15c7ee7fd8d952bde000e71e6a5",
+    "validation.json": "f5cc836dd6f9e36e42d39f6966158f697b26a705df2d10368c742b0995ec5362",
+    "thin-feature-check.json": "c58f3e49fd1da18b6b6f7e1235a9fd040060636e16b1c753581601f0dd739c8f",
+    "layer-check.json": "a8762778cbaefc03f8522ad5b0a5c43eeb3a027ebf11bb824ad0144d26131ef4",
+    "contour-validity-check.json": "ebf96b97e8b73e83458777ecb4f292bb101f4d8deb707fea8f984e98d2b51751",
+    "previews/front.png": "c632635f432c324d40be0101baeca7d4f512d6a00d2aa9f555a43d0ee57c59ce",
+    "previews/rear.png": "cd1181e7b1a2d78062911ec9419098a294b7620ac3eabe86e3ca5f010db32029",
+    "previews/elevation.png": "7cb71dc2430352263190f577801c06587515f33fc07bc86498c0a5b2d8d0f83a"
+  },
+  "image_sha256": {
+    "appearance/front.png": "686cd52be932fcc532f2280eb8ce1dd57e287d1a4a30bb522d20870bde53e43b",
+    "appearance/rear.png": "3f858c3f144b80fffe904c64c4d08e7e1eec44bb0fae60d5078902bc541867ea",
+    "appearance/elevation.png": "a9ab35a24b4ab2416179ad71256b0ffff84cc56a6e5bf179cd19cfaee4f91a4e",
+    "appearance/source-angle.png": "9bcb5ab618532af5f72398097463c26a4a66a7f866807b3613ac0f7f90874a51",
+    "appearance/left.png": "3ae424556b7a6c4c516b1e6d95ef26be2bdb282fedb6e1790321a59a9f800dc8",
+    "appearance/right.png": "68de9375897ba81112c20d1de057cf6b241370509e7d143f3c285585a402335c",
+    "appearance/top.png": "7c4953240e6f00e18db52e9c9f24728e7e5c57c6bc40a3956f01d41ce6505701"
+  },
+  "supplementary_private_image_sha256": {
+    "pergola-top-before.png": "d5be31c0a2e3bb0d4ab82f3832a0b1bca90231059e52a015d854168767dd51de",
+    "pergola-top-after.png": "bb1977cc985487d2611e323bb7fc7b55e92eb12b19b69a4427e23e52fb54cc95"
+  },
+  "private_evidence_sha256": {
+    "SOURCE-PROPOSAL.json": "54aecbc4db57dacebf77acec5bd80b767f5b5b9d4092c614870feb4b3c31e95b",
+    "second-source-domain-review.json": "11bcdee39dc943523c5da5533317d7227a9e47e51306bcf6dd05f55a6ea9bcf0",
+    "independent-numeric-review.json": "471670168f646c41307799503999cca2bf0fee599df016a6e7ee0967500352c3",
+    "independent-scene-review.json": "bacd679015030c9ecb913e15d7918129cd3a398bba4b82e94c2d0872deeaa4d4",
+    "seven-views.jpg": "8ff629d5add2c136a200c3df035221554e11e88a64163a05c0e249c4d96ad824"
+  }
+}

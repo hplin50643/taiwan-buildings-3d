@@ -1,0 +1,209 @@
+{
+  "status": "SOURCE_REVIEW_GO_PENDING_FINAL_QA",
+  "prefix": "國立中央大學/校本部/buildings/ncu-kwoh-ting-library/",
+  "domains": [
+    {
+      "faces": [
+        4457,
+        4462
+      ],
+      "count": 2,
+      "min": [
+        -57.75,
+        -11.0,
+        122.69999694824219
+      ],
+      "max": [
+        -56.25,
+        23.0,
+        122.69999694824219
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "materials": [
+        0
+      ]
+    },
+    {
+      "faces": [
+        4489,
+        4498
+      ],
+      "count": 2,
+      "min": [
+        -51.75,
+        -11.0,
+        122.69999694824219
+      ],
+      "max": [
+        -50.25,
+        23.0,
+        122.69999694824219
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "materials": [
+        0
+      ]
+    },
+    {
+      "faces": [
+        4511,
+        4516
+      ],
+      "count": 2,
+      "min": [
+        -45.75,
+        17.5,
+        122.69999694824219
+      ],
+      "max": [
+        -44.25,
+        23.0,
+        122.69999694824219
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "materials": [
+        0
+      ]
+    },
+    {
+      "faces": [
+        4627,
+        4635
+      ],
+      "count": 2,
+      "min": [
+        44.25,
+        17.5,
+        122.69999694824219
+      ],
+      "max": [
+        45.75,
+        23.0,
+        122.69999694824219
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "materials": [
+        0
+      ]
+    },
+    {
+      "faces": [
+        4657,
+        4664
+      ],
+      "count": 2,
+      "min": [
+        50.25,
+        -11.0,
+        122.69999694824219
+      ],
+      "max": [
+        51.75,
+        23.0,
+        122.69999694824219
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "materials": [
+        0
+      ]
+    },
+    {
+      "faces": [
+        4687,
+        4698
+      ],
+      "count": 2,
+      "min": [
+        56.25,
+        -11.0,
+        122.69999694824219
+      ],
+      "max": [
+        57.75,
+        23.0,
+        122.69999694824219
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "materials": [
+        0
+      ]
+    }
+  ],
+  "changed_faces": [
+    4457,
+    4462,
+    4489,
+    4498,
+    4511,
+    4516,
+    4627,
+    4635,
+    4657,
+    4664,
+    4687,
+    4698
+  ],
+  "old_material": 0,
+  "new_material": 4,
+  "rationale": "Six entire original coplanar finite top domains of existing rooftop pergola longitudinal beams,12 triangles at z122.7. Original generator boxes establish beam membership; general upward-roof neutralizer overrides otherwise dark same-component finish. Historical Commons photograph freshly obtained/viewed identifies paired dark grey pergolas. Continue existing dark framing palette4 over unseen beam tops as explicit family inference, not photo top sampling.",
+  "sources": {
+    "new_used_photo": "https://upload.wikimedia.org/wikipedia/commons/8/8f/NCU_Kwoh-Ting_Library.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:NCU_Kwoh-Ting_Library.JPG",
+    "exif_DateTimeOriginal": "2013:09:30 11:52:46",
+    "official_photo_attempt": "Original LIB_KT jpg repeated ordinary HTTP503; not freshly viewed, no claims of successful original official read",
+    "date_limit": "Historical photograph; not current condition. EXIF metadata not independently proven capture event. Earlier Commons summary date2013-06-01 must not override current file EXIF."
+  },
+  "limits": [
+    "Unseen beam top faces are explicit same-component inference; not aerial/material-card evidence",
+    "Photographic appearance not calibrated finish; retain original dark palette value without tuning",
+    "No roof slabs/cylinder roof/cornice roofs/recess interfaces/other domains recolored",
+    "No missing beam/frame subdivisions added, no geometry or face cuts",
+    "All other5120 triangle assignments and eight original palettes/transform/scene/STL/lockedpreviews preserved",
+    "Original v2 eight rear-wall corrections and254 neutral extensions retained",
+    "Original manufacturing/printability exceptions unchanged",
+    "Baseline root SHA256SUMS57/57 and58 blobs exact, no baseline checksum exceptions; historic snapshots retained"
+  ],
+  "hash_scope": "Original source inputs preserved in qa/pergola-top-source-input; source photographs/proposal/domain evidence remain private; not hashes of modified current files.",
+  "original_proposal_inputs": {
+    "original/appearance-sources.json": "171ad19c471b3f2cc0c0cb139633750553ea7898538baf06c99166ca9edc1d2a",
+    "original/sources.json": "404458f42411c0f97bb7262f25e95bbbb87978b6c1271a5266f030e2dafcbe2d",
+    "original/build_model.py": "f873b246060f4fcbf8e5a91a8845750470d17812e4f6663a3bcfdd0d4e0d2974",
+    "original/build_appearance.py": "88cf874eca395198a1e4ae1eeb2cfb5f3ba225e156f1e202c3894350e8b1f17d",
+    "original/appearance.3mf": "e87b4b3ee48484924e73c9097729747eb20748b86ec2cfe3d4f54225c0f44381",
+    "domain-screen.json": "775bba08d85e6315eac880c81d2e61a69d822546c1051795c319fa98c47d2a0d",
+    "baseline-checksum-audit.json": "8aa200d754e2dbe5c5e8faab24595a23d2f7dbcdfa9de4d8196c1bbe21308ba5",
+    "private-reference/commons-library.jpg": "d1e931f10321789e0e2e84c9a2af9b4ad09c0a8b63e83ffeb0d6c9861284bb8b",
+    "private-reference/commons-page.html": "78a16413c7c3f2c7e84905a069635a3a5b66f541d1f0e2d1c215bf2e697141e2"
+  },
+  "file_sha256": {
+    "qa/pergola-top-source-input/appearance-sources.json": "171ad19c471b3f2cc0c0cb139633750553ea7898538baf06c99166ca9edc1d2a",
+    "qa/pergola-top-source-input/sources.json": "404458f42411c0f97bb7262f25e95bbbb87978b6c1271a5266f030e2dafcbe2d",
+    "qa/pergola-top-source-input/build_model.py": "f873b246060f4fcbf8e5a91a8845750470d17812e4f6663a3bcfdd0d4e0d2974",
+    "qa/pergola-top-source-input/build_appearance.py": "88cf874eca395198a1e4ae1eeb2cfb5f3ba225e156f1e202c3894350e8b1f17d",
+    "qa/pergola-top-source-input/appearance.3mf": "e87b4b3ee48484924e73c9097729747eb20748b86ec2cfe3d4f54225c0f44381"
+  }
+}

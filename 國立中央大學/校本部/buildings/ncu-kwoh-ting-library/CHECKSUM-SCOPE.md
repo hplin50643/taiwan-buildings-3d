@@ -1,0 +1,1 @@
+Current SHA256SUMS and PERGOLA-TOP-FREEZE-MANIFEST.json cover this candidate. Original appearance-freeze.json and appearance-review/v2 are retained historical snapshots; qa/pergola-top-previous holds former mutable assets. Source input snapshots are explicitly mapped. Independent final hashes must bind exact current paths. Original engineering limitations are unchanged.

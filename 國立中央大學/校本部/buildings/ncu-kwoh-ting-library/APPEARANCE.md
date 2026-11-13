@@ -41,3 +41,9 @@ Blender4.3.2，原scene.blend／model.stl與本版script同目錄：
 BLEND與3MF逐頂點、逐三角面索引及每面材料核對，單位、build項目、調色盤保留；254個原中性補色面與8個既有誤彩修正面逐面列出，其餘原彩面、RGBA／roughness、transform、尺寸逐項核對。乾淨目錄重建3MF及materialJSON比byte，BLEND比網格／材料語義，不保證BLEND容器byte一致。新版檢查位於appearance-review-v2，appearance-freeze.json記錄本版檔案；原appearance-review僅為保留的v1歷史，不是新版渲染綁定。
 
 3MF讀取軟體需支援base materials，不含AMS／多噴頭耗材映射。原1mm pitch、半徑0.4mm（直徑0.8mm）XY開運算是歷史薄特徵篩查，不是全面全向最薄壁、正式切片或試印驗證。棚架、薄框、弧入口凹口及屋緣仍需支撐／縮尺檢查。未實體試印，不保證免支撐、必然可印或結構安全。
+
+
+## 棚架梁頂六完整原域補色 v3
+僅將六根原棚架橫梁z=122.7頂面的六個完整有限共面域12面，由中性0延用原深灰框材4；其餘5120面、8材值、geometry與transform不變。原所有朝上屋面中性規則也遮掉真正梁頂，這次依原生成器梁構件界與全頂點判定，不切網格、不塗滿屋頂。梁頂未在地面照直見，為同梁家族延伸推估；梁數、形狀仍是既有簡化估計。
+原官方LIB_KT照片本輪普通下載多次503，未重新實看，不能沿用舊來源登錄宣稱此次成功。改讀原sources.json所列Wikimedia Commons原幅及檔案頁，國鼎招牌、鼎形與兩側深灰棚架明確；此張檔案EXIF DateTimeOriginal為2013-09-30，頁面早期摘要日期不同，不當作2026現況或獨立驗證攝影日期。保留原材色，不做校準色或實測材料宣稱。原官方來源快照完整保留，新來源依PERGOLA-TOP-SOURCE-QA.json；照片僅私用不公開。
+原基線root SHA256SUMS全部57條實讀吻合，58原blob核同，無基線checksum例外；BASELINE-CHECKSUM-AUDIT.json列原expected/actual及保留快照精確對應，不把舊hash套新根檔。原v2側背延伸/八後牆修正、所有原工程與列印限制保留。七張原生900×800圖/相機/燈光設定保留，未實體試印，不保證可印或免支撐。

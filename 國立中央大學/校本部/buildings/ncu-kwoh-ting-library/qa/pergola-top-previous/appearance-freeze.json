@@ -1,0 +1,135 @@
+{
+  "revision": "color-v2-side-rear-continuity",
+  "head_basis": "123e103381f4d7eb98627857d9b720b8e497ecaa",
+  "scope": "254 originally neutral faces: 94 side/rear wing wall faces, 122 outward core skin faces, 38 vertical cornice faces. Eight prior miscolored rear-wall triangles also corrected from dark trim to pale wall; all other colored faces preserved. Inferred material continuity, not four-side photograph verification.",
+  "geometry_verified": "appearance-review-v2/model-verification.json",
+  "clean_rebuild": "appearance-review-v2/clean-rebuild-equality.json",
+  "historical_reviews": "appearance-review contains retained v1 history, superseded for current material assignments and render bindings by appearance-review-v2 and this freeze.",
+  "files": [
+    {
+      "path": "APPEARANCE.md",
+      "sha256": "4199a1f31a82302b5ec1d90b0504f13f5a69d837d7f4306757cdb1e8cb67fd4a",
+      "bytes": 5009
+    },
+    {
+      "path": "README.md",
+      "sha256": "a592e14243800fab2648357ea776d5097aa97457a348fcca2c273fdccef53b07",
+      "bytes": 5651
+    },
+    {
+      "path": "README.zh-TW.md",
+      "sha256": "a592e14243800fab2648357ea776d5097aa97457a348fcca2c273fdccef53b07",
+      "bytes": 5651
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "3730198a1426d67434d6bfd8c345dec24e0efae82be10bf625664312945d4f22",
+      "bytes": 894972
+    },
+    {
+      "path": "appearance/front.png",
+      "sha256": "a5f2690af4a8fee8a71598dd0a51e37567c3b3a9cc2e26097d08a3dc9978c819",
+      "bytes": 876649
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "7bc208622bf3999f1bc36eb42b9a0864ef31429befede7334799da91afe697c2",
+      "bytes": 802745
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "bbfd5653e1f7911933ebf9c8b30854217833f9efcc1f4564e6ddd0b3c5da457c",
+      "bytes": 815857
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "f4ed4131e05d08805fb7cc7352234c63fd76026f2edcc376aa355f2f339a437c",
+      "bytes": 810994
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "e2c8476e7586f5239df7ff9d0fbecd860b1bbcebf034dd8b156b4df6058fa2fa",
+      "bytes": 903276
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "23b482793210d445502252a94207ce8b22177cb6e31555db37aa285bb3d903e5",
+      "bytes": 856470
+    },
+    {
+      "path": "appearance-materials.json",
+      "sha256": "b9b40f40b10da9b31cd1bf70b350e597d637167057110ed71f534f2f39664407",
+      "bytes": 91206
+    },
+    {
+      "path": "appearance-review-v2/boundary-continuity-audit.json",
+      "sha256": "e9c16a4badde3edc8d7b2c84d4e01ce378a40107a1827ee4c9456ecb91bca9c1",
+      "bytes": 3767
+    },
+    {
+      "path": "appearance-review-v2/clean-rebuild-equality.json",
+      "sha256": "2102caead2c39296c7c6b9a4444f1f002dc98884520d888d2f234674657bbb31",
+      "bytes": 345
+    },
+    {
+      "path": "appearance-review-v2/color-continuity-review.json",
+      "sha256": "8e0f7f4f627c18654850af820caa63cdf24c33da140183683c11cf7cc4bb206f",
+      "bytes": 1839
+    },
+    {
+      "path": "appearance-review-v2/comparison.png",
+      "sha256": "1467f7a9e8d6d1a80e59b640d476b61cfb0bcb75a203f30d56429096aebd0740",
+      "bytes": 1721861
+    },
+    {
+      "path": "appearance-review-v2/existing-color-corrections.json",
+      "sha256": "5daea3d28a1223f7560105c44dacdfd1320647c8fea3ac72d0d063dfda435fd7",
+      "bytes": 6561
+    },
+    {
+      "path": "appearance-review-v2/material-value-verification.json",
+      "sha256": "0c92b20ffba40200e8472ba76c766f2d6982969014bdcb221249d6a728a531b1",
+      "bytes": 5007
+    },
+    {
+      "path": "appearance-review-v2/model-verification.json",
+      "sha256": "12faf3661d0a8c0871ba0844451c14988e750ad5850f103bc0366b801fafcc1f",
+      "bytes": 5768
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "9c631b74cc67afee5f59774cf2b0cdd2b0965f57fc9f4f509b9fd368b4b191ba",
+      "bytes": 866696
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "26f90f4e9e38eb9fad99d9c5babdae1008f17f4f640fb2f3b833dc07802e12df",
+      "bytes": 817950
+    },
+    {
+      "path": "appearance-review-v2/render-bindings.json",
+      "sha256": "661418c40d0c5f93db8fe4396c1df6e6ce5eefa14a916eb42f826312eada393d",
+      "bytes": 4239
+    },
+    {
+      "path": "appearance-review-v2/source-register.json",
+      "sha256": "6a8ba2df34316f7f51777b2aa908ac5ec212d9cbe200aef904d0ed52608714da",
+      "bytes": 1064
+    },
+    {
+      "path": "appearance.3mf",
+      "sha256": "e87b4b3ee48484924e73c9097729747eb20748b86ec2cfe3d4f54225c0f44381",
+      "bytes": 50101
+    },
+    {
+      "path": "appearance.blend",
+      "sha256": "f0a7b6a2d2958d1439dc01fd1910455ebf238fb5ea2ecf05df77b992dec1736f",
+      "bytes": 880232
+    },
+    {
+      "path": "build_appearance.py",
+      "sha256": "88cf874eca395198a1e4ae1eeb2cfb5f3ba225e156f1e202c3894350e8b1f17d",
+      "bytes": 12241
+    }
+  ]
+}
