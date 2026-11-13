@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "building": "yzu-building5-library-extension",
+  "triangles": 19122,
+  "new_color_faces": 16,
+  "exterior_color_before": 2,
+  "exterior_color_after": 18,
+  "neutral_after": 19104,
+  "complete_domains": 8,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "findings": [
+    "Independent finite 48gon chord all-vertex selector verified exactly 16 original neutral faces across 8 whole domains, facets20..27; all unselected indices and original two palette entries unchanged.",
+    "3MF coordinates/faces/three base-material assignments exact;29 original engineering/history files including PV-aware aliases preserved.",
+    "Retained isolated STL, color mesh, palette, appearance materials and3MF model XML directly compared identical.",
+    "Saved scene independently reopened;19122 mesh coordinates/faces/indices and3 shaders verified; original camera/lights/render/object inventory/transforms identical.",
+    "All10actual final views inspected via overview and3detail images at full size; private upper-hanger near view additionally inspected because original details target lower fascia.",
+    "No original OBJ invented. Sourcepending stage snapshot and README historical version limitations remain fixed."
+  ],
+  "limits": [
+    "Pale stone-family only, no calibrated HEX or chemical material certification; partial lower occlusion covered only by bounded same-column continuity.",
+    "Selected sector boundaries are original discrete facets, not photographed material seams. No lower-column/coffer/wall/roof extrapolation.",
+    "Original PV-aware scene and2024 evidence remain intact separately; no same-year or current-condition assertion.",
+    "No subdivision or geometry certification; original engineering limitations retained."
+  ],
+  "image_sha256": {
+    "preview.png": "722ad65f3c35944c11e2cf3796e0edb6d2fe899561d8ea6b4e86f826890318fe",
+    "rear.png": "08da0924c1fe39ec43ad1348aff989ac15f5a0ed862d85a7745b68b62445842b",
+    "front.png": "436b7425d42059beb4ce7f8204b5f7262d5f9e019ded8c8a605c5225133f107f",
+    "back.png": "b6116d189cc545df5d4dbd9b08c62f7f21eb885222b7ffa695be53253ef93497",
+    "west.png": "607431801bdace78c840fc7ed241dd87ba3e2fb2a2660d56ee948f05c93a38c5",
+    "east.png": "1dcee45f54b97a49bb877d2fa3a0a92f7e4e759fd7f526c8a69c5118dae58d89",
+    "top.png": "f03aa6a95d8a68bcf76c00187a2bd7e865e34a8f6ba410f62939384e7e87e7d2",
+    "entry-detail.png": "5037dd81e80effeafae31a95c916f203f56e0b9249cdc766f89279804c36951e",
+    "facade-detail.png": "9c6ed2bc56cf99aa194976a6d1df80669504060afe8c2cefd4c35d35a1b4bef1",
+    "roof-detail.png": "73076e2f02810032fd03f2b71e15b8e5e8cd1aa22477c0d192cdeae805acda2a"
+  },
+  "file_sha256": {
+    "model.stl": "6dcbb67f01518782ba634d89008483a98147878694fc912c68b53743f9999011",
+    "build_model.py": "61931b1a3decab3f19e6735a80432d6c9762595c02df5195669937dbe136ca0b",
+    "color-mesh.npz": "de2a58f59fd880781d713b98582d8a95669e91a2698e0ba7e5cfe7f1173ea795",
+    "palette.json": "087975269cb38d790760e0f10bcc617c1826c4e965952eab7ca8038181e4d499",
+    "appearance.3mf": "7c615699d4f59f4518ff3329ee0848644db03662dcecfb92ae81320d9e2f9f0a",
+    "appearance-materials.json": "173e9941e5c4f86abfdd5dc0a3d3dc258ba3888cc4691b459cbb502265502953",
+    "scene.blend": "3e865cd020e5e81914f29908c5df97838e4648057b50acd10149815d2cf51449",
+    "colorize_model.py": "c5fc086c068dffa14c8adcb63a50c3202c4d6cfc48abb8d64785be03e108626b",
+    "export_appearance.py": "517d7468ad4053e870e9883e12ba16b667c278dc8ef3f14d9a89d7deb7524867",
+    "validate_color.py": "b46dd4cd2952d4190a4822720086bd8bae22e19e8a73124194da8634f290fffb",
+    "verify_color_scene.py": "a374148959055057e3bfdba73117164daffc331773dc86e20fb5db28b481cb01",
+    "render_color.py": "2d0d6c8dbd1425fa7a011bbae6886c12b0c58bd5db5cda176c63e1d9f306118c",
+    "README.md": "4f8518b8da0cf612ff3a82c294fa20638ad78364510339275379c14be95fdf1b",
+    "README.zh-TW.md": "4f8518b8da0cf612ff3a82c294fa20638ad78364510339275379c14be95fdf1b",
+    "CHECKSUM-SCOPE.md": "a9d2262164ab8ccded93fa6ff01d8121f9753aa150eaa3376a9a93b574ed7bea",
+    "COLOR-ASSIGNMENT-QA.json": "9d502eaab6ed359bab47c351cf79260fd78cda27dd2ab32ebda967472de11fd1",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "2f46a8785eafa726ee8a58f6420b3d7179e3a7dfb8a25a4ac6262b8fbdb841c3",
+    "SCENE-QA.json": "c788437b7ffd2cba996668c3315877fde22aa40d32d3de5ee0e1cb32a04b7e22",
+    "UPPER-HANGER-SCENE-QA.json": "5abca7458e56665eca1c4107a3c4723ad2792630b1bc87b092b394eeef0e456a",
+    "UPPER-HANGER-SOURCE-QA.json": "f32bf689a4322b4ac69f775ee586ced78e50ee288c7d7dfd21e1481481c31002",
+    "COLOR-SOURCE-REGISTER.json": "f32bf689a4322b4ac69f775ee586ced78e50ee288c7d7dfd21e1481481c31002"
+  },
+  "supplementary_private_image_sha256": {
+    "upper-hanger.png": "5e5c7056b911f7ffd46ab46d53f004f29faa3d5ec7aad88235c95781cc018f02"
+  },
+  "supplementary_private_QA_sha256": {
+    "private-upper-hanger-QA.json": "116fd024f57025ee110ad245f28b061c50191c0622f75e6e8cab91490ceb3942"
+  }
+}

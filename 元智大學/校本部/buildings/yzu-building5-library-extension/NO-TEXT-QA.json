@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual rendered views inspected in yzu-building5-library-extension-all-views.jpg. Caption and backing removed; geometry/materials/original camera framing preserved."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "f7d9a3b420f48ea7a04cc1c9df7a08c25f76281c633411fd4f250639eb83b5f0",
-    "east.png": "1ef4f89b121da5f32bfcd949b5d68aa594bad1282df1731920a27a5c19af059e",
-    "entry-detail.png": "8c3a56659e331afacec333f2de6c75aababdddf2970366591b4073b6e312d4b6",
-    "facade-detail.png": "8f5add0497de38682c6805c5e6f5f46f463f23eb4dfec4598e07cd607100e00e",
-    "front.png": "99d9003ba8a0135c37ecaa6cbc094e56fe57ed7c1bc2f5bb3e74cd9a45fdc6eb",
-    "preview.png": "2da33b05ef9ee313a02b9f9a21237a282fed0cf5ab541baa36690a85d6d8e7f0",
-    "rear.png": "e4d78d10cb3d9399d3036abf6ea9888457688e7f6113ea146e4658fa460c2596",
-    "roof-detail.png": "9775626f9196d7aaf0f5e78565260072661ea2da1d0773b48902bdf46370edff",
-    "top.png": "70e109e6a4342bcdfcec9a0b3cce48779216fc1eb72d9f96c83b64832995ddbd",
-    "west.png": "a87b5077d3e0ab12d82f31f31bf9edaf39e1da72fd5897f1ad6ec515352bb8bd"
-  }
+    "preview.png": "722ad65f3c35944c11e2cf3796e0edb6d2fe899561d8ea6b4e86f826890318fe",
+    "rear.png": "08da0924c1fe39ec43ad1348aff989ac15f5a0ed862d85a7745b68b62445842b",
+    "front.png": "436b7425d42059beb4ce7f8204b5f7262d5f9e019ded8c8a605c5225133f107f",
+    "back.png": "b6116d189cc545df5d4dbd9b08c62f7f21eb885222b7ffa695be53253ef93497",
+    "west.png": "607431801bdace78c840fc7ed241dd87ba3e2fb2a2660d56ee948f05c93a38c5",
+    "east.png": "1dcee45f54b97a49bb877d2fa3a0a92f7e4e759fd7f526c8a69c5118dae58d89",
+    "top.png": "f03aa6a95d8a68bcf76c00187a2bd7e865e34a8f6ba410f62939384e7e87e7d2",
+    "entry-detail.png": "5037dd81e80effeafae31a95c916f203f56e0b9249cdc766f89279804c36951e",
+    "facade-detail.png": "9c6ed2bc56cf99aa194976a6d1df80669504060afe8c2cefd4c35d35a1b4bef1",
+    "roof-detail.png": "73076e2f02810032fd03f2b71e15b8e5e8cd1aa22477c0d192cdeae805acda2a"
+  },
+  "mesh_sha256": "de2a58f59fd880781d713b98582d8a95669e91a2698e0ba7e5cfe7f1173ea795",
+  "independent_visual_review": "UPPER-HANGER-INDEPENDENT-QA.json",
+  "previous_qa": "qa/upper-hanger-previous/NO-TEXT-QA.json"
 }

@@ -1,0 +1,1 @@
+UPPER-HANGER：16原面/8完整域新增，2→18色／19104中性／19122tri。原兩palette與未選indices全保持，新index2，0混域。原無OBJ；原PV-aware/2024證據與ORIGINAL-SOURCE-GAP/工程previews完整保留，非否定舊版PV。SOURCEpending固定，歷史qa/manifest不是本次核驗；最終獨審採work精確相對路徑hash。
