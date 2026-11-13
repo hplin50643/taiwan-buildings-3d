@@ -8,7 +8,7 @@ v=np.array([x.co[:] for x in o.data.vertices]);f=np.array([x.vertices[:] for x i
 checks={'mesh_vertices_match':bool(np.allclose(v,d['vertices'],atol=1e-5)),'mesh_faces_exact':bool(np.array_equal(f,d['faces'])),'mesh_sha_property_matches':o.get('source_mesh_sha256')==sha,'scale_property':o.get('scale')=='original1to350-mm','camera_exists':bpy.context.scene.camera is not None,'triangulated':all(len(p.vertices)==3 for p in o.data.polygons)}
 checks['historical_notice_exists']=bpy.data.objects.get('HISTORICAL_SCHEME_NOTICE_NOT_PRINT_GEOMETRY') is not None
 checks['material_indices_match']=bool(np.array_equal(np.array([p.material_index for p in o.data.polygons]),d['materials']))
-pal=json.loads((R/'palette.json').read_text());checks['eight_material_slots']=len(o.data.materials)==len(pal)==8
+pal=json.loads((R/'palette.json').read_text());checks['nine_material_slots']=len(o.data.materials)==len(pal)==9
 for j,(name,hx) in enumerate(pal):
  mat=o.data.materials[j];rgb=np.array([int(hx[k:k+2],16)/255 for k in (1,3,5)]);linear=np.where(rgb<=.04045,rgb/12.92,((rgb+.055)/1.055)**2.4)
  checks['shader_'+str(j)]=bool(mat.use_nodes and np.allclose(mat.node_tree.nodes.get('Principled BSDF').inputs['Base Color'].default_value[:3],linear,atol=1e-6))

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "Only112 rear T101/T104 platform top faces/8whole coplanar domains illustrative1 to new nominalred quarrytile8; prior85 terrace7 preserved.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 16568,
+  "prior_design_corrected_faces": 85,
+  "new_design_corrected_faces": 112,
+  "total_design_corrected_faces": 197,
+  "material_count": 9,
+  "original_eight_palette_entries_unchanged": true,
+  "geometry_unchanged": true,
+  "current_independent_review": "REAR-PLATFORM-INDEPENDENT-QA.json",
+  "original_historical_review": "qa/rear-platform-previous/INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "original_STL_sha256": "281e48a2d40fb7fec7e4eef243ca709fa89ab38a89eea04f2ed18e9094514277",
+  "color_mesh_sha256": "62c2cb2f63312c37b44beeabeb10e077d284a9c2d85ff79908d6f9d78d0b75dd",
+  "images_sha256": {
+    "preview.png": "21cb2d3e6496e2bc83035d6c49d0eb2c33c3f0893c22eaaddf993f9da5e840f5",
+    "rear.png": "def96788bb36407ba5d0f932da47aeef23dc3a77ba8e95544c2f6b1de29b39fb",
+    "front.png": "fadb12c0e182f9f4038935893b69ec144a3c245af1fcac73ba1fb165f282e04a",
+    "back.png": "b65390f1f89a5f6e5f079bdad68b725aa3af78499646f7df5249171ac4b1c8e3",
+    "west.png": "cfb8c545a5f4dcc5241da5df8282fa49fb5b4598b178fa2f61b115d49d325e60",
+    "east.png": "aa4a1ea4b98e96580ae125f388548f877733564d8de28cc0a90f30b3af67c828",
+    "top.png": "834ef5553d30d444f94505391f5e79e9c835f561e2f2d04bd56d23a219efc0af",
+    "entry-detail.png": "496a904ccba5a559d3f296ba8a06fc1faa84b5051854f5fdaf04f3ad7988102b",
+    "facade-detail.png": "7949d78d0880170343f207449666afc41c474f0b31085544663c7ac39c888329",
+    "roof-detail.png": "b6459035e32b283202ea3e7252ecdff466ce485cd41bd0d0293a585f4e8ae31f"
+  },
+  "checked_at": "2026-11-13T00:24:08.129123+00:00",
+  "limits": [
+    "1983 design not asbuilt/current.",
+    "Front T102/T103, step/side/frame/glass/whole concrete material not extended.",
+    "Nominal red quarry tile separate material8 from terrace7 despite shared illustrative RGB; not calibrated.",
+    "Original seven illustrative families and coarsegeometry/manufacturing risks remain; no trialprint. Sourcepending historical snapshot retained."
+  ]
+}

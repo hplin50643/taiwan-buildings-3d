@@ -1,0 +1,43 @@
+{
+  "status": "PASS_SOURCE_TEN_VIEW_VISUAL_WITH_DISCLOSED_DESIGN_LIMITS",
+  "checked_utc": "2026-11-02T08:34:42.192152+00:00",
+  "mesh_sha256": "c6b00231c310f1528fb6371398a78ce66dad92b7aa08d76617469d39664ab08a",
+  "build_code_sha256": "32672d71d87e4056c09775840ce7b2e0e37d6d397cf7baad50391df23f8b16fb",
+  "render_code_sha256": "22262e124f50e7ad5de4deb1b2b826f43da896a64e2d4d630112386c144d72b0",
+  "readme_sha256": "49b8554b5bf4d5589d94f0af444774b8a66ef2a78c929f092c6431d3f71af078",
+  "png_sha256": {
+    "preview.png": "14e1948f303ab4ef59b731ab5d28bcfbda315b09187d5c76e43b833237d947c3",
+    "rear.png": "a854dfd35eac9693680c8450169742eacfd66cbcec5f44a150fd5b767d3b0594",
+    "front.png": "6b6bd7e8657afad12452bb064a88a07ca548ff302f3d8607872d1880052d21dd",
+    "back.png": "98bdb0b72ef1880a7165137cb41b5c305426e206f2c0ae5bb2dbda18ce03454f",
+    "west.png": "03afdf565333f634c3cc3fc99bf800d4d74fac261a3c7b332d3c2f97e73258c8",
+    "east.png": "0e9e1bbeb9b296531c15959ef4700f27173dc0745c913d5f8790340e5f0b278a",
+    "top.png": "e1f33c760d736479cee4656494b014cf7b752f22fe9cbaecc5c54843d678e07b",
+    "entry-detail.png": "1c58fa6b222f9ef2561c9920ca5951bfea515260dacee47b5f008e00dc93cd35",
+    "terrace-detail.png": "fb7b9ee0ffc509f60ab089a380d9b44cc7f581cf87260bcef4610d0518fc49ee",
+    "roof-detail.png": "5005d9ce12ff6620577d6a84c0076bda405657b9cd1c027bf852cf14a11e5420"
+  },
+  "private_independent_review_sha256": "3188ce336b82bf4db9499711ef36bcc3d71985b1c917deb15860f697babb405c",
+  "source_go_sha256": "f0369bcb666886783d5b819e61f7c329131862eed981c6ead3f359d7f60ca433",
+  "checks": {
+    "four_same_orientation_paired_groups_one_project": true,
+    "ground_front_and_rear_platforms_not_filled_as_enclosed_rooms": true,
+    "two_open_upper_terraces_per_group": true,
+    "short140canopies_not_entire_terrace_roofs": true,
+    "central_long_rear_roof_after100_vertical_step": true,
+    "eight_actual_roundholes_not_glass_panels": true,
+    "DW1_vs_DW1prime_and_50cm_transoms_distinct": true,
+    "AC_reserved_fixed_glass_not_invented_equipment": true,
+    "near_entry_shortsteps_not_indoor_A4_156cm_chain": true,
+    "seven_full_views_and_three_intentionally_cropped_details": true
+  },
+  "limitations": [
+    "1983design only; currentname/site/asbuilt not independentlyconfirmed",
+    "Rearparapetdetail4.20 adopted; A2sideelevation3.60interpretation60cm discrepancy remains",
+    "Centralrearroof5.111 derived ±.10m; not directly printed EL",
+    "Circularwall source10cm→23cm printthickening; bar/frame also thickened",
+    "Externalshortsteps graphic; roads,wall,longsiteflights and realterrain excluded",
+    "1:350 unprinted; support/canopies need printer-specific review",
+    "Originalimages CC BY-NC private; metadataCCBYdifferent; no commercial-rights guarantee"
+  ]
+}

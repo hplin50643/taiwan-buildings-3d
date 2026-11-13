@@ -10,7 +10,7 @@
       "id": 1,
       "name": "illustrative concrete",
       "hex": "#B5B5AC",
-      "faces": 1403
+      "faces": 1291
     },
     {
       "id": 2,
@@ -47,6 +47,12 @@
       "name": "NUPS 1983 A1 nominal red square tile DESIGN only",
       "hex": "#A45F4C",
       "faces": 85
+    },
+    {
+      "id": 8,
+      "name": "NUPS 1983 A1 T101 T104 nominal red quarry tile DESIGN only",
+      "hex": "#A45F4C",
+      "faces": 112
     }
   ],
   "domains": {
@@ -66,6 +72,8 @@
     ],
     "coplanar_domains": 4018
   },
+  "continuation_rear_platform_faces": 112,
+  "continuation_rear_platform_complete_domains": 8,
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
   "design_color_only": true,
@@ -73,7 +81,7 @@
   "limitations": [
     "1983 A1 nominal red square tile DESIGN family,not water/asbuilt/current color.",
     "A1 terrace says尺二紅方磚; A2 says尺三磁方磚; discrepancy retained,not red缸磚 platform text.",
-    "85 original mat1 terrace upper faces changed to appended mat7 only;16483 original seven illustrative assignments and RGB remain EXACT,not newly certified.",
+    "Original85 terrace mat7 retained;112 rear platform faces to appendedmat8. All other16456 assignments exact relative prior; original seven illustrative RGB not newly certified.",
     "Original four paired groups/eightunits oneengineeringpackage/count0; no newtilejoints or geometry.",
     "All original height contradictions,printthickening,derivedshortcanopies and untested manufacturing limitations retained."
   ]

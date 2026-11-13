@@ -1,0 +1,32 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "nups-archives-four-paired-buildings-1983-design",
+  "source_reading": [
+    "A1 72.5 finish schedule T101/T104 platform row marked at final column 鋪紅缸磚. Terrace T213/T214 is separate column 尺二紅方磚; not conflated.",
+    "A2 first floor plan identifies T101/T104 on paper top rear platform, T102/T103 on paper bottom not included. A2 top platform150cm matches authored rear y8..9.615 gross bounds including wall edges.",
+    "Native full frames A1 and A2 inspected individually; remaining three source scans recovered/hash verified only. These are 1983 design sources, not current photos/asbuilt."
+  ],
+  "mapping": [
+    "Original body closes at y8; exposed rear platform top y8..9.615,z.20 across eight units. Global complete domains exclude closed room, surrounding walls, steps and front platforms.",
+    "Transform (authored+[-42.25,-4.55,.70])*1000/350; y9.857142..14.471429,z2.57142857. 8 complete domains of14 faces each, original material1; all112 faces to appended material8.",
+    "Original85 terrace indices preserved; original seven illustrative RGB and all other16456 indices preserved. No geometry,face split, tile joints or currentcondition claim."
+  ],
+  "limits": [
+    "Nominal red chosen #A45F4C is not sampled calibrated color; separate newmaterial8 despite same RGB as terrace.",
+    "Retain source terrace size contradiction and all existing geometric/print approximations, authored site arrangement, count0 single package."
+  ],
+  "sha256": {
+    "selected.json": "f15a2e306c4fde06d46e758fb12c659b373c68fba3edea41e3544b5da19ea3f1",
+    "original-verification.json": "96dae3f58022a0f6bf8e39d553ac19b65c9e53ce87ed7c09efafbfd9ca4a053e",
+    "domain-screen.json": "7271b5b812da45b7f7dfdf6f5cf5dc06b479bd23779b044113612e1e7a9189f0",
+    "rear-platform-proposal.json": "12ccf08ebe60e4c7ebb912164e320734888dbda3147f314b4743d45ef264cd78",
+    "original/build_model.py": "32672d71d87e4056c09775840ce7b2e0e37d6d397cf7baad50391df23f8b16fb",
+    "original/colorize_model.py": "eef88e86df1452cd6aebc54343c9635163e7151583e7a931d3433f0e808a951d",
+    "original/color-mesh.npz": "277a054724153c2213ad6176569caa2cb80e09da1e47a8a68f9227267c50e98d",
+    "original/SOURCE-REGISTER.json": "7f400f9bab85e1928923aebd29c0932b4b2833718cc4a1dde0f6ffad2b5c21eb",
+    "original/COLOR-SOURCE-REGISTER.json": "2d43e6a4a9bed86f3113245d8835783caf871313f86c4baa4162934dae56fa2f",
+    "private-reference/register.json": "f87a6ff3e0a1949118231c6c46cc6fba01a6ad665c6507aa1427b6942843373c",
+    "private-reference/MNMEM6MLMD.jpg": "ed338f54a2348df036c45a20ce8750e503b2e7529a6e3abfc3aeccd6060f7e4b",
+    "private-reference/M7MEM6MLMD.jpg": "661c2b1f21b9a92bd495b8f37e0fe57359e71865131045f6ce429ea6d3de69c8"
+  }
+}

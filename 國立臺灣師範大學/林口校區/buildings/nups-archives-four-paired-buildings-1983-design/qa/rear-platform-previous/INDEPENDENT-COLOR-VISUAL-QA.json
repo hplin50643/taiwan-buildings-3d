@@ -1,0 +1,97 @@
+{
+  "status": "PASS_INDEPENDENT_DESIGN_COLOR_ONLY_ORIGINAL_QA_RETAINED",
+  "personally_viewed_final_montage": true,
+  "visual_findings": [
+    "Ten final views personally inspected:seven wholeviews and three terrace closeups.",
+    "85 complete original terrace topfaces nominalred A1 design family;A2 differing tile wording retained.",
+    "Original seven materials and16483other assignments retained exact;not newly certified current/asbuilt appearance."
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "triangles": 16568,
+  "material_face_counts": [
+    4407,
+    1403,
+    242,
+    9515,
+    151,
+    725,
+    40,
+    85
+  ],
+  "connected_coplanar_domains": 4018,
+  "original_obj_present": false,
+  "original_files_retained": 37,
+  "file_sha256": {
+    "README.md": "604869711d31e8eada439df9358eb1f37380ef82ae4c8fd13adba787a001875c",
+    "README.zh-TW.md": "604869711d31e8eada439df9358eb1f37380ef82ae4c8fd13adba787a001875c",
+    "model.stl": "281e48a2d40fb7fec7e4eef243ca709fa89ab38a89eea04f2ed18e9094514277",
+    "build_model.py": "32672d71d87e4056c09775840ce7b2e0e37d6d397cf7baad50391df23f8b16fb",
+    "colorize_model.py": "eef88e86df1452cd6aebc54343c9635163e7151583e7a931d3433f0e808a951d",
+    "render_color.py": "8e29f321ec9907c3a264ee11e395f8a558b5947a0c71120c8d8ab68d5cafd1b9",
+    "verify_color_scene.py": "eb92877d0b2e5cef2f9af0594b5436dd4ac4c534d3ee203bb1b69cceb5c782c3",
+    "validate_color.py": "6ec85d56db8e6419d603517624c69e78088986329008be0ddce682d4eb920a43",
+    "color-mesh.npz": "277a054724153c2213ad6176569caa2cb80e09da1e47a8a68f9227267c50e98d",
+    "palette.json": "96c519ca9d0395748663d646d4f5497a0f7f5a0c6f82e0bd490b7673dd9863d1",
+    "appearance-materials.json": "0a3ea67a1bf9ff85aed0fc95afbdf5ece0cbba4982f2658c5f3f88cff944cd57",
+    "COLOR-SOURCE-REGISTER.json": "2d43e6a4a9bed86f3113245d8835783caf871313f86c4baa4162934dae56fa2f",
+    "appearance.3mf": "e827777765128c36517c358329d96bb2e5b9caf5259057080e868e5401678c59",
+    "scene.blend": "660b3836b30113f0117b45ea8d7dfbb2f379c7a8d3e98cc544f43f815509a663",
+    "preview.png": "59c957e46067b5885458afcae0bede034bcff8e96c451e8d47d7e389460c6136",
+    "rear.png": "b58b69c04f649512eb8230d92a9982c4f231a2389f0fba898e012fa70524ec67",
+    "front.png": "518705b6e3e7245bb6e6cb03960a071e92725951cb563408402135cf18dbda56",
+    "back.png": "4876be3eae1e52b98dc0ce80121c097896352ef9eaf8113e84da6becd06768d5",
+    "west.png": "055ded2491b37327a91cc6801844a2c6f1d22d7a644096cd937455858b0f7ede",
+    "east.png": "794d7df053c616bd15b24f2f85e0084919d488abebeebef009f616b5394a967d",
+    "top.png": "34dd17d4d2ed2705f2f0e180b171067a5cab2934ea27bfecf25986c0ccc50628",
+    "entry-detail.png": "666d6efd4e9ae382cfd06c56457eb5f360ad6f795b255a6a64e391c136005236",
+    "facade-detail.png": "9a151a7fa8825c6da1c399f77cb295105b808407f9922a33e03a9ec85abedca2",
+    "roof-detail.png": "23e77984e2e89d1d300f0f3812cb691138becfbe3fc12fef102e19099857f7e7",
+    "export_appearance.py": "cdbe77f0009759a6de890deca4b502227488168284c7e82cc988e78f1acbfaa6",
+    "PREVIEW-TRANSITION.json": "6fd5f3d7f6967c2ca1e6741fd253dfc106425e72887392e2a2d7ea0d465dc5ca",
+    "ORIGINAL-SOURCE-GAP-scene.blend": "7eb2abd856ae5073a166503b48222e1405f5669d3443da51563d0e6c6853e437",
+    "ORIGINAL-SOURCE-GAP-README.md": "49b8554b5bf4d5589d94f0af444774b8a66ef2a78c929f092c6431d3f71af078",
+    "ORIGINAL-CLASSIFICATION-QA-SCOPE.json": "809cba3ddb87fdf40ba98b3fed3445c237afd4296ad7e2a94b795187790ad5a1",
+    "render_model.py": "22262e124f50e7ad5de4deb1b2b826f43da896a64e2d4d630112386c144d72b0"
+  },
+  "qa_sha256": {
+    "COLOR-ASSIGNMENT-QA.json": "980c92882a5d1ff17aa708866919e8e1203d4886f5faf6e058725c071bc0f3f4",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "38c89b84566d20ef41dde5df6a24ad8638f7c117d075ac0f724d3aac9bdfe599",
+    "SCENE-QA.json": "1cb24dee68d520a66171a9b1d3bb3ad2a8255e6e794dc52ebea77de1e58c64f8",
+    "FRAMING-QA.json": "610a6f463f55cf557549a01d6d0264dd72b0e0988acbdfb552a97f763f27a708",
+    "DELIVERY-QA.json": "a26792b5197d739276628b39aaa6720c4ae2740016a53ad52aefa3694397ac3d"
+  },
+  "root_qa_sha256": {
+    "MATERIAL-DOMAIN-QA.json": "49f83eab33d4e5802f7e5051223ab1a07e0f47b28ff0868cae3bb038084934fd",
+    "ORIGINAL-RETENTION-QA.json": "b348c0d41ff8887d3d9e72339a16beca6d9c3b727f12d6ebabd3c6f2fc18ae28",
+    "PUBLIC-TEXT-PRIVACY-QA.json": "b687caf8f4c7abffa2a401c94f923baba3f0711608f12426f57515088cda6ba2",
+    "ORIGINAL-PACKAGE-READBACK.json": "e6dc886914797e0c7b3b306fb35b08b636030fb649b48ebe98aae6ddcc2a9742",
+    "BUILDER-PACKAGE-IDENTITY-FINAL.json": "5e7d1ec0182987ba23d3f4846ab8262bfbf88f56c2de3b250103cf148ee6d0fd",
+    "INDEPENDENT-DOMAIN-1421.json": "28a56b2159f86926aad801ceb34708380a88abf41d34ed7ded6f29ced10be2f6",
+    "IDENTITY-CONCURRENT-READ-FAILURE-1422.json": "2d242c994f5321100155b8db9f11b1c5abf814d2acaaf517184f681ab39c2924",
+    "INDEPENDENT-PACKAGE-IDENTITY-1424.json": "5e7d1ec0182987ba23d3f4846ab8262bfbf88f56c2de3b250103cf148ee6d0fd"
+  },
+  "montage": {
+    "path": "private-review/final-v1-ten-view-montage.jpg",
+    "sha256": "4d78db8ea1a47ffbe114bb2644670da1884f7c30c02628328e7c7892458836ef"
+  },
+  "limitations": [
+    "1983 A1 terrace nominalred DESIGN family,not asbuilt/currentcolor.",
+    "A1尺二紅方磚 versus A2尺三磁方磚 discrepancy retained;not red缸磚 of groundplatform.",
+    "85faces in8complete components only;17sameplane columntops unchanged.",
+    "Original16568triangles/37files/noOBJ preserved,sameitem/count0.",
+    "Four pairedgroups/eightunits oneengineeringpackage,not CCCK257gate or confirmed built/currentsite.",
+    "Original4.20/3.60m discrepancy,derivedshortcanopies,wall/barprintthickening and untested manufacture retained,no newglobalprintability endorsement."
+  ],
+  "history": [
+    "Original sevenillustrative material version complete retained;exactonly85 originalmat1faces assigned newmat7.",
+    "HistoricalQA aliases bind original-classification-version/,not newroot;oldhashes unchanged.",
+    "Independentexpectedidentity NUPS Archives Four Paired Buildings 1983 Design partial color verified actual3MF/reopenedscene/fourscripts/palette.",
+    "Source1411misread supersededby1414v2;newvariant never used red缸磚 wording as terraceevidence."
+  ],
+  "existing_preview_transition": true,
+  "reviewer": "finish_science_hall",
+  "reviewed_at_utc": "2026-11-03T14:24:09Z",
+  "parent_review": "Parent personally viewed A1 full finish table and correctedcolumns crop,A2 terrace discrepancy,originalcode/README,preview andfinalten. Independently derived eight originalconstruction terraceboxes under originaltranslate*scale;whole plane102 first,finite85/eight exactsharededge completecomponents11/11/11/10/11/10/11/10;17columntops excluded. All16568 originaltriangles exact raw-to-NPZ,only85 oldmat1 to newmat7 red #A45F4C;other16483 originalassignments unchanged. A1 T213/T214鋪尺二紅方磚,not platform紅缸磚;A2鋪尺三磁方磚 discrepancy preserved. Only1983designred,notasbuilt/current;original7historicalillustrativefamilies not recertified. Fourpairedgroups onepackage count0. Original37files andallQA retained,original parapet60cm conflict/derivedshortcanopyheight/sidewall10to23cm thickening/windowuncertainties/unknownpresentlocation not resolved bycolor. ActualNUPS identity scene3MF4scripts/paletteRGB checked after writes stopped. Initialparentidentity ran concurrently with render and failed before/afterSHA gate, retained as1422history;final1424 rerun requiredPASS,not hidden. No fullcolor/physicalprint/globalQA approval."
+}
