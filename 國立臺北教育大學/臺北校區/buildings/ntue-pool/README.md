@@ -58,3 +58,12 @@
 原appearance-review保留為前版歷史。本版以appearance-review-v2、appearance-freeze.json與模型SHA256SUMS綁定；校級checksum未改，待授權發布時整合。
 
 [逐點逐面驗證](appearance-review-v2/model-verification.json) · [完整面界審核](appearance-review-v2/boundary-continuity-audit.json) · [來源判讀](appearance-review-v2/source-register.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。
+
+
+## 2026-11-13 局部材色修正
+
+本次僅四道原入口階的踏面與前立面，共8個完整連通共面域20面，由未知材色延用既有近似灰族；原4材值及其餘3754面不變。灰族不代表階梯和入口框牆同石種或校準色值。原階數、尺寸和位置保持粗略模型，不擴至階側、門前廣場、基座或其他未知部位。
+
+本段更新上述原版本的局部材色範圍；原APPEARANCE與歷史審核的數量、範圍依其原版本解讀。幾何、原STL／scene、鎖定預覽與七張原生視圖的相機和照明不改。不是全館復色、測繪、校準材質或2026現況認證；照片日期不確定，不由文件日期推定拍攝日。原工程、薄件與支撐限制仍有效，未實體試印或完成切片工具路徑驗證。
+
+本次公開交付只包含模型、材質、必要重建腳本、預覽與必要說明／校驗；來源原照片、比較圖和完整研究審核紀錄不隨包發布。當前產物範圍見[校驗說明](CHECKSUM-SCOPE.md)。

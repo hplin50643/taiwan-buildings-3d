@@ -69,9 +69,24 @@ for p in mesh.polygons:
  if reason:
   p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'basis':'Whole original support; hidden returns and exact material depth are explicitly inferred from adjacent same component, not directly surveyed.'}
 
+
+# Eight complete existing entry step tread and front-riser domains.
+continuation_baseline=list(indices)
+reveal_domains=[[3610, 3614], [3611, 3612, 3613, 3615, 3616, 3617], [3620, 3622], [3621, 3623], [3624, 3626], [3625, 3627], [3629, 3632], [3630, 3633]]
+reveal_changed=[3610, 3611, 3612, 3613, 3614, 3615, 3616, 3617, 3620, 3621, 3622, 3623, 3624, 3625, 3626, 3627, 3629, 3630, 3632, 3633]
+assert sorted(i for d in reveal_domains for i in d)==reveal_changed
+for domain in reveal_domains:
+ for fi in domain:
+  assert indices[fi]==0
+  face=mesh.polygons[fi]
+  assert face.normal.z>.999 or face.normal.y<-.999
+  for vi in face.vertices:
+   q=mesh.vertices[vi].co
+   assert -69.001<=q.x<=-36.999 and -49.201<=q.y<=-40.799 and 2.999<=q.z<=5.101
+  face.material_index=3;indices[fi]=3
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Original geometry and colored faces preserved; complete portal and right window component returns inferred; mixed screens and incomplete broad facades neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-complete-component-returns'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-entry-stairs-complete-component-returns'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -103,7 +118,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-complete-component-returns','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Complete portal gray canopy soffit/top/rear and sidewall rear caps, right-end brick opening reveals, and planter right cap. Direct official front/right photos and visitor entrance photo support brick and gray component families; exact hidden returns are continuity inference. Architect describes greenwalls and opposite indoor photo shows extensive windows, so incomplete large rear/left facade proxies remain neutral instead of solid brick. Five original screen bars span incompatible red and dark systems and remain neutral; no splitting, added geometry, decals or equipment. Original colored faces and RGBA/roughness preserved. Capture dates unverified; not a 2026-condition survey','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-entry-stairs-complete-component-returns','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'reveal_complete_domains':reveal_domains,'reveal_changed_faces':reveal_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Complete portal gray canopy soffit/top/rear and sidewall rear caps, right-end brick opening reveals, and planter right cap. Direct official front/right photos and visitor entrance photo support brick and gray component families; exact hidden returns are continuity inference. Architect describes greenwalls and opposite indoor photo shows extensive windows, so incomplete large rear/left facade proxies remain neutral instead of solid brick. Five original screen bars span incompatible red and dark systems and remain neutral; no splitting, added geometry, decals or equipment. Original colored faces and RGBA/roughness preserved. Capture dates unverified; not a 2026-condition survey','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-220,-300,165),(0,0,20),190),'rear':((220,300,165),(0,0,20),190),'elevation':((0,-350,40),(0,0,20),190),'source-angle':((180,-300,110),(0,0,20),190),'left':((-320,0,150),(0,0,20),190),'right':((320,0,150),(0,0,20),190),'top':((0,0,380),(0,0,20),190)}
 out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
