@@ -77,9 +77,22 @@ for p in mesh.polygons:
     if plane(1,yc+10.5) and n[1]>.8 and hi[2]<=34.55+EPS:i=9
  if i!=original_indices[-1]:changed_faces.append(p.index)
  p.material_index=i;indices.append(i)
+
+# Whole original tower right gable end domains; no geometry or new boundaries.
+continuation_baseline=list(indices)
+reveal_domains=[[1109, 1110, 1112, 1114, 1121, 1127], [3940, 3942, 3943, 3954, 3955, 3961], [6777, 6778, 6780, 6782, 6789, 6795]]
+reveal_changed=[1109, 1110, 1112, 1114, 1121, 3940, 3942, 3943, 3954, 3955, 6777, 6778, 6780, 6782, 6789]
+for fi in reveal_changed:
+ assert indices[fi]==0
+ face=mesh.polygons[fi]
+ assert face.normal.x>.999
+ for vi in face.vertices:
+  q=mesh.vertices[vi].co
+  assert abs(q.x-53.5)<1e-5 and 44.39999<=q.z<=47.70001
+ face.material_index=6;indices[fi]=6
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; rear bar continuity inferred; tower mosaic neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-rear-continuity'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-tower-gable'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -110,7 +123,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Rear and left bar walls, existing shallow rear bay shadows, opposite main roof gables/eaves are inferred continuity, not directly verified elevations. Tower mosaic and balconies remain neutral.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original scene is single warm display material. Official dormitory and aerial photos support front near-white walls/piers, pale blue-grey original floor beams, mixed opaque corridor cut backs, solid red lantern panels, and red-brown original pitched roof planes. Unsplittable tower-body blue/cream mosaic remains neutral; no fake patches, glass claim, new railing or AC geometry. Rear bar and left wall colors are inferred in v2; tower mosaic, balconies and bottom remain neutral. Photograph dates unverified; not a claim of unchanged2026condition. Original geometry/preview/QA remain intact.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-tower-gable','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'reveal_complete_domains':reveal_domains,'reveal_changed_faces':reveal_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Rear and left bar walls, existing shallow rear bay shadows, opposite main roof gables/eaves are inferred continuity, not directly verified elevations. Tower mosaic and balconies remain neutral.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original scene is single warm display material. Official dormitory and aerial photos support front near-white walls/piers, pale blue-grey original floor beams, mixed opaque corridor cut backs, solid red lantern panels, and red-brown original pitched roof planes. Unsplittable tower-body blue/cream mosaic remains neutral; no fake patches, glass claim, new railing or AC geometry. Rear bar and left wall colors are inferred in v2; tower mosaic, balconies and bottom remain neutral. Photograph dates unverified; not a claim of unchanged2026condition. Original geometry/preview/QA remain intact.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-195,-220,155),(0,0,24),220),'rear':((195,230,160),(0,0,24),220),'elevation':((0,-260,24),(0,0,24),220),'source-angle':((190,-230,125),(0,0,24),220),'left':((-260,0,100),(0,0,24),220),'right':((260,0,100),(0,0,24),220),'top':((0,0,350),(0,0,24),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
