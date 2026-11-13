@@ -1,0 +1,39 @@
+{
+  "status": "PASS_INDEPENDENT_BOUNDED_COLOR_VISUAL_REVIEW",
+  "reviewer": "parent builder independent of implementation child",
+  "sha256": {
+    "README.md": "1703ebac17ec6b509dae4c3464358c68eaf141a82183ee4cd1dd105caa378bdd",
+    "color-mesh.npz": "91f8039a0fcaece53c1441e0d14143b455b4d67d8ac908e3e10832e59a386e94",
+    "colorize_model.py": "39e951bef34f6195ded73060edb2e97738a30d7da586d9f252b29f4e26e314b7",
+    "model.stl": "c7ad8d7559310965da3dcf737fd335d2dba0387e2bd434b5c6d30761ea62b459",
+    "appearance.3mf": "29c68ba824eb4b75e354c54eb7bfa246ec8b07ed86f1ea6831f06eefe8d1d318",
+    "scene.blend": "da3351d59b3a165cd0da1c27fb9b82d036f4f4b88a6e180bbc32bf1e58074f5e"
+  },
+  "images_sha256": {
+    "roof-detail.png": "f8858e735ba5f2b04450577565954c4b01c8e1ec3bb6686fbc60cc9a82f999d7",
+    "entry-detail.png": "53626f083f8cf3fb34a1096659a898c3990c34256ef521f2bb6393e618a700ef",
+    "back.png": "8800162b2a7c8c51c4eafeab024eab3e1f7824fea4930e9531f543e1492a6185",
+    "west.png": "bf5f97a1468a07e516d836455c732a355b2a024197e84351d4a2d5ab56407068",
+    "screen-detail.png": "b7f2eea7d39c4a45c189d576e6be9145211e5932aa2fd1c8564eaef571815ec9",
+    "top.png": "761b59287f135d7614bd7bce4da268063617109ef6576881b982448dd4308133",
+    "rear.png": "3738eab49667210df2846657544d93b509699c42377e66918cf6585273886db9",
+    "preview.png": "189fdce283e0baf53213111c89eedbe53ae69735d84317f6c95a506326426f03",
+    "front.png": "f52507d9d24b5c75a4818dafd67f24bd6068a0168d85174063b0e254b12bf2df",
+    "east.png": "05da09753bef5ed4326e91f6ec9cb07c97537d6a624c7171c19cda97c686d35a"
+  },
+  "source_review": [
+    "Official front photograph, aerial photograph and report p33 exterior front/side actually viewed.",
+    "Final preview and all nine other views actually viewed."
+  ],
+  "observations": [
+    "Cream upper fins/eaves, gray-brown spandrels, pale corner screens and dark true recesses supported.",
+    "Earlier side-window/shoulder/corner diagonal paint artifacts removed using full-plane assignment, not geometry cuts.",
+    "Gray roof and open lightwell retained; unverified rear/body details neutral."
+  ],
+  "limitations": [
+    "Whole-plane shoulder/screen fallback cannot reproduce all real vertical paint boundaries in original long triangles.",
+    "Original 3930-face simplified geometry unchanged; material appearance is not geometric fidelity or survey.",
+    "Eight material labels are not tested four-filament slicing or printing."
+  ],
+  "count_delta": 0
+}

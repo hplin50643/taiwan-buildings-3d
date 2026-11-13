@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "scope": "Withdraw unsupported uniformgray from two whole front shoulder domains, not newcolor or fullcolor certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 3930,
+  "original_color_faces": 2681,
+  "withdrawn_color_faces": 45,
+  "new_color_faces": 0,
+  "colored_faces": 2636,
+  "unknown_neutral_faces": 1204,
+  "authored_display_base_faces": 90,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 25,
+  "current_mixed_connected_domains": 25,
+  "unaffected_mixed_domains_members_and_indices_exact": true,
+  "current_independent_review": "SHOULDER-WITHDRAWAL-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "45faces23+22 in two complete front shoulder coplanar domains change2gray->6neutral; original8palette and all unselectedindices/geometry remain. Photo whiteuppercrown/beigespandrels/graysupports cross original fullheight domains; wholewithdrawal conservatively loses locallysupportedgray, not proof everyface wrong or newwhite/beige.",
+    "Originalphoto reinspection, captureunknown, not2026. Original25mixed domains preserved precisely,not zero. No OBJ in originalpublicpackage. Sourcephotos private, no testedphysicalprint."
+  ],
+  "checked_at": "2026-11-12T20:12:17.369984+00:00",
+  "original_STL_sha256": "c7ad8d7559310965da3dcf737fd335d2dba0387e2bd434b5c6d30761ea62b459",
+  "color_mesh_sha256": "277c84f160a11a529eaa0b35f6fe26def59beab69989085e23f89585dacaf2e4",
+  "images_sha256": {
+    "preview.png": "8f0a7e23fdd2b5877695a48a2906a832b7a4ef8d2726e5c97e5a21ac96273823",
+    "rear.png": "5215cf1b95ecd7402360e207cb2b7b36046856832bf67f748aaf982ddb52ce8e",
+    "front.png": "1477d9039de79429eabe62103cc25f690710ac11867455cb8ccab417f9290e40",
+    "back.png": "accedfbf99ea20574cc3d4253e7592ec186e5b3633ca4cca8f057bf290088e68",
+    "west.png": "09b471b70604a58ecd11a8a5268cb499f40ac174aa00d77eefa9de47dc073441",
+    "east.png": "2d575d495fbafa46ef02aed3553ec183e7de2262382d44b7758079d53e8ff8bf",
+    "top.png": "1d083a8719a5c1dc9965b2488b3bf3eb2a87b8558eec3fce82e2a35bcbc2e0d6",
+    "entry-detail.png": "2e98c25cccbfad2b1b547aab4bd77f22f5aa5184e3e570a33d6904c99880c2ae",
+    "screen-detail.png": "8ec68608a506cc46ae576ae2089aae5e967d38fc220a4f64c07ba83aafa9d57b",
+    "roof-detail.png": "1b2f7af1097e2163e47ccbdaf0cd77392a9e6fc8ee87c5b399402683f1d670ee"
+  }
+}

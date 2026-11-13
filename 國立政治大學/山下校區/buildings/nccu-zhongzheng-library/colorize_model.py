@@ -52,7 +52,21 @@ for i,((x,y,z),(nx,ny,nz)) in enumerate(zip(c,n)):
  if abs(x+44)<.005 and abs(y)>41.99:mat[i]=3
  if abs(x-44)<.005 and abs(y)>41.99:mat[i]=6
  if abs(nx)>.1 and abs(ny)>.1 and abs(nz)<.005 and z>3.001 and mat[i]!=4:mat[i]=2 if x<0 else 6
+
+# Withdraw full-height front shoulder gray approximation crossing real material zones.
+old=mat.copy();t=m.triangles[:,:,[1,0,2]].copy();t[:,:,1]*=-1
+ad=m.face_adjacency;groups=trimesh.graph.connected_components(ad[(m.face_normals[ad[:,0]]*m.face_normals[ad[:,1]]).sum(1)>.999999],nodes=np.arange(len(t)),min_len=1)
+hits=[]
+for sign in [-1,1]:
+ A=np.array([-44,42*sign]);B=np.array([-34,28*sign]);u=(B-A)/np.linalg.norm(B-A);nn=np.array([-u[1],u[0]]);d=t[:,:,:2]-A
+ hit=(abs(d@nn)<1e-4).all(1)&((d@u>=-1e-4)&(d@u<=np.linalg.norm(B-A)+1e-4)).all(1)&((t[:,:,2]>=2.8-1e-4)&(t[:,:,2]<=52+1e-4)).all(1)
+ gs=[g for g in groups if hit[g].any()];assert len(gs)==1 and set(gs[0])==set(np.flatnonzero(hit));assert hit.sum()==(23 if sign==-1 else 22);assert (old[hit]==2).all();hits.append(hit)
+hit=np.logical_or.reduce(hits);mat[hit]=6
+assert hit.sum()==45 and np.array_equal(np.flatnonzero(mat!=old),np.flatnonzero(hit))
+assert sum(len(set(old[g]))>1 for g in groups)==25 and sum(len(set(mat[g]))>1 for g in groups)==25
+assert all(np.array_equal(mat[g],old[g]) for g in groups if not hit[g].any())
+assert np.bincount(mat).tolist()==[318,1064,258,618,318,60,1204,90]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=mat)
 (R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int(np.sum(mat==i))}for i,(a,b)in enumerate(pal)],'geometry_policy':'Original 3930 triangles unchanged, only materials.','coordinate_control':'Classification inverse of z90: pre_x=export_y, pre_y=-export_x; exported coordinates unchanged.','four_color_printing':'Eight appearance labels are not a tested four-filament slicer project.','limits':'Rear lower surfaces and unobserved roof-block backs neutral; broad roof gray supported by aerial. No source photo textures.'},indent=2)+'\n')
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int(np.sum(mat==i))}for i,(a,b)in enumerate(pal)],'geometry_policy':'Original 3930 triangles unchanged, only materials.','coordinate_control':'Classification inverse of z90: pre_x=export_y, pre_y=-export_x; exported coordinates unchanged.','four_color_printing':'Eight appearance labels are not a tested four-filament slicer project.','withdrawn_color_faces':45,'new_color_faces':0,'original_mixed_domains_preserved':25,'limits':'Full front shoulder gray withdrawn to neutral, including conservatively lost locally supported gray. Rear lower surfaces and unobserved roof-block backs neutral; broad roof gray supported by aerial. No source photo textures.'},indent=2)+'\n')
 q={'status':'PASS','original_STL_sha256':EXPECTED,'triangles':len(m.faces),'materials_used':np.unique(mat).tolist(),'bounds_mm':m.bounds.tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};assert len(np.unique(mat))==8;(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2)+'\n');print(q)

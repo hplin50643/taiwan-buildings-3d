@@ -1,0 +1,3 @@
+# Current and historical scope
+SHOULDER-WITHDRAWAL changes45 fullfront shoulder faces2->6, no newcolor. Original3930triangles,8palette and unselectedindices unchanged; exterior2681->2636,neutral1159->1204,displaybase90separate. Original25mixed connectedcoplanardomains retain exact members/materials,not zero.
+Sourcepending snapshot fixed afterreview. Current assignment/format/scene/SOURCE plus final independent exact work-relative hashes govern this candidate. OriginalQA/manifests/docs saved in qa/shoulder-withdrawal-previous are historical,not current verification. Originalpublic package has noOBJ. Sourcephoto/PDF and retainedisolatedrebuild private. No geometryaccuracy,physicalprint or2026 claim.

@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in nccu-zhongzheng-library-all-views.jpg. Caption/backing absent; original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "d12595616992665b9e43212ccb13d0fafe9bf5ee2f1a352163be3dfbc9cf6bf2",
-    "east.png": "c46bcec4734103f59800fa2f548afeea0b79eec4930cf4715df003d938d6d96c",
-    "entry-detail.png": "dc7a2f3c90af28f3e82b9c2e332d72d65a7432547397db3e1dc16c7bf0ff7760",
-    "front.png": "415148494205afefaca4906b89f6ee0932662a242c70d117a6d8322c0dd6826f",
-    "preview.png": "e0560ccb4b5621bb5335551c21bc73805b5044d76d40cddd1ee71c3cf52caf88",
-    "rear.png": "cd7a3753d9bde3afc6a2e8932c9fb9ce5bc886354ae973c767bf6086402dec9d",
-    "roof-detail.png": "6fe0a6c19fec4e8f11f0751914010a237d4fcb986f1a4472d9a5937c60eec083",
-    "screen-detail.png": "6d98c507b28e61e7147a5b277606da3cdeb7efdfe70f8f975357f9add70b5b6c",
-    "top.png": "7d24ede067947b09011d302218eb88f682da89a6248d008479100cb9148b1718",
-    "west.png": "165c4dd6b22efff217655f542599eee04f18a5fa10caabd3a1074e823151e6c2"
-  }
+    "preview.png": "8f0a7e23fdd2b5877695a48a2906a832b7a4ef8d2726e5c97e5a21ac96273823",
+    "rear.png": "5215cf1b95ecd7402360e207cb2b7b36046856832bf67f748aaf982ddb52ce8e",
+    "front.png": "1477d9039de79429eabe62103cc25f690710ac11867455cb8ccab417f9290e40",
+    "back.png": "accedfbf99ea20574cc3d4253e7592ec186e5b3633ca4cca8f057bf290088e68",
+    "west.png": "09b471b70604a58ecd11a8a5268cb499f40ac174aa00d77eefa9de47dc073441",
+    "east.png": "2d575d495fbafa46ef02aed3553ec183e7de2262382d44b7758079d53e8ff8bf",
+    "top.png": "1d083a8719a5c1dc9965b2488b3bf3eb2a87b8558eec3fce82e2a35bcbc2e0d6",
+    "entry-detail.png": "2e98c25cccbfad2b1b547aab4bd77f22f5aa5184e3e570a33d6904c99880c2ae",
+    "screen-detail.png": "8ec68608a506cc46ae576ae2089aae5e967d38fc220a4f64c07ba83aafa9d57b",
+    "roof-detail.png": "1b2f7af1097e2163e47ccbdaf0cd77392a9e6fc8ee87c5b399402683f1d670ee"
+  },
+  "mesh_sha256": "277c84f160a11a529eaa0b35f6fe26def59beab69989085e23f89585dacaf2e4",
+  "independent_visual_review": "SHOULDER-WITHDRAWAL-INDEPENDENT-QA.json",
+  "previous_qa": "qa/shoulder-withdrawal-previous/NO-TEXT-QA.json"
 }

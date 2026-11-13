@@ -1,30 +1,121 @@
 {
-  "sources": [
-    {
-      "url": "https://osa.nccu.edu.tw/CSRC/files/169362228269a7c8ada230d.pdf",
-      "sha256": "6f3b5072196adbac6f78211bc29b340fd2eaf91e6a6edce31b38063a04a97c75",
-      "used": "p33 exterior front/side photographs only; already downloaded for prior color review, reused without duplicate download"
-    },
-    {
-      "url": "https://nccuwiki.lib.nccu.edu.tw/index.php/中正圖書館",
-      "sha256": "40a99bbd0b8b5fffedb6a67491e40d88f950b8435743bee37e4d3390410a29aa",
-      "used": "identity plus two exterior photograph links; front credited Yu tptw, aerial政大校史記憶網"
-    },
-    {
-      "url": "https://nccuwiki.lib.nccu.edu.tw/images/thumb/d/d9/%E4%B8%AD%E6%AD%A3%E5%9C%96%E6%9B%B8%E9%A4%A8.jpg/400px-%E4%B8%AD%E6%AD%A3%E5%9C%96%E6%9B%B8%E9%A4%A8.jpg",
-      "sha256": "3daa718ed771b8226cf7466ab94d1abfb3f9b06d1f82d822f5e44ba17dad4203",
-      "used": "front color families, no exact calibrated RGB"
-    },
-    {
-      "url": "https://nccuwiki.lib.nccu.edu.tw/images/7/7f/%E4%B8%AD%E6%AD%A3%E5%9C%96%E6%9B%B8%E9%A4%A8_%E9%B3%A5%E7%9E%B0.jpg",
-      "sha256": "4850a60610b30de60be7e82984fe333cdfb4331f8a339ba822b255149b6a6e65",
-      "used": "roof gray surface, light roof-edge/courtyard walls; small400x300 view supports broad regions only"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "nccu-zhongzheng-library",
+  "faces": [
+    164,
+    170,
+    171,
+    172,
+    173,
+    174,
+    231,
+    234,
+    274,
+    277,
+    278,
+    279,
+    318,
+    319,
+    322,
+    349,
+    350,
+    351,
+    352,
+    353,
+    726,
+    728,
+    729,
+    730,
+    731,
+    790,
+    863,
+    865,
+    866,
+    876,
+    888,
+    896,
+    897,
+    898,
+    899,
+    900,
+    901,
+    902,
+    903,
+    955,
+    957,
+    3462,
+    3464,
+    3503,
+    3504
   ],
-  "source_GO_sha256": "de1d2378b3afe2153a34fb18dda9d397dd2582847cb91a5fcee31fd22e6b5201",
-  "independent_review_sha256": "11ec4c324eaaa19381d2c54f361055a959769627e4bbb3e7b6c04a9b03824aff",
-  "source_images_public": false,
-  "photo_textures": false,
-  "rights": "No confirmed CC for source photographs; no commercial rights guarantee.",
-  "count_delta": 0
+  "complete_domains": [
+    [
+      790,
+      876,
+      896,
+      903,
+      3503,
+      863,
+      866,
+      865,
+      888,
+      730,
+      3504,
+      900,
+      897,
+      901,
+      902,
+      898,
+      955,
+      899,
+      957,
+      728,
+      729,
+      731,
+      726
+    ],
+    [
+      349,
+      353,
+      350,
+      351,
+      352,
+      322,
+      319,
+      318,
+      3462,
+      3464,
+      278,
+      277,
+      279,
+      174,
+      172,
+      274,
+      231,
+      234,
+      164,
+      171,
+      173,
+      170
+    ]
+  ],
+  "change": "45 front diagonal shoulder faces index2 gray to index6 neutral, no new color and no geometry changes.",
+  "source_review": [
+    "Actually viewed original official inventory page33-0 and page33-1 full native images. Pale upper crown, beige horizontal fields and gray supports are distinct. Full-height uniform shoulder gray override crosses these observed boundaries.",
+    "Independent inverse-coordinate implicit-plane selection recovered exactly23+22 faces in2 whole connected coplanar domains; all oldindex2.",
+    "Whole-domain withdrawal necessarily sacrifices some supported gray support portions. This is conservative uncertainty marking, not evidence that every face is wrong or should be white/beige."
+  ],
+  "limits": [
+    "Keep all other indices/geometry and remaining mixed domains exactly; no z-clipping, new boundary or side/back extrapolation.",
+    "Original photo re-review, no new capture or2026condition certification; nominal colors uncalibrated."
+  ],
+  "file_sha256": {
+    "SOURCE-PROPOSAL.json": "7abd224e3c7876f1296db3b532d66c26f6609de0375406a7f13775dc444d0049",
+    "domain-screen.json": "d117c978a2fdc04c57431f8798b1f5d9b91b53e1fc5f8b3bc0e00c3d3c76cc37",
+    "original/build_model.py": "d45fa1decca3e0063386cfde3f53ea80063914dc3bd31ded28811523b7a20f08",
+    "original/colorize_model.py": "39e951bef34f6195ded73060edb2e97738a30d7da586d9f252b29f4e26e314b7",
+    "private-reference/page33-0.jpeg": "a0c5cca330178a08a0601616a2dad3501e7e4b713a89df073cf6d104e8d1f0a0",
+    "private-reference/page33-1.jpeg": "503df210213066a8b73109bea55c09a1db0d2015677217413adf7fc47830dfe3"
+  },
+  "historical_source_register": "qa/shoulder-withdrawal-previous/COLOR-SOURCE-REGISTER.json"
 }

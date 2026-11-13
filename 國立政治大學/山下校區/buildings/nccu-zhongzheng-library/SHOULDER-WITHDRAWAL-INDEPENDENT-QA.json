@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "building": "nccu-zhongzheng-library",
+  "triangles": 3930,
+  "withdrawn_faces": 45,
+  "new_color_faces": 0,
+  "exterior_color_before": 2681,
+  "exterior_color_after": 2636,
+  "neutral_after": 1204,
+  "display_base_faces": 90,
+  "complete_domains": 2,
+  "mixed_connected_domains_before": 25,
+  "mixed_connected_domains_after": 25,
+  "findings": [
+    "Independent inverse-coordinate all-vertex selector verified23+22 whole shoulder domains, exactly45 oldgray2 to neutral6; all otherindices and8palette entries unchanged.",
+    "All25original mixed domains retain exact membership and per-faceindices; geometry,3MF and15engineering/history files preserved.",
+    "Retained isolated build/color/palette/materials and3MF XML directly compared identical.",
+    "Savedscene independently reopened;3930mesh coordinates/faces/indices and8shaders verified; original camera/lights/render/object inventory/transforms identical.",
+    "All10actual final views inspected in overview and3detail images full size, including screen-detail. Whole neutral shoulders visible without extra recoloring; no private supplementary image necessary.",
+    "README/source fixed snapshot checked; original noOBJ and no README.zh-TW.md, not invented."
+  ],
+  "limits": [
+    "Whole-domain withdrawal sacrifices some supported gray support portions to avoid uniform gray across pale upper crown/beige fields; not proof everyface is wrong.",
+    "No subdivision,new geometry,full-facade or2026condition certification. Original nominal colors/engineering limitations retained.",
+    "Sourcepending fixed stage snapshot; exact work-relative hashes only."
+  ],
+  "image_sha256": {
+    "preview.png": "8f0a7e23fdd2b5877695a48a2906a832b7a4ef8d2726e5c97e5a21ac96273823",
+    "rear.png": "5215cf1b95ecd7402360e207cb2b7b36046856832bf67f748aaf982ddb52ce8e",
+    "front.png": "1477d9039de79429eabe62103cc25f690710ac11867455cb8ccab417f9290e40",
+    "back.png": "accedfbf99ea20574cc3d4253e7592ec186e5b3633ca4cca8f057bf290088e68",
+    "west.png": "09b471b70604a58ecd11a8a5268cb499f40ac174aa00d77eefa9de47dc073441",
+    "east.png": "2d575d495fbafa46ef02aed3553ec183e7de2262382d44b7758079d53e8ff8bf",
+    "top.png": "1d083a8719a5c1dc9965b2488b3bf3eb2a87b8558eec3fce82e2a35bcbc2e0d6",
+    "entry-detail.png": "2e98c25cccbfad2b1b547aab4bd77f22f5aa5184e3e570a33d6904c99880c2ae",
+    "screen-detail.png": "8ec68608a506cc46ae576ae2089aae5e967d38fc220a4f64c07ba83aafa9d57b",
+    "roof-detail.png": "1b2f7af1097e2163e47ccbdaf0cd77392a9e6fc8ee87c5b399402683f1d670ee"
+  },
+  "file_sha256": {
+    "model.stl": "c7ad8d7559310965da3dcf737fd335d2dba0387e2bd434b5c6d30761ea62b459",
+    "build_model.py": "d45fa1decca3e0063386cfde3f53ea80063914dc3bd31ded28811523b7a20f08",
+    "color-mesh.npz": "277c84f160a11a529eaa0b35f6fe26def59beab69989085e23f89585dacaf2e4",
+    "palette.json": "d20c0c219a58cee5c0674860b0f38b98db2f34accf8f33be5d339de54df7945a",
+    "appearance.3mf": "764ce68e5be6c5d536a3c3b5f3e22896fa73844e54c7c68a103883b774f6b372",
+    "appearance-materials.json": "aa2a4bc40ea10fd067cf06302d28a374c40bd18a6c90fc75f45b35483f0efb41",
+    "scene.blend": "cb367de239d386c89b8aebf9a878bc50d5d82faf2a74409700f92449fd1e55ff",
+    "colorize_model.py": "4b2f165f072a69107fcef88df0cafc92f4323837761bd21d04d63cbdca42e751",
+    "export_appearance.py": "a6fe191069b920e22dd78c3eda25410f8483e9fa2078f501f2f5bfe47de1853c",
+    "validate_color.py": "3472556121ae420bd54c969a824a3a2d85839e37bafaeb5075faef5edd02770f",
+    "verify_color_scene.py": "ff6c856bea71d2f2cd4d3916a3a61728c353af3b020f8d9b0d9fd213dbac102e",
+    "render_color.py": "be03074bcdeb4433367c414534788905b2d857ffb84ed6105dcc6b11fbfb1504",
+    "README.md": "a3773330256623eedc115dab65a50b37f95e3d1f55fb274c9e31b24a87e5fa77",
+    "CHECKSUM-SCOPE.md": "fdc281ec287a42a0f6de55fdba9a4e439331617b574ecbfb28e78ac37386abf6",
+    "COLOR-ASSIGNMENT-QA.json": "10906dfed17617e56eef46f61166aa3e4fb10a94679d2581b7598945a612fe9c",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "281cf93d15523895e4df3cc9d0a0910088f33aada9738c2c6a392794a9881aba",
+    "SCENE-QA.json": "561918902506767f392422299c6bf4ebc2055a7a8bb466c4ad6ee95743813d76",
+    "SHOULDER-WITHDRAWAL-SCENE-QA.json": "18dc447f96779581e275b637d82f673778f2dac7b23d62c05ee91f0dc6554ce3",
+    "SHOULDER-WITHDRAWAL-SOURCE-QA.json": "1ed0d711ddaf8aa0e0b3f987a74c93093dcd54bcc2da54058909cda4778f887e",
+    "COLOR-SOURCE-REGISTER.json": "1ed0d711ddaf8aa0e0b3f987a74c93093dcd54bcc2da54058909cda4778f887e"
+  }
+}

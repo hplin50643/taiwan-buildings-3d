@@ -1,0 +1,37 @@
+{
+  "status": "PASS_BOUNDED_EXISTING_FACE_COLOR_UPDATE",
+  "reviewer": "local implementation and final source/render inspection",
+  "inspected": [
+    "Original 3930-face STL and full original build code",
+    "Official front and aerial photographs plus report exterior front/side page",
+    "Final ten rendered views including entry/screen/roof details"
+  ],
+  "mesh_sha256": "91f8039a0fcaece53c1441e0d14143b455b4d67d8ac908e3e10832e59a386e94",
+  "checks": {
+    "original_geometry_unchanged": true,
+    "inverse_z90_classification_only": true,
+    "front_graybeige_spandrels_and_cream_crown": true,
+    "screen_actual_recesses_dark_frames_light": true,
+    "existing_roof_gray_supported_by_aerial": true,
+    "unseen_back_and_roofblock_backs_neutral": true,
+    "whole_plane_masks_avoid_diagonal_fake_color_boundaries": true,
+    "no_photo_textures_or_new_equipment": true,
+    "ten_view_visual_review": true
+  },
+  "limitations": [
+    "Original long triangles cross real upper/lower paint boundaries on shoulders and corner surfaces; full-plane gray/light-gray fallback is an approximation, not exact surface survey.",
+    "No additional geometry, painted grid, lettering, equipment or windows.",
+    "Eight appearance labels are not a tested four-filament slicer project.",
+    "Undated photographs, not 2026 current as-built survey."
+  ],
+  "source_GO_sha256": "de1d2378b3afe2153a34fb18dda9d397dd2582847cb91a5fcee31fd22e6b5201",
+  "independent_face_review_sha256": "11ec4c324eaaa19381d2c54f361055a959769627e4bbb3e7b6c04a9b03824aff",
+  "final_artifact_hashes": {
+    "README.md": "1703ebac17ec6b509dae4c3464358c68eaf141a82183ee4cd1dd105caa378bdd",
+    "color-mesh.npz": "91f8039a0fcaece53c1441e0d14143b455b4d67d8ac908e3e10832e59a386e94",
+    "colorize_model.py": "39e951bef34f6195ded73060edb2e97738a30d7da586d9f252b29f4e26e314b7",
+    "appearance.3mf": "29c68ba824eb4b75e354c54eb7bfa246ec8b07ed86f1ea6831f06eefe8d1d318",
+    "scene.blend": "da3351d59b3a165cd0da1c27fb9b82d036f4f4b88a6e180bbc32bf1e58074f5e"
+  },
+  "parent_final_review": "Pending separate parent review before freeze."
+}
