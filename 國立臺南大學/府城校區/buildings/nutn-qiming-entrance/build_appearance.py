@@ -16,6 +16,7 @@ def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Three official legacy photographs support visible original entrance-end components, not full hall.
 palette=[('Unknown rear roof caps and cropped surfaces neutral','#AAA79F',.86),('Observed independent brick tower front and left','#AB5947',.87),('Observed cream hall and original portal components','#CDC7AF',.85),('Opaque mixed original entry and tower window backs','#526361',.65),('Original coarse horizontal entry bars dark','#5A554A',.82)]
+palette.append(('Approximate red brown entrance stair finish','#9E6958',.88))
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
@@ -119,9 +120,22 @@ for p in mesh.polygons:
  if reason:
   p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'basis':'Complete original component boundary with every triangle vertex checked. Hidden or opposite extent is continuity inference, not directly photograph-confirmed.'}
 
+
+# Whole original entrance stair treads/front risers, no base/ramp/skirts.
+continuation_baseline=list(indices)
+reveal_domains=[[969, 971], [970, 972], [980, 982], [981, 983], [993, 995], [994, 996], [1007, 1010], [1008, 1011]]
+reveal_changed=[969, 970, 971, 972, 980, 981, 982, 983, 993, 994, 995, 996, 1007, 1008, 1010, 1011]
+for fi in reveal_changed:
+ assert indices[fi]==0
+ face=mesh.polygons[fi]
+ assert face.normal.z>.999 or face.normal.y<-.999
+ for vi in face.vertices:
+  q=mesh.vertices[vi].co
+  assert -15.0001<=q.x<=45.0001 and -41.2501<=q.y<=-32.7499 and 2.9999<=q.z<=5.9001
+ face.material_index=5;indices[fi]=5
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Original geometry and material values preserved; qualified whole-component continuity; artificial rear cuts and unresolved surfaces neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-component-continuity'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-entry-stair'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -153,7 +167,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-component-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original partial entrance-end hall geometry retained, not complete auditorium','Official legacy photos017,018,035 freshly viewed. Same original brick tower vertical exterior walls and cream low hall opposite side, eave returns, portal canopy edges and underside, floor edges and solid straight/curved balcony parapet boundaries extend the existing material families. All triangle vertices tested on original boundaries. Opposite and hidden surfaces inferred, not individually photo-confirmed. Existing colored faces, material RGBA and roughness preserved. Artificial low rear truncations y31.5/y41/y43.5, broad roofs, tower coping, clerestory, uncertain window reveals, upper gallery posts, stairs and base remain unchanged neutral. No new windows, glass, lettering, seams or geometry. Photos have unknown capture dates; no2026-current-condition claim. Original model and print limitations remain','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-entry-stair','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'reveal_complete_domains':reveal_domains,'reveal_changed_faces':reveal_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Original partial entrance-end hall geometry retained, not complete auditorium','Official legacy photos017,018,035 freshly viewed. Same original brick tower vertical exterior walls and cream low hall opposite side, eave returns, portal canopy edges and underside, floor edges and solid straight/curved balcony parapet boundaries extend the existing material families. All triangle vertices tested on original boundaries. Opposite and hidden surfaces inferred, not individually photo-confirmed. Existing colored faces, material RGBA and roughness preserved. Artificial low rear truncations y31.5/y41/y43.5, broad roofs, tower coping, clerestory, uncertain window reveals, upper gallery posts, stairs and base remain unchanged neutral. No new windows, glass, lettering, seams or geometry. Photos have unknown capture dates; no2026-current-condition claim. Original model and print limitations remain','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-220,-270,155),(0,0,43),215),'rear':((220,270,155),(0,0,43),215),'elevation':((0,-350,43),(0,0,43),215),'source-angle':((-240,-230,110),(0,0,43),215),'left':((-350,0,130),(0,0,43),215),'right':((350,0,130),(0,0,43),215),'top':((0,0,380),(0,0,43),215)}
 out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
