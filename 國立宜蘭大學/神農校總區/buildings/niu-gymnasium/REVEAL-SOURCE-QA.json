@@ -1,0 +1,186 @@
+{
+  "status": "SOURCE_SCOPE_APPROVED_PENDING_FINAL_PRODUCT_QA",
+  "building_prefix": "國立宜蘭大學/神農校總區/buildings/niu-gymnasium/",
+  "action": "Complete four original highest field-facing window sill/head finite domains:8unknown0 faces to existing gray-white1, retaining8already1. No pink-band, roof, undercroft or facade-wall extension.",
+  "complete_domains": [
+    {
+      "faces": [
+        1450,
+        1451,
+        1452,
+        1453
+      ],
+      "count": 4,
+      "min": [
+        -49.47058868408203,
+        -60.099998474121094,
+        50.0
+      ],
+      "max": [
+        -45.51764678955078,
+        -57.099998474121094,
+        50.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "materials": [
+        0,
+        1
+      ],
+      "original_material_by_face": {
+        "1450": 1,
+        "1451": 0,
+        "1452": 0,
+        "1453": 1
+      },
+      "changed_faces": [
+        1451,
+        1452
+      ]
+    },
+    {
+      "faces": [
+        1460,
+        1461,
+        1462,
+        1463
+      ],
+      "count": 4,
+      "min": [
+        -49.47058868408203,
+        -60.099998474121094,
+        55.20000076293945
+      ],
+      "max": [
+        -45.51764678955078,
+        -57.099998474121094,
+        55.20000076293945
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "materials": [
+        0,
+        1
+      ],
+      "original_material_by_face": {
+        "1460": 1,
+        "1461": 0,
+        "1462": 0,
+        "1463": 1
+      },
+      "changed_faces": [
+        1461,
+        1462
+      ]
+    },
+    {
+      "faces": [
+        1476,
+        1477,
+        1478,
+        1479
+      ],
+      "count": 4,
+      "min": [
+        -28.435293197631836,
+        -60.099998474121094,
+        50.0
+      ],
+      "max": [
+        -23.776470184326172,
+        -57.099998474121094,
+        50.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "materials": [
+        0,
+        1
+      ],
+      "original_material_by_face": {
+        "1476": 1,
+        "1477": 1,
+        "1478": 0,
+        "1479": 0
+      },
+      "changed_faces": [
+        1478,
+        1479
+      ]
+    },
+    {
+      "faces": [
+        1484,
+        1485,
+        1486,
+        1487
+      ],
+      "count": 4,
+      "min": [
+        -28.435293197631836,
+        -60.099998474121094,
+        55.20000076293945
+      ],
+      "max": [
+        -23.776470184326172,
+        -57.099998474121094,
+        55.20000076293945
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "materials": [
+        0,
+        1
+      ],
+      "original_material_by_face": {
+        "1484": 1,
+        "1485": 1,
+        "1486": 0,
+        "1487": 0
+      },
+      "changed_faces": [
+        1486,
+        1487
+      ]
+    }
+  ],
+  "changed_faces": [
+    1451,
+    1452,
+    1461,
+    1462,
+    1478,
+    1479,
+    1486,
+    1487
+  ],
+  "source_public_page": "https://lic.niu.edu.tw/var/file/10/1010/img/8/211903019.pdf",
+  "source_date_caution": "Photo capture dates unknown; original1999opening andPDF metadata not photographic date. Not2026currentcondition.",
+  "observed": "Printed159 field-side top window row and projecting piers carry gray-white tile family; pink horizontal bands separate storeys. Printed161 shows other entry tile/recess families but not direct evidence of these exact field-side top sill/head pixels. Printed160 interiors not used to paint exterior.",
+  "source_pages": [
+    15,
+    16,
+    17
+  ],
+  "support_method": "Entire projected triangle contained in original window-cut intersected with host-wall/white-pier union, not centroid selection; tolerance0.00001mm.",
+  "limits": [
+    "Same opening/gray-white pier family continuity inference; small horizontal head/sill surface not individually color-calibrated or every triangle directly visible.",
+    "Only z50 and55.2 domains: nearest original pink bands48.5..49.9 and58.2..59.6 do not intersect. Other mixed0/1/2 domains untouched.",
+    "Original window arrangement and intersecting pier geometry remain approximate; no new windows, tile seams, bands, pixels or geometry.",
+    "All six original palette values,2822vertices/5684triangles and other5676indices retained; original printability and unsupported-feature limitations remain.",
+    "Photograph PDF and private review metadata kept internal, public QA only public artifact bindings and source URL."
+  ],
+  "private_evidence_distributed": false
+}

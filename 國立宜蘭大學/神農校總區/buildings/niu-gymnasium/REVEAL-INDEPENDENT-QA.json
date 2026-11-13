@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "scope": "Limited top-window/pier horizontal reveal material-family extension, not engineering certification",
+  "triangles": 5684,
+  "vertices": 2822,
+  "changed_faces": [
+    1451,
+    1452,
+    1461,
+    1462,
+    1478,
+    1479,
+    1486,
+    1487
+  ],
+  "complete_domains": [
+    [
+      1450,
+      1451,
+      1452,
+      1453
+    ],
+    [
+      1460,
+      1461,
+      1462,
+      1463
+    ],
+    [
+      1476,
+      1477,
+      1478,
+      1479
+    ],
+    [
+      1484,
+      1485,
+      1486,
+      1487
+    ]
+  ],
+  "transition": [
+    0,
+    1
+  ],
+  "checks": {
+    "original_geometry_exact": true,
+    "other5676_material_indices_unchanged": true,
+    "all6_palette_entries_unchanged": true,
+    "49_original_files_unchanged": true,
+    "62_original_checksum_entries_at_pinned_public_repository_verified": true,
+    "isolated_STL_and_OBJ_byte_exact": true,
+    "isolated_3MF_members_and_material_JSON_exact": true,
+    "saved_scene_independently_reopened": true,
+    "camera_lights_transforms_render_parameters_unchanged": true,
+    "7_original900x800_views_viewed": true,
+    "native_camera_definitions_unchanged": true
+  },
+  "visual_findings": "Seven standard rendered views inspected, including source-angle at native resolution; no apparent geometry or framing regression. Change is confined to eight previously neutral triangles in four complete top-window horizontal reveal domains. White projecting piers and pink bands remain distinct; roof, undercrofts and unresolved mixed walls are unchanged. The visible difference is small.",
+  "public_source_urls": [
+    "https://lic.niu.edu.tw/var/file/10/1010/img/8/211903019.pdf"
+  ],
+  "limitations": [
+    "Same opening/gray-white pier family continuity inference; small horizontal head/sill surface not individually color-calibrated or every triangle directly visible.",
+    "Only z50 and55.2 domains: nearest original pink bands48.5..49.9 and58.2..59.6 do not intersect. Other mixed0/1/2 domains untouched.",
+    "Original window arrangement and intersecting pier geometry remain approximate; no new windows, tile seams, bands, pixels or geometry.",
+    "All six original palette values,2822vertices/5684triangles and other5676indices retained; original printability and unsupported-feature limitations remain.",
+    "Photograph PDF and private review metadata kept internal, public QA only public artifact bindings and source URL."
+  ],
+  "file_sha256": {
+    "build_model.py": "6753d1f72de8c35356e2d7f50b5b3225db3ceb1f783ec0e1c8c54827742ac429",
+    "build_appearance.py": "eb4e6b9f6a8acbcae51384ebabd48e4586c098ff4f3cfa8e9dcf641e182bd541",
+    "appearance-materials.json": "49b51870232a6077a62fbfa7c862320062bcff7bf69b79a2d7b95ba6a6b55514",
+    "appearance.3mf": "2c1cddf2d7e8ade0ff4b91b32362f84a6e55a39ec2cc6af2ff41f8a1a336f0a6",
+    "appearance.blend": "f88b32a9e87ad5f1aa9e47d4d2c04edb4d65eaf392f7558da4cee676ee35ac0c",
+    "scene.blend": "0beaeee35dd0466064fc2db09f6f70c94b3655b00b155df3e5f2e9d980ca446f",
+    "model.stl": "fc4b9a6c3f70cab96370d2b903a3ebced04e8c7052e356f3ebab9da6e22c8ee3",
+    "model.obj": "5562b9705a7fa21e7016cf822625b44481d2214e2cf0d87fafa98d98de8175d6",
+    "render-cameras.json": "6a45b962ec04d5f18d1221ea395d04d0004ff163525a1a15824e4f17adb41c94",
+    "README.md": "e4350766c4b232ddb32ba2a32536bae90e0e53adef23c6a10e7b9ec47a638c66",
+    "APPEARANCE.md": "4b45144dcd3ca90a58631ff97ce30b9f92e2a2c7e4bfeaab61970a0e31b5e6f0",
+    "CHECKSUM-SCOPE.md": "20c3c547bee6d063d6e1378bc4ffbf5abfe0d4198384be50569bcf5d247b43d5",
+    "BASELINE-CHECKSUM-AUDIT.json": "56ffac7975b71d19d302984631f26d1a5934c5cd85ca87919a4f2ddfd5f06518",
+    "REVEAL-SOURCE-QA.json": "073732cad89ffe31bcf0ccac14de4add5843ab5df42d16998c7efa5cfecb09c9",
+    "REVEAL-NUMERIC-QA.json": "2d167a14478ccac64b8b7f64b48c1de3e0a2ba773080b0d2f7731be6b772fc24",
+    "validation.json": "10ec4597baf60ba004a6a3c0c62f86587f98e9af148382db2a0dc5f49ed2fbe1",
+    "thin-feature-check.json": "27f8d5c232f10dec5ebef443e4931b2c37adc9a6b58bcb5aaba487952bd57a17",
+    "layer-check.json": "651266a497b3fa98a7e9bb0448810542326ecdc2f516bf1b9e2f89885fcfd3ff",
+    "qa-summary.json": "c9ebb0215dea37b02e5f4777c29a33fcc2c83eee9585bd4adbe509886ac6c33c"
+  },
+  "image_sha256": {
+    "appearance/front.png": "a79332b9cdd0d424945d6b2a1a3e462eb14ce51e9ef4772f100c6a296d423a6a",
+    "appearance/rear.png": "7252a8440b92d6c33acfa62e49d54b459221d1395da83b2fce0e99e7246c8e1a",
+    "appearance/elevation.png": "fafc34ebcb68ae203f3d8d4e5aa94aee800c73caa67de0aee842573f905f88f3",
+    "appearance/source-angle.png": "798f5ff5fb6e75efd99d9e8a9ededa37f6345cbb43cd443bf7f022bea5a63e66",
+    "appearance/left.png": "059a54a88bf46f333383907efbddcb2839c2693ec79263df501d4371aefd8e25",
+    "appearance/right.png": "c9515e5a8885a5125a34b3b5e72d4b5a31e9fa05385bda58bd5c7984dbd170f2",
+    "appearance/top.png": "8ec8bc7bf742f875ed0530b31c4d22f6ef78ef6346402b9fd5285e6cadfa8523"
+  }
+}
