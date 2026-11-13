@@ -1,0 +1,4 @@
+# README調和後校驗範圍
+本版以指定Git提交的README為底，完整保留原文及預覽表格，尾附局部修正說明。模型、材質、圖像與原候選審核報告原bytes未改。
+原REVEAL獨審、數值審核及交付報告內README/CHECKSUM-SCOPE摘要驗證審核當時候選快照；請對應qa/readme-reconciliation/CANDIDATE-README.md及CANDIDATE-CHECKSUM-SCOPE.md，不視為新版根文件摘要。原REVEAL-FREEZE-MANIFEST與原校驗表亦僅對舊候選版本有效，原根表另存CANDIDATE-SHA256SUMS。未修改舊QA或冒稱重新簽核。
+根SHA256SUMS驗證明列當前公開檔案；README-RECONCILIATION-FREEZE-MANIFEST.json再綁定根表，均不自我循環。README-RECONCILIATION-QA.json為本版機械調和證據，公開版獨立複核另行完成。私人來源與比較證據不在本交付清單。

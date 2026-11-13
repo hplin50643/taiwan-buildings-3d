@@ -1,0 +1,186 @@
+{
+  "status": "MECHANICAL_RECONCILIATION_PASS_PENDING_INDEPENDENT_REVIEW",
+  "base_commit": "5932a56468de3af5b5368cc5c14f5751bba268b5",
+  "remote_readme_git_blob": "1ae1b7a5879719ff24070a9f61631e10ba15ddf6",
+  "remote_readme_sha256": "e2069cdf9645ae6aea1bf884025b85bbcac26c42b4ee994929d9d73f8003515f",
+  "current_readme_sha256": "71f1e748fabf2633b750adfa4f081044659fc7eb8dbbe2f746dddbc2c492da72",
+  "scope_sha256": "c3acdc0ebe353c0508ff161573226631762cba904475122939928f7ddb1d12bf",
+  "scope": "README/scope/checksum reconciliation only. Original appearance QA unchanged. No new source, visual, geometry or printability certification.",
+  "tables_exactly_preserved": true,
+  "remote_readme_full_prefix_preserved": true,
+  "original_candidate_report_bindings": {
+    "build_model.py": {
+      "verifies": "build_model.py",
+      "sha256": "378d6362c8e294ca09a8445431092d9d1686714ceb1151fcdfbed4809d38474c"
+    },
+    "build_appearance.py": {
+      "verifies": "build_appearance.py",
+      "sha256": "d5f688dd699da9d0205fb7c716b80284099e67a3da70e14144ca69b6c8f408ec"
+    },
+    "appearance-materials.json": {
+      "verifies": "appearance-materials.json",
+      "sha256": "1705fc0e819fb653ddca4d93c2da6506313c6aa78e4176b19a8d6713f07d0c48"
+    },
+    "appearance.3mf": {
+      "verifies": "appearance.3mf",
+      "sha256": "930dde198fbec81130c4641537c671ed9657f1661c033b0f763cb635223b9cbb"
+    },
+    "appearance.blend": {
+      "verifies": "appearance.blend",
+      "sha256": "e1a27bb6d249136043413e33514d3a1909b295280f0dbecf7b3c7b0c04ee964e"
+    },
+    "scene.blend": {
+      "verifies": "scene.blend",
+      "sha256": "1596703d4a37f347a7fde4874ef94f08e1deb1881ec62b5d6c4397d8c0c3860b"
+    },
+    "model.stl": {
+      "verifies": "model.stl",
+      "sha256": "425d57dd1962e3dc42394e7c395c774cd315e8191cef4119f075e557f2bea4ef"
+    },
+    "render-cameras.json": {
+      "verifies": "render-cameras.json",
+      "sha256": "1c4b30816472dce4df61b2b37fa68221789471a2aa8148a8e97b205f72a38459"
+    },
+    "README.md": {
+      "verifies": "qa/readme-reconciliation/CANDIDATE-README.md",
+      "sha256": "9bd9fbc6507422d2d57ab13316c6b150e5c808305e92df9c48f4ea7f6f44693a"
+    },
+    "APPEARANCE.md": {
+      "verifies": "APPEARANCE.md",
+      "sha256": "16bced182168dc48ac9237c9ce9227d411cd8e2328888fc2d1502aaf560ed19f"
+    },
+    "CHECKSUM-SCOPE.md": {
+      "verifies": "qa/readme-reconciliation/CANDIDATE-CHECKSUM-SCOPE.md",
+      "sha256": "a923566cc266c93beeddf52a52750df5be0fefc7713ce5715da0b4ee19e22498"
+    },
+    "BASELINE-CHECKSUM-AUDIT.json": {
+      "verifies": "BASELINE-CHECKSUM-AUDIT.json",
+      "sha256": "0694afe092c17db926e3ae02f0a221da7c3d6f8f0db00d8fc6c5cbc0c1d324f1"
+    },
+    "REVEAL-SOURCE-QA.json": {
+      "verifies": "REVEAL-SOURCE-QA.json",
+      "sha256": "711ba8f67141ec76ddce0aa033cfed2265298696e6ebf4de228cbccf0e0aca7e"
+    },
+    "REVEAL-NUMERIC-QA.json": {
+      "verifies": "REVEAL-NUMERIC-QA.json",
+      "sha256": "139d51b9410a4fbf0688641e8e0448cc380ad3449cf6a9f853f893eada735d6b"
+    },
+    "validation.json": {
+      "verifies": "validation.json",
+      "sha256": "cfa46073b5854b3551d1e042230d6076b8e20c93f90962d9016fd16b9ed723be"
+    },
+    "thin-feature-check.json": {
+      "verifies": "thin-feature-check.json",
+      "sha256": "9388a17db28eac0d8d8ff35a295bcf0ebac6f6a2d9b54115e1e21baaf01dad45"
+    },
+    "contour-validity-check.json": {
+      "verifies": "contour-validity-check.json",
+      "sha256": "de26e1a11c6ae36033f3819998983cba380617a9c03e4433d9f8cd8543bac30a"
+    },
+    "portal-ray-proof.json": {
+      "verifies": "portal-ray-proof.json",
+      "sha256": "23b97ef6a28d1f42627a34a20e4dc1b7b83db96f1301fcff02088d0909ea0fb8"
+    },
+    "appearance/front.png": {
+      "verifies": "appearance/front.png",
+      "sha256": "d0eae04c3d5b103310a00225f668833c7753706140cfbb886b129fde24bee795"
+    },
+    "appearance/rear.png": {
+      "verifies": "appearance/rear.png",
+      "sha256": "28d388ff2cb3370e66fefb831961a35600090d1c06adcc1e656f57e17e727359"
+    },
+    "appearance/elevation.png": {
+      "verifies": "appearance/elevation.png",
+      "sha256": "12ea34ebebc5b0c0d9533b48912947e1dd772b17fac7739c1c38e04d959f310b"
+    },
+    "appearance/source-angle.png": {
+      "verifies": "appearance/source-angle.png",
+      "sha256": "9eb10d2e01ccf6429f9a4736525c60dc5dd942683bb5c5e7329d18141edd892a"
+    },
+    "appearance/left.png": {
+      "verifies": "appearance/left.png",
+      "sha256": "8525dfc553812d604ba90ed1a24c864732a19962e5d3a0f4d544ab7154cfb4eb"
+    },
+    "appearance/right.png": {
+      "verifies": "appearance/right.png",
+      "sha256": "1aa278129131dfb5a53a7fe642a4ff6f87a5fee1891b422b56f4e15806a0ae96"
+    },
+    "appearance/top.png": {
+      "verifies": "appearance/top.png",
+      "sha256": "b94ac0bb19a940b2539f42a8aa1256c8bb8595c8faf3e3bfd8283d1966a5523d"
+    }
+  },
+  "unchanged_candidate_files": [
+    "REVEAL-SOURCE-QA.json",
+    "REVEAL-INDEPENDENT-QA.json",
+    "contour-validity-check.json",
+    "appearance-freeze.json",
+    "render-cameras.json",
+    "validate_model.py",
+    "sources.json",
+    "REVEAL-NUMERIC-QA.json",
+    "REVEAL-FREEZE-MANIFEST.json",
+    "APPEARANCE.md",
+    "render_preview.py",
+    "build_appearance.py",
+    "README.zh-TW.md",
+    "BASELINE-CHECKSUM-AUDIT.json",
+    "check_thin_features.py",
+    "REVEAL-DELIVERY-QA.json",
+    "requirements.txt",
+    "check_portal_geometry.py",
+    "build_model.py",
+    "appearance-materials.json",
+    "thin-feature-check.json",
+    "check_contour_validity.py",
+    "appearance.blend",
+    "portal-ray-proof.json",
+    "appearance.3mf",
+    "validation.json",
+    "scene.blend",
+    "model.stl",
+    "appearance-review/color-visual-review.json",
+    "appearance-review/final-review-binding.json",
+    "appearance-review/output-geometry-review.json",
+    "appearance-review/clean-rebuild-equality.json",
+    "appearance-review/clean-material-region-check.json",
+    "appearance-review/preservation-and-readme.json",
+    "appearance-review/material-region-check.json",
+    "appearance-review/clean-geometry-review.json",
+    "appearance-review/geometry-visual-review.json",
+    "appearance-review/png-privacy.json",
+    "appearance-review-v2/source-register.json",
+    "appearance-review-v2/comparison-camera-records.json",
+    "appearance-review-v2/original-front.png",
+    "appearance-review-v2/model-verification.json",
+    "appearance-review-v2/original-rear.png",
+    "appearance-review-v2/clean-rebuild-equality.json",
+    "appearance-review-v2/color-continuity-review.json",
+    "appearance-review-v2/asset-privacy-review.json",
+    "appearance-review-v2/material-value-verification.json",
+    "appearance-review-v2/camera-consistency.json",
+    "appearance-review-v2/boundary-continuity-audit.json",
+    "appearance/front.png",
+    "appearance/elevation.png",
+    "appearance/left.png",
+    "appearance/right.png",
+    "appearance/top.png",
+    "appearance/rear.png",
+    "appearance/source-angle.png",
+    "previews/front.png",
+    "previews/elevation.png",
+    "previews/top.png",
+    "previews/side.png",
+    "previews/entry_close.png",
+    "previews/rear.png"
+  ],
+  "public_file_sha256": {
+    "README.md": "71f1e748fabf2633b750adfa4f081044659fc7eb8dbbe2f746dddbc2c492da72",
+    "CHECKSUM-SCOPE.md": "c3acdc0ebe353c0508ff161573226631762cba904475122939928f7ddb1d12bf",
+    "REVEAL-INDEPENDENT-QA.json": "d3f6a5262d6e30cbca631c8bb52abad4f706b6810305af7eefab4ce7b4e529db",
+    "qa/readme-reconciliation/CANDIDATE-README.md": "9bd9fbc6507422d2d57ab13316c6b150e5c808305e92df9c48f4ea7f6f44693a",
+    "qa/readme-reconciliation/CANDIDATE-CHECKSUM-SCOPE.md": "a923566cc266c93beeddf52a52750df5be0fefc7713ce5715da0b4ee19e22498",
+    "qa/readme-reconciliation/CANDIDATE-SHA256SUMS": "3211152e1e174122abf1999835df4d75592a119980e6f3df30173f5b02be9b7e",
+    "qa/readme-reconciliation/REMOTE-README.md": "e2069cdf9645ae6aea1bf884025b85bbcac26c42b4ee994929d9d73f8003515f"
+  }
+}

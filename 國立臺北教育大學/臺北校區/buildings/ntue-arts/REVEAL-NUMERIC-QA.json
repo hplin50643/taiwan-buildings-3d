@@ -1,0 +1,229 @@
+{
+  "status": "PASS",
+  "scope": "Limited appearance identity, not full engineering certification",
+  "triangles": 5092,
+  "vertices": 2540,
+  "complete_domains": 8,
+  "whole_domain_faces": 2016,
+  "changed_faces": [
+    579,
+    580,
+    581,
+    582,
+    598,
+    599,
+    600,
+    601,
+    780,
+    781,
+    852,
+    854,
+    873,
+    874,
+    875,
+    876,
+    892,
+    893,
+    894,
+    895,
+    1074,
+    1075,
+    1146,
+    1148,
+    1167,
+    1168,
+    1169,
+    1170,
+    1186,
+    1187,
+    1188,
+    1189,
+    1368,
+    1369,
+    1440,
+    1442,
+    1461,
+    1462,
+    1463,
+    1464,
+    1480,
+    1481,
+    1482,
+    1483,
+    1662,
+    1663,
+    1734,
+    1736
+  ],
+  "old_material": 0,
+  "new_material": 2,
+  "all_five_palette_entries_preserved": true,
+  "other_5044_material_indices_unchanged": true,
+  "native_views_exact": {
+    "front": [
+      [
+        -220,
+        -300,
+        165
+      ],
+      [
+        0,
+        0,
+        40
+      ],
+      225
+    ],
+    "rear": [
+      [
+        220,
+        300,
+        165
+      ],
+      [
+        0,
+        0,
+        40
+      ],
+      225
+    ],
+    "elevation": [
+      [
+        0,
+        -350,
+        40
+      ],
+      [
+        0,
+        0,
+        40
+      ],
+      225
+    ],
+    "source-angle": [
+      [
+        180,
+        -300,
+        110
+      ],
+      [
+        0,
+        0,
+        40
+      ],
+      225
+    ],
+    "left": [
+      [
+        -350,
+        0,
+        165
+      ],
+      [
+        0,
+        0,
+        40
+      ],
+      225
+    ],
+    "right": [
+      [
+        350,
+        0,
+        165
+      ],
+      [
+        0,
+        0,
+        40
+      ],
+      225
+    ],
+    "top": [
+      [
+        0,
+        0,
+        380
+      ],
+      [
+        0,
+        0,
+        40
+      ],
+      225
+    ]
+  },
+  "original_files_unchanged": [
+    "contour-validity-check.json",
+    "appearance-freeze.json",
+    "render-cameras.json",
+    "validate_model.py",
+    "sources.json",
+    "render_preview.py",
+    "README.zh-TW.md",
+    "check_thin_features.py",
+    "requirements.txt",
+    "check_portal_geometry.py",
+    "build_model.py",
+    "thin-feature-check.json",
+    "check_contour_validity.py",
+    "portal-ray-proof.json",
+    "validation.json",
+    "scene.blend",
+    "model.stl",
+    "appearance-review/color-visual-review.json",
+    "appearance-review/final-review-binding.json",
+    "appearance-review/output-geometry-review.json",
+    "appearance-review/clean-rebuild-equality.json",
+    "appearance-review/clean-material-region-check.json",
+    "appearance-review/preservation-and-readme.json",
+    "appearance-review/material-region-check.json",
+    "appearance-review/clean-geometry-review.json",
+    "appearance-review/geometry-visual-review.json",
+    "appearance-review/png-privacy.json",
+    "appearance-review-v2/source-register.json",
+    "appearance-review-v2/comparison-camera-records.json",
+    "appearance-review-v2/original-front.png",
+    "appearance-review-v2/model-verification.json",
+    "appearance-review-v2/original-rear.png",
+    "appearance-review-v2/clean-rebuild-equality.json",
+    "appearance-review-v2/color-continuity-review.json",
+    "appearance-review-v2/asset-privacy-review.json",
+    "appearance-review-v2/material-value-verification.json",
+    "appearance-review-v2/camera-consistency.json",
+    "appearance-review-v2/boundary-continuity-audit.json",
+    "previews/front.png",
+    "previews/elevation.png",
+    "previews/top.png",
+    "previews/side.png",
+    "previews/entry_close.png",
+    "previews/rear.png"
+  ],
+  "isolated_rebuild": "STL byte-identical; original baseline has no OBJ, isolated OBJ not claimed baseline-equal; all3MF members/material JSON exact; original native geometry script and pinned numeric geometry dependencies retained",
+  "baseline_checksum_entries_verified": [
+    57
+  ],
+  "file_sha256": {
+    "render-cameras.json": "1c4b30816472dce4df61b2b37fa68221789471a2aa8148a8e97b205f72a38459",
+    "build_model.py": "378d6362c8e294ca09a8445431092d9d1686714ceb1151fcdfbed4809d38474c",
+    "build_appearance.py": "d5f688dd699da9d0205fb7c716b80284099e67a3da70e14144ca69b6c8f408ec",
+    "model.stl": "425d57dd1962e3dc42394e7c395c774cd315e8191cef4119f075e557f2bea4ef",
+    "scene.blend": "1596703d4a37f347a7fde4874ef94f08e1deb1881ec62b5d6c4397d8c0c3860b",
+    "appearance.blend": "e1a27bb6d249136043413e33514d3a1909b295280f0dbecf7b3c7b0c04ee964e",
+    "appearance.3mf": "930dde198fbec81130c4641537c671ed9657f1661c033b0f763cb635223b9cbb",
+    "appearance-materials.json": "1705fc0e819fb653ddca4d93c2da6506313c6aa78e4176b19a8d6713f07d0c48",
+    "REVEAL-SOURCE-QA.json": "711ba8f67141ec76ddce0aa033cfed2265298696e6ebf4de228cbccf0e0aca7e",
+    "BASELINE-CHECKSUM-AUDIT.json": "0694afe092c17db926e3ae02f0a221da7c3d6f8f0db00d8fc6c5cbc0c1d324f1",
+    "CHECKSUM-SCOPE.md": "a923566cc266c93beeddf52a52750df5be0fefc7713ce5715da0b4ee19e22498",
+    "APPEARANCE.md": "16bced182168dc48ac9237c9ce9227d411cd8e2328888fc2d1502aaf560ed19f",
+    "README.md": "9bd9fbc6507422d2d57ab13316c6b150e5c808305e92df9c48f4ea7f6f44693a"
+  },
+  "image_sha256": {
+    "appearance/front.png": "d0eae04c3d5b103310a00225f668833c7753706140cfbb886b129fde24bee795",
+    "appearance/rear.png": "28d388ff2cb3370e66fefb831961a35600090d1c06adcc1e656f57e17e727359",
+    "appearance/elevation.png": "12ea34ebebc5b0c0d9533b48912947e1dd772b17fac7739c1c38e04d959f310b",
+    "appearance/source-angle.png": "9eb10d2e01ccf6429f9a4736525c60dc5dd942683bb5c5e7329d18141edd892a",
+    "appearance/left.png": "8525dfc553812d604ba90ed1a24c864732a19962e5d3a0f4d544ab7154cfb4eb",
+    "appearance/right.png": "1aa278129131dfb5a53a7fe642a4ff6f87a5fee1891b422b56f4e15806a0ae96",
+    "appearance/top.png": "b94ac0bb19a940b2539f42a8aa1256c8bb8595c8faf3e3bfd8283d1966a5523d"
+  }
+}
