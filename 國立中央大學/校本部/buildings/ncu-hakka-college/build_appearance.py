@@ -61,6 +61,17 @@ for p in mesh.polygons:
  if 20.99<x<49.01 and y<-46.3 and 3<z<5.11:i=5
  if z<=3:i=0
  p.material_index=i;indices.append(i)
+# Complete20-face original low-return gallery-floor domain, not pitched roof.
+continuation_baseline=list(indices)
+gallery_domain=[1762, 1763, 1766, 1767, 1770, 1771, 1772, 1782, 1783, 1784, 1788, 1789, 1790, 1791, 1796, 1797, 1798, 1799, 1804, 1805]
+gallery_changed=[1762, 1763, 1766, 1767]
+assert all(indices[i] in (0,4) for i in gallery_domain)
+assert [i for i in gallery_domain if indices[i]==4]==gallery_changed
+for i in gallery_domain:
+ face=mesh.polygons[i]
+ assert face.normal.z>.999
+ assert all(abs(mesh.vertices[j].co.z-29)<.0001 for j in face.vertices)
+ face.material_index=0;indices[i]=0
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
 scene=bpy.context.scene;scene['appearance_revision']='color-v1'
@@ -91,7 +102,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown rear large flat roofs neutral; no invented brick texture or extra gable ornament','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-gallery-floor-withdrawal','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'gallery_complete_domain':gallery_domain,'gallery_changed_faces':gallery_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown rear large flat roofs neutral; no invented brick texture or extra gable ornament','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-195,-260,170),(0,0,56.5),210),'rear':((195,260,170),(0,0,56.5),210),'elevation':((0,-300,56.5),(0,0,56.5),210),'source-angle':((125,-300,90),(0,0,56.5),210),'top':((0,0,330),(0,0,0),210)}
 out=R/'appearance';out.mkdir(exist_ok=True)

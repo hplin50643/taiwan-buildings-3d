@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "reviewer": "independent cycu_source_review",
+  "scope": "Conservative material attribution withdrawal only; not full engineering or printability certification",
+  "triangles": 2422,
+  "complete_domain_faces": [
+    1762,
+    1763,
+    1766,
+    1767,
+    1770,
+    1771,
+    1772,
+    1782,
+    1783,
+    1784,
+    1788,
+    1789,
+    1790,
+    1791,
+    1796,
+    1797,
+    1798,
+    1799,
+    1804,
+    1805
+  ],
+  "complete_domains": 1,
+  "whole_domain_faces_count": 20,
+  "changed_faces": [
+    1762,
+    1763,
+    1766,
+    1767
+  ],
+  "unchanged_domain_faces_count": 16,
+  "material_transition": [
+    4,
+    0
+  ],
+  "palette_entries": 6,
+  "checks": {
+    "source_second_review_GO": true,
+    "exact_43_original_blobs": true,
+    "complete_20_face_domain_BFS": true,
+    "42_baseline_checksums_preserved_exact_paths": true,
+    "geometry_and_other_2418_indices_exact": true,
+    "original_six_materials_exact": true,
+    "original_31_files_exact": true,
+    "isolated_stl_obj_byte_exact": true,
+    "isolated_all_3mf_members_and_material_json_exact": true,
+    "saved_scene_independently_reopened": true,
+    "camera_lights_transforms_render_contract_exact": true,
+    "nested_source_numeric_and_review_exact_path_hashes_verified": true,
+    "five_original_views_900x800_32samples": true
+  },
+  "actual_visual_review": {
+    "native_views": "All five inspected in native-contact; source-angle opened separately at original resolution. Full model framed, no apparent missing geometry or framing regression.",
+    "private_pair": "Both1200x900 gallery-before/after actually opened. Narrow horizontal gallery-cut strip loses inconsistent roof-color triangles; large true sloped pavilion roof in foreground unchanged. Difference is local, not whole facade redesign.",
+    "source": "Official HSB courtyard image and original private gallery inspection actually viewed. Original Boolean horizontal cut boundary can intersect pavilion; no assertion of as-built full gallery floor or actual finish. Withdrawal to unknown is supported, new white-floor assertion is not."
+  },
+  "limitations": [
+    "Withdrawal of unsupported pitched-roof identity, not measured floor colour.",
+    "Complete finite20-face plane retained; no triangle splitting or geometry edits.",
+    "Original gallery depth/roof intersections/pavilion spacing remain approximations.",
+    "Contractor oldproject URL returned404 this pass, not freshly viewed.",
+    "Original six palette values and other2418 indices remain unchanged; inherited engineering exceptions preserved.",
+    "Original Boolean gallery/pavilion intersection retained; no geometric repair or surveyed correspondence claimed.",
+    "All historical engineering limitations remain."
+  ],
+  "source_snapshot_policy": "Preserve pending source snapshots and original QA. Current final review uses exact work-relative path bindings below, not basename substitution.",
+  "file_sha256": {
+    "build_model.py": "e22c9572c8b4387d47f46d177bd2e7417bef75d0085071c54caba8d4ff21b3a0",
+    "build_appearance.py": "a7e379b9ddc7bd0ac91a7907c30bd40dc38d2a995b7cb76118fad1d8121dfb9c",
+    "appearance-materials.json": "405b9bfa8ae729a66e48b2658f684f05dd5420addcef06a5e97f071a7a5e2f91",
+    "sources.json": "7210ee239a1c5191286c1ebc8d9adb26d2d02fc70834b4e12c4707343a00b6d9",
+    "appearance.3mf": "4d4cab273d56c733a0cf1ed4342c847009117d8b919923390c019892dd568ca0",
+    "appearance.blend": "6d489527c08ab2e850c175e0cafb0b6759fb35d80773917124d8ec6d1450ad47",
+    "scene.blend": "c825c4e778fcb96bb071b04c045346b5b17898bb8f1728a56516d81cc75ac51e",
+    "model.stl": "de77c5de6a2a90030fe39b5d394687f52443217c879a86ae412a145ee7288047",
+    "model.obj": "9495fb5b209599845aed91b4c2083f0206ad3bcfde1f6e2ef31350ac2f6ffb32",
+    "README.md": "e8c2d73cefb0851dea9e6fdcae39f06b24f9c0ce25853bd8f0892fd486e8aa51",
+    "README.zh-TW.md": "16a26397c8cf0bfb7598c02b1800ea9717807229a061937d13eba1f8329ee74f",
+    "APPEARANCE.md": "1434388f45d7f59f4a8d42b1ea07ee2256f2c1491a40bf183a8f7b99ac94cd86",
+    "CHECKSUM-SCOPE.md": "3adc9e3065201fc5b4e0cef0a93651460c3cc17f04e7ed586d63847a14a65423",
+    "BASELINE-CHECKSUM-AUDIT.json": "300631fdfff6e95ea433e4f138017851814de3ea7954d83b1a159ce039706dcb",
+    "GALLERY-FLOOR-SOURCE-QA.json": "00fa3087f4002c3db130656c2440b5ec6d575f0815a815e56a87322606d777b0",
+    "GALLERY-FLOOR-NUMERIC-QA.json": "9652635aff4a1006e90671c86c68549b6d836542b8ccd531acaea62a706497ac",
+    "validation.json": "a321eda1961cedf9010d020a837cb72618ea21c9a974c226a6c663a13e62d4f3",
+    "thin-feature-check.json": "c35eb0346da54a1bb82a3d3c2512b901c726a12776a1dbe7121e4c28db882abc",
+    "layer-check.json": "1ec7599d5b2a9d6df4c9de09f8bfefad2dcaf6e00c7c56aa93306647a0752a07",
+    "contour-validity-check.json": "49dd414f09a12665add3f351b3cae15905409c8cb0a2e7cea1fc304c8b9be5e3",
+    "source-model-comparison.json": "6fff50879e4beeb13079eeb472492836ab81d84cc3f1c0ed2121e30337be943f"
+  },
+  "image_sha256": {
+    "appearance/front.png": "55d21004077044fe99b525b012aa170ba166968bed12973b3650808b8bfa87ce",
+    "appearance/rear.png": "a60223e9280fcd63f3fb20ff82485678ddc2fb6cbade5fb706264d776356d632",
+    "appearance/elevation.png": "126fd1bfc4fbb0ec6fb7ece09fb9069834a40353319019e6dd7cf0f77e5dcce0",
+    "appearance/source-angle.png": "16ece6aef1e61cf2dcdc028bbda7f31f555cead04660932a471b64b3467d227d",
+    "appearance/top.png": "aa8dea78cf59daa1533feb1102486b9fd38dcc5bb5990cb6406f7d97629d3ea8"
+  },
+  "supplementary_private_image_sha256": {
+    "private-reference/gallery-before.png": "8550d0a82584787dc4ff83a091f5d0f8d4507b93034b61921872e835ef7595b8",
+    "private-reference/gallery-after.png": "5e3aa270c98edcd9350fd22c1af6f5dae27c464070332f8f520fd93c4fceb088"
+  },
+  "private_evidence_sha256": {
+    "SOURCE-PROPOSAL.json": "b7945941f8b924d174e551e4aed5fc2517f2e0ff07de7ae286a378fbf9587106",
+    "second-source-domain-review.json": "7549fb43b899b84ac53e7fe1ed4c74f4bf31cb7f87277ba08b4789ffd43f4316",
+    "independent-numeric-review.json": "c668687eb91991b4f939a65f9c37ae97feb2ff1a26439ea10f4a17701dade665",
+    "independent-scene-review.json": "cccaace3b7e6a144740c13f55e1ba4e8e19fe7c24d4957e714111bd3df938da7",
+    "native-contact.jpg": "94e2db2314584a039d57d046f4682ddc3a306ef150c8d93927660a61581ef66f",
+    "render_private.py": "480bbb09e83777c8d3b53715d63daeab7c7a2f724e166ceff3e7c787fc4c9d51"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "scope": "Limited appearance identity, not full engineering certification",
+  "triangles": 2422,
+  "vertices": 1183,
+  "complete_domains": 1,
+  "whole_domain_faces": 20,
+  "changed_faces": [
+    1762,
+    1763,
+    1766,
+    1767
+  ],
+  "old_material": 4,
+  "new_material": 0,
+  "all_six_palette_entries_preserved": true,
+  "other_2418_material_indices_unchanged": true,
+  "native_views_exact": {
+    "front": [
+      [
+        -195,
+        -260,
+        170
+      ],
+      [
+        0,
+        0,
+        56.5
+      ],
+      210
+    ],
+    "rear": [
+      [
+        195,
+        260,
+        170
+      ],
+      [
+        0,
+        0,
+        56.5
+      ],
+      210
+    ],
+    "elevation": [
+      [
+        0,
+        -300,
+        56.5
+      ],
+      [
+        0,
+        0,
+        56.5
+      ],
+      210
+    ],
+    "source-angle": [
+      [
+        125,
+        -300,
+        90
+      ],
+      [
+        0,
+        0,
+        56.5
+      ],
+      210
+    ],
+    "top": [
+      [
+        0,
+        0,
+        330
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      210
+    ]
+  },
+  "original_files_unchanged": [
+    "contour-validity-check.json",
+    "appearance-freeze.json",
+    "validate_model.py",
+    "sources.json",
+    "render_preview.py",
+    "README.zh-TW.md",
+    "check_thin_features.py",
+    "requirements.txt",
+    "build_model.py",
+    "thin-feature-check.json",
+    "check_contour_validity.py",
+    "check_layers.py",
+    "model-info.json",
+    "validation.json",
+    "scene.blend",
+    "layer-check.json",
+    "model.stl",
+    "source-model-comparison.json",
+    "model.obj",
+    "appearance-review/color-visual-review.json",
+    "appearance-review/final-review-binding.json",
+    "appearance-review/output-geometry-review.json",
+    "appearance-review/clean-rebuild-equality.json",
+    "appearance-review/preservation-and-readme.json",
+    "appearance-review/material-region-check.json",
+    "appearance-review/clean-geometry-review.json",
+    "appearance-review/geometry-visual-review.json",
+    "appearance-review/png-privacy.json",
+    "previews/front.png",
+    "previews/elevation.png",
+    "previews/rear.png"
+  ],
+  "isolated_rebuild": "STL and OBJ byte-identical, all3MF members/material JSON exact; original native geometry script and pinned numeric geometry dependencies retained",
+  "baseline_checksum_entries_verified": [
+    42
+  ],
+  "file_sha256": {
+    "build_model.py": "e22c9572c8b4387d47f46d177bd2e7417bef75d0085071c54caba8d4ff21b3a0",
+    "build_appearance.py": "a7e379b9ddc7bd0ac91a7907c30bd40dc38d2a995b7cb76118fad1d8121dfb9c",
+    "model.stl": "de77c5de6a2a90030fe39b5d394687f52443217c879a86ae412a145ee7288047",
+    "scene.blend": "c825c4e778fcb96bb071b04c045346b5b17898bb8f1728a56516d81cc75ac51e",
+    "appearance.blend": "6d489527c08ab2e850c175e0cafb0b6759fb35d80773917124d8ec6d1450ad47",
+    "appearance.3mf": "4d4cab273d56c733a0cf1ed4342c847009117d8b919923390c019892dd568ca0",
+    "appearance-materials.json": "405b9bfa8ae729a66e48b2658f684f05dd5420addcef06a5e97f071a7a5e2f91",
+    "GALLERY-FLOOR-SOURCE-QA.json": "00fa3087f4002c3db130656c2440b5ec6d575f0815a815e56a87322606d777b0",
+    "BASELINE-CHECKSUM-AUDIT.json": "300631fdfff6e95ea433e4f138017851814de3ea7954d83b1a159ce039706dcb",
+    "CHECKSUM-SCOPE.md": "3adc9e3065201fc5b4e0cef0a93651460c3cc17f04e7ed586d63847a14a65423",
+    "APPEARANCE.md": "1434388f45d7f59f4a8d42b1ea07ee2256f2c1491a40bf183a8f7b99ac94cd86",
+    "README.md": "e8c2d73cefb0851dea9e6fdcae39f06b24f9c0ce25853bd8f0892fd486e8aa51"
+  },
+  "image_sha256": {
+    "appearance/front.png": "55d21004077044fe99b525b012aa170ba166968bed12973b3650808b8bfa87ce",
+    "appearance/rear.png": "a60223e9280fcd63f3fb20ff82485678ddc2fb6cbade5fb706264d776356d632",
+    "appearance/elevation.png": "126fd1bfc4fbb0ec6fb7ece09fb9069834a40353319019e6dd7cf0f77e5dcce0",
+    "appearance/source-angle.png": "16ece6aef1e61cf2dcdc028bbda7f31f555cead04660932a471b64b3467d227d",
+    "appearance/top.png": "aa8dea78cf59daa1533feb1102486b9fd38dcc5bb5990cb6406f7d97629d3ea8"
+  }
+}

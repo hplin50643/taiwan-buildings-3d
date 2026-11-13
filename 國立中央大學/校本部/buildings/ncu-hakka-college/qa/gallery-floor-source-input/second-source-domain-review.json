@@ -1,0 +1,68 @@
+{
+  "status": "GO",
+  "scope": "Conservative withdrawal source/full-domain approval only; final QA still required",
+  "original_blob_files_verified": 43,
+  "baseline_checksum_entries_verified": {
+    "SHA256SUMS": 42
+  },
+  "baseline_checksum_exceptions": [],
+  "triangles": 2422,
+  "complete_domain_faces": [
+    1762,
+    1763,
+    1766,
+    1767,
+    1770,
+    1771,
+    1772,
+    1782,
+    1783,
+    1784,
+    1788,
+    1789,
+    1790,
+    1791,
+    1796,
+    1797,
+    1798,
+    1799,
+    1804,
+    1805
+  ],
+  "changed_faces": [
+    1762,
+    1763,
+    1766,
+    1767
+  ],
+  "unchanged_within_domain": 16,
+  "transition": [
+    4,
+    0
+  ],
+  "source_visual_review": "Actually viewed official HSB courtyard image and original private gallery inspection. Upper return gallery is distinct from foreground pitched roof family, but actual floor finish is not resolved. Inspection shows shallow horizontal strip behind the original intersecting gable. Original code cut(-35.8,3,29,3.5,57,8) creates this floor and can cut overlapping gable geometry; it is not a supported inclined roof plane. No assertion of precise as-built gallery/roof junction.",
+  "decision": "GO restore unsupported roof4 assignments on four flat original gallery-cut faces to existing unknown0; complete20-face domain becomes unknown while16 existingunknown stay unchanged. Do not recolor actual slopedroof or claim white floor.",
+  "classification_proof": "Original roof centroid box abs(x+38)<14.01,-46.01<y<-7.99,22.69<z<29.71,n.z>.2 includes the horizontal z29 domain. Original gable inclined planes vary z with x; constantz29 strip is cut boundary, not an intact slope. Shared actual construction material cannot be inferred from overlap.",
+  "limits": [
+    "Withdrawal of unsupported pitched-roof identity, not measured floor colour.",
+    "Complete finite20-face plane retained; no triangle splitting or geometry edits.",
+    "Original gallery depth/roof intersections/pavilion spacing remain approximations.",
+    "Contractor oldproject URL returned404 this pass, not freshly viewed.",
+    "Original six palette values and other2418 indices remain unchanged; inherited engineering exceptions preserved.",
+    "The gallery cut intersects the original pavilion assembly. Neutral withdrawal does not correct approximate union/junction geometry.",
+    "Source image date unknown, not fresh condition certification."
+  ],
+  "file_sha256": {
+    "SOURCE-PROPOSAL.json": "b7945941f8b924d174e551e4aed5fc2517f2e0ff07de7ae286a378fbf9587106",
+    "gallery-domain.json": "82ac3af681cec2e67b4dac21ab5a945b395a1c759df0b23017903efda45a6a23",
+    "original/appearance.3mf": "0e2fa0b21e6ef488547d0340b15028c54a1c957c690b021552307136d78fe4a6",
+    "original/appearance-materials.json": "a2b4436fe25f045336910eb6865e3829dd386aa0490a1b33739720922d5deb44",
+    "original/build_model.py": "e22c9572c8b4387d47f46d177bd2e7417bef75d0085071c54caba8d4ff21b3a0",
+    "original/build_appearance.py": "d6477fd5dd665c0ef872ebe9aecf31c5c6d3644bc932254eb6ba75c216a58d95",
+    "original/SHA256SUMS": "d8084aa0777d8e0adb90cd5fb94d875baa0cc56c5a9928fa290c8aea0ab7a0ee",
+    "private-reference/courtyard.jpg": "95b9240c48cfc82233a0849c704073bec85b995c1f23577895618e0da3cb162c",
+    "private-reference/gallery-original-inspection.png": "552f74776a3bd1d34acfbd30641fb90343a0277b525f432bbf61fd51596a3002",
+    "render_original_inspection.py": "a5be9c5a566909694d9c69b8fb97c89a1e68c52dd4611219854f37d5901bcf1b",
+    "selected.json": "b949c81902a53bc392bcad294e90b3b6d5bbd03cac8f1a092da4f4545ae5f30c"
+  }
+}

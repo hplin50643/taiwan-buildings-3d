@@ -1,0 +1,90 @@
+{
+  "status": "PENDING_INDEPENDENT_GO",
+  "building_prefix": "國立中央大學/校本部/buildings/ncu-hakka-college/",
+  "source": {
+    "url": "https://love.adm.ncu.edu.tw/NCU_counsel/NCU-barrier-free/images/HSB/1.jpg",
+    "file": "private-reference/courtyard.jpg",
+    "sha256": "95b9240c48cfc82233a0849c704073bec85b995c1f23577895618e0da3cb162c",
+    "personally_viewed": true,
+    "capture_date": "unknown",
+    "scope": "Official courtyard photo distinguishes brick low return with upper gallery from foreground pitched pavilion roofs. Actual gallery floor finish not directly resolved, no full white repaint claim."
+  },
+  "whole_domain": {
+    "faces": [
+      1762,
+      1763,
+      1766,
+      1767,
+      1770,
+      1771,
+      1772,
+      1782,
+      1783,
+      1784,
+      1788,
+      1789,
+      1790,
+      1791,
+      1796,
+      1797,
+      1798,
+      1799,
+      1804,
+      1805
+    ],
+    "count": 20,
+    "min": [
+      -37.54999923706055,
+      -25.5,
+      29.0
+    ],
+    "max": [
+      -34.04999923706055,
+      31.5,
+      29.0
+    ],
+    "normal": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "materials": [
+      0,
+      4
+    ],
+    "original_material_counts": {
+      "4": 4,
+      "0": 16
+    },
+    "changed_faces": [
+      1762,
+      1763,
+      1766,
+      1767
+    ]
+  },
+  "changed_faces": [
+    1762,
+    1763,
+    1766,
+    1767
+  ],
+  "action": "Restore four pitched-roof material4 faces to existing explicit unknown0, yielding complete20-face gallery-floor domain allunknown. Other16 faces remain0. Do not alter true pitched roofs or infer unseen floor finish.",
+  "classification_cause": "Original low-return upper gallery cut floor z29 intersects pavilion centroid classification bounding box; roof selector accepts n.z>.2 and does not require actual original inclined roof supporting plane. Four flat gallery-floor faces accidentally classified as roof4.",
+  "limits": [
+    "Withdrawal of unsupported pitched-roof identity, not measured floor colour.",
+    "Complete finite20-face plane retained; no triangle splitting or geometry edits.",
+    "Original gallery depth/roof intersections/pavilion spacing remain approximations.",
+    "Contractor oldproject URL returned404 this pass, not freshly viewed.",
+    "Original six palette values and other2418 indices remain unchanged; inherited engineering exceptions preserved."
+  ],
+  "input_hashes": {
+    "selected.json": "b949c81902a53bc392bcad294e90b3b6d5bbd03cac8f1a092da4f4545ae5f30c",
+    "baseline-checksum-audit.json": "7157e61033636c094f71bf2c27e40140bcb16270710e7bbac9c730c0acb17edc",
+    "domain-screen.json": "0b73c1367de4c2665785bb879289ccb11df329d20b07254acd13dfdd4d31c9f5",
+    "gallery-domain.json": "82ac3af681cec2e67b4dac21ab5a945b395a1c759df0b23017903efda45a6a23",
+    "original/build_model.py": "e22c9572c8b4387d47f46d177bd2e7417bef75d0085071c54caba8d4ff21b3a0",
+    "original/build_appearance.py": "d6477fd5dd665c0ef872ebe9aecf31c5c6d3644bc932254eb6ba75c216a58d95",
+    "original/appearance.3mf": "0e2fa0b21e6ef488547d0340b15028c54a1c957c690b021552307136d78fe4a6"
+  }
+}

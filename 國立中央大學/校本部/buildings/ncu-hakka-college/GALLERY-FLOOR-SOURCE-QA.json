@@ -1,0 +1,93 @@
+{
+  "status": "SOURCE_GO_PENDING_FINAL_QA_SNAPSHOT",
+  "building_prefix": "國立中央大學/校本部/buildings/ncu-hakka-college/",
+  "source": {
+    "url": "https://love.adm.ncu.edu.tw/NCU_counsel/NCU-barrier-free/images/HSB/1.jpg",
+    "file": "private-reference/courtyard.jpg",
+    "sha256": "95b9240c48cfc82233a0849c704073bec85b995c1f23577895618e0da3cb162c",
+    "personally_viewed": true,
+    "capture_date": "unknown",
+    "scope": "Official courtyard photo distinguishes brick low return with upper gallery from foreground pitched pavilion roofs. Actual gallery floor finish not directly resolved, no full white repaint claim."
+  },
+  "whole_domain": {
+    "faces": [
+      1762,
+      1763,
+      1766,
+      1767,
+      1770,
+      1771,
+      1772,
+      1782,
+      1783,
+      1784,
+      1788,
+      1789,
+      1790,
+      1791,
+      1796,
+      1797,
+      1798,
+      1799,
+      1804,
+      1805
+    ],
+    "count": 20,
+    "min": [
+      -37.54999923706055,
+      -25.5,
+      29.0
+    ],
+    "max": [
+      -34.04999923706055,
+      31.5,
+      29.0
+    ],
+    "normal": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "materials": [
+      0,
+      4
+    ],
+    "original_material_counts": {
+      "4": 4,
+      "0": 16
+    },
+    "changed_faces": [
+      1762,
+      1763,
+      1766,
+      1767
+    ]
+  },
+  "changed_faces": [
+    1762,
+    1763,
+    1766,
+    1767
+  ],
+  "action": "Restore four pitched-roof material4 faces to existing explicit unknown0, yielding complete20-face gallery-floor domain allunknown. Other16 faces remain0. Do not alter true pitched roofs or infer unseen floor finish.",
+  "limits": [
+    "Withdrawal of unsupported pitched-roof identity, not measured floor colour.",
+    "Complete finite20-face plane retained; no triangle splitting or geometry edits.",
+    "Original gallery depth/roof intersections/pavilion spacing remain approximations.",
+    "Contractor oldproject URL returned404 this pass, not freshly viewed.",
+    "Original six palette values and other2418 indices remain unchanged; inherited engineering exceptions preserved.",
+    "Original gallery cut may intersect the gable component. This is a finite Boolean surface domain, not a surveyed as-built gallery floor. Only unsupported pitched-roof identity withdrawn."
+  ],
+  "source_input_sha256": {
+    "qa/gallery-floor-source-input/selected.json": "b949c81902a53bc392bcad294e90b3b6d5bbd03cac8f1a092da4f4545ae5f30c",
+    "qa/gallery-floor-source-input/baseline-checksum-audit.json": "7157e61033636c094f71bf2c27e40140bcb16270710e7bbac9c730c0acb17edc",
+    "qa/gallery-floor-source-input/domain-screen.json": "0b73c1367de4c2665785bb879289ccb11df329d20b07254acd13dfdd4d31c9f5",
+    "qa/gallery-floor-source-input/gallery-domain.json": "82ac3af681cec2e67b4dac21ab5a945b395a1c759df0b23017903efda45a6a23",
+    "qa/gallery-floor-source-input/original/build_model.py": "e22c9572c8b4387d47f46d177bd2e7417bef75d0085071c54caba8d4ff21b3a0",
+    "qa/gallery-floor-source-input/original/build_appearance.py": "d6477fd5dd665c0ef872ebe9aecf31c5c6d3644bc932254eb6ba75c216a58d95",
+    "qa/gallery-floor-source-input/original/appearance.3mf": "0e2fa0b21e6ef488547d0340b15028c54a1c957c690b021552307136d78fe4a6",
+    "qa/gallery-floor-source-input/SOURCE-PROPOSAL.json": "b7945941f8b924d174e551e4aed5fc2517f2e0ff07de7ae286a378fbf9587106",
+    "qa/gallery-floor-source-input/second-source-domain-review.json": "7549fb43b899b84ac53e7fe1ed4c74f4bf31cb7f87277ba08b4789ffd43f4316"
+  },
+  "reference_photos_redistributed": false
+}
