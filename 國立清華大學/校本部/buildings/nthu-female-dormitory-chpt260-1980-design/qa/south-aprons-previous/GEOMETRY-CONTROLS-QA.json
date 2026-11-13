@@ -1,0 +1,49 @@
+{
+  "status": "PASS_BOUNDED_HISTORICAL_EXTERIOR",
+  "checks": {
+    "parapet_roof_control_domain": true,
+    "mesh_top_750": true,
+    "rooflight_shallow_cap_peak693": true,
+    "rooflight88_diameter": true,
+    "north_left12_room_windows": true,
+    "north_right12_room_windows": true,
+    "south_left8_room_windows": true,
+    "south_right12_room_windows": true,
+    "court_small_twolevels_partial_bays": true,
+    "small_court_first_partial_window_retained": true,
+    "large_court_first_partial_window_retained": true,
+    "court_large_twolevels_partial_bays": true,
+    "no_invented_water_tank": true,
+    "three_shown_main_entry_steps": true,
+    "source_final_GO_correct": true
+  },
+  "mesh_sha256": "6f05512a5c359385b45e5f38cb16869d9e16dc1d66c5f3ead817e00a524c8017",
+  "direct_controls_m": {
+    "wall_center_length": 54,
+    "half_depth": 24.1,
+    "half_offset": 8.75,
+    "GL": 0,
+    "1FL": 0.5,
+    "RF": 6.5,
+    "parapet": 7.5
+  },
+  "derived_wall_center_depth_m": 32.85,
+  "derived_roof_depth_m": 33.85,
+  "court_nominal_clear_m": [
+    [
+      12.85,
+      7
+    ],
+    [
+      21.9,
+      7
+    ]
+  ],
+  "graphic_details_allowance_m": 0.1,
+  "source_discrepancies": [
+    "A4 offset700/total3210",
+    "A1 courtyard area formulas",
+    "W1 light calculation2.6 vs planar/elevation1.6",
+    "rooflightR44 vs shallow drawn profile"
+  ]
+}

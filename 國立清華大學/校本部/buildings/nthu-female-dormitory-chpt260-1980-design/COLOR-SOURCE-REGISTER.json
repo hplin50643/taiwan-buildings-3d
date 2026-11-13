@@ -1,28 +1,230 @@
 {
-  "slug": "nthu-female-dormitory-chpt260-1980-design",
-  "count_delta": 0,
-  "geometry_change": false,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "go": {
-    "file": "NTHU-FEMALE-DESIGN-COLOR-SOURCE-GO-1347.json",
-    "sha256": "2b71cff7c9863354cfcfa8f4722bf47a0635a021a86010e8e97fd4f1e993b1e4"
-  },
-  "review_sha256": "e90d06aa786833963eb933a0eb894f993c4f8011a025dadcfd07ce401291393c",
-  "source_image": {
-    "file": "MPM6MRMQM2.jpg",
-    "sha256": "50b0ba552fad841e61343dbeb43912101dae4b69c22ac3b82870890420089234"
-  },
-  "scope": "New separate designvariant changes ONLY24 original apron outwardfaces to existingwhitefamily. Preserveoriginal8material version bytewise and retain otherface assignments as historical illustrative families; do not certify otherdarkmosaic or currentcolors. Existingmat0truewhiteevidence not denied; not wholemat7 recolor.",
-  "limits": [
-    "Onlynorth-left6bays×2floors outward12complete rectangles; no side/thickness/frame/glass or otheraprons",
-    "Singlehistoricaltwo-courtyardbuilding, not two counts, currentname慧齋unverified",
-    "Originalwindow1.6vs2.6formula,1980dates,rooflightR44incompatibility,roofwaterboxunknown and otherQA remain",
-    "No rebuiltgeometry or newprintability/globalQA certification"
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Only eight complete outward south-left apron domains, 16 original faces material7->existing designwhite0. Preserve24 north-left and every other index.",
+  "domains": [
+    {
+      "name": "south_left_row1_bay1",
+      "faces": [
+        10,
+        63
+      ],
+      "bounds": [
+        [
+          -112.0,
+          -82.55000305175781,
+          5.75
+        ],
+        [
+          -104.0,
+          -82.55000305175781,
+          9.0
+        ]
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "south_left_row1_bay2",
+      "faces": [
+        62,
+        88
+      ],
+      "bounds": [
+        [
+          -94.0,
+          -82.55000305175781,
+          5.75
+        ],
+        [
+          -86.0,
+          -82.55000305175781,
+          9.0
+        ]
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "south_left_row1_bay3",
+      "faces": [
+        87,
+        2149
+      ],
+      "bounds": [
+        [
+          -76.0,
+          -82.55000305175781,
+          5.75
+        ],
+        [
+          -68.0,
+          -82.55000305175781,
+          9.0
+        ]
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "south_left_row1_bay4",
+      "faces": [
+        2148,
+        2170
+      ],
+      "bounds": [
+        [
+          -58.0,
+          -82.55000305175781,
+          5.75
+        ],
+        [
+          -50.0,
+          -82.55000305175781,
+          9.0
+        ]
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "south_left_row2_bay1",
+      "faces": [
+        3579,
+        3672
+      ],
+      "bounds": [
+        [
+          -112.0,
+          -82.55000305175781,
+          20.75
+        ],
+        [
+          -104.0,
+          -82.55000305175781,
+          24.0
+        ]
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "south_left_row2_bay2",
+      "faces": [
+        3671,
+        3707
+      ],
+      "bounds": [
+        [
+          -94.0,
+          -82.55000305175781,
+          20.75
+        ],
+        [
+          -86.0,
+          -82.55000305175781,
+          24.0
+        ]
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "south_left_row2_bay3",
+      "faces": [
+        3706,
+        5623
+      ],
+      "bounds": [
+        [
+          -76.0,
+          -82.55000305175781,
+          20.75
+        ],
+        [
+          -68.0,
+          -82.55000305175781,
+          24.0
+        ]
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "south_left_row2_bay4",
+      "faces": [
+        5622,
+        5647
+      ],
+      "bounds": [
+        [
+          -58.0,
+          -82.55000305175781,
+          20.75
+        ],
+        [
+          -50.0,
+          -82.55000305175781,
+          24.0
+        ]
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
   ],
-  "original_QA_scope": "Complete original-version subtree only; not new renders.",
-  "parent_domain": {
-    "file": "BUILDER-PARENT-COMPLETE-DESIGN-APRONS-1349.json",
-    "sha256": "26aaccc046d6ef3655ea35fec4f067445e7260dec47d31e1dbdc5d9a6315fe2b"
+  "total_changed_faces": 16,
+  "units": "mm",
+  "geometry": "unchanged",
+  "formula": {
+    "y": -82.55000000000001,
+    "centers_x": "(5.4+3.6*i-27)*5, i=0..3",
+    "z": [
+      5.75,
+      20.75
+    ],
+    "width": 8,
+    "height": 3.25
+  },
+  "source": "CHPT26023006 A5 lower front elevation explicitly 1:3水泥粉刷 油漆二度 白色, leader passes eight south-left apron rectangles. Only historical design family; not current/asbuilt or calibrated hue.",
+  "limits": [
+    "Do not change pane/frame/reveals/side thickness or all material7",
+    "A0 69.4=1980-04; A5 date blank, no same-date/asbuilt claim",
+    "Original8 illustrative families preserved, not newly certified",
+    "Original1.6vs2.6 window and R44 rooflight issues remain"
+  ],
+  "sha256": {
+    "selected.json": "c2a077c11bb68099953c550d398f24892dec02fc9fa58688d2dd61c103f06abe",
+    "original-verification.json": "9690143729c8b88c1a29b032e6d504b735045f273bd330f390b1e4bb91335c86",
+    "domain-screen.json": "9ee1d997cf8533e71e6baf08b8b2b7c3635f558e3e24e2ee369f4e989f577ed2",
+    "original/color-mesh.npz": "cb802ad0ad156730fa2273a59d3ffb8d9893a9c3c91b433d7a0f4cb24ed05e06",
+    "original/build_model.py": "8a2627d77da6bd4a7304cd05188f15a5cb148fd0d5b405a91258be35b459a801",
+    "original/colorize_model.py": "26a96c9518b564a4b00d86dcec26a74b69509f0e10160a6bff468e8fbc362e38",
+    "original/palette.json": "16b414cac70086923803d828971377be292f04465c8fb1613d3e644b9ca077b7",
+    "private-reference/register.json": "49055c869e539b84646b9ba1c3a23d9640527b79122a1f265fc637883c65195b",
+    "private-reference/MNM6MRMQM2.jpg": "1e983a1f51c7be9282199dcff675d83955bf2b464dd3c54ff2f9b27fc335d8a0",
+    "private-reference/MPM6MRMQM2.jpg": "50b0ba552fad841e61343dbeb43912101dae4b69c22ac3b82870890420089234"
   }
 }

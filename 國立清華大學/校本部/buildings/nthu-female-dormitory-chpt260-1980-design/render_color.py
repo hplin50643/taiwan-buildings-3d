@@ -21,8 +21,8 @@ views={'preview':(-230,330,220),'rear':(230,-330,220),'front':(0,-550,75),'back'
 bpy.ops.object.text_add();caption=bpy.context.object;caption.name='HISTORICAL_SCHEME_NOTICE_NOT_PRINT_GEOMETRY';caption.parent=cam
 fontpath=Path('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')
 if fontpath.exists():
- caption.data.font=bpy.data.fonts.load(str(fontpath));caption.data.body='清華女生1980設計｜12窗下板設計白\n僅24面新增白／其餘舊示意不追認\n原23818面不變；未試印'
-else:caption.data.body='NTHU FEMALE CHPT260 1980 DESIGN PARTIAL COLOR\nOriginal geometry unchanged / neutral unverified rear'
+ caption.data.font=bpy.data.fonts.load(str(fontpath));caption.data.body='清華女生1980設計｜南北20窗下板設計白\n共40面設計白／其餘舊示意不追認\n原23818面不變；未試印'
+else:caption.data.body='NTHU FEMALE CHPT260 1980 DESIGN PARTIAL COLOR\nOriginal geometry unchanged / bounded north and south apron designwhite'
 caption.data.align_x='LEFT';caption.data.space_line=1.0
 cm=bpy.data.materials.new('caption emission');cm.use_nodes=True;cm.node_tree.nodes.clear();em=cm.node_tree.nodes.new('ShaderNodeEmission');em.inputs['Color'].default_value=(.95,.95,.95,1);out=cm.node_tree.nodes.new('ShaderNodeOutputMaterial');cm.node_tree.links.new(em.outputs[0],out.inputs['Surface']);caption.data.materials.append(cm)
 if hasattr(caption,'visible_shadow'):caption.visible_shadow=False

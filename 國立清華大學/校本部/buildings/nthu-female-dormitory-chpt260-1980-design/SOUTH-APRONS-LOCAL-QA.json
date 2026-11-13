@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "changed_faces": [
+    10,
+    62,
+    63,
+    87,
+    88,
+    2148,
+    2149,
+    2170,
+    3579,
+    3671,
+    3672,
+    3706,
+    3707,
+    5622,
+    5623,
+    5647
+  ],
+  "whole_domains": 8,
+  "triangles": 23818,
+  "material_counts": [
+    2445,
+    609,
+    310,
+    17040,
+    56,
+    2918,
+    32,
+    408
+  ],
+  "other_indices_unchanged": 23802,
+  "original_blobs_exact": 95,
+  "history_files_exact": 73,
+  "checks": [
+    "vertices/faces/STL/buildscript/palette unchanged",
+    "16 precise7to0 faces; prior24northleft retained",
+    "historical original-version and previous root QA bytes exact"
+  ],
+  "file_sha256": {
+    "build_model.py": "8a2627d77da6bd4a7304cd05188f15a5cb148fd0d5b405a91258be35b459a801",
+    "colorize_model.py": "3f3e6d90355b91ebfec7f51c996dff68158e89ba9a2b4cff7de5e5bd64491fda",
+    "validate_color.py": "f944095434c30e934eb0422a3fb5723bb80c6a5534ca539770a083a774b08f21",
+    "model.stl": "509024f81f6f07eb86c0d45a53127465b26719188f50e83c4f052ecc1058fb0b",
+    "color-mesh.npz": "8fd3233e8a6e1dce1b07f99b05d608ed25339b8b4ab6d667d02c6203e790b3cb",
+    "appearance.3mf": "0428ec35c5a3acf8f51360329bd3ab26410d4f7bed9be7d71b99f3a80344c4b8",
+    "appearance-materials.json": "6c273c5dd1bbc0189cf46c5be8fac2cc62e00358fd2b05819da1cbe0f14abcf9",
+    "palette.json": "16b414cac70086923803d828971377be292f04465c8fb1613d3e644b9ca077b7",
+    "README.md": "74c8ed2307351932d4c0a5b67bae964f63cba5afeb0272f86cff7f5f0f24e4af",
+    "README.zh-TW.md": "74c8ed2307351932d4c0a5b67bae964f63cba5afeb0272f86cff7f5f0f24e4af",
+    "SOUTH-APRONS-SOURCE-QA.json": "9eaacfec693471281cf1c16c501c1cc701ebcb91da2641d757b9a7fc95440982",
+    "SOUTH-APRONS-SOURCE-INDEPENDENT-QA.json": "758bc9aaec5d4ad07dda5f8e9fba19104d58b93fb74af4705d108d29ad7f44a7"
+  }
+}

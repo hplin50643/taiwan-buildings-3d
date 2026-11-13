@@ -4,7 +4,7 @@
       "id": 0,
       "name": "white washed finish approximate",
       "hex": "#D1D1C7",
-      "faces": 2429
+      "faces": 2445
     },
     {
       "id": 1,
@@ -46,7 +46,7 @@
       "id": 7,
       "name": "dark mosaic approximate",
       "hex": "#858675",
-      "faces": 424
+      "faces": 408
     }
   ],
   "domain_face_indices": {
@@ -97,12 +97,45 @@
     "north_left_apron_row2_bay6": [
       11665,
       11693
+    ],
+    "south_left_row1_bay1": [
+      10,
+      63
+    ],
+    "south_left_row1_bay2": [
+      62,
+      88
+    ],
+    "south_left_row1_bay3": [
+      87,
+      2149
+    ],
+    "south_left_row1_bay4": [
+      2148,
+      2170
+    ],
+    "south_left_row2_bay1": [
+      3579,
+      3672
+    ],
+    "south_left_row2_bay2": [
+      3671,
+      3707
+    ],
+    "south_left_row2_bay3": [
+      3706,
+      5623
+    ],
+    "south_left_row2_bay4": [
+      5622,
+      5647
     ]
   },
-  "changed_face_count": 24,
-  "material_transition": "Exactly24 originalmaterial7 to0; all other original8-family assignments unchanged and not newly certified.",
+  "changed_face_count": 40,
+  "continuation_changed_faces": 16,
+  "material_transition": "Exactly40 originalmaterial7 to0:24prior north-left+16new south-left; all other original8-family assignments unchanged and not newly certified.",
   "coplanar_components": 5104,
-  "selected_coplanar_components": 12,
+  "selected_coplanar_components": 20,
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
   "geometry_policy": "23818 original triangles unchanged",
