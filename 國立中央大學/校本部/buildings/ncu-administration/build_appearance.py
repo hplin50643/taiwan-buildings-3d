@@ -63,9 +63,20 @@ for p in mesh.polygons:
      i=1;reason='inferred_pale_left_band_structural_reveals_only'
  if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
+# Entire connected portico/entry-lintel underside domain, including inner half.
+entry_soffit_domain=[5307, 5308, 5310, 5316, 5317, 5329, 5330, 5332, 5335, 5336, 5344, 5349, 5351, 5356, 5359, 5362, 5363, 5366]
+assert sum(indices[i]==0 for i in entry_soffit_domain)==1
+assert indices[5308]==0
+for i in entry_soffit_domain:
+ p=mesh.polygons[i]
+ assert indices[i] in (0,2) and p.normal.z < -.999
+ for vi in p.vertices:
+  a=mesh.vertices[vi].co
+  assert abs(a.z-12)<.001 and -9.501<=a.x<=25.501 and -40.001<=a.y<=-17.999
+ p.material_index=2;indices[i]=2
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; side/rear wall and fascia continuity inferred; uncertain band backs, roof and base neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-entry-soffit'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -93,7 +104,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Side/rear pale exterior walls, narrow vertical roof fascia and existing left-band structural reveals are material-family continuity inferences, not rear photographic verification. All original colored faces and exact material RGBA/roughness preserved. Three uncertain left-band backs, roofs, base and unresolved faces remain neutral. No new windows or geometry; lattice recess proxy does not prove every opening is glazing.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-entry-soffit','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'prior_v2_changed_faces':changed_faces,'entry_soffit_domain':entry_soffit_domain,'entry_soffit_changed_faces':[5308],'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Side/rear pale exterior walls, narrow vertical roof fascia and existing left-band structural reveals are material-family continuity inferences, not rear photographic verification. All original colored faces and exact material RGBA/roughness preserved. Three uncertain left-band backs, roofs, base and unresolved faces remain neutral. No new windows or geometry; lattice recess proxy does not prove every opening is glazing.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-195,-220,155),(0,0,23.55),180),'rear':((195,230,160),(0,0,23.55),180),'elevation':((0,-260,23.55),(0,0,23.55),180),'source-angle':((-120,-260,65),(0,0,23.55),180),'left':((-300,0,145),(0,0,23.55),180),'right':((300,0,145),(0,0,23.55),180),'top':((0,0,260),(0,0,0),180)}
 out=R/'appearance';out.mkdir(exist_ok=True)

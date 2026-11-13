@@ -1,0 +1,77 @@
+{
+  "status": "SOURCE_REVIEW_GO_PENDING_FINAL_QA",
+  "prefix": "國立中央大學/校本部/buildings/ncu-administration/",
+  "domain": {
+    "faces": [
+      5307,
+      5308,
+      5310,
+      5316,
+      5317,
+      5329,
+      5330,
+      5332,
+      5335,
+      5336,
+      5344,
+      5349,
+      5351,
+      5356,
+      5359,
+      5362,
+      5363,
+      5366
+    ],
+    "count": 18,
+    "min": [
+      -9.5,
+      -40.0,
+      12.0
+    ],
+    "max": [
+      25.5,
+      -18.0,
+      12.0
+    ],
+    "normal": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "materials": [
+      0,
+      2
+    ]
+  },
+  "changed_faces": [
+    5308
+  ],
+  "old_material": 0,
+  "new_material": 2,
+  "rationale": "Original connected coplanar entrance/portico underside z12 has18 triangles,17 already canopy material2. The one neutral triangle5308 is half of original entry-lintel underside spanning y-22.5..-18. Center-y classifier caused one diagonal half to remain unknown. Entire original domain is selected; preserve17 and continue canopy family to remaining1 without cutting mesh.",
+  "limits": [
+    "Entry inner soffit is inferred same entrance/portico material family, not directly measured or fully visible in shaded official photo",
+    "No repaint of mixed main wall/large-window returns/left bands/roof domains",
+    "Original seven palette values and5499 other face assignments unchanged",
+    "Original scene,STL,locked previews,geometry,transforms and engineering limits retained",
+    "Original appearance-sources English-caption warning is historical: freshly fetched official map AdmiB now correctly names Administrative Building. Do not edit old snapshot or repeat obsolete current-error claim.",
+    "No current-year or post-renovation claim; photograph date unknown",
+    "Background taller main-library building not part of admin model"
+  ],
+  "hash_scope": "Original source inputs preserved in qa/entry-soffit-source-input; source photographs/proposal/domain evidence remain private; not hashes of modified current files.",
+  "original_proposal_inputs": {
+    "original/appearance-sources.json": "5b1a990207956d780550ccdb6f16f697028fa60d7b316c46443799852527695c",
+    "original/build_model.py": "c87de47fb151721725cc98738fa57118023307334951d7aa9766a8da5b7d1887",
+    "original/build_appearance.py": "8dbc79b6f4ecaefbab702da475bc9092a719ca2796c5e8f34c043730729240db",
+    "original/appearance.3mf": "3864bcfcfe67ac076d356385ed24d56842c193f2186d759838dcac27faa5891f",
+    "domain-screen.json": "c92a57417eb4355b19f60fb950d1f63aaec5f48443873b0c4eb39e2005c9e93f",
+    "private-reference/official-administration.jpg": "ec9e09e7c273c08da85caf6079f02e86cbcdb67fc3f810b611e5454b7e541f29",
+    "private-reference/official-map.html": "2fa176d08fd34d1ac5e6ec1b4bbaca647345c2ff22bb7f8f323d01f818452436"
+  },
+  "file_sha256": {
+    "qa/entry-soffit-source-input/appearance-sources.json": "5b1a990207956d780550ccdb6f16f697028fa60d7b316c46443799852527695c",
+    "qa/entry-soffit-source-input/build_model.py": "c87de47fb151721725cc98738fa57118023307334951d7aa9766a8da5b7d1887",
+    "qa/entry-soffit-source-input/build_appearance.py": "8dbc79b6f4ecaefbab702da475bc9092a719ca2796c5e8f34c043730729240db",
+    "qa/entry-soffit-source-input/appearance.3mf": "3864bcfcfe67ac076d356385ed24d56842c193f2186d759838dcac27faa5891f"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "revision": "color-v2-side-rear-continuity",
+  "head_basis": "123e103381f4d7eb98627857d9b720b8e497ecaa",
+  "scope": "54 originally neutral faces: 24 exterior side/rear wall faces, 24 left-band structural reveals, 6 vertical fascia faces. Inferred material continuity, not four-side photograph verification.",
+  "geometry_verified": "appearance-review-v2/model-verification.json",
+  "clean_rebuild": "appearance-review-v2/clean-rebuild-equality.json",
+  "historical_reviews": "appearance-review contains retained v1 history, superseded for current material assignments and render bindings by appearance-review-v2 and this freeze.",
+  "files": [
+    {
+      "path": "APPEARANCE.md",
+      "sha256": "c9ad04226c56aa0ba84a20161cd6ba57190053b8212098fd88f8269912ce1357",
+      "bytes": 4325
+    },
+    {
+      "path": "README.md",
+      "sha256": "4de423d2d782c6ef25eaee0dd2d6fd60778faf83ce1be1a0d0e473f4c859ece8",
+      "bytes": 5326
+    },
+    {
+      "path": "README.zh-TW.md",
+      "sha256": "4de423d2d782c6ef25eaee0dd2d6fd60778faf83ce1be1a0d0e473f4c859ece8",
+      "bytes": 5326
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "d87c2e17923194b9823979d88bc0c492d5d477db4715fdb8842ce9324385396d",
+      "bytes": 816259
+    },
+    {
+      "path": "appearance/front.png",
+      "sha256": "0ee31501d2eca7884b122f8cbd06e8be021dea4c3ba1ea8f0ea016c5096479ff",
+      "bytes": 874553
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "7ce932180bca26cfafe577edb8f36e7c7033d060d0541366be5253e08cfc732c",
+      "bytes": 835261
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "5843b3a889231ebebb5fef7e4cd29dfb60860e7a16db3ccf1574b533152f6ba2",
+      "bytes": 781322
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "01189e3f98e50427022f5a50f5c71c19239c3613c73a21eb1aecf73f05b94f2d",
+      "bytes": 834043
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "795e0ef5f8b2c3da438685bba2105feb4a36d7bdc720568fdbee016ec99d26eb",
+      "bytes": 840241
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "97f03f1f984989590f993052c2607d3c9ee0ebcb6968cf79c742d8dab5a32523",
+      "bytes": 790859
+    },
+    {
+      "path": "appearance-materials.json",
+      "sha256": "f282a3d44340b9b8a6b8caf0816648d8b1706998c9f62eeeb8dff7c104ad117c",
+      "bytes": 82826
+    },
+    {
+      "path": "appearance-review-v2/clean-rebuild-equality.json",
+      "sha256": "ee48ac26b46caae8a8f407826f7500fc00458142210a3f7c9afe9360a40f52c2",
+      "bytes": 345
+    },
+    {
+      "path": "appearance-review-v2/color-continuity-review.json",
+      "sha256": "d5a2585162591c6c6503711f37dc46244f219c48d4e63028bda7e56ec372c898",
+      "bytes": 1914
+    },
+    {
+      "path": "appearance-review-v2/comparison.png",
+      "sha256": "9b2767f92532b2279d5f96d00206e805b739750fdb903a7d6a166498f98e79ef",
+      "bytes": 1444485
+    },
+    {
+      "path": "appearance-review-v2/material-value-verification.json",
+      "sha256": "bfe61f13a328df282d0f21849fb037e30ef3995ab77a3f9b10d5dc0f67dec401",
+      "bytes": 4407
+    },
+    {
+      "path": "appearance-review-v2/model-verification.json",
+      "sha256": "4061c3a6a4fe30ba7bc9b05bfceac6c6e11f072b4acb1c9bf105a721b9002155",
+      "bytes": 2044
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "555db6b87bbc6bf4814cb09e3ebc529de92ddfa6933a489d41a0f59877c046c0",
+      "bytes": 867725
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "cf989f9762306ea8f27ff8665483d54dc8793d3948ea43a06674c9564e7feeaf",
+      "bytes": 793946
+    },
+    {
+      "path": "appearance-review-v2/render-bindings.json",
+      "sha256": "8658b79d9835e3f626b976cbd0e59356ece25819e7ab8ecc02c6c97665f24526",
+      "bytes": 4250
+    },
+    {
+      "path": "appearance.3mf",
+      "sha256": "3864bcfcfe67ac076d356385ed24d56842c193f2186d759838dcac27faa5891f",
+      "bytes": 50330
+    },
+    {
+      "path": "appearance.blend",
+      "sha256": "bc439fadbebf2c4ff5801d9ca29069f65fd7eeb5d727b63819df0a06692a1723",
+      "bytes": 876120
+    },
+    {
+      "path": "build_appearance.py",
+      "sha256": "8dbc79b6f4ecaefbab702da475bc9092a719ca2796c5e8f34c043730729240db",
+      "bytes": 10414
+    }
+  ]
+}

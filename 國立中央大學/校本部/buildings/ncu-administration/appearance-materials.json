@@ -1,5 +1,5 @@
 {
-  "revision": "color-v2-side-rear-continuity",
+  "revision": "color-v3-entry-soffit",
   "geometry": {
     "vertices": "bfd7b3026d8caf094cbfe57d1336cf641d1ddb1bc9be1a4455dd2e527c76f0bd",
     "faces": "4d3895da98472f14b707b2850328341132e860061a7976e0b60a3cd747769279"
@@ -41,7 +41,7 @@
       "roughness": 0.8
     }
   ],
-  "changed_faces": [
+  "prior_v2_changed_faces": [
     224,
     225,
     226,
@@ -96,6 +96,29 @@
     5497,
     5498,
     5499
+  ],
+  "entry_soffit_domain": [
+    5307,
+    5308,
+    5310,
+    5316,
+    5317,
+    5329,
+    5330,
+    5332,
+    5335,
+    5336,
+    5344,
+    5349,
+    5351,
+    5356,
+    5359,
+    5362,
+    5363,
+    5366
+  ],
+  "entry_soffit_changed_faces": [
+    5308
   ],
   "change_reasons": {
     "224": "inferred_existing_side_rear_exterior_pale_wall",
@@ -5656,11 +5679,11 @@
     0
   ],
   "face_counts": {
-    "0": 130,
+    "0": 129,
     "1": 4392,
     "5": 70,
     "3": 630,
-    "2": 258,
+    "2": 259,
     "4": 10,
     "6": 10
   },
@@ -10973,7 +10996,7 @@
     0,
     0,
     2,
-    0,
+    2,
     2,
     2,
     2,

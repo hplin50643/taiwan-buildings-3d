@@ -37,3 +37,9 @@ Blender 4.3.2，將原scene.blend、model.stl與本版script放同目錄：
 3MF逐頂點、逐三角面頂點順序、每面三個材料指標、單位／build項目／調色盤與BLEND及原件核對。原彩面、材質RGBA與roughness、mesh、transform、尺寸全部逐項比較。乾淨重建核對3MF及materials JSON逐byte、BLEND語義，記錄在appearance-review-v2；原appearance-review保留v1歷史，但不作新版渲染綁定。本版檔案由appearance-freeze.json記錄。
 
 3MF讀取端需支援base materials；未指定AMS、多噴頭或耗材映射。原0.2mm截面及1mm間距的0.8mm XY薄特徵篩查是歷史幾何證據，不是完整壁厚、正式切片工具路徑或試印驗證。雨庇、格孔與薄簷仍需評估支撐；尚未實體試印，不保證免支撐或必然可印。
+
+
+## 門廊及入口過樑底完整原域一致化 v3
+選取 z=12 朝下門廊/入口過樑底18面完整連通共面域，其中17面原材2保持，僅5308由中性0延用原門廊灰米材2。原依面中心y門檻遺留入口頂半片斜三角；同平面鄰片已材2且原網格無材料界。本次不僅挑外挑門廊範圍，也明示包含y至-18的入口內緣。照片支持外門廊淺色，內緣為同構件家族推估，不是陰影內逐點照片證實。其餘5499面、7材值、geometry/transform不變；所有原v2側背推估及工程限制保留，不新增構件或新切界。
+本輪重新讀官方無障礙地圖，其case AdmiB現為「行政大樓 Administrative Building」，並綁定原照片；舊appearance-sources中英文誤植說明為歷史快照，不能作現況錯標。本輪保留舊文件不改，以上新核對優先。照片日期未明，不稱現況重建或實體試印。
+7張原生900×800視圖/相機/渲染設定保留；原STL/scene/previews與舊v1/v2審核保留原bytes。本次源審快照 ENTRY-SOFFIT-SOURCE-QA.json，最終獨審 ENTRY-SOFFIT-INDEPENDENT-QA.json；照片私用不隨模型發布。

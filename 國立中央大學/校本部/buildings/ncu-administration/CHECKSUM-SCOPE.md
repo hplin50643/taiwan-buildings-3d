@@ -1,0 +1,1 @@
+Current SHA256SUMS and ENTRY-SOFFIT-FREEZE-MANIFEST.json cover this candidate. Original appearance-freeze.json and appearance-review/v2 are retained historical snapshots; qa/entry-soffit-previous holds former mutable assets. Source input snapshots are explicitly mapped. Independent final hashes must bind exact current paths. Original engineering limitations are unchanged.
