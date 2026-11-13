@@ -22,3 +22,9 @@
 
 ## 重建
 在appearance上層保留原model.stl，安裝source/requirements.txt；執行 `python source/build_appearance.py`、`python source/verify_exchange.py`，再用 Blender 執行 `source/render_appearance.py` 與 `source/verify_scene.py`。固定Cycles CPU／種子生成五圖，PNG移除時間metadata；乾淨重建比較3MF、map、palette與五圖bytes，Blend比較真正頂點／材質語義，不宣稱Blend二進位一致。兩格式皆實際編輯材質存讀，Blend另實際編輯頂點存讀並從交付檔reopen render核對。
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+僅原四級入口階梯8個完整踏面/立面域的16原三角補近似灰#9B9B90（roughness 0.88）。原2643頂點、5638三角、三舊色及其他面不變；四級數目/尺寸是原代理近似，不是測繪或石材鑑定。2019 PDF輸出日不是攝影日。
+模型與原生視角圖沿用完成候選的原bytes；不改幾何、不增加分界、不稱全棟精確配色或實體試印通過。原來源年代、工程及列印限制仍適用。先前敘述與審核屬其原版本，本段僅更新上述局部範圍。
+本次只交付模型、必要重建輸入/腳本、預覽與此說明；完整研究與獨立審核紀錄另行保留，不在本批公開。PUBLIC-MODEL-SHA256SUMS只核本次所列公開產品，舊校驗與QA不代表本次新版。
