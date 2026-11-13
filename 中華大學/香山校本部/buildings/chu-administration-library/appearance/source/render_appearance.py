@@ -13,7 +13,7 @@ for p in json.loads((A/'palette.json').read_text())['materials']:
  m=bpy.data.materials.new(p['id']);m.use_nodes=True;rgba=[lin(int(p['srgb'][i:i+2],16)/255) for i in [1,3,5]]+[1];m.diffuse_color=rgba;m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=rgba;m.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.48 if 'glazing' in p['id'] else .78;me.materials.append(m)
 for poly,t in zip(me.polygons,ts):poly.material_index=int(t.get('p1'))
 ob['original_STL_sha256']='1b03e0865c6f67a69ec8daabd5a42224e4dac6076a50cf750255fcbcd1d5c5e1';ob['limitations']='Uncalibrated source colors; source-registered regions and explicitly bounded material extensions per README; all other regions use neutral proxies; unchanged approximate geometry; no physical print test.'
-ob['evidence']='CHU Administration Library; official CHU student campus photography gallery, photos 27 and 43; 222 original faces in 12 finite domains only. Historical CGU metadata error corrected in this new scene, original preserved.'
+ob['evidence']='CHU Administration Library; official CHU student campus photography gallery, photos 27 and 43; Original222faces in12domains retained plus8upperfrontbandfaces in2whole domains; hidden endpoints same-band inference. Historical CGU metadata error corrected in this new scene, original preserved.'
 scene=bpy.context.scene;scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=.001;scene.unit_settings.length_unit='MILLIMETERS'
 world=bpy.data.worlds.new('Neutral studio');scene.world=world;world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.36,.40,.46,1);world.node_tree.nodes['Background'].inputs[1].default_value=.7
 # Studio lights only; no floor mesh that could be mistaken for delivered geometry.
@@ -39,4 +39,4 @@ for screen in bpy.data.screens:
   for space in area.spaces:
    if space.type=='FILE_BROWSER' and space.params:space.params.directory=b'//'
 os.chdir(A);bpy.ops.wm.save_as_mainfile(filepath=str(A/'scene.blend'),compress=False)
-(A/'qa/render-manifest.json').write_text(json.dumps({'blender':bpy.app.version_string,'samples':32,'resolution':[1200,1200],'files':records},indent=2)+'\n')
+(A/'qa-band-continuation/render-manifest.json').write_text(json.dumps({'blender':bpy.app.version_string,'samples':32,'resolution':[1200,1200],'files':records},indent=2)+'\n')

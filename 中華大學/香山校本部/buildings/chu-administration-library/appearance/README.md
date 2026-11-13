@@ -22,3 +22,9 @@
 
 ## 重建
 解壓rebuild-source.zip，安裝source/requirements.txt，以Blender4.3.2依序執行 `python appearance/source/build_appearance.py`、`python appearance/source/verify_exchange.py`、`blender -b -t 4 --python appearance/source/render_appearance.py`、`blender -b -t 4 --python appearance/source/verify_scene.py`。選面使用實際有向叉積法向、三原頂點全在12有限域和支持平面、design容差0.0001（比例1.75），核對exact IDs，不用面中心。參閱[SOURCES](SOURCES.md)、[權利說明](LICENSE-NOTICE.md)及qa。
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+僅上層南側兩完整水平帶前面8個原三角補近似淺色#C4C5B8（roughness 0.78）。遮旗端部只沿原有限帶作推定，非校準色；9830頂點、19680三角及其餘指派不變。原10項局部工程證據失敗及有限接受限制保留；環根支承71.6256116386%不混同另一冠區100%。
+模型與原生視角圖沿用完成候選的原bytes；不改幾何、不增加分界、不稱全棟精確配色或實體試印通過。原來源年代、工程及列印限制仍適用。先前敘述與審核屬其原版本，本段僅更新上述局部範圍。
+本次只交付模型、必要重建輸入/腳本、預覽與此說明；完整研究與獨立審核紀錄另行保留，不在本批公開。PUBLIC-MODEL-SHA256SUMS只核本次所列公開產品，舊校驗與QA不代表本次新版。
