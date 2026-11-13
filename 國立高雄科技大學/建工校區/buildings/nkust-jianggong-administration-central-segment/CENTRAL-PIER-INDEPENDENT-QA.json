@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "building": "nkust-jianggong-administration-central-segment",
+  "triangles": 18016,
+  "new_color_faces": 32,
+  "exterior_color_before": 528,
+  "exterior_color_after": 560,
+  "neutral_after": 17456,
+  "complete_domains": 16,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "findings": [
+    "Independent allvertex64gon chord selector verifies central pier frontquarter facets40..55 only,32faces16whole domains. Original528and allunselectedindices/palette entries exact.",
+    "3MF three materials and unchangedgeometry independently verified;26original engineering/history files SHA-identical.",
+    "Retained isolatedSTL/NPZ/palette/materials/3MF XML directly compared exact.",
+    "Savedscene independently reopened:18016mesh indices,3shaders,originalcamera/lights/render/objectinventory/transforms exact.",
+    "Actually inspected ten final views and full-size detail views. Bounded central gray side visible without coloring other pillars or portico ceiling.",
+    "Actually viewed private central-pier close image,32-face frontquarter bounded gray visible; temporary lighting/camera not saved toscene."
+  ],
+  "limits": [
+    "Grayfamily only, not calibratedHEX or stone/metal diagnosis. Reflections,lighting gradients and joints do not establish blackpaint.",
+    "Original five-column arc/radius/height rough proxy not certified; only central forwardquarter,not wholecircumference/othercolumns/top/bottom.",
+    "Historical engineering limitations and SOURCEpending snapshots retained; not a new dated survey or tested multi-material print."
+  ],
+  "image_sha256": {
+    "preview.png": "bb6db64c628d88d32b99c2e8673b1caefd3322165e37d5d100d00eb73604e4a8",
+    "rear.png": "1408c60629848726ba5d631ecb6bfeaad9b124489ec91f0e51712fdb8165b805",
+    "front.png": "9d10664de970d56e239368093eef7b21d62c66bff02963498b8f82c901f1bca9",
+    "back.png": "c998ee03d8a1040545dc6abb9aba7c74cabf9b68f0e8e49615cd83d8e799c28b",
+    "west.png": "28b28e193b55e460affa4503547fc37efc7f7fae15026b868a7ed484778dd167",
+    "east.png": "7308d61091fca432f6bfe8f65096832b3a93498d78ff8244219e15c311504e3d",
+    "top.png": "3eb73489a3d6f8534622556c73dc7c60cfae7aa7f5cc20c0f2ee5d4fe0eac8ae",
+    "entry-detail.png": "7002ae05cf2e8101546096b763f978f9cb1d720e06d9394335d04b8e1946d010",
+    "facade-detail.png": "5441c82b03da8e62e5157f874d29e9cefefa31a2895a4436d0d80edf82bdebd4",
+    "roof-detail.png": "295d17c5aa9aaa091425106e240889a0f5a83f4054e5f15733b74faeda01429a"
+  },
+  "file_sha256": {
+    "model.stl": "b54b57c7c6c824161df9e4b461d02559bb54fbaad566a6d102e1f8a0c04e9949",
+    "build_model.py": "2f2e61f607c71c4f84aedf478e15c3f5439808d89d61b093393ec2b087369e48",
+    "color-mesh.npz": "d5d3a10282257995acd4e7501135de80a80a1288bf1909a8f4255d1ad14e9e79",
+    "palette.json": "19c562af245444871ad7f3bb0f4447e30eb3cc50023282e13f890e683585b78b",
+    "appearance.3mf": "cb9d18e69787545aa1a1c06634d1395a1e7e5406c9bf726b0e837cea49c42ade",
+    "appearance-materials.json": "0601fda61ab7fc9a823b1eca5a4be9715832e1103de3f48af2f521e4b83edf15",
+    "scene.blend": "dcbfab4eaa616a983d616a6f42a69cf6e8effc5040097595d7347415ca287b5c",
+    "colorize_model.py": "b473d0c4028196273982ecca399d4cd1d65cc3deeee30cc460d17ede3435d6ed",
+    "export_appearance.py": "a28c5a30d3489d3f6c909d4d65fc24f8d97036e4af451268df09c8d8775ed3c1",
+    "validate_color.py": "d3e3245b32074b78f0be84913734686ee71e0d5215a2e480ff2b1e7d8a6a779c",
+    "verify_color_scene.py": "7b241452ce98170f8c88534385a7ee0d644241e997a98019e811e3039b1d9cf1",
+    "render_color.py": "43fa82a4281172db671c0e1cb9a8ecaf0f60c511e1d3d4f970a5aaf2a2957520",
+    "README.md": "592812e41ecabc7243d9664d169aad4695bb319cce1889b2e5b168ab4033b5cb",
+    "README.zh-TW.md": "592812e41ecabc7243d9664d169aad4695bb319cce1889b2e5b168ab4033b5cb",
+    "CHECKSUM-SCOPE.md": "1686712606ab20736098fb6d98af85d5f15d6c19c60fb5d52e576538ebb914f5",
+    "COLOR-ASSIGNMENT-QA.json": "28b52b55690542c4a2466da2f30f456837b149903c6c9eb4f20f08337329d28a",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "0c10fb7d2e91cf77825a1584d28ebe623e79c03baa2c4ff7af9bc95d5885c4c7",
+    "SCENE-QA.json": "8e90a6eddc175d70227f7017ccd76305bd8cee72e94c00995f5739b964820781",
+    "CENTRAL-PIER-SCENE-QA.json": "f3da1e11a09a4e5971a8049405821e507ce27efae5056fdce9bf685961c0fc01",
+    "CENTRAL-PIER-SOURCE-QA.json": "2ed466c393a66ae038fd4480c06ed5d486671b63d523f4d7f2b006b34c36df7d",
+    "COLOR-SOURCE-REGISTER.json": "2ed466c393a66ae038fd4480c06ed5d486671b63d523f4d7f2b006b34c36df7d"
+  },
+  "supplementary_private_image_sha256": {
+    "central-pier.png": "5b5c7a8fa3ddc5f331276dfaf478e1de348ec6e9aaf6d5c58a2aab85596315af"
+  },
+  "supplementary_private_QA_sha256": {
+    "private-central-pier-QA.json": "1063a5b7ccd925298557a34e10136fac5eb1569c2e0c2e3de2de262992b42633"
+  }
+}

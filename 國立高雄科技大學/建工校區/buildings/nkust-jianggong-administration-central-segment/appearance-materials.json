@@ -10,7 +10,13 @@
       "id": 1,
       "name": "UNVERIFIED lettering windows walls roof neutral",
       "hex": "#B8BAB5",
-      "faces": 17488
+      "faces": 17456
+    },
+    {
+      "id": 2,
+      "name": "Central pier bounded front quarter nominal gray family",
+      "hex": "#A8AAA5",
+      "faces": 32
     }
   ],
   "domain_face_indices": {
@@ -545,6 +551,40 @@
       3762,
       3763,
       3764
+    ],
+    "central_pier_front_quarter": [
+      16389,
+      16420,
+      16391,
+      16421,
+      16397,
+      16419,
+      16396,
+      16426,
+      16398,
+      16427,
+      16399,
+      16428,
+      16385,
+      16387,
+      16386,
+      16388,
+      16449,
+      16451,
+      16450,
+      16452,
+      16453,
+      16483,
+      16454,
+      16484,
+      16455,
+      16485,
+      16456,
+      16486,
+      16457,
+      16487,
+      16458,
+      16488
     ]
   },
   "coplanar_components": 4320,
@@ -555,7 +595,7 @@
   "limits": [
     "Only radius36 regular160gon outward planes in entire z45.7..51 and77.7..83 fields,264each;24 tiny original facet triangles restored to their whole coplanar fields by explicit correction.",
     "Lettered middle band61.7..67 neutral; lowest darkedge and upper crown neutral.",
-    "All glass proxies, frames/reflections, wings, posts, steps, roof and rear cut neutral.",
+    "Central pier front quarter32 faces nominal gray; remaining posts and glass proxies/frames/wings/steps/roof/rear cut neutral.",
     "Central segment not whole administration building; unknown capture dates,2025conference not capture year."
   ]
 }
