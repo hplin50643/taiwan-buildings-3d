@@ -5923,6 +5923,52 @@
         ]
       },
       "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_high_cap_top",
+      "material": "M10",
+      "evidence": [
+        "S01:C-31",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "z",
+      "plane_source_m": 31.9,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          11.25,
+          20.15
+        ],
+        "y": [
+          -5.9,
+          1.4
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_high_cap_top",
+      "material": "M10",
+      "evidence": [
+        "S01:C-31",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "z",
+      "plane_source_m": 31.9,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          5.05,
+          20.15
+        ],
+        "y": [
+          21.6,
+          30.9
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
     }
   ]
 }

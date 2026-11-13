@@ -3,7 +3,7 @@
 import pathlib,json,argparse,hashlib
 import numpy as np
 import lib3mf
-p=argparse.ArgumentParser();p.add_argument('--out',type=pathlib.Path,default=pathlib.Path(__file__).resolve().parent);a=p.parse_args();root=a.out;(root/'qa').mkdir(parents=True,exist_ok=True)
+p=argparse.ArgumentParser();p.add_argument('--out',type=pathlib.Path,default=pathlib.Path(__file__).resolve().parent);a=p.parse_args();root=a.out;(root/'qa-continuation').mkdir(parents=True,exist_ok=True)
 D=np.load(root/'mesh-data.npz');palette=json.loads((root/'palette.json').read_text())
 w=lib3mf.get_wrapper();model=w.CreateModel();model.SetUnit(lib3mf.ModelUnit.MilliMeter)
 group=model.AddBaseMaterialGroup();pid=[]
@@ -34,5 +34,5 @@ def read(path):
   assert len(set(q.PropertyIDs))==1
   col=gs[0].GetDisplayColor(q.PropertyIDs[0]);actual=f'#{col.Red:02X}{col.Green:02X}{col.Blue:02X}';assert actual==palette[int(mi)]['hex'],(actual,mi)
  return m,{'strict':True,'warnings':int(r.GetWarningCount()),'mesh_objects':len(objs),'vertices':len(vs),'triangles':len(fs),'base_materials':len(palette),'all_triangle_materials_match_palette':True,'triangle_indices_exact_match':True,'vertex_max_abs_difference_mm':coordinate_error,'vertex_tolerance_mm':1e-5}
-m,report=read(root/'ntus-changqi-appearance.3mf');tmp=root/'qa'/'roundtrip.3mf';m.QueryWriter('3mf').WriteToFile(str(tmp));_,rr=read(tmp);tmp.unlink()
-report['roundtrip']=rr;report['lib3mf_version']=list(w.GetLibraryVersion());(root/'qa'/'3mf-validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+m,report=read(root/'ntus-changqi-appearance.3mf');tmp=root/'qa-continuation'/'roundtrip.3mf';m.QueryWriter('3mf').WriteToFile(str(tmp));_,rr=read(tmp);tmp.unlink()
+report['roundtrip']=rr;report['lib3mf_version']=list(w.GetLibraryVersion());(root/'qa-continuation'/'3mf-validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

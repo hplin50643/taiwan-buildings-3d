@@ -17,6 +17,8 @@ PALETTE=[
  ('M08','Visible main non-green roof','#D0D0C8',['S01:C-25','S01:C-31'],'Main visible light-gray roof floor only; equipment/tower caps excluded.'),
  ('M09','Upper louver screen reading','#494847',['S01:C-11','S01:C-12'],'Dark screen backs in existing upper recesses; no fabricated slats.')]
 
+PALETTE.append(('M10','Approximate pale tower roof cap surface','#D4D4CD',['S01:C-31','S01:C-11','S01:C-12'],'Only two original high stair roof cap top planes; visible background approximation, not a membrane/tile identification or main roof material claim. Fine rim, fittings and weathering absent in original proxy.'))
+
 def load_stl(path):
  b=path.read_bytes();assert hashlib.sha256(b).hexdigest()==PIN,'Wrong original mesh'
  n=struct.unpack_from('<I',b,80)[0];assert len(b)==84+n*50
@@ -35,7 +37,7 @@ def load_stl(path):
  return b,v,f,tri
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--out',type=Path,default=HERE);p.add_argument('--input',type=Path,default=HERE.parent/'model.stl');a=p.parse_args();out=a.out;out.mkdir(parents=True,exist_ok=True);(out/'qa').mkdir(exist_ok=True)
+ p=argparse.ArgumentParser();p.add_argument('--out',type=Path,default=HERE);p.add_argument('--input',type=Path,default=HERE.parent/'model.stl');a=p.parse_args();out=a.out;out.mkdir(parents=True,exist_ok=True);(out/'qa-continuation').mkdir(exist_ok=True)
  raw,v,f,tri=load_stl(a.input);t=tri.astype(np.float64);t[:,:,0]=t[:,:,0]/S+30;t[:,:,1]=-t[:,:,1]/S+13;t[:,:,2]=t[:,:,2]/S-1.2
  lo=t.min(1);hi=t.max(1);norm=np.cross(tri[:,1]-tri[:,0],tri[:,2]-tri[:,0]).astype(float);norm/=np.linalg.norm(norm,axis=1)[:,None];norm[:,1]*=-1
  mi=np.zeros(len(f),np.int16);ri=np.zeros(len(f),np.int16);rules=[{'id':'unknown','material':'N00','evidence':[],'criterion':'No complete triangle registered to a supported visible material region.'}]
@@ -104,6 +106,9 @@ def main():
  for y in [10,13,16,19]:put(f'high_rear_mullion_{y}','M06',0,19.74,1,{1:(y-.25,y+.25),2:(24.4,25.9)})
  for name,pl,x,y in [('high_green',27.85,(.7,15.9),(.8,21.9)),('connector_green',21.65,(20.3,27.5),(11.25,22.4)),('south_green',21.65,(35,54.8),(24.2,30.7))]:put(name,'M07',2,pl,1,{0:x,1:y})
  put('main_light_roof','M08',2,23.15,1,{0:(28.7,55.8),1:(10.5,23)})
+ # Two whole original high stair cap-top domains, exact original geometry.
+ put('north_high_cap_top','M10',2,31.9,1,{0:(11.25,20.15),1:(-5.9,1.4)},['S01:C-31','S01:C-11','S01:C-12'])
+ put('south_high_cap_top','M10',2,31.9,1,{0:(5.05,20.15),1:(21.6,30.9)},['S01:C-31','S01:C-11','S01:C-12'])
  # Explicit unknown reasons, preserving original triangles across mixed zones.
  reasons=[]
  for i in range(len(f)):
@@ -124,5 +129,5 @@ def main():
   for i in range(len(f)):wr.writerow([i,PALETTE[mi[i]][0],rules[ri[i]]['id'],'UNKNOWN'if not mi[i]else'APPROXIMATE_SOURCE_REGISTERED',';'.join(rules[ri[i]]['evidence']),reasons[i]])
  area=np.linalg.norm(np.cross(tri[:,1]-tri[:,0],tri[:,2]-tri[:,0]),axis=1)/2
  summary={'source_stl_sha256':PIN,'original_stl_bytes':len(raw),'triangles':len(f),'exact_coordinate_unique_vertices':len(v),'full_original_triangle_sequence_equal':bool(np.array_equal(v[f],tri)),'modified_coordinates':0,'added_removed_subdivided_triangles':0,'original_builder_executed':False,'known_approximate_triangles':int(np.count_nonzero(mi)),'unknown_neutral_triangles':int(np.count_nonzero(mi==0)),'known_approximate_surface_area_fraction':float(area[mi>0].sum()/area.sum()),'materials':{q[0]:int(np.count_nonzero(mi==i))for i,q in enumerate(PALETTE)},'unknown_reasons':dict(collections.Counter(reasons[i]for i in range(len(f))if not mi[i])),'vertical_plant_wall_colored_triangles':0,'vertical_plant_wall_limit':'Existing large backing triangles mix vegetation and glazing; kept neutral without subdivision.','three_green_roof_rule_counts':{r['id']:int(np.count_nonzero(ri==j))for j,r in enumerate(rules)if r['material']=='M07'}}
- (out/'qa'/'mapping-summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))
+ (out/'qa-continuation'/'mapping-summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))
 if __name__=='__main__':main()

@@ -5,7 +5,7 @@ import bpy,numpy as np,json,argparse,sys,struct
 from mathutils import Vector
 p=argparse.ArgumentParser();p.add_argument('--out',type=Path,default=Path(__file__).resolve().parent);p.add_argument('--views',default='');a=p.parse_args(sys.argv[sys.argv.index('--')+1:]if '--'in sys.argv else[]);root=a.out
 bpy.context.preferences.filepaths.save_version=0
-D=np.load(root/'mesh-data.npz');palette=json.loads((root/'palette.json').read_text());(root/'previews').mkdir(exist_ok=True);(root/'qa').mkdir(exist_ok=True)
+D=np.load(root/'mesh-data.npz');palette=json.loads((root/'palette.json').read_text());(root/'previews').mkdir(exist_ok=True);(root/'qa-continuation').mkdir(exist_ok=True)
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 for m in list(bpy.data.materials):bpy.data.materials.remove(m)
 mesh=bpy.data.meshes.new('Original STL triangles in original order');mesh.from_pydata(D['vertices'].tolist(),[],D['faces'].tolist());mesh.update()
@@ -53,4 +53,4 @@ for screen in bpy.data.screens:
     limit=space.params.bl_rna.properties['directory'].length_max;space.params.directory=b'_'*(limit-1);space.params.directory=b'//'
    if space.type=='VIEW_3D':space.shading.color_type='MATERIAL';space.region_3d.view_perspective='CAMERA'
 bpy.ops.wm.save_as_mainfile(filepath=str(root/'ntus-changqi-appearance.blend'))
-(root/'qa'/'render-manifest.json').write_text(json.dumps({'engine':'Blender 4.3.2 Cycles, 32 samples, seed 0, actual material rendering','images_are_actual_output_mesh':True,'image_textures':0,'dimensions_px':[1200,900],'views':manifest,'orientation':'View labels follow existing model local axes, not survey compass bearings. Street is the six-bay high facade; south is long low-wing facade; north is notched library side.'},indent=2)+'\n')
+(root/'qa-continuation'/'render-manifest.json').write_text(json.dumps({'engine':'Blender 4.3.2 Cycles, 32 samples, seed 0, actual material rendering','images_are_actual_output_mesh':True,'image_textures':0,'dimensions_px':[1200,900],'views':manifest,'orientation':'View labels follow existing model local axes, not survey compass bearings. Street is the six-bay high facade; south is long low-wing facade; north is notched library side.'},indent=2)+'\n')
