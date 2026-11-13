@@ -116,6 +116,18 @@ for p in mesh.polygons:
  if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
 
+# Complete original lower gable-top strip domains; nominal stone coping family.
+continuation_baseline=list(indices)
+coping_domains=[[7797,7799],[8613,8614]]
+coping_changed=[7797,7799,8613,8614]
+for fi in coping_changed:
+ assert indices[fi]==0
+ face=mesh.polygons[fi]
+ assert face.normal.z>.8 and face.normal.y<-.59
+ for vi in face.vertices:
+  q=mesh.vertices[vi].co
+  assert 69.999<abs(q.x)<70.351 and -19.851<q.y<-6.149 and 20.856<q.z<31.074
+ face.material_index=2;indices[fi]=2
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown or unresolved surfaces neutral'
 scene=bpy.context.scene;scene['appearance_revision']='color-v2-bounded-material-continuity'
@@ -149,7 +161,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-bounded-material-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; true open arcade remains open; dark material only on actual existing door and window backing faces','Original front colors retained. V2 actual corridor and both end-entry photos show mixed pale/grey/brick surfaces. Broad end walls, buttress bodies and corridor backs remain neutral because original triangles lack real finish boundaries. Whole rear exterior support follows original front dominant brick-family approximation; unseen trim not reconstructed. Existing stone bands, rear cornice, side/rear window opaque backs and whole rear roof original slope receive same-building family continuity. Side-window family partly supported; whole rear exterior wall, rear window and roof finish inferred, no fresh complete rear pixels. No new geometry, windows, texture, letters, fake details or diagonal centroid patches. Source photography excluded','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-lower-coping-family','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'coping_complete_domains':coping_domains,'coping_changed_faces':coping_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; true open arcade remains open; dark material only on actual existing door and window backing faces','Original front colors retained. V2 actual corridor and both end-entry photos show mixed pale/grey/brick surfaces. Broad end walls, buttress bodies and corridor backs remain neutral because original triangles lack real finish boundaries. Whole rear exterior support follows original front dominant brick-family approximation; unseen trim not reconstructed. Existing stone bands, rear cornice, side/rear window opaque backs and whole rear roof original slope receive same-building family continuity. Side-window family partly supported; whole rear exterior wall, rear window and roof finish inferred, no fresh complete rear pixels. No new geometry, windows, texture, letters, fake details or diagonal centroid patches. Source photography excluded','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((170,-250,140),(0,0,17),220),'rear':((-180,250,140),(0,0,17),220),'elevation':((0,-300,17),(0,0,17),220),'source-angle':((220,-230,100),(0,0,17),220),'left':((-300,0,100),(0,0,17),220),'right':((300,0,100),(0,0,17),220),'top':((0,0,400),(0,0,17),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)

@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "scope": "Limited appearance identity, not full engineering certification",
+  "triangles": 9474,
+  "vertices": 4695,
+  "complete_domains": 2,
+  "whole_domain_faces": 4,
+  "changed_faces": [
+    7797,
+    7799,
+    8613,
+    8614
+  ],
+  "old_material": 0,
+  "new_material": 2,
+  "all_five_palette_entries_preserved": true,
+  "other_9470_material_indices_unchanged": true,
+  "native_views_exact": {
+    "front": [
+      [
+        170,
+        -250,
+        140
+      ],
+      [
+        0,
+        0,
+        17
+      ],
+      220
+    ],
+    "rear": [
+      [
+        -180,
+        250,
+        140
+      ],
+      [
+        0,
+        0,
+        17
+      ],
+      220
+    ],
+    "elevation": [
+      [
+        0,
+        -300,
+        17
+      ],
+      [
+        0,
+        0,
+        17
+      ],
+      220
+    ],
+    "source-angle": [
+      [
+        220,
+        -230,
+        100
+      ],
+      [
+        0,
+        0,
+        17
+      ],
+      220
+    ],
+    "left": [
+      [
+        -300,
+        0,
+        100
+      ],
+      [
+        0,
+        0,
+        17
+      ],
+      220
+    ],
+    "right": [
+      [
+        300,
+        0,
+        100
+      ],
+      [
+        0,
+        0,
+        17
+      ],
+      220
+    ],
+    "top": [
+      [
+        0,
+        0,
+        400
+      ],
+      [
+        0,
+        0,
+        17
+      ],
+      220
+    ]
+  },
+  "original_files_unchanged": [
+    "contour-validity-check.json",
+    "appearance-freeze.json",
+    "validate_model.py",
+    "sources.json",
+    "render_preview.py",
+    "README.zh-TW.md",
+    "check_thin_features.py",
+    "requirements.txt",
+    "build_model.py",
+    "thin-feature-check.json",
+    "check_contour_validity.py",
+    "validation.json",
+    "scene.blend",
+    "model.stl",
+    "appearance-review/color-visual-review.json",
+    "appearance-review/final-review-binding.json",
+    "appearance-review/output-geometry-review.json",
+    "appearance-review/clean-rebuild-equality.json",
+    "appearance-review/clean-material-region-check.json",
+    "appearance-review/preservation-and-readme.json",
+    "appearance-review/material-region-check.json",
+    "appearance-review/clean-geometry-review.json",
+    "appearance-review/geometry-visual-review.json",
+    "appearance-review/png-privacy.json",
+    "appearance-review-v2/source-register.json",
+    "appearance-review-v2/comparison-camera-records.json",
+    "appearance-review-v2/original-front.png",
+    "appearance-review-v2/model-verification.json",
+    "appearance-review-v2/original-rear.png",
+    "appearance-review-v2/clean-rebuild-equality.json",
+    "appearance-review-v2/color-continuity-review.json",
+    "appearance-review-v2/material-value-verification.json",
+    "appearance-review-v2/camera-consistency.json",
+    "appearance-review-v2/render-manifest-v2.json",
+    "appearance-review-v2/boundary-continuity-audit.json",
+    "previews/C_rear.png",
+    "previews/A_arcade.png",
+    "previews/B_end.png",
+    "previews/front.png",
+    "previews/elevation.png",
+    "previews/top.png",
+    "previews/rear.png",
+    "previews/D_end.png"
+  ],
+  "isolated_rebuild": "STL byte-identical (baseline has no OBJ); isolated OBJ generated only for rebuild, all3MF members/material JSON exact; original native geometry script and pinned numeric geometry dependencies retained",
+  "baseline_checksum_entries_verified": [
+    56
+  ],
+  "file_sha256": {
+    "build_model.py": "078086bf7f5d4bbf39b38644093bd59b901f45d048137dd69f2e52ff763173e8",
+    "build_appearance.py": "5ba30e01088d809765b1aa346579caba1ad6b66d3e23b3bb12bede73e66df825",
+    "model.stl": "dfefdb3ace2f0a6907792d28d5641a9c4e0cc718d83bacbb428cddbc9d67ba58",
+    "scene.blend": "3f228fa6b74c839b90b4661f9ac8b9672028ccca8221048a2d3cf16420c19134",
+    "appearance.blend": "9655c8ead6f29134d3dcea9eef0e7f4ea4f0512b1bbbec41d775069878feed38",
+    "appearance.3mf": "46fb88d1e074de07a841d899dc207aebca30faef2d61ad2923f5a398053d265b",
+    "appearance-materials.json": "351a96aae677fa683d6cde3690a9ce9d60c1047555a43bb5311aba05ef2e07b6",
+    "COPING-SOURCE-QA.json": "ada2adab9ee4fdaeba90e553be44e315e4d09da0f427162880d7a6982cc7b288",
+    "BASELINE-CHECKSUM-AUDIT.json": "a691c594dbacdbbcd2a22a9af4f64f513c97a9e06f60a425fd1aef875bd4c27b",
+    "CHECKSUM-SCOPE.md": "1870ccca1797278f12c8ec6f214128089383dc6b78d364270bc15339e5a9d86c",
+    "APPEARANCE.md": "593307834c5b3500fdd64b2f56dac65ab1c94508021e22d249f27069314bbf13",
+    "README.md": "e2f44cc83647e0e1389fb8d0412eccab6dcc3c2f0cae943943c98f71ff88c462"
+  },
+  "image_sha256": {
+    "appearance/front.png": "64eaae614ca2dd6375079b58c5a92e2dcd509cd2939249698b82faa21aa52d38",
+    "appearance/rear.png": "c733bb3b0d3c6013a3dfeb9bb4a25a54981e3bc1feafe1a5c9a5a85870b23514",
+    "appearance/elevation.png": "3b2750c8eeb1d2a746d35f00c0b5a2e8b57672081d14b1e51902977c98228d12",
+    "appearance/source-angle.png": "6284c7c3222a44017ef75da85fbf2142f64de7e903653349b3f7722e67278999",
+    "appearance/left.png": "dad26c881b98254f14688592e80c45dd09c36c594ddd4cd28000b454fe641b4a",
+    "appearance/right.png": "d0f45cb2e9060f7ce0c1a0a5d83c92b4e24be599c67b41a220ef533697d2501a",
+    "appearance/top.png": "d38c1c1285da6b5286c67c2d21a912de27d0c06dabc5fdc3888b75ca04a71be4"
+  }
+}

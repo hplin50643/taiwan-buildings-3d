@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "scope": "Limited coping material-family extension, not engineering certification",
+  "triangles": 9474,
+  "vertices": 4695,
+  "changed_faces": [
+    7797,
+    7799,
+    8613,
+    8614
+  ],
+  "complete_domains": [
+    [
+      7797,
+      7799
+    ],
+    [
+      8613,
+      8614
+    ]
+  ],
+  "transition": [
+    0,
+    2
+  ],
+  "checks": {
+    "original_geometry_exact": true,
+    "other9470_material_indices_unchanged": true,
+    "all5_palette_entries_unchanged": true,
+    "43_original_files_unchanged": true,
+    "56_original_checksum_entries_at_pinned_public_repository_verified": true,
+    "isolated_STL_byte_exact": true,
+    "isolated_3MF_members_and_material_JSON_exact": true,
+    "saved_scene_independently_reopened": true,
+    "camera_lights_transforms_render_parameters_unchanged": true,
+    "7_original900x800_views_viewed": true,
+    "native_camera_definitions_unchanged": true
+  },
+  "visual_findings": "Seven standard rendered views inspected, including source-angle at native resolution; no apparent geometry or framing regression. Change is confined to thin lower coping strips, not whole gable walls or roof tiles.",
+  "public_source_urls": [
+    "https://juliepr168.blogspot.com/2024/09/blog-post_11.html"
+  ],
+  "limitations": [
+    "Original end walls/roofs are simplified: thin exposed top strip is nominal cap proxy, no added cap thickness or surveyed correspondence.",
+    "Full top skin not directly visible; limited same-component material-family inference from clearly visible gray cap edge.",
+    "Existing gray stone palette is approximate, not a calibrated matching dark weathered cap colour.",
+    "Upper slope/peak strips excluded for weaker visual coverage; broad end wall retains mixed grey-base/red-brick uncertainty.",
+    "All five original palette values,4695vertices/9474triangles and9470other indices retained. Original printability caveats, no trial print, remain."
+  ],
+  "file_sha256": {
+    "build_model.py": "078086bf7f5d4bbf39b38644093bd59b901f45d048137dd69f2e52ff763173e8",
+    "build_appearance.py": "5ba30e01088d809765b1aa346579caba1ad6b66d3e23b3bb12bede73e66df825",
+    "appearance-materials.json": "351a96aae677fa683d6cde3690a9ce9d60c1047555a43bb5311aba05ef2e07b6",
+    "appearance.3mf": "46fb88d1e074de07a841d899dc207aebca30faef2d61ad2923f5a398053d265b",
+    "appearance.blend": "9655c8ead6f29134d3dcea9eef0e7f4ea4f0512b1bbbec41d775069878feed38",
+    "scene.blend": "3f228fa6b74c839b90b4661f9ac8b9672028ccca8221048a2d3cf16420c19134",
+    "model.stl": "dfefdb3ace2f0a6907792d28d5641a9c4e0cc718d83bacbb428cddbc9d67ba58",
+    "README.md": "e2f44cc83647e0e1389fb8d0412eccab6dcc3c2f0cae943943c98f71ff88c462",
+    "APPEARANCE.md": "593307834c5b3500fdd64b2f56dac65ab1c94508021e22d249f27069314bbf13",
+    "CHECKSUM-SCOPE.md": "1870ccca1797278f12c8ec6f214128089383dc6b78d364270bc15339e5a9d86c",
+    "BASELINE-CHECKSUM-AUDIT.json": "a691c594dbacdbbcd2a22a9af4f64f513c97a9e06f60a425fd1aef875bd4c27b",
+    "COPING-SOURCE-QA.json": "ada2adab9ee4fdaeba90e553be44e315e4d09da0f427162880d7a6982cc7b288",
+    "COPING-NUMERIC-QA.json": "7edc35fee9fdf753f412b84f9e82db7466abb147455a5898e763911543013480",
+    "validation.json": "f12f664b03189c35433cce1b9d2f0ca9750aafc91761e74fce273e4e6254cd00",
+    "thin-feature-check.json": "bb32fc862fb6224960da8b0f29145262b82cd6d975664782390ff335453d7b0e",
+    "contour-validity-check.json": "1cf192e733076bcce96a237f27066ed961ec74ec74a6afeef8857ca358e74a26"
+  },
+  "image_sha256": {
+    "appearance/front.png": "64eaae614ca2dd6375079b58c5a92e2dcd509cd2939249698b82faa21aa52d38",
+    "appearance/rear.png": "c733bb3b0d3c6013a3dfeb9bb4a25a54981e3bc1feafe1a5c9a5a85870b23514",
+    "appearance/elevation.png": "3b2750c8eeb1d2a746d35f00c0b5a2e8b57672081d14b1e51902977c98228d12",
+    "appearance/source-angle.png": "6284c7c3222a44017ef75da85fbf2142f64de7e903653349b3f7722e67278999",
+    "appearance/left.png": "dad26c881b98254f14688592e80c45dd09c36c594ddd4cd28000b454fe641b4a",
+    "appearance/right.png": "d0f45cb2e9060f7ce0c1a0a5d83c92b4e24be599c67b41a220ef533697d2501a",
+    "appearance/top.png": "d38c1c1285da6b5286c67c2d21a912de27d0c06dabc5fdc3888b75ca04a71be4"
+  }
+}
