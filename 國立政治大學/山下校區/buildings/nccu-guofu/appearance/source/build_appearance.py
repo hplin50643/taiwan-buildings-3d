@@ -4,7 +4,7 @@ import struct,hashlib,json,zipfile,xml.etree.ElementTree as E
 import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='be0b31f7f6546fccaf51c47a811cf4c8425e1c426e31bed020e71cb6d59fcf29'
-PALETTE=[('neutral_unconfirmed_frames_envelope_base','#AAA79F'),('observed_gray_green_roof_tile_proxy','#647B60')]
+PALETTE=[('neutral_unconfirmed_frames_envelope_base','#AAA79F'),('observed_gray_green_roof_tile_proxy','#647B60'),('approximate_gray_upper_portal_frame','#9A9C94')]
 def classify(tri):
  v=tri;e=.0002;color=np.zeros(len(v),dtype=int);why=np.full(len(v),'neutral_unconfirmed_or_outside_documented_scope',dtype=object)
  t=(v[:,:,2]-27.2)/4
@@ -13,6 +13,9 @@ def classify(tri):
  left=common&(abs(v[:,:,0]-(-36.5-15.035*t))<e).all(1)&(abs(v[:,:,1]-2)<=24-7.68*t+e).all(1)
  assert main.sum()==10 and left.sum()==9 and not (main&left).any()
  color[main|left]=1;why[main]='documented_main_courtyard_roof_complete_surface';why[left]='documented_left_inner_roof_complete_surface'
+
+ ids=[426, 430, 441, 445, 457, 474];assert not color[ids].any()
+ color[ids]=2;why[ids]='complete_upper_portal_frame_front_gray_family'
  return color,why
 
 def writezip(path,files):
@@ -20,7 +23,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-frame-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -38,7 +41,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official memory-site captions date front and side photos to 2009; front EXIF DateTime 2009-05-08, side lacks date EXIF. 2025 supplementary photo does not prove unchanged color. Uncalibrated historical gray-green tile proxy, not 2026 condition','scope':'Only main courtyard roof slope 10 and left inner slope 9 complete triangles. All ridges, eaves, other slopes, walls, windows and base remain neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official memory-site captions date front and side photos to 2009; front EXIF DateTime 2009-05-08, side lacks date EXIF. 2025 supplementary photo does not prove unchanged color. Uncalibrated historical gray-green tile proxy, not 2026 condition','scope':'Only main courtyard roof slope 10 and left inner slope 9 complete triangles. Continuation adds6 complete upper portal upright/lintel frontfaces. Other ridges, eaves, slopes, walls, windows and base remain neutral.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

@@ -21,6 +21,9 @@ def classify(tri):
     union|=m&(v[:,:,1]<=-4+e).all(1)
    assert not color[union].any();color[union]=typ;why[union]=f'observed_front_half_{cx}_{PALETTE[typ][0]}'
  assert np.bincount(color).tolist()==[6118,264,128]
+
+ ids=[3965, 3974, 4054, 4066];assert not color[ids].any()
+ color[ids]=1;why[ids]='complete_upper_wing_fascia_front_white_family'
  return color,why
 
 def writezip(path,files):
@@ -28,7 +31,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-fascia-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -46,7 +49,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official front photo capture date unknown; oblique photo EXIF Original/Digitized and XMP CreateDate 2018-05-30, Modify 2018-10-11. Uncalibrated opaque material proxies, not exact color or 2026 condition.','scope':'392 complete original triangles: front-half upper cylinder skin 264 warm-white faces and cone roofs 128 silver-grey faces; all 3 vertices on original 64-sided support planes, y<=-4. Rear halves, window holes, horizontal caps, ring bands, brick walls and central windows neutral. Original front section only, not whole building. No new geometry.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official front photo capture date unknown; oblique photo EXIF Original/Digitized and XMP CreateDate 2018-05-30, Modify 2018-10-11. Uncalibrated opaque material proxies, not exact color or 2026 condition.','scope':'Original392 complete triangles plus4 upperwing fascia front triangles: front-half upper cylinder skin 264 warm-white faces and cone roofs 128 silver-grey faces; all 3 vertices on original 64-sided support planes, y<=-4. Rear halves, window holes, horizontal caps, other ring bands, brick walls and central windows neutral. Original front section only, not whole building. No new geometry.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

@@ -4,7 +4,7 @@ import struct,hashlib,json,zipfile,xml.etree.ElementTree as E
 import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='c791646865a9093b141ede99f2c669587ab3a69df91b22eccd374c76eb83223c'
-PALETTE=[('neutral_mixed_walls_roof_entry_and_print_backing','#AAA79F'),('source_front_muted_gold_shading_boxes','#B4A451'),('source_day_teal_cylinder_glazing_proxy','#638E8A'),('source_silver_cap_rings_and_original_mullions','#B3BCBB')]
+PALETTE=[('neutral_mixed_walls_roof_entry_and_print_backing','#AAA79F'),('source_front_muted_gold_shading_boxes','#B4A451'),('source_day_teal_cylinder_glazing_proxy','#638E8A'),('source_silver_cap_rings_and_original_mullions','#B3BCBB'),('approximate_dark_podium_front','#40494B')]
 def classify(tri):
  from shapely.geometry import Polygon
  a=np.deg2rad(2.5);S=150/(88*np.cos(a)+62*np.sin(a));t=tri.copy()/S;t=t@np.array([[np.cos(a),np.sin(a),0],[-np.sin(a),np.cos(a),0],[0,0,1]]);t[:,:,2]-=1.3;eps=3e-5;out={};spec={}
@@ -56,6 +56,10 @@ def classify(tri):
  for prefix,k,label,expected in [('yellow_',1,'source_day_front_shading_box_whole_surface_bounded_extension',328),('teal_',2,'source_day_cylinder_original_polygon_recessback_glazing_proxy',1520),('silver_',3,'source_day_original_polygon_rings_cap_outer_and_box_mullions',8806)]:
   ids=sorted(set(i for key,vals in out.items() if key.startswith(prefix) for i in vals));assert len(ids)==expected,(prefix,len(ids));assert not np.any(color[ids]);color[ids]=k;why[ids]=label;sets.append(set(ids))
  assert all(not (sets[i]&sets[j]) for i in range(3) for j in range(i))
+
+ # Whole source-supported front podium plane only; no new geometric color boundary.
+ selected=np.zeros(len(t),dtype=bool);selected[[9316, 9317, 9318, 9319, 9320, 9321, 9324, 9325, 9326, 9327, 9328, 9329, 9330, 9331, 9332, 9333, 9334, 9335, 9336, 9337, 9338, 9339, 9340, 9341, 9342, 9343, 9344, 9347, 9350, 9351, 9352, 9353, 9354, 9355, 9356, 9357, 9358, 9359, 9360, 9361, 9362, 9363, 9364, 9365, 9366, 9367, 9368, 9369, 9370, 9371, 9372, 9373, 9374, 9375, 9376, 9377, 9378, 9379, 9380, 9381, 9382, 9383, 9384, 9385, 9386, 9388, 9389, 9401, 9402, 9403, 9404, 9405, 9406, 9407, 9408, 9409, 9410, 9411, 9412, 9413, 9414, 9415, 9416, 9417, 9418, 9419, 9420, 9421, 9422, 9423, 9424, 9425, 9426, 9427, 9428, 9429, 9430, 9431, 9432, 9433, 9434, 9435, 9436, 9437, 9438, 9439, 9440, 9441, 9444, 9445, 9446, 9447, 9448, 9449, 9451, 9452, 9453, 9454, 9455, 9456, 9528, 9529, 9530, 9531, 9532, 9533, 9534, 9535, 9537, 9538, 9539, 9540, 9541, 9542, 9543, 9544, 9545, 9546, 9547, 9548, 9549, 9550, 9551, 9552, 9553, 9554, 9555, 9556, 9557, 9559, 9560, 9561, 9562, 9563, 9564, 9565, 9566, 9567, 9568, 9569, 9570, 9571, 9572, 9573, 9574, 9575, 9576, 9577, 9578, 9579, 9580, 9581, 9582, 9583, 9584, 9585, 9586, 9587, 9588, 9589, 9592, 9594, 9595, 9596, 9597, 9598, 9599, 9600, 9601, 9603, 9604, 9610, 9611, 9612, 9613, 9614, 9615, 9616, 9617, 9619, 9620, 9635, 9636, 9637, 9638, 9639, 9640, 9641, 9642, 9643, 9644, 9645, 9646, 9647]]=True
+ assert np.all(abs(t[selected,:,1]+28)<1e-5);assert not color[selected].any();color[selected]=4;why[selected]='original_front_podium_dark_background_bounded_extension'
  return color,why
 
 def writezip(path,files):
@@ -63,7 +67,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-wall-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -81,7 +85,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'OCU official historicalgallery five completephotos; daytime2007/2010 primary. Mutedgold frontshadingboxes, restrainedteal cylinderrecessbacks, silver exact capouter/rings/mullions','scope':'Exact inverseplanrotation/scale and originalbox or polygonannulus surfaces only. Wholetriangle containment, nogeometrycuts. Mainwalls/generalwindows/lowpodium/entry/roofs/northshading neutral; originalprintonly crownbackingwebs, slopingbraces andskirt neutral. Historicalmetadata notcurrentcondition; photosprivate.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'OCU official historicalgallery five completephotos; daytime2007/2010 primary. Mutedgold frontshadingboxes, restrainedteal cylinderrecessbacks, silver exact capouter/rings/mullions','scope':'Exact inverseplanrotation/scale and originalbox or polygonannulus surfaces only. Wholetriangle containment, nogeometrycuts. Additionally214 whole frontpodium wallfaces approximate darkgray; remaining unregistered mainwalls/windows/podiumsides/entry/roofs/northshading neutral; originalprintonly crownbackingwebs, slopingbraces andskirt neutral. Historicalmetadata notcurrentcondition; photosprivate.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

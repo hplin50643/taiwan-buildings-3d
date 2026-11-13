@@ -16,5 +16,7 @@ for z in [72.8,85.8,98.8]:
     ids.append(i);records.append({'face':i,'layer_z':z,'facet':k,'max_plane_error_mm':float(distance.max()),'edge_parameter_range':[float(min(u)),float(max(u))]});break
  assert len(ids)==36,(z,len(ids));layers[str(z)]=ids;selected.update(ids)
 assert selected==set(np.where(c==1)[0]);assert len(selected)==108
-r={'method':'Independent 48-gon edge endpoint projection and signed outward unit normal; every vertex on same finite outer facet','full_triangle_membership_only':True,'no_centroid_or_subdivision':True,'layers':layers,'colored_faces':108,'neutral_faces':int((c==0).sum()),'inner_arcs_caps_undersides_end_faces_excluded':True,'scout_delta_faces':[2640,2758,2876],'scout_delta_reason':'Initial raw normal-z tolerance rejected float32-rounded small triangles; finite facet proof confirms entire outer surface','facet_checks':records}
-(A/'qa/material-boundaries.json').write_text(json.dumps(r,indent=2)+'\n');print('PASS independent 48-edge facet proof: 108 full triangles')
+assert (c==2).sum()==14
+assert np.all(abs(t[c==2,:,1]+21.3)<1e-5)
+r={'new_band_faces':14,'method':'Independent 48-gon edge endpoint projection and signed outward unit normal; every vertex on same finite outer facet','full_triangle_membership_only':True,'no_centroid_or_subdivision':True,'layers':layers,'colored_faces':108,'neutral_faces':int((c==0).sum()),'inner_arcs_caps_undersides_end_faces_excluded':True,'scout_delta_faces':[2640,2758,2876],'scout_delta_reason':'Initial raw normal-z tolerance rejected float32-rounded small triangles; finite facet proof confirms entire outer surface','facet_checks':records}
+(A/'qa-band-continuation/material-boundaries.json').write_text(json.dumps(r,indent=2)+'\n');print('PASS independent 48-edge facet proof: 108 full triangles')

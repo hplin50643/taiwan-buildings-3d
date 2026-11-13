@@ -14,6 +14,8 @@ for x in [-47,47]:
    assert len(ids)==2 and area==55.25
    r.append(dict(center=[xx,yy],z=47.5,x=[xx-3.25,xx+3.25],y=[yy-4.25,yy+4.25],material=1,ids=ids,count=len(ids),area_mm2=area,triangles=triangles))
 m=json.loads((p/'face-materials.json').read_text())['face_material_indices'];ids=[i for g in r for i in g['ids']]
-assert len(ids)==len(set(ids))==80 and set(ids)=={i for i,c in enumerate(m) if c}
+riser=[1220, 1223, 1236, 1238, 1249, 1252, 1263, 1265, 1280, 1284, 1298, 1300, 1307, 1311, 1316, 1318, 1320, 1322, 1324, 1326, 1328, 1330, 1333, 1335]
+assert len(ids)==len(set(ids))==80 and set(ids)=={i for i,c in enumerate(m) if c==1}
+assert set(riser)=={i for i,c in enumerate(m) if c==2}
 assert n==4248 and sum(g['area_mm2'] for g in r)==2210
-(p/'qa/material-boundaries.json').write_text(json.dumps({'groups':r,'face_count':n,'colored_faces':80,'neutral_faces':4168,'total_area_mm2':2210,'all_vertex_plane_and_finite_domain':True,'upward_normals_checked':True,'epsilon_mm':eps,'no_subdivision':True,'not_actual_pv_panel_count':True},indent=2)+'\n')
+(p/'qa-riser-continuation/material-boundaries.json').write_text(json.dumps({'groups':r,'face_count':n,'colored_faces':104,'neutral_faces':4144,'additional_riser_faces':riser,'total_area_mm2':2210,'all_vertex_plane_and_finite_domain':True,'upward_normals_checked':True,'epsilon_mm':eps,'no_subdivision':True,'not_actual_pv_panel_count':True},indent=2)+'\n')

@@ -20,3 +20,9 @@
 | 側面<br>![側面](previews/side.png) | 頂面<br>![頂面](previews/top.png) |  |
 
 原 model.stl 與 appearance 同父層。Python（numpy 2.3.5、lib3mf 2.5.0）依序執行 source/build_appearance.py、source/verify_exchange.py、source/verify_material_boundaries.py；Blender 4.3.2 執行 source/render_appearance.py、source/verify_scene.py。乾淨重建核 3MF、maps、五 PNG bytes；Blend 核語義，不宣稱二進位確定性。驗證含 strict lib3mf 真材質修改存讀、Blender 真材質/頂點修改存讀及重開渲染。
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+兩翼原簷前垂直整矩形共4面0→既有warmwhite1；6510面geometry/order保持，其餘6506面/3材不變。白268、銀灰128、中性6114。全三角原box支承，不切新界；原厚度/位置/中央翼交會粗代理，非與圓筒相同磚產品或精測色。不頂底/側返/灰壓頂/下灰帶/玻璃/中央牆。原前截段與照片日期限制保留。
+模型與原生視角圖沿用完成候選的原bytes；不改幾何、不增加分界、不稱全棟精確配色或實體試印通過。公開預覽只含模型，不含新增圖片文字。原來源年代、工程及列印限制仍適用。先前敘述與審核屬其原版本，本段僅更新上述局部範圍。
+本次只交付模型、必要重建輸入/腳本、預覽與此說明；完整研究與獨立審核紀錄另行保留，不在本批公開。PUBLIC-MODEL-SHA256SUMS只核本次所列公開產品，舊校驗與QA不代表本次新版。

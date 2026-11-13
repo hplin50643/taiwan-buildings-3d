@@ -5,6 +5,8 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='e0ea088d1f0731101ec94be59c75105435bcfb5ba3c80fc0429eec612dbc6b3e'
 PALETTE=[('neutral_unverified_surfaces_and_existing_frames','#AAA79F'),('muted_gray_blue_window_backs','#5C6B6E'),('medium_gray_existing_plinth_exterior','#70706B')]
+PALETTE.append(('approximate_pale_outer_crown_fascia_background','#C6C5B9'))
+ids=[2603, 2604, 2605, 2607, 2610, 2613, 2614, 2616, 2618, 2619, 2620, 2623, 2625, 2627, 2631, 2637, 2647, 2648, 2651, 2652, 2654, 2657, 2659, 2660, 2661, 2668, 2669, 2671, 2672, 2675, 2676, 2678, 2681, 2693, 2694, 2697, 2699, 2702, 2704, 2707, 2709, 2717, 2718, 2719, 2721, 2723, 2725, 2727, 2729, 2737, 2751, 2753, 2754, 2756, 2759, 2761, 2764, 2765, 2767, 2768, 2779, 2781, 2782, 2787, 2789, 2797, 2799, 2802, 2808, 2809, 2813, 2814, 2818, 2820, 2823, 2825, 2828, 2830, 2833, 2834, 2842, 2845, 2846, 2848, 2849, 2857, 2859, 2861, 2866, 2869, 2870, 2871, 2878, 2881, 2883, 2886, 2887, 2895, 2896, 2899, 2900, 2907, 2908, 2911, 2912, 2918, 2923, 2925, 2926, 2930, 2931, 2936, 2940, 2943, 2944, 2948, 2949, 2956, 2960, 2961, 2964, 2967, 2971, 2972, 2975, 2980, 2981, 2982, 2989, 2990, 2993, 2997, 3002, 3004, 3008, 3011, 3013, 3017, 3020, 3023, 3025, 3028, 3030, 3033]
 def classify(tri):
  t=tri;z=t[:,:,2];xy=t[:,:,:2];eps=.002
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'neutral_unverified_or_unsegmented_surface',dtype=object)
@@ -23,6 +25,8 @@ def classify(tri):
   m=bounds&external;assert m.sum()==6 and np.all(color[m]==0)
   color[m]=2;why[m]='whole_existing_plinth_outer_vertical_faces_a%s'%a
  assert (color==1).sum()==80 and (color==2).sum()==36
+ assert not color[ids].any()
+ color[ids]=3;why[ids]="whole_original_outer_crown_fascia_facet"
  return color,why
 
 def writezip(path,files):
@@ -30,7 +34,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-rim-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -48,7 +52,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official NPU front and side photographs, capture dates unknown; uncalibrated display proxies, not current condition proof','scope':'Only 80 complete window-back triangles and 36 complete existing plinth exterior triangles; all other faces neutral. Continuous awning held neutral because original geometry lacks real segmented boundaries.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official NPU front and side photographs, capture dates unknown; uncalibrated display proxies, not current condition proof','scope':'Original80windowbacks/36plinthfaces retained; only144outerverticalcrownfascia new3. Remaining4662neutral. Top/bottom/inner ring/artificial rear/awning unchanged.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

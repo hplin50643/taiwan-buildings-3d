@@ -17,7 +17,7 @@ mesh=bpy.data.meshes.new('Original_STL_triangles_exact_order');mesh.from_pydata(
 obj=bpy.data.objects.new('FGU Huaien Hall - original mesh, material annotations',mesh);scene.collection.objects.link(obj)
 def linear(c):return c/12.92 if c<=.04045 else ((c+.055)/1.055)**2.4
 for p in info['palette']:
- rgb=[int(p['hex'][j:j+2],16)/255 for j in (1,3,5)];mat=bpy.data.materials.new(p['id']);mat.diffuse_color=(*[linear(c) for c in rgb],1);mat.use_nodes=True;bs=mat.node_tree.nodes['Principled BSDF'];bs.inputs['Base Color'].default_value=mat.diffuse_color;bs.inputs['Roughness'].default_value=.55 if p['id']!='glazing_dark_reflective' else .30;mat['display_srgb_hex']=p['hex'];mat['meaning']=p['meaning'];mat['sources']=', '.join(p['sources']);mesh.materials.append(mat)
+ rgb=[int(p['hex'][j:j+2],16)/255 for j in (1,3,5)];mat=bpy.data.materials.new(p['id']);mat.diffuse_color=(*[linear(c) for c in rgb],1);mat.use_nodes=True;bs=mat.node_tree.nodes['Principled BSDF'];bs.inputs['Base Color'].default_value=mat.diffuse_color;bs.inputs['Roughness'].default_value=.78 if p['id']=='approximate_gallery_column_front' else (.55 if p['id']!='glazing_dark_reflective' else .30);mat['display_srgb_hex']=p['hex'];mat['meaning']=p['meaning'];mat['sources']=', '.join(p['sources']);mesh.materials.append(mat)
 original_ids=mesh.attributes.new('original_stl_face_id','INT','FACE')
 for i,(poly,mi) in enumerate(zip(mesh.polygons,d['materials'])):poly.material_index=int(mi);poly.use_smooth=False;original_ids.data[i].value=i
 obj['original_stl_sha256']=info['source_stl_sha256'];obj['scope']=info['scope'];obj['unknown_policy']=info['unknown_policy'];obj['third_party_pixels_embedded']=False;obj['triangle_order']='Original binary STL triangle order; coordinate tuples indexed by first occurrence';obj['known_glazing_bays']='enclosed -56.25,-45,-33.75; open 78.75,90,101.25 degrees'
@@ -61,4 +61,4 @@ if a.render:
   setview(name);scene.render.filepath='//previews/'+name+'.png';bpy.ops.render.render(write_still=True)
 setview('front');cleanpaths();bpy.ops.wm.save_as_mainfile(filepath=str(out/'scene.blend'))
 (out/'render-manifest.json').write_text(json.dumps({'views':{name:{'position_mm':pos,'target_mm':target,'ortho_scale_mm':scale,'file':'previews/'+name+'.png'} for name,(pos,target,scale) in views.items()},'renderer':'Blender 4.3.2 Workbench studio','model_object':obj.name,'original_triangles':len(mesh.polygons),'geometry_modified':False,'materials':len(mesh.materials),'textures':False,'display_uncertainty':'Lighting and sRGB approximations; no calibrated finish match.'},indent=2)+'\n')
-print('Editable original mesh saved: 36870 triangles; 4 face-material slots; 0 textures.')
+print('Editable original mesh saved: 36870 triangles; 5 face-material slots; 0 textures.')

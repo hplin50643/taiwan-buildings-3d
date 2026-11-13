@@ -4,7 +4,7 @@ import struct,hashlib,json,zipfile,xml.etree.ElementTree as E
 import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='1621b5d9a863db687ba9b426bef0c7d014a9330138dbdb3a6858bdda71e359c4'
-PALETTE=[('neutral_unconfirmed_structure','#AAA79F'),('observed_classroom_glazing_proxy','#586566')]
+PALETTE=[('neutral_unconfirmed_structure','#AAA79F'),('observed_classroom_glazing_proxy','#586566'),('approximate_pale_perforated_screen_front','#CECEC2')]
 def regions():
  for floor in range(7):
   z=5+floor*9.3
@@ -18,6 +18,10 @@ def classify(tri):
   mask=plane&(v[:,:,0]>=x0-e).all(1)&(v[:,:,0]<=x1+e).all(1)&(v[:,:,2]>=z0-e).all(1)&(v[:,:,2]<=z1+e).all(1)
   assert not color[mask].any();color[mask]=1;why[mask]=name
  assert np.bincount(color).tolist()==[13876,230]
+
+ # Complete original lowest east screen front, no subdivision or backing change.
+ ids=[7944, 7945, 7949, 7951, 7952, 7954, 7957, 7959, 7960, 7962, 7965, 7966, 7967, 7970, 7974, 7975, 7979, 7981, 7982, 7984, 7987, 7989, 7990, 7992, 7995, 7996, 7997, 8000, 8004, 8005, 8009, 8011, 8012, 8013, 8017, 8018, 8020, 8021, 8024, 8025, 8027, 8029, 8033, 8037, 8039, 8044, 8046, 8047, 8051, 8053, 8057, 8060, 8063, 8067, 8070, 8071, 8075, 8077, 8081, 8084, 8087, 8091, 8094, 8096, 8099, 8101];assert not color[ids].any();assert np.all(abs(v[ids,:,0]-55.7)<2e-5)
+ color[ids]=2;why[ids]='complete_lowest_east_grid_front_pale_masonry_approximation'
  return color,why
 
 def writezip(path,files):
@@ -25,7 +29,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-grid-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -43,7 +47,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Author original photos 1, 8, 12 actually viewed. Capture dates unknown; article published 2021 is not capture evidence. Uncalibrated opaque low-saturation glazing proxy; not present-day accuracy.','scope':'Only 230 complete original -Y classroom pane backing triangles in 57 bays, upper/lower panes. All opaque walls, mixed gray bands and white piers, reveals, other elevations, roof and courtyard slots stay neutral. No geometry changes.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Author original photos 1, 8, 12 actually viewed. Capture dates unknown; article published 2021 is not capture evidence. Uncalibrated opaque low-saturation glazing proxy; not present-day accuracy.','scope':'Only 230 complete original -Y classroom pane backing triangles in 57 bays, upper/lower panes. Limited continuation additionally colors the complete66face lowest east relief lattice front only in approximate pale masonry; no backing/hole-return/frame changes. Other opaque mixed walls, roofs and courtyard stay neutral. No geometry changes.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

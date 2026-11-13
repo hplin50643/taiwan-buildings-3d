@@ -27,6 +27,8 @@ def classify(tri):
  paint(tower&((np.all(abs(t[:,:,0]+42)<.0002,axis=1))|(np.all(abs(t[:,:,1]-16)<.0002,axis=1))),1,'registered_visible_service_tower_rose')
  for z in [12,28,44,60]:paint(np.all(abs(t[:,:,0]+40.85)<.0002,axis=1)&(lo[:,1]>=23.9998)&(hi[:,1]<=34.0002)&zz(z,z+10),3,'existing_service_tower_recess_back_glazing')
  paint(hi[:,2]<=3.0001,5,'display_base_not_landscape')
+ assert not color[[2538,3018]].any()
+ color[[2538,3018]]=2;why[[2538,3018]]='whole_existing_endpoint_rim_facet_offwhite_family_approximation'
  return color,why
 
 def writezip(path,files):
@@ -34,7 +36,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-rim-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)

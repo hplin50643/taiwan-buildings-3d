@@ -17,7 +17,9 @@ for i in range(struct.unpack_from('<I',b,80)[0]):
   y0=y-d/2;y1=y-d*sy/2;m=h/(y1-y0)
   if n[2]>0 and n[1]<0 and abs(n[0])<eps and abs(n[1]+m*n[2])<eps and all(y0-eps<=q[1]<=y1+eps and abs(q[0])<=w/2*(1-.08*(q[1]-y0)/(y1-y0))+eps and abs(q[2]-z-m*(q[1]-y0))<eps for q in v):
    assert color==0;groups[name].append(i);color=2
+ if i in [1261, 1262, 1263, 1268, 1269, 1270]:
+  assert color==0 and n[0]>0 and n[2]>0;assert all(abs(q[2]-(29.6-(1.8/2.15)*(q[0]-20)))<1e-5 for q in v);color=2
  assert fm['face_material_indices'][i]==color,(i,color)
 assert [len(x) for x in groups.values()]==[190,4,4]
-(A/'qa/material-boundaries.json').write_text(json.dumps({'groups':groups,'white_surface_matches':matches,'all_three_vertices_same_plane_and_support':True,'geometric_normals_verified':True,'original_stl_normals_not_trusted_for_selection':True,'white_planes':50,'colored_faces':198,'neutral_faces':4180,'no_subdivision':True,'unknown_walls_glass_endframes_side_roofs_unchanged':True},indent=2)+'\n')
-print('independent exact boundary pass 190 + 4 + 4')
+(A/'qa-roof-continuation/material-boundaries.json').write_text(json.dumps({'groups':groups,'white_surface_matches':matches,'all_three_vertices_same_plane_and_support':True,'geometric_normals_verified':True,'original_stl_normals_not_trusted_for_selection':True,'white_planes':50,'colored_faces':204,'neutral_faces':4174,'new_right_slope_faces':[1261, 1262, 1263, 1268, 1269, 1270],'no_subdivision':True,'unknown_walls_glass_endframes_other_side_roofs_unchanged':True},indent=2)+'\n')
+print('boundary pass: original190+4+4 and new right slope6')

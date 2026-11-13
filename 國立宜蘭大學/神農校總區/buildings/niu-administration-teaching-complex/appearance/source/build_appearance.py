@@ -4,7 +4,7 @@ import struct,hashlib,json,zipfile,xml.etree.ElementTree as E
 import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='d8f9925c97d2076d1aa4eec343b0fbf9aa6bb24ccfc9c32b52974394d5df2bdd'
-PALETTE=[('neutral_unconfirmed_structure','#AAA79F'),('observed_upper_front_glazing_proxy','#98ABB2')]
+PALETTE=[('neutral_unconfirmed_structure','#AAA79F'),('observed_upper_front_glazing_proxy','#98ABB2'),('approximate_pale_gray_admin_front_wall','#B8B9AE')]
 def regions():
  yield from [('z41.2_window1', -47.853818181818184, -41.164363636363646, 42.325, 47.575), ('z41.2_window2', -36.61854545454545, -32.174181818181815, 42.325, 47.575), ('z41.2_window3', -29.179636363636366, -23.314909090909094, 42.325, 47.575), ('z41.2_window4', -16.985454545454544, -12.86181818181818, 42.325, 47.575), ('z41.2_window5', -9.209454545454545, 0.04581818181818065, 42.325, 47.575), ('z41.2_window6', 5.838545454545456, 10.786909090909091, 42.325, 47.575), ('z41.2_window7', 17.862545454545447, 27.301090909090902, 42.325, 47.575), ('z41.2_window8', 33.208363636363636, 35.45345454545454, 42.325, 47.575), ('z41.2_window9', 38.307272727272725, 47.24181818181818, 42.325, 47.575), ('z32.0_window1', -49.20545454545455, -44.85272727272727, 33.125, 38.375), ('z32.0_window2', -39.70799999999999, -32.88109090909091, 33.125, 38.375), ('z32.0_window3', -28.220727272727274, -24.601090909090914, 33.125, 38.375), ('z32.0_window4', -20.343272727272726, -13.562181818181818, 33.125, 38.375), ('z32.0_window5', -8.780727272727276, -3.328363636363639, 33.125, 38.375), ('z32.0_window6', 2.8047272727272725, 10.089818181818181, 33.125, 38.375), ('z32.0_window7', 14.373818181818187, 18.22254545454546, 33.125, 38.375), ('z32.0_window8', 23.746909090909085, 29.794909090909087, 33.125, 38.375), ('z32.0_window9', 36.55309090909091, 43.105090909090904, 33.125, 38.375), ('z22.8_window1', -48.32181818181818, -41.67818181818182, 23.925, 29.175), ('z22.8_window2', -37.00145454545454, -32.51127272727272, 23.925, 29.175), ('z22.8_window3', -28.49236363636363, -23.08581818181818, 23.925, 29.175), ('z22.8_window4', -17.266909090909095, -13.234909090909094, 23.925, 29.175), ('z22.8_window5', -8.934545454545454, -1.145454545454546, 23.925, 29.175), ('z22.8_window6', 5.023636363636367, 10.750909090909094, 23.925, 29.175), ('z22.8_window7', 15.185454545454553, 19.767272727272733, 23.925, 29.175), ('z22.8_window8', 24.463636363636365, 30.19090909090909, 23.925, 29.175), ('z22.8_window9', 36.55309090909091, 43.105090909090904, 23.925, 29.175)]
 def classify(tri):
@@ -14,6 +14,10 @@ def classify(tri):
   mask=plane&(v[:,:,0]>=x0-e).all(1)&(v[:,:,0]<=x1+e).all(1)&(v[:,:,2]>=z0-e).all(1)&(v[:,:,2]<=z1+e).all(1)
   assert not color[mask].any();color[mask]=1;why[mask]=name
  assert np.bincount(color).tolist()==[6600,54]
+
+ # Whole original front outerwall, no altered geometry or new color boundary.
+ ids=[258, 261, 263, 265, 267, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 301, 302, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 433, 434, 437, 440, 443, 446, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 486, 488, 491, 502, 503, 504, 505, 506, 507, 508, 509, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 680, 681, 682, 683, 684, 685, 686, 687, 688, 692, 694, 717, 718, 719, 720, 721, 722, 723, 724, 725, 727, 728, 731, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 849, 880, 881, 882, 883, 884, 885, 886, 887, 888, 890, 894];assert not color[ids].any();assert np.all(abs(v[ids,:,1]+63)<1e-5)
+ color[ids]=2;why[ids]='complete_admin_front_outer_wall_pale_gray_family'
  return color,why
 
 def writezip(path,files):
@@ -21,7 +25,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-wall-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -39,7 +43,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Author YLUS01-07 personally viewed; capture dates unproven. Light low-saturation opaque glass/curtain proxy, not calibrated current condition.','scope':'Only upper THREE rows, 27 front -Y chamfered-window backing panes, 54 entire triangles. Lower TWO rows, all sloping reveals, opaque elevations, roof and courtyard openings remain neutral. Geometry unchanged.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Historical glazing baseline used YLUS01-07; current frontwall source uses architect01/06 and side02 distinction. Capture dates unproven. Light low-saturation opaque glass/curtain proxy, not calibrated current condition.','scope':'Only upper THREE rows, 27 front -Y chamfered-window backing panes, 54 entire triangles. Continuation adds entire255face front outerwall y=-63 only. Lower TWO row glazing, all sloping reveals, other opaque elevations, roof and courtyard openings remain neutral. Geometry unchanged.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

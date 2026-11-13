@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='3c3f6cff37241f02dbf1645f180804e369cd8201773c9b12dc5573ce5463b854'
 PALETTE=[('neutral_unconfirmed_structure','#AAA79F'),('observed_front_red_panels','#AB593D'),('observed_front_white_bands','#D8D8D1')]
+ids=[2239, 2250, 2289, 2291, 2350, 2352, 2398, 2400, 2460, 2462, 2510, 2531]
 def classify(tri):
  v=tri;e=.0002;color=np.zeros(len(v),dtype=int);why=np.full(len(v),'neutral_unconfirmed_or_outside_documented_scope',dtype=object)
  regions=[('upper_red',1,-66.2,-44,44,28.424,34.32),('white_lintel',2,-67.4,-44.44,44.44,25.52,28.424),('white_parapet',2,-67.4,-44.44,44.44,34.32,37.136)]
@@ -13,6 +14,8 @@ def classify(tri):
   mask=(abs(v[:,:,1]-y)<e).all(1)&(v[:,:,0]>=x0-e).all(1)&(v[:,:,0]<=x1+e).all(1)&(v[:,:,2]>=z0-e).all(1)&(v[:,:,2]<=z1+e).all(1)
   assert not color[mask].any();color[mask]=c;why[mask]=name
  assert np.bincount(color).tolist()==[3026,82,12]
+ assert not color[ids].any()
+ color[ids]=2;why[ids]="lower_sill_front_light_family"
  return color,why
 
 def writezip(path,files):
@@ -20,7 +23,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-sill-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -38,7 +41,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official front image EXIF Original/Digitized 2014-04-19 10:56:53; XMP CreateDate consistent. Historical completion-entry image capture date unknown. Upload paths 2024 are not capture dates. Uncalibrated opaque proxies, not 2026 conditions.','scope':'94 complete original triangles: 82 front red panel faces and 12 front white band faces. Finite all-three-vertex plane checks after original 0.88 X/Z scale and Y offset. Side/back, roofs, glass, columns, recesses and panel edges neutral. No new geometry.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official front image EXIF Original/Digitized 2014-04-19 10:56:53; XMP CreateDate consistent. Historical completion-entry image capture date unknown. Upload paths 2024 are not capture dates. Uncalibrated opaque proxies, not 2026 conditions.','scope':'Original94coloredfaces plus12lower-sill frontfaces. Remaining3014faces neutral. Only six light sill front planes extended, original3palette/geometry retained.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

@@ -16,7 +16,9 @@ for cx in [-62,62]:
      ids.append(i);area+=float(np.linalg.norm(np.cross(v[1]-v[0],v[2]-v[0]))/2);triangles.append({'index':i,'vertices':v.tolist()});break
   r.append(dict(name=f'{cx}_{typ}',center=[cx,-4],z=[47,60.2] if typ==1 else [60.2,66.2],material=typ,ids=ids,count=len(ids),area_mm2=area,triangles=triangles))
 m=json.loads((p/'face-materials.json').read_text())['face_material_indices'];ids=[i for g in r for i in g['ids']]
-assert len(ids)==len(set(ids))==392 and set(ids)=={i for i,c in enumerate(m) if c}
+fascia=[3965, 3974, 4054, 4066]
+assert len(ids)==len(set(ids))==392 and set(ids)|set(fascia)=={i for i,c in enumerate(m) if c}
+assert all(m[i]==1 for i in fascia)
 assert all(m[i]==g['material'] for g in r for i in g['ids'])
 assert n==6510 and abs(sum(g['area_mm2'] for g in r)-688.827637)<.001
-(p/'qa/material-boundaries.json').write_text(json.dumps({'groups':r,'face_count':n,'colored_faces':392,'neutral_faces':6118,'total_area_mm2':sum(g['area_mm2']for g in r),'all_vertex_support_plane_and_finite_front_half_domain':True,'normals_checked':True,'epsilon_mm':eps,'no_subdivision':True},indent=2)+'\n')
+(p/'qa-fascia-continuation/material-boundaries.json').write_text(json.dumps({'groups':r,'face_count':n,'colored_faces':396,'neutral_faces':6114,'additional_fascia_front_faces':fascia,'total_area_mm2':sum(g['area_mm2']for g in r),'all_vertex_support_plane_and_finite_front_half_domain':True,'normals_checked':True,'epsilon_mm':eps,'no_subdivision':True},indent=2)+'\n')

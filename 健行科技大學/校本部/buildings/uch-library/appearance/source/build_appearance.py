@@ -4,7 +4,7 @@ import struct,hashlib,json,zipfile,xml.etree.ElementTree as E
 import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='5ca920efccfd375f11a39c08d034d1f27588ebdbb0c8fa435c75a35102452160'
-PALETTE=[('neutral_unconfirmed_structure','#AAA79F'),('observed_glazing_back','#597078')]
+PALETTE=[('neutral_unconfirmed_structure','#AAA79F'),('observed_glazing_back','#597078'),('approximate_pale_tile_wing_wall','#CCC9BA')]
 def classify(tri):
  v=tri; eps=.0002;color=np.zeros(len(v),dtype=int);why=np.full(len(v),'neutral_unconfirmed_or_excluded',dtype=object)
  normals=np.cross(v[:,1]-v[:,0],v[:,2]-v[:,0]);groups=json.loads((A/'source/source-selection.json').read_text())['groups'];audit=[]
@@ -13,7 +13,12 @@ def classify(tri):
   m=(abs(v[:,:,ax]-g['plane'])<eps).all(1)&(v[:,:,a]>=lo-eps).all(1)&(v[:,:,a]<=hi+eps).all(1)&(v[:,:,b]>=lz-eps).all(1)&(v[:,:,b]<=hz+eps).all(1)&(normals[:,ax]*g['actual_normal_sign']>0)
   ids=np.flatnonzero(m).tolist();assert ids==g['ids'];assert not (color[m]!=0).any();color[m]=1;why[m]=g['name'];audit.append(dict(name=g['name'],ids=ids,count=len(ids)))
  assert np.bincount(color).tolist()==[7076,104]
- (A/'qa/material-boundaries.json').write_text(json.dumps(dict(method='all three vertices finite plane bounds and actual cross-product normal',counts=np.bincount(color).tolist(),groups=audit),indent=2)+'\n')
+ # Complete original wing wall domain, all three vertices supported by the original host minus cuts.
+ selected=np.zeros(len(v),dtype=bool);selected[[834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896]]=True
+ assert np.all(abs(v[selected,:,0]-10.25*(150/52))<1e-5);assert not color[selected].any()
+ color[selected]=2;why[selected]='bounded_original_wing_pale_tile_background'
+ (A/'qa-wall-continuation/material-boundaries.json').write_text(json.dumps(dict(method='all three vertices finite plane bounds and actual cross-product normal',counts=np.bincount(color).tolist(),groups=audit),indent=2)+'\n')
+
  return color,why
 
 def writezip(path,files):
@@ -21,7 +26,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-wall-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -39,7 +44,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official UCH campus tour original photo, capture date unknown; downloaded 2026-10-23 is not capture date. Uncalibrated opaque gray-blue glazing proxy.','scope':'Only 104 complete backing triangles in eight source-supported +X window groups; 7076 neutral, including glass-brick tower, walls, frames, roofs and rear. Original strict geometry QA remains nonpassing; appearance does not repair it.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official UCH campus tour original photo, capture date unknown; downloaded 2026-10-23 is not capture date. Uncalibrated opaque gray-blue glazing proxy.','scope':'Original104 glazing backing triangles retained; additionally62 complete wing exterior wall triangles approximate pale tile,7014 remain neutral. Glass-brick tower, other walls, frames, roofs and rear excluded. Original strict geometry QA remains nonpassing; appearance does not repair it.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

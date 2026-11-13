@@ -13,7 +13,8 @@ PALETTE=[
  {'id':'unknown_neutral','name':'Unknown / neutral placeholder','hex':'#B9B9B4','sources':[], 'meaning':'Unverified surface, not an assertion of actual wall/column/terrain color'},
  {'id':'cap_white','name':'Observed off-white membrane cap','hex':'#E8E8E3','sources':['S3','S5 daytime page 6','S6'], 'meaning':'Uncalibrated daytime white family; not a polymer specification'},
  {'id':'roof_ring_gray','name':'Observed gray sloping roof ring','hex':'#919592','sources':['S3','S4 technical page only','S5 daytime page 6','S6'], 'meaning':'Gray titanium-zinc standing-seam appearance; seams are not added geometry'},
- {'id':'glazing_dark_reflective','name':'Registered glazing recess backs','hex':'#46545A','sources':['S1','S2','S3','S6'], 'meaning':'Muted blue-gray appearance approximation; opaque material, not glass specification'}
+ {'id':'glazing_dark_reflective','name':'Registered glazing recess backs','hex':'#46545A','sources':['S1','S2','S3','S6'], 'meaning':'Muted blue-gray appearance approximation; opaque material, not glass specification'},
+ {'id':'approximate_gallery_column_front','name':'Bounded gallery column outerface approximation','hex':'#B7B4A0','sources':['S3','S1 context only'],'meaning':'Uncalibrated palegrey khaki columnfamily, not surveyed90degree source-to-column fit'}
 ]
 # Approximate per-bay source registration, deliberately narrower than visibility.
 # Enclosed arc: three consecutive readable upper-window groups in S1.
@@ -69,19 +70,24 @@ def classify(tri):
     sel=(np.abs(rad-cfg['radius_m']).max(1)<.02)&(angle_error.max(1)<=cfg['halfspan_degrees']+.001)&(z.min(1)>=lo-.00001)&(z.max(1)<=hi+.00001)&(np.abs(normals[:,2])<.00001)&(radial_dot>.995)
     assert not np.any(ids[sel]);assert sel.sum()>0,(region,a,row)
     ids[sel]=3;registered.append({'region':region,'angle_degrees':a,'row':row+1,'z_design_m':[lo,hi],'original_face_ids':np.flatnonzero(sel).tolist(),'face_count':int(sel.sum()),'sources':cfg['sources']})
+ # One complete original 90degree slanted column outerface, no geometry alteration.
+ a=np.array([0.,28.6,6.35]);b=np.array([0.,30.,13.85]);uz=(b-a)/np.linalg.norm(b-a);ux=np.cross([0.,1.,0.],uz);ux/=np.linalg.norm(ux);uy=np.cross(uz,ux)
+ local=(xyz-a)@np.stack([ux,uy,uz],axis=1)
+ sel=(np.abs(local[:,:,1]-.45).max(1)<1e-5)&(np.abs(local[:,:,0]).max(1)<=.45001)&(local[:,:,2].min(1)>=-1e-5)&(local[:,:,2].max(1)<=np.linalg.norm(b-a)+1e-5)&(normals@uy>.99999)
+ assert np.flatnonzero(sel).tolist()==[6194, 6196];assert not ids[sel].any();ids[sel]=4
  groups=[]
  for i,p in enumerate(PALETTE):
   sel=ids==i;groups.append({**p,'material_index':i,'face_count':int(sel.sum()),'surface_area_mm2':float((lengths[sel]*2).sum()),'original_face_ids':np.flatnonzero(sel).tolist()})
  return ids,groups,registered
 
 def build(stl,out):
- out=Path(out);out.mkdir(parents=True,exist_ok=True);(out/'qa').mkdir(exist_ok=True)
+ out=Path(out);out.mkdir(parents=True,exist_ok=True);(out/'qa-column-continuation').mkdir(exist_ok=True)
  b,v,f,t=original(stl);ids,groups,registered=classify(t)
  np.savez_compressed(out/'mesh-data.npz',vertices=v,faces=f,materials=ids)
- material={'schema_version':1,'title':'Fo Guang University Huaien Hall / 佛光大學懷恩館','scope':'Original-face appearance only. Original triangle order, coordinates and winding preserved. No geometry modification.','source_stl_sha256':ORIGINAL_SHA256,'palette':PALETTE,'face_groups':groups,'registered_glazing_rows':registered,'registration':REGISTERED,'unknown_policy':'Everything not explicitly selected is unknown neutral, including all structural frames, reveals, walls, terrain, entrance, undersides, ring collar and unregistered bays.','coordinates':'Original millimetres. Design x,y = mm/2; design z = (mm-3)/2. +X east portico, +Y nominal north. Orientation is approximate, not surveyed.'}
+ material={'schema_version':1,'title':'Fo Guang University Huaien Hall / 佛光大學懷恩館','scope':'Original-face appearance only. Original triangle order, coordinates and winding preserved. No geometry modification.','source_stl_sha256':ORIGINAL_SHA256,'palette':PALETTE,'face_groups':groups,'registered_glazing_rows':registered,'registration':REGISTERED,'unknown_policy':'Everything not explicitly selected is unknown neutral, including structural frames except the two explicitly selected90degreecolumn outerface triangles, reveals, walls, terrain, entrance, undersides, ring collar and unregistered bays.','coordinates':'Original millimetres. Design x,y = mm/2; design z = (mm-3)/2. +X east portico, +Y nominal north. Orientation is approximate, not surveyed.'}
  (out/'face-materials.json').write_text(json.dumps(material,ensure_ascii=False,indent=2)+'\n')
  qa={'original_stl_sha256':ORIGINAL_SHA256,'original_stl_git_blob':'cd9073e0a72d5a6ef6afeea872af5cf70de889bb','original_bytes':len(b),'original_triangles':len(t),'indexed_vertices':len(v),'triangle_coordinates_exact':bool(np.array_equal(v[f],t)),'triangle_order_and_winding_exact':True,'geometry_operations':[],'dimensions_mm':(v.max(0)-v.min(0)).tolist(),'material_face_counts':{p['id']:int((ids==i).sum()) for i,p in enumerate(PALETTE)},'registered_bays':sum(len(c['angles_degrees']) for c in REGISTERED.values()),'registered_bay_rows':len(registered),'no_glazing_on_reveals_or_frames':True,'actual_print_or_slicer_test':False}
- (out/'qa'/'original-mesh-identity.json').write_text(json.dumps(qa,indent=2)+'\n')
+ (out/'qa-column-continuation'/'original-mesh-identity.json').write_text(json.dumps(qa,indent=2)+'\n')
  print(json.dumps(qa,indent=2));return qa
 
 if __name__=='__main__':

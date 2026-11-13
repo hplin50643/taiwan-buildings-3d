@@ -17,6 +17,8 @@ def classify(tri):
   assert not (color[m]!=0).any();color[m]=mat
  why=np.full(len(v),'neutral_unconfirmed_or_outside_documented_scope',dtype=object);why[color==1]='central_window_backs';why[color==2]='front_column_and_name_beam_faces'
  assert np.bincount(color).tolist()==[7062,30,14]
+ assert not color[[1971,1976,1979,1981,1996,1998,2001,2004]].any()
+ color[[1971,1976,1979,1981,1996,1998,2001,2004]]=2;why[[1971,1976,1979,1981,1996,1998,2001,2004]]='bounded_central_column_inward_side_family'
  return color,why
 
 def writezip(path,files):
@@ -24,7 +26,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-column-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -42,7 +44,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'MOE official photo personally viewed; page date 2026-01-22, capture date unknown (no EXIF/XMP); uncalibrated material approximations.','scope':'Only 30 central recessed window back faces and 14 front column/name beam faces. Remaining 7062 faces neutral; gray walls, roof, rear, sides and unknown glazing unchanged. Modest front-central benefit only.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'MOE official photo personally viewed; page date 2026-01-22, capture date unknown (no EXIF/XMP); uncalibrated material approximations.','scope':'Original30windowbacks and14frontcolumn/beamfaces plus8 central inward column sides; remaining7054faces neutral. Only bounded source-family continuation, not exact tile identity. Other sides/roof/walls unchanged.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

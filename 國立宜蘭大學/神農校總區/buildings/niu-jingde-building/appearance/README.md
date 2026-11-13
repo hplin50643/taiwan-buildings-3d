@@ -18,3 +18,12 @@
 
 ## 重建
 將原 model.stl 放在 appearance 的上一層。Python 安裝 source/requirements.txt，順序執行 source/build_appearance.py、source/verify_exchange.py、source/verify_material_boundaries.py；Blender 4.3.2 執行 source/render_appearance.py、source/verify_scene.py。5 張圖均來自真實面材質，無貼圖補畫。交換與存讀驗證不代表切片或實體試印；原近似背面、屋頂、內部幾何的不確定性仍在。
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+
+原完整66面凸網正面0→新2淺灰白磚背景#CECEC2/.78，原230玻璃、13810其他中性及原兩材值保持；14106面幾何/面序不改。三角全頂點及sharededge解析面核對、原3豎3橫條union全三角支承，未切界。網孔背面/內側/外框/其他層不擴色；孔格數、比例、底緣非實測，照片日期未知。
+
+模型、材質、原生視角圖與必要重建程式沿用完成候選，未改幾何或新切材界，不代表全館精確復色、現況或實體試印通過。原來源年代、工程與列印限制仍適用，舊說明與審核僅屬各自版本，本段更新上述局部範圍。
+
+本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔與本說明；歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。

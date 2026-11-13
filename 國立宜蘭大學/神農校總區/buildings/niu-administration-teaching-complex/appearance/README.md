@@ -18,3 +18,12 @@
 
 ## 重建
 原 model.stl 放在 appearance 上一層，Python 安裝 source/requirements.txt，順序執行 source/build_appearance.py、source/verify_exchange.py、source/verify_material_boundaries.py；Blender 4.3.2 執行 source/render_appearance.py、source/verify_scene.py。五張圖皆來自真實逐面材質，沒有貼圖補畫。交換／存讀檢驗不代表切片或實體試印，原幾何不確定性及歷史製造 QA 不被本層覆寫。
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+
+原y−63外平牆完整255面0→新2淺灰石板族#B8B9AE/.78，其餘6399面及原2材保持（原玻璃54、中性6345、新牆255），6654面幾何/面序不變。整三角支持原host扣含偏移的斜窗斷面、中央通道及雨棚交會，不用centroid裁切，不補分界。樹遮低處僅同牆推估，原低層窗位置近似、板縫未建，非測繪或精確材色。
+
+模型、材質、原生視角圖與必要重建程式沿用完成候選，未改幾何或新切材界，不代表全館精確復色、現況或實體試印通過。原來源年代、工程與列印限制仍適用，舊說明與審核僅屬各自版本，本段更新上述局部範圍。
+
+本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔與本說明；歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。

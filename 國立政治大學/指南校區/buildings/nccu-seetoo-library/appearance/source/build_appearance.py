@@ -4,7 +4,7 @@ import struct,hashlib,json,zipfile,xml.etree.ElementTree as E
 import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='a0e21a20d4e7b24b256ebdd70d1fd4f954b3e0beec129cff795a68ef50d9987a'
-PALETTE=[('neutral_unconfirmed_frames_envelope_base','#AAA79F'),('observed_brown_screen_surface_proxy','#98633D')]
+PALETTE=[('neutral_unconfirmed_frames_envelope_base','#AAA79F'),('observed_brown_screen_surface_proxy','#98633D'),('approximate_warm_gray_canted_panel_front','#B4B1A4')]
 def classify(tri):
  v=tri;e=.001;color=np.zeros(len(v),dtype=int);why=np.full(len(v),'neutral_unconfirmed_or_outside_documented_scope',dtype=object)
  for x in range(0,56,5):
@@ -14,6 +14,9 @@ def classify(tri):
   mask=bounds&(sides|tips);assert mask.sum()==20
   color[mask]=1;why[mask]='documented_upper_straight_lake_fin_complete_surface'
  assert color.sum()==240
+
+ ids=[1715, 1718, 1724, 1726];assert not color[ids].any();normal=np.array([4.,-6.7,0]);normal/=np.linalg.norm(normal);assert np.max(abs((v[ids]-[0,-51,39])@normal))<1e-5
+ color[ids]=2;why[ids]='complete_upper_central_canted_panel_outer_face_warm_gray_family'
  return color,why
 
 def writezip(path,files):
@@ -21,7 +24,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-panel-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -39,7 +42,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Architect-authored 2022/03 publication; photo exposure date unknown; viewed 2026-10-22; uncalibrated brown screen surface proxy; composition unconfirmed, not 2026 condition','scope':'Only 12 center upper straight lake-side blades, 240 complete triangles. Horizontal beam, two end blades, lower levels, diagonal and all other elevations remain neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Architect-authored 2022/03 publication; photo exposure date unknown; viewed 2026-10-22; uncalibrated brown screen surface proxy; composition unconfirmed, not 2026 condition','scope':'Only 12 center upper straight lake-side blades, 240 complete triangles. Continuation adds4 complete upper central entrance canted-panel outerface triangles. Horizontal beam, two end blades, lower levels, diagonal and other faces remain neutral.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

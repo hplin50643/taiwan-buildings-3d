@@ -45,6 +45,16 @@
         "S6"
       ],
       "meaning": "Muted blue-gray appearance approximation; opaque material, not glass specification"
+    },
+    {
+      "id": "approximate_gallery_column_front",
+      "name": "Bounded gallery column outerface approximation",
+      "hex": "#B7B4A0",
+      "sources": [
+        "S3",
+        "S1 context only"
+      ],
+      "meaning": "Uncalibrated palegrey khaki columnfamily, not surveyed90degree source-to-column fit"
     }
   ],
   "face_groups": [
@@ -55,8 +65,8 @@
       "sources": [],
       "meaning": "Unverified surface, not an assertion of actual wall/column/terrain color",
       "material_index": 0,
-      "face_count": 14030,
-      "surface_area_mm2": 60624.268391588186,
+      "face_count": 14028,
+      "surface_area_mm2": 60601.92907388046,
       "original_face_ids": [
         0,
         1,
@@ -6172,9 +6182,7 @@
         6191,
         6192,
         6193,
-        6194,
         6195,
-        6196,
         6197,
         6198,
         6199,
@@ -36979,6 +36987,23 @@
         10226,
         10227
       ]
+    },
+    {
+      "id": "approximate_gallery_column_front",
+      "name": "Bounded gallery column outerface approximation",
+      "hex": "#B7B4A0",
+      "sources": [
+        "S3",
+        "S1 context only"
+      ],
+      "meaning": "Uncalibrated palegrey khaki columnfamily, not surveyed90degree source-to-column fit",
+      "material_index": 4,
+      "face_count": 2,
+      "surface_area_mm2": 22.339317707725883,
+      "original_face_ids": [
+        6194,
+        6196
+      ]
     }
   ],
   "registered_glazing_rows": [
@@ -37777,6 +37802,6 @@
       "registration": "View from the north/northeast, with east portico at image left. Select three clear open-gallery groups to the right of the foreground foliage, behind repeated slanted columns; leave foliage-occluded central groups, entrance, tangential neighbors and western gallery unknown. Angular registration is bounded on the original simplified geometry, not photogrammetric calibration."
     }
   },
-  "unknown_policy": "Everything not explicitly selected is unknown neutral, including all structural frames, reveals, walls, terrain, entrance, undersides, ring collar and unregistered bays.",
+  "unknown_policy": "Everything not explicitly selected is unknown neutral, including structural frames except the two explicitly selected90degreecolumn outerface triangles, reveals, walls, terrain, entrance, undersides, ring collar and unregistered bays.",
   "coordinates": "Original millimetres. Design x,y = mm/2; design z = (mm-3)/2. +X east portico, +Y nominal north. Orientation is approximate, not surveyed."
 }

@@ -24,3 +24,9 @@
 重建包包含原model.stl及appearance/source。Python 3 + numpy + lib3mf；Blender 4.3.2+：依序執行 `python appearance/source/build_appearance.py`、`python appearance/source/verify_material_boundaries.py`、`python appearance/source/verify_exchange.py`、`blender -b -t 4 -P appearance/source/render_appearance.py`、`blender -b -t 4 -P appearance/source/verify_scene.py`。
 
 3MF strict reader、真材質編輯存檔重開及Blend材質編輯存讀均獨立驗證；lib3mf另存時容許<0.0001 mm十進位誤差，交付3MF與原STL座標逐面精確一致。乾淨目錄重建3MF/maps/palette/五PNG需byte一致；Blend以幾何、材質及語義核對，不宣稱二進位重現。渲染是中性棚燈下的未校準sRGB代理，不是色卡測色。
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+僅12個原完整前立矩形24面0→新2紅褐背景#A65F45/.88；4248面幾何/面序不變，其餘4224indices及原2材不變。現4144中性/80光電/24階立面。原step box全三角支持；不踏面/細淺鼻緣/側裙/白矮牆/平台/底座。原12級連續代理與實照多級、多段平台不是逐階對位，原寬深及側截端保持，不增幾何，不認證精確磚種/色值。
+模型與原生視角圖沿用完成候選的原bytes；不改幾何、不增加分界、不稱全棟精確配色或實體試印通過。公開預覽只含模型，不含新增圖片文字。原來源年代、工程及列印限制仍適用。先前敘述與審核屬其原版本，本段僅更新上述局部範圍。
+本次只交付模型、必要重建輸入/腳本、預覽與此說明；完整研究與獨立審核紀錄另行保留，不在本批公開。PUBLIC-MODEL-SHA256SUMS只核本次所列公開產品，舊校驗與QA不代表本次新版。

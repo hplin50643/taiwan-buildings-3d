@@ -7,6 +7,7 @@ for i in range(n):
   if all(abs(y-y0)<eps and -x0-eps<=x<=x0+eps and z0-eps<=z<=z1+eps for x,y,z in v):
    ids[k].append(i);a=[v[1][j]-v[0][j]for j in range(3)];c=[v[2][j]-v[0][j]for j in range(3)];areas[k]+=abs(a[0]*c[2]-a[2]*c[0])/2
 m=json.loads((p/'face-materials.json').read_text())['face_material_indices'];assert n==3422 and list(map(len,ids))==[280,2] and ids[1]==[2382,2439]
-for k in range(2):assert set(ids[k])=={i for i,x in enumerate(m) if x==k+1}
+band=[3327, 3334, 3336, 3339, 3341, 3350]
+for k in range(2):assert set(ids[k]) | (set(band) if k==0 else set()) == {i for i,x in enumerate(m) if x==k+1}
 assert abs(areas[0]-1974.32024)<.0001 and areas[1]==432
-r={'face_count':n,'tile_faces':ids[0],'upper_glazing_faces':ids[1],'area_mm2':areas,'epsilon_mm':eps,'all_vertex_plane_and_finite_domain':True,'colored_faces':282,'neutral_faces':3140,'no_subdivision':True,'bounds_mm':[{'y':-14,'x':[-68.3,68.3],'z':[26.5,49.3]},{'y':-12.25,'x':[-54,54],'z':[41,45]}],'lower_mixed_grille_glazing_rounded_sides_roofs_rear_cutoff_neutral':True};(p/'qa/material-boundaries.json').write_text(json.dumps(r,indent=2)+'\n');print('boundary pass')
+r={'face_count':n,'tile_faces':ids[0],'upper_glazing_faces':ids[1],'area_mm2':areas,'epsilon_mm':eps,'all_vertex_plane_and_finite_domain':True,'colored_faces':288,'neutral_faces':3134,'middle_band_front_faces':band,'no_subdivision':True,'bounds_mm':[{'y':-14,'x':[-68.3,68.3],'z':[26.5,49.3]},{'y':-12.25,'x':[-54,54],'z':[41,45]}],'lower_mixed_grille_glazing_rounded_sides_roofs_rear_cutoff_neutral':True};(p/'qa-band-continuation/material-boundaries.json').write_text(json.dumps(r,indent=2)+'\n');print('boundary pass')

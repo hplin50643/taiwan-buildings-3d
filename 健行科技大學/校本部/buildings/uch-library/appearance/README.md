@@ -20,3 +20,12 @@
 
 ## 重建
 在appearance上層保留原model.stl，安裝source/requirements.txt；執行 `python source/build_appearance.py`、`python source/verify_exchange.py`，再用 Blender 執行 `source/render_appearance.py` 與 `source/verify_scene.py`。固定 Cycles CPU/種子生成五圖，PNG移除時間metadata；3MF/map/palette及五圖以獨立乾淨重建比較bytes，Blend比較真正頂點與材質語義而非二進位一致。
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+
+在原104窗背維持不變下，僅東向南抬高翼完整62面補近似淺米磁磚背景 #CCC9BA/.88，其餘7014中性保持。全三角扣原窗洞/腰帶/梯核心交會，不切新界、不改幾何；不增加圖書館字樣/磚縫，不染頂底/轉角/玻璃磚塔。原strict=false及693 corner-loss、76或311短chord不同統計不改，沒有新製造或列印認證。
+
+模型、材質、原生視角圖與必要重建程式沿用完成候選，未改幾何或新切材界，不代表全館精確復色、現況或實體試印通過。原來源年代、工程與列印限制仍適用，舊說明與審核僅屬各自版本，本段更新上述局部範圍。
+
+本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔與本說明；歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。

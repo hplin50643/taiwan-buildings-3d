@@ -4,7 +4,7 @@ import struct,hashlib,json,zipfile,xml.etree.ElementTree as E
 import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='6a529f825d294ee1066af11a9202e2f55214a43a5c91959407cbfc0f9c24b290'
-PALETTE=[('neutral_unresolved_envelope_and_base','#AAA79F'),('muted_red_brown_visible_low_wing_roof','#8C4847'),('muted_green_single_recess_glazing','#3D8D72')]
+PALETTE=[('neutral_unresolved_envelope_and_base','#AAA79F'),('muted_red_brown_visible_low_wing_roof','#8C4847'),('muted_green_single_recess_glazing','#3D8D72'),('approximate_entry_front_brick_fascia','#A16457')]
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1);eps=.00015
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'neutral_unresolved_mixed_walls_gable_hidden_surfaces_or_base',dtype=object)
@@ -19,6 +19,10 @@ def classify(tri):
  paint(region&(front|left),1,'official_14_jpg_visible_front_or_left_low_wing_original_hip_slope_full_triangle')
  glass=plane(1,-25.5)&bounds(0,-38.9,-35.1)&bounds(2,23,110)
  paint(glass,2,'official_14_jpg_single_front_left_recess_back_wall_full_triangle_excluding_crossbars')
+
+ # Whole original outerfront canopy fascia only.
+ selected=np.all(abs(t[:,:,0]+75)<1e-5,axis=1)&bounds(1,-6.5,32.5)&bounds(2,22,24.5)
+ assert np.flatnonzero(selected).tolist()==[4415, 4427];assert not color[selected].any();color[selected]=3;why[selected]='original_entry_canopy_front_fascia_approximate_historical_brick'
  return color,why
 
 def writezip(path,files):
@@ -26,7 +30,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-fascia-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -44,7 +48,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official HWAI school history image 14.jpg; capture date unknown; viewed 2026-10-22; uncalibrated opaque display proxies','scope':'Only front and left original slopes of low front-left wing hip cap and back wall of single front-left vertical glazing recess. Mixed walls, gable, horizontal windows, hidden roofs and other surfaces remain neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official HWAI school history image 14.jpg; capture date unknown; viewed 2026-10-22; uncalibrated opaque display proxies','scope':'Only front and left original slopes of low front-left wing hip cap and back wall of single front-left vertical glazing recess. Additionally2 originalentryfront fascia faces approximatebrick. Mixedwalls/gable/windows/hiddenroofs/otherfaces remainneutral.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

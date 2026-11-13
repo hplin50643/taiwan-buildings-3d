@@ -38,4 +38,4 @@ for screen in bpy.data.screens:
   for space in area.spaces:
    if space.type=='FILE_BROWSER' and space.params:space.params.directory=b'//'
 os.chdir(A);bpy.ops.wm.save_as_mainfile(filepath=str(A/'scene.blend'),compress=False)
-(A/'qa/render-manifest.json').write_text(json.dumps({'blender':bpy.app.version_string,'samples':32,'resolution':[1200,1200],'files':records},indent=2)+'\n')
+(A/'qa-grid-continuation/render-manifest.json').write_text(json.dumps({'blender':bpy.app.version_string,'samples':32,'resolution':[1200,1200],'files':records},indent=2)+'\n')

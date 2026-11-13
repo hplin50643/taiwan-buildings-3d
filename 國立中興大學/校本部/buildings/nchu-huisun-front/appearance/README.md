@@ -25,3 +25,9 @@
 Python安裝source/requirements.txt，同層上級放原model.stl。依序執行 python source/build_appearance.py、python source/verify_material_boundaries.py、python source/verify_exchange.py；再 blender -b -t 2 -P source/render_appearance.py 及 blender -b -t 2 -P source/verify_scene.py。交換strict零warning並真edit-save-reopen；Blend可編輯材質。乾淨第二目錄3MF/maps/palette/五PNG逐bytes一致，Blend語義一致，不宣稱二進位一致。
 
 [交換QA](qa/exchange-validation.json) · [Blend QA](qa/scene-validation.json) · [獨立重建QA](qa/rebuild-validation.json) · [校驗碼](SHA256SUMS) · [權利說明](LICENSE-NOTICE.md)
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+兩上窗帶間的原中橫帶前完整6面0→既有磚族1；3422面幾何/順序不變，其餘3416面及3原材保持。磚286、玻璃2、中性3134。原帶扣牌板投影的全三角支承驗證，不切新界。原直帶超平牆末端到圓角是有界同帶代理推估，原牌板位置/比例與實照不同；不補字樣或磚縫，不延頂底側/窗梃/字板/下柱。2018來源與原2021/2024幾何跨年，不稱當前現況。
+模型與原生視角圖沿用完成候選的原bytes；不改幾何、不增加分界、不稱全棟精確配色或實體試印通過。公開預覽只含模型，不含新增圖片文字。原來源年代、工程及列印限制仍適用。先前敘述與審核屬其原版本，本段僅更新上述局部範圍。
+本次只交付模型、必要重建輸入/腳本、預覽與此說明；完整研究與獨立審核紀錄另行保留，不在本批公開。PUBLIC-MODEL-SHA256SUMS只核本次所列公開產品，舊校驗與QA不代表本次新版。

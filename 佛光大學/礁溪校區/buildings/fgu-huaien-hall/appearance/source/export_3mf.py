@@ -5,7 +5,7 @@ Python 3 + numpy + lib3mf 2.5.0. --out is created if missing.
 from pathlib import Path
 import argparse,json,tempfile,zipfile,xml.etree.ElementTree as ET
 import numpy as np,lib3mf
-ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=Path(__file__).resolve().parents[1]);a=ap.parse_args();root=a.out;root.mkdir(parents=True,exist_ok=True);(root/'qa').mkdir(exist_ok=True)
+ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=Path(__file__).resolve().parents[1]);a=ap.parse_args();root=a.out;root.mkdir(parents=True,exist_ok=True);(root/'qa-column-continuation').mkdir(exist_ok=True)
 d=np.load(root/'mesh-data.npz');palette=json.loads((root/'face-materials.json').read_text())['palette'];w=lib3mf.get_wrapper();m=w.CreateModel();m.SetUnit(lib3mf.ModelUnit.MilliMeter);g=m.AddBaseMaterialGroup();pids=[]
 for p in palette:
  c=lib3mf.Color();c.Red,c.Green,c.Blue=[int(p['hex'][i:i+2],16) for i in (1,3,5)];c.Alpha=255;pids.append(g.AddMaterial(p['id'],c))
@@ -50,4 +50,4 @@ n,group,qa=read(root/'fgu-huaien-hall-materials.3mf',require_exact=True)
 with tempfile.TemporaryDirectory() as td:
  path=Path(td)/'roundtrip.3mf';wr=n.QueryWriter('3mf');wr.WriteToFile(str(path));_,_,qa['roundtrip']=read(path)
  ids=group.GetAllPropertyIDs();c=group.GetDisplayColor(ids[1]);c.Red=(c.Red+3)%256;group.SetDisplayColor(ids[1],c);wr.WriteToFile(str(path));_,_,qa['material_edit_save_reopen']=read(path,True)
-qa['lib3mf_version']=list(w.GetLibraryVersion());qa['actual_slicer_or_print_test']=False;(root/'qa'/'3mf-strict-roundtrip.json').write_text(json.dumps(qa,indent=2)+'\n');print(json.dumps(qa,indent=2))
+qa['lib3mf_version']=list(w.GetLibraryVersion());qa['actual_slicer_or_print_test']=False;(root/'qa-column-continuation'/'3mf-strict-roundtrip.json').write_text(json.dumps(qa,indent=2)+'\n');print(json.dumps(qa,indent=2))

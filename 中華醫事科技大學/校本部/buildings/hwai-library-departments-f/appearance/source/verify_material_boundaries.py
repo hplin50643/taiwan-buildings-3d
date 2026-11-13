@@ -14,5 +14,7 @@ for i,tri in enumerate(t):
   if distance.max()<eps/9 and min(u)>=-eps and max(u)<=1+eps and normal@normal_expected>1-eps:
    selected.append(i);records.append({'face':i,'facet':k,'max_normalized_edge_error':float(distance.max()),'u_range':[float(min(u)),float(max(u))]});break
 assert set(selected)==set(np.where(c==1)[0]);assert len(selected)==76
-r={'method':'Independent radius-normalized finite 72-gon edge endpoint projection and slope unit normal','full_triangle_membership_only':True,'no_centroid_or_subdivision':True,'colored_faces':len(selected),'neutral_faces':int((c==0).sum()),'top_west_shoulders_glass_other_roofs_excluded':True,'facet_checks':records}
-(A/'qa/material-boundaries.json').write_text(json.dumps(r,indent=2)+'\n');print('PASS 76 complete finite slope faces')
+assert (c==2).sum()==425
+assert np.all(abs(t[c==2,:,1]+68)<1e-5)
+r={'method':'Independent radius-normalized finite 72-gon edge endpoint projection and slope unit normal','full_triangle_membership_only':True,'no_centroid_or_subdivision':True,'historical_roof_colored_faces':len(selected),'new_wall_colored_faces':int((c==2).sum()),'neutral_faces':int((c==0).sum()),'top_west_shoulders_glass_other_roofs_excluded':True,'facet_checks':records}
+(A/'qa-wall-continuation/material-boundaries.json').write_text(json.dumps(r,indent=2)+'\n');print('PASS 76 complete finite slope faces')

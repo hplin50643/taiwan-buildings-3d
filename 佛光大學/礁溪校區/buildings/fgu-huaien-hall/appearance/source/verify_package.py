@@ -6,7 +6,7 @@ from pathlib import Path
 import argparse,json,hashlib,zipfile,xml.etree.ElementTree as ET,struct
 import numpy as np
 from build_appearance import original,ORIGINAL_SHA256
-ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=Path(__file__).resolve().parents[1]);ap.add_argument('--stl',type=Path,default=Path(__file__).resolve().parents[2]/'model.stl');a=ap.parse_args();root=a.out;root.mkdir(parents=True,exist_ok=True);(root/'qa').mkdir(exist_ok=True)
+ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=Path(__file__).resolve().parents[1]);ap.add_argument('--stl',type=Path,default=Path(__file__).resolve().parents[2]/'model.stl');a=ap.parse_args();root=a.out;root.mkdir(parents=True,exist_ok=True);(root/'qa-column-continuation').mkdir(exist_ok=True)
 b,v,f,t=original(a.stl);d=np.load(root/'mesh-data.npz');assert np.array_equal(d['vertices'],v);assert np.array_equal(d['faces'],f)
 fm=json.loads((root/'face-materials.json').read_text());ids=np.full(len(f),255,dtype=np.uint8)
 for i,g in enumerate(fm['face_groups']):
@@ -33,4 +33,4 @@ with zipfile.ZipFile(root/'fgu-huaien-hall-materials.3mf') as z:
    if marker in data:leaks.append({'file':str(p.relative_to(root)),'marker':marker.decode()})
  assert not leaks,leaks
  qa={'original_stl_sha256':ORIGINAL_SHA256,'original_bytes_preserved':True,'npz_triangle_coordinates_order_winding_exact':True,'3mf_xml_vertex_decimal_coordinates_exact':True,'3mf_xml_faces_and_material_indices_exact':True,'triangles':len(f),'vertices':len(v),'unique_edges':len(unique),'all_edges_incidence_two':True,'opposite_edge_winding':True,'connected_components':components,'positive_signed_volume_mm3':volume,'euler_characteristic':len(v)-len(unique)+len(f),'private_path_or_secret_markers':leaks,'no_texture_parts':True,'printability_scope':'Original geometry topology checks only. No slicer, toolpaths, global wall-thickness assessment or actual print.'}
- (root/'qa'/'package-verification.json').write_text(json.dumps(qa,indent=2)+'\n');print(json.dumps(qa,indent=2))
+ (root/'qa-column-continuation'/'package-verification.json').write_text(json.dumps(qa,indent=2)+'\n');print(json.dumps(qa,indent=2))

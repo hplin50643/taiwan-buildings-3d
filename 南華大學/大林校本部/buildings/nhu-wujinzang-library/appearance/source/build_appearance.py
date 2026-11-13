@@ -23,6 +23,11 @@ def classify(tri):
   mask=np.all((t[:,:,1]>=y0-eps)&(t[:,:,1]<=y1+eps)&(abs(t[:,:,0])<=half+eps)&(abs(t[:,:,2]-(z+slope*(t[:,:,1]-y0)))<eps),axis=1)&(normals[:,2]>0)&(normals[:,1]<0)&(abs(normals[:,0])<eps)&(abs(normals[:,1]+slope*normals[:,2])<eps)
   assert mask.sum()==4
   assert not np.any(color[mask]);color[mask]=2;why[mask]='documented_'+label+'_red_front_slope'
+
+ # Complete original +X outward side-roof slope, analytically verified domain.
+ ids=[1261, 1262, 1263, 1268, 1269, 1270];assert not color[ids].any()
+ slope=-1.8/2.15;assert np.all(abs(t[ids,:,2]-(29.6+slope*(t[ids,:,0]-20)))<1e-5)
+ color[ids]=2;why[ids]='original_right_outer_roof_slope_red_background_approximation'
  return color,why
 
 def writezip(path,files):
@@ -30,7 +35,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-roof-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -48,7 +53,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NHU official ground VR node datetime 2023/9/18 is metadata, not certified capture date; aerial capture date unknown; viewed 2026-10-22; uncalibrated proxy, not verified 2026 condition','scope':'190 exact cover/rib top faces and 8 front red slope faces only. Walls, glass, roof side faces, side roofs and all undocumented surfaces remain neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NHU official ground VR node datetime 2023/9/18 is metadata, not certified capture date; aerial capture date unknown; historical and current review metadata retained in separate QA; uncalibrated proxy, not verified 2026 condition','scope':'190 original cover/rib top faces and8 original front red slopes retained;6 whole right outward gable slope faces additionally redfamily. Other4372 indices unchanged; unknown walls/glass/otherroofplanes neutral.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

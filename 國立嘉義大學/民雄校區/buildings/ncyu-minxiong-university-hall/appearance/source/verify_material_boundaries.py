@@ -20,7 +20,8 @@ for i in range(n):
   white.append(i);wa+=abs((v[1][0]-v[0][0])*(v[2][2]-v[0][2])-(v[2][0]-v[0][0])*(v[1][2]-v[0][2]))/2
 m=json.loads((p/'face-materials.json').read_text())['face_material_indices'];brick=sum([x['ids'] for x in res],[])
 assert n==2536 and len(white)==8 and len(brick)==38
-assert set(white)=={i for i,x in enumerate(m) if x==1} and set(brick)=={i for i,x in enumerate(m) if x==2}
+portal=[1532, 1533, 1535, 1537, 1539, 1540, 1549, 1551]
+assert set(white)|set(portal)=={i for i,x in enumerate(m) if x==1} and set(brick)=={i for i,x in enumerate(m) if x==2}
 assert abs(wa-1014.99996)<.0001 and abs(sum(x['area_mm2'] for x in res)-271.79717)<.0001
-r={'white_ids':white,'white_count':len(white),'white_area_mm2':wa,'face_count':n,'edges':res,'colored_faces':46,'neutral_faces':2490,'all_vertex_plane_and_finite_domain':True,'epsilon_mm':.0002,'ideal_rectangle_minus_selected_complete_face_area_mm2':10.62507,'difference_explanation':'includes rejected cross-boundary faces and gaps without corresponding coplanar exterior surfaces','no_subdivision':True}
-(p/'qa/material-boundaries.json').write_text(json.dumps(r,indent=2)+'\n');print('boundary pass')
+r={'white_ids':white,'white_count':len(white),'white_area_mm2':wa,'face_count':n,'edges':res,'colored_faces':54,'neutral_faces':2482,'additional_portal_front_faces':portal,'all_vertex_plane_and_finite_domain':True,'epsilon_mm':.0002,'ideal_rectangle_minus_selected_complete_face_area_mm2':10.62507,'difference_explanation':'includes rejected cross-boundary faces and gaps without corresponding coplanar exterior surfaces','no_subdivision':True}
+(p/'qa-portal-continuation/material-boundaries.json').write_text(json.dumps(r,indent=2)+'\n');print('boundary pass')

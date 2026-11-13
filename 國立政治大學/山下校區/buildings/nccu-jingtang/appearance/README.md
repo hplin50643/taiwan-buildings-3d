@@ -19,3 +19,9 @@
 原model.stl放在appearance上一層；安裝source/requirements.txt，依序執行source/build_appearance.py、source/verify_exchange.py、source/verify_material_boundaries.py。Blender 4.3.2執行source/render_appearance.py與source/verify_scene.py。QA包含strict 3MF讀取、單材質存讀、native材質及頂點編輯存讀、原始交付重開渲染與乾淨重建。此層不代表實體試印、FFF切片或新的製造驗證，不覆寫原幾何歷史QA。原建築一件不增模型數。
 
 [來源](SOURCES.md) · [權利](LICENSE-NOTICE.md)
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+兩柱前面2完整域4面0→既有白1；6176面幾何及順序不變，其餘6172面及3原材保持。白1399、灰9、中性4768。全三角原凸矩形支承，不新增界；原柱與曲托/雨棚粗代理及日期未知限制保留。不擴側背/棚頂底/階梯/屋頂或外弧。
+模型與原生視角圖沿用完成候選的原bytes；不改幾何、不增加分界、不稱全棟精確配色或實體試印通過。公開預覽只含模型，不含新增圖片文字。原來源年代、工程及列印限制仍適用。先前敘述與審核屬其原版本，本段僅更新上述局部範圍。
+本次只交付模型、必要重建輸入/腳本、預覽與此說明；完整研究與獨立審核紀錄另行保留，不在本批公開。PUBLIC-MODEL-SHA256SUMS只核本次所列公開產品，舊校驗與QA不代表本次新版。

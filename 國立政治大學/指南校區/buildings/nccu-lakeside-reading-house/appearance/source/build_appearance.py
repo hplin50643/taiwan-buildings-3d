@@ -4,7 +4,7 @@ import struct,hashlib,json,zipfile,xml.etree.ElementTree as E
 import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='30769931f58c5095803700b6462694aa6485b42c6979ca540da8d834d3767320'
-PALETTE=[('neutral_unconfirmed_frames_envelope_base','#AAA79F'),('documented_glazing_opaque_proxy','#465C61')]
+PALETTE=[('neutral_unconfirmed_frames_envelope_base','#AAA79F'),('documented_glazing_opaque_proxy','#465C61'),('approximate_pale_gray_front_roof_fascia','#C5C6BE')]
 def classify(tri):
  t=tri;eps=.002;lo=t.min(axis=1);hi=t.max(axis=1)
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'neutral_unconfirmed_or_outside_documented_scope',dtype=object)
@@ -19,6 +19,9 @@ def classify(tri):
    assert mask.sum()==2
    color[mask]=1;why[mask]='documented_right_front_four_bays_full_window_back'
  assert color.sum()==64
+
+ ids=[2866, 2877];assert not color[ids].any();assert np.all(abs(t[ids,:,1]+43.5)<1e-5)
+ color[ids]=2;why[ids]='complete_front_vertical_roof_fascia_pale_gray_family'
  return color,why
 
 def writezip(path,files):
@@ -26,7 +29,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-fascia-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -44,7 +47,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Architect-authored 2022/03 publication; photo exposure date unknown; viewed 2026-10-22; uncalibrated opaque glazing proxy, not 2026 condition','scope':'Only 24 front and 8 right-front window backs, 64 complete original triangles. Frames, left staircase side, right two rear bays, rear and roof remain neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Architect-authored 2022/03 publication; photo exposure date unknown; viewed 2026-10-22; uncalibrated opaque glazing proxy, not 2026 condition','scope':'Only 24 front and 8 right-front window backs, 64 complete original triangles. Continuation adds2 complete front vertical roofslab fascia faces only. Other frames, left staircase, right rear bays, rear, roof top/soffit/fold remain neutral.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

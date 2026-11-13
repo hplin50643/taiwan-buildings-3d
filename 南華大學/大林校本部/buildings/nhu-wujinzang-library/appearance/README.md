@@ -26,3 +26,12 @@
 保留原STL全部座標、4378三角面序及拓撲，尺寸150×141×49.05mm。原native場景唯一Warm stone preview only材質；本補充不改原件、歷史來源或製造QA。重建來源ZIP解壓為model.stl與appearance/source/，安裝requirements後順序執行build_appearance.py、verify_exchange.py、verify_material_boundaries.py，再以Blender 4.3.2+執行render_appearance.py、verify_scene.py。
 
 驗證含lib3mf strict零警告、實際材質修改/存檔/重開、Blender實際材質修改/存檔/重開與其他材質/幾何保留。乾淨重建3MF、映射、色盤及五PNG逐byte比對；Blend僅語義一致，不宣稱binary決定性。3MF為單網格整面表面色，非分色封閉體、G-code或多色FFF保證；未切片器/實體試印。原OSM比例及目估外觀限制不變，不供施工。
+
+
+## 2026-11-13 有限外觀修正｜模型交付版
+
+原右gable +X外向完整6面0→既有紅族2，總紅14面/白190/中性4174，4378面幾何及原3材值保持。全頂點解析原斜平面及整三角支承扣端cap/servicecrown，未切界。原頂平、內坡、端框、左屋均不擴色；只紅底近似，照片可見細灰接縫/肋原未建，不聲稱完整材紋或測繪。
+
+模型、材質、原生視角圖與必要重建程式沿用完成候選，未改幾何或新切材界，不代表全館精確復色、現況或實體試印通過。原來源年代、工程與列印限制仍適用，舊說明與審核僅屬各自版本，本段更新上述局部範圍。
+
+本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔與本說明；歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。
