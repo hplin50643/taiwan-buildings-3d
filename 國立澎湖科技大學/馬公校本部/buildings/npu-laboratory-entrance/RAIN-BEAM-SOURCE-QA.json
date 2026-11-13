@@ -1,0 +1,118 @@
+{
+  "status": "SOURCE_REVIEW_GO_PENDING_FINAL_QA",
+  "prefix": "國立澎湖科技大學/馬公校本部/buildings/npu-laboratory-entrance/",
+  "domains": [
+    {
+      "faces": [
+        2194,
+        2209
+      ],
+      "count": 2,
+      "min": [
+        21.5,
+        -17.399999618530273,
+        44.5
+      ],
+      "max": [
+        64.5,
+        -17.399999618530273,
+        44.599998474121094
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "materials": [
+        1,
+        6
+      ]
+    },
+    {
+      "faces": [
+        2199,
+        2212
+      ],
+      "count": 2,
+      "min": [
+        21.5,
+        -17.399999618530273,
+        44.599998474121094
+      ],
+      "max": [
+        64.5,
+        -15.600000381469727,
+        44.599998474121094
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "materials": [
+        1
+      ]
+    },
+    {
+      "faces": [
+        2200,
+        2213
+      ],
+      "count": 2,
+      "min": [
+        21.5,
+        -15.600000381469727,
+        44.5
+      ],
+      "max": [
+        64.5,
+        -15.600000381469727,
+        44.599998474121094
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "materials": [
+        1,
+        6
+      ]
+    }
+  ],
+  "faces": [
+    2194,
+    2199,
+    2200,
+    2209,
+    2212,
+    2213
+  ],
+  "new_material": 5,
+  "rationale": "Six triangles in three complete original connected planar domains at the top of the existing front rain-canopy beam. Original generator beam box x21.5..64.5,y-17.4..-15.6,z41.8..44.6 proves membership. Source photo identifies dark front beam, while current centroid/material z threshold leaves upper lip in tile/panel colors. Continue existing dark beam family over top and reverse lip, explicitly inferred unseen finish.",
+  "limits": [
+    "Do not repaint upper large architectural canopy soffits pale green; their boundaries ambiguous",
+    "Top and back lip not directly photographed; same existing beam family inference, not measured finish",
+    "Original canopy end domains include fused panel/beam and remain unchanged; no cutting for end cleanup",
+    "Original front wall mixed domain not selected; full-domain paint cannot establish attached hardware boundaries",
+    "All other 2284 triangles, eight palette entries, vertices, indices, transforms, locked previews and engineering QA unchanged",
+    "No missing beams, joints, trims, labels or new geometry",
+    "Capture date unknown, no current-year or actual-print claim",
+    "Native build_appearance plus render_review.py seven 900x800 final views retained"
+  ],
+  "hash_scope": "Original source input snapshots, not hashes of modified current files.",
+  "original_proposal_inputs": {
+    "original/appearance-sources.json": "a2bffa591df07e67ed1602d7a5112d738a9c618a42f70bce729d891c4c0ce69e",
+    "original/build_model.py": "c4033285c002598912e1bfa8e5ff1c807690d24e16de683f6fbcf2d27496e6e6",
+    "original/build_appearance.py": "05510a49ba43ed7f819c349ffade4b1d0d1e4461c10bb4eb820ad12676301944",
+    "original/appearance.3mf": "a658dc32dcef22d00f67e6dbf0e904506d2898ed67884f553895f95a3409dc03",
+    "canopy-domains.json": "8ab8df9917b043f49b0ed69b5761803d0fa8685b94f61919e1c6709057598756",
+    "private-reference/official-entrance.jpg": "70365491b50b929be237a86b14f4dff4a6f3788b60a32f4b43f97927954f5f70"
+  },
+  "file_sha256": {
+    "qa/rain-beam-source-input/appearance-sources.json": "a2bffa591df07e67ed1602d7a5112d738a9c618a42f70bce729d891c4c0ce69e",
+    "qa/rain-beam-source-input/build_model.py": "c4033285c002598912e1bfa8e5ff1c807690d24e16de683f6fbcf2d27496e6e6",
+    "qa/rain-beam-source-input/build_appearance.py": "05510a49ba43ed7f819c349ffade4b1d0d1e4461c10bb4eb820ad12676301944",
+    "qa/rain-beam-source-input/appearance.3mf": "a658dc32dcef22d00f67e6dbf0e904506d2898ed67884f553895f95a3409dc03"
+  }
+}

@@ -1,0 +1,1 @@
+Current SHA256SUMS and RAIN-BEAM-FREEZE-MANIFEST.json cover the new candidate. Original appearance-freeze and appearance-review/v2 remain historical. qa/rain-beam-previous preserves superseded assets. Source snapshots map exact original inputs. Independent hashes bind current exact paths. Engineering limitations unchanged.

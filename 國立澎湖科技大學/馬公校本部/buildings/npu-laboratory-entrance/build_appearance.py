@@ -85,9 +85,19 @@ for p in mesh.polygons:
  support_records.append({'face':p.index,'triangle_area_mm2':whole,'covered_by_original_step_bands_mm2':covered})
 assert len(changed_faces)==49
 
+# Whole original front rain-canopy beam upper-lip/top domains.
+continuation_baseline=list(indices)
+beam_upper_ids=[2194, 2199, 2200, 2209, 2212, 2213]
+for i in beam_upper_ids:
+ p=mesh.polygons[i]
+ assert indices[i] in (1,6)
+ for vi in p.vertices:
+  a=mesh.vertices[vi].co
+  assert 21.4999<=a.x<=64.5001 and -17.4001<=a.y<=-15.5999 and 44.4999<=a.z<=44.6001
+ p.material_index=5;indices[i]=5
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='49 original left step-end triangles restored to the existing stone-step material; all artificial wall, rear and top closures neutral; geometry and original material values unchanged'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-stair-end-continuity'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-rain-beam-lip'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -117,7 +127,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-stair-end-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'step_profile_bands_y0_y1_ztop':step_bands,'whole_triangle_support':support_records,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Official entrance photograph freshly downloaded and personally viewed; capture date unknown, no current-condition claim. Only the existing left step end is newly colored, as inferred same-component continuity. All original colored faces and material values unchanged. Genuine artificial wall side x=+/-68 above the steps, rear y=20, top z=79, and authored base remain neutral. This is a cropped entrance segment, not a full building. Other historical plans and renovation sources not freshly reread.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-rain-beam-lip','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'prior_v2_changed_faces':changed_faces,'beam_upper_changed_faces':beam_upper_ids,'continuation_baseline_face_material_indices':continuation_baseline,'change_reasons':change_reasons,'step_profile_bands_y0_y1_ztop':step_bands,'whole_triangle_support':support_records,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Official entrance photograph freshly downloaded and personally viewed; capture date unknown, no current-condition claim. Only the existing left step end is newly colored, as inferred same-component continuity. All original colored faces and material values unchanged. Genuine artificial wall side x=+/-68 above the steps, rear y=20, top z=79, and authored base remain neutral. This is a cropped entrance segment, not a full building. Other historical plans and renovation sources not freshly reread.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((145,-260,110),(0,-12,40.8),180),'rear':((-195,230,160),(0,-12,40.8),180),'elevation':((0,-260,40.8),(0,-12,40.8),180),'source-angle':((110,-260,18),(0,-12,47),180),'top':((0,0,260),(0,-12,0),180)}
 out=R/'appearance';out.mkdir(exist_ok=True)
