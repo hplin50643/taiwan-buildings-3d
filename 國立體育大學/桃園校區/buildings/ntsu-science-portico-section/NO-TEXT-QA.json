@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in ntsu-science-portico-section-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "a08941f67fefc30a4265c3568f95c5f48f7176e34476062cf69ae7de796f30f9",
-    "east.png": "98e8973025c5b22ee843b451b5c811fbfd93056426e61642f394cb02ab065a7c",
-    "entry-detail.png": "ce5440fd840a062f4436066b21c00335b8c2e04a8a21929317a87dde93c17d99",
-    "facade-detail.png": "45a7d2fee76fd3c13a3e4bc3e88278d335a4daa79373501f625859e8c6ea4d6c",
-    "front.png": "093c128a083858f8041c1b12a4b6bb2272cff72c89d4bc90566f5c3f5a90fbd7",
-    "preview.png": "7017c92943b5ca4f0dec3e867f400b6d7fcca50db7fd06555ba7337b59bbe997",
-    "rear.png": "fa8ae7651e6a9c99ebc5c578ace8dadecdb4cf55b67f10a0a1a7d925b00c2eaf",
-    "roof-detail.png": "8b26350ba723ec45a16b1658a1d784b91e9275b114e3bd806c04efa14319ff54",
-    "top.png": "69d3f0354d1003387c2ca7d8be38751716e1365e1055f50c4000faea4b289d5d",
-    "west.png": "ac0275afcff8dc3316eb88d54a2eefaa964c7595b60845c4dbc3057d0cedebee"
-  }
+    "preview.png": "c9ad161f263f3880a1479364f032c6061dab3a936b95f5d121c09679b985e0cb",
+    "rear.png": "ea2a8f793f5b5069f422003d7a0f51f1c0f6dd24c2d9f3694e02424379a716d0",
+    "front.png": "f034c2cafdc3ba42ab39692089696bcadeefa90bb39e4c1a3f7505f201fa4090",
+    "back.png": "6db57af458662eccc7ef374e65212bcf86a0f9e57098023f0bede5c28548fff2",
+    "west.png": "a3844a36aa526fe4d521374e4b536b73c69f8ea286c5f9486a53185bd5aac29f",
+    "east.png": "f3e2d8e4eabf4afbfbb861c4aa8f36b656e4f6000617af4f3be7c8856d122251",
+    "top.png": "9719c8bd800e9d3cce2a935f550df12c2cf55b8d19d9cbe87080c912128c892c",
+    "entry-detail.png": "01394bca94c81759d4107fd3fd4c3d7ef0afb69c8c062db47a2cd8a9f89a8960",
+    "facade-detail.png": "775144ecb4d332a799944ed4980804f61aed8c0db9b2bab136a8893e6e1e8d14",
+    "roof-detail.png": "f1f688574447e3e9e29fe17949a90ef78a2454c5c5b6eb2c664d901197398e1b"
+  },
+  "mesh_sha256": "925686ce622900d83b80e464cb3377f1321ed63ab17a40023239cd4af669b804",
+  "independent_visual_review": "LEFT-PARAPET-INDEPENDENT-QA.json",
+  "previous_qa": "qa/left-parapet-previous/NO-TEXT-QA.json"
 }

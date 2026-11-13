@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "building": "ntsu-science-portico-section",
+  "triangles": 5086,
+  "new_color_faces": 22,
+  "exterior_color_before": 128,
+  "exterior_color_after": 150,
+  "neutral_after": 4936,
+  "complete_domains": 7,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "findings": [
+    "Independent 64chord finite allvertex selection verifies22faces in7whole connected coplanar domains, farleft upper parapet outward skin only. Original128 and allunselectedindices/two palette entries exact.",
+    "3MF unchangedgeometry and two materials independently verified; historical files byteidentical. Retained isolatedSTL/NPZ/palette/materials/XML directly compared exact.",
+    "Savedscene independently reopened:5086mesh indices,2shaders,originalcamera/lights/render/objectinventory/transforms exact.",
+    "Actually inspected all ten final views and fullsize details; bounded exterior left arc only, aperture returns/top/inner faces remain unchanged.",
+    "After interrupted render, final review used only the complete rerender with ten Saved outputs and saved scene. Re-executed numeric and retained rebuild comparisons, independently reopened final scene, viewed ten-view contact and three native detail views. Roof detail exposes left arc selection sufficiently; no private extra render needed."
+  ],
+  "limits": [
+    "Nominal palegray family only, not calibratedHEX or chemical material diagnosis.",
+    "Original radius/aperture count/height/thickness proxy not surveyed. Facet limits are evidencecoverage not materialseams.",
+    "SOURCEpending snapshots and original\u5de5\u7a0b limitations retained; not2026 survey or testedmulti-materialprint."
+  ],
+  "image_sha256": {
+    "preview.png": "c9ad161f263f3880a1479364f032c6061dab3a936b95f5d121c09679b985e0cb",
+    "rear.png": "ea2a8f793f5b5069f422003d7a0f51f1c0f6dd24c2d9f3694e02424379a716d0",
+    "front.png": "f034c2cafdc3ba42ab39692089696bcadeefa90bb39e4c1a3f7505f201fa4090",
+    "back.png": "6db57af458662eccc7ef374e65212bcf86a0f9e57098023f0bede5c28548fff2",
+    "west.png": "a3844a36aa526fe4d521374e4b536b73c69f8ea286c5f9486a53185bd5aac29f",
+    "east.png": "f3e2d8e4eabf4afbfbb861c4aa8f36b656e4f6000617af4f3be7c8856d122251",
+    "top.png": "9719c8bd800e9d3cce2a935f550df12c2cf55b8d19d9cbe87080c912128c892c",
+    "entry-detail.png": "01394bca94c81759d4107fd3fd4c3d7ef0afb69c8c062db47a2cd8a9f89a8960",
+    "facade-detail.png": "775144ecb4d332a799944ed4980804f61aed8c0db9b2bab136a8893e6e1e8d14",
+    "roof-detail.png": "f1f688574447e3e9e29fe17949a90ef78a2454c5c5b6eb2c664d901197398e1b"
+  },
+  "file_sha256": {
+    "model.stl": "93cb3e2b361f55b50301286b8b4242ce8e538814a084d95871cd37780adfa224",
+    "build_model.py": "044a48fb89932af2b10e0ed6fe95c7ae2a7161159f5f6e691ddf3b76ea0164e9",
+    "color-mesh.npz": "925686ce622900d83b80e464cb3377f1321ed63ab17a40023239cd4af669b804",
+    "palette.json": "c6664d738219f2fba23bbf7353b33d2f951fd5ea238787bd8a87fbe2c78749a7",
+    "appearance.3mf": "73eea2366a0bbf16def68c0f64af7e15bca55ee48eafd9b36f8a8430b070a69b",
+    "appearance-materials.json": "41d0385f606c8e057e0112fc0416002e2fdf5e193cab3168e3c659e76f27d86a",
+    "scene.blend": "86b8e978741764b519a0fb7acc0eaa9db1e789c5321263bce25736aa86205e13",
+    "colorize_model.py": "17f01a6115d049031d0c1fb58011221f2d62c5e99aa57a13cf9e155aac83f81e",
+    "export_appearance.py": "2c786f2daf7d0fa673b1d2486c79f9bbe1b6f40c9558adb85c1cb0adc954df64",
+    "validate_color.py": "8a796c837732a48f029ddaa9e19ee5aab778e78ba91e5ed19e93c5e24e17e80b",
+    "verify_color_scene.py": "4c5b223c5941627ddaa67088a38eaca84ada3e451fe02bf827f49ac86835fe7e",
+    "render_color.py": "2e56459aba82dd60208572c1f376542ea542633be0fc155591c9c60c89c1c78f",
+    "README.md": "3986b4e750958bb43fde1d6ef9201b1441965f22da3c9edb3f8cf490534f10e7",
+    "README.zh-TW.md": "3986b4e750958bb43fde1d6ef9201b1441965f22da3c9edb3f8cf490534f10e7",
+    "CHECKSUM-SCOPE.md": "14175b7a72422b0676abb87b9b02819bab6fd777859cca0fd36db115cc5626a2",
+    "COLOR-ASSIGNMENT-QA.json": "c055de0153cbd098b5d7bfbdfac535fc62affe0d637912d4407964dc7ae9c49e",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "155114879811fa341f3bbb7573a993efad7ec60852c80dc9035531ded950f1e2",
+    "SCENE-QA.json": "1dd04916a592289802fac80a795ebe4872065f4451a91436d7a092efcfa39f55",
+    "LEFT-PARAPET-SCENE-QA.json": "57b2d9bd7cfb99634949ed44d401079b12196a1556d992121a13eaab6294b4d4",
+    "LEFT-PARAPET-SOURCE-QA.json": "7ee9575de3e05c1a9195e8340ad3503a3fd2370926d0104f168278e95112ecd3",
+    "COLOR-SOURCE-REGISTER.json": "7ee9575de3e05c1a9195e8340ad3503a3fd2370926d0104f168278e95112ecd3"
+  },
+  "reviewer": "resume_ntsu_review independent recovery review"
+}

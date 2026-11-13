@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntsu-science-portico-section-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "a08941f67fefc30a4265c3568f95c5f48f7176e34476062cf69ae7de796f30f9",
+    "east.png": "98e8973025c5b22ee843b451b5c811fbfd93056426e61642f394cb02ab065a7c",
+    "entry-detail.png": "ce5440fd840a062f4436066b21c00335b8c2e04a8a21929317a87dde93c17d99",
+    "facade-detail.png": "45a7d2fee76fd3c13a3e4bc3e88278d335a4daa79373501f625859e8c6ea4d6c",
+    "front.png": "093c128a083858f8041c1b12a4b6bb2272cff72c89d4bc90566f5c3f5a90fbd7",
+    "preview.png": "7017c92943b5ca4f0dec3e867f400b6d7fcca50db7fd06555ba7337b59bbe997",
+    "rear.png": "fa8ae7651e6a9c99ebc5c578ace8dadecdb4cf55b67f10a0a1a7d925b00c2eaf",
+    "roof-detail.png": "8b26350ba723ec45a16b1658a1d784b91e9275b114e3bd806c04efa14319ff54",
+    "top.png": "69d3f0354d1003387c2ca7d8be38751716e1365e1055f50c4000faea4b289d5d",
+    "west.png": "ac0275afcff8dc3316eb88d54a2eefaa964c7595b60845c4dbc3057d0cedebee"
+  }
+}

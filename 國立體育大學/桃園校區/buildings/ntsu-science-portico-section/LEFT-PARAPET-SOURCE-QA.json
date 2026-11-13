@@ -1,0 +1,100 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "ntsu-science-portico-section",
+  "name": "國立體育大學綜合科技大樓內凹入口弧廊片段",
+  "scope": "Far-left upper parapet outward skin original angular facets2..7 only; radius87 center(0,49), original span[-42,42] split64. Whole exposed domains, not aperture returns.",
+  "faces": [
+    2824,
+    2825,
+    2826,
+    2837,
+    2838,
+    2839,
+    2840,
+    2841,
+    2842,
+    2845,
+    2846,
+    2847,
+    2848,
+    2849,
+    2850,
+    2852,
+    2853,
+    2856,
+    2863,
+    2886,
+    2889,
+    2890
+  ],
+  "complete_domains": [
+    [
+      2845,
+      2848
+    ],
+    [
+      2850,
+      2886,
+      2824,
+      2849,
+      2841,
+      2842
+    ],
+    [
+      2825,
+      2846
+    ],
+    [
+      2889,
+      2852
+    ],
+    [
+      2839,
+      2826,
+      2847,
+      2890,
+      2853,
+      2838
+    ],
+    [
+      2837,
+      2840
+    ],
+    [
+      2856,
+      2863
+    ]
+  ],
+  "new_faces": 22,
+  "domain_count": 7,
+  "original_color": 128,
+  "after_color": 150,
+  "after_neutral": 4936,
+  "triangles": 5086,
+  "material_before": 1,
+  "material_after": 0,
+  "nominal_hex": "#D3D6D3",
+  "source_reason": "Official800x531 original oblique photograph clearly shows continuous pale exposed leftmost parapet outside skin around first openings, away from central lettering. Original native crop and original PDF samebuilding photo crosscheck. Far-left bounded arc does not cross center inscription; no wholeupperparapet fill.",
+  "limits": [
+    "Six original angular facetplanes are evidencecoverage boundaries, not real material seams. Original aperture count/size and radius/height are coarse geometry proxies, not newly certified.",
+    "Only existing nominal palegray family; lighting and rough surface do not establish exact HEX or chemical material. Original palette lower_slab label remains historical.",
+    "Exclude facet0..1 attachment junction, allremaining upper facets, aperturedepth, upper top/innerback, ends, columns with stickers and patternedfeet, walls/roof/glass. Do not inherit2018/2021/2024 conditions as2026 current appearance.",
+    "Original2021PDF embedded image historical filename page03-image3.jpeg is recovered locally as page03-image2.jpeg due extraction ordering, exact SHA0f8028... identical.",
+    "New2026conference map includes small tree-obscured front entrance and alternate side entry, not sufficient new detailed arc evidence; proposal based originalnative rereview, not claim newcapture."
+  ],
+  "file_sha256": {
+    "original-verification.json": "5b1bea1b1a7235af37ff1438ab2534b1658dd2efccf5579b35f7335a4cd69bb7",
+    "domain-screen.json": "8cf9dbe920d79526da924cc8c5e15d3c2995a4ee25e51925d081f35c8e80d4fd",
+    "upper-exploration.json": "e6b60bcdd1d22b41470f7bb85993ff5c84eeead1929fa81034d3f9a334813b3f",
+    "original/build_model.py": "044a48fb89932af2b10e0ed6fe95c7ae2a7161159f5f6e691ddf3b76ea0164e9",
+    "original/color-mesh.npz": "e71ad65eddb6c332d9499855534b040205ed75b0acfe80ec3bee07d0baa6b729",
+    "original/COLOR-SOURCE-REGISTER.json": "dabbce61afbd01f34548baa3dcb4bb2f41394aa5d5b008b7091e010ec2a2fab2",
+    "private-reference/official-old-exterior.jpg": "d6d6e6c5ea391e48f5bf2125e6a7b23c226a6b226eab34cb803de75a38d33a7a",
+    "private-reference/page03-image2.jpeg": "0f8028de7ab01f1cbd0f7267f796a13cc81a0c7be979a554ce8b5c8eb7e14706",
+    "private-reference/left-parapet-native.png": "dbc9b25f570da2dd0d112da6d7f391839f1ffa81fbdc8e7f56f02df95169f038",
+    "private-reference/resources-page3.png": "945ee8bd8fbf2d8ea5c63a4a4c9d8a6378730b30b0d9485ecee13f4c40f23ce3",
+    "private-reference/conference-page3.png": "076d5c0435602ce6c2b1f8ae968843f332d2e0132a57557734ee45c052034a48",
+    "private-reference/fetch-register.json": "b44c4ab7f1b3fb2449bf3587f1904d0690ab6a559f3b157f461603446e372591"
+  },
+  "historical_source_register": "qa/left-parapet-previous/COLOR-SOURCE-REGISTER.json"
+}

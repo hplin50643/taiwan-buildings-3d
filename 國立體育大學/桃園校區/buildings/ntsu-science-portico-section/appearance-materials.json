@@ -4,13 +4,13 @@
       "id": 0,
       "name": "Observed lower slab outer curved vertical edge pale gray",
       "hex": "#D3D6D3",
-      "faces": 128
+      "faces": 150
     },
     {
       "id": 1,
       "name": "UNVERIFIED main walls entrance windows roofs neutral",
       "hex": "#B8BAB5",
-      "faces": 4958
+      "faces": 4936
     }
   ],
   "domain_face_indices": {
@@ -269,6 +269,30 @@
     "lower_slab_outer_facet_63": [
       4323,
       4324
+    ],
+    "bounded_upper_left_outward": [
+      2824,
+      2825,
+      2826,
+      2837,
+      2838,
+      2839,
+      2840,
+      2841,
+      2842,
+      2845,
+      2846,
+      2847,
+      2848,
+      2849,
+      2850,
+      2852,
+      2853,
+      2856,
+      2863,
+      2886,
+      2889,
+      2890
     ]
   },
   "coplanar_components": 1349,
@@ -276,7 +300,7 @@
   "fully_colored_exterior": false,
   "geometry_policy": "5086 original triangles unchanged",
   "limits": [
-    "All upper parapet faces including text field and openings: lettering has no independent material boundary in original mesh.",
+    "Upper parapet other than bounded left outward facets2..7 remains neutral; all lettering, aperture returns and inner faces excluded.",
     "All cylindrical columns: stickers/notices and patterned feet mix within full-height original facets.",
     "Slab top, dark underside, inner edge and end caps do not inherit front-edge color.",
     "Main wing walls mix brick, pale upper bands and base/obscured regions without matching original boundaries; all remain neutral.",
