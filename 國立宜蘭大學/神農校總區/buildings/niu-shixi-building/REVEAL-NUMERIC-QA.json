@@ -1,0 +1,190 @@
+{
+  "status": "PASS",
+  "scope": "Limited appearance identity, not full engineering certification",
+  "triangles": 8624,
+  "vertices": 4288,
+  "complete_domains": 4,
+  "whole_domain_faces": 32,
+  "changed_faces": [
+    2453,
+    2454,
+    2467,
+    2468,
+    2485,
+    2486,
+    2498,
+    2499
+  ],
+  "old_material": 0,
+  "new_material": 1,
+  "all_six_palette_entries_preserved": true,
+  "other_8616_material_indices_unchanged": true,
+  "native_views_exact": {
+    "front": [
+      [
+        190,
+        -250,
+        150
+      ],
+      [
+        0,
+        0,
+        32
+      ],
+      220
+    ],
+    "rear": [
+      [
+        -180,
+        250,
+        145
+      ],
+      [
+        0,
+        0,
+        32
+      ],
+      220
+    ],
+    "elevation": [
+      [
+        0,
+        -300,
+        32
+      ],
+      [
+        0,
+        0,
+        32
+      ],
+      220
+    ],
+    "source-angle": [
+      [
+        0,
+        280,
+        115
+      ],
+      [
+        0,
+        0,
+        32
+      ],
+      220
+    ],
+    "left": [
+      [
+        -320,
+        0,
+        145
+      ],
+      [
+        0,
+        0,
+        32
+      ],
+      220
+    ],
+    "right": [
+      [
+        320,
+        0,
+        145
+      ],
+      [
+        0,
+        0,
+        32
+      ],
+      220
+    ],
+    "top": [
+      [
+        0,
+        0,
+        400
+      ],
+      [
+        0,
+        0,
+        32
+      ],
+      220
+    ]
+  },
+  "original_files_unchanged": [
+    "run_all_checks.py",
+    "appearance-freeze.json",
+    "render-cameras.json",
+    "validate_model.py",
+    "sources.json",
+    "qa-summary.json",
+    "render_preview.py",
+    "README.zh-TW.md",
+    "check_thin_features.py",
+    "requirements.txt",
+    "build_model.py",
+    "thin-feature-check.json",
+    "check_layers.py",
+    "validation.json",
+    "scene.blend",
+    "layer-check.json",
+    "model.stl",
+    "model.obj",
+    "appearance-review/color-visual-review.json",
+    "appearance-review/final-review-binding.json",
+    "appearance-review/output-geometry-review.json",
+    "appearance-review/clean-rebuild-equality.json",
+    "appearance-review/clean-material-region-check.json",
+    "appearance-review/preservation-and-readme.json",
+    "appearance-review/material-region-check.json",
+    "appearance-review/clean-geometry-review.json",
+    "appearance-review/geometry-visual-review.json",
+    "appearance-review/png-privacy.json",
+    "appearance-review-v2/source-register.json",
+    "appearance-review-v2/original-front.png",
+    "appearance-review-v2/model-verification.json",
+    "appearance-review-v2/original-rear.png",
+    "appearance-review-v2/topology-check.json",
+    "appearance-review-v2/clean-rebuild-equality.json",
+    "appearance-review-v2/color-continuity-review.json",
+    "appearance-review-v2/asset-privacy-review.json",
+    "appearance-review-v2/material-value-verification.json",
+    "appearance-review-v2/camera-consistency.json",
+    "appearance-review-v2/boundary-continuity-audit.json",
+    "previews/front.png",
+    "previews/elevation.png",
+    "previews/top.png",
+    "previews/rear.png",
+    "previews/front-rear.png"
+  ],
+  "isolated_rebuild": "STL and OBJ byte-identical, all3MF members/material JSON exact; original native geometry script and pinned numeric geometry dependencies retained",
+  "baseline_checksum_entries_verified": [
+    57
+  ],
+  "file_sha256": {
+    "render-cameras.json": "25736d220edb1b55a87e4795a0f2734424c1a929d835c0dd7429de4417a6ca57",
+    "model.obj": "32864a9b96ffd88289c0b195aedfe09cdbc7e969b235448a9a88aba2b96e15d5",
+    "build_model.py": "2d5ffeb3246e5f6a32a51ebb3e3ed64dce448b02014b1df4ee699211db9d7b84",
+    "build_appearance.py": "c59b5aaad9fe840910725d7da666db3c4bcf41e51e66c17c39c250c0c77c0fef",
+    "model.stl": "324a01a88a87d9d8182b6eeedc0e8a53ccca38c60f4935b27f63468f996b249e",
+    "scene.blend": "dbed1d8a57f06c1fabcbe2081fe066a828a202e0af76c4fc2f0a3793508b1fea",
+    "appearance.blend": "722856bdeae9d079107020225613b48e9ae7e088a6c753ec6c3646fb7f416a52",
+    "appearance.3mf": "11491758f92d133dc9eed0c51fbf225a1eb328748409ad073da58644ef6bd82b",
+    "appearance-materials.json": "c73b538cc795c530db5a546a8413281d97d4def2afe98e927ea8ee3fe30584cf",
+    "REVEAL-SOURCE-QA.json": "c5115fc411d72c8a2e72e39ea69e6607f57120ebff5db2d00ab1fb97f6758f62",
+    "BASELINE-CHECKSUM-AUDIT.json": "836fa2f756cc9cc56a64d06eb91d09a28656c525006aeed5a7cfc4909aa1f0bf",
+    "CHECKSUM-SCOPE.md": "a923566cc266c93beeddf52a52750df5be0fefc7713ce5715da0b4ee19e22498",
+    "APPEARANCE.md": "869ab6b248ffe4539f1372f8a746381d6f33a7012257df97e5d2ae65b8d1a080",
+    "README.md": "aa80358139ba323ec2ac78a19c927de5172358b0adb4109e1cca90413143314d"
+  },
+  "image_sha256": {
+    "appearance/front.png": "1d96ed237fbed638e5451c2f81dfce63c75b67f8d747c9533cd933ee93e5960f",
+    "appearance/rear.png": "d870b71bb2f605892c95f7557514a3be9c233546fe99bb9c8dac1314675442ba",
+    "appearance/elevation.png": "683acb1053514db08fe3822d56ffebf60e93c7f46dd0c92ac21d7cd69d7c99b9",
+    "appearance/source-angle.png": "268e2ee2e25a83cfe7a7342b91d480c2b763bddeb314955216bed20e9da7243a",
+    "appearance/left.png": "f493e17c39273de86ded5b999bd2b847975fc3ba80e25b69878f676dd784929c",
+    "appearance/right.png": "b4a2d8b447357e62beadd9b483c923b17209fdb22b5c2c222e3e5210794dc612",
+    "appearance/top.png": "551b0741eaa9d608f9ea785cd479b076fa4868655d64df206bd9aee10526234b"
+  }
+}

@@ -127,9 +127,25 @@ for p in mesh.polygons:
  if reason:
   p.material_index=i;indices[p.index]=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':reason,'basis':'Every vertex satisfies an original full component face boundary. Hidden or opposite extents use same-building continuity, not direct all-facade observation.'}
 
+
+# Complete original window-cut jamb domains across tiled wall/portico union.
+continuation_baseline=list(indices)
+reveal_domains=[[2453, 2454, 2456, 2457, 2459, 2460, 2461, 2462], [2467, 2468, 2469, 2472, 2473, 2474, 2475, 2476], [2485, 2486, 2487, 2488, 2491, 2492, 2493, 2494], [2498, 2499, 2501, 2502, 2503, 2504, 2507, 2508]]
+reveal_changed=[2453, 2454, 2467, 2468, 2485, 2486, 2498, 2499]
+assert [i for d in reveal_domains for i in d if indices[i]==0]==reveal_changed
+for domain in reveal_domains:
+ for fi in domain:
+  assert indices[fi] in (0,1)
+  face=mesh.polygons[fi]
+  assert abs(face.normal.x)>.999
+  for vi in face.vertices:
+   q=mesh.vertices[vi].co
+   assert min(abs(q.x-x) for x in [-13.05,-2.95,2.95,13.05])<.0001
+   assert -41.801<=q.y<=-38.399 and 16.799<=q.z<=23.201
+  face.material_index=1;indices[fi]=1
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Original geometry and material values retained; full outer-wall and original-window continuity inferred; courtyard and roof unknowns preserved'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-outer-wall-continuity'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-window-portico-jamb-continuity'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -161,7 +177,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-outer-wall-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; open courts and balconies remain open','Shi Xi is 時習大樓. Official school-history PDF physical page10 printed154 three photographs freshly viewed. Visible pale tiled exterior and original window material families support qualified continuity on full existing outside walls, outside window backs and reveals, front window reveals and floor-band returns. Opposite and hidden extent colors are inferred, not direct observation. The existing window backs are opaque glass/frame/reflection/shadow proxies, not pure glass or new windows. Courtyard walls and gallery recesses, D inner surfaces, roof fields, roof service core, artificial base and unknown step finishes stay unchanged. Photo dates unknown and mixed; no2026condition claim. Original geometry, precolored faces and all RGBA/roughness preserved. No letters, tile texture, AC, frame invention, geometry splits or printQA rerun','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-window-portico-jamb-continuity','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'reveal_complete_domains':reveal_domains,'reveal_changed_faces':reveal_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque mixed glazing backing only; open courts and balconies remain open','Shi Xi is 時習大樓. Official school-history PDF physical page10 printed154 three photographs freshly viewed. Visible pale tiled exterior and original window material families support qualified continuity on full existing outside walls, outside window backs and reveals, front window reveals and floor-band returns. Opposite and hidden extent colors are inferred, not direct observation. The existing window backs are opaque glass/frame/reflection/shadow proxies, not pure glass or new windows. Courtyard walls and gallery recesses, D inner surfaces, roof fields, roof service core, artificial base and unknown step finishes stay unchanged. Photo dates unknown and mixed; no2026condition claim. Original geometry, precolored faces and all RGBA/roughness preserved. No letters, tile texture, AC, frame invention, geometry splits or printQA rerun','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((190,-250,150),(0,0,32),220),'rear':((-180,250,145),(0,0,32),220),'elevation':((0,-300,32),(0,0,32),220),'source-angle':((0,280,115),(0,0,32),220),'left':((-320,0,145),(0,0,32),220),'right':((320,0,145),(0,0,32),220),'top':((0,0,400),(0,0,32),220)}
 out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]
