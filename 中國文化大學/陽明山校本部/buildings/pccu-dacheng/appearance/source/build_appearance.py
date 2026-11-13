@@ -42,6 +42,11 @@ def classify(tri):
  for z0,z1 in [(1.5,2.8),(3.7,5),(6,7.1)]:
   paint(plane(1,-25.25)&in_z(z0,z1),3,'existing_front_decorative_recess_plain_red_no_pattern')
  paint(tri[:,:,2].max(axis=1)<=1.6001,7,'display_base_not_real_ground')
+ # Exact original STL face IDs from independently checked whole connected post-side domains.
+ # Original STL SHA is locked below. All72 triangles lie in original convex post boxes.
+ ids=[10579, 10580, 10581, 10594, 10595, 10597, 10604, 10605, 10606, 10630, 10632, 10634, 10641, 10642, 10643, 10666, 10667, 10670, 10671, 10672, 10678, 10702, 10703, 10706, 10707, 10708, 10714, 10738, 10740, 10742, 10743, 10744, 10751, 10811, 10812, 10813, 12162, 12163, 12164, 12177, 12178, 12181, 12182, 12183, 12189, 12213, 12215, 12217, 12218, 12219, 12225, 12249, 12250, 12253, 12254, 12255, 12262, 12285, 12286, 12287, 12294, 12295, 12297, 12321, 12323, 12324, 12331, 12332, 12333, 12456, 12457, 12460]
+ assert all(color[i]==0 for i in ids)
+ color[ids]=4;why[ids]='front_terrace_post_lower_side_same_pale_stone_family_original_geometry'
  return color,why
 
 def writezip(path,files):
@@ -49,7 +54,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-rail-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
