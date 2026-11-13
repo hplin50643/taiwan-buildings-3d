@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in nccu-zhixi-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "922fe4a338a075080c6ed8726bae3572a225a746a80a04435d130eb8a2b23f0e",
-    "courtyard-detail.png": "5ae5c4efab6eb7dc78260eea9a1ebfc7236d71c9397f4dbd6e5fd19f73805376",
-    "east.png": "8fe04bc6234e5a127cef598170657ff02969d0e788c872f4a1bc278007404c2d",
-    "entry-detail.png": "0af54363d94aa1da7c59492d6419541c0c6fd03689d4e7595048f2e1ab812b12",
-    "front.png": "7f57879cfaae397d73f92031a8616bf6e503d06401bd40017b3a9240ca779b41",
-    "preview.png": "dcb2a30249d2d11d1330e448366da620c3a1ee55738bda48c80f4d0d5201731b",
-    "rear.png": "0e02b963ccabb3256eda434859f806971115b7860bb872073adaebbd94366218",
-    "roof-detail.png": "c4e1274605f67dd49f6a5a35bd40c170fd588c4a1bfd4a9517f1a57f18145aa2",
-    "top.png": "049da1c60bd59706ff6a2b117b959f7bf22dddb7252faea0843292570e2020a2",
-    "west.png": "e2568a954bebc3ee9b24c3dad474674605a7b19cf28536b0ec618c79258b0c18"
-  }
+    "preview.png": "62c5981018d8b115364385d65342148981062a6c18c5cd3b20a06006a792c2e2",
+    "rear.png": "10bbf756249d2e622106c25ef36b8559f24781635f8907bfdf16bf37bbc936b7",
+    "front.png": "2f57f9376eaff14ed0c266235d0d9b43bbb0f443237ff5842c3f94aae027b001",
+    "back.png": "b42f8b1acb65bd13596eaa8e68384bb9d6e19bdf4ef1cec386ffcd8cda51bc8f",
+    "west.png": "82405cc920523387b473a9ac504962b855adeffdb4bb1182dcf5cacffc93375d",
+    "east.png": "d94e35436183578df3325ddb0ef4c4255b92aa74c4d12378e020979952f08789",
+    "top.png": "4cc11eac45da9d7ac9af09ab8ca1b9b56512949c9c0b8aaf78adc763e69bf9bb",
+    "entry-detail.png": "df68c8337c091362ec6855472e8b7b5bbae0c3bd766f0b2b9ab1ad9a6d536710",
+    "courtyard-detail.png": "3b280dae0f5b7bd4a3f84a2ef1e0362c7bbe18202a96829a143149a0a5e15013",
+    "roof-detail.png": "af2613d4c982c634fa127b8ef3dbcd57bf5f67b34c68a771e8bfaa0736be08a0"
+  },
+  "mesh_sha256": "1812d37eba590b5c2e7a39276d7ff94d44153f98e50e1315ab2bdaead5a7b222",
+  "independent_visual_review": "PORTAL-PIER-CORRECTION-INDEPENDENT-QA.json",
+  "previous_qa": "qa/portal-pier-correction-previous/NO-TEXT-QA.json"
 }

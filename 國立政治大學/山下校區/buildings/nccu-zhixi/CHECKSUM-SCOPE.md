@@ -1,0 +1,1 @@
+PORTAL-PIER-CORRECTION: four already-colored faces changed index1 to existing0, not new coverage.1026tri;820appearance+150neutral+56displaybase. Source pending is fixed stage snapshot; final independent/delivery separately issued. Exact relative-path hashes; historical qa and old manifests are not current final evidence. Original noOBJ.

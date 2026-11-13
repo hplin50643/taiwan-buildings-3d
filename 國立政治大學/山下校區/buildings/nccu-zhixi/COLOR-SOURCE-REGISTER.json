@@ -1,30 +1,46 @@
 {
-  "source_go_sha256": "fae3a31b9b2082bbe3ae14f63c33ff26783cd64e626742e788ef82e1bb20787c",
-  "sources": [
-    {
-      "sha256": "6f3b5072196adbac6f78211bc29b340fd2eaf91e6a6edce31b38063a04a97c75",
-      "url": "https://osa.nccu.edu.tw/CSRC/files/169362228269a7c8ada230d.pdf",
-      "used": "page37 frontal and side exterior photographs only; page36 identity/date. No interior/security detail used."
-    },
-    {
-      "sha256": "df5c093dca5ab23d6894cf6b0c823ced107c887ecb2e4ca7a4b03417260295ac",
-      "url": "https://nccuwiki.lib.nccu.edu.tw/images/b/ba/%E5%BF%97%E5%B8%8C%E6%A8%93.jpg",
-      "used": "undated official library photograph; red/brown entrance differs from inventory aluminum-frame doors, so do not copy its door color into chosen version"
-    },
-    {
-      "sha256": "09bcf187428f2d1b7b0d234c386d4893afc17d4283fa4a23144edfba87ec0b2b",
-      "url": "https://nccuwiki.lib.nccu.edu.tw/index.php/志希樓",
-      "used": "identity, material description 砌磚洗石子牆面 and culture-tile roof; text material does not by itself establish roof color"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "nccu-zhixi",
+  "identity": "National Chengchi University Zhixi Building, confirmed official inventory page37 and NCCU library/news; not National Central University.",
+  "change": "Correct original light aluminum assignment of the two lower structural portal pier front faces to existing washed-aggregate gray index0. Not new geometry or added color coverage.",
+  "faces": [
+    507,
+    509,
+    523,
+    525
   ],
-  "limitations": [
-    "Do not turn the genuine restrained gray facade into arbitrary saturated colors merely to demonstrate colorization.",
-    "No per-pixel photo textures, no school text/crest copied, no added modeled frames/doors.",
-    "No blanket red roof: roof material text is not color evidence and photographs are tree-obscured.",
-    "Retain original public rear/roof simplification limitations. New color does not validate existing proportions.",
-    "HEX are chosen approximate display colors under uncalibrated lighting. Outdoor shadows/stains are not mandatory material regions."
+  "complete_domains": [
+    [
+      507,
+      509
+    ],
+    [
+      523,
+      525
+    ]
   ],
-  "rights": "Official public page/photo/PDF without established CC license; private references only. Do not redistribute source pages/photos/crops or imply project license licenses originals.",
-  "count_delta": 0,
-  "independent_source_review_sha256": "4436f727f29045ffd89098ff50986f679740c577d5bf28750c61d07897aaecb7"
+  "old_material": 1,
+  "new_material": 0,
+  "triangles": 1026,
+  "source_basis": [
+    "Original inventory PDF page37 front exterior shows gray structural piers flanking aluminum door opening; these are not aluminum jamb faces.",
+    "Original official library photograph also shows gray structural piers but earlier red door is deliberately excluded from door-color inference.",
+    "New official news21703 photographs0/6 show gray aggregate texture of left structural pier and same entrance; current plaque/people are not copied and lower occlusion not falsely called full pixel evidence."
+  ],
+  "limits": [
+    "Existing approximate geometry; front only, not lower side returns, upper pier faces, actual door/aluminum window frames or roof.",
+    "Nominal existing aggregate gray family not calibrated HEX. No door-era change or plaque modeled. Lower partial foliage/people occlusion is corroborated by original inventory, not blanket extension to other faces."
+  ],
+  "file_sha256": {
+    "domain-screen.json": "2629ba6995fa6e793d2aa61df46e508f4eed0e2dd1815dc355b6ad6be82e5c72",
+    "original/build_model.py": "77bbcb6b890fba654eb32afb800e9ca6c0248c1f0e55a86d74211b3f87c23195",
+    "original/colorize_model.py": "b217581ecc9721235492597ced5907872ca58bbc9307cc9e10583b06569c43cd",
+    "private-reference/inventory.pdf": "6f3b5072196adbac6f78211bc29b340fd2eaf91e6a6edce31b38063a04a97c75",
+    "private-reference/inventory37.jpg": "2ccd1d59f4fd28fa2f69e37742f74c5b6c12c4e2f952947aedf785569c80de98",
+    "private-reference/library.jpg": "df5c093dca5ab23d6894cf6b0c823ced107c887ecb2e4ca7a4b03417260295ac",
+    "private-reference/news-0.jpg": "026b8064f4c0bf82abf8f5fea3bfc3238d41f2a300ecea16070403e64023e509",
+    "private-reference/news-6.jpg": "9d0c48f78a84f9b0b700c3c76db217525dbccfbb8f45594a132702bc7f436407",
+    "private-reference/news-register.json": "447bbb0df2ca4534dee6f279508eed2afa7f41c85a8048f5f30b8932c932b070"
+  },
+  "historical_source_register": "qa/portal-pier-correction-previous/COLOR-SOURCE-REGISTER.json"
 }

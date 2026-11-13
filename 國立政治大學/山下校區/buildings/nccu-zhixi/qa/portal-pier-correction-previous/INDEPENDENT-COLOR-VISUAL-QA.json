@@ -1,0 +1,78 @@
+{
+  "status": "PASS_BOUNDED_COLOR_V2_INDEPENDENT_REVIEW",
+  "utc": "2026-11-02T12:23:18.071681+00:00",
+  "slug": "nccu-zhixi",
+  "count_delta": 0,
+  "supersedes_status_of": "NCCU-ZHIXI-INDEPENDENT-WIP-COLOR-REVIEW-1215.json; prior file retained",
+  "review_scope": "Existing-face appearance only, not geometry improvement, slicer or physical print certification.",
+  "sha256": {
+    "colorize_model.py": "b217581ecc9721235492597ced5907872ca58bbc9307cc9e10583b06569c43cd",
+    "color-mesh.npz": "202c7f7dff570b4407df1560fc93345ac80a3f7eb64f8b5fac7caa247625f577",
+    "model.stl": "8708e06528a5e6287650b16b1ca37473c3fe9941156243aab04bb27b1024f1b8",
+    "preview.png": "022597020b4441148638ac966a9f3dcab70233d0d7afa2198c06b7bb7d6f5e41",
+    "rear.png": "4d537cd67f7d7631ad98e0ef0ae3151aec556917ac6ea4cec52a1a6c36897982",
+    "front.png": "aa37374b898537ecf45fa684244ceeab5260a96ec2f8485207256945667c52ee",
+    "back.png": "0fbc4efe3945e110a486d187204fc21e3e40f0f7df2bb60f7f5796892a629eb0",
+    "entry-detail.png": "31eca65a7638fb225e31957f5467adcaf85e74a12279422d1d7784e43bd82754",
+    "README.md": "dc490b4ed78d62b92b4982743b68eadf335b3883aa965bd2aa859cc567d1c03c"
+  },
+  "geometry_checks": {
+    "triangles": 1026,
+    "vertices": 505,
+    "exact_triangle_coordinate_multiset_matches_original_STL": true,
+    "original_STL_sha256": "8708e06528a5e6287650b16b1ca37473c3fe9941156243aab04bb27b1024f1b8",
+    "model_edits_by_reviewer": false
+  },
+  "material_checks": {
+    "counts_by_id": [
+      487,
+      173,
+      44,
+      116,
+      150,
+      56
+    ],
+    "unverified_outer_rear_fascia_dark_faces_remaining": 0,
+    "correction": "26 faces formerly assigned observed dark eave material3 now neutral4; windows44 dark faces unchanged.",
+    "upper_roof_faces_all_neutral4": true,
+    "upper_roof_faces_checked": 110
+  },
+  "visually_reviewed_v2": [
+    "preview.png",
+    "rear.png",
+    "front.png",
+    "back.png",
+    "entry-detail.png"
+  ],
+  "visual_results": [
+    "Muted gray aggregate family with light frames and dark existing recesses; no earlier red entrance mixed into2021-selected appearance.",
+    "Existing central crossbars and side frames remain light; no added panes or doors.",
+    "Rear wall and roof remain neutral; removed unsupported dark rear/outer fascia attribution.",
+    "No material-driven random triangular patches observed. Roof triangular tonal differences correspond to unchanged geometric/lighting facets and one neutral material, not arbitrary face colors.",
+    "README clearly separates preserved historical monochrome previews from current root-level color renders."
+  ],
+  "source_limits": [
+    "2021 inventory form date does not establish exact photograph date.",
+    "Uncalibrated display palette, not paint codes or exact material identification.",
+    "Colorization preserves original simplified front/rear/roof geometry limitations.",
+    "Original photos/PDF remain private, no source texture copied.",
+    "Six materials not a validated four-filament sliced project."
+  ],
+  "not_independently_checked_here": [
+    "Final ten-image completeness/framing as a set",
+    "3MF importer behavior",
+    "Actual print performance"
+  ],
+  "actions": {
+    "network": false,
+    "download": false,
+    "output_modified": false,
+    "deletion": false
+  },
+  "prior_README_sha256": "4058f33ec324813fd8963272ab90046faacea6df8f53c8366b0a8226c2604387",
+  "README_rebind": {
+    "review_file": "README-REVIEW-REBIND-1233.json",
+    "sha256": "41c30bf49d92fa4b06feaaa97fcce1e8bf297ef93b796e3d026c41e81409b0b3",
+    "reason": "Independent reviewer verified exact two textual corrections removing claim of original OBJ; all geometry/code/image bindings unchanged. Prior QA retained in private freeze-history-v0-1233 and root original review."
+  }
+}

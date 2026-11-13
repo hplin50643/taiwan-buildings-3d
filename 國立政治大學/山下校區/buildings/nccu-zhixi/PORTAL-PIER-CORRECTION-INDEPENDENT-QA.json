@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "reviewer": "Independent reviewer, not builder",
+  "source_review": "second-source-domain-review.json",
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "rebuild_review": "independent-rebuild-review.json",
+  "triangles": 1026,
+  "corrected_faces": [
+    507,
+    509,
+    523,
+    525
+  ],
+  "complete_corrected_domains": 2,
+  "new_color_faces": 0,
+  "colored_faces": 820,
+  "neutral_faces": 150,
+  "display_base_faces": 56,
+  "original_palette_entries_unchanged": 6,
+  "mixed_connected_domains_before": 17,
+  "mixed_connected_domains_after": 17,
+  "all_original_mixed_domains_members_and_indices_exact": true,
+  "actual_visual_review": {
+    "all_ten": true,
+    "full_size": [
+      "front.png",
+      "entry-detail.png",
+      "courtyard-detail.png",
+      "roof-detail.png"
+    ],
+    "specific_check": "Two lower portal pier front domains use existing aggregategray, distinct from retained aluminum upper/window frames; side and all unselected indices unchanged."
+  },
+  "source_and_geometry_limits": [
+    "Original official inventory/library and new official news show structural stone pier distinct from aluminum door jamb; not newcolorcoverage.",
+    "Low portions partly obscured, limited same-pier continuity corroborated across sources; no per-pixel/materialcalibration claim.",
+    "Original sixpalette and geometry unchanged; no doorera/plaque changes or upper/side extension. No original publicOBJ."
+  ],
+  "model_and_3MF_verified": true,
+  "retained_isolated_outputs_independently_compared": true,
+  "scene_independently_reopened": true,
+  "scene_mesh_transforms_camera_lights_render_unchanged": true,
+  "source_pending_snapshot_unchanged": true,
+  "image_sha256": {
+    "preview.png": "62c5981018d8b115364385d65342148981062a6c18c5cd3b20a06006a792c2e2",
+    "rear.png": "10bbf756249d2e622106c25ef36b8559f24781635f8907bfdf16bf37bbc936b7",
+    "front.png": "2f57f9376eaff14ed0c266235d0d9b43bbb0f443237ff5842c3f94aae027b001",
+    "back.png": "b42f8b1acb65bd13596eaa8e68384bb9d6e19bdf4ef1cec386ffcd8cda51bc8f",
+    "west.png": "82405cc920523387b473a9ac504962b855adeffdb4bb1182dcf5cacffc93375d",
+    "east.png": "d94e35436183578df3325ddb0ef4c4255b92aa74c4d12378e020979952f08789",
+    "top.png": "4cc11eac45da9d7ac9af09ab8ca1b9b56512949c9c0b8aaf78adc763e69bf9bb",
+    "entry-detail.png": "df68c8337c091362ec6855472e8b7b5bbae0c3bd766f0b2b9ab1ad9a6d536710",
+    "courtyard-detail.png": "3b280dae0f5b7bd4a3f84a2ef1e0362c7bbe18202a96829a143149a0a5e15013",
+    "roof-detail.png": "af2613d4c982c634fa127b8ef3dbcd57bf5f67b34c68a771e8bfaa0736be08a0"
+  },
+  "file_sha256": {
+    "model.stl": "8708e06528a5e6287650b16b1ca37473c3fe9941156243aab04bb27b1024f1b8",
+    "build_model.py": "77bbcb6b890fba654eb32afb800e9ca6c0248c1f0e55a86d74211b3f87c23195",
+    "color-mesh.npz": "1812d37eba590b5c2e7a39276d7ff94d44153f98e50e1315ab2bdaead5a7b222",
+    "palette.json": "34b61ac89324d7e14eb8c1dc7e788db1624f04703467fdeff18e796a2e2082f2",
+    "appearance.3mf": "6fc7c7604f81b40a7010387f63f78b682cb5d337a70481b75afb4f49f58ae4ae",
+    "appearance-materials.json": "cbdbdfcab99d6eba09faa02dd5ba0f62265d4648c36a96a907b8bac34d947762",
+    "scene.blend": "533a8ff5c57f1eeccfd835571fdb4e79091538e311ad009dada2d202ee521d74",
+    "colorize_model.py": "97051b95b91847a64dc70d41a319f6720b91d96e441cda057c14bb4d0b9c4889",
+    "export_appearance.py": "4b87148f1008d4d866200d890f463dcdc5e435d92b6ffe500dc2c4c24757baf4",
+    "validate_color.py": "5df8cb8e88dbd2e69093ea83ce256e103fb9e2da8274acf0ce16c0b0c87c4a3b",
+    "verify_color_scene.py": "0e2d6f9c187d65603f281e9b007470fa06d4cbe99765e86fd0773087525ebc88",
+    "render_color.py": "5b609f80a37c8f6d29dda7e20859d57ca7d1a28db3f4809b32d89b4abdb3aa67",
+    "README.md": "0f0627779380f9bc4cbe89309c64e582c45757b86f87e864747e92cdcc27936d",
+    "CHECKSUM-SCOPE.md": "3525b00dfdc954bbf8d225b3b5bc94941b934f515ca56ad93cf595bfa1bb5822",
+    "COLOR-ASSIGNMENT-QA.json": "aebe1668f40cf4334c24342704e8846deac4bb82bbbb0f8cc960440f171ef844",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "254bd672daeec531a2697693672b0f0d0f69e6d8d862a222ae3a81fecb135bec",
+    "SCENE-QA.json": "69b05bea8678f6f998bee7138a903c70fbe61dfd1af0062034bff93061a14e71",
+    "PORTAL-PIER-CORRECTION-SCENE-QA.json": "d96f1be41faa3bb81606405c13d12e071dba2a91300fdc295d83142fbd3650a4",
+    "PORTAL-PIER-CORRECTION-SOURCE-QA.json": "729ed950a7865593a36db40a8b7111d71505e56cbc174f8b30420323e32623ff",
+    "COLOR-SOURCE-REGISTER.json": "729ed950a7865593a36db40a8b7111d71505e56cbc174f8b30420323e32623ff",
+    "README.zh-TW.md": "0f0627779380f9bc4cbe89309c64e582c45757b86f87e864747e92cdcc27936d"
+  },
+  "no_blockers": true
+}

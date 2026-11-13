@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "Four already-colored lower portal structural-pier front faces corrected from aluminum to existing aggregate family, not new coverage or geometry certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 1026,
+  "original_color_faces": 820,
+  "new_color_faces": 0,
+  "corrected_existing_color_faces": 4,
+  "colored_faces": 820,
+  "unknown_neutral_faces": 150,
+  "display_base_faces": 56,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 17,
+  "current_mixed_connected_domains": 17,
+  "current_independent_review": "PORTAL-PIER-CORRECTION-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only faces507,509,523,525 in2whole lower front domains index1 to0. Six palette entries and every other material index preserved. Partial low occlusion bounded by original inventory and new official close-image corroboration. No upper/return/door/roof expansion.",
+    "Original2021 inventory version; earlier red door not copied, new plaque/people not modeled. Nominal color/proxy geometry not calibrated/surveyed. Source pending stage snapshot fixed; original engineering limits retained."
+  ],
+  "checked_at": "2026-11-12T20:12:18.528265+00:00",
+  "original_STL_sha256": "8708e06528a5e6287650b16b1ca37473c3fe9941156243aab04bb27b1024f1b8",
+  "color_mesh_sha256": "1812d37eba590b5c2e7a39276d7ff94d44153f98e50e1315ab2bdaead5a7b222",
+  "images_sha256": {
+    "preview.png": "62c5981018d8b115364385d65342148981062a6c18c5cd3b20a06006a792c2e2",
+    "rear.png": "10bbf756249d2e622106c25ef36b8559f24781635f8907bfdf16bf37bbc936b7",
+    "front.png": "2f57f9376eaff14ed0c266235d0d9b43bbb0f443237ff5842c3f94aae027b001",
+    "back.png": "b42f8b1acb65bd13596eaa8e68384bb9d6e19bdf4ef1cec386ffcd8cda51bc8f",
+    "west.png": "82405cc920523387b473a9ac504962b855adeffdb4bb1182dcf5cacffc93375d",
+    "east.png": "d94e35436183578df3325ddb0ef4c4255b92aa74c4d12378e020979952f08789",
+    "top.png": "4cc11eac45da9d7ac9af09ab8ca1b9b56512949c9c0b8aaf78adc763e69bf9bb",
+    "entry-detail.png": "df68c8337c091362ec6855472e8b7b5bbae0c3bd766f0b2b9ab1ad9a6d536710",
+    "courtyard-detail.png": "3b280dae0f5b7bd4a3f84a2ef1e0362c7bbe18202a96829a143149a0a5e15013",
+    "roof-detail.png": "af2613d4c982c634fa127b8ef3dbcd57bf5f67b34c68a771e8bfaa0736be08a0"
+  }
+}

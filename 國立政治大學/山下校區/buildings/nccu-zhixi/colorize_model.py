@@ -1,4 +1,4 @@
-"""Existing Zhixi geometry, face materials only; no geometric edits or photo textures."""
+"""Existing Zhixi geometry; lower portal structural-pier front material correction only."""
 from pathlib import Path
 import json,hashlib,numpy as np,trimesh
 R=Path(__file__).resolve().parent;EXPECTED_STL='8708e06528a5e6287650b16b1ca37473c3fe9941156243aab04bb27b1024f1b8'
@@ -32,6 +32,15 @@ for i,((x,y,z),(nx,ny,nz))in enumerate(zip(m.triangles_center,m.face_normals)):
  if y<-7 and z<5.1:mat[i]=1
  # Unphotographed rear/outside projecting fascia is not source-observed dark eave.
  if mat[i]==3 and (y>24.51 or abs(x)>66.01):mat[i]=4
+# Correct only finite lower structural pier front faces, not aluminum doorway frames.
+t=m.triangles
+selected=(np.abs(t[:,:,1]+4.5).max(1)<1e-4)&(t[:,:,2].min(1)>=3-1e-4)&(t[:,:,2].max(1)<=12+1e-4)&(np.abs(t[:,:,0]).min(1)>=16.5-1e-4)&(np.abs(t[:,:,0]).max(1)<=18+1e-4)
+assert np.flatnonzero(selected).tolist()==[507,509,523,525]
+original=mat.copy();assert (original[selected]==1).all()
+mat[selected]=0;assert np.array_equal(mat[~selected],original[~selected])
+ad=m.face_adjacency;cs=trimesh.graph.connected_components(ad[(m.face_normals[ad[:,0]]*m.face_normals[ad[:,1]]).sum(1)>.999999],nodes=np.arange(len(mat)),min_len=1)
+assert all(not selected[c].any() or selected[c].all() for c in cs)
+assert np.bincount(mat).tolist()==[491,169,44,116,150,56]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=mat)
 (R/'palette.json').write_text(json.dumps(pal,ensure_ascii=False,indent=2)+'\n')
 (R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':a,'hex':b,'faces':int(np.count_nonzero(mat==i))}for i,(a,b)in enumerate(pal)],'geometry_policy':'1026 original triangles unchanged','limits':['2021 inventory exterior photo version, not earlier red entrance.','Neutral large roof surfaces and blank rear; no inferred tile color.','No new doorway, frames, or photo texture.','Six-material appearance is not a tested four-filament print project.']},ensure_ascii=False,indent=2)+'\n')

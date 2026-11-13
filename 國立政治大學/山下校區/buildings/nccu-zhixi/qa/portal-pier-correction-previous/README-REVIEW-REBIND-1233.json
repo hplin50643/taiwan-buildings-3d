@@ -1,0 +1,30 @@
+{
+  "status": "PASS_README_DOCUMENTATION_CORRECTION_REBIND",
+  "utc": "2026-11-02T12:34:56.954886+00:00",
+  "prior_review_file": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "prior_review_sha256": "86dd63f2256b28a91cc710351286f3a7dc14d7f8ad1e4f8665aeb093e5094296",
+  "old_readme_sha256": "4058f33ec324813fd8963272ab90046faacea6df8f53c8366b0a8226c2604387",
+  "current_readme_sha256": "dc490b4ed78d62b92b4982743b68eadf335b3883aa965bd2aa859cc567d1c03c",
+  "reason": "刪除不實原OBJ保留宣稱；原公開包沒有OBJ。首行STL/OBJ改STL，檔案列表去model.obj並明文說無原OBJ。",
+  "exact_two_text_reversals_reproduce_prior_readme_hash": true,
+  "other_reviewed_files_unchanged": {
+    "colorize_model.py": true,
+    "color-mesh.npz": true,
+    "model.stl": true,
+    "preview.png": true,
+    "rear.png": true,
+    "front.png": true,
+    "back.png": true,
+    "entry-detail.png": true
+  },
+  "constraints_rechecked": [
+    "1026面/STL幾何不變，新增套數0",
+    "六材質非四色切片檔",
+    "2021灰鋁入口不採紅門",
+    "未知屋面/背部neutral及原幾何限制",
+    "原單色previews保留歷程",
+    "原照片/PDF私有、未確認CC、不保商用"
+  ],
+  "conclusion": "僅文件正確性修訂，不影響已核幾何、材色、預覽；原QA不覆寫，以此附錄綁定新README。",
+  "reviewer_actions": "唯讀檢查＋另寫附錄；不修改原QA/README/model，不刪檔。"
+}
