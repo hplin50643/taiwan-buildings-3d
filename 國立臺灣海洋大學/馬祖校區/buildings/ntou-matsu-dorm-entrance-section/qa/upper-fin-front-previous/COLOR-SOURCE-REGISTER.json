@@ -1,0 +1,41 @@
+{
+  "slug": "ntou-matsu-dorm-entrance-section",
+  "count_delta": 0,
+  "geometry_change": false,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "go": {
+    "file": "NTOU-MATSU-DORM-ENTRANCE-COLOR-SOURCE-GO-0834.json",
+    "sha256": "2b062ebc1cebe91095184b4e339cbc973c43d87054132108ca48123ec6d567e0"
+  },
+  "review": {
+    "file": "INDEPENDENT-MAPPING-0835.json",
+    "sha256": "fc5ecb90abf34179bfc75c16b1c2243fd6df7aea714118696045230a770a9e99"
+  },
+  "source_records": [
+    {
+      "file": "official-0.jpg",
+      "sha256": "5cb53ef0518f948fb8b24e727030acdfe54270f0131ce889b974e1bea0c0b2bb"
+    },
+    {
+      "file": "official-1.jpg",
+      "sha256": "46b22d906d86900429a0d625bef4a30b528f40964fbf3a0f53ac5e2ad44b68a6"
+    }
+  ],
+  "limits": [
+    "Roof upper surfaces are truncated proxies, not verified full main roof slopes. Do not color upper or rear planes.",
+    "Lower long canopy extends beyond image edges; pillars are obscured by flower arrangements/ribbons and people, so no full-column gray replication.",
+    "Balcony pale masonry infill and gray surrounds differ; coarse original shallow recess is not automatic evidence of precise material correspondence.",
+    "Glass backings contain frames, interiors and reflections, not single dark glass finish.",
+    "Small central tile canopy mixes pale weights and dark tiles; no whole gray/black plate.",
+    "Side/back artificial cuts, low parapets/ground/steps and all unlisted surfaces remain unknown neutral.",
+    "Original2860faces and immutable OBJ retained without geometry change. New optional partial color variant uses only4evidenced faces, other surfaces unknown neutral.",
+    "Original scene/preview/model/OBJ files not overwritten; countdelta0.",
+    "Only24mm nominal entrance facade depth; flat rear is an artificial section boundary, not surveyed rear elevation. Not entire international residence.",
+    "Exactly2 original official photographs downloaded once successfully and viewed. Rawphotos/retrieval records remain private for authorized backup."
+  ],
+  "baseline": "Actual originalscene single Warm stone preview only assigned to all2860faces; original aliases retained.",
+  "issuance_clarification": "FormalGO supersedes inherited recommendation-only wording; review filename0835 is local sequence label not verified capture/issuance time. Original2860 triangles and model.obj preserved.",
+  "rights": "Private references only; no public source images or textures.",
+  "source_private_backup": "Sources separately privately retained."
+}

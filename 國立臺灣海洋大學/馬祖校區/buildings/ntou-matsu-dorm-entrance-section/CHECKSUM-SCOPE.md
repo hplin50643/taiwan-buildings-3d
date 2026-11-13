@@ -1,0 +1,1 @@
+UPPER-FIN-FRONT: 6 new original faces/3 whole domains;4 to10 colored,2850neutral,2860tri. Original STL/OBJ/build and engineering/history bytes retained. SOURCEpending fixed snapshot; final independent/delivery separate. Exact work-relative paths; historical qa and manifests are not current final evidence.

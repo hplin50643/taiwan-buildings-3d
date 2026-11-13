@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "reviewer": "Independent reviewer,not builder",
+  "source_review": "second-source-domain-review.json",
+  "triangles": 2860,
+  "new_color_faces": 6,
+  "complete_domains": 3,
+  "original_color_faces": 4,
+  "colored_faces": 10,
+  "neutral_faces": 2850,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "original_two_palette_and_all_unselected_indices_exact": true,
+  "actual_visual_review": {
+    "all_ten": true,
+    "full_size": [
+      "entry-detail.png",
+      "facade-detail.png",
+      "roof-detail.png"
+    ],
+    "specific_check": "Only three upper-left narrow fin fronts pale gray; deep sides and lower balcony masonry/glazing remain original."
+  },
+  "limits": [
+    "Original straight fin box proxies of real chamfered projecting fins; no surveying or measuredHEX.",
+    "Only original24mm entrance segment,not entireresidence or2026currentcondition.",
+    "Whole domains preserved,no side/top/bottom/mainpier extension; sourcepending snapshot fixed."
+  ],
+  "model_and_3MF_verified": true,
+  "retained_isolated_outputs_independently_compared": true,
+  "scene_independently_reopened": true,
+  "scene_mesh_transforms_camera_lights_render_unchanged": true,
+  "image_sha256": {
+    "preview.png": "51c64c8b42252fc22c17c2186476bc72ab6e6911ff2966b34724470874a72a56",
+    "rear.png": "d8973319e6650c6db5e09c2d289c4aea03d2e60b70ddb09b0cedb28c60784f90",
+    "front.png": "e3a5c80e4209a6b0d8a1245cb1f6a9961e695d0f6c33bced912d12733dfe9379",
+    "back.png": "f4d1e6a9c0a14bfc16d9d0cc0720969c368cc7561f10f8c5c3b57c0c77790b91",
+    "west.png": "dfd58c024debe4cccf1134f8f87bf2347784caa9b127ff65bd7949a6c45b8f9e",
+    "east.png": "9857ce0e07c0e66b5b0017fd2c280cd841c88e80b27a58d480fcdf425efe095f",
+    "top.png": "d9b7ea698cda7695bdd31d737205780ede1cf39b38d23f60e4eea926fd7f1041",
+    "entry-detail.png": "7e2485b8cceacbffb3cec1c4c195d1aa729e7e09043813a49311922308b9b615",
+    "facade-detail.png": "72cbace776d0dc2c2f8f3e66efd5cdb11f88ddd9205a3b05958a4e4c9f3b8f1b",
+    "roof-detail.png": "3197f0b7c4cd73ec61a636507bf81a04943e601cacc83ee7c46435526324caf9"
+  },
+  "file_sha256": {
+    "model.stl": "85bfde8fc1fd94aba8d838a41cb7faf6e47199c387ac8649f277cc41c90b86c5",
+    "build_model.py": "3e7ff38fbb815a0d87569f94c4157bd55c0b2d816957609a87b910618cdcc621",
+    "color-mesh.npz": "3f0db2f33988e050c1deca02d13578c5d22b8ed369c0c42f1dc3733ec9a1a0bd",
+    "palette.json": "4927fb47766e3c9b54898aa722efff4878dfc3e9a0cf623d9c849b293a93e146",
+    "appearance.3mf": "4877af747f2c1809a0c57d25aedbfbeb8d589b338b800398d3157fd35bc4a9f1",
+    "appearance-materials.json": "c3bfbd037884a7c331576ba25d69cbde91d001140a57ee1ad4165bf6d39be5e8",
+    "scene.blend": "2370b63f4d3cb54a07fbd8fd12d5b996919cf37649e82af104f0a08d373e9a8c",
+    "colorize_model.py": "edcc62eeaeac11e9c56d07e58a5cff4d076e46efa16b82ef412ac60bb1651268",
+    "export_appearance.py": "2aaf770a3e7fbc000b75481d8eddcdbdc7399a404ddc9640922e384469b6ba74",
+    "validate_color.py": "3c6ab70e13a4200dd0083cb440ef1ee99ac1e0d9c786815a63fd605f4393a828",
+    "verify_color_scene.py": "f75baf45410311f3c23efd7713e8aa42479202cb8bec53ce4ed70d421f36d87e",
+    "render_color.py": "7b70a0382bfb9e3edfe2749fa7df6b7a43dc7f64489e554b7397f822b1afd11c",
+    "README.md": "62f6b58b61376e4edde9b5942e2c792e5c58a194373c46556fc388770693d6ec",
+    "CHECKSUM-SCOPE.md": "179d6c6d863c9d1a83abcd76965cec6c4ffe92e14ab806be65593d3b2751ae07",
+    "COLOR-ASSIGNMENT-QA.json": "da14412e7868f0e53b43fdcca99bb1c23e8c25649adaaed1c6855372d7969b8c",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "ec58aff11a294f7c0e7c64538945aababe348823e0f964d57a3108d8fd9816e7",
+    "SCENE-QA.json": "056161955dd59a1518cc329a9ed31f4a067dcfa5719721787ce224bc130330cf",
+    "UPPER-FIN-FRONT-SCENE-QA.json": "c860c92512b8e8b6e360081eb4e29070a1aaa3ad02bf0a421ed652e12e480e33",
+    "UPPER-FIN-FRONT-SOURCE-QA.json": "03dc1076c90019fc44ea31a7521622b635dc555d0fa4be21061f42f6657dbd8b",
+    "COLOR-SOURCE-REGISTER.json": "03dc1076c90019fc44ea31a7521622b635dc555d0fa4be21061f42f6657dbd8b",
+    "README.zh-TW.md": "62f6b58b61376e4edde9b5942e2c792e5c58a194373c46556fc388770693d6ec"
+  },
+  "no_blockers": true
+}

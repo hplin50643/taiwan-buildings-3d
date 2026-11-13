@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in ntou-matsu-dorm-entrance-section-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "2ebbb287112f7aa0dbd38360f51cececd3618cfffa1758b8b4e9764ac004b30c",
+    "east.png": "35c4eb2787d5be1b64cead88dc3738133a6ccdcf8c645102be14c25da45ea5f5",
+    "entry-detail.png": "600f03c63e2a96a47d0ebe62ceef33cbc5eccc74ad4d5bda68ec00919d7e3ebd",
+    "facade-detail.png": "3c75e73e677502d89c036ac698ba2df1918dc2bbf9334098b718082fac3db565",
+    "front.png": "e6d1ef058d74d25be03c547071281ea913b4bdb5a4fe0116cf9935efdbba441d",
+    "preview.png": "49c4ac98a0ce8d573acb7f8786fff40f65cc3af0e4fbdf320d7dc472d8b35f16",
+    "rear.png": "da31163d3de55b8eecf6f33ab75b2659cf872ac99ce5e6fe983b04aeded88288",
+    "roof-detail.png": "77b05da673e7a20a446cff2521caf3dc71e970fab7c5a3b002d99eba17e1ad46",
+    "top.png": "25f57c356d4d93e2a879a4aef0898dd9b219ac0e2ea3d177dc155cde35943bf5",
+    "west.png": "5d1cfa10d98b67579192bf88304cf455c820f45c88976036311138f41476da23"
+  }
+}
