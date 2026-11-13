@@ -16,6 +16,7 @@ def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # One library-hosted aerial freshly viewed; inaccessible Commons image not used.
 palette=[('Unknown left outer wall roof plant and artificial rear cut','#AAA79F',.86),('Supported front masonry ribs and right end pale beige','#C8BDA8',.86),('Original left sunshades frames and frontal caps silver grey','#B2B8B6',.8),('True recessed backing mixed opaque grey green','#5E7472',.82),('Inferred left end wall continuity pale beige','#C8BDA8',.86),('Inferred existing left end recess opaque grey green','#5E7472',.82)]
+palette.append(('Approximate pale cool grey upper right panel facade','#C9CBC7',.84))
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
@@ -75,9 +76,21 @@ for p in mesh.polygons:
     elif abs(n[2])<.1:i=4
  if i!=original_indices[-1]:changed_faces.append(p.index)
  p.material_index=i;indices.append(i)
+
+# Complete original upper-right windowed front panel, not roof or equipment.
+continuation_baseline=list(indices)
+reveal_domains=[[3202, 3204, 3210, 3211, 3212, 3213, 3214, 3215, 3216, 3217, 3218, 3219, 3220, 3221, 3222, 3223, 3224, 3225, 3226, 3227, 3228, 3229, 3230, 3231, 3232, 3233]]
+reveal_changed=[3202, 3204, 3210, 3211, 3212, 3213, 3214, 3215, 3216, 3217, 3218, 3219, 3220, 3221, 3222, 3223, 3224, 3225, 3226, 3227, 3228, 3229, 3230, 3231, 3232, 3233]
+for fi in reveal_changed:
+ assert indices[fi]==0
+ face=mesh.polygons[fi];assert face.normal.y<-.999
+ for vi in face.vertices:
+  q=mesh.vertices[vi].co
+  assert abs(q.y-7)<.0001 and 35.9999<=q.x<=56.0001 and 77.0998<=q.z<=91.0001
+ face.material_index=6;indices[fi]=6
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-left-end-continuity'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-upper-right-panel'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -108,7 +121,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-left-end-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Left end wall and existing recessed slots are material continuity approximations, not a separately verified left elevation. Artificial rear section remains neutral.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original single warm display material. Only one490x327library-hosted event aerial freshly viewed; Commons2024photo403 was stopped and not used as seen evidence. Limited front ribs/right end warm beige, original left sunshades/frames silvergrey, true window cut backs opaque mixed grey-green. Trees hide lower supports: same-family continuation inference. Purple sign banner is not masonry and omitted. Left end wall/slits now use continuity approximations in v2; artificial rear cut, flat roofs and broad plant/penthouse remain neutral. No geometry split/new frames/lettering. Event2020andfilename20160120notverifiedphotodates; no2024or2026restorationclaim. Original partial section and print limitations unchanged.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-upper-right-panel','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'reveal_complete_domains':reveal_domains,'reveal_changed_faces':reveal_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'changed_faces':changed_faces,'original_face_material_indices':original_indices,'limits':['Left end wall and existing recessed slots are material continuity approximations, not a separately verified left elevation. Artificial rear section remains neutral.','Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Original single warm display material. Only one490x327library-hosted event aerial freshly viewed; Commons2024photo403 was stopped and not used as seen evidence. Limited front ribs/right end warm beige, original left sunshades/frames silvergrey, true window cut backs opaque mixed grey-green. Trees hide lower supports: same-family continuation inference. Purple sign banner is not masonry and omitted. Left end wall/slits now use continuity approximations in v2; artificial rear cut, flat roofs and broad plant/penthouse remain neutral. No geometry split/new frames/lettering. Event2020andfilename20160120notverifiedphotodates; no2024or2026restorationclaim. Original partial section and print limitations unchanged.','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-195,-220,160),(0,0,45.5),220),'rear':((195,230,160),(0,0,45.5),220),'elevation':((0,-260,45.5),(0,0,45.5),220),'source-angle':((210,-230,150),(0,0,45.5),220),'left':((-260,-50,120),(0,0,45.5),220),'right':((260,50,120),(0,0,45.5),220),'top':((0,0,350),(0,0,45.5),220)}
 out=R/'appearance';out.mkdir(exist_ok=True)
