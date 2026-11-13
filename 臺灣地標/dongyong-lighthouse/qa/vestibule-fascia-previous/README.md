@@ -1,0 +1,28 @@
+# 東湧燈塔（東引島燈塔）｜原模型材色更新
+
+| 彩色預覽 | 彩色預覽 | 彩色預覽 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![左側](west.png) | ![右側](east.png) |
+| ![頂視](top.png) | ![入口階梯](entry-detail.png) | ![燈室細部](facade-detail.png) |
+| ![帽頂細部](roof-detail.png) | | |
+
+## 材色範圍
+同一既有東湧燈塔項目補彩（count_delta 0）。原 11696 三角面、頂點、STL 與 build_model.py 不變，無切面或增造風向標、光學設備、旗、人物及周邊房舍。原粗化崖體、階數、欄杆和圓塔形狀不因材色而成為精確測繪。
+
+- 官方日照外觀支持白色圓塔／下燈室／既有欄杆／階梯側牆，以及深灰黑帽頂與原簡化頂桿。圓柱同材延續為明示概化，非所有隱蔽面逐一照片確證。
+- **上燈室鼓體保持淡灰中性色族**：照片混合白遮板與淡色玻璃，原實體鼓與細梃無法精確對應每片真窗，不把十二扇整排當藍玻璃，不新增透明孔。既有凸梃／環框白色。
+- 既有外露環形步道及其最外垂直石緣、階梯踏面為低飽和灰褐石色（下層白環與欄柱不染褐）；原凹口可辨底面暗影，不造室內。未證的基礎平台、崖體、岩肩與展示底座中性，不按概化地形猜草皮、海水或岩紋。
+- 日景取色族，夕照僅作位置辨識；官方路徑年份不是每張照片拍攝日期，也不是現況精色。原圖只私人留存，不貼圖。
+- 六種外觀材料不是四色或多耗材切片方案；**未實際列印**，不保證免支撐。STL 不存色；本次沒有改原尺寸或列印幾何。
+
+## 檔案與重建
+[彩色 3MF](appearance.3mf) · [彩色 Blender](scene.blend) · [保留原 STL](model.stl)
+
+build_model.py 仍重建原幾何；colorize_model.py 僅對完整原面分材；export_appearance.py 產 3MF 基本材料；render_color.py 產十圖及場景。validate_color.py 驗原檔、三角座標、格式及保留隔離重建；verify_color_scene.py 重開實際 shader、索引及構圖。沿既有 numpy／trimesh／manifold3d／Pillow 與 Blender 4.3.2。
+
+## 來源與權利
+馬祖國家風景區管理處官方相簿公開外觀照片，主要日照 41／49／46，夕照 12 不作藍黃光材色。僅建築外部材色，不重製人物、旗幟、海面照片或安全設施。官方可讀不等於 CC 或任意再授權；原照不隨模型公開、不作紋理，不保證商用。URL／雜湊及來源限制見 COLOR-SOURCE-REGISTER.json。
+
+## QA 與保留歷程
+本次 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、FRAMING-QA、DELIVERY-QA 及獨立視覺審核對應新色版。舊 previews、舊報告和 ORIGINAL-MONOCHROME-README.md 保留作歷程，非本次色版入口。原包與重建目錄私人保留，不自動刪除；上方十圖和 scene.blend 為本次入口。

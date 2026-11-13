@@ -1,0 +1,76 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "dongyong-lighthouse",
+  "original_files": 47,
+  "triangles": 11696,
+  "original_material_counts": [
+    8404,
+    1720,
+    591,
+    404,
+    8,
+    569
+  ],
+  "complete_domain_occurrences": 822,
+  "observations": [
+    "All four original official images downloaded at exact registered SHA. Four-image contact and original49 full image actually viewed. Sunset12 not daytime color evidence.",
+    "New official attraction page supplied nine additional album images, not claimed independent photographer/capture date. Eight-image interim contact viewed and new1 and new5 full-frame 1400px views seen. New1 shows light vestibule roof center with stone perimeter; new5 door canopy front is brown stone.",
+    "Original one-slab vestibule cap is coarse; only its outer vertical front edge semantically corresponds to brown stone fascia visible in new35 frontal daylight and original49/new38 oblique daylight. Its x=-11 complete two-face domain can use existing stone material2. No claim of exact elevation or restored geometric accuracy.",
+    "Foundation terrain should not receive vegetation/rock paint. Mixed pale drum retains original caution; sunset lit glass not used."
+  ],
+  "file_sha256": {
+    "original-verification.json": "84d4dd5efc95883414be2efa345553910e88fe77de480e0ed32e57ceeacc89f4",
+    "domain-screen.json": "3196adbda18cd33d319b4cf820d5623359423f93da7645dad569636ff5bd3b40",
+    "original/build_model.py": "9cede3b6bb0eceac12d4bf5d5b0b651e072c0881bd3e0b40591e9471c1cb661d",
+    "original/colorize_model.py": "e783d8ec6c68f025b2fcdb1c1d17d4ab84dfbbd1783470cfc0765bb2014e3671",
+    "original/color-mesh.npz": "92c48a3209a5af1e91f2a278d1f7407bec63e4f8b8f1de9198c0bfa2ed25c6a2",
+    "private-reference/fetch-register.json": "ee676b01b603084e9dc9ed329a449f092f77c8d50967d024f4b6b1beaa1ee444",
+    "private-reference/new-register.json": "105b072959514aa9e1765f9e85380348b373c6f352e5bbdfcff56723dcb9ccd8",
+    "private-reference/new-page.html": "713c0f0dfabd3edeaaa4f1f6a6f4ea3e05ee348a07dba216c4552842ccf70289",
+    "private-reference/official-41.jpg": "40aa913d0abb22041210e36a8fe1955596f447bba349744788ceaa007053d6b0",
+    "private-reference/official-49.jpg": "e88ec309fcd7338eb2a99db2bf4afa6efd5e94000587197615e28e537e3b9c24",
+    "private-reference/official-46.jpg": "75a8e3d748b7b9b684fadfd4d0374abec463f8a24d73a0fff08755adb1a84ff1",
+    "private-reference/official-12.jpg": "d96da1b2d6f63f3117a0da7474492184179fe593a116ae2775d4666945b3ffd3",
+    "private-reference/new-0.png": "dfdf8f7a4547c7b00d5319a229d9b4effd7dbeb9079ac2893e5e967406f78dba",
+    "private-reference/new-1.jpg": "107e19a540af7434e3c5754c135a1ece7888229e1a1af7efb7a08ab651c9d823",
+    "private-reference/new-2.png": "88b8c8ca673b5b33fbd6c9808ef0f15e5f196e99344221415067aa22a61ab147",
+    "private-reference/new-3.png": "26cb9b1e47d3564cccdbb0da1756405f6ff492bc41ee8e19f5c1717ee460a1a5",
+    "private-reference/new-4.jpg": "99fc5d6bfd1fa4ce32c6a3e16bcf29afeba449be535d7f7cb46551f6a9b7a8fc",
+    "private-reference/new-5.jpg": "c79dcd2b26fcb6c7325a7afec6445ab8e38d36ddab62b070548f166762ad9dcb",
+    "private-reference/new-6.jpg": "0c010e09efd09eb5131c6aa5fd852d8b76c8d535c288ea9e3a929a8a2a35709d",
+    "private-reference/new-7.jpg": "56de8dab1356387f284bb77a85068a7a9499f9e558a54890d86d7b62ef41dcae",
+    "private-reference/new-8.jpg": "09d280f3867092b6ca31cb81563922d83503f6d090ed3e3c4c6b6afac0b94c87"
+  },
+  "approved_mapping": {
+    "face_ids": [
+      982,
+      987
+    ],
+    "whole_domains": 1,
+    "plane": "x=-11",
+    "bounds": [
+      [
+        -11,
+        -21.5,
+        31.3
+      ],
+      [
+        -11,
+        -8.5,
+        32.7
+      ]
+    ],
+    "from": 0,
+    "to": 2,
+    "candidate_only": false
+  },
+  "limits": [
+    "Only faces982,987, complete coplanar front fascia x=-11 y[-21.5,-8.5] z[31.3,32.7], white0 to stone2.",
+    "Do not change top14faces: real white center and raised stone border lack separate model geometry. Do not extend to sides, underside, foundations, stairs, glazing or terrain.",
+    "Only appearance family, not exact measured stone color or precise real fascia thickness. Original door, stair orientation/geometry approximate and unchanged.",
+    "All original11696 triangles and6palette exact; source photos private. 2025 album identifier is not exact capture date.",
+    "Model QA pending, requires independent source approval, rebuild, ten views and scene final QA."
+  ],
+  "model_QA_pending": true,
+  "historical_source_register": "qa/vestibule-fascia-previous/COLOR-SOURCE-REGISTER.json"
+}

@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "reviewer": "dongyong_final_review independent recovery review",
+  "triangles": 11696,
+  "recolored_faces": [
+    982,
+    987
+  ],
+  "complete_domains": 1,
+  "new_color_faces": 0,
+  "colored_faces": 11127,
+  "neutral_faces": 569,
+  "palette_entries_unchanged": 6,
+  "mixed_connected_domains_before": 5,
+  "mixed_connected_domains_after": 5,
+  "findings": [
+    "Re-ran independent all-vertex selection and full connected coplanar-domain check. Only two fascia faces change white index0 to existing stone index2. All geometry, other indices, palette and original build/STL exact.",
+    "Directly compared retained isolated rebuild STL, palette, materials, NPZ and 3MF XML; independently checked 3MF mesh/material serialization.",
+    "Independently reopened final newly rendered scene after recovery; mesh, six shader colors, camera, lights, render settings and mesh transforms match expected/original. Captions and backdrop hidden; no stamps.",
+    "Actually viewed complete ten-view contact sheet and entry-detail, facade-detail and roof-detail at full size. Entry-detail clearly shows bounded stone front fascia with white top and side unchanged; no private supplemental view needed.",
+    "Actually viewed official new frontal and overhead full-frame previews; stone front band supports bounded nominal family, not exact surveyed dimensions. Source second-review references rehashed exactly."
+  ],
+  "limits": [
+    "Top fourteen faces cross white center and stone border and remain unchanged white; no side/bottom or other-building recoloring inferred.",
+    "Door/stair/vestibule geometry remains coarse original proxy. No exact HEX, measured dimensions, current-condition or printability certification.",
+    "Original five mixed connected domains remain with exact original material indices. SOURCE pending snapshot remains unchanged."
+  ],
+  "image_sha256": {
+    "preview.png": "da2cce49ae2a7e08e45a91f90f05b13b1de4c7b73c51a780a7ce06407718714d",
+    "rear.png": "319e610674e329ea594febdcd1e80ff664fdbd62260467dc97ec4593359b1dd8",
+    "front.png": "5abc8127fb9cd23dc8168fc1e5fee76a8aa3fb4779204ff85af18eecae8643e0",
+    "back.png": "dd63c07677447dfbdcb7368998c13ad0f6202b067f48e3c597cd36554083b458",
+    "west.png": "5757093cb9fa29e7c2d198e22f04c007120c3f56e74660705196071f54a33005",
+    "east.png": "8196f6c5ecae506c6db626cee735193d849fe0a4ccce5a77946e76b1e530f768",
+    "top.png": "f508fdc9c1382d9d07212e02bf01797fc36a79c58613a1a3fb2896932ac1814a",
+    "entry-detail.png": "cade16c5c4997189b06e35634dcbb17ef8f0707d554fc2dab1671a243338cf8f",
+    "facade-detail.png": "194d65062d67fdd27ae666725aae6513a7b45ee3b51940c3f0d7b685ec4aa9ab",
+    "roof-detail.png": "61acde736af3f3e0edbefe8e50386b62d467b9753159ce0685a8f0c19765ecff"
+  },
+  "file_sha256": {
+    "model.stl": "f7bc48b52757cdfde579736c1ba7ad93bf72f9cb8fcb7ddf06eb47411e49771f",
+    "build_model.py": "9cede3b6bb0eceac12d4bf5d5b0b651e072c0881bd3e0b40591e9471c1cb661d",
+    "color-mesh.npz": "bd5b58058a27f8d02c87eed8c9559125ea4ef8ba2efc7308f6f7c93822994b43",
+    "palette.json": "91348d77b9bd53c5b88c64f64f57c20ae2f6b7cf326f5ce58b30d91803efa8ea",
+    "appearance.3mf": "84b336ad1a286d34f0406582fcc19bd876c98963efa6b20f3f628f588df1b6ff",
+    "appearance-materials.json": "bf50a9ca626d6a865bac70a977d6037ff6eedc7f57acc44fb1d7f8abad652e50",
+    "scene.blend": "108dbfc409edb8d432cfd79f925d6e356ef0c1dce6ecd336ca961e35973d0350",
+    "colorize_model.py": "79f813ac19b272eb1ef1c373514262fd5b38e8988061370970ea267c2bef3dda",
+    "export_appearance.py": "63a5dda12abb5c0796c86e1f90e3a2c34ebfc9adf4d0e1b7c9a48ba03f30c4ff",
+    "validate_color.py": "b1490544c91be8e59f1837b9c9ed51c6943e9435805633420b2047956414a296",
+    "verify_color_scene.py": "1c29b4c86841ab8d4c50d8c6adf440b4a7c69c13bb0c685937b2a0ab7fb7f38d",
+    "render_color.py": "e5f53623c9e4e438295463e64379c2b8b2a0100aac553de44707b2c6fa841ea9",
+    "README.md": "e3f6c5b910fbc4402a67808ad5926293a0d215da9d40a1455f37af4fd6b420b3",
+    "CHECKSUM-SCOPE.md": "dc59dd5f894595a09aa0c0691ce4e224f9392017e52a68b3e229792e37c9860a",
+    "COLOR-ASSIGNMENT-QA.json": "ec4e180b126acc2f22e133b4af363e4ab10a10fbbb4b22f56fc3275ca33beadb",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "c8e476c7b26b422202464e68df5eaeec4b0f08779948fda0db7cb2de9122b884",
+    "SCENE-QA.json": "e6cd7d2744b80d7e51c152fb32ec34ebe463a98361f8a54f397f1c42ea941f24",
+    "VESTIBULE-FASCIA-SCENE-QA.json": "c5d471cd1512959dc9a94d0eb5de32f7b2779b67173c49e1017ad2b3dfab6d62",
+    "VESTIBULE-FASCIA-SOURCE-QA.json": "6c9a751dcdd71696c5fb19c6efbb282e73a27f30a1775549e118ce908519ea2c",
+    "COLOR-SOURCE-REGISTER.json": "6c9a751dcdd71696c5fb19c6efbb282e73a27f30a1775549e118ce908519ea2c"
+  }
+}

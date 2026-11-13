@@ -48,5 +48,11 @@ for i,(t,c,n)in enumerate(zip(m.triangles,m.triangles_center,m.face_normals)):
   # The shallow boxes rotate around original tower center; inner backs lie 12.4 from center.
   th=math.radians(ang);u=(t[:,0]+32)*math.cos(th)+(t[:,1]+15)*math.sin(th);v=-(t[:,0]+32)*math.sin(th)+(t[:,1]+15)*math.cos(th)
   if np.max(np.abs(u))<=1.601 and np.all(np.abs(v+12.4)<.003)and lo[2]>=zz-3.151 and hi[2]<=zz+3.151:a[i]=4
+# Original complete vestibule outer front fascia only; no coverage expansion.
+old=a.copy();t=m.triangles;hit=(abs(t[:,:,0]+11)<.0001).all(1)&(t[:,:,1]>=-21.5001).all(1)&(t[:,:,1]<=-8.4999).all(1)&(t[:,:,2]>=31.2999).all(1)&(t[:,:,2]<=32.7001).all(1)
+new=np.flatnonzero(hit);assert new.tolist()==[982,987] and (old[new]==0).all()
+ad=m.face_adjacency;groups=trimesh.graph.connected_components(ad[(m.face_normals[ad[:,0]]*m.face_normals[ad[:,1]]).sum(1)>.999999],nodes=np.arange(len(m.faces)),min_len=1)
+assert any(set(c)==set(new) for c in groups)
+a[new]=2;assert np.array_equal(a[~hit],old[~hit]);assert np.bincount(a).tolist()==[8402,1720,593,404,8,569]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n');(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'geometry_policy':'11696 original triangles unchanged','limits':['Same cylindrical white structure continuity, not every hidden face independently observed.','Upper drum mixed pale material, not twelve invented blue glazing sectors.','Coarse cliff and display base neutral; no sea/vegetation map.','Six appearance labels, not a verified four-filament print.']},indent=2)+'\n')
 q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':len(m.faces),'materials_used':np.unique(a).tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q)

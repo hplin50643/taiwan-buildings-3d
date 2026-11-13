@@ -1,102 +1,76 @@
 {
-  "slug": "dongyong-lighthouse",
-  "original_faces": 11696,
-  "count_delta": 0,
-  "geometry_change_permitted": false,
-  "issued_utc": "2026-11-02T17:48:00Z",
-  "sources": [
-    {
-      "path": "color-source-review-20261102/dongyong-lighthouse/official-41.jpg",
-      "sha256": "40aa913d0abb22041210e36a8fe1955596f447bba349744788ceaa007053d6b0",
-      "url": "https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94(%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94)_%E6%9D%B1%E5%BC%95_2025_41.jpg",
-      "actually_viewed": true
-    },
-    {
-      "path": "color-source-review-20261102/dongyong-lighthouse/official-49.jpg",
-      "sha256": "e88ec309fcd7338eb2a99db2bf4afa6efd5e94000587197615e28e537e3b9c24",
-      "url": "https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94(%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94)_%E6%9D%B1%E5%BC%95_2025_49.jpg",
-      "actually_viewed": true
-    },
-    {
-      "path": "color-source-review-20261102/dongyong-lighthouse/official-46.jpg",
-      "sha256": "75a8e3d748b7b9b684fadfd4d0374abec463f8a24d73a0fff08755adb1a84ff1",
-      "url": "https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94(%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94)_%E6%9D%B1%E5%BC%95_2025_46.jpg",
-      "actually_viewed": true
-    },
-    {
-      "path": "color-source-review-20261102/dongyong-lighthouse/official-12.jpg",
-      "sha256": "d96da1b2d6f63f3117a0da7474492184179fe593a116ae2775d4666945b3ffd3",
-      "url": "https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94(%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94)_%E6%9D%B1%E5%BC%95_2025_12.jpg",
-      "actually_viewed": true
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "dongyong-lighthouse",
+  "original_files": 47,
+  "triangles": 11696,
+  "original_material_counts": [
+    8404,
+    1720,
+    591,
+    404,
+    8,
+    569
   ],
-  "audit": {
-    "path": "color-audit-landmark4-20261102/MONOCHROME-LANDMARK-CANDIDATES.json",
-    "sha256": "8ef8d1739da688e441e6c72c436dcd222b221a70654d25507d0e5036fe4da042"
-  },
-  "independent_review": {
-    "path": "color-source-review-20261102/dongyong-lighthouse/dongyong-lighthouse-INDEPENDENT-FOCUSED-COLOR-REVIEW-1746.json",
-    "sha256": "6db288a529400506d3b9de266694984e21ca34c6eac1fcbee7975387ff79a55e"
-  },
-  "approved_mapping": [
-    {
-      "domain": "original tower center(-32,-15), shaft and lower lantern; corner/side vestibule; original stair and low parapet",
-      "family": "off-white",
-      "basis": "three daylight photos of same white structure; cylindrical continuation bounded, not every hidden surface independently photographed"
-    },
-    {
-      "domain": "dome z92..103.5 and original simplified finial",
-      "family": "near-black/dark gray",
-      "basis": "clear daylight 49/41/46; no new weather-vane geometry"
-    },
-    {
-      "domain": "upper lantern drum z76..91",
-      "family": "pale neutral, separate existing relief mullions white",
-      "basis": "daylight shows opaque white screens and pale glass mixed; cannot classify all12 original sectors as blue glazing or replicate night illumination"
-    },
-    {
-      "domain": "exposed gallery walking ring at z61..62.5 and visible stair treads",
-      "family": "muted stone gray/brown",
-      "basis": "daylight walking stone; no invented rust/masonry lines"
-    },
-    {
-      "domain": "existing aperture backs",
-      "family": "dark shadow",
-      "basis": "shallow existing exterior recesses only"
-    },
-    {
-      "domain": "coarse cliff/rock shoulders and display base",
-      "family": "neutral",
-      "basis": "abstracted unmeasured terrain not paint-mapped to vegetation or sea"
-    }
+  "complete_domain_occurrences": 822,
+  "observations": [
+    "All four original official images downloaded at exact registered SHA. Four-image contact and original49 full image actually viewed. Sunset12 not daytime color evidence.",
+    "New official attraction page supplied nine additional album images, not claimed independent photographer/capture date. Eight-image interim contact viewed and new1 and new5 full-frame 1400px views seen. New1 shows light vestibule roof center with stone perimeter; new5 door canopy front is brown stone.",
+    "Original one-slab vestibule cap is coarse; only its outer vertical front edge semantically corresponds to brown stone fascia visible in new35 frontal daylight and original49/new38 oblique daylight. Its x=-11 complete two-face domain can use existing stone material2. No claim of exact elevation or restored geometric accuracy.",
+    "Foundation terrain should not receive vegetation/rock paint. Mixed pale drum retains original caution; sunset lit glass not used."
   ],
-  "mandatory_public_limits": [
-    "official-12 is sunset semantic/location reference only, not daytime blue/gold color evidence.",
-    "No lighthouse interior, optical apparatus, people, flags or security detail.",
-    "Only original complete facets, no added geometry or splitting to create false color borders.",
-    "Original coarse geometry not newly accuracy-certified; final arrays and visual QA required.",
-    "Reference photos private, no texture redistribution or blanket licensing guarantee."
-  ],
-  "rights": "官網與專業刊物公開不等於CC，原圖私人保存、不貼圖不再散布，不保證商用授權",
-  "source_period": "2025相簿或2016刊物為來源期間，不當每張精確拍攝日",
-  "palette_nominal_srgb": {
-    "tower": "#DBDDD3",
-    "dome": "#292F2F",
-    "drum_neutral": "#BCC4BE",
-    "stone": "#AAA18C",
-    "shadow": "#454E4B",
-    "neutral": "#A7ABA5"
+  "file_sha256": {
+    "original-verification.json": "84d4dd5efc95883414be2efa345553910e88fe77de480e0ed32e57ceeacc89f4",
+    "domain-screen.json": "3196adbda18cd33d319b4cf820d5623359423f93da7645dad569636ff5bd3b40",
+    "original/build_model.py": "9cede3b6bb0eceac12d4bf5d5b0b651e072c0881bd3e0b40591e9471c1cb661d",
+    "original/colorize_model.py": "e783d8ec6c68f025b2fcdb1c1d17d4ab84dfbbd1783470cfc0765bb2014e3671",
+    "original/color-mesh.npz": "92c48a3209a5af1e91f2a278d1f7407bec63e4f8b8f1de9198c0bfa2ed25c6a2",
+    "private-reference/fetch-register.json": "ee676b01b603084e9dc9ed329a449f092f77c8d50967d024f4b6b1beaa1ee444",
+    "private-reference/new-register.json": "105b072959514aa9e1765f9e85380348b373c6f352e5bbdfcff56723dcb9ccd8",
+    "private-reference/new-page.html": "713c0f0dfabd3edeaaa4f1f6a6f4ea3e05ee348a07dba216c4552842ccf70289",
+    "private-reference/official-41.jpg": "40aa913d0abb22041210e36a8fe1955596f447bba349744788ceaa007053d6b0",
+    "private-reference/official-49.jpg": "e88ec309fcd7338eb2a99db2bf4afa6efd5e94000587197615e28e537e3b9c24",
+    "private-reference/official-46.jpg": "75a8e3d748b7b9b684fadfd4d0374abec463f8a24d73a0fff08755adb1a84ff1",
+    "private-reference/official-12.jpg": "d96da1b2d6f63f3117a0da7474492184179fe593a116ae2775d4666945b3ffd3",
+    "private-reference/new-0.png": "dfdf8f7a4547c7b00d5319a229d9b4effd7dbeb9079ac2893e5e967406f78dba",
+    "private-reference/new-1.jpg": "107e19a540af7434e3c5754c135a1ece7888229e1a1af7efb7a08ab651c9d823",
+    "private-reference/new-2.png": "88b8c8ca673b5b33fbd6c9808ef0f15e5f196e99344221415067aa22a61ab147",
+    "private-reference/new-3.png": "26cb9b1e47d3564cccdbb0da1756405f6ff492bc41ee8e19f5c1717ee460a1a5",
+    "private-reference/new-4.jpg": "99fc5d6bfd1fa4ce32c6a3e16bcf29afeba449be535d7f7cb46551f6a9b7a8fc",
+    "private-reference/new-5.jpg": "c79dcd2b26fcb6c7325a7afec6445ab8e38d36ddab62b070548f166762ad9dcb",
+    "private-reference/new-6.jpg": "0c010e09efd09eb5131c6aa5fd852d8b76c8d535c288ea9e3a929a8a2a35709d",
+    "private-reference/new-7.jpg": "56de8dab1356387f284bb77a85068a7a9499f9e558a54890d86d7b62ef41dcae",
+    "private-reference/new-8.jpg": "09d280f3867092b6ca31cb81563922d83503f6d090ed3e3c4c6b6afac0b94c87"
   },
+  "approved_mapping": {
+    "face_ids": [
+      982,
+      987
+    ],
+    "whole_domains": 1,
+    "plane": "x=-11",
+    "bounds": [
+      [
+        -11,
+        -21.5,
+        31.3
+      ],
+      [
+        -11,
+        -8.5,
+        32.7
+      ]
+    ],
+    "from": 0,
+    "to": 2,
+    "candidate_only": false
+  },
+  "limits": [
+    "Only faces982,987, complete coplanar front fascia x=-11 y[-21.5,-8.5] z[31.3,32.7], white0 to stone2.",
+    "Do not change top14faces: real white center and raised stone border lack separate model geometry. Do not extend to sides, underside, foundations, stairs, glazing or terrain.",
+    "Only appearance family, not exact measured stone color or precise real fascia thickness. Original door, stair orientation/geometry approximate and unchanged.",
+    "All original11696 triangles and6palette exact; source photos private. 2025 album identifier is not exact capture date.",
+    "Model QA pending, requires independent source approval, rebuild, ten views and scene final QA."
+  ],
   "model_QA_pending": true,
-  "required_QA": [
-    "原STL bytes/頂點/三角一致",
-    "10視圖＋材域獨審，完整面域/法線/原primitive一致，無centroid楔",
-    "未知中性、無照片公開/貼圖",
-    "原檔保留不刪檔"
-  ],
-  "unique_scope": "白塔同一連續構件色族可概化，燈室鼓體淡中性＋原凸梃白，不能整鼓藍玻璃；黑帽、石色步行環，粗崖體/展示底座中性。",
-  "source_GO_sha256": "c2deb94735243df1c13fd09546a668aa0a87b237c01ed2301353f7b77fdea9a9",
-  "source_status_at_issue": "GO_BOUNDED_SAME_GEOMETRY_COLOR_UPGRADE",
-  "status": "SOURCE_GO_APPLIED_MODEL_QA_SEPARATE",
-  "private_source_backup_receipt": "color-source-backup-landmark4-20261102-1748/PRIVATE-BACKUP-RECEIPT-1748.json"
+  "historical_source_register": "qa/vestibule-fascia-previous/COLOR-SOURCE-REGISTER.json"
 }

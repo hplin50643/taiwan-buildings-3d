@@ -1,14 +1,4 @@
-# 校驗版本說明：當前交付補充
+VESTIBULE-FASCIA：2面白0→石2／1完整域，覆蓋增量0；11127色／569中性／11696tri。原6palette及其餘indices/geometry保持。來源pending固定，qa/vestibule-fascia-previous為歷史非本次驗證；最終QA按work精確相對路徑hash。
+根目錄 SHA256SUMS 是本次最終清單；SHA256SUMS.txt、FREEZE-MANIFEST.json、PUBLICATION-SUPPLEMENT-MANIFEST.json、INDEPENDENT-COLOR-VISUAL-QA.json 等原歷史檔按原 bytes 保留，不是本次最終檔案驗證。最終新增 VESTIBULE-FASCIA-FREEZE-MANIFEST.json 綁定實際檔案；其自雜湊不納入自身。
 
-本檔為 append-only 發布補充；原模型、幾何、材色、原凍結資料及兩校驗表均未修改。
-
-- `SHA256SUMS.txt` 屬原版歷史表。下列精確舊項對當前色版 NOT_RECERTIFIED，不能視為新檔校驗通過；其餘項仍照表核對。
-- 無副檔名 `SHA256SUMS` 核對所列當前檔案，不含自身與 FREEZE，也未回填本次兩份追加補充。
-- `PUBLICATION-SUPPLEMENT-MANIFEST.json` 綁定全部原凍結公開 payload 與本說明的大小、SHA256、Git blob SHA；不自循環包含自身，其位元組由發布 commit 與外層交付 manifest 綁定。
-- 本補充不提高來源材色、幾何、數位 QA 或實體列印可信度；原限制仍見 README。
-
-## 精確歷史項
-
-- `README.md`：舊 SHA256 `0cf272ad65612ec5d92d00105b6dd20444a89e1a8c646cec0b30abbccd6d67c1`；當前 SHA256 `572a3f55790d1725239e6b4c361f7ba0c326dd16f5f5217ac197eebe1f44bc64`。原項 NOT_RECERTIFIED，當前值由新表與交付 manifest 核對。
-
-[返回模型說明](README.md) · [當前校驗表](SHA256SUMS) · [發布補充清單](PUBLICATION-SUPPLEMENT-MANIFEST.json)
+原 5 個混材連通共平面域的成員與材色均保持；本次只修正另一個完整單色外前緣域，不宣稱零混域。

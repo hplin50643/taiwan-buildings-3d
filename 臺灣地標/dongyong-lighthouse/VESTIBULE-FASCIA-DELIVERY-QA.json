@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "Only2original vestibule outer front fascia faces white0 to stone2; no coverage increase or geometry/fullbuilding certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 11696,
+  "original_color_faces": 11127,
+  "new_color_faces": 0,
+  "recolored_faces": 2,
+  "original_mixed_connected_domains": 5,
+  "current_mixed_connected_domains": 5,
+  "colored_faces": 11127,
+  "unknown_neutral_faces": 569,
+  "geometry_unchanged": true,
+  "current_independent_review": "VESTIBULE-FASCIA-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Onlyfaces982,987/1whole connected domain x=-11,y[-21.5,-8.5],z[31.3,32.7]. Originalsix palette entries and allunselectedindices retained.",
+    "Top14faces cross white center and stone border, stay original white. No side/bottom/terrain/stairs/drum extension.",
+    "Official49 and newofficial35/38 photos identify bounded exterior stone family, not calibratedHEX or precise geometricmeasurements. Original door/stair/vestibule proxy unchanged; SOURCEpending fixed."
+  ],
+  "checked_at": "2026-11-12T22:47:08.558191+00:00",
+  "original_STL_sha256": "f7bc48b52757cdfde579736c1ba7ad93bf72f9cb8fcb7ddf06eb47411e49771f",
+  "color_mesh_sha256": "bd5b58058a27f8d02c87eed8c9559125ea4ef8ba2efc7308f6f7c93822994b43",
+  "images_sha256": {
+    "preview.png": "da2cce49ae2a7e08e45a91f90f05b13b1de4c7b73c51a780a7ce06407718714d",
+    "rear.png": "319e610674e329ea594febdcd1e80ff664fdbd62260467dc97ec4593359b1dd8",
+    "front.png": "5abc8127fb9cd23dc8168fc1e5fee76a8aa3fb4779204ff85af18eecae8643e0",
+    "back.png": "dd63c07677447dfbdcb7368998c13ad0f6202b067f48e3c597cd36554083b458",
+    "west.png": "5757093cb9fa29e7c2d198e22f04c007120c3f56e74660705196071f54a33005",
+    "east.png": "8196f6c5ecae506c6db626cee735193d849fe0a4ccce5a77946e76b1e530f768",
+    "top.png": "f508fdc9c1382d9d07212e02bf01797fc36a79c58613a1a3fb2896932ac1814a",
+    "entry-detail.png": "cade16c5c4997189b06e35634dcbb17ef8f0707d554fc2dab1671a243338cf8f",
+    "facade-detail.png": "194d65062d67fdd27ae666725aae6513a7b45ee3b51940c3f0d7b685ec4aa9ab",
+    "roof-detail.png": "61acde736af3f3e0edbefe8e50386b62d467b9753159ce0685a8f0c19765ecff"
+  }
+}
