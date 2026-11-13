@@ -10,13 +10,23 @@
       "id": 1,
       "name": "UNVERIFIED main walls entrance windows roofs neutral",
       "hex": "#B8BAB5",
-      "faces": 3334
+      "faces": 3332
+    },
+    {
+      "id": 2,
+      "name": "Meiho B bounded ground canopy front warm gray stone family",
+      "hex": "#C6BEB1",
+      "faces": 2
     }
   ],
   "domain_face_indices": {
     "whole_long_roof_fascia_front": [
       3254,
       3261
+    ],
+    "ground_canopy_front": [
+      3046,
+      3049
     ]
   },
   "coplanar_components": 901,
@@ -28,8 +38,8 @@
     "Left gabled shelter, its glass backing and all rooftop posts/screens remain neutral; left and right shelters are one building, not separate models.",
     "Broad front wall contains circular openings and transitions to lower material/occluded base; no all-wall white or triangular material split.",
     "Window backing contains frames/reflection and equipment; neutral.",
-    "Ground canopy, side/rear walls, hidden base, steps and all other faces remain neutral.",
-    "Preserve all3336 original triangles; no geometry modifications, new source retrieval, Git changes or OBJ generation.",
+    "Only two ground-canopy front faces newly assigned; canopy top/bottom/returns, side/rear walls, hidden base and steps remain neutral.",
+    "Preserve all3336 original triangles; no geometry modifications, Git changes or OBJ generation; new official public photo supports only bounded canopy-front family.",
     "Nominal limited material-family mapping, not complete coloring or 2026 condition confirmation."
   ]
 }

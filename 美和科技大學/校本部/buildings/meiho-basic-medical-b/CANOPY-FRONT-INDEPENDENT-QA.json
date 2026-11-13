@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "reviewer": "Independent reviewer, not builder",
+  "source_review": "second-source-domain-review.json",
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "rebuild_review": "independent-rebuild-review.json",
+  "triangles": 3336,
+  "added_faces": [
+    3046,
+    3049
+  ],
+  "complete_new_domains": 1,
+  "original_colored_faces": 2,
+  "colored_faces": 4,
+  "neutral_faces": 3332,
+  "original_palette_entries_unchanged": 2,
+  "new_palette_index": 2,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "actual_visual_review": {
+    "all_ten": true,
+    "contact_sheet": "meiho-medical-ten-views.jpg",
+    "full_size": [
+      "front.png",
+      "entry-detail.png",
+      "facade-detail.png",
+      "roof-detail.png"
+    ],
+    "private_supplement": "canopy-front.png",
+    "specific_check": "Ground canopy front is bounded warm gray band; top/returns/bottom and columns/window backs retain neutral. Original roof front unchanged. Private near-front view exposes full band clearly."
+  },
+  "source_and_geometry_limits": [
+    "Official newly accessed DSC3578 actual photo; unknown capture date, upload path not capture date, no2026claim.",
+    "Right palm-occluded portion bounded same-band continuity inference, not every face directly observable.",
+    "Original136x12x1.8 proxy not newly certified; nominal#C6BEB1 family not calibrated sample.",
+    "Original two palette entries and all unselected indices preserved. No originalOBJ, none added."
+  ],
+  "model_and_3MF_verified": true,
+  "isolated_build_color_export_QA_checked": true,
+  "retained_isolated_outputs_independently_compared": true,
+  "scene_independently_reopened": true,
+  "scene_mesh_transforms_camera_lights_render_unchanged": true,
+  "source_pending_snapshot_unchanged": true,
+  "image_sha256": {
+    "preview.png": "c9934a2db066d2b8e4dd3e3c0b72c631473fd2fb21379cc84013bc30e2e9a221",
+    "rear.png": "89e9e0910bc72878c920b7f0e7cc863c40468c0e606e8e857c3dcad4ce0e1df6",
+    "front.png": "b3072ca863bd73f9fb072e4bdcb0dcf068479d579186edfbe76822ba6f7af6dc",
+    "back.png": "b6287f5f1cf89920c842add40ad98e3a2dd747626d94c05ff6a06c5160326b61",
+    "west.png": "1812ec0a9bc8e5849a251f63592a15b5bbc4a4e2c0ebb533fef7a6784dc3ebc1",
+    "east.png": "3587a52083734123bbe2eb82aad48be1bdc23e22759877e5a704de2a4337854a",
+    "top.png": "ecb03eafc4458399806a12596bee270a4c51732d49c9caf710d31306ce7de700",
+    "entry-detail.png": "13a550675b6d94e14941dd8648020b3939cf17137231b497e4ea0d6c591180f1",
+    "facade-detail.png": "ba148efac2f8cde3c012270196170ebd6e391c6db8377a80029fcdcc6a636a62",
+    "roof-detail.png": "0f70519c26536480171439c8912cdfb9115d76bbe1e3b3f690a6ab65954c415b"
+  },
+  "file_sha256": {
+    "model.stl": "662a2e1b078e24446b4f6ab1d5758be8553d33824e5d82cead51aad301612439",
+    "build_model.py": "080ec348ad9b449769240236a0a8b76e4578b0e7dbbfebb8a4dc744ca2be2da5",
+    "color-mesh.npz": "b88d35cab2c190fa142122e764ed12c4194fc13e7ba69840202ee9f1fcfe672d",
+    "palette.json": "a005e99c185860610e480517242425245b586936af62b9735d3f4e7e8138b592",
+    "appearance.3mf": "16f4898517490fe7f1c6aa5fdc41edd84414817dcc9debdf1963e1d77be3d3d5",
+    "appearance-materials.json": "202407a712821639680f1088f353c3fc6f6421eadf7c2a7e27e2f8a509243ff6",
+    "scene.blend": "ff4ad319ffaa74b51e7a345fda536153dc4d6eb2d903f53e8bb727f5abe3cd9b",
+    "colorize_model.py": "0c932da28986a5c94b9cbdbf9f0097e3d2ea62eb8540aa20a71a168bb664b197",
+    "export_appearance.py": "0b6917b8987f6f429dc2e4c5587abbf6918d65ef8997fea40a97213ee07bf2c9",
+    "validate_color.py": "536ccbc800cabc4412a1f99a47021aab15abf3ee1544932593ed436a50a50929",
+    "verify_color_scene.py": "f2c81987fe7b66c6900ec82626379afbf56abd7170a25313052f28d953009583",
+    "render_color.py": "35f43190e6a95238e353fb716123f9750608d53aed1409c5dd8e9b56f5408291",
+    "README.md": "14cd47cecf95ca77579280163adf21c477eaa2ea40f0130658e9e1389697a1c5",
+    "CHECKSUM-SCOPE.md": "095b7e9aaac7fbf129425e827802a8162e5b5666cf38e93644211d8921da4c81",
+    "COLOR-ASSIGNMENT-QA.json": "fdcf4a5f8025ebe89716ed10b731d855a58011f4e2a602910d99579de3c9cd9b",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "ea6689964bbbd8e04e5321de04802a973d12ba7b35dbc38723dee4291784ed00",
+    "SCENE-QA.json": "ed5a11913b383f8c0e627fed44424338f4a8467139db7b266ea3fb8f798e4582",
+    "CANOPY-FRONT-SCENE-QA.json": "2862c07aef404d4082fe7a905a10eb6cd69f36bb1114e688b747dfc8770b2911",
+    "CANOPY-FRONT-SOURCE-QA.json": "22dab49326f2fdcb81cf503c5fffe74ff675832d07c63b7a9442972066dd34d3",
+    "COLOR-SOURCE-REGISTER.json": "22dab49326f2fdcb81cf503c5fffe74ff675832d07c63b7a9442972066dd34d3",
+    "README.zh-TW.md": "14cd47cecf95ca77579280163adf21c477eaa2ea40f0130658e9e1389697a1c5"
+  },
+  "supplementary_private_image_sha256": {
+    "canopy-front.png": "ea28d0c388349a6cc0e3c78579364f17ea4509c3d7d0a866e34f2bcf99954561"
+  },
+  "no_blockers": true
+}

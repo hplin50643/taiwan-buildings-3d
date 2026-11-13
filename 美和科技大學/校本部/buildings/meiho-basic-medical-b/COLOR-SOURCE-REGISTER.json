@@ -1,36 +1,30 @@
 {
-  "slug": "meiho-basic-medical-b",
-  "count_delta": 0,
-  "geometry_change": false,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "go": {
-    "file": "MEIHO-BASIC-MEDICAL-B-COLOR-SOURCE-GO-0503.json",
-    "sha256": "dcbabad73d0f7aa413f71c8a6dd7c67bcd34b9da4b691fe461e3089861e788e3"
-  },
-  "review": {
-    "file": "INDEPENDENT-MAPPING-0503.json",
-    "sha256": "288a355c9b2abedf983a153f894aa1da34e5d5bbf3f7db3d71355609c72ac20f"
-  },
-  "source_images": [
-    {
-      "file": "official-panorama.jpg",
-      "sha256": "6cd3591d59d5904f344caaa14ae62f234439eb0974fb77bc1667244478ae021e"
-    },
-    {
-      "file": "official-map.jpg",
-      "sha256": "7e8457f25eec1de97eaa1a32cf42f0103dfbe7a614d8ce65244143c62068f254"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Only original ground entrance canopy front vertical plane; no top/bottom/depth returns",
+  "source": "Newly accessed official north-campus album DSC3578; capture unknown; public original linked from picture page. Viewed full image.",
+  "face_ids": [
+    3046,
+    3049
   ],
+  "source_interpretation": "Pale warm-gray stone/tile fascia beneath descending window composition, separate from dark underside, columns and backing. Right partial palm occlusion requires same-band continuity inference; not every pixel direct evidence.",
+  "palette_proposal": {
+    "new_index": 2,
+    "nominal_hex": "#C6BEB1",
+    "family": "nominal warm gray stone front fascia, not calibrated sample"
+  },
   "limits": [
-    "Roof upper skin and dark underside are not approved by this fascia-only recommendation.",
-    "Left gabled shelter, its glass backing and all rooftop posts/screens remain neutral; left and right shelters are one building, not separate models.",
-    "Broad front wall contains circular openings and transitions to lower material/occluded base; no all-wall white or triangular material split.",
-    "Window backing contains frames/reflection and equipment; neutral.",
-    "Ground canopy, side/rear walls, hidden base, steps and all other faces remain neutral.",
-    "Preserve all3336 original triangles; no geometry modifications, new source retrieval, Git changes or OBJ generation.",
-    "Nominal limited material-family mapping, not complete coloring or 2026 condition confirmation."
+    "Original 136x12x1.8 proxy dimensions not surveyed or newly certified.",
+    "Preserve original two gray roof faces and original palette entries; no uniform main wall, window backing, canopy underside/returns/top, roof-top or rear assignment.",
+    "Original full finite plane only; no arbitrary source-coverage split."
   ],
-  "rights": "Private references only; no public images/textures or commercial-rights inference.",
-  "source_private_backup": "Sources separately privately retained."
+  "file_sha256": {
+    "domain-screen.json": "ba500a25a3e39f9ffec2ea34e228059b344e97b151895d545ce81f3131fcd2f6",
+    "preselection-canopy-front.json": "6520907417fd911c387088798782713c31c67b69c5f810c7fbd22fe3fab5efdc",
+    "original/build_model.py": "080ec348ad9b449769240236a0a8b76e4578b0e7dbbfebb8a4dc744ca2be2da5",
+    "private-reference/full-44.jpg": "cceb55342708d35e9cec6f13ed260c4b65127389481903b6327e5350a14358b8",
+    "private-reference/full-register.json": "7e10d3e843cbc817e122d7ea55ef5937ddcabcc50443360758451f4cbfb366ec",
+    "private-reference/official-map.jpg": "7e8457f25eec1de97eaa1a32cf42f0103dfbe7a614d8ce65244143c62068f254",
+    "private-reference/official-panorama.jpg": "6cd3591d59d5904f344caaa14ae62f234439eb0974fb77bc1667244478ae021e"
+  },
+  "historical_source_register": "qa/canopy-front-previous/COLOR-SOURCE-REGISTER.json"
 }

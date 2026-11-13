@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in meiho-basic-medical-b-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten current README images remain caption-free, with original cameras and lighting; no source photographs are distributed.",
   "images_sha256": {
-    "back.png": "bf590c3a75a12f665a14046680d1b465d46334d412aed4f0d4036133ac1f1fc1",
-    "east.png": "fd65935846c61853e60031b94ce35fd61bfbd29b9f854f4aee963d9bd5a94da1",
-    "entry-detail.png": "5fe27aafdc133e97a39a8e249bc5f31c5aa50cb29a35b738c3cc43f275d9725f",
-    "facade-detail.png": "751e4ea70281c23e8beeddf51b705a0895bb2324742065cf3fba0619f7ded3b3",
-    "front.png": "86a80a2f3028cb699dff969d706fe000f0066750cc6bea58d3e67f8c9b051f10",
-    "preview.png": "5ae15e442d9c18a74f8ca0f04dd69c70e40b4d8e9e3cd6632687c7520ee43e6d",
-    "rear.png": "e87dddd619450e99b308c82e6f0e2b6ca33a742f14713df24723d1597981e058",
-    "roof-detail.png": "9a3f2f1359522e2eb6fd9b5428bb04eaaea9c03d4f3e8731c9b39c76cd0ada3f",
-    "top.png": "db163549ebae4df7e8b41d403c95cbc399c0eae213c8aa1e0e0a2dcf8d443153",
-    "west.png": "daca486f40216f7f8fbb005e3ce6805d625ba5a6849bca57a38c7f8bc42f9366"
-  }
+    "preview.png": "c9934a2db066d2b8e4dd3e3c0b72c631473fd2fb21379cc84013bc30e2e9a221",
+    "rear.png": "89e9e0910bc72878c920b7f0e7cc863c40468c0e606e8e857c3dcad4ce0e1df6",
+    "front.png": "b3072ca863bd73f9fb072e4bdcb0dcf068479d579186edfbe76822ba6f7af6dc",
+    "back.png": "b6287f5f1cf89920c842add40ad98e3a2dd747626d94c05ff6a06c5160326b61",
+    "west.png": "1812ec0a9bc8e5849a251f63592a15b5bbc4a4e2c0ebb533fef7a6784dc3ebc1",
+    "east.png": "3587a52083734123bbe2eb82aad48be1bdc23e22759877e5a704de2a4337854a",
+    "top.png": "ecb03eafc4458399806a12596bee270a4c51732d49c9caf710d31306ce7de700",
+    "entry-detail.png": "13a550675b6d94e14941dd8648020b3939cf17137231b497e4ea0d6c591180f1",
+    "facade-detail.png": "ba148efac2f8cde3c012270196170ebd6e391c6db8377a80029fcdcc6a636a62",
+    "roof-detail.png": "0f70519c26536480171439c8912cdfb9115d76bbe1e3b3f690a6ab65954c415b"
+  },
+  "mesh_sha256": "b88d35cab2c190fa142122e764ed12c4194fc13e7ba69840202ee9f1fcfe672d",
+  "independent_visual_review": "CANOPY-FRONT-INDEPENDENT-QA.json",
+  "previous_qa": "qa/canopy-front-previous/NO-TEXT-QA.json"
 }
