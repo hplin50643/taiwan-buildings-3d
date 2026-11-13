@@ -1,0 +1,17 @@
+{
+  "historical_files": [
+    "RENDER-BINDING.json",
+    "DOC-QA.json",
+    "FORMAT-QA.json",
+    "PRIVACY-QA.json",
+    "FRAMING-QA.json",
+    "freeze-manifest.json",
+    "GEOMETRY-CONTROLS-QA.json",
+    "BUILD-QA.json",
+    "SCENE-QA.json",
+    "SOURCE-VISUAL-QA.json",
+    "REBUILD-QA.json"
+  ],
+  "binding_base": "original-classification-version/",
+  "rule": "Old QA aliases bind historical subpackage only; unchanged old hashes are not new variant QA."
+}

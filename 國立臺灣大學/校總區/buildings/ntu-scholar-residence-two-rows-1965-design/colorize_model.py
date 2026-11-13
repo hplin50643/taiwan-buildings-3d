@@ -29,8 +29,19 @@ removed=[]
 for ids in g.values():
  if len(set(a[ids]))>1:removed.extend(i for i in ids if a[i]!=1);a[ids]=1
 pal=[('NTU Scholar Residence Two Rows 1965 Design 1963 1965 design white cement soffit','#D9D9D0'),('NTU Scholar Residence Two Rows 1965 Design unverified walls windows neutral','#B8BAB5')]
+# A2 section4 rear120cm canopy underside explicit whitecement design.
+prior=a.copy();added=[];rear_counts=[]
+for n,x0,y0,cnt in [(6,0,0,37),(4,5.7,19,24)]:
+ low=np.array([(x0-.12-17.1)*5,(y0+7.62-.01-14.5)*5,19.25]).astype('f4').astype(float)
+ high=np.array([(x0+n*5.7+.12-17.1)*5,(y0+7.62+1.21-14.5)*5,19.25]).astype('f4').astype(float)
+ hit=np.all((t>=low-1e-5)&(t<=high+1e-5),axis=(1,2));ids=np.flatnonzero(hit)
+ assert len(ids)==cnt and (prior[ids]==1).all()
+ assert any(set(ids)==set(q) for q in g.values()),'not entire connected coplanar domain'
+ a[ids]=0;added.extend(ids.tolist());rear_counts.append(len(ids))
+assert len(set(added))==61 and (a==0).sum()==118
+other=np.setdiff1d(np.arange(len(a)),added);assert np.array_equal(a[other],prior[other])
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-domains={'two_complete_front_canopy_soffits':int((rail&(a==0)).sum()),'per_rectangle':[int(x.sum())for x in fields],'whole_coplanar_withdrawals':len(removed),'coplanar_domains':len(g)}
-assert (a==0).sum()==57
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'domains':domains,'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'25704 original triangles unchanged; no cuts or newgeometry','limitations':['two authored separate bases not site reconstruction', 'onlysix+fourcurrentphase; not four whole motherplan rows', 'exact current location unproven; not1970WangDaHong', 'all original dimension conflicts/heightapproximations/printthickening unchanged', 'not new printability or global QA approval', '57 original complete front canopy underside faces only;not fascia/top/rear canopy.', '1963–1965 DESIGN finish whitecement,not current or asbuilt color.', 'Original eight illustrative materials and37originalfiles retained unchanged.']},indent=2)+'\n')
+domains={'two_complete_front_canopy_soffits':int((rail&(a==0)).sum()),'front_per_rectangle':[int(x.sum())for x in fields],'two_complete_rear_canopy_soffits':len(added),'rear_per_rectangle':rear_counts,'whole_coplanar_withdrawals':len(removed),'coplanar_domains':len(g)}
+assert (a==0).sum()==118
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'domains':domains,'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'25704 original triangles unchanged; no cuts or newgeometry','limitations':['two authored separate bases not site reconstruction', 'onlysix+fourcurrentphase; not four whole motherplan rows', 'exact current location unproven; not1970WangDaHong', 'all original dimension conflicts/heightapproximations/printthickening unchanged', 'not new printability or global QA approval', '118 complete canopy underside faces:57front+61rear,not fascia/top/upper roof.', '1963–1965 DESIGN finish whitecement,not current or asbuilt color.', 'Original eight illustrative materials and37originalfiles retained unchanged.']},indent=2)+'\n')
 (R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','triangles':25704,'original_STL_sha256':expected,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(np.unique(a,return_counts=True),domains)

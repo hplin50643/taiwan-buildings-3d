@@ -1,0 +1,48 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "ntu-scholar-residence-two-rows-1965-design",
+  "baseline": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "new_faces": 61,
+  "complete_domains": 2,
+  "prior_colored": 57,
+  "final_colored": 118,
+  "final_neutral": 25586,
+  "triangles": 25704,
+  "source_reason": "A1 1965-07-15 groundfloor rear bath/kitchen section marker4 matches A2 1963-03-20 section4 rightmost. A2 rear120cm canopy underside explicitly WHITE CEMENT FIN, separate from frontsection1. Finish design only, not asbuilt/current. Two original continuous120cm rear canopy bottoms now selected as complete domains37+24. A2 current interpretation expands earlier front-only conservative mask, not new scan evidence.",
+  "visual_review": "All five original full-size native scans opened and inspected; all registered SHA256 exact. A0 1963-03-20; A1 1965-07-15; A2 1963-03-20; A3 1965-10-05; A4 1965-08-30 distinct epochs. No current photographs used.",
+  "excluded": [
+    "rearfascia/top/edge",
+    "upper roof/eaves",
+    "mixedgreen-white tilepanels",
+    "wholewalls",
+    "frames/glass/doors",
+    "yard/supports"
+  ],
+  "constraints": [
+    "no cuts,geometry or triangle-order changes",
+    "keep original57front faces",
+    "same whitecement palette family not calibrated HEX",
+    "two authored supports not site layout",
+    "six+four currentphase notfour motherplan rows",
+    "not1970WangDaHong residence",
+    "all previous dimensional disagreements and manufacturing caveats preserved",
+    "all107original blobs preserved"
+  ],
+  "sha256": {
+    "selected.json": "e8200ec1ab51f45bf906231ebeae576b38e9f4907839ad42932424cbdf886c0d",
+    "original-verification.json": "96dae3f58022a0f6bf8e39d553ac19b65c9e53ce87ed7c09efafbfd9ca4a053e",
+    "domain-screen.json": "d8637989e6b517e456bf7657ebcbda63c933119b1b3f3355befb2279b7e87c7d",
+    "rear-soffit-proposal.json": "c8da0e0db9f09d69dceb47df7838643081ffba059759f7f58e4dc0918704e37f",
+    "original/build_model.py": "7a47da9e997f0b5e719c71abc3b9a4f44dcc75b753e28bb7910a08dc8421ccf1",
+    "original/colorize_model.py": "7bf49c9356d8e079abffbf995c54255ba2bf8b305231c799ad11a986af249e88",
+    "original/color-mesh.npz": "b17adef29986c3e1bfd2819d98ad6c283760e65dc243d29207ff658eea5c3bbe",
+    "original/palette.json": "d79650f408a3c65e3214bd554ad0d194c4ebb54b118178aa17ceb9ad72d3e3f6",
+    "original/SOURCE-REGISTER.json": "629a3de3be277372d11144b928ba017df5454099fed59d9dc068dabcbf98dc76",
+    "private-reference/fetch-register.json": "b4d09231f652cac3ddb7456b9de2ff821c524f4f5ebb2d3431f6d6c26616a5a2",
+    "private-reference/M8MAMSM7M4.jpg": "4b2dee2949f8220262e4c58da8ff0863a87d5e24e4d6f850112fbcd3cb4438c6",
+    "private-reference/MPMSMRM7M4.jpg": "28195a35175ec9d27651100810e88f2294dcaf851db44da4e01a278744c741d1",
+    "private-reference/MQMSMRM7M4.jpg": "69b525476b037dcdfde8c2ebfe393b39fa78f0f15d259f95e75b65521be8bb37",
+    "private-reference/MLMAMSM7M4.jpg": "9d0d046e97d855e24382cae38f9b0518973d368f15e93093a1b5fc650ba9f093",
+    "private-reference/MKMSMRM7M4.jpg": "ccad7ec848f78f5993e4bf4a1e27a1ff431a7c5b4c77d644a961b5dafecb781b"
+  }
+}

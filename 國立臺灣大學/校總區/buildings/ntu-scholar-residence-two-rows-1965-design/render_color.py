@@ -21,8 +21,8 @@ views={'preview':(260,-340,200),'rear':(-260,340,200),'front':(0,-500,80),'back'
 bpy.ops.object.text_add();caption=bpy.context.object;caption.name='HISTORICAL_SCHEME_NOTICE_NOT_PRINT_GEOMETRY';caption.parent=cam
 fontpath=Path('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')
 if fontpath.exists():
- caption.data.font=bpy.data.fonts.load(str(fontpath));caption.data.body='1963–1965設計色示意｜前庇底白水泥\n非現況實色／兩底座非基地配置\n原25704面不變；未試印'
-else:caption.data.body='1963–1965 DESIGN COLOR / NOT ASBUILT\nOriginal geometry unchanged / neutral unverified rear'
+ caption.data.font=bpy.data.fonts.load(str(fontpath));caption.data.body='1963–1965設計色示意｜前後庇底白水泥\n非現況實色／兩底座非基地配置\n原25704面不變；未試印'
+else:caption.data.body='1963–1965 DESIGN COLOR / NOT ASBUILT\nOriginal geometry unchanged / bounded front and rear soffits; otherfaces unchanged'
 caption.data.align_x='LEFT';caption.data.space_line=1.0
 cm=bpy.data.materials.new('caption emission');cm.use_nodes=True;cm.node_tree.nodes.clear();em=cm.node_tree.nodes.new('ShaderNodeEmission');em.inputs['Color'].default_value=(.95,.95,.95,1);out=cm.node_tree.nodes.new('ShaderNodeOutputMaterial');cm.node_tree.links.new(em.outputs[0],out.inputs['Surface']);caption.data.materials.append(cm)
 if hasattr(caption,'visible_shadow'):caption.visible_shadow=False

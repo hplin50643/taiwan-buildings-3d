@@ -1,31 +1,19 @@
 {
-  "visual_review": {
-    "status": "PASS",
-    "evidence": "All ten actual views inspected in ntu-scholar-residence-two-rows-1965-design-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
-  },
   "status": "PASS",
-  "checks": {
-    "portable_output_path": true,
-    "mesh_vertices_match": true,
-    "mesh_faces_exact": true,
-    "material_indices_match": true,
-    "no_rendered_text_objects": true,
-    "backing_hidden": true,
-    "stamp_disabled": true,
-    "no_external_font_dependencies": true
-  },
-  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
-  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "scope": "Ten README images caption-free; hidden historical notice is not print geometry; private source PDF not published.",
   "images_sha256": {
-    "back.png": "c2acf5b06485534c1db26b2f4a8f13ba6b20743def66933e4093001a3b32dd84",
-    "east.png": "ff8ddbea03cac5cbeea24cf4a214760d5cc7a85f3266b9fc51a8b71939928b78",
-    "entry-detail.png": "36ec8c2413b43c22d5e8af7893f664bb4f3c9f02ffe81ae63d33988e21bc0748",
-    "facade-detail.png": "e1bc93139e04b04b7b03bc08c16ec3edf2f3884279a4e9844228cf9287f3e17f",
-    "front.png": "16f4122acbbd65d9e65a0255a5fc4163deb002e34cb7abb53854df64fe6b3cc6",
-    "preview.png": "a813171d3bab8b0141860e9b8acfbc0a2fba358884b726c784b810fb8507f050",
-    "rear.png": "366f4bf5cf99ac8eae9eba618106698a04f88f7a68a1e710ab65f26b957a2be9",
-    "roof-detail.png": "7b09fb44918bf66327158f9aa34268f5768a87d75cf05367d9729c90aeec04f5",
-    "top.png": "13502dfc7e9fedf333828ade1a8bffb9809f03d311f0d5344231cd5058de0a5d",
-    "west.png": "3807de386bb645e0f00c24cfed277faa5ae36a50da5fe683c9ae1dff43476d39"
-  }
+    "preview.png": "fd1d83b9cb3b13c08b8e54eda6da7528f94a3f7bd3d9cd834941cb4aa329dc88",
+    "rear.png": "2d1dccbc8c183afbd506caeda47587e2a6946510ef355b40344441712aef350f",
+    "front.png": "8c9632b7356d72f9f04911c1d9bf1555655d809131f9a123977d39fff076ab3a",
+    "back.png": "7de90ddce11c47fe66f342312e749c939c0ee8f45e8a7b624a0ba5eebdd407bf",
+    "west.png": "9957d212770824d8f79e13e387150bf20f23d5c9ae8de1736c30b36dc96ce877",
+    "east.png": "ff684b3d9376996c6f584b908e46fa7de156f2f14e376bfa96434dc06a7cb971",
+    "top.png": "638d5f7a5ec4fd2f3aaec6b9cc7c15212f7d23dcd744909dec18bcc70bd682e5",
+    "entry-detail.png": "17edc3fa47225c1d3476772bf9c7425192f2ccd726b7f07658611c9088ad44ff",
+    "facade-detail.png": "0541b5b6511f613177e4465236d9f5eadec036cd4a725cd02c6bf33514877738",
+    "roof-detail.png": "938f744d934e169fd211f8ad86b4971797b2519516756dfcd5c8c403f68bbc12"
+  },
+  "mesh_sha256": "ca113309b87859d163406d70a3afa38249fd7292b01794ef86fae5c1dcd0e7b1",
+  "independent_visual_review": "REAR-SOFFIT-INDEPENDENT-QA.json",
+  "previous_qa": "qa/rear-soffit-previous/NO-TEXT-QA.json"
 }

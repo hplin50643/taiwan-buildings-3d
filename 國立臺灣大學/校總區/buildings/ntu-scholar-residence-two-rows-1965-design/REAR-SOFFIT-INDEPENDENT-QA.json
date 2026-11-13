@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "reviewer": "independent eluanbi_resume reviewer",
+  "scope": "61 original rear120cm canopy underside faces only,2 whole domains; no geometry/current/asbuilt certification.",
+  "counts": {
+    "triangles": 25704,
+    "changed_faces": 61,
+    "complete_domains": 2,
+    "colored_faces": 118,
+    "neutral_faces": 25586,
+    "other_indices_unchanged": 25643,
+    "history_files_exact": 89
+  },
+  "checks": [
+    "vertices/faces/STL/buildscript/palette unchanged",
+    "only61 approved indices1to0; all other25643 indices unchanged",
+    "3MF units/vertices/faces/materials exact",
+    "isolated rebuild STL/NPZ and3MF XML identical",
+    "source proposal/review hashes intact and pending source snapshot retained",
+    "vertex/face/material arrays exact",
+    "only2palette slots exact linearRGB shaders; nonmodel mesh backdrop hidden",
+    "allmodel within savedcamera margin",
+    "caption separateFONTnotprintmesh",
+    "scene reopened without saving/mutation"
+  ],
+  "visual_review": {
+    "ten_images": "All ten final1200x900 original files opened individually; full seven views framed,three intentional details. Two authored support slabs remain not site plan. No text overlay per existing no-text mode.",
+    "supplementary": "Both original rear-detail-before/after inspected. Underside is in shadow and difference subtle; not a conspicuous global recolor. Precise61face2domain material arrays and reopened scene independently establish bounded assignment. No claim that whole building now white.",
+    "source": "A1 and A2 native scans independently inspected and date/section4 cross-reference checked; other three only hashchecked. Historical mixed1963/1965 design, not current/asbuilt.",
+    "limits": "Unknownneutral not proven original gray; remaining unresolved mixed tiles/walls/roof unaffected. No printing/manufacturing certification."
+  },
+  "source_snapshot_policy": "Pending SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW stays immutable source-stage snapshot; this separate final PASS resolves model verification. Old57face historical README is clearly labeled.",
+  "file_sha256": {
+    "build_model.py": "7a47da9e997f0b5e719c71abc3b9a4f44dcc75b753e28bb7910a08dc8421ccf1",
+    "colorize_model.py": "3b2a3f3dcbe0efe7275836abcc197298d1a8ef61cd7282ead4f2e57b59d792e6",
+    "export_appearance.py": "7acb7674f42c40884c166bf4a586a515e252e69930cebd2a849779eeab0abcd8",
+    "validate_color.py": "1efe22df885ae4cfe8efb8e76fdba8088dfc7c5b2491cce6fa6f65237f5c5be7",
+    "validate_model.py": "ff74dab3794092ecb96ed53ae8c4179f0080af32eef0efc43f736e6f11991257",
+    "render_color.py": "d14f0d4664071d45c49624dcde3b49933e438c2c2154e02d5cf5998fc6b1d4e5",
+    "verify_color_scene.py": "492426380f96bedcead69dc4b4fbd454396c9e0accf8a1297255a2b50dd07852",
+    "model.stl": "07fe1f62fa94da4bb0dc3dc1c9fd2d8873e69e95e8e793a80a2025f79faf4be3",
+    "model.3mf": "2761a4f4658bbe42ef7786cbc497160d14b71890149a594417885fbf521fc665",
+    "color-mesh.npz": "ca113309b87859d163406d70a3afa38249fd7292b01794ef86fae5c1dcd0e7b1",
+    "palette.json": "d79650f408a3c65e3214bd554ad0d194c4ebb54b118178aa17ceb9ad72d3e3f6",
+    "appearance.3mf": "bc41184d9a47b3c36d32e0ededd7b363b6b866abcf9e5b619037901a88cf677a",
+    "appearance-materials.json": "47b2fb68621a6ce7fa886aa52b0698a72d8936035a78b55f4cbdbf0a43b2bcdc",
+    "README.md": "1bd27299904c45ffb940d6cf882eb2f3923628651f4bbe2b8a972036d8e1dccf",
+    "README.zh-TW.md": "1bd27299904c45ffb940d6cf882eb2f3923628651f4bbe2b8a972036d8e1dccf",
+    "scene.blend": "b71ee7dc2da06ec090f9180c8c6ade15a04ef1c52c7fdbb4dfc81c3be2b527f2",
+    "REAR-SOFFIT-SOURCE-QA.json": "51a92f14790569c51f269d92cf8af6893fe065e2ec108f44770e4658b0eda236",
+    "REAR-SOFFIT-SOURCE-INDEPENDENT-QA.json": "2e316c6836cc5f4dfd5df787a8ba463eaefc0b123c55e0e98a07bfd6479779ce",
+    "REAR-SOFFIT-LOCAL-QA.json": "b0f3b90d220ddfdc4bad0936d9930866a7af9d5bcb35a531e4542bce6f57845f",
+    "COLOR-SOURCE-REGISTER.json": "51a92f14790569c51f269d92cf8af6893fe065e2ec108f44770e4658b0eda236",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "a8c19c86edb932d9f238bf7fd2e5123358de5022420961425b918f50e3fd9bb3",
+    "COLOR-ASSIGNMENT-QA.json": "1d4b6b4cc321ac1f8f09b9df2cf318fd75b227feec5225037a9a556f739bc465",
+    "SCENE-QA.json": "c68bfbb32fd985138936dd79646b774422140c142a1b9076452fbec8f9fb74c9",
+    "FRAMING-QA.json": "8e14e06b3daffc9409fa6355e0e2b55f07b30197ebf304254e521a5078ad6598"
+  },
+  "image_sha256": {
+    "preview.png": "fd1d83b9cb3b13c08b8e54eda6da7528f94a3f7bd3d9cd834941cb4aa329dc88",
+    "rear.png": "2d1dccbc8c183afbd506caeda47587e2a6946510ef355b40344441712aef350f",
+    "front.png": "8c9632b7356d72f9f04911c1d9bf1555655d809131f9a123977d39fff076ab3a",
+    "back.png": "7de90ddce11c47fe66f342312e749c939c0ee8f45e8a7b624a0ba5eebdd407bf",
+    "west.png": "9957d212770824d8f79e13e387150bf20f23d5c9ae8de1736c30b36dc96ce877",
+    "east.png": "ff684b3d9376996c6f584b908e46fa7de156f2f14e376bfa96434dc06a7cb971",
+    "top.png": "638d5f7a5ec4fd2f3aaec6b9cc7c15212f7d23dcd744909dec18bcc70bd682e5",
+    "entry-detail.png": "17edc3fa47225c1d3476772bf9c7425192f2ccd726b7f07658611c9088ad44ff",
+    "facade-detail.png": "0541b5b6511f613177e4465236d9f5eadec036cd4a725cd02c6bf33514877738",
+    "roof-detail.png": "938f744d934e169fd211f8ad86b4971797b2519516756dfcd5c8c403f68bbc12"
+  },
+  "supplementary_private_image_sha256": {
+    "rear-detail-before.png": "b726481163ad1bd17d3001a7b5de7191435ee799ccd4e3aafda5c37a7ae3f9aa",
+    "rear-detail-after.png": "0be180253e45b4960ef50889d9966385906188360cf6384c089ea5ec8c3f5203"
+  },
+  "private_evidence_sha256": {
+    "SOURCE-PROPOSAL.json": "5b4a39190aca0d7fbccb7c407a4984b0ddf20c97016847db3bd8e17e3df5a5ee",
+    "second-source-domain-review.json": "2e316c6836cc5f4dfd5df787a8ba463eaefc0b123c55e0e98a07bfd6479779ce",
+    "rear-soffit-proposal.json": "c8da0e0db9f09d69dceb47df7838643081ffba059759f7f58e4dc0918704e37f",
+    "independent-final-numeric.json": "f8ce9d9da5844092c823341527ec457f8d2ef593eebe2bc550e4c989f6b31d4e",
+    "independent-scene-reopen.json": "ad943131d74c1ff1abd57ce27584c231fc462f79dbdeda1b93456324215e9b4e",
+    "independent_final_numeric.py": "9d3b89272914c9c6d4a3f62bdfb59ea6a1286583b75ee2f77d5772c499a9000c",
+    "independent_scene_reopen.py": "a062b60da19dae36d61756a8c2065940dd57bf30dce7dd03f2e27d9df84aef18"
+  },
+  "hash_scope": "work exactrelative paths for file/image maps; candidate root relativepaths for private/supplementary maps. Excludes not-yet-final DELIVERY-QA.json,NO-TEXT-QA.json,SHA256SUMS and future finalizer artifacts; reviewed input bytes must stay unchanged."
+}
