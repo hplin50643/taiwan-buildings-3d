@@ -16,6 +16,7 @@ def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Original palette values retained; additional multi-angle photos support same-building material families.
 palette=[('Unknown surfaces neutral','#AAA79F',.86),('Observed brick two adjacent walls','#A56553',.86),('Original stone supports','#A8ABA3',.86),('Original pale clock dials','#D0D1C4',.86),('Historical opaque bell','#343A34',.86),('Visible original step risers','#868C84',.86)]
+palette.append(('Approximate grey tile crossed roof family','#7D817C',.86))
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
@@ -138,6 +139,19 @@ for p in mesh.polygons:
     if bounds((x-6.5,y-6.5,7.5),(x+6.5,y+6.5,21.5)) and any(plane(k,t) and n[k]*sign>.99 for k,c in [(0,x),(1,y)] for sign,t in [(-1,c-6.5),(1,c+6.5)]):
      i=2;indices[p.index]=i;p.material_index=i;changed_faces.append(p.index);change_reasons[str(p.index)]={'family':'stone_original_corner_block_side_return','basis':'Continuous original stone prism; no horizontal band or new split.'}
 
+# Eight complete original crossed roof slope domains, same-family inferred tile.
+continuation_baseline=list(indices)
+roof_domains=[[1487, 1490, 1516, 1517], [1547, 1548, 1549, 1550], [1551, 1552, 1553, 1554], [1583, 1584, 1613, 1614], [1617, 1647, 1648, 1649], [1651, 1653, 1654, 1657], [1712, 1714, 1715, 1717], [1719, 1720, 1721, 1752]]
+roof_changed=[1487, 1490, 1516, 1517, 1547, 1548, 1549, 1550, 1551, 1552, 1553, 1554, 1583, 1584, 1613, 1614, 1617, 1647, 1648, 1649, 1651, 1653, 1654, 1657, 1712, 1714, 1715, 1717, 1719, 1720, 1721, 1752]
+for fi in roof_changed:
+ assert indices[fi]==0
+ face=mesh.polygons[fi]
+ assert face.normal.z>.8
+ for vi in face.vertices:
+  q=mesh.vertices[vi].co
+  assert abs(q.x)<=35.001 and abs(q.y)<=35.001 and 118.499<=q.z<=144.001
+  assert min(abs(q.z-(144-25.5*abs(q.x)/35)),abs(q.z-(144-25.5*abs(q.y)/35)))<.0001
+ face.material_index=6;indices[fi]=6
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Original geometry and colors preserved; multi-angle supported side/rear material families extended on complete original supports; unresolved roof/interior/base neutral'
 scene=bpy.context.scene;scene['appearance_revision']='color-v2-side-rear-continuity'
@@ -171,7 +185,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-side-rear-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Four-way openings remain genuinely open, not glass; historical bell is original fused geometry','Original colored faces, palette, geometry and open portals preserved. New multi-angle GoGo photographs personally viewed with visitor day photo support brick walls and gables, gray stone frames and cornice fascia, pale clock faces and gray vertical step risers on other sides. Model rotations are illustrative, not georeferenced; unpictured fragments and complete prism side returns are declared same-component inference. Official image requests returned503; no claim to fresh reread. Source capture dates unverified and not2026 condition. Existing roof slopes, ridge balls, horizontal cornice/step surfaces and main portal interiors remain neutral; no new thin stone belt on unsplit wall, hands, numbers, tiles, fixtures or closed openings. Original fused historical bell unchanged; not current equipment guarantee','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-grey-tile-roof-family','geometry':before,'continuation_baseline_face_material_indices':continuation_baseline,'roof_complete_domains':roof_domains,'roof_changed_faces':roof_changed,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Four-way openings remain genuinely open, not glass; historical bell is original fused geometry','Original colored faces, palette, geometry and open portals preserved. New multi-angle GoGo photographs personally viewed with visitor day photo support brick walls and gables, gray stone frames and cornice fascia, pale clock faces and gray vertical step risers on other sides. Model rotations are illustrative, not georeferenced; unpictured fragments and complete prism side returns are declared same-component inference. Official image requests returned503; no claim to fresh reread. Source capture dates unverified and not2026 condition. Existing roof slopes, ridge balls, horizontal cornice/step surfaces and main portal interiors remain neutral; no new thin stone belt on unsplit wall, hands, numbers, tiles, fixtures or closed openings. Original fused historical bell unchanged; not current equipment guarantee','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-220,-260,195),(0,0,75),230),'rear':((220,260,195),(0,0,75),230),'elevation':((0,-320,75),(0,0,75),230),'source-angle':((-270,-180,180),(0,0,75),230),'left':((-320,0,195),(0,0,75),230),'right':((320,0,195),(0,0,75),230),'top':((0,0,420),(0,0,75),230)}
 out=R/'appearance';out.mkdir(exist_ok=True);camera_records=[]

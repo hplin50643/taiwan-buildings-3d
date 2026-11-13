@@ -1,49 +1,29 @@
-# 國立臺北教育大學｜百年紀念鐘樓
+# 國立臺北教育大學百年紀念鐘樓：交叉灰瓦屋面近似
 
-## 模型預覽
+百年紀念是鐘樓名稱，不代表日治原建或實際塔齡百年。本包沿用原3468頂點、6988三角面、110×110×150mm、transform、STL、scene及6張原預覽。不是測繪、BIM或現況認證；原交付無OBJ。
 
-| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
-| :---: | :---: | :---: |
-| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
-| 新彩色背向 | 新彩色上視 | 彩色下載 |
-| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+## 本次範圍
+8個完整連通共面斜屋域，共32面由unknown0轉為新增灰瓦家族6（#7D817C，roughness0.86）。原兩個交叉三角屋體範圍±35mm、z118.5..144，原有限斜面均有構件邊界；不新增屋瓦或接縫、不切三角色塊。原6材值及其餘6956面保持，垂直山牆、灰石框帶、球飾、深拱和臺基完全不改。
 
+[校方日照照片](https://www.ntue.edu.tw/var/file/0/1000/img/841113662.jpg)本次成功取得並實看；歷史v2下載503不代表目前無法讀取。[訪客序列](https://gogo-kyorochan.official.jp/volume_023/2310_bell-tower-ntue/index-japanese.html)亦可辨灰瓦斜面及其與淺石山牆框的分界。[相鄰角度圖](https://cdntwrunning.biji.co/800_ea490c72084bacca1ce8eb595bf13e37.jpg)可辨四向山牆身分。拍攝日期未核，勿採旅記日治起源說，也不從文章日期當拍攝日。
 
-臺北校區，自行用Python／實體布林建模，沒有下載第三方3D模型。模型為照片支持的近似，非實測或施工圖。
+並非每一象限逐點直接可見；此為同交叉屋面的材質家族延伸推估。灰色值為名義近似，無色卡校準，不重現陰影／污漬色塊。原屋體無瓦細節且造型粗化，補色不提升幾何精度。鐘室與下層內頂材質有別，不由本案擴色。
 
-### 側背同棟材料延續（原 6 張預覽全部保留）
+七張900×800、Cycles CPU96samples、seed0、單執行緒、無denoise的原生鏡頭及照明保留。ROOF-SOURCE-QA、ROOF-NUMERIC-QA與最終公開獨審僅引用公開產物，完整研究與比較另存，不隨包分發。
 
-本版保留全部原彩面，為2,146個原中性三角面補上側背同棟材料。新讀八張多角度照片支持紅磚、灰石拱框／簷帶、淡鐘面與階梯立面家族；另兩面及原構件隱蔽小段的精確對映仍明列同材延續推估。只賦原完整面，四向通拱不填玻璃。模型座標不是地理測向，屋坡、球飾、無分界水平臺面與主拱內面保留中性。原暗懸鐘完整不變，不保證2026設備或外觀未變。
+## 工程與歷史範圍
+原四向通拱、懸鐘、鐘盤及球飾皆既有近似，不加時針、刻字或玻璃封板。原validation/contour/thin-feature等報告保留為歷史範圍，不是本輪完整工程重測；未實體試印或實際切片，不保證AMS、任意切片器、多色支撐或任意縮放可印。原拱頂、懸鐘連接、鐘框、屋面及細部風險不變。舊公開版本在原Git歷史保留。
 
+![front](appearance/front.png)
 
-[左側](appearance/left.png) · [右側](appearance/right.png) · [原版同相機正斜視](appearance-review-v2/original-front.png) · [原版同相機背向](appearance-review-v2/original-rear.png)。七張新版及兩張原版對照皆為900×800無字真網格渲染。
+![rear](appearance/rear.png)
 
-[來源、跨年代及材料限制](APPEARANCE.md)。原STL／scene、預覽與數位QA保留，本輪不重測原列印篩檢、未實體試印。
+![elevation](appearance/elevation.png)
 
-## 來源與界線
+![source-angle](appearance/source-angle.png)
 
-依官方正面及夜間斜角照、2025訪客相鄰兩面照片及另一組四周照片建模，保留下層四向通拱、上層懸鐘室、四向三角山牆交叉坡頂、圓鐘面、挑出簷帶及階梯臺基。百年鐘樓指百週年校慶紀念，不是日治原建或塔齡百年。鐘與鐘頸依較早可見實拍粗化為相連實體，未確認2025–26懸鐘設備是否變動；懸鐘不是漂浮網格。鐘面數字／指針、瓦片及小石塊線省略，脊端小裝飾厚化。四面資料存在但拍攝方向未實測，朝向以模型座標表示，不能當作精確地理定位。各向深度、鐘身曲率、交叉屋脊及階梯尺寸為外觀近似，地景樹木、活動設施和地下基礎不納入。
+![left](appearance/left.png)
 
-來源跨不同年代；官方圖片未載拍攝日期，不以網站更新日替代。完整URL及支持特徵見[sources.json](sources.json)。原照片／PDF只留私下核對，不隨公開包散布。
+![right](appearance/right.png)
 
-## 模型與重建
-
-- [model.stl](model.stl)：毫米，含底座最長150毫米；每件比例獨立
-- [scene.blend](scene.blend)：由交付STL匯入的可編修網格
-- [build_model.py](build_model.py)、[requirements.txt](requirements.txt)：python build_model.py
-- [render_preview.py](render_preview.py)：blender -b -t 4 -P render_preview.py；圖片皆實際STL
-
-
-## 列印及數位QA
-
-底座朝下。拱口、頂板、鐘室懸鐘及深門廊需要評估支撐；移除支撐可能傷害薄框、柱或懸掛構件。鐘面／文字等細節有意省略或粗化。沒有實體試印或Cura／Prusa工具路徑驗證，不保證免支撐或保證可印。
-
-[validation.json](validation.json)檢原STL水密、正體積、法向／繞序、每邊兩面、vertex link單環、單一連通表面與無分離內腔殼，尺寸150毫米、重建SHA及Blend一致。[contour-validity-check.json](contour-validity-check.json)以z偏移0.071、每0.2毫米核全部輪廓閉合及Polygon有效，invalid直接失敗，不repair後宣稱成功。[thin-feature-check.json](thin-feature-check.json)使用canonical fail-closed v3的0.8毫米opening輔助篩檢，非完整最小壁厚或切片模擬。
-
-[原STL通口／懸鐘射線證據](portal-ray-proof.json)與[檢查腳本](check_portal_geometry.py)。原三角形射線不修補mesh；數字全是模型毫米，不能視為現地尺寸。
-
-重跑：python validate_model.py；python check_contour_validity.py；python check_thin_features.py；python check_portal_geometry.py。
-
-原幾何及前版 appearance-review 留為歷史。本版由 appearance-review-v2、appearance-freeze.json 與更新的 SHA256SUMS 綁定；校級checksum待授權發布前整合。
-
-[逐點逐面驗證](appearance-review-v2/model-verification.json) · [完整面界審核](appearance-review-v2/boundary-continuity-audit.json) · [來源判讀](appearance-review-v2/source-register.json) · [乾淨重建核對](appearance-review-v2/clean-rebuild-equality.json)。
+![top](appearance/top.png)
