@@ -18,9 +18,12 @@ for i in range(len(a)):g.setdefault(root(i),[]).append(i)
 removed=[]
 for ids in g.values():
  if len(set(a[ids]))>1:removed.extend(i for i in ids if a[i]!=1);a[ids]=1
-pal=[('Observed west screen outward top rail charcoal','#404543'),('UNVERIFIED letteringwalls longfacade easttower roof neutral','#B8BAB5')]
+selected=plane(1,-21.4)&span(0,-33.4,54)&span(2,65.5,68.5)
+assert selected.sum()==24 and (a[selected]==1).all()
+a[selected]=2
+pal=[('Observed west screen outward top rail charcoal','#404543'),('UNVERIFIED letteringwalls longfacade easttower roof neutral','#B8BAB5'),('Bounded main upper fascia nominal gray','#BFC0B8')]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
-domains={'west_screen_outward_rail':int((rail&(a==0)).sum()),'whole_coplanar_withdrawals':len(removed),'coplanar_domains':len(g)}
+domains={'west_screen_outward_rail':int((rail&(a==0)).sum()),'whole_coplanar_withdrawals':len(removed),'coplanar_domains':len(g),'upper_fascia_front':int(selected.sum())}
 assert (a==0).sum()==72
-(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'domains':domains,'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'6966 original triangles unchanged; no cuts or newgeometry','limitations':['Only outward vertical railplane;top bottom inner ends neutral.','Lettering screenwall, longfacade, easttower, mixedredgraycore all neutral.','Unavailable longfacade photo503 not read.','Single source capturedate unknown; not current survey.','Two materials not tested fourfilament slicing.']},indent=2)+'\n')
+(R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'domains':domains,'partial_color_incomplete':True,'fully_colored_exterior':False,'geometry_policy':'6966 original triangles unchanged; no cuts or newgeometry','limitations':['Original outward rail plus bounded main highest fascia front; top bottom inner ends neutral.','Lettering screenwall, longfacade, easttower, mixedredgraycore all neutral.','Original longfacade photo recovered this round; upsampled layout not true high-resolution survey.','Single source capturedate unknown; not current survey.','Three materials not tested multi-filament slicing.']},indent=2)+'\n')
 (R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps({'status':'PASS','triangles':6966,'original_STL_sha256':expected,'color_mesh_sha256':H(R/'color-mesh.npz')},indent=2));print(np.unique(a,return_counts=True),domains)

@@ -10,22 +10,29 @@
       "id": 1,
       "name": "UNVERIFIED letteringwalls longfacade easttower roof neutral",
       "hex": "#B8BAB5",
-      "faces": 6894
+      "faces": 6870
+    },
+    {
+      "id": 2,
+      "name": "Bounded main upper fascia nominal gray",
+      "hex": "#BFC0B8",
+      "faces": 24
     }
   ],
   "domains": {
     "west_screen_outward_rail": 72,
     "whole_coplanar_withdrawals": 0,
-    "coplanar_domains": 1567
+    "coplanar_domains": 1567,
+    "upper_fascia_front": 24
   },
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
   "geometry_policy": "6966 original triangles unchanged; no cuts or newgeometry",
   "limitations": [
-    "Only outward vertical railplane;top bottom inner ends neutral.",
+    "Original outward rail plus bounded main highest fascia front; top bottom inner ends neutral.",
     "Lettering screenwall, longfacade, easttower, mixedredgraycore all neutral.",
-    "Unavailable longfacade photo503 not read.",
+    "Original longfacade photo recovered this round; upsampled layout not true high-resolution survey.",
     "Single source capturedate unknown; not current survey.",
-    "Two materials not tested fourfilament slicing."
+    "Three materials not tested multi-filament slicing."
   ]
 }

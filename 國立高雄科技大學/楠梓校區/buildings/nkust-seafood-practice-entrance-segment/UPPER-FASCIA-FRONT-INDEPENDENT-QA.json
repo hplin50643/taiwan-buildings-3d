@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "reviewer": "Independent reviewer, not builder",
+  "source_review": "second-source-domain-review.json",
+  "triangles": 6966,
+  "new_color_faces": 24,
+  "complete_domains": 1,
+  "original_color_faces": 72,
+  "colored_faces": 96,
+  "neutral_faces": 6870,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "original_two_palette_and_all_unselected_indices_exact": true,
+  "actual_visual_review": {
+    "all_ten": true,
+    "full_size": [
+      "front.png",
+      "entry-detail.png",
+      "facade-detail.png",
+      "roof-detail.png"
+    ],
+    "specific_check": "Only highest main long fascia front light gray; soffit/top/returns/window elements remain original; rejected middle canopy unchanged."
+  },
+  "limits": [
+    "Original box proxy dimensions not surveyed; local duct occlusion bounded same-band inference.",
+    "Recovered original official photo is enlarged layout, not new capture or108MP genuine resolution. Nominal gray family not calibrated HEX.",
+    "SOURCEpending fixed; no fullcolor or2026condition or testedphysicalprint claim."
+  ],
+  "model_and_3MF_verified": true,
+  "retained_isolated_outputs_independently_compared": true,
+  "scene_independently_reopened": true,
+  "scene_mesh_transforms_camera_lights_render_unchanged": true,
+  "image_sha256": {
+    "preview.png": "c5c80465bfa3867f1af6a87015ec2384adbfabc76946d97fee3d9fdaef260352",
+    "rear.png": "ef5628677d96480b126b01c2a31092128034e5166c2a36ce652a4d8dc86d3157",
+    "front.png": "c3403fa075cda35816da8aec6cefde94ca2eadb56216a9a3bc490841044e6bc9",
+    "back.png": "22c53bf6f0f526163dc6a28328f3402404a9405cff7cb21100dfbad5dfa63173",
+    "west.png": "04d999fc89d02a4aaedd48e68acf28e657927fb5bc809524244d19c12b1d5b78",
+    "east.png": "9deed4c0fa69390f36b1e5dacbec00c37f2ab5ca2e7326552670fe15674a50c2",
+    "top.png": "897379eb142a674a8cd7f8261b03dbe9ab9021e09ae2c1a9b424435b390fe4ba",
+    "entry-detail.png": "07c15e51067db7f1959c0dd83711926efa394a92656424f0e5ed95c14819f051",
+    "facade-detail.png": "379cd795f2227a257b3c91e71db1a13d2a2db7707dc3ad7761be74279ee4d5de",
+    "roof-detail.png": "64be35fd40d57d95eb89f9c541d8084cdc92affdb4b665cdcdeb493d1d9f1cf6"
+  },
+  "file_sha256": {
+    "model.stl": "2edbf92d659ff8c9bec80df8cf458e2eeeeb657c7affd8a1c4bc29c5629dfb6d",
+    "build_model.py": "91746355b8e35901ca4620960fde20b0a7411071bb891d944c0c512825cef969",
+    "color-mesh.npz": "7f6d346258f55dd193921c61a2dcb567e36e66bef08854bfa2f632832002a55c",
+    "palette.json": "2a0af7f01d0e4e4acec11e02f6f867f2a0819f8caf39ca388b57575d8e68fa3e",
+    "appearance.3mf": "5361b55785aaf78758db254a850f43d81f5a0409f93c76e055a9f7aa83ae2f43",
+    "appearance-materials.json": "6db3278bee32a0cbf3682a910537d8edf4ca1e45bdab320fbfd5b44635b3e482",
+    "scene.blend": "2bf0fb771850e6e757f0f89dbaddd712ddc7d1eeff95e93335b327a8ecf1be1a",
+    "colorize_model.py": "bd8929fce03f8c1cd94f8d1c7d9fc41ea76eb55a391088039ae30aa135547038",
+    "export_appearance.py": "926cbd5114b261b5179c5ddbb8c5d523e54f30d77eb6b0781b00e92d6e828f29",
+    "validate_color.py": "aa9658f746bcfd035acd20ce419f6dd4df0222b0c726c876bd579c5e1862e848",
+    "verify_color_scene.py": "5bd858d358f02dad84454780481c86af2443dcb2220925f050c72e67e0eabb45",
+    "render_color.py": "ecda8a46776860f41c98e5be14d054c8ee7708216fe707703628dfa5c68b5f56",
+    "README.md": "ff8567c9f48e98163abcf2951a5772a07ecc23af144aa6f6391203fdd180abeb",
+    "CHECKSUM-SCOPE.md": "37dad8102d8815a813ff50058c10bb82e631b8c41c069fcf5dda5e479a215dfa",
+    "COLOR-ASSIGNMENT-QA.json": "910fd9660c3262aef51f7f541c645b9edbc9fdc3ba67e19c03fb11d110472d69",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "f263aefd8ccc636b134f40bbd5c3da6047a9f1da1a832fc8ef032e7d0a63dd58",
+    "SCENE-QA.json": "f5401cd5a887677b657b02d52faa4e3d061d4432d8ce000ed48e833a211828b9",
+    "UPPER-FASCIA-FRONT-SCENE-QA.json": "6767c758a47a591c024fd980adaa00103874acb9733b7594a4914d1cf35e27e4",
+    "UPPER-FASCIA-FRONT-SOURCE-QA.json": "fa311a4ee67885afc5200e1af4fbbbeb3679f3e3ff43374e69e8dbc743ad88f2",
+    "COLOR-SOURCE-REGISTER.json": "fa311a4ee67885afc5200e1af4fbbbeb3679f3e3ff43374e69e8dbc743ad88f2",
+    "README.zh-TW.md": "ff8567c9f48e98163abcf2951a5772a07ecc23af144aa6f6391203fdd180abeb"
+  },
+  "no_blockers": true
+}

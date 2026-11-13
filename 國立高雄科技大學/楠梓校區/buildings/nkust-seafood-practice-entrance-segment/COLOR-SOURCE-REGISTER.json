@@ -1,33 +1,68 @@
 {
-  "status": "SOURCE_GO_BOUNDED_PARTIAL",
-  "building": "NKUST Seafood Practice Entrance Segment",
-  "source_go_sha256": "25cc08943eefc184e3a11c0a29134224a50841c52ec17f3c11045b96f563976e",
-  "independent_review_sha256": "3040d2115bfcb8d1542079ec7588def0082b45e2d28a1c1e2cabefced75a0d6f",
-  "sources": [
-    {
-      "name": "entry-photo.jpg",
-      "sha256": "fac7dda4ef4f4833ea744496e19d5fe468efc3781d750c7d435f6797225ecafd"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Highest main long-facade fascia front only",
+  "faces": [
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2070,
+    2071,
+    2072,
+    2073,
+    2074,
+    2075,
+    2076,
+    2077,
+    2078,
+    2098,
+    2099,
+    2100,
+    2101,
+    2102,
+    2103,
+    2104
   ],
-  "sources_private": true,
-  "original_photographs_not_distributed": true,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "count_delta": 0,
-  "geometry_unchanged": true,
-  "source_dates": "Capture unknown;not2026survey",
-  "allowed": [
-    "72westoblique outward railfaces only"
+  "complete_connected_domains": 1,
+  "bounds": [
+    [
+      -33.400001525878906,
+      -21.399999618530273,
+      65.5
+    ],
+    [
+      54.0,
+      -21.399999618530273,
+      68.5
+    ]
   ],
-  "unknown_neutral": [
-    "letteringwall",
-    "longfacade",
-    "easttower",
-    "roofcore",
-    "rail top bottom inside ends",
-    "windows",
-    "stairs",
-    "side rear"
+  "original_material": 1,
+  "proposed_new_material": 2,
+  "nominal_hex": "#BFC0B8",
+  "original_colored_faces": 72,
+  "proposed_colored_faces": 96,
+  "triangles": 6966,
+  "limitations": [
+    "Only main highest horizontal cap front plane y=-21.4; not soffit/top/returns/upper piers/window transoms.",
+    "Actual image has local foreground ducts obscuring pieces; same continuous gray fascia family inferred over these occlusions, not per-pixel proof.",
+    "Original 88x6x3 box is approximate. Photograph does not validate physical thickness or depth.",
+    "Long photograph newly retrievable from original official URL; giant raster is visibly upsampled layout and not genuine 108MP resolving power.",
+    "Middle canopy proposal rejected: native view reveals a continuous dark inset stripe with no original material boundary.",
+    "Capture date unknown, no current-condition claim."
   ],
-  "private_source_backup": "Shared research source privately retained; no raw photographs or private identifiers distributed."
+  "file_sha256": {
+    "domain-screen.json": "9c0e8828e3ec142ca8ed119f7501316a512f4f989a92e0e0e17cc7de4e633222",
+    "original-verification.json": "a0b142bba3efd0b28a2fc985a2024d584ec561e47ec1132b15fdd267aa461a2b",
+    "original/build_model.py": "91746355b8e35901ca4620960fde20b0a7411071bb891d944c0c512825cef969",
+    "original/color-mesh.npz": "94957d327e4c43e56a1edffeb8319dcafd5d5d09e9db5afc491324c154cb1692",
+    "private-reference/long-facade.jpg": "a1899cdbd693db0385ee23e997087ede6f154a565b7c6115bdc615311d8517d3",
+    "private-reference/long-view.jpg": "f000a0987fc993da913c210b33b3a205772eff539809bd0e251b799de7915878",
+    "private-reference/upper-fascia-view.jpg": "500b5c12cfd2eeeff41137552620e5cc6890400b81b855db7bd0491d21b9e4ad",
+    "private-reference/original-photo-register.json": "8c7988055ea3757a8c9e76c2ecb992e7bce038ec61c2dff91e4457907c749aaa"
+  },
+  "historical_source_register": "qa/upper-fascia-front-previous/COLOR-SOURCE-REGISTER.json"
 }

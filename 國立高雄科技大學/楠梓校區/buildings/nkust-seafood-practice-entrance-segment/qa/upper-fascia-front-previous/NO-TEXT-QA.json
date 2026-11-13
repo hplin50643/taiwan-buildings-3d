@@ -1,0 +1,31 @@
+{
+  "visual_review": {
+    "status": "PASS",
+    "evidence": "All ten actual views inspected in nkust-seafood-practice-entrance-segment-all-views.jpg; captions/backing absent, original geometry/materials/cameras retained."
+  },
+  "status": "PASS",
+  "checks": {
+    "portable_output_path": true,
+    "mesh_vertices_match": true,
+    "mesh_faces_exact": true,
+    "material_indices_match": true,
+    "no_rendered_text_objects": true,
+    "backing_hidden": true,
+    "stamp_disabled": true,
+    "no_external_font_dependencies": true
+  },
+  "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+  "scope": "Ten README color views regenerated from unchanged original mesh and materials, with caption/backing hidden. README names and limitation text remain unchanged.",
+  "images_sha256": {
+    "back.png": "f98223bf19568d4563c94dcbaf5ec64d6e4e9ddb2ecc63eeeac6836d99e5eb4b",
+    "east.png": "eac7bc390aa7a65e80f77af0d2d172749759820b953d66ee531cef7e1b6253f9",
+    "entry-detail.png": "c67aeef811037194cd1b342d36b817a2c184e8550e52786e84f38826ba00e2c6",
+    "facade-detail.png": "87177e96c7ee22ac26f7edbacd9d67395040c2e3d476547bb064bdd37dd098ce",
+    "front.png": "704495e1e53dc56da71fca12f9ca5800cdc5f42d0ea03b8b18938d763a560df0",
+    "preview.png": "b30b14c27cfc36b3404a9a705adc594dbab6d41184595cc0515f68f75eabdda5",
+    "rear.png": "39c56dce18d77be5038dc119b94e92873919b9aafc94ef522a9b5684f37f94e7",
+    "roof-detail.png": "ad78fe91c6dc13a20d19f253d54646f673bae9fbfacec101e6fcf6d7bece87cb",
+    "top.png": "d9aca5dfe879949399f9c867f64fba8da0306ada7991c47e3662b4b2a37db4f7",
+    "west.png": "757d97f29d6d73e07533d45098233a83f228b865f1c32215c24dbd13cdf6ac6b"
+  }
+}

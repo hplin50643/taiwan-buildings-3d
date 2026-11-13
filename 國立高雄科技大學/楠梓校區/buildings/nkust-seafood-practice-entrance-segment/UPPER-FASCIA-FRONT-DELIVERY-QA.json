@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "24 original highest main fascia front faces added only; no geometry or full-building certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 6966,
+  "original_color_faces": 72,
+  "new_color_faces": 24,
+  "colored_faces": 96,
+  "unknown_neutral_faces": 6870,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 0,
+  "current_mixed_connected_domains": 0,
+  "current_independent_review": "UPPER-FASCIA-FRONT-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only24faces/1whole original main fascia front. Original2palette retained plus one nominalgray; every unselected index preserved. No side/bottom/top or middle striped canopy extension.",
+    "Recovered old official facade image, upsampled layout not newcapture. Local pipe occlusions bridged by bounded samefascia inference; no calibratedHEX or depth certification. Original noOBJ/history retained. Sourcepending fixed."
+  ],
+  "checked_at": "2026-11-12T21:01:03.615262+00:00",
+  "original_STL_sha256": "2edbf92d659ff8c9bec80df8cf458e2eeeeb657c7affd8a1c4bc29c5629dfb6d",
+  "color_mesh_sha256": "7f6d346258f55dd193921c61a2dcb567e36e66bef08854bfa2f632832002a55c",
+  "images_sha256": {
+    "preview.png": "c5c80465bfa3867f1af6a87015ec2384adbfabc76946d97fee3d9fdaef260352",
+    "rear.png": "ef5628677d96480b126b01c2a31092128034e5166c2a36ce652a4d8dc86d3157",
+    "front.png": "c3403fa075cda35816da8aec6cefde94ca2eadb56216a9a3bc490841044e6bc9",
+    "back.png": "22c53bf6f0f526163dc6a28328f3402404a9405cff7cb21100dfbad5dfa63173",
+    "west.png": "04d999fc89d02a4aaedd48e68acf28e657927fb5bc809524244d19c12b1d5b78",
+    "east.png": "9deed4c0fa69390f36b1e5dacbec00c37f2ab5ca2e7326552670fe15674a50c2",
+    "top.png": "897379eb142a674a8cd7f8261b03dbe9ab9021e09ae2c1a9b424435b390fe4ba",
+    "entry-detail.png": "07c15e51067db7f1959c0dd83711926efa394a92656424f0e5ed95c14819f051",
+    "facade-detail.png": "379cd795f2227a257b3c91e71db1a13d2a2db7707dc3ad7761be74279ee4d5de",
+    "roof-detail.png": "64be35fd40d57d95eb89f9c541d8084cdc92affdb4b665cdcdeb493d1d9f1cf6"
+  }
+}
