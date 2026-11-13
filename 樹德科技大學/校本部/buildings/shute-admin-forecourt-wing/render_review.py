@@ -1,7 +1,7 @@
 from pathlib import Path
 import bpy,json,struct,sys
 from mathutils import Vector
-D=Path(__file__).resolve().parent;V=D/'appearance-review-v2';V.mkdir(exist_ok=True)
+D=Path(__file__).resolve().parent;V=D/'appearance-review-v3';V.mkdir(exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=str(D/'appearance.blend'));s=bpy.context.scene;o=next(o for o in s.objects if o.type=='MESH')
 meta=json.loads((D/'appearance-materials.json').read_text())
 views={'front':((165,-265,165),(0,-6,45),205),'rear':((-165,265,165),(0,-6,45),205),'elevation':((0,-320,52),(0,0,52),180),'source-angle':((170,-290,90),(0,-6,45),205),'left':((-320,0,135),(0,-7.5,52),205),'right':((320,0,135),(0,-7.5,52),205),'top':((0,-7.5,360),(0,-7.5,0),180)}
@@ -18,7 +18,7 @@ def render(name,pos,target,path):
 for name,(pos,target,_) in views.items():
  r=render(name,pos,target,D/'appearance'/(name+'.png'));records.append(r);byname[name]=r
 (D/'render-cameras.json').write_text(json.dumps(records,indent=2))
-for p,i in zip(o.data.polygons,meta['original_face_material_indices']):p.material_index=i
+for p,i in zip(o.data.polygons,meta['continuation_baseline_face_material_indices']):p.material_index=i
 comps=[]
 for name in ['front','rear']:
  pos,target,_=views[name];r=render(name,pos,target,V/('original-'+name+'.png'));assert r==byname[name];r['view']='original-'+name;r['same_camera_as']=name;comps.append(r)

@@ -1,0 +1,149 @@
+{
+  "revision": "color-v2-full-face-continuity",
+  "pinned_head_basis": "123e103381f4d7eb98627857d9b720b8e497ecaa",
+  "scope": "50 originally neutral complete roof lattice rear triangles colored using existing concrete material.5520 original colored triangles preserved;164 retained neutral.",
+  "geometry_verified": "appearance-review-v2/model-verification.json",
+  "clean_rebuild": "appearance-review-v2/clean-rebuild-equality.json",
+  "current_visual_review": "appearance-review-v2/color-continuity-review.json",
+  "original_qa_rerun": "appearance-review-v2/original-qa-rerun-summary.json",
+  "historical_reviews": "Original appearance-review remains v1 history. Current revision uses appearance-review-v2.",
+  "source_photographs_packaged": false,
+  "latest_head_recheck": "Current remote HEAD was not checked in this local-only pass. No remote publication verification.",
+  "files": [
+    {
+      "path": "APPEARANCE.md",
+      "sha256": "8705bc0c66b4aa6c1704c7efb23b4933ea6ccb66b51fff06507d4314b0014800",
+      "bytes": 4801
+    },
+    {
+      "path": "README.md",
+      "sha256": "7e7ecfcb932a1bf7367bcce56c40f569b667c9aac2852ecc82489a4fb9c446c6",
+      "bytes": 6288
+    },
+    {
+      "path": "appearance/elevation.png",
+      "sha256": "223b165992a27417f6d76a419a34977035443a92bd81346df9a116cd484eee4d",
+      "bytes": 902858
+    },
+    {
+      "path": "appearance/front.png",
+      "sha256": "7ea888f19115e9dcf09fbefd60eb32ee753f53f37d59969d162fdd0350c8c7c1",
+      "bytes": 956366
+    },
+    {
+      "path": "appearance/left.png",
+      "sha256": "34b0e8c2d2c792e83f0a263ddc3be9d3f6fc58344140d378e45184af5721f3c9",
+      "bytes": 833882
+    },
+    {
+      "path": "appearance/rear.png",
+      "sha256": "57ee09cf61a9d48c9b0f736319081524db21415e536414834c32c3c746250427",
+      "bytes": 827279
+    },
+    {
+      "path": "appearance/right.png",
+      "sha256": "f3b8fdecea0191218a459ee3211658521763955f7a6b5fad50ebf280d1a0aad9",
+      "bytes": 842169
+    },
+    {
+      "path": "appearance/source-angle.png",
+      "sha256": "aaa4f9631537c2d219790b0717c5b27936ac2c1826362eea554b5f42c32f1ffb",
+      "bytes": 916336
+    },
+    {
+      "path": "appearance/top.png",
+      "sha256": "6ab32e007356cc7c9bd1ecb5a66818d2879cb058f831942890fba34cab434368",
+      "bytes": 864198
+    },
+    {
+      "path": "appearance-materials.json",
+      "sha256": "e709161be379a710111e406a444fb7dbbe3e356d09e837c9bd530f420b50f151",
+      "bytes": 103226
+    },
+    {
+      "path": "appearance-review-v2/asset-privacy-review.json",
+      "sha256": "9385b6340b2af2e714b4e9d029072aa62ec4bf8e863c2f7126017e387e7a7545",
+      "bytes": 544
+    },
+    {
+      "path": "appearance-review-v2/boundary-continuity-audit.json",
+      "sha256": "b87d3cbe39345d210be549531939d05edb9dbd07881248c51f79ed62b03d03db",
+      "bytes": 2161
+    },
+    {
+      "path": "appearance-review-v2/camera-consistency.json",
+      "sha256": "8d885e1462050e63b588d7062d24a53c0eb8237dd7a6e866d8cbe4fa819ca74f",
+      "bytes": 266
+    },
+    {
+      "path": "appearance-review-v2/clean-rebuild-equality.json",
+      "sha256": "4c51076e4f6c6460c8af30bd3dd10e3049d82f67d1d10abb5eb19a9e562fcf90",
+      "bytes": 345
+    },
+    {
+      "path": "appearance-review-v2/color-continuity-review.json",
+      "sha256": "4bb9bf71d5e47a8be06abf4fca29ec635dfae5ef6194167903d8ef85fdab90bb",
+      "bytes": 5942
+    },
+    {
+      "path": "appearance-review-v2/comparison-camera-records.json",
+      "sha256": "39f5ef97c38680cef7219182809ac148dc98acac5f1884cca40f3a74f95560a9",
+      "bytes": 667
+    },
+    {
+      "path": "appearance-review-v2/material-value-verification.json",
+      "sha256": "9d2dd25c799fca88ba52dc6576f339ddc809a91c99bf5925dd53404eef6a09c1",
+      "bytes": 5021
+    },
+    {
+      "path": "appearance-review-v2/model-verification.json",
+      "sha256": "d14d17ee2b0b3961570dba22c1c66ed19b9c38c0bcf9b9f50aa366853e4bb040",
+      "bytes": 2336
+    },
+    {
+      "path": "appearance-review-v2/original-front.png",
+      "sha256": "fb43970526be6f15d8aefdfc5c67d206eb22e8bbc2634453f637719ce9c8b53e",
+      "bytes": 956398
+    },
+    {
+      "path": "appearance-review-v2/original-qa-rerun-summary.json",
+      "sha256": "36384170b66ba5858c84f51baf9f8a14893cf0f8f7aa63541f808682578508a3",
+      "bytes": 5673
+    },
+    {
+      "path": "appearance-review-v2/original-rear.png",
+      "sha256": "ced6d204a62e893b352cac5c614d78fc739fdac2fc4adc3f18a178830d441de6",
+      "bytes": 830103
+    },
+    {
+      "path": "appearance-review-v2/source-register.json",
+      "sha256": "7ffe1928e41f36931a9d1061dec62c932c502743dd7f0f879480660df0f0b64c",
+      "bytes": 1897
+    },
+    {
+      "path": "appearance.3mf",
+      "sha256": "1e06b6b0801b08952856ae6c38ec64a5fbf2f2514d42ff242875d8ad257184d3",
+      "bytes": 67086
+    },
+    {
+      "path": "appearance.blend",
+      "sha256": "06d8159640462bfe0a43d42760b21c767f63ca02444f26327350d6f8c9c34087",
+      "bytes": 928840
+    },
+    {
+      "path": "build_appearance.py",
+      "sha256": "9e6a1ccde2f947f2dabcf9c819677a2ebd33beed4b7dc6e13cfecddba1fe4ad7",
+      "bytes": 10718
+    },
+    {
+      "path": "render-cameras.json",
+      "sha256": "7549f07d173fbe452c5996b151c25ea57b4d1445002eb6f1f1f06ab87db592ee",
+      "bytes": 1952
+    },
+    {
+      "path": "render_review.py",
+      "sha256": "4dfd0d1860810cff1b76a24d1805afd14e506e6f1b0c966d12c7dd27b62b97b1",
+      "bytes": 2448
+    }
+  ]
+}

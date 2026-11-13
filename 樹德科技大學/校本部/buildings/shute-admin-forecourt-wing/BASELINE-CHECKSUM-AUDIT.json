@@ -1,0 +1,816 @@
+{
+  "status": "PASS",
+  "entries": [
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "APPEARANCE.md",
+      "resolved": "APPEARANCE.md",
+      "expected": "8705bc0c66b4aa6c1704c7efb23b4933ea6ccb66b51fff06507d4314b0014800",
+      "actual": "8705bc0c66b4aa6c1704c7efb23b4933ea6ccb66b51fff06507d4314b0014800",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/APPEARANCE.md"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "QA.md",
+      "resolved": "QA.md",
+      "expected": "46684d6509d412ad1dedcd77b01e461795046b2f7d572e80244408c4ea3afae3",
+      "actual": "46684d6509d412ad1dedcd77b01e461795046b2f7d572e80244408c4ea3afae3",
+      "match": true,
+      "preserved_work_path": "QA.md"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "README.md",
+      "resolved": "README.md",
+      "expected": "7e7ecfcb932a1bf7367bcce56c40f569b667c9aac2852ecc82489a4fb9c446c6",
+      "actual": "7e7ecfcb932a1bf7367bcce56c40f569b667c9aac2852ecc82489a4fb9c446c6",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/README.md"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "all-boundary-overlaps.csv.gz",
+      "resolved": "all-boundary-overlaps.csv.gz",
+      "expected": "7b281e8d24891a94f5354b6a738b273c1bca3336a339532f3c971d4a3d1f2a78",
+      "actual": "7b281e8d24891a94f5354b6a738b273c1bca3336a339532f3c971d4a3d1f2a78",
+      "match": true,
+      "preserved_work_path": "all-boundary-overlaps.csv.gz"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "all_boundary_screen.cpp",
+      "resolved": "all_boundary_screen.cpp",
+      "expected": "f6e962aa83011d6252e1427c8089eed0f60974e932cf397fd71bfecee330285c",
+      "actual": "f6e962aa83011d6252e1427c8089eed0f60974e932cf397fd71bfecee330285c",
+      "match": true,
+      "preserved_work_path": "all_boundary_screen.cpp"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-freeze.json",
+      "resolved": "appearance-freeze.json",
+      "expected": "b988734ed9f723523322150e8fb1f515578d1a3331d44a4c054a861e1b8a17c2",
+      "actual": "b988734ed9f723523322150e8fb1f515578d1a3331d44a4c054a861e1b8a17c2",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance-freeze.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-materials.json",
+      "resolved": "appearance-materials.json",
+      "expected": "e709161be379a710111e406a444fb7dbbe3e356d09e837c9bd530f420b50f151",
+      "actual": "e709161be379a710111e406a444fb7dbbe3e356d09e837c9bd530f420b50f151",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance-materials.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/asset-privacy-review.json",
+      "resolved": "appearance-review-v2/asset-privacy-review.json",
+      "expected": "9385b6340b2af2e714b4e9d029072aa62ec4bf8e863c2f7126017e387e7a7545",
+      "actual": "9385b6340b2af2e714b4e9d029072aa62ec4bf8e863c2f7126017e387e7a7545",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/asset-privacy-review.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/boundary-continuity-audit.json",
+      "resolved": "appearance-review-v2/boundary-continuity-audit.json",
+      "expected": "b87d3cbe39345d210be549531939d05edb9dbd07881248c51f79ed62b03d03db",
+      "actual": "b87d3cbe39345d210be549531939d05edb9dbd07881248c51f79ed62b03d03db",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/boundary-continuity-audit.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/camera-consistency.json",
+      "resolved": "appearance-review-v2/camera-consistency.json",
+      "expected": "8d885e1462050e63b588d7062d24a53c0eb8237dd7a6e866d8cbe4fa819ca74f",
+      "actual": "8d885e1462050e63b588d7062d24a53c0eb8237dd7a6e866d8cbe4fa819ca74f",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/camera-consistency.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/clean-rebuild-equality.json",
+      "resolved": "appearance-review-v2/clean-rebuild-equality.json",
+      "expected": "4c51076e4f6c6460c8af30bd3dd10e3049d82f67d1d10abb5eb19a9e562fcf90",
+      "actual": "4c51076e4f6c6460c8af30bd3dd10e3049d82f67d1d10abb5eb19a9e562fcf90",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/clean-rebuild-equality.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/color-continuity-review.json",
+      "resolved": "appearance-review-v2/color-continuity-review.json",
+      "expected": "4bb9bf71d5e47a8be06abf4fca29ec635dfae5ef6194167903d8ef85fdab90bb",
+      "actual": "4bb9bf71d5e47a8be06abf4fca29ec635dfae5ef6194167903d8ef85fdab90bb",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/color-continuity-review.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/comparison-camera-records.json",
+      "resolved": "appearance-review-v2/comparison-camera-records.json",
+      "expected": "39f5ef97c38680cef7219182809ac148dc98acac5f1884cca40f3a74f95560a9",
+      "actual": "39f5ef97c38680cef7219182809ac148dc98acac5f1884cca40f3a74f95560a9",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/comparison-camera-records.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/material-value-verification.json",
+      "resolved": "appearance-review-v2/material-value-verification.json",
+      "expected": "9d2dd25c799fca88ba52dc6576f339ddc809a91c99bf5925dd53404eef6a09c1",
+      "actual": "9d2dd25c799fca88ba52dc6576f339ddc809a91c99bf5925dd53404eef6a09c1",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/material-value-verification.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/model-verification.json",
+      "resolved": "appearance-review-v2/model-verification.json",
+      "expected": "d14d17ee2b0b3961570dba22c1c66ed19b9c38c0bcf9b9f50aa366853e4bb040",
+      "actual": "d14d17ee2b0b3961570dba22c1c66ed19b9c38c0bcf9b9f50aa366853e4bb040",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/model-verification.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/original-front.png",
+      "resolved": "appearance-review-v2/original-front.png",
+      "expected": "fb43970526be6f15d8aefdfc5c67d206eb22e8bbc2634453f637719ce9c8b53e",
+      "actual": "fb43970526be6f15d8aefdfc5c67d206eb22e8bbc2634453f637719ce9c8b53e",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/original-front.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/original-qa-rerun-summary.json",
+      "resolved": "appearance-review-v2/original-qa-rerun-summary.json",
+      "expected": "36384170b66ba5858c84f51baf9f8a14893cf0f8f7aa63541f808682578508a3",
+      "actual": "36384170b66ba5858c84f51baf9f8a14893cf0f8f7aa63541f808682578508a3",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/original-qa-rerun-summary.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/original-rear.png",
+      "resolved": "appearance-review-v2/original-rear.png",
+      "expected": "ced6d204a62e893b352cac5c614d78fc739fdac2fc4adc3f18a178830d441de6",
+      "actual": "ced6d204a62e893b352cac5c614d78fc739fdac2fc4adc3f18a178830d441de6",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/original-rear.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review-v2/source-register.json",
+      "resolved": "appearance-review-v2/source-register.json",
+      "expected": "7ffe1928e41f36931a9d1061dec62c932c502743dd7f0f879480660df0f0b64c",
+      "actual": "7ffe1928e41f36931a9d1061dec62c932c502743dd7f0f879480660df0f0b64c",
+      "match": true,
+      "preserved_work_path": "appearance-review-v2/source-register.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review/clean-rebuild-equality.json",
+      "resolved": "appearance-review/clean-rebuild-equality.json",
+      "expected": "235bc8c62a37d80c111e630983464bb036383fcc74a472ad489f97e184e99d19",
+      "actual": "235bc8c62a37d80c111e630983464bb036383fcc74a472ad489f97e184e99d19",
+      "match": true,
+      "preserved_work_path": "appearance-review/clean-rebuild-equality.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review/clean-rebuild-final-geometry-review.json",
+      "resolved": "appearance-review/clean-rebuild-final-geometry-review.json",
+      "expected": "8386ebb9e1714f7bda9278c59b88c8fed4cfbab59cf731e571aab90e7057bdfc",
+      "actual": "8386ebb9e1714f7bda9278c59b88c8fed4cfbab59cf731e571aab90e7057bdfc",
+      "match": true,
+      "preserved_work_path": "appearance-review/clean-rebuild-final-geometry-review.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review/color-source-review.json",
+      "resolved": "appearance-review/color-source-review.json",
+      "expected": "2ed097052a594aaf006494d5f5e004ffc3dfed3ebce15125e9ac7a0f574b0054",
+      "actual": "2ed097052a594aaf006494d5f5e004ffc3dfed3ebce15125e9ac7a0f574b0054",
+      "match": true,
+      "preserved_work_path": "appearance-review/color-source-review.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review/color-visual-review.json",
+      "resolved": "appearance-review/color-visual-review.json",
+      "expected": "3328ed7718e27b936a87e98863407d31c744002ae00128752f1940ca8cf76f0a",
+      "actual": "3328ed7718e27b936a87e98863407d31c744002ae00128752f1940ca8cf76f0a",
+      "match": true,
+      "preserved_work_path": "appearance-review/color-visual-review.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review/geometry-visual-review.json",
+      "resolved": "appearance-review/geometry-visual-review.json",
+      "expected": "0e0d62a6fa4f0a210a8c41eeae3861fed94eb2414f9e4b0cf06534ab498dbe55",
+      "actual": "0e0d62a6fa4f0a210a8c41eeae3861fed94eb2414f9e4b0cf06534ab498dbe55",
+      "match": true,
+      "preserved_work_path": "appearance-review/geometry-visual-review.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-review/output-final-geometry-review.json",
+      "resolved": "appearance-review/output-final-geometry-review.json",
+      "expected": "92a10e7e507239a269c6058ee30ee1fc00d3569b0a808cf2e0ed1ccd14ce11c6",
+      "actual": "92a10e7e507239a269c6058ee30ee1fc00d3569b0a808cf2e0ed1ccd14ce11c6",
+      "match": true,
+      "preserved_work_path": "appearance-review/output-final-geometry-review.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance-sources.json",
+      "resolved": "appearance-sources.json",
+      "expected": "2ed097052a594aaf006494d5f5e004ffc3dfed3ebce15125e9ac7a0f574b0054",
+      "actual": "2ed097052a594aaf006494d5f5e004ffc3dfed3ebce15125e9ac7a0f574b0054",
+      "match": true,
+      "preserved_work_path": "appearance-sources.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance.3mf",
+      "resolved": "appearance.3mf",
+      "expected": "1e06b6b0801b08952856ae6c38ec64a5fbf2f2514d42ff242875d8ad257184d3",
+      "actual": "1e06b6b0801b08952856ae6c38ec64a5fbf2f2514d42ff242875d8ad257184d3",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance.3mf"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance.blend",
+      "resolved": "appearance.blend",
+      "expected": "06d8159640462bfe0a43d42760b21c767f63ca02444f26327350d6f8c9c34087",
+      "actual": "06d8159640462bfe0a43d42760b21c767f63ca02444f26327350d6f8c9c34087",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance.blend"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance/elevation.png",
+      "resolved": "appearance/elevation.png",
+      "expected": "223b165992a27417f6d76a419a34977035443a92bd81346df9a116cd484eee4d",
+      "actual": "223b165992a27417f6d76a419a34977035443a92bd81346df9a116cd484eee4d",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance/elevation.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance/front.png",
+      "resolved": "appearance/front.png",
+      "expected": "7ea888f19115e9dcf09fbefd60eb32ee753f53f37d59969d162fdd0350c8c7c1",
+      "actual": "7ea888f19115e9dcf09fbefd60eb32ee753f53f37d59969d162fdd0350c8c7c1",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance/front.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance/left.png",
+      "resolved": "appearance/left.png",
+      "expected": "34b0e8c2d2c792e83f0a263ddc3be9d3f6fc58344140d378e45184af5721f3c9",
+      "actual": "34b0e8c2d2c792e83f0a263ddc3be9d3f6fc58344140d378e45184af5721f3c9",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance/left.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance/rear.png",
+      "resolved": "appearance/rear.png",
+      "expected": "57ee09cf61a9d48c9b0f736319081524db21415e536414834c32c3c746250427",
+      "actual": "57ee09cf61a9d48c9b0f736319081524db21415e536414834c32c3c746250427",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance/rear.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance/right.png",
+      "resolved": "appearance/right.png",
+      "expected": "f3b8fdecea0191218a459ee3211658521763955f7a6b5fad50ebf280d1a0aad9",
+      "actual": "f3b8fdecea0191218a459ee3211658521763955f7a6b5fad50ebf280d1a0aad9",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance/right.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance/source-angle.png",
+      "resolved": "appearance/source-angle.png",
+      "expected": "aaa4f9631537c2d219790b0717c5b27936ac2c1826362eea554b5f42c32f1ffb",
+      "actual": "aaa4f9631537c2d219790b0717c5b27936ac2c1826362eea554b5f42c32f1ffb",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance/source-angle.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "appearance/top.png",
+      "resolved": "appearance/top.png",
+      "expected": "6ab32e007356cc7c9bd1ecb5a66818d2879cb058f831942890fba34cab434368",
+      "actual": "6ab32e007356cc7c9bd1ecb5a66818d2879cb058f831942890fba34cab434368",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/appearance/top.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "boundary-witnesses.json.gz",
+      "resolved": "boundary-witnesses.json.gz",
+      "expected": "50c787fb9f5007cf731559a0075182e1dad962305529b9ca15de5da79e45bb7b",
+      "actual": "50c787fb9f5007cf731559a0075182e1dad962305529b9ca15de5da79e45bb7b",
+      "match": true,
+      "preserved_work_path": "boundary-witnesses.json.gz"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "build_appearance.py",
+      "resolved": "build_appearance.py",
+      "expected": "9e6a1ccde2f947f2dabcf9c819677a2ebd33beed4b7dc6e13cfecddba1fe4ad7",
+      "actual": "9e6a1ccde2f947f2dabcf9c819677a2ebd33beed4b7dc6e13cfecddba1fe4ad7",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/build_appearance.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "build_model.py",
+      "resolved": "build_model.py",
+      "expected": "5375ef1aefb132f281a8f618355abbc826c717cd70ef35d3cd5298d5ae4bf786",
+      "actual": "5375ef1aefb132f281a8f618355abbc826c717cd70ef35d3cd5298d5ae4bf786",
+      "match": true,
+      "preserved_work_path": "build_model.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_component_detail.py",
+      "resolved": "check_component_detail.py",
+      "expected": "e9a2cbe809ee69b444d2ac2314c42db4a8300652d3b18a6dfe8f0868c713893f",
+      "actual": "e9a2cbe809ee69b444d2ac2314c42db4a8300652d3b18a6dfe8f0868c713893f",
+      "match": true,
+      "preserved_work_path": "check_component_detail.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_dense_surface.py",
+      "resolved": "check_dense_surface.py",
+      "expected": "7d6c26b01bda3c794340222ff8d5a6d0b4afa29eac4b86a9bea09532dc727e50",
+      "actual": "7d6c26b01bda3c794340222ff8d5a6d0b4afa29eac4b86a9bea09532dc727e50",
+      "match": true,
+      "preserved_work_path": "check_dense_surface.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_documentation.py",
+      "resolved": "check_documentation.py",
+      "expected": "7c3f572f8137b855be6d6a7758a9ad7d14e2cf4b1e27131b3a8718201cdc9c90",
+      "actual": "7c3f572f8137b855be6d6a7758a9ad7d14e2cf4b1e27131b3a8718201cdc9c90",
+      "match": true,
+      "preserved_work_path": "check_documentation.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_drum_relief_roots.py",
+      "resolved": "check_drum_relief_roots.py",
+      "expected": "9da4d853e07043dc3c57d01a708547f9f973532163a2f9349ce6f30abd45b7a5",
+      "actual": "9da4d853e07043dc3c57d01a708547f9f973532163a2f9349ce6f30abd45b7a5",
+      "match": true,
+      "preserved_work_path": "check_drum_relief_roots.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_drum_root_intervals.py",
+      "resolved": "check_drum_root_intervals.py",
+      "expected": "468da2ec5e2be2702661cdf3a0d1cbf8016551a49cbc683009901a589826d8e0",
+      "actual": "468da2ec5e2be2702661cdf3a0d1cbf8016551a49cbc683009901a589826d8e0",
+      "match": true,
+      "preserved_work_path": "check_drum_root_intervals.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_flag_boundaries.py",
+      "resolved": "check_flag_boundaries.py",
+      "expected": "73d47a184f9e50ab83ad450aacd46279c68271a9677f75b6f1d4086deedc9525",
+      "actual": "73d47a184f9e50ab83ad450aacd46279c68271a9677f75b6f1d4086deedc9525",
+      "match": true,
+      "preserved_work_path": "check_flag_boundaries.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_full_boundary_intervals.py",
+      "resolved": "check_full_boundary_intervals.py",
+      "expected": "bfd0ea0cc7256e3dd91c5043cac3fb852c4c6a1654627a229a78a749c7c7fcc6",
+      "actual": "bfd0ea0cc7256e3dd91c5043cac3fb852c4c6a1654627a229a78a749c7c7fcc6",
+      "match": true,
+      "preserved_work_path": "check_full_boundary_intervals.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_negative_controls.py",
+      "resolved": "check_negative_controls.py",
+      "expected": "e4e3c37ff7ec443a2e14e36b683047b3b1168dad6b2cb893e7a6296db8ecce5f",
+      "actual": "e4e3c37ff7ec443a2e14e36b683047b3b1168dad6b2cb893e7a6296db8ecce5f",
+      "match": true,
+      "preserved_work_path": "check_negative_controls.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_raw_mesh.py",
+      "resolved": "check_raw_mesh.py",
+      "expected": "01e4e1e63205b76fb3299100fa974f9075c5c5d60fb4f09ed343b88b3fbc42af",
+      "actual": "01e4e1e63205b76fb3299100fa974f9075c5c5d60fb4f09ed343b88b3fbc42af",
+      "match": true,
+      "preserved_work_path": "check_raw_mesh.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_reproducibility.py",
+      "resolved": "check_reproducibility.py",
+      "expected": "ed86db85bb7f55d2a97cc4e97a2696d762f8eb54a6deaef069225053a505856f",
+      "actual": "ed86db85bb7f55d2a97cc4e97a2696d762f8eb54a6deaef069225053a505856f",
+      "match": true,
+      "preserved_work_path": "check_reproducibility.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "check_v3_gate_controls.py",
+      "resolved": "check_v3_gate_controls.py",
+      "expected": "cf1f3feda7b477e59abaaae7282dce994ea8eae12f70c7418e5a01667bbb21e4",
+      "actual": "cf1f3feda7b477e59abaaae7282dce994ea8eae12f70c7418e5a01667bbb21e4",
+      "match": true,
+      "preserved_work_path": "check_v3_gate_controls.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "checks-run.json",
+      "resolved": "checks-run.json",
+      "expected": "1a3f33bf3816c2885a78d7e5bb1e385967dfe827dc8b10a23e0279b5cfe6959f",
+      "actual": "1a3f33bf3816c2885a78d7e5bb1e385967dfe827dc8b10a23e0279b5cfe6959f",
+      "match": true,
+      "preserved_work_path": "checks-run.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "component-detail.json",
+      "resolved": "component-detail.json",
+      "expected": "f7172e95d5ac294a1dd6f731d2fa7a84420a4b746f0cd4a62b4f8c8a0bc89fe6",
+      "actual": "f7172e95d5ac294a1dd6f731d2fa7a84420a4b746f0cd4a62b4f8c8a0bc89fe6",
+      "match": true,
+      "preserved_work_path": "component-detail.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "component-layer-details.json.gz",
+      "resolved": "component-layer-details.json.gz",
+      "expected": "ba172d986f14fbed3e5bfbae883b2aaf851eb4ef77316ed4d153d02842b181fc",
+      "actual": "ba172d986f14fbed3e5bfbae883b2aaf851eb4ef77316ed4d153d02842b181fc",
+      "match": true,
+      "preserved_work_path": "component-layer-details.json.gz"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "dense-original.csv.gz",
+      "resolved": "dense-original.csv.gz",
+      "expected": "3abd925f24bcc29eda5795d943f8336371a63d103863bd2e8da695b31576fca6",
+      "actual": "3abd925f24bcc29eda5795d943f8336371a63d103863bd2e8da695b31576fca6",
+      "match": true,
+      "preserved_work_path": "dense-original.csv.gz"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "dense-short-chords.json",
+      "resolved": "dense-short-chords.json",
+      "expected": "c02bc2eb8ad2b6f9d443c1559a39883e896a50598f9a17aef615b619e72fa9fb",
+      "actual": "c02bc2eb8ad2b6f9d443c1559a39883e896a50598f9a17aef615b619e72fa9fb",
+      "match": true,
+      "preserved_work_path": "dense-short-chords.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "dense-short-samples.json.gz",
+      "resolved": "dense-short-samples.json.gz",
+      "expected": "509944b78a42c94bfe7d4218983e700cf670798c4d0d07d7b73f7f8c6294f25e",
+      "actual": "509944b78a42c94bfe7d4218983e700cf670798c4d0d07d7b73f7f8c6294f25e",
+      "match": true,
+      "preserved_work_path": "dense-short-samples.json.gz"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "dense_original.cpp",
+      "resolved": "dense_original.cpp",
+      "expected": "05a14fcc0a8b62bb04332a70ebe7e5f30ae948326ab6aae3af0e8f8950ce91c7",
+      "actual": "05a14fcc0a8b62bb04332a70ebe7e5f30ae948326ab6aae3af0e8f8950ce91c7",
+      "match": true,
+      "preserved_work_path": "dense_original.cpp"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "dense_report.py",
+      "resolved": "dense_report.py",
+      "expected": "e97769fee53fd203be1a669a81b83e6a7b1d336d8bbcadc1ef60b9f37d8450eb",
+      "actual": "e97769fee53fd203be1a669a81b83e6a7b1d336d8bbcadc1ef60b9f37d8450eb",
+      "match": true,
+      "preserved_work_path": "dense_report.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "documentation-check.json",
+      "resolved": "documentation-check.json",
+      "expected": "98aca1f05c8be86cbeebf5525671241954d3bc1d52d95904ec933c71287f7d7c",
+      "actual": "98aca1f05c8be86cbeebf5525671241954d3bc1d52d95904ec933c71287f7d7c",
+      "match": true,
+      "preserved_work_path": "documentation-check.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "drum-relief-root-samples.json.gz",
+      "resolved": "drum-relief-root-samples.json.gz",
+      "expected": "c996838808c8aba2651609dba076d4ad1de912cf68ce5c84b4569017e1fb122b",
+      "actual": "c996838808c8aba2651609dba076d4ad1de912cf68ce5c84b4569017e1fb122b",
+      "match": true,
+      "preserved_work_path": "drum-relief-root-samples.json.gz"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "drum-relief-roots.json",
+      "resolved": "drum-relief-roots.json",
+      "expected": "4dcd56674f7b822acdb90677c2bd190cc56172414d5085542fb126839f897e75",
+      "actual": "4dcd56674f7b822acdb90677c2bd190cc56172414d5085542fb126839f897e75",
+      "match": true,
+      "preserved_work_path": "drum-relief-roots.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "drum-root-interval-details.json.gz",
+      "resolved": "drum-root-interval-details.json.gz",
+      "expected": "4c3da061e933c9419c1d5528cd975911a5031c28f30680408a89ba51f666fcf2",
+      "actual": "4c3da061e933c9419c1d5528cd975911a5031c28f30680408a89ba51f666fcf2",
+      "match": true,
+      "preserved_work_path": "drum-root-interval-details.json.gz"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "drum-root-intervals.json",
+      "resolved": "drum-root-intervals.json",
+      "expected": "41a8c60d5448e5b6a90ae18764769b5b3fce870bb793fd8bb30eeae903c2b2ad",
+      "actual": "41a8c60d5448e5b6a90ae18764769b5b3fce870bb793fd8bb30eeae903c2b2ad",
+      "match": true,
+      "preserved_work_path": "drum-root-intervals.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "exact-source-boundary-events.txt.gz",
+      "resolved": "exact-source-boundary-events.txt.gz",
+      "expected": "4a72fcedfe7a6902846a64e4c3a7ada50db52af8ed1667ce629f3482fdc00dad",
+      "actual": "4a72fcedfe7a6902846a64e4c3a7ada50db52af8ed1667ce629f3482fdc00dad",
+      "match": true,
+      "preserved_work_path": "exact-source-boundary-events.txt.gz"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "flag-boundary-classification.json",
+      "resolved": "flag-boundary-classification.json",
+      "expected": "6631d6fa66c6bf52fceca55fe90ff7656bccd51221542983da2bbeeb52613d6d",
+      "actual": "6631d6fa66c6bf52fceca55fe90ff7656bccd51221542983da2bbeeb52613d6d",
+      "match": true,
+      "preserved_work_path": "flag-boundary-classification.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "freeze-manifest.json",
+      "resolved": "freeze-manifest.json",
+      "expected": "ee6270e3e2dd009e298733b7362cbdb6af23b057984a87bfec2187fe89a2ae06",
+      "actual": "ee6270e3e2dd009e298733b7362cbdb6af23b057984a87bfec2187fe89a2ae06",
+      "match": true,
+      "preserved_work_path": "freeze-manifest.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "gate-negative-controls.json",
+      "resolved": "gate-negative-controls.json",
+      "expected": "c56b40709f76d358ea876d1175f89c0d80ee3b30d261ae14081a80c96c5e37b0",
+      "actual": "c56b40709f76d358ea876d1175f89c0d80ee3b30d261ae14081a80c96c5e37b0",
+      "match": true,
+      "preserved_work_path": "gate-negative-controls.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "model.stl",
+      "resolved": "model.stl",
+      "expected": "7e9fdb8a610f566d7f22e06d07545f12d2e761ae16f5b660f8e2f5d52cb5388d",
+      "actual": "7e9fdb8a610f566d7f22e06d07545f12d2e761ae16f5b660f8e2f5d52cb5388d",
+      "match": true,
+      "preserved_work_path": "model.stl"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "negative-controls.json",
+      "resolved": "negative-controls.json",
+      "expected": "467b9e975c790d4e4ad5ca9de05ee0db9a021ecd01b790d20fafbe8f1e8690e1",
+      "actual": "467b9e975c790d4e4ad5ca9de05ee0db9a021ecd01b790d20fafbe8f1e8690e1",
+      "match": true,
+      "preserved_work_path": "negative-controls.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "original_rays.py",
+      "resolved": "original_rays.py",
+      "expected": "f8c1492e507e1dab3293343698940e7acae235de289cc40aa350393fb27c9cbd",
+      "actual": "f8c1492e507e1dab3293343698940e7acae235de289cc40aa350393fb27c9cbd",
+      "match": true,
+      "preserved_work_path": "original_rays.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "parameters.json",
+      "resolved": "parameters.json",
+      "expected": "d3b1ad0bc0332825f3d0376e6d0884a7aa4f580fd8a46b86c63dd0721d56a2ba",
+      "actual": "d3b1ad0bc0332825f3d0376e6d0884a7aa4f580fd8a46b86c63dd0721d56a2ba",
+      "match": true,
+      "preserved_work_path": "parameters.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "previews/elevation.png",
+      "resolved": "previews/elevation.png",
+      "expected": "a7626e8700a91617ea9e369ba4d95f601b4aa14a923adf9747d5706bcb776e1c",
+      "actual": "a7626e8700a91617ea9e369ba4d95f601b4aa14a923adf9747d5706bcb776e1c",
+      "match": true,
+      "preserved_work_path": "previews/elevation.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "previews/front.png",
+      "resolved": "previews/front.png",
+      "expected": "3bd33b37791944026bf8d5280cb03804a530b0af939ff3b0e4d76d41dedd79d0",
+      "actual": "3bd33b37791944026bf8d5280cb03804a530b0af939ff3b0e4d76d41dedd79d0",
+      "match": true,
+      "preserved_work_path": "previews/front.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "previews/rear.png",
+      "resolved": "previews/rear.png",
+      "expected": "24709256439c920c403a8cec16695fb6f0b4f2c34b41ddd8e4e69f653d9cc693",
+      "actual": "24709256439c920c403a8cec16695fb6f0b4f2c34b41ddd8e4e69f653d9cc693",
+      "match": true,
+      "preserved_work_path": "previews/rear.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "previews/top.png",
+      "resolved": "previews/top.png",
+      "expected": "344f724a45150b37ca2f06b97fbb11110a432786bd8ce5817063f8e8df8942c0",
+      "actual": "344f724a45150b37ca2f06b97fbb11110a432786bd8ce5817063f8e8df8942c0",
+      "match": true,
+      "preserved_work_path": "previews/top.png"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "raw-mesh-check.json",
+      "resolved": "raw-mesh-check.json",
+      "expected": "763a22099f63af0810183b849f348caf6c546c82c715bbe1c65c481ccf5d0060",
+      "actual": "763a22099f63af0810183b849f348caf6c546c82c715bbe1c65c481ccf5d0060",
+      "match": true,
+      "preserved_work_path": "raw-mesh-check.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "recovery-provenance.json",
+      "resolved": "recovery-provenance.json",
+      "expected": "bca3e61623ae85f61bc96bf438f401ac8032e5a52c45c1f7a9ca26d84fb5395b",
+      "actual": "bca3e61623ae85f61bc96bf438f401ac8032e5a52c45c1f7a9ca26d84fb5395b",
+      "match": true,
+      "preserved_work_path": "recovery-provenance.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "render-cameras.json",
+      "resolved": "render-cameras.json",
+      "expected": "7549f07d173fbe452c5996b151c25ea57b4d1445002eb6f1f1f06ab87db592ee",
+      "actual": "7549f07d173fbe452c5996b151c25ea57b4d1445002eb6f1f1f06ab87db592ee",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/render-cameras.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "render_preview.py",
+      "resolved": "render_preview.py",
+      "expected": "597475fe3f829854162a714a5f98e1b6bd8a73a66ff7c1e2d119a8432d67ecbc",
+      "actual": "597475fe3f829854162a714a5f98e1b6bd8a73a66ff7c1e2d119a8432d67ecbc",
+      "match": true,
+      "preserved_work_path": "render_preview.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "render_review.py",
+      "resolved": "render_review.py",
+      "expected": "4dfd0d1860810cff1b76a24d1805afd14e506e6f1b0c966d12c7dd27b62b97b1",
+      "actual": "4dfd0d1860810cff1b76a24d1805afd14e506e6f1b0c966d12c7dd27b62b97b1",
+      "match": true,
+      "preserved_work_path": "qa/mullion-front-previous/render_review.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "reproducibility.json",
+      "resolved": "reproducibility.json",
+      "expected": "57073d7c33de6e22448a25e0908d67c8d1e53ac021ed44daf508ba148a13c014",
+      "actual": "57073d7c33de6e22448a25e0908d67c8d1e53ac021ed44daf508ba148a13c014",
+      "match": true,
+      "preserved_work_path": "reproducibility.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "requirements.txt",
+      "resolved": "requirements.txt",
+      "expected": "91fcab8acc9c8335624800586c08c7624199896b3445fdd6842b323c60b948b8",
+      "actual": "91fcab8acc9c8335624800586c08c7624199896b3445fdd6842b323c60b948b8",
+      "match": true,
+      "preserved_work_path": "requirements.txt"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "run_checks.py",
+      "resolved": "run_checks.py",
+      "expected": "cce55163f490b35b785baf462a209096cf3dab874c9126ae27e48efb0b80ff33",
+      "actual": "cce55163f490b35b785baf462a209096cf3dab874c9126ae27e48efb0b80ff33",
+      "match": true,
+      "preserved_work_path": "run_checks.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "scene.blend",
+      "resolved": "scene.blend",
+      "expected": "50df27437d9e69869131feb7bd2d7e9c6a596d217351b3c17792dacc23e17a3f",
+      "actual": "50df27437d9e69869131feb7bd2d7e9c6a596d217351b3c17792dacc23e17a3f",
+      "match": true,
+      "preserved_work_path": "scene.blend"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "sources.json",
+      "resolved": "sources.json",
+      "expected": "0e57bec61a26742b6225fec028a09eeb3d0c8489089918890967aed790b59145",
+      "actual": "0e57bec61a26742b6225fec028a09eeb3d0c8489089918890967aed790b59145",
+      "match": true,
+      "preserved_work_path": "sources.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "strict_exact_source_intervals.cpp",
+      "resolved": "strict_exact_source_intervals.cpp",
+      "expected": "253de693c025c52ac0f9fa8d3bf7057a80edaf800e10ec137db732e395592a47",
+      "actual": "253de693c025c52ac0f9fa8d3bf7057a80edaf800e10ec137db732e395592a47",
+      "match": true,
+      "preserved_work_path": "strict_exact_source_intervals.cpp"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "validate_model.py",
+      "resolved": "validate_model.py",
+      "expected": "0e82a68349d7624ab07cf237e516e21b69979ad02b446cca41971626172eeee3",
+      "actual": "0e82a68349d7624ab07cf237e516e21b69979ad02b446cca41971626172eeee3",
+      "match": true,
+      "preserved_work_path": "validate_model.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "validation.json",
+      "resolved": "validation.json",
+      "expected": "85af224fb0f558ef860b2f97e4086a25322cf156defbd6639f874c31bc682c74",
+      "actual": "85af224fb0f558ef860b2f97e4086a25322cf156defbd6639f874c31bc682c74",
+      "match": true,
+      "preserved_work_path": "validation.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "validator-provenance.json",
+      "resolved": "validator-provenance.json",
+      "expected": "8310dc90d1dec502b95aecf264fbc0bf0e3b8ee8d5eff1ed0af63043f9e69e63",
+      "actual": "8310dc90d1dec502b95aecf264fbc0bf0e3b8ee8d5eff1ed0af63043f9e69e63",
+      "match": true,
+      "preserved_work_path": "validator-provenance.json"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "verify_color_geometry.py",
+      "resolved": "verify_color_geometry.py",
+      "expected": "06656481ffdd3fcd097ef36f1bc3c0f36b3dd5c725dd74aa0ee91f17538e6853",
+      "actual": "06656481ffdd3fcd097ef36f1bc3c0f36b3dd5c725dd74aa0ee91f17538e6853",
+      "match": true,
+      "preserved_work_path": "verify_color_geometry.py"
+    },
+    {
+      "checksum": "SHA256SUMS",
+      "entry": "winding_parallel.cpp",
+      "resolved": "winding_parallel.cpp",
+      "expected": "ffa597026b3770c57b6f5aa93440662658694672a137ca0d5f086999abaa46ec",
+      "actual": "ffa597026b3770c57b6f5aa93440662658694672a137ca0d5f086999abaa46ec",
+      "match": true,
+      "preserved_work_path": "winding_parallel.cpp"
+    }
+  ],
+  "scope": "Original90 baseline hashes, not current modified-root claims. Exact preserved paths below."
+}

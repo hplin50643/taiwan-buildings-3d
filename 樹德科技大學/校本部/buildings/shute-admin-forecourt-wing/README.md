@@ -69,3 +69,9 @@ run_checks.py 對個別原始法向診斷的預期退出碼為 1，並保留其 
 ## 來源
 
 核心來源為[校方／教育部期末報告](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/17377/accab4cb-8092-4855-9d38-65f37b5a9f0f.pdf)印刷頁 12 空照，以及 [104 行政大樓近景](https://guide.104.com.tw/backend/media/origin/school/703.jpg)。報告 PDF metadata 建立日為 2025-04-02；兩張照片的實際攝影日期均未提供，不能稱為 2026 現況測繪。完整來源、支持特徵與缺口見 [sources.json](sources.json)。第三方照片與 PDF 不包含在模型包內。
+
+
+## 四條上層帶窗既有豎框前表面修色 v3
+依原生成器已明示backed mullions的40個完整前表面有限共面域，將80三角面由玫瑰牆材1改為既有銀灰金屬材6。全頂點核y=-17.04及原x柱中心16+4.3k/四窗段界，不切新界或造框；側面、端面、return窗、遮陽板及其他混域原樣保留，不聲稱全部框面已重配色。原框數/寬仍是近似，不提高測繪可信度。其餘5654面、8材值、座標/transform、STL/scene/previews與原v2格架背50面修正均不變。
+本輪worker直接取得與舊登錄SHA一致的104前照JPEG並實看；獨審另次URL回HTML，故記錄回應不穩定，不宣稱網址一直回相同照片。合法歷史原幅亦同SHA；照片可見四條窗帶淺銀灰豎框，非牆面粉褐。官方航拍沿用已保存且SHA一致的抽圖並實看，未重下載整份PDF；航拍只支持建築身分/整體，不用小像素推斷框色。來源日期未知，不能當現況。原appearance-sources歷史保留，現次依MULLION-FRONT-SOURCE-QA.json；照片私用不公開。
+原91blob與root90條SHA256SUMS全部吻合，無歷史例外；BASELINE-CHECKSUM-AUDIT.json列原expected/actual與精確保存路徑。7原生900×800圖與2原基線同相機比較寫入新v3，不覆寫v2歷史。原1977個短法向段、最短0.01331mm及3方向旗標未修，不稱全面壁厚通過或可免支撐試印。

@@ -88,9 +88,22 @@ for p in mesh.polygons:
   change_reasons[str(p.index)]={'family':'roof_lattice_complete_back_faces','material':4,'support':'all vertices on y=25 and inside original screen x[-63,58], z[77.5,91.5]; zero positive-area overlap with original apertures','basis':'Original concrete grille component continuity, supported categorically by source photographs. Exact hidden rear face color is inferred, not directly resolved.'}
 assert len(changed_faces)==50
 
+# Forty complete original backed-mullion frontal domains, no new frames.
+continuation_baseline=list(indices)
+mullion_front_ids=[708, 709, 714, 715, 720, 721, 726, 727, 734, 735, 738, 741, 744, 745, 750, 751, 756, 757, 762, 763, 845, 853, 857, 865, 868, 877, 881, 889, 897, 902, 904, 914, 917, 922, 929, 937, 940, 949, 953, 961, 1270, 1271, 1276, 1277, 1282, 1283, 1288, 1289, 1296, 1297, 1300, 1303, 1306, 1307, 1312, 1313, 1318, 1319, 1324, 1325, 1407, 1408, 1419, 1421, 1431, 1433, 1443, 1444, 1459, 1461, 1466, 1474, 1479, 1480, 1491, 1493, 1503, 1505, 1515, 1516]
+assert all(indices[i]==1 for i in mullion_front_ids)
+for i in mullion_front_ids:
+ p=mesh.polygons[i]
+ assert p.normal.y < -.999
+ for vi in p.vertices:
+  a=mesh.vertices[vi].co
+  assert abs(a.y+17.04)<.001
+  assert any(abs(a.x-(16+4.3*k))<=.471 for k in range(10))
+  assert any(lo-.001<=a.z<=hi+.001 for lo,hi in [(50.6,52.5),(54.05,57),(65.6,67.5),(69.05,72)])
+ p.material_index=6;indices[i]=6
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Original geometry and palette preserved; complete rear surfaces of existing roof lattice use concrete continuity; artificial rear cuts remain neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-full-face-continuity';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.device="CPU";scene.cycles.use_denoising=False;scene.render.engine="CYCLES";scene.render.threads_mode="FIXED";scene.render.threads=1;scene.render.resolution_x=900;scene.render.resolution_y=800;scene.render.resolution_percentage=100;scene.render.use_stamp=False
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-mullion-fronts';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.device="CPU";scene.cycles.use_denoising=False;scene.render.engine="CYCLES";scene.render.threads_mode="FIXED";scene.render.threads=1;scene.render.resolution_x=900;scene.render.resolution_y=800;scene.render.resolution_percentage=100;scene.render.use_stamp=False
 scene.render.filepath='//appearance/front.png'
 for text in list(bpy.data.texts):bpy.data.texts.remove(text)
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
@@ -108,7 +121,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-full-face-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'changed_faces':changed_faces,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Existing roof lattice back faces use qualified same-component concrete continuity. Hidden face color inferred, not directly measured. Artificial rear cuts, main roof and base remain neutral','No actual trial print; original small-feature QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-mullion-fronts','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'original_face_material_indices':original_indices,'prior_v2_changed_faces':changed_faces,'mullion_front_changed_faces':mullion_front_ids,'continuation_baseline_face_material_indices':continuation_baseline,'change_reasons':change_reasons,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Existing roof lattice back faces use qualified same-component concrete continuity. Hidden face color inferred, not directly measured. Artificial rear cuts, main roof and base remain neutral','No actual trial print; original small-feature QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((165,-265,165),(0,-6,45),205),'rear':((-165,265,165),(0,-6,45),205),'elevation':((0,-320,52),(0,0,52),180),'source-angle':((170,-290,90),(0,-6,45),205),'left':((-320,0,135),(0,-7.5,52),205),'right':((320,0,135),(0,-7.5,52),205),'top':((0,-7.5,360),(0,-7.5,0),180)}
 out=R/'appearance';out.mkdir(exist_ok=True)
