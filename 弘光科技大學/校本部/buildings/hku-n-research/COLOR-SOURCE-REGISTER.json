@@ -1,31 +1,43 @@
 {
-  "status": "SOURCE_GO_BOUNDED_PARTIAL",
-  "building": "Hungkuang N Research",
-  "source_go_sha256": "c1a17e8069e0a725977118dffe62f010304adc9666f06789b6df3326b5cf850b",
-  "independent_review_sha256": "b1249d6ce23626e2ce8fa04e541ce02ba98fb5a683e541ec9abd0862ce7750bb",
-  "sources": [
-    {
-      "name": "contractor-exterior.jpg",
-      "sha256": "ce07b453ea182b49aacff217f3dd362bf37a489abdf2410288c2ebd176255798"
-    }
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "building": "弘光 N 研究大樓",
+  "proposed_domain": {
+    "ids": [
+      6959,
+      6956
+    ],
+    "bounds": [
+      [
+        -67.5,
+        5.0,
+        77.0
+      ],
+      [
+        24.71781349182129,
+        5.0,
+        79.0
+      ]
+    ],
+    "materials": [
+      1
+    ]
+  },
+  "original_counts": [
+    12,
+    7058
   ],
-  "sources_private": true,
-  "original_photographs_not_distributed": true,
-  "partial_color_incomplete": true,
-  "fully_colored_exterior": false,
-  "count_delta": 0,
-  "geometry_unchanged": true,
-  "source_dates": "Capture unknown;project2004–2005 and URL180524 not capture dates;not2026",
-  "allowed": [
-    "Highest complete balcony front, twelve original triangles pale gray"
+  "proposed_counts": [
+    14,
+    7056
   ],
-  "unknown_neutral": [
-    "All three lower balcony full connected front components remain neutral: left open railing and right white solid material lack matching original boundary. No right-half triangle selection.",
-    "Highest balcony top, underside, side returns and slot interior are not colored from front evidence.",
-    "Main brick walls and window bands mix structural trim, glass and spandrels; neutral.",
-    "Curved glazed tower and low glass entrance are opaque simplified proxies; do not claim blue transparent glass.",
-    "Garage front bears signage and mixed cladding; neutral.",
-    "Rear/unknown geometry, roofs, ground, adjacent D building and sculpture are excluded."
+  "triangles": 7070,
+  "material": "existing palegray index0 #DEDDD3 nominal family only",
+  "limits": [
+    "Original contractor photograph reinspection, not new capture.",
+    "Highest long left roof front thin fascia only; original 95x34x2 proxy not surveyed.",
+    "Not top, bottom, full-depth returns, roof railing, neighboring D, curved glazed tower or lower mixed balconies.",
+    "Right end locally occluded by foreground sculpture; bounded same-fascia continuity inference, not every-pixel directly evidenced."
   ],
-  "private_source_backup": "Sources retained privately; no raw images or private identifiers distributed."
+  "source_sha256": "ce07b453ea182b49aacff217f3dd362bf37a489abdf2410288c2ebd176255798",
+  "historical_source_register": "qa/roof-front-previous/COLOR-SOURCE-REGISTER.json"
 }

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "Bounded left roof thin front edge update, not full color or geometry certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 7070,
+  "original_color_faces": 12,
+  "new_color_faces": 2,
+  "colored_faces": 14,
+  "unknown_neutral_faces": 7056,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 0,
+  "current_mixed_connected_domains": 0,
+  "current_independent_review": "ROOF-FRONT-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only2original triangles[6956,6959]/1whole domain of highest left-wing roof thin front edge y5,z77..79 use existing gray family. Original contractor2048x1536 photograph native reinspection distinguishes thin front from high parapet above and dark soffit below. Right end partly obscured by sculpture uses explicit same-band limited continuity inference, not full per-pixel proof. No balcony,roof top,underside,34deepreturns or other components extended. Original95x34x2roofbox and clipped face are coarse proxies not measured geometry. Original7070triangles/2palette entries/all other indices unchanged.",
+    "Source photo private, not official university source or new capture; capturedate unknown, no2026condition or calibrated paint claim. Original geometry and source limits remain; no full color/printability certification or physical print."
+  ],
+  "checked_at": "2026-11-12T18:18:29.047983+00:00",
+  "original_STL_sha256": "b6f7a1f79f82f2c535ba629446a1482941f4f55900b20e7c182f683804c7daec",
+  "color_mesh_sha256": "655f4bbcb48066a7a79f3f45568af60699ba3fcde8e244aefd2c1cf5b73bc4af",
+  "images_sha256": {
+    "preview.png": "ed791e21b50dd3a9303e41f9c037dcc59f72f09afed657e23594b53e640c11be",
+    "rear.png": "bcfe072eb499f06539e51c45c365b8f6fd7108b96c07a72f8b8a382ebd8d985b",
+    "front.png": "2615405dcb2e4fe25fda93c9e46dded07934ed3d0ffe2e88deea493d1e183d09",
+    "back.png": "0358172ce5e887085b688cf28f637925643939e0d3a5deba4b52da464a4477ab",
+    "west.png": "b087511b3556b2612dcfaa963adf9bf68f73088d10fc30fb0b891b36fc36bfbc",
+    "east.png": "036595953c2079c242ec9b9929a0d343ec6e15b906d390325bb3a2f380d71a61",
+    "top.png": "e02243764bdcf28f8ddd6e352afd9734a8470554c9de9cbcda1f8712ff0b9023",
+    "entry-detail.png": "2419f1074a81ee31f9d5df670048a2fedf2f35a75710f6f9cbd86b854f3de6aa",
+    "facade-detail.png": "df206ff1d6f892b587ae5359a1a2c422a08c63f5ed2912ae9d143798ce8cfe22",
+    "roof-detail.png": "16cd8ad0a013da93009dbbe19b2c98ba5002f6f127804020aef1be4e6697f7c0"
+  }
+}

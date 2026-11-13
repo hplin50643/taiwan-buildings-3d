@@ -1,0 +1,387 @@
+{
+  "scope": "Bounded roof-front candidate, not yet published.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "files": [
+    {
+      "path": "CHECKSUM-SCOPE.md",
+      "size": 240,
+      "sha256": "266d393dad9e18d29980229f299a45aa381cee09e62dd1ac7cd358f111bd9810"
+    },
+    {
+      "path": "COLOR-ASSIGNMENT-QA.json",
+      "size": 227,
+      "sha256": "50a0c2cee1ece8be38c20f2aee96b5c5e004a911de8ebf3c82ba3847280e41ba"
+    },
+    {
+      "path": "COLOR-FORMAT-GEOMETRY-QA.json",
+      "size": 1294,
+      "sha256": "e878ce8f088bf1e078ca744c2d7ddd94cbb1ce2915e3883a32604dd46bdd821d"
+    },
+    {
+      "path": "COLOR-SOURCE-REGISTER.json",
+      "size": 1148,
+      "sha256": "faca2bc44c76782f1861e34a963a2347c6ab89028dabeb12ecf4cccd3ef1711d"
+    },
+    {
+      "path": "DELIVERY-QA.json",
+      "size": 2654,
+      "sha256": "02f4bb95321b948907581193679d35c1eace96b902547a6feff5d73d1eb5adb3"
+    },
+    {
+      "path": "FRAMING-QA.json",
+      "size": 1018,
+      "sha256": "c664980b53c8c75248c871dd27eb0c56f4c9c7dcf93b759e16f9474a77a0021b"
+    },
+    {
+      "path": "FREEZE-MANIFEST.json",
+      "size": 7494,
+      "sha256": "513424a090e6cc4c03fdf7a56c30d049558a079a540759f80d0c243591f8c619"
+    },
+    {
+      "path": "INDEPENDENT-COLOR-VISUAL-QA.json",
+      "size": 5568,
+      "sha256": "83452169aab6dfa2633f392d4e38e7248fbbc4cb71e9ed0d1aee9be5307f5979"
+    },
+    {
+      "path": "NO-TEXT-QA.json",
+      "size": 1260,
+      "sha256": "ed0851472ee9808b4699aa967b919e87608db43030aa3f98fc710f845e9a965f"
+    },
+    {
+      "path": "ORIGINAL-MONOCHROME-README.md",
+      "size": 2793,
+      "sha256": "a97d1ed56fe31783e31fc60176769c9f94efa353056143b1ee830fe1751f2be4"
+    },
+    {
+      "path": "README.md",
+      "size": 4716,
+      "sha256": "025dad4ab388138113c896e4ed9abc49a036e0929ac5f9154d9d02b055e30e46"
+    },
+    {
+      "path": "README.zh-TW.md",
+      "size": 4716,
+      "sha256": "025dad4ab388138113c896e4ed9abc49a036e0929ac5f9154d9d02b055e30e46"
+    },
+    {
+      "path": "ROOF-FRONT-DELIVERY-QA.json",
+      "size": 2654,
+      "sha256": "02f4bb95321b948907581193679d35c1eace96b902547a6feff5d73d1eb5adb3"
+    },
+    {
+      "path": "ROOF-FRONT-INDEPENDENT-QA.json",
+      "size": 4927,
+      "sha256": "40bbc8968544750582f3aed88be217a59e30855fe2399f943cc1f0f85ca70cd6"
+    },
+    {
+      "path": "ROOF-FRONT-SCENE-QA.json",
+      "size": 298,
+      "sha256": "aeb3d3c2a2ecca4afced480a14dcb91bf33ddf1fe80ce922cf3a15e3f8833abe"
+    },
+    {
+      "path": "ROOF-FRONT-SOURCE-QA.json",
+      "size": 1148,
+      "sha256": "faca2bc44c76782f1861e34a963a2347c6ab89028dabeb12ecf4cccd3ef1711d"
+    },
+    {
+      "path": "SCENE-QA.json",
+      "size": 502,
+      "sha256": "9ae6550ffe881ae674f836355a6e4bf6759e19cd8d04a144a0747b2ff40e8a2e"
+    },
+    {
+      "path": "SHA256SUMS",
+      "size": 6675,
+      "sha256": "16fdf5ee096da6a6b7bf1dc3c389568f89524a97f8cbe67906901d7a3367db33"
+    },
+    {
+      "path": "appearance-materials.json",
+      "size": 1217,
+      "sha256": "9994df5d44d7691e587cf6fd90ff4f72c4bf39f3d020b34d283abe3691ea2d09"
+    },
+    {
+      "path": "appearance.3mf",
+      "size": 62255,
+      "sha256": "c36053bbcfd8ee430ce0572141cadc2038ac9f670a589cf315e192e98f2896fa"
+    },
+    {
+      "path": "back.png",
+      "size": 855956,
+      "sha256": "0358172ce5e887085b688cf28f637925643939e0d3a5deba4b52da464a4477ab"
+    },
+    {
+      "path": "build_model.py",
+      "size": 3885,
+      "sha256": "52d0254ac0d385b6592da5ce88dd1d709a4ec866f0d6fc94ed112cbf9b500abc"
+    },
+    {
+      "path": "check_valid_sections.py",
+      "size": 2137,
+      "sha256": "f1f8a2fa224ecfec3399a49ea393b21d236cb0ffea5e02e7df210c6ddd907c70"
+    },
+    {
+      "path": "color-mesh.npz",
+      "size": 42997,
+      "sha256": "655f4bbcb48066a7a79f3f45568af60699ba3fcde8e244aefd2c1cf5b73bc4af"
+    },
+    {
+      "path": "colorize_model.py",
+      "size": 3247,
+      "sha256": "c552506e0d55eeb57f72270ca9c5d2654992cd7462f7e4d17ef08229fbc6d56c"
+    },
+    {
+      "path": "east.png",
+      "size": 725669,
+      "sha256": "036595953c2079c242ec9b9929a0d343ec6e15b906d390325bb3a2f380d71a61"
+    },
+    {
+      "path": "entry-detail.png",
+      "size": 1596039,
+      "sha256": "2419f1074a81ee31f9d5df670048a2fedf2f35a75710f6f9cbd86b854f3de6aa"
+    },
+    {
+      "path": "export_appearance.py",
+      "size": 1736,
+      "sha256": "8ccc72accb14e2fe6e90f98851e9f595d32bde571bd2729776149fb577549281"
+    },
+    {
+      "path": "facade-detail.png",
+      "size": 1389134,
+      "sha256": "df206ff1d6f892b587ae5359a1a2c422a08c63f5ed2912ae9d143798ce8cfe22"
+    },
+    {
+      "path": "front.png",
+      "size": 921290,
+      "sha256": "2615405dcb2e4fe25fda93c9e46dded07934ed3d0ffe2e88deea493d1e183d09"
+    },
+    {
+      "path": "model.stl",
+      "size": 353584,
+      "sha256": "b6f7a1f79f82f2c535ba629446a1482941f4f55900b20e7c182f683804c7daec"
+    },
+    {
+      "path": "palette.json",
+      "size": 148,
+      "sha256": "be86d29a9a023f0e6dbf39581f2f39e69f97854e439d885502e7da8cd62d2968"
+    },
+    {
+      "path": "preview.png",
+      "size": 805641,
+      "sha256": "ed791e21b50dd3a9303e41f9c037dcc59f72f09afed657e23594b53e640c11be"
+    },
+    {
+      "path": "previews/elevation.png",
+      "size": 759236,
+      "sha256": "5c9ead97db4b2ccddfce0eed56d85ec51ad43c2fc6b692c6435ff91589006878"
+    },
+    {
+      "path": "previews/front.png",
+      "size": 930864,
+      "sha256": "3d795e94c12dcc59043dcd6e60bf41fdb90db1244ebe17746d61a2eb08ffc37b"
+    },
+    {
+      "path": "previews/rear.png",
+      "size": 840388,
+      "sha256": "ba8162735bc287478a812aaaf4e3ff4f107f4a6b15021b0b35bb44ae0120cfb8"
+    },
+    {
+      "path": "previews/top.png",
+      "size": 762561,
+      "sha256": "7b399c94d6b042da47692bade835deb7d33dd05d5d631157eec80fadc2e6fb3a"
+    },
+    {
+      "path": "qa/roof-front-previous/COLOR-ASSIGNMENT-QA.json",
+      "size": 227,
+      "sha256": "1160cd943b80c336349a91005e7113b6a5ec12570f3587a0c0b34ea37b0969f9"
+    },
+    {
+      "path": "qa/roof-front-previous/COLOR-FORMAT-GEOMETRY-QA.json",
+      "size": 1253,
+      "sha256": "0598bc5e196bddb6691962f95813cf3d4b369224f1ff89fbe31ae446fd917af4"
+    },
+    {
+      "path": "qa/roof-front-previous/COLOR-SOURCE-REGISTER.json",
+      "size": 1615,
+      "sha256": "df3ae5790c537bf791e8f8507bec9db765a658f4be8ce49e43e7a008654d01d3"
+    },
+    {
+      "path": "qa/roof-front-previous/DELIVERY-QA.json",
+      "size": 2696,
+      "sha256": "101a8b58e0cb421815a12f91688897693e62f06814d48da808521ae4db7c6074"
+    },
+    {
+      "path": "qa/roof-front-previous/FRAMING-QA.json",
+      "size": 1018,
+      "sha256": "2fa5f3f3b14024ac488e81fa0536386f8652f003ddca6d5fbcfc7f5f9e72aef3"
+    },
+    {
+      "path": "qa/roof-front-previous/FREEZE-MANIFEST.json",
+      "size": 7494,
+      "sha256": "513424a090e6cc4c03fdf7a56c30d049558a079a540759f80d0c243591f8c619"
+    },
+    {
+      "path": "qa/roof-front-previous/INDEPENDENT-COLOR-VISUAL-QA.json",
+      "size": 5568,
+      "sha256": "83452169aab6dfa2633f392d4e38e7248fbbc4cb71e9ed0d1aee9be5307f5979"
+    },
+    {
+      "path": "qa/roof-front-previous/NO-TEXT-QA.json",
+      "size": 1639,
+      "sha256": "010e72e933d87c2370e1b20f7e73692cd4a8d60590cedf689e8e76cb81250e95"
+    },
+    {
+      "path": "qa/roof-front-previous/ORIGINAL-MONOCHROME-README.md",
+      "size": 2793,
+      "sha256": "a97d1ed56fe31783e31fc60176769c9f94efa353056143b1ee830fe1751f2be4"
+    },
+    {
+      "path": "qa/roof-front-previous/README.md",
+      "size": 3736,
+      "sha256": "db06644e7c7e525f19b0f94f6ecbdcc48183de3041bd264a3145d81456af5d55"
+    },
+    {
+      "path": "qa/roof-front-previous/README.zh-TW.md",
+      "size": 3736,
+      "sha256": "db06644e7c7e525f19b0f94f6ecbdcc48183de3041bd264a3145d81456af5d55"
+    },
+    {
+      "path": "qa/roof-front-previous/SCENE-QA.json",
+      "size": 502,
+      "sha256": "d1ebbe1fbfdd792d2bf4caa5e88f59912e234f566aff8440798e8d3155244db4"
+    },
+    {
+      "path": "qa/roof-front-previous/SHA256SUMS",
+      "size": 3836,
+      "sha256": "628657921a39e2c2835c8530a1707ae3eb76a0846a0d05a992c8e6518861e7f1"
+    },
+    {
+      "path": "qa/roof-front-previous/appearance-materials.json",
+      "size": 1182,
+      "sha256": "6e30537f22888ab8ca76fd87ddcd2b5185a0bab1a087f4ef7a8cc05d43fe7cb0"
+    },
+    {
+      "path": "qa/roof-front-previous/colorize_model.py",
+      "size": 2735,
+      "sha256": "4e4bb5973bda88694a30895581dc356219d443121b361ecec08c7f20bca704d0"
+    },
+    {
+      "path": "qa/roof-front-previous/palette.json",
+      "size": 148,
+      "sha256": "be86d29a9a023f0e6dbf39581f2f39e69f97854e439d885502e7da8cd62d2968"
+    },
+    {
+      "path": "qa/roof-front-previous/sources.json",
+      "size": 1549,
+      "sha256": "9df8acea7f8b6dfc4d7847a2b720fbe09ca68128f489f46c9eeedf3e40726f07"
+    },
+    {
+      "path": "qa/roof-front-previous/thin-feature-check.json",
+      "size": 16756,
+      "sha256": "1d81f9c7907e7326871eb8d6bd71551c63fb461c8c2f8e31aa29bd596f593fdb"
+    },
+    {
+      "path": "qa/roof-front-previous/valid-sections.json",
+      "size": 44450,
+      "sha256": "70a52c7f13d8c5d7cd9d1dc1d95169850d0576839e54b9cb72e93b198b331ca0"
+    },
+    {
+      "path": "qa/roof-front-previous/validate_color.py",
+      "size": 3476,
+      "sha256": "47c03d9323f7f8454dc873f6a701f3ae45974ed413d42b491ce0412fc403b198"
+    },
+    {
+      "path": "qa/roof-front-previous/validation.json",
+      "size": 1514,
+      "sha256": "244f193feb3622f27f893045b240e3d3b7228d0f845ec65d72d8e6ad5c9e812b"
+    },
+    {
+      "path": "qa/roof-front-previous/verify_color_scene.py",
+      "size": 2086,
+      "sha256": "20f5978b203dde300d78fa6994541b30c460ef3aafd8e6d702f610092f029462"
+    },
+    {
+      "path": "rear.png",
+      "size": 737941,
+      "sha256": "bcfe072eb499f06539e51c45c365b8f6fd7108b96c07a72f8b8a382ebd8d985b"
+    },
+    {
+      "path": "render_color.py",
+      "size": 7259,
+      "sha256": "d0131066669357bebcd69b276eccbb8566aece2aa3c9be1cd6be538cf459b991"
+    },
+    {
+      "path": "render_preview.py",
+      "size": 3221,
+      "sha256": "e4081657a8395fa88887cb4884bdcc2c87359082fe19bab28e568bed95ba355b"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 61,
+      "sha256": "df04896d2eca85c35c3cbc39502f30edcad2a6f436e63e4ffe6702748bf5658b"
+    },
+    {
+      "path": "roof-detail.png",
+      "size": 1311592,
+      "sha256": "16cd8ad0a013da93009dbbe19b2c98ba5002f6f127804020aef1be4e6697f7c0"
+    },
+    {
+      "path": "scene.blend",
+      "size": 222916,
+      "sha256": "0662f6af4f73d884393ee99e6855f6f6c82c390130ea87bcb2a879753d77b24b"
+    },
+    {
+      "path": "sources.json",
+      "size": 1549,
+      "sha256": "9df8acea7f8b6dfc4d7847a2b720fbe09ca68128f489f46c9eeedf3e40726f07"
+    },
+    {
+      "path": "thin-feature-check.json",
+      "size": 16756,
+      "sha256": "1d81f9c7907e7326871eb8d6bd71551c63fb461c8c2f8e31aa29bd596f593fdb"
+    },
+    {
+      "path": "thin_canonical_v2.py",
+      "size": 2553,
+      "sha256": "99c345827983de6859022b957b67255c5cf8948a9034d4b9c140de01f1abffd1"
+    },
+    {
+      "path": "top.png",
+      "size": 1060974,
+      "sha256": "e02243764bdcf28f8ddd6e352afd9734a8470554c9de9cbcda1f8712ff0b9023"
+    },
+    {
+      "path": "valid-sections.json",
+      "size": 44450,
+      "sha256": "70a52c7f13d8c5d7cd9d1dc1d95169850d0576839e54b9cb72e93b198b331ca0"
+    },
+    {
+      "path": "validate_color.py",
+      "size": 3781,
+      "sha256": "14b1ca4bc0fb2e13835b5946a51d31da11d7a06db7079c75ac300ec2bfb06c3d"
+    },
+    {
+      "path": "validate_model.py",
+      "size": 5222,
+      "sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95"
+    },
+    {
+      "path": "validation.json",
+      "size": 1514,
+      "sha256": "244f193feb3622f27f893045b240e3d3b7228d0f845ec65d72d8e6ad5c9e812b"
+    },
+    {
+      "path": "verify_color_scene.py",
+      "size": 2086,
+      "sha256": "20f5978b203dde300d78fa6994541b30c460ef3aafd8e6d702f610092f029462"
+    },
+    {
+      "path": "west.png",
+      "size": 771806,
+      "sha256": "b087511b3556b2612dcfaa963adf9bf68f73088d10fc30fb0b891b36fc36bfbc"
+    }
+  ],
+  "excluded": [
+    "source photographs",
+    "private comparison sheets",
+    "scene.blend1",
+    "private logs"
+  ]
+}

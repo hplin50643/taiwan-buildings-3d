@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "reviewer": "Independent source/domain/model reviewer, not builder",
+  "source_review": "second-source-domain-review.json",
+  "numeric_review": "independent-numeric-review.json",
+  "scene_review": "independent-scene-review.json",
+  "rebuild_review": "independent-rebuild-review.json",
+  "triangles": 7070,
+  "added_faces": [
+    6956,
+    6959
+  ],
+  "complete_new_domains": 1,
+  "original_colored_faces": 12,
+  "colored_faces": 14,
+  "neutral_faces": 7056,
+  "palette_entries_unchanged": 2,
+  "mixed_connected_domains_before": 0,
+  "mixed_connected_domains_after": 0,
+  "actual_visual_review": {
+    "all_ten": true,
+    "contact_sheet": "hku-research-ten-views.jpg",
+    "full_size": [
+      "entry-detail.png",
+      "facade-detail.png",
+      "roof-detail.png"
+    ],
+    "specific_check": "Highest left long cap front band visible as bounded pale strip; roof top, sides, circular tower and other geometry remain neutral. Original highest balcony color retained, lower balconies not extended."
+  },
+  "source_and_geometry_limits": [
+    "Original contractor2048x1536 photograph exact hash reinspection, not new capture or2026 survey.",
+    "Thin front fascia distinct from raised parapet/railing and dark underside; foreground sculpture partly occludes right end, which is limited same-strip continuity inference.",
+    "Original95x34x2 cap and tower Boolean clipping are coarse geometry, not measured or photograph-certified thickness; no top/underside/full-depth return extension.",
+    "Existing palegray palette historical highest-balcony label retained without asserting identical calibrated material. Original12 colored and all other indices retained exactly. No original OBJ, none added."
+  ],
+  "model_and_3MF_verified": true,
+  "isolated_build_color_export_QA_checked": true,
+  "retained_isolated_outputs_independently_compared": true,
+  "scene_independently_reopened": true,
+  "scene_mesh_transforms_camera_lights_render_unchanged": true,
+  "source_pending_snapshot_unchanged": true,
+  "image_sha256": {
+    "preview.png": "ed791e21b50dd3a9303e41f9c037dcc59f72f09afed657e23594b53e640c11be",
+    "rear.png": "bcfe072eb499f06539e51c45c365b8f6fd7108b96c07a72f8b8a382ebd8d985b",
+    "front.png": "2615405dcb2e4fe25fda93c9e46dded07934ed3d0ffe2e88deea493d1e183d09",
+    "back.png": "0358172ce5e887085b688cf28f637925643939e0d3a5deba4b52da464a4477ab",
+    "west.png": "b087511b3556b2612dcfaa963adf9bf68f73088d10fc30fb0b891b36fc36bfbc",
+    "east.png": "036595953c2079c242ec9b9929a0d343ec6e15b906d390325bb3a2f380d71a61",
+    "top.png": "e02243764bdcf28f8ddd6e352afd9734a8470554c9de9cbcda1f8712ff0b9023",
+    "entry-detail.png": "2419f1074a81ee31f9d5df670048a2fedf2f35a75710f6f9cbd86b854f3de6aa",
+    "facade-detail.png": "df206ff1d6f892b587ae5359a1a2c422a08c63f5ed2912ae9d143798ce8cfe22",
+    "roof-detail.png": "16cd8ad0a013da93009dbbe19b2c98ba5002f6f127804020aef1be4e6697f7c0"
+  },
+  "file_sha256": {
+    "model.stl": "b6f7a1f79f82f2c535ba629446a1482941f4f55900b20e7c182f683804c7daec",
+    "build_model.py": "52d0254ac0d385b6592da5ce88dd1d709a4ec866f0d6fc94ed112cbf9b500abc",
+    "color-mesh.npz": "655f4bbcb48066a7a79f3f45568af60699ba3fcde8e244aefd2c1cf5b73bc4af",
+    "palette.json": "be86d29a9a023f0e6dbf39581f2f39e69f97854e439d885502e7da8cd62d2968",
+    "appearance.3mf": "c36053bbcfd8ee430ce0572141cadc2038ac9f670a589cf315e192e98f2896fa",
+    "appearance-materials.json": "9994df5d44d7691e587cf6fd90ff4f72c4bf39f3d020b34d283abe3691ea2d09",
+    "scene.blend": "0662f6af4f73d884393ee99e6855f6f6c82c390130ea87bcb2a879753d77b24b",
+    "colorize_model.py": "c552506e0d55eeb57f72270ca9c5d2654992cd7462f7e4d17ef08229fbc6d56c",
+    "export_appearance.py": "8ccc72accb14e2fe6e90f98851e9f595d32bde571bd2729776149fb577549281",
+    "validate_color.py": "14b1ca4bc0fb2e13835b5946a51d31da11d7a06db7079c75ac300ec2bfb06c3d",
+    "verify_color_scene.py": "20f5978b203dde300d78fa6994541b30c460ef3aafd8e6d702f610092f029462",
+    "render_color.py": "d0131066669357bebcd69b276eccbb8566aece2aa3c9be1cd6be538cf459b991",
+    "README.md": "025dad4ab388138113c896e4ed9abc49a036e0929ac5f9154d9d02b055e30e46",
+    "CHECKSUM-SCOPE.md": "266d393dad9e18d29980229f299a45aa381cee09e62dd1ac7cd358f111bd9810",
+    "COLOR-ASSIGNMENT-QA.json": "50a0c2cee1ece8be38c20f2aee96b5c5e004a911de8ebf3c82ba3847280e41ba",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "e878ce8f088bf1e078ca744c2d7ddd94cbb1ce2915e3883a32604dd46bdd821d",
+    "SCENE-QA.json": "9ae6550ffe881ae674f836355a6e4bf6759e19cd8d04a144a0747b2ff40e8a2e",
+    "ROOF-FRONT-SCENE-QA.json": "aeb3d3c2a2ecca4afced480a14dcb91bf33ddf1fe80ce922cf3a15e3f8833abe",
+    "ROOF-FRONT-SOURCE-QA.json": "faca2bc44c76782f1861e34a963a2347c6ab89028dabeb12ecf4cccd3ef1711d",
+    "COLOR-SOURCE-REGISTER.json": "faca2bc44c76782f1861e34a963a2347c6ab89028dabeb12ecf4cccd3ef1711d",
+    "README.zh-TW.md": "025dad4ab388138113c896e4ed9abc49a036e0929ac5f9154d9d02b055e30e46"
+  },
+  "no_blockers": true
+}

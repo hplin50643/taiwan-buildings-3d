@@ -1,0 +1,1 @@
+ROOF-FRONT：2原面新增，12→14色／7056中性／7070tri，0混域，原無OBJ。SOURCE pending固定階段快照；final獨審/DELIVERY另檔，精確相對路徑hash，不以manifest替代；歷史qa與舊FREEZE不作當次證據。
