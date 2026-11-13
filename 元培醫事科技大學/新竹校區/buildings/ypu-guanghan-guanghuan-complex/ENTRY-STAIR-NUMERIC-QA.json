@@ -1,0 +1,256 @@
+{
+  "status": "PASS",
+  "scope": "Limited appearance identity, not full engineering certification",
+  "triangles": 5028,
+  "vertices": 2488,
+  "complete_domains": 10,
+  "changed_faces": [
+    2996,
+    2997,
+    2998,
+    2999,
+    3000,
+    3010,
+    3011,
+    3012,
+    3013,
+    3014,
+    3019,
+    3025,
+    3026,
+    3027,
+    3028,
+    3029,
+    3034,
+    3035,
+    3037,
+    3052,
+    3053,
+    3055
+  ],
+  "old_material": 0,
+  "new_material": 5,
+  "original_five_palette_entries_preserved": true,
+  "other_5006_material_indices_unchanged": true,
+  "native_views_exact": {
+    "front": [
+      [
+        20,
+        260,
+        155
+      ],
+      [
+        0,
+        0,
+        16.85
+      ],
+      200
+    ],
+    "rear": [
+      [
+        -150,
+        -260,
+        100
+      ],
+      [
+        0,
+        0,
+        16.85
+      ],
+      200
+    ],
+    "elevation": [
+      [
+        0,
+        300,
+        16.85
+      ],
+      [
+        0,
+        0,
+        16.85
+      ],
+      200
+    ],
+    "source-angle": [
+      [
+        -170,
+        220,
+        170
+      ],
+      [
+        0,
+        0,
+        16.85
+      ],
+      200
+    ],
+    "left": [
+      [
+        -320,
+        0,
+        145
+      ],
+      [
+        0,
+        0,
+        16.85
+      ],
+      200
+    ],
+    "right": [
+      [
+        320,
+        0,
+        145
+      ],
+      [
+        0,
+        0,
+        16.85
+      ],
+      200
+    ],
+    "top": [
+      [
+        0,
+        0,
+        330
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      200
+    ]
+  },
+  "original_files_unchanged": [
+    "SHA256SUMS.txt",
+    "check_preview_rebuild.py",
+    "appearance-freeze.json",
+    "validate_model.py",
+    "check_layer_components.py",
+    "sources.json",
+    "plan-registration.json",
+    "independent-parity-contact-evidence.json",
+    "independent-original-warning-evidence.json",
+    "render_preview.py",
+    "check_raw_mesh.py",
+    "raw-mesh-check.json",
+    "independent-coplanar-axis-evidence.json",
+    "README.zh-TW.md",
+    "check_thin_features.py",
+    "requirements.txt",
+    "build_model.py",
+    "layer-component-check.json",
+    "thin-feature-check.json",
+    "preview-framing-check.json",
+    "independent-audit-summary.json",
+    "QA.md",
+    "validation.json",
+    "independent-four-post-evidence.json",
+    "scene.blend",
+    "preview-rebuild-check.json",
+    "model.stl",
+    "candidate-assumptions.json",
+    "appearance-review/color-visual-review.json",
+    "appearance-review/final-review-binding.json",
+    "appearance-review/output-geometry-review.json",
+    "appearance-review/material-plan.json",
+    "appearance-review/clean-rebuild-equality.json",
+    "appearance-review/clean-material-region-check.json",
+    "appearance-review/preservation-and-readme.json",
+    "appearance-review/material-region-check.json",
+    "appearance-review/clean-geometry-review.json",
+    "appearance-review/check_material_regions.py",
+    "appearance-review/geometry-visual-review.json",
+    "appearance-review/png-privacy.json",
+    "qa-dense/run_dense.py",
+    "qa-dense/convex-chain-bisector-evidence.json.gz",
+    "qa-dense/check_all_bisectors.py",
+    "qa-dense/convex-chain-bisector-evidence.portable.json",
+    "qa-dense/classify_nearplanar.py",
+    "qa-dense/diagnose.py",
+    "qa-dense/short-original.csv.gz",
+    "qa-dense/nearplanar-individual-short-review.json.original.gz",
+    "qa-dense/initial-summary.json",
+    "qa-dense/nearplanar-short-edge-classification.portable.json",
+    "qa-dense/dense-ray.cpp",
+    "qa-dense/control-diagnosis.json",
+    "qa-dense/nearplanar-ray-disagreements-strict.json",
+    "qa-dense/all-short-bisector-evidence.portable.json",
+    "qa-dense/portable-evidence-index.json",
+    "qa-dense/all-short-bisector-summary.json",
+    "qa-dense/nearplanar-individual-short-review.json",
+    "qa-dense/all-short-bisector-evidence.json.gz",
+    "qa-dense/README.md",
+    "qa-dense/all-original.csv.gz",
+    "qa-dense/control-flags.csv",
+    "qa-dense/input.json",
+    "qa-dense/check_corner_chains.py",
+    "qa-dense/nearplanar-short-edge-classification.json.gz",
+    "qa-dense/convex-chain-summary.json",
+    "appearance-review-v2/baseline-checksum-verification.json",
+    "appearance-review-v2/render-bindings.json",
+    "appearance-review-v2/original-front.png",
+    "appearance-review-v2/model-verification.json",
+    "appearance-review-v2/original-rear.png",
+    "appearance-review-v2/clean-rebuild-equality.json",
+    "appearance-review-v2/color-continuity-review.json",
+    "appearance-review-v2/material-value-verification.json",
+    "appearance-review-v2/source-read-records.json",
+    "appearance-review-v2/embedded-media-check.json",
+    "appearance-review-v2/boundary-continuity-audit.json",
+    "previews/front.png",
+    "previews/left.png",
+    "previews/right.png",
+    "previews/top.png",
+    "previews/rear.png",
+    "qa-roots/requirements.txt",
+    "qa-roots/README.md",
+    "qa-roots/PORTABLE-MANIFEST.json",
+    "qa-roots/scripts/original_geometry.py",
+    "qa-roots/scripts/replay_179_roots.py",
+    "qa-roots/scripts/replay_entry_junction.py",
+    "qa-roots/scripts/replay_warning_roots.py",
+    "qa-roots/evidence/original-polygon-loss-families.json",
+    "qa-roots/evidence/diagnostic-summary.json",
+    "qa-roots/evidence/representative-original-normal-rays.json",
+    "qa-roots/evidence/current-entry-junction-convex-corner.json",
+    "qa-roots/evidence/FINAL-AUTHOR-DIAGNOSTIC.json",
+    "qa-roots/evidence/current-179-root-evidence.json",
+    "qa-roots/evidence/backing-and-whole-component-roots.json",
+    "qa-roots/evidence/current-179-root-summary.json",
+    "qa-roots/evidence/root-section-connections.json"
+  ],
+  "isolated_rebuild": "STL byte-identical and all3MF members/material JSON exact; networkx3.5 installed for original trimesh component diagnostic, not geometry changes",
+  "baseline_checksum_entries_verified": [
+    109,
+    109
+  ],
+  "file_sha256": {
+    "build_model.py": "827d8a051167a52106eb9dc143a75c7d8053e168957713767a881d0018809211",
+    "build_appearance.py": "a1d7768b6506cf38c3ed5108d72585716086a7ac79d2c38f7db06cbd8c0137e9",
+    "model.stl": "f7ccaa9bbb042ec8880ad5f63faec349227a22116f6992f12c5f8bc81167c31a",
+    "scene.blend": "f434d2a134622e0e6364aff7789351fc0a18c714387177296a57d4d48ab37dc2",
+    "plan-registration.json": "6d77d0d88d690f4f5464cf5885e559bc98a09abedc6662548b5d5123c9cc0983",
+    "appearance.blend": "3b60b208563631418c24b4dd43464045acb79e90ca188dd9a9596a3237c3ad47",
+    "appearance.3mf": "3796ca8efccaf05d95fff61f493c1b42fee737bc4086dd49f3555f15eb72a427",
+    "appearance-materials.json": "773cb4e640b35cea50ce02f17cf024e1332cd3a28d4f774abd216f97774742a6",
+    "ENTRY-STAIR-SOURCE-QA.json": "0eec9d495872199cbce90767c4a22a0e2669880a8524b1bdfa04d913de4b8fea",
+    "BASELINE-CHECKSUM-AUDIT.json": "48cbb318e4eb94b25213cd1fe79185e0e6aff02d24a37b4e57de180d4556500f",
+    "CHECKSUM-SCOPE.md": "ae508c5b966ee57c5d9228afc67a00c3264bcbd59ab23b8e4e1b6cd35c43bb7f",
+    "APPEARANCE.md": "55945fb449220932416dcc696c619aeb59b8a13f76dd2d2abed96876ed59d68e",
+    "README.md": "1b5eca843780278768a86d9335bba1b66e4c805f072626f7d8b8862300e93999"
+  },
+  "image_sha256": {
+    "appearance/front.png": "889faec6b5d3552f3bb46eedc15ceaf230cd539ae1f5053500d031721174e453",
+    "appearance/rear.png": "b5a3bac36b869dc7e02960b6e5b5a4d8ba573eb445e84a2025851dcaef2c517a",
+    "appearance/elevation.png": "3f6c1ae8dd049ab4c31916dde3290824a2066d27dccfd85cccf49486cafe30ea",
+    "appearance/source-angle.png": "d8b5fb9d743a0573de73f125b3e6f260732217632ee5d15b3f3e9fa93a663b06",
+    "appearance/left.png": "2213e1c10d19b44fc374cac8beabdc2975346d48646e6607a4c6357167e52cb0",
+    "appearance/right.png": "5bf651184281bbc113f2b5f63975641b25f4c48507a514250dc3cf27508354e6",
+    "appearance/top.png": "f0d502995abdc5aff358d160dcf4bf9f8b054e02c34be4f8e4b4b53a0c3c5b96"
+  }
+}

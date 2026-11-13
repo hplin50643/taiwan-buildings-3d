@@ -16,6 +16,7 @@ def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Official2022 sustainability PDF45/64; photo dates differ/unknown, only limited source-visible color.
 palette=[('Unknown outside roofs base slope','#A7AAA5',.86),('Pale grey beige observed inward walls','#C0BCB0',.85),('Grey green observed inner window proxies','#6A8580',.6),('Dark blue green existing convex entry window proxies','#4B6C70',.55),('Muted pink beige existing pergola','#B6A399',.86)]
+palette.append(('Approximate grey entrance stair proxy not calibrated stone','#969B98',.88))
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
@@ -98,9 +99,15 @@ for p in mesh.polygons:
     if any(strip(p,a,b,lo,hi,off) for off in [-.34,.34]):i=2;reason='inferred_L_outer_existing_window_back'
  if i!=original_indices[-1]:changed_faces.append(p.index);change_reasons[str(p.index)]=reason
  p.material_index=i;indices.append(i)
+# Complete finite original compact entry tread/riser domains only.
+continuation_baseline=list(indices)
+entry_stair_ids=[2996, 2997, 2998, 2999, 3000, 3010, 3011, 3012, 3013, 3014, 3019, 3025, 3026, 3027, 3028, 3029, 3034, 3035, 3037, 3052, 3053, 3055]
+assert all(indices[i]==0 for i in entry_stair_ids)
+for i in entry_stair_ids:
+ mesh.polygons[i].material_index=5;indices[i]=5
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; complete outer wall and stair/oval shell color continuity inferred; unresolved roofs, artificial base and mixed recess reveals neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v2-facade-continuity'
+scene=bpy.context.scene;scene['appearance_revision']='color-v3-compact-entry-stair'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=96;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -131,7 +138,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v2-facade-continuity','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'changed_faces':changed_faces,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Complete L/H/G outer wall facets, stair enclosures, vertical fascia and H oval shell use inferred existing pale wall family; L existing outer recess backs use inferred grey-green. Roofs/base/slope and unresolved mixed reveals remain neutral. Official anniversary front photograph visually reviewed; 2022 report unavailable HTTP503 in this revision, historical v1 source claims not repeated as fresh review. Different epochs, no same-day or current-condition claim. No PV or new facade divisions.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v3-compact-entry-stair','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'prior_v2_changed_faces':changed_faces,'entry_stair_changed_faces':entry_stair_ids,'continuation_baseline_face_material_indices':continuation_baseline,'change_reasons':change_reasons,'original_face_material_indices':original_indices,'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Complete L/H/G outer wall facets, stair enclosures, vertical fascia and H oval shell use inferred existing pale wall family; L existing outer recess backs use inferred grey-green. Roofs/base/slope and unresolved mixed reveals remain neutral. Official anniversary front photograph visually reviewed; 2022 report unavailable HTTP503 in this revision, historical v1 source claims not repeated as fresh review. Different epochs, no same-day or current-condition claim. No PV or new facade divisions.','Only 22 faces in 10 complete compact original entrance stair domains use approximate grey family. Five original palette entries and every other index unchanged. New official courtyard photo supports grey entry-step proxy, not surveyed location/step dimensions or calibrated stone. Forecourt/base/slope and sides unchanged; no trial print; original engineering caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((20,260,155),(0,0,16.85),200),'rear':((-150,-260,100),(0,0,16.85),200),'elevation':((0,300,16.85),(0,0,16.85),200),'source-angle':((-170,220,170),(0,0,16.85),200),'left':((-320,0,145),(0,0,16.85),200),'right':((320,0,145),(0,0,16.85),200),'top':((0,0,330),(0,0,0),200)}
 out=R/'appearance';out.mkdir(exist_ok=True)

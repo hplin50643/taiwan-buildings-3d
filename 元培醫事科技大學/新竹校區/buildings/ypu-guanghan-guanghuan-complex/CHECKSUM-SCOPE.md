@@ -1,0 +1,2 @@
+# Checksum scope
+Both original SHA256SUMS and SHA256SUMS.txt have109 exact entries each, no baseline exceptions. Original lists preserved under qa/entry-stair-previous; root SHA256SUMS.txt remains historical. BASELINE-CHECKSUM-AUDIT maps each list to exact preserved paths for changed payloads. New current SHA256SUMS and ENTRY-STAIR-FREEZE-MANIFEST certify current deliverable. Historical source and engineering QA are not rewritten or used as current final certification.

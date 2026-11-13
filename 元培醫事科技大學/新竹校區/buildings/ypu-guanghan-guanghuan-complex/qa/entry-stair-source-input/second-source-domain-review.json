@@ -1,0 +1,71 @@
+{
+  "status": "GO",
+  "scope": "Source and original complete-domain approval only; NOT final candidate, scene, image or engineering PASS",
+  "original_blob_files_verified": 111,
+  "baseline_checksum_entries_verified": {
+    "SHA256SUMS": 109,
+    "SHA256SUMS.txt": 109
+  },
+  "baseline_checksum_exceptions": [],
+  "triangles": 5028,
+  "complete_domains_independently_reconstructed": 10,
+  "changed_faces": [
+    2996,
+    2997,
+    2998,
+    2999,
+    3000,
+    3010,
+    3011,
+    3012,
+    3013,
+    3014,
+    3019,
+    3025,
+    3026,
+    3027,
+    3028,
+    3029,
+    3034,
+    3035,
+    3037,
+    3052,
+    3053,
+    3055
+  ],
+  "changed_faces_count": 22,
+  "old_index": 0,
+  "new_index": 5,
+  "approved_new_palette": {
+    "index": 5,
+    "name": "Approximate grey entrance stair proxy not calibrated stone",
+    "srgb": "#969B98",
+    "roughness": 0.88
+  },
+  "source_visual_review": "Actually opened full official courtyard panorama. Convex turquoise library portal, large pale curved facades and roof pergola identify the same complex. Compact grey entrance steps directly below the library doorway are visually distinguishable from the much wider lower forecourt stairs and the tall stair run to the left. Original build_model explicitly registers compact entrance steps connecting the glazed base, not the lower plaza. Support is component-family correspondence, not surveyed exact alignment, step count or dimensions.",
+  "decision": "GO for five existing compact entrance treads and five risers only, ten complete finite domains /22 original neutral triangles, to explicitly approximate grey family #969B98 roughness .88. Original five palette entries unchanged. No side-wall, forecourt/base or geometry changes.",
+  "limits": [
+    "Panorama capture date unknown; do not call it current 2026 proof.",
+    "Neither stone species nor exact pigment measured. Grey family is visual approximation; panorama distortion and original stair registration/union clipping persist.",
+    "Do not confuse larger plaza steps or tall stair at left with the selected compact doorway proxy.",
+    "Prior v2 failed fetch remains historical; new successfully recovered original image is a new source event.",
+    "GO is conditional on final independent geometry/material/scene/rebuild/image/hash QA. All existing engineering limitations remain."
+  ],
+  "file_sha256": {
+    "SOURCE-PROPOSAL.json": "7a9e844ed8382b3421a7ab1f87981a71cb84ebf798df6fce2add499cfaa1b4fb",
+    "selected-stair-domains.json": "ec681f9a2e570a5ae09200b1695c84b65a3a1a1e7b5afd2364f706fb184e2d03",
+    "stair-domain-screen.json": "3aefdad9d834f2ed12b7eee2d6b534c2ff23fa7e7d31c0b13c90fd28b4daf34e",
+    "original/appearance.3mf": "f373b736c36f83f097fda400a83ba05d885aa4455a9556039fc1a725fb5b03c7",
+    "original/appearance-materials.json": "e5c7f55ace2575c3739d947fe1958fd1ead7938af8ce65f4e8a22328e9c4f8c0",
+    "original/build_model.py": "827d8a051167a52106eb9dc143a75c7d8053e168957713767a881d0018809211",
+    "original/build_appearance.py": "08edb7406261dbaad400619e9cecd9409248e2b5265b22c86680837ab372f6eb",
+    "original/sources.json": "30135b6c93153d85b23918f21c5c289326165826d7cd688ad20241eaecaacf9f",
+    "original/SHA256SUMS": "268224e2cdb8383253ec647eb0a157d9f04357ee84e4cea4d5d91e024be2e373",
+    "original/SHA256SUMS.txt": "43891f4eb8df9948a391d4d225a023ea1fec5156b7e0e159b5c26795f4ca82a2",
+    "private-reference/courtyard.jpg": "53a9c308821c29cbfdc4aa4fdff3eb9e269ad0dd66c0cf72be521f14fb855241",
+    "selected.json": "b4bb2497d45b1ed9fc420fad42cb73735fc3d21b352ddd6de848cfc3945b442d",
+    "private-reference/original-stair-inspection.png": "6960daa50b3e405eebceb0ae62c611e3709444a5dc2c7b39f0d23c18e4991e17",
+    "render_stair_inspection.py": "d1ed07ebe3dfa5db1b1316526aa61a540f55334a8e3e81254c52db55c8ec1b00"
+  },
+  "prebuild_location_visual_check": "Actually viewed original-stair-inspection.png: selected compact stair proxy sits directly against the convex glazed-entry mass at its base, not at the remote broad forecourt edge. Original missing doorway detail and clipped upper treads persist, and shadows limit visual distinction. GO confirmed only as coarse entrance component family, not precise door alignment."
+}

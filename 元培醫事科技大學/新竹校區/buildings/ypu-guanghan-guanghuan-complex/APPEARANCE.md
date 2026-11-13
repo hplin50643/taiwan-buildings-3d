@@ -25,3 +25,9 @@
 Blender 4.3.2：`blender -b -t 1 --python-exit-code 1 -P build_appearance.py`。需同目錄原scene.blend、model.stl、plan-registration.json。`-- --skip-render`只略過圖像，不略過模型產生。
 
 七角度900×800真網格渲染，Cycles CPU、96 samples、seed0、單執行緒、denoise False、無字與stamp；另兩張恢復所有原材料索引的同相機原版比較。保留舊appearance-review為歷史v1，不用它認證v2。[新版審核](appearance-review-v2/)包含逐點逐面BLEND／3MF、原材料值、面界、乾淨重建與render綁定。數位驗證不代替實體試印。
+
+
+## 2026-11-13 入口階梯代理補色
+本次實取並實看校方原內院全景：https://eng.ypu.edu.tw/var/file/56/1056/img/2093/511170839.jpg 。v2 當時 HTTP503 的記錄仍屬原歷史，本次已成功取得不回改舊紀錄。拍攝日期未知，非2026現況或精準測色。
+僅原 compact 入口階梯五踏面及五立面共十個完整連通共面域、22面，由明示未知0指定新增近似灰色材5（#969B98，roughness0.88）；原五材值、其餘5006面指標、2488頂點/5028面及所有transform不變。來源可辨玻璃入口短灰階；模型門位、五級數量/尺度與後兩級原布林截短仍粗代理，不稱測繪或等同廣場大階。照片光影不作材質成分認定；階梯側壁、人工前院/基座/坡地、屋頂、既有v2推估均不動，不切新界。
+七張原生900×800視圖和原相機/照明保持；原scene/STL/previews/首頁代表圖與歷史工程QA不動。原配準/尺度/厚度及有限例外仍有效，未實體試印，補色不是全面列印認證。SOURCE-QA為送審快照，最終判定見獨審與交付記錄。
