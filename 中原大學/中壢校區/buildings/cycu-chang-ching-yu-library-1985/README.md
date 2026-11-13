@@ -81,3 +81,9 @@ blender --disable-autoexec --background --factory-startup --python-exit-code 1 -
 ## 本輪獨立覆核
 
 [指定47角損、3926短段、18後沿面及來源／支撐限制](INDEPENDENT-AUDIT.md)。原STL與Blend不變；8預覽只在原完整畫布外加字幕。公開原面驗證與未round截面程式可在副本重跑，保留原警示，沒有實際試印。
+
+
+## North projecting-band underside: conservative withdrawal
+Only four original triangles (3622,3623,3606,3653), one complete north lower-band underside domain, have their uniform tile attribution withdrawn to explicitly unverified neutral material 6. The architect courtyard photograph shows pale inset soffit and tiled edges; the coarse original band has no corresponding finish boundaries. This does not mean the entire underside is white or every part was wrong. It deliberately also withdraws locally supported tiled edge and unseen portions instead of inventing cuts. Other indices and original six palette entries remain unchanged. This is contemporary-photo approximation, not 1985 finish restoration.
+
+Original geometry, neutral scene, locked homepage representative and engineering evidence remain unchanged. All original limited exceptions in INDEPENDENT-AUDIT.md still apply; this appearance correction does not fix strict engineering failures or certify printability. Current review: NORTH-SOFFIT-INDEPENDENT-QA.json; historical appearance records: qa/north-soffit-previous/. Sources remain private.

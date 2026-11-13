@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "reviewer": "cycu_source_review",
+  "scope": "Conservative withdrawal of four original north lower-band underside faces, one complete domain, tile1 to explicitly unknown neutral6; no new finish claim or white repaint.",
+  "triangles": 9110,
+  "changed_faces": [
+    3606,
+    3622,
+    3623,
+    3653
+  ],
+  "complete_domains": 1,
+  "original_palette_entries_preserved": 6,
+  "native_workflow": "Eight original900x800 appearance views; original neutral scene and locked homepage representative unchanged.",
+  "actual_visual_review": [
+    "Source architect-2 native full frame inspected; white inset soffit and tiled edge cannot be separately assigned without geometry cuts.",
+    "All eight final views inspected in contact sheet; rear and garden opened at full900x800. Wholeviews have adequate margins and no captions.",
+    "Private same-camera1200x900 before/after opened individually. Lower projecting underside changes to neutral, vertical fascia/glass/upper band remain unchanged."
+  ],
+  "checks": {
+    "independent_complete_domain_bfs": true,
+    "original111_blobs_verified": true,
+    "geometry_and_all_other_indices_exact": true,
+    "original_six_palette_exact": true,
+    "scene_independently_reopened": true,
+    "scene_camera_lights_render_matrix_exact": true,
+    "scene_matches_3mf_indices_vertices_faces": true,
+    "isolated_original_build_stl_exact": true,
+    "isolated_3mf_all_members_exact": true,
+    "locked_homepage_preserved": true
+  },
+  "limitations": [
+    "Not1985 original finish restoration; courtyard north mapping configuration-based.",
+    "Withdrawal includes plausible tiled perimeter and unseen parts, deliberately conservative.",
+    "All original engineering limited exceptions,47 cross-layer events and strict QA caveats remain. This pass concerns appearance identity and source scope, not repaired printability or universal engineering pass."
+  ],
+  "source_snapshot_policy": "Original proposal/second-source report untouched. Current sourceQA references explicit original snapshots under qa/north-soffit-source-input; pending-final snapshot retained unchanged.",
+  "file_sha256": {
+    "build_model.py": "9deaeea211af064171c91fdb6898359de6cb0d4afbe9a0bcfb18cf07cae2bcc5",
+    "build_appearance.py": "983aa9cee715b85355812b40b55fd1537477b9ffb57f02be46b0f4dc90002c2a",
+    "appearance-materials.json": "727f1afc96125bf5f0ff4245167c9403c54cb7d9b889cbdabc9b064547c86e1d",
+    "appearance-sources.json": "9fee8fa59f784a0b6ab1424589b1c91870d9676bd4a4fdb0fb119347d8c078d7",
+    "appearance.3mf": "ba9eac9f3be8ca28bff2b43b90894aaba6666cdabb9ca74357b135d7ed5c29ba",
+    "appearance.blend": "bbf86db599fe7d6263fcaeb7b42a6cf717c7ce08c08facfd14a9b9634bd6ddb9",
+    "scene.blend": "de553388f4310168b4b88c06b1f152708fdca8410e8a0b6070559e606dc75981",
+    "model.stl": "76939c4a6901112a66b76a6c87de5b76829de584bcac9b61e2d5b2a301a36e86",
+    "README.md": "c26d9acb14e2ededaa84702b7ac8f587b449dd0b635ad9778dd78c4567cbef18",
+    "APPEARANCE.md": "981216d7b749e86e68d69d119775ac687b0f7a7fdc52cf021e71bff96d61f15e",
+    "CHECKSUM-SCOPE.md": "4711de82c368e83fd7dfa66efef845a5677cd10dd5e2f0160481cd698258dce3",
+    "NORTH-SOFFIT-SOURCE-QA.json": "f1a9ef4a9fbd3534319ca01ed748a02ed5ecc504c83f89fa69ec2578eac496d5",
+    "NORTH-SOFFIT-NUMERIC-QA.json": "f9f1dae544ada7a67a47b78c5dc52bc3fead2d5be7595757f501675e98e98939",
+    "INDEPENDENT-AUDIT.md": "176d9fa9f939775f4aa803a24bdb4145c95aa83ae32c2dd4909c946cd8b644c6",
+    "QA-SUMMARY.json": "a77ab2196dd21b63594170bf6b48582b16966c80d9497f1ebb6e05952ce2df6f",
+    "validation.json": "4bee7b5134d41ab910daa3a7e7be3897418d305ca125cf755efe05ad8dc423d3",
+    "previews/front.png": "0bdc20e95c2a381702b2647e73b805d539e8a6e2df71dde1e4c8a3834be8e8b3",
+    "appearance/homepage-three-quarter.png": "7826aff2e129f783e6b7601d98b889fe0e0ed5e198d2e8c6f76c60385361cf0f"
+  },
+  "image_sha256": {
+    "appearance/front.png": "a3842e3867f03eb8ee4aa9b522e6405bf3d7ea3888d6b55f7d4dbdb47cebb844",
+    "appearance/rear.png": "3ff805eecf24524d261fc1ba3336c59edbad4644f5cd648ed380451f2bb95f5c",
+    "appearance/top.png": "4ab8508654fbee4467946563125911cab882d8e8ac44d9aeecb9d6f548366865",
+    "appearance/aerial.png": "77459f26d74b45e32ef428f6eb2b359703960e27a84c20d2540fbe862e5d5924",
+    "appearance/side.png": "9405219a0e3b27057e9bebde4a24879ed282e5266179fe62cb82ce6516c70ee3",
+    "appearance/entry.png": "757f1abd2bfc6209e392ff65974d10426042203b5663aef4771179178a66a398",
+    "appearance/garden.png": "9124375d42a6645fd4b5cc0143515a34e148b316766d0238fdd8cbb5a3d7362f",
+    "appearance/roof.png": "afe17cdaa05ce00027915d3ab7896201764cde602af9a9c03d29d984b3050d34"
+  },
+  "supplementary_private_image_sha256": {
+    "north-soffit-before.png": "48a0101ea29e79c3f1873a8ed1cbeadf81d49ee1c503084f32cbbb03af9d5249",
+    "north-soffit-after.png": "45b4f22733ffbeca89d0f1766249b298576656e51531b2a880a8dde09c259941"
+  },
+  "private_evidence_sha256": {
+    "SOURCE-PROPOSAL.json": "8b885861188e158d528371eb2f24813d5ebf6e0b6ea6d386e91343a9afb4c1ca",
+    "second-source-domain-review.json": "3429c0357386f6bf69a57436959e97cf368d2b38b816a13e8baa6423c8612399",
+    "independent-numeric-review.json": "1525f23c3f8c42fe77cd60342e56735112f001dc922245f5c09dc3de54140d87",
+    "independent-scene-review.json": "3b829ab8bfc9110216255ac685e731df3d55ed77d6bc961e673f6370b5fce803",
+    "independent-rebuild-review.json": "6de0eeebad7f095d4aacdf10bdd86d9746931821f4371cdd0fb56774bc239000"
+  }
+}

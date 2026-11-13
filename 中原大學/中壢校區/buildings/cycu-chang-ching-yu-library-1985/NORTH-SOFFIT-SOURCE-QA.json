@@ -1,0 +1,65 @@
+{
+  "status": "SOURCE_REVIEW_GO_PENDING_FINAL_QA",
+  "building": "cycu-chang-ching-yu-library-1985",
+  "action": "Conservatively withdraw uniform tile attribution from entire lower north projecting-band underside domain. No white repaint, no geometry/material-boundary cuts.",
+  "scope": {
+    "faces": [
+      3622,
+      3623,
+      3606,
+      3653
+    ],
+    "count": 4,
+    "min": [
+      -28.250000915527345,
+      17.350000451405844,
+      11.999999529520672
+    ],
+    "max": [
+      15.425893236796062,
+      19.19999912261963,
+      11.999999529520672
+    ],
+    "normal": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "materials": [
+      1
+    ]
+  },
+  "old_material": 1,
+  "new_material_proposed": 6,
+  "new_material_name": "Unverified north projecting-band underside",
+  "new_nominal_srgb": "#A9AAA5",
+  "original_triangles": 9110,
+  "whole_domain_method": "Original appearance.3mf exact vertex/triangle order, adjacency joined only if normal dot>1-1e-9 and shared plane residual<1e-5mm; component selected by all vertices, nominal z12, north y17.35..19.2.",
+  "source_basis": [
+    "Architect gallery courtyard native architect-2.webp actually viewed. Lower projecting soffit is pale inset field bounded by tiled beams/edges, not one uniform tiled surface.",
+    "Original simple rectangular band lacks inset finish/beam boundaries. Current default tile1 blankets all4 triangles. Withdrawing to specifically labeled unknown neutral is safer than cutting a white patch or painting whole underside white.",
+    "Courtyard orientation is configuration-based north attribution already disclosed by original north-core addendum, not compass label in photo."
+  ],
+  "limits": [
+    "Whole-domain withdrawal includes locally supported tile border and obscured segments; does not assert all four triangles entirely wrong or white.",
+    "Original lower-band proxy56.5m wide/2.7m deep/.8m thick and core intersection remain unchanged. Upper band, opposite small segment, other soffits and all original north-core addendum remain unchanged.",
+    "Contemporary-photo approximation only; not1985 original finish reconstruction. Original111blobs/history/engineering exceptions/locked representative/scene kept.",
+    "No source photos published; geometry and original six palette entries unchanged. Append explicitly unknown soffit neutral rather than rename the original paving material."
+  ],
+  "native_workflow": {
+    "source": "appearance.3mf and appearance.blend, materials indices in appearance-materials.json",
+    "build": "build_appearance.py",
+    "render": "8 original900x800 appearance views; locked homepage render separate, must retain original camera/render contract",
+    "engineering": "Original strict QA/finite exceptions remain; material edit cannot certify printability"
+  },
+  "file_sha256": {
+    "qa/north-soffit-source-input/build_model.py": "9deaeea211af064171c91fdb6898359de6cb0d4afbe9a0bcfb18cf07cae2bcc5",
+    "qa/north-soffit-source-input/build_appearance.py": "5838743d0f96c5b4b0e9280d01502de1282994f861177b61355d22c53c12c087",
+    "qa/north-soffit-source-input/appearance-materials.json": "899dcf4a57c4f6e517f971a1475e38d011d68380945bb731deb0652668029332",
+    "qa/north-soffit-source-input/appearance.3mf": "cb3fc5df3cc3514704fe8d2e816db866952dd07d3d054b3e86830ad91b853b94",
+    "qa/north-soffit-source-input/appearance-sources.json": "9fee8fa59f784a0b6ab1424589b1c91870d9676bd4a4fdb0fb119347d8c078d7"
+  },
+  "historical_source": "appearance-sources.json",
+  "second_review_status": "GO",
+  "hash_scope": "Exact baseline source inputs preserved under qa/north-soffit-source-input; not claims about modified current appearance files. Root SOURCE-PROPOSAL.json and independent source review remain unchanged."
+}

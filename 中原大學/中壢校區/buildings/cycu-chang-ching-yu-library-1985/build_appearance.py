@@ -16,6 +16,7 @@ def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
 # Contemporary photographic approximation, NOT a reconstruction of 1985 finishes.
 palette=[('Unknown paving and display base','#A9AAA5',.85),('Grey beige faint pink tile','#A89E96',.83),('Exposed concrete columns and steps','#B3B0A6',.85),('Grey blue glass proxy','#48555F',.4),('Dark grey existing frames','#555859',.6),('Unknown roof neutral proxy','#A5A6A1',.85)]
+palette.append(('Unverified north projecting-band underside','#A9AAA5',.85))
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
@@ -55,9 +56,19 @@ for p in mesh.polygons:
  if abs(x-4)<5.5 and abs(y+33)<5.5 and 8.21<z<=10.001 and n.z>.65:glass=True
  if glass:i=3
  p.material_index=i;indices.append(i)
+# Source-reviewed conservative withdrawal: original whole north lower-band underside.
+withdraw=[3622,3623,3606,3653]
+assert all(indices[i]==1 for i in withdraw)
+for i in withdraw:
+ p=mesh.polygons[i]
+ assert p.normal.z < -.999
+ for vi in p.vertices:
+  a=mesh.vertices[vi].co/s
+  assert abs((a.z-1.2)-12)<1e-4 and 17.3499<a.y<19.2001 and -28.2501<a.x<15.426
+ p.material_index=6;indices[i]=6
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
 obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unresolved roof neutral; contemporary photo approximation, not 1985 finishes'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
+scene=bpy.context.scene;scene['appearance_revision']='north-soffit-withdrawal-v1'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -85,7 +96,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unresolved roof and paved base neutral; no invented greenery; contemporary finish not 1985 restoration','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'north-soffit-withdrawal-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unresolved roof and paved base neutral; no invented greenery; contemporary finish not 1985 restoration','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((150,-250,90),(0,-15,20),205),'rear':((125,220,90),(0,-5,22),205),'top':((0,-21,300),(0,-21,0),205),'aerial':((150,-230,220),(0,-18,15),205),'side':((-240,0,85),(0,-10,22),205),'entry':((0,-240,90),(0,-15,20),205),'garden':((120,180,100),(0,-5,22),205),'roof':((150,-100,220),(0,-10,22),205)}
 out=R/'appearance';out.mkdir(exist_ok=True)

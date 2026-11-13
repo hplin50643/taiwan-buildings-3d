@@ -26,3 +26,9 @@ blender -b --python-exit-code 1 -P verify_color_geometry.py -- scene.blend appea
 ## QA與列印範圍
 
 新增檢查只證明幾何保持、材質對應及重建／影像。原 INDEPENDENT-AUDIT.md 與各QA的有限例外和警告全部繼續適用：短首弦、背接細框、屋頂刻線及角損不因上色消失，沒有重新聲稱全向最薄壁通過。3MF軟體須支援base材料顯示；不含特定AMS／多噴頭耗材映射。未實體試印，不保證免支撐、必然可印或結構安全。
+
+
+## North projecting-band underside: conservative withdrawal
+Only four original triangles (3622,3623,3606,3653), one complete north lower-band underside domain, have their uniform tile attribution withdrawn to explicitly unverified neutral material 6. The architect courtyard photograph shows pale inset soffit and tiled edges; the coarse original band has no corresponding finish boundaries. This does not mean the entire underside is white or every part was wrong. It deliberately also withdraws locally supported tiled edge and unseen portions instead of inventing cuts. Other indices and original six palette entries remain unchanged. This is contemporary-photo approximation, not 1985 finish restoration.
+
+Original geometry, neutral scene, locked homepage representative and engineering evidence remain unchanged. All original limited exceptions in INDEPENDENT-AUDIT.md still apply; this appearance correction does not fix strict engineering failures or certify printability. Current review: NORTH-SOFFIT-INDEPENDENT-QA.json; historical appearance records: qa/north-soffit-previous/. Sources remain private.

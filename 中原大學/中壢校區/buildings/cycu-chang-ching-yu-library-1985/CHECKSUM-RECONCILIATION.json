@@ -1,0 +1,39 @@
+{
+  "status": "PREPARED_PENDING_INDEPENDENT_RECONCILIATION_REVIEW",
+  "scope": "Documentation-only reconciliation of a pre-existing historical README checksum mismatch; no model, image, material, engineering or prior QA changes.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "prefix": "中原大學/中壢校區/buildings/cycu-chang-ching-yu-library-1985/",
+  "superseded_manifest_sha256": "c400e1e03daf5e0403da5095a7fc43486a1bd59a61b361c99e4b6df215c524ac",
+  "baseline_original_blob_count_verified": 111,
+  "historical_checksum_entries": 109,
+  "historical_matching_entries": 108,
+  "exceptions": [
+    {
+      "path": "README.md",
+      "recorded_sha256": "abe1b1ceff20faca23a2aacd0996343d6ec5899428098e6e38cc172bb04ca99c",
+      "actual_sha256": "7696228536fca2e7664c11706a99f7dee22affa1d2cfdf1aa91d723a068ef3c7",
+      "matches": false
+    }
+  ],
+  "exact_resolution": {
+    "historical_list": "qa/north-soffit-previous/SHA256SUMS",
+    "historical_readme": "qa/north-soffit-previous/README.md",
+    "baseline_readme_git_blob": "41066c57e449b3a4ba42cd988cd04b36f03a0e37",
+    "historical_list_sha256": "d7add7a1c00d55198e432f9b0953bda9288674bd84448359dabee152a7ffb714",
+    "historical_readme_sha256": "7696228536fca2e7664c11706a99f7dee22affa1d2cfdf1aa91d723a068ef3c7",
+    "current_readme_sha256": "c26d9acb14e2ededaa84702b7ac8f587b449dd0b635ad9778dd78c4567cbef18"
+  },
+  "findings": [
+    "The baseline README and archived README are byte-identical. The baseline checksum list and archived checksum list are byte-identical. The mismatch therefore predates this candidate.",
+    "The recorded abe1... checksum is NOT verified against the available README. Its original target bytes and reason for drift are not established; no invented reconstruction or replacement hash is claimed.",
+    "The root README is a distinct current candidate document. Its current SHA is not offered as validation of the historical recorded hash.",
+    "All prior independent reviews, source snapshots, historical checksums and NORTH-SOFFIT-FREEZE-MANIFEST.json are preserved byte-for-byte. Original freeze is a historical manifest of the superseded candidate, not a manifest of this reconciliation version.",
+    "Current reconciliation root SHA256SUMS and CHECKSUM-RECONCILIATION-FREEZE-MANIFEST.json will cover the new version after independent review."
+  ],
+  "original_independent_review_historical_input": {
+    "recorded_path": "CHECKSUM-SCOPE.md",
+    "recorded_sha256": "4711de82c368e83fd7dfa66efef845a5677cd10dd5e2f0160481cd698258dce3",
+    "exact_snapshot_path": "qa/checksum-reconciliation-original/CHECKSUM-SCOPE.md",
+    "meaning": "The original review remains historical for this one input. It does not validate the replacement scope. All other original work-input/image hashes match unchanged current paths; new scope requires separate reconciliation review."
+  }
+}
