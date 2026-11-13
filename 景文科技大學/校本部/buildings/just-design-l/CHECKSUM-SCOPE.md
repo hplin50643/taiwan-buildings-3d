@@ -1,0 +1,1 @@
+RIGHT-ROOF：2原面新增，96→98色／3966中性／4064tri，原0/1色票保留、新index2，0混域。原無OBJ。SOURCE pending固定不回寫；歷史qa/舊manifest僅歷史，最終獨審綁work精確相對路徑hash。

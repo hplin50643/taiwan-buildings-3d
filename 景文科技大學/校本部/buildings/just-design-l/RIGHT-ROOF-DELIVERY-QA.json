@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "Bounded rightmost pavilion right roof slope update, not full color or geometry certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 4064,
+  "original_color_faces": 96,
+  "new_color_faces": 2,
+  "colored_faces": 98,
+  "unknown_neutral_faces": 3966,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 0,
+  "current_mixed_connected_domains": 0,
+  "current_independent_review": "RIGHT-ROOF-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only2original triangles[3426,3433]/1whole rightmost pavilion right exterior slope x+z116.7,x53..61,y-13..15 receive appended nominal bluegray roofskin index2 #84919B. Original official high-oblique photo native reinspection distinguishes slope from white gable and thin vertical eave. Low resolution supports broad family only,not tile pattern or calibrated sample. Original16x28x8 pitched proxy remains approximate. No leftslope,otherpavilions,gables,eaves,portico,columns,walls extended. Original4064triangles,96white faces and original2palette entries/all other indices unchanged.",
+    "Source image private; not newcapture, capturedate unknown,no2026claim. Original geometric and source limits remain; no full color/printability certification or physical print."
+  ],
+  "checked_at": "2026-11-12T19:35:54.401305+00:00",
+  "original_STL_sha256": "6c06b4ed10a90a649780285ea55c19c7fd71228265a56f868d780af6babc3bce",
+  "color_mesh_sha256": "736d35fa5aa09071e8eef0ab9e78ba3d8fcfa48b77bb28ada6b9985c992d3004",
+  "images_sha256": {
+    "preview.png": "dbef25bf96d5f9cf21a6546361dd5f065c8f80b14425245c140546eeb2d1110d",
+    "rear.png": "dbff147207ecb9b0ea63ddcc462cb2cfc2ff3b5f4c2662931a75063ad40ffa6a",
+    "front.png": "f1a921c75fe00aa98d82b44eda791999b9a6725a78d715a96cb901627824a4f9",
+    "back.png": "99011fee7025e5407cf5fabf331da090ee2f75ca00af8f13d34c40464163ccc6",
+    "west.png": "1c60928a024053e537d04fbab3ff7948bf993f498b44ffde78c1544fe05bb505",
+    "east.png": "d2b134bcc9fc4ebc209260ab7a74de67850e2cc8d57c8542d3f5aacf132c50b0",
+    "top.png": "5b61b34ca23c070a95ccf20e5294cc7f2a2f19498f87cfd3205e5426c8808dbc",
+    "entry-detail.png": "be04ecef8db1b3984921bea2107a60537b0f429d0bca0e1159e5db5f43b9a7ec",
+    "facade-detail.png": "1672636364030eab6f1acb32fa4758724c10460a1808734795e6d100060516f9",
+    "roof-detail.png": "99fde7f2abdf1fc9917ba95cdb9a3f3738631f670299d2c032101ae26db47566"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "building": "just-design-l",
+  "scope": "Only rightmost pavilion right sloping roof skin, original faces 3426 and 3433; one complete connected coplanar domain.",
+  "triangles": 4064,
+  "original_colored_faces": 96,
+  "added_colored_faces": 2,
+  "colored_faces_after": 98,
+  "neutral_faces_after": 3966,
+  "palette_entries": 3,
+  "mixed_domains_before": 0,
+  "mixed_domains_after": 0,
+  "findings": [
+    "Independent all-vertex selection, original geometry, all unselected material indices and original two palette entries verified unchanged.",
+    "3MF geometry and three materials verified; retained isolated build/color/export outputs directly compared, including exact 3MF XML.",
+    "Saved scene independently reopened; mesh indices and three shaders verified, original camera/light/render/object inventory and transforms preserved.",
+    "All ten final images inspected via overview, with all three detail images separately inspected at full size. Historical roof-detail camera remains aimed at entrance, not relabeled as new roof evidence.",
+    "Private right-roof.png inspected at full size: blue-gray only on selected right slope, with front gable, other slopes and adjacent roof unchanged. Temporary close camera/fill did not modify saved scene.",
+    "Fourteen engineering/history files preserved; original has no OBJ. Source-stage pending snapshot remains fixed."
+  ],
+  "limits": [
+    "Official original photograph reinspected, not new capture or current-condition certification. Low-resolution 95 x 80 native roof crop supports blue-gray family only, not calibrated HEX, tile detail or material species.",
+    "Nominal new index 2 #84919B; original 16 x 28 x 8 pavilion proxy is not measured geometric certification.",
+    "No extension to white vertical eave, front/back gables, left slope, other pavilions, portico or columns. Existing engineering limitations remain."
+  ],
+  "image_sha256": {
+    "preview.png": "dbef25bf96d5f9cf21a6546361dd5f065c8f80b14425245c140546eeb2d1110d",
+    "rear.png": "dbff147207ecb9b0ea63ddcc462cb2cfc2ff3b5f4c2662931a75063ad40ffa6a",
+    "front.png": "f1a921c75fe00aa98d82b44eda791999b9a6725a78d715a96cb901627824a4f9",
+    "back.png": "99011fee7025e5407cf5fabf331da090ee2f75ca00af8f13d34c40464163ccc6",
+    "west.png": "1c60928a024053e537d04fbab3ff7948bf993f498b44ffde78c1544fe05bb505",
+    "east.png": "d2b134bcc9fc4ebc209260ab7a74de67850e2cc8d57c8542d3f5aacf132c50b0",
+    "top.png": "5b61b34ca23c070a95ccf20e5294cc7f2a2f19498f87cfd3205e5426c8808dbc",
+    "entry-detail.png": "be04ecef8db1b3984921bea2107a60537b0f429d0bca0e1159e5db5f43b9a7ec",
+    "facade-detail.png": "1672636364030eab6f1acb32fa4758724c10460a1808734795e6d100060516f9",
+    "roof-detail.png": "99fde7f2abdf1fc9917ba95cdb9a3f3738631f670299d2c032101ae26db47566"
+  },
+  "file_sha256": {
+    "model.stl": "6c06b4ed10a90a649780285ea55c19c7fd71228265a56f868d780af6babc3bce",
+    "build_model.py": "4fe6f5bf0d87db7bd0b09e7afb92142066575d43c85c9091915f587911480d56",
+    "color-mesh.npz": "736d35fa5aa09071e8eef0ab9e78ba3d8fcfa48b77bb28ada6b9985c992d3004",
+    "palette.json": "4c41a623260642f09bf9a7aaafe0b386564adaeb4ce878e4418cebaa9be106f1",
+    "appearance.3mf": "19d9f2e804be169ed5b7bee6ed76df7dd7d17e53b3579c5eb07909f98fe31f3b",
+    "appearance-materials.json": "138b5bfcb10b2a96ac2312bc23a02aca6508f24a55e68d44f8925623015f414c",
+    "scene.blend": "ed85021687ee39e575688f7f2bd7a3b11d27149e80e61c812ec0654ff8e09480",
+    "colorize_model.py": "7b142d1e331d8bcdc45f9f37dcbc70d33daaa8a746f4883cea0341b415ab0622",
+    "export_appearance.py": "e44a9b1f9503b8496f0d2b7297a49b31a5cadf9d7bd927bd22d4e4ab26f82b47",
+    "validate_color.py": "b7375dd71c51091df731caf6f46ad08dce3552be6f97a69062a5a2f52c2529fc",
+    "verify_color_scene.py": "2faf71c4644948b7bcf427bf874d2b0ab2e9f709f6631e5bde76e88d8f4d2611",
+    "render_color.py": "3a8516b52c74de568e7ea5342d08cc1708328ec5165bc567fc9eb2bfb1624691",
+    "README.md": "218488601f6f9b008609a1be5969e10a014f0ed352c0c692e0af0ffd140c23b7",
+    "README.zh-TW.md": "218488601f6f9b008609a1be5969e10a014f0ed352c0c692e0af0ffd140c23b7",
+    "CHECKSUM-SCOPE.md": "395f7a37efa141500ea64441d44fe68f7180dc389a459e0b96af3972c2fed324",
+    "COLOR-ASSIGNMENT-QA.json": "4d18a17bd72c8234df5815beee5a62fa579da649e3980d993392ab90bcd1ed1e",
+    "COLOR-FORMAT-GEOMETRY-QA.json": "ea6b5cc8b8ced6f640251bb63f528f9cce7e8790f4e67ebfc4b03b5cb05d9a32",
+    "SCENE-QA.json": "49bd06e7b436635b197aa50135aab57c7793ea2e7d4c9289f3779c26b1d982e9",
+    "RIGHT-ROOF-SCENE-QA.json": "57c815d4367a791aa1c54017d0ba8d858825f1fb67e530102371e182f1249be7",
+    "RIGHT-ROOF-SOURCE-QA.json": "c6147cdf94b36defae5024f8e0062c187b7a079b376c067dbf99b19b6ee58510",
+    "COLOR-SOURCE-REGISTER.json": "c6147cdf94b36defae5024f8e0062c187b7a079b376c067dbf99b19b6ee58510"
+  },
+  "supplementary_private_image_sha256": {
+    "right-roof.png": "e2a2aaf7cce2b16026dac9244ea7ce6d0926d9973191ecc919529ff39488454e"
+  },
+  "independent_check_sha256": {
+    "independent-numeric-review.json": "cbdd9d9ecd48f59036d4378d79662034099ebf9bb2b967ade4059f81d5c748c9",
+    "independent-rebuild-review.json": "5aab8bdde3410f7f78a29a0c84ad58f950ee64fb87b96214ba1640e789b3b4db",
+    "independent-scene-review.json": "f8235de02af0f215eac153253c1c299619d73c07c78b3aad663d6994ca1bb068",
+    "private-right-roof-QA.json": "1b065ba63ab16cb42120c1359069594f127e015e3c19f52056cb261b2db5c1ce"
+  }
+}

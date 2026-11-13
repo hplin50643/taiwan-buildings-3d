@@ -1,0 +1,31 @@
+{
+  "status": "SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW",
+  "scope": "Only rightmost roof pavilion right pitched exterior plane",
+  "face_ids": [
+    3426,
+    3433
+  ],
+  "plane": "x+z=116.7; original full x53..61,y-13..15 slope",
+  "source": "Original official high-oblique photograph source-1 exact hash reinspection, not new capture. Full photograph and native crop actually seen.",
+  "source_interpretation": "Rightmost pavilion right sloping blue-gray roof skin can be separated from front white gable and thin white vertical eave. Low resolution supports only broad family, not calibrated material or per-tile pattern.",
+  "palette_proposal": {
+    "new_index": 2,
+    "nominal_hex": "#84919B",
+    "family": "nominal blue-gray roof skin, not calibrated sample"
+  },
+  "limits": [
+    "Original16x28x8 pitched proxy remains approximate, no geometry certification.",
+    "No left slope, other two pavilions, gable front/back, white vertical eaves or portico/columns/walls extension.",
+    "Original96white faces and original2palette remain exact; no arbitrary splitting.",
+    "Photo capture unknown; no2026claim."
+  ],
+  "file_sha256": {
+    "domain-screen.json": "92c8f4122a954d98a7f6bc63384521524a19b8304d518764f36e31bc299f6060",
+    "preselection-right-roof.json": "5c36bd4c841b4aa558098ac25753c6b57602394c278a999ca8bf5bb25b8b9a52",
+    "original/build_model.py": "4fe6f5bf0d87db7bd0b09e7afb92142066575d43c85c9091915f587911480d56",
+    "original/color-mesh.npz": "53fb2e22820d1c1376a01ec1014718782b72936198853b2b39edfc4e073c5a4a",
+    "private-reference/source-1.jpg": "381ad97cd676a69f44a58eb7f4780a3ec8af4277991ff8d44eeb934dfd18c5f4",
+    "private-reference/right-roof-native.png": "d306c014047bb8be81556721f5d4b8205a2449ee7a163ac69e6767f9d116c0bb"
+  },
+  "historical_source_register": "qa/right-roof-previous/COLOR-SOURCE-REGISTER.json"
+}

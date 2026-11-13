@@ -10,7 +10,13 @@
       "id": 1,
       "name": "UNVERIFIED main walls entrance windows roofs neutral",
       "hex": "#B8BAB5",
-      "faces": 3968
+      "faces": 3966
+    },
+    {
+      "id": 2,
+      "name": "JUST L bounded right pavilion right roof blue gray family",
+      "hex": "#84919B",
+      "faces": 2
     }
   ],
   "domain_face_indices": {
@@ -189,6 +195,10 @@
     "complete_front_chord_79": [
       1927,
       1929
+    ],
+    "right_pavilion_right_roof": [
+      3426,
+      3433
     ]
   },
   "coplanar_components": 1027,
@@ -198,11 +208,11 @@
   "limits": [
     "Cap upper skin, underside, rear half and wall backing remain neutral.",
     "Columns have foot/base transitions, bands and banner/fixture associations; no full column white.",
-    "Three true pitched roof pavilion volumes remain originalv3 geometry; gray roof evidence is not extended to unverified rear slopes in this limited review.",
+    "Three true pitched roof pavilion volumes remain originalv3 geometry; only the rightmost pavilion right slope gains nominal blue gray; other slopes stay unverified.",
     "Low front gable/pediment plates are not roof slopes and are not expanded or recolored by analogy.",
     "Main white walls include dark bases, stone lower wings, windows and fixtures without full material boundaries; no blanket white facade.",
     "Window/glazing backing contains frames, interior and reflections; no blue/black fill.",
-    "Roof, steps, base, rear and all unlisted triangles remain neutral.",
+    "Other roof slopes, steps, base, rear and all unlisted triangles remain neutral.",
     "Preserve4064 original faces and allv3 roof/tower geometry; no face splitting, additive details or OBJ generation.",
     "Nominal white-family partial only, not full-color or current-condition reconstruction."
   ]
