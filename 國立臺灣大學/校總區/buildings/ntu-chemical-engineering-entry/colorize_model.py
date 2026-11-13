@@ -32,5 +32,11 @@ for i,(t,n)in enumerate(zip(m.triangles,m.face_normals)):
  # Semantic connected facade plane is mixed brick/gray real spandrels and has no mesh split.
  if plane(1,-11):a[i]=3
  if plane(2,26.5) and inside(-10,36,-37.55,-9,26.49,26.51):a[i]=3
+# Only complete lower roof fascia front; unchanged geometry and all other indices.
+old=a.copy();t=m.triangles;hit=(abs(t[:,:,1]+12)<1e-4).all(1)&((t[:,:,0]>=-70.0001)&(t[:,:,0]<=70.0001)&(t[:,:,2]>=43.9999)&(t[:,:,2]<=46.0001)).all(1)
+new=np.flatnonzero(hit);assert len(new)==39 and (old[new]==3).all()
+ad=m.face_adjacency;groups=trimesh.graph.connected_components(ad[(m.face_normals[ad[:,0]]*m.face_normals[ad[:,1]]).sum(1)>.999999],nodes=np.arange(len(m.faces)),min_len=1)
+assert any(set(c)==set(new) for c in groups)
+a[new]=0;assert np.array_equal(a[~hit],old[~hit]);assert np.bincount(a).tolist()==[2003,170,518,1571]
 np.savez_compressed(R/'color-mesh.npz',vertices=m.vertices,faces=m.faces,materials=a);(R/'palette.json').write_text(json.dumps(pal,indent=2)+'\n')
 (R/'appearance-materials.json').write_text(json.dumps({'palette':[{'id':i,'name':n,'hex':c,'faces':int((a==i).sum())}for i,(n,c)in enumerate(pal)],'geometry_policy':'4262 original triangles unchanged','partial_color_incomplete':True,'fully_colored_exterior':False,'limits':['Source page published 2026-09-29, photo capture date unknown.','Whole connected main facade neutral: unmodeled gray spandrels cannot be painted onto brick triangles.','Separate original hoods sills piers portico and discrete windows only.','Unknown end/rear/roof neutral.','Four labels not a verified four-filament slicer project.']},indent=2)+'\n');q={'status':'PASS','original_STL_sha256':EXPECTED_STL,'triangles':len(m.faces),'materials_used':np.unique(a).tolist(),'color_mesh_sha256':hashlib.sha256((R/'color-mesh.npz').read_bytes()).hexdigest()};(R/'COLOR-ASSIGNMENT-QA.json').write_text(json.dumps(q,indent=2));print(q);print(np.unique(a,return_counts=True))

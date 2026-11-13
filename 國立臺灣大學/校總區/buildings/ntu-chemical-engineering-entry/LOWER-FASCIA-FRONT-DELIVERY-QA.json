@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "Only39original lowerroof fascia front faces; no geometry/fullbuilding certification.",
+  "base_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+  "triangles": 4262,
+  "original_color_faces": 2652,
+  "new_color_faces": 39,
+  "colored_faces": 2691,
+  "unknown_neutral_faces": 1571,
+  "geometry_unchanged": true,
+  "original_mixed_connected_domains": 61,
+  "current_mixed_connected_domains": 61,
+  "current_independent_review": "LOWER-FASCIA-FRONT-INDEPENDENT-QA.json",
+  "original_historical_review": "INDEPENDENT-COLOR-VISUAL-QA.json",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "count_delta": 0,
+  "limitations": [
+    "Only39faces/1whole connected domain y-12,z44..46,x+-70. Originalfour palette entries and allunselectedindices retained;61original mixed domains exact.",
+    "No top/bottom/deepreturns/uppermetalroof/corrugatedvent extension. Originaltwoofficialphotos andnewceremony exterior checked, not calibratedHEX/currentwholebuilding certification.",
+    "Original140x40x2cap coarseproxy not endorsed; clipped/occludedends sameband limitedinference; drainpipes unmodeled. OriginalOBJ/history retained, SOURCEpending fixed."
+  ],
+  "checked_at": "2026-11-12T22:10:09.454147+00:00",
+  "original_STL_sha256": "65cfa3d66df2bc9e0243229ab612e9623ff7681207b4a638d904a40f1efdde2f",
+  "color_mesh_sha256": "21a53407bab8a9f78b82b9ce69dad203f3952e04a336b65a3433043065be5b66",
+  "images_sha256": {
+    "preview.png": "f65c5b58b21007f507c2508205602a6b2cad5144d4d8ee1e58e13fa3bd336f9e",
+    "rear.png": "fd8d910272a157b31564dbd0f7c5ac177afefae4ab4b7515cddaef0244100b48",
+    "front.png": "9834fcad691165763759b7946a3d1459f381ea1739d613251cf56faf322a24f4",
+    "back.png": "835217e7ba1ef554c284d0320bb69460fa72f0bcb79f1658896ebdc0e8346e70",
+    "west.png": "c6f90b548de4e3e41737579b99e754e710b4f1bdf51f97f4ebefbf887c83a6a5",
+    "east.png": "20f0eb8054f310f4fd402411430a74d8c2b63518a1ac5daa41d60482da02b368",
+    "top.png": "284a02a9b875b5d593c0e89bf4a85438d56c31b3fd62a5aee343741667649fbb",
+    "entry-detail.png": "c72b7411ea41b7f3f25cedcf7291040e1d25fde6fad41037136b73b8c7340516",
+    "facade-detail.png": "193519172de45c80b2b05b39478bf1abe6a0c40f3aee5224c119ad3412a9ecda",
+    "roof-detail.png": "5e8f032d7498a29a722943798a6aa35d8a9b591df0a04cce7f556c90a65131f9"
+  }
+}

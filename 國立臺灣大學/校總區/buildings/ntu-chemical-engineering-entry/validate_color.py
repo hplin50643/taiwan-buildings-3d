@@ -15,9 +15,11 @@ checks['3MF_object_identity']=e.find('.//m:object',ns).attrib.get('name')=='NTU 
 # Retained isolated original build + color program reproduction, never TemporaryDirectory cleanup.
 before={n:H(R/n)for n in ['build_model.py','colorize_model.py','model.stl','color-mesh.npz','appearance-materials.json']}
 tmp=Path(tempfile.mkdtemp(prefix='ntu-chemical-engineering-entry-color-isolated-'))
-for n in ['build_model.py','colorize_model.py']:shutil.copy2(R/n,tmp/n)
+for n in ['build_model.py','colorize_model.py','export_appearance.py']:shutil.copy2(R/n,tmp/n)
 subprocess.run([sys.executable,str(tmp/'build_model.py')],check=True,capture_output=True)
 subprocess.run([sys.executable,str(tmp/'colorize_model.py')],check=True,capture_output=True)
+subprocess.run([sys.executable,str(tmp/'export_appearance.py')],check=True,capture_output=True)
+with zipfile.ZipFile(tmp/'appearance.3mf') as z1,zipfile.ZipFile(R/'appearance.3mf') as z2:checks['isolated_3MF_XML_identical']=z1.read('3D/3dmodel.model')==z2.read('3D/3dmodel.model')
 checks['isolated_original_STL_hash']=H(tmp/'model.stl')==expected
 checks['isolated_color_mesh_hash']=H(tmp/'color-mesh.npz')==H(R/'color-mesh.npz')
 checks['isolated_palette_assignment_hash']=H(tmp/'appearance-materials.json')==H(R/'appearance-materials.json')

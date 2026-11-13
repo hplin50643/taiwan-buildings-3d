@@ -1,0 +1,34 @@
+{
+  "status": "BOUNDED_PARTIAL_COLOR_SOURCE_REGISTER",
+  "source_go_sha256": "78d131a2feab4ffab8e8aa080d4add3b0317dabea4051d5f91144bc5b656b195",
+  "source_version": "Official GA page published and updated 2026-09-29; image capture dates not established. Publication date is NOT photo capture date. Central entry facade only, no entire wings.",
+  "sources": [
+    {
+      "url": "https://ga.ntu.edu.tw/upload/cont_att/0c646e4e-acdb-490d-b624-8ef19419a8b1.jpg",
+      "sha256": "83f9cbaf64d984aa4053bc951a0a38b0b4fdc685d5f9c7e0283e3555c7b131fb"
+    },
+    {
+      "url": "https://ga.ntu.edu.tw/upload/cont_att/373ca0d6-ce59-4d24-ad7a-720fa0d60043.jpg",
+      "sha256": "752b5ae53d542c7d1b26ae0af6ef408464a784b01d56b7aad74694fedd40d6b4"
+    }
+  ],
+  "rights": "Public official photos without verified open license. Reference originals private only, no redistribution or textures.",
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "mandatory_notice": "局部窗罩、窗台、細柱、三拱門廊與門窗；磚牆及窗間實板分色未完成",
+  "private_source_backup": "來源已私人備份，原圖不公開。",
+  "count_delta": 0,
+  "geometry_unchanged": true,
+  "scope_limits": [
+    "Preserve original STL bytes and mesh geometry; no new/split geometry.",
+    "Full-vertex gating is necessary but NOT sufficient: connected coplanar semantic surfaces must be material-consistent. If an unmodeled real material boundary traverses the plane, keep entire connected semantic plane neutral, not only crossing triangles.",
+    "No artificial diagonal wedges from selectively painting triangles above/below z thresholds.",
+    "Unknown rear/end faces and roof surfaces remain neutral; photographic shadow/weathering not replicated.",
+    "Original reference photographs private; no public originals/textures or unverified license assertion.",
+    "Final scene material-domain and multi-view QA required; this review is source/code-level, not final polygon certification.",
+    "Main y=-11 facade continuous plane mixes red-brown brick piers and gray opaque spandrel strips between separate windows. Those gray strips are not separately modeled; cannot color whole wall brick or selectively paint window-aligned triangles gray. Keep connected mixed plane neutral.",
+    "Explicit broad right blind panel may be brick only if a genuinely separated semantic plane exists in original mesh; x-only polygon selection within continuous y=-11 wall is not enough.",
+    "No change to existing hood geometry, no invented gray spandrel relief, no AC/trees/lettering added.",
+    "Roof surface and end/rear walls neutral."
+  ]
+}

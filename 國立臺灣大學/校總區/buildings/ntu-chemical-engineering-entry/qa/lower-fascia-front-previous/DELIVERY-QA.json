@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "checks": {
+    "preview_size": true,
+    "preview_fresh": true,
+    "rear_size": true,
+    "rear_fresh": true,
+    "front_size": true,
+    "front_fresh": true,
+    "back_size": true,
+    "back_fresh": true,
+    "west_size": true,
+    "west_fresh": true,
+    "east_size": true,
+    "east_fresh": true,
+    "top_size": true,
+    "top_fresh": true,
+    "entry-detail_size": true,
+    "entry-detail_fresh": true,
+    "facade-detail_size": true,
+    "facade-detail_fresh": true,
+    "roof-detail_size": true,
+    "roof-detail_fresh": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_PASS": true,
+    "COLOR-FORMAT-GEOMETRY-QA.json_mesh": true,
+    "SCENE-QA.json_PASS": true,
+    "SCENE-QA.json_mesh": true,
+    "FRAMING-QA.json_PASS": true,
+    "FRAMING-QA.json_mesh": true,
+    "model.stl_original_bytes": true,
+    "build_model.py_original_bytes": true,
+    "first_section_ten_images": true,
+    "three_columns": true,
+    "no_private_absolute_paths_in_new_public_text": true
+  },
+  "images_sha256": {
+    "back.png": "f0d26672c71bc352c04ae540d65dc8631833b7bc60f61583e3af7dfede35a465",
+    "east.png": "02fae52079705294e74c447e96131281be7219a6be136568ebc8d465a027fccf",
+    "entry-detail.png": "adb4dd6831902ef8f80aca08f8d187739a4f449b317c79985cbaa48e20bce6bf",
+    "facade-detail.png": "4ca04329d978b38997e5d4d5f80fd26fc4d22f2760e93783a21dacaeb2272762",
+    "front.png": "70f41507adbf19d39992948686c7afa18b10809a2eb05306dcd23047a42bf251",
+    "preview.png": "35b7d90ca10a83366f33c2d4c1f62f7daa741a3e878e235b0b5c11374868c395",
+    "rear.png": "9c742438e80b8a02c8870b2e9a652a4ec9d4d48d17da405e708143f05fe59533",
+    "roof-detail.png": "8460921ba58429d60f18f3dc14e8efa24b667e884b303c31e28c1d3a92459d17",
+    "top.png": "b27b7893a416e6087043261d589917992aee6b0f6a74fff22f08e5d764fc135c",
+    "west.png": "98c1c74e5e5e7f164e9aaa43622b591001c36f2f1a6d9793cc4e7ebb687cbea7"
+  },
+  "mesh_sha256": "ada5ca9a7a585eb3989f1c4b746914a3a118c5b33f3826d38ab92525fdcd1609",
+  "geometry_change": false,
+  "count_delta": 0,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "manual_visual_review": "Builder final visual review recorded separately; original hoods/piers/portico and discrete window backs only. Main mixed brick-spandrel plane and unknown rear/end/roof remain neutral. Photo publication date not capture date.",
+  "limitations": [
+    "Four appearance materials, not a verified four-filament slicer job.",
+    "Original simplified geometry preserved; no current full-building survey claim."
+  ],
+  "no_text_update": {
+    "source_commit": "18b1d2f072f02770d3008be2b45f95abf78253be",
+    "qa": "NO-TEXT-QA.json",
+    "scope": "Caption disabled; geometry/materials unchanged. Existing limitations remain in README."
+  }
+}
