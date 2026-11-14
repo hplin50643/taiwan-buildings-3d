@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='23e28a2efe2c78a1f804c8323a680c5f61acef975845978990df9fa580b3d2b6'
 PALETTE=[('neutral_unknown_or_mixed','#AAA79F'),('warm_ivory_structure','#CECEC1'),('pale_silver_window_metal','#BBC6BE'),('muted_graygreen_glazing','#7F9891'),('navy_pv_panel_top','#455B70')]
+PALETTE.append(('left_roof_gray_background_approximation','#B7B9B1'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1);norm=np.cross(t[:,1]-t[:,0],t[:,2]-t[:,0])
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unknown_roof_rear_and_high_cube_mixed_panel_wall_neutral',dtype=object)
@@ -31,6 +32,8 @@ def classify(tri):
  for x,w,y,d,z in [(-28,76,-18,22,33.5),(38,46,-18,22,33.5),(-10,35,14,29,49)]:
   paint(box(x-w/2,x+w/2,y-d/2,y+d/2,z,z+2)&(norm[:,2]>.001)&(abs(norm[:,0])>.001),4,'official_aerial_verified_PV_original_sloped_tops_only_seam_floor_and_thick_sides_neutral')
  paint(hi[:,2]<=3.0001,0,'unsplit_base_not_lawn')
+ assert not color[[371, 377, 379, 381, 383, 384]].any()
+ color[[371, 377, 379, 381, 383, 384]]=5;why[[371, 377, 379, 381, 383, 384]]="original_left_roof_background_gray_approximation"
  return color,why
 
 def writezip(path,files):
@@ -38,7 +41,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-roof-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -56,7 +59,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NTHU official ground and 2019 EXIF aerial source photographs, uncalibrated proxies','scope':'Source-supported ivory front/right structure, pale mullions and separate graygreen window backs; official aerial verified PV upper sloped surfaces only. Incision floors, thick PV sides, unseen roof/rear and high cube mixed gray inset panel face neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NTHU official ground and 2019 EXIF aerial source photographs, uncalibrated proxies','scope':'Original5material scope retained; only6 full original leftwing roof triangles assigned new5 lightgray background. PV tops/seams/sides and other roof planes excluded; coarse layout and unseen equipment not reconstructed.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

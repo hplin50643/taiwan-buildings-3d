@@ -36,6 +36,8 @@ def classify(tri):
   for h in [z,z+10]:paint(box(x-3,x+3,y-w/2,y+w/2,h,h+2),4,'source_projecting_white_courtyard_frame_component')
   for v in [y-w/2+1,y+w/2-1]:paint(box(x-3,x+3,v-1,v+1,z,z+12),4,'source_projecting_white_courtyard_frame_component')
  paint(hi[:,2]<=3.0001,0,'unsplit_base_neutral')
+ assert not color[[10406, 10407]].any()
+ color[[10406, 10407]]=2;why[[10406, 10407]]="original_first_fin_left_return_brick_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -43,7 +45,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-fin-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -61,7 +63,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official NTHU archive PDF page6 as-built aerial and courtyard photographs; capture dates unknown, document dates not capture; uncalibrated proxies','scope':'Existing red steel screen/truss, visible ochre low hall, aerial-confirmed silver ribbed roof, white attached core and courtyard structural faces. Tall brick tower crosses unmodeled gray bands and stays neutral; long window backs mix opaque infill and glazing so remain neutral; unknown rear/roof neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Official NTHU archive PDF page6 as-built aerial and courtyard photographs; capture dates unknown, document dates not capture; uncalibrated proxies','scope':'Original6material scope retained; only2 first low-hall fin left-side original full rectangle triangles0toexisting2. Other10604indices unchanged; coarse fin geometry and source date limitations retained.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()
