@@ -42,3 +42,26 @@
 尺寸仍為 150 × 102 × 117 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是七個封閉分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+
+## 2026-11-14 有限外觀修正（新接續交付版）
+
+只原最低弧階 i0 的完整弧前立面64個平面、128個三角面作暖褐背景近似，排除踏面、側端、底面、上六級及其餘構件；原7材質保持。暖褐前立與淺米踏面分開，左塔、車輛與錐筒局部遮端僅同一原弧構件有限延續，不認證全域直接實見；其他同棟角度為補充，不是獨立交叉測色。原七粗級、64分段弧不同於真實級數、曲率及鼻緣細分；不修幾何，也不延色到右側實際轉階或坡道。原塔與最低弧不相交，照片塔遮影不等於模型切除。原階底2.3被基座頂2.4扣除，選域至2.95；原塔最小淨空2.256984mm，右平台與原弧無交。逐平面完整三角雙向支承仍有非零浮點差，不聲稱全零。
+
+本次五張官方照片已可讀，原README第五圖取得失敗為歷史記錄，不覆寫歷史。僅外觀材料家族近似，不是校準色、材種鑑定或逐階測繪；照片不認證拍攝日期或2026現況。原STL、幾何、面序、代表圖及原視角保持，歷史QA與製造限制仍適用。
+# Official references
+
+- https://secretary.nuu.edu.tw/p/132-1003-1102.php?Lang=zh-tw
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/2/1102/gallery_1102_3151800_43999.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/2/1102/gallery_1102_3886969_43999.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/2/1102/gallery_1102_4551047_43999.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/2/1102/gallery_1102_7326819_43999.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/2/1102/gallery_1102_8277325_43968.jpg
+
+J1 official album; current source3/4 lowest curved riser background.
+
+現版共 8 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是新接續建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。
