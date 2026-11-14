@@ -42,3 +42,30 @@
 尺寸仍為 150 × 64 × 59.3 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是七個封閉分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+
+## 2026-11-14 有限外觀修正（新接續交付版）
+
+僅原高塔後向上段 y15 完整六面域，其中五個未知中性面改用既有石灰1，385面原灰保持；原7材質逐值不變。不延前面、側面、頂面、下塔、簷底、警衛室或另一門。後向照片為直接材料證據，前向角度不能替代。石板縫、風化不逐項重建；照片近棚淺色斜凸翼原未建，矩形塔深寬及棚肋交會只是粗代理。只作後塔石族背景近似，不宣稱真牆全域均質，也不修復缺失凸翼。原無字標牌保持，不新增文字。完整域按原箱體扣棚與肋計算，非裁面營造安全小域。
+
+僅外觀材料家族近似，非校準色或石種鑑定，不把影子烘成材質。公開照片非2026現況認證。原STL、幾何、面序、原視角與代表圖保持；面域非零浮點外逸/反缺如實保留。原歷史QA及製造限制仍適用。
+# Official references
+
+- https://secretary.nuu.edu.tw/p/132-1003-1091.php?Lang=zh-tw
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/91/1091/gallery_1091_2217130_24417.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/91/1091/gallery_1091_8417783_24417.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/91/1091/gallery_1091_7586668_24417.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/91/1091/gallery_1091_2090367_24417.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/91/1091/gallery_1091_9856431_24417.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/91/1091/gallery_1091_5510997_24417.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/91/1091/gallery_1091_3663150_24418.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/91/1091/gallery_1091_6873705_24418.jpg
+- https://secretary.nuu.edu.tw/var/file/3/1003/gallery/91/1091/gallery_1091_4217440_24418.jpg
+
+Source0 rear tower primary; source1 rear context. Front views do not replace rear evidence.
+
+現版共 7 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是新接續建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。
