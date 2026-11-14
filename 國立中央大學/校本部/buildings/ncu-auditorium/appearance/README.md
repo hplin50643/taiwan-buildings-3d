@@ -42,3 +42,31 @@ blender -b -t 2 --python-exit-code 1 -P appearance/source/verify_scene.py
 [交換QA](qa/exchange-validation.json) · [Blender實編回讀](qa/scene-validation.json) · [獨立重建](qa/rebuild-validation.json) · [材料邊界](qa/material-boundary-audit.json) · [渲染記錄](qa/render-manifest.json)
 
 [逐檔雜湊](SHA256SUMS) · [權利說明](LICENSE-NOTICE.md)
+
+
+## 2026-11-14 有限外觀修正（重新建置交付版）
+
+# Bounded upper rim background approximation
+
+Fresh reconstruction, not lost-build recovery. Only 58 original neutral triangles on the negative-y uppermost outer vertical crown use new material4 upper_outer_rim_gray_white_background_approximation #CDCEC5/.88. Original four shaders and other9556 face indices, STL and geometry/order remain unchanged.
+
+Original 144gon outer ellipse61.5/41.5 clipped at x<=-20.5, z83..84.8 is a thick coarse proxy, not surveyed panels. Fine joints/layers are not modeled. Top, positive-y, inner/bottom, straight ends and full-height wall excluded. Aerial images0/1 establish the light crown separately from colored inner roof; ground3/4 only supplement family. Perspective endpoints and partial tree occlusion allow bounded same-component continuation, not calibrated color or material certification.
+
+29 independent complete planar shared-edge BFS domains are checked against original facet rectangles with per-triangle containment and reverse coverage. Area109.74475487859851mm², nonzero float32 outside0.0002169189541676994mm² and reverse missing0.00003119305987776717mm²; per-facet tolerance .001mm². Historical QA/root README/OBJ retained, not current verification. Install source/requirements-current.txt, run build_current.py then verify_current.py, Blender render_current.py. Five original1200² CPU48 cameras preserved. Original engineering/print limits remain; no print certification.
+
+# Public reference links
+
+- https://oss.gooood.cn/uploads/2021/11/009-multi-functional-auditorium-national-central-university-by-jjp-architects-and-planners.jpg
+- https://oss.gooood.cn/uploads/2021/11/010-multi-functional-auditorium-national-central-university-by-jjp-architects-and-planners.jpg
+- https://oss.gooood.cn/uploads/2021/11/014-multi-functional-auditorium-national-central-university-by-jjp-architects-and-planners.jpg
+- https://oss.gooood.cn/uploads/2021/11/015-multi-functional-auditorium-national-central-university-by-jjp-architects-and-planners.jpg
+- https://oss.gooood.cn/uploads/2021/11/016-multi-functional-auditorium-national-central-university-by-jjp-architects-and-planners.jpg
+- https://www.gooood.cn/multi-functional-auditorium-national-central-university-by-jjp-architects-and-planners.htm
+
+Architect-supplied photographs; aerial0/1 primary, ground3/4 supplemental, evening2 not rim color evidence. EXIF subIFD self-reports2020 capture dates, no offset and not authenticated. IFD0 2021 dates are modification fields, not capture. No private images or hashes redistributed.
+
+現版共 5 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是重新建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。

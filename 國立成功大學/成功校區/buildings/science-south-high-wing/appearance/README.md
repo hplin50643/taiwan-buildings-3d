@@ -41,3 +41,30 @@
 尺寸仍為 150 × 132 × 119 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是各材質各自封閉的分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+
+## 2026-11-14 有限外觀修正（重新建置交付版）
+
+# Third front frame background
+
+Only lowest-row third frame complete front ring48faces to new2 #C4C6BD/.88. Original two shaders and green coarse louvres unchanged. Architect image2 front grey-white family is distinguishable; grouped closed green leaves within selected frame, open corridor in adjacent right frame. Do not paint deep backing, sides, underside or other frames. Original26mm wide coarse box and five strips not per-box survey. No calibrated color or material certification. Six current images have no EXIF capture dates; page2013start/2018completion and upload path2024/footer2026 are not shutter dates. Historical QA/manufacturing limits preserved.
+
+Original four native1200 CPU48; no OBJ/root checksum. Original ZIP6 exact. Current fullplane BFS verifier/requirements included.
+
+# Public references
+
+- https://eds-tw.com/wp-content/uploads/2024/08/%E5%A2%83%E5%90%91-%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8%E7%90%86%E5%AD%B8%E9%99%A2%E5%A4%A7%E6%A8%9301.jpg
+- https://eds-tw.com/wp-content/uploads/2024/08/%E5%A2%83%E5%90%91-%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8%E7%90%86%E5%AD%B8%E9%99%A2%E5%A4%A7%E6%A8%9302.jpg
+- https://eds-tw.com/wp-content/uploads/2024/08/%E5%A2%83%E5%90%91-%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8%E7%90%86%E5%AD%B8%E9%99%A2%E5%A4%A7%E6%A8%9303-scaled.jpg
+- https://eds-tw.com/wp-content/uploads/2024/08/%E5%A2%83%E5%90%91-%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8%E7%90%86%E5%AD%B8%E9%99%A2%E5%A4%A7%E6%A8%9304-scaled.jpg
+- https://eds-tw.com/wp-content/uploads/2024/08/%E5%A2%83%E5%90%91-%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8%E7%90%86%E5%AD%B8%E9%99%A2%E5%A4%A7%E6%A8%9305.jpg
+- https://eds-tw.com/wp-content/uploads/2024/08/%E5%A2%83%E5%90%91-%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8%E7%90%86%E5%AD%B8%E9%99%A2%E5%A4%A7%E6%A8%9306.jpg
+- https://eds-tw.com/eds_projects/%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8%E7%90%86%E5%AD%B8%E9%99%A2%E5%A4%A7%E6%A8%93/
+
+Architect2 selected front ring only; no private evidence hashes.
+
+現版共 3 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是重新建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。

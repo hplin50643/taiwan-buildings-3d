@@ -43,3 +43,31 @@ lib3mf嚴格讀取零警告，單材質實編回存重開保持其他色與指�
 [逐檔雜湊](SHA256SUMS) · [權利說明](LICENSE-NOTICE.md)
 
 原STL SHA256：c100700000dfb445be70dab4615a2654875ba3de9ae63e0f0c1c096bec2f6d74
+
+
+## 2026-11-14 有限外觀修正（重新建置交付版）
+
+# Bounded original entrance steps tile-family approximation
+
+Fresh reconstruction, not lost-build recovery. Only12 original-neutral faces of3 entrance treads/front risers use existing material3 pale_warm_gray_front_tiles #BEB7AE/.78. Original4 shaders and other6676 indices, STL/geometry/order unchanged. No new material. This is a subdued warm-gray tile-family background approximation, not gray-stone certification or calibrated color.
+
+First front riser is clipped at basez3. Upper tread endsy=-47.35 while porch startsy=-44.5, retaining the original2.85mm gap. Original3 coarse steps/proportions are not individually surveyed real steps; fine nosing lines and partially obscured endpoints remain approximate. Skirts, rear riser, base, porch/platform and other surfaces excluded; no geometry repair.
+
+Six complete analytic-plane shared-edge BFS domains and source-step rectangular support checked bidirectionally. Area640.0000095367432mm², outside0.000333786011008641mm² and reverse missing0.0003242492677912878mm² explicitly nonzero float32 deviations; per-domain tolerance .001mm².
+
+Historical QA/root README/OBJ remain bytes-preserved, not current verification. Install source/requirements-current.txt, run build_current.py then verify_current.py and Blender render_current.py. Five native1200² CPU48 views unchanged. Original engineering/manufacturing/print restrictions remain.
+
+# Public reference links
+
+- https://storage.googleapis.com/world-study-prod/media/school_photo/1650/4ecd44cf-7019-459e-a202-6c2ed53b24e4.JPG
+- https://in.ncu.edu.tw/~ncu57006/uploads/20210423132949728.jpg
+- https://military.ncu.edu.tw/download/114.07.21%E9%98%B2%E7%81%BD%E8%A8%88%E7%95%AB-%E5%85%AC%E5%91%8A%E7%94%A8.pdf
+- https://deow.jp/taiwan/school/national-central-university/
+
+DEOW front photograph0 primary step-family evidence; official PDF page14 lower image confirms identity and facade family but crops stairs; wide photo1 other facade does not replace step evidence. EXIF source0 self-reports2018-09-27 without offset and is not authenticated. Official PDF2025 document dates are not shutter dates. No private photographs or hashes redistributed.
+
+現版共 4 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是重新建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。

@@ -40,3 +40,29 @@
 尺寸仍為 150 × 100 × 129 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是各材質各自封閉的分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+
+## 2026-11-14 有限外觀修正（重新建置交付版）
+
+# A/B crown background approximation
+
+This is a fresh reconstruction from the recorded repository baseline, not recovery of a lost build. Only three original complete front V-crown triangles (33143,33153,33155) change from neutral to new material 5 AB_crown_light_khaki_background_approximation, #C6C1A7 and roughness 0.88. All five original shaders and the other 33317 face indices remain unchanged. STL, topology and face order remain unchanged.
+
+The 81 mm² modeled polygon is a coarse pale-khaki background proxy, not a claim that the real component is homogeneous. The photographed gray curved border/soffit, fine divisions and exact proportions are not built. No back, side, underside, other tower or other window is extended. Camera EXIF is self-reported, not authenticated. Original engineering and manufacturing limitations remain. Historical QA files and original README stay byte-preserved and are not claimed as current verification.
+
+Rebuild: install appearance/source/requirements-current.txt with your package manager, run python -B appearance/source/build_current.py, then python -B appearance/source/verify_current.py, then blender -b --python appearance/source/render_current.py. Four original cameras and CPU48 samples are retained.
+
+# Public reference links
+
+- https://sthousing.site.nthu.edu.tw/var/file/254/1254/img/1333/IMG_2047.jpg
+- https://sthousing.site.nthu.edu.tw/var/file/254/1254/img/1333/IMG_2188.jpg
+- https://sthousing.site.nthu.edu.tw/var/file/254/1254/img/1333/IMG_2180.jpg
+- https://sthousing.site.nthu.edu.tw/p/404-1254-43329.php?Lang=zh-tw
+
+Official housing photographs: only image 2 (IMG_2180) registers the A/B narrow central crown; other wider glazed towers do not supply its material. Camera metadata date is self-reported, unverified and not current-condition authentication. Photos and private evidence are not redistributed.
+
+現版共 6 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是重新建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。

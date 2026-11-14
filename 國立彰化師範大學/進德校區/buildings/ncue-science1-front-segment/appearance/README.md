@@ -41,3 +41,39 @@
 尺寸仍為 150 × 52 × 106 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是各材質各自封閉的分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+
+## 2026-11-14 有限外觀修正（重新建置交付版）
+
+# Bounded entrance-step gray background
+
+Only12 neutral triangles become new3 #90958C/.88; original3 shaders and2438 other indices unchanged.
+
+Only three original entrance steps, six complete tread/front-riser domains and twelve neutral faces. Original formula add(55,-21+i*1.9,2.8,27,2.2,.8+i*.65), i0..2. First riser exposed bottomz3; top tread ends y-16.1 while hostfront is-11, original5.1 gap retained. Exclude side skirts/base/rear risers/door/porch/platform.
+
+Source1 official entrance closeup directly shows gray tread/riser background, yellow narrow nosings and pale side skirts/platform. Yellow fine nosings and surface granules are not modeled; proposed background approximation does not certify entire real stairs homogeneous gray. Original three coarse steps/width/depth/level count are not individually surveyed. Do not add missing stripes or bridge the gap.
+
+source0 official whole facade corroborates entrance identity and family but stairs partly cropped; source2 side ramp is not evidence for central step faces. All three newly retrieved supplied originals and nativefront fully inspected. Official award report newly GET200 read for identity; awards/accessibility claims do not certify model engineering.
+
+Source0 has no capture EXIF. Newly read source1 subIFD Original2026:06:03 08:47:11 with OffsetTimeOriginal+08:00; source2 2026:06:10 15:42:06 with+08:00. Camera self-reports unverified. URL filenames1150908/1150914 and report event dates are not shutter dates; no later-condition claim.
+
+New original-STL full-plane shared-edge BFS and original step rectangle subtraction checked every triangle and reverse union. Area213.300002575mm2, outside0.000056648 and reverse missing0.000054073 are nonzero float32, each domain tolerance0.001mm2. No exact-zero claim.
+
+Original three shader values and geometry/STL/face order, historical QA and both original checksum schemas retained. Actual original ZIP6 all members same. OBJ exists preserved only. Nativefour views1200CPU48, no side view. Model remains front segment not entire building; original manufacturing/coarse depth/window/side-back limitations retained.
+
+Install source/requirements-current.txt, run build_current.py and verify_current.py then Blender render_current.py. No original boundary verifier existed; current complete verifier is newly supplied.
+
+# Public reference links
+
+- https://www.ncue.edu.tw/p/406-1000-34740,r93.php?Lang=zh-tw
+- https://www.ncue.edu.tw/var/file/0/1000/img/86/1150908-4.jpg
+- https://www.ncue.edu.tw/var/file/0/1000/img/86/1150914-2.jpg
+- https://www.ncue.edu.tw/var/file/0/1000/img/86/1150908-9.jpg
+
+Official source1 entrance closeup primary; source0 whole facade identity/family, source2 separate ramp not target. Source1 camera self-reports2026-06-03 08:47:11 +08:00, source2 2026-06-10 15:42:06 +08:00, unverified; filenames/report event dates not shutter dates. No private photographs redistributed.
+
+現版共 4 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是重新建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。

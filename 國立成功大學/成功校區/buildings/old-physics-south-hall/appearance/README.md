@@ -42,3 +42,27 @@
 尺寸仍為 150 × 62 × 39 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是八個封閉分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+
+## 2026-11-14 有限外觀修正（重新建置交付版）
+
+# Front hip background
+
+Only largest front hip slope two faces to new8 #79776D/.88; original eight shaders unchanged. Source0 gray-brown tile family with tree occlusion and cropped ends permits bounded same-slope background approximation, not every point directly seen. Source1 entrance is not roof evidence. Exclude thin front strip, side/rear hips, eaves/underside, walls and canopy. Coarse roof pitch/depth and missing tile rows retained; not measured color/tile species/current2026 condition. EXIF self-reported2023-11-12 without explicit offset; upload2023-11-13 distinct. Historical QA/manufacturing limits unchanged.
+
+Original four native1200 CPU48. No originalOBJ/rootSHA; originalZIP6 matches. Current complete-plane verifier and requirements included.
+
+# Public references
+
+- https://material.ncku.edu.tw/picture.php?/2964
+- https://material.ncku.edu.tw/_data/i/upload/2023/11/13/20231113092606-6a3f71a8-me.jpg
+- https://material.ncku.edu.tw/picture.php?/2965
+- https://material.ncku.edu.tw/_data/i/upload/2023/11/13/20231113092831-3e2219d2-me.jpg
+
+Source0 front roof background; source1 entrance only. Self-reported EXIF2023-11-12 no offset; upload11-13 distinct. No private photos/hashes.
+
+現版共 9 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是重新建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。

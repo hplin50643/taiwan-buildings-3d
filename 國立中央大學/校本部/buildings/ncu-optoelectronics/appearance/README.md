@@ -34,3 +34,32 @@
 
 ## 原模型與製造限制保留
 原模型量體、院落比例為照片目測，非測繪/BIM/施工檔；後立面完整孔數及未見內院簡化，頂棚、柱、格條加厚。原415層0.2 mm閉環有效性檢查與1 mm採樣0.8 mm XY開運算薄篩是歷史幾何QA，本次未重算。保留z=82.071 mm兩根2.6×3 mm門框頂端開運算損失1.77%警示；不是發現小於0.8 mm薄壁，也非全域壁厚保證。大入口跨量體、格棚與內廊仍需切片支撐/橋接及移除性檢查；未正式切片或實體試印，不保證免支撐或可印。3MF材質不保證特定切片器自動多色列印。
+
+
+## 2026-11-14 有限外觀修正（重新建置交付版）
+
+# Bounded central column-front background approximation
+
+Fresh reconstruction, not lost-build recovery. Only6 original-neutral triangles on3 central column front faces receive new material3 central_column_front_pale_gray_background_approximation #C5C5BB/.88. Original3 shaders and other4132 indices, STL/geometry/order unchanged.
+
+Front domains at y=-44.5, x=-22/0/22, original width2.4, z3..38. Original box extends to38.1 but elevated host begins38; embedded0.1 excluded. Sides/backs, host/soffit, railings and stairs excluded. Original rectangular count/shape/proportions are coarse proxies of real column system, lower railing occlusion is not resolved. Pale-gray background family only, not stone certification, measured registration or calibrated color.
+
+Three complete analytic-plane shared-edge BFS domains verified against original column rectangle minus host with bidirectional coverage. Area252.00011014938354mm² versus analytic252mm²; outside0.00011014938364750648mm² is nonzero float32 width deviation, reverse missing0; per-domain tolerance .001mm².
+
+Historical QA/root README/OBJ remain bytes-preserved, not current verification. Install source/requirements-current.txt; run build_current.py, verify_current.py, Blender render_current.py. Five native1200² CPU48 cameras unchanged. Original engineering/thin-feature/manufacturing restrictions remain, no physical print certification.
+
+# Public reference links
+
+- https://www.reiju.com.tw/files/Project/09-Financial%20%26%20Educational%20institution/15-%E4%B8%AD%E5%A4%AE/09015.jpg
+- https://www.reiju.com.tw/files/Project/09-Financial%20%26%20Educational%20institution/15-%E4%B8%AD%E5%A4%AE/C.jpg
+- https://www.reiju.com.tw/files/Project/09-Financial%20%26%20Educational%20institution/15-%E4%B8%AD%E5%A4%AE/C-11.jpg
+- https://military.ncu.edu.tw/download/114.07.21%E9%98%B2%E7%81%BD%E8%A8%88%E7%95%AB-%E5%85%AC%E5%91%8A%E7%94%A8.pdf
+- https://www.reiju.com.tw/product/detail/09015
+
+Contractor photo0 central entrance primary pillar-family evidence; official PDF page20 upper image supplementary. PDF lower engineering-building image and side/rear photos1/2 not transferred to central columns. Three image GETs succeeded; contractor webpage GET404 was not read as content. Source0 EXIF self-reports2011-02-09; sources1/2 2010-11-04, no offset and not authenticated. Official PDF2025 dates not shutter dates. No private images or hashes redistributed.
+
+現版共 4 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是重新建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。

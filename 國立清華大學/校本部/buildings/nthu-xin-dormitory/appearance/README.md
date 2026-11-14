@@ -40,3 +40,30 @@
 尺寸仍為 150 × 140 × 107 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是各材質各自封閉的分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+
+## 2026-11-14 有限外觀修正（重新建置交付版）
+
+# Bounded upper-gable background approximation
+
+Fresh reconstruction, not lost-build recovery. Only 26 original front upper-gable triangles use existing material1 dusty_mauve_brick_infill #967F88, roughness .78. Four original shaders and remaining5244 face indices are unchanged, as are STL/geometry/order.
+
+The original linking-bay cut removes the lower gable and turns the round cut into an open notch. The change does not repair geometry or reproduce a complete real gable, enclosed oculus, pale coping, circular frame or louver. Original folded wings/proportions/depth and engineering limitations remain. This is uncalibrated background-family approximation, not homogeneous material or precise color certification.
+
+The exact STL domain has area 5.179927823002799 mm² versus analytic polygon 5.17993216920227 mm²; float32 outside area 0.0000006003601961981613 and reverse missing area 0.0000049465596656860864 mm² are explicitly nonzero. Full-plane shared-edge BFS plus original wedge minus linking cut and48gon hole are verified within .001 mm² tolerance.
+
+Historical QA and original README remain byte-preserved, not claimed as current verification. Install appearance/source/requirements-current.txt, then run python -B appearance/source/build_current.py; python -B appearance/source/verify_current.py; blender -b --python appearance/source/render_current.py. Original4 native cameras/CPU48 are preserved.
+
+# Public reference links
+
+- https://sthousing.site.nthu.edu.tw/var/file/254/1254/img/449/IMG_1111.jpg
+- https://sthousing.site.nthu.edu.tw/var/file/254/1254/img/449/IMG_0976.jpg
+- https://sthousing.site.nthu.edu.tw/p/404-1254-13727.php?Lang=zh-tw
+
+Official housing photographs. Image 0 front small gable is the material-family evidence; image 1 rear entry does not establish the front target. EXIF camera dates and offset are self-reported and unverified, not proof of current condition. No photographs or private evidence redistributed.
+
+現版共 4 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是重新建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+
+本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
+
+現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。
