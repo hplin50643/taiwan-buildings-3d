@@ -30,6 +30,8 @@ def classify(tri):
  paint((hi[:,1]<=-23.3498)&zz(2.8,4.9)&(lo[:,0]>=-14.5002)&(hi[:,0]<=14.5002),2,'existing_front_steps_gray_stone')
  paint((n[:,2]>.05)&(n[:,1]<-.05)&(lo[:,2]>=27.9998)&(hi[:,2]<=35.0002),4,'registered_visible_front_roof_slopes_dark_gray')
  paint(hi[:,2]<=3.0001,5,'display_base_not_landscape')
+ assert not color[[487,488,492]].any()
+ color[[487,488,492]]=4;why[[487,488,492]]="central_projecting_left_hip_complete_plane_charcoal_tile_approximation"
  return color,why
 
 def writezip(path,files):
@@ -37,7 +39,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-roof-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -55,7 +57,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated official NTU administration photograph credited to Chen Chao-lun; watermark 2014 and embedded DateTimeOriginal 2014-07-28 16:15:13, timezone unprovided and not independently verified approximations, not measured material swatches','scope':'Registered front brick, four pale columns and capitals, pale recess returns and grayblue glazing; unseen rear neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated official NTU administration photograph credited to Chen Chao-lun; watermark 2014 and embedded DateTimeOriginal 2014-07-28 16:15:13, timezone unprovided and not independently verified approximations, not measured material swatches','scope':'Original registered front retained plus complete central projecting left hip slope3faces to existingroof4; other1883 unchanged. Approximate hip geometry, not measured tile mapping; unseen rear neutral.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='2cff1b6eb73f9cfb419d7298460adef5379b08bcc1ab73ef1a481b16546b7e17'
 PALETTE=[('neutral_unresolved','#AAA79F'),('muted_ochre_brown_brick','#A38B68'),('gray_stone_frames_and_bands','#92978D'),('dark_window_frames','#625F50'),('lower_window_glazing','#6A8075'),('warm_timber_entry','#AC7D45'),('display_base','#888C88')]
+PALETTE.append(('entry_step_gray_approximation','#90958C'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1);n=np.cross(t[:,1]-t[:,0],t[:,2]-t[:,0]);n/=np.linalg.norm(n,axis=1)[:,None]
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unresolved_tall_window_spandrel_glass_boundary_or_unseen_ends_roof_neutral',dtype=object)
@@ -39,6 +40,8 @@ def classify(tri):
  for z in [39,47]:paint(xx(-30.25,-21.75)&yy(26.7,28.7)&zz(z,z+.9),3,'garden_projected_bay_existing_window_crossbars')
  paint(xx(-33,-19)&plane(1,26.5)&zz(4,26),0,'garden_door_recess_neutral_not_glass')
  paint(hi[:,2]<=3.0001,6,'display_base_not_site_surface')
+ assert not color[[12363, 12364, 12365, 12366, 12373, 12374, 12375, 12376, 12382, 12386, 12387, 12389, 12400, 12401, 12402, 12403, 12415, 12417, 12418, 12420]].any()
+ color[[12363, 12364, 12365, 12366, 12373, 12374, 12375, 12376, 12382, 12386, 12387, 12389, 12400, 12401, 12402, 12403, 12415, 12417, 12418, 12420]]=7;why[[12363, 12364, 12365, 12366, 12373, 12374, 12375, 12376, 12382, 12386, 12387, 12389, 12400, 12401, 12402, 12403, 12415, 12417, 12418, 12420]]="original_entry_step_tread_riser_gray_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -46,7 +49,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-step-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -64,7 +67,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated Open House, Taipei City and original photographer street/garden photos; dates not independently verified','scope':'Observed long walls ochre brick, existing stone arch trims/bands, dark frame members and timber entry. All tall window backs neutral because original triangles cross solid stone spandrels and glazing; not a restored material boundary. Lower window backs only glazing. Ends and roof neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated Open House, Taipei City and original photographer street/garden photos; dates not independently verified','scope':'Observed long walls ochre brick, existing stone arch trims/bands, dark frame members and timber entry. All tall window backs neutral because original triangles cross solid stone spandrels and glazing; not a restored material boundary. Lower window backs only glazing. Ends and roof neutral. Added20original entry tread/riser triangles gray7; other13156unchanged, no landing/ramp extension.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='4ecea8d81d75b9516a6adedc9a467d159325959f6ea79ccab3c14cca0ec4615d'
 PALETTE=[('neutral_unseen','#AAA79F'),('brick_red_infill','#A46657'),('light_gray_structure','#B3B7AE'),('pale_precast_hoods','#D0D4CA'),('muted_glazing','#5E7069'),('gray_canopy_and_entry_frames','#959E95'),('display_base','#888C88')]
+PALETTE.append(('entry_step_gray_approximation','#969A92'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1);n=np.cross(t[:,1]-t[:,0],t[:,2]-t[:,0]);n/=np.linalg.norm(n,axis=1)[:,None]
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unseen_rear_ends_and_roof_top_neutral',dtype=object)
@@ -28,6 +29,8 @@ def classify(tri):
  for x in range(-66,67,4):paint(xx(x-.6,x+.6)&yy(-19.4,-14.4)&zz(44,46.5),2,'existing_front_roof_edge_teeth_gray')
  paint(plane(1,-18)&zz(46,48),2,'front_roof_edge_only_not_unseen_top')
  paint(hi[:,2]<=3.0001,6,'display_base_not_site_surface')
+ assert not color[[14427, 14428, 14429, 14430, 14437, 14438, 14439, 14440, 14445, 14450, 14451, 14452, 14461, 14462, 14464, 14466]].any()
+ color[[14427, 14428, 14429, 14430, 14437, 14438, 14439, 14440, 14445, 14450, 14451, 14452, 14461, 14462, 14464, 14466]]=7;why[[14427, 14428, 14429, 14430, 14437, 14438, 14439, 14440, 14445, 14450, 14451, 14452, 14461, 14462, 14464, 14466]]="original_entry_step_tread_riser_gray_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -35,7 +38,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-step-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)

@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='cf2d99b0abefa670f963aa51fb23462d359e2f06f1dba9f169aeb47bd6fc7697'
 PALETTE=[('neutral_unknown','#AAA79F'),('cream_yellow_tile','#C9BE9C'),('ivory_screen','#D6D7CC'),('silver_window_frames','#BFC5BF'),('muted_graygreen_glass','#81918A'),('gray_concrete_eave_canopy','#A5AAA5'),('neutral_screen_recess_NOT_glass','#7C827C')]
+PALETTE.append(('entry_step_gray_approximation','#92978F'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1)
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unregistered_side_rear_roof_and_entry_neutral',dtype=object)
@@ -28,6 +29,8 @@ def classify(tri):
  for x in [-32,8]:paint(box(x-1.1,x+1.1,-23.5,-18.5,3,16),1,'source_entry_cream_tile_support')
  paint((plane(1,-18.5)|plane(0,70.5))&box(-70.5,70.5,-18.5,26.5,41,43.2),5,'source_front_right_gray_eave_fascia_not_rooftop')
  paint(hi[:,2]<=3.0001,0,'unsplit_ground_neutral')
+ assert not color[[2211, 2212, 2213, 2214, 2222, 2223, 2224, 2225, 2237, 2238, 2239, 2240]].any()
+ color[[2211, 2212, 2213, 2214, 2222, 2223, 2224, 2225, 2237, 2238, 2239, 2240]]=7;why[[2211, 2212, 2213, 2214, 2222, 2223, 2224, 2225, 2237, 2238, 2239, 2240]]="original_entry_step_tread_riser_gray_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -35,7 +38,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-step-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)

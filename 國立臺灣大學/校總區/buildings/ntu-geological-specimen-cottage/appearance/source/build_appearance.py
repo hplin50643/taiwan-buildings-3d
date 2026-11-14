@@ -42,6 +42,8 @@ def classify(tri):
  paint(box(47,73,-23.35,-21.65,7,8.5),5,'visible_vestibule_horizontal_frame')
  paint(box(45.5,74.5,-24,24,29,30.8),5,'documented_vestibule_metal_canopy')
  paint(hi[:,2]<=3.0001,0,'original_unsplit_ground_neutral')
+ assert not color[[412,416,433,437]].any()
+ color[[412,416,433,437]]=1;why[[412,416,433,437]]="upper_pentagonal_cut_returns_pale_plaster_approximation"
  return color,why
 
 def writezip(path,files):
@@ -49,7 +51,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-recess-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -67,7 +69,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NTU official 2014 newsletter and 2010 historic photograph; uncalibrated proxies','scope':'Documented two end walls and one blind long wall; dark roof extended as one tile material system, gray-green ridge vents, buff base, gray stone hoods and discrete muted panes. Unknown reverse long wall and reverse vestibule neutral; no logos or aging texture.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NTU official 2014 newsletter and 2010 historic photograph; uncalibrated proxies','scope':'Documented two end walls and one blind long wall; dark roof extended as one tile material system, gray-green ridge vents, buff base, gray stone hoods and discrete muted panes. Two upper x-negative pentagonal window returns4faces additionally use existing paleplaster1; other3134 unchanged. Unknown reverse long wall and reverse vestibule neutral; no logos or aging texture.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

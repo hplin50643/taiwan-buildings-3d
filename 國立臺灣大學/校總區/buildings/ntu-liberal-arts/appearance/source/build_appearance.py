@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='5f78a0f6ffc52ce5edcf7f99a7393780bbb3a4f35ecf91609b2dab363c001e93'
 PALETTE=[('neutral_unseen','#AAA79F'),('warm_brown_brick','#A88970'),('light_gray_stone_relief','#BEBEB3'),('bluegray_window_recess','#65797D'),('charcoal_roof','#505552'),('display_base','#888C88')]
+PALETTE.append(('bounded_gray_portico_coping_front_proxy','#8E9288'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1);c=t.mean(axis=1);n=np.cross(t[:,1]-t[:,0],t[:,2]-t[:,0]);n/=np.linalg.norm(n,axis=1)[:,None]
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unregistered_side_rear_roof_and_deep_portico_neutral',dtype=object)
@@ -29,6 +30,8 @@ def classify(tri):
  paint((n[:,2]>.05)&(lo[:,2]>=30.9998)&(hi[:,2]<=40.0002)&(hi[:,1]<=-10.4998)&(lo[:,0]>=-17.501)&(hi[:,0]<=17.501),2,'existing_central_gable_top_edge_gray_proxy_not_new_detail')
  paint(np.all(abs(t[:,:,2]-17.6)<.0002,axis=1)&(n[:,2]>.9),0,'unseen_portico_terrace_top_neutral')
  paint(hi[:,2]<=3.0001,5,'display_base_not_landscape')
+ assert (color[[2096, 2101, 2104, 2107, 2110, 2115]]==1).all()
+ color[[2096, 2101, 2104, 2107, 2110, 2115]]=6;why[[2096, 2101, 2104, 2107, 2110, 2115]]="bounded_gray_portico_coping_front_proxy"
  return color,why
 
 def writezip(path,files):
@@ -36,7 +39,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-recess-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -54,7 +57,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated official NTU student counseling location photograph; embedded DateTimeOriginal 2022-03-11 10:42:43, timezone unprovided and not independently verified approximations, not measured material swatches','scope':'Source-registered front brick, pale arch relief and wing glazing; central upper open arcade is not glass; rear neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated official NTU student counseling location photograph; embedded DateTimeOriginal 2022-03-11 10:42:43, timezone unprovided and not independently verified approximations, not measured material swatches','scope':'Source-registered front brick, pale arch relief and wing glazing; central upper open arcade is not glass; rear neutral. Six exposed portico coping front faces changed from broad brick to gray proxy; top/backs unchanged.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

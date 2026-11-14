@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='e787eed05e65220adfc6118c4da2cf82c4a7b3247c258df38b3de592241ad8fb'
 PALETTE=[('neutral_mixed_masonry_corridors_canopy_trim_roof','#AAA79F'),('source_pale_reflective_gray_glazing_proxy','#C5CBCA'),('source_restrained_bluegray_thin_mullions','#537E89')]
+PALETTE.append(('bounded_pale_gray_arch_surround_proxy','#ABB0A8'))
 def classify(tri):
  t=tri;eps=.0001;color=np.zeros(len(t),dtype=int);why=np.full(len(t),'mixed_redgray_walls_open_corridor_arcades_canopy_roundaperture_archtrim_roof_back_neutral',dtype=object)
  mask=np.all(abs(t[:,:,1]+27.5)<eps,axis=1)&np.all((abs(t[:,:,0])<=6+eps)&(t[:,:,2]>=16-eps)&(t[:,:,2]<=50+eps),axis=1);assert mask.sum()==25;color[mask]=1;why[mask]='source2010_central_arch_discrete_glazing_back_pale_reflection_proxy_not_cyan'
@@ -17,6 +18,8 @@ def classify(tri):
   mask=bs([x-.5,-29.05,16],[x+.5,-27.55,42],54);color[mask]=2;why[mask]='source2010_existing_central_arch_thin_vertical_bluegray_mullion'
  for z,count in zip(range(20,47,5),[36,36,36,36,36,16]):
   mask=bs([-6,-29.05,z],[6,-27.55,z+1],count);color[mask]=2;why[mask]='source2010_existing_central_arch_thin_horizontal_bluegray_mullion'
+ assert not color[[886, 888, 890, 891, 892, 896, 897, 898, 899, 900, 905, 906, 907, 913, 914, 915, 916, 917, 918, 925, 926, 927, 928, 929, 930, 931, 936, 942, 943, 944, 946, 947, 951, 952, 953, 954, 955, 960, 961, 962, 963, 964, 965, 966, 967, 972, 973, 974, 975, 982, 983, 984]].any()
+ color[[886, 888, 890, 891, 892, 896, 897, 898, 899, 900, 905, 906, 907, 913, 914, 915, 916, 917, 918, 925, 926, 927, 928, 929, 930, 931, 936, 942, 943, 944, 946, 947, 951, 952, 953, 954, 955, 960, 961, 962, 963, 964, 965, 966, 967, 972, 973, 974, 975, 982, 983, 984]]=3;why[[886, 888, 890, 891, 892, 896, 897, 898, 899, 900, 905, 906, 907, 913, 914, 915, 916, 917, 918, 925, 926, 927, 928, 929, 930, 931, 936, 942, 943, 944, 946, 947, 951, 952, 953, 954, 955, 960, 961, 962, 963, 964, 965, 966, 967, 972, 973, 974, 975, 982, 983, 984]]="bounded_gray_arch_outer_front_proxy"
  return color,why
 
 def writezip(path,files):
@@ -24,7 +27,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-recess-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -42,7 +45,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Four complete official NTU campusplanning photos cameraOriginal2010-10-16, modified2011-01-11 separate. Central arch pale reflectivegray glass proxy and restrainedbluegray thin mullions only','scope':'Central arched recessback and2vertical6horizontal originalbox members only. Broad architectural archtrim neutral, not sameas thinmetal frame. Redgraywallmixedfaces,openwingcorridors and groundarcades,canopy,roundaperture,roof/back neutral. No2026conditionclaim;originalSTLunchanged.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Four complete official NTU campusplanning photos cameraOriginal2010-10-16, modified2011-01-11 separate. Central arch pale reflectivegray glass proxy and restrainedbluegray thin mullions retained; new outer front gray surround proxy','scope':'Original central recessback and thin frame retained; added outermost front arch surround only. Outer front archtrim52faces bounded pale gray proxy, deep returns neutral; not thinmetal frame. Redgraywallmixedfaces,openwingcorridors and groundarcades,canopy,roundaperture,roof/back neutral. No2026conditionclaim;originalSTLunchanged.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='85353c0383c69b73511f5037f94245375f016aad560129f8dc6adcae2e980724'
 PALETTE=[('neutral_unknown','#AAA79F'),('ivory_white_ceramic_screen','#D7D7C9'),('warm_gray_concrete_bands_piers','#999B8E'),('warm_gray_ceramic_inner_walls','#AB9B83'),('neutral_backed_hole_NOT_glass','#969086'),('pale_graygreen_lower_glass_proxy','#B6C1B6')]
+PALETTE.append(('entry_step_gray_approximation','#939A94'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1)
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unknown_side_rear_roof_and_mixed_lower_surround_neutral',dtype=object)
@@ -29,6 +30,8 @@ def classify(tri):
  for x in [-66,-52.8,-39.6,-26.4,-13.2,0,13.2,26.4,39.6,52.8,66]:paint(box(x-1.1,x+1.1,-19.75,-16.25,3,14),2,'source_ground_concrete_pier')
  for x in [-57,-44,-31,-18,-5,8,21,34,47,60]:paint(plane(1,-12.9)&xx(x-4.5,x+4.5)&zz(4,11.5),5,'coarse_lower_glass_proxy_missing_redbrown_frames_disclosed')
  paint(hi[:,2]<=3.0001,0,'original_unsplit_ground_neutral')
+ assert not color[[21644, 21645, 21646, 21647, 21655, 21656, 21657, 21658, 21668, 21669, 21670, 21671, 21681, 21683, 21686, 21687, 21688, 21689, 21690, 21694, 21695, 21696, 21697, 21698, 21699, 21700, 21701, 21706]].any()
+ color[[21644, 21645, 21646, 21647, 21655, 21656, 21657, 21658, 21668, 21669, 21670, 21671, 21681, 21683, 21686, 21687, 21688, 21689, 21690, 21694, 21695, 21696, 21697, 21698, 21699, 21700, 21701, 21706]]=6;why[[21644, 21645, 21646, 21647, 21655, 21656, 21657, 21658, 21668, 21669, 21670, 21671, 21681, 21683, 21686, 21687, 21688, 21689, 21690, 21694, 21695, 21696, 21697, 21698, 21699, 21700, 21701, 21706]]="original_short_entry_step_tread_riser_gray_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -36,7 +39,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-step-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -54,7 +57,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NTU official visitor-center exterior photograph, capture date unknown; uncalibrated proxies','scope':'Ivory coarse circular screen, warm ceramic interiors and neutral backed dimples not glass, gray concrete bands/piers, pale lower glazing proxy. Missing redbrown frames and red entry subdivision omitted rather than invented; unknown sides/rear/roof neutral.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NTU official visitor-center exterior photograph, capture date unknown; uncalibrated proxies','scope':'Ivory coarse circular screen, warm ceramic interiors and neutral backed dimples not glass, gray concrete bands/piers, pale lower glazing proxy. Missing redbrown frames and red entry subdivision omitted rather than invented; unknown sides/rear/roof neutral. Added28complete original short-step tread/front-riser faces to separate gray6; no side skirts/plinth/red upper door platform extension. Original coarse geometry and all otherindices unchanged.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='6eb741451da41c9fa6c8689e4cf6784232a769d8503c76d914834f0cd6f115de'
 PALETTE=[('neutral_unknown','#AAA79F'),('muted_red_tile','#AD6B59'),('silver_gray_sunshades','#ADB3AC'),('offwhite_canopy','#D2D3C6'),('muted_graygreen_door_glass','#7E8E83'),('muted_graybronze_door_frames','#8D9481')]
+PALETTE.append(('entry_step_gray_approximation','#979D96'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1)
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unregistered_outer_sides_rear_roof_and_upper_louver_back_neutral',dtype=object)
@@ -28,6 +29,8 @@ def classify(tri):
  for x in [-26,-13,0,13,26]:paint(box(x-.5,x+.5,-24.5,-22.5,5,16),5,'source_existing_lower_vertical_door_frame_proxy')
  paint(box(-37,37,-40,-20,17,19.8),3,'source_offwhite_canopy_with_bounded_same_material_top')
  paint(hi[:,2]<=3.0001,0,'original_unsplit_ground_neutral')
+ assert not color[[2531, 2532, 2533, 2534, 2544, 2545, 2546, 2547, 2559, 2560, 2561, 2562, 2576, 2577, 2578, 2579, 2594, 2595, 2596, 2597, 2608, 2610, 2612, 2613]].any()
+ color[[2531, 2532, 2533, 2534, 2544, 2545, 2546, 2547, 2559, 2560, 2561, 2562, 2576, 2577, 2578, 2579, 2594, 2595, 2596, 2597, 2608, 2610, 2612, 2613]]=6;why[[2531, 2532, 2533, 2534, 2544, 2545, 2546, 2547, 2559, 2560, 2561, 2562, 2576, 2577, 2578, 2579, 2594, 2595, 2596, 2597, 2608, 2610, 2612, 2613]]="original_entry_step_tread_riser_gray_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -35,7 +38,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-step-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)

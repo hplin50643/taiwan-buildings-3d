@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='91b02a6dd3a1d3d889ec0d2497f36ebde39437bbd1d04609aead9771f0fbc4ad'
 PALETTE=[('neutral_unknown','#AAA79F'),('pale_cream_tiled_wall','#C6C3AC'),('muted_bluegray_window_strip','#85949C'),('dark_gray_mullions','#707B7B'),('gray_concrete_portico','#9FA39D')]
+PALETTE.append(('entry_step_gray_approximation','#959B95'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1)
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unregistered_sides_rear_roof_groundfloor_mixed_recess_neutral',dtype=object)
@@ -22,6 +23,8 @@ def classify(tri):
  paint(box(-33,63,-44,-12,21,25),4,'source_gray_portico_cap_bounded_same_material_top')
  for x in [-24,54]:paint(box(x-2.25,x+2.25,-40.25,-35.75,3,22),4,'source_gray_portico_pier')
  paint(hi[:,2]<=3.0001,0,'original_unsplit_ground_neutral')
+ assert not color[[2669, 2670, 2672, 2673, 2681, 2682, 2683, 2684, 2693, 2694, 2696, 2697]].any()
+ color[[2669, 2670, 2672, 2673, 2681, 2682, 2683, 2684, 2693, 2694, 2696, 2697]]=5;why[[2669, 2670, 2672, 2673, 2681, 2682, 2683, 2684, 2693, 2694, 2696, 2697]]="original_entry_step_tread_riser_gray_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -29,7 +32,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-step-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)

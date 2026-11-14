@@ -39,6 +39,8 @@ def classify(tri):
  for y in [-56,56]:paint(box(-11.5,11.5,y-4,y+4,16,17.5),1,'source_small_entry_stage_canopy')
  paint(box(-17,17,-63.85,-57.95,3,5.6)|box(-32,32,56.2,65,3,6.3),6,'source_front_and_rear_existing_steps_gray_stone')
  paint(hi[:,2]<=3.0001,0,'original_unsplit_ground_neutral')
+ assert not color[[1934,1938]].any()
+ color[[1934,1938]]=1;why[[1934,1938]]="rear_portal_beam_bottom_bounded_offwhite_approximation"
  return color,why
 
 def writezip(path,files):
@@ -46,7 +48,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-recess-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)

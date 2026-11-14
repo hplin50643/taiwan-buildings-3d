@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='931bee1b74562d474606610a63bc63bb96c6da3fe0da8ce9f1b6c9af0d3d8718'
 PALETTE=[('neutral_unseen','#AAA79F'),('warm_cream_arcade_and_trim','#D0CBAC'),('red_brown_brick','#9C6D5C'),('mint_metal_roof','#A3C4AF'),('dark_gray_band','#737B78'),('dark_brown_window_frames','#665745'),('muted_glazing','#70878A'),('display_base','#888C88')]
+PALETTE.append(('entry_step_gray_approximation','#8B928B'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1);n=np.cross(t[:,1]-t[:,0],t[:,2]-t[:,0]);n/=np.linalg.norm(n,axis=1)[:,None]
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unregistered_rear_and_return_walls_neutral',dtype=object)
@@ -35,6 +36,8 @@ def classify(tri):
  paint(plane(2,46.3)|plane(2,51.3)|plane(2,45.3),3,'original_flat_hip_roof_ridge_tops_mint')
  paint(plane(1,-16)&zz(37,38.7),1,'west_front_eaves_cream_only')
  paint(hi[:,2]<=3.0001,7,'display_base_not_site_paving')
+ assert not color[[4162, 4163, 4164, 4165, 4174, 4175, 4176, 4177, 4187, 4188, 4189, 4190, 4198, 4199, 4200, 4201]].any()
+ color[[4162, 4163, 4164, 4165, 4174, 4175, 4176, 4177, 4187, 4188, 4189, 4190, 4198, 4199, 4200, 4201]]=8;why[[4162, 4163, 4164, 4165, 4174, 4175, 4176, 4177, 4187, 4188, 4189, 4190, 4198, 4199, 4200, 4201]]="original_entry_step_tread_riser_gray_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -42,7 +45,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-step-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -60,7 +63,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated official museum front image and original photographer 2023-posted series; actual photo dates unknown','scope':'Central facade and west front arcade, original mint roof volumes registered to aerial. Lower and west arcade recesses are not glazing. Unknown return/rear walls neutral; no invented pediment coping or sign.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated official museum front image and original photographer 2023-posted series; actual photo dates unknown','scope':'Central facade and west front arcade, original mint roof volumes registered to aerial. Added16 lower4 stair tread/riser faces to gray8; topstep/skirt/landing excluded. Lower and west arcade recesses are not glazing. Unknown return/rear walls neutral; no invented pediment coping or sign.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

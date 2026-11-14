@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='f38bc5d22f4d5463adbb6e7b3890f3285d468b488a6b19afb77eb2791d1c61e4'
 PALETTE=[('neutral_mixed_walls_bands_portholes_lowentry_rearcolumns','#AAA79F'),('source_silvergray_original_roof_and_metal_rim','#B5BAB8'),('source_muted_bluegreen_portal_tower_glazing_proxy','#547C7B'),('source_dark_metal_tower_horizontal_bars','#555F60')]
+PALETTE.append(('entry_step_gray_approximation','#8E948B'))
 def classify(tri):
  from manifold3d import Manifold
  from scipy.spatial import ConvexHull,cKDTree
@@ -36,6 +37,8 @@ def classify(tri):
   assert len(ids)==count;paint(sorted(ids),3,'source_front_tower_original_projecting_metal_bar_box_surfaces_only')
  overlap=roof_mask&(color==3);assert overlap.sum()==1
  color[overlap]=0;why[overlap]='coincident_roof_rim_and_tower_bar_joint_unresolved_neutral'
+ assert not color[[9010, 9011, 9012, 9013, 9018, 9019, 9020, 9023, 9031, 9032, 9033, 9034]].any()
+ color[[9010, 9011, 9012, 9013, 9018, 9019, 9020, 9023, 9031, 9032, 9033, 9034]]=4;why[[9010, 9011, 9012, 9013, 9018, 9019, 9020, 9023, 9031, 9032, 9033, 9034]]="original_entry_step_tread_riser_gray_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -43,7 +46,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-step-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -61,7 +64,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Two complete official NTU photos: PE venue front captureunknown with blank EXIF placeholders; visitorcenter rear Original2012-03-15. Silvermetal roof and two portal tower glazing/metalbar accents only','scope':'Original sphere/rim convex supporting plane and allvertex containment includes clippedtriangles; no ellipsoid equality holes. Pink/brown mixedwalls,portholegrilles,lowentrywindows,rearcolumns and bands neutral. Original rooftruss omitted,not added. No current2026claim; unchangedSTL.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Two complete official NTU photos: PE venue front captureunknown with blank EXIF placeholders; visitorcenter rear Original2012-03-15. Silvermetal roof and two portal tower glazing/metalbar accents only','scope':'Original sphere/rim convex supporting plane and allvertex containment includes clippedtriangles; no ellipsoid equality holes. Pink/brown mixedwalls,portholegrilles,lowentrywindows,rearcolumns and bands neutral. Original rooftruss omitted,not added. No current2026claim; unchangedSTL. Added12 lowest3 left stair tread/riser faces to gray4 only; upper6/right/central stairs and skirt excluded.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

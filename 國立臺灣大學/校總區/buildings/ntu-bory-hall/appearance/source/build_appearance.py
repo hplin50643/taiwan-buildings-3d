@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='eff769ae90d85b19884af0c950d684f4af963d48339f71f6ea0898122f8c57af'
 PALETTE=[('neutral_unknown','#AAA79F'),('warm_gray_brown_wall','#A29C90'),('pale_ivory_bands','#D1D0BE'),('light_blue_gray_large_panes','#8EA7B0'),('dark_gray_narrow_panes','#647476'),('silver_gray_existing_frames','#AFBAB8'),('charcoal_roof_edge','#555D5D')]
+PALETTE.append(('entry_step_gray_approximation','#777D79'))
 def classify(tri):
  t=tri;lo=t.min(axis=1);hi=t.max(axis=1);n=np.cross(t[:,1]-t[:,0],t[:,2]-t[:,0]);n/=np.linalg.norm(n,axis=1)[:,None]
  color=np.zeros(len(t),dtype=int);why=np.full(len(t),'unseen_roof_rear_right_passage_and_mixed_core_neutral',dtype=object)
@@ -34,6 +35,8 @@ def classify(tri):
  # Core has a pale lower tile belt, with no original horizontal face boundary;
  # keep the complete mixed cylindrical side neutral rather than false diagonal.
  paint(hi[:,2]<=3.0001,0,'original_unsplit_ground_neutral')
+ assert not color[[9108, 9109, 9110, 9111, 9118, 9119, 9120, 9121, 9133, 9134, 9135, 9136, 9149, 9150, 9152, 9153]].any()
+ color[[9108, 9109, 9110, 9111, 9118, 9119, 9120, 9121, 9133, 9134, 9135, 9136, 9149, 9150, 9152, 9153]]=7;why[[9108, 9109, 9110, 9111, 9118, 9119, 9120, 9121, 9133, 9134, 9135, 9136, 9149, 9150, 9152, 9153]]="original_entry_step_tread_riser_gray_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -41,7 +44,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-step-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -59,7 +62,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NTU 2010 public exterior photographs and contractor project image; uncalibrated proxies','scope':'Visible front/left warm gray panels, pale bands, separate light central glass/dark narrow panes, silver original mullions and dark visible fascia. Mixed cylinder silver/white belt lacks mesh boundary and stays neutral, as do passage, right, rear and roof top.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'NTU 2010 public exterior photographs and contractor project image; uncalibrated proxies','scope':'Visible front/left warm gray panels, pale bands, separate light central glass/dark narrow panes, silver original mullions and dark visible fascia. Mixed cylinder silver/white belt lacks mesh boundary and stays neutral, as do passage, right, rear and roof top. Added16complete short entry-step tread/front-riser faces to gray7; no side skirt/landing/cylinder extension.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()

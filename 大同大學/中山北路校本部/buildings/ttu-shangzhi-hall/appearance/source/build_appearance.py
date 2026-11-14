@@ -5,6 +5,7 @@ import numpy as np
 A=Path(__file__).resolve().parents[1];R=A.parent
 SOURCE_SHA='01393ae4416f73bd5306842c6d2dfde4b15b3fd301674fe2a2a53829900ba000'
 PALETTE=[('neutral_unseen','#AAA69D'),('pale_columns_pediment','#C9CBC6'),('gray_stone_front','#989C99'),('gray_stairs','#828580'),('dark_openings_proxy','#394246'),('display_plinth','#8A8C88')]
+IDS=[25914, 25915, 25934, 25942, 25967, 25970]
 def classify(tri):
  t=tri.copy();t[:,:,:2]/=(150/68);t[:,:,2]=(t[:,:,2]-2.4)/(150/68)
  lo=t.min(axis=1);hi=t.max(axis=1);c=t.mean(axis=1);n=np.cross(t[:,1]-t[:,0],t[:,2]-t[:,0]);n/=np.linalg.norm(n,axis=1)[:,None]
@@ -33,6 +34,8 @@ def classify(tri):
  paint((lo[:,0]>=18.6499)&(hi[:,0]<=27.6651)&(lo[:,1]>=-8.1001)&(hi[:,1]<=8.1001)&zz(-.03,5.2),3,'existing_east_stairs_gray')
  paint((lo[:,0]>=18.6499)&(hi[:,0]<=27.6701)&(abs(c[:,1])>=8.1999)&(abs(c[:,1])<=9.0001)&zz(-.03,5.75),2,'existing_east_stair_cheek_walls')
  paint(tri[:,:,2].max(axis=1)<=2.4001,5,'display_base_not_real_ground')
+ assert not color[IDS].any()
+ color[IDS]=1;why[IDS]="whole_east_shallow_triangular_inset_return_family_approximation"
  return color,why
 
 def writezip(path,files):
@@ -40,7 +43,7 @@ def writezip(path,files):
   for name,data in files:
    info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16;z.writestr(info,data)
 def main():
- (A/'qa').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
+ (A/'qa-recess-continuation').mkdir(exist_ok=True);(A/'previews').mkdir(exist_ok=True)
  raw=(R/'model.stl').read_bytes();assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA
  n=struct.unpack_from('<I',raw,80)[0];assert len(raw)==84+50*n
  tri=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)],dtype=np.float64).reshape(n,3,3)
@@ -58,7 +61,7 @@ def main():
  ('[Content_Types].xml',b'<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>'),
  ('_rels/.rels',b'<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'),
  ('3D/3dmodel.model',E.tostring(model,encoding='utf-8',xml_declaration=True))])
- (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated university-credited entrance photograph approximations, not measured material swatches','scope':'East entrance only; dome, west portico and courts neutral. Outer east low-wing front and rail colors use bounded continuity extrapolation.'},ensure_ascii=False,indent=2)+'\n')
+ (A/'palette.json').write_text(json.dumps({'materials':[{'id':n,'srgb':c} for n,c in PALETTE],'colors':'Uncalibrated university-credited entrance photograph approximations, not measured material swatches','scope':'East entrance original scope retained plus six complete shallow triangular inset return faces to existing pale1. Dome/west/courts and deep soffit unchanged. Single-layer frame proxy, not actual fine cornice or measured color.'},ensure_ascii=False,indent=2)+'\n')
  (A/'face-materials.json').write_text(json.dumps({'source_stl_sha256':SOURCE_SHA,'vertices':len(v),'triangles':len(f),'original_triangle_order_unchanged':True,'face_material_indices':colors.tolist(),'face_reasons':why.tolist()},indent=2)+'\n')
  print(json.dumps({'faces':len(f),'vertices':len(v),'materials':dict(zip([x[0] for x in PALETTE],np.bincount(colors).tolist()))}))
 if __name__=='__main__':main()
