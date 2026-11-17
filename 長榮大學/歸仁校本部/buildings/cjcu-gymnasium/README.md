@@ -1,3 +1,34 @@
+# 長榮大學體育館｜兩入口圓柱同材質延續
+
+## 模型預覽
+
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![兩柱連續材質推論](entry-detail.png)|![柱身細節](facade-detail.png)|
+|![柱頂細節](roof-detail.png)|||
+
+## 本次兩入口圓柱完整柱身材質延續
+
+沿用現行 root 的兩槽配色版，不以歷史 appearance/ 任選屋面示意作基準。原左右柱各 4 個已色 facet、共 16 三角保留；兩柱剩餘 40 個完整矩形 facet／80 原中性三角延用既有淺灰槽 0。現在淺灰 96 面、中性 4,598 面；原 4,694 三角／2,345 點、STL bytes、頂點表、面序和座標皆精確不變。材質名稱仍含 visible left column 是歷史標籤，名稱及名義色 #CBCBC5 不改。
+
+每柱中心 (±12,−49)、原半徑 1.7、24 邊柱、z=3…31 mm，以各 chord 的有限平面、切向寬度、全三頂點及向外法向核對，每格原兩三角形成完整矩形，逐格解析面積檢查。底、帽頂、庇底、牆與屋頂完全排除；不新增幾何、不切面、不將深淺影子當新材料。
+
+本輪親看官方 campus_gym.jpg，兩柱全高可辨淺灰族；遠照各柱僅約 10 像素寬，背面是同一柱身材質連續推論，不是逐 facet 照片確證或精確石材／校色／紋理。照片拍攝日期未知，新取回不等於新拍攝；不宣稱 2026 現況或實體試印。
+
+整個 `appearance/`、`ORIGINAL-SOURCE-GAP-*`、舊來源、舊 QA、舊 checksum 與原工程檔保持原 bytes，歷史 1,206 屋面示意不轉為實景認證。舊 README 中 8 面／16 面只記錄當時範圍；本節明確記錄新的同柱推論。新版 QA 在 `qa-continuous-walls/`，本次逐檔校驗用 `CONTINUOUS-COLUMNS-SHA256SUMS`。root scene 與十張 PNG 是新版；不可把歷史 appearance/ 的圖誤作本次預覽。
+
+新版 3MF 用完整 float 座標字串，修正舊輸出四捨五入造成最大約 4.98×10⁻⁹ mm 座標差，沒有改 STL 幾何；並補規格的物件層預設材料以供原生編輯重存。strict 讀入精確對回原 STL。lib3mf 在臨時編輯副本的重存精度誤差另記，原交付不採該重存副本。
+
+重建包 `rebuild-continuous-columns.zip` 使用原公開 STL、固定 SHA 的 `column-baseline-color-mesh.npz`（先前 16 面版本，精確頂點表）和原 palette，不需任何照片。執行 `python build_continuous_columns.py`、`python verify_continuous_exchange.py`，再 `blender -b --python render_continuous_columns.py` 與 `blender -b --python verify_continuous_scene.py`。使用 numpy、lib3mf 2.5.0、Blender 4.3.2；原 `colorize_model.py`／`export_appearance.py` 是歷史入口，會重建舊 16 面版本，勿用於新版。原製造幾何限制及未經多料切片／試印限制全部保留。
+
+場景僅同步更新 source_mesh_sha256 以對應本次含材質指派的 color-mesh.npz，並更新 scope，明示完整柱身同材質連續推論及其餘表面中性、非現況證明；其餘原屬性、全部材質定義與幾何不變。
+
+本頁為現行說明；根 README.zh-TW.md 與 qa/ 中同名文件保留舊版本原文及原 bytes，僅作歷史記錄。
+
+## 前版說明與保留限制（完整歷史文字）
+
 # 長榮綜合體育館｜右入口柱有限前左扇區補色
 
 未完成全館配色。原左柱8面保持，新增右柱8面（4個完整24gon側面域），共16配色、4678中性、4694原三角。沿用原兩palette名稱、索引及名義#CBCBC5；第一材名稱仍含left column，是歷史名稱，現同灰族也用於本次有限右柱。
@@ -14,12 +45,6 @@
 
 **既有屋面展示色不是實景材質證；其餘未知域尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。本次僅左柱四個完整柱面8三角淺灰，不是原單色模型發現，也非全館補色完成。
 
-| 總覽 | 背側 | 正面 |
-|---|---|---|
-|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
-|![背面](back.png)|![西側](west.png)|![東側](east.png)|
-|![頂面](top.png)|![左柱完整可證域](entry-detail.png)|![原柱根](facade-detail.png)|
-|![原柱頂界](roof-detail.png)|||
 
 ## 範圍與限制
 同 cjcu-gymnasium 原項目，長榮大學歸仁校本部體育館，same-item、count_delta=0。原4694三角及所有62原件不變，immutable包無OBJ，不新增原OBJ。左柱中心(-12,-49)，24gon半徑1.7，k14..17有限chord共8面名義淺灰；全3頂點plane/tangent/z1e-5匹配，無限plane恰等有限面，z3..31是原Boolean露出界，不從照片人工裁色。所有共面連通域均一。
