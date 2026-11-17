@@ -1,0 +1,2089 @@
+{
+  "status": "PASS_INDEPENDENT_CLIPPED_FOUR_SHAFT_SIDE_DOMAINS",
+  "read_only": true,
+  "delivery_files_modified": false,
+  "triangles": 11418,
+  "vertices": 5693,
+  "face_ids": [
+    8037,
+    8038,
+    8039,
+    8040,
+    8053,
+    8054,
+    8055,
+    8057,
+    8068,
+    8069,
+    8070,
+    8071,
+    8072,
+    8073,
+    8074,
+    8075,
+    8076,
+    8077,
+    8078,
+    8079,
+    8080,
+    8081,
+    8083,
+    8084,
+    8085,
+    8086,
+    8087,
+    8088,
+    8089,
+    8090,
+    8091,
+    8092,
+    8093,
+    8094,
+    8095,
+    8096,
+    8185,
+    8186,
+    8187,
+    8188,
+    8197,
+    8198,
+    8199,
+    8200,
+    8207,
+    8208,
+    8209,
+    8210,
+    8211,
+    8212,
+    8213,
+    8214,
+    8215,
+    8216,
+    8221,
+    8222,
+    8223,
+    8224,
+    8229,
+    8230,
+    8231,
+    8232,
+    8233,
+    8234,
+    8235,
+    8236,
+    8237,
+    8238,
+    8239,
+    8240,
+    8241,
+    8242,
+    8329,
+    8330,
+    8334,
+    8335,
+    8337,
+    8338,
+    8342,
+    8343,
+    8345,
+    8346,
+    8347,
+    8348,
+    8349,
+    8350,
+    8351,
+    8352,
+    8353,
+    8354,
+    8363,
+    8364,
+    8365,
+    8366,
+    8375,
+    8376,
+    8377,
+    8378,
+    8379,
+    8380,
+    8381,
+    8382,
+    8383,
+    8384,
+    8385,
+    8386,
+    8387,
+    8388,
+    8475,
+    8477,
+    8478,
+    8479,
+    8480,
+    8481,
+    8482,
+    8483,
+    8484,
+    8485,
+    8486,
+    8487,
+    8488,
+    8489,
+    8490,
+    8491,
+    8492,
+    8493,
+    8505,
+    8506,
+    8507,
+    8508,
+    8521,
+    8522,
+    8523,
+    8524,
+    8525,
+    8526,
+    8527,
+    8528,
+    8529,
+    8530,
+    8531,
+    8532,
+    8533,
+    8534
+  ],
+  "groups": [
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 0,
+      "faces": [
+        8090,
+        8096
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -12.6875,
+          -42.0
+        ],
+        [
+          -12.698728619446873,
+          -41.82868437271118
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 1,
+      "faces": [
+        8091,
+        8093
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -12.698728619446873,
+          -41.82868437271118
+        ],
+        [
+          -12.732222352995597,
+          -41.66030000330294
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 2,
+      "faces": [
+        8088,
+        8092
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -12.732222352995597,
+          -41.66030000330294
+        ],
+        [
+          -12.735718732983088,
+          -41.65
+        ]
+      ],
+      "analytic_width_mm": 0.01087725797513294,
+      "analytic_area_mm2": 0.11421120873889586,
+      "mesh_area_mm2": 0.11424524113867872,
+      "clipped_by_original_host": true
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 21,
+      "faces": [
+        8072,
+        8077
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -15.264281267016912,
+          -41.65
+        ],
+        [
+          -15.267777647004403,
+          -41.66030000330294
+        ]
+      ],
+      "analytic_width_mm": 0.01087725797513294,
+      "analytic_area_mm2": 0.11421120873889586,
+      "mesh_area_mm2": 0.11424524113867872,
+      "clipped_by_original_host": true
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 22,
+      "faces": [
+        8071,
+        8076
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -15.267777647004403,
+          -41.66030000330294
+        ],
+        [
+          -15.301271380553127,
+          -41.82868437271118
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 23,
+      "faces": [
+        8070,
+        8075
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -15.301271380553127,
+          -41.82868437271118
+        ],
+        [
+          -15.3125,
+          -42.0
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 24,
+      "faces": [
+        8069,
+        8074
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -15.3125,
+          -42.0
+        ],
+        [
+          -15.301271380553127,
+          -42.17131562728882
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 25,
+      "faces": [
+        8068,
+        8073
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -15.301271380553127,
+          -42.17131562728882
+        ],
+        [
+          -15.267777647004403,
+          -42.33969999669706
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 26,
+      "faces": [
+        8038,
+        8053
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -15.267777647004403,
+          -42.33969999669706
+        ],
+        [
+          -15.212591886421064,
+          -42.50227200497918
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912958,
+      "analytic_area_mm2": 1.8026737494058604,
+      "mesh_area_mm2": 1.8026649856406722,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 27,
+      "faces": [
+        8037,
+        8057
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -15.212591886421064,
+          -42.50227200497918
+        ],
+        [
+          -15.136658342467076,
+          -42.65625
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912342,
+      "analytic_area_mm2": 1.8026737494057958,
+      "mesh_area_mm2": 1.8026946267245911,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 28,
+      "faces": [
+        8039,
+        8054
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -15.136658342467076,
+          -42.65625
+        ],
+        [
+          -15.041276259132246,
+          -42.79899937557395
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912822,
+      "analytic_area_mm2": 1.8026737494058462,
+      "mesh_area_mm2": 1.8026808773756704,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 29,
+      "faces": [
+        8040,
+        8055
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -15.041276259132246,
+          -42.79899937557395
+        ],
+        [
+          -14.928077650307344,
+          -42.928077650307344
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291232,
+      "analytic_area_mm2": 1.8026737494057936,
+      "mesh_area_mm2": 1.8026686067722089,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 42,
+      "faces": [
+        8078,
+        8083
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -13.071922349692656,
+          -42.928077650307344
+        ],
+        [
+          -12.958723740867754,
+          -42.79899937557395
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291232,
+      "analytic_area_mm2": 1.8026737494057936,
+      "mesh_area_mm2": 1.8026686067722089,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 43,
+      "faces": [
+        8079,
+        8084
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -12.958723740867754,
+          -42.79899937557395
+        ],
+        [
+          -12.863341657532924,
+          -42.65625
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912822,
+      "analytic_area_mm2": 1.8026737494058462,
+      "mesh_area_mm2": 1.8026753141343332,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 44,
+      "faces": [
+        8080,
+        8085
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -12.863341657532924,
+          -42.65625
+        ],
+        [
+          -12.787408113578936,
+          -42.50227200497918
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912342,
+      "analytic_area_mm2": 1.8026737494057958,
+      "mesh_area_mm2": 1.8026990555838902,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 45,
+      "faces": [
+        8081,
+        8086
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -12.787408113578936,
+          -42.50227200497918
+        ],
+        [
+          -12.7322223529956,
+          -42.33969999669706
+        ]
+      ],
+      "analytic_width_mm": 0.171683214229129,
+      "analytic_area_mm2": 1.8026737494058545,
+      "mesh_area_mm2": 1.8026617668602483,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 46,
+      "faces": [
+        8087,
+        8094
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -12.7322223529956,
+          -42.33969999669706
+        ],
+        [
+          -12.698728619446873,
+          -42.17131562728882
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912214,
+      "analytic_area_mm2": 1.8026737494057825,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -14.0,
+        -42.0
+      ],
+      "chord": 47,
+      "faces": [
+        8089,
+        8095
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -12.698728619446873,
+          -42.17131562728882
+        ],
+        [
+          -12.6875,
+          -42.0
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 0,
+      "faces": [
+        8235,
+        8240
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -8.8375,
+          -42.0
+        ],
+        [
+          -8.848728619446874,
+          -41.82868437271118
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 1,
+      "faces": [
+        8236,
+        8242
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -8.848728619446874,
+          -41.82868437271118
+        ],
+        [
+          -8.882222352995598,
+          -41.66030000330294
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 2,
+      "faces": [
+        8237,
+        8241
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -8.882222352995598,
+          -41.66030000330294
+        ],
+        [
+          -8.885718732983088,
+          -41.65
+        ]
+      ],
+      "analytic_width_mm": 0.01087725797513294,
+      "analytic_area_mm2": 0.11421120873889586,
+      "mesh_area_mm2": 0.11424524113867872,
+      "clipped_by_original_host": true
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 21,
+      "faces": [
+        8211,
+        8216
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -11.414281267016912,
+          -41.65
+        ],
+        [
+          -11.417777647004403,
+          -41.66030000330294
+        ]
+      ],
+      "analytic_width_mm": 0.01087725797513294,
+      "analytic_area_mm2": 0.11421120873889586,
+      "mesh_area_mm2": 0.11424524113867872,
+      "clipped_by_original_host": true
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 22,
+      "faces": [
+        8210,
+        8215
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -11.417777647004403,
+          -41.66030000330294
+        ],
+        [
+          -11.451271380553127,
+          -41.82868437271118
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 23,
+      "faces": [
+        8209,
+        8214
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -11.451271380553127,
+          -41.82868437271118
+        ],
+        [
+          -11.4625,
+          -42.0
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 24,
+      "faces": [
+        8208,
+        8213
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -11.4625,
+          -42.0
+        ],
+        [
+          -11.451271380553127,
+          -42.17131562728882
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 25,
+      "faces": [
+        8207,
+        8212
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -11.451271380553127,
+          -42.17131562728882
+        ],
+        [
+          -11.417777647004403,
+          -42.33969999669706
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 26,
+      "faces": [
+        8188,
+        8200
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -11.417777647004403,
+          -42.33969999669706
+        ],
+        [
+          -11.362591886421065,
+          -42.50227200497918
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912958,
+      "analytic_area_mm2": 1.8026737494058604,
+      "mesh_area_mm2": 1.8026649856406722,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 27,
+      "faces": [
+        8187,
+        8199
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -11.362591886421065,
+          -42.50227200497918
+        ],
+        [
+          -11.286658342467076,
+          -42.65625
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912342,
+      "analytic_area_mm2": 1.8026737494057958,
+      "mesh_area_mm2": 1.8026946267245911,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 28,
+      "faces": [
+        8185,
+        8198
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -11.286658342467076,
+          -42.65625
+        ],
+        [
+          -11.191276259132247,
+          -42.79899937557395
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912822,
+      "analytic_area_mm2": 1.8026737494058462,
+      "mesh_area_mm2": 1.8026753141343332,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 29,
+      "faces": [
+        8186,
+        8197
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -11.191276259132247,
+          -42.79899937557395
+        ],
+        [
+          -11.078077650307344,
+          -42.928077650307344
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291232,
+      "analytic_area_mm2": 1.8026737494057936,
+      "mesh_area_mm2": 1.8026752091998852,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 42,
+      "faces": [
+        8221,
+        8229
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -9.221922349692656,
+          -42.928077650307344
+        ],
+        [
+          -9.108723740867754,
+          -42.79899937557395
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291232,
+      "analytic_area_mm2": 1.8026737494057936,
+      "mesh_area_mm2": 1.8026752091998852,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 43,
+      "faces": [
+        8222,
+        8230
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -9.108723740867754,
+          -42.79899937557395
+        ],
+        [
+          -9.013341657532925,
+          -42.65625
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912822,
+      "analytic_area_mm2": 1.8026737494058462,
+      "mesh_area_mm2": 1.8026808773756704,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 44,
+      "faces": [
+        8223,
+        8231
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -9.013341657532925,
+          -42.65625
+        ],
+        [
+          -8.937408113578936,
+          -42.50227200497918
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912342,
+      "analytic_area_mm2": 1.8026737494057958,
+      "mesh_area_mm2": 1.8026901979100345,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 45,
+      "faces": [
+        8224,
+        8232
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -8.937408113578936,
+          -42.50227200497918
+        ],
+        [
+          -8.882222352995598,
+          -42.33969999669706
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912958,
+      "analytic_area_mm2": 1.8026737494058604,
+      "mesh_area_mm2": 1.8026617668602483,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 46,
+      "faces": [
+        8233,
+        8238
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -8.882222352995598,
+          -42.33969999669706
+        ],
+        [
+          -8.848728619446874,
+          -42.17131562728882
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        -10.15,
+        -42.0
+      ],
+      "chord": 47,
+      "faces": [
+        8234,
+        8239
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          -8.848728619446874,
+          -42.17131562728882
+        ],
+        [
+          -8.8375,
+          -42.0
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 0,
+      "faces": [
+        8381,
+        8386
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          11.4625,
+          -42.0
+        ],
+        [
+          11.451271380553127,
+          -41.82868437271118
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 1,
+      "faces": [
+        8382,
+        8388
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          11.451271380553127,
+          -41.82868437271118
+        ],
+        [
+          11.417777647004403,
+          -41.66030000330294
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 2,
+      "faces": [
+        8383,
+        8387
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          11.417777647004403,
+          -41.66030000330294
+        ],
+        [
+          11.414281267016912,
+          -41.65
+        ]
+      ],
+      "analytic_width_mm": 0.01087725797513294,
+      "analytic_area_mm2": 0.11421120873889586,
+      "mesh_area_mm2": 0.11424524113867872,
+      "clipped_by_original_host": true
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 21,
+      "faces": [
+        8349,
+        8354
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          8.885718732983088,
+          -41.65
+        ],
+        [
+          8.882222352995598,
+          -41.66030000330294
+        ]
+      ],
+      "analytic_width_mm": 0.01087725797513294,
+      "analytic_area_mm2": 0.11421120873889586,
+      "mesh_area_mm2": 0.11424524113867872,
+      "clipped_by_original_host": true
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 22,
+      "faces": [
+        8348,
+        8353
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          8.882222352995598,
+          -41.66030000330294
+        ],
+        [
+          8.848728619446874,
+          -41.82868437271118
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 23,
+      "faces": [
+        8347,
+        8352
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          8.848728619446874,
+          -41.82868437271118
+        ],
+        [
+          8.8375,
+          -42.0
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 24,
+      "faces": [
+        8346,
+        8351
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          8.8375,
+          -42.0
+        ],
+        [
+          8.848728619446874,
+          -42.17131562728882
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 25,
+      "faces": [
+        8345,
+        8350
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          8.848728619446874,
+          -42.17131562728882
+        ],
+        [
+          8.882222352995598,
+          -42.33969999669706
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 26,
+      "faces": [
+        8330,
+        8338
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          8.882222352995598,
+          -42.33969999669706
+        ],
+        [
+          8.937408113578936,
+          -42.50227200497918
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912958,
+      "analytic_area_mm2": 1.8026737494058604,
+      "mesh_area_mm2": 1.8026617668602483,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 27,
+      "faces": [
+        8329,
+        8337
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          8.937408113578936,
+          -42.50227200497918
+        ],
+        [
+          9.013341657532925,
+          -42.65625
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912342,
+      "analytic_area_mm2": 1.8026737494057958,
+      "mesh_area_mm2": 1.8026901979100345,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 28,
+      "faces": [
+        8334,
+        8343
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          9.013341657532925,
+          -42.65625
+        ],
+        [
+          9.108723740867754,
+          -42.79899937557395
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912822,
+      "analytic_area_mm2": 1.8026737494058462,
+      "mesh_area_mm2": 1.8026808773756704,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 29,
+      "faces": [
+        8335,
+        8342
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          9.108723740867754,
+          -42.79899937557395
+        ],
+        [
+          9.221922349692656,
+          -42.928077650307344
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291232,
+      "analytic_area_mm2": 1.8026737494057936,
+      "mesh_area_mm2": 1.8026752091998852,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 42,
+      "faces": [
+        8363,
+        8375
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          11.078077650307344,
+          -42.928077650307344
+        ],
+        [
+          11.191276259132247,
+          -42.79899937557395
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291232,
+      "analytic_area_mm2": 1.8026737494057936,
+      "mesh_area_mm2": 1.8026752091998852,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 43,
+      "faces": [
+        8364,
+        8376
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          11.191276259132247,
+          -42.79899937557395
+        ],
+        [
+          11.286658342467076,
+          -42.65625
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912822,
+      "analytic_area_mm2": 1.8026737494058462,
+      "mesh_area_mm2": 1.8026753141343332,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 44,
+      "faces": [
+        8365,
+        8377
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          11.286658342467076,
+          -42.65625
+        ],
+        [
+          11.362591886421065,
+          -42.50227200497918
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912342,
+      "analytic_area_mm2": 1.8026737494057958,
+      "mesh_area_mm2": 1.8026946267245911,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 45,
+      "faces": [
+        8366,
+        8378
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          11.362591886421065,
+          -42.50227200497918
+        ],
+        [
+          11.417777647004403,
+          -42.33969999669706
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912958,
+      "analytic_area_mm2": 1.8026737494058604,
+      "mesh_area_mm2": 1.8026649856406722,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 46,
+      "faces": [
+        8379,
+        8384
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          11.417777647004403,
+          -42.33969999669706
+        ],
+        [
+          11.451271380553127,
+          -42.17131562728882
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        10.15,
+        -42.0
+      ],
+      "chord": 47,
+      "faces": [
+        8380,
+        8385
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          11.451271380553127,
+          -42.17131562728882
+        ],
+        [
+          11.4625,
+          -42.0
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 0,
+      "faces": [
+        8527,
+        8532
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          15.3125,
+          -42.0
+        ],
+        [
+          15.301271380553127,
+          -41.82868437271118
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 1,
+      "faces": [
+        8528,
+        8534
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          15.301271380553127,
+          -41.82868437271118
+        ],
+        [
+          15.267777647004403,
+          -41.66030000330294
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 2,
+      "faces": [
+        8529,
+        8533
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          15.267777647004403,
+          -41.66030000330294
+        ],
+        [
+          15.264281267016912,
+          -41.65
+        ]
+      ],
+      "analytic_width_mm": 0.01087725797513294,
+      "analytic_area_mm2": 0.11421120873889586,
+      "mesh_area_mm2": 0.11424524113867872,
+      "clipped_by_original_host": true
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 21,
+      "faces": [
+        8488,
+        8493
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          12.735718732983088,
+          -41.65
+        ],
+        [
+          12.732222352995597,
+          -41.66030000330294
+        ]
+      ],
+      "analytic_width_mm": 0.01087725797513294,
+      "analytic_area_mm2": 0.11421120873889586,
+      "mesh_area_mm2": 0.11424524113867872,
+      "clipped_by_original_host": true
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 22,
+      "faces": [
+        8487,
+        8491
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          12.732222352995597,
+          -41.66030000330294
+        ],
+        [
+          12.698728619446873,
+          -41.82868437271118
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 23,
+      "faces": [
+        8486,
+        8490
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          12.698728619446873,
+          -41.82868437271118
+        ],
+        [
+          12.6875,
+          -42.0
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 24,
+      "faces": [
+        8485,
+        8489
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          12.6875,
+          -42.0
+        ],
+        [
+          12.698728619446873,
+          -42.17131562728882
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 25,
+      "faces": [
+        8484,
+        8492
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          12.698728619446873,
+          -42.17131562728882
+        ],
+        [
+          12.732222352995597,
+          -42.33969999669706
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291218,
+      "analytic_area_mm2": 1.802673749405779,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 26,
+      "faces": [
+        8479,
+        8483
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          12.732222352995597,
+          -42.33969999669706
+        ],
+        [
+          12.787408113578936,
+          -42.50227200497918
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912958,
+      "analytic_area_mm2": 1.8026737494058604,
+      "mesh_area_mm2": 1.8026617668602483,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 27,
+      "faces": [
+        8478,
+        8482
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          12.787408113578936,
+          -42.50227200497918
+        ],
+        [
+          12.863341657532924,
+          -42.65625
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912342,
+      "analytic_area_mm2": 1.8026737494057958,
+      "mesh_area_mm2": 1.8026990555838902,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 28,
+      "faces": [
+        8475,
+        8481
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          12.863341657532924,
+          -42.65625
+        ],
+        [
+          12.958723740867754,
+          -42.79899937557395
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912822,
+      "analytic_area_mm2": 1.8026737494058462,
+      "mesh_area_mm2": 1.8026753141343332,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 29,
+      "faces": [
+        8477,
+        8480
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          12.958723740867754,
+          -42.79899937557395
+        ],
+        [
+          13.071922349692656,
+          -42.928077650307344
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291232,
+      "analytic_area_mm2": 1.8026737494057936,
+      "mesh_area_mm2": 1.8026686067722089,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 42,
+      "faces": [
+        8505,
+        8521
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          14.928077650307344,
+          -42.928077650307344
+        ],
+        [
+          15.041276259132246,
+          -42.79899937557395
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291232,
+      "analytic_area_mm2": 1.8026737494057936,
+      "mesh_area_mm2": 1.8026686067722089,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 43,
+      "faces": [
+        8506,
+        8522
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          15.041276259132246,
+          -42.79899937557395
+        ],
+        [
+          15.136658342467076,
+          -42.65625
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912822,
+      "analytic_area_mm2": 1.8026737494058462,
+      "mesh_area_mm2": 1.8026808773756704,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 44,
+      "faces": [
+        8507,
+        8523
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          15.136658342467076,
+          -42.65625
+        ],
+        [
+          15.212591886421064,
+          -42.50227200497918
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912342,
+      "analytic_area_mm2": 1.8026737494057958,
+      "mesh_area_mm2": 1.8026946267245911,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 45,
+      "faces": [
+        8508,
+        8524
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          15.212591886421064,
+          -42.50227200497918
+        ],
+        [
+          15.2677776470044,
+          -42.33969999669706
+        ]
+      ],
+      "analytic_width_mm": 0.171683214229129,
+      "analytic_area_mm2": 1.8026737494058545,
+      "mesh_area_mm2": 1.8026649856406722,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 46,
+      "faces": [
+        8525,
+        8530
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          15.2677776470044,
+          -42.33969999669706
+        ],
+        [
+          15.301271380553127,
+          -42.17131562728882
+        ]
+      ],
+      "analytic_width_mm": 0.17168321422912214,
+      "analytic_area_mm2": 1.8026737494057825,
+      "mesh_area_mm2": 1.8026761667369262,
+      "clipped_by_original_host": false
+    },
+    {
+      "column_center_mm": [
+        14.0,
+        -42.0
+      ],
+      "chord": 47,
+      "faces": [
+        8526,
+        8531
+      ],
+      "complete_coplanar_rectangle": true,
+      "clipped_endpoints_mm": [
+        [
+          15.301271380553127,
+          -42.17131562728882
+        ],
+        [
+          15.3125,
+          -42.0
+        ]
+      ],
+      "analytic_width_mm": 0.1716832142291277,
+      "analytic_area_mm2": 1.8026737494058407,
+      "mesh_area_mm2": 1.8026591689812776,
+      "clipped_by_original_host": false
+    }
+  ],
+  "original96colored_faces_preserved": true,
+  "all_other11274faces_unchanged": true,
+  "all_coplanar_domains_uniform_after_extension": true,
+  "host_clipped_chords": [
+    [
+      -8,
+      2
+    ],
+    [
+      -8,
+      21
+    ],
+    [
+      -5.8,
+      2
+    ],
+    [
+      -5.8,
+      21
+    ],
+    [
+      5.8,
+      2
+    ],
+    [
+      5.8,
+      21
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      21
+    ]
+  ],
+  "total_analytic_area_mm2": 116.28480963188345,
+  "total_mesh_area_mm2": 116.28499135441898,
+  "current_delivery_checks": {
+    "NPZ_geometry_STL_palette_exact": true,
+    "new_materials_match": true,
+    "still_baseline_materials": false,
+    "3MF_geometry_exact": true,
+    "3MF_new_materials_match": true,
+    "3MF_still_baseline_materials": false
+  },
+  "exclusions": "Strict6.125..16.625 existing shaftlateral faces only; no capitals,bases,embeddedrear reconstruction,flutes or addedgeometry.",
+  "original_limits_verbatim": [
+    "Remaining column shaft sides/rears, bases and capitals, no copying around cylinder.",
+    "Arch, entrance lintel and gable have dark trim/pale stone/lettering or emblem boundaries absent from original mesh; retain neutral.",
+    "Glazing contains frames/reflections; no blanket blue or black.",
+    "Whole exterior walls, terraces, tower roof, lanterns and central crown not additionally color-mapped here. Unknown rear surfaces remain neutral.",
+    "Original component/surface false values are retained, not converted to PASS by source review.",
+    "Four crown feet downward-control length only 1.4874984741mm, not required1.75; actual side connection is distinct evidence.",
+    "Original83 short first chords and independent215 short first chords remain. Twenty-four0.7424642782mm first chords followed by real0.0048272640mm air gap cannot be recast continuous roots.",
+    "328 cross-layer high-loss samples are section counts, not328 structures. Limited rooted exceptions do not establish global minimum thickness.",
+    "Flattened corner lantern tips/crown sphere/gable print approximations and no physical print limitations remain."
+  ],
+  "manufacturing_limits": "Historical83/215shortchords and328sectionlimits remain unchanged; no new printability claim or recomputation.",
+  "photo_scope": "No new photo examination in secondreview; hiddenportion sameexistingstonefamily inference retained.",
+  "render_scene_not_reviewed": true
+}
