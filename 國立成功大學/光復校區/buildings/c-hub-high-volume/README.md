@@ -1,3 +1,13 @@
+## 本次左背折面殼補色（同構件推估）
+
+本版新增15個原中性完整三角，分布於原兩個凸殼的6個左側／後側微傾斜外邊界平面，延用正面及右側既有清水混凝土代理 `#B9BFBB`。從原build_model.py上下輪廓頂點重算凸殼平面，只選三頂點全部共面的原面，不用面心或粗略區塊挑面。未選窗洞接面、玻璃背、頂面或底座。
+
+**新增左背色是同構件材質延續推估，沒有新左側／後側照片定位證據，不稱2026現況。** 原320面／162頂點、座標、面序及折角完全保留，其餘305面材質不變，不新增面或分界。原比例／開窗簡化照舊，不補低連接屋頂、相鄰舊館或設備。未實體試印。
+
+本版稽核 `appearance/qa-continuous-walls/`；原 `qa/` 及下方描述是歷史紀錄，中性範圍僅改上述15面。由模型根目錄執行重建 `python appearance/source/build_continuous_walls.py`；交換 `python appearance/source/verify_continuous_exchange.py`；四原視角／場景 `blender -b --python appearance/source/render_continuous_walls.py`；回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。舊build_appearance.py不能替代新命令。ZIP無第三方照片。
+
+## 原版歷史說明（下方統計為前版；本次只新增十五個左背折面殼面）
+
 # 國立成功大學｜C-Hub成大創意基地高量體
 
 ## 模型預覽

@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "method": "Independent reconstruction of ConvexHull supporting planes from each original loft eight corner points; all selected triangle vertices on plane within 0.005 and inside original convex shell halfspaces.",
+  "groups": [
+    [
+      70,
+      74
+    ],
+    [
+      33
+    ],
+    [
+      71,
+      72,
+      73
+    ],
+    [
+      77,
+      78,
+      79,
+      80
+    ],
+    [
+      142,
+      154,
+      155
+    ],
+    [
+      141,
+      143
+    ]
+  ],
+  "changed_faces": 15,
+  "unchanged_faces": 305,
+  "geometry_unchanged": true,
+  "notes": "Six unique left/rear supporting planes match wrapper equations. Roof, base and window returns excluded."
+}
