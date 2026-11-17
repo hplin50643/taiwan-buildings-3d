@@ -1,0 +1,123 @@
+{
+  "status": "PASS_INDEPENDENT_NUMERIC_AND_SCOPE_REVIEW",
+  "read_only": true,
+  "delivery_files_modified": false,
+  "render_review_not_performed": "Package rendering ongoing; parent to inspect final previews and scene.",
+  "reviewed_path": "continue-wzumingyuan-railreturns-new-20261117/model",
+  "changed_faces": [
+    532,
+    533,
+    535,
+    537,
+    538,
+    595,
+    596,
+    597,
+    599,
+    601
+  ],
+  "existing54colored_faces_preserved": true,
+  "unchanged_other1478faces": true,
+  "triangles": 1488,
+  "vertices": 730,
+  "original_STL_ordered_geometry_exact": true,
+  "NPZ_vertex_and_face_tables_exact": true,
+  "threeMF_geometry_and_materials_exact": true,
+  "palette_bytes_unchanged": true,
+  "groups": [
+    {
+      "face_ids": [
+        532,
+        535
+      ],
+      "complete_coplanar_component": true,
+      "complete_rectangle": true,
+      "extra_vertices_only_on_boundary": true,
+      "analytic_area_mm2": 64,
+      "mesh_area_mm2": 64.0
+    },
+    {
+      "face_ids": [
+        533,
+        537,
+        538
+      ],
+      "complete_coplanar_component": true,
+      "complete_rectangle": true,
+      "extra_vertices_only_on_boundary": true,
+      "analytic_area_mm2": 44.8,
+      "mesh_area_mm2": 44.800048828125
+    },
+    {
+      "face_ids": [
+        596,
+        599
+      ],
+      "complete_coplanar_component": true,
+      "complete_rectangle": true,
+      "extra_vertices_only_on_boundary": true,
+      "analytic_area_mm2": 64,
+      "mesh_area_mm2": 64.0
+    },
+    {
+      "face_ids": [
+        595,
+        597,
+        601
+      ],
+      "complete_coplanar_component": true,
+      "complete_rectangle": true,
+      "extra_vertices_only_on_boundary": true,
+      "analytic_area_mm2": 44.8,
+      "mesh_area_mm2": 44.800048828125
+    }
+  ],
+  "total_analytic_area_mm2": 217.60000000000002,
+  "total_mesh_area_mm2": 217.60009765625,
+  "script_scope": "All original triangle vertices bounded; expected outward normals; no centroid-based clipping or split domains.",
+  "README_scope": "Explicit simplified solid rail proxy for real perforated metal rail; does not claim real solid geometry or all-face material photograph confirmation. Hiddenback/top inference and unknowncapture/currentdate limits disclosed.",
+  "black_gable_withdrawal_preserved": true,
+  "historical_files_git_blob_exact": [
+    "COLOR-ASSIGNMENT-QA.json",
+    "COLOR-FORMAT-GEOMETRY-QA.json",
+    "COLOR-SOURCE-REGISTER.json",
+    "DELIVERY-QA.json",
+    "FRAMING-QA.json",
+    "FREEZE-MANIFEST.json",
+    "INDEPENDENT-COLOR-VISUAL-QA.json",
+    "NO-TEXT-QA.json",
+    "ORIGINAL-MONOCHROME-README.md",
+    "SCENE-QA.json",
+    "SHA256SUMS",
+    "build_model.py",
+    "check_contour_validity.py",
+    "check_thin_features.py",
+    "colorize_model.py",
+    "contour-validity-check.json",
+    "export_appearance.py",
+    "model.stl",
+    "palette.json",
+    "previews/elevation.png",
+    "previews/front.png",
+    "previews/rear.png",
+    "previews/top.png",
+    "render_color.py",
+    "render_preview.py",
+    "requirements.txt",
+    "sources.json",
+    "thin-feature-check.json",
+    "validate_color.py",
+    "validate_model.py",
+    "validation.json",
+    "verify_color_scene.py"
+  ],
+  "photo_review": "No new independent image review in this pass; reviewing source-domain record and stated uncertainty,not certifying real-life metal color.",
+  "files_sha256": {
+    "model.stl": "2aff6817679e3f592f1a7b41bb388d85c61a72f63abca23558dfdcd28ad232cd",
+    "color-mesh.npz": "ee3b5c964b8443a3a93ebc81cb90d040c308072d46c1af4ca691e38fcf6fb24b",
+    "appearance.3mf": "f8b9eb19bf87ebf76328794ae33c3360507948cc07181b4fdaacd97a1a7cf4b3",
+    "palette.json": "ecb6012c047f7b4fb938f10de8c8cf92e3979ae80aeb1a4a93e7cd219dabf285",
+    "colorize_continuous_rails.py": "3f01f472b5a70899e265323bcc7270ac7d1ff52376845db6062201913431d540",
+    "README.md": "8361d8f8c6ca48dee232f34426aa2df349f40b05bc83b6b0ea93de8831f72d75"
+  }
+}
