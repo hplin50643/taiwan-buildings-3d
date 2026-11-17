@@ -1,3 +1,11 @@
+## 本次下層側背牆補色（同構件推估）
+
+本版新增4個原中性完整三角面：下層本體左側 x=-59 與後側 y=38，均嚴限 z=3..31，沿用正面與右側既有深褐砌牆代理 `#61534C`。上層外包從 z=31 起有原幾何界線，未跨到粉磚／白帶混合立面。**新增兩牆是同構件材質連續性推估，沒有新左側／後側照片證據，非2026現況核實。**
+
+原4,340面／2,172頂點與座標、面序完整保留，其餘4,336面材料不變。上層混材牆、白色端翼、灰粉核心及細槽、既有遮陽件、所有窗凹背、屋頂與基座不擴色。不新增窗或內部配置，不切面或另造分界，未做實體試印。原比例與來源年代限制照舊。
+
+本版稽核 `qa-continuous-walls/`；原 `qa/` 及下方描述為歷史紀錄，中性範圍只更新上述4面。重建 `python appearance/source/build_continuous_walls.py`；交換 `python appearance/source/verify_continuous_exchange.py`；四原視角與場景 `blender -b --python appearance/source/render_continuous_walls.py`；回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。歷史build_appearance.py不能替代新命令。ZIP無第三方照片。
+
 # 國立清華大學｜清華實驗室
 
 ## 模型預覽
