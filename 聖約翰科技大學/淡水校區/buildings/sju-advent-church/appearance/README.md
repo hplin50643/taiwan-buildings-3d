@@ -1,10 +1,36 @@
 # 降臨堂｜有限證據配色層（約 2014 主堂）
 
-[回原模型](../README.md)
-
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
+
+## 本次後向上窄槽白殼垂直側壁延色
+
+僅將原模型後向 +Y 的三個上部窄槽，兩側共六個完整垂直側壁、294 個原三角（每域 49 面），從 unknown_neutral 延用既有 shell_offwhite（材質 2，#ECEBE5）。原 2,285 個非零材料面全保留，其中含 67 個抽象底座面及 2,218 個原已色建築面；原 720 個上槽暗背一面不改。八槽材料名稱、sRGB 名義色與證據狀態不變。新版各槽面數為 1393／67／1598／67／97／16／720／14；建築已色 2,512，未確認建築 1,393，抽象底座 67，不代表全棟配色完成。
+
+原 STL bytes、3,972 面／1,980 點、首見頂點表、三角序、座標、繞向、150×150×83.080002 mm 尺寸全部不動。Blender 原面 ID 屬性與未改面的證據區標籤保留，新增側壁另有證據區，不切割或重建原面。
+
+有限域在原設計 z=10.65…12.45、三槽中心 x=−0.9／0／0.9，各側 x=中心±0.2；朝開口法向分別±X，僅 +Y 後側。原換算為 mm=(4.55x,4.55y,3+4.55z)。外界是原曲殼每 0.1 分段折線，內界是原槽背每 0.06 分段折線扣 0.25；以兩組節點聯集形成完整有限條帶，而非用理想光滑曲面重新建模。每域原 49 面皆全頂點／整三角入域、無重疊，且與原白殼共邊；原共面連通域全部包含。單域解析 9.3211841738 mm²、網格 9.3211824796 mm²，總解析 55.9271050428 mm²、網格 55.9270948778 mm²，微差屬原 float32 座標，未修形。
+
+只補垂直側壁，不塗槽頂、槽底、下向簷底、冠頂、十字架、後門，也不泛化到另外三個殼方向。原全域混材共面分量為零，本次仍為零。下部乳白牆轉角的實景另有灰框、磚、開口與設備，原整面會跨材界，故維持 HOLD，不因牆面大就一律塗成乳白。十字架白／棕來源衝突及後紅門未登錄問題原樣保留。
+
+來源為作者 Catherine Lee 公開文章所列 S2／S3：
+- https://catherinelee234.com/wp-content/uploads/2016/06/img_0557.jpg
+- https://catherinelee234.com/wp-content/uploads/2016/06/img_1732.jpg
+本輪親看兩張完整照片，後側曲殼、三窄槽的淺色垂直側壁與暗色背面可分，主降臨堂與前景另建教會中心不混計。原登錄 EXIF 分別為 2014-01-28、2014-02-21，時區與相機時鐘未獨立驗證；文章 2016-06-08／網址 2016/06 是出版／上傳資訊，不是拍攝日。陰影或對向窄側壁為同開口白殼材料的有界延續推論，不是每個像素都獨立驗證，也不是校色油漆規格或 2026 現況。私人原照及裁切不入公開包。
+
+原曲線、槽形與比例均為既有近似，不新增測繪精度。原工程與試印限制全部保留，尤其 52 個高損層／436 個跨層高損 polygon 樣本未因本次補色消失；未做實體試印、切片路徑或新增全域最薄壁／支撐認證。
+
+原 root STL、原生成器／場景／單色預覽及所有歷史 QA／source／SHA256SUMS 保持 bytes。原 appearance/material-manifest.json 也完整保留，描述舊版統計；新版統計另在 continuation-material-manifest.json，未改寫歷史原色。新版 face-materials.json、mesh-data.npz、sju-advent-church-materials.3mf、scene.blend 與十張預覽經新 QA 驗證。保留七個原 Workbench 視角，增加前立面、後立面及底視，十張完整框入原頂點；同一真實模型網格，無展示代理或照片貼圖。材料原粗糙度 .8 保留。
+
+新 qa-continuous-rearjamb 含有限域、獨審及輸出補核、strict3MF 零警告、材料編輯存取往返、Blender 材質／單點改存重開、原場景重渲染與 ZIP 隔離精確重建。新雜湊在 CONTINUATION-SHA256SUMS。安裝 appearance/source/continuation-requirements.txt 後執行 build_continuous_rearjamb.py、verify_continuous_exchange.py、verify_continuous_regions.py、verify_continuous_boundaries.py；Blender 執行 render_continuous_rearjamb.py 與 verify_continuous_scene.py。rebuild-continuous-source.zip 含必要原 STL 與腳本，不含私人影像。本地準備完成不等於已上傳。
+
+場景 evidence_region_keys 僅在 33 個原鍵及原順序之後追加 rear_upper_vertical_jambs_continuation；只有本次 294 個側壁面的 evidence_region_id 改指新鍵，其他面的標籤與全部 original_stl_face_id 精確保留。其餘原物件屬性、完整材質定義與幾何不變，不能稱全部 attributes 未變。原標籤與十字架、背門、下牆等未解限制完整保留；新鍵表示有界同白殼延續推論而非逐像素實測。原 material-manifest 的材料與限制原樣留存，新增範圍另列 continuation-material-manifest。舊校驗與 QA 是歷史版本，現行校驗以 PUBLIC-MODEL-SHA256SUMS 與 appearance/CONTINUATION-SHA256SUMS 為準。
+
+## 前版說明與保留限制
+
+[回原模型](../README.md)
+
 
 此層只為原有 **3,972 個三角面**指定材質；未切面、未重建、未縮放、未改動原 `model.stl`、原 Blend 或原預覽。不是新增建物，也不表示全校或整棟外觀均獲驗證。
 

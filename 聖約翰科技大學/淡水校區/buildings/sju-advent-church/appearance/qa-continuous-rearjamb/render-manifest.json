@@ -1,0 +1,206 @@
+{
+  "views": [
+    {
+      "name": "front",
+      "camera": [
+        -100,
+        -280,
+        105
+      ],
+      "target": [
+        0,
+        0,
+        41.54
+      ],
+      "ortho_scale": 214.71714782714844,
+      "all_vertices_in_frame": true
+    },
+    {
+      "name": "rear",
+      "camera": [
+        125,
+        280,
+        105
+      ],
+      "target": [
+        0,
+        0,
+        41.54
+      ],
+      "ortho_scale": 221.89251708984375,
+      "all_vertices_in_frame": true
+    },
+    {
+      "name": "side-minus-x",
+      "camera": [
+        -280,
+        -40,
+        100
+      ],
+      "target": [
+        0,
+        0,
+        41.54
+      ],
+      "ortho_scale": 190.07028198242188,
+      "all_vertices_in_frame": true
+    },
+    {
+      "name": "side-plus-x",
+      "camera": [
+        280,
+        60,
+        100
+      ],
+      "target": [
+        0,
+        0,
+        41.54
+      ],
+      "ortho_scale": 199.4717254638672,
+      "all_vertices_in_frame": true
+    },
+    {
+      "name": "front-low",
+      "camera": [
+        -70,
+        -300,
+        60
+      ],
+      "target": [
+        0,
+        0,
+        41.54
+      ],
+      "ortho_scale": 201.7799072265625,
+      "all_vertices_in_frame": true
+    },
+    {
+      "name": "rear-low",
+      "camera": [
+        140,
+        280,
+        60
+      ],
+      "target": [
+        0,
+        0,
+        41.54
+      ],
+      "ortho_scale": 225.39564514160156,
+      "all_vertices_in_frame": true
+    },
+    {
+      "name": "top",
+      "camera": [
+        0,
+        0,
+        300
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 224.0,
+      "all_vertices_in_frame": true
+    },
+    {
+      "name": "front-elevation",
+      "camera": [
+        0,
+        -300,
+        41.54
+      ],
+      "target": [
+        0,
+        0,
+        41.54
+      ],
+      "ortho_scale": 168.0,
+      "all_vertices_in_frame": true
+    },
+    {
+      "name": "rear-elevation",
+      "camera": [
+        0,
+        300,
+        41.54
+      ],
+      "target": [
+        0,
+        0,
+        41.54
+      ],
+      "ortho_scale": 168.00001525878906,
+      "all_vertices_in_frame": true
+    },
+    {
+      "name": "underside",
+      "camera": [
+        -160,
+        -260,
+        -150
+      ],
+      "target": [
+        0,
+        0,
+        41.54
+      ],
+      "ortho_scale": 268.8754577636719,
+      "all_vertices_in_frame": true
+    }
+  ],
+  "source": "Original STL triangles with per-face material assignments; no proxy meshes",
+  "blender_version": "4.3.2",
+  "original_stl_sha256": "899833cab3d36540de1455757b2b1119f5d4563a8f0bede4f16286f036f04652",
+  "scene_triangle_coordinate_sha256": "b5bbc62f1e7c8986aacf3b1bc416909fbf3300bf321d6be55ce700af0df31dbb",
+  "scene_triangle_count": 3972,
+  "scene_vertex_count": 1980,
+  "geometry_exact_float32": true,
+  "material_assignments_exact": true,
+  "mesh_object_count": 1,
+  "external_image_paths": [],
+  "previews": {
+    "front-elevation.png": {
+      "sha256": "42c9b7d9708ae8c92b10e06610cf82d750fa93b2621e7ab2c1b5a479c7782fa5",
+      "bytes": 1032782
+    },
+    "front-low.png": {
+      "sha256": "0dfe07d370236a006b3bf3c4b3f397ff1b878e5c0dc9facf31a3ef4a2c8ffc4e",
+      "bytes": 1079227
+    },
+    "front.png": {
+      "sha256": "5be729ff2ef8a5ed6c8098a7daba0231ca0dc6a3a8c93d540abd85052cd3126c",
+      "bytes": 1138080
+    },
+    "rear-elevation.png": {
+      "sha256": "e6b9892c3b653f173e317f6ac02d19d418f4b5b8348c68df671c897f7c8cd693",
+      "bytes": 1033021
+    },
+    "rear-low.png": {
+      "sha256": "65621d726eaf67a20c38ad9e7733f962ffceafa7ef47135391d62839ea0dfe66",
+      "bytes": 1073808
+    },
+    "rear.png": {
+      "sha256": "585064e3c11146c9845b1aa30495d5a3042b90eed41bec2f9beb647c9cd7c2a8",
+      "bytes": 1120539
+    },
+    "side-minus-x.png": {
+      "sha256": "a5ed7f741c96b36640ac6edb595d7deed009d8825c118314083bbf7cee875a2b",
+      "bytes": 1131560
+    },
+    "side-plus-x.png": {
+      "sha256": "dd7240c4e1d4f254bc30208e4f4543921a8b66a2b8c010f0723ee122d7b5d546",
+      "bytes": 1128756
+    },
+    "top.png": {
+      "sha256": "64852b7e565235bb41de35ee4a47eb216b45aec7a9aaaeea1121f46010ec0ad8",
+      "bytes": 1161735
+    },
+    "underside.png": {
+      "sha256": "c1d2a82d0b92e23fe74d4b8ba350f1fb9d4936d1c363bd93a8b6c4b070b41a59",
+      "bytes": 1067700
+    }
+  }
+}
