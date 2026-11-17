@@ -1,3 +1,9 @@
+## 本次多面牆補色：主弧外牆與端牆推估
+
+本版把主彎弧量體的 **189 個原中性完整外牆三角面** 延伸既有前庭白色：主外弧 168 面、兩端牆 21 面。所有三頂點必須位於原 80 段弧形精確平面與該段切向界內，或有限端牆平面內，不以面中心猜測、不切分網格。**此為同構件材料連續性推估，未新增背側照片證據，不代表 2026 現況全面確認。** 後側凸附棟、屋頂、冠帶、窗凹與框、雨棚及基座保留；所有原彩面不變。原 6,176 面／2,968 頂點、座標與面序不變，其餘 5,987 面材質保留，沒有實體列印驗證。
+
+現行稽核見 `qa-continuous-walls/`；原 `qa/` 與 `qa-post-continuation/` 為歷史記錄，下方舊版「背／端牆中性」範圍僅對本節列出的 189 面更新。重建：`python appearance/source/build_continuous_walls.py`；驗證：`python appearance/source/verify_continuous_exchange.py`；五視圖及場景：`blender -b --python appearance/source/render_continuous_walls.py`；場景回讀：`blender -b --python appearance/source/verify_continuous_scene.py`。直接執行原分類器會回復歷史配色，請用本節命令。ZIP 不含第三方圖片。
+
 # 政治大學井塘樓：前庭有限白牆／雨棚外觀層
 
 僅1395個完整原面白色內弧瓷磚牆與柱（#D4D4CA）＋9個灰色雨棚立邊原面（#666966），共1404面、7740.38026137 mm²；其餘4772面維持中性。不是整樓全彩復原、實測色票或2026現況。
