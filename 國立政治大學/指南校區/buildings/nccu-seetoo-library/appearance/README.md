@@ -1,3 +1,11 @@
+## 本次同構件多面補色
+
+保留原 7,246 面／3,295 頂點與 244 既有彩面，新增 **46 個原完整三角面**：上層湖側直段兩端遮陽板 38 面延用既有棕色 `#98633D`，已上色的中央上層入口斜屏風側返 8 面延用暖灰 `#B4B1A4`。僅限原板件幾何範圍，不新增材界；橫向梁、斜湖面／其他側面的遮陽板、下層、鄰屏、屋頂與基座保留。**新增範圍是同排及同構件材質連續性推估，未取得新增背側照片佐證；不是全館精確配色或 2026 現況核實。**
+
+原圖已辨識為後方達賢主樓，不將前方湖濱小屋的玻璃與淺色板移植。原刊物 2022/03 日期非拍攝日，色值非測色且棕色不等於確認材質成分。未切片器或實體試印。
+
+本版檢查在 `qa-continuous-walls/`；原 `qa/`、`qa-panel-continuation/` 與下方舊說明為歷史資料，舊未染範圍僅由上列 46 面更新。現行重建：`python appearance/source/build_continuous_walls.py`；交換：`python appearance/source/verify_continuous_exchange.py`；五原視角／場景：`blender -b --python appearance/source/render_continuous_walls.py`；場景讀回：`blender -b --python appearance/source/verify_continuous_scene.py`。歷史 `build_appearance.py` 只生成基底色。來源 ZIP 不含第三方照片。
+
 # 政大達賢圖書館主館：湖側上層直段遮陽板限域配色
 
 本案是主館，不是前方獨立湖濱悅讀小屋。原7246面中，僅湖側直段上層中央12片遮陽板的240個完整三角面採棕色表面代理 #98633D，其餘7006面維持中性 #AAA79F。中性表示未確認，不代表實物均灰色；不是全棟材質復原或2026現況。
