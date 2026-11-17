@@ -1,3 +1,11 @@
+## 本次窄窗垂直窗頰補色
+
+本版新增 **104 個原中性完整面**：正面上部 15 扇窄窗與右面上部 11 扇窄窗，各兩側垂直窗頰沿用既有赭紅磚色 `#AD725C`。重新親看原清華跨領域研究辦公室空拍，磚柱側返可見；模型窗深與比例仍為粗代理，細部屬同構件延伸推估，非精密照片註冊或 2026 現況。原照不收入公開包。
+
+只選 z=90..99 的完整垂直窗頰；窗台、窗頭、玻璃凹背、所有既有彩面不變。背面／左側大牆可能有水平淺帶但原幾何無界線，故本次不整牆染磚；混材陽台凹背、屋頂和底座保持原狀。原 5,334 面／2,549 頂點、座標與面序完整保留，其餘 5,230 面材質不變，不新增分界、不改幾何。未實體試印。
+
+本版稽核在 `qa-continuous-walls/`，原 `qa/` 與下方說明為歷史紀錄；新範圍以上述 104 面為準。重建使用 `python appearance/source/build_continuous_walls.py`，交換驗證 `python appearance/source/verify_continuous_exchange.py`，四原視角／場景使用 `blender -b --python appearance/source/render_continuous_walls.py`，場景回讀使用 `blender -b --python appearance/source/verify_continuous_scene.py`。歷史 build_appearance.py 不能替代新命令。ZIP 無第三方照片。
+
 # 清華台積館：六材質外觀版
 
 沿用原 **5,334 三角面／2,549 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
