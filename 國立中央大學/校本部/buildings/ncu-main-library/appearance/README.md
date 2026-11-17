@@ -1,10 +1,20 @@
-# 國立中央大學總圖書館｜正面有限配色
+# 國立中央大學總圖書館｜正面配色與主體外牆延伸
 
 同一既有模型的附加外觀層，不增加棟數，不替換固定首頁代表圖。150 × 110 × 109 mm；6,688個完整三角面及其面序、全部原STL bytes保持不變，不切面或增加幾何。
 
 [表面色3MF](ncu-main-library-appearance.3mf) · [可編輯Blender](scene.blend) · [逐面指派](face-materials.json) · [色表](palette.json) · [來源](SOURCES.md)
 
-## 配色界線
+## 2026-11-17 主體外牆補色（當前版本）
+
+依同質外牆材料連續性，將原本中性的左、右、背側主體外牆 42 個完整三角面延伸為既有淡暖灰磁磚代理色 #BEB7AE。這是**合理推估，不是側／背照片逐面查證**；色值未校準，也不證明 2026 現況。沒有添加未見的窗、磁磚紋、文字或幾何。
+
+原 STL bytes、3,344 個頂點、6,688 個三角面及面序不變；其餘 6,646 面保留前版指派，包括既有正面、玻璃、銀灰框及 12 面入口階梯。側窗 60 個凹槽內壁／背面、屋頂、簷口、底座與混合材質入口區未改。三側補色面積合計 28,696 mm²，為模型表面面積，不是實際建築量測。
+
+同一套件的外觀更新，不新增棟數、不變更首頁代表圖；五個原視角、燈光、1200 × 1200 解析度與 CPU 48 samples 保留。背面素面仍是原模型幾何簡化，補色不等於完成背立面細節。未重跑物理試印或製造驗證。
+
+當前重建：`python appearance/source/extend_wall_color.py`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_current.py`。原 `build_current.py` 是前版 12 面階梯版本，單獨執行會還原前版；以下舊 QA、ZIP 說明與中性範圍為歷史記錄，本節及 PUBLIC-MODEL-SHA256SUMS 為當前交付範圍。重建包僅含原模型及必要程式與公開說明，無私人參考照片。
+
+## 歷史版本配色界線
 - 正面可限域完整面使用淡暖灰磁磚代理，不添加磁磚紋或招牌文字。不是校準RGB。
 - 僅實際離散窗背、上層入口矩形窗背與圓窗凹入圓盤灰藍；原十字框淡銀灰。外圓環不是玻璃，正面整片內凹牆不是玻璃。
 - 六排重複網格的高處超出近照範圍；沿用相同窗背材質屬**有界重複材料推論**，不是逐窗現況查證。格數與框厚仍是原模型可印代理。
@@ -71,3 +81,4 @@ DEOW front photograph0 primary step-family evidence; official PDF page14 lower i
 本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
 
 現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。
+
