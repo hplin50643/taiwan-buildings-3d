@@ -1,0 +1,2997 @@
+{
+  "status": "PASS_DOMAIN_ONLY",
+  "read_only": true,
+  "source_stl_sha256": "0dee5572aad7ff5d8b7fa56d4463d71dbb8585d3b029c131b554e0533194fc41",
+  "source_npz_sha256": "d21bd1fb97e1fe2781841b14dcee2a4a7a7fafe92237fe13a08553aecec1819b",
+  "palette_sha256": "405f60e38397858da9568e00cd6126be2b5c39613cb30106a1119a43cc31221c",
+  "triangles": 3248,
+  "vertices": 1544,
+  "before_counts": [
+    288,
+    2960
+  ],
+  "proposed_counts": [
+    576,
+    2672
+  ],
+  "new_face_ids": [
+    2290,
+    2291,
+    2292,
+    2293,
+    2294,
+    2296,
+    2297,
+    2298,
+    2299,
+    2300,
+    2301,
+    2302,
+    2305,
+    2306,
+    2307,
+    2308,
+    2309,
+    2312,
+    2313,
+    2314,
+    2315,
+    2316,
+    2317,
+    2318,
+    2338,
+    2339,
+    2340,
+    2341,
+    2343,
+    2344,
+    2345,
+    2346,
+    2347,
+    2348,
+    2349,
+    2350,
+    2353,
+    2354,
+    2355,
+    2356,
+    2359,
+    2360,
+    2361,
+    2362,
+    2363,
+    2364,
+    2365,
+    2366,
+    2386,
+    2387,
+    2388,
+    2390,
+    2391,
+    2392,
+    2393,
+    2394,
+    2395,
+    2396,
+    2397,
+    2398,
+    2401,
+    2402,
+    2405,
+    2406,
+    2407,
+    2408,
+    2409,
+    2410,
+    2411,
+    2412,
+    2413,
+    2414,
+    2434,
+    2435,
+    2436,
+    2437,
+    2438,
+    2439,
+    2440,
+    2441,
+    2442,
+    2444,
+    2445,
+    2446,
+    2449,
+    2450,
+    2451,
+    2452,
+    2453,
+    2454,
+    2455,
+    2456,
+    2459,
+    2460,
+    2461,
+    2462,
+    2482,
+    2483,
+    2484,
+    2485,
+    2486,
+    2487,
+    2488,
+    2489,
+    2490,
+    2492,
+    2493,
+    2494,
+    2497,
+    2498,
+    2499,
+    2500,
+    2501,
+    2502,
+    2503,
+    2504,
+    2507,
+    2508,
+    2509,
+    2510,
+    2530,
+    2531,
+    2532,
+    2533,
+    2534,
+    2535,
+    2536,
+    2537,
+    2538,
+    2540,
+    2541,
+    2542,
+    2545,
+    2546,
+    2547,
+    2548,
+    2549,
+    2550,
+    2551,
+    2552,
+    2555,
+    2556,
+    2557,
+    2558,
+    2578,
+    2579,
+    2580,
+    2581,
+    2582,
+    2583,
+    2584,
+    2586,
+    2587,
+    2588,
+    2589,
+    2590,
+    2593,
+    2594,
+    2595,
+    2596,
+    2597,
+    2598,
+    2599,
+    2602,
+    2603,
+    2604,
+    2605,
+    2606,
+    2626,
+    2627,
+    2628,
+    2629,
+    2630,
+    2631,
+    2633,
+    2634,
+    2635,
+    2636,
+    2637,
+    2638,
+    2641,
+    2642,
+    2643,
+    2645,
+    2646,
+    2647,
+    2649,
+    2650,
+    2651,
+    2652,
+    2653,
+    2654,
+    2674,
+    2675,
+    2676,
+    2677,
+    2678,
+    2679,
+    2681,
+    2682,
+    2683,
+    2684,
+    2685,
+    2686,
+    2689,
+    2690,
+    2691,
+    2692,
+    2693,
+    2696,
+    2697,
+    2698,
+    2699,
+    2700,
+    2701,
+    2702,
+    2722,
+    2723,
+    2724,
+    2725,
+    2727,
+    2728,
+    2729,
+    2730,
+    2731,
+    2732,
+    2733,
+    2734,
+    2737,
+    2738,
+    2739,
+    2740,
+    2743,
+    2744,
+    2745,
+    2746,
+    2747,
+    2748,
+    2749,
+    2750,
+    2770,
+    2771,
+    2772,
+    2774,
+    2775,
+    2776,
+    2782,
+    2783,
+    2784,
+    2785,
+    2786,
+    2787,
+    2788,
+    2789,
+    2790,
+    2793,
+    2794,
+    2795,
+    2796,
+    2797,
+    2798,
+    2799,
+    2800,
+    2801,
+    2818,
+    2819,
+    2820,
+    2821,
+    2822,
+    2824,
+    2825,
+    2826,
+    2827,
+    2828,
+    2829,
+    2830,
+    2833,
+    2834,
+    2835,
+    2836,
+    2839,
+    2840,
+    2841,
+    2842,
+    2843,
+    2844,
+    2845,
+    2846
+  ],
+  "domains": [
+    {
+      "cx": -63,
+      "facet": 12,
+      "face_ids": [
+        2294,
+        2309
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201972028314,
+      "analytic_area_mm2": 4.0202067203775735,
+      "symmetric_difference_mm2": 4.748418299849588e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 13,
+      "face_ids": [
+        2292,
+        2307
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020181030821707,
+      "analytic_area_mm2": 4.020206720377614,
+      "symmetric_difference_mm2": 2.5689924620725102e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 14,
+      "face_ids": [
+        2291,
+        2308
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 2.000901744005919e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 15,
+      "face_ids": [
+        2293,
+        2305
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377642,
+      "symmetric_difference_mm2": 3.7533335902958413e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 16,
+      "face_ids": [
+        2290,
+        2306
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383024207e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 17,
+      "face_ids": [
+        2296,
+        2312
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037511431e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 18,
+      "face_ids": [
+        2297,
+        2313
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037540719e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 19,
+      "face_ids": [
+        2298,
+        2314
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383214217e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 20,
+      "face_ids": [
+        2299,
+        2315
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377612,
+      "symmetric_difference_mm2": 3.7533335591333014e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 21,
+      "face_ids": [
+        2300,
+        2316
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 2.0009017478959223e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 22,
+      "face_ids": [
+        2301,
+        2317
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.6754666115184755e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -63,
+      "facet": 23,
+      "face_ids": [
+        2302,
+        2318
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044542969e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 12,
+      "face_ids": [
+        2341,
+        2356
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044481676e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 13,
+      "face_ids": [
+        2340,
+        2355
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.675466611594672e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 14,
+      "face_ids": [
+        2338,
+        2354
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 2.000901744005919e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 15,
+      "face_ids": [
+        2339,
+        2353
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377642,
+      "symmetric_difference_mm2": 3.7533335902958413e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 16,
+      "face_ids": [
+        2343,
+        2359
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383024207e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 17,
+      "face_ids": [
+        2344,
+        2360
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037511431e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 18,
+      "face_ids": [
+        2345,
+        2361
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037540719e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 19,
+      "face_ids": [
+        2346,
+        2362
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383214217e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 20,
+      "face_ids": [
+        2347,
+        2363
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377612,
+      "symmetric_difference_mm2": 3.7533335591333014e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 21,
+      "face_ids": [
+        2348,
+        2364
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 2.0009017478959223e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 22,
+      "face_ids": [
+        2349,
+        2365
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.6754666115184755e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -51,
+      "facet": 23,
+      "face_ids": [
+        2350,
+        2366
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044542969e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 12,
+      "face_ids": [
+        2388,
+        2402
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044481676e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 13,
+      "face_ids": [
+        2387,
+        2401
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.675466611594672e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 14,
+      "face_ids": [
+        2386,
+        2410
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 2.000901744005919e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 15,
+      "face_ids": [
+        2395,
+        2405
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377642,
+      "symmetric_difference_mm2": 3.7533335902958413e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 16,
+      "face_ids": [
+        2390,
+        2406
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383024207e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 17,
+      "face_ids": [
+        2391,
+        2407
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037511431e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 18,
+      "face_ids": [
+        2392,
+        2408
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037540719e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 19,
+      "face_ids": [
+        2393,
+        2409
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383214217e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 20,
+      "face_ids": [
+        2394,
+        2411
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377612,
+      "symmetric_difference_mm2": 3.7533335591333014e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 21,
+      "face_ids": [
+        2396,
+        2412
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 2.0009017478959223e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 22,
+      "face_ids": [
+        2397,
+        2413
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.6754666115184755e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -39,
+      "facet": 23,
+      "face_ids": [
+        2398,
+        2414
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044542969e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 12,
+      "face_ids": [
+        2442,
+        2456
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.6280138233599e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 13,
+      "face_ids": [
+        2441,
+        2455
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 1.6535916014515023e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 14,
+      "face_ids": [
+        2439,
+        2454
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 3.753333529456354e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 15,
+      "face_ids": [
+        2440,
+        2449
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 3.753333628376389e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 16,
+      "face_ids": [
+        2434,
+        2450
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.6535916032139916e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 17,
+      "face_ids": [
+        2435,
+        2451
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.628013824660343e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 18,
+      "face_ids": [
+        2436,
+        2452
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.6280138233599e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 19,
+      "face_ids": [
+        2437,
+        2453
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.6535916033943994e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 20,
+      "face_ids": [
+        2438,
+        2459
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377534,
+      "symmetric_difference_mm2": 3.753333559735072e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 21,
+      "face_ids": [
+        2444,
+        2460
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 3.7533336283763894e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 22,
+      "face_ids": [
+        2445,
+        2461
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.6535916032139916e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -27,
+      "facet": 23,
+      "face_ids": [
+        2446,
+        2462
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.628013825437499e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 12,
+      "face_ids": [
+        2490,
+        2504
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.6280138233599e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 13,
+      "face_ids": [
+        2488,
+        2503
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020206577334744,
+      "analytic_area_mm2": 4.020206720377586,
+      "symmetric_difference_mm2": 2.1645291073779622e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 14,
+      "face_ids": [
+        2487,
+        2502
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 2.0009017470248268e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 15,
+      "face_ids": [
+        2489,
+        2497
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377583,
+      "symmetric_difference_mm2": 1.743148611584371e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 16,
+      "face_ids": [
+        2482,
+        2498
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 8.134329052676142e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 17,
+      "face_ids": [
+        2483,
+        2499
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211723753616,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 5.0033733206268146e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 18,
+      "face_ids": [
+        2484,
+        2500
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211723753616,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 5.003373320922407e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 19,
+      "face_ids": [
+        2485,
+        2501
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 8.134329050872064e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 20,
+      "face_ids": [
+        2486,
+        2507
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377552,
+      "symmetric_difference_mm2": 1.7431486146103354e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 21,
+      "face_ids": [
+        2492,
+        2508
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 2.0009017508580565e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 22,
+      "face_ids": [
+        2493,
+        2509
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377586,
+      "symmetric_difference_mm2": 1.6535916024112293e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -15,
+      "facet": 23,
+      "face_ids": [
+        2494,
+        2510
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020200229259849,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 7.885301148606081e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 12,
+      "face_ids": [
+        2538,
+        2552
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377593,
+      "symmetric_difference_mm2": 8.233843678801054e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 13,
+      "face_ids": [
+        2537,
+        2551
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.02020529998662,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.7813259777618335e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 14,
+      "face_ids": [
+        2535,
+        2550
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 1.5945096492332317e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 15,
+      "face_ids": [
+        2536,
+        2545
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377583,
+      "symmetric_difference_mm2": 1.2135281184332596e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 16,
+      "face_ids": [
+        2530,
+        2546
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020214770525518,
+      "analytic_area_mm2": 4.020206720377601,
+      "symmetric_difference_mm2": 8.050106331761097e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 17,
+      "face_ids": [
+        2531,
+        2547
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020205105144199,
+      "analytic_area_mm2": 4.020206720377593,
+      "symmetric_difference_mm2": 3.009405316297342e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 18,
+      "face_ids": [
+        2532,
+        2548
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020205105144199,
+      "analytic_area_mm2": 4.020206720377588,
+      "symmetric_difference_mm2": 3.009405310106326e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 19,
+      "face_ids": [
+        2533,
+        2549
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020214770525518,
+      "analytic_area_mm2": 4.020206720377601,
+      "symmetric_difference_mm2": 8.050106331737194e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 20,
+      "face_ids": [
+        2534,
+        2555
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377552,
+      "symmetric_difference_mm2": 1.2135281224964787e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 21,
+      "face_ids": [
+        2540,
+        2556
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 1.5945096539112388e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 22,
+      "face_ids": [
+        2541,
+        2557
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020204022640862,
+      "analytic_area_mm2": 4.020206720377593,
+      "symmetric_difference_mm2": 1.6535916021261973e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": -3,
+      "facet": 23,
+      "face_ids": [
+        2542,
+        2558
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020199140051692,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 7.667462059880432e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 12,
+      "face_ids": [
+        2584,
+        2599
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377593,
+      "symmetric_difference_mm2": 8.233843678801054e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 13,
+      "face_ids": [
+        2583,
+        2598
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020204022640862,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9090603540491586e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 14,
+      "face_ids": [
+        2582,
+        2597
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 2.0009017470248268e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 15,
+      "face_ids": [
+        2586,
+        2593
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377583,
+      "symmetric_difference_mm2": 1.743148611584371e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 16,
+      "face_ids": [
+        2578,
+        2594
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 8.134329052676142e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 17,
+      "face_ids": [
+        2579,
+        2595
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211723753616,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 5.0033733206268146e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 18,
+      "face_ids": [
+        2580,
+        2596
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211723753616,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 5.003373320922407e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 19,
+      "face_ids": [
+        2581,
+        2602
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 8.134329050872064e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 20,
+      "face_ids": [
+        2587,
+        2603
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377552,
+      "symmetric_difference_mm2": 1.7431486146103354e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 21,
+      "face_ids": [
+        2588,
+        2604
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 2.0009017508580565e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 22,
+      "face_ids": [
+        2589,
+        2605
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377586,
+      "symmetric_difference_mm2": 1.6535916024112293e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 9,
+      "facet": 23,
+      "face_ids": [
+        2590,
+        2606
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020200229259849,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 7.885301148606081e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 12,
+      "face_ids": [
+        2628,
+        2647
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.6280138233599e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 13,
+      "face_ids": [
+        2631,
+        2646
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 1.6535916014515023e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 14,
+      "face_ids": [
+        2629,
+        2645
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 3.753333529456354e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 15,
+      "face_ids": [
+        2630,
+        2641
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 3.753333628376389e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 16,
+      "face_ids": [
+        2626,
+        2642
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.6535916032139916e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 17,
+      "face_ids": [
+        2627,
+        2643
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.628013824660343e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 18,
+      "face_ids": [
+        2633,
+        2649
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.6280138233599e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 19,
+      "face_ids": [
+        2634,
+        2650
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.6535916033943994e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 20,
+      "face_ids": [
+        2635,
+        2651
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377534,
+      "symmetric_difference_mm2": 3.753333559735072e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 21,
+      "face_ids": [
+        2636,
+        2652
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 3.7533336283763894e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 22,
+      "face_ids": [
+        2637,
+        2653
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020211686750895,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.6535916032139916e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 21,
+      "facet": 23,
+      "face_ids": [
+        2638,
+        2654
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.628013825437499e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 12,
+      "face_ids": [
+        2679,
+        2693
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020198486534969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 9.6280138233599e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 13,
+      "face_ids": [
+        2677,
+        2692
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.675466611594672e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 14,
+      "face_ids": [
+        2676,
+        2691
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 2.000901744005919e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 15,
+      "face_ids": [
+        2678,
+        2689
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377642,
+      "symmetric_difference_mm2": 3.7533335902958413e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 16,
+      "face_ids": [
+        2675,
+        2690
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383024207e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 17,
+      "face_ids": [
+        2674,
+        2696
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037511431e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 18,
+      "face_ids": [
+        2681,
+        2697
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037540719e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 19,
+      "face_ids": [
+        2682,
+        2698
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383214217e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 20,
+      "face_ids": [
+        2683,
+        2699
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377612,
+      "symmetric_difference_mm2": 3.7533335591333014e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 21,
+      "face_ids": [
+        2684,
+        2700
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 2.0009017478959223e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 22,
+      "face_ids": [
+        2685,
+        2701
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.6754666115184755e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 33,
+      "facet": 23,
+      "face_ids": [
+        2686,
+        2702
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044542969e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 12,
+      "face_ids": [
+        2725,
+        2740
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044481676e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 13,
+      "face_ids": [
+        2724,
+        2739
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.675466611594672e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 14,
+      "face_ids": [
+        2722,
+        2738
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 2.000901744005919e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 15,
+      "face_ids": [
+        2723,
+        2737
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377642,
+      "symmetric_difference_mm2": 3.7533335902958413e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 16,
+      "face_ids": [
+        2728,
+        2743
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383024207e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 17,
+      "face_ids": [
+        2727,
+        2744
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037511431e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 18,
+      "face_ids": [
+        2729,
+        2745
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037540719e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 19,
+      "face_ids": [
+        2730,
+        2746
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383214217e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 20,
+      "face_ids": [
+        2731,
+        2747
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377612,
+      "symmetric_difference_mm2": 3.7533335591333014e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 21,
+      "face_ids": [
+        2732,
+        2748
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 2.0009017478959223e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 22,
+      "face_ids": [
+        2733,
+        2749
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.6754666115184755e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 45,
+      "facet": 23,
+      "face_ids": [
+        2734,
+        2750
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044542969e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 12,
+      "face_ids": [
+        2772,
+        2776
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044481676e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 13,
+      "face_ids": [
+        2771,
+        2775
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.675466611594672e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 14,
+      "face_ids": [
+        2770,
+        2774
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 2.000901744005919e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 15,
+      "face_ids": [
+        2787,
+        2793
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377642,
+      "symmetric_difference_mm2": 3.7533335902958413e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 16,
+      "face_ids": [
+        2782,
+        2794
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383024207e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 17,
+      "face_ids": [
+        2783,
+        2795
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037511431e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 18,
+      "face_ids": [
+        2784,
+        2796
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020224960973018,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 1.824059037540719e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 19,
+      "face_ids": [
+        2785,
+        2797
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020187016568523,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 1.9703919383214217e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 20,
+      "face_ids": [
+        2786,
+        2798
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202069237063585,
+      "analytic_area_mm2": 4.020206720377612,
+      "symmetric_difference_mm2": 3.7533335591333014e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 21,
+      "face_ids": [
+        2788,
+        2799
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377603,
+      "symmetric_difference_mm2": 2.0009017478959223e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 22,
+      "face_ids": [
+        2789,
+        2800
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201467956442,
+      "analytic_area_mm2": 4.020206720377576,
+      "symmetric_difference_mm2": 2.6754666115184755e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 57,
+      "facet": 23,
+      "face_ids": [
+        2790,
+        2801
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020195001215969,
+      "analytic_area_mm2": 4.020206720377599,
+      "symmetric_difference_mm2": 1.1719269044542969e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 12,
+      "face_ids": [
+        2822,
+        2836
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201972028314,
+      "analytic_area_mm2": 4.0202067203775735,
+      "symmetric_difference_mm2": 4.748418299849588e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 13,
+      "face_ids": [
+        2819,
+        2834
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020181030821707,
+      "analytic_area_mm2": 4.020206720377614,
+      "symmetric_difference_mm2": 2.5689924620725102e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 14,
+      "face_ids": [
+        2821,
+        2835
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377624,
+      "symmetric_difference_mm2": 2.0009017500677486e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 15,
+      "face_ids": [
+        2820,
+        2833
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020164554186359,
+      "analytic_area_mm2": 4.020206720377564,
+      "symmetric_difference_mm2": 4.216631092973218e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 16,
+      "face_ids": [
+        2818,
+        2840
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202856974538586,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 7.897706095701717e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 17,
+      "face_ids": [
+        2824,
+        2839
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020172012099943,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 3.610244778647511e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 18,
+      "face_ids": [
+        2825,
+        2841
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020172012099943,
+      "analytic_area_mm2": 4.0202067203775504,
+      "symmetric_difference_mm2": 3.610244778700126e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 19,
+      "face_ids": [
+        2826,
+        2842
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.0202856974538586,
+      "analytic_area_mm2": 4.020206720377596,
+      "symmetric_difference_mm2": 7.897706095682716e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 20,
+      "face_ids": [
+        2827,
+        2843
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020164554186359,
+      "analytic_area_mm2": 4.020206720377534,
+      "symmetric_difference_mm2": 4.216631089930353e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 21,
+      "face_ids": [
+        2828,
+        2844
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020223179438261,
+      "analytic_area_mm2": 4.020206720377663,
+      "symmetric_difference_mm2": 2.0009017538738942e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 22,
+      "face_ids": [
+        2829,
+        2845
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020181030821707,
+      "analytic_area_mm2": 4.020206720377614,
+      "symmetric_difference_mm2": 2.5689924620213403e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "cx": 66,
+      "facet": 23,
+      "face_ids": [
+        2830,
+        2846
+      ],
+      "finite_domain_full_component": true,
+      "all_four_corners_checked": true,
+      "global_plane_face_count_not_selection": 2,
+      "actual_area_mm2": 4.020201972028314,
+      "analytic_area_mm2": 4.0202067203775735,
+      "symmetric_difference_mm2": 4.74841830014331e-06,
+      "overlap_mm2": 0.0
+    }
+  ],
+  "old_outer288gray_preserved": true,
+  "remaining2672neutral_preserved": true,
+  "component_boundary_contacts": [
+    {
+      "cx": -63,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2294,
+            2310
+          ],
+          "edge": [
+            [
+              -64.0999984741211,
+              30.0,
+              3.0
+            ],
+            [
+              -64.0999984741211,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2303,
+            2318
+          ],
+          "edge": [
+            [
+              -61.900001525878906,
+              30.0,
+              3.0
+            ],
+            [
+              -61.900001525878906,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": -51,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2341,
+            2357
+          ],
+          "edge": [
+            [
+              -52.099998474121094,
+              30.0,
+              3.0
+            ],
+            [
+              -52.099998474121094,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2351,
+            2366
+          ],
+          "edge": [
+            [
+              -49.900001525878906,
+              30.0,
+              3.0
+            ],
+            [
+              -49.900001525878906,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": -39,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2388,
+            2403
+          ],
+          "edge": [
+            [
+              -40.099998474121094,
+              30.0,
+              3.0
+            ],
+            [
+              -40.099998474121094,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2399,
+            2414
+          ],
+          "edge": [
+            [
+              -37.900001525878906,
+              30.0,
+              3.0
+            ],
+            [
+              -37.900001525878906,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": -27,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2442,
+            2457
+          ],
+          "edge": [
+            [
+              -28.100000381469727,
+              30.0,
+              3.0
+            ],
+            [
+              -28.100000381469727,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2447,
+            2462
+          ],
+          "edge": [
+            [
+              -25.899999618530273,
+              30.0,
+              3.0
+            ],
+            [
+              -25.899999618530273,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": -15,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2490,
+            2505
+          ],
+          "edge": [
+            [
+              -16.100000381469727,
+              30.0,
+              3.0
+            ],
+            [
+              -16.100000381469727,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2495,
+            2510
+          ],
+          "edge": [
+            [
+              -13.899999618530273,
+              30.0,
+              3.0
+            ],
+            [
+              -13.899999618530273,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": -3,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2538,
+            2553
+          ],
+          "edge": [
+            [
+              -4.099999904632568,
+              30.0,
+              3.0
+            ],
+            [
+              -4.099999904632568,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2543,
+            2558
+          ],
+          "edge": [
+            [
+              -1.899999976158142,
+              30.0,
+              3.0
+            ],
+            [
+              -1.899999976158142,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": 9,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2584,
+            2600
+          ],
+          "edge": [
+            [
+              7.900000095367432,
+              30.0,
+              3.0
+            ],
+            [
+              7.900000095367432,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2591,
+            2606
+          ],
+          "edge": [
+            [
+              10.100000381469727,
+              30.0,
+              3.0
+            ],
+            [
+              10.100000381469727,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": 21,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2628,
+            2644
+          ],
+          "edge": [
+            [
+              19.899999618530273,
+              30.0,
+              3.0
+            ],
+            [
+              19.899999618530273,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2639,
+            2654
+          ],
+          "edge": [
+            [
+              22.100000381469727,
+              30.0,
+              3.0
+            ],
+            [
+              22.100000381469727,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": 33,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2679,
+            2694
+          ],
+          "edge": [
+            [
+              31.899999618530273,
+              30.0,
+              3.0
+            ],
+            [
+              31.899999618530273,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2687,
+            2702
+          ],
+          "edge": [
+            [
+              34.099998474121094,
+              30.0,
+              3.0
+            ],
+            [
+              34.099998474121094,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": 45,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2725,
+            2741
+          ],
+          "edge": [
+            [
+              43.900001525878906,
+              30.0,
+              3.0
+            ],
+            [
+              43.900001525878906,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2735,
+            2750
+          ],
+          "edge": [
+            [
+              46.099998474121094,
+              30.0,
+              3.0
+            ],
+            [
+              46.099998474121094,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": 57,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2772,
+            2777
+          ],
+          "edge": [
+            [
+              55.900001525878906,
+              30.0,
+              3.0
+            ],
+            [
+              55.900001525878906,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2791,
+            2801
+          ],
+          "edge": [
+            [
+              58.099998474121094,
+              30.0,
+              3.0
+            ],
+            [
+              58.099998474121094,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "cx": 66,
+      "outer_inner_boundary_edges": [
+        {
+          "faces": [
+            2822,
+            2837
+          ],
+          "edge": [
+            [
+              64.9000015258789,
+              30.0,
+              3.0
+            ],
+            [
+              64.9000015258789,
+              30.0,
+              17.0
+            ]
+          ]
+        },
+        {
+          "faces": [
+            2831,
+            2846
+          ],
+          "edge": [
+            [
+              67.0999984741211,
+              30.0,
+              3.0
+            ],
+            [
+              67.0999984741211,
+              30.0,
+              17.0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "total_mesh_area_mm2": 578.9096806798202,
+  "total_analytic_area_mm2": 578.9097677343727,
+  "global_coplanar_domain_count": 754,
+  "mixed_before_after": [
+    0,
+    0
+  ],
+  "source": {
+    "url": "https://general.ntue.edu.tw/var/file/44/1044/img/606570806.pdf",
+    "page_one_based": 77,
+    "printed_page": "2-71",
+    "personally_viewed": "Rendered official exterior front/side page, plus both extracted images; floorplans on78/79 not color evidence",
+    "date_limit": "2023document date/metadata not photo capture; no2026condition guarantee",
+    "interpretation": "Twelve original southern colonnade supports correspond to continuous gray cylindrical support family; keep original nominal#858983. Inner/shaded halves samecomponent inference, not claim every rear facet photographed."
+  },
+  "personally_viewed_both_extracted_images": true,
+  "photo_sha256": {
+    "independent-tnua-ntua-ntue-thirteenth-20261117/private/ntue-page77-image0.jpeg": "becbf41fb85fc4b8f96d77bffb766819d0f76b49d7eacceb3874ee05015015e9",
+    "independent-tnua-ntua-ntue-thirteenth-20261117/private/ntue-page77-image1.jpeg": "800683c0a9a0cf5fb5b92ce1eb5660716d63ad0e918730d90daf726842c42dcd"
+  },
+  "material_identity": "Both officialexteriorphotos show gray slender roundcolonnades under lightconcretewalkway alongside brickmuseum and lowerglazing. Supports are distinctfrom redbrick,metal/glass and slabfaces. Visible roundside/shadow supports samegraycolumnfamily, not wholefacadepaint.",
+  "inference": "Innerhalf ofeach sameoriginal roundcolumn, nominalradius1.1 and24facets; every rearfacet notdirectlyobserved. Counts/spacing regularizedproxy notphotogrammetry. All144chordrectangles are individuallybounded, NOT wholeinfiniteplanes sharedbyothercolumns.",
+  "geometry_limits": "Originalnominalz3..18.6 columnintersectsbeamz17..19.1; onlyexposedz3..17, top1.6buried notcreated. No cap/bottom/beam recolor.",
+  "exclusions": [
+    "Glass,brickwalls,ears,roof,northernmetalfins",
+    "Slabs/caps/bottoms andburiedfaces"
+  ],
+  "date_rights": "2023documentmetadata notcapturedate, not2026condition; privatePDF/photos notpublicredistributed.",
+  "qa_limit": "Domainreviewonly; no productionexchange/scene/render/ZIP or manufacturingrecertification",
+  "models_modified": false,
+  "ledger_modified": false,
+  "uploaded": false
+}
