@@ -1,3 +1,9 @@
+## 本次多面補色：入口上層構件側面推估
+
+在既有入口上層兩外柱與橫簷正面灰洗石代理色基礎上，將 **24 個原中性完整三角面** 延伸同色：左柱側 10 面、右柱側 10 面、橫簷端面 4 面。這是**同構件材料連續性推估，非新側背照片證據或 2026 現況確認**。不擴到下柱、窗凹／窗框、背牆、基部、頂面、底棚或瓦坡；原 19 瓦面與 6 個入口正面彩面不變。原 1,020 面／506 頂點、幾何與面序保留，其他 996 面配色不變；未實體試印。
+
+本次 QA 見 `qa-continuous-walls/`；舊 `qa/` 與 `qa-frame-continuation/` 為歷史版本記錄，下方舊版中性範圍只對上述 24 面更新。現行重建：`python appearance/source/build_continuous_walls.py`；驗證：`python appearance/source/verify_continuous_exchange.py`；渲染：`blender -b --python appearance/source/render_continuous_walls.py`；場景驗證：`blender -b --python appearance/source/verify_continuous_scene.py`。舊分類器僅作基底，直接執行會回復先前版本。新 ZIP 不含任何第三方照片。
+
 # 政大果夫樓：兩個可見瓦坡限域配色
 
 原1020面中，僅主屋朝前庭坡10面、左翼朝前庭內坡9面，合計19個完整原三角面採低飽和灰綠瓦代理 #647B60；其餘1001面採中性 #AAA79F。中性表示未確認，不代表實物均灰色。本件是果夫樓，並非達賢圖書館；不是全棟材質復原或2026現況。
