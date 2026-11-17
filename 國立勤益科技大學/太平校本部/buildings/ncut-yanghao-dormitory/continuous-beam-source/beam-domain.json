@@ -1,0 +1,381 @@
+{
+  "status": "PASS_FINITE_SAME_UPPER_BEAM_INNER_FACE_INFERENCE",
+  "repository_path": "國立勤益科技大學/太平校本部/buildings/ncut-yanghao-dormitory",
+  "modified_model": false,
+  "published": false,
+  "source_stl_sha256": "6efc4133d359b70fab35aaeec47dd77bf6dffe53e48b93e6aa7183facbd16879",
+  "baseline_color_mesh_sha256": "dd55bec7e28ff5cf1f1918abf466ad1671f051a89f35903485ea1135b403e5a6",
+  "candidate": {
+    "faces": [
+      13508,
+      13509,
+      13512,
+      13513,
+      13516,
+      13517,
+      13518,
+      13523,
+      13525,
+      13526,
+      13530,
+      13531,
+      13533,
+      13537,
+      13538,
+      13543,
+      13549,
+      13554,
+      21615,
+      21620,
+      21624,
+      21628,
+      21635,
+      21636,
+      21640,
+      21642,
+      21645,
+      21647,
+      21648,
+      21652,
+      21654,
+      21657,
+      21660,
+      21661,
+      21662,
+      21665,
+      21667,
+      21669,
+      21670,
+      21671,
+      21674,
+      21676,
+      21678,
+      21679
+    ],
+    "groups": [
+      {
+        "name": "short_outer_beam_inner",
+        "plane_y": -33.35,
+        "normal_y": 1,
+        "x": [
+          -67.2,
+          -17.925
+        ],
+        "z": [
+          74,
+          75.65
+        ],
+        "faces": [
+          13508,
+          13509,
+          13512,
+          13513,
+          13516,
+          13517,
+          13518,
+          13523,
+          13525,
+          13526,
+          13530,
+          13531,
+          13533,
+          13537,
+          13538,
+          13543,
+          13549,
+          13554
+        ],
+        "area_mm2": 77.44381465908373,
+        "analytic_area_mm2": 77.44375000000034,
+        "analytic_exterior": [
+          [
+            -67.2,
+            75.65
+          ],
+          [
+            -17.925,
+            75.65
+          ],
+          [
+            -17.925,
+            74.0
+          ],
+          [
+            -28.525000000000002,
+            74.0
+          ],
+          [
+            -28.525000000000002,
+            74.3
+          ],
+          [
+            -30.125000000000004,
+            74.3
+          ],
+          [
+            -30.125000000000004,
+            74.0
+          ],
+          [
+            -40.75,
+            74.0
+          ],
+          [
+            -40.75,
+            74.3
+          ],
+          [
+            -42.349999999999994,
+            74.3
+          ],
+          [
+            -42.349999999999994,
+            74.0
+          ],
+          [
+            -52.975,
+            74.0
+          ],
+          [
+            -52.975,
+            74.3
+          ],
+          [
+            -54.574999999999996,
+            74.3
+          ],
+          [
+            -54.574999999999996,
+            74.0
+          ],
+          [
+            -65.2,
+            74.0
+          ],
+          [
+            -65.2,
+            74.3
+          ],
+          [
+            -65.8,
+            74.3
+          ],
+          [
+            -65.8,
+            75.6
+          ],
+          [
+            -67.2,
+            75.6
+          ],
+          [
+            -67.2,
+            75.65
+          ]
+        ],
+        "symdiff_mm2": 0.00010135649675716342,
+        "all_original_faces_on_full_plane": true,
+        "no_triangle_interior_overlap": true
+      },
+      {
+        "name": "long_outer_beam_inner",
+        "plane_y": 33.35,
+        "normal_y": -1,
+        "x": [
+          9.925,
+          67.2
+        ],
+        "z": [
+          74,
+          75.65
+        ],
+        "faces": [
+          21615,
+          21620,
+          21624,
+          21628,
+          21635,
+          21636,
+          21640,
+          21642,
+          21645,
+          21647,
+          21648,
+          21652,
+          21654,
+          21657,
+          21660,
+          21661,
+          21662,
+          21665,
+          21667,
+          21669,
+          21670,
+          21671,
+          21674,
+          21676,
+          21678,
+          21679
+        ],
+        "area_mm2": 89.68381701467297,
+        "analytic_area_mm2": 89.68375000000039,
+        "analytic_exterior": [
+          [
+            9.925,
+            74.0
+          ],
+          [
+            9.925,
+            75.65
+          ],
+          [
+            67.2,
+            75.65
+          ],
+          [
+            67.2,
+            75.6
+          ],
+          [
+            65.8,
+            75.6
+          ],
+          [
+            65.8,
+            74.3
+          ],
+          [
+            65.2,
+            74.3
+          ],
+          [
+            65.2,
+            74.0
+          ],
+          [
+            57.31666666666666,
+            74.0
+          ],
+          [
+            57.31666666666666,
+            74.3
+          ],
+          [
+            55.71666666666667,
+            74.3
+          ],
+          [
+            55.71666666666667,
+            74.0
+          ],
+          [
+            47.83333333333333,
+            74.0
+          ],
+          [
+            47.83333333333333,
+            74.3
+          ],
+          [
+            46.233333333333334,
+            74.3
+          ],
+          [
+            46.233333333333334,
+            74.0
+          ],
+          [
+            38.349999999999994,
+            74.0
+          ],
+          [
+            38.349999999999994,
+            74.3
+          ],
+          [
+            36.75,
+            74.3
+          ],
+          [
+            36.75,
+            74.0
+          ],
+          [
+            28.866666666666664,
+            74.0
+          ],
+          [
+            28.866666666666664,
+            74.3
+          ],
+          [
+            27.266666666666662,
+            74.3
+          ],
+          [
+            27.266666666666662,
+            74.0
+          ],
+          [
+            19.383333333333333,
+            74.0
+          ],
+          [
+            19.383333333333333,
+            74.3
+          ],
+          [
+            17.78333333333333,
+            74.3
+          ],
+          [
+            17.78333333333333,
+            74.0
+          ],
+          [
+            9.925,
+            74.0
+          ]
+        ],
+        "symdiff_mm2": 0.00012280461550940206,
+        "all_original_faces_on_full_plane": true,
+        "no_triangle_interior_overlap": true
+      }
+    ],
+    "changed_faces": 44,
+    "from_material_index": 1,
+    "to_material_index": 0,
+    "original_colored_faces_preserved": 54,
+    "triangles": 27290,
+    "vertices": 13459,
+    "raw_STL_triangle_order_exact": true,
+    "palette_unchanged": true,
+    "all_full_coplanar_planes_selected": true,
+    "excluded": "beamtop/bottom,endpanels,frameposts,innercourtyardbeams,roofterrace,mainwalls,windows,redcanopyandbase",
+    "scope": "Inner vertical surfaces of same two existing outer upper horizontal beams only; not previouslywithdrawn1240broadframecandidates. Already-exportedYreflection respected,no secondreflection."
+  },
+  "manifest_dedup": {
+    "count": 98,
+    "matches": []
+  },
+  "sources": {
+    "url": "https://oga.ncut.edu.tw/var/file/54/1054/img/638/514047131.pdf",
+    "pages": [
+      2
+    ],
+    "assets": [
+      "yanghao-001.png",
+      "yanghao-002.png"
+    ],
+    "private_files": {
+      "yanghao-001.png": "2c2357df19d781d854b9775edcee4330b71b7bb845565f742f4592640b43d5e4",
+      "yanghao-000.png": "658c467a3cc13efe5ae7ecd3ee9b8eca37062150df3122bccd34dfc6c1158d13",
+      "yanghao-002.png": "a68df2ef98d03f7b55a638b26f7944457809c986c40d7e4619d5d5c94e686618",
+      "yanghao.pdf": "d5b2ed435bec0511679164815cefb16284da38b5fe53cc6a2f6b225759e5b452"
+    },
+    "personally_viewed": true,
+    "observation": "Bothopposing completedofficialaerials show offwhite upper open framebeams. Limitedinnerfacematerialfamily supported atbuildingcomponentlevel; specificmeshfacetorientation notsurveyed. Hiddenportions explicitlysamebeaminference;no newwindows orroofdeckcolor.",
+    "dates": "Photoexposuredatesunknown;PDF2023-10-16creationnotphotoor2026condition",
+    "rights": "Private referenceimages/PDFnotpublicdeliverables."
+  }
+}
