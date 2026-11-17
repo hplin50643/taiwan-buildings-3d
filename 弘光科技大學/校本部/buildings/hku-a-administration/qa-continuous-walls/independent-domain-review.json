@@ -1,0 +1,174 @@
+{
+  "status": "PASS_FINITE_LEFT_CAP_END_ONLY",
+  "slug": "hku-a-administration",
+  "repo_prefix": "弘光科技大學/校本部/buildings/hku-a-administration",
+  "count_delta": 0,
+  "research_only_no_delivery_no_upload": true,
+  "baseline": {
+    "triangles": 1210,
+    "vertices": 607,
+    "counts": [
+      4,
+      1206
+    ],
+    "hashes": {
+      "color-mesh.npz": "ed0d560fae4da96da6f8493d4f4bd057b32718fe9c7e4dc8af00fded2e2b89d1",
+      "model.stl": "ce17592a6e446c56105a0ec3c1b9202e017a6ee9427d670ed6fb8056ae3c39e7",
+      "palette.json": "675e47746f1665ae2a3e3360c2bf090140c7f28667cde46b06b4baef4499709b",
+      "build_model.py": "e7ec62c5091be393a0ec04d1e9fb15f656e6904bff7515fc18905a2c84ab0e4d"
+    },
+    "STL_triangle_coordinate_order_exact": true
+  },
+  "selection": {
+    "face_ids": [
+      1094,
+      1095
+    ],
+    "target_material": 0,
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "bounds_all_vertices": [
+      [
+        -70.0,
+        -13.5,
+        48.2
+      ],
+      [
+        -70.0,
+        29.5,
+        50.2
+      ]
+    ],
+    "full_coplanar_component": [
+      1094,
+      1095
+    ],
+    "unique_corners": [
+      [
+        -70.0,
+        -13.5,
+        48.20000076293945
+      ],
+      [
+        -70.0,
+        -13.5,
+        50.20000076293945
+      ],
+      [
+        -70.0,
+        29.5,
+        48.20000076293945
+      ],
+      [
+        -70.0,
+        29.5,
+        50.20000076293945
+      ]
+    ],
+    "area_formula": "43 * 2",
+    "analytic_area_mm2": 86,
+    "triangle_area_mm2": 86.0,
+    "full_old_white_front_edge_adjacency": [
+      {
+        "vertices": [
+          [
+            -70.0,
+            -13.5,
+            48.20000076293945
+          ],
+          [
+            -70.0,
+            -13.5,
+            50.20000076293945
+          ]
+        ],
+        "faces": [
+          1087,
+          1094
+        ],
+        "length_mm": 2.0
+      }
+    ],
+    "all_vertices_finite_not_centroid": true
+  },
+  "in_memory_result": {
+    "counts": [
+      6,
+      1204
+    ],
+    "original_four_white_faces_preserved": true,
+    "other_1208_faces_unchanged": true,
+    "all_coplanar_components_uniform": 324,
+    "geometry_unchanged": true,
+    "palette_unchanged": true
+  },
+  "source": {
+    "official_page": "https://www.hk.edu.tw/行政單位/",
+    "image_url": "https://www.hk.edu.tw/wp-content/uploads/2021/01/DSC_0492秘書室-scaled.jpg",
+    "image_sha256": "83ff2c73ff0cb90eb0e10ab5e1b3bcc0f00f7e3943accd9eaa45fd95261169d7",
+    "matches_original_register_sha256": true,
+    "personally_viewed": true,
+    "identity": "中央高拱窗、紅肩及左長翼、導覽牌 A 教學大樓與同項行政／舊教學群吻合；不是右低翼。",
+    "visible_evidence": "左翼最上白色窄屋緣可見，左端轉角約 x240–340,y550–640 的白色側向短段受樹遮；屋緣下方有暗色槽／陰影，不能據此前白塗底面。",
+    "inference": "僅將同一原左屋cap的2 mm高左端立面，從既有前白色沿完整端面延續。照片未覆蓋模型43 mm全進深，未見部分明示同構件色族推論，非整面實照確證。原簡化實心cap沒有真實細接縫／槽，補色不追認其幾何或進深。",
+    "dates": "2021/01為上傳路徑；拍攝日未知，不宣稱2026現況。",
+    "privacy": "原照只私存，不納入任何公開包或貼圖。"
+  },
+  "exclusions": [
+    "屋cap頂面不推定為外立面同色，底面有暗槽／陰影差異，全部保留中性。",
+    "後緣 y29.5 及右端 x4 未與原白前緣直接相鄰，不連鎖推廣。",
+    "中央紅肩、金徽、混色教室牆、玻璃、右低翼、窗洞、階梯及未知背側全部不變。"
+  ],
+  "duplicate_check": {
+    "existing_manifest_ledger_hold_review_hits_for_slug": [],
+    "method": "遞迴檢查檔名含 manifest/publish/ledger/hold/review 的 JSON，排除巨大依賴檔；本報告寫入前無命中。",
+    "F_G_already_completed_not_revisited": true
+  },
+  "remaining_unreviewed": [
+    "hku-d-food-science",
+    "hku-gate-guardhouse",
+    "hku-jk-technology-gymnasium",
+    "hku-n-research",
+    "hku-p-comprehensive-teaching",
+    "hku-q-student-dormitory"
+  ],
+  "source_color_mesh_sha256": "ed0d560fae4da96da6f8493d4f4bd057b32718fe9c7e4dc8af00fded2e2b89d1",
+  "source_palette_sha256": "675e47746f1665ae2a3e3360c2bf090140c7f28667cde46b06b4baef4499709b",
+  "source_stl_sha256": "ce17592a6e446c56105a0ec3c1b9202e017a6ee9427d670ed6fb8056ae3c39e7",
+  "face_ids": [
+    1094,
+    1095
+  ],
+  "groups": [
+    {
+      "bounds": [
+        [
+          -70.0,
+          -13.5,
+          48.2
+        ],
+        [
+          -70.0,
+          29.5,
+          50.2
+        ]
+      ],
+      "axis": 0,
+      "value": -70,
+      "normal_sign": -1,
+      "ids": [
+        1094,
+        1095
+      ],
+      "complete_coplanar_component": [
+        1094,
+        1095
+      ],
+      "rectangle_corner_completeness": true,
+      "analytic_area_mm2": 86
+    }
+  ]
+}
