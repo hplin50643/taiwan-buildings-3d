@@ -1,0 +1,157 @@
+{
+  "status": "PASS_FINITE_LEFT_ROOF_FASCIA_ONLY",
+  "slug": "hku-p-comprehensive-teaching",
+  "count_delta": 0,
+  "original_faces": 2198,
+  "original_vertices": 1077,
+  "source_color_mesh_sha256": "6261644b9dcd1825fc1e9ba445f9f834a0a69cd84e86674c23fbe8178b43a43f",
+  "source_palette_sha256": "132db18476fd06fe7ed893c3532480d960befe05d8ecac0bf06bda9fdac96f8a",
+  "source_stl_sha256": "369cd63ba611be6fe51cca721c0b1b8cb198c8cee8a5ef451eed584d6c47a6d4",
+  "groups": [
+    {
+      "axis": 0,
+      "value": -67,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -67,
+          -19,
+          82
+        ],
+        [
+          -67.0,
+          34.0,
+          84.8
+        ]
+      ],
+      "ids": [
+        1979,
+        2022
+      ],
+      "complete_coplanar_component": [
+        1979,
+        2022
+      ],
+      "rectangle_corner_completeness": true,
+      "corners": [
+        [
+          -67.0,
+          -19.0,
+          82.0
+        ],
+        [
+          -67.0,
+          -19.0,
+          84.80000305175781
+        ],
+        [
+          -67.0,
+          34.0,
+          82.0
+        ],
+        [
+          -67.0,
+          34.0,
+          84.80000305175781
+        ]
+      ],
+      "analytic_area_mm2": 148.39999999999998,
+      "mesh_area_mm2": 148.40016174316406,
+      "prior_gray_full_front_edge": [
+        {
+          "vertices": [
+            [
+              -67.0,
+              -19.0,
+              82.0
+            ],
+            [
+              -67.0,
+              -19.0,
+              84.80000305175781
+            ]
+          ],
+          "faces": [
+            1979,
+            1987
+          ],
+          "length_mm": 2.8000030517578125
+        }
+      ]
+    }
+  ],
+  "face_ids": [
+    1979,
+    2022
+  ],
+  "changed_faces": 2,
+  "existing_colored_faces_preserved": 4,
+  "unchanged_faces": 2196,
+  "counts_before": [
+    4,
+    2194
+  ],
+  "counts_after": [
+    6,
+    2192
+  ],
+  "all_coplanar_domains_single_material": 572,
+  "analytic_area_formula": "53*2.8=148.4",
+  "analytic_area_mm2": 148.4,
+  "mesh_area_mm2": 148.40016174316406,
+  "geometry_STL_triangle_order_exact": true,
+  "all_vertices_finite_no_centroid_selection": true,
+  "palette_unchanged": true,
+  "source": {
+    "contractor_page": "https://www.kcce.com.tw/work_detail.php?Key=35&On=0",
+    "source_type": "承包商港洲營造自己的工程頁與實景，不稱校方實拍。",
+    "personally_viewed": true,
+    "identity": "照片右磚塔直排綜合教學大樓、折角寬簷、階梯狀下層大開口及右凹廊對應原P單群，不另計棟。",
+    "visual_evidence": "兩照前簷及右折邊皆呈連續淺暖灰，陰影底面與立邊可區分。左端角與淺色左邊框在正向照可辨，但左側53mm全深並未展示。",
+    "inference": "只延原同一polygon屋簷左外立窄邊；完整53mm未見深度是同簷材料族推論，不是實照全側面確證。原模型左窄帶與真樓左垂直邊框關係粗化，不把左整牆塗色或追認幾何。",
+    "date": "2009-05-21為完工日，不是拍攝日；兩照片拍攝日未知，2013另來源日期不挪用，不稱2026現況。",
+    "rights": "兩照片私人參考，不納公開包／貼圖，不推定再散布或商用許可。",
+    "images": [
+      {
+        "original_url": "https://www.kcce.com.tw/upload/product_pic/508ce7692de47dec7ea7665d55b27604-FKKs.jpg",
+        "original_bytes_sha256": "b83315aaf6f39b2336902fbc7227ccb342a13fab546d009994d050b18641e7b5",
+        "page_rendition_url": "https://www.kcce.com.tw/includes/timthumb.php?src=upload/product_pic/508ce7692de47dec7ea7665d55b27604-FKKs.jpg&w=1920&h=1080&zc=2",
+        "page_rendition_sha256": "b977869d8d857d1aed9d7c4838928656d217a0df1490b892b440e0b90ee04026",
+        "page_rendition_matches_old_register": true,
+        "hash_explanation": "原登記對應網頁1920x1080 timthumb版本，不是原upload檔；兩者分開列SHA，不冒稱相同。"
+      },
+      {
+        "original_url": "https://www.kcce.com.tw/upload/product_pic/40a78663d092954a7d3505647fcac1c7-xmv6.jpg",
+        "original_bytes_sha256": "1aa0123809d20dbc4870e760456e3a2d4a836229e8d5969d1a3f260863dacd93",
+        "page_rendition_url": "https://www.kcce.com.tw/includes/timthumb.php?src=upload/product_pic/40a78663d092954a7d3505647fcac1c7-xmv6.jpg&w=1920&h=1080&zc=2",
+        "page_rendition_sha256": "6c4f13b5142741dac3db845caa69df207652e7bb16a426563b829335656f19a4",
+        "page_rendition_matches_old_register": true,
+        "hash_explanation": "原登記對應網頁1920x1080 timthumb版本，不是原upload檔；兩者分開列SHA，不冒稱相同。"
+      }
+    ]
+  },
+  "limits": [
+    "屋頂、暗底/soffit、後緣與右後窄邊不染；後緣不和原白前緣直接相鄰，不連鎖外推。",
+    "原右折灰面4舊灰的一部分必保留，其tower union截止x52.5/y−3.88888884不得改寫為名義54/−3。",
+    "文字磚塔、混色牆/玻璃框、露台實欄代理、設備、台階基座及未知背面全不動。",
+    "不新增玻璃金字塔、樓層、屋簷接縫或其他細節；原六列可見窗不認證實際僅六樓。"
+  ],
+  "duplicate_check": {
+    "no_existing_P_delivery_or_specific_HOLD": true,
+    "hits_only_other_completed_report_unreviewed_list": true
+  },
+  "remaining_unreviewed": [
+    "hku-d-food-science",
+    "hku-gate-guardhouse",
+    "hku-n-research",
+    "hku-q-student-dormitory"
+  ],
+  "research_only_no_delivery": true,
+  "neutral_material_check": {
+    "index": 1,
+    "name": "HKU P unverified tower walls roof neutral",
+    "explicit_unverified_not_real_concrete": true
+  },
+  "area_tolerance_mm2": 0.0002,
+  "area_float_explanation": "原STL z84.80000305175781，與名義84.8有float32誤差，故53*2.8000030517578125=148.40016174316406；交付不得round原點以湊解析數。"
+}

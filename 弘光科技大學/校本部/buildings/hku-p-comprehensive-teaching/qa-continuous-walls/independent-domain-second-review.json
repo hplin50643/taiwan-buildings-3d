@@ -1,0 +1,65 @@
+{
+  "status": "PASS_INDEPENDENT_FINITE_LEFT_ROOF_FASCIA",
+  "read_only": true,
+  "delivery_files_modified": false,
+  "triangles": 2198,
+  "vertices": 1077,
+  "face_ids": [
+    1979,
+    2022
+  ],
+  "original4gray_preserved": true,
+  "other2196faces_unchanged": true,
+  "groups": [
+    {
+      "ids": [
+        1979,
+        2022
+      ],
+      "complete_coplanar_rectangle": true,
+      "analytic_area_mm2": 148.39999999999998,
+      "mesh_area_mm2": 148.40016174316406,
+      "actual_contact_end_y": 34,
+      "full_front_edge_links": [
+        {
+          "vertices": [
+            [
+              -67.0,
+              -19.0,
+              82.0
+            ],
+            [
+              -67.0,
+              -19.0,
+              84.80000305175781
+            ]
+          ],
+          "faces": [
+            1979,
+            1987
+          ]
+        }
+      ]
+    }
+  ],
+  "all572coplanar_domains_uniform": true,
+  "analytic_area_mm2": 148.4,
+  "mesh_area_mm2": 148.40016174316406,
+  "current_delivery_checks": {
+    "NPZ_geometry_STL_palette_exact": true,
+    "new_materials_match": false,
+    "still_baseline_materials": true,
+    "3MF_geometry_exact": false,
+    "3MF_new_materials_match": false,
+    "3MF_still_baseline_materials": true
+  },
+  "history_git_blob_verified": [
+    "COLOR-SOURCE-REGISTER.json",
+    "INDEPENDENT-COLOR-VISUAL-QA.json",
+    "SHA256SUMS",
+    "colorize_model.py"
+  ],
+  "source_scope": "No new photo viewing in secondreview. Contractororiginals andtimthumbdifferenthashes notconflated; notofficialcampusphoto. Full53mmdepth is sameeavefamily inference,not photographicallyverified fullside. Sourcefloat32top84.80000305175781 preserved without rounding;area tolerance2e-4.",
+  "exclusions": "Onlyx-67leftverticaledge,y-19..34,z82..84.8. Cap top/bottom/back,rightfoldunion-boundaryoriginal4gray preserved;wholeleftwall and glass remain unchanged.",
+  "render_scene_not_reviewed": true
+}

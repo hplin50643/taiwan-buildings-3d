@@ -1,0 +1,37 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "HKU P front roof fascia pale gray",
+      "hex": "#DEDDD3",
+      "faces": 4
+    },
+    {
+      "id": 1,
+      "name": "HKU P unverified tower walls roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 2194
+    }
+  ],
+  "domains": {
+    "front_and_rightfold_roof_fascia": 4,
+    "per_rectangle": [
+      2,
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 572
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "2198 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "Two whole front and chamfer fascia planes four original triangles pale warm gray.",
+    "All three vertices finite original polygon edges; each entire infinite plane equals its finite domain.",
+    "Tower union naturally shortens chamfer to x52.5, not material clipping.",
+    "Lettered brick tower, roof tops and soffits, mixed walls and glazing remain neutral.",
+    "P single original group, no glass pyramid or extra floors added.",
+    "Completion2009 not capture date; no2026 claim.",
+    "Two labels not verified filament slicing."
+  ]
+}
