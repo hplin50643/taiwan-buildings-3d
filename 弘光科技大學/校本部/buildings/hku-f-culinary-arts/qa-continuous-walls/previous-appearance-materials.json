@@ -1,0 +1,41 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed six complete front framing strips offwhite",
+      "hex": "#DEDDD3",
+      "faces": 12
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED mixed louvers signwall roof neutral",
+      "hex": "#B8BAB5",
+      "faces": 4168
+    }
+  ],
+  "domains": {
+    "six_complete_framing_fronts": 12,
+    "per_rectangle": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "whole_coplanar_withdrawals": 0,
+    "coplanar_domains": 757
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "4180 original triangles unchanged; no cuts or newgeometry",
+  "limitations": [
+    "Six complete framing fronts, twelve original triangles, offwhite.",
+    "All three vertices finite rectangles; whole infinite plane equals their union.",
+    "Awning union naturally hides original lower frame surfaces, not material clipping.",
+    "Full width topcap has no proven full correspondence; mixed louvers, lettering wall and marked awning neutral.",
+    "F Culinary Arts building is not L event venue or D Food Technology.",
+    "Flag2024 is not exact capture date; not2026 condition.",
+    "Two labels not verified filament slicing."
+  ]
+}

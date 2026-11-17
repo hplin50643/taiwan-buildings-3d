@@ -1,0 +1,726 @@
+{
+  "status": "PASS_FINITE_SAME_SIX_FRONT_FRAME_SIDE_RETURNS",
+  "repository_path": "弘光科技大學/校本部/buildings/hku-f-culinary-arts",
+  "read_only": true,
+  "modified_model": false,
+  "published": false,
+  "source_stl_sha256": "f6da2b555c5e75e62ea3d166f559cbc01262d42c327104456761decbe0103ee6",
+  "source_color_mesh_sha256": "98c9c4b4982fb527d583c14d55887c62dfd67b065456f54b65925ba2a5fb6c64",
+  "source_palette_sha256": "f3f844026ab619afe69ee15036ac4f2c186c765461676cccf79bccc599fdb6ee",
+  "triangles": 4180,
+  "vertices": 1884,
+  "original_STL_ordered_triangles_equal_color_mesh": true,
+  "baseline_material_counts": [
+    12,
+    4168
+  ],
+  "neutral_material_index": 1,
+  "neutral_label": "UNVERIFIED mixed louvers signwall roof neutral",
+  "target_material": 0,
+  "target_palette_name": "Observed six complete front framing strips offwhite",
+  "candidate_faces": 24,
+  "face_ids": [
+    3234,
+    3236,
+    3238,
+    3239,
+    3242,
+    3244,
+    3245,
+    3247,
+    3250,
+    3252,
+    3254,
+    3255,
+    3258,
+    3260,
+    3262,
+    3263,
+    3266,
+    3268,
+    3270,
+    3271,
+    3274,
+    3276,
+    3278,
+    3279
+  ],
+  "groups": [
+    {
+      "axis": 0,
+      "value": -64,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -64.0,
+          -24.0,
+          14.1
+        ],
+        [
+          -62,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3234,
+        3239
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          -64.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          -64.0,
+          -24.0,
+          64.0
+        ],
+        [
+          -64.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          -64.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3234,
+        3239
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3237
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": -62,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -64.0,
+          -24.0,
+          14.1
+        ],
+        [
+          -62,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3236,
+        3238
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          -62.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          -62.0,
+          -24.0,
+          64.0
+        ],
+        [
+          -62.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          -62.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3236,
+        3238
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3235
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": -47,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -47.0,
+          -24.0,
+          14.1
+        ],
+        [
+          -45,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3242,
+        3245
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          -47.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          -47.0,
+          -24.0,
+          64.0
+        ],
+        [
+          -47.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          -47.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3242,
+        3245
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3246
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": -45,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -47.0,
+          -24.0,
+          14.1
+        ],
+        [
+          -45,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3244,
+        3247
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          -45.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          -45.0,
+          -24.0,
+          64.0
+        ],
+        [
+          -45.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          -45.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3244,
+        3247
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3243
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": -30,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -30.0,
+          -24.0,
+          14.1
+        ],
+        [
+          -28,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3250,
+        3254
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          -30.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          -30.0,
+          -24.0,
+          64.0
+        ],
+        [
+          -30.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          -30.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3250,
+        3254
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3253
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": -28,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -30.0,
+          -24.0,
+          14.1
+        ],
+        [
+          -28,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3252,
+        3255
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          -28.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          -28.0,
+          -24.0,
+          64.0
+        ],
+        [
+          -28.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          -28.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3252,
+        3255
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3251
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": -13,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -13.0,
+          -24.0,
+          14.1
+        ],
+        [
+          -11,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3258,
+        3263
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          -13.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          -13.0,
+          -24.0,
+          64.0
+        ],
+        [
+          -13.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          -13.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3258,
+        3263
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3261
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": -11,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -13.0,
+          -24.0,
+          14.1
+        ],
+        [
+          -11,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3260,
+        3262
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          -11.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          -11.0,
+          -24.0,
+          64.0
+        ],
+        [
+          -11.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          -11.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3260,
+        3262
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3259
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": 4,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          4.0,
+          -24.0,
+          14.1
+        ],
+        [
+          6,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3266,
+        3270
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          4.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          4.0,
+          -24.0,
+          64.0
+        ],
+        [
+          4.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          4.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3266,
+        3270
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3269
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": 6,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          4.0,
+          -24.0,
+          14.1
+        ],
+        [
+          6,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3268,
+        3271
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          6.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          6.0,
+          -24.0,
+          64.0
+        ],
+        [
+          6.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          6.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3268,
+        3271
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3267
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": 21,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          21.0,
+          -24.0,
+          14.1
+        ],
+        [
+          23,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3274,
+        3279
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          21.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          21.0,
+          -24.0,
+          64.0
+        ],
+        [
+          21.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          21.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3274,
+        3279
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3277
+      ],
+      "rectangle_corner_completeness": true
+    },
+    {
+      "axis": 0,
+      "value": 23,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          21.0,
+          -24.0,
+          14.1
+        ],
+        [
+          23,
+          -20,
+          64
+        ]
+      ],
+      "ids": [
+        3276,
+        3278
+      ],
+      "area": 199.5999984741211,
+      "analytic_area_mm2": 199.6,
+      "vertices": [
+        [
+          23.0,
+          -24.0,
+          14.100000381469727
+        ],
+        [
+          23.0,
+          -24.0,
+          64.0
+        ],
+        [
+          23.0,
+          -20.0,
+          14.100000381469727
+        ],
+        [
+          23.0,
+          -20.0,
+          64.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        3276,
+        3278
+      ],
+      "coplanar_exact": true,
+      "adjacent_preserved_offwhite_front_face_ids": [
+        3275
+      ],
+      "rectangle_corner_completeness": true
+    }
+  ],
+  "analytic_area_mm2": 2395.2,
+  "mesh_area_mm2": 2395.199981689453,
+  "expected_new_counts": [
+    36,
+    4144
+  ],
+  "selection": "Sixoriginalfrontstrips centersx[-63,-46,-29,-12,5,22]. Eachleft/right sidex=center+-1, y[-24,-20], z[14.1,64]. Only12completeverticalside rectangles,2originaltriangleseach;fronty=-24alreadywhite.",
+  "boundary_proof": "Allverticesfinitebounds,correctoutwardnormal;4rectanglecornerscomplete,2trianglessharededge. Each area4*(64-14.1)=199.6. Eachwholecoplanarcomponent sharesentire49.9mmfrontedge withoneoriginaloffwhitefronttriangle. Originalcanopyunionraisesbottomfrom12to14.1; do not fill hiddenportion.",
+  "coplanar_components": 757,
+  "all_coplanar_domains_uniform_before_after": true,
+  "preservation": "12originaloffwhitefrontfaces preserved;all4156unselectedfaces,STL,vertices,faceorderandpalettebytesunchanged. Countdelta0;sameexistingFmodel.",
+  "exclusions": "No top/bottom/backsurfaces,allhorizontal louvers/backs,upperroofcap,upperclerestory,markedredawning,letteredbrownsignwall,rightreturngallery/slats,mainbody,rear,roofutilityvolume,stairsandbase. No newlettering,doors,windowsor neighboringD/Lbuilding.",
+  "inference": "Personallyviewedeventorganizer locationphoto;buildinggoldname clearly食品技藝大樓(F),notLtitleorD. Six frontwhiteframingstrips distinguishfromdarkmixedlouvers;full4mmdepthleft/rightreturns inherit same originalframe family. Occluded/lowerpartsare explicit same-component inference,not individuallypixelverified surfaces. Original6coarseframe dimensionsandprofile remainapproximation,notmeasuredcorrespondence.",
+  "sources": {
+    "page_url": "https://www.taichungjobfair.com/地點-弘光科技大學Ｌ棟生活應用大樓-location-hungkuang-university-building-l",
+    "image_url": "https://images.cdn-files-a.com/uploads/8927069/2000_663088cb047f0.jpg",
+    "publisher": "Event organizer official location directions,not a school-domain photo",
+    "event_image_sha256": "0abcc5f2528941e057b30c5a0dd367559ffe3b3f0311b697aee04474b547e140",
+    "matches_original_source_register": true,
+    "personally_viewed_this_pass": true,
+    "capture_date": "Unknown;2024flag/scenemarkand2025eventpage notprecisecapturetime;no2026claim.",
+    "private_only": true,
+    "arrows_signs_people_vegetation_not_material_evidence": true
+  },
+  "manifest_dedup": {
+    "manifests_checked": 87,
+    "matches": []
+  }
+}

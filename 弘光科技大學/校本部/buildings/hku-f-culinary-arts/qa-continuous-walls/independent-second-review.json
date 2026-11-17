@@ -1,0 +1,184 @@
+{
+  "status": "PASS_INDEPENDENT_FINITE_DOMAIN",
+  "kind": "frame",
+  "read_only": true,
+  "delivery_files_modified": false,
+  "triangles": 4180,
+  "vertices": 1884,
+  "face_ids": [
+    3234,
+    3236,
+    3238,
+    3239,
+    3242,
+    3244,
+    3245,
+    3247,
+    3250,
+    3252,
+    3254,
+    3255,
+    3258,
+    3260,
+    3262,
+    3263,
+    3266,
+    3268,
+    3270,
+    3271,
+    3274,
+    3276,
+    3278,
+    3279
+  ],
+  "preserved_existing_colored_faces": 12,
+  "all_other_faces_unchanged": true,
+  "all_coplanar_domains_uniform_after_extension": true,
+  "groups": [
+    {
+      "ids": [
+        3234,
+        3239
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3236,
+        3238
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3242,
+        3245
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3244,
+        3247
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3250,
+        3254
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3252,
+        3255
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3258,
+        3263
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3260,
+        3262
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3266,
+        3270
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3268,
+        3271
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3274,
+        3279
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    },
+    {
+      "ids": [
+        3276,
+        3278
+      ],
+      "complete_coplanar_component": true,
+      "complete_fourcorner_rectangle": true,
+      "analytic_area_mm2": 199.6,
+      "mesh_area_mm2": 199.5999984741211,
+      "complete_frontedge_adjoins_originalwhite": true
+    }
+  ],
+  "analytic_area_mm2": 2395.2,
+  "mesh_area_mm2": 2395.199981689453,
+  "current_delivery_checks": {
+    "NPZ_geometry_STL_palette_exact": true,
+    "new_materials_match": true,
+    "still_baseline_materials": false,
+    "3MF_geometry_exact": true,
+    "3MF_new_materials_match": true,
+    "3MF_still_baseline_materials": false
+  },
+  "exclusions": "Only xnormal frameside faces z14.1 canopyinterruption..64 y-24..-20;louvers/signwall/canopy/caps excluded",
+  "source_scope": "Numeric secondreview only;no new photo review. Primary reviewer identity/material scope retained; hiddenfacefamily continuity remains inference.",
+  "render_scene_not_reviewed": true
+}
