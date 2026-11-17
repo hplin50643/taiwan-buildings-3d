@@ -1,0 +1,205 @@
+{
+  "status": "PASS_DOMAIN_PHOTO_PENDING_INDEPENDENT",
+  "slug": "ntue-student-center",
+  "date": "2026-11-17",
+  "baseline": {
+    "faces": 3684,
+    "vertices": 1828,
+    "STL_sha256": "57b6d6f95e5ffc87bc44eeab06ab0f62f72f50e61f27532374200a3dc34d2403",
+    "npz_sha256": "58822e3afb6dc8050151907971f4c947b2bc6e87161bc44f27ab3823f56c6b34",
+    "original_colored_faces": [
+      820,
+      823
+    ],
+    "old_counts": [
+      2,
+      3682
+    ],
+    "STL_triangle_order_exact": true
+  },
+  "dedup_hits": [],
+  "selected_faces": [
+    818,
+    819,
+    821,
+    822,
+    824,
+    825
+  ],
+  "new_counts": [
+    8,
+    3676
+  ],
+  "domains": [
+    {
+      "name": "outer_left_return",
+      "axis": 0,
+      "plane": -31.6,
+      "other_axis": 1,
+      "span": [
+        -56,
+        -55.5
+      ],
+      "z": [
+        21.3,
+        34
+      ],
+      "faces": [
+        818,
+        819
+      ],
+      "finite_corners": [
+        [
+          -55.5,
+          21.3
+        ],
+        [
+          -55.5,
+          34.0
+        ],
+        [
+          -56.0,
+          34.0
+        ],
+        [
+          -56.0,
+          21.3
+        ],
+        [
+          -55.5,
+          21.3
+        ]
+      ],
+      "whole_coplanar_component_exact": true,
+      "full_plane_face_count": 4,
+      "plane_is_not_global_finite_claim": "Other disjoint same-plane lower/right pier components excluded explicitly",
+      "analytic_area_mm2": 6.35,
+      "mesh_area_mm2": 6.350000381469727,
+      "symmetric_difference_mm2": 3.8146972691777137e-07,
+      "overlap_mm2": 0.0
+    },
+    {
+      "name": "inner_right_return",
+      "axis": 0,
+      "plane": -28.4,
+      "other_axis": 1,
+      "span": [
+        -56,
+        -52
+      ],
+      "z": [
+        21.3,
+        34
+      ],
+      "faces": [
+        821,
+        824
+      ],
+      "finite_corners": [
+        [
+          -52.0,
+          21.3
+        ],
+        [
+          -52.0,
+          34.0
+        ],
+        [
+          -56.0,
+          34.0
+        ],
+        [
+          -56.0,
+          21.3
+        ],
+        [
+          -52.0,
+          21.3
+        ]
+      ],
+      "whole_coplanar_component_exact": true,
+      "full_plane_face_count": 5,
+      "plane_is_not_global_finite_claim": "Other disjoint same-plane lower/right pier components excluded explicitly",
+      "analytic_area_mm2": 50.8,
+      "mesh_area_mm2": 50.80000305175781,
+      "symmetric_difference_mm2": 3.051757815342171e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "name": "rear_exposed_sliver",
+      "axis": 1,
+      "plane": -52,
+      "other_axis": 0,
+      "span": [
+        -28.5,
+        -28.4
+      ],
+      "z": [
+        21.3,
+        34
+      ],
+      "faces": [
+        822,
+        825
+      ],
+      "finite_corners": [
+        [
+          -28.4,
+          21.3
+        ],
+        [
+          -28.4,
+          34.0
+        ],
+        [
+          -28.5,
+          34.0
+        ],
+        [
+          -28.5,
+          21.3
+        ],
+        [
+          -28.4,
+          21.3
+        ]
+      ],
+      "whole_coplanar_component_exact": true,
+      "full_plane_face_count": 8,
+      "plane_is_not_global_finite_claim": "Other disjoint same-plane lower/right pier components excluded explicitly",
+      "analytic_area_mm2": 1.270000000000018,
+      "mesh_area_mm2": 1.2700049209597637,
+      "symmetric_difference_mm2": 4.920959745717824e-06,
+      "overlap_mm2": 0.0
+    }
+  ],
+  "analytic_area_mm2": 58.420000000000016,
+  "mesh_area_mm2": 58.4200083541873,
+  "source": {
+    "url": "https://general.ntue.edu.tw/var/file/44/1044/img/606570806.pdf",
+    "document_date": "2023-10-25 as original register; PDF metadata2023-10-26; neither proves photo date",
+    "pdf_pages_one_based": [
+      52,
+      53
+    ],
+    "printed_pages": [
+      "2-46",
+      "2-47"
+    ],
+    "personally_viewed": "PDFpages and extracted exterior image0 from both pages; page53image1 floorplan NOT used for color",
+    "support": "Same left upper front support appears pale cream on front/left oblique exterior views; extend same original pale material only around that upper pier. Back narrow sliver and shaded inside inference, not independently photographed rear.",
+    "private_pdf_sha256": "7bf5f4d7ba64481f698b3b19f09345b3cc773b5349baf0c3f8882534fec5891e"
+  },
+  "limits": [
+    "Only six original triangles on three complete exposed upper-left pier cuboid surfaces; do not recolor broad attached wall atx-28.5 or y-55.5.",
+    "Original cuboid approximation retained, real rounded/finished pier not remodeled; z21.3..34 between original slab surfaces; no underside/cap or embedded faces created.",
+    "Lower pier gray base/material boundary, right pier red plaque/elevator overlap, mixed brick/gray balcony and cornice remain HOLD and untouched.",
+    "Old2pale faces and all other3676neutral faces unchanged; not whole student center exterior colored.",
+    "New nominal #D1D0C5 is original palette entry0; lighting/shadow not separately sampled. No2026 condition claim or survey/printing recertification.",
+    "Only read-only research; no delivery model modification, no upload, no public private photos."
+  ],
+  "original_colored_face_ids": [
+    820,
+    823
+  ]
+}

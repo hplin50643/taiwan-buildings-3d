@@ -1,0 +1,187 @@
+{
+  "status": "PASS_DOMAIN_ONLY",
+  "read_only": true,
+  "triangles": 3684,
+  "vertices": 1828,
+  "source_stl_sha256": "57b6d6f95e5ffc87bc44eeab06ab0f62f72f50e61f27532374200a3dc34d2403",
+  "source_npz_sha256": "58822e3afb6dc8050151907971f4c947b2bc6e87161bc44f27ab3823f56c6b34",
+  "source_palette_sha256": "8fe2db997ff94b0be0a73148d957e7cb75ac5bd1455726bb2d5e848c36e0d267",
+  "before_counts": [
+    2,
+    3682
+  ],
+  "proposed_counts": [
+    8,
+    3676
+  ],
+  "new_face_ids": [
+    818,
+    819,
+    821,
+    822,
+    824,
+    825
+  ],
+  "old_pale820_823_preserved": true,
+  "all3678unselected_faces_unchanged": true,
+  "domains": [
+    {
+      "axis": 0,
+      "plane": -31.6,
+      "span": [
+        -56,
+        -55.5
+      ],
+      "z": [
+        21.3,
+        34
+      ],
+      "ids": [
+        818,
+        819
+      ],
+      "full_global_coplanar_domain": true,
+      "exact_float32_fourcorners": true,
+      "analytic_area_mm2": 6.35,
+      "mesh_area_mm2": 6.350000381469727,
+      "symmetric_difference_mm2": 3.8146972691777137e-07,
+      "overlap_mm2": 0.0,
+      "old_pale_contacts": [
+        {
+          "original_pale_face": 820,
+          "edge": [
+            [
+              -31.600000381469727,
+              -56.0,
+              21.299999237060547
+            ],
+            [
+              -31.600000381469727,
+              -56.0,
+              34.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis": 0,
+      "plane": -28.4,
+      "span": [
+        -56,
+        -52
+      ],
+      "z": [
+        21.3,
+        34
+      ],
+      "ids": [
+        821,
+        824
+      ],
+      "full_global_coplanar_domain": true,
+      "exact_float32_fourcorners": true,
+      "analytic_area_mm2": 50.8,
+      "mesh_area_mm2": 50.80000305175781,
+      "symmetric_difference_mm2": 3.051757815342171e-06,
+      "overlap_mm2": 0.0,
+      "old_pale_contacts": [
+        {
+          "original_pale_face": 823,
+          "edge": [
+            [
+              -28.399999618530273,
+              -56.0,
+              21.299999237060547
+            ],
+            [
+              -28.399999618530273,
+              -56.0,
+              34.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "axis": 1,
+      "plane": -52,
+      "span": [
+        -28.5,
+        -28.4
+      ],
+      "z": [
+        21.3,
+        34
+      ],
+      "ids": [
+        822,
+        825
+      ],
+      "full_global_coplanar_domain": true,
+      "exact_float32_fourcorners": true,
+      "analytic_area_mm2": 1.270000000000018,
+      "mesh_area_mm2": 1.2700049209597637,
+      "symmetric_difference_mm2": 4.920959745691178e-06,
+      "overlap_mm2": 0.0,
+      "old_pale_contacts": []
+    }
+  ],
+  "rear_to_inner_full_edge": [
+    [
+      [
+        -28.399999618530273,
+        -52.0,
+        21.299999237060547
+      ],
+      [
+        -28.399999618530273,
+        -52.0,
+        34.0
+      ]
+    ]
+  ],
+  "total_mesh_area_mm2": 58.4200083541873,
+  "mixed_global_components_before_after": [
+    0,
+    0
+  ],
+  "source": {
+    "url": "https://general.ntue.edu.tw/var/file/44/1044/img/606570806.pdf",
+    "document_date": "2023-10-25 as original register; PDF metadata2023-10-26; neither proves photo date",
+    "pdf_pages_one_based": [
+      52,
+      53
+    ],
+    "printed_pages": [
+      "2-46",
+      "2-47"
+    ],
+    "personally_viewed": "PDFpages and extracted exterior image0 from both pages; page53image1 floorplan NOT used for color",
+    "support": "Same left upper front support appears pale cream on front/left oblique exterior views; extend same original pale material only around that upper pier. Back narrow sliver and shaded inside inference, not independently photographed rear.",
+    "private_pdf_sha256": "7bf5f4d7ba64481f698b3b19f09345b3cc773b5349baf0c3f8882534fec5891e"
+  },
+  "personally_viewed_both_extracted_photos": true,
+  "photo_hashes": {
+    "independent-tnua-ntua-ntue-thirteenth-20261117/private/ntue-page52-image0.jpeg": "7b10df8c2250bfd7b2895c82b9c9fb8116602bf8bb2381c137153b7f749e0b31",
+    "independent-tnua-ntua-ntue-thirteenth-20261117/private/ntue-page53-image0.jpeg": "0096b7a80983f9217f6b2bb66c8cf2bc192fa4a5768f2f6172e5d3038fcf1c2d"
+  },
+  "photo_material_judgment": "Bothfront andleftoblique photos identify sameleft freestanding pale support below roundedbalconies, opposite glazed elevator. Uppersection between originalfloor slab levels reads continuouspalecream, distinctfrom lowergrayfoot andredbrick/graygallerysurrounds. No visible redplaque/brick/glass boundary intersects this upperleftpier.",
+  "inference": "Originalbox x−31.6..−28.4,y−56..−52,z3..35 minus adjacentbody/slabs; onlyexposedupper threeverticalreturns. Outerreturn0.5,inner4,rearsliver0.1mm are originalBoolean exposure, not measured architecturaldetails. Shadedinner/rearsliver use samepier finish continuation, not individuallyphotoresolvedback.",
+  "excluded": [
+    "Lowergrayfoot andlowerpier",
+    "Rightredplaque/elevator overlap",
+    "Broad attachedwalls x−28.5/y−55.5",
+    "Balconybrick/graypanels,curvedcornice",
+    "Cap/soffit/top/bottom/buriedBoolean regions"
+  ],
+  "limits": [
+    "Originalbox vs realrounded/finishedsupport approximation unchanged.",
+    "No2026conditionclaim;2023document/PDFmetadata notphoto capturedate.",
+    "PrivatePDF/photo pixels not publiclyredistributed.",
+    "Domainreviewonly, no productionexchange/scene/render/ZIP or printability claim."
+  ],
+  "models_modified": false,
+  "ledger_modified": false,
+  "uploaded": false
+}
