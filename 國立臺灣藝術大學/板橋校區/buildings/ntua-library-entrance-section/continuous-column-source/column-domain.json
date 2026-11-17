@@ -1,0 +1,1510 @@
+{
+  "status": "PASS_DOMAIN_PHOTO_REVIEW_PENDING_INDEPENDENT",
+  "slug": "ntua-library-entrance-section",
+  "date": "2026-11-17",
+  "baseline": {
+    "triangles": 17682,
+    "vertices": 8827,
+    "old_counts": [
+      52,
+      17630
+    ],
+    "STL_sha256": "0c326c24f88f5572c7ca74f373e5ab9ded637749224de6a8ac8f2a18da6b4da5",
+    "color_mesh_sha256": "f4275e7231a5a5854a0c973d595d144651416dac07cccea07b596724f29a5dac",
+    "original_STL_triangle_sequence_exact": true
+  },
+  "selected_face_ids": [
+    17552,
+    17564,
+    17553,
+    17565,
+    17561,
+    17584,
+    17559,
+    17582,
+    17560,
+    17583,
+    17556,
+    17581,
+    17555,
+    17580,
+    17554,
+    17579,
+    17587,
+    17588,
+    17558,
+    17586,
+    17557,
+    17585,
+    17546,
+    17574,
+    17545,
+    17573,
+    17626,
+    17652,
+    17625,
+    17651,
+    17634,
+    17661,
+    17633,
+    17660,
+    17632,
+    17658,
+    17659,
+    17679,
+    17631,
+    17657,
+    17630,
+    17656,
+    17629,
+    17655,
+    17628,
+    17654,
+    17627,
+    17653,
+    17616,
+    17638,
+    17615,
+    17637
+  ],
+  "new_counts": [
+    104,
+    17578
+  ],
+  "domains": [
+    {
+      "center_x": -52.0,
+      "facet": 0,
+      "chord_endpoints": [
+        [
+          -50.6,
+          -32.0
+        ],
+        [
+          -50.6477038431953,
+          -31.63765333685647
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.3654733382161448
+      ],
+      "finite_polygon": [
+        [
+          0.3654733382161448,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.3654733382161448,
+          23.0
+        ],
+        [
+          0.3654733382161448,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17552,
+        17564
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322896,
+      "original_mesh_area_mm2": 7.309473694603627,
+      "symmetric_difference_mm2": 6.930075457071111e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 1,
+      "chord_endpoints": [
+        [
+          -50.6477038431953,
+          -31.63765333685647
+        ],
+        [
+          -50.787564434701785,
+          -31.3
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.36547333821614375
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614375,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614375,
+          23.0
+        ],
+        [
+          0.36547333821614375,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17553,
+        17565
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322875,
+      "original_mesh_area_mm2": 7.309463167090106,
+      "symmetric_difference_mm2": 1.478968925837943e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 2,
+      "chord_endpoints": [
+        [
+          -50.787564434701785,
+          -31.3
+        ],
+        [
+          -51.010050506338835,
+          -31.010050506338835
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.36547333821614497
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614497,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614497,
+          23.0
+        ],
+        [
+          0.36547333821614497,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17561,
+        17584
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.3094667643229,
+      "original_mesh_area_mm2": 7.309493938623108,
+      "symmetric_difference_mm2": 2.7174201802386235e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 3,
+      "chord_endpoints": [
+        [
+          -51.010050506338835,
+          -31.010050506338835
+        ],
+        [
+          -51.3,
+          -30.787564434701785
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.36547333821614214
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614214,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614214,
+          23.0
+        ],
+        [
+          0.36547333821614214,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17559,
+        17582
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322843,
+      "original_mesh_area_mm2": 7.309417229685376,
+      "symmetric_difference_mm2": 4.953463749298653e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 4,
+      "chord_endpoints": [
+        [
+          -51.3,
+          -30.787564434701785
+        ],
+        [
+          -51.637653336856474,
+          -30.647703843195305
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.36547333821614897
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614897,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614897,
+          23.0
+        ],
+        [
+          0.36547333821614897,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17560,
+        17583
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.30946676432298,
+      "original_mesh_area_mm2": 7.309492363383528,
+      "symmetric_difference_mm2": 2.5599029810001262e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 5,
+      "chord_endpoints": [
+        [
+          -51.637653336856474,
+          -30.647703843195305
+        ],
+        [
+          -52.0,
+          -30.6
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.36547333821614175
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614175,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614175,
+          23.0
+        ],
+        [
+          0.36547333821614175,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17556,
+        17581
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322835,
+      "original_mesh_area_mm2": 7.30946373606995,
+      "symmetric_difference_mm2": 3.0282826531333627e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 6,
+      "chord_endpoints": [
+        [
+          -52.0,
+          -30.6
+        ],
+        [
+          -52.362346663143526,
+          -30.647703843195305
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.36547333821614175
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614175,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614175,
+          23.0
+        ],
+        [
+          0.36547333821614175,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17555,
+        17580
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322835,
+      "original_mesh_area_mm2": 7.30946373606995,
+      "symmetric_difference_mm2": 3.02828265311581e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 7,
+      "chord_endpoints": [
+        [
+          -52.362346663143526,
+          -30.647703843195305
+        ],
+        [
+          -52.7,
+          -30.787564434701785
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.09648417987072021
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614897,
+          25.0
+        ],
+        [
+          0.36547333821614897,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.09648417987072021,
+          23.0
+        ],
+        [
+          0.09648417987072021,
+          25.0
+        ],
+        [
+          0.36547333821614897,
+          25.0
+        ]
+      ],
+      "face_ids": [
+        17554,
+        17579,
+        17587,
+        17588
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.847445081013837,
+      "original_mesh_area_mm2": 7.847475311788951,
+      "symmetric_difference_mm2": 3.0230529020129434e-05,
+      "overlap_mm2": 8.881784197001252e-16
+    },
+    {
+      "center_x": -52.0,
+      "facet": 8,
+      "chord_endpoints": [
+        [
+          -52.7,
+          -30.787564434701785
+        ],
+        [
+          -52.989949493661165,
+          -31.010050506338832
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [],
+      "finite_polygon": [
+        [
+          0.36547333821614,
+          3.0
+        ],
+        [
+          0.36547333821614,
+          25.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.36547333821614,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17558,
+        17586
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 8.04041344075508,
+      "original_mesh_area_mm2": 8.040358952653914,
+      "symmetric_difference_mm2": 5.4488101194854726e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 9,
+      "chord_endpoints": [
+        [
+          -52.989949493661165,
+          -31.010050506338832
+        ],
+        [
+          -53.212435565298215,
+          -31.3
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [],
+      "finite_polygon": [
+        [
+          0.3654733382161478,
+          3.0
+        ],
+        [
+          0.3654733382161478,
+          25.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.3654733382161478,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17557,
+        17585
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 8.040413440755252,
+      "original_mesh_area_mm2": 8.040443332485419,
+      "symmetric_difference_mm2": 2.989162192027748e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 10,
+      "chord_endpoints": [
+        [
+          -53.212435565298215,
+          -31.3
+        ],
+        [
+          -53.3522961568047,
+          -31.63765333685647
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [],
+      "finite_polygon": [
+        [
+          0.36547333821614375,
+          3.0
+        ],
+        [
+          0.36547333821614375,
+          25.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.36547333821614375,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17546,
+        17574
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 8.040413440755163,
+      "original_mesh_area_mm2": 8.040409483799117,
+      "symmetric_difference_mm2": 1.6268658183455902e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -52.0,
+      "facet": 11,
+      "chord_endpoints": [
+        [
+          -53.3522961568047,
+          -31.63765333685647
+        ],
+        [
+          -53.4,
+          -32.0
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [],
+      "finite_polygon": [
+        [
+          0.3654733382161448,
+          3.0
+        ],
+        [
+          0.3654733382161448,
+          25.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.3654733382161448,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17545,
+        17573
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 8.040413440755186,
+      "original_mesh_area_mm2": 8.040421064063988,
+      "symmetric_difference_mm2": 7.623083002638331e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 0,
+      "chord_endpoints": [
+        [
+          -14.6,
+          -32.0
+        ],
+        [
+          -14.647703843195304,
+          -31.63765333685647
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [],
+      "finite_polygon": [
+        [
+          0.36547333821614525,
+          3.0
+        ],
+        [
+          0.36547333821614525,
+          25.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.36547333821614525,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17626,
+        17652
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 8.040413440755195,
+      "original_mesh_area_mm2": 8.040412848192984,
+      "symmetric_difference_mm2": 1.5982763018467133e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 1,
+      "chord_endpoints": [
+        [
+          -14.647703843195304,
+          -31.63765333685647
+        ],
+        [
+          -14.787564434701785,
+          -31.3
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [],
+      "finite_polygon": [
+        [
+          0.3654733382161431,
+          3.0
+        ],
+        [
+          0.3654733382161431,
+          25.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.3654733382161431,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17625,
+        17651
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 8.040413440755147,
+      "original_mesh_area_mm2": 8.04042554166704,
+      "symmetric_difference_mm2": 1.6268658168142915e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 2,
+      "chord_endpoints": [
+        [
+          -14.787564434701785,
+          -31.3
+        ],
+        [
+          -15.010050506338834,
+          -31.010050506338835
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [],
+      "finite_polygon": [
+        [
+          0.3654733382161439,
+          3.0
+        ],
+        [
+          0.3654733382161439,
+          25.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.3654733382161439,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17634,
+        17661
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 8.040413440755167,
+      "original_mesh_area_mm2": 8.040417787735448,
+      "symmetric_difference_mm2": 2.677258085960038e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 3,
+      "chord_endpoints": [
+        [
+          -15.010050506338834,
+          -31.010050506338835
+        ],
+        [
+          -15.3,
+          -30.787564434701785
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [],
+      "finite_polygon": [
+        [
+          0.36547333821614636,
+          3.0
+        ],
+        [
+          0.36547333821614636,
+          25.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.36547333821614636,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17633,
+        17660
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 8.04041344075522,
+      "original_mesh_area_mm2": 8.04039224312331,
+      "symmetric_difference_mm2": 2.1197670337503046e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 4,
+      "chord_endpoints": [
+        [
+          -15.3,
+          -30.787564434701785
+        ],
+        [
+          -15.63765333685647,
+          -30.647703843195305
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.26898915834542386,
+        0.3654733382161424
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614236,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          25.0
+        ],
+        [
+          0.26898915834542386,
+          25.0
+        ],
+        [
+          0.26898915834542386,
+          23.0
+        ],
+        [
+          0.36547333821614236,
+          23.0
+        ],
+        [
+          0.36547333821614236,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17632,
+        17658,
+        17659,
+        17679
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.847445081013694,
+      "original_mesh_area_mm2": 7.84745240357429,
+      "symmetric_difference_mm2": 9.146959371632267e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 5,
+      "chord_endpoints": [
+        [
+          -15.63765333685647,
+          -30.647703843195305
+        ],
+        [
+          -16.0,
+          -30.6
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.36547333821614525
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614525,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614525,
+          23.0
+        ],
+        [
+          0.36547333821614525,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17631,
+        17657
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322905,
+      "original_mesh_area_mm2": 7.30946373606995,
+      "symmetric_difference_mm2": 3.0282827224695172e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 6,
+      "chord_endpoints": [
+        [
+          -16.0,
+          -30.6
+        ],
+        [
+          -16.36234666314353,
+          -30.647703843195305
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.36547333821614525
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614525,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614525,
+          23.0
+        ],
+        [
+          0.36547333821614525,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17630,
+        17656
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322905,
+      "original_mesh_area_mm2": 7.30946373606995,
+      "symmetric_difference_mm2": 3.028282723059851e-06,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 7,
+      "chord_endpoints": [
+        [
+          -16.36234666314353,
+          -30.647703843195305
+        ],
+        [
+          -16.7,
+          -30.787564434701785
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.3654733382161424
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614236,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614236,
+          23.0
+        ],
+        [
+          0.36547333821614236,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17629,
+        17655
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322847,
+      "original_mesh_area_mm2": 7.309492363383528,
+      "symmetric_difference_mm2": 2.559902994329283e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 8,
+      "chord_endpoints": [
+        [
+          -16.7,
+          -30.787564434701785
+        ],
+        [
+          -16.989949493661165,
+          -31.010050506338832
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.3654733382161428
+      ],
+      "finite_polygon": [
+        [
+          0.3654733382161428,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.3654733382161428,
+          23.0
+        ],
+        [
+          0.3654733382161428,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17628,
+        17654
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322856,
+      "original_mesh_area_mm2": 7.309447493748464,
+      "symmetric_difference_mm2": 2.4338709895273167e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 9,
+      "chord_endpoints": [
+        [
+          -16.989949493661165,
+          -31.010050506338832
+        ],
+        [
+          -17.212435565298215,
+          -31.3
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.3654733382161478
+      ],
+      "finite_polygon": [
+        [
+          0.3654733382161478,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.3654733382161478,
+          23.0
+        ],
+        [
+          0.3654733382161478,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17627,
+        17653
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322956,
+      "original_mesh_area_mm2": 7.309447493748464,
+      "symmetric_difference_mm2": 2.433870979639172e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 10,
+      "chord_endpoints": [
+        [
+          -17.212435565298215,
+          -31.3
+        ],
+        [
+          -17.352296156804695,
+          -31.63765333685647
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.3654733382161424
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614236,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614236,
+          23.0
+        ],
+        [
+          0.36547333821614236,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17616,
+        17638
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322847,
+      "original_mesh_area_mm2": 7.309492363383528,
+      "symmetric_difference_mm2": 2.5599029943370527e-05,
+      "overlap_mm2": 0.0
+    },
+    {
+      "center_x": -16.0,
+      "facet": 11,
+      "chord_endpoints": [
+        [
+          -17.352296156804695,
+          -31.63765333685647
+        ],
+        [
+          -17.4,
+          -32.0
+        ]
+      ],
+      "z_domain": [
+        3,
+        25
+      ],
+      "canopy_occlusion_z": [
+        23,
+        25
+      ],
+      "occluded_chord_interval": [
+        0.0,
+        0.3654733382161453
+      ],
+      "finite_polygon": [
+        [
+          0.36547333821614525,
+          3.0
+        ],
+        [
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          23.0
+        ],
+        [
+          0.36547333821614525,
+          23.0
+        ],
+        [
+          0.36547333821614525,
+          3.0
+        ]
+      ],
+      "face_ids": [
+        17615,
+        17637
+      ],
+      "whole_plane_equals_finite_equals_component": true,
+      "analytic_area_mm2": 7.309466764322905,
+      "original_mesh_area_mm2": 7.30946373606995,
+      "symmetric_difference_mm2": 3.0282827224695172e-06,
+      "overlap_mm2": 0.0
+    }
+  ],
+  "analytic_area_mm2": 182.35073238858934,
+  "mesh_area_mm2": 182.35074775708395,
+  "source": {
+    "daylight_url": "https://lib.ntua.edu.tw/wSite/public/data/f1664124832118.jpg",
+    "night_identity_only_url": "https://lib.ntua.edu.tw/wSite/public/data/f1664174889180.jpg",
+    "personally_viewed_both": true,
+    "date_limit": "Daylight EXIF 2010-07-25 unverified clock/timezone; not 2026 current condition",
+    "photo_support": "Two cylindrical canopy supports have continuous silver-gray visible circumferential skins. Preserve original nominal #AEB3B5; do not sample reflective highlights/shadows as different materials. Hidden rear-half completion is same-support inference, not photograph-confirmed rear elevation."
+  },
+  "limits": [
+    "Only 24 original rear-half 24gon chord facets on two supports, 52 triangles, including 2 Boolean-split four-triangle facets.",
+    "Original radius1.4/cx-52,-16/y-32/z3..25 retained; subtract original 64gon canopy contact z23..25, never create buried surfaces.",
+    "Preserve all52 original silver front faces and all other17630-minus52 neutral faces. No cap, bottom, canopy, globe proxy, glass, wall or cropped rear recoloring.",
+    "Solid globe is not real open lattice; original geometric approximation and all manufacturing limitations retained.",
+    "No model changed, no public reference pixels, no upload or ledger edit."
+  ],
+  "original_colored_face_ids": [
+    17538,
+    17539,
+    17540,
+    17541,
+    17542,
+    17543,
+    17544,
+    17547,
+    17548,
+    17549,
+    17550,
+    17551,
+    17562,
+    17563,
+    17566,
+    17567,
+    17568,
+    17569,
+    17570,
+    17571,
+    17572,
+    17575,
+    17576,
+    17577,
+    17578,
+    17602,
+    17611,
+    17612,
+    17613,
+    17614,
+    17617,
+    17618,
+    17619,
+    17620,
+    17621,
+    17622,
+    17623,
+    17624,
+    17635,
+    17636,
+    17639,
+    17640,
+    17641,
+    17642,
+    17643,
+    17644,
+    17645,
+    17646,
+    17647,
+    17648,
+    17649,
+    17650
+  ]
+}
