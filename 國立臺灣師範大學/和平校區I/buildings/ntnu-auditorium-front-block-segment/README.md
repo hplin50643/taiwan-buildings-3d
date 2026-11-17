@@ -1,5 +1,14 @@
 # 禮堂前棟入口段
 
+## 2026-11-17 雙塔簷帶連續側返補色（目前版）
+
+將兩側塔樓簷帶的10個完整側返三角面延伸為既有正面暖灰石色 `#B4ADA2`。此為**同構件連續材質推估**，不是新增側面照片證實。人工後截面、後角窄面、水平屋頂及混合紅磚／灰石的塔身側牆均不擴色；不把跨界三角面整片塗成單色。
+
+原STL、7,252面座標與面序完全不變，僅10面改色，其餘7,242面指派相同。材質面數依序為1141、338、4279、1186、220、88。[本版驗證](appearance/qa/continuous-cornice-verification.json) · [本版來源](appearance/continuous-cornice-source.zip)。仍是前棟入口局部模型，不是全禮堂。
+
+重建目前版：`python appearance/source/build_continuous_cornice.py`，`blender -b -t 2 -P appearance/source/render_continuous_cornice.py`。以下舊版範圍及QA保留為歷史記錄；製造限制照舊，未新增切片或實體列印測試。
+
+
 ## 模型預覽
 
 

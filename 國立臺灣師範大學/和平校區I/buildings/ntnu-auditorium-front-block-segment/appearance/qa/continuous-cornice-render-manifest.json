@@ -1,0 +1,78 @@
+{
+  "blender": "4.3.2",
+  "samples": 48,
+  "resolution": [
+    1200,
+    1200
+  ],
+  "files": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1756687,
+      "sha256": "1eb313af0ec6a92a57771547a0226d580a95ddf41e7ae6cf4528cd5be807ffbe",
+      "camera": [
+        160,
+        -240,
+        150
+      ],
+      "target": [
+        0,
+        0,
+        42
+      ],
+      "ortho_scale": 218,
+      "all_vertices_in_frame": true
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1566075,
+      "sha256": "9d84f6b1866f47a494958b7d6eeaf38c1fe8a1230faea3fc91a9e45398a7eaad",
+      "camera": [
+        -160,
+        240,
+        150
+      ],
+      "target": [
+        0,
+        0,
+        42
+      ],
+      "ortho_scale": 218,
+      "all_vertices_in_frame": true
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1757896,
+      "sha256": "7c998052981d849eedaa686607f0591bdb1748cb2589009cb69a493b10077454",
+      "camera": [
+        0,
+        -280,
+        46
+      ],
+      "target": [
+        0,
+        0,
+        46
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1601504,
+      "sha256": "4511fb2d969cb2d7f3919a6cafd6b4f2e957933ad151ccea4fd47e0e2b3c4768",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true
+    }
+  ]
+}

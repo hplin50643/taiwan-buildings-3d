@@ -9,7 +9,15 @@
 
 [表面色 3MF](auditorium-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
-## 來源與配色邊界
+## 2026-11-17 雙塔簷帶連續側返補色（目前版）
+
+將兩側塔樓簷帶的10個完整側返三角面延伸為既有正面暖灰石色 `#B4ADA2`。此為**同構件連續材質推估**，不是新增側面照片證實。人工後截面、後角窄面、水平屋頂及混合紅磚／灰石的塔身側牆均不擴色；不把跨界三角面整片塗成單色。
+
+原STL、7,252面座標與面序完全不變，僅10面改色，其餘7,242面指派相同。材質面數依序為1141、338、4279、1186、220、88。[本版驗證](qa/continuous-cornice-verification.json) · [本版來源](continuous-cornice-source.zip)。仍是前棟入口局部模型，不是全禮堂。
+
+重建目前版：`python appearance/source/build_continuous_cornice.py`，`blender -b -t 2 -P appearance/source/render_continuous_cornice.py`。以下舊版範圍及QA保留為歷史記錄；製造限制照舊，未新增切片或實體列印測試。
+
+## 歷史版來源與配色邊界
 
 親自查看[校方百年校慶募款頁](https://give.ntnu.edu.tw/goweb2/include/century-celebration.php)的[禮堂正面照片](https://give.ntnu.edu.tw/goweb2/include/images/project/century-celebration/campus-pic01.jpg)，並比對[《臺灣扶輪》2022 年 3 月刊 PDF](https://taiwan-rotary.org/upload/monthly/20220223105651.pdf)第 84 頁／印刷頁 82 的正面與側面歷史照片。頁面版權年份或刊物年月不是照片精確拍攝日期；本版不宣稱 2026 現況。照片及 PDF 圖頁均不隨模型或備份散布。
 
