@@ -1,5 +1,14 @@
 # 國立中央大學大禮堂｜150 mm 外觀模型
 
+## 2026-11-17 同一道頂緣外弧連續補色（目前版）
+
+原負y側58面已配灰白 `#CDCEC5`；本次沿同一連續頂緣外弧，為正y側58個原三角面補相同灰白，外弧共116面。這是**同構件連續材質推估**，不是新取得另一側實景或色彩校準證據。選面只在原144邊形外側平面、z83至84.8毫米範圍；內側、頂／底面、端面與整片主牆皆不擴色。
+
+原STL、9,614面座標與面序完全保留；其餘9,556面材質不變。材質面數依序2262、1056、6028、152、116。[交換驗證](appearance/qa/continuous-rim-verification.json) · [29個外側平面獨立覆蓋檢查](appearance/qa/continuous-rim-support.json) · [本版來源](appearance/continuous-rim-source.zip)。彩色鋁板拼片仍缺幾何邊界，不整面亂塗。 [場景回讀](appearance/qa/continuous-rim-scene.json) · [重建一致性](appearance/qa/continuous-rim-rebuild.json) · [本版五視圖記錄](appearance/qa/continuous-rim-render-manifest.json) · [視覺檢查](appearance/qa/continuous-rim-visual-review.json)
+
+重建：`python appearance/source/build_continuous_rim.py`，`blender -b -t 2 -P appearance/source/render_continuous_rim.py`。獨立支承面檢查另需Shapely。下方舊版範圍／QA為歷史記錄；本次不宣稱重做歷史層檢或實體列印。
+
+
 ## 模型預覽
 
 
