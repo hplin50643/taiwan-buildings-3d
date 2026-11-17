@@ -4,8 +4,20 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背牆與主屋頂中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
+| 正面<br>![正面](previews/front.png) | 後肋推估補色，背牆及屋頂中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
 | ![頂視](previews/top.png) |  |  |
+
+## 本次既有後側長肋同族補色（推估）
+
+將兩翼既有 54 根後側長肋的外端與左右垂直表面，共 162 組／3,252 個原三角，延續正面肋的淺灰材 1。原 8,174 個著色面及所有未變更面理由完整保留，六色表不變；原 28,008 面／13,884 點、STL 位元、座標及面序不變。現計數中性 16,582、淺灰肋 9,966、灰紫填牆 752、中灰端牆 44、玻璃代理 628、米白服務量體 36。
+
+選取限定原每根肋三個朝外垂直平面，局部 y=9.75…12.25、z=9.1…59.2 mm；不改頂底、內向背面、主背牆、後窗凹背、屋面或中央連接框架。54 個外端為完整原矩形，每個 50.1 mm²；4 個端外側約 87.225 mm²，104 個其餘側面約 64.185 mm²，是原窗凹切除 6×4.8×0.8 mm² 後的肋側，不把窗凹切面或玻璃混入。未新增、切割或修補幾何。
+
+本輪親看兩張官方 M10／M11 正面空拍，正面長肋呈淺灰，可作同族顏色代理；**兩張都不是背面證據**。後側等距長肋本來就存在於原簡化模型，本次只是依使用者要求做同材質族延伸，並非證明實景後肋的數量、位置或塗色。原照片 EXIF 標示 2025-03-10，但日期時區未獨立核實，不宣稱 2026 現況。原 V 形、等距肋及直線連廊的簡化限制不變，未添加設備或植栽；未實體試印。第三方照片只作私人研究，不入公開包。
+
+新版 QA 在 `qa-continuous-walls/`，保留歷史 QA 與根 `SHA256SUMS`，本次另列 `PUBLIC-MODEL-SHA256SUMS`。由根目錄執行 `python appearance/source/build_continuous_walls.py`；交換驗證 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景驗證 `blender -b --python appearance/source/verify_continuous_scene.py`。獨立重建 ZIP 含原 STL、原建模程式及有限選取域，不含照片。
+
+## 前版說明與保留限制
 
 [表面色 3MF](nuum1011-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
