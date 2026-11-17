@@ -14,8 +14,8 @@ verts=[tuple(v.co) for v in mesh.vertices];faces=[tuple(p.vertices) for p in mes
 assert all(len(f)==3 for f in faces)
 def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
 before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
-# Undated official HJB photograph: limited front/returns, not a full roof or rear survey.
-palette=[('Unknown rear roof outer ends display base','#A7A9A5',.86),('Muted red brown frontal brick proxy','#AA715C',.85),('Dark grey green original lower glazing proxy','#536562',.5),('Pale grey green original clerestory mixed proxy','#A5AEA3',.65),('Grey entrance steps','#A2A19B',.85)]
+# Official university history PDF records repaint to pink in 2010. Pink is an uncalibrated visual approximation from its photos, not 2026 current survey.
+palette=[('Unknown rear roof outer ends display base','#A7A9A5',.86),('Post-2010 photo approximate muted pink wall','#BA9E92',.85),('Dark grey green original lower glazing proxy','#536562',.5),('Pale grey green original clerestory mixed proxy','#A5AEA3',.65),('Grey entrance steps','#A2A19B',.85)]
 def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
 def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 mesh.materials.clear()
@@ -47,9 +47,24 @@ for p in mesh.polygons:
  if -8.01<x<22.01 and -55.851<y<-51.349 and 3<z<4.91 and (n.z>.8 or (n.y<-.8 and any(near(y,yy,.015) for yy in [-55.85,-54.45,-53.05])) or (abs(n.x)>.8 and any(near(x,xx,.015) for xx in [-8,22]))):i=4
  if z<=3 or (n.z>.8 and z>30):i=0
  p.material_index=i;indices.append(i)
+# 2026-11-17 inferred pink wall continuity on complete original exterior wall planes.
+# Whole triangle boundary tests; never paint window recesses, roofs or gallery floor.
+wall_continuity_baseline=list(indices)
+wall_planes=[(0, -66, [-66, -17, 3], [-66, 47, 64.8], 'low_0_0'), (0, -16, [-16, -17, 3], [-16, 47, 64.8], 'low_0_1'), (1, -17, [-66, -17, 3], [-16, -17, 64.8], 'low_1_0'), (1, 47, [-66, 47, 3], [-16, 47, 64.8], 'low_1_1'), (0, -18, [-18, -19, 3], [-18, 47, 93.8], 'mid_0_0'), (0, 4, [4, -19, 3], [4, 47, 93.8], 'mid_0_1'), (1, -19, [-18, -19, 3], [4, -19, 93.8], 'mid_1_0'), (1, 47, [-18, 47, 3], [4, 47, 93.8], 'mid_1_1'), (0, 3, [3, -33.5, 3], [3, 47.5, 105.8], 'high_0_0'), (0, 23, [23, -33.5, 3], [23, 47.5, 105.8], 'high_0_1'), (1, -33.5, [3, -33.5, 3], [23, -33.5, 105.8], 'high_1_0'), (1, 47.5, [3, 47.5, 3], [23, 47.5, 105.8], 'high_1_1'), (0, 21, [21, -47.5, 3], [21, 47.5, 111.8], 'right_0_0'), (0, 63, [63, -47.5, 3], [63, 47.5, 111.8], 'right_0_1'), (1, -47.5, [21, -47.5, 3], [63, -47.5, 111.8], 'right_1_0'), (1, 47.5, [21, 47.5, 3], [63, 47.5, 111.8], 'right_1_1'), (0, -9, [-9, -52.5, 3], [-9, -25.5, 31.8], 'entry_0_0'), (0, 23, [23, -52.5, 3], [23, -25.5, 31.8], 'entry_0_1'), (1, -52.5, [-9, -52.5, 3], [23, -52.5, 31.8], 'entry_1_0'), (1, -25.5, [-9, -25.5, 3], [23, -25.5, 31.8], 'entry_1_1')]
+wall_groups={}
+for axis,coordinate,lower,upper,label in wall_planes:
+ selected=[]
+ for p in mesh.polygons:
+  vv=[mesh.vertices[k].co for k in p.vertices]
+  if indices[p.index]==0 and all(abs(v[axis]-coordinate)<.0002 for v in vv) and all(lower[a]-.0002<=v[a]<=upper[a]+.0002 for v in vv for a in range(3)):
+   selected.append(p.index)
+   p.material_index=1;indices[p.index]=1
+ wall_groups[label]=selected
+assert wall_groups=={'low_0_0': [168, 169], 'low_0_1': [], 'low_1_0': [], 'low_1_1': [170, 171, 172], 'mid_0_0': [175, 176, 177, 179, 184, 187, 188, 189, 197, 198, 199, 200, 201, 206, 208, 209, 210, 211, 212, 213, 214, 215, 216, 221, 222, 223, 226, 227, 228, 231, 233, 238, 240, 241, 263, 264], 'mid_0_1': [], 'mid_1_0': [], 'mid_1_1': [261, 262, 267, 268], 'high_0_0': [382, 384, 386, 388], 'high_0_1': [], 'high_1_0': [], 'high_1_1': [385, 389, 390], 'right_0_0': [511, 569], 'right_0_1': [479, 572], 'right_1_0': [], 'right_1_1': [568, 570, 571, 574], 'entry_0_0': [581, 582], 'entry_0_1': [593, 596], 'entry_1_0': [], 'entry_1_1': [583, 584]}
+wall_changed=sorted(set(sum(wall_groups.values(),[])))
 assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
-obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
-scene=bpy.context.scene;scene['appearance_revision']='color-v1'
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; rear walls inferred same post-2010 pink family; roofs remain neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v4-post2010-pink-inferred'
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
 scene.render.threads_mode='FIXED';scene.render.threads=1
 scene.render.resolution_x=900;scene.render.resolution_y=800
@@ -77,7 +92,7 @@ with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
  for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
   info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
 from collections import Counter
-(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Unknown rear roof outer ends neutral; narrow upper openings are mixed pale proxy, no extra AC or curtains','No actual trial print; original partial-model QA caveats remain']},indent=2))
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v4-post2010-pink-inferred','wall_continuity_baseline_face_material_indices':wall_continuity_baseline,'wall_continuity_groups':wall_groups,'wall_continuity_changed_faces':wall_changed,'geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'source_revision':{'url':'https://ncusec.ncu.edu.tw/no90/page2.pdf','basis':'2010 repaint history and accompanying post-repaint photos; publication/photo date not verified; not a 2026 survey','wall_srgb':'#BA9E92','method':'Visual approximate muted pink, not calibrated pixel colorimetry'},'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Exterior wall colors extended by material continuity inference, not verified by new side/rear imagery; roofs and window recesses unchanged','No actual trial print; original partial-model QA caveats remain']},indent=2))
 # New images only; locked previews/front.png and original scene are never overwritten.
 views={'front':((-195,-260,160),(0,0,55.9),210),'rear':((195,260,160),(0,0,55.9),210),'elevation':((0,-300,55.9),(0,0,55.9),210),'source-angle':((130,-300,70),(0,0,55.9),210),'top':((0,0,330),(0,0,0),210)}
 out=R/'appearance';out.mkdir(exist_ok=True)
