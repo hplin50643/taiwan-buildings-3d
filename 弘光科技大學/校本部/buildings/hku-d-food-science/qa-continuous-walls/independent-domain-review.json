@@ -1,0 +1,105 @@
+{
+  "status": "PASS_FINITE_ORIGINAL_ROOF_CAP_TWO_SIDEENDS",
+  "repository_path": "弘光科技大學/校本部/buildings/hku-d-food-science",
+  "vertices": 2077,
+  "triangles": 4158,
+  "face_ids": [
+    4093,
+    4095,
+    4104,
+    4107
+  ],
+  "groups": [
+    {
+      "axis": 0,
+      "value": -67.5,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -67.5,
+          -15.0,
+          66.0
+        ],
+        [
+          -67.5,
+          33.0,
+          67.69999694824219
+        ]
+      ],
+      "ids": [
+        4093,
+        4095
+      ],
+      "complete_coplanar_component": [
+        4093,
+        4095
+      ],
+      "rectangle_corner_completeness": true,
+      "analytic_area_mm2": 81.6
+    },
+    {
+      "axis": 0,
+      "value": 67.5,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          67.5,
+          -15.0,
+          66.0
+        ],
+        [
+          67.5,
+          33.0,
+          67.69999694824219
+        ]
+      ],
+      "ids": [
+        4104,
+        4107
+      ],
+      "complete_coplanar_component": [
+        4104,
+        4107
+      ],
+      "rectangle_corner_completeness": true,
+      "analytic_area_mm2": 81.6
+    }
+  ],
+  "old_material_counts": [
+    8,
+    4150
+  ],
+  "expected_material_counts": [
+    12,
+    4146
+  ],
+  "source_NPZ_sha256": "1a826456ae6f3dea136dd926ab3a6804b586beba5da599115b1625788a95c712",
+  "source_STL_sha256": "fbc389a257bb4a6d7b3cefe58e965f32886172ad52410655af4a472d8245ac81",
+  "source_photo": {
+    "page": "https://www.nups.ntnu.edu.tw/univ-expo?school=hk",
+    "url": "https://www.nups.ntnu.edu.tw/upfiles/univ-expo/中部/台中市/技專校院/弘光/弘光-pic03.jpg",
+    "sha256": "0d696a8454f50faaddbabe9ce4b4833551057c7d0f43ad48bc35a9402ebf6aae",
+    "personally_viewed": true,
+    "observation": "Photo entrance label Food Science confirms D identity; long roof front edge pale family. Both entire48mm side depths not visible, same original cap inference only. Not adjacent N circular tower."
+  },
+  "limits": [
+    "Preserve current8 colors including six entrance right return faces,never rerun stale2face classifier",
+    "Roof sideends only;top,bottom,rear,rail,entryletterface,framegrid,billboard,glass all unchanged",
+    "48mm side depth unseen/estimated,not surveyor rearphoto proof",
+    "Current source pending register historical status preserved",
+    "Original 67.69999694824219 STL float remains,not rounded",
+    "No production/output claim; next independent second review required"
+  ],
+  "no_model_modified": true,
+  "no_upload": true,
+  "source_color_mesh_sha256": "1a826456ae6f3dea136dd926ab3a6804b586beba5da599115b1625788a95c712",
+  "source_stl_sha256": "fbc389a257bb4a6d7b3cefe58e965f32886172ad52410655af4a472d8245ac81",
+  "source_palette_sha256": "0e7dbd6eec6d7f3cc520d6d38c274b720cefdef0c94b38c9ba495a544f9119f7",
+  "source": {
+    "page": "https://www.nups.ntnu.edu.tw/univ-expo?school=hk",
+    "url": "https://www.nups.ntnu.edu.tw/upfiles/univ-expo/中部/台中市/技專校院/弘光/弘光-pic03.jpg",
+    "sha256": "0d696a8454f50faaddbabe9ce4b4833551057c7d0f43ad48bc35a9402ebf6aae",
+    "personally_viewed": true,
+    "observation": "Photo entrance label Food Science confirms D identity; long roof front edge pale family. Both entire48mm side depths not visible, same original cap inference only. Not adjacent N circular tower."
+  }
+}

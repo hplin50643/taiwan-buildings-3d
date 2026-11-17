@@ -1,0 +1,187 @@
+{
+  "status": "PASS_INDEPENDENT_FINITE_ROOF_CAP_ENDS",
+  "original_vertices": 2077,
+  "original_triangles": 4158,
+  "current_baseline_counts": [
+    8,
+    4150
+  ],
+  "new_in_memory_counts": [
+    12,
+    4146
+  ],
+  "groups": [
+    {
+      "axis": 0,
+      "value": -67.5,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -67.5,
+          -15.0,
+          66.0
+        ],
+        [
+          -67.5,
+          33.0,
+          67.7
+        ]
+      ],
+      "ids": [
+        4093,
+        4095
+      ],
+      "complete_coplanar_component": [
+        4093,
+        4095
+      ],
+      "rectangle_corner_completeness": true,
+      "corners": [
+        [
+          -67.5,
+          -15.0,
+          66.0
+        ],
+        [
+          -67.5,
+          -15.0,
+          67.69999694824219
+        ],
+        [
+          -67.5,
+          33.0,
+          66.0
+        ],
+        [
+          -67.5,
+          33.0,
+          67.69999694824219
+        ]
+      ],
+      "analytic_area_mm2": 81.6,
+      "mesh_area_mm2": 81.599853515625,
+      "prior_gray_full_front_edge": [
+        {
+          "vertices": [
+            [
+              -67.5,
+              -15.0,
+              66.0
+            ],
+            [
+              -67.5,
+              -15.0,
+              67.69999694824219
+            ]
+          ],
+          "faces": [
+            4090,
+            4093
+          ],
+          "length_mm": 1.6999969482421875
+        }
+      ]
+    },
+    {
+      "axis": 0,
+      "value": 67.5,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          67.5,
+          -15.0,
+          66.0
+        ],
+        [
+          67.5,
+          33.0,
+          67.7
+        ]
+      ],
+      "ids": [
+        4104,
+        4107
+      ],
+      "complete_coplanar_component": [
+        4104,
+        4107
+      ],
+      "rectangle_corner_completeness": true,
+      "corners": [
+        [
+          67.5,
+          -15.0,
+          66.0
+        ],
+        [
+          67.5,
+          -15.0,
+          67.69999694824219
+        ],
+        [
+          67.5,
+          33.0,
+          66.0
+        ],
+        [
+          67.5,
+          33.0,
+          67.69999694824219
+        ]
+      ],
+      "analytic_area_mm2": 81.6,
+      "mesh_area_mm2": 81.599853515625,
+      "prior_gray_full_front_edge": [
+        {
+          "vertices": [
+            [
+              67.5,
+              -15.0,
+              66.0
+            ],
+            [
+              67.5,
+              -15.0,
+              67.69999694824219
+            ]
+          ],
+          "faces": [
+            4099,
+            4104
+          ],
+          "length_mm": 1.6999969482421875
+        }
+      ]
+    }
+  ],
+  "face_ids": [
+    4093,
+    4095,
+    4104,
+    4107
+  ],
+  "total_area_mm2": 163.19970703125,
+  "nominal_area_mm2": 163.2,
+  "per_rectangle_tolerance_mm2": 0.0002,
+  "all_coplanar_components_uniform": 957,
+  "current8coloredfaces_preserved": true,
+  "all4154unselectedfaces_unchanged": true,
+  "STL_NPZ_coordinates_order_exact": true,
+  "palette_unchanged": true,
+  "source": {
+    "personally_viewed": true,
+    "photo_sha256": "0d696a8454f50faaddbabe9ce4b4833551057c7d0f43ad48bc35a9402ebf6aae",
+    "observation": "師大博覽會刊校方照片，入口FoodScience字樣及長矩形主棟對應D，左側N圓塔不可混入。屋cap前緣淺灰；完整48mm左右側深不是照片全見，僅同cap材料延續推論。",
+    "dates": "拍攝日未知，不以網頁查閱日推2026現況。",
+    "privacy": "私人研究圖不公開。"
+  },
+  "limits": [
+    "Preserve current8 colors including six entrance right return faces,never rerun stale2face classifier",
+    "Roof sideends only;top,bottom,rear,rail,entryletterface,framegrid,billboard,glass all unchanged",
+    "48mm side depth unseen/estimated,not surveyor rearphoto proof",
+    "Current source pending register historical status preserved",
+    "Original 67.69999694824219 STL float remains,not rounded",
+    "No production/output claim; next independent second review required"
+  ],
+  "not_production_not_scene_QA": true
+}
