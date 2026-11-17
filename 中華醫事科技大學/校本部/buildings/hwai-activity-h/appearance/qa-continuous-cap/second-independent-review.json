@@ -1,0 +1,81 @@
+{
+  "status": "PASS_DOMAIN_ONLY_BEFORE_NEW_OUTPUT",
+  "face_ids": [
+    2755,
+    2758,
+    2760,
+    2764,
+    2765,
+    2767,
+    3084,
+    3087,
+    3090,
+    3094,
+    3098,
+    3099
+  ],
+  "groups": [
+    {
+      "faces": [
+        2755,
+        2760
+      ],
+      "area": 21.599990844726562,
+      "complete_domain": true
+    },
+    {
+      "faces": [
+        2758,
+        2767
+      ],
+      "area": 21.599990844726562,
+      "complete_domain": true
+    },
+    {
+      "faces": [
+        2764,
+        2765
+      ],
+      "area": 21.599990844726562,
+      "complete_domain": true
+    },
+    {
+      "faces": [
+        3084,
+        3087
+      ],
+      "area": 21.599990844726562,
+      "complete_domain": true
+    },
+    {
+      "faces": [
+        3094,
+        3098
+      ],
+      "area": 21.599990844726562,
+      "complete_domain": true
+    },
+    {
+      "faces": [
+        3090,
+        3099
+      ],
+      "area": 21.599990844726562,
+      "complete_domain": true
+    }
+  ],
+  "original128_colored_preserved": true,
+  "unchanged_existing_mixed_components_sizes": [
+    64,
+    64
+  ],
+  "no_new_mixed_components": true,
+  "source_photo_personally_viewed": true,
+  "source_photo_sha256": "e966b0cc189779ad7ad098b08e453552e4cb16506b0bfca4e759f4132732cb11",
+  "limits": [
+    "Side cheeks include white and must remain unchanged",
+    "Hidden cap rear is same-component inference",
+    "Original flat cap does not reconstruct photographed sloped form",
+    "Output exactness still requires postproduction check"
+  ]
+}

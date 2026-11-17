@@ -1,0 +1,358 @@
+{
+  "status": "PASS_TWO_ORIGINAL_TOWER_CAP_VERTICAL_RETURNS_ONLY",
+  "repository_path": "中華醫事科技大學/校本部/buildings/hwai-activity-h",
+  "source_stl_sha256": "6e1960bf13afe0f05ead516f8994e5fc83d220cd010d304b524a4a9231d020ee",
+  "candidate": {
+    "faces": [
+      2755,
+      2758,
+      2760,
+      2764,
+      2765,
+      2767,
+      3084,
+      3087,
+      3090,
+      3094,
+      3098,
+      3099
+    ],
+    "groups": [
+      {
+        "tower_x": -31,
+        "axis": 0,
+        "plane": -37,
+        "normal_sign": -1,
+        "low_mm": [
+          -37,
+          -17,
+          56
+        ],
+        "high_mm": [
+          -25.0,
+          -5.0,
+          57.8
+        ],
+        "rectangle_axes": [
+          1,
+          2
+        ],
+        "faces": [
+          2755,
+          2760
+        ],
+        "area_mm2": 21.599990844726562,
+        "analytic_area_mm2": 21.6,
+        "complete_four_corner_rectangle": true
+      },
+      {
+        "tower_x": -31,
+        "axis": 0,
+        "plane": -25,
+        "normal_sign": 1,
+        "low_mm": [
+          -37,
+          -17,
+          56
+        ],
+        "high_mm": [
+          -25.0,
+          -5.0,
+          57.8
+        ],
+        "rectangle_axes": [
+          1,
+          2
+        ],
+        "faces": [
+          2758,
+          2767
+        ],
+        "area_mm2": 21.599990844726562,
+        "analytic_area_mm2": 21.6,
+        "complete_four_corner_rectangle": true
+      },
+      {
+        "tower_x": -31,
+        "axis": 1,
+        "plane": -5,
+        "normal_sign": 1,
+        "low_mm": [
+          -37,
+          -17,
+          56
+        ],
+        "high_mm": [
+          -25.0,
+          -5.0,
+          57.8
+        ],
+        "rectangle_axes": [
+          0,
+          2
+        ],
+        "faces": [
+          2764,
+          2765
+        ],
+        "area_mm2": 21.599990844726562,
+        "analytic_area_mm2": 21.6,
+        "complete_four_corner_rectangle": true
+      },
+      {
+        "tower_x": 20,
+        "axis": 0,
+        "plane": 14,
+        "normal_sign": -1,
+        "low_mm": [
+          14,
+          -17,
+          56
+        ],
+        "high_mm": [
+          26.0,
+          -5.0,
+          57.8
+        ],
+        "rectangle_axes": [
+          1,
+          2
+        ],
+        "faces": [
+          3084,
+          3087
+        ],
+        "area_mm2": 21.599990844726562,
+        "analytic_area_mm2": 21.6,
+        "complete_four_corner_rectangle": true
+      },
+      {
+        "tower_x": 20,
+        "axis": 0,
+        "plane": 26,
+        "normal_sign": 1,
+        "low_mm": [
+          14,
+          -17,
+          56
+        ],
+        "high_mm": [
+          26.0,
+          -5.0,
+          57.8
+        ],
+        "rectangle_axes": [
+          1,
+          2
+        ],
+        "faces": [
+          3094,
+          3098
+        ],
+        "area_mm2": 21.599990844726562,
+        "analytic_area_mm2": 21.6,
+        "complete_four_corner_rectangle": true
+      },
+      {
+        "tower_x": 20,
+        "axis": 1,
+        "plane": -5,
+        "normal_sign": 1,
+        "low_mm": [
+          14,
+          -17,
+          56
+        ],
+        "high_mm": [
+          26.0,
+          -5.0,
+          57.8
+        ],
+        "rectangle_axes": [
+          0,
+          2
+        ],
+        "faces": [
+          3090,
+          3099
+        ],
+        "area_mm2": 21.599990844726562,
+        "analytic_area_mm2": 21.6,
+        "complete_four_corner_rectangle": true
+      }
+    ],
+    "changed_faces": 12,
+    "from_material": 0,
+    "to_material": 1,
+    "original_colored_faces": 128,
+    "total_colored_faces": 140,
+    "triangles": 3308,
+    "vertices": 1620,
+    "all_vertices_original_triangle_order_retained": true,
+    "all_six_original_coplanar_rectangles_complete": true,
+    "analytic_area_mm2": 129.60000000000002,
+    "area_mm2": 129.59994506835938,
+    "scope": "Only three remaining vertical rim faces of each existing12x12x1.8 towercap. Existing capfront/solidtowerfront128faces stay. Horizontalcap top/soffit, tower sidecheeks belowcap, glass, crossbars, horizontal mixedbands, mainwall, roofs andbase excluded. Originalcap is simplifiedrectangularslab, not reconstruction of photo beveledtileframe or new pitched geometry."
+  },
+  "source": {
+    "url": "https://www.hwai.edu.tw/var/file/0/1000/img/14.jpg",
+    "official_page": "https://www.hwai.edu.tw/p/16-1000-35517.php?Lang=zh-tw",
+    "image_sha256": "e966b0cc189779ad7ad098b08e453552e4cb16506b0bfca4e759f4132732cb11",
+    "personally_viewed": true,
+    "observation": "Officialwidephoto andprivatezoom show two bluegreen stairfront frames with short darkerblue lateral topcapbands. Below those topbands the sidecheeks contain light/whiteareas: those cheeks explicitly not extended. Samecap verticalreturn materialfamily plausible; side darkness not calibrated separate paint, back hidden remains inference. Image slopedfrontframe is simplified byoriginalflat cap; no new geometric fidelity claim.",
+    "date_limits": "Capturedateunknown;download2026-11-17notcaptureor2026asbuiltcertification",
+    "rights": "Privatephotoreference;no imagepixels in deliverables"
+  },
+  "baseline_coplanar_material_boundaries": {
+    "unchanged_existing_mixed_groups": [
+      [
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2443,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2462,
+        2463,
+        2464,
+        2465,
+        2466,
+        2467,
+        2468,
+        2469,
+        2472,
+        2477,
+        2478,
+        2479,
+        2480,
+        2481,
+        2482,
+        2483,
+        2486,
+        2487,
+        2488,
+        2495,
+        2496,
+        2497,
+        2498,
+        2499,
+        2500,
+        2501,
+        2504,
+        2505,
+        2506,
+        2511,
+        2512,
+        2513,
+        2514,
+        2515,
+        2520,
+        2521,
+        2522,
+        2531,
+        2532,
+        2533,
+        2534,
+        2535,
+        2536,
+        2541,
+        2542,
+        2543,
+        2550,
+        2551,
+        2557,
+        2558
+      ],
+      [
+        2768,
+        2769,
+        2770,
+        2772,
+        2773,
+        2774,
+        2775,
+        2776,
+        2780,
+        2781,
+        2782,
+        2783,
+        2786,
+        2787,
+        2794,
+        2795,
+        2796,
+        2797,
+        2798,
+        2799,
+        2802,
+        2803,
+        2804,
+        2805,
+        2806,
+        2809,
+        2810,
+        2811,
+        2816,
+        2817,
+        2818,
+        2819,
+        2820,
+        2827,
+        2828,
+        2829,
+        2830,
+        2831,
+        2834,
+        2835,
+        2836,
+        2841,
+        2842,
+        2843,
+        2844,
+        2845,
+        2850,
+        2851,
+        2852,
+        2853,
+        2854,
+        2863,
+        2864,
+        2865,
+        2870,
+        2880,
+        2881,
+        2882,
+        2883,
+        2884,
+        2885,
+        2892,
+        2893,
+        2894
+      ]
+    ],
+    "new_mixed_groups_created": 0,
+    "all_touched_six_components_uniform": true,
+    "not_recertifying_original128_color_domains": true
+  },
+  "dedup": {
+    "hwai-activity-h": [],
+    "hwai-nursing-j": [],
+    "hwai-dormitory-m": [],
+    "hwai-minsheng-k": [],
+    "wfu-shengyou": [],
+    "hwai-library-departments-f": [],
+    "wfu-apollo": [],
+    "tut-library-information-2002": []
+  },
+  "no_model_changes": true,
+  "no_upload": true,
+  "not_full_building_color": true
+}

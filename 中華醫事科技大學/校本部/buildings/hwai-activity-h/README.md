@@ -5,7 +5,25 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面限域配色<br>![兩樓梯塔前框藍綠限域配色](appearance/previews/front.png) | 未確認後側保持中性<br>![後側保持中性](appearance/previews/rear.png) |  |
+| 正面限域配色<br>![兩樓梯塔前框藍綠限域配色](appearance/previews/front.png) | 塔帽限域延色，其餘後側中性<br>![塔帽以外後側保持中性](appearance/previews/rear.png) |  |
+
+## 本次兩塔帽垂直側返延色
+
+僅將兩座樓梯塔既有帽件的左右／後三個垂直邊，共六個完整矩形、12 個原三角，延用既有藍綠材質 1。原前框與帽前面 128 色面及兩槽原色盤完全保留；現 140 已色、3,168 未確認面，仍非全棟完成配色。3,308 原面／1,620 原點、150×86×58 mm 外包、STL bytes、座標、繞向、面序全不變，不新增原照片斜面或瓷磚幾何。
+
+兩帽中心 x=−31／20，x±6、y=−17…−5、z=56…57.8 mm。各新增垂直面逐全頂點／四角矩形與原共面連通域檢查，六個域各為完整兩三角，解析 21.6 mm²、原網格 21.5999908447 mm²，總解析 129.6 mm²。帽水平頂／底、帽下方白色側頰、塔玻璃與窗橫框、主樓混合橫帶、其他牆頂及底座全部不染。原前框原已存在兩組各 64 面的混材共面邊界，全部原樣保留；新六域各整域單材且沒有新增混材域，絕不宣稱全模型共面都是單一材料。
+
+本輪親看校史官方 https://www.hwai.edu.tw/var/file/0/1000/img/14.jpg 及私人局部放大：兩個樓梯塔前框呈藍綠，帽頂側短帶呈較暗藍色，其下側頰有淺白區，所以不能把整個塔側頰塗藍。只沿既有帽件垂直短邊延續原名義色族，側面陰影未當作精確另種油漆色，隱藏帽背是同構件材料推論而非背照獨立證明。原模型平板帽對照片有斜面前框是近似，不因本次延色提高測繪精度；未知拍攝日期，不宣稱 2026 現況，未色卡校準。私人照片與裁切不加入公開包。
+
+原模型工程、簡化與未實體試印限制保留；本次 strict3MF／幾何等價 PASS 不是實體製造、支撐或全域壁厚保證。原 root STL、OBJ、scene、幾何生成器與單色預覽不動；新彩色版本在 appearance。歷史 appearance/qa、source 原程式、rebuild-source.zip、SHA256SUMS、SOURCES 等全部保留 bytes，仍記錄原 128 色面版本，不作新版統計。原 palette 中舊 scope 亦保留以護原始材料欄位，現版範圍以本段及 appearance/qa-continuous-cap 為準。
+
+新檔為 mesh-data.npz、face-materials.json、hwai-activity-h-appearance.3mf、scene.blend 及十張 previews；新 QA 在 appearance/qa-continuous-cap，當前 hashes 在 CONTINUATION-SHA256SUMS。保留五原相機並增加右側、背立面、兩個較高視角及底視，十圖都完整框入建築，不是假造參考照或貼圖。Blender 一建築網格、可獨立材料與頂點編輯再存取，原材料名稱、RGBA／shader色與粗糙度保留。
+
+重建 python appearance/source/build_continuous_cap.py，交換檢查 verify_continuous_exchange.py，Blender 執行 render_continuous_cap.py 及 verify_continuous_scene.py。新 rebuild-continuous-source.zip 可隔離精確重建 NPZ、逐面材料、3MF 與原色盤，且重跑嚴格交換檢查。只本地準備，不宣稱已上傳。
+
+本輪全部原物件屬性與完整材質定義皆保留，僅 12 個指定面的材質指派延伸；原 palette scope 保留歷史文字，現行範圍以本節為準。舊校驗表與 QA 保留歷史 bytes，根 PUBLIC-MODEL-SHA256SUMS 與 appearance/CONTINUATION-SHA256SUMS 為現行校驗。
+
+## 前版說明與保留限制
 
 ## 兩樓梯塔前框限域配色（2026-10-22）
 
