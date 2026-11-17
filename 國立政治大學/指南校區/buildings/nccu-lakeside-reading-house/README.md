@@ -1,3 +1,11 @@
+## 本次側端補色（有界構件延伸）
+
+保留原 3,404 面／1,568 頂點及 66 個既有彩面，新增 **16 個完整原三角面**：屋頂薄板左／右／背立邊及右側折板外表面，沿用既有淺灰 `#C5C6BE`。本次重新親看既有[建築師刊載照片](https://www.twarchitect.org.tw/web2015/wp-content/uploads/2022/02/202203a6-3.jpg)，可見小屋右側折板的淺色族；色值仍為近似，左／背立邊僅同構件材料連續性推估，不是新左背照片實證。照片刊於 2022/03，實際攝影日未知，不稱 2026 現況。
+
+僅取完整原垂直平面，未切面、補紋理或新增材界；窗／框／欄杆、屋頂上下面、折板底側、樓梯、後服務牆與基座均保留。沒有切片器或實體試印。`qa-continuous-walls/` 為本版檢查；舊 `qa/`、`qa-fascia-continuation/` 及下方舊說明只代表歷史版本，舊中性範圍僅由本節 16 面更新。
+
+現行重建：`python appearance/source/build_continuous_walls.py`；交換驗證：`python appearance/source/verify_continuous_exchange.py`；五原視角及場景：`blender -b --python appearance/source/render_continuous_walls.py`；回讀：`blender -b --python appearance/source/verify_continuous_scene.py`。原 `build_appearance.py` 僅重建基底色。ZIP 只含模型重建檔，不含第三方參考圖。
+
 # 國立政治大學｜湖濱悅讀小屋
 
 ## 模型預覽

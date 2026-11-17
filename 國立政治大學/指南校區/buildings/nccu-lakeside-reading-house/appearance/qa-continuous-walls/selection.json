@@ -1,0 +1,50 @@
+{
+  "method": "Whole original vertical triangles on the original roof slab side/rear vertical fascia and outer folded fascia plane. Existing nonzero assignments preserved. No roof or underside recolored. No new photo evidence; same-component material inference only.",
+  "groups": [
+    {
+      "component": "roof_slab_left_fascia_continuity",
+      "material": 2,
+      "face_ids": [
+        2863,
+        2871
+      ],
+      "count": 2
+    },
+    {
+      "component": "roof_slab_right_fascia_continuity",
+      "material": 2,
+      "face_ids": [
+        2883,
+        2891
+      ],
+      "count": 2
+    },
+    {
+      "component": "roof_slab_rear_fascia_inferred",
+      "material": 2,
+      "face_ids": [
+        2874,
+        2888,
+        2889,
+        2893,
+        2894,
+        2895
+      ],
+      "count": 6
+    },
+    {
+      "component": "folded_right_fascia_outer_continuity",
+      "material": 2,
+      "face_ids": [
+        2905,
+        2909,
+        2920,
+        2923,
+        2925,
+        2931
+      ],
+      "count": 6
+    }
+  ],
+  "changed_faces": 16
+}
