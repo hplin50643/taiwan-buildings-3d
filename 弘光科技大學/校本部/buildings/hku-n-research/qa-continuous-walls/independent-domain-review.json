@@ -1,0 +1,137 @@
+{
+  "status": "PASS_FINITE_LEFT_HIGHEST_ROOF_CAP_END_ONLY",
+  "slug": "hku-n-research",
+  "count_delta": 0,
+  "original_faces": 7070,
+  "original_vertices": 3357,
+  "source_color_mesh_sha256": "655f4bbcb48066a7a79f3f45568af60699ba3fcde8e244aefd2c1cf5b73bc4af",
+  "source_palette_sha256": "be86d29a9a023f0e6dbf39581f2f39e69f97854e439d885502e7da8cd62d2968",
+  "source_stl_sha256": "b6f7a1f79f82f2c535ba629446a1482941f4f55900b20e7c182f683804c7daec",
+  "groups": [
+    {
+      "axis": 0,
+      "value": -67.5,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -67.5,
+          5.0,
+          77.0
+        ],
+        [
+          -67.5,
+          39.0,
+          79.0
+        ]
+      ],
+      "ids": [
+        6951,
+        6953
+      ],
+      "complete_coplanar_component": [
+        6951,
+        6953
+      ],
+      "rectangle_corner_completeness": true,
+      "corners": [
+        [
+          -67.5,
+          5.0,
+          77.0
+        ],
+        [
+          -67.5,
+          5.0,
+          79.0
+        ],
+        [
+          -67.5,
+          39.0,
+          77.0
+        ],
+        [
+          -67.5,
+          39.0,
+          79.0
+        ]
+      ],
+      "analytic_area_mm2": 68,
+      "mesh_area_mm2": 68.0,
+      "prior_gray_full_front_edge": [
+        {
+          "vertices": [
+            [
+              -67.5,
+              5.0,
+              77.0
+            ],
+            [
+              -67.5,
+              5.0,
+              79.0
+            ]
+          ],
+          "faces": [
+            6951,
+            6956
+          ],
+          "length_mm": 2.0
+        }
+      ]
+    }
+  ],
+  "face_ids": [
+    6951,
+    6953
+  ],
+  "changed_faces": 2,
+  "existing_colored_faces_preserved": 14,
+  "unchanged_faces": 7068,
+  "counts_before": [
+    14,
+    7056
+  ],
+  "counts_after": [
+    16,
+    7054
+  ],
+  "all_coplanar_domains_single_material": 1599,
+  "analytic_area_formula": "34*2=68",
+  "analytic_area_mm2": 68,
+  "mesh_area_mm2": 68.0,
+  "geometry_STL_triangle_order_exact": true,
+  "all_vertices_finite_no_centroid_selection": true,
+  "palette_unchanged": true,
+  "neutral_material_name": "HKU N unverified walls lower balconies neutral",
+  "source": {
+    "contractor_page": "https://www.huiguang.com.tw/project5.10",
+    "image_url": "https://www.huiguang.com.tw/fck/images/project/%E5%BC%98%E5%85%89%E5%A4%A7%E5%AD%B8_180524_0002.jpg",
+    "image_sha256": "ce07b453ea182b49aacff217f3dd362bf37a489abdf2410288c2ebd176255798",
+    "matches_current_root_source_register_sha": true,
+    "personally_viewed": true,
+    "source_type": "營造商工程頁現地實拍，不稱校方實拍。",
+    "identity": "L形內庭、左長橫窗與錯列陽台、內轉角圓弧玻璃塔、低入口車道對應N；鄰D及獨立前景雕塑不含入本模型。",
+    "visual_evidence": "最高長屋前薄緣呈連續淺灰，與其上局部女兒牆／欄及其下陰影腹分層。左外角可辨薄前沿；側端完整34mm進深不是照片直接全見。",
+    "inference": "只對原同一95x34x2屋cap的左外立窄端延續既有最高前沿灰族；34mm隱藏側深明示same-cap推論，不是逐面實照確證。不可跨成女兒牆、欄、主磚牆或屋底。",
+    "date": "工程2004/06–2005/10、URL180524都不等於拍攝時刻；拍攝日未知，不稱2026現況。",
+    "rights": "原照私人研究，不公開／貼圖，不推定再散布或商用許可。"
+  },
+  "limits": [
+    "以current root14灰為baseline，最高陽台12面及最高屋前2面均保留；絕不重跑舊只12面classifier。",
+    "現root來源登記仍留SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW歷史狀態，不改寫它；由current NPZ與README確認已有14面，不當作仍只有12面。",
+    "最高前簷右端由圓塔Boolean截至x24.71781349182129，原[6956,6959]與其界限不變。",
+    "屋cap頂底後右返、女兒牆／欄、圓弧玻璃塔及鄰D皆不擴。",
+    "三個下陽台真實紅通透欄與白實板混合，原全寬實心代理缺材界，均HOLD不塗；最高陽台槽內/頂底/回側不因本域連鎖上色。",
+    "原95x34x2厚深及群體不是測量，geometry全保留，不補原缺失細節。"
+  ],
+  "duplicate_check": {
+    "no_existing_N_delivery_or_specific_HOLD": true,
+    "hits_only_other_completed_report_unreviewed_list": true
+  },
+  "remaining_unreviewed": [
+    "hku-d-food-science",
+    "hku-gate-guardhouse",
+    "hku-q-student-dormitory"
+  ],
+  "research_only_no_delivery": true
+}

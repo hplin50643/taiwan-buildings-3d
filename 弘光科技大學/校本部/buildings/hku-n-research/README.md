@@ -1,3 +1,36 @@
+# 弘光 N 研究大樓｜最高長屋簷左端同材質延續
+
+## 模型預覽
+
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
+|![背面](back.png)|![西側](west.png)|![東側](east.png)|
+|![頂面](top.png)|![最高陽台](entry-detail.png)|![原實欄](facade-detail.png)|
+|![屋緣（含左端推論）近似](roof-detail.png)|||
+
+## 本次弘光 N 最高長屋簷左端補色
+
+固定目前 root 已有 14 灰面作 baseline，保留最高陽台 12 面與最高長屋前薄緣 2 面。僅將同一屋 cap 左端完整兩原三角 [6951,6953] 延用原名義淺灰槽 0，新版 16 灰／7,054 未驗證中性；其餘 7,068 面逐面不變。槽 1 明確為 unverified，不將具名實材當未上色。原 3,357 點、7,070 三角、面序、STL bytes 及 palette bytes 全保留，不切面、不補洞、不增加棟數。
+
+唯一域 x=−67.5、y=5…39、z=77…79 mm，外法向 −X。全三頂點皆在有限邊界內，兩原三角完整四角矩形等於整個共面連通分量；面積 34×2=68 mm²，前方 2 mm 整邊完整鄰接當前已灰屋前薄緣。1,599 共面域均單材，不以中心點截域。前緣既有 [6956,6959] 在圓塔 Boolean 截至 x=24.71781349182129 的止界完全保留。
+
+本輪親看營造商工程頁原 2048×1536 實拍，SHA 與 current source register 的 ce07b453… 相符，不稱新照或校方實拍。L 形內庭、錯列陽台、長橫窗、內角圓弧塔及低入口車道對應同一 N 群，鄰 D 與前景獨立雕塑不納入。最高長屋前薄緣呈淺灰，與上方局部女兒牆／欄及下方暗腹可分；模型左側完整 34 mm 深度並未由照片全見。這兩面只作同一 95×34×2 屋 cap 的同材料族延續推論，不是全深逐面實景確證，不跨成女兒牆、欄、主磚牆或屋底。
+
+工程 2004/06–2005/10、圖片 URL 的 180524 均不是確證拍攝時間，拍攝日未知，不稱 2026 現況、精確 HEX 或測量幾何。原來源登記仍保留 SOURCE_SCOPE_SUPPORTED_PENDING_FINAL_MODEL_REVIEW 歷史字樣，不為本次改寫；當前 NPZ、README 已明確是 14 灰面，絕不因舊來源文字或舊分類器回退成 12 面。原最高前緣局部被雕塑遮擋的限制繼承，本輪不擴範圍以繞開遮擋。
+
+頂面、底面、後緣、右返、女兒牆／欄、圓弧玻璃塔、鄰 D 及未知後側不染。下三陽台實景紅色通透欄與白實板混合，但原全寬實心代理缺對應材界，維持中性；最高陽台槽內／頂底／回側也不連鎖擴色。95×34×2 厚深、窗孔與整體皆原照片粗化，補色不追認測繪，不增加細節。仍是局部補色未完成，非施工圖、未實印或驗證多料切片，STL 無色。
+
+來源圖片只私人研究，不入公開包、不作貼圖，不推定再散布或商用許可。歷史來源 pending、原 QA、原建模／補色程式及校驗表保留原 bytes；下方 14 灰及更早 12 灰說明是歷史版本範圍。新版 QA 在 `qa-continuous-walls/`，校驗表 `CONTINUOUS-CAPEND-SHA256SUMS`，root scene 與十視角更新。3MF full-float 保留原座標，strict 讀回精確對原 STL；隔離材色往返與 Blender 材質／頂點編輯重開及 preview bytes 重渲染另有 QA。
+
+新版入口 `python build_continuous_capend.py`、`python verify_continuous_exchange.py`；Blender 使用 `render_continuous_capend.py`、`verify_continuous_scene.py`。`rebuild-continuous-capend.zip` 含固定 SHA 的 current14 baseline、STL、面域及新腳本，隔離解壓精確重建 NPZ／3MF／palette，不含圖片。舊 `colorize_model.py` 等歷史入口不得用於新版，避免回退已有色。
+
+場景僅同步更新 source_mesh_sha256 以對應本次含兩面材質指派變更的 color-mesh.npz；原 scope 與全部其他原屬性、全部材質定義及幾何不變。固定遠端原 14 灰面全部保留，不回退成歷史 12 面。原粗化屋 cap、未知建築後側中性、雕塑遮擋、來源 pending 歷史、攝影日期未知及未實印等限制完整保留；新增左端為同構件材料延續推論，非完整側面獨立照片證實。palette.json 原 bytes 完全保留，既有最高陽台槽名不代表新域的獨立實測色票。
+
+本頁為現行說明；根 README.zh-TW.md 保留舊版本原文及原 bytes，僅作歷史記錄。
+
+## 前版說明與保留限制（完整歷史文字）
+
 弘光 N 研究大樓｜最高長屋簷前薄帶有限補色
 
 僅原 [6956,6959] 兩面、一完整共面域，y=5、z77..79；右界因圓塔 Boolean 裁至24.7178。原12陽台色保留，合14色／7056中性／7070原三角，兩原palette保持，0混域。沿用名義#DEDDD3灰族，highest balcony歷史材名不是新域實測色票。原STL/build與未選索引不動；原無OBJ，不新增。
@@ -10,12 +43,6 @@
 
 **下三層陽台、牆窗等材域未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅最高陽台完整前實欄與連續板緣12原三角淺灰，非全棟完整補色。
 
-| 總覽 | 背側 | 正面 |
-|---|---|---|
-|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
-|![背面](back.png)|![西側](west.png)|![東側](east.png)|
-|![頂面](top.png)|![最高陽台](entry-detail.png)|![原實欄](facade-detail.png)|
-|![屋緣近似](roof-detail.png)|||
 
 ## 材色範圍
 同 hku-n-research 原項目，same-item、count_delta=0。弘光科技大學校本部N研究大樓單一連通群，不含D棟與獨立雕塑。7070原三角面、STL與build_model.py字節不變；原18件無OBJ，不假稱保存不存在原件。

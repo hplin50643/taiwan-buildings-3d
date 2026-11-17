@@ -1,0 +1,30 @@
+{
+  "status": "PASS_DOMAIN_ONLY_BEFORE_NEW_OUTPUT",
+  "face_ids": [
+    6951,
+    6953
+  ],
+  "original_material_counts": [
+    14,
+    7056
+  ],
+  "expected_new_material_counts": [
+    16,
+    7054
+  ],
+  "vertices": 3357,
+  "triangles": 7070,
+  "analytic_area_mm2": 68,
+  "triangle_area_mm2": 68.0,
+  "rectangle_corner_set_complete": true,
+  "edge_connected_coplanar_domain_exact": true,
+  "shared_prior_gray_front_edge_mm": 2,
+  "reviewer_personally_viewed_contractor_photo": true,
+  "source_photo_sha256": "ce07b453ea182b49aacff217f3dd362bf37a489abdf2410288c2ebd176255798",
+  "limits": [
+    "34mm side depth is same-component inference, not fully visible in photograph",
+    "Do not recolor roof top, bottom, rear, rail, balconies or glass tower",
+    "Preserve current14 colored faces and historical source pending status",
+    "Output geometry/material exact checks still required after production"
+  ]
+}
