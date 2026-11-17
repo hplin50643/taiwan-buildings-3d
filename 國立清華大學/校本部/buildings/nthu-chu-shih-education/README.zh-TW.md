@@ -1,3 +1,11 @@
+## 本次低白附樓小窗垂直窗頰補色（同構件推估）
+
+僅四扇原離散小窗的左右垂直窗頰延伸既有暖白，共 8 個矩形、16 面。每面全頂點受原窗開口 x=51/60±1.4、y=-59..-58、z=9..12/19..22 限制。窗玻璃背、水平窗台／窗頭均不動，不新增面或材質。
+
+這是同構件連續性推估，不是新增照片實證或 2026 現況核實，不宣稱精確窗框產品或測色。高塔磚灰帶混材整面、院內窗裙混玻璃、低廳磚肋全部保持原樣；原第一肋左側已配兩面亦保留。原 10,606 面／5,103 頂點與面序不變，其餘 10,590 面材質保留。
+
+現行 QA 見 `qa-continuous-walls/`；舊 QA 與來源限制保留。重建 `python appearance/source/build_continuous_walls.py`；交換核驗 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。直接用歷史分類器會回復舊配色。ZIP 不含第三方照片，未做實體試印。
+
 # 國立清華大學｜竹師教育學院大樓
 
 ## 模型預覽
