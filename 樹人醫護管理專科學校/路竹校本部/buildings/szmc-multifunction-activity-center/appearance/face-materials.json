@@ -934,20 +934,20 @@
     1,
     1,
     1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
     0,
     1,
     1,
     1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    0,
-    0,
-    1,
-    1,
-    0,
     1,
     1,
     1,
@@ -3180,8 +3180,8 @@
     1
   ],
   "material_face_counts": {
-    "unverified_neutral": 2207,
-    "paint_white": 357,
+    "unverified_neutral": 2205,
+    "paint_white": 359,
     "edge_graywhite": 184,
     "glazing_graygreen": 166,
     "frame_gray": 189,
@@ -3205,5 +3205,13 @@
   "closed_color_volumes": false,
   "printer_tool_mapping": null,
   "unknown_backside": "neutral, no new details",
-  "dark_passage": "shadow from original recessed geometry, not a claim of black paint"
+  "dark_passage": "shadow from original recessed geometry, not a claim of black paint",
+  "current_continuity_extension": {
+    "changed_faces": [
+      928,
+      941
+    ],
+    "target_material": 1,
+    "scope": "Only two original rightendfold slantedreturn faces; samepanel inference. Original965colors,21historicalmixed domains,allother3170faces and bottom916 unchanged."
+  }
 }

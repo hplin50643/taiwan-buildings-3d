@@ -1,0 +1,425 @@
+{
+  "status": "PASS_DOMAIN_ONLY",
+  "read_only": true,
+  "triangles": 3172,
+  "vertices": 1562,
+  "source_stl_sha256": "a763cee5febe34c80b4bbe36d19dca5fb1b2d9fd65d956aa310a06e5a993e902",
+  "face_materials_sha256": "61743c4ef0ea492bfd914bcaee7314edaa42579f121f83d5cd86a463fc1f3057",
+  "palette_sha256": "d0543f7a4f3eb9ecc56ebdd08b1d3345e047a6decf884f30e836e8de244d16b5",
+  "baseline_counts": [
+    2207,
+    357,
+    184,
+    166,
+    189,
+    69
+  ],
+  "proposed_counts": [
+    2205,
+    359,
+    184,
+    166,
+    189,
+    69
+  ],
+  "new_face_ids": [
+    928,
+    941
+  ],
+  "complete_global_coplanar_domain": [
+    928,
+    941
+  ],
+  "analytic_sheared_parallelogram_corners": [
+    [
+      72.13973799126637,
+      -34.52406288209607,
+      2.78
+    ],
+    [
+      72.13973799126637,
+      -29.66406288209607,
+      2.78
+    ],
+    [
+      69.61048034934498,
+      -29.108030882096074,
+      9.730399999999943
+    ],
+    [
+      69.61048034934498,
+      -33.96803088209607,
+      9.730399999999943
+    ]
+  ],
+  "original_float32_corners": [
+    [
+      69.61048126220703,
+      -33.9680290222168,
+      9.730400085449219
+    ],
+    [
+      69.61048126220703,
+      -29.108030319213867,
+      9.730400085449219
+    ],
+    [
+      72.13973999023438,
+      -34.52406311035156,
+      2.7799999713897705
+    ],
+    [
+      72.13973999023438,
+      -29.6640625,
+      2.7799999713897705
+    ]
+  ],
+  "actual_area_mm2": 35.94600158593647,
+  "analytic_area_mm2": 35.94600179930104,
+  "symmetric_difference_mm2": 1.4742501292265687e-05,
+  "overlap_mm2": 0.0,
+  "all_edge_material_links": [
+    {
+      "faces": [
+        916,
+        928
+      ],
+      "materials": [
+        0,
+        0
+      ],
+      "edge": [
+        [
+          72.13973999023438,
+          -34.52406311035156,
+          2.7799999713897705
+        ],
+        [
+          72.13973999023438,
+          -29.6640625,
+          2.7799999713897705
+        ]
+      ]
+    },
+    {
+      "faces": [
+        928,
+        940
+      ],
+      "materials": [
+        0,
+        1
+      ],
+      "edge": [
+        [
+          69.61048126220703,
+          -33.9680290222168,
+          9.730400085449219
+        ],
+        [
+          72.13973999023438,
+          -34.52406311035156,
+          2.7799999713897705
+        ]
+      ]
+    },
+    {
+      "faces": [
+        929,
+        941
+      ],
+      "materials": [
+        1,
+        0
+      ],
+      "edge": [
+        [
+          69.61048126220703,
+          -29.108030319213867,
+          9.730400085449219
+        ],
+        [
+          72.13973999023438,
+          -29.6640625,
+          2.7799999713897705
+        ]
+      ]
+    },
+    {
+      "faces": [
+        941,
+        978
+      ],
+      "materials": [
+        0,
+        1
+      ],
+      "edge": [
+        [
+          69.61048126220703,
+          -33.9680290222168,
+          9.730400085449219
+        ],
+        [
+          69.61048126220703,
+          -29.108030319213867,
+          9.730400085449219
+        ]
+      ]
+    }
+  ],
+  "original965colored_preserved": true,
+  "other3170faces_preserved": true,
+  "historical21mixed_coplanar_domains_exact_before_after": [
+    [
+      582,
+      583,
+      589,
+      590
+    ],
+    [
+      613,
+      614,
+      615,
+      616,
+      617,
+      618,
+      1034,
+      1036,
+      1038,
+      1042,
+      1045,
+      1046,
+      1048,
+      1052,
+      1053
+    ],
+    [
+      652,
+      653,
+      660,
+      661,
+      664,
+      964,
+      972,
+      973,
+      974
+    ],
+    [
+      837,
+      838,
+      841,
+      846
+    ],
+    [
+      849,
+      850
+    ],
+    [
+      853,
+      854,
+      855,
+      859,
+      860,
+      861
+    ],
+    [
+      893,
+      894,
+      895,
+      897,
+      900,
+      902,
+      903,
+      905,
+      909,
+      910
+    ],
+    [
+      918,
+      920,
+      921,
+      922,
+      923,
+      924,
+      930,
+      932,
+      936,
+      937,
+      938,
+      943,
+      944
+    ],
+    [
+      965,
+      967,
+      968,
+      969,
+      977,
+      980
+    ],
+    [
+      982,
+      983,
+      984
+    ],
+    [
+      1017,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1029
+    ],
+    [
+      1033,
+      1037,
+      1039,
+      1043,
+      1047,
+      1049
+    ],
+    [
+      1266,
+      1270,
+      1271,
+      1272
+    ],
+    [
+      1277,
+      1278,
+      1279,
+      1280
+    ],
+    [
+      1391,
+      1392,
+      1393,
+      1401,
+      1402,
+      1403,
+      1404,
+      1405,
+      1406,
+      1407,
+      1408,
+      1409,
+      1410,
+      1411,
+      1412,
+      1413,
+      1414,
+      1415,
+      1428,
+      1429,
+      1430,
+      1431,
+      1432,
+      1433,
+      1434,
+      1435,
+      1436,
+      1437,
+      1438,
+      1439,
+      1440,
+      1441,
+      1442,
+      1461,
+      1462,
+      1463,
+      1464,
+      1465,
+      1466,
+      1467,
+      1468,
+      1469,
+      1470,
+      1471,
+      1472,
+      1494,
+      1495,
+      1496,
+      1497,
+      1498,
+      1499,
+      1521,
+      1522,
+      1523
+    ],
+    [
+      2654,
+      2657,
+      2658,
+      2659,
+      2660,
+      2661,
+      2662
+    ],
+    [
+      2663,
+      2664,
+      2679,
+      2680,
+      2681,
+      2682,
+      2683,
+      2684,
+      2685,
+      2686
+    ],
+    [
+      2673,
+      2674,
+      2675,
+      2676,
+      2677,
+      2678
+    ],
+    [
+      2909,
+      2924,
+      2937
+    ],
+    [
+      2914,
+      2916,
+      2933
+    ],
+    [
+      3153,
+      3154,
+      3157,
+      3158,
+      3160,
+      3161,
+      3166
+    ]
+  ],
+  "new_mixed_domains": 0,
+  "NOT_all_domains_uniform": true,
+  "source": {
+    "url": "https://cdn.myportfolio.com/19f8396c593b7c3ba250d6e1b97b7cd6/b925c6fd-b451-447f-ac7d-bea6b3f45c51.jpg?h=960d04ddf4b1ba9d967f95b58ce7f2bf",
+    "sha256": "5991f26b04712a49bc57646143c47097a519c8bc4ba111a7002659d4455fa418",
+    "personally_viewed": true,
+    "credit": "MAYU architects；攝影 Yu-Chen Zao／趙宇晨",
+    "capture_date": "unknown",
+    "role": "01 identity and longwing,03 rightendwhitefold,05 differentcorner supports panel-family only; not candidate closeup"
+  },
+  "personally_viewed_mayu03": true,
+  "photo_mapping": "Architect03 longgrass-front view clearlyshows whitefolded rightterminal facade descendingnextto glazedlongwing. Existingwhitebroadskins andtheir narrow joiningreturn plausibly samewhitecladdingfamily; not the grayroofstrip or glazing. Treesandstairs partlyobscure lowrighttermination, so exactsmallreturn/coarsecut not directlyphotoproven.",
+  "inference": "Finite white foldedpanel edge continuation only, across3actualsharededges witholdwhite929/940/978. Preserve originalunion clippedx69.61048,z9.7304, notfullnominalhighfold. Shear0.08/4.86thickness are originalproxy, notphoto survey.",
+  "exclusions": [
+    "Neutralbottom916",
+    "Extension aboveoriginalclip/nominalpoint",
+    "Glass/frames/stairs/mainroof/slot2grayedge",
+    "Pondsideunverifiedwall/terrain/allotherdomains"
+  ],
+  "history": "Exact21historicalmixedcomponentface lists retained; do not claimallcoplanaruniform. Original46thinlayerwarnings andlimitedmanufacturingexceptions remain.",
+  "rights_dates": "Architectcreditedphoto private researchonly;captureunknown, no2026condition/calibratedpaintclaim; no newsourcepixels for publicpackage.",
+  "qa_limit": "Domainonly;production3MF/Blender/render/ZIPnotyetvalidated",
+  "models_modified": false,
+  "ledger_modified": false,
+  "uploaded": false
+}

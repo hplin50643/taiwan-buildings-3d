@@ -1,0 +1,245 @@
+{
+  "status": "PASS_FINITE_SAME_RIGHT_END_FOLD_RETURN",
+  "read_only": true,
+  "modified_model": false,
+  "published": false,
+  "repository_path": "樹人醫護管理專科學校/路竹校本部/buildings/szmc-multifunction-activity-center",
+  "source_stl_sha256": "a763cee5febe34c80b4bbe36d19dca5fb1b2d9fd65d956aa310a06e5a993e902",
+  "source_face_materials_sha256": "61743c4ef0ea492bfd914bcaee7314edaa42579f121f83d5cd86a463fc1f3057",
+  "source_palette_sha256": "d0543f7a4f3eb9ecc56ebdd08b1d3345e047a6decf884f30e836e8de244d16b5",
+  "triangles": 3172,
+  "vertices": 1562,
+  "face_order": "Exact original binarySTL triangle order; source JSON indices. np.unique vertices here only research representation, do not assume delivery vertex order.",
+  "baseline_counts": [
+    2207,
+    357,
+    184,
+    166,
+    189,
+    69
+  ],
+  "counts_after": [
+    2205,
+    359,
+    184,
+    166,
+    189,
+    69
+  ],
+  "face_ids": [
+    928,
+    941
+  ],
+  "target_material": 1,
+  "neutral_material": 0,
+  "groups": [
+    {
+      "ids": [
+        928,
+        941
+      ],
+      "complete_coplanar_component": [
+        928,
+        941
+      ],
+      "global_coplanar_faces": [
+        928,
+        941
+      ],
+      "normal": [
+        0.939713477932803,
+        -0.0,
+        0.3419628333480635
+      ],
+      "float_corners": [
+        [
+          69.61048126220703,
+          -33.9680290222168,
+          9.730400085449219
+        ],
+        [
+          69.61048126220703,
+          -29.108030319213867,
+          9.730400085449219
+        ],
+        [
+          72.13973999023438,
+          -34.52406311035156,
+          2.7799999713897705
+        ],
+        [
+          72.13973999023438,
+          -29.6640625,
+          2.7799999713897705
+        ]
+      ],
+      "analytic_corners": [
+        [
+          72.13973799126637,
+          -34.52406288209607,
+          2.78
+        ],
+        [
+          72.13973799126637,
+          -29.66406288209607,
+          2.78
+        ],
+        [
+          69.61048034934498,
+          -29.108030882096074,
+          9.730399999999943
+        ],
+        [
+          69.61048034934498,
+          -33.96803088209607,
+          9.730399999999943
+        ]
+      ],
+      "area_mm2": 35.94600158593647,
+      "analytic_area_mm2": 35.94600179930104,
+      "shape": "Sheared parallelogram, not axisalignedrectangle",
+      "links": [
+        {
+          "vertices": [
+            [
+              72.13973999023438,
+              -34.52406311035156,
+              2.7799999713897705
+            ],
+            [
+              72.13973999023438,
+              -29.6640625,
+              2.7799999713897705
+            ]
+          ],
+          "faces": [
+            916,
+            928
+          ],
+          "materials": [
+            0,
+            0
+          ],
+          "length_mm": 4.8600006103515625
+        },
+        {
+          "vertices": [
+            [
+              69.61048126220703,
+              -33.9680290222168,
+              9.730400085449219
+            ],
+            [
+              72.13973999023438,
+              -34.52406311035156,
+              2.7799999713897705
+            ]
+          ],
+          "faces": [
+            928,
+            940
+          ],
+          "materials": [
+            0,
+            1
+          ],
+          "length_mm": 7.417168284863702
+        },
+        {
+          "vertices": [
+            [
+              69.61048126220703,
+              -29.108030319213867,
+              9.730400085449219
+            ],
+            [
+              72.13973999023438,
+              -29.6640625,
+              2.7799999713897705
+            ]
+          ],
+          "faces": [
+            929,
+            941
+          ],
+          "materials": [
+            1,
+            0
+          ],
+          "length_mm": 7.417168141877995
+        },
+        {
+          "vertices": [
+            [
+              69.61048126220703,
+              -33.9680290222168,
+              9.730400085449219
+            ],
+            [
+              69.61048126220703,
+              -29.108030319213867,
+              9.730400085449219
+            ]
+          ],
+          "faces": [
+            941,
+            978
+          ],
+          "materials": [
+            0,
+            1
+          ],
+          "length_mm": 4.85999870300293
+        }
+      ],
+      "complete_union_nooverlap": true
+    }
+  ],
+  "original965colored_faces_preserved": true,
+  "other3170faces_unchanged": true,
+  "historical_mixed_coplanar_domains_unchanged": 21,
+  "all_coplanar_domains": 804,
+  "new_mixed_domains": 0,
+  "derivation": "Original rightfold outer boundary from paper(3310,11.8m) to(3400,1m), ypaper1980, shear.08,thickness4.86mm. Existing return x=(3250-2000)*PX+5.20 truncates upperportion at x69.61048,z9.7304. Preserve this originalunion termination; do not extend to nominal highcorner or add faces.",
+  "inference": "Two original slanted end-edge triangles share full sloping edges with existing white opposite broadfold skins929/940 and topjoin978. Continue same white cladding-family across this bounded return; exactthickness/shear/truncateddepth are original coarseproxy, not photo-measured. Private aerial and architect03 support same rightendfold identity; not each modeledface direct photographicproof.",
+  "exclusions": "Original neutral bottomface916, glass andframe/backing, stairs, roofedgegraywhite slot2, mainroof, pondside unverifiedwall, terrain, other21 historicalmixedcoplanar domains and all otherfaces unchanged.",
+  "sources": [
+    {
+      "url": "https://cdn.myportfolio.com/19f8396c593b7c3ba250d6e1b97b7cd6/fb730890-47c0-4aeb-8577-df9ba71996ea.jpg?h=93da2e09939bb6c753557645fbd2f24e",
+      "sha256": "cc2c5490077a238cff35f828edba0653de72b6aa34fb9486f76253532d19e857",
+      "personally_viewed": true,
+      "credit": "MAYU architects；攝影 Yu-Chen Zao／趙宇晨",
+      "capture_date": "unknown",
+      "role": "01 identity and longwing,03 rightendwhitefold,05 differentcorner supports panel-family only; not candidate closeup"
+    },
+    {
+      "url": "https://cdn.myportfolio.com/19f8396c593b7c3ba250d6e1b97b7cd6/b925c6fd-b451-447f-ac7d-bea6b3f45c51.jpg?h=960d04ddf4b1ba9d967f95b58ce7f2bf",
+      "sha256": "5991f26b04712a49bc57646143c47097a519c8bc4ba111a7002659d4455fa418",
+      "personally_viewed": true,
+      "credit": "MAYU architects；攝影 Yu-Chen Zao／趙宇晨",
+      "capture_date": "unknown",
+      "role": "01 identity and longwing,03 rightendwhitefold,05 differentcorner supports panel-family only; not candidate closeup"
+    },
+    {
+      "url": "https://cdn.myportfolio.com/19f8396c593b7c3ba250d6e1b97b7cd6/46b48160-7827-4e4f-b4b6-e92b98f2ed93.jpg?h=b23ea12a3f8fed5abe9ef4bbfa2de4f5",
+      "sha256": "81e04c0e4c03a2805e6e59f53541d8117d9025f8732c61008f7a7d440e544daa",
+      "personally_viewed": true,
+      "credit": "MAYU architects；攝影 Yu-Chen Zao／趙宇晨",
+      "capture_date": "unknown",
+      "role": "01 identity and longwing,03 rightendwhitefold,05 differentcorner supports panel-family only; not candidate closeup"
+    }
+  ],
+  "third_party_aerial": {
+    "url": "https://live.staticflickr.com/4359/36572949213_da7e688a9e_b.jpg",
+    "credit": "takuyatsai",
+    "sha256": "f10b30e6600acedc9e37e06e83d0807bffdb1c34659355b6fa11288a48af142e",
+    "personally_viewed": true,
+    "date": "2017-09-10 from historical title,not independently verified"
+  },
+  "source_rights": "All photographs private research only; no pixels publicly redistributed, no calibratedcolor or2026survey claim",
+  "dedup": {
+    "manifests_checked": 118,
+    "matches": []
+  },
+  "historical_manufacturing_limits": "Preserve46thinlayer warnings and quantified limitedexceptions, not newFFF orphysicalprintcertification."
+}
