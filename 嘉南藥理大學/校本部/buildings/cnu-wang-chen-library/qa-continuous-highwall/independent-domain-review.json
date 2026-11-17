@@ -1,0 +1,120 @@
+{
+  "status": "PASS_COMPLETE_SOUTH_HIGHWALL_REAR_FINITE_PLANE",
+  "repository_path": "嘉南藥理大學/校本部/buildings/cnu-wang-chen-library",
+  "source_stl_sha256": "353a5ce7fcd15a798f8bbf932e73d67b95ef856c60623cc3d7831f46dd609897",
+  "baseline_color_mesh_sha256": "797b2e941fbc089c1bf602e96e3b69a2f8797f08d8af5e0806b6383b7a25573a",
+  "candidate": {
+    "faces": [
+      2188,
+      2197,
+      2221,
+      2222,
+      2223
+    ],
+    "changed_faces": 5,
+    "from_material": 1,
+    "to_material": 0,
+    "plane_axis": 1,
+    "plane_y_mm": -3.06,
+    "normal_y": 1,
+    "low_mm": [
+      -40.5,
+      -3.06,
+      75.0
+    ],
+    "high_mm": [
+      45.9,
+      -3.06,
+      82.92
+    ],
+    "original_polygon_xz_before_scale": [
+      [
+        -22.5,
+        40.7
+      ],
+      [
+        22.5,
+        40.7
+      ],
+      [
+        22.5,
+        40
+      ],
+      [
+        25.5,
+        40
+      ],
+      [
+        25.5,
+        44.4
+      ],
+      [
+        -22.5,
+        44.4
+      ]
+    ],
+    "polygon_xz_mm": [
+      [
+        -40.5,
+        76.26
+      ],
+      [
+        40.5,
+        76.26
+      ],
+      [
+        40.5,
+        75.0
+      ],
+      [
+        45.9,
+        75.0
+      ],
+      [
+        45.9,
+        82.92
+      ],
+      [
+        -40.5,
+        82.92
+      ]
+    ],
+    "scale": 1.8,
+    "base_z": 3,
+    "analytic_formula": "(48*(44.4-40.7)+3*(40.7-40))*1.8^2",
+    "analytic_area_mm2": 582.2279999999995,
+    "area_mm2": 582.2276808471652,
+    "symmetric_difference_mm2": 0.00034332275085648687,
+    "triangle_interior_overlap_mm2": 0.0,
+    "entire_support_plane_equals_finite_selection": true,
+    "complete_coplanar_connected_component": true,
+    "all_original_139_colored_faces_preserved": true,
+    "total_colored_faces": 144,
+    "triangles": 65686,
+    "vertices": 32643,
+    "STL_triangles_exact": true,
+    "scope": "Only rear vertical face of the same original light-colored south highwall. Original left/right sidewalls and machinery roof clip its finite polygon; preserve all original contact edges. No painting broadsidewalls,rooftops,frontslotrecesses,glazing,north facade or other structures. No geometry changes."
+  },
+  "source": {
+    "page": "https://libcvod.cnu.edu.tw/media/1229",
+    "image": "https://libcvod.cnu.edu.tw/sysdata/album/71/d14d01b8cf78a13eed9da0ba9b4e9965_xl.jpg",
+    "sha256": "f3a718d0fa6b3bc2fb5d8b0904e2ee467cbc34058236464d959eee3c4c90157e",
+    "personally_viewed": true,
+    "official": true,
+    "observation": "Official album5962 southoblique confirms south highwall lightgraywhite distinct from glazed curvedvolume and mainrooftop. New rearface is not visible directly: proposed same-wall materialfamily continuity is explicit inference, not rearphotographic proof.",
+    "date_limits": "Albumlabel20170322not independentlyconfirmedcapturedate; no2026conditionclaim;uncalibrated existingnominalcolor",
+    "rights": "Privatepixels only;notpublicdeliverable"
+  },
+  "original_engineering_limits": [
+    "v2 accepted limited exceptions remain;459opening warnings, directional shortchords,728 junctionpoints with533pair/195triple controls and v1HOLD history. This sourceGO does not recertify printability/support/globalQA. Original homepage preview remains; new variant separate.",
+    "Original five preview contrast materials and historical files remain unchanged. Entrance-frame fronts are supported by the official photo; side, rear, top and soffit continuity is inferred, not directly verified as current condition.",
+    "139 original faces have nominal graywhite, including 91 added entrance-frame faces; 65547 faces remain unknown neutral. The original 48 observed south-wall/lintel faces are retained. Only building L, not adjacent Q.",
+    "Named2017/2020/2025 albumfiles not capture or current2026 certification."
+  ],
+  "no_model_changes": true,
+  "no_upload": true,
+  "dedup": {
+    "cnu-wang-chen-library": [],
+    "cnu-j-grandstand-historical": []
+  }
+}
