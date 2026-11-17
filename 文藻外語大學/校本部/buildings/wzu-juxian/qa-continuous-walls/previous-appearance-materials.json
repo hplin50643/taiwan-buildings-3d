@@ -1,0 +1,48 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Observed first-three narrow screen lattice terracotta",
+      "hex": "#A66550",
+      "faces": 1790
+    },
+    {
+      "id": 1,
+      "name": "Observed independent front band gray",
+      "hex": "#BABDB6",
+      "faces": 24
+    },
+    {
+      "id": 2,
+      "name": "UNVERIFIED broad right grid mixed walls roof rear neutral",
+      "hex": "#B8BAB5",
+      "faces": 4368
+    }
+  ],
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "6182 original triangles unchanged; no new or split faces",
+  "domains": {
+    "narrow_lattice_initial_row_candidates": [
+      127,
+      196,
+      196,
+      180,
+      196,
+      196,
+      238,
+      238,
+      238
+    ],
+    "neutralized_border_reveal_faces": 15,
+    "red_lattice_total": 1790,
+    "front_band_gray": 24,
+    "broad_right_lattice": "entirely neutral: joined coplanar grid crosses source gray separator"
+  },
+  "limitations": [
+    "Right60wide lattice conservative neutral whole-domain, not red triangular fragments beside gray separator.",
+    "All solid placeholder backings, mixed main walls and five thick roof wedges neutral.",
+    "Photo dates unknown;2023 form and2025 PDF edition not capture dates.",
+    "Material labels not a verified multi-filament slicing job."
+  ]
+}
