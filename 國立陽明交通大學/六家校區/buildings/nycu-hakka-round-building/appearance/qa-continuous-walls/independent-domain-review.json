@@ -1,0 +1,964 @@
+{
+  "status": "PASS_bounded_central_upper_fan_outer_fascia_only",
+  "repo_path": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building",
+  "source_stl_sha256": "522314e6bc9582b7c6b6e0f968fc685f46f74a8b6f95fa5661f41d3ed675e84c",
+  "triangles": 35084,
+  "vertices": 17374,
+  "baseline_colored_faces": 29603,
+  "baseline_material_counts": [
+    5481,
+    27422,
+    760,
+    468,
+    313,
+    640
+  ],
+  "prior_classifier_difference_ids": [],
+  "prior_classifier_difference_colors": [],
+  "prior_classifier_difference_reasons": [],
+  "prior_reason_difference_ids": [],
+  "groups": [
+    {
+      "angle_start": 57,
+      "angle_end": 59,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34497,
+        34498
+      ],
+      "normal_xy": [
+        0.5299192642332049,
+        0.848048096156426
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          27.77659078576638,
+          42.772198965216624
+        ],
+        [
+          26.26694182041276,
+          43.71553233580773
+        ]
+      ],
+      "area": 3.5602947440349895,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 59,
+      "angle_end": 61,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34494,
+        34496
+      ],
+      "normal_xy": [
+        0.5000000000000001,
+        0.8660254037844386
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          26.26694182041276,
+          43.71553233580773
+        ],
+        [
+          24.725290632563194,
+          44.605605064109184
+        ]
+      ],
+      "area": 3.5602893336925003,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 61,
+      "angle_end": 63,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34493,
+        34495
+      ],
+      "normal_xy": [
+        0.46947156278589086,
+        0.8829475928589269
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          24.725290632563194,
+          44.605605064109184
+        ],
+        [
+          23.153515486716888,
+          45.44133273360676
+        ]
+      ],
+      "area": 3.5602914470958686,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 63,
+      "angle_end": 65,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34468,
+        34503
+      ],
+      "normal_xy": [
+        0.43837114678907746,
+        0.898794046299167
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          23.153515486716888,
+          45.44133273360676
+        ],
+        [
+          21.55353134877567,
+          46.221697138869146
+        ]
+      ],
+      "area": 3.560289767604722,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 65,
+      "angle_end": 67,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34500,
+        34502
+      ],
+      "normal_xy": [
+        0.4067366430758002,
+        0.9135454576426009
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          21.55353134877567,
+          46.221697138869146
+        ],
+        [
+          19.927287552952958,
+          46.945747526074456
+        ]
+      ],
+      "area": 3.560289097494455,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 67,
+      "angle_end": 69,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34499,
+        34501
+      ],
+      "normal_xy": [
+        0.37460659341591196,
+        0.9271838545667874
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          19.927287552952958,
+          46.945747526074456
+        ],
+        [
+          18.276765426810318,
+          47.61260175135729
+        ]
+      ],
+      "area": 3.560291583946243,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 69,
+      "angle_end": 71,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34338,
+        34339
+      ],
+      "normal_xy": [
+        0.3420201433256688,
+        0.9396926207859083
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          18.276765426810318,
+          47.61260175135729
+        ],
+        [
+          16.603975877314994,
+          48.221447355565154
+        ]
+      ],
+      "area": 3.560292171490919,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 71,
+      "angle_end": 73,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34336,
+        34337
+      ],
+      "normal_xy": [
+        0.30901699437494745,
+        0.9510565162951535
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          16.603975877314994,
+          48.221447355565154
+        ],
+        [
+          14.910956940859576,
+          48.77154255411481
+        ]
+      ],
+      "area": 3.560288687958721,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 73,
+      "angle_end": 75,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34334,
+        34335
+      ],
+      "normal_xy": [
+        0.27563735581699916,
+        0.9612616959383189
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          14.910956940859576,
+          48.77154255411481
+        ],
+        [
+          13.199771300228559,
+          49.262217140742486
+        ]
+      ],
+      "area": 3.56029365462241,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 75,
+      "angle_end": 77,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34332,
+        34333
+      ],
+      "normal_xy": [
+        0.24192189559966767,
+        0.9702957262759965
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          13.199771300228559,
+          49.262217140742486
+        ],
+        [
+          11.472503771537111,
+          49.692873304047
+        ]
+      ],
+      "area": 3.560290532650699,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 77,
+      "angle_end": 79,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34329,
+        34330
+      ],
+      "normal_xy": [
+        0.20791169081775945,
+        0.9781476007338056
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          11.472503771537111,
+          49.692873304047
+        ],
+        [
+          9.73125876420379,
+          50.062986355830866
+        ]
+      ],
+      "area": 3.560289973873588,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 79,
+      "angle_end": 81,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34252,
+        34253
+      ],
+      "normal_xy": [
+        0.17364817766693041,
+        0.984807753012208
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          9.73125876420379,
+          50.062986355830866
+        ],
+        [
+          7.9781577170517775,
+          50.372105370352024
+        ]
+      ],
+      "area": 3.560290972452165,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 81,
+      "angle_end": 83,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34251,
+        34256
+      ],
+      "normal_xy": [
+        0.13917310096006547,
+        0.9902680687415704
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          7.9781577170517775,
+          50.372105370352024
+        ],
+        [
+          6.215336513662522,
+          50.61985373370742
+        ]
+      ],
+      "area": 3.560291170237679,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 83,
+      "angle_end": 85,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34254,
+        34255
+      ],
+      "normal_xy": [
+        0.10452846326765346,
+        0.9945218953682733
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          6.215336513662522,
+          50.61985373370742
+        ],
+        [
+          4.444942880130565,
+          50.80592960267902
+        ]
+      ],
+      "area": 3.5602906532781713,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 85,
+      "angle_end": 87,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34243,
+        34244
+      ],
+      "normal_xy": [
+        0.06975647374412523,
+        0.9975640502598242
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          4.444942880130565,
+          50.80592960267902
+        ],
+        [
+          2.669133768390142,
+          50.930106272483265
+        ]
+      ],
+      "area": 3.5602911750121358,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 87,
+      "angle_end": 89,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        34241,
+        34242
+      ],
+      "normal_xy": [
+        0.03489949670250108,
+        0.9993908270190958
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          2.669133768390142,
+          50.930106272483265
+        ],
+        [
+          0.8900727283014636,
+          50.992232452975955
+        ]
+      ],
+      "area": 3.5602907513046977,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 89,
+      "angle_end": 91,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17527,
+        34240
+      ],
+      "normal_xy": [
+        6.123233995736766e-17,
+        1.0
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          0.8900727283014636,
+          50.992232452975955
+        ],
+        [
+          -0.8900727283014573,
+          50.992232452975955
+        ]
+      ],
+      "area": 3.560290813446045,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 91,
+      "angle_end": 93,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17525,
+        17526
+      ],
+      "normal_xy": [
+        -0.034899496702500955,
+        0.9993908270190958
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -0.8900727283014573,
+          50.992232452975955
+        ],
+        [
+          -2.669133768390136,
+          50.930106272483265
+        ]
+      ],
+      "area": 3.5602907513046977,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 93,
+      "angle_end": 95,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17523,
+        17524
+      ],
+      "normal_xy": [
+        -0.06975647374412533,
+        0.9975640502598242
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -2.669133768390136,
+          50.930106272483265
+        ],
+        [
+          -4.44494288013057,
+          50.80592960267902
+        ]
+      ],
+      "area": 3.5602911750121358,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 95,
+      "angle_end": 97,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17516,
+        17517
+      ],
+      "normal_xy": [
+        -0.10452846326765355,
+        0.9945218953682733
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -4.44494288013057,
+          50.80592960267902
+        ],
+        [
+          -6.215336513662516,
+          50.61985373370743
+        ]
+      ],
+      "area": 3.5602906532781713,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 97,
+      "angle_end": 99,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17512,
+        17515
+      ],
+      "normal_xy": [
+        -0.13917310096006535,
+        0.9902680687415704
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -6.215336513662516,
+          50.61985373370743
+        ],
+        [
+          -7.978157717051771,
+          50.372105370352024
+        ]
+      ],
+      "area": 3.560291170237679,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 99,
+      "angle_end": 101,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17510,
+        17511
+      ],
+      "normal_xy": [
+        -0.1736481776669303,
+        0.984807753012208
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -7.978157717051771,
+          50.372105370352024
+        ],
+        [
+          -9.731258764203785,
+          50.062986355830866
+        ]
+      ],
+      "area": 3.560290972452165,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 101,
+      "angle_end": 103,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17419,
+        17420
+      ],
+      "normal_xy": [
+        -0.20791169081775934,
+        0.9781476007338057
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -9.731258764203785,
+          50.062986355830866
+        ],
+        [
+          -11.472503771537117,
+          49.692873304047
+        ]
+      ],
+      "area": 3.560289973873588,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 103,
+      "angle_end": 105,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17416,
+        17417
+      ],
+      "normal_xy": [
+        -0.24192189559966779,
+        0.9702957262759965
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -11.472503771537117,
+          49.692873304047
+        ],
+        [
+          -13.199771300228564,
+          49.262217140742486
+        ]
+      ],
+      "area": 3.560290532650699,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 105,
+      "angle_end": 107,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17410,
+        17415
+      ],
+      "normal_xy": [
+        -0.27563735581699905,
+        0.9612616959383189
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -13.199771300228564,
+          49.262217140742486
+        ],
+        [
+          -14.91095694085957,
+          48.771542554114816
+        ]
+      ],
+      "area": 3.56029365462241,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 107,
+      "angle_end": 109,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17408,
+        17409
+      ],
+      "normal_xy": [
+        -0.30901699437494734,
+        0.9510565162951536
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -14.91095694085957,
+          48.771542554114816
+        ],
+        [
+          -16.60397587731499,
+          48.22144735556516
+        ]
+      ],
+      "area": 3.560288687958721,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 109,
+      "angle_end": 111,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17406,
+        17407
+      ],
+      "normal_xy": [
+        -0.3420201433256687,
+        0.9396926207859084
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -16.60397587731499,
+          48.22144735556516
+        ],
+        [
+          -18.276765426810314,
+          47.61260175135729
+        ]
+      ],
+      "area": 3.560292171490919,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 111,
+      "angle_end": 113,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17251,
+        17253
+      ],
+      "normal_xy": [
+        -0.37460659341591207,
+        0.9271838545667874
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -18.276765426810314,
+          47.61260175135729
+        ],
+        [
+          -19.92728755295296,
+          46.945747526074456
+        ]
+      ],
+      "area": 3.560291583946243,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 113,
+      "angle_end": 115,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17250,
+        17252
+      ],
+      "normal_xy": [
+        -0.40673664307580026,
+        0.9135454576426009
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -19.92728755295296,
+          46.945747526074456
+        ],
+        [
+          -21.553531348775667,
+          46.22169713886915
+        ]
+      ],
+      "area": 3.560289097494455,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 115,
+      "angle_end": 117,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17247,
+        17249
+      ],
+      "normal_xy": [
+        -0.4383711467890775,
+        0.8987940462991669
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -21.553531348775667,
+          46.22169713886915
+        ],
+        [
+          -23.15351548671688,
+          45.441332733606764
+        ]
+      ],
+      "area": 3.560289767604722,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 117,
+      "angle_end": 119,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17228,
+        17230
+      ],
+      "normal_xy": [
+        -0.4694715627858909,
+        0.8829475928589269
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -23.15351548671688,
+          45.441332733606764
+        ],
+        [
+          -24.725290632563187,
+          44.60560506410919
+        ]
+      ],
+      "area": 3.5602914470958686,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 119,
+      "angle_end": 121,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17227,
+        17229
+      ],
+      "normal_xy": [
+        -0.4999999999999998,
+        0.8660254037844387
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -24.725290632563187,
+          44.60560506410919
+        ],
+        [
+          -26.266941820412768,
+          43.71553233580773
+        ]
+      ],
+      "area": 3.5602893336925003,
+      "analytic_area": 3.5602909132058365
+    },
+    {
+      "angle_start": 121,
+      "angle_end": 123,
+      "radius": 51,
+      "z_min": 48.4,
+      "z_max": 50.4,
+      "ids": [
+        17225,
+        17226
+      ],
+      "normal_xy": [
+        -0.5299192642332048,
+        0.8480480961564261
+      ],
+      "plane_offset": 50.992232452975955,
+      "endpoints_xy": [
+        [
+          -26.266941820412768,
+          43.71553233580773
+        ],
+        [
+          -27.77659078576638,
+          42.772198965216624
+        ]
+      ],
+      "area": 3.5602947440349895,
+      "analytic_area": 3.5602909132058365
+    }
+  ],
+  "candidate_faces": 66,
+  "target_material": 2,
+  "plane_method": "33 finite outward original2-degree chord planes, all3vertices coplanar within0.00002,along finite endpoints,andz48.4..50.4. Every pair is complete rectangle4vertices. Not centroid/radial-bbox only.",
+  "exclusions": "All top/bottom surfaces, radial ends,inner curved edge,lower sidefans,radial supporting piers,wall/body,windows,concrete and existing colors excluded.",
+  "geometry_limit": "Original roofs intentionally approximate actual radial pitch using three thick2mm stepped rings. New color does not reconstruct thin actual metal edge or drainage details. Highestcentral supporting piers stopz48.2, below candidatez48.4; no pillar intersection. Only original highest outerfan silhouette used.",
+  "appearance": "Official aerial personally viewed: steppedrear fans silvergray; same-material extension onto original outercentral roofedge is reasonable but bounded inference, not exact edge finish/thickness survey. Lowerright/leftfans and their pierjunctions not included.",
+  "photo": {
+    "url": "https://www.nycu.edu.tw/userfiles/nycuch/images/20230920124608504.jpg",
+    "sha256": "72a39f72113671e588dfee045531b81d81d6facab96aa555ac6e3bb885594992",
+    "personally_viewed": true,
+    "date_independently_verified": false,
+    "matches_original_source_sha256": true
+  },
+  "current_2026_condition_claim": false,
+  "photos_public": false,
+  "deduplication": "Two deliveryledgers andallpublish-files scanned,no nycu-hakka-round-building entry. Other screened models: NCHUhuisun fronttruncation/mixedlowerwindowHOLD;NYCUhaoran artificialrearcutHOLD;Yangming mixedwindows/roof remainsHOLD.",
+  "complete_rectangle_4vertices_each": true,
+  "unchanged_faces_required": 35018
+}
