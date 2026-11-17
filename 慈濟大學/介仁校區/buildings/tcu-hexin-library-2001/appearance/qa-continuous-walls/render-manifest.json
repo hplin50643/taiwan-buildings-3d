@@ -1,0 +1,97 @@
+{
+  "blender": "4.3.2",
+  "samples": 32,
+  "resolution": [
+    1200,
+    1200
+  ],
+  "files": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1545896,
+      "sha256": "29aee84f914b060dd54f7b0046660cb1b871d6abd2087592a78352260f3e77a0",
+      "camera": [
+        140,
+        220,
+        100
+      ],
+      "target": [
+        4.6875,
+        -28.125,
+        13.5
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true
+    },
+    {
+      "path": "previews/left.png",
+      "bytes": 1527866,
+      "sha256": "9a83c1657f4398d02798a9a933e3953a70383b582c20077f4da96f87e6e0dd8f",
+      "camera": [
+        -230,
+        80,
+        120
+      ],
+      "target": [
+        4.6875,
+        -28.125,
+        13.5
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true
+    },
+    {
+      "path": "previews/right.png",
+      "bytes": 1532295,
+      "sha256": "d88327a5c9077f6946127ef3d0418fdbdf9dae00bec131690cb06abbf6fe6b2d",
+      "camera": [
+        250,
+        -30,
+        120
+      ],
+      "target": [
+        4.6875,
+        -28.125,
+        13.5
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1550618,
+      "sha256": "6200cc6b66decfbc9f9c4d04a4c5bf7bf21f2f9735bf4d54c1b636af9fb706c7",
+      "camera": [
+        100,
+        -250,
+        110
+      ],
+      "target": [
+        4.6875,
+        -28.125,
+        13.5
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1596665,
+      "sha256": "2efdd78c75d4976c906a9172308c11e5c3010d71efbbbe50ae5056981b512c2a",
+      "camera": [
+        4.6875,
+        -28.125,
+        350
+      ],
+      "target": [
+        4.6875,
+        -28.125,
+        0
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true
+    }
+  ],
+  "visual_inspection_pending": false,
+  "visual_review": "visual-review.json"
+}

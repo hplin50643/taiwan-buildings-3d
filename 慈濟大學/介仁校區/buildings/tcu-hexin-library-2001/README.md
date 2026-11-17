@@ -8,6 +8,22 @@
 | ![北正面](appearance/previews/front.png) | ![左側](appearance/previews/left.png) | ![右側](appearance/previews/right.png) |
 | ![南背面](appearance/previews/rear.png) | ![俯視](appearance/previews/top.png) |  |
 
+## 本次南側窄窗帶原背面玻璃代理補色
+
+將原南側長窗下方窄窗帶的 9 個完整窗背矩形／18 個原中性三角延用既有不透明玻璃代理槽 3。原 228 個玻璃代理面、84 個底座面及全部未變更理由保留；其餘 8,706 面不變。原 8,724 面／4,348 點、STL 位元、座標與面序不變；現在中性 8,394、原槽 1 仍未使用、底座 84、玻璃代理 246。
+
+只取生成器局部 y=4.5、x=7…31、z=8.1…8.85 的九格原背面，依原比例 150/96、Y 鏡射與 z+2 轉為世界 y=−7.03125 mm、向 −Y 外法向。每面三頂點皆在有限矩形域，18 面合計 41.015625 mm² 與解析面積完全相同；8 支原窄梃、框、窗洞回邊、牆及上長窗均排除，不新增、切面或修復原窗數。
+
+本輪親看官方北照與南照，南側照片可辨上長窗下的深色窄窗帶，支持相同既有不透明玻璃代理，不代表量測反射／透射或逐格像素配準。9 格與窗形是原近似模型。北末兩 facet、北最低不透明帶、東短端、D/E 翼、屋頂及省略西窗仍不推色。2001-06-03 是落成、2007-09 是圖書館啟用，不是來源攝影日期或當年外觀快照；照片年代未獨立核實，非 2026 現況，沒有實體試印。照片留私人研究，不入公開包。
+
+**原 Blender 三槽材質 datablock、linear RGBA、use_nodes 與未使用槽 1 精確保留**，只沿用先前新增玻璃代理。3MF 為規格 8-bit sRGB 近似，不能把它當原線性色位元完全相同。新渲染器從根 `scene.blend` 載入原材質；該根檔保持原 Git bytes，與 `appearance/scene.blend` 新外觀檔不同。歷史製造／薄部例外警示全部留存，不重算或洗白。
+
+場景僅同步更新 limitations 與 evidence 的面數文字（玻璃228→246、中性8412→8394）；其餘原屬性、材質與幾何不變。
+
+新版 QA 在 `appearance/qa-continuous-walls/`，歷史 QA、`source-manifest.json` 與 `SHA256SUMS.txt` 留存作歷史記錄；本次用 `appearance/SHA256SUMS`、根 `PUBLIC-MODEL-SHA256SUMS`。重建 `python appearance/source/build_continuous_walls.py`；交換驗證 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景驗證 `blender -b --python appearance/source/verify_continuous_scene.py`。ZIP 含原 STL、原根 scene.blend、建模程式、原材質與選取域，不含照片。原歷史 render_appearance.py 的original-scene.blend路徑不作新版入口，請使用上述新版程式。
+
+## 前版說明與保留限制
+
 本件是來源限定的外觀近似，包含主館、連接部與西南圖書館／行政翼，不代表整校完成。2001-06-03建物完工；2007-09為分館開館。慈濟大學2024合校後以同一校計數，不另列原慈濟科技大學。
 
 
