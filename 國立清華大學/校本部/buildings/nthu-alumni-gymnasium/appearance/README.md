@@ -1,3 +1,11 @@
+## 本次側背補色（同構件推估）
+
+本版新增 **24 個原中性完整三角面**：高入口盒體兩側與背牆 10 面沿用既有銀灰 `#BAC1BD`，前七個重複屋頂的背端 14 面沿用淡暖灰 `#B5B0A7`。**這是同構件材料連續性推估，沒有新背側照片證據。** 不稱全館精確材質或 2026 現況；沿用原影像年代與代理幾何限制。
+
+原 1,308 面／656 頂點與面序不動，所有原彩面保留。下入口跨左右銀／褐而未有分界的混材牆、長廳未分隔的下牆、高盒頂、最後一片跨本體的屋頂端面、窗／百葉／柱／基座不擴色。未切原三角、不另造分界，未做切片器或實體試印。
+
+本版稽核在 `qa-continuous-walls/`；原 `qa/`、`qa-roofend-continuation/` 與下方舊說明屬歷史紀錄，舊中性範圍僅由上列 24 面更新。重建：`python appearance/source/build_continuous_walls.py`；交換：`python appearance/source/verify_continuous_exchange.py`；四原視角／場景：`blender -b --python appearance/source/render_continuous_walls.py`；回讀：`blender -b --python appearance/source/verify_continuous_scene.py`。歷史 `build_appearance.py` 為基底色，不能替代新命令。ZIP 不含第三方照片。
+
 # 清華校友體育館：四材質外觀版
 
 沿用原 **1,308 三角面／656 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
