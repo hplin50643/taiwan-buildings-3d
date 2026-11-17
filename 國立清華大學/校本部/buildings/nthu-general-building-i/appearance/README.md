@@ -1,3 +1,11 @@
+## 本次多面牆補色（同構件推估）
+
+本版將低層正面長條構件的 **20 個原本中性牆面** 延用既有暖象牙白：完整左端 9 面、外露後牆 11 面。**這是同構件材質連續性推估，不是新側背照片實證。** 僅選原完整垂直三角面，未改幾何或新增分界；高後塊的混材牆、獨立後側附棟、屋頂、太陽能板、玻璃、窗框及所有原彩面保留。原 3,112 面／1,416 頂點不變。沒有實體列印驗證。
+
+本版稽核見 `qa-continuous-walls/`；原 `qa/`、`qa-roof-continuation/` 和下方舊說明屬歷史紀錄，不代表本版雜湊。舊版未上色範圍只由本節列出的 20 面更新，其他限制照舊。
+
+現行重建：`python appearance/source/build_continuous_walls.py`；驗證：`python appearance/source/verify_continuous_exchange.py`；四原視角彩圖及可編輯場景：`blender -b --python appearance/source/render_continuous_walls.py`；場景驗證：`blender -b --python appearance/source/verify_continuous_scene.py`。舊 `build_appearance.py` 僅作基底分類，直接執行會回到舊配色。ZIP 不含第三方照片。
+
 # 清華第一綜合大樓：五材質外觀版
 
 沿用原 **3,112 三角面／1,416 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
