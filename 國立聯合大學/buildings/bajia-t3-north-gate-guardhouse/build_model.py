@@ -1,6 +1,6 @@
 """Photo-informed NUU exterior miniature. Millimetres, front = -Y.
 Proportions are estimates, not survey dimensions. No interior modeled.
-Run python build_model.py. See README.zh-TW.md for evidence and limitations.
+Run python build_model.py. See README.md for evidence and limitations.
 """
 from pathlib import Path
 import numpy as np

@@ -20,7 +20,7 @@
 - 來源有屋頂光伏設備，但原 B4 網格沒有獨立板幾何；**不把平屋頂塗藍假裝已有光伏板**，也不新增設備、字樣、招牌、冷氣或樹影。
 - 原 STL／OBJ、場景、預覽、生成器及歷史幾何 QA 不變；根 README、manifest 及兩者在根 SHA256SUMS 的雜湊變化屬明列的來源文件更正。本 appearance 的 SHA256SUMS 另行涵蓋新檔案。外觀改善不增加模型包數，不是測繪還原或實體列印驗證。
 
-[更正後來源文件](../manifest.json) · [原模型與更正說明](../README.zh-TW.md) · [本次來源覆核](qa/source-review.json)
+[更正後來源文件](../manifest.json) · [原模型與更正說明](../README.md) · [本次來源覆核](qa/source-review.json)
 
 ## 重建與核驗
 

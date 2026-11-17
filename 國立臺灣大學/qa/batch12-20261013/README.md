@@ -4,4 +4,4 @@
 
 霖澤/萬才各5層警示約2.854%面積loss，來自屋頂16根2.2×2.2mm方柱的四角圓化，柱心仍保留；不是孤立小於0.8mm柱。各位置與bbox見thin-warning-notes.json。頂蓋約20mm跨距仍須切片支撐評估。語文大樓無超1%警示。薄篩不能證明所有細節皆可印。
 
-重跑工具與方法見[前34件補查](../printability-20261013/README.zh-TW.md)，以該處check_valid_sections.py及thin_canonical_v2.py對audit-summary.json相應STL執行。這是新增幾何輔助檢查，未作真正切片器或實體試印。
+重跑工具與方法見[前34件補查](../printability-20261013/README.md)，以該處check_valid_sections.py及thin_canonical_v2.py對audit-summary.json相應STL執行。這是新增幾何輔助檢查，未作真正切片器或實體試印。

@@ -13,7 +13,7 @@
 | 選擇與下載 | STL 身分／預覽／檢查 |
 |---|---|
 | [R2 外觀對照 STL](model.stl) · [場景](scene.blend) | SHA-256 `00f6bbdd09196fba873d843bb9d50a1c3aad4e19e760978333dce6f49740627c`；下方四張根目錄預覽均對應此檔。原 R2 的幾何 QA 保留；未對此檔執行本次參考切片。 |
-| [填縫版 STL](manufacturing/fill-hidden-gaps/model.stl) · [場景](manufacturing/fill-hidden-gaps/scene.blend) · [實際預覽](manufacturing/fill-hidden-gaps/previews/front.png) | SHA-256 `6801f9c41c9fd986df4167523ec36195e715d6a38a680c09aff002cba1351b2a`；本次唯一參考切片輸入。請配讀[製造入口](manufacturing/README.zh-TW.md)、[實際切片設定與支撐限制](manufacturing/slice-reference-2.9.6/README.zh-TW.md)。 |
+| [填縫版 STL](manufacturing/fill-hidden-gaps/model.stl) · [場景](manufacturing/fill-hidden-gaps/scene.blend) · [實際預覽](manufacturing/fill-hidden-gaps/previews/front.png) | SHA-256 `6801f9c41c9fd986df4167523ec36195e715d6a38a680c09aff002cba1351b2a`；本次唯一參考切片輸入。請配讀[製造入口](manufacturing/README.md)、[實際切片設定與支撐限制](manufacturing/slice-reference-2.9.6/README.md)。 |
 
 完整版本角色、原始失敗與補證及備份回條見[公開證據說明](publication/PUBLIC-EVIDENCE.zh-TW.md)。兩版均為 150 × 124 × 68 mm；填縫版改變格柵背／側凹槽及窗台背微縫，不能稱所有可見表面不變。
 
@@ -43,7 +43,7 @@
 
 ## 真實檢查與剩餘風險
 
-目前製造檢查請讀[填縫版實際切片](manufacturing/slice-reference-2.9.6/README.zh-TW.md)及[最終獨立覆核](publication/independent-review-8758/FINAL-INCREMENTAL-REVIEW.zh-TW.md)。B／C／G 只有已分離小片的有限退出候選；A／D／E、C0門廊／D0平台全部支撐的工具可達、分片和移除尚未驗證。未辨認出已證明完全封閉不可達的實際支撐，不代表全域無困料或整棟可拆。不能僅按幾何疑點數一律要求可溶；若實際硬支撐工法不可行，替代方案仍須驗證雙／多材料設備、整個可能困住骨架與介面可溶及逐區進出液路。未驗液路，不保證可洗淨。
+目前製造檢查請讀[填縫版實際切片](manufacturing/slice-reference-2.9.6/README.md)及[最終獨立覆核](publication/independent-review-8758/FINAL-INCREMENTAL-REVIEW.zh-TW.md)。B／C／G 只有已分離小片的有限退出候選；A／D／E、C0門廊／D0平台全部支撐的工具可達、分片和移除尚未驗證。未辨認出已證明完全封閉不可達的實際支撐，不代表全域無困料或整棟可拆。不能僅按幾何疑點數一律要求可溶；若實際硬支撐工法不可行，替代方案仍須驗證雙／多材料設備、整個可能困住骨架與介面可溶及逐區進出液路。未驗液路，不保證可洗淨。
 
 以下是 **2026-10-18 原 R2／`00f6…` 幾何階段**的量測與限制，不能當填縫版切片的通過項目。[R2 薄特徵／支撐覆核入口](qa/risk-followup-e45f8d6/RISK-FOLLOWUP.md)含固定座標截面、原198筆短弦與156層追溯。原候選及初報均保留；舊37筆與R2 35筆浮點自交初篩的false未改寫，另有精確補證。
 

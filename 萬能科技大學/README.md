@@ -2,14 +2,14 @@
 
 本輪7件逐棟外觀研究模型，最長150mm（含底板、每件獨立比例）。附可重建Python、STL、可編輯Blender、實際STL正背預覽與檢查。不是全校完成，也非測繪級復原。
 
-[覆蓋與缺口](研究盤點/README.zh-TW.md)｜[機器可讀清單](model-manifest.json)
+[覆蓋與缺口](研究盤點/README.md)｜[機器可讀清單](model-manifest.json)
 
 ## 每列三座不同建築
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![弘道館（E）](校本部/buildings/vnu-hongdao-e/preview.png)](校本部/buildings/vnu-hongdao-e/README.zh-TW.md)<br>**[弘道館（E）／詳頁](校本部/buildings/vnu-hongdao-e/README.zh-TW.md)**<br>弘道館（E）<br>[局部材色3MF](校本部/buildings/vnu-hongdao-e/appearance.3mf) · [範圍與限制](校本部/buildings/vnu-hongdao-e/README.md) | [![管理大樓（G）](校本部/buildings/vnu-management-g/previews/front.png)](校本部/buildings/vnu-management-g/README.zh-TW.md)<br>**[管理大樓（G）／詳頁](校本部/buildings/vnu-management-g/README.zh-TW.md)**<br>管理大樓（G） | [![育才樓（L）](校本部/buildings/vnu-yucai-l/previews/front.png)](校本部/buildings/vnu-yucai-l/README.zh-TW.md)<br>**[育才樓（L）／詳頁](校本部/buildings/vnu-yucai-l/README.zh-TW.md)**<br>育才樓（L） |
-| [![萬芳樓（V）](校本部/buildings/vnu-wanfang-v/preview.png)](校本部/buildings/vnu-wanfang-v/README.zh-TW.md)<br>**[萬芳樓（V）／詳頁](校本部/buildings/vnu-wanfang-v/README.zh-TW.md)**<br>萬芳樓（V）<br>[局部材色3MF](校本部/buildings/vnu-wanfang-v/appearance.3mf) · [範圍與限制](校本部/buildings/vnu-wanfang-v/README.md) | [![體適能中心（PH）](校本部/buildings/vnu-fitness-ph/preview.png)](校本部/buildings/vnu-fitness-ph/README.zh-TW.md)<br>**[體適能中心（PH）／詳頁](校本部/buildings/vnu-fitness-ph/README.zh-TW.md)**<br>體適能中心（PH）<br>[局部材色3MF](校本部/buildings/vnu-fitness-ph/appearance.3mf) · [範圍與限制](校本部/buildings/vnu-fitness-ph/README.md) | [![萬強館（舊圖碼PH008）](校本部/buildings/vnu-wanqiang-ph008/previews/front.png)](校本部/buildings/vnu-wanqiang-ph008/README.zh-TW.md)<br>**[萬強館（舊圖碼PH008）／詳頁](校本部/buildings/vnu-wanqiang-ph008/README.zh-TW.md)**<br>萬強館（舊圖碼PH008） |
+| [![弘道館（E）](校本部/buildings/vnu-hongdao-e/preview.png)](校本部/buildings/vnu-hongdao-e/README.zh-TW.md)<br>**[弘道館（E）／詳頁](校本部/buildings/vnu-hongdao-e/README.zh-TW.md)**<br>弘道館（E）<br>[局部材色3MF](校本部/buildings/vnu-hongdao-e/appearance.3mf) · [範圍與限制](校本部/buildings/vnu-hongdao-e/README.md) | [![管理大樓（G）](校本部/buildings/vnu-management-g/previews/front.png)](校本部/buildings/vnu-management-g/README.md)<br>**[管理大樓（G）／詳頁](校本部/buildings/vnu-management-g/README.md)**<br>管理大樓（G） | [![育才樓（L）](校本部/buildings/vnu-yucai-l/previews/front.png)](校本部/buildings/vnu-yucai-l/README.md)<br>**[育才樓（L）／詳頁](校本部/buildings/vnu-yucai-l/README.md)**<br>育才樓（L） |
+| [![萬芳樓（V）](校本部/buildings/vnu-wanfang-v/preview.png)](校本部/buildings/vnu-wanfang-v/README.zh-TW.md)<br>**[萬芳樓（V）／詳頁](校本部/buildings/vnu-wanfang-v/README.zh-TW.md)**<br>萬芳樓（V）<br>[局部材色3MF](校本部/buildings/vnu-wanfang-v/appearance.3mf) · [範圍與限制](校本部/buildings/vnu-wanfang-v/README.md) | [![體適能中心（PH）](校本部/buildings/vnu-fitness-ph/preview.png)](校本部/buildings/vnu-fitness-ph/README.zh-TW.md)<br>**[體適能中心（PH）／詳頁](校本部/buildings/vnu-fitness-ph/README.zh-TW.md)**<br>體適能中心（PH）<br>[局部材色3MF](校本部/buildings/vnu-fitness-ph/appearance.3mf) · [範圍與限制](校本部/buildings/vnu-fitness-ph/README.md) | [![萬強館（舊圖碼PH008）](校本部/buildings/vnu-wanqiang-ph008/previews/front.png)](校本部/buildings/vnu-wanqiang-ph008/README.md)<br>**[萬強館（舊圖碼PH008）／詳頁](校本部/buildings/vnu-wanqiang-ph008/README.md)**<br>萬強館（舊圖碼PH008） |
 | [![仁愛樓（RHB）](校本部/buildings/vnu-renai-rhb/preview.png)](校本部/buildings/vnu-renai-rhb/README.zh-TW.md)<br>**[仁愛樓（RHB）／詳頁](校本部/buildings/vnu-renai-rhb/README.zh-TW.md)**<br>仁愛樓（RHB）<br>[局部材色3MF](校本部/buildings/vnu-renai-rhb/appearance.3mf) · [範圍與限制](校本部/buildings/vnu-renai-rhb/README.md) |  |  |
 
 ## 證據與列印限制

@@ -18,9 +18,9 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![國家衛生研究院竹南院區行政大樓：正面預覽](buildings/zhunan-administration/appearance/previews/front.png)](buildings/zhunan-administration/README.zh-TW.md)<br>**[國家衛生研究院竹南院區行政大樓](buildings/zhunan-administration/README.zh-TW.md)** | [![國家衛生研究院竹南院區圖書資訊大樓：正面預覽](buildings/zhunan-library-information/appearance/previews/front.png)](buildings/zhunan-library-information/README.zh-TW.md)<br>**[國家衛生研究院竹南院區圖書資訊大樓](buildings/zhunan-library-information/README.zh-TW.md)** | [![國家衛生研究院竹南院區研究大樓 R1／R2：正面預覽](buildings/zhunan-r1-r2-research-complex/appearance/previews/front.png)](buildings/zhunan-r1-r2-research-complex/README.zh-TW.md)<br>**[國家衛生研究院竹南院區研究大樓 R1／R2](buildings/zhunan-r1-r2-research-complex/README.zh-TW.md)** |
-| [![國家衛生研究院竹南院區二期單人宿舍：正面預覽](buildings/zhunan-dorm-phase2/appearance/previews/front.png)](buildings/zhunan-dorm-phase2/README.zh-TW.md)<br>**[國家衛生研究院竹南院區二期單人宿舍](buildings/zhunan-dorm-phase2/README.zh-TW.md)** | [![國衛院竹南院區有眷宿舍：正面預覽](buildings/zhunan-family-dorm/previews/front.png)](buildings/zhunan-family-dorm/README.zh-TW.md)<br>**[國衛院竹南院區有眷宿舍](buildings/zhunan-family-dorm/README.zh-TW.md)** | [![國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼：正面預覽](buildings/zhunan-biologics-pilot-main/appearance/previews/front.png)](buildings/zhunan-biologics-pilot-main/README.zh-TW.md)<br>**[國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼](buildings/zhunan-biologics-pilot-main/README.zh-TW.md)** |
-| [![國衛院竹南院區 station 48 白色塔狀外觀量體：正面預覽](buildings/zhunan-station48-exterior-mass/front.png)](buildings/zhunan-station48-exterior-mass/README.zh-TW.md)<br>**[國衛院竹南院區 station 48 白色塔狀外觀量體](buildings/zhunan-station48-exterior-mass/README.zh-TW.md)** | [![國衛院竹南院區廢棄物處理中心：公開外殼：正面預覽](buildings/zhunan-waste-treatment-center/previews/front.png)](buildings/zhunan-waste-treatment-center/README.zh-TW.md)<br>**[國衛院竹南院區廢棄物處理中心：公開外殼](buildings/zhunan-waste-treatment-center/README.zh-TW.md)** | [![國衛院竹南院區機電中心：初步近似外觀量體：正面預覽](buildings/zhunan-mep-center-preliminary/previews/front.png)](buildings/zhunan-mep-center-preliminary/README.zh-TW.md)<br>**[國衛院竹南院區機電中心：初步近似外觀量體](buildings/zhunan-mep-center-preliminary/README.zh-TW.md)** |
+| [![國家衛生研究院竹南院區行政大樓：正面預覽](buildings/zhunan-administration/appearance/previews/front.png)](buildings/zhunan-administration/README.md)<br>**[國家衛生研究院竹南院區行政大樓](buildings/zhunan-administration/README.md)** | [![國家衛生研究院竹南院區圖書資訊大樓：正面預覽](buildings/zhunan-library-information/appearance/previews/front.png)](buildings/zhunan-library-information/README.md)<br>**[國家衛生研究院竹南院區圖書資訊大樓](buildings/zhunan-library-information/README.md)** | [![國家衛生研究院竹南院區研究大樓 R1／R2：正面預覽](buildings/zhunan-r1-r2-research-complex/appearance/previews/front.png)](buildings/zhunan-r1-r2-research-complex/README.md)<br>**[國家衛生研究院竹南院區研究大樓 R1／R2](buildings/zhunan-r1-r2-research-complex/README.md)** |
+| [![國家衛生研究院竹南院區二期單人宿舍：正面預覽](buildings/zhunan-dorm-phase2/appearance/previews/front.png)](buildings/zhunan-dorm-phase2/README.md)<br>**[國家衛生研究院竹南院區二期單人宿舍](buildings/zhunan-dorm-phase2/README.md)** | [![國衛院竹南院區有眷宿舍：正面預覽](buildings/zhunan-family-dorm/previews/front.png)](buildings/zhunan-family-dorm/README.md)<br>**[國衛院竹南院區有眷宿舍](buildings/zhunan-family-dorm/README.md)** | [![國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼：正面預覽](buildings/zhunan-biologics-pilot-main/appearance/previews/front.png)](buildings/zhunan-biologics-pilot-main/README.md)<br>**[國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼](buildings/zhunan-biologics-pilot-main/README.md)** |
+| [![國衛院竹南院區 station 48 白色塔狀外觀量體：正面預覽](buildings/zhunan-station48-exterior-mass/front.png)](buildings/zhunan-station48-exterior-mass/README.md)<br>**[國衛院竹南院區 station 48 白色塔狀外觀量體](buildings/zhunan-station48-exterior-mass/README.md)** | [![國衛院竹南院區廢棄物處理中心：公開外殼：正面預覽](buildings/zhunan-waste-treatment-center/previews/front.png)](buildings/zhunan-waste-treatment-center/README.md)<br>**[國衛院竹南院區廢棄物處理中心：公開外殼](buildings/zhunan-waste-treatment-center/README.md)** | [![國衛院竹南院區機電中心：初步近似外觀量體：正面預覽](buildings/zhunan-mep-center-preliminary/previews/front.png)](buildings/zhunan-mep-center-preliminary/README.md)<br>**[國衛院竹南院區機電中心：初步近似外觀量體](buildings/zhunan-mep-center-preliminary/README.md)** |
 
 ## 9 件列印包
 
@@ -29,7 +29,7 @@
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-[模型原始檔、驗證報告與說明](buildings/zhunan-administration/README.zh-TW.md)
+[模型原始檔、驗證報告與說明](buildings/zhunan-administration/README.md)
 
 模型外框（毫米；X × Y × Z）：150 × 56 × 42.75。尺寸依原交付 validation.json。
 
@@ -48,7 +48,7 @@
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-[模型原始檔、驗證報告與說明](buildings/zhunan-library-information/README.zh-TW.md)
+[模型原始檔、驗證報告與說明](buildings/zhunan-library-information/README.md)
 
 模型外框（毫米；X × Y × Z）：150 × 104 × 63.8。尺寸依原交付 validation.json。
 
@@ -67,7 +67,7 @@
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-[模型原始檔、驗證報告與說明](buildings/zhunan-r1-r2-research-complex/README.zh-TW.md)
+[模型原始檔、驗證報告與說明](buildings/zhunan-r1-r2-research-complex/README.md)
 
 模型外框（毫米；X × Y × Z）：144 × 150 × 60.4。尺寸依原交付 validation.json。
 
@@ -86,7 +86,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-[模型原始檔、驗證報告與說明](buildings/zhunan-dorm-phase2/README.zh-TW.md)
+[模型原始檔、驗證報告與說明](buildings/zhunan-dorm-phase2/README.md)
 
 模型外框（毫米；X × Y × Z）：150 × 76 × 80。尺寸依原交付 validation.json。
 
@@ -105,7 +105,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-[模型原始檔、驗證報告與說明](buildings/zhunan-family-dorm/README.zh-TW.md)
+[模型原始檔、驗證報告與說明](buildings/zhunan-family-dorm/README.md)
 
 模型外框（毫米；X × Y × Z）：98 × 98 × 150。尺寸依原交付 validation.json。
 
@@ -124,7 +124,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-[模型原始檔、驗證報告與說明](buildings/zhunan-biologics-pilot-main/README.zh-TW.md)
+[模型原始檔、驗證報告與說明](buildings/zhunan-biologics-pilot-main/README.md)
 
 模型外框（毫米；X × Y × Z）：128 × 150 × 84.4。尺寸依原交付 validation.json。
 
@@ -143,7 +143,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-[模型原始檔、驗證報告與說明](buildings/zhunan-station48-exterior-mass/README.zh-TW.md)
+[模型原始檔、驗證報告與說明](buildings/zhunan-station48-exterior-mass/README.md)
 
 模型外框（毫米；X × Y × Z）：116 × 82 × 150。尺寸依原交付 validation.json。
 
@@ -162,7 +162,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-[模型原始檔、驗證報告與說明](buildings/zhunan-waste-treatment-center/README.zh-TW.md)
+[模型原始檔、驗證報告與說明](buildings/zhunan-waste-treatment-center/README.md)
 
 模型外框（毫米；X × Y × Z）：150 × 84 × 51.6。尺寸依原交付 validation.json。
 
@@ -181,7 +181,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-[模型原始檔、驗證報告與說明](buildings/zhunan-mep-center-preliminary/README.zh-TW.md)
+[模型原始檔、驗證報告與說明](buildings/zhunan-mep-center-preliminary/README.md)
 
 模型外框（毫米；X × Y × Z）：150 × 72 × 24.8。尺寸依原交付 validation.json。
 

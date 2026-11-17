@@ -31,7 +31,7 @@
 
 ## 下載前
 - 以下是先前既有模型的檢查描述，非本次兩實體住宅模型的單體認證：已驗證原STL法向、流形邊/頂點、單一連通封閉表面、正體積、獨立重建與Blender幾何一致性。
-- 前34件另作[新增截面有效性與薄篩補查](qa/printability-20261013/README.zh-TW.md)，第11至13批9件在各模型內有同類結果。
+- 前34件另作[新增截面有效性與薄篩補查](qa/printability-20261013/README.md)，第11至13批9件在各模型內有同類結果。
 - 工科海洋入口段只提供修訂v2：消除舊版窗框相切折返。舊版STL不在此整合包中，建物件數不變。
 - 尚未用真正列印切片器生成工具路徑或實體試印。屋簷、門廊、跨距及細節需要支撐/解析度評估。國發所、第一學生活動中心的頂尖及地質前棟拱罩的薄篩警示見附錄，不能以支撐取代細節線寬檢查。
 
@@ -43,9 +43,9 @@
 
 
 ## 清冊與版本
-[全校待辦與來源缺口](inventory/README.zh-TW.md) · [52件現行索引](model-index.json) · [既有批次SHA256（歷史清單）](SHA256SUMS) · [雅頌坊完整SHA256](校總區/buildings/ntu-odeum/SHA256SUMS) · [批次紀錄](batches/)
+[全校待辦與來源缺口](inventory/README.md) · [52件現行索引](model-index.json) · [既有批次SHA256（歷史清單）](SHA256SUMS) · [雅頌坊完整SHA256](校總區/buildings/ntu-odeum/SHA256SUMS) · [批次紀錄](batches/)
 
-[下一階段逐項來源與缺口](inventory/CONTINUE.zh-TW.md) · [第12批補查](qa/batch12-20261013/README.zh-TW.md) · [第13批補查](qa/batch13-20261013/README.zh-TW.md)
+[下一階段逐項來源與缺口](inventory/CONTINUE.zh-TW.md) · [第12批補查](qa/batch12-20261013/README.md) · [第13批補查](qa/batch13-20261013/README.md)
 
 [臺大地質標本館小屋外觀與來源界線](校總區/buildings/ntu-geological-specimen-cottage/appearance/README.md)
 

@@ -1,7 +1,7 @@
 """C1立德樓公開外觀近似模型。Units millimetres, standalone display scale.
 Observed: 8-storey front/right grid, 13 front window bays, entrance porch/stairs,
 raised rooftop canopy. Rear notch is a schematic inference from campus map.
-Source URLs and every major simplification are in README.zh-TW.md.
+Source URLs and every major simplification are in README.md.
 Requires numpy,trimesh,manifold3d; no network/download required.
 """
 from pathlib import Path

@@ -19,7 +19,7 @@
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
 
-[新增34件列印幾何補查與細節警示](../../../qa/printability-20261013/README.zh-TW.md)
+[新增34件列印幾何補查與細節警示](../../../qa/printability-20261013/README.md)
 
 
 公開外觀照片衍生的簡化列印模型，非測繪模型。官方索引代碼：M3。

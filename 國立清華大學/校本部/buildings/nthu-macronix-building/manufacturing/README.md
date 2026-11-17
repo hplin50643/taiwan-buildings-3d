@@ -1,6 +1,6 @@
 # 旺宏館製造參考檢查選項
 
-本頁提供同一建築套件的局部填縫版，已完成一套[PrusaSlicer 2.9.6真實參考切片](slice-reference-2.9.6/README.zh-TW.md)及[最終獨立增量覆核](../publication/independent-review-8758/FINAL-INCREMENTAL-REVIEW.zh-TW.md)。結論為**有條件 GO，可附製造條件交付代表模型**；不是全棟硬支撐拆除或真機列印放行。G-code為 **NOT-MACHINE-READY**，未試印。
+本頁提供同一建築套件的局部填縫版，已完成一套[PrusaSlicer 2.9.6真實參考切片](slice-reference-2.9.6/README.md)及[最終獨立增量覆核](../publication/independent-review-8758/FINAL-INCREMENTAL-REVIEW.zh-TW.md)。結論為**有條件 GO，可附製造條件交付代表模型**；不是全棟硬支撐拆除或真機列印放行。G-code為 **NOT-MACHINE-READY**，未試印。
 
 根目錄原R2（STL SHA `00f6bbdd09196fba873d843bb9d50a1c3aad4e19e760978333dce6f49740627c`）保留作外觀與幾何對照，其生成器、STL、OBJ、場景及四張預覽保持原位。**本次切片只適用下列填縫版／`6801…`**，沒有對原R2切片，也沒有新增建築套數。兩版的預覽與QA不能互相移稱通過；版本與備份脈絡見[公開證據說明](../publication/PUBLIC-EVIDENCE.zh-TW.md)。
 
