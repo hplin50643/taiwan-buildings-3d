@@ -1,5 +1,14 @@
 # 行政大樓中央入口段
 
+## 2026-11-17 中央頂冠連續材質補色（目前版）
+
+中央凸窗上方頂冠的前側原為灰石 `#B2AE98`；本版將同一頂冠的41個側／背垂直三角面補為相同色號。這是**同構件材質連續的合理推估**，不是新的側後照片證實或石種鑑定。水平頂面、後方低山牆、整段兩端及背面人工裁切面都不擴色。
+
+原STL、5,292個三角面的座標與面序完全保留；僅41面改色，其他5,251面指派不變。材質面數依序為中性671、紅棕磚172、灰石1115、奶白窗框3233、玻璃36、底座65。[本版驗證](appearance/qa/continuous-crest-verification.json) · [本版來源包](appearance/continuous-crest-source.zip)。仍為中央入口局部段，不代表整棟完成。
+
+重建目前版：`python appearance/source/build_continuous_crest.py`，`blender -b -t 2 -P appearance/source/render_continuous_crest.py`。下方舊版範圍與QA保留為歷史記錄；本次未重做歷史層檢、切片或實體列印。
+
+
 ## 模型預覽
 
 
