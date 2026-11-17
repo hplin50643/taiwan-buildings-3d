@@ -1,0 +1,765 @@
+{
+  "status": "PASS_FINITE_SAME_SLAB_MATERIAL_INFERENCE",
+  "repository_path": "長榮大學/歸仁校本部/buildings/cjcu-gate-cross-tower",
+  "read_only": true,
+  "modified_model": false,
+  "published": false,
+  "manifest_dedup": {
+    "count": 76,
+    "matches": []
+  },
+  "file_roles": {
+    "README.md": {
+      "git_blob_sha": "9b91c58ed764e867a9f87693d13e101c6bb1bb63",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "SHA256SUMS.txt": {
+      "git_blob_sha": "086284086fd2ab9edcf7f9cca485eee99209e7cd",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "appearance/LICENSE-NOTICE.md": {
+      "git_blob_sha": "8e626d29c2fcf5dce0dd4382cfc03c247d3cc451",
+      "role": "current_grounded_color"
+    },
+    "appearance/README.md": {
+      "git_blob_sha": "c43cce53e585df17da4d2fdf37a739bd50c67a76",
+      "role": "current_grounded_color"
+    },
+    "appearance/SHA256SUMS": {
+      "git_blob_sha": "64adae4bd922e896d6032c171bf653db72a3951c",
+      "role": "current_grounded_color"
+    },
+    "appearance/SOURCES.md": {
+      "git_blob_sha": "69f74624febfb25bd67e4b1c4666d87d8676b8c0",
+      "role": "current_grounded_color"
+    },
+    "appearance/cjcu-gate-cross-tower-appearance.3mf": {
+      "git_blob_sha": "3ae040fdd1482836275f942e9cec3de773a3a375",
+      "role": "current_grounded_color"
+    },
+    "appearance/face-materials.json": {
+      "git_blob_sha": "c5587d94af49bf73e2074d10a293b3b9f4500dc5",
+      "role": "current_grounded_color"
+    },
+    "appearance/palette.json": {
+      "git_blob_sha": "6ac8b76746a36efedac80e9a026781848d9d00db",
+      "role": "current_grounded_color"
+    },
+    "appearance/previews/elevation.png": {
+      "git_blob_sha": "efc9ff911424bdf646ce412177600f48f4ef1a06",
+      "role": "current_grounded_color"
+    },
+    "appearance/previews/front.png": {
+      "git_blob_sha": "90b46df0a4c5e3faa18dfa004b00cd609469dc11",
+      "role": "current_grounded_color"
+    },
+    "appearance/previews/rear.png": {
+      "git_blob_sha": "3df124d31397bd4f648f76e9efb5725aef3931c9",
+      "role": "current_grounded_color"
+    },
+    "appearance/previews/side.png": {
+      "git_blob_sha": "05217aaa1693c376424986b4c27a72fc31e83715",
+      "role": "current_grounded_color"
+    },
+    "appearance/previews/top.png": {
+      "git_blob_sha": "d63441842d65dd6f58db6fbe1e3f5ab86aa66aa9",
+      "role": "current_grounded_color"
+    },
+    "appearance/qa/exchange-validation.json": {
+      "git_blob_sha": "baf95dfd45ca94f0e66c8fe0746f6ff23e5c8138",
+      "role": "current_grounded_color"
+    },
+    "appearance/qa/independent-review.json": {
+      "git_blob_sha": "36d77449893f16f73fd818cfcd78fb297a10450f",
+      "role": "current_grounded_color"
+    },
+    "appearance/qa/material-boundaries.json": {
+      "git_blob_sha": "070041c43fde82a564497042df88e73c4436120b",
+      "role": "current_grounded_color"
+    },
+    "appearance/qa/original-native-audit.json": {
+      "git_blob_sha": "4b84930d3dff4f9944abbf69953249b29220cf8f",
+      "role": "current_grounded_color"
+    },
+    "appearance/qa/rebuild-archive-validation.json": {
+      "git_blob_sha": "0901666ea72238ecfa373c7ee078792a2d2c993f",
+      "role": "current_grounded_color"
+    },
+    "appearance/qa/rebuild-validation.json": {
+      "git_blob_sha": "73e94987dd3e80447027519c4db11537440cd32b",
+      "role": "current_grounded_color"
+    },
+    "appearance/qa/render-manifest.json": {
+      "git_blob_sha": "a8b813209ac96357359a110fffd27a045d50dcfb",
+      "role": "current_grounded_color"
+    },
+    "appearance/qa/reviewer-independent-checks.json": {
+      "git_blob_sha": "f96521f2386a00d321d6bfe6a232d0bb88dc60ee",
+      "role": "current_grounded_color"
+    },
+    "appearance/qa/scene-validation.json": {
+      "git_blob_sha": "4be5fc148fe8c3f6caf532546bb02873df64b59b",
+      "role": "current_grounded_color"
+    },
+    "appearance/rebuild-source.zip": {
+      "git_blob_sha": "b7ee8a59c243f2c86b0bd832f4a2ebcb60adcc15",
+      "role": "current_grounded_color"
+    },
+    "appearance/scene.blend": {
+      "git_blob_sha": "3c8af611134123233239a0f270d761d0d8ab4a89",
+      "role": "current_grounded_color"
+    },
+    "appearance/source-dates.json": {
+      "git_blob_sha": "b7b2d602ef5e924d74757f43cd149bff916f3167",
+      "role": "current_grounded_color"
+    },
+    "appearance/source/build_appearance.py": {
+      "git_blob_sha": "fee8d45d588b974d40f9ff1b97fcd2e3d0aa34f7",
+      "role": "current_grounded_color"
+    },
+    "appearance/source/render_appearance.py": {
+      "git_blob_sha": "ec4922dee4b9daa263680b8d1c1c6feb6ef9106b",
+      "role": "current_grounded_color"
+    },
+    "appearance/source/requirements.txt": {
+      "git_blob_sha": "ef7433147352c45253a1f6fca279231089392e5d",
+      "role": "current_grounded_color"
+    },
+    "appearance/source/verify_exchange.py": {
+      "git_blob_sha": "9ce0a83dbf57c8599e5578d63a0befa0e8b8c05f",
+      "role": "current_grounded_color"
+    },
+    "appearance/source/verify_material_boundaries.py": {
+      "git_blob_sha": "08fc1174cfe0dceeb2506599e40ff11ff7becfe7",
+      "role": "current_grounded_color"
+    },
+    "appearance/source/verify_scene.py": {
+      "git_blob_sha": "db71d5da845269b6f88638e3adc1d5ee5f5debe4",
+      "role": "current_grounded_color"
+    },
+    "build_model.py": {
+      "git_blob_sha": "107f7aa31af0ebd4a16d22e94d8c8dbcdfd14543",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "check_all.sh": {
+      "git_blob_sha": "c5d361d2a3b05510b599a87014c43378d024edd6",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "check_contour_validity.py": {
+      "git_blob_sha": "b3216001e81c116cffe0bddefddf2361dc1114f9",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "check_layers.py": {
+      "git_blob_sha": "c56434a5a1bb0ed93f7b1b42b16204afc69d968c",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "check_thin_features.py": {
+      "git_blob_sha": "6cbdcfddd6c800d7fd7a76560af3b33e0d402fe7",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "contour-validity-check.json": {
+      "git_blob_sha": "946c0144a3263fcd6d2d39d4354fc3bbe9cab251",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "layer-check.json": {
+      "git_blob_sha": "fa1c04e9f39ed472847003cf176139fbed132e1d",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "model.stl": {
+      "git_blob_sha": "93c5a47808bc8f85e75bb79c9ce6bb67cfa4a49a",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "previews/elevation.png": {
+      "git_blob_sha": "3f6bba71d36f482383c3837929eb2b557c5a6a3f",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "previews/front-rear.png": {
+      "git_blob_sha": "da412e276d9b19edbe32cf39efa87b47ad44e287",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "previews/front.png": {
+      "git_blob_sha": "0729d3ee41b92058033d18b96178b5e213fe392c",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "previews/rear.png": {
+      "git_blob_sha": "266413f6635be1f63a37e5ee9b7732fb91ff70b5",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "previews/top.png": {
+      "git_blob_sha": "7bef88ff35459cd54904226e729cfcc28168af8e",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "render_preview.py": {
+      "git_blob_sha": "107b93ea69d91239e3f67bfa13262089befc33b8",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "requirements.txt": {
+      "git_blob_sha": "21ac9b9cf3549fad7349e37395b54e5d79086990",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "scene.blend": {
+      "git_blob_sha": "1fa8d27f14d8eaf4489ab0adc0998a50fd6d4772",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "sources.json": {
+      "git_blob_sha": "d96fe60587a26033db25daf3e48ee37bc72d4895",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "thin-feature-check.json": {
+      "git_blob_sha": "7afa015e6a066edeab35b1aff40acf50d59717a4",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "validate_model.py": {
+      "git_blob_sha": "115abff38097e0449f9ccdbd1482a441c02c0a88",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    },
+    "validation.json": {
+      "git_blob_sha": "fa73a6d136c277eb46328b80097bbed144829beb",
+      "role": "original_geometry_neutral_preview_or_original_QA"
+    }
+  },
+  "baseline": {
+    "source_stl_sha256": "8dcd04afd0af8d6a223b5814b03e20d1a77e7662e52ff0ad89d69dd108a0e8bf",
+    "triangles": 500,
+    "vertices": 216,
+    "counts": [
+      374,
+      126
+    ],
+    "old_colored_face_ids": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      114,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      143,
+      144,
+      145,
+      146,
+      147,
+      149,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      282,
+      283,
+      284,
+      285,
+      286,
+      295,
+      296,
+      297,
+      298,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367
+    ],
+    "colors_and_reasons_match_original_classifier": true,
+    "actual_downloaded_3mf_all_coordinates_face_order_and_colors_exact": true,
+    "native_root": "original QA reports 500-face Printable_CJCU single Warm stone preview material. Root has no current color mesh or second colored 3MF. Preserve root original bytes and original sources/QA.",
+    "authoritative_color": "appearance/cjcu-gate-cross-tower-appearance.3mf and face-materials.json; unlike gymnasium, there is no conflicting historic roof-color variant."
+  },
+  "candidate": {
+    "name": "Opposite broad exterior faces of the same two existing tower slabs",
+    "target_material": 1,
+    "srgb": "#AD7868",
+    "from_material": 0,
+    "faces": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      267,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      294,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      319,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      353,
+      354,
+      355,
+      356,
+      357,
+      359,
+      360
+    ],
+    "count": 126,
+    "groups": [
+      {
+        "name": "left_reverse",
+        "axis": 0,
+        "value": -8.8,
+        "normal_sign": -1,
+        "y_bounds": [
+          -12,
+          12
+        ],
+        "z_bounds": [
+          5,
+          150
+        ],
+        "faces": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142
+        ],
+        "actual_area_mm2": 3383.440010998249,
+        "analytic_area_mm2": 3383.44,
+        "inner_tie_contacts_excluded": false
+      },
+      {
+        "name": "right_reverse",
+        "axis": 0,
+        "value": 5.2,
+        "normal_sign": -1,
+        "y_bounds": [
+          -12,
+          12
+        ],
+        "z_bounds": [
+          5,
+          150
+        ],
+        "faces": [
+          236,
+          237,
+          238,
+          239,
+          240,
+          241,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          267,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          280,
+          281,
+          287,
+          288,
+          289,
+          290,
+          291,
+          292,
+          294,
+          299,
+          300,
+          301,
+          302,
+          303,
+          304,
+          311,
+          312,
+          313,
+          314,
+          315,
+          316,
+          317,
+          319,
+          330,
+          331,
+          332,
+          333,
+          334,
+          335,
+          336,
+          337,
+          338,
+          339,
+          340,
+          341,
+          353,
+          354,
+          355,
+          356,
+          357,
+          359,
+          360
+        ],
+        "actual_area_mm2": 3361.540015194416,
+        "analytic_area_mm2": 3361.54,
+        "inner_tie_contacts_excluded": true
+      }
+    ],
+    "actual_area_mm2": 6744.980026192665,
+    "analytic_area_mm2": 6744.98,
+    "expected_counts": [
+      248,
+      252
+    ],
+    "checks": "All 3 original vertices lie on finite x plane, y[-12,12], z[5,150]; normal points -X. Raw STL retained. Analytic rectangle 24*145 subtract union of generator cross and seven small apertures, plus lower/high tie contact rectangles for inner right slab. Rectangle union independently integrated on exact rectangle boundary grid. Each domain agrees within .0001 mm2.",
+    "small_aperture_y_z_w_h": [
+      [
+        -5,
+        17,
+        1.6,
+        2.1
+      ],
+      [
+        4,
+        32,
+        2,
+        2.6
+      ],
+      [
+        -4,
+        48,
+        1.7,
+        1.9
+      ],
+      [
+        3,
+        67,
+        2,
+        2.6
+      ],
+      [
+        -3,
+        82,
+        1.7,
+        2.2
+      ],
+      [
+        5,
+        91,
+        1.8,
+        2.1
+      ],
+      [
+        1,
+        58,
+        1.5,
+        2
+      ]
+    ],
+    "cross_rectangles_yz": [
+      [
+        -0.95,
+        106,
+        0.95,
+        133
+      ],
+      [
+        -4.5,
+        123,
+        4.5,
+        125.5
+      ]
+    ],
+    "inner_tie_rectangles_yz": [
+      [
+        -3.5,
+        57,
+        3.5,
+        59.8
+      ],
+      [
+        -7,
+        123,
+        -5,
+        125.5
+      ]
+    ]
+  },
+  "sources": {
+    "official_page": "https://dweb.cjcu.edu.tw/general/article/7920",
+    "official_aerial": "https://dweb.cjcu.edu.tw/ShepherdFiles/B0500/Album/Original/20240408114143807.jpg",
+    "page_read": true,
+    "image_personally_viewed": true,
+    "observation": "Official text specifically identifies the clock/cross tower as light brick-red, separately from round Chang Jung Hall. Image shows same two slab bodies with broad red-brown faces, narrow light/gray edges and gray tops; broad opposite faces not directly documented by this view.",
+    "inference": "Apply same light brick-red family only to the opposite broad face of each same continuous slab. This is explicit same-component surface-material continuity, not new backside photo evidence, not whole tower painting. Narrow edge stripes, top caps, aperture wall reveals and ties remain unconfirmed.",
+    "capture_date": "Unknown; 2024-04-24 page date and 20240408 filename do not establish capture date; no 2026 condition claim.",
+    "private_files": {
+      "official-aerial.jpg": "595b6164a304f80dc55dca064c418591e3e978e52109b54affb4111459875267",
+      "official-page.html": "8276513746ec31a30c982f729d8f5fb69a0f9d5a4219d2cb426b06955759906e"
+    },
+    "private_reference_not_for_public_package": true
+  },
+  "preserve": "All original 500 triangles, 126 previously red faces with exact reasons, palette entries, all nonselected neutral faces and reasons. No splitting/retriangulation, no window filling, no color merge with another model.",
+  "exclusions": [
+    "Narrow y-facing slab sides",
+    "Gray top caps",
+    "Cross and small aperture reveals",
+    "Both transverse ties and contact cutouts",
+    "Plinth and base",
+    "Surface weathering, brick joints and missing small details not generated"
+  ]
+}
