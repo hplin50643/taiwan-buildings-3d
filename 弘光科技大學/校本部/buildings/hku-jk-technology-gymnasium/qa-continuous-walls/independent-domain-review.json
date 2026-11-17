@@ -1,0 +1,213 @@
+{
+  "status": "PASS_FINITE_RIGHT_LOW_CANOPY_ENDS_ONLY",
+  "slug": "hku-jk-technology-gymnasium",
+  "count_delta": 0,
+  "original_faces": 4116,
+  "original_vertices": 2024,
+  "source_color_mesh_sha256": "25618248ee99702397849c2805305982652a9d423a4d3ad697a61cf34708b065",
+  "source_palette_sha256": "1347d3a0ee103e53369548d617ad86fa04aaf464b69450ab69d3ab54fa8ade71",
+  "source_stl_sha256": "0ebcc5cec5e4c51b7138efdabf1feaf4bea0360b97bd7e5c34fdeb1e1cc1face",
+  "groups": [
+    {
+      "axis": 0,
+      "value": 2,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          2,
+          -21,
+          13
+        ],
+        [
+          2.0,
+          -13.5,
+          14.9
+        ]
+      ],
+      "ids": [
+        3275,
+        3276
+      ],
+      "complete_coplanar_component": [
+        3275,
+        3276
+      ],
+      "rectangle_corner_completeness": true,
+      "corners": [
+        [
+          2.0,
+          -21.0,
+          13.0
+        ],
+        [
+          2.0,
+          -21.0,
+          14.899999618530273
+        ],
+        [
+          2.0,
+          -13.5,
+          13.0
+        ],
+        [
+          2.0,
+          -13.5,
+          14.899999618530273
+        ]
+      ],
+      "analytic_area_mm2": 14.25,
+      "mesh_area_mm2": 14.24999713897705,
+      "prior_gray_full_front_edge": [
+        {
+          "vertices": [
+            [
+              2.0,
+              -21.0,
+              13.0
+            ],
+            [
+              2.0,
+              -21.0,
+              14.899999618530273
+            ]
+          ],
+          "faces": [
+            3274,
+            3275
+          ],
+          "length_mm": 1.8999996185302734
+        }
+      ]
+    },
+    {
+      "axis": 0,
+      "value": 68,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          68,
+          -21,
+          13
+        ],
+        [
+          68.0,
+          -15.0,
+          14.9
+        ]
+      ],
+      "ids": [
+        3284,
+        3285
+      ],
+      "complete_coplanar_component": [
+        3284,
+        3285
+      ],
+      "rectangle_corner_completeness": true,
+      "corners": [
+        [
+          68.0,
+          -21.0,
+          13.0
+        ],
+        [
+          68.0,
+          -21.0,
+          14.899999618530273
+        ],
+        [
+          68.0,
+          -15.0,
+          13.0
+        ],
+        [
+          68.0,
+          -15.0,
+          14.899999618530273
+        ]
+      ],
+      "analytic_area_mm2": 11.399999999999999,
+      "mesh_area_mm2": 11.39999771118164,
+      "prior_gray_full_front_edge": [
+        {
+          "vertices": [
+            [
+              68.0,
+              -21.0,
+              13.0
+            ],
+            [
+              68.0,
+              -21.0,
+              14.899999618530273
+            ]
+          ],
+          "faces": [
+            3279,
+            3284
+          ],
+          "length_mm": 1.8999996185302734
+        }
+      ]
+    }
+  ],
+  "face_ids": [
+    3275,
+    3276,
+    3284,
+    3285
+  ],
+  "changed_faces": 4,
+  "existing_colored_faces_preserved": 2,
+  "unchanged_faces": 4112,
+  "counts_before": [
+    2,
+    4114
+  ],
+  "counts_after": [
+    6,
+    4110
+  ],
+  "all_coplanar_domains_single_material": 1155,
+  "analytic_area_formula": "(7.5+6)*1.9=25.65",
+  "analytic_area_mm2": 25.65,
+  "mesh_area_mm2": 25.64999485015869,
+  "geometry_STL_triangle_order_exact": true,
+  "all_vertices_finite_no_centroid_selection": true,
+  "palette_unchanged": true,
+  "source": {
+    "photo_url": "https://www.markchoo.com.tw/book/book100/1131019065-b.jpg",
+    "photo_page": "https://www.markchoo.com.tw/mark/3868/photo/65",
+    "photo_sha256": "2a5bc3ff78d8478bc0f5917a0ab96fd341ca667870e52ce57cab65bd71482c4d",
+    "matches_original_register": true,
+    "personally_viewed": true,
+    "official_identity_page": "https://www.hk.edu.tw/學校環境介紹/",
+    "source_type": "photo65是第三方現地攝影來源，不稱校方實拍；校方名錄只核JK同群身份，渲染不當材色依據。",
+    "visual_evidence": "photo65完整露出右低柱廊上方窄灰前緣，與更上方淺色板／藍窗區有界；柱廊右側接高端牆，左端接中間廳。",
+    "inference": "兩側端均只延續同一窄簷代理的既有灰前緣；照片沒有逐面證實原7.5/6mm完整側深，未見部分明示同簷材料延續推論，不延整柱廊牆或藍灰上窗帶。",
+    "date": "photo65拍攝時刻未獨立證實；photo77頁記2024-10-19 10:49:36無時區及相機鐘校證，不轉嫁為65精確拍攝時刻，不稱2026現況。",
+    "rights": "原照片私人研究，不公開或貼圖；未推定商用許可。",
+    "official_identity_crosscheck": "本輪讀取校方頁，J智慧科技大樓與K體育館皆引用同一JK.jpg與同一Sketchfab連結pvG8K；僅作同群身份核對。",
+    "official_page_sha256": "f856dc0510b2409a952d36200855cc6b8727826b904f2a8b39d58acc6e4100a2"
+  },
+  "limits": [
+    "右端 x68 於 y−15 與原高端牆相接，必須止於−15，不能延伸至原cap名義後緣−13或主翼−13.5。",
+    "左端 x2 止於主翼前牆 y−13.5；底面、頂面、後緣、柱面與門洞玻璃均不染。",
+    "原簡化簷厚、側深、雙翼尺寸及窗孔不是測量成果；不修幾何、不補接觸缺面。",
+    "左低簷不同構件、中央廳、主牆格網、招牌及所有未知背側不變；UNVERIFIED中性不是實際灰材。",
+    "原0438因帳篷遮擋HOLD已由photo65及v2解除，該歷史只准前緣；本輪重新明示側端推論而不改寫歷史GO。"
+  ],
+  "duplicate_check": {
+    "no_existing_JK_delivery_manifest": true,
+    "hits_only_other_A_report_unreviewed_list": true,
+    "old_source_HOLD_resolved_v2_not_rerun": true
+  },
+  "remaining_unreviewed": [
+    "hku-d-food-science",
+    "hku-gate-guardhouse",
+    "hku-n-research",
+    "hku-p-comprehensive-teaching",
+    "hku-q-student-dormitory"
+  ],
+  "research_only_no_delivery": true
+}

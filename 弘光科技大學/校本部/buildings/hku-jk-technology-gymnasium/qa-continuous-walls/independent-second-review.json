@@ -1,0 +1,98 @@
+{
+  "status": "PASS_INDEPENDENT_FINITE_RIGHT_LOW_CANOPY_ENDS",
+  "read_only": true,
+  "delivery_files_modified": false,
+  "triangles": 4116,
+  "vertices": 2024,
+  "face_ids": [
+    3275,
+    3276,
+    3284,
+    3285
+  ],
+  "original2gray_preserved": true,
+  "other4112faces_unchanged": true,
+  "groups": [
+    {
+      "ids": [
+        3275,
+        3276
+      ],
+      "complete_coplanar_rectangle": true,
+      "analytic_area_mm2": 14.25,
+      "mesh_area_mm2": 14.24999713897705,
+      "actual_contact_end_y": -13.5,
+      "full_front_edge_links": [
+        {
+          "vertices": [
+            [
+              2.0,
+              -21.0,
+              13.0
+            ],
+            [
+              2.0,
+              -21.0,
+              14.899999618530273
+            ]
+          ],
+          "faces": [
+            3274,
+            3275
+          ]
+        }
+      ]
+    },
+    {
+      "ids": [
+        3284,
+        3285
+      ],
+      "complete_coplanar_rectangle": true,
+      "analytic_area_mm2": 11.399999999999999,
+      "mesh_area_mm2": 11.39999771118164,
+      "actual_contact_end_y": -15,
+      "full_front_edge_links": [
+        {
+          "vertices": [
+            [
+              68.0,
+              -21.0,
+              13.0
+            ],
+            [
+              68.0,
+              -21.0,
+              14.899999618530273
+            ]
+          ],
+          "faces": [
+            3279,
+            3284
+          ]
+        }
+      ]
+    }
+  ],
+  "all1155coplanar_domains_uniform": true,
+  "analytic_area_mm2": 25.65,
+  "mesh_area_mm2": 25.64999485015869,
+  "current_delivery_checks": {
+    "NPZ_geometry_STL_palette_exact": true,
+    "new_materials_match": true,
+    "still_baseline_materials": false,
+    "3MF_geometry_exact": true,
+    "3MF_new_materials_match": true,
+    "3MF_still_baseline_materials": false
+  },
+  "history_git_blob_verified": [
+    "COLOR-SOURCE-REGISTER.json",
+    "INDEPENDENT-COLOR-VISUAL-QA.json",
+    "SHA256SUMS",
+    "colorize_model.py",
+    "sources.json"
+  ],
+  "source_scope": "No new photo viewing in secondreview. Photo65is thirdparty,not officialphoto. Photo77oldHOLD/v2 retained; no attribution of77time to65. Whole7.5/6mm depths samecanopy inference,not allside photographproof.",
+  "exclusions": "Cap top/bottom/back,columns,glass andleftothercanopy unchanged. x68endsat y-15,not nominal y-13 or wing-13.5. x2endsaty-13.5.",
+  "render_scene_not_reviewed": true
+}
