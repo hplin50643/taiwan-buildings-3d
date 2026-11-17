@@ -1,3 +1,11 @@
+## 本次多面牆補色（同構件推估）
+
+本版將上層三個展廳盒體的 **118 個原本中性面** 補色：左金屬盒側背 10 面、右金屬盒側背 96 面、中央混凝土盒側背 12 面。左右盒沿用原銀灰金屬，中央沿用原暖灰混凝土。**新增範圍是同構件材質連續性推估，不是新增側背照片實證。** 僅選原有完整垂直三角面，未切面，未改幾何；原彩面、屋頂、底面、下層牆、玻璃、窗框與磚牆不變。未提供實體列印驗證。
+
+現行版本稽核以 `qa-continuous-walls/` 為準；原 `qa/`、`qa-side-continuation/` 及下方舊版說明僅為歷史紀錄，不代表本版輸出雜湊。
+
+現行重建：`python appearance/source/build_continuous_walls.py`；驗證：`python appearance/source/verify_continuous_exchange.py`；四原視角彩圖及可編輯場景：`blender -b --python appearance/source/render_continuous_walls.py`；場景驗證：`blender -b --python appearance/source/verify_continuous_scene.py`。舊 `build_appearance.py` 僅作原始分類基底，直接執行會回到舊配色。
+
 # 國立清華大學｜宏亮美術館
 
 ## 模型預覽
