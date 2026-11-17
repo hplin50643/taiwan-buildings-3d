@@ -1,3 +1,11 @@
+## 本次低磚盒兩端補色（同構件推估）
+
+本版只新增右側下部凸磚盒的兩個完整垂直端面，共23個原中性三角（前端12面、後端11面）：y=-10及y=26，x=50..54、z=11..32，沿用外側既有橘紅磚代理 `#AD7559`。**這是同構件材料延續推估，沒有新增端面照片證據，不稱2026現況或精測材質。**
+
+原5,370面／2,659頂點、座標與面序完整保留，其餘5,347面材質不變；所有原彩面含原24面屋頂遮陽灰色保持。主牆及上橫框跨未分界的混材，不延伸整牆；入口深背、窗凹背、陽台、屋頂與基座不動。不切面、不加分界，未做實體試印；原235層薄篩警戒與細窗格製造限制照舊。
+
+本版稽核 `qa-continuous-walls/`；舊 `qa/`、`qa-shade-continuation/` 及下方說明為歷史紀錄，中性範圍只改上述23面。重建 `python appearance/source/build_continuous_walls.py`；交換 `python appearance/source/verify_continuous_exchange.py`；四原視角／場景 `blender -b --python appearance/source/render_continuous_walls.py`；回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。舊build_appearance.py不能替代新命令。ZIP無第三方照片。
+
 # 清華台達館：六材質外觀版
 
 沿用原 **5,370 三角面／2,659 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
