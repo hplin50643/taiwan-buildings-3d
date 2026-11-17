@@ -1,3 +1,11 @@
+## 本次歷史簷口側背補色（同構件推估）
+
+維持 **百齡堂前棟 2025 整備前歷史外觀** 身分，不是2026現況。本版新增8個原中性完整三角面：右側／後側 z=42..47 白簷面共4面，延用既有 `#D4D5CD`；上方 z=47..47.9 已分界的黑灰頂緣共4面，延用既有 `#383D3B`。原右側 x=46 與背面 y=57.5 的上下材質邊界各自有完整原面，不跨界、不新增分界。
+
+**這是同構件材質延續推估，沒有新右側／後側照片證據。** 原4,066面／1,751頂點、座標及面序保留；其餘4,058面材質不變。牆面、玻璃、柱、屋頂上表面、底面和平台不擴色，原簷面偏移及簡化比例不改，不宣稱現況還原或實體試印。
+
+新版稽核在 `qa-continuous-walls/`，原 `qa/` 與下方敘述是歷史紀錄；中性範圍僅更新上述8面。重建 `python appearance/source/build_continuous_walls.py`；交換 `python appearance/source/verify_continuous_exchange.py`；四原視角及場景 `blender -b --python appearance/source/render_continuous_walls.py`；回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。舊build_appearance.py不能替代新命令。ZIP無第三方照片。
+
 # 清華百齡堂前棟（2025 整備前歷史外觀）：六材質外觀版
 
 沿用原 **4,066 三角面／1,751 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
