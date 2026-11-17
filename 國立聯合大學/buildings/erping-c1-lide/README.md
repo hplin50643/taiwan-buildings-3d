@@ -7,6 +7,18 @@
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
+## 本次原加厚金屬棚外緣同灰延伸（推估）
+
+將既有屋頂棚四個最外垂直輪廓面（包含原淺凸縫端頭）共 268 個原中性三角，延續既有棚頂灰金屬材 7。原 18,685 著色面及所有未變更面理由完整保留，其餘 20,978 面不變。原 21,246 面／10,419 點、八色表、STL bytes、座標及面序不變。現中性 2,293、陶紅 878、象牙 2,573、銀框設備 11,306、灰藍窗 846、灰粉門楣 138、紅褐階 48、金屬棚 3,164。
+
+選取僅原 x=−68、+68、y=−41、+47 mm 的四個朝外有限垂直平面，z=117…119.9 mm；分別 40／100／76／52 面，解析面積 162.34／223.12／344.68／238.12 mm²。所有選中三角完整、唯一，不切面；交角及原 boolean 截斷保留，無任何推估凹口 x=−26 或 y=23 共面三角。屋頂水平面、內部細縫、牆及後凹口都不變，不把相連長牆染成金屬。
+
+本輪親看官方未定年校史照，屋頂可見灰金屬遮棚，不是光電板證據。**真棚為薄金屬與開放支撐，原模型為便於列印採厚實底與加厚網格**；本次只對這個原有簡化量體外緣採同金屬族代理色，並非實景棚邊厚度、構造層或金屬材質逐面量測，也不修復模型。校史照未定年，既有近照 EXIF 日期時區亦未獨立核實，非 2026 現況；未實體試印。第三方照片只私人研究，不入公開包。混合紅白長牆維持保守中性，不藉三角斜切補色。
+
+新版 QA 在 `appearance/qa-continuous-walls/`；歷史 QA 保留，新增 `PUBLIC-MODEL-SHA256SUMS`。重建外觀 `python appearance/source/build_continuous_walls.py`；交換驗證 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景驗證 `blender -b --python appearance/source/verify_continuous_scene.py`。ZIP 含原 STL、原 `generate_model.py` 與本次外觀程式／有限域，不含照片；獨立重建驗證是從原 STL 重建外觀，不宣稱重算歷史製造驗證。
+
+## 前版說明與保留限制
+
 ## 8 材質外觀版（2026-10-20）
 
 
