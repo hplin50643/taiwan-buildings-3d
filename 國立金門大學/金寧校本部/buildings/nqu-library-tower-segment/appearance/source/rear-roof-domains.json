@@ -1,0 +1,183 @@
+{
+  "status": "PASS_bounded_central_rear_tile_slope",
+  "repo_path": "國立金門大學/金寧校本部/buildings/nqu-library-tower-segment",
+  "source_stl_sha256": "5ad3e706ccff2624837ef436f6670cde090fa49231c5ba8a3e409a3a03ae5ee0",
+  "triangles": 9032,
+  "vertices": 4502,
+  "baseline_material_counts": [
+    3257,
+    641,
+    2970,
+    2114,
+    22,
+    10,
+    18
+  ],
+  "baseline_colored_faces": 5775,
+  "prior_classifier_color_differences": [],
+  "prior_classifier_reason_differences": [],
+  "groups": [
+    {
+      "y0": 2.5,
+      "y1": 4,
+      "z0": 147.5,
+      "z1": 144.5,
+      "x_range": [
+        -15.5,
+        15.5
+      ],
+      "ids": [
+        6162,
+        7304
+      ],
+      "area": 103.97716095374022,
+      "analytic_area": 103.97716095374022
+    },
+    {
+      "y0": 4,
+      "y1": 7,
+      "z0": 144.5,
+      "z1": 140.5,
+      "x_range": [
+        -15.5,
+        15.5
+      ],
+      "ids": [
+        6163,
+        7306
+      ],
+      "area": 155.0,
+      "analytic_area": 155.0
+    },
+    {
+      "y0": 7,
+      "y1": 10,
+      "z0": 140.5,
+      "z1": 137,
+      "x_range": [
+        -15.5,
+        15.5
+      ],
+      "ids": [
+        6164,
+        7305
+      ],
+      "area": 142.90293908803974,
+      "analytic_area": 142.90293908803974
+    },
+    {
+      "y0": 10,
+      "y1": 14,
+      "z0": 137,
+      "z1": 134.5,
+      "x_range": [
+        -15.5,
+        15.5
+      ],
+      "ids": [
+        6165,
+        7307
+      ],
+      "area": 146.22670754687735,
+      "analytic_area": 146.22670754687735
+    },
+    {
+      "y0": 14,
+      "y1": 18,
+      "z0": 134.5,
+      "z1": 133,
+      "x_range": [
+        -15.5,
+        15.5
+      ],
+      "ids": [
+        6166,
+        7308
+      ],
+      "area": 132.43205805242172,
+      "analytic_area": 132.43205805242172
+    },
+    {
+      "y0": 18,
+      "y1": 22,
+      "z0": 133,
+      "z1": 132.5,
+      "x_range": [
+        -15.5,
+        15.5
+      ],
+      "ids": [
+        6167,
+        7309
+      ],
+      "area": 124.96499509862753,
+      "analytic_area": 124.96499509862751
+    },
+    {
+      "y0": 22,
+      "y1": 26,
+      "z0": 132.5,
+      "z1": 132.9,
+      "x_range": [
+        -15.5,
+        15.5
+      ],
+      "ids": [
+        6169,
+        7310
+      ],
+      "area": 124.61843887504364,
+      "analytic_area": 124.61845770189906
+    },
+    {
+      "y0": 26,
+      "y1": 27,
+      "z0": 132.9,
+      "z1": 134.5,
+      "x_range": [
+        -15.5,
+        15.5
+      ],
+      "ids": [
+        6170,
+        7312
+      ],
+      "area": 58.49084346773476,
+      "analytic_area": 58.490683018750794
+    },
+    {
+      "y0": 27,
+      "y1": 29,
+      "z0": 134.5,
+      "z1": 134.5,
+      "x_range": [
+        -15.5,
+        15.5
+      ],
+      "ids": [
+        6171,
+        7313
+      ],
+      "area": 62.0,
+      "analytic_area": 62.0
+    }
+  ],
+  "candidate_faces": 18,
+  "target_material": 3,
+  "target_palette": "charcoal_tile_roof",
+  "selection": "Ninefiniteoriginal roofprofile stripplanes acrossx[-15.5,15.5],yrear2.5..29;each2triangles4vertices;all3verticesonfiniteplanewithintolerance. Upward normal required. No centroid-only selection.",
+  "analytic_area_method": "31*sqrt((y1-y0)^2+(z1-z0)^2) perstrip,sourceprofile minus2.5roofheight;each float32STLareaerror<.0002mm2. Totalarea=1050.613143082485",
+  "boundary_proof": "Centralroof is between innerplanes of two raisedgable sheetsx[-18.5,-15.5] and[15.5,18.5]; selectedfaces cannot overlap. Ridgeplateauy-2.5..2.5excluded; no triangle crossesy2.5or29. All18previouslyneutral andunique. Outerhiproof xoutside+-18.5 excluded.",
+  "appearance": "JJParchitect projectphoto personallyviewed:fronttilecharcoal andraisedgablepalestone clearlydifferent. Extendexistingtile3 onlyacrosssamecentralroofbackprofileasbounded same-rooffamily inference;not independentbackphotoevidence.",
+  "exclusions": "Existing2114charcoalfaces,palegable panels,front/side stone eave edges,sidehipslopes,ridgeplateau,underside,balconies,head,allshaftfaces andwindowsunchanged. 9014otherfacespreserved.",
+  "photo": {
+    "url": "https://www.jjpan.com/static/file/9f8228540ce1c59e8aa8924b5fbb84b99ba1132d.webp",
+    "sha256": "115e787d86e0a32511873a7719c789b22f3cd623366b2af9d852254823d7c83e",
+    "matches_original_source_sha256": true,
+    "personally_viewed": true,
+    "capture_date": "unconfirmed"
+  },
+  "limits": "Originalpiecewisecurve anddensebilinearhips are approximateprofile,not surveyorconstructiondrawing. Newcolor changesno shape,tilepattern,thinrededge or neighboringlibrary. No2026currentcondition,measuredcolor,orphysicalprintclaim.",
+  "photos_public": false,
+  "deduplication": "Allcurrentpublish-files scanned;nqu-library-tower-segment notpresent. No othercampus screenedthispass."
+}

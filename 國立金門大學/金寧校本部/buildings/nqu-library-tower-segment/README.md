@@ -5,7 +5,21 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面保持中性<br>![背面](appearance/previews/rear.png) |  |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 後坡限域延色，其餘背牆中性<br>![背面](appearance/previews/rear.png) |  |
+
+## 本次中央後瓦坡同材質延續
+
+僅將兩片已淡色曲線山牆間的中央後瓦坡 9 個完整原曲面分段矩形／18 個原中性三角延用既有炭灰瓦代理色 3。原 5,775 個已色面、全部理由與 7 槽色盤材料不變；其餘 9,014 面不變。原 9,032 面／4,502 點、STL bytes、座標、面序皆不變。
+
+選區 x=−15.5…15.5 mm、後側 y=2.5…29 mm，以原屋頂 profile 高度減 2.5 的 9 段有限坡面逐段核對全部三頂點與向上法向。每段兩三角完整四頂點，面積合計 1,050.61314308 mm²；逐段與解析 31×hypot(Δy,Δz) 差小於 0.0002 mm²。兩山牆內界、屋脊 y=−2.5…2.5、側 hip、簷邊、底面、塔身混牆與窗全部排除；不切面、不改曲線、厚度或新增瓦紋。
+
+本輪親看 JJP 建築師官方作品原照，前瓦炭灰與淡色曲線山牆可辨；後中央坡明示為同一屋頂瓦族延續推論，沒有獨立背面照片確證。原分段曲線及其他曲坡皆為原近似造型，非測繪或施工圖。攝影日期未確認；不是 2026 現況、量測色值或實體試印。照片留私人研究，不入公開包，亦未建立旁邊圖書館新模型。
+
+新版 QA 在 `appearance/qa-continuous-walls/`，歷史 QA 與 checksum 留存；新校驗表用 `appearance/SHA256SUMS`、根 `PUBLIC-MODEL-SHA256SUMS`。歷史文件的後坡中性屬原版範圍，本節記錄新增 18 面。新版重建 `python appearance/source/build_continuous_walls.py`，交換驗證 `python appearance/source/verify_continuous_exchange.py`，Blender 背景執行 `render_continuous_walls.py` 與 `verify_continuous_scene.py`。ZIP 含原 STL、建模腳本與有限原坡域，不含照片。原製造限制完整保留。
+
+場景僅同步更新 limitations 文字，將原後坡中性範圍改記為這 18 個中央後瓦坡原面的同瓦族延伸推論；其餘原屬性、材質定義與幾何不變。
+
+## 前版說明與保留限制
 
 本修版補入2024-09-23新側面實拍證據；本件僅為圖資大樓的**銃樓局部外觀近似**，不是獨立建物、全館測繪或全校完成。以建築師實拍、校方簡報和2019年記者實拍交叉核對，自行以 Python / manifold3d 建立；沒有擷取第三方3D網格。
 
