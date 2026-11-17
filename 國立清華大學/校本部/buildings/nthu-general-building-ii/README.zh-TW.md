@@ -1,3 +1,11 @@
+## 本次多面牆補色（同構件推估）
+
+本版將 **240 個原本中性外牆三角面** 沿用正面的象牙白：主體外牆 216 面、塔樓外牆 24 面。僅選主體／塔樓外側完整垂直平面，不延伸凹窗玻璃、窗梃、塔槽混合內容或屋頂。**新增側背色是同構件材質連續性推估，不是新照片定位實證。** 所有原彩面與 3,694 面／1,793 頂點的座標、面序、幾何均保留，未增分界。沒有實體列印驗證。
+
+現行稽核以 `qa-continuous-walls/` 為準；原 `qa/`、`qa-return-continuation/` 與下方舊版說明屬歷史紀錄，不代表本版輸出雜湊或側背範圍。舊說明所指後牆中性範圍已由本節更新；後窗與未知凹槽仍中性。
+
+現行重建：`python appearance/source/build_continuous_walls.py`；驗證：`python appearance/source/verify_continuous_exchange.py`；四原視角彩圖及可編輯場景：`blender -b --python appearance/source/render_continuous_walls.py`；場景驗證：`blender -b --python appearance/source/verify_continuous_scene.py`。舊 `build_appearance.py` 僅作基底分類，單獨執行會回到舊配色。重建 ZIP 無第三方照片。
+
 # 國立清華大學｜第二綜合大樓
 
 ## 模型預覽
