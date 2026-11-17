@@ -1,3 +1,11 @@
+## 本次後側完整牆面補色（同構件推估）
+
+本版僅將 8 個原中性三角面延伸既有暖白色：後連棟整片背牆、左右兩翼露出後端、低翼以上後連棟露出左側，各 2 面。全部頂點受精確原垂直平面與量體邊界限制，不重切原面。
+
+這是同構件材質連續性推估，不是新增遠背照片實證，也不代表 2026 現況核實。原遠背未建窗或其他構件的簡化保留；原窗凹混合網／窗代理、窗框、遮陽肋、屋頂、半圓樓梯、兩個與照片不符的尖帽均不改。原 15,246 面／7,475 頂點與面序完全保留，其餘 15,238 面材質不變。
+
+現版 QA 位於 `qa-continuous-walls/`，原 `qa/` 保留為歷史紀錄。下方舊版遠背中性限制僅更新本節四片牆，其餘仍適用。重建：`python appearance/source/build_continuous_walls.py`；交換核驗：`python appearance/source/verify_continuous_exchange.py`；渲染：`blender -b --python appearance/source/render_continuous_walls.py`；場景回讀：`blender -b --python appearance/source/verify_continuous_scene.py`。歷史分類器會回復舊配色，請使用以上現行命令。來源 ZIP 不含第三方照片，未實體試印。
+
 # 清華劉炯朗館：六材質外觀版
 
 沿用原 **15,246 三角面／7,475 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
