@@ -1,0 +1,1198 @@
+{
+  "status": "PASS_READ_ONLY_VERTICAL_END_RETURNS_SAME_GREY_BANDS_INFERENCE",
+  "slug": "hwai-minsheng-k",
+  "date": "2026-11-17",
+  "source_stl_sha256": "1bf4de701702dbf94212b744219425d4bc813d5bcd156fefcc5d02076ff75662",
+  "triangles": 3004,
+  "vertices": 1504,
+  "original_material_counts": [
+    2882,
+    108,
+    14
+  ],
+  "proposed_material_counts": [
+    2854,
+    108,
+    42
+  ],
+  "old122colored_preserved": true,
+  "original_three_palette_slots_preserved": true,
+  "new_face_ids": [
+    1216,
+    1217,
+    1224,
+    1225,
+    1336,
+    1337,
+    1344,
+    1345,
+    1456,
+    1457,
+    1464,
+    1465,
+    1576,
+    1577,
+    1584,
+    1585,
+    1696,
+    1697,
+    1704,
+    1705,
+    1816,
+    1817,
+    1824,
+    1825,
+    1936,
+    1937,
+    1944,
+    1945
+  ],
+  "from_material": 0,
+  "to_material": 2,
+  "to_srgb": "#777973",
+  "groups": [
+    {
+      "axis": 0,
+      "plane": -40,
+      "normal_sign": -1,
+      "low_mm": [
+        -40.0,
+        -21.3,
+        49.2
+      ],
+      "high_mm": [
+        -40.0,
+        -19.0,
+        51.300000000000004
+      ],
+      "faces": [
+        1216,
+        1217
+      ],
+      "adjacent_original_grey_front_faces": [
+        1218,
+        1221
+      ],
+      "shared_front_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          49.20000076293945
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          51.29999923706055
+        ]
+      ],
+      "complete_coplanar_component": [
+        1216,
+        1217
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.829994888306828,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": -40,
+      "normal_sign": -1,
+      "low_mm": [
+        -40.0,
+        -21.3,
+        59.2
+      ],
+      "high_mm": [
+        -40.0,
+        -19.0,
+        61.300000000000004
+      ],
+      "faces": [
+        1336,
+        1337
+      ],
+      "adjacent_original_grey_front_faces": [
+        1338,
+        1341
+      ],
+      "shared_front_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          59.20000076293945
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          61.29999923706055
+        ]
+      ],
+      "complete_coplanar_component": [
+        1336,
+        1337
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.829994888306828,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": -40,
+      "normal_sign": -1,
+      "low_mm": [
+        -40.0,
+        -21.3,
+        69.2
+      ],
+      "high_mm": [
+        -40.0,
+        -19.0,
+        71.3
+      ],
+      "faces": [
+        1456,
+        1457
+      ],
+      "adjacent_original_grey_front_faces": [
+        1458,
+        1461
+      ],
+      "shared_front_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          69.19999694824219
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          71.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1456,
+        1457
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": -40,
+      "normal_sign": -1,
+      "low_mm": [
+        -40.0,
+        -21.3,
+        79.2
+      ],
+      "high_mm": [
+        -40.0,
+        -19.0,
+        81.3
+      ],
+      "faces": [
+        1576,
+        1577
+      ],
+      "adjacent_original_grey_front_faces": [
+        1578,
+        1582
+      ],
+      "shared_front_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          79.19999694824219
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          81.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1576,
+        1577
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": -40,
+      "normal_sign": -1,
+      "low_mm": [
+        -40.0,
+        -21.3,
+        89.2
+      ],
+      "high_mm": [
+        -40.0,
+        -19.0,
+        91.3
+      ],
+      "faces": [
+        1696,
+        1697
+      ],
+      "adjacent_original_grey_front_faces": [
+        1698,
+        1702
+      ],
+      "shared_front_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          89.19999694824219
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          91.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1696,
+        1697
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": -40,
+      "normal_sign": -1,
+      "low_mm": [
+        -40.0,
+        -21.3,
+        99.2
+      ],
+      "high_mm": [
+        -40.0,
+        -19.0,
+        101.3
+      ],
+      "faces": [
+        1816,
+        1817
+      ],
+      "adjacent_original_grey_front_faces": [
+        1818,
+        1822
+      ],
+      "shared_front_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          99.19999694824219
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          101.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1816,
+        1817
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": -40,
+      "normal_sign": -1,
+      "low_mm": [
+        -40.0,
+        -21.3,
+        109.2
+      ],
+      "high_mm": [
+        -40.0,
+        -19.0,
+        111.3
+      ],
+      "faces": [
+        1936,
+        1937
+      ],
+      "adjacent_original_grey_front_faces": [
+        1938,
+        1942
+      ],
+      "shared_front_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          109.19999694824219
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          111.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1936,
+        1937
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": 26,
+      "normal_sign": 1,
+      "low_mm": [
+        26.0,
+        -21.3,
+        49.2
+      ],
+      "high_mm": [
+        26.0,
+        -19.0,
+        51.300000000000004
+      ],
+      "faces": [
+        1224,
+        1225
+      ],
+      "adjacent_original_grey_front_faces": [
+        1218,
+        1221
+      ],
+      "shared_front_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          49.20000076293945
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          51.29999923706055
+        ]
+      ],
+      "complete_coplanar_component": [
+        1224,
+        1225
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.829994888306828,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": 26,
+      "normal_sign": 1,
+      "low_mm": [
+        26.0,
+        -21.3,
+        59.2
+      ],
+      "high_mm": [
+        26.0,
+        -19.0,
+        61.300000000000004
+      ],
+      "faces": [
+        1344,
+        1345
+      ],
+      "adjacent_original_grey_front_faces": [
+        1338,
+        1341
+      ],
+      "shared_front_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          59.20000076293945
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          61.29999923706055
+        ]
+      ],
+      "complete_coplanar_component": [
+        1344,
+        1345
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.829994888306828,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": 26,
+      "normal_sign": 1,
+      "low_mm": [
+        26.0,
+        -21.3,
+        69.2
+      ],
+      "high_mm": [
+        26.0,
+        -19.0,
+        71.3
+      ],
+      "faces": [
+        1464,
+        1465
+      ],
+      "adjacent_original_grey_front_faces": [
+        1458,
+        1461
+      ],
+      "shared_front_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          69.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          71.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1464,
+        1465
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": 26,
+      "normal_sign": 1,
+      "low_mm": [
+        26.0,
+        -21.3,
+        79.2
+      ],
+      "high_mm": [
+        26.0,
+        -19.0,
+        81.3
+      ],
+      "faces": [
+        1584,
+        1585
+      ],
+      "adjacent_original_grey_front_faces": [
+        1578,
+        1582
+      ],
+      "shared_front_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          79.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          81.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1584,
+        1585
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": 26,
+      "normal_sign": 1,
+      "low_mm": [
+        26.0,
+        -21.3,
+        89.2
+      ],
+      "high_mm": [
+        26.0,
+        -19.0,
+        91.3
+      ],
+      "faces": [
+        1704,
+        1705
+      ],
+      "adjacent_original_grey_front_faces": [
+        1698,
+        1702
+      ],
+      "shared_front_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          89.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          91.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1704,
+        1705
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": 26,
+      "normal_sign": 1,
+      "low_mm": [
+        26.0,
+        -21.3,
+        99.2
+      ],
+      "high_mm": [
+        26.0,
+        -19.0,
+        101.3
+      ],
+      "faces": [
+        1824,
+        1825
+      ],
+      "adjacent_original_grey_front_faces": [
+        1818,
+        1822
+      ],
+      "shared_front_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          99.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          101.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1824,
+        1825
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    },
+    {
+      "axis": 0,
+      "plane": 26,
+      "normal_sign": 1,
+      "low_mm": [
+        26.0,
+        -21.3,
+        109.2
+      ],
+      "high_mm": [
+        26.0,
+        -19.0,
+        111.3
+      ],
+      "faces": [
+        1944,
+        1945
+      ],
+      "adjacent_original_grey_front_faces": [
+        1938,
+        1942
+      ],
+      "shared_front_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          109.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          111.30000305175781
+        ]
+      ],
+      "complete_coplanar_component": [
+        1944,
+        1945
+      ],
+      "finite_rectangle_area_mm2": 4.83,
+      "mesh_area_mm2": 4.830012435908429,
+      "all_three_vertices_and_full_rectangle": true
+    }
+  ],
+  "total_analytic_area_mm2": 67.62,
+  "total_mesh_area_mm2": 67.6201039123116,
+  "original_mixed_coplanar_groups": [
+    [
+      2630,
+      2631,
+      2632,
+      2680,
+      2681
+    ],
+    [
+      2633,
+      2634,
+      2638,
+      2682,
+      2683,
+      2685,
+      2686,
+      2688
+    ],
+    [
+      2635,
+      2636,
+      2637,
+      2639,
+      2640,
+      2684,
+      2687,
+      2689,
+      2698,
+      2699
+    ],
+    [
+      2654,
+      2655,
+      2690,
+      2691,
+      2692,
+      2693
+    ],
+    [
+      2656,
+      2657,
+      2694,
+      2696
+    ],
+    [
+      2658,
+      2659,
+      2660,
+      2695,
+      2697
+    ],
+    [
+      2661,
+      2662,
+      2664,
+      2700,
+      2702
+    ],
+    [
+      2663,
+      2666,
+      2701,
+      2705
+    ],
+    [
+      2668,
+      2669,
+      2703,
+      2706
+    ],
+    [
+      2672,
+      2674,
+      2704,
+      2707
+    ],
+    [
+      2675,
+      2676,
+      2708,
+      2710
+    ],
+    [
+      2677,
+      2678,
+      2679,
+      2709,
+      2711
+    ],
+    [
+      2748,
+      2749,
+      2750,
+      2798,
+      2799
+    ],
+    [
+      2751,
+      2752,
+      2754,
+      2800,
+      2801,
+      2803,
+      2804,
+      2805
+    ],
+    [
+      2753,
+      2755,
+      2756,
+      2757,
+      2758,
+      2802,
+      2806,
+      2807,
+      2816,
+      2817
+    ],
+    [
+      2772,
+      2773,
+      2808,
+      2809,
+      2810,
+      2811
+    ],
+    [
+      2774,
+      2775,
+      2812,
+      2813
+    ],
+    [
+      2776,
+      2777,
+      2778,
+      2814,
+      2815
+    ],
+    [
+      2779,
+      2780,
+      2781,
+      2818,
+      2820
+    ],
+    [
+      2782,
+      2785,
+      2819,
+      2821
+    ],
+    [
+      2786,
+      2787,
+      2822,
+      2823
+    ],
+    [
+      2791,
+      2792,
+      2824,
+      2825
+    ],
+    [
+      2793,
+      2794,
+      2826,
+      2827
+    ],
+    [
+      2795,
+      2796,
+      2797,
+      2828,
+      2829
+    ],
+    [
+      2866,
+      2867,
+      2868,
+      2916,
+      2917
+    ],
+    [
+      2869,
+      2870,
+      2874,
+      2918,
+      2919,
+      2921,
+      2922,
+      2924
+    ],
+    [
+      2871,
+      2872,
+      2873,
+      2875,
+      2876,
+      2920,
+      2923,
+      2925,
+      2934,
+      2935
+    ],
+    [
+      2890,
+      2891,
+      2926,
+      2927,
+      2928,
+      2929
+    ],
+    [
+      2892,
+      2895,
+      2930,
+      2932
+    ],
+    [
+      2893,
+      2894,
+      2896,
+      2931,
+      2933
+    ],
+    [
+      2897,
+      2898,
+      2900,
+      2936,
+      2938
+    ],
+    [
+      2899,
+      2908,
+      2937,
+      2940
+    ],
+    [
+      2903,
+      2909,
+      2939,
+      2941
+    ],
+    [
+      2906,
+      2910,
+      2942,
+      2943
+    ],
+    [
+      2911,
+      2914,
+      2944,
+      2946
+    ],
+    [
+      2912,
+      2913,
+      2915,
+      2945,
+      2947
+    ]
+  ],
+  "new_mixed_coplanar_groups": [
+    [
+      2630,
+      2631,
+      2632,
+      2680,
+      2681
+    ],
+    [
+      2633,
+      2634,
+      2638,
+      2682,
+      2683,
+      2685,
+      2686,
+      2688
+    ],
+    [
+      2635,
+      2636,
+      2637,
+      2639,
+      2640,
+      2684,
+      2687,
+      2689,
+      2698,
+      2699
+    ],
+    [
+      2654,
+      2655,
+      2690,
+      2691,
+      2692,
+      2693
+    ],
+    [
+      2656,
+      2657,
+      2694,
+      2696
+    ],
+    [
+      2658,
+      2659,
+      2660,
+      2695,
+      2697
+    ],
+    [
+      2661,
+      2662,
+      2664,
+      2700,
+      2702
+    ],
+    [
+      2663,
+      2666,
+      2701,
+      2705
+    ],
+    [
+      2668,
+      2669,
+      2703,
+      2706
+    ],
+    [
+      2672,
+      2674,
+      2704,
+      2707
+    ],
+    [
+      2675,
+      2676,
+      2708,
+      2710
+    ],
+    [
+      2677,
+      2678,
+      2679,
+      2709,
+      2711
+    ],
+    [
+      2748,
+      2749,
+      2750,
+      2798,
+      2799
+    ],
+    [
+      2751,
+      2752,
+      2754,
+      2800,
+      2801,
+      2803,
+      2804,
+      2805
+    ],
+    [
+      2753,
+      2755,
+      2756,
+      2757,
+      2758,
+      2802,
+      2806,
+      2807,
+      2816,
+      2817
+    ],
+    [
+      2772,
+      2773,
+      2808,
+      2809,
+      2810,
+      2811
+    ],
+    [
+      2774,
+      2775,
+      2812,
+      2813
+    ],
+    [
+      2776,
+      2777,
+      2778,
+      2814,
+      2815
+    ],
+    [
+      2779,
+      2780,
+      2781,
+      2818,
+      2820
+    ],
+    [
+      2782,
+      2785,
+      2819,
+      2821
+    ],
+    [
+      2786,
+      2787,
+      2822,
+      2823
+    ],
+    [
+      2791,
+      2792,
+      2824,
+      2825
+    ],
+    [
+      2793,
+      2794,
+      2826,
+      2827
+    ],
+    [
+      2795,
+      2796,
+      2797,
+      2828,
+      2829
+    ],
+    [
+      2866,
+      2867,
+      2868,
+      2916,
+      2917
+    ],
+    [
+      2869,
+      2870,
+      2874,
+      2918,
+      2919,
+      2921,
+      2922,
+      2924
+    ],
+    [
+      2871,
+      2872,
+      2873,
+      2875,
+      2876,
+      2920,
+      2923,
+      2925,
+      2934,
+      2935
+    ],
+    [
+      2890,
+      2891,
+      2926,
+      2927,
+      2928,
+      2929
+    ],
+    [
+      2892,
+      2895,
+      2930,
+      2932
+    ],
+    [
+      2893,
+      2894,
+      2896,
+      2931,
+      2933
+    ],
+    [
+      2897,
+      2898,
+      2900,
+      2936,
+      2938
+    ],
+    [
+      2899,
+      2908,
+      2937,
+      2940
+    ],
+    [
+      2903,
+      2909,
+      2939,
+      2941
+    ],
+    [
+      2906,
+      2910,
+      2942,
+      2943
+    ],
+    [
+      2911,
+      2914,
+      2944,
+      2946
+    ],
+    [
+      2912,
+      2913,
+      2915,
+      2945,
+      2947
+    ]
+  ],
+  "no_new_mixed_groups": true,
+  "baseline_current_file": "../qa-continuous-bandreturns/current-baseline.json",
+  "source": {
+    "photo": "https://www.hwai.edu.tw/var/file/0/1000/img/14.jpg",
+    "identity": "https://www.hwai.edu.tw/p/405-1000-35523%2Cc93.php?Lang=zh-tw",
+    "history": "https://www.hwai.edu.tw/p/16-1000-35517.php?Lang=zh-tw",
+    "photo_sha256": "e966b0cc189779ad7ad098b08e453552e4cb16506b0bfca4e759f4132732cb11",
+    "viewed": "2026-11-17",
+    "capture_date": "Unknown; not proof of 2026 condition",
+    "observation": "Personally inspected full official photograph and K crop: tan towers, cream sign wall, three green curved balconies, and seven upper grey horizontal front bands match original K identity and grey fronts. Proposed short vertical end returns belong to the same seven original projecting band solids; tiny/hidden ends are same-component inference, not separately measured paint samples."
+  },
+  "limits": [
+    "Only fourteen vertical end rectangles of seven already-grey original upper front bands; each exposed depth2.3mm andheight2.1mm; original addedbeam depth2.6 extends0.3mm into host and buriedpart is not painted or manufactured.",
+    "DO NOT extend front colour to top or underside: photos and other campus examples show possible different soffit finishes. All horizontal band top/bottom faces stay original neutral.",
+    "No green balcony innerarc/top/soffit painting; no extension to lower two unregistered bands, roof, tower, signwall, glazing, or base.",
+    "Original engineering limits, estimated dimensions and simplified geometry preserved; no reconstruction and no 2026 or calibrated-colour claim.",
+    "Root baseline has3materialslots,122originalcolouredfaces; full geometry and originalmaterial/reasons unchanged.",
+    "Source pixels remain private; only URLs and review may be published after authorization."
+  ],
+  "no_model_changes": true,
+  "no_upload": true
+}

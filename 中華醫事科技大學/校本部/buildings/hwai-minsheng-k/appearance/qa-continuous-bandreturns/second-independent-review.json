@@ -1,0 +1,744 @@
+{
+  "status": "PASS_INDEPENDENT_VERTICAL_BAND_END_RETURNS_ONLY",
+  "domain_review_only": true,
+  "recorded_current_commit": "7ba4dde19ad113d2eb60f45c802f50481c1b2ca5",
+  "recorded_current_hashes_reverified": {
+    "中華醫事科技大學/校本部/buildings/hwai-minsheng-k/model.stl": "1bf4de701702dbf94212b744219425d4bc813d5bcd156fefcc5d02076ff75662",
+    "中華醫事科技大學/校本部/buildings/hwai-minsheng-k/build_model.py": "646d2d1ea9368ce588705a78fc9eacf1868d251d51b35f53cc8de15c023b79ca",
+    "中華醫事科技大學/校本部/buildings/hwai-minsheng-k/appearance/source/build_appearance.py": "3d9acc8309a2b0de9c3c260858d04d02581c5dbbf85f61e74312c0a407f915a5",
+    "中華醫事科技大學/校本部/buildings/hwai-minsheng-k/appearance/face-materials.json": "deabb9858948d887fcc687930126483a042f69858c95d438c6b2a3ea94d8392e",
+    "中華醫事科技大學/校本部/buildings/hwai-minsheng-k/appearance/palette.json": "cbdfe152a76ec245f97d10afa998fb04d011337e1512b60d3888483b1a129b89",
+    "中華醫事科技大學/校本部/buildings/hwai-minsheng-k/sources.json": "38cd9343b2fd33874bec5760ba01949d8301e416acdb13af3728d69748997d2c"
+  },
+  "triangles": 3004,
+  "vertices": 1504,
+  "baseline_material_counts": [
+    2882,
+    108,
+    14
+  ],
+  "proposed_material_counts": [
+    2854,
+    108,
+    42
+  ],
+  "original122colors_and_other2976faces_preserved": true,
+  "new_face_ids": [
+    1216,
+    1217,
+    1224,
+    1225,
+    1336,
+    1337,
+    1344,
+    1345,
+    1456,
+    1457,
+    1464,
+    1465,
+    1576,
+    1577,
+    1584,
+    1585,
+    1696,
+    1697,
+    1704,
+    1705,
+    1816,
+    1817,
+    1824,
+    1825,
+    1936,
+    1937,
+    1944,
+    1945
+  ],
+  "material_change": [
+    0,
+    2
+  ],
+  "groups": [
+    {
+      "x": -40.0,
+      "nominal_z": [
+        49.2,
+        51.300000000000004
+      ],
+      "face_ids": [
+        1216,
+        1217
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.829994888306828,
+      "adjacent_original_grey_face": 1218,
+      "shared_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          49.20000076293945
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          51.29999923706055
+        ]
+      ]
+    },
+    {
+      "x": -40.0,
+      "nominal_z": [
+        59.2,
+        61.300000000000004
+      ],
+      "face_ids": [
+        1336,
+        1337
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.829994888306828,
+      "adjacent_original_grey_face": 1338,
+      "shared_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          59.20000076293945
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          61.29999923706055
+        ]
+      ]
+    },
+    {
+      "x": -40.0,
+      "nominal_z": [
+        69.2,
+        71.3
+      ],
+      "face_ids": [
+        1456,
+        1457
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1458,
+      "shared_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          69.19999694824219
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          71.30000305175781
+        ]
+      ]
+    },
+    {
+      "x": -40.0,
+      "nominal_z": [
+        79.2,
+        81.3
+      ],
+      "face_ids": [
+        1576,
+        1577
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1578,
+      "shared_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          81.30000305175781
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          79.19999694824219
+        ]
+      ]
+    },
+    {
+      "x": -40.0,
+      "nominal_z": [
+        89.2,
+        91.3
+      ],
+      "face_ids": [
+        1696,
+        1697
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1698,
+      "shared_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          89.19999694824219
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          91.30000305175781
+        ]
+      ]
+    },
+    {
+      "x": -40.0,
+      "nominal_z": [
+        99.2,
+        101.3
+      ],
+      "face_ids": [
+        1816,
+        1817
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1818,
+      "shared_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          99.19999694824219
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          101.30000305175781
+        ]
+      ]
+    },
+    {
+      "x": -40.0,
+      "nominal_z": [
+        109.2,
+        111.3
+      ],
+      "face_ids": [
+        1936,
+        1937
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1938,
+      "shared_edge_points": [
+        [
+          -40.0,
+          -21.299999237060547,
+          109.19999694824219
+        ],
+        [
+          -40.0,
+          -21.299999237060547,
+          111.30000305175781
+        ]
+      ]
+    },
+    {
+      "x": 26.0,
+      "nominal_z": [
+        49.2,
+        51.300000000000004
+      ],
+      "face_ids": [
+        1224,
+        1225
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.829994888306828,
+      "adjacent_original_grey_face": 1221,
+      "shared_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          49.20000076293945
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          51.29999923706055
+        ]
+      ]
+    },
+    {
+      "x": 26.0,
+      "nominal_z": [
+        59.2,
+        61.300000000000004
+      ],
+      "face_ids": [
+        1344,
+        1345
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.829994888306828,
+      "adjacent_original_grey_face": 1341,
+      "shared_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          59.20000076293945
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          61.29999923706055
+        ]
+      ]
+    },
+    {
+      "x": 26.0,
+      "nominal_z": [
+        69.2,
+        71.3
+      ],
+      "face_ids": [
+        1464,
+        1465
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1461,
+      "shared_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          69.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          71.30000305175781
+        ]
+      ]
+    },
+    {
+      "x": 26.0,
+      "nominal_z": [
+        79.2,
+        81.3
+      ],
+      "face_ids": [
+        1584,
+        1585
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1582,
+      "shared_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          79.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          81.30000305175781
+        ]
+      ]
+    },
+    {
+      "x": 26.0,
+      "nominal_z": [
+        89.2,
+        91.3
+      ],
+      "face_ids": [
+        1704,
+        1705
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1702,
+      "shared_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          89.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          91.30000305175781
+        ]
+      ]
+    },
+    {
+      "x": 26.0,
+      "nominal_z": [
+        99.2,
+        101.3
+      ],
+      "face_ids": [
+        1824,
+        1825
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1822,
+      "shared_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          99.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          101.30000305175781
+        ]
+      ]
+    },
+    {
+      "x": 26.0,
+      "nominal_z": [
+        109.2,
+        111.3
+      ],
+      "face_ids": [
+        1944,
+        1945
+      ],
+      "complete_global_coplanar_component": true,
+      "exact_original_four_corner_rectangle": true,
+      "analytic_nominal_area_mm2": 4.83,
+      "float32_exact_and_mesh_area_mm2": 4.830012435908429,
+      "adjacent_original_grey_face": 1942,
+      "shared_edge_points": [
+        [
+          26.0,
+          -21.299999237060547,
+          109.19999694824219
+        ],
+        [
+          26.0,
+          -21.299999237060547,
+          111.30000305175781
+        ]
+      ]
+    }
+  ],
+  "total_nominal_area_mm2": 67.62,
+  "total_mesh_area_mm2": 67.6201039123116,
+  "unchanged_original_mixed_coplanar_groups": [
+    [
+      2630,
+      2631,
+      2632,
+      2680,
+      2681
+    ],
+    [
+      2633,
+      2634,
+      2638,
+      2682,
+      2683,
+      2685,
+      2686,
+      2688
+    ],
+    [
+      2635,
+      2636,
+      2637,
+      2639,
+      2640,
+      2684,
+      2687,
+      2689,
+      2698,
+      2699
+    ],
+    [
+      2654,
+      2655,
+      2690,
+      2691,
+      2692,
+      2693
+    ],
+    [
+      2656,
+      2657,
+      2694,
+      2696
+    ],
+    [
+      2658,
+      2659,
+      2660,
+      2695,
+      2697
+    ],
+    [
+      2661,
+      2662,
+      2664,
+      2700,
+      2702
+    ],
+    [
+      2663,
+      2666,
+      2701,
+      2705
+    ],
+    [
+      2668,
+      2669,
+      2703,
+      2706
+    ],
+    [
+      2672,
+      2674,
+      2704,
+      2707
+    ],
+    [
+      2675,
+      2676,
+      2708,
+      2710
+    ],
+    [
+      2677,
+      2678,
+      2679,
+      2709,
+      2711
+    ],
+    [
+      2748,
+      2749,
+      2750,
+      2798,
+      2799
+    ],
+    [
+      2751,
+      2752,
+      2754,
+      2800,
+      2801,
+      2803,
+      2804,
+      2805
+    ],
+    [
+      2753,
+      2755,
+      2756,
+      2757,
+      2758,
+      2802,
+      2806,
+      2807,
+      2816,
+      2817
+    ],
+    [
+      2772,
+      2773,
+      2808,
+      2809,
+      2810,
+      2811
+    ],
+    [
+      2774,
+      2775,
+      2812,
+      2813
+    ],
+    [
+      2776,
+      2777,
+      2778,
+      2814,
+      2815
+    ],
+    [
+      2779,
+      2780,
+      2781,
+      2818,
+      2820
+    ],
+    [
+      2782,
+      2785,
+      2819,
+      2821
+    ],
+    [
+      2786,
+      2787,
+      2822,
+      2823
+    ],
+    [
+      2791,
+      2792,
+      2824,
+      2825
+    ],
+    [
+      2793,
+      2794,
+      2826,
+      2827
+    ],
+    [
+      2795,
+      2796,
+      2797,
+      2828,
+      2829
+    ],
+    [
+      2866,
+      2867,
+      2868,
+      2916,
+      2917
+    ],
+    [
+      2869,
+      2870,
+      2874,
+      2918,
+      2919,
+      2921,
+      2922,
+      2924
+    ],
+    [
+      2871,
+      2872,
+      2873,
+      2875,
+      2876,
+      2920,
+      2923,
+      2925,
+      2934,
+      2935
+    ],
+    [
+      2890,
+      2891,
+      2926,
+      2927,
+      2928,
+      2929
+    ],
+    [
+      2892,
+      2895,
+      2930,
+      2932
+    ],
+    [
+      2893,
+      2894,
+      2896,
+      2931,
+      2933
+    ],
+    [
+      2897,
+      2898,
+      2900,
+      2936,
+      2938
+    ],
+    [
+      2899,
+      2908,
+      2937,
+      2940
+    ],
+    [
+      2903,
+      2909,
+      2939,
+      2941
+    ],
+    [
+      2906,
+      2910,
+      2942,
+      2943
+    ],
+    [
+      2911,
+      2914,
+      2944,
+      2946
+    ],
+    [
+      2912,
+      2913,
+      2915,
+      2945,
+      2947
+    ]
+  ],
+  "original_mixed_coplanar_count": 36,
+  "new_mixed_coplanar_count": 36,
+  "no_new_mixed_groups": true,
+  "source_photo": {
+    "url": "https://www.hwai.edu.tw/var/file/0/1000/img/14.jpg",
+    "sha256": "e966b0cc189779ad7ad098b08e453552e4cb16506b0bfca4e759f4132732cb11",
+    "fullphoto_and_K_crop_personally_viewed": true,
+    "identity": "K pairedtan towers,cream signwall,threegreen curvedbalconies and upperdarkgrey horizontal frontbands match originalmodel",
+    "limit": "Tinyverticalendreturns not separatelyresolved in photo. Sameoriginalprojectingband inference,not preciseendpaint evidence orcalibratedcolor."
+  },
+  "geometry_limit": "Original66x2.6x2.1 addedbands embed0.3mm into mainmass. Only2.3mm exposeddepth is selected. No hidden0.3mm surface invented.",
+  "limits": [
+    "Only14 completeverticalrectangles; preserve allhorizontal tops andundersides neutral",
+    "No greenparapet innerarc/top/bottom,lower2 unregisteredbands,roof,tower,signwall,glazing orbase recoloring",
+    "Existing36 mixedcoplanar domains preserved;never claim entiremodel is singlematerialpercoplanar domain",
+    "Original122coloredfaces,palette3slots,reasons and allengineeringexceptions retained",
+    "Unknowncapturedate,no2026asbuilt orsurvey/colorcalibration claim",
+    "Later production exact NPZ/3MF/scene/render/ZIP checks required"
+  ],
+  "models_modified": false,
+  "manifest_or_ledger_modified": false,
+  "uploaded": false
+}
