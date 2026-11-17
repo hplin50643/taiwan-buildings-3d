@@ -7,6 +7,18 @@
 | 正面<br>![正面](previews/front.png) | 未見長側與背牆中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
 | ![頂視](previews/top.png) |  |  |
 
+## 本次屋頂女兒牆外側灰白補色（推估）
+
+將既有屋頂四道女兒牆的外側垂直表面，共 20 個原三角延續正面灰白骨材牆色 1；其餘 4,220 面與原 2,934 個著色面、理由皆保留。原 4,240 面／2,108 點、STL bytes、座標、面序及五色表不變。現中性 1,286、灰白牆 2,366、玻璃代理 36、藍集熱器頂 68、灰屋頂及設備邊 484。
+
+範圍為原 z=93.3…95.3 mm 的四個有限朝外平面：x=−5.85、33.85、y=−50.85、64.85；交叉女兒牆與樓梯頭造成原有中斷，選取完整原三角，四組面積約 225.2、187.6、39.6、73.2 mm²。女兒牆內側、頂面、短端、主屋面、設備及原窗凹全部不變，不切面、不新增幾何。
+
+本輪親看官方空拍與近景兩張。前側女兒牆外表呈灰白，與原牆同族；**屋內側較暗且有風化，故不一併塗灰白**。未單獨看見的後段外側仍是同構件延伸推估，不是背面照片確證。原照片 EXIF 指向 2025-03-02，日期時區未獨立核實，非 2026 現況。原陽台與窗框混合、圓弧樓梯及未建管線的簡化不變；藍色集熱設備不改稱已確證太陽光電。未實體試印，照片留私人研究不入公開包。
+
+新版 QA 在 `qa-continuous-walls/`，原歷史 QA 與根 `SHA256SUMS` 留存，本次新增 `PUBLIC-MODEL-SHA256SUMS`。由根目錄重建 `python appearance/source/build_continuous_walls.py`；交換驗證 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景驗證 `blender -b --python appearance/source/verify_continuous_scene.py`。ZIP 包含原 STL、建模程式及選取域，不含照片。
+
+## 前版說明與保留限制
+
 [表面色 3MF](nuufac-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
 ## 來源與配色邊界

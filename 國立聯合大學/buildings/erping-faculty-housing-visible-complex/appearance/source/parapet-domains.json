@@ -1,0 +1,142 @@
+{
+  "status": "candidate_recommended_outer_parapet_only",
+  "repo_path": "國立聯合大學/buildings/erping-faculty-housing-visible-complex",
+  "source_stl_sha256": "0e82c74526433d5037a26c5e25ed0cababf52aa95a339250e4c5e492fccedd35",
+  "vertices": 2108,
+  "triangles": 4240,
+  "baseline_counts": [
+    1306,
+    2346,
+    36,
+    68,
+    484
+  ],
+  "groups": [
+    {
+      "axis": 0,
+      "value": -5.85,
+      "normal_sign": -1,
+      "ids": [
+        3636,
+        3637,
+        3646,
+        3651,
+        3655,
+        3657
+      ],
+      "bounds": [
+        [
+          -5.849999904632568,
+          -51.0,
+          93.30000305175781
+        ],
+        [
+          -5.849999904632568,
+          65.0,
+          95.30000305175781
+        ]
+      ],
+      "area": 225.20001220703125,
+      "analytic_area": 225.2
+    },
+    {
+      "axis": 0,
+      "value": 33.85,
+      "normal_sign": 1,
+      "ids": [
+        3666,
+        3670,
+        3678,
+        3679
+      ],
+      "bounds": [
+        [
+          33.849998474121094,
+          -30.5,
+          93.30000305175781
+        ],
+        [
+          33.849998474121094,
+          65.0,
+          95.30000305175781
+        ]
+      ],
+      "area": 187.60000610351562,
+      "analytic_area": 187.6
+    },
+    {
+      "axis": 1,
+      "value": -50.85,
+      "normal_sign": -1,
+      "ids": [
+        3682,
+        3683,
+        3691,
+        3695
+      ],
+      "bounds": [
+        [
+          -6.0,
+          -50.849998474121094,
+          93.30000305175781
+        ],
+        [
+          15.5,
+          -50.849998474121094,
+          95.30000305175781
+        ]
+      ],
+      "area": 39.60000038146973,
+      "analytic_area": 39.6
+    },
+    {
+      "axis": 1,
+      "value": 64.85,
+      "normal_sign": 1,
+      "ids": [
+        3702,
+        3703,
+        3711,
+        3716,
+        3725,
+        3726
+      ],
+      "bounds": [
+        [
+          -6.0,
+          64.8499984741211,
+          93.30000305175781
+        ],
+        [
+          34.0,
+          64.8499984741211,
+          95.30000305175781
+        ]
+      ],
+      "area": 73.20000648498535,
+      "analytic_area": 73.2
+    }
+  ],
+  "changed_faces": 20,
+  "target_material": 1,
+  "target_palette_id": "pale_gray_aggregate_wall",
+  "selection": "Only four finite outward vertical parapet planes above original roof z93.3..95.3. Exclude inward planes,top and bottom,roof,collectors and all currently colored faces.",
+  "photos": [
+    {
+      "url": "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/3/1103/gallery_1103_9742349_27145.jpg",
+      "sha256": "2e30a73a535043618260f565fbfcd9e02619159314c30806414fd042d08cdc81",
+      "personally_viewed": true,
+      "capture_date_independently_verified": false
+    },
+    {
+      "url": "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/3/1103/gallery_1103_9225718_27146.jpg",
+      "sha256": "725a90360602e37a6e5601a504241096f6a616a1b78d3677a19c8fd3391e5f55",
+      "personally_viewed": true,
+      "capture_date_independently_verified": false
+    }
+  ],
+  "appearance": "Official aerial shows pale exterior rooftop parapet matching facade; interior and cap appear darker/weathered. Recommend existing aggregate-gray1 to exterior only. Rear portions still same-component inference, not separately photographed.",
+  "limits": "Original parapet rectangles and detailed antenna/pipe omissions remain. Near front balconies and glazing mixed: do not recolor window recess returns. No photos public. No2026condition claim.",
+  "deduplication": "Scanned24ledger entries and63publish-files manifests; none mentions this repo path.",
+  "area_explanation": "Outer planes interrupted by crossing parapet strips width1.7 and by original stairhead footprint. Left:2*(116-2*1.7),right:2*(95.5-1.7),front:2*(21.5-1.7),rear:2*(40-2*1.7). All extant full triangles preserved."
+}
