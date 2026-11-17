@@ -1,0 +1,91 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "NTUNHS Xuesi 2021 north outer frame medium gray",
+      "hex": "#747675",
+      "faces": 18
+    },
+    {
+      "id": 1,
+      "name": "NTUNHS Xuesi 2021 unverified walls windows neutral",
+      "hex": "#B8BAB5",
+      "faces": 18136
+    },
+    {
+      "id": 2,
+      "name": "South pilaster fronts nominal pale family",
+      "hex": "#E0E0D9",
+      "faces": 16
+    }
+  ],
+  "south_front_domains": {
+    "-65.5": [
+      6640,
+      6667
+    ],
+    "-50.5": [
+      6722,
+      6745
+    ],
+    "-35.5": [
+      6803,
+      6829
+    ],
+    "-20.5": [
+      6895,
+      6915
+    ],
+    "-5.5": [
+      6974,
+      6996
+    ],
+    "9.5": [
+      7054,
+      7081
+    ],
+    "24.5": [
+      7142,
+      7162
+    ],
+    "39.5": [
+      7224,
+      7241
+    ]
+  },
+  "new_face_indices": [
+    6640,
+    6667,
+    6722,
+    6745,
+    6803,
+    6829,
+    6895,
+    6915,
+    6974,
+    6996,
+    7054,
+    7081,
+    7142,
+    7162,
+    7224,
+    7241
+  ],
+  "original_colored_faces": 18,
+  "added_colored_faces": 16,
+  "colored_faces": 34,
+  "neutral_faces": 18136,
+  "triangles": 18170,
+  "complete_new_domains": 8,
+  "mixed_coplanar_domains": 0,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "18170original triangles and STL/build unchanged",
+  "limitations": [
+    "Original18northgray and original2palette entries unchanged; newpaleindex2 distinct from neutralindex1.",
+    "Only south projectingpilaster front,y-33.8;not horizontalband y-33.2 or returns.",
+    "Lower treehidden parts inferred continuoussamepilaster;not eachface directlyseen.",
+    "Original2021identity/22groundcolumns/890crosslayercornerexceptions remain,not globalengineering certification.",
+    "No2026condition or calibratedcolor. Sourcephotos private."
+  ]
+}
