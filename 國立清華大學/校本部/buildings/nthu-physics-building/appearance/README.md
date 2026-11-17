@@ -1,10 +1,16 @@
+## 本次多面牆補色（同構件推估）
+
+本版將高低兩翼 **61 個原中性側背外牆面** 延用既有冷白磁磚色。僅選原有完整垂直外牆三角面，未新增分界或模擬未建出的背面窗格。**此為同構件材料連續性推估，非新側背照片證據或 2026 現況查證。** 灰色格梁柱、亭構件、窗凹背、通道、屋頂與基座及所有原有彩面保留。原 7,856 面／3,852 頂點與面序不變，沒有實體試印。
+
+現行稽核見 `qa-continuous-walls/`；原 `qa/` 為歷史紀錄。下方舊版「未知背／右牆中性」敘述僅對本節列出的 61 面更新，其餘限制不變。現行重建用 `python appearance/source/build_continuous_walls.py`，交換驗證用 `python appearance/source/verify_continuous_exchange.py`；四原視角與場景用 `blender -b --python appearance/source/render_continuous_walls.py`，回讀驗證用 `blender -b --python appearance/source/verify_continuous_scene.py`。直接執行歷史 `build_appearance.py` 會回復舊色，請用本節新命令。ZIP 不含第三方照片。
+
 # 清華物理館：四材質外觀版
 
 沿用原 **7,856 三角面／3,852 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 未知背牆中性／亭構件有界延伸<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
+| 正面<br>![正面](previews/front.png) | ![背面](previews/rear.png)<br>側背牆同構件推估補色 | ![正立面](previews/elevation.png) |
 | ![頂視](previews/top.png) |  |  |
 
 [表面色 3MF](nthuphysics-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
