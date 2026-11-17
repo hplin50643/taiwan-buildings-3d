@@ -1,0 +1,157 @@
+{
+  "status": "PASS_DOMAIN_ONLY_SCOPED_REASSESSMENT",
+  "read_only": true,
+  "baseline_hashes_reverified": {
+    "model.stl": "b3d24d272e0ffdb171d770735c87feba10ee0b6ad423149e185de9310bc5a7b7",
+    "color-mesh.npz": "b5c15f112ce99dd381d9d0e903bc5ec283fdf48a7dba75a18eaf0518ec357d8b",
+    "palette.json": "0afaed5241cb0ed994b9f85504010366af752d2c26b2d6bd06771ebc6b3f0e31",
+    "build_model.py": "970a4b18d58525163ff013efa5d55baeaf7aaa549117301ec39d8040d65c564b",
+    "colorize_model.py": "3263a48b3ea6da63f428b9011e459b3e4ed9617eb4c738754abb1dfe1d82740f"
+  },
+  "triangles": 15102,
+  "vertices": 7343,
+  "before_counts": [
+    8,
+    15094
+  ],
+  "proposed_counts": [
+    12,
+    15090
+  ],
+  "new_face_ids": [
+    7862,
+    7863,
+    8682,
+    8683
+  ],
+  "domains": [
+    {
+      "ids": [
+        7862,
+        7863
+      ],
+      "fourcorners": [
+        [
+          -36.0,
+          -63.099998474121094,
+          16.700000762939453
+        ],
+        [
+          -36.0,
+          -63.099998474121094,
+          18.0
+        ],
+        [
+          -36.0,
+          -53.599998474121094,
+          16.700000762939453
+        ],
+        [
+          -36.0,
+          -53.599998474121094,
+          18.0
+        ]
+      ],
+      "full_global_coplanar_domain": true,
+      "actual_area_mm2": 12.349992752075195,
+      "nominal_area_mm2": 12.35,
+      "float32_polygon_difference_mm2": 0,
+      "overlap_mm2": 0,
+      "old_gray_front_fullheight_contact": [
+        {
+          "face": 7893,
+          "edge": [
+            [
+              -36.0,
+              -63.099998474121094,
+              16.700000762939453
+            ],
+            [
+              -36.0,
+              -63.099998474121094,
+              18.0
+            ]
+          ],
+          "length": 1.2999992370605469
+        }
+      ]
+    },
+    {
+      "ids": [
+        8682,
+        8683
+      ],
+      "fourcorners": [
+        [
+          -36.0,
+          -63.099998474121094,
+          24.299999237060547
+        ],
+        [
+          -36.0,
+          -63.099998474121094,
+          25.600000381469727
+        ],
+        [
+          -36.0,
+          -53.599998474121094,
+          24.299999237060547
+        ],
+        [
+          -36.0,
+          -53.599998474121094,
+          25.600000381469727
+        ]
+      ],
+      "full_global_coplanar_domain": true,
+      "actual_area_mm2": 12.350010871887207,
+      "nominal_area_mm2": 12.35,
+      "float32_polygon_difference_mm2": 0,
+      "overlap_mm2": 0,
+      "old_gray_front_fullheight_contact": [
+        {
+          "face": 8711,
+          "edge": [
+            [
+              -36.0,
+              -63.099998474121094,
+              24.299999237060547
+            ],
+            [
+              -36.0,
+              -63.099998474121094,
+              25.600000381469727
+            ]
+          ],
+          "length": 1.3000011444091797
+        }
+      ]
+    }
+  ],
+  "original8gray_preserved": true,
+  "all15098otherfaces_preserved": true,
+  "total_actual_area_mm2": 24.700003623962402,
+  "uniform_global_coplanar_components": 3822,
+  "source": {
+    "url": "https://cc.hfu.edu.tw/~pr/hfuen/images/b/lib.jpg",
+    "sha256": "0fcea1342d8b693f09516157ccd74f64811fea9b6f186dc0ecc6268de50cba67",
+    "bytes": 2952765
+  },
+  "personally_viewed_original3072px_south_photo": true,
+  "material_boundary_review": "Photo identifies two long south redtile eaves below central terrace between towers. Narrowverticalgrayfascia is below redtileedge; raisedwhite terminal ornaments climb roofedge ABOVE fascia and are a separate material/component. Selected originalx−36 rectangles are only1.3high lowerverticalslab ends, not the slopingornament face or tile roof. No concrete visual evidence found that these particular narrowleftslab returns themselves change to whiteornament material.",
+  "inference": "Left9.5mmwholedepth is unobserved sameoriginalfascia continuation fromfrontviafull1.3edge, not photographedfullleftdepth or simplemirrorcopy. Rightreturnphoto cannotprove exactleftfinish; approval is bounded samecomponent inference only.",
+  "old_scope_adjudication": "Read originalEAVE-RETURN-SOURCE-QA: its scope selectedright4faces and saidleftunseen returns notextend. This is a then-limitedsourcecoverage gate, not recorded evidenceof a differentleftmaterial or inseparablewhiteornament. Retain originalreport/status unchanged; newreport supersedesONLYleft4faces via independentfinitecomponent andexplicitinference, not retroactively claim originalapprovedleft or newphotograph.",
+  "historical_report_sha256_preserved": "13bad82f9f30ee315dbc8f95649af5e43fb10980d6fd285da5f6c4190b056bfb",
+  "date_limits": "Samephoto, no newsource. EXIF2008-05-18 predates2009-10-30opening; clock/timezoneunverified. Not asserted postopening/2026condition.",
+  "exclusions": [
+    "White slopingornaments/redroof tiles",
+    "Top/underside/rearedges",
+    "Otherpavilions/walls/glazing/rails"
+  ],
+  "history_preservation": "Sourcepending andoriginal77squarepostsegments/2roundcolumns versus2053crosslayerlossrecords distinction, nonzerocornerloss/thinwalllimitedQA exceptions retained. Fourpavilions/Guangqin libraryonebuilding countdelta0.",
+  "qa_limit": "Domainonly, no newproduction3MF/Blender/render/ZIP or printability certification",
+  "private_pixels_not_public": true,
+  "models_modified": false,
+  "ledger_modified": false,
+  "uploaded": false
+}
