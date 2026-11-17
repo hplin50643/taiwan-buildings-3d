@@ -1,0 +1,65 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "Existing six true horizontal mullion fronts warm offwhite",
+      "hex": "#D6D2C6",
+      "faces": 12
+    },
+    {
+      "id": 1,
+      "name": "Existing entry stair treads and front risers muted stone",
+      "hex": "#A6A59A",
+      "faces": 16
+    },
+    {
+      "id": 2,
+      "name": "UNVERIFIED mixed facade pane backs tile and red eave neutral",
+      "hex": "#B8BAB5",
+      "faces": 1172
+    }
+  ],
+  "domain_face_indices": {
+    "six_mullion_fronts": [
+      406,
+      412,
+      442,
+      448,
+      474,
+      480,
+      510,
+      516,
+      542,
+      548,
+      578,
+      584
+    ],
+    "four_step_treads_risers": [
+      1157,
+      1158,
+      1159,
+      1160,
+      1167,
+      1168,
+      1169,
+      1170,
+      1179,
+      1180,
+      1181,
+      1182,
+      1191,
+      1192,
+      1194,
+      1196
+    ]
+  },
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "1200 original triangles unchanged",
+  "limits": [
+    "Only12 actual mullion front triangles, no new fineframe or glass paint.",
+    "Step actual treads/front risers only; sidefaces and base neutral.",
+    "All mixed wall/columns, window backs, upperroof and redrafter-like thicklip neutral.",
+    "Three labels not a verified four-filament job."
+  ]
+}

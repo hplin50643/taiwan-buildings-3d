@@ -4,7 +4,7 @@
       "id": 0,
       "name": "Existing six true horizontal mullion fronts warm offwhite",
       "hex": "#D6D2C6",
-      "faces": 12
+      "faces": 72
     },
     {
       "id": 1,
@@ -16,7 +16,7 @@
       "id": 2,
       "name": "UNVERIFIED mixed facade pane backs tile and red eave neutral",
       "hex": "#B8BAB5",
-      "faces": 1172
+      "faces": 1112
     }
   ],
   "domain_face_indices": {
@@ -61,5 +61,14 @@
     "Step actual treads/front risers only; sidefaces and base neutral.",
     "All mixed wall/columns, window backs, upperroof and redrafter-like thicklip neutral.",
     "Three labels not a verified four-filament job."
-  ]
+  ],
+  "current_continuity_extension": {
+    "changed_faces": 60,
+    "counts": [
+      72,
+      16,
+      1112
+    ],
+    "scope": "Six original mullions finite back/top/bottom extend existing warmwhite family by same-member inference. All28priorcolors unchanged. Windowbacks,decorativefriezes,mixedwall,roof remainneutral. Original limits retained as historicalscope."
+  }
 }

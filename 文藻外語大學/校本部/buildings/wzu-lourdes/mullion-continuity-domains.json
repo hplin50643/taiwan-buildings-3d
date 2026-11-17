@@ -1,0 +1,1232 @@
+{
+  "status": "PASS_FINITE_SAME_MULLION_SURFACES",
+  "read_only": true,
+  "modified_model": false,
+  "published": false,
+  "repository_path": "文藻外語大學/校本部/buildings/wzu-lourdes",
+  "source_stl_sha256": "f8a4030924c912a3b6e435b7f0b20790b822a290a7ea03b5c6dc87713b726453",
+  "source_color_mesh_sha256": "aa2761df76c2c890eeceb941b56726f4620fed481a2e51724dcf74a42d417377",
+  "source_palette_sha256": "76aabfff8267cfa85768fbdaadb9d6c0f6bae5430be05f0ca876e69cd90825ce",
+  "triangles": 1200,
+  "vertices": 588,
+  "original_STL_ordered_triangles_equal_color_mesh": true,
+  "baseline_material_counts": [
+    12,
+    16,
+    1172
+  ],
+  "target_material": 0,
+  "target_palette_name": "Existing six true horizontal mullion fronts warm offwhite",
+  "candidate_faces": 60,
+  "face_ids": [
+    407,
+    408,
+    409,
+    410,
+    411,
+    413,
+    414,
+    415,
+    416,
+    417,
+    438,
+    439,
+    443,
+    444,
+    445,
+    446,
+    447,
+    449,
+    450,
+    451,
+    475,
+    476,
+    477,
+    478,
+    479,
+    481,
+    482,
+    483,
+    484,
+    485,
+    506,
+    507,
+    511,
+    512,
+    513,
+    514,
+    515,
+    517,
+    518,
+    519,
+    543,
+    544,
+    545,
+    546,
+    547,
+    549,
+    550,
+    551,
+    552,
+    553,
+    574,
+    575,
+    579,
+    580,
+    581,
+    582,
+    583,
+    585,
+    586,
+    587
+  ],
+  "groups": [
+    {
+      "axis": 1,
+      "value": 11.55,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -13.5,
+          8.45,
+          30.0
+        ],
+        [
+          -6.5,
+          11.55,
+          31.1
+        ]
+      ],
+      "ids": [
+        410,
+        415
+      ],
+      "area": 7.700002670288086,
+      "analytic_area_mm2": 7.700000000000001,
+      "vertices": [
+        [
+          -13.5,
+          11.550000190734863,
+          30.0
+        ],
+        [
+          -13.5,
+          11.550000190734863,
+          31.100000381469727
+        ],
+        [
+          -6.5,
+          11.550000190734863,
+          30.0
+        ],
+        [
+          -6.5,
+          11.550000190734863,
+          31.100000381469727
+        ]
+      ],
+      "complete_coplanar_component": [
+        410,
+        415
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 30,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -13.5,
+          8.45,
+          30.0
+        ],
+        [
+          -6.5,
+          11.55,
+          31.1
+        ]
+      ],
+      "ids": [
+        407,
+        409,
+        413,
+        414
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          -13.5,
+          8.449999809265137,
+          30.0
+        ],
+        [
+          -13.5,
+          10.0,
+          30.0
+        ],
+        [
+          -13.5,
+          11.550000190734863,
+          30.0
+        ],
+        [
+          -6.5,
+          8.449999809265137,
+          30.0
+        ],
+        [
+          -6.5,
+          10.0,
+          30.0
+        ],
+        [
+          -6.5,
+          11.550000190734863,
+          30.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        407,
+        409,
+        413,
+        414
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 31.1,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -13.5,
+          8.45,
+          30.0
+        ],
+        [
+          -6.5,
+          11.55,
+          31.1
+        ]
+      ],
+      "ids": [
+        408,
+        411,
+        416,
+        417
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          -13.5,
+          8.449999809265137,
+          31.100000381469727
+        ],
+        [
+          -13.5,
+          10.0,
+          31.100000381469727
+        ],
+        [
+          -13.5,
+          11.550000190734863,
+          31.100000381469727
+        ],
+        [
+          -6.5,
+          8.449999809265137,
+          31.100000381469727
+        ],
+        [
+          -6.5,
+          10.0,
+          31.100000381469727
+        ],
+        [
+          -6.5,
+          11.550000190734863,
+          31.100000381469727
+        ]
+      ],
+      "complete_coplanar_component": [
+        408,
+        411,
+        416,
+        417
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 1,
+      "value": 11.55,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -13.5,
+          8.45,
+          48.0
+        ],
+        [
+          -6.5,
+          11.55,
+          49.1
+        ]
+      ],
+      "ids": [
+        445,
+        450
+      ],
+      "area": 7.699989318847656,
+      "analytic_area_mm2": 7.700000000000001,
+      "vertices": [
+        [
+          -13.5,
+          11.550000190734863,
+          48.0
+        ],
+        [
+          -13.5,
+          11.550000190734863,
+          49.099998474121094
+        ],
+        [
+          -6.5,
+          11.550000190734863,
+          48.0
+        ],
+        [
+          -6.5,
+          11.550000190734863,
+          49.099998474121094
+        ]
+      ],
+      "complete_coplanar_component": [
+        445,
+        450
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 48,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -13.5,
+          8.45,
+          48.0
+        ],
+        [
+          -6.5,
+          11.55,
+          49.1
+        ]
+      ],
+      "ids": [
+        438,
+        439,
+        446,
+        447
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          -13.5,
+          8.449999809265137,
+          48.0
+        ],
+        [
+          -13.5,
+          10.0,
+          48.0
+        ],
+        [
+          -13.5,
+          11.550000190734863,
+          48.0
+        ],
+        [
+          -6.5,
+          8.449999809265137,
+          48.0
+        ],
+        [
+          -6.5,
+          10.0,
+          48.0
+        ],
+        [
+          -6.5,
+          11.550000190734863,
+          48.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        438,
+        439,
+        446,
+        447
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 49.1,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -13.5,
+          8.45,
+          48.0
+        ],
+        [
+          -6.5,
+          11.55,
+          49.1
+        ]
+      ],
+      "ids": [
+        443,
+        444,
+        449,
+        451
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          -13.5,
+          8.449999809265137,
+          49.099998474121094
+        ],
+        [
+          -13.5,
+          10.0,
+          49.099998474121094
+        ],
+        [
+          -13.5,
+          11.550000190734863,
+          49.099998474121094
+        ],
+        [
+          -6.5,
+          8.449999809265137,
+          49.099998474121094
+        ],
+        [
+          -6.5,
+          10.0,
+          49.099998474121094
+        ],
+        [
+          -6.5,
+          11.550000190734863,
+          49.099998474121094
+        ]
+      ],
+      "complete_coplanar_component": [
+        443,
+        444,
+        449,
+        451
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 1,
+      "value": 11.55,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -3.5,
+          8.45,
+          30.0
+        ],
+        [
+          3.5,
+          11.55,
+          31.1
+        ]
+      ],
+      "ids": [
+        478,
+        483
+      ],
+      "area": 7.700002670288086,
+      "analytic_area_mm2": 7.700000000000001,
+      "vertices": [
+        [
+          -3.5,
+          11.550000190734863,
+          30.0
+        ],
+        [
+          -3.5,
+          11.550000190734863,
+          31.100000381469727
+        ],
+        [
+          3.5,
+          11.550000190734863,
+          30.0
+        ],
+        [
+          3.5,
+          11.550000190734863,
+          31.100000381469727
+        ]
+      ],
+      "complete_coplanar_component": [
+        478,
+        483
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 30,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -3.5,
+          8.45,
+          30.0
+        ],
+        [
+          3.5,
+          11.55,
+          31.1
+        ]
+      ],
+      "ids": [
+        475,
+        477,
+        481,
+        482
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          -3.5,
+          8.449999809265137,
+          30.0
+        ],
+        [
+          -3.5,
+          10.0,
+          30.0
+        ],
+        [
+          -3.5,
+          11.550000190734863,
+          30.0
+        ],
+        [
+          3.5,
+          8.449999809265137,
+          30.0
+        ],
+        [
+          3.5,
+          10.0,
+          30.0
+        ],
+        [
+          3.5,
+          11.550000190734863,
+          30.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        475,
+        477,
+        481,
+        482
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 31.1,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -3.5,
+          8.45,
+          30.0
+        ],
+        [
+          3.5,
+          11.55,
+          31.1
+        ]
+      ],
+      "ids": [
+        476,
+        479,
+        484,
+        485
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          -3.5,
+          8.449999809265137,
+          31.100000381469727
+        ],
+        [
+          -3.5,
+          10.0,
+          31.100000381469727
+        ],
+        [
+          -3.5,
+          11.550000190734863,
+          31.100000381469727
+        ],
+        [
+          3.5,
+          8.449999809265137,
+          31.100000381469727
+        ],
+        [
+          3.5,
+          10.0,
+          31.100000381469727
+        ],
+        [
+          3.5,
+          11.550000190734863,
+          31.100000381469727
+        ]
+      ],
+      "complete_coplanar_component": [
+        476,
+        479,
+        484,
+        485
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 1,
+      "value": 11.55,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -3.5,
+          8.45,
+          48.0
+        ],
+        [
+          3.5,
+          11.55,
+          49.1
+        ]
+      ],
+      "ids": [
+        513,
+        518
+      ],
+      "area": 7.699989318847656,
+      "analytic_area_mm2": 7.700000000000001,
+      "vertices": [
+        [
+          -3.5,
+          11.550000190734863,
+          48.0
+        ],
+        [
+          -3.5,
+          11.550000190734863,
+          49.099998474121094
+        ],
+        [
+          3.5,
+          11.550000190734863,
+          48.0
+        ],
+        [
+          3.5,
+          11.550000190734863,
+          49.099998474121094
+        ]
+      ],
+      "complete_coplanar_component": [
+        513,
+        518
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 48,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -3.5,
+          8.45,
+          48.0
+        ],
+        [
+          3.5,
+          11.55,
+          49.1
+        ]
+      ],
+      "ids": [
+        506,
+        507,
+        514,
+        515
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          -3.5,
+          8.449999809265137,
+          48.0
+        ],
+        [
+          -3.5,
+          10.0,
+          48.0
+        ],
+        [
+          -3.5,
+          11.550000190734863,
+          48.0
+        ],
+        [
+          3.5,
+          8.449999809265137,
+          48.0
+        ],
+        [
+          3.5,
+          10.0,
+          48.0
+        ],
+        [
+          3.5,
+          11.550000190734863,
+          48.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        506,
+        507,
+        514,
+        515
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 49.1,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -3.5,
+          8.45,
+          48.0
+        ],
+        [
+          3.5,
+          11.55,
+          49.1
+        ]
+      ],
+      "ids": [
+        511,
+        512,
+        517,
+        519
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          -3.5,
+          8.449999809265137,
+          49.099998474121094
+        ],
+        [
+          -3.5,
+          10.0,
+          49.099998474121094
+        ],
+        [
+          -3.5,
+          11.550000190734863,
+          49.099998474121094
+        ],
+        [
+          3.5,
+          8.449999809265137,
+          49.099998474121094
+        ],
+        [
+          3.5,
+          10.0,
+          49.099998474121094
+        ],
+        [
+          3.5,
+          11.550000190734863,
+          49.099998474121094
+        ]
+      ],
+      "complete_coplanar_component": [
+        511,
+        512,
+        517,
+        519
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 1,
+      "value": 11.55,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          6.5,
+          8.45,
+          30.0
+        ],
+        [
+          13.5,
+          11.55,
+          31.1
+        ]
+      ],
+      "ids": [
+        546,
+        551
+      ],
+      "area": 7.700002670288086,
+      "analytic_area_mm2": 7.700000000000001,
+      "vertices": [
+        [
+          6.5,
+          11.550000190734863,
+          30.0
+        ],
+        [
+          6.5,
+          11.550000190734863,
+          31.100000381469727
+        ],
+        [
+          13.5,
+          11.550000190734863,
+          30.0
+        ],
+        [
+          13.5,
+          11.550000190734863,
+          31.100000381469727
+        ]
+      ],
+      "complete_coplanar_component": [
+        546,
+        551
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 30,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          6.5,
+          8.45,
+          30.0
+        ],
+        [
+          13.5,
+          11.55,
+          31.1
+        ]
+      ],
+      "ids": [
+        543,
+        545,
+        549,
+        550
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          6.5,
+          8.449999809265137,
+          30.0
+        ],
+        [
+          6.5,
+          10.0,
+          30.0
+        ],
+        [
+          6.5,
+          11.550000190734863,
+          30.0
+        ],
+        [
+          13.5,
+          8.449999809265137,
+          30.0
+        ],
+        [
+          13.5,
+          10.0,
+          30.0
+        ],
+        [
+          13.5,
+          11.550000190734863,
+          30.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        543,
+        545,
+        549,
+        550
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 31.1,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          6.5,
+          8.45,
+          30.0
+        ],
+        [
+          13.5,
+          11.55,
+          31.1
+        ]
+      ],
+      "ids": [
+        544,
+        547,
+        552,
+        553
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          6.5,
+          8.449999809265137,
+          31.100000381469727
+        ],
+        [
+          6.5,
+          10.0,
+          31.100000381469727
+        ],
+        [
+          6.5,
+          11.550000190734863,
+          31.100000381469727
+        ],
+        [
+          13.5,
+          8.449999809265137,
+          31.100000381469727
+        ],
+        [
+          13.5,
+          10.0,
+          31.100000381469727
+        ],
+        [
+          13.5,
+          11.550000190734863,
+          31.100000381469727
+        ]
+      ],
+      "complete_coplanar_component": [
+        544,
+        547,
+        552,
+        553
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 1,
+      "value": 11.55,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          6.5,
+          8.45,
+          48.0
+        ],
+        [
+          13.5,
+          11.55,
+          49.1
+        ]
+      ],
+      "ids": [
+        581,
+        586
+      ],
+      "area": 7.699989318847656,
+      "analytic_area_mm2": 7.700000000000001,
+      "vertices": [
+        [
+          6.5,
+          11.550000190734863,
+          48.0
+        ],
+        [
+          6.5,
+          11.550000190734863,
+          49.099998474121094
+        ],
+        [
+          13.5,
+          11.550000190734863,
+          48.0
+        ],
+        [
+          13.5,
+          11.550000190734863,
+          49.099998474121094
+        ]
+      ],
+      "complete_coplanar_component": [
+        581,
+        586
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 48,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          6.5,
+          8.45,
+          48.0
+        ],
+        [
+          13.5,
+          11.55,
+          49.1
+        ]
+      ],
+      "ids": [
+        574,
+        575,
+        582,
+        583
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          6.5,
+          8.449999809265137,
+          48.0
+        ],
+        [
+          6.5,
+          10.0,
+          48.0
+        ],
+        [
+          6.5,
+          11.550000190734863,
+          48.0
+        ],
+        [
+          13.5,
+          8.449999809265137,
+          48.0
+        ],
+        [
+          13.5,
+          10.0,
+          48.0
+        ],
+        [
+          13.5,
+          11.550000190734863,
+          48.0
+        ]
+      ],
+      "complete_coplanar_component": [
+        574,
+        575,
+        582,
+        583
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    },
+    {
+      "axis": 2,
+      "value": 49.1,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          6.5,
+          8.45,
+          48.0
+        ],
+        [
+          13.5,
+          11.55,
+          49.1
+        ]
+      ],
+      "ids": [
+        579,
+        580,
+        585,
+        587
+      ],
+      "area": 21.700002670288086,
+      "analytic_area_mm2": 21.7,
+      "vertices": [
+        [
+          6.5,
+          8.449999809265137,
+          49.099998474121094
+        ],
+        [
+          6.5,
+          10.0,
+          49.099998474121094
+        ],
+        [
+          6.5,
+          11.550000190734863,
+          49.099998474121094
+        ],
+        [
+          13.5,
+          8.449999809265137,
+          49.099998474121094
+        ],
+        [
+          13.5,
+          10.0,
+          49.099998474121094
+        ],
+        [
+          13.5,
+          11.550000190734863,
+          49.099998474121094
+        ]
+      ],
+      "complete_coplanar_component": [
+        579,
+        580,
+        585,
+        587
+      ],
+      "coplanar_exact": true,
+      "rectangle_corner_completeness": true,
+      "extra_vertices_only_on_rectangle_boundary": true
+    }
+  ],
+  "analytic_area_mm2": 306.6,
+  "mesh_area_mm2": 306.60000801086426,
+  "expected_new_counts": [
+    72,
+    16,
+    1112
+  ],
+  "selection": "Sixoriginal horizontalmullions atx=-10,0,10 andz=30,48; finite7x3.1x1.1boxes. Addonly exposedrear y11.55 andtop/bottom z/z+1.1;originalfront y8.45 retained. No side xfaces added becausethey contactaperture.",
+  "boundary_proof": "Allvertices on finite planes withinoriginalmember bounds,correct outwardnormals;eachselectedplane equals entireconnectedcoplanarcomponent. Rear2triangles4corners,top/bottom4triangles includingoriginaledge subdivisionvertices;four rectanglecorners complete,othervertices lie onlyon boundary,totalareas match7*1.1 and7*3.1. No retriangulation.",
+  "preservation": "All12existingwarmwhitefrontfaces,16stone stairfaces,1140unselectedfaces,palettebytes,sourceSTL andoriginalfacevertexorderunchanged.",
+  "exclusions": "No windowbackings,glass,wallreveals,sideapertures,fullheightmixedcolumns,decorativefriezes,plaque,redrafterthicklip,roofs,courtyard,rearwall,stairsidesorbase.",
+  "inference": "PDFphysicalpage50 personallyviewed:central6windowpanescontainwarmwhitehorizontalframes. Extendingexistingcoarse6mullions toexposedtop,bottomandrear is same-memberfinish inference,notindependentrearphotographicconfirmation. Originalmodelmissingfinegrid andapproximateframeproportionsnotcorrected orendorsed.",
+  "sources": {
+    "register": [
+      {
+        "url": "https://c005.wzu.edu.tw/ezcatfiles/c005/img/img/716/G.jpg",
+        "sha256": "b715f44f9243081e54397daddeaf823893909549baa32e333eb0f2095ab70683",
+        "date": "Unknown photo capture date; PDF edition not photo date."
+      },
+      {
+        "url": "https://c004.wzu.edu.tw/datas/upload/files/Documents/111_1075_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8_1140312.pdf",
+        "sha256": "8dd3b916f05d2baadd88c8890bd6192dd05325a8e2f38a192169054427d7bde2",
+        "date": "Unknown photo capture date; PDF edition not photo date."
+      }
+    ],
+    "PDF_physical_page": 50,
+    "PDF_printed_page": "2-44",
+    "personally_viewed": true,
+    "private_source_files": [
+      "private/lourdes-official.jpg",
+      "private/campus-exterior-reference.pdf",
+      "private/lourdes-page50.png"
+    ],
+    "capture_date": "unknown;2023formdate and2025PDFeditionarenotphotodates;no2026conditionclaim",
+    "private_only": true,
+    "pdf_page_render_sha256": "e973ebc9c59e1114a68544aafa04f6d4ef3217e1b10bc26e23db0612303bb8b7",
+    "official_image_sha256": "b715f44f9243081e54397daddeaf823893909549baa32e333eb0f2095ab70683",
+    "pdf_sha256": "8dd3b916f05d2baadd88c8890bd6192dd05325a8e2f38a192169054427d7bde2"
+  },
+  "manifest_dedup": {
+    "manifests_checked": 80,
+    "matches": []
+  }
+}
