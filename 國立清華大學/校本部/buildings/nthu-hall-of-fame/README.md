@@ -1,3 +1,13 @@
+## 本次入口上窗垂直窗頰補色（同構件推估）
+
+僅入口上窗左右兩個完整垂直窗頰共 4 面延伸既有奶油淺色。全頂點限制在 x=44.5/57.5、y=-17.5..-16.5、z=25..35 的原開口側返，保留玻璃背、水平窗台及窗頭。
+
+這是同構件連續性推估，不是新增窗頰照片證實或 2026 現況核實，不認證實際材料產品與測色。原下層弧牆石腳混材、上陽台混材背、棚頂、屋頂、三橘肋、百葉與原109面奶油弧簷底近似全部保持。原 1,592 面／786 頂點與面序不變，其餘 1,588 面材質不變。
+
+現版 QA 位於 `appearance/qa-continuous-walls/`；舊 QA 及來源限制仍保留。由模型根目錄執行現行重建 `python appearance/source/build_continuous_walls.py`；交換核驗 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。直接執行歷史分類器會回復舊配色。ZIP 不含第三方照片，未實體試印。
+
+## 原版歷史說明（下方統計為前版；本次僅更新四窗頰原面）
+
 # 國立清華大學｜清華名人堂
 
 ## 模型預覽
