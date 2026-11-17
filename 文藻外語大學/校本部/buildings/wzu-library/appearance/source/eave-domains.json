@@ -1,0 +1,132 @@
+{
+  "status": "PASS_eave_outer_vertical_sides_and_split_rear_only",
+  "repo_path": "文藻外語大學/校本部/buildings/wzu-library",
+  "source_stl_sha256": "46fd8857dab8dadca6bc429ef697d4dbfe4a797c0b541347d331480a664c0a3c",
+  "triangles": 6898,
+  "vertices": 3379,
+  "baseline_material_counts": [
+    1662,
+    348,
+    184,
+    3343,
+    1112,
+    58,
+    2,
+    189
+  ],
+  "baseline_colored_faces": 5236,
+  "prior_face_colors_match_original_classifier": true,
+  "prior_role_counts_match_original_classifier": true,
+  "groups": [
+    {
+      "axis": 0,
+      "value": -70.5,
+      "normal_sign": -1,
+      "bounds": [
+        [
+          -70.5,
+          -31,
+          100
+        ],
+        [
+          -70.5,
+          39,
+          102
+        ]
+      ],
+      "ids": [
+        6433,
+        6438
+      ],
+      "area": 140.0,
+      "analytic_area": 140.0
+    },
+    {
+      "axis": 0,
+      "value": 70.5,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          70.5,
+          -31,
+          100
+        ],
+        [
+          70.5,
+          39,
+          102
+        ]
+      ],
+      "ids": [
+        6450,
+        6462
+      ],
+      "area": 140.0,
+      "analytic_area": 140.0
+    },
+    {
+      "axis": 1,
+      "value": 39,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          -70.5,
+          39,
+          100
+        ],
+        [
+          43,
+          39,
+          102
+        ]
+      ],
+      "ids": [
+        6443,
+        6454
+      ],
+      "area": 227.0,
+      "analytic_area": 227.0
+    },
+    {
+      "axis": 1,
+      "value": 39,
+      "normal_sign": 1,
+      "bounds": [
+        [
+          66.75,
+          39,
+          100
+        ],
+        [
+          70.5,
+          39,
+          102
+        ]
+      ],
+      "ids": [
+        6463,
+        6465
+      ],
+      "area": 7.5,
+      "analytic_area": 7.5
+    }
+  ],
+  "candidate_faces": 8,
+  "target_material": 3,
+  "selection": "Four full original rectangular outervertical eave sides of141x70x2plate. Left/rightx+-70.5,y-31..39,z100..102; rear y39 splitx[-70.5,43] and[66.75,70.5] by service tower. No whole-plate bbox or centroid-only painting.",
+  "boundary_proof": "Each group exactly2original triangles with4unique vertices and analyticareas140,140,227,7.5mm2. Rear tower x43..65,y23..43,z3..108 occludes middle22mm;original right window cut at x63.25..66.75,y26..40,z94..104 also removes adjacent eave1.75mm. Both excluded,not repaired. Side faces atx+-70.5 lie outside towerx43..65. No triangle cut or new geometry.",
+  "exclusions": "Top/bottom eave,front alreadycream,roofhead,cross,servicestructure,glass/brickbands,originalplinth untouched. No masspaint on windowwalls.",
+  "photo": {
+    "url": "https://c005.wzu.edu.tw/ezcatfiles/c005/img/img/716/L.jpg",
+    "sha256": "d19b4f1830f77237ed8309b660870e31dbc89b05db6c15935a0fe7c4c03e6c91",
+    "matches_original_source_sha256": true,
+    "personally_viewed": true,
+    "capture_date": "unknown",
+    "view": "one frontview; L-1 duplicate not independent evidence"
+  },
+  "appearance": "Official frontimage visibly lightcream roofeave thin edge; continuing its existing material3 onto same original side/rearedges is bounded samecomponent inference,not photographedrearverification. Underside darkshadow is not recolored.",
+  "limits": "Original solid flat2mm plate approximates real thin roof/eave and omits complicated drainage/soffit. No 2026currentcondition,exactcolor measurement or physicalprintclaim. Service tower rear dimensions and its windowcut intrusion intoeave remain originalunverified geometry; do not fillcut or recoloritsinnerreturnplanes.",
+  "photos_public": false,
+  "deduplication": "All current manifests scanned:no wzu-library path.",
+  "implementation_warning": "Legacy builder uses stdlib classify(vs) oneface atatime andpalette.json externally. Face table hasmaterialindices plus rolecounts,not face_reasons. Preserve old perface classifications and role counts for unchangedfaces; do not replace original vertexordering with numpyunique ordering."
+}

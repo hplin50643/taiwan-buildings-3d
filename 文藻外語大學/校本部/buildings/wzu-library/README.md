@@ -7,6 +7,18 @@
 | :---: | :---: | :---: |
 | ![實際STL正面](appearance/previews/front.png) | ![實際STL背面](appearance/previews/rear.png) |  |
 
+## 本次屋簷左右與後緣米白延伸（推估）
+
+將原屋簷兩側與兩段後緣共 4 個完整矩形／8 個原中性三角，延續原前緣米白材 3。原 5,236 著色面及逐面角色理由完全保留，其餘 6,890 面不變。原 6,898 面／3,379 點、原 first-seen 頂點順序、STL 位元、座標、面序及八色身份不變；現在中性 1,654、磚 348、青綠窗 184、淺石 3,351、灰梃 1,112、暗下窗 58、暗牌背 2、底座 189。新增逐面 `face_reasons` 方便審核，原角色計數仍保留對照。
+
+範圍限 z=100…102 mm 的左右 x=±70.5、後 y=39 原外側面，四組面積 140、140、227、7.5 mm²。**後右段只能 x=66.75…70.5，不能誤取 x=65 起**：原服務塔窗洞切割 x=63.25…66.75 已切入屋簷，該缺口保持，不補幾何、不染其內回面。服務塔、屋頂、陰暗簷底、前磚牆與窗皆不改。
+
+本輪親看校方圖書館正面照片，既有前屋簷米白可作同構件族的代理色；左右後緣是有界延伸推論，不宣稱背面每點有照片或真實材料接縫／色值量測，也不把前磚色套到整片側後牆。原照片與形體資料的時間限制照留，不作 2026 現況或實印保證；原屋頂與窗洞交接簡化不藉配色修正。照片只作私人研究，不入公開包。
+
+新版 QA 在 `appearance/qa-continuous-walls/`，歷史 QA 與根 `SHA256SUMS` 原樣保留；根舊清單的 README 與外觀產物雜湊屬歷史版本，現行完整校驗以 `PUBLIC-MODEL-SHA256SUMS` 為準。原分類器是單面函式、外讀 palette，故保留其封裝與頂點序而非改套其他模型分類器。外觀重建 `python appearance/source/build_continuous_walls.py`；交換驗證 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景驗證 `blender -b --python appearance/source/verify_continuous_scene.py`。新增 ZIP 含原 STL、建模程式、八色色表及選取域，不含照片；不重算歷史製造檢核。
+
+## 前版說明與保留限制
+
 校本部／公開外觀近似模型。每棟独立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 91.00 × 115.10 mm。
 
 

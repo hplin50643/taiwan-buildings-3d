@@ -1,0 +1,82 @@
+{
+  "blender": "4.3.2",
+  "samples": 96,
+  "denoising": false,
+  "resolution": [
+    1400,
+    1000
+  ],
+  "source": "Exact original STL triangles via appearance 3MF; no photos",
+  "visual_inspection_pending": false,
+  "files": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1766174,
+      "sha256": "e7763df3988a6d3f335cb72fef650d787ffc3b3bd0c3c687a359749a76e84861",
+      "camera_location": [
+        -195,
+        -260,
+        165
+      ],
+      "target": [
+        0,
+        0,
+        55
+      ],
+      "ortho_scale": 250,
+      "full_model": true
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1564225,
+      "sha256": "1d84e3a3b3d0919c856b1bfce178e34809c78668c02c79e26d74b79db74cbf93",
+      "camera_location": [
+        195,
+        230,
+        170
+      ],
+      "target": [
+        0,
+        0,
+        55
+      ],
+      "ortho_scale": 250,
+      "full_model": true
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1499686,
+      "sha256": "50a340193622343765fd831c2d258c8a353fe71378b8adcdfa5dab75365b9806",
+      "camera_location": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 200,
+      "full_model": true
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1741892,
+      "sha256": "1aec24ff7f644962f2275a689fbefe59c77915f740bd3faf422db5125531b1ee",
+      "camera_location": [
+        0,
+        -300,
+        57
+      ],
+      "target": [
+        0,
+        0,
+        57
+      ],
+      "ortho_scale": 205,
+      "full_model": true
+    }
+  ],
+  "visual_review": "visual-review.json"
+}
