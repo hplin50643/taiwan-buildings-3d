@@ -1,0 +1,140 @@
+{
+  "status": "PASS_east_entablature_short_side_planes_only",
+  "repo_path": "大同大學/中山北路校本部/buildings/ttu-shangzhi-hall",
+  "source_stl_sha256": "01393ae4416f73bd5306842c6d2dfde4b15b3fd301674fe2a2a53829900ba000",
+  "triangles": 32106,
+  "vertices": 16031,
+  "baseline_material_counts": [
+    27429,
+    2778,
+    931,
+    296,
+    210,
+    462
+  ],
+  "baseline_colored_faces": 4677,
+  "all_prior_colors_and_reasons_match_source_classifier": true,
+  "preserve_previous_inset_ids": [
+    25914,
+    25915,
+    25934,
+    25942,
+    25967,
+    25970
+  ],
+  "groups": [
+    {
+      "axis": 1,
+      "value": -7.9,
+      "normal_sign": -1,
+      "local_bounds": [
+        [
+          9.85,
+          -7.9,
+          16.4
+        ],
+        [
+          19.15,
+          -7.9,
+          18.35
+        ]
+      ],
+      "ids": [
+        25774,
+        25776
+      ],
+      "local_area": 18.135002845763644,
+      "analytic_local_area": 18.135000000000023,
+      "analytic_mm2": 88.24340397923888
+    },
+    {
+      "axis": 1,
+      "value": 7.9,
+      "normal_sign": 1,
+      "local_bounds": [
+        [
+          9.85,
+          7.9,
+          16.4
+        ],
+        [
+          19.15,
+          7.9,
+          18.35
+        ]
+      ],
+      "ids": [
+        25803,
+        25818
+      ],
+      "local_area": 18.135002845763644,
+      "analytic_local_area": 18.135000000000023,
+      "analytic_mm2": 88.24340397923888
+    },
+    {
+      "axis": 1,
+      "value": -8.15,
+      "normal_sign": -1,
+      "local_bounds": [
+        [
+          9.7,
+          -8.15,
+          18.35
+        ],
+        [
+          19.3,
+          -8.15,
+          18.95
+        ]
+      ],
+      "ids": [
+        25834,
+        25837
+      ],
+      "local_area": 5.759994903564632,
+      "analytic_local_area": 5.75999999999998,
+      "analytic_mm2": 28.027681660899564
+    },
+    {
+      "axis": 1,
+      "value": 8.15,
+      "normal_sign": 1,
+      "local_bounds": [
+        [
+          9.7,
+          8.15,
+          18.35
+        ],
+        [
+          19.3,
+          8.15,
+          18.95
+        ]
+      ],
+      "ids": [
+        25850,
+        25853
+      ],
+      "local_area": 5.759994903564632,
+      "analytic_local_area": 5.75999999999998,
+      "analytic_mm2": 28.027681660899564
+    }
+  ],
+  "candidate_faces": 8,
+  "target_material": 1,
+  "transform": "Original authored localmeters: localxy=STLxy/(150/68);localz=(STLz-2.4)/(150/68). All measurements here explicitly distinguish localmeters and scaledmodelmm.",
+  "domain": "Two outward shortside rectangles of main eastern entablature y+-7.9,x9.85..19.15,z16.4..18.35 and two of thin horizontal cornice y+-8.15,x9.7..19.3,z18.35..18.95. All full originaltriangles and rectangleareas checked. No centroid-only selection.",
+  "appearance": "Photo personallyviewed: easterncolumns,pediment and bandfaces pale stone. Extending same pale1 to original eastern entablature lateral sides is contiguous component-family inference,not separatelyphotographed full depth. Intricate real cornice carving/dentils absent and not added.",
+  "excluded": "Westportico,rotunda,dome,topring,slopedgable roof,soffits,tops,bottoms,clock,inset and allother faces unchanged. Do not mirror frontscheme across building.",
+  "limitations": "Original solid architrave/cornice profiles are coarse proxies,not exact classicalmouldings; photo primarily frontal,side-depth material inferred. Originaldome/width/heights crosssource approximations remain. No surveyedBIM,2026condition,physicalprint claim.",
+  "photo": {
+    "url": "https://images.darden.virginia.edu/transform/widescreen-large/f6ca9cdd-3b0b-41e0-8043-b6fd3c6c8457/11560-jpg?io=transform%3Afill%2Cwidth%3A2160%2Cheight%3A1216&quality=75",
+    "sha256": "1bb1523bfffa9f6f9a716cd1f89de387bbd3250786b2cdfc81e4d4d1863eaacc",
+    "matches_historical_source_sha256": true,
+    "personally_viewed": true,
+    "capture_date": "not independently confirmed",
+    "credit": "Tatung University Public Relations Center via Wikimedia Commons, CC BY-SA 3.0"
+  },
+  "photos_public": false,
+  "deduplication": "Twoledgers andallpublish-files checked; no ttu-shangzhi-hall manifest. Prior six triangularinsetreturns present in currentclassifier and preserved."
+}
