@@ -1,3 +1,15 @@
+## 本次高棟磚框淺內返補色
+
+本版僅新增4個原中性完整三角：上部左右磚框的淺內返 x=±61.75、y=14.5..16、z=38..101，延用既有磚色 `#B7866D`。重新親看九典官方湖側完整照片，磚框內返屬同一可見磚系統；原模型1.5mm淺深及框比例仍為近似，同構件延伸不代表精密照片註冊或2026現況。拍攝日期仍未知，照片只作私人研究、不收入包。
+
+原8,666面／4,293頂點、座標與面序保持；其餘8,662面材質不變，含原14個前向彩面與後續2個淺簷底磚面。新建置以build_current.py為基底保留這16面，不退回歷史14面。僅淺內返，不延深幕牆、玻璃、彩色葉片、屋頂、低翼或未知側後。未切三角、未加分界，未實體試印。
+
+本版稽核 `qa-continuous-walls/`；舊qa與下方範圍為歷史紀錄，現版20彩面（磚18、低翼灰2）。由模型根目錄執行現行重建 `python appearance/source/build_continuous_walls.py`；交換 `python appearance/source/verify_continuous_exchange.py`；五原視角／場景 `blender -b --python appearance/source/render_continuous_walls.py`；回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。舊build_appearance.py與build_current.py均不是本版重建入口；保留作歷史基底。ZIP無第三方照片。
+
+[原模型與歷史說明](../README.md)
+
+## 原版歷史說明（下方統計為前版；本次只新增四個磚框淺內返面）
+
 # 清華大學創新育成中心 — 限域外觀配色
 
 本層是既有近似模型的附加材質，不是新建築套數、全棟材質復原或現況實測。原 STL、8666 三角與面序完全不變。依九典官方完工作品照片，只選可完整分離的湖側高棟磚框正向面 12 面（973.47537 mm²）與低翼深灰簷板前臉 2 面（290.40009 mm²），合計 1263.87546 mm²。
