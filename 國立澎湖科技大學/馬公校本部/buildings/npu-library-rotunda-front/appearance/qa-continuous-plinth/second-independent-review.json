@@ -1,0 +1,448 @@
+{
+  "status": "PASS_DOMAIN_ONLY",
+  "read_only": true,
+  "triangles": 4922,
+  "vertices": 2429,
+  "source_stl_sha256": "e0ea088d1f0731101ec94be59c75105435bcfb5ba3c80fc0429eec612dbc6b3e",
+  "palette_sha256": "41b317988ff969822603ae2d5d26b37a9a548ec9e2ed455f8cfdc8303c5bd97c",
+  "baseline_face_materials_sha256": "cca02a346666007939b2d0f03b965d12a1609239858a4937d78a3bf01d9fb3ac",
+  "before_counts": [
+    4662,
+    80,
+    36,
+    144
+  ],
+  "after_counts": [
+    4650,
+    80,
+    48,
+    144
+  ],
+  "new_face_ids": [
+    1858,
+    1861,
+    1892,
+    1893,
+    1925,
+    1927,
+    1958,
+    1959,
+    1988,
+    1989,
+    2022,
+    2023
+  ],
+  "groups": [
+    {
+      "angle": -165,
+      "ids": [
+        1858,
+        1861
+      ],
+      "full_global_coplanar_component": true,
+      "fourcorners": [
+        [
+          -5.799999896026585,
+          3.0
+        ],
+        [
+          -5.799999896026585,
+          11.300000190734863
+        ],
+        [
+          5.799999919114774,
+          3.0
+        ],
+        [
+          5.799999919114774,
+          11.300000190734863
+        ]
+      ],
+      "area_mm2": 96.2800006781978,
+      "analytic_mm2": 96.28,
+      "symmetric_difference_mm2": 3.746851085841305e-06,
+      "overlap_mm2": 0.0,
+      "original_gray_fullheight_neighbors": [
+        {
+          "face": 1850,
+          "edge": [
+            [
+              -42.35188293457031,
+              -17.352754592895508,
+              3.0
+            ],
+            [
+              -42.35188293457031,
+              -17.352754592895508,
+              11.300000190734863
+            ]
+          ]
+        },
+        {
+          "face": 1854,
+          "edge": [
+            [
+              -45.354183197021484,
+              -6.148015022277832,
+              3.0
+            ],
+            [
+              -45.354183197021484,
+              -6.148015022277832,
+              11.300000190734863
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "angle": -135,
+      "ids": [
+        1892,
+        1893
+      ],
+      "full_global_coplanar_component": true,
+      "fourcorners": [
+        [
+          -5.800001131425208,
+          3.0
+        ],
+        [
+          -5.800001131425208,
+          11.300000190734863
+        ],
+        [
+          5.800001131425202,
+          3.0
+        ],
+        [
+          5.800001131425202,
+          11.300000190734863
+        ]
+      ],
+      "area_mm2": 96.28002099418325,
+      "analytic_mm2": 96.28,
+      "symmetric_difference_mm2": 2.0994183250497143e-05,
+      "overlap_mm2": 0.0,
+      "original_gray_fullheight_neighbors": [
+        {
+          "face": 1884,
+          "edge": [
+            [
+              -36.2038688659668,
+              -28.001428604125977,
+              3.0
+            ],
+            [
+              -36.2038688659668,
+              -28.001428604125977,
+              11.300000190734863
+            ]
+          ]
+        },
+        {
+          "face": 1890,
+          "edge": [
+            [
+              -28.001428604125977,
+              -36.2038688659668,
+              3.0
+            ],
+            [
+              -28.001428604125977,
+              -36.2038688659668,
+              11.300000190734863
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "angle": -105,
+      "ids": [
+        1925,
+        1927
+      ],
+      "full_global_coplanar_component": true,
+      "fourcorners": [
+        [
+          -5.799999919114781,
+          3.0
+        ],
+        [
+          -5.799999919114781,
+          11.300000190734863
+        ],
+        [
+          5.799999896026577,
+          3.0
+        ],
+        [
+          5.799999896026577,
+          11.300000190734863
+        ]
+      ],
+      "area_mm2": 96.2800006781978,
+      "analytic_mm2": 96.28,
+      "symmetric_difference_mm2": 3.7468510932131855e-06,
+      "overlap_mm2": 0.0,
+      "original_gray_fullheight_neighbors": [
+        {
+          "face": 1923,
+          "edge": [
+            [
+              -6.148015022277832,
+              -45.354183197021484,
+              3.0
+            ],
+            [
+              -6.148015022277832,
+              -45.354183197021484,
+              11.300000190734863
+            ]
+          ]
+        },
+        {
+          "face": 1924,
+          "edge": [
+            [
+              -17.352754592895508,
+              -42.35188293457031,
+              3.0
+            ],
+            [
+              -17.352754592895508,
+              -42.35188293457031,
+              11.300000190734863
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "angle": -75,
+      "ids": [
+        1958,
+        1959
+      ],
+      "full_global_coplanar_component": true,
+      "fourcorners": [
+        [
+          -5.799999896026572,
+          3.0
+        ],
+        [
+          -5.799999896026572,
+          11.300000190734863
+        ],
+        [
+          5.799999919114787,
+          3.0
+        ],
+        [
+          5.799999919114787,
+          11.300000190734863
+        ]
+      ],
+      "area_mm2": 96.2800006781978,
+      "analytic_mm2": 96.28,
+      "symmetric_difference_mm2": 3.7468510932131855e-06,
+      "overlap_mm2": 0.0,
+      "original_gray_fullheight_neighbors": [
+        {
+          "face": 1948,
+          "edge": [
+            [
+              6.148015022277832,
+              -45.354183197021484,
+              3.0
+            ],
+            [
+              6.148015022277832,
+              -45.354183197021484,
+              11.300000190734863
+            ]
+          ]
+        },
+        {
+          "face": 1962,
+          "edge": [
+            [
+              17.352754592895508,
+              -42.35188293457031,
+              3.0
+            ],
+            [
+              17.352754592895508,
+              -42.35188293457031,
+              11.300000190734863
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "angle": -45,
+      "ids": [
+        1988,
+        1989
+      ],
+      "full_global_coplanar_component": true,
+      "fourcorners": [
+        [
+          -5.800001131425209,
+          3.0
+        ],
+        [
+          -5.800001131425209,
+          11.300000190734863
+        ],
+        [
+          5.8000011314252,
+          3.0
+        ],
+        [
+          5.8000011314252,
+          11.300000190734863
+        ]
+      ],
+      "area_mm2": 96.28002099418325,
+      "analytic_mm2": 96.28,
+      "symmetric_difference_mm2": 2.099418324259236e-05,
+      "overlap_mm2": 0.0,
+      "original_gray_fullheight_neighbors": [
+        {
+          "face": 1982,
+          "edge": [
+            [
+              28.001428604125977,
+              -36.2038688659668,
+              3.0
+            ],
+            [
+              28.001428604125977,
+              -36.2038688659668,
+              11.300000190734863
+            ]
+          ]
+        },
+        {
+          "face": 1996,
+          "edge": [
+            [
+              36.2038688659668,
+              -28.001428604125977,
+              3.0
+            ],
+            [
+              36.2038688659668,
+              -28.001428604125977,
+              11.300000190734863
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "angle": -15,
+      "ids": [
+        2022,
+        2023
+      ],
+      "full_global_coplanar_component": true,
+      "fourcorners": [
+        [
+          -5.799999919114786,
+          3.0
+        ],
+        [
+          -5.799999919114786,
+          11.300000190734863
+        ],
+        [
+          5.799999896026572,
+          3.0
+        ],
+        [
+          5.799999896026572,
+          11.300000190734863
+        ]
+      ],
+      "area_mm2": 96.2800006781978,
+      "analytic_mm2": 96.28,
+      "symmetric_difference_mm2": 3.746851100585066e-06,
+      "overlap_mm2": 0.0,
+      "original_gray_fullheight_neighbors": [
+        {
+          "face": 2016,
+          "edge": [
+            [
+              42.35188293457031,
+              -17.352754592895508,
+              3.0
+            ],
+            [
+              42.35188293457031,
+              -17.352754592895508,
+              11.300000190734863
+            ]
+          ]
+        },
+        {
+          "face": 2029,
+          "edge": [
+            [
+              45.354183197021484,
+              -6.148015022277832,
+              3.0
+            ],
+            [
+              45.354183197021484,
+              -6.148015022277832,
+              11.300000190734863
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "total_mesh_area_mm2": 577.6800447011576,
+  "total_nominal_area_mm2": 577.68,
+  "mixed_global_components_before_after": [
+    0,
+    0
+  ],
+  "original80glass36gray144crown_preserved": true,
+  "all4910otherfaces_unchanged": true,
+  "photos": [
+    {
+      "path": "private/front-photo.jpg",
+      "url": "https://www.npu.edu.tw/df_ufiles/034/s_%E5%9C%96%E6%9B%B8%E8%B3%87%E8%A8%8A%E5%A4%A7%E6%A8%93%E5%A4%96%E8%A7%80%E6%AD%A3%E9%9D%A2.jpg",
+      "sha256": "9051c6e16597261d5400ac838a1495df28d683e5a95e782d001ac86909db7640",
+      "personally_viewed": true
+    },
+    {
+      "path": "private/side-photo.jpg",
+      "url": "https://www.npu.edu.tw/df_ufiles/034/s_%E5%9C%96%E6%9B%B8%E8%B3%87%E8%A8%8A%E5%A4%A7%E6%A8%93%E5%81%B4%E6%8B%8D(1).jpg",
+      "sha256": "5d55cb12adcda0364ed306ce8de17e49d7655838cad0d85b157072cd6c143baa",
+      "personally_viewed": true
+    }
+  ],
+  "source_mapping": "Front and side official images identify semicircular library rotunda, six arcadepiers, turquoisecanopies and upperopenring. Mediumgray lowerplinths clearly contrast paleupperpiers and projecting paletoplip. Sideimage shows gray at exposed basecorners; no unrelated wall proxy conflation.",
+  "inference": "Six fourth inwardverticalfaces continue same distinct rectangulargraybase; not all inwardfaces are independentlyvisible. Full-height sharededges to BOTH previouslygray sidefaces constrain this inference. No evidence of different inwardfinish in registered images, not calibratedpaint or proof of exact stonejoints.",
+  "builder_mapping": "radial_box at radius50,z2.8,tangentwidth11.6,radialdepth9.2,height8.5; innerplane45.4; baseunion hidesz2.8..3, so onlyz3..11.3 exposed. Do not reconstruct buried0.2.",
+  "exclusions": [
+    "Paletoplip/mainpiers; top/underside surfaces",
+    "Crownring, curvedwall, glass/windowframes, canopies",
+    "Artificial y0 rearcut, unrelated inwardfaces, ground"
+  ],
+  "limits": [
+    "Originalblockproxy preserved; no stonejoint/texture geometry added.",
+    "Captureunknown; page2018-08-29update notphoto date, no2026condition claim.",
+    "Privatephotos notpublicredistributed.",
+    "Domainreviewonly: productionNPZ/3MF/scene/ZIP/render still requireQA; no manufacturingclaim."
+  ],
+  "models_modified": false,
+  "ledger_modified": false,
+  "uploaded": false
+}

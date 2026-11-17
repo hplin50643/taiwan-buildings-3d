@@ -1,0 +1,426 @@
+{
+  "status": "PASS_SAME_SIX_DISTINCT_GRAY_PLINTH_INNER_VERTICAL_RETURNS",
+  "domain_only": true,
+  "repository_path": "國立澎湖科技大學/馬公校本部/buildings/npu-library-rotunda-front",
+  "triangles": 4922,
+  "vertices": 2429,
+  "source_stl_sha256": "e0ea088d1f0731101ec94be59c75105435bcfb5ba3c80fc0429eec612dbc6b3e",
+  "palette_sha256": "41b317988ff969822603ae2d5d26b37a9a548ec9e2ed455f8cfdc8303c5bd97c",
+  "baseline_face_materials_sha256": "cca02a346666007939b2d0f03b965d12a1609239858a4937d78a3bf01d9fb3ac",
+  "baseline_material_counts": [
+    4662,
+    80,
+    36,
+    144
+  ],
+  "proposed_material_counts": [
+    4650,
+    80,
+    48,
+    144
+  ],
+  "face_ids": [
+    1858,
+    1861,
+    1892,
+    1893,
+    1925,
+    1927,
+    1958,
+    1959,
+    1988,
+    1989,
+    2022,
+    2023
+  ],
+  "material_change": [
+    0,
+    2
+  ],
+  "groups": [
+    {
+      "angle_degrees": -165,
+      "face_ids": [
+        1858,
+        1861
+      ],
+      "local_radial_plane": 45.4,
+      "local_tangent_bounds": [
+        -5.8,
+        5.8
+      ],
+      "z_bounds": [
+        3,
+        11.3
+      ],
+      "normal": "radially inward",
+      "four_original_corners": true,
+      "full_coplanar_component": [
+        1858,
+        1861
+      ],
+      "area_mm2": 96.2800006781978,
+      "analytic_area_mm2": 96.28,
+      "old_gray_side_fullheight_adjacency": [
+        {
+          "new_face": 1858,
+          "old_gray_plinth_face": 1850,
+          "edge_vertices": [
+            [
+              -42.35188293457031,
+              -17.352754592895508,
+              3.0
+            ],
+            [
+              -42.35188293457031,
+              -17.352754592895508,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        },
+        {
+          "new_face": 1861,
+          "old_gray_plinth_face": 1854,
+          "edge_vertices": [
+            [
+              -45.354183197021484,
+              -6.148015022277832,
+              3.0
+            ],
+            [
+              -45.354183197021484,
+              -6.148015022277832,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        }
+      ]
+    },
+    {
+      "angle_degrees": -135,
+      "face_ids": [
+        1892,
+        1893
+      ],
+      "local_radial_plane": 45.4,
+      "local_tangent_bounds": [
+        -5.8,
+        5.8
+      ],
+      "z_bounds": [
+        3,
+        11.3
+      ],
+      "normal": "radially inward",
+      "four_original_corners": true,
+      "full_coplanar_component": [
+        1892,
+        1893
+      ],
+      "area_mm2": 96.28002099418325,
+      "analytic_area_mm2": 96.28,
+      "old_gray_side_fullheight_adjacency": [
+        {
+          "new_face": 1893,
+          "old_gray_plinth_face": 1884,
+          "edge_vertices": [
+            [
+              -36.2038688659668,
+              -28.001428604125977,
+              3.0
+            ],
+            [
+              -36.2038688659668,
+              -28.001428604125977,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        },
+        {
+          "new_face": 1892,
+          "old_gray_plinth_face": 1890,
+          "edge_vertices": [
+            [
+              -28.001428604125977,
+              -36.2038688659668,
+              3.0
+            ],
+            [
+              -28.001428604125977,
+              -36.2038688659668,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        }
+      ]
+    },
+    {
+      "angle_degrees": -105,
+      "face_ids": [
+        1925,
+        1927
+      ],
+      "local_radial_plane": 45.4,
+      "local_tangent_bounds": [
+        -5.8,
+        5.8
+      ],
+      "z_bounds": [
+        3,
+        11.3
+      ],
+      "normal": "radially inward",
+      "four_original_corners": true,
+      "full_coplanar_component": [
+        1925,
+        1927
+      ],
+      "area_mm2": 96.2800006781978,
+      "analytic_area_mm2": 96.28,
+      "old_gray_side_fullheight_adjacency": [
+        {
+          "new_face": 1925,
+          "old_gray_plinth_face": 1923,
+          "edge_vertices": [
+            [
+              -6.148015022277832,
+              -45.354183197021484,
+              3.0
+            ],
+            [
+              -6.148015022277832,
+              -45.354183197021484,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        },
+        {
+          "new_face": 1927,
+          "old_gray_plinth_face": 1924,
+          "edge_vertices": [
+            [
+              -17.352754592895508,
+              -42.35188293457031,
+              3.0
+            ],
+            [
+              -17.352754592895508,
+              -42.35188293457031,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        }
+      ]
+    },
+    {
+      "angle_degrees": -75,
+      "face_ids": [
+        1958,
+        1959
+      ],
+      "local_radial_plane": 45.4,
+      "local_tangent_bounds": [
+        -5.8,
+        5.8
+      ],
+      "z_bounds": [
+        3,
+        11.3
+      ],
+      "normal": "radially inward",
+      "four_original_corners": true,
+      "full_coplanar_component": [
+        1958,
+        1959
+      ],
+      "area_mm2": 96.2800006781978,
+      "analytic_area_mm2": 96.28,
+      "old_gray_side_fullheight_adjacency": [
+        {
+          "new_face": 1959,
+          "old_gray_plinth_face": 1948,
+          "edge_vertices": [
+            [
+              6.148015022277832,
+              -45.354183197021484,
+              3.0
+            ],
+            [
+              6.148015022277832,
+              -45.354183197021484,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        },
+        {
+          "new_face": 1958,
+          "old_gray_plinth_face": 1962,
+          "edge_vertices": [
+            [
+              17.352754592895508,
+              -42.35188293457031,
+              3.0
+            ],
+            [
+              17.352754592895508,
+              -42.35188293457031,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        }
+      ]
+    },
+    {
+      "angle_degrees": -45,
+      "face_ids": [
+        1988,
+        1989
+      ],
+      "local_radial_plane": 45.4,
+      "local_tangent_bounds": [
+        -5.8,
+        5.8
+      ],
+      "z_bounds": [
+        3,
+        11.3
+      ],
+      "normal": "radially inward",
+      "four_original_corners": true,
+      "full_coplanar_component": [
+        1988,
+        1989
+      ],
+      "area_mm2": 96.28002099418325,
+      "analytic_area_mm2": 96.28,
+      "old_gray_side_fullheight_adjacency": [
+        {
+          "new_face": 1989,
+          "old_gray_plinth_face": 1982,
+          "edge_vertices": [
+            [
+              28.001428604125977,
+              -36.2038688659668,
+              3.0
+            ],
+            [
+              28.001428604125977,
+              -36.2038688659668,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        },
+        {
+          "new_face": 1988,
+          "old_gray_plinth_face": 1996,
+          "edge_vertices": [
+            [
+              36.2038688659668,
+              -28.001428604125977,
+              3.0
+            ],
+            [
+              36.2038688659668,
+              -28.001428604125977,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        }
+      ]
+    },
+    {
+      "angle_degrees": -15,
+      "face_ids": [
+        2022,
+        2023
+      ],
+      "local_radial_plane": 45.4,
+      "local_tangent_bounds": [
+        -5.8,
+        5.8
+      ],
+      "z_bounds": [
+        3,
+        11.3
+      ],
+      "normal": "radially inward",
+      "four_original_corners": true,
+      "full_coplanar_component": [
+        2022,
+        2023
+      ],
+      "area_mm2": 96.2800006781978,
+      "analytic_area_mm2": 96.28,
+      "old_gray_side_fullheight_adjacency": [
+        {
+          "new_face": 2023,
+          "old_gray_plinth_face": 2016,
+          "edge_vertices": [
+            [
+              42.35188293457031,
+              -17.352754592895508,
+              3.0
+            ],
+            [
+              42.35188293457031,
+              -17.352754592895508,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        },
+        {
+          "new_face": 2022,
+          "old_gray_plinth_face": 2029,
+          "edge_vertices": [
+            [
+              45.354183197021484,
+              -6.148015022277832,
+              3.0
+            ],
+            [
+              45.354183197021484,
+              -6.148015022277832,
+              11.300000190734863
+            ]
+          ],
+          "length_mm": 8.300000190734863
+        }
+      ]
+    }
+  ],
+  "total_analytic_area_mm2": 577.68,
+  "total_mesh_area_mm2": 577.6800447011576,
+  "area_tolerance_per_group_mm2": 0.0001,
+  "all_original260coloredfaces_and4910unselected_materials_preserved": true,
+  "geometry_and_palette_unchanged": true,
+  "source": {
+    "register": "npulib-fetch-register.json",
+    "official_front": "private/front-photo.jpg",
+    "official_side": "private/side-photo.jpg",
+    "personally_viewed_both_full_images": true,
+    "observed": "Sixpierarcadehasmediumgraybases clearlydistinctfrompaleupperpiers andpaleupperlip. Samebasegrayfacefamilyalreadyregisteredonfrontandtwo sides. Sidephoto supportsgraycontinuationaroundvisiblebasecorners, but individualinwardfacesnotallvisible.",
+    "inferred": "Onlyfourth inwardverticalfaceofeach same original rectangularbase. Bothverticaledgesmeetoriginalgrayleft/rightfaces full8.3mmheight. Notwholewallorcoplanarcolumn recolor.",
+    "dates": "Captureunknown;officialpage2018-08-29updatedate notphotodate;no2026conditionclaim"
+  },
+  "limits": [
+    "Toplip/topplane/underside/paleuppercolumn excluded;photo paleupperlip is not gray authorization.",
+    "Originalblockplinth isapproximate; no materialtexture/stonejointshapes added.",
+    "Inwardfaces explicitlysamecomponent inference, notall independentlyphotographed.",
+    "Maincurvedbody/windowframes/awning/crown/artificialy0rearcut untouched.",
+    "Cannot extend neutral slot globally or allinwardfacesofothercomponents.",
+    "No geometryrepair,split/retriangulation;historicalprintQA limitations retained."
+  ],
+  "files_changed": "Only independentresearchoutputs, no model/ledger/upload",
+  "dedup": "No currentcontinuationmanifestor scopedHOLD foundforplinthinnerfaces; originalpackage appearance current36grayplinthfaces and144latercrown retained."
+}
