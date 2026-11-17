@@ -1,15 +1,38 @@
+# 北商桃園弘毅樓｜雙塔帽側緣同材質延續
+
+## 模型預覽
+
+| 前斜視 | 後斜視 | 正面 |
+|---|---|---|
+| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
+| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
+| ![頂視](top.png) | ![兩塔位置](entry-detail.png) | ![左塔帽（側緣含推論）](facade-detail.png) |
+| ![右塔帽（側緣含推論）](roof-detail.png) | | |
+
+## 本次前梯塔帽側緣同材質延續
+
+以現行 root 精確頂點與材質表為基準，保留兩前梯塔帽正面原 4 個已色三角，僅將四個完整側緣矩形的 8 原中性三角延用淡暖灰槽 0。新版淡暖灰 12 面、中性 21,904 面；原 21,916 三角／10,100 點、STL bytes、頂點表、面序與座標皆不變。既有色盤名稱及名義色保持原樣。
+
+四個有限域 x=−46.5、−25.5、25.5、46.5 mm，y=−64…−32、z=95.5…97.6 mm，逐域核對所有三頂點、向外法向、完整四角與原兩三角。總解析面積 268.8 mm²，原浮點網格面積 268.7998046875 mm²。帽頂、底面、後緣、整段塔身、文字、陽台、玻璃及混材牆全部排除，不切面、不改厚度、不補造細節。
+
+本輪親看總務處官方完整中庭照片 mobilead_4469_4517116_97186.jpg，可見兩塔正面帽緣及內側上緣同屬淺色。外側緣明示為同一帽構件的材料延續推論，不是四側各自照片確證。模型仍是原簡化帽板，非測繪或實際構造細節；原影像 EXIF 2015-06-17 僅日期線索，未獨立驗證時鐘，不是 2026 現況。私人參考照片不入公開包，不表示色彩量測、照片授權或實體試印。
+
+所有舊 QA、來源登錄、原建模／配色程式及舊 checksum 保留。舊說明中的「側緣中性」記錄原版範圍，本節明示新增 8 面。同色推論驗證在 `qa-continuous-walls/`，新版校驗表 `CONTINUOUS-CAPS-SHA256SUMS`。新版 root PNG 與 scene.blend 無文字覆蓋；舊 previews/ 仍是歷史基準，不應當作新版預覽。
+
+新版 3MF 完整精度字串精確對回原 STL，避免舊輸出小數截位傳播；不改幾何。lib3mf 在臨時材料編輯副本的重存精度誤差另記，交付不採重存副本。重建包 `rebuild-continuous-caps.zip` 含固定 SHA 的原公開 NPZ／STL／色盤，執行 `python build_continuous_caps.py`，再 `python verify_continuous_exchange.py`；Blender 執行 `render_continuous_caps.py`、`verify_continuous_scene.py`。numpy、lib3mf 2.5.0、Blender 4.3.2。原 colorize_model.py 及 export_appearance.py 是歷史入口，會還原舊 4 面版本。原製造限制與未經多料切片／試印限制完整保留。
+
+場景僅同步更新 source_mesh_sha256 以對應本次含材質指派的 color-mesh.npz，並更新 scope，明示四個完整塔帽側緣同淺灰推論，以及頂底、後緣、塔身與混材牆維持中性、非現況證明；其餘原屬性、全部材質定義與幾何不變。
+
+本頁為現行說明；根 README.zh-TW.md 保留舊版本原文及原 bytes，僅作歷史記錄。
+
+## 前版說明與保留限制（完整歷史文字）
+
 # 北商弘毅樓｜雙塔帽前緣局部淺暖灰
 
 **局部補色未完成：只雙樓梯塔帽前緣4原面淺暖灰；塔牆、玻璃、磚灰混壁、屋面與其餘面尚未分色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 ntub-hongyi／count_delta=0，國立臺北商業大學桃園校區。英文身份 NTUB Hongyi partial color。
 
 **維持原單一弘毅樓全形量體／有證立面近似，不是完整立面、屋頂或設備測繪。**
 
-| 前斜視 | 後斜視 | 正面 |
-|---|---|---|
-| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
-| ![背面](back.png) | ![西側](west.png) | ![東側](east.png) |
-| ![頂視](top.png) | ![兩塔位置](entry-detail.png) | ![左塔帽前緣](facade-detail.png) |
-| ![右塔帽前緣](roof-detail.png) | | |
 
 ## 材色範圍
 

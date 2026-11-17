@@ -1,0 +1,183 @@
+{
+  "status": "PASS_BOUNDED_SAME_CAP_SIDE_EDGE_INFERENCE",
+  "repository_path": "國立臺北商業大學/桃園校區/buildings/ntub-hongyi",
+  "read_only": true,
+  "modified_model": false,
+  "published": false,
+  "manifest_dedup": {
+    "count": 77,
+    "matches": []
+  },
+  "baseline": {
+    "triangles": 21916,
+    "vertices": 10100,
+    "colored_faces": [
+      2697,
+      2707,
+      9602,
+      9611
+    ],
+    "palette_material_index": 0,
+    "neutral_material_index": 1,
+    "mesh_sha256": "b3520aa0f3c2b21f56a4ed59018757b04a6031c77ee64ef4e397af7355ed5b7c",
+    "files": {
+      "palette.json": "2bb996eff208b95515388f7f8e5fe3f2541b6eb996b92a7d16e67ad4298774ac",
+      "colorize_model.py": "7c106e29d7661670c4cae53f59f9114bab9532e71a8a2141e313f522b1fed971",
+      "build_model.py": "4e72fe4a1b53b8e8ccff37e8ec52351cc35db74078594518cdf8ab1d7cc773b3",
+      "README.md": "515f0c825305b70e63ff2f10987df848219155e4d7e3c01f419063fde54093ae",
+      "COLOR-SOURCE-REGISTER.json": "562f4e47ea300966340a8327b8d0db98a461f29334caf6b9da1c5fef3a385a25",
+      "appearance-materials.json": "59ac2fc4528e62da132de4ad694e73193a0617253e8d3a40cdff67eceb6bb97b",
+      "color-mesh.npz": "b3520aa0f3c2b21f56a4ed59018757b04a6031c77ee64ef4e397af7355ed5b7c",
+      "sources.json": "ad181305dfcc3855aefdb33e34a85e135bac1acd4b9bd35deb97387e0185f71f"
+    }
+  },
+  "candidate": {
+    "faces": [
+      2700,
+      2702,
+      2710,
+      2711,
+      9604,
+      9606,
+      9614,
+      9616
+    ],
+    "groups": [
+      {
+        "axis": 0,
+        "value": -46.5,
+        "bounds_y": [
+          -64,
+          -32
+        ],
+        "bounds_z": [
+          95.5,
+          97.6
+        ],
+        "faces": [
+          2700,
+          2702
+        ],
+        "analytic_area_mm2": 67.2,
+        "mesh_area_mm2": 67.199951171875,
+        "outward_normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 0,
+        "value": -25.5,
+        "bounds_y": [
+          -64,
+          -32
+        ],
+        "bounds_z": [
+          95.5,
+          97.6
+        ],
+        "faces": [
+          2710,
+          2711
+        ],
+        "analytic_area_mm2": 67.2,
+        "mesh_area_mm2": 67.199951171875,
+        "outward_normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 0,
+        "value": 25.5,
+        "bounds_y": [
+          -64,
+          -32
+        ],
+        "bounds_z": [
+          95.5,
+          97.6
+        ],
+        "faces": [
+          9604,
+          9606
+        ],
+        "analytic_area_mm2": 67.2,
+        "mesh_area_mm2": 67.199951171875,
+        "outward_normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "axis": 0,
+        "value": 46.5,
+        "bounds_y": [
+          -64,
+          -32
+        ],
+        "bounds_z": [
+          95.5,
+          97.6
+        ],
+        "faces": [
+          9614,
+          9616
+        ],
+        "analytic_area_mm2": 67.2,
+        "mesh_area_mm2": 67.199951171875,
+        "outward_normal": [
+          1,
+          0,
+          0
+        ]
+      }
+    ],
+    "changed_faces": 8,
+    "analytic_area_mm2": 268.8,
+    "mesh_area_mm2": 268.7998046875,
+    "material_index": 0,
+    "expected_material_counts": [
+      12,
+      21904
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://gen.ntub.edu.tw/var/file/9/1009/randimg/mobilead_4466_5125419_96775.jpg",
+      "private_file": "mobilead_4466_5125419_96775.jpg",
+      "sha256": "db35c53ab3ddf1ea7e18b8c3a70a1ab07fa20de7277e03839c54248ce5dbcf3a",
+      "personally_viewed": false
+    },
+    {
+      "url": "https://gen.ntub.edu.tw/var/file/9/1009/randimg/mobilead_4469_4517116_97186.jpg",
+      "private_file": "mobilead_4469_4517116_97186.jpg",
+      "sha256": "f1bff46aa08c1256500598915889ca09de0bed35a9284e1ec9f03fc34011d533",
+      "personally_viewed": true
+    }
+  ],
+  "source_dates": "Official photo metadata 2015-06-17 clue, not verified capture date; not2026 condition",
+  "observation": "Official full courtyard photo clearly shows paired pale front stair towers and continuous pale upper inner side edge. Only original finite cap side edges extend existing pale cap family. Far/exterior sides explicitly inference, not all four side edges photographically verified.",
+  "excluded": [
+    "horizontal cap tops",
+    "undersides",
+    "rear cap edges",
+    "all tower shafts including letters fixtures balconies",
+    "roof hips and PV",
+    "glass panes and mullions",
+    "other mixed brick and pale walls"
+  ],
+  "limitations": [
+    "Model cap is simplified slab proxy; only original four finite vertical side rectangles,not a new precise as-built cap",
+    "All original faces/coordinates/order/material assignments unchanged except eight previously neutral faces",
+    "No private photo in public package; public review may contain URLs+hashes only",
+    "Former cap-return neutral scope is historical; new extension is same-component inference not new independent rear evidence"
+  ],
+  "other_screen": {
+    "student_center": "HOLD:current narrow two-canopy-front4faces;unknown returns and mixed sign/painted stair/fins. Source register photos are third-party not official imagery; no newly verified official close view in this pass.",
+    "ypu": "not screened this pass;latest appearance-review-v2 must be retained"
+  }
+}

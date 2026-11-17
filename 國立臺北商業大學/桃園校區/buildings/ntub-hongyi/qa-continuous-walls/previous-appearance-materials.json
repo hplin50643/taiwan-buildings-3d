@@ -1,0 +1,37 @@
+{
+  "palette": [
+    {
+      "id": 0,
+      "name": "NTUB Hongyi observed front tower caps pale warm gray",
+      "hex": "#C9C5BB",
+      "faces": 4
+    },
+    {
+      "id": 1,
+      "name": "UNVERIFIED main walls entrance windows roofs neutral",
+      "hex": "#B8BAB5",
+      "faces": 21912
+    }
+  ],
+  "domain_face_indices": {
+    "whole_front_tower_cap_edges": [
+      2697,
+      2707,
+      9602,
+      9611
+    ]
+  },
+  "coplanar_components": 4774,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false,
+  "geometry_policy": "21916 original triangles unchanged",
+  "limits": [
+    "Cap horizontal top skins, undersides and side/back returns remain neutral.",
+    "Tower shafts carry lettering, fixtures and tree-obscured lower zones; do not extend pale color down full walls.",
+    "Glazing contains reflections, frames and floors; no blanket blue glazing backing.",
+    "Outer shallow hips, rear service caps and roof equipment/PV location remain unverified and neutral.",
+    "Terrace canopy, solid balcony proxies, brick/gray mixed walls, other fascias, supports and all unlisted triangles remain neutral.",
+    "Preserve21916 original faces and geometry.",
+    "Original overall massing/evidence-backed facade approximation, not a measured full-condition reconstruction."
+  ]
+}
