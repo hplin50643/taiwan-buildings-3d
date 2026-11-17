@@ -1,0 +1,241 @@
+{
+  "status": "PASS_INDEPENDENT_DOMAIN_REVIEW_ONLY",
+  "read_only_models": true,
+  "new_output_not_reviewed": true,
+  "source_baseline_commit_recorded": "320d64b349a547bb68b605e5cdb34c66ea69a419",
+  "recorded_current_file_hashes_reverified": {
+    "中華醫事科技大學/校本部/buildings/hwai-nursing-j/model.stl": "6a529f825d294ee1066af11a9202e2f55214a43a5c91959407cbfc0f9c24b290",
+    "中華醫事科技大學/校本部/buildings/hwai-nursing-j/build_model.py": "7880ab7a7eece7d3d70a9c6af8e364f7874af16d940720323e7d47212cc6e751",
+    "中華醫事科技大學/校本部/buildings/hwai-nursing-j/appearance/source/build_appearance.py": "ebe8f7740881fc561e5f3737a92024cee9b812f956030c29c540b56b4c1bcaa5",
+    "中華醫事科技大學/校本部/buildings/hwai-nursing-j/appearance/face-materials.json": "bafece67aa39d4922cda522bb4d1bfd962774b27431e8b64b2dffcea80bf2375",
+    "中華醫事科技大學/校本部/buildings/hwai-nursing-j/appearance/palette.json": "596d4f312f85b6b224b7bebb7b39cc22cb7fd9eb4043b6137fe3ce4babc27c8f",
+    "中華醫事科技大學/校本部/buildings/hwai-nursing-j/sources.json": "9b07dbe927960624fde484202049738937edd8e82def82bbaf1682a49736f664"
+  },
+  "triangles": 4516,
+  "vertices": 2230,
+  "old_material_counts": [
+    4476,
+    16,
+    22,
+    2
+  ],
+  "proposed_material_counts": [
+    4468,
+    24,
+    22,
+    2
+  ],
+  "original40_colored_faces_preserved": true,
+  "changed_face_ids": [
+    3503,
+    3506,
+    3508,
+    3510,
+    3512,
+    3517,
+    3518,
+    3520
+  ],
+  "material_change": [
+    0,
+    1
+  ],
+  "source_palette_material1": {
+    "id": "muted_red_brown_visible_low_wing_roof",
+    "srgb": "#8C4847"
+  },
+  "plane_equation": "z=71+(-5-y)*3.2/13.579999999999998",
+  "max_selected_plane_error_mm": 3.1798507365010664e-06,
+  "analytic_original_hip_xy": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -67.0,
+          -5.0
+        ],
+        [
+          -37.0,
+          -5.0
+        ],
+        [
+          -41.2,
+          -18.58
+        ],
+        [
+          -62.8,
+          -18.58
+        ],
+        [
+          -67.0,
+          -5.0
+        ]
+      ]
+    ]
+  },
+  "occluders_derived_from_original_builder": [
+    {
+      "name": "left wing",
+      "xy_after_slope_height_clip": [
+        -61.5,
+        -14.5,
+        -34.5,
+        42.5
+      ]
+    },
+    {
+      "name": "middle wing",
+      "xy_after_slope_height_clip": [
+        -45.0,
+        -14.0,
+        -27.0,
+        44.0
+      ]
+    },
+    {
+      "name": "front stair pylon",
+      "xy_after_slope_height_clip": [
+        -42.0,
+        -27.0,
+        -32.0,
+        -13.0
+      ]
+    },
+    {
+      "name": "side pylon",
+      "xy_after_slope_height_clip": [
+        -67.0,
+        -18.0,
+        -61.0,
+        -8.0
+      ]
+    },
+    {
+      "name": "main wing",
+      "xy_after_slope_height_clip": [
+        -37.0,
+        -22.5,
+        63.0,
+        42.5
+      ]
+    },
+    {
+      "name": "low bay",
+      "xy_after_slope_height_clip": [
+        -65.5,
+        -8.394999999999987,
+        -38.5,
+        -6.5
+      ]
+    }
+  ],
+  "finite_remainder_xy": {
+    "type": "MultiPolygon",
+    "coordinates": [
+      [
+        [
+          [
+            -61.5,
+            -5.0
+          ],
+          [
+            -61.5,
+            -6.5
+          ],
+          [
+            -65.5,
+            -6.5
+          ],
+          [
+            -65.5,
+            -8.0
+          ],
+          [
+            -66.0721649484536,
+            -8.0
+          ],
+          [
+            -67.0,
+            -5.0
+          ],
+          [
+            -61.5,
+            -5.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            -62.8,
+            -18.58
+          ],
+          [
+            -62.97938144329897,
+            -18.0
+          ],
+          [
+            -61.0,
+            -18.0
+          ],
+          [
+            -61.0,
+            -14.5
+          ],
+          [
+            -42.0,
+            -14.5
+          ],
+          [
+            -42.0,
+            -18.58
+          ],
+          [
+            -62.8,
+            -18.58
+          ]
+        ]
+      ]
+    ]
+  },
+  "all_entire_oriented_supporting_plane_faces_selected": true,
+  "all_whole_projected_triangles_and_vertices_covered_with_1e-5_tolerance": true,
+  "global_coplanar_components": [
+    [
+      3503,
+      3517,
+      3518,
+      3520
+    ],
+    [
+      3506,
+      3508,
+      3510,
+      3512
+    ]
+  ],
+  "projected_symmetric_difference_mm2": 4.031346707920112e-06,
+  "projected_overlap_mm2": 0.0,
+  "analytic_surface_area_mm2": 90.12687790307994,
+  "mesh_surface_area_mm2": 90.1268630249899,
+  "adjacent_original_red_faces": [
+    3502,
+    3504
+  ],
+  "source_photo": {
+    "url": "https://www.hwai.edu.tw/var/file/0/1000/img/14.jpg",
+    "sha256": "e966b0cc189779ad7ad098b08e453552e4cb16506b0bfca4e759f4132732cb11",
+    "full_photo_and_J_crop_personally_viewed": true,
+    "identity": "J is tall white stairpylon/green glass complex with stepped red tiled roofs; lower front-left wing roof matches original modeled component",
+    "rear_slope_is_inference_not_visible_proof": true
+  },
+  "limits": [
+    "Only these8 originaltriangles of lowwinghip rearslope;two exposed coplanar islands after original Boolean masses",
+    "Do not paint otherroofs,rightsloperemainder,horizontalhiptop,pylons,fascias,glazing orwalls",
+    "Existing40coloredfaces,reasons,palette4slots and oldengineeringlimits must remain unchanged",
+    "Photo does not establish hiddenrear finish,calibratedcolor,2026condition or surveyedgeometry",
+    "Production requires later exact NPZ/3MF/scene/ZIP/render validation;this is domainreview only"
+  ],
+  "no_upload": true,
+  "no_ledger_or_model_changes": true
+}

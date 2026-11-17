@@ -1,0 +1,240 @@
+{
+  "status": "PASS_READ_ONLY_SAME_LOW_HIP_REAR_SLOPE_INFERENCE",
+  "slug": "hwai-nursing-j",
+  "date": "2026-11-17",
+  "source_stl_sha256": "6a529f825d294ee1066af11a9202e2f55214a43a5c91959407cbfc0f9c24b290",
+  "triangles": 4516,
+  "vertices": 2230,
+  "original_material_counts": [
+    4476,
+    16,
+    22,
+    2
+  ],
+  "proposed_material_counts": [
+    4468,
+    24,
+    22,
+    2
+  ],
+  "old_colored_faces_preserved": 40,
+  "changed_original_face_ids": [
+    3503,
+    3506,
+    3508,
+    3510,
+    3512,
+    3517,
+    3518,
+    3520
+  ],
+  "from_material": 0,
+  "to_material": 1,
+  "to_srgb": "#8C4847",
+  "same_component": "Original lower left front bay hip(-52,-19,71,30,28,3.2), whose front and left slopes already use material1. Only its rearward slope remainder, not main roof or other caps.",
+  "domain": {
+    "original_hip_xy": [
+      [
+        -67.0,
+        -5.0
+      ],
+      [
+        -37.0,
+        -5.0
+      ],
+      [
+        -41.2,
+        -18.58
+      ],
+      [
+        -62.8,
+        -18.58
+      ],
+      [
+        -67.0,
+        -5.0
+      ]
+    ],
+    "source_occluders_xy": [
+      [
+        "left taller wing",
+        [
+          -61.5,
+          -14.5,
+          -34.5,
+          42.5
+        ]
+      ],
+      [
+        "middle taller wing",
+        [
+          -45,
+          -14,
+          -27,
+          44
+        ]
+      ],
+      [
+        "front stair pylon",
+        [
+          -42,
+          -27,
+          -32,
+          -13
+        ]
+      ],
+      [
+        "side pylon",
+        [
+          -67,
+          -18,
+          -61,
+          -8
+        ]
+      ],
+      [
+        "main taller mass",
+        [
+          -37,
+          -22.5,
+          63,
+          42.5
+        ]
+      ],
+      [
+        "low-bay cap intersecting below z71.8",
+        [
+          -65.5,
+          -8.395,
+          -38.5,
+          -6.5
+        ]
+      ]
+    ],
+    "finite_remainder_xy": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -61.5,
+              -5.0
+            ],
+            [
+              -61.5,
+              -6.5
+            ],
+            [
+              -65.5,
+              -6.5
+            ],
+            [
+              -65.5,
+              -8.0
+            ],
+            [
+              -66.0721649484536,
+              -8.0
+            ],
+            [
+              -67.0,
+              -5.0
+            ],
+            [
+              -61.5,
+              -5.0
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -62.8,
+              -18.58
+            ],
+            [
+              -62.97938144329897,
+              -18.0
+            ],
+            [
+              -61.0,
+              -18.0
+            ],
+            [
+              -61.0,
+              -14.5
+            ],
+            [
+              -42.0,
+              -14.5
+            ],
+            [
+              -42.0,
+              -18.58
+            ],
+            [
+              -62.8,
+              -18.58
+            ]
+          ]
+        ]
+      ]
+    },
+    "slope_equation": "z=71+(-5-y)*3.2/13.58",
+    "z_limits": [
+      71,
+      74.2
+    ],
+    "complete_coplanar_edge_components": [
+      [
+        3503,
+        3517,
+        3518,
+        3520
+      ],
+      [
+        3506,
+        3508,
+        3510,
+        3512
+      ]
+    ],
+    "entire_oriented_supporting_plane_face_ids": [
+      3503,
+      3506,
+      3508,
+      3510,
+      3512,
+      3517,
+      3518,
+      3520
+    ],
+    "all_vertices_and_whole_triangles_within_finite_domain": true,
+    "expected_projection_area_mm2": 87.72426804123707,
+    "actual_projection_area_mm2": 87.7242685020683,
+    "symmetric_difference_projection_mm2": 4.031346707920112e-06,
+    "overlap_projection_mm2": 0.0,
+    "analytic_surface_area_mm2": 90.12687790307994,
+    "measured_surface_area_mm2": 90.1268630249899
+  },
+  "baseline_current_file": "../qa-continuous-lowhiprear/current-baseline.json",
+  "photo": {
+    "url": "https://www.hwai.edu.tw/var/file/0/1000/img/14.jpg",
+    "identity_page": "https://www.hwai.edu.tw/p/405-1000-35523%2Cc93.php?Lang=zh-tw",
+    "history_page": "https://www.hwai.edu.tw/p/16-1000-35517.php?Lang=zh-tw",
+    "viewed": "2026-11-17",
+    "capture_date": "Unknown; historical uncalibrated photograph does not establish 2026 state",
+    "photo_sha256": "e966b0cc189779ad7ad098b08e453552e4cb16506b0bfca4e759f4132732cb11",
+    "visual_observation": "Personally viewed official full photo and J crop. J has tall white stair pylons and green vertical glazing, stepped red/brown tiled caps including the lower left front projection. Existing16 red roof triangles use this original photographed cap. Rearward slope is not directly confirmed; proposed same-cap material continuity is inference, not a rear photograph."
+  },
+  "preserved_limits": [
+    "All original geometry, triangle order,40 existing colored faces and4palette slots remain unchanged.",
+    "Rear roof slope has two disconnected exposed islands after intersections, not one full uninterrupted trapezoid.",
+    "Do not extend into side pylon, low bay walls, stairglass, fascia, other roofs, hip horizontal top or right-slope fragment.",
+    "Original roof proportions and tapered top are visual/model approximations, not measured survey; no new geometry.",
+    "All previous engineering exceptions remain; domain review is not final delivery, render or 3MF certification.",
+    "No private reference photo included in any public output."
+  ],
+  "no_model_changes": true,
+  "no_upload": true
+}
