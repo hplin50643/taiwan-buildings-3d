@@ -8,6 +8,18 @@
 | ![入口正面](appearance/previews/front.png) | ![花園側](appearance/previews/left.png) | ![東側](appearance/previews/right.png) |
 | ![背面](appearance/previews/rear.png) | ![俯視](appearance/previews/top.png) |  |
 
+## 本次東池側上兩條磚帶同族延色
+
+在原入口／花園側 238 個磚面之外，將東池側 +X 上兩條原磚帶共 164 個原中性三角（82＋82）延續低彩度不透明磚色材 1；既有 238 著色面與全部未變更理由保留。現在磚面共 402、中性 9,224，其餘 9,462 面不變；原 9,626 面／4,775 點、兩色表、STL bytes、座標與面序不變。
+
+候選僅 x=58.32 mm 朝 +X 的有限原外牆，y=−40.905…40.905 mm；兩帶原三角實際 z 範圍為 30.215…40.475、41.555…51.66 mm，完整原面相加約 683.437445／670.756853 mm²，與已著色西側對應域面積相同。窗洞、窗框及回邊、白色水平帶、下牆柱、屋頂、入口山牆與門廊全部排除，不切面或增面。**南背面因原模型未建立可靠窗列，仍 HOLD，不把整片背牆染磚。**
+
+本輪親看校史兩張官方 2022 caption 照，以及總務處官方場地照片 PPT 第 9 頁「戶外劇場(學校泳池旁)」嵌圖。後者在劇場左後方顯示東池側上部紅磚與白帶，但劇場遮住部分，攝影年代不明；完整兩帶仍含有界同磚族延伸推論，不宣稱每點皆有照片或精確校色。2022 為校方caption年，不是認證拍攝日，所有來源不作 2026 現況保證。原四坡／窗列／尺度及歷史來源限制不變；未實體試印，照片與PPT僅私人研究，不入公開包。
+
+新版 QA 在 `appearance/qa-continuous-walls/`；歷史 QA、`source-manifest.json` 及 `SHA256SUMS.txt` 原樣保留作歷史記錄，舊檔案雜湊不代表本次產品。新版使用 `appearance/SHA256SUMS` 與根 `PUBLIC-MODEL-SHA256SUMS`。重建 `python appearance/source/build_continuous_walls.py`；交換驗證 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景驗證 `blender -b --python appearance/source/verify_continuous_scene.py`。ZIP 含原 STL、建模程式、原選取域與新增東帶域，不含照片。原兩材質的中性並非實景灰材質，維持原權利聲明。
+
+## 前版說明與保留限制
+
 2022正面/西側照片與2024全屋頂為主要依據，2009池側及官方其他角度補證的完整主體有界近似；不是測繪、同年完整復原或全校完成。
 
 
