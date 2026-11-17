@@ -5969,6 +5969,29 @@
         ]
       },
       "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_rear_parapet_same_component_inferred",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "explicit_same_component_inference"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 19.9,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          -0.35,
+          23.35
+        ],
+        "z": [
+          26.85,
+          28.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
     }
   ]
 }

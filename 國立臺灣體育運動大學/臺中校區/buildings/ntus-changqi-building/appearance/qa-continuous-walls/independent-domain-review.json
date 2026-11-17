@@ -1,0 +1,224 @@
+{
+  "status": "PASS_high_parapet_rear_outer_profile_only",
+  "repo_path": "國立臺灣體育運動大學/臺中校區/buildings/ntus-changqi-building",
+  "source_stl_sha256": "957c89bd2ae7e39ef4987e41e4f89803c6031e471c0986b1aa41696e892f9be4",
+  "triangles": 5698,
+  "baseline_material_counts": {
+    "N00": 3911,
+    "M03": 209,
+    "M02": 231,
+    "M01": 865,
+    "M08": 2,
+    "M10": 4,
+    "M07": 14,
+    "M05": 352,
+    "M06": 74,
+    "M09": 36
+  },
+  "baseline_colored_faces": 1787,
+  "original_mapping_rule_count": 229,
+  "all_existing_materials_and_rule_ids_match_mapping": true,
+  "all_original_csv_rows_preserved_as_baseline": true,
+  "prior_M10_four_cap_top_faces_preserved": true,
+  "candidate_faces": 16,
+  "ids": [
+    1019,
+    1021,
+    1022,
+    1024,
+    1027,
+    1030,
+    1047,
+    1050,
+    1051,
+    1052,
+    1056,
+    1058,
+    1060,
+    1065,
+    1071,
+    1073
+  ],
+  "target_material": "M02",
+  "target_index": 2,
+  "transform": "source_x=mm_x/(150/68)+30;source_y=-mm_y/(150/68)+13;source_z=mm_z/(150/68)-1.2;reflectionrequiresphysicaloutwardnormaltransformedaccordingly",
+  "domain": {
+    "axis": 0,
+    "plane": 19.9,
+    "outward_sign": 1,
+    "union_yz_rectangles": [
+      [
+        -0.35,
+        0,
+        26.85,
+        28.15
+      ],
+      [
+        0,
+        0.35,
+        27,
+        28.15
+      ],
+      [
+        0.35,
+        22.65,
+        27.5,
+        28.15
+      ],
+      [
+        22.65,
+        23.35,
+        26.85,
+        28.15
+      ]
+    ],
+    "local_bounds": [
+      [
+        19.9,
+        -0.35,
+        26.85
+      ],
+      [
+        19.9,
+        23.35,
+        28.15
+      ]
+    ],
+    "epsilon_source": 3e-05,
+    "area_mm2": 79.13193000641331,
+    "analytic_area_mm2": 79.13197448096888,
+    "analytic_formula": "(22.3*.65+1.4*1.3-.35*.15)*(150/68)^2",
+    "whole_triangle_polygon_clipping": [
+      {
+        "face": 1019,
+        "local_area": 0.026250106811631972,
+        "inside_domain_area": 0.026250053405843188,
+        "outside_error": 5.340578878437752e-08
+      },
+      {
+        "face": 1021,
+        "local_area": 0.2012497164409215,
+        "inside_domain_area": 0.20124971644078327,
+        "outside_error": 1.38222766565832e-13
+      },
+      {
+        "face": 1022,
+        "local_area": 0.17499989064514576,
+        "inside_domain_area": 0.17499978891999923,
+        "outside_error": 1.017251465285085e-07
+      },
+      {
+        "face": 1024,
+        "local_area": 0.22750032043428092,
+        "inside_domain_area": 0.2274998575848724,
+        "outside_error": 4.6284940852237e-07
+      },
+      {
+        "face": 1027,
+        "local_area": 0.22403791913823756,
+        "inside_domain_area": 0.224037919138115,
+        "outside_error": 1.2256862191861728e-13
+      },
+      {
+        "face": 1030,
+        "local_area": 0.003410990090109145,
+        "inside_domain_area": 0.0034109900901073686,
+        "outside_error": 1.7763568394002505e-15
+      },
+      {
+        "face": 1047,
+        "local_area": 0.22750003941843033,
+        "inside_domain_area": 0.22749987411498296,
+        "outside_error": 1.653034473747539e-07
+      },
+      {
+        "face": 1050,
+        "local_area": 0.22750032043427382,
+        "inside_domain_area": 0.22749992370620475,
+        "outside_error": 3.9672806906310143e-07
+      },
+      {
+        "face": 1051,
+        "local_area": 0.2275000394183735,
+        "inside_domain_area": 0.22750003941814612,
+        "outside_error": 2.2737367544323206e-13
+      },
+      {
+        "face": 1052,
+        "local_area": 0.11374973869334326,
+        "inside_domain_area": 0.1137497386934001,
+        "outside_error": 0
+      },
+      {
+        "face": 1056,
+        "local_area": 0.056875080108568454,
+        "inside_domain_area": 0.056875080108568454,
+        "outside_error": 0
+      },
+      {
+        "face": 1058,
+        "local_area": 0.0016799127870399388,
+        "inside_domain_area": 0.001679912786926252,
+        "outside_error": 1.1368683772161603e-13
+      },
+      {
+        "face": 1060,
+        "local_area": 0.05519502681357835,
+        "inside_domain_area": 0.05519502681357835,
+        "outside_error": 0
+      },
+      {
+        "face": 1065,
+        "local_area": 7.247495314280343,
+        "inside_domain_area": 7.247486240390117,
+        "outside_error": 9.073890225863579e-06
+      },
+      {
+        "face": 1071,
+        "local_area": 7.137202144343816,
+        "inside_domain_area": 7.137202144340978,
+        "outside_error": 2.8386182293616002e-12
+      },
+      {
+        "face": 1073,
+        "local_area": 0.1103443001265978,
+        "inside_domain_area": 0.11034430012659602,
+        "outside_error": 1.7763568394002505e-15
+      }
+    ]
+  },
+  "boundary_proof": "Outer plane consists of original highrear rim plus coplanar ends of two transverse parapetbars. Originalnorthservicecore x19.3..26.2,y0..8.8,zto27 removes y0...35,z26.85..27 notch. Keepnotch. Everytriangleentirelywithin4rectangleunion;no colorboundarycuts. x19.9 differsfrommainbodyx19.7,highstaircapx20.15;no largewallselected.",
+  "sources": {
+    "url": "https://acc.ntus.edu.tw/upload/general/attachment/5a557fa162efa2a7bc25ccff70fd9800.ppsx",
+    "official_page": "https://acc.ntus.edu.tw/index.php?article_id=18246&code=list&flag=detail&ids=838",
+    "retrieval": "HTTP206 byte-range extraction of ZIP entries,CRCchecked byzipfile;full161MBpresentationnotdownloaded",
+    "assets": [
+      {
+        "asset": "image31.jpeg",
+        "sha256": "c07c8c170fe082f61d23e3fdf7fd09418bcf6dee3ac33c59de937847de0951ce",
+        "personally_viewed": true,
+        "slide": 10,
+        "role": "design/materialdiagram"
+      },
+      {
+        "asset": "image33.png",
+        "sha256": "3f3810298034558ecd326878560106f6ec5ee0c20d00c440051accb11fa37c1c",
+        "personally_viewed": true,
+        "slide": 11,
+        "role": "completedbuildingphotograph"
+      },
+      {
+        "asset": "image34.png",
+        "sha256": "60702fcff3687035bdf7c65d00f41a9f8c85138b730caf537e50bb7d43bff223",
+        "personally_viewed": true,
+        "slide": 11,
+        "role": "completedbuildingphotograph"
+      }
+    ]
+  },
+  "appearance": "C-10designmateriallabels andC-11completedphotographs support pale hanging-tile parapet front/ends. Extending existingM02 onto originalcontiguousrearouterrim is same-parapet-family inference,not new independent rearfinishverification. Historic2017originalmainbody only,not laterPVinstallation.",
+  "exclusions": "Innerparapetfaces,top/bottom,greenbeds,glazing,windowreveals,equipment,stairtowers,allM10cap tops,allotheroriginalcolors/CSVreasonsremainunchanged.",
+  "limits": "Originalrim/thickness/footprint andsmallcoreintersection are approximation;notmeasuredjointorwaterproofingfinish.2017projectscope,photographcapturedateunverified,not2026condition.No physicalprintclaim.",
+  "photos_public": false,
+  "deduplication": "Allpublish-files checked:no ntus-changqi-building priorbatch;noschoolchange."
+}
