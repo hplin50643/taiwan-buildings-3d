@@ -1,0 +1,223 @@
+{
+  "status": "PASS_INDEPENDENT_FULL_ORIGINAL_RETURN_FACETS",
+  "vertices": 1276,
+  "triangles": 2560,
+  "baseline_counts": [
+    114,
+    2446
+  ],
+  "expected_counts": [
+    130,
+    2430
+  ],
+  "face_ids": [
+    1471,
+    1480,
+    1481,
+    1595,
+    1596,
+    1597,
+    1598,
+    1599,
+    1600,
+    1604,
+    1631,
+    1635,
+    1868,
+    1872,
+    1875,
+    1885
+  ],
+  "groups": [
+    {
+      "facet": 14,
+      "faces": [
+        1868,
+        1875
+      ],
+      "whole_coplanar_domain": true,
+      "full_original_four_corners": true,
+      "maximum_inverse_corner_error": 3.5471423494292434e-06,
+      "outward_normals_verified": true,
+      "mesh_area_mm2": 42.85690525771347,
+      "analytic_area_mm2": 42.85692418206041
+    },
+    {
+      "facet": 15,
+      "faces": [
+        1872,
+        1885
+      ],
+      "whole_coplanar_domain": true,
+      "full_original_four_corners": true,
+      "maximum_inverse_corner_error": 2.4170728752106826e-06,
+      "outward_normals_verified": true,
+      "mesh_area_mm2": 43.756848317694505,
+      "analytic_area_mm2": 43.756848627297515
+    },
+    {
+      "facet": 24,
+      "faces": [
+        1631,
+        1635
+      ],
+      "whole_coplanar_domain": true,
+      "full_original_four_corners": true,
+      "maximum_inverse_corner_error": 3.4460139690945935e-06,
+      "outward_normals_verified": true,
+      "mesh_area_mm2": 47.67594595340066,
+      "analytic_area_mm2": 47.67594648976709
+    },
+    {
+      "facet": 43,
+      "faces": [
+        1598,
+        1604
+      ],
+      "whole_coplanar_domain": true,
+      "full_original_four_corners": true,
+      "maximum_inverse_corner_error": 2.0508457059779144e-06,
+      "outward_normals_verified": true,
+      "mesh_area_mm2": 33.06217224835977,
+      "analytic_area_mm2": 33.062179424451024
+    },
+    {
+      "facet": 44,
+      "faces": [
+        1597,
+        1600
+      ],
+      "whole_coplanar_domain": true,
+      "full_original_four_corners": true,
+      "maximum_inverse_corner_error": 2.4186636440106714e-06,
+      "outward_normals_verified": true,
+      "mesh_area_mm2": 32.417957514318104,
+      "analytic_area_mm2": 32.4179536286578
+    },
+    {
+      "facet": 45,
+      "faces": [
+        1596,
+        1599
+      ],
+      "whole_coplanar_domain": true,
+      "full_original_four_corners": true,
+      "maximum_inverse_corner_error": 2.8914475951706423e-06,
+      "outward_normals_verified": true,
+      "mesh_area_mm2": 31.916114850318053,
+      "analytic_area_mm2": 31.916100774850495
+    },
+    {
+      "facet": 46,
+      "faces": [
+        1481,
+        1595
+      ],
+      "whole_coplanar_domain": true,
+      "full_original_four_corners": true,
+      "maximum_inverse_corner_error": 2.8914475951706423e-06,
+      "outward_normals_verified": true,
+      "mesh_area_mm2": 31.572161960579542,
+      "analytic_area_mm2": 31.572162552201554
+    },
+    {
+      "facet": 47,
+      "faces": [
+        1471,
+        1480
+      ],
+      "whole_coplanar_domain": true,
+      "full_original_four_corners": true,
+      "maximum_inverse_corner_error": 3.0861451862835504e-06,
+      "outward_normals_verified": true,
+      "mesh_area_mm2": 31.39727760430715,
+      "analytic_area_mm2": 31.39728040503865
+    }
+  ],
+  "total_area_mm2": 294.6553837066913,
+  "all_coplanar_domains_uniform": 638,
+  "scale": 1.0046885403719816,
+  "prior_gray_shared_full_longitudinal_edges": [
+    {
+      "faces": [
+        1470,
+        1480
+      ],
+      "length_mm": 19.08907891528317
+    },
+    {
+      "faces": [
+        1631,
+        1639
+      ],
+      "length_mm": 19.089082320152276
+    },
+    {
+      "faces": [
+        1871,
+        1885
+      ],
+      "length_mm": 19.089078569177936
+    }
+  ],
+  "all_selected_connected_to_current_gray": true,
+  "current114faces_preserved": true,
+  "other2544faces_unchanged": true,
+  "STL_NPZ_exact_coordinates_order": true,
+  "palette_unchanged": true,
+  "source": {
+    "personally_viewed": true,
+    "photo_sha256": "16c3ddeab1ede623ec807043963e08d03c2218ca7ee527ff019083a52f57460a",
+    "observation": "後視外弧淺灰連續皮與暗底可分，塔白不自動放行塔。模型facet與照片不是逐片精準測繪；新角域只是同一外弧的保守延續推論，非每facet直接實證。",
+    "third_party": "markchoo photo68後視，非校方實拍",
+    "capture_date": "未獨立證實，檔名2024不當確證，不稱2026",
+    "private_only": true
+  },
+  "excluded_facets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    25,
+    42
+  ],
+  "missing_facets_not_rebuilt": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "limits": [
+    "Preserve current114 colors:98front plus16rear-middle;never rollback stale98 baseline",
+    "New3facet extension neighboring existingrear-middle and5facets neighboring existingfronthalf are same outerribbon inference",
+    "Exclude terminalintersections facets0..13,cutend25/42,absent26..41;do not reconstruct missing rectangles",
+    "No innerwall,top,underside,groundterminal,tower,emblem,glass,hardware,booth or separate schoolnamewall paint",
+    "Original constantheight tiltedellipse is coarseproxy of realvaryingheight sculpture;no newgeometry fidelity claim",
+    "New finite angular boundaries are conservative scope not physicalmaterial seams",
+    "Unknowncapturedate,filename2024 not proof,not2026survey",
+    "Keep originalpending sourceregister and all oldQA bytes"
+  ],
+  "not_production_or_scene_audit": true
+}

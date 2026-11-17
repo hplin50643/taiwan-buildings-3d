@@ -1,0 +1,280 @@
+{
+  "status": "PASS_FINITE_SAME_RIBBON_FULL_RECTANGULAR_RETURN_FACETS_ONLY",
+  "repository_path": "弘光科技大學/校本部/buildings/hku-gate-guardhouse",
+  "vertices": 1276,
+  "triangles": 2560,
+  "baseline_counts": [
+    114,
+    2446
+  ],
+  "expected_counts": [
+    130,
+    2430
+  ],
+  "face_ids": [
+    1471,
+    1480,
+    1481,
+    1595,
+    1596,
+    1597,
+    1598,
+    1599,
+    1600,
+    1604,
+    1631,
+    1635,
+    1868,
+    1872,
+    1875,
+    1885
+  ],
+  "facet_ids": [
+    14,
+    15,
+    24,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "groups": [
+    {
+      "facet": 14,
+      "faces": [
+        1868,
+        1875
+      ],
+      "chord_endpoints": [
+        [
+          23.132934302331385,
+          17.83383350728088
+        ],
+        [
+          21.11166885474489,
+          18.78674030756363
+        ]
+      ],
+      "local_z": [
+        0,
+        19
+      ],
+      "mesh_area_mm2": 42.85690525771347,
+      "analytic_area_mm2": 42.856924182060354,
+      "infinite_plane_equals_complete_finite_domain": true,
+      "four_original_corners_match": true
+    },
+    {
+      "facet": 15,
+      "faces": [
+        1872,
+        1885
+      ],
+      "chord_endpoints": [
+        [
+          21.11166885474489,
+          18.78674030756363
+        ],
+        [
+          19.000000000000004,
+          19.650635094610966
+        ]
+      ],
+      "local_z": [
+        0,
+        19
+      ],
+      "mesh_area_mm2": 43.756848317694505,
+      "analytic_area_mm2": 43.756848627297586,
+      "infinite_plane_equals_complete_finite_domain": true,
+      "four_original_corners_match": true
+    },
+    {
+      "facet": 24,
+      "faces": [
+        1631,
+        1635
+      ],
+      "chord_endpoints": [
+        [
+          2.326828918379971e-15,
+          23.0
+        ],
+        [
+          -2.4853189107454394,
+          22.946473080965088
+        ]
+      ],
+      "local_z": [
+        0,
+        19
+      ],
+      "mesh_area_mm2": 47.67594595340066,
+      "analytic_area_mm2": 47.675946489767256,
+      "infinite_plane_equals_complete_finite_domain": true,
+      "four_original_corners_match": true
+    },
+    {
+      "facet": 43,
+      "faces": [
+        1598,
+        1604
+      ],
+      "chord_endpoints": [
+        [
+          -35.98334492081401,
+          6.0359866325790446
+        ],
+        [
+          -36.70518139898459,
+          4.470476127563026
+        ]
+      ],
+      "local_z": [
+        0,
+        19
+      ],
+      "mesh_area_mm2": 33.06217224835977,
+      "analytic_area_mm2": 33.06217942445103,
+      "infinite_plane_equals_complete_finite_domain": true,
+      "four_original_corners_match": true
+    },
+    {
+      "facet": 44,
+      "faces": [
+        1597,
+        1600
+      ],
+      "chord_endpoints": [
+        [
+          -36.70518139898459,
+          4.470476127563026
+        ],
+        [
+          -37.26984065532275,
+          2.8772580504032037
+        ]
+      ],
+      "local_z": [
+        0,
+        19
+      ],
+      "mesh_area_mm2": 32.417957514318104,
+      "analytic_area_mm2": 32.4179536286578,
+      "infinite_plane_equals_complete_finite_domain": true,
+      "four_original_corners_match": true
+    },
+    {
+      "facet": 45,
+      "faces": [
+        1596,
+        1599
+      ],
+      "chord_endpoints": [
+        [
+          -37.26984065532275,
+          2.8772580504032037
+        ],
+        [
+          -37.674904732204794,
+          1.2631548055012995
+        ]
+      ],
+      "local_z": [
+        0,
+        19
+      ],
+      "mesh_area_mm2": 31.916114850318053,
+      "analytic_area_mm2": 31.916100774850307,
+      "infinite_plane_equals_complete_finite_domain": true,
+      "four_original_corners_match": true
+    },
+    {
+      "facet": 46,
+      "faces": [
+        1481,
+        1595
+      ],
+      "chord_endpoints": [
+        [
+          -37.674904732204794,
+          1.2631548055012995
+        ],
+        [
+          -37.918639083066935,
+          -0.36492176924642217
+        ]
+      ],
+      "local_z": [
+        0,
+        19
+      ],
+      "mesh_area_mm2": 31.572161960579542,
+      "analytic_area_mm2": 31.572162552201743,
+      "infinite_plane_equals_complete_finite_domain": true,
+      "four_original_corners_match": true
+    },
+    {
+      "facet": 47,
+      "faces": [
+        1471,
+        1480
+      ],
+      "chord_endpoints": [
+        [
+          -37.918639083066935,
+          -0.36492176924642217
+        ],
+        [
+          -38.0,
+          -1.999999999999997
+        ]
+      ],
+      "local_z": [
+        0,
+        19
+      ],
+      "mesh_area_mm2": 31.39727760430715,
+      "analytic_area_mm2": 31.397280405038654,
+      "infinite_plane_equals_complete_finite_domain": true,
+      "four_original_corners_match": true
+    }
+  ],
+  "original_scale": 1.0046885403719816,
+  "original_inverse_rotation": "Ry(-12deg)@Rx(3deg),subtract(0,0,43)beforeinverse",
+  "all_coplanar_domains_single_material": 638,
+  "source_NPZ_sha256": "707cbe4f4979ff57b2384018c66f155b22b1a00047cf53ce9a5a69f6167c2bfd",
+  "source_STL_sha256": "24dd885b3cf13ca73a5903d9e57195ebc3bd9b3a2819315da19f83c5a3a6d65d",
+  "source_photo": {
+    "page": "https://www.markchoo.com.tw/mark/3868/photo/68",
+    "url": "https://www.markchoo.com.tw/book/book100/1131019068-b.jpg",
+    "sha256": "16c3ddeab1ede623ec807043963e08d03c2218ca7ee527ff019083a52f57460a",
+    "personally_viewed": true,
+    "matches_current_source_register": true,
+    "observation": "Rear middle outer ribbon pale family separate from darksoffit; same original band adjacent outerfacets inferred,not eachindividualfacet photoproven."
+  },
+  "limits": [
+    "Preserve current114 colors:98front plus16rear-middle;never rollback stale98 baseline",
+    "New3facet extension neighboring existingrear-middle and5facets neighboring existingfronthalf are same outerribbon inference",
+    "Exclude terminalintersections facets0..13,cutend25/42,absent26..41;do not reconstruct missing rectangles",
+    "No innerwall,top,underside,groundterminal,tower,emblem,glass,hardware,booth or separate schoolnamewall paint",
+    "Original constantheight tiltedellipse is coarseproxy of realvaryingheight sculpture;no newgeometry fidelity claim",
+    "New finite angular boundaries are conservative scope not physicalmaterial seams",
+    "Unknowncapturedate,filename2024 not proof,not2026survey",
+    "Keep originalpending sourceregister and all oldQA bytes"
+  ],
+  "no_model_modification": true,
+  "no_upload": true,
+  "source_color_mesh_sha256": "707cbe4f4979ff57b2384018c66f155b22b1a00047cf53ce9a5a69f6167c2bfd",
+  "source_stl_sha256": "24dd885b3cf13ca73a5903d9e57195ebc3bd9b3a2819315da19f83c5a3a6d65d",
+  "source_palette_sha256": "cad159516bd44044cf5c42a4aab4c522033be56225c74016c3ee77df8df1794f",
+  "source": {
+    "page": "https://www.markchoo.com.tw/mark/3868/photo/68",
+    "url": "https://www.markchoo.com.tw/book/book100/1131019068-b.jpg",
+    "sha256": "16c3ddeab1ede623ec807043963e08d03c2218ca7ee527ff019083a52f57460a",
+    "personally_viewed": true,
+    "matches_current_source_register": true,
+    "observation": "Rear middle outer ribbon pale family separate from darksoffit; same original band adjacent outerfacets inferred,not eachindividualfacet photoproven."
+  }
+}
