@@ -7,6 +7,18 @@
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
+## 本次中央入口雨庇兩端淡灰延伸（推估）
+
+將既有中央入口雨庇兩側垂直短端共 4 個原三角，延續已發布前帶的淡灰材 2。原 709 個著色面及所有未變更理由保留，特別保留 1408／1409 前帶及其 `bounded_F1_central_canopy_front_pale_background` 原理由，不倒退至舊分類器。原 1,524 面／764 點、七色表、STL 位元、座標與面序不變。現中性 811、混凝土灰 314、淡框 287、青綠代理 32、暗屋緣 2、附屋灰 70、商店窗代理 8。
+
+僅 x=0 的 1411／1413 與 x=16 的 1418／1420，限定 y=−22.5…−14、z=19…21 mm；每側完整原矩形面積 17 mm²。雨庇頂底、左附屋青綠斜頂、商店招牌、門框、臺階與其他側背牆不變，不切面或增面。
+
+本輪親看官方正面和斜面兩張照片，入口小雨庇前帶與側上緣灰白，頂部深暗／風化。**真雨庇是內凹頂盤與邊牆，原模型卻是 2 mm 實板**；兩端僅沿該原簡化量體作同構件色推估，不稱還原真實雨庇結構，不把頂部髒污延到側面，亦不烘入陰影。原中央入口斜坡被簡化為階梯的限制保留，不修復幾何。照片 EXIF 指向 2025-02-28，日期時區未獨立核實，非 2026 現況；未實體試印。原公開來源限度及七色代理意義保留，照片只私人研究，不入公開包。
+
+新版 QA 在 `appearance/qa-continuous-walls/`，歷史 QA 留存，更新 `PUBLIC-MODEL-SHA256SUMS`。重建 `python appearance/source/build_continuous_walls.py`（沿用 `build_current.py` 保護既有前帶）；交換驗證 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景驗證 `blender -b --python appearance/source/verify_continuous_scene.py`。ZIP 含原 STL、原建模程式與必要歷史分類器，不含照片。
+
+## 前版說明與保留限制
+
 ## 7 材質外觀版（2026-10-21）
 
 

@@ -1,0 +1,99 @@
+{
+  "status": "PASS_bounded_canopy_side_extension",
+  "repo_path": "國立聯合大學/buildings/erping-f1-architecture-1",
+  "source_stl_sha256": "91bb0d8dc10370e1c174090be4187774a2249aa3f53aa5213c5b7b81e49204c9",
+  "triangles": 1524,
+  "vertices": 764,
+  "baseline_material_counts": [
+    815,
+    314,
+    283,
+    32,
+    2,
+    70,
+    8
+  ],
+  "baseline_colored_faces": 709,
+  "groups": [
+    {
+      "axis": 0,
+      "value": 0,
+      "normal_sign": -1,
+      "ids": [
+        1411,
+        1413
+      ],
+      "bounds": [
+        [
+          0,
+          -22.5,
+          19
+        ],
+        [
+          0,
+          -14,
+          21
+        ]
+      ],
+      "analytic_area": 17,
+      "area": 17.0
+    },
+    {
+      "axis": 0,
+      "value": 16,
+      "normal_sign": 1,
+      "ids": [
+        1418,
+        1420
+      ],
+      "bounds": [
+        [
+          16,
+          -22.5,
+          19
+        ],
+        [
+          16,
+          -14,
+          21
+        ]
+      ],
+      "analytic_area": 17,
+      "area": 17.0
+    }
+  ],
+  "changed_faces": 4,
+  "target_material": 2,
+  "prior_classifier_lag": {
+    "preserve_face_ids": [
+      1408,
+      1409
+    ],
+    "preserve_colors": [
+      2,
+      2
+    ],
+    "preserve_reasons": [
+      "bounded_F1_central_canopy_front_pale_background",
+      "bounded_F1_central_canopy_front_pale_background"
+    ]
+  },
+  "photos": [
+    {
+      "url": "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/0/1100/gallery_1100_885303_26747.jpg",
+      "sha256": "971948d930c8825c2aa74d00547dc79d9d73c727158c22937e6bb5de133a414f",
+      "personally_viewed": true,
+      "date_independently_verified": false
+    },
+    {
+      "url": "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/0/1100/gallery_1100_604034_26747.jpg",
+      "sha256": "d4fd5fd0522620db0c311d7ec87e8bf95a0d49db720aac8df79b989038a25feb",
+      "personally_viewed": true,
+      "date_independently_verified": false
+    }
+  ],
+  "judgment": "Front and oblique official photographs show pale gray central entry canopy front and upper side rims. Extending existing published pale proxy onto original two short vertical side rectangles is bounded same-component inference. No other front/side material changed.",
+  "limitation": "Original central canopy is solid2mm slab without observed hollow parapet/roof construction or weathering details; does not precisely model real parapet. Do not color top or underside; do not adopt teal annex roof, dark weathered roof, adjacent store sign, window/door or neighboring building colors. Photos date/time not independently verified,no2026current-condition claim.",
+  "deduplication": "All current publish-files scanned; no matching F1 path. Existing third ledger does not include F1.",
+  "photos_public": false
+}
