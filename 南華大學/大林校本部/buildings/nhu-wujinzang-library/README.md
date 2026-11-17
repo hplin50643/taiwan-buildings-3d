@@ -7,6 +7,20 @@
 | :---: | :---: | :---: |
 | 前右<br>![屋頂限域配色](appearance/previews/front.png) | 後左<br>![後壁維持中性](appearance/previews/rear.png) |  |
 
+## 本次九道白屋頂橫肋薄側面補色
+
+僅將大型覆蓋上的九道白橫肋前後薄側面，共 18 個有限帶面／180 個完整原三角延用既有白色槽 1。原 190 白面、14 紅面（含先前右側 6 原紅坡）及全部既有理由保留。現在中性 3,994、白 370、紅 14；原 4,378 三角／2,159 點、STL bytes、座標與面序皆不變。
+
+逆變換 working=STL/1.5−(17,2,0)，各肋中心 y=−19.5+43j/8，側面 y±0.4、x=−12.5…12.5，高度介於原五段頂折線與其上 0.28。不能只以重心或三頂點判定：逐三角所有頂點，並核對三條邊與全部折線 x 分界交點，確保跨分段三角也完整落在同一肋帶域。每側原 10 面，實際總面積 283.498764 mm²，解析 18×25×0.28×1.5²=283.5 mm²；逐側差小於 0.0001 mm²。不切面、不補面，原折線、寬高及造型不變。
+
+本輪親看官方 node5 航照四張 tile，圖書館白覆蓋與橫肋可辨；薄側面在此像素尺度不能逐面辨色。本次明示相同白肋構件連續材質推論，不把陰影線當異色、不宣稱背側直接照片證實、金屬／塗料規格或校色。航照 1970 日期為無效預設，實際拍攝日期未知；地面 2023/9/18 欄位亦非 EXIF，不據此聲稱 2023 屋頂存在或 2026 現況。
+
+主白覆蓋的大型垂直端面、底面、肋 x 端與較深封邊交接、混合牆窗、屋架、服務盒及其他紅坡不擴色。既有 L 形比例和製造限制全部保留；不是新建一棟，未做實體試印或多料切片。原照片僅私人研究，不在公開包。
+
+新版 QA 在 `appearance/qa-continuous-walls/`；原 QA、`qa-roof-continuation/` 和舊 checksum 留存歷史。新校驗用 `appearance/SHA256SUMS` 與根 `PUBLIC-MODEL-SHA256SUMS`。舊 README 190 白／8 紅為更早版本，以上保護 14 紅才是本輪起點。重建用 `python appearance/source/build_continuous_walls.py`、`verify_continuous_exchange.py`，Blender 背景執行 `render_continuous_walls.py`、`verify_continuous_scene.py`。ZIP 含原 STL、建模程式與正式完整肋側域，不含私人照片或初步漏面選取。
+
+## 前版說明與保留限制
+
 ## 白覆蓋與前紅坡限域配色（2026-10-22）
 
 [五視角、來源及限制](appearance/README.md) · [表面色3MF](appearance/nhu-library-roofs-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
