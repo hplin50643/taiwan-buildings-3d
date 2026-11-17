@@ -7,6 +7,20 @@
 |---|---|---|
 | ![配色東南側](appearance/previews/front.png) | ![配色背面](appearance/previews/rear.png) | ![配色頂視](appearance/previews/top.png) |
 
+## 本次單一環廊斜柱同材質延續
+
+僅將既有 90 度環廊斜柱的兩側與內向面共 6 個完整原三角延用原淡灰卡其材質 4（#B7B4A0）。原外向兩面及其餘 22,840 個已色面不變；五槽材料、玻璃對位、原理由與原 36,870 三角／18,371 點、STL 座標面序均保留。不是替其餘 31 柱、牆、門窗或地形統一上色。
+
+以原柱中心軸 (0,28.6,6.35) 至 (0,30,13.85) 設計公尺建立局部座標，三個 ±0.45m 側平面逐面核對全部三頂點、有限柱長與外法向。原可見段被水平面切至模型 z=17.9…30.1mm；每側兩原三角構成完整四頂點面，面積約 22.339316 mm²，合計約 67.017948 mm²。端部接觸面不塗、不切三角、不改厚度或曲面。
+
+本輪重看施工商 S3 完成屋面時期原照及校方 S1 地面照，支持淺灰卡其柱族；特定 90 度柱的對位本來就是近似。本次同柱側面與內向面明示為同構件材質延續推論，不是每面獨立照片確證。拍攝日期不明，施工現場狀態不等於 2026 現況；顏色未校正，非材料規格。私人參考圖片不隨公開包。
+
+新版 QA 為 `qa-continuous-column/`；歷史 `qa/`、舊 SHA256SUMS 與 MANIFEST 保留原 bytes，僅代表原版本，現版請用 `CONTINUATION-SHA256SUMS`。新重建：`python appearance/source/build_continuous_column.py`，再執行 `export_continuous_3mf.py`；Blender 使用原 `render_appearance.py -- --render`、新版 `verify_continuous_scene.py`；PNG 去 metadata 後執行 `verify_continuous_package.py`。`rebuild-continuous-source.zip` 可孤立精確重建網格、逐面材料與 3MF，不含照片。原製造、懸挑、薄件與未實體試印限制不變。
+
+場景僅在 unknown_policy 原完整文字後追加同一 90 度柱側面與內向面 6 個原面的材質延續推論，明示其他柱、牆、玻璃及接觸面不變；其餘原屬性、全部材質定義與幾何不變。隱私修訂副本的 PRIVACY-REPAIR-SHA256SUMS 留存為該階段記錄；本次完整交付以根 PUBLIC-MODEL-SHA256SUMS 校驗。
+
+## 前版說明與保留限制
+
 [回礁溪校區](../../README.md)
 
 

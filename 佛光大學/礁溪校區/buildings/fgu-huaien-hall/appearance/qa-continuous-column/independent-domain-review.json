@@ -1,0 +1,118 @@
+{
+  "status": "PASS_FINITE_SAME_COLUMN_INFERENCE",
+  "repository_path": "佛光大學/礁溪校區/buildings/fgu-huaien-hall",
+  "candidate": {
+    "faces": [
+      6191,
+      6192,
+      6193,
+      6195,
+      6197,
+      6198
+    ],
+    "groups": [
+      {
+        "axis": 0,
+        "sign": -1,
+        "faces": [
+          6192,
+          6193
+        ],
+        "area_mm2": 22.339310707924596,
+        "analytic_area_mm2": 22.339316028920848,
+        "all_three_vertices_finite": true,
+        "complete_original_quadrilateral": true
+      },
+      {
+        "axis": 0,
+        "sign": 1,
+        "faces": [
+          6195,
+          6198
+        ],
+        "area_mm2": 22.339310707924596,
+        "analytic_area_mm2": 22.339316028920848,
+        "all_three_vertices_finite": true,
+        "complete_original_quadrilateral": true
+      },
+      {
+        "axis": 1,
+        "sign": -1,
+        "faces": [
+          6191,
+          6197
+        ],
+        "area_mm2": 22.339316447750836,
+        "analytic_area_mm2": 22.339316028920848,
+        "all_three_vertices_finite": true,
+        "complete_original_quadrilateral": true
+      }
+    ],
+    "material_index": 4,
+    "local_origin_design_m": [
+      0.0,
+      28.6,
+      6.35
+    ],
+    "local_basis": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.98302024876546,
+        -0.1834971131028857
+      ],
+      [
+        0.0,
+        0.1834971131028857,
+        0.98302024876546
+      ]
+    ],
+    "local_box_design_m": {
+      "side_halfwidth": 0.45,
+      "axis_max": 7.629547824084989
+    },
+    "actual_z_bounds_mm": [
+      17.9,
+      30.1
+    ],
+    "excluded": "caps/contactsurfaces;allother31columns;glazing,walls,frames,terrain",
+    "old_material4_faces": [
+      6194,
+      6196
+    ],
+    "existing_colors_preserved": 22842
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "type": "official university photograph",
+      "page_url": "https://general.fgu.edu.tw/zh_tw/page401",
+      "asset_url": "https://general.fgu.edu.tw/uploads/asset/data/5cc7431e0e588f1fa3000221/191_9ac8d793.jpg",
+      "date": "Photograph date unspecified. Current served asset retrieved 2026-10-24; HTTP last-modified is not photography date.",
+      "observed": "East entrance and front curved solid wall: pale gray/warm gray structure, gray wall, reflective blue-gray horizontal glazing, gray standing-seam ring. White cap mostly hidden by low viewpoint.",
+      "limits": "536x328 is the original linked asset, not a search thumbnail; use higher-resolution S2/S3 for material boundaries. Lighting/sky reflection are not calibrated material color.",
+      "rights": "Private research/reference only. No open redistribution license established; original image/PDF rights remain with publisher/photographer. Do not include third-party pixels, textures or documents in public repository/model output."
+    },
+    {
+      "id": "S3",
+      "type": "contractor project photograph (roof installation substantially complete)",
+      "page_url": "https://www.cawsmetal.com.tw/宜蘭佛光大學體育館・活動中心-鋼構工程/",
+      "asset_url": "https://www.cawsmetal.com.tw/wp-content/uploads/2020/08/D012-1-scaled.jpg",
+      "date": "Photograph date unlabelled; project-era landscaping/construction visible. Upload directory 2020/08 is not exposure date.",
+      "observed": "White shallow membrane cap, medium gray standing-seam sloping annulus, dark reflective glazing behind external colonnade, light muted gray/khaki columns, gray lower wall.",
+      "limits": "Public full-size link gives 2560x1920, not search thumbnail. Ongoing site work means do not copy unfinished ground/temporary equipment. Exact time and final facade coating not established.",
+      "rights": "Private research/reference only. No open redistribution license established; original image/PDF rights remain with publisher/photographer. Do not include third-party pixels, textures or documents in public repository/model output."
+    }
+  ],
+  "private_files": {
+    "fgu-s3.jpg": "618de84359e748de6cacef19b2bf123d3876c3eeba09a77a09ff6003640d41f5",
+    "fgu-s1.jpg": "958313b22324e48840bdbc396427ea3387c470b8fe268a4fa7241e97eca7c55b"
+  },
+  "visual_observation": "S3 full resolution inspected: pale gray khaki oblique structural columns, no evident distinct color on sidefaces; S1 corroborates pale structural family. Specific90degreecolumn registration remains approximate. Hidden same-column side/rear inferred,not independentlyphotographed. Construction-era date unknown,not2026condition.",
+  "modified_model": false,
+  "published": false
+}

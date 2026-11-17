@@ -1,16 +1,5 @@
 # 懷恩館｜原網格限定配色
 
-本版在既有的佛光大學懷恩館外觀近似上，加入有來源約束的**面材質**；不是重建幾何、實測復原或完整實景塗裝。
-
-## 可下載與編修
-
-- [scene.blend](scene.blend)：可編修的原三角面與 4 個材質槽；每面保留 `original_stl_face_id`。
-- [fgu-huaien-hall-materials.3mf](fgu-huaien-hall-materials.3mf)：真正的逐面 base-material 指派，不是只有縮圖或物件名稱。
-- [原 model.stl](../model.stl)：仍為原檔，不承載顏色，SHA256 `95974eb366614bb7caffeba43a5e0ae52cdb971668c51a385de9cc5f46be13e9`。
-- 尺寸仍為 **150 × 144 × 47.60 mm**，約 1:500；36,870 個原三角面，座標、面順序、繞向與幾何保持不變。
-
-## 這些顏色代表什麼
-
 | 材質 | 顯示近似色 | 原面數 | 範圍 |
 |---|---|---:|---|
 | 白色膜帽 | `#E8E8E3` | 22,216 | 符合原帽頂輪廓的朝外上表面；不含環頂小平臺 |
@@ -37,6 +26,32 @@
 | ![正面低視角](previews/front-low.png) | ![背面低視角](previews/rear-low.png) | ![東側](previews/east.png) |
 | 西側 | 前窗細節 | 環廊窗細節 |
 | ![西側](previews/west.png) | ![前窗細節](previews/glazing-front-detail.png) | ![環廊窗細節](previews/glazing-gallery-detail.png) |
+
+## 本次單一環廊斜柱同材質延續
+
+僅將既有 90 度環廊斜柱的兩側與內向面共 6 個完整原三角延用原淡灰卡其材質 4（#B7B4A0）。原外向兩面及其餘 22,840 個已色面不變；五槽材料、玻璃對位、原理由與原 36,870 三角／18,371 點、STL 座標面序均保留。不是替其餘 31 柱、牆、門窗或地形統一上色。
+
+以原柱中心軸 (0,28.6,6.35) 至 (0,30,13.85) 設計公尺建立局部座標，三個 ±0.45m 側平面逐面核對全部三頂點、有限柱長與外法向。原可見段被水平面切至模型 z=17.9…30.1mm；每側兩原三角構成完整四頂點面，面積約 22.339316 mm²，合計約 67.017948 mm²。端部接觸面不塗、不切三角、不改厚度或曲面。
+
+本輪重看施工商 S3 完成屋面時期原照及校方 S1 地面照，支持淺灰卡其柱族；特定 90 度柱的對位本來就是近似。本次同柱側面與內向面明示為同構件材質延續推論，不是每面獨立照片確證。拍攝日期不明，施工現場狀態不等於 2026 現況；顏色未校正，非材料規格。私人參考圖片不隨公開包。
+
+新版 QA 為 `qa-continuous-column/`；歷史 `qa/`、舊 SHA256SUMS 與 MANIFEST 保留原 bytes，僅代表原版本，現版請用 `CONTINUATION-SHA256SUMS`。新重建：`python appearance/source/build_continuous_column.py`，再執行 `export_continuous_3mf.py`；Blender 使用原 `render_appearance.py -- --render`、新版 `verify_continuous_scene.py`；PNG 去 metadata 後執行 `verify_continuous_package.py`。`rebuild-continuous-source.zip` 可孤立精確重建網格、逐面材料與 3MF，不含照片。原製造、懸挑、薄件與未實體試印限制不變。
+
+場景僅在 unknown_policy 原完整文字後追加同一 90 度柱側面與內向面 6 個原面的材質延續推論，明示其他柱、牆、玻璃及接觸面不變；其餘原屬性、全部材質定義與幾何不變。隱私修訂副本的 PRIVACY-REPAIR-SHA256SUMS 留存為該階段記錄；本次完整交付以根 PUBLIC-MODEL-SHA256SUMS 校驗。
+
+## 前版說明與保留限制
+
+本版在既有的佛光大學懷恩館外觀近似上，加入有來源約束的**面材質**；不是重建幾何、實測復原或完整實景塗裝。
+
+## 可下載與編修
+
+- [scene.blend](scene.blend)：可編修的原三角面與 4 個材質槽；每面保留 `original_stl_face_id`。
+- [fgu-huaien-hall-materials.3mf](fgu-huaien-hall-materials.3mf)：真正的逐面 base-material 指派，不是只有縮圖或物件名稱。
+- [原 model.stl](../model.stl)：仍為原檔，不承載顏色，SHA256 `95974eb366614bb7caffeba43a5e0ae52cdb971668c51a385de9cc5f46be13e9`。
+- 尺寸仍為 **150 × 144 × 47.60 mm**，約 1:500；36,870 個原三角面，座標、面順序、繞向與幾何保持不變。
+
+## 這些顏色代表什麼
+
 
 9 張圖均繪製交付的同一份原網格與面材質；Workbench 中性工作室照明，並非照片級或色彩校正的現場再現。
 
