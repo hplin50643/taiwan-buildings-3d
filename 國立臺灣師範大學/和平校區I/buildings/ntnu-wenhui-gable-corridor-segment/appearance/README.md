@@ -4,12 +4,20 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面保持中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
+| 正面<br>![正面](previews/front.png) | 背截面中性、左牆連續推估<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
 | ![頂視](previews/top.png) |  |  |
 
 [表面色 3MF](wenhui-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
-## 來源與配色邊界
+## 2026-11-17 左側連續牆面補色（目前版）
+
+依使用者希望把正面同材質延伸到其他面的方向，本次將左側主牆6個原三角面補為既有紅磚 `#A64E38`、左側連續基座2面補為既有石灰色 `#A3A59B`。這是**同一主體材質連續的推估**，不是新取得左側照片或實測色票。背面是本段人工裁切面，沒有塗成實景外牆；屋頂、右廊、側窗／凹面都維持原樣。
+
+原STL、3,508面座標與面序完全不變，僅8面改色；其餘3,500面材質指派相同。六材質面數依序為687、142、1677、890、90、22。[本版驗證](qa/continuous-wall-verification.json) · [本版重建來源](continuous-wall-source.zip)。原製造與未試印限制照舊。這仍是文薈廳局部模型，不是整棟。
+
+重建目前版：`python appearance/source/build_continuous_wall.py`，`blender -b -t 2 -P appearance/source/render_continuous_wall.py`。下方舊版配色範圍／QA為歷史記錄，不代表此次重跑全部歷史流程。
+
+## 歷史版來源與配色邊界
 
 親自查看 [2011-09-29 校方〈文薈廳復舊再生〉報導](https://pr.ntnu.edu.tw/ntnunews/index.php?id=10656&mode=data&type_id=72)與[正面照片](https://pr.ntnu.edu.tw/archive/news/201109292DSC_0005.JPG)，以及 [2023-05-18 校史影像特展報導](https://pr.ntnu.edu.tw/ntnunews/index.php?id=21598&mode=data)與[山牆及右廊照片](https://pr.ntnu.edu.tw/archive/news/d35c3de50ed591b61481764308271df8.jpg)。日期為報導發布日，不推定照片精確拍攝時刻，也不宣稱 2026 現況。來源照片不隨模型或備份散布。
 

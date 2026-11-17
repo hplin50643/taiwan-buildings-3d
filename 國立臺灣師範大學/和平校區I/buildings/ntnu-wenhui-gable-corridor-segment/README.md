@@ -1,5 +1,14 @@
 # 文薈廳圓窗山牆與蝙蝠廊段
 
+## 2026-11-17 左側連續牆面補色（目前版）
+
+依使用者希望把正面同材質延伸到其他面的方向，本次將左側主牆6個原三角面補為既有紅磚 `#A64E38`、左側連續基座2面補為既有石灰色 `#A3A59B`。這是**同一主體材質連續的推估**，不是新取得左側照片或實測色票。背面是本段人工裁切面，沒有塗成實景外牆；屋頂、右廊、側窗／凹面都維持原樣。
+
+原STL、3,508面座標與面序完全不變，僅8面改色；其餘3,500面材質指派相同。六材質面數依序為687、142、1677、890、90、22。[本版驗證](appearance/qa/continuous-wall-verification.json) · [本版重建來源](appearance/continuous-wall-source.zip)。原製造與未試印限制照舊。這仍是文薈廳局部模型，不是整棟。
+
+重建目前版：`python appearance/source/build_continuous_wall.py`，`blender -b -t 2 -P appearance/source/render_continuous_wall.py`。下方舊版配色範圍／QA為歷史記錄，不代表此次重跑全部歷史流程。
+
+
 ## 模型預覽
 
 
