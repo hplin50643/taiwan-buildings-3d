@@ -1,3 +1,11 @@
+## 本次兩塊完整外牆補色（同構件推估）
+
+原主體右側 x=61、z=17..95 與低翼後側 y=56.5、z=3..28 的兩塊完整外牆，共 **4 個原中性三角面**，延用既有銀白外皮代理 `#CBD0CC`。**這是同構件材質連續性推估，沒有新右側／後側照片定位證據，不表示已核實 2026 現況。** 原模型該兩面沒有窗孔與網眼，不藉補色宣稱實物為全實牆或新增網織細節。
+
+原 2,508 面／1,246 頂點及面序保持；其餘 2,504 面材料不變。屋頂、下部基座、所有窗孔及開放走廊凹背、橙框、既有玻璃與白窗框保留。僅完整原垂直面，不切面、不新增分界，未實體試印。
+
+本版稽核 `qa-continuous-walls/`，原 `qa/` 與下方敘述是歷史紀錄，舊中性範圍只更新上述兩牆。現行重建 `python appearance/source/build_continuous_walls.py`；交換 `python appearance/source/verify_continuous_exchange.py`；四原視角／場景 `blender -b --python appearance/source/render_continuous_walls.py`；回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。歷史 build_appearance.py 不能替代新命令。ZIP 不含第三方照片。
+
 # 國立清華大學｜李存敏館（綠色低碳能源教學研究大樓）
 
 ## 模型預覽
