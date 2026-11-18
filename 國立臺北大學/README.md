@@ -25,4 +25,4 @@
 
 圖書資訊大樓既有同 identity 全組幾何替代，原已有彩色材質，不新增套數。依2014成品照片及建築師B1–7F公開平面重建雙高翼、雙2F資訊翼與3F露臺、2F湖平台及圓井、局部B1院、中央透明頂、五平橋與兩真階橋；非2026現況/測繪，RF設備與細曲率近似，概念額外低樓層/PV不採。325×155×99.625mm、8材質Blend/3MF與不含材質的STL、5真mesh圖與4近圖，60180面；raw/strict材質/Blend頂點存讀與9檔乾淨重建一致。1連通solid、1正外殼與7負閉橋腔；原single-boundary gate FAIL保留，另cavity-aware獨審通過。499有效切層保留82層/2072薄島告警，SLA困樹脂及FFF封閉橋支撐不可移除風險，未實印、非直接print-ready。
 
-[完整模型與來源](三峽校區/buildings/ntpu-library-main-block-segment/README.md) · [QA與保留告警](三峽校區/buildings/ntpu-library-main-block-segment/QA.md) · [固定歷史42檔](https://github.com/root50643/taiwan-buildings-3d/tree/76586f491e45e5e72d371962efcd5ce69af13689/國立臺北大學/三峽校區/buildings/ntpu-library-main-block-segment)。全校與三峽校區均3套不變，非全校完成；校級原批次QA保留歷史快照，本件現行驗證以新詳頁為準。
+[完整模型與來源](三峽校區/buildings/ntpu-library-main-block-segment/README.md) · [QA與保留告警](三峽校區/buildings/ntpu-library-main-block-segment/QA.md) · [固定歷史42檔](https://github.com/hplin50643/taiwan-buildings-3d/tree/76586f491e45e5e72d371962efcd5ce69af13689/國立臺北大學/三峽校區/buildings/ntpu-library-main-block-segment)。全校與三峽校區均3套不變，非全校完成；校級原批次QA保留歷史快照，本件現行驗證以新詳頁為準。
