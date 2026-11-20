@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 先鋒國際研發大樓臨忠孝東路前側段<br>[![先鋒國際研發大樓臨忠孝東路前側段](buildings/ntut-pioneer-north-section/appearance/previews/front.png)](buildings/ntut-pioneer-north-section/) |  |  |
+| 先鋒國際研發大樓臨忠孝東路前側段<br>[![先鋒國際研發大樓臨忠孝東路前側段](../../docs/display/catalog/bd5a68d748156267c2b0be59-640.webp)](buildings/ntut-pioneer-north-section/) |  |  |
 
 目前僅[先鋒國際研發大樓臨忠孝東路前側段](buildings/ntut-pioneer-north-section/)。模型是北向街道正面全高與短側回折，沒有後半樓體或完整屋頂，不代表完整南校區。
 

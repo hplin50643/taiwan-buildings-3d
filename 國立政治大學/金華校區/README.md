@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | --- | --- | --- |
-| [![公企中心整案（住宿＋會展＋公共連接）](buildings/nccu-public-center-2021/previews/front.png)](buildings/nccu-public-center-2021/) <br> [公企中心整案（住宿＋會展＋公共連接）](buildings/nccu-public-center-2021/) |  |  |
+| [![公企中心整案（住宿＋會展＋公共連接）](../../docs/display/catalog/6ebf0e830a1fa34e219be2b4-640.webp)](buildings/nccu-public-center-2021/) <br> [公企中心整案（住宿＋會展＋公共連接）](buildings/nccu-public-center-2021/) |  |  |
 
 2021完工，依2021–2022公開圖文建立等比例外觀近似；不是竣工測繪或2026現況。詳細年代、尺度假設、來源與必要簡化見模型頁。
 

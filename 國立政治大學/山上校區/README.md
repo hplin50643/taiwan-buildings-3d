@@ -6,8 +6,8 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![季陶樓：實際模型預覽](buildings/nccu-jitao-hall/previews/front.png)](buildings/nccu-jitao-hall/README.md)<br>**[季陶樓](buildings/nccu-jitao-hall/README.md)** | [![國際大樓：實際模型預覽](buildings/nccu-international-building/previews/front.png)](buildings/nccu-international-building/README.md)<br>**[國際大樓](buildings/nccu-international-building/README.md)** | [![研究暨創新育成總中心（研創總中心）：實際模型預覽](buildings/nccu-innovation-center/previews/front.png)](buildings/nccu-innovation-center/README.md)<br>**[研究暨創新育成總中心（研創總中心）](buildings/nccu-innovation-center/README.md)** |
-| [![傳播學院主樓：實際模型預覽](buildings/nccu-communication-building/previews/front.png)](buildings/nccu-communication-building/README.md)<br>**[傳播學院主樓](buildings/nccu-communication-building/README.md)** | [![道藩樓：實際模型預覽](buildings/nccu-daofan-hall/previews/front.png)](buildings/nccu-daofan-hall/README.md)<br>**[道藩樓](buildings/nccu-daofan-hall/README.md)** |  |
+| [![季陶樓：實際模型預覽](../../docs/display/catalog/ab548086a7691922007946e6-640.webp)](buildings/nccu-jitao-hall/README.md)<br>**[季陶樓](buildings/nccu-jitao-hall/README.md)** | [![國際大樓：實際模型預覽](../../docs/display/catalog/e9375a43282716fbf67245b8-640.webp)](buildings/nccu-international-building/README.md)<br>**[國際大樓](buildings/nccu-international-building/README.md)** | [![研究暨創新育成總中心（研創總中心）：實際模型預覽](../../docs/display/catalog/62ebe758868df1f70c5cdc24-640.webp)](buildings/nccu-innovation-center/README.md)<br>**[研究暨創新育成總中心（研創總中心）](buildings/nccu-innovation-center/README.md)** |
+| [![傳播學院主樓：實際模型預覽](../../docs/display/catalog/b150cca1b6da91e2dd320e46-640.webp)](buildings/nccu-communication-building/README.md)<br>**[傳播學院主樓](buildings/nccu-communication-building/README.md)** | [![道藩樓：實際模型預覽](../../docs/display/catalog/139ea09e94a0d52ba55a93ec-640.webp)](buildings/nccu-daofan-hall/README.md)<br>**[道藩樓](buildings/nccu-daofan-hall/README.md)** |  |
 
 季陶樓為官方PDF外觀與平面參考版，照片攝年未知，非已核2026現況。門廊、格柵、窗框、端框與局部挑簷需切片／支撐評估；未實印，不保證免支撐或全域最小壁厚。具體來源、原數位QA及薄件數值見模型內文件。
 

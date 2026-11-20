@@ -4,7 +4,7 @@
 
 | 圖資大樓銃樓段正面 |  | 圓樓中央入口立面段 |
 |---|---|---|
-| ![正面](buildings/nqu-library-tower-segment/appearance/previews/front.png) |   | [![圓樓正面中央入口立面段：照片近似，非完整建築](buildings/nqu-roundhouse-entrance-facade/previews/front.png)](buildings/nqu-roundhouse-entrance-facade/README.md)<br>**[圓樓・正面中央入口立面段（照片近似；非完整建築）](buildings/nqu-roundhouse-entrance-facade/README.md)** |
+| ![正面](../../docs/display/catalog/1eb0df8d98a71dd03cfc0de4-640.webp) |   | [![圓樓正面中央入口立面段：照片近似，非完整建築](../../docs/display/catalog/c441f6d12ac1faa62ae38e01-640.webp)](buildings/nqu-roundhouse-entrance-facade/README.md)<br>**[圓樓・正面中央入口立面段（照片近似；非完整建築）](buildings/nqu-roundhouse-entrance-facade/README.md)** |
 
 [模型、來源與QA](buildings/nqu-library-tower-segment/README.md)。70×70×150mm含底；已知新側4錯層窄窗與石基開口補入，未知背面/主館未建。數位篩檢非實體試印，支撐與縮小風險見模型頁。本修版已完成獨立數位覆核與限定例外核可；詳模型頁獨立補充。
 
