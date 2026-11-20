@@ -1,0 +1,110 @@
+{
+  "status": "PASS_NUMERIC_NATIVE_EXCHANGE",
+  "faces": [
+    672,
+    677
+  ],
+  "counts": [
+    585,
+    521,
+    126,
+    408,
+    1792,
+    752,
+    52,
+    64
+  ],
+  "all_original_geometry_vertex_face_order_exact": true,
+  "3MF_only6material_attributes_all_other_XML_bytes_unchanged": true,
+  "face_materials_only2indices_and2reasons_changed": true,
+  "strict_SDK_warnings": 0,
+  "SDK_material_edit_save_reopen": true,
+  "SDK_max_roundtrip_delta_mm": 1.9073486328125e-06,
+  "full_RNA_differences": [
+    {
+      "path": "/meshes/Unchanged source STL triangles/attributes/4/data/672/value",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "path": "/meshes/Unchanged source STL triangles/attributes/4/data/677/value",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "path": "/meshes/Unchanged source STL triangles/loop_triangles/672/material_index",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "path": "/meshes/Unchanged source STL triangles/loop_triangles/677/material_index",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "path": "/meshes/Unchanged source STL triangles/polygons/672/material_index",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "path": "/meshes/Unchanged source STL triangles/polygons/677/material_index",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "path": "/objects/NUU Q1 Arts Teaching Center appearance/custom_properties/side_color_scope",
+      "before": null,
+      "after": "Q1 uppermost right inner tower reveal only faces672/677 neutral0 to existing coolgray2; other4298 unchanged, including previous18top-inner-return faces. Original1.1mm depth and transverse bars are coarse geometry proxies, not measured depth or physical material joints. Exclude other4right bands, left/outer sides, glass and metal. Historical2025 selfreported photos, not2026 condition."
+    },
+    {
+      "path": "/objects/NUU Q1 Arts Teaching Center appearance/custom_properties/source_surface_colors_sha256",
+      "before": null,
+      "after": "5445290cb6084362a4732e459ed289c88ed00e5134d10842f96a1cffa4ac90c2"
+    }
+  ],
+  "original_all8materials_and_shader_nodes_exact": true,
+  "orphan_flags_changed": false,
+  "clean_numeric_bytes_and_full_RNA_equal": true,
+  "native": {
+    "status": "PASS_PRIVATE_NATIVE_VERTEX_AND_FACE_MATERIAL_EDIT_SAVE_REOPEN",
+    "source_public_sha256_before": "e947e07c230a7e043be3e6fcbbf1a967363a81d4a698f829b61d4b94a102262d",
+    "source_public_sha256_after": "e947e07c230a7e043be3e6fcbbf1a967363a81d4a698f829b61d4b94a102262d",
+    "public_unchanged": true,
+    "private_copy": "reviewer-native-edited.blend",
+    "private_copy_sha256": "bf03c6d49d7894c1dd9a97225f5f79b0dfb54a28c32ccb147825fae1d3166900",
+    "vertex_index": 40,
+    "vertex_before": [
+      -58.400001525878906,
+      24.399999618530273,
+      51.29999923706055
+    ],
+    "vertex_after": [
+      -58.368751525878906,
+      24.399999618530273,
+      51.29999923706055
+    ],
+    "face_index": 672,
+    "material_before": 2,
+    "material_after": 0,
+    "all_other_vertices_and_face_materials_unchanged": true,
+    "topology_and_object_transform_unchanged": true,
+    "actual_save_and_reopen": true,
+    "blender_version": "4.3.2",
+    "scope": "Private experiment only; edited file is not a deliverable or manufacturing requalification."
+  },
+  "visual_status": "PASS personally viewed original4view contact and private same-camera before/after; narrow target return changes warm-neutral to existing gray, adjoining frame/metal/glass stay unchanged.",
+  "verification_scope": "Own exact original STL/scene/JSON/3MF sequence, complete fullRNA, strictSDK private edit, native private vertex/material edit, clean byte and fullRNA equivalence.",
+  "repo_destination": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/",
+  "same_camera_and_centroid_rays": {
+    "equal_camera_matrix": true,
+    "all_two_face_centroids_visible": true,
+    "limitation": "Ray samples do not assert every pixel is visible; contact shows complete targeted strip between original bars."
+  },
+  "public_preview_count": 4,
+  "public_previews_resolution": [
+    1200,
+    1200
+  ],
+  "PNG_private_text_metadata_absent": true,
+  "independent_numeric_review": "Separate independent reviewer reports all core numeric/RNA/clean/SDK/native checks PASS; independent final manifest/visual review pending."
+}

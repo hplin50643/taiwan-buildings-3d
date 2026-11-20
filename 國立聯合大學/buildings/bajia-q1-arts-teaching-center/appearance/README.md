@@ -62,3 +62,33 @@ Sources0/1 tower underside primary; source2 undated historical context only.
 本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
 
 現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。
+
+
+## 2026-11-18 最高右內返：兩個原三角的有限延色
+
+只將中央塔窗**右內返最高一條**原面 672、677，由未知 0 延用既有冷灰 2（#B3BAB7）。其餘 4,298 面、8 個舊材質與節點值、全網格座標／面序／物件變換／原場景與相機設定保留；既有 18 個頂部內底面不重做。新面數分布為 `[585,521,126,408,1792,752,52,64]`。
+
+完整原矩形位於 x=1.5、朝 −X，y=-13..-11.8999996、z=51.8499985..57.2999992，面積 5.995002918 mm²。原橫梃自然截出這一條，不沿三角對角線另造材界；原 1.1 mm 深度與橫梃節奏都是簡化代理，並非實測深度或實景材質接縫。其他四條右內返、左內返、塔外側、玻璃、金屬、外頂和下層入口均不擴塗。
+
+兩張官方照片直接支持最高右內返的灰材族連續，照片內灰框／玻璃／金屬邊可分；配色不是精確測色。照片 EXIF 自報 2025-02-25，未獨立驗證拍攝日期與時區，不聲稱 2026 現況。上方玻璃後的實景灰背帶沒有相應原幾何界線，本版不藉配色修復。原始照片只私人留存，不隨公開包散布。
+
+### 格式、精確性與可重建性
+
+[表面色 3MF](nuuq1-appearance.3mf)、[原生 Blender](scene.blend)、[逐面資料](face-materials.json)、[新增表面色 NPZ](surface-colors.npz)、[原 STL 同位元副本](model.stl)。NPZ 是本次從原 scene 全序匯出的新交換檔，不冒稱舊版已有。原 building root `model.stl` 不變。
+
+3MF 僅兩面各 p1/p2/p3 共六個屬性改值；原座標文字與 object fallback 保留。Blender 完整 RNA 僅六個面材表示及兩個必要來源／範圍屬性改變，沒有孤立材保存旗標變更。原幾何、原材質、燈光、世界、隱藏狀態與相機均保留。原四視角 1200×1200、Cycles 48 samples 重渲，無新增場景展示物件。
+
+[固定基準清單](baseline-inputs.json)、[自足基準 ZIP](baseline-rebuild-inputs.zip)、[SHA 鎖定修正程式](rebuild_top_reveal.py)、[原視角渲染程式](render_q1_views.py)、[更動清單](top-reveal-change.json)、[來源與界限](TOP-REVEAL-SOURCE-SCOPE.json)、[驗證摘要](QA-summary.json)。固定來源 ref 為 `8f90ae2478f00cce6832a07de537f7d333f6dbc0`。
+
+解開基準 ZIP 後，在 Blender 4.3.2（含 NumPy）執行：
+
+```sh
+blender -b --python-exit-code 1 -P rebuild_top_reveal.py -- baseline output
+blender -b --python-exit-code 1 -P render_q1_views.py -- output
+```
+
+所有輸入 SHA 不符即停止；不需照片、網路或憑證。隔離重建、lib3mf strict 零警告、3MF 私有改材保存重讀，以及 Blender 私有改頂點／面材保存重讀均另驗，測試副本不交付、不改公檔。原製造與粗化限制保留，不等於實際列印測試。
+
+### 儲存庫映射
+
+本包全部檔案映射至 `國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/`，包括新增 STL 同位元副本、NPZ、基準 ZIP、程式及 QA。不可鋪至 building root；上文原 `../model.stl` 相對連結仍有效。本包只本地製作，發布需由協調者另外執行。
