@@ -1,0 +1,46 @@
+{
+  "overview": {
+    "matching_camera_and_frame": true,
+    "changed_pixels": 498,
+    "changed_pixel_max_outside_target_buffer_3px": 0,
+    "changed_pixel_bbox": [
+      683,
+      128,
+      763,
+      158
+    ],
+    "original_diagnostic_material_diff_only": true,
+    "images": [
+      {
+        "filename": "before-overview.png",
+        "sha256": "10e0dd7ba7644758c22df8d38e5af9accd18df7e0295603a4688ae8c13181f59"
+      },
+      {
+        "filename": "after-overview.png",
+        "sha256": "f1514fb68d8ff23e10661b94cf5bc13d26275421ee9c348eb37f589bfce96e57"
+      }
+    ]
+  },
+  "eave-detail": {
+    "matching_camera_and_frame": true,
+    "changed_pixels": 27172,
+    "changed_pixel_max_outside_target_buffer_3px": 0,
+    "changed_pixel_bbox": [
+      212,
+      348,
+      897,
+      478
+    ],
+    "original_diagnostic_material_diff_only": true,
+    "images": [
+      {
+        "filename": "before-eave-detail.png",
+        "sha256": "bc6ea5bce46a34b399caf1787e23d77ed82db6ac7f3caca3f7aefc7bda3e6ec2"
+      },
+      {
+        "filename": "after-eave-detail.png",
+        "sha256": "81e86fa0d111259b0da44374b96033f97a4acaa7dc381e631bb7437831ec143f"
+      }
+    ]
+  }
+}

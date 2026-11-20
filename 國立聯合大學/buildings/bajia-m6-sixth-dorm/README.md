@@ -7,6 +7,12 @@
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／屋面同系統推估<br>![背面](appearance/previews/rear.png) |  |
 
+## 中塔右側檐口補色（2026-11-20）
+
+兩張校方公開照片均可辨識瓦下的窄灰色檐口。本變體僅將右側檐口的兩個原三角面改用既有灰色；原 STL、外觀歷史版本、代表圖和未確認的長側牆均保留。
+
+[檐口補色、局部對照與驗證](gable-fascia-20261120/README.md) · [更新外觀 3MF](gable-fascia-20261120/model-colored.3mf) · [更新 Blender](gable-fascia-20261120/scene.blend)
+
 ## 5 材質外觀版（2026-10-21）
 
 
@@ -52,7 +58,7 @@
 - rebuild-check.json：再次重建後的 SHA-256 一致性
 - blender-geometry-check.json：STL 與 Blender 全部三角面座標一致性
 - evidence.json：完整外觀圖說、網址、身份和估計說明
-- SHA256SUMS：所有公開檔案雜湊
+- SHA256SUMS：根層原模型與本頁校驗；既有外觀版見 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)，這次檐口補色見 [補色檔案校驗](gable-fascia-20261120/SHA256SUMS)
 
 在獨立 Python 環境執行：
 

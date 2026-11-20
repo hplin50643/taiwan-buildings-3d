@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "original_triangle_count": 7000,
+  "original_welded_vertex_count": 3476,
+  "unchanged_material_count": 6,
+  "mesh_manifold_oriented_in_old_and_new_sdk": true,
+  "stl_original_sha256": "e0efff925d6cbb46a0765f500d8048e8fb74f3895411f6ce0cf4f4b3d26857be",
+  "exact_raw_and_sdk_ordered_xyz": true,
+  "strict_old_and_new_3mf_warning_counts": [
+    0,
+    0
+  ],
+  "all_3mf_corners_checked": true,
+  "only_XML_material_attributes_changed": 6,
+  "full_captured_RNA_delta": [
+    [
+      "/meshes/Unchanged source STL triangles/attributes/material_index/data/6993/value",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/attributes/material_index/data/6999/value",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/loop_triangles/6993/material_index",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/loop_triangles/6999/material_index",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/polygons/6993/material_index",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/polygons/6999/material_index",
+      0,
+      3
+    ]
+  ],
+  "retained_rear_parapet_faces": 4,
+  "baseline_distribution": [
+    1725,
+    2230,
+    240,
+    2545,
+    256,
+    4
+  ],
+  "new_distribution": [
+    1723,
+    2230,
+    240,
+    2547,
+    256,
+    4
+  ],
+  "new_file_sha256": {
+    "scene.blend": "b7169c3467ecb20dc297eaf4f4e538270ead00e69eac5f51a45d60b6f6fdb0cf",
+    "model-colored.3mf": "3620e1477db4ce0fb569c7b71fae4e1b5830ba56f8c12b8c86a57da5ac36e831"
+  }
+}

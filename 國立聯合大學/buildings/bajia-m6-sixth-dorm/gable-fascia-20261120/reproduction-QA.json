@@ -1,0 +1,23 @@
+{
+  "standalone_reproduction": true,
+  "bit_identical_to_published_candidate": [
+    "after-eave-detail.png",
+    "after-overview.png",
+    "before-eave-detail.png",
+    "before-overview.png",
+    "model-colored.3mf",
+    "framing-QA.json"
+  ],
+  "actual_isolated_Blend_world_mesh_materials_and_object_transforms_match": true,
+  "native_blend_container_bytes_not_asserted_equal": true,
+  "isolated_scene_original_and_output_hashes": {
+    "pass": true,
+    "all_mesh_geometry_object_transforms_visibility_materials_preserved": true,
+    "full_stl_world_geometry_set_exact": true,
+    "changed_original_STL_ids": [],
+    "changed_polygon_ids": [],
+    "changed_indices": [],
+    "baseline_sha256": "b7169c3467ecb20dc297eaf4f4e538270ead00e69eac5f51a45d60b6f6fdb0cf",
+    "result_sha256": "9e26cf24f8c3cad5a83d7a7657748a1ee7acd135d6cb4ac33c322da6fcee930a"
+  }
+}

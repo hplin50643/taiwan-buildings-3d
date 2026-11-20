@@ -1,0 +1,126 @@
+{
+  "status": "verified limited two-face material reassignment",
+  "original_stl_sha256": "e0efff925d6cbb46a0765f500d8048e8fb74f3895411f6ce0cf4f4b3d26857be",
+  "original_appearance_blend_sha256": "997a19b11ae8e8ac526358d4101e92c5e0dfb9ae0d1cf9b09accc0463232f32b",
+  "original_appearance_3mf_sha256": "c015fbd7292b5f45dd2d7edf2dd0e7c4c8f22ea57263fbeb69fc3daaf686291d",
+  "target": {
+    "x": 11,
+    "outward_normal": [
+      1,
+      0,
+      0
+    ],
+    "ys": [
+      24,
+      44
+    ],
+    "zs": [
+      77,
+      78
+    ],
+    "stl_faces": [
+      6993,
+      6999
+    ],
+    "area_mm2": 20,
+    "source_material": 0,
+    "proposed_existing_destination": 3
+  },
+  "ids": [
+    6993,
+    6999
+  ],
+  "triangle_vertices_mm": [
+    [
+      [
+        11.0,
+        24.0,
+        77.0
+      ],
+      [
+        11.0,
+        44.0,
+        77.0
+      ],
+      [
+        11.0,
+        24.0,
+        78.0
+      ]
+    ],
+    [
+      [
+        11.0,
+        24.0,
+        78.0
+      ],
+      [
+        11.0,
+        44.0,
+        77.0
+      ],
+      [
+        11.0,
+        44.0,
+        78.0
+      ]
+    ]
+  ],
+  "union_area_mm2": 20.0,
+  "uncovered_domain_mm2": 0.0,
+  "out_of_domain_overlap_mm2": 0.0,
+  "unchanged_color_definitions": [
+    {
+      "id": "neutral_unknown",
+      "srgb": "#AAA79F"
+    },
+    {
+      "id": "salmon_brick_courtyard",
+      "srgb": "#B4897E"
+    },
+    {
+      "id": "blue_slate_roof_tile",
+      "srgb": "#566B7B"
+    },
+    {
+      "id": "gray_existing_lintels_canopy",
+      "srgb": "#99A5A3"
+    },
+    {
+      "id": "muted_green_gray_glazing_proxy",
+      "srgb": "#6D8581"
+    },
+    {
+      "id": "rear_parapet_light_background_approximation",
+      "srgb": "#D1D3C9"
+    }
+  ],
+  "baseline_distribution": [
+    1725,
+    2230,
+    240,
+    2545,
+    256,
+    4
+  ],
+  "new_distribution": [
+    1723,
+    2230,
+    240,
+    2547,
+    256,
+    4
+  ],
+  "official_references": [
+    {
+      "official_image_url": "https://clc.nuu.edu.tw/var/file/48/1048/pictures/33/part_42215_6353294_02617.jpg",
+      "source_sha256": "ee4cbf2006bfb2916004c843e57858322923c18da6477c8b690f8f57857170c9"
+    },
+    {
+      "official_image_url": "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/16/1116/gallery_1116_3619700_95853.jpg",
+      "source_sha256": "1e2be4e3c5092acf7e5343dfd6aa22ff4a7fa4a07afe10cdfd32bc75e9321c5f"
+    }
+  ],
+  "visual_scope": "同校兩時距斜視，正對U院右外側，中央高塔坡瓦下獨立一條連續淺灰檐面，和下方粉磚清楚有界。僅沿用原淺灰構件代理；未見相反邊不套色，不改瓦頂、塔側牆、女兒牆。",
+  "excluded": "原+X完整外側牆156面確中性，但另一翼照片有暗低層通風格或格柵、真低層牆材界遮擋，模型無分界；本輪不將整面都當粉磚。"
+}
