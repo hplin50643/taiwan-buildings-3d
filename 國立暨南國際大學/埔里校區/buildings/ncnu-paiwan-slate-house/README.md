@@ -4,18 +4,18 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 交付 STL 正面<br>![正面](previews/front.png) | 交付 STL 背面<br>![背面](previews/rear.png) |  |
+| 交付 STL 正面<br>![正面](previews/front.png) | 交付 STL 背面<br>![背面](previews/rear.webp) |  |
 
 國立暨南國際大學 · 埔里校區 · 公開實拍近似外觀模型
 
 原住民族環境教育場域中單一排灣族石板屋本體；以2017完工正／側實拍和2025刊載的校方提供全景自建近似外觀。屋外祖靈柱、廣場石座與其他傳統建築不納入。
 
 
-[俯視](previews/top.png) · [STL](model.stl) · [可編修 Blender 網格](scene.blend) · [參數腳本](build_model.py)
+[俯視](previews/top.webp) · [STL](model.stl) · [可編修 Blender 網格](scene.blend) · [參數腳本](build_model.py)
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) |  |  |
+| 俯視<br>![俯視](previews/top.webp) |  |  |
 
 ## 辨識特徵
 - 淺雙坡石板屋頂與6個低矮不規則壓物近似
@@ -45,6 +45,10 @@
 1. python build_model.py
 2. blender -b -t 4 -P render_preview.py
 3. python run_all_checks.py
+
+正面 PNG 與學校／校區代表圖保留。背面及俯視改用 900 × 700 無損 WebP，RGBA 像素與原 Blender PNG 完全相同。
+用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可重新輸出，不會覆寫交付的 Blender 或正面圖。
+要取得 SHA-256 與原始交付檔完全相同的 PNG，可加 `--archive-png-dir /path/to/output`，並參照[原交付清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/cce85bb020c0680c8433cd71faf98d32c3c165ee/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-paiwan-slate-house/MANIFEST.sha256)。自動重建會核對兩檔原始雜湊後才輸出。
 
 [原STL、重建與Blend](validation.json)：原始二進位STL法向／繞序一致、有限非退化面、水密、每邊兩面、vertex link單環、單一連通表面／無獨立內腔殼、正體積、底座z=0及150 mm尺度；獨立重建SHA與saved Blend三角幾何一致。
 
