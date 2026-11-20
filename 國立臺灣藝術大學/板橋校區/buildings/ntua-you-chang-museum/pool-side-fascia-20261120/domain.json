@@ -1,0 +1,136 @@
+{
+  "status": "HISTORIC_PHOTO_APPEARANCE_APPROXIMATION_SCOPED_POOL_FASCIA",
+  "checked_main": "d0c3557ff3a4702a355d7165279b9f029e89d747",
+  "model_root": "7a0902bd3be4c0c4c2462680b57e8c83ebd0351c",
+  "repo_path": "國立臺灣藝術大學/板橋校區/buildings/ntua-you-chang-museum",
+  "model_files": {
+    "stl": "model.stl",
+    "appearance_3mf": "appearance/ntua-you-chang-museum-appearance.3mf",
+    "appearance_blend": "appearance/scene.blend"
+  },
+  "source_file_sha256": {
+    "stl": "49101683bfaa763f7130d995f47c88fc7745bcbb51207c174220cc2345c511ce",
+    "appearance_3mf": "2d86be3cfebe371e30826acc010cdde52e9a7d3b7edb3588b6fb71b454963ced",
+    "appearance_blend": "f191d4a2e86fc68e7c3bec3c25d767bb7908e8351d9c488aa065555bb3b38ef0"
+  },
+  "source_material": 0,
+  "proposed_nominal_gray_proxy_srgb": "#A5A8A6",
+  "ids_original_stl_and_actual_3mf_and_native_polygons": [
+    1420,
+    1468
+  ],
+  "triangle_vertices_mm": [
+    [
+      [
+        -68.5,
+        19.0,
+        44.29999923706055
+      ],
+      [
+        -68.5,
+        19.0,
+        46.400001525878906
+      ],
+      [
+        68.5,
+        19.0,
+        46.400001525878906
+      ]
+    ],
+    [
+      [
+        -68.5,
+        19.0,
+        44.29999923706055
+      ],
+      [
+        68.5,
+        19.0,
+        46.400001525878906
+      ],
+      [
+        68.5,
+        19.0,
+        44.29999923706055
+      ]
+    ]
+  ],
+  "normal": [
+    0,
+    1,
+    0
+  ],
+  "plane_y_mm": 19,
+  "x_mm": [
+    -68.5,
+    68.5
+  ],
+  "z_mm_actual_binary_stl": [
+    44.29999923706055,
+    46.400001525878906
+  ],
+  "area_mm2": 287.70031356811523,
+  "whole_plane_no_additional_or_overlapping_outward_faces": true,
+  "original_triangles": 8560,
+  "full_ordered_3mf_mesh_equal_to_STL": true,
+  "orientation_association": "The model original stair is at y<0; courtyard photo shows stair side. Pond picture on opposite side has uninterrupted letter facade with no stair interrupted window; the projecting thin gray fascia across the same exterior span aligns with the only original fascia centerline y=19. Front view only supports same architectonic element, not coloring front. Middle plainly visible; short tree-occluded bits of terminal span inferred only as continuity within one unbroken original component, not independent contemporary evidence.",
+  "public_official_photo_sources": [
+    {
+      "role": "primary pond-side fascia",
+      "url": "https://museum.ntua.edu.tw/upfiles/HF5/DSC05978.jpg",
+      "sha256": "6eff5fe8f5e953dfc0efee7f4f2bda81ed137e99d984a9da92e3e2c82eec38a0",
+      "size_px": [
+        1024,
+        590
+      ],
+      "capture_exif_self_reported": "2007-11-01 12:12:05"
+    },
+    {
+      "role": "front-side structural crosscheck only",
+      "url": "https://museum.ntua.edu.tw/upfiles/HF5/04.jpg",
+      "sha256": "6e545d90badb3e8e3f473febc11c0f0936e294afed59c5281b56919fad84fd8e",
+      "size_px": [
+        1024,
+        590
+      ],
+      "capture_exif_self_reported": "2007-10-24 09:57:09"
+    }
+  ],
+  "exclusions": "No roof tile, roof or slab top, undertread underside, -Y frontage, short end returns, column/mullion, brick/wood behind glass or lettering changes. No existing face removals, reassignments outside selected domain or geometry writes. Historical source, no 2026 condition. No calibrated sRGB or material/coating certification.",
+  "ids": [
+    1420,
+    1468
+  ],
+  "original_stl_sha256": "49101683bfaa763f7130d995f47c88fc7745bcbb51207c174220cc2345c511ce",
+  "original_appearance_3mf_sha256": "2d86be3cfebe371e30826acc010cdde52e9a7d3b7edb3588b6fb71b454963ced",
+  "original_appearance_blend_sha256": "f191d4a2e86fc68e7c3bec3c25d767bb7908e8351d9c488aa065555bb3b38ef0",
+  "unchanged_color_definitions": [
+    {
+      "id": "neutral_unconfirmed_structure",
+      "srgb": "#AAA79F"
+    },
+    {
+      "id": "letter_outward_pale_gray_proxy",
+      "srgb": "#CDD1CD"
+    },
+    {
+      "id": "window_backing_light_opaque_proxy",
+      "srgb": "#A7B8B5"
+    }
+  ],
+  "new_material": {
+    "id": "pool_fascia_historical_midgray_proxy",
+    "srgb": "#A5A8A6"
+  },
+  "baseline_distribution": [
+    7428,
+    1002,
+    130
+  ],
+  "new_distribution": [
+    7426,
+    1002,
+    130,
+    2
+  ]
+}
