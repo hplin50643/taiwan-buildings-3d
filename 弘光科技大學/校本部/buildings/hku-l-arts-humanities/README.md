@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.webp) | ![俯視](previews/top.png) |
+| ![正面](previews/front.png) | ![背面](previews/rear.webp) | ![俯視](previews/top.webp) |
 
 ## 模型範圍
 
@@ -38,7 +38,7 @@
 
 Python 3.12安裝requirements.txt後執行 python build_model.py；python validate_model.py；python check_valid_sections.py model.stl .；python thin_canonical_v2.py。
 
-重建背面 WebP：在 Python 環境安裝 Pillow==13.0.0（libwebp 1.6.0），使用 Blender 4.3.2 執行 `python export_rear_webp.py`。原渲染產生的 PNG 與場景輸出只存在暫存資料夾，其他交付檔不會被覆寫。WebP 保留全尺寸、像素、色彩與相機資訊；重跑時會變動的渲染日期與耗時不納入 WebP 雜湊。如需重建全套 PNG 與場景，請先複製模型檔與原渲染腳本到獨立資料夾，再執行 `blender -b -t 2 -P render_preview.py`。
+重建背面 WebP：在 Python 環境安裝 Pillow==13.0.0（libwebp 1.6.0），使用 Blender 4.3.2 執行 `python export_rear_webp.py`。重建俯視及正立面兩張 WebP，可執行 `python export_top_elevation_webp.py`；前視 PNG 保留。原渲染產生的 PNG 與場景輸出只存在暫存資料夾，其他交付檔不會被覆寫。WebP 保留全尺寸、像素、色彩與相機資訊；重跑時會變動的渲染日期與耗時不納入 WebP 雜湊。如需重建全套 PNG 與場景，請先複製模型檔與原渲染腳本到獨立資料夾，再執行 `blender -b -t 2 -P render_preview.py`。
 
 
 
