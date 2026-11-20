@@ -67,7 +67,7 @@
 
 歷史發布註記：紀念校門發布後本校為 42 套、勝利分類為 4 套；這是當次快照，不是現行全校件數，現行以本頁主圖鑑為準。
 
-[現行47套索引](model-index.json) · [本次新增清冊](inventory_updates_gate_20261020.json) · [本次檔案校驗](SHA256SUMS_GATE_20261020.txt)。舊 inventory／批次 manifest 及校驗檔保留歷史快照，不冒充現況總表。
+[現行模型索引](model-index.json) · [本次新增清冊](inventory_updates_gate_20261020.json) · [本次檔案校驗](SHA256SUMS_GATE_20261020.txt)。舊 inventory／批次 manifest 及校驗檔保留歷史快照，不冒充現況總表。
 
 [C-Hub 高量體有限配色外觀與來源界線](光復校區/buildings/c-hub-high-volume/appearance/README.md)
 
@@ -83,13 +83,13 @@
 
 [理學南高棟原百葉構件限定配色外觀與來源界線](成功校區/buildings/science-south-high-wing/appearance/README.md)
 
-[現行47套索引](model-index.json) · [本次新增清冊](inventory_updates_canopy_20261021.json) · [本次校驗](SHA256SUMS_CANOPY_20261021.txt)。舊清冊及批次校驗維持歷史快照；本件另用 QA.md 與 qa/ 報告，不套用舊 validation.json 全通過敘述。
+[現行模型索引](model-index.json) · [本次新增清冊](inventory_updates_canopy_20261021.json) · [本次校驗](SHA256SUMS_CANOPY_20261021.txt)。舊清冊及批次校驗維持歷史快照；本件另用 QA.md 與 qa/ 報告，不套用舊 validation.json 全通過敘述。
 
 ## 綠色魔法學校整棟升級
 
 綠色魔法學校既有整棟模型升級，原已有3材質，非新增建物或套數：入口與長窗側按真1F/3F配準，-X/-Y紅柱L廊、中央兩層真挑空通廊、低層半圓服務區、三座通風塔、雨水外階與船陽臺；綠坡、獨立雙坡會議廳頂及上浮葉形PV保持三層分離。2011 EXIF／2013文章早期外觀，非2026設備現況或測繪BIM；無完整RF，遮蔽細節近似。235×175×142.908mm、13材質Blend/3MF/STL、5真mesh圖及2不切mesh細圖；81412三角單閉殼、strict材質與Blend頂點存讀、乾淨9檔bytes一致與獨審通過。715有效切層仍保留576層／4620個0.8mm薄島告警，細PV格0.275mm，需支撐/放大評估，未實印、不保證免支撐。
 
-[完整模型與來源](力行校區/buildings/magic-school-green-technologies/README.md) · [QA與保留告警](力行校區/buildings/magic-school-green-technologies/QA.md) · [固定歷史38檔](https://github.com/root50643/taiwan-buildings-3d/tree/8bd98a3a8c306d4195336529208f97a0b5a57790/國立成功大學/力行校區/buildings/magic-school-green-technologies)。全校47件、力行校區5件不變；既有校級批次manifest保留歷史快照，現行本件以新詳頁QA為準。
+[完整模型與來源](力行校區/buildings/magic-school-green-technologies/README.md) · [QA與保留告警](力行校區/buildings/magic-school-green-technologies/QA.md) · [固定歷史38檔](https://github.com/hplin50643/taiwan-buildings-3d/tree/8bd98a3a8c306d4195336529208f97a0b5a57790/國立成功大學/力行校區/buildings/magic-school-green-technologies)。此次升級當時全校47件、力行校區5件，未增加套件；現行件數以[模型索引](model-index.json)為準。既有校級批次manifest保留歷史快照，現行本件以新詳頁QA為準。
 
 ## 光復操場司令台新增範圍與來源
 
