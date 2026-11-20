@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "original_triangle_count": 5698,
+  "original_welded_vertex_count": 2851,
+  "unchanged_material_count": 10,
+  "new_material_definition": {
+    "id": "M11 Pale blue-gray stair hood edge",
+    "srgb": "#D5DFE2",
+    "physical_product": "unknown"
+  },
+  "new_only_material_slot": 10,
+  "mesh_manifold_oriented_in_old_and_new_sdk": true,
+  "stl_original_sha256": "957c89bd2ae7e39ef4987e41e4f89803c6031e471c0986b1aa41696e892f9be4",
+  "exact_raw_and_sdk_ordered_xyz": true,
+  "strict_old_and_new_3mf_warning_counts": [
+    0,
+    0
+  ],
+  "all_3mf_corners_checked": true,
+  "only_XML_material_attributes_changed": 6,
+  "full_captured_RNA_delta": [
+    [
+      "/meshes/Original STL triangles in original order/attributes/material_index/data/5353/value",
+      0,
+      10
+    ],
+    [
+      "/meshes/Original STL triangles in original order/attributes/material_index/data/5359/value",
+      0,
+      10
+    ],
+    [
+      "/meshes/Original STL triangles in original order/loop_triangles/5353/material_index",
+      0,
+      10
+    ],
+    [
+      "/meshes/Original STL triangles in original order/loop_triangles/5359/material_index",
+      0,
+      10
+    ],
+    [
+      "/meshes/Original STL triangles in original order/polygons/5353/material_index",
+      0,
+      10
+    ],
+    [
+      "/meshes/Original STL triangles in original order/polygons/5359/material_index",
+      0,
+      10
+    ]
+  ],
+  "retained_nonselected_faces": 5696,
+  "baseline_distribution": [
+    3895,
+    865,
+    247,
+    209,
+    352,
+    74,
+    14,
+    2,
+    36,
+    4
+  ],
+  "new_distribution": [
+    3893,
+    865,
+    247,
+    209,
+    352,
+    74,
+    14,
+    2,
+    36,
+    4,
+    2
+  ],
+  "new_file_sha256": {
+    "scene.blend": "03469be194affb3f17d73b3290477b0b89f8d634705c3afcda53bde5ef707179",
+    "model-colored.3mf": "5c13c9207c3252ccf995c13779629b66b7f22bcdaa2378fee35468cac2bd6000"
+  }
+}

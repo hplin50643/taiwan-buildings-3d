@@ -1,0 +1,138 @@
+{
+  "repository_path": "國立臺灣體育運動大學/臺中校區/buildings/ntus-changqi-building",
+  "original_commit": "5018bb0b9c8fd679e1155e09afd8814e9dc88166",
+  "original_tree": "e8281ad7eb091a8f4e25c1fab462d66f4f68f89b",
+  "original_stl_sha256": "957c89bd2ae7e39ef4987e41e4f89803c6031e471c0986b1aa41696e892f9be4",
+  "original_appearance_3mf_sha256": "47c02b7cfcab06fcc0df1a94fe13307ccd4fd83e013c0b310c72703a788be951",
+  "original_appearance_blend_sha256": "34dcffb7b56fbeea2e5ca5a4ba0a1076ea2b83d4e6512e9d28efe78699286f43",
+  "ids": [
+    5353,
+    5359
+  ],
+  "area_mm2": 29.41444925783435,
+  "axes_and_finite_bounds": {
+    "model outward": "-Y",
+    "source plane_y_m": 31.0,
+    "source x_min_max_m": [
+      8.1,
+      17.4
+    ],
+    "source z_min_max_m": [
+      25.1,
+      25.75
+    ],
+    "model_mm_transform": "x=(x_m-30)*(150/68), y=(13-y_m)*(150/68), z=(z_m+1.2)*(150/68)"
+  },
+  "material_boundaries": "Only the independent top hood outer vertical nose directly below the beige recessed rectangle and above four gray/light-edged landings. Bottom, top and side end faces, gray/light mixed outer landing faces, vegetation, glazing, vents, parapets and other compass sides unassigned.",
+  "new_material": {
+    "id": "M11 Pale blue-gray stair hood edge",
+    "srgb": "#D5DFE2",
+    "physical_product": "unknown"
+  },
+  "evidence": {
+    "deck_landing": "https://acc.ntus.edu.tw/index.php?article_id=18246&code=list&flag=detail&ids=838",
+    "deck": "https://acc.ntus.edu.tw/upload/general/attachment/5a557fa162efa2a7bc25ccff70fd9800.ppsx",
+    "scope": "2017 original completed building as documented in award presentation; photo dates not independently verified and not a 2026 survey.",
+    "deck_sha256": "32ddc615537c02673a707649bbb22c1631cc17a9b88657cfbfdede0bbf440a32",
+    "photos": [
+      {
+        "label": "C-11 right, 西南向現況",
+        "embedded_path": "ppt/media/image34.png",
+        "sha256": "60702fcff3687035bdf7c65d00f41a9f8c85138b730caf537e50bb7d43bff223",
+        "pixels": [
+          2186,
+          1639
+        ],
+        "role": "Direct frontal color-family source for the top pale cool gray hood trim, not the four mottled landing edges."
+      },
+      {
+        "label": "C-10 top design/material concept slide, oblique completed photo above drawings",
+        "embedded_path": "ppt/media/image32.png",
+        "sha256": "5c2361ebda012e719a0345ad9597523519db79dbdaef229fa1ff8cd215172b4c",
+        "pixels": [
+          2162,
+          1622
+        ],
+        "role": "Depth/short end and distinct pale hood alignment; material legend is not a specific product attribution for the hood."
+      }
+    ]
+  },
+  "unchanged_color_definitions": [
+    {
+      "source_3mf_name": "Unverified neutral",
+      "id": "N00 Unverified neutral",
+      "srgb": "#B6B7B4"
+    },
+    {
+      "source_3mf_name": "Pale yellow tile infill",
+      "id": "M01 Pale yellow tile infill",
+      "srgb": "#D9C79C"
+    },
+    {
+      "source_3mf_name": "Light projecting tile faces",
+      "id": "M02 Light projecting tile faces",
+      "srgb": "#E1DED0"
+    },
+    {
+      "source_3mf_name": "Gray lower brick faces",
+      "id": "M03 Gray lower brick faces",
+      "srgb": "#727777"
+    },
+    {
+      "source_3mf_name": "Glazing optical approximation",
+      "id": "M05 Glazing optical approximation",
+      "srgb": "#405258"
+    },
+    {
+      "source_3mf_name": "Aluminum frame approximation",
+      "id": "M06 Aluminum frame approximation",
+      "srgb": "#D4DADD"
+    },
+    {
+      "source_3mf_name": "Three original green roof patches",
+      "id": "M07 Three original green roof patches",
+      "srgb": "#718456"
+    },
+    {
+      "source_3mf_name": "Visible main non-green roof",
+      "id": "M08 Visible main non-green roof",
+      "srgb": "#D0D0C8"
+    },
+    {
+      "source_3mf_name": "Upper louver screen reading",
+      "id": "M09 Upper louver screen reading",
+      "srgb": "#494847"
+    },
+    {
+      "source_3mf_name": "Approximate pale tower roof cap surface",
+      "id": "M10 Approximate pale tower roof cap surface",
+      "srgb": "#D4D4CD"
+    }
+  ],
+  "baseline_distribution": [
+    3895,
+    865,
+    247,
+    209,
+    352,
+    74,
+    14,
+    2,
+    36,
+    4
+  ],
+  "new_distribution": [
+    3893,
+    865,
+    247,
+    209,
+    352,
+    74,
+    14,
+    2,
+    36,
+    4,
+    2
+  ],
+  "publisher_rights": "No external source imagery/presentation or original art enters this same-item add-only folder."
+}
