@@ -1,28 +1,67 @@
-"""Validate color-only same-item update without modifying/deleting source geometry."""
+"""Read-only release validation, not a model or preview rebuild."""
+import hashlib, io, json, zipfile
 from pathlib import Path
-import json,hashlib,zipfile,xml.etree.ElementTree as E,tempfile,shutil,subprocess,sys
-import numpy as np,trimesh
-R=Path(__file__).resolve().parent;H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-expected='4f46d9cf812ce60da69dae3c9727c2d7911ca0b263ba4c0f7291558543031349'
-s=trimesh.load(R/'model.stl',force='mesh',process=True);d=np.load(R/'color-mesh.npz');t=trimesh.Trimesh(d['vertices'],d['faces'],process=False)
-def canonical(tri):
- return sorted(tuple(k for v in sorted(map(tuple,np.round(q,6)))for k in v)for q in tri)
-with zipfile.ZipFile(R/'appearance.3mf') as z:e=E.fromstring(z.read('3D/3dmodel.model'))
-ns={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
-v=np.array([[float(x.attrib[k])for k in ['x','y','z']]for x in e.findall('.//m:vertex',ns)]);f=np.array([[int(x.attrib[k])for k in ['v1','v2','v3']]for x in e.findall('.//m:triangle',ns)]);ma=np.array([int(x.attrib['p1'])for x in e.findall('.//m:triangle',ns)])
-checks={'original_STL_bytes_unchanged':H(R/'model.stl')==expected,'5250_triangles_preserved':len(t.faces)==len(s.faces)==5250,'triangle_coordinates_unchanged':canonical(s.triangles)==canonical(t.triangles),'watertight':bool(t.is_watertight),'single_positive_volume':len(t.split())==1 and t.volume>0,'finite_and_nondegenerate':bool(np.isfinite(t.vertices).all() and (t.area_faces>0).all()),'two_materials_actually_assigned':len(np.unique(d['materials']))==2,'3MF_mm':e.attrib.get('unit')=='millimeter','3MF_vertices_same':bool(np.allclose(v,d['vertices'],atol=1e-7)),'3MF_faces_same':bool(np.array_equal(f,d['faces'])),'3MF_material_assignment_exact':bool(np.array_equal(ma,d['materials']))}
-checks['3MF_object_identity']=e.find('.//m:object',ns).attrib.get('name')=='NTCU Lin Atelier Courtyard Section partial color'
-# Retained isolated original build + color program reproduction, never TemporaryDirectory cleanup.
-before={n:H(R/n)for n in ['build_model.py','colorize_model.py','model.stl','color-mesh.npz','appearance-materials.json']}
-tmp=Path(tempfile.mkdtemp(prefix='ntcu-lin-atelier-courtyard-section-color-isolated-'))
-for n in ['build_model.py','colorize_model.py']:shutil.copy2(R/n,tmp/n)
-subprocess.run([sys.executable,str(tmp/'build_model.py')],check=True,capture_output=True)
-subprocess.run([sys.executable,str(tmp/'colorize_model.py')],check=True,capture_output=True)
-checks['isolated_original_STL_hash']=H(tmp/'model.stl')==expected
-checks['isolated_color_mesh_hash']=H(tmp/'color-mesh.npz')==H(R/'color-mesh.npz')
-checks['isolated_palette_assignment_hash']=H(tmp/'appearance-materials.json')==H(R/'appearance-materials.json')
-checks['inputs_unchanged_during_QA']=before=={n:H(R/n)for n in before}
-(R.parent/'PRIVATE-COLOR-REBUILD-LOCATION.json').write_text(json.dumps({'retained_directory':str(tmp)},indent=2))
-checks={k:bool(v) for k,v in checks.items()}
-q={'status':'PASS'if all(checks.values())else'FAIL','checks':checks,'color_mesh_sha256':H(R/'color-mesh.npz'),'original_STL_sha256':expected,'bounds_mm':t.bounds.tolist(),'retained_rebuild':'Isolated rebuild retained privately; no automatic file deletion.','limitations':['Color model uses original unrefined geometry; no new facade accuracy claim.','Two base-material labels are not a tested four-filament slicer project.','STL format itself does not contain color.']}
-(R/'COLOR-FORMAT-GEOMETRY-QA.json').write_text(json.dumps(q,indent=2)+'\n');print(q);assert all(checks.values())
+from xml.etree import ElementTree as ET
+
+import numpy as np
+
+root = Path(__file__).resolve().parent
+def read(name):
+    return (root / name).read_bytes()
+def verify(ok, description):
+    if not ok:
+        raise ValueError(description)
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
+
+for line in read("SHA256SUMS").decode().splitlines():
+    expected, filename = line.split("  ", 1)
+    verify(Path(filename).name == filename and digest(read(filename)) == expected,
+           f"Release checksum: {filename}")
+for manifest in ("CHEEK-MANIFEST.json", "FREEZE-MANIFEST.json"):
+    entries = json.loads(read(manifest))["files"]
+    for item in entries:
+        payload = read(item["path"])
+        verify(len(payload) == item["bytes"] and digest(payload) == item["sha256"],
+               f"{manifest}: {item['path']}")
+
+with zipfile.ZipFile(io.BytesIO(read("cheek-baseline-inputs.zip"))) as archive:
+    expected = {name: archive.read(next(n for n in archive.namelist() if Path(n).name == name))
+                for name in ("model.stl", "model.obj", "color-mesh.npz", "palette.json", "appearance.3mf")}
+for name in ("model.stl", "model.obj", "palette.json"):
+    verify(read(name) == expected[name], f"Original bytes: {name}")
+baseline = np.load(io.BytesIO(expected["color-mesh.npz"]), allow_pickle=False)
+current = np.load(io.BytesIO(read("color-mesh.npz")), allow_pickle=False)
+verify(baseline.files == current.files, "Array inventory")
+for key in ("vertices", "faces"):
+    verify(baseline[key].dtype == current[key].dtype and
+           np.array_equal(baseline[key], current[key]), f"Original array: {key}")
+old, new = baseline["materials"], current["materials"]
+change = json.loads(read("cheek-return-change.json"))
+ids = change["ids"]
+verify(old.dtype == new.dtype and len(new) == 5250 and
+       np.flatnonzero(old != new).tolist() == sorted(ids) and
+       np.all(old[ids] == 1) and np.all(new[ids] == 0), "Exact changed face IDs and transition")
+materials = json.loads(read("appearance-materials.json"))
+counts = np.bincount(new, minlength=2).tolist()
+verify(counts == [74, 5176] == [m["faces"] for m in materials["palette"]],
+       "Current material counts")
+verify(sorted(sum(materials["domain_face_indices"].values(), [])) ==
+       np.flatnonzero(new == 0).tolist(), "Current documented material domains")
+with zipfile.ZipFile(io.BytesIO(read("appearance.3mf"))) as archive:
+    model = ET.fromstring(archive.read("3D/3dmodel.model"))
+ns = {"m": "http://schemas.microsoft.com/3dmanufacturing/core/2015/02"}
+with zipfile.ZipFile(io.BytesIO(expected["appearance.3mf"])) as archive:
+    old_model = ET.fromstring(archive.read("3D/3dmodel.model"))
+faces = model.findall(".//m:triangle", ns)
+vertices = model.findall(".//m:vertex", ns)
+verify(model.attrib.get("unit") == "millimeter" and
+       np.array_equal([[int(t.attrib[k]) for k in ("v1", "v2", "v3")] for t in faces],
+                      current["faces"]) and
+       np.array_equal([int(t.attrib["p1"]) for t in faces], new) and
+       [v.attrib for v in vertices] == [v.attrib for v in old_model.findall(".//m:vertex", ns)] and
+       np.allclose(np.array([[float(v.attrib[k]) for k in ("x", "y", "z")] for v in vertices]),
+                   current["vertices"], rtol=0.0, atol=5e-9),
+       "3MF geometry, order, units and per-face colors")
+print(json.dumps({"status": "PASS", "mode": "read-only publication verification",
+                  "triangles": len(new), "counts": counts, "changed_face_ids": ids}))

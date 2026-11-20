@@ -28,3 +28,34 @@
 ## English limitations
 
 NTCU Lin Atelier Courtyard Section partial color. Courtyard elevation section only,notwholeatelier/museum;shallowblankrear isanarbitrarycutoff notactualdepth. Entire originaly=-9.3 plane48faces forms two complete24face outerframecomponents,includingBooleanjunctions throughz45. Nominaldarkbrown48/neutral5202;original5250triangles/STL/build/OBJ unchanged,count_delta0. Innergrilles/glass/curtains,doors/hardware,weatherboardswithlamps/pipes/signs,brickplinthwithgrayvents,hoodedges,frame sides/back,cutoffroofstripneutral. Post2015restorationVRcontext,captureunknown,not2025entrance/2026survey. Originalgeometricapproximation notrevalidated,no publicphotos/textures,not testprinted.
+
+
+## 2026-11-18 靠門側窗框外頰有限補色
+
+本次只將靠門第一扇窗的 −X 外豎框完整原連通域 **26 面由中性 1 延為既有棕材 0**。保留原 48 個棕色正面，成為 74 棕／5,176 中性；原 5,250 面／2,527 點、面序、STL、OBJ 與幾何完全不變。其餘 5,224 面不動，非全館完成補色。上文及舊 QA／checksum 保留歷史，最新範圍以本節與 `CHEEK-*` 文件為準。
+
+原域 x≈−15.6，y[−9.3,−6.875]，z[17.8,44.2]，面積61.095008545 mm²；26面為完整共享邊共面域，保留與木板溝縫相交的階形邊，**不是完整矩形**，未切面或拉直。靠門外框朝−X可見側厚與前緣屬同棕色族；右側密格柵、左側水平木板壁分別排除。模型粗化厚度與相交階紋不等於實測構造，不藉顏色修復模型形狀。不鏡推第二窗、不改內側／背板／罩簷／板壁／屋頂截口。
+
+官方庭院VR原圖拍攝日期未知，僅2015修復後脈絡，不包含2025入口改造或證明2026現況。名義棕 `#655042` 沿原色盤，不是校準色票、木種鑑定或逐像素深度量測。照片私存，不入公開包／紋理；[來源與域](CHEEK-SOURCE-SCOPE.json)。
+
+### 本次保存與重建
+
+原 native scene 直接改26面，不重建物件、相機、光或材質。完整RNA恰80差：26面在polygon、looptriangle、material attribute共78表示，加原`source_mesh_sha256`更新與新增`side_color_scope`。所有舊材、節點、逐slot與原scope保留；無孤材fake_user變更。原scope為一般部分色說明，新增scope詳本輪。
+
+3MF僅26面p1改0，另補原object缺少的 `pid=1/pindex=1` 預設，讓SDK可編修寫回；每面本來都有明示p1，故預設不另改外觀。XML頂點原字串與所有原材保留。NPZ原座標／面序／dtype不變。
+
+[變更紀錄](cheek-return-change.json) · [本次QA](CHEEK-QA.json) · [本次逐檔校驗](CHEEK-MANIFEST.json) · [公開原件重建基準ZIP](cheek-baseline-inputs.zip) · [基準hash](cheek-baseline-inputs.json)
+
+```sh
+unzip cheek-baseline-inputs.zip -d baseline
+blender -b -t 2 -P rebuild_cheek_return.py -- baseline rebuilt
+blender -b -t 3 -P render_cheek_views.py -- rebuilt
+python finalize_cheek_previews.py rebuilt
+```
+
+Blender4.3.2、numpy、lib3mf2.5.0；PNG清理另需Pillow。鎖定原公開件重現局部材質修訂，不重建原幾何。原10視角以同定義、1200×900、Cycles48samples重渲；scene存檔相機不變，圖無文字覆蓋。私人同相機前後已親看；該視點26個面心射線中14可見，另12個後緣溝縫小面被旁側原直條面530遮擋。同一完整框域照留，不單獨剔除或切色，不冒稱所有面或像素無遮擋。原幾何製造QA未重跑，未切片或實印，不保證可印／多材工具路徑。發布狀態另行確認。
+
+
+### 現行發布校驗
+
+本次現行統計為 **74 棕／5,176 中性**，仍為局部補色。舊 QA 與前文的 48 面僅指歷史基準；現行材質統計見 `appearance-materials.json`。本發布的 `SHA256SUMS`／`FREEZE-MANIFEST.json` 已按現行檔案重列，不是舊版校驗檔；前文所提的舊 checksum 是原始基準 ZIP 內所保存的版本。校驗方法、清單層級與既存附圖區別見 [發布版校驗](RELEASE-CHECKSUMS.md)。

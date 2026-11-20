@@ -4,17 +4,17 @@
       "id": 0,
       "name": "NTCU Lin Atelier observed outer window fronts brown",
       "hex": "#655042",
-      "faces": 48
+      "faces": 74
     },
     {
       "id": 1,
       "name": "UNVERIFIED main walls entrance windows roofs neutral",
       "hex": "#B8BAB5",
-      "faces": 5202
+      "faces": 5176
     }
   ],
   "domain_face_indices": {
-    "whole_outer_window_frames": [
+    "original_outer_window_frame_fronts": [
       2606,
       2609,
       2610,
@@ -63,6 +63,34 @@
       3837,
       3838,
       3839
+    ],
+    "door_side_window_outer_cheek_negative_x": [
+      2615,
+      2616,
+      2617,
+      2618,
+      2619,
+      2620,
+      2621,
+      2622,
+      2623,
+      2628,
+      2629,
+      2630,
+      2631,
+      2632,
+      2636,
+      2637,
+      2638,
+      2639,
+      2640,
+      2646,
+      2652,
+      2653,
+      2658,
+      2659,
+      2662,
+      2663
     ]
   },
   "coplanar_components": 1130,
@@ -76,8 +104,10 @@
     "Window and door hood fronts have thin edge/cover transitions; no unverified single-color extension.",
     "Brick plinth includes gray ventilation slots and concrete base; no full red plinth.",
     "Roof is a shallow cutoff strip, not the actual pitched tiled roof; no black full top or back.",
-    "Frame sides, backs, model support, rear/cut surfaces and all remaining triangles remain neutral.",
+    "Only the specified door-side window −X outer cheek was added; all other frame sides, backs, model support, rear/cut surfaces and all other formerly neutral triangles remain neutral.",
     "Preserve5250 original STL faces and immutable original OBJ unchanged. Do not regenerate geometry or replace original OBJ.",
     "Courtyard elevation section only, not the entire atelier/museum."
-  ]
+  ],
+  "scope": "Current limited courtyard-section color; baseline material IDs, names and hex values preserved.",
+  "historical_baseline": "Original 48/5202 counts and original metadata are preserved in cheek-baseline-inputs.zip."
 }

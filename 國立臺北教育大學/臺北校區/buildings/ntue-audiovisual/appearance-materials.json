@@ -4,13 +4,13 @@
       "id": 0,
       "name": "Observed right wall and independent front pier muted brick",
       "hex": "#A47258",
-      "faces": 10
+      "faces": 15
     },
     {
       "id": 1,
       "name": "UNVERIFIED main walls entrance windows roofs neutral",
       "hex": "#B8BAB5",
-      "faces": 1206
+      "faces": 1201
     }
   ],
   "domain_face_indices": {
@@ -27,6 +27,13 @@
     "front_pier": [
       856,
       862
+    ],
+    "right_corner_pier_outer_return_positive_x": [
+      860,
+      861,
+      867,
+      868,
+      871
     ]
   },
   "coplanar_components": 293,
@@ -34,8 +41,9 @@
   "fully_colored_exterior": false,
   "geometry_policy": "1216 original triangles unchanged",
   "limits": [
-    "Only complete original right wall x68 and independent pier front y-44.6, all vertices finite bounds.",
+    "Complete original right wall x68 and independent pier front y-44.6 were retained; only five triangles on the same pier outer +X x66.6 were added. Other sides, tops, undersides and concealed surfaces remain neutral.",
     "Main facade, unknown walls, window mixed backs, pale entrance soffits and roofs neutral.",
     "Photo capture date unknown;2023form date not capture."
-  ]
+  ],
+  "historical_baseline": "Original 10/1206 assignment metadata is retained unmodified inside return-baseline-inputs.zip."
 }

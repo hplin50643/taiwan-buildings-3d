@@ -1,0 +1,73 @@
+{
+  "status": "PRODUCER_PASS_PENDING_INDEPENDENT_REVIEW",
+  "numeric": {
+    "status": "PASS",
+    "ids": [
+      860,
+      861,
+      867,
+      868,
+      871
+    ],
+    "counts": [
+      15,
+      1201
+    ],
+    "unchanged_faces": 1211,
+    "geometry_stl_npz_3mf_preserved": true,
+    "strict_sdk_zero_warnings": true,
+    "sdk_private_material_roundtrip": true,
+    "max_roundtrip_delta": 7.62939453125e-06
+  },
+  "scene_and_rebuild": {
+    "status": "PASS",
+    "full_rna_difference_count": 16,
+    "difference_scope": "15 polygon/loop_triangle/material_attribute representations of exactly5faces;1source_mesh_sha256 provenance update",
+    "all_original_material_datablocks_and_node_trees_identical": true,
+    "all_old_slots_fresh_snapshot_equal": true,
+    "orphan_fake_user_changes": 0,
+    "clean_bytes_equal": [
+      "model.stl",
+      "color-mesh.npz",
+      "appearance.3mf",
+      "palette.json",
+      "pier-return-change.json"
+    ],
+    "clean_full_rna_equal": true,
+    "snapshot_limits": "Runtime users/session/update fields excluded; object slots independently snapped to avoid pointer cycle placeholders; compare all old-prefix list entries even if lengths differ."
+  },
+  "native_edit": {
+    "status": "PASS",
+    "single_vertex_delta": 0.125,
+    "one_existing_material_edited": 0,
+    "other_materials_and_indices_preserved": true,
+    "public_unchanged": true
+  },
+  "scope": "Only5 original +X corner pier faces; no geometry changes; no current-condition or exact-color claim",
+  "source": "Official NTUE disaster-prevention PDF p31 exterior photo, unknown capture date; p30 distinguishes other entrance",
+  "source_url": "https://general.ntue.edu.tw/var/file/44/1044/img/606570806.pdf",
+  "compatibility": "3MF object default pid1/pindex1 added so SDK writer works; explicit triangle p1 unaffected outside5faces",
+  "historical_reports": "Old reports/checksums retain original baseline scope; this RETURN-QA supersedes counts only for this new surface revision",
+  "not_tested": [
+    "physical print",
+    "new slicer/toolpath",
+    "fresh original engineering/thickness recertification"
+  ],
+  "publication": "Not performed",
+  "visual": {
+    "personally_viewed": "All10 inherited views and private same-camera before/after detail",
+    "result": "Only +X pier return extends existing brick color; top cap, inside opening, roof and other neutral walls remain unchanged. Original detail-view cropping retained.",
+    "same_camera_matrix": true,
+    "five_centroid_rays_hit_self": true,
+    "sample_limit": "Centroid rays not exhaustive visibility proof",
+    "pngs": {
+      "count": 10,
+      "resolution": [
+        1200,
+        900
+      ],
+      "text_metadata": false,
+      "pixel_preservation_verified": true
+    }
+  }
+}
