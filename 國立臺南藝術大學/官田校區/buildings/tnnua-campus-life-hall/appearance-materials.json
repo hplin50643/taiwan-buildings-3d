@@ -4,13 +4,13 @@
       "id": 0,
       "name": "Observed near fork steel outward facets lightgray",
       "hex": "#CCD0CC",
-      "faces": 46
+      "faces": 69
     },
     {
       "id": 1,
       "name": "UNVERIFIED shaft canopy rail proxies neutral",
       "hex": "#B8BAB5",
-      "faces": 1906
+      "faces": 1883
     }
   ],
   "domain_face_indices": {
@@ -63,6 +63,31 @@
       1707,
       1708,
       1709
+    ],
+    "near_branch_to_x33_back_half_continuity": [
+      1630,
+      1631,
+      1632,
+      1633,
+      1634,
+      1635,
+      1637,
+      1638,
+      1639,
+      1658,
+      1659,
+      1660,
+      1661,
+      1662,
+      1663,
+      1664,
+      1665,
+      1666,
+      1667,
+      1668,
+      1669,
+      1671,
+      1672
     ]
   },
   "finite_facet_reconstruction": [
@@ -263,5 +288,6 @@
     "No rawtriangle normal threshold or centroid cut; finiteplane+tangent+axis allvertices.",
     "Shaft/junction, other supports, solid rail proxies, entire folded roof with omitted grid/shadows neutral.",
     "All mixed walls glazing cone plaza ramps unknownneutral; source builtphotos not woodmodel, PDF2013 metadata not capture."
-  ]
+  ],
+  "limited_continuity_inference": "Only same identified lightgray steel tube back facets 8..15; not direct rear photograph or geometry certification. Original 16-gon, endpoints and junction approximation unchanged."
 }

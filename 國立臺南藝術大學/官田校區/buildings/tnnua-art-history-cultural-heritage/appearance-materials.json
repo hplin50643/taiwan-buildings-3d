@@ -10,13 +10,13 @@
       "id": 1,
       "name": "Observed central fin and right box fronts offwhite",
       "hex": "#D2D3CB",
-      "faces": 22
+      "faces": 26
     },
     {
       "id": 2,
       "name": "UNVERIFIED mixed walls bases proxies roof neutral",
       "hex": "#B8BAB5",
-      "faces": 2320
+      "faces": 2316
     }
   ],
   "domain_face_indices": {
@@ -375,6 +375,12 @@
     "right_box": [
       2075,
       2091
+    ],
+    "single_central_fin_negative_x_return": [
+      564,
+      568,
+      570,
+      571
     ]
   },
   "coplanar_components": 703,
@@ -386,6 +392,7 @@
     "Coarse relief pattern not faithful brick/perforated geometry; no new holes.",
     "Fullheight left wall/backing/graybase/whiteframe mixed domains neutral.",
     "All component sides/top/back, solid railproxy, windowbacks roof rear steps neutral.",
-    "Single PDFfigure29 builtphoto,2019report not capture, banner503 not accessed."
+    "Single PDFfigure29 builtphoto,2019report not capture, banner503 not accessed.",
+    "Four original centralfin negativeX side faces use existingoffwhitefamily; originalLprofile/upper0.5mmbackextension retained, notphotomeasured. OppositepositiveX/otherfins/walls unchanged."
   ]
 }

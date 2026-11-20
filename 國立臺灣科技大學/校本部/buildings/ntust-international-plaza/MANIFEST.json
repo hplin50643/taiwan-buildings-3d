@@ -1,0 +1,150 @@
+{
+  "scope": "2026-11-18 verified model; release packaging/PNG privacy metadata only. Historic model, scene and visual QA not rerun.",
+  "files": [
+    {
+      "file": "FRAMING-QA.json",
+      "bytes": 1020,
+      "sha256": "586e7afad6064d6e451e85939ad622a4aa64e3a51b0f3413a99561158873d640"
+    },
+    {
+      "file": "PNG-METADATA-RELEASE-QA.json",
+      "bytes": 8278,
+      "sha256": "0dcf5ee213999c519bd5f5bab3e5bcb3b758cc48ffaa10ab82344f531b608ab1"
+    },
+    {
+      "file": "QA-SUMMARY.json",
+      "bytes": 2680,
+      "sha256": "1af1a6d3a56b17863214d13a41c9c3a7a113aee92d0bca3677ece35810946db6"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5099,
+      "sha256": "5676e58e1fd2a86709332aacffc3e739b551d91cc5473526fca3ea76141c85c7"
+    },
+    {
+      "file": "SINGLE-COLUMN-CONTINUITY.md",
+      "bytes": 3107,
+      "sha256": "25f008fa17b5f8a062a08db9e12271e1aee219127ae17a6a9592e0f5e746d309"
+    },
+    {
+      "file": "appearance-materials.json",
+      "bytes": 4555,
+      "sha256": "bf384f7329bbe8b1e1331c443ece708f9a3f06f9d53aeaed52c851cb95569785"
+    },
+    {
+      "file": "appearance.3mf",
+      "bytes": 57839,
+      "sha256": "bccc964cb454d1ec42432f7ea17204737b350e65b1839bd1527f43cc2ee354cc"
+    },
+    {
+      "file": "back.png",
+      "bytes": 910167,
+      "sha256": "8d5e2bdc9952302479694d5cdb01050674b49aed1a4e31557e6f779b39331e01"
+    },
+    {
+      "file": "color-mesh.npz",
+      "bytes": 39680,
+      "sha256": "0d43b4a86a8626dcd4ada5033365a953ea8f81d55ef9d1db3675111c0b2a68fe"
+    },
+    {
+      "file": "column-side-change.json",
+      "bytes": 1236,
+      "sha256": "d07d4639a613fdffc2531fd7485cbd078b7ab9cb8d61ffd2d986ddfd714a09f9"
+    },
+    {
+      "file": "east.png",
+      "bytes": 836312,
+      "sha256": "8dbcba4b670b2eff0a314e98246ae9793260852319eb819b11597c276f4b2b88"
+    },
+    {
+      "file": "entry-detail.png",
+      "bytes": 1774043,
+      "sha256": "a9f5bea2455debd1b4f5557aa98ec5cab77518b7386ede3d7df7a55f5b20f135"
+    },
+    {
+      "file": "facade-detail.png",
+      "bytes": 1567334,
+      "sha256": "de0d80de810468f1f825749469c66941c1310473b2de391da240f02bbd3bfb08"
+    },
+    {
+      "file": "front.png",
+      "bytes": 1008276,
+      "sha256": "6fdc2c860d5b16a21eb85f75383b94ef32c3a770f9573e031061a901fa3c041e"
+    },
+    {
+      "file": "model.stl",
+      "bytes": 324484,
+      "sha256": "4cb5bfdbde4b9d544e6944dc1e6a9b72bafb310e6df4bace43f63c6ae0037d42"
+    },
+    {
+      "file": "palette-summary.json",
+      "bytes": 371,
+      "sha256": "d5d00d0408c3f5a2588c22379b1d75dc045fd4da408f5ee1a0f3d0a3c8914fbe"
+    },
+    {
+      "file": "palette.json",
+      "bytes": 242,
+      "sha256": "d5177086577e9768c463035f13179db86c606c44036d9215ad844f27db1f730a"
+    },
+    {
+      "file": "preview.png",
+      "bytes": 816515,
+      "sha256": "3c96289f8a84d334360aebac02f7c1a31c6119690e5710c9a802eee01d0a30a5"
+    },
+    {
+      "file": "rear.png",
+      "bytes": 790356,
+      "sha256": "80e97b733fb6df130c38f5a3442421d406592121e471214b63dd6e8e737065c1"
+    },
+    {
+      "file": "rebuild-baseline/appearance.3mf",
+      "bytes": 57819,
+      "sha256": "a7d9ab94d706a86f615807e026d8f65df26f971121386463ac3bf898edb5947f"
+    },
+    {
+      "file": "rebuild-baseline/color-mesh.npz",
+      "bytes": 39681,
+      "sha256": "2b3658f38a3627e977244f4778233e45f2fd5e7a9c8319be475b5a772eaaf617"
+    },
+    {
+      "file": "rebuild-baseline/model.stl",
+      "bytes": 324484,
+      "sha256": "4cb5bfdbde4b9d544e6944dc1e6a9b72bafb310e6df4bace43f63c6ae0037d42"
+    },
+    {
+      "file": "rebuild-baseline/scene.blend",
+      "bytes": 212576,
+      "sha256": "6ea4f2d2ca7dddcba760f55658917ea07c1d8d2b77deacb20de57f59ed7297be"
+    },
+    {
+      "file": "rebuild_column_side.py",
+      "bytes": 4773,
+      "sha256": "6adf30aa2ee643830d1c386504a8f2c80871292f3257160d2571bcc398b8d35a"
+    },
+    {
+      "file": "render_column_side.py",
+      "bytes": 2658,
+      "sha256": "8d3bd21c7d8b68485274462cf627d38965c23ab04d9f981b1ad0e29154559d20"
+    },
+    {
+      "file": "roof-detail.png",
+      "bytes": 1268407,
+      "sha256": "a94f2a4c3eecac01a5c333659774f25d2db30440f480bb3a8dae30953dfdb514"
+    },
+    {
+      "file": "scene.blend",
+      "bytes": 212669,
+      "sha256": "9f9f377b11b9319216ea1122a7a3615d7667c95a73857b86a8cdd02e6e12ce05"
+    },
+    {
+      "file": "top.png",
+      "bytes": 1126425,
+      "sha256": "99ba002f07433af9dfaa193bac4a50e3e097c48f094e6341cc211b17bbfba0cb"
+    },
+    {
+      "file": "west.png",
+      "bytes": 930890,
+      "sha256": "9c863835a97c66a6c722ba099761f6cb51b20751bc42c367718112bb0a865300"
+    }
+  ]
+}

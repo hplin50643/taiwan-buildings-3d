@@ -1,5 +1,8 @@
 # 人社二館八角高塔與院落（2006–2017參考版）
 
+> **目前色版（2026-11-18 模型）**：本次只改 12 個原三角面的材質；現版共 9,934 面。面數以模型實際指派為準（材質索引／面數：0: Cream walls = 9,472、1: Slate roofs = 233、2: Base stone = 217、3: Portico = 0、4: Cornice = 0、5: Crown redbrown — nominal historical family = 12）。舊統計及舊 QA 為前版歷史，不能作為現版驗證。現版檔案核對請用 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)。
+
+
 ## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
@@ -53,7 +56,7 @@ python verify_package.py
 - [canonical v3薄特徵](thin-feature-check.json)：1mm間距、0.8mm opening參考寬度，72層最大面積損失0.863%；不是全面壁厚證明。
 - [canonical原檔](thin_canonical_v3.py) SHA256 059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915；[wrapper](check_thin_features.py)不改演算法，增加防沿用、STL SHA綁定及1%門檻。
 - [斜廊原STL射線](gallery-opening-check.json)及[腳本](check_gallery_opening.py)：跨中z8及18.5mm射線穿過±6mm全空；柱位z8有一實心區間；z20.5跨中與柱位均為連續梁板。
-- [包裝驗證](package-validation.json)、[逐檔SHA](SHA256SUMS)。任何invalid直接非零退出；不以buffer(0)、make_valid或修復STL掩蓋。
+- [包裝驗證](package-validation.json)、[歷史版雜湊](SHA256SUMS)。任何invalid直接非零退出；不以buffer(0)、make_valid或修復STL掩蓋。
 
 ## 斜弧玻璃罩專項
 
@@ -72,3 +75,30 @@ python verify_package.py
 2026-10-13外觀覆核通過；本機包凍結供獨立幾何審核，尚未發布GitHub。原照片及PDF不隨公開包重新散布。
 
 [返回校區](../../README.md) · [返回學校](../../../README.md)
+
+
+## 2026-11-18 局部歷史表面色修訂（並非全面真材校準）
+
+本次僅補 **315° 塔冠柱的 +X、−Y 兩完整外頰**：原 9,934 個三角面中，3714、3715、3718–3727 共 12 面由原展示材 0 改為新增材 5，其餘 9,922 面不變。STL 原位元、原 4,849 頂點、面序、物件變換與拓樸完全保留，沒有重建或切開三角面。
+
+- [可編修原場景](scene.blend)、[原幾何 STL](model.stl)。新增 [表面色 3MF](surface-colors.3mf)、[表面色 NPZ](surface-colors.npz)、[材料表](surface-palette.json) 是此次新交換檔，**不是原包已有的色彩基準**。NPZ 使用 saved scene 原頂點與面序；3MF 逐三角面指定材色，屬表面色交換而非多實體材料分件或實際列印認證。
+- 新材為未校色的名義紅褐族 sRGB `#A6533C`，Blender 線性 RGBA 約 `(0.38132602,0.08650046,0.04518620,1)`。非照片精確測色。5 個舊材槽包含未被任何面使用的 Portico／Cornice 全部保留；其他舊展示色不代表已全面驗證真實材料。
+- 來源為東華官方歷史照片 36（2006-12-06）與 37（2007-02-05）；兩照支持近東南柱兩外頰紅褐材料族連續。沒有逐像素相機配準，4×4 mm 加粗柱與布林圈交接仍是原模型近似。**不延伸另兩內側、其他 7 柱、上下圈或屋坡**，不宣稱 2026 現況。
+- 來源 36 SHA256 `712dac8a62e8842ae1a56fd351e5fec36717600c6cd8b45896a13cc3bb1a3b12`；37 `063aa05ab693cd415785f5e61a8c4aa63d98300ae3f846ae1b7969bbcfc4bda7`。原照維持私人審核，不包含於本包。來源 URL 與年代沿原 sources.json；參照上節來源連結。
+- 全 RNA 保留驗證共 42 項明示差異：12 面 × 3 材質表示 = 36；新增名義材料 datablock 1；mesh/object 各增材槽 1；新增 scope/hash 屬性 2；原孤立 `Material` 的 `use_fake_user` **False→True** 1。最後一項僅為正常另存／重開保留原孤立材及 shader，舊材其餘數值／node tree 全同，不是「原旗標完全不變」。無二進位 patch。
+- [局部變更](crown-cheeks-change.json)、[QA](QA-summary.json)、[原檔鎖定清單](baseline-inputs.json)、[逐檔清單](MANIFEST.json)。完整原共面域各 6 面，面積約 18.399744／18.399751 mm²，保留既有上下交接凹凸，不填平缺角。
+
+### 可重現此表面修訂
+
+[基準重建包](baseline-rebuild-inputs.zip) 含 SHA 鎖定原 STL／Blend 及原公開文碼，不含私人照片。此流程從原幾何基準重現表面修訂，不宣稱重新進行原參數幾何工程驗證。
+
+```sh
+unzip baseline-rebuild-inputs.zip -d baseline
+blender -b -t 2 -P rebuild_crown_cheeks.py -- baseline rebuilt
+blender -b -t 2 -P render_crown_views.py -- rebuilt
+python finalize_previews.py rebuilt
+```
+
+Blender 4.3.2（內建 numpy）；最後一步 Python 3 + Pillow。隔離重建已驗 STL／NPZ／3MF／palette／change JSON byte 相同及完整場景 RNA 等價。3MF strict SDK 零警告並已私副本改材寫回；Blend 私副本頂點與單面材質另存重開通過，公開檔 hash 未變。
+
+原 front/rear/top/courtyard 保持 900×700 設定與原相機，front-rear 為兩圖 1800×700 並排。公開圖僅移除 PNG text metadata，不改像素；私人同相機東南近景與 12 面射線樣點另保存於私人審核。未做實體試印或新切片驗證。本修訂在本地完成，發布狀態另行確認。

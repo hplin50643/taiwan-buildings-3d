@@ -4,13 +4,13 @@
       "id": 0,
       "name": "NSYSU south crown and front columns nominal gray brown substrate",
       "hex": "#A58F82",
-      "faces": 507
+      "faces": 511
     },
     {
       "id": 1,
       "name": "UNVERIFIED main walls entrance windows roofs neutral",
       "hex": "#B8BAB5",
-      "faces": 38391
+      "faces": 38387
     }
   ],
   "domain_face_indices": {
@@ -862,7 +862,13 @@
         13365,
         13370
       ]
-    }
+    },
+    "south_crown_left_outer_return": [
+      35934,
+      35935,
+      35936,
+      35965
+    ]
   },
   "coplanar_components": 11701,
   "partial_color_incomplete": true,
@@ -874,6 +880,7 @@
     "Model bridge connector artificial closure not real facade; remain neutral.",
     "Commons2024 original pixels GET403 stopped and not used; 2026 photo only original citation, not read or used as color evidence.",
     "Preserve all original v2 geometry/source/printability limits and original previews; no globalQA recertification or current/asbuilt assertion.",
-    "One existing mainblock; no newbuilding/count increase; still partial."
+    "One existing mainblock; no newbuilding/count increase; still partial.",
+    "Four original left crown return faces use same nominal brick family; six-edge original column-contact notch retained, not photo-resolved detail. All other triangles unchanged."
   ]
 }

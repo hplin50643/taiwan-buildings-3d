@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "rna_allowed_changes": [
+    [
+      "/meshes/NTPU bounded entry facade/attributes/4/data/3825/value",
+      0,
+      1
+    ],
+    [
+      "/meshes/NTPU bounded entry facade/attributes/4/data/3827/value",
+      0,
+      1
+    ],
+    [
+      "/meshes/NTPU bounded entry facade/loop_triangles/3825/material_index",
+      0,
+      1
+    ],
+    [
+      "/meshes/NTPU bounded entry facade/loop_triangles/3827/material_index",
+      0,
+      1
+    ],
+    [
+      "/meshes/NTPU bounded entry facade/polygons/3825/material_index",
+      0,
+      1
+    ],
+    [
+      "/meshes/NTPU bounded entry facade/polygons/3827/material_index",
+      0,
+      1
+    ],
+    [
+      "/objects/NTPU colored bay entry facade cut/custom_properties/side_color_scope",
+      null,
+      "Only original faces3825/3827 0to1; entire x79 eight-face connected blue side-frame family, six original blue faces retained; photo-supported continuity inference, modeled depth not measured; other4758faces unchanged."
+    ],
+    [
+      "/objects/NTPU colored bay entry facade cut/custom_properties/source_color_mesh_sha256",
+      null,
+      "72d8953854b6e0f142037f86e022bfdf76d89901b05566e1d195793be100fc03"
+    ]
+  ],
+  "full_snapshot_depth_limit": 18,
+  "snapshot_exclusions": [
+    "depsgraph",
+    "uv_sculpt",
+    "eraser_brush",
+    "eraser_brush_asset_reference",
+    "brush_asset_reference",
+    "rna_type",
+    "original",
+    "id_data",
+    "users",
+    "is_updated",
+    "is_updated_data",
+    "is_updated_transform",
+    "is_runtime_data",
+    "is_evaluated",
+    "session_uid",
+    "name_full",
+    "is_editmode",
+    "total_vert_sel",
+    "total_edge_sel",
+    "total_face_sel"
+  ],
+  "3mf_tree_attribute_changes": 6,
+  "object_default_unchanged": true,
+  "other_zip_members_exact": true,
+  "mesh_json_other_content_exact": true,
+  "clean_rebuild": "STL/3MF/meshJSON/changeJSON byte exact; Blend fullRNA semantics exact, not containerbyte claim",
+  "3mf_precision": "All original coordinate strings preserved; SDK float32 vertices match STL",
+  "original_material_inventory": [
+    "blue_projecting_bay",
+    "display_cut_base",
+    "opaque_glazing",
+    "pale_concrete",
+    "red_entry_frame",
+    "silver_mullions",
+    "yellow_projecting_bay"
+  ],
+  "no_orphan_removed": true,
+  "strict_warnings": 0,
+  "geometry_exact_before_SDK_rewrite": true,
+  "changed_faces": [
+    3825,
+    3827
+  ],
+  "remaining4758_materials_exact": true,
+  "palette7_exact": true,
+  "material0_edit_save_read": true,
+  "roundtrip_max_coordinate_delta": 1.52587890625e-05,
+  "roundtrip_no_degenerate": true,
+  "roundtrip_triangles_materials_exact": true,
+  "no_GUI_slicer_or_print_test": true,
+  "native_edit": "Private Blender vertex and face material save/reopen PASS; delivered scene SHA unchanged",
+  "original_readme_prefix_preserved": true,
+  "source_inference": "Photograph-visible upper blue return and rear blue border; modeled depth not measured",
+  "independent_review": {
+    "status": "PASS",
+    "changed_faces": [
+      3825,
+      3827
+    ],
+    "maximal_coplanar_domain_faces": 8,
+    "full_RNA_and_clean_rebuild": true,
+    "strict_SDK_and_private_native_edit": true
+  },
+  "private_detail_visibility": {
+    "side": "+X forward offset",
+    "target": [
+      79,
+      3.5,
+      46
+    ],
+    "camera_offset": [
+      24,
+      -60,
+      0
+    ],
+    "ortho_scale": 12,
+    "samples_per_face": 4,
+    "all_eight_samples_first_hit_target": true,
+    "limitation": "Finite ray samples; private model comparison not source photo registration; original lighting unchanged."
+  },
+  "original_five_views_completed": true
+}

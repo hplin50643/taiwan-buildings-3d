@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "producer_not_independent_review": true,
+  "strict_source_3mf_original_strings_preserved": true,
+  "direct_parser": true,
+  "faces_changed": [
+    564,
+    568,
+    570,
+    571
+  ],
+  "counts": [
+    156,
+    26,
+    2316
+  ],
+  "STL_NPZ_geometry_exact": true,
+  "XML_original_coordinate_strings_and_all_other_semantics_preserved": true,
+  "XML_exception": "object fallback pid=1 pindex=2; original explicit per-triangle p1 preserved except 4; inherited p2/p3 unchanged",
+  "complete_four_face_component_area": 53.0,
+  "full_RNA_differences": [
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/564/value",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/568/value",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/570/value",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/571/value",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/564/material_index",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/568/material_index",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/570/material_index",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/571/material_index",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/564/material_index",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/568/material_index",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/570/material_index",
+      2,
+      1
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/571/material_index",
+      2,
+      1
+    ],
+    [
+      "/objects/TNNUA Art History Cultural Heritage partial color/custom_properties/scope",
+      "Same original simplified geometry; source-referenced color, neutral unverified rear",
+      "Original156brickred and22offwhite fronts retained;4whole negativeX centralfinside faces existingoffwhitefamily inferred;2316neutral;originalgeometry unchanged;notasbuilt/current"
+    ],
+    [
+      "/objects/TNNUA Art History Cultural Heritage partial color/custom_properties/source_mesh_sha256",
+      "ed46f1c248a0fb4576c2af486e899604e0c381297c9bb8f5d1bcf75e539dc2dd",
+      "e8d2c391b6f075d8cea10b5109f96104d66b81488fec1e4661fec3399b5a1140"
+    ]
+  ],
+  "strict_SDK_warnings": 0,
+  "private_material_edit_save_reopen": true,
+  "roundtrip_max_delta": 7.152557373046875e-07,
+  "public_3mf_unchanged": true,
+  "native_edit_report": {
+    "status": "PASS_PRIVATE_NATIVE_VERTEX_AND_FACE_MATERIAL_EDIT_SAVE_REOPEN",
+    "source_public_sha256_before": "82154217c6b66504db94539ef42257115704f33575413a94473f6f40873f3bf4",
+    "source_public_sha256_after": "82154217c6b66504db94539ef42257115704f33575413a94473f6f40873f3bf4",
+    "public_unchanged": true,
+    "private_copy": "independent-native-edited.blend",
+    "private_copy_sha256": "b11c1e8489be6a315e2086e51a021c98e7e2894637cb8b06c02797ce160923b6",
+    "vertex_index": 643,
+    "vertex_before": [
+      -53.20000076293945,
+      -29.5,
+      54.0
+    ],
+    "vertex_after": [
+      -53.16875076293945,
+      -29.5,
+      54.0
+    ],
+    "face_index": 564,
+    "material_before": 1,
+    "material_after": 2,
+    "all_other_vertices_and_face_materials_unchanged": true,
+    "topology_and_object_transform_unchanged": true,
+    "actual_save_and_reopen": true,
+    "blender_version": "4.3.2",
+    "scope": "Private experiment only; edited file is not a deliverable or manufacturing requalification."
+  },
+  "scope": "Producer numeric verification, not independent reviewer; no visual or printing certification."
+}

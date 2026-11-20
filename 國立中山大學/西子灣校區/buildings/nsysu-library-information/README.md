@@ -1,5 +1,8 @@
 # 中山圖資主棟幾何v2｜南冠框與前圓柱局部名義磚色
 
+> **目前色版（2026-11-18 模型）**：本次只改 4 個原三角面的材質；現版共 38,898 面。面數以模型實際指派為準（材質索引／面數：0: NSYSU south crown and front columns nominal gray brown substrate = 511、1: UNVERIFIED main walls entrance windows roofs neutral = 38,387）。舊統計及舊 QA 為前版歷史，不能作為現版驗證。現版檔案核對請用 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)。
+
+
 **局部補色未完成：保留幾何 v2 主網格南短面冠框原 179 面名義灰粉棕磚色，新增正面四根圓柱的 328 個原側面，共 507 面配色；38,391 面維持未知中性。四柱背向面延續色屬合理推定。未定年官照非2026現況；不復原字樣、污斑或光照。色審不追認全幾何或列印QA。** partial_color_incomplete=true、fully_colored_exterior=false。nsysu-library-information/count_delta=0；NSYSU Library Information v2 partial color。
 
 | 前斜視 | 後斜視 | 南短面 |
@@ -36,3 +39,30 @@ NSYSU Library Information v2 partial color. The original 179 south crown faces r
 The target is geometry/v2 main38898, not oldroot15126 or hiddenplanQAclip4876. All61originalfiles remain byte-identical under original-version/ with nestedv2 nineviews andalloldQA. NewrootSTL/build/params are exactv2copies, no originalOBJ. OldQA scopedto originaltree only; newscene containsmainmesh only. Independent2mm/drawingmetre display, oneexistingmainblock,count0.
 
 Undatedofficialphoto only; not2026/asbuilt. Commons403image not used,2026originalcitation not newlyread. Originalboundedconnectorcaps, oneoffsetroofmass, material/geometrysimplifications andprintlimitations retained. No globalgeometry/printabilityrecertification or physicalprint. Sourcephotos private,rights unchanged.
+
+
+## 2026-11-18 南冠左外窄端有界材色延伸
+
+僅將原三角面 **35934、35935、35936、35965** 由未知中性 1 改為既有冠部名義磚色 0（#A58F82）。現為 **511 面名義磚色、38,387 面未知中性**，其餘 38,894 面完全不改。上文 507 面為本次之前歷史版本，不代表現版統計。
+
+來源為原先已登錄、未定年的官方照片。照片左側外冠端與前冠同屬褐磚材料家族；受陰影及未校準色彩影響，不聲稱逐像素同色或精確材料鑑定。本次只有此左端，不對稱推廣到右端、北冠、長翼、冠洞、窗、柱或橫向淡色底面。南是原圖面／入口相對方位，非實測地理方向。
+
+選域是 x≈−33.63、y≈[−66.3,−62.3]、z≈[79.61,97.87] mm 的完整原共面連通區，共 4 三角面、6 條外邊界、面積約 73.0290233 mm²。它不是完整矩形：下後緣保留原圓柱交接造成約 0.08 mm 高微缺口。這是原簡化幾何，並非照片可辨或實測的細節；不填缺口、不切三角、不改幾何，也不把柱或水平底面混入。
+
+保留全部原材質與 node、燈光、相機、world、transform、隱藏 caption/backdrop。隱藏歷史 caption 仍記 507 面且維持不渲染，現版統計以本節及資料檔為準。僅另同步物件的來源網格 SHA 與 scope；孤立原 Material 啟用 fake_user 防止保存時被丟棄，顏色與節點未改。
+
+3MF 保留原座標小數字串及面序，只改四個 p1；p2/p3 原本繼承 p1，未另加。物件新增既有中性材的 pid=1/pindex=1 預設值，供 SDK 編修保存，所有三角已有明確 p1，因此不改任何額外面。NPZ、STL 與場景全三角座標和順序核對；嚴格 SDK 讀取零警告、私人改材往返、Blender 私人頂點與面材編修保存重開、乾淨重建均通過。未重新認證整體幾何、切片或列印安全。
+
+十張預覽沿用原 renderer 的七個全景與三個局部視角、原 1200×900、Cycles 48 samples、原光照材質。局部細節圖本來就是裁切，不冒充全景留白。官方原照片與私人前後比較不附公開包。
+
+### 精確基準重建
+
+固定來源 commit：`8f90ae2478f00cce6832a07de537f7d333f6dbc0`。`source/baseline` 保存已公開的原 STL、NPZ、3MF、Blend、palette、appearance-materials 與 README，wrapper 逐檔核 SHA-256。Blender 4.3.2 內需 numpy。以下由本目錄執行，輸出須為獨立目錄，不可覆寫基準：
+
+```
+blender -b -t 1 --python-exit-code 1 -P source/rebuild_crown_return.py -- source/baseline rebuilt
+cp render_crown_return_views.py rebuilt/
+blender -b -t 2 --python-exit-code 1 -P rebuilt/render_crown_return_views.py
+```
+
+可另下載 `rebuild-source.zip`。重建不依賴私人照片或網路。原與現版都有界，依然不是全外牆完成、竣工／現況證明或實體試印結果。

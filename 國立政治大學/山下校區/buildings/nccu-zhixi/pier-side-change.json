@@ -1,0 +1,50 @@
+{
+  "changed_faces": [
+    508,
+    510,
+    524,
+    526
+  ],
+  "old_material": 1,
+  "new_material": 0,
+  "preserved_faces": 1022,
+  "original_corrected_fronts_preserved": [
+    507,
+    509,
+    523,
+    525
+  ],
+  "counts": [
+    495,
+    165,
+    44,
+    116,
+    150,
+    56
+  ],
+  "custom_property_updates": {
+    "source_mesh_sha256": {
+      "before": "1812d37eba590b5c2e7a39276d7ff94d44153f98e50e1315ab2bdaead5a7b222",
+      "after": "5f796b5a2f03011c6490d945cf5a9fea5793072a1d5822708063218b74e189ce"
+    },
+    "scope": {
+      "before": "Same original simplified geometry; source-referenced color, neutral unverified rear",
+      "after": "Original four corrected pier fronts retained; four lower outer pier sides 1 to 0 gray-family continuity inference; all1022otherfaces and geometry preserved"
+    }
+  },
+  "3mf_object_default_before": {
+    "pid": null,
+    "pindex": null
+  },
+  "3mf_object_default_after": {
+    "pid": "1",
+    "pindex": "4"
+  },
+  "datablock_retention": {
+    "fake_user_enabled_only_for_original_orphans": [
+      "Material"
+    ]
+  },
+  "geometry_unchanged": true,
+  "scope": "Two lower structural portal pier outer sides,36mm2 total, same gray-family continuity inference. Exact modeled depth not directly measured from PDF554. No current-condition or physical-print claim."
+}

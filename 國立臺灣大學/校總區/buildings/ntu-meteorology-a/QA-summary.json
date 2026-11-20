@@ -1,0 +1,183 @@
+{
+  "status": "PASS_SCOPED_MATERIAL_UPDATE",
+  "original_faces": 1988,
+  "changed_faces": [
+    1372,
+    1373
+  ],
+  "old_material": 5,
+  "new_material": 4,
+  "other_assignments_preserved": 1986,
+  "geometry_and_face_order_unchanged": true,
+  "palette_shader_world_camera_lights_hidden_objects_preserved": true,
+  "rna_differences": [
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/1372/value",
+      5,
+      4
+    ],
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/1373/value",
+      5,
+      4
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/1372/material_index",
+      5,
+      4
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/1373/material_index",
+      5,
+      4
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/1372/material_index",
+      5,
+      4
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/1373/material_index",
+      5,
+      4
+    ],
+    [
+      "/objects/NTU Meteorology A color/custom_properties/scope",
+      "Same original simplified geometry; source-referenced color, neutral unverified rear",
+      "Only original right canopy end faces 1372/1373 material5 to existing concrete4; remaining1986 assignments and geometry retained; 2013 source family continuity, not measured depth or current-condition proof"
+    ],
+    [
+      "/objects/NTU Meteorology A color/custom_properties/source_mesh_sha256",
+      "4ddfd8b2b348854a5f896a781a946fdebe9ad3303adfb1dd76aebefa6415996c",
+      "979aad8a9b7183f355ac10959f6b614ab64d9f294b453b56a9b2e0f8c224b1a8"
+    ]
+  ],
+  "rna_exclusions": [
+    "depsgraph",
+    "uv_sculpt",
+    "eraser_brush",
+    "eraser_brush_asset_reference",
+    "brush_asset_reference",
+    "rna_type",
+    "original",
+    "id_data",
+    "users",
+    "is_updated",
+    "is_updated_data",
+    "is_updated_transform",
+    "is_runtime_data",
+    "is_evaluated",
+    "session_uid",
+    "name_full",
+    "is_editmode",
+    "total_vert_sel",
+    "total_edge_sel",
+    "total_face_sel"
+  ],
+  "rna_depth_limit": 18,
+  "orphan_material_retention_flags_changed": [],
+  "clean_rebuild": "NPZ/3MF/change JSON byte exact; Blender fullRNA semantic exact",
+  "3mf_changes": "Only 2 triangle p1 plus object fallback pid1/pindex5; all coordinate strings and other archive members unchanged",
+  "strict_sdk_zero_warnings": true,
+  "private_sdk_material_edit_roundtrip": true,
+  "private_blender_vertex_and_material_edit_save_reopen": true,
+  "public_numerical_files_unchanged_by_private_tests": true,
+  "source_limit": "2013 published source family continuity on original whole right end only, not calibrated color, measured depth or current-condition proof. Current source SHA differs from historical; cause unverified.",
+  "public_previews": [
+    {
+      "name": "back.png",
+      "sha256": "dd4b85814f2143819c53ef73ac026014ae816bdec840abdffd1563f2d58ee875",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    },
+    {
+      "name": "east.png",
+      "sha256": "0b0edf5bd133b434a3dcbf2e593d86c00a331b320ceee6492cba96a8108afd33",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    },
+    {
+      "name": "entry-detail.png",
+      "sha256": "d68daec942dad3dbe070ceda44420dd4a5b6a86bc4b3871b20549330a31d551e",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    },
+    {
+      "name": "facade-detail.png",
+      "sha256": "26e039497ca5188fcec0bfd9cc5bcf3472a72f466e285228de65a0c3b6e9112c",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    },
+    {
+      "name": "front.png",
+      "sha256": "fd1195d9177a7b4ce1b4ba17801b0e87909aead3d1002ac348cb2718aaa7f067",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    },
+    {
+      "name": "preview.png",
+      "sha256": "c1dc5f77fc6b901cb60dbc379b084548da5c2d1802e89c7fc3a00465c94664cb",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    },
+    {
+      "name": "rear.png",
+      "sha256": "84c9d16124702aa8f18470a5c6f2f7fdd1ad237aa92627947e4be643057b52e2",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    },
+    {
+      "name": "roof-detail.png",
+      "sha256": "ac324e1f79649ce9e5366475ad936c5babef7bfc7315f3b14365ac3880670d94",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    },
+    {
+      "name": "top.png",
+      "sha256": "8aa39f7bc51f24b2dc799726a39c7bd0af52cd2a915b0c26bc63cf132b344b73",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    },
+    {
+      "name": "west.png",
+      "sha256": "00d95ec849362e865bb2228a48044c9130ab915bdc756da1706f36953cb9dec8",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "no_text_or_exif_chunks": true
+    }
+  ],
+  "private_visual_comparison": "Same camera/target/ortho/resolution/seed/geometry; 8 interior ray samples hit target; both renders completed before contact creation; no source-photo registration claim.",
+  "visual_review": "Ten original camera views personally checked; seven whole-building views complete framing, three intentional detail crops. Right end before/after personally viewed.",
+  "not_actual_print_or_slicer_test": true,
+  "partial_color_incomplete": true,
+  "fully_colored_exterior": false
+}

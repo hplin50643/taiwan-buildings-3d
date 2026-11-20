@@ -10,13 +10,13 @@
       "id": 1,
       "name": "UNVERIFIED fascia rails windowbacks body neutral",
       "hex": "#B8BAB5",
-      "faces": 8776
+      "faces": 8768
     },
     {
       "id": 2,
       "name": "Observed two entrance pillar frontfaces warmoffwhite",
       "hex": "#D7D5CC",
-      "faces": 14
+      "faces": 22
     }
   ],
   "domains": {
@@ -24,7 +24,7 @@
     "two_pier_fronts": 6,
     "whole_coplanar_withdrawals": 0,
     "right_pillar_inner_faces": 8,
-    "new_face_indices": [
+    "historical_inner_update_face_indices": [
       3925,
       3926,
       3928,
@@ -33,17 +33,30 @@
       3934,
       3935,
       3942
-    ]
+    ],
+    "right_pillar_outer_faces": 8,
+    "new_face_indices": [
+      3929,
+      3930,
+      3931,
+      3937,
+      3938,
+      3939,
+      3940,
+      3944
+    ],
+    "right_pillar_outer_area_mm2": 82.04008947372495
   },
   "partial_color_incomplete": true,
   "fully_colored_exterior": false,
   "geometry_policy": "8796 original triangles unchanged; no cuts or newgeometry",
   "limitations": [
     "Canopy true upperplane only;fascia mixed dark/pale remainsneutral.",
-    "Originaltwo pillarfronts plus boundedrightinnerplane8faces;othercolumnsides/underside neutral.",
+    "Original6pillarfronts plus inner8 and newouter8 on rightpillar only;remaining surfaces neutral. Complete original Boolean-clipped plane, not photo-measured depth.",
     "Originalsolidparapets not colored black as pretendopenrails.",
     "All windowbacks/mainwalls/roof andotherfaces neutral.",
     "2020article/2026imagepath not capturedate;newbuilding not demolishedold.",
     "Three materiallabels not verified multi-filament slicing."
-  ]
+  ],
+  "revision": "right-pillar-outer-eight-original-faces"
 }

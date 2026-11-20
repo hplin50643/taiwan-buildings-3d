@@ -1,5 +1,10 @@
 # 生活機能館｜僅右前兩斜鋼撐外前面局部淺灰
 
+> 發布預覽僅移除 PNG 文字中繼資料，不改畫素、構圖或壓縮影像資料；逐張核對見 [PNG-METADATA-RELEASE-QA.json](PNG-METADATA-RELEASE-QA.json)。歷史 QA 記錄原始預覽位元組，現版載入與雜湊請見上述現版清單。
+
+> **目前色版（2026-11-18 模型）**：本次只改 23 個原三角面的材質；現版共 1,952 面。面數以模型實際指派為準（材質索引／面數：0: Observed near fork steel outward facets lightgray = 69、1: UNVERIFIED shaft canopy rail proxies neutral = 1,883）。舊統計及舊 QA 為前版歷史，不能作為現版驗證。現版檔案核對請用 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)。
+
+
 **局部補色未完成：僅右前兩斜鋼撐完整46原面淺灰；欄牆代理、折屋與其餘域未完成。非全色或2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項`tnnua-campus-life-hall`／`count_delta=0`，官田校區；工作目錄20261103只處理日期，非capture。
 
 | 前斜視 | 後斜視 | 正面 |
@@ -34,3 +39,8 @@ MOI `moi-independent-award.pdf`物理22–23頁（印40–43）實景外觀照�
 ## English limitations
 
 Partial only: two original near/right fork branches23+23front-facing finite16gon facet triangles lightgray,1906neutral,505uniform coplanar components. Allvertices satisfy exact original cylinder chordplane/tangentextent/axisinterval, no centroid cut or rawtriangle-normal sliver exclusion. Shaft/junction, other supports, solid railing proxies and entire foldedroof remain neutral; simplified thickplate cannot map photographed open grid/shadows. Built photographs on MOIphysical22–23/printed40–43 used, not woodenmodel or drawings. PDF2013metadata not capture, no2026condition.1952originaltriangles/STL/build unchanged/count_delta0; source PDFprivate, no photo texture, not physically test-printed.
+
+
+## 2026-11-18 有限鋼撐背半延色
+
+僅指定單支鋼管原 23 面 1→0；1952 面原幾何不變，69 淺灰／1883 未驗中性。這是同材連續推論，不是背面新照逐面證實。原 README 與歷史 QA 原樣保留；本輪規格、限制及 SHA-locked 重建入口見 [BRANCH-BACK-CONTINUITY.md](BRANCH-BACK-CONTINUITY.md)。舊色彩程式單獨執行會回到歷史 46 面版。

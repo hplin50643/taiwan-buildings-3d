@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "direct_parser": true,
+  "faces_changed": [
+    35934,
+    35935,
+    35936,
+    35965
+  ],
+  "counts": [
+    511,
+    38387
+  ],
+  "STL_NPZ_geometry_exact": true,
+  "XML_original_coordinate_strings_and_all_other_semantics_preserved": true,
+  "XML_exception": "object fallback pid=1 pindex=1; original explicit per-triangle p1 preserved except 4; inherited p2/p3 unchanged",
+  "complete_four_face_component_area": 73.02902326078038,
+  "full_RNA_differences": [
+    [
+      "/materials/Material/use_fake_user",
+      false,
+      true
+    ],
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/35934/value",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/35935/value",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/35936/value",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/attributes/4/data/35965/value",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/35934/material_index",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/35935/material_index",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/35936/material_index",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/loop_triangles/35965/material_index",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/35934/material_index",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/35935/material_index",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/35936/material_index",
+      1,
+      0
+    ],
+    [
+      "/meshes/validated_printable_mesh/polygons/35965/material_index",
+      1,
+      0
+    ],
+    [
+      "/objects/NSYSU Library Information v2 partial color/custom_properties/scope",
+      "Bounded v2 south crown and four front column sides; not asbuilt/current",
+      "Original507crown/columnfaces retained;4whole leftcrownreturnfaces samebrickfamily inferred;38387neutral;originalgeometry unchanged;notasbuilt/current"
+    ],
+    [
+      "/objects/NSYSU Library Information v2 partial color/custom_properties/source_mesh_sha256",
+      "0a61097133c46478259ff09e00a630b0e5ac2560a09e848e2b86c51adf556583",
+      "e0adb651fe6d41a9d30c1d6163b275c4cfd408470d91e5831c05848f2f1bf7aa"
+    ]
+  ],
+  "strict_SDK_warnings": 0,
+  "private_material_edit_save_reopen": true,
+  "roundtrip_max_delta": 7.62939453125e-06,
+  "public_3mf_unchanged": true,
+  "native_edit_report": {
+    "status": "PASS_PRIVATE_NATIVE_VERTEX_AND_FACE_MATERIAL_EDIT_SAVE_REOPEN",
+    "source_public_sha256_before": "dadb1d8f49b311850694a043b8feee5aa8e774100e35803e56f53ff2e6d32e4f",
+    "source_public_sha256_after": "dadb1d8f49b311850694a043b8feee5aa8e774100e35803e56f53ff2e6d32e4f",
+    "public_unchanged": true,
+    "private_copy": "independent-native-edited.blend",
+    "private_copy_sha256": "1188e035588b2d8e9d34276d6b70a7c91bc6efef4e3d364c2bce962ad0b58bc0",
+    "vertex_index": 643,
+    "vertex_before": [
+      -28.06999969482422,
+      -61.029998779296875,
+      51.43000030517578
+    ],
+    "vertex_after": [
+      -28.03874969482422,
+      -61.029998779296875,
+      51.43000030517578
+    ],
+    "face_index": 35934,
+    "material_before": 0,
+    "material_after": 1,
+    "all_other_vertices_and_face_materials_unchanged": true,
+    "topology_and_object_transform_unchanged": true,
+    "actual_save_and_reopen": true,
+    "blender_version": "4.3.2",
+    "scope": "Private experiment only; edited file is not a deliverable or manufacturing requalification."
+  },
+  "scope": "Producer numeric verification, not independent reviewer; no visual or printing certification.",
+  "producer_not_independent_review": true,
+  "original_XML_max_coordinate_difference_to_NPZ_mm": 4.999996860988176e-09,
+  "strict_source_3mf_original_strings_preserved": true
+}

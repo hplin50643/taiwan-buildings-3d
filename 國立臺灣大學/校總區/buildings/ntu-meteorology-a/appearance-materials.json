@@ -28,13 +28,13 @@
       "id": 4,
       "name": "Documented canopy and exposed stair concrete",
       "hex": "#999B94",
-      "faces": 78
+      "faces": 80
     },
     {
       "id": 5,
       "name": "UNVERIFIED mixed plinth wall rear roof neutral",
       "hex": "#B8BAB6",
-      "faces": 1367
+      "faces": 1365
     }
   ],
   "partial_color_incomplete": true,
@@ -46,5 +46,14 @@
     "Unsplit plinth-crossing wall planes, rear and roof field neutral.",
     "Narrow original coping bands are coarse color-family approximations.",
     "Six labels are not a verified four-filament slicer project."
-  ]
+  ],
+  "limited_update": {
+    "faces": [
+      1372,
+      1373
+    ],
+    "from": 5,
+    "to": 4,
+    "scope": "CANOPY-END-CONTINUITY.md"
+  }
 }

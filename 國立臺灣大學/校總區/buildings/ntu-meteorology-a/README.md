@@ -1,5 +1,8 @@
 # 臺大氣象 A 館｜既有模型局部材色示意
 
+> **目前色版（2026-11-18 模型）**：本次只改 2 個原三角面的材質；現版共 1,988 面。面數以模型實際指派為準（材質索引／面數：0: 2013 visible cream brick family = 44、1: Existing restrained brown-gray window members = 216、2: Actual opening backing shadow = 253、3: Visible narrow reddish brown coping = 30、4: Documented canopy and exposed stair concrete = 80、5: UNVERIFIED mixed plinth wall rear roof neutral = 1,365）。舊統計及舊 QA 為前版歷史，不能作為現版驗證。現版檔案核對請用 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)。
+
+
 | 正前 | 後方 | 正面 |
 |---|---|---|
 |![正前斜視](preview.png)|![後方斜視](rear.png)|![正面](front.png)|
@@ -30,3 +33,8 @@
 外觀來源為洪致文公開攝影文章（2013-10-05，`COLOR-SOURCE-REGISTER.json` 列出來源與版本）。未確認 CC 或其他照片再散布授權；照片只作私人參照，不隨模型公開、不貼圖、不保證商用。色材及原創渲染不代表取得照片權利；原模型原有授權範圍保持，不擴張至來源照片。
 
 正式來源 GO、獨立來源審核、原包 SHA、逐面幾何與場景驗證、十視角渲染 QA 皆分開記錄；程式驗證不取代實景對位及人工視覺檢查。未核面保持中性，是明示限制而非完整上色宣稱。
+
+
+## 2026-11-18 有限右雨棚端更新
+
+僅原面 1372/1373 由中性 5 改既有混凝土 4，其餘 1986 面與幾何不動。原說明以上逐 byte 保留。仍是局部材色示意、未試印，非全館完成。來源本次圖與歷史 SHA 不同，依本次實照有限同構件推論，詳 [CANOPY-END-CONTINUITY.md](CANOPY-END-CONTINUITY.md)。新重建入口為 SHA 鎖定 `rebuild_canopy_end.py`；原流程單獨執行會回到舊分色。

@@ -1,5 +1,8 @@
 # 國立臺北大學綜合體育館彩色凸窗入口立面段
 
+> **目前色版（2026-11-18 模型）**：本次只改 2 個原三角面的材質；現版共 4,760 面。面數以模型實際指派為準（材質索引／面數：0: pale_concrete = 3,257、1: blue_projecting_bay = 142、2: red_entry_frame = 42、3: yellow_projecting_bay = 36、4: opaque_glazing = 467、5: silver_mullions = 590、6: display_cut_base = 226）。舊統計及舊 QA 為前版歷史，不能作為現版驗證。現版檔案核對請用 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)。
+
+
 ## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
@@ -31,3 +34,8 @@ Python 3.12，見 `requirements.txt`；`python build_model.py`；`python qa_mode
 | 任意展示背切面<br>![任意展示背切面](previews/rear.png) |  |  |
 
 資料來源與限制見 [SOURCES.md](SOURCES.md)、[QA.md](QA.md)。參考照片不在套件內；此套件只授權自行產生的模型／程式，不授權原建築或第三方照片。
+
+
+## 2026-11-18 藍框右側尾端有限補色
+
+本輪僅原3825/3827兩面0→1，補齊x79完整8面藍側框，其餘4758面與幾何不變。詳見 [BLUE-RETURN-CONTINUITY.md](BLUE-RETURN-CONTINUITY.md) 的來源、名義深度與歷史HOLD改判界線。新版可重建入口 `rebuild_blue_return.py` 及 `rebuild-baseline/`；原build_model.py保持歷史版，單獨重跑會回復本輪舊色。7材與原5張1200×1200構圖保持；新版雜湊見MANIFEST.json。

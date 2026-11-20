@@ -1,5 +1,12 @@
 # 台科國際大樓廣場側｜遮陽與廊柱局部補色
 
+> 發布預覽僅移除 PNG 文字中繼資料，不改畫素、構圖或壓縮影像資料；逐張核對見 [PNG-METADATA-RELEASE-QA.json](PNG-METADATA-RELEASE-QA.json)。歷史 QA 記錄原始預覽位元組，現版載入與雜湊請見上述現版清單。
+
+> **目前色版（2026-11-18 模型）**：本次只改 6 個原三角面的材質；現版共 6,488 面。面數以模型實際指派為準（材質索引／面數：0: Observed four sunshade front plates muted yellow = 8、1: Observed gallery column front faces pale warm gray = 162、2: UNVERIFIED mixed glazing rails wall roof neutral = 6,318）。舊統計及舊 QA 為前版歷史，不能作為現版驗證。現版檔案核對請用 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)。
+
+> 歷史校驗表原已與當前儲存庫不符的條目：SHA256SUMS.txt: README.md；該表留存歷史，不合併到現版校驗表。
+
+
 **局部補色未完成：只四上遮陽前面黃色及六層廊柱前面灰色；玻璃、代欄實板與未知面未完成。2012來源非2026現況。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。同項目`ntust-international-plaza`／`count_delta=0`，不新增套數。
 
 | 前斜視 | 後斜視 | 正面 |
@@ -36,3 +43,8 @@
 ## English limitations
 
 Partial material reference only: four original sunshade front plates8yellow triangles and thirty genuine gallery column front domains156gray triangles;6324neutral. Original6488faces/STL/build bytes unchanged; immutable original package has noOBJ, count_delta0. Same-plane walls are not automatically columns. Solid rail and sunshade approximations retained; mixed glazing/curved wing/unknown roof remain neutral. Three EXIF original timestamps are2012-11-08 local metadata without timezone; no UTCconversion or2026current-condition claim. Photos private, not redistributed textures. Not physically test-printed.
+
+
+## 2026-11-18 單一廊柱側面有限延色
+
+僅頂層中柱 −X 原六面 2→1，6488 面幾何不變，8 黃／162 暖灰／6318 未驗中性。原文與歷史 QA 保留；本輪 [有限推論、範圍與重建入口](SINGLE-COLUMN-CONTINUITY.md) 明列完整深度非逐像素證明、2012 非現況。舊分類器未改，單獨重跑回歷史版；使用附加 SHA-locked wrapper。

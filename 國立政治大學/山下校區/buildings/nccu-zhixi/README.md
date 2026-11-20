@@ -1,3 +1,6 @@
+
+> **目前色版（2026-11-18 模型）**：本次只改 4 個原三角面的材質；現版共 1,026 面。面數以模型實際指派為準（材質索引／面數：0: Observed gray washed aggregate, approximate = 495、1: Observed light aluminum frame, approximate = 165、2: Opaque dark recess / glazing illustration = 44、3: Observed darker projecting eave and eyebrow = 116、4: UNVERIFIED roof and rear neutral = 150、5: Authored display plinth = 56）。舊統計及舊 QA 為前版歷史，不能作為現版驗證。現版檔案核對請用 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)。
+
 政大志希樓｜下入口結構柱前面材色勘誤
 
 原 [507,509,523,525] 四面、兩完整連通共面域，y=-4.5、z3..12、|x|16.5..18，由原鋁框 index1 修正既有洗石灰 index0；不是新增配色覆蓋。六palette完全保留，外觀820／中性150／展示底56／1026原三角保持；原STL/build/既有工程檔不變，原包無OBJ，不新增。
@@ -70,7 +73,7 @@
 - [model.stl](model.stl)：毫米，150.0 × 82.0 × 31.2 mm，含底座最長150 mm，各館獨立比例
 - [scene.blend](scene.blend)：從交付STL匯入的可編輯網格；形狀與STL經比較一致
 - [build_model.py](build_model.py)：獨立參數化重建來源；[requirements.txt](requirements.txt)
-- [SHA256SUMS](SHA256SUMS)：逐檔校驗；STL SHA-256：8708e06528a5e6287650b16b1ca37473c3fe9941156243aab04bb27b1024f1b8
+- [歷史版雜湊](SHA256SUMS)：逐檔校驗；STL SHA-256：8708e06528a5e6287650b16b1ca37473c3fe9941156243aab04bb27b1024f1b8
 
 底座朝下列印。建議先以0.2 mm層高、0.4 mm噴嘴在自己的切片軟體檢視，確認簷口、雨遮、門楣與深凹窗的支撐需求。細窗框已加粗，仍須依材料、噴嘴及散熱調整。不要把數位QA解讀成免支撐保證。
 
@@ -87,3 +90,8 @@
 [thin-feature-check.json](thin-feature-check.json)：0.8mm參考寬度形態opening、1mm取样，最大損失比例0.09708%，超过1%層數0。此為輔助幾何篩檢，不是全面最小壁厚或工具路徑。
 
 尚未做Cura/Prusa实际切片或實體試印，不宣稱保證可印。
+
+
+## 2026-11-18 下層結構柱外側四面有限修正
+
+原 508/510/524/526 四面由鋁框代理 1 改為既有灰洗石族 0；原四正面保留、其餘 1,022 面及幾何不變。合計 36 mm² 是模型域面積，不是照片量測。採同一結構柱材族連續推論，不宣稱原圖完整證實回深或現況。完整限制、SHA 鎖定重建、孤立 Material 保存旗標及驗證見 [PIER-SIDES-CONTINUITY.md](PIER-SIDES-CONTINUITY.md)。舊色碼重跑會退回四側舊色；本輪入口為 `rebuild_pier_sides.py`。公開包不含第三方原照片。

@@ -1,5 +1,10 @@
 # 高師新研究大樓｜入口右柱內側有限暖白補色
 
+> **目前色版（2026-11-18 模型）**：本次只改 8 個原三角面的材質；現版共 8,796 面。面數以模型實際指派為準（材質索引／面數：0: Observed entrance canopy actual top mediumgray = 6、1: UNVERIFIED fascia rails windowbacks body neutral = 8,768、2: Observed two entrance pillar frontfaces warmoffwhite = 22）。舊統計及舊 QA 為前版歷史，不能作為現版驗證。現版檔案核對請用 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)。
+
+> 下文歷史開頭的「20 配色／8,776 中性」不是現版總數。現版另含前次保留色域；實際為 28 面配色（6 灰、22 暖白）及 8,768 面未知中性。
+
+
 局部分色未完成。保留原雨庇真頂6灰面及兩柱前6暖白面，新增右柱朝入口內側8原三角，合計20配色、8776未知中性、8796原面。三個原palette名稱、色票/index全部保持；新增8面沿用index2名義暖白#D7D5CC，歷史色名frontfaces不代表本次仍僅前面。原STL/OBJ/build、所有未選索引及工程aliases原bytes不變。
 
 新實看官方啟用典禮近照（總務處SN233之04(1).jpg，1600×1067）直接可辨右柱內向平面的淺色洗石族，不是只由前面同構件推色。原地面照與高視角仍作入口身份交核。新近照柱頂被畫面裁去、下端部分有人遮，完整原平面採有限同平面連續推定，不宣稱逐面全高直接可見。小壁燈、分縫及材質顆粒原未建模，不新增或畫黑；HEX非校準色票，原3.5mm方柱深度非實測。
@@ -42,3 +47,8 @@
 原 `build_model.py` → `colorize_model.py` → `export_appearance.py` → `validate_color.py`；Blender `render_color.py` 與 `verify_color_scene.py`。
 原字節／三角multiset、閉合正體積、3MF面材、完整隔離原build＋color重建、scene重開、十圖1200×900及圖文hash皆核，程序不取代來源人工判讀。
 原README與單色previews/render/validation保留歷程，不冒稱新QA，沒有刪除原件。
+
+
+## 2026-11-18 右入口柱外側 8 原面補色
+
+僅 3929/3930/3931/3937/3938/3939/3940/3944 由未知中性1改既有暖白2；原6雨庇頂與14暖白保留，其他8788面不變，總8796面。外側透視可見及有限同柱材族連續推論，非照片量測3.5mm深或現況認證。詳 [OUTER-PIER-CONTINUITY.md](OUTER-PIER-CONTINUITY.md)；新入口 `rebuild_outer_pier.py`，舊色碼仍歷史基準。原場景及孤立Material保留，PNG私有metadata移除，未試印、分色仍未完成。
