@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 圖書資訊暨研究大樓<br>[![圖書資訊暨研究大樓](buildings/nycu-yangming-library-research/appearance/previews/front.png)](buildings/nycu-yangming-library-research/) |  |  |
+| 圖書資訊暨研究大樓<br>[![圖書資訊暨研究大樓](../../docs/display/catalog/b14de686dcfe951f12e69f42-640.webp)](buildings/nycu-yangming-library-research/) |  |  |
 
 - [圖書資訊暨研究大樓](buildings/nycu-yangming-library-research/)
 

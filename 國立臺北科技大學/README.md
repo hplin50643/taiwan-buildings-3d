@@ -9,7 +9,7 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [![紅樓](../docs/display/catalog/3f0e19ee9a4f9f37182bb3dc-640.webp)](臺北校區（西校區）/buildings/ntut-red-house/README.md)<br>**[臺北工業學校紅樓](臺北校區（西校區）/buildings/ntut-red-house/)**<br>紅樓 | [![川堂局部](../docs/display/catalog/9402a5ccd49d1239538da6e3-640.webp)](臺北校區（西校區）/buildings/ntut-yida-south-section/README.md)<br>**[一大川堂校史館南端六開間段](臺北校區（西校區）/buildings/ntut-yida-south-section/)**<br>一大川堂南端段 | [![先鋒局部](../docs/display/catalog/bd5a68d748156267c2b0be59-640.webp)](臺北校區（南校區）/buildings/ntut-pioneer-north-section/README.md)<br>**[先鋒國際研發大樓臨忠孝東路前側段](臺北校區（南校區）/buildings/ntut-pioneer-north-section/)**<br>先鋒大樓前側段 |
-| [![億光大樓](臺北校區（東校區）/buildings/ntut-everlight/preview.png)](臺北校區（東校區）/buildings/ntut-everlight/README.md)<br>**[億光大樓](臺北校區（東校區）/buildings/ntut-everlight/)**<br>[彩色3MF](臺北校區（東校區）/buildings/ntut-everlight/appearance.3mf) · [材色範圍](臺北校區（東校區）/buildings/ntut-everlight/README.md) |  |  |
+| [![億光大樓](../docs/display/catalog/f3e1b8538d6ca0244c2db18c-640.webp)](臺北校區（東校區）/buildings/ntut-everlight/README.md)<br>**[億光大樓](臺北校區（東校區）/buildings/ntut-everlight/)**<br>[彩色3MF](臺北校區（東校區）/buildings/ntut-everlight/appearance.3mf) · [材色範圍](臺北校區（東校區）/buildings/ntut-everlight/README.md) |  |  |
 
 後續<br>尚未交付更多模型<br>[其餘建物續接](coverage/)
 

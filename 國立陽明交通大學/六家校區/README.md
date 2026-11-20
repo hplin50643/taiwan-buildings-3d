@@ -10,4 +10,4 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![圓樓外觀](buildings/nycu-hakka-round-building/appearance/previews/front.png) |  |  |
+| ![圓樓外觀](../../docs/display/catalog/d5ca854b020f598c246520f7-640.webp) |  |  |

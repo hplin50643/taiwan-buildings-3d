@@ -11,6 +11,6 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![樹之歌最終網格](buildings/ntu-xitou-tree-song/previews/front.png)](buildings/ntu-xitou-tree-song/README.md)<br>[樹之歌（2019完整外觀近似）](buildings/ntu-xitou-tree-song/README.md) | [![銀杏橋（2017竣工外觀近似）：實際模型預覽](buildings/ntu-xitou-ginkgo-bridge-2017/previews/front.png)](buildings/ntu-xitou-ginkgo-bridge-2017/README.md)<br>**[銀杏橋（2017竣工外觀近似）](buildings/ntu-xitou-ginkgo-bridge-2017/README.md)** |  |
+| [![樹之歌最終網格](../../docs/display/catalog/3b076277dac3207aa9468d8c-640.webp)](buildings/ntu-xitou-tree-song/README.md)<br>[樹之歌（2019完整外觀近似）](buildings/ntu-xitou-tree-song/README.md) | [![銀杏橋（2017竣工外觀近似）：實際模型預覽](../../docs/display/catalog/deb4b11eeb9bfe50e7512f96-640.webp)](buildings/ntu-xitou-ginkgo-bridge-2017/README.md)<br>**[銀杏橋（2017竣工外觀近似）](buildings/ntu-xitou-ginkgo-bridge-2017/README.md)** |  |
 
 [回臺大主圖鑑](../README.md) · [來源與範圍](buildings/ntu-xitou-tree-song/SOURCES.md)

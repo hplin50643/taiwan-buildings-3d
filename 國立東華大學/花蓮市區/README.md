@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/ndhu-artopia-exterior-study/previews/front.png" alt="國立東華大學藝托邦藝文空間｜來源有限的簡化外觀研究模型：實際模型預覽" width="220">](buildings/ndhu-artopia-exterior-study/README.md)<br>**[國立東華大學藝托邦藝文空間｜來源有限的簡化外觀研究模型](buildings/ndhu-artopia-exterior-study/README.md)** |  |  |
+| [<img src="../../docs/display/catalog/8888d9ed4cf67894c7d69e00-640.webp" alt="國立東華大學藝托邦藝文空間｜來源有限的簡化外觀研究模型：實際模型預覽" width="220">](buildings/ndhu-artopia-exterior-study/README.md)<br>**[國立東華大學藝托邦藝文空間｜來源有限的簡化外觀研究模型](buildings/ndhu-artopia-exterior-study/README.md)** |  |  |
 
 ## 既有說明與更新紀錄
 
