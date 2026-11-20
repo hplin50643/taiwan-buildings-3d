@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "original_scene_and_geometry_semantically_equal_after_explicit_exceptions": true,
+  "exceptions": [
+    "40 polygon and40 loop-triangle material indices 0->1",
+    "new material_index face attribute all3546 values checked,only40=1",
+    "one non-node salmon material plus slots",
+    "original orphan Material fake-user preservation flag false->true"
+  ],
+  "camera_world_render_and_original_material_node_data_exact": true,
+  "snapshot_exclusions": [
+    "brush_asset_reference",
+    "depsgraph",
+    "eraser_brush",
+    "eraser_brush_asset_reference",
+    "id_data",
+    "is_editmode",
+    "is_evaluated",
+    "is_runtime_data",
+    "is_updated",
+    "is_updated_data",
+    "is_updated_transform",
+    "name_full",
+    "original",
+    "rna_type",
+    "session_uid",
+    "total_edge_sel",
+    "total_face_sel",
+    "total_vert_sel",
+    "users",
+    "uv_sculpt"
+  ],
+  "original_representative_images_unchanged": true,
+  "scene_sha256": "da16e85c83946bc2d6aaffa018a36697b78062bd4da5a7f971e0e87c3ad4966c"
+}

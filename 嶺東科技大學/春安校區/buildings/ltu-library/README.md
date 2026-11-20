@@ -9,6 +9,27 @@
 照片與公開正射製作的全棟外觀有界近似，含西楔形七層高玻璃館、校園側階退/竪核、東約三層淺四坡低館、門棚與外梯。不代表全校已完成。
 
 
+## 2026-11-20 局部來源補色（原代表圖保持不變）
+
+| 補色前輔助視角 | 補色後輔助視角 |
+| :---: | :---: |
+| ![補色前西側全景](continuation/qa/before-west.png) | ![補色後西側全景](continuation/qa/after-west.png) |
+| 原中性模型，西側全景 | 僅西端低段短牆新增磚紅代理，完整模型及底座 |
+| ![補色前短牆局部](continuation/qa/before-wall-detail.png) | ![補色後短牆局部](continuation/qa/after-wall-detail.png) |
+| 同相機局部裁切，不是全景 | 四排共20方窗的凹面與周邊原中性面不變 |
+
+本次保留原10張 `previews/` 圖片的全部bytes，包含上方指定代表圖；它們仍為原中性版本，不假稱已呈現本次配色。上述4張只是新增QA對照，不替換原代表圖。
+
+原場景實際僅有 `neutral actual mesh` 展示材，沒有既有正面磚色。因此新增單一未校準磚紅代理 `#96695B`，只改122個既有三角面（380.016614 mm²），其餘6958面維持原中性材。沒有改頂點、面序、幾何或STL。從原建構參數獨立核對：面域為西端低段完整矩形外牆減去20個方窗開口；凹窗背板/側壁、玻璃、屋頂及其他立面均未擴染。
+
+依[來源書頁94](https://online.fliphtml5.com/ffvnt/mhlb/files/large/94.webp?1597739250)核此低段磚紅外牆，[書頁113](https://online.fliphtml5.com/ffvnt/mhlb/files/large/113.webp?1597739250)作整棟對位輔助，後者不當作被樹遮擋面的直接證據。照片年份未核，不是2026現況或量測色票。原模型沒有把照片中的細白色腰線獨立建面，本次不切面、補造或聲稱精確重現白線；這是有界既有表面的簡化磚色，不是全館完成配色。原來源照片不在公開包內。
+
+[彩色3MF](continuation/model-colored.3mf)／[面域](continuation/domain.json)／[色表](continuation/palette.json)／[本次檢核](continuation/qa/verification.json)／[本輪完整網格及原程式重建驗證](continuation/qa/whole-model-validation.json)／[獨立場景核對](continuation/qa/coordinator-independent-scene-qa.json)。3MF保留全部7080原三角與面序，strict lib3mf讀取零警告、流形定向有效；這不等於薄特徵安全或已試印。原3MF不存在，本次新增表面色交換檔，不是切片器工程或多噴頭映射。
+
+真實Blender另存後對全部可安全讀取RNA比較：原相機、world、變換、節點及設定一致；必要差異只有新增材/slot、122面指派及背後material_index欄位，以及為保存原孤兒材 `Material`、`edge ink` 而設的兩個fake-user旗標。UV Sculpt/brush asset無效指標及runtime、session、更新/選取計數不列入，不能稱Blender所有內部狀態皆已驗證。
+
+下列原薄特徵QA和四支嚴格exit1例外原檔原字保留，本次沒有重新宣稱它們通過，亦未做切片GUI或實體試印。原 `build_model.py`、`render_preview.py` 重建的是歷史中性版本與鎖定代表圖，不會自動加上本次色材；目前可編輯配色保存在 `scene.blend`，指派清單在本次面域檔。
+
 ## 範圍與誤差
 - 公開紀錄為2002規劃增改建、2005年5月啟用，不能據此稱東低館亦於2005新建。外觀綜合未核年份官方照片、2016/2024正射與2025-10街景。
 - 原創參數只做來源比例近似，沒有全層測繪平面/高程剖面。1F館內標牌只核身份，不能當比例平面。七層用途不等於所有細玻璃橫框都是樓板。

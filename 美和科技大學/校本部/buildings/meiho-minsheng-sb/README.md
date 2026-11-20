@@ -36,3 +36,23 @@
 本包直接採canonical-edge-v2：固定共邊方向插值，節點度數2、閉環及Polygon有效斷言通過後，才進行1 mm間距0.8 mm XY開運算。舊算法可能因獨立端點取整漏環；舊工具/結果已替換，不是僅增附錄。STL、Blender、重建來源及原0.2 mm閉環驗證不變。
 
 
+
+## 2026-11-20 有限側弧補色
+
+原scene只有「Warm stone preview only」中性展示材，沒有已核實的正面彩色。本次新增單一近似橙粉材 #C79984（Blender linear RGBA .57,.32,.23,1；3MF為8bit sRGB量化），只指定40個原側弧窗間牆面，合131.955083 mm²。其他3506面保持原展示色，不表示實景材質已確認。不是全棟或整個圓塔補色。
+
+原1703頂點、3546面、全部幾何/面序、STL與三張指定previews圖片不變。只改scene的40材索引，加一材及必要face attribute，保留全部原物件與原材；原孤兒Material以fake-user旗標保存，不刪原節點。[重套指定色程式](source/apply_side_color.py)可對現行scene重複執行 `blender -b -P source/apply_side_color.py`：先核原3546面全部角點順序雜湊及原索引範圍，再使用同名材質，只作用指定40面，不新增重複材質。由原STL及原render_preview重建中性scene後也可套用；原build/render程式仍為歷史幾何與展示流程，不能當新版補色器。
+
+[側色3MF](side-colored.3mf) · [可編輯scene](scene.blend) · [面域](side-color-domain.json) · [色表](side-color-palette.json) · [材面表](side-color-faces.json)。3MF無原版可比，本次新增而非聲稱更新既有3MF。
+
+### 額外QA預覽，不替換原代表圖
+|![側色全景](qa-side-20261120/overview.png)|![側弧近圖](qa-side-20261120/flank-detail.png)|
+|---|---|
+|完整入鏡的新QA全景|局部近圖，非整棟全景|
+
+親看[校方校園導覽原圖](https://adm.meiho.edu.tw/var/file/26/1026/img/1339/875261653.jpg)中標示SB的民生大樓照片，僅將可見圓角窗間牆的橙粉色族有限映射到五組原面。原來源照片本身很小、受招牌及陰影影響，色值是未校準代理；不把青玻璃、招牌、高灰直塔、屋頂、其他牆及未知背面染色。拍攝日期未知，不代表2026現況。原曲率、尺寸及窗間牆厚度是粗化近似，本次補色不追認為測繪。照片未納入公開檔案或貼圖。
+
+### 本次檢核及限制
+[交換QA](side-color-exchange-QA.json)對全部原三角角點/順序、所有材質指派與色表核對，strict lib3mf零警告；實際修改單材後寫回再讀，量化誤差上限另記。 [場景QA](side-color-scene-QA.json)新開檔比對原完整RNA，除指定索引、必要face attribute、新材槽與原孤兒材保存旗標外全部受檢資料一致；相機、render設定、世界及原材節點保留。UV Sculpt與runtime/更新計數等不穩定資料明列排除，非Blender每個內部狀態都被檢核。[真實Blender材質編輯存讀](side-color-native-edit-QA.json)使用私人副本、不修改交付scene。[獨立全mesh/指定面對照](side-color-independent-QA.json)另核全部物件transform/visibility與幾何。
+
+原519層與薄特徵限制維持歷史範圍，本次非重做實體列印或切片工具路徑，不能保證免支撐或全域壁厚。原代表圖保留的舊展示色不可用作本次色檢證據。本次hash-manifest列現行檔案，舊validation中的原scene/hash仍屬歷史版本，不宣稱新場景具相同bytes。

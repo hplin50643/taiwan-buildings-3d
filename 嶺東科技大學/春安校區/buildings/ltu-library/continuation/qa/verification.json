@@ -1,0 +1,41 @@
+{
+  "status": "PASS_BOUNDED_COLOR_AND_GEOMETRY_ONLY",
+  "triangles": 7080,
+  "changed_faces": 122,
+  "unchanged_faces": 6958,
+  "scene_STL_XML_lib3mf_geometry": "EXACT_ALL_TRIANGLES_AND_ORDER",
+  "strict_lib3mf_warnings": 0,
+  "valid_manifold_oriented": true,
+  "all_material_assignments": "exact122 0->1;6958 unchanged neutral",
+  "RNA_difference_count": 250,
+  "allowed_preservation_exceptions": [
+    "one new material and mesh material slot",
+    "122polygon+122loop-triangle material indices and material_index backing attribute",
+    "original orphan Material and edge ink use_fake_user False->True; contents unchanged"
+  ],
+  "camera_world_lights_nodes_transforms_and_other_serialized_RNA": "EXACT",
+  "inspection_exclusions": [
+    "UvSculpt and brush asset pointers excluded due to known Blender4.3.2 getter crashes",
+    "Runtime depsgraph/update/user/session IDs and selection counts excluded; enum sets sorted; attributes compared by name"
+  ],
+  "locked_original_previews": {
+    "previews/west.png": "f3f7ede90cae57a6b85b81b78b2f02a504e6465aeaff76fdcdbd0317ac12ea06",
+    "previews/rear.png": "c2ee1a8f20c53920b3af29c3d4935ad2a701790bd98879df9c5a8013052891fa",
+    "previews/topedges.png": "08be68fd3bb9ad16881fb76725647f69c634bc92e865ffdd77082d1337c4c838",
+    "previews/westfit.png": "f1e5874f9914dbe146803b636cc600d5418f75a40df51645ef41bbec12d83453",
+    "previews/backfit.png": "0a43a2c7a386f08753723c5c00266b5ca95074b9a0f228177b24a5d47a32fdb9",
+    "previews/east.png": "2c35a8be1eb64f07bea3b531ea04d0055b055345eb547accd0aafd4dc5bc6877",
+    "previews/top.png": "2770348d8b6770ae75852f69ffc970954a5b1bc9481ddb7e3d5e81cbe1280dea",
+    "previews/front.png": "fd539209c4e3b90890d726e5f383bf35732e72b6fb6ca8cbe83be191ff234ed3",
+    "previews/frontfit.png": "77b2340dfae26c943542c69ffe203dc2c3b7a7a0adce8bb8b84bc17fbabdf70e",
+    "previews/aerial.png": "3d076f740cd97a870a8f4bfc35e8566b4505964e2bd5d9999e74ce1c57ac67c3"
+  },
+  "original70_file_preservation": "Only scene.blend and README.md may change; other68 originals byte-identical",
+  "historical_strict_thin_feature_exceptions": "Preserved unchanged. Four strict scripts retain historical exit1. No blanket all-checks-pass claim or new physical print/slicer test.",
+  "visual_review": "Personally viewed original source94/113 and actual new wall-detail/west renders.122facade faces only; window recesses,roof,other sides remain neutral. Thin source white trims lack separate geometry, so exact stripe reproduction is not claimed.",
+  "sha256": {
+    "scene.blend": "79d1817407f94e1ba2a1cf5ffd83748aa1494bc280dd97324239aaffe49e158b",
+    "continuation/model-colored.3mf": "325c734b4dc029c6f76c91595118d28fb13232a48346bb81350fa63321054c39",
+    "continuation/domain.json": "4922b798b9b6d2622906c6d42521644a85b457cc294b4caa5f1248ebb8f3711f"
+  }
+}
