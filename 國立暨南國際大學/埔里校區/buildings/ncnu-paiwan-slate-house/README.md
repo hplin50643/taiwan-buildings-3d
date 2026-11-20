@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 交付 STL 正面<br>[![正面](../../../../docs/display/catalog/c1aea07d8382aa9503ed9ffa-640.webp)](previews/front.png) | 交付 STL 背面<br>[![背面](../../../../docs/display/catalog/4a088e584e804a8a9c45ce32-640.webp)](previews/rear.png) |  |
+| 交付 STL 正面<br>![正面](previews/front.png) | 交付 STL 背面<br>![背面](previews/rear.png) |  |
 
 國立暨南國際大學 · 埔里校區 · 公開實拍近似外觀模型
 
@@ -15,7 +15,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 俯視<br>[![俯視](../../../../docs/display/catalog/750a676a19c46cd86f99145b-640.webp)](previews/top.png) |  |  |
+| 俯視<br>![俯視](previews/top.png) |  |  |
 
 ## 辨識特徵
 - 淺雙坡石板屋頂與6個低矮不規則壓物近似
