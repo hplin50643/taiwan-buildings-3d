@@ -8,7 +8,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![綜合大樓（共同教室大樓）：實際模型預覽](三芝校區/buildings/mkc-common-building/previews/front.png)](三芝校區/buildings/mkc-common-building/README.md)<br>**[綜合大樓（共同教室大樓）](三芝校區/buildings/mkc-common-building/README.md)** |  |  |
+| [![綜合大樓（共同教室大樓）：實際模型預覽](../docs/display/catalog/d5f31b0f9bc6f2269da47ab8-640.webp)](三芝校區/buildings/mkc-common-building/README.md)<br>**[綜合大樓（共同教室大樓）](三芝校區/buildings/mkc-common-building/README.md)** |  |  |
 
 ## 範圍與限制
 

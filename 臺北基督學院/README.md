@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![校門房與字塔](淡水校區/buildings/cct-street-gatehouse-pylon/previews/front.png)](淡水校區/buildings/cct-street-gatehouse-pylon/README.md)<br>**[臺北基督學院淡水校區｜街側校門房與字塔](淡水校區/buildings/cct-street-gatehouse-pylon/README.md)**<br>街側彩色外觀 |  |  |
+| [![校門房與字塔](../docs/display/catalog/1b7e5ca8e4e82ddf2055b741-640.webp)](淡水校區/buildings/cct-street-gatehouse-pylon/README.md)<br>**[臺北基督學院淡水校區｜街側校門房與字塔](淡水校區/buildings/cct-street-gatehouse-pylon/README.md)**<br>街側彩色外觀 |  |  |
 
 <details>
 <summary>校門房與字塔：下載、來源及限制</summary>

@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/tcfsh-history-hall-survey-2012/previews/front.png" alt="臺中一中校史館｜2012 調查外觀：實際模型渲染" width="220">](buildings/tcfsh-history-hall-survey-2012/README.md)<br>**[臺中一中校史館｜2012 調查外觀](buildings/tcfsh-history-hall-survey-2012/README.md)**<br>[STL](buildings/tcfsh-history-hall-survey-2012/model.stl) · [彩色3MF](buildings/tcfsh-history-hall-survey-2012/model.3mf) · [Blender](buildings/tcfsh-history-hall-survey-2012/scene.blend) |  |  |
+| [<img src="../../docs/display/catalog/24be3ff38876f668bb8cde0e-640.webp" alt="臺中一中校史館｜2012 調查外觀：實際模型渲染" width="220">](buildings/tcfsh-history-hall-survey-2012/README.md)<br>**[臺中一中校史館｜2012 調查外觀](buildings/tcfsh-history-hall-survey-2012/README.md)**<br>[STL](buildings/tcfsh-history-hall-survey-2012/model.stl) · [彩色3MF](buildings/tcfsh-history-hall-survey-2012/model.3mf) · [Blender](buildings/tcfsh-history-hall-survey-2012/scene.blend) |  |  |
 
 來源照片與掃描圖不隨公開包配送；上圖為本模型實際 Blender 渲染。
 

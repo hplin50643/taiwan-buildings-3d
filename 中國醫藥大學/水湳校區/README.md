@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 西側正面<br>![關懷大樓正面](../../docs/display/catalog/72cfc3d3ff62c8d2b3579074-640.webp) | [![創研大樓A2：實際模型預覽](buildings/cmu-chuangyan-a2/previews/front.png)](buildings/cmu-chuangyan-a2/README.md)<br>**[水湳創研大樓 A2｜整棟地上外觀有限細節近似版](buildings/cmu-chuangyan-a2/README.md)** |  |
+| 西側正面<br>![關懷大樓正面](../../docs/display/catalog/72cfc3d3ff62c8d2b3579074-640.webp) | [![創研大樓A2：實際模型預覽](../../docs/display/catalog/a757d36b74857ab514e301d5-640.webp)](buildings/cmu-chuangyan-a2/README.md)<br>**[水湳創研大樓 A2｜整棟地上外觀有限細節近似版](buildings/cmu-chuangyan-a2/README.md)** |  |
 
 [關懷大樓：模型、範圍及限制](buildings/cmu-guanhuai/README.md)
 

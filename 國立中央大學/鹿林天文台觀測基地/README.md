@@ -6,6 +6,6 @@
 
 | 模型 | 模型 | 模型 |
 |---|---|---|
-| [![SLT最終網格](buildings/ncu-lulin-slt-main-building/previews/front.png)](buildings/ncu-lulin-slt-main-building/README.md)<br>[SLT主建築（1999，完整外觀近似）](buildings/ncu-lulin-slt-main-building/README.md) |  |  |
+| [![SLT最終網格](../../docs/display/catalog/2d24fcfd8c97f13cee37b276-640.webp)](buildings/ncu-lulin-slt-main-building/README.md)<br>[SLT主建築（1999，完整外觀近似）](buildings/ncu-lulin-slt-main-building/README.md) |  |  |
 
 [回學校主圖鑑](../README.md) · [覆蓋與缺口](../coverage.json)

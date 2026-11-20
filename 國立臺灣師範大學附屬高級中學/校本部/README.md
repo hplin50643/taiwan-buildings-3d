@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/hsnu-indoor-pool-physical-education-hall-2019-design/preview.png" alt="師大附中泳館2019設計實際模型渲染，非2022竣工或現況" width="220">](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/README.md)<br>**[體育教學館暨室內溫水泳池｜2019設計](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/README.md)**<br>[STL](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/model.stl) · [彩色3MF](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/model.3mf) · [Blender](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/scene.blend) |  |  |
+| [<img src="../../docs/display/catalog/1504fde0923bc3096d0b209f-640.webp" alt="師大附中泳館2019設計實際模型渲染，非2022竣工或現況" width="220">](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/README.md)<br>**[體育教學館暨室內溫水泳池｜2019設計](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/README.md)**<br>[STL](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/model.stl) · [彩色3MF](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/model.3mf) · [Blender](buildings/hsnu-indoor-pool-physical-education-hall-2019-design/scene.blend) |  |  |
 
 現行收錄 **1 套模型包**；不是全校建築數或全校完成。
 

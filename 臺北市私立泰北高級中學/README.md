@@ -8,6 +8,6 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/taibei-chongguang-asbuilt-7307/preview.png" alt="重光樓｜工號7307竣工圖版：實際模型渲染" width="220">](校本部/buildings/taibei-chongguang-asbuilt-7307/README.md)<br>**[重光樓｜工號7307竣工圖版](校本部/buildings/taibei-chongguang-asbuilt-7307/README.md)**<br>[STL](校本部/buildings/taibei-chongguang-asbuilt-7307/model.stl) · [彩色3MF](校本部/buildings/taibei-chongguang-asbuilt-7307/model.3mf) · [Blender](校本部/buildings/taibei-chongguang-asbuilt-7307/scene.blend) |  |  |
+| [<img src="../docs/display/catalog/8dbcbebf5ebdaaacc27c44f3-640.webp" alt="重光樓｜工號7307竣工圖版：實際模型渲染" width="220">](校本部/buildings/taibei-chongguang-asbuilt-7307/README.md)<br>**[重光樓｜工號7307竣工圖版](校本部/buildings/taibei-chongguang-asbuilt-7307/README.md)**<br>[STL](校本部/buildings/taibei-chongguang-asbuilt-7307/model.stl) · [彩色3MF](校本部/buildings/taibei-chongguang-asbuilt-7307/model.3mf) · [Blender](校本部/buildings/taibei-chongguang-asbuilt-7307/scene.blend) |  |  |
 
 [校本部圖鑑](校本部/README.md) · [回總目錄](../README.md)

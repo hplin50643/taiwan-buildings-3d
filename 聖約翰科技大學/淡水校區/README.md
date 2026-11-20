@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 降臨堂有限證據配色正面<br>[![正面](buildings/sju-advent-church/appearance/previews/front.png)](buildings/sju-advent-church/) |  |  |
+| 降臨堂有限證據配色正面<br>[![正面](../../docs/display/catalog/6a4056ed705ebe63bd40302a-640.webp)](buildings/sju-advent-church/) |  |  |
 
 [模型、限制與來源](buildings/sju-advent-church/README.md) · [有限證據配色／逐面材質 3MF](buildings/sju-advent-church/appearance/README.md)
 

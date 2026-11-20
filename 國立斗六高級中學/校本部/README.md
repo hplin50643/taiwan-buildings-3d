@@ -12,7 +12,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/tlsh-minsheng-gate-main-2015/previews/front.png" alt="國立斗六高級中學｜民生路校門主門組件（2015 照片狀態）：實際模型預覽" width="220">](buildings/tlsh-minsheng-gate-main-2015/README.md)<br>**[國立斗六高級中學｜民生路校門主門組件（2015 照片狀態）](buildings/tlsh-minsheng-gate-main-2015/README.md)** |  |  |
+| [<img src="../../docs/display/catalog/929142067f8b4bc2e849133c-640.webp" alt="國立斗六高級中學｜民生路校門主門組件（2015 照片狀態）：實際模型預覽" width="220">](buildings/tlsh-minsheng-gate-main-2015/README.md)<br>**[國立斗六高級中學｜民生路校門主門組件（2015 照片狀態）](buildings/tlsh-minsheng-gate-main-2015/README.md)** |  |  |
 
 ## 既有說明與更新紀錄
 

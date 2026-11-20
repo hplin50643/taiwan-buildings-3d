@@ -12,7 +12,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/kfsh-zhongzheng-hall-main-envelope/previews/front.png" alt="新竹市私立光復高級中學｜中正堂（校園圖標體育館）主要量體：實際模型預覽" width="220">](buildings/kfsh-zhongzheng-hall-main-envelope/README.md)<br>**[新竹市私立光復高級中學｜中正堂（校園圖標體育館）主要量體](buildings/kfsh-zhongzheng-hall-main-envelope/README.md)** |  |  |
+| [<img src="../../docs/display/catalog/a82ddf631dffa3b967efa51c-640.webp" alt="新竹市私立光復高級中學｜中正堂（校園圖標體育館）主要量體：實際模型預覽" width="220">](buildings/kfsh-zhongzheng-hall-main-envelope/README.md)<br>**[新竹市私立光復高級中學｜中正堂（校園圖標體育館）主要量體](buildings/kfsh-zhongzheng-hall-main-envelope/README.md)** |  |  |
 
 ## 既有說明與更新紀錄
 

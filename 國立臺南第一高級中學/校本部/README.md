@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/tnfsh-small-hall-survey-2003/previews/front.png" alt="臺南一中小禮堂｜2003 調查報告外觀：實際模型渲染" width="220">](buildings/tnfsh-small-hall-survey-2003/README.md)<br>**[臺南一中小禮堂｜2003 調查報告外觀](buildings/tnfsh-small-hall-survey-2003/README.md)**<br>[STL](buildings/tnfsh-small-hall-survey-2003/model.stl) · [彩色3MF](buildings/tnfsh-small-hall-survey-2003/model.3mf) · [Blender](buildings/tnfsh-small-hall-survey-2003/scene.blend) |  |  |
+| [<img src="../../docs/display/catalog/50e7cf1cb0b6a77d6443ec23-640.webp" alt="臺南一中小禮堂｜2003 調查報告外觀：實際模型渲染" width="220">](buildings/tnfsh-small-hall-survey-2003/README.md)<br>**[臺南一中小禮堂｜2003 調查報告外觀](buildings/tnfsh-small-hall-survey-2003/README.md)**<br>[STL](buildings/tnfsh-small-hall-survey-2003/model.stl) · [彩色3MF](buildings/tnfsh-small-hall-survey-2003/model.3mf) · [Blender](buildings/tnfsh-small-hall-survey-2003/scene.blend) |  |  |
 
 來源照片與掃描圖不隨公開包配送；上圖為本模型實際 Blender 渲染。
 

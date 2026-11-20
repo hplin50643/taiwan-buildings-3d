@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![信心樓原網格局部材質外觀](臺南校區/buildings/ntin-xinxin-building/appearance/previews/front.png)](臺南校區/buildings/ntin-xinxin-building/README.md)<br>**[信心樓｜2014–2015整修後外觀近似](臺南校區/buildings/ntin-xinxin-building/README.md)** |  |  |
+| [![信心樓原網格局部材質外觀](../docs/display/catalog/c5a6e603802d96e923614515-640.webp)](臺南校區/buildings/ntin-xinxin-building/README.md)<br>**[信心樓｜2014–2015整修後外觀近似](臺南校區/buildings/ntin-xinxin-building/README.md)** |  |  |
 
 [臺南校區](臺南校區/README.md)。每棟僅一張代表圖；完整多視角保留於模型頁，配色不另計建物。後方文心樓與兩池院不在信心樓範圍。資料與細部簡化、列印警示詳見模型 README。
 

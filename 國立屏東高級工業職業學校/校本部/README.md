@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/ptivs-stair-1971-design/preview.png" alt="屏東高工1971外梯增建單元實際模型渲染" width="220">](buildings/ptivs-stair-1971-design/README.md)<br>**[外梯增建單元｜1971年8月原設計](buildings/ptivs-stair-1971-design/README.md)**<br>[STL](buildings/ptivs-stair-1971-design/model.stl) · [彩色3MF](buildings/ptivs-stair-1971-design/model.3mf) · [Blender](buildings/ptivs-stair-1971-design/scene.blend) |  |  |
+| [<img src="../../docs/display/catalog/166bc259ca187396c9ef85c9-640.webp" alt="屏東高工1971外梯增建單元實際模型渲染" width="220">](buildings/ptivs-stair-1971-design/README.md)<br>**[外梯增建單元｜1971年8月原設計](buildings/ptivs-stair-1971-design/README.md)**<br>[STL](buildings/ptivs-stair-1971-design/model.stl) · [彩色3MF](buildings/ptivs-stair-1971-design/model.3mf) · [Blender](buildings/ptivs-stair-1971-design/scene.blend) |  |  |
 
 現行收錄 **1 套模型包**；不是完整教室樓、全校建築數或全校完成。
 

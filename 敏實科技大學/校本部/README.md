@@ -12,7 +12,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/mitust-dahua-bridge/previews/front.png" alt="敏實科技大學｜大華橋上部橋體：實際模型預覽" width="220">](buildings/mitust-dahua-bridge/README.md)<br>**[敏實科技大學｜大華橋上部橋體](buildings/mitust-dahua-bridge/README.md)** |  |  |
+| [<img src="../../docs/display/catalog/251af3d715d81545f326eb26-640.webp" alt="敏實科技大學｜大華橋上部橋體：實際模型預覽" width="220">](buildings/mitust-dahua-bridge/README.md)<br>**[敏實科技大學｜大華橋上部橋體](buildings/mitust-dahua-bridge/README.md)** |  |  |
 
 ## 既有說明與更新紀錄
 

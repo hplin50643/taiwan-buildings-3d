@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![北側](介仁校區/buildings/tcu-hexin-library-2001/appearance/previews/front.png)](介仁校區/buildings/tcu-hexin-library-2001/README.md)<br>**[合心樓2A｜北玻璃及架空面](介仁校區/buildings/tcu-hexin-library-2001/README.md)** | [![大喜館入口模型](中央校區/buildings/tcu-daxi-gymnasium/previews/front.png)](中央校區/buildings/tcu-daxi-gymnasium/README.md)<br>**[大喜館｜整館光電前外觀近似](中央校區/buildings/tcu-daxi-gymnasium/README.md)**<br>一座館舍及雙排開放停車棚；非現況 |  |
+| [![北側](../docs/display/catalog/e9d4f4b1f6315ea26f273e61-640.webp)](介仁校區/buildings/tcu-hexin-library-2001/README.md)<br>**[合心樓2A｜北玻璃及架空面](介仁校區/buildings/tcu-hexin-library-2001/README.md)** | [![大喜館入口模型](中央校區/buildings/tcu-daxi-gymnasium/previews/front.png)](中央校區/buildings/tcu-daxi-gymnasium/README.md)<br>**[大喜館｜整館光電前外觀近似](中央校區/buildings/tcu-daxi-gymnasium/README.md)**<br>一座館舍及雙排開放停車棚；非現況 |  |
 
 [完整說明](介仁校區/buildings/tcu-hexin-library-2001/README.md) · [STL](介仁校區/buildings/tcu-hexin-library-2001/model.stl) · [Blend](介仁校區/buildings/tcu-hexin-library-2001/scene.blend) · [原創源](介仁校區/buildings/tcu-hexin-library-2001/build_model.py) · [頂圖](介仁校區/buildings/tcu-hexin-library-2001/previews/top.png) · [來源](介仁校區/buildings/tcu-hexin-library-2001/sources.json) · [QA](介仁校區/buildings/tcu-hexin-library-2001/qa-summary.json) · [有限原面彩色外觀](介仁校區/buildings/tcu-hexin-library-2001/appearance/README.md)
 

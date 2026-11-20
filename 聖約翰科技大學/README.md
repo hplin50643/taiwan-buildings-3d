@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![](淡水校區/buildings/sju-advent-church/appearance/previews/front.png)](淡水校區/buildings/sju-advent-church/README.md)<br>**[降臨堂｜約2014主堂近似版・有限證據配色](淡水校區/buildings/sju-advent-church/README.md)** |  |  |
+| [![](../docs/display/catalog/6a4056ed705ebe63bd40302a-640.webp)](淡水校區/buildings/sju-advent-church/README.md)<br>**[降臨堂｜約2014主堂近似版・有限證據配色](淡水校區/buildings/sju-advent-church/README.md)** |  |  |
 
 - 待續建物
 

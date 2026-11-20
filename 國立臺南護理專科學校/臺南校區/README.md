@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![信心樓原網格局部材質外觀](buildings/ntin-xinxin-building/appearance/previews/front.png)](buildings/ntin-xinxin-building/README.md)<br>**[信心樓｜2014–2015整修後外觀近似](buildings/ntin-xinxin-building/README.md)** |  |  |
+| [![信心樓原網格局部材質外觀](../../docs/display/catalog/c5a6e603802d96e923614515-640.webp)](buildings/ntin-xinxin-building/README.md)<br>**[信心樓｜2014–2015整修後外觀近似](buildings/ntin-xinxin-building/README.md)** |  |  |
 
 [學校入口](../README.md)。後側無同期完整近照，採素面簡化；模型不是最新測繪資料。原幾何、舊預覽與既有QA保留；完整多視角見模型頁。
 

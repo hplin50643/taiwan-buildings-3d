@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 坡下長玻璃面<br>[![活動中心坡下](buildings/mmu-multifunctional-2013/appearance/previews/front.png)](buildings/mmu-multifunctional-2013/README.md) | [![第二教研大樓D–G實際模型預覽](buildings/mmu-teaching-phase2/previews/front.png)](buildings/mmu-teaching-phase2/README.md)<br>**[第二教研大樓D–G｜完整相連組歷史外觀有限細節近似](buildings/mmu-teaching-phase2/README.md)** |  |
+| 坡下長玻璃面<br>[![活動中心坡下](../../docs/display/catalog/6987942a7d8a18ea7225b111-640.webp)](buildings/mmu-multifunctional-2013/README.md) | [![第二教研大樓D–G實際模型預覽](buildings/mmu-teaching-phase2/previews/front.png)](buildings/mmu-teaching-phase2/README.md)<br>**[第二教研大樓D–G｜完整相連組歷史外觀有限細節近似](buildings/mmu-teaching-phase2/README.md)** |  |
 
 [多功能教學活動中心模型與完整說明](buildings/mmu-multifunctional-2013/README.md) · [STL](buildings/mmu-multifunctional-2013/model.stl) · [Blend](buildings/mmu-multifunctional-2013/scene.blend) · [來源限制](buildings/mmu-multifunctional-2013/sources.json) · [QA](buildings/mmu-multifunctional-2013/qa-summary.json)
 

@@ -14,7 +14,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="淡水校區/buildings/au-oxford-1999-core/appearance/previews/front.png" alt="有限材料示意" width="220">](淡水校區/buildings/au-oxford-1999-core/README.md)<br>**[真理大學牛津學堂](淡水校區/buildings/au-oxford-1999-core/README.md)**<br>有限材料示意 | [<img src="淡水校區/buildings/au-chapel-north-entrance-segment/previews/front.png" alt="真理大學大禮拜堂：北側雙塔入口截段：實際模型預覽" width="220">](淡水校區/buildings/au-chapel-north-entrance-segment/README.md)<br>**[真理大學大禮拜堂：北側雙塔入口截段](淡水校區/buildings/au-chapel-north-entrance-segment/README.md)** | [<img src="淡水校區/buildings/au-reverends-house-arcade-segment/previews/front.png" alt="真理大學牧師樓：雙層拱廊主立面截段：實際模型預覽" width="220">](淡水校區/buildings/au-reverends-house-arcade-segment/README.md)<br>**[真理大學牧師樓：雙層拱廊主立面截段](淡水校區/buildings/au-reverends-house-arcade-segment/README.md)** |
+| [<img src="../docs/display/catalog/7566d9b1fb9b3a1495e228b2-640.webp" alt="有限材料示意" width="220">](淡水校區/buildings/au-oxford-1999-core/README.md)<br>**[真理大學牛津學堂](淡水校區/buildings/au-oxford-1999-core/README.md)**<br>有限材料示意 | [<img src="淡水校區/buildings/au-chapel-north-entrance-segment/previews/front.png" alt="真理大學大禮拜堂：北側雙塔入口截段：實際模型預覽" width="220">](淡水校區/buildings/au-chapel-north-entrance-segment/README.md)<br>**[真理大學大禮拜堂：北側雙塔入口截段](淡水校區/buildings/au-chapel-north-entrance-segment/README.md)** | [<img src="淡水校區/buildings/au-reverends-house-arcade-segment/previews/front.png" alt="真理大學牧師樓：雙層拱廊主立面截段：實際模型預覽" width="220">](淡水校區/buildings/au-reverends-house-arcade-segment/README.md)<br>**[真理大學牧師樓：雙層拱廊主立面截段](淡水校區/buildings/au-reverends-house-arcade-segment/README.md)** |
 
 [模型、STL、Blend與完整限制](淡水校區/buildings/au-oxford-1999-core/README.md) · [淡水校區入口](淡水校區/README.md)
 

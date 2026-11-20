@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![天母體育館A棟西南入口側模型](天母校區/buildings/utaipei-tianmu-gymnasium-a-2012/renders/front.png)](天母校區/buildings/utaipei-tianmu-gymnasium-a-2012/README.md)<br>**[天母體育館A棟｜2012](天母校區/buildings/utaipei-tianmu-gymnasium-a-2012/README.md)**<br>銀色雙向曲面屋頂、採光帽與雙外梯<br>210 × 152 × 63.8 mm | [![博愛新圖書館東入口模型](博愛校區/buildings/utaipei-boai-library-2021/previews/front.png)](博愛校區/buildings/utaipei-boai-library-2021/README.md)<br>**[博愛校區新圖書館｜整棟地上外觀有限細節近似](博愛校區/buildings/utaipei-boai-library-2021/README.md)**<br>2020竣工／2021啟用；混合來源，非精確定年復原 |  |
+| [![天母體育館A棟西南入口側模型](../docs/display/catalog/1492c8c3a1b18782bc4d6e38-640.webp)](天母校區/buildings/utaipei-tianmu-gymnasium-a-2012/README.md)<br>**[天母體育館A棟｜2012](天母校區/buildings/utaipei-tianmu-gymnasium-a-2012/README.md)**<br>銀色雙向曲面屋頂、採光帽與雙外梯<br>210 × 152 × 63.8 mm | [![博愛新圖書館東入口模型](../docs/display/catalog/c2f029271623b76c90cf3fbd-640.webp)](博愛校區/buildings/utaipei-boai-library-2021/README.md)<br>**[博愛校區新圖書館｜整棟地上外觀有限細節近似](博愛校區/buildings/utaipei-boai-library-2021/README.md)**<br>2020竣工／2021啟用；混合來源，非精確定年復原 |  |
 
 [完整模型、正反並排預覽與下載](天母校區/buildings/utaipei-tianmu-gymnasium-a-2012/README.md) · [來源摘要](inventory/sources/utaipei-tianmu-gymnasium-a-2012-source-summary.md) · [QA摘要](inventory/qa/utaipei-tianmu-gymnasium-a-2012-review.md)
 
