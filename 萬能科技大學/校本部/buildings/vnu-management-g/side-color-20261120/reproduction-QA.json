@@ -1,0 +1,33 @@
+{
+  "status": "PASS_ISOLATED_REBUILD_AND_VISUAL_REVIEW",
+  "scene_rebuild": "Captured readable Blender RNA snapshots identical in separated output paths. Blender binary byte identity not required or asserted. UV Sculpt, brush getters, and transient runtime fields excluded.",
+  "independent_review_full_resolution": [
+    "Before/after shared angles; four 1000×800 renders viewed individually. Full model and base fit with margins.",
+    "Localized crop shows four original recesses and horizontal projections unchanged; only +X planar wall changes. No text or private source images."
+  ],
+  "PNG_normalization": "Original render pixels unchanged; Blender File/time EXIF and text metadata stripped from new PNGs",
+  "isolated_output_byte_identical_sha256": {
+    "model-colored.3mf": "68d5ab8a01e3e0901bce3c76fe48d67d05474806bc19fe63f65185d4046e3245",
+    "palette.json": "2b5645fdec72e96221bddbce800ae770161dfe3463d98e4eec9ef9c602c2975e",
+    "framing-QA.json": "2458ecec7674b5df621f9e4cb7440ee7cdcb148a00fa6a10bd1b1f01ebb71c80",
+    "before-right-overview.png": "bf9eee53e673ceb382f532c93fe010ad2e69d52b307679151cbd7c9d8474ac96",
+    "after-right-overview.png": "f38110a7b3618ae0429d09ea7b5de374d72ef488d9931bb44e9d0f0b0347187b",
+    "before-right-wall-detail.png": "c07fd1bdd686d1d470286a79279b2da5dfd2fc244d6151053ab9914b7352400f",
+    "after-right-wall-detail.png": "446db1eb3faf03d29d5c2409e480beed115febc2059cc6c9c8cbd790805803db"
+  },
+  "new_scene_sha256": "1457a8b5bca7c80a2644c68a817c0cb58580fa929f3fd7c3fb700f4cf643bfb8",
+  "original_representative_locks": {
+    "previews/elevation.png": {
+      "git_blob_sha1": "1f45b46b126452463c8138afca2f75eba490b25e",
+      "sha256": "2df3bcbb063e35e32877e35af49c0f0916207871c19cf43c16cee95432806b68"
+    },
+    "previews/front.png": {
+      "git_blob_sha1": "3b98ffe2f53fd707fc6566584b0870b35f9cd956",
+      "sha256": "25b986fad7b7215aa10c4dbc66c7b6e038abcb9955eae3e894b97f9f56f09cac"
+    },
+    "previews/rear.png": {
+      "git_blob_sha1": "7ce713816dc33a23574a36fd0d8f796a2ccd633d",
+      "sha256": "a2b4c20baf1cc151acc02c94a862a0f5c9ea568973182a6fdb7c681bbebf55af"
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "status": "PRODUCER_PASS_INDEPENDENT_REVIEW_SEPARATE",
+  "source_model": "cjcu-library at 79c4e0f14ae31330eb87338a59972ce0a88cdef2",
+  "color_partial": true,
+  "geometry_unchanged": true,
+  "count_delta": 0,
+  "domain": {
+    "axis": "+X",
+    "x": 64.5,
+    "y_bounds": [
+      -23,
+      37
+    ],
+    "z_bounds": [
+      17,
+      60
+    ],
+    "ids": [
+      2419,
+      2422,
+      2423,
+      2424,
+      2426,
+      2429,
+      2430,
+      2431,
+      2432,
+      2433,
+      2434,
+      2435,
+      2436,
+      2437,
+      2438,
+      2439,
+      2440,
+      2441,
+      2459,
+      2460,
+      2461,
+      2462,
+      2463,
+      2467,
+      2469,
+      2470,
+      2471,
+      2472,
+      2473,
+      2474,
+      2475,
+      2476,
+      2477,
+      2478,
+      2479,
+      2480,
+      2481,
+      2482,
+      2483,
+      2486,
+      2487,
+      2488,
+      2489,
+      2490,
+      2491,
+      2492,
+      2493,
+      2494,
+      2495,
+      2496,
+      2497,
+      2498,
+      2499,
+      2500,
+      2501,
+      2502,
+      2503,
+      2507,
+      2508,
+      2509,
+      2510,
+      2511,
+      2512,
+      2513,
+      2520,
+      2521,
+      2522,
+      2523,
+      2524,
+      2525,
+      2526,
+      2527,
+      2528,
+      2529,
+      2530,
+      2531,
+      2532,
+      2533,
+      2534,
+      2535,
+      2536,
+      2537,
+      2538,
+      2539,
+      2541,
+      2548,
+      2549,
+      2550,
+      2551,
+      2552,
+      2553,
+      2554
+    ],
+    "area_mm2": 2055,
+    "gross_mm2": 2580,
+    "fifteen_openings_mm2": 525,
+    "selection": "All original facet vertices bounded on outward plane; shared-edge complete domain. No backs, reveals or coplanar extrapolation."
+  },
+  "exchange": {
+    "status": "PASS",
+    "vertices": 1953,
+    "triangles": 3942,
+    "count_by_material": [
+      3850,
+      92
+    ],
+    "original_triangle_coordinates_and_order_exact": true,
+    "xml_three_corner_materials_exact": true,
+    "strict_sdk_zero_warnings": true,
+    "private_sdk_palette_edit_roundtrip": true,
+    "roundtrip_coordinate_max_mm": 9.5367431640625e-07,
+    "public_3mf_sha256": "be247135c5e6c317026a9c6bf8453d6eba8ff93af2f8c555be256f62affce998"
+  },
+  "blender": {
+    "verified": {
+      "status": "PASS",
+      "description": "Fresh reopen semantic original scene comparison; every captured field except listed allowed changes equal.",
+      "allowed": [
+        "92 polygon, loop-triangle and generated face attribute index changes",
+        "one additional non-node brick material/slot",
+        "two model documentation properties",
+        "fake_user enabled for originally orphan startup Material; original node tree equal"
+      ],
+      "baseline_shader_and_node_trees_preserved": true,
+      "camera_world_render_scene_preserved": true,
+      "clean_session_full_rna_exact": true,
+      "clean_binary_exact": [
+        "model.stl",
+        "color-mesh.npz",
+        "appearance.3mf",
+        "palette.json"
+      ],
+      "public_scene_sha256": "f8e6c5f87b145ac9c90949dc00d6afe48c0bef0c3937a456ce66aa397803ec0a"
+    },
+    "snapshot_exclusions": [
+      "brush_asset_reference",
+      "depsgraph",
+      "eraser_brush",
+      "eraser_brush_asset_reference",
+      "id_data",
+      "is_editmode",
+      "is_evaluated",
+      "is_runtime_data",
+      "is_updated",
+      "is_updated_data",
+      "is_updated_transform",
+      "name_full",
+      "original",
+      "rna_type",
+      "session_uid",
+      "total_edge_sel",
+      "total_face_sel",
+      "total_vert_sel",
+      "users",
+      "uv_sculpt"
+    ],
+    "native_private_edit": {
+      "status": "PASS",
+      "public_scene_exact_npz": true,
+      "private_vertex_and_new_material_edit_reopen": true,
+      "public_sha256_unchanged": "f8e6c5f87b145ac9c90949dc00d6afe48c0bef0c3937a456ce66aa397803ec0a"
+    }
+  },
+  "visual": {
+    "renderer": "Original four Workbench views + +X extra, original front/rear montage convention",
+    "personally_viewed": true,
+    "render_comparison_to_original_scene": {
+      "front": {
+        "changed_pixels": 31177,
+        "bbox_xyxy": [
+          658,
+          338,
+          851,
+          610
+        ]
+      },
+      "rear": {
+        "changed_pixels": 0,
+        "bbox_xyxy": null
+      },
+      "elevation": {
+        "changed_pixels": 0,
+        "bbox_xyxy": null
+      },
+      "top": {
+        "changed_pixels": 0,
+        "bbox_xyxy": null
+      },
+      "right-side": {
+        "changed_pixels": 147736,
+        "bbox_xyxy": [
+          306,
+          236,
+          810,
+          597
+        ]
+      },
+      "front-rear": {
+        "changed_pixels": 31177,
+        "bbox_xyxy": [
+          658,
+          338,
+          851,
+          610
+        ]
+      }
+    },
+    "png_count": 6,
+    "png_text_metadata_absent": true
+  },
+  "limits": [
+    "Original geometry, approximate real-world brick boundary and scale unchanged.",
+    "Nominal material family based on public exterior images, not colorimetry. Windows/reveals/occluded faces/north/back/roof remain outside scope.",
+    "The older three fascia returns remain HOLD.",
+    "No current capture-date, print, slicer, exact architectural dimension or all-facade accuracy claim.",
+    "No private source imagery, independent QA snapshots or edit samples in public."
+  ]
+}

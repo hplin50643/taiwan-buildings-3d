@@ -1,0 +1,33 @@
+{
+  "status": "PASS_ISOLATED_REBUILD_AND_VISUAL_REVIEW",
+  "scene_rebuild": "Captured readable Blender RNA snapshots identical in separated output paths. Blender binary byte identity not required or asserted. UV Sculpt, brush getters, and transient runtime fields excluded.",
+  "independent_review_full_resolution": [
+    "Before/after shared angles; four 1000×800 renders viewed individually. Full model and base fit with margins.",
+    "Localized crop shows first two outward right-column faces changed, side returns/window and the farther third column unchanged. No text or private source images."
+  ],
+  "PNG_normalization": "Original render pixels unchanged; Blender File/time EXIF and text metadata stripped from new PNGs",
+  "isolated_output_byte_identical_sha256": {
+    "model-colored.3mf": "ec0e1ab5837f0b485ad8b4f7d3fa92a66a70b2ba8a66a279daa1c0119b3fd1c7",
+    "palette.json": "06fcd1a6dfc5d46d972c13bc5d1fb569a01d90b2c67461f68434efef802e0d64",
+    "framing-QA.json": "10a745b9e2950f97fdd69a25e94ab9b441dbef89e35db2dc9364450d1e4eb919",
+    "before-right-overview.png": "a83bc861a087d147d464b4eb8110120e2d0c9f4c8c9a4455026dbe48a01d0a48",
+    "after-right-overview.png": "5618a85e3a1a17e1bcbca4a9a89ece673ec8d0c047618e502766d5542f322967",
+    "before-right-wall-detail.png": "a329dae3d5f01b02b1352f265a6128d01fe38beddfadc022342497d6f0b10c7f",
+    "after-right-wall-detail.png": "81b572f6edba042024d06648bc060ac791f52544f03f7ec76f458f5aaa856fba"
+  },
+  "new_scene_sha256": "e2820b5500fc11194abda67466215585b3145ee089d6e91fb5ac2bbe5593496d",
+  "original_representative_locks": {
+    "previews/elevation.png": {
+      "git_blob_sha1": "1eb2c221ead0d7a0d1814a819b7af2e76eb32c3a",
+      "sha256": "3320dd6ad0bbcacb13c4882925d98818fb01a3bbd241db20804f35a66bb03251"
+    },
+    "previews/front.png": {
+      "git_blob_sha1": "d2a8de22606877ad5ce975efc71d5895a378bfad",
+      "sha256": "feafe64675f9537ed03414477a8bf1097a0a1ccb61c32044b6a7a0e4188a7594"
+    },
+    "previews/rear.png": {
+      "git_blob_sha1": "7d27c8d60ba66fe6e0d01c14674beddc5aa60e34",
+      "sha256": "b5b6a28c503e6a8e3fcb64cc58367b61baf9d22fc2b77391053c793cb5220f05"
+    }
+  }
+}

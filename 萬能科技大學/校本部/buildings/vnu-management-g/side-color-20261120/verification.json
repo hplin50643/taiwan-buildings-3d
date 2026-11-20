@@ -1,0 +1,28 @@
+{
+  "status": "PASS_BOUNDED_COLOR_AND_GEOMETRY_ONLY",
+  "triangles": 1714,
+  "changed_faces": 90,
+  "unchanged_neutral_faces": 1624,
+  "mesh_geometry": "Original STL, original and new actual saved Blender and 3MF XML/strict SDK all 1714 ordered triangles and coordinates exact. Actual Blender topology unchanged. Original STL source rebuild independently matches byte for byte.",
+  "original_neutral_srgb_equivalent": "#D8D1C2",
+  "new_uncalibrated_srgb": "#B5A075",
+  "strict_lib3mf_warnings": 0,
+  "sdk_property_mapping": "XML 0/1 -> SDK 1/2, each of all three vertices for every triangle checked",
+  "valid_manifold_oriented_3mf": true,
+  "rna_diff_total": 185,
+  "rna_diff_allow_list": [
+    "90 polygon and 90 loop-triangle material indices 0 to 1",
+    "new material, material-slot count change, backing material_index attribute",
+    "original unused Material saved with fake-user true to preserve data, not assigned to any face"
+  ],
+  "rna_preserved": "Camera, world, lights, existing shaders, transforms, geometry and scene properties including original render path, all readable captured values",
+  "rna_exclusions": "invalid UV Sculpt/brush getter values and transient runtime/depsgraph/session/user/update fields; no claim about inaccessible Blender internal state",
+  "limits": "No physical print or slicer test; original thin-feature sampling caveat remains. Only right short wall finish proxy, not fully colored exterior.",
+  "sha256": {
+    "scene.blend": "1457a8b5bca7c80a2644c68a817c0cb58580fa929f3fd7c3fb700f4cf643bfb8",
+    "model-colored.3mf": "68d5ab8a01e3e0901bce3c76fe48d67d05474806bc19fe63f65185d4046e3245",
+    "domain.json": "c11c05983cb71ee6f8b52bfd204fb720f223061f99fa93a54928bdf01ec29966",
+    "palette.json": "2b5645fdec72e96221bddbce800ae770161dfe3463d98e4eec9ef9c602c2975e",
+    "whole-geometry-QA.json": "7788aeeca48f91a03ed3ee2f91327f9142c077e0480a4168dcafe796625e8dc9"
+  }
+}

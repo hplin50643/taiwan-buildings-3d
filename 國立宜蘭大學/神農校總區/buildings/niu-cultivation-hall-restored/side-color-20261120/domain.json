@@ -1,0 +1,97 @@
+{
+  "status": "BOUNDED_SOURCE_AND_DOMAIN_VERIFIED",
+  "original_count": 1832,
+  "original_STL_sha256": "0827a741ec86c047708d5698c540d353a223347f25a1d883256b236bf495b70c",
+  "selection_formula": "outward/down left bevel plane x+z=-39.1mm; all vertices residual <2e-5mm; outward -X/downward -Z",
+  "ids": [
+    297,
+    322
+  ],
+  "print_mesh": "NIU_Cultivation_Hall_candidate_exact_STL",
+  "face_assignment": {
+    "old_slot": 0,
+    "old": "plaster",
+    "new_slot": 2,
+    "new": "wood",
+    "material_added": false
+  },
+  "world_bounds_mm": [
+    [
+      -78.0,
+      -40.5,
+      35.900001525878906
+    ],
+    [
+      -75.0,
+      40.5,
+      38.900001525878906
+    ]
+  ],
+  "area_mm2": 330.92597359530424,
+  "xy_projection_polygon_mm": [
+    [
+      -78.0,
+      -40.5
+    ],
+    [
+      -78.0,
+      40.5
+    ],
+    [
+      -75.0,
+      37.5
+    ],
+    [
+      -75.0,
+      -37.5
+    ],
+    [
+      -78.0,
+      -40.5
+    ]
+  ],
+  "exact_xy_union_no_holes_overlap": true,
+  "excluded": [
+    "opposite right end [379,402] unconfirmed",
+    "entry left eave [426,427] suffers dark gutter / underside ambiguity",
+    "left roof tile slopes and left window wood already assigned",
+    "roof, ridge, gutter, trim, wall, all other regions unchanged"
+  ],
+  "limit": "Restored-era look after 2016 only; photo capture dates not specified on gallery. Existing wood-family display color is an uncalibrated low-detail proxy, not a paint chip, exact structural material test, rafter/gutter reconstruction, 1934 original, or 2026 survey. The 45-degree plane is original simplified geometry, not a measured soffit cross-section. No source image redistributed.",
+  "source": [
+    {
+      "page_url": "https://minute.niu.edu.tw/p/405-1023-17227,c2403.php",
+      "image_url": "https://minute.niu.edu.tw/var/file/23/1023/pictures/317/m/mczh-tw700x700_large4198_334168412098.jpg",
+      "sha256": "93ee3b5be14c2fd92e2ecbbe15d9ce4e5800f259360c240aa99c13cc86ec6b94",
+      "observation": "Left short end identified by the two arched windows and stacked timber visible on the left oblique report. A dark horizontal eave band is separated from gray roof tiling and pale rendered wall."
+    },
+    {
+      "page_url": "https://minute.niu.edu.tw/p/405-1023-17227,c2403.php",
+      "image_url": "https://minute.niu.edu.tw/var/file/23/1023/pictures/317/m/mczh-tw700x700_large4199_340794812098.jpg",
+      "sha256": "9f8132e6f2f2714f6e771e9d7b58b4211b48f409a818015bc82510331a8eccb4",
+      "observation": "Same identifiable side closer, opposite reflected light; exposed wrapped edge, wood-colored continuous underside band and intermittent rafter/support ends, distinct from the overhead gray tiles."
+    },
+    {
+      "page_url": "https://minute.niu.edu.tw/p/405-1023-17227,c2403.php",
+      "image_url": "https://minute.niu.edu.tw/var/file/23/1023/pictures/317/m/mczh-tw700x700_large4200_374432212098.jpg",
+      "sha256": "bd2aa9ee8d8cee6c44a32e954ff7986606a2863799695fe821850f86870f50d7",
+      "observation": "At a building corner, the exterior underside assembly is visible below tiles, with the dark warm wood family continuous under the eave; general assembly corroboration, not evidence to recolor the opposite end."
+    },
+    {
+      "page_url": "https://minute.niu.edu.tw/p/405-1023-17227,c2403.php",
+      "image_url": "https://minute.niu.edu.tw/var/file/23/1023/pictures/317/m/mczh-tw700x700_large4203_398203312098.jpg",
+      "sha256": "a6abaff2d0960036e21ce11b6471fd9a567bfd3027f589f8691e70a9a9d74b7e",
+      "observation": "Low-angle close-up resolves continuous underside board and short members, separated from wall below. General assembly corroboration only."
+    },
+    {
+      "page_url": "https://lic.niu.edu.tw/var/file/10/1010/img/8/619333202.pdf",
+      "pdf_page_one_based": 46,
+      "printed_pages": [
+        176,
+        177
+      ],
+      "pdf_sha256": "a8dc1003402ccde200d1e82c74a51afd49c58e68d0e9e9d165886eefb5b3b4bd",
+      "observation": "Restored left-oblique photo establishes wall and overhanging eave positions; gray tile slopes and brown eave edge support separation, and brown left windows are already assigned original wood."
+    }
+  ]
+}

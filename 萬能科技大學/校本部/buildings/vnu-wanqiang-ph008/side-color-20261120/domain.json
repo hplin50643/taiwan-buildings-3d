@@ -1,0 +1,114 @@
+{
+  "status": "BOUNDED_SOURCE_AND_DOMAIN_VERIFIED",
+  "geometry_changed": false,
+  "original_triangle_count": 1004,
+  "original_stl_sha256": "594f7c1ae0c2eacd65b7d7015b2430b84ac9057f968f293db6e1c3c6aae1abc2",
+  "original_stl_git_blob": "990008c9d0515964a9a1df6f89e8af9bb1f3e155",
+  "plane_mm": "x=+67.2, outward +X only",
+  "accepted_groups": [
+    {
+      "y_center_mm": -24,
+      "nominal_y_bounds_mm": [
+        -25.1,
+        -22.9
+      ],
+      "actual_yz_bounds_mm": [
+        -25.100000381469727,
+        3.0,
+        -22.899999618530273,
+        49.0
+      ],
+      "z_bounds_mm": [
+        3,
+        49
+      ],
+      "selector_z_bounds_mm": [
+        3,
+        50
+      ],
+      "ids": [
+        981,
+        986
+      ],
+      "area_mm2": 101.20003509521484,
+      "symmetric_difference_from_analytic_rectangle_mm2": 3.509521471301014e-05,
+      "status": "SUPPORTED"
+    },
+    {
+      "y_center_mm": 5,
+      "nominal_y_bounds_mm": [
+        3.9,
+        6.1
+      ],
+      "actual_yz_bounds_mm": [
+        3.9000000953674316,
+        3.0,
+        6.099999904632568,
+        49.0
+      ],
+      "z_bounds_mm": [
+        3,
+        49
+      ],
+      "selector_z_bounds_mm": [
+        3,
+        50
+      ],
+      "ids": [
+        991,
+        994
+      ],
+      "area_mm2": 101.19999122619629,
+      "symmetric_difference_from_analytic_rectangle_mm2": 8.773803698680638e-06,
+      "status": "SUPPORTED"
+    }
+  ],
+  "withheld_group": {
+    "y_center_mm": 34,
+    "nominal_y_bounds_mm": [
+      32.9,
+      35.1
+    ],
+    "actual_yz_bounds_mm": [
+      32.900001525878906,
+      3.0,
+      35.099998474121094,
+      49.0
+    ],
+    "z_bounds_mm": [
+      3,
+      49
+    ],
+    "selector_z_bounds_mm": [
+      3,
+      50
+    ],
+    "ids": [
+      998,
+      1002
+    ],
+    "area_mm2": 101.19985961914062,
+    "symmetric_difference_from_analytic_rectangle_mm2": 0.00014038085950573986,
+    "status": "HOLD_TREE_OCCLUSION"
+  },
+  "ids": [
+    981,
+    986,
+    991,
+    994
+  ],
+  "area_mm2": 202.40002632141113,
+  "old_material_id": 0,
+  "new_material_id": 1,
+  "source": {
+    "label": "萬能科大官方校景第45張，萬強館",
+    "url": "https://www.vnu.edu.tw/images/campus/map45.png",
+    "sha256": "7de5477539ef5dcfb2cdbdb76f60331dbebaff6149b11f03114e0de6343107e7",
+    "native_px": [
+      190,
+      143
+    ],
+    "support": "端牆與長面轉角及中央柱可辨暗灰綠，取柱兩外露正面為名義色族代理，不是實測色票、材質類型或建物2026現況。端牆遠端深細條與樹幹枝葉交疊，不能確認是同柱或完整外面，保持中性。",
+    "capture_date": "unknown"
+  }
+}

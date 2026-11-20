@@ -1,0 +1,65 @@
+{
+  "status": "PASS_ONLY_EXISTING_BOUNDED_MATERIAL_ASSIGNMENT",
+  "fixed_original_sha256": {
+    "model.stl": "0827a741ec86c047708d5698c540d353a223347f25a1d883256b236bf495b70c",
+    "model.obj": "2113c839e1bc356318916477a5e11fa2824cb99e2ead1a0ab05f5201305936ac",
+    "scene.blend": "4851c8500121e67658af1f5a6d73c4609aca22ecad9d3a7b2e321d3cf8fe2265"
+  },
+  "all_print_triangles": 1832,
+  "welded_vertices": 918,
+  "raw_stl_topology": {
+    "nondegenerate_true": true,
+    "every_edge_two_consistently_oriented_faces": true,
+    "single_closed_connected_shell": true,
+    "all_vertex_links_single_cycles": true,
+    "positive_volume_mm3": 579817.6485140196,
+    "dimensions_mm": [
+      166.0,
+      111.0,
+      54.400001525878906
+    ],
+    "only_no_topology_change_not_a_new_slicer_or_original_geometry_generator_replay": true
+  },
+  "raw_oriented_triangle_positions_and_order_original_STL_original_and_new_Blender_3MF_XML_and_SDK_exact": true,
+  "original_OBJ_same_order_geometry_max_decimal_rounding_delta_mm": 3.051757815342171e-06,
+  "new_areas_and_materials": {
+    "material_distribution_original": [
+      469,
+      160,
+      679,
+      480,
+      16,
+      28
+    ],
+    "material_distribution_new": [
+      467,
+      160,
+      681,
+      480,
+      16,
+      28
+    ],
+    "changed_face_ids": [
+      297,
+      322
+    ],
+    "old": 0,
+    "new": 2,
+    "added_materials": 0
+  },
+  "strict_lib3mf_warnings": 0,
+  "valid_manifold_and_oriented": true,
+  "3mf_XML_slot_0_to_5_correspond_SDK_ID_1_to_6_checked_every_corner": true,
+  "Blender_version": "5.2.4 LTS",
+  "captured_scene_diff_total": 6,
+  "captured_scene_diff": "Only 2 polygon, 2 loop-triangle, 2 backing material attribute values 0 to 2. All captured original six materials, node trees, camera, world, lights, settings, relative render path, floor hidden flag and objects/mesh/transforms unchanged.",
+  "captured_scene_exclusions": "UV Sculpt/brush asset getters, transient/runtime IDs, update and selection state excluded; values unreadable by RNA not compared. No byte-level scene equivalence asserted.",
+  "prior_manufacturing_scope": "The original conditional PrusaSlicer QA remains as originally recorded (5 strict section-boundary differences, 304 blocked 1mm approach paths; no physical print). No new cutting, approximation or geometry change.",
+  "hashes": {
+    "models/v1/scene.blend": "be4cf05fa700817627aaa1274f7c92445bee8b8f03a3aaea0fff3ec56d8ec83f",
+    "model-colored.3mf": "d95da63afc9180e29b4b6bde52b5bf99873cd7f8f3a71de37c1fdbf501c641b1",
+    "palette.json": "20eb3a57524d73348c7dcd71116ef402f878a00c387c78a4e521c1c59f011402",
+    "domain.json": "50f23e76e6636266595c8add9847fac40d2a531b1c2b5a475e0af4ee3714fe5d",
+    "original-palette-and-face-map.json": "5dfb67ed12fb897721d3df87c725ad9b2e82fe3f74b899aae5ea4c76150a5a3c"
+  }
+}

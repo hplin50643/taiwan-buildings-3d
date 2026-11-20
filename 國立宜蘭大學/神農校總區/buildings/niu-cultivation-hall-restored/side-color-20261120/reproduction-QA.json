@@ -1,0 +1,52 @@
+{
+  "status": "PASS_ISOLATED_REBUILD_AND_FULL_SIZE_VISUAL_REVIEW",
+  "isolated_new_3mf_palette_four_PNG_and_framing_byte_exact_sha256": {
+    "before-left-overview.png": "3c3064decb51d1b6609c4126ae978c1ab53645242f416e2ae80ca3d016821bbd",
+    "after-left-overview.png": "e62ca6560f85c98c3d97f216054a7fd9e5a33aa0c4c9b56985d59f21172d669c",
+    "before-left-eave-detail.png": "e5f0413220b27c17d79eb30400b9e2ea85cea58fd25b14da402ebd3a36f46ed6",
+    "after-left-eave-detail.png": "0001fa7170ddce964a496ab0b617c2f8d7966ec72bd91f44194d61c7f3ee328f",
+    "model-colored.3mf": "d95da63afc9180e29b4b6bde52b5bf99873cd7f8f3a71de37c1fdbf501c641b1",
+    "palette.json": "20eb3a57524d73348c7dcd71116ef402f878a00c387c78a4e521c1c59f011402",
+    "framing-QA.json": "10ff504a920942a14531da468e4e54c40ad2c86f34935f46f0d2645ab4198bdb"
+  },
+  "scene_rebuild": "Readable Blender RNA snapshots captured when reopened from isolated build paths match. Not a byte equality assertion; same inspection exclusions as verification.json.",
+  "visual": "All four 1200x820 new views inspected. Matched overview angles show complete building and original base; matched deliberate detail crop captures the entire left eave bevel. New color only in continuous left eave and meets already wood-colored front eave. Roof tiles, existing wood windows, entrance, other eaves, wall, base and existing diagonally-classified grey plinth approximation unchanged. No overlay, lettering or source image. Workbench neutral inspection shading only; saved scene retains original Cycles and all camera/light/world settings.",
+  "legacy_previews_unchanged": {
+    "previews/v1/contact-sheet.png": {
+      "sha256": "271ea378dbcd6ca323fe61cf9cccef461408139ad9eb8a253ba085d873b61709",
+      "git_blob_sha1": "384db671e98baca06c9dd8bf16b985908bf5342e",
+      "bytes": 905855
+    },
+    "previews/v1/entry-detail.png": {
+      "sha256": "ba17bc8423b1d5d769eb5b3338b20c3d2a749263ce8d5ad10217bd289e16d2ff",
+      "git_blob_sha1": "fe70175876d32101d5ed0a025c1d34e40b6a9cbe",
+      "bytes": 1088647
+    },
+    "previews/v1/front.png": {
+      "sha256": "b87f45d08dacadb0c5e1e9f789282c9e420636077c95d2e3436302d6d754a5b3",
+      "git_blob_sha1": "f43c6ea9b7f873609cc9db68d5503fc2b8e5e81f",
+      "bytes": 917902
+    },
+    "previews/v1/left.png": {
+      "sha256": "8071a650e844f4e19c1eac520b041d6cd35a52bc71dcb3f611f39706cbfb879d",
+      "git_blob_sha1": "6facfd9c40719af0efaa3a70b04b0f6316985643",
+      "bytes": 951958
+    },
+    "previews/v1/oblique.png": {
+      "sha256": "c80fa8e8271b4ef7c25d0815390f2876a8fe69ca394c8aec7c88fbf299d348e3",
+      "git_blob_sha1": "d519b618a8e1acc6082cbf9532a8f8a1fac0b88a",
+      "bytes": 993407
+    },
+    "previews/v1/rear.png": {
+      "sha256": "19849600ee6bd87f2c98e32a6108519e004d128b10ecd6e21d7dc2e15ecb3c52",
+      "git_blob_sha1": "1b6dfc807715825e92431f20e797178d04e52f4b",
+      "bytes": 911023
+    },
+    "previews/v1/top.png": {
+      "sha256": "668d5a2a6d3e26dbe623566257bfd02213f9a2fac02893f521e27e3ce8674588",
+      "git_blob_sha1": "5c2709e9361c126f5381a941e658422bc4c1ebd2",
+      "bytes": 947876
+    }
+  },
+  "new_scene_sha256": "be4cf05fa700817627aaa1274f7c92445bee8b8f03a3aaea0fff3ec56d8ec83f"
+}
