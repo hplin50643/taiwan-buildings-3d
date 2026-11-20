@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 主要前側與露天花園<br>![前側](previews/front.png) | 同件後扇形外弧<br>![同館後側](previews/rear.png) |  |
+| 主要前側與露天花園<br>[![前側](../../../../docs/display/catalog/87f68ec1a04ae416b3dd7fbf-640.webp)](previews/front.png) | 同件後扇形外弧<br>[![同館後側](../../../../docs/display/catalog/5f4cdd5832784245f7f662ad-640.webp)](previews/rear.png) |  |
 
 本件只涵蓋圖書館主體，不代表全校完成。1998年8月在新館提供服務，依1998-11-15館訊第5期p2；不將搜尋索引日期當啟用年。
 
@@ -13,7 +13,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 頂圖<br>![頂圖](previews/top.png) | 前立面<br>![前立面](previews/elevation.png) |  |
+| 頂圖<br>[![頂圖](../../../../docs/display/catalog/6aee7087e6754387411e8185-640.webp)](previews/top.png) | 前立面<br>[![前立面](../../../../docs/display/catalog/64fdfe78761fde47d6837dc5-640.webp)](previews/elevation.png) |  |
 
 ## 來源與範圍
 官方2–4F平面、2007館舍照片、2020新聞刊用前照與2023完整z19正射共同控制主要量體。後扇平頂、前方開書般連續凹曲屏、半扇形斜玻璃頂、前低翼兩排窗、深入口／兩柱／後門、階梯及單側較高屋突均保留。玻璃頂從前低點向後弧升高，不是圓頂或直立玻璃圓筒。
