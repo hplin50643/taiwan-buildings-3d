@@ -1,0 +1,24 @@
+{
+  "band": {
+    "matching_camera_and_frame": true,
+    "changed_pixels": 20530,
+    "changed_pixel_max_outside_target_buffer_3px": 0,
+    "changed_pixel_bbox": [
+      62,
+      229,
+      1117,
+      248
+    ],
+    "original_diagnostic_material_diff_only": true,
+    "images": [
+      {
+        "filename": "before-band.png",
+        "sha256": "8836751e6e73bde283eba4289564300df5b30b310a459502a511fba10ca1c6ec"
+      },
+      {
+        "filename": "after-band.png",
+        "sha256": "0e25a5cc66b4c2c692096e1fa639ee1d69189990927c8968940925579919f6bb"
+      }
+    ]
+  }
+}

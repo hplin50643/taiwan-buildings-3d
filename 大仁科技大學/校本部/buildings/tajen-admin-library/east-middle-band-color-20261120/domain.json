@@ -1,0 +1,88 @@
+{
+  "repository_path": "大仁科技大學/校本部/buildings/tajen-admin-library",
+  "original_commit": "243d4a05afe6861022c4875354b5c0b77c2926f9",
+  "original_tree": "6a0b62810890af02806f2495d3447ee18fdcd16c",
+  "original_stl_sha256": "d333eef2bd3b2deeb6493fb582ff671d1c5004bb55424ebb84ed0e689b2526f6",
+  "original_appearance_3mf_sha256": "7f3612c830a0279c7e76b92d71831afed09776198c625f2e8e8ae3916c40bc49",
+  "original_appearance_blend_sha256": "693d15a2619ac96425910922036efa0f1cb7c458a26549fac9f4f846fbe88c17",
+  "ids": [
+    1673,
+    1676
+  ],
+  "area_mm2": 104.62714763387339,
+  "axes": {
+    "model outward": "+X",
+    "source plane_x_m": 17.86,
+    "source y_min_max_m": [
+      -23,
+      9.5
+    ],
+    "source z_min_max_m": [
+      20.75,
+      21.3
+    ],
+    "model_mm_transform": "x=x_m*(150/62), y=y_m*(150/62), z=z_m*(150/62)+2"
+  },
+  "new_material": {
+    "id": "east_horizontal_gray_band_proxy",
+    "srgb": "#99998C",
+    "physical_product": "unknown"
+  },
+  "scope": "Only original outward-facing backing of one original middle-upper east wing horizontal band. Recess is a print-scale proxy for a real visual stripe, not evidence of its original structural depth. Both contiguous triangles and complete shared edge; no north-block wrapping, no other bands, no reveal or glass, no synthetic cross-material diagonals.",
+  "evidence": {
+    "school_history_landing": "https://www.tajen.edu.tw/p/406-1000-25606,r729.php?Lang=zh-tw",
+    "photos": [
+      {
+        "label": "admin02 (clear southeast finished exterior)",
+        "url": "https://www.tajen.edu.tw/var/file/0/1000/pictures/613/m/mczh-tw1000x1000_large7365_444647431458.jpg",
+        "sha256": "a69cf705403cd4724540f0d8d9396395c6ae3dce866ac3576a8d8b29457e0143",
+        "pixels": [
+          1000,
+          667
+        ],
+        "date_limit": "2001-08-12 visible stamp and EXIF date agree; EXIF indicated local time is inconsistent with daylight, and time zone is unknown",
+        "role": "Shows light walls with continuous darker warm gray stripe interleaved with the narrow window rows across the east wall; photo perspective, not survey; tiny endpoint areas are same-belt approximations."
+      },
+      {
+        "label": "admin03 (separate east oblique)",
+        "url": "https://www.tajen.edu.tw/var/file/0/1000/pictures/613/m/mczh-tw1000x1000_large7367_450070631458.jpg",
+        "sha256": "525ccefb7a29321abb92fa6af0ce0ddbb4ae66e8aff78b5874dd8cee1aa2417c",
+        "pixels": [
+          421,
+          600
+        ],
+        "date_limit": "Capture date unknown",
+        "role": "Independent east wall/band rhythm and low-wing position corroboration only; strong tonal and lighting differences, not used for hue."
+      }
+    ]
+  },
+  "unchanged_color_definitions": [
+    {
+      "id": "neutral_unconfirmed_structure",
+      "source_3mf_name": "neutral_unconfirmed_structure",
+      "srgb": "#AAA79F"
+    },
+    {
+      "id": "observed_opaque_low_wing_pink",
+      "source_3mf_name": "observed_opaque_low_wing_pink",
+      "srgb": "#AF8589"
+    },
+    {
+      "id": "observed_dark_glazing_back",
+      "source_3mf_name": "observed_dark_glazing_back",
+      "srgb": "#405D6A"
+    }
+  ],
+  "baseline_distribution": [
+    3644,
+    164,
+    288
+  ],
+  "new_distribution": [
+    3642,
+    164,
+    288,
+    2
+  ],
+  "reference_images_in_package": false
+}

@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "original_triangle_count": 4096,
+  "original_welded_vertex_count": 2046,
+  "unchanged_material_count": 3,
+  "new_material_definition": {
+    "id": "east_horizontal_gray_band_proxy",
+    "srgb": "#99998C",
+    "physical_product": "unknown"
+  },
+  "new_only_material_slot": 3,
+  "mesh_manifold_oriented_in_old_and_new_sdk": true,
+  "stl_original_sha256": "d333eef2bd3b2deeb6493fb582ff671d1c5004bb55424ebb84ed0e689b2526f6",
+  "exact_raw_and_sdk_ordered_xyz": true,
+  "strict_old_and_new_3mf_warning_counts": [
+    0,
+    0
+  ],
+  "all_3mf_corners_checked": true,
+  "only_XML_material_attributes_changed": 6,
+  "full_captured_RNA_delta": [
+    [
+      "/meshes/Unchanged source STL triangles/attributes/material_index/data/1673/value",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/attributes/material_index/data/1676/value",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/loop_triangles/1673/material_index",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/loop_triangles/1676/material_index",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/polygons/1673/material_index",
+      0,
+      3
+    ],
+    [
+      "/meshes/Unchanged source STL triangles/polygons/1676/material_index",
+      0,
+      3
+    ]
+  ],
+  "retained_nonselected_faces": 4094,
+  "baseline_distribution": [
+    3644,
+    164,
+    288
+  ],
+  "new_distribution": [
+    3642,
+    164,
+    288,
+    2
+  ],
+  "new_file_sha256": {
+    "scene.blend": "c57b559020d2c23e8a499dc4463f6f799e7b07eb9aea983f51443ad52a1cf863",
+    "model-colored.3mf": "591bcdfc543e2d48877e930c62447d0991422d4eaf280e6c9d4802f12a2d0162"
+  }
+}
