@@ -42,3 +42,29 @@
 尺寸仍為 150 × 104 × 61.05 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是八個封閉分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+
+## 2026-11-18 單一入口窗梃側返材族連續修訂
+
+本次僅原 **5236、5242、5243、5247** 四個完整三角面由淺牆材 1 延續為既有銀色框材 5，其餘 16,738 面、原 8 材槽及 shader、頂點／面序、原 STL 位元完全保留，不增加材料或幾何。本頁原段落為歷史基準；本次檔案同層提供 [model.stl](model.stl)、[原生場景](scene.blend)、[3MF](nuulib-appearance.3mf)、[逐面 JSON](face-materials.json)、[新增 NPZ 表面交換檔](surface-colors.npz)。NPZ 是本次從保存場景原序新建的資料交換，不冒稱原包已有。
+
+- 位置為入口整合細梃 **+X 側 x≈−24.6**，y[−37,−36.25]、z[5.45,20.95]，面積 11.625000715 mm²。四面沿既有邊形成完整矩形，前鄰 922／953 已為銀色，後鄰為原玻璃凹背。
+- 它不是最大共面域的全部：共面棚端 5233／5238 仍為原中性，沿既有 y=−37 的自然元件原邊排除，不切三角、不中途憑色造界。其他窗梃、對側、上下揭邊、凹背及棚均未改。
+- 官方照片 5 可辨細銀白金屬窗梃的前面及窄側，照片 7 提供同入口位置與整段尺度關係。原實心盒挖槽的整合條帶作既有框材的有限代理延續；**不是精確實柱編號、逐格配準、實測 0.75 mm 深度或構造鑑定**。模型九槽及橫棚與實景細梃接件不完全相同，不藉色修復形狀。
+- 照片 EXIF 自報 2025-03-10，時區與日期未獨立核實，不認證 2026 現況。色碼沿既有 silver_entry_frames `#BEC9C7`，不是照片校色。原照片保留私人研究，不入公開包。[來源及有限域](MULLION-SOURCE-SCOPE.json)。
+- 全場景 RNA 僅 14 差：四面各 polygon／looptriangle／material attribute 共 12，加 2 個局部 scope／表面交換 hash 屬性。原全部八材和 node trees、物件 inventory／變換、相機、世界／燈光完全保持。**無孤立材 fake_user 旗標變更**，原 original_STL_sha256／limitations 屬性保留。
+- 原 3MF 只四面 p1/p2/p3 共 12 個材屬性變更；所有其他 XML 原位元、頂點字串與原 object fallback 保留。逐面 JSON 只更新四指派和四原因。新增 NPZ 與原 scene／STL／3MF 座標和面序一致。
+
+### 重現及核驗
+
+[鎖定輸入](baseline-inputs.json)、[重建基準 ZIP](baseline-rebuild-inputs.zip)、[變更紀錄](mullion-return-change.json)、[QA 摘要](QA-summary.json)、[逐檔 SHA](MANIFEST.json)。ZIP 含公開基準 STL／Blend／3MF／材表／逐面資料／原文碼，不含原照。
+
+```sh
+unzip baseline-rebuild-inputs.zip -d baseline
+blender -b -t 2 -P rebuild_mullion_return.py -- baseline rebuilt
+blender -b -t 3 -P render_mullion_views.py -- rebuilt
+```
+
+Blender 4.3.2（numpy 內建）。從 SHA 鎖定原幾何與場景基準重現局部表面修訂，不重建幾何、不替代原建模與製造 QA。原四視角 front／rear／elevation／top 均 1200×1200、Cycles 48 samples、原相機及尺度，公開 PNG 無 text metadata。私人前後對照使用同相機並另核原面射線可見性。
+
+隔離重建驗數值檔 byte 與完整 RNA 等價；strict lib3mf 及私有改材寫回、Blender 私有頂點／面材另存重開結果見 QA。無新切片路徑或實體試印，不保證多材列印。此項本地完成，發布狀態另行確認。

@@ -1,0 +1,244 @@
+{
+  "status": "SOURCE_DOMAIN_QUALIFICATION_ONLY_PRODUCT_QA_SEPARATE",
+  "source_hashes": {
+    "library5.jpg": "fa68db91dc40013bb076818653201556841b24d6d779c3552b0225b80a296701",
+    "library7.jpg": "1dd260629eb068933f3c7b4c36e74f50d18a302baa1e16ec9a2ee5ad19279b25"
+  },
+  "source_reading": "Photo5 resolves slim silver-white vertical metal mullion faces and finite side thickness, distinguishable from round support columns, dark glazing and upper taupe fascia. Photo7 locates same entry just right of named tower and shows tall frame family continuous down to entry level; this is not the large dark window frame at building right. Reflections/shadows are not separate paint.",
+  "mapping_judgment": "Original CSG integral strip x[-25.4,-24.6], front y=-37, already material5, is an authored proxy for this silver entry frame family. Its +X side x=-24.6, y[-37,-36.25], spans to glazing-back boundary and is naturally bounded by existing opening top/bottom. Despite originating by subtraction from a solid box, this particular strip and cheek can be interpreted as a single finite frame proxy rather than a masonry wall return. This supports extending existing silver family to its original complete4-face cheek. It is a qualified semantic/material-family continuation, not exact physical mullion identification, accurate opening count or camera-depth measurement.",
+  "geometry": {
+    "stl_sha256": "1835376abf92fd7d961d43567fd4cf221e7478eba42176e4507cea165a7bab28",
+    "face_count": 16742,
+    "candidate": [
+      5236,
+      5242,
+      5243,
+      5247
+    ],
+    "old_materials": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "area_mm2": 11.625000715255737,
+    "bounds": [
+      [
+        -24.600000381469727,
+        -37.0,
+        5.449999809265137
+      ],
+      [
+        -24.600000381469727,
+        -36.25,
+        20.950000762939453
+      ]
+    ],
+    "complete_original_rectangle": true,
+    "boundary_edges": [
+      [
+        [
+          -24.600000381469727,
+          -37.0,
+          16.049999237060547
+        ],
+        [
+          -24.600000381469727,
+          -37.0,
+          20.950000762939453
+        ]
+      ],
+      [
+        [
+          -24.600000381469727,
+          -37.0,
+          5.449999809265137
+        ],
+        [
+          -24.600000381469727,
+          -37.0,
+          14.550000190734863
+        ]
+      ],
+      [
+        [
+          -24.600000381469727,
+          -37.0,
+          14.550000190734863
+        ],
+        [
+          -24.600000381469727,
+          -37.0,
+          16.049999237060547
+        ]
+      ],
+      [
+        [
+          -24.600000381469727,
+          -36.25,
+          5.449999809265137
+        ],
+        [
+          -24.600000381469727,
+          -36.25,
+          20.950000762939453
+        ]
+      ],
+      [
+        [
+          -24.600000381469727,
+          -37.0,
+          20.950000762939453
+        ],
+        [
+          -24.600000381469727,
+          -36.25,
+          20.950000762939453
+        ]
+      ],
+      [
+        [
+          -24.600000381469727,
+          -37.0,
+          5.449999809265137
+        ],
+        [
+          -24.600000381469727,
+          -36.25,
+          5.449999809265137
+        ]
+      ]
+    ],
+    "adjacent_faces": [
+      {
+        "face": 922,
+        "material": 5,
+        "bounds": [
+          [
+            -25.399999618530273,
+            -37.0,
+            16.049999237060547
+          ],
+          [
+            -24.600000381469727,
+            -37.0,
+            20.950000762939453
+          ]
+        ]
+      },
+      {
+        "face": 953,
+        "material": 5,
+        "bounds": [
+          [
+            -25.399999618530273,
+            -37.0,
+            5.449999809265137
+          ],
+          [
+            -24.600000381469727,
+            -37.0,
+            14.550000190734863
+          ]
+        ]
+      },
+      {
+        "face": 5233,
+        "material": 0,
+        "bounds": [
+          [
+            -24.600000381469727,
+            -37.849998474121094,
+            14.550000190734863
+          ],
+          [
+            -24.600000381469727,
+            -37.0,
+            16.049999237060547
+          ]
+        ]
+      },
+      {
+        "face": 5237,
+        "material": 4,
+        "bounds": [
+          [
+            -24.600000381469727,
+            -36.25,
+            5.449999809265137
+          ],
+          [
+            -21.399999618530273,
+            -36.25,
+            20.950000762939453
+          ]
+        ]
+      },
+      {
+        "face": 5249,
+        "material": 0,
+        "bounds": [
+          [
+            -24.600000381469727,
+            -37.0,
+            5.449999809265137
+          ],
+          [
+            -21.399999618530273,
+            -36.25,
+            5.449999809265137
+          ]
+        ]
+      },
+      {
+        "face": 5251,
+        "material": 1,
+        "bounds": [
+          [
+            -24.600000381469727,
+            -37.0,
+            20.950000762939453
+          ],
+          [
+            -21.399999618530273,
+            -36.25,
+            20.950000762939453
+          ]
+        ]
+      }
+    ],
+    "not_maximal_coplanar_domain": true,
+    "canopy_excluded": [
+      5233,
+      5238
+    ],
+    "no_new_triangle_cut": true
+  },
+  "proposed_change": {
+    "faces": [
+      5236,
+      5242,
+      5243,
+      5247
+    ],
+    "old": 1,
+    "new": 5,
+    "new_material": false
+  },
+  "exclusions": [
+    "Canopy tongue5233/5238 remains0; original y=-37 edges bound candidate, no fabricated triangle cut",
+    "Other eight openings, opposite cheeks, upper/lower reveals, glass-back5237 and other silver front facets unchanged",
+    "Not the entire6-face coplanar component; mixed coplanar construction pieces may have legitimate original-edge boundary"
+  ],
+  "limits": [
+    "PhotoEXIF2025-03-10 self-reported, not2026 current condition",
+    "Nominal model0.75 depth/15.5height and9 openings are coarse approximations; source metal joints/horizontal transoms do not exactly equal long modeled canopy",
+    "RawSTL parsed independently and currentclassifier target/adjacent assignments checked; storedscene/3MF not inspected in this source/domain review",
+    "Source qualification only, product must preserve full geometry and all other materials and receive independent final validation"
+  ],
+  "no_model_changes": true,
+  "source_urls": [
+    "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/94/1094/gallery_1094_5717190_25479.jpg",
+    "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/94/1094/gallery_1094_1905808_25479.jpg"
+  ]
+}
