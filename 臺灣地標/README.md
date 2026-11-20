@@ -62,7 +62,7 @@
 | 奇美博物館 | [模型與說明](chimei-museum/README.md) · [STL](chimei-museum/model.stl) | [前視](chimei-museum/preview.png) | [後視](chimei-museum/rear.png) |
 | 高雄85大樓 | [模型與說明](85-sky-tower/README.md) · [STL](85-sky-tower/model.stl) | [前視](85-sky-tower/previews/front.png) | [後視](85-sky-tower/previews/rear.png) |
 | 衛武營國家藝術文化中心 | [模型與說明](weiwuying/README.md) · [STL](weiwuying/model.stl) | [前視](weiwuying/preview.png) | [後視](weiwuying/rear.png) |
-| 龍虎塔 | [模型與說明](dragon-tiger-pagodas/README.md) · [STL（Release 下載）](https://github.com/root50643/taiwan-landmark-buildings-3d/releases/download/v1.0.0/dragon_tiger_pagodas_150mm.stl) | [前視](dragon-tiger-pagodas/preview.png) | [後視](dragon-tiger-pagodas/rear.png) |
+| 龍虎塔 | [模型與說明](dragon-tiger-pagodas/README.md) · [STL（Release 下載）](https://github.com/hplin50643/taiwan-buildings-3d/releases/download/v1.0.0/dragon_tiger_pagodas_150mm.stl) | [前視](dragon-tiger-pagodas/preview.png) | [後視](dragon-tiger-pagodas/rear.png) |
 | 鵝鑾鼻燈塔 | [模型與說明](eluanbi-lighthouse/README.md) · [STL](eluanbi-lighthouse/model.stl) | [前視](eluanbi-lighthouse/preview.png) | [後視](eluanbi-lighthouse/rear.png) |
 | 松園別館 | [限域補色與說明](pine-garden/README.md) · [原 STL](pine-garden/model.stl) · [3MF](pine-garden/model.3mf) · [Blend](pine-garden/scene.blend) | [正面補色](pine-garden/previews/front.png) | [背面未驗證中性材質](pine-garden/previews/rear.png) |
 | 國立臺灣史前文化博物館康樂本館 | [模型與說明](prehistory-museum-kangle/README.md) · [STL](prehistory-museum-kangle/model.stl) | [前視](prehistory-museum-kangle/preview.png) | [後視](prehistory-museum-kangle/rear.png) |
