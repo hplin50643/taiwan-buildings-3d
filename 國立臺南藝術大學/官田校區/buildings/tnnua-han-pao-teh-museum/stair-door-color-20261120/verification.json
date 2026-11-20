@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "original_triangle_count": 1524,
+  "original_welded_vertex_count": 752,
+  "unchanged_material_count": 7,
+  "mesh_manifold_oriented_in_old_and_new_sdk": true,
+  "stl_original_sha256": "5953c9fa1e57317ef29702cc0a9239a71c0d68f81b276d85caf87cbd5896cf71",
+  "exact_raw_and_sdk_ordered_xyz": true,
+  "strict_old_and_new_3mf_warning_counts": [
+    0,
+    0
+  ],
+  "all_3mf_corners_checked": true,
+  "only_XML_material_attributes_changed": 6,
+  "full_captured_RNA_delta": [
+    [
+      "/meshes/Exact revised STL/attributes/material_index/data/1263/value",
+      0,
+      3
+    ],
+    [
+      "/meshes/Exact revised STL/attributes/material_index/data/1265/value",
+      0,
+      3
+    ],
+    [
+      "/meshes/Exact revised STL/loop_triangles/1263/material_index",
+      0,
+      3
+    ],
+    [
+      "/meshes/Exact revised STL/loop_triangles/1265/material_index",
+      0,
+      3
+    ],
+    [
+      "/meshes/Exact revised STL/polygons/1263/material_index",
+      0,
+      3
+    ],
+    [
+      "/meshes/Exact revised STL/polygons/1265/material_index",
+      0,
+      3
+    ]
+  ],
+  "retained_nonselected_faces": 1522,
+  "baseline_distribution": [
+    268,
+    890,
+    8,
+    16,
+    254,
+    23,
+    65
+  ],
+  "new_distribution": [
+    266,
+    890,
+    8,
+    18,
+    254,
+    23,
+    65
+  ],
+  "new_file_sha256": {
+    "scene.blend": "a6753819ddb96ba0962676f8f6cd7f36fdcd481acb2c04ff3a3893ba4dad0adc",
+    "model-colored.3mf": "273f7c416ec3786cbd328542303d8e89aad730757830b2c331912103f7dc1be9"
+  }
+}

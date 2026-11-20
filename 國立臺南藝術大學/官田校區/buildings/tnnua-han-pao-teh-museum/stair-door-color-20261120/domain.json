@@ -1,0 +1,188 @@
+{
+  "status": "EXACT_SIDE_STAIR_UPPER_DOOR_BACK_ONLY",
+  "checked_main": "a881a6215cba27d2b15c883fc54d0dd851e3b7dc",
+  "model_repository_path": "國立臺南藝術大學/官田校區/buildings/tnnua-han-pao-teh-museum",
+  "model_root": "d38cbe05af991578e0dd211638635b2ec1857130",
+  "stl_sha256": "5953c9fa1e57317ef29702cc0a9239a71c0d68f81b276d85caf87cbd5896cf71",
+  "current_3mf_sha256": "4efc367beb71507d9bcd3143315bf02a8eea04f41fb311e69821b77715a45bb2",
+  "ids_original_stl_zero_based": [
+    1263,
+    1265
+  ],
+  "ids_actual_3mf_zero_based": [
+    1263,
+    1265
+  ],
+  "outward_normal": [
+    -1,
+    0,
+    0
+  ],
+  "plane_x_mm": -43,
+  "y_mm": [
+    -38,
+    -30
+  ],
+  "z_mm": [
+    61,
+    72
+  ],
+  "union_area_mm2": 88,
+  "triangle_vertices_mm": [
+    [
+      [
+        -43.0,
+        -38.0,
+        61.0
+      ],
+      [
+        -43.0,
+        -38.0,
+        72.0
+      ],
+      [
+        -43.0,
+        -30.0,
+        61.0
+      ]
+    ],
+    [
+      [
+        -43.0,
+        -38.0,
+        72.0
+      ],
+      [
+        -43.0,
+        -30.0,
+        72.0
+      ],
+      [
+        -43.0,
+        -30.0,
+        61.0
+      ]
+    ]
+  ],
+  "origin_material_index": 0,
+  "destination_existing_material_index": 3,
+  "dst_hex": "#354746",
+  "exact_domain_coverage_no_other_coplanar_triangle_overlap": true,
+  "primary_project_page": "https://www.krisyaoartech.com/zh-tw/projects/cultural/Han-Pao-Teh-Memorial-Museum",
+  "primary_visible_photo": {
+    "url": "https://www.krisyaoartech.com/data/goods/gallery/202209/1664346965060207576.jpg?t=1698201498",
+    "sha256": "540ba57c941d56faa55e5a79f22e3cb68bd075485d268b7f6260c9c60391d687",
+    "size_px": [
+      1057,
+      1057
+    ]
+  },
+  "chronology": "unknown date of visible photo; published links are not dated site survey",
+  "basis": "Architect gallery image 6 shows the two external stair landings on the model -X side; the higher right-of-image (towards model -Y front per v2) landing cuts into the wall and shows a dark gray reflective closed pane distinct from gray frames/reveals. Existing recess back is only a single printable proxy for that pane. No literal shadow color, opacity, texture, visible hardware, or inference to the open lower landing.",
+  "not_selected": [
+    "low -X stair door appears open, cannot use upper proxy there",
+    "+X double-balcony glazed/blocked doors not this selected packet",
+    "+Y complete rear plain rectangle unresolved by source viewpoint",
+    "retained simplified roof",
+    "external stair, rails, jambs material unchanged"
+  ],
+  "original_stl_sha256": "5953c9fa1e57317ef29702cc0a9239a71c0d68f81b276d85caf87cbd5896cf71",
+  "original_appearance_3mf_sha256": "4efc367beb71507d9bcd3143315bf02a8eea04f41fb311e69821b77715a45bb2",
+  "original_appearance_blend_sha256": "97ab071913c9a7bba48388e9772868673d44f1ba5aa0d05902840dcdd1e829ec",
+  "ids": [
+    1263,
+    1265
+  ],
+  "materials": [
+    {
+      "id": "unverified_neutral",
+      "srgb": "#B9BAB6",
+      "basis": "未確認側面、原簡化平屋面與未分類面保持中性；不假造採光縫或未知材料"
+    },
+    {
+      "id": "exposed_concrete_gray",
+      "srgb": "#C5C6C0",
+      "basis": "實照0/2/3/4/5/6與建築師外牆材料敘述支持清水混凝土灰色近似，無貼圖/模板縫新增"
+    },
+    {
+      "id": "projecting_box_red",
+      "srgb": "#A9352E",
+      "basis": "實照5紅色外伸盒斜側、實照6紅底；只配現有外表面，不用室內紅盒擴充幾何"
+    },
+    {
+      "id": "glazing_dark_neutral",
+      "srgb": "#354746",
+      "basis": "實照0/2可見底層退縮玻璃及凸盒旁窄玻璃帶；不透明深灰綠代理反射/透射，非測得材料色"
+    },
+    {
+      "id": "frame_rail_gray",
+      "srgb": "#737C7B",
+      "basis": "實照2/3/4/5/8可見窗框與外梯/陽臺欄杆灰金屬；沿用原加厚簡化幾何"
+    },
+    {
+      "id": "approach_paving_gray",
+      "srgb": "#B2B6AC",
+      "basis": "實照0/2入口平台與踏階近似灰色；原模型未含水池，不添池水或景觀"
+    },
+    {
+      "id": "display_base_neutral",
+      "srgb": "#D1CFC8",
+      "basis": "模型底座展示色，非實景地坪"
+    }
+  ],
+  "unchanged_color_definitions": [
+    {
+      "id": "unverified_neutral",
+      "srgb": "#B9BAB6",
+      "basis": "未確認側面、原簡化平屋面與未分類面保持中性；不假造採光縫或未知材料"
+    },
+    {
+      "id": "exposed_concrete_gray",
+      "srgb": "#C5C6C0",
+      "basis": "實照0/2/3/4/5/6與建築師外牆材料敘述支持清水混凝土灰色近似，無貼圖/模板縫新增"
+    },
+    {
+      "id": "projecting_box_red",
+      "srgb": "#A9352E",
+      "basis": "實照5紅色外伸盒斜側、實照6紅底；只配現有外表面，不用室內紅盒擴充幾何"
+    },
+    {
+      "id": "glazing_dark_neutral",
+      "srgb": "#354746",
+      "basis": "實照0/2可見底層退縮玻璃及凸盒旁窄玻璃帶；不透明深灰綠代理反射/透射，非測得材料色"
+    },
+    {
+      "id": "frame_rail_gray",
+      "srgb": "#737C7B",
+      "basis": "實照2/3/4/5/8可見窗框與外梯/陽臺欄杆灰金屬；沿用原加厚簡化幾何"
+    },
+    {
+      "id": "approach_paving_gray",
+      "srgb": "#B2B6AC",
+      "basis": "實照0/2入口平台與踏階近似灰色；原模型未含水池，不添池水或景觀"
+    },
+    {
+      "id": "display_base_neutral",
+      "srgb": "#D1CFC8",
+      "basis": "模型底座展示色，非實景地坪"
+    }
+  ],
+  "baseline_distribution": [
+    268,
+    890,
+    8,
+    16,
+    254,
+    23,
+    65
+  ],
+  "new_distribution": [
+    266,
+    890,
+    8,
+    18,
+    254,
+    23,
+    65
+  ]
+}
