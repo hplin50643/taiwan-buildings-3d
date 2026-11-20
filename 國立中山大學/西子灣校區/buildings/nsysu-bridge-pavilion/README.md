@@ -15,8 +15,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 左前斜視<br>![左前斜視](previews/left_oblique.png) | 推定背側<br>![推定背側](previews/rear.png) |
-| 推定頂面<br>![推定頂面](previews/top.png) |  |  |
+| 正立面<br>[![正立面](previews/elevation.webp)](previews/elevation.png) | 左前斜視<br>[![左前斜視](previews/left_oblique.webp)](previews/left_oblique.png) | 推定背側<br>[![推定背側](previews/rear.webp)](previews/rear.png) |
+| 推定頂面<br>[![推定頂面](previews/top.webp)](previews/top.png) |  |  |
 
 ## 範圍與尺度
 完整亭體及直接承載平台：粗圓柱、環形梁、黃綠曲面屋頂、附著式瓦脊、加粗頂飾、六段真正穿孔欄板，保留相對的兩個橋側入口。**不包含長橋、池塘、園林及被遮擋的桌椅。** 下方短實心八角支撐為展示用的近似延續，不代表量測過的水下基礎。
