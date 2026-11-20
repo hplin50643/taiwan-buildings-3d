@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/tnfsh-gymnasium-2012/previews/front.png" alt="臺南一中二部園區綜合體育館：實際模型渲染" width="220">](buildings/tnfsh-gymnasium-2012/README.md)<br>**[綜合體育館｜2012完工／2013供圖外觀](buildings/tnfsh-gymnasium-2012/README.md)**<br>[STL](buildings/tnfsh-gymnasium-2012/model.stl) · [彩色3MF](buildings/tnfsh-gymnasium-2012/model.3mf) · [Blender](buildings/tnfsh-gymnasium-2012/scene.blend) |  |  |
+| [<img src="../../docs/display/catalog/be2d90a3c55846e87385495d-640.webp" alt="臺南一中二部園區綜合體育館：實際模型渲染" width="220">](buildings/tnfsh-gymnasium-2012/README.md)<br>**[綜合體育館｜2012完工／2013供圖外觀](buildings/tnfsh-gymnasium-2012/README.md)**<br>[STL](buildings/tnfsh-gymnasium-2012/model.stl) · [彩色3MF](buildings/tnfsh-gymnasium-2012/model.3mf) · [Blender](buildings/tnfsh-gymnasium-2012/scene.blend) |  |  |
 
 上圖為模型實際Blender渲染，不附私人參考照片或原始掃描。
 

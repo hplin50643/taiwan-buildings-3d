@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="../../docs/display/catalog/4428045613ee96de270dedd9-640.webp" alt="1976女生宿舍原設計實際模型渲染" width="220">](buildings/cpu-female-dorm-1976-design/README.md)<br>**[女生宿舍｜1976年7月原設計](buildings/cpu-female-dorm-1976-design/README.md)**<br>[STL](buildings/cpu-female-dorm-1976-design/model.stl) · [彩色3MF](buildings/cpu-female-dorm-1976-design/model.3mf) · [Blender](buildings/cpu-female-dorm-1976-design/scene.blend) | [<img src="buildings/cpu-boiler-house-1976-design/preview.png" alt="鍋爐房1976原設計外殼：實際模型渲染" width="220">](buildings/cpu-boiler-house-1976-design/README.md)<br>**[鍋爐房｜1976年11月原設計外殼](buildings/cpu-boiler-house-1976-design/README.md)**<br>[STL](buildings/cpu-boiler-house-1976-design/model.stl) · [彩色3MF](buildings/cpu-boiler-house-1976-design/model.3mf) · [Blender](buildings/cpu-boiler-house-1976-design/scene.blend) |  |
+| [<img src="../../docs/display/catalog/4428045613ee96de270dedd9-640.webp" alt="1976女生宿舍原設計實際模型渲染" width="220">](buildings/cpu-female-dorm-1976-design/README.md)<br>**[女生宿舍｜1976年7月原設計](buildings/cpu-female-dorm-1976-design/README.md)**<br>[STL](buildings/cpu-female-dorm-1976-design/model.stl) · [彩色3MF](buildings/cpu-female-dorm-1976-design/model.3mf) · [Blender](buildings/cpu-female-dorm-1976-design/scene.blend) | [<img src="../../docs/display/catalog/2d32f1af6858fa9fc3fb6e7f-640.webp" alt="鍋爐房1976原設計外殼：實際模型渲染" width="220">](buildings/cpu-boiler-house-1976-design/README.md)<br>**[鍋爐房｜1976年11月原設計外殼](buildings/cpu-boiler-house-1976-design/README.md)**<br>[STL](buildings/cpu-boiler-house-1976-design/model.stl) · [彩色3MF](buildings/cpu-boiler-house-1976-design/model.3mf) · [Blender](buildings/cpu-boiler-house-1976-design/scene.blend) |  |
 
 現行收錄 **2 套模型包**，不等於全校完成或完整建築棟數。
 

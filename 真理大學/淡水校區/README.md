@@ -12,7 +12,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 模型預覽<br>同一建物有限材料示意<br><img src="../../docs/display/catalog/7566d9b1fb9b3a1495e228b2-640.webp" alt="有限材料示意" width="220"> | [<img src="buildings/au-chapel-north-entrance-segment/previews/front.png" alt="真理大學大禮拜堂：北側雙塔入口截段：實際模型預覽" width="220">](buildings/au-chapel-north-entrance-segment/README.md)<br>**[真理大學大禮拜堂：北側雙塔入口截段](buildings/au-chapel-north-entrance-segment/README.md)** | [<img src="buildings/au-reverends-house-arcade-segment/previews/front.png" alt="真理大學牧師樓：雙層拱廊主立面截段：實際模型預覽" width="220">](buildings/au-reverends-house-arcade-segment/README.md)<br>**[真理大學牧師樓：雙層拱廊主立面截段](buildings/au-reverends-house-arcade-segment/README.md)** |
+| 模型預覽<br>同一建物有限材料示意<br><img src="../../docs/display/catalog/7566d9b1fb9b3a1495e228b2-640.webp" alt="有限材料示意" width="220"> | [<img src="../../docs/display/catalog/a76686d849750c78106a366b-640.webp" alt="真理大學大禮拜堂：北側雙塔入口截段：實際模型預覽" width="220">](buildings/au-chapel-north-entrance-segment/README.md)<br>**[真理大學大禮拜堂：北側雙塔入口截段](buildings/au-chapel-north-entrance-segment/README.md)** | [<img src="../../docs/display/catalog/d6a2dedad41a2b7cbac86632-640.webp" alt="真理大學牧師樓：雙層拱廊主立面截段：實際模型預覽" width="220">](buildings/au-reverends-house-arcade-segment/README.md)<br>**[真理大學牧師樓：雙層拱廊主立面截段](buildings/au-reverends-house-arcade-segment/README.md)** |
 
 模型預覽
 

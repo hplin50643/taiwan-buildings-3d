@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/cmu-beigang-hospital-1977-1985-historical-design/preview.png" alt="北港附院1977–1985歷史外觀模型，非現況" width="220">](buildings/cmu-beigang-hospital-1977-1985-historical-design/README.md)<br>**[北港附院主館｜1977–1985歷史設計](buildings/cmu-beigang-hospital-1977-1985-historical-design/README.md)**<br>[STL](buildings/cmu-beigang-hospital-1977-1985-historical-design/model.stl) · [彩色3MF](buildings/cmu-beigang-hospital-1977-1985-historical-design/model.3mf) · [Blender](buildings/cmu-beigang-hospital-1977-1985-historical-design/scene.blend) |  |  |
+| [<img src="../../docs/display/catalog/fa2b0851cececab673391599-640.webp" alt="北港附院1977–1985歷史外觀模型，非現況" width="220">](buildings/cmu-beigang-hospital-1977-1985-historical-design/README.md)<br>**[北港附院主館｜1977–1985歷史設計](buildings/cmu-beigang-hospital-1977-1985-historical-design/README.md)**<br>[STL](buildings/cmu-beigang-hospital-1977-1985-historical-design/model.stl) · [彩色3MF](buildings/cmu-beigang-hospital-1977-1985-historical-design/model.3mf) · [Blender](buildings/cmu-beigang-hospital-1977-1985-historical-design/scene.blend) |  |  |
 
 現行收錄 **1 套模型包**；非全院或現況完成。
 

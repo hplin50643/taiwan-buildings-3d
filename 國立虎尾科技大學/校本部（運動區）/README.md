@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![經國體育館正面入口段](buildings/nfu-chingkuo-entrance/preview.png)](buildings/nfu-chingkuo-entrance/README.md)<br>[局部材色3MF](buildings/nfu-chingkuo-entrance/appearance.3mf) · [範圍與限制](buildings/nfu-chingkuo-entrance/README.md) |  |  |
+| [![經國體育館正面入口段](../../docs/display/catalog/08d46242c1c4e756a459d305-640.webp)](buildings/nfu-chingkuo-entrance/README.md)<br>[局部材色3MF](buildings/nfu-chingkuo-entrance/appearance.3mf) · [範圍與限制](buildings/nfu-chingkuo-entrance/README.md) |  |  |
 
 [經國體育館正面入口段](buildings/nfu-chingkuo-entrance/README.md)
 

@@ -8,7 +8,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/kas-farrell-athletic-complex-2016/previews/front.png" alt="Thomas Farrell運動中心｜2016竣工供圖外觀：實際模型渲染" width="220">](buildings/kas-farrell-athletic-complex-2016/README.md)<br>**[Thomas Farrell運動中心｜2016竣工供圖外觀](buildings/kas-farrell-athletic-complex-2016/README.md)**<br>[STL](buildings/kas-farrell-athletic-complex-2016/model.stl) · [彩色3MF](buildings/kas-farrell-athletic-complex-2016/model.3mf) · [Blender](buildings/kas-farrell-athletic-complex-2016/scene.blend) |  |  |
+| [<img src="../../docs/display/catalog/c8ccb2e1028ab0c964811baa-640.webp" alt="Thomas Farrell運動中心｜2016竣工供圖外觀：實際模型渲染" width="220">](buildings/kas-farrell-athletic-complex-2016/README.md)<br>**[Thomas Farrell運動中心｜2016竣工供圖外觀](buildings/kas-farrell-athletic-complex-2016/README.md)**<br>[STL](buildings/kas-farrell-athletic-complex-2016/model.stl) · [彩色3MF](buildings/kas-farrell-athletic-complex-2016/model.3mf) · [Blender](buildings/kas-farrell-athletic-complex-2016/scene.blend) |  |  |
 
 來源照片與掃描圖不隨公開包配送；上圖為本模型實際 Blender 渲染。
 

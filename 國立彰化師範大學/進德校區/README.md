@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 理學一館正立面段<br>[![理學一館正立面段](../../docs/display/catalog/6d14aff5295900112bfdcd5b-640.webp)](buildings/ncue-science1-front-segment/) | 圖資大樓入口轉角段<br>[![圖資大樓入口轉角段](buildings/ncue-library-entry-corner-segment/appearance/front.png)](buildings/ncue-library-entry-corner-segment/) | 白沙大樓入口正面片段<br>[![白沙大樓入口正面片段](../../docs/display/catalog/3dede60df88bd2596666c7ac-640.webp)](buildings/ncue-baisha-entry-front-segment/) |
+| 理學一館正立面段<br>[![理學一館正立面段](../../docs/display/catalog/6d14aff5295900112bfdcd5b-640.webp)](buildings/ncue-science1-front-segment/) | 圖資大樓入口轉角段<br>[![圖資大樓入口轉角段](../../docs/display/catalog/c6553a1a1c3da367b68fdfe1-640.webp)](buildings/ncue-library-entry-corner-segment/) | 白沙大樓入口正面片段<br>[![白沙大樓入口正面片段](../../docs/display/catalog/3dede60df88bd2596666c7ac-640.webp)](buildings/ncue-baisha-entry-front-segment/) |
 | 王金平活動中心湖面側立面與淺拱屋頂局部<br>[![王金平活動中心七色局部](../../docs/display/catalog/27949d369603fd054c905bd3-640.webp)](buildings/ncue-wang-jin-pyng-lakeside-roof-segment/) | 綜合中心弧形入口屏牆與階梯段<br>[![綜合中心七材質局部](../../docs/display/catalog/2d0faec5c78aa560d8e2bcdf-640.webp)](buildings/ncue-comprehensive-curved-entry-segment/) | 王金平游泳館入口立面與淺弧屋簷前段<br>[![游泳館九材質局部](../../docs/display/catalog/911bf395388d7b1553f3a4b4-640.webp)](buildings/ncue-wang-jin-pyng-swimming-entry-segment/) |
 | 弘道館入口柱廊片段<br>[![弘道館八材質片段](../../docs/display/catalog/c0f2cf534a921f492c5fd7e8-640.webp)](buildings/ncue-hongdao-entry-colonnade-segment/) |  |  |
 
