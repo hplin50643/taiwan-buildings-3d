@@ -1,0 +1,131 @@
+{
+  "status": "PASS_NUMERIC_NATIVE_REOPEN_AND_FILE_COMPLETENESS",
+  "faces": 2992,
+  "changed_faces": [
+    1107,
+    1110
+  ],
+  "old_material": 1,
+  "new_material": 0,
+  "counts": [
+    12,
+    2980
+  ],
+  "geometry_unchanged": true,
+  "other_assignments_preserved": 2990,
+  "original_white_preserved": 10,
+  "RNA_changes": 8,
+  "RNA_scope": "2 polygon + 2 looptriangle + 2 material-index attribute + scope/source hash; all other serialized persistent scene data unchanged",
+  "RNA_exclusions": [
+    "depsgraph",
+    "uv_sculpt",
+    "eraser_brush",
+    "eraser_brush_asset_reference",
+    "brush_asset_reference",
+    "rna_type",
+    "original",
+    "id_data",
+    "users",
+    "is_updated",
+    "is_updated_data",
+    "is_updated_transform",
+    "is_runtime_data",
+    "is_evaluated",
+    "session_uid",
+    "name_full",
+    "is_editmode",
+    "total_vert_sel",
+    "total_edge_sel",
+    "total_face_sel"
+  ],
+  "XML_changes": "2 p1 and object pid/pindex fallback only; all other tree values and other ZIP member bytes unchanged",
+  "strict_lib3mf_warnings": 0,
+  "clean_rebuild": "NPZ/3MF exact bytes; Blend persistent RNA equal",
+  "native_edit": "Private vertex and face material edits saved/reopened; public SHA unchanged",
+  "palette_unchanged": true,
+  "source_evidence": "Qualified same-identified-beam continuity inference, not resolved full-depth source pixels",
+  "visual_review": "Final visual acceptance by coordinator; dimensions/completeness verified here",
+  "images": [
+    {
+      "file": "preview.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "3fb49b0178404746134432f351829b6c92a160e051a015df01bdf4d923b84f6f"
+    },
+    {
+      "file": "rear.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "b654d6db1c5daea4f069e82e260af7f77b2ac7bbc76b636489e47c8f3958ad42"
+    },
+    {
+      "file": "front.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "05d090532a2e3b634c2359f16eafc3cc625cc8071c603e536e23b900d14621bc"
+    },
+    {
+      "file": "back.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "c5c67d1c726374e1b2f0fd1f5a66ab7af51299ea3d9cc18f529c1bbcfff81131"
+    },
+    {
+      "file": "west.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "241def461e5bfc4f0e892eb63d60e1c08c87c6cf3c155dd3d68f9a2fa0533391"
+    },
+    {
+      "file": "east.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "7f6852e73026fc3aaed91e1c847a98a3a04535572ade9d9f3e5909be3c0203ef"
+    },
+    {
+      "file": "top.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "f4be65433298d931119f31ebba302f809fab7e5cd35292fc2d8a32310c5725c7"
+    },
+    {
+      "file": "entry-detail.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "90d9c94ccada61ae38637ae0f1f59893db104e79c1f87f82508689c6f709e7d3"
+    },
+    {
+      "file": "facade-detail.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "1411b52be2e0b09151041dfeada18d75b481e0c52a40657c0b4bcb699aaac341"
+    },
+    {
+      "file": "roof-detail.png",
+      "size": [
+        1200,
+        900
+      ],
+      "sha256": "813ba72caa8d5b52e7c1ca003de7adbf1b540a30cfe814857bad10cd6349b385"
+    }
+  ],
+  "manufacturing": "No test print or multicolor slicing certification"
+}

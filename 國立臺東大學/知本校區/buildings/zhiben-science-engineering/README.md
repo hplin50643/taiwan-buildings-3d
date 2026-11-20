@@ -1,5 +1,28 @@
 # 知本理工主要教學群｜左前框正面局部灰白
 
+## 2026-11-18 限定補色版
+
+左前玻璃盒上梁左端的 2 個原三角，延續灰白材質。本次不增加套數、不改原始 STL 幾何，未補部位不代表實景材色。未實體試印。
+
+[彩色 3MF](appearance.3mf) · [可編輯 Blend](scene.blend) · [原 STL](model.stl) · [本版數位查核](QA-SUMMARY.json) · [公開版清單](COLOR-RELEASE-MANIFEST.json) · [SHA256SUMS](SHA256SUMS)
+
+| 現版模型預覽 | 現版模型預覽 | 現版模型預覽 |
+| :---: | :---: | :---: |
+| ![前斜視／正面](front.png)<br>前斜視／正面 | ![後斜視](rear.png)<br>後斜視 | ![頂視](top.png)<br>頂視 |
+| ![前斜視](previews/color-20261118/preview.png)<br>前斜視 | ![背面](back.png)<br>背面 | ![東側](east.png)<br>東側 |
+| ![西側](west.png)<br>西側 | ![入口細節](entry-detail.png)<br>入口細節 | ![框架細節](facade-detail.png)<br>框架細節 |
+| ![屋面細節](roof-detail.png)<br>屋面細節 |  |  |
+
+上級索引原代表圖保持原檔；新版彩色渲染請以上表為準。新色適用範圍及試印限制如下。下方舊版本導覽及資料只為歷史保存，舊面數、舊預覽與舊驗證不代表現版；以本章下載與公開版清單為準。
+
+## 2026-11-18 限定更新：左端上梁完整窄側
+
+上述原版文字原樣保留作版本記錄。本輪只將原三角 1107、1110 由中性材 1 改為既有灰白材 0；現在共 12 白面、2980 中性面，仍非全色。原 10 白面與其餘 2990 指派不動。這是同一已辨識上梁的有限材色連續推論，不是照片逐深證實，也不擴及對端或框側、底、背。
+
+詳見 [BEAM-END-CONTINUITY.md](BEAM-END-CONTINUITY.md)、[QA-SUMMARY.json](QA-SUMMARY.json) 及 [公開版清單](COLOR-RELEASE-MANIFEST.json)。新增 SHA 鎖定重建入口 `rebuild_beam_end.py`；原色彩程式沒有覆寫或更新，單跑舊流程仍只得到原 10 白面。
+
+## 歷史版導覽與說明
+
 **局部補色未完成：僅左前凸玻璃盒上梁與兩側框正面10原三角灰白；玻璃屋坡混材牆未完成／非全色。** partial_color_incomplete=true、fully_colored_exterior=false。同項 zhiben-science-engineering／count_delta=0，原主要相連教學群不拆棟，不是全理工院落或2026現況測繪。
 
 | 前斜視 | 後斜視 | 正面 |

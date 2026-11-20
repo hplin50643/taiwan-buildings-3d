@@ -1,15 +1,16 @@
 {
   "blender": "4.3.2",
-  "samples": 32,
+  "scene_unchanged_sha": "bbe8ec74b1619221915967d59a8d7a1bd927039259e59ec578a81c6aec4fbfc4",
   "resolution": [
     1200,
     1200
   ],
+  "samples": 32,
   "files": [
     {
-      "path": "previews/front.png",
-      "bytes": 1662591,
-      "sha256": "cbb72a33d43fae82a17ae1bdada3ef6104cf91551d025643545e5667e2894a5f",
+      "name": "front",
+      "sha256": "d43aeded57f061cc20c62b4256b831473d347539446435b94bca26ecea25ff8e",
+      "bytes": 1664356,
       "camera": [
         125,
         -230,
@@ -21,12 +22,12 @@
         32
       ],
       "ortho_scale": 240,
-      "all_vertices_in_frame": true
+      "allvertices_in_frame": true
     },
     {
-      "path": "previews/rear.png",
-      "bytes": 1709958,
-      "sha256": "f583f622f93095f8b3da14722704d6025da70c40186fe733096adb0b13b14f51",
+      "name": "rear",
+      "sha256": "e51b87960fff421204c1fb39222bca6f076455ff2344aaa7e9ec727cf2d3e304",
+      "bytes": 1709974,
       "camera": [
         -125,
         230,
@@ -38,12 +39,12 @@
         32
       ],
       "ortho_scale": 240,
-      "all_vertices_in_frame": true
+      "allvertices_in_frame": true
     },
     {
-      "path": "previews/elevation.png",
-      "bytes": 1522454,
-      "sha256": "40d24727aaf677d4ae6c0d94394eb99127257d44a81ee6271b721025e80f37f2",
+      "name": "elevation",
+      "sha256": "d7e41684e45524a83169a34608b00714843436e6539cf28083b8f6cb5640e95b",
+      "bytes": 1522033,
       "camera": [
         0,
         -300,
@@ -55,12 +56,12 @@
         32
       ],
       "ortho_scale": 240,
-      "all_vertices_in_frame": true
+      "allvertices_in_frame": true
     },
     {
-      "path": "previews/side.png",
-      "bytes": 1516812,
-      "sha256": "01d3e1f4e4b14194e9504ef43a05a8bdffda6e1c3f3f0a0a48ce49525e65eb91",
+      "name": "side",
+      "sha256": "25f9f71783a78e9d8b964ce7b239c7323f521fd905dea29d9f771b705f8de364",
+      "bytes": 1516884,
       "camera": [
         300,
         0,
@@ -72,12 +73,12 @@
         32
       ],
       "ortho_scale": 240,
-      "all_vertices_in_frame": true
+      "allvertices_in_frame": true
     },
     {
-      "path": "previews/top.png",
-      "bytes": 1668489,
-      "sha256": "9c23f6b432961c759cc9fb970d10295150fbceb3cfbe8bfe494b947b58a971da",
+      "name": "top",
+      "sha256": "5c9018ce35ac8a2f3be90c2621d3ef7c4963ec04d70ce9ea94beba06646e7be8",
+      "bytes": 1668738,
       "camera": [
         0,
         0,
@@ -89,7 +90,7 @@
         0
       ],
       "ortho_scale": 240,
-      "all_vertices_in_frame": true
+      "allvertices_in_frame": true
     }
   ]
 }

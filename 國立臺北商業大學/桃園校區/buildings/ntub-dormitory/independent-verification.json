@@ -1,0 +1,101 @@
+{
+  "status": "PASS_WITH_DISCLOSED_INSPECTION_EXCLUSIONS",
+  "reconstruction_not_restoration": true,
+  "scene_allowed_difference_count": 59,
+  "camera_world_existing_materials_nodes_and_remaining_serialized_RNA": "EXACT",
+  "geometry_XML_and_lib3mf_vs_original_STL": "EXACT",
+  "strict_lib3mf_warnings": 0,
+  "SDK_property_id_mapping": "XML 0/1 maps to SDK 1/2",
+  "original_STL": "BYTE_IDENTICAL",
+  "OBJ": "Absent in baseline and public; not fabricated",
+  "new_linear_color_matches_sRGB": "#B8663E",
+  "independent_analytic_hip_planes": [
+    {
+      "axis": 0,
+      "sign": -1,
+      "support_plane_normal": [
+        -1.0,
+        0.0,
+        4.251428571428572
+      ],
+      "ids": [
+        2329,
+        2334,
+        2340,
+        2341,
+        2342,
+        2348,
+        2349,
+        2353,
+        2354
+      ],
+      "area": 1595.560017680195
+    },
+    {
+      "axis": 0,
+      "sign": 1,
+      "support_plane_normal": [
+        1.0,
+        0.0,
+        4.251428571428572
+      ],
+      "ids": [
+        2332,
+        2336,
+        2337,
+        2338,
+        2339,
+        2343,
+        2345,
+        2346,
+        2347,
+        2351,
+        2352,
+        2359
+      ],
+      "area": 1476.9104166280865
+    },
+    {
+      "axis": 1,
+      "sign": -1,
+      "support_plane_normal": [
+        0.0,
+        -1.0,
+        2.262857142857143
+      ],
+      "ids": [
+        2330,
+        2331
+      ],
+      "area": 140.42864447361924
+    },
+    {
+      "axis": 1,
+      "sign": 1,
+      "support_plane_normal": [
+        0.0,
+        1.0,
+        2.262857142857143
+      ],
+      "ids": [
+        2355,
+        2356,
+        2357,
+        2358
+      ],
+      "area": 26.64922563541493
+    }
+  ],
+  "domain": "Four analytic supporting planes recover exactly27 original exposed faces of mirrored geographic east main hip. Entire selection edge-connected. Flat top, eaves, service boxes and other roofs excluded; original occlusions retained.",
+  "inspection_exclusions": [
+    "UvSculpt tool settings cause Blender4.3.2 segmentation fault when reading dangling brush/cavity pointers, so uv_sculpt skipped.",
+    "Runtime depsgraph, update flags, users/session IDs excluded; enum sets sorted and mesh attributes compared by name.",
+    "No physical print or GUI slicer test."
+  ],
+  "sha256": {
+    "baseline/scene.blend": "267cfe2af5bae092c063f565df2814f1737d007568f4726239d6effb026a3507",
+    "public/scene.blend": "74d887aaa31718df7b89c5f128d4439708b718a926f26206b32473208dd93454",
+    "public/model-colored.3mf": "db130e0ce99c29b3b6f27af348259cd36087b7a3229fd33d1b721725b4c36e32",
+    "domain.json": "d4209d27d8873ec78a3fcf9f3a108dce2ac49eef7f634ebcaabc5589d38533df"
+  }
+}

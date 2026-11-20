@@ -1,0 +1,57 @@
+{
+  "status": "PASS_WITH_DISCLOSED_INSPECTION_EXCLUSIONS",
+  "reconstruction_not_restoration": true,
+  "scene_difference_count": 19,
+  "existing_materials_world_lights_camera_hidden_backdrop_and_historical_font": "EXACT",
+  "all_other_serialized_RNA": "EXACT",
+  "original_STL_OBJ": "BYTE_IDENTICAL",
+  "geometry_XML_and_lib3mf_vs_original_STL": "EXACT",
+  "strict_lib3mf_warnings": 0,
+  "material_change": "only six existing1 to existing0; old208 gray preserved, final214; no new material or fakeuser change",
+  "rectangle_groups": [
+    {
+      "z": 24,
+      "ids": [
+        637,
+        652
+      ],
+      "area": 60.80001449584961,
+      "rectangle_symmetric_difference_mm2": 1.4495849555373752e-05,
+      "unselected_coplanar_edge_neighbors": [],
+      "normal": "-Z"
+    },
+    {
+      "z": 38,
+      "ids": [
+        759,
+        774
+      ],
+      "area": 60.80001449584961,
+      "rectangle_symmetric_difference_mm2": 1.4495849555373752e-05,
+      "unselected_coplanar_edge_neighbors": [],
+      "normal": "-Z"
+    },
+    {
+      "z": 52,
+      "ids": [
+        881,
+        896
+      ],
+      "area": 60.80001449584961,
+      "rectangle_symmetric_difference_mm2": 1.4495849555373752e-05,
+      "unselected_coplanar_edge_neighbors": [],
+      "normal": "-Z"
+    }
+  ],
+  "inspection_exclusions": [
+    "UvSculpt tool settings skipped due to Blender4.3.2 getter segmentation faults.",
+    "Runtime depsgraph, update flags, users/session IDs excluded; enum sets sorted; attributes keyed by name.",
+    "No physical print or GUI slicer test."
+  ],
+  "sha256": {
+    "baseline/scene.blend": "3184d36da716d9133c66e9f89039320fd45b054e94ec00c527c0b6f5c68dcd3c",
+    "public/scene.blend": "5bfaabe957f73d024bd23824646131996ff1dd33a27b272bacc138e6b46c592e",
+    "public/model-colored.3mf": "40835d77bb2e2d31d1f2d0f549aa9a15af3ef845e28f5e4026ee2278ff27ae1d",
+    "domain.json": "231de5d21d5cb5f5f3339a3d2e987f34ed672ed0cb63af3585b8f7e60f8f9c0f"
+  }
+}

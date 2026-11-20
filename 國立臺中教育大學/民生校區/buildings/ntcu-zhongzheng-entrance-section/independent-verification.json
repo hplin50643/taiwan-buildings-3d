@@ -1,0 +1,65 @@
+{
+  "status": "PASS_WITH_DISCLOSED_INSPECTION_EXCLUSIONS",
+  "reconstruction_not_restoration": true,
+  "scene_allowed_difference_count": 21,
+  "camera_world_existing_materials_nodes_and_remaining_serialized_RNA": "EXACT",
+  "geometry_XML_and_lib3mf_vs_original_STL": "EXACT",
+  "strict_lib3mf_warnings": 0,
+  "SDK_property_id_mapping": "XML 0/1 maps to SDK 1/2",
+  "original_STL_OBJ": "BYTE_IDENTICAL",
+  "new_linear_color_matches_sRGB": "#A8734B",
+  "rectangle_groups": [
+    {
+      "x": -20.9,
+      "ids": [
+        297,
+        302
+      ],
+      "unselected_coplanar_edge_neighbors": [],
+      "area": 286.20008087158203,
+      "rectangle_symmetric_difference_mm2": 8.087158210656753e-05
+    },
+    {
+      "x": -17.1,
+      "ids": [
+        299,
+        305
+      ],
+      "unselected_coplanar_edge_neighbors": [],
+      "area": 286.20008087158203,
+      "rectangle_symmetric_difference_mm2": 8.087158210656753e-05
+    },
+    {
+      "x": 17.1,
+      "ids": [
+        313,
+        318
+      ],
+      "unselected_coplanar_edge_neighbors": [],
+      "area": 286.20008087158203,
+      "rectangle_symmetric_difference_mm2": 8.087158210656753e-05
+    },
+    {
+      "x": 20.9,
+      "ids": [
+        315,
+        321
+      ],
+      "unselected_coplanar_edge_neighbors": [],
+      "area": 286.20008087158203,
+      "rectangle_symmetric_difference_mm2": 8.087158210656753e-05
+    }
+  ],
+  "domain": "Four complete 53x5.4mm rectangles; all coplanar triangles with positive-area rectangle intersection are exactly the 8 selected faces. No omitted overlap.",
+  "inspection_exclusions": [
+    "UvSculpt tool settings cause Blender4.3.2 segmentation fault when reading dangling brush/cavity pointers, so uv_sculpt skipped.",
+    "Runtime depsgraph, update flags, users/session IDs excluded; enum sets sorted and mesh attributes compared by name.",
+    "No physical print or GUI slicer test."
+  ],
+  "sha256": {
+    "baseline/scene.blend": "030262c82e4d72b3146bcf08d38476d5a3958cb98b84e27f7a06db39ed3bde18",
+    "public/scene.blend": "4edc0e5587b69fe14c788e9be340f2df83ecf5d9bd8f447498a13911d2c36702",
+    "public/model-colored.3mf": "711791ead7ac36bc229553b6cbe2057e23da0ba0112679546372ff087692b379",
+    "domain.json": "4e1286ac773c761d3dee5bc4ee57e822af72364829b94d0f1192fe3df364ec97"
+  }
+}
