@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| 正面與來源支持區域<br>[![正面](../../../docs/display/catalog/f2e4067173c0442c2c178177-640.webp)](appearance/previews/front.png) | 未見外側背面中性<br>[![背面](../../../docs/display/catalog/2b07ab106cc89443d8434ae2-640.webp)](appearance/previews/rear.png) |  |
 
 ## 八材質外觀
 
