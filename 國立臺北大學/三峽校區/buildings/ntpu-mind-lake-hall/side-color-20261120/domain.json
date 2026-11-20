@@ -1,0 +1,215 @@
+{
+  "status": "BOUNDED_SOURCE_AND_DOMAIN_VERIFIED",
+  "original_triangle_count": 2444,
+  "original_stl_sha256": "00d317de3628ecc8922c0da391d53adfa0a40e9703e9daa5c7fdda2b21cc2136",
+  "original_appearance_blend_sha256": "747330fdddf6d57c13ab6f4953c7dae1a0a53087ac70074e30966feda0931cc4",
+  "original_appearance_3mf_sha256": "56e681862bf60ccfac7e0a051fba994a7f9992386c159cec610f683d8cb8ee04",
+  "source_materials_count": 3,
+  "face_selector": "all vertices lie on the 12 builder-derived +Y planes, full outward vertical risers only; all exact +Y triangles on each plane independently identified",
+  "ids": [
+    2224,
+    2225,
+    2233,
+    2237,
+    2247,
+    2249,
+    2258,
+    2260,
+    2270,
+    2272,
+    2283,
+    2289,
+    2300,
+    2303,
+    2316,
+    2318,
+    2330,
+    2332,
+    2334,
+    2335,
+    2336,
+    2341,
+    2350,
+    2351,
+    2355,
+    2357,
+    2359,
+    2360,
+    2373,
+    2374,
+    2389,
+    2391
+  ],
+  "area_mm2": 177.07004125594904,
+  "groups": [
+    {
+      "step_low_to_high": 1,
+      "y_plane_mm": 43.05,
+      "nominal_xz_wkt": "POLYGON ((68.8 2.5, 68.8 3.4, 53.8 3.4, 53.8 2.5, 68.8 2.5))",
+      "triangle_ids": [
+        2224,
+        2225
+      ],
+      "area_mm2": 13.500004863739377,
+      "symmetric_difference_from_analytic_riser_mm2": 4.8637393792461125e-06
+    },
+    {
+      "step_low_to_high": 2,
+      "y_plane_mm": 41.9,
+      "nominal_xz_wkt": "POLYGON ((68.8 3.4, 68.8 4.4, 53.8 4.4, 53.8 3.4, 68.8 3.4))",
+      "triangle_ids": [
+        2233,
+        2237
+      ],
+      "area_mm2": 15.000003814697266,
+      "symmetric_difference_from_analytic_riser_mm2": 6.675720210846947e-06
+    },
+    {
+      "step_low_to_high": 3,
+      "y_plane_mm": 40.75,
+      "nominal_xz_wkt": "POLYGON ((68.8 4.4, 68.8 5.4, 53.8 5.4, 53.8 4.4, 68.8 4.4))",
+      "triangle_ids": [
+        2247,
+        2249
+      ],
+      "area_mm2": 15.000003814697266,
+      "symmetric_difference_from_analytic_riser_mm2": 6.675720204185609e-06
+    },
+    {
+      "step_low_to_high": 4,
+      "y_plane_mm": 39.599999999999994,
+      "nominal_xz_wkt": "POLYGON ((68.8 5.4, 68.8 6.4, 53.8 6.4, 53.8 5.4, 68.8 5.4))",
+      "triangle_ids": [
+        2258,
+        2260
+      ],
+      "area_mm2": 15.000003814697266,
+      "symmetric_difference_from_analytic_riser_mm2": 6.675720204185609e-06
+    },
+    {
+      "step_low_to_high": 5,
+      "y_plane_mm": 38.449999999999996,
+      "nominal_xz_wkt": "POLYGON ((68.8 6.4, 68.8 7.4, 53.8 7.4, 53.8 6.4, 68.8 6.4))",
+      "triangle_ids": [
+        2270,
+        2272
+      ],
+      "area_mm2": 15.000003814697266,
+      "symmetric_difference_from_analytic_riser_mm2": 6.675720204185609e-06
+    },
+    {
+      "step_low_to_high": 6,
+      "y_plane_mm": 37.3,
+      "nominal_xz_wkt": "POLYGON ((68.8 7.4, 68.8 8.4, 53.8 8.4, 53.8 7.4, 68.8 7.4))",
+      "triangle_ids": [
+        2283,
+        2289
+      ],
+      "area_mm2": 14.999996662138074,
+      "symmetric_difference_from_analytic_riser_mm2": 1.0967252819682471e-05
+    },
+    {
+      "step_low_to_high": 7,
+      "y_plane_mm": 36.15,
+      "nominal_xz_wkt": "POLYGON ((68.8 8.4, 68.8 9.4, 53.8 9.4, 53.8 8.4, 68.8 8.4))",
+      "triangle_ids": [
+        2300,
+        2303
+      ],
+      "area_mm2": 15.000003814697266,
+      "symmetric_difference_from_analytic_riser_mm2": 1.525878907315814e-05
+    },
+    {
+      "step_low_to_high": 8,
+      "y_plane_mm": 35.0,
+      "nominal_xz_wkt": "POLYGON ((68.8 9.4, 68.8 10.4, 53.8 10.4, 53.8 9.4, 68.8 9.4))",
+      "triangle_ids": [
+        2316,
+        2318
+      ],
+      "area_mm2": 15.000003814697266,
+      "symmetric_difference_from_analytic_riser_mm2": 1.525878907315814e-05
+    },
+    {
+      "step_low_to_high": 9,
+      "y_plane_mm": 33.849999999999994,
+      "nominal_xz_wkt": "POLYGON ((68.8 11.4, 68.8 10.4, 53.8 10.4, 53.8 11.4, 60.65 11.4, 60.65 10.6, 61.95 10.6, 61.95 11.4, 68.8 11.4))",
+      "triangle_ids": [
+        2330,
+        2332,
+        2334,
+        2335,
+        2336,
+        2341
+      ],
+      "area_mm2": 13.960005416869535,
+      "symmetric_difference_from_analytic_riser_mm2": 1.7089842013291446e-05
+    },
+    {
+      "step_low_to_high": 10,
+      "y_plane_mm": 32.699999999999996,
+      "nominal_xz_wkt": "POLYGON ((53.8 11.4, 53.8 12.4, 68.8 12.4, 68.8 11.4, 61.95 11.4, 61.95 11.7, 60.65 11.7, 60.65 11.4, 53.8 11.4))",
+      "triangle_ids": [
+        2350,
+        2351,
+        2355,
+        2357,
+        2359,
+        2360
+      ],
+      "area_mm2": 14.610003795623925,
+      "symmetric_difference_from_analytic_riser_mm2": 1.569747911103647e-05
+    },
+    {
+      "step_low_to_high": 11,
+      "y_plane_mm": 31.549999999999997,
+      "nominal_xz_wkt": "POLYGON ((68.8 12.4, 68.8 13.4, 53.8 13.4, 53.8 12.4, 68.8 12.4))",
+      "triangle_ids": [
+        2373,
+        2374
+      ],
+      "area_mm2": 15.000003814697266,
+      "symmetric_difference_from_analytic_riser_mm2": 1.525878907315814e-05
+    },
+    {
+      "step_low_to_high": 12,
+      "y_plane_mm": 30.4,
+      "nominal_xz_wkt": "POLYGON ((68.8 13.4, 68.8 14.4, 53.8 14.4, 53.8 13.4, 68.8 13.4))",
+      "triangle_ids": [
+        2389,
+        2391
+      ],
+      "area_mm2": 15.000003814697266,
+      "symmetric_difference_from_analytic_riser_mm2": 1.525878907315814e-05
+    }
+  ],
+  "old_slot": 0,
+  "new_slot": 2,
+  "material_policy": "Reuse original pale-grey slot #B8BCB5 without editing its name, definition or existing 36 column-face assignments. The name denotes its previous column use, not equality of actual installation materials. No new palette color.",
+  "excluded": [
+    "stair treads, planter holes, center dividing feature, railings, base, and sidewalls",
+    "all existing confirmed roof and column colors",
+    "the historical withheld domains (soffit, terrace paving/grass, window/mixed walls)"
+  ],
+  "limitations": "完工後照片支撐為光照未知的近似淡灰色族，不是材料種類、測色、每階真實尺寸或2026現況。模型12階為簡化，未假稱原景逐面形狀一致。兩階連續豎面被既有凸分隔條局部切去，僅上色現存外露樓梯踢面。",
+  "sources": [
+    {
+      "page_url": "https://www.fieldscapedesign.com/副本-高峰國小幼稚園",
+      "image_url": "https://static.wixstatic.com/media/8079d1_697b2571f39743b4bd3fe6e76e994104~mv2.jpg",
+      "observation": "設計單位日光完工斜視，東端外梯上下各段豎踢面皆見近淺灰外觀，與偏白踏面、綠穴與黃色欄件清楚分界；實際窄跑梯和寬露台式階梯不等同模型統一簡化階梯。",
+      "sha256": "4162d16b7a4cf770680799f11e234b6cd528eadd950274189a270f6731f95b56"
+    },
+    {
+      "page_url": "https://www.fieldscapedesign.com/副本-高峰國小幼稚園",
+      "image_url": "https://static.wixstatic.com/media/8079d1_d78a51bc0d424e63b10d576e9106c438~mv2.jpg",
+      "observation": "設計單位近軸完工俯視對照可核同一端部外梯及豎踢面／踏面／綠穴分界；不把實物植栽洞投影到模型。",
+      "sha256": "7426e68e39a160e27c49b2bc8e7330b0476630b2f8843eb77d836a6ab16c977d"
+    },
+    {
+      "page_url": "https://new.ntpu.edu.tw/news/62bd4b68836cf05bcfa9be83/心湖會館新建工程",
+      "image_url": "https://cms-carrier.ntpu.edu.tw/uploads/6_d1dbfe264e.jpg",
+      "observation": "校方完工斜照獨立核對同一端部外梯及多段連續階唇，夕陽只供定位，不估色。",
+      "sha256": "1c5983f436fab4b094cda16dcb5ddb01c184d17af74d515eb6e478df09289230"
+    }
+  ]
+}

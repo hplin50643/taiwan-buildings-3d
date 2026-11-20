@@ -1,0 +1,62 @@
+{
+  "status": "PASS_BOUNDED_RISER_MATERIAL_PATCH_ONLY",
+  "all_original_oriented_triangles_and_order": 2444,
+  "all_original_vertices_welded": 1180,
+  "geometry": "Original binary STL, old and new Blender, old and new 3MF XML and lib3mf strict SDK all ordered triangles/coordinates exact. Original triangle normals finite oriented; every edge two opposite incident faces; all vertex links single cycles; one printable closed shell, no degenerate faces.",
+  "positive_volume_mm3": 102618.46896084916,
+  "original_stl_sha256": "00d317de3628ecc8922c0da391d53adfa0a40e9703e9daa5c7fdda2b21cc2136",
+  "3mf": "Strict original and new parsed with zero warnings, every polygon and all three indexed display corners verified; same 3 base material names/RGBA, no lighting or shader model represented in the exchange. Core XML semantic change confined to 96 property attributes of the 32 faces.",
+  "three_material_face_counts_original": [
+    2366,
+    42,
+    36
+  ],
+  "three_material_face_counts_new": [
+    2334,
+    42,
+    68
+  ],
+  "original_42_roof_and_36_column_faces_unchanged": true,
+  "new_faces": [
+    2224,
+    2225,
+    2233,
+    2237,
+    2247,
+    2249,
+    2258,
+    2260,
+    2270,
+    2272,
+    2283,
+    2289,
+    2300,
+    2303,
+    2316,
+    2318,
+    2330,
+    2332,
+    2334,
+    2335,
+    2336,
+    2341,
+    2350,
+    2351,
+    2355,
+    2357,
+    2359,
+    2360,
+    2373,
+    2374,
+    2389,
+    2391
+  ],
+  "full_readable_RNA_delta": "96 scalar changes: only 32 polygon indices, 32 loop triangle indices, 32 backing attribute IDs (0 to existing 2). Camera, path, world, all original objects, node definitions and material slots unchanged.",
+  "RNA_exclusions": "Runtime/update/session IDs, UV Sculpt and brush pointer getters, selection counts and unreadable Blender internals not asserted.",
+  "manufacturing": "Original geometric and thin-feature records retained; no physical printing or new slicer examination.",
+  "sha256": {
+    "scene.blend": "64eeb331947d5fd1517db399ce2fce64e351f44bdc16e5fdb055dca47825d6d9",
+    "model-colored.3mf": "0a13b75bc02d1f8413a29a0e9014f6bdc5ac9864c03582294b3c3efa8eae6b0a",
+    "domain.json": "19233edaeddd04dcb0b0c14071d01f3968d421d942e60dafdfa926fc656347de"
+  }
+}

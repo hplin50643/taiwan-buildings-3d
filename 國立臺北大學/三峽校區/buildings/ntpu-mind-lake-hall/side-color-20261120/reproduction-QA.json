@@ -1,0 +1,57 @@
+{
+  "status": "PASS_TRUE_MATCHED_VIEW_AND_ISOLATED_REBUILD",
+  "byte_exact_isolated_PNG_3MF_and_framing_SHA256": {
+    "before-end-overview.png": "733d47be10a34f104e9063e3b17360a1dba27c61444a519eb382f1dd9f7017ad",
+    "after-end-overview.png": "0bb903bbf7e898a3336a9393f1ca8c6a44402305f5f6a0b182b5a206edf7bf4e",
+    "before-stair-riser-detail.png": "ef9b6a3c9334a1cbb58abe0423eb68cc7f3412f5ce1552f02fc47ceef38eab10",
+    "after-stair-riser-detail.png": "f167c29f3d18e929bb2c906b30e8d673d309ce896d6dba464371d7253f76379b",
+    "model-colored.3mf": "0a13b75bc02d1f8413a29a0e9014f6bdc5ac9864c03582294b3c3efa8eae6b0a",
+    "framing-QA.json": "47205ef56ceefc357e416c501edb921aa101b3b7cd37524b17ffb7dcd2ff1251"
+  },
+  "isolated_new_saved_blender_RNA_equal": true,
+  "RNA_method_scope": "Comparison of captured human-readable Blender scene state, not byte comparison; runtime exclusions as in verification.json.",
+  "visual_review": "All four 1200x820 matched views inspected; overview entire original model and base in frame, stair detail intentionally cropped and all 12 target faces in view. Only targeted risers assigned pale-grey. Treads, central protrusion, walls, adjacent windows, roof, and base retain old material. Temporary Workbench flat light in detail improves small differences; saved scene still original renderer/camera/world. No text and no source photographs.",
+  "original_pngs_locked": {
+    "appearance/previews/elevation.png": {
+      "git_blob_sha1": "8994054e4e93c0575d64bc51d9034a058b47e3dc",
+      "sha256": "72486555a9bf8d83d3f4504927d7f0801d67d61adbbfe52603c7e40b600117bf",
+      "bytes": 1516975
+    },
+    "appearance/previews/front.png": {
+      "git_blob_sha1": "1e8b0241914985fc6cc1bbd59e9aa9ea6ea35ebf",
+      "sha256": "dd0422555969c9f84ade06aeaf398d90da2c8a88a538d48ef25200ddaaad91a4",
+      "bytes": 1572733
+    },
+    "appearance/previews/rear.png": {
+      "git_blob_sha1": "91c738747da2ba557667db978105ff5625e08160",
+      "sha256": "6b01be1a589cb6801ae94f5eefaac5d62980b00afb83c79e6a461b9c7fead9d3",
+      "bytes": 1570449
+    },
+    "appearance/previews/top.png": {
+      "git_blob_sha1": "f8fdf124a782125cb981ef3e9bd22a4cd430d8c7",
+      "sha256": "6dc2d4e4bcabf46f9f9ad6ca1b991f25b78fb453132735437d531b4bf18c72c6",
+      "bytes": 1635205
+    },
+    "previews/front-rear.png": {
+      "git_blob_sha1": "449c943143b44934a4b5cda894f5f392ef8b0968",
+      "sha256": "c8db30dd7444a6f9e59512db908060e7f78ea9be18bf917738c864b1d6566bea",
+      "bytes": 137823
+    },
+    "previews/front.png": {
+      "git_blob_sha1": "6a82bc097a9789ecd14e68a0617af1833fa426bb",
+      "sha256": "227fa43ce578ba9b7a9e31044baccad2e7086a188af1fdf808e7b6d7cdaa12f0",
+      "bytes": 663088
+    },
+    "previews/rear.png": {
+      "git_blob_sha1": "0a311960932a0fd309f52db60ba1511e5e870a33",
+      "sha256": "fc8c11c85c24de69d8a0833453eeb994ba7f5031d41e61cad150cd6aa95eed1d",
+      "bytes": 650266
+    },
+    "previews/top.png": {
+      "git_blob_sha1": "3475e92f35adf8ef25697275d72bf30f62e74b08",
+      "sha256": "0f0d56f026907d974e678e60ab2565166bb6aeda97de2160ba1d60b9279a5c94",
+      "bytes": 571575
+    }
+  },
+  "final_scene_sha256": "64eeb331947d5fd1517db399ce2fce64e351f44bdc16e5fdb055dca47825d6d9"
+}

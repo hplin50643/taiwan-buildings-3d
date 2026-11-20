@@ -7,6 +7,29 @@
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 來源支持屋坡／混合牆面中性<br>![背面](appearance/previews/rear.png) |  |
 
+## 東端外階補色（2026-11-20）
+
+只補模型東端外階朝外的 **12 道既有豎踢面，共 32 三角**，約 177.070 mm²。沿用原三材版的淡灰色值 **#B8BCB5**，未新增或調整材質，也不推定現場樓梯與亭柱是同一種實體材料。原 42 個屋面、36 個亭柱面、全部 2,444 個三角及原 STL 均不變。新檔獨立保存，原彩色與單色場景、3MF 及原圖不覆寫。
+
+[本次 Blender](side-color-20261120/scene.blend) · [本次三材 3MF](side-color-20261120/model-colored.3mf) · [逐面範圍與來源](side-color-20261120/domain.json)
+
+| 補色前 | 補色後 |
+| :---: | :---: |
+| ![補色前端部總覽](side-color-20261120/before-end-overview.png) | ![補色後端部總覽](side-color-20261120/after-end-overview.png) |
+| 同角度，保留原色與完整底座。 | 只變更外階豎踢面。 |
+| ![補色前豎踢面](side-color-20261120/before-stair-riser-detail.png) | ![補色後豎踢面](side-color-20261120/after-stair-riser-detail.png) |
+| 局部裁切，同樣平光便於比較。 | 淡灰只覆豎踢面，水平踏面、中央凸條及鄰面維持中性。 |
+
+[設計單位完工實照](https://www.fieldscapedesign.com/副本-高峰國小幼稚園)的日照斜視及樓梯近軸俯視可辨端部連續淡灰踢面；[校方完工紀錄](https://new.ntpu.edu.tw/news/62bd4b68836cf05bcfa9be83/心湖會館新建工程)的暖色斜照只用於定位。模型的 12 道階梯屬前版幾何近似，並非現場分段、植栽洞與窄樓梯的一一對應。兩處被凸條扣去的原區塊未補；踏面、植栽、欄件、側牆與舊版未分界的混合材域不延伸。色值未校準，不宣稱窗牆已完成、原施工色票或 2026 現況。照片不隨包。
+
+[逐面、Blender 及 3MF 驗證](side-color-20261120/verification.json) · [重建與對照圖驗證](side-color-20261120/reproduction-QA.json) · [本次 SHA256SUMS](side-color-20261120/SHA256SUMS)。新檢查圖採同鏡頭，存檔仍維持原相機、燈光與場景設定。原列印限制照舊，未做新切片及實體試印。
+
+新版重建從套件根目錄執行：
+
+    python side-color-20261120/rebuild_exchange.py
+    blender -b appearance/scene.blend -t 2 -P side-color-20261120/apply_side_color.py -- --qa-renders
+
+
 ## 3 材質外觀版（2026-10-21）
 
 
