@@ -4,6 +4,6 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面：兩翼及下沉庭院<br>![正面](buildings/ctust-tianji/appearance/front.png) |  |  |
+| 正面：兩翼及下沉庭院<br>![正面](../../docs/display/catalog/7eb4c9ca4b98929f27e70548-640.webp) |  |  |
 
 [模型與列印限制](buildings/ctust-tianji/README.md) · [STL](buildings/ctust-tianji/model.stl) · [來源](buildings/ctust-tianji/sources.json)

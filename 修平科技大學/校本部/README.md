@@ -12,7 +12,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/hust-campus-bus-shelter/previews/front.png" alt="修平科技大學 校門候車亭｜主要亭體彩色模型：實際模型預覽" width="220">](buildings/hust-campus-bus-shelter/README.md)<br>**[修平科技大學 校門候車亭｜主要亭體彩色模型](buildings/hust-campus-bus-shelter/README.md)** |  |  |
+| [<img src="../../docs/display/catalog/530cbb8b1bb10a1cd6ab6f57-640.webp" alt="修平科技大學 校門候車亭｜主要亭體彩色模型：實際模型預覽" width="220">](buildings/hust-campus-bus-shelter/README.md)<br>**[修平科技大學 校門候車亭｜主要亭體彩色模型](buildings/hust-campus-bus-shelter/README.md)** |  |  |
 
 ## 既有說明與更新紀錄
 

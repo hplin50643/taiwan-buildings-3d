@@ -4,7 +4,7 @@
 
 | 中央局部彩色外觀 |  |  |
 |---|---|---|
-| [![七柱三門與弧簷](buildings/iktcds-curved-entrance-section/previews/front.png)](buildings/iktcds-curved-entrance-section/README.md) |  |  |
+| [![七柱三門與弧簷](../../docs/display/catalog/354711db2458ccb1a15dc1e0-640.webp)](buildings/iktcds-curved-entrance-section/README.md) |  |  |
 
 <details>
 <summary>教學樓曲線列柱入口中央局部：下載與限制</summary>

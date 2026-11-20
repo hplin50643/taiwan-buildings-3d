@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![正面](校本部/buildings/tut-library-information-2002/previews/appearance-front.png)](校本部/buildings/tut-library-information-2002/README.md)<br>**[台南應用科技大學｜圖書資訊大樓（跨年有界近似）](校本部/buildings/tut-library-information-2002/README.md)**<br>同件東南正面 |  |  |
+| [![正面](../docs/display/catalog/19bdd03a275f9e9519a6d036-640.webp)](校本部/buildings/tut-library-information-2002/README.md)<br>**[台南應用科技大學｜圖書資訊大樓（跨年有界近似）](校本部/buildings/tut-library-information-2002/README.md)**<br>同件東南正面 |  |  |
 
 [模型、來源與QA](校本部/buildings/tut-library-information-2002/README.md)
 

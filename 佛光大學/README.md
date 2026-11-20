@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![](礁溪校區/buildings/fgu-huaien-hall/appearance/previews/front.png)](礁溪校區/buildings/fgu-huaien-hall/README.md)<br>**[懷恩館｜主體外觀近似／限域配色](礁溪校區/buildings/fgu-huaien-hall/README.md)** |  |  |
+| [![](../docs/display/catalog/d62869f2454d8744d685f02b-640.webp)](礁溪校區/buildings/fgu-huaien-hall/README.md)<br>**[懷恩館｜主體外觀近似／限域配色](礁溪校區/buildings/fgu-huaien-hall/README.md)** |  |  |
 
 - 待續建物
 

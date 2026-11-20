@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![現代美術館正面](霧峰校本部/buildings/asia-modern-museum/preview.png)](霧峰校本部/buildings/asia-modern-museum/README.md)<br>**[亞洲大學附屬現代美術館](霧峰校本部/buildings/asia-modern-museum/)**<br>[局部材色3MF](霧峰校本部/buildings/asia-modern-museum/appearance.3mf) · [範圍與限制](霧峰校本部/buildings/asia-modern-museum/README.md) | [![行政大樓暨圖書館：歷史資料外觀近似](霧峰校本部/buildings/asia-administration-library/previews/front.png)](霧峰校本部/buildings/asia-administration-library/README.md)<br>**[行政大樓暨圖書館｜歷史資料綜合外觀近似版](霧峰校本部/buildings/asia-administration-library/README.md)** |  |
+| [![現代美術館正面](../docs/display/catalog/4f511edebfcaff99bc07563f-640.webp)](霧峰校本部/buildings/asia-modern-museum/README.md)<br>**[亞洲大學附屬現代美術館](霧峰校本部/buildings/asia-modern-museum/)**<br>[局部材色3MF](霧峰校本部/buildings/asia-modern-museum/appearance.3mf) · [範圍與限制](霧峰校本部/buildings/asia-modern-museum/README.md) | [![行政大樓暨圖書館：歷史資料外觀近似](霧峰校本部/buildings/asia-administration-library/previews/front.png)](霧峰校本部/buildings/asia-administration-library/README.md)<br>**[行政大樓暨圖書館｜歷史資料綜合外觀近似版](霧峰校本部/buildings/asia-administration-library/README.md)** |  |
 
 - 其他建物
 - 尚未納入

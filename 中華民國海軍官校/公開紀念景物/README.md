@@ -4,7 +4,7 @@
 
 | 彩色外觀 |  |  |
 |---|---|---|
-| [![九材質紀念鐘樓](buildings/rocna-memorial-bell-tower/previews/front.png)](buildings/rocna-memorial-bell-tower/README.md) |  |  |
+| [![九材質紀念鐘樓](../../docs/display/catalog/c84650473f5e7440697df1ae-640.webp)](buildings/rocna-memorial-bell-tower/README.md) |  |  |
 
 <details>
 <summary>公共紀念鐘樓：下載與限制</summary>
