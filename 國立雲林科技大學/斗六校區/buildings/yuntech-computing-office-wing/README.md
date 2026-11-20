@@ -9,18 +9,18 @@
 國立雲林科技大學／斗六校區。本件為公開來源推估的外觀縮模，不是測繪成果。涵蓋範圍：官方1F平面101–105及2F平面201–205所屬雙層辦公翼、玻璃磚端牆、相鄰入口雨棚與門廳局部；排除三層教室長翼、國際會議廳及其餘連廊。
 
 
-[頂視圖](previews/top.png) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.png)
+[頂視圖](previews/top.webp) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.webp)
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 頂視圖<br>![頂視圖](previews/top.png) | 正面大圖<br>![正面大圖](previews/front.png) | 背面大圖<br>![背面大圖](previews/rear.png) |
+| 頂視圖<br>![頂視圖](previews/top.webp) | 正面大圖<br>![正面大圖](previews/front.png) | 背面大圖<br>![背面大圖](previews/rear.webp) |
 
 ## 下載與重建
 - [可列印模型 model.stl](model.stl)：單位毫米，含底座最大邊不超過150毫米，本件尺寸約 150 × 82.7 × 36.2 毫米。
 - [可編輯場景 scene.blend](scene.blend)：直接匯入交付STL的可編輯網格；[參數建模腳本](build_model.py)是幾何重建來源。
 - [依賴版本](requirements.txt) · [來源及年代](sources.json) · [逐檔SHA256](SHA256SUMS)
 
-Python 3.12安裝 requirements.txt 後執行 python build_model.py。Blender 4.3.2執行 blender -b -t 2 -P render_preview.py，會由實際STL生成正、背、頂視圖並保存scene.blend。各建物獨立縮放，不能直接視為共同校園比例。
+Python 3.12安裝 requirements.txt 後執行 python build_model.py。只重建背面、頂視與正立面無損 WebP 時，請使用 Blender 4.3.2 與 Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py`。工具從交付 STL 渲染，PNG 與 Blender 場景先存於暫存目錄，不覆寫 checkout 內的正面圖或場景。若需原始 PNG 及 Blender 場景，請在獨立可寫副本執行 `blender -b -t 2 -P render_preview.py`；現行正背並排圖不變。各建物獨立縮放，不能直接視為共同校園比例。
 
 ## 保留的外觀
 - 長直辦公立面保留每列12個窄窗與兩端寬窗，共14個主開口；不把玻璃分格當主柱跨。
