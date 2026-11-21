@@ -1,31 +1,25 @@
-# 暨南圖書入口柱廊段｜最高雨庇前緣局部淺灰
+# 暨南國際大學｜圖書資訊暨多功能大樓入口柱廊段
 
-**既有預覽分類色不是實景材質證；其餘未知域尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅最高雨庇前緣完整2面名義淺灰，本件不是新發現單色模型，也非全館完整補色。
+## 模型預覽
 
-| 總覽 | 背側 | 正面 |
-|---|---|---|
-|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
-|![背面](back.png)|![西側](west.png)|![東側](east.png)|
-|![頂面](top.png)|![完整最高前緣](entry-detail.png)|![左端界](facade-detail.png)|
-|![右端界](roof-detail.png)|||
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![最新代表視圖](front-current.webp)<br>代表視角 | ![入口雨庇左側](canopy-return.webp)<br>最新補色細部 | ![背側斜視](rear-current.webp)<br>背側斜視 |
+| ![正面](elevation-current.webp)<br>正面 | ![背面](back-current.webp)<br>背面 | ![西面](west-current.webp)<br>西面 |
+| ![東面](east-current.webp)<br>東面 | ![頂視](top-current.webp)<br>頂視 | |
 
-## 材色範圍
-同 ncnu-library-entrance-segment 原項目，same-item、count_delta=0。國立暨南國際大學埔里校區圖書資訊暨多功能大樓入口雙柱、柱頭、雨庇及鄰接片段，不是整館；平背/截高牆不是實測完整背立面。原2336三角及STL/build_model.py字節不變，20原件無OBJ。
-- 整y=-40.5最高庇前plane恰2三角、單完整連通矩形x±57.5,z88.6..90.9。全3頂點有限域等於整無限面，保Boolean原界，不裁色。
-- 其餘2334面中性，包括舊深凹材：下庇陰影窄帶、混石材/金屬套柱、柱頭玻璃框/燈具、金字牌、窗門反光細框、階踏對比、屋頂側底/背截面。
+[現行彩色 3MF](appearance.3mf) · [現行 Blender](scene.blend) · [原幾何 STL（不含色）](model.stl) · [逐面驗證](verification.json) · [渲染證明](render-proof.json) · [SHA-256](SHA256SUMS)
 
-## 既有預覽轉換
-原scene已有 Warm stone preview only 與 Recess depth emphasis - preview color only 兩種展示材，不能稱原模型真單色，也不能把深凹分類當實景黑玻璃。此版本僅把有據2面淺灰，其餘未知中性，不增加棟數或改幾何。原scene完整另存 ORIGINAL-DEPTH-PREVIEW-scene.blend，原render_preview.py/previews與原README歷史保留；新scene/新十圖是本次來源限定版本。兩版本不是互相證色，舊檔不刪。
+只補原模型最高雨庇左側垂直外緣 2 個完整三角，沿用前緣的淺灰代理色 #CBCBC5；正面原有同色 2 面保持不變，其餘 2,332 面維持原來的未知中性材色。入口柱廊片段，不是整棟圖書館；模型比例非測繪，未試印。
 
-## 來源與日期
-親看兩官日照/入口近照，最高前緣由完整遠照證，近照截頂僅支持身份與排除。照片日期未獨立確認，頁/網址時間非capture，不稱2026現況，不用夜燈取色。原照私人保存、不公開、不作紋理、不建人物；未確認CC或再散布授權，不保證商用。
+[校史光廊日照實拍](https://www.lib.ncnu.edu.tw/ncnu_his/images/imageslider/lib2.jpg) 可見淺灰前緣繞到左端；受遮處只沿同一薄立帶推估材色，不從陰影或夜景採色。照片日期未知，色值非校色結果。下層邊帶、頂底面、另一側、柱頭、窗、屋頂及人工截斷背面維持原狀。未新增幾何、紋理、文字或第三方原照。全部 1,146 頂點、2,336 三角及 STL 位元不變，材色 3MF 不是切片機分色驗證。
 
-## 格式與列印
-[原STL](model.stl) · [逐面材色3MF](appearance.3mf) · [新Blender](scene.blend)
-150mm底座為原示意尺寸非測量比例。物件明名 NCNU Library Entrance Segment partial color，獨立核真slug/館名。STL無色，3MF/Blender逐面分材，不是兩色或四色耗材切片驗證，未實際列印。
+## 固定基準與重建
 
-## 重建與 QA
-原build_model.py → colorize_model.py → export_appearance.py → validate_color.py；Blender render_color.py／verify_color_scene.py。完整隔離Shapely2.1.2精確原build＋color重建、原bytes/全三角multiset、共面均一、閉合正體積、3MF面材、scene重開、十圖1200×900與hash。原README/previews/validation保留歷史，不冒新QA，不刪檔。
+現行三個模型格式可各自開啟，不需下載舊版。若要重建材色，將[基準 Blender](https://github.com/hplin50643/taiwan-buildings-3d/blob/af356113539d418144e9a229b2397482da02f2a3/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-library-entrance-segment/scene.blend)和[基準 3MF](https://github.com/hplin50643/taiwan-buildings-3d/blob/af356113539d418144e9a229b2397482da02f2a3/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-library-entrance-segment/appearance.3mf)放在暫存位置，由此資料夾執行：
 
-## English scope
-Partial only:2 complete highest canopy front fascia triangles pale gray;2334 neutral. Existing two preview/depth materials are not actual-color certification or a newly discovered monochrome item. Former dark recess classifications become unknown-neutral in the new source-bounded variant. Original scene saved unchanged as ORIGINAL-DEPTH-PREVIEW-scene.blend; original renderer/previews/README retained. Original2336 triangles and20 immutable files unchanged;no originalOBJ. Entrance segment not whole library/surveyed back. Capture dates unknown,not2026. Sameitem/count0/no geometrychanges/no filament test.
+```sh
+blender -b /path/to/baseline/scene.blend -t 4 --python-exit-code 1 -P build_canopy_return.py -- /path/to/baseline/appearance.3mf /tmp/ncnu-current
+```
+
+建置工具會核對基準 SHA-256。歷史的[舊刊說明](https://github.com/hplin50643/taiwan-buildings-3d/blob/af356113539d418144e9a229b2397482da02f2a3/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-library-entrance-segment/README.md)、[前版校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/af356113539d418144e9a229b2397482da02f2a3/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-library-entrance-segment/SHA256SUMS)、[原深度展示](https://github.com/hplin50643/taiwan-buildings-3d/blob/af356113539d418144e9a229b2397482da02f2a3/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-library-entrance-segment/ORIGINAL-DEPTH-PREVIEW-README.md)、[原補色驗證](https://github.com/hplin50643/taiwan-buildings-3d/blob/af356113539d418144e9a229b2397482da02f2a3/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-library-entrance-segment/appearance-canopy-return/README.md)均原樣留在固定提交，不是現行模型或圖冊。未重跑早期製造包的整套 QA；[原 STL 驗證](validation.json)及[原截層查核](contour-validity-check.json)只適用於相同 STL。
