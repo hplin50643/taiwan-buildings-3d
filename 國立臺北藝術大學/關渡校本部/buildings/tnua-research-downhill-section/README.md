@@ -4,18 +4,18 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![交付STL正面](previews/front.png) | ![交付STL背面](previews/rear.png) |  |
+| ![交付STL正面](previews/front.png) | ![交付STL背面](previews/rear.webp) |  |
 
 國立臺北藝術大學｜關渡校本部｜自建外觀近似模型
 
 > **局部段，並非全棟。** 研究大樓下坡端塔狀量體與左側前三組短翼；未建完整長翼、其餘連體區、文資書苑完整外廓或關渡美術館。
 
 
-[正立面](previews/elevation.png) · [頂面](previews/top.png)
+[正立面](previews/elevation.webp) · [頂面](previews/top.webp)
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 頂面<br>![頂面](previews/top.png) |  |
+| 正立面<br>![正立面](previews/elevation.webp) | 頂面<br>![頂面](previews/top.webp) |  |
 
 ## 下載與尺寸
 
@@ -43,6 +43,10 @@
 ## 可重建與fail-closed驗證
 
 Python3.12依 requirements.txt 安裝版本後執行 build_model.py；再用Blender4.3.2或相容版本執行 render_preview.py；最後執行 run_all_checks.py。原始輸出若不合格即非零退出，不以修補網格或Polygon隱藏錯誤。
+
+正面 PNG 與學校／校區代表圖保留。背面、正立面與頂面改用 1000 × 800 無損 WebP，RGBA 像素與原 Blender PNG 完全相同。
+用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可重新輸出，不會覆寫交付的 Blender 或正面圖。
+要取得 SHA-256 與原始交付檔完全相同的 PNG，可加 `--archive-png-dir /path/to/output`，並參照[原交付清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/ce07536a436e54513fe41cb38b9417b60cbef7f9/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8C%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E9%97%9C%E6%B8%A1%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/tnua-research-downhill-section/SHA256SUMS)。自動重建會核對三檔原始雜湊後才輸出。
 
 - [原STL、法向繞序、每邊兩面、單殼、頂點連結單環、重建SHA與Blend一致](validation.json)
 - [0.2mm逐層閉合](layer-check.json)：651層，自z=0.071mm起
