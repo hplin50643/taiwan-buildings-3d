@@ -10,7 +10,7 @@
 
 獨立解析確認所有頂點及法向量等於原 ASCII 轉 float32 的結果，三角順序完整保留。[轉換報告](conversion-report.json) 記錄大小、SHA256、尺寸及偏差；[網格檢查](validation.json) 通過有限座標、無退化面、封閉水密、每邊兩面、單連通體、繞序及正體積等檢查。這不等於實際列印測試或完整自交證明；原薄檐、欄柱、雕飾、支撐及近似尺度限制不變。
 
-原 `../model.stl`、Release v1.0.0 附件及舊建模／配色驗證檔保留。原配色腳本硬綁 ASCII 雜湊，**不要用本檔覆蓋 `../model.stl`**。既有 SHA256SUMS、FREEZE-MANIFEST 與舊 QA 仍是原版本的證據，不包含本次新增 compact 目錄。此目錄有自己的 [SHA256SUMS](SHA256SUMS)。
+原 `../model.stl`、Release v1.0.0 附件及舊建模／配色驗證檔保留。原配色腳本硬綁 ASCII 雜湊，**不要用本檔覆蓋 `../model.stl`**。本目錄的[校驗碼](SHA256SUMS)核對二進位版本；上層現行校驗碼包含最新彩色模型及 STL。若需舊色版的歷史記錄，請使用[固定提交中的校驗表](https://github.com/hplin50643/taiwan-buildings-3d/blob/88578077d19c33cb890500fa4267c937bc4668d5/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/dragon-tiger-pagodas/SHA256SUMS)。
 
 可重現：在此目錄執行 `python convert_ascii_to_binary.py`，只讀上層原 ASCII，寫入本目錄二進位 STL；程式會先核原檔 SHA256，再核輸出 SHA256。可另外執行 `python ../validate_model.py model-binary.stl --longest-edge 150 --output validation-rechecked.json`。
 

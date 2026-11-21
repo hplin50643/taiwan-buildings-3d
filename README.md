@@ -69,11 +69,9 @@
 - 先進入地點資料夾，再依該資料夾 README 與個別模型說明操作。原說明中的相對路徑以其所在的地點／模型資料夾為準。
 - 下載 STL 後，請自行使用切片軟體檢查；需要修改幾何或重新渲染時，使用各模型附帶的原始檔與 scene.blend。
 
-### 龍虎塔 STL 另行下載
+### 龍虎塔模型下載
 
-龍虎塔的 STL（36,412,062 bytes）保留在既有 [Release v1.0.0](https://github.com/hplin50643/taiwan-buildings-3d/releases/tag/v1.0.0)，不包含在 GitHub 自動產生的原始碼 ZIP 中。
-
-[下載 dragon_tiger_pagodas_150mm.stl](https://github.com/hplin50643/taiwan-buildings-3d/releases/download/v1.0.0/dragon_tiger_pagodas_150mm.stl)，將檔名改為 model.stl，放入 **臺灣地標/dragon-tiger-pagodas/**，再依該模型說明操作。SHA-256：6e1c338abc56367db05ceb285e223071e96eb950f847d7895347387233de68b7。
+[最新彩色模型及預覽](臺灣地標/dragon-tiger-pagodas/README.md) · [二進位 STL（6.69 MB）](臺灣地標/dragon-tiger-pagodas/compact/model-binary.stl)。如需比對原 ASCII 檔，可從[固定版本附件](https://github.com/hplin50643/taiwan-buildings-3d/releases/download/v1.0.0/dragon_tiger_pagodas_150mm.stl)下載（36,412,062 bytes，SHA-256：6e1c338abc56367db05ceb285e223071e96eb950f847d7895347387233de68b7）。
 
 ## 高中職建築研究模型
 

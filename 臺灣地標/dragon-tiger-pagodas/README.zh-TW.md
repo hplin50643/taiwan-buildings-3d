@@ -1,40 +1,26 @@
-# 龍虎塔｜主要色族局部示意
+# 蓮池潭龍虎塔｜彩色外觀模型
 
-| 正前 | 後方 | 正面 |
-|---|---|---|
-|![正前斜視](preview.png)|![後方斜視](rear.png)|![正面](front.png)|
-|![背面](back.png)|![西側](west.png)|![東側](east.png)|
-|![頂視](top.png)|![龍虎細部](entry-detail.png)|![塔身細部](facade-detail.png)|
-|![瓦坡細部](roof-detail.png)|||
+## 模型預覽
 
-## 材色範圍
+| 正面代表視角 | 由湖面看雙塔側背主瓦坡 | |
+| :---: | :---: | :---: |
+| ![最新版正面斜視](front.webp) | ![最新版雙塔側背主瓦坡](side-rear-roofs.webp) | |
 
-**動物／雕飾／薄檐彩繪未完成。** `partial_color_incomplete=true`、`fully_colored_exterior=false`。僅主要色族局部示意，不計作全面補色或精細修復彩繪完成。
+[彩色 3MF](appearance.3mf) · [彩色 Blender](scene.blend) · [二進位 STL（6.69 MB）](compact/model-binary.stl) · [逐面驗證](verification.json) · [正面渲染驗證](front-render-proof.json) · [現行校驗碼](SHA256SUMS)
 
-同一 `dragon-tiger-pagodas` 原項目（same-item、count_delta=0），**133722 個原三角面、頂點、原 STL 與 build_model.py 位元組不變**。原碼無 OBJ 產物，本次不冒稱有原 OBJ。未切面、未重建龍虎雕刻或改變塔層、欄杆、底座與池景。
+在同一模型的雙塔七層原屋面上，僅將側背主瓦坡 1,680 個既有完整三角面由中性改為原暖橙褐瓦色 `#C98A43`。原正面同材 1,169 面、其餘材色、塔身、窄檐、彩飾、塔尖及龍虎造型均不變。不新增幾何、模型、貼圖或材質，原 STL 的幾何維持不變。
 
-2025-04-13 高雄市政府 MICE 重開報導之日照（影像標示自由時報）支持前／斜前塔身金黃、寬瓦坡橘陶色、短欄白、真正拱凹暗影。文章日不是已證拍攝日，不是精確修復色票；無法取得的另一舊新聞照不作本次證據。
+原版本已核對的前側塔身、寬瓦坡、短欄和拱凹配色保留；暗處、動物、雕飾和薄檐仍有中性未復原面。這是局部材色示意，並非完整復原或實測尺寸。原模型 133,722 個三角面未重建。STL 不含色；二進位版為未減面的 float32 格式轉換。未切片或試印。
 
-### 原面可對應的局部
+## 參考與重建
 
-- 前方五組原十二邊塔面金黃，真正拱凹背面暗灰。
-- 每片屋頂只採最後寬坡的**完整前方五個原拓撲扇區**橘色；薄檐、翹角多色彩飾、頂尖與後坡保持中性。不是逐小三角法向截色，也不是虛構放射條紋。
-- 只有原短欄外側可證面為白；7.4mm 原長柱混合不同實景部位，不能整柱塗白或全紅。
-- 龍虎身體原橢球把主色、白腹及混色界線合在同一連續面，**整個軀幹與臉部保持中性**，不按 XYZ／半球硬畫綠、黃、嘴唇或腳色。
-- 原已存在的虎紋凸管作粗化黑色；不是新貼圖或真實花紋復刻。可辨原牙與龍角以白色族示意，其根部無法一致匹配則中性。龍鱗、臉、鬚、眼、鰭及未知後方細彩未完成。
+[高雄市政府觀光局空拍（存檔）](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Dragon_and_Tiger_Pagodas.jpg) 從湖面向岸取景，可見雙塔背側橙黃主瓦坡和不同色的窄外飾；[高雄旅遊網另一張側向空拍](https://khh.travel/image/37689/?r=1642753143436) 亦可見同樣的區分。[高雄旅遊網景點說明](https://khh.travel/zh-tw/attractions/detail/11/) 確認同一雙塔及其整修。七層未逐面近拍，僅依可見同一連續瓦面延伸，非逐坡色度精測或完整復原。角飾細彩、薄檐與不可對位部分不補色。來源原照未附，也不用作紋理。未實際列印。
 
-分色以原造型函式的參考表面比對每個原三角頂點及中心，距離允差 0.012mm、法向一致性 >0.96；此容差僅數值配對，不代表建築實測精度。未對應面整面中性，不修改幾何使其配色。
+已出版的模型直接使用上方 3MF 或 Blender，不必取回舊檔。若要重建這次原幾何補色，將固定版本的[基準 Blender](https://github.com/hplin50643/taiwan-buildings-3d/blob/88578077d19c33cb890500fa4267c937bc4668d5/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/dragon-tiger-pagodas/scene.blend)及[基準 3MF](https://github.com/hplin50643/taiwan-buildings-3d/blob/88578077d19c33cb890500fa4267c937bc4668d5/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/dragon-tiger-pagodas/appearance.3mf)存於另一個資料夾。腳本會檢查兩個基準檔的精確 SHA-256。以 Blender 4.3.2 在此目錄執行（請換成實際基準與輸出路徑）：
 
-## 使用與重建
+```sh
+blender --disable-autoexec -b /path/to/baseline/scene.blend -t 2 --python-exit-code 1 \
+  -P build_side_rear_roofs.py -- /path/to/baseline/appearance.3mf /tmp/dragon-tiger-side-rear-roofs
+```
 
-`scene.blend` 為實際多材質場景；`appearance.3mf` 使用基本材質標籤。`color-mesh.npz`、`palette.json` 與 `appearance-materials.json` 保留原面索引。STL 本身不含色。原 `previews/` 與 `ORIGINAL-MONOCHROME-README.md` 保留歷程，不是新色版 QA。
-
-安裝 `requirements.txt` 與新增 `color-requirements.txt`，執行 `python colorize_model.py`、`python export_appearance.py`、`python validate_color.py`。分色程式只讀原建模函式定義作表面參考，不輸出新幾何。Blender：`blender -b -t 6 --python-exit-code 1 --python render_color.py`，再用 `verify_color_scene.py` 重開驗證。
-
-**未實際列印**；六種材質不是已配置或驗證的四色列印工程。原粗化雕飾、欄柱及厚度限制不變。
-
-## 來源與權利
-
-來源網址／hash 及版本列於 `COLOR-SOURCE-REGISTER.json`。政府頁公開與圖片署名不等於照片授權開放；未確認 CC 或再散布授權，原照僅私人參照、不隨模型公開、不貼圖、不保證商用。模型原授權不擴張至來源照片。
-
-原碼、ASCII STL（已實讀 release 真實位元組而非 Git LFS placeholder）與原單色場景均私人保留。來源 GO 與原圖獨審並非成品證明；本包另經原三角一致性、3MF、隔離重建、場景重開、十圖與人工視覺 QA，所有未核色面誠實保留中性。
+重建輸出在另一個目錄，供驗證的 PNG 不放在展示區。[前次版本技術說明](https://github.com/hplin50643/taiwan-buildings-3d/blob/88578077d19c33cb890500fa4267c937bc4668d5/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/dragon-tiger-pagodas/README.md)與[前次版本校驗表](https://github.com/hplin50643/taiwan-buildings-3d/blob/88578077d19c33cb890500fa4267c937bc4668d5/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/dragon-tiger-pagodas/SHA256SUMS)可在固定提交查閱；不作為本版校驗表。此目錄原先的 FREEZE-MANIFEST、舊配色 QA、舊渲染與配色程式只記錄前一版；若要查前版請用上方固定提交，不要對現行模型檔執行舊版重建。原 ASCII STL 的固定檔案仍在 [Release v1.0.0](https://github.com/hplin50643/taiwan-buildings-3d/releases/tag/v1.0.0)。
