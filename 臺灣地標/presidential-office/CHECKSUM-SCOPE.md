@@ -1,14 +1,7 @@
-# 校驗版本說明：當前交付補充
+# 校驗版本說明：總統府
 
-本檔為 append-only 發布補充。原凍結模型、幾何、材色、歷史文件與兩份校驗表均未修改。
+[當前校驗表](SHA256SUMS)核對現行模型、預覽、逐面驗證及重建資料。原 STL 幾何沒有變更，最新色範圍以 README 為準，未試印。
 
-- `SHA256SUMS.txt` 是原版歷史校驗表，保留原位元組，不是新增色版的完整校驗入口。下列精確項目不追認為當前檔案通過（NOT_RECERTIFIED）；其餘項目仍照表驗證。
-- 無副檔名的 `SHA256SUMS` 核對其所列的當前檔案，不含自身與 FREEZE，也不宣稱涵蓋這次新增的兩份發布補充。
-- `PUBLICATION-SUPPLEMENT-MANIFEST.json` 記錄全部原凍結公開 payload 與本說明的大小、SHA256、Git blob SHA；它不循環包含自身，其位元組由發布 Git commit 與批次交付 manifest 綁定。
-- 此說明只釐清校驗版本，不提高原來源、幾何、材色、數位 QA 或實體列印可信度。完整限制仍見原 README。
+以下原始歷史紀錄固定於已發布提交，位元組不重寫，也不據此認證本次更新：[前次說明與原附錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/9ba295a80690fd59d7c498e1858bdd7f16c05b9c/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/presidential-office/CHECKSUM-SCOPE.md) · [原單色版校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/9ba295a80690fd59d7c498e1858bdd7f16c05b9c/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/presidential-office/SHA256SUMS.txt) · [前次色版校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/9ba295a80690fd59d7c498e1858bdd7f16c05b9c/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/presidential-office/SHA256SUMS) · [原補充清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/9ba295a80690fd59d7c498e1858bdd7f16c05b9c/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/presidential-office/PUBLICATION-SUPPLEMENT-MANIFEST.json) · [前次凍結紀錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/9ba295a80690fd59d7c498e1858bdd7f16c05b9c/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/presidential-office/FREEZE-MANIFEST.json)。
 
-## 原歷史表中不適用於新色版的精確項目
-
-- `README.md`：舊表 SHA256 `71b65b98b5c24217126727d68b9f761f41c03ed142a078205e6c348432600d06`；當前 SHA256 `aaace2381f3404e7f9eb7403ddee237bc888a0f53b53c8e80e71dfc804a7da7e`。舊項 NOT_RECERTIFIED，當前值由新 `SHA256SUMS` 與交付 manifest 核對。
-
-[返回模型說明](README.md) · [當前檔案校驗表](SHA256SUMS) · [發布補充清單](PUBLICATION-SUPPLEMENT-MANIFEST.json)
+[回現行模型頁](README.md)
