@@ -5,12 +5,16 @@
 
 **局部補色未完成：保留幾何 v2 主網格南短面冠框原 179 面名義灰粉棕磚色，新增正面四根圓柱的 328 個原側面，共 507 面配色；38,391 面維持未知中性。四柱背向面延續色屬合理推定。未定年官照非2026現況；不復原字樣、污斑或光照。色審不追認全幾何或列印QA。** partial_color_incomplete=true、fully_colored_exterior=false。nsysu-library-information/count_delta=0；NSYSU Library Information v2 partial color。
 
+## 模型預覽
+
 | 前斜視 | 後斜視 | 南短面 |
 |---|---|---|
-| ![前斜視](preview.png) | ![後斜視](rear.png) | ![南短面](front.png) |
-| ![北短面](back.png) | ![西長面](west.png) | ![東長面](east.png) |
-| ![屋頂](top.png) | ![完整冠框](entry-detail.png) | ![左冠端](facade-detail.png) |
-| ![右冠端](roof-detail.png) | | |
+| [![前斜視](display/preview.webp)](display/preview.webp) | [![後斜視](display/rear.webp)](display/rear.webp) | [![南短面](display/front.webp)](display/front.webp) |
+| [![北短面](display/back.webp)](display/back.webp) | [![西長面](display/west.webp)](display/west.webp) | [![東長面](display/east.webp)](display/east.webp) |
+| [![屋頂](display/top.webp)](display/top.webp) | [![完整冠框](display/entry-detail.webp)](display/entry-detail.webp) | [![左冠端](display/facade-detail.webp)](display/facade-detail.webp) |
+| [![右冠端](display/roof-detail.webp)](display/roof-detail.webp) | | |
+
+[STL](model.stl) · [材色 3MF](appearance.3mf) · [Blender](scene.blend)
 
 ## 材色範圍
 
@@ -26,7 +30,7 @@
 
 ## 原版本與QA作用域
 
-完整61原件逐byte保original-version/，包含舊root15126模型、現行geometry/v2主38898及其QAclip4876/九舊圖/原3MF/scene/全部參數來源與QA；另原件私存。根新model.stl/build_model.py/params.json/requirements.txt精確複製原geometry/v2版本，無原OBJ不新增聲稱。舊QA只綁原子包，不綁新十圖/scene/3MF，不把舊root與clip算入新主體面數。新scene僅主體，不加隱藏clip或另外建築。PREVIEW-TRANSITION.md記同項局部更新。
+完整61原件逐 byte 保於[歷史 Git 快照](https://github.com/hplin50643/taiwan-buildings-3d/tree/4b0ecb50e7ef37fdf32ae397dc27b2f3391e84d0/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/original-version)，包含舊root15126模型、現行geometry/v2主38898及其QAclip4876/九舊圖/原3MF/scene/全部參數來源與QA；另原件私存。根新model.stl/build_model.py/params.json/requirements.txt精確複製原geometry/v2版本，無原OBJ不新增聲稱。舊QA只綁原子包，不綁新十圖/scene/3MF，不把舊root與clip算入新主體面數。新scene僅主體，不加隱藏clip或另外建築。PREVIEW-TRANSITION.md記同項局部更新。
 
 原獨立展示尺度2mm/圖面m加原底座平移，含底座90×150×103.29mm；非同比例校園、非測繪/BIM/竣工或2026現況。兩短面各3扁弧、兩長面各4分2+2、完整圓柱、單偏心機房皆原樣。3F接點人工中性封閉切口不是真獨立外牆，不延鄰低館或橋。前圓亭/地下室/坡道花台/屋頂細設備未建，不因色審補。
 
@@ -36,7 +40,7 @@
 
 NSYSU Library Information v2 partial color. The original 179 south crown faces retain nominal #A58F82. This update adds 328 side faces of the four entrance-facing cylindrical columns, for 507 colored and 38,391 unknown-neutral faces. All faces are selected from the exact finite original 32-facet cylinder boundaries without changing geometry. Back-facing continuity of the same columns is inferred. Rear columns, caps, glazing and other walls are unchanged. Whole y−66.3 plane equals oneconnected179domain within originalfinite x±33.63/z79.61..97.87; arc andslitBooleanopenings remain. No lettering, stains, photographiclighting or newgeometry.
 
-The target is geometry/v2 main38898, not oldroot15126 or hiddenplanQAclip4876. All61originalfiles remain byte-identical under original-version/ with nestedv2 nineviews andalloldQA. NewrootSTL/build/params are exactv2copies, no originalOBJ. OldQA scopedto originaltree only; newscene containsmainmesh only. Independent2mm/drawingmetre display, oneexistingmainblock,count0.
+The target is geometry/v2 main38898, not oldroot15126 or hiddenplanQAclip4876. All 61 original files remain byte-identical at the [historical Git snapshot](https://github.com/hplin50643/taiwan-buildings-3d/tree/4b0ecb50e7ef37fdf32ae397dc27b2f3391e84d0/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/original-version) with nestedv2 nineviews andalloldQA. NewrootSTL/build/params are exactv2copies, no originalOBJ. OldQA scopedto originaltree only; newscene containsmainmesh only. Independent2mm/drawingmetre display, oneexistingmainblock,count0.
 
 Undatedofficialphoto only; not2026/asbuilt. Commons403image not used,2026originalcitation not newlyread. Originalboundedconnectorcaps, oneoffsetroofmass, material/geometrysimplifications andprintlimitations retained. No globalgeometry/printabilityrecertification or physicalprint. Sourcephotos private,rights unchanged.
 
@@ -57,7 +61,7 @@ Undatedofficialphoto only; not2026/asbuilt. Commons403image not used,2026origina
 
 ### 精確基準重建
 
-固定來源 commit：`8f90ae2478f00cce6832a07de537f7d333f6dbc0`。`source/baseline` 保存已公開的原 STL、NPZ、3MF、Blend、palette、appearance-materials 與 README，wrapper 逐檔核 SHA-256。Blender 4.3.2 內需 numpy。以下由本目錄執行，輸出須為獨立目錄，不可覆寫基準：
+下載並解壓 [完整重建來源 ZIP](rebuild-source.zip)，從解壓目錄執行（Blender 4.3.2；不需網路或私人照片）：
 
 ```
 blender -b -t 1 --python-exit-code 1 -P source/rebuild_crown_return.py -- source/baseline rebuilt
@@ -65,4 +69,4 @@ cp render_crown_return_views.py rebuilt/
 blender -b -t 2 --python-exit-code 1 -P rebuilt/render_crown_return_views.py
 ```
 
-可另下載 `rebuild-source.zip`。重建不依賴私人照片或網路。原與現版都有界，依然不是全外牆完成、竣工／現況證明或實體試印結果。
+壓縮檔內含以 SHA-256 鎖定的七個基準原檔；[原基準樹](https://github.com/hplin50643/taiwan-buildings-3d/tree/5c6d768ecc59e9e25b2b4d8fbacdf0c6e4fcb2fa/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/source/baseline)亦保留。現版 STL 與壓縮檔中的原 V2 STL 逐 byte 相同。原與現版都有界，依然不是全外牆完成、竣工／現況證明或實體試印結果。

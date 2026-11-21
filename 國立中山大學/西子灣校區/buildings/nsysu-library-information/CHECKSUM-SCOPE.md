@@ -1,31 +1,8 @@
-# 2026-11-12 前圓柱局部配色校驗範圍
+# 現版校驗與歷史保存
 
-根 SHA256SUMS 核驗本次候選的當前檔案，FRONT-COLUMN-FREEZE-MANIFEST.json 保存完整凍結清單；兩者不自我循環。舊校驗表、README 與受替換 QA 保留於 qa/front-column-previous/，只供歷史查核，不驗證本次新檔案。原 FREEZE-MANIFEST.json、PUBLICATION-SUPPLEMENT-MANIFEST.json 及 INDEPENDENT-COLOR-VISUAL-QA.json 保留原版本作用域，不視為本次重簽。
+現版請使用 [PUBLIC-MODEL-SHA256SUMS](PUBLIC-MODEL-SHA256SUMS)。十張原 PNG 由 [渲染 QA 清單](qa/render-manifest.json) 逐檔鎖定，留作重放及驗證；公開畫廊的內嵌圖與點開大圖均使用同一份無失真 WebP。
 
-以下保留先前補充原文（如有），只描述先前版本。
-
-# 校驗版本與原檔交付範圍說明
-
-本說明是追加的發布補充，未修改本機原凍結模型、README、舊校驗表或原 FREEZE-MANIFEST.json。此處未修改凍結原件不表示遠端同名根校驗表仍保留舊 bytes；根表新版取代與巢狀表保留的差異詳見下文。原凍結清單不包含本補充。
-
-現行根目錄 SHA256SUMS 僅核驗其明列的當前檔案，不涵蓋其自身、原 FREEZE-MANIFEST.json 或本次補充。PUBLICATION-SUPPLEMENT-MANIFEST.json 另列原公開交付檔與本說明的 bytes、SHA256 及 Git blob SHA；補充清單本身依 Git commit 識別，不自我循環。
-
-材色、年代、模型範圍與原 QA 限制仍依原文件；本說明不補簽列印性、歷史建成狀態或全實景材色認證。
-
-## 原根校驗表已由新版取代
-
-原 README 所稱「所有原件完整保留」是原件留存範圍，不代表本次公開 payload 含全部歷史原 bytes。原根 `SHA256SUMS`（1594 bytes，SHA256 `464ef2b19a8239a2dc4256eff14331a70d2913ea9c00c18af618c89f84273779`，Git blob `811cd53c0558b00855144741ad6a3326184dfa44`）屬舊版本。此次同一路徑交付的是新版校驗表，**不是保留舊表 bytes**。舊表保存在原 Git 歷史與私人完整備份中；本批公開 payload 沒有宣稱包含其完整公開別名。新版表與舊版表的用途及摘要不能互換。
-
-## 不在本批凍結 payload 內的歷史巢狀校驗表
-
-原 `geometry/v2/SHA256SUMS`（3452 bytes，SHA256 `968a3ce736f0bb5de4a95edbf8198cd0dcd8dbab5ca1fcb85ea634d0f278fe29`，Git blob `e6ce9461b90b4f71d1b80ae20cec330485506830`）未列入本批原凍結公開 payload，亦不冒列為本補充清單的交付檔。原 repo 的同一路徑保留原 blob、不刪除，並另有私人完整備份。其歷史表不驗證本批新根目錄材色檔；發布時須另核原路徑 bytes 及其明列目標。這與上節根表被新版取代不同，不能合併宣稱所有原表均同路徑原 bytes。
-
-
-## 歷史 README 移位後的相對導航
-
-`original-version/README.md` 是原根目錄 README 的完整歷史 bytes。第9行的相對導航仍依原根位置，不是移入 original-version 後的有效導航；本次保留原文，不將這兩個舊連結認證為當前正確連結。
-
-- 「返回西子灣校區」原 href `../../README.md`：原位置指校區 README；移位後落到不存在的 buildings/README.md。請改用本說明的[西子灣校區圖鑑](../../README.md)。
-- 「返回全校圖鑑」原 href `../../../README.md`：原位置指中山大學 README；移位後落到校區 README，雖存在但不符「全校」標籤。請改用本說明的[中山大學全校圖鑑](../../../README.md)。
-
-這是兩項明列的歷史導航限制，不豁免其他連結，也不修改原凍結 README。
+- [更新前的現版發布校驗表](https://github.com/hplin50643/taiwan-buildings-3d/blob/5c6d768ecc59e9e25b2b4d8fbacdf0c6e4fcb2fa/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/PUBLIC-MODEL-SHA256SUMS)與[原發布清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/5c6d768ecc59e9e25b2b4d8fbacdf0c6e4fcb2fa/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/MANIFEST.json)仍可逐 byte 核驗。
+- [前版 SHA256SUMS](https://github.com/hplin50643/taiwan-buildings-3d/blob/4b0ecb50e7ef37fdf32ae397dc27b2f3391e84d0/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/SHA256SUMS)只校驗該舊快照（168 筆），不核驗現版；[原版校驗範圍說明](https://github.com/hplin50643/taiwan-buildings-3d/blob/5c6d768ecc59e9e25b2b4d8fbacdf0c6e4fcb2fa/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/CHECKSUM-SCOPE.md)完整保留。
+- [幾何 V2 校驗與檔案](https://github.com/hplin50643/taiwan-buildings-3d/tree/4b0ecb50e7ef37fdf32ae397dc27b2f3391e84d0/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/geometry/v2)與[原始 61 件封存](https://github.com/hplin50643/taiwan-buildings-3d/tree/4b0ecb50e7ef37fdf32ae397dc27b2f3391e84d0/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/original-version)改由不可變快照供下載。
+- [離線重建來源 ZIP](rebuild-source.zip)包含完整七件基準輸入；亦可查閱[發佈時的基準樹](https://github.com/hplin50643/taiwan-buildings-3d/tree/5c6d768ecc59e9e25b2b4d8fbacdf0c6e4fcb2fa/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-library-information/source/baseline)。歷史證據與列印、實景限制不因整併重簽。

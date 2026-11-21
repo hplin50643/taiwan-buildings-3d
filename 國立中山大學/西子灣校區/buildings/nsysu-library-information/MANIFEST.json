@@ -1,6 +1,11 @@
 {
-  "scope": "2026-11-18 verified model, release packaging only; prior QA not rerun. Historical remote checksums untouched and not a current hash list.",
+  "scope": "Latest verified model + active display and offline rebuild; historical checksums remain immutable.",
   "files": [
+    {
+      "file": "CHECKSUM-SCOPE.md",
+      "bytes": 2489,
+      "sha256": "53eea81d179d467083b0b1b401df7d4399f77f219552cfd825e1c8f2531bfb5d"
+    },
     {
       "file": "FRAMING-QA.json",
       "bytes": 1021,
@@ -8,8 +13,13 @@
     },
     {
       "file": "README.md",
-      "bytes": 8848,
-      "sha256": "63307a4d70719a0ff9f36c8436dc05e5a0652c466969b5f5f52941555c68029f"
+      "bytes": 9932,
+      "sha256": "908d2957fdd340fe77725d5fb5f5618be33a8c76d0c7879477e0519ee2857a48"
+    },
+    {
+      "file": "README.zh-TW.md",
+      "bytes": 6526,
+      "sha256": "3b4ad0d1af391245b2604a5cf258d5f1f6358d7399952e1184b852ff9cc35afa"
     },
     {
       "file": "appearance-materials.json",
@@ -37,6 +47,56 @@
       "sha256": "7f198daaffe9b033893d67eabcebbbba3f584400c42ed0dba59dd4722f7a0a3a"
     },
     {
+      "file": "display/back.webp",
+      "bytes": 329030,
+      "sha256": "149682b35a6f606a95dbd79cfc13d88200216d79385891ab516c15749df43965"
+    },
+    {
+      "file": "display/east.webp",
+      "bytes": 498890,
+      "sha256": "f14769c26600c6fa53f7ae9379f7568fa15ae8c2216d260815d3cd8eab374ac5"
+    },
+    {
+      "file": "display/entry-detail.webp",
+      "bytes": 830482,
+      "sha256": "2b0ec00dfe40c5568bd93fc4caaac8e6da5ab0b34362ff1f6a9d98442e208234"
+    },
+    {
+      "file": "display/facade-detail.webp",
+      "bytes": 854770,
+      "sha256": "3b89a40c6f208e8bff41d60c1acfdf93d4ab58e4638e2975982f531a89daf004"
+    },
+    {
+      "file": "display/front.webp",
+      "bytes": 346584,
+      "sha256": "f220bd6c4a1b1514c4687d7d7c48d2b2c27c3db7e3bc10632300bfb2fb9ce09b"
+    },
+    {
+      "file": "display/preview.webp",
+      "bytes": 365588,
+      "sha256": "698d951a42d2d6cf3efd0375fb148b8e7bbc9b2ee1abfd36c8a426a158340114"
+    },
+    {
+      "file": "display/rear.webp",
+      "bytes": 284236,
+      "sha256": "4969ca7e01587e1cfe5ed7ffd12ca16c0836eb5e9172865076ba2a8744eb3fb9"
+    },
+    {
+      "file": "display/roof-detail.webp",
+      "bytes": 863416,
+      "sha256": "1f45570f5b7a58d10f820d69e3a410bd7a8122a8ba0c17dc161b4a840bb4e962"
+    },
+    {
+      "file": "display/top.webp",
+      "bytes": 284292,
+      "sha256": "93223514c9bd57f218c24a8173b1aa238c5b2d7d87b538c7f6c5442d9d923ef2"
+    },
+    {
+      "file": "display/west.webp",
+      "bytes": 508372,
+      "sha256": "3b667ba47457cae0a651867b710db87fdcf534390ba15c79c0c86869714b5d0d"
+    },
+    {
       "file": "east.png",
       "bytes": 1023417,
       "sha256": "5179bb07d4068153fbbbbca0817848edab956626c00adc68334941663937ec6f"
@@ -55,6 +115,21 @@
       "file": "front.png",
       "bytes": 878116,
       "sha256": "ae6d7549086c58a09a61bf8a3fb42e0e1499dc2f9c1391e4fbeb87d0af212aee"
+    },
+    {
+      "file": "geometry/v2/README.md",
+      "bytes": 619,
+      "sha256": "a72d348b00461fc7817f335584a6b436a513899280ab13ffc52d7c78595fe8d4"
+    },
+    {
+      "file": "model.stl",
+      "bytes": 1944984,
+      "sha256": "4fde918dd4060a88e5ed64b03e6a233e8e34d176306fd21f16cbd171e14acb35"
+    },
+    {
+      "file": "original-version/README.md",
+      "bytes": 623,
+      "sha256": "0b0d228767f2c1c1d1e155487494f20f5989bbf4623baede54c8298245725fa8"
     },
     {
       "file": "palette.json",
@@ -120,41 +195,6 @@
       "file": "scene.blend",
       "bytes": 848098,
       "sha256": "dadb1d8f49b311850694a043b8feee5aa8e774100e35803e56f53ff2e6d32e4f"
-    },
-    {
-      "file": "source/baseline/README.md",
-      "bytes": 5510,
-      "sha256": "bda9c8d300195fae09295ec59ff20f9885b5303d896078bfc3c6b734abe6fded"
-    },
-    {
-      "file": "source/baseline/appearance-materials.json",
-      "bytes": 13063,
-      "sha256": "0c73d6157ed2f154fe74281b2e954bf0627d2cb8916f86a0ec2489e13a1bb5e9"
-    },
-    {
-      "file": "source/baseline/appearance.3mf",
-      "bytes": 326636,
-      "sha256": "b6861060d6878aabe7d7ebf650babd4520739708a9dd5039487bb7db3ae37986"
-    },
-    {
-      "file": "source/baseline/color-mesh.npz",
-      "bytes": 221725,
-      "sha256": "0a61097133c46478259ff09e00a630b0e5ac2560a09e848e2b86c51adf556583"
-    },
-    {
-      "file": "source/baseline/model.stl",
-      "bytes": 1944984,
-      "sha256": "4fde918dd4060a88e5ed64b03e6a233e8e34d176306fd21f16cbd171e14acb35"
-    },
-    {
-      "file": "source/baseline/palette.json",
-      "bytes": 181,
-      "sha256": "459d223edf366b9567b6dae0de11d51aa454bacd25d4741c1c1f17c7cf2cc5b5"
-    },
-    {
-      "file": "source/baseline/scene.blend",
-      "bytes": 848749,
-      "sha256": "47c1585d808ee274fffe51886c72b4f01d5516b5615204bf21118ab1aa3a61e4"
     },
     {
       "file": "source/rebuild_crown_return.py",
