@@ -1,15 +1,7 @@
-# 校驗版本說明：當前交付補充
+# 校驗版本說明：國立臺灣史前文化博物館康樂本館
 
-本檔為 append-only 發布補充；原模型、幾何、材色、原凍結資料及兩校驗表均未修改。
+[當前校驗表](SHA256SUMS)只核對現行模型、預覽、逐面核對與重建資料。原 STL 不變，最新補色限右展館屋頂高起量體朝山之廣場的側面，不代表試印或切片驗證。
 
-- `SHA256SUMS.txt` 屬原版歷史表。下列精確舊項對當前色版 NOT_RECERTIFIED，不能視為新檔校驗通過；其餘項仍照表核對。
-- 無副檔名 `SHA256SUMS` 核對所列當前檔案，不含自身與 FREEZE，也未回填本次兩份追加補充。
-- `PUBLICATION-SUPPLEMENT-MANIFEST.json` 綁定全部原凍結公開 payload 與本說明的大小、SHA256、Git blob SHA；不自循環包含自身，其位元組由發布 commit 與外層交付 manifest 綁定。
-- 本補充不提高來源材色、幾何、數位 QA 或實體列印可信度；原限制仍見 README。
+以下為固定版本的歷史文件，不重新計算，也不驗證現行資料：[原單色校驗表](https://github.com/hplin50643/taiwan-buildings-3d/blob/1ecf103e43b3c6cb37ffe3fec7e4a30d6fbe2005/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/prehistory-museum-kangle/SHA256SUMS.txt) · [前次色版校驗表](https://github.com/hplin50643/taiwan-buildings-3d/blob/1ecf103e43b3c6cb37ffe3fec7e4a30d6fbe2005/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/prehistory-museum-kangle/SHA256SUMS) · [原完整校驗範圍](https://github.com/hplin50643/taiwan-buildings-3d/blob/1ecf103e43b3c6cb37ffe3fec7e4a30d6fbe2005/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/prehistory-museum-kangle/CHECKSUM-SCOPE.md) · [右展館側面首次發布資料](https://github.com/hplin50643/taiwan-buildings-3d/blob/1ecf103e43b3c6cb37ffe3fec7e4a30d6fbe2005/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/prehistory-museum-kangle/appearance-monitor-flank/README.md)。
 
-## 精確歷史項
-
-- `scene.blend`：舊 SHA256 `dcfacfc287167ef8da3efb237103ccd0923b7e2a2d9cbb5171ce2025f003744c`；當前 SHA256 `bdf96f150c8419688d0873af1420e201be5014d2e07e1f853ea470d40f68f45c`。原項 NOT_RECERTIFIED，當前值由新表與交付 manifest 核對。
-- `README.md`：舊 SHA256 `453b43492688a20281138e5b517019435f428c97c239316cf3ffc4831810f804`；當前 SHA256 `0d95fa42c0c8c704d825db50331496be01c2363e9db7b4642f09377bca05e63f`。原項 NOT_RECERTIFIED，當前值由新表與交付 manifest 核對。
-
-[返回模型說明](README.md) · [當前校驗表](SHA256SUMS) · [發布補充清單](PUBLICATION-SUPPLEMENT-MANIFEST.json)
+[回現行模型頁](README.md)
