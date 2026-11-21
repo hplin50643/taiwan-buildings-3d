@@ -5,8 +5,8 @@
 
 | 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| ![前](appearance/previews/front.png) | ![左](appearance/previews/left.png) | ![右](appearance/previews/right.png) |
-| ![後](appearance/previews/rear.png) | ![頂](appearance/previews/top.png) |  |
+| [![前](display/front.webp)](display/front.webp) | [![左](display/left.webp)](display/left.webp) | [![右](display/right.webp)](display/right.webp) |
+| [![後](display/rear.webp)](display/rear.webp) | [![頂](display/top.webp)](display/top.webp) |  |
 
 第二批獨立外觀模型；校區：勝利校區。不是全校完成。尺寸含底座：150 × 76 × 34 mm；最長邊150 mm，各件獨立比例。
 
@@ -23,24 +23,12 @@
 
 只建現存未來館前棟，不包含已拆除的中後棟、舊書庫、旺宏館及連接設施，也不宣稱完成整個舊總圖建築群。保留三層玻璃格網、偏左的大樓梯和矩形入口框。窗格用約0.9 mm豎框與0.6 mm橫檔加粗；樓梯為實心階梯，細欄杆改成實心斜條，樓梯底部不鏤空。樓梯遮住的底層窗格省略，避免形成封閉內腔。正面與歷史南北外立面已見，但現況後側及短端缺足夠照片，採簡化實牆；深度、屋頂、窗格數與樓梯步數均為近似。
 
-## 交付與重建
+## 現版交付與離線重建
 
-- `model.stl`：毫米單位，與底座合成的單一實體。最長邊為 150 mm（含底座）；各棟獨立縮放，不適合直接拼成等比例校園。
-- `build_model.py`：完整可攜參數化原始程式，無外部貼圖、私有路徑或參考照片依賴。
-- `scene.blend`：由交付 STL 匯入，只有一個建築網格，可在 Blender 編輯頂點；細部參數請修改 Python 後重建。
-- `previews/front.png`、`rear.png`、`elevation.png`：由實際交付 STL 產生。
-- `validate_model.py`、`validation.json`：可重跑的幾何與重建驗證。
-
-建議 Python 3.12，在虛擬環境執行：
-
-```sh
-python -m pip install -r requirements.txt
-python build_model.py
-blender -b -t 2 -P render_preview.py
-python validate_model.py
-```
-
-已使用 Blender 4.3.2。驗證器在獨立臨時目錄重建 STL 並比較 SHA-256，讀取 Blender 場景的網格後比較三角形幾何。它檢查原始二進位 STL 儲存法線、面積、封閉性、邊恰有兩面、頂點連結為單一環、表面只有一個連通分量、正體積、底面位於 Z=0、最長邊 150 mm。單一封閉表面也排除獨立藏在內部的空腔殼；沒有宣稱完成所有自交的窮舉檢測。
+- [STL](model.stl) · [材色 3MF](appearance/ncku-future-venue-front-appearance.3mf) · [Blender](appearance/scene.blend) · [完整離線重建 ZIP](appearance/rebuild-source.zip) · [現版校驗](PUBLIC-MODEL-SHA256SUMS)
+- [原角度渲染與技術 PNG 證據](render-proof.json)；公開畫廊與點開的大圖皆為無失真 WebP。
+- 以 Blender 4.3.2 和 ZIP 內依賴重建；不需私人照片或網路來源。詳見[重建方式](appearance/README.md)。
+- [原單色模型與幾何驗證封存](https://github.com/hplin50643/taiwan-buildings-3d/blob/5a4721e1d1244679d6f0d1c40095ce96131455c7/%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8/%E5%8B%9D%E5%88%A9%E6%A0%A1%E5%8D%80/buildings/future-venue-front/README.md)；不是現版外觀驗證或試印證明。[原外觀版校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/aedc01f56772525b942a46a0cf63eee23adee46e/%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8/%E5%8B%9D%E5%88%A9%E6%A0%A1%E5%8D%80/buildings/future-venue-front/appearance/SHA256SUMS.txt)只供歷史檢查。
 
 ## 製作原則與限制
 
@@ -65,5 +53,4 @@ python validate_model.py
 
 ## 現存前棟限域外觀層
 
-[五材質3MF、可編輯Blend與五視角](appearance/README.md)：僅511原面（372上中窗／120低窗／2次門／17白U框正面），其餘4533面保持未查證中性。5044原面／STL bytes不變，不復原已拆T形後翼，不染大牆／共面細框／實心梯／後頂。兩張官照上傳2024-08-07不是拍攝日期，無EXIF拍攝日期，3058 PNG CreationTime只自報建立時間。原170截面／34薄層歷史記錄與前棟近似不變；不是全樓幾何升級或可直接列印版。
-
+現版（2026-11-14）共 529 面有來源支持的外觀代理、4,515 面保持未查證中性。此次只把既有入口內側左 14、右 2、上內側 2 面改為既有淺灰白材質，未改入口底面、階梯、側後牆或屋頂。5044 三角面幾何與 STL 完全不變；不復原已拆 T 形後翼，不代表全樓上色、實地現況或列印驗證。[來源、限制與重建](appearance/README.md)
