@@ -2,20 +2,21 @@
 
 ## 模型預覽
 
-
-| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
+| 正面斜視 | 左側斜視 | 右側斜視 |
 | :---: | :---: | :---: |
-| ![正面](appearance/previews/front.png) | ![左側](appearance/previews/left.png) | ![右側](appearance/previews/right.png) |
-| ![背面](appearance/previews/rear.png) | ![頂視](appearance/previews/top.png) |  |
+| ![現行正面](front-current.webp) | ![現行左側](left-current.webp) | ![現行右側](right-current.webp) |
+| 背面斜視 | 頂視 | |
+| ![現行背面](rear-current.webp) | ![現行頂視](top-current.webp) | |
 
-公開來源限定的有界近似模型。數位審核紀錄見隨附報告，是否正式發布以統一發布清單為準。未試印，不保證無支撐列印。
-
-位於校本部（桃園龜山）。不是長庚科技大學活動中心，不包含相鄰白膜場或獨立體育館；後方僅保留活動中心相接的有限看台及司令台段。主體建成年尚未確證。
-
+[彩色 3MF](appearance.3mf) · [可編輯 Blender](scene.blend) · [STL（不含色）](model.stl) · [渲染驗證](render-proof.json) · [當前校驗表](SHA256SUMS)
 
 ## 模型與來源
 
-[STL](model.stl) · [Blender 場景](scene.blend) · [建模腳本](build_model.py) · [來源與證據限制](sources.md)
+位於長庚大學校本部（桃園龜山），不是長庚科技大學活動中心。只包含主體及相接的有限看台與司令台，不含鄰近白膜場或獨立體育館；主體建成年尚未確證。整體最大 150 mm。
+
+最新外觀模型以深藍灰代理 8 個既有屋頂光電區的 23 個原三角面（4,055.465801 mm²）；其餘 6,245 面維持中性。15 個屋脊蓋、綠頂、牆、塔、地面均未改色。沒有新增或分割幾何，也不推估實際光電片數。參考照片拍攝日期不明，2022 年 7 月是光電工程完工，不是建物或照片日期。色值未經校準。
+
+[建模腳本](build_model.py) · [建物來源及限制](sources.md) · [外觀材色來源](APPEARANCE-SOURCES.md) · [逐面材質索引](face-materials.json) · [3MF 驗證](COLOR-EXCHANGE-VALIDATION.json) · [來源權利](LICENSE-NOTICE.md)
 
 毫米單位，底面朝下，最大邊 150 mm。NLSC 原生約 0.13526818 m/px 的主頂投影為約 48.15 × 72.91 m；模型按每 1 m 約 1.18 mm 表達，約 1:847，不能視為實測復原。高建物視差及屋簷／牆基差異仍在。
 
@@ -36,11 +37,12 @@ B1–3F 由官方拆層圖及會議資料獨立支持。坡上為 3F 入口，�
 
 ## 核驗邊界
 
-現有數位檢查檔只是特定幾何與切層抽樣的證據，不能取代原面厚根核對、切片及實體試印。入口／鐘塔列印簡化外觀已核；數位檢查不等於已試印或無支撐保證。發布前應由負責人核對最終模型與所有檢查檔一致。
+現有數位檢查檔只是特定幾何與切層抽樣的證據，不能取代原面厚根核對、切片及實體試印。入口／鐘塔列印簡化外觀已核；數位檢查不等於已試印或無支撐保證。原幾何數位檢核與歷史薄壁紀錄不能視為新增印製驗證。
 
 預覽是自行生成的模型渲染。官方照片、NLSC 原圖與 PDF 僅供研究核對，不放入候選或另行散布；來源連結見 sources.md。
 
-## 屋頂PV限域彩色外觀層
+## 原幾何檢核與封存
 
-[彩色3MF、可編輯Blend與五視角](appearance/README.md)：僅8個既有屋頂PV區23原面、4055.465801mm²深藍灰展示代理，其餘6245面中性；15脊蓋、綠頂、牆塔均排除。全部6268面及原STL bytes不變。官照拍攝日未知，2022-07僅PV完工；非現況測繪或新增列印保證。原雙QA口徑、六族例外與v1薄唇HOLD完整保留。
+原 3,104 頂點、6,268 面、三角面順序、方向及 STL 已逐項比對。原 v1 薄唇仍不採用；現行 v2 移除帽頂盲凹、保留六類列印簡化及原數位審核界線。六類不等於放寬通用薄壁門檻。請見[原完整幾何檢核](https://github.com/hplin50643/taiwan-buildings-3d/blob/9d27470c219df60ff5211342c28ba0aab5b06658/%E9%95%B7%E5%BA%9A%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8%EF%BC%88%E6%A1%83%E5%9C%92%E9%BE%9C%E5%B1%B1%EF%BC%89/buildings/cgu-student-activity-center/QA.md)。
 
+[原重建來源套件](https://github.com/hplin50643/taiwan-buildings-3d/blob/9d27470c219df60ff5211342c28ba0aab5b06658/%E9%95%B7%E5%BA%9A%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8%EF%BC%88%E6%A1%83%E5%9C%92%E9%BE%9C%E5%B1%B1%EF%BC%89/buildings/cgu-student-activity-center/appearance/rebuild-source.zip)及[當時色版整套說明](https://github.com/hplin50643/taiwan-buildings-3d/blob/9d27470c219df60ff5211342c28ba0aab5b06658/%E9%95%B7%E5%BA%9A%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8%EF%BC%88%E6%A1%83%E5%9C%92%E9%BE%9C%E5%B1%B1%EF%BC%89/buildings/cgu-student-activity-center/appearance/README.md)固定於原版本。此頁只展示現行模型，參考照片及 PDF 不隨包分發。何時及怎麼比對見[校驗範圍](CHECKSUM-SCOPE.md)。
