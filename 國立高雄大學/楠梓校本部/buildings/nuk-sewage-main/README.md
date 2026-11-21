@@ -6,7 +6,7 @@
 |---|---|---|
 | ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/inferred_rear.png) |
 | 遮蔽長側中性處理 | 頂視圖 | 方罩細節 |
-| ![](previews/neutral_long_side.png) | ![](previews/top.png) | ![](previews/roof_detail.png) |
+| ![](previews/neutral_long_side.png) | ![](previews/top.webp) | ![](previews/roof_detail.webp) |
 
 此模型只呈現官方歷史照片中的地上主建物，不是整座污水／中水處理場、現況測繪、精確全棟復原或運作設備模型。沒有地下池槽、前方花台／水池、管路、植栽及室內機電。未攝清楚的長側採中性封閉，不能把空白牆當成已確認的實景。
 
@@ -23,6 +23,10 @@
 - 未實體試印或切片測試；浮雕窗框／百葉、頂部細框為顯示用途簡化。幾何封閉與連通並不保證任意印表機、比例、材料的列印成功，也不是最小壁厚認證。
 - 3MF 為 core 基礎材質，已用 XML 和數值比對，未宣稱通過 lib3mf 全規格驗證。部分切片器需要自行指定線材顏色。
 - BLEND 中隱藏部件是可編輯的原始重疊建構件，不是已切分的獨立列印件；預設可見物件為與 STL/3MF 相同的布林合併網格。
+
+屋頂方罩細節與頂視兩張展示圖改用 1200 × 900 無損 WebP，與原 PNG 的 RGBA 像素逐一相同。主視角、主入口立面、推定另一短端局部與遮蔽長側、模型、場景和既有 QA 不變。用 Blender 4.3.2 與 Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可重新輸出這兩張 WebP，不覆寫交付場景或其他視角；工具會先核對渲染像素的 SHA-256。需要原始 PNG 位元時，請下載固定版本的 [原方罩細節 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/8afffd0831646b57b330bc2527abe5b5905e64ee/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-sewage-main/previews/roof_detail.png) · [原頂視 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/8afffd0831646b57b330bc2527abe5b5905e64ee/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-sewage-main/previews/top.png)。Blender 重渲染的時間與路徑欄位可能不同。
+
+[原發布逐檔清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/8afffd0831646b57b330bc2527abe5b5905e64ee/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-sewage-main/manifest.json)保留於原提交；本目錄的校驗表與清單對應目前展示檔。
 
 ## 檔案與預覽
 [STL](model.stl) · [七色 3MF](model.3mf) · [Blender](scene.blend) · [來源](SOURCES.md) · [QA](QA.json)
