@@ -1,42 +1,32 @@
-# 東湧燈塔｜門廊屋帽外前緣局部勘色
+# 馬祖東湧燈塔｜彩色外觀模型
 
-僅原門廊屋帽外前緣 x=-11、y=-21.5..-8.5、z=31.3..32.7 的 2 面（982、987）／1 完整連通共平面域，白色 index0 改既有石色 index2 #A5937C。原 11127 有色／569 中性／11696 三角保持，覆蓋增量為 0；原 6 色、STL、build 與所有其餘面索引保持，不切面、不改幾何。
+## 模型預覽
 
-原官方49照片全幅、官網新38與35照片全圖可分辨門廊白屋面中心與棕石外周，正面門上為棕石垂直邊。只對原薄屋帽的外前緣作色族代理，不宣稱石材成分、實測 HEX、精確厚度或門梯方位復原。原照片與新官網圖屬官方圖集，不能當成不同攝影者獨立測量；2025檔名不是精確拍攝日。門廊粗方盒與實物細節仍有差異。
+| 正面斜視代表圖 | 背面斜視 | 門廊帽板側緣 |
+| :---: | :---: | :---: |
+| ![現行正面斜視](front-current.webp) | ![現行背面斜視](rear-current.webp) | ![現行門廊帽板側緣](cap-flank.webp) |
 
-頂部14面跨白中心及棕石周緣，原模型未有分界，全部保留白色；側面、底面、梯、燈室、地形均不延色。其餘原11125色面非此次全面重新認證。原混合淡色燈室非全玻璃，抽象崖體與展示底座仍中性；六材料不是驗證過的四色列印方案。參考照片只私人審核，不貼圖、不公開附帶。
+[彩色 3MF](appearance.3mf) · [可編輯 Blender](scene.blend) · [STL（不含色）](model.stl) · [逐面驗證](verification.json) · [渲染來源與視角](render-proof.json) · [校驗版本](CHECKSUM-SCOPE.md)
 
-VESTIBULE-FASCIA來源pending快照固定，最終獨審另檔。qa/vestibule-fascia-previous保留原歷史文字與審核，舊數量由本段更新，其餘限制繼續有效。
+## 最新補色範圍
 
-## 原版歷史說明
+只改門廊帽板朝向下燈室雙圓窗同側的垂直長邊（模型 −Y，並非地理方位），將同一完整共面域的兩個原白色三角面改為既有棕灰石色（#A5937C）。舊版已補棕灰的入口正面保留；另一側、帽板頂面與底面、門廊牆、階梯、塔身、燈室與崖體皆不變。沒有新增門廊側窗、貼圖或其他幾何。
 
-# 東湧燈塔（東引島燈塔）｜原模型材色更新
+馬祖國家風景區管理處[實景照 49](https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94%28%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94%29_%E6%9D%B1%E5%BC%95_2025_49.jpg) 從下燈室雙圓窗一側看見帽板白色中心、棕色側緣與前端轉角；[實景照 42](https://www.matsu-nsa.gov.tw/api/uploads/attractions/%E6%9D%B1%E6%B9%A7%E7%87%88%E5%A1%94%28%E6%9D%B1%E5%BC%95%E5%B3%B6%E7%87%88%E5%A1%94%29_%E6%9D%B1%E5%BC%95_2025_42.jpg) 的稍高視角也支持此一輪廓與色族。照片中的實際棕邊寬度不在原模型的頂面分界內，本版只校正側面垂直石緣，沒有改頂面。兩照屬同一官網圖集，不宣稱不同攝影者獨立測色；檔名年份不是獨立確認的攝影日期，HEX 為原模型近似。
 
-| 彩色預覽 | 彩色預覽 | 彩色預覽 |
-|---|---|---|
-| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
-| ![背面](back.png) | ![左側](west.png) | ![右側](east.png) |
-| ![頂視](top.png) | ![入口階梯](entry-detail.png) | ![燈室細部](facade-detail.png) |
-| ![帽頂細部](roof-detail.png) | | |
+現行模型同時保留兩次局部改色：先把門廊帽板外前緣的 982、987 面（平面 x = −11 mm）改成棕灰石色，再補同一帽板側緣的 960、966 面（平面 y = −21.5 mm）。Blender 與 3MF 均核對四個原有面，保留兩次補色。原六種材質、11,696 個三角面、5,786 個頂點、既有 5 個混材共面域與 STL 不變。模型只含簡化的燈塔外觀，燈室非整圈玻璃；未補無證實區域、屋帽頂面或底面、崖體與展示底座。此非精密測繪，未實際試印或切片；[原幾何檢核](validation.json)為數位檢查。
 
-## 材色範圍
-同一既有東湧燈塔項目補彩（count_delta 0）。原 11696 三角面、頂點、STL 與 build_model.py 不變，無切面或增造風向標、光學設備、旗、人物及周邊房舍。原粗化崖體、階數、欄杆和圓塔形狀不因材色而成為精確測繪。
+## 基準來源與權利
 
-- 官方日照外觀支持白色圓塔／下燈室／既有欄杆／階梯側牆，以及深灰黑帽頂與原簡化頂桿。圓柱同材延續為明示概化，非所有隱蔽面逐一照片確證。
-- **上燈室鼓體保持淡灰中性色族**：照片混合白遮板與淡色玻璃，原實體鼓與細梃無法精確對應每片真窗，不把十二扇整排當藍玻璃，不新增透明孔。既有凸梃／環框白色。
-- 既有外露環形步道及其最外垂直石緣、階梯踏面為低飽和灰褐石色（下層白環與欄柱不染褐）；原凹口可辨底面暗影，不造室內。未證的基礎平台、崖體、岩肩與展示底座中性，不按概化地形猜草皮、海水或岩紋。
-- 日景取色族，夕照僅作位置辨識；官方路徑年份不是每張照片拍攝日期，也不是現況精色。原圖只私人留存，不貼圖。
-- 六種外觀材料不是四色或多耗材切片方案；**未實際列印**，不保證免支撐。STL 不存色；本次沒有改原尺寸或列印幾何。
+馬祖國家風景區管理處官方相簿公開外觀照片，主要日照 41／49／46，夕照 12 不作藍黃光材色。僅建築外部材色，不重製人物、旗幟、海面照片或安全設施。官方可讀不等於 CC 或任意再授權；原照不隨模型公開、不作紋理，不保證商用。URL／雜湊及來源限制見[基準色版來源紀錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/8e8512f3be4153b164c7508c26e445b233189950/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/dongyong-lighthouse/COLOR-SOURCE-REGISTER.json)。
 
-## 檔案與重建
-[彩色 3MF](appearance.3mf) · [彩色 Blender](scene.blend) · [保留原 STL](model.stl)
 
-build_model.py 仍重建原幾何；colorize_model.py 僅對完整原面分材；export_appearance.py 產 3MF 基本材料；render_color.py 產十圖及場景。validate_color.py 驗原檔、三角座標、格式及保留隔離重建；verify_color_scene.py 重開實際 shader、索引及構圖。沿既有 numpy／trimesh／manifold3d／Pillow 與 Blender 4.3.2。
+## 固定基準與重現
 
-## 來源與權利
-馬祖國家風景區管理處官方相簿公開外觀照片，主要日照 41／49／46，夕照 12 不作藍黃光材色。僅建築外部材色，不重製人物、旗幟、海面照片或安全設施。官方可讀不等於 CC 或任意再授權；原照不隨模型公開、不作紋理，不保證商用。URL／雜湊及來源限制見 COLOR-SOURCE-REGISTER.json。
+上方模型可直接使用。若要重建，將[歷史基準 Blender](https://github.com/hplin50643/taiwan-buildings-3d/blob/8e8512f3be4153b164c7508c26e445b233189950/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/dongyong-lighthouse/scene.blend)和[歷史基準 3MF](https://github.com/hplin50643/taiwan-buildings-3d/blob/8e8512f3be4153b164c7508c26e445b233189950/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/dongyong-lighthouse/appearance.3mf)下載到另一個資料夾；腳本會核對兩件原始輸入的 SHA-256。使用 Blender 4.3.2，並替換實際路徑：
 
-## QA 與保留歷程
-本次 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、FRAMING-QA、DELIVERY-QA 及獨立視覺審核對應新色版。舊 previews、舊報告和 ORIGINAL-MONOCHROME-README.md 保留作歷程，非本次色版入口。原包與重建目錄私人保留，不自動刪除；上方十圖和 scene.blend 為本次入口。
+```sh
+blender -b /path/to/baseline/scene.blend --disable-autoexec -t 4 --python-exit-code 1   -P build_cap_flank.py -- /path/to/baseline/appearance.3mf /tmp/dongyong-current
+```
 
-原 5 個混材連通共平面域的成員與材色均保持；本次只修正另一個完整單色外前緣域，不宣稱零混域。
+請使用[當前校驗表](SHA256SUMS)。[前次外觀與原幾何說明](https://github.com/hplin50643/taiwan-buildings-3d/blob/8e8512f3be4153b164c7508c26e445b233189950/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/dongyong-lighthouse/README.md)只供歷史比對。

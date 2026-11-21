@@ -1,0 +1,105 @@
+{
+  "source_scene_sha256": "ee0297508bc5ecfb8ded159a68b1778871f647f02445a1ae7fd6ed4c8358ae9c",
+  "source_previous_version": "8e8512f3be4153b164c7508c26e445b233189950",
+  "blender_version": "4.3.2",
+  "renderer": "Cycles CPU, 48 samples seed 0, no denoising or stamp, no scene save",
+  "views": {
+    "front": {
+      "camera": {
+        "camera": [
+          -220.0,
+          -330.0,
+          230.0
+        ],
+        "rotation": [
+          1.1405755281448364,
+          8.829249509290094e-08,
+          -0.5880026817321777
+        ],
+        "scale": 301.5061340332031,
+        "engine": "CYCLES",
+        "frame": 1,
+        "bounds": [
+          0.21943597495555878,
+          0.7787243127822876,
+          0.160774365067482,
+          0.686763346195221
+        ]
+      },
+      "rgba_sha256": "7acb0788b4148cff3b7df156cc6f996ef6454a6fcedc35904d05b55616cbfbfa",
+      "sha256": "1f2f04336f8ccbcc4e86b3ed6f331f00de42feba3887d8bdaa6e7136708ebcdd",
+      "dimensions": [
+        1200,
+        900
+      ]
+    },
+    "rear": {
+      "camera": {
+        "camera": [
+          220.0,
+          330.0,
+          230.0
+        ],
+        "rotation": [
+          1.1405755281448364,
+          -7.613110852844329e-08,
+          2.5535900592803955
+        ],
+        "scale": 301.5061340332031,
+        "engine": "CYCLES",
+        "frame": 1,
+        "bounds": [
+          0.2212757170200348,
+          0.7805640697479248,
+          0.16384363174438477,
+          0.7982795238494873
+        ]
+      },
+      "rgba_sha256": "e3121996795c8cef29ba9fa097729519d689ac10e15749847865cfe2a48cfa69",
+      "sha256": "8f2873c10f8211bf15bff98b6fb2bc8d5718e2242c6f5f6a181ef955308eb80d",
+      "dimensions": [
+        1200,
+        900
+      ]
+    },
+    "cap-flank": {
+      "sha256": "a922023a8608a3aae20c5edec63fd486efb58ce6c7eafc93eb47c628c2c2b23e",
+      "rgba_sha256": "7eed5af41163e7f083f4422f654946983821c1049ae14345e408812394160f42",
+      "dimensions": [
+        900,
+        680
+      ],
+      "provenance": "pixel-identical cold rebuild with the validated 2 existing faces reassigned to the retained stone color; explicit local detail camera in build_cap_flank.py"
+    }
+  },
+  "catalog_size": [
+    640,
+    480
+  ],
+  "catalog_method": "Pillow RGBA, Lanczos, WebP q92 method 6 exact",
+  "catalog_webp_sha256": "6679072697bbdb5cde725f181de0d6fa5c1ac908bde00752ae3d1825566d8c0a",
+  "catalog_path": "docs/display/catalog/20149cae775cd92be520ec55-640.webp",
+  "two_steps_cumulative_verification": {
+    "original_pre_fascia_commit": "38caa43aef914829c7c7b59716926ab94d4c3f17",
+    "original_pre_fascia_3mf_sha256": "89e7de357f664d5a342796360c635be607e4aeae051820406adb5661bdacbbba",
+    "preserved_front_faces": [
+      982,
+      987
+    ],
+    "new_side_flank_faces": [
+      960,
+      966
+    ],
+    "3mf_unchanged_vertices_palette_and_other_members": true,
+    "current_stone_color_sRGB": "#A5937C",
+    "native_earlier_faces_preserved": [
+      982,
+      987
+    ],
+    "native_later_faces_confirmed": [
+      960,
+      966
+    ],
+    "native_geometry_transform_and_materials_unchanged": true
+  }
+}
