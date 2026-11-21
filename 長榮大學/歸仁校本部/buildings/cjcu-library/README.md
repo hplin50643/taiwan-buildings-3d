@@ -31,16 +31,18 @@
 - [原始模型 STL](model.stl)
 - [可編輯 Blender 場景](scene.blend)
 - [建模程式](build_model.py) · [Python依賴](requirements.txt)
-- [正面](previews/front.png) · [背面](previews/rear.png) · [俯視](previews/top.webp)
+- [正面](previews/front.png) · [背面](previews/rear.webp) · [俯視](previews/top.webp)
 - [來源與不確定性](sources.json)
 - [幾何驗證](validation.json) · [0.2mm層檢查](layer-check.json) · [輪廓多邊形有效性](contour-validity-check.json) · [0.8mm參考薄特徵篩查](thin-feature-check.json)
 - [SHA256](SHA256SUMS.txt) · [重跑檢查](check_all.sh)
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.webp) |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.webp) | 俯視<br>![俯視](previews/top.webp) |
 
-原中性版俯視展示圖改用 1000 × 800 無損 WebP，RGBA 像素與原 PNG 完全一致；正面代表圖、背面與右短翼補色版不變。需原 PNG 可下載[固定版本原始俯視圖](https://github.com/hplin50643/taiwan-buildings-3d/blob/46fbf504829d8827d8a3a0d0402b01139fc9109a/%E9%95%B7%E6%A6%AE%E5%A4%A7%E5%AD%B8/%E6%AD%B8%E4%BB%81%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cjcu-library/previews/top.png)。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可用暫存目錄重建；加 `--archive-png-dir /path/to/output` 可重現原 PNG 位元並核對原 SHA-256，不覆寫交付場景。
+原中性版俯視展示圖改用 1000 × 800 無損 WebP，RGBA 像素與原 PNG 完全一致；正面代表圖、正背並排圖與右短翼補色版不變。需原 PNG 可下載[固定版本原始俯視圖](https://github.com/hplin50643/taiwan-buildings-3d/blob/46fbf504829d8827d8a3a0d0402b01139fc9109a/%E9%95%B7%E6%A6%AE%E5%A4%A7%E5%AD%B8/%E6%AD%B8%E4%BB%81%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cjcu-library/previews/top.png)。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可用暫存目錄重建；加 `--archive-png-dir /path/to/output` 可重現原 PNG 位元並核對原 SHA-256，不覆寫交付場景。
+
+另將原中性版背面展示圖改用同尺寸、像素完全相同的無損 WebP；需原 PNG 可下載[固定版本原始背面圖](https://github.com/hplin50643/taiwan-buildings-3d/blob/1bb6b3aee487ca32c9999cba9750ddcbbaa5534d/%E9%95%B7%E6%A6%AE%E5%A4%A7%E5%AD%B8/%E6%AD%B8%E4%BB%81%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cjcu-library/previews/rear.png)。同一匯出工具可重建俯視及背面兩張 WebP；加 `--archive-png-dir /path/to/output` 可取得並核對兩張原始 PNG，不覆寫交付場景。
 
 ## 重建與驗證
 需要 Python 3.12、requirements.txt 所列套件與 Blender 4.3.2+。在本目錄安裝依賴後執行：

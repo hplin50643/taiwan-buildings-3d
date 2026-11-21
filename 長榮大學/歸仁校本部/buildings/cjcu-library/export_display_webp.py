@@ -11,9 +11,9 @@ import zlib
 
 from PIL import Image, features
 
-ARCHIVAL_PNG = {'top': 'ff3a3d6ee4a41a6516b89fe271611dccd30ca9ba6b28eddc846f8222213374b5'}
+ARCHIVAL_PNG = {'top': 'ff3a3d6ee4a41a6516b89fe271611dccd30ca9ba6b28eddc846f8222213374b5', 'rear': '443618866fab738b9f2921ad890b6f0876736f931a0b1e839dcffcb00d94e8d6'}
 # Original Blender stamps are used only to reconstruct the historical bytes.
-ARCHIVAL_STAMPS = {'top': {b'Date': b'2026/10/13 14:46:01', b'RenderTime': b'00:00.43'}}
+ARCHIVAL_STAMPS = {'top': {b'Date': b'2026/10/13 14:46:01', b'RenderTime': b'00:00.43'}, 'rear': {b'Date': b'2026/10/13 14:46:00', b'RenderTime': b'00:00.66'}}
 PNG_SIGNATURE = b'\x89PNG\r\n\x1a\n'
 NS = {
     'x': 'adobe:ns:meta/',
