@@ -1,0 +1,124 @@
+{
+  "source_scene_sha256": "d861ff1bcb9c67fd7fa260eec17779be309be7d574467b0f4d70857071c8a35a",
+  "source_previous_version": "8e8512f3be4153b164c7508c26e445b233189950",
+  "blender_version": "4.3.2",
+  "renderer": "Cycles CPU, 48 samples seed 0, no denoising or stamp, no scene save",
+  "views": {
+    "front": {
+      "camera": {
+        "camera": [
+          220.0,
+          -330.0,
+          240.0
+        ],
+        "rotation": [
+          1.1118098497390747,
+          1.2400488458297332e-07,
+          0.5880027413368225
+        ],
+        "scale": 301.5061340332031,
+        "engine": "CYCLES",
+        "frame": 1,
+        "bounds": [
+          0.1973590850830078,
+          0.8026415109634399,
+          0.15928120911121368,
+          0.6939842104911804
+        ]
+      },
+      "rgba_sha256": "04d62dbaee410ffbd8076aff48e55081d3735ad76fb98bfc9956522cbfefd0ea",
+      "sha256": "5ade63e1d4a9bfe226f08a474591eccf57e7d5bc40c095faca36f33af3e85fc1",
+      "dimensions": [
+        1200,
+        900
+      ]
+    },
+    "rear": {
+      "camera": {
+        "camera": [
+          -220.0,
+          330.0,
+          240.0
+        ],
+        "rotation": [
+          1.111809253692627,
+          1.8083206043684186e-08,
+          -2.5535900592803955
+        ],
+        "scale": 301.5061340332031,
+        "engine": "CYCLES",
+        "frame": 1,
+        "bounds": [
+          0.19735875725746155,
+          0.8026410937309265,
+          0.15928222239017487,
+          0.7450641989707947
+        ]
+      },
+      "rgba_sha256": "b0d07239babea57f5e9b0cacaacd7b5d3248477a6542780d2d9a1b4ec16be4ef",
+      "sha256": "191a04e6878f355d047858c22ac3a2677f84e2a29b5d4308eecf9835d551c13c",
+      "dimensions": [
+        1200,
+        900
+      ]
+    },
+    "rear-wall": {
+      "camera": {
+        "camera": [
+          103.0,
+          -209.0,
+          148.0
+        ],
+        "rotation": [
+          1.1457489728927612,
+          2.2384259779073545e-08,
+          0.5023024678230286
+        ],
+        "scale": 218.0,
+        "engine": "CYCLES",
+        "frame": 1,
+        "bounds": [
+          0.1310736984014511,
+          0.963833749294281,
+          0.05640418455004692,
+          0.7855120301246643
+        ]
+      },
+      "sha256": "33a20d527fffcba31e6b7c37c4091373188d21f28bf0c3e6f9952ea86c5dfded",
+      "rgba_sha256": "a039f2b8dc544245d014a15b44bb99b9ec2d3c83871f0047d8ff72a6220c1923",
+      "dimensions": [
+        960,
+        720
+      ],
+      "provenance": "direct render of the exact latest published Blend, same detailed camera; independently verified pixel-identical from cold geometry reconstruction"
+    }
+  },
+  "catalog_size": [
+    640,
+    480
+  ],
+  "catalog_method": "Pillow RGBA, Lanczos, WebP q92 method 6 exact",
+  "catalog_webp_sha256": "4ac12d8cb76445743d3f3751453de2ed4e39e48902b545f238170c3018c30539",
+  "catalog_path": "docs/display/catalog/48bab2d18369a4d30e0b8462-640.webp",
+  "cumulative_verification": {
+    "baseline_input_sha256": {
+      "scene.blend": "22d800237fc6d7b658bafd6b9ea5ed80b497b8ec7cba3c3b9739115aceae8b60",
+      "appearance.3mf": "fc3e11de2cc20479dd45db082a2f85d60d4aa967df9e09bc33db5693cb246b90"
+    },
+    "3mf_previous_material_indices_preserved_except": [
+      9543,
+      9544
+    ],
+    "old_face_material_index": 3,
+    "new_face_material_index": 0,
+    "new_stone_color_sRGB": "#D8DBD5",
+    "3mf_unchanged_vertices_palette_and_other_members": true,
+    "cold_rebuild_identical_ZIP_members": true,
+    "native_latest_faces_confirmed": [
+      9543,
+      9544
+    ],
+    "native_all_prior_nontarget_face_indices_preserved": true,
+    "native_geometry_transform_and_materials_unchanged": true
+  }
+}
