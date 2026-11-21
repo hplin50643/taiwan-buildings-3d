@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面 actual STL<br>![正面](previews/front.png) | 背面 actual STL<br>![背面](previews/rear.png) |  |
+| 正面 actual STL<br>![正面](previews/front.png) | 背面 actual STL<br>![背面](previews/rear.webp) |  |
 
 **範圍：局部段，非全棟。此為自建可列印外觀近似，不是测繪成果。**
 
@@ -25,6 +25,10 @@
 - [sources.json](sources.json)：URL、可支持特徵與來源年代限制。第三方原照片、PDF不在公開包。
 
 執行 Python build_model.py；再執行 blender -b -t 2 -P render_preview.py。
+
+正面 PNG 與學校／校區代表圖保留。背面預覽改用 900 × 800 無損 WebP，RGBA 像素與原 Blender PNG 完全相同。
+用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可重新輸出，不會覆寫交付的 Blender 或正面圖。
+要取得 SHA-256 與原始交付檔完全相同的 PNG，可加 `--archive-png-dir /path/to/output`，並參照[原交付清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/333d902234271bff391ef5309bd89d8e6c784930/%E5%9C%8B%E7%AB%8B%E9%AB%94%E8%82%B2%E5%A4%A7%E5%AD%B8/%E6%A1%83%E5%9C%92%E6%A0%A1%E5%8D%80/buildings/ntsu-administration-entrance-section/SHA256SUMS.txt)。自動重建會核對原始雜湊後才輸出。
 
 ## 列印限制
 雙圓柱門廊頂板、中央高塔鏤空與深入口上緣可能需支撐。
