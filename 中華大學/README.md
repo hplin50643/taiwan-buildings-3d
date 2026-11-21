@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![正面](香山校本部/buildings/chu-administration-library/appearance/previews/front.png)](香山校本部/buildings/chu-administration-library/README.md)<br>**[中華大學｜香山校本部｜行政暨圖資大樓](香山校本部/buildings/chu-administration-library/README.md)**<br>正面：南側入口 |  |  |
+| [![正面](香山校本部/buildings/chu-administration-library/appearance/previews/front.webp)](香山校本部/buildings/chu-administration-library/README.md)<br>**[中華大學｜香山校本部｜行政暨圖資大樓](香山校本部/buildings/chu-administration-library/README.md)**<br>正面：南側入口 |  |  |
 
 圖為模型渲染。[建築說明與列印限制](香山校本部/buildings/chu-administration-library/README.md) · [原面有限彩色外觀](香山校本部/buildings/chu-administration-library/appearance/README.md) · [STL](香山校本部/buildings/chu-administration-library/model.stl) · [來源與證據](香山校本部/buildings/chu-administration-library/sources.md)
 
