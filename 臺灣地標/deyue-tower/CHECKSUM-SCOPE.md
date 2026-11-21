@@ -1,14 +1,7 @@
-# 校驗版本說明：當前交付補充
+# 校驗版本說明：金門得月樓
 
-本檔為 append-only 發布補充。原凍結模型、幾何、材色、歷史文件與兩份校驗表均未修改。
+[當前校驗表](SHA256SUMS)只核對現行模型、預覽、逐面核對與重建資料。原 STL 不變，最新補色限塔身庭院側兩道水平飾帶之間，不代表試印或切片驗證。
 
-- `SHA256SUMS.txt` 是原版歷史校驗表，保留原位元組，不是新增色版的完整校驗入口。下列精確項目不追認為當前檔案通過（NOT_RECERTIFIED）；其餘項目仍照表驗證。
-- 無副檔名的 `SHA256SUMS` 核對其所列的當前檔案，不含自身與 FREEZE，也不宣稱涵蓋這次新增的兩份發布補充。
-- `PUBLICATION-SUPPLEMENT-MANIFEST.json` 記錄全部原凍結公開 payload 與本說明的大小、SHA256、Git blob SHA；它不循環包含自身，其位元組由發布 Git commit 與批次交付 manifest 綁定。
-- 此說明只釐清校驗版本，不提高原來源、幾何、材色、數位 QA 或實體列印可信度。完整限制仍見原 README。
+以下為固定版本的歷史文件，不重新計算，也不驗證現行資料：[原單色校驗表](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/deyue-tower/SHA256SUMS.txt) · [前次色版校驗表](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/deyue-tower/SHA256SUMS) · [原完整校驗範圍](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/deyue-tower/CHECKSUM-SCOPE.md) · [庭院側主牆首次發布資料](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/deyue-tower/appearance-courtyard-wall/README.md)。
 
-## 原歷史表中不適用於新色版的精確項目
-
-- `README.md`：舊表 SHA256 `335e59576591dc7dcef34b99d22cd098429b6bc4af1bad2729ff773b3f766ad3`；當前 SHA256 `53c5bc06717d74d8590901228f3e005d2267b403c9a0e0d9b446c508ec0dad28`。舊項 NOT_RECERTIFIED，當前值由新 `SHA256SUMS` 與交付 manifest 核對。
-
-[返回模型說明](README.md) · [當前檔案校驗表](SHA256SUMS) · [發布補充清單](PUBLICATION-SUPPLEMENT-MANIFEST.json)
+[回現行模型頁](README.md)

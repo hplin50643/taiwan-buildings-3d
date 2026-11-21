@@ -1,0 +1,83 @@
+{
+  "source_scene_sha256": "63a2782036db182f23f0647d9ae2185bfefea6e4106a34c8d508943ac6e23d3f",
+  "source_previous_version": "a9223a4c3f4880ffa6dae63b8faf06092d629b5f",
+  "blender_version": "4.3.2",
+  "renderer": "Cycles CPU, 48 samples seed 0, no denoising or stamp, no scene save",
+  "views": {
+    "front": {
+      "camera": {
+        "camera": [
+          220.0,
+          -330.0,
+          240.0
+        ],
+        "rotation": [
+          1.176552176475525,
+          -3.138030990612606e-08,
+          0.5880027413368225
+        ],
+        "scale": 325.6266174316406,
+        "engine": "CYCLES",
+        "frame": 1,
+        "bounds": [
+          0.35264864563941956,
+          0.6473516225814819,
+          0.14142847061157227,
+          0.8338371515274048
+        ]
+      },
+      "rgba_sha256": "6d68faf1275a39719d0210ee75fbde5fc92e7952ff5600063c98b0004ac8ed26",
+      "sha256": "4e12fe64f3637402699c667bdaaf4e5e41c135e95dcf59a8fb223866c6c5a727",
+      "dimensions": [
+        1200,
+        900
+      ]
+    },
+    "rear": {
+      "camera": {
+        "camera": [
+          -220.0,
+          330.0,
+          240.0
+        ],
+        "rotation": [
+          1.1765518188476562,
+          -3.7134213926037773e-08,
+          -2.5535900592803955
+        ],
+        "scale": 325.6266174316406,
+        "engine": "CYCLES",
+        "frame": 1,
+        "bounds": [
+          0.35264846682548523,
+          0.6473514437675476,
+          0.14142906665802002,
+          0.8338376879692078
+        ]
+      },
+      "rgba_sha256": "06d7f918fb6cbe3623f248a0695e7909e49724a50fcd0927590da749bd560e98",
+      "sha256": "446e0c5e4071029a0d661ea658d74e5eeb7e77da1dba4ec864485709ccdd37b8",
+      "dimensions": [
+        1200,
+        900
+      ]
+    },
+    "courtyard-wall": {
+      "sha256": "09a4d5ffe33913f3c773671452944de6be2d350c99c3ab4026d20c8deb5c2be9",
+      "rgba_sha256": "e1221539c6983aea8a40fb0b5b6a42304680dedcb6a8f22b71bff9a932fc7326",
+      "dimensions": [
+        760,
+        760
+      ],
+      "provenance": "pixel-identical cold rebuild with the validated 155 existing faces repainted pink gray; explicit local detail camera in build_courtyard_wall.py"
+    }
+  },
+  "catalog_size": [
+    640,
+    480
+  ],
+  "catalog_method": "Pillow RGBA, Lanczos, WebP q92 method 6 exact",
+  "catalog_webp_sha256": "000245b3ac6e8d987b6ee29ca3b06948417940a4a2709a1e817a3724b1988f3a",
+  "catalog_path": "docs/display/catalog/674b5e3b327bd19b05feb0b1-640.webp",
+  "cold_exchange_rebuild": "All three ZIP members match the published 3MF; outer ZIP timestamps differ. Current download preserves exact published blob."
+}
