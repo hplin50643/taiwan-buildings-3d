@@ -1,11 +1,14 @@
 # 長榮大學蘭大衛紀念圖書館 | 右短翼磚牆外皮
 
-這是既有 [主量體模型](../README.md) 的局部外觀補色；不新增建築、不改原 STL 幾何。僅右短翼 +X 外向磚牆原有 92 個三角面設為名義暖紅磚。其餘 3,850 面保持原展示材；不是全棟完成補色，也不代表未驗證面的實景顏色。
+## 模型預覽
 
-| 前斜視 | 右短翼正視 | 後斜視 |
+| 前斜視 | 右短翼正視 |  |
 | :---: | :---: | :---: |
-| ![前斜視](previews/front.png) | ![右短翼](previews/right-side.png) | ![後斜視](previews/rear.png) |
-| ![正立面](previews/elevation.png) | ![俯視](previews/top.png) | ![前後並排](previews/front-rear.png) |
+| [![右短翼補色版：前斜視](../display/brick-side-20261120-front.webp)](previews/front.png) | [![右短翼補色版：右短翼正視](../display/brick-side-20261120-right-side.webp)](previews/right-side.png) |  |
+
+展示圖使用無損 WebP；點圖可開啟同版原始 PNG。原始六張技術渲染及 QA 檔案未改動，可查[固定發布版本的完整證據](https://github.com/hplin50643/taiwan-buildings-3d/tree/d3d082b4f58fecd9399329acc34abf7ed5159ffa/%E9%95%B7%E6%A6%AE%E5%A4%A7%E5%AD%B8/%E6%AD%B8%E4%BB%81%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cjcu-library/brick-side-20261120/)。
+
+這是既有 [主量體模型](../README.md) 的局部外觀補色；不新增建築、不改原 STL 幾何。僅右短翼 +X 外向磚牆原有 92 個三角面設為名義暖紅磚。其餘 3,850 面保持原展示材；不是全棟完成補色，也不代表未驗證面的實景顏色。
 
 - [彩色 3MF](appearance.3mf) · [可編輯 Blender](scene.blend) · [原樣 STL](model.stl) · [逐面資料 NPZ](color-mesh.npz)
 - [面域](verified-face-domain.json) · [材色統計](palette.json) · [品質檢查](BRICK-QA.json) · [SHA256](SHA256SUMS)
