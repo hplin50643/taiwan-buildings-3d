@@ -6,7 +6,7 @@
 |---|---|---|
 | ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/observed_short_end.png) |
 | 中性未復原背面 | 屋頂 | 已見立面細節 |
-| ![](previews/rear_unreconstructed.png) | ![](previews/top.png) | ![](previews/front_detail.png) |
+| ![](previews/rear_unreconstructed.webp) | ![](previews/top.webp) | ![](previews/front_detail.webp) |
 
 這是可審視的外觀模型，不是全棟精確還原、竣工測繪或 2026 年現況模型。未見背面與另一短端面採中性封閉；不能把空白牆當成實景確認。
 
@@ -23,6 +23,10 @@
 - 未知背面與另一短端的門窗、已見短端下方被遮住的百葉位置、完整窗總數仍未確定。沒有把缺口鏡射補造。
 - 未實體試印／切片；凹槽、百葉與細線為展示比例簡化，不作最小壁厚或列印成功保證。主體為實心外觀殼；隱藏的 editable 部件為重疊建構件，不是可單獨列印的分件包。
 - 3MF 已做 core XML 與數值核對，沒有宣稱 lib3mf 全規格驗證。
+
+已見立面細節、中性未復原背面與屋頂展示圖改用 1200 × 800 無損 WebP，與原 PNG 的 RGBA 像素逐一相同。主視角、已見長立面、已見短端面、模型、場景和既有 QA 不變。用 Blender 4.3.2 與 Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可重新輸出這三張 WebP，不覆寫交付場景或其他視角；工具會先核對渲染像素的 SHA-256。需要原始 PNG 位元時，請下載固定版本的 [原立面細節 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/previews/front_detail.png) · [原中性背面 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/previews/rear_unreconstructed.png) · [原屋頂 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/previews/top.png)。Blender 重渲染的時間與路徑欄位可能不同。
+
+[原發布逐檔清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/manifest.json)保留於原提交；本目錄的校驗表與清單對應目前展示檔。
 
 ## 檔案
 [STL](model.stl) · [3MF](model.3mf) · [Blender](scene.blend) · [來源](SOURCES.md) · [QA](QA.json)
