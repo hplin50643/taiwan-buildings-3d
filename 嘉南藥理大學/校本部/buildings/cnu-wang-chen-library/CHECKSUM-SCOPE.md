@@ -1,22 +1,7 @@
-# 2026-11-12 入口框架更新的校驗範圍
+# 現行及歷史校驗範圍
 
-目前根 SHA256SUMS 已為本次入口框架候選重新建立，核驗其明列的當前檔案。ENTRY-FRAME-FREEZE-MANIFEST.json 是本次新增清單，不自列以避免循環。前一版本根校驗表、README 及受替換 QA 已保存在 qa/entry-frame-previous/，只作歷史證據，不能在該目錄直接當作當前檔案的校驗表。原 FREEZE-MANIFEST.json、PUBLICATION-SUPPLEMENT-MANIFEST.json 與 INDEPENDENT-COLOR-VISUAL-QA.json 均保留其原版本作用域；本次 QA 不追認它們的舊雜湊為新檔案。
+[現行清單](CURRENT-SHA256SUMS)核對當前公開下載、預覽、重建來源及現行說明；未改 STL、3MF 與 Blender 位元。切片、實際列印與實測未經重新驗證。
 
-以下為先前發布補充的原文，描述當時的檔案狀態。
+[前一時點清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E5%98%89%E5%8D%97%E8%97%A5%E7%90%86%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cnu-wang-chen-library/CONTINUATION-SHA256SUMS)、[舊入口框架說明](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E5%98%89%E5%8D%97%E8%97%A5%E7%90%86%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cnu-wang-chen-library/CHECKSUM-SCOPE.md)與[舊五材 QA 路徑說明](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E5%98%89%E5%8D%97%E8%97%A5%E7%90%86%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cnu-wang-chen-library/ORIGINAL-CLASSIFICATION-QA-SCOPE.json)均以同一固定提交原樣保存。請到對應歷史樹校驗，勿套用舊清單驗證現行路徑。
 
-# 校驗版本與原檔交付範圍說明
-
-本說明是追加的發布補充，未修改本機原凍結模型、README、舊校驗表或原 FREEZE-MANIFEST.json。此處未修改凍結原件不表示遠端同名根校驗表仍保留舊 bytes；根表新版取代與巢狀表保留的差異詳見下文。原凍結清單不包含本補充。
-
-現行根目錄 SHA256SUMS 僅核驗其明列的當前檔案，不涵蓋其自身、原 FREEZE-MANIFEST.json 或本次補充。PUBLICATION-SUPPLEMENT-MANIFEST.json 另列原公開交付檔與本說明的 bytes、SHA256 及 Git blob SHA；補充清單本身依 Git commit 識別，不自我循環。
-
-材色、年代、模型範圍與原 QA 限制仍依原文件；本說明不補簽列印性、歷史建成狀態或全實景材色認證。
-
-## 原根校驗表已由新版取代
-
-原 README 所稱「所有原件完整保留」是原件留存範圍，不代表本次公開 payload 含全部歷史原 bytes。原根 `SHA256SUMS`（5425 bytes，SHA256 `23d5e965a428bbb129b7ae210875357ab220ea758895b8ed6277728f0e90bd73`，Git blob `ab0326dbc56a6642cd6a7ae9c61faab289197156`）屬舊版本。此次同一路徑交付的是新版校驗表，**不是保留舊表 bytes**。舊表保存在原 Git 歷史與私人完整備份中；本批公開 payload 沒有宣稱包含其完整公開別名。新版表與舊版表的用途及摘要不能互換。
-
-## 不在本批凍結 payload 內的歷史巢狀校驗表
-
-原 `interchange/SHA256SUMS`（1272 bytes，SHA256 `b1dab9ba5c8767e5d8614a42c0d08a6014f38942fbc035aa1d3a35d0b7219a9f`，Git blob `003018ceb4911d8373cfb950283566be0122deef`）未列入本批原凍結公開 payload，亦不冒列為本補充清單的交付檔。原 repo 的同一路徑保留原 blob、不刪除，並另有私人完整備份。其歷史表不驗證本批新根目錄材色檔；發布時須另核原路徑 bytes 及其明列目標。這與上節根表被新版取代不同，不能合併宣稱所有原表均同路徑原 bytes。
-
+[回現行模型頁](README.md)

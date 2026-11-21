@@ -1,34 +1,21 @@
-# 嘉南藥理大學王趁紀念圖書館｜南高牆與入口框架局部灰白
+# 嘉南藥理大學｜王趁紀念圖書館 L 棟
 
-**局部補色未完成：原 48 個南高牆與入口楣正面保留，新增入口楣與兩側柱共 91 面灰白；共 139 面有名義配色，65,547 面仍為未知中性色。側返、背面與頂底面的同構件連續色屬合理推定，非逐面實測或 2026 現況。** partial_color_incomplete=true、fully_colored_exterior=false。原五材是預覽對比非單色，本次source-gap獨立變體保留原全78件/首頁/交換檔；不含鄰Q棟。原v2限定例外、459個opening警告、728槽角點533二面/195三面與方向性短弦、v1 HOLD皆保，**新色審不追認全域壁厚、支撐或實體可列印**。
+## 模型預覽
 
-## 原指定首頁保持
-[原南正面首頁](previews/front.png) · [原北背面](previews/rear.png)，原圖bytes不變，下方十圖是本次新增局部色QA視圖，不取代原首頁。
+| 首頁代表視角 | 校級圖冊視角 | 背面斜視 |
+| :---: | :---: | :---: |
+| ![現行模型首頁視角](homepage-current.webp)<br>首頁代表視角 | ![現行模型校級圖冊視角](school-current.webp)<br>校級圖冊視角 | ![現行模型後斜視](rear-current.webp)<br>背側 |
 
-| 總覽 | 背側 | 正面 |
-|---|---|---|
-|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
-|![背面](back.png)|![西側](west.png)|![東側](east.png)|
-|![頂面](top.png)|![完整入口楣](entry-detail.png)|![完整南高牆](facade-detail.png)|
-|![南高牆右端](roof-detail.png)|||
+[彩色 3MF](appearance.3mf) · [Blender 場景](scene.blend) · [原 STL（不含色）](model.stl) · [校驗版本](CHECKSUM-SCOPE.md) · [渲染證明](render-proof.json)
 
-## 材色範圍
-同 cnu-wang-chen-library，same-item/count_delta=0，原65686三角與78件不變，無原OBJ不新增。原 S=1.8、BASE=3 的南高牆正面 46 面與入口楣正面 2 面完全保留。本次依原 build_model.py 的有限盒形邊界選取入口楣 34 面、左右柱 27 與 32 面，其中 2 面為既有配色，新增 91 面。全部三頂點、共面連通域與原 Boolean 分片已核對，沒有新增切面。校方照片可見入口框架為灰白色；同構件背側、頂面與底面採連續色推定。名義 HEX 不是精確磁磚色票；玻璃斜棚、曲玻璃、其他牆面、北側與屋面維持原中性，不新增磚縫。
-官相簿20170322嘉南廣場-72南照提供色族，20200224與20250910北照只輔助範圍；檔名不是獨立拍攝時間或2026現況證。原2003新館RC九層/B2描述不把所有層等高化；L棟不混旁Q。
+## 材色與模型界線
 
-## 原版與有限QA原樣保留
-完整原78件在 original-classification-version/ 與原路徑歷史檔；原README/scene另有ORIGINAL-SOURCE-GAP-公開alias，原render_preview.py、previews與interchange完整bytes保留。舊QA aliases僅綁歷史子包，不綁新增圖；不捏造舊hash。新 appearance.3mf/scene.blend 為 139 面局部配色版本，原五材與精確sRGB/線性RGBA交換限制不改。
-原v2有限接受不等於全域通過：459跨層opening警告最大3.9331514275%，角外非零薄損保留；459caliper/1866附加首弦皆指定方向，不推全方向壁厚。728槽角點仍含533二面、195三面與原pair失敗，不以14代表點根18.4541mm泛稱全族。0.252mm側向短弦、原0.072mm頂帶中間稿/v1 HOLD歷程完整保；本次不重新repair或重跑以抹除警告。
-含底150mm、名義1m→1.8mm、底3mm。最高46m照片試配、40–52m敏感範圍非測得；54×58m為弧屋量級不是所有外包。逐層退縮/封閉曲玻璃/淺框/透空格梁均原近似，未試印、不保證免支撐，不任意縮小。原模型名義與版本差異依原README全文保留。
+現行版同一原模型 65,686 三角面及 32,643 頂點。保留原南高牆正面與入口框架共 139 灰白面，僅推估同一南高牆背向垂直面 5 片沿用原灰白代理，合為 144 面；其餘 65,542 面未知中性。不是整棟後牆補白，未新增幾何、窗、照片、文字或材質。只包含 L 棟，不含相鄰 Q 棟。原 STL、造型、座標、尺寸與包數不變。
 
-## 來源、格式與再現
-[校方官方相簿](https://libcvod.cnu.edu.tw/)，原頁/照片只私人核對，不公開貼圖；未證自由商用，不套專案授權。
-[原STL](model.stl) · [新增逐面3MF](appearance.3mf) · [新場景](scene.blend) · [原完整版本](original-classification-version/README.md)
-物件 CNU Wang Chen Library partial color。原build_model.py精確隔離重建，colorize_model.py/export_appearance.py/validate_color.py/render_color.py/verify_color_scene.py驗本variant。兩材不是四色切片或試印認證。
+[校方相簿](https://libcvod.cnu.edu.tw/)支持同一南牆灰白色族，照片未見的背向面為同構件推估，不是直接照片證明、逐面色票或現況調查。[本次選面與限制](qa-continuous-highwall/source-scope.json) · [幾何保留驗證](qa-continuous-highwall/preservation.json)。未以舊五材分類預覽冒充實景材質。原 459 層警示、方向性短弦、728 接點及 v1 HOLD 歷史與 v2 限定例外不變，沒有重認證全域壁厚、切片或試印。
 
-## English scope
-Bounded entrance-frame color update, not a full exterior repaint. The original 48 south highwall/lintel front faces remain. A further 91 original lintel and pier faces receive the same nominal gray-white, for 139 colored faces and 65,547 unknown-neutral faces. The official photo supports the light entrance frame; color continuity on its side, rear, top and soffit faces is explicitly inferred. Glazed canopy, curved glazing and other walls are unchanged. All 65,686 triangles, original STL, original homepage views and historical files are retained. Same item, count delta zero, no OBJ. Photograph filename dates do not certify capture date or current 2026 condition. Existing 459 opening warnings, 728 junction-point limitations, directional short chords and v1 HOLD history remain. No renewed global printability certification or physical print.
+## 重現與歷史
 
-## 本次入口框架核對
+現行 STL、3MF 與 Blender 可獨立使用。[原重建來源 ZIP](rebuild-continuous-source.zip) 含必要幾何及程式，不含參考照片。可在新暫存目錄解壓，執行 `python continuous-highwall-source/build_continuous.py`；色版交換檢查用 `verify_exchange.py`，原 Blender 驗證及 PNG 渲染只在重建暫存目錄使用。現行 [WebP 渲染腳本](render_current.py) 會讀取新場景而不保存變更，首頁取用[固定舊相機參數](homepage-camera.json)。
 
-[來源與推定範圍](ENTRY-FRAME-SOURCE-QA.json) · [獨立核對](ENTRY-FRAME-INDEPENDENT-QA.json) · [原局部補色說明](qa/entry-frame-previous/README.md)。照片只供私人核對，不隨模型公開。
+[歷史版本原清冊](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E5%98%89%E5%8D%97%E8%97%A5%E7%90%86%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cnu-wang-chen-library/CONTINUATION-SHA256SUMS)、[舊五材原版](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E5%98%89%E5%8D%97%E8%97%A5%E7%90%86%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cnu-wang-chen-library/original-classification-version/README.md)、[舊交換資料](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E5%98%89%E5%8D%97%E8%97%A5%E7%90%86%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cnu-wang-chen-library/interchange/README.md)與[前次模型說明](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E5%98%89%E5%8D%97%E8%97%A5%E7%90%86%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cnu-wang-chen-library/README.md)僅供歷史查核，原作者資料及校驗位元保留在固定 Git 提交，不用舊表驗現行圖冊。[舊製造驗證程式](https://github.com/hplin50643/taiwan-buildings-3d/blob/a9223a4c3f4880ffa6dae63b8faf06092d629b5f/%E5%98%89%E5%8D%97%E8%97%A5%E7%90%86%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cnu-wang-chen-library/original-classification-version/validate_model.py)需在同一歷史子包內執行，不能套到目前的 WebP 圖冊。
