@@ -5,18 +5,18 @@
 
 | 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| ![正面](appearance/previews/front.png) | ![左側](appearance/previews/left.png) | ![右側](appearance/previews/right.png) |
-| ![水池側](appearance/previews/rear.png) | ![頂視](appearance/previews/top.png) |  |
+| [![正面](display/front.webp)](display/front.webp) | [![左側](display/left.webp)](display/left.webp) | [![右側](display/right.webp)](display/right.webp) |
+| [![水池側](display/rear.webp)](display/rear.webp) | [![頂視](display/top.webp)](display/top.webp) |  |
 
 板橋校區。這是根據公開外觀照片自行製作的3D列印縮模，不是官方測量或施工模型；實際尺寸不詳，模型採獨立展示比例。含底座最長邊150 mm；檔案單位為毫米。
 
 
 ## 檔案
 - [STL](model.stl)
-- [可編輯Blender場景](scene.blend)：列印網格可編輯，與交付STL三角形幾何一致；參數來源另見Python
-- [參數建模](build_model.py)・[依賴](requirements.txt)・[渲染](render_preview.py)
+- [材色 3MF](pool-side-fascia-20261120/model-colored.3mf) · [可編輯 Blender](pool-side-fascia-20261120/scene.blend)：網格與交付 STL 幾何一致；只有既有水池側簷帶兩面補色
+- [參數建模](build_model.py)・[依賴](requirements.txt)・[現版渲染證據](render-proof.json)
 - [原始網格驗證](validation.json)・[0.2mm輪廓檢查](contour-validity-check.json)・[0.8mm細節篩查](thin-feature-check.json)
-- [來源紀錄](sources.json)・[SHA-256](SHA256SUMS.txt)
+- [來源紀錄](sources.json)・[現版 SHA-256](PUBLIC-MODEL-SHA256SUMS)
 
 ## 外觀與限制
 三層長條體、低雙坡屋頂、深簷、前後玻璃帷幕構架、OUR MUSEUM 巨型字樣、中央外樓梯與二樓入口。
@@ -30,8 +30,10 @@
 
 這些僅為數位QA，不是實體試印、真切片驗證或對所有自交的窮盡證明。底座與主體為單件；部分細節被加厚或省略以便列印。
 
-## 重建
-Python 3.12 安裝requirements.txt後執行build_model.py，再以Blender 4.3.2以上執行render_preview.py。依序執行validate_model.py、check_contour_validity.py、check_thin_features.py。validate_model.py必須exit 0，且validation.json每個checks欄位為true。
+## 重建與歷史
+- [現版材料重建與校驗](pool-side-fascia-20261120/README.md)；需取得不可變歷史基準，無需私人照片。
+- [歷史單色幾何 QA](https://github.com/hplin50643/taiwan-buildings-3d/blob/5018bb0b9c8fd679e1155e09afd8814e9dc88166/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E6%9D%BF%E6%A9%8B%E6%A0%A1%E5%8D%80/buildings/ntua-you-chang-museum/SHA256SUMS.txt)與[舊外觀校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/5018bb0b9c8fd679e1155e09afd8814e9dc88166/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E6%9D%BF%E6%A9%8B%E6%A0%A1%E5%8D%80/buildings/ntua-you-chang-museum/appearance/SHA256SUMS.txt)仍可核對，均不當作現版。
+- 公開畫廊及點開的大圖均為無失真 WebP，使用原相機。水池側是看到本次簷帶補色的角度。
 
 ## 來源
 - https://museum.ntua.edu.tw/B01.asp
@@ -41,7 +43,6 @@ Python 3.12 安裝requirements.txt後執行build_model.py，再以Blender 4.3.2�
 
 來源照片與PDF權利屬原權利人，未附在本公開模型資料夾；僅提供原始網址。STL、參數程式與預覽皆為本案自行製作。
 
-## 歷史照片限域彩色外觀層
+## 現版歷史照片限域外觀
 
-[彩色3MF、可編輯Blend與五視角](appearance/README.md)：1132原面（1002巨字向外正面／130既有實心窗背），7428面中性。全部8560面與原STL bytes不變，不重建玻璃後磚木，不染字側框頂／屋尖／入口。依2007年自報日期官照的淺低飽和不透明代理，不是2026現況測繪或北側新館。原數位QA及估計幾何限制原樣保留。
-
+2026-11-20 版維持原 8,560 三角面；在原 1,132 個已配色面之外，新增水池側兩個原三角面中灰代理 (#A5A8A6)，共 1,134 面、未查證中性 7,426 面。依館方照片，不代表材質鑑定、2026 現況、試印或新館模型。幾何及原 STL 不變。

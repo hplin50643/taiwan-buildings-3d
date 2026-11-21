@@ -1,12 +1,8 @@
 # 有章藝術博物館舊行政大樓改造館｜水池側簷帶補色
 
-此變體只將水池側的直立簷帶改為中灰近似色 `#A5A8A6`。它是[原限域彩色外觀](../appearance/README.md)的補充，不是北側新館，不另計一棟，也沒有修改原模型、代表圖、檔案校驗或重建封存。
+現版為同一座舊行政大樓改造館，只改水池側既有簷帶兩面。請看[現版五視角](../README.md)與[現版校驗](../PUBLIC-MODEL-SHA256SUMS)；[診斷前後原圖及原發布說明](https://github.com/hplin50643/taiwan-buildings-3d/blob/5018bb0b9c8fd679e1155e09afd8814e9dc88166/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E6%9D%BF%E6%A9%8B%E6%A0%A1%E5%8D%80/buildings/ntua-you-chang-museum/pool-side-fascia-20261120/README.md)留在歷史版本作 QA，不在現版畫廊展示。
 
-| 補色前（相同角度） | 補色後（簷帶局部） |
-| :---: | :---: |
-| ![原中性簷帶](before-pool-fascia.png) | ![中灰簷帶](after-pool-fascia.png) |
-
-[補色 3MF](model-colored.3mf) · [可編輯 Blender](scene.blend) · [同幾何原 STL](../model.stl) · [新檔 SHA256](SHA256SUMS)
+[現版 3MF](model-colored.3mf) · [可編輯 Blender](scene.blend) · [相同幾何 STL](../model.stl) · [現版渲染證據](../render-proof.json)
 
 ## 歷史參照與範圍
 
@@ -18,9 +14,9 @@
 
 ## 獨立重建與驗證
 
-在本模型資料夾執行（皆用倉庫既有檔案，不需參考照）：
+從不可變版本下載[原基準 Blender](https://github.com/hplin50643/taiwan-buildings-3d/blob/5018bb0b9c8fd679e1155e09afd8814e9dc88166/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E6%9D%BF%E6%A9%8B%E6%A0%A1%E5%8D%80/buildings/ntua-you-chang-museum/appearance/scene.blend)及[原基準 3MF](https://github.com/hplin50643/taiwan-buildings-3d/blob/5018bb0b9c8fd679e1155e09afd8814e9dc88166/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E6%9D%BF%E6%A9%8B%E6%A0%A1%E5%8D%80/buildings/ntua-you-chang-museum/appearance/ntua-you-chang-museum-appearance.3mf)放入本模型資料夾下的 appearance/。基準依 [domain.json](domain.json) 核 SHA-256；配置後不需要網路或私人照片。輸出會覆寫變體檔，請在隔離的副本執行：
 
     blender -b appearance/scene.blend -t 4 --python-exit-code 1 -P pool-side-fascia-20261120/apply_pool_fascia.py -- --qa-renders
     python3 pool-side-fascia-20261120/rebuild_exchange.py
 
-Blender 4.3.2 實際重開，原新場景網格與原 STL 逐面一致；lib3mf 嚴格讀回原新 3MF 零警告，所有三角頂點及材質已比較。檔案：[確切面域](domain.json) · [格式與材質](verification.json) · [視覺差異](visual-QA.json) · [隔離重建](reproduction-QA.json) · [原外觀版校驗](../appearance/SHA256SUMS.txt)。
+[確切面域](domain.json) · [格式與材質](verification.json) · [視覺 QA](visual-QA.json) · [隔離重建](reproduction-QA.json) · [不可變原發布校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/5018bb0b9c8fd679e1155e09afd8814e9dc88166/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E6%9D%BF%E6%A9%8B%E6%A0%A1%E5%8D%80/buildings/ntua-you-chang-museum/pool-side-fascia-20261120/SHA256SUMS)。
