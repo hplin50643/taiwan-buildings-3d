@@ -1,0 +1,73 @@
+{
+  "source_scene_sha256": "1af949b5f88e49971c92efce61a913d6a41dcb4e1c97263519090258211f2ff1",
+  "source_previous_version": "ac5855813c33bf5ede511cdcffc854ae60e1257a",
+  "blender_version": "4.3.2",
+  "renderer": "Cycles CPU, 48 samples seed 0, no denoising or stamp, no scene save",
+  "views": {
+    "front": {
+      "camera": {
+        "camera": [
+          -220.0,
+          -330.0,
+          230.0
+        ],
+        "rotation": [
+          1.1199477910995483,
+          3.2270435212922166e-09,
+          -0.5880026817321777
+        ],
+        "scale": 301.5061340332031,
+        "engine": "CYCLES",
+        "frame": 1,
+        "bounds": [
+          0.1642429679632187,
+          0.8357568979263306,
+          0.15635286271572113,
+          0.8068901896476746
+        ]
+      },
+      "rgba_sha256": "0bba8d28002cc3c5cd4d27fab8ef368eab83a6a20878c951a01919f91e7184f3",
+      "sha256": "a6a86120725cf1f86b2cb4d238cfe6cab255ba4b6d066b190e6aafc53b30fcca",
+      "dimensions": [
+        1200,
+        900
+      ]
+    },
+    "rear": {
+      "camera": {
+        "camera": [
+          220.0,
+          330.0,
+          230.0
+        ],
+        "rotation": [
+          1.119947910308838,
+          -4.6193470382149826e-08,
+          2.5535900592803955
+        ],
+        "scale": 301.5061340332031,
+        "engine": "CYCLES",
+        "frame": 1,
+        "bounds": [
+          0.16424304246902466,
+          0.8357568979263306,
+          0.1563526839017868,
+          0.774824321269989
+        ]
+      },
+      "rgba_sha256": "b6a50ebd495b89b790e35a6b8092de3773d30acaf7c8537ea5460419c8d1f0c4",
+      "sha256": "2f15f682ba66da6a0c9977aabcce3a35d232e2a6bf5fde912ffd33059ec1a62a",
+      "dimensions": [
+        1200,
+        900
+      ]
+    }
+  },
+  "catalog_size": [
+    640,
+    480
+  ],
+  "catalog_method": "Pillow RGBA, Lanczos, WebP q92 method 6 exact",
+  "catalog_webp_sha256": "2111f634efd83982a295abd41a59aef3394e6a17dd1e0c5d38e3d71368013125",
+  "catalog_path": "docs/display/catalog/37da7cb24d1094093c64a434-640.webp"
+}
