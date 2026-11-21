@@ -1,24 +1,16 @@
 # 蘭大衛紀念圖書館主量體｜長榮大學
 
-## 右短翼補色版
+## 模型預覽｜目前發布的右短翼局部補色版
 
-[右短翼補色說明、範圍與驗證](brick-side-20261120/README.md) · [逐面材色 3MF](brick-side-20261120/appearance.3mf) · [補色 Blender 場景](brick-side-20261120/scene.blend)
-
-只將原右短翼磚牆外皮 92 面補為近似暖紅磚，窗洞及其餘 3,850 面保持原展示材。照片未校色，未試印；不是全棟分色。此處原 STL、主量體 Blender 場景及代表圖仍保留原版，補色版不另計建築或套件。
-
-| 右短翼補色版驗證圖 |
-| :---: |
-| ![右短翼暖紅磚外皮](brick-side-20261120/previews/right-side.png) |
-| 只呈現三排窗周圍的磚牆範圍，不替換下列原代表圖。 |
-
-## 原代表圖（保留主量體中性版）
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 前斜視 | 右短翼正視 |
 | :---: | :---: | :---: |
-| ![實際STL正面及背面並排](previews/front-rear.png) |  |  |
+| [![右短翼補色版：前斜視](display/brick-side-20261120-front.webp)](brick-side-20261120/previews/front.png) | [![右短翼補色版：右短翼正視](display/brick-side-20261120-right-side.webp)](brick-side-20261120/previews/right-side.png) |
 
-[學校目錄](../../../README.md) · [校區目錄](../../README.md)
+點圖可開啟當版原始 PNG。兩張皆為同一份 `brick-side-20261120` 補色模型的實際渲染，並非來源照片。
 
+僅將右短翼三排窗周圍的磚牆外皮 **92 個三角面**補為近似暖紅磚；另 **3,850 個三角面**維持原展示材。未改 STL 幾何、未新增建築，也不是全棟完成補色。照片未校色，未實體試印。
+
+[補色版說明、全視角與驗證](brick-side-20261120/README.md) · [彩色 3MF](brick-side-20261120/appearance.3mf) · [補色 Blender 場景](brick-side-20261120/scene.blend) · [學校目錄](../../../README.md) · [校區目錄](../../README.md)
 
 ## 範圍與外觀
 保留六個地上使用層的高層主量體、三層連續水平玻璃帶及外挑白色帶、上層退縮、前端屋頂核心、右側紅磚窗列與底層拱廊。
@@ -27,22 +19,13 @@
 
 這是公開外觀照片推估的可編輯、可再建構縮尺模型，不是測量、竣工圖或完整BIM。各件獨立縮尺；包含平底座的外框為 150.00 × 96.00 × 81.00 mm，最大150 mm，不代表同校模型使用相同比例尺。
 
-## 檔案
+## 原始幾何與重建檔
 - [原始模型 STL](model.stl)
-- [可編輯 Blender 場景](scene.blend)
+- [原始中性版 Blender 場景](scene.blend)
 - [建模程式](build_model.py) · [Python依賴](requirements.txt)
-- [正面](previews/front.png) · [背面](previews/rear.webp) · [俯視](previews/top.webp)
 - [來源與不確定性](sources.json)
 - [幾何驗證](validation.json) · [0.2mm層檢查](layer-check.json) · [輪廓多邊形有效性](contour-validity-check.json) · [0.8mm參考薄特徵篩查](thin-feature-check.json)
 - [SHA256](SHA256SUMS.txt) · [重跑檢查](check_all.sh)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.webp) | 俯視<br>![俯視](previews/top.webp) |
-
-原中性版俯視展示圖改用 1000 × 800 無損 WebP，RGBA 像素與原 PNG 完全一致；正面代表圖、正背並排圖與右短翼補色版不變。需原 PNG 可下載[固定版本原始俯視圖](https://github.com/hplin50643/taiwan-buildings-3d/blob/46fbf504829d8827d8a3a0d0402b01139fc9109a/%E9%95%B7%E6%A6%AE%E5%A4%A7%E5%AD%B8/%E6%AD%B8%E4%BB%81%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cjcu-library/previews/top.png)。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可用暫存目錄重建；加 `--archive-png-dir /path/to/output` 可重現原 PNG 位元並核對原 SHA-256，不覆寫交付場景。
-
-另將原中性版背面展示圖改用同尺寸、像素完全相同的無損 WebP；需原 PNG 可下載[固定版本原始背面圖](https://github.com/hplin50643/taiwan-buildings-3d/blob/1bb6b3aee487ca32c9999cba9750ddcbbaa5534d/%E9%95%B7%E6%A6%AE%E5%A4%A7%E5%AD%B8/%E6%AD%B8%E4%BB%81%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cjcu-library/previews/rear.png)。同一匯出工具可重建俯視及背面兩張 WebP；加 `--archive-png-dir /path/to/output` 可取得並核對兩張原始 PNG，不覆寫交付場景。
 
 ## 重建與驗證
 需要 Python 3.12、requirements.txt 所列套件與 Blender 4.3.2+。在本目錄安裝依賴後執行：
