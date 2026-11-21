@@ -1,29 +1,16 @@
 # 國立臺南藝術大學｜漢寶德紀念館
 
+本頁只提供同一座紀念館的最新模型：立面配置修訂 v2，並已合併外梯上端門凹背補色。
+
 ## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 凸盒正面 y− 與右鄰陽臺面 x+<br>![修訂正面](facade-layout-v2/previews/front.png) | 左側外梯 x−，往正面上升<br>![修訂外梯](facade-layout-v2/previews/stairs.png) |  |
+| ![凸盒正面與右鄰陽臺](facade-layout-v2/previews/front.webp)<br>凸盒正面與右鄰陽臺 | ![左側外梯](facade-layout-v2/previews/stairs.webp)<br>左側外梯向模型正面上升 | ![外梯上端門](facade-layout-v2/previews/stair-door.webp)<br>外梯上端門板 |
+| ![後面](facade-layout-v2/previews/rear.webp)<br>後面 | ![頂視](facade-layout-v2/previews/top.webp)<br>頂視 | |
 
-## 最新版：立面配置修訂 v2
+[STL](facade-layout-v2/model-v2.stl) · [彩色 3MF](facade-layout-v2/model.3mf) · [可編輯 Blender](facade-layout-v2/scene.blend) · [範圍、驗證與重建](facade-layout-v2/README.md) · [原公開來源記錄](sources.json)
 
-**請下載 [修訂 STL](facade-layout-v2/model-v2.stl) 或 [七材質 3MF](facade-layout-v2/model.3mf)。本層 model.stl／scene.blend 與 appearance 資料夾保留的是修訂前歷史版本。**
+外梯在模型左側、往正面上升，雙陽臺位於正面右鄰立面。門板補色不改幾何或尺寸。含底座 150 × 142 × 98 mm，保留 752 點及 1,524 面；模型軸向不是地理方向。仍有 11 層薄特徵警示；未試印或驗證無支撐列印。
 
-依官方平面與實照修正外梯、雙陽臺及門洞所在立面，並修正外梯升向。以凸盒為模型正面 y−，外梯在 x− 左側往正面上升，雙陽臺在 x+ 右鄰面；不是地理方位。[來源、修訂細節、可重建源碼與新版檢查](facade-layout-v2/README.md)。原高度、細部尺寸仍是近似，不能稱為完整比例校準。
-
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 後面 y+ 保守中性<br>![修訂後面](facade-layout-v2/previews/rear.png) | 俯視 x− 左／x+ 右／y− 下<br>![修訂俯視](facade-layout-v2/previews/top.png) |  |
-
-含底座仍為 150 × 142 × 98 mm；752 頂點、1524 三角面。新版重新檢查水密／流形／法線／退化面、重建一致性及 490 個截層；仍有 11 層薄特徵警示（最大局部損失 2.7367 mm²）。[新版 QA](facade-layout-v2/qa/geometry-validation.json)、[新版截層](facade-layout-v2/qa/layer-check.json)。尚未正式 FFF 切片或實體試印，不能保證免支撐。
-
-灰混凝土、紅外伸盒側／底、深玻璃和框欄的七材質為照片近似，不是封閉多色體或機器設定。原實心平頂、未知後面與加厚欄板仍明示簡化；沒有補室內懸浮展廳、水池或屋頂設備。南藝仍為 14 包，本件不增加包數或校數。
-
-## 保留的修訂前資料
-
-- [原 STL](model.stl)、[原 scene](scene.blend)、[原建模源碼](build_model.py)
-- [原網格驗證](validation.json)、[原截層紀錄](layer-check.json)：歷史證據，未覆寫，不能代替新版 QA
-- [七材質舊幾何版](appearance/README.md)：保留配色來源與先前交換檔，其立面配置尚未修正
-- [基準檔案雜湊](facade-layout-v2/baseline-manifest.json)、[原來源](sources.json)、[全包雜湊](hash-manifest.json)
+[舊版及原編修證據（固定 Git 快照）](https://github.com/hplin50643/taiwan-buildings-3d/tree/88578077d19c33cb890500fa4267c937bc4668d5/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8D%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E5%AE%98%E7%94%B0%E6%A0%A1%E5%8D%80/buildings/tnnua-han-pao-teh-museum)、[來源與原立面修訂報告（固定 Git 快照）](https://github.com/hplin50643/taiwan-buildings-3d/blob/88578077d19c33cb890500fa4267c937bc4668d5/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8D%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E5%AE%98%E7%94%B0%E6%A0%A1%E5%8D%80/buildings/tnnua-han-pao-teh-museum/facade-layout-v2/README.md) 只作歷史查核，不作現行下載或圖冊。
