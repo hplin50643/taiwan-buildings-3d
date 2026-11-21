@@ -1,20 +1,22 @@
-# 崑山科技大學圖書資訊館：歷史後窗限域外觀
+# 崑山科技大學圖書資訊館｜現行限域外觀
 
-僅既有模型後窗 **1,242 面 / 2066.8784524567363 mm²** 使用不透明低彩度藍綠灰代理；其餘 **16,230 面維持未查證中性**。不是整樓上色、實測材質或2026現況。
-
-- [雙材質3MF](ksu-library-information-building-appearance.3mf) · [可編輯Blend](scene.blend) · [重建原始碼ZIP](rebuild-source.zip)
-- [前](previews/front.png) · [左](previews/left.png) · [右](previews/right.png) · [後](previews/rear.png) · [頂](previews/top.png)
-- [單色對照](previews/mono-rear.png) · [來源及限制](SOURCES.md) · [授權](LICENSE-NOTICE.md)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 前<br>![前](previews/front.png) | 左<br>![左](previews/left.png) | 右<br>![右](previews/right.png) |
-| 後<br>![後](previews/rear.png) | 頂<br>![頂](previews/top.png) | 單色對照<br>![單色對照](previews/mono-rear.png) |
+| ![現行正面](previews/front.webp)<br>正面 | ![現行左側](previews/left.webp)<br>左側 | ![現行右側](previews/right.webp)<br>右側 |
+| ![現行背面](previews/rear.webp)<br>背面：歷史後窗限域配色 | ![現行俯視](previews/top.webp)<br>頂視 | |
 
-白色曲翼窗背1120、兩座梯塔64、退台36、可見高紅磚區22面。高紅磚隱蔽96面拒染；前面、所有不透明牆體、屋頂、框、窗洞側壁、八孔及白翼梁槽均不染色。精確原三角形，無分割、增添玻璃或窗櫺。每面全部三點限定在原有限平面分段且以實際叉積法線驗證；原STL bytes、坐標、順序及朝向不變。
+[現行 3MF](ksu-library-information-building-appearance.3mf) · [現行 Blender](scene.blend) · [原 STL](../model.stl) · [當前校驗表](../CURRENT-SHA256SUMS) · [渲染來源與視角](render-proof.json)
 
-## 非製造修復／非可直接列印
-原 QA.md 與全部歷史診斷保持不變。原作者 passed=false / exceptions_independently_approved=false、run_all_checks exit1 是歷史值；後續獨立122,304點有限例外放行也保留，不可互相覆蓋。真薄唇0.599998mm、曲帽首段/階0.300003mm與後續空隙、局部圓帽61.7342%支承仍然存在。南槽精確邊探針0.1216827mm、梯芯0.5999985mm不能以較厚代表截面代替。作者101,549/有效25,092與獨立122,304/25,096短射線樣本不同，不相加；830侵蝕損失樣本非830個零件。外觀不擴大或重驗歷史有限放行，不是全域0.8mm通過，無實體列印驗證。
+現行版只把既有歷史後窗 1,242 個原三角面設為不透明藍綠灰代理；16,230 面維持未知中性。白曲翼窗背 1,120、兩座梯塔 64、退台 36、可見高紅磚區 22 面；另 96 個遮擋面維持中性。前面、所有不透明牆體、屋面、框、窗側壁、八孔及白翼梁槽均不補色。不是完整復色或現況實測。原 8,660 頂點、17,472 三角、原 STL 位元、全座標、面序及原 150 × 100 × 約 84.1 mm 尺度不變。
 
-## 重建
-安裝 source/requirements.txt；由本目錄上層保留原 model.stl，執行 source/build_appearance.py、source/verify_exchange.py，再以 Blender 執行 source/render_appearance.py 與 source/verify_scene.py。驗證包括strict 3MF零警告、真材質修改存讀、Blend真頂點與真材質修改存讀、交付Blend重開重繪，以及clean重建3MF/map/palette/五張PNG完全相同；Blend只主張語義一致。
+原工程 QA 的 passed=false、exceptions_independently_approved=false 與 run_all_checks 非零退出仍保留在歷史記錄；後續獨立 122,304 點查核的有限例外不覆寫原結果。真薄唇 0.599998 mm、約 0.300003 mm 的階、南槽探針與 61.7342% 局部支承等限制不變，不能視為全域 0.8 mm 通過。未做精測、切片或實體試印。原照片未附、不作紋理。
+
+[獨立選面核對](qa/material-boundaries.json) · [交換核對](qa/exchange-validation.json) · [原來源與限制](SOURCES.md) · [授權限制](LICENSE-NOTICE.md)
+
+## 重現與歷史
+
+現行三個模型格式可以獨立開啟。需要重建時，在暫存目錄解壓[獨立重建源碼](rebuild-source.zip)，依該包依賴以 Python 執行 `appearance/source/build_appearance.py`；交換使用 `verify_exchange.py`，Blender 4.3.2 使用 `render_appearance.py`。原重建流程的 PNG 中間檔只在暫存處用於校驗，不作公開預覽。現行 WebP 由最新已發布 Blender 場景直接重渲，不改材色。
+
+[前次配色說明及單色 QA 對照](https://github.com/hplin50643/taiwan-buildings-3d/blob/9d27470c219df60ff5211342c28ba0aab5b06658/%E5%B4%91%E5%B1%B1%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%B0%B8%E5%BA%B7%E6%A0%A1%E5%8D%80/buildings/ksu-library-information-building/appearance/README.md)、[前次外觀校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/9d27470c219df60ff5211342c28ba0aab5b06658/%E5%B4%91%E5%B1%B1%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%B0%B8%E5%BA%B7%E6%A0%A1%E5%8D%80/buildings/ksu-library-information-building/appearance/SHA256SUMS.txt)和[基準工程校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/9d27470c219df60ff5211342c28ba0aab5b06658/%E5%B4%91%E5%B1%B1%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%B0%B8%E5%BA%B7%E6%A0%A1%E5%8D%80/buildings/ksu-library-information-building/SHA256SUMS.txt)只供歷史驗證，不是現行3MF、場景或預覽的下載入口。歷史報告與原重建流程以固定提交保全，不改內容。

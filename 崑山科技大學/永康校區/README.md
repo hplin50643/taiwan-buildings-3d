@@ -4,9 +4,9 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 北面正面<br>![北面](buildings/ksu-library-information-building/appearance/previews/front.png) |  |  |
+| 北面正面<br>![北面](buildings/ksu-library-information-building/appearance/previews/front.webp) |  |  |
 
-[模型說明](buildings/ksu-library-information-building/README.md) · [後窗限域外觀](buildings/ksu-library-information-building/appearance/README.md) · [來源與限制](buildings/ksu-library-information-building/sources.md) · [幾何審查](buildings/ksu-library-information-building/QA.md)
+[模型說明](buildings/ksu-library-information-building/README.md) · [後窗限域外觀](buildings/ksu-library-information-building/appearance/README.md) · [來源與限制](buildings/ksu-library-information-building/sources.md) · [幾何審查](https://github.com/hplin50643/taiwan-buildings-3d/blob/9d27470c219df60ff5211342c28ba0aab5b06658/%E5%B4%91%E5%B1%B1%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%B0%B8%E5%BA%B7%E6%A0%A1%E5%8D%80/buildings/ksu-library-information-building/QA.md)
 
 官方55m為總高口徑，另頁「長55m」措辭差異保留；分層高程推估、未知短側細窗省略。地下2＋地上11層；帶頂中庭封背簡化，曲玻璃框為厚背體淺刻。原始照片/PDF不隨包散布。已完成獨立數位檢查及具體有限例外核准；數位審核紀錄見模型QA，是否正式發布以統一發布清單為準。
 
