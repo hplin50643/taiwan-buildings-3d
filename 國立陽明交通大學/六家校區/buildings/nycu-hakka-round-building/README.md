@@ -3,9 +3,10 @@
 ## 模型預覽
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 後側與高扇形屋頂<br>![背面](appearance/previews/rear.png) |  |
+| 模型預覽 | 模型預覽 |
+| :---: | :---: |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![後側與高扇形屋頂](display/rear-640.webp)](display/rear.webp)<br>後側與高扇形屋頂 |
+| [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 | [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |
 
 ## 本次最高中央扇形屋頂外弧緣同銀灰延伸（推估）
 
@@ -66,3 +67,5 @@ Python 3.12，先依 [requirements.txt](requirements.txt) 安裝套件，另需B
 - [逐檔SHA256](SHA256SUMS.txt)
 
 scene.blend由實際交付STL匯入，內含可編輯三角網格；完整參數來源是build_model.py。預覽亦由同一STL生成。
+
+[現行展示圖與渲染校驗](display/README.md) · [原工程檔與舊校驗對應版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/bc7eea1c1741b4d8065711b9fac2c1e82a2d646a/%E5%9C%8B%E7%AB%8B%E9%99%BD%E6%98%8E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B8/%E5%85%AD%E5%AE%B6%E6%A0%A1%E5%8D%80/buildings/nycu-hakka-round-building/README.md)

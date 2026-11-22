@@ -1,0 +1,255 @@
+{
+  "baseline": "21879e8c7ee1124ac26cef15558e4ffddff4fcdf",
+  "source_baseline": "bc7eea1c1741b4d8065711b9fac2c1e82a2d646a",
+  "engineering_manifest": {
+    "path": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/PUBLIC-MODEL-SHA256SUMS",
+    "sha256": "6b115e6de4897246ef412042dd06b4947abe163eb423bb0ebcd2840e5029e560",
+    "old_sha256": "f347cf0ec87ace938de173325ffc0863a8f81c3b5adfc6ff037ceee0d351a8a9",
+    "updated_rows": [
+      "README.md",
+      "appearance/README.md"
+    ],
+    "rows": 55
+  },
+  "fresh_render_manifest": {
+    "blender": "4.3.2",
+    "samples": 48,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "files": [
+      {
+        "path": "previews/front.png",
+        "bytes": 1677206,
+        "sha256": "42e98002f9f311244b99e142c8929b2b1ce06930806c7a68b3abc5e2541afb65",
+        "camera": [
+          170,
+          -240,
+          180
+        ],
+        "target": [
+          0,
+          0,
+          22
+        ],
+        "ortho_scale": 235,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/rear.png",
+        "bytes": 1644404,
+        "sha256": "cee0bfd724df844b8fecd460a1687ab76575c38762fd7695f7dfbd5e1c52a480",
+        "camera": [
+          -170,
+          240,
+          180
+        ],
+        "target": [
+          0,
+          0,
+          22
+        ],
+        "ortho_scale": 235,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/elevation.png",
+        "bytes": 1623178,
+        "sha256": "8e7acdc5198b36b22db03e9759ca0d9f8cfe6819283ce8e7eb6115759156266b",
+        "camera": [
+          0,
+          -290,
+          35
+        ],
+        "target": [
+          0,
+          0,
+          25
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/top.png",
+        "bytes": 1825662,
+        "sha256": "d25c61b24eb366844f18575d4060f36a1601062604f1cc2598d24983af131d66",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    ]
+  },
+  "prior_render_manifest_sha256": "73fb56205873800a08dc78e41d4e62b911cdc9c9851d09fcc009c5f69e95bc9d",
+  "authored_renderer_inputs": {
+    "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/hakka-appearance.3mf": "df6cf7c9f708947443986a9596283a24ba00acaa975c690e431e15e0da0d6605",
+    "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/palette.json": "7347d5ddccdfa6bb2d0250e09ae1edb7ac361cf98b29f2ee585a070f404f2981",
+    "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/source/render_continuous_walls.py": "cf652dca0b31b69093f55ad74a1dfd2f6921920980dc064c447531d87ba6f410"
+  },
+  "renderer": "Blender 4.3.2 Cycles CPU, 48 samples, all four authored renderer PNGs verified byte-identical to official current source; full WebP exact decoded RGBA.",
+  "native": {
+    "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/model.stl": {
+      "sha256": "522314e6bc9582b7c6b6e0f968fc685f46f74a8b6f95fa5661f41d3ed675e84c",
+      "blob_sha": "276578f7386280a7c3d44155e041464567ef0001"
+    },
+    "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/hakka-appearance.3mf": {
+      "sha256": "df6cf7c9f708947443986a9596283a24ba00acaa975c690e431e15e0da0d6605",
+      "blob_sha": "89eeb055e134ed4e7d1f15bad66046ab67a2ee2c"
+    },
+    "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/scene.blend": {
+      "sha256": "54c6d40ef1b15925b3dfdaff20adfae95718e2e21d76af94b02068e8e8e9224f",
+      "blob_sha": "5b0df273542b550df2148debe01df2bbc62caccc"
+    }
+  },
+  "native_model_mesh": {
+    "vertices": 17374,
+    "face_materials": {
+      "0": 5415,
+      "1": 27422,
+      "2": 826,
+      "3": 468,
+      "4": 313,
+      "5": 640
+    }
+  },
+  "native_scene_rerender_semantics_sha256": "dfb16b4980c7adb0065d980c11204d8ef338930bffde5d5f4a0acdb289054290",
+  "historical_manifests": {
+    "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/SHA256SUMS.txt": "085ec11e47270b2ef80fbb94e1c058d3bcc311d952c486aea22195b7d321ed04",
+    "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/SHA256SUMS": "f32e57174ece84fbbb61eaa62a020683d18e454fe6584771abd12c478de4261d"
+  },
+  "images": [
+    {
+      "source": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/previews/front.png",
+      "source_sha256": "42e98002f9f311244b99e142c8929b2b1ce06930806c7a68b3abc5e2541afb65",
+      "source_bytes": 1677206,
+      "renderer_png_sha256": "42e98002f9f311244b99e142c8929b2b1ce06930806c7a68b3abc5e2541afb65",
+      "display": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/display/front.webp",
+      "display_bytes": 422084,
+      "display_sha256": "ea652ca54d3d4ee75eabf11dd8f4b362b9b21325943c8de402e553172af0a447",
+      "thumb": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/display/front-640.webp",
+      "thumb_sha256": "7c822114a3a7af0661eacb7bdf913752e9976bff465f90fdeea75e5f3e447bd7",
+      "rgba_sha256": "d69586273da0ee81439b27933dc14af79387d0cc172950f978eae373accb9305",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        170,
+        -240,
+        180
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 235
+    },
+    {
+      "source": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/previews/rear.png",
+      "source_sha256": "cee0bfd724df844b8fecd460a1687ab76575c38762fd7695f7dfbd5e1c52a480",
+      "source_bytes": 1644404,
+      "renderer_png_sha256": "cee0bfd724df844b8fecd460a1687ab76575c38762fd7695f7dfbd5e1c52a480",
+      "display": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/display/rear.webp",
+      "display_bytes": 398402,
+      "display_sha256": "e0ff27b1746282a9540f7dd70e8ee9351a2145a477c6f0f441af66dc2b8a5882",
+      "thumb": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/display/rear-640.webp",
+      "thumb_sha256": "72bdf40051d91a6518b8333f242c7b79f62af25712876189b2e231a3f9ae8ec2",
+      "rgba_sha256": "203948857e24d5eb8206dabefefe1dd582882f05551909b8a92adc5f5417d66c",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        -170,
+        240,
+        180
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 235
+    },
+    {
+      "source": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/previews/elevation.png",
+      "source_sha256": "8e7acdc5198b36b22db03e9759ca0d9f8cfe6819283ce8e7eb6115759156266b",
+      "source_bytes": 1623178,
+      "renderer_png_sha256": "8e7acdc5198b36b22db03e9759ca0d9f8cfe6819283ce8e7eb6115759156266b",
+      "display": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/display/elevation.webp",
+      "display_bytes": 351098,
+      "display_sha256": "f4d31e33aeb30bfdafe829f2d999c337a8e67b18da8840bc3859c0af6b0a4eb7",
+      "thumb": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/display/elevation-640.webp",
+      "thumb_sha256": "b606f558a0007da0482b1a79983017759bdcf87ef5e849ef0aba7246bbb849b0",
+      "rgba_sha256": "199cf222c5213bd65436cb63530a81d1ec3978d72f0250251e3925ae1b75ad0c",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        0,
+        -290,
+        35
+      ],
+      "target": [
+        0,
+        0,
+        25
+      ],
+      "ortho_scale": 180
+    },
+    {
+      "source": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/previews/top.png",
+      "source_sha256": "d25c61b24eb366844f18575d4060f36a1601062604f1cc2598d24983af131d66",
+      "source_bytes": 1825662,
+      "renderer_png_sha256": "d25c61b24eb366844f18575d4060f36a1601062604f1cc2598d24983af131d66",
+      "display": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/display/top.webp",
+      "display_bytes": 859254,
+      "display_sha256": "b58b3cce72f3927a8a3069ce8b6778e668b0c4b4c10fd9aef0a0e55a99f6d9b9",
+      "thumb": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/display/top-640.webp",
+      "thumb_sha256": "88ade95eae557fcb3ee30a85503f9358c1fff4be3a724309eeb0b87737b341d4",
+      "rgba_sha256": "a294f14e217cf0d8b3c3ae52cbdfabd9b044b2459e104af299a29f34711e2d5c",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180
+    }
+  ]
+}

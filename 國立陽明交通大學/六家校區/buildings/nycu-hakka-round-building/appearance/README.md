@@ -2,10 +2,10 @@
 
 沿用原 **35,084 三角面／17,374 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 後側與高扇形屋頂<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| 模型預覽 | 模型預覽 |
+| :---: | :---: |
+| [![正面](../display/front-640.webp)](../display/front.webp)<br>正面 | [![後側與高扇形屋頂](../display/rear-640.webp)](../display/rear.webp)<br>後側與高扇形屋頂 |
+| [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 | [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 |
 
 ## 本次最高中央扇形屋頂外弧緣同銀灰延伸（推估）
 
@@ -54,3 +54,5 @@
 尺寸仍為 150 × 147 × 50.4 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是六個封閉分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；環形露臺、內院欄板、扇形挑簷及細柱仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+[現行展示圖與渲染校驗](../display/README.md) · [原工程檔與舊校驗對應版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/bc7eea1c1741b4d8065711b9fac2c1e82a2d646a/%E5%9C%8B%E7%AB%8B%E9%99%BD%E6%98%8E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B8/%E5%85%AD%E5%AE%B6%E6%A0%A1%E5%8D%80/buildings/nycu-hakka-round-building/appearance/README.md)

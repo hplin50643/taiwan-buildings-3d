@@ -10,4 +10,4 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![圓樓外觀](../../docs/display/catalog/d5ca854b020f598c246520f7-640.webp) |  |  |
+| [![圓樓外觀](buildings/nycu-hakka-round-building/display/front-640.webp)](buildings/nycu-hakka-round-building/display/README.md)<br>客家文化學院圓樓 |  |  |
