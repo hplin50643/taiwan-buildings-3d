@@ -5,7 +5,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![惠蓀堂西向前棟段正面磁磚與上排玻璃限域代理](appearance/previews/front.png) |  |  |
+| [![惠蓀堂西向前棟段現版正面](display/front-current-640.webp)](display/front-current.webp) |  |  |
 
 ## 西向前棟段正面限域配色（2026-10-22）
 
