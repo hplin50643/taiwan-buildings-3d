@@ -64,13 +64,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面透視<br>[![國鼎圖書館 3D 模型正面透視](buildings/guoding-library/display/front.webp)](buildings/guoding-library/display/front.webp) | 背面透視<br>[![國鼎圖書館 3D 模型背面透視](buildings/guoding-library/display/rear.webp)](buildings/guoding-library/display/rear.webp) |  |
-
-#### 正立面
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| [![國鼎圖書館 3D 模型正立面](buildings/guoding-library/display/school-elevation.webp)](buildings/guoding-library/display/school-elevation.webp) |  |  |
+| [![國鼎圖書館 3D 模型正面透視](buildings/guoding-library/display/front.webp)](buildings/guoding-library/display/front.webp)<br>正面透視 | [![國鼎圖書館 3D 模型背面透視](buildings/guoding-library/display/rear.webp)](buildings/guoding-library/display/rear.webp)<br>背面透視 | <a name="正立面"></a>[![國鼎圖書館 3D 模型正立面](buildings/guoding-library/display/school-elevation.webp)](buildings/guoding-library/display/school-elevation.webp)<br>正立面 |
 
 以上圖片均為實際模型渲染。模型依公開外觀資訊進行近似重建，並非現場測量、BIM 施工圖或官方精確模型；未經實體試印。尺寸、簡化方式、來源與列印限制請參閱各建築的說明。
 
