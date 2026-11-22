@@ -1,0 +1,89 @@
+{
+  "source_commit": "32466cbaa96e66083c080c20aa1265d4a8f8af37",
+  "method": "fresh public exterior replay from exact saved single preview material scene",
+  "geometry": {
+    "blend": "c5665dd12bf1ed20c5b0e5884c4e30158b82e002adb3ae4543d6050c7f4b0bf4",
+    "stl": "84ba413b02325e1769923de0d95407489825128fb7b84144713f2651add2570e",
+    "triangles": 1162,
+    "vertices": 583,
+    "materials": 1
+  },
+  "no_color_or_mesh_changes": true,
+  "views": {
+    "front": {
+      "full": "front-current.webp",
+      "thumb": "front-current-640.webp",
+      "old_bytes": 1505079,
+      "full_bytes": 354442,
+      "thumb_bytes": 12150,
+      "rgba_sha256": "9530a9269e0377008d000f94e786ba7d0ba34a247d321a7d8a4b1ecbb9af10b7",
+      "full_sha256": "d0e739b4ddf4b6e3c2d090e27aa560ef36cb4c1db40a409a76fcc78829d5fb1c",
+      "thumb_sha256": "0bad47fdec2125cc5bc33a596ff37c63ff6dbcb15e743b6bdaba933dfcc50f0a",
+      "camera": {
+        "name": "front",
+        "location": [
+          155,
+          -240,
+          135
+        ],
+        "target": [
+          0,
+          0,
+          35
+        ],
+        "scale": 202.4621124267578
+      }
+    },
+    "rear": {
+      "full": "rear-current.webp",
+      "thumb": "rear-current-640.webp",
+      "old_bytes": 1430497,
+      "full_bytes": 281536,
+      "thumb_bytes": 7906,
+      "rgba_sha256": "d1cf8e2d679119e09474c93509e86caf22e7b61ba8b900fa956c3aaa1db67e3d",
+      "full_sha256": "3ebd8f219d979c240c3ef60b639923c169fd9bd0e3953989b77920dad87561a4",
+      "thumb_sha256": "df01d99df54fe56e96d9b159c5df84efd5221b052459b2ab733ac6c077ccab15",
+      "camera": {
+        "name": "rear",
+        "location": [
+          -155,
+          240,
+          145
+        ],
+        "target": [
+          0,
+          0,
+          35
+        ],
+        "scale": 202.46209716796875
+      }
+    },
+    "elevation": {
+      "full": "elevation-current.webp",
+      "thumb": "elevation-current-640.webp",
+      "old_bytes": 1313209,
+      "full_bytes": 245836,
+      "thumb_bytes": 2758,
+      "rgba_sha256": "efb9481a8a85378a8c423c1e8b8a3b78c539e24801342d8bce535ea2862e6f39",
+      "full_sha256": "08114feab332c5c5cdd7861191fbcb280b9618a2ac6e42bb10e1d6e79ea91e9a",
+      "thumb_sha256": "ed930bb5fe186a17604fa26320e2d68a7f4961f372d25bddc4e5d509ad470e9c",
+      "camera": {
+        "name": "elevation",
+        "location": [
+          0,
+          -260,
+          39
+        ],
+        "target": [
+          0,
+          0,
+          39
+        ],
+        "scale": 177.0
+      }
+    }
+  },
+  "latest_verified_parent": "2e374596448e6904aea9a8e67cc592fdcb51ab7e",
+  "latest_verified_parent_tree": "49695b7cec38f8afd258fa8fcc7646b644564d26",
+  "parent_model_matches_fresh_render_source": true
+}
