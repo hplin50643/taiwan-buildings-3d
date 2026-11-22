@@ -2,14 +2,10 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![前右視角](previews/front.png) |  |  |
+| ![前右視角](previews/front.png)<br>前右視角 | ![後左](previews/rear.png)<br>後左 | ![右立面](previews/elevation.png)<br>右立面 |
+| ![正立面](previews/side.png)<br>正立面 | ![俯視](previews/top.png)<br>俯視 |  |
 
 [後左](previews/rear.png) · [右立面](previews/elevation.png) · [正立面](previews/side.png) · [俯視](previews/top.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 後左<br>![後左](previews/rear.png) | 右立面<br>![右立面](previews/elevation.png) | 正立面<br>![正立面](previews/side.png) |
-| 俯視<br>![俯視](previews/top.png) |  |  |
 
 ## 本次九道白屋頂橫肋薄側面補色
 

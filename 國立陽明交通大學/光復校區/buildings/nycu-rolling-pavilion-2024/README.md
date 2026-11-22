@@ -2,9 +2,10 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| <a name="五張實際網格預覽"></a>五張實際網格預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![蜷蜷亭實際交付網格](previews/front.png) |  |  |
+| ![蜷蜷亭實際交付網格](previews/front.png)<br>正斜視 | ![](previews/rear.png)<br>反側 | ![](previews/elevation.png)<br>正投影 |
+| ![](previews/top.png)<br>俯視 | ![](previews/left_oblique.png)<br>左斜視 |  |
 
 > **完整可見外觀的觀察近似，不是精確 NURBS、測繪或施工模型。** 藍色薄底板是展示底座，不是現場基礎。
 
@@ -23,19 +24,5 @@
 - 農業膜以 0.9 mm 厚殼替代，Blender 用可編輯半透明展示材質；它不是實體不透光屋面。3MF 色彩不保證透明度／多料機配置；STL 單色不含透明性。
 - 前蜷曲座與後低橫凳不對稱；不新增後牆、門、中央柱、相鄰建築、樹木或地下基礎。照片可見根部保留，未推定隱藏鋼構尺寸。
 - 藍色展示底板只用於模型連通。膜、肋條、椅面、屋頂懸垂仍需評估加工、方向與支撐；**未實際列印，不宣稱直接可印、免支撐或結構安全。**
-
-## 五張實際網格預覽
-<table>
-  <tr>
-    <td align="center" valign="top"><img src="previews/front.png" alt="" width="240"><br>正斜視</td>
-    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>反側</td>
-    <td align="center" valign="top"><img src="previews/elevation.png" alt="" width="240"><br>正投影</td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>俯視</td>
-    <td align="center" valign="top"><img src="previews/left_oblique.png" alt="" width="240"><br>左斜視</td>
-    <td></td>
-  </tr>
-</table>
 
 所有預覽由交付模型渲染，不以來源照片或概念圖冒充。原創模型／程式／自渲染圖採 CC0；來源照片權利不轉移。

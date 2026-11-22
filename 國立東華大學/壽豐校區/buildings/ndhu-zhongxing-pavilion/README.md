@@ -2,9 +2,10 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| <a name="五個實際網格視角"></a>五個實際網格視角 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![忠興亭實際模型](previews/front.png) |  |  |
+| ![忠興亭實際模型](previews/front.png)<br>正斜視 | ![](previews/rear.png)<br>後斜視 | ![](previews/elevation.png)<br>正立面 |
+| ![](previews/top.png)<br>俯視 | ![側斜視：兩葉低梁與開放曲腿](previews/left_oblique.png)<br>側斜視：兩葉低梁與開放曲腿 |  |
 
 依校方兩張完整照片獨立建模，呈現東湖旁「忠興亭／東華之眼」的**兩片向外上揚半橢圓葉、共用直徑低梁、四支寬曲腿與開放亭下空間**。不是兩個完整橢圓盤，也不是完整景觀場地或精密測繪成果。
 
@@ -18,19 +19,5 @@
 約 128.20 × 104.00 × 83.96 mm。所有尺寸、曲率、坡度、截面、對稱性及格線都是照片透視下的展示近似，並非圖說或量測值。兩葉各九道平行肋、一道曲肋為簡化，不代表精確實際數量。屋面以藍灰色封閉薄片表示，原材質尚未確證；為清楚閱讀網格而採不透明展示色，不宣稱實物不透明。灰色粗邊框／曲腿為主要辨識特徵。
 
 **省略被遮蔽座椅、地形、湖面、船、石刻、文字、燈具、鏈條及隱藏基礎／接頭**，不虛構室內。四曲腿沒有新增展示底板，亭下保持開放。照片不收錄於公開包，未使用他人模型或照片貼圖。
-
-## 五個實際網格視角
-<table>
-  <tr>
-    <td align="center" valign="top"><img src="previews/front.png" alt="" width="240"><br>正斜視</td>
-    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>後斜視</td>
-    <td align="center" valign="top"><img src="previews/elevation.png" alt="" width="240"><br>正立面</td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>俯視</td>
-    <td align="center" valign="top"><img src="previews/left_oblique.png" alt="側斜視：兩葉低梁與開放曲腿" width="240"><br>側斜視：兩葉低梁與開放曲腿</td>
-    <td></td>
-  </tr>
-</table>
 
 **未實際試印，不保證免支撐或可直接列印。** 上揚薄片、曲腿及高邊緣需另行評估方向、支撐與材料；完整失敗結果見 QA。
