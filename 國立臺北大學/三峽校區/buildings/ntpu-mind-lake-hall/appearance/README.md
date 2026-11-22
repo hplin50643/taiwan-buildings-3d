@@ -1,11 +1,13 @@
-# 臺北大學心湖會館折面屋頂限定配色：三材質外觀版
+# 臺北大學心湖會館折面屋頂限定配色：歷史三材質外觀版
+
+此頁保留東端外階補色前的配色依據、模型與驗證；[現版四視角與下載](../display/README.md)另列。
 
 沿用原 **2,444 三角面／1,180 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 歷史正面 | 歷史背面 | 歷史立面 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 來源支持屋坡／混合牆面中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| 正面<br>[原正面 PNG 存檔](previews/front.png) | 來源支持屋坡／混合牆面中性<br>[原背面 PNG 存檔](previews/rear.png) | [原正立面 PNG 存檔](previews/elevation.png) |
+| [原頂視 PNG 存檔](previews/top.png) |  |  |
 
 [表面色 3MF](ntpumind-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 

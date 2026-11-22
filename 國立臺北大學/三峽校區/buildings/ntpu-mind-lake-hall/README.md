@@ -5,7 +5,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 來源支持屋坡／混合牆面中性<br>![背面](appearance/previews/rear.png) |  |
+| 正面斜視<br>[![最新版正面](display/front-current-640.webp)](display/front-current.webp) | 背面斜視<br>[![最新版背面](display/rear-current-640.webp)](display/rear-current.webp) | [四個視角與現版下載](display/README.md) |
 
 ## 東端外階補色（2026-11-20）
 
@@ -15,9 +15,9 @@
 
 | 補色前 | 補色後 |
 | :---: | :---: |
-| ![補色前端部總覽](side-color-20261120/before-end-overview.png) | ![補色後端部總覽](side-color-20261120/after-end-overview.png) |
+| [補色前端部總覽（比對存檔）](side-color-20261120/before-end-overview.png) | [補色後端部總覽（比對存檔）](side-color-20261120/after-end-overview.png) |
 | 同角度，保留原色與完整底座。 | 只變更外階豎踢面。 |
-| ![補色前豎踢面](side-color-20261120/before-stair-riser-detail.png) | ![補色後豎踢面](side-color-20261120/after-stair-riser-detail.png) |
+| [補色前豎踢面（比對存檔）](side-color-20261120/before-stair-riser-detail.png) | [補色後豎踢面（比對存檔）](side-color-20261120/after-stair-riser-detail.png) |
 | 局部裁切，同樣平光便於比較。 | 淡灰只覆豎踢面，水平踏面、中央凸條及鄰面維持中性。 |
 
 [設計單位完工實照](https://www.fieldscapedesign.com/副本-高峰國小幼稚園)的日照斜視及樓梯近軸俯視可辨端部連續淡灰踢面；[校方完工紀錄](https://new.ntpu.edu.tw/news/62bd4b68836cf05bcfa9be83/心湖會館新建工程)的暖色斜照只用於定位。模型的 12 道階梯屬前版幾何近似，並非現場分段、植栽洞與窄樓梯的一一對應。兩處被凸條扣去的原區塊未補；踏面、植栽、欄件、側牆與舊版未分界的混合材域不延伸。色值未校準，不宣稱窗牆已完成、原施工色票或 2026 現況。照片不隨包。
@@ -30,10 +30,10 @@
     blender -b appearance/scene.blend -t 2 -P side-color-20261120/apply_side_color.py -- --qa-renders
 
 
-## 3 材質外觀版（2026-10-21）
+## 歷史參考：3 材質外觀版（2026-10-21，東端外階補色前）
 
 
-[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntpumind-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+[舊版來源界線與原圖存檔](appearance/README.md) · [舊版表面色 3MF](appearance/ntpumind-appearance.3mf) · [舊版可編輯場景](appearance/scene.blend)
 
 僅原網格四組折面金屬屋坡採來源支持的銅紅色代理，中央四柱淺灰；混合材質牆面、未分草坪與鋪面、屋頂厚邊及未知區域保持中性，不聲稱整棟還原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
