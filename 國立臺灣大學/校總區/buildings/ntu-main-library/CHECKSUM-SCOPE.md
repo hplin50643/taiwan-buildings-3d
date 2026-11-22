@@ -1,3 +1,7 @@
+# 現行展示與不可變更的交付快照
+
+本次只更新兩份等同 README 的展示連結，增加現行模型的 WebP 圖，原模型、渲染 PNG 與審核檔不動。現行下載檔案及 README 使用根目錄 `SHA256SUMS`；WebP 大圖、縮圖與重渲染證據使用 [展示校驗](display/SHA256SUMS)。來源快照調和的凍結清單保持原檔，驗證其原始 README／CHECKSUM-SCOPE 時請從 [WebP 更新前的固定提交](https://github.com/hplin50643/taiwan-buildings-3d/tree/6f305e2967d5670c894ae535fa590a3df5c40679/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E7%B8%BD%E5%8D%80/buildings/ntu-main-library) 取出同一快照的檔案，不拿目前的展示文件混驗。
+
 # 來源快照調和補充為準
 
 本版本新增 [來源快照調和說明](SOURCE-REVIEW-RECONCILIATION.md) 及逐檔驗證 JSON。原獨審 SOURCE-QA 雜湊僅對應另存的審核時快照，不驗證目前同名來源檔案；原報告本身保持不變。新根 SHA256SUMS 及 SOURCE-REVIEW-RECONCILIATION-FREEZE-MANIFEST.json 核驗補充版本，原 scope FREEZE、原根表別名及原獨審維持原版本作用域。以下原說明中「當次」須依上述快照／最終檔案區別解讀。

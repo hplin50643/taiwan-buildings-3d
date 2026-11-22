@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 總圖書館<br>[![總圖書館](buildings/ntu-main-library/previews/front.png)](buildings/ntu-main-library/README.zh-TW.md) | 第一行政大樓歷史前棟<br>[![第一行政大樓歷史前棟](buildings/ntu-administration/appearance/previews/front.png)](buildings/ntu-administration/README.zh-TW.md) | 文學院歷史館舍<br>[![文學院歷史館舍](buildings/ntu-liberal-arts/appearance/previews/front.png)](buildings/ntu-liberal-arts/README.zh-TW.md) |
+| 總圖書館<br>[![總圖書館](buildings/ntu-main-library/display/front-640.webp)](buildings/ntu-main-library/README.zh-TW.md) | 第一行政大樓歷史前棟<br>[![第一行政大樓歷史前棟](buildings/ntu-administration/appearance/previews/front.png)](buildings/ntu-administration/README.zh-TW.md) | 文學院歷史館舍<br>[![文學院歷史館舍](buildings/ntu-liberal-arts/appearance/previews/front.png)](buildings/ntu-liberal-arts/README.zh-TW.md) |
 | 舊總圖書館／校史館歷史前棟<br>[![舊總圖書館／校史館歷史前棟](buildings/ntu-old-main-library/appearance/previews/front.png)](buildings/ntu-old-main-library/README.zh-TW.md) | 農業陳列館<br>[![農業陳列館](buildings/ntu-agricultural-exhibition/appearance/previews/front.png)](buildings/ntu-agricultural-exhibition/README.zh-TW.md) |  |
 
 ## 本批

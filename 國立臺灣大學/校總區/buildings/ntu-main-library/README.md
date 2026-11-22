@@ -4,12 +4,14 @@
 
 **原模型幾何完全不變：150×92×63 mm、3264 三角面，原 STL 位元組保留。** 本次僅將鐘亭正面一個無法精確對位真材界的完整 8 三角域撤回未知中性、更新 3MF 與重渲染，**不是更精密的建築重建，不增加模型套數**。後部／長側與大平屋面原本資料不足，保持中性未核，不冒稱實景全方位配色。
 
+圖像由現行彩色模型重新渲染核對。點圖開啟原尺寸 WebP；原 PNG 與舊單色預覽僅作校驗或歷史追溯。
+
 | 整體 | 反向／未核後部 | 正向 |
 |---|---|---|
-| ![彩色整體](preview.png) | ![反向](rear.png) | ![正向](front.png) |
-| ![後部](back.png) | ![西側](west.png) | ![東側](east.png) |
-| ![屋頂](top.png) | ![入口](entry-detail.png) | ![鐘塔](tower-detail.png) |
-| ![屋面](roof-detail.png) |  |  |
+| [![彩色整體](display/preview-640.webp)](display/preview.webp) | [![反向](display/rear-640.webp)](display/rear.webp) | [![正向](display/front-640.webp)](display/front.webp) |
+| [![後部](display/back-640.webp)](display/back.webp) | [![西側](display/west-640.webp)](display/west.webp) | [![東側](display/east-640.webp)](display/east.webp) |
+| [![屋頂](display/top-640.webp)](display/top.webp) | [![入口](display/entry-detail-640.webp)](display/entry-detail.webp) | [![鐘塔](display/tower-detail-640.webp)](display/tower-detail.webp) |
+| [![屋面](display/roof-detail-640.webp)](display/roof-detail.webp) |  |  |
 
 ## 彩色檔案與列印差別
 
@@ -56,9 +58,9 @@
 ## 檔案及重建
 - model.stl：列印檔。model.obj：交換格式。
 - scene.blend：由交付 STL 匯入的單網格場景，可編修網格；參數化來源為 build_model.py。
-- previews/front.png、rear.png、elevation.png：直接渲染交付 STL，非概念圖。
+- `previews/` 內的舊單色渲染為歷史校驗素材；現行展示只使用上方彩色模型 WebP。
 - Python 3.12；pip install -r requirements.txt；python build_model.py。
-- Blender 4.3.2：blender -b -t 2 -P render_preview.py。
+- `blender -b -t 2 -P render_preview.py` 僅用於隔離重建舊單色視圖；現行彩色視圖使用上方的 `render_color.py`，避免覆寫彩色場景。
 - python validate_model.py。此檢查會在暫存目錄獨立重建及重新開啟已儲存場景，並不修補交付 STL。
 - 可直接改 build_model.py 的毫米參數；修改後需重新渲染與驗證，150 mm規格亦須重新檢查。
 

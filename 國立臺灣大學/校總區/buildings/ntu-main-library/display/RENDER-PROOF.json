@@ -1,0 +1,176 @@
+{
+  "verified_model_commit": "6f305e2967d5670c894ae535fa590a3df5c40679",
+  "scene": {
+    "vertices": 1628,
+    "triangles": 3264,
+    "material_counts": [
+      753,
+      1991,
+      319,
+      16,
+      18,
+      167
+    ],
+    "material_names": [
+      "source-observed reddish brown brick, approximate",
+      "source-observed pale gray stone, approximate",
+      "source-observed dark gray blue glazing, opaque illustration",
+      "source-observed dark gray sloped roofing",
+      "source-observed muted blue green tower cap",
+      "UNVERIFIED rear mass and authored support neutral"
+    ],
+    "mesh_hash": "08e02fd237219b456dcf6420253e01085615024a3c70ad1f51dbe93c26b53a05"
+  },
+  "render_script_sha256": "f632309dfbb69444e7167e24e6583251b68cabe830225535e91f15fc5a5d218c",
+  "native_model_files": {
+    "model.stl": {
+      "blob": "4f97e971732dbfdd384d10beaad37a11871dda7b",
+      "sha256": "80f25ad47c6aa3c2918840a275709a07aeba024e064db20aaad97a4bd9d4c909"
+    },
+    "model.obj": {
+      "blob": "31fede477d1cc0b51f1ca5b7ab440ecdd0a84b1d",
+      "sha256": "326e6a030538805d11cea7e251616f2b6d34ce524a7b9c45110bb9859596e9e4"
+    },
+    "appearance.3mf": {
+      "blob": "77a6585a7d375977ca5a65673e1acf9305665d6c",
+      "sha256": "9780c34b95cb59709687a5df13b715c7eb0121d389033e62e91c67e19ea6e883"
+    },
+    "scene.blend": {
+      "blob": "d264a579e6e868c1de99e0b02ff811621eadfad9",
+      "sha256": "95297b179d382fa033091bea7df198c140a2ba382e6a10322275bf68a09e7b6f"
+    },
+    "color-mesh.npz": {
+      "blob": "e16d700ccd488e0103277c50ecd98f077e02e944",
+      "sha256": "08e02fd237219b456dcf6420253e01085615024a3c70ad1f51dbe93c26b53a05"
+    },
+    "palette.json": {
+      "blob": "66eefcaec12f9d89d8f723138e10d6be1ca857ed",
+      "sha256": "607a4e2fe488e4b18fc5c9dbd86a0d19f02d606a42c29c61619e643fc219a395"
+    }
+  },
+  "views": {
+    "preview": {
+      "source": "preview.png",
+      "source_bytes": 925512,
+      "source_sha256": "b7898188f841563f1c2bb91f137f81a605a3234e90fe7215f22175817896ef36",
+      "original_git_blob": "5e665a1bf93b1ba48b03531b640765446c6dfed4",
+      "native_rgba_sha256": "decbf6e1614632d7ba04c999de7e513d9586167755d0a98924e463e05aa3152a",
+      "original_png_same_bytes_as_replay": false,
+      "full": "preview.webp",
+      "full_bytes": 376290,
+      "thumbnail": "preview-640.webp",
+      "thumbnail_bytes": 10872
+    },
+    "rear": {
+      "source": "rear.png",
+      "source_bytes": 808597,
+      "source_sha256": "af050bb4a00691404e35cffe8ce22447518d2e06dc64ef3be72c61eff487700d",
+      "original_git_blob": "eda116af5593fbf20661dafbc061bf4abe770f02",
+      "native_rgba_sha256": "81934a65a00934513ad9783c3e11477932c02c444ac099b1d0295556bc29d1fe",
+      "original_png_same_bytes_as_replay": false,
+      "full": "rear.webp",
+      "full_bytes": 315722,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_bytes": 6518
+    },
+    "front": {
+      "source": "front.png",
+      "source_bytes": 827413,
+      "source_sha256": "9920a53f80b0a1a9bedcf9dd00f70a53e5fce76b58aa6e999c938c1ca1f8e484",
+      "original_git_blob": "9a057bff7a83039f9f263933ed244936b0ad90c7",
+      "native_rgba_sha256": "02d4ebea12c111c7efa27bf01d198bfbbec1266c840933387488d41545ea5311",
+      "original_png_same_bytes_as_replay": false,
+      "full": "front.webp",
+      "full_bytes": 307706,
+      "thumbnail": "front-640.webp",
+      "thumbnail_bytes": 7170
+    },
+    "back": {
+      "source": "back.png",
+      "source_bytes": 709924,
+      "source_sha256": "a8a3d7ef4e827313c811ca8d7dfa1f31c934b89a0711a3cc86541144e533527f",
+      "original_git_blob": "6ac763fc796cb6313bf77f32c0824025e01c600f",
+      "native_rgba_sha256": "7acf762cb29094babf8c8533a0de3ab7283138104598a020598d205b8b9f86b1",
+      "original_png_same_bytes_as_replay": false,
+      "full": "back.webp",
+      "full_bytes": 218066,
+      "thumbnail": "back-640.webp",
+      "thumbnail_bytes": 2748
+    },
+    "west": {
+      "source": "west.png",
+      "source_bytes": 712012,
+      "source_sha256": "2079921bbbe139a892951de3763135bc6b0030cc51920e4012676362b6ab713c",
+      "original_git_blob": "d5416529e948657a312df4203f94580100d9a504",
+      "native_rgba_sha256": "304478871b0f23023c7f1c69c3d61c383849f6afde80bb0c6f6fc20ca0fdfc7f",
+      "original_png_same_bytes_as_replay": false,
+      "full": "west.webp",
+      "full_bytes": 210742,
+      "thumbnail": "west-640.webp",
+      "thumbnail_bytes": 2806
+    },
+    "east": {
+      "source": "east.png",
+      "source_bytes": 671442,
+      "source_sha256": "62a1f9a70a01ca58b7d08f92244490ed943019f1ed01425ac6c7ed9ffe905a1a",
+      "original_git_blob": "58f8a52e60e94b1971f516fff46027af203d1830",
+      "native_rgba_sha256": "98d8d7d20d2fbc9f28ab6ab8b5827ccdcc038b12d14dff61c3f4bfeeeefd8684",
+      "original_png_same_bytes_as_replay": false,
+      "full": "east.webp",
+      "full_bytes": 184816,
+      "thumbnail": "east-640.webp",
+      "thumbnail_bytes": 2260
+    },
+    "top": {
+      "source": "top.png",
+      "source_bytes": 1041985,
+      "source_sha256": "b72987c243c89e834f787ebf80bf495881a82b262066f119904998e62563af8e",
+      "original_git_blob": "82e0a4c8d241ea91da008c3b6bea5e6ba2eafbae",
+      "native_rgba_sha256": "4679c77c391d71a5dba12ed641d49fa3e30e4231c69c416fb58e945b02057a71",
+      "original_png_same_bytes_as_replay": false,
+      "full": "top.webp",
+      "full_bytes": 496760,
+      "thumbnail": "top-640.webp",
+      "thumbnail_bytes": 4500
+    },
+    "entry-detail": {
+      "source": "entry-detail.png",
+      "source_bytes": 1640062,
+      "source_sha256": "c5bd43e3cd61d443f4fd080fbaeb6af19c92230c98b584e896c153d349f1cb0c",
+      "original_git_blob": "9c51a0a3429a4bad245e3054fc43f16c34d3e156",
+      "native_rgba_sha256": "824bae21e6e060ef3e5b3b75a1df012d5d868f96cbab14e70a92640abcb57064",
+      "original_png_same_bytes_as_replay": false,
+      "full": "entry-detail.webp",
+      "full_bytes": 910346,
+      "thumbnail": "entry-detail-640.webp",
+      "thumbnail_bytes": 17546
+    },
+    "tower-detail": {
+      "source": "tower-detail.png",
+      "source_bytes": 1479316,
+      "source_sha256": "2f284de5c999d755877a9c63e5a13fe2c5cbbbe3683915df3dca4365804b9c75",
+      "original_git_blob": "f4e3fed785957bafb8a559b1c205762077cb20b5",
+      "native_rgba_sha256": "a91b1c2d3f0602f2546e31bb2c1dd92801745949981610e67290ba28e2018a17",
+      "original_png_same_bytes_as_replay": false,
+      "full": "tower-detail.webp",
+      "full_bytes": 796272,
+      "thumbnail": "tower-detail-640.webp",
+      "thumbnail_bytes": 11130
+    },
+    "roof-detail": {
+      "source": "roof-detail.png",
+      "source_bytes": 1280502,
+      "source_sha256": "10bc91b131cec1555d5ac0e5c2b8b23176d2b605b02a9f9b3d4d8cd588a787e4",
+      "original_git_blob": "1490dd3dce4afca3c77852ad6a6d13e5b2c1208d",
+      "native_rgba_sha256": "4a6244227308c90bae38e10b85291adadf520ecf879e592330cb63ef887c5002",
+      "original_png_same_bytes_as_replay": false,
+      "full": "roof-detail.webp",
+      "full_bytes": 649966,
+      "thumbnail": "roof-detail-640.webp",
+      "thumbnail_bytes": 11184
+    }
+  },
+  "method": "Cold Blender rerender from pinned color mesh and palette using ten original cameras; reopened saved scene independently matched coordinates, ordered faces, material indices/names, and source hash. Pixel-identical original/replay; display WebP full is lossless, 640 thumb Lanczos quality 92. No material or geometry change.",
+  "protected_repo_cover": "docs/display/catalog/ebbbda97056bee584a2e9fe9-640.webp",
+  "limits": "No added colors: rear and long side/roof unresolved; design geometry is simplified, no physical print test."
+}
