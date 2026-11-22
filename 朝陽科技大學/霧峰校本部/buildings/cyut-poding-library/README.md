@@ -1,23 +1,25 @@
 # 波錠紀念圖書館｜來源限定外觀近似模型 v2
 
-## 側端高牆局部補色
-
-[本版範圍、視圖與驗證](side-setback-20261120/README.md) · [彩色 3MF](side-setback-20261120/appearance.3mf) · [Blender](side-setback-20261120/scene.blend)
-
-保留原 438 個已彩窗背，另將半圓端上方的高退縮側端牆 45 面補為照片近似淺冷灰。原幾何、STL 與代表圖不變，不是全棟分色。下列原圖及既有窗背版文件仍保留原版本說明。
-
 ## 模型預覽
 
 
 | 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| ![正面](appearance/previews/front.png) | ![左側](appearance/previews/left.png) | ![右側](appearance/previews/right.png) |
-| ![背面](appearance/previews/rear.png) | ![俯視](appearance/previews/top.png) |  |
+| [![正面](gallery-webp/front-current-640.webp)](gallery-webp/front-current.webp) | [![左側](gallery-webp/left-current-640.webp)](gallery-webp/left-current.webp) | [![右側](gallery-webp/right-current-640.webp)](gallery-webp/right-current.webp) |
+| [![背面](gallery-webp/rear-current-640.webp)](gallery-webp/rear-current.webp) | [![俯視](gallery-webp/top-current-640.webp)](gallery-webp/top-current.webp) |  |
+
+[渲染來源檢核](gallery-webp/render-proof.json) · [展示圖 SHA256](gallery-webp/SHA256SUMS)
+
+## 側端高牆局部補色
+
+[本版範圍、視圖與驗證](side-setback-20261120/README.md) · [彩色 3MF](side-setback-20261120/appearance.3mf) · [Blender](side-setback-20261120/scene.blend)
+
+保留原 438 個已彩窗背，另將半圓端上方的高退縮側端牆 45 面補為照片近似淺冷灰。原幾何與 STL 不變，不是全棟分色；本頁及各層目錄展示圖均由現行彩色場景重渲。
 
 朝陽科技大學・霧峰校本部。這是一件依官方樓層圖、不同年代外觀照片與航照交叉建構的可列印尺度外觀近似，**不是全館測繪、同年現況或全校完成**。背側窗序仍缺全貌，保留已知退台體量，不複製正面窗陣。
 
 
-俯視（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽） · 背立面（歷史檔案留存，不作本頁預覽） · 南端側面（歷史檔案留存，不作本頁預覽） · 北端側面（歷史檔案留存，不作本頁預覽） · [STL](model.stl) · [可編輯Blender網格](scene.blend) · [參數來源](build_model.py)
+俯視（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽） · 背立面（歷史檔案留存，不作本頁預覽） · 南端側面（歷史檔案留存，不作本頁預覽） · 北端側面（歷史檔案留存，不作本頁預覽） · [STL](model.stl) · [現行可編輯 Blender](side-setback-20261120/scene.blend) · [參數來源](build_model.py)
 
 
 ## v2 修訂與局部角損警示
@@ -64,5 +66,5 @@ Python依[requirements.txt](requirements.txt)；Blender 4.3.2。先執行build_m
 
 ## 原面有限彩色外觀層
 
-[彩色3MF、可編輯Blend與五視角](appearance/README.md)：僅438個原上部／正面窗背三角面（316灰藍窗、122淺長窗帶），709.94116457 mm²；其餘6816面中性。紅灰牆、低窗、拱背、雙折屋頂與背面不染。原7254面／3621頂點與STL bytes不變，不是全棟實景精準復原。照片EXIF原攝自述2015無offset，IPTC +0000獨立保留，2019為後製。歷史兩柱56角損樣本、最大3.495800054%損失的有限接受及v1／v2報告界限全部保留，沒有新增列印保證。
+[較早窗背材質的來源與技術紀錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8/%E6%9C%9D%E9%99%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E9%9C%A7%E5%B3%B0%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/cyut-poding-library/appearance/README.md)：僅438個原上部／正面窗背三角面（316灰藍窗、122淺長窗帶），709.94116457 mm²；其餘6816面中性。紅灰牆、低窗、拱背、雙折屋頂與背面不染。原7254面／3621頂點與STL bytes不變，不是全棟實景精準復原。照片EXIF原攝自述2015無offset，IPTC +0000獨立保留，2019為後製。歷史兩柱56角損樣本、最大3.495800054%損失的有限接受及v1／v2報告界限全部保留，沒有新增列印保證。
 
