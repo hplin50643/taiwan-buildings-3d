@@ -6,17 +6,14 @@
 
 以下均由同一可編修網格與實際面材質渲染，沒有照片貼圖、生成式背景或額外裝飾模型。正面為模型 −Y，並非地理方位；近景僅改變相機。
 
-| 左前斜視 | 右前斜視 | 正立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![左前斜視](previews/front.png) | ![右前斜視](previews/front-right.png) | ![正立面](previews/elevation.png) |
-
-| 背面（保留中性） | 左側 | 右側 |
-| :---: | :---: | :---: |
+| 左前斜視 | 右前斜視 | 正立面 |
 | ![背面](previews/rear.png) | ![左側](previews/left.png) | ![右側](previews/right.png) |
-
-| 頂視（僅前坡灰色） | 底視 | 上廊材質近景 |
-| :---: | :---: | :---: |
+| 背面（保留中性） | 左側 | 右側 |
 | ![頂視](previews/top.png) | ![底視](previews/underside.png) | ![上廊近景](previews/gallery-detail.png) |
+| 頂視（僅前坡灰色） | 底視 | 上廊材質近景 |
 
 ## 檔案與可編修性
 
