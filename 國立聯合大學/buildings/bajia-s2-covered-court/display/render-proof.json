@@ -1,0 +1,145 @@
+{
+  "base": "c1cb32dd515d9c4f1f8321478db15490f1368467",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/bajia-s2-covered-court/appearance/scene.blend",
+      "sha256": "40e63f37f03bbae544b53c7ae383052f304fb133c4703a429116f03757c493de",
+      "git_blob": "447f19d39a7857eb3bbf486a12d5eafb1916b311"
+    },
+    "appearance/nuus2-appearance.3mf": {
+      "path": "國立聯合大學/buildings/bajia-s2-covered-court/appearance/nuus2-appearance.3mf",
+      "sha256": "789a6228e66e15207eabce569fb30ce336000754caeda05410d721cd943424bc",
+      "git_blob": "377cfea718fa1354ecb527b253e658ad41801213"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/bajia-s2-covered-court/model.stl",
+      "sha256": "9d662c4ea82dc50578c63ec146973ef2385ab8cefe84048159c5c40c328b4582",
+      "git_blob": "dfceb320bae366081816da7091cc6dfe5fabbc48"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/bajia-s2-covered-court/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "dc8e6bf3f01b2ff4722bd6cc0e0d99888e6e99dc57fbf3cc1ae7ada3dbf80ea2",
+  "selection": "國立聯合大學/buildings/bajia-s2-covered-court/appearance/face-materials.json",
+  "selection_sha256": "6d267b24a32042710423eb7d8894916c44b4b386aed4dab99410cfb9aadba8b0",
+  "source_limits": "Existing source-supported metal roof (not PV) and bounded same-system support colors unchanged. Mixed white roof patches and blue column pads have no separately modeled boundaries.",
+  "triangles": 9094,
+  "vertices": 4167,
+  "materials": {
+    "0": 84,
+    "1": 84,
+    "2": 5801,
+    "3": 3101,
+    "4": 24
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 14,
+    "appearance/SHA256SUMS": 20
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1669491,
+      "sha256": "8bb09c62bea2153bd20817ec6b61aad2346c81b87d4e925026e51247b85584ac",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 210,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-s2-covered-court/appearance/previews/front.png",
+      "source_git_blob": "181aa02476a27dcdd31be07473cbe66af32d569c",
+      "rgba_sha256": "a9397e32d60efd03f2c4094a5cadef099d11ee756ddb3f5ec48e88afefb6e2bd",
+      "webp": "front.webp",
+      "webp_sha256": "745ad760489fd8b0411aef0fef241f546be3eddf5c144a527fcec560d5d8faf8",
+      "webp_bytes": 456154,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "d6e16e874796985dc152ace5c382334f8b7ad677a4e1666d48b10d20a0875421",
+      "thumbnail_bytes": 16590
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1675930,
+      "sha256": "df8d1d2572d61a1aeba4d2d907443abd7729c3f3881c57b3c80b20f818e15e55",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 210,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-s2-covered-court/appearance/previews/rear.png",
+      "source_git_blob": "80dffd4a0b988966d59b7e677f906c6c4590b600",
+      "rgba_sha256": "4cf556158c613a7d5de59b00433e1d71f9362a7f6cf37ceed1acf98a517a09ad",
+      "webp": "rear.webp",
+      "webp_sha256": "23c5543b06ec1982251617183971b3fd178cdaad4574422a0ed9217485179dd5",
+      "webp_bytes": 466404,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "13700d31f21cf4ab3c995b4ff906409af56d02f4b23e2ba1b9b9d1faa12df31b",
+      "thumbnail_bytes": 17140
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1474962,
+      "sha256": "f402921d9a32e1009e96cac56160cbe0fbd43488af9f100dc6e99e264215924f",
+      "camera": [
+        0,
+        -290,
+        24
+      ],
+      "target": [
+        0,
+        0,
+        24
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-s2-covered-court/appearance/previews/elevation.png",
+      "source_git_blob": "44de75275aa84803457e6b91015c8c153f2cb716",
+      "rgba_sha256": "197a8fe1e9196d8459247ab2d1aca169df3f03325f66f6ae1d809721f846f7d7",
+      "webp": "elevation.webp",
+      "webp_sha256": "37a171472676b90dd494fc64cc9405a7055f892b17963b3d88ed3197546e0129",
+      "webp_bytes": 220924,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "cf9142c3095af6e2df2cd9859e10b81de03effd6d6d9fe88ff3b80ec71d2ee82",
+      "thumbnail_bytes": 5232
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1587509,
+      "sha256": "fc37b4415e2ef0d77a199c35e9a43f910b7e839d95f53cbdf90b2c789a30c968",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-s2-covered-court/appearance/previews/top.png",
+      "source_git_blob": "ac1fb661c0259c2476197d61b552a77d65ef7da5",
+      "rgba_sha256": "47949eada9da75314c066a6114fe986f41fe747be221c12430062b7eb4f1a5d8",
+      "webp": "top.webp",
+      "webp_sha256": "2b4ded465d1f19de299982fce2a045a34b308421bf2559815385ca6f83dfdb23",
+      "webp_bytes": 499786,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "5f84b3a1be4c1f5f88685b13c73e49ccb43cdbff27aa5ba4628d45b682b8fd71",
+      "thumbnail_bytes": 3672
+    }
+  ]
+}
