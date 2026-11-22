@@ -1,0 +1,63 @@
+{
+  "scope": "Exact already published, monochrome Workbench model previews. Color, geometry and original provenance unchanged.",
+  "engineering_provenance_commit": "e3b5c75b384a081baf7548bc758e75189b6b12da",
+  "native_render": {
+    "blender": "4.3.2",
+    "triangles": 2614,
+    "vertices": 1301,
+    "material": "Warm stone preview only",
+    "same_rgba_through_native_png_and_full_webp": true
+  },
+  "views": {
+    "front": {
+      "published_png_git_blob": "60b5ef5db0146462a495924679066b66dc124574",
+      "published_png_sha256": "429eb6ff95bf0615441fefaccf0fc80ea14ac609e24a14d10d320534941c8506",
+      "rgba_sha256": "e3505c27711a8082a6143ea7af2189c895a6b065b4c079a51b288ca1f3789e50",
+      "native_rgba_exact": true,
+      "resolution": [
+        1000,
+        800
+      ],
+      "png_bytes": 898833,
+      "webp_bytes": 201926,
+      "webp_sha256": "3b7a6cdedd32a36d5ca357e9bf08678c1c3eb3f6c68f0a80cfec6dbe948da8d7"
+    },
+    "rear": {
+      "published_png_git_blob": "fb5abb945808f78199b934b3027b79a6e97ea1b7",
+      "published_png_sha256": "f83f0551b71688d5e66a8f7630166668541f26e4e90e3f47d710b10da178bfab",
+      "rgba_sha256": "9abaa4d0cc71f63528d8df9045aa0b144c92d6fb09e4699eee090c9304c76583",
+      "native_rgba_exact": true,
+      "resolution": [
+        1000,
+        800
+      ],
+      "png_bytes": 889672,
+      "webp_bytes": 195430,
+      "webp_sha256": "4a87306020da2223b3037464b7285b8716d75901629c0cc059b740c4874ccc23"
+    },
+    "elevation": {
+      "published_png_git_blob": "eb299c68ca044625508e4f7247e0a01fdcc68ee3",
+      "published_png_sha256": "6126714c939791e8e6ea7c9fac36831ecde0130d03abd9ea9f8cce33257c1566",
+      "rgba_sha256": "f4a76976d1569203f30f161e869ae8438ce0a4a18efdbf8f0b0eb8b118f9c83e",
+      "native_rgba_exact": true,
+      "resolution": [
+        1000,
+        800
+      ],
+      "png_bytes": 765251,
+      "webp_bytes": 108222,
+      "webp_sha256": "f0fb320e54730d4adefacb7b654838f3d62539f2a1b4718a3444f45d28c44c2a"
+    }
+  },
+  "thumbnail": {
+    "source": "front.webp",
+    "resolution": [
+      640,
+      512
+    ],
+    "encoder": "Lanczos/Pillow WebP quality 92",
+    "same_camera": true,
+    "lossless": false,
+    "sha256": "64c2dee8139c38db94550c23c1dcef104ca76ae719f2be9cd52ab2279c29b8d5"
+  }
+}
