@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![實際STL正背面](previews/front-rear.png) | ![實際STL頂視](previews/top.png) |  |
+| ![實際STL正背面](previews/front-rear.png)<br>實際STL正背面 | ![實際STL頂視](previews/top.png)<br>實際STL頂視 | ![實際STL正立面](previews/front-elevation.png)<br>實際STL正立面 |
 
 國立東華大學壽豐校區圖書館。依官方A1–6F平面及多角度實拍自建的參數化外觀近似，完整排除B棟資訊中心長條量體。沒有擷取現成3D mesh；全校及全國仍未完成。
 
@@ -19,9 +19,6 @@
 - [來源及各自支持範圍](sources.json)，[生成前逐立面觀察](facade-observations.md)
 - [模型資訊](model-info.json)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正立面<br>![實際STL正立面](previews/front-elevation.png) |  |  |
 
 含底座150 × 108 × 70.132 mm，最長150mm，每館獨立比例；單位毫米。座標+y為校園北、-y為行政大樓／南入口方向，校園軸與真北約有20度差異，未作測量級地理定位。scene.blend由實際STL匯入，為可編修網格；build_model.py是參數化重建來源，預覽色彩不隨STL保存。
 

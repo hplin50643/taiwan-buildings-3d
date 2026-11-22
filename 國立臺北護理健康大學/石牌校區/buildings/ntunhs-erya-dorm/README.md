@@ -2,18 +2,17 @@
 
 ## 模型預覽
 
-| 前斜 | 後斜 | 正立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![前斜](previews/front.png) | ![後斜](previews/rear.png) | ![正立面](previews/elevation.png) |
+| ![前斜](previews/front.png)<br>前斜 | ![後斜](previews/rear.png)<br>後斜 | ![正立面](previews/elevation.png)<br>正立面 |
+| ![屋頂](previews/top.png)<br>屋頂 | ![另一側](previews/left_oblique.png)<br>另一側斜視 |  |
 
 2021 施工履歷竣工實拍所示完整地上主要外觀之多色可編輯近似模型。**不是學思樓（11F），不包含舊圓形體育館、蕙質／蘭心、白色大屋蓋或全校地形。** 爾雅為地上13層、地下2層；本模型不還原地下室。圖中展示封底不是實際地下樓板或地形。
 
 ## 同一實際mesh五視圖
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 屋頂<br>![屋頂](previews/top.png) | 另一側斜視<br>![另一側](previews/left_oblique.png) |  |
+五個視角集中於上方的「模型預覽」。
 
 ## 檔案
 - `scene.blend`：可編輯原始三角幾何及8材質；不是照片貼圖。
