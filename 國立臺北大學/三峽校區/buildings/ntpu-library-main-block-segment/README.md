@@ -6,8 +6,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
-| 左斜視<br>![左斜視](previews/left_oblique.png) | 俯視<br>![俯視](previews/top.png) |  |
+| 正面<br>[![正面](display/front-current-640.webp)](display/front-current.webp) | 背面<br>[![背面](display/rear-current-640.webp)](display/rear-current.webp) | 正立面<br>[![正立面](display/elevation-current-640.webp)](display/elevation-current.webp) |
+| 左斜視<br>[![左斜視](display/left_oblique-current-640.webp)](display/left_oblique-current.webp) | 俯視<br>[![俯視](display/top-current-640.webp)](display/top-current.webp) |  |
 
 ## 檔案
 - `scene.blend`：可編輯真三角網格、各面材質；沒有嵌入來源照片或外部材質圖。
