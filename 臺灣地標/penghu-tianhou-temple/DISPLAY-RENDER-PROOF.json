@@ -1,0 +1,379 @@
+{
+  "blender": "4.3.2",
+  "resolution": [
+    1200,
+    900
+  ],
+  "renderer": "Cycles CPU, 48 samples, seed 0; rendering reopened exact current whole scene; no scene save",
+  "native_blend_sha256": "22c6338c0351d2609441d69feec42503098dc62b7a6f5174ad98761e11a8602a",
+  "original_stl_sha256": "bd32a0940033919d25496b511fc16fbbed9083e10f81ae0f266c16651aa3c8d1",
+  "exchange_3mf_sha256": "e47ff96f2f64d35f7cc242d6d10b9356dbf238e90c6144a3158efe75e1255e2c",
+  "native_binary_stl_oriented_triangle_coordinate_multisets_exact": true,
+  "triangles": 51852,
+  "vertices": 25904,
+  "native_exchange_triangle_and_material_order_exact": true,
+  "native_exchange_max_decimal_error_mm": 5.000000413701855e-09,
+  "cold_stl_exact": true,
+  "cold_3mf_members_exact": true,
+  "prior_package_commit": "1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8",
+  "views": {
+    "preview": {
+      "camera": {
+        "location": [
+          -220,
+          -330,
+          230
+        ],
+        "target": [
+          0,
+          0,
+          18
+        ],
+        "scale": 221.61599731445312,
+        "coordinates": [
+          0.10578042268753052,
+          0.894218921661377,
+          0.14097505807876587,
+          0.9149702787399292
+        ],
+        "rotation": [
+          1.0799086093902588,
+          -2.2039063907186573e-09,
+          -0.5880027413368225
+        ]
+      },
+      "old_png_sha256": "f72d015cdeed313cab8b990c83385600a3a4d5a799e9e869dedbdad893b3f9d2",
+      "webp": "front-oblique.webp",
+      "webp_sha256": "17422a9c9b06b69699ffcad70601af8da71419ab3ba33fe19ca1f486a4b48e96",
+      "rgba_sha256": "4adda0da991dfa4032438c19b69b7bd21639134eaedcfb339321e944502af8b5",
+      "prior_render_pixels_exact": true
+    },
+    "rear": {
+      "camera": {
+        "location": [
+          220,
+          330,
+          230
+        ],
+        "target": [
+          0,
+          0,
+          18
+        ],
+        "scale": 221.61599731445312,
+        "coordinates": [
+          0.10578083992004395,
+          0.8942191004753113,
+          0.140975683927536,
+          0.7706747651100159
+        ],
+        "rotation": [
+          1.0799083709716797,
+          -2.5202004039215353e-08,
+          2.5535900592803955
+        ]
+      },
+      "old_png_sha256": "0ca72370ac8ef66c769612367513bd141ce2f4cb271f71fad7f39c271c445b70",
+      "webp": "rear-oblique.webp",
+      "webp_sha256": "071242979c8f0279b7b104ed0a0716195a71a60ed6de0db65f12509112505174",
+      "rgba_sha256": "a08491931f1aa99825dd942909bac01bee43fe373b7bc8c072c0a848d2a1ec1f",
+      "prior_render_pixels_exact": true
+    },
+    "front": {
+      "camera": {
+        "location": [
+          0,
+          -550,
+          75
+        ],
+        "target": [
+          0,
+          0,
+          18
+        ],
+        "scale": 190.0,
+        "coordinates": [
+          0.21052631735801697,
+          0.7894737124443054,
+          0.3201020061969757,
+          0.8231048583984375
+        ],
+        "rotation": [
+          1.4675287008285522,
+          -0.0,
+          0.0
+        ]
+      },
+      "old_png_sha256": "d4f3cd06d9e2a7a8e1c9b3f483377a9f1a403e3c80b750c342bf6ff9b0a42cf7",
+      "webp": "front.webp",
+      "webp_sha256": "8eb58c927576a58cd581f83f4a45868f642ee01f467d42424402b7b7dc9afcda",
+      "rgba_sha256": "a7870f36f4175dd16fa39ee1ef60e8b2762b0f487c04d79dab7a86b8fd86a04b",
+      "prior_render_pixels_exact": true
+    },
+    "back": {
+      "camera": {
+        "location": [
+          0,
+          550,
+          75
+        ],
+        "target": [
+          0,
+          0,
+          18
+        ],
+        "scale": 190.0,
+        "coordinates": [
+          0.21052657067775726,
+          0.7894740104675293,
+          0.3201015889644623,
+          0.7478711605072021
+        ],
+        "rotation": [
+          1.4675288200378418,
+          8.695703002103983e-08,
+          3.1415927410125732
+        ]
+      },
+      "old_png_sha256": "4f48f462048b638cf7b11dedb0399344c2ec0ee0b0464b935d3ff5215a4e959f",
+      "webp": "back.webp",
+      "webp_sha256": "e96a5b2efa96833f467f5c557b6ed0f166b158a82d3bd5f2e0fb0aef0a71932d",
+      "rgba_sha256": "91dde1ebd8ca6247630c06aabf189cc5ce7ccfdae5776a2a9e17a1f375aba96c",
+      "prior_render_pixels_exact": true
+    },
+    "west": {
+      "camera": {
+        "location": [
+          -550,
+          0,
+          75
+        ],
+        "target": [
+          0,
+          0,
+          18
+        ],
+        "scale": 190.0,
+        "coordinates": [
+          0.10526303946971893,
+          0.8947367072105408,
+          0.33457037806510925,
+          0.8198500871658325
+        ],
+        "rotation": [
+          1.4675285816192627,
+          -0.0,
+          -1.5707963705062866
+        ]
+      },
+      "old_png_sha256": "63af83dd634627fb7237d98ee40f66af4921e2cdd784c1de6fd33a3d36dc12d4",
+      "webp": "west.webp",
+      "webp_sha256": "fceda0ccb979357c6ac12ffcd42e498a35ca6b3ebf5d78f31ee2a5f1b294d491",
+      "rgba_sha256": "e86ea181b7432d466cade85398f75bed28641978729ca3fb2ea8b6e934f06556",
+      "prior_render_pixels_exact": true
+    },
+    "east": {
+      "camera": {
+        "location": [
+          550,
+          0,
+          75
+        ],
+        "target": [
+          0,
+          0,
+          18
+        ],
+        "scale": 190.0,
+        "coordinates": [
+          0.10526327788829803,
+          0.8947369456291199,
+          0.33457037806510925,
+          0.8198500871658325
+        ],
+        "rotation": [
+          1.4675285816192627,
+          -0.0,
+          1.5707963705062866
+        ]
+      },
+      "old_png_sha256": "3564a2171247232fa07d5cfae84c53fab18d69a2062b779e93771a65c26eed71",
+      "webp": "east.webp",
+      "webp_sha256": "031a6a8ccce3a36a07b29e4b1eafc725db711db41baad070deca37dd37b34b5e",
+      "rgba_sha256": "3ecef4b5d41d95ee7da00972808c415e4818d0cee6e6eb27113f377620968342",
+      "prior_render_pixels_exact": true
+    },
+    "top": {
+      "camera": {
+        "location": [
+          0,
+          0,
+          550
+        ],
+        "target": [
+          0,
+          0,
+          18
+        ],
+        "scale": 279.1723327636719,
+        "coordinates": [
+          0.30298906564712524,
+          0.6970109343528748,
+          0.14179830253124237,
+          0.8582016825675964
+        ],
+        "rotation": [
+          0.0,
+          -0.0,
+          0.0
+        ]
+      },
+      "old_png_sha256": "50dfa2536bb05a5da49a9754af9cd4a444baade5ebe33d958372905a39983b7e",
+      "webp": "top.webp",
+      "webp_sha256": "678906a0fadc4d21b81a4c284c0f09dbdd530f9af5f2db859908dc132f64be98",
+      "rgba_sha256": "0adc6e9040131fe01b329832da6a2db36fe5422854d7d5cf92cf0d75db16c005",
+      "prior_render_pixels_exact": true
+    },
+    "entry-detail": {
+      "camera": {
+        "location": [
+          -45,
+          -160,
+          70
+        ],
+        "target": [
+          0,
+          -52,
+          15
+        ],
+        "scale": 65.0,
+        "coordinates": [
+          -1.0325446128845215,
+          1.4171595573425293,
+          -0.14833585917949677,
+          2.3138411045074463
+        ],
+        "rotation": [
+          1.1313655376434326,
+          -3.4539702653546556e-08,
+          -0.3947911858558655
+        ]
+      },
+      "old_png_sha256": "a377f81d9e7e14a0981d62fd00a50e8fda38d74c5040b5f91e18b5c829e76a3e",
+      "webp": "entry-detail.webp",
+      "webp_sha256": "0f972507de8db1f197c65a57b876a8e2894e20c3b7bd3dbab4ecad55946f3e00",
+      "rgba_sha256": "b2fe44028ec329d0f70621bb9245afcd21f4dcb59e3c6417c5b9c71fdeecdca9",
+      "prior_render_pixels_exact": true
+    },
+    "facade-detail": {
+      "camera": {
+        "location": [
+          110,
+          -170,
+          65
+        ],
+        "target": [
+          40,
+          -50,
+          16
+        ],
+        "scale": 50.0,
+        "coordinates": [
+          -1.3931154012680054,
+          2.0188114643096924,
+          -0.16095615923404694,
+          2.7519314289093018
+        ],
+        "rotation": [
+          1.2317097187042236,
+          -1.2446420782907808e-08,
+          0.5280745029449463
+        ]
+      },
+      "old_png_sha256": "3a643873f3ba37ae4f0a65cbdee5e9c86642161d86a8820e30a02a865e4bc6be",
+      "webp": "facade-detail.webp",
+      "webp_sha256": "ce109fb74297efe250d9d895b2ff74e50ad816268bd98f54931d33cb45a9f457",
+      "rgba_sha256": "9fce83e2a8a5e93d08298646787029f30117baa41dc75b02e53e0b57f84f5c9c",
+      "prior_render_pixels_exact": true
+    },
+    "roof-detail": {
+      "camera": {
+        "location": [
+          -90,
+          -170,
+          115
+        ],
+        "target": [
+          0,
+          -30,
+          32
+        ],
+        "scale": 100.0,
+        "coordinates": [
+          -0.530443549156189,
+          1.205989122390747,
+          -0.28403788805007935,
+          1.3852453231811523
+        ],
+        "rotation": [
+          1.1081902980804443,
+          7.809475732756255e-09,
+          -0.5713374614715576
+        ]
+      },
+      "old_png_sha256": "9562cd3797285b025304007c65349cff4713df665b900ddd7d4b87a4dfb94160",
+      "webp": "roof-detail.webp",
+      "webp_sha256": "c1f29c406fd0fb7eafba052a070e112b8ecc2200b0a1b378228f4edd03269afd",
+      "rgba_sha256": "4aef43c08edafd65b72b34be1f588859732e12a2f75cdd07f92f5bafc5018561",
+      "prior_render_pixels_exact": true
+    }
+  },
+  "representative": {
+    "path": "docs/display/catalog/f1d3d437b911d3b7b627a688-640.webp",
+    "sha256": "0c6d7b8a79235548f2119846dc40eb53e81ed2bc8fc4492f9bcc865b9226d242",
+    "bytes": 17862,
+    "prior_bytes_exact": true,
+    "derivation": "front-oblique.webp lossless decode to 640 by 480 Lanczos to WebP q92 method 6 exact"
+  },
+  "display_only": {
+    "bound_parent": "cd2698cb09b3b73d7e4ce5ea46304c1f1f1d8ef6",
+    "parent_tree": "f6da9ba51b20b3d7c3eb005e8cecbe7549bf6ef1",
+    "no_deletions": true,
+    "engineering_and_original_assets_unchanged": true,
+    "engineering_sha256sums": {
+      "SHA256SUMS": {
+        "old_byte_sha256": "0f1686e7465161dd3c11ca2c4677cb60f358133de5b978fb7fa69183415a6fc4",
+        "matches_at_exact_parent": 43,
+        "historical_original_monochrome_README_entries": [],
+        "only_new_local_difference": null
+      },
+      "SHA256SUMS.txt": {
+        "old_byte_sha256": "65032323a7e769f09158eda00a4cb0a6d6590dc2d9c7be0f9e1e4f198158a059",
+        "matches_at_exact_parent": 13,
+        "historical_original_monochrome_README_entries": [
+          "README.md"
+        ],
+        "only_new_local_difference": null
+      }
+    },
+    "historical_freeze_manifest_baseline": {
+      "FREEZE-MANIFEST.json": {
+        "matched": 28,
+        "preexisting_differences": 15
+      },
+      "PUBLICATION-SUPPLEMENT-MANIFEST.json": {
+        "matched": 30,
+        "preexisting_differences": 15
+      }
+    },
+    "original_current_readme_permanent_url": "https://github.com/hplin50643/taiwan-buildings-3d/blob/cd2698cb09b3b73d7e4ce5ea46304c1f1f1d8ef6/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/penghu-tianhou-temple/README.md",
+    "original_building_readme_sha256": "3debb007d05e45b31c0bdac4c60571dab06c3184f5ef4cd21910bbe431687516",
+    "new_display_page_sha256": "adaa8a0b30d9eadea4d9ed1565e3133e8d3cc594022474a1b14f29b88637a53d",
+    "original_building_page_keeps_pngs": true,
+    "current_full_png_bytes": 10808868,
+    "current_full_webp_bytes": 4912706,
+    "landmark_rows_changed": [
+      70
+    ]
+  }
+}
