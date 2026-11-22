@@ -1,0 +1,234 @@
+{
+  "native_blend_sha256": "28e6c69826e58297fffc446971ba54a0d3ee465b94af2d114728665e929a93c5",
+  "exchange_3mf_sha256": "ce8be524e42c974ad0abe3148e5f35712622a8b2fa7c26f4bf169e828552233e",
+  "retained_original_stl_sha256": "61d36d81b68a3f166ad27fe3adc82be30cb954c1d03a5adb803678017adfca5f",
+  "retained_original_obj_sha256": "acc6d999b813c61a6b2d0ff2f05a958a181310058867708cbaf956684de51b95",
+  "native_exchange_binary_stl_triangle_coordinates_orientations_and_order_exact": true,
+  "color_face_counts": {
+    "0": 1533,
+    "1": 1235,
+    "2": 945,
+    "4": 230,
+    "3": 351
+  },
+  "original_triangle_count": 4294,
+  "original_STL_cold_rebuild_byte_match": true,
+  "current_3MF_rebuilt_from_immutable_source_archive_byte_match": true,
+  "public_exterior_only_same_four_previously_published_views": true,
+  "root_NHRI_representative_is_administration_not_this_building": true,
+  "preconsolidation_git_revision": "1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8",
+  "cpu_cycles_samples": 48,
+  "renderer_version": "4.3.2",
+  "views": {
+    "front": {
+      "camera": {
+        "location": [
+          180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          32
+        ],
+        "scale": 225.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.09466664493083954,
+          0.2223995327949524,
+          0.9053333401679993,
+          0.7570511102676392
+        ],
+        "bbox_bounds": [
+          0.09466664493083954,
+          0.2223995327949524,
+          0.9053333401679993,
+          0.7767775058746338
+        ],
+        "rotation": [
+          1.181699275970459,
+          -1.2786353309479637e-08,
+          0.6435011029243469
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "b4ccdf0e4e8028cdd3829f4b7773c2aa55daf9c1b60b75ed2ffff6eb0ec48969",
+      "webp_sha256": "57c4bdf2d3c8a003aa1cb173512d2d55c8e4e9074bcedbbe40c51b4fe610c8ea",
+      "webp_path": "front-current.webp",
+      "comparison": "exact historical color models camera match and decoded PNG pixels; independently rerendered from exact current Blend",
+      "list_thumbnail": {
+        "sha256": "1458e411bf7c833418673a54e3ec70a661259d9457b51b6de666711f69f4c63c",
+        "byte_count": 11938,
+        "path": "front-current-640.webp",
+        "same_prior_inline_bytes": false
+      },
+      "archived_png_relative": "../appearance/previews/front.png"
+    },
+    "rear": {
+      "camera": {
+        "location": [
+          -180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          32
+        ],
+        "scale": 225.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.09466677904129028,
+          0.22239992022514343,
+          0.9053335189819336,
+          0.6288611888885498
+        ],
+        "bbox_bounds": [
+          0.09466677904129028,
+          0.22239992022514343,
+          0.9053335189819336,
+          0.7767781615257263
+        ],
+        "rotation": [
+          1.1816989183425903,
+          -5.7653000595792037e-08,
+          -2.498091459274292
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "e9a917e5390c2896d962b9a2450c7d0072c04185ddbb4fa94b98d2c8bfedab5c",
+      "webp_sha256": "e6f075022c614205c26322d43cf83c217ad4cf0f9be17444875e934cb7d108bc",
+      "webp_path": "rear-current.webp",
+      "comparison": "exact historical color models camera match and decoded PNG pixels; independently rerendered from exact current Blend",
+      "list_thumbnail": {
+        "sha256": "b17358468763d4542a3d721adc37e44eeb9d13e2ea396f66013466d7b629b2b9",
+        "byte_count": 12132,
+        "path": "rear-current-640.webp",
+        "same_prior_inline_bytes": false
+      },
+      "archived_png_relative": "../appearance/previews/rear.png"
+    },
+    "elevation": {
+      "camera": {
+        "location": [
+          0,
+          -290,
+          32
+        ],
+        "target": [
+          0,
+          0,
+          32
+        ],
+        "scale": 185.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.09459459781646729,
+          0.32702672481536865,
+          0.9054054021835327,
+          0.6718916296958923
+        ],
+        "bbox_bounds": [
+          0.09459459781646729,
+          0.32702672481536865,
+          0.9054054021835327,
+          0.6718916893005371
+        ],
+        "rotation": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "69de5ff7379cfae8b54888b7bb6cd234296cae58a025a9ff12515b6281c33233",
+      "webp_sha256": "c7dd65a367593f565fa53bced3a0188b7218f38eeb469e98feb07a0cc921f6d5",
+      "webp_path": "elevation-current.webp",
+      "comparison": "exact historical color models camera match and decoded PNG pixels; independently rerendered from exact current Blend",
+      "list_thumbnail": {
+        "sha256": "80e10f0cd71345cab0cd6ad752f2ea86be31fbb05dcc7760b50fcafcd2128949",
+        "byte_count": 7122,
+        "path": "elevation-current-640.webp",
+        "same_prior_inline_bytes": false
+      },
+      "archived_png_relative": "../appearance/previews/elevation.png"
+    },
+    "top": {
+      "camera": {
+        "location": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "scale": 180.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.0833333358168602,
+          0.21111111342906952,
+          0.9166666865348816,
+          0.7888888716697693
+        ],
+        "bbox_bounds": [
+          0.0833333358168602,
+          0.21111111342906952,
+          0.9166666865348816,
+          0.7888888716697693
+        ],
+        "rotation": [
+          0.0,
+          -0.0,
+          0.0
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "f71d846286de4ece21e4e37c88d8e4939d7251efaaa486f8a8082dc8b24853e1",
+      "webp_sha256": "28558e4a4af05421729d8431f9f0213bcebfabf45effa1a965eadd97bece6351",
+      "webp_path": "top-current.webp",
+      "comparison": "exact historical color models camera match and decoded PNG pixels; independently rerendered from exact current Blend",
+      "list_thumbnail": {
+        "sha256": "8b9e79d4afe5e9db6b5093e22205c54c49e2dbadf16c3ce00c3620ad911de992",
+        "byte_count": 5064,
+        "path": "top-current-640.webp",
+        "same_prior_inline_bytes": false
+      },
+      "archived_png_relative": "../appearance/previews/top.png"
+    },
+    "institution_catalog_thumbnail": {
+      "from": "front",
+      "webp_sha256": "1458e411bf7c833418673a54e3ec70a661259d9457b51b6de666711f69f4c63c",
+      "size": [
+        640,
+        640
+      ],
+      "path": "front-current-640.webp"
+    }
+  },
+  "display_only": true,
+  "no_files_deleted": true,
+  "exact_source_commit": "bd5c27e11d1ba0c3f9ac7c19fb3ec6ea145ab133",
+  "source_native_paths": {
+    "native_blend_sha256": "../appearance/scene.blend",
+    "exchange_3mf_sha256": "../appearance/nhrilib-appearance.3mf",
+    "retained_original_stl_sha256": "../model.stl",
+    "retained_original_obj_sha256": "../model.obj"
+  },
+  "untouched_technical_checksums": {
+    "SHA256SUMS": 12,
+    "appearance/SHA256SUMS": 21
+  }
+}
