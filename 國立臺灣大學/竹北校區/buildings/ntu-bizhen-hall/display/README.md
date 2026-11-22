@@ -4,10 +4,10 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 前斜視<br>[![前斜視](preview-640.webp)](preview.webp) | 後斜視<br>[![後斜視](rear-640.webp)](rear.webp) | 正面<br>[![正面](front-640.webp)](front.webp) |
-| 背面<br>[![背面](back-640.webp)](back.webp) | 西側<br>[![西側](west-640.webp)](west.webp) | 東側<br>[![東側](east-640.webp)](east.webp) |
-| 頂視<br>[![頂視](top-640.webp)](top.webp) | 鐘端石壁局部<br>[![鐘端石壁局部](entry-detail-640.webp)](entry-detail.webp) | 長簷前緣局部<br>[![長簷前緣局部](facade-detail-640.webp)](facade-detail.webp) |
-| 未完成屋面局部<br>[![未完成屋面局部](roof-detail-640.webp)](roof-detail.webp) |  |  |
+| [![前斜視](preview-640.webp)](preview.webp)<br>前斜視 | [![後斜視](rear-640.webp)](rear.webp)<br>後斜視 | [![正面](front-640.webp)](front.webp)<br>正面 |
+| [![背面](back-640.webp)](back.webp)<br>背面 | [![西側](west-640.webp)](west.webp)<br>西側 | [![東側](east-640.webp)](east.webp)<br>東側 |
+| [![頂視](top-640.webp)](top.webp)<br>頂視 | [![鐘端石壁局部](entry-detail-640.webp)](entry-detail.webp)<br>鐘端石壁局部 | [![長簷前緣局部](facade-detail-640.webp)](facade-detail.webp)<br>長簷前緣局部 |
+| [![未完成屋面局部](roof-detail-640.webp)](roof-detail.webp)<br>未完成屋面局部 |  |  |
 
 十張無失真全圖由現行 Blender 場景按原角度重繪驗證；保留所有角度和局部視圖，無文字覆蓋。舊單色圖不作現行預覽。
 
