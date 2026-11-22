@@ -2,10 +2,10 @@
 
 ## 模型預覽
 
-| 正面斜視 | 背面斜視 | 正立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![正面](front-current-640.webp)](front-current.webp) | [![背面](rear-current-640.webp)](rear-current.webp) | [![正立面](elevation-current-640.webp)](elevation-current.webp) |
-| [![頂視](top-current-640.webp)](top-current.webp) | | |
+| [![正面](front-current-640.webp)](front-current.webp)<br>正面斜視 | [![背面](rear-current-640.webp)](rear-current.webp)<br>背面斜視 | [![正立面](elevation-current-640.webp)](elevation-current.webp)<br>正立面 |
+| [![頂視](top-current-640.webp)](top-current.webp)<br>頂視 |  |  |
 
 四張無失真展示圖由同一份六材質 Blender 場景重繪。大小較小的縮圖可點擊放大；模型及材色不變。
 

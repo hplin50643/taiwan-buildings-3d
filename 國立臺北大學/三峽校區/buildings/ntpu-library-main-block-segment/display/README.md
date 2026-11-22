@@ -1,9 +1,9 @@
 # 國立臺北大學三峽校區圖書資訊大樓｜現版五視角
 
-| 正面斜視 | 背面斜視 | 正立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![正面](front-current-640.webp)](front-current.webp) | [![背面](rear-current-640.webp)](rear-current.webp) | [![正立面](elevation-current-640.webp)](elevation-current.webp) |
-| [![左斜視](left_oblique-current-640.webp)](left_oblique-current.webp) | [![俯視](top-current-640.webp)](top-current.webp) | |
+| [![正面](front-current-640.webp)](front-current.webp)<br>正面斜視 | [![背面](rear-current-640.webp)](rear-current.webp)<br>背面斜視 | [![正立面](elevation-current-640.webp)](elevation-current.webp)<br>正立面 |
+| [![左斜視](left_oblique-current-640.webp)](left_oblique-current.webp)<br>左斜視 | [![俯視](top-current-640.webp)](top-current.webp)<br>俯視 |  |
 
 從現版八材質 Blender 重繪原五個鏡位；大圖為無損 WebP。模型、相機、材質、首頁代表圖與原工程證據不變。
 

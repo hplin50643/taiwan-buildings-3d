@@ -2,10 +2,10 @@
 
 點選縮圖查看同一鏡位的無損 WebP 大圖。
 
-| 正面斜視 | 背面斜視 | 正立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![正面](front-current-640.webp)](front-current.webp) | [![背面](rear-current-640.webp)](rear-current.webp) | [![正立面](elevation-current-640.webp)](elevation-current.webp) |
-| [![頂視](top-current-640.webp)](top-current.webp) | | |
+| [![正面](front-current-640.webp)](front-current.webp)<br>正面斜視 | [![背面](rear-current-640.webp)](rear-current.webp)<br>背面斜視 | [![正立面](elevation-current-640.webp)](elevation-current.webp)<br>正立面 |
+| [![頂視](top-current-640.webp)](top-current.webp)<br>頂視 |  |  |
 
 四張圖從已保存的最新版 Blender 重繪。該版只補東端外階既有 12 道豎踢面（32 個三角形）的近似淡灰，未改幾何、踏面、其他材域或相機。只展示心湖會館外觀，不代表實測、現況或其他場地／室內變體。
 
