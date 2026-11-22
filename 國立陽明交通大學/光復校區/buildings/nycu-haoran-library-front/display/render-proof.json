@@ -1,0 +1,231 @@
+{
+  "baseline": "dba13237ff4d0657bc8072e1cc15fbcb4b9838e8",
+  "native_scene_rerender_semantics_sha256": "8a80a2ba65dea7cda8d4c46cc9404a6ed3a81f9e0c4ed94ae07a3ca9ac4d3763",
+  "engineering_manifest": {
+    "path": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/SHA256SUMS",
+    "sha256": "5907b729db9cdb72994e61f5b2a88cc2e5874af66eacea73f18902c33f3d8da7"
+  },
+  "fresh_render_manifest": {
+    "blender": "4.3.2",
+    "samples": 48,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "files": [
+      {
+        "path": "previews/front.png",
+        "bytes": 1743569,
+        "sha256": "b65949b60094000d52f5608ef231c89f7008c4558e92e0a0df03bd486fdaf253",
+        "camera": [
+          -180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          56
+        ],
+        "ortho_scale": 225,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/rear.png",
+        "bytes": 1575077,
+        "sha256": "22e76ffdffae0e691f96aba5668dce5f8b4ed46a0d4a131432e3db6f03d8e1d9",
+        "camera": [
+          180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          56
+        ],
+        "ortho_scale": 225,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/elevation.png",
+        "bytes": 1799670,
+        "sha256": "49c7a97ce350b59c31103e0f575582c3eb630d6f2571de5029d864eeca2add8b",
+        "camera": [
+          0,
+          -290,
+          56
+        ],
+        "target": [
+          0,
+          0,
+          56
+        ],
+        "ortho_scale": 185,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/top.png",
+        "bytes": 1610879,
+        "sha256": "451b15b71ea3205d84f0cbab8c2c55b47aba90e34187685cdd1fd656db63ff90",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    ]
+  },
+  "historical_render_manifest_sha256": "ea748a4b1068963595944f07d046bd05973c92f51d756f7e321e02e7e48334ff",
+  "known_preexisting_legacy_manifest_hashes": {
+    "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/SHA256SUMS.txt": "7d62e26e7c04822bdef8868e98df3f855a2102581a146051d96ce718cfcef0f7"
+  },
+  "authored_renderer_inputs": {
+    "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/nycuhaoran-appearance.3mf": "dec3dd59d61c8172337fc677940b852594c24cb7ce11ae46b58b01cf8bab093c",
+    "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/palette.json": "df5797e1ed5ad7703bd233d87fab6165f8f0c7916d9fb1e05a43e39833eb1f2b",
+    "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/source/render_appearance.py": "8dbd8223823967a0378ceb0ce5d08da1a6f6c337ea8827b69b5770b6eb11ca77"
+  },
+  "renderer": "Blender 4.3.2 CPU, 48 samples; all four freshly authored-pipeline PNGs byte-identical to current source previews; full-WebP decoded RGBA exact. Thumbnails are same-angle 640×640 lossy derivatives.",
+  "native": {
+    "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/model.stl": {
+      "sha256": "55416fcc20a3eccf1a7fabc89bf98536ee480b3bbe29811909240edab37b857d",
+      "blob_sha": "5abba23011b991ed74ccc79f965d862f496c24e2"
+    },
+    "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/nycuhaoran-appearance.3mf": {
+      "sha256": "dec3dd59d61c8172337fc677940b852594c24cb7ce11ae46b58b01cf8bab093c",
+      "blob_sha": "6dee5243e3565dfdbc584ab49422124661a390d0"
+    },
+    "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/scene.blend": {
+      "sha256": "3815636456f1bccf5cd1c6ed2f3c6374c367a635aab4d4ad3ae54642c0416264",
+      "blob_sha": "928f5b7054c8a141531c8c109fd98affd1901a34"
+    }
+  },
+  "native_model_mesh": {
+    "vertex_count": 2269,
+    "triangles": 4566,
+    "material_face_counts": {
+      "0": 1068,
+      "1": 1659,
+      "2": 224,
+      "3": 1568,
+      "4": 47
+    }
+  },
+  "images": [
+    {
+      "source": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/previews/front.png",
+      "source_sha256": "b65949b60094000d52f5608ef231c89f7008c4558e92e0a0df03bd486fdaf253",
+      "source_bytes": 1743569,
+      "renderer_png_sha256": "b65949b60094000d52f5608ef231c89f7008c4558e92e0a0df03bd486fdaf253",
+      "display": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/display/front.webp",
+      "display_sha256": "a696f721257f35060e961fb3fa8ece6c1666bf0b4ac845b4f9ec46a18e1fc2d0",
+      "display_bytes": 501322,
+      "thumb": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/display/front-640.webp",
+      "thumb_sha256": "fa5742c45679f2c0c85a6b7caccea7aa4aca291157a5ca422ce61c958710edf4",
+      "rgba_sha256": "73921668cc444e13f946c816c2ed30d703b190b00fdf98d7f8b1ff4097b71d48",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225
+    },
+    {
+      "source": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/previews/rear.png",
+      "source_sha256": "22e76ffdffae0e691f96aba5668dce5f8b4ed46a0d4a131432e3db6f03d8e1d9",
+      "source_bytes": 1575077,
+      "renderer_png_sha256": "22e76ffdffae0e691f96aba5668dce5f8b4ed46a0d4a131432e3db6f03d8e1d9",
+      "display": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/display/rear.webp",
+      "display_sha256": "619c18f6e959ee8e3e9ff8954c2c4443217e22a1028729518e7a50c1b37229a6",
+      "display_bytes": 422496,
+      "thumb": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/display/rear-640.webp",
+      "thumb_sha256": "5fa448f33b917312c583db9c04075b04c9c1e2f3ef37a43ebe01b9fbfc87d29d",
+      "rgba_sha256": "c80637b22e27fb2dd682d3de999b88e0f16f092a777c3d2fa4bf1335fb3fc95f",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225
+    },
+    {
+      "source": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/previews/elevation.png",
+      "source_sha256": "49c7a97ce350b59c31103e0f575582c3eb630d6f2571de5029d864eeca2add8b",
+      "source_bytes": 1799670,
+      "renderer_png_sha256": "49c7a97ce350b59c31103e0f575582c3eb630d6f2571de5029d864eeca2add8b",
+      "display": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/display/elevation.webp",
+      "display_sha256": "82a9689a81dc55e0f81e080c60474f9e0437403f516df01dacaaa0d6fbcb097a",
+      "display_bytes": 636458,
+      "thumb": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/display/elevation-640.webp",
+      "thumb_sha256": "28aef9d8c39e585962f44232dee4d8af85bf7a7f41de4fa04e98ea1faedf78ba",
+      "rgba_sha256": "0a447a4f67b20d1a335e0661d153da49e2654dcf7e605d1751176495009b7bd8",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        -290,
+        56
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 185
+    },
+    {
+      "source": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/appearance/previews/top.png",
+      "source_sha256": "451b15b71ea3205d84f0cbab8c2c55b47aba90e34187685cdd1fd656db63ff90",
+      "source_bytes": 1610879,
+      "renderer_png_sha256": "451b15b71ea3205d84f0cbab8c2c55b47aba90e34187685cdd1fd656db63ff90",
+      "display": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/display/top.webp",
+      "display_sha256": "55cc3bf3db5e68de019330a3d14b412d2315ec3cfca7d70c5355c61da5fc3980",
+      "display_bytes": 465384,
+      "thumb": "國立陽明交通大學/光復校區/buildings/nycu-haoran-library-front/display/top-640.webp",
+      "thumb_sha256": "e6f43ef9407bf6fecaf5311fb46c103fa1b58a004043cef01945f896dc3ab746",
+      "rgba_sha256": "d2bd4325cb72c51f0b86dceceb67520a621aae18b209f80240660e88714325c5",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180
+    }
+  ]
+}
