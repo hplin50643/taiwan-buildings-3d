@@ -1,0 +1,152 @@
+{
+  "base": "f05a9dcad16883835017b0056b3d0267d73db073",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/scene.blend",
+      "sha256": "e947e07c230a7e043be3e6fcbbf1a967363a81d4a698f829b61d4b94a102262d",
+      "git_blob": "c7e4d42cb75b44cdfdccb208b3dde10484f606a6"
+    },
+    "appearance/nuuq1-appearance.3mf": {
+      "path": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/nuuq1-appearance.3mf",
+      "sha256": "020cf855703de75cce0db3b621f2438a012324503eb2571fd2214cfd63da6083",
+      "git_blob": "3aa3b1f591e881ae2d1fe81f492f4aca19cb4036"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/model.stl",
+      "sha256": "4728cfad77601086a6b032a7d6da06535ba29e2134a37e0c9f3d322f3d0bac46",
+      "git_blob": "24b03f1e57a3e0accfe52c62ea00fb2b49660c86"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four current appearance-ledger PNGs using historical unchanged camera positions decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "d7d3bf7c90edf50df3362185a4bf3258cb3bf4e5219ae6886340a98a2c7e4571",
+  "selection": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/face-materials.json",
+  "selection_sha256": "1a416ae3c6f118dbb98b5a46266281f224deef7ee37a4a96aa0244a4fabf6192",
+  "source_limits": "Existing 18 cool-gray tower soffit triangles only; right hall historical aerial scope unchanged; unknown rear/roof neutral",
+  "triangles": 4300,
+  "vertices": 2100,
+  "materials": {
+    "0": 585,
+    "1": 521,
+    "2": 126,
+    "3": 408,
+    "4": 1792,
+    "5": 752,
+    "7": 64,
+    "6": 52
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 17,
+    "appearance/SHA256SUMS": 32
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1641520,
+      "sha256": "0baf7dd39f72fef2088de90fda68ef92ff55cadb0e2c13fca6b4b55a4ffc0d2f",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        28
+      ],
+      "ortho_scale": 230,
+      "all_vertices_in_frame": true,
+      "historical_png_sha256": "d6dec3198f879212efc56db0265acbbd03d9b4a66f67c35fd951ce954c385836",
+      "source_path": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/previews/front.png",
+      "source_git_blob": "42b0ce93820e06b77b459f43660a28f79f648f90",
+      "rgba_sha256": "69eb88b7f76b8c8c1e48153336dc65eec55cc17daf33429f20d01cd3be0bb46c",
+      "webp": "front.webp",
+      "webp_sha256": "da47bcc65862116ca634f962974adbf38420436e66632b7306609a31bb56f698",
+      "webp_bytes": 360124,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "1ec3a626032a65496bc5d1a7f4d04609df763f4ca7c7436fc987e259896b3351",
+      "thumbnail_bytes": 13102
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1562974,
+      "sha256": "d8f089efb1806f410796e238e6f6609135cc07756a20b3bf44f18e86e0790688",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        28
+      ],
+      "ortho_scale": 230,
+      "all_vertices_in_frame": true,
+      "historical_png_sha256": "d8f089efb1806f410796e238e6f6609135cc07756a20b3bf44f18e86e0790688",
+      "source_path": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/previews/rear.png",
+      "source_git_blob": "5df45015f449bf563b36c98208447e8f9bafe2ed",
+      "rgba_sha256": "e14164cc45f7d5c2430dee626eeecbe306679b26605351de3ef5d18e94b72a85",
+      "webp": "rear.webp",
+      "webp_sha256": "e1aecf9af46c4857198861540a009b078eece694a617f2753efcc07104c71a96",
+      "webp_bytes": 325566,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "f2d5566a30b615010037d416cc9523edc7a72f79850c62d559b8b01a98f15a99",
+      "thumbnail_bytes": 6796
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1594264,
+      "sha256": "601fb69d63e1eb6eeb3bd5becce3439d12f8214e9fb05e6fac8386854d90d3e8",
+      "camera": [
+        0,
+        -290,
+        31
+      ],
+      "target": [
+        0,
+        0,
+        29
+      ],
+      "ortho_scale": 190,
+      "all_vertices_in_frame": true,
+      "historical_png_sha256": "c8d281afd636009389eacbf44d314ad7e7773806ef175117befa2ccb7c228ae9",
+      "source_path": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/previews/elevation.png",
+      "source_git_blob": "54998a976a574151463601f808c069cfd9a9fdd2",
+      "rgba_sha256": "04b4c65a4072f43cb9a4b34fc38d31d12fd6854d291b48440d874876fd501f81",
+      "webp": "elevation.webp",
+      "webp_sha256": "282a55169bcf0cbab135b055a21aca66f4e9b44dfcb4105872c15b4254580ab2",
+      "webp_bytes": 312830,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "2fe70befe375a3621aa340f41c85406ba6adb2b49561d75cf6aef081d6b6d849",
+      "thumbnail_bytes": 9620
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1675385,
+      "sha256": "f770fa5a4c036902ca5ce1f8e4edd3198573bc253f60de2a1d4b032cea47db50",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "historical_png_sha256": "02534f4171ecb7fc6c8c6ba9255dfad70125e99925f6510a8a9b2f80c6a013f7",
+      "source_path": "國立聯合大學/buildings/bajia-q1-arts-teaching-center/appearance/previews/top.png",
+      "source_git_blob": "c6e7d974ba877027db55056b2c5813766dc83aa1",
+      "rgba_sha256": "16882fafbfd3ccefa991deb69df725f822eb9b3d17d75410491f95f709fd3486",
+      "webp": "top.webp",
+      "webp_sha256": "38be8de7532af4a96258a428d0561873088c5cc52e77aba82a657df5f5ef732c",
+      "webp_bytes": 597102,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "2e8a0bc0cae22abeb1c88acc5ba4787ffc3d62639e7b501cbe86d4c181281fd3",
+      "thumbnail_bytes": 6006
+    }
+  ]
+}

@@ -25,7 +25,7 @@
 | [![第三宿舍（影山樓）：正面](buildings/erping-m3-yingshan-dorm/appearance/previews/front.png)](buildings/erping-m3-yingshan-dorm/README.md)<br>**[第三宿舍（影山樓）](buildings/erping-m3-yingshan-dorm/)** | [![第四宿舍（霽齋樓）：正面](buildings/erping-m4-jizhai-dorm/appearance/previews/front.png)](buildings/erping-m4-jizhai-dorm/README.md)<br>**[第四宿舍（霽齋樓）](buildings/erping-m4-jizhai-dorm/)** | [![二坪山 M5 第五宿舍（恕先樓）：正面](buildings/erping-m5-shuxian-dorm/appearance/previews/front.png)](buildings/erping-m5-shuxian-dorm/README.md)<br>**[二坪山 M5 第五宿舍（恕先樓）](buildings/erping-m5-shuxian-dorm/)** |
 | [![八甲 M6 第六宿舍：正面](buildings/bajia-m6-sixth-dorm/display/front-640.webp)](buildings/bajia-m6-sixth-dorm/display/README.md)<br>**[八甲 M6 第六宿舍](buildings/bajia-m6-sixth-dorm/)** | [![二坪山 M7 第七宿舍（雙電樓）：正面](buildings/erping-m7-shuangdian-dorm/display/front-640.webp)](buildings/erping-m7-shuangdian-dorm/README.md)<br>**[二坪山 M7 第七宿舍（雙電樓）](buildings/erping-m7-shuangdian-dorm/)** | [![二坪山 M8 第八宿舍（國鼎館）：正面](buildings/erping-m8-kuoting-dorm/display/front-640.webp)](buildings/erping-m8-kuoting-dorm/display/README.md)<br>**[二坪山 M8 第八宿舍（國鼎館）](buildings/erping-m8-kuoting-dorm/)** |
 | [![八甲 M10 第十宿舍＋M11 第十一宿舍（連通建築群）：正面](buildings/bajia-m10-m11-dorm-complex/display/front-640.webp)](buildings/bajia-m10-m11-dorm-complex/display/README.md)<br>**[八甲 M10 第十宿舍＋M11 第十一宿舍（連通建築群）](buildings/bajia-m10-m11-dorm-complex/display/README.md)** | [![大禮堂、體育館及活動中心：正面](buildings/erping-j1-auditorium-gym-activity-center/display/front-640.webp)](buildings/erping-j1-auditorium-gym-activity-center/display/README.md)<br>**[大禮堂、體育館及活動中心](buildings/erping-j1-auditorium-gym-activity-center/display/README.md)** | [![教學大樓（一）：正面](buildings/erping-k2-teaching-building-1/display/front-640.webp)](buildings/erping-k2-teaching-building-1/README.md)<br>**[教學大樓（一）](buildings/erping-k2-teaching-building-1/)** |
-| [![教學大樓（二）：正面](buildings/erping-k3-teaching-building-2/appearance/previews/front.png)](buildings/erping-k3-teaching-building-2/README.md)<br>**[教學大樓（二）](buildings/erping-k3-teaching-building-2/)** | [![資訊大樓與國際會議中心低層連通部分：正面](buildings/bajia-i1-r1-information-conference/display/front-640.webp)](buildings/bajia-i1-r1-information-conference/display/README.md)<br>**[資訊大樓與國際會議中心低層連通部分](buildings/bajia-i1-r1-information-conference/display/README.md)** | [![藝文教學中心（藝術中心）：正面](buildings/bajia-q1-arts-teaching-center/appearance/previews/front.png)](buildings/bajia-q1-arts-teaching-center/README.md)<br>**[藝文教學中心（藝術中心）](buildings/bajia-q1-arts-teaching-center/)** |
+| [![教學大樓（二）：正面](buildings/erping-k3-teaching-building-2/appearance/previews/front.png)](buildings/erping-k3-teaching-building-2/README.md)<br>**[教學大樓（二）](buildings/erping-k3-teaching-building-2/)** | [![資訊大樓與國際會議中心低層連通部分：正面](buildings/bajia-i1-r1-information-conference/display/front-640.webp)](buildings/bajia-i1-r1-information-conference/display/README.md)<br>**[資訊大樓與國際會議中心低層連通部分](buildings/bajia-i1-r1-information-conference/display/README.md)** | [![藝文教學中心（藝術中心）：正面](buildings/bajia-q1-arts-teaching-center/display/front-640.webp)](buildings/bajia-q1-arts-teaching-center/display/README.md)<br>**[藝文教學中心（藝術中心）](buildings/bajia-q1-arts-teaching-center/display/README.md)** |
 | [![二坪山景觀餐廳：正面](buildings/erping-v1-landscape-restaurant/display/front-current-640.webp)](buildings/erping-v1-landscape-restaurant/display/README.md)<br>**[二坪山景觀餐廳](buildings/erping-v1-landscape-restaurant/)** | [![八甲景觀餐廳：正面](buildings/bajia-v2-landscape-restaurant/appearance/previews/front.png)](buildings/bajia-v2-landscape-restaurant/README.md)<br>**[八甲景觀餐廳](buildings/bajia-v2-landscape-restaurant/)** | [![八甲機電中心：正面](buildings/bajia-t2-mep-center/appearance/previews/front.png)](buildings/bajia-t2-mep-center/README.md)<br>**[八甲機電中心](buildings/bajia-t2-mep-center/)** |
 | [![二坪山蓮荷水世界游泳館：正面](buildings/erping-s1-lotus-aquatic-center/appearance/previews/front.png)](buildings/erping-s1-lotus-aquatic-center/README.md)<br>**[二坪山蓮荷水世界游泳館](buildings/erping-s1-lotus-aquatic-center/)** | [![八甲風雨球場：正面](buildings/bajia-s2-covered-court/appearance/previews/front.png)](buildings/bajia-s2-covered-court/README.md)<br>**[八甲風雨球場](buildings/bajia-s2-covered-court/)** | [![八甲田徑運動場司令台：正面](buildings/bajia-athletics-grandstand/display/front-640.webp)](buildings/bajia-athletics-grandstand/display/README.md)<br>**[八甲田徑運動場司令台](buildings/bajia-athletics-grandstand/display/README.md)** |
 | [![八甲生活館圓廳：正面](buildings/bajia-v3-round-hall/appearance/previews/front.png)](buildings/bajia-v3-round-hall/README.md)<br>**[八甲生活館圓廳](buildings/bajia-v3-round-hall/)** | [![二坪山教職員宿舍可見建築群：正面](buildings/erping-faculty-housing-visible-complex/appearance/previews/front.png)](buildings/erping-faculty-housing-visible-complex/README.md)<br>**[二坪山教職員宿舍可見建築群](buildings/erping-faculty-housing-visible-complex/)** | [![二坪山正門校名塔與附屬警衛室外觀段：實際模型正面](buildings/erping-main-gate-tower-guardhouse-segment/previews/front.png)](buildings/erping-main-gate-tower-guardhouse-segment/README.md)<br>**[二坪山正門校名塔與附屬警衛室外觀段](buildings/erping-main-gate-tower-guardhouse-segment/README.md)** |
@@ -541,13 +541,13 @@
 <details>
 <summary>查看模型說明、檔案與各角度預覽</summary>
 
-校區：八甲。 [原始檔與說明](buildings/bajia-q1-arts-teaching-center/)
+校區：八甲。 [現行彩色展示](buildings/bajia-q1-arts-teaching-center/display/README.md)
 
 模型外框尺寸（毫米；X × Y × Z）：150 × 100 × 61。資料來源：manifest.json。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![藝文教學中心（藝術中心）：正面](buildings/bajia-q1-arts-teaching-center/appearance/previews/front.png)](buildings/bajia-q1-arts-teaching-center/appearance/previews/front.png) | 背面預覽<br>[![藝文教學中心（藝術中心）：背面](buildings/bajia-q1-arts-teaching-center/appearance/previews/rear.png)](buildings/bajia-q1-arts-teaching-center/appearance/previews/rear.png) |  |
+| 正面預覽<br>[![藝文教學中心（藝術中心）：正面](buildings/bajia-q1-arts-teaching-center/display/front-640.webp)](buildings/bajia-q1-arts-teaching-center/display/front.webp) | 背面預覽<br>[![藝文教學中心（藝術中心）：背面](buildings/bajia-q1-arts-teaching-center/display/rear-640.webp)](buildings/bajia-q1-arts-teaching-center/display/rear.webp) |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
@@ -719,7 +719,7 @@
 
 [二坪 S1 蓮荷水世界外觀與來源界線](buildings/erping-s1-lotus-aquatic-center/appearance/README.md)
 
-[Q1 藝文教學中心外觀與來源界線](buildings/bajia-q1-arts-teaching-center/appearance/README.md)
+[Q1 藝文教學中心外觀與來源界線](buildings/bajia-q1-arts-teaching-center/display/README.md)
 
 [A2 理工二館外觀與來源界線](buildings/bajia-a2-science-engineering-2/appearance/README.md)
 
