@@ -1,0 +1,145 @@
+{
+  "base": "f05a9dcad16883835017b0056b3d0267d73db073",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立清華大學/校本部/buildings/nthu-bailing-hall-front/appearance/scene.blend",
+      "sha256": "0c52c8ee03c7a32bb5255dc74b9a578195e381bd933fb8786af7c00b381b2d8d",
+      "git_blob": "2f58518fa6d3f8abe70918dc131570a8149d306a"
+    },
+    "appearance/nthubailing-appearance.3mf": {
+      "path": "國立清華大學/校本部/buildings/nthu-bailing-hall-front/appearance/nthubailing-appearance.3mf",
+      "sha256": "34508b478b1f4b068e9a3e3f463fc26416057d43b2a9b46306e074c8b972a4ec",
+      "git_blob": "985bbe13a58bc55db356c311c74485633da43105"
+    },
+    "model.stl": {
+      "path": "國立清華大學/校本部/buildings/nthu-bailing-hall-front/model.stl",
+      "sha256": "dd4e8970dfa0bb56a7960558ed12f2942245bbe51d92a0d0741505115cf64bd3",
+      "git_blob": "8c462441c9c071cadae46146c0343f3ea63b67ac"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立清華大學/校本部/buildings/nthu-bailing-hall-front/appearance/qa-continuous-walls/render-manifest.json",
+  "render_manifest_sha256": "4ab64eee52f796290b9b647b012c15a38ddbad7eb4408565f65fe23803459b61",
+  "triangles": 4066,
+  "vertices": 1751,
+  "materials": {
+    "0": 424,
+    "3": 28,
+    "1": 2966,
+    "2": 616,
+    "4": 24,
+    "5": 8
+  },
+  "retained_side_rear_inferred_faces": 8,
+  "historical_checksum_counts": {
+    "hash-manifest.json": 15,
+    "appearance/SHA256SUMS": 32,
+    "PUBLIC-MODEL-SHA256SUMS": 30
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1636361,
+      "sha256": "c314944bcb73cdca10f5f614ca77e58fe1f12a982e3523ece6531a35dccdff89",
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-bailing-hall-front/appearance/previews/front.png",
+      "source_git_blob": "ce42044e45afd5edcced34c60b722c05ce9a1d31",
+      "rgba_sha256": "1586cf0ee03adc45678b8a011bd931c742386e9a23eab784356f549ce034ac0f",
+      "webp": "front.webp",
+      "webp_sha256": "1186d0f8ceaae18fa80da1bc354b7d837abb939529cc19813dc15cb5697b96f5",
+      "webp_bytes": 390388,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "60905d1f20f6012a184581b6f7d3e8761df2e3c62e19c040d121f70700b0acb8",
+      "thumbnail_bytes": 13162
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1555841,
+      "sha256": "7a262cb108c445046cfefc1cd31a7ad9bf07a6512cc437637469e9c68f0c1610",
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-bailing-hall-front/appearance/previews/rear.png",
+      "source_git_blob": "858690b81cd6b25e6bfcd01eb5d5e8f205ccc590",
+      "rgba_sha256": "4b7bd41ff3e5dffd1be2b0f2fde5076937eb1f891a793a71a41443b3e1d7463f",
+      "webp": "rear.webp",
+      "webp_sha256": "f38d7c7c619731813f41954a9b84b8f484d51f6c55ba15fcceb570d6ae684cfd",
+      "webp_bytes": 356026,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "66af66118ef8ea124dab549a81c91d3db8d8583851ce215dfa4472b24cc98db8",
+      "thumbnail_bytes": 6686
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1556017,
+      "sha256": "faff8547a92a19c46cc8a301a2ea7809c75aad471753afbe8a9e05fd00b6779f",
+      "camera": [
+        0,
+        -290,
+        56
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-bailing-hall-front/appearance/previews/elevation.png",
+      "source_git_blob": "577dd022ec3391d979f3ff461fa1c330d8e260d4",
+      "rgba_sha256": "5d13a7f4164d81206bd3ea2742c055156e1fabe2051b82fc2e0ffc94b99dbfd8",
+      "webp": "elevation.webp",
+      "webp_sha256": "9abb37e6e71579b9b0a4e895fa1ccc1b005b2bc0cc58dc275ba0937d258a2f06",
+      "webp_bytes": 271756,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "57fa72ab9cc261d475fba03adf8d8805514d81344c4530bb8c9c5f1f34fe8528",
+      "thumbnail_bytes": 8132
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1634801,
+      "sha256": "c04e7239dc1200ac6cf0d91a1ceca6ebefa8bb043df6041713812ef0d4069cf2",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-bailing-hall-front/appearance/previews/top.png",
+      "source_git_blob": "0a04b2d43c3e2ac4a95213d3a98ddfbba99748e9",
+      "rgba_sha256": "074c35e65087e37190936b5a173d9b70ae4a1359751c244fd783e7dfa9654625",
+      "webp": "top.webp",
+      "webp_sha256": "aac738688e920045174ed40f7237f92f166e46a7f345c5221c162e7dc0fb0f02",
+      "webp_bytes": 587180,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "b0412c74579c6027e75bdac3f08f87d20fc0ef8ec6669e9d7109115372e49496",
+      "thumbnail_bytes": 4328
+    }
+  ]
+}
