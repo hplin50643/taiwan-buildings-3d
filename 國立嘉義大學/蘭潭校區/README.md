@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| A01 行政中心（中正樓）<br>[![A01 行政中心（中正樓）](../../docs/display/catalog/8697370ee20f4f9764747ae9-640.webp)](buildings/ncyu-lantan-administration/) | A31 圖書資訊館前棟段<br>[![A31 圖書資訊館前棟段](../../docs/display/catalog/31c48ea87f5a8ea4befca678-640.webp)](buildings/ncyu-lantan-library-front-section/) | 嘉農鐘樓<br>[![嘉農鐘樓](../../docs/display/catalog/942ce7468e5ec334c54625e8-640.webp)](buildings/ncyu-jianong-clock-tower/) |
+| A01 行政中心（中正樓）<br>[![A01 行政中心（中正樓）](../../docs/display/catalog/8697370ee20f4f9764747ae9-640.webp)](buildings/ncyu-lantan-administration/display/README.md) | A31 圖書資訊館前棟段<br>[![A31 圖書資訊館前棟段](../../docs/display/catalog/31c48ea87f5a8ea4befca678-640.webp)](buildings/ncyu-lantan-library-front-section/) | 嘉農鐘樓<br>[![嘉農鐘樓](../../docs/display/catalog/942ce7468e5ec334c54625e8-640.webp)](buildings/ncyu-jianong-clock-tower/) |
 | [<img src="../../docs/display/catalog/649b7788788801848f02a9d8-640.webp" alt="嘉禾館1981–1982修訂歷史外觀實際模型，非現況" width="220">](buildings/ncyu-lantan-jiahe-gymnasium-historical-design/README.md)<br>**[嘉禾館｜1981–1982修訂歷史設計](buildings/ncyu-lantan-jiahe-gymnasium-historical-design/README.md)**<br>[STL](buildings/ncyu-lantan-jiahe-gymnasium-historical-design/model.stl) · [彩色3MF](buildings/ncyu-lantan-jiahe-gymnasium-historical-design/model.3mf) · [Blender](buildings/ncyu-lantan-jiahe-gymnasium-historical-design/scene.blend) |  |  |
 
 這是分批外觀建模，未完成全校區。官方校圖代碼按用途或场域整理，不能直接當實際棟數。
