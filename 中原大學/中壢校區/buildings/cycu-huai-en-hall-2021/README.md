@@ -3,9 +3,9 @@
 ## 模型預覽
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 歷史主屋面同系統／牆面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](../../../../docs/display/catalog/cycu-huai-en-hall-2021/front.webp)](../../../../docs/display/catalog/cycu-huai-en-hall-2021/front.webp) | [![背面](../../../../docs/display/catalog/cycu-huai-en-hall-2021/rear.webp)](../../../../docs/display/catalog/cycu-huai-en-hall-2021/rear.webp) |
+| :---: | :---: |
+| 正面 | 背面，牆面為中性模型代理 |
 
 ## 2 材質外觀版（2026-10-21）
 
@@ -21,7 +21,8 @@
 ## 檔案
 
 - [model.stl](model.stl)：單一連通可列印網格
-- [scene.blend](scene.blend)：由交付STL匯入的可編修網格，毫米單位
+- [現行外觀 Blender](appearance/scene.blend)：與表面色 3MF 對應的可編輯場景
+- [原幾何 Blender 歷史留檔](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb73b166b25fec6cd6baa2dbf1de43608375e558/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/%E4%B8%AD%E5%A3%A2%E6%A0%A1%E5%8D%80/buildings/cycu-huai-en-hall-2021/scene.blend)：由交付 STL 匯入，供核對與重建沿革，不是現行外觀版
 - [build_model.py](build_model.py)：原創參數幾何的重建來源
 - [render_preview.py](render_preview.py)：只讀實際STL渲染預覽
 - [sources.json](sources.json)：逐來源URL、年代、支持的形體與限制

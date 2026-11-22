@@ -2,10 +2,11 @@
 
 沿用原 **7,906 三角面／3,869 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| [![正面](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/front.webp)](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/front.webp) | [![背面](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/rear.webp)](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/rear.webp) | [![正立面](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/elevation.webp)](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/elevation.webp) |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 歷史主屋面同系統／牆面中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| 正面 | 背面，牆面為中性模型代理 | 正立面 |
+| [![頂視](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/top.webp)](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/top.webp) |  |  |
+| 頂視 |  |  |
 
 [表面色 3MF](cycuhuaien-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
@@ -30,7 +31,7 @@
 3. `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_appearance.py`
 4. `blender -b -t 3 --python-exit-code 1 -P appearance/source/verify_scene.py`
 
-[獨立重建 ZIP](rebuild-source.zip)含原 STL、四支程式及依賴，不含第三方照片；不取代原建模腳本。[逐檔 SHA256](SHA256SUMS)
+[獨立重建 ZIP](rebuild-source.zip)含原 STL、四支程式及依賴，不含第三方照片；不取代原建模腳本。[逐檔 SHA256](SHA256SUMS) · [WebP 展示校驗](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/SHA256SUMS) · [同場景重渲染紀錄](../../../../../docs/display/catalog/cycu-huai-en-hall-2021/RENDER-PROOF.json)
 
 [交換／拓撲 QA](qa/exchange-validation.json)核對原座標與面序、全部面材質、單連通、有向水密邊、頂點 link 單環、正體積與零退化／重複面；lib3mf 嚴格讀取零警告，實際編輯單材質再存讀，其他材質及面指派不變。SDK 六位小數量化誤差另列。
 
