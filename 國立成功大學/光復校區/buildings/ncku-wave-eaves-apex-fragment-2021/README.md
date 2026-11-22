@@ -27,12 +27,17 @@
 - STL 已封閉且單一連通，但**薄截面檢查未全過**；斜木、接頭、0.6 mm 雙木條縫及上尖端仍需自行評估支撐、朝向及加工。未實際切片、列印或結構測試，不承諾可直接列印或免支撐。
 
 ## 五個真實網格視圖
-| 正斜視 | 背斜視 | 投影正視 |
-|---|---|---|
-| ![](previews/front.png) | ![](previews/rear.png) | ![](previews/elevation.png) |
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視（淺深度估計）<br>![](previews/top.png) | 左斜視<br>![](previews/left_oblique.png) |  |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front.png" alt="" width="240"><br>正斜視</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>背斜視</td>
+    <td align="center" valign="top"><img src="previews/elevation.png" alt="" width="240"><br>投影正視</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>俯視（淺深度估計）</td>
+    <td align="center" valign="top"><img src="previews/left_oblique.png" alt="" width="240"><br>左斜視</td>
+    <td></td>
+  </tr>
+</table>
 
 上述五圖由交付網格渲染，沒有以來源照片或概念示意圖冒充模型。照片投影正視僅為模型觀看角度，不代表實物測繪正立面。模型及原創程式 CC0；第三方照片不隨包分發。

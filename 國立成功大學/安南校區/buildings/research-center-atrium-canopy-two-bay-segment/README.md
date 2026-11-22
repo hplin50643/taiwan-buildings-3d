@@ -23,14 +23,18 @@
 屋皮材質／透明度不明，採中性銀灰不透明薄皮；省略密集平行細條、螺栓和不可辨設備。鋼構深灰。藍色展示切端座刻意與建築區分，不宣稱照片中存在藍色構件。照片拍攝日期未知；2003 是作品頁完工年，非照片年份，2018 URL 路徑不是拍攝證據，也不稱為 2026 現況。
 
 ## 五個實際網格視角
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正斜視<br>![](previews/front.png) | 後斜視<br>![](previews/rear.png) | 正立面<br>![](previews/elevation.png) |
-| 俯視<br>![](previews/top.png) |  |  |
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![低角度看開放桁架與檁條](previews/left_oblique.png) |  |  |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front.png" alt="" width="240"><br>正斜視</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>後斜視</td>
+    <td align="center" valign="top"><img src="previews/elevation.png" alt="" width="240"><br>正立面</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>俯視</td>
+    <td align="center" valign="top"><img src="previews/left_oblique.png" alt="低角度看開放桁架與檁條" width="240"><br>低角度看開放桁架與檁條</td>
+    <td></td>
+  </tr>
+</table>
 
 ## 重建
 Python 依賴見 requirements.txt；執行 `python build_model.py`、`python qa_model.py`、`python check_features.py`；Blender 執行 `blender -b --python render_model.py`。SDK 驗證需 lib3mf；可用 `BUILD_PYTHON` 指定含 manifold3d 的 Python。

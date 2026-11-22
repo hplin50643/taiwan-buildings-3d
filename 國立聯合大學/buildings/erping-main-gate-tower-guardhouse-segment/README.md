@@ -33,13 +33,18 @@ NUU Erping Shan central gate-name tower and attached guard booth, approximate ex
 
 ## 五視角
 
-| 前右 | 正面 | 後側簡化封閉 |
-|---|---|---|
-| ![](previews/front.png) | ![](previews/elevation.png) | ![](previews/rear.png) |
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂面近似<br>![](previews/top.png) | 前左<br>![](previews/left_oblique.png) |  |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front.png" alt="" width="240"><br>前右</td>
+    <td align="center" valign="top"><img src="previews/elevation.png" alt="" width="240"><br>正面</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>後側簡化封閉</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>頂面近似</td>
+    <td align="center" valign="top"><img src="previews/left_oblique.png" alt="" width="240"><br>前左</td>
+    <td></td>
+  </tr>
+</table>
 
 ## 重建
 

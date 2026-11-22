@@ -20,13 +20,17 @@
 **省略被遮蔽座椅、地形、湖面、船、石刻、文字、燈具、鏈條及隱藏基礎／接頭**，不虛構室內。四曲腿沒有新增展示底板，亭下保持開放。照片不收錄於公開包，未使用他人模型或照片貼圖。
 
 ## 五個實際網格視角
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正斜視<br>![](previews/front.png) | 後斜視<br>![](previews/rear.png) | 正立面<br>![](previews/elevation.png) |
-| 俯視<br>![](previews/top.png) |  |  |
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![側斜視：兩葉低梁與開放曲腿](previews/left_oblique.png) |  |  |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front.png" alt="" width="240"><br>正斜視</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>後斜視</td>
+    <td align="center" valign="top"><img src="previews/elevation.png" alt="" width="240"><br>正立面</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>俯視</td>
+    <td align="center" valign="top"><img src="previews/left_oblique.png" alt="側斜視：兩葉低梁與開放曲腿" width="240"><br>側斜視：兩葉低梁與開放曲腿</td>
+    <td></td>
+  </tr>
+</table>
 
 **未實際試印，不保證免支撐或可直接列印。** 上揚薄片、曲腿及高邊緣需另行評估方向、支撐與材料；完整失敗結果見 QA。

@@ -1,12 +1,17 @@
 # 國立臺北大學綜合體育館彩色凸窗入口立面段
 
-| 入口斜視 | 正立面 | 右側斜視 |
-| :---: | :---: | :---: |
-| ![入口斜視](front-current.webp) | ![正立面](elevation-current.webp) | ![右側斜視](right_oblique-current.webp) |
-
-| 俯視 | 背面展示切面 | |
-| :---: | :---: | :---: |
-| ![俯視](top-current.webp) | ![背面展示切面](rear-current.webp) | |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="front-current.webp" alt="入口斜視" width="240"><br>入口斜視</td>
+    <td align="center" valign="top"><img src="elevation-current.webp" alt="正立面" width="240"><br>正立面</td>
+    <td align="center" valign="top"><img src="right_oblique-current.webp" alt="右側斜視" width="240"><br>右側斜視</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="top-current.webp" alt="俯視" width="240"><br>俯視</td>
+    <td align="center" valign="top"><img src="rear-current.webp" alt="背面展示切面" width="240"><br>背面展示切面</td>
+    <td></td>
+  </tr>
+</table>
 
 [Blender 色版](../scene.blend) · [3MF 色版](../model.3mf) · [單色列印 STL](../model.stl)
 

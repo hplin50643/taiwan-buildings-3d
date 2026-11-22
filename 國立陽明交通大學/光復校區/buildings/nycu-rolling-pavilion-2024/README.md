@@ -25,12 +25,17 @@
 - 藍色展示底板只用於模型連通。膜、肋條、椅面、屋頂懸垂仍需評估加工、方向與支撐；**未實際列印，不宣稱直接可印、免支撐或結構安全。**
 
 ## 五張實際網格預覽
-| 正斜視 | 反側 | 正投影 |
-|---|---|---|
-| ![](previews/front.png) | ![](previews/rear.png) | ![](previews/elevation.png) |
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![](previews/top.png) | 左斜視<br>![](previews/left_oblique.png) |  |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front.png" alt="" width="240"><br>正斜視</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>反側</td>
+    <td align="center" valign="top"><img src="previews/elevation.png" alt="" width="240"><br>正投影</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>俯視</td>
+    <td align="center" valign="top"><img src="previews/left_oblique.png" alt="" width="240"><br>左斜視</td>
+    <td></td>
+  </tr>
+</table>
 
 所有預覽由交付模型渲染，不以來源照片或概念圖冒充。原創模型／程式／自渲染圖採 CC0；來源照片權利不轉移。

@@ -18,12 +18,17 @@
 ## 交付檔
 `model.stl` 幾何、`model.3mf` 面色、`scene.blend`（成品及隱藏可編輯預布林零件）、建模／渲染／驗證腳本及六張實際 Blender 渲染。
 
-| 正立面 | 後方（中性補足） | 側面 |
-|---|---|---|
-| ![](previews/front_elevation.png) | ![](previews/rear.png) | ![](previews/left_end.png) |
-
-| 俯視 | 第二斜視 |
-|---|---|
-| ![](previews/top.png) | ![](previews/entry_detail.png) |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front_elevation.png" alt="" width="240"><br>正立面</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>後方（中性補足）</td>
+    <td align="center" valign="top"><img src="previews/left_end.png" alt="" width="240"><br>側面</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>俯視</td>
+    <td align="center" valign="top"><img src="previews/entry_detail.png" alt="" width="240"><br>第二斜視</td>
+    <td></td>
+  </tr>
+</table>
 
 原始來源及限制見 [SOURCES.md](SOURCES.md)，重建見 [REBUILD.md](REBUILD.md)。參考照片沒有收進發佈包，沒有影像貼圖。

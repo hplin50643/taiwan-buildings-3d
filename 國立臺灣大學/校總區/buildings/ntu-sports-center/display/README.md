@@ -1,12 +1,17 @@
 # 國立臺灣大學綜合體育館
 
-| 正面 | 背面 | 正立面 |
-| :---: | :---: | :---: |
-| ![正面](front-current.webp) | ![背面](rear-current.webp) | ![正立面](elevation-current.webp) |
-
-| 頂視 | | |
-| :---: | :---: | :---: |
-| ![頂視](top-current.webp) | | |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="front-current.webp" alt="正面" width="240"><br>正面</td>
+    <td align="center" valign="top"><img src="rear-current.webp" alt="背面" width="240"><br>背面</td>
+    <td align="center" valign="top"><img src="elevation-current.webp" alt="正立面" width="240"><br>正立面</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="top-current.webp" alt="頂視" width="240"><br>頂視</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 [目前 Blender 色版](../appearance/scene.blend) · [目前 3MF 色版](../appearance/ntusports-appearance.3mf) · [單色幾何 STL](../model.stl)
 

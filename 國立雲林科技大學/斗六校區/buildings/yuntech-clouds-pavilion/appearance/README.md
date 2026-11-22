@@ -2,13 +2,18 @@
 
 由既有觀雲閣 STL 的實際三角面製作，不改輪廓、不加構件、不增加模型包數。**原 STL 位元保留；2,013 頂點／4,118 三角面的座標及面序完全不變，沒有細分。** 原底座與柱廊仍為簡化幾何，不是實景完整重建。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面：粉陶塔身與石色基座<br>![正面](previews/front.png) | 背面：對稱近似外推<br>![背面](previews/rear.png) |  |
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 頂視：未見屋面保持中性<br>![頂視](previews/top.png) |  |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front.png" alt="正面" width="240"><br>正面：粉陶塔身與石色基座</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="背面" width="240"><br>背面：對稱近似外推</td>
+    <td align="center" valign="top"><img src="previews/elevation.png" alt="正立面" width="240"><br>正立面</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="頂視" width="240"><br>頂視：未見屋面保持中性</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 ## 下載與編輯
 
