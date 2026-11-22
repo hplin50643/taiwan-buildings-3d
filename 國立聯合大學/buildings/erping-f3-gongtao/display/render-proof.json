@@ -1,0 +1,152 @@
+{
+  "base": "6f305e2967d5670c894ae535fa590a3df5c40679",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/erping-f3-gongtao/appearance/scene.blend",
+      "sha256": "671f198a42a2f82e3e0ada2ef83b0df311dc7cc8d3758353e0035371236b48e6",
+      "git_blob": "25e859ecd6b648bc4e8bd44b8abc8f60a3b81231"
+    },
+    "appearance/nuuf3-appearance.3mf": {
+      "path": "國立聯合大學/buildings/erping-f3-gongtao/appearance/nuuf3-appearance.3mf",
+      "sha256": "3d3ac5af64d8f593dfdfa7a6bc1cffc8aa06cdfe34f34cb0615619ca4b482a3e",
+      "git_blob": "0b73c9bc43406cb434d9174bc4fe1c76a7b48ba9"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/erping-f3-gongtao/model.stl",
+      "sha256": "1a2d5f2d7c8a07f8b613266e3e0b283d88ea10f76551e01e06656b2c1ca8ea7d",
+      "git_blob": "d320dff3bf389174a308396a01362ce00b2b1157"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four current PUBLIC-MODEL-ledger PNGs using historical camera-only records decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/erping-f3-gongtao/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "faf7be31f75ec3ff11218a02759a84e6dbda98af53f0c6e9509fe8e910849c97",
+  "selection": "國立聯合大學/buildings/erping-f3-gongtao/appearance/face-materials.json",
+  "selection_sha256": "9e6f647102398a03b79bd523efd21395d00d53884d56440349a943c057e0d820",
+  "source_limits": "Existing entrance upper three riser fronts only; unsupported sides, rear and roof PV neutral",
+  "triangles": 7840,
+  "vertices": 3776,
+  "materials": {
+    "0": 3168,
+    "1": 1463,
+    "5": 287,
+    "2": 665,
+    "3": 1401,
+    "4": 94,
+    "7": 710,
+    "6": 46,
+    "8": 6
+  },
+  "historical_checksum_counts": {
+    "PUBLIC-MODEL-SHA256SUMS": 14
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1764608,
+      "sha256": "1ef6f094cb4c6197139e955abf575dbda8f43895cb02f109c8272dace37b8180",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        36
+      ],
+      "ortho_scale": 210,
+      "all_vertices_in_frame": true,
+      "historical_png_sha256": "02b3891942f330af918c67ca05bd2b08d9bcdd68dea4d406b088bda2dd7d826b",
+      "source_path": "國立聯合大學/buildings/erping-f3-gongtao/appearance/previews/front.png",
+      "source_git_blob": "66bbfee7c0ea020115660c9cebfe2490b252992e",
+      "rgba_sha256": "3639b4740ce956bbd6bec23545d7b312fb6f55fe5f5a05431deb02387c0e76e6",
+      "webp": "front.webp",
+      "webp_sha256": "a64ef12dc12c46488291cbcdcde6f22814b5b2ed087dd8c7cc6457cfd4b1219f",
+      "webp_bytes": 549038,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "7c95c496af8aa611ce88ba15b6d12227435d327129b73075e794b0a41d405f32",
+      "thumbnail_bytes": 20178
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1624046,
+      "sha256": "e08ff5e399dee8b7eaf62b84cdddae62a75536b2fce96f29232eaa8efa1905cf",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        36
+      ],
+      "ortho_scale": 210,
+      "all_vertices_in_frame": true,
+      "historical_png_sha256": "f3222d7ab3abc914f4a45d1cce2aee134d84ade077e4951416321f257b15cf5c",
+      "source_path": "國立聯合大學/buildings/erping-f3-gongtao/appearance/previews/rear.png",
+      "source_git_blob": "7cadae9e39bb361bfe952f90b19f7bd598a48122",
+      "rgba_sha256": "f9c83377f04f4986a18a23b4cd4746bef053ef7c8a1054891dc913d71ac33c84",
+      "webp": "rear.webp",
+      "webp_sha256": "559196e1e9eef567cfb1d37f4ebbed248cda0b0fb6019ea18be8ffbda3e0be32",
+      "webp_bytes": 468214,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "a4e523a27d2dce177ab8d0ef1cab6bb2110f38bbefca46fbefbea696647f5a40",
+      "thumbnail_bytes": 11852
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1676883,
+      "sha256": "06b485e99141528c40fe8a76d08d726d5d95f74eec2f26d9b7c55cda57795ca3",
+      "camera": [
+        0,
+        -290,
+        38
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "historical_png_sha256": "b518cb2d7d2bcc75015e3c41c71fbfc6eee152f09baf0707cb8db8a4b7a023f5",
+      "source_path": "國立聯合大學/buildings/erping-f3-gongtao/appearance/previews/elevation.png",
+      "source_git_blob": "d23910d951bfd50f942ccef9013ce094605d9cb5",
+      "rgba_sha256": "1248001658fe2d3afe85340e26da69100b0cac143681b44fa8f5223dd293d6bc",
+      "webp": "elevation.webp",
+      "webp_sha256": "b1191dd55314f836e27b767a351f5ae3d73d567ee1f6ec4be79191d3d8924292",
+      "webp_bytes": 482122,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "717d29a5def196a229df8ff527acdd5ccde7bc30877cf20e698deb8d6d1b6456",
+      "thumbnail_bytes": 14526
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1678606,
+      "sha256": "03bf391743f64974042aa588e266cf3a84ec7230d1d3d192e1fa7be24aef045d",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "historical_png_sha256": "fe67b9c5ef78c5cc964066275016cb7faa222678c00b457bbe9e6466d4167832",
+      "source_path": "國立聯合大學/buildings/erping-f3-gongtao/appearance/previews/top.png",
+      "source_git_blob": "390afa5d16edab9bf960cfe660a98338c985b17e",
+      "rgba_sha256": "4045ec4e7df52682803ba3a27c719c19cc3bac74c0716e1766d4e325084b0b7b",
+      "webp": "top.webp",
+      "webp_sha256": "d6d9492d46772f7ec705d795d613d698f9749551b2baff9168ebbf6535a6ae14",
+      "webp_bytes": 636812,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "dce6d1b2b752c67deac9714e04f83f90f338f4a4f65adf9ae433a7762921e630",
+      "thumbnail_bytes": 9502
+    }
+  ]
+}
