@@ -1,0 +1,145 @@
+{
+  "base": "4b3264c4d85c78f4c242bc7e9336d2a3dbdfd11d",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/bajia-b3-photonics-engineering/appearance/scene.blend",
+      "sha256": "e778dcdca1330aaee92bec27bd52a73b40a1369440a0b00c0f4797ba36fccfc3",
+      "git_blob": "fa31dd8308bb9844b0237bbcc9e27d341759167a"
+    },
+    "appearance/nuub3-appearance.3mf": {
+      "path": "國立聯合大學/buildings/bajia-b3-photonics-engineering/appearance/nuub3-appearance.3mf",
+      "sha256": "9aa1ac63b1742481ccfa81124f95cd3f70f4a8d03cce7e00e1f9a787982c436f",
+      "git_blob": "6a6ca88d079ee32dea6a91b140c08754872afe22"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/bajia-b3-photonics-engineering/model.stl",
+      "sha256": "942763d15936f2e908229036293b8089e634478a1a88e1d1c5795a5d31c41a43",
+      "git_blob": "2a2f139736a38bed7044b01f8262b8474af3fabc"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/bajia-b3-photonics-engineering/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "c93535fdb52534261e470a2642eb0412d8382c02fbe33f62b66f063e425f6553",
+  "triangles": 14880,
+  "vertices": 7364,
+  "materials": {
+    "7": 95,
+    "1": 3152,
+    "4": 6475,
+    "0": 2287,
+    "3": 44,
+    "5": 488,
+    "2": 284,
+    "6": 2055
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 12,
+    "appearance/SHA256SUMS": 21
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1646347,
+      "sha256": "ff5bf97a6a7780c32f8123574a995aa5531628e885188a3a2af4e7dd5f7af295",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 240,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b3-photonics-engineering/appearance/previews/front.png",
+      "source_git_blob": "f5f4d4d36b31c52181fad58b2306aca8b8c9e1bb",
+      "rgba_sha256": "038d68fe05f92387c826ebfce016565b1cef8690eb4cbae2e24d48498f13850f",
+      "webp": "front.webp",
+      "webp_sha256": "6587320857b933472f0e2d8477c35701921199bda511da092fb8c5afff8a5918",
+      "webp_bytes": 356494,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "f9a790421ca019ba9f5cd877a3c7eca1a5b2f5f695c47a0f555e9dd7c6c8dc11",
+      "thumbnail_bytes": 15578
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1582411,
+      "sha256": "d06a5fe1e072a27375498877358ca314c819821f0dffa5b9b669eea095affb65",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 240,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b3-photonics-engineering/appearance/previews/rear.png",
+      "source_git_blob": "801c68fa99de166934d48972470e4cf01d8b9e2d",
+      "rgba_sha256": "bfc3c8b0f82030035f4b1c86ed09bb5d0e1df983f24912cf6735ee764fd401d4",
+      "webp": "rear.webp",
+      "webp_sha256": "c6a10ad8312e59945a0fbed3f316b6747ea23d6ee4e590e35fdbea6f4b3d7bde",
+      "webp_bytes": 312536,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "b646e858daec31155ed38634b0c40228247de2020a29d55337284c6715ef3d3d",
+      "thumbnail_bytes": 9434
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1656764,
+      "sha256": "9d31c99766ed02455e9f1e3eba07c0fe1ebc247a478574b2dd9ffd93034346fa",
+      "camera": [
+        0,
+        -290,
+        31
+      ],
+      "target": [
+        0,
+        0,
+        39
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b3-photonics-engineering/appearance/previews/elevation.png",
+      "source_git_blob": "2dd0e3fb8525fa4041f3ef1562588421ddae80d9",
+      "rgba_sha256": "a00b4a6d39cdcf9162b534f47c96a2656896dd4ed36fa205728f001df173f7c2",
+      "webp": "elevation.webp",
+      "webp_sha256": "efc5916d9a6e4983929cbe27755ebd5f9e8a3634dca36fa4388a08b88c2157ba",
+      "webp_bytes": 404248,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "bf5eb3690a296b3b692c42fdc9f002acb38feb77148df5646fce8e2c7662acb2",
+      "thumbnail_bytes": 12162
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1662904,
+      "sha256": "d07e788d14c6f9af7a5d74c5b7d0099eef41d0548679326db255949a6465a1e9",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b3-photonics-engineering/appearance/previews/top.png",
+      "source_git_blob": "3fdaf0cffced4ecd3fdcb058d70458e5c3c2bfab",
+      "rgba_sha256": "423c3795a947b7de63bf43c05f90e033b541e864828647014ca16d9cce84dc26",
+      "webp": "top.webp",
+      "webp_sha256": "53f4c436b5965003d7a4a02ec74c6b1f038d4856f5a896fa01bbf26079e83058",
+      "webp_bytes": 566012,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "af1ba55424c6f611383f11d4a8770b7f66092bbc1f00f8b425ac8974b8bbb63a",
+      "thumbnail_bytes": 6598
+    }
+  ]
+}
