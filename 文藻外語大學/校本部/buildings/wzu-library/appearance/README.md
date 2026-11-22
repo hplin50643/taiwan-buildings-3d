@@ -2,11 +2,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面，可見已配色區與中性側面<br>![正面](previews/front.png) | 背面，未經此次照片覆核的材料維持中性<br>![背面](previews/rear.png) |  |
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視，未確認屋頂維持中性<br>![頂視](previews/top.png) | 正立面，四道磚／玻璃帶及柱廊<br>![正立面](previews/elevation.png) |  |
+| ![正面](previews/front.png)<br>正面，可見已配色區與中性側面 | ![背面](previews/rear.png)<br>背面，未經此次照片覆核的材料維持中性 | ![頂視](previews/top.png)<br>頂視，未確認屋頂維持中性 |
+| ![正立面](previews/elevation.png)<br>正立面，四道磚／玻璃帶及柱廊 |   |   |
 
 ## 本次屋簷左右與後緣米白延伸（推估）
 
