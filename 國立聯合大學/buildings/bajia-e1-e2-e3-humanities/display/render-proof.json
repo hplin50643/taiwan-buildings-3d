@@ -1,0 +1,235 @@
+{
+  "baseline": "f6ad167fd224c0c237ca82f7c03f6e7e990d285a",
+  "engineering_manifest": {
+    "path": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/PUBLIC-MODEL-SHA256SUMS",
+    "sha256": "6eb7ac89b62627af2f6c5724e1f97e11adada62bef99675ea8910381ffc80889"
+  },
+  "fresh_render_manifest": {
+    "blender": "4.3.2",
+    "samples": 48,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "files": [
+      {
+        "path": "previews/front.png",
+        "bytes": 1730151,
+        "sha256": "f965e3732794e178721b0dccf163259d62393ac80355c53a3af717cd7431a123",
+        "camera": [
+          -180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          29
+        ],
+        "ortho_scale": 220,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/rear.png",
+        "bytes": 1586634,
+        "sha256": "62a33fb4c9a60a7ba5c045ba5d70c82f9ee65e533b7185c5c3afbfa1d5d356ae",
+        "camera": [
+          180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          29
+        ],
+        "ortho_scale": 220,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/elevation.png",
+        "bytes": 1620927,
+        "sha256": "8c89e4b9bd617138c1b83d82497880c84052f4d686b8b0a0edf0e86934dab919",
+        "camera": [
+          0,
+          -290,
+          31
+        ],
+        "target": [
+          0,
+          0,
+          30
+        ],
+        "ortho_scale": 190,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/top.png",
+        "bytes": 1776944,
+        "sha256": "45489f5dd991de3cee4c99acb4604d240d4462d1235ed5d66e64b52a0ee7c3b4",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    ]
+  },
+  "historical_render_manifest_sha256": "6e4bcfcf1ad4e8ca031d5d479e9e12683829a798bf404e69418675068b7e4672",
+  "known_preexisting_legacy_manifest_hashes": {
+    "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/SHA256SUMS": "abfae78d896a99ffeba9a2dcd80e5ff2799f8ed71e361404138b0c14c744aae7"
+  },
+  "authored_renderer_inputs": {
+    "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/nuue-appearance.3mf": "b744f68b49f8fdaaea69d0b0ff3ca6c6c83da83e4f952b0323a85d8c6388758e",
+    "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/palette.json": "29d490f3ca6cb7ff14211527e815d3b1ced5e3943c0950eee54fa8ef8be41888",
+    "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/source/render_appearance.py": "7291ebb3d93a0967b52f9a331045ab533e8be68043d98edd319a08689db3473f",
+    "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/source/render_current.py": "0fb8930ee05eb38c6850dbb93aa3c488be95f8b1b0fe996808cee0b26a2f1695"
+  },
+  "renderer": "Blender 4.3.2 CPU, 48 samples; all four freshly authored-pipeline PNGs byte-identical to current source previews; full-WebP decoded RGBA exact. Thumbnails are same-angle 640×640 lossy derivatives.",
+  "native": {
+    "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/model.stl": {
+      "sha256": "6a5a4b4415b5423da6be30f3455de6678f2cd41d35702bd76cf6d72f8e4b94c8",
+      "blob_sha": "f2c43fc8bc5e79440daf7996f572aa3248d373b3"
+    },
+    "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/nuue-appearance.3mf": {
+      "sha256": "b744f68b49f8fdaaea69d0b0ff3ca6c6c83da83e4f952b0323a85d8c6388758e",
+      "blob_sha": "2a89a2d7b37fb8db4bf5075176098f40dfae1c08"
+    },
+    "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/scene.blend": {
+      "sha256": "72863fc4deee40dd1eaaeaacff7bc00e700746208a0d97969388041124c2e22c",
+      "blob_sha": "448f648ba2b8da29f50adbe4138c593639a77093"
+    }
+  },
+  "native_model_mesh": {
+    "vertex_count": 3453,
+    "triangles": 6918,
+    "material_face_counts": {
+      "0": 3140,
+      "1": 601,
+      "2": 1040,
+      "3": 264,
+      "4": 2,
+      "5": 380,
+      "6": 132,
+      "7": 1264,
+      "8": 95
+    }
+  },
+  "images": [
+    {
+      "source": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/previews/front.png",
+      "source_sha256": "f965e3732794e178721b0dccf163259d62393ac80355c53a3af717cd7431a123",
+      "source_bytes": 1730151,
+      "renderer_png_sha256": "f965e3732794e178721b0dccf163259d62393ac80355c53a3af717cd7431a123",
+      "display": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/display/front.webp",
+      "display_sha256": "e925337fa1521965772bc1c246feacfef445f6ea5c6f399f07e2f7f45b4aa8b4",
+      "display_bytes": 467956,
+      "thumb": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/display/front-640.webp",
+      "thumb_sha256": "ee8c17168c17c16d38102b8191b215d87bb8c43b7b968a9c2408901641e8c8e4",
+      "rgba_sha256": "0e0edda7a26e1e2692ff71878bff8842048f49d24b232352406411632ffb9cd9",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        29
+      ],
+      "ortho_scale": 220
+    },
+    {
+      "source": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/previews/rear.png",
+      "source_sha256": "62a33fb4c9a60a7ba5c045ba5d70c82f9ee65e533b7185c5c3afbfa1d5d356ae",
+      "source_bytes": 1586634,
+      "renderer_png_sha256": "62a33fb4c9a60a7ba5c045ba5d70c82f9ee65e533b7185c5c3afbfa1d5d356ae",
+      "display": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/display/rear.webp",
+      "display_sha256": "1e504fd62befc9e776c53c5636fd240d485d9410b7370c0eaa937831472508f6",
+      "display_bytes": 350040,
+      "thumb": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/display/rear-640.webp",
+      "thumb_sha256": "ae3c573a1472296900761bed72dbef9cf7146be26be5a618e8eaab236c404c2b",
+      "rgba_sha256": "3d7d91d5fe95640f793a41754f0e78994423ff25ae956e891c80c92dc5d97597",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        29
+      ],
+      "ortho_scale": 220
+    },
+    {
+      "source": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/previews/elevation.png",
+      "source_sha256": "8c89e4b9bd617138c1b83d82497880c84052f4d686b8b0a0edf0e86934dab919",
+      "source_bytes": 1620927,
+      "renderer_png_sha256": "8c89e4b9bd617138c1b83d82497880c84052f4d686b8b0a0edf0e86934dab919",
+      "display": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/display/elevation.webp",
+      "display_sha256": "898d5344bb5f937b93ada6992235c8a18b0b88115a89c76878200c4dd216a8e9",
+      "display_bytes": 347900,
+      "thumb": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/display/elevation-640.webp",
+      "thumb_sha256": "752a604feb5f607574f9764611750d576d2fbc6c71dbdf17bba3b0e37f7cbc06",
+      "rgba_sha256": "7b274b9c3dd644eecfe702516e39a9572002923253d4c48bceb1701ab775f009",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        -290,
+        31
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 190
+    },
+    {
+      "source": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/appearance/previews/top.png",
+      "source_sha256": "45489f5dd991de3cee4c99acb4604d240d4462d1235ed5d66e64b52a0ee7c3b4",
+      "source_bytes": 1776944,
+      "renderer_png_sha256": "45489f5dd991de3cee4c99acb4604d240d4462d1235ed5d66e64b52a0ee7c3b4",
+      "display": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/display/top.webp",
+      "display_sha256": "28ede803ef5417b5cca0788ccdc24f6e707c94697a7188ad29f76fd097a01f4c",
+      "display_bytes": 746776,
+      "thumb": "國立聯合大學/buildings/bajia-e1-e2-e3-humanities/display/top-640.webp",
+      "thumb_sha256": "bb412ff5fe6bc573e4fb9e20febf2c9d8706665d211517ab35bdc12dd3dd4201",
+      "rgba_sha256": "9efd6672e0a6ec0bf3fd3b42f11531e565861b011c96b166c140c44e61c56670",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180
+    }
+  ]
+}
