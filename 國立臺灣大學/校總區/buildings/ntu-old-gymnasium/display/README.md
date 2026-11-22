@@ -1,12 +1,15 @@
 # 國立臺灣大學舊體育館
 
-| 正面 | 背面 | 正立面 |
-| :---: | :---: | :---: |
-| ![正面](front-current.webp) | ![背面](rear-current.webp) | ![正立面](elevation-current.webp) |
-
-| 頂視 | | |
-| :---: | :---: | :---: |
-| ![頂視](top-current.webp) | | |
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="front-current.webp" alt="正面"><br>正面</td>
+    <td align="center" width="50%"><img src="rear-current.webp" alt="背面"><br>背面</td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="elevation-current.webp" alt="正立面"><br>正立面</td>
+    <td align="center" width="50%"><img src="top-current.webp" alt="頂視"><br>頂視</td>
+  </tr>
+</table>
 
 [目前 Blender 色版](../appearance/scene.blend) · [目前 3MF 色版](../appearance/ntuoldgym-appearance.3mf) · [單色幾何 STL](../model.stl)
 
