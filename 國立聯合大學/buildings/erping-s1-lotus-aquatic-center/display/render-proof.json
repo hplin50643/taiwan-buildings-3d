@@ -1,0 +1,147 @@
+{
+  "base": "bc7eea1c1741b4d8065711b9fac2c1e82a2d646a",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/erping-s1-lotus-aquatic-center/appearance/scene.blend",
+      "sha256": "68a7f52e5bb7e44289950e3903c368c174ec3a35bb41b9698d76e375967433dd",
+      "git_blob": "102cadd1cb7133022bd7ad66ad55f46e95c9b10f"
+    },
+    "appearance/nuus1-appearance.3mf": {
+      "path": "國立聯合大學/buildings/erping-s1-lotus-aquatic-center/appearance/nuus1-appearance.3mf",
+      "sha256": "3cb2c3434c02f7bc7c61b96cf719d538ccfa81f9261f13f56fcfa0c40d2f94ac",
+      "git_blob": "1dcda8c4cd0a7b0e05370e778b065db25f0ffee9"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/erping-s1-lotus-aquatic-center/model.stl",
+      "sha256": "13323ab16bb7f7a42864609695fd7b26a80aa4cd52df7d28d6e1d902a0421b9b",
+      "git_blob": "4d62f85ab93a32bf95dbe135e57ac3285feaa41e"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/erping-s1-lotus-aquatic-center/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "2de6b4acdffabec27f7b28ebe1c5f49a775d0560cbcbcdc076150d80e6a3e289",
+  "selection": "國立聯合大學/buildings/erping-s1-lotus-aquatic-center/appearance/face-materials.json",
+  "selection_sha256": "b314217b5f3d64ea34df3a8b869131757a5900ab007f9bcd15eba721c39a600e",
+  "source_limits": "Existing source-matched front and bounded same-material right slope unchanged; unidentified side windows, rear foyer and other roof surfaces stay neutral.",
+  "triangles": 1234,
+  "vertices": 579,
+  "materials": {
+    "0": 934,
+    "6": 23,
+    "1": 66,
+    "4": 187,
+    "2": 20,
+    "3": 2,
+    "5": 2
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 14,
+    "appearance/SHA256SUMS": 21
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1542588,
+      "sha256": "bcfe59bb02581b1dac597ef740b9433dde8a2f86a875cf098586bbe31b9a876e",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        -5,
+        17
+      ],
+      "ortho_scale": 220,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-s1-lotus-aquatic-center/appearance/previews/front.png",
+      "source_git_blob": "85d96c3a016cd5ae7765908e7ed7704976465ecb",
+      "rgba_sha256": "8f18e631381c03d17d729bed6a2e5db91c702efb27a12f958ff575aab55791d2",
+      "webp": "front.webp",
+      "webp_sha256": "a52b2e3a8bc6c448ad294b4f2a75c8db6bbdf6841b05d2aefbf61fc6afe8b070",
+      "webp_bytes": 286658,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "13a6f31a23b7a92e2f88c4bf0fe6beb9a6b1481f9ed45a1e7578f0c01d0278eb",
+      "thumbnail_bytes": 6780
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1545018,
+      "sha256": "772d48c86bb38ba93151ec8f31610c3d516a3a8423f1b6593e625e0abe87a623",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        -5,
+        17
+      ],
+      "ortho_scale": 220,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-s1-lotus-aquatic-center/appearance/previews/rear.png",
+      "source_git_blob": "4fe4d77d50b42d47d298cbf2420767cb139748c0",
+      "rgba_sha256": "58aa7f341f01491577385b23a936df105b0c42df0e148fd3d0e0c36721ae0b43",
+      "webp": "rear.webp",
+      "webp_sha256": "a98480f16b2327d297757ba469e64520ab7404942043844f8708620f6a9a2f76",
+      "webp_bytes": 284412,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "3e2434b268247ea23d08ba1a95432681fecc8cfe67e13c1ea43db373f405a7a0",
+      "thumbnail_bytes": 6984
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1480326,
+      "sha256": "45f59b465c055084e5eebd61b2f114103a40adbbeeb7324ee1c90b82123a8fdc",
+      "camera": [
+        0,
+        -290,
+        31
+      ],
+      "target": [
+        0,
+        0,
+        18
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-s1-lotus-aquatic-center/appearance/previews/elevation.png",
+      "source_git_blob": "bd5eda52fa5ed2ecd3c497b5f2c60d5753636f74",
+      "rgba_sha256": "f11e8481c1cce125013d32c0f38105134030b0442d82ea8c8cd7b167c1a55a6a",
+      "webp": "elevation.webp",
+      "webp_sha256": "5c11ad94695ce2826635cd040c3626771c5d7f629c9e0f8888b47c0e552658e2",
+      "webp_bytes": 175498,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "2ac3b4d8dcd4c5f539c77cc4198aec9b1d68f573ddf098f996c97195a30a215d",
+      "thumbnail_bytes": 3414
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1539481,
+      "sha256": "44468d9c55dbcd7268f11ed964d6f291206209d254a697d7de17a340fbbd891a",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-s1-lotus-aquatic-center/appearance/previews/top.png",
+      "source_git_blob": "83b337bad79962f164355726ea8782b6bf47ff8b",
+      "rgba_sha256": "a51711c53d4e0f1ea431f59f488b73f0156f104e8a989dcbc2b5c14c49a856fd",
+      "webp": "top.webp",
+      "webp_sha256": "b1b5ff344b5c7a8141cc8db93d8342c87cb082c3a60d768896983e38ef08f09b",
+      "webp_bytes": 440342,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "8b3559120152fba6f754b57187acb0ae075ceb0c613f58236a5065fbe3ff19ab",
+      "thumbnail_bytes": 2980
+    }
+  ]
+}
