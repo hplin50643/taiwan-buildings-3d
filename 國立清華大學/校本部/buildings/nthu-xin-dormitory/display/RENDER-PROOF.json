@@ -1,0 +1,237 @@
+{
+  "scope": "Display only of existing NTHU Xin four-material partial front appearance including existing 26-face gable refinement, no geometry/color changes",
+  "checked_official_parent": "eb73b166b25fec6cd6baa2dbf1de43608375e558",
+  "source_scene_evidence": {
+    "scene_matches_exact_current_3mf_geometry_and_materials": true,
+    "rendered_camera_count": 4,
+    "face_count": 5270,
+    "vertices": 2557,
+    "material_slots": [
+      "neutral_unknown_or_mixed",
+      "dusty_mauve_brick_infill",
+      "pale_ivory_tile_ribs",
+      "muted_grayblue_window_proxy"
+    ],
+    "material_face_counts": {
+      "0": 4020,
+      "2": 456,
+      "1": 586,
+      "3": 208
+    },
+    "no_reference_texture": true,
+    "renderer": "4.3.2"
+  },
+  "retained_native": {
+    "model.stl": {
+      "blob": "c9def2ec994d8645efeb25bbc0e38332e9846fbd",
+      "bytes": 263584,
+      "sha256": "b2e1d1ba92c36a14e296f1400752af00738c6df3cc83256686be89ae5fd5e676",
+      "provenance": "pinned exact public blob fetched"
+    },
+    "model.obj": {
+      "blob": "09f5794e1b99cf437ba8ba05fd3193aa83dfeddc",
+      "bytes": 181459,
+      "sha256": "3a6d34ece88c2941ba581c5be91d5266e2aa5abc8957191482e793eddeecfcd2",
+      "provenance": "pinned exact public blob fetched"
+    },
+    "appearance/nthuxin-appearance.3mf": {
+      "blob": "017255d05922c301e20206c2b1262621ad1f747e",
+      "bytes": 55028,
+      "sha256": "28450767c96d40add6d61e0c8e4418714a78a9df5258d6393ed5a6deb5181adb",
+      "provenance": "pinned exact public blob fetched"
+    },
+    "appearance/scene.blend": {
+      "blob": "0414c52a82d2ddf2a843a7340d3b1ddd2c5097bb",
+      "bytes": 796820,
+      "sha256": "ffb45b8025bbd52fbe97e64587b50f12c2ce6afc9042bdf58ddc3f5dcd7cc275",
+      "provenance": "pinned exact public blob fetched"
+    },
+    "appearance/face-materials.json": {
+      "blob": "17264af48a20085602a662e61ec093121a6cebac",
+      "bytes": 335791,
+      "sha256": "ad44ad4110b9cb94524bff14b70a6181b7ec1496e59829cde06797b4a3d29cf5",
+      "provenance": "pinned exact public blob fetched"
+    },
+    "appearance/palette.json": {
+      "blob": "46e29487997e9c2d186b5d88ba2206088a45005f",
+      "bytes": 1233,
+      "sha256": "bcec80fb653066a5a4bdce04495bb4c0c83c620d3e98badcf4ddb2e064622462",
+      "provenance": "pinned exact public blob fetched"
+    },
+    "appearance/rebuild-source.zip": {
+      "blob": "d2918a06e444aaac7c4a2b8aec303a2f105fadb4",
+      "bytes": 57264,
+      "sha256": "8f6db996c007a2fec19c67a1ed957ef632a9e8a1addc87179426fd2e977b9605",
+      "provenance": "pinned exact public blob fetched"
+    }
+  },
+  "historical_appearance_checksum_preexisting_differences": {
+    "appearance/face-materials.json": {
+      "ledger": "9bb1a69bd559ddb03de75ad441adc03f0d9f10b2f8a736b26606eea94dfe5370",
+      "current": "ad44ad4110b9cb94524bff14b70a6181b7ec1496e59829cde06797b4a3d29cf5"
+    },
+    "appearance/nthuxin-appearance.3mf": {
+      "ledger": "36f847458db74102b6f817696d2d97ad662667b12efb83aedf5cca8bf7515a43",
+      "current": "28450767c96d40add6d61e0c8e4418714a78a9df5258d6393ed5a6deb5181adb"
+    },
+    "appearance/palette.json": {
+      "ledger": "3e5eb88689ccfdb8ddfe20fe31be2cde9ff4cfadbfdf0794fc3371d0aa971fad",
+      "current": "bcec80fb653066a5a4bdce04495bb4c0c83c620d3e98badcf4ddb2e064622462"
+    },
+    "appearance/previews/elevation.png": {
+      "ledger": "3b73480abb2821c61cd3a8666fedf777ee06f60ed90501c8d49aa0699007c0ca",
+      "current": "b1ecd06c9532ce2bb5f559713c9d66912562134fef56cef1ced3b75631782f4d"
+    },
+    "appearance/previews/front.png": {
+      "ledger": "fe2b0d8f3311a9bafba1072e8f37b2c5328fe30aeef0ab0bed96555c8d3429f2",
+      "current": "2176325e4f40f2be97863be3eff0474d0feae1bd3d4143e91bb856d1e851b31d"
+    },
+    "appearance/previews/rear.png": {
+      "ledger": "63af7d7902dba7d1a78857f79fc0194ee8b00515cfea343098be3c5540ccdb91",
+      "current": "2d864799a45e5cc61901f386c1dfeb590795ab0b56c532c6383623ba30b53bd1"
+    },
+    "appearance/previews/top.png": {
+      "ledger": "39e37334ebc8ea1c4f30a398e940ff30d7e4dac81f4088bc7fb0d6503ff6e9d0",
+      "current": "25170ccb4415430b44533bd68803a1b515c7674aae94bf50d3bb4e0e88792a00"
+    },
+    "appearance/rebuild-source.zip": {
+      "ledger": "7d0a14be14711c209609a0c2aaf04db1bdefc518398c6dd936e55b2e2fe8965b",
+      "current": "8f6db996c007a2fec19c67a1ed957ef632a9e8a1addc87179426fd2e977b9605"
+    },
+    "appearance/scene.blend": {
+      "ledger": "7faddbdf9982b2dd7c49a9cb3a7254507a99315474910ce6fe0148b56e9b72c7",
+      "current": "ffb45b8025bbd52fbe97e64587b50f12c2ce6afc9042bdf58ddc3f5dcd7cc275"
+    }
+  },
+  "views": [
+    {
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "name": "front",
+      "png": "../appearance/previews/front.png",
+      "png_bytes": 1722966,
+      "png_sha256": "2176325e4f40f2be97863be3eff0474d0feae1bd3d4143e91bb856d1e851b31d",
+      "png_git_blob": "32a54455bcf992b45a02c81557bf0904cfa26e84",
+      "webp": "front.webp",
+      "webp_bytes": 514476,
+      "webp_sha256": "dcd259b3a7b4b073508917c82b976ca2290c249e8270159c16ef1ef98cea1a04",
+      "rgb_sha256": "7c28f23e190dccb4f19a2b0f2ad2ceb52c721842bc1552a125a19f79cf750722",
+      "resolution": [
+        1200,
+        1200
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false,
+      "historical_png_sha256": "fe2b0d8f3311a9bafba1072e8f37b2c5328fe30aeef0ab0bed96555c8d3429f2"
+    },
+    {
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "name": "rear",
+      "png": "../appearance/previews/rear.png",
+      "png_bytes": 1682916,
+      "png_sha256": "2d864799a45e5cc61901f386c1dfeb590795ab0b56c532c6383623ba30b53bd1",
+      "png_git_blob": "4898bc14f11ed335a625c9f8138f3c1572a39bcf",
+      "webp": "rear.webp",
+      "webp_bytes": 464974,
+      "webp_sha256": "907ebae7edfd0fa32d9036cf0d3a006ed43588da1a39d1d027d2140ef0315f40",
+      "rgb_sha256": "f97c05bed5f9fc1e094ca973e5981e47e892d1c8e88a1daf278358932e7df5bd",
+      "resolution": [
+        1200,
+        1200
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false,
+      "historical_png_sha256": "63af7d7902dba7d1a78857f79fc0194ee8b00515cfea343098be3c5540ccdb91"
+    },
+    {
+      "camera": [
+        0,
+        -290,
+        56
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 185,
+      "name": "elevation",
+      "png": "../appearance/previews/elevation.png",
+      "png_bytes": 1838738,
+      "png_sha256": "b1ecd06c9532ce2bb5f559713c9d66912562134fef56cef1ced3b75631782f4d",
+      "png_git_blob": "d43cf4c98e6e3821610363610830b9f903de41c4",
+      "webp": "elevation.webp",
+      "webp_bytes": 681202,
+      "webp_sha256": "92cc9c16e83299a50200da50533539d3ad64848b95299b2ecdf64de1f59cc2e3",
+      "rgb_sha256": "c876fff27fe0330b19dad9cdd3090a61820b68d4b1ae5a95c129027df62865e5",
+      "resolution": [
+        1200,
+        1200
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false,
+      "historical_png_sha256": "3b73480abb2821c61cd3a8666fedf777ee06f60ed90501c8d49aa0699007c0ca"
+    },
+    {
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "name": "top",
+      "png": "../appearance/previews/top.png",
+      "png_bytes": 1766682,
+      "png_sha256": "25170ccb4415430b44533bd68803a1b515c7674aae94bf50d3bb4e0e88792a00",
+      "png_git_blob": "e77714d14d1a56060221faa0ad1d939cbae40dce",
+      "webp": "top.webp",
+      "webp_bytes": 688944,
+      "webp_sha256": "e7a337574a4014938d00b4e8b2d18d33fe3441630f70dafbd51382b27de09d06",
+      "rgb_sha256": "cbc746542dcb8d89716c1ddddf116c6587546f54daef3ead25f395f9f9e73f94",
+      "resolution": [
+        1200,
+        1200
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false,
+      "historical_png_sha256": "39e37334ebc8ea1c4f30a398e940ff30d7e4dac81f4088bc7fb0d6503ff6e9d0"
+    }
+  ],
+  "thumbnail": {
+    "path": "front-640.webp",
+    "source": "front.webp",
+    "bytes": 13244,
+    "sha256": "ae3068074482865f19b08849a92ff798570b9692becbad78e94f3a00fba0a03e",
+    "resolution": [
+      640,
+      640
+    ],
+    "encoder": "Pillow WebP, quality 92, Lanczos resize",
+    "lossless": false,
+    "same_original_camera": true
+  }
+}
