@@ -1,0 +1,159 @@
+{
+  "base": "eb73b166b25fec6cd6baa2dbf1de43608375e558",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/erping-j1-auditorium-gym-activity-center/appearance/scene.blend",
+      "sha256": "a66228824acdaabe6edf160c02a797a1c90ca5165027c85a4cbfc0dbb12efd3a",
+      "git_blob": "41ce4c8399d02504a40c09a836602092fb5d3a01"
+    },
+    "appearance/nuuj1-appearance.3mf": {
+      "path": "國立聯合大學/buildings/erping-j1-auditorium-gym-activity-center/appearance/nuuj1-appearance.3mf",
+      "sha256": "2fbe5234d91e2f1824ba33471a7b6f2844ef905c71c23696c14081d8c7ffb35f",
+      "git_blob": "86d1e844dcdc6bb75a54add5cf971a69e8770f23"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/erping-j1-auditorium-gym-activity-center/model.stl",
+      "sha256": "0a1614814d7e7779999d31def1294e3878262ff0ca56bd19efc9be1924c5930a",
+      "git_blob": "58b1a9d500c9dbb49807ad19c35a52925ac21cdb"
+    }
+  },
+  "checked_note": "Historical render manifest supplies original cameras only; exact current Blend Cycle rerender matches current PUBLIC-MODEL SHA verified PNG RGBA; all old technical objects retained unchanged",
+  "render_manifest": "國立聯合大學/buildings/erping-j1-auditorium-gym-activity-center/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "77c07eeed2153d3e89819a72a0a23acf75b4fe0aa63b67dbbacddb84010680a6",
+  "selection": "國立聯合大學/buildings/erping-j1-auditorium-gym-activity-center/appearance/face-materials.json",
+  "selection_sha256": "86d3b30e33c55402edd0d8168f5def74adc121c4f2716624cbd5e63a3944feff",
+  "existing_lowest_arc_riser_faces": 128,
+  "triangles": 16168,
+  "vertices": 8070,
+  "materials": {
+    "0": 3220,
+    "7": 128,
+    "1": 10709,
+    "6": 1415,
+    "2": 328,
+    "3": 242,
+    "5": 2,
+    "4": 124
+  },
+  "historical_checksum_counts": {
+    "PUBLIC-MODEL-SHA256SUMS": 14,
+    "appearance/SHA256SUMS": 21,
+    "SHA256SUMS": 17
+  },
+  "preexisting_historical_checksum_mismatches": [
+    "appearance/SHA256SUMS:face-materials.json",
+    "appearance/SHA256SUMS:nuuj1-appearance.3mf",
+    "appearance/SHA256SUMS:palette.json",
+    "appearance/SHA256SUMS:previews/elevation.png",
+    "appearance/SHA256SUMS:previews/front.png",
+    "appearance/SHA256SUMS:previews/top.png",
+    "appearance/SHA256SUMS:rebuild-source.zip",
+    "appearance/SHA256SUMS:scene.blend"
+  ],
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1753721,
+      "sha256": "f40deb403547e8d896e560c9eee06388afd19232c37e769b3c9013c148171f37",
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        54
+      ],
+      "ortho_scale": 220,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-j1-auditorium-gym-activity-center/appearance/previews/front.png",
+      "source_git_blob": "1c55897b4fc1a44cdd7842802d7ef9b79fe33a2b",
+      "rgba_sha256": "b9113e9ba1dbd3dfe5418013d1103191dd7beffb2b55da9c14fcdea8dadf393b",
+      "webp": "front.webp",
+      "webp_sha256": "9dc317bfc55cd464492868fc5d00a86cb133e8219ddba712458a9fcb949ca0c2",
+      "webp_bytes": 543924,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "3549d06d2595dc987b965384b39cc060f8f60eb289dd98e2995f5651623d25d4",
+      "thumbnail_bytes": 22594
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1605717,
+      "sha256": "f4c632e72ae1f5e0bbcbaba658b9860cbedac90bb9e9a798eef679752995f2ac",
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        54
+      ],
+      "ortho_scale": 220,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-j1-auditorium-gym-activity-center/appearance/previews/rear.png",
+      "source_git_blob": "db9c66cc03bdf813bcbf163e8462be232ecf1a33",
+      "rgba_sha256": "5bc2558ed26559eabfab8f05ff16f615316da4f0cacc037ea27f93aeaebe74ef",
+      "webp": "rear.webp",
+      "webp_sha256": "78689efaa1cc1fbf03539f9ff140ba1fba292bf9cedbadd8ba8edfc22d626d55",
+      "webp_bytes": 473638,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "b9172fa90fa50d43152e510449981785ddc3aada521145bcb503e50a70e48c5d",
+      "thumbnail_bytes": 7476
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1715011,
+      "sha256": "50c31d2d81e7590446f09fe79ed821535d9e13a180e37d571d87cca3788a6e2a",
+      "camera": [
+        0,
+        -290,
+        57
+      ],
+      "target": [
+        0,
+        0,
+        57
+      ],
+      "ortho_scale": 190,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-j1-auditorium-gym-activity-center/appearance/previews/elevation.png",
+      "source_git_blob": "a880ecded66adfdbeec612fe282f032de993c0e0",
+      "rgba_sha256": "52b0e69cb98d4c9c757d5bacf4b556e5501401b681eb816698b6755d69062fa7",
+      "webp": "elevation.webp",
+      "webp_sha256": "a2bdff4cca6c3646b6c7b4f70eec0bac33830408f5ab3751c5780a63cb482548",
+      "webp_bytes": 532986,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "1b632c1a75a4a150b1d3c17e1406513bb71024e177722c95fc27647ca819f716",
+      "thumbnail_bytes": 18114
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1647157,
+      "sha256": "2306dad343ef9ad93d6d09c93257d71a43bbb2d81d95a7c250db2317a58b265d",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-j1-auditorium-gym-activity-center/appearance/previews/top.png",
+      "source_git_blob": "53b3801b2492922a5bbd4d5132d4e261e096811f",
+      "rgba_sha256": "3ca142d48b6e0d2a151bf9b3132a7a60f57fc5effc5ace9f3256a922e866ee8e",
+      "webp": "top.webp",
+      "webp_sha256": "1a33f759e77a3f1729b8aeeed9ca3210e1d8e7e58c23cf16ba69092ee5c74921",
+      "webp_bytes": 530874,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "9a44990563c4be8758e177dd6c14a57ecadf777d933dfd4c138b0ba3467ebac5",
+      "thumbnail_bytes": 5756
+    }
+  ]
+}
