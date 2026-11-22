@@ -5,14 +5,14 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與已見凹格頂面<br>![正面](appearance/previews/front.png) | 未見背面保守中性<br>![背面](appearance/previews/rear.png) |  |
+| 正面與已見凹格頂面<br>[![正面](display/front.webp)](display/front.webp) | 未見背面保守中性<br>[![背面](display/rear.webp)](display/rear.webp) |  |
 
-## 七材質外觀版（2026-10-20）
+## 現版七材質外觀（2026-11-14）
 
 
-[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuugate-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuugate-appearance.3mf) · [可編輯場景](appearance/scene.blend) · [原幾何 STL](model.stl) · [現版校驗](PUBLIC-MODEL-SHA256SUMS) · [現版渲染證據](render-proof.json)
 
-依官方 2025 影像登錄灰石門樓、原低磚牆及青綠凹格底／亭帽頂；只配原前窗凹背，未見面中性。圓柱隱面同材質屬有限延伸，空白牌不新增文字。原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何或另一套北門。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+依官方 2025 影像登錄灰石門樓、原低磚牆及青綠凹格底／亭帽頂；只配原前窗凹背，未見面中性。圓柱隱面同材質屬有限延伸，空白牌不新增文字。原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何或另一套北門。既有高塔後向上段只有五個原中性三角面改為原石灰色；未改窗背、其他塔面、警衛室或幾何。
 
 
 依官方正面、背面及俯視外觀照片製作。最長邊150 mm，毫米單位，獨立縮印，非全校同尺度。正面朝-Y。
@@ -30,7 +30,7 @@
 ## 列印與驗證
 底座平放。門樓兩個約35–40 mm通道上方需要支撐，先檢查支撐可移除性；柱直徑3.4 mm、格梁寬1.7 mm、頂蓋底1.5 mm。建議0.4 mm噴嘴、0.16–0.20 mm層高。單一封閉連通實體，無封閉內腔；未做切片或實體試印。
 
-build_model.py為原創可移植Python來源；安裝requirements.txt後執行python build_model.py。model.stl為毫米網格；scene.blend為實際STL匯入的可編輯網格。執行python validate_model.py model.stl --output validation.json核對原始法線、邊、頂點連結、連通性與尺寸。Blender 4.3.2執行blender -b -t 2 -P render_preview.py重建前後預覽。預覽只渲染實際網格，顏色不在STL中。重建雜湊及Blender網格一致性見JSON報告，SHA256SUMS列交付校驗碼。
+[原建模程式](build_model.py)與[原幾何驗證](validation.json)仍保留。[原單色模型、校驗及證據](https://github.com/hplin50643/taiwan-buildings-3d/blob/d817bd14a21ad7e9ae6e9014f19e1cc8ce51d576/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-t3-north-gate-guardhouse/SHA256SUMS)及[原外觀階段](https://github.com/hplin50643/taiwan-buildings-3d/blob/aedc01f56772525b942a46a0cf63eee23adee46e/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-t3-north-gate-guardhouse/appearance/SHA256SUMS)留在不可變版本，不作現版展示；最新外觀可由[獨立重建 ZIP](appearance/rebuild-source.zip)離線重建。現版前後圖均按原相機；未見背牆窗面仍中性。
 
 ## 實際模型尺寸
 150.0 × 64.0 × 59.3 mm（X × Y × Z，含底座）。
