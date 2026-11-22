@@ -251,5 +251,25 @@
       ],
       "ortho_scale": 180
     }
-  ]
+  ],
+  "appearance_ledger_correction": {
+    "pre_repair_commit": "a531a08cc9720dd5b1321a5cd2f0daf447145b09",
+    "nested": {
+      "path": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/appearance/SHA256SUMS",
+      "old_sha256": "f32e57174ece84fbbb61eaa62a020683d18e454fe6584771abd12c478de4261d",
+      "new_sha256": "39278b8e7b04fc0f39ba7c63aa67c4d527a7d901d6d5e93aad7eaa52967d61bd",
+      "prior_readme_sha256": "21098f09c3da3493b3f6f168c298f7d1be0216717cc50ca2d8c9f86dddebae17",
+      "current_readme_sha256": "bd100f85373f94117ace66d81293ff170ac0e9f250455f77b1ebc22602523f9f",
+      "changed_row": "README.md",
+      "verified_rows": 34
+    },
+    "current_public": {
+      "path": "國立陽明交通大學/六家校區/buildings/nycu-hakka-round-building/PUBLIC-MODEL-SHA256SUMS",
+      "old_sha256": "9994bea3a5b5dbbfb555dbff94d03b8effeecc79662fd5dc930f35d4b7a0329a",
+      "new_sha256": "313b6f3a84397eba85eaf87a608830c830231ce409715f0ea6b7e8c92dcce2de",
+      "changed_row": "appearance/SHA256SUMS",
+      "verified_rows": 55
+    },
+    "historic_fields": "The prior engineering_manifest and historical_manifests values are preserved as earlier publication evidence, not present-day checksum values. No model, image, README, rebuild archive, or historical QA bytes changed."
+  }
 }
