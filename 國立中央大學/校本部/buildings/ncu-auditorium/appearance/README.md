@@ -1,4 +1,4 @@
-# 國立中央大學大禮堂｜前廳玻璃與框體有限配色
+# 國立中央大學大禮堂｜有界配色與頂緣外弧
 
 ## 2026-11-17 同一道頂緣外弧連續補色（目前版）
 
@@ -21,15 +21,17 @@
 - 完整面平面成員檢查，不以三角面重心染色、不切面。模型窗格數與厚框為原有可印代理，並非精確實測。室內、機電、跨棟空橋、精細鋁板紋仍省略。
 
 ## 五個實際網格視角
+[開啟 WebP 展示與本版校驗](../display/README.md)。原始 PNG 仍保留供重建比對。
+
 相機名稱不是地理方位。影像由同一交付3MF精確座標與逐面材質建立，不是AI效果圖。
 
 | 前廳斜視 | 後舞台斜視 | 前廳立面 |
 |---|---|---|
-| ![](previews/front.png) | ![](previews/rear.png) | ![](previews/elevation.png) |
+| ![](../display/front.webp) | ![](../display/rear.webp) | ![](../display/elevation.webp) |
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 側視<br>![](previews/side.png) | 頂視<br>![](previews/top.png) |  |
+| 側視<br>![](../display/side.webp) | 頂視<br>![](../display/top.webp) |  |
 
 ## 重建與驗證
 Python依賴見source/requirements.txt，Blender 4.3.2。原model.stl須置於appearance上層，sha256為50964d7b2b33cb1489a01b8b3198e272d1a1a03c2d537dd9c7fb4030053e9d4b。

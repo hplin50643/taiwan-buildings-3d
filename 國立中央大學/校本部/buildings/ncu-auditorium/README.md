@@ -10,15 +10,16 @@
 
 
 ## 模型預覽
+[五張 WebP 預覽與本版校驗](display/README.md)。
 
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 前廳有界配色<br>![前廳玻璃與銀灰框體有限配色](appearance/previews/front.png) | 後舞台與上層中性<br>![未建材料邊界的後舞台與上層保持中性](appearance/previews/rear.png) |  |
+| 前廳有界配色<br>![前廳玻璃與銀灰框體有限配色](display/front.webp) | 後舞台與上層中性<br>![未建材料邊界的後舞台與上層保持中性](display/rear.webp) |  |
 
-## 前廳玻璃與框體有限配色（2026-10-22）
+## 前廳玻璃與框體有限配色（2026-10-22，歷史範圍）
 
-[有限配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/ncu-auditorium-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+[現行配色、來源與限制](appearance/README.md) · [表面色3MF](appearance/ncu-auditorium-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
 
 僅原前廳玻璃、銀灰框柱及明確前廳屋面配色；上部彩色鋁板缺拼片材料邊界、後牆混界保持中性，不是整棟精準彩色。原STL bytes、9,614三角面、幾何與歷史QA不變，不增模型套數。3MF為單網格表面色，非分色封閉實體或切片/G-code；原薄處與支撐限制保留，未實體試印。第三方照片不分發。
