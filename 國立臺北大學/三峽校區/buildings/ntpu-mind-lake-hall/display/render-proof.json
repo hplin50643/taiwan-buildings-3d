@@ -1,0 +1,166 @@
+{
+  "source_commit": "eb73b166b25fec6cd6baa2dbf1de43608375e558",
+  "latest_blend_sha256": "64eeb331947d5fd1517db399ce2fce64e351f44bdc16e5fdb055dca47825d6d9",
+  "latest_3mf_sha256": "0a13b75bc02d1f8413a29a0e9014f6bdc5ac9864c03582294b3c3efa8eae6b0a",
+  "stl_sha256": "00d317de3628ecc8922c0da391d53adfa0a40e9703e9daa5c7fdda2b21cc2136",
+  "prior_blend_sha256": "747330fdddf6d57c13ab6f4953c7dae1a0a53087ac70074e30966feda0931cc4",
+  "vertices": 1180,
+  "triangles": 2444,
+  "changed_riser_triangles": [
+    2224,
+    2225,
+    2233,
+    2237,
+    2247,
+    2249,
+    2258,
+    2260,
+    2270,
+    2272,
+    2283,
+    2289,
+    2300,
+    2303,
+    2316,
+    2318,
+    2330,
+    2332,
+    2334,
+    2335,
+    2336,
+    2341,
+    2350,
+    2351,
+    2355,
+    2357,
+    2359,
+    2360,
+    2373,
+    2374,
+    2389,
+    2391
+  ],
+  "views": {
+    "front": {
+      "full": "front-current.webp",
+      "thumb": "front-current-640.webp",
+      "prior": "../appearance/previews/front.png",
+      "prior_rgba_sha": "3fd7235133a7832f6835c68c8d6b9aa0e09b9a1ef6904867dd348b6cc8492b6f",
+      "fresh_rgba_sha": "b20649439d057eaa12b351e0c68674644a7fd92f4e14f3daf47b52bc876f8e3d",
+      "full_sha": "f7f13c2e3540397edeb6774daa88bdd97aa626646501ef89e90906a72ed73191",
+      "thumb_sha": "5b54b40ce278137f2d2c00b2266b80adf86a3127108827ee410efb51009618cd",
+      "old_bytes": 1572733,
+      "full_bytes": 323678,
+      "thumb_bytes": 8588,
+      "changed_rgba_pixels": 504,
+      "original_camera": {
+        "path": "previews/front.png",
+        "bytes": 1572733,
+        "sha256": "dd0422555969c9f84ade06aeaf398d90da2c8a88a538d48ef25200ddaaad91a4",
+        "camera": [
+          180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          16
+        ],
+        "ortho_scale": 205,
+        "all_vertices_in_frame": true
+      }
+    },
+    "rear": {
+      "full": "rear-current.webp",
+      "thumb": "rear-current-640.webp",
+      "prior": "../appearance/previews/rear.png",
+      "prior_rgba_sha": "a10051f59e93499ace86f1ce191d4ae4f427cae71c77df94ae753a6a5da70322",
+      "fresh_rgba_sha": "187c58a6f3a648b8ae5f15506e52061ef3825870aeb849498cd0ac6de6cbc000",
+      "full_sha": "50aa2ec7aaf2c2d91731c0216bc557ca9322bfce212494565dda4952e703c099",
+      "thumb_sha": "98a28734160c2cbbcbe60d6842183acf318152db03676e60ed8547d17b04fe84",
+      "old_bytes": 1570449,
+      "full_bytes": 325290,
+      "thumb_bytes": 9336,
+      "changed_rgba_pixels": 8359,
+      "original_camera": {
+        "path": "previews/rear.png",
+        "bytes": 1570449,
+        "sha256": "6b01be1a589cb6801ae94f5eefaac5d62980b00afb83c79e6a461b9c7fead9d3",
+        "camera": [
+          -180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          16
+        ],
+        "ortho_scale": 205,
+        "all_vertices_in_frame": true
+      }
+    },
+    "elevation": {
+      "full": "elevation-current.webp",
+      "thumb": "elevation-current-640.webp",
+      "prior": "../appearance/previews/elevation.png",
+      "prior_rgba_sha": "f66d646acd15fed49b4eebaab0a8973c105db8a28c8f0c54d6bd93d636c69c9a",
+      "fresh_rgba_sha": "f66d646acd15fed49b4eebaab0a8973c105db8a28c8f0c54d6bd93d636c69c9a",
+      "full_sha": "9ad8ba0b3feab2d86b8d20b2134be2a4f45cd4fabf89fa25cde561efa7a582e3",
+      "thumb_sha": "3fe1470a68511eacfe5b589b6bfdb8a70f79183c86c431b89591685e93a2ef28",
+      "old_bytes": 1516975,
+      "full_bytes": 232574,
+      "thumb_bytes": 5446,
+      "changed_rgba_pixels": 0,
+      "original_camera": {
+        "path": "previews/elevation.png",
+        "bytes": 1516975,
+        "sha256": "72486555a9bf8d83d3f4504927d7f0801d67d61adbbfe52603c7e40b600117bf",
+        "camera": [
+          0,
+          -290,
+          16
+        ],
+        "target": [
+          0,
+          0,
+          16
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    },
+    "top": {
+      "full": "top-current.webp",
+      "thumb": "top-current-640.webp",
+      "prior": "../appearance/previews/top.png",
+      "prior_rgba_sha": "f51516de01b6bfd7feb2cd5e059f2ae3e5d9e2e15ac0b2c0e0bc46d66d46b6d8",
+      "fresh_rgba_sha": "2f2b8fd3ada84e2d7121eb1b70ceab00d0c7d6c459f1cbb4e09131e545eae22f",
+      "full_sha": "ae1c7038a057781e8c76bb501bf9fa240109bdf8c72f6af3c190da0b55694f6d",
+      "thumb_sha": "82e817d9e47a8e7b770019db1a3a1b2daaeaf9baf6b28e1ea53aed774d5b8144",
+      "old_bytes": 1635205,
+      "full_bytes": 570656,
+      "thumb_bytes": 8468,
+      "changed_rgba_pixels": 9771,
+      "original_camera": {
+        "path": "previews/top.png",
+        "bytes": 1635205,
+        "sha256": "6dc2d4e4bcabf46f9f9ad6ca1b991f25b78fb453132735437d531b4bf18c72c6",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    }
+  },
+  "display_only": true
+}
