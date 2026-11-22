@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](front.png) | 背面<br>![背面](rear.png) | 正立面<br>![正立面](elevation.png) |
+| 正面<br>[![正面](display/front-current-640.webp)](display/front-current.webp) | 背面<br>[![背面](display/rear-current-640.webp)](display/rear-current.webp) | 正立面<br>[![正立面](display/elevation-current-640.webp)](display/elevation-current.webp) |
 
 ## 來源與範圍
 
