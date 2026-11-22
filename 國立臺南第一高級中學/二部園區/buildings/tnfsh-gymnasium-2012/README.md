@@ -44,17 +44,20 @@
 
 以下僅為本模型渲染，非來源照片或竣工現場照片。
 
-| 南向正立面 | 北側 |
-|---|---|
-| ![南向正立面](previews/front_elevation.png) | ![北側](previews/rear.png) |
-
-| 端部視角 | 側向立面 |
-|---|---|
-| ![端部視角](previews/left_end.png) | ![側向立面](previews/right_elevation.png) |
-
-| 俯視 | 入口細節 |
-|---|---|
-| ![俯視](previews/top.png) | ![入口細節](previews/entry_detail.png) |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front_elevation.png" alt="南向正立面" width="240"><br>南向正立面</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="北側" width="240"><br>北側</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/left_end.png" alt="端部視角" width="240"><br>端部視角</td>
+    <td align="center" valign="top"><img src="previews/right_elevation.png" alt="側向立面" width="240"><br>側向立面</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="俯視" width="240"><br>俯視</td>
+    <td align="center" valign="top"><img src="previews/entry_detail.png" alt="入口細節" width="240"><br>入口細節</td>
+  </tr>
+</table>
 
 原始照片、PDF 與圖面僅供來源查核，不嵌入或隨本模型包重新散布；各來源權利仍屬原權利人。
 

@@ -32,17 +32,20 @@
 - 通過網格／格式檢查不等於實體試印或耐久驗證；目前沒有試印紀錄。
 
 ## 多視角
-| 西正立面 | 東後側與北面 |
-|---|---|
-| ![西正立面](previews/front_elevation.png) | ![東後側立體](previews/rear.png) |
-
-| 北側立體 | 南側拱廊立面 |
-|---|---|
-| ![北側立體](previews/left_end.png) | ![南側立面](previews/right_elevation.png) |
-
-| 屋頂 | 西入口細節（局部裁切） |
-|---|---|
-| ![屋頂](previews/top.png) | ![西入口細節](previews/entry_detail.png) |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front_elevation.png" alt="西正立面" width="240"><br>西正立面</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="東後側立體" width="240"><br>東後側與北面</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/left_end.png" alt="北側立體" width="240"><br>北側立體</td>
+    <td align="center" valign="top"><img src="previews/right_elevation.png" alt="南側立面" width="240"><br>南側拱廊立面</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="屋頂" width="240"><br>屋頂</td>
+    <td align="center" valign="top"><img src="previews/entry_detail.png" alt="西入口細節" width="240"><br>西入口細節（局部裁切）</td>
+  </tr>
+</table>
 
 ## 來源
 [臺南市文化資產管理處公開調查報告 PDF](https://tmach.tainan.gov.tw/papers/warehouse/636E3BC9-68AA-4E70-AD6D-42A6FD5A15A3/B1f6a117249870778810.pdf)：《原臺南州立臺南第二中學校校舍本館暨講堂、原臺南廳長官邸調查研究及修復計畫》，2003 年 12 月出版。

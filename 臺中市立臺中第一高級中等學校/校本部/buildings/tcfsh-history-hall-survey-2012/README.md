@@ -33,17 +33,20 @@
 - 不宣稱重建室內、屋架細節或現況翻修；沒有實體試印或材料耐久驗證。網格檢查不等於試印通過。
 
 ## 多視角
-| 東正面 | 西後側 |
-|---|---|
-| ![東正立面](previews/front_elevation.png) | ![西後側立體](previews/rear.png) |
-
-| 長側立體 | 長側立面 |
-|---|---|
-| ![長側立體](previews/left_end.png) | ![長側立面](previews/right_elevation.png) |
-
-| 屋頂 | 入口細節（局部裁切） |
-|---|---|
-| ![屋頂](previews/top.png) | ![入口細節](previews/entry_detail.png) |
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="previews/front_elevation.png" alt="東正立面" width="240"><br>東正面</td>
+    <td align="center" valign="top"><img src="previews/rear.png" alt="西後側立體" width="240"><br>西後側</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/left_end.png" alt="長側立體" width="240"><br>長側立體</td>
+    <td align="center" valign="top"><img src="previews/right_elevation.png" alt="長側立面" width="240"><br>長側立面</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><img src="previews/top.png" alt="屋頂" width="240"><br>屋頂</td>
+    <td align="center" valign="top"><img src="previews/entry_detail.png" alt="入口細節" width="240"><br>入口細節（局部裁切）</td>
+  </tr>
+</table>
 
 ## 來源
 - [學校官方公開電子書](https://ebook.tcfsh.tc.edu.tw/book/content.php?id=31)／[閱讀器](https://ebook.tcfsh.tc.edu.tw/reader/?bid=31)，2012 年 3 月，成大研究發展基金會、陳柏年等。電子書第 379、382、384–387 頁（A2-1、A2-4、A3-1～3、A4-1）及第 4–9 頁照片。
