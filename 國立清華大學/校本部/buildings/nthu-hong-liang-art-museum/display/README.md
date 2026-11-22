@@ -2,10 +2,10 @@
 
 ## 模型預覽
 
-| 正面 | 背面 | 正立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![正面](front-640.webp)](front.webp) | [![背面](rear-640.webp)](rear.webp) | [![正立面](elevation-640.webp)](elevation.webp) |
-| [![頂視](top-640.webp)](top.webp) | | |
+| [![正面](front-640.webp)](front.webp)<br>正面 | [![背面](rear-640.webp)](rear.webp)<br>背面 | [![正立面](elevation-640.webp)](elevation.webp)<br>正立面 |
+| [![頂視](top-640.webp)](top.webp)<br>頂視 |  |  |
 
 四張全尺寸無失真 WebP 由現行六材質 Blender 場景核對重繪，點擊縮圖可放大。留用現行上層三座展廳盒體的 118 個側背牆同構件推估色面，不當成照片實證。屋頂、底面及未明下層牆保持原指派，本次沒有拓展補色。幾何與配色未變更。
 
