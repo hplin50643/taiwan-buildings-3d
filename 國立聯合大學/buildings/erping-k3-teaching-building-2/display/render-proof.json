@@ -1,0 +1,147 @@
+{
+  "base": "0840ff45d6329d98c99c196249810d8c9ff35cb1",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/erping-k3-teaching-building-2/appearance/scene.blend",
+      "sha256": "7a79e0ab7180c35ca329df6e6e644f87a315debcbd3218b647f9477341c56203",
+      "git_blob": "7f0e72f77ef69c50dd66ce4d7ae7e14ebe8157fa"
+    },
+    "appearance/nuuk3-appearance.3mf": {
+      "path": "國立聯合大學/buildings/erping-k3-teaching-building-2/appearance/nuuk3-appearance.3mf",
+      "sha256": "270f7091fa772b17daceff003f051417b4e1efc95843db7dd4059b32a6909a16",
+      "git_blob": "d77e262a175f6bd6a523c5c34b40df55431b564e"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/erping-k3-teaching-building-2/model.stl",
+      "sha256": "42a6fe43719062167e2b11dfec74c17ddf107c3dc74ad2f62b4ae6a2c03b0ddc",
+      "git_blob": "8f7ab21979864f41089fb7fe5e17270a7d609545"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/erping-k3-teaching-building-2/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "69455b6fb7bcd04e812602b0bb50c0f71eeb5e993457c5e8619de570516f7ac0",
+  "selection": "國立聯合大學/buildings/erping-k3-teaching-building-2/appearance/face-materials.json",
+  "selection_sha256": "0a217c65f9c5067eb9daea093dfd4a74e2f119aa3c37743cc78da3fcfc63c352",
+  "source_limits": "Existing aerial confirmed single-slope PV and bounded inner corridor matching window color unchanged. Unregistered surfaces stay neutral.",
+  "triangles": 18436,
+  "vertices": 8952,
+  "materials": {
+    "0": 122,
+    "1": 10473,
+    "4": 864,
+    "3": 3916,
+    "6": 2732,
+    "2": 69,
+    "5": 260
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 17,
+    "appearance/SHA256SUMS": 21
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1653943,
+      "sha256": "5b24ece1f7b88daa37f14e34fc78a9505bf97428185765298721430d19569597",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-k3-teaching-building-2/appearance/previews/front.png",
+      "source_git_blob": "870a0bcfb8a50f59779a938b24b03cacf891e1e9",
+      "rgba_sha256": "d573f3c1df7654ad54186fe7d488ed9cf7c757704dcbf2621d3ae92c7587c47a",
+      "webp": "front.webp",
+      "webp_sha256": "2381385d9e2e6e691e3f894b75d6d7510c40acfb2c67f9a2be519e51cd2548ae",
+      "webp_bytes": 373352,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "8e3159c5151e7f0cdeb26db10d0542b99b7c6d2ba75da92b88f86de02164a61b",
+      "thumbnail_bytes": 19766
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1661801,
+      "sha256": "193676423c21665c9c3dc3dd3bd2e17b0d3b0afbdd25506fbe2fc7af2414672a",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-k3-teaching-building-2/appearance/previews/rear.png",
+      "source_git_blob": "83b8f0df29c5cb694fc4318b86522bb77d2b1383",
+      "rgba_sha256": "c169533cc3604788447b246d381300f27f8683a7e92b609281a2f261307ce283",
+      "webp": "rear.webp",
+      "webp_sha256": "e2176e63e6a0229bf6cbaa2ff660018b6aa06b81969f1f55c79cfd6da67496a6",
+      "webp_bytes": 378284,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "bd18d8b2b7e7afb8cee3c22b03635179cb1f37ffe04251564d34ffb959a6f534",
+      "thumbnail_bytes": 17806
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1620427,
+      "sha256": "0c03958ff40038ea7286a23b750eac25bf3b02298fe7afc644bdc8569ba07f09",
+      "camera": [
+        0,
+        -290,
+        38
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-k3-teaching-building-2/appearance/previews/elevation.png",
+      "source_git_blob": "db1c4def8d52db8c4f025b4eed0ca647dd02cc89",
+      "rgba_sha256": "20e420e640ea873c633d523706fd9f1028126a79c3d11b149f52ea34833ddf03",
+      "webp": "elevation.webp",
+      "webp_sha256": "97b67686be95e8493e2182c84d52a0dd6351673b3afac286698886140d12f4bd",
+      "webp_bytes": 385244,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "506efde34aaa854e0801e0317ada069c36986cb44ef07df29857d8979c575c1d",
+      "thumbnail_bytes": 16718
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1597312,
+      "sha256": "ccd37659ee0cdcfaaa076327df4a87267c92f922a4292f9ea50d7f61355b3133",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-k3-teaching-building-2/appearance/previews/top.png",
+      "source_git_blob": "d1c1fd5ba0e2e73a91bfb6739cd170fb0f47d901",
+      "rgba_sha256": "9b60f099205b5a64da8c5a34deffe8af12f7d702b4da13bcc31cb50cacebba0b",
+      "webp": "top.webp",
+      "webp_sha256": "80885a48c19239f2bf9a36b1ed2f3ed46d2024701a8cceafd1d802fc3965299f",
+      "webp_bytes": 425022,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "a6b7ec5daeb61ddcbbe696956c9712c09df0cf4604a482b020b3161429165990",
+      "thumbnail_bytes": 8464
+    }
+  ]
+}
