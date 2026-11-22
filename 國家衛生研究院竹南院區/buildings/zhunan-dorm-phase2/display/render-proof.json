@@ -1,0 +1,236 @@
+{
+  "native_blend_sha256": "d65d8d99b249c21cd0494162569fe099335f9ad26f602b07aa82576e88251f1e",
+  "exchange_3mf_sha256": "208b2477aee1585ac9684b6e494d450359d4b92e163b4afe5761d355254396d5",
+  "retained_original_stl_sha256": "2adb78809384750589d56806aac33da2eafe03bd5fd3209700cb81f898569b0d",
+  "retained_original_obj_sha256": "8064c50432ce84e2229c0c8443d0511d1f5994fa99d391574a010f13e6e6117c",
+  "native_exchange_binary_stl_triangle_coordinates_orientations_and_order_exact": true,
+  "color_face_counts": {
+    "0": 2743,
+    "1": 76,
+    "4": 269,
+    "5": 200,
+    "2": 2296,
+    "3": 504
+  },
+  "original_triangle_count": 6088,
+  "original_STL_cold_rebuild_byte_match": true,
+  "current_3MF_rebuilt_from_immutable_source_archive_byte_match": true,
+  "public_exterior_only_same_four_previously_published_views": true,
+  "root_NHRI_representative_is_administration_not_this_building": true,
+  "preconsolidation_git_revision": "1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8",
+  "cpu_cycles_samples": 48,
+  "renderer_version": "4.3.2",
+  "views": {
+    "front": {
+      "camera": {
+        "location": [
+          180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          32
+        ],
+        "scale": 225.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.13199998438358307,
+          0.2412828952074051,
+          0.8679999709129333,
+          0.7730847597122192
+        ],
+        "bbox_bounds": [
+          0.13199998438358307,
+          0.2412828952074051,
+          0.8679999709129333,
+          0.8245123028755188
+        ],
+        "rotation": [
+          1.181699275970459,
+          -1.2786353309479637e-08,
+          0.6435011029243469
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "a9879e1c49797f53e545522e2920926349fb6ac26988d0d968f069a8af769dd0",
+      "webp_sha256": "fe7b701f70a638cd8639fe2c8abd3a30986b3de920e9b1119f0b21fe88167087",
+      "webp_path": "front-current.webp",
+      "comparison": "exact historical color models camera match and decoded PNG pixels; independently rerendered from exact current Blend",
+      "list_thumbnail": {
+        "sha256": "f43730674411a1ce30f974b66b5d1edc62bf9aa40956b8dc2d01d9eb83cb6672",
+        "byte_count": 15116,
+        "path": "front-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "rear": {
+      "camera": {
+        "location": [
+          -180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          32
+        ],
+        "scale": 225.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.1320001184940338,
+          0.24128329753875732,
+          0.8680001497268677,
+          0.7799610495567322
+        ],
+        "bbox_bounds": [
+          0.1320001184940338,
+          0.24128329753875732,
+          0.8680001497268677,
+          0.8245128989219666
+        ],
+        "rotation": [
+          1.1816989183425903,
+          -5.7653000595792037e-08,
+          -2.498091459274292
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "e6e112e8dcf68e89ef9d53befee445766f31b4167b6b010bbc2416da205beb33",
+      "webp_sha256": "8f905013228c634c6b0bc28a5f7c8633a060fefdde17e86a681ad0f594d5db66",
+      "webp_path": "rear-current.webp",
+      "comparison": "exact historical color models camera match and decoded PNG pixels; independently rerendered from exact current Blend",
+      "list_thumbnail": {
+        "sha256": "b15cd762f593a406a7bf71ee403904e059a35f3dc5eb6a025954d55719407deb",
+        "byte_count": 5278,
+        "path": "rear-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "elevation": {
+      "camera": {
+        "location": [
+          0,
+          -290,
+          32
+        ],
+        "target": [
+          0,
+          0,
+          32
+        ],
+        "scale": 185.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.09459459781646729,
+          0.32702672481536865,
+          0.9054054021835327,
+          0.7594592571258545
+        ],
+        "bbox_bounds": [
+          0.09459459781646729,
+          0.32702672481536865,
+          0.9054054021835327,
+          0.7594592571258545
+        ],
+        "rotation": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "e804b2e042d54d173da36d99f5f490bfa688f5a3714512d1ddc7a756e3290634",
+      "webp_sha256": "1ec25fa5f6e93ce5c353b71cf05548438f660bf9269ddee7b70afca7c9118fb8",
+      "webp_path": "elevation-current.webp",
+      "comparison": "exact historical color models camera match and decoded PNG pixels; independently rerendered from exact current Blend",
+      "list_thumbnail": {
+        "sha256": "2deabac69b24ff6a46b397d45dfb8bdef69bb3d46c71720eb68718ce7df6cf1d",
+        "byte_count": 16104,
+        "path": "elevation-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "top": {
+      "camera": {
+        "location": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "scale": 180.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.0833333358168602,
+          0.2888889014720917,
+          0.9166666865348816,
+          0.7111111283302307
+        ],
+        "bbox_bounds": [
+          0.0833333358168602,
+          0.2888889014720917,
+          0.9166666865348816,
+          0.7111111283302307
+        ],
+        "rotation": [
+          0.0,
+          -0.0,
+          0.0
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "97773b56a580d1ae0ad4bb138b7c83ebddca31703d48c6357cd90be1c6c8dd27",
+      "webp_sha256": "180ea45472d2c4a5ab375a289b833b66e30324db2a417777e562f2ab717bbc74",
+      "webp_path": "top-current.webp",
+      "comparison": "exact historical color models camera match and decoded PNG pixels; independently rerendered from exact current Blend",
+      "list_thumbnail": {
+        "sha256": "3b482300edbb69842c03ece20f7f4d214678fbe08bac8fbd19232a98146f521e",
+        "byte_count": 4226,
+        "path": "top-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "institution_catalog_thumbnail": {
+      "from": "front",
+      "webp_sha256": "f43730674411a1ce30f974b66b5d1edc62bf9aa40956b8dc2d01d9eb83cb6672",
+      "size": [
+        640,
+        640
+      ],
+      "path": "front-current-640.webp"
+    }
+  },
+  "display_scope": {
+    "no_deletions": true,
+    "frozen_original_package_readmes_keep_pngs": true,
+    "original_capture_paths": {
+      "front": "../appearance/previews/front.png",
+      "rear": "../appearance/previews/rear.png",
+      "elevation": "../appearance/previews/elevation.png",
+      "top": "../appearance/previews/top.png"
+    },
+    "same_camera_pixel_exact": true,
+    "native_latest_model": [
+      "../appearance/scene.blend",
+      "../appearance/nhridorm2-appearance.3mf",
+      "../model.stl",
+      "../model.obj"
+    ],
+    "scope": "already published exterior only; no geometry or material changes"
+  }
+}
