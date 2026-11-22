@@ -5,11 +5,11 @@
 
 | 新彩色南面 | 新彩色北面 | 新彩色西側 |
 | :---: | :---: | :---: |
-| ![彩色南面](appearance/front.png) | ![彩色北面](appearance/rear.png) | ![彩色西側](appearance/side.png) |
+| [![彩色南面](display/front.webp)](display/front.webp) | [![彩色北面](display/rear.webp)](display/rear.webp) | [![彩色西側](display/side.webp)](display/side.webp) |
 | 新彩色入口 | 新彩色庭院方向 | 新彩色鳥瞰 |
-| ![彩色入口](appearance/entry.png) | ![彩色庭院方向](appearance/garden.png) | ![彩色鳥瞰](appearance/aerial.png) |
+| [![彩色入口](display/entry.webp)](display/entry.webp) | [![彩色庭院方向](display/garden.webp)](display/garden.webp) | [![彩色鳥瞰](display/aerial.webp)](display/aerial.webp) |
 | 新彩色上視 | 新彩色屋面方向 | 彩色下載 |
-| ![彩色上視](appearance/top.png) | ![彩色屋面方向](appearance/roof.png) | [彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) |
+| [![彩色上視](display/top.webp)](display/top.webp) | [![彩色屋面方向](display/roof.webp)](display/roof.webp) | [彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) |
 
 ### 新增照片近似彩色外觀（原圖保留）
 
@@ -35,6 +35,10 @@ blender --disable-autoexec --background --factory-startup --python-exit-code 1 -
 可在命令末尾加 `-- --out /path/to/output`，另存單張代表圖。腳本精確比對原場景與 STL 的 float32 三角座標，核對渲染前後幾何、材質索引、材質色彩、照明背景簽章，且不儲存原 `.blend`。若輸出目錄已有原八圖及其 `render-manifest.json`，會先驗證原圖雜湊再加入新圖；不改原圖。相機、完整入框、來源與簽章見 [`qa/homepage-camera-validation.json`](qa/homepage-camera-validation.json)。
 
 [`qa/homepage-cover-verification.json`](qa/homepage-cover-verification.json) 記錄兩次獨立載入原場景與一次從原始程式新建場景的封面一致性、來源負向控制及本輪驗證範圍。`validate_model.py` 保留既有檢查，新增獨立封面重渲染與九圖名稱／manifest完整性檢查；本輪核心重建結果見 [`validation.json`](validation.json)。原 `QA-SUMMARY.json` 的八圖結果、獨立薄特徵／角損／密點／根接審查是歷史幾何證據，保留原警示與有限例外；本次換相機未重跑這些完整幾何套件，也不新增製造保證。
+
+[現版代表角度 WebP](display/homepage-three-quarter.webp) · [渲染驗證](render-proof.json) · [展示檔校驗](PUBLIC-MODEL-SHA256SUMS)。
+
+原工程與校驗審核紀錄未改寫；其中的舊 README 雜湊與原校驗表請至[封存時的原始版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/61c24ffda9b51c3fb426bb32c64a23811ed011c4/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/%E4%B8%AD%E5%A3%A2%E6%A0%A1%E5%8D%80/buildings/cycu-chang-ching-yu-library-1985)查驗。本版 [SHA256SUMS](SHA256SUMS) 僅重算 README 的雜湊。
 
 ## 共同座標及高度口徑
 北上，X向東、Y向北，南入口在負Y。校方5F示意圖8柱心為7跨，7×7.8m=54.6m；柱心約112px一跨。外牆按同圖約59.8×36.7m，與雙期正射主屋簷約60–63×37–40m一致。不是把原印刷1/600直接套渲圖DPI。
