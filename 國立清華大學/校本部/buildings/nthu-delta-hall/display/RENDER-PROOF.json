@@ -1,0 +1,201 @@
+{
+  "scope": "Display only of existing NTHU Delta Hall seven-material appearance including existing 23 lower projecting brick-box end-return triangles under same-component inference; no geometry/color changes",
+  "checked_official_parent": "4b3264c4d85c78f4c242bc7e9336d2a3dbdfd11d",
+  "existing_source_page": "https://alumni.site.nthu.edu.tw/p/404-1346-115103.php?Lang=zh-tw",
+  "source_scope": "Existing same-component continuation is only the 12 front and 11 rear return triangles of the low projecting brick box. Mixed walls and other rear areas are not supported by newly verified images.",
+  "source_scene_evidence": {
+    "scene_matches_exact_current_3mf_geometry_and_materials": true,
+    "rendered_camera_count": 4,
+    "face_count": 5370,
+    "vertices": 2659,
+    "material_slots": [
+      "neutral_mixed_or_unknown",
+      "pale_pinkbeige_tiles",
+      "muted_orange_red_brick",
+      "gray_tile_concrete",
+      "silver_window_frames",
+      "muted_graygreen_glazing",
+      "shade_frame_gray_approximation"
+    ],
+    "material_face_counts": {
+      "0": 2353,
+      "1": 21,
+      "3": 1059,
+      "4": 1536,
+      "5": 258,
+      "2": 119,
+      "6": 24
+    },
+    "no_reference_texture": true,
+    "renderer": "4.3.2"
+  },
+  "retained_native": {
+    "model.stl": {
+      "blob": "9d21c2707dcbed63324a89501d653380595d5d8a",
+      "bytes": 268584,
+      "sha256": "9b9c512aa492e75b469581f0184a8e51ac557800865f5b8e89ec2390745aa55e"
+    },
+    "model.obj": {
+      "blob": "0633cc880d9376ebdf60d3075164ecaacb794be9",
+      "bytes": 188357,
+      "sha256": "5ebc3889cbc8aff157ac80f3ab221c0823e336b9ada02df0b3c1e257bc7521fa"
+    },
+    "appearance/nthudelta-appearance.3mf": {
+      "blob": "93b054bb70be4024c2c9f44f45076edf013e9dad",
+      "bytes": 51811,
+      "sha256": "4687cd02c78119973386903adf410e08233afdfbd0b601601f60711d2892bf1e"
+    },
+    "appearance/scene.blend": {
+      "blob": "8ef2fcc6cca32001e371ed1a2c7e627baef8ca19",
+      "bytes": 872448,
+      "sha256": "df2e1ebe42ea73e5f97f1db6bb006770a7e0b013cc46f811bfeab7a1ae5eda60"
+    },
+    "appearance/face-materials.json": {
+      "blob": "79d0f5754c96dea7ef635505f486f219b793f026",
+      "bytes": 401651,
+      "sha256": "ca23e6e1a47e1cce8e760e68e1ba2e149a0d0835bce97114b262a2d9fd6e1a9e"
+    },
+    "appearance/palette.json": {
+      "blob": "3c422dad660d6e29ba97ea8c32a5e17a44c770d1",
+      "bytes": 950,
+      "sha256": "f9299de947a28be5e2c7b2624178695bf023ab89a61919ab097b8b3ee086d87b"
+    },
+    "appearance/rebuild-source.zip": {
+      "blob": "786bc3c1f98ee142ccd01b07e2df294398f12d5c",
+      "bytes": 60775,
+      "sha256": "0e73e0f40a47dd9edd2e447b87a0d370e525942755c5ba80508e679c6a84f9ae"
+    }
+  },
+  "historical_appearance_checksum_preexisting_differences": {},
+  "views": [
+    {
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "name": "front",
+      "png": "../appearance/previews/front.png",
+      "png_bytes": 1705274,
+      "png_sha256": "28ecedd1bed8278f59c923872d747136f185cb1732c79b9bdb0a1cd07d74afb1",
+      "png_git_blob": "32e73abb341ce0e5d741dcdb7cf8a6cdf3a7b5af",
+      "webp": "front.webp",
+      "webp_bytes": 489890,
+      "webp_sha256": "05ebd9cdc875e18efb9469fd39d31832f8f93b00cae6f1c26b4b318ee0f545cf",
+      "rgb_sha256": "e41d17220f312fb4dd342b0a190f42d53ab0b5a6d12acd533b417eef6d496154",
+      "resolution": [
+        1200,
+        1200
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false,
+      "current_camera_png_sha256": "28ecedd1bed8278f59c923872d747136f185cb1732c79b9bdb0a1cd07d74afb1"
+    },
+    {
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "name": "rear",
+      "png": "../appearance/previews/rear.png",
+      "png_bytes": 1643415,
+      "png_sha256": "a022f3460685c98a2fe709c10ed2d915a648dab8ac2719415f102dcfabcce898",
+      "png_git_blob": "261ec7ddfad45034c3f3f1c6a12f908580012083",
+      "webp": "rear.webp",
+      "webp_bytes": 434398,
+      "webp_sha256": "04dbd4b33aaccb0deac95a84c00af25606c342ae342dbc3a4ab27e92cd8e9e65",
+      "rgb_sha256": "37710db2fed028046fe0a71ac4e9b706bc7345dc0181d96e930ec27c0a537b14",
+      "resolution": [
+        1200,
+        1200
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false,
+      "current_camera_png_sha256": "a022f3460685c98a2fe709c10ed2d915a648dab8ac2719415f102dcfabcce898"
+    },
+    {
+      "camera": [
+        0,
+        -290,
+        56
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 185,
+      "name": "elevation",
+      "png": "../appearance/previews/elevation.png",
+      "png_bytes": 1700493,
+      "png_sha256": "3b4476d6c718bfc404c3fe5d3cabd90bdd37ad47851ce1b087f600ffe0baddf9",
+      "png_git_blob": "0a7bbf8cfa5bb961d46bc6db9dec91e301e013c1",
+      "webp": "elevation.webp",
+      "webp_bytes": 485300,
+      "webp_sha256": "e5f8dbdd7fd2124b3535a06a9f39af8f9d95cd25eab3ebbba2c3f97e8094b409",
+      "rgb_sha256": "89137cbb4fac6f25cf09008e5be990d6c5c8722a51f1b1b67185edea3a7d151c",
+      "resolution": [
+        1200,
+        1200
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false,
+      "current_camera_png_sha256": "3b4476d6c718bfc404c3fe5d3cabd90bdd37ad47851ce1b087f600ffe0baddf9"
+    },
+    {
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "name": "top",
+      "png": "../appearance/previews/top.png",
+      "png_bytes": 1677952,
+      "png_sha256": "0901c646551ae1dcecaffb90c83b28eb85dacb86f0cab57f39b50861fe17c8a6",
+      "png_git_blob": "72de6abad2c6aff0dde35f3aa2ec0ea1dfc63ea9",
+      "webp": "top.webp",
+      "webp_bytes": 542348,
+      "webp_sha256": "c5f7d952df0d617e6eb1ccf7c5b062caee3ff015c089a8607f0ea4370243be5f",
+      "rgb_sha256": "84046591af30e0fb078141936894ac0e05fab3aec3efe30828a46ddf76f4020a",
+      "resolution": [
+        1200,
+        1200
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false,
+      "current_camera_png_sha256": "0901c646551ae1dcecaffb90c83b28eb85dacb86f0cab57f39b50861fe17c8a6"
+    }
+  ],
+  "thumbnail": {
+    "path": "front-640.webp",
+    "source": "front.webp",
+    "bytes": 13138,
+    "sha256": "c72703561c324bd5b5d6d8141feea19b9dae505ca96c56560b383b982244aa15",
+    "resolution": [
+      640,
+      640
+    ],
+    "encoder": "Pillow WebP, quality 92, Lanczos resize",
+    "lossless": false,
+    "same_original_camera": true
+  }
+}
