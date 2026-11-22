@@ -2,9 +2,10 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| <a name="五視角"></a>五視角 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![實際交付網格前右視角](previews/front.png) |  |  |
+| ![實際交付網格前右視角](previews/front.png)<br>前右 | ![](previews/elevation.png)<br>正面 | ![](previews/rear.png)<br>後側簡化封閉 |
+| ![](previews/top.png)<br>頂面近似 | ![](previews/left_oblique.png)<br>前左 |  |
 
 NUU Erping Shan central gate-name tower and attached guard booth, approximate exterior segment.
 
@@ -30,21 +31,6 @@ NUU Erping Shan central gate-name tower and attached guard booth, approximate ex
 ## 列印注意
 
 原始 STL 拓撲、615 個全域層面，以及獨立窗梃、橫桿、帽簷邊、塔柱凹槽局部截面檢查通過本包記錄的篩查；**這不是所有細節可印或免支撐的保證**。細高柱需考慮列印穩定與強度，凹槽上緣、窗框及挑簷需依方向檢查支撐；1 mm 窗梃與 2 mm 帽簷仍受噴嘴、材料及縮放影響。未做實體試印或特定切片器支撐驗證。
-
-## 五視角
-
-<table>
-  <tr>
-    <td align="center" valign="top"><img src="previews/front.png" alt="" width="240"><br>前右</td>
-    <td align="center" valign="top"><img src="previews/elevation.png" alt="" width="240"><br>正面</td>
-    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>後側簡化封閉</td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>頂面近似</td>
-    <td align="center" valign="top"><img src="previews/left_oblique.png" alt="" width="240"><br>前左</td>
-    <td></td>
-  </tr>
-</table>
 
 ## 重建
 

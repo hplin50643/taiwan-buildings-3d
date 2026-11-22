@@ -2,9 +2,10 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| <a name="五個真實網格視圖"></a>五個真實網格視圖 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![波簷高尖峰上部木格片段的實際網格預覽](previews/front.png) |  |  |
+| ![波簷高尖峰上部木格片段的實際網格預覽](previews/front.png)<br>正斜視 | ![](previews/rear.png)<br>背斜視 | ![](previews/elevation.png)<br>投影正視 |
+| ![](previews/top.png)<br>俯視（淺深度估計） | ![](previews/left_oblique.png)<br>左斜視 |  |
 
 > **有界木格片段，不是完整亭，也不是完整雙曲面。** 藍色底座、立柱與帽蓋全部是截斷展示支架，不是現場基礎或實際腳座。
 
@@ -25,19 +26,5 @@
 - 深色尖峰接頭僅示意可見連接，不推定螺栓數、板厚或工程設計；無木紋貼圖、廣告牌、周圍建築、景觀基座或植物。
 - 藍色三處截斷支承是模型專用，不代表現場有三腳。底座寬 104 mm 為展示選擇，不是現場比例尺。
 - STL 已封閉且單一連通，但**薄截面檢查未全過**；斜木、接頭、0.6 mm 雙木條縫及上尖端仍需自行評估支撐、朝向及加工。未實際切片、列印或結構測試，不承諾可直接列印或免支撐。
-
-## 五個真實網格視圖
-<table>
-  <tr>
-    <td align="center" valign="top"><img src="previews/front.png" alt="" width="240"><br>正斜視</td>
-    <td align="center" valign="top"><img src="previews/rear.png" alt="" width="240"><br>背斜視</td>
-    <td align="center" valign="top"><img src="previews/elevation.png" alt="" width="240"><br>投影正視</td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><img src="previews/top.png" alt="" width="240"><br>俯視（淺深度估計）</td>
-    <td align="center" valign="top"><img src="previews/left_oblique.png" alt="" width="240"><br>左斜視</td>
-    <td></td>
-  </tr>
-</table>
 
 上述五圖由交付網格渲染，沒有以來源照片或概念示意圖冒充模型。照片投影正視僅為模型觀看角度，不代表實物測繪正立面。模型及原創程式 CC0；第三方照片不隨包分發。
