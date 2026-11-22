@@ -1,0 +1,244 @@
+{
+  "scope": "Display only of the existing bounded NTHU Li dormitory front and visible sides; no geometry, color, or original PNG deletion",
+  "checked_official_parent": "62838b47d91abc82c304319e1db9a210dcc7537e",
+  "source_scene_evidence": {
+    "native_opened": true,
+    "visible_triangles": 18362,
+    "vertices": 9181,
+    "material_slots": [
+      "Grey white tiled wall",
+      "Pale window frames",
+      "Muted window shadow",
+      "Brown circular screen",
+      "Dark recess and fan",
+      "Grey step and plinth",
+      "Blank sign panel",
+      "Artificial rear closure"
+    ],
+    "original_saved_front_exact": true,
+    "rendered_cameras": 6,
+    "reference_images_embedded": false,
+    "blender_version": "4.3.2"
+  },
+  "retained_native": {
+    "model.stl": {
+      "blob": "5664b238c068682f73bba3880a3749e00ebf0f7c",
+      "bytes": 918184,
+      "sha256": "3004d0afd29071fc9e3be298a4aee67dfed666fbf9d515c2f1c0655c82965939",
+      "provenance": "pinned exact public blob fetched"
+    },
+    "model.3mf": {
+      "blob": "5af4d2a6a8b7a4f740f22409b5187f768f21a1c4",
+      "bytes": 178548,
+      "sha256": "f99b9415638c59ba55a8abb949e9e3f055f01e3c3b0dfcc3e622562dd25e96d6",
+      "provenance": "pinned exact public blob fetched"
+    },
+    "scene.blend": {
+      "blob": "cdda59c452f242fd1bfa79cfb8ddacf82e1c5b10",
+      "bytes": 4099824,
+      "sha256": "6aa755062eb3d9ccde776159f4c955f7139767d89f228f3de2448a904cc028e7",
+      "provenance": "pinned exact public blob fetched"
+    },
+    "mesh-data.npz": {
+      "blob": "0d1fca08dc82254c4bf47ee58b55bf76942748eb",
+      "bytes": 114512,
+      "sha256": "41c22034897448810d579e0f8df1f5c3fc6bbd7c5ac5dd5572fd34cf7e462495",
+      "provenance": "pinned exact public blob fetched"
+    }
+  },
+  "views": [
+    {
+      "name": "front",
+      "camera": [
+        170,
+        -320,
+        150
+      ],
+      "target": [
+        0,
+        0,
+        39
+      ],
+      "ortho_scale": 210,
+      "png": "../previews/front.png",
+      "receipt": "../previews/front.render.json",
+      "png_bytes": 1311988,
+      "png_sha256": "5862d29317a69d09e615c0ea977b44d9abdc9b1a3864f875a1629bd47db0a06b",
+      "png_git_blob": "c8dc2a468bb8a2546628212108cfef96b7c30bce",
+      "receipt_git_blob": "46a59e162ae721d75a94a7b08c14ffbb5a38bd9a",
+      "webp": "front.webp",
+      "webp_bytes": 382978,
+      "webp_sha256": "e9c416a58a49353b0f6bcdabd5f2a9c76732dc3256c49e471302a3aa5465e1d5",
+      "rgb_sha256": "22cbc1be552cdbde756041fc04896ae777bf5dbefead22fad94c73ceb5319d68",
+      "resolution": [
+        1200,
+        900
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false
+    },
+    {
+      "name": "front_elevation",
+      "camera": [
+        0,
+        -300,
+        40
+      ],
+      "target": [
+        0,
+        0,
+        40
+      ],
+      "ortho_scale": 200,
+      "png": "../previews/front_elevation.png",
+      "receipt": "../previews/front_elevation.render.json",
+      "png_bytes": 1292515,
+      "png_sha256": "68edf8932e4fd8063881f9c46ff9a5a43881798511fdec25eafe060e726d1672",
+      "png_git_blob": "699fa90121188e8e4954118cbfff2e40a4823a1f",
+      "receipt_git_blob": "65d86bca4e3eede6fc96da31f63a859feb589781",
+      "webp": "front-elevation.webp",
+      "webp_bytes": 415522,
+      "webp_sha256": "72f2c2583ce1baea249a8a7dfe51f03fe30b5bada5540e2675c58be07f2e93ce",
+      "rgb_sha256": "0c4248cbbcb02437e96e7c3f991a4041f2bb97c29990f2e868358fd9ea8532fd",
+      "resolution": [
+        1200,
+        900
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false
+    },
+    {
+      "name": "rear",
+      "camera": [
+        -160,
+        320,
+        140
+      ],
+      "target": [
+        0,
+        0,
+        39
+      ],
+      "ortho_scale": 210,
+      "png": "../previews/rear.png",
+      "receipt": "../previews/rear.render.json",
+      "png_bytes": 1102411,
+      "png_sha256": "4beeaa841a479d1d998863c4de79d85ebfea925cada987a70473e8ffd1ed2cb0",
+      "png_git_blob": "6523f74ecaaf05374f7f6350f1a4b239f8cb5978",
+      "receipt_git_blob": "2b62da647a1be9c5c99bf2e8aeefaf8e94cc7f75",
+      "webp": "rear.webp",
+      "webp_bytes": 212210,
+      "webp_sha256": "817a8bdd76ce6d028a5d1941ce782e6bbec6c44c4755a8e8c8341fc5a289f2e6",
+      "rgb_sha256": "3f226c4a42eb417cd24f0a10d241723d8ef45e3b2b46d95193c655293f8fbd4e",
+      "resolution": [
+        1200,
+        900
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false
+    },
+    {
+      "name": "left_end",
+      "camera": [
+        -300,
+        -30,
+        90
+      ],
+      "target": [
+        0,
+        0,
+        39
+      ],
+      "ortho_scale": 160,
+      "png": "../previews/left_end.png",
+      "receipt": "../previews/left_end.render.json",
+      "png_bytes": 1152905,
+      "png_sha256": "f1bb45a1a68748baf6fbd5bbb15474885c944aed8ad22433324f4540e549598d",
+      "png_git_blob": "4301613dd8a24c706e687b1ea95074dba6d911c3",
+      "receipt_git_blob": "06a1f6ffcf1a1c1272d1fd2298b7a35119223fcc",
+      "webp": "left-end.webp",
+      "webp_bytes": 178792,
+      "webp_sha256": "af27648e2349c47b57da6093fb5c81b6e3d903d392df012052d2b8d6123a4571",
+      "rgb_sha256": "3aaa6c53f2f4af8b62d3ab6db84ce1790a88e88dd3ce40c9f20c63e65347c2ed",
+      "resolution": [
+        1200,
+        900
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false
+    },
+    {
+      "name": "top",
+      "camera": [
+        0,
+        0,
+        400
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 200,
+      "png": "../previews/top.png",
+      "receipt": "../previews/top.render.json",
+      "png_bytes": 1057006,
+      "png_sha256": "4fc86819edc0b12274eb49b64fcd15b126992cc5645369830fe127303be616de",
+      "png_git_blob": "1c65a1753cd4478f7c55f896a0b1edc5bdf599ea",
+      "receipt_git_blob": "5e18ba19b15c3874bbc2448c0f0a02fd29437326",
+      "webp": "top.webp",
+      "webp_bytes": 121050,
+      "webp_sha256": "a07639285dd4f82e62743f35e03cc939b37e2218c995ee1451ef53496f387393",
+      "rgb_sha256": "444e30a8c1577ee0afcc26f6caedf3bf65fe447bf305bb0c0852267416d95934",
+      "resolution": [
+        1200,
+        900
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false
+    },
+    {
+      "name": "entry_detail",
+      "camera": [
+        40,
+        -250,
+        55
+      ],
+      "target": [
+        17,
+        -2,
+        32
+      ],
+      "ortho_scale": 95,
+      "png": "../previews/entry_detail.png",
+      "receipt": "../previews/entry_detail.render.json",
+      "png_bytes": 1758450,
+      "png_sha256": "efcf1a35a313e14822dbe584a03b9811f6a0402b1a254b617fd808d29e824fba",
+      "png_git_blob": "d809801a9fa654ac1f4a1a9a20b46d8db808178e",
+      "receipt_git_blob": "8e2eadfa8dc2dd05d9e849432993dfc5778d34ad",
+      "webp": "entry-detail.webp",
+      "webp_bytes": 1013892,
+      "webp_sha256": "049b43f55a589f27f721c76edada01110e5bec9abbdac8ff209615fb39912bb4",
+      "rgb_sha256": "affeb1e2ee1ecc4471ea29f033f3bf99077bb2a43519d692a458676acfa5d668",
+      "resolution": [
+        1200,
+        900
+      ],
+      "independent_native_rgb_exact": true,
+      "independent_native_png_bytes_equal": false
+    }
+  ],
+  "thumbnail": {
+    "path": "front-640.webp",
+    "source": "front.webp",
+    "bytes": 21184,
+    "sha256": "ebd780fd0323573fe431024155827d6c33f64cbc1e699847057b66dd1bf01df5",
+    "resolution": [
+      640,
+      480
+    ],
+    "encoder": "Pillow WebP, quality 92, Lanczos resize",
+    "lossless": false,
+    "same_original_camera": true
+  }
+}
