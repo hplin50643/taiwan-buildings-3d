@@ -1,0 +1,238 @@
+{
+  "native_blend_sha256": "027e3f33b1c727ae4d64750a26a459c9df486b5a12797c9e726709066aba55e5",
+  "exchange_3mf_sha256": "70b318ee12cd15998068d9aaf1c76eaffabe24e525eb449f4e19ac57c10eb4db",
+  "retained_original_stl_sha256": "166c05cd28dcd4192e145d51d8846e5a7895bf2c1b0ed5c56cefee664311743c",
+  "retained_original_obj_sha256": "3b5fd91f5c7a3d4b5cfbbaa92d1b9b7c93ce8abf62ccb3b2cd7ff3e8e8339483",
+  "obj_stl_triangle_order_and_float32_coords_exact": true,
+  "obj_stl_max_decimal_difference_mm": 4.9853525752041605e-09,
+  "native_exchange_binary_stl_triangle_coordinates_orientations_and_order_exact": true,
+  "color_face_counts": {
+    "7": 28,
+    "0": 2380,
+    "1": 1243,
+    "3": 117,
+    "5": 286,
+    "6": 2137,
+    "4": 65,
+    "2": 224
+  },
+  "original_triangle_count": 6480,
+  "original_STL_cold_rebuild_byte_match": true,
+  "current_3MF_rebuilt_from_immutable_source_archive_byte_match": true,
+  "root_NUU_representative_is_bajia_north_gate_not_b4": true,
+  "preconsolidation_git_revision": "1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8",
+  "cpu_cycles_samples": 48,
+  "renderer_version": "4.3.2",
+  "views": {
+    "front": {
+      "camera": {
+        "location": [
+          180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          30
+        ],
+        "scale": 240.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.16250018775463104,
+          0.267628014087677,
+          0.8375002145767212,
+          0.7490061521530151
+        ],
+        "bbox_bounds": [
+          0.16250018775463104,
+          0.267628014087677,
+          0.8375002145767212,
+          0.7831407785415649
+        ],
+        "rotation": [
+          1.1760053634643555,
+          7.841510551997999e-09,
+          0.6435012221336365
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "5d3d4ebd7676a2b703afe857e953affeb94a552d3a478156988ac0860098e4bb",
+      "webp_sha256": "d5ea9e840fe4e87d8073c9d8770a3893170fbbb1b04750737cd29c9813237793",
+      "webp_path": "front-current.webp",
+      "comparison": "Exact latest issued PNG minus container metadata; camera and all decoded RGBA pixels match independent rerender from pinned 8-material Blender scene",
+      "list_thumbnail": {
+        "sha256": "3e53e4b3271b730d08169ab1a54fa3c805d2f1890b55bdc59d7d3882a330738f",
+        "byte_count": 12448,
+        "path": "front-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "rear": {
+      "camera": {
+        "location": [
+          -180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          30
+        ],
+        "scale": 240.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.16249977052211761,
+          0.267628014087677,
+          0.8374997973442078,
+          0.7454164028167725
+        ],
+        "bbox_bounds": [
+          0.16249977052211761,
+          0.267628014087677,
+          0.8374997973442078,
+          0.7831407785415649
+        ],
+        "rotation": [
+          1.1760053634643555,
+          -1.019395838852688e-07,
+          -2.498091697692871
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "d4ff7daba9962a317f214c2ed85a89258255752580502aa2a43caa59eaaca4cf",
+      "webp_sha256": "3179f333338ce776bc4fbd714db2407fbb21cbe55f24bbab5393025582fea2c1",
+      "webp_path": "rear-current.webp",
+      "comparison": "Exact latest issued PNG minus container metadata; camera and all decoded RGBA pixels match independent rerender from pinned 8-material Blender scene",
+      "list_thumbnail": {
+        "sha256": "2b9d8284e04350b810b3df261b62bc3648f0ebf4ebe2e81674806e9eaa1e0832",
+        "byte_count": 9954,
+        "path": "rear-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "elevation": {
+      "camera": {
+        "location": [
+          0,
+          -290,
+          31
+        ],
+        "target": [
+          0,
+          0,
+          39
+        ],
+        "scale": 180.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.0833333358168602,
+          0.27805376052856445,
+          0.9166666865348816,
+          0.6903106570243835
+        ],
+        "bbox_bounds": [
+          0.0833333358168602,
+          0.27805376052856445,
+          0.9166666865348816,
+          0.6952896118164062
+        ],
+        "rotation": [
+          1.5983755588531494,
+          -0.0,
+          0.0
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "6174f9bcdec5f482cf3174f4f7d6c3f0fbf31c59c8a3da6c7f7365fd99920055",
+      "webp_sha256": "b65831694349804ec3d833ea8a0c0995f9b0db4a474916462fce5c9c1d05c2ae",
+      "webp_path": "elevation-current.webp",
+      "comparison": "Exact latest issued PNG minus container metadata; camera and all decoded RGBA pixels match independent rerender from pinned 8-material Blender scene",
+      "list_thumbnail": {
+        "sha256": "5ba9ab3fcf1db1abe43b588ff8520427fbb75f5b0d9fe5c27f74a420c5b7f6b2",
+        "byte_count": 15140,
+        "path": "elevation-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "top": {
+      "camera": {
+        "location": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "scale": 180.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.0833333358168602,
+          0.3055555522441864,
+          0.9166666865348816,
+          0.6944444179534912
+        ],
+        "bbox_bounds": [
+          0.0833333358168602,
+          0.3055555522441864,
+          0.9166666865348816,
+          0.6944444179534912
+        ],
+        "rotation": [
+          0.0,
+          -0.0,
+          0.0
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "e6e3f59acb5d542339eedfca1de4fba239776df9a7362e0b0dae29030797857d",
+      "webp_sha256": "d60270e589bbd2aaaf76b192044c955434be16845e1ab3af16d1fe93bac65cdf",
+      "webp_path": "top-current.webp",
+      "comparison": "Exact latest issued PNG minus container metadata; camera and all decoded RGBA pixels match independent rerender from pinned 8-material Blender scene",
+      "list_thumbnail": {
+        "sha256": "9fc5813754d856f2f6a19dea1c30efb7ac0c4b8c2f3a6b03cffcee6cc6491b96",
+        "byte_count": 3488,
+        "path": "top-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "campus_catalog_thumbnail": {
+      "from": "front",
+      "webp_sha256": "3e53e4b3271b730d08169ab1a54fa3c805d2f1890b55bdc59d7d3882a330738f",
+      "size": [
+        640,
+        640
+      ],
+      "path": "front-current-640.webp"
+    }
+  },
+  "historical_ledgers_retained_unchanged": [
+    "國立聯合大學/buildings/bajia-b4-computer-science/SHA256SUMS",
+    "國立聯合大學/buildings/bajia-b4-computer-science/appearance/SHA256SUMS"
+  ],
+  "source_native_paths": [
+    "../model.stl",
+    "../model.obj",
+    "../appearance/nuub4-appearance.3mf",
+    "../appearance/scene.blend"
+  ],
+  "source_pngs": [
+    "../appearance/previews/front.png",
+    "../appearance/previews/rear.png",
+    "../appearance/previews/elevation.png",
+    "../appearance/previews/top.png"
+  ],
+  "display_only": true
+}
