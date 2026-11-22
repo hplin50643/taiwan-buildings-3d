@@ -1,17 +1,17 @@
-# 聯大二坪 M7 雙巔樓：八材質外觀版
+# 聯大二坪 M7 雙電樓：八材質外觀版
 
 沿用原 **7,778 三角面／3,859 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 未知短端與背牆中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| 正面<br>[![正面](../display/front-640.webp)](../display/front.webp) | 未知短端與背牆中性<br>[![背面](../display/rear-640.webp)](../display/rear.webp) | [![正立面](../display/elevation-640.webp)](../display/elevation.webp) |
+| [![頂視](../display/top-640.webp)](../display/top.webp) |  |  |
 
 [表面色 3MF](nuum7-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
 ## 來源與配色邊界
 
-親自核對官方 [雙巔樓相簿](https://secretary.nuu.edu.tw/p/132-1003-1109.php?Lang=zh-tw) 的完整照片 1／4：入口近景與高位外觀可對應 L 形兩翼、內角樓梯、直柱節奏、藍綠電梯塔與兩組光電頂面。精確影像網址、SHA256 與 EXIF 見 [來源覆核](qa/source-review.json)；拍攝日期及時區未獨立驗證，不代表 2026 現況。來源照片不隨包散布。
+親自核對官方 [雙電樓相簿](https://secretary.nuu.edu.tw/p/132-1003-1109.php?Lang=zh-tw) 的完整照片 1／4：入口近景與高位外觀可對應 L 形兩翼、內角樓梯、直柱節奏、藍綠電梯塔與兩組光電頂面。精確影像網址、SHA256 與 EXIF 見 [來源覆核](qa/source-review.json)；拍攝日期及時區未獨立驗證，不代表 2026 現況。來源照片不隨包散布。
 
 - 院側與可見左長側灰色牆、淺暖色直柱，離散窗凹背採灰藍代理色；原窗框與柱距為既有簡化，非逐窗測繪，不把窗下實牆染玻璃。
 - 原內角連接段灰牆、有限既有窗背與門背採玻璃代理；現實窗帶、入口比例與網格不完全相同，維持原形。

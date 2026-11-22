@@ -1,0 +1,129 @@
+{
+  "current_source_commit": "4b3264c4d85c78f4c242bc7e9336d2a3dbdfd11d",
+  "native": {
+    "triangles": 7778,
+    "vertices": 3859,
+    "materials": 8,
+    "face_counts": [
+      2432,
+      1758,
+      1115,
+      470,
+      1797,
+      176,
+      12,
+      18
+    ],
+    "front_replay_pipeline": "exact 3MF and palette, original saved camera render script"
+  },
+  "views": {
+    "front": {
+      "path": "previews/front.png",
+      "bytes": 1793664,
+      "sha256": "dcb20f8f1fdbbfc470c56a364d5cf795a3ccc3b870f8bc290034d59e61f13946",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source": "國立聯合大學/buildings/erping-m7-shuangdian-dorm/appearance/previews/front.png",
+      "blob": "2865856ea4a17fa7ba1f762a7716c24257ce7705",
+      "original_png_equal": true,
+      "rgba": "4dae10a2aa482246a8df4c2fcff793f7c40fc5e47ce421eb1a21b68d756751c1",
+      "webp": "front.webp",
+      "full_bytes": 582524,
+      "thumb": "front-640.webp",
+      "thumb_bytes": 22666
+    },
+    "rear": {
+      "path": "previews/rear.png",
+      "bytes": 1733410,
+      "sha256": "3b816282d433abb5f651a813c7e665eb8b7adf5ca8ffcdcf6456c65104daabe6",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source": "國立聯合大學/buildings/erping-m7-shuangdian-dorm/appearance/previews/rear.png",
+      "blob": "ab3dc16dabbfc784efd9d78646a9f76cc08fb9bc",
+      "original_png_equal": true,
+      "rgba": "c23b1bd37388bcd10e4eafff58cc61d5e7325c3e8ce6240b22b06e53f9f73f4e",
+      "webp": "rear.webp",
+      "full_bytes": 514142,
+      "thumb": "rear-640.webp",
+      "thumb_bytes": 17578
+    },
+    "elevation": {
+      "path": "previews/elevation.png",
+      "bytes": 1698986,
+      "sha256": "ec85a79cdbed8e1a92382b75c9e7e6dcc07d149560d3a23488a8e6d9f8270a87",
+      "camera": [
+        0,
+        -290,
+        38
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source": "國立聯合大學/buildings/erping-m7-shuangdian-dorm/appearance/previews/elevation.png",
+      "blob": "ea05d36b1c3d531992ce2dbb9900e698336d8cd0",
+      "original_png_equal": true,
+      "rgba": "c3c638d4d8a218acf8accb5b91bb44b35d8c5de7df901e10c3969af32953a739",
+      "webp": "elevation.webp",
+      "full_bytes": 485558,
+      "thumb": "elevation-640.webp",
+      "thumb_bytes": 15290
+    },
+    "top": {
+      "path": "previews/top.png",
+      "bytes": 1764839,
+      "sha256": "4854ac5d0cf811bc49a6c2fcb4bc35ac09ff477fc0bd7c5f3c988c98f5196089",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source": "國立聯合大學/buildings/erping-m7-shuangdian-dorm/appearance/previews/top.png",
+      "blob": "4c7c1cbd243ea2cdc0fdfeb046a13490d47ba408",
+      "original_png_equal": true,
+      "rgba": "4edd345f065ddf46cc405f81740483efaa42c495b75f5290407e413a725df095",
+      "webp": "top.webp",
+      "full_bytes": 738042,
+      "thumb": "top-640.webp",
+      "thumb_bytes": 10390
+    }
+  },
+  "locked_native_hashes": {
+    "國立聯合大學/buildings/erping-m7-shuangdian-dorm/model.stl": "de53f0275d25d018607d01b13a2a9a77f12fde0171d9d7d496da94021f505b88",
+    "國立聯合大學/buildings/erping-m7-shuangdian-dorm/appearance/scene.blend": "3157d03f7610734b6b37b7be4a3fb8f7e76a19b2eecdd3d0062502d61806a42a",
+    "國立聯合大學/buildings/erping-m7-shuangdian-dorm/appearance/nuum7-appearance.3mf": "094f88bcbf623571ab1eeae7a952ebb24ea6d0c087e3463f57316c0bb0d960aa",
+    "國立聯合大學/buildings/erping-m7-shuangdian-dorm/appearance/palette.json": "1b2efaccd6ac5148bfc5a81f3f5571e2b6563ad4b384da7b8ab5649be8008613"
+  },
+  "limits": "Existing color only; far short ends/rear neutral, approximate engineering. No source images distributed.",
+  "evidence": "NUU campus key and current Secretary gallery say 雙電樓. Dorm center photo materials do not register new rear region onto approximate mesh; no recolor."
+}
