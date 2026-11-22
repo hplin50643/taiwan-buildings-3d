@@ -1,0 +1,232 @@
+{
+  "native_blend_sha256": "587ac605665da614b27bc96c67bf45436af14a04595578276a1121c068de8cc3",
+  "exchange_3mf_sha256": "ec7f381b563ddd6c576dae2be586f7b73ccf4da1e2e37dc83300226b7b5279a2",
+  "retained_original_stl_sha256": "80c9e2f5243a745949db2b29b20fa078832102d71e3dd9d06c51f88537e1b522",
+  "native_exchange_binary_stl_triangle_coordinates_orientations_and_order_exact": true,
+  "color_face_counts": {
+    "0": 809,
+    "1": 65,
+    "5": 84,
+    "3": 104,
+    "4": 26,
+    "2": 14
+  },
+  "original_triangle_count": 1102,
+  "original_STL_cold_rebuild_byte_match": true,
+  "current_3MF_rebuilt_from_immutable_source_archive_byte_match": true,
+  "root_NUU_representative_is_bajia_north_gate_not_v1": true,
+  "preconsolidation_git_revision": "1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8",
+  "cpu_cycles_samples": 48,
+  "renderer_version": "4.3.2",
+  "views": {
+    "front": {
+      "camera": {
+        "location": [
+          180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          23
+        ],
+        "scale": 185.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.054054178297519684,
+          0.2229316532611847,
+          0.9459459781646729,
+          0.6977081298828125
+        ],
+        "bbox_bounds": [
+          0.054054178297519684,
+          0.2229316532611847,
+          0.9459459781646729,
+          0.786963701248169
+        ],
+        "rotation": [
+          1.1562894582748413,
+          -5.698628058325994e-08,
+          0.6435011625289917
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "1b87d275cc546f06d59fd5226c40accdf928e8bdad79922557deab9dbb1dcac1",
+      "webp_sha256": "57584305c67e71fc070ba1a06b75b3e5d32a7297def56979917f5268a3fd8817",
+      "webp_path": "front-current.webp",
+      "comparison": "Exact latest issued PNG minus container metadata; camera and all decoded RGBA pixels match independent rerender from pinned 6-material Blender scene",
+      "list_thumbnail": {
+        "sha256": "f56d0ff5bdaab75e38960cb1aa9560723652cbde86faa2d7ce8f187d5990abdb",
+        "byte_count": 11856,
+        "path": "front-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "rear": {
+      "camera": {
+        "location": [
+          -180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          23
+        ],
+        "scale": 185.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.05405372381210327,
+          0.2229316681623459,
+          0.945945680141449,
+          0.6999444365501404
+        ],
+        "bbox_bounds": [
+          0.05405372381210327,
+          0.2229316681623459,
+          0.9459457397460938,
+          0.786963701248169
+        ],
+        "rotation": [
+          1.1562894582748413,
+          -9.40420008532783e-08,
+          -2.498091697692871
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "361ec08edf70619cd309cffe37c41b98c9e80bbe0325bb1fd20d3b9d2ec23940",
+      "webp_sha256": "4200667b3c9f734a706e538a7af8b91377c0dbe619e347be81e1b5cb4b19b505",
+      "webp_path": "rear-current.webp",
+      "comparison": "Exact latest issued PNG minus container metadata; camera and all decoded RGBA pixels match independent rerender from pinned 6-material Blender scene",
+      "list_thumbnail": {
+        "sha256": "b70322cf3afc5a34001f1666de188dcb781570fff8d1cf5fdef592a9a8eead12",
+        "byte_count": 6344,
+        "path": "rear-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "elevation": {
+      "camera": {
+        "location": [
+          0,
+          -290,
+          31
+        ],
+        "target": [
+          0,
+          0,
+          24
+        ],
+        "scale": 175.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.0714285746216774,
+          0.35772621631622314,
+          0.9285714030265808,
+          0.6375855803489685
+        ],
+        "bbox_bounds": [
+          0.0714285746216774,
+          0.35772621631622314,
+          0.9285714030265808,
+          0.6422739028930664
+        ],
+        "rotation": [
+          1.5466630458831787,
+          -0.0,
+          0.0
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "02310318418554da053cdbbaa251fff8a53ac253339599495f944fd8158f0ed6",
+      "webp_sha256": "7919466d0437156574048022670b466804e897d2597ae7533733abd245326c6f",
+      "webp_path": "elevation-current.webp",
+      "comparison": "Exact latest issued PNG minus container metadata; camera and all decoded RGBA pixels match independent rerender from pinned 6-material Blender scene",
+      "list_thumbnail": {
+        "sha256": "7af4cbebdf7d0f2e96004f1a1a5ea3e7f82d7fc9a0add5db1a232335aab67bce",
+        "byte_count": 5788,
+        "path": "elevation-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "top": {
+      "camera": {
+        "location": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "scale": 180.0,
+        "resolution": [
+          1200,
+          1200
+        ],
+        "vertices_bounds": [
+          0.0833333358168602,
+          0.2916666567325592,
+          0.9166666865348816,
+          0.7083333134651184
+        ],
+        "bbox_bounds": [
+          0.0833333358168602,
+          0.2916666567325592,
+          0.9166666865348816,
+          0.7083333134651184
+        ],
+        "rotation": [
+          0.0,
+          -0.0,
+          0.0
+        ]
+      },
+      "fresh_render_RGBA_SHA256": "ab5a8c9e64f4b3eb2a4e639df9aec739807dff43ec0b2b7747ec944a9ac48aeb",
+      "webp_sha256": "49fa50a54f0660121377ef8adfd0ff3fd0678902aec8d591482a9591635623e6",
+      "webp_path": "top-current.webp",
+      "comparison": "Exact latest issued PNG minus container metadata; camera and all decoded RGBA pixels match independent rerender from pinned 6-material Blender scene",
+      "list_thumbnail": {
+        "sha256": "6a8d94ce6415b47c9a79cd9cf8a22c94abdd8350b89c69183585bb692766a2b1",
+        "byte_count": 3920,
+        "path": "top-current-640.webp",
+        "same_prior_inline_bytes": false
+      }
+    },
+    "campus_catalog_thumbnail": {
+      "from": "front",
+      "webp_sha256": "f56d0ff5bdaab75e38960cb1aa9560723652cbde86faa2d7ce8f187d5990abdb",
+      "size": [
+        640,
+        640
+      ],
+      "path": "front-current-640.webp"
+    }
+  },
+  "historical_ledgers_retained_unchanged": [
+    "國立聯合大學/buildings/erping-v1-landscape-restaurant/SHA256SUMS",
+    "國立聯合大學/buildings/erping-v1-landscape-restaurant/appearance/SHA256SUMS"
+  ],
+  "source_native_paths": [
+    "../model.stl",
+    "../appearance/nuuv1-appearance.3mf",
+    "../appearance/scene.blend"
+  ],
+  "source_pngs": [
+    "../appearance/previews/front.png",
+    "../appearance/previews/rear.png",
+    "../appearance/previews/elevation.png",
+    "../appearance/previews/top.png"
+  ],
+  "display_only": true
+}
