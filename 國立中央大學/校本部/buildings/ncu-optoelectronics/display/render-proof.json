@@ -1,0 +1,237 @@
+{
+  "baseline": "c1cb32dd515d9c4f1f8321478db15490f1368467",
+  "active_ledger_rows": 41,
+  "historical_ledgers": {
+    "PUBLIC-MODEL-SHA256SUMS": {
+      "count": 15,
+      "historical_mismatches": [
+        "appearance/README.md",
+        "appearance/face-materials.json",
+        "appearance/ncu-optoelectronics-appearance.3mf",
+        "appearance/palette.json",
+        "appearance/previews/elevation.png",
+        "appearance/previews/front.png",
+        "appearance/previews/rear.png",
+        "appearance/previews/side.png",
+        "appearance/previews/top.png",
+        "appearance/scene.blend"
+      ]
+    },
+    "appearance/SHA256SUMS": {
+      "count": 30,
+      "historical_mismatches": [
+        "appearance/README.md",
+        "appearance/face-materials.json",
+        "appearance/ncu-optoelectronics-appearance.3mf",
+        "appearance/palette.json",
+        "appearance/previews/elevation.png",
+        "appearance/previews/front.png",
+        "appearance/previews/rear.png",
+        "appearance/previews/side.png",
+        "appearance/previews/top.png",
+        "appearance/rebuild-source.zip",
+        "appearance/scene.blend"
+      ]
+    }
+  },
+  "native": {
+    "model.stl": "f8b49387d3e9237da92bb6c3b8d7ed89f931f412ddae9494de118acf6694c287",
+    "appearance/ncu-optoelectronics-appearance.3mf": "8c7d645ab5f7aa717bdbebfeede43da3794f3fa83a9e20368367f220b2129139",
+    "appearance/scene.blend": "0985d028697531e95cd2c689c552d5dc393ac5105cdf8bf4f45a9f80fdf86241",
+    "appearance/face-materials.json": "9c9087fc8609640a08a43b6c5e96a5f0faee02412252c9f5548ee6bcfa0a6bdb",
+    "appearance/palette.json": "3905d3389acb70fd5585f8b084331161bffd8938d5abf2d132b7d627b9fc90f0",
+    "appearance/source/render_appearance.py": "b0b1ef4c60fc9bed43314494dc5bd4e3f138d97677d7e13c35e1f390a9073998",
+    "appearance/source/render_current.py": "01a0f3067429fa62a5f4ee8e3130179366358a8932ff4e4adb23ea2eb3800ba5",
+    "appearance/qa/current-render-manifest.json": "ecd43c9b17c6ad36bfd11f31b32b85c546008b49da9a3ae96b34369fcb3e07f5",
+    "appearance/qa/continuous-columns-verification.json": "ec60abc4ffa2a438a68edc8a39eb03a1e8a940a3de2ab53f5d4ef1d4f2bf0d51"
+  },
+  "triangles": 4138,
+  "scope": "Current published November 17 pale-gray central column continuation limited to identified faces (18 added previously), explicitly inferred continuity, not a new recolor",
+  "rows": [
+    {
+      "source": "appearance/previews/front.png",
+      "source_sha256": "18f4ff732992c0555a229be8c88da57e08c5a06001433f162bd4f724847f3d0e",
+      "fresh_png_sha256": "18f4ff732992c0555a229be8c88da57e08c5a06001433f162bd4f724847f3d0e",
+      "rgba_sha256": "9c2aeddb5d357f4c3f307bcccf102d2bc7b95d1411f31187bcedda6a07bbbfb4",
+      "size": [
+        1200,
+        1200
+      ],
+      "native_bytes": 1744688,
+      "webp": "front.webp",
+      "webp_bytes": 543824,
+      "webp_sha256": "bd3799c14ab5eea9efb587a97b6f022a39dff384c53503cc77f3b5e0e5e6b01b",
+      "camera": [
+        -195,
+        -220,
+        170
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 235
+    },
+    {
+      "source": "appearance/previews/rear.png",
+      "source_sha256": "dd3bcd8d4e8bedad72787c636f46180d1c9d2f9ac126c16023ce6def4fcfdb95",
+      "fresh_png_sha256": "dd3bcd8d4e8bedad72787c636f46180d1c9d2f9ac126c16023ce6def4fcfdb95",
+      "rgba_sha256": "48ff07adf54f4462d7c45141573eceba492bd60a49d78938ed235f402a9035d1",
+      "size": [
+        1200,
+        1200
+      ],
+      "native_bytes": 1749578,
+      "webp": "rear.webp",
+      "webp_bytes": 553252,
+      "webp_sha256": "bb87f4c2092f7e93eb18df06778758fa67e1f30c3414f31a7b85b7585f7a2eae",
+      "camera": [
+        195,
+        230,
+        170
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 235
+    },
+    {
+      "source": "appearance/previews/elevation.png",
+      "source_sha256": "b26323cca39d8c9953c3e9f43cdcea31f12bffe70530d120f2c79b1f8e39e0fe",
+      "fresh_png_sha256": "b26323cca39d8c9953c3e9f43cdcea31f12bffe70530d120f2c79b1f8e39e0fe",
+      "rgba_sha256": "adbef0062cde84c31c0f2003a8233ebe25c74879a9e0700d3bbed4ffd4aa4c98",
+      "size": [
+        1200,
+        1200
+      ],
+      "native_bytes": 1687953,
+      "webp": "elevation.webp",
+      "webp_bytes": 485206,
+      "webp_sha256": "f60517daacae3872f9ba2ef2e779d5158ffacad54e00dab19eb3daa7d28a41a0",
+      "camera": [
+        0,
+        -280,
+        42
+      ],
+      "target": [
+        0,
+        0,
+        42
+      ],
+      "ortho_scale": 180
+    },
+    {
+      "source": "appearance/previews/side.png",
+      "source_sha256": "5ba12709066b0264204fd151955c101bdf013b07a29220b0137f686bc066a56d",
+      "fresh_png_sha256": "5ba12709066b0264204fd151955c101bdf013b07a29220b0137f686bc066a56d",
+      "rgba_sha256": "87728002ede13857515215780edc2980bd7da0ea058cbb670360cdf0d9c94cca",
+      "size": [
+        1200,
+        1200
+      ],
+      "native_bytes": 1767278,
+      "webp": "side.webp",
+      "webp_bytes": 594764,
+      "webp_sha256": "6c8f372838ef5054b09219aadda53c513a9a0987a727712cb07ce9f77a32c9a9",
+      "camera": [
+        -280,
+        0,
+        115
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 185
+    },
+    {
+      "source": "appearance/previews/top.png",
+      "source_sha256": "f133076fd7daae6ad00f18c1f1c5e4ea6be1492f81fad642ce7239e6b8bcba6b",
+      "fresh_png_sha256": "f133076fd7daae6ad00f18c1f1c5e4ea6be1492f81fad642ce7239e6b8bcba6b",
+      "rgba_sha256": "b708472475676c1bb707ee942a325ff3e3f7f09d5e4b7cb1c911c67d83e52645",
+      "size": [
+        1200,
+        1200
+      ],
+      "native_bytes": 1858870,
+      "webp": "top.webp",
+      "webp_bytes": 851134,
+      "webp_sha256": "1071ea72ad1d4b90beddc2e6dd353f6b416609f99578f632af2c42005f6737dc",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180
+    }
+  ],
+  "card": {
+    "new_bytes": 17760,
+    "old_bytes": 1744688,
+    "new_sha256": "c9b4490b3e58dde334f0164208f2cd61dc36ba198dc975444fbb0e0887ceacc6"
+  },
+  "authored_3mf_replay_matches_published_blend": {
+    "vertex_count": 1963,
+    "polygon_count": 4138,
+    "verts": "72d38efe0824d72727b9e6e2b06310b3669917201fd6486b36c9cb324e27eaa1",
+    "triangles_material": "b140f7c69e5152e303f22f6275dced2cb87e027fe0cba70ac7f9a1cfa0d85546",
+    "materials": [
+      [
+        "neutral_unresolved_envelope_and_base",
+        [
+          0.4019777774810791,
+          0.38642942905426025,
+          0.34670406579971313,
+          1.0
+        ]
+      ],
+      [
+        "dark_grey_green_roof_grid_complete_beams",
+        [
+          0.05951123684644699,
+          0.11953842639923096,
+          0.11953842639923096,
+          1.0
+        ]
+      ],
+      [
+        "pale_grey_blue_central_glazing_proxy",
+        [
+          0.2622506618499756,
+          0.34191441535949707,
+          0.34191441535949707,
+          1.0
+        ]
+      ],
+      [
+        "central_column_front_pale_gray_background_approximation",
+        [
+          0.5583403706550598,
+          0.5583403706550598,
+          0.4969329833984375,
+          1.0
+        ]
+      ]
+    ],
+    "camera": [
+      -195.0,
+      -220.0,
+      170.0
+    ],
+    "render": [
+      "CYCLES",
+      1200,
+      1200,
+      48
+    ]
+  }
+}
