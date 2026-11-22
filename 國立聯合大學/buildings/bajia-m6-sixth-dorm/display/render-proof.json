@@ -1,0 +1,162 @@
+{
+  "base": "e3b5c75b384a081baf7548bc758e75189b6b12da",
+  "native": {
+    "gable-fascia-20261120/scene.blend": {
+      "path": "國立聯合大學/buildings/bajia-m6-sixth-dorm/gable-fascia-20261120/scene.blend",
+      "sha256": "b7169c3467ecb20dc297eaf4f4e538270ead00e69eac5f51a45d60b6f6fdb0cf",
+      "git_blob": "98be9dbed32c240ef9d33c9b81a59190f49204c1"
+    },
+    "gable-fascia-20261120/model-colored.3mf": {
+      "path": "國立聯合大學/buildings/bajia-m6-sixth-dorm/gable-fascia-20261120/model-colored.3mf",
+      "sha256": "3620e1477db4ce0fb569c7b71fae4e1b5830ba56f8c12b8c86a57da5ac36e831",
+      "git_blob": "ab34ce59ee67f5daec32029398abe05b32700ee6"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/bajia-m6-sixth-dorm/model.stl",
+      "sha256": "e0efff925d6cbb46a0765f500d8048e8fb74f3895411f6ce0cf4f4b3d26857be",
+      "git_blob": "e2e6ef05193471e30c7d1fad7ba993016d09e85a"
+    }
+  },
+  "checked_note": "Native current fascia Blend Cycles rerender at historical camera locations; full WebP decoded RGBA exact to fresh latest scene. Previous exact PNG hashes are from current appearance ledger; differences are counted without recertifying earlier renders as current.",
+  "render_manifest": "國立聯合大學/buildings/bajia-m6-sixth-dorm/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "6c2571208469f4f33000ab2b7da2f403298832b3e0d0176531ea14d78c2b0b4b",
+  "triangles": 7000,
+  "vertices": 3476,
+  "materials": {
+    "0": 1723,
+    "1": 2230,
+    "4": 256,
+    "3": 2547,
+    "2": 240,
+    "5": 4
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 15,
+    "PUBLIC-MODEL-SHA256SUMS": 14,
+    "appearance/SHA256SUMS": 21,
+    "gable-fascia-20261120/SHA256SUMS": 14
+  },
+  "preexisting_historical_checksum_mismatches": [
+    "appearance/SHA256SUMS:face-materials.json",
+    "appearance/SHA256SUMS:nuum6-appearance.3mf",
+    "appearance/SHA256SUMS:palette.json",
+    "appearance/SHA256SUMS:previews/elevation.png",
+    "appearance/SHA256SUMS:previews/front.png",
+    "appearance/SHA256SUMS:previews/rear.png",
+    "appearance/SHA256SUMS:previews/top.png",
+    "appearance/SHA256SUMS:rebuild-source.zip",
+    "appearance/SHA256SUMS:scene.blend"
+  ],
+  "already_published_fascia_faces": [
+    6993,
+    6999
+  ],
+  "latest_qa_path": "國立聯合大學/buildings/bajia-m6-sixth-dorm/gable-fascia-20261120/verification.json",
+  "latest_qa_sha256": "fa27b27819111c04f7df46cc20e0c235f5332ac37251f39f79e1a7b9b52c1ecb",
+  "views": [
+    {
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "source_path": "國立聯合大學/buildings/bajia-m6-sixth-dorm/appearance/previews/front.png",
+      "source_git_blob": "22337106aa136dcdfc6c9f49f75c86d91ad66727",
+      "sha256": "90c1ad4b2d3cfe2e2f2ea17d041c569ece7332a710ec05409241b523508c0d7f",
+      "bytes": 1819176,
+      "old_rgba_sha256": "3fe59774ff2c792705bdc5744e5038868bd97039368f3211b38e83e95c74edf3",
+      "rgba_sha256": "e94bdb2a3606250cfa584bb710237357001b3caf26f761b9c3fd050bc03df53b",
+      "changed_rgba_pixels": 702,
+      "webp": "front.webp",
+      "webp_sha256": "b745f9539d3509e6c86d7b37f6a46c47d157be0d31c748522e649843504cda86",
+      "webp_bytes": 608638,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "7bc9b895fcc07de6a8d87b8ec5bc4c774a5384813a77229f0476dda83b991359",
+      "thumbnail_bytes": 20980
+    },
+    {
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "source_path": "國立聯合大學/buildings/bajia-m6-sixth-dorm/appearance/previews/rear.png",
+      "source_git_blob": "3198646b0b59d4af41e26934907fef2bbee30863",
+      "sha256": "452f3704259f9c99eb76302e28020531b7e102e9ba8658432a0beb5ed6f2638c",
+      "bytes": 1693293,
+      "old_rgba_sha256": "8c51c5fa15b3c429cef67224c9ac8fd345a859efaa0df2c63141892fea4a969d",
+      "rgba_sha256": "44f6834459cbca2325ce57e03bf31aeca5a7dcbad41209b53061c72ba0f5221c",
+      "changed_rgba_pixels": 613,
+      "webp": "rear.webp",
+      "webp_sha256": "589d02fed3a08ce4f16c3fc7348f1bc4ffb0ba9486e74c61c72b75fee3214f67",
+      "webp_bytes": 514686,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "71fb7943ba547429ffa119f90cd5eb1ef341534651b3f03fc861696004f93952",
+      "thumbnail_bytes": 13826
+    },
+    {
+      "camera": [
+        0,
+        -290,
+        38
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 185,
+      "source_path": "國立聯合大學/buildings/bajia-m6-sixth-dorm/appearance/previews/elevation.png",
+      "source_git_blob": "655404835ce14d9435fd82d1a2d16504883c8ec0",
+      "sha256": "acaddae1817fb74465fd5d9f0a37dbf59876e08b9a9d70af273846cbdd3acd88",
+      "bytes": 1709462,
+      "old_rgba_sha256": "e9b4c710347ab8d9ce121662ba5c85373e51281dc8377dc8b7cf3a31ef4e7a96",
+      "rgba_sha256": "3aa5f999c283f6f20f538a2abf1c3a820c0188e1c2cd52f6a3a372e834615159",
+      "changed_rgba_pixels": 134,
+      "webp": "elevation.webp",
+      "webp_sha256": "1ef5ab0441677cb99a224c6979012ab7a2cf763b548cb31d57b7784b34ab38ab",
+      "webp_bytes": 487410,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "c8d0c971a6209f80ff63a35e3ab6e24d199a720229cf022cf27ff7831924059d",
+      "thumbnail_bytes": 11056
+    },
+    {
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "source_path": "國立聯合大學/buildings/bajia-m6-sixth-dorm/appearance/previews/top.png",
+      "source_git_blob": "2070961a565cba62efe9425a1d3a9043f7900831",
+      "sha256": "5b4848ba2c0eaba5332271ef93526ea86ed757f90b4315f42dda8bf7921d91c8",
+      "bytes": 1902935,
+      "old_rgba_sha256": "55d2355554c0f958f2705320abc1be3cb30823753a149fdfe105d20260c3894e",
+      "rgba_sha256": "b543c29bc4053108e70bb8d5de6e4d8e1062113b9e11457024d1f2aa2b7a3760",
+      "changed_rgba_pixels": 1600,
+      "webp": "top.webp",
+      "webp_sha256": "9bc84ccbe1856edcf1bc337a9e2c1355fe44b3469c91a4c5a3bee23d19f32048",
+      "webp_bytes": 857066,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "40d4fe1d1d8a63e917fe958a3d27b0b24867f74413c90f031ee25be7ff6f9ddb",
+      "thumbnail_bytes": 9834
+    }
+  ]
+}
