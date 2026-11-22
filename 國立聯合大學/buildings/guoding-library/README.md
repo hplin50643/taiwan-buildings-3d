@@ -5,14 +5,14 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| 正面與來源支持區域<br>[![正面](display/front.webp)](display/front.webp) | 未見外側背面中性<br>[![背面](display/rear.webp)](display/rear.webp) |  |
 
-## 八材質外觀版（2026-10-20）
+## 現版八材質外觀（2026-11-18）
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuulib-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-已見前半淡色磁磚、灰褐塔樓與入口腰帶、既有窗槽灰青玻璃；突出矩形只對有完整面界的外側配深色，中央實牆保留淺色。未分割框線保守省略，背面與未見屋頂中性，不把缺席光伏棚畫上平屋頂。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](front_perspective.png)／[原單色背面](rear_perspective.png)
+已見前半淡色磁磚、灰褐塔樓與入口腰帶、既有窗槽灰青玻璃；突出矩形只對有完整面界的外側配深色，中央實牆保留淺色。未分割框線保守省略，背面與未見屋頂中性，不把缺席光伏棚畫上平屋頂。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。本次只將入口窗梃側返四個原三角面改為既有銀灰框材；原幾何、其餘面與材質不變。
 
 
 國立聯合大學八甲校區國鼎圖書館的照片詮釋版建築模型，成品尺寸為 **150 × 104 × 61.05 mm**，包含底座。
@@ -35,8 +35,8 @@
 ## 下載與檔案
 
 - [可列印 STL](guoding_library_150mm.stl)：單一連通、封閉網格，單位為 mm。
-- [Blender 編輯檔](guoding_library.blend)：包含相同建築網格、攝影機與燈光。
-- [完整原始檔 ZIP](guoding_library_150mm_source.zip)：模型、程式、圖片、說明與驗證資料。
+- [現版可編輯 Blender](appearance/scene.blend) · [彩色 3MF](appearance/nuulib-appearance.3mf) · [校驗](PUBLIC-MODEL-SHA256SUMS)。
+- [現版離線重建](appearance/README.md#重現及核驗) · [歷史單色原始封存 ZIP](https://github.com/hplin50643/taiwan-buildings-3d/blob/a3d859cc5a1466c491f49fd5a07a24cc63528003/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/guoding-library/guoding_library_150mm_source.zip)（不是現版） · [現版渲染證據](render-proof.json)。
 - [build_model.py](build_model.py)：以 Python 生成模型幾何。
 - [render_preview.py](render_preview.py)：使用 Blender 4.3 渲染預覽。
 - [validate_mesh.py](validate_mesh.py)：重新讀取 STL 並檢查網格。
@@ -62,7 +62,7 @@ python build_model.py
 python validate_mesh.py
 ```
 
-在 Blender 4.3 開啟 `guoding_library.blend` 即可編輯建築網格。物件名稱為 `Guoding Library | printable mesh`；場景已設定為公制，比例為 0.001。
+在 Blender 4.3 開啟 `appearance/scene.blend` 即可編輯現版建築網格。場景已設定為公制，比例為 0.001。
 
 如需重新渲染全部預覽與建立 Blender 場景：
 

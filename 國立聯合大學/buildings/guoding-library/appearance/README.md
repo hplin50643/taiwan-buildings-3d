@@ -1,11 +1,13 @@
-# 聯大八甲 國鼎圖書館：八材質外觀版
+# 聯大八甲 國鼎圖書館：現版八材質外觀（2026-11-18）
+
+現版 16,742 三角面，只有入口窗梃四個原側返面切換至既有銀灰框材。校級額外正立面保留同一原角度、用同一現版重新渲染。[現版渲染證據](../render-proof.json)。
 
 沿用原 **16,742 三角面／8,315 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面保持中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| 正面<br>[![正面](../display/front.webp)](../display/front.webp) | 背面保持中性<br>[![背面](../display/rear.webp)](../display/rear.webp) | [![正立面](../display/elevation.webp)](../display/elevation.webp) |
+| [![頂視](../display/top.webp)](../display/top.webp) |  |  |
 
 [表面色 3MF](nuulib-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../guoding_library_150mm.stl)
 
@@ -24,18 +26,11 @@
 
 ## 重建與核驗
 
-安裝 [依賴](source/requirements.txt)，Blender 使用 4.3.2。由本資料夾上層提供原 model.stl：
-
-1. `python appearance/source/build_appearance.py`
-2. `python appearance/source/verify_exchange.py`
-3. `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_appearance.py`
-4. `blender -b -t 3 --python-exit-code 1 -P appearance/source/verify_scene.py`
-
-[獨立重建 ZIP](rebuild-source.zip)含原 STL、四支程式及依賴，不含第三方照片；不取代原建模腳本。[逐檔 SHA256](SHA256SUMS)
+請使用下方的「重現及核驗」指令重建現版；較早重建程式及 QA 僅適用原配色階段。[現版校驗](../PUBLIC-MODEL-SHA256SUMS) · [前版原校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/d6cd6d856b38eb538ce156afc7e99d48c6042d56/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/guoding-library/appearance/SHA256SUMS) · [原現版發布清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/a3d859cc5a1466c491f49fd5a07a24cc63528003/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/guoding-library/appearance/MANIFEST.json)。
 
 [交換／拓撲 QA](qa/exchange-validation.json)核對原座標與面序、全部面材質、單連通、有向水密邊、頂點 link 單環、正體積與零退化／重複面；lib3mf 嚴格讀取零警告，實際編輯單材質再存讀，其他材質及面指派不變。SDK 六位小數量化誤差另列。
 
-[Blender 存讀與編輯](qa/scene-validation.json) · [渲染記錄](qa/render-manifest.json) · [獨立重建](qa/rebuild-validation.json)
+[Blender 存讀與編輯](qa/scene-validation.json) · [歷史渲染記錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/d6cd6d856b38eb538ce156afc7e99d48c6042d56/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/guoding-library/appearance/qa/render-manifest.json) · [獨立重建](qa/rebuild-validation.json)
 
 ## 製造限制照舊
 
@@ -46,7 +41,7 @@
 
 ## 2026-11-18 單一入口窗梃側返材族連續修訂
 
-本次僅原 **5236、5242、5243、5247** 四個完整三角面由淺牆材 1 延續為既有銀色框材 5，其餘 16,738 面、原 8 材槽及 shader、頂點／面序、原 STL 位元完全保留，不增加材料或幾何。本頁原段落為歷史基準；本次檔案同層提供 [model.stl](model.stl)、[原生場景](scene.blend)、[3MF](nuulib-appearance.3mf)、[逐面 JSON](face-materials.json)、[新增 NPZ 表面交換檔](surface-colors.npz)。NPZ 是本次從保存場景原序新建的資料交換，不冒稱原包已有。
+本次僅原 **5236、5242、5243、5247** 四個完整三角面由淺牆材 1 延續為既有銀色框材 5，其餘 16,738 面、原 8 材槽及 shader、頂點／面序、原 STL 位元完全保留，不增加材料或幾何。本頁原段落為歷史基準；本次檔案同層提供 [唯一現行 STL](../guoding_library_150mm.stl)、[原生場景](scene.blend)、[3MF](nuulib-appearance.3mf)、[逐面 JSON](face-materials.json)、[新增 NPZ 表面交換檔](surface-colors.npz)。NPZ 是本次從保存場景原序新建的資料交換，不冒稱原包已有。
 
 - 位置為入口整合細梃 **+X 側 x≈−24.6**，y[−37,−36.25]、z[5.45,20.95]，面積 11.625000715 mm²。四面沿既有邊形成完整矩形，前鄰 922／953 已為銀色，後鄰為原玻璃凹背。
 - 它不是最大共面域的全部：共面棚端 5233／5238 仍為原中性，沿既有 y=−37 的自然元件原邊排除，不切三角、不中途憑色造界。其他窗梃、對側、上下揭邊、凹背及棚均未改。
@@ -57,7 +52,7 @@
 
 ### 重現及核驗
 
-[鎖定輸入](baseline-inputs.json)、[重建基準 ZIP](baseline-rebuild-inputs.zip)、[變更紀錄](mullion-return-change.json)、[QA 摘要](QA-summary.json)、[逐檔 SHA](MANIFEST.json)。ZIP 含公開基準 STL／Blend／3MF／材表／逐面資料／原文碼，不含原照。
+[鎖定輸入](baseline-inputs.json)、[重建基準 ZIP](baseline-rebuild-inputs.zip)、[變更紀錄](mullion-return-change.json)、[QA 摘要](QA-summary.json)、[現版逐檔 SHA](../PUBLIC-MODEL-SHA256SUMS)。ZIP 含公開基準 STL／Blend／3MF／材表／逐面資料／原文碼，不含原照。
 
 ```sh
 unzip baseline-rebuild-inputs.zip -d baseline
@@ -67,4 +62,4 @@ blender -b -t 3 -P render_mullion_views.py -- rebuilt
 
 Blender 4.3.2（numpy 內建）。從 SHA 鎖定原幾何與場景基準重現局部表面修訂，不重建幾何、不替代原建模與製造 QA。原四視角 front／rear／elevation／top 均 1200×1200、Cycles 48 samples、原相機及尺度，公開 PNG 無 text metadata。私人前後對照使用同相機並另核原面射線可見性。
 
-隔離重建驗數值檔 byte 與完整 RNA 等價；strict lib3mf 及私有改材寫回、Blender 私有頂點／面材另存重開結果見 QA。無新切片路徑或實體試印，不保證多材列印。此項本地完成，發布狀態另行確認。
+隔離重建驗數值檔 byte 與完整 RNA 等價；strict lib3mf 及私有改材寫回、Blender 私有頂點／面材另存重開結果見 QA。無新切片路徑或實體試印，不保證多材列印。此版已公開發布。

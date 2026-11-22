@@ -16,7 +16,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![八甲北大門與中央警衛室：正面](buildings/bajia-t3-north-gate-guardhouse/display/front.webp)](buildings/bajia-t3-north-gate-guardhouse/README.md)<br>**[八甲北大門與中央警衛室](buildings/bajia-t3-north-gate-guardhouse/)** | [![國鼎圖書館 3D 模型正面透視](buildings/guoding-library/appearance/previews/front.png)](buildings/guoding-library/README.md)<br>**[八甲校區 L1｜國鼎圖書館](buildings/guoding-library/README.md)** | [![八甲校區 A1｜理工學院一館實照近似多材質展示正面](buildings/bajia-a1-science-engineering-1/appearance/previews/front.png)](buildings/bajia-a1-science-engineering-1/README.md)<br>**[八甲校區 A1｜理工學院一館](buildings/bajia-a1-science-engineering-1/README.md)** |
+| [![八甲北大門與中央警衛室：正面](buildings/bajia-t3-north-gate-guardhouse/display/front.webp)](buildings/bajia-t3-north-gate-guardhouse/README.md)<br>**[八甲北大門與中央警衛室](buildings/bajia-t3-north-gate-guardhouse/)** | [![國鼎圖書館 3D 模型正面透視](buildings/guoding-library/display/front.webp)](buildings/guoding-library/README.md)<br>**[八甲校區 L1｜國鼎圖書館](buildings/guoding-library/README.md)** | [![八甲校區 A1｜理工學院一館實照近似多材質展示正面](buildings/bajia-a1-science-engineering-1/appearance/previews/front.png)](buildings/bajia-a1-science-engineering-1/README.md)<br>**[八甲校區 A1｜理工學院一館](buildings/bajia-a1-science-engineering-1/README.md)** |
 | [![八甲校區 A2｜理工學院二館實際模型正面](buildings/bajia-a2-science-engineering-2/appearance/previews/front.png)](buildings/bajia-a2-science-engineering-2/README.md)<br>**[八甲校區 A2｜理工學院二館](buildings/bajia-a2-science-engineering-2/README.md)** | [![二坪山校區 C1｜立德樓（管理學院）實際模型正面](buildings/erping-c1-lide/appearance/previews/front.png)](buildings/erping-c1-lide/README.md)<br>**[二坪山校區 C1｜立德樓（管理學院）](buildings/erping-c1-lide/README.md)** | [![電機工程館實際模型正面](buildings/bajia-b1-electrical-engineering/appearance/previews/front.png)](buildings/bajia-b1-electrical-engineering/README.md)<br>**[八甲校區 B1｜電機工程館](buildings/bajia-b1-electrical-engineering/README.md)** |
 | [![電子工程館實際模型正面](buildings/bajia-b2-electronics-engineering/appearance/previews/front.png)](buildings/bajia-b2-electronics-engineering/README.md)<br>**[八甲校區 B2｜電子工程館](buildings/bajia-b2-electronics-engineering/README.md)** | [![光電館實際模型正面](buildings/bajia-b3-photonics-engineering/appearance/previews/front.png)](buildings/bajia-b3-photonics-engineering/README.md)<br>**[八甲校區 B3｜光電館](buildings/bajia-b3-photonics-engineering/README.md)** | [![八甲校區 B4 資訊工程館：正面](buildings/bajia-b4-computer-science/appearance/previews/front.png)](buildings/bajia-b4-computer-science/README.md)<br>**[八甲校區 B4 資訊工程館](buildings/bajia-b4-computer-science/)** |
 | [![國立聯合大學八甲校區客家研究學院 D1 前棟＋D2 後棟：正面](buildings/bajia-d1-d2-hakka-complex/appearance/previews/front.png)](buildings/bajia-d1-d2-hakka-complex/README.md)<br>**[國立聯合大學八甲校區客家研究學院 D1 前棟＋D2 後棟](buildings/bajia-d1-d2-hakka-complex/)** | [![國立聯合大學八甲校區人文與社會學院 E1前棟＋E2中棟＋E3後棟：正面](buildings/bajia-e1-e2-e3-humanities/appearance/previews/front.png)](buildings/bajia-e1-e2-e3-humanities/README.md)<br>**[國立聯合大學八甲校區人文與社會學院 E1前棟＋E2中棟＋E3後棟](buildings/bajia-e1-e2-e3-humanities/)** | [![國立聯合大學八甲校區 G1／G2／G3 共同教育館舍組：正面](buildings/bajia-g1-g2-g3-common-education/appearance/previews/front.png)](buildings/bajia-g1-g2-g3-common-education/README.md)<br>**[國立聯合大學八甲校區 G1／G2／G3 共同教育館舍組](buildings/bajia-g1-g2-g3-common-education/)** |
@@ -59,18 +59,18 @@
 
 - [模型檔案與詳細說明](buildings/guoding-library/README.md)
 - [150 mm 列印用 STL](buildings/guoding-library/guoding_library_150mm.stl)
-- [可編輯 Blender 原始檔](buildings/guoding-library/guoding_library.blend)
-- [完整原始檔套件](buildings/guoding-library/guoding_library_150mm_source.zip)
+- [現版可編輯 Blender](buildings/guoding-library/appearance/scene.blend)
+- [現版離線重建說明](buildings/guoding-library/appearance/README.md#重現及核驗)
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面透視<br>[![國鼎圖書館 3D 模型正面透視](buildings/guoding-library/appearance/previews/front.png)](buildings/guoding-library/appearance/previews/front.png) | 背面透視<br>[![國鼎圖書館 3D 模型背面透視](buildings/guoding-library/appearance/previews/rear.png)](buildings/guoding-library/appearance/previews/rear.png) |  |
+| 正面透視<br>[![國鼎圖書館 3D 模型正面透視](buildings/guoding-library/display/front.webp)](buildings/guoding-library/display/front.webp) | 背面透視<br>[![國鼎圖書館 3D 模型背面透視](buildings/guoding-library/display/rear.webp)](buildings/guoding-library/display/rear.webp) |  |
 
 #### 正立面
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![國鼎圖書館 3D 模型正立面](buildings/guoding-library/appearance/previews/homepage-front-elevation.png)](buildings/guoding-library/appearance/previews/homepage-front-elevation.png) |  |  |
+| [![國鼎圖書館 3D 模型正立面](buildings/guoding-library/display/school-elevation.webp)](buildings/guoding-library/display/school-elevation.webp) |  |  |
 
 以上圖片均為實際模型渲染。模型依公開外觀資訊進行近似重建，並非現場測量、BIM 施工圖或官方精確模型；未經實體試印。尺寸、簡化方式、來源與列印限制請參閱各建築的說明。
 
