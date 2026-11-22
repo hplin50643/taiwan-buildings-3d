@@ -1,0 +1,232 @@
+{
+  "display_only": true,
+  "asset_scope": "bounded stair-side two-window tall surround and inscription-wall study, not the complete building",
+  "source_commit": "5932a56468de3af5b5368cc5c14f5751bba268b5",
+  "proof_verified_against_repository_parent": "4d4a1be6eae5134cbaa837b4cc8693f6eaa993d7",
+  "source_release_native_objects": {
+    "scene.blend": {
+      "bytes": 752468,
+      "git_blob": "d643c05259377ae10985c7309714f4c97f89ca43",
+      "sha256": "a3363783fe82b8a0d70a9f4d831559308272ed35ab8ec7d6db15bc949e2a4401"
+    },
+    "model.stl": {
+      "bytes": 19784,
+      "git_blob": "c36bd104a6f1749992cb9a63f47e9dc592319f96",
+      "sha256": "4de194a9893ee8a67e3c7ab4b118f028def161f3c1981991e106dfd3a25f2dbf"
+    },
+    "model.3mf": {
+      "bytes": 4603,
+      "git_blob": "b29065e7411e0d55d2558de4f0dada131f6f04a4",
+      "sha256": "c521734364911b1f47a9fa51260c5fd7e3930f4f601605370be8b7f01717d429"
+    },
+    "mesh-data.npz": {
+      "bytes": 2994,
+      "git_blob": "5cdec94e4d30fc8987ca124bb3443c3d468d2056",
+      "sha256": "a7c9cfe84321d6f6d58529d4c73767f8f7af93d14978fb250ac4236c13f836d2"
+    }
+  },
+  "original_pngs_and_render_receipts_retained_in_place": true,
+  "views": [
+    {
+      "name": "front",
+      "camera": [
+        110,
+        -260,
+        120
+      ],
+      "target": [
+        0,
+        0,
+        37
+      ],
+      "ortho_scale": 135,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "db4e91091bc1cfcf0d63c84847846c764e7558ae2da2f6e7004aefcffe591f52",
+      "rgb_sha256": "17db7042ed6132892dc6b7aa9da818cad757cea84065aafe3617fb8cc8430f80",
+      "png_sha256": "c222f685175bbe1849165ce998c89c750711fe5069fc74df06ea03be0e09579d",
+      "png_bytes": 1200071,
+      "display_path": "front.webp",
+      "original_png": "../previews/front.png",
+      "original_render_receipt": "../previews/front.render.json",
+      "original_png_git_blob": "22ebdf4538d53e4dfb3d4c4491ba95a99cb804cc",
+      "original_receipt_git_blob": "5344a03036e155d6b82472b347fa5e16021856f5",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "front_elevation",
+      "camera": [
+        0,
+        -300,
+        39
+      ],
+      "target": [
+        0,
+        0,
+        39
+      ],
+      "ortho_scale": 125,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "3f2194eaf7bb0767e547c3da96db7f37ffdf848353522039b3d913d4a4f86831",
+      "rgb_sha256": "b3bbac8e84d23f22fb7fc36ff5a106912e0d8df4f437267002deb3f1606fa2b8",
+      "png_sha256": "471a790027db160d0c6de67c4b9fd1cc24c530224ade43b654c42cba8f660555",
+      "png_bytes": 1199968,
+      "display_path": "front-elevation.webp",
+      "original_png": "../previews/front_elevation.png",
+      "original_render_receipt": "../previews/front_elevation.render.json",
+      "original_png_git_blob": "ef0eec604af5e66c6ed3f2084bf638504efc6ecb",
+      "original_receipt_git_blob": "32718c7a948b77e135c8db27e963fa8368334f5b",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "rear",
+      "camera": [
+        -110,
+        260,
+        120
+      ],
+      "target": [
+        0,
+        0,
+        37
+      ],
+      "ortho_scale": 135,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "8ab4457444f3e4d878306b30cf735f0490c2cf2f2740b577bcaf4028dfbe9dbd",
+      "rgb_sha256": "5d5fa6d0c1561fd006c5d2a702bba76da559d19f03c2d3f683de73ec150d918c",
+      "png_sha256": "fa55c59b3d6c14919394b29858e28e2bb04dfbffb7eeb1988fca2f883c6a10b6",
+      "png_bytes": 1119682,
+      "display_path": "rear.webp",
+      "original_png": "../previews/rear.png",
+      "original_render_receipt": "../previews/rear.render.json",
+      "original_png_git_blob": "75141d560592d0a0f1d5277a5419a9e0963ccc6d",
+      "original_receipt_git_blob": "c28d24295e4487ea20695fbb2215325a81cd27ff",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "left_end",
+      "camera": [
+        -260,
+        -30,
+        90
+      ],
+      "target": [
+        0,
+        0,
+        37
+      ],
+      "ortho_scale": 135,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "122f13c5441dad3d4734b7240e3d3908ccdf30a2adfc33050e9e5547bcf52391",
+      "rgb_sha256": "3d054b376625b91b5d9cb43fe64a400e91e0e31b9e03c85941f2218bb1a0d96d",
+      "png_sha256": "11c466852c78132860fc71f8cbc255a2318e6dcca0350fc94910f7ec3495bdea",
+      "png_bytes": 1071823,
+      "display_path": "left-end.webp",
+      "original_png": "../previews/left_end.png",
+      "original_render_receipt": "../previews/left_end.render.json",
+      "original_png_git_blob": "625d2f55aba5815773ad29b790812ed426f60ea2",
+      "original_receipt_git_blob": "fd1ebe7290c14d25e9918536b943ceb4c12b5909",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "top",
+      "camera": [
+        0,
+        0,
+        300
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 95,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "ab506ebcad5a31716be04b92913f8da164cf375073f47cdb1cbed97bbe545edb",
+      "rgb_sha256": "93f966134b4d3e3916e818cc8a6b7d140fd0d5a587a7e08a38d58297cc2b61f0",
+      "png_sha256": "4d49963943f463e3fa3c3b261e8b9c1b11cfb3e8ad376843838c1737abbf9c85",
+      "png_bytes": 1059405,
+      "display_path": "top.webp",
+      "original_png": "../previews/top.png",
+      "original_render_receipt": "../previews/top.render.json",
+      "original_png_git_blob": "6fa283d7de252c7a0f393660d8f6b0c9933c17e2",
+      "original_receipt_git_blob": "8f27a47f66c09e3fe73e8eebde8c54c146b5d25e",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "entry_detail",
+      "camera": [
+        10,
+        -250,
+        90
+      ],
+      "target": [
+        -6,
+        -1,
+        64
+      ],
+      "ortho_scale": 75,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "917b4e3b4d35bf4947fdf606ddeebe98ad6a67a18d5548ced5a59deee9a0d8d1",
+      "rgb_sha256": "3ade0eedc26dad3522b3be4f5070e62a27ace9fbc94ad78cb427451f56c578dc",
+      "png_sha256": "8cedd0a4f003407e8c588ee503ea72361a7e21ed78762ea63d65eb525e336d1a",
+      "png_bytes": 1277660,
+      "display_path": "entry-detail.webp",
+      "original_png": "../previews/entry_detail.png",
+      "original_render_receipt": "../previews/entry_detail.render.json",
+      "original_png_git_blob": "24d3ffbe448f403b262138a888392d351d1f8a29",
+      "original_receipt_git_blob": "4e4d6bd60c93307c94028a3ce6c2e368d46a5313",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    }
+  ],
+  "card_thumbnail": {
+    "path": "front-640.webp",
+    "resolution": [
+      640,
+      480
+    ],
+    "sha256": "47a1945fffcaa8269f22bfe11c4a984c08aa2b764db8be6acd9ce2acdca84836",
+    "derived_from": "front.webp",
+    "exact_reproduction_of_checked_thumbnail": true,
+    "lossless": false,
+    "camera": {
+      "name": "front",
+      "camera": [
+        110,
+        -260,
+        120
+      ],
+      "target": [
+        0,
+        0,
+        37
+      ],
+      "ortho_scale": 135,
+      "elevation_degrees": 16.383393301898607,
+      "yaw_from_front_degrees": 22.932100437589785
+    }
+  }
+}
