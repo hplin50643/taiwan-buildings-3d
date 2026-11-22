@@ -1,0 +1,146 @@
+{
+  "base": "32466cbaa96e66083c080c20aa1265d4a8f8af37",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/bajia-m10-m11-dorm-complex/appearance/scene.blend",
+      "sha256": "045905d45240f5563c8a1c97bc854935841007bcee1b1e0eb435673977c18f42",
+      "git_blob": "a73e4c67cb07cc38c2e41137df73b713bb2eb387"
+    },
+    "appearance/nuum1011-appearance.3mf": {
+      "path": "國立聯合大學/buildings/bajia-m10-m11-dorm-complex/appearance/nuum1011-appearance.3mf",
+      "sha256": "09bf6cdaa2e60d9d7a60bab3460998c4f7f72eb2f6afe9268e6ec4e4ab17fd37",
+      "git_blob": "923475e3dbe5f9bcdb0c63931648b3abae3f4334"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/bajia-m10-m11-dorm-complex/model.stl",
+      "sha256": "104fd23d439f48bc6638eeb16e5f1ea905a918f255f6683fe2787a6f80f6d028",
+      "git_blob": "0a4dd4b413e7384f9b97e00a1f417832513691f1"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/bajia-m10-m11-dorm-complex/appearance/qa-continuous-walls/render-manifest.json",
+  "render_manifest_sha256": "2bcf226513e65efa3e016a517fdab0658903cabe0ae31a1884748387e1168bb3",
+  "selection": "國立聯合大學/buildings/bajia-m10-m11-dorm-complex/appearance/face-materials.json",
+  "selection_sha256": "499e6f165661da130982d90fbb95b1f6dc9b1af4030ed7c4c9eefd7dddd09e84",
+  "source_limits": "Front pale fins source-supported; matching rear fins remain previously documented inference, not surveyed; main rear wall and rear windows neutral",
+  "triangles": 28008,
+  "vertices": 13884,
+  "materials": {
+    "0": 16582,
+    "2": 752,
+    "1": 9966,
+    "4": 628,
+    "5": 36,
+    "3": 44
+  },
+  "historical_checksum_counts": {
+    "PUBLIC-MODEL-SHA256SUMS": 52,
+    "appearance/SHA256SUMS": 35
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1676800,
+      "sha256": "6e1b40c22561ff5d2f9682a14fd0b06d7a951078bfa4c297234c68aef6d3edd4",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-m10-m11-dorm-complex/appearance/previews/front.png",
+      "source_git_blob": "0a6dfd4e2297dbf922f38b5fc028f4df6b78bcd3",
+      "rgba_sha256": "4d85078e23c5249f9845da2736c7399303bfdbd08eddcf10bf34fcca428ab474",
+      "webp": "front.webp",
+      "webp_sha256": "9ab27ff3d65def7412001c5b3424ef58a412b2d5a61e5dc12421e0c8095f3a51",
+      "webp_bytes": 406546,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "9bdaaf51c2d2348c6a49de37ebaca376bbdaf149068a9bbd8ada83408c2b366f",
+      "thumbnail_bytes": 13194
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1662012,
+      "sha256": "7b517ebeeb10b383bb7a63233b06033fadeb3f735c9b0eefddffd61b97f778a0",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-m10-m11-dorm-complex/appearance/previews/rear.png",
+      "source_git_blob": "8ba59e8df5048247a18abb01d4f60b30e78f8c41",
+      "rgba_sha256": "54354a55a0ff009feba974397b96a5138df86fb7297626c691bf5ff8bd5e8b06",
+      "webp": "rear.webp",
+      "webp_sha256": "ef0422a711d722fa42efcbd115400f0c76e25bddbcbf7e11be5922b7c6c0595f",
+      "webp_bytes": 391572,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "f6e760eeea4f6b2bb3dae229ef7eb094d74dab3538822d6c1a860d21bbbd1f87",
+      "thumbnail_bytes": 13678
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1678991,
+      "sha256": "f1a47cb6d1f248d10c20fc5a17661fad5cde280a190a2eb4b2cbd85216254337",
+      "camera": [
+        0,
+        -290,
+        38
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-m10-m11-dorm-complex/appearance/previews/elevation.png",
+      "source_git_blob": "c0f7981afbeb20a1151dbd4e38cd87eb7373f6d4",
+      "rgba_sha256": "8c4e494801d48518ef52faf8440d1c20338f8001571c18f0e94720245e785b95",
+      "webp": "elevation.webp",
+      "webp_sha256": "cde9571e4db76bdfca08adcdcb5476170b204c54879d5c8de5653859d66b3b7a",
+      "webp_bytes": 444132,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "d869eae9c6a6e5fde231797bdcb8663bf9a491d91e3cd3082ba1c20656c9ccb9",
+      "thumbnail_bytes": 16612
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1700919,
+      "sha256": "5b66bd3e5db2a7da57d3223e78051bd0274041e43ca6eaa16f2bbdf392a9a298",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-m10-m11-dorm-complex/appearance/previews/top.png",
+      "source_git_blob": "80250bd3b733c02583b53bb27e025700570f145a",
+      "rgba_sha256": "792ddff065685a04dec3f715d2b48af2005cbe9bc0ad613d0d494d74cb97c308",
+      "webp": "top.webp",
+      "webp_sha256": "14d3d13c12cd838ff676782be68b3514b9b38288375db480d31b2ea1c4a1a649",
+      "webp_bytes": 573124,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "7ad246ea6ea5c95bca730f2dfee70cded970ed67772a8473b529919e0fd87573",
+      "thumbnail_bytes": 8256
+    }
+  ]
+}
