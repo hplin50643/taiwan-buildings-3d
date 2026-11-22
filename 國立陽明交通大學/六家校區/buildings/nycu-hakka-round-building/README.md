@@ -3,10 +3,10 @@
 ## 模型預覽
 
 
-| 模型預覽 | 模型預覽 |
-| :---: | :---: |
-| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![後側與高扇形屋頂](display/rear-640.webp)](display/rear.webp)<br>後側與高扇形屋頂 |
-| [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 | [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![後側與高扇形屋頂](display/rear-640.webp)](display/rear.webp)<br>後側與高扇形屋頂 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
 ## 本次最高中央扇形屋頂外弧緣同銀灰延伸（推估）
 
