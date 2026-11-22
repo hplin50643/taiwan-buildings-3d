@@ -6,7 +6,7 @@
 
 | 補色總覽 | 側端細部 |
 |---|---|
-| ![側端退縮牆與完整模型](setback-overview.png) | ![側端退縮牆六窗洞近照](setback-wall-detail.png) |
+| ![側端退縮牆與完整模型](setback-overview.webp) | ![側端退縮牆六窗洞近照](setback-wall-detail.webp) |
 | 完整模型與底座，無文字。 | 裁切僅供面域檢核；原六個窗背及其窗返不改。 |
 
 ## 面域與來源
