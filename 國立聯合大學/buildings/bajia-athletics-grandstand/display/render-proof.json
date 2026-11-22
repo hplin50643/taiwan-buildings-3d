@@ -1,0 +1,146 @@
+{
+  "base": "7be659c3988c16c63b5dd93e8380a6fecd8ebec9",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/bajia-athletics-grandstand/appearance/scene.blend",
+      "sha256": "01db0b85c494113a0487ef7c4897edf095f1cb6d7054cb9f4a88992f58d36c07",
+      "git_blob": "fa7eb58ea00224ff4c67aef651c9ac266b43ea24"
+    },
+    "appearance/nuustand-appearance.3mf": {
+      "path": "國立聯合大學/buildings/bajia-athletics-grandstand/appearance/nuustand-appearance.3mf",
+      "sha256": "b15446265d36541339c3b1f3ca710c298f47daf2e5bf1d20b13b4d67bf2ee81f",
+      "git_blob": "fa3f9ed1db9e2a4b654b821acbe1c50305c0c7d3"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/bajia-athletics-grandstand/model.stl",
+      "sha256": "9a818274f38bacdd95382132134341baca3f38da19ffa1f6898c0ab5660587cd",
+      "git_blob": "cd31161d05a718dd12e21149eb4c3b7ce1bc613c"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/bajia-athletics-grandstand/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "11185082813d4bcfbb78277d324dee2f25328d6d99932c77fac82039f5bbe969",
+  "selection": "國立聯合大學/buildings/bajia-athletics-grandstand/appearance/face-materials.json",
+  "selection_sha256": "7d6f42faf242ee93f1384f2add8a1abbcbee8dc64ba78aab58fbbbe1368afa5b",
+  "source_limits": "Existing silver-metal canopy (not PV) and rail rods only; unknown rear and unsegmented mixed cores neutral; no chairs added or steps colored pink",
+  "triangles": 3176,
+  "vertices": 1556,
+  "materials": {
+    "0": 663,
+    "1": 31,
+    "4": 1798,
+    "3": 590,
+    "2": 84,
+    "5": 10
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 14,
+    "appearance/SHA256SUMS": 21
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1639401,
+      "sha256": "5316dcdaf864635d86fe0d4162725d5dd2be3ef0550860b4fef9d2b5909ff29d",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        32
+      ],
+      "ortho_scale": 210,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-athletics-grandstand/appearance/previews/front.png",
+      "source_git_blob": "1d8ee9f649f7b2f4a9226dd152dba6160d615456",
+      "rgba_sha256": "5d796af62bbec3a06b7a64ba73a24eccf401ae403d2e999db84dfa13984b7f75",
+      "webp": "front.webp",
+      "webp_sha256": "e62f132d7a266379fd2c0423a78765a755709251d3f0bb1037a3fa1af9c6783c",
+      "webp_bytes": 424732,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "4de69afefe6a7efea017e84bbc406c1919c863106d29ba07e84e67f76279ce3d",
+      "thumbnail_bytes": 13142
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1589223,
+      "sha256": "d2802b900d0dc5388b2d8127583ca694044865e211a4438c7bf1786dfd53513e",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        32
+      ],
+      "ortho_scale": 210,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-athletics-grandstand/appearance/previews/rear.png",
+      "source_git_blob": "efbf7cac53f3855c4abb6a53da707dfe961cdf2b",
+      "rgba_sha256": "cc9aba9b3de6a678f9dd85c19377dfd3969588ca509942149f3df60a1b0b564e",
+      "webp": "rear.webp",
+      "webp_sha256": "c6830a73469ef05924e2c003dfbaeb5823c1127067ab1b859ad6f182e41db58b",
+      "webp_bytes": 381708,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "079f1db0f85468416c81ec9e723d60ed8b344c823105c55166fb10c6b7192731",
+      "thumbnail_bytes": 6866
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1626541,
+      "sha256": "7d177a76bfbb46a5f05ff7d238549b0b5c07091e7a13bf099c5cb4e89b83fec0",
+      "camera": [
+        0,
+        -290,
+        32
+      ],
+      "target": [
+        0,
+        0,
+        32
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-athletics-grandstand/appearance/previews/elevation.png",
+      "source_git_blob": "afb5e275e7d9738a09f37f2d2099f6e769d3f3b5",
+      "rgba_sha256": "339e3848d711373125a3e2676f701c420cb3f329b7b5e5375a26650fe959d353",
+      "webp": "elevation.webp",
+      "webp_sha256": "1376865a1d8966957c8069b517dd01d5b882bc4217bcb46b4113c2f080c4a98a",
+      "webp_bytes": 397924,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "10f1a7e542105d8cfca45145c772b845a370383120a41e9e51bb5aaa0eb6715e",
+      "thumbnail_bytes": 8242
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1599613,
+      "sha256": "59649ddf1d31eadd71b5fad4e5e31be0555c47792a3322e58ed44494c6d5a53a",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-athletics-grandstand/appearance/previews/top.png",
+      "source_git_blob": "4afd204f76e5374bd501e247463633dabf122b8d",
+      "rgba_sha256": "0824b04f5e1d9fc89e1922e8de439b5b48e3853377f8e500417b68e1934b4f10",
+      "webp": "top.webp",
+      "webp_sha256": "bb60f947aba23ee566f97a5a5387ca8248664bbde03b4e166dce2da6c2bf54df",
+      "webp_bytes": 450906,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "9b0708ff5252e43dd71ed8daf594bc9cf8baf01e7bc06acd8d28560ed246a20c",
+      "thumbnail_bytes": 5776
+    }
+  ]
+}
