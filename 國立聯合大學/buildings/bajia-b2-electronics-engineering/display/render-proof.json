@@ -1,0 +1,148 @@
+{
+  "base": "4b3264c4d85c78f4c242bc7e9336d2a3dbdfd11d",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/bajia-b2-electronics-engineering/appearance/scene.blend",
+      "sha256": "8d726c0e418e93c39c69932e122f28b238d3d84efcb637fe98585bb4b65dc80a",
+      "git_blob": "cc21e81bc3b8705584eca1207d317922189a74aa"
+    },
+    "appearance/nuub2-appearance.3mf": {
+      "path": "國立聯合大學/buildings/bajia-b2-electronics-engineering/appearance/nuub2-appearance.3mf",
+      "sha256": "bfc484e2b7f4c9d5e0c45581fb41289ed6adc3ee160bdb5a2b9af1ba07786cdc",
+      "git_blob": "f2468f5b7e109748c3774c0548cd1b017c41a76e"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/bajia-b2-electronics-engineering/model.stl",
+      "sha256": "1caa581a06c6f94604afb535df04d23742230a8b75914ff81b8f00daefbd2fb1",
+      "git_blob": "15524d8723e25eb2d23800cc6514f2f5db0b10c2"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/bajia-b2-electronics-engineering/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "55eeac88df37b95e03e17c6ac430583cddd7359741443ed8f2705ed51695ce2d",
+  "selection": "國立聯合大學/buildings/bajia-b2-electronics-engineering/appearance/face-materials.json",
+  "selection_sha256": "6fa44f3e1baf221dd85809e88a3d41862b31c25041c4f6eb1a92d4f7c4770a66",
+  "source_limits": "Existing signed front and four original PV plate groups only; unseen ends/rear/other roof surfaces and unresolved continuous upper channels stay neutral",
+  "triangles": 35546,
+  "vertices": 17695,
+  "materials": {
+    "7": 709,
+    "1": 7622,
+    "0": 16861,
+    "5": 6363,
+    "2": 1150,
+    "4": 511,
+    "6": 2224,
+    "3": 106
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 12,
+    "appearance/SHA256SUMS": 21
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1631925,
+      "sha256": "5aa3ff138a4c4d8b2cc70a9accaf029e1ea686f64b1148c2b7b18a5d4d88f50b",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        19
+      ],
+      "ortho_scale": 200,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b2-electronics-engineering/appearance/previews/front.png",
+      "source_git_blob": "028d13a37e4aea7e32982941ad7db6e08ae13c25",
+      "rgba_sha256": "b50e61bcc2ae859e7921b905a948e36d7f34ce5b3c8a8aa5db474dc05624ccde",
+      "webp": "front.webp",
+      "webp_sha256": "488487c758d953effaa55c168a035c87e7076e28ee09b690ea530417ee00bbe8",
+      "webp_bytes": 337072,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "8d530d73daed0fc409c8bb98ee8258e86c35de5e0724557442393c786ffd5798",
+      "thumbnail_bytes": 14952
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1567698,
+      "sha256": "bb112eaf8dbe89bb60a0c607016401a0c01fb00cf95298d88b2dc8c86f0b4263",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        19
+      ],
+      "ortho_scale": 200,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b2-electronics-engineering/appearance/previews/rear.png",
+      "source_git_blob": "6b1a4ee73d59f3f149b02292f6efebbba5283aa2",
+      "rgba_sha256": "33eeba2c4cf70a3af4b8b51e7393b53d041f30e7b91383991ef4ea52975090b5",
+      "webp": "rear.webp",
+      "webp_sha256": "4b94d426fb8e8af78427917e87af0337b961c9704b298e165ad1e79cfb20d934",
+      "webp_bytes": 314896,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "9488c715ef2befe020f8b89013435bba55246bda756f549f12a6d3ef9658222a",
+      "thumbnail_bytes": 11436
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1586604,
+      "sha256": "bf6029c65d1633c1e3fa60bd60900c4aa631c8886fa105720e38f79c4b610459",
+      "camera": [
+        0,
+        -290,
+        31
+      ],
+      "target": [
+        0,
+        0,
+        20
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b2-electronics-engineering/appearance/previews/elevation.png",
+      "source_git_blob": "07a621e075663df67b5e0e712815aec40f040679",
+      "rgba_sha256": "fc120af9be217629a9f741b83cf08e784d1fb9d813c225b361cfd45072ff7edc",
+      "webp": "elevation.webp",
+      "webp_sha256": "084a493eccfad3f180adb65277175b9d94dd386872b689a8e7ba24039a829470",
+      "webp_bytes": 310220,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "29b2113874682533205780f550cbff5b77fa8fb373cd81dab54af06cac031566",
+      "thumbnail_bytes": 12290
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1561032,
+      "sha256": "a71a0a850e4c1a8512f402e81975d866c3c8cf6d3dc13d75ffcea348509043b4",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b2-electronics-engineering/appearance/previews/top.png",
+      "source_git_blob": "414d4834619d12e3ec964bc4e82881dbeb29749a",
+      "rgba_sha256": "9026bb8fdd4eee1bed4279bcf7ceafd32547bb417f2f9281d57622ffe25bb66b",
+      "webp": "top.webp",
+      "webp_sha256": "f6e4b4b94218f638bbcf832b964aaf399d2f127f35d21eaa35e3ec496e213e5b",
+      "webp_bytes": 343980,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "249ee941c0961a47a421b3e0b313ab2ab54d4543a0c59cf7bbb01d5ed611a975",
+      "thumbnail_bytes": 7718
+    }
+  ]
+}
