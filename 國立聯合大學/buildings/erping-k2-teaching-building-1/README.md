@@ -3,14 +3,14 @@
 ## 模型預覽
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 有來源支持的遮陽肋側<br>![背面](appearance/previews/rear.png) |  |
+| 模型預覽 | 模型預覽 |
+| :---: | :---: |
+| [![正面與外梯](display/front-640.webp)](display/front.webp)<br>正面與外梯 | [![遮陽肋側與入口](display/rear-640.webp)](display/rear.webp)<br>遮陽肋側與入口 |
 
 ## 7 材質外觀版（2026-10-21）
 
 
-[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuk2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+[四視角 WebP](display/README.md) · [來源界線](appearance/README.md) · [表面色 3MF](appearance/nuuk2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 依四張官方照片限定灰牆、淡色遮陽肋、綠框與離散玻璃；空拍確認兩種屋頂光電板，僅原粗格上面深藍，非實際逐片覆蓋率復刻。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 

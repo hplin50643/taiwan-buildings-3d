@@ -2,12 +2,12 @@
 
 沿用原 **18,702 三角面／9,213 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 有來源支持的遮陽肋側<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| 模型預覽 | 模型預覽 |
+| :---: | :---: |
+| [![正面與外梯](../display/front-640.webp)](../display/front.webp)<br>正面與外梯 | [![遮陽肋側與入口](../display/rear-640.webp)](../display/rear.webp)<br>遮陽肋側與入口 |
+| [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 | [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 |
 
-[表面色 3MF](nuuk2-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
+[四視角 WebP](../display/README.md) · [表面色 3MF](nuuk2-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
 ## 來源與配色邊界
 
