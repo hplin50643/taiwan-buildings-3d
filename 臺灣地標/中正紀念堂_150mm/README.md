@@ -6,7 +6,9 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| ![正前斜視](previews/front.webp)<br>正前斜視 | ![後斜視](previews/rear.webp)<br>後斜視 | ![正立面](previews/elevation.webp)<br>正立面 |
+
+三張預覽保留原角度。Blender 將原 ASCII STL 匯入為單精度時，有 8 個極小三角面因頂點重合而省略；原 8,802 面 ASCII STL 未改，切片請用 STL。白牆、藍瓦與金色寶頂只用於場景展示，不代表 STL 含色。
 
 ## 檔案
 
@@ -14,7 +16,7 @@
 - `scene.blend`：Blender 場景，內含由同一 STL 匯入的模型、可調整材質、攝影機與燈光。地面與燈光不屬於列印模型。
 - `build_model.py`：參數化建模原始碼。
 - `render_preview.py`：從 STL 重新產生三視角及 Blender 場景。
-- `previews/`：實際 STL 網格的正前斜視、後斜視及正面預覽。
+- `previews/`：從現行 Blender 場景重渲的三張無字 WebP。見[渲染驗證](render-proof.json)及[當前校驗表](SHA256SUMS)。
 - `validation.json`、`validate_model.py`：網格檢查結果與驗證程式。
 - `requirements.txt`、`參考來源.md`：重建相依套件與來源網址。
 
@@ -45,3 +47,5 @@
 使用 Python 3.12 與 `requirements.txt` 所列套件，執行 `python build_model.py`。驗證：`python validate_model.py model.stl --longest-edge 150 --output validation.json`。預覽：`blender -b -t 4 -P render_preview.py`。Blender 4.x 的 STL 匯入介面為預覽程式所需。
 
 來源照片僅供研究，未包含於交付包。模型未宣稱官方授權，亦未代第三方建築、影像或商標授予權利；公開使用前請依用途確認適用權利。
+
+[舊 PNG 及原說明固定版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/%E4%B8%AD%E6%AD%A3%E7%B4%80%E5%BF%B5%E5%A0%82_150mm/README.md)只供比對，非現行展示。

@@ -46,7 +46,7 @@
 | 地標 | 檔案與說明 | 前視預覽 | 後視預覽 |
 |---|---|---|---|
 | 臺北101 | [模型與說明](Taipei101_150mm/README.md) · [STL](Taipei101_150mm/model.stl) | [正面斜視](Taipei101_150mm/front-oblique.webp) | [背面斜視](Taipei101_150mm/rear-oblique.webp) |
-| 中正紀念堂 | [模型與說明](中正紀念堂_150mm/README.md) · [STL](中正紀念堂_150mm/model.stl) | [前視](中正紀念堂_150mm/previews/front.png) | [後視](中正紀念堂_150mm/previews/rear.png) |
+| 中正紀念堂 | [模型與說明](中正紀念堂_150mm/README.md) · [STL](中正紀念堂_150mm/model.stl) | [前視](中正紀念堂_150mm/previews/front.webp) | [後視](中正紀念堂_150mm/previews/rear.webp) |
 | 國立故宮博物院北部院區 | [模型與說明](palace-museum-north-model/README.md) · [STL](palace-museum-north-model/model.stl) | [前視](palace-museum-north-model/preview.png) | [後視](palace-museum-north-model/rear.png) |
 | 總統府 | [模型與說明](presidential-office/README.md) · [STL](presidential-office/model.stl) | [新版前斜視](presidential-office/front-current.webp) | [新版後斜視](presidential-office/rear-current.webp) |
 | 艋舺龍山寺 | [模型與說明](longshan-temple/README.md) · [STL](longshan-temple/model.stl) | [前視](longshan-temple/preview.png) | [後視](longshan-temple/rear.png) |
