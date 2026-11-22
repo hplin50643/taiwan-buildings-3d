@@ -4,7 +4,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![校友鐘樓模型](previews/front.png) |  |  |
+| ![校友鐘樓模型](previews/front.png)<br>校友鐘樓模型 | ![背斜視](previews/rear.png)<br>背斜視 | ![正立面](previews/elevation.png)<br>正立面 |
+| ![頂視](previews/top.png)<br>頂視 | ![左斜視](previews/left_oblique.png)<br>左斜視 |  |
 
 **新增完整塔體幾何｜依2019官方相簿與2022攝影者照片近似；不是現場測繪，不宣稱2026現況。** 這是文理大道的校友鐘樓，並非教堂旁四牆式畢律斯鐘樓。
 
@@ -26,10 +27,7 @@
 
 ## 五個實際交付網格視角
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![背斜視](previews/rear.png) | ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |
-| ![左斜視](previews/left_oblique.png) |  |  |
+五個實際交付網格視角集中於上方的「模型預覽」。
 
 ## 重建與驗證
 Python依賴見requirements.txt；另需lib3mf官方SDK、Blender4.3.2。
