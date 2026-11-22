@@ -1,0 +1,142 @@
+{
+  "base": "32466cbaa96e66083c080c20aa1265d4a8f8af37",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立清華大學/校本部/buildings/nthu-wang-chou-literature/appearance/scene.blend",
+      "sha256": "772be49cc46f494547dd0208dc3aaecc25f656ef5e6bdb58eac9282b172cbf32",
+      "git_blob": "b25241ecbbb517a566500a3e9365bc3946cabdbc"
+    },
+    "appearance/nthuwang-appearance.3mf": {
+      "path": "國立清華大學/校本部/buildings/nthu-wang-chou-literature/appearance/nthuwang-appearance.3mf",
+      "sha256": "de5c8e106fccf174ab2469cf2b8537aa0fef78511c602ed545870543b36f9f0f",
+      "git_blob": "2354cb43a09600bb38589e1a401b1763d603b4e2"
+    },
+    "model.stl": {
+      "path": "國立清華大學/校本部/buildings/nthu-wang-chou-literature/model.stl",
+      "sha256": "8c5e7abbfd63eb009bb1a0ea1d8cb471c804ed099a6b1b11e659c9d7ea0ccf4e",
+      "git_blob": "6052999af8d9181975914c82a5ef0189d45f808a"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立清華大學/校本部/buildings/nthu-wang-chou-literature/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "f1e4fb3e577c1745bcf95147748143827762c0997146816d5893e096fa9c5a11",
+  "triangles": 1674,
+  "vertices": 789,
+  "materials": {
+    "0": 400,
+    "1": 758,
+    "4": 36,
+    "3": 460,
+    "2": 20
+  },
+  "historical_checksum_counts": {
+    "hash-manifest.json": 15,
+    "appearance/SHA256SUMS": 20
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1675861,
+      "sha256": "de66af4977b51f61147f7939b4f27b47cdc7781856d17233bb2ed42294832fa3",
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-wang-chou-literature/appearance/previews/front.png",
+      "source_git_blob": "12503ea271ef9a722edb5b3e871dfe124bd401b6",
+      "rgba_sha256": "82d088a99c9f7713187f5a052285bf0755038d1e1a990b72be6f08abdc1fc23c",
+      "webp": "front.webp",
+      "webp_sha256": "db8e95bb00081a6741bdb718adfffe3564e62eae9e05c6a1ba1882bce7729619",
+      "webp_bytes": 426346,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "1c0d45179c37bf612358e218060c89dcf5eb245db0045209ea300890e4e10f59",
+      "thumbnail_bytes": 11080
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1621558,
+      "sha256": "62524709eac8dc66217f44fe4dae7437b288e68137405419184cc319f957552e",
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-wang-chou-literature/appearance/previews/rear.png",
+      "source_git_blob": "d20998692f861d22cc927a65cde1a5e922ea9741",
+      "rgba_sha256": "04d1ab58b1da5ef1483efd86d49f1eb0b02bfde9970f480c612cac3d09406d63",
+      "webp": "rear.webp",
+      "webp_sha256": "a0ec846eac9ce5de398bbf62adf0eb08ca28de04d14af59a918a861d8dd5430c",
+      "webp_bytes": 408044,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "7b4485b3493daaae0ad4f1a2b18b300e07232c7cd04c5bf33cb6d870247eec6f",
+      "thumbnail_bytes": 8148
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1686706,
+      "sha256": "dca2772bf655c427ef10301a80e6c8a840955a872cc174909ad405fa1e10f9b4",
+      "camera": [
+        0,
+        -290,
+        56
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-wang-chou-literature/appearance/previews/elevation.png",
+      "source_git_blob": "837172b7583e6e646673b7d196dab3cedae513aa",
+      "rgba_sha256": "888e3e9285f6568c8c2093ca0341f06d0f684efdf00df9bf779a7c2fb8def21c",
+      "webp": "elevation.webp",
+      "webp_sha256": "6540b906bacec34bf7bf670ffd4591e75451e4a3d5a7b116d4b95c209b0e6396",
+      "webp_bytes": 480380,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "ac8f4d0cb1ec15d4d4ccdfa9f83e28df662b7d5d248f877b5146429408a1e999",
+      "thumbnail_bytes": 9548
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1630926,
+      "sha256": "8d0ccdb26bbdeb17a00740052ae3378db500690ced71bfad35821f8db9085eea",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-wang-chou-literature/appearance/previews/top.png",
+      "source_git_blob": "695ada7fb9cb5bdbab6757653fb248abc063e87f",
+      "rgba_sha256": "2b87b0f998e1771f7659a8f040110a04a9f84da2d740c82d6370f36694582f29",
+      "webp": "top.webp",
+      "webp_sha256": "1eb5a0f4710478e01a9658302c5cbc6f95f0003dcb9ee8084fc6a4c65595bcb6",
+      "webp_bytes": 543084,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "8e789d3b7d8fe048217b5c030036bcf47aaeb9a1d73e85806608c0aa297bf6e0",
+      "thumbnail_bytes": 4014
+    }
+  ]
+}
