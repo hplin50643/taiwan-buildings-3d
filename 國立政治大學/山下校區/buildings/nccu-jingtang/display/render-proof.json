@@ -1,0 +1,170 @@
+{
+  "base": "8e1d4f712a8bc259415a2480bb6d95d0139d150c",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立政治大學/山下校區/buildings/nccu-jingtang/appearance/scene.blend",
+      "sha256": "db03902a412eb88bf597f27393ca8b4ebd0abc55284874f057e445352a1a3722",
+      "git_blob": "89e88cb38fbbd05ba066e49dfe077a9b1d96b74b"
+    },
+    "appearance/nccu-jingtang-appearance.3mf": {
+      "path": "國立政治大學/山下校區/buildings/nccu-jingtang/appearance/nccu-jingtang-appearance.3mf",
+      "sha256": "b91973f6beb26495ce1fb9a8dcfbcb3c3c452e99c4ab2cf8dbcb1888a74b6aa9",
+      "git_blob": "4367dce37ca2fe5ed455871d0db0120f9afafeb9"
+    },
+    "model.stl": {
+      "path": "國立政治大學/山下校區/buildings/nccu-jingtang/model.stl",
+      "sha256": "4321f4114275c766ac743e0adb1bac9d9626368a9fee920ea4734b805032453f",
+      "git_blob": "1a7dfc57c87a88da76ff179844c304584c0f7e77"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立政治大學/山下校區/buildings/nccu-jingtang/appearance/qa-continuous-walls/render-manifest.json",
+  "render_manifest_sha256": "ee5a83ec1b001366fb719b0a5793516758ab2abf5512ad2aad908a9ad450452e",
+  "selection": "國立政治大學/山下校區/buildings/nccu-jingtang/appearance/face-materials.json",
+  "selection_sha256": "af901d1d5b19558f540742cda72f8194ad5024834f361779f641a5359eb5cb75",
+  "source_limits": "Existing courtyard white walls and columns (1,395) and canopy edges (9) unchanged; 4,772 other faces remain neutral",
+  "triangles": 6176,
+  "vertices": 2968,
+  "materials": {
+    "0": 4579,
+    "1": 1588,
+    "2": 9
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 17,
+    "PUBLIC-MODEL-SHA256SUMS": 34,
+    "appearance/SHA256SUMS": 46
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1612000,
+      "sha256": "c928f3e760cf197b8389851b0600be6f4e981daf8aad5631b1917dbb68d6bf72",
+      "camera": [
+        -195,
+        -220,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 235,
+      "all_vertices_in_frame": true,
+      "source_path": "國立政治大學/山下校區/buildings/nccu-jingtang/appearance/previews/front.png",
+      "source_git_blob": "ca44cb0cee8b99fc90bf5aca8c93473f5c1784bf",
+      "rgba_sha256": "36f6e6b34fbb1411fba64c9a1ef54d88d053b21da4abda7ffbd0560f6654fc6c",
+      "webp": "front.webp",
+      "webp_sha256": "ceddbb8fa0581850068da7fe477937ed1d905a98d93cee2f62eb63bb27f03575",
+      "webp_bytes": 367212,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "6ba13270adae9cf99dc145ae3b28c652b9517e92de7bbf656cdfdb5df4b69241",
+      "thumbnail_bytes": 8968
+    },
+    {
+      "path": "previews/opposite.png",
+      "bytes": 1635933,
+      "sha256": "914624031811f5df680d38a5dbaf3f8f9e887eab9348dcbe90d93cbcc5fa2e73",
+      "camera": [
+        195,
+        -220,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 235,
+      "all_vertices_in_frame": true,
+      "source_path": "國立政治大學/山下校區/buildings/nccu-jingtang/appearance/previews/opposite.png",
+      "source_git_blob": "ebdcd4f3f9fc9ad407bec478037d872c4bd52ad2",
+      "rgba_sha256": "397fea1df91b06cacca220a07bd83bfea6532b9dd97c5169fa855dc9a220f9cf",
+      "webp": "opposite.webp",
+      "webp_sha256": "47b1f1ae5b339cd29525156f6a4efa5b8ddf42bdcc765c30ca21c12432d38540",
+      "webp_bytes": 379688,
+      "thumbnail": "opposite-640.webp",
+      "thumbnail_sha256": "49886ad8d24000f339384e07ccddd307f22a64d7e85be8011b67a277cdb6f246",
+      "thumbnail_bytes": 9330
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1572863,
+      "sha256": "28e6f3c273d867fb633ba652d4bef80805e82ba2ca7641629f38a0ffbefd0630",
+      "camera": [
+        0,
+        -260,
+        30
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 235,
+      "all_vertices_in_frame": true,
+      "source_path": "國立政治大學/山下校區/buildings/nccu-jingtang/appearance/previews/elevation.png",
+      "source_git_blob": "a969b94667dc22f24018e1d9865cd16d2e339c79",
+      "rgba_sha256": "813d1c2b3871bc23bd80b720d029f8f1158ca4bad27f36ea41da2e90a56c5828",
+      "webp": "elevation.webp",
+      "webp_sha256": "73b32bdb3c0686efc2e19c75ad929cb148b7420abed97915f256547e45ee7e54",
+      "webp_bytes": 277230,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "3945b999e03497891978aaee357740ffd774c4f7c50ba73e949c0879174452ef",
+      "thumbnail_bytes": 7878
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1563774,
+      "sha256": "98e8928755ea1a07613d15e74c41cb16c3a56adf1c0e70d76a0860891467b37a",
+      "camera": [
+        195,
+        230,
+        160
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 235,
+      "all_vertices_in_frame": true,
+      "source_path": "國立政治大學/山下校區/buildings/nccu-jingtang/appearance/previews/rear.png",
+      "source_git_blob": "c769d8b279344c24a69748c958122daa1c43d595",
+      "rgba_sha256": "7b4fed8fb2d16fb872de0f33be49978441129977998ad52a3f5825228cb716ef",
+      "webp": "rear.webp",
+      "webp_sha256": "e5a651137c370e84817d43a2303c1a297334b93c7184a4e1e2b7fc1336646b5d",
+      "webp_bytes": 326786,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "f5a818ab59639ef4e7011d605bad6f5ea7991d5488215556d0d396101d582bdb",
+      "thumbnail_bytes": 5484
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1599721,
+      "sha256": "337cf2c6fa892a4947d2845dc29bcb0cad11ae2ec33e852ba66f1a2f6783c7e4",
+      "camera": [
+        0,
+        0,
+        260
+      ],
+      "target": [
+        0,
+        0,
+        30
+      ],
+      "ortho_scale": 235,
+      "all_vertices_in_frame": true,
+      "source_path": "國立政治大學/山下校區/buildings/nccu-jingtang/appearance/previews/top.png",
+      "source_git_blob": "7f36d373884c83054ef63b06678a68f791fcc7ef",
+      "rgba_sha256": "6119f7195f399783fc9ef38150df0e4255839bcf6283baf64862d4341ba0edd2",
+      "webp": "top.webp",
+      "webp_sha256": "9b2b39f296910972581701a7a4d2cf570c4619c550aff543dce2561991641839",
+      "webp_bytes": 384246,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "de4db56bdf904d33e81eacd45c12ff3cf958d6a7375b7bb0a4b36596aecf2d9f",
+      "thumbnail_bytes": 4718
+    }
+  ]
+}
