@@ -6,7 +6,18 @@
 
 後庇頂、立邊、屋頂、綠白混材板、整牆、門窗、院界及底座仍不外推。原八材示意與全部歷史分類包、舊審核、舊來源註解保留，舊數量僅歷史版本；不能將此狹窄部分補色當成全棟實色或試印認證。原兩個展示底座不是基地配置，六戶＋四戶不是四棟母案全建，非王大閎1970案。原尺寸矛盾、近似高度、加厚及未試印限制全部仍在。
 
-REAR-SOFFIT-SOURCE-QA為固定來源階段快照，最終審核另檔；qa/rear-soffit-previous存前版根文件，original-classification-version存更早八材示意。精確路徑區分，不按同名檔套新hash。原掃描CC BY-NC僅私人研究，不納公開交付。
+REAR-SOFFIT-SOURCE-QA為固定來源階段快照，最終審核另檔；qa/rear-soffit-previous 存前版根文件，較早的八材示意存於[不可變歷史版](https://github.com/hplin50643/taiwan-buildings-3d/tree/87475295a1b366c213d9eb3d2793c5e620de0acc/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E7%B8%BD%E5%8D%80/buildings/ntu-scholar-residence-two-rows-1965-design/original-classification-version)。精確路徑區分，不按同名檔套新hash。原掃描CC BY-NC僅私人研究，不納公開交付。
+
+## 模型預覽
+
+| 總覽 | 背側 | 正面 |
+|---|---|---|
+|[![總覽](display/preview.webp)](display/preview.webp)|[![背側](display/rear.webp)](display/rear.webp)|[![正面](display/front.webp)](display/front.webp)|
+|[![背面](display/back.webp)](display/back.webp)|[![西側](display/west.webp)](display/west.webp)|[![東側](display/east.webp)](display/east.webp)|
+|[![頂面](display/top.webp)](display/top.webp)|[![六戶列庇底](display/entry-detail.webp)](display/entry-detail.webp)|[![四戶列庇底](display/facade-detail.webp)](display/facade-detail.webp)|
+|[![前庇底端部](display/roof-detail.webp)](display/roof-detail.webp) | | |
+
+[現版 STL](model.stl) · [現版材色 3MF](appearance.3mf) · [現版 Blender](scene.blend) · [現版校驗](PUBLIC-MODEL-SHA256SUMS) · [渲染驗證](render-proof.json) · [歷史原檔校驗範圍](CHECKSUM-SCOPE.md)
 
 ## 歷史前版說明（以下舊57面／後庇未證屬前次審核範圍）
 
@@ -14,19 +25,14 @@ REAR-SOFFIT-SOURCE-QA為固定來源階段快照，最終審核另檔；qa/rear-
 
 **設計白水泥庇底，非竣工或現況實色。** A2 1963-03-20「WHITE CEMENT FIN」指向120cm前庇底，僅原兩列完整庇底57面白水泥設計族，其餘25647面未知中性。partial_color_incomplete=true、fully_colored_exterior=false。原八材展示非單色，全部保留；兩底座相對位置不是基地配置，不混王大閎1970住宅。
 
-| 總覽 | 背側 | 正面 |
-|---|---|---|
-|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
-|![背面](back.png)|![西側](west.png)|![東側](east.png)|
-|![頂面](top.png)|![六戶列庇底](entry-detail.png)|![四戶列庇底](facade-detail.png)|
-|![前庇底端部](roof-detail.png)|||
+
 
 ## 設計色範圍與原群
 同 ntu-scholar-residence-two-rows-1965-design，same-item/count_delta=0，六戶連與四戶連一包，不是四排母案全建。25704原三角、37原件bytes不改，原無OBJ不新增。原z19.25前庇底完整連通域35＋22=57，前120cm庇底白水泥設計色族HEX非校準樣板；不染庇頂/立邊/後庇、綠條、整牆或門窗。
 A2為1963-03-20，A1/A3/A4為1965不同日期，不能稱同日竣工。2014官方僅案級衛星空照判讀未現勘，本期兩列精確現址未證；非1970長興街案、非2026現況。
 
 ## 保留原版與幾何限制
-完整原37件及八分類scene/model.3mf/mesh/palette/十圖/所有QA在 original-classification-version/；原README/scene另有 ORIGINAL-SOURCE-GAP- alias，原render_model.py保持bytes。舊QA移入original-classification-qa-aliases，僅綁原完整子包，不綁新圖，不改舊hash。新appearance.3mf/scene及十圖為局部設計色variant，不否定或覆寫舊展示。
+原八分類場景、3MF、色表與 QA 在[不可變原分類資料樹](https://github.com/hplin50643/taiwan-buildings-3d/tree/87475295a1b366c213d9eb3d2793c5e620de0acc/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E7%B8%BD%E5%8D%80/buildings/ntu-scholar-residence-two-rows-1965-design/original-classification-version)；舊校驗表本來就沒有完整公開別名，不聲稱 37 件全數可核對。[原 QA 別名](https://github.com/hplin50643/taiwan-buildings-3d/tree/87475295a1b366c213d9eb3d2793c5e620de0acc/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E7%B8%BD%E5%8D%80/buildings/ntu-scholar-residence-two-rows-1965-design/original-classification-qa-aliases)僅綁原子包，不綁新圖，不改舊hash。新appearance.3mf/scene及十圖為局部設計色variant，不否定或覆寫舊展示。
 後院4m深與20cm厚有據但牆高缺證，原20cm高深色足跡僅原創標示非歷史院牆。主深750cm與側分格826cm差76cm、窗表175/180與97.5/95.5差、D2總256/分鏈261差均保。屋最高7.05m與皮6.70±.10m、通氣帽7.65±.15m、窗位±.15m圖量、後濕區構造不套全棟；地下/內裝/既有兩排/周邊不建。
 原1:200毫米，187×165×41mm，兩個獨立水密展示實體非假地形橋。框桿8cm→.40mm及1吋嵌桿加厚、封背不透明玻璃均保，未試印/未全域壁厚或支撐認證；原QA不由本色審追認。
 
