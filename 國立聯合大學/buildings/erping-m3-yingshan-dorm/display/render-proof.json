@@ -1,0 +1,147 @@
+{
+  "base": "6a9b3eea446d4ffa36226089792ea0ec290011ee",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/erping-m3-yingshan-dorm/appearance/scene.blend",
+      "sha256": "62de7bf30d2d08f519cab0d2b40a3f57f13f793323a4115ee4a94a2293e84be4",
+      "git_blob": "ae4e372daf8bcc7ae46d457320ccfda7bd63d24f"
+    },
+    "appearance/nuum3-appearance.3mf": {
+      "path": "國立聯合大學/buildings/erping-m3-yingshan-dorm/appearance/nuum3-appearance.3mf",
+      "sha256": "b206bdc6c5ba01eee4d121bcc6b9a3f85c2843c5496ca6347f6c3466ab7c8337",
+      "git_blob": "9aa67c307115e6c759ed3524ea91c22c54700b93"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/erping-m3-yingshan-dorm/model.stl",
+      "sha256": "e8d8de5411c9b28cdcae08ad3c927a747902196f2227312b26d66669f99e06ac",
+      "git_blob": "6ca3c5dcdaa0078162769443514d23520118093e"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/erping-m3-yingshan-dorm/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "c7b41b0bc59fa4ac8c1cd6d0f383ff11cd4104f262f915ca9eb5d26e4f25a042",
+  "selection": "國立聯合大學/buildings/erping-m3-yingshan-dorm/appearance/face-materials.json",
+  "selection_sha256": "815b092072c9289a1b764e612b0ed0b1d909ed4938d7bd0acc1bb8d8dd878958",
+  "source_limits": "Existing source-registered side pane recess backs retained; outer sides, rear and roof neutral. Roof grid is not verified as PV.",
+  "triangles": 11200,
+  "vertices": 5466,
+  "materials": {
+    "0": 1115,
+    "1": 4779,
+    "4": 1358,
+    "2": 3354,
+    "3": 552,
+    "6": 32,
+    "5": 10
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 16,
+    "appearance/SHA256SUMS": 21
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1713487,
+      "sha256": "30af92cec2feea1099352fd552f019d47877be32bdb1a0ab7d162d608070680c",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-m3-yingshan-dorm/appearance/previews/front.png",
+      "source_git_blob": "c27460dc8f72cbf68f2311e0726fbed8585e00c0",
+      "rgba_sha256": "e90b6d66beb4683a571826d8878d0a2bfa0708a6e73c6afe6d0f89a0130cb305",
+      "webp": "front.webp",
+      "webp_sha256": "5041568cb47fc4fa130f700e7135fb06bd7f2e630036f90c19a1a1995119a5c0",
+      "webp_bytes": 428460,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "0f1efe5424cb598ffe582bf2bcaaf3a6b2e5e33bb89dda071ac95ed4accc7a60",
+      "thumbnail_bytes": 20186
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1563046,
+      "sha256": "ef8c9511aecd491dde134a0acbed4b7850b720084a2c1d2cbb31cc31b6df3363",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-m3-yingshan-dorm/appearance/previews/rear.png",
+      "source_git_blob": "7b5a0e40ef75780f495f9e54658e9c47e34c6dee",
+      "rgba_sha256": "c78e236f8662cc4c7c872028793b31ff468c8c7421ea03ee0b61924a9baa8e8b",
+      "webp": "rear.webp",
+      "webp_sha256": "510394d1029fbe2b3a83261b8fe24553814be3cacd2e05b9a890c5661f58fca4",
+      "webp_bytes": 350374,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "d150a00ace34ca5051b33f5a91cff67a1f771c6e3bbbd856979326b414f783c2",
+      "thumbnail_bytes": 6958
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1689633,
+      "sha256": "1d15a8e2ae9b4d9560ce915a7706797ce4a899b51c66a7674ff82174d59a4fd2",
+      "camera": [
+        0,
+        -290,
+        38
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-m3-yingshan-dorm/appearance/previews/elevation.png",
+      "source_git_blob": "be4428541630a1f1489d35540de721b56273d557",
+      "rgba_sha256": "30a82834c0e31fb1af3f7a37443cc831f17161e9d0e0b6ab98aeb6b81cbd7c5a",
+      "webp": "elevation.webp",
+      "webp_sha256": "27e88ba4bf2b16209fdfe2f2dde8ec5091c4ca04dd42ca6c52db8b8a57bf93d1",
+      "webp_bytes": 462666,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "4848757a826aac940a50aa673b5d4e89899d8ea7c262d776278e10ed8f195ba2",
+      "thumbnail_bytes": 18940
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1648684,
+      "sha256": "4531101fa091ae9a85bb578d23926e8e5dbdd5581433679bd9dcd9c972b89fde",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-m3-yingshan-dorm/appearance/previews/top.png",
+      "source_git_blob": "9918471807d47161fa7fd2334998bebcb6ce3896",
+      "rgba_sha256": "d060c78c67bd8dfd19a52645577ca01bb48a1fcbf55f534e55b4a5a7722b3002",
+      "webp": "top.webp",
+      "webp_sha256": "9b130791f1bced351d83d400f41e84fb267081ad81e3f01cbb16b69909656d69",
+      "webp_bytes": 500784,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "62d50b18e7ed2e9859691233d9f639fd86c580921924eefd1bc2984a3c54d682",
+      "thumbnail_bytes": 7946
+    }
+  ]
+}
