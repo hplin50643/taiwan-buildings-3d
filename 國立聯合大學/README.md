@@ -17,7 +17,7 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [![八甲北大門與中央警衛室：正面](buildings/bajia-t3-north-gate-guardhouse/display/front.webp)](buildings/bajia-t3-north-gate-guardhouse/README.md)<br>**[八甲北大門與中央警衛室](buildings/bajia-t3-north-gate-guardhouse/)** | [![國鼎圖書館 3D 模型正面透視](buildings/guoding-library/display/front.webp)](buildings/guoding-library/README.md)<br>**[八甲校區 L1｜國鼎圖書館](buildings/guoding-library/README.md)** | [![八甲校區 A1｜理工學院一館實照近似多材質展示正面](buildings/bajia-a1-science-engineering-1/appearance/previews/front.png)](buildings/bajia-a1-science-engineering-1/README.md)<br>**[八甲校區 A1｜理工學院一館](buildings/bajia-a1-science-engineering-1/README.md)** |
-| [![八甲校區 A2｜理工學院二館實際模型正面](buildings/bajia-a2-science-engineering-2/appearance/previews/front.png)](buildings/bajia-a2-science-engineering-2/README.md)<br>**[八甲校區 A2｜理工學院二館](buildings/bajia-a2-science-engineering-2/README.md)** | [![二坪山校區 C1｜立德樓（管理學院）實際模型正面](buildings/erping-c1-lide/appearance/previews/front.png)](buildings/erping-c1-lide/README.md)<br>**[二坪山校區 C1｜立德樓（管理學院）](buildings/erping-c1-lide/README.md)** | [![電機工程館實際模型正面](buildings/bajia-b1-electrical-engineering/appearance/previews/front.png)](buildings/bajia-b1-electrical-engineering/README.md)<br>**[八甲校區 B1｜電機工程館](buildings/bajia-b1-electrical-engineering/README.md)** |
+| [![八甲校區 A2｜理工學院二館實際模型正面](buildings/bajia-a2-science-engineering-2/appearance/previews/front.png)](buildings/bajia-a2-science-engineering-2/README.md)<br>**[八甲校區 A2｜理工學院二館](buildings/bajia-a2-science-engineering-2/README.md)** | [![二坪山校區 C1｜立德樓（管理學院）實際模型正面](buildings/erping-c1-lide/display/front-640.webp)](buildings/erping-c1-lide/display/README.md)<br>**[二坪山校區 C1｜立德樓（管理學院）](buildings/erping-c1-lide/display/README.md)** | [![電機工程館實際模型正面](buildings/bajia-b1-electrical-engineering/appearance/previews/front.png)](buildings/bajia-b1-electrical-engineering/README.md)<br>**[八甲校區 B1｜電機工程館](buildings/bajia-b1-electrical-engineering/README.md)** |
 | [![電子工程館實際模型正面](buildings/bajia-b2-electronics-engineering/appearance/previews/front.png)](buildings/bajia-b2-electronics-engineering/README.md)<br>**[八甲校區 B2｜電子工程館](buildings/bajia-b2-electronics-engineering/README.md)** | [![光電館實際模型正面](buildings/bajia-b3-photonics-engineering/appearance/previews/front.png)](buildings/bajia-b3-photonics-engineering/README.md)<br>**[八甲校區 B3｜光電館](buildings/bajia-b3-photonics-engineering/README.md)** | [![八甲校區 B4 資訊工程館：正面](buildings/bajia-b4-computer-science/display/front-current-640.webp)](buildings/bajia-b4-computer-science/display/README.md)<br>**[八甲校區 B4 資訊工程館](buildings/bajia-b4-computer-science/)** |
 | [![國立聯合大學八甲校區客家研究學院 D1 前棟＋D2 後棟：正面](buildings/bajia-d1-d2-hakka-complex/appearance/previews/front.png)](buildings/bajia-d1-d2-hakka-complex/README.md)<br>**[國立聯合大學八甲校區客家研究學院 D1 前棟＋D2 後棟](buildings/bajia-d1-d2-hakka-complex/)** | [![國立聯合大學八甲校區人文與社會學院 E1前棟＋E2中棟＋E3後棟：正面](buildings/bajia-e1-e2-e3-humanities/appearance/previews/front.png)](buildings/bajia-e1-e2-e3-humanities/README.md)<br>**[國立聯合大學八甲校區人文與社會學院 E1前棟＋E2中棟＋E3後棟](buildings/bajia-e1-e2-e3-humanities/)** | [![國立聯合大學八甲校區 G1／G2／G3 共同教育館舍組：正面](buildings/bajia-g1-g2-g3-common-education/appearance/previews/front.png)](buildings/bajia-g1-g2-g3-common-education/README.md)<br>**[國立聯合大學八甲校區 G1／G2／G3 共同教育館舍組](buildings/bajia-g1-g2-g3-common-education/)** |
 | [![F1 建築一館：正面](buildings/erping-f1-architecture-1/appearance/previews/front.png)](buildings/erping-f1-architecture-1/README.md)<br>**[F1 建築一館](buildings/erping-f1-architecture-1/)** | [![F2 建築二館：正面](buildings/erping-f2-architecture-2/appearance/previews/front.png)](buildings/erping-f2-architecture-2/README.md)<br>**[F2 建築二館](buildings/erping-f2-architecture-2/)** | [![F3 公弢樓：正面](buildings/erping-f3-gongtao/appearance/previews/front.png)](buildings/erping-f3-gongtao/README.md)<br>**[F3 公弢樓](buildings/erping-f3-gongtao/)** |
@@ -117,12 +117,12 @@
 
 保留八層主要窗列、凸出柱帶、兩層高入口門廊與階梯。背面資料不足，素面後側與推定凹口不應視為已查證的真實立面。底座最長邊為 150 mm。
 
-- [建築說明、來源與列印限制](buildings/erping-c1-lide/README.md)
-- [STL 模型](buildings/erping-c1-lide/model.stl)・[Blender 場景](buildings/erping-c1-lide/scene.blend)・[網格驗證](buildings/erping-c1-lide/validation.json)
+- [建築說明、來源與列印限制](buildings/erping-c1-lide/display/README.md)
+- [STL 模型](buildings/erping-c1-lide/model.stl)・[Blender 場景](buildings/erping-c1-lide/appearance/scene.blend)・[網格驗證](buildings/erping-c1-lide/validation.json)
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![二坪山校區 C1｜立德樓（管理學院）實際模型正面](buildings/erping-c1-lide/appearance/previews/front.png)](buildings/erping-c1-lide/appearance/previews/front.png) | 背面預覽<br>[![二坪山校區 C1｜立德樓（管理學院）實際模型背面](buildings/erping-c1-lide/appearance/previews/rear.png)](buildings/erping-c1-lide/appearance/previews/rear.png) |  |
+| 正面預覽<br>[![二坪山校區 C1｜立德樓（管理學院）實際模型正面](buildings/erping-c1-lide/display/front.webp)](buildings/erping-c1-lide/display/front.webp) | 背面預覽<br>[![二坪山校區 C1｜立德樓（管理學院）實際模型背面](buildings/erping-c1-lide/display/rear.webp)](buildings/erping-c1-lide/display/rear.webp) |  |
 
 </details>
 
@@ -731,7 +731,7 @@
 
 [V1 景觀餐廳外觀與來源界線](buildings/erping-v1-landscape-restaurant/display/README.md)
 
-[C1 立德樓外觀與來源界線](buildings/erping-c1-lide/appearance/README.md)
+[C1 立德樓外觀與來源界線](buildings/erping-c1-lide/display/README.md)
 
 [E1／E2／E3 人文與社會學院外觀與來源界線](buildings/bajia-e1-e2-e3-humanities/appearance/README.md)
 
