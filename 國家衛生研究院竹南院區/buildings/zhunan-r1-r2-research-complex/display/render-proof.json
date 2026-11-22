@@ -1,0 +1,123 @@
+{
+  "source_commit": "6f305e2967d5670c894ae535fa590a3df5c40679",
+  "method": "fresh public exterior replay from exact saved five-material scene",
+  "geometry": {
+    "blend": "7b51e0ed6f1c8b7a9eb04cf7760e430621f173ec1de852dad909e32a1b1c5385",
+    "stl": "b8188b578e39b4768520e406dd6943f935d46a8721bdd8e9705c56e18bcf3b80",
+    "exchange": "6f109a8ab7ddd916877380f8f796fe1115eb5937388166f38a67b4a3acd3f1b4",
+    "triangles": 13778,
+    "vertices": 6779,
+    "materials": 5
+  },
+  "no_color_or_mesh_changes": true,
+  "views": {
+    "front": {
+      "full": "front-current.webp",
+      "thumb": "front-current-640.webp",
+      "old_bytes": 1794819,
+      "full_bytes": 567274,
+      "thumb_bytes": 27554,
+      "rgba_sha256": "7cc19485321907b379fd2cfb730c4e3943829d02a1b0d66aee45fcb4450bddbf",
+      "full_sha256": "4a1206e466c36ccb00a784264e8f5f3f9e5eac6253b850b7d983c2e4c34cb32b",
+      "thumb_sha256": "f53167f3603ae6fa00188cb6fa6ab868aeccb6616af3c08398c24c74c112a61e",
+      "camera": {
+        "path": "previews/front.png",
+        "bytes": 1794819,
+        "sha256": "aaf96cc11cf6f29840c06cb75654ccacbf29702c42d5115dc726300d95699bb4",
+        "camera": [
+          180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          32
+        ],
+        "ortho_scale": 225,
+        "all_vertices_in_frame": true
+      }
+    },
+    "rear": {
+      "full": "rear-current.webp",
+      "thumb": "rear-current-640.webp",
+      "old_bytes": 1763222,
+      "full_bytes": 543940,
+      "thumb_bytes": 18984,
+      "rgba_sha256": "fc72dead4efccf20e42c96f35fe1f556ed4b49d68799aa80893489a283cf0655",
+      "full_sha256": "aa97279ed15b33b99b1ce17c6eed21a8e56ec8698e0bdbc413b667482d8132c8",
+      "thumb_sha256": "c826d2ebeebfafdc9147e45bfd4bbeb169e11ad638812f201e5d77680d9db9ba",
+      "camera": {
+        "path": "previews/rear.png",
+        "bytes": 1763222,
+        "sha256": "402bcf6649383ff4abc63f9bb206a1c2e83e54b0a1c859bc65ca6668d95c164a",
+        "camera": [
+          -180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          32
+        ],
+        "ortho_scale": 225,
+        "all_vertices_in_frame": true
+      }
+    },
+    "elevation": {
+      "full": "elevation-current.webp",
+      "thumb": "elevation-current-640.webp",
+      "old_bytes": 1655134,
+      "full_bytes": 394852,
+      "thumb_bytes": 15000,
+      "rgba_sha256": "ab502e95b4e982d0e29a03e5b058c2e1cf1d377949a081e96d977eb2a0b0a3c0",
+      "full_sha256": "4709df4c982afc7b2e8612614ee3d6fb580e8b2ff1abbc8b736a016a4703c90f",
+      "thumb_sha256": "4ebfc4fa6b6c3fcac9aa0cf0c8e02790ae1f86002f7ed821ad47ef71217bbbc2",
+      "camera": {
+        "path": "previews/elevation.png",
+        "bytes": 1655134,
+        "sha256": "2e0c4f5144761de0ca9e2d359e9f25b691397b9e71dc1a4baccbc65bc4b06ace",
+        "camera": [
+          0,
+          -290,
+          32
+        ],
+        "target": [
+          0,
+          0,
+          32
+        ],
+        "ortho_scale": 185,
+        "all_vertices_in_frame": true
+      }
+    },
+    "top": {
+      "full": "top-current.webp",
+      "thumb": "top-current-640.webp",
+      "old_bytes": 1860928,
+      "full_bytes": 838546,
+      "thumb_bytes": 8884,
+      "rgba_sha256": "b65069e678c90f6f81e2ffcd9631c159c0360918bc872d92b2d0f1a9dc882ae0",
+      "full_sha256": "a2cd31a974150dd6e59d13fd36da81051432fce2d2b78b3bcda9ab54bc9a2b32",
+      "thumb_sha256": "4583549279216426fa42f673b08fc0bb7f6485b0f76f8a338fa249fce2deeb23",
+      "camera": {
+        "path": "previews/top.png",
+        "bytes": 1860928,
+        "sha256": "e29f80edf4400472218a9323c44ca556eb474a9aed5314dee64d0fef93ad5099",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    }
+  }
+}

@@ -4,8 +4,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 側向窗格／未知遠端中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| 正面<br>[![正面](../display/front-current-640.webp)](../display/front-current.webp) | 側向窗格／未知遠端中性<br>[![背面](../display/rear-current-640.webp)](../display/rear-current.webp) | [![正立面](../display/elevation-current-640.webp)](../display/elevation-current.webp) |
+| [![頂視](../display/top-current-640.webp)](../display/top-current.webp) |  |  |
 
 [表面色 3MF](nhrir12-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 

@@ -5,7 +5,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 側向窗格／未知遠端中性<br>![背面](appearance/previews/rear.png) |  |
+| 正面與來源支持區域<br>[![正面](display/front-current-640.webp)](display/front-current.webp) | 側向窗格／未知遠端中性<br>[![背面](display/rear-current-640.webp)](display/rear-current.webp) |  |
 
 ## 5 材質外觀版（2026-10-21）
 
