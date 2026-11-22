@@ -1,0 +1,145 @@
+{
+  "source_commit": "6a9b3eea446d4ffa36226089792ea0ec290011ee",
+  "method": "fresh replay of exact current three-material saved scene; camera parameters only from historical camera manifest",
+  "geometry": {
+    "blend": "cae1f95d6d49ade78f00c7dca1f22af0d2b0ec04b330c3edc5b49d1098074da8",
+    "stl": "6916e17e798b646ea36eaca7d8e1cf5867fa49d5eb6d31a6b9db8e5122b0bf79",
+    "exchange": "0c7f2c72550db6dd5aacb8136478e451c4372dfb6063e76776c308314e1e75b5",
+    "triangles": 3522,
+    "vertices": 1603,
+    "materials": 3,
+    "material_faces": {
+      "0": 3509,
+      "1": 1,
+      "2": 12
+    }
+  },
+  "no_color_or_mesh_changes": true,
+  "views": {
+    "front": {
+      "full": "front-current.webp",
+      "thumb": "front-current-640.webp",
+      "old_bytes": 1677926,
+      "full_bytes": 423662,
+      "thumb_bytes": 12214,
+      "rgba_sha256": "bdc5e0d020426a97e2a0505bd17f0a3e9c62e890ddc5cb1a8855a5c4b2adfe5f",
+      "full_sha256": "177337be795a44c4a85a3324d800a2953b12660f88e54655fb2ab0883bd4a5b3",
+      "thumb_sha256": "b9a89ab3621dd8f9fa19d722b75ef5051fa58fe6d67b84a0dc75df2a7585f1c1",
+      "source_png_sha256": "2965ae2844f17ad6ee4fe475f69c328f60342e964b171b87fa2456d8733fa2b5",
+      "camera": {
+        "camera": [
+          -195,
+          -220,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          52
+        ],
+        "ortho_scale": 225,
+        "all_vertices_in_frame": true
+      }
+    },
+    "rear": {
+      "full": "rear-current.webp",
+      "thumb": "rear-current-640.webp",
+      "old_bytes": 1568882,
+      "full_bytes": 361320,
+      "thumb_bytes": 5110,
+      "rgba_sha256": "73cd20affc84d1623c8d83f683596b1aa2a9a3647507a76338be052b77168861",
+      "full_sha256": "6963c0b72fff2f36f6ec666f88dc8da889c625ca972c454407158233e9df107d",
+      "thumb_sha256": "f531b5c2dae6ef25ea0cbf8060d7cf93e653f9c06dab3de8a88e7d4cae6573d7",
+      "source_png_sha256": "bf67fa2eaac26c55eae5cbb90f2d6814aa9fc662af47dc93e051ca2b4736462c",
+      "camera": {
+        "camera": [
+          195,
+          230,
+          160
+        ],
+        "target": [
+          0,
+          0,
+          52
+        ],
+        "ortho_scale": 225,
+        "all_vertices_in_frame": true
+      }
+    },
+    "elevation": {
+      "full": "elevation-current.webp",
+      "thumb": "elevation-current-640.webp",
+      "old_bytes": 1722127,
+      "full_bytes": 532386,
+      "thumb_bytes": 12506,
+      "rgba_sha256": "54b2265928fea37361bfc27a540b6fbf7be74dffe2fdda9ac4e7fdaeed760e3b",
+      "full_sha256": "c71e2a7c19188ea3155fc62fb5413e8c2393399f38c83e1a0953173150654bd6",
+      "thumb_sha256": "c9dd4a2ce02b8764f8ebf2b80b700d082cc0f229fadffb5cd5f77d43283cc492",
+      "source_png_sha256": "7656f651fe73863e8faa34a8e4b2d030c80b16ee260068fd849a114838f9cae9",
+      "camera": {
+        "camera": [
+          0,
+          -260,
+          53
+        ],
+        "target": [
+          0,
+          0,
+          53
+        ],
+        "ortho_scale": 190,
+        "all_vertices_in_frame": true
+      }
+    },
+    "side": {
+      "full": "side-current.webp",
+      "thumb": "side-current-640.webp",
+      "old_bytes": 1560611,
+      "full_bytes": 274308,
+      "thumb_bytes": 4192,
+      "rgba_sha256": "80150f3a1939019d3f26ed2728beec86e976b234e0ae467fb2c056499c6855b0",
+      "full_sha256": "da7b3d8398a59023e79459a460d9dfd98fef966a9e3faa4b8a161cdbeac38a7d",
+      "thumb_sha256": "caddd77b88f66b5ce10ae5d93c47aec6570c611127c4a21869b1e7c32387fcb8",
+      "source_png_sha256": "294ecfaf6e00279bd7cf904f021399c1306d0d9310000f755cb7ad661c74ce3a",
+      "camera": {
+        "camera": [
+          -260,
+          0,
+          95
+        ],
+        "target": [
+          0,
+          0,
+          53
+        ],
+        "ortho_scale": 190,
+        "all_vertices_in_frame": true
+      }
+    },
+    "top": {
+      "full": "top-current.webp",
+      "thumb": "top-current-640.webp",
+      "old_bytes": 1581187,
+      "full_bytes": 372688,
+      "thumb_bytes": 4816,
+      "rgba_sha256": "623dbb2ef662361b246647e831bdf01c1f09e35224c6ab53e9ba9725dcaa8401",
+      "full_sha256": "a4ba721d93de0e4f69eb88943e9f6fdc0906f093a8c01a10720cf0157529e35c",
+      "thumb_sha256": "08ab162bec7fba2a48b8a44790af21aaae254fbc2eda14f9ef89731d93900499",
+      "source_png_sha256": "b36a683927bc693537917fb2bfb153b36cdbd5099527120b9517f8c22821f5a3",
+      "camera": {
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 190,
+        "all_vertices_in_frame": true
+      }
+    }
+  }
+}
