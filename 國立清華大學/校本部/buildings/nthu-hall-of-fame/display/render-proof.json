@@ -1,0 +1,154 @@
+{
+  "base": "6a9b3eea446d4ffa36226089792ea0ec290011ee",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立清華大學/校本部/buildings/nthu-hall-of-fame/appearance/scene.blend",
+      "sha256": "7d463cd5333dfdf271cb72bb901e2e9bd702822f0eb77a598a405f5b20eb7e5d",
+      "git_blob": "5315a18e4e3af1f8f2a95e9548aa824cc8775cd9"
+    },
+    "appearance/nthufame-appearance.3mf": {
+      "path": "國立清華大學/校本部/buildings/nthu-hall-of-fame/appearance/nthufame-appearance.3mf",
+      "sha256": "ae235d873dcc194892cb933a1423fffde1760220895f1dbca78278602b04036f",
+      "git_blob": "ce1f671710f23130ce57a98d9d297ab85c787662"
+    },
+    "model.stl": {
+      "path": "國立清華大學/校本部/buildings/nthu-hall-of-fame/model.stl",
+      "sha256": "d3c302949f97a36001244b8254d4d3c45a14d6b43861b6c4507d425cdde4ead0",
+      "git_blob": "1613201c6dd846eb8a07207aa0c7267ba13d6638"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立清華大學/校本部/buildings/nthu-hall-of-fame/appearance/qa-continuous-walls/render-manifest.json",
+  "render_manifest_sha256": "18ecc619c21b219f2345017f6c6421ba306b5790d57b7f4dac332f760b619c12",
+  "triangles": 1592,
+  "vertices": 786,
+  "materials": {
+    "0": 792,
+    "1": 223,
+    "5": 317,
+    "4": 112,
+    "3": 58,
+    "2": 88,
+    "6": 2
+  },
+  "retained_inferred_window_reveal_faces": 4,
+  "historical_checksum_counts": {
+    "hash-manifest.json": 15,
+    "appearance/SHA256SUMS": 30,
+    "PUBLIC-MODEL-SHA256SUMS": 34
+  },
+  "historical_preexisting_mismatch": {
+    "README.md": {
+      "expected_sha256": "097127960f3484ba3bef2618e5bb836a6b84eca8ea6222951eeb03fd48def525",
+      "actual_sha256": "c230ced4a91d33828c148bd5d01c8a704cf5007cf4085863bf42f5f7de3a218a",
+      "expected_bytes": 4222,
+      "actual_bytes": 5415
+    }
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1575315,
+      "sha256": "dd14c3f93743f937aa20af012f49d84b64681e33bed0c7f6cd490e43b3ccf31b",
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-hall-of-fame/appearance/previews/front.png",
+      "source_git_blob": "520cf751e3048859d350cbfe5f4f3b1d8c677ac3",
+      "rgba_sha256": "d5c5357f73e9106037e074dcc3b1bb127deef3cde253d9f59e8d1a2cf5d6b9f8",
+      "webp": "front.webp",
+      "webp_sha256": "68849a7ace3da957727ba7426bc715c8339b8af38d3e667ec6eb2f4012d8ff9b",
+      "webp_bytes": 308348,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "26eecb646d21f0dba4f1f6191787ff5221187b87758fe83745da9a7ecadcac24",
+      "thumbnail_bytes": 7744
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1530520,
+      "sha256": "78e1675aa02fa457634144e896a9c1c83c4b5dae17229a424e8a4c3aa1bb03e4",
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-hall-of-fame/appearance/previews/rear.png",
+      "source_git_blob": "f041e470172bd55821430f09b5f01b2d0875287b",
+      "rgba_sha256": "795016a1e1f9cce3a1bfaa65840b386bc5552c6319d175dad4dc85bc71efcd74",
+      "webp": "rear.webp",
+      "webp_sha256": "1ceef69fb23224b815d4d8159f08d723ec368f4bd89dce33b99e1962d948ed14",
+      "webp_bytes": 296638,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "a483a5b49841528f837dbade3054cd7d4882ff3ff3e8038d0de52c6890a4afc2",
+      "thumbnail_bytes": 5068
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1569028,
+      "sha256": "cb33c0c6b61d910917e25462c4948d0b6c109da7567031ec1df7770aee8b810b",
+      "camera": [
+        0,
+        -290,
+        56
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-hall-of-fame/appearance/previews/elevation.png",
+      "source_git_blob": "63b2d3b7a17b9c7bc1e76ba1ae85e34f8a13e300",
+      "rgba_sha256": "cf4490131b8c8b1949d3d2d77f7fa2fec55bc7846289ff06310acfad235cb4f6",
+      "webp": "elevation.webp",
+      "webp_sha256": "e7ff5ca168bb4884b8ed226906b2b884b303262d8fd60956b3cb2c3c0b1e9def",
+      "webp_bytes": 295832,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "1426e4c8536386d3e943474533073b851af8a025a492e0d7892f0f7cf735f6af",
+      "thumbnail_bytes": 5768
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1588736,
+      "sha256": "dd7310ee8d02baf433297529e05563b8f26377d51d1974fc40783424c2ecbff3",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-hall-of-fame/appearance/previews/top.png",
+      "source_git_blob": "5c5572c78fa3f328b8beb25c3cd868a3cfb3df0c",
+      "rgba_sha256": "b290238ab9eb5fed7eb1a43563faf1265b7c88146041dd1cc7c53ff62f775d06",
+      "webp": "top.webp",
+      "webp_sha256": "bc3a22406d637d4eb023c46d5a22774f7d39e7090499d672df3772e84c9c8ee5",
+      "webp_bytes": 477170,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "08f997e08b6b752e865a46f7b940c6e407214f2bbf5f9a83f450e53dfa5aec49",
+      "thumbnail_bytes": 4274
+    }
+  ]
+}
