@@ -1,0 +1,144 @@
+{
+  "base": "bc7eea1c1741b4d8065711b9fac2c1e82a2d646a",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立清華大學/校本部/buildings/nthu-general-building-iii/appearance/scene.blend",
+      "sha256": "2a2bcbfe5240240c3e80a521cd7ff12c70a4827199029b13722ddd1476505e0a",
+      "git_blob": "f84139be727b8a204e725aec1869154a9895429e"
+    },
+    "appearance/nthugeneral3-appearance.3mf": {
+      "path": "國立清華大學/校本部/buildings/nthu-general-building-iii/appearance/nthugeneral3-appearance.3mf",
+      "sha256": "db804977c5180bdbacffa0ade0dc417f7c1c29661774442b02731d3125dbf9ae",
+      "git_blob": "c7e8309a0e37190e13637b6ff207d67cb0ff99f0"
+    },
+    "model.stl": {
+      "path": "國立清華大學/校本部/buildings/nthu-general-building-iii/model.stl",
+      "sha256": "43e351e7479617419f545bf58ff43c6546bd2234093e77c59982b4e8b7a02aec",
+      "git_blob": "4c485164f0aeb5c16289b65e7c20cbb1b34d8464"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立清華大學/校本部/buildings/nthu-general-building-iii/appearance/qa-continuous-walls/render-manifest.json",
+  "render_manifest_sha256": "fe7215a962c51568d5de990b9f893e34d07ec41db5f152c35b00c9e25ff8cc60",
+  "triangles": 6344,
+  "vertices": 3170,
+  "materials": {
+    "0": 3909,
+    "1": 1923,
+    "3": 76,
+    "4": 76,
+    "2": 360
+  },
+  "retained_side_rear_inferred_faces": 1310,
+  "historical_checksum_counts": {
+    "hash-manifest.json": 15,
+    "appearance/SHA256SUMS": 31,
+    "PUBLIC-MODEL-SHA256SUMS": 29
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1749731,
+      "sha256": "710edec49dcab1b13ca6ebbea0560518be8792648a46f7b5ae78661d7cb253b1",
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-general-building-iii/appearance/previews/front.png",
+      "source_git_blob": "07da3f1e525c7b2cfe4d32e2bfdbf0e39b91554d",
+      "rgba_sha256": "73ea3c8710dcfa6af5cb4194c9a0ce77d284a6cc141471d37cc6a2270c7140b5",
+      "webp": "front.webp",
+      "webp_sha256": "984504948b2b1a5c693c8afa61711288e85272f8b0dbbbaf3436604bd53e574d",
+      "webp_bytes": 544460,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "44bf2c6f91dd32315e253c7c458a08c76a12f38b5081a26ab83c3237c1cb90e0",
+      "thumbnail_bytes": 17512
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1717022,
+      "sha256": "fc2dae23b8765750f40477bfa02cb0a3a846ad6ae587f6008a8411adf3d3e6d1",
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-general-building-iii/appearance/previews/rear.png",
+      "source_git_blob": "d906e6b7334b23569ec90fa1a46dc2559364a98f",
+      "rgba_sha256": "9e6fd9096f4dd8154050a1f0c55c010724aec32799a3545b0d338b6a79e04deb",
+      "webp": "rear.webp",
+      "webp_sha256": "eb46e37329ab9d3e2cb21b88a0b0f878cfdeaa4e6bab1261c6b3f7e78f3aec8d",
+      "webp_bytes": 522900,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "ccb706ff5dc0e5a33b9c1829a5eef8996024affb264865b5dfc524d006006041",
+      "thumbnail_bytes": 13344
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1713211,
+      "sha256": "4b37f45e9262996e8dc0a0b4e0c9cd1bf2cb995402cbb04ec3b3ba97a634f3ac",
+      "camera": [
+        0,
+        -290,
+        56
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-general-building-iii/appearance/previews/elevation.png",
+      "source_git_blob": "521794b40246528f45055bedfaf998ad0ddeb168",
+      "rgba_sha256": "911fb7ad43caecceb5160155cde3af91e2e55cbb7cc209efc964427fec19a312",
+      "webp": "elevation.webp",
+      "webp_sha256": "f042d841b99f4bafda1f379ff87bb08499749664071774b561696f81e81f2b53",
+      "webp_bytes": 582888,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "6db43fe4ab37e5ff6f753beb47a64a0829446368590590561c58ea46831fdd2e",
+      "thumbnail_bytes": 14210
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1763737,
+      "sha256": "72b074e63962de2f608d4a0c8473ea0d540d5dc4718b0fec7213d891aceaa187",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-general-building-iii/appearance/previews/top.png",
+      "source_git_blob": "418fe5b8382093413c532eaac45458d94bdda6cb",
+      "rgba_sha256": "e7008d98ed5f344332c719d477cd16edb560c2444683b4537ee3a93a8dc9c192",
+      "webp": "top.webp",
+      "webp_sha256": "f9486d1bfba12d44cf722b4c63b1b88f43b2944c8985d962cb9e5100d2a9104e",
+      "webp_bytes": 774416,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "f2e27263e7ac9c985e3b3956ada080ac937815d039457f4ba22b1d4c2ed8153a",
+      "thumbnail_bytes": 5388
+    }
+  ]
+}
