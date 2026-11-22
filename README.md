@@ -10,7 +10,7 @@
 
 | 國立聯合大學 | 國家衛生研究院竹南院區 | 臺灣各地地標 |
 | :---: | :---: | :---: |
-| [<img src="docs/display/homepage/nuu-north-gate-640.webp" alt="國立聯合大學八甲北大門與中央警衛室模型" width="260">](國立聯合大學/README.md)<br>**[國立聯合大學｜42 組](國立聯合大學/README.md)** | [<img src="docs/display/homepage/nhri-administration-640.webp" alt="國家衛生研究院竹南院區行政大樓模型" width="260">](國家衛生研究院竹南院區/README.md)<br>**[國衛院竹南院區｜9 組](國家衛生研究院竹南院區/README.md)** | [<img src="docs/display/homepage/taipei-101-640.webp" alt="臺北 101 模型" width="260">](臺灣地標/README.md)<br>**[臺灣地標｜61 組](臺灣地標/README.md)** |
+| [<img src="docs/display/homepage/nuu-north-gate-640.webp" alt="國立聯合大學八甲北大門與中央警衛室模型" width="260">](國立聯合大學/README.md)<br>**[國立聯合大學｜42 組](國立聯合大學/README.md)** | [<img src="國家衛生研究院竹南院區/buildings/zhunan-administration/appearance/previews/front-640.webp" alt="國家衛生研究院竹南院區行政大樓模型" width="260">](國家衛生研究院竹南院區/README.md)<br>**[國衛院竹南院區｜9 組](國家衛生研究院竹南院區/README.md)** | [<img src="docs/display/homepage/taipei-101-640.webp" alt="臺北 101 模型" width="260">](臺灣地標/README.md)<br>**[臺灣地標｜61 組](臺灣地標/README.md)** |
 
 ## 新增大專校院圖鑑
 
