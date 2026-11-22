@@ -2,10 +2,10 @@
 
 ## 模型預覽
 
-| 正面 | 背面 | 正立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![正面](front-640.webp)](front.webp) | [![背面](rear-640.webp)](rear.webp) | [![正立面](elevation-640.webp)](elevation.webp) |
-| [![頂視](top-640.webp)](top.webp) | | |
+| [![正面](front-640.webp)](front.webp)<br>正面 | [![背面](rear-640.webp)](rear.webp)<br>背面 | [![正立面](elevation-640.webp)](elevation.webp)<br>正立面 |
+| [![頂視](top-640.webp)](top.webp)<br>頂視 |  |  |
 
 四張全尺寸無失真 WebP 由現行八材質 Blender 場景核對重繪，點擊縮圖可放大。保留已證實的正面與可見區域配色。未可靠辨識的右長側、外側後牆和未登錄屋頂面仍保持中性；沒有拓展補色。幾何與配色未變更。
 
