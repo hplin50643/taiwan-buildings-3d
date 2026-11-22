@@ -1,0 +1,142 @@
+{
+  "base": "7be659c3988c16c63b5dd93e8380a6fecd8ebec9",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立清華大學/校本部/buildings/nthu-bamboo-house/appearance/scene.blend",
+      "sha256": "f5b16764fc6395dc93bbfc34982a8e10edf32e59cb46bd74d738bf172f7e10e1",
+      "git_blob": "641bc56b441aa3721f36963d0fde43899eb4fcfd"
+    },
+    "appearance/nthubamboo-appearance.3mf": {
+      "path": "國立清華大學/校本部/buildings/nthu-bamboo-house/appearance/nthubamboo-appearance.3mf",
+      "sha256": "f6167ca1fa1e04ff869b02f22c31ff2737fb99875a075d7afc475d7350aac1b7",
+      "git_blob": "b30fed634e8a2630639d92ae1b8470757be6c4d2"
+    },
+    "model.stl": {
+      "path": "國立清華大學/校本部/buildings/nthu-bamboo-house/model.stl",
+      "sha256": "f4043043b3db240f2543ec085bc30660fa1ff9470aef58caad9d15b093f19a51",
+      "git_blob": "17778a6b4becfe8e74c994abdd71a2934a0d52f3"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立清華大學/校本部/buildings/nthu-bamboo-house/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "b2955763b3f21ea0e2974f1f947965cc046cb9f78d0567dfd8570b582c443a28",
+  "triangles": 2802,
+  "vertices": 1401,
+  "materials": {
+    "0": 2621,
+    "1": 91,
+    "3": 16,
+    "2": 64,
+    "4": 10
+  },
+  "historical_checksum_counts": {
+    "hash-manifest.json": 15,
+    "appearance/SHA256SUMS": 20
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1642192,
+      "sha256": "02306383ec6e92be10210287341052d717404260379ab136ed124302fcd4562e",
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-bamboo-house/appearance/previews/front.png",
+      "source_git_blob": "d7c14321f912784b0be5332b0115a260571657e7",
+      "rgba_sha256": "c2ccbe3f428f651222c8918c0ed76126655169c9cf5ae1db45babf1b24c59196",
+      "webp": "front.webp",
+      "webp_sha256": "4ef17f983c90847a6bee42be26eac83b7ee0d6d8e155ef5fea55266d5a00a019",
+      "webp_bytes": 399246,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "a92ff163a9483d0b49e922fbf428edb9c8e60d764c43333f2d70158cf432ad1f",
+      "thumbnail_bytes": 11912
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1677003,
+      "sha256": "202a3cefbd9a65ca2c32d47ca9885da2e823b527be06528276792daa1dbec582",
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-bamboo-house/appearance/previews/rear.png",
+      "source_git_blob": "a2086e0201c3931050c58d09a743b41392dcb023",
+      "rgba_sha256": "cdf36eb4e008003b9d951043ef04704c1ce7ec807b0b479d872ca70f3e0d1bc8",
+      "webp": "rear.webp",
+      "webp_sha256": "89c5525cd719651c2a4ed381c16e7dc30d0313f662363305edcbfb72ca7e9665",
+      "webp_bytes": 412462,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "0a9e437094ea82731a26fc296e3dcf9d8b41f7fdcb124460f10eb4581eb96f70",
+      "thumbnail_bytes": 12934
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1525234,
+      "sha256": "5cb51cd26afe136377efabad8dff1a6da47e88e82492a9f22e29df55b99c3801",
+      "camera": [
+        0,
+        -290,
+        22
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-bamboo-house/appearance/previews/elevation.png",
+      "source_git_blob": "6f0ed14ba49e164bb1981c222f2f1cd5a9530f45",
+      "rgba_sha256": "1038f2692f55c89f0e2ba8d4eb2e00107271e13c3695ef921dbf3ea079c0a99e",
+      "webp": "elevation.webp",
+      "webp_sha256": "81ee8f192b3e8ac37fe9102ea87ce8ddf2c321d1f7f1b3c47f9fbd6439ff7feb",
+      "webp_bytes": 267474,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "568be9c8dfebc95836b8bc910733a86f597a6cad38f762c81a92a3bf39cedcbb",
+      "thumbnail_bytes": 5576
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1779640,
+      "sha256": "61d45e84501e6b5e4e8c78063abd2a5f3a57c91ad5511ecd6e86d1cf022184dc",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-bamboo-house/appearance/previews/top.png",
+      "source_git_blob": "bec7a6bd6f5c7038d3adf089bb1f8d2b14500f83",
+      "rgba_sha256": "e2948aba9813c023eb877edbd9089512208f5ac1919aa0519b4544eff6f47e53",
+      "webp": "top.webp",
+      "webp_sha256": "eaec55fb0496c73faecb02ec5b19b1af73d257b127ea289eefd800c9bbd2632b",
+      "webp_bytes": 800576,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "4969a3aeea1bf0b3979154fcd4dc13a412cd43c40fb6e645bd8d32f3d6ab9661",
+      "thumbnail_bytes": 7632
+    }
+  ]
+}
