@@ -1,0 +1,299 @@
+{
+  "baseline": "454e8a4d3b5976547379ba4509ea048a5878751c",
+  "source_baseline": "6a9b3eea446d4ffa36226089792ea0ec290011ee",
+  "engineering_manifest": {
+    "path": "國立政治大學/山下校區/buildings/nccu-guofu/PUBLIC-MODEL-SHA256SUMS",
+    "sha256": "30fed2c2e8472780d690d8dd9a6bf9187e2cd805245284f23dd095472f6ec631",
+    "old_sha256": "363564294d55cdcc34f3fc5d12d7f0467de8998a19f73a75d1a937eee58a5438",
+    "updated_rows": [
+      "appearance/README.md"
+    ],
+    "rows": 32
+  },
+  "fresh_render_manifest": {
+    "blender": "4.3.2",
+    "samples": 48,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "files": [
+      {
+        "path": "previews/front.png",
+        "bytes": 1584791,
+        "sha256": "257a61a2f87e05b2b6f48767ae69b3d6dcfc22138bf6eb3605c89c0ec8ab9fa1",
+        "camera": [
+          -195,
+          -220,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          15.6
+        ],
+        "ortho_scale": 190,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/rear.png",
+        "bytes": 1562607,
+        "sha256": "444aad69300df6540756bec8c36a34e90b49f9af5b25554019044ea8c5ab59d4",
+        "camera": [
+          195,
+          230,
+          160
+        ],
+        "target": [
+          0,
+          0,
+          15.6
+        ],
+        "ortho_scale": 190,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/elevation.png",
+        "bytes": 1519985,
+        "sha256": "629a6d83a198366cf622af856d3c0c687820085173179957c43c7ef961fb3e67",
+        "camera": [
+          0,
+          -260,
+          15.6
+        ],
+        "target": [
+          0,
+          0,
+          15.6
+        ],
+        "ortho_scale": 175,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/side.png",
+        "bytes": 1520191,
+        "sha256": "cc4a9c694757dcdc09d128263f67209e7da99ad766bdb993d7313bfb93b9873a",
+        "camera": [
+          -260,
+          0,
+          95
+        ],
+        "target": [
+          0,
+          0,
+          15.6
+        ],
+        "ortho_scale": 175,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/top.png",
+        "bytes": 1588803,
+        "sha256": "9abbef248a67c08d758bdfbd72d9cd025a904a90894aef0d698966560e6df123",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 175,
+        "all_vertices_in_frame": true
+      }
+    ]
+  },
+  "prior_render_manifest_sha256": "b1723b30a90765713ff71e71fc6939c76cd4bf7a42597a87d60c2851b0bf4c42",
+  "authored_renderer_inputs": {
+    "國立政治大學/山下校區/buildings/nccu-guofu/appearance/nccu-guofu-appearance.3mf": "181bd152dc478fc2355d6047863d010cc50f6cec2765c8414ebeca4f5be4a744",
+    "國立政治大學/山下校區/buildings/nccu-guofu/appearance/palette.json": "19aacbb642086d2f12ddd375790bc9fb839c7a75abd78144cec072fd9f0ed7dd",
+    "國立政治大學/山下校區/buildings/nccu-guofu/appearance/source/render_continuous_walls.py": "b463c55f3311d41cedad836c3158a44c242f5fc18362aca36a378d485fbc553a"
+  },
+  "renderer": "Blender 4.3.2 Cycles CPU, 48 samples, all five authored renderer PNGs verified byte-identical to official current source; full WebP exact decoded RGBA.",
+  "native": {
+    "國立政治大學/山下校區/buildings/nccu-guofu/model.stl": {
+      "sha256": "be0b31f7f6546fccaf51c47a811cf4c8425e1c426e31bed020e71cb6d59fcf29",
+      "blob_sha": "7397dffd8edf492c043136de384f8b02133f9ded"
+    },
+    "國立政治大學/山下校區/buildings/nccu-guofu/appearance/nccu-guofu-appearance.3mf": {
+      "sha256": "181bd152dc478fc2355d6047863d010cc50f6cec2765c8414ebeca4f5be4a744",
+      "blob_sha": "179021530424ac9a758391188b4cf7c8d8c4c95b"
+    },
+    "國立政治大學/山下校區/buildings/nccu-guofu/appearance/scene.blend": {
+      "sha256": "69ead533add495f4d9b3c3d05874f23b76ed51ffdfb1fed7927f0004abe5b565",
+      "blob_sha": "fd6cc56bebe7831bde3a73c94824f8349bf9125b"
+    }
+  },
+  "native_model_mesh": {
+    "vertices": 506,
+    "face_materials": {
+      "0": 971,
+      "1": 19,
+      "2": 30
+    }
+  },
+  "native_scene_rerender_semantics_sha256": "a2618d5cebb8df106977a33481148ade3a9609709b744df737d5ad5df8502e59",
+  "historical_manifests": {
+    "國立政治大學/山下校區/buildings/nccu-guofu/SHA256SUMS": "2d179b698eb4d0ef081e2ac2a1c80f98871bf412baff484835738e8a70a80f37",
+    "國立政治大學/山下校區/buildings/nccu-guofu/appearance/SHA256SUMS": "38f5eafb7915b701e7e094d6288d3b039b81d1761cba708c995055d1ffca3899"
+  },
+  "images": [
+    {
+      "source": "國立政治大學/山下校區/buildings/nccu-guofu/appearance/previews/front.png",
+      "source_sha256": "257a61a2f87e05b2b6f48767ae69b3d6dcfc22138bf6eb3605c89c0ec8ab9fa1",
+      "source_bytes": 1584791,
+      "renderer_png_sha256": "257a61a2f87e05b2b6f48767ae69b3d6dcfc22138bf6eb3605c89c0ec8ab9fa1",
+      "display": "國立政治大學/山下校區/buildings/nccu-guofu/display/front.webp",
+      "display_bytes": 358156,
+      "display_sha256": "94286de9872ed8b3a4584373000cd0d69642b1eab1f485917f3f2e5eedb8189f",
+      "thumb": "國立政治大學/山下校區/buildings/nccu-guofu/display/front-640.webp",
+      "thumb_sha256": "b73cf1e88f97ad29a10c9dc3c50ee4d55a9c77d788390d39598e17608934bf9d",
+      "rgba_sha256": "ec305bb49bc5e247fe7ee438000c5226a3939203c329ffe19805c4469e38bd38",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        -195,
+        -220,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        15.6
+      ],
+      "ortho_scale": 190
+    },
+    {
+      "source": "國立政治大學/山下校區/buildings/nccu-guofu/appearance/previews/rear.png",
+      "source_sha256": "444aad69300df6540756bec8c36a34e90b49f9af5b25554019044ea8c5ab59d4",
+      "source_bytes": 1562607,
+      "renderer_png_sha256": "444aad69300df6540756bec8c36a34e90b49f9af5b25554019044ea8c5ab59d4",
+      "display": "國立政治大學/山下校區/buildings/nccu-guofu/display/rear.webp",
+      "display_bytes": 335316,
+      "display_sha256": "c0654d3497d5b9fd2ce5a8c9f1a4def58aada5d982c99e216c3c6b53a906dfcc",
+      "thumb": "國立政治大學/山下校區/buildings/nccu-guofu/display/rear-640.webp",
+      "thumb_sha256": "e35e8cfb3c259cacb638447a42eb8043e1fc07d1ddbb6ad4484562203c1a775c",
+      "rgba_sha256": "fac4b6f4dcd823a9bb97bdc9cb0e34fdef53d243e5a2d84ff14fabc3b9cb03e2",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        195,
+        230,
+        160
+      ],
+      "target": [
+        0,
+        0,
+        15.6
+      ],
+      "ortho_scale": 190
+    },
+    {
+      "source": "國立政治大學/山下校區/buildings/nccu-guofu/appearance/previews/elevation.png",
+      "source_sha256": "629a6d83a198366cf622af856d3c0c687820085173179957c43c7ef961fb3e67",
+      "source_bytes": 1519985,
+      "renderer_png_sha256": "629a6d83a198366cf622af856d3c0c687820085173179957c43c7ef961fb3e67",
+      "display": "國立政治大學/山下校區/buildings/nccu-guofu/display/elevation.webp",
+      "display_bytes": 255502,
+      "display_sha256": "fad646e51ef86f8949547eab9b6a0439a26943f42c156de4473e551d4c3fc61c",
+      "thumb": "國立政治大學/山下校區/buildings/nccu-guofu/display/elevation-640.webp",
+      "thumb_sha256": "a75fc7101fe4e3458f17d27dba382d2ef9b439d3e8dc621b410f575bd2fd86f8",
+      "rgba_sha256": "7d7e7ba5cc24a38f991e9fd8a2ecbfd2ec4a8116c147611e020d3817cd7a4699",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        0,
+        -260,
+        15.6
+      ],
+      "target": [
+        0,
+        0,
+        15.6
+      ],
+      "ortho_scale": 175
+    },
+    {
+      "source": "國立政治大學/山下校區/buildings/nccu-guofu/appearance/previews/side.png",
+      "source_sha256": "cc4a9c694757dcdc09d128263f67209e7da99ad766bdb993d7313bfb93b9873a",
+      "source_bytes": 1520191,
+      "renderer_png_sha256": "cc4a9c694757dcdc09d128263f67209e7da99ad766bdb993d7313bfb93b9873a",
+      "display": "國立政治大學/山下校區/buildings/nccu-guofu/display/side.webp",
+      "display_bytes": 257192,
+      "display_sha256": "ac2a5d1b5755bc0ab9f72ea3af8805b891fe2f737a97ee3ce852a07fa784c14a",
+      "thumb": "國立政治大學/山下校區/buildings/nccu-guofu/display/side-640.webp",
+      "thumb_sha256": "7eff713202cadb9f7f89d477453d108845e77320c3152efe4b568c4e53f6c2c6",
+      "rgba_sha256": "57c7701caecdd4635e3b434f41125535ff28a3c942d1030df738fb583a806fa7",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        -260,
+        0,
+        95
+      ],
+      "target": [
+        0,
+        0,
+        15.6
+      ],
+      "ortho_scale": 175
+    },
+    {
+      "source": "國立政治大學/山下校區/buildings/nccu-guofu/appearance/previews/top.png",
+      "source_sha256": "9abbef248a67c08d758bdfbd72d9cd025a904a90894aef0d698966560e6df123",
+      "source_bytes": 1588803,
+      "renderer_png_sha256": "9abbef248a67c08d758bdfbd72d9cd025a904a90894aef0d698966560e6df123",
+      "display": "國立政治大學/山下校區/buildings/nccu-guofu/display/top.webp",
+      "display_bytes": 449252,
+      "display_sha256": "eaf9612cb7148720d1a73984f58b599a487a9a53f28a78ad44170c24a95ef804",
+      "thumb": "國立政治大學/山下校區/buildings/nccu-guofu/display/top-640.webp",
+      "thumb_sha256": "4876640d3579ae4222981023e7f729eb97abdbf4ca41079ce950489124133583",
+      "rgba_sha256": "6d429786a90a1690994d3986a00fa0802a3502a2aec0d56b899810a9280308d9",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 175
+    }
+  ]
+}
