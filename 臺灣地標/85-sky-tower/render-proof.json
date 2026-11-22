@@ -1,0 +1,107 @@
+{
+  "blender": "4.3.2",
+  "resolution": [
+    900,
+    1050
+  ],
+  "renderer": "Blender Workbench studio, exact saved scene reopened, no scene save",
+  "native_blend_sha256": "2a2d4b2c8d5451b0f2acf00ff9cb26100ae1626c5ce5151e562a6734aa7625b6",
+  "original_stl_sha256": "41c11b1d9d0d6ee97b723ded971909b54eed886711dc61c90cbae82ec9926809",
+  "native_stl_oriented_triangle_coordinate_multisets_match_exact_float32_precision": true,
+  "stl_triangles": 35732,
+  "display_scene_triangles": 35732,
+  "display_scene_vertices": 17866,
+  "preview_material_face_counts": {
+    "1": 250,
+    "0": 35482
+  },
+  "cold_rebuilt_stl_matches_bytes": true,
+  "prior_package_commit": "1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8",
+  "views": {
+    "front": {
+      "camera": {
+        "location": [
+          160.0,
+          -350.0,
+          170.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          72.0
+        ],
+        "scale": 185.0,
+        "rotation": [
+          1.3214434385299683,
+          6.465830537649708e-09,
+          0.4287780821323395
+        ]
+      },
+      "old_png_sha256": "401035642730f2313fc626a263636801979ef5dd5d1becbf645a93313e865d8f",
+      "webp": "previews/front.webp",
+      "webp_sha256": "51bf47b3ebef5c671978c4f8b782ab079f4a2dcd2c8a3c18176312555cb4b77d",
+      "rgba_sha256": "0822cd10ca99171c57d285778a8f95b1d470dcab2dcc8c15e6609fad2744ca5c",
+      "prior_render_pixels_exact": true
+    },
+    "rear": {
+      "camera": {
+        "location": [
+          -190.0,
+          330.0,
+          185.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          72.0
+        ],
+        "scale": 185.0,
+        "rotation": [
+          1.282321810722351,
+          5.2234273795193076e-08,
+          -2.6191892623901367
+        ]
+      },
+      "old_png_sha256": "e46592ad8bab9df07dc836fd2481a79364a584997f139105cc25fd73f6d6a63b",
+      "webp": "previews/rear.webp",
+      "webp_sha256": "4e840a98831326e79e3b5c0b96453e105ee7154da8e496a221a387a3a2af2144",
+      "rgba_sha256": "448e71368ff9ae21dda779147f6a4fa2e78bfe13e4ffc05b2115046c94f3b5aa",
+      "prior_render_pixels_exact": true
+    },
+    "elevation": {
+      "camera": {
+        "location": [
+          0.0,
+          -350.0,
+          95.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          72.0
+        ],
+        "scale": 185.0,
+        "rotation": [
+          1.5051765441894531,
+          -0.0,
+          0.0
+        ]
+      },
+      "old_png_sha256": "acdd8d606b819d950606fd1d437f4704b0360a14c04de048ef20285aac6c5934",
+      "webp": "previews/elevation.webp",
+      "webp_sha256": "d4061838d044a2bcd598353732f8755924d5a81f9c88b358da845dd679136dcb",
+      "rgba_sha256": "8936b4c435f5f0a011ead4ccc4946fa1439384dec03247c2caefd4cbe12e9d4a",
+      "prior_render_pixels_exact": true
+    }
+  },
+  "representative": {
+    "path": "docs/display/catalog/a931cf761c2cac4eb05cc70f-640.webp",
+    "sha256": "c287fee726c90e29712174dd15495276f1336039cb82629cabebc761a1600f58",
+    "bytes": 39166,
+    "prior_bytes_exact": true,
+    "size": [
+      640,
+      747
+    ]
+  }
+}

@@ -60,7 +60,7 @@
 | 赤崁樓 | [模型與說明](chihkan-tower/README.md) · [STL](chihkan-tower/model.stl) | [正面斜視](chihkan-tower/front-oblique.webp) | [背面斜視](chihkan-tower/rear-oblique.webp) |
 | 安平古堡 | [模型與說明](anping-old-fort/README.md) · [STL](anping-old-fort/model.stl) · [3MF](anping-old-fort/model.3mf) · [Blend](anping-old-fort/scene.blend) | [前視](anping-old-fort/previews/front.png) | [後視](anping-old-fort/previews/rear.png) |
 | 奇美博物館 | [模型與說明](chimei-museum/README.md) · [STL](chimei-museum/model.stl) | [新版正面斜視](chimei-museum/front-current.webp) | [新版背面斜視](chimei-museum/rear-current.webp) |
-| 高雄85大樓 | [模型與說明](85-sky-tower/README.md) · [STL](85-sky-tower/model.stl) | [前視](85-sky-tower/previews/front.png) | [後視](85-sky-tower/previews/rear.png) |
+| 高雄85大樓 | [模型與說明](85-sky-tower/README.md) · [STL](85-sky-tower/model.stl) | [前視](85-sky-tower/previews/front.webp) | [後視](85-sky-tower/previews/rear.webp) |
 | 衛武營國家藝術文化中心 | [模型與說明](weiwuying/README.md) · [STL](weiwuying/model.stl) | [前視](weiwuying/preview.png) | [後視](weiwuying/rear.png) |
 | 龍虎塔 | [模型與說明](dragon-tiger-pagodas/README.md) · [二進位 STL](dragon-tiger-pagodas/compact/model-binary.stl) | [最新正面預覽](dragon-tiger-pagodas/front.webp) | [最新側背預覽](dragon-tiger-pagodas/side-rear-roofs.webp) |
 | 鵝鑾鼻燈塔 | [模型與說明](eluanbi-lighthouse/README.md) · [STL](eluanbi-lighthouse/model.stl) | [新版正面斜視](eluanbi-lighthouse/front-current.webp) | [新版背面斜視](eluanbi-lighthouse/rear-current.webp) |

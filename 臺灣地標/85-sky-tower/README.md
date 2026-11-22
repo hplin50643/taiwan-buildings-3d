@@ -4,7 +4,9 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| ![正前斜視](previews/front.webp)<br>正前斜視 | ![後斜視](previews/rear.webp)<br>後斜視 | ![正立面](previews/elevation.webp)<br>正立面 |
+
+三張預覽使用同一 STL 網格；場景配色只供展示，STL 不含顏色。
 
 ## 模型內容
 - 成品尺寸：68 × 46.5 × 150 mm，含底座。
@@ -22,7 +24,7 @@
 - model.stl：唯一列印實體，單位 mm。
 - build_model.py：參數化原始碼，可重新產生 STL。
 - scene.blend：由同一 STL 匯入的 Blender 場景，包含相機、燈光及非列印地板。編輯建模參數後應先重建 STL，再執行預覽腳本。
-- previews/front.png、rear.png、elevation.png：實際 STL 的前斜視、後斜視與正向視角。沒有照片貼圖，也沒有添加只在預覽中存在的建築細節。
+- previews/front.webp、rear.webp、elevation.webp：由現行 Blender 場景以原角度重新渲染的三張無字 WebP。沒有貼圖或另加建築細節。見[渲染驗證](render-proof.json)及[當前校驗表](SHA256SUMS)。
 - render_preview.py：Blender 預覽腳本；使用無雜訊的工作室顯示。場景材質只是預覽色，STL 本身不含材質。
 - validate_model.py、validation.json：數位檢查程式及結果。
 - rebuild_check.json：重建前後 STL SHA-256 一致性結果。
@@ -34,3 +36,5 @@
 已檢查：單一連通邊界面、封閉網格、面向一致、每條邊恰有兩面、頂點鄰域為單一環、無退化三角面、正體積、平底接觸、尺寸與可重建雜湊。單一連通封閉邊界面沒有獨立的內部空腔殼。以上不是完整幾何自相交證明，也不等同切片測試或實體試印；未聲稱已試印成功。
 
 本包是重新建立幾何的外觀微縮模型，非官方模型、測繪模型或結構模型。每座均以獨立成品大小設計，彼此不是共同比例，不能從模型反推真實尺寸。參考照片不隨包分發；若需商業散布或使用，請自行確認建築、雕塑、商標及其他適用權利。
+
+[舊 PNG 及原說明固定版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/85-sky-tower/README.md)只供比對，非現行展示。
