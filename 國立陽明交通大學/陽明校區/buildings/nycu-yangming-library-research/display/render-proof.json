@@ -1,0 +1,231 @@
+{
+  "baseline": "183b198ca9f3c4fa92bbe85e3675b7192ccecc72",
+  "native_scene_rerender_semantics_sha256": "1cea7e6f25208ad9f5cfef01b570f31881e7e77c9f66f1e0928e2a54bd2608df",
+  "engineering_manifest": {
+    "path": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/SHA256SUMS",
+    "sha256": "6664ee6673bc8f3ae1e204028a88e731b826c76c0e69d08ea74c2afe0f2d7cf3"
+  },
+  "fresh_render_manifest": {
+    "blender": "4.3.2",
+    "samples": 48,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "files": [
+      {
+        "path": "previews/front.png",
+        "bytes": 1682571,
+        "sha256": "32392949cb5d1fec5465745c3e40c8a1d0f6a644e6240b3be70a9b324e84d421",
+        "camera": [
+          -180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          56
+        ],
+        "ortho_scale": 225,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/rear.png",
+        "bytes": 1756888,
+        "sha256": "04f57d25176d485b07906dcc61cf0b89a9d2c83eae9eb8ca928a6241895600ec",
+        "camera": [
+          180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          56
+        ],
+        "ortho_scale": 225,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/elevation.png",
+        "bytes": 1673155,
+        "sha256": "ee9d04d7b0fb58b093f6aa8e6b42e908c54fd16212e931829c219157e68f692d",
+        "camera": [
+          0,
+          -290,
+          56
+        ],
+        "target": [
+          0,
+          0,
+          56
+        ],
+        "ortho_scale": 185,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/top.png",
+        "bytes": 1825733,
+        "sha256": "8952a1ebffb61ae44ebf69e46858979d595f26a8f55919616e64517a19321e2c",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    ]
+  },
+  "historical_render_manifest_sha256": "d86763221cb522811c271bcdea7df4237a6bf2e6a6190c301e8b7911eea81b73",
+  "known_preexisting_legacy_manifest_hashes": {
+    "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/SHA256SUMS.txt": "396eed5d699e5ee0c2ef8960c59591c898fdce9f6e72dfcc82231db8df886094"
+  },
+  "authored_renderer_inputs": {
+    "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/nycuyangming-appearance.3mf": "0cade9970b2fcb75a2edcec3b8ef914258653a4083f289272cc17a4a5c4d95e6",
+    "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/palette.json": "6a6769fbecf265d2aee4b7b5311ced8e0ede21046871d3c741a747fd408a7773",
+    "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/source/render_appearance.py": "cf7850336d276e14e5855db0be30ac76913a1c76399291bafe017fca30cb4241"
+  },
+  "renderer": "Blender 4.3.2 CPU, 48 samples; all four freshly authored-pipeline PNGs byte-identical to current source previews; full-WebP decoded RGBA exact. Thumbnails are same-angle 640×640 lossy derivatives.",
+  "native": {
+    "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/model.stl": {
+      "sha256": "48e5ffb54c9b12085a444aa9ea7ff4f2e7b32d5e620d22f0ada7ad1fb0dab5e7",
+      "blob_sha": "276963bd5d39af77df01ed4a723e1387f194e523"
+    },
+    "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/nycuyangming-appearance.3mf": {
+      "sha256": "0cade9970b2fcb75a2edcec3b8ef914258653a4083f289272cc17a4a5c4d95e6",
+      "blob_sha": "1e5b8b51da9b8a6eaf9efab2c3d3e25fb8dfebf9"
+    },
+    "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/scene.blend": {
+      "sha256": "044f89ce1b306194f3fd14992c9cac2679593b8386b29f6f5f8ccaca019ec523",
+      "blob_sha": "e8c29beeabab3878ed9c113e4c1d1460bf0c5b42"
+    }
+  },
+  "native_model_mesh": {
+    "vertex_count": 5890,
+    "triangles": 11988,
+    "material_face_counts": {
+      "0": 6499,
+      "1": 900,
+      "2": 4265,
+      "3": 260,
+      "4": 64
+    }
+  },
+  "images": [
+    {
+      "source": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/previews/front.png",
+      "source_sha256": "32392949cb5d1fec5465745c3e40c8a1d0f6a644e6240b3be70a9b324e84d421",
+      "source_bytes": 1682571,
+      "renderer_png_sha256": "32392949cb5d1fec5465745c3e40c8a1d0f6a644e6240b3be70a9b324e84d421",
+      "display": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/display/front.webp",
+      "display_sha256": "208dbced6be8a051f5401a7285a3488eaa5426c47e657c0791433e4e2cbea7cd",
+      "display_bytes": 467452,
+      "thumb": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/display/front-640.webp",
+      "thumb_sha256": "92f1d19447a69fd3e3b33631a62f619677003433a3522ea405c9e4b47e4a4b2e",
+      "rgba_sha256": "ad871600efbaeb1097a0bebf7da2299ae20f24b35fca3f46c8ab9053d393b67e",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225
+    },
+    {
+      "source": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/previews/rear.png",
+      "source_sha256": "04f57d25176d485b07906dcc61cf0b89a9d2c83eae9eb8ca928a6241895600ec",
+      "source_bytes": 1756888,
+      "renderer_png_sha256": "04f57d25176d485b07906dcc61cf0b89a9d2c83eae9eb8ca928a6241895600ec",
+      "display": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/display/rear.webp",
+      "display_sha256": "91f0b42cf011ff3153db480fe7f8fffe36c9845ad4ee0cb20ca66beb6488090d",
+      "display_bytes": 521292,
+      "thumb": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/display/rear-640.webp",
+      "thumb_sha256": "114c0ba59a9c05f8989af0109783a086cc1c9290582fb94f080003f2bb3314bf",
+      "rgba_sha256": "7836f13fa3b6cc0c2798b5881fc54230e49f435bd51e8996e03df1e60146151c",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225
+    },
+    {
+      "source": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/previews/elevation.png",
+      "source_sha256": "ee9d04d7b0fb58b093f6aa8e6b42e908c54fd16212e931829c219157e68f692d",
+      "source_bytes": 1673155,
+      "renderer_png_sha256": "ee9d04d7b0fb58b093f6aa8e6b42e908c54fd16212e931829c219157e68f692d",
+      "display": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/display/elevation.webp",
+      "display_sha256": "35a2c9293d25f8221a2b8f3eb73008e9068d19c147c35ee13986c8ba2523910f",
+      "display_bytes": 416478,
+      "thumb": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/display/elevation-640.webp",
+      "thumb_sha256": "a23df4ba73e949753c8685b185aaa48df1be27a2e81eaf820903333161486095",
+      "rgba_sha256": "f2f9b5a23ffe0bd91b22e5efc61dfdfe72cbee39eca363498f7abcecd7a0987e",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        -290,
+        56
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 185
+    },
+    {
+      "source": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/appearance/previews/top.png",
+      "source_sha256": "8952a1ebffb61ae44ebf69e46858979d595f26a8f55919616e64517a19321e2c",
+      "source_bytes": 1825733,
+      "renderer_png_sha256": "8952a1ebffb61ae44ebf69e46858979d595f26a8f55919616e64517a19321e2c",
+      "display": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/display/top.webp",
+      "display_sha256": "dcb619fd5af4c76c1ff26f0933e6750d56f9f6780f7bb7954ac1ca545ca41d03",
+      "display_bytes": 717470,
+      "thumb": "國立陽明交通大學/陽明校區/buildings/nycu-yangming-library-research/display/top-640.webp",
+      "thumb_sha256": "3a8cfdd1a854aff427c78b0c7208d385c2dcd9e169db439f40bf30f4143dcb67",
+      "rgba_sha256": "dcb6c979bebc79580dfaa100d04b93a2e7d4130198575e52994e53fa53210104",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180
+    }
+  ]
+}
