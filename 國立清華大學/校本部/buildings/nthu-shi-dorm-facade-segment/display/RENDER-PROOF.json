@@ -1,0 +1,232 @@
+{
+  "display_only": true,
+  "asset_scope": "bounded five-bay segment of two visible dormitory levels, not the complete building",
+  "source_commit": "5932a56468de3af5b5368cc5c14f5751bba268b5",
+  "proof_verified_against_repository_parent": "cd15d6603ed4ab6c10db85eb8cee0dcd52a5fc1c",
+  "source_release_native_objects": {
+    "scene.blend": {
+      "bytes": 1878228,
+      "git_blob": "7222d763011721b8e93ff2fe5de610e3d3f048b7",
+      "sha256": "85a3d8dec3b486071c94f0be15f34d926a38626c0db50a86027c1ff8d5a9178e"
+    },
+    "model.stl": {
+      "bytes": 187884,
+      "git_blob": "23609a9c6448629b01a726b3970c7659999f9815",
+      "sha256": "7ed8732792f9539fa8b9dc9d7509d3b11f6a99ffa07191a980052df2ef9843e8"
+    },
+    "model.3mf": {
+      "bytes": 35417,
+      "git_blob": "7f644593ee8a34035d691c726953fbb582c1cab4",
+      "sha256": "94c6eb4d73d2ac2f14b626ee95a1b4b49d0779296857ce63f7b870aabc4f929a"
+    },
+    "mesh-data.npz": {
+      "bytes": 22429,
+      "git_blob": "440d30f7330fb5b2bc1026429f3c8d401882a649",
+      "sha256": "e1f61ec03a9924c807f3aa59a3acedb5e7b032240242ee22b481f427f7100d21"
+    }
+  },
+  "original_pngs_and_render_receipts_retained_in_place": true,
+  "views": [
+    {
+      "name": "front",
+      "camera": [
+        130,
+        -260,
+        105
+      ],
+      "target": [
+        0,
+        0,
+        20
+      ],
+      "ortho_scale": 150,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "cb7c889d8c0ce1b0b5f31f62675df28cad717c0e41d46c107c8c48b508f1d248",
+      "rgb_sha256": "fbfdad39405ce3e9d1d0eb568d2ee392c173a22c8004ade11b28df683d363cad",
+      "png_sha256": "49ffab152ded2142fb7b33a43086b2669442f2cdd64d8747163964117ed2a610",
+      "png_bytes": 1297898,
+      "display_path": "front.webp",
+      "original_png": "../previews/front.png",
+      "original_render_receipt": "../previews/front.render.json",
+      "original_png_git_blob": "8914aa43bffc49825718ba5192618a8ccc996a08",
+      "original_receipt_git_blob": "9f2b25f05deed4c415242659437dde0f0846f82b",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "front_elevation",
+      "camera": [
+        0,
+        -300,
+        22
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 145,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "8a80fcf8e0bb9dcfe30d3c33992d96f58cd493eb6053e0e5cfb5772ee6ed63f0",
+      "rgb_sha256": "24319e868466f1bca8ad0e9be1a5b036de064176d960ed2ef461bdc564fff0ef",
+      "png_sha256": "d951d5f407b03c4ea5cf25e9001ece366377b8d4547d0c693ff7cc17f98a24f6",
+      "png_bytes": 1249308,
+      "display_path": "front-elevation.webp",
+      "original_png": "../previews/front_elevation.png",
+      "original_render_receipt": "../previews/front_elevation.render.json",
+      "original_png_git_blob": "fce221d98ad49e50dbe7f608eba30f5ec1d411f4",
+      "original_receipt_git_blob": "a02aaba8c120df1187005011b3cd4860c84cd75c",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "rear",
+      "camera": [
+        -130,
+        260,
+        105
+      ],
+      "target": [
+        0,
+        0,
+        20
+      ],
+      "ortho_scale": 150,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "a21e26d70cd5b35afd850ed9ba23db807836aef818267e1e5d63af90111ede85",
+      "rgb_sha256": "9153e1d3cd34c849ea1476848eeac049220931354883414b63a4f0110e0db26a",
+      "png_sha256": "5005ed7eb0687a8a857589efeec6a335c467eadb816eae6c889b3afd9d711fd8",
+      "png_bytes": 1102897,
+      "display_path": "rear.webp",
+      "original_png": "../previews/rear.png",
+      "original_render_receipt": "../previews/rear.render.json",
+      "original_png_git_blob": "4be6ec307d620dc92bf52a28689004530a8a2d39",
+      "original_receipt_git_blob": "7210f35036259e612d665975e5a60705b61aeee3",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "left_end",
+      "camera": [
+        -260,
+        -40,
+        80
+      ],
+      "target": [
+        0,
+        0,
+        20
+      ],
+      "ortho_scale": 120,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "b26678ecee1f9e5564dcf6e79deeaf10c245826fc3ce45ed8eaa7ba8201a3029",
+      "rgb_sha256": "17e7367c724425942edecf8b0ca9d02df5842f2ae599cbe991bfb83f0666f536",
+      "png_sha256": "79e0fad39f67ea5eb28217c3ec48370e0657597d302942678ce41a79c0c003bc",
+      "png_bytes": 1164835,
+      "display_path": "left-end.webp",
+      "original_png": "../previews/left_end.png",
+      "original_render_receipt": "../previews/left_end.render.json",
+      "original_png_git_blob": "69f6225b1f00ea2864ebcf2afadf51366fdd375e",
+      "original_receipt_git_blob": "9a4fcca2fcc27e10aa0343f7b3ac4704af5e0257",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "top",
+      "camera": [
+        0,
+        0,
+        300
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 145,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "ad9def4ac7ee72baaf4c2d821c985a97d540c53e6432ff360184fe02bb6081ee",
+      "rgb_sha256": "38cd7c06e48deb8b112dd4023e83aedda7cbfa2fda8af7fa373f8a4b8fe58276",
+      "png_sha256": "7c1951eaa2041669b5334eb508365d5b6501903f6819b06b15f2d68692500654",
+      "png_bytes": 1058771,
+      "display_path": "top.webp",
+      "original_png": "../previews/top.png",
+      "original_render_receipt": "../previews/top.render.json",
+      "original_png_git_blob": "6a8edf1e8ee1eff050c9de5ef36b100e006efb0f",
+      "original_receipt_git_blob": "4d8103e879e4aedabbc956a2153e650856c41096",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    },
+    {
+      "name": "entry_detail",
+      "camera": [
+        25,
+        -250,
+        55
+      ],
+      "target": [
+        13,
+        -2,
+        22
+      ],
+      "ortho_scale": 65,
+      "resolution": [
+        1200,
+        900
+      ],
+      "webp_sha256": "7edbb1d6e891ac19be30a3251e8206762454362b521689e54f7cda06e0a182d7",
+      "rgb_sha256": "831e7bbe58246f630ecc0ac9045a335d0964534840d818a33c5ad914f042d177",
+      "png_sha256": "3b190109456641074fc56e096fe5d8cb250897110095cd9d364337513d30ba3e",
+      "png_bytes": 1728934,
+      "display_path": "entry-detail.webp",
+      "original_png": "../previews/entry_detail.png",
+      "original_render_receipt": "../previews/entry_detail.render.json",
+      "original_png_git_blob": "ddf3e0bda2d1911c4e1157c75558e0e06e5279ba",
+      "original_receipt_git_blob": "5969e5b9ee48c9b91a869a220ca144fb14feaf5e",
+      "offline_png_bytes_equal": false,
+      "all_three_decoded_rgb_exact": true
+    }
+  ],
+  "card_thumbnail": {
+    "path": "front-640.webp",
+    "resolution": [
+      640,
+      480
+    ],
+    "sha256": "4377f9587b8f43f4ba2f41884bab65f2865bb2a2cb8566821f25198856d32c77",
+    "derived_from": "front.webp",
+    "exact_reproduction_of_checked_thumbnail": true,
+    "lossless": false,
+    "camera": {
+      "name": "front",
+      "camera": [
+        130,
+        -260,
+        105
+      ],
+      "target": [
+        0,
+        0,
+        20
+      ],
+      "ortho_scale": 150,
+      "elevation_degrees": 16.299389056364767,
+      "yaw_from_front_degrees": 26.56505117707799
+    }
+  }
+}
