@@ -1,0 +1,221 @@
+{
+  "baseline": "abf2f74b55ea4ca1a2d7cda47a40ce2211136acd",
+  "engineering_manifest": {
+    "path": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/PUBLIC-MODEL-SHA256SUMS",
+    "sha256": "f772dbbe3f7252e4677b67d52f2f7419a562b8e891fea7a22c282f6a8cb0fd33"
+  },
+  "fresh_render_manifest": {
+    "blender": "4.3.2",
+    "samples": 48,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "files": [
+      {
+        "path": "previews/front.png",
+        "bytes": 1651714,
+        "sha256": "f2126f203fac1d60ef96c268e2fe5cad5819d641c38f57bfe587570129fd25d9",
+        "camera": [
+          180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          28
+        ],
+        "ortho_scale": 230,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/rear.png",
+        "bytes": 1557982,
+        "sha256": "cf6485a03be767bcd2a7c4b24c5158d14e0a2bf82d19cae461efe7bba979526a",
+        "camera": [
+          -180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          28
+        ],
+        "ortho_scale": 230,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/elevation.png",
+        "bytes": 1582193,
+        "sha256": "ddf2ffaa9e269559a483b0381a91f10a0ff1d2db570db82adac21a01dcf6e580",
+        "camera": [
+          0,
+          -290,
+          31
+        ],
+        "target": [
+          0,
+          0,
+          29
+        ],
+        "ortho_scale": 190,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/top.png",
+        "bytes": 1742957,
+        "sha256": "4dbde5571b5fd87b5e5c2d5eddaae509c72d476da62d035fab20567fcd173936",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    ]
+  },
+  "historical_render_manifest_sha256": "cbbce24db76c7264f72ce3e384df2a30e72aaebddd8615817b0c3efbd9fd7465",
+  "known_preexisting_legacy_manifest_hashes": {
+    "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/SHA256SUMS": "11ef03d4bd834b10ea50c99a7c77a9d679fb617416c6ba9d215c5272f4215e93",
+    "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/SHA256SUMS": "3da459185046cbedf5e21068e3b04d8e9d337fdf8bf7ea39e2e8977c8f2dfce1"
+  },
+  "authored_renderer_inputs": {
+    "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/nuud12-appearance.3mf": "42ba051e2996df5f7b82cdd23375967d45e083afaa944cec470a80f0bbc1a848",
+    "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/palette.json": "c5bf08290d73bb21f89c689b8c94f535b98a47ded957a6e37e80bfb308303525",
+    "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/source/render_appearance.py": "a954ec4f7fb96c3e271eeaa87888d350c63a20ab460309cc9c20851860d45755",
+    "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/source/render_current.py": "8498d8313c5b6bff07a09f675461cd7620e30d19a2eecf1951c2de898919be60"
+  },
+  "renderer": "Blender 4.3.2 CPU, 48 samples; all four freshly authored-pipeline PNGs byte-identical to current source previews; full-WebP decoded RGBA exact. Thumbnails are same-angle 640×640 lossy derivatives.",
+  "native": {
+    "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/model.stl": {
+      "sha256": "679692bfe930e64f98569bc2142ee51bd1d24f3493fdfb47027438753bb98c17",
+      "blob_sha": "bb4300f07d418f4cdf62852ffd866be647a89c65"
+    },
+    "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/nuud12-appearance.3mf": {
+      "sha256": "42ba051e2996df5f7b82cdd23375967d45e083afaa944cec470a80f0bbc1a848",
+      "blob_sha": "2c6634988faabceb08cb832e3dda9c58839d429c"
+    },
+    "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/scene.blend": {
+      "sha256": "c9e668b9ad4d155190af05b4890a1206fefc4b575fbcf95cb8c08fd9c9903736",
+      "blob_sha": "aef202b6a619b54b63b2674f2f1b59186ab1e1b2"
+    }
+  },
+  "images": [
+    {
+      "source": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/previews/front.png",
+      "source_sha256": "f2126f203fac1d60ef96c268e2fe5cad5819d641c38f57bfe587570129fd25d9",
+      "source_bytes": 1651714,
+      "renderer_png_sha256": "f2126f203fac1d60ef96c268e2fe5cad5819d641c38f57bfe587570129fd25d9",
+      "display": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/display/front.webp",
+      "display_sha256": "9cb95dee9416b84704592da17d9c9dab662419d007a9a62f53feab939d1e2714",
+      "display_bytes": 401290,
+      "thumb": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/display/front-640.webp",
+      "thumb_sha256": "c85134bcddf317fd31e765d98404588e78dcaf453900bf585d0695f861233fab",
+      "rgba_sha256": "f69702c4d65809c97c112772bbdde55ae3819ed8d2e3bc147a2dbabb21d3a473",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        28
+      ],
+      "ortho_scale": 230
+    },
+    {
+      "source": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/previews/rear.png",
+      "source_sha256": "cf6485a03be767bcd2a7c4b24c5158d14e0a2bf82d19cae461efe7bba979526a",
+      "source_bytes": 1557982,
+      "renderer_png_sha256": "cf6485a03be767bcd2a7c4b24c5158d14e0a2bf82d19cae461efe7bba979526a",
+      "display": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/display/rear.webp",
+      "display_sha256": "e119245ed4ab02423e0d87a454c4913aeea974aa157c2307e8ee6420229a0a41",
+      "display_bytes": 337170,
+      "thumb": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/display/rear-640.webp",
+      "thumb_sha256": "4c39c97bad01f002eaccaf139720ad61f614f0a55d624e7476c7505235ab80a1",
+      "rgba_sha256": "1d4d06fbc010318f661a7b8950b2f1bf1433ac5924707bd7c8c4fe5505aa914a",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        28
+      ],
+      "ortho_scale": 230
+    },
+    {
+      "source": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/previews/elevation.png",
+      "source_sha256": "ddf2ffaa9e269559a483b0381a91f10a0ff1d2db570db82adac21a01dcf6e580",
+      "source_bytes": 1582193,
+      "renderer_png_sha256": "ddf2ffaa9e269559a483b0381a91f10a0ff1d2db570db82adac21a01dcf6e580",
+      "display": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/display/elevation.webp",
+      "display_sha256": "40ce1ea176074c75708b2364a6581a7d3632e553a617e96eb4845eae53119cee",
+      "display_bytes": 318888,
+      "thumb": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/display/elevation-640.webp",
+      "thumb_sha256": "17dca1ddadc009944b5e43f582356686f712bf24a0f9db9be2546d667bde7a75",
+      "rgba_sha256": "8a4d3e68ca999b1e361fadeae60564eb76d5e1a5346d637b4a32197499446f9c",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        -290,
+        31
+      ],
+      "target": [
+        0,
+        0,
+        29
+      ],
+      "ortho_scale": 190
+    },
+    {
+      "source": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/appearance/previews/top.png",
+      "source_sha256": "4dbde5571b5fd87b5e5c2d5eddaae509c72d476da62d035fab20567fcd173936",
+      "source_bytes": 1742957,
+      "renderer_png_sha256": "4dbde5571b5fd87b5e5c2d5eddaae509c72d476da62d035fab20567fcd173936",
+      "display": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/display/top.webp",
+      "display_sha256": "4dafb50845f52ae7cba2eca78bd3789a6fa26af41477db0f77e2b335ed73b744",
+      "display_bytes": 725240,
+      "thumb": "國立聯合大學/buildings/bajia-d1-d2-hakka-complex/display/top-640.webp",
+      "thumb_sha256": "117c1c44c5c62448a441008a8c164babf39c24401060e7f5bfb82e1ebce9cc51",
+      "rgba_sha256": "c85c600e9013aa228218aaf514c56cae497c3e7fa6d9b0ea9871b40ad689838a",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180
+    }
+  ]
+}
