@@ -2,9 +2,10 @@
 
 ## 模型預覽
 
-| 前側 | 後側 | 正立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![前側](previews/front.png) | ![後側](previews/rear.png) | ![正立面](previews/elevation.png) |
+| ![前側](previews/front.png)<br>前側 | ![後側](previews/rear.png)<br>後側 | ![正立面](previews/elevation.png)<br>正立面 |
+| ![俯視](previews/top.png)<br>俯視 | ![斜視](previews/left_oblique.png)<br>另一側斜視 |  |
 
 [第三教學區](../../README.md) · [學校模型](../../../README.md) · [全部模型](../../../../README.md)
 
@@ -50,6 +51,4 @@ python rebuild.py --output /new/empty/output --blender blender
 ## 實際模型預覽
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) | 另一側斜視<br>![斜視](previews/left_oblique.png) |  |
+五張實際模型圖集中於上方的「模型預覽」。
