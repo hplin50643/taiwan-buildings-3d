@@ -1,0 +1,147 @@
+{
+  "base": "62e4ad666ee428f5eb49d2f92a001438856b201e",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/erping-m4-jizhai-dorm/appearance/scene.blend",
+      "sha256": "7f5841c6352eac50d1c780489094febad8f704337bc10b41ce6f42c9fb195f62",
+      "git_blob": "20dd8e492166f75b6e66890b982006062715fb53"
+    },
+    "appearance/nuum4-appearance.3mf": {
+      "path": "國立聯合大學/buildings/erping-m4-jizhai-dorm/appearance/nuum4-appearance.3mf",
+      "sha256": "6c5990b037399db83ff755eb0aa958f125f44beb52d123ae1ffa1c7494108704",
+      "git_blob": "55275203cc92c1438813f601cf407dd7d6ad91be"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/erping-m4-jizhai-dorm/model.stl",
+      "sha256": "2b60f8dd64ccb3e82ae213b5747ed141ee07fa43534bb2b7bcc664a775e2c1ef",
+      "git_blob": "6bf71fd68e09c8229e098f7a2bc9bbf54fa8bd34"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/erping-m4-jizhai-dorm/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "d3601e9d0513acf247c1e9dfcad8d038abcfafc2bf3ffc1f18856201d6e26a13",
+  "selection": "國立聯合大學/buildings/erping-m4-jizhai-dorm/appearance/face-materials.json",
+  "selection_sha256": "d7993d567aed496463ad28f5bfff291871f01c191f64d839dbf15f0a3c19031b",
+  "source_limits": "Existing aerial-confirmed PV upper faces only; coarse coverage is approximate, unknown outer side/rear/remaining roof neutral.",
+  "triangles": 9940,
+  "vertices": 4936,
+  "materials": {
+    "0": 908,
+    "1": 1434,
+    "3": 546,
+    "5": 6653,
+    "6": 10,
+    "2": 127,
+    "4": 262
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 16,
+    "appearance/SHA256SUMS": 21
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1662595,
+      "sha256": "bff2e4926e3e34a495aaf76ca5b6654614e70fcfaa0bdda4dfe9a26f15612850",
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-m4-jizhai-dorm/appearance/previews/front.png",
+      "source_git_blob": "2dd1f35e4134e4919e697245f7b4c040632f5fac",
+      "rgba_sha256": "754c39963dbc254a097db30e5baeb9bdc69f33211b87ebca0d26e53ddd20143a",
+      "webp": "front.webp",
+      "webp_sha256": "edce1985e2ba6774ad6cbe70857ff2ad001bfab1e8d5d15ce72967befb5ea409",
+      "webp_bytes": 379898,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "4450030eae3123c263419681d9d432cbcfbeb660b48cd7e686934336ec1fbf88",
+      "thumbnail_bytes": 20084
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1592319,
+      "sha256": "456e4294284d542b4e992ffc2fd1549aa8d82c64a045c58f332a0b4f90af27dc",
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-m4-jizhai-dorm/appearance/previews/rear.png",
+      "source_git_blob": "cf97f8a0839165d45557aeaaf0fe4bfd15439a03",
+      "rgba_sha256": "e2542f5118c69e93ad1ec6e5dc0e7b23be75ca74462ad48672d0f5d00fb1d5e7",
+      "webp": "rear.webp",
+      "webp_sha256": "cc1ed1426ae4ac18a62d4e0122a046bcfaacab1f8ae8e4b770c7e08e0f7468f0",
+      "webp_bytes": 344706,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "36da7435350b68f5e16e8d32ac4ac8e22fc5b3d2d0131e137c0e95e53a27cbe0",
+      "thumbnail_bytes": 11462
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1496223,
+      "sha256": "381ca4165ff3e72379549ce51af8105eef8512f2b942c3beaf7b9d8a53a1d79c",
+      "camera": [
+        0,
+        -290,
+        38
+      ],
+      "target": [
+        0,
+        0,
+        38
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-m4-jizhai-dorm/appearance/previews/elevation.png",
+      "source_git_blob": "7abd6c4e8057d3604d2fd28be84bff37d55530be",
+      "rgba_sha256": "5fbe48fde1c6373dc38bf94fa7f1bc84f021571733e29e67757038d056b5bf15",
+      "webp": "elevation.webp",
+      "webp_sha256": "62953f441408c91d84ef74224d23dff414b158726c1db2c93972c1172ee12a29",
+      "webp_bytes": 195940,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "9b83186945a286c483dd3fef3d7b18f4b14bdce6633b7699df27e4b216706c07",
+      "thumbnail_bytes": 4356
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1691573,
+      "sha256": "96f1cc66e5df3e15c6e7e905b8f66e992c3bfe84182dc3f776d41a11146a4426",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/erping-m4-jizhai-dorm/appearance/previews/top.png",
+      "source_git_blob": "022f456697e8efb77230195cadd99f2baed55e97",
+      "rgba_sha256": "bbe4fc3fb0fadf6b7333a5ce2d01dd7ac8fdcf996ddaef286873566b20219255",
+      "webp": "top.webp",
+      "webp_sha256": "ad4102e96c887998c2e52eef297ec536341706d522c293efb45cfe53d007fab3",
+      "webp_bytes": 499950,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "ddc02047f8820188f37733e3d6a4e2efaa99918ccc4c144a7c86c0abe6429f78",
+      "thumbnail_bytes": 10312
+    }
+  ]
+}
