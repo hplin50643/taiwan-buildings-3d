@@ -1,0 +1,338 @@
+{
+  "blender": "4.3.2",
+  "resolution": [
+    1200,
+    900
+  ],
+  "renderer": "Cycles CPU, 48 samples, seed 0; rendering reopened exact current whole scene; no scene save",
+  "native_blend_sha256": "6aa59bc072229a169befd1799a67e5737524661ed6f81990a33f43c62365f3f1",
+  "original_stl_sha256": "3eabe204535bf0ec3be8a9693218cbfe6a298372299f74c00de9f426b86603af",
+  "exchange_3mf_sha256": "20ff6faa526f2f465bae236dbd8bfad0e04bc79cdf16420f1c476a96b5b26c13",
+  "native_binary_stl_oriented_triangle_coordinate_multisets_exact": true,
+  "triangles": 19150,
+  "vertices": 9501,
+  "native_exchange_triangle_and_material_order_exact": true,
+  "native_exchange_max_decimal_error_mm": 4.999996860988176e-09,
+  "cold_stl_exact": true,
+  "cold_3mf_members_exact": true,
+  "prior_package_commit": "1fa7d0e4c55ca0ffcd7854dead95572ca8e3a2e8",
+  "views": {
+    "preview": {
+      "camera": {
+        "location": [
+          220,
+          -330,
+          240
+        ],
+        "target": [
+          0,
+          0,
+          24
+        ],
+        "scale": 239.34527587890625,
+        "coordinates": [
+          0.17496052384376526,
+          0.8250398635864258,
+          0.15202604234218597,
+          0.7588584423065186
+        ],
+        "rotation": [
+          1.0720973014831543,
+          -2.3932342330112988e-08,
+          0.5880027413368225
+        ]
+      },
+      "old_png_sha256": "8893e9621908ae9e51164f833e7d9c75a6c3c3fe643b5749925cc7980debabae",
+      "webp": "front-oblique.webp",
+      "webp_sha256": "1c1b1bdefef6633f2af20153a41a3a5cf16803812d275a64b1a1baec7e6ea99f",
+      "rgba_sha256": "c6e5da710d93db7090a037feb97d3547a75b6c7e9b7580e3ff2710807d6da220",
+      "prior_render_pixels_exact": true
+    },
+    "rear": {
+      "camera": {
+        "location": [
+          -220,
+          330,
+          240
+        ],
+        "target": [
+          0,
+          0,
+          24
+        ],
+        "scale": 239.34527587890625,
+        "coordinates": [
+          0.17496037483215332,
+          0.8250396847724915,
+          0.15202675759792328,
+          0.7573814392089844
+        ],
+        "rotation": [
+          1.0720969438552856,
+          3.781499557931056e-08,
+          -2.5535900592803955
+        ]
+      },
+      "old_png_sha256": "09556cd91f6ce57a0320cff0c58f28ea6fbd6716f953491c00c8d92f8c0e71f3",
+      "webp": "rear-oblique.webp",
+      "webp_sha256": "df804d5cbb26a1ac5d66e49d2306f02157e603ebe964ee3d4953537b09f73d53",
+      "rgba_sha256": "4d0405237853b7364f6f8a1913ead192551ec5c486430eb5a784597b54518c2a",
+      "prior_render_pixels_exact": true
+    },
+    "front": {
+      "camera": {
+        "location": [
+          0,
+          -550,
+          25
+        ],
+        "target": [
+          0,
+          0,
+          24
+        ],
+        "scale": 190.0,
+        "coordinates": [
+          0.27105262875556946,
+          0.7289473414421082,
+          0.3306221663951874,
+          0.7102393507957458
+        ],
+        "rotation": [
+          1.568978190422058,
+          -0.0,
+          0.0
+        ]
+      },
+      "old_png_sha256": "db9a51282c4c91ee46162c4b2fa295a289015405f48dd620dfbbf80839947b0a",
+      "webp": "front.webp",
+      "webp_sha256": "69f0a070e39b64ac0370ddbaecfaa8b1d71eeb088c9904e2a262ceaeb835c751",
+      "rgba_sha256": "af1ec21485bb8112b4ac74061c306e4a3e09e0ee705c353da0eada3660b4a57c",
+      "prior_render_pixels_exact": true
+    },
+    "back": {
+      "camera": {
+        "location": [
+          0,
+          550,
+          25
+        ],
+        "target": [
+          0,
+          0,
+          24
+        ],
+        "scale": 190.0,
+        "coordinates": [
+          0.27105286717414856,
+          0.7289476990699768,
+          0.33062252402305603,
+          0.7102015614509583
+        ],
+        "rotation": [
+          1.5689780712127686,
+          8.742264157035606e-08,
+          3.1415927410125732
+        ]
+      },
+      "old_png_sha256": "be6761ce364056fad4407b3a37a3961079d5f6c6126c0f1d6ce0e69cb9ca8bb4",
+      "webp": "back.webp",
+      "webp_sha256": "b64d3299bc544d7e5ac29624d25312b07df3a2165d368f2e70a7167448ab7e93",
+      "rgba_sha256": "5581c67d07b309d2a77fc4c697d819bac444f2b720c924b2b9b416bae5dc9399",
+      "prior_render_pixels_exact": true
+    },
+    "west": {
+      "camera": {
+        "location": [
+          -550,
+          0,
+          25
+        ],
+        "target": [
+          0,
+          0,
+          24
+        ],
+        "scale": 190.0,
+        "coordinates": [
+          0.10526303946971893,
+          0.8947367072105408,
+          0.33102402091026306,
+          0.7100850939750671
+        ],
+        "rotation": [
+          1.568978190422058,
+          8.937983864143462e-08,
+          -1.5707963705062866
+        ]
+      },
+      "old_png_sha256": "10ab7b27354b0192d986f7cdd6ab2e55b26e0c52109b9d237afe9de078b8c0fc",
+      "webp": "west.webp",
+      "webp_sha256": "0072b67ce79512a77f832100e480766641c0f4fdb509da35b24dbbc3dbfb32a5",
+      "rgba_sha256": "0080a1586b3ba49ce56fe56e3f378a8c21c196bd451a057edc53e7ca030b1d70",
+      "prior_render_pixels_exact": true
+    },
+    "east": {
+      "camera": {
+        "location": [
+          550,
+          0,
+          25
+        ],
+        "target": [
+          0,
+          0,
+          24
+        ],
+        "scale": 190.0,
+        "coordinates": [
+          0.10526327788829803,
+          0.8947369456291199,
+          0.33102402091026306,
+          0.7100850939750671
+        ],
+        "rotation": [
+          1.568978190422058,
+          -8.937983864143462e-08,
+          1.5707963705062866
+        ]
+      },
+      "old_png_sha256": "b4fb2c0d71d1b714a065d567df9ee4818533729c2550cd5d3554dd796bb2ae4c",
+      "webp": "east.webp",
+      "webp_sha256": "11554b9a1c1f785e2b6f685cc22f634dfb2800d39978afe4f6d3147039314ba0",
+      "rgba_sha256": "06041cd604cdf71bcf5008ce35fda718b835b54d9ba1f26a8eb4afa816d7909a",
+      "prior_render_pixels_exact": true
+    },
+    "top": {
+      "camera": {
+        "location": [
+          0,
+          0,
+          550
+        ],
+        "target": [
+          0,
+          0,
+          24
+        ],
+        "scale": 279.1723327636719,
+        "coordinates": [
+          0.34418225288391113,
+          0.6558177471160889,
+          0.14179830253124237,
+          0.8582016825675964
+        ],
+        "rotation": [
+          0.0,
+          -0.0,
+          0.0
+        ]
+      },
+      "old_png_sha256": "ee940b09ba91f06b1c816aaf841476cb813fbad68bb041d577d23ffe88a1c60e",
+      "webp": "top.webp",
+      "webp_sha256": "172a250b31558faeb5e48bbd034ff0e75a225aeb7858ec12feb03fbeeb774635",
+      "rgba_sha256": "c18ada02f75e6190c8a775d38684fd5e39077ee15081df08a5ec63cef2784258",
+      "prior_render_pixels_exact": true
+    },
+    "entry-detail": {
+      "camera": {
+        "location": [
+          85,
+          -170,
+          95
+        ],
+        "target": [
+          0,
+          -43,
+          24
+        ],
+        "scale": 90.0,
+        "coordinates": [
+          -0.09943355619907379,
+          1.6309229135513306,
+          -0.13948257267475128,
+          1.3732032775878906
+        ],
+        "rotation": [
+          1.135869026184082,
+          2.2959131484867612e-08,
+          0.5898175835609436
+        ]
+      },
+      "old_png_sha256": "46efefae430620e777ee72b9e4f308d30ff7899f21e20c25fb0e179fd1f2b2cb",
+      "webp": "entry-detail.webp",
+      "webp_sha256": "d18fea32e2f06d734e574c5f040888195bb0988e190ebe181897ab4151affe59",
+      "rgba_sha256": "66dd6f38c73e298925131f42024341a466bebbd72ff2eb033492f557e1d1a010",
+      "prior_render_pixels_exact": true
+    },
+    "corridor-detail": {
+      "camera": {
+        "location": [
+          65,
+          -140,
+          72
+        ],
+        "target": [
+          0,
+          -45,
+          33
+        ],
+        "scale": 65.0,
+        "coordinates": [
+          -0.3129444420337677,
+          2.0948145389556885,
+          -0.4657883942127228,
+          1.3981082439422607
+        ],
+        "rotation": [
+          1.2441245317459106,
+          7.445094496461024e-08,
+          0.600050151348114
+        ]
+      },
+      "old_png_sha256": "22e9177bcef5c8733397058188773b2f5beb567aaa8b4e9f9beec9c5fec44424",
+      "webp": "corridor-detail.webp",
+      "webp_sha256": "9936f8995589abc4d82d1ac630f984b195a5c1e9b17e365134ea83baa9fee40d",
+      "rgba_sha256": "8177157be01722c1967e6da28f6191183dab09aed64f9eeaaa25b3066027cd9e",
+      "prior_render_pixels_exact": true
+    },
+    "roof-detail": {
+      "camera": {
+        "location": [
+          90,
+          -100,
+          95
+        ],
+        "target": [
+          0,
+          -29,
+          43
+        ],
+        "scale": 80.0,
+        "coordinates": [
+          -0.2882136404514313,
+          1.8574156761169434,
+          -0.5839548707008362,
+          1.0308300256729126
+        ],
+        "rotation": [
+          1.1449389457702637,
+          -3.408296422868773e-10,
+          0.9028673768043518
+        ]
+      },
+      "old_png_sha256": "db985ae9f5bb3680f950d9dd2a7e1789e0a271f777d33ecbac3cca259b2da61b",
+      "webp": "roof-detail.webp",
+      "webp_sha256": "3b46a7a10e40e5259c8e968f251d102231e173ff041d4980c898e96ad153ebdc",
+      "rgba_sha256": "647f9943e61a9a44871d15e46df3a405b7ab5594ba263846bd57f2fc3309e0b6",
+      "prior_render_pixels_exact": true
+    }
+  },
+  "representative": {
+    "path": "docs/display/catalog/bc43463ac46c87d3c856650b-640.webp",
+    "sha256": "f694998b91057e0142eb433f2889f9a56d2769241082e78aea39925974b2cd70",
+    "bytes": 12724,
+    "prior_bytes_exact": true,
+    "derivation": "front-oblique.webp lossless decode to 640 by 480 Lanczos to WebP q92 method 6 exact"
+  }
+}

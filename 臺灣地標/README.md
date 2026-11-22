@@ -57,7 +57,7 @@
 | 臺中國家歌劇院 | [模型與說明](taichung-theater/README.md) · [STL](taichung-theater/model.stl) | [前視](taichung-theater/preview.png) | [後視](taichung-theater/rear.png) |
 | 中台禪寺 | [模型與說明](chung-tai-monastery/README.md) · [STL](chung-tai-monastery/model.stl) | [新版正面斜視](chung-tai-monastery/front-current.webp) | [新版背面斜視](chung-tai-monastery/rear-current.webp) |
 | 國立故宮博物院南部院區 | [模型與說明](palace-south/README.md) · [STL](palace-south/model.stl) | [前視](palace-south/preview.png) | [後視](palace-south/rear.png) |
-| 赤崁樓 | [模型與說明](chihkan-tower/README.md) · [STL](chihkan-tower/model.stl) | [前視](chihkan-tower/preview.png) | [後視](chihkan-tower/rear.png) |
+| 赤崁樓 | [模型與說明](chihkan-tower/README.md) · [STL](chihkan-tower/model.stl) | [正面斜視](chihkan-tower/front-oblique.webp) | [背面斜視](chihkan-tower/rear-oblique.webp) |
 | 安平古堡 | [模型與說明](anping-old-fort/README.md) · [STL](anping-old-fort/model.stl) · [3MF](anping-old-fort/model.3mf) · [Blend](anping-old-fort/scene.blend) | [前視](anping-old-fort/previews/front.png) | [後視](anping-old-fort/previews/rear.png) |
 | 奇美博物館 | [模型與說明](chimei-museum/README.md) · [STL](chimei-museum/model.stl) | [新版正面斜視](chimei-museum/front-current.webp) | [新版背面斜視](chimei-museum/rear-current.webp) |
 | 高雄85大樓 | [模型與說明](85-sky-tower/README.md) · [STL](85-sky-tower/model.stl) | [前視](85-sky-tower/previews/front.png) | [後視](85-sky-tower/previews/rear.png) |
