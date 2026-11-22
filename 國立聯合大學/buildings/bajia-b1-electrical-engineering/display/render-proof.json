@@ -1,0 +1,145 @@
+{
+  "base": "6f305e2967d5670c894ae535fa590a3df5c40679",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立聯合大學/buildings/bajia-b1-electrical-engineering/appearance/scene.blend",
+      "sha256": "dcfc0152355becc34bb04fcd4f11d43b8ce2074fb64aceade23442c79010a1e7",
+      "git_blob": "f5fc1b8051ab5110ad1e21c245e37d62c3301408"
+    },
+    "appearance/nuub1-appearance.3mf": {
+      "path": "國立聯合大學/buildings/bajia-b1-electrical-engineering/appearance/nuub1-appearance.3mf",
+      "sha256": "7bc9ced0dc1c44ffc62b005e93f11d4cbaa95ba563be6a1368df1cf3d96495e0",
+      "git_blob": "8c972a9c50912cbae307f76baafc2aa18bb509bf"
+    },
+    "model.stl": {
+      "path": "國立聯合大學/buildings/bajia-b1-electrical-engineering/model.stl",
+      "sha256": "589c9726bdcb16a4223526bb177169a861018c898572503b97ccda10086699af",
+      "git_blob": "b2ce7b6239acc0a884bc7793d5a1fd0232ca4267"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立聯合大學/buildings/bajia-b1-electrical-engineering/appearance/qa/render-manifest.json",
+  "render_manifest_sha256": "089aa7c03ccbc07eba787aae23dee96caf8a839dd4eb2166e9dc8be7574a660a",
+  "triangles": 9726,
+  "vertices": 4789,
+  "materials": {
+    "7": 72,
+    "1": 327,
+    "3": 1729,
+    "4": 817,
+    "0": 2613,
+    "2": 24,
+    "6": 3661,
+    "5": 483
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 12,
+    "appearance/SHA256SUMS": 21
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1753798,
+      "sha256": "742e611f284cd22d9b10e46ecd671ce01906f7f22a39bcd86bae41f23703a3cb",
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 240,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b1-electrical-engineering/appearance/previews/front.png",
+      "source_git_blob": "8d5bcc159fdb5dc5ad67480359761d124779bdac",
+      "rgba_sha256": "7ffd5c312b9dc08ea895817e8d417547fbbd755c968f379f98324030b8e65685",
+      "webp": "front.webp",
+      "webp_sha256": "0addc2bb86f0b4c82eadc6d6fe2651b3888c7f24c53ea1832dbaac83e025fd34",
+      "webp_bytes": 523300,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "72db623c8bfe57a9dcced8ef23bc1dd4810f368bfd12f5edccd15e2ba590587f",
+      "thumbnail_bytes": 20802
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1657662,
+      "sha256": "7ca9eef0839cd84cda8ac0a5928c675df25b239bb408886d71c2a556e02ef3ba",
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 240,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b1-electrical-engineering/appearance/previews/rear.png",
+      "source_git_blob": "323030a1032be8d742217b187de5115f770d782f",
+      "rgba_sha256": "ba9b0edf028210827702d74f5f5d25ec1caa153113097efbaff99d42d5bd53dd",
+      "webp": "rear.webp",
+      "webp_sha256": "b09816c0f005b8112e0347b2b9f8ac01e016c6d1c00a077f7a6639e35b26a909",
+      "webp_bytes": 471016,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "10b5eddd85e301e584e944ee14872bfcd7a7d4394daea775b0d33d469e3e8188",
+      "thumbnail_bytes": 15102
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1663126,
+      "sha256": "8eb7d00140b540d925999f80fcc7141fe4fcc78160a5e518db0d645fe65ae8a5",
+      "camera": [
+        0,
+        -290,
+        31
+      ],
+      "target": [
+        0,
+        0,
+        45
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b1-electrical-engineering/appearance/previews/elevation.png",
+      "source_git_blob": "aeefd47979cea391ac57de39458cec4b06879a98",
+      "rgba_sha256": "8010a1fbd013f4a14b5b4911c19c85f497383359a6a128c90892c4998b1b229a",
+      "webp": "elevation.webp",
+      "webp_sha256": "6bf156d2383b68b331a690a25b5db1595bb051a7ca68f219a6461e449ff20899",
+      "webp_bytes": 450154,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "8c225d0649757306ff35f7e2b13f5914931f0276c958ec4c3805e3dfcf7c57d8",
+      "thumbnail_bytes": 9030
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1885911,
+      "sha256": "5e145f6612ffeea26dda076c95ceab22c7abcf2ff2a1f07a2f90a80b07f896b2",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立聯合大學/buildings/bajia-b1-electrical-engineering/appearance/previews/top.png",
+      "source_git_blob": "b1dbc3c2b86fc4050a4ecd32359e7683eb37933a",
+      "rgba_sha256": "e8dcb5ee7267bc40c33680f7e3b0c31188b94dd1a744e704a554f1d46e6c6ba7",
+      "webp": "top.webp",
+      "webp_sha256": "ec18c78c2b538c9de90acf5703ee4ff1a469eeafeedb86668d8ac9b10e673834",
+      "webp_bytes": 786198,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "5412cafd2ffdaf66f42bf9b89e19daeba6cd0a406dee54183e7458a1c4f0c08c",
+      "thumbnail_bytes": 16442
+    }
+  ]
+}
