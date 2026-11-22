@@ -1,0 +1,145 @@
+{
+  "base": "9002939d9f7944641eadadda3a1007413d0dfd20",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立清華大學/校本部/buildings/nthu-hong-liang-art-museum/appearance/scene.blend",
+      "sha256": "ee8d9287c5462648b2b762d3c8a069086a30a550c29f251dfcaf932191a768d0",
+      "git_blob": "e2a8932760e38df54dc55d20be905aaeda984ff5"
+    },
+    "appearance/nthuhong-appearance.3mf": {
+      "path": "國立清華大學/校本部/buildings/nthu-hong-liang-art-museum/appearance/nthuhong-appearance.3mf",
+      "sha256": "45c35289b8f75c13a5a1d4a0f2641d9e2be6f434518b45cd8d0cf9b84b9e8e02",
+      "git_blob": "e9e6817c56f29c1afc4a1c5f961957bb4d9ee3e7"
+    },
+    "model.stl": {
+      "path": "國立清華大學/校本部/buildings/nthu-hong-liang-art-museum/model.stl",
+      "sha256": "461a0db5eeb3a0f423f8b21c40c80a4b48be20f17acdf378e91a2eb6f50111d2",
+      "git_blob": "ab7039add79d3f822cc766fbf1148c328e0c83e4"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立清華大學/校本部/buildings/nthu-hong-liang-art-museum/appearance/qa-continuous-walls/render-manifest.json",
+  "render_manifest_sha256": "d7404c59f87f024482ba3b8e8affc7e01aac7221b066b65d61e384f669de99bf",
+  "triangles": 1278,
+  "vertices": 639,
+  "materials": {
+    "0": 416,
+    "1": 446,
+    "2": 74,
+    "3": 50,
+    "4": 251,
+    "5": 41
+  },
+  "retained_side_rear_inferred_faces": 118,
+  "historical_checksum_counts": {
+    "hash-manifest.json": 15,
+    "appearance/SHA256SUMS": 31,
+    "PUBLIC-MODEL-SHA256SUMS": 29
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1573173,
+      "sha256": "7e346fda46e06740422a2ecf0aa19cc4ce11a80de7bec3db65a52bc9c386c2ad",
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-hong-liang-art-museum/appearance/previews/front.png",
+      "source_git_blob": "c5ad3456ff30cff11b17a96098fc9aa82d3a5502",
+      "rgba_sha256": "319f37f2480759c2654317b629a7751adadda6b0fc94ce6211be9111ae335495",
+      "webp": "front.webp",
+      "webp_sha256": "ab7a7f16b5f3313fe62d3f33594bab3cd902b54d31ef14198d8731e02a35564e",
+      "webp_bytes": 323134,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "2cc39d3b67c19a7eec604658ab5470e57c7bac6098c589777479fadbf2524819",
+      "thumbnail_bytes": 7098
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1553234,
+      "sha256": "979f4764505bcb247bc0737677cd1ff3aca502801a1c3d3c39fe1966573fb04e",
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-hong-liang-art-museum/appearance/previews/rear.png",
+      "source_git_blob": "4bac72d88d90f0cf252834affbdd00c824cfebc8",
+      "rgba_sha256": "7e01a2b96599e3fa6629bf1636fd6bd10097c4bc88e8c634d748ea25aa018723",
+      "webp": "rear.webp",
+      "webp_sha256": "7f3228909c4e3849caa63de7cac528e4647760641d2c39884aa1538928e57566",
+      "webp_bytes": 318054,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "cd155d66daed48444071f679f86563ea4c20713367dd21bb3355b7f655375842",
+      "thumbnail_bytes": 5558
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1527211,
+      "sha256": "cd3a46e84af6ace19b9e1c53ce6bf5b9420b0c3df63c562cda1afa071c4cfdc1",
+      "camera": [
+        0,
+        -290,
+        22
+      ],
+      "target": [
+        0,
+        0,
+        22
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-hong-liang-art-museum/appearance/previews/elevation.png",
+      "source_git_blob": "d4e64c82bea221a85fe2ac707da1ed97e5eb25f0",
+      "rgba_sha256": "7e11748ca1aec89e6561797cde797cbdc83b26c595f96283c0cbe2e2b4c74e81",
+      "webp": "elevation.webp",
+      "webp_sha256": "64ef9d8a64a5a63ca9d784be5355fc86c193de966f99884067359d989c9901d6",
+      "webp_bytes": 266082,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "529e68b632f07f56a8f4f32ef36eee50a052ef45f7d59d5cfc4a4e3f8f6efd06",
+      "thumbnail_bytes": 4666
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1627213,
+      "sha256": "1eee6f3d2ba8b29bdf54ae6708bf7b48ec91e19cb7314cbf2e65a7a35d6d6bc9",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-hong-liang-art-museum/appearance/previews/top.png",
+      "source_git_blob": "c7ff2961185765ff07b7aab69c45ef2a79d270ff",
+      "rgba_sha256": "e6d3e06d50dcf99dea97c4fca29fa8f6368b8e8b78181c32dedc477396f7c5f6",
+      "webp": "top.webp",
+      "webp_sha256": "cd1b881c930de42acfe44ad196041169abce9ef4ecc693f961f0b3a6c723d6fe",
+      "webp_bytes": 565406,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "d4f160ce12295e5f0c113f645f55f6932d3434de9ffce3c41d1fa472382c0fbe",
+      "thumbnail_bytes": 4246
+    }
+  ]
+}
