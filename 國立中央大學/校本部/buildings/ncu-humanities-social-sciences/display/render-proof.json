@@ -1,0 +1,122 @@
+{
+  "provenance_commit": "6a9b3eea446d4ffa36226089792ea0ec290011ee",
+  "revision": "color-v2-material-continuity",
+  "freeze_rows": 24,
+  "active_ledger_rows": 54,
+  "blender": "4.3.2",
+  "replayed_exact_3mf_members_and_assignments": true,
+  "native": {
+    "appearance.blend": "7c20e0e94e1ab040dd877b2f4e34c67e3a951a9c186be882640ddf245f97bca8",
+    "appearance.3mf": "7ee33ff0c303fb8257ea8889292c969525154eda32520d72a507c75a42e332a4",
+    "appearance-materials.json": "6540b86dd6dd4d2823500828e0dc6bc99971693347b381079cc1884af86df242",
+    "appearance-freeze.json": "f15d8d255d7083218bd0ab40572ef2abd6e568be48f09c5f8ec2aa5954822bad",
+    "build_appearance.py": "a69b5c019e1f9bcf9580be00f2c2cc59ac08f7309a732ad77310e64299674aa0",
+    "model.stl": "39c715317387bc69411f4eaa8aaf4e58f473d460179ce14e6453414de56e97e9",
+    "scene.blend": "b7efd8aa94212ecdfc72d0640a46bb760f7e2c12d13d75426c90a8dd6da895c6"
+  },
+  "rows": [
+    {
+      "source": "appearance/front.png",
+      "source_sha256": "b362bd3b0650a64fe3ce4f3c48bef0cef8362b126676fecdf88efbf0b8ef699b",
+      "replay_sha256": "b362bd3b0650a64fe3ce4f3c48bef0cef8362b126676fecdf88efbf0b8ef699b",
+      "rgba_sha256": "db62f118e5345a9c3bb306a0f56f20d4f74d4023e2252284f271ad29f511d796",
+      "size": [
+        900,
+        800
+      ],
+      "native_bytes": 854145,
+      "webp": "front.webp",
+      "webp_bytes": 239768,
+      "webp_sha256": "62ac471896bf96a875dce781ecea55c29b1dddc665fefab386cf3961d6306977"
+    },
+    {
+      "source": "appearance/source-angle.png",
+      "source_sha256": "3f12b5ec85e8c29dea8096792c744c867652fa1dd6e8f198402df57a6dd871b7",
+      "replay_sha256": "3f12b5ec85e8c29dea8096792c744c867652fa1dd6e8f198402df57a6dd871b7",
+      "rgba_sha256": "9a9cb5ac462c865802fb3877c97b025afeccbed9bdb4b4dc7c6a02eb177f357c",
+      "size": [
+        900,
+        800
+      ],
+      "native_bytes": 865465,
+      "webp": "source-angle.webp",
+      "webp_bytes": 224474,
+      "webp_sha256": "b36aaf7db55c074dfb6295077a7d4a88d0a3ef67b636ae535ee229abec5c1c82"
+    },
+    {
+      "source": "appearance/elevation.png",
+      "source_sha256": "24a4568fc42a7cd6f50f33ce359a3bf601bc7721dfcdfe1133dbbaef1cd43ad8",
+      "replay_sha256": "24a4568fc42a7cd6f50f33ce359a3bf601bc7721dfcdfe1133dbbaef1cd43ad8",
+      "rgba_sha256": "f4258e4a082ffef0db18298a3a03d31cf9265ae5ac9f4f09ced1a653e1c10da2",
+      "size": [
+        900,
+        800
+      ],
+      "native_bytes": 861467,
+      "webp": "elevation.webp",
+      "webp_bytes": 244208,
+      "webp_sha256": "3df51db96c6361e5e1eea1dd0d83165b32a9d1e8a91d3f649a457e6aa8cfb536"
+    },
+    {
+      "source": "appearance/rear.png",
+      "source_sha256": "7e19c51264784b0fa3dc4fa867d52ba9020c949c94bbf6ad34eb74657697fe6a",
+      "replay_sha256": "7e19c51264784b0fa3dc4fa867d52ba9020c949c94bbf6ad34eb74657697fe6a",
+      "rgba_sha256": "9de00fe8792a7cd53b22c26a2b03eb77c7cd222ec14bba92cc6a4be8610d6977",
+      "size": [
+        900,
+        800
+      ],
+      "native_bytes": 849867,
+      "webp": "rear.webp",
+      "webp_bytes": 239476,
+      "webp_sha256": "60ee7961a56cce99df3be42587d5fc3bb060988fc7e033821b8d7e2fec17039c"
+    },
+    {
+      "source": "appearance/left.png",
+      "source_sha256": "beae8a61fada41e0db24d13ab3fd94baa6a33a29d71e17ed7f95599759d52f50",
+      "replay_sha256": "beae8a61fada41e0db24d13ab3fd94baa6a33a29d71e17ed7f95599759d52f50",
+      "rgba_sha256": "24a22a6feab2d8484a97ae55cc6904dbf6e66969d222a08e6904285565de003b",
+      "size": [
+        900,
+        800
+      ],
+      "native_bytes": 822953,
+      "webp": "left.webp",
+      "webp_bytes": 281724,
+      "webp_sha256": "93f6e9707b16471ab9f38c2314b6d4a45efe42fa2c6e3860d99d1133009473c2"
+    },
+    {
+      "source": "appearance/right.png",
+      "source_sha256": "aaef75d322aec04c567274c1d9173f817c31f93c6d525b561e43d277eb41cf4f",
+      "replay_sha256": "aaef75d322aec04c567274c1d9173f817c31f93c6d525b561e43d277eb41cf4f",
+      "rgba_sha256": "228f050505a0c7d43e8aacb0b2c019e2f0bd95468fbbaf5e6b449c3a881c3dc2",
+      "size": [
+        900,
+        800
+      ],
+      "native_bytes": 972219,
+      "webp": "right.webp",
+      "webp_bytes": 416776,
+      "webp_sha256": "a643a03c806e3891cac9ebd35e08173bfc6df412ea22aef55a9bf601afea7357"
+    },
+    {
+      "source": "appearance/top.png",
+      "source_sha256": "9eb6bf632bfe5527de06fba151edd43471970757575ea7246e34ed0dc6782fa0",
+      "replay_sha256": "9eb6bf632bfe5527de06fba151edd43471970757575ea7246e34ed0dc6782fa0",
+      "rgba_sha256": "33604e368b0d382367a2a6d9765066848862754eb92d0c50c48bd104a13ce615",
+      "size": [
+        900,
+        800
+      ],
+      "native_bytes": 964172,
+      "webp": "top.webp",
+      "webp_bytes": 438558,
+      "webp_sha256": "8fa08f27f6659425cc944a2c7907066969fdbe80998eff3ea6c488b31e081e91"
+    }
+  ],
+  "card": {
+    "old_bytes": 854145,
+    "new_bytes": 9926,
+    "sha256": "4bd4afcf7748df05a8c03cbbfa2065dd63c7d0299b2a9bc7b6179e940adb75c3"
+  }
+}
