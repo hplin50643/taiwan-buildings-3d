@@ -1,0 +1,352 @@
+{
+  "base": "32466cbaa96e66083c080c20aa1265d4a8f8af37",
+  "native": {
+    "scene.blend": {
+      "path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/scene.blend",
+      "sha256": "9b8c3d8f11e293f2ba8361ef291963511127bad028fce76d1cfb23bd21619adf",
+      "git_blob": "7d895c4ce0b357fa39358d47359972e60a147f45"
+    },
+    "appearance.3mf": {
+      "path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/appearance.3mf",
+      "sha256": "9cbf4a9e7a693e1500fff1b2702b09ee89044e80df42d60be84f9152f44ce773",
+      "git_blob": "4e7e96116fd970e74fdc2c98664715d418444cc5"
+    },
+    "model.stl": {
+      "path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/model.stl",
+      "sha256": "0f56c56c8d50798f67ea5fe1ac746030b14b979e62a0b4c0e094040c8b5d00de",
+      "git_blob": "216ed4f43fce93c2a1a9a2800b77e29391681af4"
+    },
+    "color-mesh.npz": {
+      "path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/color-mesh.npz",
+      "sha256": "6708f1684b0dfece41a11343c8aee70b531608fb2d25eeae343eedc69f7e2dde",
+      "git_blob": "15027285282a9aa186910b377324e818c4d242e2"
+    },
+    "palette.json": {
+      "path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/palette.json",
+      "sha256": "e196b94ce82b6ceccf7dca08077815fb2ec797fdbd7d18d2fed443c0bfd8fd6d",
+      "git_blob": "8f4e9d8561383577ebf667ee165a53a83c808528"
+    }
+  },
+  "checked_note": "Exact saved Blender scene and ten public original cameras, text objects/backing/stamp disabled, no external font or texture; lossless WebP pixels exact",
+  "triangles": 3576,
+  "vertices": 1708,
+  "materials": {
+    "1": 3494,
+    "0": 82
+  },
+  "historical_checksum_counts": {
+    "SHA256SUMS": 46,
+    "FREEZE-MANIFEST.json": 46,
+    "NO-TEXT-QA.json": 10
+  },
+  "freeze_preexisting_mismatches": {
+    "DELIVERY-QA.json": {
+      "recorded": "126987b26931460fd63e8cd76396dceaf19be796ebad18df65f64af84c2b9abb",
+      "actual": "50a5e15e18a5173ab52b816a5b2ee6b3aec7dae7156106e0c709cf9211a8e1c9"
+    },
+    "SHA256SUMS": {
+      "recorded": "86051425aa3fd0926f35b56a834fb613a453c173bb774a09a4ad9ce09ae59e7a",
+      "actual": "4c797dbb2961e2c3cf92adcecb71bf9d8257d487a02ae1f7e3116719709b01e8"
+    },
+    "back.png": {
+      "recorded": "632aedce6e7e5b4e033138c731bb73035326959e1aa4649666abdb0b6dae8bbc",
+      "actual": "a230bab36287b1922f3a5c715becbec8526c9b951f8513485933f2a1862632a7"
+    },
+    "east.png": {
+      "recorded": "462513e2729d33763fa381c9a2fd9448209eb1c49e5699a6f0976ec073b1232a",
+      "actual": "fd33fec35bbcf1ef2a710782e3cba4042b27a4fe18a24286b4caf0683c1239e4"
+    },
+    "entry-detail.png": {
+      "recorded": "4607cc4eaf2adda20b030ab81c2a2167f8ff2549a98b6aac2e3de999ecedc738",
+      "actual": "ad9fe1c589af8bbfa81b0c5e84d28e044e3283cf95675df0968b82382deffb29"
+    },
+    "facade-detail.png": {
+      "recorded": "4d1c9c17cc5270f0ab15b50fd7657a883f2c4891b577e44fcab889057e5bbf41",
+      "actual": "1afb20c3ea741c216c01897b20553b05460b959169287c9e7f589162bee9aaac"
+    },
+    "front.png": {
+      "recorded": "54fdcb20ad19d19ef8474a46fa83ff65e3de9052755635c7213523a970984c6a",
+      "actual": "7976607193b871e5fff06963e7704b29eacd04733df3863feebb02bcdd85f49b"
+    },
+    "preview.png": {
+      "recorded": "34188e702bd9696ab4b3081ea79797360ee0f5c291a6c60528a97d6beefee137",
+      "actual": "d0a04c4f270dc94d5ae131103346837c22b7df72b31b2d27a83f91ac52f89f03"
+    },
+    "rear.png": {
+      "recorded": "3854ed62cbee2914be0d0d85956396e4a229b8df93dc1ed3e465038b5bee3cb2",
+      "actual": "6bcefd13cffe189662ca44b0c1516125acf3cbb44bdd153f27d3f316d719fb73"
+    },
+    "render_color.py": {
+      "recorded": "b0fd6fc9f3cc12a121fd6aa5e1333bdc1e13fc8b2396ed0d0f5f9f744ea97e30",
+      "actual": "8e40cca4d475bbd5f9a2b9fb089d9d3a1a81708fa695d2df8b75a4c9bc8aea05"
+    },
+    "roof-detail.png": {
+      "recorded": "393daf42bdc7ed5e4668ff247ba7f34888fa04381a868b3e87b2011647c994d2",
+      "actual": "d0f88afda687f8b520dedfa35271674cddf14fa72770ddcaf29063150fcf01a4"
+    },
+    "scene.blend": {
+      "recorded": "ade80644780e03826440ae28e003b5950379ae07b068e11a34b584a6350b12db",
+      "actual": "9b8c3d8f11e293f2ba8361ef291963511127bad028fce76d1cfb23bd21619adf"
+    },
+    "top.png": {
+      "recorded": "7ed8d2005212ab90fa7598ca3a7816d58ed7b56f5e6d5d10b926525b103dc191",
+      "actual": "ab6c6b7aed3ded6a1c5ecc465a4bd1a228e076e426f87c0ca1b36566ad4db876"
+    },
+    "west.png": {
+      "recorded": "3ae78bf6d5cd17ee95a1c1a809489d5ee71d97df3176c5daf77cb66184752149",
+      "actual": "d58be0686e9db4cce0229c8d18cf2f0de9dce269f23a79201d364039043b749e"
+    }
+  },
+  "views": [
+    {
+      "camera": [
+        -220.0,
+        -330.0,
+        230.0
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 239.34527587890625,
+      "full": true,
+      "bytes": 868537,
+      "sha256": "d0a04c4f270dc94d5ae131103346837c22b7df72b31b2d27a83f91ac52f89f03",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/preview.png",
+      "source_git_blob": "a2bf11c3546aa4bed7c5786cebfe9b784c2b2032",
+      "rgba_sha256": "72e5c81b24c6a6f5c69ae64076cb0b7409d8455ebc5d970d41a412f3c2ebdac3",
+      "webp": "preview.webp",
+      "webp_sha256": "91293620081f43a4e1b4cad19c4e750275f5dbe51d018242c361d0a70121f4b1",
+      "webp_bytes": 340578,
+      "thumbnail": "preview-640.webp",
+      "thumbnail_sha256": "dfa37e1cc373db1d7ad2d942d5d07b59474bc038f73d0302f90fe211b38f672c",
+      "thumbnail_bytes": 9510
+    },
+    {
+      "camera": [
+        220.0,
+        330.0,
+        230.0
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 239.34527587890625,
+      "full": true,
+      "bytes": 874069,
+      "sha256": "6bcefd13cffe189662ca44b0c1516125acf3cbb44bdd153f27d3f316d719fb73",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/rear.png",
+      "source_git_blob": "ad1f73382a56ce3ae10bd6af97972ae3116490f9",
+      "rgba_sha256": "81c86c437953fa6c9b644aa84b81554a98dd7d3b4cf2f9caa13fe5c756d27080",
+      "webp": "rear.webp",
+      "webp_sha256": "2b871988167b1320505579a8690c1eea0e4129be53681afd30164a81e8f18405",
+      "webp_bytes": 331966,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "70128eb53f753da50e594710628cac9bcf76f9c47ab2bae36109d912cc3452f8",
+      "thumbnail_bytes": 9120
+    },
+    {
+      "camera": [
+        0.0,
+        -550.0,
+        75.0
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 190.0,
+      "full": true,
+      "bytes": 926811,
+      "sha256": "7976607193b871e5fff06963e7704b29eacd04733df3863feebb02bcdd85f49b",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/front.png",
+      "source_git_blob": "f85c8e7b356e1e629fa59454d62befbac8fba58c",
+      "rgba_sha256": "cdb2894976c219b93bc8307bee40e5caf7244a6161c7c98b0c1a9d6ddc721bad",
+      "webp": "front.webp",
+      "webp_sha256": "09ca1d97a1a511a76130d4a887a86f8f7f0f053d13e29d8223036fd2156b416d",
+      "webp_bytes": 393798,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "676b25d9bb6b80208b2eb3119f8888494428e2f0bf460df6b3ef43f2095ebcd2",
+      "thumbnail_bytes": 8112
+    },
+    {
+      "camera": [
+        0.0,
+        550.0,
+        75.0
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 190.0,
+      "full": true,
+      "bytes": 922459,
+      "sha256": "a230bab36287b1922f3a5c715becbec8526c9b951f8513485933f2a1862632a7",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/back.png",
+      "source_git_blob": "774a999424df422ceb18a5361a02dc91e4888c7c",
+      "rgba_sha256": "bf14e5275ced41e8a93bada5c1abf7bea1c27929886cc1a5e8ec43f3213fc4bd",
+      "webp": "back.webp",
+      "webp_sha256": "d7b44e225e752e610d6d5f25a1bf5bbe6b5bde65d90322ba0fc5ffb702e22674",
+      "webp_bytes": 370288,
+      "thumbnail": "back-640.webp",
+      "thumbnail_sha256": "f83171432acce18ba56aab844de5f8b57abfceca7c70626fe588ef639e43970b",
+      "thumbnail_bytes": 6910
+    },
+    {
+      "camera": [
+        -550.0,
+        0.0,
+        75.0
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 190.0,
+      "full": true,
+      "bytes": 726918,
+      "sha256": "d58be0686e9db4cce0229c8d18cf2f0de9dce269f23a79201d364039043b749e",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/west.png",
+      "source_git_blob": "c1e514f5a4826a0136ab6ff62a8dcefca6ffcf7d",
+      "rgba_sha256": "95bedb13f5d6948918832a574b333f3ca4f8ac9391289253ac67ee7dd44b21ef",
+      "webp": "west.webp",
+      "webp_sha256": "3051e45c8a690ad7a6474e5a2660c6d212ac069401d2fc34e5365c6d8e95eef6",
+      "webp_bytes": 230284,
+      "thumbnail": "west-640.webp",
+      "thumbnail_sha256": "a16b7646005cb34c685ec3f6708bdf59e6c31b55000ee4ac69b44b285e8d029a",
+      "thumbnail_bytes": 2972
+    },
+    {
+      "camera": [
+        550.0,
+        0.0,
+        75.0
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 190.0,
+      "full": true,
+      "bytes": 729908,
+      "sha256": "fd33fec35bbcf1ef2a710782e3cba4042b27a4fe18a24286b4caf0683c1239e4",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/east.png",
+      "source_git_blob": "b18f8b0c96b4770759f2404b4153dd9f2e3de765",
+      "rgba_sha256": "0fcc7670ca827c4f0d6943fcecca5e4252b510d92f34049854d01a6bb9f34c72",
+      "webp": "east.webp",
+      "webp_sha256": "108752549ab83798a3e016694ef50ee748784df2bcadbb292ae64bb11a7fadf5",
+      "webp_bytes": 234314,
+      "thumbnail": "east-640.webp",
+      "thumbnail_sha256": "2336dcf506f59841168a96834dd4503160dd8823f5c43bed3b5267a8a7eb4aee",
+      "thumbnail_bytes": 3964
+    },
+    {
+      "camera": [
+        0.0,
+        0.0,
+        550.0
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 190.0,
+      "full": true,
+      "bytes": 955176,
+      "sha256": "ab6c6b7aed3ded6a1c5ecc465a4bd1a228e076e426f87c0ca1b36566ad4db876",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/top.png",
+      "source_git_blob": "b11ca2744dbdaaf8b51cf0df6365bd653c00e60d",
+      "rgba_sha256": "7670aeae08416fde90f2ce084c598985016c59fd17f45307c93c99247d1cc67b",
+      "webp": "top.webp",
+      "webp_sha256": "d8a4eb7853c09a25a190b285c1305493578a7cdf96a73071e43f3a7b87f86990",
+      "webp_bytes": 364016,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "b52f2f12e03ae81bd428d26c48953bc1c705de07e677e22ec43879e1769bced7",
+      "thumbnail_bytes": 2970
+    },
+    {
+      "camera": [
+        -220.0,
+        -100.0,
+        110.0
+      ],
+      "target": [
+        -65,
+        -5,
+        35
+      ],
+      "ortho_scale": 90.0,
+      "full": false,
+      "bytes": 1433981,
+      "sha256": "ad9fe1c589af8bbfa81b0c5e84d28e044e3283cf95675df0968b82382deffb29",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/entry-detail.png",
+      "source_git_blob": "4dcf8ca16532480f9356ba4f1a945024dc6c899d",
+      "rgba_sha256": "ece33bf1f916efdf491e4d7e397d972d0b1879ae2091aa83086e3d264fd776ac",
+      "webp": "entry-detail.webp",
+      "webp_sha256": "871a2f2541623309fc7d3bff29d664767327e1181ccf425b9e7f68e9149abdf4",
+      "webp_bytes": 727598,
+      "thumbnail": "entry-detail-640.webp",
+      "thumbnail_sha256": "de55544ab08768b57bf750624730c498c82a3db8a37f41a2c41fd53c94756773",
+      "thumbnail_bytes": 14314
+    },
+    {
+      "camera": [
+        -140.0,
+        -210.0,
+        130.0
+      ],
+      "target": [
+        0,
+        -24,
+        55
+      ],
+      "ortho_scale": 135.0,
+      "full": false,
+      "bytes": 1250761,
+      "sha256": "1afb20c3ea741c216c01897b20553b05460b959169287c9e7f589162bee9aaac",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/facade-detail.png",
+      "source_git_blob": "959682bce42a2c350ae2bf8090d7b2535e09fe3c",
+      "rgba_sha256": "5674de16c06e5330d5f171ae1347dc82d06b4386238eef80a1f4187882bdfe0b",
+      "webp": "facade-detail.webp",
+      "webp_sha256": "7954bab89db5dc71d690adad186699bb4a0b1bd4a889ebac5756822effc507df",
+      "webp_bytes": 615978,
+      "thumbnail": "facade-detail-640.webp",
+      "thumbnail_sha256": "2fff21af144599b7d42ae5c00c8d200144d9fa6b33560d580ecb3c8e78067f66",
+      "thumbnail_bytes": 14242
+    },
+    {
+      "camera": [
+        100.0,
+        -150.0,
+        180.0
+      ],
+      "target": [
+        -30,
+        0,
+        65
+      ],
+      "ortho_scale": 130.0,
+      "full": false,
+      "bytes": 1071709,
+      "sha256": "d0f88afda687f8b520dedfa35271674cddf14fa72770ddcaf29063150fcf01a4",
+      "source_path": "國立臺灣大學/竹北校區/buildings/ntu-bizhen-hall/roof-detail.png",
+      "source_git_blob": "b4cf38b9be4c205d1a8989c106d9f4cee52474d0",
+      "rgba_sha256": "be12f4bae434a90ca7a3a73b5691a9748285d085b4e87427b3affc55d9c14bb3",
+      "webp": "roof-detail.webp",
+      "webp_sha256": "e08173e97d709f9ad2ff3943eb10c1ba073b6ba02c37cb7fdc8b5ea795359b9d",
+      "webp_bytes": 456138,
+      "thumbnail": "roof-detail-640.webp",
+      "thumbnail_sha256": "0a76a7d7a383a929d0bd6a961c47dfbf496cb274555a7894dcf62c33097197c3",
+      "thumbnail_bytes": 8914
+    }
+  ]
+}
