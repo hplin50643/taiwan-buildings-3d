@@ -1,0 +1,236 @@
+{
+  "baseline": "247ddfc0d7233f0fda74a4795f5debcb7d67b178",
+  "native_scene_rerender_semantics_sha256": "9e2ffd0947be4eae9944e79e5501f610db9cad1f609ecc57df22ee77fb8fe793",
+  "engineering_manifest": {
+    "path": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/PUBLIC-MODEL-SHA256SUMS",
+    "sha256": "be65a13d9b63ac8c96379151437bd7f722e0a5341510140f26b1f9717cca9075"
+  },
+  "fresh_render_manifest": {
+    "blender": "4.3.2",
+    "samples": 48,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "files": [
+      {
+        "path": "previews/front.png",
+        "bytes": 1721013,
+        "sha256": "b0d873d62ee259cfc4dd6c1a511fcfd18fd8ee47271e61253d1ce97c30a080db",
+        "camera": [
+          180,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          27
+        ],
+        "ortho_scale": 210,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/rear.png",
+        "bytes": 1596988,
+        "sha256": "7d234a069088de15decaf2942b96f40416284267e45b6ff75eb321678600abec",
+        "camera": [
+          -180,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          27
+        ],
+        "ortho_scale": 210,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/elevation.png",
+        "bytes": 1587593,
+        "sha256": "7ff82dc00b413e37467368ea33c8e61ea2ef21ab5a5f871b81cc60779d1aa4fd",
+        "camera": [
+          0,
+          -290,
+          31
+        ],
+        "target": [
+          0,
+          0,
+          28
+        ],
+        "ortho_scale": 185,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/top.png",
+        "bytes": 1765031,
+        "sha256": "5aaa47816e88d6ea3974d1f325dd5fdfac12700bf265f7a09dd181c89ac8e77f",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    ]
+  },
+  "historical_render_manifest_sha256": "9dfb288415cef0b16bd56f6d05345505a68b0383bed109c39d7c23fdccfe7e5e",
+  "known_preexisting_legacy_manifest_hashes": {
+    "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/SHA256SUMS": "e7cc5faf6452e0b6bb605a8fbb04b75dea1bafeaf9ac4548c70c037c680a4d23",
+    "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/SHA256SUMS": "bad569762e2acc5fbe9a46be2010b6c54757f78fb14f863541fca0be0d4aedca"
+  },
+  "authored_renderer_inputs": {
+    "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/nuug-appearance.3mf": "662c490e96937f32de4e0defcc0581cb5e6e7884ce6298909c975dd2d7a36918",
+    "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/palette.json": "cd06cf0ac08071bf80ea924fc19a3256b35e63a6e90150f83da737c625367daa",
+    "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/source/render_appearance.py": "15fe9bf5ecb10462e77db3540654132337ca2ca9e18bbb30ddf1f63c936de17b",
+    "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/source/render_current.py": "0fb8930ee05eb38c6850dbb93aa3c488be95f8b1b0fe996808cee0b26a2f1695"
+  },
+  "renderer": "Blender 4.3.2 CPU, 48 samples; all four freshly authored-pipeline PNGs byte-identical to current source previews; full-WebP decoded RGBA exact. Thumbnails are same-angle 640×640 lossy derivatives.",
+  "native": {
+    "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/model.stl": {
+      "sha256": "c476be899203e050a5f35e5d4f2224f6f92a4761ca9556cf111c7efc7b0c5d90",
+      "blob_sha": "94c6dc2ad0ed1dbad8800cab5196aa1e1856ed52"
+    },
+    "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/nuug-appearance.3mf": {
+      "sha256": "662c490e96937f32de4e0defcc0581cb5e6e7884ce6298909c975dd2d7a36918",
+      "blob_sha": "9896a3cd9d93ae82b20ffb9de51d934af6458ab8"
+    },
+    "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/scene.blend": {
+      "sha256": "8b85346c4855184f9da1346b1cd4d01633450b76e6ab4d1a78b7b399f1c6b6e5",
+      "blob_sha": "6ce3799306b22ef595218f95ff921f16e5c152aa"
+    }
+  },
+  "native_model_mesh": {
+    "vertex_count": 3816,
+    "triangles": 7656,
+    "material_face_counts": {
+      "0": 5131,
+      "1": 501,
+      "2": 134,
+      "3": 267,
+      "4": 34,
+      "5": 138,
+      "6": 1106,
+      "7": 345
+    }
+  },
+  "images": [
+    {
+      "source": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/previews/front.png",
+      "source_sha256": "b0d873d62ee259cfc4dd6c1a511fcfd18fd8ee47271e61253d1ce97c30a080db",
+      "source_bytes": 1721013,
+      "renderer_png_sha256": "b0d873d62ee259cfc4dd6c1a511fcfd18fd8ee47271e61253d1ce97c30a080db",
+      "display": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/display/front.webp",
+      "display_sha256": "08b4fb447e4adfe0da8769aa5c42f71acd195570a4674afee942a5645812f034",
+      "display_bytes": 457654,
+      "thumb": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/display/front-640.webp",
+      "thumb_sha256": "f27769f7a408f57a35e11c3ee5758833635925c1658a0bdc37aea93a262e0b5c",
+      "rgba_sha256": "0f417cde032266e9a288e7544036ce2fc1e0f43b41b068da5e6c710a4da84abf",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        27
+      ],
+      "ortho_scale": 210
+    },
+    {
+      "source": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/previews/rear.png",
+      "source_sha256": "7d234a069088de15decaf2942b96f40416284267e45b6ff75eb321678600abec",
+      "source_bytes": 1596988,
+      "renderer_png_sha256": "7d234a069088de15decaf2942b96f40416284267e45b6ff75eb321678600abec",
+      "display": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/display/rear.webp",
+      "display_sha256": "ea418892cf1b29dcf0d8f78eb3d27c1e1d04169c5d49c3373afab2a9ee024858",
+      "display_bytes": 365644,
+      "thumb": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/display/rear-640.webp",
+      "thumb_sha256": "0bd163853b26de05b088b44bc145d66b435381423439c046c33eb856e36de5ad",
+      "rgba_sha256": "21807d4a58bf59657c392c627c3d0ac84428c881e090bbd60a370bd53175c8b2",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        -180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        27
+      ],
+      "ortho_scale": 210
+    },
+    {
+      "source": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/previews/elevation.png",
+      "source_sha256": "7ff82dc00b413e37467368ea33c8e61ea2ef21ab5a5f871b81cc60779d1aa4fd",
+      "source_bytes": 1587593,
+      "renderer_png_sha256": "7ff82dc00b413e37467368ea33c8e61ea2ef21ab5a5f871b81cc60779d1aa4fd",
+      "display": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/display/elevation.webp",
+      "display_sha256": "c4691775471b333a9dec70eed991764142734b054c4fc091fc5cfb75b5dbb4b2",
+      "display_bytes": 324946,
+      "thumb": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/display/elevation-640.webp",
+      "thumb_sha256": "6b59abb99749b28556d0af1211b316e1d0c04e9e973cafff507490af8eeb7396",
+      "rgba_sha256": "943f24d4b9dbd5eea49fe4ef78b3da0f8409ede1a2584c0d82314ca77813ae74",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        -290,
+        31
+      ],
+      "target": [
+        0,
+        0,
+        28
+      ],
+      "ortho_scale": 185
+    },
+    {
+      "source": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/appearance/previews/top.png",
+      "source_sha256": "5aaa47816e88d6ea3974d1f325dd5fdfac12700bf265f7a09dd181c89ac8e77f",
+      "source_bytes": 1765031,
+      "renderer_png_sha256": "5aaa47816e88d6ea3974d1f325dd5fdfac12700bf265f7a09dd181c89ac8e77f",
+      "display": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/display/top.webp",
+      "display_sha256": "0cb395d7a1f9d7e7dc076fc3093e5c6ba39579bed939992088c66271b8175e8c",
+      "display_bytes": 694180,
+      "thumb": "國立聯合大學/buildings/bajia-g1-g2-g3-common-education/display/top-640.webp",
+      "thumb_sha256": "48663df1919ade57c6c9d52f7f0fe82d9bddb1b307beb3294336f5e17ad7aeaf",
+      "rgba_sha256": "cb697fccdfb1c9ff0cdeb1611b37fef2778f88cb415b4ca052c7420adf55eb7f",
+      "size": [
+        1200,
+        1200
+      ],
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180
+    }
+  ]
+}
