@@ -1,0 +1,143 @@
+{
+  "base": "43a9876a0b02cd1de15eb1b52cc8a3d332c909f9",
+  "native": {
+    "appearance/scene.blend": {
+      "path": "國立清華大學/校本部/buildings/nthu-physics-building/appearance/scene.blend",
+      "sha256": "0c6011e5405f1be6f57350b731a7f143965c9311cd034fc9b6fa00815cc3cdca",
+      "git_blob": "83a89fa613e9f990acc6dda5cc38d3385d5f6c6a"
+    },
+    "appearance/nthuphysics-appearance.3mf": {
+      "path": "國立清華大學/校本部/buildings/nthu-physics-building/appearance/nthuphysics-appearance.3mf",
+      "sha256": "938eec74154afcf479d18517b9e3f0ad2bd1c7cfec8c20f2d7bc8ae73454ba40",
+      "git_blob": "3e3bb4e263a8e1b0bb931c6b2710917bd8a67e2c"
+    },
+    "model.stl": {
+      "path": "國立清華大學/校本部/buildings/nthu-physics-building/model.stl",
+      "sha256": "e6259387b93dfa3af0654f46b6c89de252d3088d228e12167cd4f4329c489be0",
+      "git_blob": "54c80be81a96c141e75fbd7f6bda9d3ee78de2b0"
+    }
+  },
+  "checked_note": "Exact current Blend Cycles rerender vs four manifested official PNGs decoded RGBA; WebP lossless full views and derived q92 thumbnails",
+  "render_manifest": "國立清華大學/校本部/buildings/nthu-physics-building/appearance/qa-continuous-walls/render-manifest.json",
+  "render_manifest_sha256": "1ce3a868267540c902a9b2a48fe25aafdf019cdb785dac344fc2feca665b0113",
+  "triangles": 7856,
+  "vertices": 3852,
+  "materials": {
+    "0": 1690,
+    "1": 1037,
+    "2": 4695,
+    "3": 434
+  },
+  "retained_side_rear_inferred_faces": 61,
+  "historical_checksum_counts": {
+    "hash-manifest.json": 15,
+    "appearance/SHA256SUMS": 31,
+    "PUBLIC-MODEL-SHA256SUMS": 29
+  },
+  "views": [
+    {
+      "path": "previews/front.png",
+      "bytes": 1770673,
+      "sha256": "1faec7d195f3c239eaef1073885e253865426d0d4452bd557e6d7e0fa465ee71",
+      "camera": [
+        -180,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-physics-building/appearance/previews/front.png",
+      "source_git_blob": "3a4875087221d0d44547734ff9c1a3d7ce62fc1a",
+      "rgba_sha256": "604051e3e0b7b0e9954b3d0eb105e685a29c099e43fa1bb30e693f9fb5f0fd88",
+      "webp": "front.webp",
+      "webp_sha256": "f7e8dc0921f760f0278f3602ff5b5683d9e30b96b002c8d0b935f97ca5c5386b",
+      "webp_bytes": 534364,
+      "thumbnail": "front-640.webp",
+      "thumbnail_sha256": "1e4b6dad26605c6ce157202f13cdd34c3ed59f24b8833b42ff46869e1be42447",
+      "thumbnail_bytes": 20460
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1653939,
+      "sha256": "809fcdb6e4623f8d8b7045b159e060771c10fa6350d5d310aa9110b159c40169",
+      "camera": [
+        180,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 225,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-physics-building/appearance/previews/rear.png",
+      "source_git_blob": "99c3f1bc731927f9619c4ca5db174f467e34be5e",
+      "rgba_sha256": "3d4fa362dadbfd336d011a67ebcd7ccf7fb3bf371310068510270c36ca836453",
+      "webp": "rear.webp",
+      "webp_sha256": "6b2ffd979f4229c4c58169b876cd5915a8148cba87a8a1fa096629c80e14cddc",
+      "webp_bytes": 487828,
+      "thumbnail": "rear-640.webp",
+      "thumbnail_sha256": "59f2ef85140ccc8b89559c701e20759ac96418c963e20cb95245657e9cd281c7",
+      "thumbnail_bytes": 8158
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1712519,
+      "sha256": "7f2eba8c8c1491a7318fd47185662f2f6fc6a7e43edbad30172f86c9c0ccb7f2",
+      "camera": [
+        0,
+        -290,
+        56
+      ],
+      "target": [
+        0,
+        0,
+        56
+      ],
+      "ortho_scale": 185,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-physics-building/appearance/previews/elevation.png",
+      "source_git_blob": "8a3aaac34b6244ece5bb6230156c4bd1a276088c",
+      "rgba_sha256": "fa23b2edea1d2134220ba5fe3bf41f1f16f8bb7803ad57e02ffb06dc2e568246",
+      "webp": "elevation.webp",
+      "webp_sha256": "d27dd9d187a78dc84fdb555d8070b819ea8e8a09a5b09d25952b639aaad816b5",
+      "webp_bytes": 503256,
+      "thumbnail": "elevation-640.webp",
+      "thumbnail_sha256": "d8c494216902bb184d4dcd68003c544afbd66f64134d86032f0c18aedc4473a1",
+      "thumbnail_bytes": 14196
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1732159,
+      "sha256": "36620da6b79f1447971ccc7e04f79d13671df076f844daa9e6325707a5002d9c",
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180,
+      "all_vertices_in_frame": true,
+      "source_path": "國立清華大學/校本部/buildings/nthu-physics-building/appearance/previews/top.png",
+      "source_git_blob": "05953201cb1396c2afab7dbc80b0f7eba564b75a",
+      "rgba_sha256": "15a0d1f24cf4b4603ba60f67b12c977b33498388c5b7f001dc3027a2fbc35b69",
+      "webp": "top.webp",
+      "webp_sha256": "c2e10cb533543560793964a5d7fbd615e81e4401379f3b6caf7b489218f9c82c",
+      "webp_bytes": 672798,
+      "thumbnail": "top-640.webp",
+      "thumbnail_sha256": "0b77d6955d59bbf5148efec927be5a6e60074c1ec3947de76c38b79cfe335517",
+      "thumbnail_bytes": 5932
+    }
+  ]
+}
