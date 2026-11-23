@@ -1,0 +1,305 @@
+{
+  "baseline": "20051a58fcb6db500b20a2ec1f796fc8485b19a1",
+  "source_baseline": "43a9876a0b02cd1de15eb1b52cc8a3d332c909f9",
+  "engineering_manifest": {
+    "path": "國立政治大學/指南校區/buildings/nccu-seetoo-library/PUBLIC-MODEL-SHA256SUMS",
+    "sha256": "ef6775efad506b4cf5bac6590af7fa8dcfeb278186efc2035ef76bdd2d36ada6",
+    "old_sha256": "2981d51815b18c7f27d335b8fdeb768ddb3668ad3c8107ed376ab9bfb190bc58",
+    "updated_rows": [
+      "README.md",
+      "appearance/README.md"
+    ],
+    "rows": 34
+  },
+  "fresh_render_manifest": {
+    "blender": "4.3.2",
+    "samples": 48,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "files": [
+      {
+        "path": "previews/front.png",
+        "bytes": 1717144,
+        "sha256": "a0f139f21b67ec072e0ca57625b309a7a54df1b57e91dae86e159ef8c5d5834c",
+        "camera": [
+          195,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          35
+        ],
+        "ortho_scale": 220,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/rear.png",
+        "bytes": 1734985,
+        "sha256": "57248bfde6ae8240c5482400ac9995d183247a58c87185d58cd6528313879587",
+        "camera": [
+          -195,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          35
+        ],
+        "ortho_scale": 220,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/elevation.png",
+        "bytes": 1640517,
+        "sha256": "096ee7f6d0eb8fa7e60fa2f3c2381d2b1f16820d0296e89033df1ede44e3779f",
+        "camera": [
+          300,
+          0,
+          40
+        ],
+        "target": [
+          0,
+          0,
+          40
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/side.png",
+        "bytes": 1708215,
+        "sha256": "68eab78b3183a8b7f77df492a3b56a7d127d9e84bd580a20b68472ea204f7755",
+        "camera": [
+          0,
+          -300,
+          95
+        ],
+        "target": [
+          0,
+          0,
+          35
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/top.png",
+        "bytes": 1670831,
+        "sha256": "394a88eb222c33be5d0feb173da6f00cfd684a6df09f79fda420907a2135adf9",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    ]
+  },
+  "prior_render_manifest_sha256": "c1917a483256fcfa90f6f5aee792532ab3902c72618a90aa4f7d1155e92da1d5",
+  "authored_renderer_inputs": {
+    "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/nccu-seetoo-appearance.3mf": "fa9666a2c24acaa465eba61e59a14184a5e4d19f6ae5a6349597e22131ac02b6",
+    "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/palette.json": "998bc247a373c34d099360119c57fd88f3559b0ab5721b808091d15726bc9418",
+    "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/source/render_continuous_walls.py": "4483a921b21644b10db806569964c4a149a9abe04a4ec1fea6ab0c68e7fb2de8"
+  },
+  "renderer": "Blender 4.3.2 Cycles CPU, 48 samples, all five authored renderer PNGs verified byte-identical to official current source; full WebP exact decoded RGBA.",
+  "native": {
+    "國立政治大學/指南校區/buildings/nccu-seetoo-library/model.stl": {
+      "sha256": "a0e21a20d4e7b24b256ebdd70d1fd4f954b3e0beec129cff795a68ef50d9987a",
+      "blob_sha": "457121a5d8715201ab95c861cda39ae86bd589b6"
+    },
+    "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/nccu-seetoo-appearance.3mf": {
+      "sha256": "fa9666a2c24acaa465eba61e59a14184a5e4d19f6ae5a6349597e22131ac02b6",
+      "blob_sha": "3b5e171d9b24f5f471cbc34f10d10f8a974d3f1d"
+    },
+    "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/scene.blend": {
+      "sha256": "c87759899989ea45ffaf3cec4cd47c57c9c5695d15a86a32ac423c65c43fc053",
+      "blob_sha": "94c8a6fe5b5044e33c09b694ead8c45095e79498"
+    }
+  },
+  "native_model_mesh": {
+    "vertices": 3295,
+    "face_materials": {
+      "0": 6956,
+      "1": 278,
+      "2": 12
+    }
+  },
+  "native_scene_rerender_semantics_sha256": "52f9a3d4e480762d9e7e92d7b59bf3d907dad0cd196f3bfac9e90fa1e6da6849",
+  "historical_manifests": {
+    "國立政治大學/指南校區/buildings/nccu-seetoo-library/SHA256SUMS": "878eee7b0da042482380e1437046ea14a12c0f67808ff2ac49ac65dd3c1f2e75"
+  },
+  "nested_current_ledger": {
+    "path": "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/SHA256SUMS",
+    "old_sha256": "b92e9fa6a84a9954910723fe6c7998e19edaa115525c0dc89192da915917d48d",
+    "new_sha256": "98d72453b9b8810ce1435f9eabe2272bd698889338c946c87ca85e402fc765f8",
+    "rows": 41
+  },
+  "images": [
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/previews/front.png",
+      "source_sha256": "a0f139f21b67ec072e0ca57625b309a7a54df1b57e91dae86e159ef8c5d5834c",
+      "source_bytes": 1717144,
+      "renderer_png_sha256": "a0f139f21b67ec072e0ca57625b309a7a54df1b57e91dae86e159ef8c5d5834c",
+      "display": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/front.webp",
+      "display_bytes": 506258,
+      "display_sha256": "886c82b37d77bc79de1824aa303c6822eba08c22c3cee513801a4fd742c9f393",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/front-640.webp",
+      "thumb_sha256": "7d95a430806176278333ecc31633b91297816b70256c84bc09d57d8460e8228d",
+      "rgba_sha256": "1042f95c227593f387af9af26e41f9ba817dbbd06fa2c542235b21610b8c3cca",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        195,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 220
+    },
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/previews/rear.png",
+      "source_sha256": "57248bfde6ae8240c5482400ac9995d183247a58c87185d58cd6528313879587",
+      "source_bytes": 1734985,
+      "renderer_png_sha256": "57248bfde6ae8240c5482400ac9995d183247a58c87185d58cd6528313879587",
+      "display": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/rear.webp",
+      "display_bytes": 540056,
+      "display_sha256": "03e9eb41c5d2a810be577d31219ecaf679516d50d3084f8315192d8e0405fd99",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/rear-640.webp",
+      "thumb_sha256": "a3e050e23e4e3dd4841f3c7e173e4b2dfdf2a811b2cd00d8822b62a9065aa140",
+      "rgba_sha256": "14068aea6d131f48b500b46106c505753c405a6291305383fa9ad215c7994285",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        -195,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 220
+    },
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/previews/elevation.png",
+      "source_sha256": "096ee7f6d0eb8fa7e60fa2f3c2381d2b1f16820d0296e89033df1ede44e3779f",
+      "source_bytes": 1640517,
+      "renderer_png_sha256": "096ee7f6d0eb8fa7e60fa2f3c2381d2b1f16820d0296e89033df1ede44e3779f",
+      "display": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/elevation.webp",
+      "display_bytes": 401748,
+      "display_sha256": "1f938c995788314b0d4c2a4a2e1280f54e51a789c28a5e66982fb229decce8cd",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/elevation-640.webp",
+      "thumb_sha256": "b6a386c76caba30fad552d2036583df04ca3cf7105dd8ee98a69c5c8d9fa0b6d",
+      "rgba_sha256": "ffa32b205eb118fc13be0d7902a727e422bdb0ee53e01c1e5b1862c1e798ddab",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        300,
+        0,
+        40
+      ],
+      "target": [
+        0,
+        0,
+        40
+      ],
+      "ortho_scale": 180
+    },
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/previews/side.png",
+      "source_sha256": "68eab78b3183a8b7f77df492a3b56a7d127d9e84bd580a20b68472ea204f7755",
+      "source_bytes": 1708215,
+      "renderer_png_sha256": "68eab78b3183a8b7f77df492a3b56a7d127d9e84bd580a20b68472ea204f7755",
+      "display": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/side.webp",
+      "display_bytes": 545128,
+      "display_sha256": "b565848207c53464010f6a83e2a705422a38fdb83adae166b7f1cc194d16b064",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/side-640.webp",
+      "thumb_sha256": "a0ecec6b4074fec7d01ff47b82d9285ba9394a6187d56b37aab74723e4d784d5",
+      "rgba_sha256": "09c2655f2f4a64e1912dd45de90376cc159b911fa8b34e6d4e3659225a75aa0c",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        0,
+        -300,
+        95
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 180
+    },
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-seetoo-library/appearance/previews/top.png",
+      "source_sha256": "394a88eb222c33be5d0feb173da6f00cfd684a6df09f79fda420907a2135adf9",
+      "source_bytes": 1670831,
+      "renderer_png_sha256": "394a88eb222c33be5d0feb173da6f00cfd684a6df09f79fda420907a2135adf9",
+      "display": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/top.webp",
+      "display_bytes": 635646,
+      "display_sha256": "0e6abc6d399d87019416a0cb60e9a7c53b1b1d8c2d382a043058309bfbb02b82",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-seetoo-library/display/top-640.webp",
+      "thumb_sha256": "3f20f58cca6f3b83d6908f7049f7cbf525766576ac15a9bc4d3ee5bd71b49db3",
+      "rgba_sha256": "0b4f649be03e4ee95b398fbde781a559e516e64166a61f1ff9a4709d7300c13f",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180
+    }
+  ]
+}

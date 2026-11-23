@@ -12,14 +12,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![湖側上層直段棕色遮陽板](previews/rear.png) |  |  |
-
-[前視](previews/front.png) · [右立面](previews/elevation.png) · [正立面](previews/side.png) · [俯視](previews/top.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 前視<br>![前視](previews/front.png) | 右立面<br>![右立面](previews/elevation.png) | 正立面<br>![正立面](previews/side.png) |
-| 俯視<br>![俯視](previews/top.png) |  |  |
+| [![湖側與遮陽板](../display/rear-640.webp)](../display/rear.webp)<br>湖側與遮陽板 | [![入口側](../display/front-640.webp)](../display/front.webp)<br>入口側 | [![右立面](../display/elevation-640.webp)](../display/elevation.webp)<br>右立面 |
+| [![正立面](../display/side-640.webp)](../display/side.webp)<br>正立面 | [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 |  |
 
 ## 來源與選面
 親看建築師2022/03刊實拍，主館上層可見棕橘色垂直遮陽板、淺灰橫向梁。曝光日期未報；照片未校色，棕色是外觀代理，不宣稱確為木材、銅、塗料品牌或實測RGB。照片前方小屋不是本模型；入口混凝土屏風不套用棕色。
@@ -41,3 +35,5 @@
 模型、材質、原生視角圖與必要重建程式沿用完成候選，未改幾何或新切材界，不代表全館精確復色、現況或實體試印通過。原來源年代、工程與列印限制仍適用，舊說明與審核僅屬各自版本，本段更新上述局部範圍。
 
 本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔與本說明；歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。
+
+[現行展示圖與渲染校驗](../display/README.md) · [原工程檔與舊校驗對應版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/43a9876a0b02cd1de15eb1b52cc8a3d332c909f9/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E6%8C%87%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/nccu-seetoo-library/appearance/README.md)
