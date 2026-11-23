@@ -4,7 +4,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![同一交付網格的前斜視：低圓盤舞臺、七排格柵座臺與左側半階](previews/front.png) |  |  |
+| ![同一交付網格的前斜視：低圓盤舞臺、七排格柵座臺與左側半階](previews/front.png)<br>前斜視 | ![背殼斜視](previews/rear.png)<br>背殼斜視 | ![前立面](previews/elevation.png)<br>前立面 |
+| ![俯視](previews/top.png)<br>俯視 | ![左側斜視](previews/left_oblique.png)<br>左側斜視 |  |
 
 **科學三館中庭的完整獨立紀念看臺／舞臺外觀近似，不是科學三館整棟，也不是整座中庭模型。** 依2024專案刊載的完成照片製作，沒有現場測繪；個別照片拍攝日期未知，**不宣稱2026現況**。
 
@@ -53,10 +54,6 @@
 
 [前斜視](previews/front.png) · [背殼斜視](previews/rear.png) · [前立面](previews/elevation.png) · [俯視](previews/top.png) · [左側斜視](previews/left_oblique.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 背殼斜視<br>![背殼斜視](previews/rear.png) | 前立面<br>![前立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
-| 左側斜視<br>![左側斜視](previews/left_oblique.png) |  |  |
 
 五圖均由同一交付網格渲染，非來源照片拼貼、AI概念圖或實印成品照。
 
