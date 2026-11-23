@@ -4,20 +4,26 @@
 
 [原 STL（無色）](model.stl) · [新版逐面材色 3MF](side-color-20261120/model-colored.3mf) · [新版 Blender 場景](side-color-20261120/scene.blend)
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![補色後右側總覽](display/right-overview.webp)](side-color-20261120/after-right-overview.png)<br>補色後右側總覽 | [![補色後右側細節](display/right-wall-detail.webp)](side-color-20261120/after-right-wall-detail.png)<br>補色後右側細節 |  |
+
 ## 補色前後對照
 
 | 補色前 | 補色後 |
 | :---: | :---: |
-| ![補色前右側總覽](side-color-20261120/before-right-overview.png) | ![補色後右側總覽](side-color-20261120/after-right-overview.png) |
+| [補色前右側總覽](side-color-20261120/before-right-overview.png) | [補色後右側總覽](side-color-20261120/after-right-overview.png) |
 | 同角度原中性版，含完整底座。 | 同角度右側補色版，正面、屋頂、底座未改。 |
-| ![補色前右側細節](side-color-20261120/before-right-wall-detail.png) | ![補色後右側細節](side-color-20261120/after-right-wall-detail.png) |
+| [補色前右側細節](side-color-20261120/before-right-wall-detail.png) | [補色後右側細節](side-color-20261120/after-right-wall-detail.png) |
 | 局部裁切，顯示原四列凹槽。 | 僅原牆面砂米色；四列凹槽內面及凸出橫檻保持中性。 |
 
 ### 原代表圖（保留中性版本）
 
 | 正面 | 背面 | 立面 |
 | :---: | :---: | :---: |
-| ![原正面](previews/front.png) | ![原背面](previews/rear.png) | ![原立面](previews/elevation.png) |
+| [原正面](previews/front.png) | [原背面](previews/rear.png) | [原立面](previews/elevation.png) |
 | 原正面角度 | 未見處保留原簡化 | 原立面角度 |
 
 ## 本次上色範圍與限制

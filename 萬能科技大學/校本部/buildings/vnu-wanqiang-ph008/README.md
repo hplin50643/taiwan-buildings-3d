@@ -4,28 +4,20 @@
 
 [原 STL（無色）](model.stl) · [新版逐面材色 3MF](side-color-20261120/model-colored.3mf) · [新版 Blender 場景](side-color-20261120/scene.blend)
 
-## 補色前後對照
+## 模型預覽
 
-| 補色前 | 補色後 |
-| :---: | :---: |
-| ![補色前右側總覽](side-color-20261120/before-right-overview.png) | ![補色後右側總覽](side-color-20261120/after-right-overview.png) |
-| 同角度原中性版，含完整底座。 | 同角度，僅右端兩條柱外面著色。 |
-| ![補色前右端柱細節](side-color-20261120/before-right-wall-detail.png) | ![補色後右端柱細節](side-color-20261120/after-right-wall-detail.png) |
-| 局部裁切，顯示三個原有柱面。 | 前角與中央柱外面補色；最右的遠端柱仍維持中性。 |
-
-### 原代表圖（保留中性版本）
-
-| 正面 | 背面 | 立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![原正面](previews/front.png) | ![原背面](previews/rear.png) | ![原立面](previews/elevation.png) |
-| 原正面角度 | 未見處保留原簡化 | 原立面角度 |
+| [![萬強館右側總覽](display/right-overview.webp)](side-color-20261120/after-right-overview.png)<br>右側總覽，含完整底座 | [![萬強館右端柱細節](display/right-wall-detail.webp)](side-color-20261120/after-right-wall-detail.png)<br>右端柱細節，遠端柱維持原色 | |
+
+兩張 WebP 均由上方連結的最新版 Blender 場景顯示，與原補色後驗證圖的像素完全相同。[展示圖 SHA256](display/SHA256SUMS) 可核對 WebP。原中性代表圖與補色前後 PNG 僅作歷史／視覺驗證，不在此處重複展示。
 
 ## 本次上色範圍與限制
 
 - [萬能科大官方校景第 45 張](https://www.vnu.edu.tw/images/campus/map45.png) 僅 190×143 像素。右端與長面轉角的柱，及右端中央柱，在可見處呈暗灰綠。色值只是近似色族，不是材料種類、實測色票或 2026 年現況。拍攝日期未知。
 - 只改模型 x=+67.2 mm、法向 +X、y 中心在 −24 與 5 mm 的兩個完整原矩形，實際 z=3～49 mm（柱體原延伸至 50 mm，屋簷自 49 mm 遮合），總面積約 202.4 mm²。兩柱返面與背面、窗凹、牆、橫構件、屋頂及正面均不延伸上色。
 - 第三柱 y 中心為 34 mm，照片遠端與樹幹、枝葉交疊，不足以確認暗色直線屬於同柱或完整柱面，因此保留其兩個候選面中性。來源照片不隨包，不作紋理。
-- 原 STL、原 Blender 場景及三張代表圖保留。新版場景、3MF 與四張對照圖另放子目錄，不覆寫舊預覽。根目錄 [hash-manifest.json](hash-manifest.json) 核對既有檔案與本 README；新版 [SHA256SUMS](side-color-20261120/SHA256SUMS) 核對新版交付。另見 [限定色域與未上色候選](side-color-20261120/domain.json)、[場景與交換驗證](side-color-20261120/verification.json)、[完整幾何驗證](side-color-20261120/whole-geometry-QA.json) 與 [重建／視覺核對](side-color-20261120/reproduction-QA.json)。
+- 原 STL、原 Blender 場景及三張代表圖保留。新版場景、3MF 與四張驗證 PNG 另放子目錄，不覆寫舊預覽。根目錄 [hash-manifest.json](hash-manifest.json) 核對既有檔案與本 README；新版 [SHA256SUMS](side-color-20261120/SHA256SUMS) 核對新版交付。另見 [限定色域與未上色候選](side-color-20261120/domain.json)、[場景與交換驗證](side-color-20261120/verification.json)、[完整幾何驗證](side-color-20261120/whole-geometry-QA.json) 與 [重建／視覺核對](side-color-20261120/reproduction-QA.json)。
 - 可從根目錄執行 `python side-color-20261120/rebuild_exchange.py` 重建 3MF，以及 `blender -b scene.blend -t 2 -P side-color-20261120/apply_side_color.py -- --qa-renders` 重建新版場景及對照圖。原未指派材質 `Material` 在新版僅啟用保留旗標，沒有指派至新面；相機、燈光、世界與原材保留。原薄特徵限制仍適用，未正式切片或試印。
 
 ## 證據及近似
