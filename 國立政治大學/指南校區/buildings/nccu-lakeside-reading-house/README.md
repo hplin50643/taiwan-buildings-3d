@@ -13,7 +13,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與右前窗背<br>![窗背限域](appearance/previews/front.png) | 未確認後側保持中性<br>![後側中性](appearance/previews/rear.png) |  |
+| [![前右視角](display/front-640.webp)](display/front.webp)<br>前右視角 | [![後左視角](display/rear-640.webp)](display/rear.webp)<br>後左視角 | [![右立面](display/elevation-640.webp)](display/elevation.webp)<br>右立面 |
+| [![正立面](display/side-640.webp)](display/side.webp)<br>正立面 | [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |
 
 ## 窗背限域配色（2026-10-22）
 
@@ -57,3 +58,5 @@ Python執行build_model.py；Blender背景執行render_preview.py；再用Python
 [thin-feature-check.json](thin-feature-check.json)：canonical邊內插、1 mm取樣、0.8 mm參考寬度opening，最大面積損失0.06029%，超過1%共有0層。這是窄特徵篩檢，不是全面最小壁厚或實際工具路徑。
 
 未做Cura/Prusa實際切片或實體試印；全校建物尚未完成。
+
+[現行展示圖與渲染校驗](display/README.md) · [原工程檔與舊校驗對應版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/62e4ad666ee428f5eb49d2f92a001438856b201e/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E6%8C%87%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/nccu-lakeside-reading-house/README.md)

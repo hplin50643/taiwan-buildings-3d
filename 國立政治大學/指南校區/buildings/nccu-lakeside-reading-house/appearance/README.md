@@ -12,14 +12,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![前右視角](previews/front.png) |  |  |
-
-[後左](previews/rear.png) · [右立面](previews/elevation.png) · [正立面](previews/side.png) · [俯視](previews/top.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 後左<br>![後左](previews/rear.png) | 右立面<br>![右立面](previews/elevation.png) | 正立面<br>![正立面](previews/side.png) |
-| 俯視<br>![俯視](previews/top.png) |  |  |
+| [![前右視角](../display/front-640.webp)](../display/front.webp)<br>前右視角 | [![後左視角](../display/rear-640.webp)](../display/rear.webp)<br>後左視角 | [![右立面](../display/elevation-640.webp)](../display/elevation.webp)<br>右立面 |
+| [![正立面](../display/side-640.webp)](../display/side.webp)<br>正立面 | [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 |  |
 
 ## 來源和選面界線
 親看建築師2022/03刊照片：小屋兩層窗帶深冷灰青反射、淺色框與折板。攝影曝光日期未知，刊載月份不是攝影日。照片未校色；#465C61只是顯示代理，不聲稱實際玻璃RGB、透光率或塗料色。主樓橘色百葉、湖水、綠化、反射與陰影不移植到小屋。
@@ -41,3 +35,5 @@
 模型、材質、原生視角圖與必要重建程式沿用完成候選，未改幾何或新切材界，不代表全館精確復色、現況或實體試印通過。原來源年代、工程與列印限制仍適用，舊說明與審核僅屬各自版本，本段更新上述局部範圍。
 
 本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔與本說明；歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。
+
+[現行展示圖與渲染校驗](../display/README.md) · [原工程檔與舊校驗對應版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/62e4ad666ee428f5eb49d2f92a001438856b201e/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E6%8C%87%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/nccu-lakeside-reading-house/appearance/README.md)

@@ -1,0 +1,305 @@
+{
+  "baseline": "f8aa1ee7a9e4d5b1b87c28ff9d5c86a89eb415fa",
+  "source_baseline": "62e4ad666ee428f5eb49d2f92a001438856b201e",
+  "engineering_manifest": {
+    "path": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/PUBLIC-MODEL-SHA256SUMS",
+    "sha256": "ed9984218f8ec31949cdb4c64ba693b99ec48ebef36830bcd4dd68c2e6eeaffd",
+    "old_sha256": "f78647a7e0ed2d1b632c671dc7031685ed79f17b4efb2358478b288f4919b7a9",
+    "updated_rows": [
+      "README.md",
+      "appearance/README.md"
+    ],
+    "rows": 33
+  },
+  "fresh_render_manifest": {
+    "blender": "4.3.2",
+    "samples": 48,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "files": [
+      {
+        "path": "previews/front.png",
+        "bytes": 1691805,
+        "sha256": "5259425ae287434294b10c18ce967e2832a54bbd5bc1c3414f81c067b71d9cdc",
+        "camera": [
+          195,
+          -240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          35
+        ],
+        "ortho_scale": 220,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/rear.png",
+        "bytes": 1656263,
+        "sha256": "12ce4f76a0af13d206c6be8080a25425071c824df9ebbea15a9dd2bec96dde42",
+        "camera": [
+          -195,
+          240,
+          155
+        ],
+        "target": [
+          0,
+          0,
+          35
+        ],
+        "ortho_scale": 220,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/elevation.png",
+        "bytes": 1557349,
+        "sha256": "2abd3e43578a3aa6bafc8e1c19824efd038ec16c6c3dcee415c82a546e072e2f",
+        "camera": [
+          300,
+          0,
+          40
+        ],
+        "target": [
+          0,
+          0,
+          40
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/side.png",
+        "bytes": 1651770,
+        "sha256": "9e8b3bcc64ff9ba34e96f48da2137d42f01aa55bafd37fdafda4a70a98103407",
+        "camera": [
+          0,
+          -300,
+          95
+        ],
+        "target": [
+          0,
+          0,
+          35
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      },
+      {
+        "path": "previews/top.png",
+        "bytes": 1546126,
+        "sha256": "dbee63879b735f16392dcb2887cad030978012e101bde5d43df9965499f40f79",
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    ]
+  },
+  "prior_render_manifest_sha256": "e3526a9207781b651b9e883bc4c051166dd08cb7e9bd335e68e0ba8f6abd457b",
+  "authored_renderer_inputs": {
+    "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/nccu-lakeside-appearance.3mf": "997965760121f60d863aee864dee09825e0f1f5be6b0eca63f3f066c3dfb1085",
+    "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/palette.json": "0c9b9c78637edae0cd4b5318a00f65115f23368711faa86ead78b1d02c176c65",
+    "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/source/render_continuous_walls.py": "a0d0b748b121daf9a122921dd0de19e6f50254e69a6af80e688b499d192c427a"
+  },
+  "renderer": "Blender 4.3.2 Cycles CPU, 48 samples, all five authored renderer PNGs verified byte-identical to official current source; full WebP exact decoded RGBA.",
+  "native": {
+    "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/model.stl": {
+      "sha256": "30769931f58c5095803700b6462694aa6485b42c6979ca540da8d834d3767320",
+      "blob_sha": "b9660aa1f66d74c7e9eff44108f8ce7de998ae9f"
+    },
+    "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/nccu-lakeside-appearance.3mf": {
+      "sha256": "997965760121f60d863aee864dee09825e0f1f5be6b0eca63f3f066c3dfb1085",
+      "blob_sha": "5bfe9fd383b53b9c760f0ad39c4981699d2b4377"
+    },
+    "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/scene.blend": {
+      "sha256": "d303eaabe6ab9f5f6f7f82e62746d1af7e31bf9c21b15e4c1875e1ae5239b78a",
+      "blob_sha": "d49168b38b3d93112294fd2a640c5c59368c6cf3"
+    }
+  },
+  "native_model_mesh": {
+    "vertices": 1568,
+    "face_materials": {
+      "0": 3322,
+      "1": 64,
+      "2": 18
+    }
+  },
+  "native_scene_rerender_semantics_sha256": "4acf3536af4b0dcb9afff38d821e5053df41c20985ca91ff81bc2fa7785b2e43",
+  "historical_manifests": {
+    "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/SHA256SUMS": "3d4a8fabcf5d576702a191c0c69eb3ea7b6bd88ff7a1d629cb92afe793551e52"
+  },
+  "nested_current_ledger": {
+    "path": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/SHA256SUMS",
+    "old_sha256": "8fcdb5467cf63e0bf36c16dde0bc8994bc8c6aebd8f5b24595305e4f1b403b0b",
+    "new_sha256": "cf11e2cbccc4b5614b3acde594b44e6cca0c5cca19a903c76a89a8e1174f2945",
+    "rows": 41
+  },
+  "images": [
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/previews/front.png",
+      "source_sha256": "5259425ae287434294b10c18ce967e2832a54bbd5bc1c3414f81c067b71d9cdc",
+      "source_bytes": 1691805,
+      "renderer_png_sha256": "5259425ae287434294b10c18ce967e2832a54bbd5bc1c3414f81c067b71d9cdc",
+      "display": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/front.webp",
+      "display_bytes": 468910,
+      "display_sha256": "2e4a3823e27698ed203fb9677180945ce6cab03082aae72a10e218562edbf947",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/front-640.webp",
+      "thumb_sha256": "1dcf64cfba443d329991fbe8db1c448c31c07872f2ce38133cbea07fc5c67d58",
+      "rgba_sha256": "db065ff62084ff2d66c905fbe6ff7f966af0025fea90d6f8b80fd9f820df9818",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        195,
+        -240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 220
+    },
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/previews/rear.png",
+      "source_sha256": "12ce4f76a0af13d206c6be8080a25425071c824df9ebbea15a9dd2bec96dde42",
+      "source_bytes": 1656263,
+      "renderer_png_sha256": "12ce4f76a0af13d206c6be8080a25425071c824df9ebbea15a9dd2bec96dde42",
+      "display": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/rear.webp",
+      "display_bytes": 459208,
+      "display_sha256": "083e571b4f82088bfb2d1dcce49a1e34cdf2a02a0311782d60d22210b61e080d",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/rear-640.webp",
+      "thumb_sha256": "647a47f0424c7bf361303dc6d5ddd9eb42ecdab85bf91607f75b598270e0b7f1",
+      "rgba_sha256": "1b83143f9bb0a7af5c47bbabcd5768dfc01a5dd324bc535528390db803666cbb",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        -195,
+        240,
+        155
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 220
+    },
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/previews/elevation.png",
+      "source_sha256": "2abd3e43578a3aa6bafc8e1c19824efd038ec16c6c3dcee415c82a546e072e2f",
+      "source_bytes": 1557349,
+      "renderer_png_sha256": "2abd3e43578a3aa6bafc8e1c19824efd038ec16c6c3dcee415c82a546e072e2f",
+      "display": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/elevation.webp",
+      "display_bytes": 287950,
+      "display_sha256": "8328e5218455e609762e03501fba758294470b8ef55f410a92a4ce5af4de1c5f",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/elevation-640.webp",
+      "thumb_sha256": "335c31166682cf9a96e24efcb7b061d1969719be8913968a2136ff17d94a89d7",
+      "rgba_sha256": "0b6055e67b1f725839e17aff49f7cfcb00498aecb1e94c0433fcf609c9d20069",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        300,
+        0,
+        40
+      ],
+      "target": [
+        0,
+        0,
+        40
+      ],
+      "ortho_scale": 180
+    },
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/previews/side.png",
+      "source_sha256": "9e8b3bcc64ff9ba34e96f48da2137d42f01aa55bafd37fdafda4a70a98103407",
+      "source_bytes": 1651770,
+      "renderer_png_sha256": "9e8b3bcc64ff9ba34e96f48da2137d42f01aa55bafd37fdafda4a70a98103407",
+      "display": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/side.webp",
+      "display_bytes": 502398,
+      "display_sha256": "400f6778fbdd3ab582358df39d1414b70dd79e29ebd8594d1abcf5c7f3f896ed",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/side-640.webp",
+      "thumb_sha256": "e73aacbb01cd8c6b8baab847990201068a4231e39e9173a7fd3429b2d6e2dac6",
+      "rgba_sha256": "c1c0001deb0c1933026ee2d314c65bb1629264f18ad51e06a057b7b8303aa053",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        0,
+        -300,
+        95
+      ],
+      "target": [
+        0,
+        0,
+        35
+      ],
+      "ortho_scale": 180
+    },
+    {
+      "source": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/appearance/previews/top.png",
+      "source_sha256": "dbee63879b735f16392dcb2887cad030978012e101bde5d43df9965499f40f79",
+      "source_bytes": 1546126,
+      "renderer_png_sha256": "dbee63879b735f16392dcb2887cad030978012e101bde5d43df9965499f40f79",
+      "display": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/top.webp",
+      "display_bytes": 476214,
+      "display_sha256": "8cec8864ccca965952fd25a26ab668a45a4e2b9a0265185b989d5deac1ed5497",
+      "thumb": "國立政治大學/指南校區/buildings/nccu-lakeside-reading-house/display/top-640.webp",
+      "thumb_sha256": "9bc7230d548ba27cf147fccd38ebd38f031f867919a901c927ada35dd889e5e1",
+      "rgba_sha256": "d61259c3676251974eaf5bf4643fdfb10da1bb88abc765be1f5d4c623cd955ec",
+      "size": [
+        1200,
+        1200
+      ],
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "camera": [
+        0,
+        0,
+        350
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale": 180
+    }
+  ]
+}
