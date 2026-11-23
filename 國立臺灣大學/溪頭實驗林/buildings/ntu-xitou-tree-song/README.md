@@ -4,7 +4,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![同一交付網格的入口及凸窗斜視](previews/front.png) |  |  |
+| ![同一交付網格的入口及凸窗斜視](previews/front.png)<br>入口／凸窗斜視 | ![盲後牆／盲短端](previews/rear.png)<br>盲後牆／盲短端 | ![入口正立面](previews/elevation.png)<br>入口正立面 |
+| ![俯視](previews/top.png)<br>俯視 | ![凸窗端斜視](previews/left_oblique.png)<br>凸窗端斜視 |  |
 
 **42㎡單棟展示木屋的完整外觀近似；臺大校外溪頭實驗林，不是臺北校總區，也不是溪頭全園區。** 依2019報導竣工資料、設計者提供的照片與圖紙，以及實際承包商照片重建。所有尺寸均為比例推估，沒有現場測繪；個別照片日期未知，不宣稱2026現況。
 
@@ -54,10 +55,6 @@
 
 [入口／凸窗斜視](previews/front.png) · [盲後牆／盲短端](previews/rear.png) · [入口正立面](previews/elevation.png) · [俯視](previews/top.png) · [凸窗端斜視](previews/left_oblique.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 盲後牆／盲短端<br>![盲後牆／盲短端](previews/rear.png) | 入口正立面<br>![入口正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
-| 凸窗端斜視<br>![凸窗端斜視](previews/left_oblique.png) |  |  |
 
 全部由同一交付網格渲染，非原照片拼貼、AI概念圖或實印成品照片。
 
