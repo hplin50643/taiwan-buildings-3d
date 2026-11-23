@@ -5,7 +5,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 西端與未登錄長側<br>![背面](appearance/previews/rear.png) |  |
+| 正面原幾何配色<br>[![正面](display/front-current-640.webp)](display/front-current.webp) | 西端與未登錄長側<br>[![背面](display/rear-current-640.webp)](display/rear-current.webp) |  |
 
 國立臺北科技大學／臺北校區（西校區）
 

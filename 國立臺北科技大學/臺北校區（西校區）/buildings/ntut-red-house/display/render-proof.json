@@ -1,0 +1,131 @@
+{
+  "source_commit": "62e4ad666ee428f5eb49d2f92a001438856b201e",
+  "method": "fresh replay of exact current eight-material saved scene; camera parameters only from historical camera manifest",
+  "geometry": {
+    "blend": "0680b31d946d654c3ee168f71e7453f7c0d5be46a3cbfc5db46927c82cb14cf2",
+    "stl": "5abe643a0f599bd4c032421ca4554a7da47b9c6d95a73a0c9423b8ee5acb2425",
+    "exchange": "f55f80afc4289393a11173f1f06382c02ccfe27aaf3665f4a12aed60fade1bc5",
+    "triangles": 15348,
+    "vertices": 7420,
+    "materials": 8,
+    "material_faces": {
+      "7": 22,
+      "1": 1250,
+      "2": 2365,
+      "0": 7520,
+      "3": 3753,
+      "4": 36,
+      "5": 4,
+      "6": 398
+    }
+  },
+  "no_color_or_mesh_changes": true,
+  "current_school_campus_card": {
+    "path": "docs/display/catalog/3f0e19ee9a4f9f37182bb3dc-640.webp",
+    "bytes": 18416,
+    "sha256": "5c1ec58cd28cb592f318c37adf7a3b9161392c5e597b1526ce20ed9cef92fd21",
+    "recreated_exact_from_fresh_front": true
+  },
+  "views": {
+    "front": {
+      "full": "front-current.webp",
+      "thumb": "front-current-640.webp",
+      "old_bytes": 1761388,
+      "full_bytes": 521578,
+      "thumb_bytes": 18416,
+      "rgba_sha256": "7d5a583d1dc5721d479677c6bcf685fdc4fd46475f76c4860b6af5d9665fd6ba",
+      "full_sha256": "454b97eef9e75819964ddc9e50cfe376b584f957bb405b26faaab51ade3dbc45",
+      "thumb_sha256": "5c1ec58cd28cb592f318c37adf7a3b9161392c5e597b1526ce20ed9cef92fd21",
+      "source_png_sha256": "134b999b642863e622b418ec078175fc933d01dd254b5a2206d82298217b8509",
+      "camera": {
+        "camera": [
+          -200,
+          -250,
+          190
+        ],
+        "target": [
+          0,
+          0,
+          48
+        ],
+        "ortho_scale": 235,
+        "all_vertices_in_frame": true
+      }
+    },
+    "rear": {
+      "full": "rear-current.webp",
+      "thumb": "rear-current-640.webp",
+      "old_bytes": 1729715,
+      "full_bytes": 493006,
+      "thumb_bytes": 15100,
+      "rgba_sha256": "7d891a0e372c82ad0b6c6502b8586821778b945a95af5f272be89e680532991d",
+      "full_sha256": "98647fe1207e8cdb0b422475154f53fd8a86368dbff9fbcf3532e6e82ed0d798",
+      "thumb_sha256": "6fd7d2457718fdc14f15a458b262ebef21209bc46bac2405d8f97ea60b1306da",
+      "source_png_sha256": "123a248ccad831f1a234af87bbb3c78eded4a423667fd4ed2fec369cd6ed770e",
+      "camera": {
+        "camera": [
+          200,
+          250,
+          190
+        ],
+        "target": [
+          0,
+          0,
+          48
+        ],
+        "ortho_scale": 235,
+        "all_vertices_in_frame": true
+      }
+    },
+    "elevation": {
+      "full": "elevation-current.webp",
+      "thumb": "elevation-current-640.webp",
+      "old_bytes": 1668277,
+      "full_bytes": 420710,
+      "thumb_bytes": 11298,
+      "rgba_sha256": "aa3bbb12abac45c14d3eb0c8bd1cc1d8821ec91e82988b72f15b046b4a21cb97",
+      "full_sha256": "6117acde351d073b5034851aa56636882351aad1cc3d0865118e28d3ab2ba39f",
+      "thumb_sha256": "006d0b42abddbbeca9e299eb1863ae2fc1a9ca7cb646efaecc097e303d0e5425",
+      "source_png_sha256": "21ab22b6515b8a6a282d2a4de9efaf024a5b1793f0874bcf174cbd5edb0c032c",
+      "camera": {
+        "camera": [
+          0,
+          -300,
+          55
+        ],
+        "target": [
+          0,
+          0,
+          50
+        ],
+        "ortho_scale": 185,
+        "all_vertices_in_frame": true
+      }
+    },
+    "top": {
+      "full": "top-current.webp",
+      "thumb": "top-current-640.webp",
+      "old_bytes": 1727000,
+      "full_bytes": 633348,
+      "thumb_bytes": 5080,
+      "rgba_sha256": "1ec4021f49e700c15f5ee8c339136b74c17edd8215244949e39750e761e03d28",
+      "full_sha256": "65b9e8869fc6ebd62ac9c49534e9b01649aa98b977cc0179de854e7adbe84dd6",
+      "thumb_sha256": "4e4b86ae128823ebb2bfec074531b45791cb2b6484bcc366874a64d43fc2c842",
+      "source_png_sha256": "ef33dc333fb854544f831283f4e18de437a8791c4233813ea3a9de7af20dcab3",
+      "camera": {
+        "camera": [
+          0,
+          0,
+          350
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "ortho_scale": 180,
+        "all_vertices_in_frame": true
+      }
+    }
+  }
+}

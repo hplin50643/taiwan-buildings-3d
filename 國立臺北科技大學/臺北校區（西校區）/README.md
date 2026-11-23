@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 臺北工業學校紅樓<br>[![紅樓外觀](../../docs/display/catalog/3f0e19ee9a4f9f37182bb3dc-640.webp)](buildings/ntut-red-house/) | 一大川堂校史館南端六開間段<br>[![一大川堂校史館南端六開間段](../../docs/display/catalog/9402a5ccd49d1239538da6e3-640.webp)](buildings/ntut-yida-south-section/) |  |
+| 臺北工業學校紅樓<br>[![紅樓外觀](../../docs/display/catalog/3f0e19ee9a4f9f37182bb3dc-640.webp)](buildings/ntut-red-house/display/README.md) | 一大川堂校史館南端六開間段<br>[![一大川堂校史館南端六開間段](../../docs/display/catalog/9402a5ccd49d1239538da6e3-640.webp)](buildings/ntut-yida-south-section/) |  |
 
 - [臺北工業學校紅樓](buildings/ntut-red-house/)：2017修復後完整外殼近似
 - [一大川堂校史館南端六開間段](buildings/ntut-yida-south-section/)：2024修復後南端局部；北段與L形橫翼未建
