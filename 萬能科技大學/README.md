@@ -21,4 +21,10 @@
 - 新信義樓RHE已找到115招生簡章實拍，留待下輪建模；舊RHC照片不可當新樓。其他完整棟界或外觀不足者列為缺口。
 - 公開包不重製第三方原照或PDF，僅提供來源URL。
 
-[校本部頁](校本部/README.md)｜[完整SHA256清單](hash-manifest.json)
+[校本部頁](校本部/README.md)
+
+## 檔案校驗與歷史
+
+現行模型校驗：[弘道館](校本部/buildings/vnu-hongdao-e/SHA256SUMS) · [萬芳樓](校本部/buildings/vnu-wanfang-v/SHA256SUMS) · [體適能中心](校本部/buildings/vnu-fitness-ph/SHA256SUMS)。各清單以當前模型目錄為準。
+
+原始學校交付的[完整 SHA256 清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/6ecd8f1b5019a226b02d7dd8502d47af00889ae1/%E8%90%AC%E8%83%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/hash-manifest.json)與[當時的連結檢查](https://github.com/hplin50643/taiwan-buildings-3d/blob/6ecd8f1b5019a226b02d7dd8502d47af00889ae1/%E8%90%AC%E8%83%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/link-validation.json)，請以連結所指的固定提交核對。局部彩色版的歷史交付與驗證：[弘道館](https://github.com/hplin50643/taiwan-buildings-3d/tree/60b578e3f012f92e119dec509276c8040a0831c8/%E8%90%AC%E8%83%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/vnu-hongdao-e) · [萬芳樓](https://github.com/hplin50643/taiwan-buildings-3d/tree/60b578e3f012f92e119dec509276c8040a0831c8/%E8%90%AC%E8%83%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/vnu-wanfang-v) · [體適能中心](https://github.com/hplin50643/taiwan-buildings-3d/tree/60b578e3f012f92e119dec509276c8040a0831c8/%E8%90%AC%E8%83%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/vnu-fitness-ph)。[原單色模型的校驗及檔案](https://github.com/hplin50643/taiwan-buildings-3d/tree/48588274dfb149bab982be14d5cb4d0107ed86fe/%E8%90%AC%E8%83%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8)亦保留於當時提交。歷史紀錄不以目前檔名核對。
