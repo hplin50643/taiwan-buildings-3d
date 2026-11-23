@@ -21,4 +21,4 @@
 - 新信義樓RHE已找到115招生簡章實拍，留待下輪建模；舊RHC照片不可當新樓。其他完整棟界或外觀不足者列為缺口。
 - 公開包不重製第三方原照或PDF，僅提供來源URL。
 
-[校本部頁](校本部/README.zh-TW.md)｜[完整SHA256清單](hash-manifest.json)
+[校本部頁](校本部/README.md)｜[完整SHA256清單](hash-manifest.json)
