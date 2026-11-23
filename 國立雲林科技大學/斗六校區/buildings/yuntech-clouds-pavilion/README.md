@@ -5,7 +5,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![七材質外觀正面](appearance/previews/front.png) |  |  |
+| ![七材質外觀正面](appearance/previews/front.png)<br>七材質外觀正面 | ![背面](appearance/previews/rear.png)<br>背面 | ![頂視](appearance/previews/top.png)<br>頂視 |
 
 國立雲林科技大學／斗六校區。本件為公開來源推估的外觀縮模，不是測繪成果。涵蓋範圍：全塔外觀近似，含底層柱廊；不含天線、機電內部或周邊宿舍。
 
@@ -14,9 +14,6 @@
 
 [七材質外觀說明與來源界線](appearance/README.md) · [表面色 3MF](appearance/yuntech-appearance.3mf) · [可編輯材質場景](appearance/scene.blend) · [背面](appearance/previews/rear.png) · [頂視](appearance/previews/top.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 背面<br>![背面](appearance/previews/rear.png) | 頂視<br>![頂視](appearance/previews/top.png) |  |
 
 只增加外觀材質；原 STL、幾何、原場景與歷史 QA 均保留。背面屬有限對稱配色外推，不是新測繪。3MF 非已完成切片或保證可印。
 
