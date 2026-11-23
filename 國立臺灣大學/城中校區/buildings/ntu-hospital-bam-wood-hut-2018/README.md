@@ -4,7 +4,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![竹木隧道完整最終網格視圖](previews/front.png) |  |  |
+| ![竹木隧道完整最終網格視圖](previews/front.png)<br>正面 | ![後面](previews/rear.png)<br>後面 | ![側立面](previews/elevation.png)<br>側立面 |
+| ![俯視](previews/top.png)<br>俯視 | ![斜視](previews/left_oblique.png)<br>斜視 |   |
 
 **臺大醫院場域／城中校區，不是臺大校總區。** 依王銘顯建築師事務所2018完工照片與典型剖面製作的完整外觀近似。建築位於臺北市徐州路2號會議中心前廣場；此包只含獨立亭體及其原有抬高平台／小階，不含會議中心或醫院大樓。**重建的是2018歷史外觀，不宣稱2026仍存在或狀態未變。**
 
@@ -44,11 +45,6 @@
 | `QA.md` / `qa/` / `qa-*.json` / `SHA256SUMS` | 檢核數值、限制及檔案hash |
 
 [正面](previews/front.png) · [後面](previews/rear.png) · [側立面](previews/elevation.png) · [俯視](previews/top.png) · [斜視](previews/left_oblique.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 後面<br>![後面](previews/rear.png) | 側立面<br>![側立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
-| 斜視<br>![斜視](previews/left_oblique.png) |  |  |
 
 五圖皆由交付的最終網格渲染，沒有原照合成、示意圖替代或後製補構件。
 
