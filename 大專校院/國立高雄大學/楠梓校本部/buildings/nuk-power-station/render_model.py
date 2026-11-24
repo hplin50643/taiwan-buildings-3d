@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """Render actual unified mesh and save editable source components in Blender, no images/textures."""
-import bpy,json,pathlib,sys,argparse,math
+import bpy,json,pathlib,sys,argparse,math,os
 import numpy as np
 from mathutils import Vector
 p=argparse.ArgumentParser();p.add_argument('--out',type=pathlib.Path,default=pathlib.Path(__file__).resolve().parent);p.add_argument('--views',default='');p.add_argument('--no-render',action='store_true');a=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--'in sys.argv else [])
-r=a.out;data=np.load(r/'mesh-data.npz');info=json.loads((r/'editable-parts.json').read_text());parts=json.loads((r/'construction-parts.json').read_text())
+package=pathlib.Path(__file__).resolve().parent
+r=a.out.resolve()
+if os.environ.get('NUK_WEBP_RENDER_STAGING') != str(r) and (not a.no_render or r.is_relative_to(package)):
+ raise RuntimeError('Use python export_display_webp.py to render in temporary staging')
+data=np.load(r/'mesh-data.npz');info=json.loads((r/'editable-parts.json').read_text());parts=json.loads((r/'construction-parts.json').read_text())
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 s=bpy.context.scene;s.unit_settings.system='METRIC';s.unit_settings.scale_length=.001
 mats=[]

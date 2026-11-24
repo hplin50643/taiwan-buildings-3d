@@ -4,9 +4,9 @@
 
 | 主視角 | 已見長立面 | 已見短端面 |
 |---|---|---|
-| ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/observed_short_end.png) |
+| [![主視角](previews/front.webp)](previews/front.webp)<br>主視角 | [![已見長立面](previews/front_elevation.webp)](previews/front_elevation.webp)<br>已見長立面 | [![已見短端面](previews/observed_short_end.webp)](previews/observed_short_end.webp)<br>已見短端面 |
 | 中性未復原背面 | 屋頂 | 已見立面細節 |
-| ![](previews/rear_unreconstructed.webp) | ![](previews/top.webp) | ![](previews/front_detail.webp) |
+| [![中性未復原背面](previews/rear_unreconstructed.webp)](previews/rear_unreconstructed.webp)<br>中性未復原背面 | [![屋頂](previews/top.webp)](previews/top.webp)<br>屋頂 | [![已見立面細節](previews/front_detail.webp)](previews/front_detail.webp)<br>已見立面細節 |
 
 這是可審視的外觀模型，不是全棟精確還原、竣工測繪或 2026 年現況模型。未見背面與另一短端面採中性封閉；不能把空白牆當成實景確認。
 
@@ -24,7 +24,7 @@
 - 未實體試印／切片；凹槽、百葉與細線為展示比例簡化，不作最小壁厚或列印成功保證。主體為實心外觀殼；隱藏的 editable 部件為重疊建構件，不是可單獨列印的分件包。
 - 3MF 已做 core XML 與數值核對，沒有宣稱 lib3mf 全規格驗證。
 
-已見立面細節、中性未復原背面與屋頂展示圖改用 1200 × 800 無損 WebP，與原 PNG 的 RGBA 像素逐一相同。主視角、已見長立面、已見短端面、模型、場景和既有 QA 不變。用 Blender 4.3.2 與 Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可重新輸出這三張 WebP，不覆寫交付場景或其他視角；工具會先核對渲染像素的 SHA-256。需要原始 PNG 位元時，請下載固定版本的 [原立面細節 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/previews/front_detail.png) · [原中性背面 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/previews/rear_unreconstructed.png) · [原屋頂 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/previews/top.png)。Blender 重渲染的時間與路徑欄位可能不同。
+六張 1200 × 800 預覽均為無損 WebP，保留原 PNG 的完整 RGBA 像素。使用 Blender 4.3.2 與 Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可從交付網格在暫存目錄重繪；工具核對像素與現行 WebP SHA-256，不覆蓋交付場景。可加 `--scene-output /path/outside/package/scene.blend` 另存重建場景，或用 `--rendered-png-dir /path/outside/package` 另存重繪 PNG；其時間欄位可能不同。精確原始位元請取[轉換前固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/bff881da942d3051f97dab980feb69d9f60087fd/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station)；先前已遷移的 PNG 仍見 [原立面細節 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/previews/front_detail.png) · [原中性背面 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/previews/rear_unreconstructed.png) · [原屋頂 PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/previews/top.png)。
 
 [原發布逐檔清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/be26abf395473d67bac022c24552ce3191b18927/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%A4%A7%E5%AD%B8/%E6%A5%A0%E6%A2%93%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nuk-power-station/manifest.json)保留於原提交；本目錄的校驗表與清單對應目前展示檔。
 
@@ -32,4 +32,4 @@
 [STL](model.stl) · [3MF](model.3mf) · [Blender](scene.blend) · [來源](SOURCES.md) · [QA](QA.json)
 
 
-重建：使用 numpy、trimesh、manifold3d 執行 build_model.py，再使用 Blender 4.3 執行 render_model.py；幾何核驗執行 validate_model.py，Blender 重開核驗執行 verify_scene.py。
+重建：使用 numpy、trimesh、manifold3d 執行 build_model.py，再以 `python export_display_webp.py` 重繪預覽；幾何核驗執行 validate_model.py，Blender 重開核驗執行 verify_scene.py。
