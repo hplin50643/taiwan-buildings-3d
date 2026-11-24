@@ -2,9 +2,9 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| ![道藩樓彩色模型](previews/front.webp) | ![背面](previews/rear.webp) | ![頂視](previews/top.webp) |
 | :---: | :---: | :---: |
-| ![道藩樓彩色模型](previews/front.png)<br>正面 | ![背面](previews/rear.png)<br>背面 | ![頂視](previews/top.png)<br>頂視 |
+| 正面 | 背面 | 頂視 |
 
 [山上校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../../README.md)
 
@@ -37,18 +37,20 @@
 使用 Python 3.12、`requirements.txt` 所列套件與 Blender 4.3.2：
 
 ```sh
-python build_model.py
-blender -b -t 4 --python-exit-code 1 --python render_model.py
-python run_all_checks.py
+python rebuild.py --output /新的獨立目錄
 ```
 
-`python rebuild.py --output /新的空目錄 --blender blender` 可重建四個核心檔案及五張 PNG，再逐位元比較。無須重新下載原始照片或大 PDF。
+`python rebuild.py --output /新的空目錄 --blender blender` 可重建四個核心檔案及五張 WebP，再逐位元比較。無須重新下載原始照片或大 PDF。
 
 屋面灰色圍護的數目、精確位置與用途未獲獨立屋頂圖確認；採單一有限屋面量體近似，**不表示已證實兩照為同一機房或樓梯間**。照片比較只檢查候選視角的手性、主要量體與遮擋可行性，不是精確相機配準。
 
 ## 模型預覽與下載
 
 
-[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [重建來源 ZIP](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
+[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [原 QA 重建來源 ZIP（封存）](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
 
 模型約 208.75 × 111.50 × 59.19 mm；尺寸、細窗及高程為比例近似。
+
+### 展示與原始 QA
+
+現行展示共五張無損 WebP：[正面](previews/front.webp)、[背面](previews/rear.webp)、[頂視](previews/top.webp)、[正立面](previews/elevation.webp)、[左斜視](previews/left_oblique.webp)。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 只更新展示圖；`python rebuild.py --output /新的獨立目錄` 在外部重建模型與展示圖。歷史原始 PNG 僅於隔離暫存重渲染供 QA 對照。原 PNG 與 SHA-256 保存在固定版本：[最初 QA 渲染清冊](https://github.com/hplin50643/taiwan-buildings-3d/blob/0026a5ef79b7fbbf6a3e49690ec72721fea6c153/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8A%E6%A0%A1%E5%8D%80/buildings/nccu-daofan-hall/qa/render-manifest.json)及[原始預覽目錄](https://github.com/hplin50643/taiwan-buildings-3d/tree/0026a5ef79b7fbbf6a3e49690ec72721fea6c153/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8A%E6%A0%A1%E5%8D%80/buildings/nccu-daofan-hall/previews)。原 `rebuild-source.zip` 仍按原樣保留供歷史 QA 查證，現行重建以目錄中腳本為準。

@@ -2,9 +2,9 @@
 
 ## 模型預覽
 
-| 正面 | 背面 | 頂視 |
+| ![正面](previews/front.webp) | ![背面](previews/rear.webp) | ![頂視](previews/top.webp) |
 | :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+| 正面 | 背面 | 頂視 |
 
 [山上校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../../README.md)
 
@@ -21,7 +21,7 @@ B1 寬廣左側下部、1–3F 寬廣主體、4F L 形教室翼、3F 低頂、�
 - `build_model.py`、`render_model.py`、`run_all_checks.py`：完整可執行來源與檢驗。
 
 ## 重建
-使用 `requirements.txt` 的 Python 套件及 Blender 4.3.2。先執行 `python build_model.py`，再執行 `blender -b -t 4 --python-exit-code 1 --python render_model.py`，最後 `python run_all_checks.py`。不需來源照片、PDF、網路或工作目錄外的模型檔。乾淨重建比較 STL、3MF、mesh/palette JSON 及五張 PNG，Blend 以語意及真編輯存讀測試驗證，不宣稱容器位元組確定性。
+使用 `requirements.txt` 的 Python 套件及 Blender 4.3.2。在獨立目錄執行下方完整重建命令；若要執行 `python run_all_checks.py`，請在完整可寫副本內進行。不需來源照片、PDF、網路或工作目錄外的模型檔。乾淨重建比較 STL、3MF、mesh/palette JSON 及五張 WebP，Blend 以語意及真編輯存讀測試驗證，不宣稱容器位元組確定性。
 
 ## 解讀與限制
 塔頂照片中的小折面凸窗以矩形凸箱粗化代理，並非照片中精確外形。
@@ -33,4 +33,8 @@ B1 寬廣左側下部、1–3F 寬廣主體、4F L 形教室翼、3F 低頂、�
 ## 模型預覽與下載
 
 
-[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [重建來源 ZIP](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
+[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [原 QA 重建來源 ZIP（封存）](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
+
+### 展示與原始 QA
+
+現行展示共五張無損 WebP：[正面](previews/front.webp)、[背面](previews/rear.webp)、[頂視](previews/top.webp)、[正立面](previews/elevation.webp)、[左斜視](previews/left_oblique.webp)。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 只更新展示圖；`python rebuild.py --output /新的獨立目錄` 在外部重建模型與展示圖。歷史原始 PNG 僅於隔離暫存重渲染供 QA 對照。原 PNG 與 SHA-256 保存在固定版本：[最初 QA 渲染清冊](https://github.com/hplin50643/taiwan-buildings-3d/blob/0026a5ef79b7fbbf6a3e49690ec72721fea6c153/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8A%E6%A0%A1%E5%8D%80/buildings/nccu-communication-building/qa/render-manifest.json)及[原始預覽目錄](https://github.com/hplin50643/taiwan-buildings-3d/tree/0026a5ef79b7fbbf6a3e49690ec72721fea6c153/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8A%E6%A0%A1%E5%8D%80/buildings/nccu-communication-building/previews)。原 `rebuild-source.zip` 仍按原樣保留供歷史 QA 查證，現行重建以目錄中腳本為準。

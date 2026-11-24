@@ -2,15 +2,15 @@
 
 ## 模型預覽
 
-| 正面 | 背面 | 頂視 |
+| ![正面](previews/front.webp) | ![背面](previews/rear.webp) | ![頂視](previews/top.webp) |
 | :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+| 正面 | 背面 | 頂視 |
 
 [山上校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../../README.md)
 
 **版本：官方 PDF 所記錄的外觀與平面參考版；照片攝年未知，非已核 2026 現況。**
 
-這是完整相連主樓的比例近似模型，不是測繪、施工或結構資料。含前下斜翼、右直翼、後上斜翼、連接翼、附梯與入口；不是只取一面立面。彩色 Blender／3MF 使用六個可編輯實體材質；STL 不存顏色。五張 PNG 是同一網格的實際渲染，無照片材質貼圖。
+這是完整相連主樓的比例近似模型，不是測繪、施工或結構資料。含前下斜翼、右直翼、後上斜翼、連接翼、附梯與入口；不是只取一面立面。彩色 Blender／3MF 使用六個可編輯實體材質；STL 不存顏色。五張 WebP 是同一網格的實際渲染，無照片材質貼圖。
 
 ## 已保留的建築關係
 - 1F 沒有後上斜翼；後翼由 2F 開始，坡地代理直接接觸其基腳，不架空或虛構整條 B1。
@@ -27,11 +27,9 @@
 ## 重建
 環境：Python及`requirements.txt`、Blender4.3.2。由source ZIP乾淨解壓後：
 ```
-python build_model.py
-blender -b -t 4 --python-exit-code 1 --python render_model.py
-python run_all_checks.py
+python rebuild.py --output /新的獨立目錄
 ```
-`rebuild.py --output /new/empty/path --blender blender --threads 4`在新目錄實建四核心檔與五PNG並逐byte比較。Blend驗語義、真頂點/材質編輯及存讀，不要求其容器bytes跨建立相同。
+`rebuild.py --output /new/empty/path --blender blender --threads 4`在新目錄實建四核心檔與五張 WebP並逐byte比較。Blend驗語義、真頂點/材質編輯及存讀，不要求其容器bytes跨建立相同。
 
 生成端採布林並集、保留原始面材質來源；在輸出前轉入float32表示並簡化幾何。QA再讀最終raw STL，只做精確相等座標索引，無修網、填洞、刪薄件或改輪廓。不得用QA結果冒充實印成功。
 
@@ -41,6 +39,10 @@ python run_all_checks.py
 ## 模型預覽與下載
 
 
-[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [已驗證重建來源 ZIP](rebuild-source.zip) · [技術與製造限制](QA.md)
+[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [原 QA 重建來源 ZIP（封存）](rebuild-source.zip) · [技術與製造限制](QA.md)
 
 `qa/independent/` 收錄獨立技術審核；具體製造限制見 `QA.md`。
+
+### 展示與原始 QA
+
+現行展示共五張無損 WebP：[正面](previews/front.webp)、[背面](previews/rear.webp)、[頂視](previews/top.webp)、[正立面](previews/elevation.webp)、[左斜視](previews/left_oblique.webp)。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 只更新展示圖；`python rebuild.py --output /新的獨立目錄` 在外部重建模型與展示圖。歷史原始 PNG 僅於隔離暫存重渲染供 QA 對照。原 PNG 與 SHA-256 保存在固定版本：[最初 QA 渲染清冊](https://github.com/hplin50643/taiwan-buildings-3d/blob/0026a5ef79b7fbbf6a3e49690ec72721fea6c153/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8A%E6%A0%A1%E5%8D%80/buildings/nccu-jitao-hall/qa/render-manifest.json)及[原始預覽目錄](https://github.com/hplin50643/taiwan-buildings-3d/tree/0026a5ef79b7fbbf6a3e49690ec72721fea6c153/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8A%E6%A0%A1%E5%8D%80/buildings/nccu-jitao-hall/previews)。原 `rebuild-source.zip` 仍按原樣保留供歷史 QA 查證，現行重建以目錄中腳本為準。
