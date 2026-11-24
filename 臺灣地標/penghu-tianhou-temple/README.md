@@ -4,10 +4,12 @@
 
 | 局部材色預覽 | 局部材色預覽 | 局部材色預覽 |
 |---|---|---|
-| ![前斜視](preview.png) | ![後斜視](rear.png) | ![正面](front.png) |
-| ![背面](back.png) | ![左側](west.png) | ![右側](east.png) |
-| ![頂視](top.png) | ![入口石階](entry-detail.png) | ![前石框](facade-detail.png) |
-| ![未完成屋瓦材色](roof-detail.png) | | |
+| ![前斜視](front-oblique.webp) | ![後斜視](rear-oblique.webp) | ![正面](front.webp) |
+| ![背面](back.webp) | ![左側](west.webp) | ![右側](east.webp) |
+| ![頂視](top.webp) | ![入口石階](entry-detail.webp) | ![前石框](facade-detail.webp) |
+| ![未完成屋瓦材色](roof-detail.webp) | | |
+
+十張無損 WebP 由同一局部材色場景渲染；其中三張細部圖為裁切視角。原 PNG 與凍結文件見[固定交付版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/cd2698cb09b3b73d7e4ce5ea46304c1f1f1d8ef6/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/penghu-tianhou-temple)。
 
 ## 材色範圍
 同一澎湖天后宮既有模型局部補材（count_delta 0）；原 51852 三角面、頂點、STL、build_model.py 完全保留，不增刻石雕、門扇、彩繪或屋瓦細節。這次不宣稱全館補彩已完成，不以新材色替原粗化建築幾何背書。
@@ -28,4 +30,8 @@ build_model.py 重建原幾何；colorize_model.py 只指定原面材料；expor
 澎湖國家風景區與文化資產官方外觀照片，網址／SHA256 見 COLOR-SOURCE-REGISTER.json。未核得明示 CC 授權；公開可讀不等於自由再授權。原照片私人保存，不公開、不貼圖、不保證商用。只有建築外觀參考，不含人物或室內重建。
 
 ## QA 與原件歷程
-新色版 QA 為 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、FRAMING-QA、DELIVERY-QA 與獨立視覺審核。舊 previews／驗證資料／ORIGINAL-MONOCHROME-README.md 原樣保留作歷程，不代表本次色版。上述十圖及 scene.blend 是局部材色新版。原件不刪，不增加建築套數；全屋瓦和彩繪完成狀態仍為否。
+新色版 QA 為 COLOR-FORMAT-GEOMETRY-QA、SCENE-QA、FRAMING-QA、DELIVERY-QA 與獨立視覺審核。舊 previews／驗證資料／ORIGINAL-MONOCHROME-README.md 原樣保留作歷程，不代表本次色版。上述十張 WebP 及 scene.blend 是局部材色版本。十張逐像素等同的原展示 PNG 已移出目前分支，原交付歷史未改，也不增加建築套數；全屋瓦和彩繪完成狀態仍為否。
+
+## 現行校驗
+
+`sha256sum -c SHA256SUMS` 核對現行檔案；`python3 verify_display_webp.py`（需 Pillow）另核對十張 WebP 的尺寸及逐像素雜湊。重建時若在副本輸出 PNG，可執行 `python3 verify_display_webp.py /輸出資料夾` 比對新渲染的像素。 [校驗版本說明](CHECKSUM-SCOPE.md) · [展示渲染紀錄](DISPLAY-RENDER-PROOF.json)
