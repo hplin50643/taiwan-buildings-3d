@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 西正面與南長面<br>![同件西正面](previews/front.png) | 東聖壇與鐘塔<br>![同件東背面](previews/rear.png) |  |
+| 西正面與南長面<br>![同件西正面](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/front.png) | 東聖壇與鐘塔<br>![同件東背面](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/rear.png) |  |
 
 1957建物、修復前外觀的來源限定近似。僅禮拜堂自身西前廳、長堂、東半圓聖壇、北側鐘塔及附房，不含本館、西校舍或整個校園。現法定學校與歷史台南神學院同址承接關係，不另計第二校；亦不推定本件校舍為獨占產權。
 
@@ -54,13 +54,13 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正西低角度<br>![西門與三連拱](previews/west.png) | 屋頂分段<br>![西RC及後雙坡](previews/top.png) |  |
+| 正西低角度<br>![西門與三連拱](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/west.png) | 屋頂分段<br>![西RC及後雙坡](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/top.png) |  |
 
-[北面](previews/elevation.png) · [東面](previews/east.png) · [東正視](previews/rear-elevation.png)
+[北面](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/elevation.png) · [東面](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/east.png) · [東正視](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/rear-elevation.png)
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 北面<br>![北面](previews/elevation.png) | 東面<br>![東面](previews/east.png) | 東正視<br>![東正視](previews/rear-elevation.png) |
+| 北面<br>![北面](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/elevation.png) | 東面<br>![東面](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/east.png) | 東正視<br>![東正視](https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/rear-elevation.png) |
 
 原照片／PDF只作核對，未隨本包重新散布。未建模本館、西校舍、宿舍、圖書館與其他校園設施，本件不代表全校完成。
 

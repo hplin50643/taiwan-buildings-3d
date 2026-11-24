@@ -12,7 +12,7 @@
     "previews/front.png": "71c86f3da6f5aad28921cb76d4063a53e0c40e9e"
   },
   "release_gallery_remap": {
-    "previews/front.png": "previews/color-20261118/front.png"
+    "previews/front.png": "previews/front-current.webp"
   },
   "geometry_scope": "Original STL unchanged. Partial color only; not a test print or geometry survey.",
   "files": [
@@ -23,8 +23,8 @@
     },
     {
       "relative_path": "README.md",
-      "bytes": 10999,
-      "sha256": "330a59f375c91538b0c3468e2c4045efb1ac4c0853ac6753f1b0af78ec99464a"
+      "bytes": 12393,
+      "sha256": "538dd610700dd0a13bfd1cf9d4d0335551e3f7b2b405db892c28681bce08a4a5"
     },
     {
       "relative_path": "build_model.py",
@@ -68,43 +68,13 @@
     },
     {
       "relative_path": "original-model-notes.md",
-      "bytes": 7356,
-      "sha256": "4d4ab4ab0092d372a2b3768dafae2bed3992acc6a7eec5500943598393064cd3"
+      "bytes": 10046,
+      "sha256": "828109261df233560ddd795c23be54b63a40f0032ee2c23d4283daa22f03ed06"
     },
     {
       "relative_path": "palette.json",
       "bytes": 307,
       "sha256": "09348a7e4c060ba3d22f17ecc6253134c99cb04dcbdb4b8451bd57509244c06e"
-    },
-    {
-      "relative_path": "previews/color-20261118/front.png",
-      "bytes": 1208916,
-      "sha256": "5db333d6edf79dfe2e897768f0cf0afd75facadd63360eaec8d54004f4b6b013"
-    },
-    {
-      "relative_path": "previews/elevation.png",
-      "bytes": 1089676,
-      "sha256": "85a8c75af667c4d82f82531e90592e7b4457835ba8ee35ee186b16c19c8ec15e"
-    },
-    {
-      "relative_path": "previews/left.png",
-      "bytes": 1197801,
-      "sha256": "a65a29ae609197e72780733af1e64e8ffca1608c0a844b505163c19a67bd11b5"
-    },
-    {
-      "relative_path": "previews/rear.png",
-      "bytes": 1221258,
-      "sha256": "920665f3fbb2870e13c0f1f9ae18d75270d9e5c565138fa0e6b7257382344a96"
-    },
-    {
-      "relative_path": "previews/right.png",
-      "bytes": 1207453,
-      "sha256": "ef501678fa7aa53fbb429e1a23ef45e4188baf7bccf09b0b5961caceef082b73"
-    },
-    {
-      "relative_path": "previews/top.png",
-      "bytes": 1065915,
-      "sha256": "3715bb4730f7bdcd798904fea5ad4948895d0c8dde49232029e5961834079937"
     },
     {
       "relative_path": "requirements.txt",
@@ -128,8 +98,8 @@
     },
     {
       "relative_path": "display-proof.json",
-      "bytes": 3425,
-      "sha256": "1bbd1fb1bd50939e0addb72cbbdf7643de7ab1ef8fdcb253e19fdcab72100af5"
+      "bytes": 6640,
+      "sha256": "e3f8cfcb82d7fc773c9474a8c5e898ef6dc9aa8bed50ba1120e6275ca581158b"
     },
     {
       "relative_path": "previews/elevation-current.webp",
@@ -160,39 +130,11 @@
       "relative_path": "previews/top-current.webp",
       "bytes": 255062,
       "sha256": "5341774c14d8616d1ffdbb5c5ba6ef07dacdcfccd0427cedce0a9c04ffd93ab5"
-    }
-  ],
-  "png_metadata_policy": "Publication removed nonvisual PNG tEXt/zTXt/iTXt chunks only; decoded pixels and IDAT chunks were byte-compared and match original reviewed renders.",
-  "png_metadata_stripped_files": [
-    {
-      "relative_path": "previews/color-20261118/front.png",
-      "idat_and_pixels_unchanged": true,
-      "sha256": "5db333d6edf79dfe2e897768f0cf0afd75facadd63360eaec8d54004f4b6b013"
     },
     {
-      "relative_path": "previews/elevation.png",
-      "idat_and_pixels_unchanged": true,
-      "sha256": "85a8c75af667c4d82f82531e90592e7b4457835ba8ee35ee186b16c19c8ec15e"
-    },
-    {
-      "relative_path": "previews/left.png",
-      "idat_and_pixels_unchanged": true,
-      "sha256": "a65a29ae609197e72780733af1e64e8ffca1608c0a844b505163c19a67bd11b5"
-    },
-    {
-      "relative_path": "previews/rear.png",
-      "idat_and_pixels_unchanged": true,
-      "sha256": "920665f3fbb2870e13c0f1f9ae18d75270d9e5c565138fa0e6b7257382344a96"
-    },
-    {
-      "relative_path": "previews/right.png",
-      "idat_and_pixels_unchanged": true,
-      "sha256": "ef501678fa7aa53fbb429e1a23ef45e4188baf7bccf09b0b5961caceef082b73"
-    },
-    {
-      "relative_path": "previews/top.png",
-      "idat_and_pixels_unchanged": true,
-      "sha256": "3715bb4730f7bdcd798904fea5ad4948895d0c8dde49232029e5961834079937"
+      "relative_path": "verify_chapel_previews.py",
+      "bytes": 1423,
+      "sha256": "4e27c3791c890ab9d6f48c1705ed3f9a49f74c989faaf2107bbbfbc54bc5bd6a"
     }
   ],
   "current_3mf_compatibility_qa": "3MF-COMPATIBILITY-QA.json",
@@ -201,6 +143,14 @@
   "display_update": {
     "current_cover": "docs/display/catalog/ttcs-chapel-1957-current-640.webp",
     "preview_proof": "display-proof.json",
-    "native_model_changes": false
+    "native_model_changes": false,
+    "verification": "File SHA-256 plus exact decoded RGBA SHA-256 matching fixed-commit PNG pixels. PNG encoding and IDAT checks remain historical evidence."
+  },
+  "archived_pre_migration_manifest": "https://github.com/hplin50643/taiwan-buildings-3d/blob/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/COLOR-RELEASE-MANIFEST.json",
+  "archived_pre_migration_checksums": "https://github.com/hplin50643/taiwan-buildings-3d/blob/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/SHA256SUMS",
+  "legacy_original_render_recipe": {
+    "original_package_url": "https://github.com/hplin50643/taiwan-buildings-3d/tree/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957",
+    "original_manifest_url": "https://github.com/hplin50643/taiwan-buildings-3d/blob/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/render-manifest.json",
+    "scope": "Original neutral STL/render only; use original archived package to compare seven PNG-file hashes, not current color publication."
   }
 }

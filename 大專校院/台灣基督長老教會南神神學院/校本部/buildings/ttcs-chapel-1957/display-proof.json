@@ -1,115 +1,118 @@
 {
+  "pixel_verification": "Decode full-resolution image as unpremultiplied 8-bit RGBA, row major from top-left, SHA-256 channel bytes; dimensions checked separately. PNG encoding, metadata and PNG file hashes are not interchangeable with WebP.",
   "current_native_sha256": {
     "model.stl": "0cabb7d585347da757fb6dc52c0c435b1d52e939af94d73f23f093fa56b265f8",
     "model-colored.3mf": "296522adaac0194e51076359e2e6ac551e5e66916aa8b1b0a4254bc0961fce4c",
     "scene.blend": "30b261ed72c8127d8d4359078491b646dfe86cdfc978ac15911f7fc2cbce368c"
   },
-  "replacement_preview_rows": [
+  "current_preview_pixels": [
     {
-      "png": "previews/color-20261118/front.png",
-      "png_bytes": 1208916,
-      "png_sha256": "5db333d6edf79dfe2e897768f0cf0afd75facadd63360eaec8d54004f4b6b013",
-      "webp": "front-current.webp",
-      "webp_bytes": 308698,
+      "path": "previews/front-current.webp",
+      "bytes": 308698,
       "webp_sha256": "51ef2fef6c067842e312379971f383659edf0daac4e49733c493a57f2e567345",
       "dimensions": [
         1200,
         900
-      ]
+      ],
+      "rgba_sha256": "9bda82ce364004e84b2163074ed28ebd74574c8568ea2a452861963a4cc20d5d",
+      "archived_source_png": {
+        "relative_path_at_archived_commit": "previews/color-20261118/front.png",
+        "url": "https://github.com/hplin50643/taiwan-buildings-3d/blob/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/color-20261118/front.png",
+        "bytes": 1208916,
+        "png_sha256": "5db333d6edf79dfe2e897768f0cf0afd75facadd63360eaec8d54004f4b6b013"
+      }
     },
     {
-      "png": "previews/rear.png",
-      "png_bytes": 1221258,
-      "png_sha256": "920665f3fbb2870e13c0f1f9ae18d75270d9e5c565138fa0e6b7257382344a96",
-      "webp": "rear-current.webp",
-      "webp_bytes": 306224,
+      "path": "previews/rear-current.webp",
+      "bytes": 306224,
       "webp_sha256": "11ee6edf27a9cf9edb6a2270821e7291b27fa411c2acc15bcecf16399838a898",
       "dimensions": [
         1200,
         900
-      ]
+      ],
+      "rgba_sha256": "17e1f5044af4234d140460509385d6ad7e83443d7c2e65322db5ef0a417441b0",
+      "archived_source_png": {
+        "relative_path_at_archived_commit": "previews/rear.png",
+        "url": "https://github.com/hplin50643/taiwan-buildings-3d/blob/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/rear.png",
+        "bytes": 1221258,
+        "png_sha256": "920665f3fbb2870e13c0f1f9ae18d75270d9e5c565138fa0e6b7257382344a96"
+      }
     },
     {
-      "png": "previews/elevation.png",
-      "png_bytes": 1089676,
-      "png_sha256": "85a8c75af667c4d82f82531e90592e7b4457835ba8ee35ee186b16c19c8ec15e",
-      "webp": "elevation-current.webp",
-      "webp_bytes": 262292,
+      "path": "previews/elevation-current.webp",
+      "bytes": 262292,
       "webp_sha256": "8ba2c1b7d8f1b231b0ce1140d70ba12578fe199b9ac115317948b0e7c9accabb",
       "dimensions": [
         1200,
         900
-      ]
+      ],
+      "rgba_sha256": "a1b3a7a9a5dcfff2be6efbd7ac0f2b22a633f77c3846369f602e33814820e732",
+      "archived_source_png": {
+        "relative_path_at_archived_commit": "previews/elevation.png",
+        "url": "https://github.com/hplin50643/taiwan-buildings-3d/blob/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/elevation.png",
+        "bytes": 1089676,
+        "png_sha256": "85a8c75af667c4d82f82531e90592e7b4457835ba8ee35ee186b16c19c8ec15e"
+      }
     },
     {
-      "png": "previews/left.png",
-      "png_bytes": 1197801,
-      "png_sha256": "a65a29ae609197e72780733af1e64e8ffca1608c0a844b505163c19a67bd11b5",
-      "webp": "left-current.webp",
-      "webp_bytes": 291370,
+      "path": "previews/left-current.webp",
+      "bytes": 291370,
       "webp_sha256": "de3e2444e3d126f6ec0df4187f75e774e12c53f88fcfd144d29d02c27bfa9489",
       "dimensions": [
         1200,
         900
-      ]
+      ],
+      "rgba_sha256": "a260a2e90d2fb328d454cef701fa9c4cacda0d3021aa576810b45947795f39f6",
+      "archived_source_png": {
+        "relative_path_at_archived_commit": "previews/left.png",
+        "url": "https://github.com/hplin50643/taiwan-buildings-3d/blob/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/left.png",
+        "bytes": 1197801,
+        "png_sha256": "a65a29ae609197e72780733af1e64e8ffca1608c0a844b505163c19a67bd11b5"
+      }
     },
     {
-      "png": "previews/right.png",
-      "png_bytes": 1207453,
-      "png_sha256": "ef501678fa7aa53fbb429e1a23ef45e4188baf7bccf09b0b5961caceef082b73",
-      "webp": "right-current.webp",
-      "webp_bytes": 300972,
+      "path": "previews/right-current.webp",
+      "bytes": 300972,
       "webp_sha256": "da98b90594e4e7f25d5daf646c893950f1f3ecb05a21d1872a3370dced22ba4a",
       "dimensions": [
         1200,
         900
-      ]
+      ],
+      "rgba_sha256": "1c1eec3800f6cdf0261a37cff63be4044ec211baf61281e0b2ce656351e06cbc",
+      "archived_source_png": {
+        "relative_path_at_archived_commit": "previews/right.png",
+        "url": "https://github.com/hplin50643/taiwan-buildings-3d/blob/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/right.png",
+        "bytes": 1207453,
+        "png_sha256": "ef501678fa7aa53fbb429e1a23ef45e4188baf7bccf09b0b5961caceef082b73"
+      }
     },
     {
-      "png": "previews/top.png",
-      "png_bytes": 1065915,
-      "png_sha256": "3715bb4730f7bdcd798904fea5ad4948895d0c8dde49232029e5961834079937",
-      "webp": "top-current.webp",
-      "webp_bytes": 255062,
+      "path": "previews/top-current.webp",
+      "bytes": 255062,
       "webp_sha256": "5341774c14d8616d1ffdbb5c5ba6ef07dacdcfccd0427cedce0a9c04ffd93ab5",
       "dimensions": [
         1200,
         900
-      ]
+      ],
+      "rgba_sha256": "5f752b576f75294fc1512fa1d36b4c928812ee906c2b041430bc94caf01b2f11",
+      "archived_source_png": {
+        "relative_path_at_archived_commit": "previews/top.png",
+        "url": "https://github.com/hplin50643/taiwan-buildings-3d/blob/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews/top.png",
+        "bytes": 1065915,
+        "png_sha256": "3715bb4730f7bdcd798904fea5ad4948895d0c8dde49232029e5961834079937"
+      }
     }
   ],
-  "original_cover_exact_source": {
-    "previews/front.png": [
-      [
-        "RGB",
-        true
-      ],
-      [
-        "RGB",
-        false
-      ],
-      [
-        "RGBA",
-        true
-      ],
-      [
-        "RGBA",
-        false
-      ]
-    ],
-    "previews/color-20261118/front.png": []
-  },
-  "current_cover_bytes": 18960,
-  "original_cover_bytes": 18828,
-  "source_commit": "f257624210cd5a5e2f7a64cb72f6e766d1f9357c",
-  "cover": {
-    "source": "大專校院/台灣基督長老教會南神神學院/校本部/buildings/ttcs-chapel-1957/previews/color-20261118/front.png",
+  "archived_original_proof": "https://github.com/hplin50643/taiwan-buildings-3d/blob/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/display-proof.json",
+  "archived_png_evidence_commit": "61e1b50daa09f45a2a65e8ce167aef8e6909e833",
+  "current_display_cover": {
     "path": "docs/display/catalog/ttcs-chapel-1957-current-640.webp",
+    "source": "previews/front-current.webp",
     "sha256": "ff8fcac5ba07250f8758b438ba41ae183132edcf6c225a9b175a2ad83a9a1619",
-    "size": [
+    "dimensions": [
       640,
       480
     ],
-    "conversion": "Lanczos resize, WebP quality 92"
+    "lossless_verification_preview": false
   }
 }

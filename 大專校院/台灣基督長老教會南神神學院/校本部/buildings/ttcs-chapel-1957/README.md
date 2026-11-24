@@ -8,12 +8,14 @@
 
 | 現版模型預覽 | 現版模型預覽 | 現版模型預覽 |
 | :---: | :---: | :---: |
-| [![前斜視／正面](previews/front-current.webp)](previews/color-20261118/front.png)<br>前斜視／正面 | [![後斜視](previews/rear-current.webp)](previews/rear.png)<br>後斜視 | [![立面](previews/elevation-current.webp)](previews/elevation.png)<br>立面 |
-| [![頂視](previews/top-current.webp)](previews/top.png)<br>頂視 | [![左側](previews/left-current.webp)](previews/left.png)<br>左側 | [![右側](previews/right-current.webp)](previews/right.png)<br>右側 |
+| [![前斜視／正面](previews/front-current.webp)](previews/front-current.webp)<br>前斜視／正面 | [![後斜視](previews/rear-current.webp)](previews/rear-current.webp)<br>後斜視 | [![立面](previews/elevation-current.webp)](previews/elevation-current.webp)<br>立面 |
+| [![頂視](previews/top-current.webp)](previews/top-current.webp)<br>頂視 | [![左側](previews/left-current.webp)](previews/left-current.webp)<br>左側 | [![右側](previews/right-current.webp)](previews/right-current.webp)<br>右側 |
 
 3MF 交付版僅補一個物件預設材質索引，嚴格 SDK 可讀取並在私有副本改色存回重開；原逐面色值、網格、Blender 與預覽不變。[公開相容化程式](source/normalize_3mf_compat.py)可重做此格式步驟。舊查核僅為建模檔案歷史，本版嚴格互通以新版相容性查核為準。
 
-首頁、學校與校區的代表圖也使用這個限定補色版。上表展示為無失真 WebP，點圖可開啟對應原始 PNG。舊版預覽和簽核資料保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/4761855138f5a951a6268cf67030d7a9e3e2ed60/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957)，不是現行版本的展示。
+首頁、學校與校區的代表圖也使用這個限定補色版。上表展示為全解析度無失真 WebP，點圖可開啟同一張 WebP。現行校驗逐張核對 WebP 檔案 SHA-256、尺寸及解碼 RGBA 像素 SHA-256；像素與[固定版本的六張原始 PNG](https://github.com/hplin50643/taiwan-buildings-3d/tree/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/previews)逐位元一致，不代表 PNG 和 WebP 的檔案位元或編碼中繼資料相同。舊版預覽和簽核資料保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/4761855138f5a951a6268cf67030d7a9e3e2ed60/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957)，不是現行版本的展示。
+
+可先執行 `sha256sum -c SHA256SUMS` 核對交付檔；如需逐像素核對，安裝 Pillow 後執行 `python verify_chapel_previews.py`。不必下載 PNG。640px 首頁縮圖不作逐像素校驗。
 
 ## 有限補色
 僅東側聖壇半圓錐的主連通斜坡109三角面，552.924278 mm²，0→新增材質3，未校準銅色代理 `#8D8968`。原錐坡候選200面另外89+2面是斷開的下部小唇緣，全部排除；不擴到簷口、圓筒牆、頂部平面、鐘塔、主教堂屋頂及其他構件。
@@ -74,6 +76,8 @@
 門廊、窗框、聖壇簷口可能需要支撐。數位QA不是全域最小壁厚證明，不是Cura/Prusa工具路徑或實體試印，不能保證免支撐或任意縮小可印。
 
 ## 原幾何重建方式
+
+以下是原幾何與原預覽流程，並非現行補色版的渲染重建。請在[原始交付的固定提交](https://github.com/hplin50643/taiwan-buildings-3d/tree/eb11c9b6bcf33cf61d8582797d4ee2018aadb745/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957)另外取得完整原始包，在該版本的獨立工作目錄執行。歷史驗證器會逐位元比對當時的七張 PNG；不要對現行補色版工作目錄執行這個歷史配方，也不要覆寫現行彩色場景。
 
 使用 [requirements.txt](requirements.txt) 與Blender4.3.2，依序執行 `python build_model.py`、`blender -b -t 4 -P render_preview.py`、`python run_all_checks.py`。任何invalid或非零exit都須修源重新全檢，不能repair後沿用舊報告。
 
