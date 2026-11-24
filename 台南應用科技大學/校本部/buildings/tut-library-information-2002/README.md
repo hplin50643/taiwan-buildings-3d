@@ -5,18 +5,12 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面配色<br>![正面配色](previews/appearance-front.png) | 未確認背面保持中性<br>![背面中性](previews/appearance-rear.png) |  |
+| [![正面配色](previews/appearance-front-current.webp)](previews/appearance-front-current.webp)<br>正面配色 | [![背面（未知立面保持中性）](previews/appearance-rear-current.webp)](previews/appearance-rear-current.webp)<br>背面（未知立面保持中性） | [![完整俯斜](previews/appearance-aerial-current.webp)](previews/appearance-aerial-current.webp)<br>完整俯斜 |
+| [![北上頂圖](previews/appearance-top-current.webp)](previews/appearance-top-current.webp)<br>北上頂圖 |  |  |
 
 ## 2026-10-20 原貌配色重建
 
 [可編輯8材質Blender](appearance.blend) · [標準彩色3MF](appearance.3mf) · [最小獨立重建源包](appearance-rebuild-source.zip)
-
-
-完整俯斜（歷史檔案留存，不作本頁預覽） · 北上頂圖（歷史檔案留存，不作本頁預覽）
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 完整俯斜<br>![完整俯斜](previews/appearance-aerial.png) | 北上頂圖<br>![北上頂圖](previews/appearance-top.png) |  |
 
 2002-12-08 Flickr照片已實際開圖並核對SHA256。可見正面與兩側的粉紅磚、綠藍玻璃、淺色帶／既有框、灰色彎曲雨棚據圖近似配色。色值未經色卡校正，帶寬與位置非測繪；未知北背面及屋頂保持中性，不把陰影當黑漆，不猜遮蔽立面。原幾何仍由2002／2018／2022／2025跨年來源組合，不能稱整棟2002原狀或2026現況。原照片不放公開包。
 
@@ -26,12 +20,12 @@
 
 [幾何QA](appearance-geometry-qa.json) · [格式讀回](appearance-roundtrip-qa.json) · [實際材質編輯QA](appearance-edit-roundtrip-qa.json) · [逐面mapping](appearance-mesh.json) · [材質與照片證據](material-evidence.json) · [本輪說明](APPEARANCE-QA.md)
 
-以下保留原模型說明與歷史QA，與上方新配色QA分開。全庫件數維持502／高教470／110校。
+以下保留原模型說明與歷史 QA，與上方現行配色預覽分開。[前版 README（固定提交）](https://github.com/hplin50643/taiwan-buildings-3d/blob/4761855138f5a951a6268cf67030d7a9e3e2ed60/%E5%8F%B0%E5%8D%97%E6%87%89%E7%94%A8%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/tut-library-information-2002/README.md) 保留歷史發布清冊所記錄的原文件內容。
 
 來源限定有界近似，非測繪、未試印。單棟，不含藝術中心85坪附展場、乃建堂及鄰樓。圖書館1–5F用途不等於整棟，官方另有7/8F電腦教室平面及9F其他教室用途。
 
 
-北上頂圖（歷史檔案留存，不作本頁預覽）｜完整俯斜（歷史檔案留存，不作本頁預覽）｜入口實體曲棚（歷史檔案留存，不作本頁預覽）｜上層窗組（歷史檔案留存，不作本頁預覽）｜西後局部（歷史檔案留存，不作本頁預覽）
+入口實體曲棚（歷史檔案留存，不作本頁預覽）｜上層窗組（歷史檔案留存，不作本頁預覽）｜西後局部（歷史檔案留存，不作本頁預覽）
 
 
 ## 三層來源界線
@@ -42,7 +36,7 @@
 ## 幾何與列印化簡
 最長含底150mm，尺寸 [98.88937377929688, 150.0, 85.66873931884766] mm。底座朝下；曲棚、深門廊可能需支撐。1名義m對1.70654859最終mm。所有QA數字均最終mm；照片名義m不是測繪值。
 
-入口棚為實體弧頂，非前弧線；後方嵌入真正實牆，兩側有限端梁避免曲面春點細刃。背接淺框為實際STL凹刻，公用所有預覽採單一灰材質，不靠色塊造窗。局部加框／嵌根是列印化簡，不作建築原尺寸證據。
+入口棚為實體弧頂，非前弧線；後方嵌入真正實牆，兩側有限端梁避免曲面春點細刃。背接淺框為實際STL凹刻，原 STL 的歷史預覽採單一灰材質，不靠色塊造窗。局部加框／嵌根是列印化簡，不作建築原尺寸證據。
 
 ## 原STL驗證與具體已核例外
 - 原網單殼、水密、每邊2面、vertex-link單環、原法向、無退化三角、獨立源重建SHA、Blend幾何及8張實際PNG bytes均通過。未以repair修網。
