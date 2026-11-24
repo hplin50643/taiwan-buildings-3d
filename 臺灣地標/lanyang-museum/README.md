@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| ![正面](previews/front.webp)<br>正面 | ![背面](previews/rear.webp)<br>背面 | ![正立面](previews/elevation.webp)<br>正立面 |
 
 ## 造型重點
 
@@ -19,7 +19,7 @@
 - `model.stl`：列印用二進位 STL，毫米單位
 - `build_model.py`：原創參數化幾何來源，可編輯角度、分帶、紋理及尺寸
 - `scene.blend`：同一 STL 匯入的可編輯 Blender 場景；地板與燈光只供預覽
-- `previews/front.png`、`rear.png`、`elevation.png`：實際交付 STL 渲染
+- `previews/front.webp`、`rear.webp`、`elevation.webp`：實際交付 STL 渲染
 - `validate_model.py`、`validation.json`：驗證程式與結果
 - `requirements.txt`：重建依賴版本
 
@@ -53,3 +53,7 @@ STL 沒有封閉室內空腔，實際稀疏填充由切片器設定。
 Python 3.12 安裝 `requirements.txt` 後執行 `python build_model.py`；再執行 `python validate_model.py model.stl --output validation.json`。預覽重建：`blender -b -t 4 -P render_preview.py`。Blender 場景設毫米，列印時只匯出 `Printable building`。
 
 檢查包含 watertight、單一連通邊界、每邊恰兩面、各頂點連結為單一環、法向繞序、無退化面、正體積、平底、150 mm 最長尺寸、Manifold 核心重讀、無內部封閉邊界殼，以及 STL SHA-256。表面刻槽可形成與外界相通的局部孔隙；數位驗證仍不等於實體列印測試。
+
+## 展示圖校驗
+
+三張無損 WebP 與[固定版本的原 PNG](https://github.com/hplin50643/taiwan-buildings-3d/tree/427fbb734dd4f91ac3a852d6cae5c5b3f919f934/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/lanyang-museum/previews)逐像素相同。用 `python3 verify_preview_webp.py`（需 Pillow）核對目前檔案及像素。若需重建，複製 `model.stl` 與 `render_preview.py` 到新的資料夾再執行原腳本，避免在目前模型目錄重新產生 PNG；可將輸出資料夾傳給校驗程式比對。

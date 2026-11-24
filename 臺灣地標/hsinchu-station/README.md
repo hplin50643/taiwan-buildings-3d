@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| ![正面](previews/front.webp)<br>正面 | ![背面](previews/rear.webp)<br>背面 | ![正立面](previews/elevation.webp)<br>正立面 |
 
 ## 保留的辨識特徵
 
@@ -22,7 +22,7 @@
 - `model.stl`：實際列印網格，二進位 STL，單一連通封閉邊界
 - `build_model.py`：原創參數化幾何原始碼，可修改尺寸及細节
 - `scene.blend`：已匯入同一 STL 的可編輯 Blender 場景；地板、燈光、相機只供預覽
-- `previews/front.png`、`rear.png`、`elevation.png`：由交付 STL 本身渲染，沒有額外假立面
+- `previews/front.webp`、`rear.webp`、`elevation.webp`：由交付 STL 本身渲染，沒有額外假立面
 - `validate_model.py`、`validation.json`：獨立拓樸、法向、尺寸與雜湊檢查
 - `requirements.txt`：重建所用版本
 
@@ -58,3 +58,7 @@
 Python 3.12：安裝 `requirements.txt`，執行 `python build_model.py`，再執行 `python validate_model.py model.stl --output validation.json`。預覽：`blender -b -t 4 -P render_preview.py`。Blender 場景設為毫米。匯出只選取 `Printable building`，不要把預覽地板一起匯出。
 
 驗證包括單一連通邊界、watertight、每邊恰兩面、每頂點連結為單一環、法向繞序一致、無零面積三角形、正體積、平底、150 mm 最長尺寸、Manifold 核心重讀、無額外封閉內部邊界殼及 STL SHA-256。數位檢查不能替代切片檢查與實體試印。
+
+## 展示圖校驗
+
+三張無損 WebP 與[固定版本的原 PNG](https://github.com/hplin50643/taiwan-buildings-3d/tree/427fbb734dd4f91ac3a852d6cae5c5b3f919f934/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/hsinchu-station/previews)逐像素相同。用 `python3 verify_preview_webp.py`（需 Pillow）核對目前檔案及像素。若需重建，複製 `model.stl` 與 `render_preview.py` 到新的資料夾再執行原腳本，避免在目前模型目錄重新產生 PNG；可將輸出資料夾傳給校驗程式比對。

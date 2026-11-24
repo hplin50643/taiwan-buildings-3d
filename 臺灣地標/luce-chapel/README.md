@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| ![正面](previews/front.webp)<br>正面 | ![背面](previews/rear.webp)<br>背面 | ![正立面](previews/elevation.webp)<br>正立面 |
 
 ## 主要特徵
 
@@ -25,7 +25,7 @@
 - `model.stl`：單件列印網格
 - `build_model.py`：原創參數化幾何程式
 - `scene.blend`：匯入同一 STL 的可編輯 Blender 場景
-- `previews/front.png`、`rear.png`、`elevation.png`：由交付 STL 本體渲染
+- `previews/front.webp`、`rear.webp`、`elevation.webp`：由交付 STL 本體渲染
 - `validate_model.py`、`validation.json`：獨立網格驗證與 SHA-256
 - `requirements.txt`：重建套件版本
 
@@ -60,3 +60,7 @@
 Python 3.12 安裝 `requirements.txt` 後執行 `python build_model.py`，再執行 `python validate_model.py model.stl --output validation.json`。預覽：`blender -b -t 4 -P render_preview.py`。Blender 場景為毫米，若另行匯出 STL，只選取 `Printable building`。
 
 驗證包含 watertight、單一連通邊界、每邊恰兩面、頂點連結單一環、法向繞序、無退化三角形、正體積、平底、最長 150 mm、Manifold 核心重讀、無內部封閉邊界殼與 STL SHA-256。數位驗證不等於實際切片與試印結果。
+
+## 展示圖校驗
+
+三張無損 WebP 與[固定版本的原 PNG](https://github.com/hplin50643/taiwan-buildings-3d/tree/427fbb734dd4f91ac3a852d6cae5c5b3f919f934/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/luce-chapel/previews)逐像素相同。用 `python3 verify_preview_webp.py`（需 Pillow）核對目前檔案及像素。若需重建，複製 `model.stl` 與 `render_preview.py` 到新的資料夾再執行原腳本，避免在目前模型目錄重新產生 PNG；可將輸出資料夾傳給校驗程式比對。

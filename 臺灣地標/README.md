@@ -51,9 +51,9 @@
 | 總統府 | [模型與說明](presidential-office/README.md) · [STL](presidential-office/model.stl) | [新版前斜視](presidential-office/front-current.webp) | [新版後斜視](presidential-office/rear-current.webp) |
 | 艋舺龍山寺 | [模型與說明](longshan-temple/README.md) · [STL](longshan-temple/model.stl) | [前視](longshan-temple/preview.png) | [後視](longshan-temple/rear.png) |
 | 淡水紅毛城 | [模型與說明](fort-san-domingo/README.md) · [STL](fort-san-domingo/model.stl) | [新版前斜視](fort-san-domingo/front-current.webp) | [新版後斜視](fort-san-domingo/rear-current.webp) |
-| 新竹火車站 | [模型與說明](hsinchu-station/README.md) · [STL](hsinchu-station/model.stl) | [前視](hsinchu-station/previews/front.png) | [後視](hsinchu-station/previews/rear.png) |
-| 蘭陽博物館 | [模型與說明](lanyang-museum/README.md) · [STL](lanyang-museum/model.stl) | [前視](lanyang-museum/previews/front.png) | [後視](lanyang-museum/previews/rear.png) |
-| 路思義教堂 | [模型與說明](luce-chapel/README.md) · [STL](luce-chapel/model.stl) | [前視](luce-chapel/previews/front.png) | [後視](luce-chapel/previews/rear.png) |
+| 新竹火車站 | [模型與說明](hsinchu-station/README.md) · [STL](hsinchu-station/model.stl) | [前視](hsinchu-station/previews/front.webp) | [後視](hsinchu-station/previews/rear.webp) |
+| 蘭陽博物館 | [模型與說明](lanyang-museum/README.md) · [STL](lanyang-museum/model.stl) | [前視](lanyang-museum/previews/front.webp) | [後視](lanyang-museum/previews/rear.webp) |
+| 路思義教堂 | [模型與說明](luce-chapel/README.md) · [STL](luce-chapel/model.stl) | [前視](luce-chapel/previews/front.webp) | [後視](luce-chapel/previews/rear.webp) |
 | 臺中國家歌劇院 | [模型與說明](taichung-theater/README.md) · [STL](taichung-theater/model.stl) | [前視](taichung-theater/preview.png) | [後視](taichung-theater/rear.png) |
 | 中台禪寺 | [模型與說明](chung-tai-monastery/README.md) · [STL](chung-tai-monastery/model.stl) | [新版正面斜視](chung-tai-monastery/front-current.webp) | [新版背面斜視](chung-tai-monastery/rear-current.webp) |
 | 國立故宮博物院南部院區 | [模型與說明](palace-south/README.md) · [STL](palace-south/model.stl) | [前視](palace-south/preview.png) | [後視](palace-south/rear.png) |
