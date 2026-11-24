@@ -2,7 +2,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 圖書館東面窗背有限配色<br>![正面](../../docs/display/catalog/d27b780425f1f2dca6a6ed71-640.webp) |  |  |
+| [![正面](../../docs/display/catalog/d27b780425f1f2dca6a6ed71-640.webp)](buildings/uch-library/README.md)<br>圖書館東面窗背有限配色 |  |  |
 
 [圖書館模型與完整限制](buildings/uch-library/README.md) · [東面104窗背雙材質3MF／Blend與外觀限制](buildings/uch-library/appearance/README.md)。1990 使用執照主體／2002 整建，外觀參照 2020–2024，150mm含底，有界近似。校本部是本包整理層級名稱。未知面維持中性。來源私圖未納包。
 
