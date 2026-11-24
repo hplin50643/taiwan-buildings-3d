@@ -1,0 +1,27 @@
+# 國立臺北藝術大學｜關渡校本部
+
+[學校入口](../README.md) · [未完成逐項清單](../remaining-building-work.zh-TW.md)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![科技藝術館有限配色：窄窗與可見銀灰外皮，其餘中性](../../../docs/display/catalog/eba4274930059a6d14d138f3-640.webp)](buildings/tnua-art-technology/appearance/README.md)<br>[科技藝術館（有限配色）](buildings/tnua-art-technology/appearance/README.md) | [![關渡美術館入口暨曲牆屋頂段 actual STL](../../../docs/display/catalog/d601a9b51598c995bd8d29cb-640.webp)](buildings/tnua-kuandu-museum-upper-section/)<br>[關渡美術館入口暨曲牆屋頂段](buildings/tnua-kuandu-museum-upper-section/)<br>[局部材色3MF](buildings/tnua-kuandu-museum-upper-section/appearance.3mf) · [範圍與限制](buildings/tnua-kuandu-museum-upper-section/README.md) | [![教學大樓鐘樓段 actual STL](../../../docs/display/catalog/b798d81655d7909a5cbf1f97-640.webp)](buildings/tnua-teaching-bell-tower-section/)<br>[教學大樓鐘樓段](buildings/tnua-teaching-bell-tower-section/) |
+| [![研究大樓下坡端量體段 actual STL](../../../docs/display/catalog/08a6d4519e69ada393440e8e-640.webp)](buildings/tnua-research-downhill-section/)<br>[研究大樓下坡端量體段](buildings/tnua-research-downhill-section/) | [![戲劇舞蹈教學大樓外角樓梯塔暨玻璃轉角段 actual STL](../../../docs/display/catalog/2d7e3088614560046715b72f-640.webp)](buildings/tnua-drama-dance-stair-corner-section/)<br>[戲劇舞蹈教學大樓外角樓梯塔暨玻璃轉角段](buildings/tnua-drama-dance-stair-corner-section/)<br>[局部材色3MF](buildings/tnua-drama-dance-stair-corner-section/appearance.3mf) · [範圍與限制](buildings/tnua-drama-dance-stair-corner-section/README.md) | [![活動中心鼓樓段 actual STL](../../../docs/display/catalog/af92f39d75aeb8e17e429d5e-640.webp)](buildings/tnua-activity-drum-tower-section/)<br>[活動中心鼓樓段](buildings/tnua-activity-drum-tower-section/)<br>[局部材色3MF](buildings/tnua-activity-drum-tower-section/appearance.3mf) · [範圍與限制](buildings/tnua-activity-drum-tower-section/README.md) |
+
+目前累計6件模型：1件主要外觀近似、5件局部段。**全校仍未完成，這不是6棟完整建築測繪。** 各件含底座最長150mm、獨立縮放，底座朝下。
+
+- 科技藝術館：架空L形高差、偏置開口；屋頂機電與細網格簡化。
+- 關渡美術館入口暨曲牆屋頂段：入口、三層曲牆／天窗；不含下坡樓層與研究大樓，背牆截斷。
+- 教學大樓鐘樓段：通透鐘廊、三側孔、三窄窗、曲牆／雙坡頂；吊桿加粗，教學長翼裁短。
+- 研究大樓下坡端量體段：頂六窄窗、下三列各六加二、磚座寬窄窗組；只含端部及左側前三組短翼，後方平簡。
+- 戲劇舞蹈教學大樓外角樓梯塔暨玻璃轉角段：四孔群、兩側樓廊、L形玻璃；2016刊文歷史外觀，兩翼裁短，不含中庭，內梯及未知遮擋窗省略。
+- 活動中心鼓樓段：外側2／3／1窗群、內側三窄窗、塔廊及曲牆；兩翼裁切，屋脊鰭件加厚，不加猜鼓，與對面鐘樓分開。
+
+## 列印與可重跑驗證
+
+每件含原創腳本、STL、由同件STL匯入的可編修Blend、actual STL正背／頂／立面PNG、來源、驗證腳本與SHA。鼓樓另附外側斜角，對照下坡端窗群。
+
+原STL法向繞序、每邊兩面、頂點連結單環、單一正體積表面殼、最長150mm、獨立重建SHA與Blend幾何一致都需通過。0.2mm逐層自z=0.071mm檢查輪廓閉合及個別／合成Polygon有效；canonical fail-closed v3不修補無效輸入來掩蓋失敗。
+
+科技館320層、關渡段280層、鐘樓段750層、研究端651層、戲舞段750層、鼓樓段750層。0.8mm參考寬度opening最大面積損失依序約0.1914%、0.3985%、0.5712%、0.3608%、0.4867%、0.8959%。此篩檢不是完整最小壁厚測量，也不等同實體試印或切片工具路徑驗證。懸挑、鐘吊桿、樓廊梁、屋簷與欄杆需要支撐評估；沒有保證免支撐。
+
+[校圖、去重、工程與範圍限制](../README.md#校圖去重與未完成範圍)

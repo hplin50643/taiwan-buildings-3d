@@ -1,0 +1,33 @@
+# 國立臺灣師範大學 公開外觀模型
+
+## 模型圖鑑
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![行政大樓中央入口段](../../docs/display/catalog/4882aa822238fe82099a3953-640.webp)](和平校區I/buildings/ntnu-administration-central-entry-segment/README.md)<br>**[行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/)** | [![禮堂前棟入口段](../../docs/display/catalog/a76ce279c0cd6c3a179dec9c-640.webp)](和平校區I/buildings/ntnu-auditorium-front-block-segment/README.md)<br>**[禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/)** | [![文薈廳圓窗山牆與蝙蝠廊段](../../docs/display/catalog/f2c118fd1759f28fdb6b108a-640.webp)](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/README.md)<br>**[文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/)** |
+| [![圖書館總館北側模型](../../docs/display/catalog/6450b9f45f56ba7bb8c09731-640.webp)](和平校區II/buildings/ntnu-main-library/README.md)<br>**[圖書館總館｜整棟地上外觀有限細節近似](和平校區II/buildings/ntnu-main-library/README.md)**<br>跨年度參考；非實測／已核實現況 | [<img src="../../docs/display/catalog/nups-linkou-gate-1983-design-640.webp" alt="原僑大林口大門｜1983年5–6月原設計圖版：實際模型渲染" width="220">](林口校區/buildings/nups-linkou-gate-1983-design/README.md)<br>[原始大圖](林口校區/buildings/nups-linkou-gate-1983-design/preview.png)<br>**[原僑大林口大門｜1983年5–6月原設計圖版](林口校區/buildings/nups-linkou-gate-1983-design/README.md)**<br>[STL](林口校區/buildings/nups-linkou-gate-1983-design/model.stl) · [彩色3MF](林口校區/buildings/nups-linkou-gate-1983-design/model.3mf) · [Blender](林口校區/buildings/nups-linkou-gate-1983-design/scene.blend) | [<img src="../../docs/display/catalog/nups-archives-four-paired-buildings-1983-design-640.webp" alt="原僑大檔案室1983設計，四組一包、實建未確證" width="220">](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/README.md)<br>[原始大圖](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/preview.png)<br>**[原僑大檔案室｜1983設計、四組一包](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/README.md)**<br>[STL](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/model.stl) · [彩色3MF](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/model.3mf) · [Blender](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/scene.blend)<br>[設計色局部3MF](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/appearance.3mf) · [範圍與限制](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/README.md) · [校驗版本與原檔說明](林口校區/buildings/nups-archives-four-paired-buildings-1983-design/CHECKSUM-SCOPE.md) |
+
+目前收錄6套：僑大檔案室四組一包、僑大林口大門，以及既有4套：和平校區I原有3件不同建築的**局部外觀段**，以及和平校區II圖書館總館的**整棟地上有限外觀近似**。既有4套不是4棟完整精細模型，也不是全校完成。原3件含底座最長150mm；圖書館模型含底座230×151×148.5mm，各自獨立比例、自建網格。
+
+
+以上預覽皆由交付模型幾何及原創材質渲染。每件資料夾有 STL、可編輯 Blender 原生檔、參數腳本、來源、數位QA及SHA。
+
+校區核對：[官方校圖](https://www.ga.ntnu.edu.tw/ntnu_map/)，4張圖面均印2026-09-23；和平I、和平II、公館、林口及3處校外教學大樓仍有後續工作。地圖中的運動場、廣場等不直接算建築；相連群棟需另核實體棟界。
+
+數位QA不等於真切片或實體試印。原照片與PDF僅私下核對，不包含於公開資料。
+
+[圖書館總館｜整棟地上外觀有限細節近似](和平校區II/buildings/ntnu-main-library/README.md)：和平校區II H202圖書館總館：八層D形整棟地上有限外觀近似，混合2020／2023形體、2025修繕報導及2025年1／2／5月南側街景，非精確定年復原、已核實2026現況或測繪縮尺。保留北弧形窗帶、南直線上部、兩端高量體、低層入口與覆頂中庭；南側兩個低層閉合凹口及三個中間／端部實體區塊，上部連續。西凹口背界為中性不透明近似，不宣稱觀察到精確磚牆／玻璃面，也不鏡像東側書店細節；中庭不挖露天洞。230×151×148.5mm為含展示底座模型尺寸，10材質3MF、STL、可編輯Blend及636隱藏建構分件、公開Python與9張實際圖；隱藏重疊分件不可與成品同印。無室內、地下室、鄰棟或博愛樓太陽能板；簷底、南凹口、木門框需橋接／支撐，約0.37–0.44mm附著窗框浮雕及230mm底座需評估縮尺和平台，尚未實體試印。
+
+校區圖鑑：[和平校區I](和平校區I/README.md) · [和平校區II](和平校區II/README.md)。官方地圖將總館標為和平校區II的H202，不與博愛樓舊圖書館混同。
+
+## 新增歷史原設計研究
+
+陳其寛／陳其寛建築師事務所CCCK257，1983年5–6月原設計圖外觀；9.95／9.75m高度差異保留。歷史原國立僑生大學先修班於2006年併入師大，歸林口校區同校，不另計現行大學；不是竣工測繪或2026現況。
+
+上述新增模型保留設計者與國立臺灣博物館典藏來源。來源圖像CC BY-NC標示（版本未明）與自行編寫程式／重建模型權利分開，不自動概括整包模型僅限非商業，也不宣稱已獲原圖或建築設計無限制商用權利。不附來源原圖、PDF或私人參考資料；皆未實體試印。
+
+[林口校區圖鑑](林口校區/README.md) · [僑先部官方沿革](https://www.nups.ntnu.edu.tw/about)
+
+## 僑大檔案室1983歷史設計研究
+
+原題「國立僑生大學先修班檔案室」，CCCK258、1983設計圖示，四組同向雙拼建築共八單元為同一工程一模型包，不拆成四套或八套，不因圖中廚衛改稱宿舍。依僑大歷史校屬及林口籌建關聯歸師大林口目錄；現址、現名與是否實建未獨立確證，不宣稱現存林口宿舍或竣工復原。後欄採詳剖4.20m，A2側立面3.60m仍差60cm；中央後坡5.111±0.10m派生，140cm短簷不蓋滿露台。圓孔側牆10→23cm及細框欄增厚為列印調整；近門短階圖量，遠側道路、圍牆、長階與精確地形不建。1:350含底座251.7×38.6×22.57mm，未試印；原圖私人保存，不保證商用權利。

@@ -12,6 +12,6 @@
 
 北、東立面按歷史圖面有界簡化；泳池與跨棟連橋不包含在此模型。保留原工程檢查使用的 PNG 與技術說明；未改幾何或配色，未實體試印。
 
-[工程原件、來源與限制](../../../../中原大學/中壢校區/buildings/cycu-gymnasium/README.md) · [STL](../../../../中原大學/中壢校區/buildings/cycu-gymnasium/model.stl) · [現行彩色 3MF](../../../../中原大學/中壢校區/buildings/cycu-gymnasium/cycu-gymnasium.3mf) · [現行 Blender](../../../../中原大學/中壢校區/buildings/cycu-gymnasium/cycu-gymnasium.blend) · [原交付校驗](../../../../中原大學/中壢校區/buildings/cycu-gymnasium/SHA256SUMS)
+[工程原件、來源與限制](../../../../大專校院/中原大學/中壢校區/buildings/cycu-gymnasium/README.md) · [STL](../../../../大專校院/中原大學/中壢校區/buildings/cycu-gymnasium/model.stl) · [現行彩色 3MF](../../../../大專校院/中原大學/中壢校區/buildings/cycu-gymnasium/cycu-gymnasium.3mf) · [現行 Blender](../../../../大專校院/中原大學/中壢校區/buildings/cycu-gymnasium/cycu-gymnasium.blend) · [原交付校驗](../../../../大專校院/中原大學/中壢校區/buildings/cycu-gymnasium/SHA256SUMS)
 
 [影像驗證](RENDER-PROOF.json) · [圖庫校驗](SHA256SUMS)

@@ -28,11 +28,18 @@ def read(path):
 
 REGISTRY = json.loads(read('model-packages.json'))
 SCHOOLS = set(REGISTRY['schools']) | {'國立聯合大學'}
+COLLEGE_CATALOG = '大專校院/README.md'
+
+def school_root(school, files=None):
+    if files is None: files = FILES
+    current = '大專校院/'+school
+    return current if current+'/README.md' in files else school
+
 ROOTS = sorted({p.split('/buildings/')[0]+'/buildings/'+p.split('/buildings/')[1].split('/')[0]
-                for p in FILES if '/buildings/' in p and p.split('/')[0] in SCHOOLS})
+                for p in FILES if '/buildings/' in p and any(p.startswith(school_root(school)+'/') for school in SCHOOLS)})
 # The church is a legacy package, not a new-catalog package; include it in THU navigation once.
 LEGACY = {'東海大學': ['臺灣地標/luce-chapel']}
-BY_SCHOOL = {s:[r for r in ROOTS if r.startswith(s+'/')]+LEGACY.get(s,[]) for s in sorted(SCHOOLS)}
+BY_SCHOOL = {s:[r for r in ROOTS if r.startswith(school_root(s)+'/')]+LEGACY.get(s,[]) for s in sorted(SCHOOLS)}
 OTHER_ROOTS = {
     '國家衛生研究院竹南院區/README.md': sorted({p.split('/buildings/')[0]+'/buildings/'+p.split('/buildings/')[1].split('/')[0] for p in FILES if p.startswith('國家衛生研究院竹南院區/') and '/buildings/' in p}),
     '臺灣地標/README.md': sorted({'/'.join(p.split('/')[:2]) for p in FILES if p.startswith('臺灣地標/') and p.count('/')>=2})
@@ -125,9 +132,9 @@ def is_model_preview(src,page,expected):
 SINGLE_IMAGE_OVERVIEW_PAGES = None
 
 def single_image_overview(page):
-    if page == 'README.md' or '/buildings/' in page or page in OTHER_ROOTS:return False
+    if page in {'README.md', COLLEGE_CATALOG} or '/buildings/' in page or page in OTHER_ROOTS:return False
     if SINGLE_IMAGE_OVERVIEW_PAGES is not None:return page in SINGLE_IMAGE_OVERVIEW_PAGES
-    return page in pages() and page.split('/')[0] in SCHOOLS
+    return page in pages() and any(page.startswith(school_root(school)+'/') for school in SCHOOLS)
 
 def visible_overview_text(text):
     """Mask balanced collapsed supporting details, but not open/visible details.
@@ -360,11 +367,11 @@ def new_card(root,page):
     return f'[<img src="{image}" alt="{title}：實際模型預覽" width="220">]({link})<br>**[{title}]({link})**'
 
 def pages():
-    result={s+'/README.md':rs for s,rs in BY_SCHOOL.items()}
+    result={school_root(s)+'/README.md':rs for s,rs in BY_SCHOOL.items()}
     result.update(OTHER_ROOTS)
     for r in ROOTS:
         prefix=r.split('/buildings/')[0]
-        if prefix.count('/')==1:
+        if any(prefix.startswith(school_root(school)+'/') and prefix.count('/')==school_root(school).count('/')+1 for school in SCHOOLS):
             if prefix+'/README.md' in FILES:result.setdefault(prefix+'/README.md',[]).append(r)
     return result
 
@@ -511,14 +518,16 @@ def homepage_recent_sections(text):
     # Do not confuse the permanent "新增大專校院圖鑑" with recent-model sections.
     return re.findall(r'(?m)^#{1,4}\s+((?:最新新增|最近新增(?:的)?建築物|最近新增)(?:[：:\s].*|$))',text)
 
-def homepage_representative_errors(text, locked, registry, schools, files):
+def homepage_representative_errors(text, locked, registry, schools, files, related_pages=()):
     """Check explicit choices, never infer replacements from new packages or bytes."""
     errors=[]
     if set(locked) != set(schools):errors.append('representative_school_set')
     cards=collections.defaultdict(list)
-    for image, link in re.findall(r'\[(<img\b[^>]*>)\]\(([^\n]*?)\)',text):
-        src=preview_images(image)
-        if len(src)==1:cards[resolve(link,'README.md')].append(resolve(src[0]['src'],'README.md'))
+    catalogs=(('README.md',text),*related_pages)
+    for page, body in catalogs:
+        for image, link in re.findall(r'\[(<img\b[^>]*>)\]\(([^\n]*?)\)',body):
+            src=preview_images(image)
+            if len(src)==1:cards[resolve(link,page)].append(resolve(src[0]['src'],page))
     for school, choice in locked.items():
         gallery=choice.get('gallery');cover=choice.get('cover')
         entry=registry.get('schools',{}).get(school,{})
@@ -527,12 +536,13 @@ def homepage_representative_errors(text, locked, registry, schools, files):
             if ('cover' not in choice or cover is not None or 'registry_cover' in choice
                     or 'cover' not in entry or entry.get('cover') is not None
                     or entry.get('status')!='pending_user_selection'
-                    or gallery!=school+'/README.md' or gallery not in files or entry.get('gallery')!=gallery):
+                    or gallery!=school_root(school,files)+'/README.md' or gallery not in files or entry.get('gallery')!=gallery):
                 errors.append('pending_representative_state:'+school)
-            cells=[cell for line in text.splitlines() if line.startswith('|')
+            cells=[cell for page,body in catalogs for line in body.splitlines() if line.startswith('|')
                    for cell in splitrow(line)
-                   if gallery and gallery in [resolve(u,'README.md') for u in urls(cell)]]
-            links=[u for u in urls(text) if gallery and resolve(u,'README.md')==gallery]
+                   if gallery and gallery in [resolve(u,page) for u in urls(cell)]]
+            links=[u for page,body in catalogs for u in urls(body)
+                   if gallery and resolve(u,page)==gallery]
             if (len(cells)!=1 or len(links)!=1
                     or cells[0].count('代表圖待指定')!=1
                     or re.search(r'<(?!br\s*/?>)[^>]*>',cells[0],flags=re.I)
@@ -541,10 +551,11 @@ def homepage_representative_errors(text, locked, registry, schools, files):
                 errors.append('pending_representative_card:'+school)
             if any(preview_images(cell)!=[] or re.search(r'!\[',cell) for cell in cells):
                 errors.append('pending_representative_image:'+school)
-            images=preview_images(text)
             # Reference-image syntax is outside this small parser: fail closed while pending.
-            if (re.search(r'!\[[^\]]*\](?!\()',text) or images is None
-                    or any((resolve(i['src'],'README.md') or '').startswith(school+'/') for i in images)):
+            if any(re.search(r'!\[[^\]]*\](?!\()',body) or preview_images(body) is None
+                    or any((resolve(i['src'],page) or '').startswith(school_root(school,files)+'/')
+                           for i in preview_images(body))
+                    for page,body in catalogs):
                 errors.append('pending_representative_image:'+school)
             continue
         if choice.get('status') is not None or entry.get('status') is not None:
@@ -587,8 +598,9 @@ def main():
     if REGISTRY.get('higher_education_model_packages')!=actual_higher:count_errors.append('registry_higher_education_packages')
     for school,roots in BY_SCHOOL.items():
         if school in REGISTRY['schools'] and REGISTRY['schools'][school]['count']!=len(roots)-len(LEGACY.get(school,[])):count_errors.append('registry_school_count:'+school)
-    recent_sections=homepage_recent_sections(read('README.md'))
-    representative_errors=homepage_representative_errors(read('README.md'),json.loads(read('homepage-representatives.json'))['schools'],REGISTRY,SCHOOLS,FILES)
+    catalogs=[(COLLEGE_CATALOG, read(COLLEGE_CATALOG))] if COLLEGE_CATALOG in FILES else []
+    recent_sections=homepage_recent_sections(read('README.md'))+sum((homepage_recent_sections(text) for _,text in catalogs),[])
+    representative_errors=homepage_representative_errors(read('README.md'),json.loads(read('homepage-representatives.json'))['schools'],REGISTRY,SCHOOLS,FILES,catalogs)
     report={'homepage_representative_errors':representative_errors,'count_errors':count_errors,'homepage_recent_sections':recent_sections,'scope':'primary package-root navigation plus one visible image per building across school/campus overviews; collapsed supporting details excluded; no homepage recent-building feed','school_count':len(SCHOOLS),'higher_education_packages':sum(map(len,BY_SCHOOL.values())),'all_repository_packages':len(set(ROOTS).union(*(set(v) for v in OTHER_ROOTS.values()))),'pages':results,'changed':changed,'passed':not representative_errors and not count_errors and not recent_sections and all(not r['errors'] for r in results)}
     if args.report:pathlib.Path(args.report).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'schools':len(SCHOOLS),'pages':len(results),'packages':report['higher_education_packages'],'changed':len(changed),'homepage_representative_errors':representative_errors,'count_errors':count_errors,'homepage_recent_sections':recent_sections,'failures':[r for r in results if r['errors']]},ensure_ascii=False,indent=2))

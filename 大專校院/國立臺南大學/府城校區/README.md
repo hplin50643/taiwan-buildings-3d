@@ -1,0 +1,32 @@
+# 府城校區
+
+## 模型圖鑑
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="../../../docs/display/catalog/2e0fc207dd8b31576db10967-640.webp" alt="紅樓" width="220">](buildings/nutn-red-building/README.md)<br>**[紅樓](buildings/nutn-red-building/README.md)** | [<img src="../../../docs/display/catalog/887509dd5a4658b8ad2aafdf-640.webp" alt="啟明苑入口端標段" width="220">](buildings/nutn-qiming-entrance/README.md)<br>**[啟明苑入口端標段](buildings/nutn-qiming-entrance/README.md)** | [<img src="../../../docs/display/catalog/ed1511b7cfa7d009e7e0dde8-640.webp" alt="新淑慎樓" width="220">](buildings/nutn-shushen-new/README.md)<br>**[新淑慎樓](buildings/nutn-shushen-new/README.md)**<br>[局部材色3MF](buildings/nutn-shushen-new/appearance.3mf) · [範圍與限制](buildings/nutn-shushen-new/README.md) |
+| [<img src="../../../docs/display/catalog/47b807edb900999c1e99dc4e-640.webp" alt="國立臺南大學｜2024年8月部分拆除前歷史美術館三翼：實際模型預覽" width="220">](buildings/nutn-art-historical-three-wings/README.md)<br>**[國立臺南大學｜2024年8月部分拆除前歷史美術館三翼](buildings/nutn-art-historical-three-wings/README.md)** | [<img src="../../../docs/display/catalog/d15d5b9da540800ad92082fb-640.webp" alt="國立臺南大學｜格致樓五層主體與中庭：實際模型預覽" width="220">](buildings/nutn-gezhi-courtyard/README.md)<br>**[國立臺南大學｜格致樓五層主體與中庭](buildings/nutn-gezhi-courtyard/README.md)** | [<img src="../../../docs/display/catalog/255bf16551e004ffc23514f6-640.webp" alt="國立臺南大學｜文薈樓六層中庭主體：實際模型預覽" width="220">](buildings/nutn-wenhui-courtyard/README.md)<br>**[國立臺南大學｜文薈樓六層中庭主體](buildings/nutn-wenhui-courtyard/README.md)** |
+| [<img src="../../../docs/display/catalog/a96e006cde4e6f0d7b5cad12-640.webp" alt="國立臺南大學｜誠正大樓：實際模型預覽" width="220">](buildings/nutn-chengzheng-main/README.md)<br>**[國立臺南大學｜誠正大樓](buildings/nutn-chengzheng-main/README.md)** | [<img src="../../../docs/display/catalog/837524ab3dcca9d7c9857940-640.webp" alt="國立臺南大學｜府城校區｜百年鐘樓：實際模型預覽" width="220">](buildings/nutn-centenary-bell-tower/README.md)<br>**[國立臺南大學｜府城校區｜百年鐘樓](buildings/nutn-centenary-bell-tower/README.md)** |  |
+
+現行收錄 **8 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
+7件模型；啟明苑為入口端標段。前三件含底座最長150mm，歷史美術館約221.7mm、格致樓約183.05mm、文薈樓約188.8mm、誠正大樓約205.4mm，非統一比例。
+
+2024年8月部分拆除前歷史美術館三翼：官方註記北翼及中翼於2024年8月拆除，南翼仍使用。本件為拆除前三翼有界外觀近似，不是2026現況、現存南翼或新教學研究大樓；絕對尺寸與窗列估計，未知外側中性封閉，0.075–0.15mm細件須放大加粗及切片支撐評估，未試印。
+
+
+
+[返回學校](../README.md)
+
+格致樓五層主體與中庭：官方1/4/5F內圖及年代未明照片導引的簡化外觀。48.30×30.20m為軸線非精確外牆包絡，層高/窗格與外側開窗估計，非2026現況測繪；細框約0.07–0.18mm需放大加粗與切片支撐評估，未試印。
+
+文薈樓六層中庭主體：官方2025平面與年代未明照片支持的簡化外觀；主高24.63m有記載，54×36m足跡、分層、窗格估值。地下層、頂部設備/百葉與內院採光罩未完整重建，不是完整全貌、2026現況測繪或試印完成。
+
+誠正大樓五層主體：官方2025平面及歷史照片支持的簡化外觀；71×32m主軸及23.75m樓高有依據，分層/窗格/部分對稱立面推定。屋頂中性封口不代表實際封閉；內部天井/地下層/屋頂設備未重建，不是2026現況測繪或試印完成。
+
+## 既有模型彩色更新（不新增套數）
+
+`nutn-red-building` 保持原STL與建模程式位元組，按官方照片為原三角面分材，增加彩色外觀3MF、Blender及十視圖；未核背部／屋面保持中性。不是提高幾何精度或現況測繪，未驗四色耗材映射、切片或實體列印。舊單色previews與QA留存為歷史，不作本次彩材驗證；詳新版README。

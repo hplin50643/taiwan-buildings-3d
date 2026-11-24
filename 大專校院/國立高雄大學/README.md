@@ -1,0 +1,48 @@
+# 國立高雄大學
+
+現行收錄 **12 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
+依公開資料與實際查看的官方照片，自主製作可供3D列印切片的外觀近似模型。當批收錄11件：圖書資訊大樓主棟、體育健康休閒多功能教學大樓、人文社會科學院 A/B 主樓、獨立 C 棟、總配電站、污水及中水處理場主建物、實驗廢水處理場主建物、正門中央警衛室／門塔、東門入口低牆／鋪面核心、西門行人入口門柱／車阻核心及綜合第一大樓主長翼／玻璃塔。圖資只完成主棟，其他校舍與校外教學/服務據點仍待續做，不能視為全校完成。
+
+## 模型圖鑑
+
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="../../docs/display/catalog/92be7f40012b8852fa83964d-640.webp" alt="圖書資訊大樓主棟：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](楠梓校本部/buildings/nuk-library-main/README.md)**<br>[局部材色3MF](楠梓校本部/buildings/nuk-library-main/appearance.3mf) · [範圍與限制](楠梓校本部/buildings/nuk-library-main/README.md) | [<img src="../../docs/display/catalog/cc3e1f60670e4ceb854c03a2-640.webp" alt="體育健康休閒多功能教學大樓：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](楠梓校本部/buildings/nuk-sports-leisure/README.md)**<br>[局部材色3MF](楠梓校本部/buildings/nuk-sports-leisure/appearance.3mf) · [範圍與限制](楠梓校本部/buildings/nuk-sports-leisure/README.md) | [<img src="../../docs/display/catalog/f7ced447320190a371cafb95-640.webp" alt="人文社會科學院 A/B 主樓：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](楠梓校本部/buildings/nuk-humanities-ab/README.md)** |
+| [<img src="../../docs/display/catalog/e819921ecf2626fa7766bcc3-640.webp" alt="國立高雄大學人文社會科學院 C 棟：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-humanities-c/README.md)<br>**[國立高雄大學人文社會科學院 C 棟](楠梓校本部/buildings/nuk-humanities-c/README.md)** | [<img src="../../docs/display/catalog/449633c29697c797f64328e5-640.webp" alt="國立高雄大學總配電站：歷史照片有界外觀近似：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-power-station/README.md)<br>**[國立高雄大學總配電站：歷史照片有界外觀近似](楠梓校本部/buildings/nuk-power-station/README.md)** | [<img src="../../docs/display/catalog/91ef9ea1d76d29a6fde71732-640.webp" alt="國立高雄大學污水及中水處理場主建物：歷史照片外觀近似：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-sewage-main/README.md)<br>**[國立高雄大學污水及中水處理場主建物：歷史照片外觀近似](楠梓校本部/buildings/nuk-sewage-main/README.md)** |
+| [<img src="../../docs/display/catalog/3903252223e09c58c8c9bb89-640.webp" alt="國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-lab-wastewater-main/README.md)<br>**[國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似](楠梓校本部/buildings/nuk-lab-wastewater-main/README.md)** | [<img src="../../docs/display/catalog/eb14f223a28656fa77b6abbd-640.webp" alt="國立高雄大學正門中央警衛室及門塔：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-main-gate-core/README.md)<br>**[國立高雄大學正門中央警衛室及門塔](楠梓校本部/buildings/nuk-main-gate-core/README.md)** | [<img src="../../docs/display/catalog/4592e538478baf09208c27ec-640.webp" alt="國立高雄大學東門入口低牆及鋪面核心：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-east-gate-core/README.md)<br>**[國立高雄大學東門入口低牆及鋪面核心](楠梓校本部/buildings/nuk-east-gate-core/README.md)** |
+| [<img src="../../docs/display/catalog/b8ef919f211c18a237c7a643-640.webp" alt="國立高雄大學西門行人入口門柱與車阻核心：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-west-gate-core/README.md)<br>**[國立高雄大學西門行人入口門柱與車阻核心](楠梓校本部/buildings/nuk-west-gate-core/README.md)** | [<img src="../../docs/display/catalog/91d0ad8dacd9c47a94c65459-640.webp" alt="國立高雄大學綜合第一大樓主長翼及端部玻璃塔：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-general1-main-wing/README.md)<br>**[國立高雄大學綜合第一大樓主長翼及端部玻璃塔](楠梓校本部/buildings/nuk-general1-main-wing/README.md)** | [<img src="../../docs/display/catalog/66886c2101c2932540235da2-640.webp" alt="國立高雄大學木構造實驗展示屋：2014 施工期主木構架研究：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-demo-building-frame-2014/README.md)<br>**[國立高雄大學木構造實驗展示屋：2014 施工期主木構架研究](楠梓校本部/buildings/nuk-demo-building-frame-2014/README.md)** |
+
+每格一個不同模型，各件獨立尺度。圖資與體健休含底座最長150mm；人社A/B為242×256×34mm，C為約244.90×47.50×13.80mm；詳頁提供各自模型與實際渲染，非全校完成。未實體試印；各件原範圍、支撐與細件限制保留，請讀各自README。
+
+總配電站為照片支持的外觀近似：未知背面與另一短端中性封閉，尺寸估計、短端映射示意，不是精確全棟還原；幾何QA不表示實景完整性。
+
+污水及中水處理場僅地上主建物歷史外觀近似：長側中性、另一短端局部推定，尺寸估計，不含地下池槽及景觀；非整場區或現況測繪。
+
+實驗廢水處理場亦僅歷史地上主建物近似：未見背面／另一端中性化、尺寸估計，不含地下處理設施與廣場，非全場或現況測繪。
+
+正門亦僅中央警衛室／門塔歷史近似，不含外側長牆、門柱和道路；未確認背面中性、尺寸估計、校名替代字型，非整條校門或現況。
+
+東門僅入口低牆／鋪面與兩盞燈的歷史近似構造，非獨立館舍；尺寸及磚格／燈飾估計，不含道路、植栽或背景建物，非現況。
+
+西門僅行人入口門柱／車阻核心，非獨立館舍；隱藏管件接續、落地及尺寸估計，不含背景綜合一館或道路。
+
+綜合第一大樓主長翼及端部玻璃塔，依四張歷史官照與2024整修平面作有界外觀近似；不含附連集會堂、地下室、下沉庭院或周邊建物。尺寸估計、未知端中性封閉，非現況測繪；0.11–0.28mm細件須放大或加粗，未試印，不可稱直接可列印。
+
+## 學校、校區及範圍
+
+[楠梓校本部](楠梓校本部/README.md) · [逐項續接與來源](remaining-buildings.md) · [機器可讀清單](building-inventory.json)
+
+2026-10-13核對的總務處入口提供115年校園地圖；它是示意圖，不是逐棟地籍清冊。48個工作條目含館舍群、主棟未完部分、技術設施、入口、借用校外場地與地圖非建物項目，不能把48稱為48棟建築。另保留木構造示範屋、明誠分部及金門等校外場域線索，分清「尚未研究」與「查過仍缺現況/棟界」。
+
+[2026-06-12官方公告](https://www.nuk.edu.tw/p/406-1000-98803,r83.php?Lang=zh-tw)只稱以「國立高雄中山大學」作與中山大學後續協商校名；本包維持「國立高雄大學」，不把協商當已完成合併。
+
+第三方原照片/PDF不重新散布，公開sources只列URL、年代與支持特徵。模型不是測繪或2026完整現況重建。
+
+## 人文社會科學院 A/B 主樓範圍
+
+人文社會科學院完整相連 A/B 主樓：A三層大U／B二層小U錯向90度角接、內降斜接屋面、共六凹平台與各棟一水箱服務區、高A低B灰框寬簷、角部玻璃、真斜頂教室及可見車道凹入口。242×256×34mm，5材質Blend/3MF/STL、5實mesh圖；11144面單閉殼、170層與局部探針、格式真編存讀及乾淨九檔重建通過。發包圖＋早期官照外觀近似，非竣工測繪或2026現況；C分離低長體、完整地景、地下延伸與室內排除。微型厚化、需支撐評估、未實體試印。 [模型與來源](楠梓校本部/buildings/nuk-humanities-ab/README.md) · [QA警告](楠梓校本部/buildings/nuk-humanities-ab/QA.md)。既有圖資與體健休模型及其範圍不變。

@@ -247,7 +247,7 @@ class GalleryTests(unittest.TestCase):
             lines,a,b=g.table(text,PAGE,[R1,R2])
             self.assertIsNone(g.packed_gallery(lines,a,b,PAGE,[R1,R2]))
     def test_requested_galleries_have_one_packed_table(self):
-        for page in ['國立陽明交通大學/光復校區/README.md','國立臺灣大學/README.md']:
+        for page in [g.school_root('國立陽明交通大學')+'/光復校區/README.md',g.school_root('國立臺灣大學')+'/README.md']:
             with self.subTest(page=page):
                 expected=g.pages()[page];text=g.read(page)
                 rows=self.card_rows(text);cells=[c for row in rows for c in row]
@@ -395,11 +395,13 @@ class VisibleOverviewPolicyTests(unittest.TestCase):
             return g.audit(PAGE,[R1,R2])
     def test_all_canonical_school_campus_pages_are_enabled(self):
         # Derive the expected set from indexed paths, not pages()/the policy predicate.
-        expected={school+'/README.md' for school in g.SCHOOLS}
+        roots={g.school_root(school) for school in g.SCHOOLS}
+        expected={root+'/README.md' for root in roots}
         for page in g.FILES:
-            parts=page.split('/')
-            if len(parts)==3 and parts[0] in g.SCHOOLS and parts[-1]=='README.md':
-                prefix='/'.join(parts[:2])+'/buildings/'
+            if not page.endswith('/README.md'):continue
+            campus=page.rsplit('/',1)[0]
+            if campus.rsplit('/',1)[0] in roots:
+                prefix=campus+'/buildings/'
                 if any(path.startswith(prefix) for path in g.FILES):expected.add(page)
         chosen={page for page in g.pages() if g.single_image_overview(page)}
         self.assertEqual(chosen,expected)
@@ -494,6 +496,7 @@ class HomepageCardCaptionTests(unittest.TestCase):
 
     def test_current_homepage_all_cards_have_no_descriptive_suffix(self):
         cards=self.card_suffixes(g.read('README.md'))
+        if g.COLLEGE_CATALOG in g.FILES: cards+=self.card_suffixes(g.read(g.COLLEGE_CATALOG))
         self.assertTrue(cards)
         self.assertEqual([x for x in cards if x[1] not in ('','代表圖待指定')],[])
         self.assertEqual(len({href for href,_ in cards}),len(cards))
@@ -510,5 +513,26 @@ class HomepageCardCaptionTests(unittest.TestCase):
         text=TABLE(['[<img src="N/front.png">](N/README.md)<br>**[N｜1 組](N/README.md)**<br>外觀研究模型','',''])
         self.assertEqual(self.card_suffixes(text),[('N/README.md','外觀研究模型')])
 
+
+
+class CollegeSubdirectoryTests(unittest.TestCase):
+    def test_representative_in_nested_catalog_preserves_exact_file(self):
+        gallery='大專校院/甲/README.md'
+        cover='docs/display/甲.webp'
+        choice={'甲':{'gallery':gallery,'cover':cover}}
+        registry={'schools':choice}
+        files={gallery,cover}
+        md='[<img src="../docs/display/甲.webp">](甲/README.md)'
+        self.assertEqual(g.homepage_representative_errors('',choice,registry,{'甲'},files,[(g.COLLEGE_CATALOG,md)]),[])
+        self.assertIn('homepage_representative_changed:甲',g.homepage_representative_errors('',choice,registry,{'甲'},files,[(g.COLLEGE_CATALOG,md.replace('../docs','docs'))]))
+
+    def test_nested_campus_is_detected_and_model_remains_not_overview(self):
+        school='甲'; root='大專校院/甲/校區/buildings/a'
+        campus='大專校院/甲/校區/README.md'
+        schoolpage='大專校院/甲/README.md'
+        with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',None),patch.object(g,'SCHOOLS',{school}),patch.object(g,'BY_SCHOOL',{school:[root]}),patch.object(g,'ROOTS',[root]),patch.object(g,'FILES',{schoolpage,campus,root+'/README.md'}),patch.object(g,'OTHER_ROOTS',{}):
+            self.assertEqual(set(g.pages()),{schoolpage,campus})
+            self.assertTrue(g.single_image_overview(campus))
+            self.assertFalse(g.single_image_overview(root+'/README.md'))
 
 if __name__=='__main__':unittest.main()

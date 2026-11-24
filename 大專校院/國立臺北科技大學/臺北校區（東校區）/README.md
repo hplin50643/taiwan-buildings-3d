@@ -1,0 +1,11 @@
+# 臺北校區（東校區）
+
+## 模型圖鑑
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 億光大樓<br>[![億光大樓](../../../docs/display/catalog/f3e1b8538d6ca0244c2db18c-640.webp)](buildings/ntut-everlight/)<br>[彩色3MF](buildings/ntut-everlight/appearance.3mf) · [材色範圍](buildings/ntut-everlight/README.md) |  |  |
+
+目前只有[億光大樓](buildings/ntut-everlight/)地上外殼近似模型。依2017、2020與校方未標日期實拍自建；並非2026測繪。地下層、鄰棟、宿舍與後續工地未包含，不代表整個東校區。
+
+[返回學校圖鑑](../README.md) · [其餘建物續接](../coverage/README.md)

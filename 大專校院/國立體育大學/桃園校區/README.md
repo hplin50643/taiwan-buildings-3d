@@ -1,0 +1,26 @@
+# 國立體育大學｜桃園校區
+
+累計6個不同建築，含5個局部段，並非全校完成。
+
+## 模型圖鑑
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 綜合體育館<br>[![綜合體育館](../../../docs/display/catalog/ad1f9c08eb4ee9fd9c60bd5f-640.webp)](buildings/ntsu-arena/README.md) | 行政教學大樓中央入口段<br>[![行政教學大樓中央入口段](../../../docs/display/catalog/2b697a8b7b45063fc616dd66-640.webp)](buildings/ntsu-administration-entrance-section/README.md) | 圖書暨體育博物館前側段<br>[![圖書暨體育博物館前側段](../../../docs/display/catalog/8428e80a53d3dd05473619cf-640.webp)](buildings/ntsu-library-front-section/README.md)<br>[局部材色3MF](buildings/ntsu-library-front-section/appearance.3mf) · [範圍與限制](buildings/ntsu-library-front-section/README.md) · [校驗版本說明](buildings/ntsu-library-front-section/CHECKSUM-SCOPE.md) |
+| 教學研究大樓中央前立面段<br>[![教學研究大樓中央前立面段](../../../docs/display/catalog/41d8c212457508ba1e7cd075-640.webp)](buildings/ntsu-teaching-central-section/README.md)<br>[局部材色3MF](buildings/ntsu-teaching-central-section/appearance.3mf) · [範圍與限制](buildings/ntsu-teaching-central-section/README.md) · [校驗版本說明](buildings/ntsu-teaching-central-section/CHECKSUM-SCOPE.md) | 綜合科技大樓弧廊及內凹立面段<br>[![綜合科技大樓弧廊及內凹立面段](../../../docs/display/catalog/69ce325db0b5463eba9cc03b-640.webp)](buildings/ntsu-science-portico-section/README.md)<br>[局部材色3MF](buildings/ntsu-science-portico-section/appearance.3mf) · [範圍與限制](buildings/ntsu-science-portico-section/README.md) · [校驗版本說明](buildings/ntsu-science-portico-section/CHECKSUM-SCOPE.md) | 室內網球館中央門樓段<br>[![室內網球館中央門樓段](../../../docs/display/catalog/a6d3b033ae2bcc05bc318664-640.webp)](buildings/ntsu-tennis-entry-section/README.md)<br>[局部材色3MF](buildings/ntsu-tennis-entry-section/appearance.3mf) · [範圍與限制](buildings/ntsu-tennis-entry-section/README.md) · [校驗版本說明](buildings/ntsu-tennis-entry-section/CHECKSUM-SCOPE.md) |
+
+- [綜合體育館](buildings/ntsu-arena/README.md)｜既有外觀全形近似（後勤細節未核）
+- [行政教學大樓中央入口段](buildings/ntsu-administration-entrance-section/README.md)｜局部段，非全棟
+- [圖書暨體育博物館前側段](buildings/ntsu-library-front-section/README.md)｜局部段，圖書館與博物館合計一棟
+
+[校區續接清單與來源](coverage.json)
+
+[下一批建物與精確來源續接](NEXT-STEPS.md)
+
+- [教學研究大樓中央前立面段](buildings/ntsu-teaching-central-section/README.md)｜局部，非全館
+
+- [綜合科技大樓弧廊及內凹立面段](buildings/ntsu-science-portico-section/README.md)｜局部，非全館
+
+- [室內網球館中央門樓段](buildings/ntsu-tennis-entry-section/README.md)｜局部，非全館
+
+[綜合體育館有限材料色系與可編修檔](buildings/ntsu-arena/appearance/README.md)：僅23,862個原面指定主要拱頂淡黃綠、水平唇邊暖白與前幕牆灰藍家族，其餘6,786面保持未知中性；原30,648面與面序不變。白色不延伸至環梁／V柱，後玻璃及環臺等未核部分不推色；不是整棟配色完成、歷史精準原色或2026現況。配色不另計一套，原近似範圍及支撐／未實印警告保留。

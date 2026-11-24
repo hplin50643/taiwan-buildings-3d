@@ -1,0 +1,36 @@
+# 楠梓校本部
+
+現行收錄 **12 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
+高雄市楠梓區高雄大學路700號。當批收錄11件自主外觀近似模型；圖資仍只涵蓋主棟及裁切階台，人社以A/B相連主樓和獨立C棟分成兩個模型；本校區尚未全做。
+
+總配電站為照片支持外觀近似，未知背面與另一短端中性封閉，尺寸估計、短端映射示意，不是全棟精確還原。
+
+污水及中水處理場僅地上主建物歷史外觀近似；長側中性、另一短端局部推定、尺寸估計，非整場區或現況測繪。
+
+實驗廢水處理場僅地上主建物歷史外觀近似；未見背面／另一端中性、尺寸估計，不含地下設施與廣場，非整場區或現況。
+
+正門僅中央警衛室與門塔歷史近似，不含外側長牆／道路；背面中性、尺寸估計、替代校名字型，非完整校門或現況。
+
+東門僅入口低牆與鋪面核心歷史近似，非獨立館舍；尺寸與燈飾／磚格估計，不含道路或背景建物。
+
+西門僅行人入口門柱與車阻歷史近似核心，非館舍；隱藏管件拓樸及尺寸未核，不含背景建物與道路。
+
+綜合第一大樓主長翼及端部玻璃塔，依四張歷史官照與2024整修平面作有界外觀近似；不含附連集會堂、地下室、下沉庭院或周邊建物。尺寸估計、未知端中性封閉，非現況測繪；0.11–0.28mm細件須放大或加粗，未試印，不可稱直接可列印。
+
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="../../../docs/display/catalog/92be7f40012b8852fa83964d-640.webp" alt="圖書資訊大樓主棟：實際模型預覽" width="220">](buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](buildings/nuk-library-main/README.md)**<br>[局部材色3MF](buildings/nuk-library-main/appearance.3mf) · [範圍與限制](buildings/nuk-library-main/README.md) | [<img src="../../../docs/display/catalog/cc3e1f60670e4ceb854c03a2-640.webp" alt="體育健康休閒多功能教學大樓：實際模型預覽" width="220">](buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](buildings/nuk-sports-leisure/README.md)**<br>[局部材色3MF](buildings/nuk-sports-leisure/appearance.3mf) · [範圍與限制](buildings/nuk-sports-leisure/README.md) | [<img src="../../../docs/display/catalog/f7ced447320190a371cafb95-640.webp" alt="人文社會科學院 A/B 主樓：實際模型預覽" width="220">](buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](buildings/nuk-humanities-ab/README.md)** |
+| [<img src="../../../docs/display/catalog/e819921ecf2626fa7766bcc3-640.webp" alt="國立高雄大學人文社會科學院 C 棟：實際模型預覽" width="220">](buildings/nuk-humanities-c/README.md)<br>**[國立高雄大學人文社會科學院 C 棟](buildings/nuk-humanities-c/README.md)** | [<img src="../../../docs/display/catalog/449633c29697c797f64328e5-640.webp" alt="國立高雄大學總配電站：歷史照片有界外觀近似：實際模型預覽" width="220">](buildings/nuk-power-station/README.md)<br>**[國立高雄大學總配電站：歷史照片有界外觀近似](buildings/nuk-power-station/README.md)** | [<img src="../../../docs/display/catalog/91ef9ea1d76d29a6fde71732-640.webp" alt="國立高雄大學污水及中水處理場主建物：歷史照片外觀近似：實際模型預覽" width="220">](buildings/nuk-sewage-main/README.md)<br>**[國立高雄大學污水及中水處理場主建物：歷史照片外觀近似](buildings/nuk-sewage-main/README.md)** |
+| [<img src="../../../docs/display/catalog/3903252223e09c58c8c9bb89-640.webp" alt="國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似：實際模型預覽" width="220">](buildings/nuk-lab-wastewater-main/README.md)<br>**[國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似](buildings/nuk-lab-wastewater-main/README.md)** | [<img src="../../../docs/display/catalog/eb14f223a28656fa77b6abbd-640.webp" alt="國立高雄大學正門中央警衛室及門塔：實際模型預覽" width="220">](buildings/nuk-main-gate-core/README.md)<br>**[國立高雄大學正門中央警衛室及門塔](buildings/nuk-main-gate-core/README.md)** | [<img src="../../../docs/display/catalog/4592e538478baf09208c27ec-640.webp" alt="國立高雄大學東門入口低牆及鋪面核心：實際模型預覽" width="220">](buildings/nuk-east-gate-core/README.md)<br>**[國立高雄大學東門入口低牆及鋪面核心](buildings/nuk-east-gate-core/README.md)** |
+| [<img src="../../../docs/display/catalog/b8ef919f211c18a237c7a643-640.webp" alt="國立高雄大學西門行人入口門柱與車阻核心：實際模型預覽" width="220">](buildings/nuk-west-gate-core/README.md)<br>**[國立高雄大學西門行人入口門柱與車阻核心](buildings/nuk-west-gate-core/README.md)** | [<img src="../../../docs/display/catalog/91d0ad8dacd9c47a94c65459-640.webp" alt="國立高雄大學綜合第一大樓主長翼及端部玻璃塔：實際模型預覽" width="220">](buildings/nuk-general1-main-wing/README.md)<br>**[國立高雄大學綜合第一大樓主長翼及端部玻璃塔](buildings/nuk-general1-main-wing/README.md)** | [<img src="../../../docs/display/catalog/66886c2101c2932540235da2-640.webp" alt="國立高雄大學木構造實驗展示屋：2014 施工期主木構架研究：實際模型預覽" width="220">](buildings/nuk-demo-building-frame-2014/README.md)<br>**[國立高雄大學木構造實驗展示屋：2014 施工期主木構架研究](buildings/nuk-demo-building-frame-2014/README.md)** |
+
+[回學校入口](../README.md) · [逐項未完成範圍](../remaining-buildings.md)
+
+## 人文社會科學院 A/B 主樓範圍
+
+人文社會科學院完整相連 A/B 主樓：A三層大U／B二層小U錯向90度角接、內降斜接屋面、共六凹平台與各棟一水箱服務區、高A低B灰框寬簷、角部玻璃、真斜頂教室及可見車道凹入口。242×256×34mm，5材質Blend/3MF/STL、5實mesh圖；11144面單閉殼、170層與局部探針、格式真編存讀及乾淨九檔重建通過。發包圖＋早期官照外觀近似，非竣工測繪或2026現況；C分離低長體、完整地景、地下延伸與室內排除。微型厚化、需支撐評估、未實體試印。 [模型與來源](buildings/nuk-humanities-ab/README.md) · [QA警告](buildings/nuk-humanities-ab/QA.md)。既有圖資與體健休模型及其範圍不變。

@@ -1,0 +1,146 @@
+# 國立臺灣大學：公開外觀3D列印模型
+
+## 模型圖鑑
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="校總區/buildings/ntu-administration/display/front-current-640.webp" alt="第一行政大樓（歷史前棟）" width="220">](校總區/buildings/ntu-administration/display/README.md)<br>**[第一行政大樓（歷史前棟）](校總區/buildings/ntu-administration/display/README.md)** | [<img src="校總區/buildings/ntu-agricultural-exhibition/display/front-current-640.webp" alt="農業陳列館" width="220">](校總區/buildings/ntu-agricultural-exhibition/display/README.md)<br>**[農業陳列館](校總區/buildings/ntu-agricultural-exhibition/display/README.md)** | [<img src="校總區/buildings/ntu-liberal-arts/appearance/previews/front.png" alt="文學院歷史館舍" width="220">](校總區/buildings/ntu-liberal-arts/README.md)<br>**[文學院歷史館舍](校總區/buildings/ntu-liberal-arts/README.md)** |
+| [<img src="校總區/buildings/ntu-main-library/display/preview-640.webp" alt="總圖書館" width="220">](校總區/buildings/ntu-main-library/README.md)<br>**[總圖書館](校總區/buildings/ntu-main-library/README.md)** | [<img src="校總區/buildings/ntu-old-main-library/appearance/previews/front.png" alt="舊總圖書館／校史館（歷史前棟）" width="220">](校總區/buildings/ntu-old-main-library/README.md)<br>**[舊總圖書館／校史館（歷史前棟）](校總區/buildings/ntu-old-main-library/README.md)** | [<img src="校總區/buildings/ntu-boya-lecture/preview.png" alt="博雅教學館" width="220">](校總區/buildings/ntu-boya-lecture/README.md)<br>**[博雅教學館](校總區/buildings/ntu-boya-lecture/README.md)** |
+| [<img src="校總區/buildings/ntu-first-student-center/display/front-current-640.webp" alt="第一學生活動中心（歷史前棟）" width="220">](校總區/buildings/ntu-first-student-center/display/README.md)<br>**[第一學生活動中心（歷史前棟）](校總區/buildings/ntu-first-student-center/display/README.md)** | [<img src="校總區/buildings/ntu-new-moon-pavilion/preview.png" alt="新月台" width="220">](校總區/buildings/ntu-new-moon-pavilion/README.md)<br>**[新月台](校總區/buildings/ntu-new-moon-pavilion/README.md)**<br>[局部材色3MF](校總區/buildings/ntu-new-moon-pavilion/appearance.3mf) · [範圍與限制](校總區/buildings/ntu-new-moon-pavilion/README.md) · [原檔清單勘誤](校總區/buildings/ntu-new-moon-pavilion/FILE-INVENTORY-CORRECTION.md) | [<img src="校總區/buildings/ntu-putong-lecture/appearance/previews/front.png" alt="普通教學館" width="220">](校總區/buildings/ntu-putong-lecture/README.md)<br>**[普通教學館](校總區/buildings/ntu-putong-lecture/README.md)** |
+| [<img src="../../docs/display/catalog/ebbbda97056bee584a2e9fe9-640.webp" alt="綜合體育館" width="220">](校總區/buildings/ntu-sports-center/display/README.md)<br>**[綜合體育館](校總區/buildings/ntu-sports-center/display/README.md)** | [<img src="校總區/buildings/ntu-electrical-engineering-one/appearance/previews/front.png" alt="電機一館（主要前棟）" width="220">](校總區/buildings/ntu-electrical-engineering-one/README.md)<br>**[電機一館（主要前棟）](校總區/buildings/ntu-electrical-engineering-one/README.md)** | [<img src="校總區/buildings/ntu-old-gymnasium/display/front-current-640.webp" alt="舊體育館" width="220">](校總區/buildings/ntu-old-gymnasium/display/README.md)<br>**[舊體育館](校總區/buildings/ntu-old-gymnasium/display/README.md)** |
+| [<img src="校總區/buildings/ntu-xinsheng-lecture/preview.png" alt="新生教學館" width="220">](校總區/buildings/ntu-xinsheng-lecture/README.md)<br>**[新生教學館](校總區/buildings/ntu-xinsheng-lecture/README.md)** | [<img src="校總區/buildings/ntu-agronomy/display/front-current-640.webp" alt="農藝館" width="220">](校總區/buildings/ntu-agronomy/display/README.md)<br>**[農藝館](校總區/buildings/ntu-agronomy/display/README.md)** | [<img src="校總區/buildings/ntu-biochemical-sciences-front/appearance/previews/front.png" alt="生化科學研究所（歷史前棟）" width="220">](校總區/buildings/ntu-biochemical-sciences-front/README.md)<br>**[生化科學研究所（歷史前棟）](校總區/buildings/ntu-biochemical-sciences-front/README.md)** |
+| [<img src="校總區/buildings/ntu-engineering-museum-retained/appearance/previews/front.png" alt="工學博物館（修復保留館體）" width="220">](校總區/buildings/ntu-engineering-museum-retained/README.md)<br>**[工學博物館（修復保留館體）](校總區/buildings/ntu-engineering-museum-retained/README.md)** | [<img src="校總區/buildings/ntu-applied-mechanics-front/preview.png" alt="應用力學研究大樓（主要前棟）" width="220">](校總區/buildings/ntu-applied-mechanics-front/README.md)<br>**[應用力學研究大樓（主要前棟）](校總區/buildings/ntu-applied-mechanics-front/README.md)**<br>[彩色3MF](校總區/buildings/ntu-applied-mechanics-front/appearance.3mf) · [材色範圍](校總區/buildings/ntu-applied-mechanics-front/README.md) | [<img src="校總區/buildings/ntu-library-information-science/appearance/previews/front.png" alt="圖書資訊學系館" width="220">](校總區/buildings/ntu-library-information-science/README.md)<br>**[圖書資訊學系館](校總區/buildings/ntu-library-information-science/README.md)** |
+| [<img src="竹北校區/buildings/ntu-bizhen-hall/display/preview-640.webp" alt="碧禎館" width="220">](竹北校區/buildings/ntu-bizhen-hall/display/README.md)<br>**[碧禎館](竹北校區/buildings/ntu-bizhen-hall/README.md)**<br>[局部材色3MF](竹北校區/buildings/ntu-bizhen-hall/appearance.3mf) · [範圍與限制](竹北校區/buildings/ntu-bizhen-hall/README.md) | [<img src="校總區/buildings/ntu-esoe-wave-entrance/appearance/previews/front.png" alt="工程科學及海洋工程學系館（五波浪入口段）" width="220">](校總區/buildings/ntu-esoe-wave-entrance/README.md)<br>**[工程科學及海洋工程學系館（五波浪入口段）](校總區/buildings/ntu-esoe-wave-entrance/README.md)** | [<img src="校總區/buildings/ntu-veterinary-one/preview.png" alt="獸醫一館" width="220">](校總區/buildings/ntu-veterinary-one/README.md)<br>**[獸醫一館](校總區/buildings/ntu-veterinary-one/README.md)**<br>[彩色3MF](校總區/buildings/ntu-veterinary-one/appearance.3mf) · [材色範圍](校總區/buildings/ntu-veterinary-one/README.md) |
+| [<img src="校總區/buildings/ntu-yen-tjing-ling-center/appearance/previews/front.png" alt="嚴慶齡工業研究中心" width="220">](校總區/buildings/ntu-yen-tjing-ling-center/README.md)<br>**[嚴慶齡工業研究中心](校總區/buildings/ntu-yen-tjing-ling-center/README.md)** | [<img src="校總區/buildings/ntu-mingda-hall/preview.png" alt="明達館（電機四館）" width="220">](校總區/buildings/ntu-mingda-hall/README.md)<br>**[明達館（電機四館）](校總區/buildings/ntu-mingda-hall/README.md)** | [<img src="校總區/buildings/ntu-national-development/preview.png" alt="國家發展所大樓" width="220">](校總區/buildings/ntu-national-development/README.md)<br>**[國家發展所大樓](校總區/buildings/ntu-national-development/README.md)**<br>[彩色3MF](校總區/buildings/ntu-national-development/appearance.3mf) · [材色範圍](校總區/buildings/ntu-national-development/README.md) |
+| [<img src="雲林校區/buildings/ntu-chuhe-hall/appearance/previews/front.png" alt="鋤禾館（雲林分部農業育成推廣中心）" width="220">](雲林校區/buildings/ntu-chuhe-hall/README.md)<br>**[鋤禾館（雲林分部農業育成推廣中心）](雲林校區/buildings/ntu-chuhe-hall/README.md)** | [<img src="校總區/buildings/ntu-electrical-engineering-two/preview.png" alt="電機二館（主立面量體）" width="220">](校總區/buildings/ntu-electrical-engineering-two/README.md)<br>**[電機二館（主立面量體）](校總區/buildings/ntu-electrical-engineering-two/README.md)**<br>[彩色3MF](校總區/buildings/ntu-electrical-engineering-two/appearance.3mf) · [材色範圍](校總區/buildings/ntu-electrical-engineering-two/README.md) | [<img src="校總區/buildings/ntu-sociology-social-work/preview.png" alt="社會及社工館" width="220">](校總區/buildings/ntu-sociology-social-work/README.md)<br>**[社會及社工館](校總區/buildings/ntu-sociology-social-work/README.md)**<br>[局部材色3MF](校總區/buildings/ntu-sociology-social-work/appearance.3mf) · [範圍與限制](校總區/buildings/ntu-sociology-social-work/README.md) |
+| [<img src="校總區/buildings/ntu-tomatake-hall/appearance/previews/front.png" alt="知武館" width="220">](校總區/buildings/ntu-tomatake-hall/README.md)<br>**[知武館](校總區/buildings/ntu-tomatake-hall/README.md)** | [<img src="城中校區/buildings/ntu-medical-humanities-museum/appearance/previews/front.png" alt="醫學人文博物館（中央樓及西翼外部量體）" width="220">](城中校區/buildings/ntu-medical-humanities-museum/README.md)<br>**[醫學人文博物館（中央樓及西翼外部量體）](城中校區/buildings/ntu-medical-humanities-museum/README.md)** | [<img src="校總區/buildings/ntu-atmospheric-science-b/preview.png" alt="大氣科學館B館" width="220">](校總區/buildings/ntu-atmospheric-science-b/README.md)<br>**[大氣科學館B館](校總區/buildings/ntu-atmospheric-science-b/README.md)**<br>[彩色3MF](校總區/buildings/ntu-atmospheric-science-b/appearance.3mf) · [材色範圍](校總區/buildings/ntu-atmospheric-science-b/README.md) |
+| [<img src="校總區/buildings/ntu-geology-front/appearance/previews/front.png" alt="地質科學館（三層前棟）" width="220">](校總區/buildings/ntu-geology-front/README.md)<br>**[地質科學館（三層前棟）](校總區/buildings/ntu-geology-front/README.md)** | [<img src="校總區/buildings/ntu-herbarium-main/appearance/previews/front.png" alt="植物標本館（主館）" width="220">](校總區/buildings/ntu-herbarium-main/README.md)<br>**[植物標本館（主館）](校總區/buildings/ntu-herbarium-main/README.md)** | [<img src="校總區/buildings/ntu-iso-cottage-pre-restoration/appearance/previews/front.png" alt="磯永吉紀念室（2026修繕前外觀）" width="220">](校總區/buildings/ntu-iso-cottage-pre-restoration/README.md)<br>**[磯永吉紀念室（2026修繕前外觀）](校總區/buildings/ntu-iso-cottage-pre-restoration/README.md)** |
+| [<img src="校總區/buildings/ntu-meteorology-a/preview.png" alt="氣象館A館" width="220">](校總區/buildings/ntu-meteorology-a/README.md)<br>**[氣象館A館](校總區/buildings/ntu-meteorology-a/README.md)**<br>[彩色3MF](校總區/buildings/ntu-meteorology-a/appearance.3mf) · [材色範圍](校總區/buildings/ntu-meteorology-a/README.md) | [<img src="校總區/buildings/ntu-food-science-front/appearance/previews/front.png" alt="食品科技館（原館前部）" width="220">](校總區/buildings/ntu-food-science-front/README.md)<br>**[食品科技館（原館前部）](校總區/buildings/ntu-food-science-front/README.md)** | [<img src="校總區/buildings/ntu-geography-front/display/front-current-640.webp" alt="地理館（前部）" width="220">](校總區/buildings/ntu-geography-front/display/README.md)<br>**[地理館（前部）](校總區/buildings/ntu-geography-front/display/README.md)** |
+| [<img src="校總區/buildings/ntu-geological-specimen-cottage/display/front-current-640.webp" alt="地質標本館小屋" width="220">](校總區/buildings/ntu-geological-specimen-cottage/display/README.md)<br>**[地質標本館小屋](校總區/buildings/ntu-geological-specimen-cottage/display/README.md)** | [<img src="校總區/buildings/ntu-language-front/appearance/previews/front.png" alt="語文大樓（前部）" width="220">](校總區/buildings/ntu-language-front/README.md)<br>**[語文大樓（前部）](校總區/buildings/ntu-language-front/README.md)** | [<img src="校總區/buildings/ntu-linze-main/preview.png" alt="霖澤館（主棟）" width="220">](校總區/buildings/ntu-linze-main/README.md)<br>**[霖澤館（主棟）](校總區/buildings/ntu-linze-main/README.md)** |
+| [<img src="校總區/buildings/ntu-wancai-main/display/preview-current-640.webp" alt="萬才館（主棟與前階梯段）" width="220">](校總區/buildings/ntu-wancai-main/display/README.md)<br>**[萬才館（主棟與前階梯段）](校總區/buildings/ntu-wancai-main/display/README.md)**<br>[局部材色3MF](校總區/buildings/ntu-wancai-main/appearance.3mf) · [範圍與限制](校總區/buildings/ntu-wancai-main/display/README.md) | [<img src="校總區/buildings/ntu-bory-hall/display/front-current-640.webp" alt="博理館" width="220">](校總區/buildings/ntu-bory-hall/display/README.md)<br>**[博理館](校總區/buildings/ntu-bory-hall/display/README.md)** | [<img src="校總區/buildings/ntu-chemical-engineering-entry/display/preview-current-640.webp" alt="化學工程館正門入口段" width="220">](校總區/buildings/ntu-chemical-engineering-entry/display/README.md)<br>**[化學工程館正門入口段](校總區/buildings/ntu-chemical-engineering-entry/display/README.md)**<br>[彩色3MF](校總區/buildings/ntu-chemical-engineering-entry/appearance.3mf) · [材色範圍](校總區/buildings/ntu-chemical-engineering-entry/display/README.md) |
+| [<img src="校總區/buildings/ntu-social-sciences-main/preview.png" alt="社會科學院主棟" width="220">](校總區/buildings/ntu-social-sciences-main/README.md)<br>**[社會科學院主棟](校總區/buildings/ntu-social-sciences-main/README.md)**<br>[局部材色3MF](校總區/buildings/ntu-social-sciences-main/appearance.3mf) · [範圍與限制](校總區/buildings/ntu-social-sciences-main/README.md) | [<img src="校總區/buildings/ntu-historic-gate-front-segment/previews/front.png" alt="國立臺灣大學歷史校門：弧形前牆與內側雙行人門段：實際模型預覽" width="220">](校總區/buildings/ntu-historic-gate-front-segment/README.md)<br>**[國立臺灣大學歷史校門：弧形前牆與內側雙行人門段](校總區/buildings/ntu-historic-gate-front-segment/README.md)** | [<img src="校總區/buildings/ntu-fu-bell-pavilion/previews/front.png" alt="國立臺灣大學｜傅鐘鐘亭：實際模型預覽" width="220">](校總區/buildings/ntu-fu-bell-pavilion/README.md)<br>**[國立臺灣大學｜傅鐘鐘亭](校總區/buildings/ntu-fu-bell-pavilion/README.md)** |
+| [<img src="校總區/buildings/ntu-si-nian-memorial-hall/previews/front.png" alt="國立臺灣大學｜傅園斯年堂：實際模型預覽" width="220">](校總區/buildings/ntu-si-nian-memorial-hall/README.md)<br>**[國立臺灣大學｜傅園斯年堂](校總區/buildings/ntu-si-nian-memorial-hall/README.md)** | [<img src="城中校區/buildings/ntu-hospital-bam-wood-hut-2018/previews/front.png" alt="臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）：實際模型預覽" width="220">](城中校區/buildings/ntu-hospital-bam-wood-hut-2018/README.md)<br>**[臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）](城中校區/buildings/ntu-hospital-bam-wood-hut-2018/README.md)** | [<img src="溪頭實驗林/buildings/ntu-xitou-tree-song/previews/front.png" alt="臺灣大學溪頭實驗林｜樹之歌木屋（2019）：實際模型預覽" width="220">](溪頭實驗林/buildings/ntu-xitou-tree-song/README.md)<br>**[臺灣大學溪頭實驗林｜樹之歌木屋（2019）](溪頭實驗林/buildings/ntu-xitou-tree-song/README.md)** |
+| [<img src="溪頭實驗林/buildings/ntu-xitou-ginkgo-bridge-2017/previews/front.png" alt="銀杏橋（2017竣工外觀近似）：實際模型預覽" width="220">](溪頭實驗林/buildings/ntu-xitou-ginkgo-bridge-2017/README.md)<br>**[銀杏橋（2017竣工外觀近似）](溪頭實驗林/buildings/ntu-xitou-ginkgo-bridge-2017/README.md)** | [<img src="校總區/buildings/ntu-odeum/previews/front.png" alt="國立臺灣大學雅頌坊｜全外觀近似模型：實際模型預覽" width="220">](校總區/buildings/ntu-odeum/README.md)<br>**[國立臺灣大學雅頌坊｜全外觀近似模型](校總區/buildings/ntu-odeum/README.md)** | [<img src="校總區/buildings/ntu-luming-main-historical/previews/front.png" alt="臺大鹿鳴堂主館 — 歷史外觀近似：實際模型預覽" width="220">](校總區/buildings/ntu-luming-main-historical/README.md)<br>**[臺大鹿鳴堂主館 — 歷史外觀近似](校總區/buildings/ntu-luming-main-historical/README.md)** |
+| [<img src="校總區/buildings/ntu-xiaofu-historic/previews/front.png" alt="臺大小福樓：1981–1986 年歷史外觀簡化模型：實際模型預覽" width="220">](校總區/buildings/ntu-xiaofu-historic/README.md)<br>**[臺大小福樓：1981–1986 年歷史外觀簡化模型](校總區/buildings/ntu-xiaofu-historic/README.md)** | [<img src="校總區/buildings/ntu-scholar-residence-two-rows-1965-design/display/preview-640.webp" alt="臺大1965本期兩列住宅歷史設計，展示排列非基地配置，非現況" width="220">](校總區/buildings/ntu-scholar-residence-two-rows-1965-design/README.md)<br>**[乙種／回國學人宿舍｜1965本期兩列歷史設計](校總區/buildings/ntu-scholar-residence-two-rows-1965-design/README.md)**<br>[STL](校總區/buildings/ntu-scholar-residence-two-rows-1965-design/model.stl) · [現版設計色 3MF](校總區/buildings/ntu-scholar-residence-two-rows-1965-design/appearance.3mf) · [Blender](校總區/buildings/ntu-scholar-residence-two-rows-1965-design/scene.blend)<br>[範圍與限制](校總區/buildings/ntu-scholar-residence-two-rows-1965-design/README.md) · [校驗版本與原檔說明](校總區/buildings/ntu-scholar-residence-two-rows-1965-design/CHECKSUM-SCOPE.md) |  |
+
+本校 **53 套**，其中校總區分類 **47 套**；套件數不等於整棟建築數，非全校完成。
+
+目前收錄53件有明示範圍的外觀近似模型，分布於校總區、竹北校區、雲林校區、城中校區（含臺大醫院場域）；另收校外溪頭實驗林樹之歌2019單棟及銀杏橋2017完整橋梁；溪頭合計2套，城中竹木隧道與溪頭兩件均非校總區，非2026現況調查。不是全校完成，也不是53棟完整測繪模型；前部、歷史狀態或局部入口段的範圍以各詳頁為準。地質標本小屋與地質館前棟是不同實體，但不等於兩個官方索引項目。
+
+既有43件含STL、OBJ、Blender場景、可攜式參數化來源、原STL正背預覽及繁體中文來源說明。既有件獨立最長150mm；新增校門段為154mm展示寬，不能當同一比例校園拼接；來源照片未重新散布。
+
+## 下載前
+- 以下是先前既有模型的檢查描述，非本次兩實體住宅模型的單體認證：已驗證原STL法向、流形邊/頂點、單一連通封閉表面、正體積、獨立重建與Blender幾何一致性。
+- 前34件另作[新增截面有效性與薄篩補查](qa/printability-20261013/README.md)，第11至13批9件在各模型內有同類結果。
+- 工科海洋入口段只提供修訂v2：消除舊版窗框相切折返。舊版STL不在此整合包中，建物件數不變。
+- 尚未用真正列印切片器生成工具路徑或實體試印。屋簷、門廊、跨距及細節需要支撐/解析度評估。國發所、第一學生活動中心的頂尖及地質前棟拱罩的薄篩警示見附錄，不能以支撐取代細節線寬檢查。
+
+## 校區入口
+[校總區](校總區/README.md) · [竹北校區](竹北校區/README.md) · [雲林校區](雲林校區/README.md) · [城中校區](城中校區/README.md) · [溪頭實驗林（校外基地）](溪頭實驗林/README.md)
+
+## 三欄圖鑑
+每格為不同模型項目；點圖可開詳頁，內有同一件的正、背面實際STL圖與下載。
+
+
+## 清冊與版本
+[全校待辦與來源缺口](inventory/README.md) · [52件現行索引](model-index.json) · [既有批次SHA256（歷史清單）](SHA256SUMS) · [雅頌坊完整SHA256](校總區/buildings/ntu-odeum/SHA256SUMS) · [批次紀錄](batches/)
+
+[下一階段逐項來源與缺口](inventory/CONTINUE.zh-TW.md) · [第12批補查](qa/batch12-20261013/README.md) · [第13批補查](qa/batch13-20261013/README.md)
+
+[臺大地質標本館小屋外觀與來源界線](校總區/buildings/ntu-geological-specimen-cottage/appearance/README.md)
+
+[臺大舊體育館外觀與來源界線](校總區/buildings/ntu-old-gymnasium/appearance/README.md)
+
+[臺大博理館外觀與來源界線](校總區/buildings/ntu-bory-hall/appearance/README.md)
+
+[臺大農藝館外觀與來源界線](校總區/buildings/ntu-agronomy/appearance/README.md)
+
+[臺大電機一館外觀與來源界線](校總區/buildings/ntu-electrical-engineering-one/appearance/README.md)
+
+[臺大地理館前部外觀與來源界線](校總區/buildings/ntu-geography-front/appearance/README.md)
+
+[臺大食品科技館前部外觀與來源界線](校總區/buildings/ntu-food-science-front/appearance/README.md)
+
+[臺大圖書資訊學系館外觀與來源界線](校總區/buildings/ntu-library-information-science/appearance/README.md)
+
+[臺大生化所歷史前棟外觀與來源界線](校總區/buildings/ntu-biochemical-sciences-front/appearance/README.md)
+
+[臺大農業陳列館外觀與來源界線](校總區/buildings/ntu-agricultural-exhibition/appearance/README.md)
+
+[臺大磯永吉紀念室修繕前外觀與來源界線](校總區/buildings/ntu-iso-cottage-pre-restoration/appearance/README.md)
+
+[臺大語文大樓前部外觀與來源界線](校總區/buildings/ntu-language-front/appearance/README.md)
+
+[臺大工科海洋五波浪入口段外觀與來源界線](校總區/buildings/ntu-esoe-wave-entrance/appearance/README.md)
+
+[臺大工學博物館保留館體外觀與來源界線](校總區/buildings/ntu-engineering-museum-retained/appearance/README.md)
+
+[臺大第一學生活動中心歷史前棟外觀與來源界線](校總區/buildings/ntu-first-student-center/appearance/README.md)
+
+[臺大嚴慶齡工業研究中心外觀與來源界線](校總區/buildings/ntu-yen-tjing-ling-center/appearance/README.md)
+
+[雲林鋤禾館木屏與框簷限定配色外觀與來源界線](雲林校區/buildings/ntu-chuhe-hall/appearance/README.md)
+
+[綜合體育館銀灰屋蓋與入口塔限定配色外觀與來源界線](校總區/buildings/ntu-sports-center/appearance/README.md)
+
+[普通教學館中央高拱窗限定配色外觀與來源界線](校總區/buildings/ntu-putong-lecture/appearance/README.md)
+
+雅頌坊主廳、側服務翼、垂直辦公翼與後台之外觀近似：2016官方平面及歷史/未標拍攝日官方圖像支持主量體，附翼高度與後牆細節部分推定；非2026現況測繪，未試印。
+
+鹿鳴堂主館歷史外觀近似：2001官方規劃足跡與多面歷史照片界定主量體；尺寸皆估計，背面及對側中性化，未確認後方附屬排除。不是完整館群或2026現況測繪，未試印。
+[鹿鳴堂主館 SHA256](校總區/buildings/ntu-luming-main-historical/SHA256SUMS)
+
+小福樓1981–1986歷史外觀近似：1981官方竣工平面與加梯前照片支持三層L型及斜切內角；尺寸皆估計，未知後立面開口未細化，不混入1987後改造。不是2026現況測繪，未試印。
+[小福樓1981–1986 SHA256](校總區/buildings/ntu-xiaofu-historic/SHA256SUMS)
+
+## 本期兩列住宅歷史設計
+
+NCMD130乙種／回國學人宿舍1963–1965歷史工程圖示，本期六戶連與四戶連為同工程一模型包。校總區目錄只作歷史工程分類，不證兩列現址；兩個獨立展示底座及其相對配置不是歷史基地棟距。2014官方僅母案空照存續判讀、未現勘，不能逐棟確認兩列現址，也不混王大閎1970長興街60/62宿舍。主深750cm與側裝飾分格826cm差異、窗表微差保留；屋頂7.05／皮6.70±.10m，通氣管圖量頂7.65m，後院只20cm高足跡示意、不是原牆高。1:200、187×165×41mm，兩水密正體積展示實體，未實際列印；原圖CC BY-NC私存，無商用權利保證。
+
+## 既有模型彩色更新（不新增套數）
+
+總圖書館公開展示為現行彩色模型的 WebP。模型幾何不變；後部和屋面材色未核，鐘亭正面無法對位材界的八個三角面保留中性。原 STL 不含顏色；未驗證四色切片或實體列印。
+
+## 既有模型彩色更新（不新增套數）
+
+`ntu-xinsheng-lecture` 保持原STL與建模程式位元組，按官方照片為原三角面分材，增加彩色外觀3MF、Blender及十視圖；未核背部／屋面保持中性。不是提高幾何精度或現況測繪，未驗四色耗材映射、切片或實體列印。舊單色previews與QA留存為歷史，不作本次彩材驗證；詳新版README。
+
+## 既有模型彩色更新（不新增套數）
+
+`ntu-boya-lecture` 保持原STL與建模程式位元組，按官方照片為原三角面分材，增加彩色外觀3MF、Blender及十視圖；未核背部／屋面保持中性。不是提高幾何精度或現況測繪，未驗四色耗材映射、切片或實體列印。舊單色previews與QA留存為歷史，不作本次彩材驗證；詳新版README。
+
+## 既有模型彩色更新（不新增套數）
+
+`ntu-linze-main` 保持原STL與建模程式位元組，按官方照片為原三角面分材，增加彩色外觀3MF、Blender及十視圖；未核背部／屋面保持中性。不是提高幾何精度或現況測繪，未驗四色耗材映射、切片或實體列印。舊單色previews與QA留存為歷史，不作本次彩材驗證；詳新版README。
+
+## 既有模型彩色更新（不新增套數）
+
+`ntu-mingda-hall` 保持原STL與建模程式位元組，按官方照片為原三角面分材，增加彩色外觀3MF、Blender及十視圖；未核背部／屋面保持中性。不是提高幾何精度或現況測繪，未驗四色耗材映射、切片或實體列印。舊單色previews與QA留存為歷史，不作本次彩材驗證；詳新版README。
+
+## 既有模型局部材色更新：ntu-electrical-engineering-two（不新增套數）
+
+僅在原模型可對應的有據面補上近似色族；未證或混材域保留中性。原幾何與舊資料不變，不宣稱全館完成、現況測繪或實體列印通過。來源期別、十張實渲與限制請見上方原項目卡的材色範圍連結。
+
+## 既有模型局部材色更新：ntu-veterinary-one（不新增套數）
+
+僅在原模型可對應的有據面補上近似色族；未證或混材域保留中性。原幾何與舊資料不變，不宣稱全館完成、現況測繪或實體列印通過。來源期別、十張實渲與限制請見上方原項目卡的材色範圍連結。
+
+## 既有模型局部材色更新：ntu-national-development（不新增套數）
+
+僅在原模型可對應的有據面補上近似色族；未證或混材域保留中性。原幾何與舊資料不變，不宣稱全館完成、現況測繪或實體列印通過。來源期別、十張實渲與限制請見上方原項目卡的材色範圍連結。
+
+## 既有模型局部材色更新：ntu-atmospheric-science-b（不新增套數）
+
+僅在原模型可對應的有據面補上近似色族；未證或混材域保留中性。原幾何與舊資料不變，不宣稱全館完成、現況測繪或實體列印通過。來源期別、十張實渲與限制請見上方原項目卡的材色範圍連結。
+
+## 既有模型局部材色更新：ntu-meteorology-a（不新增套數）
+
+僅在原模型可對應的有據面補上近似色族；未證或混材域保留中性。原幾何與舊資料不變，不宣稱全館完成、現況測繪或實體列印通過。來源期別、十張實渲與限制請見上方原項目卡的材色範圍連結。
+
+## 既有模型局部材色更新：ntu-chemical-engineering-entry（不新增套數）
+
+僅在原模型可對應的有據面補上近似色族；未證或混材域保留中性。原幾何與舊資料不變，不宣稱全館完成、現況測繪或實體列印通過。來源期別、十張實渲與限制請見上方原項目卡的材色範圍連結。
+
+## 既有模型局部材色更新：ntu-applied-mechanics-front（不新增套數）
+
+僅在原模型可對應的有據面補上近似色族；未證或混材域保留中性。原幾何與舊資料不變，不宣稱全館完成、現況測繪或實體列印通過。來源期別、十張實渲與限制請見上方原項目卡的材色範圍連結。
