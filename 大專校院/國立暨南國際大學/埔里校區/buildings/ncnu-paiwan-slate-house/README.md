@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![正面](previews/front.png)<br>交付 STL 正面 | ![背面](previews/rear.webp)<br>交付 STL 背面 | ![俯視](previews/top.webp)<br>俯視 |
+| [![正面](previews/front.webp)](previews/front.webp)<br>交付 STL 正面 | [![背面](previews/rear.webp)](previews/rear.webp)<br>交付 STL 背面 | [![俯視](previews/top.webp)](previews/top.webp)<br>俯視 |
 
 國立暨南國際大學 · 埔里校區 · 公開實拍近似外觀模型
 
@@ -39,13 +39,11 @@
 ## 重建與QA
 安裝 [requirements.txt](requirements.txt)（Python 3.11+），並使用Blender 4.3.2或相容版本。
 
-1. python build_model.py
-2. blender -b -t 4 -P render_preview.py
-3. python run_all_checks.py
+1. 在工作副本執行 `python build_model.py` 重建 STL。
+2. 執行 `python export_display_webp.py`。在 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）下，會從交付 STL 在暫存目錄重繪，校驗原視圖 SHA-256，再輸出 900 × 700 無損 WebP，不覆寫交付的 Blender 場景。需要另外重建場景時可加 `--scene-output /path/outside/package/scene.blend`。
+3. 執行 `python run_all_checks.py` 核對模型；可用 `sha256sum -c MANIFEST.sha256` 驗證此版交付檔。
 
-正面 PNG 與學校／校區代表圖保留。背面及俯視改用 900 × 700 無損 WebP，RGBA 像素與原 Blender PNG 完全相同。
-用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可重新輸出，不會覆寫交付的 Blender 或正面圖。
-要取得 SHA-256 與原始交付檔完全相同的 PNG，可加 `--archive-png-dir /path/to/output`，並參照[原交付清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/cce85bb020c0680c8433cd71faf98d32c3c165ee/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-paiwan-slate-house/MANIFEST.sha256)。自動重建會核對兩檔原始雜湊後才輸出。
+正面、背面及俯視 WebP 與原 Blender PNG 的 RGBA 像素完全相同。需要原始逐圖 PNG 時可用 `--archive-png-dir /path/outside/package`，輸出前會核對歷史 SHA-256；參照[原始逐圖交付清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/cce85bb020c0680c8433cd71faf98d32c3c165ee/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-paiwan-slate-house/MANIFEST.sha256)。舊的雙面合成 PNG 不再是現行展示檔，可從[轉換前 PNG／合成圖的固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/61e1b50daa09f45a2a65e8ce167aef8e6909e833/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%9A%A8%E5%8D%97%E5%9C%8B%E9%9A%9B%E5%A4%A7%E5%AD%B8/%E5%9F%94%E9%87%8C%E6%A0%A1%E5%8D%80/buildings/ncnu-paiwan-slate-house)取回並按當版清單驗證。
 
 [原STL、重建與Blend](validation.json)：原始二進位STL法向／繞序一致、有限非退化面、水密、每邊兩面、vertex link單環、單一連通表面／無獨立內腔殼、正體積、底座z=0及150 mm尺度；獨立重建SHA與saved Blend三角幾何一致。
 

@@ -1,0 +1,98 @@
+{
+  "pinned_model_commit": "61e1b50daa09f45a2a65e8ce167aef8e6909e833",
+  "old_manifest_sha256": "4516c6bf6b7902f7714ddb27f8e21a303a89b16d2d28f6643ed68e83d25ed5f9",
+  "renderer": "Blender 4.3.2",
+  "encoder": "Pillow 13.0.0 / libwebp 1.6.0",
+  "three_staged_native_stl_rerenders": {
+    "front": {
+      "dimensions": [
+        900,
+        700
+      ],
+      "old_png_sha256": "1073a780d27027cf8ab990fc64a6fd2af4ffa7e9720fa82fc9ca8f6af980f369",
+      "old_png_bytes": 707148,
+      "webp_sha256": "43ac20a2c3a4cf035a44043b75ebf1ab1259a3923416cb5840ca34367375f546",
+      "webp_bytes": 236712,
+      "rgba_sha256": "f9e6cc81c8b27bc231f9f9eba797195c583039a8eee3c376345c4b7ebd5797fd",
+      "lossless_match": true
+    },
+    "rear": {
+      "dimensions": [
+        900,
+        700
+      ],
+      "old_png_sha256": "599fead2f28b19c10793a791aa619212b2baaf7e4462c1fb9043e0a7ff93877e",
+      "old_png_bytes": 644455,
+      "webp_sha256": "588d33ce9c8503e3ced115f8ca8185b32549645d383ba68d8c0a26856877866b",
+      "webp_bytes": 160186,
+      "rgba_sha256": "3a867fab15a4674c09199fbe025b7ea7b3f9371f080071edca5ca18f5333c6f6",
+      "lossless_match": true
+    },
+    "top": {
+      "dimensions": [
+        900,
+        700
+      ],
+      "old_png_sha256": "0ae99e5fbcb33c122a1730ce8406a54d656f08884e36efd2192741c7be40fb35",
+      "old_png_bytes": 643899,
+      "webp_sha256": "1d5d911ee2496a61cac63400e8925e309464386555c7fcd07bc1acd059e4f79e",
+      "webp_bytes": 172980,
+      "rgba_sha256": "8e695967c2de39efe32f7e93f35de51c66c69693410345c522ff10e318e967ee",
+      "lossless_match": true
+    }
+  },
+  "unchanged_native": {
+    "model.stl": {
+      "sha256": "13522f06299e1b247c22221276fac653d5ea7441f3181466d26bbdea101a6d36",
+      "oid": "790b0776e8c596467f7a1044b474ef1c168db42f"
+    },
+    "scene.blend": {
+      "sha256": "2f99ff2b233d54f5d25673406c9a9ac028e1a4f935aa94c56f60bfa696d91398",
+      "oid": "fd43914662a6d58493d40b0d58f4b3709b9bec39"
+    },
+    "build_model.py": {
+      "sha256": "266bb3513707b9cb80a74500cd331469ccb69fc02c14b5f99ac95df74ef811af",
+      "oid": "b0763aa9807c2a997f463ff9bd06e7a15c856071"
+    }
+  },
+  "mesh_triangles": 3724,
+  "preserved_catalog_cover": {
+    "path": "docs/display/catalog/c1aea07d8382aa9503ed9ffa-640.webp",
+    "source": "front",
+    "width": 640,
+    "height": 498,
+    "webp_quality": 92,
+    "method": 6,
+    "oid": "16ad6271e7ee6f58cb5aec8b254cddf14a509c69"
+  },
+  "historical_archive_only": {
+    "path": "previews/front-rear.png",
+    "commit": "61e1b50daa09f45a2a65e8ce167aef8e6909e833",
+    "oid": "04822f1992fa6020468f2c7ce92d505f9e7031cc",
+    "sha256": "af5ad1bac041a7948237054b20fb35530eb2aa74f103f7b09ac98a550cb401d7",
+    "bytes": 155537
+  },
+  "same_native_geometry_qa": {
+    "exit_code": 0,
+    "checks": {
+      "all_original_mesh_checks": true,
+      "source_rebuild_sha_matches": true,
+      "blend_geometry_matches_stl": true,
+      "all_0_2mm_contours_valid": true,
+      "thin_screen_exit_zero": true,
+      "canonical_v3_hash_matches": true,
+      "individual_invalid_polygon_rejected": true,
+      "combined_invalid_polygon_rejected": true
+    },
+    "negative_test": {
+      "individual": {
+        "exit_code": 1,
+        "assertion_error": true
+      },
+      "combined": {
+        "exit_code": 1,
+        "assertion_error": true
+      }
+    }
+  }
+}
