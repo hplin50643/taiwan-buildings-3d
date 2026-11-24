@@ -6,11 +6,11 @@
 
 |  |  |  |
 | :---: | :---: | :---: |
-| [![校園三分之四代表圖](../../../../../docs/display/catalog/stust-living-services-gate-2016-current-640.webp)](previews/homepage-three-quarter-current.png)<br>校園三分之四代表圖 | [![總覽](previews/display-current/preview.webp)](preview.png)<br>總覽 | [![背側](previews/display-current/rear.webp)](rear.png)<br>背側 |
-| [![正面](previews/display-current/front.webp)](front.png)<br>正面 | [![背面](previews/display-current/back.webp)](back.png)<br>背面 | [![西側](previews/display-current/west.webp)](west.png)<br>西側 |
-| [![東側](previews/display-current/east.webp)](east.png)<br>東側 | [![頂面](previews/display-current/top.webp)](top.png)<br>頂面 |  |
+| [![校園三分之四代表圖](../../../../../docs/display/catalog/stust-living-services-gate-2016-current-640.webp)](previews/homepage-three-quarter-current.png)<br>校園三分之四代表圖 | [![總覽](previews/display-current/preview.webp)](previews/display-current/preview.webp)<br>總覽 | [![背側](previews/display-current/rear.webp)](previews/display-current/rear.webp)<br>背側 |
+| [![正面](previews/display-current/front.webp)](previews/display-current/front.webp)<br>正面 | [![背面](previews/display-current/back.webp)](previews/display-current/back.webp)<br>背面 | [![西側](previews/display-current/west.webp)](previews/display-current/west.webp)<br>西側 |
+| [![東側](previews/display-current/east.webp)](previews/display-current/east.webp)<br>東側 | [![頂面](previews/display-current/top.webp)](previews/display-current/top.webp)<br>頂面 |  |
 
-大專校院圖鑑、學校與校區的代表圖採用上表第一張，從目前局部補色模型依原構圖（偏轉 36.87°、俯視 23.43°）重新渲染。其餘七張全景與下方三張局部圖是這套模型已核對的材色 QA 預覽，不代表全棟已上色。點圖可看原始 PNG。
+儲存庫首頁、學校與校區的代表圖採用上表第一張，從目前局部補色模型依原構圖（偏轉 36.87°、俯視 23.43°）重新渲染。其餘七張全景與下方三張局部圖是這套模型已核對的材色 QA 預覽，不代表全棟已上色。點七張全景圖可開啟完整無失真 WebP；代表圖及三張局部檢核圖仍可開啟各自的原始 PNG。
 
 ## 材色 QA 局部視圖
 
@@ -28,6 +28,7 @@
 其餘5270面中性：門柱徽字、三角主立面混磚薄框反光、折玻璃、低棚柱、天井、屋上/後服務側/基座。未知不借對稱。來源兩照接近同向不同構圖，非兩反面佐證；不公開照片不貼圖，不新增字與人物。
 
 ## 舊展示與原QA歷史
+執行 `python verify_webp.py`（需要 Pillow）可核對現行十張預覽的 WebP 檔案、解碼像素及所屬模型；原有幾何與重建驗證不變。[清理前的繁中說明與全景 PNG](https://github.com/hplin50643/taiwan-buildings-3d/tree/652ec6e5e9cd7ed7c8972462b35c4501fc33b631/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8D%97%E8%87%BA%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/stust-living-services-gate-2016)保留在固定版本。繁中舊說明也可[直接查看](https://github.com/hplin50643/taiwan-buildings-3d/blob/652ec6e5e9cd7ed7c8972462b35c4501fc33b631/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8D%97%E8%87%BA%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/stust-living-services-gate-2016/README.zh-TW.md)。
 原3個neutral/base/roof展示材與scene公開保 ORIGINAL-SOURCE-GAP-scene.blend；原render_preview.py、previews/及原43件全歷史原bytes保留，新來源限定版本只60面。不是真單色發現，也不以新colorQA替原完整工程放行。
 原6根方柱150跨層樣本（4北×24＋2東×27，不是150根），最大角損2.8933699911595454%、保留97.10663000884045%；0.41mm真角鄰域外0、指定方向最小2.1851273mm，是有限位置補證。
 1163全網短首弦仍保留；最小0.0068209mm在NW凸角，不因內根37.469751mm而消失。57路邊/門角樣本側根5.3547935mm與偏移法向12.6522474mm都是有限方向，不冒全域最薄壁。v1鼻楔保持HOLD，v2源修與有限裁定全歷史保存，不回用舊V框短法向豁免。v2 V區917面6419密點最小0.9104671mm不等於整網>=0.8mm；403層927Polygon保留，36458密點/145832parity也是有限證據。
