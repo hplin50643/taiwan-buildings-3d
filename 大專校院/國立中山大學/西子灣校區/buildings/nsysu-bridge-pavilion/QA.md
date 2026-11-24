@@ -17,6 +17,6 @@
 ## 檔案與可編輯性
 `qa/exchange-validation.json` 記錄 STL ↔ 3MF 逐三角幾何、五種材質、lib3mf strict 零警告、修改單一材質再保存／重開與可重建性。`qa/scene-validation.json` 記錄 Blender 原始座標、面順序、材質、毫米、修改頂點／材質再保存及重開；測試副本未覆蓋原交付場景。
 
-`qa/render-manifest.json` 的五張圖由實際模型產生；CPU Cycles、48 samples、固定種子、每張 SHA256。`qa/render-reopen-validation.json` 檢查原場景重開渲染；`qa/isolated-rebuild.json` 比對另一空目錄重建的 STL／3MF／網格／材質及全部五張圖。Blender 全程使用 `--python-exit-code 1`，不能用預設退出碼掩蓋腳本失敗。
+`qa/render-manifest.json` 的五張全尺寸 WebP 由原實際模型渲染轉換，記錄原 PNG、RGBA 像素與現行 WebP 的 SHA-256；CPU Cycles、48 samples、固定種子不變。`qa/render-reopen-validation.json` 檢查原場景重開渲染；`qa/isolated-rebuild.json` 比對另一空目錄重建的 STL／3MF／網格／材質及全部五張圖。原有三份檢驗以歷史 PNG 雜湊保留，不重寫原結果；PNG 可從[固定歷史版](https://github.com/hplin50643/taiwan-buildings-3d/tree/ac2397f5930233dc2ad2de8b7eb5d7326ed8ab49/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8/%E8%A5%BF%E5%AD%90%E7%81%A3%E6%A0%A1%E5%8D%80/buildings/nsysu-bridge-pavilion)取得，或用匯出程式重建至專案外。現行 `python -B verify_package.py` 會核對 WebP 解碼像素、現行檔案與原 QA 雜湊的綁定。
 
 來源視覺判讀與製造 QA 不同：`qa/source-visual-review.json` 由原研究者核對最終五圖，仍須保留七柱可見、八柱／八面推定、隱藏後面對稱、日期未知、展示尺度及支撐限制。**來源審核通過不是列印合格證明。**

@@ -1,4 +1,4 @@
-"""Reopen delivered scene and rerender saved front camera; compare PNG pixels/bytes."""
+"""Reopen delivered scene and rerender saved front camera; compare temporary PNG bytes against its pinned digest."""
 import bpy,json,struct,hashlib,tempfile
 from pathlib import Path
 A=Path(__file__).resolve().parent
@@ -10,5 +10,8 @@ with tempfile.TemporaryDirectory() as td:
   n=struct.unpack('>I',raw[pos:pos+4])[0];kind=raw[pos+4:pos+8]
   if kind not in [b'tEXt',b'zTXt',b'iTXt',b'eXIf']:clean+=raw[pos:pos+n+12]
   pos+=n+12
- assert clean==(A/'previews/front.png').read_bytes()
-(A/'qa/render-reopen-validation.json').write_text(json.dumps(dict(scene_front_camera_reopen_render_exact=True,front_sha256=hashlib.sha256(clean).hexdigest(),method='same Blender CPU Cycles seed 0, strip only PNG textual/date metadata; unchanged geometry and materials'),indent=2)+'\n')
+ v=next(r for r in json.loads((A/'qa/render-manifest.json').read_text())['files'] if r['path']=='previews/front-full.webp')
+ archived=v['archival_png']
+ assert len(clean)==archived['bytes'] and hashlib.sha256(clean).hexdigest()==archived['sha256']
+ assert hashlib.sha256((A/v['path']).read_bytes()).hexdigest()==v['sha256']
+print(json.dumps(dict(saved_camera_archived_png_bytes_match=True, archived_sha256=archived['sha256'], current_webp_sha256=v['sha256'])))
