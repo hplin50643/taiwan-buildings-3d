@@ -2,11 +2,10 @@
 
 ## 模型預覽
 
-| 圓角與街側 | 長街面 | 內院與露台 |
-|---|---|---|
-| ![圓角與街側](previews/front.png) | ![長街面](previews/front_elevation.png) | ![內院與露台](previews/rear.png) |
-| 短街面 | 屋頂俯視 | 主入口細節 |
-| ![短街面](previews/left_end.png) | ![屋頂俯視](previews/top.png) | ![主入口細節](previews/entry_detail.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![圓角與街側](previews/front.webp)<br>圓角與街側 | ![長街面](previews/front_elevation.webp)<br>長街面 | ![內院與露台](previews/rear.webp)<br>內院與露台 |
+| ![短街面](previews/left_end.webp)<br>短街面 | ![屋頂俯視](previews/top.webp)<br>屋頂俯視 | ![主入口細節（裁切視角）](previews/entry_detail.webp)<br>主入口細節（裁切視角） |
 
 ## 範圍
 
@@ -41,3 +40,7 @@ Scratch 磚細紋、逐塊磚縫、洗石子顆粒、牆面修補風化、綠色
 [STL](model.stl) · [3MF](model.3mf) · [Blender](scene.blend) · [重建](REBUILD.md) · [返回臺灣地標](../README.md)
 
 `scene.blend` 採 Blender 可直接開啟的無損 gzip 壓縮以符合傳輸限制；解壓後與審核原場景逐 byte 相同，已重新開檔核對網格及可編輯元件。
+
+## 展示校驗
+
+目前六張展示為無損 WebP，與[固定交付版本的原 PNG](https://github.com/hplin50643/taiwan-buildings-3d/tree/57bd0886210a4ec7882adfe23f23c699ceabaa42/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/chiayi-art-museum-a-heritage-office-exterior-study)逐像素相同。用 [現行校驗說明](REBUILD.md)核對檔案、像素或自行重建；未調整模型幾何、材質或視角。
