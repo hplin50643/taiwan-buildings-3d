@@ -2,9 +2,9 @@
 
 ## 模型預覽
 
-| 正面 | 背面 | 頂視 |
+| ![正面](previews/front.webp) | ![背面](previews/rear.webp) | ![頂視](previews/top.webp) |
 | :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+| 正面 | 背面 | 頂視 |
 
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../../README.md)
 
@@ -15,17 +15,17 @@ B1+9F 主樓，地下室不額外露出一整層；1F入口凹入、2F局部柱�
 
 平面右方為+X、上方為+Y；經首版實渲染比對修正，717照片具樓名面暫註冊為短端-X，相鄰長面為+Y；-X為模型座標選擇，未證獨一排除另一近對稱短端。這是相對方向，不是測量方位；原來源階段「下長面-Y」優先假說已撤回，原封閉來源不改寫。718只證明局部街角與材質/凹廊，不能當已拍到相反長面。各層以共同兩端梯核與中央電梯核註冊，未把圖版位置誤作退縮。
 
-名義比例每設計單位3mm；設計單位及樓高、欄牆高、窗格、細節是照片/平面引導之合理近似，不宣稱測量公尺或固定比例尺。未見背面細窗保留中性簡化面，不鏡射虛構。白灰瓷磚、灰壓頂、暗窗、暖色凹廊均為不透明代理材質，不含照片貼圖。每張PNG圖說均明示歷史版本。
+名義比例每設計單位3mm；設計單位及樓高、欄牆高、窗格、細節是照片/平面引導之合理近似，不宣稱測量公尺或固定比例尺。未見背面細窗保留中性簡化面，不鏡射虛構。白灰瓷磚、灰壓頂、暗窗、暖色凹廊均為不透明代理材質，不含照片貼圖。展示圖不嵌文字；本頁標題及說明明示所依據的歷史版本。
 
 ## 檔案
 - `scene.blend`：可編輯單一網格與六種材質；毫米場景。原始幾何與3MF/STL一致。
 - `model.3mf`：毫米、六種原生base materials、逐三角頂點屬性；不是包裝STL冒稱多色。
 - `model.stl`：原始三角表面；STL不攜色彩。
 - `mesh.json`、`palette.json`：可讀幾何/材質；`previews/`五張實際模型渲染。
-- `build_model.py`、`render_model.py`、`caption_preview.py`、檢核/重建腳本。
+- `build_model.py`、`render_model.py`、`export_display_webp.py`、檢核／重建腳本。原圖說歷程另見 QA 紀錄。
 
 ## 重建與限制
-Python依賴見requirements；Blender4.3.2 CPU Cycles；圖說需Pillow與系統`/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc`。乾淨目錄執行build_model.py後以Blender執行render_model.py；`rebuild.py --output NEW_DIRECTORY`重新生成4核心與5PNG並比對實際bytes。`run_all_checks.py`執行原始拓樸/SAT、切片/空實、3MF/Blend真編輯重開、重開渲染。
+Python依賴見requirements；Blender4.3.2 CPU Cycles。現行無字預覽無須字型，完整重建請在全新目錄執行；`rebuild.py --output NEW_DIRECTORY`重新生成4核心與五張 WebP並比對實際bytes。`run_all_checks.py`執行原始拓樸/SAT、切片/空實、3MF/Blend真編輯重開、重開渲染。
 
 7/8F圖上X區作為中央大廳上方跨層挑空的簡化近似保留，不填實以追求一表面殼；上層露臺/屋頂保持圖示輪廓。僅代理7/8F上部挑空，6F完整大廳室內未建。其精確室內樓板厚與設備未有剖面證據，不能當施工模型。兩個邊界殼是正向外殼與內嵌反向空腔，非兩個漂浮實體。封閉內腔、凹廊天花、露臺、細窗框與懸挑均需實際切片/支撐/機台策略；未保證可直接列印或免支撐。
 
@@ -42,6 +42,10 @@ Python依賴見requirements；Blender4.3.2 CPU Cycles；圖說需Pillow與系統
 ## 模型預覽與下載
 
 
-[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [已驗證重建來源 ZIP](rebuild-source.zip) · [技術與製造限制](QA.md)
+[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [原 QA 重建來源 ZIP（封存）](rebuild-source.zip) · [技術與製造限制](QA.md)
 
 `qa/independent/` 收錄獨立技術審核；具體製造限制見 `QA.md`。
+
+### 展示與原始 QA
+
+現行展示共五張無損 WebP：[正面](previews/front.webp)、[背面](previews/rear.webp)、[頂視](previews/top.webp)、[正立面](previews/elevation.webp)、[左斜視](previews/left_oblique.webp)。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 只更新展示圖；`python rebuild.py --output /新的獨立目錄` 在外部重建模型與展示圖。歷史原始 PNG 僅於隔離暫存重渲染供 QA 對照。原 PNG 與 SHA-256 保存在固定版本：[最初 QA 渲染清冊](https://github.com/hplin50643/taiwan-buildings-3d/blob/3e362d0479c265ee35cdccca0de393660c705d92/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-research-building/qa/render-manifest.json)及[原始預覽目錄](https://github.com/hplin50643/taiwan-buildings-3d/tree/3e362d0479c265ee35cdccca0de393660c705d92/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-research-building/previews)。原 `rebuild-source.zip` 仍按原樣保留供歷史 QA 查證，現行重建以目錄中腳本為準。

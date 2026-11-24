@@ -10,5 +10,7 @@ with tempfile.TemporaryDirectory() as td:
   n=struct.unpack('>I',raw[pos:pos+4])[0];kind=raw[pos+4:pos+8]
   if kind not in [b'tEXt',b'zTXt',b'iTXt',b'eXIf']:clean+=raw[pos:pos+n+12]
   pos+=n+12
- assert clean==(A/'previews/front.png').read_bytes()
+ expected = next(row for row in json.loads((A/'qa/render-manifest.json').read_text())['files'] if row['path']=='previews/front.png')
+ if len(clean)!=expected['bytes'] or hashlib.sha256(clean).hexdigest()!=expected['sha256']:
+  raise ValueError('Saved front camera does not reproduce archival raw PNG')
 (A/'qa/render-reopen-validation.json').write_text(json.dumps(dict(scene_front_camera_reopen_render_exact=True,front_sha256=hashlib.sha256(clean).hexdigest(),method='same Blender CPU Cycles seed 0, strip only PNG textual/date metadata; unchanged geometry and materials'),indent=2)+'\n')

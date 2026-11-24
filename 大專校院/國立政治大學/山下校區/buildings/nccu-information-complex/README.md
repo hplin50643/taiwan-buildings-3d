@@ -2,9 +2,9 @@
 
 ## 模型預覽
 
-| 正面 | 背面 | 頂視 |
+| ![正面](previews/front.webp) | ![背面](previews/rear.webp) | ![頂視](previews/top.webp) |
 | :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+| 正面 | 背面 | 頂視 |
 
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../../README.md)
 
@@ -30,7 +30,7 @@
 
 ## 重建
 
-安裝 `requirements.txt` 所列套件及 Blender 4.3.2。執行 `python build_model.py` 後執行 `blender -b -t 4 --python-exit-code 1 --python render_model.py`。`python rebuild.py --output NEW_DIRECTORY` 在全新目錄重建並比較四個核心輸出與五張 PNG。`python run_all_checks.py` 執行幾何、材質編輯、特徵及場景重開檢查。
+安裝 `requirements.txt` 所列套件及 Blender 4.3.2。在獨立目錄重建完整模型，或用 `python export_display_webp.py` 只重建展示圖。`python rebuild.py --output NEW_DIRECTORY` 在全新目錄重建並比較四個核心輸出與五張 WebP。`python run_all_checks.py` 執行幾何、材質編輯、特徵及場景重開檢查。
 
 來源與權利資訊見 `SOURCES.md`、`LICENSE.txt`。
 
@@ -39,6 +39,10 @@
 ## 模型預覽與下載
 
 
-[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [重建來源 ZIP](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
+[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [原 QA 重建來源 ZIP（封存）](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
 
 模型約 180.60 × 111.15 × 81.54 mm；尺寸、細窗及高程為比例近似。
+
+### 展示與原始 QA
+
+現行展示共五張無損 WebP：[正面](previews/front.webp)、[背面](previews/rear.webp)、[頂視](previews/top.webp)、[正立面](previews/elevation.webp)、[左斜視](previews/left_oblique.webp)。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 只更新展示圖；`python rebuild.py --output /新的獨立目錄` 在外部重建模型與展示圖。歷史原始 PNG 僅於隔離暫存重渲染供 QA 對照。原 PNG 與 SHA-256 保存在固定版本：[最初 QA 渲染清冊](https://github.com/hplin50643/taiwan-buildings-3d/blob/3e362d0479c265ee35cdccca0de393660c705d92/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-information-complex/qa/render-manifest.json)及[原始預覽目錄](https://github.com/hplin50643/taiwan-buildings-3d/tree/3e362d0479c265ee35cdccca0de393660c705d92/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-information-complex/previews)。原 `rebuild-source.zip` 仍按原樣保留供歷史 QA 查證，現行重建以目錄中腳本為準。
