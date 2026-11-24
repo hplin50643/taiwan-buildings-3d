@@ -1,17 +1,42 @@
-"""Rebuild geometry plus five actual-mesh views in a clean directory and compare bytes."""
+"""Rebuild the four native artifacts and five WebPs into a separate new directory."""
+import argparse
 from pathlib import Path
-import argparse,subprocess,shutil,hashlib,json,sys
+import shutil
+import subprocess
+import sys
+import tempfile
+from export_display_webp import validate
+
 A=Path(__file__).resolve().parent
-p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--blender',default='blender');p.add_argument('--threads',default='4');args=p.parse_args();R=args.output.resolve()
-assert R!=A and not R.exists(), 'Use a new output directory, never the delivered model directory'
-R.mkdir(parents=True);(R/'previews').mkdir();(R/'qa').mkdir()
-for n in ['build_model.py','render_model.py']:shutil.copy2(A/n,R/n)
-subprocess.run([sys.executable,str(R/'build_model.py')],check=True)
-subprocess.run([args.blender,'-b','-t',args.threads,'--python-exit-code','1','--python',str(R/'render_model.py')],check=True)
-files=['model.stl','model.3mf','mesh.json','palette.json']+['previews/'+n+'.png' for n in ['front','rear','elevation','top','left_oblique']]
-hashes={}
-for n in files:
- assert (R/n).read_bytes()==(A/n).read_bytes(),n
- hashes[n]=hashlib.sha256((A/n).read_bytes()).hexdigest()
-(A/'qa/isolated-rebuild.json').write_text(json.dumps(dict(method='Independent directory geometry generation and full five-view Blender render using delivered rebuild.py, fail-on-Python-error; exact bytes',files_identical=hashes,all_five_previews_identical=True,delivered_generators_sha256={n:hashlib.sha256((A/n).read_bytes()).hexdigest() for n in ["build_model.py","render_model.py"]}),indent=2)+'\n')
-print('INDEPENDENT REBUILD ALL NINE ARTIFACTS EXACT')
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--blender',default='blender')
+    p.add_argument('--threads',default='4')
+    args=p.parse_args()
+    dest=args.output.resolve()
+    if dest.exists() or A in dest.parents:
+        p.error('Choose a new output directory outside the package')
+    core=('model.stl','model.3mf','mesh.json','palette.json')
+    with tempfile.TemporaryDirectory(prefix='nccu-native-rebuild-') as tmp:
+        stage=Path(tmp)
+        (stage/'previews').mkdir();(stage/'qa').mkdir()
+        for name in ('build_model.py','render_model.py'):
+            shutil.copyfile(A/name,stage/name)
+        subprocess.run([sys.executable,str(stage/'build_model.py')],cwd=stage,check=True)
+        for name in core:
+            if (A/name).read_bytes()!=(stage/name).read_bytes():
+                raise ValueError(f'Native rebuild differs: {name}')
+        subprocess.run([args.blender,'-b','-t',args.threads,'--python-exit-code','19',
+                        '-P',str(stage/'render_model.py')],cwd=stage,check=True)
+        output=stage/'display';output.mkdir()
+        validate(A,stage,output)
+        dest.mkdir()
+        shutil.copytree(output,dest/'previews')
+        for name in (*core,'scene.blend'):
+            shutil.copyfile(stage/name,dest/name)
+    print('Native core and all five signed WebPs reproduced; historic raw PNGs checked in temporary staging')
+
+if __name__=='__main__':
+    main()

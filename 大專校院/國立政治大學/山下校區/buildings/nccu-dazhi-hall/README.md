@@ -2,9 +2,9 @@
 
 ## 模型預覽
 
-| 長窗面 | 未見側近似 | 頂視 |
+| ![長窗面](previews/front.webp) | ![未見側近似](previews/rear.webp) | ![頂視](previews/top.webp) |
 | :---: | :---: | :---: |
-| ![長窗面](previews/front.png) | ![未見側近似](previews/rear.png) | ![頂視](previews/top.png) |
+| 長窗面 | 未見側近似 | 頂視 |
 
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../../README.md)
 
@@ -31,7 +31,7 @@
 
 `scene.blend`為可編輯網格／六材質；`model.3mf`為毫米制逐面材質；`model.stl`為單色交換網格。`previews/`含front、rear、elevation、top、left_oblique五張同網格渲染。`mesh.json`及`palette.json`是精確交換記錄。
 
-使用requirements.txt相依套件及Blender4.3.2，執行`python build_model.py`和`blender -b -t 4 --python-exit-code 1 --python render_model.py`。`python rebuild.py --output /new/empty/path`可獨立建模／五圖渲染，比對四核心與五PNG精確位元組。`python run_all_checks.py`進行原始STL、剖面、空實探針、3MF及原生編輯／重開測試。
+使用requirements.txt相依套件及Blender4.3.2，以隔離重建命令重新產生完整模型，或執行 `python export_display_webp.py` 單獨重建展示圖。`python rebuild.py --output /new/empty/path`可獨立建模／五圖渲染，比對四核心與五張 WebP精確位元組。`python run_all_checks.py`進行原始STL、剖面、空實探針、3MF及原生編輯／重開測試。
 
 ## 製造限制
 
@@ -40,6 +40,10 @@
 ## 模型預覽與下載
 
 
-[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [重建來源 ZIP](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
+[可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [原 QA 重建來源 ZIP（封存）](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
 
 模型約169.13 × 26.25 × 34.88 mm，非建築實測尺寸。175切層中152層薄警保留；另有768個獨立法線樣本，其中390個低於0.8 mm、最小約0.17324 mm。這與512個builder樣本分開，兩者都不是全域最小壁厚認證。薄階板、窗框及多層空腔需支撐／困料評估；未實體試印。
+
+### 展示與原始 QA
+
+現行展示共五張無損 WebP：[正面](previews/front.webp)、[背面](previews/rear.webp)、[頂視](previews/top.webp)、[正立面](previews/elevation.webp)、[左斜視](previews/left_oblique.webp)。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 只更新展示圖；`python rebuild.py --output /新的獨立目錄` 在外部重建模型與展示圖。歷史原始 PNG 僅於隔離暫存重渲染供 QA 對照。原 PNG 與 SHA-256 保存在固定版本：[最初 QA 渲染清冊](https://github.com/hplin50643/taiwan-buildings-3d/blob/427fbb734dd4f91ac3a852d6cae5c5b3f919f934/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-dazhi-hall/qa/render-manifest.json)及[原始預覽目錄](https://github.com/hplin50643/taiwan-buildings-3d/tree/427fbb734dd4f91ac3a852d6cae5c5b3f919f934/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-dazhi-hall/previews)。原 `rebuild-source.zip` 仍按原樣保留供歷史 QA 查證，現行重建以目錄中腳本為準。
