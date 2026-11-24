@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| 正面<br>![正面](previews/front.webp) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.webp) |  |
 
 東校區。這是公开外觀照片推估的可列印建築微縮研究，非測繪級BIM。館名依總務處和招生中心核對；現行網頁不保證照片為2026年。
 
@@ -18,8 +18,10 @@
 - 官方照片很小，門窗数量、柱距、曲率及細部不是精密還原。省略空調、海報、文字和細欄杆；細框為列印加厚。
 - 只重建本棟，不連同鄰棟、校園景物、中學或幼兒園。樓層表含屋頂層，與照片可見完整樓層不直接相等。
 
+[正立面 WebP](previews/elevation.webp)
+
 ## 檔案與重建
-安裝 requirements.txt 所列Python依賴，執行 build_model.py 產生 model.stl/model.obj。Blender執行 render_preview.py 從實際STL匯入，產生可編輯 scene.blend 及正面/背面/立面預覽。再執行 validate_model.py、check_layers.py、check_thin_features.py。
+安裝 requirements.txt 所列Python依賴，執行 build_model.py 產生 model.stl/model.obj。使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_preview_webp.py`，從交付的 STL 重建正面、背面及正立面的 1000 × 800 無損 WebP，不改動 STL 或可編輯的 Blender 場景。若需重建場景，將 model.stl 與 render_preview.py 複製到獨立資料夾後以 Blender 執行該腳本。再執行 validate_model.py、check_layers.py、check_thin_features.py。
 
 ## 驗證及列印限制
 - 原STL法向、流形邊/頂點、正體積、一個連通外表面、無分離內腔殼、原始重建SHA與blend/STL三角幾何：通過。
@@ -35,4 +37,4 @@
 
 商學大樓舊薄篩的1層警示為數值漏環造成，修正後0層；不代表正式切片/试印或全域壁厚保證。
 
-
+原交付 PNG 可從固定版本查驗：[elevation](https://github.com/hplin50643/taiwan-buildings-3d/blob/003d366eb240a07f932b8a7cc202ce4d424d00e8/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E7%BE%8E%E5%92%8C%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/meiho-business-e/previews/elevation.png)、[front](https://github.com/hplin50643/taiwan-buildings-3d/blob/003d366eb240a07f932b8a7cc202ce4d424d00e8/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E7%BE%8E%E5%92%8C%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/meiho-business-e/previews/front.png)、[rear](https://github.com/hplin50643/taiwan-buildings-3d/blob/003d366eb240a07f932b8a7cc202ce4d424d00e8/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E7%BE%8E%E5%92%8C%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/meiho-business-e/previews/rear.png)。當時的檔案 SHA-256 見同一版本的 [hash-manifest.json](https://github.com/hplin50643/taiwan-buildings-3d/blob/003d366eb240a07f932b8a7cc202ce4d424d00e8/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E7%BE%8E%E5%92%8C%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/meiho-business-e/hash-manifest.json)。

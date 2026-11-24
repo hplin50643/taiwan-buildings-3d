@@ -1,10 +1,13 @@
 """Render the actual STL and save an editable Blender scene. Blender 4.3.2+.
-Run: blender -b -t 4 -P render_preview.py
+On copies of the STL and this script in a separate directory, run: blender -b -t 4 -P render_preview.py
 """
 import bpy,json,os
 from mathutils import Vector
 from pathlib import Path
-OUT=Path(__file__).resolve().parent; PREV=OUT/'previews'; PREV.mkdir(exist_ok=True)
+OUT=Path(__file__).resolve().parent
+if (OUT/'hash-manifest.json').is_file():
+ raise RuntimeError('Render in temporary staging; use export_preview_webp.py for the released WebPs')
+PREV=OUT/'previews'; PREV.mkdir(exist_ok=True)
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 bpy.ops.wm.stl_import(filepath=str(OUT/'model.stl'));model=bpy.context.object;model.name='Printable_Meiho'
 mat=bpy.data.materials.new('Warm stone preview only');mat.diffuse_color=(.69,.64,.54,1);model.data.materials.append(mat)
