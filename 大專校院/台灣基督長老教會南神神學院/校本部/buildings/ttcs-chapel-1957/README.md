@@ -4,18 +4,16 @@
 
 東側聖壇主連通錐坡的 109 個原三角，修復前銅色代理。本次不增加套數、不改原始 STL 幾何，未補部位不代表實景材色。未實體試印。
 
-[彩色 3MF](model-colored.3mf) · [可編輯 Blend](scene.blend) · [原 STL](model.stl) · [本版 3MF 相容性查核](3MF-COMPATIBILITY-QA.json) · [原建模與場景查核（歷史）](independent-verification.json) · [公開版清單](COLOR-RELEASE-MANIFEST.json) · [SHA256SUMS](SHA256SUMS)
+[彩色 3MF](model-colored.3mf) · [可編輯 Blend](scene.blend) · [原 STL](model.stl) · [本版 3MF 相容性查核](3MF-COMPATIBILITY-QA.json) · [原建模與場景查核（歷史）](independent-verification.json) · [現行交付清單](COLOR-RELEASE-MANIFEST.json) · [2026-11-18 原始清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/f257624210cd5a5e2f7a64cb72f6e766d1f9357c/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957/COLOR-RELEASE-MANIFEST.json) · [展示圖來源與驗證](display-proof.json) · [SHA256SUMS](SHA256SUMS)
 
 | 現版模型預覽 | 現版模型預覽 | 現版模型預覽 |
 | :---: | :---: | :---: |
-| ![前斜視／正面](previews/color-20261118/front.png)<br>前斜視／正面 | ![後斜視](previews/rear.png)<br>後斜視 | ![立面](previews/elevation.png)<br>立面 |
-| ![頂視](previews/top.png)<br>頂視 | ![左側](previews/left.png)<br>左側 | ![右側](previews/right.png)<br>右側 |
+| [![前斜視／正面](previews/front-current.webp)](previews/color-20261118/front.png)<br>前斜視／正面 | [![後斜視](previews/rear-current.webp)](previews/rear.png)<br>後斜視 | [![立面](previews/elevation-current.webp)](previews/elevation.png)<br>立面 |
+| [![頂視](previews/top-current.webp)](previews/top.png)<br>頂視 | [![左側](previews/left-current.webp)](previews/left.png)<br>左側 | [![右側](previews/right-current.webp)](previews/right.png)<br>右側 |
 
 3MF 交付版僅補一個物件預設材質索引，嚴格 SDK 可讀取並在私有副本改色存回重開；原逐面色值、網格、Blender 與預覽不變。[公開相容化程式](source/normalize_3mf_compat.py)可重做此格式步驟。舊查核僅為建模檔案歷史，本版嚴格互通以新版相容性查核為準。
 
-上級索引原代表圖保持原檔；新版彩色渲染請以上表為準。新色適用範圍及試印限制如下。下方舊版本導覽及資料只為歷史保存，舊面數、舊預覽與舊驗證不代表現版；以本章下載與公開版清單為準。
-
-工作區中斷後從固定GitHub基底 `8f90ae2478f00cce6832a07de537f7d333f6dbc0` 新下載、新查證及重製，不是舊完成包位元恢復；
+首頁、學校與校區的代表圖也使用這個限定補色版。上表展示為無失真 WebP，點圖可開啟對應原始 PNG。舊版預覽和簽核資料保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/4761855138f5a951a6268cf67030d7a9e3e2ed60/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-chapel-1957)，不是現行版本的展示。
 
 ## 有限補色
 僅東側聖壇半圓錐的主連通斜坡109三角面，552.924278 mm²，0→新增材質3，未校準銅色代理 `#8D8968`。原錐坡候選200面另外89+2面是斷開的下部小唇緣，全部排除；不擴到簷口、圓筒牆、頂部平面、鐘塔、主教堂屋頂及其他構件。
@@ -32,16 +30,9 @@
 ## 新版檢核限制
 獨立驗證確認原相機、world、原顯示材質及其他可安全讀取持久設定保留。Blender4.3.2讀取UV Sculpt懸空工具指標會崩潰，因此該子域排除；執行期依賴圖及session欄位也排除，不宣稱完整檔案位元一致。詳見independent-verification.json。
 
-## 歷史版導覽與說明
-
-## 模型預覽
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 西正面與南長面<br>![同件西正面](previews/front.png) | 東聖壇與鐘塔<br>![同件東背面](previews/rear.png) |  |
+## 原模型範圍與幾何限制
 
 1957建物、修復前外觀的來源限定近似。僅禮拜堂自身西前廳、長堂、東半圓聖壇、北側鐘塔及附房，不含本館、西校舍或整個校園。現法定學校與歷史台南神學院同址承接關係，不另計第二校；亦不推定本件校舍為獨占產權。
-
 
 [STL](model.stl) · [可編輯Blend網格](scene.blend) · [參數源碼](build_model.py) · [來源](sources.json) · [尺度證據](dimensional-evidence.json) · [QA](qa-summary.json) · [原面ray](architectural-ray-check.json) · [每構件loss](feature-loss-locations.json)
 
@@ -82,19 +73,9 @@
 
 門廊、窗框、聖壇簷口可能需要支撐。數位QA不是全域最小壁厚證明，不是Cura/Prusa工具路徑或實體試印，不能保證免支撐或任意縮小可印。
 
-## 重建與補充視角
+## 原幾何重建方式
 
 使用 [requirements.txt](requirements.txt) 與Blender4.3.2，依序執行 `python build_model.py`、`blender -b -t 4 -P render_preview.py`、`python run_all_checks.py`。任何invalid或非零exit都須修源重新全檢，不能repair後沿用舊報告。
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正西低角度<br>![西門與三連拱](previews/west.png) | 屋頂分段<br>![西RC及後雙坡](previews/top.png) |  |
-
-[北面](previews/elevation.png) · [東面](previews/east.png) · [東正視](previews/rear-elevation.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 北面<br>![北面](previews/elevation.png) | 東面<br>![東面](previews/east.png) | 東正視<br>![東正視](previews/rear-elevation.png) |
 
 原照片／PDF只作核對，未隨本包重新散布。未建模本館、西校舍、宿舍、圖書館與其他校園設施，本件不代表全校完成。
 
