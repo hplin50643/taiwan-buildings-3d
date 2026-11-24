@@ -37,7 +37,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![國家衛生研究院竹南院區行政大樓：正面預覽](buildings/zhunan-administration/appearance/previews/front.webp)](buildings/zhunan-administration/appearance/previews/front.webp) | 背面預覽<br>[![國家衛生研究院竹南院區行政大樓：背面預覽](buildings/zhunan-administration/appearance/previews/rear.webp)](buildings/zhunan-administration/appearance/previews/rear.webp) |  |
+| [![國家衛生研究院竹南院區行政大樓：正面預覽](buildings/zhunan-administration/appearance/previews/front.webp)](buildings/zhunan-administration/appearance/previews/front.webp)<br>正面預覽 | [![國家衛生研究院竹南院區行政大樓：背面預覽](buildings/zhunan-administration/appearance/previews/rear.webp)](buildings/zhunan-administration/appearance/previews/rear.webp)<br>背面預覽 |  |
 
 來源與證據：請見本件 README 及 manifest.json；未經實體試印。
 
@@ -56,7 +56,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![國家衛生研究院竹南院區圖書資訊大樓：正面預覽](buildings/zhunan-library-information/display/front-current-640.webp)](buildings/zhunan-library-information/display/front-current.webp) | 背面預覽<br>[![國家衛生研究院竹南院區圖書資訊大樓：背面預覽](buildings/zhunan-library-information/display/rear-current-640.webp)](buildings/zhunan-library-information/display/rear-current.webp) |  |
+| [![國家衛生研究院竹南院區圖書資訊大樓：正面預覽](buildings/zhunan-library-information/display/front-current-640.webp)](buildings/zhunan-library-information/display/front-current.webp)<br>正面預覽 | [![國家衛生研究院竹南院區圖書資訊大樓：背面預覽](buildings/zhunan-library-information/display/rear-current-640.webp)](buildings/zhunan-library-information/display/rear-current.webp)<br>背面預覽 |  |
 
 來源與證據：請見本件 README 及 model-info.json；未經實體試印。
 
@@ -75,7 +75,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![國家衛生研究院竹南院區研究大樓 R1／R2：正面預覽](buildings/zhunan-r1-r2-research-complex/display/front-current-640.webp)](buildings/zhunan-r1-r2-research-complex/display/front-current.webp) | 背面預覽<br>[![國家衛生研究院竹南院區研究大樓 R1／R2：背面預覽](buildings/zhunan-r1-r2-research-complex/display/rear-current-640.webp)](buildings/zhunan-r1-r2-research-complex/display/rear-current.webp) |  |
+| [![國家衛生研究院竹南院區研究大樓 R1／R2：正面預覽](buildings/zhunan-r1-r2-research-complex/display/front-current-640.webp)](buildings/zhunan-r1-r2-research-complex/display/front-current.webp)<br>正面預覽 | [![國家衛生研究院竹南院區研究大樓 R1／R2：背面預覽](buildings/zhunan-r1-r2-research-complex/display/rear-current-640.webp)](buildings/zhunan-r1-r2-research-complex/display/rear-current.webp)<br>背面預覽 |  |
 
 來源與證據：請見本件 README 及 model-info.json；未經實體試印。
 
@@ -94,7 +94,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![國家衛生研究院竹南院區二期單人宿舍：正面預覽](buildings/zhunan-dorm-phase2/display/front-current-640.webp)](buildings/zhunan-dorm-phase2/display/front-current.webp) | 背面預覽<br>[![國家衛生研究院竹南院區二期單人宿舍：背面預覽](buildings/zhunan-dorm-phase2/display/rear-current-640.webp)](buildings/zhunan-dorm-phase2/display/rear-current.webp) |  |
+| [![國家衛生研究院竹南院區二期單人宿舍：正面預覽](buildings/zhunan-dorm-phase2/display/front-current-640.webp)](buildings/zhunan-dorm-phase2/display/front-current.webp)<br>正面預覽 | [![國家衛生研究院竹南院區二期單人宿舍：背面預覽](buildings/zhunan-dorm-phase2/display/rear-current-640.webp)](buildings/zhunan-dorm-phase2/display/rear-current.webp)<br>背面預覽 |  |
 
 來源與證據：請見本件 README 及 model-info.json；未經實體試印。
 
@@ -113,7 +113,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![國衛院竹南院區有眷宿舍：正面預覽](buildings/zhunan-family-dorm/display/front-current-640.webp)](buildings/zhunan-family-dorm/display/front-current.webp) | 背面預覽<br>[![國衛院竹南院區有眷宿舍：背面預覽](buildings/zhunan-family-dorm/display/rear-current-640.webp)](buildings/zhunan-family-dorm/display/rear-current.webp) |  |
+| [![國衛院竹南院區有眷宿舍：正面預覽](buildings/zhunan-family-dorm/display/front-current-640.webp)](buildings/zhunan-family-dorm/display/front-current.webp)<br>正面預覽 | [![國衛院竹南院區有眷宿舍：背面預覽](buildings/zhunan-family-dorm/display/rear-current-640.webp)](buildings/zhunan-family-dorm/display/rear-current.webp)<br>背面預覽 |  |
 
 來源與證據：請見本件 README 及 model-info.json；未經實體試印。
 
@@ -132,7 +132,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼：正面預覽](buildings/zhunan-biologics-pilot-main/display/front-current-640.webp)](buildings/zhunan-biologics-pilot-main/display/front-current.webp) | 背面預覽<br>[![國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼：背面預覽](buildings/zhunan-biologics-pilot-main/display/rear-current-640.webp)](buildings/zhunan-biologics-pilot-main/display/rear-current.webp) |  |
+| [![國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼：正面預覽](buildings/zhunan-biologics-pilot-main/display/front-current-640.webp)](buildings/zhunan-biologics-pilot-main/display/front-current.webp)<br>正面預覽 | [![國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼：背面預覽](buildings/zhunan-biologics-pilot-main/display/rear-current-640.webp)](buildings/zhunan-biologics-pilot-main/display/rear-current.webp)<br>背面預覽 |  |
 
 來源與證據：請見本件 README 及 model-info.json；未經實體試印。
 
@@ -151,7 +151,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![國衛院竹南院區 station 48 白色塔狀外觀量體：正面預覽](buildings/zhunan-station48-exterior-mass/display/front-current-640.webp)](buildings/zhunan-station48-exterior-mass/display/front-current.webp) | 背面預覽<br>[![國衛院竹南院區 station 48 白色塔狀外觀量體：背面預覽](buildings/zhunan-station48-exterior-mass/display/rear-current-640.webp)](buildings/zhunan-station48-exterior-mass/display/rear-current.webp) |  |
+| [![國衛院竹南院區 station 48 白色塔狀外觀量體：正面預覽](buildings/zhunan-station48-exterior-mass/display/front-current-640.webp)](buildings/zhunan-station48-exterior-mass/display/front-current.webp)<br>正面預覽 | [![國衛院竹南院區 station 48 白色塔狀外觀量體：背面預覽](buildings/zhunan-station48-exterior-mass/display/rear-current-640.webp)](buildings/zhunan-station48-exterior-mass/display/rear-current.webp)<br>背面預覽 |  |
 
 來源與證據：請見本件 README 及 model-info.json；未經實體試印。
 
@@ -170,7 +170,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![國衛院竹南院區廢棄物處理中心：公開外殼：正面預覽](buildings/zhunan-waste-treatment-center/display/front-current-640.webp)](buildings/zhunan-waste-treatment-center/display/front-current.webp) | 背面預覽<br>[![國衛院竹南院區廢棄物處理中心：公開外殼：背面預覽](buildings/zhunan-waste-treatment-center/display/rear-current-640.webp)](buildings/zhunan-waste-treatment-center/display/rear-current.webp) |  |
+| [![國衛院竹南院區廢棄物處理中心：公開外殼：正面預覽](buildings/zhunan-waste-treatment-center/display/front-current-640.webp)](buildings/zhunan-waste-treatment-center/display/front-current.webp)<br>正面預覽 | [![國衛院竹南院區廢棄物處理中心：公開外殼：背面預覽](buildings/zhunan-waste-treatment-center/display/rear-current-640.webp)](buildings/zhunan-waste-treatment-center/display/rear-current.webp)<br>背面預覽 |  |
 
 來源與證據：請見本件 README 及 model-info.json；未經實體試印。
 
@@ -189,7 +189,7 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![國衛院竹南院區機電中心：初步近似外觀量體：正面預覽](buildings/zhunan-mep-center-preliminary/display/front-current-640.webp)](buildings/zhunan-mep-center-preliminary/display/front-current.webp) | 背面預覽<br>[![國衛院竹南院區機電中心：初步近似外觀量體：背面預覽](buildings/zhunan-mep-center-preliminary/display/rear-current-640.webp)](buildings/zhunan-mep-center-preliminary/display/rear-current.webp) |  |
+| [![國衛院竹南院區機電中心：初步近似外觀量體：正面預覽](buildings/zhunan-mep-center-preliminary/display/front-current-640.webp)](buildings/zhunan-mep-center-preliminary/display/front-current.webp)<br>正面預覽 | [![國衛院竹南院區機電中心：初步近似外觀量體：背面預覽](buildings/zhunan-mep-center-preliminary/display/rear-current-640.webp)](buildings/zhunan-mep-center-preliminary/display/rear-current.webp)<br>背面預覽 |  |
 
 來源與證據：請見本件 README 及 model-info.json；未經實體試印。
 
