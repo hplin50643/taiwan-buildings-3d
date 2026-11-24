@@ -21,7 +21,9 @@
           795,
           942
         ]
-      ]
+      ],
+      "immutable_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort/previews/front.png",
+      "decoded_rgba_sha256": "b7922ff1312b6eeba859d57764de82073180db7762910aba99e2e6dfe8a5043c"
     },
     "rear": {
       "original_bytes": 1114456,
@@ -44,7 +46,9 @@
           659,
           1028
         ]
-      ]
+      ],
+      "immutable_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort/previews/rear.png",
+      "decoded_rgba_sha256": "bf783319dae7b4f30283376ca253e747cb8cbf673ff304cc8f53e6f334852a0f"
     },
     "front-elevation": {
       "original_bytes": 1239780,
@@ -67,7 +71,9 @@
           797,
           1081
         ]
-      ]
+      ],
+      "immutable_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort/previews/front-elevation.png",
+      "decoded_rgba_sha256": "70e79bd72b18f946f539b2a745e4f3d6a81ffef8b3001a9cbae447e36b23d502"
     },
     "rear-elevation": {
       "original_bytes": 1180751,
@@ -90,7 +96,9 @@
           628,
           906
         ]
-      ]
+      ],
+      "immutable_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort/previews/rear-elevation.png",
+      "decoded_rgba_sha256": "98d43e1861f1796aad8a97ffa3514e843e7a7244c2faf41e49c009413ecaf8b2"
     },
     "right-end": {
       "original_bytes": 1310187,
@@ -113,7 +121,9 @@
           893,
           831
         ]
-      ]
+      ],
+      "immutable_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort/previews/right-end.png",
+      "decoded_rgba_sha256": "f71cab915e303adc396f95c625fb070e60e23ee939336ad42968aeb055412b2f"
     },
     "top": {
       "original_bytes": 1385649,
@@ -136,14 +146,17 @@
           799,
           1129
         ]
-      ]
+      ],
+      "immutable_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort/previews/top.png",
+      "decoded_rgba_sha256": "7dc5478e7b237baccdcaef8ac44e350239fe339ca2ca82f5c0a6cf3911495136"
     }
   },
   "cover": {
     "name": "anping-old-fort-current-640.webp",
     "bytes": 14354,
     "sha256": "05d46b11895f71f0348fd489e022caf048d897168c65d659207fefab9eb97f11",
-    "from": "front"
+    "from": "front",
+    "reproduced_from_current_lossless_webp": "previews/front-current.webp"
   },
   "totals": {
     "original_bytes": 7431625,
@@ -171,5 +184,8 @@
     1152,
     1157
   ],
-  "historical_source_png_are_pinned_to_prior_commit": true
+  "historical_source_png_are_pinned_to_prior_commit": true,
+  "fixed_png_archive_commit": "e5f4ef477a7870870f2ec944bc5174d345a9e68d",
+  "archived_manifest": "https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort/manifest.json",
+  "historical_rebuild_records_unchanged": true
 }

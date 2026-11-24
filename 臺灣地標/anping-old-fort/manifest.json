@@ -31,8 +31,8 @@
   "public_files": [
     {
       "path": "README.md",
-      "bytes": 7165,
-      "sha256": "581f8c250c045a609fa341df9db18e696e498d80f2292e8dd1c9732bec7f8c5b"
+      "bytes": 7591,
+      "sha256": "50f46a4d7bcc243182ead4a12af8fa079019e796410cca06fd550dc898075815"
     },
     {
       "path": "RIGHTS-AND-RESPONSIBILITY.md",
@@ -120,16 +120,6 @@
       "sha256": "33d0e6df5f8115df7bc1ad8d1674ecff2d1c59585adfdcd0071a642a930240b6"
     },
     {
-      "path": "previews/front-elevation.png",
-      "bytes": 1242357,
-      "sha256": "a92c47b6e9b90e9aa38f8b2ac8f28ae25931f5a7571448bf6f0da5729e97118b"
-    },
-    {
-      "path": "previews/front.png",
-      "bytes": 1200812,
-      "sha256": "01b1287445eebaa14a95ec7a5813ad9c29cd5bae82dbbaca38deb05ab328465e"
-    },
-    {
       "path": "previews/rear-current.webp",
       "bytes": 265056,
       "sha256": "c63b806a59350962bc75f4a550a4f23d66f7f698b29825bed872926bcf73cee4"
@@ -140,34 +130,14 @@
       "sha256": "5bd4c7a7228be385e5953dba66b21277d6c8752d9016466b3041bd10d70ca9a0"
     },
     {
-      "path": "previews/rear-elevation.png",
-      "bytes": 1180899,
-      "sha256": "0358321b911273762d5b74e16903eeaf073f18c8eb0006f65f5926328e62a4f5"
-    },
-    {
-      "path": "previews/rear.png",
-      "bytes": 1115443,
-      "sha256": "f1507d177031d9d0968da17f15f5f63d4f34ecd26dcfe17b7204e49ff8bd61c5"
-    },
-    {
       "path": "previews/right-end-current.webp",
       "bytes": 300562,
       "sha256": "4023c166092ea06a6c499a61e96295cfda76d3bceea6e5cb2140d3a26cb261da"
     },
     {
-      "path": "previews/right-end.png",
-      "bytes": 1314058,
-      "sha256": "721f492af5d5ae6859e1699729275208ed2ef1f079912a027ee2ba38bacac199"
-    },
-    {
       "path": "previews/top-current.webp",
       "bytes": 705998,
       "sha256": "be34ea05b5b5547a86ae3ff174f9d901ae556dc19bd49c2ae5a94d289196d397"
-    },
-    {
-      "path": "previews/top.png",
-      "bytes": 1391479,
-      "sha256": "243e57f939385488adfd30363e2db34243dacb2cbd7fe9133a7641018481c3b0"
     },
     {
       "path": "qa/3mf-validation.json",
@@ -196,8 +166,8 @@
     },
     {
       "path": "qa/display-proof.json",
-      "bytes": 4765,
-      "sha256": "105b534ab8d073ad97dfc17fd6359419fe88899f1826a702d0343c9b1f5af663"
+      "bytes": 6942,
+      "sha256": "08170c1a5f4d1d2532ce8ed85025d0550f87a301f41b23468f4e974a7c0b8e91"
     },
     {
       "path": "qa/geometry-material-validation.json",
@@ -326,8 +296,13 @@
     },
     {
       "path": "verify_reproducibility.py",
-      "bytes": 3819,
-      "sha256": "728d7681a9c2c5a8651de624e7b932743d32451d05ced575e52130e6cdfe5ba6"
+      "bytes": 3135,
+      "sha256": "cc571986458a72b3de6f08d73e7477ec69b80583729f3817219da937cb1e5d16"
+    },
+    {
+      "path": "verify_webp.py",
+      "bytes": 2148,
+      "sha256": "90008b6c221985150fd35334db813e32fa83bff61ad21a9a3fe4a4d42be1e611"
     }
   ],
   "verification": {
@@ -353,5 +328,6 @@
     "Occluded material continuity inferred",
     "No physical printing test or exact-predicate intersection proof"
   ],
-  "historical_front_archive": "https://github.com/hplin50643/taiwan-buildings-3d/tree/4761855138f5a951a6268cf67030d7a9e3e2ed60/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort"
+  "historical_front_archive": "https://github.com/hplin50643/taiwan-buildings-3d/tree/4761855138f5a951a6268cf67030d7a9e3e2ed60/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort",
+  "archived_pre_webp_cleanup_manifest": "https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort/manifest.json"
 }

@@ -4,12 +4,12 @@
 
 |  |  |  |
 | :---: | :---: | :---: |
-| [![正面斜視](previews/front-current.webp)](previews/front.png)<br>正面斜視 | [![背面斜視](previews/rear-current.webp)](previews/rear.png)<br>背面斜視 | [![正面立面](previews/front-elevation-current.webp)](previews/front-elevation.png)<br>正面立面 |
-| [![背面立面](previews/rear-elevation-current.webp)](previews/rear-elevation.png)<br>背面立面 | [![右側立面](previews/right-end-current.webp)](previews/right-end.png)<br>右側立面 | [![俯視](previews/top-current.webp)](previews/top.png)<br>俯視 |
+| [![正面斜視](previews/front-current.webp)](previews/front-current.webp)<br>正面斜視 | [![背面斜視](previews/rear-current.webp)](previews/rear-current.webp)<br>背面斜視 | [![正面立面](previews/front-elevation-current.webp)](previews/front-elevation-current.webp)<br>正面立面 |
+| [![背面立面](previews/rear-elevation-current.webp)](previews/rear-elevation-current.webp)<br>背面立面 | [![右側立面](previews/right-end-current.webp)](previews/right-end-current.webp)<br>右側立面 | [![俯視](previews/top-current.webp)](previews/top-current.webp)<br>俯視 |
 
 **既有模型材質升級：新增建築 0、幾何變更 0。** 原版 `model.stl` 的 3,618 三角面與全部位元保持不變；150 × 106 × 約 103.2 mm。現行共 160 面有材料色：沿用原 158 面，另在瞭望臺的一小段側牆延續暖白灰泥。其餘 3,458 面仍標為未知中性灰，**不是完整復色或 2026 現況復原**。
 
-六張均由此版交付網格重新渲染，沒有照片貼圖、遮蓋不利角度或另加的美化模型。頁面使用無失真 WebP，點圖可開原始 PNG。此目錄在建築總覽仍是原本安平古堡的**一張建築卡片**，不是六個新項目。
+六張均由此版交付網格重新渲染，沒有照片貼圖、遮蓋不利角度或另加的美化模型。頁面使用無失真 WebP，點圖可開完整 WebP。[原始 PNG 與原發布校驗清單](https://github.com/hplin50643/taiwan-buildings-3d/tree/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort)保存於固定歷史版本。此目錄在建築總覽仍是原本安平古堡的**一張建築卡片**，不是六個新項目。
 
 ## 160 面的補色範圍
 
@@ -59,7 +59,7 @@ python -m pip install -r requirements.txt
 python reproduce.py --out ./rebuild-output
 ```
 
-可指定 `--blender`、`--export-python`、`--mesh-python`。所有必要輸入已在此目錄，**不需網路、來源照片或私人儲存**；渲染限兩執行緒。`verify_reproducibility.py` 在新目錄只複製公開輸入，驗證 STL／3MF 位元、網格陣列與六張 PNG 位元及像素完全相同。原生 BLEND 因工作階段資料不要求檔案位元相同，但必須通過實際幾何、材質、編輯存回、重新渲染及完整 SDNA 固定字元緩衝區檢查。
+可指定 `--blender`、`--export-python`、`--mesh-python`。所有必要輸入已在此目錄，**不需網路、來源照片或私人儲存**；渲染限兩執行緒。`verify_reproducibility.py` 在新目錄只複製公開輸入，驗證 STL／3MF 位元、網格陣列、六張暫存 PNG 的歷史 SHA-256，以及現行無失真 WebP 的尺寸與解碼像素。只核對現行圖片時，執行 `python verify_webp.py`（需 Pillow），不必重建或保留 PNG。原生 BLEND 因工作階段資料不要求檔案位元相同，但必須通過實際幾何、材質、編輯存回、重新渲染及完整 SDNA 固定字元緩衝區檢查。
 
 原 STL SHA-256：`19dd8d6d17606fe0674245fca57230e7d9cae6b5b800dac93746b6ff2d11b524`。
 
