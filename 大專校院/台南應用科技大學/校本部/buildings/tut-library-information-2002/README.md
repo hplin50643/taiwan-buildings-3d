@@ -8,6 +8,8 @@
 | [![正面配色](previews/appearance-front-current.webp)](previews/appearance-front-current.webp)<br>正面配色 | [![背面（未知立面保持中性）](previews/appearance-rear-current.webp)](previews/appearance-rear-current.webp)<br>背面（未知立面保持中性） | [![完整俯斜](previews/appearance-aerial-current.webp)](previews/appearance-aerial-current.webp)<br>完整俯斜 |
 | [![北上頂圖](previews/appearance-top-current.webp)](previews/appearance-top-current.webp)<br>北上頂圖 |  |  |
 
+四張現行展示圖皆為可開啟原尺寸的無失真 WebP。可執行 `python verify_webp.py`（需 Pillow）核對檔案雜湊、尺寸、解碼像素及模型來源；如需重跑，請在外部暫存目錄依下方原始重建包說明操作，再以 `python verify_webp.py --rebuilt-package <重建輸出目錄>` 比對像素。[原始 PNG 固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/003d366eb240a07f932b8a7cc202ce4d424d00e8/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E5%8D%97%E6%87%89%E7%94%A8%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/tut-library-information-2002/previews) · [原發布版與校驗清單](https://github.com/hplin50643/taiwan-buildings-3d/tree/10b0646131267b52440866f5bffe3b5b81de05af/%E5%8F%B0%E5%8D%97%E6%87%89%E7%94%A8%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/tut-library-information-2002) · [現行展示查核](display-proof.json)
+
 ## 2026-10-20 原貌配色重建
 
 [可編輯8材質Blender](appearance.blend) · [標準彩色3MF](appearance.3mf) · [最小獨立重建源包](appearance-rebuild-source.zip)
