@@ -2,11 +2,14 @@
 
 依修平官方校園相簿正面及近斜面實景照建模：橘色短向淺弧頂、四藍柱、左側無字資訊板、右側紅色六角穿孔板、綠架深色長凳及簡化頂燈。
 
-|  |
-| :---: |
-| ![主視角](previews/front.png) |
-| 主視角 |
+## 模型預覽
 
+|  |  |  |
+| :---: | :---: | :---: |
+| [![主視角](previews/front-current.webp)](previews/front.png)<br>主視角 | [![正面](previews/front_elevation-current.webp)](previews/front_elevation.png)<br>正面 | [![背面](previews/rear-current.webp)](previews/rear.png)<br>背面 |
+| [![左側](previews/left_end-current.webp)](previews/left_end.png)<br>左側 | [![俯視](previews/top-current.webp)](previews/top.png)<br>俯視 | [![右側孔板局部，非全體](previews/entry_detail-current.webp)](previews/entry_detail.png)<br>右側孔板局部，非全體 |
+
+以上均為同一套彩色模型渲染；前五張為全景，最後一張為孔板細節。展示用無失真 WebP，點圖可開啟原始 PNG。[展示圖來源與驗證](display-proof.json)。
 
 ## 明確範圍
 - 完整主要亭體，不含獨立外燈、公車站牌、校門牆、植栽及道路排水設施。
@@ -18,15 +21,5 @@
 `model.stl`、8色 `model.3mf`、含隱藏可編輯原始元件的 `scene.blend`、可重建網格的 `build_model.py`。約 157.36 × 81.48 × 97.94 mm。
 
 14項幾何/格式檢查、全新目錄精確重建、Blend等值、五全景一局部構圖及渲染雜湊檢查，各有QA紀錄；不構成實際試印保證。
-
-## 六視圖
-
-|  |  |  |
-| :---: | :---: | :---: |
-| ![正面](previews/front_elevation.png) | ![背面](previews/rear.png) | ![左側](previews/left_end.png) |
-| 正面 | 背面 | 左側 |
-| ![俯視](previews/top.png) | ![右側孔板局部，非全體](previews/entry_detail.png) |  |
-| 俯視 | 右側孔板局部，非全體 |  |
-
 
 [來源與限制](SOURCES.md)。包內不含原始照片或人物影像。

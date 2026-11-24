@@ -1,0 +1,122 @@
+{
+  "base_revision": "cca81a9b6bd9b929694099952a3cb96b6d778571",
+  "model_sha256": {
+    "model.stl": "6a0aae848e25386fe967948cd38846163a0107c67497656563215fee1ab3da07",
+    "model.3mf": "d791081fa6f18165847bd6ea66368ce417a5c4757062a8818328c37d554ed07f",
+    "scene.blend": "df751a51e88b42a22ba28fb98f2ccbf82bc7e2260492bc6f8827a0c3fdc8ada7",
+    "mesh-data.npz": "c975c0e9617fad5822d446283bcc2ff91b37aed75366f6ced4301bef8aa041fd",
+    "render_model.py": "8dcc3a69e359b9130f2e1938ca1cdfad5cec6328ef7bc22d423f1e92d436a93c"
+  },
+  "render_binding_record": "RENDER-BINDING-QA.json",
+  "framing_record": "FRAMING-QA.json",
+  "views": {
+    "front": {
+      "preview": "previews/front-current.webp",
+      "png": "previews/front.png",
+      "png_bytes": 1400357,
+      "png_sha256": "076150de700daaeacb016512d7e35f514741f401ae45cf5fe2326aaff8ad0a38",
+      "webp_bytes": 471430,
+      "webp_sha256": "6df8e5120aaab8c16ea46fcb0995e6dadc2cd81f94cb1725d3be2f2f8cc65b6e",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "detail_view": false
+    },
+    "front_elevation": {
+      "preview": "previews/front_elevation-current.webp",
+      "png": "previews/front_elevation.png",
+      "png_bytes": 1089952,
+      "png_sha256": "09d390aa9e40f7f3caa2ebc657d73aa6735be54d090696f3e6dea64fc83f6166",
+      "webp_bytes": 205700,
+      "webp_sha256": "54974c53598f6399b03ebba7abca652d8ee0b60a3de1fcf35eb687702d41946e",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "detail_view": false
+    },
+    "rear": {
+      "preview": "previews/rear-current.webp",
+      "png": "previews/rear.png",
+      "png_bytes": 1386644,
+      "png_sha256": "fad4809c29e7a2e28c2911d1f089be3c3953d19ad5c03f7b68ba3e31fe56f138",
+      "webp_bytes": 450782,
+      "webp_sha256": "3bd4b5f7b1ef8093e5292d160cf4b868385b80b9a17d9fe4188ddc233bcb247e",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "detail_view": false
+    },
+    "left_end": {
+      "preview": "previews/left_end-current.webp",
+      "png": "previews/left_end.png",
+      "png_bytes": 1406847,
+      "png_sha256": "dac22d9748f831ab870f72b6e0fd0a5517af094be713e2a1d726282daaabb3f8",
+      "webp_bytes": 475104,
+      "webp_sha256": "a891e6f96d58a26b46b6b3133565f32fd72ce28beba5c724d29bd08d0d5f2dfe",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "detail_view": false
+    },
+    "top": {
+      "preview": "previews/top-current.webp",
+      "png": "previews/top.png",
+      "png_bytes": 1176660,
+      "png_sha256": "06f05555e0091c61aa1a9281e943880199b9f98006bd585783c46cb6dbf8aba8",
+      "webp_bytes": 353800,
+      "webp_sha256": "21dfa6f82a8f4fcca42d65c5200de238503ac7624f8ee34046f2dd004be655a8",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "detail_view": false
+    },
+    "entry_detail": {
+      "preview": "previews/entry_detail-current.webp",
+      "png": "previews/entry_detail.png",
+      "png_bytes": 1752025,
+      "png_sha256": "2fe85e1fff1b7bad0c4020846264149bc129548bd010f03858e888675b85314d",
+      "webp_bytes": 765184,
+      "webp_sha256": "56e4c814fe14fd6fb28a035eabc774c321247314293f1265ee3768baaa7bb98c",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "detail_view": true
+    }
+  },
+  "current_shared_cover": {
+    "path": "docs/display/catalog/530cbb8b1bb10a1cd6ab6f57-640.webp",
+    "exact_from": "previews/front.png",
+    "sha256": "0e2a5a57a3bf45087360c77b50b8e50e9ab16fdd73db5de6a111159ee02b1381",
+    "bytes": 17492,
+    "recipe": {
+      "width_px": 640,
+      "kernel": "Lanczos",
+      "webp_quality": 92,
+      "method": 6,
+      "matches": [
+        [
+          "RGB",
+          true
+        ],
+        [
+          "RGB",
+          false
+        ],
+        [
+          "RGBA",
+          true
+        ],
+        [
+          "RGBA",
+          false
+        ]
+      ]
+    }
+  }
+}
