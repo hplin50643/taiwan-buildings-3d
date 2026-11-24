@@ -7,7 +7,7 @@ for name,change in [('Reversed face winding',lambda q:q.__setitem__(0,q[0,[0,2,1
  try:bijection(t,q)
  except(AssertionError,KeyError):rows.append({'control':name,'rejected_as_expected':True})
  else:raise AssertionError(name)
-for group,replacement,label in [('tower_front_roof_slope',812,'Rejected rear groove'),('front_stair_risers_and_treads',213,'Held landing top'),('front_stair_risers_and_treads',216,'Held landing fascia'),('tower_front_outer_plaster',1216,'Unknown cabin skin')]:
+for group,replacement,label in [('tower_front_roof_slope',812,'Rejected rear groove'),('front_stair_risers_and_treads',213,'Held landing top'),('front_stair_risers_and_treads',216,'Held landing fascia'),('tower_front_outer_plaster',1216,'Unknown cabin skin'),('tower_side_outer_plaster_inferred',1151,'Perpendicular face replacing locked side specimen')]:
  with tempfile.TemporaryDirectory()as tmp:
   p=pathlib.Path(tmp);a=json.loads((root/'face-material-map.json').read_text());a['groups'][group]['faces'][0]['stl_face_index_0based']=replacement;(p/'face-material-map.json').write_text(json.dumps(a));shutil.copyfile(root/'model.stl',p/'model.stl')
   try:load_materials(p)

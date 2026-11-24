@@ -17,5 +17,5 @@
   "scan_complete": true,
   "stopped_early_after_many_violations": false,
   "method": "3D R-tree broad phase; near-parallel planes require reciprocal vertex-plane distances within coordinate tolerance before coplanar projected polygon area; noncoplanar edge/triangle candidate intersections independently confirmed on both planes and inside both projected triangles; points from ill-conditioned determinant cancellation are not accepted as intersections; shared mesh edges and vertices allowed; coplanar point/line contacts outside shared topology rejected. Numerical preflight, not exact-predicate proof.",
-  "elapsed_seconds": 10.958
+  "elapsed_seconds": 14.412
 }

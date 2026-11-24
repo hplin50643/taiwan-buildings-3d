@@ -1,7 +1,7 @@
 {
   "all_pass": true,
-  "started_utc": "2026-10-26T06:16:07.838850+00:00",
-  "completed_utc": "2026-10-26T06:18:10.167219+00:00",
+  "started_utc": "2026-11-24T00:34:04.604698+00:00",
+  "completed_utc": "2026-11-24T00:37:09.086374+00:00",
   "fresh_directory_public_inputs_only": true,
   "copied_input_files": [
     "model.stl",
@@ -30,20 +30,20 @@
   ],
   "input_sha256": {
     "model.stl": "19dd8d6d17606fe0674245fca57230e7d9cae6b5b800dac93746b6ff2d11b524",
-    "face-material-map.json": "17c4f11cb10d1be6d564638f885b0cae02b6b16854a230479525f35f49fca38e",
-    "parameters.json": "81f7a496c7caba6f270b917718bf2df874d3fb5b8ec8bdb80b2af5309f2b9c54",
+    "face-material-map.json": "f1d8409feee3001fc64ad7ff1a26e07a0889b3c2824f86ee11f7396c50906750",
+    "parameters.json": "d78c9ca447296b1ef5fe1a8bd9f7b521325e21cd3f052e1f6ac7a34d8250773e",
     "baseline-identity.json": "e27c6c54ce4f07d3351d588a703a293a950ee055a3abadf59764cd077d5b42d7",
     "build_model.py": "61859069fbe2e21c3d5d93298d42fe735939ac2a6fa342c62a5b3c61621522f8",
     "legacy-render_preview.py": "afa81be3acaec330bbcf16380e98b48d0ad82655d2fbac0c822323be61873fdb",
     "legacy-sources.md": "7cba65c1340533c4c2e09a69697d2754b1ceaf035b0f45727bffbe2afbed1091",
-    "verify_baseline.py": "1a40683a84fd83385fbd9a349737ccafdbfd4f766d91c716dda0d3f37b398f89",
-    "build_materials.py": "48e6ff9bd0834c5e304c76ac546e5e5ea2018bbb4750f380126e22da341451bc",
-    "material_geometry.py": "726f86de77a69c1e59fec1c7b1df0e1db2ae272a40e939c854d8cae3782246ae",
+    "verify_baseline.py": "4913d9197a5aeacd4077cfa726301502946b0002ca9d4b175833f8ad92733406",
+    "build_materials.py": "5b61c495492496379681ebb5863bc146676b0ef91d3485542c753a0b7a56bfdd",
+    "material_geometry.py": "e868028ae26cbc3674c341d368f5ec0a3b3d7e92ec79f75d8fa9469d88754632",
     "mesh_topology.py": "e1c6d46ada51d499cb0540e7c9dfb3263603c2ee07f2c4e0b4c86196d53d03da",
     "export_3mf.py": "0c4992f8e22760510c0aaee8a2a0d5ce2fc9edf56e35d1e5c8dea46a93f4f002",
-    "verify_material_controls.py": "f886d74b659982332e20143d84526b7eb450e6ea736ca216c47ffd85fec3dbb0",
+    "verify_material_controls.py": "352f428c2684a96a5a47f60f0b55febce4cf0b444efa256054a39117e87566d2",
     "validate_self_intersections.py": "84889394d92ec47a156cd36ffc99d9ce8806ddafe75c9f4fe3135a044f7c0b0c",
-    "render_preview.py": "671d6fdbb6c2a1f4e2025ef64231e72d7c0d30bb4f066355920a8dd6b79557c9",
+    "render_preview.py": "dbca09eacc904cc5c6626bfb54c10c7470846d63a49f1317ad8d8b970d71943b",
     "verify_blend.py": "d29af536a5b14223327f17cb0e49cb361a3117c0335ee25acb4df5fa4b00bab2",
     "verify_path_buffers.py": "22800f47bd3898c27ec182cdf4cda0bf144f127b9d289aa2ff546003b4b402c0",
     "verify_png_metadata.py": "06c7d9cece8e7e935d4dcc24d4777fb50d2c4d4370a5c32db01b8fec6e841e0c",
@@ -69,73 +69,73 @@
       "file": "previews/front-elevation.png",
       "png_bytes_identical": true,
       "decoded_pixel_bytes_identical": true,
-      "decoded_pixel_sha256": "564327bfbd705cb200a29417d0427275a52fc81437b5e0865b5e9c9accb96710",
+      "decoded_pixel_sha256": "70e79bd72b18f946f539b2a745e4f3d6a81ffef8b3001a9cbae447e36b23d502",
       "dimensions": [
         1200,
         900
       ],
       "mode": "RGBA",
-      "sha256": "59639d7bdfdf746eea88f33800c2304cbe197fa5d903c61719291aaf7accf236"
+      "sha256": "a92c47b6e9b90e9aa38f8b2ac8f28ae25931f5a7571448bf6f0da5729e97118b"
     },
     {
       "file": "previews/front.png",
       "png_bytes_identical": true,
       "decoded_pixel_bytes_identical": true,
-      "decoded_pixel_sha256": "9ab0da6a056cf687bfeae7d2b9a076a7b6aa29a76f285ddabb2bb777324ea031",
+      "decoded_pixel_sha256": "b7922ff1312b6eeba859d57764de82073180db7762910aba99e2e6dfe8a5043c",
       "dimensions": [
         1200,
         850
       ],
       "mode": "RGBA",
-      "sha256": "3b0014c5599aff68c701a00cada68ba66b08e69c6f02c7fb0a6921a43edf3062"
+      "sha256": "01b1287445eebaa14a95ec7a5813ad9c29cd5bae82dbbaca38deb05ab328465e"
     },
     {
       "file": "previews/rear-elevation.png",
       "png_bytes_identical": true,
       "decoded_pixel_bytes_identical": true,
-      "decoded_pixel_sha256": "e7685c3223be231cdef5c3f03c50f632d152f95826d9a42c95f3ceb45d3784af",
+      "decoded_pixel_sha256": "98d43e1861f1796aad8a97ffa3514e843e7a7244c2faf41e49c009413ecaf8b2",
       "dimensions": [
         1200,
         900
       ],
       "mode": "RGBA",
-      "sha256": "e0ea89c09a0b4c361ab5206b1070371f9081f4ca4c4ae6dfe759e04005943797"
+      "sha256": "0358321b911273762d5b74e16903eeaf073f18c8eb0006f65f5926328e62a4f5"
     },
     {
       "file": "previews/rear.png",
       "png_bytes_identical": true,
       "decoded_pixel_bytes_identical": true,
-      "decoded_pixel_sha256": "7b67d34dc8fdf9a970ebded50294f0429183a1874efe36de5658ed1158fea6be",
+      "decoded_pixel_sha256": "bf783319dae7b4f30283376ca253e747cb8cbf673ff304cc8f53e6f334852a0f",
       "dimensions": [
         1200,
         850
       ],
       "mode": "RGBA",
-      "sha256": "e067226b9e5cf486f213a4a556e186dd83944f72421dd83d1d7c1f7322d85361"
+      "sha256": "f1507d177031d9d0968da17f15f5f63d4f34ecd26dcfe17b7204e49ff8bd61c5"
     },
     {
       "file": "previews/right-end.png",
       "png_bytes_identical": true,
       "decoded_pixel_bytes_identical": true,
-      "decoded_pixel_sha256": "df561e841e684863c35a4009417605277212072fbd3451133fd0d89b00d1402c",
+      "decoded_pixel_sha256": "f71cab915e303adc396f95c625fb070e60e23ee939336ad42968aeb055412b2f",
       "dimensions": [
         1200,
         1000
       ],
       "mode": "RGBA",
-      "sha256": "f6003a770a02dfeb2511eafe6061e1596768fe475cba3f3d8b328cfd271373b0"
+      "sha256": "721f492af5d5ae6859e1699729275208ed2ef1f079912a027ee2ba38bacac199"
     },
     {
       "file": "previews/top.png",
       "png_bytes_identical": true,
       "decoded_pixel_bytes_identical": true,
-      "decoded_pixel_sha256": "711045f7cb462117dcff4ddcb709c1a261f823718505b1c3e9a9e3b3351423d4",
+      "decoded_pixel_sha256": "7dc5478e7b237baccdcaef8ac44e350239fe339ca2ca82f5c0a6cf3911495136",
       "dimensions": [
         1200,
         850
       ],
       "mode": "RGBA",
-      "sha256": "4b2c002647d0df8692560b763c4a96581c3cf96752cac75b239956753b5447d8"
+      "sha256": "243e57f939385488adfd30363e2db34243dacb2cbd7fe9133a7641018481c3b0"
     }
   ],
   "native_bytes_not_required_identical": "Blender embeds runtime/session data. Actual native geometry/material/privacy/editability checks and all rendered preview bytes must agree.",
@@ -153,8 +153,8 @@
       "source_face_indices_exact": true,
       "per_face_material_indices_exact": true,
       "materials": [
-        3460,
-        14,
+        3458,
+        16,
         2,
         142
       ],
@@ -174,13 +174,13 @@
       "triangle_bijection_complete": true,
       "independent_normal_max_difference_from_stored": 2.9712635907230833e-08,
       "material_counts": [
-        3460,
-        14,
+        3458,
+        16,
         2,
         142
       ],
-      "historical_paint_faces": 158,
-      "unknown_neutral_faces": 3460,
+      "historical_paint_faces": 160,
+      "unknown_neutral_faces": 3458,
       "cabin_paint_faces": 0,
       "all_named_holds_are_neutral": true,
       "topology": {
@@ -272,8 +272,8 @@
       "base_materials": 4,
       "all_triangle_materials_match_palette": true,
       "material_counts": [
-        3460,
-        14,
+        3458,
+        16,
         2,
         142
       ],
@@ -333,8 +333,8 @@
         "base_materials": 4,
         "all_triangle_materials_match_palette": true,
         "material_counts": [
-          3460,
-          14,
+          3458,
+          16,
           2,
           142
         ],
@@ -348,7 +348,7 @@
         5,
         0
       ],
-      "3mf_sha256": "8b271055f8ae99c885387274039b177882493c11355214ab2133c57000054bb8"
+      "3mf_sha256": "6dd14bbd24374248f04ec7293b54ac756e282dc4c93317542b5ed4a59c8d2b52"
     },
     "blend-validation.json": {
       "all_pass": true,
@@ -362,8 +362,8 @@
       "native_source_index_attribute_matches_bijection": true,
       "all_material_indices_match_original_face_mask": true,
       "material_counts": [
-        3460,
-        14,
+        3458,
+        16,
         2,
         142
       ],
@@ -374,7 +374,7 @@
       "linked_libraries": 0,
       "embedded_scripts": 0,
       "relative_render_and_browser_paths": true,
-      "deliverable_sha256": "3110c7e980351a73a4bee04ae2e50c3fa92c99b32faaa0597a67f973fa3e5917"
+      "deliverable_sha256": "658d002b2d139b6f4ee3442186029e33b990914d78bf2e3c65414f6be26aefbc"
     },
     "native-edit-validation.json": {
       "all_pass": true,
@@ -383,7 +383,7 @@
       "temporary_diffuse_and_shader_edit_saved_and_reopened": true,
       "temporary_probe_removed": true,
       "delivered_blend_modified": false,
-      "before_and_after_sha256": "3110c7e980351a73a4bee04ae2e50c3fa92c99b32faaa0597a67f973fa3e5917"
+      "before_and_after_sha256": "658d002b2d139b6f4ee3442186029e33b990914d78bf2e3c65414f6be26aefbc"
     },
     "raw-path-buffer-validation.json": {
       "all_pass": true,
@@ -396,11 +396,11 @@
       "violations": [],
       "method": "Recursive embedded SDNA field offsets over every structured block instance and embedded structure/array; every fixed char array including its complete NUL tail; compare exact whole buffers with an actual newly saved --factory-startup Blender file, then narrowly declared public names/settings with full tail checking. No prefix-only grep or field-name-only path scan.",
       "scope": "Declared non-pointer fixed arrays of char/uchar/int8_t/uint8_t; raw pointer allocations, float geometry, and media are separate native/artifact checks.",
-      "model_blend_sha256": "3110c7e980351a73a4bee04ae2e50c3fa92c99b32faaa0597a67f973fa3e5917",
+      "model_blend_sha256": "658d002b2d139b6f4ee3442186029e33b990914d78bf2e3c65414f6be26aefbc",
       "blender_file_version": "403",
       "sdna_sha256": "26245ba53e256375178f5cd806cdcfdbed9a3b1d40e3a5f7f525afefd6eeceaa",
       "actual_factory_file_created": true,
-      "factory_blend_sha256": "3ab48d21db88f19b914eb6a986586c7ff6daf856ef567bc1134144339cf6e65c",
+      "factory_blend_sha256": "7b59da43f960ec973961393ff9df1775ca8265c5e73449b719d5f7344e07219f",
       "factory_fixed_buffers": 1983,
       "structured_blocks_checked": 1506,
       "raw_non_structured_blocks_outside_fixed_array_scope": 29,
@@ -454,7 +454,7 @@
           "forbidden_metadata_chunks": 0,
           "all_chunk_crcs_valid": true,
           "trailing_bytes": 0,
-          "sha256": "59639d7bdfdf746eea88f33800c2304cbe197fa5d903c61719291aaf7accf236"
+          "sha256": "a92c47b6e9b90e9aa38f8b2ac8f28ae25931f5a7571448bf6f0da5729e97118b"
         },
         {
           "file": "previews/front.png",
@@ -472,7 +472,7 @@
           "forbidden_metadata_chunks": 0,
           "all_chunk_crcs_valid": true,
           "trailing_bytes": 0,
-          "sha256": "3b0014c5599aff68c701a00cada68ba66b08e69c6f02c7fb0a6921a43edf3062"
+          "sha256": "01b1287445eebaa14a95ec7a5813ad9c29cd5bae82dbbaca38deb05ab328465e"
         },
         {
           "file": "previews/rear-elevation.png",
@@ -490,7 +490,7 @@
           "forbidden_metadata_chunks": 0,
           "all_chunk_crcs_valid": true,
           "trailing_bytes": 0,
-          "sha256": "e0ea89c09a0b4c361ab5206b1070371f9081f4ca4c4ae6dfe759e04005943797"
+          "sha256": "0358321b911273762d5b74e16903eeaf073f18c8eb0006f65f5926328e62a4f5"
         },
         {
           "file": "previews/rear.png",
@@ -508,7 +508,7 @@
           "forbidden_metadata_chunks": 0,
           "all_chunk_crcs_valid": true,
           "trailing_bytes": 0,
-          "sha256": "e067226b9e5cf486f213a4a556e186dd83944f72421dd83d1d7c1f7322d85361"
+          "sha256": "f1507d177031d9d0968da17f15f5f63d4f34ecd26dcfe17b7204e49ff8bd61c5"
         },
         {
           "file": "previews/right-end.png",
@@ -526,7 +526,7 @@
           "forbidden_metadata_chunks": 0,
           "all_chunk_crcs_valid": true,
           "trailing_bytes": 0,
-          "sha256": "f6003a770a02dfeb2511eafe6061e1596768fe475cba3f3d8b328cfd271373b0"
+          "sha256": "721f492af5d5ae6859e1699729275208ed2ef1f079912a027ee2ba38bacac199"
         },
         {
           "file": "previews/top.png",
@@ -544,7 +544,7 @@
           "forbidden_metadata_chunks": 0,
           "all_chunk_crcs_valid": true,
           "trailing_bytes": 0,
-          "sha256": "4b2c002647d0df8692560b763c4a96581c3cf96752cac75b239956753b5447d8"
+          "sha256": "243e57f939385488adfd30363e2db34243dacb2cbd7fe9133a7641018481c3b0"
         }
       ]
     },
@@ -553,7 +553,7 @@
       "reopened_actual_scene_rendered": true,
       "reference": "previews/front.png",
       "png_bytes_identical_after_metadata_normalization": true,
-      "sha256": "3b0014c5599aff68c701a00cada68ba66b08e69c6f02c7fb0a6921a43edf3062"
+      "sha256": "01b1287445eebaa14a95ec7a5813ad9c29cd5bae82dbbaca38deb05ab328465e"
     },
     "self-intersection-validation.json": {
       "source": "model.stl reloaded independently",
@@ -574,7 +574,7 @@
       "scan_complete": true,
       "stopped_early_after_many_violations": false,
       "method": "3D R-tree broad phase; near-parallel planes require reciprocal vertex-plane distances within coordinate tolerance before coplanar projected polygon area; noncoplanar edge/triangle candidate intersections independently confirmed on both planes and inside both projected triangles; points from ill-conditioned determinant cancellation are not accepted as intersections; shared mesh edges and vertices allowed; coplanar point/line contacts outside shared topology rejected. Numerical preflight, not exact-predicate proof.",
-      "elapsed_seconds": 11.813
+      "elapsed_seconds": 16.152
     },
     "3mf-xml-validation.json": {
       "all_pass": true,

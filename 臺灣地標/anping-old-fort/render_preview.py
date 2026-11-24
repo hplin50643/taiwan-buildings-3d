@@ -18,7 +18,7 @@ for poly,index in zip(mesh.polygons,ids):poly.material_index=int(mi[index]);poly
 for q in palette:
  h=q['hex'].lstrip('#');srgb=[int(h[i:i+2],16)/255 for i in (0,2,4)];c=[v/12.92 if v<=.04045 else((v+.055)/1.055)**2.4 for v in srgb]
  m=bpy.data.materials.new(q['id']);m.use_nodes=True;m.diffuse_color=(*c,1);node=m.node_tree.nodes['Principled BSDF'];node.inputs['Base Color'].default_value=(*c,1);node.inputs['Roughness'].default_value=q['roughness'];node.inputs['Metallic'].default_value=0;m['source_evidence']=q['source_evidence'];mesh.materials.append(m)
-o['scope']='Existing legacy crop, material-only historical front interpretation: 14 plaster, 2 roof, 142 brick/stair faces. 3460 unknown neutral; no cabin, landing, side, rear or hall paint. Occluded material continuity inferred.'
+o['scope']='Exact legacy crop: 14 original plaster faces and two inferred adjoining +X plaster faces, 2 roof, 142 brick/stair. 3458 unknown neutral; no other side, rear, cabin, landing or hall paint.'
 o['geometry_policy']='Original 3618 STL triangles preserved exactly; editable mesh is not a repaired or newly measured building.'
 scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.78,.81,.85,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.8
 scene.render.engine='CYCLES';scene.cycles.samples=params['render']['samples'];scene.cycles.seed=0;scene.cycles.use_denoising=False;scene.render.threads_mode='FIXED';scene.render.threads=2

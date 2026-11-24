@@ -3375,6 +3375,55 @@
       ],
       "evidence_level": "Source-observed material family with explicitly allowed bounded continuity inference; not pixel registration or calibrated color.",
       "palette_key": "brick"
+    },
+    "tower_side_outer_plaster_inferred": {
+      "faces": [
+        {
+          "stl_face_index_0based": 1152,
+          "triangle_vertices_mm_sorted_5dp": [
+            [
+              -23.75,
+              -10.25,
+              26.5
+            ],
+            [
+              -23.75,
+              4.25,
+              26.5
+            ],
+            [
+              -23.75,
+              4.25,
+              65.5
+            ]
+          ],
+          "coordinate_key_sha256": "86d6219933668cf46bb918f489044f4bb1dd434bbffdaf49bcb0826418124dd3"
+        },
+        {
+          "stl_face_index_0based": 1157,
+          "triangle_vertices_mm_sorted_5dp": [
+            [
+              -23.75,
+              -10.25,
+              26.5
+            ],
+            [
+              -23.75,
+              -10.25,
+              65.5
+            ],
+            [
+              -23.75,
+              4.25,
+              65.5
+            ]
+          ],
+          "coordinate_key_sha256": "d4d7c8ecb62f65984f75a5dd6b01e3d8c3600141d28c8148c30c87e200f10372"
+        }
+      ],
+      "count": 2,
+      "palette_key": "plaster",
+      "evidence": "Inferred adjoining plaster continuity on the model +X side; not a measured colour or full side reconstruction."
     }
   },
   "unknown_neutral_indices_0based": [
@@ -4379,9 +4428,7 @@
     1140,
     1141,
     1142,
-    1152,
     1153,
-    1157,
     1158,
     1159,
     1160,
@@ -6889,7 +6936,7 @@
       1242
     ]
   },
-  "required_claim": "Limited front-surface historical color-family interpretation from the official A01 image, whose EXIF records 2004-12-28; occluded material continuity is inferred. Not a current survey, calibrated color match, full-building coloring, seventeenth-century reconstruction, or new building.",
-  "paint_indices_sha256": "9250d0fdd52a7fa4a9248d9c83e3d4e5bfd62940614022aabc4e03232f4b9fbd",
+  "required_claim": "The 158 earlier front faces retain the historical interpretation of A01 (original EXIF records 2004-12-28). On the model +X side only, two adjoining original triangular faces use inferred same-material warm-white continuity, based on the recorded white lookout wall and the full shared boundary with already white face 1151. Not a measured color, compass direction, current survey, full-building colouring, seventeenth-century reconstruction, or new building.",
+  "paint_indices_sha256": "0be506773b89c35bd1622bb997f4373388bfbf4162fa7c6c85f93d52fae7cc9b",
   "all_other_faces_material": 0
 }
