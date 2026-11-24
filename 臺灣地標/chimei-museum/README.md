@@ -2,9 +2,9 @@
 
 ## 模型預覽
 
-| 正面斜視代表圖 | 背面斜視 | 右端亭外牆與檐帶 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![現行正面斜視](front-current.webp) | ![現行背面斜視](rear-current.webp) | ![現行右端亭外牆與檐帶](pavilion-flank.webp) |
+| [![現行正面斜視](front-current.webp)](front-current.webp)<br>正面斜視代表圖 | [![現行背面斜視](rear-current.webp)](rear-current.webp)<br>背面斜視 | [![現行右端亭外牆與檐帶](pavilion-flank.webp)](pavilion-flank.webp)<br>右端亭外牆與檐帶 |
 
 [彩色 3MF](appearance.3mf) · [可編輯 Blender](scene.blend) · [STL（不含色）](model.stl) · [逐面驗證](verification.json) · [渲染來源與視角](render-proof.json) · [校驗版本](CHECKSUM-SCOPE.md)
 
