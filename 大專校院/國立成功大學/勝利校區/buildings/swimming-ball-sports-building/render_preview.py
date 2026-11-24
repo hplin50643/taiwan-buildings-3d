@@ -1,10 +1,13 @@
 """Render the actual STL and save an editable Blender scene. Blender 4.3.2+.
-Run: blender -b -t 4 -P render_preview.py
+Run python export_display_webp.py; raw rendering is confined to its temporary staging directory.
 """
 import bpy,json,os
 from mathutils import Vector
 from pathlib import Path
-OUT=Path(__file__).resolve().parent; PREV=OUT/'previews'; PREV.mkdir(exist_ok=True)
+OUT=Path(__file__).resolve().parent
+if os.environ.get('NCKU_SWIM_RENDER_STAGING') != str(OUT):
+ raise RuntimeError('Use python export_display_webp.py to render in temporary staging')
+PREV=OUT/'previews'; PREV.mkdir(exist_ok=True)
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 bpy.ops.wm.stl_import(filepath=str(OUT/'model.stl'));model=bpy.context.object;model.name='Printable_NCKU_student-activity-center'
 mat=bpy.data.materials.new('Warm stone preview only');mat.diffuse_color=(.69,.64,.54,1);model.data.materials.append(mat)

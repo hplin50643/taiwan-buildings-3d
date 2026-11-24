@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![正面](previews/front.png)](previews/front.png)<br>正面 | [![背面](previews/rear.png)](previews/rear.png)<br>背面 | [![立面圖](previews/elevation.png)](previews/elevation.png)<br>立面圖 |
+| [![正面](previews/front.webp)](previews/front.webp)<br>正面 | [![背面](previews/rear.webp)](previews/rear.webp)<br>背面 | [![立面圖](previews/elevation.webp)](previews/elevation.webp)<br>立面圖 |
 
 第十二批；勝利校區。校方GIS G015，財產校碼R1A-69-0。尺寸約 150 × 150 × 87 mm，含底座最長邊150 mm，各件獨立比例。
 
@@ -33,9 +33,10 @@
 ## 檔案與重建
 
 - [模型 STL](model.stl)、[可編輯 Blender](scene.blend)
-- [正面原圖](previews/front.png)、[背面原圖](previews/rear.png)、[立面圖](previews/elevation.png)，均從實際 STL 產生
+- [正面 WebP](previews/front.webp)、[背面 WebP](previews/rear.webp)、[立面圖](previews/elevation.webp)，均從實際 STL 產生；WebP 解碼後的 RGBA 像素與原始 PNG 完全相同
 - `pip install -r requirements.txt` 後執行 `python build_model.py`
-- `blender -b -t 2 -P render_preview.py` 重建 Blender 與預覽
+- 在工作副本安裝 Pillow 13.0.0（libwebp 1.6.0），以 Blender 4.3.2 執行 `python export_display_webp.py`，從交付 STL 在暫存目錄重繪三張無損 WebP；不覆寫已交付的 Blender 場景。需另外重建場景，可加 `--scene-output /path/outside/package/scene.blend`。
+- 原始 PNG 見[轉換前的固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/b117ccd7cf1388c2cb32bf9c26919b0f632bb5d6/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8/%E5%8B%9D%E5%88%A9%E6%A0%A1%E5%8D%80/buildings/swimming-ball-sports-building)；也可用 `--archive-png-dir /path/outside/package` 重建原 PNG 至專案外，並逐張驗證歷史 SHA-256。本件現行交付以[第十二批校驗清單](../../../SHA256SUMS_BATCH12.txt)中「勝利校區/buildings/swimming-ball-sports-building/」的 18 筆條目驗證。
 - `python validate_model.py` 重驗原始 STL 法線、邊/頂點流形、封閉、單一連通表面、無額外內部空腔殼、正體積、乾淨重建雜湊與 Blender 幾何一致性
 - `python validate_sections.py` 執行固定共同邊方向0.2 mm截面閉合檢查；拒絕不閉合／退化輪廓
 - `python check_thin.py` 執行每1 mm取樣、0.8 mm形態開運算薄特徵輔助篩查

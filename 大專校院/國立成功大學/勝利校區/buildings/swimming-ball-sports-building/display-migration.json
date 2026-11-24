@@ -1,0 +1,63 @@
+{
+  "archive_commit": "b117ccd7cf1388c2cb32bf9c26919b0f632bb5d6",
+  "archived_batch_manifest_sha256": "6352b3327eb8482a8270cce79ea1728503a7fdfdbc1219dfd7cfe574bd0ae1d3",
+  "requested_model_scope": "大專校院/國立成功大學/勝利校區/buildings/swimming-ball-sports-building",
+  "renderer": "Blender 4.3.2",
+  "encoder": "Pillow 13.0.0 / libwebp 1.6.0",
+  "exact_original_png_sha256_rebuild_in_temporary_staging": true,
+  "pixel_exact_views": {
+    "front": {
+      "dimensions": [
+        1400,
+        1000
+      ],
+      "archived_png_sha256": "875bd4c445e34c57dddaa102266028e8f987ca55bce11d232c611341a7cc7125",
+      "old_png_bytes": 1676347,
+      "webp_sha256": "d649c3df5afbd7387953b48a68078ed909560d2c126e854e262305ceb2a621a6",
+      "webp_bytes": 536468,
+      "rgba_sha256": "cac78cf75b29485d4a76ad95a1fd75c99a639126ae74bff76b69244d8057f5b1"
+    },
+    "rear": {
+      "dimensions": [
+        1400,
+        1000
+      ],
+      "archived_png_sha256": "2c4759d23490d5c88d209658f2dd148773588a8b00416776a9797ff500907df8",
+      "old_png_bytes": 1502566,
+      "webp_sha256": "2f14e8bfb50683310e1be5ce8d9445820265b532d8e9ea9f17912b63a37244d5",
+      "webp_bytes": 343124,
+      "rgba_sha256": "daa689c2da8d15be58ce2720175bd1aa5675d32a776e3bb80c67ecbc181c3d1f"
+    },
+    "elevation": {
+      "dimensions": [
+        1400,
+        1000
+      ],
+      "archived_png_sha256": "b18e8b5f9f3ad95f9e6d4bf652bd30c91f5c509860bd773423252ba67d47d451",
+      "old_png_bytes": 1338414,
+      "webp_sha256": "a3b3da49af03385ecccae5f3659afb1315dea0dc8d2299b1cc97a0ce6b0d05d9",
+      "webp_bytes": 401570,
+      "rgba_sha256": "e3726d7ee211c73ce9e3b401fb3a709c5fad52516a826ee1a726dcd571054282"
+    }
+  },
+  "mesh_triangles": 2044,
+  "unchanged_native": {
+    "model.stl": {
+      "sha256": "f8db6bdb77ad48e31883c7ef9e3c8d787bedf7a935e239c466bc41d3fb2d73f9",
+      "oid": "865e928ef8beb2f47e0586a33e8422c274e847db"
+    },
+    "scene.blend": {
+      "sha256": "3563ee8b0fcba6ebdd64e0eaa13e9f79fe924df1448aecc86271cd4c73c2ea2b",
+      "oid": "ea2f5f5b26010d0ff9265ee2d480d708907c1553"
+    },
+    "build_model.py": {
+      "sha256": "ebf6fb6cfae0db161c29157760d35d0bab0053d10d8e0d38e4a7de11ea68c5c3",
+      "oid": "76a68ce194900349ebc1dc67858e840902385484"
+    }
+  },
+  "digital_qa": {
+    "native_geometry_all_pass": true,
+    "contour_checks_pass": true,
+    "thin_feature_screen_pass": true
+  }
+}
