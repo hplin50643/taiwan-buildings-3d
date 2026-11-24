@@ -2,9 +2,9 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+| ![正面](previews/front.webp) | ![背面](previews/rear.webp) |
+| :---: | :---: |
+| 正面 | 背面（未見部分按詳頁明示簡化） |
 
 公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
 
@@ -15,13 +15,13 @@
 - model.stl：毫米單件列印網格
 - scene.blend：可編輯的實際STL網格、攝影機與材質
 - build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
+- [`front.webp`](previews/front.webp)、[`rear.webp`](previews/rear.webp)、[`elevation.webp`](previews/elevation.webp)：由交付 STL 渲染的無損 WebP。
 - sources.json：公開來源與查閱日期
 - validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
 - layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
 
 ## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
+執行 python build_model.py；預覽可用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_preview_webp.py` 重建，不覆寫 STL 或 Blender 場景。若需重建場景，僅將 model.stl 和 render_preview.py 複製到獨立資料夾，再以 Blender 執行該腳本。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
 
 底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
 
@@ -35,3 +35,7 @@
 徐岩奇建築師事務所現行作品頁直接題為「臺南藝術大學第五學生宿舍」，主圖與本件來源影像為同一樓群。https://www.zoomatelier.com/products/info.php?id=8579 。因此先前依位置/形貌判讀的棟號，現已獲一手直接命名佐證；尺度及細節仍屬照片估計。
 
 
+
+[正立面 WebP](previews/elevation.webp)
+
+原交付 PNG 可從固定版本查驗：[elevation](https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8D%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E5%AE%98%E7%94%B0%E6%A0%A1%E5%8D%80/buildings/tnnua-fifth-student-dormitory/previews/elevation.png)、[front](https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8D%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E5%AE%98%E7%94%B0%E6%A0%A1%E5%8D%80/buildings/tnnua-fifth-student-dormitory/previews/front.png)、[rear](https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8D%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E5%AE%98%E7%94%B0%E6%A0%A1%E5%8D%80/buildings/tnnua-fifth-student-dormitory/previews/rear.png)。當時的檔案 SHA-256 見同一版本的 [hash-manifest.json](https://github.com/hplin50643/taiwan-buildings-3d/blob/e5f4ef477a7870870f2ec944bc5174d345a9e68d/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8D%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E5%AE%98%E7%94%B0%E6%A0%A1%E5%8D%80/buildings/tnnua-fifth-student-dormitory/hash-manifest.json)。
