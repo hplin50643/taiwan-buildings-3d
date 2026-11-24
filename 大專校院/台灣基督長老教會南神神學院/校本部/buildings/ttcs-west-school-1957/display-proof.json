@@ -95,7 +95,6 @@
   "existing_shared_cover": {
     "path": "docs/display/catalog/78862d2485778c9b9a04a3fe-640.webp",
     "sha256": "7f63f86205d9c866c2c33cb4e5eca9f750eaadc6f1ed11903b7e287dc70e2463",
-    "original": "previews/front.png",
     "exact_640px_lanczos_webp_q92_m6": [
       [
         "RGBA",
@@ -114,6 +113,71 @@
         false
       ]
     ],
-    "bytes": 15528
+    "bytes": 15528,
+    "exact_from_current_lossless_rgba": "previews/front-current.webp",
+    "historical_original_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/bff881da942d3051f97dab980feb69d9f60087fd/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-west-school-1957/previews/front.png"
+  },
+  "historic_png_commit": "bff881da942d3051f97dab980feb69d9f60087fd",
+  "exterior_webp_validation": {
+    "previews/front.png": {
+      "webp": "previews/front-current.webp",
+      "webp_bytes": 381784,
+      "webp_sha256": "624c77852d1537a13ad0e9e37f2c73d186b900dee635d38c331fa7dc3c5905e5",
+      "historic_png_sha256": "ecd4e51a3d233ce3a4b2f7844a10e026c107b8fbc3a147a6da33b99f8d606094",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "decoded_rgba_sha256": "6029d0997a2bb38ebf82e1b58b3565d737545e4e7e0a26005792235b70c68f22",
+      "historic_png_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/bff881da942d3051f97dab980feb69d9f60087fd/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-west-school-1957/previews/front.png"
+    },
+    "previews/rear.png": {
+      "webp": "previews/rear-current.webp",
+      "webp_bytes": 373252,
+      "webp_sha256": "5171e38f04c39c0d42f680e0e526d13330083a0ed392cda9178efacd9d245901",
+      "historic_png_sha256": "6596f7dbc3d30fe256478686e95f5e65add7a0654a1dd026a39cf3146d28d54a",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "decoded_rgba_sha256": "24ce03995d569718d76e428522ec5f1fc542a88506aa202d0839edce696b21c3",
+      "historic_png_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/bff881da942d3051f97dab980feb69d9f60087fd/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-west-school-1957/previews/rear.png"
+    },
+    "previews/elevation.png": {
+      "webp": "previews/elevation-current.webp",
+      "webp_bytes": 364626,
+      "webp_sha256": "934bd324160a122ab20bff8a73c2d45c766c0ef30afe842c6b03c63d34ab2e86",
+      "historic_png_sha256": "0b75896168aa52483903bf2f0f15e5281b03e78a1025b7a318c14d124b0578b0",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "decoded_rgba_sha256": "9319671ad6f815082b0bebcdb512a759d0f5e875c4a1e7273e2b7b1d42ea5209",
+      "historic_png_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/bff881da942d3051f97dab980feb69d9f60087fd/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-west-school-1957/previews/elevation.png"
+    },
+    "previews/top.png": {
+      "webp": "previews/top-current.webp",
+      "webp_bytes": 365070,
+      "webp_sha256": "05a3a5233491ad3362020205afb6c51896919cdaa4edcf66562593a590bada4c",
+      "historic_png_sha256": "67bf0ce325e12384e773a72d62b70d0805759a71264729a076a5f19347fb8f9f",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "decoded_rgba_sha256": "2edf5ec76df22ea816ec667813e05db07c9622a3249a35a83244bd566068e4b6",
+      "historic_png_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/bff881da942d3051f97dab980feb69d9f60087fd/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-west-school-1957/previews/top.png"
+    },
+    "previews/left_oblique.png": {
+      "webp": "previews/left_oblique-current.webp",
+      "webp_bytes": 378916,
+      "webp_sha256": "ee911633aa2757ed16b5a7d54c2170e86c8f123f97cd0bfc2911c17f1dc836b2",
+      "historic_png_sha256": "488bd7b3d889d333f2dfa88e64aa143276022a174f18d69698b810b212141174",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "decoded_rgba_sha256": "66719549e04de60a1d6f5fb8caa90ba104cdb1bc2e263231f14cd5c6bab36301",
+      "historic_png_archive": "https://github.com/hplin50643/taiwan-buildings-3d/blob/bff881da942d3051f97dab980feb69d9f60087fd/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%8F%B0%E7%81%A3%E5%9F%BA%E7%9D%A3%E9%95%B7%E8%80%81%E6%95%99%E6%9C%83%E5%8D%97%E7%A5%9E%E7%A5%9E%E5%AD%B8%E9%99%A2/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ttcs-west-school-1957/previews/left_oblique.png"
+    }
   }
 }

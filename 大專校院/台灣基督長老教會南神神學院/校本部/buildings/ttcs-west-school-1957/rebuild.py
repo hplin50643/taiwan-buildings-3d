@@ -1,17 +1,21 @@
-"""Rebuild geometry plus five actual-mesh views in a clean directory and compare bytes."""
+"""Rebuild in a clean directory, never altering delivered files or historical QA."""
 from pathlib import Path
-import argparse,subprocess,shutil,hashlib,json,sys
+import argparse, subprocess, shutil, sys
+from verify_webp import verify
 A=Path(__file__).resolve().parent
-p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--blender',default='blender');p.add_argument('--threads',default='4');args=p.parse_args();R=args.output.resolve()
-assert R!=A and not R.exists(), 'Use a new output directory, never the delivered model directory'
-R.mkdir(parents=True);(R/'previews').mkdir();(R/'qa').mkdir()
-for n in ['build_model.py','render_model.py']:shutil.copy2(A/n,R/n)
+p=argparse.ArgumentParser()
+p.add_argument('--output',type=Path,required=True)
+p.add_argument('--blender',default='blender')
+p.add_argument('--threads',default='4')
+a=p.parse_args()
+R=a.output.resolve()
+assert R!=A and A not in R.parents and not R.exists(),'Use a new external scratch output directory'
+R.mkdir(parents=True)
+for d in ['previews','qa']:(R/d).mkdir()
+for f in ['build_model.py','render_model.py']:shutil.copy2(A/f,R/f)
 subprocess.run([sys.executable,str(R/'build_model.py')],check=True)
-subprocess.run([args.blender,'-b','-t',args.threads,'--python-exit-code','1','--python',str(R/'render_model.py')],check=True)
-files=['model.stl','model.3mf','mesh.json','palette.json']+['previews/'+n+'.png' for n in ['front','rear','elevation','top','left_oblique']]
-hashes={}
-for n in files:
- assert (R/n).read_bytes()==(A/n).read_bytes(),n
- hashes[n]=hashlib.sha256((A/n).read_bytes()).hexdigest()
-(A/'qa/isolated-rebuild.json').write_text(json.dumps(dict(method='Independent directory geometry generation and full five-view Blender render using delivered rebuild.py, fail-on-Python-error; exact bytes',files_identical=hashes,all_five_previews_identical=True,delivered_generators_sha256={n:hashlib.sha256((A/n).read_bytes()).hexdigest() for n in ["build_model.py","render_model.py"]}),indent=2)+'\n')
-print('INDEPENDENT REBUILD ALL NINE ARTIFACTS EXACT')
+subprocess.run([a.blender,'--disable-autoexec','-b','--factory-startup','-t',a.threads,'--python-exit-code','1','--python',str(R/'render_model.py')],check=True)
+for f in ['model.stl','model.3mf','mesh.json','palette.json']:
+    assert (R/f).read_bytes()==(A/f).read_bytes(),f
+assert verify(A,R)==5
+print('Four exact core artifacts and five rebuilt PNG/active WebP pixel bindings pass; delivered files unchanged.')
