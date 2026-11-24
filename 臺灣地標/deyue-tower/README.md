@@ -2,9 +2,9 @@
 
 ## 模型預覽
 
-| 正面斜視代表圖 | 背面斜視 | 塔身庭院側主牆 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![現行正面斜視](front-current.webp) | ![現行背面斜視](rear-current.webp) | ![現行塔身庭院側主牆](courtyard-wall.webp) |
+| [![現行正面斜視](front-current.webp)](front-current.webp)<br>正面斜視代表圖 | [![現行背面斜視](rear-current.webp)](rear-current.webp)<br>背面斜視 | [![現行塔身庭院側主牆](courtyard-wall.webp)](courtyard-wall.webp)<br>塔身庭院側主牆 |
 
 [彩色 3MF](appearance.3mf) · [可編輯 Blender](scene.blend) · [STL（不含色）](model.stl) · [逐面驗證](verification.json) · [渲染來源與視角](render-proof.json) · [校驗版本](CHECKSUM-SCOPE.md)
 
