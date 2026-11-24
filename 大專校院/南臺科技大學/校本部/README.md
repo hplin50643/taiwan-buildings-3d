@@ -6,7 +6,7 @@
 
 | 模型 | 模型 | 模型 |
 |---|---|---|
-| [![生活機能館暨一體校門（2016）：實際模型預覽](../../../docs/display/catalog/98b984c98982d90221ce6123-640.webp)](buildings/stust-living-services-gate-2016/README.md)<br>**[生活機能館暨一體校門（2016）](buildings/stust-living-services-gate-2016/README.md)**<br>[局部材色3MF](buildings/stust-living-services-gate-2016/appearance.3mf) · [範圍與限制](buildings/stust-living-services-gate-2016/README.md) | [![新風雨球場（2020）：實際模型預覽](../../../docs/display/catalog/bfa55f76e83d21fc9087173b-640.webp)](buildings/stust-covered-sports-court/README.md)<br>**[新風雨球場（2020）](buildings/stust-covered-sports-court/README.md)** | |
+| [![生活機能館暨一體校門（2016）：實際模型預覽](../../../docs/display/catalog/stust-living-services-gate-2016-current-640.webp)](buildings/stust-living-services-gate-2016/README.md)<br>**[生活機能館暨一體校門（2016）](buildings/stust-living-services-gate-2016/README.md)**<br>[局部材色3MF](buildings/stust-living-services-gate-2016/appearance.3mf) · [範圍與限制](buildings/stust-living-services-gate-2016/README.md) | [![新風雨球場（2020）：實際模型預覽](../../../docs/display/catalog/bfa55f76e83d21fc9087173b-640.webp)](buildings/stust-covered-sports-court/README.md)<br>**[新風雨球場（2020）](buildings/stust-covered-sports-court/README.md)** | |
 
 [模型、原創參數、來源與完整QA](buildings/stust-living-services-gate-2016/README.md)
 

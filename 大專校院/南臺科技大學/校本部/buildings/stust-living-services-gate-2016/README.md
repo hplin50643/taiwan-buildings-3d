@@ -2,23 +2,25 @@
 
 **既有三材展示非單色；其餘未知域尚未完成分色。** partial_color_incomplete=true、fully_colored_exterior=false。僅曲門最高外立面60面淺灰，其他5270中性；原150柱角跨層樣本／1163短首弦、v1 HOLD與v2有限例外保留，不追認全域最薄壁或試印。
 
-## 指定首頁與圖鑑代表圖保持原件
+## 最新模型外觀
 
-|  |
-| :---: |
-| ![原指定校園三分之四代表圖](previews/homepage-three-quarter.png) |
-| 原指定校園三分之四代表圖 |
+|  |  |  |
+| :---: | :---: | :---: |
+| [![校園三分之四代表圖](../../../../../docs/display/catalog/stust-living-services-gate-2016-current-640.webp)](previews/homepage-three-quarter-current.png)<br>校園三分之四代表圖 | [![總覽](previews/display-current/preview.webp)](preview.png)<br>總覽 | [![背側](previews/display-current/rear.webp)](rear.png)<br>背側 |
+| [![正面](previews/display-current/front.webp)](front.png)<br>正面 | [![背面](previews/display-current/back.webp)](back.png)<br>背面 | [![西側](previews/display-current/west.webp)](west.png)<br>西側 |
+| [![東側](previews/display-current/east.webp)](east.png)<br>東側 | [![頂面](previews/display-current/top.webp)](top.png)<br>頂面 |  |
 
+大專校院圖鑑、學校與校區的代表圖採用上表第一張，從目前局部補色模型依原構圖（偏轉 36.87°、俯視 23.43°）重新渲染。其餘七張全景與下方三張局部圖是這套模型已核對的材色 QA 預覽，不代表全棟已上色。點圖可看原始 PNG。
 
-首頁、校級、校區圖鑑仍指定原 previews/homepage-three-quarter.png，36.87°偏轉／23.43°俯視、1200×1200原bytes不變。不是下方新補色preview，不以本次新增十圖取代首頁。原README公開另存 ORIGINAL-SOURCE-GAP-README.md，完整原指定與九張技術圖、三展示材、原scene/renderer保留。
+## 材色 QA 局部視圖
 
-## 附加本次材色QA十圖（不是首頁替代）
-| 總覽 | 背側 | 正面 |
-|---|---|---|
-|![總覽](preview.png)|![背側](rear.png)|![正面](front.png)|
-|![背面](back.png)|![西側](west.png)|![東側](east.png)|
-|![頂面](top.png)|![完整曲門外立緣](entry-detail.png)|![門柱原union端](facade-detail.png)|
-|![館舍接端](roof-detail.png)|||
+|  |  |  |
+| :---: | :---: | :---: |
+| [![完整曲門外立緣](previews/display-current/entry-detail.webp)](entry-detail.png)<br>完整曲門外立緣 | [![門柱原聯集端](previews/display-current/facade-detail.webp)](facade-detail.png)<br>門柱原聯集端 | [![館舍接端](previews/display-current/roof-detail.webp)](roof-detail.png)<br>館舍接端 |
+
+這三張有意裁切，以檢查曲門外緣、門柱端與館舍接端，不是整棟外觀。
+
+[展示圖與模型的對應證據](cover-lineage-proof.json) · [現行檔案校驗](SHA256SUMS) · [更新前的展示與歷史版 README](https://github.com/hplin50643/taiwan-buildings-3d/blob/4761855138f5a951a6268cf67030d7a9e3e2ed60/%E5%8D%97%E8%87%BA%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/stust-living-services-gate-2016/README.md) · [舊檔封存清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/4761855138f5a951a6268cf67030d7a9e3e2ed60/%E5%8D%97%E8%87%BA%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/stust-living-services-gate-2016/FREEZE-MANIFEST.json)
 
 ## 材色範圍
 同 stust-living-services-gate-2016 原項目，南臺科技大學校本部生活機能館暨一體校門，現W磅礡館，same-item/count_delta=0；不含西鄰T棟，不拆門與館成兩件。原5330三角/43原件字節保留，immutable無OBJ，不造OBJ。
@@ -37,4 +39,4 @@
 物件 STUST Living Services Gate 2016 partial color。原STL無色，3MF/scene不是四色耗材切片或試印認證。原build_model.py→colorize_model.py→export_appearance.py→validate_color.py，render_color.py/verify_color_scene.py。隔離Shapely2.1.2精確原build+color、三角multiset/原bytes/有限完整材域/3MF/scene重開/附加十圖只驗本次交付不改原幾何，無新全域列印背書。
 
 ## English scope
-Bounded source-gap variant,not monochrome discovery:60 complete curved upper-gate outer fascia triangles palegray;5270 neutral.43originalfiles/5330triangles unchanged,noOBJ. Original3displaymaterials/history and designated homepage-three-quarter.png (36.87deg/23.43deg) preserved; newtenviews are additional QA,not homepage replacement.6posts150crosslayersamples/1163shortfirstchords/v1HOLD/v2finiteexceptions preserved,not global minimumwall/physicalprint certification. Sameitem/count0/no geometry repair;date/capture unverified.
+Bounded source-gap variant,not monochrome discovery:60 complete curved upper-gate outer fascia triangles palegray;5270 neutral.43originalfiles/5330triangles unchanged,noOBJ. Original3displaymaterials/history and the original designated homepage-three-quarter.png are preserved as historical evidence. Current indexes reuse the same camera with the current color model; seven full-model and three detail QA views are shown separately.6posts150crosslayersamples/1163shortfirstchords/v1HOLD/v2finiteexceptions preserved,not global minimumwall/physicalprint certification. Sameitem/count0/no geometry repair;date/capture unverified.

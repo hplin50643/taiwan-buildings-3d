@@ -1,0 +1,221 @@
+{
+  "mode": "current",
+  "revision": "4761855138f5a951a6268cf67030d7a9e3e2ed60",
+  "blender_version": "4.3.2",
+  "source_sha256": {
+    "scene.blend": "48efa6e245405c3bb3808091a3bce8b1a44e4537ab5e3b66906de8dcfb1e93d5",
+    "appearance.3mf": "4a699b3178b576cf7e7ace7d24020bfe52da8dda863d2a931b12a4a97cad1848",
+    "model.stl": "bbc2dde32fdf1acff429b99dcac55e937e42ad022e6753595571d6498c4a91c5",
+    "ORIGINAL-SOURCE-GAP-scene.blend": "9c9549ae676b39c2dc0f3435a2c2030c19abe0b61576e2d913ec507670088a2b"
+  },
+  "mesh_matches_stl_exact_float32": true,
+  "mesh_and_materials_unmodified": true,
+  "triangle_count": 5330,
+  "material_face_counts": {
+    "1": 5270,
+    "0": 60
+  },
+  "matched_color_3mf": true,
+  "camera": {
+    "camera": [
+      -229.8555145263672,
+      218.8027801513672,
+      165.1102294921875
+    ],
+    "target": [
+      -11.343405723571777,
+      13.248764038085938,
+      35.110225677490234
+    ],
+    "camera_delta": [
+      -218.51211547851562,
+      205.55401611328125,
+      130.0
+    ],
+    "projection": "ORTHO",
+    "ortho_scale": 241.83984375,
+    "resolution": [
+      1200,
+      1200
+    ],
+    "yaw_from_campus_facade_deg": 36.86990114290094,
+    "elevation_deg": 23.428693023443444,
+    "screen_bounds": {
+      "min_x": 0.08999987691640854,
+      "max_x": 0.9099998474121094,
+      "min_y": 0.22726042568683624,
+      "max_y": 0.7727395296096802
+    },
+    "all_vertices_in_frame": true,
+    "caption_height_pixels": 0
+  },
+  "bounds": {
+    "min_x": 0.08999987691640854,
+    "max_x": 0.9099998474121094,
+    "min_y": 0.22726042568683624,
+    "max_y": 0.7727395296096802
+  },
+  "visible_text": false,
+  "output": {
+    "bytes": 1129507,
+    "sha256": "7e716d250f31d51121d2da87b54a0dfa6d0d323ff0a525a7ac82bbcef62bf0e2"
+  },
+  "prior_control_exact_png_after_metadata_strip": true,
+  "prior_control_exact_decoded_RGBA": true,
+  "prior_cover_exact_webp_from_prior_png": true,
+  "prior_webp": {
+    "bytes": 18148,
+    "sha256": "9963ef82f1a055bada576c8aa80a5bcb224ec7c0fc98a6a87cc178b496b53871"
+  },
+  "current_webp": {
+    "bytes": 11076,
+    "sha256": "ffa94242285a1def746fa89b755a08154e039caf9cab263a89d18cf2c6f19ed3",
+    "dimensions": [
+      640,
+      640
+    ],
+    "quality": 92,
+    "method": 6,
+    "alpha_exact_after_resize": true
+  },
+  "original_previews_unchanged": true,
+  "explanation": "The current cover is camera-only output from the latest published color scene. The older cover is independently byte-reproduced from the preserved earlier 3-material scene. Renderer and materials differ across these two source scenes: differences in image pixels do not measure the recolored faces. The whole-model view is not a detail check or a claim of full exterior color.",
+  "lineage_caution": "Published latest SHA256SUMS and exact main blob agree on scene.blend; older FREEZE-MANIFEST and independent visual QA record a different scene.blend hash. This comparison independently validates current main Blender mesh, original STL geometry and released 3MF faces/material indices and RGB, not equivalence of the older scene binaries. Do not rewrite that audit.",
+  "current_registry_source": {
+    "file": "previews/homepage-three-quarter-current.png",
+    "bytes": 1128996,
+    "sha256": "306cf7e41952eaa963b1bedf9998cae0ddbdbde47b48f98b21059ab533b3138a"
+  },
+  "qa_display_sources": {
+    "color_mesh_sha256": "be7419a953f1b08a5decb5fb714e3de213a3275f43099103c77b96fe4fb41e77",
+    "source_checks": [
+      "SHA256SUMS",
+      "DELIVERY-QA.json",
+      "NO-TEXT-QA.json",
+      "FRAMING-QA.json",
+      "SCENE-QA.json",
+      "COLOR-FORMAT-GEOMETRY-QA.json"
+    ],
+    "scope": "Published ten exact same-mesh QA PNGs (seven whole-building views, three deliberately cropped technical details). These are not claimed as newly rerendered here or identical to older frozen PNGs. All derivatives are decoded RGBA exact.",
+    "files": [
+      {
+        "png": "preview.png",
+        "png_bytes": 740494,
+        "png_sha256": "6cb567022fa68a3fc52e826ea471571c1aa1bd4e1d04dffbac4a5ff835a3658e",
+        "webp": "previews/display-current/preview.webp",
+        "webp_bytes": 230760,
+        "webp_sha256": "ce8df8ede448ce943172c79da980ea8f0fa457a665024f6c5b0db834393e79e6",
+        "role": "whole",
+        "older_frozen_png_sha256": "819f6e2fea5be1b1872ef7c69b9e55eb266d6ed1d7ca06ae11e8a9b2e50aad91",
+        "older_independent_png_sha256": "819f6e2fea5be1b1872ef7c69b9e55eb266d6ed1d7ca06ae11e8a9b2e50aad91"
+      },
+      {
+        "png": "rear.png",
+        "png_bytes": 725348,
+        "png_sha256": "5fd7b8b6a6d64fd8290af1c8b00c18e80dcfd9224d51594352e5f832cb176cbd",
+        "webp": "previews/display-current/rear.webp",
+        "webp_bytes": 218286,
+        "webp_sha256": "37ac1159c7891cae7d0fc279ecab49a0309aff51ff4b9b456a088c02b18b4e2e",
+        "role": "whole",
+        "older_frozen_png_sha256": "a38b33bcc279c0de86d6cd56471613588328cbf882751cbe9041fe63246ce131",
+        "older_independent_png_sha256": "a38b33bcc279c0de86d6cd56471613588328cbf882751cbe9041fe63246ce131"
+      },
+      {
+        "png": "front.png",
+        "png_bytes": 843993,
+        "png_sha256": "031093b9f2bedc95114ade0f632b14dff406d9cce92ddbbbe878c5ff733b678e",
+        "webp": "previews/display-current/front.webp",
+        "webp_bytes": 307994,
+        "webp_sha256": "715085567be119f56ac0467944a2fd11cde99c76b2b1cc529a7b21c01e69dd75",
+        "role": "whole",
+        "older_frozen_png_sha256": "20335a0678af1124bc054851f71ffd2c2f5bc1a485b3059da1d059a541b46ddb",
+        "older_independent_png_sha256": "20335a0678af1124bc054851f71ffd2c2f5bc1a485b3059da1d059a541b46ddb"
+      },
+      {
+        "png": "back.png",
+        "png_bytes": 857067,
+        "png_sha256": "0bdf6c50b79184cb0f376ddf097e04a10798094ae304560d55eebaca9c95d43c",
+        "webp": "previews/display-current/back.webp",
+        "webp_bytes": 330354,
+        "webp_sha256": "387ca9af026d97b5d07db331cd80b4e6ac6607cadc0c35bfd71040f1b144b5d4",
+        "role": "whole",
+        "older_frozen_png_sha256": "87b42b7515b2917a6d272179f0047cee3bf738c289a9778e1a2d59b1fa6fade3",
+        "older_independent_png_sha256": "87b42b7515b2917a6d272179f0047cee3bf738c289a9778e1a2d59b1fa6fade3"
+      },
+      {
+        "png": "west.png",
+        "png_bytes": 842544,
+        "png_sha256": "a6d09eb15fb6cd464d4a5e137f428c73832536d226981ebfdbc6f0115c624a34",
+        "webp": "previews/display-current/west.webp",
+        "webp_bytes": 310934,
+        "webp_sha256": "ed9f2bfa9981c0fc8a2064883e752c3cc4fe908075cb00b3a9034837d31bcc85",
+        "role": "whole",
+        "older_frozen_png_sha256": "89581cd88bcfd8d73e191b339392b1cf73911b6e5a1c64ae76208d09a2f0ec22",
+        "older_independent_png_sha256": "89581cd88bcfd8d73e191b339392b1cf73911b6e5a1c64ae76208d09a2f0ec22"
+      },
+      {
+        "png": "east.png",
+        "png_bytes": 846487,
+        "png_sha256": "87d604a2c24748b1a230e1d93c2d7a19f1c2f5e58c2f52c0dc9f0e3c5009fc0f",
+        "webp": "previews/display-current/east.webp",
+        "webp_bytes": 334958,
+        "webp_sha256": "9f86faf13d2ced451a4d02260bc05062175bffeaf135db79e9ef3e539dd9636e",
+        "role": "whole",
+        "older_frozen_png_sha256": "a7ab9506b7d6175a6b358dba494e5bf22a37912400702382c0125118b87b5fff",
+        "older_independent_png_sha256": "a7ab9506b7d6175a6b358dba494e5bf22a37912400702382c0125118b87b5fff"
+      },
+      {
+        "png": "top.png",
+        "png_bytes": 955796,
+        "png_sha256": "215f4551d0a20e187977defff68da2f126bae0afffd6cb8938d195aec969c190",
+        "webp": "previews/display-current/top.webp",
+        "webp_bytes": 366152,
+        "webp_sha256": "eaa4ac3ed0bd80a53a7fd0f8f647fa164be2fd535369c141749ca2daff3a7f02",
+        "role": "whole",
+        "older_frozen_png_sha256": "3b85d269a486689551702ea231f0babd4498288946027e01eb63f1a685cd95b7",
+        "older_independent_png_sha256": "3b85d269a486689551702ea231f0babd4498288946027e01eb63f1a685cd95b7"
+      },
+      {
+        "png": "entry-detail.png",
+        "png_bytes": 1217524,
+        "png_sha256": "0cff9a492b7f326d576710882c4d86fe68c99f218874c7b0ce6d924ee00ff9d0",
+        "webp": "previews/display-current/entry-detail.webp",
+        "webp_bytes": 623188,
+        "webp_sha256": "656f85ecf5475e8df97e91e692e3b091e6c81c67de9dab65c107a483e9b86233",
+        "role": "technical_detail",
+        "older_frozen_png_sha256": "dab7a8a880a8e5b4e187ee9cd3904e21261e95f47d7dac457d241d5e4d26e7a7",
+        "older_independent_png_sha256": "dab7a8a880a8e5b4e187ee9cd3904e21261e95f47d7dac457d241d5e4d26e7a7"
+      },
+      {
+        "png": "facade-detail.png",
+        "png_bytes": 861936,
+        "png_sha256": "09ec7a33cb8306955def4e9cdb37b927a37e14b8bd08b2a2240585612944363f",
+        "webp": "previews/display-current/facade-detail.webp",
+        "webp_bytes": 303252,
+        "webp_sha256": "637446fbf392156e1da96f4821fab01e33c8e7c5570c78af8aaeea16c47fee1e",
+        "role": "technical_detail",
+        "older_frozen_png_sha256": "8f34e7934a279908237b4b81a0cbcae48de8fcb07e98cf74b6f07d4f2fbd20cf",
+        "older_independent_png_sha256": "8f34e7934a279908237b4b81a0cbcae48de8fcb07e98cf74b6f07d4f2fbd20cf"
+      },
+      {
+        "png": "roof-detail.png",
+        "png_bytes": 1484993,
+        "png_sha256": "d1b7e1237815713749585646c293724b09fdd485ba70974c5fba6fbf2a31b952",
+        "webp": "previews/display-current/roof-detail.webp",
+        "webp_bytes": 797564,
+        "webp_sha256": "08813029d0e1f3a61eb8d064884de33405264b0f6390b235b03f92b136667d54",
+        "role": "technical_detail",
+        "older_frozen_png_sha256": "1d0ed5d40d006bf616d2b5059e9b6871c91dd89840c09a92f73f418d2740aace",
+        "older_independent_png_sha256": "1d0ed5d40d006bf616d2b5059e9b6871c91dd89840c09a92f73f418d2740aace"
+      }
+    ]
+  },
+  "frozen_reference": {
+    "location": "https://github.com/hplin50643/taiwan-buildings-3d/blob/4761855138f5a951a6268cf67030d7a9e3e2ed60/%E5%8D%97%E8%87%BA%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/stust-living-services-gate-2016/FREEZE-MANIFEST.json",
+    "frozen_scene_hash": "a2611ecdbcbd42447baeabc21923a59dfb9e412c9d8c812e5d2dc4b25e7f4ac3",
+    "older_independent_scene_hash": "a2611ecdbcbd42447baeabc21923a59dfb9e412c9d8c812e5d2dc4b25e7f4ac3"
+  },
+  "deployment_path": "大專校院/南臺科技大學/校本部/buildings/stust-living-services-gate-2016",
+  "baseline_tree": "41d1490c57b725414fe83cbedcdd71b33377e026",
+  "baseline_commit": "d3eb856a0dc18b8275d3da5ee3e8ca46b795a04d"
+}
