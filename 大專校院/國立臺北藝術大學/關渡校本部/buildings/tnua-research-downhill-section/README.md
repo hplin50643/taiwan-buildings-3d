@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![交付STL正面](previews/front.png) | ![交付STL背面](previews/rear.webp) |  |
+| ![交付STL正面](previews/front.webp) | ![交付STL背面](previews/rear.webp) |  |
 
 國立臺北藝術大學｜關渡校本部｜自建外觀近似模型
 
@@ -20,7 +20,7 @@
 ## 下載與尺寸
 
 - [STL](model.stl) · [可編修 Blender 網格](scene.blend)
-- [參數生成腳本](build_model.py) · [預覽生成腳本](render_preview.py) · [固定版本依賴](requirements.txt)
+- [參數生成腳本](build_model.py) · [正面 WebP 重建腳本](export_front_webp.py) · [固定版本依賴](requirements.txt)
 - 含底座外廓：114 × 150 × 130.25 mm；最長150 mm。本件獨立縮放，不與別件共用校園比例。
 - STL 單位按毫米匯入，底座朝下；scene.blend 的毫米單位已設定，由本件交付 STL 匯入。
 - [來源與支持範圍](sources.json) · [逐檔SHA256](SHA256SUMS)
@@ -42,11 +42,11 @@
 
 ## 可重建與fail-closed驗證
 
-Python3.12依 requirements.txt 安裝版本後執行 build_model.py；再用Blender4.3.2或相容版本執行 render_preview.py；最後執行 run_all_checks.py。原始輸出若不合格即非零退出，不以修補網格或Polygon隱藏錯誤。
+Python3.12依 requirements.txt 安裝版本後執行 build_model.py；若要重建原始場景，將 model.stl 與 render_preview.py 複製到獨立可寫目錄後用 Blender 4.3.2 執行該腳本；最後執行 run_all_checks.py。原始輸出若不合格即非零退出，不以修補網格或Polygon隱藏錯誤。
 
-正面 PNG 與學校／校區代表圖保留。背面、正立面與頂面改用 1000 × 800 無損 WebP，RGBA 像素與原 Blender PNG 完全相同。
+學校／校區代表圖維持不變。正面、背面、正立面與頂面使用 1000 × 800 無損 WebP，RGBA 像素與原 Blender PNG 完全相同。
 用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py` 可重新輸出，不會覆寫交付的 Blender 或正面圖。
-要取得 SHA-256 與原始交付檔完全相同的 PNG，可加 `--archive-png-dir /path/to/output`，並參照[原交付清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/ce07536a436e54513fe41cb38b9417b60cbef7f9/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8C%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E9%97%9C%E6%B8%A1%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/tnua-research-downhill-section/SHA256SUMS)。自動重建會核對三檔原始雜湊後才輸出。
+要取得 SHA-256 與原始交付檔完全相同的背面、正立面與頂面 PNG，可加 `--archive-png-dir /path/to/output`，並參照[原交付清單](https://github.com/hplin50643/taiwan-buildings-3d/blob/ce07536a436e54513fe41cb38b9417b60cbef7f9/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8C%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E9%97%9C%E6%B8%A1%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/tnua-research-downhill-section/SHA256SUMS)。自動重建會核對三檔原始雜湊後才輸出。
 
 - [原STL、法向繞序、每邊兩面、單殼、頂點連結單環、重建SHA與Blend一致](validation.json)
 - [0.2mm逐層閉合](layer-check.json)：651層，自z=0.071mm起
@@ -71,3 +71,7 @@ Python3.12依 requirements.txt 安裝版本後執行 build_model.py；再用Blen
 [關渡校本部](../../README.md) · [國立臺北藝術大學](../../../README.md)
 
 重建與重跑驗證前，請先把本資料夾複製到可寫工作目錄。凍結套件不直接覆寫，修訂另建版本。
+
+### 正面圖重建
+
+使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_front_webp.py`，只重建正面 WebP，不覆寫模型或其他視角。原交付 [PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/652ec6e5e9cd7ed7c8972462b35c4501fc33b631/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8C%97%E8%97%9D%E8%A1%93%E5%A4%A7%E5%AD%B8/%E9%97%9C%E6%B8%A1%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/tnua-research-downhill-section/previews/front.png) 的 SHA-256 為 `2db3acfa9f3d9e452f43de7b8647154efe82a2f755e532b7689badb96b17ca43`，可從該固定版本查驗。

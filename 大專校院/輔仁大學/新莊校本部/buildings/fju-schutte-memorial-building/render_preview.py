@@ -4,7 +4,10 @@ Run: blender -b -t 4 -P render_preview.py
 import bpy,json,os
 from mathutils import Vector
 from pathlib import Path
-OUT=Path(__file__).resolve().parent; PREV=OUT/'previews'; PREV.mkdir(exist_ok=True)
+OUT=Path(__file__).resolve().parent
+if (OUT/'SHA256SUMS').is_file():
+ raise RuntimeError('Render in a temporary staging directory; use export_front_webp.py for the front view')
+PREV=OUT/'previews'; PREV.mkdir(exist_ok=True)
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 bpy.ops.wm.stl_import(filepath=str(OUT/'model.stl'));model=bpy.context.object;model.name='Printable_FJU'
 mat=bpy.data.materials.new('Warm stone preview only');mat.diffuse_color=(.69,.64,.54,1);model.data.materials.append(mat)

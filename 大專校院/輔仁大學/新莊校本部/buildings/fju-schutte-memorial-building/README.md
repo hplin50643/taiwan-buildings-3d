@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![STL斜前方](previews/front.png) | ![STL斜後方](previews/rear.webp) |  |
+| ![STL斜前方](previews/front.webp) | ![STL斜後方](previews/rear.webp) |  |
 
 新莊校本部，官方校圖3號；含底座最大150 mm，每件獨立估計比例。不是測绘或BIM，也不是整校完成。
 
@@ -16,7 +16,7 @@
 主體依2025兩面照片，底部入口參照2026官方局部照片；其餘兩面未確定，刻意不補假窗。進深、屋頂設備房位置／大小、低翼範圍仍為近似。原石片及折板細紋省略；欄杆簡化成厚邊緣，未做裝修立面測绘。劇場是本棟內用途，不能另宣稱為第二棟。
 
 ## 檔案與驗證
-model.stl為交付原始網格；scene.blend由相同STL匯入，包含可編輯網格與鏡頭。前後圖直接來自STL，顏色僅供展示。Python 3.12安裝requirements.txt後執行build_model.py；驗證下載的套件請先執行 `sha256sum -c SHA256SUMS`。只重建背面、頂視與正立面無損 WebP 時，使用 Blender 4.3.2 與 Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py`。工具由交付 STL 渲染，PNG 與 Blender 場景先存於暫存目錄，不覆寫原正面圖或場景。若需原始 PNG 輸出或重建場景，在獨立可寫副本執行 `blender -b -t 4 -P render_preview.py`。依序執行validate_model.py、check_layers.py、check_contour_validity.py、thin_canonical_v2.py。
+model.stl為交付原始網格；scene.blend由相同STL匯入，包含可編輯網格與鏡頭。前後圖直接來自STL，顏色僅供展示。Python 3.12安裝requirements.txt後執行build_model.py；驗證下載的套件請先執行 `sha256sum -c SHA256SUMS`。只重建背面、頂視與正立面無損 WebP 時，使用 Blender 4.3.2 與 Pillow 13.0.0（libwebp 1.6.0）執行 `python export_display_webp.py`。工具由交付 STL 渲染，PNG 與 Blender 場景先存於暫存目錄，不覆寫原正面圖或場景。若需原始 PNG 輸出或重建場景，只複製 model.stl 與 render_preview.py 到獨立可寫目錄後執行 `blender -b -t 4 -P render_preview.py`。依序執行validate_model.py、check_layers.py、check_contour_validity.py、thin_canonical_v2.py。
 
 validation.json與qa-summary.json記錄原始法向、邊／頂點流形、水密、單殼、正體積、獨立重建SHA與Blend幾何一致。0.2mm截面均須degree2、逐輪廓與組合Polygon有效，不使用repair掩錯。0.8mm形態篩檢只是幾何提示，不是全面壁厚分析。
 
@@ -32,3 +32,7 @@ validation.json與qa-summary.json記錄原始法向、邊／頂點流形、水�
 照片只私下核對，未随包散布；幾何由程式自行建立，未使用他人3D資產。
 
 [2026年5月21日官方頁所用入口原照](https://www.fju.edu.tw/showImg/focus/focus2938.jpg)：本次已查看。這是局部入口照片，不能把整棟2025照片改稱2026現照。
+
+### 正面圖重建
+
+使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_front_webp.py`，只重建正面 WebP，不覆寫模型或其他視角。原交付 [PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/652ec6e5e9cd7ed7c8972462b35c4501fc33b631/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E8%BC%94%E4%BB%81%E5%A4%A7%E5%AD%B8/%E6%96%B0%E8%8E%8A%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/fju-schutte-memorial-building/previews/front.png) 的 SHA-256 為 `0ba8bda3137963a31f5d891a6e0dfaa7fcdf766854eea7a97194c7008f4e23e5`，可從該固定版本查驗。

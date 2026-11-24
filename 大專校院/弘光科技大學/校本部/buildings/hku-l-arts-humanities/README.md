@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.webp) | ![俯視](previews/top.webp) |
+| ![正面](previews/front.webp) | ![背面](previews/rear.webp) | ![俯視](previews/top.webp) |
 
 ## 模型範圍
 
@@ -38,7 +38,7 @@
 
 Python 3.12安裝requirements.txt後執行 python build_model.py；python validate_model.py；python check_valid_sections.py model.stl .；python thin_canonical_v2.py。
 
-重建背面 WebP：在 Python 環境安裝 Pillow==13.0.0（libwebp 1.6.0），使用 Blender 4.3.2 執行 `python export_rear_webp.py`。重建俯視及正立面兩張 WebP，可執行 `python export_top_elevation_webp.py`；前視 PNG 保留。原渲染產生的 PNG 與場景輸出只存在暫存資料夾，其他交付檔不會被覆寫。WebP 保留全尺寸、像素、色彩與相機資訊；重跑時會變動的渲染日期與耗時不納入 WebP 雜湊。如需重建全套 PNG 與場景，請先複製模型檔與原渲染腳本到獨立資料夾，再執行 `blender -b -t 2 -P render_preview.py`。
+重建背面 WebP：在 Python 環境安裝 Pillow==13.0.0（libwebp 1.6.0），使用 Blender 4.3.2 執行 `python export_rear_webp.py`。重建俯視及正立面兩張 WebP，可執行 `python export_top_elevation_webp.py`；這兩個工具不會改寫正面圖。原渲染產生的 PNG 與場景輸出只存在暫存資料夾，其他交付檔不會被覆寫。這三個視角的 WebP 保留全尺寸、像素、色彩與相機資訊；重跑時會變動的渲染日期與耗時不納入 WebP 雜湊。如需重建全套 PNG 與場景，請先複製模型檔與原渲染腳本到獨立資料夾，再執行 `blender -b -t 2 -P render_preview.py`。
 
 
 
@@ -73,3 +73,7 @@ STL: a58fbb72cc91c3b083562267784816338b2f8ad5ed8e5459eb1eb53a5554b998
 重建STL: a58fbb72cc91c3b083562267784816338b2f8ad5ed8e5459eb1eb53a5554b998
 
 詳見 [SHA256SUMS](SHA256SUMS)。
+
+### 正面圖重建
+
+使用 Blender 4.3.2、Pillow 13.0.0（libwebp 1.6.0）執行 `python export_front_webp.py`，只重建正面 WebP，不覆寫模型或其他視角。原交付 [PNG](https://github.com/hplin50643/taiwan-buildings-3d/blob/652ec6e5e9cd7ed7c8972462b35c4501fc33b631/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%BC%98%E5%85%89%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/hku-l-arts-humanities/previews/front.png) 的 SHA-256 為 `f0317f7646a3fbad98b41ece231330ffdcdaa02bd177095a27486213b071a40b`，可從該固定版本查驗。
