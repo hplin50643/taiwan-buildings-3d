@@ -2,18 +2,14 @@
 
 ## 模型預覽
 
-| 正面斜視 | 背面斜視 | 正立面 |
-|---|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![東立面](previews/elevation.png) |
+|  |  |  |
+| :---: | :---: | :---: |
+| [![正面](previews/front-current.webp)](previews/front.png)<br>正面斜視 | [![背面](previews/rear-current.webp)](previews/rear.png)<br>背面斜視 | [![東立面](previews/elevation-current.webp)](previews/elevation.png)<br>東立面 |
+| [![頂視](previews/top-current.webp)](previews/top.png)<br>頂視 | [![左斜視](previews/left_oblique-current.webp)](previews/left_oblique.png)<br>左斜視 |  |
 
 台灣基督長老教會南神神學院／校本部。完整兩層長條西校舍：單長脊四坡灰水泥瓦頂、東一樓4拱＋中央平頂門廊＋4拱、中央東西真貫通、南廊端真拱口；北一跨短穿廊止於本館接縫，末端為**開放展示截斷，不是假外牆**。東上9大拱窗，西上8大拱窗＋北端3小矩窗，西下一排矩窗與中央出口，非鏡像正面。廊後牆依來源為南3門5窗／北2門3窗，深灰底帶分段不堵中央；北2F接本體有D2門與旁窗代理，室內省略。
 
 採2024–2025完成修復影像與正式圖紙；2026原拍僅補接口，不稱2026全棟現況或竣工測繪。**不含本館、禮拜堂、噴泉、花園、雕塑、高樓或車棚**；連接段不另計一棟。
-
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視<br>![頂視](previews/top.png) | 左斜視<br>![左斜視](previews/left_oblique.png) |  |
 
 [彩色可編輯Blend](scene.blend) · [八材質3MF](model.3mf) · [無色STL](model.stl) · [來源](SOURCES.md) · [驗證](QA.md) · [授權](LICENSE.txt)
 
@@ -21,15 +17,15 @@
 
 **尚未實體試印，非免支撐。**拱廊、接口梁板、小雨庇與簷下需要按機器與方向規劃支撐。窗格約0.33mm、落水管約0.715mm、瓦紋約0.303mm；205個水平截層含0.8mm侵蝕檢查不存活小島，如實保留，不代表整體最小壁厚認證。
 
-重建：Python依賴見qa/toolchain.json；`python build_model.py`，`blender -b -t 4 --python-exit-code 1 --python render_model.py`。乾淨重建：`python rebuild.py --output /新的空目錄`。所有五圖均真mesh渲染，不是來源照片貼圖。
+重建：Python依賴見qa/toolchain.json；`python build_model.py`，`blender -b -t 4 --python-exit-code 1 --python render_model.py`。乾淨重建：`python rebuild.py --output /新的空目錄`。上方五張外觀圖均由此版模型渲染，不是來源照片。展示使用無失真 WebP，點圖可開啟原始 PNG。
 
 ## 無切網格的通道補充視圖
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+|  |  |  |
 | :---: | :---: | :---: |
-| ![從南廊口看長廊](qa/corridor-detail.png) | ![中央東西貫通門廊](qa/passage-detail.png) |  |
+| [![從南廊口看長廊](previews/corridor-detail-current.webp)](qa/corridor-detail.png)<br>從南廊口看長廊 | [![中央東西貫通門廊](previews/passage-detail-current.webp)](qa/passage-detail.png)<br>中央東西貫通門廊 |  |
 
-補充圖只改相機，不切網格、不隱藏牆或改材質。
+補充圖只改相機，不切網格、不隱藏牆或改材質。[核對展示圖與模型版本](display-proof.json)。
 
 ## 導航
 
