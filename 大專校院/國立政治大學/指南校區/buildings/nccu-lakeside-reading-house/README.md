@@ -16,7 +16,7 @@
 | [![前右視角](display/front-640.webp)](display/front.webp)<br>前右視角 | [![後左視角](display/rear-640.webp)](display/rear.webp)<br>後左視角 | [![右立面](display/elevation-640.webp)](display/elevation.webp)<br>右立面 |
 | [![正立面](display/side-640.webp)](display/side.webp)<br>正立面 | [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |
 
-## 窗背限域配色（2026-10-22）
+## 歷史基底：窗背限域配色（2026-10-22）
 
 [五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/nccu-lakeside-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
@@ -60,3 +60,5 @@ Python執行build_model.py；Blender背景執行render_preview.py；再用Python
 未做Cura/Prusa實際切片或實體試印；全校建物尚未完成。
 
 [現行展示圖與渲染校驗](display/README.md) · [原工程檔與舊校驗對應版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/62e4ad666ee428f5eb49d2f92a001438856b201e/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E6%8C%87%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/nccu-lakeside-reading-house/README.md)
+
+原彩色 PNG、原校驗表及重繪紀錄可從[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/7412402e81df010769f4d6503379882bea076565/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E6%8C%87%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/nccu-lakeside-reading-house)追溯。現行大圖以[像素對照表](display/archive-png.json)校驗；只檢查交付 WebP 時執行 `python display/verify_webp.py`（需 Pillow）。如需重做，在獨立工作目錄執行現行渲染器，再指定 `--replay-root /path/to/replay` 比對尺寸與解碼像素。生成的 PNG 僅是中間檔，不放回現行庫。

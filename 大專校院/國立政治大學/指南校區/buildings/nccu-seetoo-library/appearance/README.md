@@ -6,7 +6,7 @@
 
 本版檢查在 `qa-continuous-walls/`；原 `qa/`、`qa-panel-continuation/` 與下方舊說明為歷史資料，舊未染範圍僅由上列 46 面更新。現行重建：`python appearance/source/build_continuous_walls.py`；交換：`python appearance/source/verify_continuous_exchange.py`；五原視角／場景：`blender -b --python appearance/source/render_continuous_walls.py`；場景讀回：`blender -b --python appearance/source/verify_continuous_scene.py`。歷史 `build_appearance.py` 只生成基底色。來源 ZIP 不含第三方照片。
 
-# 政大達賢圖書館主館：湖側上層直段遮陽板限域配色
+# 政大達賢圖書館主館：湖側上層直段遮陽板限域配色（歷史基底）
 
 本案是主館，不是前方獨立湖濱悅讀小屋。原7246面中，僅湖側直段上層中央12片遮陽板的240個完整三角面採棕色表面代理 #98633D，其餘7006面維持中性 #AAA79F。中性表示未確認，不代表實物均灰色；不是全棟材質復原或2026現況。
 
@@ -37,3 +37,5 @@
 本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔與本說明；歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。
 
 [現行展示圖與渲染校驗](../display/README.md) · [原工程檔與舊校驗對應版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/43a9876a0b02cd1de15eb1b52cc8a3d332c909f9/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E6%8C%87%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/nccu-seetoo-library/appearance/README.md)
+
+原彩色 PNG、原校驗表及重繪紀錄可從[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/7412402e81df010769f4d6503379882bea076565/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E6%8C%87%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/nccu-seetoo-library)追溯。現行大圖以[像素對照表](../display/archive-png.json)校驗；只檢查交付 WebP 時執行 `python display/verify_webp.py`（需 Pillow）。如需重做，在獨立工作目錄執行現行渲染器，再指定 `--replay-root /path/to/replay` 比對尺寸與解碼像素。生成的 PNG 僅是中間檔，不放回現行庫。

@@ -6,7 +6,7 @@
 
 現行重建：`python appearance/source/build_continuous_walls.py`；交換驗證：`python appearance/source/verify_continuous_exchange.py`；五原視角及場景：`blender -b --python appearance/source/render_continuous_walls.py`；回讀：`blender -b --python appearance/source/verify_continuous_scene.py`。原 `build_appearance.py` 僅重建基底色。ZIP 只含模型重建檔，不含第三方參考圖。
 
-# 政大湖濱悅讀小屋：正面及右前窗背限域配色
+# 政大湖濱悅讀小屋：正面及右前窗背限域配色（歷史基底）
 
 獨立二層湖濱小屋，不是司徒達賢圖書館主樓。原3404面中，正面24窗及折板右側前8窗的64個完整背面三角採深灰青 #465C61 不透明玻璃外觀代理，其餘3340面維持中性 #AAA79F。中性意為未確認，不代表所有實物皆灰色；不是全棟材質復原或2026現況。
 
@@ -37,3 +37,5 @@
 本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔與本說明；歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。
 
 [現行展示圖與渲染校驗](../display/README.md) · [原工程檔與舊校驗對應版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/62e4ad666ee428f5eb49d2f92a001438856b201e/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E6%8C%87%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/nccu-lakeside-reading-house/appearance/README.md)
+
+原彩色 PNG、原校驗表及重繪紀錄可從[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/7412402e81df010769f4d6503379882bea076565/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E6%8C%87%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/nccu-lakeside-reading-house)追溯。現行大圖以[像素對照表](../display/archive-png.json)校驗；只檢查交付 WebP 時執行 `python display/verify_webp.py`（需 Pillow）。如需重做，在獨立工作目錄執行現行渲染器，再指定 `--replay-root /path/to/replay` 比對尺寸與解碼像素。生成的 PNG 僅是中間檔，不放回現行庫。
