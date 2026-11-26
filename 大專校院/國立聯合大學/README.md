@@ -651,7 +651,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![八甲田徑運動場司令台：正面](buildings/bajia-athletics-grandstand/display/front.webp)](buildings/bajia-athletics-grandstand/display/front.webp) | 背面預覽<br>[![八甲田徑運動場司令台：背面](buildings/bajia-athletics-grandstand/display/rear.webp)](buildings/bajia-athletics-grandstand/display/rear.webp) |  |
+| [![八甲田徑運動場司令台：正面](buildings/bajia-athletics-grandstand/display/front-640.webp)](buildings/bajia-athletics-grandstand/display/front.webp)<br>正面預覽 | [![八甲田徑運動場司令台：背面](buildings/bajia-athletics-grandstand/display/rear-640.webp)](buildings/bajia-athletics-grandstand/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 

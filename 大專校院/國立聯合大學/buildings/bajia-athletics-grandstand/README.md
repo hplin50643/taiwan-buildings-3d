@@ -3,11 +3,13 @@
 ## 模型預覽
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| [![正面與來源支持區域](display/front-640.webp)](display/front.webp) | [![背面，背牆中性、棚背為同材料推估](display/rear-640.webp)](display/rear.webp) | [![正立面](display/elevation-640.webp)](display/elevation.webp) |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／棚同材料推估<br>![背面](appearance/previews/rear.png) |  |
+| 正面與來源支持區域 | 背面，背牆中性、棚背為同材料推估 | 正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp) |  |  |
+| 頂視 |  |  |
 
-## 6 材質外觀版（2026-10-21）
+## 現行外觀版（六種顯示材質）
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuustand-appearance.3mf) · [可編輯場景](appearance/scene.blend)
@@ -44,3 +46,5 @@
 
 ## 實際模型尺寸
 150.0 × 88.0 × 68.8 mm（X × Y × Z，含底座）。
+
+現行大圖用 [WebP 與原圖像素對照](display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/336ce1843e6e4435f93ed1a5df7cc26434fb9596/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-athletics-grandstand)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_appearance.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。
