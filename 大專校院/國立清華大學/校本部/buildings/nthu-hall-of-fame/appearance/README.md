@@ -14,8 +14,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 未知背牆屋頂中性／構件有限延伸<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| [![正面](../display/front-640.webp)](../display/front.webp)<br>正面 | [![背面](../display/rear-640.webp)](../display/rear.webp)<br>背面，未確認的背牆與屋頂維持中性 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 | | |
 
 [表面色 3MF](nthufame-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
@@ -30,7 +30,9 @@
 
 [原幾何與歷史來源限制](../README.md)
 
-## 重建與核驗
+## 初版重建與核驗（歷史）
+
+以下指令僅適用於初版，現行檔案使用頁首的補色版流程。
 
 安裝 [依賴](source/requirements.txt)，Blender 使用 4.3.2。由本資料夾上層提供原 model.stl：
 
@@ -39,7 +41,7 @@
 3. `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_appearance.py`
 4. `blender -b -t 3 --python-exit-code 1 -P appearance/source/verify_scene.py`
 
-[獨立重建 ZIP](rebuild-source.zip)含原 STL、四支程式及依賴，不含第三方照片；不取代原建模腳本。[逐檔 SHA256](SHA256SUMS)
+[獨立重建 ZIP](rebuild-source.zip)含原 STL、四支程式及依賴，不含第三方照片；不取代原建模腳本。[現行外觀逐檔 SHA-256](SHA256SUMS)
 
 [交換／拓撲 QA](qa/exchange-validation.json)核對原座標與面序、全部面材質、單連通、有向水密邊、頂點 link 單環、正體積與零退化／重複面；lib3mf 嚴格讀取零警告，實際編輯單材質再存讀，其他材質及面指派不變。SDK 六位小數量化誤差另列。
 
@@ -67,3 +69,5 @@
 本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔；若原ZIP含README則同步本說明。歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。
 
 現版共有 7 個顯示材質（含未知中性色）；上方舊材質總數、舊中性範圍與 QA 為歷史描述，僅由本節有限範圍更新，非分色實體或製造認證。
+
+現行大圖用 [WebP 與原圖像素對照](../display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/9255d846ccecc0dc55f8820bdfb781a0a0e0cafa/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nthu-hall-of-fame)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。

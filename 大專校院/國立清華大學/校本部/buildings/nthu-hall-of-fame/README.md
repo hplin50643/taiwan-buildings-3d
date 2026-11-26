@@ -15,7 +15,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未知背牆屋頂中性／構件有限延伸<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面，未確認的背牆與屋頂維持中性 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 | | |
 
 ## 7 材質外觀版（2026-10-21）
 
@@ -34,7 +35,7 @@
 - `scene.blend`：由實際STL匯入的可編輯三角網格與預覽相機，不是BIM或布林歷史。
 - `model.obj`：輔助交換網格。
 - `build_model.py`：參數化原始碼，可獨立重建。
-- `previews/front.png`、`rear.png`、`elevation.png`：實際STL的正／背／立面渲染，已逐張看像素。正背是顯示方向，不是測量方位。
+- 單色 STL 幾何檢查（非現行彩色展示）：`previews/front.png`、`rear.png`、`elevation.png`：實際STL的正／背／立面渲染，已逐張看像素。正背是顯示方向，不是測量方位。
 - `validation.json`：原始法線、流形與乾淨重建等18項驗證。
 - `check_layers.py`、`layer-check.json`：0.2mm幾何截面與薄特徵篩查。
 
@@ -80,3 +81,6 @@ python check_layers.py
 
 ## 實際STL正背並排
 
+`hash-manifest.json` 是單色版的歷史清冊，不校驗現行 README；現行展示及說明檔見 [SHA-256 清冊](display/SHA256SUMS)。
+
+現行大圖用 [WebP 與原圖像素對照](display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/9255d846ccecc0dc55f8820bdfb781a0a0e0cafa/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nthu-hall-of-fame)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。
