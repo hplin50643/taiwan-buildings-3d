@@ -23,18 +23,18 @@
 ## 檔案與重建
 - [彩色 3MF](nthu-innovation-incubation-appearance.3mf)：原三角完整面材質，可編輯。
 - [Blender 原生場景](scene.blend)、[色票](palette.json)、[面對照](face-materials.json)。
-- 五圖：[正斜視](previews/front.png)、[後斜視](previews/rear.png)、[前立面](previews/elevation.png)、[側面](previews/side.png)、[頂面](previews/top.png)。
+下方縮圖可點開全尺寸 WebP。
 - [來源](SOURCES.md)、[許可說明](LICENSE-NOTICE.md)。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正斜視<br>![正斜視](previews/front.png) | 後斜視<br>![後斜視](previews/rear.png) | 前立面<br>![前立面](previews/elevation.png) |
-| 側面<br>![側面](previews/side.png) | 頂面<br>![頂面](previews/top.png) |  |
+| [![正面](../display/front-640.webp)](../display/front.webp)<br>正面 | [![背面](../display/rear-640.webp)](../display/rear.webp)<br>背面，未確認的外牆與屋頂維持中性 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 | [![側面](../display/side-640.webp)](../display/side.webp)<br>側面 | |
 
-將原 model.stl 與 appearance 資料夾置於同一父層；Python（numpy、lib3mf）執行 source/build_appearance.py、source/verify_exchange.py、source/verify_material_boundaries.py；Blender 4.3.2 執行 source/render_appearance.py 與 source/verify_scene.py。獨立乾淨重建需驗 3MF、maps、五張 PNG bytes 相同；Blend 驗語義而不宣稱二進位確定性。
+**歷史重建流程（非現行配色）**：將原 model.stl 與 appearance 資料夾置於同一父層；Python（numpy、lib3mf）執行 source/build_appearance.py、source/verify_exchange.py、source/verify_material_boundaries.py；Blender 4.3.2 執行 source/render_appearance.py 與 source/verify_scene.py。獨立乾淨重建需驗 3MF、maps、五張 PNG bytes 相同；Blend 驗語義而不宣稱二進位確定性。
 
 
-## 2026-11-14 淺前簷底有限補色（重新建置版）
+## 歷史版本：2026-11-14 淺前簷底有限補色
 
 僅原面8253與8259，由中性改既有磚族1（#B7866D、粗糙度0.78）。完整前側淺簷底z101、x±61.75、y14.5–16，面積185.25mm²；兩側耳部維持各自未修改面域。原8666三角面、座標、順序與幾何不變。現版仍3個顯示材質，指派數8650／14／2；上方舊14個已配色面等敘述及舊QA屬歷史版，本版為16面。
 
@@ -42,7 +42,7 @@
 
 本版由當前公開模型重新建置，不是尋回或恢復已遺失的舊草稿。模型與五個原生視角圖沿用此次完成候選的原bytes，相機與48samples不變。完整研究與獨審留在本地，不新增公開廣泛審核清單。PUBLIC-MODEL-SHA256SUMS僅核所列當前產品，舊checksum與QA不代表新版。
 
-### 現版重建
+### 2026-11-14 歷史重建
 
 ZIP含原STL、既有build_appearance.py與render_appearance.py、三支明確的現版包裝/驗證程式及本說明。使用NumPy與Blender4.3.2，在解包根目錄執行：
 
@@ -50,4 +50,6 @@ ZIP含原STL、既有build_appearance.py與render_appearance.py、三支明確�
 2. `python -B appearance/source/verify_current.py`
 3. `blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`
 
-請以現版命令取代上方歷史建置命令；直接執行舊builder會重建歷史配色。新程式只使用本地模型，寫出當前材質/3MF/五張PNG/scene與本地核驗報告；渲染包裝程式會暫存並還原既有歷史render-manifest，若原不存在則移除該次暫產的歷史檔名報告。不進行網路或憑證操作。
+以上是 16 面歷史版的重建命令；20 面現行版請用本文開頭的 build_continuous_walls.py；直接執行舊builder會重建歷史配色。新程式只使用本地模型，寫出當前材質、3MF、五張僅供暫存校驗的 PNG 及 Blender 場景與本地核驗報告；渲染包裝程式會暫存並還原既有歷史render-manifest，若原不存在則移除該次暫產的歷史檔名報告。不進行網路或憑證操作。
+
+現行大圖用 [WebP 與原圖像素對照](../display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/336ce1843e6e4435f93ed1a5df7cc26434fb9596/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nthu-innovation-incubation)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。
