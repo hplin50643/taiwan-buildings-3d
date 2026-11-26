@@ -6,5 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![正面斜視](front.webp)](front.webp)<br>正面斜視 | [![背側斜視](rear.webp)](rear.webp)<br>背側斜視 | [![正立面](elevation.webp)](elevation.webp)<br>正立面 |
-| [![側視](side.webp)](side.webp)<br>側視 | [![俯視](top.webp)](top.webp)<br>俯視 |  |
+| [![正面斜視](front-640.webp)](front.webp)<br>正面斜視 | [![背側斜視](rear-640.webp)](rear.webp)<br>背側斜視 | [![正立面](elevation-640.webp)](elevation.webp)<br>正立面 |
+| [![側視](side-640.webp)](side.webp)<br>側視 | [![俯視](top-640.webp)](top.webp)<br>俯視 |  |
+
+[原 PNG 與舊校驗固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/3056d5d3f0f18eb44e82fc3fb8efc3adda610b6c/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-main-library) · [WebP 像素與校驗對照](archive-png.json)

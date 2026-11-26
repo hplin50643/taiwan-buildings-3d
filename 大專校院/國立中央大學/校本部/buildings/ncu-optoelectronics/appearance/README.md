@@ -30,13 +30,10 @@
 
 3MF與Blend皆為完整原網格，不是局部色片。只使用完整三角面，不切面、不重網格；獨立半空間＋表面平面核對排除相鄰屋面誤收，兩材質區無交疊。lib3mf strict零警告，真實改色/保存/重開保留其他材質與面指派；Blender同樣實際編輯/保存/重開。乾淨重建比較3MF、maps、palette與5張PNG的bytes；Blend比語義而非主張binary可重現。
 
-| 正向 | 背向 | 立面 |
-|---|---|---|
-| ![正向](previews/front.png) | ![背向](previews/rear.png) | ![立面](previews/elevation.png) |
-
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 側向<br>![側向](previews/side.png) | 頂向<br>![頂向](previews/top.png) |  |
+| [![正面斜視](../display/front-640.webp)](../display/front.webp)<br>正面斜視 | [![背側斜視](../display/rear-640.webp)](../display/rear.webp)<br>背側斜視 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![側視](../display/side-640.webp)](../display/side.webp)<br>側視 | [![俯視](../display/top-640.webp)](../display/top.webp)<br>俯視 |  |
 
 五圖由本次實際3MF完整網格渲染；相機名稱不是精確地理方位，背側/頂部中性不代表有同向實景佐證。
 
@@ -71,3 +68,5 @@ Contractor photo0 central entrance primary pillar-family evidence; official PDF 
 本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
 
 現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。
+
+現行五個彩色視角使用可放大的無失真 WebP。原彩色 PNG 與相同內容的 README 副本可到[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/3056d5d3f0f18eb44e82fc3fb8efc3adda610b6c/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-optoelectronics)查閱；歷史雜湊表是原版本的紀錄，不用於現行檔案。重做原 PNG 時請在獨立工作副本執行。

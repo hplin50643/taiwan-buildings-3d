@@ -24,13 +24,10 @@
 ## 五個實際網格視角
 相機名稱不是地理方位；影像由交付3MF及逐面材質渲染，不是AI效果圖。
 
-| 前斜視 | 後斜視 | 正立面 |
-|---|---|---|
-| ![](previews/front.png) | ![](previews/rear.png) | ![](previews/elevation.png) |
-
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 側視<br>![](previews/side.png) | 頂視<br>![](previews/top.png) |  |
+| [![正面斜視](../display/front-640.webp)](../display/front.webp)<br>正面斜視 | [![背側斜視](../display/rear-640.webp)](../display/rear.webp)<br>背側斜視 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![側視](../display/side-640.webp)](../display/side.webp)<br>側視 | [![俯視](../display/top-640.webp)](../display/top.webp)<br>俯視 |  |
 
 ## 可攜重建及QA
 原model.stl放於appearance上層；依賴見source/requirements.txt，Blender 4.3.2。
@@ -50,7 +47,7 @@ lib3mf嚴格讀取零警告，單材質實編回存重開保持其他色與指�
 
 3MF是單網格表面色，不是分色封閉實體、噴頭映射、切片專案或G-code。FFF GUI、多材料路徑、支撐移除及實印未測，不保證可印或免支撐。不是測繪、施工、BIM或完整2026現況。
 
-[逐檔雜湊](SHA256SUMS) · [權利說明](LICENSE-NOTICE.md)
+[現行工程校驗](../PUBLIC-MODEL-SHA256SUMS) · [權利說明](LICENSE-NOTICE.md)
 
 原STL SHA256：c100700000dfb445be70dab4615a2654875ba3de9ae63e0f0c1c096bec2f6d74
 
@@ -82,3 +79,4 @@ DEOW front photograph0 primary step-family evidence; official PDF page14 lower i
 
 現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。
 
+現行五個彩色視角使用可放大的無失真 WebP。原彩色 PNG 與相同內容的 README 副本可到[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/3056d5d3f0f18eb44e82fc3fb8efc3adda610b6c/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-main-library)查閱；歷史雜湊表是原版本的紀錄，不用於現行檔案。重做原 PNG 時請在獨立工作副本執行。

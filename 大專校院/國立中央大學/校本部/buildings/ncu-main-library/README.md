@@ -7,7 +7,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面有限配色<br>![正面窗背、圓窗及框體有限配色](appearance/previews/front.png) | 主體側背牆連續補色（推估）<br>![側背主體外牆延伸淡暖灰，屋頂與未補區域保留原材質](appearance/previews/rear.png) |  |
+| [![正面斜視](display/front-640.webp)](display/front.webp)<br>正面斜視 | [![背側斜視](display/rear-640.webp)](display/rear.webp)<br>背側斜視 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![側視](display/side-640.webp)](display/side.webp)<br>側視 | [![俯視](display/top-640.webp)](display/top.webp)<br>俯視 |  |
 
 ## 歷史初版：正面有限配色（2026-10-22）
 
@@ -37,7 +38,7 @@
 - model.stl：單一連通列印實體，單位毫米
 - scene.blend：由交付STL匯入的可編輯網格（不是參數化BIM）；預覽材質只供展示
 - build_model.py：可攜參數化量體來源，無需來源照片即可重建
-- previews/front.png、rear.png、elevation.png：從實際STL渲染，不是設計效果圖；名稱為相機視角，非精確方位
+- 現行彩色 WebP 為交付模型實際渲染；原中性預覽只作工程留存。名稱是相機視角，非精確方位。
 
 使用 Python 3.12，依 requirements.txt 準備相依套件，Blender 4.3.2。
 
@@ -54,7 +55,7 @@
 
 底座平放。入口前框、圓窗上緣及簷口可能需要局部支撐。建議先以0.4 mm噴嘴、0.2 mm層高在實際切片軟體檢查外壁、橋接、支撐可移除性與底板附著，再決定列印設定。小窗框、曲面尖端與薄簷口可能不完整重現；不得將幾何通過寫成「免支撐、保證可印」。
 
-SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研究中的一件，不代表全校完成。
+[現行工程校驗](PUBLIC-MODEL-SHA256SUMS)列出現行工程與展示檔案。尚未實體試印。此為全校持續研究中的一件，不代表全校完成。
 
 ## 檔案下載與實際模型預覽
 
@@ -69,3 +70,6 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 
 另以0.2 mm間距逐層補查閉環及Polygon有效性，共 545 層通過，見[有效性報告](contour-validity-check.json)與[可攜檢查程式](check_contour_validity.py)。這項較密補查沒有做薄篩開運算；薄篩採樣間距仍是1 mm。兩者都不是正式切片、試印或全域壁厚保證。
 
+現行五個彩色視角使用可放大的無失真 WebP。原彩色 PNG 與相同內容的 README 副本可到[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/3056d5d3f0f18eb44e82fc3fb8efc3adda610b6c/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-main-library)查閱；歷史雜湊表是原版本的紀錄，不用於現行檔案。重做原 PNG 時請在獨立工作副本執行。
+
+**現行校驗：**在本資料夾執行 `sha256sum -c PUBLIC-MODEL-SHA256SUMS`；展示檔另可於 `display/` 執行 `sha256sum -c SHA256SUMS`。其他舊雜湊清冊僅作歷史紀錄，請搭配上方固定歷史版本與各次 QA 記錄查閱。
