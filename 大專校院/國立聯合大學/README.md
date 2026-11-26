@@ -443,7 +443,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![二坪山 M8 第八宿舍（國鼎館）：正面](buildings/erping-m8-kuoting-dorm/display/front-640.webp)](buildings/erping-m8-kuoting-dorm/display/front.webp) | 背面預覽<br>[![二坪山 M8 第八宿舍（國鼎館）：背面](buildings/erping-m8-kuoting-dorm/display/rear-640.webp)](buildings/erping-m8-kuoting-dorm/display/rear.webp) |  |
+| [![二坪山 M8 第八宿舍（國鼎館）：正面](buildings/erping-m8-kuoting-dorm/display/front-640.webp)](buildings/erping-m8-kuoting-dorm/display/front.webp)<br>正面預覽 | [![二坪山 M8 第八宿舍（國鼎館）：背面](buildings/erping-m8-kuoting-dorm/display/rear-640.webp)](buildings/erping-m8-kuoting-dorm/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
@@ -617,7 +617,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![二坪山蓮荷水世界游泳館：正面](buildings/erping-s1-lotus-aquatic-center/display/front-640.webp)](buildings/erping-s1-lotus-aquatic-center/display/front.webp) | 背面預覽<br>[![二坪山蓮荷水世界游泳館：背面](buildings/erping-s1-lotus-aquatic-center/display/rear-640.webp)](buildings/erping-s1-lotus-aquatic-center/display/rear.webp) |  |
+| [![二坪山蓮荷水世界游泳館：正面](buildings/erping-s1-lotus-aquatic-center/display/front-640.webp)](buildings/erping-s1-lotus-aquatic-center/display/front.webp)<br>正面預覽 | [![二坪山蓮荷水世界游泳館：背面](buildings/erping-s1-lotus-aquatic-center/display/rear-640.webp)](buildings/erping-s1-lotus-aquatic-center/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
