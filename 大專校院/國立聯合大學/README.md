@@ -566,7 +566,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![二坪山景觀餐廳：正面](buildings/erping-v1-landscape-restaurant/display/front-current.webp)](buildings/erping-v1-landscape-restaurant/display/front-current.webp) | 背面預覽<br>[![二坪山景觀餐廳：背面](buildings/erping-v1-landscape-restaurant/display/rear-current.webp)](buildings/erping-v1-landscape-restaurant/display/rear-current.webp) |  |
+| [![二坪山景觀餐廳：正面](buildings/erping-v1-landscape-restaurant/display/front-current-640.webp)](buildings/erping-v1-landscape-restaurant/display/front-current.webp)<br>正面預覽 | [![二坪山景觀餐廳：背面](buildings/erping-v1-landscape-restaurant/display/rear-current-640.webp)](buildings/erping-v1-landscape-restaurant/display/rear-current.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 

@@ -5,14 +5,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-current-640.webp)](display/front-current.webp)<br>正面斜視 | [![背面](display/rear-current-640.webp)](display/rear-current.webp)<br>背面斜視 | [![正立面](display/elevation-current-640.webp)](display/elevation-current.webp)<br>正立面 |
+| [![頂視](display/top-current-640.webp)](display/top-current.webp)<br>頂視 |  |  |
 
-## 6 材質外觀版（2026-10-20）
+## 現行6材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuv1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-來源支持的下層磚牆、銀灰屋頂、離散玻璃與綠色凹側代理、灰腰帶梯面；上層厚實框牆及未分灰腳的整柱中性，未新增細框或欄杆，未知背牆中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+來源支持的下層磚牆、銀灰屋頂、離散玻璃與綠色凹側代理、灰腰帶梯面；上層厚實框牆及未分灰腳的整柱中性，未新增細框或欄杆，未知背牆中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。
 
 
 依官方外觀照片製作的近似列印模型。最長邊獨立設定150 mm，並非全校統一縮尺或實測模型。正面朝-Y。只建外觀，不建內部配置。
@@ -22,7 +23,7 @@
 
 官方相簿：https://secretary.nuu.edu.tw/p/132-1003-1119.php?Lang=zh-tw
 
-完整照片標題與原圖來源見evidence.json。照片只用於研究，未收入交付檔。預覽直接渲染實際STL；顏色為材質，STL無顏色。
+完整照片標題與原圖來源見evidence.json。照片只用於研究，未收入交付檔。上方彩色預覽由現行外觀模型渲染；STL 網格不含顏色。
 
 ## 證據限制
 背面被鄰棟遮擋，後牆保持簡化；室內、招牌字體及前景雕塑未建。
@@ -36,7 +37,7 @@
 - build_model.py：原創參數化外觀來源，Python 3.11+
 - model.stl：毫米單位可列印網格
 - scene.blend：與STL一致的可編輯網格場景（另含攝影棚地面）
-- previews/front.png、rear.png：實際STL全幅前後視圖
+- previews/front.png、rear.png：保留給單色 STL 幾何核對，非現行彩色展示
 - validate_model.py、validation.json：原始法線、邊、頂點連結、連通與尺寸檢查
 - rebuild-check.json、blender-stl-agreement.json、SHA256SUMS：重建與交付核對
 
@@ -44,3 +45,5 @@
 
 ## 實際模型尺寸
 150.0 × 75.0 × 48.0 mm（X × Y × Z，含底座）。
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/ee64af983b821ac6fd24a31132cd5e3c2e255055/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-v1-landscape-restaurant)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_appearance.py`，再以 `--replay-root /path/to/copy` 校對。
