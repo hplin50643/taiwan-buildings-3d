@@ -5,14 +5,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 8 材質外觀版（2026-10-21）
+## 現行九材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuf3-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依官方雙照配置淡灰牆、深灰既有格柵與灰藍窗凹背；關閉入口採奶油色，原跨入口窗梃保留並同色。照片未證實 PV 頂面，屋頂維持中性，不沿歷史腳本猜測深藍電池板。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+依官方雙照配置淡灰牆、深灰既有格柵與灰藍窗凹背；關閉入口採奶油色，原跨入口窗梃保留並同色。照片未證實 PV 頂面，屋頂維持中性，不沿歷史腳本猜測深藍電池板。入口上三階既有六個前立面用近似灰色，未延伸至踏面、側面或背面。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。
 
 
 二坪山校區，官方相簿照片比對版。這是照片辨識後獨立建模的外觀小模型，並非建築測量、竣工圖或精確復原。
@@ -58,3 +59,5 @@
 - [公弢樓外觀 (5)](https://secretary.nuu.edu.tw/var/file/3/1003/gallery/0/1100/gallery_1100_9662340_27329.jpg)
 
 公開照片僅作研究引用，權利歸原權利人；套件不附原始照片，也不替任何來源授予授權。
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/a1b9e5c230381da8b9dd3701a79a67caf72a1c27/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-f3-gongtao)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_current.py`，再以 `--replay-root /path/to/copy` 校對。

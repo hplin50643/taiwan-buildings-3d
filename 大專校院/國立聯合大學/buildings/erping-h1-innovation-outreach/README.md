@@ -5,14 +5,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 8 材質外觀版（2026-10-21）
+## 現行8材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuh1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依官方雙照配置淡牆格、離散灰青窗背、中央灰淡紫實窗下帶與暖灰入口石材；只對曲面原窗凹背上色，右側離散窗依可見來源，未知左背與未證實 PV 的棚頂中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+依官方雙照配置淡牆格、離散灰青窗背、中央灰淡紫實窗下帶與暖灰入口石材；只對曲面原窗凹背上色，右側離散窗依可見來源，未知左背與未證實 PV 的棚頂中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。
 
 
 國立聯合大學二坪山校區。依學校官方相簿逐張辨識外觀，再以適合小型 FDM 列印的實體幾何重建。本模型不是測量成果、竣工圖、精確 BIM 或完整內部模型。
@@ -82,3 +83,5 @@ blender -b -t 5 -P render_preview.py
 - [入口近景 (4)](https://secretary.nuu.edu.tw/var/file/3/1003/gallery/4/1104/gallery_1104_3203573_27234.jpg)
 
 官方照片僅供研究引用，權利歸原權利人；本套件不附原始參考照片，不為來源照片授予額外授權。預覽由本套件的模型自行渲染。
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/a1b9e5c230381da8b9dd3701a79a67caf72a1c27/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-h1-innovation-outreach)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_appearance.py`，再以 `--replay-root /path/to/copy` 校對。

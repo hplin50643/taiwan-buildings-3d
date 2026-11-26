@@ -288,7 +288,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![F3 公弢樓：正面](buildings/erping-f3-gongtao/display/front.webp)](buildings/erping-f3-gongtao/display/front.webp) | 背面預覽<br>[![F3 公弢樓：背面](buildings/erping-f3-gongtao/display/rear.webp)](buildings/erping-f3-gongtao/display/rear.webp) |  |
+| [![F3 公弢樓：正面](buildings/erping-f3-gongtao/display/front-640.webp)](buildings/erping-f3-gongtao/display/front.webp)<br>正面預覽 | [![F3 公弢樓：背面](buildings/erping-f3-gongtao/display/rear-640.webp)](buildings/erping-f3-gongtao/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
@@ -305,7 +305,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![產研創新暨推廣大樓：正面](buildings/erping-h1-innovation-outreach/display/front.webp)](buildings/erping-h1-innovation-outreach/display/front.webp) | 背面預覽<br>[![產研創新暨推廣大樓：背面](buildings/erping-h1-innovation-outreach/display/rear.webp)](buildings/erping-h1-innovation-outreach/display/rear.webp) |  |
+| [![產研創新暨推廣大樓：正面](buildings/erping-h1-innovation-outreach/display/front-640.webp)](buildings/erping-h1-innovation-outreach/display/front.webp)<br>正面預覽 | [![產研創新暨推廣大樓：背面](buildings/erping-h1-innovation-outreach/display/rear-640.webp)](buildings/erping-h1-innovation-outreach/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
