@@ -1,11 +1,11 @@
-# 聯大八甲 I1 資訊大樓與 R1 會議中心段：八材質外觀版
+# 聯大八甲 I1 資訊大樓與 R1 會議中心段：現行9材質外觀
 
 沿用原 **4,066 三角面／1,979 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面保持中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| [![正面](../display/front-640.webp)](../display/front.webp)<br>正面 | [![背面](../display/rear-640.webp)](../display/rear.webp)<br>背面 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 |  |  |
 
 [表面色 3MF](nuui1-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
@@ -22,7 +22,7 @@
 
 [原幾何與來源限制](../README.md) · [來源覆核](qa/source-review.json)
 
-## 重建與核驗
+## 歷史版本的重建與核驗
 
 安裝 [依賴](source/requirements.txt)，Blender 使用 4.3.2。由本資料夾上層提供原 model.stl：
 
@@ -44,7 +44,7 @@
 3MF 是同一網格的表面色，不是八個封閉分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
 
 
-## 2026-11-14 有限外觀修正（新接續交付版）
+## 現行材質與重建
 
 僅R1原外階前三個踏面及正面階面完整域共12面，由未知0改用新灰8（#95998F，roughness .88）。原8材質及其他4054面不變。左斜側裙遮去x53–53.8，選取外露域x53.8–65；原16粗盒與基座相交保留，不代表實際細階數、中段平台、鼻口、欄杆或實測尺寸。不改側裙、上階、中間/屋頂平台、牆、前庭階梯與L1圖書館。樹遮角度僅輔助，不以影子新增深色材質。保留I1/R1低連接量體，不重複R1；屋頂/平台原照片估界不是精準校園組裝。
 
@@ -57,8 +57,10 @@
 
 Source0 R1 stairs primary; source1 tree-obscured auxiliary only. L1 excluded.
 
-現版共 9 個顯示材質（含未知中性色）。上方原材質數、面域與QA描述為歷史版本，僅由本節有限範圍更新。本版是新接續建置，不是尋回遺失草稿；不新增幾何或擴充補色範圍。
+現版共 9 個顯示材質（含未知中性色）。前節的舊建置流程與 QA 僅供重現歷史版本；現行模型未新增幾何。
 
 本節提及原ZIP/QA/校驗數目屬歷史記錄，不是現版ZIP清單。現版ZIP僅含原STL、必要舊建置與渲染程式、三支現版包裝／驗證程式、requirements-current.txt與本README及授權說明（如原有）。完整來源研究、照片、私人審核與廣泛校驗清單不公開。PUBLIC-MODEL-SHA256SUMS僅核當前交付產品；原QA不替代當前驗證。
 
 現版命令：`python -B appearance/source/build_current.py`、`python -B appearance/source/verify_current.py`、`blender -b -t 4 --python-exit-code 1 --python appearance/source/render_current.py`。依requirements-current.txt安裝必要依賴。直接執行舊builder會重建歷史配色。包裝程式僅執行固定本地舊程式，新增材質時只替換新材質粗糙度運算；寫模型、材質、場景、原視角PNG與當前本地QA。歷史報告先保存再還原；原不存在時只刪該次產生的舊名報告。不進行網路或憑證操作。
+
+現行大圖可用 [WebP 與原圖像素對照](../display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/81e9d09714d79e73c4125b37c089d1847d20829f/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-i1-r1-information-conference)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_current.py`，再以 `--replay-root /path/to/copy` 校對。

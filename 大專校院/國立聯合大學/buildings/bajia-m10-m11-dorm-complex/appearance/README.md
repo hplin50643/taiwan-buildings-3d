@@ -1,11 +1,11 @@
-# 聯大八甲 M10／M11 宿舍群：六材質外觀版
+# 聯大八甲 M10／M11 宿舍群：現行6材質外觀
 
 沿用原 **28,008 三角面／13,884 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 後肋推估補色，背牆及屋頂中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| [![正面](../display/front-640.webp)](../display/front.webp)<br>正面 | [![背面](../display/rear-640.webp)](../display/rear.webp)<br>背面 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 |  |  |
 
 ## 本次既有後側長肋同族補色（推估）
 
@@ -34,7 +34,7 @@
 
 [原幾何與歷史來源限制](../README.md)
 
-## 重建與核驗
+## 歷史版本的重建與核驗
 
 安裝 [依賴](source/requirements.txt)，Blender 使用 4.3.2。由本資料夾上層提供原 model.stl：
 
@@ -54,3 +54,5 @@
 尺寸仍為 150 × 106 × 65.9 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是六個封閉分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+現行大圖可用 [WebP 與原圖像素對照](../display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/81e9d09714d79e73c4125b37c089d1847d20829f/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-m10-m11-dorm-complex)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再以 `--replay-root /path/to/copy` 校對。

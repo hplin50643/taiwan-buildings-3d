@@ -460,7 +460,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![八甲 M10 第十宿舍＋M11 第十一宿舍（連通建築群）：正面](buildings/bajia-m10-m11-dorm-complex/display/front-640.webp)](buildings/bajia-m10-m11-dorm-complex/display/front.webp) | 背面預覽<br>[![八甲 M10 第十宿舍＋M11 第十一宿舍（連通建築群）：背面](buildings/bajia-m10-m11-dorm-complex/display/rear-640.webp)](buildings/bajia-m10-m11-dorm-complex/display/rear.webp) |  |
+| [![八甲 M10 第十宿舍＋M11 第十一宿舍（連通建築群）：正面](buildings/bajia-m10-m11-dorm-complex/display/front-640.webp)](buildings/bajia-m10-m11-dorm-complex/display/front.webp)<br>正面預覽 | [![八甲 M10 第十宿舍＋M11 第十一宿舍（連通建築群）：背面](buildings/bajia-m10-m11-dorm-complex/display/rear-640.webp)](buildings/bajia-m10-m11-dorm-complex/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
@@ -528,7 +528,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![資訊大樓與國際會議中心低層連通部分：正面](buildings/bajia-i1-r1-information-conference/display/front-640.webp)](buildings/bajia-i1-r1-information-conference/display/front.webp) | 背面預覽<br>[![資訊大樓與國際會議中心低層連通部分：背面](buildings/bajia-i1-r1-information-conference/display/rear-640.webp)](buildings/bajia-i1-r1-information-conference/display/rear.webp) |  |
+| [![資訊大樓與國際會議中心低層連通部分：正面](buildings/bajia-i1-r1-information-conference/display/front-640.webp)](buildings/bajia-i1-r1-information-conference/display/front.webp)<br>正面預覽 | [![資訊大樓與國際會議中心低層連通部分：背面](buildings/bajia-i1-r1-information-conference/display/rear-640.webp)](buildings/bajia-i1-r1-information-conference/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 

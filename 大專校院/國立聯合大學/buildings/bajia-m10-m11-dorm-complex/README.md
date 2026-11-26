@@ -5,7 +5,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 後肋推估補色，其餘背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
 ## 本次既有後側長肋同族補色（推估）
 
@@ -19,12 +20,12 @@
 
 ## 前版說明與保留限制
 
-## 6 材質外觀版（2026-10-21）
+## 原始配色依據（六材質）
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum1011-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依正面空拍限定淺灰直肋、灰紫實牆、離散深窗與灰端牆；未見背面及主屋頂中性，服務量體同材質延伸有界，架空層不是玻璃。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+依正面空拍限定淺灰直肋、灰紫實牆、離散深窗與灰端牆；未見背面及主屋頂中性，服務量體同材質延伸有界，架空層不是玻璃。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。正面淡色豎板有照片依據；背面同型豎板為延續既有配色的推估，主要背牆與背窗維持中性。
 
 
 這是依公開官方外觀照片製作的近似建築微縮模型，供觀賞及 FDM 列印。不是校方工程圖、實測復原或統一校園比例。只含外殼造型，不含房間、住戶、門禁、設備配置或第三方照片。
@@ -46,7 +47,7 @@
 - 翼角、進深、窗格數與中央弧面作可列印近似；中央弧面以直段連通框簡化。
 - 屋頂僅保留建築量體，不含水槽、設備或管線；不含圓廳及周邊道路細節。
 
-所有模型的尺寸、深度、窗距與屋頂高差皆依外觀比例估計，並無量測尺度。簡化背面以 rear.png 可直接檢視。預覽色彩只屬材質；STL 不含色彩或貼圖。
+所有模型的尺寸、深度、窗距與屋頂高差皆依外觀比例估計，並無量測尺度。簡化背面可由上方 WebP 直接檢視。預覽色彩只屬材質；STL 不含色彩或貼圖。
 
 ## 列印建議
 - 底座平放；建議 0.4 mm 噴嘴、0.16–0.20 mm 層高、3 道外牆、10–18% 填充。
@@ -81,3 +82,5 @@
 - 現行校園地圖與代碼：https://www.nuu.edu.tw/p/426-1000-9.php?Lang=zh-tw
 - 官方外觀相簿：https://secretary.nuu.edu.tw/p/132-1003-1118.php?Lang=zh-tw
 - 歷史名稱／建物清冊（歷史資料）：https://nuuarchives.nuu.edu.tw/p/16-1097-27990.php?Lang=zh-tw
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/81e9d09714d79e73c4125b37c089d1847d20829f/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-m10-m11-dorm-complex)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再以 `--replay-root /path/to/copy` 校對。
