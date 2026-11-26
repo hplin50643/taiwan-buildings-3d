@@ -6,18 +6,16 @@
 
 # 政治大學井塘樓：前庭有限白牆／雨棚外觀層
 
-僅1395個完整原面白色內弧瓷磚牆與柱（#D4D4CA）＋9個灰色雨棚立邊原面（#666966），共1404面、7740.38026137 mm²；其餘4772面維持中性。不是整樓全彩復原、實測色票或2026現況。
+僅1395個完整原面白色內弧瓷磚牆與柱（#D4D4CA）＋9個灰色雨棚立邊原面（#666966），共1404面、7740.38026137 mm²；其餘 4,772 面為補色前的中性面數；現行以本頁開頭的 189 面延伸為準。不是整樓全彩復原、實測色票或2026現況。
 
 [三材質3MF](nccu-jingtang-appearance.3mf) · [可編輯Blend](scene.blend) · [逐面表](face-materials.json) · [色表](palette.json)
 
-[前庭左斜](previews/front.png) · [前庭右斜](previews/opposite.png) · [正立面](previews/elevation.png) · [背面](previews/rear.png) · [頂面](previews/top.png) · [同角中性比較](qa/mono-front.png)
-
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 前庭左斜<br>![前庭左斜](previews/front.png) | 前庭右斜<br>![前庭右斜](previews/opposite.png) | 正立面<br>![正立面](previews/elevation.png) |
-| 背面<br>![背面](previews/rear.png) | 頂面<br>![頂面](previews/top.png) |  |
+| [![前庭左斜](../display/front-640.webp)](../display/front.webp)<br>前庭左斜 | [![背面](../display/rear-640.webp)](../display/rear.webp)<br>背面 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![前庭右斜](../display/opposite-640.webp)](../display/opposite.webp)<br>前庭右斜 | [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 |  |
 
-五圖均包含完整建物及底座，不用裁切或額外染屋頂強化收益。後／頂面幾乎無收益是限域證據的正常結果。原幾何窗肚混有簡化白框，不能整片冒稱深玻璃；門窗、窗凹背、框、屋頂、屋簷、背面／端牆、底座與後突出部全部中性。原雨棚為簡化方板，未補造照片中的弧形。
+五圖均包含完整建物及底座，不用裁切或額外染屋頂強化收益。屋頂與未驗證區域不因同構件延伸而擴染。原幾何窗肚混有簡化白框，不能整片冒稱深玻璃；門窗、窗凹背、框、屋頂、屋簷、未列入本頁開頭的背面／端牆、底座與後突出部維持中性。原雨棚為簡化方板，未補造照片中的弧形。
 
 原STL bytes、6176個三角面順序與所有座標維持不變。80個弧段各自檢查三頂點切向界與平面、柱有限旋轉盒及灰雨棚有限前／側平面，使用actual cross-product normal；不以bbox或centroid整片套色，不切三角、不加厚。native對應原STL使用完整oriented exact triangle bijection。
 
@@ -31,3 +29,5 @@
 兩柱前面2完整域4面0→既有白1；6176面幾何及順序不變，其餘6172面及3原材保持。白1399、灰9、中性4768。全三角原凸矩形支承，不新增界；原柱與曲托/雨棚粗代理及日期未知限制保留。不擴側背/棚頂底/階梯/屋頂或外弧。
 模型與原生視角圖沿用完成候選的原bytes；不改幾何、不增加分界、不稱全棟精確配色或實體試印通過。公開預覽只含模型，不含新增圖片文字。原來源年代、工程及列印限制仍適用。先前敘述與審核屬其原版本，本段僅更新上述局部範圍。
 本次只交付模型、必要重建輸入/腳本、預覽與此說明；完整研究與獨立審核紀錄另行保留，不在本批公開。PUBLIC-MODEL-SHA256SUMS只核本次所列公開產品，舊校驗與QA不代表本次新版。
+
+現行展示只使用最新版模型的 WebP。原彩色 PNG、既有稽核與原校驗表可由[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/5cc13bada423e37355cb7758d738f0b0695a80bf/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-jingtang)追溯。若要重繪，請在獨立工作目錄使用現行渲染器，將生成的 PNG 與[像素對照表](../display/archive-png.json)比較，不把中間 PNG 放回現行庫。以 `python display/verify_webp.py --replay-root /path/to/replay` 核對五張重繪（需 Pillow）；只查驗交付 WebP 時省略該參數。

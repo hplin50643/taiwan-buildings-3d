@@ -19,7 +19,7 @@
 設 t=(z−27.2)/4，epsilon=0.0002mm。每個三角全部三頂點需滿足0≤t≤1及同一精確坡平面/梯形範圍：主坡 y=6+9.7t、|x|≤67.5−18.9t（10面，815.5810mm²）；左內坡 x=−36.5−15.035t、|y−2|≤24−7.68t（9面，425.1106mm²）。總1240.6916mm²。不以重心或包圍盒選面，不切面，不增加頂點。所有屋脊、簷口、其他坡（含背坡、兩翼外坡及右翼內坡）、牆窗、入口和底板均中性，不因相連而擴染。
 
 ## 檔案及重建
-[彩色3MF](nccu-guofu-appearance.3mf) · [可編輯Blender](scene.blend) · [面映射](face-materials.json) · [色盤](palette.json) · [來源](SOURCES.md) · [權利](LICENSE-NOTICE.md) · [重建ZIP](rebuild-source.zip) · [校驗碼](SHA256SUMS)
+[彩色3MF](nccu-guofu-appearance.3mf) · [可編輯Blender](scene.blend) · [面映射](face-materials.json) · [色盤](palette.json) · [來源](SOURCES.md) · [權利](LICENSE-NOTICE.md) · [重建ZIP](rebuild-source.zip) · [現行外觀校驗](SHA256SUMS)
 
 保留原STL全部座標、1020三角面序與拓撲，尺寸150×82×31.2mm。原native單Warm stone材質，本次additive不改原件或歷史製造QA。
 
@@ -35,3 +35,5 @@
 本次只公開模型、必要重建輸入／腳本、預覽與說明；完整來源、比較及研究審核不隨本批交付。根目錄PUBLIC-MODEL-SHA256SUMS僅校驗所列當前產品，舊表不驗證新版。重建ZIP只含必要重建檔與本說明；歷史來源及QA連結指儲存庫既有文件，非ZIP內的新增審核附件。
 
 [現行展示圖與渲染校驗](../display/README.md) · [原工程檔與舊校驗對應版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/6a9b3eea446d4ffa36226089792ea0ec290011ee/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-guofu/appearance/README.md)
+
+現行展示只使用最新版模型的 WebP。原彩色 PNG、既有稽核與原校驗表可由[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/5cc13bada423e37355cb7758d738f0b0695a80bf/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-guofu)追溯。若要重繪，請在獨立工作目錄使用現行渲染器，將生成的 PNG 與[像素對照表](../display/archive-png.json)比較，不把中間 PNG 放回現行庫。以 `python display/verify_webp.py --replay-root /path/to/replay` 核對五張重繪（需 Pillow）；只查驗交付 WebP 時省略該參數。

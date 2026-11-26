@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![果夫樓：實際模型預覽](buildings/nccu-guofu/display/front-640.webp)](buildings/nccu-guofu/display/README.md)<br>**[果夫樓](buildings/nccu-guofu/README.md)**<br>[兩個可見瓦坡限域配色](buildings/nccu-guofu/appearance/) | [![志希樓：實際模型預覽](../../../docs/display/catalog/95feda70a26654f15c7f876e-640.webp)](buildings/nccu-zhixi/README.md)<br>**[志希樓](buildings/nccu-zhixi/README.md)** | [![四維堂（修復前外觀近似）：實際模型預覽](../../../docs/display/catalog/0289b9b3b1822b9fd4acf3f8-640.webp)](buildings/nccu-siwei/README.md)<br>**[四維堂（修復前外觀近似）](buildings/nccu-siwei/README.md)** |
+| [![果夫樓：實際模型預覽](buildings/nccu-guofu/display/front-640.webp)](buildings/nccu-guofu/display/README.md)<br>**[果夫樓](buildings/nccu-guofu/README.md)**<br>[瓦面與入口構件限域配色](buildings/nccu-guofu/appearance/) | [![志希樓：實際模型預覽](../../../docs/display/catalog/95feda70a26654f15c7f876e-640.webp)](buildings/nccu-zhixi/README.md)<br>**[志希樓](buildings/nccu-zhixi/README.md)** | [![四維堂（修復前外觀近似）：實際模型預覽](../../../docs/display/catalog/0289b9b3b1822b9fd4acf3f8-640.webp)](buildings/nccu-siwei/README.md)<br>**[四維堂（修復前外觀近似）](buildings/nccu-siwei/README.md)** |
 | [![井塘樓：實際模型預覽](buildings/nccu-jingtang/display/front-640.webp)](buildings/nccu-jingtang/display/README.md)<br>**[井塘樓](buildings/nccu-jingtang/display/README.md)** | [![中正圖書館：實際模型預覽](../../../docs/display/catalog/ffc3b71f4e238498e0b076d1-640.webp)](buildings/nccu-zhongzheng-library/README.md)<br>**[中正圖書館](buildings/nccu-zhongzheng-library/README.md)** | [![行政大樓：實際模型預覽](../../../docs/display/catalog/2d87d42547a6d9f258171f95-640.webp)](buildings/nccu-administration/README.md)<br>**[行政大樓](buildings/nccu-administration/README.md)** |
 | [![逸仙樓：實際模型預覽](../../../docs/display/catalog/ed24c36a5cb4a34b29ca6673-640.webp)](buildings/nccu-yixian/README.md)<br>**[逸仙樓](buildings/nccu-yixian/README.md)** | [![風雩樓：實際模型預覽](../../../docs/display/catalog/daac45f2d5badd37e7ea2eda-640.webp)](buildings/nccu-fengyu/README.md)<br>**[風雩樓](buildings/nccu-fengyu/README.md)** | [![健康中心大樓：實際模型預覽](../../../docs/display/catalog/80ad4abc751802ad6a8cd54e-640.webp)](buildings/nccu-health/README.md)<br>**[健康中心大樓](buildings/nccu-health/README.md)** |
 | [![研究大樓 — 官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況：實際模型預覽](../../../docs/display/catalog/ab03df8020c3f80ca611f236-640.webp)](buildings/nccu-research-building/README.md)<br>**[研究大樓 — 官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況](buildings/nccu-research-building/README.md)** | [![資訊大樓（含電算中心）：實際模型預覽](../../../docs/display/catalog/5d19c56ceed4ea987d6470dd-640.webp)](buildings/nccu-information-complex/README.md)<br>**[資訊大樓（含電算中心）](buildings/nccu-information-complex/README.md)** | [![學思樓：實際模型預覽](../../../docs/display/catalog/fd348e287b922b8f115bebe6-640.webp)](buildings/nccu-xuesi-hall/README.md)<br>**[學思樓](buildings/nccu-xuesi-hall/README.md)** |
@@ -17,7 +17,7 @@
 
 每件具STL、可編輯Blend、參數來源、實際STL正背俯視預覽與可重跑QA。數位QA不等於切片軟體驗證或實體試印。
 
-[井塘樓前庭有限白牆／雨棚配色與五視角](buildings/nccu-jingtang/display/README.md)（1404完整原面，其餘4772面中性；拍攝年代未知，非整樓現況全彩復原）。
+[井塘樓最新版限域配色與五視角](buildings/nccu-jingtang/display/README.md)（近期將同材質延伸至主外弧及端牆 189 面；非整樓現況復原）。
 
 逸仙樓、風雩樓、健康中心大樓與研究大樓的版本、來源與製造限制見各模型README；研究大樓保留官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況。未實印，非全校區完成。
 

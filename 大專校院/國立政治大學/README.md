@@ -28,7 +28,7 @@
 
 公企中心為2021完工、依2021–2022公開影像建立的整案外觀近似，未聲稱2026現況或測繪精度；保留4個原法向共面邊界旗標，獨立審核僅作限定條件接受，不是全域壁厚或無支撐列印保證。尚未實體試印。詳見[模型與來源](金華校區/buildings/nccu-public-center-2021/)及[獨立審核摘要](inventory/qa/nccu-public-center-2021-review.md)。
 
-[井塘樓前庭有限白牆／雨棚配色與五視角](山下校區/buildings/nccu-jingtang/display/README.md)（1404完整原面，其餘4772面中性；拍攝年代未知，非整樓現況全彩復原）。
+[井塘樓最新版限域配色與五視角](山下校區/buildings/nccu-jingtang/display/README.md)（近期將同材質延伸至主外弧及端牆 189 面；非整樓現況復原）。
 
 ## 模型版本與製造範圍
 

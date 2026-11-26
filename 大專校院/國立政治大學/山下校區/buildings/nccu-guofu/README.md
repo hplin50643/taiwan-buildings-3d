@@ -5,20 +5,18 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![主前坡與左翼內坡灰綠瓦代理](appearance/previews/front.png) |  |  |
+| [![前庭斜視](display/front-640.webp)](display/front.webp)<br>前庭斜視 | [![背視](display/rear-640.webp)](display/rear.webp)<br>背視 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![側視](display/side-640.webp)](display/side.webp)<br>側視 | [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |
 
-## 兩個可見瓦坡限域配色（2026-10-22）
+## 現行限域配色
 
 [五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nccu-guofu-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
 
-僅主屋前庭坡10面、左翼內坡9面，共19完整三角面採歷史照片支持的低飽和灰綠瓦proxy。所有屋脊、簷、其他坡、牆窗、入口及底板中性；中性表示未確認，不代表實物灰色。官方記憶網正/側圖說2009，正面EXIF DateTime 2009-05-08，側面無日期EXIF；2025僅輔照，不稱跨年色值不變或2026現況。原1020面座標/面序/STL/歷史QA不變，不增套數。非分色封閉體或G-code，未實體試印；第三方照片不分發。
+已核實的局部補色包括 19 面灰綠瓦、6 面入口正面及 24 面入口上層構件側面；24 面為同構件材料連續性的推估，不是新照片證據。 主屋前庭坡10面、左翼內坡9面，共19完整三角面採歷史照片支持的低飽和灰綠瓦proxy。其他瓦坡、未驗證牆窗與底板仍中性；中性表示未確認，不代表實物灰色。官方記憶網正/側圖說2009，正面EXIF DateTime 2009-05-08，側面無日期EXIF；2025僅輔照，不稱跨年色值不變或2026現況。原1020面座標/面序/STL/歷史QA不變，不增套數。非分色封閉體或G-code，未實體試印；第三方照片不分發。
 
 
 山下校區。本件為依公開實拍與官方平面外輪廓自建的完整建物外觀近似模型，不是測繪、BIM或結構工程資料。
-
-
-俯視圖（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽）
 
 
 ## 特徵與證據限制
@@ -53,3 +51,5 @@
 [thin-feature-check.json](thin-feature-check.json)：0.8mm參考寬度形態opening、1mm取样，最大損失比例0.16814%，超过1%層數0。此為輔助幾何篩檢，不是全面最小壁厚或工具路徑。
 
 尚未做Cura/Prusa实际切片或實體試印，不宣稱保證可印。
+
+現行展示只使用最新版模型的 WebP。原彩色 PNG、既有稽核與原校驗表可由[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/5cc13bada423e37355cb7758d738f0b0695a80bf/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%94%BF%E6%B2%BB%E5%A4%A7%E5%AD%B8/%E5%B1%B1%E4%B8%8B%E6%A0%A1%E5%8D%80/buildings/nccu-guofu)追溯。若要重繪，請在獨立工作目錄使用現行渲染器，將生成的 PNG 與[像素對照表](display/archive-png.json)比較，不把中間 PNG 放回現行庫。以 `python display/verify_webp.py --replay-root /path/to/replay` 核對五張重繪（需 Pillow）；只查驗交付 WebP 時省略該參數。
