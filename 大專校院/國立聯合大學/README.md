@@ -116,7 +116,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![二坪山校區 C1｜立德樓（管理學院）實際模型正面](buildings/erping-c1-lide/display/front.webp)](buildings/erping-c1-lide/display/front.webp) | 背面預覽<br>[![二坪山校區 C1｜立德樓（管理學院）實際模型背面](buildings/erping-c1-lide/display/rear.webp)](buildings/erping-c1-lide/display/rear.webp) |  |
+| [![二坪山校區 C1｜立德樓（管理學院）實際模型正面](buildings/erping-c1-lide/display/front-640.webp)](buildings/erping-c1-lide/display/front.webp)<br>正面預覽 | [![二坪山校區 C1｜立德樓（管理學院）實際模型背面](buildings/erping-c1-lide/display/rear-640.webp)](buildings/erping-c1-lide/display/rear.webp)<br>背面預覽 |  |
 
 </details>
 

@@ -5,7 +5,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
 ## 本次原加厚金屬棚外緣同灰延伸（推估）
 
@@ -19,12 +20,12 @@
 
 ## 前版說明與保留限制
 
-## 8 材質外觀版（2026-10-20）
+## 現行8材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuc1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-來源支持的中段陶紅、上部淺色與原立柱、灰藍窗凹及銀灰設備簡化塊、灰粉門楣與紅褐梯面；屋頂是灰金屬棚，未宣稱光電。跨色長面及未知背面保守中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+來源支持的中段陶紅、上部淺色與原立柱、灰藍窗凹及銀灰設備簡化塊、灰粉門楣與紅褐梯面；屋頂是灰金屬棚，未宣稱光電。跨色長面及未知背面保守中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。
 
 
 依國立聯合大學官方公開外觀照片製作的近似外觀模型，非測繪模型。這是二坪山的立德樓，不是八甲校區行政大樓，也不是 H1 產研創新暨推廣大樓。
@@ -71,3 +72,5 @@
 ## 重建方式
 
 使用 Python 3 與 `requirements.txt` 所列套件執行 `python generate_model.py`，即可重新產生 STL。執行 `python validate_model.py model.stl --longest-edge 150 --output validation.json` 重新檢查。使用 Blender 4.3 以上執行 `blender -b -t 6 -P render_preview.py` 可重建兩張預覽及場景檔。建模程式不會下載原始照片，也不需任何帳號。
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/2cd2ec0cc96f9eb0460fdc7ed82043e2c853ae68/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-c1-lide)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再以 `--replay-root /path/to/copy` 校對。

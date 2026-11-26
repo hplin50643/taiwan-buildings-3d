@@ -1,11 +1,11 @@
-# 聯大二坪 C1 立德樓：八材質外觀版
+# 聯大二坪 C1 立德樓：現行8材質外觀
 
 沿用原 **21,246 三角面／10,419 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面保持中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| [![正面](../display/front-640.webp)](../display/front.webp)<br>正面 | [![背面](../display/rear-640.webp)](../display/rear.webp)<br>背面 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 |  |  |
 
 ## 本次原加厚金屬棚外緣同灰延伸（推估）
 
@@ -15,7 +15,7 @@
 
 本輪親看官方未定年校史照，屋頂可見灰金屬遮棚，不是光電板證據。**真棚為薄金屬與開放支撐，原模型為便於列印採厚實底與加厚網格**；本次只對這個原有簡化量體外緣採同金屬族代理色，並非實景棚邊厚度、構造層或金屬材質逐面量測，也不修復模型。校史照未定年，既有近照 EXIF 日期時區亦未獨立核實，非 2026 現況；未實體試印。第三方照片只私人研究，不入公開包。混合紅白長牆維持保守中性，不藉三角斜切補色。
 
-新版 QA 在 `qa-continuous-walls/`；歷史 QA 保留，新增 `PUBLIC-MODEL-SHA256SUMS`。重建外觀 `python appearance/source/build_continuous_walls.py`；交換驗證 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景驗證 `blender -b --python appearance/source/verify_continuous_scene.py`。ZIP 含原 STL、原 `generate_model.py` 與本次外觀程式／有限域，不含照片；獨立重建驗證是從原 STL 重建外觀，不宣稱重算歷史製造驗證。
+現行 QA 在 `qa-continuous-walls/`；歷史 QA 保留，新增 `PUBLIC-MODEL-SHA256SUMS`。重建外觀 `python appearance/source/build_continuous_walls.py`；交換驗證 `python appearance/source/verify_continuous_exchange.py`；渲染 `blender -b --python appearance/source/render_continuous_walls.py`；場景驗證 `blender -b --python appearance/source/verify_continuous_scene.py`。ZIP 含原 STL、原 `generate_model.py` 與本次外觀程式／有限域，不含照片；獨立重建驗證是從原 STL 重建外觀，不宣稱重算歷史製造驗證。
 
 ## 前版說明與保留限制
 
@@ -33,7 +33,7 @@
 
 [原幾何與來源限制](../README.md) · [來源覆核](qa/source-review.json)
 
-## 重建與核驗
+## 歷史版本的重建與核驗
 
 安裝 [依賴](source/requirements.txt)，Blender 使用 4.3.2。由本資料夾上層提供原 model.stl：
 
@@ -53,3 +53,5 @@
 尺寸仍為 150 × 121 × 119.9 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是八個封閉分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+現行大圖可用 [WebP 與原圖像素對照](../display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/2cd2ec0cc96f9eb0460fdc7ed82043e2c853ae68/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-c1-lide)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再以 `--replay-root /path/to/copy` 校對。
