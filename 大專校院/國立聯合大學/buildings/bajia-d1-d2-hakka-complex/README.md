@@ -3,16 +3,17 @@
 ## 模型預覽
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| 模型預覽 | 模型預覽 |
+| :---: | :---: |
+| [![正面與前棟外階](display/front-640.webp)](display/front.webp)<br>正面與前棟外階 | [![背面（未知面保留中性）](display/rear-640.webp)](display/rear.webp)<br>背面（未知面保留中性） |
+| [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 | [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |
 
-## 七材質外觀版（2026-10-20）
+## 現行八材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuud12-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-已見正面灰／奶油結構、既有獨立窗槽、綠色雨棚與光伏板。D2 走廊不當玻璃，D1 右端紅磚／奶油帶缺乏原面界而保守中性；不是完整實景配色還原。後側與未知屋頂中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+已見正面灰／奶油結構、既有獨立窗槽、綠色雨棚與光伏板。D2 走廊不當玻璃，D1 右端紅磚／奶油帶缺乏原面界而保守中性；不是完整實景配色還原。後側與未知屋頂中性。 D1 最低三階的踏面與正面階面共 12 面使用灰色；本次更新只整理展示，不改材質、原 STL 或歷史 QA。
 
 
 依國立聯合大學官方照片與校區教學配置圖製作的建築辨識微縮模型。這是一個雙棟共底座的 STL，包含兩棟不同建築；不是新增第三棟，也不是精密測繪模型。
@@ -47,7 +48,7 @@
 - `validation.json`：針對本版 STL 的封閉性、連通性、尺寸與 SHA-256 檢查。
 - `validate_model.py`、`requirements.txt`：重現驗證所需工具。
 
-重建：安裝 requirements.txt 後，執行 `python build_model.py`；驗證執行 `python validate_model.py model.stl --output validation.json`；預覽執行 `blender -b -t 6 -P render_preview.py`。預覽圖片皆由同一個 STL 產生，沒有另外添加僅在圖片中存在的建築細節。
+重建：安裝 requirements.txt 後，執行 `python build_model.py`；驗證執行 `python validate_model.py model.stl --output validation.json`；預覽執行 `blender -b -t 6 -P render_preview.py`。上方彩色預覽由現行八材質場景渲染，沿用相同 STL 幾何，未增添僅出現在圖片裡的建築細節。
 
 ## 官方參考來源
 
@@ -62,3 +63,5 @@
 - [2026 招生公告使用前後棟名稱](https://doct.nuu.edu.tw/p/406-1062-78995,r1682.php)
 
 原始照片僅用於研究，未隨本模型重製；以上參考來源及校方標誌的權利仍屬原權利人。本模型不是校方官方模型，亦不宣稱取得校方授權或照片再利用授權。
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/2c24834a4717b0a77e19ec7304d42fff277236ce/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-d1-d2-hakka-complex)，不再放在主分支。重繪請在暫存副本執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_current.py`，再以 `--replay-root /path/to/copy` 校對。
