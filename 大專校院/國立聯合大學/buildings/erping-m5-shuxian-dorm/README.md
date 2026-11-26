@@ -5,14 +5,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／棚頂保守銀灰代理<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面與來源支持區域 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背牆中性／棚頂保守銀灰代理 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 7 材質外觀版（2026-10-21）
+## 現行7材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum5-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-來源支持的暖米立面、淡色百葉與圓柱、離散玻璃及深藍灰角覆板；右段同系統材質有界延伸，棚頂銀灰代理不宣稱 PV。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+來源支持的暖米立面、淡色百葉與圓柱、離散玻璃及深藍灰角覆板；右段同系統材質有界延伸，棚頂銀灰代理不宣稱 PV。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。
 
 
 這是依公開官方外觀照片製作的近似建築微縮模型，供觀賞及 FDM 列印。不是校方工程圖、實測復原或統一校園比例。只含外殼造型，不含房間、住戶、門禁、設備配置或第三方照片。
@@ -33,7 +34,7 @@
 - 建築總寬、窗間距與層高均由外觀估計；小格柵化為壁面浮雕。
 - 模型入口圓柱與小格柵已加粗；不含鄰棟 M7 或居民個人物品。
 
-所有模型的尺寸、深度、窗距與屋頂高差皆依外觀比例估計，並無量測尺度。簡化背面以 rear.png 可直接檢視。預覽色彩只屬材質；STL 不含色彩或貼圖。
+所有模型的尺寸、深度、窗距與屋頂高差皆依外觀比例估計，並無量測尺度。簡化背面可由[現行彩色背面大圖](display/rear.webp)直接檢視。預覽色彩只屬材質；STL 不含色彩或貼圖。
 
 ## 列印建議
 - 底座平放；建議 0.4 mm 噴嘴、0.16–0.20 mm 層高、3 道外牆、10–18% 填充。
@@ -69,3 +70,5 @@
 - 官方外觀相簿：https://secretary.nuu.edu.tw/p/132-1003-1113.php?Lang=zh-tw
 - 歷史名稱／建物清冊（歷史資料）：https://nuuarchives.nuu.edu.tw/p/16-1097-27990.php?Lang=zh-tw
 - 補充整段正立面與入口外觀；僅外觀照片：https://dorm.nuu.edu.tw/p/405-1101-44751,c5638.php
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/cee21249da9e9b4e59d5e109fc2707ccd18dbec5/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-m5-shuxian-dorm)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_appearance.py`，再以 `--replay-root /path/to/copy` 校對。
