@@ -2,7 +2,7 @@
 
 本版將高低兩翼 **61 個原中性側背外牆面** 延用既有冷白磁磚色。僅選原有完整垂直外牆三角面，未新增分界或模擬未建出的背面窗格。**此為同構件材料連續性推估，非新側背照片證據或 2026 現況查證。** 灰色格梁柱、亭構件、窗凹背、通道、屋頂與基座及所有原有彩面保留。原 7,856 面／3,852 頂點與面序不變，沒有實體試印。
 
-現行稽核見 `qa-continuous-walls/`；原 `qa/` 為歷史紀錄。下方舊版「未知背／右牆中性」敘述僅對本節列出的 61 面更新，其餘限制不變。現行重建用 `python appearance/source/build_continuous_walls.py`，交換驗證用 `python appearance/source/verify_continuous_exchange.py`；四原視角與場景用 `blender -b --python appearance/source/render_continuous_walls.py`，回讀驗證用 `blender -b --python appearance/source/verify_continuous_scene.py`。直接執行歷史 `build_appearance.py` 會回復舊色，請用本節新命令。ZIP 不含第三方照片。
+現行稽核見 `appearance/qa-continuous-walls/`；原 `qa/` 為歷史紀錄。下方舊版「未知背／右牆中性」敘述僅對本節列出的 61 面更新，其餘限制不變。現行重建用 `python appearance/source/build_continuous_walls.py`，交換驗證用 `python appearance/source/verify_continuous_exchange.py`；四原視角與場景用 `blender -b --python appearance/source/render_continuous_walls.py`，回讀驗證用 `blender -b --python appearance/source/verify_continuous_scene.py`。直接執行歷史 `build_appearance.py` 會回復舊色，請用本節新命令。ZIP 不含第三方照片。
 
 # 國立清華大學｜物理館
 
@@ -11,14 +11,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未知背牆中性／亭構件有界延伸<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 | | |
 
-## 4 材質外觀版（2026-10-21）
+## 4 材質外觀版與歷史來源
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthuphysics-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-來源支持的淺灰結構、白色填牆與深色離散窗；未知背牆與屋頂面中性，亭構件有限延伸。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+來源支持的淺灰結構、白色填牆與深色離散窗；側背牆只延伸前述 61 面，其餘未知背牆及屋頂面中性，亭構件維持既有有限延伸。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 第六批公開外觀近似模型，並非測繪成果。每件獨立比例，150.00 × 124.00 × 97.50mm，最長150mm含底座。全校尚未完成。
@@ -77,3 +78,4 @@ python check_layers.py
 
 ## 實際STL正背並排
 
+現行大圖用 [WebP 與原圖像素對照](display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/923e375ab10242fee0ecc59d2415382bd72f754f/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nthu-physics-building)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。

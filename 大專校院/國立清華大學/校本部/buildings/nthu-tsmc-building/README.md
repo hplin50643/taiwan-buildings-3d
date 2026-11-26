@@ -4,7 +4,7 @@
 
 只選 z=90..99 的完整垂直窗頰；窗台、窗頭、玻璃凹背、所有既有彩面不變。背面／左側大牆可能有水平淺帶但原幾何無界線，故本次不整牆染磚；混材陽台凹背、屋頂和底座保持原狀。原 5,334 面／2,549 頂點、座標與面序完整保留，其餘 5,230 面材質不變，不新增分界、不改幾何。未實體試印。
 
-本版稽核在 `qa-continuous-walls/`，原 `qa/` 與下方說明為歷史紀錄；新範圍以上述 104 面為準。重建使用 `python appearance/source/build_continuous_walls.py`，交換驗證 `python appearance/source/verify_continuous_exchange.py`，四原視角／場景使用 `blender -b --python appearance/source/render_continuous_walls.py`，場景回讀使用 `blender -b --python appearance/source/verify_continuous_scene.py`。歷史 build_appearance.py 不能替代新命令。ZIP 無第三方照片。
+本版稽核在 `appearance/qa-continuous-walls/`，原 `qa/` 與下方說明為歷史紀錄；新範圍以上述 104 面為準。重建使用 `python appearance/source/build_continuous_walls.py`，交換驗證 `python appearance/source/verify_continuous_exchange.py`，四原視角／場景使用 `blender -b --python appearance/source/render_continuous_walls.py`，場景回讀使用 `blender -b --python appearance/source/verify_continuous_scene.py`。歷史 build_appearance.py 不能替代新命令。ZIP 無第三方照片。
 
 # 國立清華大學｜台積館
 
@@ -13,9 +13,10 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 | | |
 
-## 6 材質外觀版（2026-10-21）
+## 6 材質外觀版與歷史來源
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthutsmc-appearance.3mf) · [可編輯場景](appearance/scene.blend)
@@ -78,3 +79,4 @@ python check_layers.py
 
 ## 實際STL正背並排
 
+現行大圖用 [WebP 與原圖像素對照](display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/923e375ab10242fee0ecc59d2415382bd72f754f/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nthu-tsmc-building)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。
