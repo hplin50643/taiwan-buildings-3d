@@ -169,7 +169,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![光電館實際模型正面](buildings/bajia-b3-photonics-engineering/display/front-640.webp)](buildings/bajia-b3-photonics-engineering/display/front.webp) | 背面預覽<br>[![光電館實際模型背面近似](buildings/bajia-b3-photonics-engineering/display/rear-640.webp)](buildings/bajia-b3-photonics-engineering/display/rear.webp) |  |
+| [![光電館實際模型正面](buildings/bajia-b3-photonics-engineering/display/front-640.webp)](buildings/bajia-b3-photonics-engineering/display/front.webp)<br>正面預覽 | [![光電館實際模型背面近似](buildings/bajia-b3-photonics-engineering/display/rear-640.webp)](buildings/bajia-b3-photonics-engineering/display/rear.webp)<br>背面預覽 |  |
 
 </details>
 
@@ -186,7 +186,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![八甲校區 B4 資訊工程館：正面](buildings/bajia-b4-computer-science/display/front-current.webp)](buildings/bajia-b4-computer-science/display/front-current.webp) | 背面預覽<br>[![八甲校區 B4 資訊工程館：背面](buildings/bajia-b4-computer-science/display/rear-current.webp)](buildings/bajia-b4-computer-science/display/rear-current.webp) |  |
+| [![八甲校區 B4 資訊工程館：正面](buildings/bajia-b4-computer-science/display/front-current-640.webp)](buildings/bajia-b4-computer-science/display/front-current.webp)<br>正面預覽 | [![八甲校區 B4 資訊工程館：背面](buildings/bajia-b4-computer-science/display/rear-current-640.webp)](buildings/bajia-b4-computer-science/display/rear-current.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 

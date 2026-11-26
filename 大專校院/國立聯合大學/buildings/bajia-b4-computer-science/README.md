@@ -5,7 +5,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-current-640.webp)](display/front-current.webp)<br>正面斜視 | [![背面](display/rear-current-640.webp)](display/rear-current.webp)<br>背面斜視，未確認的外牆與平屋頂維持中性 | [![正立面](display/elevation-current-640.webp)](display/elevation-current.webp)<br>正立面 |
+| [![頂視](display/top-current-640.webp)](display/top-current.webp)<br>頂視 |  |  |
 
 ## 八材質外觀版（2026-10-20）
 
@@ -47,3 +48,5 @@
 未取得可量測平面圖或實際尺寸。建築長寬、深度與屋高按照片近似，背面未有足夠清楚的同棟視角，採明確簡化的規律窗位，不宣稱為實際配置。屋頂僅保留低量體；機電設備、文字、欄杆、空調、外部逃生梯與細小線纜省略。窗與走廊採淺凹槽及實心背板，並未重建室內空間；正面斜樓梯帶為貼壁浮雕。
 
 驗證包含水密、法向一致、正體積、單一連通實體、每邊兩面、頂點連結、平整接地及尺寸。未做實體列印、承載測試或建築工程驗證。
+
+現行大圖用 [WebP 與原圖像素對照](display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/538fc32bd569a7b3c1405434137f99b954669def/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-b4-computer-science)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_appearance.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。
