@@ -547,7 +547,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![藝文教學中心（藝術中心）：正面](buildings/bajia-q1-arts-teaching-center/display/front-640.webp)](buildings/bajia-q1-arts-teaching-center/display/front.webp) | 背面預覽<br>[![藝文教學中心（藝術中心）：背面](buildings/bajia-q1-arts-teaching-center/display/rear-640.webp)](buildings/bajia-q1-arts-teaching-center/display/rear.webp) |  |
+| [![藝文教學中心（藝術中心）：正面](buildings/bajia-q1-arts-teaching-center/display/front-640.webp)](buildings/bajia-q1-arts-teaching-center/display/front.webp)<br>正面預覽 | [![藝文教學中心（藝術中心）：背面](buildings/bajia-q1-arts-teaching-center/display/rear-640.webp)](buildings/bajia-q1-arts-teaching-center/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
@@ -634,7 +634,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![八甲風雨球場：正面](buildings/bajia-s2-covered-court/display/front-640.webp)](buildings/bajia-s2-covered-court/display/front.webp) | 背面預覽<br>[![八甲風雨球場：背面](buildings/bajia-s2-covered-court/display/rear-640.webp)](buildings/bajia-s2-covered-court/display/rear.webp) |  |
+| [![八甲風雨球場：正面](buildings/bajia-s2-covered-court/display/front-640.webp)](buildings/bajia-s2-covered-court/display/front.webp)<br>正面預覽 | [![八甲風雨球場：背面](buildings/bajia-s2-covered-court/display/rear-640.webp)](buildings/bajia-s2-covered-court/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 

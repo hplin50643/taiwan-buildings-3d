@@ -5,17 +5,18 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 八材質外觀版（2026-10-20）
+## 現行8材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuq1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-已見正面淡赭牆、冷灰塔框、原凹窗灰藍玻璃、深灰窗梃與灰紅褐欄杆。右廳僅據未定年歷史航照作有限代理，不冒稱現況；後側與屋頂中性，不添文字或壁畫。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+已見正面淡赭牆、冷灰塔框、原凹窗灰藍玻璃、深灰窗梃與灰紅褐欄杆。右廳僅據未定年歷史航照作有限代理，不冒稱現況；後側與屋頂中性，不添文字或壁畫。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。現行塔樓延用原凹口上方內底 18 面的冷灰，最高右內返另有 2 面同色；未知背牆與屋頂不延伸配色。
 
 
-依官方外觀照片製作的獨立建築縮印模型，含底座 **150 × 100 × 61 mm**。照片比例詮釋，未實測，不是與其他館舍共同比例的校園模型。STL 單位為毫米且無顏色；預覽單色只是材質。
+依官方外觀照片製作的獨立建築縮印模型，含底座 **150 × 100 × 61 mm**。照片比例詮釋，未實測，不是與其他館舍共同比例的校園模型。STL 單位為毫米且不含顏色；上方彩色展示來自現行外觀模型。
 
 ## 建物範圍與照片判讀
 
@@ -33,7 +34,7 @@
 - `model.stl`：單一連通封閉實體
 - `build_model.py`：可攜式完整幾何原始碼
 - `scene.blend`：可編輯 STL 網格、攝影機、燈光與嵌入原始碼
-- `previews/front.png`、`rear.png`、`elevation.png`：最終實際 STL 的完整取景
+- `previews/front.png`、`rear.png`、`elevation.png`：保留給單色 STL 幾何檢查，非現行彩色展示
 - `validation.json`：原 STL 法向、邊／頂點連結、封閉性、連通體、無獨立內腔殼、尺寸與平底檢查
 - `rebuild_check.json`：乾淨資料夾重建後的相同 STL SHA-256
 - `scene_check.json`：Blender/STL 逐三角形座標至 0.00001 mm 比對與嵌入原始碼比對
@@ -71,3 +72,5 @@ Python 從自身資料夾讀寫，不依賴原製作環境路徑或照片。Blen
 - [官方校史：藝文教學中心完工說明及空拍](https://nuuarchives.nuu.edu.tw/p/16-1097-27990.php?Lang=zh-tw)
 - [官方完工空拍原圖：近景 Q1 全棟](https://nuuarchives.nuu.edu.tw/var/file/97/1097/img/828/06image051.jpg)
 - [官方藝術中心首頁](https://art.nuu.edu.tw/index.php)
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/8bd3a7213b4c6867a7a70c867a4d7881d39a6868/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-q1-arts-teaching-center)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/render_q1_views.py -- appearance`，再以 `--replay-root /path/to/copy` 校對。

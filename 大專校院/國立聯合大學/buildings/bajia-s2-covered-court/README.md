@@ -5,14 +5,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 同構背側材料有界推估<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 5 材質外觀版（2026-10-21）
+## 現行5材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuus2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依四張官方內外照片配置銀灰金屬屋頂、象牙白結構、灰百葉與淡藍灰屏板；同構未見側材質為明示有界推估，屋頂不是 PV，不添加未分面的透光片、護柱套或球場圖形。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+依四張官方內外照片配置銀灰金屬屋頂、象牙白結構、灰百葉與淡藍灰屏板；同構未見側材質為明示有界推估，屋頂不是 PV，不添加未分面的透光片、護柱套或球場圖形。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。維持既有金屬屋頂，未把屋頂視為光伏。未於原網格獨立分面的屋面及柱腳不補畫。
 
 
 依官方外觀照片製作的近似列印模型。最長邊獨立設定150 mm，並非全校統一縮尺或實測模型。正面朝-Y。只建外觀，不建內部配置。
@@ -22,7 +23,7 @@
 
 官方相簿：https://secretary.nuu.edu.tw/p/132-1003-1093.php?Lang=zh-tw
 
-完整照片標題與原圖來源見evidence.json。照片只用於研究，未收入交付檔。預覽直接渲染實際STL；顏色為材質，STL無顏色。
+完整照片標題與原圖來源見evidence.json。照片只用於研究，未收入交付檔。上方彩色預覽由現行外觀模型渲染；STL 網格不含顏色。
 
 ## 證據限制
 屋頂以3×2照片辨識單元表現；背側被樹遮蔽，柱位節奏為列印化近似。球具、室內球場線與鄰近田徑場均排除。
@@ -44,3 +45,5 @@
 
 ## 實際模型尺寸
 150.0 × 110.0 × 48.0 mm（X × Y × Z，含底座）。
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/8bd3a7213b4c6867a7a70c867a4d7881d39a6868/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-s2-covered-court)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_appearance.py`，再以 `--replay-root /path/to/copy` 校對。
