@@ -137,7 +137,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![電機工程館實際模型正面](buildings/bajia-b1-electrical-engineering/display/front-640.webp)](buildings/bajia-b1-electrical-engineering/display/front.webp) | 背面預覽<br>[![電機工程館實際模型背面近似](buildings/bajia-b1-electrical-engineering/display/rear-640.webp)](buildings/bajia-b1-electrical-engineering/display/rear.webp) |  |
+| [![電機工程館實際模型正面](buildings/bajia-b1-electrical-engineering/display/front-640.webp)](buildings/bajia-b1-electrical-engineering/display/front.webp)<br>正面預覽 | [![電機工程館實際模型背面近似](buildings/bajia-b1-electrical-engineering/display/rear-640.webp)](buildings/bajia-b1-electrical-engineering/display/rear.webp)<br>背面預覽 |  |
 
 </details>
 
@@ -153,7 +153,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![電子工程館實際模型正面](buildings/bajia-b2-electronics-engineering/display/front.webp)](buildings/bajia-b2-electronics-engineering/display/front.webp) | 背面預覽<br>[![電子工程館實際模型背面近似](buildings/bajia-b2-electronics-engineering/display/rear.webp)](buildings/bajia-b2-electronics-engineering/display/rear.webp) |  |
+| [![電子工程館實際模型正面](buildings/bajia-b2-electronics-engineering/display/front-640.webp)](buildings/bajia-b2-electronics-engineering/display/front.webp)<br>正面預覽 | [![電子工程館實際模型背面近似](buildings/bajia-b2-electronics-engineering/display/rear-640.webp)](buildings/bajia-b2-electronics-engineering/display/rear.webp)<br>背面預覽 |  |
 
 </details>
 

@@ -4,7 +4,8 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面、左翼與已有光伏板<br>![正面](appearance/previews/front.png) | 未見背面保守中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面，未確認的外牆與屋頂維持中性 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
 ## 八材質外觀
 
@@ -42,7 +43,7 @@
 - `model.stl`：可切片的單一閉合實體。
 - `model.obj`：同一幾何的通用格式。
 - `scene.blend`：匯入實際 STL 的預覽場景；地面、燈光及相機不是列印模型。
-- `previews/front.png`、`previews/rear.png`：實際 STL 的前後視角。
+- 單色 STL 幾何檢查（非現行彩色展示）：`previews/front.png`、`previews/rear.png`：實際 STL 的前後視角。
 - `build_model.py`：參數化重建程式；`requirements.txt` 固定 Python 套件版本。
 - `validate_model.py`、`validation.json`：水密、面朝向、單一連通體、邊及頂點拓樸、平底及尺寸檢查。
 - `manifest.json`：來源網址、判讀及簡化範圍。
@@ -60,3 +61,5 @@
 - [校方教室代碼](https://nss.nuu.edu.tw/p/412-1037-5747.php)
 
 個別照片網址列於 `manifest.json`。公開可瀏覽不代表原照片可以再散布，本套件不包含校方原始照片，也不替原照片假定授權。
+
+現行大圖用 [WebP 與原圖像素對照](display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/336ce1843e6e4435f93ed1a5df7cc26434fb9596/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-b1-electrical-engineering)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_appearance.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。
