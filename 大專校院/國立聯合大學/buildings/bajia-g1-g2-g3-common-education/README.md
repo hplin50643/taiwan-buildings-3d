@@ -5,23 +5,22 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面與館舍入口](display/front-640.webp)](display/front.webp)<br>正面與館舍入口 | [![背面（未確認區保留原樣）](display/rear-640.webp)](display/rear.webp)<br>背面（未確認區保留原樣） | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 8 材質外觀版（2026-10-20）
+## 現行8材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuug-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-原暖灰結構、奶油塔樓、淡藍灰混凝土梯框、有限窗凹及光電板頂面配色；混合外廊不當玻璃，原未分開的草坪／鋪面與磚灰牆中性，不新增植物或紅門。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+原暖灰結構、奶油塔樓、淡藍灰混凝土梯框、有限窗凹及光電板頂面配色；混合外廊不當玻璃，原未分開的草坪／鋪面與磚灰牆中性，不新增植物或紅門。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。G3 低入口前首三個外露正面階面（共 6 面）沿用現行灰色，不代表實景最低三階。
 
 
 依官方照片與教學地圖判讀的近似外觀模型。三棟保留不同量體及前後位置，共用一個可列印底座；並非三棟同型方盒，也不是 E1–E3 人文與社會學院。
 
 **尺寸：150 × 108 × 56 mm；底座厚 3 mm。** 單位為毫米，最長邊固定 150 mm。這是獨立展示模型，沒有實測比例，不能直接當作全校統一比例模型拼接。
 
-## 實際 STL 預覽
-
-下圖由本資料夾的 `model.stl` 匯入 Blender 渲染，表面凹槽、立柱、樓梯、坡屋頂及景觀平台都存在於列印網格；背景地板與燈光不屬於列印件。灰白色為展示材質，不代表實際建築配色。
+上方彩色預覽由現行外觀模型渲染。凹槽、立柱、樓梯、坡屋頂及平台都存在於 STL 網格；背景地板與燈光不屬於列印件。
 
 
 ## 三棟辨識與保留特徵
@@ -69,3 +68,5 @@
 數位驗證通過：有限座標、無退化面、水密、法向一致、單一連通實體、每邊恰兩面、頂點鄰域單環、正體積、平底接觸、最長邊 150 mm。正式數字及 STL 雜湊見 `validation.json`。
 
 **尚未實體試印，未做切片列印時間估算，也未獨立證明所有自交均不存在。** 數位網格合格不等同於已證實可在任意機器、材料與尺寸下順利列印。
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/ebd5aeef32c040412e4da498498c64b354b03097/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/bajia-g1-g2-g3-common-education)，不再放在主分支。重繪請在暫存副本執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_current.py`，再以 `--replay-root /path/to/copy` 校對。
