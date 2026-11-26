@@ -4,7 +4,7 @@
 
 **這是同構件材質延續推估，沒有新右側／後側照片證據。** 原4,066面／1,751頂點、座標及面序保留；其餘4,058面材質不變。牆面、玻璃、柱、屋頂上表面、底面和平台不擴色，原簷面偏移及簡化比例不改，不宣稱現況還原或實體試印。
 
-新版稽核在 `qa-continuous-walls/`，原 `qa/` 與下方敘述是歷史紀錄；中性範圍僅更新上述8面。重建 `python appearance/source/build_continuous_walls.py`；交換 `python appearance/source/verify_continuous_exchange.py`；四原視角及場景 `blender -b --python appearance/source/render_continuous_walls.py`；回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。舊build_appearance.py不能替代新命令。ZIP無第三方照片。
+新版稽核在 `appearance/qa-continuous-walls/`，原 `qa/` 與下方敘述是歷史紀錄；中性範圍僅更新上述8面。重建 `python appearance/source/build_continuous_walls.py`；交換 `python appearance/source/verify_continuous_exchange.py`；四原視角及場景 `blender -b --python appearance/source/render_continuous_walls.py`；回讀 `blender -b --python appearance/source/verify_continuous_scene.py`。舊build_appearance.py不能替代新命令。ZIP無第三方照片。
 
 # 國立清華大學｜百齡堂前棟（2025整備前歷史外觀版）
 
@@ -13,14 +13,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 | | |
 
-## 6 材質外觀版（2026-10-21）
+## 6 材質外觀版與歷史來源
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthubailing-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-2025 整備前歷史照片支持前與左側白簷窗格、淡灰柱及灰綠玻璃；右背、屋頂上面、平台中性，不含後方名人堂。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+2025 整備前歷史照片支持前與左側白簷窗格、淡灰柱及灰綠玻璃；右背僅前述八個簷部三角面沿用配色，屋頂上面、平台及其他未核實區域中性，不含後方名人堂。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 第十一批公開外觀近似模型，並非測繪成果。每件獨立比例，130.00 × 150.00 × 47.90mm，最長150mm含底座。全校尚未完成。
@@ -82,3 +83,4 @@ python check_layers.py
 
 ## 實際STL正背並排
 
+現行大圖用 [WebP 與原圖像素對照](display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/e66e3f6ceeeb4f173731f2d22b369ba702d36eac/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nthu-bailing-hall-front)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。
