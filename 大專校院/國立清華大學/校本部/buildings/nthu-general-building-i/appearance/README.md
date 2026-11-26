@@ -6,14 +6,14 @@
 
 現行重建：`python appearance/source/build_continuous_walls.py`；驗證：`python appearance/source/verify_continuous_exchange.py`；四原視角彩圖及可編輯場景：`blender -b --python appearance/source/render_continuous_walls.py`；場景驗證：`blender -b --python appearance/source/verify_continuous_scene.py`。舊 `build_appearance.py` 僅作基底分類，直接執行會回到舊配色。ZIP 不含第三方照片。
 
-# 清華第一綜合大樓：五材質外觀版
+# 清華第一綜合大樓：六材質外觀版
 
 沿用原 **3,112 三角面／1,416 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 未知背牆中性／來源確認 PV 板頂<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| [![正面](../display/front-640.webp)](../display/front.webp)<br>正面 | [![背面](../display/rear-640.webp)](../display/rear.webp)<br>背面 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 | | |
 
 [表面色 3MF](nthugeneral-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
@@ -23,11 +23,13 @@
 
 - 已見前／右結構象牙白、原窗格淺銀、離散窗背灰綠；不增空調、旗幟、題字或植栽。前門廊柱與厚棚板同系統白色有界延伸。
 - 空拍直接證明屋頂為 PV 陣列；只有原三片分條斜板的上向斜表面深藍，凹刻縫底與厚化側邊中性，不全屋染藍。原分格是簡化代理，不是精確模組數、配線或發電設備設計。
-- 後高盒實景有大灰內嵌板而原牆未分面，整牆中性，不假染整盒灰。未註冊背面、一般屋頂平面與底板中性；無分界底板不當草坪。
+- 後高盒實景有大灰內嵌板而原牆未分面，整牆中性，不假染整盒灰。除前述 20 面低層側背牆之外，未註冊背面、一般屋頂平面與底板中性；無分界底板不當草坪。
 
 [原幾何與歷史來源限制](../README.md)
 
-## 重建與核驗
+## 初版重建與核驗（歷史）
+
+以下指令僅適用於初版，現行檔案使用頁首的補色版流程。
 
 安裝 [依賴](source/requirements.txt)，Blender 使用 4.3.2。由本資料夾上層提供原 model.stl：
 
@@ -36,7 +38,7 @@
 3. `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_appearance.py`
 4. `blender -b -t 3 --python-exit-code 1 -P appearance/source/verify_scene.py`
 
-[獨立重建 ZIP](rebuild-source.zip)含原 STL、四支程式及依賴，不含第三方照片；不取代原建模腳本。[逐檔 SHA256](SHA256SUMS)
+[獨立重建 ZIP](rebuild-source.zip)含原 STL、四支程式及依賴，不含第三方照片；不取代原建模腳本。[現行外觀逐檔 SHA-256](SHA256SUMS)
 
 [交換／拓撲 QA](qa/exchange-validation.json)核對原座標與面序、全部面材質、單連通、有向水密邊、頂點 link 單環、正體積與零退化／重複面；lib3mf 嚴格讀取零警告，實際編輯單材質再存讀，其他材質及面指派不變。SDK 六位小數量化誤差另列。
 
@@ -53,3 +55,5 @@
 僅原左翼z34完整6面，x−68..−34/y−36..−4扣PV足跡，384mm²由中性改近似淺灰#B7B9B1/.88；其餘3106面與原5材保持。現版共6種顯示材質（含新灰與未知中性色）；上方五材及原中性範圍為歷史版描述，本節僅更新明列有限域。PV頂/縫底/直邊、其他屋面、後高盒與階梯不改。空拍支持淺灰背景，但影像邊緣/設備遮擋為有限背景推估，不稱每面直見、逐點註冊或精測色；原PV分布、屋面尺寸及未建設備/欄杆不修。快門日期未核實，不稱現況；原支承/薄邊及工程限制保留。
 模型與原生視角圖沿用完成候選的原bytes；不改幾何、不增加分界、不稱全棟精確配色或實體試印通過。公開預覽只含模型，不含新增圖片文字。原來源年代、工程及列印限制仍適用。先前敘述與審核屬其原版本，本段僅更新上述局部範圍。
 本次只交付模型、必要重建輸入/腳本、預覽與此說明；完整研究與獨立審核紀錄另行保留，不在本批公開。PUBLIC-MODEL-SHA256SUMS只核本次所列公開產品，舊校驗與QA不代表本次新版。
+
+現行大圖用 [WebP 與原圖像素對照](../display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/832617c8fb635897c279113f45e1e614d36ebc8d/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nthu-general-building-i)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。

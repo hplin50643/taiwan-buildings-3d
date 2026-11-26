@@ -2,7 +2,7 @@
 
 本版將 **240 個原本中性外牆三角面** 沿用正面的象牙白：主體外牆 216 面、塔樓外牆 24 面。僅選主體／塔樓外側完整垂直平面，不延伸凹窗玻璃、窗梃、塔槽混合內容或屋頂。**新增側背色是同構件材質連續性推估，不是新照片定位實證。** 所有原彩面與 3,694 面／1,793 頂點的座標、面序、幾何均保留，未增分界。沒有實體列印驗證。
 
-現行稽核以 `qa-continuous-walls/` 為準；原 `qa/`、`qa-return-continuation/` 與下方舊版說明屬歷史紀錄，不代表本版輸出雜湊或側背範圍。舊說明所指後牆中性範圍已由本節更新；後窗與未知凹槽仍中性。
+現行稽核以 `appearance/qa-continuous-walls/` 為準；原 `appearance/qa/`、`appearance/qa-return-continuation/` 與下方舊版說明屬歷史紀錄，不代表本版輸出雜湊或側背範圍。舊說明所指後牆中性範圍已由本節更新；後窗與未知凹槽仍中性。
 
 現行重建：`python appearance/source/build_continuous_walls.py`；驗證：`python appearance/source/verify_continuous_exchange.py`；四原視角彩圖及可編輯場景：`blender -b --python appearance/source/render_continuous_walls.py`；場景驗證：`blender -b --python appearance/source/verify_continuous_scene.py`。舊 `build_appearance.py` 僅作基底分類，單獨執行會回到舊配色。重建 ZIP 無第三方照片。
 
@@ -13,14 +13,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 | | |
 
-## 6 材質外觀版（2026-10-21）
+## 6 材質外觀版與歷史來源
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthugeneral2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-來源註冊正面象牙白牆、淺灰窗梃與灰綠窗背、深灰入口格框、灰石階；未證實反側定位，後窗及後牆中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+來源註冊正面象牙白牆、淺灰窗梃與灰綠窗背、深灰入口格框、灰石階；反側定位未以照片證實，僅前述 240 面外牆採同構件延伸，後窗與未知凹槽仍中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 第五批公開外觀近似模型，並非測繪成果。每件獨立比例，150.00 × 122.00 × 109.00mm，最長150mm含底座。全校尚未完成。
@@ -77,3 +78,4 @@ python check_layers.py
 
 ## 實際STL正背並排
 
+現行大圖用 [WebP 與原圖像素對照](display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/832617c8fb635897c279113f45e1e614d36ebc8d/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nthu-general-building-ii)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。

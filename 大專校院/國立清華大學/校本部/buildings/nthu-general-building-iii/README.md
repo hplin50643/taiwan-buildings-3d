@@ -4,7 +4,7 @@
 
 **這是同構件材質連續性推估，不是新增側背照片實證或 2026 全棟現況核實。** 既有長窗／窄窗凹背仍混合窗裙與玻璃而無材質分界，維持中性；門廊、入口玻璃與深灰格框、階梯及全部原彩面保留。原 6,344 面／3,170 頂點、座標與面序不變，其餘 5,034 面材質不變；未實體試印。
 
-現版檢查見 `qa-continuous-walls/`，原 `qa/` 為歷史紀錄。下方舊版「側背牆中性」敘述只對本節列出的完整平面更新，其他幾何與來源限制保留。現行重建用 `python appearance/source/build_continuous_walls.py`；交換驗證用 `python appearance/source/verify_continuous_exchange.py`；四原視角與場景用 `blender -b --python appearance/source/render_continuous_walls.py`；回讀用 `blender -b --python appearance/source/verify_continuous_scene.py`。直接執行歷史分類器會回復舊配色，請使用本節命令。來源 ZIP 不含第三方照片。
+現版檢查見 `appearance/qa-continuous-walls/`，原 `appearance/qa/` 為歷史紀錄。下方舊版「側背牆中性」敘述只對本節列出的完整平面更新，其他幾何與來源限制保留。現行重建用 `python appearance/source/build_continuous_walls.py`；交換驗證用 `python appearance/source/verify_continuous_exchange.py`；四原視角與場景用 `blender -b --python appearance/source/render_continuous_walls.py`；回讀用 `blender -b --python appearance/source/verify_continuous_scene.py`。直接執行歷史分類器會回復舊配色，請使用本節命令。來源 ZIP 不含第三方照片。
 
 # 國立清華大學｜第三綜合大樓
 
@@ -13,14 +13,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 | | |
 
-## 5 材質外觀版（2026-10-21）
+## 5 材質外觀版與歷史來源
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthugeneral3-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-僅主正面白結構與大型入口深框玻璃及灰階梯；上層混合窗裙凹背、未註冊湖側回翼與屋頂保持中性，不當整棟全彩還原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+照片支持主正面白結構、大型入口深框玻璃及灰階梯；側背外牆只延續前述 1,310 面同構件配色，混合窗裙凹背、其餘未知區域與屋頂維持中性，不當整棟全彩還原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 第八批公開外觀近似模型，並非測繪成果。每件獨立比例，150.00 × 130.00 × 106.80mm，最長150mm含底座。全校尚未完成。
@@ -76,3 +77,4 @@ python check_layers.py
 
 ## 實際STL正背並排
 
+現行大圖用 [WebP 與原圖像素對照](display/archive-png.json) 校驗：在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原彩色 PNG、原雜湊與舊說明均保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/832617c8fb635897c279113f45e1e614d36ebc8d/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nthu-general-building-iii)。重繪請在暫存副本執行 `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_continuous_walls.py`，再加 `--replay-root /path/to/copy` 校對，不必把中間 PNG 放回主分支。
