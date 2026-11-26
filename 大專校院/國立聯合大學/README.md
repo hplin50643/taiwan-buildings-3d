@@ -409,7 +409,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![八甲 M6 第六宿舍：正面](buildings/bajia-m6-sixth-dorm/display/front-640.webp)](buildings/bajia-m6-sixth-dorm/display/front.webp) | 背面預覽<br>[![八甲 M6 第六宿舍：背面](buildings/bajia-m6-sixth-dorm/display/rear-640.webp)](buildings/bajia-m6-sixth-dorm/display/rear.webp) |  |
+| [![八甲 M6 第六宿舍：正面](buildings/bajia-m6-sixth-dorm/display/front-640.webp)](buildings/bajia-m6-sixth-dorm/display/front.webp)<br>正面預覽 | [![八甲 M6 第六宿舍：背面](buildings/bajia-m6-sixth-dorm/display/rear-640.webp)](buildings/bajia-m6-sixth-dorm/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
