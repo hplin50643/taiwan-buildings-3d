@@ -3,16 +3,17 @@
 ## 模型預覽
 
 
-| 模型預覽 | 模型預覽 |
-| :---: | :---: |
-| [![正面與外梯](display/front-640.webp)](display/front.webp)<br>正面與外梯 | [![遮陽肋側與入口](display/rear-640.webp)](display/rear.webp)<br>遮陽肋側與入口 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![正面與外梯](display/front-640.webp)](display/front.webp)<br>正面與外梯 | [![遮陽肋側與入口](display/rear-640.webp)](display/rear.webp)<br>遮陽肋側與入口 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 7 材質外觀版（2026-10-21）
+## 現行七材質外觀
 
 
 [四視角 WebP](display/README.md) · [來源界線](appearance/README.md) · [表面色 3MF](appearance/nuuk2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依四張官方照片限定灰牆、淡色遮陽肋、綠框與離散玻璃；空拍確認兩種屋頂光電板，僅原粗格上面深藍，非實際逐片覆蓋率復刻。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+依四張官方照片限定灰牆、淡色遮陽肋、綠框與離散玻璃；空拍確認兩種屋頂光電板，僅原粗格上面深藍，非實際逐片覆蓋率復刻。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。
 
 
 依官方外觀照片製作的獨立建築縮印模型，含底座 **150 × 64 × 47.7 mm**。照片比例詮釋，未實測，不是與其他館舍共同比例的校園模型。STL 單位為毫米且無顏色；預覽單色只是材質。
@@ -69,3 +70,5 @@ Python 從自身資料夾讀寫，不依賴原製作環境路徑或照片。Blen
 - [現行二坪校園圖](https://www.nuu.edu.tw/p/426-1000-10.php?Lang=zh-tw)
 - [現行教室與大樓代碼](https://nss.nuu.edu.tw/p/412-1037-5747.php)
 - [官方教學大樓（一）外觀相簿，照片 (1)–(5)](https://secretary.nuu.edu.tw/p/132-1003-1105.php?Lang=zh-tw)
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/56ba188f00c02328b7df99361fa1ed9f32552303/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-k2-teaching-building-1)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_appearance.py`，再以 `--replay-root /path/to/copy` 校對。

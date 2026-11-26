@@ -5,14 +5,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／屋面同系統推估<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背面 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 7 材質外觀版（2026-10-21）
+## 現行八材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuj1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依官方雙照配置淡石曲帶、原切窗背灰藍、圓塔反射灰橄欖代理色及銀灰金屬館頂；左中層柱廊不是玻璃，頂亭與屋面同材料延伸有界，背牆中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+依官方雙照配置淡石曲帶、原切窗背灰藍、圓塔反射灰橄欖代理色及銀灰金屬館頂；左中層柱廊不是玻璃，頂亭與屋面同材料延伸有界，背牆中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。最下層弧階正面延用依相同構件推估的暖褐色，踏面與缺乏佐證的背牆配色不延伸。
 
 
 依聯大官方照片製作的獨立外觀縮印模型，含底座尺寸 **150 × 102 × 117 mm**，單位為毫米。這是照片比例詮釋，不是測繪模型，也不是與其他館舍共同比例的校園模型。
@@ -63,3 +64,5 @@ Python 程式從自身資料夾讀寫，不依賴原製作電腦路徑。Blender
 - [官方活動中心外觀相簿](https://secretary.nuu.edu.tw/p/132-1003-1102.php?Lang=zh-tw)，完整照片編號 (1)–(4)
 - [官方校史建築清冊](https://nuuarchives.nuu.edu.tw/p/16-1097-27990.php?Lang=zh-tw)
 - [官方大樓代碼與樓層名稱](https://ccenter.nuu.edu.tw/p/412-1007-298.php)
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/56ba188f00c02328b7df99361fa1ed9f32552303/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-j1-auditorium-gym-activity-center)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_current.py`，再以 `--replay-root /path/to/copy` 校對。

@@ -477,7 +477,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![大禮堂、體育館及活動中心：正面](buildings/erping-j1-auditorium-gym-activity-center/display/front.webp)](buildings/erping-j1-auditorium-gym-activity-center/display/front.webp) | 背面預覽<br>[![大禮堂、體育館及活動中心：背面](buildings/erping-j1-auditorium-gym-activity-center/display/rear.webp)](buildings/erping-j1-auditorium-gym-activity-center/display/rear.webp) |  |
+| [![大禮堂、體育館及活動中心：正面](buildings/erping-j1-auditorium-gym-activity-center/display/front-640.webp)](buildings/erping-j1-auditorium-gym-activity-center/display/front.webp)<br>正面預覽 | [![大禮堂、體育館及活動中心：背面](buildings/erping-j1-auditorium-gym-activity-center/display/rear-640.webp)](buildings/erping-j1-auditorium-gym-activity-center/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
