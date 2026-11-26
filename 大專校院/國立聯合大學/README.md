@@ -511,7 +511,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面預覽<br>[![教學大樓（二）：正面](buildings/erping-k3-teaching-building-2/display/front-640.webp)](buildings/erping-k3-teaching-building-2/display/front.webp) | 背面預覽<br>[![教學大樓（二）：背面](buildings/erping-k3-teaching-building-2/display/rear-640.webp)](buildings/erping-k3-teaching-building-2/display/rear.webp) |  |
+| [![教學大樓（二）：正面](buildings/erping-k3-teaching-building-2/display/front-640.webp)](buildings/erping-k3-teaching-building-2/display/front.webp)<br>正面預覽 | [![教學大樓（二）：背面](buildings/erping-k3-teaching-building-2/display/rear-640.webp)](buildings/erping-k3-teaching-building-2/display/rear.webp)<br>背面預覽 |  |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 

@@ -1,11 +1,11 @@
-# 聯大二坪 K3 教學大樓（二）：七材質外觀版
+# 聯大二坪 K3 教學大樓（二）：現行7材質外觀
 
 沿用原 **18,436 三角面／8,952 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 開放走廊／內窗材質有界延伸<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
+| [![正面](../display/front-640.webp)](../display/front.webp)<br>正面與來源支持區域 | [![背面](../display/rear-640.webp)](../display/rear.webp)<br>開放走廊／內窗材質有界延伸 | [![正立面](../display/elevation-640.webp)](../display/elevation.webp)<br>正立面 |
+| [![頂視](../display/top-640.webp)](../display/top.webp)<br>頂視 |  |  |
 
 [表面色 3MF](nuuk3-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 
@@ -41,3 +41,5 @@
 尺寸仍為 150 × 64 × 60 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
 
 3MF 是同一網格的表面色，不是各材質各自封閉的分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。
+
+現行大圖可用 [WebP 與原圖像素對照](../display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/8047610c44f7ad427d197bfeec559299c5a59230/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-k3-teaching-building-2)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_appearance.py`，再以 `--replay-root /path/to/copy` 校對。

@@ -5,17 +5,18 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 開放走廊／內窗材質有界延伸<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面與來源支持區域 | [![背面](display/rear-640.webp)](display/rear.webp)<br>開放走廊／內窗材質有界延伸 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 7 材質外觀版（2026-10-21）
+## 現行7材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuk3-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依官方照片限定灰牆、灰遮陽帽、綠窗格與單斜棚 PV 上面；外廊不是整片玻璃，內窗代理色只作明示有界延伸。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+依官方照片限定灰牆、灰遮陽帽、綠窗格與單斜棚 PV 上面；外廊不是整片玻璃，內窗代理色只作明示有界延伸。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。
 
 
-依官方外觀照片製作的獨立建築縮印模型，含底座 **150 × 64 × 59.99 mm**。照片比例詮釋，未實測，不是與其他館舍共同比例的校園模型。STL 單位為毫米且無顏色；預覽單色只是材質。
+依官方外觀照片製作的獨立建築縮印模型，含底座 **150 × 64 × 59.99 mm**。照片比例詮釋，未實測，不是與其他館舍共同比例的校園模型。STL 單位為毫米且不含顏色；上方彩色展示來自現行外觀模型。
 
 ## 建物範圍與照片判讀
 
@@ -33,7 +34,7 @@
 - `model.stl`：單一連通封閉實體
 - `build_model.py`：可攜式完整幾何原始碼
 - `scene.blend`：可編輯 STL 網格、攝影機、燈光與嵌入原始碼
-- `previews/front.png`、`rear.png`、`elevation.png`：最終實際 STL 的完整取景
+- `previews/front.png`、`rear.png`、`elevation.png`：保留給單色 STL 幾何檢查，非現行彩色展示
 - `validation.json`：原 STL 法向、邊／頂點連結、封閉性、連通體、無獨立內腔殼、尺寸與平底檢查
 - `rebuild_check.json`：乾淨資料夾重建後的相同 STL SHA-256
 - `scene_check.json`：Blender/STL 逐三角形座標至 0.00001 mm 比對與嵌入原始碼比對
@@ -70,3 +71,5 @@ Python 從自身資料夾讀寫，不依賴原製作環境路徑或照片。Blen
 - [現行教室與大樓代碼](https://nss.nuu.edu.tw/p/412-1037-5747.php)
 - [官方教學大樓（二）外觀相簿，照片 (1)–(6)](https://secretary.nuu.edu.tw/p/132-1003-1106.php?Lang=zh-tw)
 - [校史建物清冊，K3 綜合大樓](https://nuuarchives.nuu.edu.tw/p/16-1097-27990.php?Lang=zh-tw)
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/8047610c44f7ad427d197bfeec559299c5a59230/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-k3-teaching-building-2)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_appearance.py`，再以 `--replay-root /path/to/copy` 校對。

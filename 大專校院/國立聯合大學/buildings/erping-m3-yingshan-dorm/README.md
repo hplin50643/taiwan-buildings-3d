@@ -5,14 +5,15 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+| [![正面](display/front-640.webp)](display/front.webp)<br>正面與來源支持區域 | [![背面](display/rear-640.webp)](display/rear.webp)<br>背牆與主屋頂中性 | [![正立面](display/elevation-640.webp)](display/elevation.webp)<br>正立面 |
+| [![頂視](display/top-640.webp)](display/top.webp)<br>頂視 |  |  |
 
-## 7 材質外觀版（2026-10-21）
+## 現行7材質外觀
 
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum3-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依官方入口與全景照限定淡灰切角凸窗、白窗框、灰藍離散窗、淡褐入口細條；原屋頂為裸露金屬網架，不添加 PV 覆蓋，背面中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
+依官方入口與全景照限定淡灰切角凸窗、白窗框、灰藍離散窗、淡褐入口細條；原屋頂為裸露金屬網架，不添加 PV 覆蓋，背面中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。
 
 
 國立聯合大學二坪山校區。2026-10-11 核對官方校區名錄與外觀照片後建模。這是獨立縮尺展示模型，不是測繪、建築竣工或精確復原資料。
@@ -85,3 +86,5 @@ Python 3.12 及 Blender 4.x 測試環境。先在虛擬環境執行 `python -m p
 - [校史校園規劃與歷史使用執照表](https://nuuarchives.nuu.edu.tw/p/16-1097-27990.php?Lang=zh-tw)
 
 照片權利屬原權利人，本套件不附第三方照片，也不授予第三方照片的使用權。本模型與文件為依公開證據獨立製作的近似作品，不表示校方認證。
+
+現行大圖可用 [WebP 與原圖像素對照](display/archive-png.json) 校驗。在模型資料夾執行 `python display/verify_webp.py`（需 Pillow）。原四張彩色 PNG 與舊校驗表保留在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/8047610c44f7ad427d197bfeec559299c5a59230/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-m3-yingshan-dorm)，不再放在主分支。重繪請先在暫存副本建立 `appearance/previews`，再執行 `blender -b -t 4 --python-exit-code 1 -P appearance/source/render_appearance.py`，再以 `--replay-root /path/to/copy` 校對。
