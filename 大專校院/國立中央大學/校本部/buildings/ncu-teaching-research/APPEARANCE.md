@@ -46,7 +46,7 @@ Blender4.3.2，原scene.blend／model.stl與本版build_appearance.py同目錄�
 
 七張900×800新版front、rear、elevation、source-angle、left、right、top真網格渲染。Cycles CPU／96samples／seed0／單執行緒／無降噪。無FONT文字物件、stamp或PNG文字metadata。兩張原版比較保持相同燈光、材質值和相機公式，只還原原面材料指標。視角名不是測繪方向。
 
-BLEND逐點／逐面／transform／尺寸對原版；3MF逐點逐面材料指標對BLEND，palette／unit／build item不變。乾淨目錄重建3MF與材料JSON比bytes，BLEND比幾何、面材質、transform、RGBA及roughness語義。原appearance-review僅歷史保留，本版appearance-review-v2、appearance-freeze.json及SHA256SUMS綁定現版。校級checksum未改，授權發布時須合併；目前未發布或遠端讀回。
+BLEND逐點／逐面／transform／尺寸對原版；3MF逐點逐面材料指標對BLEND，palette／unit／build item不變。乾淨目錄重建3MF與材料JSON比bytes，BLEND比幾何、面材質、transform、RGBA及roughness語義。原appearance-review僅歷史保留，本版appearance-review-v2、appearance-freeze.json及SHA256SUMS綁定現版。這套 2,620 面補色版的彩色 3MF、Blender 與預覽已收錄於本儲存庫；舊發布前清冊可在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/5494614cce5c2bc2ca9882f546a9825034010007/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-teaching-research/appearance-freeze.json)查閱。此次只更正文件和現行校驗，不改模型、圖片或歷史 QA。
 
 ## 原精度與列印限制不變
 
