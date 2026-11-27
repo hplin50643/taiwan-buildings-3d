@@ -35,3 +35,9 @@ Blender 4.3.2，在同目錄放原scene.blend、model.stl與build_appearance.py�
 原 z=36 朝下外廊天花共 263 個三角面為一個連通共面原域，從中性材0改用原白米材1。其餘2,029面、4項材質值、幾何與transform不變。兩張校方實照可見正面及另一未定方位外廊的淺白廊底；未見側為同一構件名義材料家族延續推估，不是四側逐點實照確認。原簡化平底沒有照片中的梁與局部剝落，不新增這些細部、不表達所有微小材料界；不只選正面部分三角製造假界。
 原v2側背填牆推估保留，庭院、屋頂、z=36.5花格上緣與z=40簷底另域保持原色；原STL、scene、三張previews及所有既有工程QA不變。原七張900×800原生視圖/相機/燈光/渲染設定保留。照片日期與第二立面方位未確證，不稱翻修後現況、測繪完成或試印通過。原工程限制全部有效。
 本次源審快照為COLONNADE-SOFFIT-SOURCE-QA.json，最終獨審為COLONNADE-SOFFIT-INDEPENDENT-QA.json；歷史外觀和QA仍為各自歷史版本，不冒充本次檔案驗證。來源照片不公開。
+
+## 現行展示與重建
+
+現行完整七視角見 [WebP 圖廊](README.md#模型預覽)，可用 Python（Pillow）和 Blender 4.3.2 執行 `python verify_display.py --rebuild` 暫存重繪並比對 RGBA，不改模型檔。歷史 [v3 凍結快照](https://github.com/hplin50643/taiwan-buildings-3d/tree/9009553ae28de9e27bcd115fdfbd4c0d370af0ed/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-zhongzheng-library/COLONNADE-SOFFIT-FREEZE-MANIFEST.json) 與 [原始 PNG](https://github.com/hplin50643/taiwan-buildings-3d/tree/9009553ae28de9e27bcd115fdfbd4c0d370af0ed/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-zhongzheng-library/appearance) 以固定提交查閱。
+
+另查校方[舊校園照片（PDF 第 24 頁）](https://www.oga.ncu.edu.tw/resource/attachment/672546411.pdf#page=24)：淺色外柱廊沿外角延續，但照片泛色，不能據以判定側背填牆界線或今日色值，本次不新增補色。

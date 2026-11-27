@@ -3,18 +3,20 @@
 ## 模型預覽
 
 
-| 新彩色斜前 | 新彩色近來源視角 | 新彩色正面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色斜前](appearance/front.png) | ![彩色近來源視角](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新版背面（填牆同棟材料推估） | 新彩色上視（屋面／內院未知） | 彩色下載 |
-| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) |
+| [![彩色斜前](display/front-640.webp)](display/front.webp)<br>彩色斜前 | [![彩色近來源角度](display/source-angle-640.webp)](display/source-angle.webp)<br>彩色近來源角度 | [![彩色正面](display/elevation-640.webp)](display/elevation.webp)<br>彩色正面 |
+| [![彩色背面（填牆材色推估）](display/rear-640.webp)](display/rear.webp)<br>彩色背面（填牆材色推估） | [![彩色左側](display/left-640.webp)](display/left.webp)<br>彩色左側 | [![彩色右側](display/right-640.webp)](display/right.webp)<br>彩色右側 |
+| [![彩色俯視（屋頂保留中性色）](display/top-640.webp)](display/top.webp)<br>彩色俯視（屋頂保留中性色） | &nbsp; | &nbsp; |
+
+點縮圖可開啟無失真原尺寸 WebP。七張均由現行 v3 彩色模型渲染。
 
 ### 右側／背側填牆與柱廊轉角補色 v2（原幾何不變）
 
 本輪重新取得並實看校方翻修募款頁兩張實照，可見白米柱廊、白米花格及另一面灰綠填牆。以原模型完整支持平面，將右側及背側獨立填牆延伸原灰綠，外角、垂直屋緣及廊口端部延伸原白米。**這是同棟材料連續性推估，照片未驗證地理方位，不代表逐面實照核對。** 左側填牆與正面粗花格相交，部分原三角跨越可能混合材料且無分界，因此整組左填牆保留原色，避免新增斜塊或擅改原彩面。屋頂、內院、底座及未分界混合面也保留中性。不新增窗或幾何；原花格凹底仍是低飽和灰綠不透明代理，不能當作逐格玻璃。
 
 
-原三圖、原 STL／OBJ／scene.blend／幾何尺寸與首頁、校級選圖保留。照片拍攝日期未知；2025募款頁日期不是翻修完成證明，本包不聲稱翻修後或2026現況。詳[配色來源與重建限制](APPEARANCE.md)。新版七圖另含[左側](appearance/left.png)及[右側](appearance/right.png)，可與[同相機原版正面](appearance-review-v2/original-front.png)／[原版背面](appearance-review-v2/original-rear.png)對照。新版逐點逐面、材值、面界與重建證據見[本輪審核](appearance-review-v2/)。
+原三張中性幾何驗證圖、STL／OBJ／scene.blend、尺寸與首頁代表圖均不改；校級及校區展示保留原角度。照片拍攝日期未知；2025募款頁日期不是翻修完成證明，本包不聲稱翻修後或2026現況。詳[配色來源與重建限制](APPEARANCE.md)。歷史 v2 技術審核可參考[同相機原版正面](appearance-review-v2/original-front.png)／[原版背面](appearance-review-v2/original-rear.png)對照。v2 逐點逐面、材值、面界與重建證據見[當時審核](appearance-review-v2/boundary-continuity-audit.json)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 142 × 42 mm。
 
@@ -57,12 +59,12 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 ## 原建築設計者
 陳其寬（1971年完成部分）及蘇澤（1973年增建部分），依校方建築沿革。
 
-## 檔案下載與實際模型預覽
+## 檔案下載與驗證
 
-[STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [中性 STL](model.stl) · [中性 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json) · [渲染對照](display/render-proof.json) · [展示校驗](display/SHA256SUMS)
 
 
-以上皆由交付STL渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+現行彩色圖由彩色模型渲染；背側簡化與材色推估不代表同視角實照佐證。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 
