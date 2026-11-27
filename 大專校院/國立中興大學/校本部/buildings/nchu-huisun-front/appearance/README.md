@@ -4,13 +4,10 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
+| [![正面斜視](../display/front-current-640.webp)](../display/front-current.webp)<br>正面斜視 | [![模型背視（局部截面）](../display/rear-current-640.webp)](../display/rear-current.webp)<br>模型背視（局部截面） | [![正立面](../display/elevation-current-640.webp)](../display/elevation-current.webp)<br>正立面 |
+| [![側面](../display/side-current-640.webp)](../display/side-current.webp)<br>側面 | [![頂視](../display/top-current-640.webp)](../display/top-current.webp)<br>頂視 |  |
 
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
+現版 3,422 面包含正面磁磚 286 面、上排玻璃 2 面及中性 3,134 面。只建西向前棟段。
 
 ## 範圍與年代限制
 這是1993年第二代惠蓀堂的**西向前棟段**，不是完整惠蓀堂；後方演藝廳、主廳屋頂、太陽能設備及後立面不包含。此次依官方完整實拍，只給既有平直主正面280完整三角指定乳白米灰磁磚近似 #C7C5B7、上排連續玻璃背平面2完整三角指定低飽和灰藍 #7C9198。不繪磁磚紋理、金字、雲影或倒影。其餘3140面中性 #AAA79F，不把中性當實際材色。
@@ -31,3 +28,5 @@ Python安裝source/requirements.txt，同層上級放原model.stl。依序執行
 兩上窗帶間的原中橫帶前完整6面0→既有磚族1；3422面幾何/順序不變，其餘3416面及3原材保持。磚286、玻璃2、中性3134。原帶扣牌板投影的全三角支承驗證，不切新界。原直帶超平牆末端到圓角是有界同帶代理推估，原牌板位置/比例與實照不同；不補字樣或磚縫，不延頂底側/窗梃/字板/下柱。2018來源與原2021/2024幾何跨年，不稱當前現況。
 模型與原生視角圖沿用完成候選的原bytes；不改幾何、不增加分界、不稱全棟精確配色或實體試印通過。公開預覽只含模型，不含新增圖片文字。原來源年代、工程及列印限制仍適用。先前敘述與審核屬其原版本，本段僅更新上述局部範圍。
 本次只交付模型、必要重建輸入/腳本、預覽與此說明；完整研究與獨立審核紀錄另行保留，不在本批公開。PUBLIC-MODEL-SHA256SUMS只核本次所列公開產品，舊校驗與QA不代表本次新版。
+
+原彩色 PNG、舊校驗及重繪紀錄可從[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/7a0e66036ecc5a3cf45780ee73a25ddbf975de7e/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nchu-huisun-front)追溯。現行大圖用[像素對照表](../display/archive-png.json)校驗：`python display/verify_webp.py`（需 Pillow）。若需重繪，在獨立目錄執行現行外觀渲染；用 `--replay-root /path/to/replay` 比對尺寸及解碼像素，不把中間 PNG 放回現行庫。

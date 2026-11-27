@@ -5,9 +5,12 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![惠蓀堂西向前棟段現版正面](display/front-current-640.webp)](display/front-current.webp) |  |  |
+| [![正面斜視](display/front-current-640.webp)](display/front-current.webp)<br>正面斜視 | [![模型背視（局部截面）](display/rear-current-640.webp)](display/rear-current.webp)<br>模型背視（局部截面） | [![正立面](display/elevation-current-640.webp)](display/elevation-current.webp)<br>正立面 |
+| [![側面](display/side-current-640.webp)](display/side-current.webp)<br>側面 | [![頂視](display/top-current-640.webp)](display/top-current.webp)<br>頂視 |  |
 
-## 西向前棟段正面限域配色（2026-10-22）
+現版 3,422 面包含正面磁磚 286 面、上排玻璃 2 面及中性 3,134 面。只建西向前棟段。
+
+## 早期配色依據（2026-10-22）
 
 [五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nchu-huisun-front-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
@@ -50,3 +53,5 @@ Python 3.12依 [requirements.txt](requirements.txt) 安裝依賴，執行 build_
 STL SHA-256：1c1f9fb58f6b71307ff3e74644ffebacdcb408c8743ab65700286ffdea7060e0
 
 [校區圖鑑](../../README.md) / [學校入口](../../../README.md)
+
+原彩色 PNG、舊校驗及重繪紀錄可從[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/7a0e66036ecc5a3cf45780ee73a25ddbf975de7e/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E8%88%88%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/nchu-huisun-front)追溯。現行大圖用[像素對照表](display/archive-png.json)校驗：`python display/verify_webp.py`（需 Pillow）。若需重繪，在獨立目錄執行現行外觀渲染；用 `--replay-root /path/to/replay` 比對尺寸及解碼像素，不把中間 PNG 放回現行庫。

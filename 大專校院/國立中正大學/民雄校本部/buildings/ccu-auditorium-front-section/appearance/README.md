@@ -4,13 +4,10 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
+| [![正面斜視](../display/front-current-640.webp)](../display/front-current.webp)<br>正面斜視 | [![模型背視（局部截面）](../display/rear-current-640.webp)](../display/rear-current.webp)<br>模型背視（局部截面） | [![正立面](../display/elevation-current-640.webp)](../display/elevation-current.webp)<br>正立面 |
+| [![側面](../display/side-current-640.webp)](../display/side-current.webp)<br>側面 | [![頂視](../display/top-current-640.webp)](../display/top-current.webp)<br>頂視 |  |
 
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
+現版 3,522 面包含三角玻璃 1 面、四根正面柱的灰色代理 12 面及中性 3,509 面。只建前門廊段。
 
 ## 範圍與限制
 這是大禮堂**前門廊段**，不是完整大禮堂。官方頁未標攝影日期的正前照支持中心下層山牆的灰藍分格玻璃。本次只將既有三角背板一個完整大三角（STL face725、532 mm²）指定灰藍 #687C80 不透明代理，其餘3521面中性 #AAA79F。三根竪框與橫框在前方另有幾何，全部中性，不染玻璃色。白亮反光不另造白材料。磚牆與灰色帶未有可安全分隔的完整面，因此不擴塗；其他窗、石框、柱廊、屋頂與背部截面皆中性。
@@ -58,3 +55,5 @@ Official source0 frontal photograph primary; source1 side-colonnade family corro
 ### 歷史證據與粗糙度文字限制
 
 早期建置綁定程式的原始版本未保留，只有記錄雜湊，不能宣稱該歷史程式已完整驗證或恢復。現版程式、產品與隔離重建可核對，此缺口仍保留。早期私人描述曾把玻璃粗糙度記為0.4，文字附錄已更正為0.48；原與現版shader實際均為0.48，新柱材為0.88，未因此更改產品或覆寫歷史報告。
+
+原彩色 PNG、舊校驗及重繪紀錄可從[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/7a0e66036ecc5a3cf45780ee73a25ddbf975de7e/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8/%E6%B0%91%E9%9B%84%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ccu-auditorium-front-section)追溯。現行大圖用[像素對照表](../display/archive-png.json)校驗：`python display/verify_webp.py`（需 Pillow）。若需重繪，在獨立目錄執行現行外觀渲染；用 `--replay-root /path/to/replay` 比對尺寸及解碼像素，不把中間 PNG 放回現行庫。
