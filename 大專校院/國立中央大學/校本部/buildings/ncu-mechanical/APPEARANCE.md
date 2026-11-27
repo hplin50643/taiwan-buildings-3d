@@ -32,3 +32,9 @@ Blender 4.3.2，將原 scene.blend、model.stl 與新版 build_appearance.py 放
 新七視圖為 900 × 800、Cycles CPU、96 samples、seed 0、單執行緒、無降噪；另外兩張原版對照使用完全相同相機和光照，只恢復原材料分派。PNG 無文字／日期／路徑 metadata。3MF 每原三角面指定 base material，不拆面；Blender 與 3MF 逐點逐面、transform、材值檢查與乾淨重建見 [新審核目錄](appearance-review-v2/color-continuity-review.json)。原 appearance-review 保留作 v1 歷史，這次以 appearance-review-v2 與新版 appearance-freeze.json 為準。
 
 原估計尺寸、薄特徵／支撐／橋接評估與尚未實體試印限制仍然有效。不保證免支撐或可印；3MF 顯色依切片器材料支援，不含特定 AMS 映射；STL 不含色。
+
+## 現行展示與重建
+
+現行完整七視角見 [WebP 圖廊](README.md#模型預覽)，可用 Python（Pillow）和 Blender 4.3.2 執行 `python verify_display.py --rebuild` 暫存重繪並比對 RGBA，不改模型檔。歷史 [v2 凍結快照](https://github.com/hplin50643/taiwan-buildings-3d/tree/f071cd6900418f1659b2c0d01b0944fff4c2a2de/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-mechanical/appearance-freeze.json) 與 [原始 PNG](https://github.com/hplin50643/taiwan-buildings-3d/tree/f071cd6900418f1659b2c0d01b0944fff4c2a2de/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-mechanical/appearance) 以固定提交查閱。
+
+保留 v2 對全背牆的同構件推估及右側未分界面保留中性的處理；本次不新增補色。

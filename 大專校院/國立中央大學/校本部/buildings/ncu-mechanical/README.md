@@ -2,12 +2,13 @@
 
 ## 模型預覽
 
-| 新彩色斜視 | 新彩色低角度 | 新彩色正面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色斜視](appearance/front.png) | ![彩色低角度](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色背面 | 新彩色上視 | 彩色下載 |
-| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+| [![彩色斜前](display/front-640.webp)](display/front.webp)<br>彩色斜前 | [![彩色近來源角度](display/source-angle-640.webp)](display/source-angle.webp)<br>彩色近來源角度 | [![彩色正面](display/elevation-640.webp)](display/elevation.webp)<br>彩色正面 |
+| [![彩色背面（材色推估）](display/rear-640.webp)](display/rear.webp)<br>彩色背面（材色推估） | [![彩色左側](display/left-640.webp)](display/left.webp)<br>彩色左側 | [![彩色右側](display/right-640.webp)](display/right.webp)<br>彩色右側 |
+| [![彩色俯視（屋頂保留中性色）](display/top-640.webp)](display/top.webp)<br>彩色俯視（屋頂保留中性色） | &nbsp; | &nbsp; |
 
+點縮圖可開啟無失真原尺寸 WebP。七張均由現行 v2 彩色模型渲染。
 
 ### 照片近似彩色預覽
 
@@ -54,9 +55,9 @@
 
 SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研究中的一件，不代表全校完成。
 
-## 檔案下載與實際模型預覽
+## 檔案下載與驗證
 
-[STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [中性 STL](model.stl) · [中性 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json) · [渲染對照](display/render-proof.json) · [展示校驗](display/SHA256SUMS)
 
 
 以上是實際彩色模型渲染。rear 的完整後牆已作材料連續性推估，不代表同角度實景或已查證現況。相機視角不是精確地理方位。
@@ -69,6 +70,6 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 
 ## 側背補色審核（color-v2）
 
-[左側](appearance/left.png) · [右側](appearance/right.png) · [同鏡位原正面](appearance-review-v2/original-front.png) · [同鏡位原背面](appearance-review-v2/original-rear.png) · [完整材料／幾何／邊界審核](appearance-review-v2/color-continuity-review.json)
+歷史審核用：[同鏡位原正面](appearance-review-v2/original-front.png) · [同鏡位原背面](appearance-review-v2/original-rear.png) · [完整材料／幾何／邊界審核](appearance-review-v2/color-continuity-review.json)
 
 原尺寸、484 頂點／980 三角面、transform、已彩面、全部 RGBA 與 roughness 不變。原三張單色 previews、STL／OBJ／scene、原 QA 和代表圖不替換。此次不新增窗洞、文字、條帶、磁磚或設備；保留原懸挑／雨棚支撐評估與尚未實體試印限制。
