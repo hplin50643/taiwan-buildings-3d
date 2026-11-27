@@ -2,21 +2,27 @@
 
 ## 模型預覽
 
-| 新彩色斜前 | 新彩色近來源角度 | 新彩色正面 |
-| :---: | :---: | :---: |
-| ![彩色斜前](appearance/front.png) | ![彩色近來源角度](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色背面（外牆色為延伸推估） | 新彩色上視（未知中性） | 彩色下載 |
-| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+七張縮圖均為本版（側背外牆與既有窗洞補色）彩色模型。點圖可開啟 900 × 800 無失真 WebP。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![前方斜視](display/front-640.webp)](display/front.webp) | [![近來源角度](display/source-angle-640.webp)](display/source-angle.webp) | [![正面](display/elevation-640.webp)](display/elevation.webp) |
+| 前方斜視 | 近來源角度 | 正面 |
+| [![背面斜視](display/rear-640.webp)](display/rear.webp) | [![俯視](display/top-640.webp)](display/top.webp) | [![左側](display/left-640.webp)](display/left.webp) |
+| 背面斜視 | 俯視 | 左側 |
+| [![右側](display/right-640.webp)](display/right.webp) |  |  |
+| 右側 |  |  |
+
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [現行圖檔與像素校驗](display/webp-proof.json)
 
 ### 側背外牆與既有窗洞補色
 
 本輪重新下載並親看文學院兩張官方實照，確認灰米石質柱梁、赭褐窗間磁磚及入口棕框的不同材料。保留原配色，將原灰米石質色延伸到原完整近似側背外殼、上層帶兩端及既有石質窗洞回折，共170個原中性三角面；這是同棟同材質族推估，不是四面照片驗證。原已彩面及所有材質RGBA／roughness完全不變，不加窗或切新面。可見赭褐磁磚與石材混合但缺可靠分界的前方窗間牆、屋頂、廊下頂面與底座仍中性。
 
 
-[左側](appearance/left.png) · [右側](appearance/right.png) · [同相機原新版對照](appearance-review-v2/comparison.png)：上排前、下排後，左原版右新版；圖內無字。
+[同相機前後對照](https://github.com/hplin50643/taiwan-buildings-3d/blob/29fc6667a80b6e0369272dd9dd51d6348dd3c14b/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-liberal-arts-1/appearance-review-v2/comparison.png)屬歷史技術審核，不列入現行圖表。對照上排前、下排後，左原版、右新版。
 
-原三張預覽、geometry／尺寸／STL／OBJ／scene.blend及首頁／校級選圖均保留。照片未標拍攝日，不能代表2026全面現況；詳[配色來源及重建限制](APPEARANCE.md)。
+原尺寸、STL、OBJ、Blender、幾何預覽與首頁代表圖不變，校區與學校頁改用同一張最新版正面縮圖。第一版審核保留作歷史。第二版的[發布校驗紀錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/29fc6667a80b6e0369272dd9dd51d6348dd3c14b/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-liberal-arts-1/appearance-freeze.json)對應當時的 PNG 和說明檔；現行預覽以[WebP 像素校驗](display/webp-proof.json)為準。照片未標拍攝日，不能代表2026全面現況；詳[配色來源及重建限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 103 × 68 mm。
 

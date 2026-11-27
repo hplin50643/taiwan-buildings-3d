@@ -34,6 +34,6 @@ Blender 4.3.2，同目錄放置原scene.blend、model.stl與新版script：
 
 產生7張900×800真網格PNG：斜前、斜後、正面、近來源、左、右、上視。Cycles CPU、96 samples、seed 0、單執行緒、denoise=False，無字物件／stamp／PNG文字metadata。相機名不是精確地理方向。另兩張原版對照使用同相機、燈光、幾何及材質值，只還原原面材質索引；拼圖上排前、下排後，左原版、右新版。
 
-BLEND原新版逐點、逐面、原彩面、transform、尺寸、RGBA與roughness核對。3MF與BLEND逐頂點、每面頂點順序及三個材料指標核對，並與原3MF單位／build項目／調色盤比對。從原scene.blend乾淨重建後，3MF及materials JSON逐byte相同，BLEND逐項語義相同。最新證據與實圖檢查在appearance-review-v2，appearance-freeze.json綁定本版；原appearance-review仍保留v1歷史，不作新版渲染綁定。
+BLEND原新版逐點、逐面、原彩面、transform、尺寸、RGBA與roughness核對。3MF與BLEND逐頂點、每面頂點順序及三個材料指標核對，並與原3MF單位／build項目／調色盤比對。從原scene.blend乾淨重建後，3MF及materials JSON逐byte相同，BLEND逐項語義相同。見[發佈當時審核紀錄](https://github.com/hplin50643/taiwan-buildings-3d/tree/29fc6667a80b6e0369272dd9dd51d6348dd3c14b/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-liberal-arts-1/appearance-review-v2)及[歷史校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/29fc6667a80b6e0369272dd9dd51d6348dd3c14b/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-liberal-arts-1/appearance-freeze.json)。現行七張展示見[模型 README](README.md#模型預覽)與[WebP 校驗](display/webp-proof.json)，重繪 PNG 在隔離目錄暫存使用。
 
 Core3MF讀取端需支援base materials，不包含AMS或耗材映射。原0.2mm截面及1mm間距的0.8mm XY薄篩只是歷史幾何證據，不是完整壁厚、正式切片或試印。懸出上層長帶、高柱廊頂及窗梃需支撐／切片評估；未實體試印，不保證免支撐可印。
