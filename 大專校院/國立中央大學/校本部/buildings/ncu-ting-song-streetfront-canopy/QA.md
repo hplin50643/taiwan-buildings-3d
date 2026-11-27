@@ -1,5 +1,7 @@
 # QA：聽松台街側入口與候車棚限定近似
 
+下列 PNG 位元組比對是原發布時的歷史紀錄。原始 PNG 與舊 QA 可在[固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/5dce8f6364ee02e12ac4c3633c74e57499d770d4/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-ting-song-streetfront-canopy)查驗。現在的可重繪展示使用暫存 PNG 作像素比對，再核對無失真 WebP；現行檔案用 [SHA256SUMS](SHA256SUMS) 核對。
+
 ## 原始網格
 原始 STL 僅完全相同座標建立索引，沒有補洞、刪面、修法線、圓整截面或薄件豁免。2487 頂點、5150 面、單一連通封閉殼、繞向一致，正向體積 56096.039462 mm³。非有限值、零面積、重複面、非雙面邊、邊向衝突、頂點 link 異常與儲存法線非正向 dot 均為 0，詳 qa-topology.json。
 

@@ -2,10 +2,13 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+五張圖使用 640 px WebP 縮圖，可點選全尺寸無失真 WebP。[圖檔及重繪校驗](qa/preview-webp.json) · [縮圖校驗](previews/thumbnail-proof.json)
+
+| [![SLT主樓完整外觀近似，最終網格正面斜視](previews/front-640.webp)](previews/front.webp) | [![後斜視](previews/rear-640.webp)](previews/rear.webp) | [![正立面](previews/elevation-640.webp)](previews/elevation.webp) |
 | :---: | :---: | :---: |
-| ![SLT主樓完整外觀近似，最終網格正面斜視](previews/front.png)<br>正面斜視 | ![後斜視](previews/rear.png)<br>後斜視 | ![正立面](previews/elevation.png)<br>正立面 |
-| ![俯視](previews/top.png)<br>俯視 | ![左前斜視](previews/left_oblique.png)<br>左前斜視 |  |
+| 正面斜視 | 後斜視 | 正立面 |
+| [![俯視](previews/top-640.webp)](previews/top.webp) | [![左前斜視](previews/left_oblique-640.webp)](previews/left_oblique.webp) |  |
+| 俯視 | 左前斜視 |  |
 
 **校外「鹿林天文台觀測基地」的白色 SLT 單棟完整外觀近似，不是桃園校本部、粉紅色 LOT 控制中心或整座天文台。** 建築於1999年1月完工啟用；本模型以2022正面及2023反側照片可見的白色狀態為主要依據，**不宣稱2026現況**。不是測繪、BIM、施工圖或可操作觀測機構。
 
@@ -44,15 +47,14 @@
 | `build_model.py`、`render_model.py` | 原始參數生成與實際最終mesh五圖渲染 |
 | `mesh.json`、`palette.json` | 精確幾何與材質對照 |
 | `qa_model.py`、`check_features.py`、`verify_*.py` | 原始拓樸、全局切層、局部／空氣、格式／hash驗證 |
-| `rebuild.py` | 新隔離目錄重建核心與五PNG，逐檔bytes比對 |
+| `rebuild.py` | 新隔離目錄重建四個核心檔並逐檔比對，另核對五張 WebP 的像素及檔案校驗碼 |
 | `QA.md`、`qa/`、`qa-*.json` | 可追溯數值、限制及獨立來源視覺終審 |
 | `SOURCES.md`、`sources.json` | 來源、日期界線、作者、引用用途；無第三方原圖 |
 | `SHA256SUMS` | 全包檔案hash |
 
 ## 五個最終網格視圖
 
-[正面斜視](previews/front.png) · [後斜視](previews/rear.png) · [正立面](previews/elevation.png) · [俯視](previews/top.png) · [左前斜視](previews/left_oblique.png)
-
+[正面斜視](previews/front.webp) · [後斜視](previews/rear.webp) · [正立面](previews/elevation.webp) · [俯視](previews/top.webp) · [左前斜視](previews/left_oblique.webp)
 
 五圖均由同一最終網格渲染，非原照片拼貼或生成的概念圖；不代表實印成品。
 
@@ -60,18 +62,17 @@
 
 Python 3.12、Blender 4.3.2驗證；Python依賴列在`requirements.txt`，Blender另裝。於模型目錄執行：
 
-```bash
-python build_model.py
-python qa_model.py
-python check_features.py
-python verify_exchange.py
-blender -b -t 8 --python-exit-code 1 --python render_model.py
-blender -b -t 8 --python-exit-code 1 --python verify_scene.py
-blender -b -t 8 --python-exit-code 1 --python verify_render.py
-python rebuild.py --output ../independent-new --threads 8
+```sh
+python -m pip install -r requirements.txt Pillow==13.0.0
 python verify_package.py
+blender -b -t 4 --python-exit-code 1 --python verify_render.py
+python rebuild.py --output ../clean-rebuild --blender blender --threads 4
 ```
 
-`verify_exchange.py`重建核心並核bytes；`rebuild.py`須指定全新目錄。CPU Cycles seed0、128 samples、無降噪；PNG僅去除文字／日期metadata，不改像素。同一驗證環境下核心4檔與5PNG bytes一致；不同Blender／計算環境不保證渲染bytes相同。Blend檔案本體不宣稱跨路徑bytes一致，其幾何及材質另有精確往返驗證。更改模型後須重跑QA與來源審查，不沿用舊hash。
+`verify_exchange.py`重建核心並核bytes；`rebuild.py`須指定全新目錄。CPU Cycles seed0、128 samples、無降噪；暫存 PNG 僅去除文字和日期中繼資料，不改像素。同一驗證環境下比對四個核心檔的位元組，並核對五張 WebP 的 RGBA 像素和檔案校驗碼；不同 Blender 或運算環境可能改變重繪結果。Blend檔案本體不宣稱跨路徑bytes一致，其幾何及材質另有精確往返驗證。更改模型後須重跑QA與來源審查，不沿用舊hash。
 
 [來源](SOURCES.md) · [QA](QA.md) · [原創產生物授權](LICENSE)。來源照片、年報頁與建築本身權利不因模型授權轉移。
+
+### 展示圖與校驗
+
+點縮圖可開啟全尺寸無失真 WebP。重建只在隔離目錄暫存 PNG；公開原始模型和既有 QA 不變。[現行 WebP 與像素校驗](qa/preview-webp.json) · [原始 PNG、歷史校驗與進階測試步驟](https://github.com/hplin50643/taiwan-buildings-3d/tree/5dce8f6364ee02e12ac4c3633c74e57499d770d4/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E9%B9%BF%E6%9E%97%E5%A4%A9%E6%96%87%E5%8F%B0%E8%A7%80%E6%B8%AC%E5%9F%BA%E5%9C%B0/buildings/ncu-lulin-slt-main-building)。

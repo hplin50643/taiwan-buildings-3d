@@ -10,5 +10,6 @@ with tempfile.TemporaryDirectory() as td:
   n=struct.unpack('>I',raw[pos:pos+4])[0];kind=raw[pos+4:pos+8]
   if kind not in [b'tEXt',b'zTXt',b'iTXt',b'eXIf']:clean+=raw[pos:pos+n+12]
   pos+=n+12
- assert clean==(A/'previews/front.png').read_bytes()
-(A/'qa/render-reopen-validation.json').write_text(json.dumps(dict(scene_front_camera_reopen_render_exact=True,front_sha256=hashlib.sha256(clean).hexdigest(),method='same Blender CPU Cycles seed 0, strip only PNG textual/date metadata; unchanged geometry and materials'),indent=2)+'\n')
+ expected=json.loads((A/'qa/preview-webp.json').read_text())['views']['front']['archive_png_sha256']
+ assert hashlib.sha256(clean).hexdigest()==expected
+print('Saved scene front matches the historical PNG hash without writing QA.')

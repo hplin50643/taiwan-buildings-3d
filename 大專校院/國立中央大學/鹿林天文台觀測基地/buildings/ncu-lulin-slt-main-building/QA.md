@@ -1,5 +1,7 @@
 # QA｜中央大學鹿林天文台SLT主建築
 
+下列 PNG 位元組比對是原發布時的歷史紀錄。原始 PNG 與舊 QA 可在[固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/5dce8f6364ee02e12ac4c3633c74e57499d770d4/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E9%B9%BF%E6%9E%97%E5%A4%A9%E6%96%87%E5%8F%B0%E8%A7%80%E6%B8%AC%E5%9F%BA%E5%9C%B0/buildings/ncu-lulin-slt-main-building)查驗。現在的可重繪展示使用暫存 PNG 作像素比對，再核對無失真 WebP；現行檔案用 [SHA256SUMS](SHA256SUMS) 核對。
+
 **1999主樓、2022–2023白色可見狀態之完整外觀近似；校外基地，非LOT／全基地。未實印，不保證免支撐。**
 
 本報告綁定最終交付STL：`338b125cc8b64ca4d705146716209588a42b3d2b1d7f7f4b5fb8ed44e729cec9`。
