@@ -10,7 +10,7 @@
 
 七張本次彩色圖：深框斜視、另一側斜視、正面、來源角、左、右、上視。另附兩張與新版完全相同相機及光線的原色面配置對照。均以 Cycles CPU、96 samples、單執行緒、停用降噪、900 × 800 渲染，不含文字浮水印與 PNG 文字 metadata。相機名稱只是模型座標視角，並非地理方位。
 
-詳細證據見 [逐面邊界審核](appearance-review-v2/boundary-continuity-audit.json)、[幾何與 3MF 核對](appearance-review-v2/model-verification.json)、[來源紀錄](appearance-review-v2/source-register.json)、[九張圖檢視](appearance-review-v2/color-continuity-review.json) 與 [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。舊 appearance-review 為第一版歷史，本次以 appearance-review-v2 及 appearance-freeze.json 為準。原首頁／校級代表圖、previews、STL、OBJ、scene 與建模來源不變。
+詳細證據見 [逐面邊界審核](appearance-review-v2/boundary-continuity-audit.json)、[幾何與 3MF 核對](appearance-review-v2/model-verification.json)、[來源紀錄](appearance-review-v2/source-register.json)、[九張圖檢視](https://github.com/hplin50643/taiwan-buildings-3d/blob/a6160d5e08227c9b743ceb5b7b6f65017e481819/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-engineering5-b-extension/appearance-review-v2/color-continuity-review.json) 與 [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。第一版審核保留作歷史。第二版的[發布校驗紀錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/a6160d5e08227c9b743ceb5b7b6f65017e481819/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-engineering5-b-extension/appearance-freeze.json)對應當時的 PNG 和說明檔；現行預覽以[WebP 像素校驗](display/webp-proof.json)為準。原幾何預覽、STL、OBJ、scene 與建模來源不變。現行展示見[模型說明](README.md#模型預覽)。
 
 原照片拍攝日期不明，不聲稱 2026 全棟現況。原估計尺寸、深框與遮陽支撐／薄特徵限制、未正式切片與未實體試印等限制仍適用。
 

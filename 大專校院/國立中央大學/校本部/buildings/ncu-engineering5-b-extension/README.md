@@ -2,21 +2,27 @@
 
 ## 模型預覽
 
-| 新彩色深框側 | 新彩色另一長側 | 新彩色正面 |
+七張縮圖均為本版（既有窗洞完整回折面）彩色模型。點圖可開啟 900 × 800 無失真 WebP。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色深框側](appearance/front.png) | ![彩色另一長側](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色反向斜視 | 新彩色上視 | 彩色下載 |
-| ![彩色反向斜視](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+| [![深框側斜視](display/front-640.webp)](display/front.webp) | [![另一長側](display/source-angle-640.webp)](display/source-angle.webp) | [![正面](display/elevation-640.webp)](display/elevation.webp) |
+| 深框側斜視 | 另一長側 | 正面 |
+| [![反向斜視](display/rear-640.webp)](display/rear.webp) | [![俯視](display/top-640.webp)](display/top.webp) | [![左側](display/left-640.webp)](display/left.webp) |
+| 反向斜視 | 俯視 | 左側 |
+| [![右側](display/right-640.webp)](display/right.webp) |  |  |
+| 右側 |  |  |
 
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [現行圖檔與像素校驗](display/webp-proof.json)
 
-[左側](appearance/left.png) · [右側](appearance/right.png) · [原版深框側對照](appearance-review-v2/original-front.png) · [原版另一側對照](appearance-review-v2/original-rear.png)
+[WebP 檢查程式](display/check-webp.py)可核對現行圖檔；選用的重繪比對須在獨立目錄執行 Blender，再以 `--replay-root` 指向該目錄。PNG 只作為重繪暫存輸出。
 
 ### 照片近似彩色預覽
 
 依B棟2014–2015增建工程兩張完工實景：淺灰米深框、灰褐凹壁、深灰綠窗、另一長面淺灰及較深灰原遮陽／核心直柵。原簡化斜蓋淡灰藍近似，不稱精確光電板；未知平屋頂與截斷端中性。
 
 
-僅本增建條翼，不含舊AB圓入口或獨立C；照片旁亮白舊樓未套色。原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變；詳[來源與重建限制](APPEARANCE.md)。
+僅本增建條翼，不含舊AB圓入口或獨立C；照片旁亮白舊樓未套色。原幾何預覽、尺寸、STL、OBJ、scene 與代表視角不變；詳[來源與重建限制](APPEARANCE.md)。
 
 ## 第二次補色：既有窗洞完整回折面
 
@@ -26,9 +32,9 @@
 
 仍保留中性的 84 面：人工底座 28、未知平屋頂 8、兩個人工／未明窄端 4、核心高低差側面 34、簡化斜蓋邊緣及底面 10。核心側面跨越灰褐與淺灰外牆，原網格沒有足夠材料分界，本次不替它假造分界。斜蓋也不據外觀假定為精確光電模組。
 
-七張本次彩色圖：深框斜視、另一側斜視、正面、來源角、左、右、上視。另附兩張與新版完全相同相機及光線的原色面配置對照。均以 Cycles CPU、96 samples、單執行緒、停用降噪、900 × 800 渲染，不含文字浮水印與 PNG 文字 metadata。相機名稱只是模型座標視角，並非地理方位。
+七張本次彩色圖：深框斜視、另一側斜視、正面、來源角、左、右、上視。兩張同相機及光線的[原色面配置對照](https://github.com/hplin50643/taiwan-buildings-3d/tree/a6160d5e08227c9b743ceb5b7b6f65017e481819/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-engineering5-b-extension/appearance-review-v2)屬技術審核，不在現行圖表展示。均以 Cycles CPU、96 samples、單執行緒、停用降噪、900 × 800 渲染，不含文字浮水印與 PNG 文字 metadata。相機名稱只是模型座標視角，並非地理方位。
 
-詳細證據見 [逐面邊界審核](appearance-review-v2/boundary-continuity-audit.json)、[幾何與 3MF 核對](appearance-review-v2/model-verification.json)、[來源紀錄](appearance-review-v2/source-register.json)、[九張圖檢視](appearance-review-v2/color-continuity-review.json) 與 [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。舊 appearance-review 為第一版歷史，本次以 appearance-review-v2 及 appearance-freeze.json 為準。原首頁／校級代表圖、previews、STL、OBJ、scene 與建模來源不變。
+詳細證據見 [逐面邊界審核](appearance-review-v2/boundary-continuity-audit.json)、[幾何與 3MF 核對](appearance-review-v2/model-verification.json)、[來源紀錄](appearance-review-v2/source-register.json)、[九張圖檢視](https://github.com/hplin50643/taiwan-buildings-3d/blob/a6160d5e08227c9b743ceb5b7b6f65017e481819/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-engineering5-b-extension/appearance-review-v2/color-continuity-review.json) 與 [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。第一版審核保留作歷史。第二版的[發布校驗紀錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/a6160d5e08227c9b743ceb5b7b6f65017e481819/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-engineering5-b-extension/appearance-freeze.json)對應當時的 PNG 和說明檔；現行預覽以[WebP 像素校驗](display/webp-proof.json)為準。首頁代表圖、原始幾何預覽、STL、OBJ、scene 與建模來源不變；校級與校區縮圖改用同一張最新版正面 WebP。
 
 原照片拍攝日期不明，不聲稱 2026 全棟現況。原估計尺寸、深框與遮陽支撐／薄特徵限制、未正式切片與未實體試印等限制仍適用。
 
