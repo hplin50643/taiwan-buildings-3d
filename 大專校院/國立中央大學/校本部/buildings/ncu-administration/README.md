@@ -3,20 +3,17 @@
 ## 模型預覽
 
 
-| 新彩色斜前 | 新彩色來源相近角度 | 新彩色正立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![新彩色斜前](appearance/front.png) | ![新彩色近來源角度](appearance/source-angle.png) | ![新彩色正面](appearance/elevation.png) |
-| 新彩色背面（牆色為延伸推估） | 新彩色上視（未知屋面中性） | 彩色下載 |
-| ![新彩色背面](appearance/rear.png) | ![新彩色上視](appearance/top.png) | [彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) |
+| [![彩色斜前](display/front-640.webp)](display/front.webp)<br>彩色斜前 | [![彩色近來源角度](display/source-angle-640.webp)](display/source-angle.webp)<br>彩色近來源角度 | [![彩色正面](display/elevation-640.webp)](display/elevation.webp)<br>彩色正面 |
+| [![彩色背面（牆色為延伸推估）](display/rear-640.webp)](display/rear.webp)<br>彩色背面（牆色為延伸推估） | [![彩色左側](display/left-640.webp)](display/left.webp)<br>彩色左側 | [![彩色右側](display/right-640.webp)](display/right.webp)<br>彩色右側 |
+| [![彩色俯視（屋頂保留中性色）](display/top-640.webp)](display/top.webp)<br>彩色俯視（屋頂保留中性色） | &nbsp; | &nbsp; |
 
-### 側背外牆延續補色（原已著色面及幾何保留）
+點縮圖可開啟無失真原尺寸 WebP。七個視角均核對現行彩色模型；側背外牆延續色為推估；未確認的凹帶背板與屋頂保留中性色。
 
-依校方無障礙地圖的行政大樓實照補色：淺灰米格陣、深綠灰孔後、暗藍灰大窗、灰米雨庇／柱／階及深灰褐正面上緣。**孔後顏色只是遮陽格陣後方的深色代理，不是宣稱每孔都是玻璃。** 本次在不新增幾何的前提下，把同一棟原灰米牆色延伸到簡化完整側背外牆、左側凹帶的結構回折，並把原深灰褐上緣延伸到連續屋簷的垂直側後緣。這54個原中性三角面是同材質族的合理推估，不是已有側背實照逐面認證；不新增背窗、窗格或遠處總圖書館的塔。三條左側凹帶背板無法確認是玻璃或混合牆，保留中性；水平屋頂、底座及其他未解面不變。
+[舊版 v2 同相機配色審核](appearance-review-v2/comparison.png)只供歷史對照，不是上方 v3 的現行展示。
 
-
-補充[左側](appearance/left.png)、[右側](appearance/right.png)與[同相機原新版對照](appearance-review-v2/comparison.png)：對照上排斜前、下排斜後，左為原版、右為新版，圖片內無文字。
-
-原三圖、原 STL／scene.blend／幾何尺寸與首頁、校級選圖均保留；新彩圖另存，原 STL 不帶色。照片日期未知，不代表2026現況。詳[配色來源、勘誤及重建](APPEARANCE.md)。
+原三張中性幾何驗證圖、原 STL／scene.blend 及尺寸不改；校級與校區選圖保留斜前角度。原 STL 不帶色。照片日期未知，不代表2026現況。詳[配色來源、勘誤及重建](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 87 × 47.1 mm。
 
@@ -55,12 +52,12 @@
 
 SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研究中的一件，不代表全校完成。
 
-## 檔案下載與實際模型預覽
+## 檔案下載與驗證
 
-[STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [中性 STL](model.stl) · [中性 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json) · [渲染對照](display/render-proof.json) · [展示校驗](display/SHA256SUMS)
 
 
-以上皆由交付STL渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+上方七視角由現行 v3 彩色模型渲染。背側形狀為簡化，牆色僅為延伸推估，不代表同視角實景。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 
@@ -72,4 +69,4 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 ## 門廊及入口過樑底完整原域一致化 v3
 選取 z=12 朝下門廊/入口過樑底18面完整連通共面域，其中17面原材2保持，僅5308由中性0延用原門廊灰米材2。原依面中心y門檻遺留入口頂半片斜三角；同平面鄰片已材2且原網格無材料界。本次不僅挑外挑門廊範圍，也明示包含y至-18的入口內緣。照片支持外門廊淺色，內緣為同構件家族推估，不是陰影內逐點照片證實。其餘5499面、7材值、geometry/transform不變；所有原v2側背推估及工程限制保留，不新增構件或新切界。
 本輪重新讀官方無障礙地圖，其case AdmiB現為「行政大樓 Administrative Building」，並綁定原照片；舊appearance-sources中英文誤植說明為歷史快照，不能作現況錯標。本輪保留舊文件不改，以上新核對優先。照片日期未明，不稱現況重建或實體試印。
-7張原生900×800視圖/相機/渲染設定保留；原STL/scene/previews與舊v1/v2審核保留原bytes。本次源審快照 ENTRY-SOFFIT-SOURCE-QA.json，最終獨審 ENTRY-SOFFIT-INDEPENDENT-QA.json；照片私用不隨模型發布。
+7張原生900×800視圖/相機/渲染設定保留；原STL/scene/previews與舊 v1/v2 審核保持原位元組。v3 原始 PNG 與當時報告可在[固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/8adae23dcd3a221b585a5c865789f2e0a32d20b0/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-administration)查閱。本次源審快照 ENTRY-SOFFIT-SOURCE-QA.json，最終獨審 ENTRY-SOFFIT-INDEPENDENT-QA.json；照片私用不隨模型發布。

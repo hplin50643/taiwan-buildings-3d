@@ -34,7 +34,7 @@ Blender 4.3.2，將原scene.blend、model.stl與本版script放同目錄：
 
 產生7張900×800實網格PNG（斜前、斜後、正立面、近來源、左、右、上視），Cycles CPU、96 samples、seed 0、單執行緒、denoise=False、無字／stamp及PNG文字metadata。相機名不是精確地理方位。兩張原版對照使用同燈光與相機，只把材質索引還原，對照圖上排前、下排後，左原版右新版。
 
-3MF逐頂點、逐三角面頂點順序、每面三個材料指標、單位／build項目／調色盤與BLEND及原件核對。原彩面、材質RGBA與roughness、mesh、transform、尺寸全部逐項比較。乾淨重建核對3MF及materials JSON逐byte、BLEND語義，記錄在appearance-review-v2；原appearance-review保留v1歷史，但不作新版渲染綁定。本版檔案由appearance-freeze.json記錄。
+3MF逐頂點、逐三角面頂點順序、每面三個材料指標、單位／build項目／調色盤與BLEND及原件核對。原彩面、材質RGBA與roughness、mesh、transform、尺寸全部逐項比較。乾淨重建核對3MF及materials JSON逐byte、BLEND語義，記錄在appearance-review-v2；原appearance-review保留v1歷史，但不作新版渲染綁定。本段所述為 v2 歷史。現行配色以以下 v3 節為準，現行圖檔與像素校驗見 [WebP 渲染對照](display/render-proof.json)。
 
 3MF讀取端需支援base materials；未指定AMS、多噴頭或耗材映射。原0.2mm截面及1mm間距的0.8mm XY薄特徵篩查是歷史幾何證據，不是完整壁厚、正式切片工具路徑或試印驗證。雨庇、格孔與薄簷仍需評估支撐；尚未實體試印，不保證免支撐或必然可印。
 
@@ -43,3 +43,7 @@ Blender 4.3.2，將原scene.blend、model.stl與本版script放同目錄：
 選取 z=12 朝下門廊/入口過樑底18面完整連通共面域，其中17面原材2保持，僅5308由中性0延用原門廊灰米材2。原依面中心y門檻遺留入口頂半片斜三角；同平面鄰片已材2且原網格無材料界。本次不僅挑外挑門廊範圍，也明示包含y至-18的入口內緣。照片支持外門廊淺色，內緣為同構件家族推估，不是陰影內逐點照片證實。其餘5499面、7材值、geometry/transform不變；所有原v2側背推估及工程限制保留，不新增構件或新切界。
 本輪重新讀官方無障礙地圖，其case AdmiB現為「行政大樓 Administrative Building」，並綁定原照片；舊appearance-sources中英文誤植說明為歷史快照，不能作現況錯標。本輪保留舊文件不改，以上新核對優先。照片日期未明，不稱現況重建或實體試印。
 7張原生900×800視圖/相機/渲染設定保留；原STL/scene/previews與舊v1/v2審核保留原bytes。本次源審快照 ENTRY-SOFFIT-SOURCE-QA.json，最終獨審 ENTRY-SOFFIT-INDEPENDENT-QA.json；照片私用不隨模型發布。
+
+刊登版使用 7 張全尺寸無失真 WebP 及其縮圖。不更動配色、幾何或生成器。v3 原 PNG、README 與原稽核紀錄釘定在 [WebP 遷移前的版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/8adae23dcd3a221b585a5c865789f2e0a32d20b0/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-administration)。現行 `python verify_display.py --rebuild` 用 Blender 4.3.2 在暫存資料夾重繪 PNG，再按 RGBA 像素核對 WebP；不提交中間 PNG。
+
+補查[校方校友電子報](https://in.ncu.edu.tw/alumni/enews/no31/Text6_1.pdf#page=4)與[校園災害防救計畫](https://military.ncu.edu.tw/download/112_0008_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8-%E6%9C%AC%E6%96%87-112.3.28.pdf#page=13)的正面資料；不足以確認側背材質邊界，不擴大補色。
