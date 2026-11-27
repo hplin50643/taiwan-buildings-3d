@@ -38,3 +38,9 @@ Blender4.3.2，原scene.blend、model.stl及build_appearance.py同目錄：
 
 ## 2026-11-17 側背牆色延伸
 新增 66 面補色，只將完整原外牆平面上原中性材質改為本次修訂的粉色牆材；新增校史影像依據，但沒有新增側背照片或實地測色。低翼、中高翼、右高翼、入口亭採同構件材料延伸。屋頂、玻璃、窄窗綜合表觀及窗凹保持。歷史描述與 QA 為舊版本記錄；現版以 README 與 appearance-continuity-verification.json 為準。
+
+## 現行展示與重建
+
+現行完整五視角見 [WebP 圖廊](README.md#模型預覽)，可用 Python（Pillow）和 Blender 4.3.2 執行 `python verify_display.py --rebuild` 暫存重繪並比對 RGBA，不改模型檔。歷史 [v4 配色驗證](https://github.com/hplin50643/taiwan-buildings-3d/tree/c44ad299a5631f47749dcb420236f6db4835f9bc/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-hong-jing/appearance-continuity-verification.json) 與 [原始 PNG](https://github.com/hplin50643/taiwan-buildings-3d/tree/c44ad299a5631f47749dcb420236f6db4835f9bc/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-hong-jing/appearance) 以固定提交查閱。
+
+本次不新增補色。舊館側背牆色仍沿用同構件連續性推估，校史照片不代替現況測色。

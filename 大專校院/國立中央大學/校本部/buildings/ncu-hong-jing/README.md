@@ -10,19 +10,19 @@
 
 ## 模型預覽
 
-| 新彩色斜前 | 新彩色近來源角度 | 新彩色正面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色斜前](appearance/front.png) | ![彩色近來源角度](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色背面（外牆同材質推估） | 新彩色上視（未知中性） | 彩色下載 |
-| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+| [![彩色斜前](display/front-640.webp)](display/front.webp)<br>彩色斜前 | [![彩色近來源角度](display/source-angle-640.webp)](display/source-angle.webp)<br>彩色近來源角度 | [![彩色正面](display/elevation-640.webp)](display/elevation.webp)<br>彩色正面 |
+| [![彩色背面（未確認區域保留中性）](display/rear-640.webp)](display/rear.webp)<br>彩色背面（未確認區域保留中性） | [![彩色俯視](display/top-640.webp)](display/top.webp)<br>彩色俯視 | &nbsp; |
 
+點縮圖可開啟無失真原尺寸 WebP。五張均由現行 v4 彩色模型渲染。
 
 ### 照片近似彩色預覽
 
 色彩已依下述校史照片修訂；HJB 舊實照僅保留原構件辨識：粉色前牆／入口、灰綠主窗背、較淡窄高窗帶與灰階梯。窄帶包含玻璃／窗簾／空調的綜合表觀，不新增設備；後外側牆面延伸本次修訂的粉色（材料連續性推估），屋頂中性。
 
 
-原三圖、STL／OBJ／scene.blend／全部geometry／尺寸及首頁／校級選圖不變。來源照片裁頂且左端遮擋，不能把前牆材質族近似延伸當完整逐層已驗；詳[來源範圍及重建限制](APPEARANCE.md)。
+原三張中性幾何驗證圖、STL／OBJ／scene.blend、尺寸與首頁代表圖均不改；校級及校區展示保留原角度。來源照片裁頂且左端遮擋，不能把前牆材質族近似延伸當完整逐層已驗；詳[來源範圍及重建限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 113 × 111.8 mm。
 
@@ -62,9 +62,9 @@
 
 SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研究中的一件，不代表全校完成。
 
-## 檔案下載與實際模型預覽
+## 檔案下載與驗證
 
-[STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [中性 STL](model.stl) · [中性 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json) · [渲染對照](display/render-proof.json) · [展示校驗](display/SHA256SUMS)
 
 
 以上展示為交付彩色外觀模型的渲染；rear所示側背牆色為同材質推估，幾何仍簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
