@@ -2,11 +2,13 @@
 
 ## 模型預覽
 
-| 新彩色斜視 | 新彩色右外側 | 新彩色正面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色斜視](appearance/front.png) | ![彩色右外側](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色背向 | 新彩色上視 | 彩色下載 |
-| ![彩色背向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+| [![正面斜視](display/front-640.webp)](display/front.webp)<br>正面斜視 | [![右外側斜視](display/source-angle-640.webp)](display/source-angle.webp)<br>右外側斜視 | [![正面](display/elevation-640.webp)](display/elevation.webp)<br>正面 |
+| [![背面斜視](display/rear-640.webp)](display/rear.webp)<br>背面斜視 | [![俯視](display/top-640.webp)](display/top.webp)<br>俯視 | [![左側](display/left-640.webp)](display/left.webp)<br>左側 |
+| [![右側](display/right-640.webp)](display/right.webp)<br>右側 |  |  |
+
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend)
 
 
 ### 側背原面材料續色
@@ -69,8 +71,8 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 
 ## 本版原面補色與核對
 
-[新版左側](appearance/left.png) · [新版右側](appearance/right.png) · [原版同相機正斜視](appearance-review-v2/original-front.png) · [原版同相機背向](appearance-review-v2/original-rear.png)。
+[新版左側](display/left.webp) · [新版右側](display/right.webp) · [原版同相機正斜視](appearance-review-v2/original-front.png) · [原版同相機背向](appearance-review-v2/original-rear.png)。
 
-[逐點逐面及材質值核對](appearance-review-v2/model-verification.json) · [完整面域／中性原因](appearance-review-v2/boundary-continuity-audit.json) · [本輪來源判讀](appearance-review-v2/source-register.json) · [九圖審閱](appearance-review-v2/color-continuity-review.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。
+[逐點逐面及材質值核對](appearance-review-v2/model-verification.json) · [完整面域／中性原因](appearance-review-v2/boundary-continuity-audit.json) · [本輪來源判讀](appearance-review-v2/source-register.json) · [九圖審閱](https://github.com/hplin50643/taiwan-buildings-3d/blob/c96ff68b7b35e9bae2fe88a6b208085ea6426149/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-teaching-research/appearance-review-v2/color-continuity-review.json) · [乾淨重建](appearance-review-v2/clean-rebuild-equality.json)。
 
-原appearance-review保留為前版歷史；本版由appearance-review-v2及appearance-freeze.json綁定。原幾何QA、未試印及支撐限制不變。這套 2,620 面補色版的彩色 3MF、Blender 與預覽已收錄於本儲存庫；舊發布前清冊可在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/5494614cce5c2bc2ca9882f546a9825034010007/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-teaching-research/appearance-freeze.json)查閱。此次只更正文件和現行校驗，不改模型、圖片或歷史 QA。
+原appearance-review保留為前版歷史；本版由appearance-review-v2及appearance-freeze.json綁定。原幾何QA、未試印及支撐限制不變。這套 2,620 面補色版的彩色 3MF、Blender 與預覽已收錄於本儲存庫；舊發布前清冊可在[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/5494614cce5c2bc2ca9882f546a9825034010007/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-teaching-research/appearance-freeze.json)查閱。現行預覽以同一模型重繪，縮圖用 WebP，點擊可看無失真全圖。原圖與比對紀錄可於[固定歷史版本](https://github.com/hplin50643/taiwan-buildings-3d/blob/c96ff68b7b35e9bae2fe88a6b208085ea6426149/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-teaching-research/appearance-review-v2/color-continuity-review.json)查閱；原始 QA 圖保留，模型沒有變更。
