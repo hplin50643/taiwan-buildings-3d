@@ -2,9 +2,9 @@
 
 ## 模型預覽
 
-| 首頁代表視角 | 校級圖冊視角 | 背面斜視 |
+| [![現行模型首頁視角](homepage-current-640.webp)](homepage-current.webp) | [![現行模型校級圖冊視角](school-current-640.webp)](school-current.webp) | [![現行模型後斜視](rear-current-640.webp)](rear-current.webp) |
 | :---: | :---: | :---: |
-| ![現行模型首頁視角](homepage-current.webp)<br>首頁代表視角 | ![現行模型校級圖冊視角](school-current.webp)<br>校級圖冊視角 | ![現行模型後斜視](rear-current.webp)<br>背側 |
+| 首頁代表視角 | 校級圖冊視角 | 背側 |
 
 [彩色 3MF](appearance.3mf) · [Blender 場景](scene.blend) · [原 STL（不含色）](model.stl) · [校驗版本](CHECKSUM-SCOPE.md) · [渲染證明](render-proof.json)
 
