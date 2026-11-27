@@ -3,20 +3,22 @@
 ## 模型預覽
 
 
-| 新彩色斜前 | 新彩色近來源低視角 | 新彩色正面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色斜前](appearance/front.png) | ![彩色近來源低視角](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色背面（同材質延伸推估） | 新彩色上視（屋頂未知中性） | 彩色下載 |
-| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) |
+| [![彩色斜前](display/front-640.webp)](display/front.webp)<br>彩色斜前 | [![彩色近來源角度](display/source-angle-640.webp)](display/source-angle.webp)<br>彩色近來源角度 | [![彩色正面](display/elevation-640.webp)](display/elevation.webp)<br>彩色正面 |
+| [![彩色背面（牆色為延伸推估）](display/rear-640.webp)](display/rear.webp)<br>彩色背面（牆色為延伸推估） | [![彩色左側](display/left-640.webp)](display/left.webp)<br>彩色左側 | [![彩色右側](display/right-640.webp)](display/right.webp)<br>彩色右側 |
+| [![彩色俯視（屋頂保留中性色）](display/top-640.webp)](display/top.webp)<br>彩色俯視（屋頂保留中性色） | &nbsp; | &nbsp; |
+
+點縮圖可開啟無失真原尺寸 WebP。七個視角均核對現行彩色模型；側背牆與棚架梁頂沿用同構件推估；未知的水平屋面與混合面仍為中性。
 
 ### 側背外牆延續補色（保留幾何並修正8面舊誤彩）
 
 依校方無障礙地圖國鼎圖書館實照：淺灰雙翼正面、灰褐中央柱面、暗藍灰窗帶、深灰既有框架、灰粉褐低弧入口與棕褐細簷。本版將原淺灰翼牆延伸至既有側背外殼、灰褐延伸至圓柱外向表皮，並將原深灰簷口延伸至同一簷板的垂直邊，合計254個原中性三角面。另修正8個被舊棚架中心點規則誤染深灰的後牆三角面，避免殘留假的斜色界；其餘原彩面保留。這是同建物材料連續性推估，不是背面照片逐面認證。水平屋頂、底座、內向布林接縫及無可靠材料界線的混合面保留中性；淡粉米入口小板仍省略，不切新面、造框或新增背窗。
 
 
-補充[左側](appearance/left.png)、[右側](appearance/right.png)及[同相機對照](appearance-review-v2/comparison.png)：上排斜前、下排斜後，左原版、右新版，圖內無文字。
+[舊版 v2 同相機配色審核](appearance-review-v2/comparison.png)只供歷史對照，不是上方 v3 的現行展示。
 
-原三圖、原 STL／OBJ／scene.blend／幾何尺寸及首頁／校級選圖均不變；照片拍攝日未知，不移用其他Commons檔EXIF日期，不稱2026現況。詳[配色來源與重建限制](APPEARANCE.md)。
+原三張中性幾何驗證圖、原 STL／OBJ／scene.blend 及尺寸不改；校級與校區選圖保留斜前角度。原 STL 不帶色。照片拍攝日未知，不移用其他Commons檔EXIF日期，不稱2026現況。詳[配色來源與重建限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 105 × 145.8 mm。
 
@@ -59,12 +61,12 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 ## 原建築設計者
 黃祖權／中華建築師事務所。建築學會作品表列1998年，校方另載1999年落成，日期用途不同。
 
-## 檔案下載與實際模型預覽
+## 檔案下載與驗證
 
-[STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [中性 STL](model.stl) · [中性 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json) · [渲染對照](display/render-proof.json) · [展示校驗](display/SHA256SUMS)
 
 
-以上皆由交付STL渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+上方七視角由現行 v3 彩色模型渲染。背側形狀為簡化，牆色僅為延伸推估，不代表同視角實景。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 
