@@ -4,24 +4,26 @@
 
 ### 照片近似彩色預覽
 
-依校方校友通訊綜教館外照：灰綠圓角梯核、淡鮭粉灰前翼、灰綠入口柱、淺灰既有框與暗灰綠窗背。本次僅對原中性梯核外側／圓角前緣、懸出前翼短回折與薄簷側緣延伸同構件材料，屬近似推定；未知主體側後／屋頂中性。官方照片已證實內院紅磚與粉灰外翼分區，但原模型後深度為實心簡化塊，缺少對應內院幾何，因此不能把大背面認作實測外牆或全部改成任一顏色。這是限域補色，不是全館外觀補色完成。
+依校方校友通訊綜教館外照：灰綠圓角梯核、淡鮭粉灰前翼、灰綠入口柱、淺灰既有框與暗灰綠窗背。現行彩色版僅對原中性梯核外側／圓角前緣、懸出前翼短回折與薄簷側緣延伸同構件材料，屬近似推定；未知主體側後／屋頂中性。官方照片已證實內院紅磚與粉灰外翼分區，但原模型後深度為實心簡化塊，缺少對應內院幾何，因此不能把大背面認作實測外牆或全部改成任一顏色。這是限域補色，不是全館外觀補色完成。
 
-| 新彩色斜前 | 新彩色近來源角度 | 新彩色正面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色斜前](appearance/front.png) | ![彩色近來源角度](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色背面（未知中性） | 新彩色上視（未知中性） | 彩色下載 |
-| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+| [![彩色斜前](display/front-640.webp)](display/front.webp)<br>彩色斜前 | [![彩色近來源角度](display/source-angle-640.webp)](display/source-angle.webp)<br>彩色近來源角度 | [![彩色正面](display/elevation-640.webp)](display/elevation.webp)<br>彩色正面 |
+| [![彩色背面（簡化中性）](display/rear-640.webp)](display/rear.webp)<br>彩色背面（簡化中性） | [![彩色左側](display/left-640.webp)](display/left.webp)<br>彩色左側 | [![彩色右側](display/right-640.webp)](display/right.webp)<br>彩色右側 |
+| [![彩色俯視（屋頂保留中性色）](display/top-640.webp)](display/top.webp)<br>彩色俯視（屋頂保留中性色） | &nbsp; | &nbsp; |
 
-補充[左側](appearance/left.png)、[右側](appearance/right.png)及[同相機原新對照](appearance-review-v2/comparison.png)；對照圖左為原版、右為本次限域補色，圖片內沒有文字。
+點縮圖可開啟無失真原尺寸 WebP。七個視角均核對現行彩色模型；未知側後與屋頂保持中性。
 
-原三張預覽、STL／OBJ／scene.blend、尺寸和首頁／校級代表圖均保留不變。照片日期未知，不稱1985原始塗裝或2026現況；詳[配色證據與限制](APPEARANCE.md)。
+審核用的[同相機原新對照](appearance-review-v2/comparison.png)；對照圖左為原版、右為本次限域補色，圖片內沒有文字。
+
+原三張中性幾何驗證圖、STL／OBJ／scene.blend、尺寸與首頁代表圖均不改；校級及校區展示保留原角度。照片日期未知，不稱1985原始塗裝或2026現況；詳[配色證據與限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 100 × 70.8 mm。
 
 ## 保留的識別特徵
 - 左側平整樓梯核心及圓角外緣
 - 上層懸出教學翼、雙高柱入口與內縮廊道
-- 長向橫帶窗、入口階梯与高低屋面
+- 長向橫帶窗、入口階梯與高低屋面
 
 ## 證據與簡化
 - 校方與Commons為不同斜正面，主要入口輪廓可核；右端部分被樹遮，背面與全深度未確定。
@@ -54,9 +56,9 @@
 
 SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研究中的一件，不代表全校完成。
 
-## 檔案下載與實際模型預覽
+## 檔案下載與驗證
 
-[STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [中性 STL](model.stl) · [中性 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json) · [渲染對照](display/render-proof.json) · [展示校驗](display/SHA256SUMS)
 
 
 以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
