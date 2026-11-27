@@ -36,4 +36,4 @@ Blender 4.3.2：`blender -b -t 1 --python-exit-code 1 -P build_appearance.py`。
 
 原估計尺寸、局部支撐／橋接、窗簷、內轉角廊帶及衛星碟支座風險全部仍成立。這不是結構、防水或免支撐認證，未做實體試印；單色 STL 不攜帶顏色，3MF 材質顯示依軟體支援。
 
-本版本是本機待發布包，尚未上傳或遠端驗證。校級 SHA256SUMS 未改，須在之後獲准發布時統一合併。舊 appearance-review 保留為 v1 歷史，本次以 appearance-review-v2 與新 appearance-freeze 為準。
+本版已納入公開模型包，原顏色、尺寸與幾何保留。見[發布當時審核紀錄](https://github.com/hplin50643/taiwan-buildings-3d/tree/06730e10be4e232ff1d3c3b878802952a1da2440/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-jian-xiong-science4/appearance-review-v2)及[歷史校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/06730e10be4e232ff1d3c3b878802952a1da2440/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-jian-xiong-science4/appearance-freeze.json)。現行七張展示見[模型 README](README.md#模型預覽)與[WebP 校驗](display/webp-proof.json)，重繪 PNG 在隔離目錄暫存使用。

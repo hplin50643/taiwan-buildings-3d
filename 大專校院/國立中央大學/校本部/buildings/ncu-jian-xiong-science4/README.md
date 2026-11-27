@@ -2,23 +2,29 @@
 
 ## 模型預覽
 
-| 新彩色湖側斜視 | 新彩色低角度 | 新彩色立面 |
-| :---: | :---: | :---: |
-| ![彩色湖側](appearance/front.png) | ![彩色低角度](appearance/source-angle.png) | ![彩色立面](appearance/elevation.png) |
-| 新彩色背面 | 新彩色上視 | 彩色下載 |
-| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+七張縮圖均為本版（側背材料延續補色）彩色模型。點圖可開啟 900 × 800 無失真 WebP。
 
-
-| v2 左側 | v2 右側 | 原版比較 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![左側](appearance/left.png) | ![右側](appearance/right.png) | [原湖側](appearance-review-v2/original-front.png) · [原背側](appearance-review-v2/original-rear.png) |
+| [![湖側斜視](display/front-640.webp)](display/front.webp) | [![低角度](display/source-angle-640.webp)](display/source-angle.webp) | [![正立面](display/elevation-640.webp)](display/elevation.webp) |
+| 湖側斜視 | 低角度 | 正立面 |
+| [![背面斜視](display/rear-640.webp)](display/rear.webp) | [![俯視](display/top-640.webp)](display/top.webp) | [![左側](display/left-640.webp)](display/left.webp) |
+| 背面斜視 | 俯視 | 左側 |
+| [![右側](display/right-640.webp)](display/right.webp) |  |  |
+| 右側 |  |  |
+
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [現行圖檔與像素校驗](display/webp-proof.json)
+
+[WebP 檢查程式](display/check-webp.py)可核對現行圖檔；選用的重繪比對須在獨立目錄執行 Blender，再以 `--replay-root` 指向該目錄。PNG 只作為重繪暫存輸出。
 
 ### 照片近似彩色預覽
 
 依天文所官方湖側實景，既有兩翼柱梁與端核淺灰米、窗背暗灰綠、弧形廊帶暗凹與淺色樓板、原加厚衛星碟灰金屬近似。v2 將原完整側背外牆、端核側回折及屋頂服務箱垂直面共 186 個原中性面，延伸既有淺灰米材料，明示為同棟材料連續推估。平屋頂仍中性；粉色窗下間板因原面界線不足省略，不切新面，不新增窗。
 
 
-原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變；詳[來源與重建限制](APPEARANCE.md)。
+詳[來源與重建限制](APPEARANCE.md)。原尺寸、STL、OBJ、Blender、幾何預覽與首頁代表圖不變，校區與學校頁改用同一張最新版正面縮圖。第一版審核保留作歷史。第二版的[發布校驗紀錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/06730e10be4e232ff1d3c3b878802952a1da2440/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-jian-xiong-science4/appearance-freeze.json)對應當時的 PNG 和說明檔；現行預覽以[WebP 像素校驗](display/webp-proof.json)為準。
+
+兩張[原版同相機比較](https://github.com/hplin50643/taiwan-buildings-3d/tree/06730e10be4e232ff1d3c3b878802952a1da2440/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-jian-xiong-science4/appearance-review-v2)留在歷史審核，不列入現行圖表。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 145 × 127.7 mm。
 
