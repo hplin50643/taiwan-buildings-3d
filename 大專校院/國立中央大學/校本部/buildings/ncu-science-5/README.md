@@ -2,19 +2,20 @@
 
 ## 模型預覽
 
-| 新彩色內院斜視 | 新彩色低角度 | 新彩色院側立面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色斜視](appearance/front.png) | ![彩色低角度](appearance/source-angle.png) | ![彩色立面](appearance/elevation.png) |
-| 新彩色外背 | 新彩色上視 | 彩色下載 |
-| ![彩色外背](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+| [![彩色內院斜視](display/front-640.webp)](display/front.webp)<br>彩色內院斜視 | [![彩色低角度](display/source-angle-640.webp)](display/source-angle.webp)<br>彩色低角度 | [![彩色院側立面](display/elevation-640.webp)](display/elevation.webp)<br>彩色院側立面 |
+| [![彩色外背（材色推估）](display/rear-640.webp)](display/rear.webp)<br>彩色外背（材色推估） | [![彩色左側](display/left-640.webp)](display/left.webp)<br>彩色左側 | [![彩色右側](display/right-640.webp)](display/right.webp)<br>彩色右側 |
+| [![彩色俯視（屋頂保留中性色）](display/top-640.webp)](display/top.webp)<br>彩色俯視（屋頂保留中性色） | &nbsp; | &nbsp; |
 
+點縮圖可開啟無失真原尺寸 WebP。七個視角均核對現行彩色模型；側背白灰為同構件材料推估，沒有同角度照片。
 
 ### 照片近似彩色預覽
 
-依校方與Commons內院實照：原兩翼白灰、窗背青灰綠、下遮屏灰粉褐、轉角陽台米白；屏後牆與下柱不整體染粉。本輪在原彩色上補 48 個原中性面：完整側背與高端牆支持面延續原白灰，屬同構件材料連續性推估，沒有同角度背側實照。右翼前端疑有下層混材但原網格無完整界線，整面仍中性；屋頂、底座、窗洞回折也不擴染。不增黃色面板或細構件。
+依校方與Commons內院實照：原兩翼白灰、窗背青灰綠、下遮屏灰粉褐、轉角陽台米白；屏後牆與下柱不整體染粉。既有彩色版補了 48 個原中性面：完整側背與高端牆支持面延續原白灰，屬同構件材料連續性推估，沒有同角度背側實照。右翼前端疑有下層混材但原網格無完整界線，整面仍中性；屋頂、底座、窗洞回折也不擴染。不增黃色面板或細構件。
 
 
-原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變；詳[來源與重建限制](APPEARANCE.md)。
+原中性列印 QA、幾何、尺寸、STL／OBJ／Blender 與首頁代表圖不變；詳[來源與重建限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 144 × 108 mm。
 
@@ -24,8 +25,8 @@
 - 內角分層小陽台、左翼高女兒牆開孔及直向框架
 
 ## 證據與簡化
-- 兩張實照皆從內院看雙翼，並非完整外側四向照片；外側背面素面。
-- 翼厚、院深、層數節奏与陽台量測缺精確資料，按可辨識層次近似。
+- 兩張實照皆從內院看雙翼，並非完整外側四向照片；外側背面保持簡化，沒有模型與實景的逐面對照。
+- 翼厚、院深、層數節奏與陽台量測缺精確資料，按可辨識層次近似。
 - 遮陽壁、陽台欄板、窗框加厚；不仿造看不清的機電與精細欄杆。
 - 來源2013與校方拍年不明照片，只保留主要量體，不聲稱2026測繪現況。
 
@@ -54,9 +55,9 @@
 
 SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研究中的一件，不代表全校完成。
 
-## 檔案下載與實際模型預覽
+## 檔案下載與驗證
 
-[STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [中性 STL](model.stl) · [中性 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json) · [渲染對照](display/render-proof.json) · [展示校驗](display/SHA256SUMS)
 
 
 以上是實際彩色模型渲染。rear 的完整側背外牆採同構件白灰延續推估，保留原素面幾何，不代表同角度實景或查證現況。相機視角不是精確地理方位。
@@ -69,6 +70,6 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 
 ## 側背補色審核（color-v2）
 
-[左側](appearance/left.png) · [右側](appearance/right.png) · [同鏡位原正面](appearance-review-v2/original-front.png) · [同鏡位原背面](appearance-review-v2/original-rear.png) · [完整材料／幾何／邊界審核](appearance-review-v2/color-continuity-review.json)
+[同鏡位原正面](appearance-review-v2/original-front.png) · [同鏡位原背面](appearance-review-v2/original-rear.png) · [完整材料／幾何／邊界審核](appearance-review-v2/color-continuity-review.json)
 
-原尺寸、1509 頂點／3246 三角面、transform、所有已彩面與每個材料 RGBA／roughness 不變。原三張 previews、STL／OBJ／scene、建模腳本、原幾何 QA 與首頁／校級代表圖均不替換。新七圖為 Cycles CPU、96 samples、900 × 800、單執行緒、無降噪；兩張原版對照僅恢復原面材料，使用相同相機與光照。仍須檢查支撐與橋接，尚未實體試印。
+原尺寸、1509 頂點／3246 三角面、transform、所有已彩面與每個材料 RGBA／roughness 不變。原三張 previews、STL／OBJ／scene、建模腳本、原幾何 QA 與首頁代表圖均不替換；校級卡片保留原角度。本頁七個視角以 Cycles CPU、96 samples、900 × 800、單執行緒、無降噪；兩張原版對照僅恢復原面材料，使用相同相機與光照。仍須檢查支撐與橋接，尚未實體試印。

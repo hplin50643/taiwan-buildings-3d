@@ -11,6 +11,8 @@
 - [學系地圖](https://in.ncu.edu.tw/~ncu7141/)及其[科五圖示](https://in.ncu.edu.tw/~ncu7141/image/new_map/science5.png)已讀並親看；圖示是簡化插畫，只用辨識 L 形建物與所在，不作背面材色、窗數、尺寸或現況證據。
 - 2015 新生導覽的科五頁可讀，但圖片直接下載 HTTP 403，未改路繞過，亦未計為本輪實看照片。防災 PDF、測量與現地調查本輪未取得。不聲稱 2026 完整現況、歷史色復原、校色量測或官方色票。
 
+- 補查校方[校園災害防救計畫第 2-13 頁（PDF 第 18 頁）](https://military.ncu.edu.tw/download/112_0008_%E6%A0%A1%E5%9C%92%E7%81%BD%E5%AE%B3%E9%98%B2%E6%95%91%E8%A8%88%E7%95%AB%E6%9B%B8-%E6%9C%AC%E6%96%87-112.3.28.pdf#page=18)的科五館照片：同為內院方向，可見白灰雙翼、灰褐遮屏與下方不同色帶。它不提供外背或足以對位到模型右翼端的材料分界；所以不改現行配色，不把圖冊調查日期當拍攝日期。
+
 公開包只含文字來源 URL／用途／限制與雜湊，不含來源照片、插畫、PDF、HTML 或本機參考路徑。詳[來源記錄](appearance-review-v2/source-register.json)。
 
 ## 外牆與人工切面判別
@@ -34,6 +36,10 @@ Blender 4.3.2，新 build_appearance.py 與原 scene.blend、model.stl 放同一
 
 新七張 900 × 800 圖採 Cycles CPU、96 samples、seed 0、單執行緒、無降噪。兩張原版對照從新版場景只恢復原材料分派，相機位置、旋轉、正交比例、光照及輸出設定數值相同。PNG 去除文字／日期／路徑 metadata；新 BLEND 無來源影像或絕對渲染路徑。3MF 沿原三角面指定 base material，不拆面或重取樣。
 
-BLEND 原新版逐點逐面、物件 transform／尺寸、材值與原彩面不變；3MF 逐點逐面／palette 與 BLEND 一致；獨立乾淨目錄重建作語義與 3MF bytes 比對，見[新版審核](appearance-review-v2/color-continuity-review.json)。原 appearance-review 保留為 v1 歷史，不覆寫原審核；本輪以 appearance-review-v2 與新版 freeze 為準。
+BLEND 原新版逐點逐面、物件 transform／尺寸、材值與原彩面不變；3MF 逐點逐面／palette 與 BLEND 一致；獨立乾淨目錄重建作語義與 3MF bytes 比對，見[新版審核](appearance-review-v2/color-continuity-review.json)。原 appearance-review 保留為 v1 歷史，不覆寫原審核。配色範圍沿用 [color-v2 原發布凍結](https://github.com/hplin50643/taiwan-buildings-3d/tree/21ed5fc4947d908a7a19c337e8b1442d1ba592ee/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-science-5/appearance-freeze.json)，現行公開圖檔與像素校驗見 [WebP 渲染對照](display/render-proof.json)。
 
 幾何 QA 與列印能力分開：本次僅改材料，不重認證全域壁厚、正式切片或現場尺寸。突出陽台、廊板、架空遮屏、細柱與女兒牆孔上緣仍須支撐／橋接／可移除性檢查。尚未實體試印，不保證免支撐或可印；STL 無色正常，3MF 顯色依軟體支援，不含特定 AMS 對應。
+
+以 Python（Pillow）和 Blender 4.3.2 執行 `python verify_display.py --rebuild` 可在暫存重繪七張；重新生成的 PNG 以解碼像素核對，不改動現行模型、圖片或校驗檔。
+
+技術審核中的 PNG 檔名與雜湊保留當時紀錄：[v1 固定發布](https://github.com/hplin50643/taiwan-buildings-3d/tree/9c2c285f236f8c36f0cfa787893af7c6bd65961f/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-science-5/appearance)及 [v2 固定發布](https://github.com/hplin50643/taiwan-buildings-3d/tree/21ed5fc4947d908a7a19c337e8b1442d1ba592ee/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-science-5/appearance)。原色同相機比較與原三張中性幾何驗證圖仍留在現行套件，不列入最新彩色圖廊。
