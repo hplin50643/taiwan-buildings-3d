@@ -35,6 +35,8 @@
 
 產生7角度900×800實網格Cycles圖，CPU、每程序1執行緒、96 samples、denoise=False，沒有字物件、stamp及PNG文字metadata。相機名稱不是地理方位。原版與新版兩組同相機對照見[比較圖](appearance-review-v2/comparison.png)，每列左為原版、右為本版，圖內無文字。
 
-逐點／逐面／逐材質、原材料值及乾淨重建見appearance-review-v2。appearance-review是v1歷史，不代表目前材料與渲染；本版以appearance-review-v2與appearance-freeze.json為準。原代表圖與原三張預覽保留不變。
+逐點／逐面／逐材質、原材料值及乾淨重建見appearance-review-v2。appearance-review是v1歷史，不代表目前材料與渲染；本版的材質證據見 appearance-review-v2 與[原發布凍結](https://github.com/hplin50643/taiwan-buildings-3d/tree/dc7e1be8309c5aeb51a6a8395e935461ecf122b1/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-humanities-social-sciences/appearance-freeze.json)。原始中性列印 QA 保留；彩色展示以[現行無失真 WebP 與像素校驗](display/render-proof.json)為準。原彩色 PNG 已由 WebP 取代，可在[固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/dc7e1be8309c5aeb51a6a8395e935461ecf122b1/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-humanities-social-sciences/appearance)查閱。
 
 來源照片、PDF和私人參考檔不隨公開包；模型渲染不是現場照片。
+
+如需重驗彩色渲染，請使用 Python（Pillow）與 Blender 4.3.2 執行 `python verify_display.py --rebuild`。PNG 只在暫存目錄產生；不改動現行模型或校驗檔。

@@ -9,7 +9,6 @@
     "appearance.blend": "7c20e0e94e1ab040dd877b2f4e34c67e3a951a9c186be882640ddf245f97bca8",
     "appearance.3mf": "7ee33ff0c303fb8257ea8889292c969525154eda32520d72a507c75a42e332a4",
     "appearance-materials.json": "6540b86dd6dd4d2823500828e0dc6bc99971693347b381079cc1884af86df242",
-    "appearance-freeze.json": "f15d8d255d7083218bd0ab40572ef2abd6e568be48f09c5f8ec2aa5954822bad",
     "build_appearance.py": "a69b5c019e1f9bcf9580be00f2c2cc59ac08f7309a732ad77310e64299674aa0",
     "model.stl": "39c715317387bc69411f4eaa8aaf4e58f473d460179ce14e6453414de56e97e9",
     "scene.blend": "b7efd8aa94212ecdfc72d0640a46bb760f7e2c12d13d75426c90a8dd6da895c6"
@@ -27,7 +26,17 @@
       "native_bytes": 854145,
       "webp": "front.webp",
       "webp_bytes": 239768,
-      "webp_sha256": "62ac471896bf96a875dce781ecea55c29b1dddc665fefab386cf3961d6306977"
+      "webp_sha256": "62ac471896bf96a875dce781ecea55c29b1dddc665fefab386cf3961d6306977",
+      "thumbnail": {
+        "path": "front-640.webp",
+        "sha256": "4bd4afcf7748df05a8c03cbbfa2065dd63c7d0299b2a9bc7b6179e940adb75c3",
+        "size": [
+          640,
+          569
+        ],
+        "bytes": 9926,
+        "encoding": "existing card"
+      }
     },
     {
       "source": "appearance/source-angle.png",
@@ -41,7 +50,17 @@
       "native_bytes": 865465,
       "webp": "source-angle.webp",
       "webp_bytes": 224474,
-      "webp_sha256": "b36aaf7db55c074dfb6295077a7d4a88d0a3ef67b636ae535ee229abec5c1c82"
+      "webp_sha256": "b36aaf7db55c074dfb6295077a7d4a88d0a3ef67b636ae535ee229abec5c1c82",
+      "thumbnail": {
+        "path": "source-angle-640.webp",
+        "sha256": "2953dc331ef667e2ac244aa8ebaeeb073e508ee33413c17c57c370776c97c562",
+        "size": [
+          640,
+          569
+        ],
+        "bytes": 10930,
+        "encoding": "WebP quality 92 with exact resized alpha"
+      }
     },
     {
       "source": "appearance/elevation.png",
@@ -55,7 +74,17 @@
       "native_bytes": 861467,
       "webp": "elevation.webp",
       "webp_bytes": 244208,
-      "webp_sha256": "3df51db96c6361e5e1eea1dd0d83165b32a9d1e8a91d3f649a457e6aa8cfb536"
+      "webp_sha256": "3df51db96c6361e5e1eea1dd0d83165b32a9d1e8a91d3f649a457e6aa8cfb536",
+      "thumbnail": {
+        "path": "elevation-640.webp",
+        "sha256": "b77db7e179f8422a3b9810ece2a6380ce2b88eaac7ace2b52a3201aa9bc0403b",
+        "size": [
+          640,
+          569
+        ],
+        "bytes": 7940,
+        "encoding": "WebP quality 92 with exact resized alpha"
+      }
     },
     {
       "source": "appearance/rear.png",
@@ -69,7 +98,17 @@
       "native_bytes": 849867,
       "webp": "rear.webp",
       "webp_bytes": 239476,
-      "webp_sha256": "60ee7961a56cce99df3be42587d5fc3bb060988fc7e033821b8d7e2fec17039c"
+      "webp_sha256": "60ee7961a56cce99df3be42587d5fc3bb060988fc7e033821b8d7e2fec17039c",
+      "thumbnail": {
+        "path": "rear-640.webp",
+        "sha256": "12631a72621e4f3c30d79382d19e758da5f4013a38803b13edc01fcf4c47c14f",
+        "size": [
+          640,
+          569
+        ],
+        "bytes": 8358,
+        "encoding": "WebP quality 92 with exact resized alpha"
+      }
     },
     {
       "source": "appearance/left.png",
@@ -83,7 +122,17 @@
       "native_bytes": 822953,
       "webp": "left.webp",
       "webp_bytes": 281724,
-      "webp_sha256": "93f6e9707b16471ab9f38c2314b6d4a45efe42fa2c6e3860d99d1133009473c2"
+      "webp_sha256": "93f6e9707b16471ab9f38c2314b6d4a45efe42fa2c6e3860d99d1133009473c2",
+      "thumbnail": {
+        "path": "left-640.webp",
+        "sha256": "550f40c3d235427b29548aaf2706532b2b162a3eca6a701bc65a94253b9a5a47",
+        "size": [
+          640,
+          569
+        ],
+        "bytes": 3940,
+        "encoding": "WebP quality 92 with exact resized alpha"
+      }
     },
     {
       "source": "appearance/right.png",
@@ -97,7 +146,17 @@
       "native_bytes": 972219,
       "webp": "right.webp",
       "webp_bytes": 416776,
-      "webp_sha256": "a643a03c806e3891cac9ebd35e08173bfc6df412ea22aef55a9bf601afea7357"
+      "webp_sha256": "a643a03c806e3891cac9ebd35e08173bfc6df412ea22aef55a9bf601afea7357",
+      "thumbnail": {
+        "path": "right-640.webp",
+        "sha256": "d217c71602c23207f0188ccdf273de7433c1d547284ca3339bd27a14ee9c4c7f",
+        "size": [
+          640,
+          569
+        ],
+        "bytes": 9854,
+        "encoding": "WebP quality 92 with exact resized alpha"
+      }
     },
     {
       "source": "appearance/top.png",
@@ -111,12 +170,26 @@
       "native_bytes": 964172,
       "webp": "top.webp",
       "webp_bytes": 438558,
-      "webp_sha256": "8fa08f27f6659425cc944a2c7907066969fdbe80998eff3ea6c488b31e081e91"
+      "webp_sha256": "8fa08f27f6659425cc944a2c7907066969fdbe80998eff3ea6c488b31e081e91",
+      "thumbnail": {
+        "path": "top-640.webp",
+        "sha256": "4f213191cf2500087b628bb234750494eacf0f1005ef3083ed211f4795f055e3",
+        "size": [
+          640,
+          569
+        ],
+        "bytes": 8624,
+        "encoding": "WebP quality 92 with exact resized alpha"
+      }
     }
   ],
   "card": {
     "old_bytes": 854145,
     "new_bytes": 9926,
     "sha256": "4bd4afcf7748df05a8c03cbbfa2065dd63c7d0299b2a9bc7b6179e940adb75c3"
-  }
+  },
+  "source_archive_commit": "dc7e1be8309c5aeb51a6a8395e935461ecf122b1",
+  "source_archive_url": "https://github.com/hplin50643/taiwan-buildings-3d/tree/dc7e1be8309c5aeb51a6a8395e935461ecf122b1/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-humanities-social-sciences",
+  "current_proof": "Full-size lossless WebP is the active reference. PNG hashes and archived freeze identify historical render evidence; regenerated PNG is temporary and compared as decoded RGBA.",
+  "historical_freeze_sha256": "f15d8d255d7083218bd0ab40572ef2abd6e568be48f09c5f8ec2aa5954822bad"
 }

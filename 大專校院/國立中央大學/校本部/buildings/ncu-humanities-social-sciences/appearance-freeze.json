@@ -8,53 +8,13 @@
   "files": [
     {
       "path": "APPEARANCE.md",
-      "sha256": "e2f37abcd814d71df6cfdad44904f8d888f8c2756990f8ccf2a98e0b935bf79b",
-      "bytes": 4158
+      "sha256": "5eb9e0c65538af878af4cf8c6a44dbac62b3ce833f77a4fde85221c5726f23f3",
+      "bytes": 5041
     },
     {
       "path": "README.md",
-      "sha256": "c784091dc197a35071e38cb03703ffab876241e4520c535dde5a5e11d3f9f843",
-      "bytes": 5576
-    },
-    {
-      "path": "README.zh-TW.md",
-      "sha256": "c784091dc197a35071e38cb03703ffab876241e4520c535dde5a5e11d3f9f843",
-      "bytes": 5576
-    },
-    {
-      "path": "appearance/elevation.png",
-      "sha256": "24a4568fc42a7cd6f50f33ce359a3bf601bc7721dfcdfe1133dbbaef1cd43ad8",
-      "bytes": 861467
-    },
-    {
-      "path": "appearance/front.png",
-      "sha256": "b362bd3b0650a64fe3ce4f3c48bef0cef8362b126676fecdf88efbf0b8ef699b",
-      "bytes": 854145
-    },
-    {
-      "path": "appearance/left.png",
-      "sha256": "beae8a61fada41e0db24d13ab3fd94baa6a33a29d71e17ed7f95599759d52f50",
-      "bytes": 822953
-    },
-    {
-      "path": "appearance/rear.png",
-      "sha256": "7e19c51264784b0fa3dc4fa867d52ba9020c949c94bbf6ad34eb74657697fe6a",
-      "bytes": 849867
-    },
-    {
-      "path": "appearance/right.png",
-      "sha256": "aaef75d322aec04c567274c1d9173f817c31f93c6d525b561e43d277eb41cf4f",
-      "bytes": 972219
-    },
-    {
-      "path": "appearance/source-angle.png",
-      "sha256": "3f12b5ec85e8c29dea8096792c744c867652fa1dd6e8f198402df57a6dd871b7",
-      "bytes": 865465
-    },
-    {
-      "path": "appearance/top.png",
-      "sha256": "9eb6bf632bfe5527de06fba151edd43471970757575ea7246e34ed0dc6782fa0",
-      "bytes": 964172
+      "sha256": "c8803bc89639b61acf188c677017a159ff6ef50e758df9d72ddb78d22f34b0e6",
+      "bytes": 6083
     },
     {
       "path": "appearance-materials.json",
@@ -125,6 +85,21 @@
       "path": "build_appearance.py",
       "sha256": "a69b5c019e1f9bcf9580be00f2c2cc59ac08f7309a732ad77310e64299674aa0",
       "bytes": 12559
+    },
+    {
+      "path": "display/render-proof.json",
+      "sha256": "e0e5450f33f9dd1ab8bb0c00faa21deb7eab6026a3e51444d80e3d7b37048c66",
+      "bytes": 7511
+    },
+    {
+      "path": "verify_display.py",
+      "sha256": "e85666f4374579d4f4a2d24671649a8fb6735de54d6fdcc2cdc5e19bdcf8f8dc",
+      "bytes": 2325
     }
-  ]
+  ],
+  "historical_freeze": {
+    "commit": "dc7e1be8309c5aeb51a6a8395e935461ecf122b1",
+    "url": "https://github.com/hplin50643/taiwan-buildings-3d/tree/dc7e1be8309c5aeb51a6a8395e935461ecf122b1/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-humanities-social-sciences/appearance-freeze.json",
+    "sha256": "f15d8d255d7083218bd0ab40572ef2abd6e568be48f09c5f8ec2aa5954822bad"
+  }
 }
