@@ -2,19 +2,20 @@
 
 ## 模型預覽
 
-| 新彩色斜視 | 新彩色低角度 | 新彩色正面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色斜視](appearance/front.png) | ![彩色低角度](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色背面 | 新彩色上視 | 彩色下載 |
-| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+| [![彩色斜前](display/front-640.webp)](display/front.webp)<br>彩色斜前 | [![彩色近來源角度](display/source-angle-640.webp)](display/source-angle.webp)<br>彩色近來源角度 | [![彩色正面](display/elevation-640.webp)](display/elevation.webp)<br>彩色正面 |
+| [![彩色背面（材色推估）](display/rear-640.webp)](display/rear.webp)<br>彩色背面（材色推估） | [![彩色左側](display/left-640.webp)](display/left.webp)<br>彩色左側 | [![彩色右側](display/right-640.webp)](display/right.webp)<br>彩色右側 |
+| [![彩色俯視（屋頂保留中性色）](display/top-640.webp)](display/top.webp)<br>彩色俯視（屋頂保留中性色） | &nbsp; | &nbsp; |
 
+點縮圖可開啟無失真原尺寸 WebP。七個視角均核對現行彩色模型；屋頂、底座、樓板及未確認的窗凹保留中性色。
 
 ### 照片近似彩色預覽
 
 新讀完整正面實景與化學系官方入口照，確認原粉灰牆柱材料家族。本輪將 236 個原中性面補為同粉灰：包括完整左右外牆、後牆，以及有完整界線的既有窗洞回面。側背色彩為材料連續性推估，沒有同角度實景佐證；原背面仍為無窗素面。屋頂、樓板底／面及未定窗凹仍中性。灰綠水平細帶無原面界，省略不切面。
 
 
-原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變；詳[來源與重建限制](APPEARANCE.md)。
+原中性列印 QA、幾何、尺寸、STL／OBJ／Blender 與首頁代表圖不變；詳[來源與重建限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 104 × 66 mm。
 
@@ -50,13 +51,13 @@
 
 0.2 mm幾何截面共 330 層，全部閉合=True。另以1 mm間距檢查0.8 mm XY形態開運算薄特徵，0 層損失面積超過1%；尖角也會被計入，見 thin-feature-check.json。這不是全域壁厚保證，也不是正式切片或試印。
 
-底座平放。大挑空頂板、深凹口及廊道楼板必須評估支撐與可移除性。建議先以0.4 mm噴嘴、0.2 mm層高在實際切片軟體檢查外壁、橋接、支撐可移除性與底板附著，再決定列印設定。小窗框、曲面尖端與薄簷口可能不完整重現；不得將幾何通過寫成「免支撐、保證可印」。
+底座平放。大挑空頂板、深凹口及廊道樓板必須評估支撐與可移除性。建議先以0.4 mm噴嘴、0.2 mm層高在實際切片軟體檢查外壁、橋接、支撐可移除性與底板附著，再決定列印設定。小窗框、曲面尖端與薄簷口可能不完整重現；不得將幾何通過寫成「免支撐、保證可印」。
 
 SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研究中的一件，不代表全校完成。
 
-## 檔案下載與實際模型預覽
+## 檔案下載與驗證
 
-[STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [中性 STL](model.stl) · [中性 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json) · [渲染對照](display/render-proof.json) · [展示校驗](display/SHA256SUMS)
 
 
 以上是實際彩色模型渲染；rear 的完整側背牆採粉灰材料連續性推估，不代表同角度實景或已查證現況。相機視角不是精確地理方位。
@@ -69,6 +70,6 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 
 ## 側背補色審核（color-v2）
 
-[左側](appearance/left.png) · [右側](appearance/right.png) · [同鏡位原正面](appearance-review-v2/original-front.png) · [同鏡位原背面](appearance-review-v2/original-rear.png) · [材料／幾何／邊界審核](appearance-review-v2/color-continuity-review.json)
+[同鏡位原正面](appearance-review-v2/original-front.png) · [同鏡位原背面](appearance-review-v2/original-rear.png) · [材料／幾何／邊界審核](appearance-review-v2/color-continuity-review.json)
 
 原 934 頂點／1880 三角面、transform、150 × 104 × 66 mm 尺寸、全部已彩面與 RGBA／roughness 不變。五組原排氣柱不增細節；原 STL／OBJ／scene、預覽及幾何 QA 不替換。保留估計尺寸、深廊與懸板支撐／橋接評估、尚未實體試印等限制。

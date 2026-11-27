@@ -29,6 +29,8 @@ Blender 4.3.2，原 scene.blend、model.stl 與新版 build_appearance.py 放同
 
     blender -b -t 1 --python-exit-code 1 -P build_appearance.py
 
-新七視圖為 900 × 800、Cycles CPU、96 samples、seed 0、單執行緒、無降噪。兩張原版對照沿用新版同相機位置、旋轉、正交尺度與光照，只恢復原材料分派。PNG 移除文字／日期／路徑 metadata。3MF 原三角直接指定 base material、不切面。Blender／3MF 逐點逐面、材值、transform 與乾淨重建檢核見 [新版審核](appearance-review-v2/color-continuity-review.json)。舊 appearance-review 保留作 v1 歷史，以此版審核與 appearance-freeze.json 為目前外觀範圍。
+新七視圖為 900 × 800、Cycles CPU、96 samples、seed 0、單執行緒、無降噪。兩張原版對照沿用新版同相機位置、旋轉、正交尺度與光照，只恢復原材料分派。PNG 移除文字／日期／路徑 metadata。3MF 原三角直接指定 base material、不切面。Blender／3MF 逐點逐面、材值、transform 與乾淨重建檢核見 [新版審核](appearance-review-v2/color-continuity-review.json)。舊 appearance-review 保留作 v1 歷史。目前外觀範圍沿用 [color-v2 原發布凍結](https://github.com/hplin50643/taiwan-buildings-3d/tree/651140e5a9eb247f4783c4a298ed22888af091a3/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-science-3/appearance-freeze.json)；[現行展示與像素校驗](display/render-proof.json)使用無失真 WebP，原彩色 PNG 仍可在[固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/651140e5a9eb247f4783c4a298ed22888af091a3/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-science-3/appearance)查閱。
 
 原估計尺寸、XY 薄篩而非全域壁厚、深凹口／懸板／排氣帽蓋支撐與橋接評估等限制繼續有效；未試印，不保證免支撐或可印。STL 無色正常；3MF 顯色取決於軟體 base material 支援，沒有特定 AMS 設定。
+
+以 Python（Pillow）和 Blender 4.3.2 執行 `python verify_display.py --rebuild` 可在暫存重繪七張；重新生成的 PNG 以解碼像素核對，不改動現行模型、圖片或校驗檔。
