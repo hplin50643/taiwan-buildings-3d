@@ -10,12 +10,17 @@
 
 
 ## 模型預覽
-[五張 WebP 預覽與本版校驗](display/README.md)。
 
+五個角度皆是 2026-11-17 頂緣外弧連續補色版。點圖可開啟全尺寸無失真 WebP。
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 前廳有界配色<br>![前廳玻璃與銀灰框體有限配色](display/front.webp) | 後舞台與上層中性<br>![未建材料邊界的後舞台與上層保持中性](display/rear.webp) |  |
+| [![前廳斜視](display/front-640.webp)](display/front.webp) | [![後舞台斜視](display/rear-640.webp)](display/rear.webp) | [![前廳立面](display/elevation-640.webp)](display/elevation.webp) |
+| 前廳斜視 | 後舞台斜視 | 前廳立面 |
+| [![側視](display/side-640.webp)](display/side.webp) | [![頂視](display/top-640.webp)](display/top.webp) |  |
+| 側視 | 頂視 |  |
+
+[渲染與校驗紀錄](display/README.md) · [縮圖校驗](display/thumbnail-proof.json)
 
 ## 前廳玻璃與框體有限配色（2026-10-22，歷史範圍）
 
