@@ -37,6 +37,6 @@ Blender4.3.2，原scene.blend、model.stl與新版build_appearance.py同目錄�
 
 7張900×800 PNG：斜前、斜後、正立面、近來源、左、右、上視。均由原真實網格渲染，Cycles CPU、96samples、seed0、單執行緒、denoise=False，無文字物件、stamp或PNG文字metadata。相機名不是精確地理方位。兩張原版比較用完全相同相機、燈光、網格及材質，只把全部面材料指標還原；對照上排前、下排後，左原版右新版。
 
-BLEND原新版逐頂點、逐三角頂點順序、transform、尺寸、全部原彩面與材料值核對。3MF每點坐標、每面連接、三個材料指標、單位、build及調色盤逐項比對BLEND與原件。乾淨目錄重建3MF及materials JSON逐byte一致、BLEND語義一致。見[本次檢查](appearance-review-v2/)及appearance-freeze.json；原appearance-review是保留的v1歷史，不作新版渲染綁定。
+BLEND原新版逐頂點、逐三角頂點順序、transform、尺寸、全部原彩面與材料值核對。3MF每點坐標、每面連接、三個材料指標、單位、build及調色盤逐項比對BLEND與原件。乾淨目錄重建3MF及materials JSON逐byte一致、BLEND語義一致。見[發佈當時審核紀錄](https://github.com/hplin50643/taiwan-buildings-3d/tree/a717f32443ae98a10f6dd2c1fb79fe7125f88969/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-space-remote-sensing/appearance-review-v2)及[歷史校驗](https://github.com/hplin50643/taiwan-buildings-3d/blob/a717f32443ae98a10f6dd2c1fb79fe7125f88969/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-space-remote-sensing/appearance-freeze.json)。現行七張展示見[模型 README](README.md#模型預覽)與[WebP 校驗](display/webp-proof.json)，重繪 PNG 在隔離目錄暫存使用。
 
 原STL、OBJ、scene.blend、build_model.py、舊previews與幾何QA不改。原527層有效閉環／薄特徵證據仍是歷史幾何檢查；天線最頂弧緣的5個薄特徵警示保留，不代表完整壁厚、正式切片路徑或試印通過。懸碟、箱遮陽、門廊及粗樓梯需支撐評估；未試印，不保證免支撐或完整印出細弧緣。3MF使用base materials，未配置AMS或耗材映射。

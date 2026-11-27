@@ -2,21 +2,27 @@
 
 ## 模型預覽
 
-| 新彩色前院斜視 | 新彩色屋塔角度 | 新彩色正面 |
-| :---: | :---: | :---: |
-| ![彩色前院](appearance/front.png) | ![彩色屋塔](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色後向 | 新彩色上視 | 彩色下載 |
-| ![彩色後向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+七張縮圖均為本版（側背材料延續補色）彩色模型。點圖可開啟 900 × 800 無失真 WebP。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![前院斜視](display/front-640.webp)](display/front.webp) | [![屋塔角度](display/source-angle-640.webp)](display/source-angle.webp) | [![正面](display/elevation-640.webp)](display/elevation.webp) |
+| 前院斜視 | 屋塔角度 | 正面 |
+| [![後向斜視](display/rear-640.webp)](display/rear.webp) | [![俯視](display/top-640.webp)](display/top.webp) | [![左側](display/left-640.webp)](display/left.webp) |
+| 後向斜視 | 俯視 | 左側 |
+| [![右側](display/right-640.webp)](display/right.webp) |  |  |
+| 右側 |  |  |
+
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [現行圖檔與像素校驗](display/webp-proof.json)
 
 ### 側背材料延續補色
 
 本輪重新親看Commons 01前院與05屋塔原照及兩個來源頁：原前／院牆淺灰米、箱遮陽米灰、窗背灰藍綠、屋塔淡米白、外梯灰與碟近白。將32個原中性三角面補為同棟材料延續：主體側背牆及簷口垂直外緣淺灰米，屋塔和小屋側背淡米白。側背色是明示推估，不代表有完整四向實照；遮陽暗凹不是額外玻璃，屋面防水／鋪裝、底座、粗階梯與混合窗框凹面維持原狀。
 
 
-補充[左側](appearance/left.png)、[右側](appearance/right.png)與[同相機前後對照](appearance-review-v2/comparison.png)。對照上排前、下排後，左原版、右新版，圖內無字。
+[同相機前後對照](https://github.com/hplin50643/taiwan-buildings-3d/blob/a717f32443ae98a10f6dd2c1fb79fe7125f88969/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-space-remote-sensing/appearance-review-v2/comparison.png)屬歷史技術審核，不列入現行圖表。對照上排前、下排後，左原版、右新版。
 
-只原三層太空遙測館，不含二期；原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變。詳[來源與重建限制](APPEARANCE.md)。
+僅原三層太空遙測館，不含二期。原尺寸、STL、OBJ、Blender、幾何預覽與首頁代表圖不變，校區與學校頁改用同一張最新版正面縮圖。第一版審核保留作歷史。第二版的[發布校驗紀錄](https://github.com/hplin50643/taiwan-buildings-3d/blob/a717f32443ae98a10f6dd2c1fb79fe7125f88969/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-space-remote-sensing/appearance-freeze.json)對應當時的 PNG 和說明檔；現行預覽以[WebP 像素校驗](display/webp-proof.json)為準。詳[來源與重建限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 143 × 105.459 mm。
 

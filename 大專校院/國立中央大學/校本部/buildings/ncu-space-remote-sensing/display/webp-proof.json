@@ -1,0 +1,257 @@
+{
+  "source_commit": "a717f32443ae98a10f6dd2c1fb79fe7125f88969",
+  "previous_model_package": "https://github.com/hplin50643/taiwan-buildings-3d/tree/a717f32443ae98a10f6dd2c1fb79fe7125f88969/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-space-remote-sensing",
+  "source_revision": "color-v2-side-rear-continuity",
+  "current_native": {
+    "appearance.3mf": {
+      "git_sha": "abd41dd8eb15b8a96a217287fc4f5e69c7c0681d",
+      "sha256": "1d4ec9b8f8bcac79bef16e1d6419901eb7a11904f5124bb95102fc90f6554480"
+    },
+    "appearance.blend": {
+      "git_sha": "551d23854827e8433418f1be42665f9390be9cc3",
+      "sha256": "7e92e3f4494eed68daac39cae5c06c20b70aa21448fd9310c10105fba46d2f97"
+    },
+    "appearance-materials.json": {
+      "git_sha": "f266a92b38aee966e1a479ab742c38a70af6eeb6",
+      "sha256": "c22d7b9fc7e23a9d423e6bc09ee072ae8da399909d75e36266f8d07d078a6a96"
+    },
+    "scene.blend": {
+      "git_sha": "15b862b7e12a3195dbe84b6365fd6dbe6a9bc7a1",
+      "sha256": "a12aeabab4ec5a3937aaa13a6cdd592b9737c143167d2b121dc4f4487b1bf7d5"
+    },
+    "model.stl": {
+      "git_sha": "3fb97401d2f17a41d568660a1fd137b22b4c4e00",
+      "sha256": "f63e45ebb4476745c800c5447d291c8759988352446750d3c76225697f58bb06"
+    }
+  },
+  "encoding": {
+    "full": "lossless WebP, source RGBA-identical",
+    "thumbnail": "640 px, Lanczos, WebP Q92, alpha-identical"
+  },
+  "views": {
+    "front": {
+      "source": "appearance/front.png",
+      "bytes": 890166,
+      "sha256": "9e8db32bcd38845efc1103e5c921299a2577b24f18adef78205bb439a94d8fb4",
+      "git_sha": "147ac71cc50ea44ef2970d1bac2fcbbb4186277d",
+      "rgba_sha256": "be50e8b379fdedf56950470a415a06bf8b663efd18f6f45dc76974e993390387",
+      "full": {
+        "path": "display/front.webp",
+        "bytes": 273468,
+        "sha256": "85eef537cd79a931e3b0f8f50178d869e25badb73d895ddf565f9f90f0b7b85c",
+        "git_sha": "353315d892555587c1b1f61a7cbe8ab7a0c1c22e",
+        "dimensions": [
+          900,
+          800
+        ],
+        "rgba_sha256": "be50e8b379fdedf56950470a415a06bf8b663efd18f6f45dc76974e993390387"
+      },
+      "thumb": {
+        "path": "display/front-640.webp",
+        "bytes": 16254,
+        "sha256": "da7fd80ac73107c6fb519e0d69e22c73732d746178fc0b0bedc371a035944699",
+        "git_sha": "b6261a8549c33ee1b0c92d13b2fbd9143d59d332",
+        "dimensions": [
+          640,
+          569
+        ],
+        "rgba_sha256": "afa7590f5b7dd873e70dc4722a0ea08d59cfa1be9220a3ba63073b4a36298148",
+        "alpha_sha256": "38db28c359ba398cc20312153f23e1a4e6508cdc674c020af6ab635557b4d2d2",
+        "quality": 92,
+        "lossless": false
+      }
+    },
+    "source-angle": {
+      "source": "appearance/source-angle.png",
+      "bytes": 880058,
+      "sha256": "d6fdfec04377b1cb251876218c112bbf9c36d884aa9c9694cbe4b06b3a856a97",
+      "git_sha": "7ee869e93dde85e229dea542deb5ba7b278a6137",
+      "rgba_sha256": "83f29f81940d4687ffb3c4b17a80222b722a2c51263df1a757d27dd1b425fff0",
+      "full": {
+        "path": "display/source-angle.webp",
+        "bytes": 249384,
+        "sha256": "f145809ec0a0c31c6693f94f470daed705d4b21d8d1693b18dfe5188a642b9fe",
+        "git_sha": "2540f8ef1c32306b9711bd36b11e45672b526760",
+        "dimensions": [
+          900,
+          800
+        ],
+        "rgba_sha256": "83f29f81940d4687ffb3c4b17a80222b722a2c51263df1a757d27dd1b425fff0"
+      },
+      "thumb": {
+        "path": "display/source-angle-640.webp",
+        "bytes": 15472,
+        "sha256": "0a62a914ed8d05fec09608870537acc162563eb2af9dabf148183c6283493225",
+        "git_sha": "61c0a640f3ef126e25c4a4c019d3988ce5c14809",
+        "dimensions": [
+          640,
+          569
+        ],
+        "rgba_sha256": "ae162948a99a98db61f885b7de27a3fe5b5277bd3cf908e82f1b223ec57c37d7",
+        "alpha_sha256": "38db28c359ba398cc20312153f23e1a4e6508cdc674c020af6ab635557b4d2d2",
+        "quality": 92,
+        "lossless": false
+      }
+    },
+    "elevation": {
+      "source": "appearance/elevation.png",
+      "bytes": 894279,
+      "sha256": "d1693a3b768451f2626d749e5b1ace798743e32575be8608741b7ab760aa2625",
+      "git_sha": "c0fb8cad59c9740dfaacaa472a00f960f47b4bab",
+      "rgba_sha256": "1312ef3d1e1a6b24c0db18435c55bd65c245369007a1f91b962ce9422876ecf2",
+      "full": {
+        "path": "display/elevation.webp",
+        "bytes": 296032,
+        "sha256": "83fd6059a2a7c1315765123912c9e582a2d4827a1e6aacde64dd76b34f03e602",
+        "git_sha": "c70d176f401fe6542909941a41ea8a5edbfca459",
+        "dimensions": [
+          900,
+          800
+        ],
+        "rgba_sha256": "1312ef3d1e1a6b24c0db18435c55bd65c245369007a1f91b962ce9422876ecf2"
+      },
+      "thumb": {
+        "path": "display/elevation-640.webp",
+        "bytes": 13906,
+        "sha256": "0721940c3dc2f08065ddbb3dc6fe2976a5f65a6a577907f4143f65564507201e",
+        "git_sha": "fb835166ecc15521f1f16c5dc8602f8a97a33d0b",
+        "dimensions": [
+          640,
+          569
+        ],
+        "rgba_sha256": "41706e19dda2dbb4492989937b2b48fdcb9d1428a43fb842cec13f06e6227aec",
+        "alpha_sha256": "38db28c359ba398cc20312153f23e1a4e6508cdc674c020af6ab635557b4d2d2",
+        "quality": 92,
+        "lossless": false
+      }
+    },
+    "rear": {
+      "source": "appearance/rear.png",
+      "bytes": 813229,
+      "sha256": "3955f0b2dea3947da89c747357429f9c62d7650268052f34410545b03824f27a",
+      "git_sha": "8e9808c69be5981d99c30316bd4516a4f8d95ebf",
+      "rgba_sha256": "eae5d792264cb5ef9612c4636940f4e1a36955c4c9db83f71bc8ef4ae1b21a95",
+      "full": {
+        "path": "display/rear.webp",
+        "bytes": 211386,
+        "sha256": "d508e0bd68435e7c385498f3d89c9ed7697484c1e491e25a8dad25dd19fb9020",
+        "git_sha": "e29b5ecb81243c2c713e9cc2ab57824a299fa4ea",
+        "dimensions": [
+          900,
+          800
+        ],
+        "rgba_sha256": "eae5d792264cb5ef9612c4636940f4e1a36955c4c9db83f71bc8ef4ae1b21a95"
+      },
+      "thumb": {
+        "path": "display/rear-640.webp",
+        "bytes": 6934,
+        "sha256": "68519759bbeb66edc2fd66d1ffb92de5884cd3a1f1b8c3e3e8183e6104b476d7",
+        "git_sha": "add7db05d776153b9ecff3090539b49c5d4308c2",
+        "dimensions": [
+          640,
+          569
+        ],
+        "rgba_sha256": "af0ef933277b6715cde6298d2323b70101225d8d312e1a83ad2b2f34e2f72893",
+        "alpha_sha256": "38db28c359ba398cc20312153f23e1a4e6508cdc674c020af6ab635557b4d2d2",
+        "quality": 92,
+        "lossless": false
+      }
+    },
+    "top": {
+      "source": "appearance/top.png",
+      "bytes": 939437,
+      "sha256": "ebbac740a819d1fa1fe049f2981b7bbab9a74a5133a620b2e1cbe5740e7ac194",
+      "git_sha": "d57000d8c15add1831746c1fe80dca0f6f26aa68",
+      "rgba_sha256": "c2ab9bc9dedbe9c6ae5b5310b66b03ee946e1a897b94ca52fd9fa8b82ba9f196",
+      "full": {
+        "path": "display/top.webp",
+        "bytes": 433644,
+        "sha256": "17232edc5b91c591c6e00b9fa158eadd9bf85cfe8fd9c0e1f34d81a19aaa6542",
+        "git_sha": "7080593b641673dccc9a95fd35b8b2aa89202538",
+        "dimensions": [
+          900,
+          800
+        ],
+        "rgba_sha256": "c2ab9bc9dedbe9c6ae5b5310b66b03ee946e1a897b94ca52fd9fa8b82ba9f196"
+      },
+      "thumb": {
+        "path": "display/top-640.webp",
+        "bytes": 8322,
+        "sha256": "593a6f0e9f2067d0aa946ff777969892c265e52e9482aeae2c76587f26656228",
+        "git_sha": "5ff387148071790e0a25e180e4610bcd64187de9",
+        "dimensions": [
+          640,
+          569
+        ],
+        "rgba_sha256": "622feb847c6a1526fcc94ccdba81e023228c5b96c50b4ebc7a86773d8536ab79",
+        "alpha_sha256": "38db28c359ba398cc20312153f23e1a4e6508cdc674c020af6ab635557b4d2d2",
+        "quality": 92,
+        "lossless": false
+      }
+    },
+    "left": {
+      "source": "appearance/left.png",
+      "bytes": 856781,
+      "sha256": "8a6176440d5216820277b0f27011379806251116e96bef9eb0de41294097e751",
+      "git_sha": "e5f0fc794f3c8f247cecc43f18a04b8771e8cdd9",
+      "rgba_sha256": "df9c40d35baaa5d5608b2cfa1b18315407a65cfe6c3802a1f16dacb0a95d1804",
+      "full": {
+        "path": "display/left.webp",
+        "bytes": 302372,
+        "sha256": "7311269291adf0d075627ce80a4ed502017fe385b4b167b3e18aab59e8a8f2fc",
+        "git_sha": "75d2e07b0926fb7c1f0063a72739915eb947efaa",
+        "dimensions": [
+          900,
+          800
+        ],
+        "rgba_sha256": "df9c40d35baaa5d5608b2cfa1b18315407a65cfe6c3802a1f16dacb0a95d1804"
+      },
+      "thumb": {
+        "path": "display/left-640.webp",
+        "bytes": 6834,
+        "sha256": "591dc59f4ba8be8dc6c33a1d476fd80aff12c2b1a7ec32c46df6e1ad6caf0087",
+        "git_sha": "5fd0c85b756bcbb5c77d17eafd58e9b841ec8929",
+        "dimensions": [
+          640,
+          569
+        ],
+        "rgba_sha256": "93c27f1b7a1b5c67a2f410c330e5b55a45e3785e0028644884cd8b544862b07b",
+        "alpha_sha256": "38db28c359ba398cc20312153f23e1a4e6508cdc674c020af6ab635557b4d2d2",
+        "quality": 92,
+        "lossless": false
+      }
+    },
+    "right": {
+      "source": "appearance/right.png",
+      "bytes": 856210,
+      "sha256": "a303aa67085f1aa5ef328e3b8dd980f84541a570421c9119817da292fafd3073",
+      "git_sha": "32563d288b5c40e5e302963827685611b2dcc817",
+      "rgba_sha256": "11c5f38171c7edc0efeb3167af9a37ed5ee6361cef64bd46efe6da9bbcb903fd",
+      "full": {
+        "path": "display/right.webp",
+        "bytes": 305410,
+        "sha256": "74326fb028848954f7ce227f11705d2031535aec0f7dc4e7f3835c1ec0962a71",
+        "git_sha": "308e775a9530e0e3b92577245f94d130e06aebc7",
+        "dimensions": [
+          900,
+          800
+        ],
+        "rgba_sha256": "11c5f38171c7edc0efeb3167af9a37ed5ee6361cef64bd46efe6da9bbcb903fd"
+      },
+      "thumb": {
+        "path": "display/right-640.webp",
+        "bytes": 6876,
+        "sha256": "b4d2ae05ae7c0da639422c79054f89fa7fdc4c4900c498671cc9fb6f5f589eb2",
+        "git_sha": "841cf316dd677f6ac89430208fe8221bdcab4643",
+        "dimensions": [
+          640,
+          569
+        ],
+        "rgba_sha256": "306dc8dbc956be927205bb75651de70f956058c881755fa0b4ca40ad46dbcfc2",
+        "alpha_sha256": "38db28c359ba398cc20312153f23e1a4e6508cdc674c020af6ab635557b4d2d2",
+        "quality": 92,
+        "lossless": false
+      }
+    }
+  }
+}
