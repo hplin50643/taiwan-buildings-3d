@@ -9,53 +9,13 @@
   "files": [
     {
       "path": "APPEARANCE.md",
-      "sha256": "df43e7d0765c768b832755192730f81756aa4fb0edb42ef547a7f6fe85c22c19",
-      "bytes": 3270
+      "sha256": "dec3ec167fac516c9daf4771bb45a15ae888f2c26c22c55a24f84edf93b14097",
+      "bytes": 4940
     },
     {
       "path": "README.md",
-      "sha256": "c823db9225f09876ae4ab61ac18b609fd4e95bf1b2ecb64f300af7ab30845a01",
-      "bytes": 5476
-    },
-    {
-      "path": "README.zh-TW.md",
-      "sha256": "c823db9225f09876ae4ab61ac18b609fd4e95bf1b2ecb64f300af7ab30845a01",
-      "bytes": 5476
-    },
-    {
-      "path": "appearance/elevation.png",
-      "sha256": "645f0d1cd283ad7a9ad097e860e5056e0a2f3839c482e95f54200325f9d7a7aa",
-      "bytes": 929979
-    },
-    {
-      "path": "appearance/front.png",
-      "sha256": "cbec07aeeba7484ff9847c5e9e583a32decff8633c75338439875ce3fd6636c6",
-      "bytes": 951160
-    },
-    {
-      "path": "appearance/left.png",
-      "sha256": "bfe72755f5def87c9fa681ef3fc5e56b38cbd129c50fa8c1e99ffbe3954712d8",
-      "bytes": 809743
-    },
-    {
-      "path": "appearance/rear.png",
-      "sha256": "25966eb854ac062406ae48cf62084c101e31357b6257da36430d68f026f68a69",
-      "bytes": 798149
-    },
-    {
-      "path": "appearance/right.png",
-      "sha256": "4181beaec406e6ab3359436876a0fe744f70bc6d0dda45c6781a352b5b835ae6",
-      "bytes": 796917
-    },
-    {
-      "path": "appearance/source-angle.png",
-      "sha256": "23dbbd94d7d6b69ad2695a6d64e653ba273d58abaf3a99e254f0e98efad2900e",
-      "bytes": 944611
-    },
-    {
-      "path": "appearance/top.png",
-      "sha256": "0c31645a40dca5cb500ca953e8f373377f32e8f0f068f76bba90718dc0ecadc5",
-      "bytes": 851297
+      "sha256": "6df277428097e8839f484a770315cf1ba4cf2b0cc5e313bf80033248dd985d72",
+      "bytes": 6042
     },
     {
       "path": "appearance-materials.json",
@@ -136,6 +96,21 @@
       "path": "render-cameras.json",
       "sha256": "b2187dc8435758cba1defc3d5ccd6581a2019edd8a9c3d1d1d74696695a3b188",
       "bytes": 1966
+    },
+    {
+      "path": "display/render-proof.json",
+      "sha256": "65ecbf243f3f0cb71ce57580f6e2a8cf0eea934941372587284e9318e78a37f6",
+      "bytes": 7295
+    },
+    {
+      "path": "verify_display.py",
+      "sha256": "7274b17922df833f005e3732306627b322db6027f7d7197f19f54ebad077cf3e",
+      "bytes": 2450
     }
-  ]
+  ],
+  "historical_freeze": {
+    "commit": "d6b2917d55633c7b4baa02842f33998513c1cf61",
+    "url": "https://github.com/hplin50643/taiwan-buildings-3d/tree/d6b2917d55633c7b4baa02842f33998513c1cf61/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/ncu-female-dorm14-front-study/appearance-freeze.json",
+    "sha256": "f9142ef7745bac260741a1f07cda02e385079fe02510f0cfc8960949e206b971"
+  }
 }

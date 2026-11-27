@@ -2,16 +2,17 @@
 
 ## 模型預覽
 
-| 新彩色斜視 | 新彩色來源角度 | 新彩色正面 |
+| 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| ![彩色斜視](appearance/front.png) | ![彩色來源角度](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
-| 新彩色背向 | 新彩色上視 | 彩色下載 |
-| ![彩色背向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+| [![彩色斜前](display/front-640.webp)](display/front.webp)<br>彩色斜前 | [![彩色近來源角度](display/source-angle-640.webp)](display/source-angle.webp)<br>彩色近來源角度 | [![彩色正面](display/elevation-640.webp)](display/elevation.webp)<br>彩色正面 |
+| [![彩色背面（人工平截）](display/rear-640.webp)](display/rear.webp)<br>彩色背面（人工平截） | [![彩色左側](display/left-640.webp)](display/left.webp)<br>彩色左側 | [![彩色右側](display/right-640.webp)](display/right.webp)<br>彩色右側 |
+| [![彩色俯視（屋頂保留中性色）](display/top-640.webp)](display/top.webp)<br>彩色俯視（屋頂保留中性色） | &nbsp; | &nbsp; |
 
+點縮圖可開啟無失真原尺寸 WebP。七個視角均核對現行彩色模型；背向為人工平截，不是整棟後立面。
 
 ### 照片近似彩色預覽 v2
 
-[左視](appearance/left.png) · [右視](appearance/right.png) · [原色同相機正面](appearance-review-v2/original-front.png) · [原色同相機背向](appearance-review-v2/original-rear.png) · [本次審核](appearance-review-v2/color-continuity-review.json)
+[原色同相機正面](appearance-review-v2/original-front.png) · [原色同相機背向](appearance-review-v2/original-rear.png) · [本次審核](appearance-review-v2/color-continuity-review.json)
 
 依校方女14舍入口實照，保留原遮屏、石柱、磚褐附柱、藍灰拱框與雨棚配色。本次僅把58個狹長窗槽的464個實體返邊沿用相鄰淺灰青色；這是同牆材料延續推論，暗色槽背不變。照片中的雨棚含綠板與紅框，無完整分件所以不改。人工背平切、側截面、屋頂及粗化空白保持中性，共1441面。
 
@@ -56,9 +57,9 @@
 
 SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研究中的一件，不代表全校完成。
 
-## 檔案下載與實際模型預覽
+## 檔案下載與驗證
 
-[STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
+[彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) · [中性 STL](model.stl) · [中性 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json) · [渲染對照](display/render-proof.json) · [展示校驗](display/SHA256SUMS)
 
 
 以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
