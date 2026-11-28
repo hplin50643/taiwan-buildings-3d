@@ -8,7 +8,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![正面](金山校本部/buildings/dila-yangsheng-hall/appearance/previews/front.png)](金山校本部/buildings/dila-yangsheng-hall/README.md)<br>**[法鼓文理學院｜金山校本部｜揚生館](金山校本部/buildings/dila-yangsheng-hall/README.md)**<br>正面 actual STL | [![法鼓文理學院・大願橋整橋外觀近似：實際模型預覽](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/previews/front.png)](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md)<br>**[法鼓文理學院・大願橋整橋外觀近似](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md)** | [![綜合大樓GA／GB／GC：實際模型預覽](金山校本部/buildings/dila-administration-teaching-complex/previews/front.png)](金山校本部/buildings/dila-administration-teaching-complex/README.md)<br>**[綜合大樓（GA／GB／GC）](金山校本部/buildings/dila-administration-teaching-complex/README.md)** |
+| [![正面](../../docs/display/catalog/dila-jinshan/yangsheng-front-640.webp)](金山校本部/buildings/dila-yangsheng-hall/README.md)<br>**[法鼓文理學院｜金山校本部｜揚生館](金山校本部/buildings/dila-yangsheng-hall/README.md)**<br>正面 actual STL | [![法鼓文理學院・大願橋整橋外觀近似：實際模型預覽](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/previews/front-640.webp)](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md)<br>**[法鼓文理學院・大願橋整橋外觀近似](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md)** | [![綜合大樓GA／GB／GC：實際模型預覽](../../docs/display/catalog/dila-jinshan/administration-front-640.webp)](金山校本部/buildings/dila-administration-teaching-complex/README.md)<br>**[綜合大樓（GA／GB／GC）](金山校本部/buildings/dila-administration-teaching-complex/README.md)** |
 
 [模型、來源及數位檢查](金山校本部/buildings/dila-yangsheng-hall/README.md)。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。
 
@@ -18,7 +18,7 @@
 
 ## 大願橋整橋升級
 
-大願橋由中央裁切片段升級為整橋主要外觀近似，維持單一套件：變寬曲橋、單高外傾箱梁、雙端真圓通孔、低開欄、圓橫梁與兩岸非共頂雙斜管，中央無落水墩。286×47×28.1mm、7材質Blend/3MF/STL、5真實mesh圖；原始67332三角單閉殼、格式實編回讀與九檔隔離重建byte一致。141層輪廓有效，保留32層／2565個0.8mm薄片段警告、細欄杆0.34mm，需支撐或拆件評估；未實印、不保證免支撐。108m依建築師，曲率/肋數推估；2015 EXIF與2016啟用分開，非測繪或2026現況。 [模型與來源](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md) · [列印告警](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/QA.md) · [歷史片段](https://github.com/root50643/taiwan-buildings-3d/tree/4e9dfa531b4b065b9ed16f88ff28bbf2fe87a3d0/法鼓文理學院/金山校本部/buildings/dila-great-vow-bridge-middle-span-segment)。本次新增綜合大樓後全校／校區共3套，不代表全校完成；最小端接塊與展示底板不是實際岸坡。
+大願橋由中央裁切片段升級為整橋主要外觀近似，維持單一套件：變寬曲橋、單高外傾箱梁、雙端真圓通孔、低開欄、圓橫梁與兩岸非共頂雙斜管，中央無落水墩。286×47×28.1mm、7材質Blend/3MF/STL、5真實mesh圖；原始67332三角單閉殼、格式實編回讀與九檔隔離重建byte一致。141層輪廓有效，保留32層／2565個0.8mm薄片段警告、細欄杆0.34mm，需支撐或拆件評估；未實印、不保證免支撐。108m依建築師，曲率/肋數推估；2015 EXIF與2016啟用分開，非測繪或2026現況。 [模型與來源](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md) · [列印告警](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/QA.md) · [歷史片段](https://github.com/hplin50643/taiwan-buildings-3d/tree/4e9dfa531b4b065b9ed16f88ff28bbf2fe87a3d0/%E6%B3%95%E9%BC%93%E6%96%87%E7%90%86%E5%AD%B8%E9%99%A2/%E9%87%91%E5%B1%B1%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/dila-great-vow-bridge-middle-span-segment)。本次新增綜合大樓後全校／校區共3套，不代表全校完成；最小端接塊與展示底板不是實際岸坡。
 
 ## 綜合大樓（GA／GB／GC）
 
