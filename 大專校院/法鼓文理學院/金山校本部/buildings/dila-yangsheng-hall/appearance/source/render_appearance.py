@@ -1,11 +1,14 @@
-"""blender -b -t 6 --python appearance/source/render_appearance.py
+"""Run via verify_display_webp.py --rebuild, in a disposable package copy.
 Four new appearance views from exact core-3MF triangles. No photos/textures.
 """
 from pathlib import Path
 import bpy,json,zipfile,xml.etree.ElementTree as E,os,struct,hashlib,sys
 from mathutils import Vector
 from bpy_extras.object_utils import world_to_camera_view
-A=Path(__file__).resolve().parents[1];NS={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
+A=Path(__file__).resolve().parents[1]
+if '--isolated-display-reproduction' not in sys.argv or (A/'qa/display-webp.json').exists():
+ raise RuntimeError('Use verify_display_webp.py --rebuild; do not overwrite the published package.')
+NS={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
 def aim(o,t):o.rotation_euler=(Vector(t)-o.location).to_track_quat('-Z','Y').to_euler()
 def lin(s):return s/12.92 if s<=.04045 else ((s+.055)/1.055)**2.4
 bpy.ops.wm.read_factory_settings(use_empty=True);bpy.context.preferences.filepaths.save_version=0

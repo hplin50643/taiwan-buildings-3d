@@ -2,13 +2,13 @@
 
 依建築師正面實照，將原全棟暖石色改善為可見清水混凝土灰、球場南面深色窗凹與灰金屬窗框／欄帶；陰影中的混凝土仍使用同一灰色。**2,090 頂點、4,276 三角面直接沿用原 STL，座標及面序完全不變，未作共面細分。** 五個可編輯材質身份，不限制四色；是既有揚生館單包更新，不增加校數或包數。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| [![正面](previews/front-640.webp)](previews/front.webp) | [![背面](previews/rear-640.webp)](previews/rear.webp) | [![頂視](previews/top-640.webp)](previews/top.webp) |
 | :---: | :---: | :---: |
-| 正面：混凝土、現有窗凹與欄帶<br>![正面](previews/front.png) | 背面：本圖未確認部分中性<br>![背面](previews/rear.png) |  |
+| 正面：混凝土、窗凹與欄帶 | 背面：未確認部分維持中性 | 頂視：未確認屋頂未套色 |
+| [![正立面](previews/elevation-640.webp)](previews/elevation.webp) |  |  |
+| 正立面：陰影由照明形成 |  |  |
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視：未確認屋頂不套色<br>![頂視](previews/top.png) | 正立面：陰影由場景照明產生<br>![正立面](previews/elevation.png) |  |
+四張 640 px WebP 可點擊開啟全尺寸無失真圖。[現行圖檔與像素校驗](qa/display-webp.json) · [原始 PNG 與當時校驗](https://github.com/hplin50643/taiwan-buildings-3d/tree/cc74ceda8ee4ff2e62982f65268bc80b8a1fe627/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E6%B3%95%E9%BC%93%E6%96%87%E7%90%86%E5%AD%B8%E9%99%A2/%E9%87%91%E5%B1%B1%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/dila-yangsheng-hall/appearance)。
 
 ## 下載與編輯
 
@@ -34,7 +34,7 @@
 
 ## 原幾何、歷史 QA 與薄構件限制
 
-含底座尺寸仍為 **100 × 150 × 46.990002 mm**。原深度、地形、橋截斷、五道低幅屋帶及玻璃不透明凹面的簡化全保留；配色不提高幾何精度。[原模型說明](../README.md)、[原 QA](../QA.md)、[原網格驗證](../validation.json)、[原逐 Polygon 檢查](../layer-component-check.json)、[原構件損失摘要](../component-loss-summary.json)與[原射線／根接檢查](../recess-root-check.json)全部位元保留，本次未重新執行製造檢測。
+含底座尺寸仍為 **100 × 150 × 46.990002 mm**。原深度、地形、橋截斷、五道低幅屋帶及玻璃不透明凹面的簡化全保留；配色不提高幾何精度。[模型總覽](../README.md)、[原 QA](../QA.md)、[原網格驗證](../validation.json)、[原逐 Polygon 檢查](../layer-component-check.json)、[原構件損失摘要](../component-loss-summary.json)與[原射線／根接檢查](../recess-root-check.json)歷史資料及報告均位元保留，本次未重新執行製造檢測。
 
 原 0.2 mm 截層有 **235 層、770 個原 Polygon**；逐件開運算未消失或分裂，但 **351 筆超過 1% 損失**屬 8 族跨層樣本，不能誤稱 351 支獨立柱。南框兩支中央欄柱的 9 筆樣本最大損失 **13.14696384744%**、保留 86.85303615256%；不能用整層最大 0.14996534288% 掩蓋。原 47 個 1 mm 抽樣的較小整層值，也不能取代上述逐件結果。
 
@@ -46,8 +46,8 @@
 
 [3MF 嚴格匯入／材質往返](qa/exchange-validation.json)、[scene 重開](qa/scene-validation.json)、[四圖紀錄](qa/render-manifest.json)。交付 XML／lib3mf 逐面比對原 STL float32 座標及面序完全一致；每邊兩個反向面、vertex-link 單循環、單一連通表面殼、正體積及零退化面另核。嚴格匯入零警告；只改一材質再寫出讀回，保留其他顏色及全部面指派。SDK 測試寫出最大量化差約 0.00000381470 mm，零退化面；測試改色檔不交付。
 
-標準 Python 執行 source/build_appearance.py，由原 STL 及 palette.json 位元一致地重建 3MF／逐面清單。Blender 4.3.2 執行 source/render_appearance.py 產生四圖與 scene，再執行 source/verify_scene.py；source/verify_exchange.py 使用 numpy/lib3mf 作獨立對照與改色往返。這是外觀交換 QA，**不取代原 351 筆特定例外審核**。
+標準 Python 執行 source/build_appearance.py，由原 STL 及 palette.json 位元一致地重建 3MF／逐面清單。使用 Pillow 13.0.0 與 Blender 4.3.2，執行 `python source/verify_display_webp.py --rebuild` 在暫存目錄重繪及核對 RGBA，不覆寫原場景或 QA；原場景檢查 source/verify_scene.py 只應在工作副本執行；source/verify_exchange.py 使用 numpy/lib3mf 作獨立對照與改色往返。這是外觀交換 QA，**不取代原 351 筆特定例外審核**。
 
-原 scene.blend、八張單色圖與所有 QA 檔保留在上一層。原 readme-view-check.json 記錄的是當時的單色圖片路徑／雜湊；最新三層 README 改用 appearance/ 圖片，現行圖片引用由此次發布檢查另核，沒有覆寫舊的展示證據。
+原 scene.blend、八張單色圖與所有 QA 檔保留在上一層。原 readme-view-check.json 記錄的是當時的單色圖片路徑／雜湊；兩份模型說明與校級、校區圖鑑都顯示目前的彩色模型，現行圖片引用由此次發布檢查另核，沒有覆寫舊的展示證據。
 
-要重現含原單色 README 引用的整套歷史展示檢查，可使用[更新前固定版本](https://github.com/root50643/taiwan-buildings-3d/tree/2249681ba2bf2fe00181c90183138a614f9974b7/法鼓文理學院/金山校本部/buildings/dila-yangsheng-hall)，避免把當時圖像雜湊誤當本次配色圖的雜湊。
+要重現含原單色 README 引用的整套歷史展示檢查，可使用[更新前固定版本](https://github.com/hplin50643/taiwan-buildings-3d/tree/2249681ba2bf2fe00181c90183138a614f9974b7/%E6%B3%95%E9%BC%93%E6%96%87%E7%90%86%E5%AD%B8%E9%99%A2/%E9%87%91%E5%B1%B1%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/dila-yangsheng-hall)，避免把當時圖像雜湊誤當本次配色圖的雜湊。

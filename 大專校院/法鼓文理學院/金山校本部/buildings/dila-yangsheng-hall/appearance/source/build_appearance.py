@@ -2,7 +2,7 @@
 
 Standard-library only. Run from any directory: python appearance/source/build_appearance.py
 No geometry generator, remeshing, source photos, machine profile or G-code involved.
-Edit ../palette.json and rerun; then regenerate previews with render_appearance.py.
+Edit ../palette.json in a separate working copy. Use the historical source or isolated renderer for new artistic previews; the published verification checks this release only.
 """
 from pathlib import Path
 import collections,hashlib,json,math,struct,zipfile,xml.etree.ElementTree as ET

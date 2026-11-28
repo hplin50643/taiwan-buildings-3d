@@ -3,9 +3,11 @@
 ## 模型預覽
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| [![正面](appearance/previews/front-640.webp)](appearance/previews/front.webp) | [![背面](appearance/previews/rear-640.webp)](appearance/previews/rear.webp) | [![頂視](appearance/previews/top-640.webp)](appearance/previews/top.webp) |
 | :---: | :---: | :---: |
-| 正面 actual STL<br>![正面](appearance/previews/front.png) | 背面 actual STL<br>![背面](appearance/previews/rear.png) |  |
+| 正面：混凝土、窗凹與欄帶 | 背面：未確認部分維持中性 | 頂視：未確認屋頂未套色 |
+| [![正立面](appearance/previews/elevation-640.webp)](appearance/previews/elevation.webp) |  |  |
+| 正立面：陰影由照明形成 |  |  |
 
 來源限定外觀近似模型，最大尺寸 **150 mm**。呈現西側挑空球場與東側五層長條棟、五西一南凸盒窗、南階梯及兩座截斷橋接；不是精密建築復刻或同年測繪。
 
@@ -22,7 +24,7 @@
 - `render_preview.py`、`previews/`：八張實際 STL 視圖，含南北低視角及屋頂細部。
 - `sources.md`、`source-dimensions.json`：來源與局部推定；`QA.md`、JSON/CSV：數位檢查。
 
-以 Python 3 與 `requirements.txt` 所列套件執行 `python build_model.py`，再以 Blender 4.3.2 執行 `blender -b -t 5 --python render_preview.py`。最後執行 `python run_all_checks.py`。驗證不修補輸入 STL；清潔目錄重建 SHA 與 Blend 幾何、PNG 位元組均另核。
+以 Python 3 與 `requirements.txt` 所列套件執行 `python build_model.py`，再以 Blender 4.3.2 執行 `blender -b -t 5 --python render_preview.py`。最後執行 `python run_all_checks.py`。驗證不修補輸入 STL；清潔目錄重建 SHA 與 Blend 幾何、PNG 位元組均另核。現行彩色預覽可另用 `python appearance/source/verify_display_webp.py --rebuild` 在暫存環境確認。
 
 ## 來源口徑與推估
 
