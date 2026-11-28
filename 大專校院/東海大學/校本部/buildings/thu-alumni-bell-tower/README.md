@@ -2,12 +2,13 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| [![校友鐘樓模型](previews/front-640.webp)](previews/front.webp) | [![背斜視](previews/rear-640.webp)](previews/rear.webp) | [![正立面](previews/elevation-640.webp)](previews/elevation.webp) |
 | :---: | :---: | :---: |
-| ![校友鐘樓模型](previews/front.png)<br>校友鐘樓模型 | ![背斜視](previews/rear.png)<br>背斜視 | ![正立面](previews/elevation.png)<br>正立面 |
-| ![頂視](previews/top.png)<br>頂視 | ![左斜視](previews/left_oblique.png)<br>左斜視 |  |
+| 校友鐘樓模型 | 背斜視 | 正立面 |
+| [![頂視](previews/top-640.webp)](previews/top.webp) | [![左斜視](previews/left_oblique-640.webp)](previews/left_oblique.webp) |  |
+| 頂視 | 左斜視 |  |
 
-**新增完整塔體幾何｜依2019官方相簿與2022攝影者照片近似；不是現場測繪，不宣稱2026現況。** 這是文理大道的校友鐘樓，並非教堂旁四牆式畢律斯鐘樓。
+**完整塔體外觀近似｜依2019官方相簿與2022攝影者照片近似；不是現場測繪，不宣稱2026現況。** 這是文理大道的校友鐘樓，並非教堂旁四牆式畢律斯鐘樓。
 
 保留兩片深矩形牆、十一道深橫板、十個板間開口、下方高通道、往上漸增的間距、突出最高橫板的兩牆尖端、一口懸鐘和低矮矩形平台。上方鐘室包含固定加厚吊桿、喇叭鐘口、鐘舌及下板簡化小機構；非功能性可擺動鐘。
 
@@ -25,20 +26,18 @@
 ## 列印警告
 水密不等於可直接列印。十一橫板下緣、懸鐘與鐘舌需要切片器支撐／方向評估；鐘壁局部低於0.8mm侵蝕門檻，詳見QA原樣保留的失敗。**無實體試印，不認證免支撐、最小法向厚度、強度或切片器相容性。**
 
-## 五個實際交付網格視角
-
-五個實際交付網格視角集中於上方的「模型預覽」。
+<a name="五個實際交付網格視角"></a>
 
 ## 重建與驗證
 Python依賴見requirements.txt；另需lib3mf官方SDK、Blender4.3.2。
 ```sh
-python build_model.py
-python qa_model.py
-PYTHONDONTWRITEBYTECODE=1 python check_features.py
-BUILD_PYTHON=/path/to/model/python /path/to/lib3mf/python verify_exchange.py
-blender -b --python-exit-code 1 --python render_model.py
-blender -b --python-exit-code 1 --python verify_scene.py
-blender -b --python-exit-code 1 --python verify_render.py
+python -m pip install -r requirements.txt Pillow==13.0.0
 python verify_package.py
+blender -b -t 4 --python-exit-code 1 --python verify_render.py
+python rebuild.py --output ../clean-rebuild --blender blender --threads 4
 ```
-獨立空目錄重建比對STL、3MF、mesh、palette及五張PNG；修改後須全部重驗，不能套用舊QA。
+獨立重建逐檔比對 STL、3MF、mesh、palette，並比對五張 WebP 的 RGBA 像素和檔案校驗碼。模型若有修改，不能沿用舊 QA，須重新驗證。
+
+### 展示圖與校驗
+
+五張展示圖使用 640 px WebP 縮圖，可點圖開啟全尺寸無失真 WebP。[縮圖校驗](previews/thumbnail-proof.json)。重建只在隔離目錄暫存 PNG；公開原始模型和既有 QA 不變。[現行 WebP 與像素校驗](qa/preview-webp.json) · [原始 PNG、歷史校驗與進階測試步驟](https://github.com/hplin50643/taiwan-buildings-3d/tree/336ce1843e6e4435f93ed1a5df7cc26434fb9596/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E6%9D%B1%E6%B5%B7%E5%A4%A7%E5%AD%B8/%E6%A0%A1%E6%9C%AC%E9%83%A8/buildings/thu-alumni-bell-tower)。
