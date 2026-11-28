@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| [![實際模型正面斜視](previews/front-640.webp)](previews/front.webp) | [![背斜視](previews/rear-640.webp)](previews/rear.webp) | [![正立面](previews/elevation-640.webp)](previews/elevation.webp) |
 | :---: | :---: | :---: |
-| ![實際模型正面斜視](previews/front.png) |  |  |
+| 正面斜視 | 背斜視 | 正立面 |
+| [![頂視](previews/top-640.webp)](previews/top.webp) | [![左斜視](previews/left_oblique-640.webp)](previews/left_oblique.webp) |  |
+| 頂視 | 左斜視 |  |
 
 斗六校區，雲泰表演廳旁獨立鐘塔。完整地上主體的公開照片近似模型，非實測復原；2017、2018、2020校方照片外觀，不宣稱目前狀況。
 
@@ -21,13 +23,18 @@
 I型鋼翼板0.85mm、腹板1mm，鐘籠桿1.2mm，細長鋼柱與懸吊鐘有脆弱／懸垂風險。必須自行檢查切片、方向、支撐及材料設定；不能宣稱免支撐或通過實體試印。縮小模型可能使細節消失。STL沒有色彩。
 
 ## 重建
-Python套件見requirements.txt：`python build_model.py`、`python qa_model.py`、`python check_features.py`。Blender以`blender -b --python-exit-code 1 --python render_model.py`生成五張圖與scene.blend，再執行verify_scene.py及verify_render.py。官方lib3mf Python SDK供verify_exchange.py；BUILD_PYTHON指定具manifold3d等套件的Python。驗證報告及SHA256SUMS綁定交付檔案，不是列印認證。
 
-## 其他視角
+用 Blender 4.3.2 與 `requirements.txt` 所列套件重建。輸出路徑須在模型目錄外且尚未存在，避免覆寫發布檔案。個別分析入口為 `qa_model.py`、`check_features.py`；`verify_scene.py` 和 `verify_exchange.py` 分別用於場景及交換格式核對。 跨 Blender／硬體版本不承諾位元組一致。來源審查與既有 QA 的限制不變；若修改幾何，須重跑 QA 及外觀審查。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![背斜視](previews/rear.png) | ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |
-| ![左斜視](previews/left_oblique.png) |  |  |
+```bash
+python -m pip install -r requirements.txt Pillow==13.0.0
+python verify_package.py
+blender -b --threads 4 --python-exit-code 19 --python verify_render.py
+python rebuild.py --output ../new-clean-rebuild --blender blender --threads 4
+```
+
+五張展示圖使用 640 px WebP 縮圖，可點圖開啟全尺寸無失真 WebP。[縮圖校驗](previews/thumbnail-proof.json)。重建只在暫存目錄產生 PNG 中間檔，核對解碼 RGBA 像素及尺寸後輸出並校驗 WebP。原模型和既有 QA 報告不變，原始 PNG 和當時的校驗記錄仍可在固定提交查閱。[現行 WebP 校驗](qa/preview-webp.json) · [原始 PNG 與歷史 QA](https://github.com/hplin50643/taiwan-buildings-3d/tree/336ce1843e6e4435f93ed1a5df7cc26434fb9596/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E9%9B%B2%E6%9E%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/%E6%96%97%E5%85%AD%E6%A0%A1%E5%8D%80/buildings/yuntech-spirit-bell-tower)。
+
+Exchange 驗證須用官方 lib3mf Python SDK；必要時用 BUILD_PYTHON 指定具 manifold3d 等套件的 Python。
 
 模型與程式依LICENSE；官方來源照片權利不在此授權內，未重新散布。

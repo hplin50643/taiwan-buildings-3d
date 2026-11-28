@@ -4,6 +4,8 @@ from pathlib import Path
 from mathutils import Vector
 from bpy_extras.object_utils import world_to_camera_view
 A=Path(__file__).resolve().parent;NS={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
+if (A/'SHA256SUMS').is_file():
+ raise RuntimeError('Do not render into the published package; use rebuild.py or export_display_webp.py')
 bpy.ops.wm.read_factory_settings(use_empty=True);bpy.context.preferences.filepaths.save_version=0
 with zipfile.ZipFile(A/'model.3mf') as z:root=E.fromstring(z.read('3D/3dmodel.model'))
 mesh=root.find('m:resources/m:object/m:mesh',NS);vs=[[float(v.get(k)) for k in 'xyz'] for v in mesh.findall('m:vertices/m:vertex',NS)];ts=mesh.findall('m:triangles/m:triangle',NS);fs=[[int(t.get(k)) for k in ['v1','v2','v3']] for t in ts]
