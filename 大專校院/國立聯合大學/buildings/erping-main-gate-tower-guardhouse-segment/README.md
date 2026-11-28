@@ -2,10 +2,13 @@
 
 ## 模型預覽
 
-| <a name="五視角"></a>五視角 | 模型預覽 | 模型預覽 |
+<a name="五視角"></a>
+
+| [![實際交付網格前右視角](previews/front-640.webp)](previews/front.webp) | [![正面](previews/elevation-640.webp)](previews/elevation.webp) | [![後側簡化封閉](previews/rear-640.webp)](previews/rear.webp) |
 | :---: | :---: | :---: |
-| ![實際交付網格前右視角](previews/front.png)<br>前右 | ![](previews/elevation.png)<br>正面 | ![](previews/rear.png)<br>後側簡化封閉 |
-| ![](previews/top.png)<br>頂面近似 | ![](previews/left_oblique.png)<br>前左 |  |
+| 前右 | 正面 | 後側簡化封閉 |
+| [![頂面近似](previews/top-640.webp)](previews/top.webp) | [![前左](previews/left_oblique-640.webp)](previews/left_oblique.webp) |  |
+| 頂面近似 | 前左 |  |
 
 NUU Erping Shan central gate-name tower and attached guard booth, approximate exterior segment.
 
@@ -34,6 +37,19 @@ NUU Erping Shan central gate-name tower and attached guard booth, approximate ex
 
 ## 重建
 
-安裝 requirements.txt 所列套件後執行 python build_model.py、python qa_model.py、python check_features.py。以 Blender 4.3.2 執行 blender -b --python render_model.py；verify_scene.py 與 verify_render.py 分別核對編輯往返及重開重繪。verify_exchange.py 使用 lib3mf；BUILD_PYTHON 可指定幾何建置 Python。其餘驗證明細見 qa/。
+
 
 Original model/code: [MIT](LICENSE). Source photographs remain with their respective rights holders. Material colours are approximate display colours, not certified finishes.
+
+### 展示圖與隔離重建
+
+使用 Blender 4.3.2 與 requirements.txt 的幾何依賴。個別分析可在隔離副本執行 `qa_model.py`、`check_features.py`；`verify_scene.py` 和 `verify_exchange.py` 分別核對場景及 lib3mf 交換格式，後者可用 `BUILD_PYTHON` 指定幾何環境。
+
+```bash
+python -m pip install -r requirements.txt Pillow==13.0.0
+python verify_package.py
+blender -b --threads 4 --python-exit-code 19 --python verify_render.py
+python rebuild.py --output ../new-clean-rebuild --blender blender --threads 4
+```
+
+五張展示圖使用 640 px WebP 縮圖，可點圖開啟全尺寸無失真 WebP。[縮圖校驗](previews/thumbnail-proof.json)。重建只在暫存目錄產生 PNG，重新核對圖像 RGBA 像素、尺寸和 WebP 檔案校驗碼。模型檔與歷史 QA 報告不變。[現行 WebP 校驗](qa/preview-webp.json) · [原始 PNG 與歷史 QA](https://github.com/hplin50643/taiwan-buildings-3d/tree/336ce1843e6e4435f93ed1a5df7cc26434fb9596/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8/buildings/erping-main-gate-tower-guardhouse-segment)。
