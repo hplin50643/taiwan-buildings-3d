@@ -2,10 +2,13 @@
 
 ## 模型預覽
 
-| <a name="五個實際網格視角"></a>五個實際網格視角 | 模型預覽 | 模型預覽 |
+<a name="五個實際網格視角"></a>
+
+| [![弧棚構架段彩色模型](previews/front-640.webp)](previews/front.webp) | [![後斜視](previews/rear-640.webp)](previews/rear.webp) | [![正立面](previews/elevation-640.webp)](previews/elevation.webp) |
 | :---: | :---: | :---: |
-| ![弧棚構架段彩色模型](previews/front.png)<br>正斜視 | ![](previews/rear.png)<br>後斜視 | ![](previews/elevation.png)<br>正立面 |
-| ![](previews/top.png)<br>俯視 | ![低角度看開放桁架與檁條](previews/left_oblique.png)<br>低角度看開放桁架與檁條 |  |
+| 正斜視 | 後斜視 | 正立面 |
+| [![俯視](previews/top-640.webp)](previews/top.webp) | [![低角度看開放桁架與檁條](previews/left_oblique-640.webp)](previews/left_oblique.webp) |  |
+| 俯視 | 低角度看開放桁架與檁條 |  |
 
 以設計者官方歷史照片為依據的估算展示模型，**僅取三道橫向桁架／兩跨縱向構架段**，不是完整中庭、第三棟大樓或測繪模型。既有研究總中心高翼、入口低翼模型明確排除此共享弧棚；本件也不重建兩翼、連橋、欄杆、樓梯及室內。
 
@@ -24,6 +27,16 @@
 屋皮材質／透明度不明，採中性銀灰不透明薄皮；省略密集平行細條、螺栓和不可辨設備。鋼構深灰。藍色展示切端座刻意與建築區分，不宣稱照片中存在藍色構件。照片拍攝日期未知；2003 是作品頁完工年，非照片年份，2018 URL 路徑不是拍攝證據，也不稱為 2026 現況。
 
 ## 重建
-Python 依賴見 requirements.txt；執行 `python build_model.py`、`python qa_model.py`、`python check_features.py`；Blender 執行 `blender -b --python render_model.py`。SDK 驗證需 lib3mf；可用 `BUILD_PYTHON` 指定含 manifold3d 的 Python。
+
+用 Blender 4.3.2 與 `requirements.txt` 所列套件重建。輸出路徑須在模型目錄外且尚未存在，避免覆寫發布檔案。個別分析入口為 `qa_model.py`、`check_features.py`；`verify_scene.py` 和 `verify_exchange.py` 分別用於場景及交換格式核對。 SDK 交換格式驗證需 lib3mf；可用 `BUILD_PYTHON` 指定含 manifold3d 的 Python。
+
+```bash
+python -m pip install -r requirements.txt Pillow==13.0.0
+python verify_package.py
+blender -b --threads 4 --python-exit-code 19 --python verify_render.py
+python rebuild.py --output ../new-clean-rebuild --blender blender --threads 4
+```
+
+五張展示圖使用 640 px WebP 縮圖，可點圖開啟全尺寸無失真 WebP。[縮圖校驗](previews/thumbnail-proof.json)。重建只在暫存目錄產生 PNG 中間檔，核對解碼 RGBA 像素及尺寸後輸出並校驗 WebP。原模型和既有 QA 報告不變，原始 PNG 和當時的校驗記錄仍可在固定提交查閱。[現行 WebP 校驗](qa/preview-webp.json) · [原始 PNG 與歷史 QA](https://github.com/hplin50643/taiwan-buildings-3d/tree/336ce1843e6e4435f93ed1a5df7cc26434fb9596/%E5%A4%A7%E5%B0%88%E6%A0%A1%E9%99%A2/%E5%9C%8B%E7%AB%8B%E6%88%90%E5%8A%9F%E5%A4%A7%E5%AD%B8/%E5%AE%89%E5%8D%97%E6%A0%A1%E5%8D%80/buildings/research-center-atrium-canopy-two-bay-segment)。
 
 **沒有實體試印，不保證免支撐或一次列印成功。** 完整拓樸通過不等於所有局部可印；細尖端、曲面頂端以及水平薄屋皮需切片、支撐、方向與試印評估。詳見 QA.md，不把失敗切層排除。
